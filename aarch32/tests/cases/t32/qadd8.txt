@@ -1,0 +1,16 @@
+// QADD8_T1 111|11010|1|op1=000|Rn=xxxx|1111|Rd=xxxx|0|U=0|H=0|S=1|Rm=xxxx
+// Qadd8T1: QADD8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa8cf313 qadd8 r3, r12, r3
+fa85fc17 qadd8 r12, r5, r7
+fa88f711 qadd8 r7, r8, r1
+fa83fb13 qadd8 r11, r3, r3
+fa8af211 qadd8 r2, r10, r1
+fa87fe1f qadd8 lr, r7, pc (unpredictable)
+fa86f719 qadd8 r7, r6, r9
+fa80fd17 qadd8 sp, r0, r7
+FA8FF010 qadd8 r0, pc, r0 (unpredictable)
+FA8CFF13 qadd8 pc, r12, r3 (unpredictable)
+FA8CFC13 qadd8 r12, r12, r3
+FA8CF313 [ne] qadd8ne r3, r12, r3

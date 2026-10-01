@@ -1,0 +1,17 @@
+// bf1cvtlt_z_z8_b2bf 011|0010|1|00|001|00|L=1|0011|opc=10|Zn=xxxxx|Zd=xxxxx
+// Bf1cvtltZZ8B2bf: BF1CVTLT  <Zd>.H, <Zn>.B
+// register fields: Zn, Zd
+65093800 bf1cvtlt z0.h, z0.b
+65093807 bf1cvtlt z7.h, z0.b
+6509380E bf1cvtlt z14.h, z0.b
+65093BFF bf1cvtlt z31.h, z31.b
+
+// bf2cvtlt_z_z8_b2bf 011|0010|1|00|001|00|L=1|0011|opc=11|Zn=xxxxx|Zd=xxxxx
+// Bf2cvtltZZ8B2bf: BF2CVTLT  <Zd>.H, <Zn>.B
+// register fields: Zn, Zd
+65093C05 bf2cvtlt z5.h, z0.b
+65093C0C bf2cvtlt z12.h, z0.b
+65093C13 bf2cvtlt z19.h, z0.b
+65093FE0 bf2cvtlt z0.h, z31.b
+65093C1F bf2cvtlt z31.h, z0.b
+65093C00 bf2cvtlt z0.h, z0.b

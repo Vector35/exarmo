@@ -1,0 +1,35 @@
+// PLD_i_A1 1111010|D=1|U=x|R=1|01|Rn=xxxx|(1)(1)(1)(1)|imm12=xxxxxxxxxxxx
+// PldIA1: PLD{<c>}{<q>}  [<Rn> {, #{<+/->}<imm>}]
+// register fields: Rn
+F5500000 pld [r0, #-0x0] (unpredictable)
+F5D0FFFF pld [r0, #0xfff]
+F5508800 pld [r0, #-0x800] (unpredictable)
+F5504400 pld [r0, #-0x400] (unpredictable)
+F5502200 pld [r0, #-0x200] (unpredictable)
+F5501100 pld [r0, #-0x100] (unpredictable)
+F5500080 pld [r0, #-0x80] (unpredictable)
+F5500040 pld [r0, #-0x40] (unpredictable)
+F5500020 pld [r0, #-0x20] (unpredictable)
+F5500010 pld [r0, #-0x10] (unpredictable)
+F5500008 pld [r0, #-0x8] (unpredictable)
+F5500004 pld [r0, #-0x4] (unpredictable)
+F5500002 pld [r0, #-0x2] (unpredictable)
+F5500001 pld [r0, #-0x1] (unpredictable)
+
+// PLDW_i_A1 1111010|D=1|U=x|R=0|01|Rn=xxxx|(1)(1)(1)(1)|imm12=xxxxxxxxxxxx
+// PldwIA1: PLDW{<c>}{<q>}  [<Rn> {, #{<+/->}<imm>}]
+// register fields: Rn
+F5100000 pldw [r0, #-0x0] (unpredictable)
+F590FFFF pldw [r0, #0xfff]
+F5108800 pldw [r0, #-0x800] (unpredictable)
+F5104400 pldw [r0, #-0x400] (unpredictable)
+F5102200 pldw [r0, #-0x200] (unpredictable)
+F5101100 pldw [r0, #-0x100] (unpredictable)
+F5100080 pldw [r0, #-0x80] (unpredictable)
+F5100040 pldw [r0, #-0x40] (unpredictable)
+F5100020 pldw [r0, #-0x20] (unpredictable)
+F5100010 pldw [r0, #-0x10] (unpredictable)
+F5100008 pldw [r0, #-0x8] (unpredictable)
+F5100004 pldw [r0, #-0x4] (unpredictable)
+F5100002 pldw [r0, #-0x2] (unpredictable)
+F5100001 pldw [r0, #-0x1] (unpredictable)

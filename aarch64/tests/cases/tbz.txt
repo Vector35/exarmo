@@ -1,0 +1,41 @@
+// TBZ_only_testbranch b5=x|01|101|1|op=0|b40=xxxxx|imm14=xxxxxxxxxxxxxx|Rt=xxxxx
+// TbzOnlyTestbranch: TBZ  <t>, #<imm>, <label>
+// read together by <t>: b5, Rt
+// read together by <imm>: b5, b40
+// register fields: Rt
+36EE4A53 tbz w19, #0x1d, 0x7fffffffffffc94c
+36276D0F tbz w15, #0x4, 0x7fffffffffffeda4
+B6AC072B tbz x11, #0x35, 0x7fffffffffff80e8
+360E3DE6 tbz w6, #0x1, 0x7fffffffffffc7c0
+B69C16BD tbz fp, #0x33, 0x7fffffffffff82d8
+B6569B05 tbz x5, #0x2a, 0x7fffffffffffd364
+B6EA28CE tbz x14, #0x3d, 0x800000000000451c
+B660DC23 tbz x3, #0x2c, 0x8000000000001b88
+36AD14D3 tbz w19, #0x15, 0x7fffffffffffa29c
+364AEA8E tbz w14, #0x9, 0x8000000000005d54
+3686623E tbz w30, #0x10, 0x7fffffffffffcc48
+365F2243 tbz w3, #0xb, 0x7fffffffffffe44c
+B66AB3D1 tbz x17, #0x2d, 0x800000000000567c
+B6EA934F tbz x15, #0x3d, 0x800000000000526c
+3675FE02 tbz w2, #0xe, 0x7fffffffffffbfc4
+36A72E4D tbz w13, #0x14, 0x7fffffffffffe5cc
+36000000 tbz w0, #0x0, 0x8000000000000004
+36FFFFFF tbz wzr, #0x1f, 0x8000000000000000
+B6EE4A40 tbz x0, #0x3d, 0x7fffffffffffc94c
+B6EE4A5F tbz xzr, #0x3d, 0x7fffffffffffc94c
+B6064A53 tbz x19, #0x20, 0x7fffffffffffc94c
+B6FE4A53 tbz x19, #0x3f, 0x7fffffffffffc94c
+36440013 tbz w19, #0x8, 0x7fffffffffff8004
+36120013 tbz w19, #0x2, 0x8000000000004004
+36E90013 tbz w19, #0x1d, 0x8000000000002004
+36E88013 tbz w19, #0x1d, 0x8000000000001004
+36E84013 tbz w19, #0x1d, 0x8000000000000804
+36E82013 tbz w19, #0x1d, 0x8000000000000404
+36E81013 tbz w19, #0x1d, 0x8000000000000204
+36E80813 tbz w19, #0x1d, 0x8000000000000104
+36E80413 tbz w19, #0x1d, 0x8000000000000084
+36E80213 tbz w19, #0x1d, 0x8000000000000044
+36E80113 tbz w19, #0x1d, 0x8000000000000024
+36E80093 tbz w19, #0x1d, 0x8000000000000014
+36E80053 tbz w19, #0x1d, 0x800000000000000c
+36E80033 tbz w19, #0x1d, 0x8000000000000008

@@ -1,0 +1,17 @@
+// STLEXD_T1 111|0100|op0=0110|L=0|Rn=xxxx|Rt=xxxx|Rt2=xxxx|1|op=1|sz=11|Rd=xxxx
+// StlexdT1: STLEXD{<c>}{<q>}  <Rd>, <Rt>, <Rt2>, [<Rn>]
+// register fields: Rn, Rt, Rt2, Rd
+// IT state read: condition
+e8cd75f8 stlexd r8, r7, r5, [sp]
+e8c0befc stlexd r12, r11, lr, [r0]
+e8c447fc stlexd r12, r4, r7, [r4]
+e8cffffd stlexd sp, pc, pc, [pc] (unpredictable)
+e8caf5f6 stlexd r6, pc, r5, [r10] (unpredictable)
+e8cf20f5 stlexd r5, r2, r0, [pc] (unpredictable)
+e8c6b2f6 stlexd r6, r11, r2, [r6] (unpredictable)
+e8ca9efb stlexd r11, r9, lr, [r10]
+E8CD05F0 stlexd r0, r0, r5, [sp] (unpredictable)
+E8CD75FF stlexd pc, r7, r5, [sp] (unpredictable)
+E8CD75F7 stlexd r7, r7, r5, [sp] (unpredictable)
+E8CD75F5 stlexd r5, r7, r5, [sp] (unpredictable)
+E8CD75F8 [ne] stlexdne r8, r7, r5, [sp]

@@ -1,0 +1,23 @@
+// ftsmul_z_zz_ 011|0010|1|size=xx|0|Zm=xxxxx|000|opc=011|Zn=xxxxx|Zd=xxxxx
+// FtsmulZZz: FTSMUL  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+65940E95 ftsmul z21.s, z20.s, z20.s
+65DB0C99 ftsmul z25.d, z4.d, z27.d
+655C0CA4 ftsmul z4.h, z5.h, z28.h
+65CC0CB4 ftsmul z20.d, z5.d, z12.d
+65C50C65 ftsmul z5.d, z3.d, z5.d
+655C0E1E ftsmul z30.h, z16.h, z28.h
+655E0C24 ftsmul z4.h, z1.h, z30.h
+654F0CAB ftsmul z11.h, z5.h, z15.h
+65930F6F ftsmul z15.s, z27.s, z19.s
+65DA0DAE ftsmul z14.d, z13.d, z26.d
+65890E40 ftsmul z0.s, z18.s, z9.s
+65980ECB ftsmul z11.s, z22.s, z24.s
+65DB0F45 ftsmul z5.d, z26.d, z27.d
+655A0D1A ftsmul z26.h, z8.h, z26.h
+65810DCA ftsmul z10.s, z14.s, z1.s
+65860F67 ftsmul z7.s, z27.s, z6.s
+65800C1F ftsmul z31.s, z0.s, z0.s
+659F0FF5 ftsmul z21.s, z31.s, z31.s
+65140E95 UNDEFINED
+65940E94 ftsmul z20.s, z20.s, z20.s

@@ -1,0 +1,83 @@
+// UCVTF_asimdshf_C 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|opcode=11100|1|Rn=xxxxx|Rd=xxxxx
+// UcvtfAsimdshfC: UCVTF  <Vd>.<T>, <Vn>.<T>, #<fbits>
+// read together by <T>: Q, immh
+// read together by <fbits>: immh, immb
+// register fields: Rn, Rd
+2F27E5CF ucvtf v15.2s, v14.2s, #0x19
+2F3FE4CD ucvtf v13.2s, v6.2s, #0x1
+2F2EE6E4 ucvtf v4.2s, v23.2s, #0x12
+6F2BE762 ucvtf v2.4s, v27.4s, #0x15
+6F3AE57D ucvtf v29.4s, v11.4s, #0x6
+6F7AE746 ucvtf v6.2d, v26.2d, #0x6
+6F46E623 ucvtf v3.2d, v17.2d, #0x3a
+2F3FE696 ucvtf v22.2s, v20.2s, #0x1
+6F32E7B7 ucvtf v23.4s, v29.4s, #0xe
+6F45E6B3 ucvtf v19.2d, v21.2d, #0x3b
+6F56E645 ucvtf v5.2d, v18.2d, #0x2a
+6F55E42E ucvtf v14.2d, v1.2d, #0x2b
+6F42E4DB ucvtf v27.2d, v6.2d, #0x3e
+6F53E476 ucvtf v22.2d, v3.2d, #0x2d
+2F1DE728 ucvtf v8.4h, v25.4h, #0x3
+2F2BE7E3 ucvtf v3.2s, v31.2s, #0x15
+2F20E400 ucvtf v0.2s, v0.2s, #0x20
+2F21E5DF ucvtf v31.2s, v14.2s, #0x1f
+2F24E5CF ucvtf v15.2s, v14.2s, #0x1c
+2F7FE5CF UNDEFINED
+6F78E762 ucvtf v2.2d, v27.2d, #0x8
+6F79E762 ucvtf v2.2d, v27.2d, #0x7
+6F7BE762 ucvtf v2.2d, v27.2d, #0x5
+6F7CE762 ucvtf v2.2d, v27.2d, #0x4
+6F7DE762 ucvtf v2.2d, v27.2d, #0x3
+6F7EE762 ucvtf v2.2d, v27.2d, #0x2
+6F7FE762 ucvtf v2.2d, v27.2d, #0x1
+2F17E5CF ucvtf v15.4h, v14.4h, #0x9
+2F0FE5CF UNDEFINED
+
+// UCVTF_asisdshf_C 01|U=1|1|111|10|immh=xxxx|immb=xxx|opcode=11100|1|Rn=xxxxx|Rd=xxxxx
+// UcvtfAsisdshfC: UCVTF  <V><d>, <V><n>, #<fbits>
+// read together by <d>: immh, Rd
+// read together by <n>: immh, Rn
+// read together by <fbits>: immh, immb
+// register fields: Rn, Rd
+7F56E434 ucvtf d20, d1, #0x2a
+7F1CE78D ucvtf h13, h28, #0x4
+7F3EE414 ucvtf s20, s0, #0x2
+7F1DE556 ucvtf h22, h10, #0x3
+7F34E4FC ucvtf s28, s7, #0xc
+7F2AE6C2 ucvtf s2, s22, #0x16
+7F32E7C9 ucvtf s9, s30, #0xe
+7F76E59A ucvtf d26, d12, #0xa
+7F54E57F ucvtf d31, d11, #0x2c
+7F6AE5D8 ucvtf d24, d14, #0x16
+7F72E45B ucvtf d27, d2, #0xe
+7F3EE616 ucvtf s22, s16, #0x2
+7F6AE494 ucvtf d20, d4, #0x16
+7F60E5D8 ucvtf d24, d14, #0x20
+7F4AE4EE ucvtf d14, d7, #0x36
+7F11E60A ucvtf h10, h16, #0xf
+7F7BE7E0 ucvtf d0, d31, #0x5
+7F57E434 ucvtf d20, d1, #0x29
+7F06E434 UNALLOCATED
+7F06E420 UNALLOCATED
+7F06E43F UNALLOCATED
+7F7EE43F ucvtf d31, d1, #0x2
+7F06E414 UNALLOCATED
+7F06E7F4 UNALLOCATED
+7F7EE414 ucvtf d20, d0, #0x2
+7F00E434 UNALLOCATED
+7F01E434 UNALLOCATED
+7F02E434 UNALLOCATED
+7F03E434 UNALLOCATED
+7F04E434 UNALLOCATED
+7F05E434 UNALLOCATED
+7F07E434 UNALLOCATED
+7F78E421 ucvtf d1, d1, #0x8
+7F79E434 ucvtf d20, d1, #0x7
+7F7AE434 ucvtf d20, d1, #0x6
+7F7CE434 ucvtf d20, d1, #0x4
+7F7DE434 ucvtf d20, d1, #0x3
+7F7EE434 ucvtf d20, d1, #0x2
+7F7FE434 ucvtf d20, d1, #0x1
+7F46E434 ucvtf d20, d1, #0x3a
+7F26E434 ucvtf s20, s1, #0x1a
+7F0EE434 UNDEFINED

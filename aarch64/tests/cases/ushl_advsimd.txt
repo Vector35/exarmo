@@ -1,0 +1,47 @@
+// USHL_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|010|R=0|S=0|1|Rn=xxxxx|Rd=xxxxx
+// UshlAsimdsameOnly: USHL  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6EBE45B4 ushl v20.4s, v13.4s, v30.4s
+6E2244E6 ushl v6.16b, v7.16b, v2.16b
+2E21469E ushl v30.8b, v20.8b, v1.8b
+6E3644AB ushl v11.16b, v5.16b, v22.16b
+6EF644A2 ushl v2.2d, v5.2d, v22.2d
+6EB44684 ushl v4.4s, v20.4s, v20.4s
+6E3D4549 ushl v9.16b, v10.16b, v29.16b
+6EF746D9 ushl v25.2d, v22.2d, v23.2d
+6EA845F2 ushl v18.4s, v15.4s, v8.4s
+6E324461 ushl v1.16b, v3.16b, v18.16b
+6E614485 ushl v5.8h, v4.8h, v1.8h
+6EF9462A ushl v10.2d, v17.2d, v25.2d
+2E6C47F7 ushl v23.4h, v31.4h, v12.4h
+2E3344BF ushl v31.8b, v5.8b, v19.8b
+2E3546A9 ushl v9.8b, v21.8b, v21.8b
+2E65473F ushl v31.4h, v25.4h, v5.4h
+6EA04400 ushl v0.4s, v0.4s, v0.4s
+6EBF45B4 ushl v20.4s, v13.4s, v31.4s
+2EBE45B4 ushl v20.2s, v13.2s, v30.2s
+2EFE45B4 UNDEFINED
+
+// USHL_asisdsame_only 01|U=1|1|111|0|size=11|1|Rm=xxxxx|010|R=0|S=0|1|Rn=xxxxx|Rd=xxxxx
+// UshlAsisdsameOnly: USHL  <d>, <n>, <m>
+// register fields: Rm, Rn, Rd
+7EF345F6 ushl d22, d15, d19
+7EF4446F ushl d15, d3, d20
+7EFA47DB ushl d27, d30, d26
+7EEB4610 ushl d16, d16, d11
+7EF64601 ushl d1, d16, d22
+7EFD446C ushl d12, d3, d29
+7EE94751 ushl d17, d26, d9
+7EE8464E ushl d14, d18, d8
+7EEF4794 ushl d20, d28, d15
+7EF04634 ushl d20, d17, d16
+7EEA44BD ushl d29, d5, d10
+7EEF4694 ushl d20, d20, d15
+7EE14448 ushl d8, d2, d1
+7EF1440E ushl d14, d0, d17
+7EFE4481 ushl d1, d4, d30
+7EFC4423 ushl d3, d1, d28
+7EE047E0 ushl d0, d31, d0
+7EFF45FF ushl d31, d15, d31
+7EF34676 ushl d22, d19, d19

@@ -1,0 +1,12 @@
+// LDAH_T1 111|0100|op0=0110|L=1|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=0|sz=01|Rd=(1)(1)(1)(1)
+// LdahT1: LDAH{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// IT state read: condition
+E8D00090 ldah r0, [r0] (unpredictable)
+E8DFFF9F ldah pc, [pc] (unpredictable)
+E8D00898 ldah r0, [r0] (unpredictable)
+E8D00494 ldah r0, [r0] (unpredictable)
+E8D00292 ldah r0, [r0] (unpredictable)
+E8D00191 ldah r0, [r0] (unpredictable)
+E8D00090 [ne] ldahne r0, [r0] (unpredictable)
+E8D12F9F ldah r2, [r1]

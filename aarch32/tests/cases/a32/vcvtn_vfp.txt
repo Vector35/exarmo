@@ -1,0 +1,59 @@
+// VCVTN_vfp_A1_D 111111101|D=x|111|op1=1|RM=01|Vd=xxxx|10|size=11|op=x|1|M=x|0|Vm=xxxx
+// VcvtnVfpA1D: VCVTN{<q>}.<dt>.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+febdebc5 vcvtn.s32.f64 s28, d5
+fefd0b6d vcvtn.u32.f64 s1, d29
+febd1b4b vcvtn.u32.f64 s2, d11
+febdeb6f vcvtn.u32.f64 s28, d31
+febd7be3 vcvtn.s32.f64 s14, d19
+// Binary Ninja's tests
+febd3b67 vcvtn.u32.f64 s6, d23
+febd3be7 vcvtn.s32.f64 s6, d23
+FEBDFBC0 vcvtn.s32.f64 s30, d0
+FEBD8BC8 vcvtn.s32.f64 s16, d8
+FEBD4BC4 vcvtn.s32.f64 s8, d4
+FEBD2BC2 vcvtn.s32.f64 s4, d2
+FEBD0BC1 vcvtn.s32.f64 s0, d1
+FEFDFBCF vcvtn.s32.f64 s31, d15
+FEBDEBE0 vcvtn.s32.f64 s28, d16
+
+// VCVTN_vfp_A1_H 111111101|D=x|111|op1=1|RM=01|Vd=xxxx|10|size=01|op=x|1|M=x|0|Vm=xxxx
+// VcvtnVfpA1H: VCVTN{<q>}.<dt>.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fefd59e6 vcvtn.s32.f16 s11, s13
+febd1942 vcvtn.u32.f16 s2, s4
+fefd1949 vcvtn.u32.f16 s3, s18
+fefdc96b vcvtn.u32.f16 s25, s23
+FEFD09E0 vcvtn.s32.f16 s1, s1
+FEFDF9EF vcvtn.s32.f16 s31, s31
+FEFD89E8 vcvtn.s32.f16 s17, s17
+FEFD49E4 vcvtn.s32.f16 s9, s9
+FEFD29E1 vcvtn.s32.f16 s5, s3
+FEBD09C0 vcvtn.s32.f16 s0, s0
+FEBDF9CF vcvtn.s32.f16 s30, s30
+
+// VCVTN_vfp_A1_S 111111101|D=x|111|op1=1|RM=01|Vd=xxxx|10|size=10|op=x|1|M=x|0|Vm=xxxx
+// VcvtnVfpA1S: VCVTN{<q>}.<dt>.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fefdda6b vcvtn.u32.f32 s27, s23
+febd5acc vcvtn.s32.f32 s10, s24
+fefdba46 vcvtn.u32.f32 s23, s12
+febd1a63 vcvtn.u32.f32 s2, s7
+febdeac5 vcvtn.s32.f32 s28, s10
+fefd4a49 vcvtn.u32.f32 s9, s18
+// Binary Ninja's tests
+febd3a6b vcvtn.u32.f32 s6, s23
+febd3aeb vcvtn.s32.f32 s6, s23
+FEFD0A60 vcvtn.u32.f32 s1, s1
+FEFDFA6F vcvtn.u32.f32 s31, s31
+FEFD8A68 vcvtn.u32.f32 s17, s17
+FEFD2A64 vcvtn.u32.f32 s5, s9
+FEBD0A62 vcvtn.u32.f32 s0, s5
+FEBDFA61 vcvtn.u32.f32 s30, s3
+FEFD0A40 vcvtn.u32.f32 s1, s0
+FEFDFA4F vcvtn.u32.f32 s31, s30
+FEFDDA60 vcvtn.u32.f32 s27, s1
+FEFDDA6F vcvtn.u32.f32 s27, s31

@@ -1,0 +1,14 @@
+// smullt_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|11|op=1|U=0|T=1|Zn=xxxxx|Zd=xxxxx
+// SmulltZZz: SMULLT  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45827610 smullt z16.s, z16.h, z2.h
+45497592 smullt z18.h, z12.b, z9.b
+454C749B smullt z27.h, z4.b, z12.b
+45D0758D smullt z13.d, z12.s, z16.s
+45957796 smullt z22.s, z28.h, z21.h
+454E77F6 smullt z22.h, z31.b, z14.b
+459876CF smullt z15.s, z22.h, z24.h
+458A7669 smullt z9.s, z19.h, z10.h
+45807400 smullt z0.s, z0.h, z0.h
+459F761F smullt z31.s, z16.h, z31.h
+45027610 UNDEFINED

@@ -1,0 +1,47 @@
+// sqdech_r_rs_sx 000|0010|0|size=01|1|sf=0|imm4=xxxx|11|11|D=1|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqdechRRsSx: SQDECH  <Xdn>, <Wdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0465F9B5 sqdech x21, w21, vl256, mul #0x6
+0464FB39 sqdech x25, w25, #0x19, mul #0x5
+0469F82A sqdech x10, w10, vl1, mul #0xa
+0464FAAE sqdech x14, w14, #0x15, mul #0x5
+0467FA44 sqdech x4, w4, #0x12, mul #0x8
+046AFA00 sqdech x0, w0, #0x10, mul #0xb
+0462FBC9 sqdech x9, w9, mul3, mul #0x3
+0463F984 sqdech x4, w4, vl128, mul #0x4
+0460FBB2 sqdech x18, w18, mul4
+046AF986 sqdech x6, w6, vl128, mul #0xb
+046FFA82 sqdech x2, w2, #0x14, mul #0x10
+0468F919 sqdech x25, w25, vl8, mul #0x9
+0465FBDE sqdech lr, w30, mul3, mul #0x6
+0462FA8A sqdech x10, w10, #0x14, mul #0x3
+0469F938 sqdech x24, w24, vl16, mul #0xa
+0463FB73 sqdech x19, w19, #0x1b, mul #0x4
+0465F81F sqdech xzr, wzr, pow2, mul #0x6
+0465FBF5 sqdech x21, w21, all, mul #0x6
+0461F895 sqdech x21, w21, vl4, mul #0x2
+0465F855 sqdech x21, w21, vl2, mul #0x6
+
+// sqdech_r_rs_x 000|0010|0|size=01|1|sf=1|imm4=xxxx|11|11|D=1|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqdechRRsX: SQDECH  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0471F88A sqdech x10, vl4, mul #0x2
+0476FB6F sqdech x15, #0x1b, mul #0x7
+047FFAD0 sqdech x16, #0x16, mul #0x10
+047FF9F1 sqdech x17, #0xf, mul #0x10
+0475F8B0 sqdech x16, vl5, mul #0x6
+047DF841 sqdech x1, vl2, mul #0xe
+0477F811 sqdech x17, pow2, mul #0x8
+0477FB8A sqdech x10, #0x1c, mul #0x8
+047DF8AC sqdech x12, vl5, mul #0xe
+0475F8CD sqdech x13, vl6, mul #0x6
+0475F9BA sqdech x26, vl256, mul #0x6
+0479FB1F sqdech xzr, #0x18, mul #0xa
+047EFA3F sqdech xzr, #0x11, mul #0xf
+0476FBAF sqdech x15, mul4, mul #0x7
+0470F903 sqdech x3, vl8
+0471FB94 sqdech x20, #0x1c, mul #0x2
+0471FBE0 sqdech x0, all, mul #0x2
+0478FA0A sqdech x10, #0x10, mul #0x9
+0474F82A sqdech x10, vl1, mul #0x5
+0472F88A sqdech x10, vl4, mul #0x3

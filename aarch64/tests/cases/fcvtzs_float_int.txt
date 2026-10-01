@@ -1,0 +1,129 @@
+// FCVTZS_32D_float2int sf=0|0|S=0|11110|ftype=01|1|rmode=11|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtzs32dFloat2int: FCVTZS  <Wd>, <Dn>
+// register fields: Rn, Rd
+1E7802E5 fcvtzs w5, d23
+1E7803F0 fcvtzs w16, d31
+1E78007E fcvtzs w30, d3
+1E780322 fcvtzs w2, d25
+1E7801D0 fcvtzs w16, d14
+1E780219 fcvtzs w25, d16
+1E780351 fcvtzs w17, d26
+1E78030C fcvtzs w12, d24
+1E7803B5 fcvtzs w21, d29
+1E780316 fcvtzs w22, d24
+1E7802C1 fcvtzs w1, d22
+1E7802E9 fcvtzs w9, d23
+1E780249 fcvtzs w9, d18
+1E7802D6 fcvtzs w22, d22
+1E7802B5 fcvtzs w21, d21
+1E7801B8 fcvtzs w24, d13
+1E780000 fcvtzs w0, d0
+1E7802FF fcvtzs wzr, d23
+
+// FCVTZS_32H_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=11|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtzs32hFloat2int: FCVTZS  <Wd>, <Hn>
+// register fields: Rn, Rd
+1EF8022A fcvtzs w10, h17
+1EF801D7 fcvtzs w23, h14
+1EF80072 fcvtzs w18, h3
+1EF801F1 fcvtzs w17, h15
+1EF8025F fcvtzs wzr, h18
+1EF801F6 fcvtzs w22, h15
+1EF80210 fcvtzs w16, h16
+1EF802BD fcvtzs w29, h21
+1EF80088 fcvtzs w8, h4
+1EF8004B fcvtzs w11, h2
+1EF80385 fcvtzs w5, h28
+1EF801CD fcvtzs w13, h14
+1EF800E1 fcvtzs w1, h7
+1EF803D9 fcvtzs w25, h30
+1EF80243 fcvtzs w3, h18
+1EF80105 fcvtzs w5, h8
+1EF80000 fcvtzs w0, h0
+1EF803EA fcvtzs w10, h31
+
+// FCVTZS_32S_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=11|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtzs32sFloat2int: FCVTZS  <Wd>, <Sn>
+// register fields: Rn, Rd
+1E38029B fcvtzs w27, s20
+1E3802B8 fcvtzs w24, s21
+1E380244 fcvtzs w4, s18
+1E380060 fcvtzs w0, s3
+1E380086 fcvtzs w6, s4
+1E380203 fcvtzs w3, s16
+1E3802E8 fcvtzs w8, s23
+1E3803A9 fcvtzs w9, s29
+1E38017B fcvtzs w27, s11
+1E380252 fcvtzs w18, s18
+1E3801CC fcvtzs w12, s14
+1E380168 fcvtzs w8, s11
+1E380066 fcvtzs w6, s3
+1E380269 fcvtzs w9, s19
+1E380019 fcvtzs w25, s0
+1E380047 fcvtzs w7, s2
+1E3803FF fcvtzs wzr, s31
+
+// FCVTZS_64D_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=11|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtzs64dFloat2int: FCVTZS  <Xd>, <Dn>
+// register fields: Rn, Rd
+9E780151 fcvtzs x17, d10
+9E7800D1 fcvtzs x17, d6
+9E780129 fcvtzs x9, d9
+9E7801F5 fcvtzs x21, d15
+9E780371 fcvtzs x17, d27
+9E7801BC fcvtzs x28, d13
+9E78004F fcvtzs x15, d2
+9E7802F0 fcvtzs x16, d23
+9E7800E5 fcvtzs x5, d7
+9E7803BB fcvtzs x27, d29
+9E7803FE fcvtzs lr, d31
+9E780256 fcvtzs x22, d18
+9E780072 fcvtzs x18, d3
+9E78035A fcvtzs x26, d26
+9E7800D3 fcvtzs x19, d6
+9E78003B fcvtzs x27, d1
+9E780000 fcvtzs x0, d0
+9E78015F fcvtzs xzr, d10
+
+// FCVTZS_64H_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=11|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtzs64hFloat2int: FCVTZS  <Xd>, <Hn>
+// register fields: Rn, Rd
+9EF803FC fcvtzs x28, h31
+9EF80364 fcvtzs x4, h27
+9EF803EC fcvtzs x12, h31
+9EF8007B fcvtzs x27, h3
+9EF80062 fcvtzs x2, h3
+9EF80268 fcvtzs x8, h19
+9EF803DA fcvtzs x26, h30
+9EF80389 fcvtzs x9, h28
+9EF803AC fcvtzs x12, h29
+9EF80261 fcvtzs x1, h19
+9EF80158 fcvtzs x24, h10
+9EF8023F fcvtzs xzr, h17
+9EF801BE fcvtzs lr, h13
+9EF80086 fcvtzs x6, h4
+9EF803AA fcvtzs x10, h29
+9EF80236 fcvtzs x22, h17
+9EF80000 fcvtzs x0, h0
+
+// FCVTZS_64S_float2int sf=1|0|S=0|11110|ftype=00|1|rmode=11|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtzs64sFloat2int: FCVTZS  <Xd>, <Sn>
+// register fields: Rn, Rd
+9E380033 fcvtzs x19, s1
+9E38021C fcvtzs x28, s16
+9E3801A3 fcvtzs x3, s13
+9E380054 fcvtzs x20, s2
+9E380185 fcvtzs x5, s12
+9E38021B fcvtzs x27, s16
+9E3803D5 fcvtzs x21, s30
+9E38004A fcvtzs x10, s2
+9E38020D fcvtzs x13, s16
+9E3800B6 fcvtzs x22, s5
+9E3801AF fcvtzs x15, s13
+9E380091 fcvtzs x17, s4
+9E3800C6 fcvtzs x6, s6
+9E38023A fcvtzs x26, s17
+9E380128 fcvtzs x8, s9
+9E3803B3 fcvtzs x19, s29
+9E380000 fcvtzs x0, s0
+9E3803FF fcvtzs xzr, s31

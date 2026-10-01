@@ -1,0 +1,24 @@
+// SDOT_asimdsame2_D 0|Q=x|U=0|0|111|0|size=xx|0|Rm=xxxxx|1|opcode=0010|1|Rn=xxxxx|Rd=xxxxx
+// SdotAsimdsame2D: SDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// register fields: Rm, Rn, Rd
+0E9F97ED sdot v13.2s, v31.8b, v31.8b
+0E9094D8 sdot v24.2s, v6.8b, v16.8b
+0E9D96A3 sdot v3.2s, v21.8b, v29.8b
+4E8A94AC sdot v12.4s, v5.16b, v10.16b
+4E859587 sdot v7.4s, v12.16b, v5.16b
+4E92940E sdot v14.4s, v0.16b, v18.16b
+0E8295EB sdot v11.2s, v15.8b, v2.8b
+0E9995EB sdot v11.2s, v15.8b, v25.8b
+0E8496DB sdot v27.2s, v22.8b, v4.8b
+4E9F977C sdot v28.4s, v27.16b, v31.16b
+0E9396AB sdot v11.2s, v21.8b, v19.8b
+4E969792 sdot v18.4s, v28.16b, v22.16b
+0E93972E sdot v14.2s, v25.8b, v19.8b
+0E9E942A sdot v10.2s, v1.8b, v30.8b
+0E869534 sdot v20.2s, v9.8b, v6.8b
+0E8A94FE sdot v30.2s, v7.8b, v10.8b
+0E8097E0 sdot v0.2s, v31.8b, v0.8b
+0E9F97FF sdot v31.2s, v31.8b, v31.8b
+0E1F97ED UNDEFINED
+0E5F97ED UNDEFINED
+0EDF97ED UNDEFINED

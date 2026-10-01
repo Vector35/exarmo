@@ -1,0 +1,25 @@
+// UDOT_asimdsame2_D 0|Q=x|U=1|0|111|0|size=xx|0|Rm=xxxxx|1|opcode=0010|1|Rn=xxxxx|Rd=xxxxx
+// UdotAsimdsame2D: UDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// register fields: Rm, Rn, Rd
+6E9B97DB udot v27.4s, v30.16b, v27.16b
+2E9D969F udot v31.2s, v20.8b, v29.8b
+2E9097D5 udot v21.2s, v30.8b, v16.8b
+2E9B95E7 udot v7.2s, v15.8b, v27.8b
+2E9C9537 udot v23.2s, v9.8b, v28.8b
+2E989783 udot v3.2s, v28.8b, v24.8b
+6E949517 udot v23.4s, v8.16b, v20.16b
+6E929546 udot v6.4s, v10.16b, v18.16b
+6E8095E2 udot v2.4s, v15.16b, v0.16b
+2E919432 udot v18.2s, v1.8b, v17.8b
+2E9E9787 udot v7.2s, v28.8b, v30.8b
+2E9C9562 udot v2.2s, v11.8b, v28.8b
+2E999624 udot v4.2s, v17.8b, v25.8b
+6E939590 udot v16.4s, v12.16b, v19.16b
+2E8095DC udot v28.2s, v14.8b, v0.8b
+2E95969D udot v29.2s, v20.8b, v21.8b
+6E9F9400 udot v0.4s, v0.16b, v31.16b
+6E9B97FB udot v27.4s, v31.16b, v27.16b
+6E1B97DB UNDEFINED
+6E5B97DB UNDEFINED
+6EDB97DB UNDEFINED
+6E9B977B udot v27.4s, v27.16b, v27.16b

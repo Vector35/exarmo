@@ -1,0 +1,23 @@
+// URECPE_asimdmisc_R 0|Q=x|U=0|0|111|0|1|sz=x|10000|opcode=11100|10|Rn=xxxxx|Rd=xxxxx
+// UrecpeAsimdmiscR: URECPE  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+0EA1CB26 urecpe v6.2s, v25.2s
+4EA1C801 urecpe v1.4s, v0.4s
+4EA1CAC0 urecpe v0.4s, v22.4s
+0EA1CA0C urecpe v12.2s, v16.2s
+0EA1C87C urecpe v28.2s, v3.2s
+0EA1CAB9 urecpe v25.2s, v21.2s
+0EA1CB01 urecpe v1.2s, v24.2s
+4EA1C839 urecpe v25.4s, v1.4s
+0EA1CA92 urecpe v18.2s, v20.2s
+4EA1CA10 urecpe v16.4s, v16.4s
+0EA1CACB urecpe v11.2s, v22.2s
+0EA1CA46 urecpe v6.2s, v18.2s
+0EA1C8B1 urecpe v17.2s, v5.2s
+4EA1CB2F urecpe v15.4s, v25.4s
+4EA1CA3F urecpe v31.4s, v17.4s
+4EA1C8AD urecpe v13.4s, v5.4s
+0EA1CBE6 urecpe v6.2s, v31.2s
+0EE1CB26 UNDEFINED
+4EE1CB26 UNDEFINED

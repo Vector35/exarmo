@@ -1,0 +1,70 @@
+// LD2_asisdlse_R2 0|Q=x|00|1|1|0|00|L=1|000000|opcode=1000|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld2AsisdlseR2: LD2  { <Vt>.<T>, <Vt2>.<T> }, [<Xn|SP>]
+// read together by <T>: Q, size
+// register fields: Rn, Rt
+4C4085A2 ld2 {v2.8h, v3.8h}, [x13]
+0C408766 ld2 {v6.4h, v7.4h}, [x27]
+0C4084AB ld2 {v11.4h, v12.4h}, [x5]
+4C40818B ld2 {v11.16b, v12.16b}, [x12]
+4C408702 ld2 {v2.8h, v3.8h}, [x24]
+0C408927 ld2 {v7.2s, v8.2s}, [x9]
+0C4080E1 ld2 {v1.8b, v2.8b}, [x7]
+0C4080FB ld2 {v27.8b, v28.8b}, [x7]
+0C408929 ld2 {v9.2s, v10.2s}, [x9]
+0C408BC0 ld2 {v0.2s, v1.2s}, [lr]
+0C408011 ld2 {v17.8b, v18.8b}, [x0]
+4C408537 ld2 {v23.8h, v24.8h}, [x9]
+4C408248 ld2 {v8.16b, v9.16b}, [x18]
+4C408C1A ld2 {v26.2d, v27.2d}, [x0]
+0C4089E1 ld2 {v1.2s, v2.2s}, [x15]
+0C408BD3 ld2 {v19.2s, v20.2s}, [lr]
+4C4087FF ld2 {v31.8h, v0.8h}, [sp]
+0C408DA2 UNDEFINED
+4C4089A2 ld2 {v2.4s, v3.4s}, [x13]
+
+// LD2_asisdlsep_I2_i 0|Q=x|0011001|L=1|0|Rm=11111|opcode=1000|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld2AsisdlsepI2I: LD2  { <Vt>.<T>, <Vt2>.<T> }, [<Xn|SP>], <imm>
+// read together by <T>: Q, size
+// register fields: Rn, Rt
+0CDF8092 ld2 {v18.8b, v19.8b}, [x4], #0x10
+4CDF86F7 ld2 {v23.8h, v24.8h}, [x23], #0x20
+0CDF8691 ld2 {v17.4h, v18.4h}, [x20], #0x10
+4CDF8B1D ld2 {v29.4s, v30.4s}, [x24], #0x20
+0CDF8220 ld2 {v0.8b, v1.8b}, [x17], #0x10
+0CDF8AB2 ld2 {v18.2s, v19.2s}, [x21], #0x10
+4CDF8020 ld2 {v0.16b, v1.16b}, [x1], #0x20
+4CDF881B ld2 {v27.4s, v28.4s}, [x0], #0x20
+4CDF8511 ld2 {v17.8h, v18.8h}, [x8], #0x20
+4CDF81DE ld2 {v30.16b, v31.16b}, [x14], #0x20
+4CDF84EA ld2 {v10.8h, v11.8h}, [x7], #0x20
+0CDF8A9A ld2 {v26.2s, v27.2s}, [x20], #0x10
+0CDF8AD1 ld2 {v17.2s, v18.2s}, [x22], #0x10
+0CDF89FC ld2 {v28.2s, v29.2s}, [x15], #0x10
+4CDF8F07 ld2 {v7.2d, v8.2d}, [x24], #0x20
+4CDF8B9A ld2 {v26.4s, v27.4s}, [x28], #0x20
+0CDF83FF ld2 {v31.8b, v0.8b}, [sp], #0x10
+0CDF8C92 UNDEFINED
+
+// LD2_asisdlsep_R2_r 0|Q=x|0011001|L=1|0|Rm=xxxxx|opcode=1000|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld2AsisdlsepR2R: LD2  { <Vt>.<T>, <Vt2>.<T> }, [<Xn|SP>], <Xm>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rt
+4CCE8AE1 ld2 {v1.4s, v2.4s}, [x23], x14
+4CDD8527 ld2 {v7.8h, v8.8h}, [x9], fp
+4CD587DD ld2 {v29.8h, v30.8h}, [lr], x21
+4CD38B94 ld2 {v20.4s, v21.4s}, [x28], x19
+4CC28891 ld2 {v17.4s, v18.4s}, [x4], x2
+0CCB8910 ld2 {v16.2s, v17.2s}, [x8], x11
+0CCA8535 ld2 {v21.4h, v22.4h}, [x9], x10
+0CC681C1 ld2 {v1.8b, v2.8b}, [x14], x6
+4CC387FB ld2 {v27.8h, v28.8h}, [sp], x3
+4CC985DD ld2 {v29.8h, v30.8h}, [x14], x9
+4CD68096 ld2 {v22.16b, v23.16b}, [x4], x22
+4CD382E1 ld2 {v1.16b, v2.16b}, [x23], x19
+0CD38AFE ld2 {v30.2s, v31.2s}, [x23], x19
+4CDD8735 ld2 {v21.8h, v22.8h}, [x25], fp
+0CD08448 ld2 {v8.4h, v9.4h}, [x2], x16
+4CD98BE8 ld2 {v8.4s, v9.4s}, [sp], x25
+4CC08C00 ld2 {v0.2d, v1.2d}, [x0], x0
+4CCE8AFF ld2 {v31.4s, v0.4s}, [x23], x14
+0CCE8EE1 UNDEFINED

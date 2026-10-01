@@ -1,0 +1,96 @@
+// UQRSHRN_asimdshf_N 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|1001|op=1|1|Rn=xxxxx|Rd=xxxxx
+// UqrshrnAsimdshfN: UQRSHRN  <Vd>.<Tb>, <Vn>.<Ta>, #<shift>
+// UqrshrnAsimdshfN2: UQRSHRN2  <Vd>.<Tb>, <Vn>.<Ta>, #<shift>
+// read together by <Tb>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+// form chosen on: Q
+2F1A9D18 uqrshrn v24.4h, v8.4s, #0x6
+2F2F9CE1 uqrshrn v1.2s, v7.2d, #0x11
+2F0B9C8B uqrshrn v11.8b, v4.8h, #0x5
+6F349C1A uqrshrn2 v26.4s, v0.2d, #0xc
+2F2A9C98 uqrshrn v24.2s, v4.2d, #0x16
+6F1E9E22 uqrshrn2 v2.8h, v17.4s, #0x2
+6F259E3C uqrshrn2 v28.4s, v17.2d, #0x1b
+2F3C9C8F uqrshrn v15.2s, v4.2d, #0x4
+6F179E3B uqrshrn2 v27.8h, v17.4s, #0x9
+2F139DD6 uqrshrn v22.4h, v14.4s, #0xd
+2F1B9F02 uqrshrn v2.4h, v24.4s, #0x5
+6F279FBB uqrshrn2 v27.4s, v29.2d, #0x19
+6F359F43 uqrshrn2 v3.4s, v26.2d, #0xb
+2F2C9DD6 uqrshrn v22.2s, v14.2d, #0x14
+2F0A9F5B uqrshrn v27.8b, v26.8h, #0x6
+6F0B9D58 uqrshrn2 v24.16b, v10.8h, #0x5
+2F189FE0 uqrshrn v0.4h, v31.4s, #0x8
+2F199D1F uqrshrn v31.4h, v8.4s, #0x7
+2F029D18 UNALLOCATED
+2F7A9D18 UNDEFINED
+6F029D18 UNALLOCATED
+6F7A9D18 UNDEFINED
+2F009D18 UNALLOCATED
+2F019D18 UNALLOCATED
+2F039D18 UNALLOCATED
+2F049D18 UNALLOCATED
+2F059D18 UNALLOCATED
+2F069D18 UNALLOCATED
+2F079D18 UNALLOCATED
+2F789D18 UNDEFINED
+2F799D18 UNDEFINED
+2F7B9D18 UNDEFINED
+2F7C9D18 UNDEFINED
+2F7D9D18 UNDEFINED
+2F7E9D18 UNDEFINED
+2F7F9D18 UNDEFINED
+2F1A9D08 uqrshrn v8.4h, v8.4s, #0x6
+2F429D18 UNDEFINED
+6F0A9F5B uqrshrn2 v27.16b, v26.8h, #0x6
+
+// UQRSHRN_asisdshf_N 01|U=1|1|111|10|immh=xxxx|immb=xxx|1001|op=1|1|Rn=xxxxx|Rd=xxxxx
+// UqrshrnAsisdshfN: UQRSHRN  <Vb><d>, <Va><n>, #<shift>
+// read together by <d>: immh, Rd
+// read together by <n>: immh, Rn
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+7F159C9A uqrshrn h26, s4, #0xb
+7F3C9C32 uqrshrn s18, d1, #0x4
+7F1E9C96 uqrshrn h22, s4, #0x2
+7F3A9E3F uqrshrn s31, d17, #0x6
+7F289F0D uqrshrn s13, d24, #0x18
+7F2F9C0A uqrshrn s10, d0, #0x11
+7F1C9EE8 uqrshrn h8, s23, #0x4
+7F239D18 uqrshrn s24, d8, #0x1d
+7F0E9C4B uqrshrn b11, h2, #0x2
+7F1C9D61 uqrshrn h1, s11, #0x4
+7F269EF6 uqrshrn s22, d23, #0x1a
+7F209CEE uqrshrn s14, d7, #0x20
+7F139C0E uqrshrn h14, s0, #0xd
+7F1F9EB7 uqrshrn h23, s21, #0x1
+7F149F6E uqrshrn h14, s27, #0xc
+7F1E9CC3 uqrshrn h3, s6, #0x2
+7F119FE0 uqrshrn h0, s31, #0xf
+7F059C9A UNALLOCATED
+7F7D9C9A UNDEFINED
+7F059C80 UNALLOCATED
+7F059C9F UNALLOCATED
+7F7D9C80 UNDEFINED
+7F7D9C9F UNDEFINED
+7F059C1A UNALLOCATED
+7F059FFA UNALLOCATED
+7F7D9C1A UNDEFINED
+7F7D9FFA UNDEFINED
+7F009C9A UNALLOCATED
+7F019C9A UNALLOCATED
+7F029C9A UNALLOCATED
+7F039C9A UNALLOCATED
+7F049C9A UNALLOCATED
+7F069C9A UNALLOCATED
+7F079C9A UNALLOCATED
+7F789C9A UNDEFINED
+7F799C9A UNDEFINED
+7F7A9C9A UNDEFINED
+7F7B9C9A UNDEFINED
+7F7C9C9A UNDEFINED
+7F7E9C9A UNDEFINED
+7F7F9C9A UNDEFINED
+7F159C84 uqrshrn h4, s4, #0xb
+7F459C9A UNDEFINED

@@ -1,0 +1,74 @@
+// trn1_z_zz_ 000|0010|1|size=xx|1|Zm=xxxxx|011|10|H=0|Zn=xxxxx|Zd=xxxxx
+// Trn1ZZz: TRN1  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+05377273 trn1 z19.b, z19.b, z23.b
+05A77144 trn1 z4.s, z10.s, z7.s
+05617338 trn1 z24.h, z25.h, z1.h
+05247013 trn1 z19.b, z0.b, z4.b
+053373C5 trn1 z5.b, z30.b, z19.b
+057E702A trn1 z10.h, z1.h, z30.h
+05E97315 trn1 z21.d, z24.d, z9.d
+05FF718C trn1 z12.d, z12.d, z31.d
+05F57108 trn1 z8.d, z8.d, z21.d
+057070C2 trn1 z2.h, z6.h, z16.h
+052471F5 trn1 z21.b, z15.b, z4.b
+0527711E trn1 z30.b, z8.b, z7.b
+05777023 trn1 z3.h, z1.h, z23.h
+05F27042 trn1 z2.d, z2.d, z18.d
+05767390 trn1 z16.h, z28.h, z22.h
+05F071AB trn1 z11.d, z13.d, z16.d
+052073E0 trn1 z0.b, z31.b, z0.b
+0537727F trn1 z31.b, z19.b, z23.b
+053772F3 trn1 z19.b, z23.b, z23.b
+
+// trn1_z_zz_q 000|0010|11|0|1|Zm=xxxxx|000|opc=11|H=0|Zn=xxxxx|Zd=xxxxx
+// Trn1ZZzQ: TRN1  <Zd>.Q, <Zn>.Q, <Zm>.Q
+// register fields: Zm, Zn, Zd
+05BA1BB0 trn1 z16.q, z29.q, z26.q
+05B218CF trn1 z15.q, z6.q, z18.q
+05B4194B trn1 z11.q, z10.q, z20.q
+05BB1A52 trn1 z18.q, z18.q, z27.q
+05B218CB trn1 z11.q, z6.q, z18.q
+05BF1B2D trn1 z13.q, z25.q, z31.q
+05A81B65 trn1 z5.q, z27.q, z8.q
+05AC1815 trn1 z21.q, z0.q, z12.q
+05A01BE0 trn1 z0.q, z31.q, z0.q
+05BA1BBF trn1 z31.q, z29.q, z26.q
+05BA1B50 trn1 z16.q, z26.q, z26.q
+
+// trn2_z_zz_ 000|0010|1|size=xx|1|Zm=xxxxx|011|10|H=1|Zn=xxxxx|Zd=xxxxx
+// Trn2ZZz: TRN2  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+057177B8 trn2 z24.h, z29.h, z17.h
+05AE758D trn2 z13.s, z12.s, z14.s
+05777435 trn2 z21.h, z1.h, z23.h
+057C7458 trn2 z24.h, z2.h, z28.h
+05A174C5 trn2 z5.s, z6.s, z1.s
+057276F1 trn2 z17.h, z23.h, z18.h
+05E877A2 trn2 z2.d, z29.d, z8.d
+05A974A5 trn2 z5.s, z5.s, z9.s
+05FE7752 trn2 z18.d, z26.d, z30.d
+05627669 trn2 z9.h, z19.h, z2.h
+0567746A trn2 z10.h, z3.h, z7.h
+05B575BC trn2 z28.s, z13.s, z21.s
+05A57491 trn2 z17.s, z4.s, z5.s
+05F77469 trn2 z9.d, z3.d, z23.d
+052574D6 trn2 z22.b, z6.b, z5.b
+053577FE trn2 z30.b, z31.b, z21.b
+05607400 trn2 z0.h, z0.h, z0.h
+057F77BF trn2 z31.h, z29.h, z31.h
+
+// trn2_z_zz_q 000|0010|11|0|1|Zm=xxxxx|000|opc=11|H=1|Zn=xxxxx|Zd=xxxxx
+// Trn2ZZzQ: TRN2  <Zd>.Q, <Zn>.Q, <Zm>.Q
+// register fields: Zm, Zn, Zd
+05AE1ED6 trn2 z22.q, z22.q, z14.q
+05A71F2B trn2 z11.q, z25.q, z7.q
+05A21D76 trn2 z22.q, z11.q, z2.q
+05B41C00 trn2 z0.q, z0.q, z20.q
+05A31CD4 trn2 z20.q, z6.q, z3.q
+05B91FF9 trn2 z25.q, z31.q, z25.q
+05A41F89 trn2 z9.q, z28.q, z4.q
+05B21C26 trn2 z6.q, z1.q, z18.q
+05A01EDF trn2 z31.q, z22.q, z0.q
+05BF1ED6 trn2 z22.q, z22.q, z31.q
+05AE1DD6 trn2 z22.q, z14.q, z14.q

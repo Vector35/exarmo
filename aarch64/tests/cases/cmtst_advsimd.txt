@@ -1,0 +1,46 @@
+// CMTST_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=10001|1|Rn=xxxxx|Rd=xxxxx
+// CmtstAsimdsameOnly: CMTST  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4EAC8C9F cmtst v31.4s, v4.4s, v12.4s
+0EAC8FED cmtst v13.2s, v31.2s, v12.2s
+0EB98C19 cmtst v25.2s, v0.2s, v25.2s
+4E658C0E cmtst v14.8h, v0.8h, v5.8h
+0E6A8DEB cmtst v11.4h, v15.4h, v10.4h
+4EA58C5E cmtst v30.4s, v2.4s, v5.4s
+4E6A8D3F cmtst v31.8h, v9.8h, v10.8h
+4EE88FD4 cmtst v20.2d, v30.2d, v8.2d
+4EE68F17 cmtst v23.2d, v24.2d, v6.2d
+0E3C8F75 cmtst v21.8b, v27.8b, v28.8b
+4EBE8D26 cmtst v6.4s, v9.4s, v30.4s
+4EA28D60 cmtst v0.4s, v11.4s, v2.4s
+4EAA8ED9 cmtst v25.4s, v22.4s, v10.4s
+4EFB8FC1 cmtst v1.2d, v30.2d, v27.2d
+4EF38EDD cmtst v29.2d, v22.2d, v19.2d
+0E658DDF cmtst v31.4h, v14.4h, v5.4h
+4EA08C9F cmtst v31.4s, v4.4s, v0.4s
+4EBF8C9F cmtst v31.4s, v4.4s, v31.4s
+0EEC8C9F UNDEFINED
+4E2C8D9F cmtst v31.16b, v12.16b, v12.16b
+4EAC8C84 cmtst v4.4s, v4.4s, v12.4s
+
+// CMTST_asisdsame_only 01|U=0|1|111|0|size=11|1|Rm=xxxxx|opcode=10001|1|Rn=xxxxx|Rd=xxxxx
+// CmtstAsisdsameOnly: CMTST  <d>, <n>, <m>
+// register fields: Rm, Rn, Rd
+5EF78D58 cmtst d24, d10, d23
+5EEA8D53 cmtst d19, d10, d10
+5EFE8C80 cmtst d0, d4, d30
+5EF48F97 cmtst d23, d28, d20
+5EF08E2C cmtst d12, d17, d16
+5EF08FC3 cmtst d3, d30, d16
+5EE88CD5 cmtst d21, d6, d8
+5EE38C97 cmtst d23, d4, d3
+5EF58DB0 cmtst d16, d13, d21
+5EE58C05 cmtst d5, d0, d5
+5EE78EAB cmtst d11, d21, d7
+5EF18DA9 cmtst d9, d13, d17
+5EFD8E79 cmtst d25, d19, d29
+5EEC8F25 cmtst d5, d25, d12
+5EF78F8C cmtst d12, d28, d23
+5EFF8CF0 cmtst d16, d7, d31
+5EE08FFF cmtst d31, d31, d0

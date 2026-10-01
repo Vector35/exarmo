@@ -1,0 +1,90 @@
+// SBC_i_A1 cond=xxxx|0010|opc=110|S=0|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// SbcIA1: SBC{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+e2c9ab92 sbc r10, r9, #149504
+22cb9be1 sbchs r9, r11, #230400
+02c4ef36 sbceq lr, r4, #216
+62cce5ed sbcvs lr, r12, #994050048
+42c2a189 sbcmi r10, r2, #1073741858
+12c132cc sbcne r3, r1, #3221225484
+42c87456 sbcmi r7, r8, #1442840576
+42c2bbc3 sbcmi r11, r2, #199680
+// Binary Ninja's tests
+e2c54a0f sbc r4, r5, #61440
+e2c55a0f sbc r5, r5, #61440
+F2C9AB92 UNALLOCATED
+82C00000 sbchi r0, r0, #0x0
+E2CFFFFF sbc pc, pc, #0x3fc
+E2C9A800 sbc r10, r9, #0x0
+E2C9A400 sbc r10, r9, #0x0
+E2C9A200 sbc r10, r9, #0x0
+E2C9A100 sbc r10, r9, #0x0
+E2C9A080 sbc r10, r9, #0x80
+E2C9A040 sbc r10, r9, #0x40
+E2C9A020 sbc r10, r9, #0x20
+E2C9A010 sbc r10, r9, #0x10
+E2C9A008 sbc r10, r9, #0x8
+E2C9A004 sbc r10, r9, #0x4
+E2C9A002 sbc r10, r9, #0x2
+E2C9A001 sbc r10, r9, #0x1
+E2C9A081 sbc r10, r9, #0x81
+E2C9A181 sbc r10, r9, #0x40000020
+E2C9A281 sbc r10, r9, #0x10000008
+E2C9A381 sbc r10, r9, #0x4000002
+E2C9A481 sbc r10, r9, #0x81000000
+E2C9A581 sbc r10, r9, #0x20400000
+E2C9A681 sbc r10, r9, #0x8100000
+E2C9A781 sbc r10, r9, #0x2040000
+E2C9A881 sbc r10, r9, #0x810000
+E2C9A981 sbc r10, r9, #0x204000
+E2C9AA81 sbc r10, r9, #0x81000
+E2C9AB81 sbc r10, r9, #0x20400
+E2C9AC81 sbc r10, r9, #0x8100
+E2C9AD81 sbc r10, r9, #0x2040
+E2C9AE81 sbc r10, r9, #0x810
+E2C9AF81 sbc r10, r9, #0x204
+
+// SBCS_i_A1 cond=xxxx|0010|opc=110|S=1|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// SbcsIA1: SBCS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+c2d67bbc sbcsgt r7, r6, #192512
+62d75373 sbcsvs r5, r7, #3422552065
+c2dce566 sbcsgt lr, r12, #427819008
+32df467d sbcslo r4, pc, #131072000
+a2d37fbc sbcsge r7, r3, #752
+02dc7d25 sbcseq r7, r12, #2368
+e2dc897a sbcs r8, r12, #1998848
+b2d8aa3c sbcslt r10, r8, #245760
+F2D67BBC UNALLOCATED
+82D00000 sbcshi r0, r0, #0x0
+42D6FFFF sbcsmi pc, r6, #0x3fc
+22D66800 sbcscs r6, r6, #0x0
+12D67400 sbcsne r7, r6, #0x0
+C2D67200 sbcsgt r7, r6, #0x0
+C2D67100 sbcsgt r7, r6, #0x0
+C2D67080 sbcsgt r7, r6, #0x80
+C2D67040 sbcsgt r7, r6, #0x40
+C2D67020 sbcsgt r7, r6, #0x20
+C2D67010 sbcsgt r7, r6, #0x10
+C2D67008 sbcsgt r7, r6, #0x8
+C2D67004 sbcsgt r7, r6, #0x4
+C2D67002 sbcsgt r7, r6, #0x2
+C2D67001 sbcsgt r7, r6, #0x1
+C2D67081 sbcsgt r7, r6, #0x81
+C2D67181 sbcsgt r7, r6, #0x40000020
+C2D67281 sbcsgt r7, r6, #0x10000008
+C2D67381 sbcsgt r7, r6, #0x4000002
+C2D67481 sbcsgt r7, r6, #0x81000000
+C2D67581 sbcsgt r7, r6, #0x20400000
+C2D67681 sbcsgt r7, r6, #0x8100000
+C2D67781 sbcsgt r7, r6, #0x2040000
+C2D67881 sbcsgt r7, r6, #0x810000
+C2D67981 sbcsgt r7, r6, #0x204000
+C2D67A81 sbcsgt r7, r6, #0x81000
+C2D67B81 sbcsgt r7, r6, #0x20400
+C2D67C81 sbcsgt r7, r6, #0x8100
+C2D67D81 sbcsgt r7, r6, #0x2040
+C2D67E81 sbcsgt r7, r6, #0x810
+C2D67F81 sbcsgt r7, r6, #0x204

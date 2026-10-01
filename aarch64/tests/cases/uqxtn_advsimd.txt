@@ -1,0 +1,63 @@
+// UQXTN_asimdmisc_N 0|Q=x|U=1|0|111|0|size=xx|10000|opcode=10100|10|Rn=xxxxx|Rd=xxxxx
+// UqxtnAsimdmiscN: UQXTN  <Vd>.<Tb>, <Vn>.<Ta>
+// UqxtnAsimdmiscN2: UQXTN2  <Vd>.<Tb>, <Vn>.<Ta>
+// read together by <Tb>: Q, size
+// register fields: Rn, Rd
+// form chosen on: Q
+6EA1496B uqxtn2 v11.4s, v11.2d
+2E61499F uqxtn v31.4h, v12.4s
+6E614B1A uqxtn2 v26.8h, v24.4s
+2EA14B5E uqxtn v30.2s, v26.2d
+2E614AC7 uqxtn v7.4h, v22.4s
+6EA14A16 uqxtn2 v22.4s, v16.2d
+2E614B9A uqxtn v26.4h, v28.4s
+6EA14AD1 uqxtn2 v17.4s, v22.2d
+6EA14BE9 uqxtn2 v9.4s, v31.2d
+2E214AA0 uqxtn v0.8b, v21.8h
+2E614BB6 uqxtn v22.4h, v29.4s
+2EA14BFA uqxtn v26.2s, v31.2d
+6E6149A7 uqxtn2 v7.8h, v13.4s
+6E214A21 uqxtn2 v1.16b, v17.8h
+2EA14A4F uqxtn v15.2s, v18.2d
+2E214989 uqxtn v9.8b, v12.8h
+6EA1480B uqxtn2 v11.4s, v0.2d
+6EE1496B UNDEFINED
+2EE1496B UNDEFINED
+6E214989 uqxtn2 v9.16b, v12.8h
+
+// UQXTN_asisdmisc_N 01|U=1|1|111|0|size=xx|10000|opcode=10100|10|Rn=xxxxx|Rd=xxxxx
+// UqxtnAsisdmiscN: UQXTN  <Vb><d>, <Va><n>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// register fields: Rn, Rd
+7E214AFD uqxtn b29, h23
+7E614BCC uqxtn h12, s30
+7E6149C5 uqxtn h5, s14
+7EA1484F uqxtn s15, d2
+7EA1484D uqxtn s13, d2
+7E6149F3 uqxtn h19, s15
+7E614856 uqxtn h22, s2
+7E614B90 uqxtn h16, s28
+7E614BF0 uqxtn h16, s31
+7E2148BE uqxtn b30, h5
+7EA14B79 uqxtn s25, d27
+7EA149EF uqxtn s15, d15
+7E6149FB uqxtn h27, s15
+7E2148DA uqxtn b26, h6
+7E214B35 uqxtn b21, h25
+7E6149BE uqxtn h30, s13
+7E214800 uqxtn b0, h0
+7E214AFF uqxtn b31, h23
+7EE14AFD UNDEFINED
+7E614AE0 uqxtn h0, s23
+7E614AFF uqxtn h31, s23
+7EA14AE0 uqxtn s0, d23
+7EA14AFF uqxtn s31, d23
+7EE14AE0 UNDEFINED
+7EE14AFF UNDEFINED
+7E214BFD uqxtn b29, h31
+7E61481D uqxtn h29, s0
+7EA1481D uqxtn s29, d0
+7EA14BFD uqxtn s29, d31
+7EE1481D UNDEFINED
+7EE14BFD UNDEFINED

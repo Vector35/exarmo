@@ -1,0 +1,11 @@
+// addqp_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|011|110|Zn=xxxxx|Zd=xxxxx
+// AddqpZZz: ADDQP  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+04207805 addqp z5.b, z0.b, z0.b
+0420780C addqp z12.b, z0.b, z0.b
+04207813 addqp z19.b, z0.b, z0.b
+047F7BE0 addqp z0.h, z31.h, z31.h
+04A0781F addqp z31.s, z0.s, z0.s
+04E07805 addqp z5.d, z0.d, z0.d
+04207800 addqp z0.b, z0.b, z0.b
+04217843 addqp z3.b, z2.b, z1.b

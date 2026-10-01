@@ -1,0 +1,22 @@
+// smax_z_p_zz_ 000|0010|0|size=xx|0|01|opc=00|U=0|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SmaxZPZz: SMAX  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04081634 smax z20.b, p5/m, z20.b, z17.b
+04C808E9 smax z9.d, p2/m, z9.d, z7.d
+04080F8B smax z11.b, p3/m, z11.b, z28.b
+04481374 smax z20.h, p4/m, z20.h, z27.h
+04C8192A smax z10.d, p6/m, z10.d, z9.d
+040802E1 smax z1.b, p0/m, z1.b, z23.b
+04C81100 smax z0.d, p4/m, z0.d, z8.d
+04C8034F smax z15.d, p0/m, z15.d, z26.d
+04C8012D smax z13.d, p0/m, z13.d, z9.d
+04480A77 smax z23.h, p2/m, z23.h, z19.h
+04881A07 smax z7.s, p6/m, z7.s, z16.s
+04080BA3 smax z3.b, p2/m, z3.b, z29.b
+04C8040E smax z14.d, p1/m, z14.d, z0.d
+04C81F08 smax z8.d, p7/m, z8.d, z24.d
+04C81744 smax z4.d, p5/m, z4.d, z26.d
+04881E40 smax z0.s, p7/m, z0.s, z18.s
+040817FF smax z31.b, p5/m, z31.b, z31.b
+040814B4 smax z20.b, p5/m, z20.b, z5.b
+04081625 smax z5.b, p5/m, z5.b, z17.b

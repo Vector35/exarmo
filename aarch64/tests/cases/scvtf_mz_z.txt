@@ -1,0 +1,21 @@
+// scvtf_mz_z_2 1|10|0000|1|00|1|000|10|111000|Zn=xxxx|U=0|Zd=xxxx|0
+// ScvtfMzZ2: SCVTF  { <Zd1>.S-<Zd2>.S }, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+C122E00C scvtf {z12.s-z13.s}, {z0.s-z1.s}
+C122E01A scvtf {z26.s-z27.s}, {z0.s-z1.s}
+C122E044 scvtf {z4.s-z5.s}, {z2.s-z3.s}
+C122E3C0 scvtf {z0.s-z1.s}, {z30.s-z31.s}
+C122E01E scvtf {z30.s-z31.s}, {z0.s-z1.s}
+C122E000 scvtf {z0.s-z1.s}, {z0.s-z1.s}
+
+// scvtf_mz_z_4 1|10|0000|1|00|1|100|10|111000|Zn=xxx|0|U=0|Zd=xxx|00
+// ScvtfMzZ4: SCVTF  { <Zd1>.S-<Zd4>.S }, { <Zn1>.S-<Zn4>.S }
+// register fields: Zn, Zd
+C132E008 scvtf {z8.s-z11.s}, {z0.s-z3.s}
+C132E094 scvtf {z20.s-z23.s}, {z4.s-z7.s}
+C132E104 scvtf {z4.s-z7.s}, {z8.s-z11.s}
+C132E180 scvtf {z0.s-z3.s}, {z12.s-z15.s}
+C132E20C scvtf {z12.s-z15.s}, {z16.s-z19.s}
+C132E290 scvtf {z16.s-z19.s}, {z20.s-z23.s}
+C132E318 scvtf {z24.s-z27.s}, {z24.s-z27.s}
+C132E39C scvtf {z28.s-z31.s}, {z28.s-z31.s}

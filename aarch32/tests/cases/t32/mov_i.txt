@@ -1,0 +1,209 @@
+// MOV_i_T1 00|1|op=00|Rd=xxx|imm8=xxxxxxxx
+// MovIT1: MOV<c>{<q>}  <Rd>, #<imm8>
+// T1bMovIT1: MOVS{<q>}  <Rd>, #<imm8>
+// register fields: Rd
+// IT state read: condition, in block
+2000 movs r0, #0
+2001 movs r0, #1
+2002 movs r0, #2
+2003 movs r0, #3
+2004 movs r0, #4
+2005 movs r0, #5
+2006 movs r0, #6
+2007 movs r0, #7
+21FF movs r1, #0xff
+2280 movs r2, #0x80
+2340 movs r3, #0x40
+2420 movs r4, #0x20
+2510 movs r5, #0x10
+2608 movs r6, #0x8
+2700 movs r7, #0x0
+2000 [ne] movne r0, #0x0
+
+// MOV_i_T2 11110|i=x|0|op1=0010|S=0|Rn=1111|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// MovIT2: MOV{<c>}{<q>}  <Rd>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f04f5b88 mov r11, #285212672
+f44f0500 mov r5, #8388608
+f04f145e mov r4, #6160478
+f44f2b07 mov r11, #552960
+f44f2936 mov r9, #745472
+f04f5af3 mov r10, #509607936
+F04F30FF mov r0, #0xffffffff
+F04F4F80 mov pc, #0x40000000 (unpredictable)
+F04F6B40 mov r11, #0xc000000
+F04F7B20 mov r11, #0x2800000
+F04F5B10 mov r11, #0x24000000
+F04F5B08 mov r11, #0x22000000
+F04F5B04 mov r11, #0x21000000
+F04F5B02 mov r11, #0x20800000
+F04F5B01 mov r11, #0x20400000
+F04F0B00 mov r11, #0x0
+F04F0BFF mov r11, #0xff
+F04F1B00 mov r11, #0x0
+F04F1BFF mov r11, #0xff00ff
+F04F2B00 mov r11, #0x0
+F04F2BFF mov r11, #0xff00ff00
+F04F3B00 mov r11, #0x0
+F04F3BFF mov r11, #0xffffffff
+F04F4B00 mov r11, #0x80000000
+F04F4BFF mov r11, #0x7f800000
+F04F5B00 mov r11, #0x20000000
+F04F5BFF mov r11, #0x1fe00000
+F04F6B00 mov r11, #0x8000000
+F04F6BFF mov r11, #0x7f80000
+F04F7B00 mov r11, #0x2000000
+F04F7BFF mov r11, #0x1fe0000
+F44F0BFF mov r11, #0x7f8000
+F44F1B00 mov r11, #0x200000
+F44F1BFF mov r11, #0x1fe000
+F44F2B00 mov r11, #0x80000
+F44F2BFF mov r11, #0x7f800
+F44F3B00 mov r11, #0x20000
+F44F3BFF mov r11, #0x1fe00
+F44F4B00 mov r11, #0x8000
+F44F4BFF mov r11, #0x7f80
+F44F5B00 mov r11, #0x2000
+F44F5BFF mov r11, #0x1fe0
+F44F6B00 mov r11, #0x800
+F44F6BFF mov r11, #0x7f8
+F44F7B00 mov r11, #0x200
+F44F7BFF mov r11, #0x1fe
+F04F5B88 [ne] movne r11, #0x11000000
+
+// MOV_i_T3 111|10|i=x|1|0|o1=0|10|0|imm4=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// T3bMovIT3: MOVW{<c>}{<q>}  <Rd>, #<imm16>
+// read together by <imm16>: i, imm4, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+F2400000 movw r0, #0x0
+F64F1FFF movw pc, #0xf9ff (unpredictable)
+F2482080 movw r0, #0x8280
+F2443040 movw r0, #0x4340
+F2424020 movw r0, #0x2420
+F2415010 movw r0, #0x1510
+F2406008 movw r0, #0x608
+F2407004 movw r0, #0x704
+F2400002 movw r0, #0x2
+F2400001 movw r0, #0x1
+F24000FF movw r0, #0xff
+F2401000 movw r0, #0x100
+F24010FF movw r0, #0x1ff
+F2402000 movw r0, #0x200
+F24020FF movw r0, #0x2ff
+F2403000 movw r0, #0x300
+F24030FF movw r0, #0x3ff
+F2404000 movw r0, #0x400
+F24040FF movw r0, #0x4ff
+F2405000 movw r0, #0x500
+F24050FF movw r0, #0x5ff
+F2406000 movw r0, #0x600
+F24060FF movw r0, #0x6ff
+F2407000 movw r0, #0x700
+F24070FF movw r0, #0x7ff
+F24F0000 movw r0, #0xf000
+F24F00FF movw r0, #0xf0ff
+F24F1000 movw r0, #0xf100
+F24F10FF movw r0, #0xf1ff
+F24F2000 movw r0, #0xf200
+F24F20FF movw r0, #0xf2ff
+F24F3000 movw r0, #0xf300
+F24F30FF movw r0, #0xf3ff
+F24F4000 movw r0, #0xf400
+F24F40FF movw r0, #0xf4ff
+F24F5000 movw r0, #0xf500
+F24F50FF movw r0, #0xf5ff
+F24F6000 movw r0, #0xf600
+F24F60FF movw r0, #0xf6ff
+F24F7000 movw r0, #0xf700
+F24F70FF movw r0, #0xf7ff
+F6400000 movw r0, #0x800
+F64000FF movw r0, #0x8ff
+F6401000 movw r0, #0x900
+F64010FF movw r0, #0x9ff
+F6402000 movw r0, #0xa00
+F64020FF movw r0, #0xaff
+F6403000 movw r0, #0xb00
+F64030FF movw r0, #0xbff
+F6404000 movw r0, #0xc00
+F64040FF movw r0, #0xcff
+F6405000 movw r0, #0xd00
+F64050FF movw r0, #0xdff
+F6406000 movw r0, #0xe00
+F64060FF movw r0, #0xeff
+F6407000 movw r0, #0xf00
+F64070FF movw r0, #0xfff
+F64F0000 movw r0, #0xf800
+F64F00FF movw r0, #0xf8ff
+F64F1000 movw r0, #0xf900
+F64F10FF movw r0, #0xf9ff
+F64F2000 movw r0, #0xfa00
+F64F20FF movw r0, #0xfaff
+F64F3000 movw r0, #0xfb00
+F64F30FF movw r0, #0xfbff
+F64F4000 movw r0, #0xfc00
+F64F40FF movw r0, #0xfcff
+F64F5000 movw r0, #0xfd00
+F64F50FF movw r0, #0xfdff
+F64F6000 movw r0, #0xfe00
+F64F60FF movw r0, #0xfeff
+F64F7000 movw r0, #0xff00
+F64F70FF movw r0, #0xffff
+F2400000 [ne] movwne r0, #0x0
+
+// MOVS_i_T2 11110|i=x|0|op1=0010|S=1|Rn=1111|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// MovsIT2: MOVS{<c>}{<q>}  <Rd>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f05f13e8 movs r3, #15204584
+f45f3862 movs r8, #231424
+f05f7dc5 movs sp, #25821184
+f05f3256 movs r2, #1448498774
+f45f51ce movs r1, #6592
+f05f3125 movs r1, #623191333
+F05F0000 movs r0, #0x0
+F05F2FFF movs pc, #0xff00ff00 (unpredictable)
+F05F4380 movs r3, #0x40000000
+F05F6340 movs r3, #0xc000000
+F05F1320 movs r3, #0x200020
+F05F1310 movs r3, #0x100010
+F05F1308 movs r3, #0x80008
+F05F1304 movs r3, #0x40004
+F05F1302 movs r3, #0x20002
+F05F1301 movs r3, #0x10001
+F05F0300 movs r3, #0x0
+F05F03FF movs r3, #0xff
+F05F1300 movs r3, #0x0
+F05F13FF movs r3, #0xff00ff
+F05F2300 movs r3, #0x0
+F05F23FF movs r3, #0xff00ff00
+F05F3300 movs r3, #0x0
+F05F33FF movs r3, #0xffffffff
+F05F4300 movs r3, #0x80000000
+F05F43FF movs r3, #0x7f800000
+F05F5300 movs r3, #0x20000000
+F05F53FF movs r3, #0x1fe00000
+F05F6300 movs r3, #0x8000000
+F05F63FF movs r3, #0x7f80000
+F05F7300 movs r3, #0x2000000
+F05F73FF movs r3, #0x1fe0000
+F45F0300 movs r3, #0x800000
+F45F03FF movs r3, #0x7f8000
+F45F1300 movs r3, #0x200000
+F45F13FF movs r3, #0x1fe000
+F45F2300 movs r3, #0x80000
+F45F23FF movs r3, #0x7f800
+F45F3300 movs r3, #0x20000
+F45F33FF movs r3, #0x1fe00
+F45F4300 movs r3, #0x8000
+F45F43FF movs r3, #0x7f80
+F45F5300 movs r3, #0x2000
+F45F53FF movs r3, #0x1fe0
+F45F6300 movs r3, #0x800
+F45F63FF movs r3, #0x7f8
+F45F7300 movs r3, #0x200
+F45F73FF movs r3, #0x1fe
+F05F13E8 [ne] movsne r3, #0xe800e8

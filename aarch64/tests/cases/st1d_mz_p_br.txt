@@ -1,0 +1,30 @@
+// st1d_mz_p_br_2 1|01|0000|00|01|Rm=xxxxx|0|msz=11|PNg=xxx|Rn=xxxxx|Zt=xxxx|N=0
+// St1dMzPBr2: ST1D  { <Zt1>.D-<Zt2>.D }, <PNg>, [<Xn|SP>, <Xm>, LSL #3]
+// register fields: Rm, PNg, Rn, Zt
+A0206008 st1d {z8.d-z9.d}, pn8, [x0, x0, lsl #0x3]
+A0206016 st1d {z22.d-z23.d}, pn8, [x0, x0, lsl #0x3]
+A0206024 st1d {z4.d-z5.d}, pn8, [x1, x0, lsl #0x3]
+A03F67E0 st1d {z0.d-z1.d}, pn9, [sp, xzr, lsl #0x3]
+A020681E st1d {z30.d-z31.d}, pn10, [x0, x0, lsl #0x3]
+A0206C08 st1d {z8.d-z9.d}, pn11, [x0, x0, lsl #0x3]
+A0207008 st1d {z8.d-z9.d}, pn12, [x0, x0, lsl #0x3]
+A0207408 st1d {z8.d-z9.d}, pn13, [x0, x0, lsl #0x3]
+A0207808 st1d {z8.d-z9.d}, pn14, [x0, x0, lsl #0x3]
+A0207C08 st1d {z8.d-z9.d}, pn15, [x0, x0, lsl #0x3]
+A0206000 st1d {z0.d-z1.d}, pn8, [x0, x0, lsl #0x3]
+A0216868 st1d {z8.d-z9.d}, pn10, [x3, x1, lsl #0x3]
+
+// st1d_mz_p_br_4 1|01|0000|00|01|Rm=xxxxx|1|msz=11|PNg=xxx|Rn=xxxxx|Zt=xxx|0|N=0
+// St1dMzPBr4: ST1D  { <Zt1>.D-<Zt4>.D }, <PNg>, [<Xn|SP>, <Xm>, LSL #3]
+// register fields: Rm, PNg, Rn, Zt
+A020E000 st1d {z0.d-z3.d}, pn8, [x0, x0, lsl #0x3]
+A020E01C st1d {z28.d-z31.d}, pn8, [x0, x0, lsl #0x3]
+A020E038 st1d {z24.d-z27.d}, pn8, [x1, x0, lsl #0x3]
+A03FE7E4 st1d {z4.d-z7.d}, pn9, [sp, xzr, lsl #0x3]
+A020E808 st1d {z8.d-z11.d}, pn10, [x0, x0, lsl #0x3]
+A020EC0C st1d {z12.d-z15.d}, pn11, [x0, x0, lsl #0x3]
+A020F010 st1d {z16.d-z19.d}, pn12, [x0, x0, lsl #0x3]
+A020F414 st1d {z20.d-z23.d}, pn13, [x0, x0, lsl #0x3]
+A020F800 st1d {z0.d-z3.d}, pn14, [x0, x0, lsl #0x3]
+A020FC00 st1d {z0.d-z3.d}, pn15, [x0, x0, lsl #0x3]
+A021E870 st1d {z16.d-z19.d}, pn10, [x3, x1, lsl #0x3]

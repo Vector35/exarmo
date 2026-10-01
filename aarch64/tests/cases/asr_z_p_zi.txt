@@ -1,0 +1,135 @@
+// asr_z_p_zi_ 000|0010|0|tszh=xx|0|0|opc=00|L=0|U=0|100|Pg=xxx|tszl=xx|imm3=xxx|Zdn=xxxxx
+// AsrZPZi: ASR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Pg, Zdn
+04809AA8 asr z8.d, p6/m, z8.d, #0x2b
+04808C96 asr z22.d, p3/m, z22.d, #0x3c
+04408E10 asr z16.s, p3/m, z16.s, #0x10
+04409476 asr z22.s, p5/m, z22.s, #0x1d
+04C09255 asr z21.d, p4/m, z21.d, #0xe
+048098AD asr z13.d, p6/m, z13.d, #0x3b
+04008181 asr z1.b, p0/m, z1.b, #0x4
+0480872C asr z12.d, p1/m, z12.d, #0x27
+04C095DB asr z27.d, p5/m, z27.d, #0x12
+0400892D asr z13.b, p2/m, z13.b, #0x7
+040087FE asr z30.h, p1/m, z30.h, #0x1
+040096C9 asr z9.h, p5/m, z9.h, #0xa
+048084A6 asr z6.d, p1/m, z6.d, #0x3b
+04C09E7D asr z29.d, p7/m, z29.d, #0xd
+0480810C asr z12.d, p0/m, z12.d, #0x38
+040095D9 asr z25.b, p5/m, z25.b, #0x2
+04809AA0 asr z0.d, p6/m, z0.d, #0x2b
+04809ABF asr z31.d, p6/m, z31.d, #0x2b
+04009808 UNDEFINED
+04009828 UNDEFINED
+04009848 UNDEFINED
+04009868 UNDEFINED
+04009888 UNDEFINED
+040098A8 UNDEFINED
+040098C8 UNDEFINED
+040098E8 UNDEFINED
+04009906 asr z6.b, p6/m, z6.b, #0x8
+04009948 asr z8.b, p6/m, z8.b, #0x6
+04009968 asr z8.b, p6/m, z8.b, #0x5
+040099A8 asr z8.b, p6/m, z8.b, #0x3
+040099E8 asr z8.b, p6/m, z8.b, #0x1
+04009A08 asr z8.h, p6/m, z8.h, #0x10
+04009A28 asr z8.h, p6/m, z8.h, #0xf
+04009A48 asr z8.h, p6/m, z8.h, #0xe
+04009A68 asr z8.h, p6/m, z8.h, #0xd
+04009A88 asr z8.h, p6/m, z8.h, #0xc
+04009AA8 asr z8.h, p6/m, z8.h, #0xb
+04009AE8 asr z8.h, p6/m, z8.h, #0x9
+04009B08 asr z8.h, p6/m, z8.h, #0x8
+04009B28 asr z8.h, p6/m, z8.h, #0x7
+04009B48 asr z8.h, p6/m, z8.h, #0x6
+04009B68 asr z8.h, p6/m, z8.h, #0x5
+04009B88 asr z8.h, p6/m, z8.h, #0x4
+04009BA8 asr z8.h, p6/m, z8.h, #0x3
+04009BC8 asr z8.h, p6/m, z8.h, #0x2
+04409808 asr z8.s, p6/m, z8.s, #0x20
+04409828 asr z8.s, p6/m, z8.s, #0x1f
+04409848 asr z8.s, p6/m, z8.s, #0x1e
+04409888 asr z8.s, p6/m, z8.s, #0x1c
+044098A8 asr z8.s, p6/m, z8.s, #0x1b
+044098C8 asr z8.s, p6/m, z8.s, #0x1a
+044098E8 asr z8.s, p6/m, z8.s, #0x19
+04409908 asr z8.s, p6/m, z8.s, #0x18
+04409928 asr z8.s, p6/m, z8.s, #0x17
+04409948 asr z8.s, p6/m, z8.s, #0x16
+04409968 asr z8.s, p6/m, z8.s, #0x15
+04409988 asr z8.s, p6/m, z8.s, #0x14
+044099A8 asr z8.s, p6/m, z8.s, #0x13
+044099C8 asr z8.s, p6/m, z8.s, #0x12
+044099E8 asr z8.s, p6/m, z8.s, #0x11
+04409A28 asr z8.s, p6/m, z8.s, #0xf
+04409A48 asr z8.s, p6/m, z8.s, #0xe
+04409A68 asr z8.s, p6/m, z8.s, #0xd
+04409A88 asr z8.s, p6/m, z8.s, #0xc
+04409AA8 asr z8.s, p6/m, z8.s, #0xb
+04409AC8 asr z8.s, p6/m, z8.s, #0xa
+04409AE8 asr z8.s, p6/m, z8.s, #0x9
+04409B08 asr z8.s, p6/m, z8.s, #0x8
+04409B28 asr z8.s, p6/m, z8.s, #0x7
+04409B48 asr z8.s, p6/m, z8.s, #0x6
+04409B68 asr z8.s, p6/m, z8.s, #0x5
+04409B88 asr z8.s, p6/m, z8.s, #0x4
+04409BA8 asr z8.s, p6/m, z8.s, #0x3
+04409BC8 asr z8.s, p6/m, z8.s, #0x2
+04409BE8 asr z8.s, p6/m, z8.s, #0x1
+04809808 asr z8.d, p6/m, z8.d, #0x40
+04809828 asr z8.d, p6/m, z8.d, #0x3f
+04809848 asr z8.d, p6/m, z8.d, #0x3e
+04809868 asr z8.d, p6/m, z8.d, #0x3d
+048098C8 asr z8.d, p6/m, z8.d, #0x3a
+048098E8 asr z8.d, p6/m, z8.d, #0x39
+04809928 asr z8.d, p6/m, z8.d, #0x37
+04809948 asr z8.d, p6/m, z8.d, #0x36
+04809968 asr z8.d, p6/m, z8.d, #0x35
+04809988 asr z8.d, p6/m, z8.d, #0x34
+048099A8 asr z8.d, p6/m, z8.d, #0x33
+048099C8 asr z8.d, p6/m, z8.d, #0x32
+048099E8 asr z8.d, p6/m, z8.d, #0x31
+04809A08 asr z8.d, p6/m, z8.d, #0x30
+04809A28 asr z8.d, p6/m, z8.d, #0x2f
+04809A48 asr z8.d, p6/m, z8.d, #0x2e
+04809A68 asr z8.d, p6/m, z8.d, #0x2d
+04809A88 asr z8.d, p6/m, z8.d, #0x2c
+04809AC8 asr z8.d, p6/m, z8.d, #0x2a
+04809AE8 asr z8.d, p6/m, z8.d, #0x29
+04809B08 asr z8.d, p6/m, z8.d, #0x28
+04809B48 asr z8.d, p6/m, z8.d, #0x26
+04809B68 asr z8.d, p6/m, z8.d, #0x25
+04809B88 asr z8.d, p6/m, z8.d, #0x24
+04809BA8 asr z8.d, p6/m, z8.d, #0x23
+04809BC8 asr z8.d, p6/m, z8.d, #0x22
+04809BE8 asr z8.d, p6/m, z8.d, #0x21
+04C09808 asr z8.d, p6/m, z8.d, #0x20
+04C09828 asr z8.d, p6/m, z8.d, #0x1f
+04C09848 asr z8.d, p6/m, z8.d, #0x1e
+04C09868 asr z8.d, p6/m, z8.d, #0x1d
+04C09888 asr z8.d, p6/m, z8.d, #0x1c
+04C098A8 asr z8.d, p6/m, z8.d, #0x1b
+04C098C8 asr z8.d, p6/m, z8.d, #0x1a
+04C098E8 asr z8.d, p6/m, z8.d, #0x19
+04C09908 asr z8.d, p6/m, z8.d, #0x18
+04C09928 asr z8.d, p6/m, z8.d, #0x17
+04C09948 asr z8.d, p6/m, z8.d, #0x16
+04C09968 asr z8.d, p6/m, z8.d, #0x15
+04C09988 asr z8.d, p6/m, z8.d, #0x14
+04C099A8 asr z8.d, p6/m, z8.d, #0x13
+04C099E8 asr z8.d, p6/m, z8.d, #0x11
+04C09A08 asr z8.d, p6/m, z8.d, #0x10
+04C09A28 asr z8.d, p6/m, z8.d, #0xf
+04C09A88 asr z8.d, p6/m, z8.d, #0xc
+04C09AA8 asr z8.d, p6/m, z8.d, #0xb
+04C09AC8 asr z8.d, p6/m, z8.d, #0xa
+04C09AE8 asr z8.d, p6/m, z8.d, #0x9
+04C09B08 asr z8.d, p6/m, z8.d, #0x8
+04C09B28 asr z8.d, p6/m, z8.d, #0x7
+04C09B48 asr z8.d, p6/m, z8.d, #0x6
+04C09B68 asr z8.d, p6/m, z8.d, #0x5
+04C09B88 asr z8.d, p6/m, z8.d, #0x4
+04C09BA8 asr z8.d, p6/m, z8.d, #0x3
+04C09BC8 asr z8.d, p6/m, z8.d, #0x2
+04C09BE8 asr z8.d, p6/m, z8.d, #0x1

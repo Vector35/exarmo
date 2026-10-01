@@ -1,0 +1,25 @@
+// UABA_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|0111|ac=1|1|Rn=xxxxx|Rd=xxxxx
+// UabaAsimdsameOnly: UABA  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+2E3C7C92 uaba v18.8b, v4.8b, v28.8b
+6E327E3F uaba v31.16b, v17.16b, v18.16b
+2EA57E76 uaba v22.2s, v19.2s, v5.2s
+6EAE7D7C uaba v28.4s, v11.4s, v14.4s
+2E207FE2 uaba v2.8b, v31.8b, v0.8b
+6E757CA3 uaba v3.8h, v5.8h, v21.8h
+6E7A7DE1 uaba v1.8h, v15.8h, v26.8h
+2E357ED4 uaba v20.8b, v22.8b, v21.8b
+2E307F2F uaba v15.8b, v25.8b, v16.8b
+6E697FD4 uaba v20.8h, v30.8h, v9.8h
+2E727F44 uaba v4.4h, v26.4h, v18.4h
+2E2C7FCD uaba v13.8b, v30.8b, v12.8b
+6EBF7E74 uaba v20.4s, v19.4s, v31.4s
+6E7E7E37 uaba v23.8h, v17.8h, v30.8h
+2E717E5A uaba v26.4h, v18.4h, v17.4h
+2E707DD7 uaba v23.4h, v14.4h, v16.4h
+2E3C7C00 uaba v0.8b, v0.8b, v28.8b
+2EFC7C92 UNDEFINED
+6EFC7C92 UNDEFINED
+2E3C7F92 uaba v18.8b, v28.8b, v28.8b
+2E3C7C9C uaba v28.8b, v4.8b, v28.8b

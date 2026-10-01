@@ -1,0 +1,14 @@
+// ld1rob_z_p_br_contiguous 101|0010|msz=00|ssz=01|Rm=xxxxx|000|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld1robZPBrContiguous: LD1ROB  { <Zt>.B }, <Pg>/Z, [<Xn|SP>, <Xm>]
+// register fields: Rm, Pg, Rn, Zt
+A43713BA ld1rob {z26.b}, p4/z, [fp, x23]
+A42C0ECB ld1rob {z11.b}, p3/z, [x22, x12]
+A42B04B1 ld1rob {z17.b}, p1/z, [x5, x11]
+A4330E95 ld1rob {z21.b}, p3/z, [x20, x19]
+A42915F6 ld1rob {z22.b}, p5/z, [x15, x9]
+A4291F41 ld1rob {z1.b}, p7/z, [x26, x9]
+A42D08C2 ld1rob {z2.b}, p2/z, [x6, x13]
+A42E0A86 ld1rob {z6.b}, p2/z, [x20, x14]
+A4200000 ld1rob {z0.b}, p0/z, [x0, x0]
+A4371BFF ld1rob {z31.b}, p6/z, [sp, x23]
+A43F13BA UNALLOCATED

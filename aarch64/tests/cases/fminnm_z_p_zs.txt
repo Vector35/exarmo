@@ -1,0 +1,23 @@
+// fminnm_z_p_zs_ 011|0010|1|size=xx|0|11|opc=101|100|Pg=xxx|0000|i1=x|Zdn=xxxxx
+// FminnmZPZs: FMINNM  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <const>
+// register fields: Pg, Zdn
+65DD980D fminnm z13.d, p6/m, z13.d, #0.0
+655D9C39 fminnm z25.h, p7/m, z25.h, #1.0
+65DD9030 fminnm z16.d, p4/m, z16.d, #1.0
+655D902E fminnm z14.h, p4/m, z14.h, #1.0
+65DD8036 fminnm z22.d, p0/m, z22.d, #1.0
+659D840B fminnm z11.s, p1/m, z11.s, #0.0
+655D9C3B fminnm z27.h, p7/m, z27.h, #1.0
+65DD9C0A fminnm z10.d, p7/m, z10.d, #0.0
+655D942C fminnm z12.h, p5/m, z12.h, #1.0
+65DD8028 fminnm z8.d, p0/m, z8.d, #1.0
+65DD9C21 fminnm z1.d, p7/m, z1.d, #1.0
+659D9C3E fminnm z30.s, p7/m, z30.s, #1.0
+659D8C11 fminnm z17.s, p3/m, z17.s, #0.0
+65DD901E fminnm z30.d, p4/m, z30.d, #0.0
+65DD8805 fminnm z5.d, p2/m, z5.d, #0.0
+659D9822 fminnm z2.s, p6/m, z2.s, #1.0
+65DD9800 fminnm z0.d, p6/m, z0.d, #0.0
+65DD981F fminnm z31.d, p6/m, z31.d, #0.0
+651D980D UNDEFINED
+65DD9806 fminnm z6.d, p6/m, z6.d, #0.0

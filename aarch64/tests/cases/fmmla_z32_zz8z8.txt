@@ -1,0 +1,10 @@
+// fmmla_z32_zz8z8_ 011|0010|00|op=0|1|Zm=xxxxx|111000|Zn=xxxxx|Zda=xxxxx
+// FmmlaZ32Zz8z8: FMMLA  <Zda>.S, <Zn>.B, <Zm>.B
+// register fields: Zm, Zn, Zda
+6420E004 fmmla z4.s, z0.b, z0.b
+6420E00B fmmla z11.s, z0.b, z0.b
+6420E012 fmmla z18.s, z0.b, z0.b
+643FE3E0 fmmla z0.s, z31.b, z31.b
+6420E01F fmmla z31.s, z0.b, z0.b
+6420E000 fmmla z0.s, z0.b, z0.b
+6421E043 fmmla z3.s, z2.b, z1.b

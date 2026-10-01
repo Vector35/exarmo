@@ -1,0 +1,31 @@
+// STTXR_SR32_ldstexclr_unpriv 1|sz=0|0010010|L=0|0|Rs=xxxxx|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// SttxrSr32LdstexclrUnpriv: STTXR  <Ws>, <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+89000003 sttxr w0, w3, [x0] (unpredictable)
+8900000A sttxr w0, w10, [x0] (unpredictable)
+89000011 sttxr w0, w17, [x0] (unpredictable)
+891F7FE0 sttxr wzr, w0, [sp]
+8900001F sttxr w0, wzr, [x0] (unpredictable)
+89000000 sttxr w0, w0, [x0] (unpredictable)
+89004003 sttxr w0, w3, [x0] (unpredictable)
+89002003 sttxr w0, w3, [x0] (unpredictable)
+89001003 sttxr w0, w3, [x0] (unpredictable)
+89000803 sttxr w0, w3, [x0] (unpredictable)
+89000403 sttxr w0, w3, [x0] (unpredictable)
+89017C43 sttxr w1, w3, [x2]
+
+// STTXR_SR64_ldstexclr_unpriv 1|sz=1|0010010|L=0|0|Rs=xxxxx|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// SttxrSr64LdstexclrUnpriv: STTXR  <Ws>, <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+C9000002 sttxr w0, x2, [x0] (unpredictable)
+C9000009 sttxr w0, x9, [x0] (unpredictable)
+C9000010 sttxr w0, x16, [x0] (unpredictable)
+C91F7FE0 sttxr wzr, x0, [sp]
+C900001F sttxr w0, xzr, [x0] (unpredictable)
+C9000000 sttxr w0, x0, [x0] (unpredictable)
+C9004002 sttxr w0, x2, [x0] (unpredictable)
+C9002002 sttxr w0, x2, [x0] (unpredictable)
+C9001002 sttxr w0, x2, [x0] (unpredictable)
+C9000802 sttxr w0, x2, [x0] (unpredictable)
+C9000402 sttxr w0, x2, [x0] (unpredictable)
+C9017C43 sttxr w1, x3, [x2]

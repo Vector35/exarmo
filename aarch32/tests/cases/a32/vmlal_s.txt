@@ -1,0 +1,26 @@
+// VMLAL_s_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|0|op=0|10|N=x|1|M=x|0|Vm=xxxx
+// VmlalSA1: VMLAL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm[x]>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+f2d32265 vmlal.s16 q9, d3, d5[2]
+f2dd6265 vmlal.s16 q11, d13, d5[2]
+f2df62e3 vmlal.s16 q11, d31, d3[2]
+f3a9c240 vmlal.u32 q6, d9, d0[0]
+f3dc424f vmlal.u16 q10, d12, d7[1]
+f2a6e2c0 vmlal.s32 q7, d22, d0[0]
+f3d722ed vmlal.u16 q9, d23, d5[3]
+f394a244 vmlal.u16 q5, d4, d4[0]
+F2C3F265 UNDEFINED
+F2F31265 UNDEFINED
+F2D00268 vmlal.s16 q8, d0, d0[3]
+F2D88262 vmlal.s16 q12, d8, d2[2]
+F2920261 vmlal.s16 q0, d2, d1[2]
+F2D10265 vmlal.s16 q8, d1, d5[2]
+F283F265 UNDEFINED
+F2F3F265 UNDEFINED
+F3C32265 UNDEFINED
+F3F32265 UNDEFINED
+F2D02265 vmlal.s16 q9, d0, d5[2]
+F2D022E5 vmlal.s16 q9, d16, d5[2]
+F2DF2265 vmlal.s16 q9, d15, d5[2]

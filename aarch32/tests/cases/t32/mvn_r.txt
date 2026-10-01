@@ -1,0 +1,135 @@
+// MVN_r_T1 010000|op=1111|Rm=xxx|Rd=xxx
+// MvnRT1: MVN<c>{<q>}  <Rd>, <Rm>
+// T1bMvnRT1: MVNS{<q>}  <Rd>, <Rm>
+// register fields: Rm, Rd
+// IT state read: condition, in block
+43c0 mvns r0, r0
+43c1 mvns r1, r0
+43c2 mvns r2, r0
+43c3 mvns r3, r0
+43c4 mvns r4, r0
+43c5 mvns r5, r0
+43c6 mvns r6, r0
+43c7 mvns r7, r0
+43C8 mvns r0, r1
+43D0 mvns r0, r2
+43D8 mvns r0, r3
+43E0 mvns r0, r4
+43E8 mvns r0, r5
+43F0 mvns r0, r6
+43F8 mvns r0, r7
+43C0 [ne] mvnne r0, r0
+
+// MVN_r_T2 1110101|op1=0011|S=0|Rn=1111|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// MvnRT2: MVN{<c>}{<q>}  <Rd>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rd, Rm
+// IT state read: condition
+ea6f0171 mvn r1, r1, ror #1
+ea6f275e mvn r7, lr, lsr #9
+ea6f5223 mvn r2, r3, asr #20
+ea6f2b18 mvn r11, r8, lsr #8
+ea6f7294 mvn r2, r4, lsr #30
+ea6f0d2b mvn sp, r11, asr #32
+ea6fe2f1 mvn r2, r1, ror #27 (unpredictable)
+EA6F1040 mvn r0, r0, lsl #0x5
+EA6F3F7F mvn pc, pc, ror #0xd (unpredictable)
+EA6F4171 mvn r1, r1, ror #0x11
+EA6F01B1 mvn r1, r1, ror #0x2
+EA6F01F1 mvn r1, r1, ror #0x3
+EA6F1131 mvn r1, r1, ror #0x4
+EA6F1171 mvn r1, r1, ror #0x5
+EA6F11B1 mvn r1, r1, ror #0x6
+EA6F11F1 mvn r1, r1, ror #0x7
+EA6F21B1 mvn r1, r1, ror #0xa
+EA6F21F1 mvn r1, r1, ror #0xb
+EA6F3131 mvn r1, r1, ror #0xc
+EA6F3171 mvn r1, r1, ror #0xd
+EA6F31B1 mvn r1, r1, ror #0xe
+EA6F31F1 mvn r1, r1, ror #0xf
+EA6F4131 mvn r1, r1, ror #0x10
+EA6F41B1 mvn r1, r1, ror #0x12
+EA6F41F1 mvn r1, r1, ror #0x13
+EA6F5171 mvn r1, r1, ror #0x15
+EA6F51B1 mvn r1, r1, ror #0x16
+EA6F51F1 mvn r1, r1, ror #0x17
+EA6F6131 mvn r1, r1, ror #0x18
+EA6F6171 mvn r1, r1, ror #0x19
+EA6F61B1 mvn r1, r1, ror #0x1a
+EA6F7131 mvn r1, r1, ror #0x1c
+EA6F7171 mvn r1, r1, ror #0x1d
+EA6F71F1 mvn r1, r1, ror #0x1f
+EA6F0171 [ne] mvnne r1, r1, ror #0x1
+
+// MVN_r_T2_RRX 1110101|op1=0011|S=0|Rn=1111|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// MvnRT2Rrx: MVN{<c>}{<q>}  <Rd>, <Rm>, RRX
+// register fields: Rd, Rm
+// IT state read: condition
+ea6f8931 mvn r9, r1, rrx (unpredictable)
+ea6f8734 mvn r7, r4, rrx (unpredictable)
+ea6f043c mvn r4, r12, rrx
+ea6f0c37 mvn r12, r7, rrx
+ea6f803c mvn r0, r12, rrx (unpredictable)
+ea6f853e mvn r5, lr, rrx (unpredictable)
+ea6f8c38 mvn r12, r8, rrx (unpredictable)
+ea6f0d3a mvn sp, r10, rrx
+EA6F8F30 mvn pc, r0, rrx (unpredictable)
+EA6F893F mvn r9, pc, rrx (unpredictable)
+EA6F8939 mvn r9, r9, rrx (unpredictable)
+EA6F8931 [ne] mvnne r9, r1, rrx (unpredictable)
+
+// MVNS_r_T2 1110101|op1=0011|S=1|Rn=1111|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// MvnsRT2: MVNS{<c>}{<q>}  <Rd>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rd, Rm
+// IT state read: condition
+ea7f6e16 mvns lr, r6, lsr #24
+ea7faa3b mvns r10, r11, ror #8 (unpredictable)
+ea7feca9 mvns r12, r9, asr #26 (unpredictable)
+ea7f8f91 mvns pc, r1, lsr #2 (unpredictable)
+ea7f295a mvns r9, r10, lsr #9
+ea7f9606 mvns r6, r6, lsl #4 (unpredictable)
+ea7fc612 mvns r6, r2, lsr #16 (unpredictable)
+EA7F30D0 mvns r0, r0, lsr #0xf
+EA7F5E1F mvns lr, pc, lsr #0x14 (unpredictable)
+EA7F7E16 mvns lr, r6, lsr #0x1c
+EA7F0E16 mvns lr, r6, lsr #0x20
+EA7F0E56 mvns lr, r6, lsr #0x1
+EA7F0ED6 mvns lr, r6, lsr #0x3
+EA7F1E56 mvns lr, r6, lsr #0x5
+EA7F1E96 mvns lr, r6, lsr #0x6
+EA7F1ED6 mvns lr, r6, lsr #0x7
+EA7F2E96 mvns lr, r6, lsr #0xa
+EA7F2ED6 mvns lr, r6, lsr #0xb
+EA7F3E16 mvns lr, r6, lsr #0xc
+EA7F3E56 mvns lr, r6, lsr #0xd
+EA7F3E96 mvns lr, r6, lsr #0xe
+EA7F3ED6 mvns lr, r6, lsr #0xf
+EA7F4E56 mvns lr, r6, lsr #0x11
+EA7F4E96 mvns lr, r6, lsr #0x12
+EA7F4ED6 mvns lr, r6, lsr #0x13
+EA7F5E16 mvns lr, r6, lsr #0x14
+EA7F5E56 mvns lr, r6, lsr #0x15
+EA7F5E96 mvns lr, r6, lsr #0x16
+EA7F5ED6 mvns lr, r6, lsr #0x17
+EA7F6E56 mvns lr, r6, lsr #0x19
+EA7F6ED6 mvns lr, r6, lsr #0x1b
+EA7F7E56 mvns lr, r6, lsr #0x1d
+EA7F7E96 mvns lr, r6, lsr #0x1e
+EA7F7ED6 mvns lr, r6, lsr #0x1f
+EA7F6E16 [ne] mvnsne lr, r6, lsr #0x18
+
+// MVNS_r_T2_RRX 1110101|op1=0011|S=1|Rn=1111|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// MvnsRT2Rrx: MVNS{<c>}{<q>}  <Rd>, <Rm>, RRX
+// register fields: Rd, Rm
+// IT state read: condition
+ea7f0632 mvns r6, r2, rrx
+ea7f8330 mvns r3, r0, rrx (unpredictable)
+ea7f8030 mvns r0, r0, rrx (unpredictable)
+ea7f0031 mvns r0, r1, rrx
+ea7f0f39 mvns pc, r9, rrx (unpredictable)
+ea7f8c33 mvns r12, r3, rrx (unpredictable)
+ea7f8a3e mvns r10, lr, rrx (unpredictable)
+ea7f8534 mvns r5, r4, rrx (unpredictable)
+EA7F063F mvns r6, pc, rrx (unpredictable)
+EA7F0632 [ne] mvnsne r6, r2, rrx

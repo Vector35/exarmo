@@ -1,0 +1,15 @@
+// LD64B_64L_memop size=11|11|1|VR=0|0|0|A=0|R=0|1|Rs=11111|o3=1|opc=101|00|Rn=xxxxx|Rt=xxxxx
+// Ld64b64lMemop: LD64B  <Xt>, [<Xn|SP> {, #0}]
+// register fields: Rn, Rt
+// added in 2020-09 spec
+F83FD290 ld64b x16, [x20]
+F83FD104 ld64b x4, [x8]
+F83FD18A ld64b x10, [x12]
+F83FD240 ld64b x0, [x18]
+F83FD084 ld64b x4, [x4]
+F83FD128 ld64b x8, [x9]
+F83FD172 ld64b x18, [x11]
+F83FD132 ld64b x18, [x9]
+F83FD010 ld64b x16, [x0]
+F83FD3F0 ld64b x16, [sp]
+F83FD29F UNDEFINED

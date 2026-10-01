@@ -1,0 +1,25 @@
+// lsl_z_p_zw_ 000|0010|0|size=xx|0|11|R=0|L=1|U=1|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// LslZPZw: LSL  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.D
+// register fields: Pg, Zm, Zdn
+041B85C3 lsl z3.b, p1/m, z3.b, z14.d
+049B960E lsl z14.s, p5/m, z14.s, z16.d
+045B810C lsl z12.h, p0/m, z12.h, z8.d
+041B81A6 lsl z6.b, p0/m, z6.b, z13.d
+045B84A7 lsl z7.h, p1/m, z7.h, z5.d
+041B8B5F lsl z31.b, p2/m, z31.b, z26.d
+045B827F lsl z31.h, p0/m, z31.h, z19.d
+045B8994 lsl z20.h, p2/m, z20.h, z12.d
+041B83BC lsl z28.b, p0/m, z28.b, z29.d
+049B9FBB lsl z27.s, p7/m, z27.s, z29.d
+049B8485 lsl z5.s, p1/m, z5.s, z4.d
+041B852D lsl z13.b, p1/m, z13.b, z9.d
+045B8BC7 lsl z7.h, p2/m, z7.h, z30.d
+041B9FEA lsl z10.b, p7/m, z10.b, z31.d
+045B943A lsl z26.h, p5/m, z26.h, z1.d
+049B860B lsl z11.s, p1/m, z11.s, z16.d
+041B8C00 lsl z0.b, p3/m, z0.b, z0.d
+041B91C3 lsl z3.b, p4/m, z3.b, z14.d
+041B99C3 lsl z3.b, p6/m, z3.b, z14.d
+04DB85C3 UNDEFINED
+041B8423 lsl z3.b, p1/m, z3.b, z1.d
+041B85C1 lsl z1.b, p1/m, z1.b, z14.d

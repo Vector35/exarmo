@@ -1,0 +1,23 @@
+// LDTNP_Q_ldstnapair_offs opc=11|10|1|VR=1|0|00|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// LdtnpQLdstnapairOffs: LDTNP  <Qt1>, <Qt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+EC400000 ldtnp q0, q0, [x0] (unpredictable)
+EC400007 ldtnp q7, q0, [x0]
+EC40000E ldtnp q14, q0, [x0]
+EC7FFFFF ldtnp q31, q31, [sp, #-0x10] (unpredictable)
+EC600000 ldtnp q0, q0, [x0, #-0x400] (unpredictable)
+EC500000 ldtnp q0, q0, [x0, #0x200] (unpredictable)
+EC480000 ldtnp q0, q0, [x0, #0x100] (unpredictable)
+EC440000 ldtnp q0, q0, [x0, #0x80] (unpredictable)
+EC420000 ldtnp q0, q0, [x0, #0x40] (unpredictable)
+EC410000 ldtnp q0, q0, [x0, #0x20] (unpredictable)
+EC408000 ldtnp q0, q0, [x0, #0x10] (unpredictable)
+EC7FFFE0 ldtnp q0, q31, [sp, #-0x10]
+EC60001F ldtnp q31, q0, [x0, #-0x400]
+EC5000E7 ldtnp q7, q0, [x7, #0x200]
+EC480007 ldtnp q7, q0, [x0, #0x100]
+EC440007 ldtnp q7, q0, [x0, #0x80]
+EC420007 ldtnp q7, q0, [x0, #0x40]
+EC410007 ldtnp q7, q0, [x0, #0x20]
+EC408007 ldtnp q7, q0, [x0, #0x10]
+EC400443 ldtnp q3, q1, [x2]

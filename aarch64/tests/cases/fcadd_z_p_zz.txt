@@ -1,0 +1,25 @@
+// fcadd_z_p_zz_ 011|0010|0|size=xx|00000|rot=x|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FcaddZPZz: FCADD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>, <const>
+// register fields: Pg, Zm, Zdn
+64418669 fcadd z9.h, p1/m, z9.h, z19.h, #0x10e
+64C1897D fcadd z29.d, p2/m, z29.d, z11.d, #0x10e
+64419C7D fcadd z29.h, p7/m, z29.h, z3.h, #0x10e
+64C18B4C fcadd z12.d, p2/m, z12.d, z26.d, #0x10e
+64C1963C fcadd z28.d, p5/m, z28.d, z17.d, #0x10e
+64819F22 fcadd z2.s, p7/m, z2.s, z25.s, #0x10e
+64408304 fcadd z4.h, p0/m, z4.h, z24.h, #0x5a
+64C09C35 fcadd z21.d, p7/m, z21.d, z1.d, #0x5a
+64808E77 fcadd z23.s, p3/m, z23.s, z19.s, #0x5a
+64819823 fcadd z3.s, p6/m, z3.s, z1.s, #0x10e
+64C08E33 fcadd z19.d, p3/m, z19.d, z17.d, #0x5a
+64C19E34 fcadd z20.d, p7/m, z20.d, z17.d, #0x10e
+64C19D5D fcadd z29.d, p7/m, z29.d, z10.d, #0x10e
+64809649 fcadd z9.s, p5/m, z9.s, z18.s, #0x5a
+64418C04 fcadd z4.h, p3/m, z4.h, z0.h, #0x10e
+64419AD4 fcadd z20.h, p6/m, z20.h, z22.h, #0x10e
+644193E0 fcadd z0.h, p4/m, z0.h, z31.h, #0x10e
+6441867F fcadd z31.h, p1/m, z31.h, z19.h, #0x10e
+64018669 UNDEFINED
+64418429 fcadd z9.h, p1/m, z9.h, z1.h, #0x10e
+64418661 fcadd z1.h, p1/m, z1.h, z19.h, #0x10e
+64418673 fcadd z19.h, p1/m, z19.h, z19.h, #0x10e

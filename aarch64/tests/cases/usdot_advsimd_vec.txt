@@ -1,0 +1,10 @@
+// USDOT_asimdsame2_D 0|Q=x|U=0|0|111|0|size=10|0|Rm=xxxxx|1|opcode=0011|1|Rn=xxxxx|Rd=xxxxx
+// UsdotAsimdsame2D: USDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// register fields: Rm, Rn, Rd
+0E809C02 usdot v2.2s, v0.8b, v0.8b
+0E809C09 usdot v9.2s, v0.8b, v0.8b
+0E809C10 usdot v16.2s, v0.8b, v0.8b
+4E9F9FE0 usdot v0.4s, v31.16b, v31.16b
+0E809C1F usdot v31.2s, v0.8b, v0.8b
+0E809C00 usdot v0.2s, v0.8b, v0.8b
+0E819C43 usdot v3.2s, v2.8b, v1.8b

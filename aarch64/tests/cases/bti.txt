@@ -1,0 +1,6 @@
+// BTI_HB_hints 110|101|01000000110010|CRm=0100|op2=xx0|11111
+// BtiHbHints: BTI  {<targets>}
+D503245F bti c
+D503249F bti j
+D50324DF bti jc
+D503241F bti r

@@ -1,0 +1,94 @@
+// UCVTF_asimdmisc_R 0|Q=x|U=1|0|111|0|0|sz=x|10000|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// UcvtfAsimdmiscR: UCVTF  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+6E61D96B ucvtf v11.2d, v11.2d
+2E21DBCF ucvtf v15.2s, v30.2s
+2E21DA5F ucvtf v31.2s, v18.2s
+6E21D927 ucvtf v7.4s, v9.4s
+2E21D936 ucvtf v22.2s, v9.2s
+2E21D949 ucvtf v9.2s, v10.2s
+2E21D925 ucvtf v5.2s, v9.2s
+6E21D96F ucvtf v15.4s, v11.4s
+6E21DA96 ucvtf v22.4s, v20.4s
+6E21D82B ucvtf v11.4s, v1.4s
+6E61DB7C ucvtf v28.2d, v27.2d
+6E21D90C ucvtf v12.4s, v8.4s
+2E21D974 ucvtf v20.2s, v11.2s
+6E21DA3A ucvtf v26.4s, v17.4s
+2E21DBD3 ucvtf v19.2s, v30.2s
+6E61DA74 ucvtf v20.2d, v19.2d
+6E61D800 ucvtf v0.2d, v0.2d
+6E61DBEB ucvtf v11.2d, v31.2d
+2E61D96B UNDEFINED
+
+// UCVTF_asimdmiscfp16_R 0|Q=x|U=1|0|111|0|a=0|1111|00|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// UcvtfAsimdmiscfp16R: UCVTF  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+2E79DBBF ucvtf v31.4h, v29.4h
+2E79DBA7 ucvtf v7.4h, v29.4h
+6E79DB05 ucvtf v5.8h, v24.8h
+6E79D891 ucvtf v17.8h, v4.8h
+2E79DBB3 ucvtf v19.4h, v29.4h
+6E79DA49 ucvtf v9.8h, v18.8h
+2E79D947 ucvtf v7.4h, v10.4h
+2E79DB1E ucvtf v30.4h, v24.4h
+6E79DAE7 ucvtf v7.8h, v23.8h
+2E79D9C3 ucvtf v3.4h, v14.4h
+6E79DA81 ucvtf v1.8h, v20.8h
+6E79D905 ucvtf v5.8h, v8.8h
+2E79DA63 ucvtf v3.4h, v19.4h
+6E79DAE2 ucvtf v2.8h, v23.8h
+6E79D8DE ucvtf v30.8h, v6.8h
+2E79D95B ucvtf v27.4h, v10.4h
+2E79D800 ucvtf v0.4h, v0.4h
+2E79DBFF ucvtf v31.4h, v31.4h
+
+// UCVTF_asisdmisc_R 01|U=1|1|111|0|0|sz=x|10000|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// UcvtfAsisdmiscR: UCVTF  <V><d>, <V><n>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+7E21D8F0 ucvtf s16, s7
+7E61DBDA ucvtf d26, d30
+7E21DA66 ucvtf s6, s19
+7E21D80D ucvtf s13, s0
+7E61DB5C ucvtf d28, d26
+7E61D979 ucvtf d25, d11
+7E61DAB8 ucvtf d24, d21
+7E21DA47 ucvtf s7, s18
+7E21DB3F ucvtf s31, s25
+7E21D9D5 ucvtf s21, s14
+7E61DAC8 ucvtf d8, d22
+7E61DB26 ucvtf d6, d25
+7E61DA3D ucvtf d29, d17
+7E61D896 ucvtf d22, d4
+7E21DAA1 ucvtf s1, s21
+7E21D9BF ucvtf s31, s13
+7E21DBE0 ucvtf s0, s31
+7E61D8E0 ucvtf d0, d7
+7E61D8FF ucvtf d31, d7
+7E61D810 ucvtf d16, d0
+7E61DBF0 ucvtf d16, d31
+7E21D8E7 ucvtf s7, s7
+
+// UCVTF_asisdmiscfp16_R 01|U=1|1|111|0|a=0|1111|00|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// UcvtfAsisdmiscfp16R: UCVTF  <Hd>, <Hn>
+// register fields: Rn, Rd
+7E79D81E ucvtf h30, h0
+7E79D8D6 ucvtf h22, h6
+7E79D847 ucvtf h7, h2
+7E79DA58 ucvtf h24, h18
+7E79DAA8 ucvtf h8, h21
+7E79DB5A ucvtf h26, h26
+7E79DB13 ucvtf h19, h24
+7E79D840 ucvtf h0, h2
+7E79DB20 ucvtf h0, h25
+7E79D936 ucvtf h22, h9
+7E79DB74 ucvtf h20, h27
+7E79D9A6 ucvtf h6, h13
+7E79D9E6 ucvtf h6, h15
+7E79DAE9 ucvtf h9, h23
+7E79DBFB ucvtf h27, h31
+7E79DA95 ucvtf h21, h20
+7E79D81F ucvtf h31, h0

@@ -1,0 +1,52 @@
+// PLD_r_A1 1111011|D=1|U=x|R=1|01|Rn=xxxx|(1)(1)(1)(1)|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// PldRA1: PLD{<c>}{<q>}  [<Rn>, {<+/->}<Rm> {, <shift> #<amount>}]
+// register fields: Rn, Rm
+// Binary Ninja's tests
+f7d0f000 pld [r0, r0]
+f7d0f020 pld [r0, r0, lsr #32]
+f7d0f040 pld [r0, r0, asr #32]
+f7d0f800 pld [r0, r0, lsl #16]
+f7d0f820 pld [r0, r0, lsr #16]
+f7d0f840 pld [r0, r0, asr #16]
+f7d0f860 pld [r0, r0, ror #16]
+F75F0F8F pld [pc, -pc, lsl #0x1f] (unpredictable)
+F7D08400 pld [r0, r0, lsl #0x8] (unpredictable)
+F7D04200 pld [r0, r0, lsl #0x4] (unpredictable)
+F7D02100 pld [r0, r0, lsl #0x2] (unpredictable)
+F7D01080 pld [r0, r0, lsl #0x1] (unpredictable)
+F7D1F002 pld [r1, r2]
+
+// PLD_r_A1_RRX 1111011|D=1|U=x|R=1|01|Rn=xxxx|(1)(1)(1)(1)|imm5=00000|stype=11|0|Rm=xxxx
+// PldRA1Rrx: PLD{<c>}{<q>}  [<Rn>, {<+/->}<Rm> , RRX]
+// register fields: Rn, Rm
+// Binary Ninja's tests
+f7d0f060 pld [r0, r0, rrx]
+F75F006F pld [pc, -pc, rrx] (unpredictable)
+F7D08060 pld [r0, r0, rrx] (unpredictable)
+F7D04060 pld [r0, r0, rrx] (unpredictable)
+F7D02060 pld [r0, r0, rrx] (unpredictable)
+F7D01060 pld [r0, r0, rrx] (unpredictable)
+F7D1F062 pld [r1, r2, rrx]
+
+// PLDW_r_A1 1111011|D=1|U=x|R=0|01|Rn=xxxx|(1)(1)(1)(1)|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// PldwRA1: PLDW{<c>}{<q>}  [<Rn>, {<+/->}<Rm> {, <shift> #<amount>}]
+// register fields: Rn, Rm
+F7100000 pldw [r0, -r0] (unpredictable)
+F79FFFAF pldw [pc, pc, lsr #0x1f] (unpredictable)
+F7108840 pldw [r0, -r0, asr #0x10] (unpredictable)
+F7104460 pldw [r0, -r0, ror #0x8] (unpredictable)
+F7102200 pldw [r0, -r0, lsl #0x4] (unpredictable)
+F7101100 pldw [r0, -r0, lsl #0x2] (unpredictable)
+F7100080 pldw [r0, -r0, lsl #0x1] (unpredictable)
+F711F002 pldw [r1, -r2]
+
+// PLDW_r_A1_RRX 1111011|D=1|U=x|R=0|01|Rn=xxxx|(1)(1)(1)(1)|imm5=00000|stype=11|0|Rm=xxxx
+// PldwRA1Rrx: PLDW{<c>}{<q>}  [<Rn>, {<+/->}<Rm> , RRX]
+// register fields: Rn, Rm
+F7100060 pldw [r0, -r0, rrx] (unpredictable)
+F79FF06F pldw [pc, pc, rrx] (unpredictable)
+F7108060 pldw [r0, -r0, rrx] (unpredictable)
+F7104060 pldw [r0, -r0, rrx] (unpredictable)
+F7102060 pldw [r0, -r0, rrx] (unpredictable)
+F7101060 pldw [r0, -r0, rrx] (unpredictable)
+F711F062 pldw [r1, -r2, rrx]

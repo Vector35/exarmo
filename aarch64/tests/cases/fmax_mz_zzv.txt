@@ -1,0 +1,21 @@
+// fmax_mz_zzv_2x1 1|10|0000|1|size=xx|10|Zm=xxxx|10100|0|01|00|op=0|Zdn=xxxx|o2=0
+// FmaxMzZzv2x1: FMAX  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, <Zm>.<T>
+// register fields: Zm, Zdn
+C160A100 fmax {z0.h-z1.h}, {z0.h-z1.h}, z0.h
+C160A10E fmax {z14.h-z15.h}, {z14.h-z15.h}, z0.h
+C160A11C fmax {z28.h-z29.h}, {z28.h-z29.h}, z0.h
+C1AFA11E fmax {z30.s-z31.s}, {z30.s-z31.s}, z15.s
+C1E0A100 fmax {z0.d-z1.d}, {z0.d-z1.d}, z0.d
+
+// fmax_mz_zzv_4x1 1|10|0000|1|size=xx|10|Zm=xxxx|10101|0|01|00|op=0|Zdn=xxx|0|o2=0
+// FmaxMzZzv4x1: FMAX  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, <Zm>.<T>
+// register fields: Zm, Zdn
+C160A918 fmax {z24.h-z27.h}, {z24.h-z27.h}, z0.h
+C161A908 fmax {z8.h-z11.h}, {z8.h-z11.h}, z1.h
+C162A914 fmax {z20.h-z23.h}, {z20.h-z23.h}, z2.h
+C1AFA900 fmax {z0.s-z3.s}, {z0.s-z3.s}, z15.s
+C1E0A904 fmax {z4.d-z7.d}, {z4.d-z7.d}, z0.d
+C160A90C fmax {z12.h-z15.h}, {z12.h-z15.h}, z0.h
+C160A910 fmax {z16.h-z19.h}, {z16.h-z19.h}, z0.h
+C160A91C fmax {z28.h-z31.h}, {z28.h-z31.h}, z0.h
+C160A900 fmax {z0.h-z3.h}, {z0.h-z3.h}, z0.h

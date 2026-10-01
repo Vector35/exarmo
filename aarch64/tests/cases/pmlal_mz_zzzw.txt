@@ -1,0 +1,8 @@
+// pmlal_mz_zzzw_1x2 010|0010|1|size=00|1|Zm=xxxxx|111|111|Zn=xxxxx|Zda=xxxx|0
+// PmlalMzZzzw1x2: PMLAL  { <Zda1>.Q-<Zda2>.Q }, <Zn>.D, <Zm>.D
+// register fields: Zm, Zn, Zda
+4520FC00 pmlal {z0.q-z1.q}, z0.d, z0.d
+4520FC0E pmlal {z14.q-z15.q}, z0.d, z0.d
+4520FC1C pmlal {z28.q-z29.q}, z0.d, z0.d
+453FFFFE pmlal {z30.q-z31.q}, z31.d, z31.d
+4521FC46 pmlal {z6.q-z7.q}, z2.d, z1.d

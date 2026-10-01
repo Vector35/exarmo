@@ -1,0 +1,4 @@
+// TEXIT_te_branch_reg 110|101|1|opc=0111|op2=11111|000|op1=00x|Rn=11111|op4=00000
+// TexitTeBranchReg: TEXIT    {<nb>}
+D6FF03E0 texit
+D6FF07E0 texit nb

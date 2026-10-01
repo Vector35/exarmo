@@ -1,0 +1,151 @@
+// STR_i_T1 011|B=0|L=0|imm5=xxxxx|Rn=xxx|Rt=xxx
+// StrIT1: STR{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+6000 str r0, [r0]
+6001 str r1, [r0]
+6002 str r2, [r0]
+6003 str r3, [r0]
+6004 str r4, [r0]
+6005 str r5, [r0]
+6006 str r6, [r0]
+6007 str r7, [r0]
+67C8 str r0, [r1, #0x7c]
+6410 str r0, [r2, #0x40]
+6218 str r0, [r3, #0x20]
+6120 str r0, [r4, #0x10]
+60A8 str r0, [r5, #0x8]
+6070 str r0, [r6, #0x4]
+6038 str r0, [r7]
+6000 [ne] strne r0, [r0]
+
+// STR_i_T2 1001|L=0|Rt=xxx|imm8=xxxxxxxx
+// StrIT2: STR{<c>}{<q>}  <Rt>, [SP{, #{<+>}<imm>}]
+// register fields: Rt
+// IT state read: condition
+9000 str r0, [sp]
+9001 str r0, [sp, #4]
+9002 str r0, [sp, #8]
+9003 str r0, [sp, #12]
+9004 str r0, [sp, #16]
+9005 str r0, [sp, #20]
+9006 str r0, [sp, #24]
+9007 str r0, [sp, #28]
+91FF str r1, [sp, #0x3fc]
+9280 str r2, [sp, #0x200]
+9340 str r3, [sp, #0x100]
+9420 str r4, [sp, #0x80]
+9510 str r5, [sp, #0x40]
+9608 str r6, [sp, #0x20]
+9700 str r7, [sp]
+9000 [ne] strne r0, [sp]
+
+// STR_i_T3 111|1100|01|size=10|L=0|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// StrIT3: STR{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+F8C00000 str r0, [r0]
+F8CF0000 UNALLOCATED
+F8C0FFFF str pc, [r0, #0xfff] (unpredictable)
+F8C00800 str r0, [r0, #0x800]
+F8C00400 str r0, [r0, #0x400]
+F8C00200 str r0, [r0, #0x200]
+F8C00100 str r0, [r0, #0x100]
+F8C00080 str r0, [r0, #0x80]
+F8C00040 str r0, [r0, #0x40]
+F8C00020 str r0, [r0, #0x20]
+F8C00010 str r0, [r0, #0x10]
+F8C00008 str r0, [r0, #0x8]
+F8C00004 str r0, [r0, #0x4]
+F8C00002 str r0, [r0, #0x2]
+F8C00001 str r0, [r0, #0x1]
+F8C00000 [ne] strne r0, [r0]
+
+// STR_i_T4_off 111110000|size=10|L=0|Rn=xxxx|Rt=xxxx|1|P=1|U=0|W=0|imm8=xxxxxxxx
+// StrIT4Off: STR{<c>}{<q>}  <Rt>, [<Rn> {, #-<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f846ccb8 str r12, [r6, #-184]
+f8403c74 str r3, [r0, #-116]
+f848fcbe str pc, [r8, #-190] (unpredictable)
+f8474cc0 str r4, [r7, #-192]
+f840eca0 str lr, [r0, #-160]
+f841ecda str lr, [r1, #-218]
+f84dacc6 str r10, [sp, #-198]
+f8488c6c str r8, [r8, #-108]
+F84FCCB8 UNALLOCATED
+F8460C00 str r0, [r6, #-0x0]
+F846CCFF str r12, [r6, #-0xff]
+F846CC80 str r12, [r6, #-0x80]
+F846CC40 str r12, [r6, #-0x40]
+F846CC20 str r12, [r6, #-0x20]
+F846CC10 str r12, [r6, #-0x10]
+F846CC08 str r12, [r6, #-0x8]
+F846CC04 str r12, [r6, #-0x4]
+F846CC02 str r12, [r6, #-0x2]
+F846CC01 str r12, [r6, #-0x1]
+F846CCB8 [ne] strne r12, [r6, #-0xb8]
+
+// STR_i_T4_post 111110000|size=10|L=0|Rn=xxxx|Rt=xxxx|1|P=0|U=x|W=1|imm8=xxxxxxxx
+// StrIT4Post: STR{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// register fields: Rn, Rt
+// IT state read: condition
+f848ebd3 str lr, [r8], #211
+f8460b8b str r0, [r6], #139
+f84adb67 str sp, [r10], #103
+f840fbd3 str pc, [r0], #211 (unpredictable)
+f84a3bc6 str r3, [r10], #198
+f84969d9 str r6, [r9], #-217
+f84e79c8 str r7, [lr], #-200
+f84ecb4b str r12, [lr], #75
+F84FEBD3 UNALLOCATED
+F8488B00 str r8, [r8], #0x0 (unpredictable)
+F848EBFF str lr, [r8], #0xff
+F848EB80 str lr, [r8], #0x80
+F848EB40 str lr, [r8], #0x40
+F848EB20 str lr, [r8], #0x20
+F848EB10 str lr, [r8], #0x10
+F848EB08 str lr, [r8], #0x8
+F848EB04 str lr, [r8], #0x4
+F848EB02 str lr, [r8], #0x2
+F848EB01 str lr, [r8], #0x1
+F848EBD3 [ne] strne lr, [r8], #0xd3
+
+// STR_i_T4_pre 111110000|size=10|L=0|Rn=xxxx|Rt=xxxx|1|P=1|U=x|W=1|imm8=xxxxxxxx
+// PushStrIT4Pre: PUSH{<c>}{<q>}  <single_register_list>
+// StrIT4Pre: STR{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// read together by the PUSH alias: Rn, U, imm8
+// register fields: Rn, Rt
+// form chosen on: Rn, U, imm8
+// IT state read: condition
+f8492f34 str r2, [r9, #52]!
+f84a6fbf str r6, [r10, #191]!
+f8409f49 str r9, [r0, #73]!
+f8499d0c str r9, [r9, #-12]! (unpredictable)
+f8493d75 str r3, [r9, #-117]!
+f84a7dfa str r7, [r10, #-250]!
+f84ccd3b str r12, [r12, #-59]! (unpredictable)
+f8413f1e str r3, [r1, #30]!
+F84F2F34 UNALLOCATED
+F8490F00 str r0, [r9, #0x0]!
+F849FFFF str pc, [r9, #0xff]! (unpredictable)
+F8492F80 str r2, [r9, #0x80]!
+F8492F40 str r2, [r9, #0x40]!
+F8492F20 str r2, [r9, #0x20]!
+F8492F10 str r2, [r9, #0x10]!
+F8492F08 str r2, [r9, #0x8]!
+F8492F04 str r2, [r9, #0x4]!
+F8492F02 str r2, [r9, #0x2]!
+F8492F01 str r2, [r9, #0x1]!
+F8402D00 str r2, [r0, #-0x0]!
+F8402DFF str r2, [r0, #-0xff]!
+F8402F00 str r2, [r0, #0x0]!
+F8402FFF str r2, [r0, #0xff]!
+F84F2D00 UNALLOCATED
+F84F2DFF UNALLOCATED
+F84F2F00 UNALLOCATED
+F84F2FFF UNALLOCATED
+F84D2D04 push {r2}
+F8452D04 str r2, [r5, #-0x4]!
+F84D2D04 [ne] pushne {r2}
+F8492F34 [ne] strne r2, [r9, #0x34]!

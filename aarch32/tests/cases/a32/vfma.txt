@@ -1,0 +1,115 @@
+// VFMA_A1_D 1111001|U=0|0|D=x|op=0|sz=x|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VfmaA1D: VFMA{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f2100c13 vfma.f16 d0, d0, d3
+f25a1c38 vfma.f16 d17, d10, d24
+f25b8cbc vfma.f16 d24, d27, d28
+f2040c38 vfma.f32 d0, d4, d24
+f2479c12 vfma.f32 d25, d7, d2
+f2106cb9 vfma.f16 d6, d16, d25
+f2467c16 vfma.f32 d23, d6, d6
+f25e2c96 vfma.f16 d18, d30, d6
+// Binary Ninja's tests
+f2420cb1 vfma.f32 d16, d18, d17
+F21FFC10 vfma.f16 d15, d15, d0
+F2184C1F vfma.f16 d4, d8, d15
+F211FC14 vfma.f16 d15, d1, d4
+F25FFC10 vfma.f16 d31, d15, d0
+F21F0C9F vfma.f16 d0, d31, d15
+F2100C30 vfma.f16 d0, d0, d16
+F2100C3F vfma.f16 d0, d0, d31
+
+// VFMA_A1_Q 1111001|U=0|0|D=x|op=0|sz=x|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VfmaA1Q: VFMA{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f2102c76 vfma.f16 q1, q0, q11
+f2040cf8 vfma.f32 q0, q10, q12
+f25cec58 vfma.f16 q15, q6, q4
+f2440cd0 vfma.f32 q8, q10, q0
+f2106cd4 vfma.f16 q3, q8, q2
+f2400cd0 vfma.f32 q8, q8, q0
+f2020c58 vfma.f32 q0, q1, q4
+f25c0cd8 vfma.f16 q8, q14, q4
+// Binary Ninja's tests
+f2084c50 vfma.f32 q2, q4, q0
+F21FFC7F UNDEFINED
+F2111C71 UNDEFINED
+F2108C72 vfma.f16 q4, q0, q9
+F21FFC5F UNDEFINED
+F25FFCFF UNDEFINED
+F2102C70 vfma.f16 q1, q0, q8
+
+// VFMA_A2_D cond=xxxx|1110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=0|M=x|0|Vm=xxxx
+// VfmaA2D: VFMA{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+bee3ab2f vfmalt.f64 d26, d3, d31
+5ea5bba1 vfmapl.f64 d11, d21, d17
+cee97bae vfmagt.f64 d23, d25, d30
+ceee0b09 vfmagt.f64 d16, d14, d9
+3ee2eb25 vfmalo.f64 d30, d2, d21
+8ea99b28 vfmahi.f64 d9, d9, d24
+5ee17b2f vfmapl.f64 d23, d1, d31
+eeef5b28 vfma.f64 d21, d15, d24
+// Binary Ninja's tests
+eee20ba1 vfma.f64 d16, d18, d17
+0EE0FB20 vfmaeq.f64 d31, d0, d16
+FEE3AB2F UNALLOCATED
+4EE88B24 vfmami.f64 d24, d8, d20
+2EE44B22 vfmacs.f64 d20, d4, d18
+1EE02B00 vfmane.f64 d18, d0, d0
+BEE01B8F vfmalt.f64 d17, d16, d15
+BEAF0BA0 vfmalt.f64 d0, d31, d16
+BEA3FB2F vfmalt.f64 d15, d3, d31
+BEE3FB2F vfmalt.f64 d31, d3, d31
+
+// VFMA_A2_H cond=xxxx|1110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=0|M=x|0|Vm=xxxx
+// VfmaA2H: VFMA{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+2eab692b vfmahs.f16 s12, s22, s23 (unpredictable)
+3ee889a9 vfmalo.f16 s17, s17, s19 (unpredictable)
+3eeff901 vfmalo.f16 s31, s30, s2 (unpredictable)
+3ea23982 vfmalo.f16 s6, s5, s4 (unpredictable)
+eeec898b vfma.f16 s17, s25, s22
+2eae490b vfmahs.f16 s8, s28, s22 (unpredictable)
+9ea6298b vfmals.f16 s4, s13, s22 (unpredictable)
+8eaa8927 vfmahi.f16 s16, s20, s15 (unpredictable)
+0EA00920 vfmaeq.f16 s0, s0, s1 (unpredictable)
+FEAB692B UNALLOCATED
+4EA4192F vfmami.f16 s2, s8, s31 (unpredictable)
+1EA10928 vfmane.f16 s0, s2, s17 (unpredictable)
+2EA0F924 vfmacs.f16 s30, s0, s9 (unpredictable)
+2EE00980 vfmacs.f16 s1, s1, s0 (unpredictable)
+2EAF698F vfmacs.f16 s12, s31, s30 (unpredictable)
+2EAB6920 vfmacs.f16 s12, s22, s1 (unpredictable)
+2EAB692F vfmacs.f16 s12, s22, s31 (unpredictable)
+
+// VFMA_A2_S cond=xxxx|1110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=0|M=x|0|Vm=xxxx
+// VfmaA2S: VFMA{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+bee49a0d vfmalt.f32 s19, s8, s26
+9ee98a8e vfmals.f32 s17, s19, s28
+beafea8b vfmalt.f32 s28, s31, s22
+5eee5a25 vfmapl.f32 s11, s28, s11
+7eed0a0d vfmavc.f32 s1, s26, s26
+9ee3aaac vfmals.f32 s21, s7, s25
+bea6aa81 vfmalt.f32 s20, s13, s2
+5ee83a82 vfmapl.f32 s7, s17, s4
+// Binary Ninja's tests
+eea21a00 vfma.f32 s2, s4, s0
+0EE0FA0F vfmaeq.f32 s31, s0, s30
+FEE49A0D UNALLOCATED
+8EE14A08 vfmahi.f32 s9, s2, s16
+4EE02A04 vfmami.f32 s5, s0, s8
+2EA00A8F vfmacs.f32 s0, s1, s30
+1EAFFA20 vfmane.f32 s30, s30, s1
+BEE4FA2F vfmalt.f32 s31, s8, s31

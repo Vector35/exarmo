@@ -1,0 +1,43 @@
+// CASALT_C64_comswap_unpriv 1|sz=1|0010011|A=1|0|Rs=xxxxx|R=1|Rt2=11111|Rn=xxxxx|Rt=xxxxx
+// CasaltC64ComswapUnpriv: CASALT  <Xs>, <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+C9C0FC03 casalt x0, x3, [x0]
+C9C0FC0A casalt x0, x10, [x0]
+C9C0FC11 casalt x0, x17, [x0]
+C9DFFFE0 casalt xzr, x0, [sp]
+C9C0FC1F casalt x0, xzr, [x0]
+C9C0FC00 casalt x0, x0, [x0]
+C9C1FC43 casalt x1, x3, [x2]
+
+// CASAT_C64_comswap_unpriv 1|sz=1|0010011|A=1|0|Rs=xxxxx|R=0|Rt2=11111|Rn=xxxxx|Rt=xxxxx
+// CasatC64ComswapUnpriv: CASAT  <Xs>, <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+C9C07C04 casat x0, x4, [x0]
+C9C07C0B casat x0, x11, [x0]
+C9C07C12 casat x0, x18, [x0]
+C9DF7FE0 casat xzr, x0, [sp]
+C9C07C1F casat x0, xzr, [x0]
+C9C07C00 casat x0, x0, [x0]
+C9C17C43 casat x1, x3, [x2]
+
+// CASLT_C64_comswap_unpriv 1|sz=1|0010011|A=0|0|Rs=xxxxx|R=1|Rt2=11111|Rn=xxxxx|Rt=xxxxx
+// CasltC64ComswapUnpriv: CASLT  <Xs>, <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+C980FC05 caslt x0, x5, [x0]
+C980FC0C caslt x0, x12, [x0]
+C980FC13 caslt x0, x19, [x0]
+C99FFFE0 caslt xzr, x0, [sp]
+C980FC1F caslt x0, xzr, [x0]
+C980FC00 caslt x0, x0, [x0]
+C981FC43 caslt x1, x3, [x2]
+
+// CAST_C64_comswap_unpriv 1|sz=1|0010011|A=0|0|Rs=xxxxx|R=0|Rt2=11111|Rn=xxxxx|Rt=xxxxx
+// CastC64ComswapUnpriv: CAST  <Xs>, <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+C9807C06 cast x0, x6, [x0]
+C9807C0D cast x0, x13, [x0]
+C9807C14 cast x0, x20, [x0]
+C99F7FE0 cast xzr, x0, [sp]
+C9807C1F cast x0, xzr, [x0]
+C9807C00 cast x0, x0, [x0]
+C9817C43 cast x1, x3, [x2]

@@ -1,0 +1,14 @@
+// smops_za32_pp_zz_16 1|01|0000|u0=0|10|0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|1|0|ZAda=xx
+// SmopsZa32PpZz16: SMOPS  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A0800019 smops za1.s, p0/m, p0/m, z0.h, z0.h
+A0800058 smops za0.s, p0/m, p0/m, z2.h, z0.h
+A080007B smops za3.s, p0/m, p0/m, z3.h, z0.h
+A09F27FA smops za2.s, p1/m, p1/m, z31.h, z31.h
+A0804819 smops za1.s, p2/m, p2/m, z0.h, z0.h
+A0806C19 smops za1.s, p3/m, p3/m, z0.h, z0.h
+A0809019 smops za1.s, p4/m, p4/m, z0.h, z0.h
+A080B419 smops za1.s, p5/m, p5/m, z0.h, z0.h
+A080D819 smops za1.s, p6/m, p6/m, z0.h, z0.h
+A080FC19 smops za1.s, p7/m, p7/m, z0.h, z0.h
+A0858C59 smops za1.s, p3/m, p4/m, z2.h, z5.h

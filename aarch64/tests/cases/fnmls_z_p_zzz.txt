@@ -1,0 +1,23 @@
+// fnmls_z_p_zzz_ 011|0010|1|size=xx|1|Zm=xxxxx|0|N=1|op=1|Pg=xxx|Zn=xxxxx|Zda=xxxxx
+// FnmlsZPZzz: FNMLS  <Zda>.<T>, <Pg>/M, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Pg, Zn, Zda
+65626A37 fnmls z23.h, p2/m, z17.h, z2.h
+65ED60BC fnmls z28.d, p0/m, z5.d, z13.d
+65607579 fnmls z25.h, p5/m, z11.h, z0.h
+656D7AE1 fnmls z1.h, p6/m, z23.h, z13.h
+65E87949 fnmls z9.d, p6/m, z10.d, z8.d
+65FF68EB fnmls z11.d, p2/m, z7.d, z31.d
+657D7EB5 fnmls z21.h, p7/m, z21.h, z29.h
+65706C07 fnmls z7.h, p3/m, z0.h, z16.h
+65687CBB fnmls z27.h, p7/m, z5.h, z8.h
+65E56943 fnmls z3.d, p2/m, z10.d, z5.d
+65AF795A fnmls z26.s, p6/m, z10.s, z15.s
+65647E94 fnmls z20.h, p7/m, z20.h, z4.h
+65E068A0 fnmls z0.d, p2/m, z5.d, z0.d
+65F779C7 fnmls z7.d, p6/m, z14.d, z23.d
+65716844 fnmls z4.h, p2/m, z2.h, z17.h
+657A6A13 fnmls z19.h, p2/m, z16.h, z26.h
+656267FF fnmls z31.h, p1/m, z31.h, z2.h
+65627237 fnmls z23.h, p4/m, z17.h, z2.h
+65226A37 UNALLOCATED
+65626842 fnmls z2.h, p2/m, z2.h, z2.h

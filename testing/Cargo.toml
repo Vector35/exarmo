@@ -1,0 +1,11 @@
+[package]
+name = "exarmo-testing"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+description = "The test harness both instruction sets' corpus tests are written on"
+
+[dependencies]
+exarmo-core = { path = "../core" }

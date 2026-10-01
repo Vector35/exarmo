@@ -1,0 +1,96 @@
+// EOR_i_T1 11110|i=x|0|op1=0100|S=0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// EorIT1: EOR{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F0800000 eor r0, r0, #0x0
+F48F1FFF eor pc, pc, #0x1fe000 (unpredictable)
+F0802080 eor r0, r0, #0x80008000
+F0803040 eor r0, r0, #0x40404040
+F0804020 eor r0, r0, #0xa0000000
+F0805010 eor r0, r0, #0x24000000
+F0806008 eor r0, r0, #0x8800000
+F0807004 eor r0, r0, #0x2100000
+F0800002 eor r0, r0, #0x2
+F0800001 eor r0, r0, #0x1
+F08000FF eor r0, r0, #0xff
+F0801000 eor r0, r0, #0x0
+F08010FF eor r0, r0, #0xff00ff
+F0802000 eor r0, r0, #0x0
+F08020FF eor r0, r0, #0xff00ff00
+F0803000 eor r0, r0, #0x0
+F08030FF eor r0, r0, #0xffffffff
+F0804000 eor r0, r0, #0x80000000
+F08040FF eor r0, r0, #0x7f800000
+F0805000 eor r0, r0, #0x20000000
+F08050FF eor r0, r0, #0x1fe00000
+F0806000 eor r0, r0, #0x8000000
+F08060FF eor r0, r0, #0x7f80000
+F0807000 eor r0, r0, #0x2000000
+F08070FF eor r0, r0, #0x1fe0000
+F4800000 eor r0, r0, #0x800000
+F48000FF eor r0, r0, #0x7f8000
+F4801000 eor r0, r0, #0x200000
+F48010FF eor r0, r0, #0x1fe000
+F4802000 eor r0, r0, #0x80000
+F48020FF eor r0, r0, #0x7f800
+F4803000 eor r0, r0, #0x20000
+F48030FF eor r0, r0, #0x1fe00
+F4804000 eor r0, r0, #0x8000
+F48040FF eor r0, r0, #0x7f80
+F4805000 eor r0, r0, #0x2000
+F48050FF eor r0, r0, #0x1fe0
+F4806000 eor r0, r0, #0x800
+F48060FF eor r0, r0, #0x7f8
+F4807000 eor r0, r0, #0x200
+F48070FF eor r0, r0, #0x1fe
+F0800000 [ne] eorne r0, r0, #0x0
+F0810200 eor r2, r1, #0x0
+
+// EORS_i_T1 11110|i=x|0|op1=0100|S=1|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// EorsIT1: EORS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F0900000 eors r0, r0, #0x0
+F49F10FF eors r0, pc, #0x1fe000 (unpredictable)
+F0902080 eors r0, r0, #0x80008000
+F0903040 eors r0, r0, #0x40404040
+F0904020 eors r0, r0, #0xa0000000
+F0905010 eors r0, r0, #0x24000000
+F0906008 eors r0, r0, #0x8800000
+F0907004 eors r0, r0, #0x2100000
+F0900002 eors r0, r0, #0x2
+F0900001 eors r0, r0, #0x1
+F09000FF eors r0, r0, #0xff
+F0901000 eors r0, r0, #0x0
+F09010FF eors r0, r0, #0xff00ff
+F0902000 eors r0, r0, #0x0
+F09020FF eors r0, r0, #0xff00ff00
+F0903000 eors r0, r0, #0x0
+F09030FF eors r0, r0, #0xffffffff
+F0904000 eors r0, r0, #0x80000000
+F09040FF eors r0, r0, #0x7f800000
+F0905000 eors r0, r0, #0x20000000
+F09050FF eors r0, r0, #0x1fe00000
+F0906000 eors r0, r0, #0x8000000
+F09060FF eors r0, r0, #0x7f80000
+F0907000 eors r0, r0, #0x2000000
+F09070FF eors r0, r0, #0x1fe0000
+F4900000 eors r0, r0, #0x800000
+F49000FF eors r0, r0, #0x7f8000
+F4901000 eors r0, r0, #0x200000
+F49010FF eors r0, r0, #0x1fe000
+F4902000 eors r0, r0, #0x80000
+F49020FF eors r0, r0, #0x7f800
+F4903000 eors r0, r0, #0x20000
+F49030FF eors r0, r0, #0x1fe00
+F4904000 eors r0, r0, #0x8000
+F49040FF eors r0, r0, #0x7f80
+F4905000 eors r0, r0, #0x2000
+F49050FF eors r0, r0, #0x1fe0
+F4906000 eors r0, r0, #0x800
+F49060FF eors r0, r0, #0x7f8
+F4907000 eors r0, r0, #0x200
+F49070FF eors r0, r0, #0x1fe
+F0900000 [ne] eorsne r0, r0, #0x0

@@ -1,0 +1,43 @@
+// VEOR_A1_D 1111001|U=1|0|D=x|size=00|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VeorA1D: VEOR{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f3084130 veor d4, d8, d16
+f3406110 veor d22, d0, d0
+f305a11e veor d10, d5, d14
+f340e133 veor d30, d0, d19
+f302413a veor d4, d2, d26
+f304e1ba veor d14, d20, d26
+f3453190 veor d19, d21, d0
+f3014199 veor d4, d17, d9
+F30F013F veor d0, d15, d31
+F300F1B8 veor d15, d16, d24
+F30F8134 veor d8, d15, d20
+F30F21B2 veor d2, d31, d18
+F3081131 veor d1, d8, d17
+F308011F veor d0, d8, d15
+F308F13F veor d15, d8, d31
+F3480130 veor d16, d8, d16
+F348F130 veor d31, d8, d16
+
+// VEOR_A1_Q 1111001|U=1|0|D=x|size=00|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VeorA1Q: VEOR{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f30401d2 veor q0, q10, q1
+f30ce15c veor q7, q6, q6
+f348c1d2 veor q14, q12, q1
+f30621d4 veor q1, q11, q2
+f30261f6 veor q3, q9, q11
+f34a81f8 veor q12, q13, q12
+f34e41f2 veor q10, q15, q9
+f34c0170 veor q8, q6, q8
+F30001D0 veor q0, q8, q0
+F30FF1DF UNDEFINED
+F30111D1 UNDEFINED
+F30FF15F UNDEFINED
+F34FF1FF UNDEFINED
+F3000152 veor q0, q0, q1
+F30001D2 veor q0, q8, q1

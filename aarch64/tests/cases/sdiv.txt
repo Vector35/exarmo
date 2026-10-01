@@ -1,0 +1,47 @@
+// SDIV_32_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|00001|o1=1|Rn=xxxxx|Rd=xxxxx
+// Sdiv32Dp2src: SDIV  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AC80DD9 sdiv w25, w14, w8
+1ADE0EA6 sdiv w6, w21, w30
+1AD70C17 sdiv w23, w0, w23
+1AD20DF0 sdiv w16, w15, w18
+1AC50D1D sdiv w29, w8, w5
+1AD90C4D sdiv w13, w2, w25
+1AC50CD6 sdiv w22, w6, w5
+1ACA0EB8 sdiv w24, w21, w10
+1AC90EF8 sdiv w24, w23, w9
+1ACF0CB8 sdiv w24, w5, w15
+1ACC0DC5 sdiv w5, w14, w12
+1AC10EFF sdiv wzr, w23, w1
+1ADC0C0C sdiv w12, w0, w28
+1AD30F80 sdiv w0, w28, w19
+1AC80C09 sdiv w9, w0, w8
+1ACD0C43 sdiv w3, w2, w13
+1AC00FF9 sdiv w25, wzr, w0
+1ADF0DD9 sdiv w25, w14, wzr
+1AC80D19 sdiv w25, w8, w8
+1AC80DCE sdiv w14, w14, w8
+
+// SDIV_64_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|00001|o1=1|Rn=xxxxx|Rd=xxxxx
+// Sdiv64Dp2src: SDIV  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9ACC0F23 sdiv x3, x25, x12
+9AC70EE5 sdiv x5, x23, x7
+9ACD0F1A sdiv x26, x24, x13
+9AC10FBC sdiv x28, fp, x1
+9AC20DE9 sdiv x9, x15, x2
+9AC40C51 sdiv x17, x2, x4
+9AC60F6E sdiv x14, x27, x6
+9AD00F85 sdiv x5, x28, x16
+9AD60C79 sdiv x25, x3, x22
+9ADF0C12 sdiv x18, x0, xzr
+9ADA0EBE sdiv lr, x21, x26
+9AD90E37 sdiv x23, x17, x25
+9AC10E51 sdiv x17, x18, x1
+9AC50F1E sdiv lr, x24, x5
+9AC20CD1 sdiv x17, x6, x2
+9AD40E16 sdiv x22, x16, x20
+9AC00FE0 sdiv x0, xzr, x0
+9ACC0F3F sdiv xzr, x25, x12
+9ACC0D83 sdiv x3, x12, x12
+9ACC0F39 sdiv x25, x25, x12

@@ -1,0 +1,20 @@
+// UXTH_A1 cond=xxxx|011|01|U=1|op=11|Rn=1111|Rd=xxxx|rotate=xx|(0)(0)|011|1|Rm=xxxx
+// UxthA1: UXTH{<c>}{<q>}  {<Rd>, }<Rm> {, ROR #<amount>}
+// register fields: Rd, Rm
+46ffb379 uxthmi r11, r9 (unpredictable)
+56ffd57c uxthpl sp, r12, ror #8 (unpredictable)
+46ff3f7c uxthmi r3, r12, ror #24 (unpredictable)
+36ffc776 uxthlo r12, r6, ror #8 (unpredictable)
+06fff473 uxtheq pc, r3, ror #8 (unpredictable)
+e6ff1b78 uxth r1, r8, ror #16 (unpredictable)
+66ffd776 uxthvs sp, r6, ror #8 (unpredictable)
+46ff4276 uxthmi r4, r6 (unpredictable)
+// Binary Ninja's tests
+16ff3079 uxthne r3, r9
+d6ff2872 uxthle r2, r2, ror #16
+e6ff1076 uxth r1, r6
+e6ff3478 uxth r3, r8, ror #8
+e6ff9c73 uxth r9, r3, ror #24
+F6FFB379 UNALLOCATED
+86FF0370 uxthhi r0, r0 (unpredictable)
+26FFB37F uxthcs r11, pc (unpredictable)

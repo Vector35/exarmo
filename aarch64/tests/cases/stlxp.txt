@@ -1,0 +1,62 @@
+// STLXP_SP32_ldstexclp 1|sz=0|0010000|L=0|1|Rs=xxxxx|o0=1|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StlxpSp32Ldstexclp: STLXP  <Ws>, <Wt1>, <Wt2>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rt2, Rn, Rt
+8827B60A stlxp w7, w10, w13, [x16]
+882C8D74 stlxp w12, w20, w3, [x11]
+882AEF02 stlxp w10, w2, w27, [x24]
+882EDD20 stlxp w14, w0, w23, [x9]
+883AD5C6 stlxp w26, w6, w21, [x14]
+8823E0D5 stlxp w3, w21, w24, [x6]
+8827CE01 stlxp w7, w1, w19, [x16]
+8838E92C stlxp w24, w12, w26, [x9]
+883EFF04 stlxp w30, w4, wzr, [x24]
+8821A79F stlxp w1, wzr, w9, [x28]
+8833FE08 stlxp w19, w8, wzr, [x16]
+882EB0CC stlxp w14, w12, w12, [x6]
+88249954 stlxp w4, w20, w6, [x10]
+8834E532 stlxp w20, w18, w25, [x9]
+8828E4C1 stlxp w8, w1, w25, [x6]
+8825D681 stlxp w5, w1, w21, [x20]
+883381E8 stlxp w19, w8, w0, [x15]
+88319565 stlxp w17, w5, w5, [x11]
+8823D21F stlxp w3, wzr, w20, [x16]
+8839E3DB stlxp w25, w27, w24, [lr]
+882CCCB1 stlxp w12, w17, w19, [x5]
+8833EE30 stlxp w19, w16, w27, [x17]
+88218322 stlxp w1, w2, w0, [x25]
+8830E796 stlxp w16, w22, w25, [x28]
+8820B40A stlxp w0, w10, w13, [x0] (unpredictable)
+883FB7EA stlxp wzr, w10, w13, [sp]
+88279E10 stlxp w7, w16, w7, [x16] (unpredictable)
+8827B5A7 stlxp w7, w7, w13, [x13] (unpredictable)
+
+// STLXP_SP64_ldstexclp 1|sz=1|0010000|L=0|1|Rs=xxxxx|o0=1|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StlxpSp64Ldstexclp: STLXP  <Ws>, <Xt1>, <Xt2>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rt2, Rn, Rt
+C82FD822 stlxp w15, x2, x22, [x1]
+C83BFB4A stlxp w27, x10, lr, [x26]
+C836E4E4 stlxp w22, x4, x25, [x7]
+C839A6F4 stlxp w25, x20, x9, [x23]
+C82DE935 stlxp w13, x21, x26, [x9]
+C831FC2E stlxp w17, x14, xzr, [x1]
+C821DCAE stlxp w1, x14, x23, [x5]
+C83BA419 stlxp w27, x25, x9, [x0]
+C82FE314 stlxp w15, x20, x24, [x24]
+C83FB956 stlxp wzr, x22, x14, [x10]
+C838BAB5 stlxp w24, x21, x14, [x21]
+C83D9C97 stlxp w29, x23, x7, [x4]
+C836AA6C stlxp w22, x12, x10, [x19]
+C832AC11 stlxp w18, x17, x11, [x0]
+C828B856 stlxp w8, x22, x14, [x2]
+C83DC80D stlxp w29, x13, x18, [x0]
+C82EA5A5 stlxp w14, x5, x9, [x13]
+C830AD0C stlxp w16, x12, x11, [x8]
+C829A459 stlxp w9, x25, x9, [x2] (unpredictable)
+C834B09D stlxp w20, fp, x12, [x4]
+C8239DBC stlxp w3, x28, x7, [x13]
+C83EF611 stlxp w30, x17, fp, [x16]
+C83DD080 stlxp w29, x0, x20, [x4]
+C83988DF stlxp w25, xzr, x2, [x6]
+C82083E2 stlxp w0, x2, x0, [sp] (unpredictable)
+C82FD9F6 stlxp w15, x22, x22, [x15] (unpredictable)
+C82FD82F stlxp w15, x15, x22, [x1] (unpredictable)

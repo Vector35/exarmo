@@ -1,0 +1,24 @@
+// uqincw_z_zs_ 000|0010|0|size=10|1|0|imm4=xxxx|11|00|D=0|U=1|pattern=xxxxx|Zdn=xxxxx
+// UqincwZZs: UQINCW  <Zdn>.S{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04ABC7BA uqincw z26.s, mul4, mul #0xc
+04A4C77D uqincw z29.s, #0x1b, mul #0x5
+04A5C5E3 uqincw z3.s, #0xf, mul #0x6
+04A4C7F4 uqincw z20.s, all, mul #0x5
+04A1C4BD uqincw z29.s, vl5, mul #0x2
+04ACC5CD uqincw z13.s, #0xe, mul #0xd
+04A4C774 uqincw z20.s, #0x1b, mul #0x5
+04A4C55C uqincw z28.s, vl32, mul #0x5
+04A6C745 uqincw z5.s, #0x1a, mul #0x7
+04A9C490 uqincw z16.s, vl4, mul #0xa
+04ABC537 uqincw z23.s, vl16, mul #0xc
+04AEC4A6 uqincw z6.s, vl5, mul #0xf
+04A8C510 uqincw z16.s, vl8, mul #0x9
+04AEC695 uqincw z21.s, #0x14, mul #0xf
+04A8C675 uqincw z21.s, #0x13, mul #0x9
+04A6C51C uqincw z28.s, vl8, mul #0x7
+04A0C400 uqincw z0.s, pow2
+04AFC7BF uqincw z31.s, mul4, mul #0x10
+04A2C61A uqincw z26.s, #0x10, mul #0x3
+04ABC45A uqincw z26.s, vl2, mul #0xc
+04ABC43A uqincw z26.s, vl1, mul #0xc

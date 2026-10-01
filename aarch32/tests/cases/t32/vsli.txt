@@ -1,0 +1,56 @@
+// VSLI_T1_D 111|U=1|11111|D=x|imm6=xxxxxx|Vd=xxxx|opc=0101|L=x|Q=0|M=x|1|Vm=xxxx
+// VsliT1D: VSLI{<c>}{<q>}.<size>  {<Dd>, }<Dm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffbe359a vsli.64 d3, d10, #62
+ffa965bf vsli.64 d6, d31, #41
+ffe77530 vsli.32 d23, d16, #7
+ffd815bd vsli.64 d17, d29, #24
+ffacd51e vsli.32 d13, d14, #12
+ffab9536 vsli.32 d9, d22, #11
+fff51513 vsli.32 d17, d3, #21
+ff8d453e vsli.8 d4, d30, #5
+FF800598 vsli.64 d0, d8, #0x0
+FFBFF594 vsli.64 d15, d4, #0x3f
+FFA08592 vsli.64 d8, d2, #0x20
+FF902591 vsli.64 d2, d1, #0x10
+FF880590 vsli.64 d0, d0, #0x8
+FF84F59F vsli.64 d15, d15, #0x4
+FFC2059A vsli.64 d16, d10, #0x2
+FFC1F59A vsli.64 d31, d10, #0x1
+FF80359A vsli.64 d3, d10, #0x0
+FFBF351A vsli.32 d3, d10, #0x1f
+FFBF359A vsli.64 d3, d10, #0x3f
+FFBE359A [ne] vsline.64 d3, d10, #0x3e
+
+// VSLI_T1_Q 111|U=1|11111|D=x|imm6=xxxxxx|Vd=xxxx|opc=0101|L=x|Q=1|M=x|1|Vm=xxxx
+// VsliT1Q: VSLI{<c>}{<q>}.<size>  {<Qd>, }<Qm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+fff9c5d2 vsli.64 q14, q1, #57
+ffad0572 vsli.32 q0, q9, #13
+ffaf25d6 vsli.64 q1, q3, #47
+ffd0857c vsli.16 q12, q14, #0
+fffe25f4 vsli.64 q9, q10, #62
+fffa65de vsli.64 q11, q7, #58
+ffaea57c vsli.32 q5, q14, #14
+ffd6855a vsli.16 q12, q5, #6
+FFC045D0 vsli.64 q10, q0, #0x0
+FFFF05D8 vsli.64 q8, q4, #0x3f
+FFE0C5D0 vsli.64 q14, q0, #0x20
+FFC8C5F0 vsli.64 q14, q8, #0x8
+FFC4C5D2 vsli.64 q14, q1, #0x4
+FFC2C5D2 vsli.64 q14, q1, #0x2
+FFC1C5D2 vsli.64 q14, q1, #0x1
+FFC0F55F UNDEFINED
+FFF915D1 UNDEFINED
+FFC0C5D2 vsli.64 q14, q1, #0x0
+FFFFC552 vsli.32 q14, q1, #0x1f
+FFFFC5D2 vsli.64 q14, q1, #0x3f
+FFB9F5DF UNDEFINED
+FFF9F5FF UNDEFINED
+FFF9C5D2 [ne] vsline.64 q14, q1, #0x39

@@ -1,0 +1,20 @@
+// LDRSH_l_A1 cond=xxxx|00|0|P=x|U=x|1|W=x|o1=1|Rn=1111|Rt=xxxx|imm4H=xxxx|1|op2=11|1|imm4L=xxxx
+// LdrshLA1: LDRSH{<c>}{<q>}  <Rt>, <label>
+// read together by <label>: imm4H, imm4L
+// register fields: Rt
+517f84f7 ldrshpl r8, 0xffc1 (unpredictable)
+a1ff2efc ldrshge r2, 0x100f4 (unpredictable)
+e17fafff ldrsh r10, 0xff09 (unpredictable)
+c15fb7f2 ldrshgt r11, 0xff96
+21dfd3f5 ldrshhs sp, 0x1003d
+91ff1ef0 ldrshls r1, 0x100e8 (unpredictable)
+c1df84f5 ldrshgt r8, 0x1004d
+80dff3f3 ldrshhi pc, 0x1003b (unpredictable)
+017F00F8 ldrsheq r0, 0x10000 (unpredictable)
+F17F84F7 UNALLOCATED
+417F88F4 ldrshmi r8, 0xff84 (unpredictable)
+117F82F1 ldrshne r8, 0xffe7 (unpredictable)
+517F81F7 ldrshpl r8, 0xfff1 (unpredictable)
+517F80F0 ldrshpl r8, 0x10008 (unpredictable)
+517F80FF ldrshpl r8, 0xfff9 (unpredictable)
+517F8FF0 ldrshpl r8, 0xff18 (unpredictable)

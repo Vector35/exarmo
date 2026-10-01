@@ -1,0 +1,12 @@
+// BFCVTN_asimdmisc_4S 0|Q=x|U=0|0|111|0|size=10|10000|opcode=10110|10|Rn=xxxxx|Rd=xxxxx
+// BfcvtnAsimdmisc4s: BFCVTN  <Vd>.<Ta>, <Vn>.4S
+// BfcvtnAsimdmisc4s2: BFCVTN2  <Vd>.<Ta>, <Vn>.4S
+// register fields: Rn, Rd
+// form chosen on: Q
+0EA16804 bfcvtn v4.4h, v0.4s
+0EA1680B bfcvtn v11.4h, v0.4s
+0EA16812 bfcvtn v18.4h, v0.4s
+4EA16BE0 bfcvtn2 v0.8h, v31.4s
+0EA1681F bfcvtn v31.4h, v0.4s
+0EA16800 bfcvtn v0.4h, v0.4s
+4EA16800 bfcvtn2 v0.8h, v0.4s

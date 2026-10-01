@@ -1,0 +1,67 @@
+// SQRSHL_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|010|R=1|S=1|1|Rn=xxxxx|Rd=xxxxx
+// SqrshlAsimdsameOnly: SQRSHL  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4EA75D1E sqrshl v30.4s, v8.4s, v7.4s
+0EBE5F4F sqrshl v15.2s, v26.2s, v30.2s
+0E3C5D84 sqrshl v4.8b, v12.8b, v28.8b
+4E3A5C94 sqrshl v20.16b, v4.16b, v26.16b
+4E675E0F sqrshl v15.8h, v16.8h, v7.8h
+0E335DD5 sqrshl v21.8b, v14.8b, v19.8b
+0EA95E06 sqrshl v6.2s, v16.2s, v9.2s
+0E335EE1 sqrshl v1.8b, v23.8b, v19.8b
+4EEF5F95 sqrshl v21.2d, v28.2d, v15.2d
+0E2E5C9B sqrshl v27.8b, v4.8b, v14.8b
+0E2B5CAB sqrshl v11.8b, v5.8b, v11.8b
+0E7F5E4C sqrshl v12.4h, v18.4h, v31.4h
+0E3D5E0E sqrshl v14.8b, v16.8b, v29.8b
+4EA65E6A sqrshl v10.4s, v19.4s, v6.4s
+4EA05D88 sqrshl v8.4s, v12.4s, v0.4s
+4E6E5E1D sqrshl v29.8h, v16.8h, v14.8h
+4EA75C00 sqrshl v0.4s, v0.4s, v7.4s
+4EA75FFF sqrshl v31.4s, v31.4s, v7.4s
+0EE75D1E UNDEFINED
+4EA75CFE sqrshl v30.4s, v7.4s, v7.4s
+
+// SQRSHL_asisdsame_only 01|U=0|1|111|0|size=xx|1|Rm=xxxxx|010|R=1|S=1|1|Rn=xxxxx|Rd=xxxxx
+// SqrshlAsisdsameOnly: SQRSHL  <V><d>, <V><n>, <V><m>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, Rm
+// register fields: Rm, Rn, Rd
+5E6A5E75 sqrshl h21, h19, h10
+5EF35C1D sqrshl d29, d0, d19
+5EE45FB3 sqrshl d19, d29, d4
+5E685CEF sqrshl h15, h7, h8
+5EF35DC6 sqrshl d6, d14, d19
+5EB25F7B sqrshl s27, s27, s18
+5EE75F78 sqrshl d24, d27, d7
+5E2A5CD2 sqrshl b18, b6, b10
+5EEC5C80 sqrshl d0, d4, d12
+5E345C36 sqrshl b22, b1, b20
+5EF95C1D sqrshl d29, d0, d25
+5EE35E07 sqrshl d7, d16, d3
+5EF25EBA sqrshl d26, d21, d18
+5E2B5CF7 sqrshl b23, b7, b11
+5EBE5D0F sqrshl s15, s8, s30
+5E715CB2 sqrshl h18, h5, h17
+5E605FFF sqrshl h31, h31, h0
+5E7F5E75 sqrshl h21, h19, h31
+5E2A5D40 sqrshl b0, b10, b10
+5E2A5E7F sqrshl b31, b19, b10
+5E6A5E60 sqrshl h0, h19, h10
+5EAA5E60 sqrshl s0, s19, s10
+5EAA5E7F sqrshl s31, s19, s10
+5EEA5E7F sqrshl d31, d19, d10
+5E205E75 sqrshl b21, b19, b0
+5E3F5E75 sqrshl b21, b19, b31
+5EA05E75 sqrshl s21, s19, s0
+5EBF5E75 sqrshl s21, s19, s31
+5EE05E75 sqrshl d21, d19, d0
+5EFF5E75 sqrshl d21, d19, d31
+5E2A5C0A sqrshl b10, b0, b10
+5E2A5FF5 sqrshl b21, b31, b10
+5E6A5C15 sqrshl h21, h0, h10
+5EAA5C15 sqrshl s21, s0, s10
+5EAA5FF5 sqrshl s21, s31, s10
+5EEA5FF5 sqrshl d21, d31, d10

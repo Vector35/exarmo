@@ -1,0 +1,27 @@
+// VSWP_A1_D 111100111|D=x|11|size=00|opc1=10|Vd=xxxx|0|opc2=0000|Q=0|M=x|0|Vm=xxxx
+// VswpA1D: VSWP{<c>}{<q>}{.<dt>}  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b22008 vswp d2, d8
+f3f2300f vswp d19, d15
+F3B20020 vswp d0, d16
+F3B2F004 vswp d15, d4
+F3B28002 vswp d8, d2
+F3B24001 vswp d4, d1
+F3B21000 vswp d1, d0
+F3B2F02F vswp d15, d31
+F3F20008 vswp d16, d8
+F3F2F008 vswp d31, d8
+
+// VSWP_A1_Q 111100111|D=x|11|size=00|opc1=10|Vd=xxxx|0|opc2=0000|Q=1|M=x|0|Vm=xxxx
+// VswpA1Q: VSWP{<c>}{<q>}{.<dt>}  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+F3B20040 vswp q0, q0
+F3F28068 vswp q12, q12
+F3B2F04F UNDEFINED
+F3B24044 vswp q2, q2
+F3B22042 vswp q1, q1
+F3B21041 UNDEFINED
+F3F20060 vswp q8, q8
+F3F2F06F UNDEFINED

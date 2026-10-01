@@ -1,0 +1,28 @@
+// clasta_r_p_z_ 000|0010|1|size=xx|1|1|000|B=0|10|1|Pg=xxx|Zm=xxxxx|Rdn=xxxxx
+// ClastaRPZ: CLASTA  <dn>, <Pg>, <dn>, <Zm>.<T>
+// read together by <dn>: size, Rdn
+// register fields: Pg, Zm, Rdn
+05B0BBEB clasta w11, p6, w11, z31.s
+05F0B9C3 clasta x3, p6, x3, z14.d
+0570B533 clasta w19, p5, w19, z9.h
+05F0B543 clasta x3, p5, x3, z10.d
+0570AA23 clasta w3, p2, w3, z17.h
+0530B4F2 clasta w18, p5, w18, z7.b
+05B0A621 clasta w1, p1, w1, z17.s
+05B0A2B7 clasta w23, p0, w23, z21.s
+05F0AE84 clasta x4, p3, x4, z20.d
+05B0B4B2 clasta w18, p5, w18, z5.s
+05B0B9F9 clasta w25, p6, w25, z15.s
+0570B0E2 clasta w2, p4, w2, z7.h
+05B0BD6C clasta w12, p7, w12, z11.s
+05F0AFDC clasta x28, p3, x28, z30.d
+0530B880 clasta w0, p6, w0, z4.b
+0570B599 clasta w25, p5, w25, z12.h
+05B0B81F clasta wzr, p6, wzr, z0.s
+0530BBFF clasta wzr, p6, wzr, z31.b
+0570BBE0 clasta w0, p6, w0, z31.h
+0570BBFF clasta wzr, p6, wzr, z31.h
+05B0BBE0 clasta w0, p6, w0, z31.s
+05F0BBE0 clasta x0, p6, x0, z31.d
+05F0BBFF clasta xzr, p6, xzr, z31.d
+05B0BBFF clasta wzr, p6, wzr, z31.s

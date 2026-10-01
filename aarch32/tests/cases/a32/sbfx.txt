@@ -1,0 +1,21 @@
+// SBFX_A1 cond=xxxx|011|11|U=0|1|widthm1=xxxxx|Rd=xxxx|lsb=xxxxx|10|1|Rn=xxxx
+// SbfxA1: SBFX{<c>}{<q>}  <Rd>, <Rn>, #<lsb>, #<width>
+// register fields: Rd, Rn
+97be4fde UNPREDICTABLE
+a7a40bd5 sbfxge r0, r5, #23, #5
+67b794db UNPREDICTABLE
+c7b5775f UNPREDICTABLE
+87a39ad2 sbfxhi r9, r2, #21, #4
+a7a6a9d2 sbfxge r10, r2, #19, #7
+a7a2ffd1 UNPREDICTABLE
+27b63450 sbfxhs r3, r0, #8, #23
+// Binary Ninja's tests
+c7af4855 sbfxgt r4, r5, #16, #16
+e7a04855 sbfx r4, r5, #16, #1
+07BF4054 sbfxeq r4, r4, #0x0, #0x20
+F7BE4FDE UNALLOCATED
+47B0425E sbfxmi r4, lr, #0x4, #0x11
+17A8415E sbfxne r4, lr, #0x2, #0x9
+97A140DE sbfxls r4, lr, #0x1, #0x2
+A7A2FBDF sbfxge pc, pc, #0x17, #0x3 (unpredictable)
+E7A04FD5 sbfx r4, r5, #0x1f, #0x1

@@ -1,0 +1,20 @@
+// MRS_br_T1_AS 111|10|0|1111|1|R=x|M1=xxxx|1|0(0)0|Rd=xxxx|(0)(0)|1|M=x|(0)(0)(0)(0)
+// MrsBrT1As: MRS{<c>}{<q>}  <Rd>, <banked_reg>
+// read together by <banked_reg>: R, M1, M
+// register fields: Rd
+// IT state read: condition
+F3E08020 mrs r0, r8_usr
+F3FFAF7F UNPREDICTABLE
+F3E880A8 mrs r0, r8_fiq (unpredictable)
+F3E480E4 mrs r0, r12_usr (unpredictable)
+F3E28022 mrs r0, r10_usr (unpredictable)
+F3E18021 mrs r0, r9_usr (unpredictable)
+F3E08030 mrs r0, lr_irq
+F3EF8020 UNPREDICTABLE
+F3EF8030 mrs r0, sp_hyp
+F3F08020 UNPREDICTABLE
+F3F08030 mrs r0, spsr_irq
+F3FF8020 UNPREDICTABLE
+F3FF8030 UNPREDICTABLE
+F3E08020 [ne] mrsne r0, r8_usr
+F3E0AF6F mrs pc, r8_usr (unpredictable)

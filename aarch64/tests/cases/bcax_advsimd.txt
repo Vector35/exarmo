@@ -1,0 +1,23 @@
+// BCAX_VVV16_crypto4 1100|111|00|Op0=01|Rm=xxxxx|0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// BcaxVvv16Crypto4: BCAX  <Vd>.16B, <Vn>.16B, <Vm>.16B, <Va>.16B
+// register fields: Rm, Ra, Rn, Rd
+CE382E9A bcax v26.16b, v20.16b, v24.16b, v11.16b
+CE350E6E bcax v14.16b, v19.16b, v21.16b, v3.16b
+CE286581 bcax v1.16b, v12.16b, v8.16b, v25.16b
+CE24144D bcax v13.16b, v2.16b, v4.16b, v5.16b
+CE337F8F bcax v15.16b, v28.16b, v19.16b, v31.16b
+CE2E3AD7 bcax v23.16b, v22.16b, v14.16b, v14.16b
+CE350350 bcax v16.16b, v26.16b, v21.16b, v0.16b
+CE241BCF bcax v15.16b, v30.16b, v4.16b, v6.16b
+CE37299D bcax v29.16b, v12.16b, v23.16b, v10.16b
+CE3553C7 bcax v7.16b, v30.16b, v21.16b, v20.16b
+CE213918 bcax v24.16b, v8.16b, v1.16b, v14.16b
+CE2922B9 bcax v25.16b, v21.16b, v9.16b, v8.16b
+CE224F29 bcax v9.16b, v25.16b, v2.16b, v19.16b
+CE3D0CC4 bcax v4.16b, v6.16b, v29.16b, v3.16b
+CE360837 bcax v23.16b, v1.16b, v22.16b, v2.16b
+CE2F6BFC bcax v28.16b, v31.16b, v15.16b, v26.16b
+CE202C00 bcax v0.16b, v0.16b, v0.16b, v11.16b
+CE3F2E9F bcax v31.16b, v20.16b, v31.16b, v11.16b
+CE382D7A bcax v26.16b, v11.16b, v24.16b, v11.16b
+CE382E8B bcax v11.16b, v20.16b, v24.16b, v11.16b

@@ -1,0 +1,38 @@
+// fsqrt_z_p_z_m 011|0010|1|size=xx|0|011|opc=01|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FsqrtZPZM: FSQRT  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+658DAB21 fsqrt z1.s, p2/m, z25.s
+65CDA630 fsqrt z16.d, p1/m, z17.d
+65CDA40B fsqrt z11.d, p1/m, z0.d
+658DBD6F fsqrt z15.s, p7/m, z11.s
+658DAE8E fsqrt z14.s, p3/m, z20.s
+654DAE90 fsqrt z16.h, p3/m, z20.h
+654DB43A fsqrt z26.h, p5/m, z1.h
+658DAC31 fsqrt z17.s, p3/m, z1.s
+65CDB24E fsqrt z14.d, p4/m, z18.d
+658DB841 fsqrt z1.s, p6/m, z2.s
+658DB08C fsqrt z12.s, p4/m, z4.s
+654DB01F fsqrt z31.h, p4/m, z0.h
+65CDA2E6 fsqrt z6.d, p0/m, z23.d
+658DA020 fsqrt z0.s, p0/m, z1.s
+65CDB4DE fsqrt z30.d, p5/m, z6.d
+658DACFB fsqrt z27.s, p3/m, z7.s
+658DABE1 fsqrt z1.s, p2/m, z31.s
+650DAB21 UNDEFINED
+658DAB39 fsqrt z25.s, p2/m, z25.s
+
+// fsqrt_z_p_z_z 011|0010|0|size=xx|011|011|1|opc=01|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FsqrtZPZZ: FSQRT  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+645BA002 fsqrt z2.h, p0/z, z0.h
+645BA009 fsqrt z9.h, p0/z, z0.h
+645BA010 fsqrt z16.h, p0/z, z0.h
+649BA7E0 fsqrt z0.s, p1/z, z31.s
+64DBA81F fsqrt z31.d, p2/z, z0.d
+645BAC02 fsqrt z2.h, p3/z, z0.h
+645BB002 fsqrt z2.h, p4/z, z0.h
+645BB402 fsqrt z2.h, p5/z, z0.h
+645BB802 fsqrt z2.h, p6/z, z0.h
+645BBC02 fsqrt z2.h, p7/z, z0.h
+641BA002 UNDEFINED
+645BA000 fsqrt z0.h, p0/z, z0.h

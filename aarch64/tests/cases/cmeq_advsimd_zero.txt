@@ -1,0 +1,45 @@
+// CMEQ_asimdmisc_Z 0|Q=x|U=0|0|111|0|size=xx|10000|0100|op=1|10|Rn=xxxxx|Rd=xxxxx
+// CmeqAsimdmiscZ: CMEQ  <Vd>.<T>, <Vn>.<T>, #0
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+4EA09865 cmeq v5.4s, v3.4s, #0x0
+4E209BEA cmeq v10.16b, v31.16b, #0x0
+4EA0983A cmeq v26.4s, v1.4s, #0x0
+4E209BCA cmeq v10.16b, v30.16b, #0x0
+4E20980A cmeq v10.16b, v0.16b, #0x0
+0EA09974 cmeq v20.2s, v11.2s, #0x0
+4E209BDF cmeq v31.16b, v30.16b, #0x0
+0E2098FE cmeq v30.8b, v7.8b, #0x0
+0EA098B2 cmeq v18.2s, v5.2s, #0x0
+4E209A12 cmeq v18.16b, v16.16b, #0x0
+0EA09B8E cmeq v14.2s, v28.2s, #0x0
+4EE09BAC cmeq v12.2d, v29.2d, #0x0
+4EA099A9 cmeq v9.4s, v13.4s, #0x0
+4EA099BB cmeq v27.4s, v13.4s, #0x0
+4E209B60 cmeq v0.16b, v27.16b, #0x0
+0E609A45 cmeq v5.4h, v18.4h, #0x0
+0EE09865 UNDEFINED
+4E609863 cmeq v3.8h, v3.8h, #0x0
+
+// CMEQ_asisdmisc_Z 01|U=0|1|111|0|size=11|10000|0100|op=1|10|Rn=xxxxx|Rd=xxxxx
+// CmeqAsisdmiscZ: CMEQ  <d>, <n>, #0
+// register fields: Rn, Rd
+5EE0996F cmeq d15, d11, #0x0
+5EE0995A cmeq d26, d10, #0x0
+5EE098FD cmeq d29, d7, #0x0
+5EE09B3B cmeq d27, d25, #0x0
+5EE0994E cmeq d14, d10, #0x0
+5EE09A11 cmeq d17, d16, #0x0
+5EE09A2E cmeq d14, d17, #0x0
+5EE099A9 cmeq d9, d13, #0x0
+5EE099E0 cmeq d0, d15, #0x0
+5EE09B50 cmeq d16, d26, #0x0
+5EE09941 cmeq d1, d10, #0x0
+5EE09827 cmeq d7, d1, #0x0
+5EE09B7D cmeq d29, d27, #0x0
+5EE09A72 cmeq d18, d19, #0x0
+5EE09B95 cmeq d21, d28, #0x0
+5EE09AFE cmeq d30, d23, #0x0
+5EE0981F cmeq d31, d0, #0x0
+5EE09BEF cmeq d15, d31, #0x0
+5EE0996B cmeq d11, d11, #0x0

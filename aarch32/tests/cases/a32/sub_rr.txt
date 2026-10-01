@@ -1,0 +1,42 @@
+// SUB_rr_A1 cond=xxxx|0000|opc=010|S=0|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// SubRrA1: SUB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+704fe415 subvc lr, pc, r5, lsl r4 (unpredictable)
+80431556 subhi r1, r3, r6, asr r5
+804f9a7d subhi r9, pc, sp, ror r10 (unpredictable)
+5043293c subpl r2, r3, r12, lsr r9
+d045a138 suble r10, r5, r8, lsr r1
+804f4d71 subhi r4, pc, r1, ror sp (unpredictable)
+3047163a sublo r1, r7, r10, lsr r6
+204b731c subhs r7, r11, r12, lsl r3
+// Binary Ninja's tests
+e0466917 sub r6, r6, r7, lsl r9
+e0466937 sub r6, r6, r7, lsr r9
+e0466957 sub r6, r6, r7, asr r9
+e0466977 sub r6, r6, r7, ror r9
+e0476918 sub r6, r7, r8, lsl r9
+e0476938 sub r6, r7, r8, lsr r9
+e0476958 sub r6, r7, r8, asr r9
+e0476978 sub r6, r7, r8, ror r9
+00400010 subeq r0, r0, r0, lsl r0
+F04FE415 UNALLOCATED
+404FFF1F submi pc, pc, pc, lsl pc (unpredictable)
+104FEF1E subne lr, pc, lr, lsl pc (unpredictable)
+704FEE1F subvc lr, pc, pc, lsl lr (unpredictable)
+704FE414 subvc lr, pc, r4, lsl r4 (unpredictable)
+
+// SUBS_rr_A1 cond=xxxx|0000|opc=010|S=1|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// SubsRrA1: SUBS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+00503375 subseq r3, r0, r5, ror r3
+605fae7f subsvs r10, pc, pc, ror lr (unpredictable)
+e05a5736 subs r5, r10, r6, lsr r7
+0050b818 subseq r11, r0, r8, lsl r8
+805fe67c subshi lr, pc, r12, ror r6 (unpredictable)
+a0511d11 subsge r1, r1, r1, lsl sp
+5052417d subspl r4, r2, sp, ror r1
+a052b514 subsge r11, r2, r4, lsl r5
+F0503375 UNALLOCATED
+40500050 subsmi r0, r0, r0, asr r0
+2050FF75 subscs pc, r0, r5, ror pc (unpredictable)
+10503075 subsne r3, r0, r5, ror r0

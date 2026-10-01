@@ -1,0 +1,21 @@
+// VMMLA_T1_Q 111|1|11|0|op1=00|D=x|op2=00|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=0|N=x|Q=1|M=x|U=0|Vm=xxxx
+// VmmlaT1Q: VMMLA{<q>}.BF16  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+fc0aac4e vmmla.bf16 q5, q5, q7
+fc42cc40 vmmla.bf16 q14, q1, q0
+fc0c6c66 vmmla.bf16 q3, q6, q11
+fc006c6e vmmla.bf16 q3, q0, q15
+fc4eec46 vmmla.bf16 q15, q7, q3
+fc088c64 vmmla.bf16 q4, q4, q10
+fc448ce4 vmmla.bf16 q12, q10, q10
+fc4cec64 vmmla.bf16 q15, q6, q10
+FC011C41 UNDEFINED
+FC000CC8 vmmla.bf16 q0, q8, q4
+FC0A4C42 vmmla.bf16 q2, q5, q1
+FC0A2C60 vmmla.bf16 q1, q5, q8
+FC0A0C4E vmmla.bf16 q0, q5, q7
+FC4A0C4E vmmla.bf16 q8, q5, q7
+FC0FFC4F UNDEFINED
+FC4FFCEF UNDEFINED

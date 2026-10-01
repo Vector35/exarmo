@@ -1,0 +1,23 @@
+// SM3PARTW1_VVV4_cryptosha512_3 1100|111|00|11|Rm=xxxxx|1|O=1|00|opcode=00|Rn=xxxxx|Rd=xxxxx
+// Sm3partw1Vvv4Cryptosha5123: SM3PARTW1  <Vd>.4S, <Vn>.4S, <Vm>.4S
+// register fields: Rm, Rn, Rd
+CE7AC007 sm3partw1 v7.4s, v0.4s, v26.4s
+CE66C2E4 sm3partw1 v4.4s, v23.4s, v6.4s
+CE78C2BA sm3partw1 v26.4s, v21.4s, v24.4s
+CE71C2AA sm3partw1 v10.4s, v21.4s, v17.4s
+CE70C108 sm3partw1 v8.4s, v8.4s, v16.4s
+CE64C2F9 sm3partw1 v25.4s, v23.4s, v4.4s
+CE60C197 sm3partw1 v23.4s, v12.4s, v0.4s
+CE68C3ED sm3partw1 v13.4s, v31.4s, v8.4s
+CE61C1EA sm3partw1 v10.4s, v15.4s, v1.4s
+CE69C1D5 sm3partw1 v21.4s, v14.4s, v9.4s
+CE6AC1C3 sm3partw1 v3.4s, v14.4s, v10.4s
+CE78C3AF sm3partw1 v15.4s, v29.4s, v24.4s
+CE7BC037 sm3partw1 v23.4s, v1.4s, v27.4s
+CE7AC24D sm3partw1 v13.4s, v18.4s, v26.4s
+CE7BC2D0 sm3partw1 v16.4s, v22.4s, v27.4s
+CE6FC198 sm3partw1 v24.4s, v12.4s, v15.4s
+CE7FC000 sm3partw1 v0.4s, v0.4s, v31.4s
+CE7AC01F sm3partw1 v31.4s, v0.4s, v26.4s
+CE7AC347 sm3partw1 v7.4s, v26.4s, v26.4s
+CE7AC01A sm3partw1 v26.4s, v0.4s, v26.4s

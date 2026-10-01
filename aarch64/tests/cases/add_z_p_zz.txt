@@ -1,0 +1,22 @@
+// add_z_p_zz_ 000|0010|0|size=xx|0|00|opc=000|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// AddZPZz: ADD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04C011A5 add z5.d, p4/m, z5.d, z13.d
+04C01C76 add z22.d, p7/m, z22.d, z3.d
+0440055F add z31.h, p1/m, z31.h, z10.h
+04C01B32 add z18.d, p6/m, z18.d, z25.d
+044013E7 add z7.h, p4/m, z7.h, z31.h
+04C00F92 add z18.d, p3/m, z18.d, z28.d
+04801F2C add z12.s, p7/m, z12.s, z25.s
+04C00805 add z5.d, p2/m, z5.d, z0.d
+04401810 add z16.h, p6/m, z16.h, z0.h
+04400D1A add z26.h, p3/m, z26.h, z8.h
+04400AE1 add z1.h, p2/m, z1.h, z23.h
+040011D1 add z17.b, p4/m, z17.b, z14.b
+048011DF add z31.s, p4/m, z31.s, z14.s
+0480135B add z27.s, p4/m, z27.s, z26.s
+04C0014A add z10.d, p0/m, z10.d, z10.d
+04C0088F add z15.d, p2/m, z15.d, z4.d
+04C015A0 add z0.d, p5/m, z0.d, z13.d
+04C01085 add z5.d, p4/m, z5.d, z4.d
+04C011A4 add z4.d, p4/m, z4.d, z13.d

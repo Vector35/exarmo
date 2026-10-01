@@ -1,0 +1,22 @@
+// bfmaxnm_mz_zzv_2x1 1|10|0000|1|size=00|10|Zm=xxxx|10100|0|01|00|op=1|Zdn=xxxx|o2=0
+// BfmaxnmMzZzv2x1: BFMAXNM  { <Zdn1>.H-<Zdn2>.H }, { <Zdn1>.H-<Zdn2>.H }, <Zm>.H
+// register fields: Zm, Zdn
+C120A12C bfmaxnm {z12.h-z13.h}, {z12.h-z13.h}, z0.h
+C120A13A bfmaxnm {z26.h-z27.h}, {z26.h-z27.h}, z0.h
+C121A12A bfmaxnm {z10.h-z11.h}, {z10.h-z11.h}, z1.h
+C12FA120 bfmaxnm {z0.h-z1.h}, {z0.h-z1.h}, z15.h
+C120A13E bfmaxnm {z30.h-z31.h}, {z30.h-z31.h}, z0.h
+C120A120 bfmaxnm {z0.h-z1.h}, {z0.h-z1.h}, z0.h
+
+// bfmaxnm_mz_zzv_4x1 1|10|0000|1|size=00|10|Zm=xxxx|10101|0|01|00|op=1|Zdn=xxx|0|o2=0
+// BfmaxnmMzZzv4x1: BFMAXNM  { <Zdn1>.H-<Zdn4>.H }, { <Zdn1>.H-<Zdn4>.H }, <Zm>.H
+// register fields: Zm, Zdn
+C120A928 bfmaxnm {z8.h-z11.h}, {z8.h-z11.h}, z0.h
+C121A934 bfmaxnm {z20.h-z23.h}, {z20.h-z23.h}, z1.h
+C122A924 bfmaxnm {z4.h-z7.h}, {z4.h-z7.h}, z2.h
+C12FA920 bfmaxnm {z0.h-z3.h}, {z0.h-z3.h}, z15.h
+C120A92C bfmaxnm {z12.h-z15.h}, {z12.h-z15.h}, z0.h
+C120A930 bfmaxnm {z16.h-z19.h}, {z16.h-z19.h}, z0.h
+C120A938 bfmaxnm {z24.h-z27.h}, {z24.h-z27.h}, z0.h
+C120A93C bfmaxnm {z28.h-z31.h}, {z28.h-z31.h}, z0.h
+C120A920 bfmaxnm {z0.h-z3.h}, {z0.h-z3.h}, z0.h

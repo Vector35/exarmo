@@ -1,0 +1,14 @@
+// uabalt_z_zzz_ 010|0010|1|size=xx|0|Zm=xxxxx|11|00|U=1|T=1|Zn=xxxxx|Zda=xxxxx
+// UabaltZZzz: UABALT  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+4545CD9C uabalt z28.h, z12.b, z5.b
+454BCC1D uabalt z29.h, z0.b, z11.b
+4558CEC6 uabalt z6.h, z22.b, z24.b
+4598CD0E uabalt z14.s, z8.h, z24.h
+4596CE30 uabalt z16.s, z17.h, z22.h
+4583CC95 uabalt z21.s, z4.h, z3.h
+45D5CEBD uabalt z29.d, z21.s, z21.s
+4599CC84 uabalt z4.s, z4.h, z25.h
+4540CFE0 uabalt z0.h, z31.b, z0.b
+455FCD9F uabalt z31.h, z12.b, z31.b
+4505CD9C UNDEFINED

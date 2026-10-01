@@ -1,0 +1,34 @@
+// VCLS_A1_D 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1000|Q=0|M=x|0|Vm=xxxx
+// VclsA1D: VCLS{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f0542a vcls.s8 d21, d26
+f3b05428 vcls.s8 d5, d24
+f3b0040a vcls.s8 d0, d10
+f3f4342e vcls.s16 d19, d30
+f3f4f401 vcls.s16 d31, d1
+f3b80427 vcls.s32 d0, d23
+F3FC542A UNDEFINED
+F3F08420 vcls.s8 d24, d16
+F3F0442F vcls.s8 d20, d31
+F3F02424 vcls.s8 d18, d20
+F3F01422 vcls.s8 d17, d18
+F3B0F400 vcls.s8 d15, d0
+F3F0040F vcls.s8 d16, d15
+F3F05420 vcls.s8 d21, d16
+F3F0542F vcls.s8 d21, d31
+
+// VCLS_A1_Q 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1000|Q=1|M=x|0|Vm=xxxx
+// VclsA1Q: VCLS{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f4e440 vcls.s16 q15, q0
+f3f0046e vcls.s8 q8, q15
+F3B88448 vcls.s32 q4, q4
+F3FCF44F UNDEFINED
+F3F44444 vcls.s16 q10, q2
+F3F42442 vcls.s16 q9, q1
+F3F41441 UNDEFINED
+F3B40460 vcls.s16 q0, q8
+F3B4F44F UNDEFINED
+F3F4F46F UNDEFINED

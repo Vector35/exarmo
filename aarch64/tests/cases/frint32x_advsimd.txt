@@ -1,0 +1,23 @@
+// FRINT32X_asimdmisc_R 0|Q=x|U=1|0|111|0|0|sz=x|10000|1111|op=0|10|Rn=xxxxx|Rd=xxxxx
+// Frint32xAsimdmiscR: FRINT32X  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+2E21EBDF frint32x v31.2s, v30.2s
+6E21EA35 frint32x v21.4s, v17.4s
+2E21E988 frint32x v8.2s, v12.2s
+2E21E85B frint32x v27.2s, v2.2s
+6E21E947 frint32x v7.4s, v10.4s
+6E61E8FC frint32x v28.2d, v7.2d
+2E21EAF6 frint32x v22.2s, v23.2s
+6E21E8CC frint32x v12.4s, v6.4s
+6E61EB39 frint32x v25.2d, v25.2d
+6E61EB7A frint32x v26.2d, v27.2d
+6E61EAE7 frint32x v7.2d, v23.2d
+2E21EA85 frint32x v5.2s, v20.2s
+6E21E92A frint32x v10.4s, v9.4s
+6E21E8F3 frint32x v19.4s, v7.4s
+2E21EB3D frint32x v29.2s, v25.2s
+2E21E9A0 frint32x v0.2s, v13.2s
+2E21E81F frint32x v31.2s, v0.2s
+2E21EBFF frint32x v31.2s, v31.2s
+2E61EBDF UNDEFINED

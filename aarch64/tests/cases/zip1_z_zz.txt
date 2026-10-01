@@ -1,0 +1,72 @@
+// zip1_z_zz_ 000|0010|1|size=xx|1|Zm=xxxxx|011|00|H=0|Zn=xxxxx|Zd=xxxxx
+// Zip1ZZz: ZIP1  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+053E617B zip1 z27.b, z11.b, z30.b
+056663DF zip1 z31.h, z30.h, z6.h
+05EA6225 zip1 z5.d, z17.d, z10.d
+05266139 zip1 z25.b, z9.b, z6.b
+05A060A4 zip1 z4.s, z5.s, z0.s
+05A960D9 zip1 z25.s, z6.s, z9.s
+053B638C zip1 z12.b, z28.b, z27.b
+056F638D zip1 z13.h, z28.h, z15.h
+057B6281 zip1 z1.h, z20.h, z27.h
+05F1628E zip1 z14.d, z20.d, z17.d
+05B861C4 zip1 z4.s, z14.s, z24.s
+057860D1 zip1 z17.h, z6.h, z24.h
+052362A6 zip1 z6.b, z21.b, z3.b
+0532601D zip1 z29.b, z0.b, z18.b
+05A060D5 zip1 z21.s, z6.s, z0.s
+05F26130 zip1 z16.d, z9.d, z18.d
+053F63E0 zip1 z0.b, z31.b, z31.b
+053E617E zip1 z30.b, z11.b, z30.b
+053E616B zip1 z11.b, z11.b, z30.b
+
+// zip1_z_zz_q 000|0010|11|0|1|Zm=xxxxx|000|opc=00|H=0|Zn=xxxxx|Zd=xxxxx
+// Zip1ZZzQ: ZIP1  <Zd>.Q, <Zn>.Q, <Zm>.Q
+// register fields: Zm, Zn, Zd
+05A900A3 zip1 z3.q, z5.q, z9.q
+05A702CA zip1 z10.q, z22.q, z7.q
+05BC0041 zip1 z1.q, z2.q, z28.q
+05A4015F zip1 z31.q, z10.q, z4.q
+05BD004A zip1 z10.q, z2.q, z29.q
+05B50287 zip1 z7.q, z20.q, z21.q
+05BB0279 zip1 z25.q, z19.q, z27.q
+05B400F3 zip1 z19.q, z7.q, z20.q
+05A00000 zip1 z0.q, z0.q, z0.q
+05BF03E3 zip1 z3.q, z31.q, z31.q
+
+// zip2_z_zz_ 000|0010|1|size=xx|1|Zm=xxxxx|011|00|H=1|Zn=xxxxx|Zd=xxxxx
+// Zip2ZZz: ZIP2  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+05B96666 zip2 z6.s, z19.s, z25.s
+05A66494 zip2 z20.s, z4.s, z6.s
+053E65AF zip2 z15.b, z13.b, z30.b
+05606653 zip2 z19.h, z18.h, z0.h
+053265D6 zip2 z22.b, z14.b, z18.b
+05296720 zip2 z0.b, z25.b, z9.b
+05E06411 zip2 z17.d, z0.d, z0.d
+056B64DB zip2 z27.h, z6.h, z11.h
+053C65C5 zip2 z5.b, z14.b, z28.b
+0575644F zip2 z15.h, z2.h, z21.h
+05EE64E2 zip2 z2.d, z7.d, z14.d
+053366BD zip2 z29.b, z21.b, z19.b
+05B3660E zip2 z14.s, z16.s, z19.s
+053965BB zip2 z27.b, z13.b, z25.b
+056664A1 zip2 z1.h, z5.h, z6.h
+05AB6761 zip2 z1.s, z27.s, z11.s
+05BF67FF zip2 z31.s, z31.s, z31.s
+
+// zip2_z_zz_q 000|0010|11|0|1|Zm=xxxxx|000|opc=00|H=1|Zn=xxxxx|Zd=xxxxx
+// Zip2ZZzQ: ZIP2  <Zd>.Q, <Zn>.Q, <Zm>.Q
+// register fields: Zm, Zn, Zd
+05A3065F zip2 z31.q, z18.q, z3.q
+05A30579 zip2 z25.q, z11.q, z3.q
+05AD0425 zip2 z5.q, z1.q, z13.q
+05A105AF zip2 z15.q, z13.q, z1.q
+05B805D4 zip2 z20.q, z14.q, z24.q
+05B50420 zip2 z0.q, z1.q, z21.q
+05B00477 zip2 z23.q, z3.q, z16.q
+05B10415 zip2 z21.q, z0.q, z17.q
+05A007FF zip2 z31.q, z31.q, z0.q
+05BF065F zip2 z31.q, z18.q, z31.q
+05A3047F zip2 z31.q, z3.q, z3.q

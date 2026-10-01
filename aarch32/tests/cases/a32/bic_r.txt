@@ -1,0 +1,89 @@
+// BIC_r_A1 cond=xxxx|00011|opc=10|S=0|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// BicRA1: BIC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+91c2f90b bicls pc, r2, r11, lsl #18
+41c244ab bicmi r4, r2, r11, lsr #9
+01cccf4d biceq r12, r12, sp, asr #30
+41cd5e04 bicmi r5, sp, r4, lsl #28
+61c4c526 bicvs r12, r4, r6, lsr #10
+a1ca4185 bicge r4, r10, r5, lsl #3
+b1cbce49 biclt r12, r11, r9, asr #28
+b1c4e561 biclt lr, r4, r1, ror #10
+// Binary Ninja's tests
+e1c13022 bic r3, r1, r2, lsr #32
+e1c13042 bic r3, r1, r2, asr #32
+e1c1a006 bic r10, r1, r6
+e1c1a506 bic r10, r1, r6, lsl #10
+e1c1a526 bic r10, r1, r6, lsr #10
+e1c1a546 bic r10, r1, r6, asr #10
+e1c1a566 bic r10, r1, r6, ror #10
+e1c21003 bic r1, r2, r3
+e1c22003 bic r2, r2, r3
+e1caa001 bic r10, r10, r1
+e1caa501 bic r10, r10, r1, lsl #10
+e1caa521 bic r10, r10, r1, lsr #10
+e1caa541 bic r10, r10, r1, asr #10
+e1caa561 bic r10, r10, r1, ror #10
+F1C2F90B UNALLOCATED
+81C00F80 bichi r0, r0, r0, lsl #0x1f
+21CFF80F biccs pc, pc, pc, lsl #0x10
+11C2F402 bicne pc, r2, r2, lsl #0x8
+91C2F20F bicls pc, r2, pc, lsl #0x4
+91C2F10B bicls pc, r2, r11, lsl #0x2
+91C2F08B bicls pc, r2, r11, lsl #0x1
+
+// BIC_r_A1_RRX cond=xxxx|00011|opc=10|S=0|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// BicRA1Rrx: BIC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+61cdc066 bicvs r12, sp, r6, rrx
+a1ce106f bicge r1, lr, pc, rrx
+01cde06b biceq lr, sp, r11, rrx
+21c7d067 bichs sp, r7, r7, rrx
+11c6706c bicne r7, r6, r12, rrx
+b1cd7068 biclt r7, sp, r8, rrx
+11c68063 bicne r8, r6, r3, rrx
+a1c5f065 bicge pc, r5, r5, rrx
+// Binary Ninja's tests
+e1c1a066 bic r10, r1, r6, rrx
+e1caa061 bic r10, r10, r1, rrx
+F1CDC066 UNALLOCATED
+81C00060 bichi r0, r0, r0, rrx
+41CFC06C bicmi r12, pc, r12, rrx
+
+// BICS_r_A1 cond=xxxx|00011|opc=10|S=1|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// BicsRA1: BICS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+31db962b bicslo r9, r11, r11, lsr #12
+41da1c6d bicsmi r1, r10, sp, ror #24
+31de304c bicslo r3, lr, r12, asr #32
+31d8a04c bicslo r10, r8, r12, asr #32
+21dedacf bicshs sp, lr, pc, asr #21
+71def7ad bicsvc pc, lr, sp, lsr #15
+d1dc3860 bicsle r3, r12, r0, ror #16
+51ddbcab bicspl r11, sp, r11, lsr #25
+// Binary Ninja's tests
+01d22003 bicseq r2, r2, r3
+e1d21003 bics r1, r2, r3
+F1DB962B UNALLOCATED
+81D00FAB bicshi r0, r0, r11, lsr #0x1f
+11DF942B bicsne r9, pc, r11, lsr #0x8
+31DB922B bicscc r9, r11, r11, lsr #0x4
+31DB912B bicscc r9, r11, r11, lsr #0x2
+31DB90AB bicscc r9, r11, r11, lsr #0x1
+
+// BICS_r_A1_RRX cond=xxxx|00011|opc=10|S=1|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// BicsRA1Rrx: BICS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+31d7f06e bicslo pc, r7, lr, rrx
+a1d3006f bicsge r0, r3, pc, rrx
+71d6506b bicsvc r5, r6, r11, rrx
+61d1a064 bicsvs r10, r1, r4, rrx
+81d7b066 bicshi r11, r7, r6, rrx
+21dbd06a bicshs sp, r11, r10, rrx
+d1daf064 bicsle pc, r10, r4, rrx
+31d2a068 bicslo r10, r2, r8, rrx
+01D0F060 bicseq pc, r0, r0, rrx
+F1D7F06E UNALLOCATED
+41DFF06F bicsmi pc, pc, pc, rrx
+11D7706E bicsne r7, r7, lr, rrx
+31D7F067 bicscc pc, r7, r7, rrx

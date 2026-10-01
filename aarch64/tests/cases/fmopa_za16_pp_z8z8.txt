@@ -1,0 +1,16 @@
+// fmopa_za16_pp_z8z8_8 1|00|0000|0|10|1|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|0|10|0|ZAda=x
+// FmopaZa16PpZ8z88: FMOPA  <ZAda>.H, <Pn>/M, <Pm>/M, <Zn>.B, <Zm>.B
+// register fields: Zm, Pm, Pn, Zn, ZAda
+80A00069 fmopa za1.h, p0/m, p0/m, z3.b, z0.b
+80A000A8 fmopa za0.h, p0/m, p0/m, z5.b, z0.b
+80A00149 fmopa za1.h, p0/m, p0/m, z10.b, z0.b
+80BF2409 fmopa za1.h, p1/m, p1/m, z0.b, z31.b
+80A04BE9 fmopa za1.h, p2/m, p2/m, z31.b, z0.b
+80A06C69 fmopa za1.h, p3/m, p3/m, z3.b, z0.b
+80A09069 fmopa za1.h, p4/m, p4/m, z3.b, z0.b
+80A0B469 fmopa za1.h, p5/m, p5/m, z3.b, z0.b
+80A0D869 fmopa za1.h, p6/m, p6/m, z3.b, z0.b
+80A0FC69 fmopa za1.h, p7/m, p7/m, z3.b, z0.b
+80A00009 fmopa za1.h, p0/m, p0/m, z0.b, z0.b
+80A00029 fmopa za1.h, p0/m, p0/m, z1.b, z0.b
+80A58C49 fmopa za1.h, p3/m, p4/m, z2.b, z5.b

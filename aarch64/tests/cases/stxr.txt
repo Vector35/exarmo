@@ -1,0 +1,64 @@
+// STXR_SR32_ldstexclr size=10|0010000|L=0|0|Rs=xxxxx|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// StxrSr32Ldstexclr: STXR  <Ws>, <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+88047F62 stxr w4, w2, [x27]
+88197CD5 stxr w25, w21, [x6]
+88147C47 stxr w20, w7, [x2]
+88077D94 stxr w7, w20, [x12]
+88037EAD stxr w3, w13, [x21]
+881C7C4F stxr w28, w15, [x2]
+88117D8E stxr w17, w14, [x12]
+88177DD6 stxr w23, w22, [x14]
+8814198B stxr w20, w11, [x12] (unpredictable)
+88095D63 stxr w9, w3, [x11] (unpredictable)
+88011154 stxr w1, w20, [x10] (unpredictable)
+88024063 stxr w2, w3, [x3] (unpredictable)
+88062912 stxr w6, w18, [x8] (unpredictable)
+88186998 stxr w24, w24, [x12] (unpredictable)
+881B14A0 stxr w27, w0, [x5] (unpredictable)
+880B26DF stxr w11, wzr, [x22] (unpredictable)
+880A0E66 stxr w10, w6, [x19] (unpredictable)
+880B53CF stxr w11, w15, [lr] (unpredictable)
+880E49EA stxr w14, w10, [x15] (unpredictable)
+880472EC stxr w4, w12, [x23] (unpredictable)
+880B08BC stxr w11, w28, [x5] (unpredictable)
+880A6FCD stxr w10, w13, [lr] (unpredictable)
+880120F5 stxr w1, w21, [x7] (unpredictable)
+8811137F stxr w17, wzr, [x27] (unpredictable)
+88000002 stxr w0, w2, [x0] (unpredictable)
+881F7FE2 stxr wzr, w2, [sp]
+88040762 stxr w4, w2, [x27] (unpredictable)
+
+// STXR_SR64_ldstexclr size=11|0010000|L=0|0|Rs=xxxxx|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// StxrSr64Ldstexclr: STXR  <Ws>, <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+C80B7FC1 stxr w11, x1, [lr]
+C8107D1C stxr w16, x28, [x8]
+C80A7F0A stxr w10, x10, [x24] (unpredictable)
+C8067DEE stxr w6, x14, [x15]
+C8017CA6 stxr w1, x6, [x5]
+C8017FE8 stxr w1, x8, [sp]
+C80E7C1C stxr w14, x28, [x0]
+C81C7E78 stxr w28, x24, [x19]
+C806455E stxr w6, lr, [x10] (unpredictable)
+C816760A stxr w22, x10, [x16] (unpredictable)
+C80D4326 stxr w13, x6, [x25] (unpredictable)
+C8197BFE stxr w25, lr, [sp] (unpredictable)
+C8120C9E stxr w18, lr, [x4] (unpredictable)
+C807461E stxr w7, lr, [x16] (unpredictable)
+C809763A stxr w9, x26, [x17] (unpredictable)
+C81D0950 stxr w29, x16, [x10] (unpredictable)
+C81E27A8 stxr w30, x8, [fp] (unpredictable)
+C81808ED stxr w24, x13, [x7] (unpredictable)
+C810441A stxr w16, x26, [x0] (unpredictable)
+C80B2549 stxr w11, x9, [x10] (unpredictable)
+C803066B stxr w3, x11, [x19] (unpredictable)
+C8064C74 stxr w6, x20, [x3] (unpredictable)
+C81E386E stxr w30, x14, [x3] (unpredictable)
+C80863A1 stxr w8, x1, [fp] (unpredictable)
+C80003C0 stxr w0, x0, [lr] (unpredictable)
+C81F7FDF stxr wzr, xzr, [lr] (unpredictable)
+C80B7D61 stxr w11, x1, [x11] (unpredictable)
+C80B7FDE stxr w11, lr, [lr]
+C80B23C1 stxr w11, x1, [lr] (unpredictable)
+C80B13C1 stxr w11, x1, [lr] (unpredictable)

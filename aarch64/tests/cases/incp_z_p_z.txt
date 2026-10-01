@@ -1,0 +1,21 @@
+// incp_z_p_z_ 001|0010|1|size=xx|101|1|op=0|D=0|1000|0|opc2=00|Pm=xxxx|Zdn=xxxxx
+// IncpZPZ: INCP  <Zdn>.<T>, <Pm>.<T>
+// register fields: Pm, Zdn
+25AC805E incp z30.s, p2.s
+25AC81AD incp z13.s, p13.s
+25EC8011 incp z17.d, p0.d
+25AC81AB incp z11.s, p13.s
+25EC808E incp z14.d, p4.d
+25AC8180 incp z0.s, p12.s
+25AC81CD incp z13.s, p14.s
+25AC8198 incp z24.s, p12.s
+25EC81A5 incp z5.d, p13.d
+25AC80C0 incp z0.s, p6.s
+256C8067 incp z7.h, p3.h
+256C80D5 incp z21.h, p6.h
+25AC8037 incp z23.s, p1.s
+25EC8197 incp z23.d, p12.d
+256C814B incp z11.h, p10.h
+256C8077 incp z23.h, p3.h
+25AC81FF incp z31.s, p15.s
+252C805E UNDEFINED

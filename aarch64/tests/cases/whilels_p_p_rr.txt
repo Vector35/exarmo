@@ -1,0 +1,27 @@
+// whilels_p_p_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|00|0|sf=x|U=1|lt=1|Rn=xxxxx|eq=1|Pd=xxxx
+// WhilelsPPRr: WHILELS  <Pd>.<T>, <n>, <m>
+// read together by <n>: sf, Rn
+// read together by <m>: Rm, sf
+// register fields: Rm, Rn, Pd
+25390C9C whilels p12.b, w4, w25
+25221CF4 whilels p4.b, x7, x2
+25F30DFF whilels p15.d, w15, w19
+25241CF9 whilels p9.b, x7, x4
+25281C72 whilels p2.b, x3, x8
+25AD0D71 whilels p1.s, w11, w13
+25671CB7 whilels p7.h, x5, x7
+25701D10 whilels p0.h, x8, x16
+25331FB1 whilels p1.b, fp, x19
+25240EFB whilels p11.b, w23, w4
+252F1C38 whilels p8.b, x1, x15
+25791E12 whilels p2.h, x16, x25
+25F81FFA whilels p10.d, xzr, x24
+256D1D92 whilels p2.h, x12, x13
+253D1DD8 whilels p8.b, x14, fp
+25E11D7D whilels p13.d, x11, x1
+25200C1C whilels p12.b, w0, w0
+253F0C9C whilels p12.b, w4, wzr
+25201C9C whilels p12.b, x4, x0
+253F1C9C whilels p12.b, x4, xzr
+25390FFC whilels p12.b, wzr, w25
+25391C1C whilels p12.b, x0, x25

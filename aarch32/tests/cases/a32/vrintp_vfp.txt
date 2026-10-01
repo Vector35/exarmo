@@ -1,0 +1,52 @@
+// VRINTP_vfp_A1_D 111111101|D=x|111|op1=0|RM=10|Vd=xxxx|10|size=11|op=0|1|M=x|0|Vm=xxxx
+// VrintpVfpA1D: VRINTP{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+febaeb4f vrintp.f64 d14, d15
+// Binary Ninja's tests
+feba3b44 vrintp.f64 d3, d4
+FEFA0B60 vrintp.f64 d16, d16
+FEBAFB48 vrintp.f64 d15, d8
+FEBA8B42 vrintp.f64 d8, d2
+FEBA4B41 vrintp.f64 d4, d1
+FEBA2B40 vrintp.f64 d2, d0
+FEBA1B60 vrintp.f64 d1, d16
+FEBA0B6F vrintp.f64 d0, d31
+FEBAFB4F vrintp.f64 d15, d15
+FEFA0B4F vrintp.f64 d16, d15
+FEFAFB4F vrintp.f64 d31, d15
+
+// VRINTP_vfp_A1_H 111111101|D=x|111|op1=0|RM=10|Vd=xxxx|10|size=01|op=0|1|M=x|0|Vm=xxxx
+// VrintpVfpA1H: VRINTP{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fefa9967 vrintp.f16 s19, s15
+febac96f vrintp.f16 s24, s31
+FEFA0940 vrintp.f16 s1, s0
+FEFAF968 vrintp.f16 s31, s17
+FEFA8964 vrintp.f16 s17, s9
+FEFA4962 vrintp.f16 s9, s5
+FEFA2961 vrintp.f16 s5, s3
+FEFA1940 vrintp.f16 s3, s0
+FEBA094F vrintp.f16 s0, s30
+FEBAF960 vrintp.f16 s30, s1
+FEFA0967 vrintp.f16 s1, s15
+FEFAF967 vrintp.f16 s31, s15
+
+// VRINTP_vfp_A1_S 111111101|D=x|111|op1=0|RM=10|Vd=xxxx|10|size=10|op=0|1|M=x|0|Vm=xxxx
+// VrintpVfpA1S: VRINTP{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fefa4a6a vrintp.f32 s9, s21
+fefa5a67 vrintp.f32 s11, s15
+fefa4a4b vrintp.f32 s9, s22
+// Binary Ninja's tests
+feba6a60 vrintp.f32 s12, s1
+FEFA0A6F vrintp.f32 s1, s31
+FEFAFA68 vrintp.f32 s31, s17
+FEFA8A64 vrintp.f32 s17, s9
+FEFA2A62 vrintp.f32 s5, s5
+FEFA1A61 vrintp.f32 s3, s3
+FEBA0A40 vrintp.f32 s0, s0
+FEBAFA4F vrintp.f32 s30, s30
+FEFAFA6A vrintp.f32 s31, s21

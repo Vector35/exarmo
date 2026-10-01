@@ -1,0 +1,17 @@
+// SHSAX_T1 111|11010|1|op1=110|Rn=xxxx|1111|Rd=xxxx|0|U=0|H=1|S=0|Rm=xxxx
+// ShsaxT1: SHSAX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fae5f32e shsax r3, r5, lr
+fae8fa24 shsax r10, r8, r4
+faecf226 shsax r2, r12, r6
+fae0f92f shsax r9, r0, pc (unpredictable)
+fae0f321 shsax r3, r0, r1
+faeef32a shsax r3, lr, r10
+fae6f32a shsax r3, r6, r10
+faebf724 shsax r7, r11, r4
+FAEFF020 shsax r0, pc, r0 (unpredictable)
+FAE5FF25 shsax pc, r5, r5 (unpredictable)
+FAE5F52E shsax r5, r5, lr
+FAE5F323 shsax r3, r5, r3
+FAE5F32E [ne] shsaxne r3, r5, lr

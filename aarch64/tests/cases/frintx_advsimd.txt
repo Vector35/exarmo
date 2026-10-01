@@ -1,0 +1,44 @@
+// FRINTX_asimdmisc_R 0|Q=x|U=1|0|111|0|o2=0|sz=x|10000|1100|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FrintxAsimdmiscR: FRINTX  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+2E2199CC frintx v12.2s, v14.2s
+6E619A63 frintx v3.2d, v19.2d
+6E219B59 frintx v25.4s, v26.4s
+2E2199E8 frintx v8.2s, v15.2s
+2E219810 frintx v16.2s, v0.2s
+2E219BA4 frintx v4.2s, v29.2s
+6E619A4D frintx v13.2d, v18.2d
+6E619BA1 frintx v1.2d, v29.2d
+6E219AF6 frintx v22.4s, v23.4s
+6E619AC0 frintx v0.2d, v22.2d
+6E21995B frintx v27.4s, v10.4s
+2E2198CE frintx v14.2s, v6.2s
+6E6199B2 frintx v18.2d, v13.2d
+2E21985A frintx v26.2s, v2.2s
+6E6198DE frintx v30.2d, v6.2d
+2E219A3E frintx v30.2s, v17.2s
+2E219BFF frintx v31.2s, v31.2s
+2E6199CC UNDEFINED
+
+// FRINTX_asimdmiscfp16_R 0|Q=x|U=1|0|111|0|o2=0|1111|00|1100|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FrintxAsimdmiscfp16R: FRINTX  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+6E799A05 frintx v5.8h, v16.8h
+6E799817 frintx v23.8h, v0.8h
+2E7998D8 frintx v24.4h, v6.4h
+6E799A5A frintx v26.8h, v18.8h
+2E799A79 frintx v25.4h, v19.4h
+6E799B68 frintx v8.8h, v27.8h
+2E799A25 frintx v5.4h, v17.4h
+6E79984F frintx v15.8h, v2.8h
+6E79996C frintx v12.8h, v11.8h
+2E799B51 frintx v17.4h, v26.4h
+6E799AD6 frintx v22.8h, v22.8h
+6E799B27 frintx v7.8h, v25.8h
+6E799AD5 frintx v21.8h, v22.8h
+6E7998EC frintx v12.8h, v7.8h
+6E799B44 frintx v4.8h, v26.8h
+6E799B85 frintx v5.8h, v28.8h
+6E799BE0 frintx v0.8h, v31.8h
+6E799A1F frintx v31.8h, v16.8h

@@ -1,0 +1,10 @@
+// SMMLA_asimdsame2_G 0|Q=1|U=0|0|111|0|size=10|0|Rm=xxxxx|1|010|B=0|1|Rn=xxxxx|Rd=xxxxx
+// SmmlaAsimdsame2G: SMMLA  <Vd>.4S, <Vn>.16B, <Vm>.16B
+// register fields: Rm, Rn, Rd
+4E80A404 smmla v4.4s, v0.16b, v0.16b
+4E80A40B smmla v11.4s, v0.16b, v0.16b
+4E80A412 smmla v18.4s, v0.16b, v0.16b
+4E9FA7E0 smmla v0.4s, v31.16b, v31.16b
+4E80A41F smmla v31.4s, v0.16b, v0.16b
+4E80A400 smmla v0.4s, v0.16b, v0.16b
+4E81A443 smmla v3.4s, v2.16b, v1.16b

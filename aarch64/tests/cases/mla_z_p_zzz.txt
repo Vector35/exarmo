@@ -1,0 +1,24 @@
+// mla_z_p_zzz_ 000|0010|0|size=xx|0|Zm=xxxxx|0|1|op=0|Pg=xxx|Zn=xxxxx|Zda=xxxxx
+// MlaZPZzz: MLA  <Zda>.<T>, <Pg>/M, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Pg, Zn, Zda
+04185317 mla z23.b, p4/m, z24.b, z24.b
+04484A4B mla z11.h, p2/m, z18.h, z8.h
+04C25781 mla z1.d, p5/m, z28.d, z2.d
+04125896 mla z22.b, p6/m, z4.b, z18.b
+0448529E mla z30.h, p4/m, z20.h, z8.h
+04C2520D mla z13.d, p4/m, z16.d, z2.d
+04104618 mla z24.b, p1/m, z16.b, z16.b
+04445E41 mla z1.h, p7/m, z18.h, z4.h
+04C94316 mla z22.d, p0/m, z24.d, z9.d
+045A5F3D mla z29.h, p7/m, z25.h, z26.h
+048E426F mla z15.s, p0/m, z19.s, z14.s
+04964ADF mla z31.s, p2/m, z22.s, z22.s
+04DA4744 mla z4.d, p1/m, z26.d, z26.d
+04594414 mla z20.h, p1/m, z0.h, z25.h
+045A4B6D mla z13.h, p2/m, z27.h, z26.h
+04935F70 mla z16.s, p7/m, z27.s, z19.s
+04004FE0 mla z0.b, p3/m, z31.b, z0.b
+041F5317 mla z23.b, p4/m, z24.b, z31.b
+04045318 mla z24.b, p4/m, z24.b, z4.b
+04185097 mla z23.b, p4/m, z4.b, z24.b
+04185304 mla z4.b, p4/m, z24.b, z24.b

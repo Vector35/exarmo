@@ -1,0 +1,133 @@
+// asrd_z_p_zi_ 000|0010|0|tszh=xx|0|0|opc=01|L=0|U=0|100|Pg=xxx|tszl=xx|imm3=xxx|Zdn=xxxxx
+// AsrdZPZi: ASRD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Pg, Zdn
+04048E16 asrd z22.h, p3/m, z22.h, #0x10
+04849C64 asrd z4.d, p7/m, z4.d, #0x3d
+040481A0 asrd z0.b, p0/m, z0.b, #0x3
+04C4895E asrd z30.d, p2/m, z30.d, #0x16
+04C48EEB asrd z11.d, p3/m, z11.d, #0x9
+04848C22 asrd z2.d, p3/m, z2.d, #0x3f
+04C48A8A asrd z10.d, p2/m, z10.d, #0xc
+04448930 asrd z16.s, p2/m, z16.s, #0x17
+04049B0D asrd z13.h, p6/m, z13.h, #0x8
+048482D7 asrd z23.d, p0/m, z23.d, #0x2a
+04C494CA asrd z10.d, p5/m, z10.d, #0x1a
+04049661 asrd z1.h, p5/m, z1.h, #0xd
+04449E94 asrd z20.s, p7/m, z20.s, #0xc
+048482A1 asrd z1.d, p0/m, z1.d, #0x2b
+0404876F asrd z15.h, p1/m, z15.h, #0x5
+044486B0 asrd z16.s, p1/m, z16.s, #0xb
+0404921F asrd z31.h, p4/m, z31.h, #0x10
+04048C16 UNDEFINED
+04048C36 UNDEFINED
+04048C56 UNDEFINED
+04048C76 UNDEFINED
+04048C96 UNDEFINED
+04048CB6 UNDEFINED
+04048CD6 UNDEFINED
+04048CF6 UNDEFINED
+04048D16 asrd z22.b, p3/m, z22.b, #0x8
+04048D36 asrd z22.b, p3/m, z22.b, #0x7
+04048D56 asrd z22.b, p3/m, z22.b, #0x6
+04048D76 asrd z22.b, p3/m, z22.b, #0x5
+04048D96 asrd z22.b, p3/m, z22.b, #0x4
+04048DD6 asrd z22.b, p3/m, z22.b, #0x2
+04048DF6 asrd z22.b, p3/m, z22.b, #0x1
+04048E36 asrd z22.h, p3/m, z22.h, #0xf
+04048E56 asrd z22.h, p3/m, z22.h, #0xe
+04048E96 asrd z22.h, p3/m, z22.h, #0xc
+04048EB6 asrd z22.h, p3/m, z22.h, #0xb
+04048ED6 asrd z22.h, p3/m, z22.h, #0xa
+04048EF6 asrd z22.h, p3/m, z22.h, #0x9
+04048F36 asrd z22.h, p3/m, z22.h, #0x7
+04048F56 asrd z22.h, p3/m, z22.h, #0x6
+04048F96 asrd z22.h, p3/m, z22.h, #0x4
+04048FB6 asrd z22.h, p3/m, z22.h, #0x3
+04048FD6 asrd z22.h, p3/m, z22.h, #0x2
+04048FF6 asrd z22.h, p3/m, z22.h, #0x1
+04448C16 asrd z22.s, p3/m, z22.s, #0x20
+04448C36 asrd z22.s, p3/m, z22.s, #0x1f
+04448C56 asrd z22.s, p3/m, z22.s, #0x1e
+04448C76 asrd z22.s, p3/m, z22.s, #0x1d
+04448C96 asrd z22.s, p3/m, z22.s, #0x1c
+04448CB6 asrd z22.s, p3/m, z22.s, #0x1b
+04448CD6 asrd z22.s, p3/m, z22.s, #0x1a
+04448CF6 asrd z22.s, p3/m, z22.s, #0x19
+04448D16 asrd z22.s, p3/m, z22.s, #0x18
+04448D56 asrd z22.s, p3/m, z22.s, #0x16
+04448D76 asrd z22.s, p3/m, z22.s, #0x15
+04448D96 asrd z22.s, p3/m, z22.s, #0x14
+04448DB6 asrd z22.s, p3/m, z22.s, #0x13
+04448DD6 asrd z22.s, p3/m, z22.s, #0x12
+04448DF6 asrd z22.s, p3/m, z22.s, #0x11
+04448E16 asrd z22.s, p3/m, z22.s, #0x10
+04448E36 asrd z22.s, p3/m, z22.s, #0xf
+04448E56 asrd z22.s, p3/m, z22.s, #0xe
+04448E76 asrd z22.s, p3/m, z22.s, #0xd
+04448ED6 asrd z22.s, p3/m, z22.s, #0xa
+04448EF6 asrd z22.s, p3/m, z22.s, #0x9
+04448F16 asrd z22.s, p3/m, z22.s, #0x8
+04448F36 asrd z22.s, p3/m, z22.s, #0x7
+04448F56 asrd z22.s, p3/m, z22.s, #0x6
+04448F76 asrd z22.s, p3/m, z22.s, #0x5
+04448F96 asrd z22.s, p3/m, z22.s, #0x4
+04448FB6 asrd z22.s, p3/m, z22.s, #0x3
+04448FD6 asrd z22.s, p3/m, z22.s, #0x2
+04448FF6 asrd z22.s, p3/m, z22.s, #0x1
+04848C16 asrd z22.d, p3/m, z22.d, #0x40
+04848C56 asrd z22.d, p3/m, z22.d, #0x3e
+04848C96 asrd z22.d, p3/m, z22.d, #0x3c
+04848CB6 asrd z22.d, p3/m, z22.d, #0x3b
+04848CD6 asrd z22.d, p3/m, z22.d, #0x3a
+04848CF6 asrd z22.d, p3/m, z22.d, #0x39
+04848D16 asrd z22.d, p3/m, z22.d, #0x38
+04848D36 asrd z22.d, p3/m, z22.d, #0x37
+04848D56 asrd z22.d, p3/m, z22.d, #0x36
+04848D76 asrd z22.d, p3/m, z22.d, #0x35
+04848D96 asrd z22.d, p3/m, z22.d, #0x34
+04848DB6 asrd z22.d, p3/m, z22.d, #0x33
+04848DD6 asrd z22.d, p3/m, z22.d, #0x32
+04848DF6 asrd z22.d, p3/m, z22.d, #0x31
+04848E16 asrd z22.d, p3/m, z22.d, #0x30
+04848E36 asrd z22.d, p3/m, z22.d, #0x2f
+04848E56 asrd z22.d, p3/m, z22.d, #0x2e
+04848E76 asrd z22.d, p3/m, z22.d, #0x2d
+04848E96 asrd z22.d, p3/m, z22.d, #0x2c
+04848EF6 asrd z22.d, p3/m, z22.d, #0x29
+04848F16 asrd z22.d, p3/m, z22.d, #0x28
+04848F36 asrd z22.d, p3/m, z22.d, #0x27
+04848F56 asrd z22.d, p3/m, z22.d, #0x26
+04848F76 asrd z22.d, p3/m, z22.d, #0x25
+04848F96 asrd z22.d, p3/m, z22.d, #0x24
+04848FB6 asrd z22.d, p3/m, z22.d, #0x23
+04848FD6 asrd z22.d, p3/m, z22.d, #0x22
+04848FF6 asrd z22.d, p3/m, z22.d, #0x21
+04C48C16 asrd z22.d, p3/m, z22.d, #0x20
+04C48C36 asrd z22.d, p3/m, z22.d, #0x1f
+04C48C56 asrd z22.d, p3/m, z22.d, #0x1e
+04C48C76 asrd z22.d, p3/m, z22.d, #0x1d
+04C48C96 asrd z22.d, p3/m, z22.d, #0x1c
+04C48CB6 asrd z22.d, p3/m, z22.d, #0x1b
+04C48CF6 asrd z22.d, p3/m, z22.d, #0x19
+04C48D16 asrd z22.d, p3/m, z22.d, #0x18
+04C48D36 asrd z22.d, p3/m, z22.d, #0x17
+04C48D76 asrd z22.d, p3/m, z22.d, #0x15
+04C48D96 asrd z22.d, p3/m, z22.d, #0x14
+04C48DB6 asrd z22.d, p3/m, z22.d, #0x13
+04C48DD6 asrd z22.d, p3/m, z22.d, #0x12
+04C48DF6 asrd z22.d, p3/m, z22.d, #0x11
+04C48E16 asrd z22.d, p3/m, z22.d, #0x10
+04C48E36 asrd z22.d, p3/m, z22.d, #0xf
+04C48E56 asrd z22.d, p3/m, z22.d, #0xe
+04C48E76 asrd z22.d, p3/m, z22.d, #0xd
+04C48EB6 asrd z22.d, p3/m, z22.d, #0xb
+04C48ED6 asrd z22.d, p3/m, z22.d, #0xa
+04C48F16 asrd z22.d, p3/m, z22.d, #0x8
+04C48F36 asrd z22.d, p3/m, z22.d, #0x7
+04C48F56 asrd z22.d, p3/m, z22.d, #0x6
+04C48F76 asrd z22.d, p3/m, z22.d, #0x5
+04C48F96 asrd z22.d, p3/m, z22.d, #0x4
+04C48FB6 asrd z22.d, p3/m, z22.d, #0x3
+04C48FD6 asrd z22.d, p3/m, z22.d, #0x2
+04C48FF6 asrd z22.d, p3/m, z22.d, #0x1

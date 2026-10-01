@@ -1,0 +1,19 @@
+// CLREX_A1 1111|0|1|01011|1|(1)(1)(1)(1)(1)(1)(1)(1)(0)(0)(0)(0)|opcode=0001|option=(1)(1)(1)(1)
+// ClrexA1: CLREX{<c>}{<q>}
+// Binary Ninja's tests
+f57ff01f clrex
+F5700010 clrex (unpredictable)
+F57FFF18 clrex (unpredictable)
+F5780014 clrex (unpredictable)
+F5740012 clrex (unpredictable)
+F5720011 clrex (unpredictable)
+F571001F clrex (unpredictable)
+F570801F clrex (unpredictable)
+F570401F clrex (unpredictable)
+F570201F clrex (unpredictable)
+F570101F clrex (unpredictable)
+F570081F clrex (unpredictable)
+F570041F clrex (unpredictable)
+F570021F clrex (unpredictable)
+F570011F clrex (unpredictable)
+F5700F1F clrex (unpredictable)

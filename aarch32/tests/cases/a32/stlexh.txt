@@ -1,0 +1,15 @@
+// STLEXH_A1 cond=xxxx|00|01|1|size=11|L=0|Rn=xxxx|Rd=xxxx|(1)(1)|ex=1|ord=0|1|00|1|Rt=xxxx
+// StlexhA1: STLEXH{<c>}{<q>}  <Rd>, <Rt>, [<Rn>]
+// register fields: Rn, Rd, Rt
+31ed7e96 stlexhlo r7, r6, [sp]
+b1edfe99 stlexhlt pc, r9, [sp] (unpredictable)
+// Binary Ninja's tests
+e1e52e9f stlexh r2, pc, [r5] (unpredictable)
+e1e54e92 stlexh r4, r2, [r5]
+e1e9ce9f stlexh r12, pc, [r9] (unpredictable)
+01E00290 stlexheq r0, r0, [r0] (unpredictable)
+F1ED7E96 UNALLOCATED
+81EF7697 stlexhhi r7, r7, [pc] (unpredictable)
+41EDDA96 stlexhmi sp, r6, [sp] (unpredictable)
+21ED7E9D stlexhcs r7, sp, [sp]
+11ED7E96 stlexhne r7, r6, [sp]

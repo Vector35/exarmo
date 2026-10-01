@@ -1,0 +1,45 @@
+// VMLS_i_T1_D 111|op=1|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1001|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VmlsIT1D: VMLS{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff2a6900 vmls.i32 d6, d10, d0
+ff536901 vmls.i16 d22, d3, d1
+ff1b8901 vmls.i16 d8, d11, d1
+ff66c9a7 vmls.i32 d28, d22, d23
+ff6c0904 vmls.i32 d16, d12, d4
+ff63b98c vmls.i32 d27, d19, d12
+ff02b980 vmls.i8 d11, d18, d0
+ff0fa925 vmls.i8 d10, d15, d21
+FF3A6900 UNDEFINED
+FF20F90F vmls.i32 d15, d0, d15
+FF284908 vmls.i32 d4, d8, d8
+FF242902 vmls.i32 d2, d4, d2
+FF21190F vmls.i32 d1, d1, d15
+FF200920 vmls.i32 d0, d0, d16
+FF20F9AF vmls.i32 d15, d16, d31
+FF6FF980 vmls.i32 d31, d31, d0
+FF2A6900 [ne] vmlsne.i32 d6, d10, d0
+
+// VMLS_i_T1_Q 111|op=1|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1001|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VmlsIT1Q: VMLS{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff2049e0 vmls.i32 q2, q8, q8
+ff68a9e2 vmls.i32 q13, q12, q9
+ff6a6966 vmls.i32 q11, q5, q11
+ff1e094c vmls.i16 q0, q7, q6
+ff520964 vmls.i16 q8, q1, q10
+ff4649cc vmls.i8 q10, q11, q6
+ff1009e6 vmls.i16 q0, q8, q11
+ff6e4946 vmls.i32 q10, q7, q3
+FF3FF9EF UNDEFINED
+FF2489E8 vmls.i32 q4, q10, q12
+FF2119E1 UNDEFINED
+FF202940 vmls.i32 q1, q0, q0
+FF2FF94F UNDEFINED
+FF6FF9EF UNDEFINED
+FF2049E0 [ne] vmlsne.i32 q2, q8, q8

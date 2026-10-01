@@ -1,0 +1,90 @@
+// RSB_i_A1 cond=xxxx|0010|opc=011|S=0|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// RsbIA1: RSB{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+b26165e0 rsblt r6, r1, #939524096
+42619d70 rsbmi r9, r1, #7168
+d2617334 rsble r7, r1, #3489660928
+926d26fd rsbls r2, sp, #265289728
+626a421b rsbvs r4, r10, #2952790017
+226ad8b4 rsbhs sp, r10, #11796480
+326b2496 rsblo r2, r11, #2516582400
+a2696206 rsbge r6, r9, #1610612736
+// Binary Ninja's tests
+e2654a0f rsb r4, r5, #61440
+e2655a0f rsb r5, r5, #61440
+e2685000 rsb r5, r8, #0
+02600FFF rsbeq r0, r0, #0x3fc
+F26165E0 UNDEFINED
+826FF800 rsbhi pc, pc, #0x0
+12616400 rsbne r6, r1, #0x0
+B2616200 rsblt r6, r1, #0x0
+B2616100 rsblt r6, r1, #0x0
+B2616080 rsblt r6, r1, #0x80
+B2616040 rsblt r6, r1, #0x40
+B2616020 rsblt r6, r1, #0x20
+B2616010 rsblt r6, r1, #0x10
+B2616008 rsblt r6, r1, #0x8
+B2616004 rsblt r6, r1, #0x4
+B2616002 rsblt r6, r1, #0x2
+B2616001 rsblt r6, r1, #0x1
+B2616081 rsblt r6, r1, #0x81
+B2616181 rsblt r6, r1, #0x40000020
+B2616281 rsblt r6, r1, #0x10000008
+B2616381 rsblt r6, r1, #0x4000002
+B2616481 rsblt r6, r1, #0x81000000
+B2616581 rsblt r6, r1, #0x20400000
+B2616681 rsblt r6, r1, #0x8100000
+B2616781 rsblt r6, r1, #0x2040000
+B2616881 rsblt r6, r1, #0x810000
+B2616981 rsblt r6, r1, #0x204000
+B2616A81 rsblt r6, r1, #0x81000
+B2616B81 rsblt r6, r1, #0x20400
+B2616C81 rsblt r6, r1, #0x8100
+B2616D81 rsblt r6, r1, #0x2040
+B2616E81 rsblt r6, r1, #0x810
+B2616F81 rsblt r6, r1, #0x204
+
+// RSBS_i_A1 cond=xxxx|0010|opc=011|S=1|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// RsbsIA1: RSBS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+22717eef rsbshs r7, r1, #3824
+d272966b rsbsle r9, r2, #112197632
+827015ca rsbshi r1, r0, #847249408
+d278dfbd rsbsle sp, r8, #756
+327e4110 rsbslo r4, lr, #4
+3275c1d1 rsbslo r12, r5, #1073741876
+7275ed7c rsbsvc lr, r5, #7936
+c2744cb7 rsbsgt r4, r4, #46848
+027F0000 rsbseq r0, pc, #0x0
+F2717EEF UNALLOCATED
+4271FFFF rsbsmi pc, r1, #0x3fc
+12717800 rsbsne r7, r1, #0x0
+22717400 rsbscs r7, r1, #0x0
+22717200 rsbscs r7, r1, #0x0
+22717100 rsbscs r7, r1, #0x0
+22717080 rsbscs r7, r1, #0x80
+22717040 rsbscs r7, r1, #0x40
+22717020 rsbscs r7, r1, #0x20
+22717010 rsbscs r7, r1, #0x10
+22717008 rsbscs r7, r1, #0x8
+22717004 rsbscs r7, r1, #0x4
+22717002 rsbscs r7, r1, #0x2
+22717001 rsbscs r7, r1, #0x1
+22717081 rsbscs r7, r1, #0x81
+22717181 rsbscs r7, r1, #0x40000020
+22717281 rsbscs r7, r1, #0x10000008
+22717381 rsbscs r7, r1, #0x4000002
+22717481 rsbscs r7, r1, #0x81000000
+22717581 rsbscs r7, r1, #0x20400000
+22717681 rsbscs r7, r1, #0x8100000
+22717781 rsbscs r7, r1, #0x2040000
+22717881 rsbscs r7, r1, #0x810000
+22717981 rsbscs r7, r1, #0x204000
+22717A81 rsbscs r7, r1, #0x81000
+22717B81 rsbscs r7, r1, #0x20400
+22717C81 rsbscs r7, r1, #0x8100
+22717D81 rsbscs r7, r1, #0x2040
+22717E81 rsbscs r7, r1, #0x810
+22717F81 rsbscs r7, r1, #0x204

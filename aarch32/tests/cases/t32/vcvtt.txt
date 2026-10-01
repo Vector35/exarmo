@@ -1,0 +1,88 @@
+// VCVTT_T1_DH 111011101|D=x|11|o1=0|01|op=0|Vd=xxxx|101|sz=1|T=1|1|M=x|0|Vm=xxxx
+// VcvttT1Dh: VCVTT{<c>}{<q>}.F64.F16  <Dd>, <Sm>
+// read together by <Dd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef20be7 vcvtt.f64.f16 d16, s15
+eeb26be5 vcvtt.f64.f16 d6, s11
+eeb20be9 vcvtt.f64.f16 d0, s19
+eef23be2 vcvtt.f64.f16 d19, s5
+eef2dbc4 vcvtt.f64.f16 d29, s8
+eeb29bcd vcvtt.f64.f16 d9, s26
+eef2dbe0 vcvtt.f64.f16 d29, s1
+eeb28be5 vcvtt.f64.f16 d8, s11
+EEF2FBEF vcvtt.f64.f16 d31, s31
+EEF24BE8 vcvtt.f64.f16 d20, s17
+EEF22BE1 vcvtt.f64.f16 d18, s3
+EEF21BC0 vcvtt.f64.f16 d17, s0
+EEB2FBCF vcvtt.f64.f16 d15, s30
+EEF20BE7 [ne] vcvttne.f64.f16 d16, s15
+
+// VCVTT_T1_HD 111011101|D=x|11|o1=0|01|op=1|Vd=xxxx|101|sz=1|T=1|1|M=x|0|Vm=xxxx
+// VcvttT1Hd: VCVTT{<c>}{<q>}.F16.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eef37be6 vcvtt.f16.f64 s15, d22
+eeb31be7 vcvtt.f16.f64 s2, d23
+eef3ebc7 vcvtt.f16.f64 s29, d7
+eef3ebe5 vcvtt.f16.f64 s29, d21
+eeb34bee vcvtt.f16.f64 s8, d30
+eeb3abc2 vcvtt.f16.f64 s20, d2
+eeb30beb vcvtt.f16.f64 s0, d27
+eeb34be4 vcvtt.f16.f64 s8, d20
+EEF3FBE0 vcvtt.f16.f64 s31, d16
+EEF38BEF vcvtt.f16.f64 s17, d31
+EEF32BE8 vcvtt.f16.f64 s5, d24
+EEB3FBE1 vcvtt.f16.f64 s30, d17
+EEF30BC0 vcvtt.f16.f64 s1, d0
+EEF3FBCF vcvtt.f16.f64 s31, d15
+EEF37BE0 vcvtt.f16.f64 s15, d16
+EEF37BEF vcvtt.f16.f64 s15, d31
+EEF37BE6 [ne] vcvttne.f16.f64 s15, d22
+
+// VCVTT_T1_HS 111011101|D=x|11|o1=0|01|op=1|Vd=xxxx|101|sz=0|T=1|1|M=x|0|Vm=xxxx
+// VcvttT1Hs: VCVTT{<c>}{<q>}.F16.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeb37ac4 vcvtt.f16.f32 s14, s8
+eef32ac1 vcvtt.f16.f32 s5, s2
+eef31ac5 vcvtt.f16.f32 s3, s10
+eeb38aed vcvtt.f16.f32 s16, s27
+eef3fac9 vcvtt.f16.f32 s31, s18
+eeb38aca vcvtt.f16.f32 s16, s20
+eef3dacd vcvtt.f16.f32 s27, s26
+eeb37ac6 vcvtt.f16.f32 s14, s12
+EEB30AC0 vcvtt.f16.f32 s0, s0
+EEB34ACF vcvtt.f16.f32 s8, s30
+EEB30AC8 vcvtt.f16.f32 s0, s16
+EEB3FAC2 vcvtt.f16.f32 s30, s4
+EEF30AC0 vcvtt.f16.f32 s1, s0
+EEB37ACF vcvtt.f16.f32 s14, s30
+EEB37AE0 vcvtt.f16.f32 s14, s1
+EEB37AEF vcvtt.f16.f32 s14, s31
+EEB37AC4 [ne] vcvttne.f16.f32 s14, s8
+
+// VCVTT_T1_SH 111011101|D=x|11|o1=0|01|op=0|Vd=xxxx|101|sz=0|T=1|1|M=x|0|Vm=xxxx
+// VcvttT1Sh: VCVTT{<c>}{<q>}.F32.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeb25ae6 vcvtt.f32.f16 s10, s13
+eeb27ac0 vcvtt.f32.f16 s14, s0
+eeb2aacb vcvtt.f32.f16 s20, s22
+eeb2baea vcvtt.f32.f16 s22, s21
+eeb2bae5 vcvtt.f32.f16 s22, s11
+eef20aeb vcvtt.f32.f16 s1, s23
+eef2bae9 vcvtt.f32.f16 s23, s19
+eef2dacf vcvtt.f32.f16 s27, s30
+EEB2FAE8 vcvtt.f32.f16 s30, s17
+EEB28AE4 vcvtt.f32.f16 s16, s9
+EEB24AE2 vcvtt.f32.f16 s8, s5
+EEB22AE1 vcvtt.f32.f16 s4, s3
+EEB21AE0 vcvtt.f32.f16 s2, s1
+EEB20AEF vcvtt.f32.f16 s0, s31
+EEB2FAE6 vcvtt.f32.f16 s30, s13
+EEF2FAE6 vcvtt.f32.f16 s31, s13
+EEB25AE6 [ne] vcvttne.f32.f16 s10, s13

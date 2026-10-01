@@ -1,0 +1,43 @@
+// EOR_rr_A1 cond=xxxx|0000|opc=001|S=0|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// EorRrA1: EOR{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+602eb471 eorvs r11, lr, r1, ror r4
+d026b516 eorle r11, r6, r6, lsl r5
+b02e171f eorlt r1, lr, pc, lsl r7 (unpredictable)
+d02db619 eorle r11, sp, r9, lsl r6
+302e137e eorlo r1, lr, lr, ror r3
+202c631a eorhs r6, r12, r10, lsl r3
+d02a143b eorle r1, r10, r11, lsr r4
+702b4652 eorvc r4, r11, r2, asr r6
+// Binary Ninja's tests
+e0266917 eor r6, r6, r7, lsl r9
+e0266937 eor r6, r6, r7, lsr r9
+e0266957 eor r6, r6, r7, asr r9
+e0266977 eor r6, r6, r7, ror r9
+e0276918 eor r6, r7, r8, lsl r9
+e0276938 eor r6, r7, r8, lsr r9
+e0276958 eor r6, r7, r8, asr r9
+e0276978 eor r6, r7, r8, ror r9
+00200070 eoreq r0, r0, r0, ror r0
+F02EB471 UNALLOCATED
+802FFF71 eorhi pc, pc, r1, ror pc (unpredictable)
+402EBE7B eormi r11, lr, r11, ror lr
+102EBB71 eorne r11, lr, r1, ror r11
+602EB474 eorvs r11, lr, r4, ror r4
+
+// EORS_rr_A1 cond=xxxx|0000|opc=001|S=1|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// EorsRrA1: EORS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+003a4310 eorseq r4, r10, r0, lsl r3
+803f5075 eorshi r5, pc, r5, ror r0 (unpredictable)
+103fcd36 eorsne r12, pc, r6, lsr sp (unpredictable)
+70379e74 eorsvc r9, r7, r4, ror lr
+6035165b eorsvs r1, r5, r11, asr r6
+2034d650 eorshs sp, r4, r0, asr r6
+303ff533 eorslo pc, pc, r3, lsr r5 (unpredictable)
+203f7918 eorshs r7, pc, r8, lsl r9 (unpredictable)
+F03A4310 UNALLOCATED
+40300F1F eorsmi r0, r0, pc, lsl pc (unpredictable)
+003A4A10 eorseq r4, r10, r0, lsl r10
+003A441A eorseq r4, r10, r10, lsl r4
+003A4313 eorseq r4, r10, r3, lsl r3

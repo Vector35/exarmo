@@ -1,0 +1,19 @@
+// sqxtunt_z_zz_ 010|0010|1|0|tszh=x|1|tszl=xx|00|0|0|10|opc=10|T=1|Zn=xxxxx|Zd=xxxxx
+// SqxtuntZZz: SQXTUNT  <Zd>.<T>, <Zn>.<Tb>
+// read together by <T> and <Tb>: tszh, tszl
+// register fields: Zn, Zd
+452854EC sqxtunt z12.b, z7.h
+45605601 sqxtunt z1.s, z16.d
+45305565 sqxtunt z5.h, z11.s
+45285424 sqxtunt z4.b, z1.h
+4560559B sqxtunt z27.s, z12.d
+45305595 sqxtunt z21.h, z12.s
+45285613 sqxtunt z19.b, z16.h
+45605757 sqxtunt z23.s, z26.d
+45285400 sqxtunt z0.b, z0.h
+452857FF sqxtunt z31.b, z31.h
+453854EC UNDEFINED
+452054EC UNDEFINED
+456854EC UNDEFINED
+457054EC UNDEFINED
+457854EC UNDEFINED

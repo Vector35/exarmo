@@ -1,0 +1,19 @@
+// rdffr_p_f_ 001|0010|1|op=0|S=0|01|1001|11|110|00|0000|0|Pd=xxxx
+// RdffrPF: RDFFR  <Pd>.B
+// register fields: Pd
+2519F00E rdffr p14.b
+2519F008 rdffr p8.b
+2519F00F rdffr p15.b
+2519F000 rdffr p0.b
+2519F009 rdffr p9.b
+2519F00B rdffr p11.b
+2519F00D rdffr p13.b
+2519F006 rdffr p6.b
+2519F004 rdffr p4.b
+2519F002 rdffr p2.b
+2519F00A rdffr p10.b
+2519F007 rdffr p7.b
+2519F005 rdffr p5.b
+2519F00C rdffr p12.b
+2519F001 rdffr p1.b
+2519F003 rdffr p3.b

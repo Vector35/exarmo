@@ -1,0 +1,44 @@
+// trn1_p_pp_ 000|0010|1|size=xx|1|0|Pm=xxxx|010|opc=10|H=0|0|Pn=xxxx|0|Pd=xxxx
+// Trn1PPp: TRN1  <Pd>.<T>, <Pn>.<T>, <Pm>.<T>
+// register fields: Pm, Pn, Pd
+05215185 trn1 p5.b, p12.b, p1.b
+05EA5065 trn1 p5.d, p3.d, p10.d
+05EF50A1 trn1 p1.d, p5.d, p15.d
+05E751C5 trn1 p5.d, p14.d, p7.d
+056A5001 trn1 p1.h, p0.h, p10.h
+05AB512C trn1 p12.s, p9.s, p11.s
+0520510D trn1 p13.b, p8.b, p0.b
+052250C8 trn1 p8.b, p6.b, p2.b
+056851E7 trn1 p7.h, p15.h, p8.h
+05EA5160 trn1 p0.d, p11.d, p10.d
+056D50A4 trn1 p4.h, p5.h, p13.h
+05A451C7 trn1 p7.s, p14.s, p4.s
+05EE50C7 trn1 p7.d, p6.d, p14.d
+05665066 trn1 p6.h, p3.h, p6.h
+05AD5141 trn1 p1.s, p10.s, p13.s
+052E50A7 trn1 p7.b, p5.b, p14.b
+0521518F trn1 p15.b, p12.b, p1.b
+05215025 trn1 p5.b, p1.b, p1.b
+0521518C trn1 p12.b, p12.b, p1.b
+
+// trn2_p_pp_ 000|0010|1|size=xx|1|0|Pm=xxxx|010|opc=10|H=1|0|Pn=xxxx|0|Pd=xxxx
+// Trn2PPp: TRN2  <Pd>.<T>, <Pn>.<T>, <Pm>.<T>
+// register fields: Pm, Pn, Pd
+05665467 trn2 p7.h, p3.h, p6.h
+056D5409 trn2 p9.h, p0.h, p13.h
+0521548A trn2 p10.b, p4.b, p1.b
+05A75429 trn2 p9.s, p1.s, p7.s
+05E95487 trn2 p7.d, p4.d, p9.d
+05E15427 trn2 p7.d, p1.d, p1.d
+052B554A trn2 p10.b, p10.b, p11.b
+052D552E trn2 p14.b, p9.b, p13.b
+05A85506 trn2 p6.s, p8.s, p8.s
+05EE5506 trn2 p6.d, p8.d, p14.d
+05AE552B trn2 p11.s, p9.s, p14.s
+056655CC trn2 p12.h, p14.h, p6.h
+056055E6 trn2 p6.h, p15.h, p0.h
+05A9542F trn2 p15.s, p1.s, p9.s
+056E55C4 trn2 p4.h, p14.h, p14.h
+05A6550D trn2 p13.s, p8.s, p6.s
+056F5460 trn2 p0.h, p3.h, p15.h
+05665466 trn2 p6.h, p3.h, p6.h

@@ -1,0 +1,15 @@
+// ssublb_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|0|op=0|S=1|U=0|T=0|Zn=xxxxx|Zd=xxxxx
+// SsublbZZz: SSUBLB  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+4554115B ssublb z27.h, z10.b, z20.b
+45C111F2 ssublb z18.d, z15.s, z1.s
+455F118E ssublb z14.h, z12.b, z31.b
+45CF120F ssublb z15.d, z16.s, z15.s
+459F11C9 ssublb z9.s, z14.h, z31.h
+45D91276 ssublb z22.d, z19.s, z25.s
+45C011C8 ssublb z8.d, z14.s, z0.s
+45831353 ssublb z19.s, z26.h, z3.h
+45541000 ssublb z0.h, z0.b, z20.b
+455413FF ssublb z31.h, z31.b, z20.b
+4514115B UNDEFINED
+4554129B ssublb z27.h, z20.b, z20.b

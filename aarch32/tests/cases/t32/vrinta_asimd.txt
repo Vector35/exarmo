@@ -1,0 +1,37 @@
+// VRINTA_asimd_T1_D 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|01|op=010|Q=0|M=x|0|Vm=xxxx
+// VrintaAsimdT1D: VRINTA{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+fff6a509 vrinta.f16 d26, d9
+fff61503 vrinta.f16 d17, d3
+fff60521 vrinta.f16 d16, d17
+ffb6e520 vrinta.f16 d14, d16
+ffb66508 vrinta.f16 d6, d8
+fff6d500 vrinta.f16 d29, d0
+ffbae50f vrinta.f32 d14, d15
+fff6050d vrinta.f16 d16, d13
+FFF2A509 UNDEFINED
+FFFEA509 UNDEFINED
+FFF6F504 vrinta.f16 d31, d4
+FFF68502 vrinta.f16 d24, d2
+FFF6452F vrinta.f16 d20, d31
+FFF62509 vrinta.f16 d18, d9
+FFB60509 vrinta.f16 d0, d9
+FFB6F509 vrinta.f16 d15, d9
+FFF6F509 vrinta.f16 d31, d9
+
+// VRINTA_asimd_T1_Q 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|01|op=010|Q=1|M=x|0|Vm=xxxx
+// VrintaAsimdT1Q: VRINTA{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+ffbac562 vrinta.f32 q6, q9
+fffa8568 vrinta.f32 q12, q12
+FFB2F56F UNDEFINED
+FFB60540 vrinta.f16 q0, q0
+FFBE1561 UNDEFINED
+FFBA4564 vrinta.f32 q2, q10
+FFBA2540 vrinta.f32 q1, q0
+FFBA0560 vrinta.f32 q0, q8
+FFBAF54F UNDEFINED
+FFFA0562 vrinta.f32 q8, q9
+FFFAF56F UNDEFINED

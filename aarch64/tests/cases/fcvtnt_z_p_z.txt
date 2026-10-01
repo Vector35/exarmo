@@ -1,0 +1,59 @@
+// fcvtnt_z_p_z_d2s 011|0010|0|opc=11|0010|opc2=10|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FcvtntZPZD2s: FCVTNT  <Zd>.S, <Pg>/M, <Zn>.D
+// register fields: Pg, Zn, Zd
+64CAA004 fcvtnt z4.s, p0/m, z0.d
+64CAA00B fcvtnt z11.s, p0/m, z0.d
+64CAA012 fcvtnt z18.s, p0/m, z0.d
+64CAA7E0 fcvtnt z0.s, p1/m, z31.d
+64CAA81F fcvtnt z31.s, p2/m, z0.d
+64CAAC04 fcvtnt z4.s, p3/m, z0.d
+64CAB004 fcvtnt z4.s, p4/m, z0.d
+64CAB404 fcvtnt z4.s, p5/m, z0.d
+64CAB804 fcvtnt z4.s, p6/m, z0.d
+64CABC04 fcvtnt z4.s, p7/m, z0.d
+64CAA000 fcvtnt z0.s, p0/m, z0.d
+
+// fcvtnt_z_p_z_d2sz 011|0010|0|opc=11|0000|opc2=10|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FcvtntZPZD2sz: FCVTNT  <Zd>.S, <Pg>/Z, <Zn>.D
+// register fields: Pg, Zn, Zd
+64C2A006 fcvtnt z6.s, p0/z, z0.d
+64C2A00D fcvtnt z13.s, p0/z, z0.d
+64C2A014 fcvtnt z20.s, p0/z, z0.d
+64C2A7E0 fcvtnt z0.s, p1/z, z31.d
+64C2A81F fcvtnt z31.s, p2/z, z0.d
+64C2AC06 fcvtnt z6.s, p3/z, z0.d
+64C2B006 fcvtnt z6.s, p4/z, z0.d
+64C2B406 fcvtnt z6.s, p5/z, z0.d
+64C2B806 fcvtnt z6.s, p6/z, z0.d
+64C2BC06 fcvtnt z6.s, p7/z, z0.d
+64C2A000 fcvtnt z0.s, p0/z, z0.d
+
+// fcvtnt_z_p_z_s2h 011|0010|0|opc=10|0010|opc2=00|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FcvtntZPZS2h: FCVTNT  <Zd>.H, <Pg>/M, <Zn>.S
+// register fields: Pg, Zn, Zd
+6488A003 fcvtnt z3.h, p0/m, z0.s
+6488A00A fcvtnt z10.h, p0/m, z0.s
+6488A011 fcvtnt z17.h, p0/m, z0.s
+6488A7E0 fcvtnt z0.h, p1/m, z31.s
+6488A81F fcvtnt z31.h, p2/m, z0.s
+6488AC03 fcvtnt z3.h, p3/m, z0.s
+6488B003 fcvtnt z3.h, p4/m, z0.s
+6488B403 fcvtnt z3.h, p5/m, z0.s
+6488B803 fcvtnt z3.h, p6/m, z0.s
+6488BC03 fcvtnt z3.h, p7/m, z0.s
+6488A000 fcvtnt z0.h, p0/m, z0.s
+
+// fcvtnt_z_p_z_s2hz 011|0010|0|opc=10|0000|opc2=00|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FcvtntZPZS2hz: FCVTNT  <Zd>.H, <Pg>/Z, <Zn>.S
+// register fields: Pg, Zn, Zd
+6480A005 fcvtnt z5.h, p0/z, z0.s
+6480A00C fcvtnt z12.h, p0/z, z0.s
+6480A013 fcvtnt z19.h, p0/z, z0.s
+6480A7E0 fcvtnt z0.h, p1/z, z31.s
+6480A81F fcvtnt z31.h, p2/z, z0.s
+6480AC05 fcvtnt z5.h, p3/z, z0.s
+6480B005 fcvtnt z5.h, p4/z, z0.s
+6480B405 fcvtnt z5.h, p5/z, z0.s
+6480B805 fcvtnt z5.h, p6/z, z0.s
+6480BC05 fcvtnt z5.h, p7/z, z0.s
+6480A000 fcvtnt z0.h, p0/z, z0.s

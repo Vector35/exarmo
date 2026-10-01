@@ -1,0 +1,11 @@
+// ESB_T1 111|10|0|1110|10|(1)(1)(1)(1)|1|0(0)0|(0)|000|hint=0001|option=0000
+// EsbT1: ESB{<c>}{<q>}
+// IT state read: condition
+F3A08010 esb (unpredictable)
+F3AFA810 esb (unpredictable)
+F3A88010 esb (unpredictable)
+F3A48010 esb (unpredictable)
+F3A28010 esb (unpredictable)
+F3A18010 esb (unpredictable)
+F3A08010 [ne] esbne (unpredictable)
+F3AF8010 esb

@@ -1,0 +1,130 @@
+// FCVTAS_32D_float2int sf=0|0|S=0|11110|ftype=01|1|rmode=00|opcode=100|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtas32dFloat2int: FCVTAS  <Wd>, <Dn>
+// register fields: Rn, Rd
+1E64018E fcvtas w14, d12
+1E640380 fcvtas w0, d28
+1E6400F1 fcvtas w17, d7
+1E640277 fcvtas w23, d19
+1E640191 fcvtas w17, d12
+1E6402A8 fcvtas w8, d21
+1E640252 fcvtas w18, d18
+1E640202 fcvtas w2, d16
+1E64001C fcvtas w28, d0
+1E64035D fcvtas w29, d26
+1E640293 fcvtas w19, d20
+1E6402E8 fcvtas w8, d23
+1E6402BC fcvtas w28, d21
+1E640023 fcvtas w3, d1
+1E64031C fcvtas w28, d24
+1E6401A8 fcvtas w8, d13
+1E6403FF fcvtas wzr, d31
+
+// FCVTAS_32H_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=00|opcode=100|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtas32hFloat2int: FCVTAS  <Wd>, <Hn>
+// register fields: Rn, Rd
+1EE40349 fcvtas w9, h26
+1EE40320 fcvtas w0, h25
+1EE4022E fcvtas w14, h17
+1EE40260 fcvtas w0, h19
+1EE40217 fcvtas w23, h16
+1EE402BC fcvtas w28, h21
+1EE4013F fcvtas wzr, h9
+1EE400BA fcvtas w26, h5
+1EE40361 fcvtas w1, h27
+1EE40395 fcvtas w21, h28
+1EE4021E fcvtas w30, h16
+1EE403D0 fcvtas w16, h30
+1EE4039C fcvtas w28, h28
+1EE400FC fcvtas w28, h7
+1EE40134 fcvtas w20, h9
+1EE40265 fcvtas w5, h19
+1EE40009 fcvtas w9, h0
+1EE403E9 fcvtas w9, h31
+
+// FCVTAS_32S_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=00|opcode=100|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtas32sFloat2int: FCVTAS  <Wd>, <Sn>
+// register fields: Rn, Rd
+1E24029F fcvtas wzr, s20
+1E240271 fcvtas w17, s19
+1E240150 fcvtas w16, s10
+1E2402CC fcvtas w12, s22
+1E2401AD fcvtas w13, s13
+1E2403E9 fcvtas w9, s31
+1E240032 fcvtas w18, s1
+1E240142 fcvtas w2, s10
+1E2402AE fcvtas w14, s21
+1E2401E7 fcvtas w7, s15
+1E240057 fcvtas w23, s2
+1E24007D fcvtas w29, s3
+1E24018D fcvtas w13, s12
+1E240223 fcvtas w3, s17
+1E2400C4 fcvtas w4, s6
+1E24035D fcvtas w29, s26
+1E240000 fcvtas w0, s0
+
+// FCVTAS_64D_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=00|opcode=100|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtas64dFloat2int: FCVTAS  <Xd>, <Dn>
+// register fields: Rn, Rd
+9E64013B fcvtas x27, d9
+9E6401E8 fcvtas x8, d15
+9E64024E fcvtas x14, d18
+9E6400CD fcvtas x13, d6
+9E640081 fcvtas x1, d4
+9E6401B2 fcvtas x18, d13
+9E6402F3 fcvtas x19, d23
+9E640145 fcvtas x5, d10
+9E640330 fcvtas x16, d25
+9E6401C5 fcvtas x5, d14
+9E640353 fcvtas x19, d26
+9E64013E fcvtas lr, d9
+9E640125 fcvtas x5, d9
+9E640075 fcvtas x21, d3
+9E6402F8 fcvtas x24, d23
+9E64014D fcvtas x13, d10
+9E640000 fcvtas x0, d0
+9E6403FF fcvtas xzr, d31
+
+// FCVTAS_64H_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=00|opcode=100|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtas64hFloat2int: FCVTAS  <Xd>, <Hn>
+// register fields: Rn, Rd
+9EE401C2 fcvtas x2, h14
+9EE40363 fcvtas x3, h27
+9EE4026B fcvtas x11, h19
+9EE40247 fcvtas x7, h18
+9EE403D3 fcvtas x19, h30
+9EE40056 fcvtas x22, h2
+9EE4010F fcvtas x15, h8
+9EE403F5 fcvtas x21, h31
+9EE40028 fcvtas x8, h1
+9EE4026D fcvtas x13, h19
+9EE4003B fcvtas x27, h1
+9EE40058 fcvtas x24, h2
+9EE40083 fcvtas x3, h4
+9EE4035E fcvtas lr, h26
+9EE40189 fcvtas x9, h12
+9EE4012B fcvtas x11, h9
+9EE40000 fcvtas x0, h0
+9EE401DF fcvtas xzr, h14
+
+// FCVTAS_64S_float2int sf=1|0|S=0|11110|ftype=00|1|rmode=00|opcode=100|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtas64sFloat2int: FCVTAS  <Xd>, <Sn>
+// register fields: Rn, Rd
+9E2400FE fcvtas lr, s7
+9E24032F fcvtas x15, s25
+9E240283 fcvtas x3, s20
+9E240226 fcvtas x6, s17
+9E2401E4 fcvtas x4, s15
+9E2401B0 fcvtas x16, s13
+9E24027D fcvtas fp, s19
+9E240351 fcvtas x17, s26
+9E24002B fcvtas x11, s1
+9E240011 fcvtas x17, s0
+9E2402E5 fcvtas x5, s23
+9E2402A4 fcvtas x4, s21
+9E2400FA fcvtas x26, s7
+9E2402B1 fcvtas x17, s21
+9E2403DD fcvtas fp, s30
+9E2401D4 fcvtas x20, s14
+9E2403E0 fcvtas x0, s31
+9E2400FF fcvtas xzr, s7
+9E2400E7 fcvtas x7, s7

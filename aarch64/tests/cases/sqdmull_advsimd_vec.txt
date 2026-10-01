@@ -1,0 +1,73 @@
+// SQDMULL_asimddiff_L 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=1101|00|Rn=xxxxx|Rd=xxxxx
+// SqdmullAsimddiffL: SQDMULL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// SqdmullAsimddiffL2: SQDMULL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+0E6FD10E sqdmull v14.4s, v8.4h, v15.4h
+4EB3D067 sqdmull2 v7.2d, v3.4s, v19.4s
+0EA1D09F sqdmull v31.2d, v4.2s, v1.2s
+4EBCD221 sqdmull2 v1.2d, v17.4s, v28.4s
+4E74D2F0 sqdmull2 v16.4s, v23.8h, v20.8h
+0EAAD0E6 sqdmull v6.2d, v7.2s, v10.2s
+4EA7D094 sqdmull2 v20.2d, v4.4s, v7.4s
+0E7DD0AB sqdmull v11.4s, v5.4h, v29.4h
+4E72D130 sqdmull2 v16.4s, v9.8h, v18.8h
+4EA4D2D1 sqdmull2 v17.2d, v22.4s, v4.4s
+0EAFD304 sqdmull v4.2d, v24.2s, v15.2s
+4EB8D0A5 sqdmull2 v5.2d, v5.4s, v24.4s
+0E6AD174 sqdmull v20.4s, v11.4h, v10.4h
+4EA1D14A sqdmull2 v10.2d, v10.4s, v1.4s
+4E6AD3AB sqdmull2 v11.4s, v29.8h, v10.8h
+0EAED2AA sqdmull v10.2d, v21.2s, v14.2s
+0E60D000 sqdmull v0.4s, v0.4h, v0.4h
+0E7FD3EE sqdmull v14.4s, v31.4h, v31.4h
+0E2FD10E UNDEFINED
+0EEFD10E UNDEFINED
+4E2FD10E UNDEFINED
+4EEFD10E UNDEFINED
+4E60D000 sqdmull2 v0.4s, v0.8h, v0.8h
+
+// SQDMULL_asisddiff_only 01|U=0|1|111|0|size=xx|1|Rm=xxxxx|opcode=1101|00|Rn=xxxxx|Rd=xxxxx
+// SqdmullAsisddiffOnly: SQDMULL  <Va><d>, <Vb><n>, <Vb><m>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, Rm
+// register fields: Rm, Rn, Rd
+5E6CD0A6 sqdmull s6, h5, h12
+5EBED316 sqdmull d22, s24, s30
+5E7BD395 sqdmull s21, h28, h27
+5EB5D3D4 sqdmull d20, s30, s21
+5E74D212 sqdmull s18, h16, h20
+5EA0D172 sqdmull d18, s11, s0
+5EABD11F sqdmull d31, s8, s11
+5E73D254 sqdmull s20, h18, h19
+5EB3D0CC sqdmull d12, s6, s19
+5EAED23B sqdmull d27, s17, s14
+5E6ED296 sqdmull s22, h20, h14
+5E6AD359 sqdmull s25, h26, h10
+5E79D3F5 sqdmull s21, h31, h25
+5EAFD2EB sqdmull d11, s23, s15
+5E78D0CA sqdmull s10, h6, h24
+5E7BD3B7 sqdmull s23, h29, h27
+5E7FD000 sqdmull s0, h0, h31
+5E2CD0A6 UNDEFINED
+5EECD0A6 UNDEFINED
+5E2CD0A0 UNDEFINED
+5E2CD0BF UNDEFINED
+5E6CD19F sqdmull s31, h12, h12
+5EACD0A0 sqdmull d0, s5, s12
+5EECD0A0 UNDEFINED
+5EECD0BF UNDEFINED
+5E20D0A6 UNDEFINED
+5E3FD0A6 UNDEFINED
+5E60D0A6 sqdmull s6, h5, h0
+5EBFD0A6 sqdmull d6, s5, s31
+5EE0D0A6 UNDEFINED
+5EFFD0A6 UNDEFINED
+5E2CD006 UNDEFINED
+5E2CD3E6 UNDEFINED
+5EACD00C sqdmull d12, s0, s12
+5EACD3E6 sqdmull d6, s31, s12
+5EECD006 UNDEFINED
+5EECD3E6 UNDEFINED

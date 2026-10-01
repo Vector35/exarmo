@@ -1,0 +1,42 @@
+// PKHBT_A1 cond=xxxx|01101000|Rn=xxxx|Rd=xxxx|imm5=xxxxx|tb=0|01|Rm=xxxx
+// PkhbtA1: PKHBT{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, LSL #<imm>}
+// register fields: Rn, Rd, Rm
+56816f9c pkhbtpl r6, r1, r12, lsl #31
+a6840a96 pkhbtge r0, r4, r6, lsl #21
+16817b17 pkhbtne r7, r1, r7, lsl #22
+268c1716 pkhbths r1, r12, r6, lsl #14
+368b7f16 pkhbtlo r7, r11, r6, lsl #30
+868a2b1d pkhbthi r2, r10, sp, lsl #22
+768a1590 pkhbtvc r1, r10, r0, lsl #11
+468beb97 pkhbtmi lr, r11, r7, lsl #23
+// Binary Ninja's tests
+e6822013 pkhbt r2, r2, r3
+e6822793 pkhbt r2, r2, r3, lsl #15
+e6822f93 pkhbt r2, r2, r3, lsl #31
+0680F81F pkhbteq pc, r0, pc, lsl #0x10 (unpredictable)
+F6816F9C UNALLOCATED
+568F641C pkhbtpl r6, pc, r12, lsl #0x8 (unpredictable)
+56816211 pkhbtpl r6, r1, r1, lsl #0x4
+5681611C pkhbtpl r6, r1, r12, lsl #0x2
+5681609C pkhbtpl r6, r1, r12, lsl #0x1
+
+// PKHTB_A1 cond=xxxx|01101000|Rn=xxxx|Rd=xxxx|imm5=xxxxx|tb=1|01|Rm=xxxx
+// PkhtbA1: PKHTB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, ASR #<imm>}
+// register fields: Rn, Rd, Rm
+6689b15b pkhtbvs r11, r9, r11, asr #2
+c68f81db pkhtbgt r8, pc, r11, asr #3 (unpredictable)
+1680a159 pkhtbne r10, r0, r9, asr #2
+8688c152 pkhtbhi r12, r8, r2, asr #2
+36810e57 pkhtblo r0, r1, r7, asr #28
+1689d5d0 pkhtbne sp, r9, r0, asr #11
+26849554 pkhtbhs r9, r4, r4, asr #10
+168a695f pkhtbne r6, r10, pc, asr #18 (unpredictable)
+// Binary Ninja's tests
+e68227d3 pkhtb r2, r2, r3, asr #15
+e6822fd3 pkhtb r2, r2, r3, asr #31
+0689F05B pkhtbeq pc, r9, r11, asr #0x20 (unpredictable)
+F689B15B UNALLOCATED
+4689B85B pkhtbmi r11, r9, r11, asr #0x10
+6689B45B pkhtbvs r11, r9, r11, asr #0x8
+6689B25B pkhtbvs r11, r9, r11, asr #0x4
+6689B0DB pkhtbvs r11, r9, r11, asr #0x1

@@ -1,0 +1,18 @@
+// ld4q_z_p_bi_contiguous 101|0010|num=11|00|1|imm4=xxxx|111|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld4qZPBiContiguous: LD4Q  { <Zt1>.Q, <Zt2>.Q, <Zt3>.Q, <Zt4>.Q }, <Pg>/Z, [<Xn|SP>{, #<imm>, MUL VL}]
+// register fields: Pg, Rn, Zt
+A590E002 ld4q {z2.q, z3.q, z4.q, z5.q}, p0/z, [x0]
+A590E009 ld4q {z9.q, z10.q, z11.q, z12.q}, p0/z, [x0]
+A590E010 ld4q {z16.q, z17.q, z18.q, z19.q}, p0/z, [x0]
+A59FE7E0 ld4q {z0.q, z1.q, z2.q, z3.q}, p1/z, [sp, #-0x4, mul vl]
+A590E81F ld4q {z31.q, z0.q, z1.q, z2.q}, p2/z, [x0]
+A590EC02 ld4q {z2.q, z3.q, z4.q, z5.q}, p3/z, [x0]
+A590F002 ld4q {z2.q, z3.q, z4.q, z5.q}, p4/z, [x0]
+A590F402 ld4q {z2.q, z3.q, z4.q, z5.q}, p5/z, [x0]
+A590F802 ld4q {z2.q, z3.q, z4.q, z5.q}, p6/z, [x0]
+A590FC02 ld4q {z2.q, z3.q, z4.q, z5.q}, p7/z, [x0]
+A590E000 ld4q {z0.q, z1.q, z2.q, z3.q}, p0/z, [x0]
+A598E002 ld4q {z2.q, z3.q, z4.q, z5.q}, p0/z, [x0, #-0x20, mul vl]
+A594E002 ld4q {z2.q, z3.q, z4.q, z5.q}, p0/z, [x0, #0x10, mul vl]
+A592E002 ld4q {z2.q, z3.q, z4.q, z5.q}, p0/z, [x0, #0x8, mul vl]
+A591E002 ld4q {z2.q, z3.q, z4.q, z5.q}, p0/z, [x0, #0x4, mul vl]

@@ -1,0 +1,6 @@
+// luti6_z_zzz_16 010|0010|1|i1=x|1|1|Zm=xxxxx|101|011|Zn=xxxxx|Zd=xxxxx
+// Luti6ZZzz16: LUTI6  <Zd>.H, { <Zn1>.H, <Zn2>.H }, <Zm>[<index>]
+// register fields: Zm, Zn, Zd
+4560AC00 luti6 z0.h, {z0.h, z1.h}, z0[0]
+45FFAFFF luti6 z31.h, {z31.h, z0.h}, z31[1]
+4561AC43 luti6 z3.h, {z2.h, z3.h}, z1[0]

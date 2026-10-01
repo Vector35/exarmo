@@ -1,0 +1,24 @@
+// uqincd_z_zs_ 000|0010|0|size=11|1|0|imm4=xxxx|11|00|D=0|U=1|pattern=xxxxx|Zdn=xxxxx
+// UqincdZZs: UQINCD  <Zdn>.D{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04EAC70F uqincd z15.d, #0x18, mul #0xb
+04E1C5D9 uqincd z25.d, #0xe, mul #0x2
+04EEC46A uqincd z10.d, vl3, mul #0xf
+04E7C6A8 uqincd z8.d, #0x15, mul #0x8
+04E6C4D2 uqincd z18.d, vl6, mul #0x7
+04EBC700 uqincd z0.d, #0x18, mul #0xc
+04EDC599 uqincd z25.d, vl128, mul #0xe
+04E0C61A uqincd z26.d, #0x10
+04E4C7E1 uqincd z1.d, all, mul #0x5
+04E7C710 uqincd z16.d, #0x18, mul #0x8
+04EEC6BC uqincd z28.d, #0x15, mul #0xf
+04E6C5EE uqincd z14.d, #0xf, mul #0x7
+04E0C46C uqincd z12.d, vl3
+04EFC711 uqincd z17.d, #0x18, mul #0x10
+04EAC685 uqincd z5.d, #0x14, mul #0xb
+04E7C7F6 uqincd z22.d, all, mul #0x8
+04EAC41F uqincd z31.d, pow2, mul #0xb
+04E8C50F uqincd z15.d, vl8, mul #0x9
+04E2C48F uqincd z15.d, vl4, mul #0x3
+04EAC44F uqincd z15.d, vl2, mul #0xb
+04EAC42F uqincd z15.d, vl1, mul #0xb

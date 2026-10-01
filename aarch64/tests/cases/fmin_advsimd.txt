@@ -1,0 +1,46 @@
+// FMIN_asimdsame_only 0|Q=x|U=0|0|111|0|o1=1|sz=x|1|Rm=xxxxx|opcode=11110|1|Rn=xxxxx|Rd=xxxxx
+// FminAsimdsameOnly: FMIN  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+0EA4F667 fmin v7.2s, v19.2s, v4.2s
+0EA0F629 fmin v9.2s, v17.2s, v0.2s
+4EFAF595 fmin v21.2d, v12.2d, v26.2d
+4EBFF7FA fmin v26.4s, v31.4s, v31.4s
+4EF4F47B fmin v27.2d, v3.2d, v20.2d
+4EF4F5AF fmin v15.2d, v13.2d, v20.2d
+4EBDF62B fmin v11.4s, v17.4s, v29.4s
+4EB2F7AD fmin v13.4s, v29.4s, v18.4s
+0EA7F6A9 fmin v9.2s, v21.2s, v7.2s
+4EF8F599 fmin v25.2d, v12.2d, v24.2d
+4EA3F7C5 fmin v5.4s, v30.4s, v3.4s
+0EA0F421 fmin v1.2s, v1.2s, v0.2s
+4EAAF5BE fmin v30.4s, v13.4s, v10.4s
+4EB4F49F fmin v31.4s, v4.4s, v20.4s
+4EE0F69A fmin v26.2d, v20.2d, v0.2d
+0EA6F4AC fmin v12.2s, v5.2s, v6.2s
+0EA4F400 fmin v0.2s, v0.2s, v4.2s
+0EE4F667 UNDEFINED
+0EA4F664 fmin v4.2s, v19.2s, v4.2s
+
+// FMIN_asimdsamefp16_only 0|Q=x|U=0|0|111|0|o1=1|10|Rm=xxxxx|00|opcode=110|1|Rn=xxxxx|Rd=xxxxx
+// FminAsimdsamefp16Only: FMIN  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+0EC5347E fmin v30.4h, v3.4h, v5.4h
+0ED33406 fmin v6.4h, v0.4h, v19.4h
+0EDE347C fmin v28.4h, v3.4h, v30.4h
+4EDE3478 fmin v24.8h, v3.8h, v30.8h
+0ED43707 fmin v7.4h, v24.4h, v20.4h
+4ED8360B fmin v11.8h, v16.8h, v24.8h
+0EC9348F fmin v15.4h, v4.4h, v9.4h
+0EC43492 fmin v18.4h, v4.4h, v4.4h
+0ED434D0 fmin v16.4h, v6.4h, v20.4h
+4EC1348D fmin v13.8h, v4.8h, v1.8h
+4ED53708 fmin v8.8h, v24.8h, v21.8h
+0ECD3778 fmin v24.4h, v27.4h, v13.4h
+0EC83681 fmin v1.4h, v20.4h, v8.4h
+4EDA366B fmin v11.8h, v19.8h, v26.8h
+0ED537F5 fmin v21.4h, v31.4h, v21.4h
+0EC736AA fmin v10.4h, v21.4h, v7.4h
+0EC03460 fmin v0.4h, v3.4h, v0.4h
+0EDF347F fmin v31.4h, v3.4h, v31.4h
+0EC53463 fmin v3.4h, v3.4h, v5.4h

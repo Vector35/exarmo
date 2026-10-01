@@ -1,0 +1,13 @@
+// uqshlr_z_p_zz_ 010|0010|0|size=xx|0|0|Q=1|R=1|N=0|U=1|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UqshlrZPZz: UQSHLR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+440D85CD uqshlr z13.b, p1/m, z13.b, z14.b
+440D8D4C uqshlr z12.b, p3/m, z12.b, z10.b
+448D94A8 uqshlr z8.s, p5/m, z8.s, z5.s
+44CD9231 uqshlr z17.d, p4/m, z17.d, z17.d
+444D8CEE uqshlr z14.h, p3/m, z14.h, z7.h
+440D921F uqshlr z31.b, p4/m, z31.b, z16.b
+448D9C2D uqshlr z13.s, p7/m, z13.s, z1.s
+448D9AFB uqshlr z27.s, p6/m, z27.s, z23.s
+440D8000 uqshlr z0.b, p0/m, z0.b, z0.b
+440D8BED uqshlr z13.b, p2/m, z13.b, z31.b

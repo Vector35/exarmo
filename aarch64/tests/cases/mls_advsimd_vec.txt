@@ -1,0 +1,24 @@
+// MLS_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|opcode=10010|1|Rn=xxxxx|Rd=xxxxx
+// MlsAsimdsameOnly: MLS  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E6C977E mls v30.8h, v27.8h, v12.8h
+6E7D96D3 mls v19.8h, v22.8h, v29.8h
+6E6094E0 mls v0.8h, v7.8h, v0.8h
+6EB195CA mls v10.4s, v14.4s, v17.4s
+2EB99741 mls v1.2s, v26.2s, v25.2s
+6E3596A4 mls v4.16b, v21.16b, v21.16b
+2EB89460 mls v0.2s, v3.2s, v24.2s
+2E7E96C4 mls v4.4h, v22.4h, v30.4h
+2E7A954D mls v13.4h, v10.4h, v26.4h
+6E32967F mls v31.16b, v19.16b, v18.16b
+2E3697E8 mls v8.8b, v31.8b, v22.8b
+2EA99580 mls v0.2s, v12.2s, v9.2s
+6EB39403 mls v3.4s, v0.4s, v19.4s
+2E769741 mls v1.4h, v26.4h, v22.4h
+2E289668 mls v8.8b, v19.8b, v8.8b
+2E2B95A4 mls v4.8b, v13.8b, v11.8b
+6E7F977E mls v30.8h, v27.8h, v31.8h
+6EEC977E UNDEFINED
+2EEC977E UNDEFINED
+6E6C977B mls v27.8h, v27.8h, v12.8h

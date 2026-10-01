@@ -1,0 +1,134 @@
+// VCVTR_siv_T1_D 111011101|D=x|11|o1=1|opc2=101|Vd=xxxx|10|size=11|op=0|1|M=x|0|Vm=xxxx
+// VcvtrSivT1D: VCVTR{<c>}{<q>}.S32.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eefddb64 vcvtr.s32.f64 s27, d20
+eebdab4b vcvtr.s32.f64 s20, d11
+eefd2b68 vcvtr.s32.f64 s5, d24
+eefdbb40 vcvtr.s32.f64 s23, d0
+eebddb62 vcvtr.s32.f64 s26, d18
+eebd0b6f vcvtr.s32.f64 s0, d31
+eebdcb61 vcvtr.s32.f64 s24, d17
+eefd0b62 vcvtr.s32.f64 s1, d18
+EEFDFB4F vcvtr.s32.f64 s31, d15
+EEFD8B60 vcvtr.s32.f64 s17, d16
+EEFD4B64 vcvtr.s32.f64 s9, d20
+EEFD1B64 vcvtr.s32.f64 s3, d20
+EEBDFB64 vcvtr.s32.f64 s30, d20
+EEFDFB64 vcvtr.s32.f64 s31, d20
+EEFDDB64 [ne] vcvtrne.s32.f64 s27, d20
+
+// VCVTR_siv_T1_H 111011101|D=x|11|o1=1|opc2=101|Vd=xxxx|10|size=01|op=0|1|M=x|0|Vm=xxxx
+// VcvtrSivT1H: VCVTR{<c>}{<q>}.S32.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eebdf96a vcvtr.s32.f16 s30, s21
+eebd8969 vcvtr.s32.f16 s16, s19
+eebde96d vcvtr.s32.f16 s28, s27
+eefdb949 vcvtr.s32.f16 s23, s18
+eefd3966 vcvtr.s32.f16 s7, s13
+eebd694e vcvtr.s32.f16 s12, s28
+eefd296d vcvtr.s32.f16 s5, s27
+eefd6969 vcvtr.s32.f16 s13, s19
+EEBD0960 vcvtr.s32.f16 s0, s1
+EEBD496F vcvtr.s32.f16 s8, s31
+EEBD1968 vcvtr.s32.f16 s2, s17
+EEBD0964 vcvtr.s32.f16 s0, s9
+EEFD0962 vcvtr.s32.f16 s1, s5
+EEFDF961 vcvtr.s32.f16 s31, s3
+EEBDF940 vcvtr.s32.f16 s30, s0
+EEBDF94F vcvtr.s32.f16 s30, s30
+EEBDF960 vcvtr.s32.f16 s30, s1
+EEBDF96F vcvtr.s32.f16 s30, s31
+EEBDF96A [ne] vcvtrne.s32.f16 s30, s21 (unpredictable)
+
+// VCVTR_siv_T1_S 111011101|D=x|11|o1=1|opc2=101|Vd=xxxx|10|size=10|op=0|1|M=x|0|Vm=xxxx
+// VcvtrSivT1S: VCVTR{<c>}{<q>}.S32.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eebd9a65 vcvtr.s32.f32 s18, s11
+eefd3a66 vcvtr.s32.f32 s7, s13
+eefdaa60 vcvtr.s32.f32 s21, s1
+eefd5a4b vcvtr.s32.f32 s11, s22
+eebd6a60 vcvtr.s32.f32 s12, s1
+eefdea67 vcvtr.s32.f32 s29, s15
+eebdda48 vcvtr.s32.f32 s26, s16
+eefdea6d vcvtr.s32.f32 s29, s27
+EEBD0A6F vcvtr.s32.f32 s0, s31
+EEBDFA64 vcvtr.s32.f32 s30, s9
+EEBD8A62 vcvtr.s32.f32 s16, s5
+EEBD4A61 vcvtr.s32.f32 s8, s3
+EEBD2A40 vcvtr.s32.f32 s4, s0
+EEBD1A4F vcvtr.s32.f32 s2, s30
+EEBDFA65 vcvtr.s32.f32 s30, s11
+EEFD0A65 vcvtr.s32.f32 s1, s11
+EEFDFA65 vcvtr.s32.f32 s31, s11
+EEBD9A65 [ne] vcvtrne.s32.f32 s18, s11
+
+// VCVTR_uiv_T1_D 111011101|D=x|11|o1=1|opc2=100|Vd=xxxx|10|size=11|op=0|1|M=x|0|Vm=xxxx
+// VcvtrUivT1D: VCVTR{<c>}{<q>}.U32.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eefc5b42 vcvtr.u32.f64 s11, d2
+eebc2b46 vcvtr.u32.f64 s4, d6
+eefc5b4a vcvtr.u32.f64 s11, d10
+eefcfb40 vcvtr.u32.f64 s31, d0
+eebc2b42 vcvtr.u32.f64 s4, d2
+eebc1b45 vcvtr.u32.f64 s2, d5
+eefceb42 vcvtr.u32.f64 s29, d2
+eefc8b6b vcvtr.u32.f64 s17, d27
+EEFC0B4F vcvtr.u32.f64 s1, d15
+EEFC4B48 vcvtr.u32.f64 s9, d8
+EEBC0B44 vcvtr.u32.f64 s0, d4
+EEBCFB41 vcvtr.u32.f64 s30, d1
+EEFC5B60 vcvtr.u32.f64 s11, d16
+EEFC5B6F vcvtr.u32.f64 s11, d31
+EEFC5B42 [ne] vcvtrne.u32.f64 s11, d2
+
+// VCVTR_uiv_T1_H 111011101|D=x|11|o1=1|opc2=100|Vd=xxxx|10|size=01|op=0|1|M=x|0|Vm=xxxx
+// VcvtrUivT1H: VCVTR{<c>}{<q>}.U32.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eefcb94e vcvtr.u32.f16 s23, s28
+eebc896d vcvtr.u32.f16 s16, s27
+eefc6945 vcvtr.u32.f16 s13, s10
+eefc9945 vcvtr.u32.f16 s19, s10
+eefce967 vcvtr.u32.f16 s29, s15
+eebca947 vcvtr.u32.f16 s20, s14
+eebca960 vcvtr.u32.f16 s20, s1
+eebc9949 vcvtr.u32.f16 s18, s18
+EEFC094F vcvtr.u32.f16 s1, s30
+EEFCF948 vcvtr.u32.f16 s31, s16
+EEFC4944 vcvtr.u32.f16 s9, s8
+EEFC2942 vcvtr.u32.f16 s5, s4
+EEFC1941 vcvtr.u32.f16 s3, s2
+EEBC0940 vcvtr.u32.f16 s0, s0
+EEBCF94F vcvtr.u32.f16 s30, s30
+EEFC096F vcvtr.u32.f16 s1, s31
+EEFCF94E vcvtr.u32.f16 s31, s28
+EEFCB94E [ne] vcvtrne.u32.f16 s23, s28 (unpredictable)
+
+// VCVTR_uiv_T1_S 111011101|D=x|11|o1=1|opc2=100|Vd=xxxx|10|size=10|op=0|1|M=x|0|Vm=xxxx
+// VcvtrUivT1S: VCVTR{<c>}{<q>}.U32.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eebcfa4f vcvtr.u32.f32 s30, s30
+eebc9a4e vcvtr.u32.f32 s18, s28
+eefcfa61 vcvtr.u32.f32 s31, s3
+eefc2a60 vcvtr.u32.f32 s5, s1
+eebc6a4c vcvtr.u32.f32 s12, s24
+eefc9a65 vcvtr.u32.f32 s19, s11
+eebcfa6f vcvtr.u32.f32 s30, s31
+eefc1a62 vcvtr.u32.f32 s3, s5
+EEBC0A48 vcvtr.u32.f32 s0, s16
+EEBC8A44 vcvtr.u32.f32 s16, s8
+EEBC4A40 vcvtr.u32.f32 s8, s0
+EEBC0A4F vcvtr.u32.f32 s0, s30
+EEFC0A4F vcvtr.u32.f32 s1, s30
+EEBCFA4F [ne] vcvtrne.u32.f32 s30, s30

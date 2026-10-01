@@ -1,0 +1,39 @@
+// SCVTF_sisd_32D sf=0|0|S=0|11110|ftype=01|1|rmode=11|opcode=100|000000|Rn=xxxxx|Rd=xxxxx
+// ScvtfSisd32d: SCVTF  <Dd>, <Sn>
+// register fields: Rn, Rd
+1E7C0002 scvtf d2, s0
+1E7C0009 scvtf d9, s0
+1E7C0010 scvtf d16, s0
+1E7C03E0 scvtf d0, s31
+1E7C001F scvtf d31, s0
+1E7C0000 scvtf d0, s0
+
+// SCVTF_sisd_32H sf=0|0|S=0|11110|ftype=11|1|rmode=11|opcode=100|000000|Rn=xxxxx|Rd=xxxxx
+// ScvtfSisd32h: SCVTF  <Hd>, <Sn>
+// register fields: Rn, Rd
+1EFC0005 scvtf h5, s0
+1EFC000C scvtf h12, s0
+1EFC0013 scvtf h19, s0
+1EFC03E0 scvtf h0, s31
+1EFC001F scvtf h31, s0
+1EFC0000 scvtf h0, s0
+
+// SCVTF_sisd_64H sf=1|0|S=0|11110|ftype=11|1|rmode=11|opcode=100|000000|Rn=xxxxx|Rd=xxxxx
+// ScvtfSisd64h: SCVTF  <Hd>, <Dn>
+// register fields: Rn, Rd
+9EFC0003 scvtf h3, d0
+9EFC000A scvtf h10, d0
+9EFC0011 scvtf h17, d0
+9EFC03E0 scvtf h0, d31
+9EFC001F scvtf h31, d0
+9EFC0000 scvtf h0, d0
+
+// SCVTF_sisd_64S sf=1|0|S=0|11110|ftype=00|1|rmode=11|opcode=100|000000|Rn=xxxxx|Rd=xxxxx
+// ScvtfSisd64s: SCVTF  <Sd>, <Dn>
+// register fields: Rn, Rd
+9E3C0002 scvtf s2, d0
+9E3C0009 scvtf s9, d0
+9E3C0010 scvtf s16, d0
+9E3C03E0 scvtf s0, d31
+9E3C001F scvtf s31, d0
+9E3C0000 scvtf s0, d0

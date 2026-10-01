@@ -1,0 +1,28 @@
+[package]
+name = "exarmo-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Command-line disassembler for AArch64, A32 and T32 instructions"
+license.workspace = true
+repository.workspace = true
+keywords = ["arm", "aarch64", "aarch32", "disassembler"]
+categories = ["command-line-utilities", "development-tools"]
+documentation = "https://docs.rs/crate/exarmo-cli"
+
+[[bin]]
+name = "exarmo"
+path = "src/main.rs"
+
+# A decoder each, so a build that wants one instruction set does not compile
+# the other's generated tree. Both are on unless a caller says otherwise.
+[features]
+default = ["aarch64", "aarch32"]
+aarch64 = ["dep:exarmo-aarch64"]
+aarch32 = ["dep:exarmo-aarch32"]
+
+[dependencies]
+clap.workspace = true
+exarmo-core.workspace = true
+exarmo-aarch32 = { workspace = true, optional = true }
+exarmo-aarch64 = { workspace = true, optional = true }

@@ -1,0 +1,52 @@
+// AND_32_log_shift sf=0|opc=00|01010|shift=xx|N=0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// And32LogShift: AND  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+0A9F584A and w10, w2, wzr, asr #0x16
+0A463DFD and w29, w15, w6, lsr #0xf
+0A5A10E9 and w9, w7, w26, lsr #0x4
+0A857EA1 and w1, w21, w5, asr #0x1f
+0A973279 and w25, w19, w23, asr #0xc
+0A807AE1 and w1, w23, w0, asr #0x1e
+0A4917BC and w28, w29, w9, lsr #0x5
+0A4528D7 and w23, w6, w5, lsr #0xa
+0AD26C2E and w14, w1, w18, ror #0x1b
+0A406990 and w16, w12, w0, lsr #0x1a
+0A4B3B97 and w23, w28, w11, lsr #0xe
+0A4033B8 and w24, w29, w0, lsr #0xc
+0A5D019E and w30, w12, w29, lsr #0x0
+0A4F055C and w28, w10, w15, lsr #0x1
+0A594D92 and w18, w12, w25, lsr #0x13
+0AC83C6C and w12, w3, w8, ror #0xf
+0A1F5800 and w0, w0, wzr, lsl #0x16
+0A9F5BFF and wzr, wzr, wzr, asr #0x16
+0A9FFC4A UNDEFINED
+0A9F804A UNDEFINED
+0A9F404A and w10, w2, wzr, asr #0x10
+0A9F204A and w10, w2, wzr, asr #0x8
+0A9F084A and w10, w2, wzr, asr #0x2
+
+// AND_64_log_shift sf=1|opc=00|01010|shift=xx|N=0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// And64LogShift: AND  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+8AC7E6A3 and x3, x21, x7, ror #0x39
+8A0B0577 and x23, x11, x11, lsl #0x1
+8A478D17 and x23, x8, x7, lsr #0x23
+8A8CDF47 and x7, x26, x12, asr #0x37
+8A4EF5B1 and x17, x13, x14, lsr #0x3d
+8A4D9EE0 and x0, x23, x13, lsr #0x27
+8A1ADFF3 and x19, xzr, x26, lsl #0x37
+8A038F79 and x25, x27, x3, lsl #0x23
+8A80136B and x11, x27, x0, asr #0x4
+8A8BFE92 and x18, x20, x11, asr #0x3f
+8A4A8A7E and lr, x19, x10, lsr #0x22
+8A90F73B and x27, x25, x16, asr #0x3d
+8A00AACE and x14, x22, x0, lsl #0x2a
+8A17269A and x26, x20, x23, lsl #0x9
+8ADE3A88 and x8, x20, lr, ror #0xe
+8A4D657C and x28, x11, x13, lsr #0x19
+8ADF001F and xzr, x0, xzr, ror #0x0
+8AC7E6B5 and x21, x21, x7, ror #0x39
+8AC782A3 and x3, x21, x7, ror #0x20
+8AC742A3 and x3, x21, x7, ror #0x10
+8AC722A3 and x3, x21, x7, ror #0x8
+8AC70AA3 and x3, x21, x7, ror #0x2

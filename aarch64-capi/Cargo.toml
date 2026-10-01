@@ -1,0 +1,27 @@
+[package]
+name = "exarmo-aarch64-capi"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "C API for the exarmo-aarch64 disassembler"
+license.workspace = true
+repository.workspace = true
+keywords = ["arm", "aarch64", "arm64", "disassembler", "ffi"]
+categories = ["development-tools"]
+documentation = "https://docs.rs/exarmo-aarch64-capi"
+# The tests read the corpus through exarmo-testing, which is not published.
+exclude = ["tests/"]
+# Lets build.rs pass values to dependents' build scripts, which read them as
+# DEP_EXARMO_AARCH64_<KEY>.
+links = "exarmo_aarch64"
+
+[lib]
+name = "exarmo_aarch64_capi"
+crate-type = ["staticlib", "rlib"]
+
+[dependencies]
+exarmo-aarch64.workspace = true
+exarmo-core.workspace = true
+
+[dev-dependencies]
+exarmo-testing = { path = "../testing" }

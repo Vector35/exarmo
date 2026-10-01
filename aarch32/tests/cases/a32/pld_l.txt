@@ -1,0 +1,17 @@
+// PLD_l_A1 1111|0|1|0|D=1|U=x|R=(1)|0|1|Rn=1111|(1)(1)(1)(1)|imm12=xxxxxxxxxxxx
+// PldLA1: PLD{<c>}{<q>}  <label>
+f5dff744 pld 0x1074c
+F51F0000 pld 0x10008 (unpredictable)
+F5DF8FFF pld 0x11007 (unpredictable)
+F5DF4800 pld 0x10808 (unpredictable)
+F5DF2400 pld 0x10408 (unpredictable)
+F5DF1200 pld 0x10208 (unpredictable)
+F5DFF100 pld 0x10108
+F5DFF080 pld 0x10088
+F5DFF040 pld 0x10048
+F5DFF020 pld 0x10028
+F5DFF010 pld 0x10018
+F5DFF008 pld 0x10010
+F5DFF004 pld 0x1000c
+F5DFF002 pld 0x1000a
+F5DFF001 pld 0x10009

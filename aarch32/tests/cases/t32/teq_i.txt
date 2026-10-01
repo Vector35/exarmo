@@ -1,0 +1,55 @@
+// TEQ_i_T1 111|10|i=x|0|op1=0100|S=1|Rn=xxxx|0|imm3=xxx|Rd=1111|imm8=xxxxxxxx
+// TeqIT1: TEQ{<c>}{<q>}  <Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn
+// IT state read: condition
+f09a2f91 teq r10, #2432733440
+f0960fbb teq r6, #187
+f4930fec teq r3, #7733248
+f4906f24 teq r0, #2624
+f49c6f26 teq r12, #2656
+f49c2f07 teq r12, #552960
+f0933f3d teq r3, #1027423549
+f49d3f51 teq sp, #214016
+F09F1F00 teq pc, #0x0 (unpredictable)
+F09A4FFF teq r10, #0x7f800000
+F09A5F80 teq r10, #0x10000000
+F09A7F40 teq r10, #0x3000000
+F09A2F20 teq r10, #0x20002000
+F09A2F10 teq r10, #0x10001000
+F09A2F08 teq r10, #0x8000800
+F09A2F04 teq r10, #0x4000400
+F09A2F02 teq r10, #0x2000200
+F09A2F01 teq r10, #0x1000100
+F09A0F00 teq r10, #0x0
+F09A0FFF teq r10, #0xff
+F09A1F00 teq r10, #0x0
+F09A1FFF teq r10, #0xff00ff
+F09A2F00 teq r10, #0x0
+F09A2FFF teq r10, #0xff00ff00
+F09A3F00 teq r10, #0x0
+F09A3FFF teq r10, #0xffffffff
+F09A4F00 teq r10, #0x80000000
+F09A5F00 teq r10, #0x20000000
+F09A5FFF teq r10, #0x1fe00000
+F09A6F00 teq r10, #0x8000000
+F09A6FFF teq r10, #0x7f80000
+F09A7F00 teq r10, #0x2000000
+F09A7FFF teq r10, #0x1fe0000
+F49A0F00 teq r10, #0x800000
+F49A0FFF teq r10, #0x7f8000
+F49A1F00 teq r10, #0x200000
+F49A1FFF teq r10, #0x1fe000
+F49A2F00 teq r10, #0x80000
+F49A2FFF teq r10, #0x7f800
+F49A3F00 teq r10, #0x20000
+F49A3FFF teq r10, #0x1fe00
+F49A4F00 teq r10, #0x8000
+F49A4FFF teq r10, #0x7f80
+F49A5F00 teq r10, #0x2000
+F49A5FFF teq r10, #0x1fe0
+F49A6F00 teq r10, #0x800
+F49A6FFF teq r10, #0x7f8
+F49A7F00 teq r10, #0x200
+F49A7FFF teq r10, #0x1fe
+F09A2F91 [ne] teqne r10, #0x91009100

@@ -1,0 +1,27 @@
+// VMLSL_i_T1 111|U=x|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|10|op=1|0|N=x|0|M=x|0|Vm=xxxx
+// VmlslIT1: VMLSL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+efe04a8b vmlsl.s32 q10, d16, d11
+efc16a80 vmlsl.s8 q11, d17, d0
+ffd78a01 vmlsl.u16 q12, d7, d1
+ff8beaa2 vmlsl.u8 q7, d27, d18
+efe90aa0 vmlsl.s32 q8, d25, d16
+efa74a25 vmlsl.s32 q2, d7, d21
+ff98aa84 vmlsl.u16 q5, d24, d4
+efd04aaf vmlsl.s16 q10, d16, d31
+EFF0FA8B UNDEFINED
+FFEF2A88 vmlsl.u32 q9, d31, d8
+EFA40A8F vmlsl.s32 q0, d20, d15
+EFE24A8B vmlsl.s32 q10, d18, d11
+EFF01A8B UNDEFINED
+EFA0FA8B UNDEFINED
+EFE0FA8B UNDEFINED
+EFE04A0B vmlsl.s32 q10, d0, d11
+EFEF4A0B vmlsl.s32 q10, d15, d11
+EFEF4A8B vmlsl.s32 q10, d31, d11
+EFE04A8B [ne] vmlslne.s32 q10, d16, d11
+FFFF2A88 UNPREDICTABLE

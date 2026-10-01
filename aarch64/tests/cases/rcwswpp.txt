@@ -1,0 +1,46 @@
+// RCWSWPP_128_memop_128 0|S=0|011001|A=0|R=0|1|Rt2=xxxxx|o3=1|opc=010|00|Rn=xxxxx|Rt=xxxxx
+// Rcwswpp128Memop128: RCWSWPP  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+1920A006 rcwswpp x6, x0, [x0]
+1920A00D rcwswpp x13, x0, [x0]
+1920A014 rcwswpp x20, x0, [x0]
+1920A3E0 rcwswpp x0, x0, [sp] (unpredictable)
+193FA01F UNDEFINED
+1920A000 rcwswpp x0, x0, [x0] (unpredictable)
+1920A3E6 rcwswpp x6, x0, [sp]
+1920A0C6 rcwswpp x6, x0, [x6]
+
+// RCWSWPPA_128_memop_128 0|S=0|011001|A=1|R=0|1|Rt2=xxxxx|o3=1|opc=010|00|Rn=xxxxx|Rt=xxxxx
+// Rcwswppa128Memop128: RCWSWPPA  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19A0A002 rcwswppa x2, x0, [x0]
+19A0A009 rcwswppa x9, x0, [x0]
+19A0A010 rcwswppa x16, x0, [x0]
+19A0A3E0 rcwswppa x0, x0, [sp] (unpredictable)
+19BFA01F UNDEFINED
+19A0A000 rcwswppa x0, x0, [x0] (unpredictable)
+19A0A3E2 rcwswppa x2, x0, [sp]
+19A0A042 rcwswppa x2, x0, [x2]
+
+// RCWSWPPAL_128_memop_128 0|S=0|011001|A=1|R=1|1|Rt2=xxxxx|o3=1|opc=010|00|Rn=xxxxx|Rt=xxxxx
+// Rcwswppal128Memop128: RCWSWPPAL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19E0A000 rcwswppal x0, x0, [x0] (unpredictable)
+19E0A007 rcwswppal x7, x0, [x0]
+19E0A00E rcwswppal x14, x0, [x0]
+19E0A3E0 rcwswppal x0, x0, [sp] (unpredictable)
+19FFA01F UNDEFINED
+19E0A3E7 rcwswppal x7, x0, [sp]
+19E0A0E7 rcwswppal x7, x0, [x7]
+
+// RCWSWPPL_128_memop_128 0|S=0|011001|A=0|R=1|1|Rt2=xxxxx|o3=1|opc=010|00|Rn=xxxxx|Rt=xxxxx
+// Rcwswppl128Memop128: RCWSWPPL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+1960A004 rcwswppl x4, x0, [x0]
+1960A00B rcwswppl x11, x0, [x0]
+1960A012 rcwswppl x18, x0, [x0]
+1960A3E0 rcwswppl x0, x0, [sp] (unpredictable)
+197FA01F UNDEFINED
+1960A000 rcwswppl x0, x0, [x0] (unpredictable)
+1960A3E4 rcwswppl x4, x0, [sp]
+1960A084 rcwswppl x4, x0, [x4]

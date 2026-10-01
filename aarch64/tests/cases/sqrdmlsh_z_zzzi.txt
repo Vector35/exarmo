@@ -1,0 +1,51 @@
+// sqrdmlsh_z_zzzi_d 010|0010|0|size=11|1|i1=x|Zm=xxxx|00010|S=1|Zn=xxxxx|Zda=xxxxx
+// SqrdmlshZZzziD: SQRDMLSH  <Zda>.D, <Zn>.D, <Zm>.D[<imm>]
+// register fields: Zm, Zn, Zda
+44EE1653 sqrdmlsh z19.d, z18.d, z14.d[0]
+44F71702 sqrdmlsh z2.d, z24.d, z7.d[1]
+44FF16BE sqrdmlsh z30.d, z21.d, z15.d[1]
+44E017D3 sqrdmlsh z19.d, z30.d, z0.d[0]
+44F516DA sqrdmlsh z26.d, z22.d, z5.d[1]
+44EB16AD sqrdmlsh z13.d, z21.d, z11.d[0]
+44F416CA sqrdmlsh z10.d, z22.d, z4.d[1]
+44FC1423 sqrdmlsh z3.d, z1.d, z12.d[1]
+44EE1400 sqrdmlsh z0.d, z0.d, z14.d[0]
+44EE17FF sqrdmlsh z31.d, z31.d, z14.d[0]
+44EE15D3 sqrdmlsh z19.d, z14.d, z14.d[0]
+44EE164E sqrdmlsh z14.d, z18.d, z14.d[0]
+
+// sqrdmlsh_z_zzzi_h 010|0010|0|0|i3h=x|1|i3l=xx|Zm=xxx|00010|S=1|Zn=xxxxx|Zda=xxxxx
+// SqrdmlshZZzziH: SQRDMLSH  <Zda>.H, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+442B14EE sqrdmlsh z14.h, z7.h, z3.h[1]
+442A1447 sqrdmlsh z7.h, z2.h, z2.h[1]
+447F1587 sqrdmlsh z7.h, z12.h, z7.h[7]
+442017B6 sqrdmlsh z22.h, z29.h, z0.h[0]
+442814A3 sqrdmlsh z3.h, z5.h, z0.h[1]
+4431159F sqrdmlsh z31.h, z12.h, z1.h[2]
+443816D0 sqrdmlsh z16.h, z22.h, z0.h[3]
+4439178E sqrdmlsh z14.h, z28.h, z1.h[3]
+442C1400 sqrdmlsh z0.h, z0.h, z4.h[1]
+442D17EE sqrdmlsh z14.h, z31.h, z5.h[1]
+442E14EE sqrdmlsh z14.h, z7.h, z6.h[1]
+446314EE sqrdmlsh z14.h, z7.h, z3.h[4]
+446B14EE sqrdmlsh z14.h, z7.h, z3.h[5]
+447314EE sqrdmlsh z14.h, z7.h, z3.h[6]
+
+// sqrdmlsh_z_zzzi_s 010|0010|0|size=10|1|i2=xx|Zm=xxx|00010|S=1|Zn=xxxxx|Zda=xxxxx
+// SqrdmlshZZzziS: SQRDMLSH  <Zda>.S, <Zn>.S, <Zm>.S[<imm>]
+// register fields: Zm, Zn, Zda
+44AF142D sqrdmlsh z13.s, z1.s, z7.s[1]
+44BB17EF sqrdmlsh z15.s, z31.s, z3.s[3]
+44BF17D1 sqrdmlsh z17.s, z30.s, z7.s[3]
+44B014E5 sqrdmlsh z5.s, z7.s, z0.s[2]
+44BD15CB sqrdmlsh z11.s, z14.s, z5.s[3]
+44B71475 sqrdmlsh z21.s, z3.s, z7.s[2]
+44A4145F sqrdmlsh z31.s, z2.s, z4.s[0]
+44BC14C7 sqrdmlsh z7.s, z6.s, z4.s[3]
+44A91400 sqrdmlsh z0.s, z0.s, z1.s[1]
+44AA142D sqrdmlsh z13.s, z1.s, z2.s[1]
+44AE142D sqrdmlsh z13.s, z1.s, z6.s[1]
+44AF14ED sqrdmlsh z13.s, z7.s, z7.s[1]
+44AF1427 sqrdmlsh z7.s, z1.s, z7.s[1]

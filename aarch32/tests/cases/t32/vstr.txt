@@ -1,0 +1,72 @@
+// VSTR_T1_D 1110110|P=1|U=x|D=x|W=0|L=0|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxxx
+// VstrT1D: VSTR{<c>}{<q>}{<.64>}  <Dd>, [<Rn>{, #{<+/->}<imm>}]
+// read together by <Dd>: D, Vd
+// register fields: Rn
+// IT state read: condition
+ed0f0b38 vstr d0, [pc, #-224] (unpredictable)
+ed04cbd8 vstr d12, [r4, #-864]
+edcd4bee vstr d20, [sp, #952]
+ed029b74 vstr d9, [r2, #-464]
+ed8abb04 vstr d11, [r10, #16]
+ed845bb7 vstr d5, [r4, #732]
+ed4f2b39 vstr d18, [pc, #-228] (unpredictable)
+ed086b52 vstr d6, [r8, #-328]
+ED00FB00 vstr d15, [r0, #-0x0]
+ED0F8BFF vstr d8, [pc, #-0x3fc] (unpredictable)
+ED0F1B80 vstr d1, [pc, #-0x200] (unpredictable)
+ED0FFB40 vstr d15, [pc, #-0x100] (unpredictable)
+ED4F0B20 vstr d16, [pc, #-0x80] (unpredictable)
+ED4FFB10 vstr d31, [pc, #-0x40] (unpredictable)
+ED0F0B08 vstr d0, [pc, #-0x20] (unpredictable)
+ED0F0B02 vstr d0, [pc, #-0x8] (unpredictable)
+ED0F0B01 vstr d0, [pc, #-0x4] (unpredictable)
+ED0F0B38 [ne] vstrne d0, [pc, #-0xe0] (unpredictable)
+
+// VSTR_T1_H 1110110|P=1|U=x|D=x|W=0|L=0|Rn=xxxx|Vd=xxxx|10|size=01|imm8=xxxxxxxx
+// VstrT1H: VSTR{<c>}{<q>}.16  <Sd>, [<Rn>{, #{<+/->}<imm>}]
+// read together by <Sd>: D, Vd
+// register fields: Rn
+// IT state read: condition
+ed072963 vstr.16 s4, [r7, #-198]
+ed42f922 vstr.16 s31, [r2, #-68]
+ed0619a5 vstr.16 s2, [r6, #-330]
+edc799bd vstr.16 s19, [r7, #378]
+edc0f959 vstr.16 s31, [r0, #178]
+edcb0979 vstr.16 s1, [r11, #242]
+ed8749ce vstr.16 s8, [r7, #412]
+edc2c96d vstr.16 s25, [r2, #218]
+ED0F8900 vstr.16 s16, [pc, #-0x0] (unpredictable)
+ED0709FF vstr.16 s0, [r7, #-0x1fe]
+ED07F980 vstr.16 s30, [r7, #-0x100]
+ED072940 vstr.16 s4, [r7, #-0x80]
+ED072920 vstr.16 s4, [r7, #-0x40]
+ED072910 vstr.16 s4, [r7, #-0x20]
+ED072908 vstr.16 s4, [r7, #-0x10]
+ED072904 vstr.16 s4, [r7, #-0x8]
+ED072902 vstr.16 s4, [r7, #-0x4]
+ED072901 vstr.16 s4, [r7, #-0x2]
+ED072963 [ne] vstrne.16 s4, [r7, #-0xc6] (unpredictable)
+
+// VSTR_T1_S 1110110|P=1|U=x|D=x|W=0|L=0|Rn=xxxx|Vd=xxxx|10|size=10|imm8=xxxxxxxx
+// VstrT1S: VSTR{<c>}{<q>}{<.32>}  <Sd>, [<Rn>{, #{<+/->}<imm>}]
+// read together by <Sd>: D, Vd
+// register fields: Rn
+// IT state read: condition
+ed4a0af3 vstr s1, [r10, #-972]
+ed428ad1 vstr s17, [r2, #-836]
+ed04ba02 vstr s22, [r4, #-8]
+edcdfae6 vstr s31, [sp, #920]
+edccdaeb vstr s27, [r12, #940]
+ed411ac5 vstr s3, [r1, #-788]
+edc4da78 vstr s27, [r4, #480]
+ed899a09 vstr s18, [r9, #36]
+ED404A00 vstr s9, [r0, #-0x0]
+ED4F2AFF vstr s5, [pc, #-0x3fc] (unpredictable)
+ED0A0A80 vstr s0, [r10, #-0x200]
+ED0AFA40 vstr s30, [r10, #-0x100]
+ED4A0A20 vstr s1, [r10, #-0x80]
+ED4A0A10 vstr s1, [r10, #-0x40]
+ED4A0A08 vstr s1, [r10, #-0x20]
+ED4A0A04 vstr s1, [r10, #-0x10]
+ED4A0A01 vstr s1, [r10, #-0x4]
+ED4A0AF3 [ne] vstrne s1, [r10, #-0x3cc]

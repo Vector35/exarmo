@@ -1,0 +1,95 @@
+// LDRH_32_ldst_immpost size=01|11|1|VR=0|0|0|opc=01|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Ldrh32LdstImmpost: LDRH  <Wt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+7856D6B2 ldrh w18, [x21], #-0x93
+784C04FF ldrh wzr, [x7], #0xc0
+784F274C ldrh w12, [x26], #0xf2
+784714F7 ldrh w23, [x7], #0x71
+784CE728 ldrh w8, [x25], #0xce
+784165DC ldrh w28, [x14], #0x16
+784B1659 ldrh w25, [x18], #0xb1
+785CA666 ldrh w6, [x19], #-0x36
+7849D520 ldrh w0, [x9], #0x9d
+785F3768 ldrh w8, [x27], #-0xd
+785564EC ldrh w12, [x7], #-0xaa
+784D94D0 ldrh w16, [x6], #0xd9
+785BE5A6 ldrh w6, [x13], #-0x42
+785B4651 ldrh w17, [x18], #-0x4c
+784C8774 ldrh w20, [x27], #0xc8
+784A652C ldrh w12, [x9], #0xa6
+78400412 ldrh w18, [x0], #0x0
+785FF7F2 ldrh w18, [sp], #-0x1
+7856D6B5 ldrh w21, [x21], #-0x93 (unpredictable)
+785006B2 ldrh w18, [x21], #-0x100
+784806B2 ldrh w18, [x21], #0x80
+784406B2 ldrh w18, [x21], #0x40
+784206B2 ldrh w18, [x21], #0x20
+784106B2 ldrh w18, [x21], #0x10
+784086B2 ldrh w18, [x21], #0x8
+784046B2 ldrh w18, [x21], #0x4
+784026B2 ldrh w18, [x21], #0x2
+784016B2 ldrh w18, [x21], #0x1
+
+// LDRH_32_ldst_immpre size=01|11|1|VR=0|0|0|opc=01|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Ldrh32LdstImmpre: LDRH  <Wt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+78514E82 ldrh w2, [x20, #-0xec]!
+784F5EE7 ldrh w7, [x23, #0xf5]!
+7857FEAF ldrh w15, [x21, #-0x81]!
+78546FC5 ldrh w5, [lr, #-0xba]!
+78464DE3 ldrh w3, [x15, #0x64]!
+785CFC8F ldrh w15, [x4, #-0x31]!
+78401D3A ldrh w26, [x9, #0x1]!
+785C2D3D ldrh w29, [x9, #-0x3e]!
+7853EE83 ldrh w3, [x20, #-0xc2]!
+785BCE5C ldrh w28, [x18, #-0x44]!
+78583F56 ldrh w22, [x26, #-0x7d]!
+78460D0B ldrh w11, [x8, #0x60]!
+78553F52 ldrh w18, [x26, #-0xad]!
+784B4E49 ldrh w9, [x18, #0xb4]!
+784DAE48 ldrh w8, [x18, #0xda]!
+78426F71 ldrh w17, [x27, #0x26]!
+78400C00 ldrh w0, [x0, #0x0]! (unpredictable)
+785FFFFF ldrh wzr, [sp, #-0x1]!
+78500E82 ldrh w2, [x20, #-0x100]!
+78480E82 ldrh w2, [x20, #0x80]!
+78440E82 ldrh w2, [x20, #0x40]!
+78420E82 ldrh w2, [x20, #0x20]!
+78410E82 ldrh w2, [x20, #0x10]!
+78408E82 ldrh w2, [x20, #0x8]!
+78404E82 ldrh w2, [x20, #0x4]!
+78402E82 ldrh w2, [x20, #0x2]!
+
+// LDRH_32_ldst_pos size=01|11|1|VR=0|0|1|opc=01|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldrh32LdstPos: LDRH  <Wt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+796A1159 ldrh w25, [x10, #0x1508]
+7943DC7A ldrh w26, [x3, #0x1ee]
+796B0ADD ldrh w29, [x22, #0x1584]
+797369E2 ldrh w2, [x15, #0x19b4]
+79633996 ldrh w22, [x12, #0x119c]
+7960FC7E ldrh w30, [x3, #0x107e]
+796726D1 ldrh w17, [x22, #0x1392]
+7977CEE6 ldrh w6, [x23, #0x1be6]
+797211B2 ldrh w18, [x13, #0x1908]
+79482A1B ldrh w27, [x16, #0x414]
+7975B452 ldrh w18, [x2, #0x1ada]
+797AB0E3 ldrh w3, [x7, #0x1d58]
+794C38E2 ldrh w2, [x7, #0x61c]
+796EDC79 ldrh w25, [x3, #0x176e]
+797F08A8 ldrh w8, [x5, #0x1f84]
+79539F8B ldrh w11, [x28, #0x9ce]
+79400000 ldrh w0, [x0]
+797FFFFF ldrh wzr, [sp, #0x1ffe]
+79600159 ldrh w25, [x10, #0x1000]
+79500159 ldrh w25, [x10, #0x800]
+79480159 ldrh w25, [x10, #0x400]
+79440159 ldrh w25, [x10, #0x200]
+79420159 ldrh w25, [x10, #0x100]
+79410159 ldrh w25, [x10, #0x80]
+79408159 ldrh w25, [x10, #0x40]
+79404159 ldrh w25, [x10, #0x20]
+79402159 ldrh w25, [x10, #0x10]
+79401159 ldrh w25, [x10, #0x8]
+79400959 ldrh w25, [x10, #0x4]
+79400559 ldrh w25, [x10, #0x2]

@@ -1,0 +1,50 @@
+// VMUL_i_A1_D 1111001|op=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VmulIA1D: VMUL{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: op, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f253a93d vmul.i16 d26, d3, d29
+f2057933 vmul.i8 d7, d5, d19
+f22e993e vmul.i32 d9, d14, d30
+f206f990 vmul.i8 d15, d22, d0
+f22b39b0 vmul.i32 d3, d27, d16
+f30809b0 vmul.p8 d0, d24, d16
+f26a491c vmul.i32 d20, d10, d12
+f305b91d vmul.p8 d11, d5, d13
+F273A93D UNDEFINED
+F250893F vmul.i16 d24, d0, d31
+F25F2938 vmul.i16 d18, d15, d24
+F2541934 vmul.i16 d17, d4, d20
+F2520932 vmul.i16 d16, d2, d18
+F251F931 vmul.i16 d31, d1, d17
+F353A93D UNDEFINED
+F363A93D UNDEFINED
+F373A93D UNDEFINED
+F250A91F vmul.i16 d26, d0, d15
+F250A9BF vmul.i16 d26, d16, d31
+F25FA93D vmul.i16 d26, d15, d29
+F25FA9BD vmul.i16 d26, d31, d29
+
+// VMUL_i_A1_Q 1111001|op=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VmulIA1Q: VMUL{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: op, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f228c9d0 vmul.i32 q6, q12, q0
+f2464972 vmul.i8 q10, q3, q9
+f22ec972 vmul.i32 q6, q7, q9
+f2022952 vmul.i8 q1, q1, q1
+f25889d8 vmul.i16 q12, q12, q4
+f34889d8 vmul.p8 q12, q12, q4
+f202895e vmul.i8 q4, q1, q7
+f34029d0 vmul.p8 q9, q8, q0
+F23FF9DF UNDEFINED
+F22409D4 vmul.i32 q0, q10, q2
+F23119D1 UNDEFINED
+F31FF95F UNDEFINED
+F36FF9FF UNDEFINED
+F338C9D0 UNDEFINED
+F2200970 vmul.i32 q0, q0, q8
+F26809D0 vmul.i32 q8, q12, q0

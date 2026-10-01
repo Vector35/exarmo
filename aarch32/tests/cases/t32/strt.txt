@@ -1,0 +1,24 @@
+// STRT_T1 111|1100|00|size=10|L=0|Rn=xxxx|Rt=xxxx|1110|imm8=xxxxxxxx
+// StrtT1: STRT{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f84afeca strt pc, [r10, #202] (unpredictable)
+f84efeee strt pc, [lr, #238] (unpredictable)
+f8484e54 strt r4, [r8, #84]
+f842be35 strt r11, [r2, #53]
+f84cfef7 strt pc, [r12, #247] (unpredictable)
+f8449ef0 strt r9, [r4, #240]
+f844fe3b strt pc, [r4, #59] (unpredictable)
+f8401eb1 strt r1, [r0, #177]
+F84FFECA UNALLOCATED
+F84A0E00 strt r0, [r10]
+F84AAEFF strt r10, [r10, #0xff]
+F84AFE80 strt pc, [r10, #0x80] (unpredictable)
+F84AFE40 strt pc, [r10, #0x40] (unpredictable)
+F84AFE20 strt pc, [r10, #0x20] (unpredictable)
+F84AFE10 strt pc, [r10, #0x10] (unpredictable)
+F84AFE08 strt pc, [r10, #0x8] (unpredictable)
+F84AFE04 strt pc, [r10, #0x4] (unpredictable)
+F84AFE02 strt pc, [r10, #0x2] (unpredictable)
+F84AFE01 strt pc, [r10, #0x1] (unpredictable)
+F84AFECA [ne] strtne pc, [r10, #0xca] (unpredictable)

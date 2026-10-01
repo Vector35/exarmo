@@ -1,0 +1,73 @@
+// ST2_asisdlse_R2 0|Q=x|00|1|1|0|00|L=0|000000|opcode=1000|size=xx|Rn=xxxxx|Rt=xxxxx
+// St2AsisdlseR2: ST2  { <Vt>.<T>, <Vt2>.<T> }, [<Xn|SP>]
+// read together by <T>: Q, size
+// register fields: Rn, Rt
+4C0086D6 st2 {v22.8h, v23.8h}, [x22]
+4C008ECA st2 {v10.2d, v11.2d}, [x22]
+4C0081B9 st2 {v25.16b, v26.16b}, [x13]
+0C0089CA st2 {v10.2s, v11.2s}, [x14]
+4C008A45 st2 {v5.4s, v6.4s}, [x18]
+0C008457 st2 {v23.4h, v24.4h}, [x2]
+4C008BB6 st2 {v22.4s, v23.4s}, [fp]
+0C00875B st2 {v27.4h, v28.4h}, [x26]
+4C008EFC st2 {v28.2d, v29.2d}, [x23]
+0C008752 st2 {v18.4h, v19.4h}, [x26]
+0C00877C st2 {v28.4h, v29.4h}, [x27]
+4C0087B3 st2 {v19.8h, v20.8h}, [fp]
+4C008FCD st2 {v13.2d, v14.2d}, [lr]
+4C0082C4 st2 {v4.16b, v5.16b}, [x22]
+4C008260 st2 {v0.16b, v1.16b}, [x19]
+0C0085BA st2 {v26.4h, v27.4h}, [x13]
+4C00841F st2 {v31.8h, v0.8h}, [x0]
+4C0087F6 st2 {v22.8h, v23.8h}, [sp]
+0C0082D6 st2 {v22.8b, v23.8b}, [x22]
+0C008ED6 UNDEFINED
+
+// ST2_asisdlsep_I2_i 0|Q=x|0011001|L=0|0|Rm=11111|opcode=1000|size=xx|Rn=xxxxx|Rt=xxxxx
+// St2AsisdlsepI2I: ST2  { <Vt>.<T>, <Vt2>.<T> }, [<Xn|SP>], <imm>
+// read together by <T>: Q, size
+// register fields: Rn, Rt
+0C9F810E st2 {v14.8b, v15.8b}, [x8], #0x10
+0C9F8425 st2 {v5.4h, v6.4h}, [x1], #0x10
+4C9F8399 st2 {v25.16b, v26.16b}, [x28], #0x20
+0C9F8156 st2 {v22.8b, v23.8b}, [x10], #0x10
+0C9F87E3 st2 {v3.4h, v4.4h}, [sp], #0x10
+4C9F8336 st2 {v22.16b, v23.16b}, [x25], #0x20
+4C9F8A60 st2 {v0.4s, v1.4s}, [x19], #0x20
+0C9F86FB st2 {v27.4h, v28.4h}, [x23], #0x10
+4C9F8CC8 st2 {v8.2d, v9.2d}, [x6], #0x20
+4C9F8AE0 st2 {v0.4s, v1.4s}, [x23], #0x20
+4C9F8BB8 st2 {v24.4s, v25.4s}, [fp], #0x20
+0C9F8132 st2 {v18.8b, v19.8b}, [x9], #0x10
+0C9F8BB3 st2 {v19.2s, v20.2s}, [fp], #0x10
+0C9F87FD st2 {v29.4h, v30.4h}, [sp], #0x10
+4C9F871B st2 {v27.8h, v28.8h}, [x24], #0x20
+4C9F8EE4 st2 {v4.2d, v5.2d}, [x23], #0x20
+0C9F801F st2 {v31.8b, v0.8b}, [x0], #0x10
+0C9F8D0E UNDEFINED
+0C9F8108 st2 {v8.8b, v9.8b}, [x8], #0x10
+
+// ST2_asisdlsep_R2_r 0|Q=x|0011001|L=0|0|Rm=xxxxx|opcode=1000|size=xx|Rn=xxxxx|Rt=xxxxx
+// St2AsisdlsepR2R: ST2  { <Vt>.<T>, <Vt2>.<T> }, [<Xn|SP>], <Xm>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rt
+4C988280 st2 {v0.16b, v1.16b}, [x20], x24
+4C918E20 st2 {v0.2d, v1.2d}, [x17], x17
+0C948AA7 st2 {v7.2s, v8.2s}, [x21], x20
+4C8B8073 st2 {v19.16b, v20.16b}, [x3], x11
+4C9E87A9 st2 {v9.8h, v10.8h}, [fp], lr
+0C8089DA st2 {v26.2s, v27.2s}, [x14], x0
+0C93884D st2 {v13.2s, v14.2s}, [x2], x19
+4C888F48 st2 {v8.2d, v9.2d}, [x26], x8
+0C878AB8 st2 {v24.2s, v25.2s}, [x21], x7
+0C8A8A2C st2 {v12.2s, v13.2s}, [x17], x10
+4C8E83B0 st2 {v16.16b, v17.16b}, [fp], x14
+0C8A8041 st2 {v1.8b, v2.8b}, [x2], x10
+4C9781E9 st2 {v9.16b, v10.16b}, [x15], x23
+4C8F8F44 st2 {v4.2d, v5.2d}, [x26], x15
+0C81881C st2 {v28.2s, v29.2s}, [x0], x1
+0C918B1E st2 {v30.2s, v31.2s}, [x24], x17
+4C9883FF st2 {v31.16b, v0.16b}, [sp], x24
+0C988680 st2 {v0.4h, v1.4h}, [x20], x24
+0C988E80 UNDEFINED
+4C988A80 st2 {v0.4s, v1.4s}, [x20], x24

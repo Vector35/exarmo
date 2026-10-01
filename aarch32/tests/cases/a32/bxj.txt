@@ -1,0 +1,20 @@
+// BXJ_A1 cond=xxxx|00|010|op0=01|0|(1)(1)(1)(1)(1)(1)(1)(1)(1)(1)(1)(1)|0|010|Rm=xxxx
+// BxjA1: BXJ{<c>}{<q>}  <Rm>
+// register fields: Rm
+// Binary Ninja's tests
+112fff22 bxjne r2
+e12fff22 bxj r2
+01200020 bxjeq r0 (unpredictable)
+F12FFF22 UNALLOCATED
+8128002F bxjhi pc (unpredictable)
+41240022 bxjmi r2 (unpredictable)
+21220022 bxjcs r2 (unpredictable)
+11210022 bxjne r2 (unpredictable)
+11208022 bxjne r2 (unpredictable)
+11204022 bxjne r2 (unpredictable)
+11202022 bxjne r2 (unpredictable)
+11201022 bxjne r2 (unpredictable)
+11200822 bxjne r2 (unpredictable)
+11200422 bxjne r2 (unpredictable)
+11200222 bxjne r2 (unpredictable)
+11200122 bxjne r2 (unpredictable)

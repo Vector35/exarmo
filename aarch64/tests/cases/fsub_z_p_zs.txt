@@ -1,0 +1,22 @@
+// fsub_z_p_zs_ 011|0010|1|size=xx|0|11|opc=001|100|Pg=xxx|0000|i1=x|Zdn=xxxxx
+// FsubZPZs: FSUB  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <const>
+// register fields: Pg, Zdn
+65998017 fsub z23.s, p0/m, z23.s, #0.5
+65999400 fsub z0.s, p5/m, z0.s, #0.5
+65D98003 fsub z3.d, p0/m, z3.d, #0.5
+65999019 fsub z25.s, p4/m, z25.s, #0.5
+65D98C1B fsub z27.d, p3/m, z27.d, #0.5
+65599004 fsub z4.h, p4/m, z4.h, #0.5
+65999436 fsub z22.s, p5/m, z22.s, #1.0
+65D9943B fsub z27.d, p5/m, z27.d, #1.0
+6599943B fsub z27.s, p5/m, z27.s, #1.0
+65999026 fsub z6.s, p4/m, z6.s, #1.0
+65999809 fsub z9.s, p6/m, z9.s, #0.5
+65D98820 fsub z0.d, p2/m, z0.d, #1.0
+65599801 fsub z1.h, p6/m, z1.h, #0.5
+65598822 fsub z2.h, p2/m, z2.h, #1.0
+65D9881C fsub z28.d, p2/m, z28.d, #0.5
+6599880B fsub z11.s, p2/m, z11.s, #0.5
+6599841F fsub z31.s, p1/m, z31.s, #0.5
+65999C17 fsub z23.s, p7/m, z23.s, #0.5
+65198017 UNDEFINED

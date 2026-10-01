@@ -1,0 +1,24 @@
+// uqdech_z_zs_ 000|0010|0|size=01|1|0|imm4=xxxx|11|00|D=1|U=1|pattern=xxxxx|Zdn=xxxxx
+// UqdechZZs: UQDECH  <Zdn>.H{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+046ECD28 uqdech z8.h, vl16, mul #0xf
+0466CC34 uqdech z20.h, vl1, mul #0x7
+0466CEE1 uqdech z1.h, #0x17, mul #0x7
+046FCE8E uqdech z14.h, #0x14, mul #0x10
+046DCDAE uqdech z14.h, vl256, mul #0xe
+0461CD9F uqdech z31.h, vl128, mul #0x2
+046ACD96 uqdech z22.h, vl128, mul #0xb
+046FCCE2 uqdech z2.h, vl7, mul #0x10
+046ECF53 uqdech z19.h, #0x1a, mul #0xf
+0463CE93 uqdech z19.h, #0x14, mul #0x4
+046DCD35 uqdech z21.h, vl16, mul #0xe
+0469CE7A uqdech z26.h, #0x13, mul #0xa
+0466CC79 uqdech z25.h, vl3, mul #0x7
+0468CC72 uqdech z18.h, vl3, mul #0x9
+046DCC5A uqdech z26.h, vl2, mul #0xe
+046CCC63 uqdech z3.h, vl3, mul #0xd
+0460CC00 uqdech z0.h, pow2
+046ECFE8 uqdech z8.h, all, mul #0xf
+0464CE08 uqdech z8.h, #0x10, mul #0x5
+0462CD08 uqdech z8.h, vl8, mul #0x3
+046ECC88 uqdech z8.h, vl4, mul #0xf

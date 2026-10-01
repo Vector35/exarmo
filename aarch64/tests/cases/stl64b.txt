@@ -1,0 +1,6 @@
+// STL64B_64L_memop size=11|11|1|VR=0|0|0|A=0|R=1|1|Rs=11111|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Stl64b64lMemop: STL64B  <Xt>, [<Xn|SP> {, #0}]
+// register fields: Rn, Rt
+F87F9000 stl64b x0, [x0]
+F87F93E0 stl64b x0, [sp]
+F87F901F UNDEFINED

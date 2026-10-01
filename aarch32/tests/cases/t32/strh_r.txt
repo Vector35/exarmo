@@ -1,0 +1,33 @@
+// STRH_r_T1 0101|L=0|B=0|H=1|Rm=xxx|Rn=xxx|Rt=xxx
+// StrhRT1: STRH{<c>}{<q>}  <Rt>, [<Rn>, {<+>}<Rm>]
+// register fields: Rm, Rn, Rt
+// IT state read: condition
+5200 strh r0, [r0, r0]
+5201 strh r1, [r0, r0]
+5202 strh r2, [r0, r0]
+5203 strh r3, [r0, r0]
+5204 strh r4, [r0, r0]
+5205 strh r5, [r0, r0]
+5206 strh r6, [r0, r0]
+5207 strh r7, [r0, r0]
+5248 strh r0, [r1, r1]
+5290 strh r0, [r2, r2]
+52D8 strh r0, [r3, r3]
+5320 strh r0, [r4, r4]
+5368 strh r0, [r5, r5]
+53B0 strh r0, [r6, r6]
+53F8 strh r0, [r7, r7]
+5200 [ne] strhne r0, [r0, r0]
+5253 strh r3, [r2, r1]
+
+// STRH_r_T2 111|1100|00|size=01|L=0|Rn=xxxx|Rt=xxxx|000000|imm2=xx|Rm=xxxx
+// StrhRT2: STRH{<c>}{<q>}  <Rt>, [<Rn>, {<+>}<Rm>{, LSL #<imm>}]
+// register fields: Rn, Rt, Rm
+// IT state read: condition
+F8200000 strh r0, [r0, r0]
+F82F0000 UNALLOCATED
+F820F01F strh pc, [r0, pc, lsl #0x1] (unpredictable)
+F8200020 strh r0, [r0, r0, lsl #0x2]
+F8200030 strh r0, [r0, r0, lsl #0x3]
+F8200000 [ne] strhne r0, [r0, r0]
+F8212003 strh r2, [r1, r3]

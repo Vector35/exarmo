@@ -1,0 +1,57 @@
+// BIC_32_log_shift sf=0|opc=00|01010|shift=xx|N=1|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Bic32LogShift: BIC  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+0A797037 bic w23, w1, w25, lsr #0x1c
+0A3E3253 bic w19, w18, w30, lsl #0xc
+0AB44E62 bic w2, w19, w20, asr #0x13
+0AB73433 bic w19, w1, w23, asr #0xd
+0ABB6A1D bic w29, w16, w27, asr #0x1a
+0A722C10 bic w16, w0, w18, lsr #0xb
+0AED7800 bic w0, w0, w13, ror #0x1e
+0AE65D83 bic w3, w12, w6, ror #0x17
+0AF3409B bic w27, w4, w19, ror #0x10
+0ABA02F1 bic w17, w23, w26, asr #0x0
+0AEB56F8 bic w24, w23, w11, ror #0x15
+0AE757BF bic wzr, w29, w7, ror #0x15
+0A74775A bic w26, w26, w20, lsr #0x1d
+0AFD7FF9 bic w25, wzr, w29, ror #0x1f
+0A22276C bic w12, w27, w2, lsl #0x9
+0AAF30DA bic w26, w6, w15, asr #0xc
+0A607037 bic w23, w1, w0, lsr #0x1c
+0A7F7037 bic w23, w1, wzr, lsr #0x1c
+0A79FC37 UNDEFINED
+0A797337 bic w23, w25, w25, lsr #0x1c
+0A797039 bic w25, w1, w25, lsr #0x1c
+0A798037 UNDEFINED
+0A792037 bic w23, w1, w25, lsr #0x8
+0A791037 bic w23, w1, w25, lsr #0x4
+0A790837 bic w23, w1, w25, lsr #0x2
+0A790437 bic w23, w1, w25, lsr #0x1
+
+// BIC_64_log_shift sf=1|opc=00|01010|shift=xx|N=1|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Bic64LogShift: BIC  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+8AE4B8EF bic x15, x7, x4, ror #0x2e
+8ABF9741 bic x1, x26, xzr, asr #0x25
+8A371C9D bic fp, x4, x23, lsl #0x7
+8A32960F bic x15, x16, x18, lsl #0x25
+8A20ACD0 bic x16, x6, x0, lsl #0x2b
+8A648147 bic x7, x10, x4, lsr #0x20
+8AFE8D44 bic x4, x10, lr, ror #0x23
+8A3FF489 bic x9, x4, xzr, lsl #0x3d
+8A35E587 bic x7, x12, x21, lsl #0x39
+8AB9648E bic x14, x4, x25, asr #0x19
+8AEED213 bic x19, x16, x14, ror #0x34
+8A62C165 bic x5, x11, x2, lsr #0x30
+8ABF82EC bic x12, x23, xzr, asr #0x20
+8AA31F51 bic x17, x26, x3, asr #0x7
+8AF70620 bic x0, x17, x23, ror #0x1
+8AF63C1B bic x27, x0, x22, ror #0xf
+8AE403FF bic xzr, xzr, x4, ror #0x0
+8AE4FCEF bic x15, x7, x4, ror #0x3f
+8AE4B88F bic x15, x4, x4, ror #0x2e
+8AE4B8E4 bic x4, x7, x4, ror #0x2e
+8AE440EF bic x15, x7, x4, ror #0x10
+8AE420EF bic x15, x7, x4, ror #0x8
+8AE410EF bic x15, x7, x4, ror #0x4
+8AE408EF bic x15, x7, x4, ror #0x2

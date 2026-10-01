@@ -1,0 +1,21 @@
+// LDRD_l_A1 cond=xxxx|00|0|P=(1)|U=x|1|W=(0)|o1=0|Rn=1111|Rt=xxxx|imm4H=xxxx|1|op2=10|1|imm4L=xxxx
+// LdrdLA1: LDRD{<c>}{<q>}  <Rt>, <Rt2>, <label>
+// read together by <label>: imm4H, imm4L
+// register fields: Rt
+41ef00d9 ldrdmi r0, r1, 0x10011 (unpredictable)
+e04f19d0 ldrd r1, r2, 0xff78 (unpredictable)
+d1ef88dc ldrdle r8, r9, 0x10094 (unpredictable)
+61ef55de ldrdvs r5, r6, 0x10066 (unpredictable)
+114f50db ldrdne r5, r6, 0xfffd (unpredictable)
+304fc6d4 ldrdcc r12, sp, 0xffa4 (unpredictable)
+814f21d7 ldrdhi r2, r3, 0xfff1
+01EFFFDF UNPREDICTABLE
+F1EF00D9 UNALLOCATED
+21EF04D8 ldrdcs r0, r1, 0x10050 (unpredictable)
+41EF02D2 ldrdmi r0, r1, 0x1002a (unpredictable)
+41EF00D1 ldrdmi r0, r1, 0x10009 (unpredictable)
+41EF00D0 ldrdmi r0, r1, 0x10008 (unpredictable)
+41EF00DF ldrdmi r0, r1, 0x10017 (unpredictable)
+41EF0FD0 ldrdmi r0, r1, 0x100f8 (unpredictable)
+41EF0FDF ldrdmi r0, r1, 0x10107 (unpredictable)
+01EF00D9 ldrdeq r0, r1, 0x10011 (unpredictable)

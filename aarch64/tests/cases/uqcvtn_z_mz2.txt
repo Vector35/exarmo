@@ -1,0 +1,7 @@
+// uqcvtn_z_mz2_ 010|0010|1|0|tszh=0|1|tszl=10|00|1|0|10|0|U=1|0|Zn=xxxx|0|Zd=xxxxx
+// UqcvtnZMz2: UQCVTN  <Zd>.H, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+45314800 uqcvtn z0.h, {z0.s-z1.s}
+45314807 uqcvtn z7.h, {z0.s-z1.s}
+4531480E uqcvtn z14.h, {z0.s-z1.s}
+45314BDF uqcvtn z31.h, {z30.s-z31.s}

@@ -1,0 +1,119 @@
+// ORN_r_T1 1110101|op1=0011|S=0|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// OrnRT1: ORN{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EA600000 orn r0, r0, r0
+EA609F5F orn pc, r0, pc, lsr #0x5 (unpredictable)
+EA6020A0 orn r0, r0, r0, asr #0xa
+EA6030F0 orn r0, r0, r0, ror #0xf
+EA604000 orn r0, r0, r0, lsl #0x10
+EA605000 orn r0, r0, r0, lsl #0x14
+EA606000 orn r0, r0, r0, lsl #0x18
+EA607000 orn r0, r0, r0, lsl #0x1c
+EA600040 orn r0, r0, r0, lsl #0x1
+EA600080 orn r0, r0, r0, lsl #0x2
+EA6000C0 orn r0, r0, r0, lsl #0x3
+EA601000 orn r0, r0, r0, lsl #0x4
+EA601040 orn r0, r0, r0, lsl #0x5
+EA601080 orn r0, r0, r0, lsl #0x6
+EA6010C0 orn r0, r0, r0, lsl #0x7
+EA602000 orn r0, r0, r0, lsl #0x8
+EA602040 orn r0, r0, r0, lsl #0x9
+EA602080 orn r0, r0, r0, lsl #0xa
+EA6020C0 orn r0, r0, r0, lsl #0xb
+EA603000 orn r0, r0, r0, lsl #0xc
+EA603040 orn r0, r0, r0, lsl #0xd
+EA603080 orn r0, r0, r0, lsl #0xe
+EA6030C0 orn r0, r0, r0, lsl #0xf
+EA604040 orn r0, r0, r0, lsl #0x11
+EA604080 orn r0, r0, r0, lsl #0x12
+EA6040C0 orn r0, r0, r0, lsl #0x13
+EA605040 orn r0, r0, r0, lsl #0x15
+EA605080 orn r0, r0, r0, lsl #0x16
+EA6050C0 orn r0, r0, r0, lsl #0x17
+EA606040 orn r0, r0, r0, lsl #0x19
+EA606080 orn r0, r0, r0, lsl #0x1a
+EA6060C0 orn r0, r0, r0, lsl #0x1b
+EA607040 orn r0, r0, r0, lsl #0x1d
+EA607080 orn r0, r0, r0, lsl #0x1e
+EA6070C0 orn r0, r0, r0, lsl #0x1f
+EA600000 [ne] ornne r0, r0, r0
+EA610203 orn r2, r1, r3
+
+// ORN_r_T1_RRX 1110101|op1=0011|S=0|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// OrnRT1Rrx: ORN{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+ea628f3b orn pc, r2, r11, rrx (unpredictable)
+ea6c0531 orn r5, r12, r1, rrx
+ea670230 orn r2, r7, r0, rrx
+ea6a0838 orn r8, r10, r8, rrx
+ea648b3e orn r11, r4, lr, rrx (unpredictable)
+ea650a3d orn r10, r5, sp, rrx
+ea618037 orn r0, r1, r7, rrx (unpredictable)
+ea668e3b orn lr, r6, r11, rrx (unpredictable)
+EA608F3F orn pc, r0, pc, rrx (unpredictable)
+EA62823B orn r2, r2, r11, rrx (unpredictable)
+EA628F32 orn pc, r2, r2, rrx (unpredictable)
+EA628F3B [ne] ornne pc, r2, r11, rrx (unpredictable)
+
+// ORNS_r_T1 1110101|op1=0011|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// OrnsRT1: ORNS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EA700000 orns r0, r0, r0
+EA709F5F orns pc, r0, pc, lsr #0x5 (unpredictable)
+EA7020A0 orns r0, r0, r0, asr #0xa
+EA7030F0 orns r0, r0, r0, ror #0xf
+EA704000 orns r0, r0, r0, lsl #0x10
+EA705000 orns r0, r0, r0, lsl #0x14
+EA706000 orns r0, r0, r0, lsl #0x18
+EA707000 orns r0, r0, r0, lsl #0x1c
+EA700040 orns r0, r0, r0, lsl #0x1
+EA700080 orns r0, r0, r0, lsl #0x2
+EA7000C0 orns r0, r0, r0, lsl #0x3
+EA701000 orns r0, r0, r0, lsl #0x4
+EA701040 orns r0, r0, r0, lsl #0x5
+EA701080 orns r0, r0, r0, lsl #0x6
+EA7010C0 orns r0, r0, r0, lsl #0x7
+EA702000 orns r0, r0, r0, lsl #0x8
+EA702040 orns r0, r0, r0, lsl #0x9
+EA702080 orns r0, r0, r0, lsl #0xa
+EA7020C0 orns r0, r0, r0, lsl #0xb
+EA703000 orns r0, r0, r0, lsl #0xc
+EA703040 orns r0, r0, r0, lsl #0xd
+EA703080 orns r0, r0, r0, lsl #0xe
+EA7030C0 orns r0, r0, r0, lsl #0xf
+EA704040 orns r0, r0, r0, lsl #0x11
+EA704080 orns r0, r0, r0, lsl #0x12
+EA7040C0 orns r0, r0, r0, lsl #0x13
+EA705040 orns r0, r0, r0, lsl #0x15
+EA705080 orns r0, r0, r0, lsl #0x16
+EA7050C0 orns r0, r0, r0, lsl #0x17
+EA706040 orns r0, r0, r0, lsl #0x19
+EA706080 orns r0, r0, r0, lsl #0x1a
+EA7060C0 orns r0, r0, r0, lsl #0x1b
+EA707040 orns r0, r0, r0, lsl #0x1d
+EA707080 orns r0, r0, r0, lsl #0x1e
+EA7070C0 orns r0, r0, r0, lsl #0x1f
+EA700000 [ne] ornsne r0, r0, r0
+EA710203 orns r2, r1, r3
+
+// ORNS_r_T1_RRX 1110101|op1=0011|S=1|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// OrnsRT1Rrx: ORNS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+ea730c38 orns r12, r3, r8, rrx
+ea71863d orns r6, r1, sp, rrx (unpredictable)
+ea7d893f orns r9, sp, pc, rrx (unpredictable)
+ea74833b orns r3, r4, r11, rrx (unpredictable)
+ea728535 orns r5, r2, r5, rrx (unpredictable)
+ea7d8e35 orns lr, sp, r5, rrx (unpredictable)
+ea7a0033 orns r0, r10, r3, rrx
+ea780a3d orns r10, r8, sp, rrx
+EA700F30 orns pc, r0, r0, rrx (unpredictable)
+EA730338 orns r3, r3, r8, rrx
+EA730C33 orns r12, r3, r3, rrx
+EA730C38 [ne] ornsne r12, r3, r8, rrx

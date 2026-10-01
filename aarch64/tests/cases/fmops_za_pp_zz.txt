@@ -1,0 +1,52 @@
+// fmops_za_pp_zz_16 1|00|0000|1|10|0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|10|0|ZAda=x
+// FmopsZaPpZz16: FMOPS  <ZAda>.H, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+81800038 fmops za0.h, p0/m, p0/m, z1.h, z0.h
+818000D9 fmops za1.h, p0/m, p0/m, z6.h, z0.h
+81800118 fmops za0.h, p0/m, p0/m, z8.h, z0.h
+819F2418 fmops za0.h, p1/m, p1/m, z0.h, z31.h
+81804BF8 fmops za0.h, p2/m, p2/m, z31.h, z0.h
+81806C38 fmops za0.h, p3/m, p3/m, z1.h, z0.h
+81809038 fmops za0.h, p4/m, p4/m, z1.h, z0.h
+8180B438 fmops za0.h, p5/m, p5/m, z1.h, z0.h
+8180D838 fmops za0.h, p6/m, p6/m, z1.h, z0.h
+8180FC38 fmops za0.h, p7/m, p7/m, z1.h, z0.h
+81800018 fmops za0.h, p0/m, p0/m, z0.h, z0.h
+81858C59 fmops za1.h, p3/m, p4/m, z2.h, z5.h
+
+// fmops_za_pp_zz_32 1|00|0000|0|10|0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|00|ZAda=xx
+// FmopsZaPpZz32: FMOPS  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.S, <Zm>.S
+// register fields: Zm, Pm, Pn, Zn, ZAda
+80851312 fmops za2.s, p4/m, p0/m, z24.s, z5.s
+80947950 fmops za0.s, p6/m, p3/m, z10.s, z20.s
+808C3D33 fmops za3.s, p7/m, p1/m, z9.s, z12.s
+8090E3D3 fmops za3.s, p0/m, p7/m, z30.s, z16.s
+8085F752 fmops za2.s, p5/m, p7/m, z26.s, z5.s
+808D8BD3 fmops za3.s, p2/m, p4/m, z30.s, z13.s
+8091C610 fmops za0.s, p1/m, p6/m, z16.s, z17.s
+809721B0 fmops za0.s, p0/m, p1/m, z13.s, z23.s
+80804C11 fmops za1.s, p3/m, p2/m, z0.s, z0.s
+809FB3F2 fmops za2.s, p4/m, p5/m, z31.s, z31.s
+8085B092 fmops za2.s, p4/m, p5/m, z4.s, z5.s
+80820312 fmops za2.s, p0/m, p0/m, z24.s, z2.s
+80851012 fmops za2.s, p4/m, p0/m, z0.s, z5.s
+80851310 fmops za0.s, p4/m, p0/m, z24.s, z5.s
+80851052 fmops za2.s, p4/m, p0/m, z2.s, z5.s
+
+// fmops_za_pp_zz_64 1|0|0|0000|0|11|0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|0|ZAda=xxx
+// FmopsZaPpZz64: FMOPS  <ZAda>.D, <Pn>/M, <Pm>/M, <Zn>.D, <Zm>.D
+// register fields: Zm, Pm, Pn, Zn, ZAda
+80C8A077 fmops za7.d, p0/m, p5/m, z3.d, z8.d
+80DAA1D2 fmops za2.d, p0/m, p5/m, z14.d, z26.d
+80DA2251 fmops za1.d, p0/m, p1/m, z18.d, z26.d
+80CC9731 fmops za1.d, p5/m, p4/m, z25.d, z12.d
+80C26671 fmops za1.d, p1/m, p3/m, z19.d, z2.d
+80D3D973 fmops za3.d, p6/m, p6/m, z11.d, z19.d
+80C45952 fmops za2.d, p6/m, p2/m, z10.d, z4.d
+80DE6AB2 fmops za2.d, p2/m, p3/m, z21.d, z30.d
+80C00C10 fmops za0.d, p3/m, p0/m, z0.d, z0.d
+80DFF3F4 fmops za4.d, p4/m, p7/m, z31.d, z31.d
+80C8BC75 fmops za5.d, p7/m, p5/m, z3.d, z8.d
+80C8A076 fmops za6.d, p0/m, p5/m, z3.d, z8.d
+80C0A077 fmops za7.d, p0/m, p5/m, z3.d, z0.d
+80C8A017 fmops za7.d, p0/m, p5/m, z0.d, z8.d

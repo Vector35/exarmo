@@ -1,0 +1,44 @@
+// UDIV_32_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|00001|o1=0|Rn=xxxxx|Rd=xxxxx
+// Udiv32Dp2src: UDIV  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1ACC0866 udiv w6, w3, w12
+1AC70900 udiv w0, w8, w7
+1AD40848 udiv w8, w2, w20
+1AD00848 udiv w8, w2, w16
+1AD50AC8 udiv w8, w22, w21
+1ACF0AEA udiv w10, w23, w15
+1AD80809 udiv w9, w0, w24
+1ACF0B07 udiv w7, w24, w15
+1AC2098D udiv w13, w12, w2
+1AD70919 udiv w25, w8, w23
+1ADC0BC4 udiv w4, w30, w28
+1AD70B02 udiv w2, w24, w23
+1AC60A03 udiv w3, w16, w6
+1ACD09B7 udiv w23, w13, w13
+1AD509C4 udiv w4, w14, w21
+1AC70846 udiv w6, w2, w7
+1AC00BFF udiv wzr, wzr, w0
+1ADF0866 udiv w6, w3, wzr
+1ACC086C udiv w12, w3, w12
+
+// UDIV_64_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|00001|o1=0|Rn=xxxxx|Rd=xxxxx
+// Udiv64Dp2src: UDIV  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9ADF09D9 udiv x25, x14, xzr
+9AC608B2 udiv x18, x5, x6
+9ADC0A47 udiv x7, x18, x28
+9ACD0891 udiv x17, x4, x13
+9AD60B95 udiv x21, x28, x22
+9AC30BB4 udiv x20, fp, x3
+9ADC0979 udiv x25, x11, x28
+9AC20992 udiv x18, x12, x2
+9AD90878 udiv x24, x3, x25
+9ADD0A91 udiv x17, x20, fp
+9AC308CB udiv x11, x6, x3
+9AC60B26 udiv x6, x25, x6
+9AC30AF0 udiv x16, x23, x3
+9AC4085D udiv fp, x2, x4
+9AD408A7 udiv x7, x5, x20
+9AC20A8E udiv x14, x20, x2
+9AC00800 udiv x0, x0, x0
+9ADF0BFF udiv xzr, xzr, xzr

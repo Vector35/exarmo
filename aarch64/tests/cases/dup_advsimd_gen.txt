@@ -1,0 +1,33 @@
+// DUP_asimdins_DR_r 0|Q=x|op=0|0|111|00|00|imm5=xxxxx|0|imm4=0001|1|Rn=xxxxx|Rd=xxxxx
+// DupAsimdinsDrR: DUP  <Vd>.<T>, <n>
+// read together by <T>: Q, imm5
+// read together by <n>: imm5, Rn
+// register fields: Rn, Rd
+4E010E3D dup v29.16b, w17
+4E030D41 dup v1.16b, w10
+4E150FAA dup v10.16b, w29
+4E150FC7 dup v7.16b, w30
+0E070D84 dup v4.8b, w12
+0E020D78 dup v24.4h, w11
+4E0E0C52 dup v18.8h, w2
+4E0A0C7B dup v27.8h, w3
+4E180ECD dup v13.2d, x22
+0E1F0C85 dup v5.8b, w4
+4E1D0DE9 dup v9.16b, w15
+4E180D37 dup v23.2d, x9
+4E050F49 dup v9.16b, w26
+4E140D84 dup v4.4s, w12
+0E1E0CB1 dup v17.4h, w5
+0E060E14 dup v20.4h, w16
+4E010C00 dup v0.16b, w0
+4E010FFF dup v31.16b, wzr
+4E000E3D UNDEFINED
+0E000E3D UNDEFINED
+4E1F0E3D dup v29.16b, w17
+4E000C1D UNDEFINED
+4E000FFD UNDEFINED
+4E1F0C1D dup v29.16b, w0
+4E1F0FFD dup v29.16b, wzr
+4E100E3D UNDEFINED
+4E080E3D dup v29.2d, x17
+4E040E3D dup v29.4s, w17

@@ -1,0 +1,134 @@
+// LDRAA_64_ldst_pac size=11|111|VR=0|00|M=0|S=x|1|imm9=xxxxxxxxx|W=0|1|Rn=xxxxx|Rt=xxxxx
+// Ldraa64LdstPac: LDRAA  <Xt>, [<Xn|SP>{, #<simm>}]
+// read together by <simm>: S, imm9
+// register fields: Rn, Rt
+F8246596 ldraa x22, [x12, #0x230]
+F87734B0 ldraa x16, [x5, #-0x468]
+F861746E ldraa x14, [x3, #-0xf48]
+F86F8687 ldraa x7, [x20, #-0x840]
+F87CD51B ldraa x27, [x8, #-0x198]
+F828A424 ldraa x4, [x1, #0x450]
+F83B659E ldraa lr, [x12, #0xdb0]
+F861865C ldraa x28, [x18, #-0xf40]
+F87AC483 ldraa x3, [x4, #-0x2a0]
+F8226729 ldraa x9, [x25, #0x130]
+F86255AD ldraa x13, [x13, #-0xed8]
+F868C66E ldraa x14, [x19, #-0xba0]
+F8219493 ldraa x19, [x4, #0xc8]
+F872943B ldraa x27, [x1, #-0x6b8]
+F872F4E9 ldraa x9, [x7, #-0x688]
+F87EF558 ldraa x24, [x10, #-0x88]
+F8200400 ldraa x0, [x0]
+F83FF7FF ldraa xzr, [sp, #0xff8]
+F8600596 ldraa x22, [x12, #-0x1000]
+F87FF596 ldraa x22, [x12, #-0x8]
+F8300596 ldraa x22, [x12, #0x800]
+F8280596 ldraa x22, [x12, #0x400]
+F8240596 ldraa x22, [x12, #0x200]
+F8220596 ldraa x22, [x12, #0x100]
+F8210596 ldraa x22, [x12, #0x80]
+F8208596 ldraa x22, [x12, #0x40]
+F8204596 ldraa x22, [x12, #0x20]
+F8202596 ldraa x22, [x12, #0x10]
+F8201596 ldraa x22, [x12, #0x8]
+
+// LDRAA_64W_ldst_pac size=11|111|VR=0|00|M=0|S=x|1|imm9=xxxxxxxxx|W=1|1|Rn=xxxxx|Rt=xxxxx
+// Ldraa64wLdstPac: LDRAA  <Xt>, [<Xn|SP>{, #<simm>}]!
+// read together by <simm>: S, imm9
+// register fields: Rn, Rt
+F8279E2E ldraa x14, [x17, #0x3c8]!
+F8388CA3 ldraa x3, [x5, #0xc40]!
+F8705CF3 ldraa x19, [x7, #-0x7d8]!
+F837FE17 ldraa x23, [x16, #0xbf8]!
+F8227F00 ldraa x0, [x24, #0x138]!
+F8295C90 ldraa x16, [x4, #0x4a8]!
+F862CEDC ldraa x28, [x22, #-0xea0]!
+F8230F61 ldraa x1, [x27, #0x180]!
+F8745D0C ldraa x12, [x8, #-0x5d8]!
+F830CF67 ldraa x7, [x27, #0x860]!
+F82EBE1D ldraa fp, [x16, #0x758]!
+F83DFDBA ldraa x26, [x13, #0xef8]!
+F8673DFC ldraa x28, [x15, #-0xc68]!
+F8649DDC ldraa x28, [x14, #-0xdb8]!
+F8342C43 ldraa x3, [x2, #0xa10]!
+F8656CFF ldraa xzr, [x7, #-0xd50]!
+F8200C0E ldraa x14, [x0]!
+F83FFFEE ldraa x14, [sp, #0xff8]!
+F8600E31 ldraa x17, [x17, #-0x1000]! (unpredictable)
+F87FFE2E ldraa x14, [x17, #-0x8]!
+F8300E2E ldraa x14, [x17, #0x800]!
+F8280E2E ldraa x14, [x17, #0x400]!
+F8240E2E ldraa x14, [x17, #0x200]!
+F8220E2E ldraa x14, [x17, #0x100]!
+F8210E2E ldraa x14, [x17, #0x80]!
+F8208E2E ldraa x14, [x17, #0x40]!
+F8204E2E ldraa x14, [x17, #0x20]!
+F8202E2E ldraa x14, [x17, #0x10]!
+F8201E2E ldraa x14, [x17, #0x8]!
+
+// LDRAB_64_ldst_pac size=11|111|VR=0|00|M=1|S=x|1|imm9=xxxxxxxxx|W=0|1|Rn=xxxxx|Rt=xxxxx
+// Ldrab64LdstPac: LDRAB  <Xt>, [<Xn|SP>{, #<simm>}]
+// read together by <simm>: S, imm9
+// register fields: Rn, Rt
+F8B9B5BA ldrab x26, [x13, #0xcd8]
+F8AFF79C ldrab x28, [x28, #0x7f8]
+F8B674D0 ldrab x16, [x6, #0xb38]
+F8BD776D ldrab x13, [x27, #0xeb8]
+F8A0F55E ldrab lr, [x10, #0x78]
+F8A324CF ldrab x15, [x6, #0x190]
+F8A05458 ldrab x24, [x2, #0x28]
+F8AEC511 ldrab x17, [x8, #0x760]
+F8FDE6A2 ldrab x2, [x21, #-0x110]
+F8B895C1 ldrab x1, [x14, #0xc48]
+F8A3B6F1 ldrab x17, [x23, #0x1d8]
+F8FFB40C ldrab x12, [x0, #-0x28]
+F8ABB698 ldrab x24, [x20, #0x5d8]
+F8E78680 ldrab x0, [x20, #-0xc40]
+F8BFF5D6 ldrab x22, [x14, #0xff8]
+F8BA27C1 ldrab x1, [lr, #0xd10]
+F8A007FF ldrab xzr, [sp]
+F8E005BA ldrab x26, [x13, #-0x1000]
+F8FFF5BA ldrab x26, [x13, #-0x8]
+F8B005BA ldrab x26, [x13, #0x800]
+F8A805BA ldrab x26, [x13, #0x400]
+F8A405BA ldrab x26, [x13, #0x200]
+F8A205BA ldrab x26, [x13, #0x100]
+F8A105BA ldrab x26, [x13, #0x80]
+F8A085BA ldrab x26, [x13, #0x40]
+F8A045BA ldrab x26, [x13, #0x20]
+F8A025BA ldrab x26, [x13, #0x10]
+F8A015BA ldrab x26, [x13, #0x8]
+
+// LDRAB_64W_ldst_pac size=11|111|VR=0|00|M=1|S=x|1|imm9=xxxxxxxxx|W=1|1|Rn=xxxxx|Rt=xxxxx
+// Ldrab64wLdstPac: LDRAB  <Xt>, [<Xn|SP>{, #<simm>}]!
+// read together by <simm>: S, imm9
+// register fields: Rn, Rt
+F8AC1C5A ldrab x26, [x2, #0x608]!
+F8F4FE0A ldrab x10, [x16, #-0x588]!
+F8B82D3F ldrab xzr, [x9, #0xc10]!
+F8A98FE2 ldrab x2, [sp, #0x4c0]!
+F8BC9FF8 ldrab x24, [sp, #0xe48]!
+F8B62C33 ldrab x19, [x1, #0xb10]!
+F8A5FD99 ldrab x25, [x12, #0x2f8]!
+F8BBECDD ldrab fp, [x6, #0xdf0]!
+F8FF3F57 ldrab x23, [x26, #-0x68]!
+F8A61E4F ldrab x15, [x18, #0x308]!
+F8E23DD3 ldrab x19, [x14, #-0xee8]!
+F8FF6E31 ldrab x17, [x17, #-0x50]! (unpredictable)
+F8B21EC5 ldrab x5, [x22, #0x908]!
+F8B4BE6E ldrab x14, [x19, #0xa58]!
+F8EEFF53 ldrab x19, [x26, #-0x888]!
+F8AECDFC ldrab x28, [x15, #0x760]!
+F8A00C00 ldrab x0, [x0]! (unpredictable)
+F8BFFC5A ldrab x26, [x2, #0xff8]!
+F8E00C5A ldrab x26, [x2, #-0x1000]!
+F8FFFC5A ldrab x26, [x2, #-0x8]!
+F8B00C5A ldrab x26, [x2, #0x800]!
+F8A80C5A ldrab x26, [x2, #0x400]!
+F8A40C5A ldrab x26, [x2, #0x200]!
+F8A20C5A ldrab x26, [x2, #0x100]!
+F8A10C5A ldrab x26, [x2, #0x80]!
+F8A08C5A ldrab x26, [x2, #0x40]!
+F8A04C5A ldrab x26, [x2, #0x20]!
+F8A02C5A ldrab x26, [x2, #0x10]!
+F8A01C5A ldrab x26, [x2, #0x8]!

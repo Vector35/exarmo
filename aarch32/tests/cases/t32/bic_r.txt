@@ -1,0 +1,142 @@
+// BIC_r_T1 010000|op=1110|Rm=xxx|Rdn=xxx
+// BicRT1: BIC<c>{<q>}  {<Rdn>, }<Rdn>, <Rm>
+// T1bBicRT1: BICS{<q>}  {<Rdn>, }<Rdn>, <Rm>
+// register fields: Rm, Rdn
+// IT state read: condition, in block
+4380 bics r0, r0
+4381 bics r1, r0
+4382 bics r2, r0
+4383 bics r3, r0
+4384 bics r4, r0
+4385 bics r5, r0
+4386 bics r6, r0
+4387 bics r7, r0
+4388 bics r0, r1
+4390 bics r0, r2
+4398 bics r0, r3
+43A0 bics r0, r4
+43A8 bics r0, r5
+43B0 bics r0, r6
+43B8 bics r0, r7
+4380 [ne] bicne r0, r0
+
+// BIC_r_T2 1110101|op1=0001|S=0|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// BicRT2: BIC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EA200000 bic r0, r0, r0
+EA2F9F5F bic pc, pc, pc, lsr #0x5 (unpredictable)
+EA2020A0 bic r0, r0, r0, asr #0xa
+EA2030F0 bic r0, r0, r0, ror #0xf
+EA204000 bic r0, r0, r0, lsl #0x10
+EA205000 bic r0, r0, r0, lsl #0x14
+EA206000 bic r0, r0, r0, lsl #0x18
+EA207000 bic r0, r0, r0, lsl #0x1c
+EA200040 bic r0, r0, r0, lsl #0x1
+EA200080 bic r0, r0, r0, lsl #0x2
+EA2000C0 bic r0, r0, r0, lsl #0x3
+EA201000 bic r0, r0, r0, lsl #0x4
+EA201040 bic r0, r0, r0, lsl #0x5
+EA201080 bic r0, r0, r0, lsl #0x6
+EA2010C0 bic r0, r0, r0, lsl #0x7
+EA202000 bic r0, r0, r0, lsl #0x8
+EA202040 bic r0, r0, r0, lsl #0x9
+EA202080 bic r0, r0, r0, lsl #0xa
+EA2020C0 bic r0, r0, r0, lsl #0xb
+EA203000 bic r0, r0, r0, lsl #0xc
+EA203040 bic r0, r0, r0, lsl #0xd
+EA203080 bic r0, r0, r0, lsl #0xe
+EA2030C0 bic r0, r0, r0, lsl #0xf
+EA204040 bic r0, r0, r0, lsl #0x11
+EA204080 bic r0, r0, r0, lsl #0x12
+EA2040C0 bic r0, r0, r0, lsl #0x13
+EA205040 bic r0, r0, r0, lsl #0x15
+EA205080 bic r0, r0, r0, lsl #0x16
+EA2050C0 bic r0, r0, r0, lsl #0x17
+EA206040 bic r0, r0, r0, lsl #0x19
+EA206080 bic r0, r0, r0, lsl #0x1a
+EA2060C0 bic r0, r0, r0, lsl #0x1b
+EA207040 bic r0, r0, r0, lsl #0x1d
+EA207080 bic r0, r0, r0, lsl #0x1e
+EA2070C0 bic r0, r0, r0, lsl #0x1f
+EA200000 [ne] bicne r0, r0, r0
+EA210203 bic r2, r1, r3
+
+// BIC_r_T2_RRX 1110101|op1=0001|S=0|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// BicRT2Rrx: BIC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+ea2c843d bic r4, r12, sp, rrx (unpredictable)
+ea210534 bic r5, r1, r4, rrx
+ea26813d bic r1, r6, sp, rrx (unpredictable)
+ea268237 bic r2, r6, r7, rrx (unpredictable)
+ea23003c bic r0, r3, r12, rrx
+ea27813e bic r1, r7, lr, rrx (unpredictable)
+ea268e34 bic lr, r6, r4, rrx (unpredictable)
+ea29073c bic r7, r9, r12, rrx
+EA208F30 bic pc, r0, r0, rrx (unpredictable)
+EA2F843F bic r4, pc, pc, rrx (unpredictable)
+EA2C8C3D bic r12, r12, sp, rrx (unpredictable)
+EA2C843C bic r4, r12, r12, rrx (unpredictable)
+EA2C8434 bic r4, r12, r4, rrx (unpredictable)
+EA2C843D [ne] bicne r4, r12, sp, rrx (unpredictable)
+
+// BICS_r_T2 1110101|op1=0001|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// BicsRT2: BICS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EA300000 bics r0, r0, r0
+EA3F9F5F bics pc, pc, pc, lsr #0x5 (unpredictable)
+EA3020A0 bics r0, r0, r0, asr #0xa
+EA3030F0 bics r0, r0, r0, ror #0xf
+EA304000 bics r0, r0, r0, lsl #0x10
+EA305000 bics r0, r0, r0, lsl #0x14
+EA306000 bics r0, r0, r0, lsl #0x18
+EA307000 bics r0, r0, r0, lsl #0x1c
+EA300040 bics r0, r0, r0, lsl #0x1
+EA300080 bics r0, r0, r0, lsl #0x2
+EA3000C0 bics r0, r0, r0, lsl #0x3
+EA301000 bics r0, r0, r0, lsl #0x4
+EA301040 bics r0, r0, r0, lsl #0x5
+EA301080 bics r0, r0, r0, lsl #0x6
+EA3010C0 bics r0, r0, r0, lsl #0x7
+EA302000 bics r0, r0, r0, lsl #0x8
+EA302040 bics r0, r0, r0, lsl #0x9
+EA302080 bics r0, r0, r0, lsl #0xa
+EA3020C0 bics r0, r0, r0, lsl #0xb
+EA303000 bics r0, r0, r0, lsl #0xc
+EA303040 bics r0, r0, r0, lsl #0xd
+EA303080 bics r0, r0, r0, lsl #0xe
+EA3030C0 bics r0, r0, r0, lsl #0xf
+EA304040 bics r0, r0, r0, lsl #0x11
+EA304080 bics r0, r0, r0, lsl #0x12
+EA3040C0 bics r0, r0, r0, lsl #0x13
+EA305040 bics r0, r0, r0, lsl #0x15
+EA305080 bics r0, r0, r0, lsl #0x16
+EA3050C0 bics r0, r0, r0, lsl #0x17
+EA306040 bics r0, r0, r0, lsl #0x19
+EA306080 bics r0, r0, r0, lsl #0x1a
+EA3060C0 bics r0, r0, r0, lsl #0x1b
+EA307040 bics r0, r0, r0, lsl #0x1d
+EA307080 bics r0, r0, r0, lsl #0x1e
+EA3070C0 bics r0, r0, r0, lsl #0x1f
+EA300000 [ne] bicsne r0, r0, r0
+EA310203 bics r2, r1, r3
+
+// BICS_r_T2_RRX 1110101|op1=0001|S=1|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// BicsRT2Rrx: BICS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+ea330f30 bics pc, r3, r0, rrx (unpredictable)
+ea34093e bics r9, r4, lr, rrx
+ea3f8931 bics r9, pc, r1, rrx (unpredictable)
+ea320336 bics r3, r2, r6, rrx
+ea330137 bics r1, r3, r7, rrx
+ea30843b bics r4, r0, r11, rrx (unpredictable)
+ea3d8d3f bics sp, sp, pc, rrx (unpredictable)
+ea348134 bics r1, r4, r4, rrx (unpredictable)
+EA330030 bics r0, r3, r0, rrx
+EA330F3F bics pc, r3, pc, rrx (unpredictable)
+EA330F30 [ne] bicsne pc, r3, r0, rrx (unpredictable)

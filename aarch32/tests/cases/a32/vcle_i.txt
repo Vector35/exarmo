@@ -1,0 +1,40 @@
+// VCLE_i_A1_D 111100111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|011|Q=0|M=x|0|Vm=xxxx
+// VcleIA1D: VCLE{<c>}{<q>}.<dt>  {<Dd>, }<Dm>, #0
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f97186 vcle.s32 d23, d6, #0
+f3f9d182 vcle.s32 d29, d2, #0
+f3b1018f vcle.s8 d0, d15, #0
+f3f9c18c vcle.s32 d28, d12, #0
+f3f9b58b vcle.f32 d27, d11, #0
+f3f151a9 vcle.s8 d21, d25, #0
+f3f5958b vcle.f16 d25, d11, #0
+f3b511a8 vcle.s16 d1, d24, #0
+F3FD7186 UNDEFINED
+F3F9F180 vcle.s32 d31, d0, #0x0
+F3F98184 vcle.s32 d24, d4, #0x0
+F3F94181 vcle.s32 d20, d1, #0x0
+F3F92180 vcle.s32 d18, d0, #0x0
+F3F17586 UNDEFINED
+F3FD7586 UNDEFINED
+F3B9F1A0 vcle.s32 d15, d16, #0x0
+F3F901AF vcle.s32 d16, d31, #0x0
+F3F9F186 vcle.s32 d31, d6, #0x0
+
+// VCLE_i_A1_Q 111100111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|011|Q=1|M=x|0|Vm=xxxx
+// VcleIA1Q: VCLE{<c>}{<q>}.<dt>  {<Qd>, }<Qm>, #0
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f541ce vcle.s16 q10, q7, #0
+f3b9e5e0 vcle.f32 q7, q8, #0
+F3F101C8 vcle.s8 q8, q4, #0x0
+F3FDF1CF UNDEFINED
+F3F181C4 vcle.s8 q12, q2, #0x0
+F3F525C2 vcle.f16 q9, q1, #0x0
+F3F115C1 UNDEFINED
+F3B901C0 vcle.s32 q0, q0, #0x0
+F3BDF1CF UNDEFINED
+F3FDF5EF UNDEFINED
+F3F501CE vcle.s16 q8, q7, #0x0

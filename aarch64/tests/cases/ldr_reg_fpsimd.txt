@@ -1,0 +1,222 @@
+// LDR_B_ldst_regoff size=00|111|VR=1|00|opc=01|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// LdrBLdstRegoff: LDR  <Bt>, [<Xn|SP>, (<Wm>|<Xm>), <extend> {<amount>}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+3C60E9F4 ldr b20, [x15, x0, sxtx]
+3C60F870 ldr b16, [x3, x0, sxtx #0x0]
+3C6CF89C ldr b28, [x4, x12, sxtx #0x0]
+3C6CCA84 ldr b4, [x20, w12, sxtw]
+3C6C5BBA ldr b26, [fp, w12, uxtw #0x0]
+3C6CEB76 ldr b22, [x27, x12, sxtx]
+3C72FB39 ldr b25, [x25, x18, sxtx #0x0]
+3C78D861 ldr b1, [x3, w24, sxtw #0x0]
+3C67F974 ldr b20, [x11, x7, sxtx #0x0]
+3C66E853 ldr b19, [x2, x6, sxtx]
+3C78FABA ldr b26, [x21, x24, sxtx #0x0]
+3C76493A ldr b26, [x9, w22, uxtw]
+3C75D89F ldr b31, [x4, w21, sxtw #0x0]
+3C77C86C ldr b12, [x3, w23, sxtw]
+3C6FDBD6 ldr b22, [lr, w15, sxtw #0x0]
+3C7D59B4 ldr b20, [x13, w29, uxtw #0x0]
+3C7FE800 ldr b0, [x0, xzr, sxtx]
+3C60EBF4 ldr b20, [sp, x0, sxtx]
+3C6009F4 UNDEFINED
+3C6029F4 UNDEFINED
+3C6089F4 UNDEFINED
+3C60A9F4 UNDEFINED
+3C6049F4 ldr b20, [x15, w0, uxtw]
+3C60C9F4 ldr b20, [x15, w0, sxtw]
+3C7F09F4 UNDEFINED
+3C7F29F4 UNDEFINED
+3C7F49F4 ldr b20, [x15, wzr, uxtw]
+3C7F89F4 UNDEFINED
+3C7FA9F4 UNDEFINED
+3C7FC9F4 ldr b20, [x15, wzr, sxtw]
+3C60E814 ldr b20, [x0, x0, sxtx]
+3C60E9E0 ldr b0, [x15, x0, sxtx]
+
+// LDR_BL_ldst_regoff size=00|111|VR=1|00|opc=01|1|Rm=xxxxx|option=011|S=x|10|Rn=xxxxx|Rt=xxxxx
+// LdrBlLdstRegoff: LDR  <Bt>, [<Xn|SP>, <Xm>{, LSL <amount>}]
+// register fields: Rm, Rn, Rt
+3C626983 ldr b3, [x12, x2]
+3C6E78A7 ldr b7, [x5, x14, lsl #0x0]
+3C616AD0 ldr b16, [x22, x1]
+3C65788C ldr b12, [x4, x5, lsl #0x0]
+3C647960 ldr b0, [x11, x4, lsl #0x0]
+3C7D7956 ldr b22, [x10, fp, lsl #0x0]
+3C667837 ldr b23, [x1, x6, lsl #0x0]
+3C646995 ldr b21, [x12, x4]
+3C606B9E ldr b30, [x28, x0]
+3C687B83 ldr b3, [x28, x8, lsl #0x0]
+3C7768D3 ldr b19, [x6, x23]
+3C696ACD ldr b13, [x22, x9]
+3C7D69D3 ldr b19, [x14, fp]
+3C6468C5 ldr b5, [x6, x4]
+3C6A6969 ldr b9, [x11, x10]
+3C6F6AAD ldr b13, [x21, x15]
+3C7F681F ldr b31, [x0, xzr]
+3C626BE3 ldr b3, [sp, x2]
+3C626843 ldr b3, [x2, x2]
+3C62698C ldr b12, [x12, x2]
+
+// LDR_D_ldst_regoff size=11|111|VR=1|00|opc=01|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// LdrDLdstRegoff: LDR  <Dt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+FC69CA7A ldr d26, [x19, w9, sxtw]
+FC6AFA27 ldr d7, [x17, x10, sxtx #0x3]
+FC77FBD7 ldr d23, [lr, x23, sxtx #0x3]
+FC7979EA ldr d10, [x15, x25, lsl #0x3]
+FC6C4A0C ldr d12, [x16, w12, uxtw]
+FC786941 ldr d1, [x10, x24]
+FC756A58 ldr d24, [x18, x21]
+FC6A59F0 ldr d16, [x15, w10, uxtw #0x3]
+FC747A4A ldr d10, [x18, x20, lsl #0x3]
+FC694B6D ldr d13, [x27, w9, uxtw]
+FC777BD1 ldr d17, [lr, x23, lsl #0x3]
+FC73FA77 ldr d23, [x19, x19, sxtx #0x3]
+FC78DAE5 ldr d5, [x23, w24, sxtw #0x3]
+FC6AD870 ldr d16, [x3, w10, sxtw #0x3]
+FC6B5810 ldr d16, [x0, w11, uxtw #0x3]
+FC63C864 ldr d4, [x3, w3, sxtw]
+FC60CBE0 ldr d0, [sp, w0, sxtw]
+FC7FCA7F ldr d31, [x19, wzr, sxtw]
+FC690A7A UNDEFINED
+FC692A7A UNDEFINED
+FC698A7A UNDEFINED
+FC69AA7A UNDEFINED
+FC600A7A UNDEFINED
+FC602A7A UNDEFINED
+FC604A73 ldr d19, [x19, w0, uxtw]
+FC606A7A ldr d26, [x19, x0]
+FC608A7A UNDEFINED
+FC60AA7A UNDEFINED
+FC60EA7A ldr d26, [x19, x0, sxtx]
+FC7F0A7A UNDEFINED
+FC7F2A7A UNDEFINED
+FC7F4A7A ldr d26, [x19, wzr, uxtw]
+FC7F6A7A ldr d26, [x19, xzr]
+FC7F8A7A UNDEFINED
+FC7FAA7A UNDEFINED
+FC7FEA7A ldr d26, [x19, xzr, sxtx]
+
+// LDR_H_ldst_regoff size=01|111|VR=1|00|opc=01|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// LdrHLdstRegoff: LDR  <Ht>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+7C60EA9D ldr h29, [x20, x0, sxtx]
+7C74C8CE ldr h14, [x6, w20, sxtw]
+7C7F593B ldr h27, [x9, wzr, uxtw #0x1]
+7C6579EB ldr h11, [x15, x5, lsl #0x1]
+7C75CBA1 ldr h1, [fp, w21, sxtw]
+7C637BB0 ldr h16, [fp, x3, lsl #0x1]
+7C6ADB4D ldr h13, [x26, w10, sxtw #0x1]
+7C7A586F ldr h15, [x3, w26, uxtw #0x1]
+7C7CCBC2 ldr h2, [lr, w28, sxtw]
+7C78F803 ldr h3, [x0, x24, sxtx #0x1]
+7C75DAB7 ldr h23, [x21, w21, sxtw #0x1]
+7C657BCD ldr h13, [lr, x5, lsl #0x1]
+7C65DB08 ldr h8, [x24, w5, sxtw #0x1]
+7C6459B1 ldr h17, [x13, w4, uxtw #0x1]
+7C6AE8F8 ldr h24, [x7, x10, sxtx]
+7C745851 ldr h17, [x2, w20, uxtw #0x1]
+7C60EBE0 ldr h0, [sp, x0, sxtx]
+7C60EA9F ldr h31, [x20, x0, sxtx]
+7C600A9D UNDEFINED
+7C602A9D UNDEFINED
+7C608A9D UNDEFINED
+7C60AA9D UNDEFINED
+7C604A94 ldr h20, [x20, w0, uxtw]
+7C606A9D ldr h29, [x20, x0]
+7C60CA9D ldr h29, [x20, w0, sxtw]
+7C7F0A9D UNDEFINED
+7C7F2A9D UNDEFINED
+7C7F6A9D ldr h29, [x20, xzr]
+7C7F8A9D UNDEFINED
+7C7FAA9D UNDEFINED
+7C7FCA9D ldr h29, [x20, wzr, sxtw]
+7C7FEA9D ldr h29, [x20, xzr, sxtx]
+
+// LDR_Q_ldst_regoff size=00|111|VR=1|00|opc=11|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// LdrQLdstRegoff: LDR  <Qt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+3CE8C8F2 ldr q18, [x7, w8, sxtw]
+3CEA5B3E ldr q30, [x25, w10, uxtw #0x4]
+3CE4E898 ldr q24, [x4, x4, sxtx]
+3CE16B17 ldr q23, [x24, x1]
+3CF3C82A ldr q10, [x1, w19, sxtw]
+3CFFCB4D ldr q13, [x26, wzr, sxtw]
+3CF1EBFA ldr q26, [sp, x17, sxtx]
+3CE95AAB ldr q11, [x21, w9, uxtw #0x4]
+3CE0E815 ldr q21, [x0, x0, sxtx]
+3CE2C9D3 ldr q19, [x14, w2, sxtw]
+3CF05A2A ldr q10, [x17, w16, uxtw #0x4]
+3CE5EAF6 ldr q22, [x23, x5, sxtx]
+3CF9D82C ldr q12, [x1, w25, sxtw #0x4]
+3CF449CD ldr q13, [x14, w20, uxtw]
+3CEADA56 ldr q22, [x18, w10, sxtw #0x4]
+3CF2CA41 ldr q1, [x18, w18, sxtw]
+3CE8C8E0 ldr q0, [x7, w8, sxtw]
+3CE8C8FF ldr q31, [x7, w8, sxtw]
+3CE808F2 UNDEFINED
+3CE828F2 UNDEFINED
+3CE888F2 UNDEFINED
+3CE8A8F2 UNDEFINED
+3CE008F2 UNDEFINED
+3CE028F2 UNDEFINED
+3CE048E7 ldr q7, [x7, w0, uxtw]
+3CE068F2 ldr q18, [x7, x0]
+3CE088F2 UNDEFINED
+3CE0A8F2 UNDEFINED
+3CE0C8F2 ldr q18, [x7, w0, sxtw]
+3CFF08F2 UNDEFINED
+3CFF28F2 UNDEFINED
+3CFF48F2 ldr q18, [x7, wzr, uxtw]
+3CFF68F2 ldr q18, [x7, xzr]
+3CFF88F2 UNDEFINED
+3CFFA8F2 UNDEFINED
+3CFFE8F2 ldr q18, [x7, xzr, sxtx]
+3CE8C8E8 ldr q8, [x7, w8, sxtw]
+
+// LDR_S_ldst_regoff size=10|111|VR=1|00|opc=01|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// LdrSLdstRegoff: LDR  <St>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+BC787857 ldr s23, [x2, x24, lsl #0x2]
+BC7F6A15 ldr s21, [x16, xzr]
+BC7D494B ldr s11, [x10, w29, uxtw]
+BC635AA1 ldr s1, [x21, w3, uxtw #0x2]
+BC72D8B4 ldr s20, [x5, w18, sxtw #0x2]
+BC7C7811 ldr s17, [x0, x28, lsl #0x2]
+BC6CCA75 ldr s21, [x19, w12, sxtw]
+BC7AD8A2 ldr s2, [x5, w26, sxtw #0x2]
+BC71C931 ldr s17, [x9, w17, sxtw]
+BC7CD818 ldr s24, [x0, w28, sxtw #0x2]
+BC617ACF ldr s15, [x22, x1, lsl #0x2]
+BC6B7AEC ldr s12, [x23, x11, lsl #0x2]
+BC79486D ldr s13, [x3, w25, uxtw]
+BC6F7861 ldr s1, [x3, x15, lsl #0x2]
+BC74DB68 ldr s8, [x27, w20, sxtw #0x2]
+BC7059BE ldr s30, [x13, w16, uxtw #0x2]
+BC60FBE0 ldr s0, [sp, x0, sxtx #0x2]
+BC78785F ldr s31, [x2, x24, lsl #0x2]
+BC781857 UNDEFINED
+BC783857 UNDEFINED
+BC789857 UNDEFINED
+BC78B857 UNDEFINED
+BC601857 UNDEFINED
+BC603857 UNDEFINED
+BC605842 ldr s2, [x2, w0, uxtw #0x2]
+BC607857 ldr s23, [x2, x0, lsl #0x2]
+BC609857 UNDEFINED
+BC60B857 UNDEFINED
+BC60D857 ldr s23, [x2, w0, sxtw #0x2]
+BC7F1857 UNDEFINED
+BC7F3857 UNDEFINED
+BC7F5857 ldr s23, [x2, wzr, uxtw #0x2]
+BC7F9857 UNDEFINED
+BC7FB857 UNDEFINED
+BC7FD857 ldr s23, [x2, wzr, sxtw #0x2]
+BC7FF857 ldr s23, [x2, xzr, sxtx #0x2]
+BC787B17 ldr s23, [x24, x24, lsl #0x2]

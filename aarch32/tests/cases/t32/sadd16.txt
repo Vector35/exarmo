@@ -1,0 +1,17 @@
+// SADD16_T1 111|11010|1|op1=001|Rn=xxxx|1111|Rd=xxxx|0|U=0|H=0|S=0|Rm=xxxx
+// Sadd16T1: SADD16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa94ff0a sadd16 pc, r4, r10 (unpredictable)
+fa93fc0f sadd16 r12, r3, pc (unpredictable)
+fa9ffb0c sadd16 r11, pc, r12 (unpredictable)
+fa98f90c sadd16 r9, r8, r12
+fa9bf30a sadd16 r3, r11, r10
+fa9afd00 sadd16 sp, r10, r0
+fa93ff00 sadd16 pc, r3, r0 (unpredictable)
+fa9cf501 sadd16 r5, r12, r1
+FA90F00A sadd16 r0, r0, r10
+FA94F40A sadd16 r4, r4, r10
+FA94FF04 sadd16 pc, r4, r4 (unpredictable)
+FA94FF0F sadd16 pc, r4, pc (unpredictable)
+FA94FF0A [ne] sadd16ne pc, r4, r10 (unpredictable)

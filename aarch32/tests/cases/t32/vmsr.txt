@@ -1,0 +1,20 @@
+// VMSR_T1_AS 111|0|11|10|111|L=0|reg=xxxx|Rt=xxxx|1|010|(0)(0)(0)|1|(0)(0)(0)(0)
+// VmsrT1As: VMSR{<c>}{<q>}  <spec_reg>, <Rt>
+// register fields: Rt
+// IT state read: condition
+eee04ab0 vmsr fpsid, r4 (unpredictable)
+eee83ade vmsr fpexc, r3 (unpredictable)
+eee00af4 vmsr fpsid, r0 (unpredictable)
+eee84a9c vmsr fpexc, r4 (unpredictable)
+eee1cad6 vmsr fpscr, r12 (unpredictable)
+eee84a18 vmsr fpexc, r4 (unpredictable)
+eee04a33 vmsr fpsid, r4 (unpredictable)
+eee8cab9 vmsr fpexc, r12 (unpredictable)
+EEEF4AB0 UNDEFINED
+EEE44AB0 UNDEFINED
+EEE24AB0 UNDEFINED
+EEE0FA5F vmsr fpsid, pc (unpredictable)
+EEE04A72 vmsr fpsid, r4 (unpredictable)
+EEE04AB1 vmsr fpsid, r4 (unpredictable)
+EEE04AB0 [ne] vmsrne fpsid, r4 (unpredictable)
+EEE04A10 vmsr fpsid, r4

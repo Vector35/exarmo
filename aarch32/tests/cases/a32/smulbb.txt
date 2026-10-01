@@ -1,0 +1,76 @@
+// SMULBB_A1 cond=xxxx|00010|opc=11|0|Rd=xxxx|Ra=(0)(0)(0)(0)|Rm=xxxx|1|M=0|N=0|0|Rn=xxxx
+// SmulbbA1: SMULBB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+0166688d smulbbeq r6, sp, r8 (unpredictable)
+616fe789 smulbbvs pc, r9, r7 (unpredictable)
+b16e718e smulbblt lr, lr, r1 (unpredictable)
+216a2182 smulbbhs r10, r2, r1 (unpredictable)
+2169408b smulbbhs r9, r11, r0 (unpredictable)
+c169fc85 smulbbgt r9, r5, r12 (unpredictable)
+416daa8a smulbbmi sp, r10, r10 (unpredictable)
+b162d886 smulbblt r2, r6, r8 (unpredictable)
+// Binary Ninja's tests
+a1610089 smulbbge r1, r9, r0
+e1630089 smulbb r3, r9, r0
+F166688D UNALLOCATED
+81608F80 smulbbhi r0, r0, pc (unpredictable)
+1166168F smulbbne r6, pc, r6 (unpredictable)
+
+// SMULBT_A1 cond=xxxx|00010|opc=11|0|Rd=xxxx|Ra=(0)(0)(0)(0)|Rm=xxxx|1|M=1|N=0|0|Rn=xxxx
+// SmulbtA1: SMULBT{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+4160c1c3 smulbtmi r0, r3, r1 (unpredictable)
+5165e3c3 smulbtpl r5, r3, r3 (unpredictable)
+216a9ac6 smulbths r10, r6, r10 (unpredictable)
+1161a1c9 smulbtne r1, r9, r1 (unpredictable)
+c1689acc smulbtgt r8, r12, r10 (unpredictable)
+e16e2eca smulbt lr, r10, lr (unpredictable)
+316c64c5 smulbtlo r12, r5, r4 (unpredictable)
+21671cc9 smulbths r7, r9, r12 (unpredictable)
+// Binary Ninja's tests
+d16504c6 smulbtle r5, r6, r4
+e16501c4 smulbt r5, r4, r1
+016FF0C0 smulbteq pc, r0, r0 (unpredictable)
+F160C1C3 UNALLOCATED
+81608FCF smulbthi r0, pc, pc (unpredictable)
+416041C0 smulbtmi r0, r0, r1 (unpredictable)
+
+// SMULTB_A1 cond=xxxx|00010|opc=11|0|Rd=xxxx|Ra=(0)(0)(0)(0)|Rm=xxxx|1|M=0|N=1|0|Rn=xxxx
+// SmultbA1: SMULTB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+a161faa8 smultbge r1, r8, r10 (unpredictable)
+e162f1a6 smultb r2, r6, r1 (unpredictable)
+3162e6a3 smultblo r2, r3, r6 (unpredictable)
+11689ca3 smultbne r8, r3, r12 (unpredictable)
+b16774a4 smultblt r7, r4, r4 (unpredictable)
+b166f6ac smultblt r6, r12, r6 (unpredictable)
+b166f0ae smultblt r6, lr, r0 (unpredictable)
+516f8fad smultbpl pc, sp, pc (unpredictable)
+// Binary Ninja's tests
+116202a3 smultbne r2, r3, r2
+e16402a2 smultb r4, r2, r2
+01604AA0 smultbeq r0, r0, r10 (unpredictable)
+F161FAA8 UNALLOCATED
+81612AAF smultbhi r1, pc, r10 (unpredictable)
+41611AA1 smultbmi r1, r1, r10 (unpredictable)
+2161FAA8 smultbcs r1, r8, r10 (unpredictable)
+A16102A3 smultbge r1, r3, r2
+
+// SMULTT_A1 cond=xxxx|00010|opc=11|0|Rd=xxxx|Ra=(0)(0)(0)(0)|Rm=xxxx|1|M=1|N=1|0|Rn=xxxx
+// SmulttA1: SMULTT{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+116084e1 smulttne r0, r1, r4 (unpredictable)
+516044e2 smulttpl r0, r2, r4 (unpredictable)
+e16565e5 smultt r5, r5, r5 (unpredictable)
+316856ef smulttlo r8, pc, r6 (unpredictable)
+b16c6be6 smulttlt r12, r6, r11 (unpredictable)
+c164b0ed smulttgt r4, sp, r0 (unpredictable)
+c161fbe0 smulttgt r1, r0, r11 (unpredictable)
+b16f5ae1 smulttlt pc, r1, r10 (unpredictable)
+// Binary Ninja's tests
+016804e3 smultteq r8, r3, r4
+e16804e3 smultt r8, r3, r4
+F16084E1 UNALLOCATED
+81602FE1 smultthi r0, r1, pc (unpredictable)
+416014E1 smulttmi r0, r1, r4 (unpredictable)
+216084E1 smulttcs r0, r1, r4 (unpredictable)

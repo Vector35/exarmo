@@ -1,0 +1,11 @@
+// LDAPP_64_ldiappstilp size=11|01|1|0|0|10|L=1|0|Rt2=xxxxx|opc2=0111|10|Rn=xxxxx|Rt=xxxxx
+// Ldapp64Ldiappstilp: LDAPP  <Xt1>, <Xt2>, [<Xn|SP>{, #0}]
+// register fields: Rt2, Rn, Rt
+D9407801 ldapp x1, x0, [x0]
+D9407808 ldapp x8, x0, [x0]
+D940780F ldapp x15, x0, [x0]
+D95F7BE0 ldapp x0, xzr, [sp]
+D940781F ldapp xzr, x0, [x0]
+D9407800 ldapp x0, x0, [x0] (unpredictable)
+D9407821 ldapp x1, x0, [x1]
+D9417843 ldapp x3, x1, [x2]

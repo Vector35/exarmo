@@ -1,0 +1,12 @@
+// STLEXH_T1 111|0100|op0=0110|L=0|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=1|sz=01|Rd=xxxx
+// StlexhT1: STLEXH{<c>}{<q>}  <Rd>, <Rt>, [<Rn>]
+// register fields: Rn, Rt, Rd
+// IT state read: condition
+E8C000D0 stlexh r0, r0, [r0] (unpredictable)
+E8CFFFDF stlexh pc, pc, [pc] (unpredictable)
+E8C008D0 stlexh r0, r0, [r0] (unpredictable)
+E8C004D0 stlexh r0, r0, [r0] (unpredictable)
+E8C002D0 stlexh r0, r0, [r0] (unpredictable)
+E8C001D0 stlexh r0, r0, [r0] (unpredictable)
+E8C000D0 [ne] stlexhne r0, r0, [r0] (unpredictable)
+E8C12FD3 stlexh r3, r2, [r1]

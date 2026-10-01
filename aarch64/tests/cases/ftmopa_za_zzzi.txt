@@ -1,0 +1,29 @@
+// ftmopa_za_zzzi_h2x1 1|00|0000|1|01|0|Zm=xxxxx|0|0|0|K=x|Zk=xx|Zn=xxxx|i2=xx|1|0|0|ZAda=x
+// FtmopaZaZzziH2x1: FTMOPA  <ZAda>.H, { <Zn1>.H-<Zn2>.H }, <Zm>.H, <Zk>[<index>]
+// read together by <Zk>: K, Zk
+// register fields: Zm, Zn, ZAda
+81400009 ftmopa za1.h, {z0.h-z1.h}, z0.h, z20[0]
+81400048 ftmopa za0.h, {z2.h-z3.h}, z0.h, z20[0]
+81400079 ftmopa za1.h, {z2.h-z3.h}, z0.h, z20[3]
+815F17D9 ftmopa za1.h, {z30.h-z31.h}, z31.h, z29[1]
+81400829 ftmopa za1.h, {z0.h-z1.h}, z0.h, z22[2]
+81400C09 ftmopa za1.h, {z0.h-z1.h}, z0.h, z23[0]
+81400409 ftmopa za1.h, {z0.h-z1.h}, z0.h, z21[0]
+81401009 ftmopa za1.h, {z0.h-z1.h}, z0.h, z28[0]
+81401809 ftmopa za1.h, {z0.h-z1.h}, z0.h, z30[0]
+81401C09 ftmopa za1.h, {z0.h-z1.h}, z0.h, z31[0]
+
+// ftmopa_za_zzzi_s2x1 1|00|0000|0|01|0|Zm=xxxxx|0|0|0|K=x|Zk=xx|Zn=xxxx|i2=xx|0|0|ZAda=xx
+// FtmopaZaZzziS2x1: FTMOPA  <ZAda>.S, { <Zn1>.S-<Zn2>.S }, <Zm>.S, <Zk>[<index>]
+// read together by <Zk>: K, Zk
+// register fields: Zm, Zn, ZAda
+80400003 ftmopa za3.s, {z0.s-z1.s}, z0.s, z20[0]
+80400011 ftmopa za1.s, {z0.s-z1.s}, z0.s, z20[1]
+80400042 ftmopa za2.s, {z2.s-z3.s}, z0.s, z20[0]
+805F17E0 ftmopa za0.s, {z30.s-z31.s}, z31.s, z29[2]
+80400833 ftmopa za3.s, {z0.s-z1.s}, z0.s, z22[3]
+80400C03 ftmopa za3.s, {z0.s-z1.s}, z0.s, z23[0]
+80400400 ftmopa za0.s, {z0.s-z1.s}, z0.s, z21[0]
+80401000 ftmopa za0.s, {z0.s-z1.s}, z0.s, z28[0]
+80401803 ftmopa za3.s, {z0.s-z1.s}, z0.s, z30[0]
+80401C03 ftmopa za3.s, {z0.s-z1.s}, z0.s, z31[0]

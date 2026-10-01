@@ -1,0 +1,83 @@
+// STR_32_ldst_regoff size=10|111|VR=0|00|opc=00|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Str32LdstRegoff: STR  <Wt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+B82A7A62 str w2, [x19, x10, lsl #0x2]
+B83A6A59 str w25, [x18, x26]
+B8297A99 str w25, [x20, x9, lsl #0x2]
+B827FB1B str w27, [x24, x7, sxtx #0x2]
+B82A7944 str w4, [x10, x10, lsl #0x2]
+B829C88F str w15, [x4, w9, sxtw]
+B8355BA7 str w7, [fp, w21, uxtw #0x2]
+B8315B58 str w24, [x26, w17, uxtw #0x2]
+B82E59B3 str w19, [x13, w14, uxtw #0x2]
+B83FEA18 str w24, [x16, xzr, sxtx]
+B822C8F1 str w17, [x7, w2, sxtw]
+B829FADB str w27, [x22, x9, sxtx #0x2]
+B83B5902 str w2, [x8, w27, uxtw #0x2]
+B838FA52 str w18, [x18, x24, sxtx #0x2]
+B83BC961 str w1, [x11, w27, sxtw]
+B83CCB48 str w8, [x26, w28, sxtw]
+B8207800 str w0, [x0, x0, lsl #0x2]
+B82A7BFF str wzr, [sp, x10, lsl #0x2]
+B82A1A62 UNDEFINED
+B82A3A62 UNDEFINED
+B82A9A62 UNDEFINED
+B82ABA62 UNDEFINED
+B8201A62 UNDEFINED
+B8203A62 UNDEFINED
+B8205A62 str w2, [x19, w0, uxtw #0x2]
+B8209A62 UNDEFINED
+B820BA62 UNDEFINED
+B820DA62 str w2, [x19, w0, sxtw #0x2]
+B820FA62 str w2, [x19, x0, sxtx #0x2]
+B83F1A62 UNDEFINED
+B83F3A62 UNDEFINED
+B83F5A62 str w2, [x19, wzr, uxtw #0x2]
+B83F7A62 str w2, [x19, xzr, lsl #0x2]
+B83F9A62 UNDEFINED
+B83FBA62 UNDEFINED
+B83FDA62 str w2, [x19, wzr, sxtw #0x2]
+
+// STR_64_ldst_regoff size=11|111|VR=0|00|opc=00|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Str64LdstRegoff: STR  <Xt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+F833E969 str x9, [x11, x19, sxtx]
+F82249D8 str x24, [x14, w2, uxtw]
+F8385A87 str x7, [x20, w24, uxtw #0x3]
+F82B4BD7 str x23, [lr, w11, uxtw]
+F82BFAB8 str x24, [x21, x11, sxtx #0x3]
+F820D971 str x17, [x11, w0, sxtw #0x3]
+F82578EB str x11, [x7, x5, lsl #0x3]
+F830DA23 str x3, [x17, w16, sxtw #0x3]
+F8394BDF str xzr, [lr, w25, uxtw]
+F8216BD6 str x22, [lr, x1]
+F827DA64 str x4, [x19, w7, sxtw #0x3]
+F8354A27 str x7, [x17, w21, uxtw]
+F8226824 str x4, [x1, x2]
+F83BCA3E str lr, [x17, w27, sxtw]
+F828FB56 str x22, [x26, x8, sxtx #0x3]
+F823DB58 str x24, [x26, w3, sxtw #0x3]
+F83FE800 str x0, [x0, xzr, sxtx]
+F833EBE9 str x9, [sp, x19, sxtx]
+F8330969 UNDEFINED
+F8332969 UNDEFINED
+F8338969 UNDEFINED
+F833A969 UNDEFINED
+F8200969 UNDEFINED
+F8202969 UNDEFINED
+F8204969 str x9, [x11, w0, uxtw]
+F8206969 str x9, [x11, x0]
+F8208969 UNDEFINED
+F820A969 UNDEFINED
+F820E969 str x9, [x11, x0, sxtx]
+F83F0969 UNDEFINED
+F83F2969 UNDEFINED
+F83F4969 str x9, [x11, wzr, uxtw]
+F83F6969 str x9, [x11, xzr]
+F83F8969 UNDEFINED
+F83FA969 UNDEFINED
+F83FC969 str x9, [x11, wzr, sxtw]
+F833EA69 str x9, [x19, x19, sxtx]
+F833E973 str x19, [x11, x19, sxtx]

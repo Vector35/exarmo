@@ -1,0 +1,53 @@
+// fmopa_za_pp_zz_16 1|00|0000|1|10|0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=0|10|0|ZAda=x
+// FmopaZaPpZz16: FMOPA  <ZAda>.H, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+81800069 fmopa za1.h, p0/m, p0/m, z3.h, z0.h
+818000A8 fmopa za0.h, p0/m, p0/m, z5.h, z0.h
+81800149 fmopa za1.h, p0/m, p0/m, z10.h, z0.h
+819F2409 fmopa za1.h, p1/m, p1/m, z0.h, z31.h
+81804BE9 fmopa za1.h, p2/m, p2/m, z31.h, z0.h
+81806C69 fmopa za1.h, p3/m, p3/m, z3.h, z0.h
+81809069 fmopa za1.h, p4/m, p4/m, z3.h, z0.h
+8180B469 fmopa za1.h, p5/m, p5/m, z3.h, z0.h
+8180D869 fmopa za1.h, p6/m, p6/m, z3.h, z0.h
+8180FC69 fmopa za1.h, p7/m, p7/m, z3.h, z0.h
+81800009 fmopa za1.h, p0/m, p0/m, z0.h, z0.h
+81800029 fmopa za1.h, p0/m, p0/m, z1.h, z0.h
+81858C49 fmopa za1.h, p3/m, p4/m, z2.h, z5.h
+
+// fmopa_za_pp_zz_32 1|00|0000|0|10|0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=0|00|ZAda=xx
+// FmopaZaPpZz32: FMOPA  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.S, <Zm>.S
+// register fields: Zm, Pm, Pn, Zn, ZAda
+809B4941 fmopa za1.s, p2/m, p2/m, z10.s, z27.s
+80850B21 fmopa za1.s, p2/m, p0/m, z25.s, z5.s
+80942682 fmopa za2.s, p1/m, p1/m, z20.s, z20.s
+8090B322 fmopa za2.s, p4/m, p5/m, z25.s, z16.s
+80879442 fmopa za2.s, p5/m, p4/m, z2.s, z7.s
+80964482 fmopa za2.s, p1/m, p2/m, z4.s, z22.s
+80948442 fmopa za2.s, p1/m, p4/m, z2.s, z20.s
+80806101 fmopa za1.s, p0/m, p3/m, z8.s, z0.s
+809FCC00 fmopa za0.s, p3/m, p6/m, z0.s, z31.s
+809BFBE3 fmopa za3.s, p6/m, p7/m, z31.s, z27.s
+809B5D41 fmopa za1.s, p7/m, p2/m, z10.s, z27.s
+80824841 fmopa za1.s, p2/m, p2/m, z2.s, z2.s
+80814841 fmopa za1.s, p2/m, p2/m, z2.s, z1.s
+809B4942 fmopa za2.s, p2/m, p2/m, z10.s, z27.s
+
+// fmopa_za_pp_zz_64 1|0|0|0000|0|11|0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=0|0|ZAda=xxx
+// FmopaZaPpZz64: FMOPA  <ZAda>.D, <Pn>/M, <Pm>/M, <Zn>.D, <Zm>.D
+// register fields: Zm, Pm, Pn, Zn, ZAda
+80D69446 fmopa za6.d, p5/m, p4/m, z2.d, z22.d
+80C5F3A2 fmopa za2.d, p4/m, p7/m, z29.d, z5.d
+80CA1626 fmopa za6.d, p5/m, p0/m, z17.d, z10.d
+80DF9006 fmopa za6.d, p4/m, p4/m, z0.d, z31.d
+80C17BA4 fmopa za4.d, p6/m, p3/m, z29.d, z1.d
+80D6E825 fmopa za5.d, p2/m, p7/m, z1.d, z22.d
+80CCBEE3 fmopa za3.d, p7/m, p5/m, z23.d, z12.d
+80C67B20 fmopa za0.d, p6/m, p3/m, z25.d, z6.d
+80C023E1 fmopa za1.d, p0/m, p1/m, z31.d, z0.d
+80D64447 fmopa za7.d, p1/m, p2/m, z2.d, z22.d
+80D6CC46 fmopa za6.d, p3/m, p6/m, z2.d, z22.d
+80C494A6 fmopa za6.d, p5/m, p4/m, z5.d, z4.d
+80D696C5 fmopa za5.d, p5/m, p4/m, z22.d, z22.d
+80C69446 fmopa za6.d, p5/m, p4/m, z2.d, z6.d
+80D69442 fmopa za2.d, p5/m, p4/m, z2.d, z22.d

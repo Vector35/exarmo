@@ -1,0 +1,8 @@
+// UMLAL_T1 111|1101|11|op1=110|Rn=xxxx|RdLo=xxxx|RdHi=xxxx|op2=0000|Rm=xxxx
+// UmlalT1: UMLAL{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: Rn, RdLo, RdHi, Rm
+// IT state read: condition
+FBE00000 umlal r0, r0, r0, r0 (unpredictable)
+FBEFFF0F umlal pc, pc, pc, pc (unpredictable)
+FBE00000 [ne] umlalne r0, r0, r0, r0 (unpredictable)
+FBE12304 umlal r2, r3, r1, r4

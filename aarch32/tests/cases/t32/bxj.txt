@@ -1,0 +1,15 @@
+// BXJ_T1 111|10|0|1111|00|Rm=xxxx|1|0(0)0|(1)|(1)(1)(1)|(0)(0)|(0)|(0)(0)(0)(0)(0)
+// BxjT1: BXJ{<c>}{<q>}  <Rm>
+// register fields: Rm
+// IT state read: condition, last in block
+F3C08000 bxj r0 (unpredictable)
+F3CFA97F bxj pc (unpredictable)
+F3C08290 bxj r0 (unpredictable)
+F3C083C8 bxj r0 (unpredictable)
+F3C08404 bxj r0 (unpredictable)
+F3C08502 bxj r0 (unpredictable)
+F3C08601 bxj r0 (unpredictable)
+F3C08700 bxj r0 (unpredictable)
+F3C08000 [ne] bxjne r0 (unpredictable)
+F3C08000 [ne last] bxjne r0 (unpredictable)
+F3C08F00 bxj r0

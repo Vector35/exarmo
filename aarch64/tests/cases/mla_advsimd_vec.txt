@@ -1,0 +1,25 @@
+// MLA_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=10010|1|Rn=xxxxx|Rd=xxxxx
+// MlaAsimdsameOnly: MLA  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4E229440 mla v0.16b, v2.16b, v2.16b
+0EAE97AF mla v15.2s, v29.2s, v14.2s
+0E21971C mla v28.8b, v24.8b, v1.8b
+0EBC97C8 mla v8.2s, v30.2s, v28.2s
+0E3A94B7 mla v23.8b, v5.8b, v26.8b
+0E2F9792 mla v18.8b, v28.8b, v15.8b
+4EBD96B7 mla v23.4s, v21.4s, v29.4s
+4E69955D mla v29.8h, v10.8h, v9.8h
+0EA596C3 mla v3.2s, v22.2s, v5.2s
+0E359644 mla v4.8b, v18.8b, v21.8b
+0E3B9690 mla v16.8b, v20.8b, v27.8b
+0E759537 mla v23.4h, v9.4h, v21.4h
+4E3795DE mla v30.16b, v14.16b, v23.16b
+4E3994EE mla v14.16b, v7.16b, v25.16b
+4EAA9788 mla v8.4s, v28.4s, v10.4s
+0E709796 mla v22.4h, v28.4h, v16.4h
+4E20941F mla v31.16b, v0.16b, v0.16b
+4E3F97E0 mla v0.16b, v31.16b, v31.16b
+4EE29440 UNDEFINED
+0EE29440 UNDEFINED
+4E229442 mla v2.16b, v2.16b, v2.16b

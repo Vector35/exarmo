@@ -1,0 +1,18 @@
+// bfmul_z_zzi_h 011|0010|0|0|i3h=x|1|i3l=xx|Zm=xxx|0010|o2=1|0|Zn=xxxxx|Zd=xxxxx
+// BfmulZZziH: BFMUL  <Zd>.H, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zd
+64202805 bfmul z5.h, z0.h, z0.h[0]
+6420280C bfmul z12.h, z0.h, z0.h[0]
+64202813 bfmul z19.h, z0.h, z0.h[0]
+64692BE0 bfmul z0.h, z31.h, z1.h[5]
+6432281F bfmul z31.h, z0.h, z2.h[2]
+643B2805 bfmul z5.h, z0.h, z3.h[3]
+64242805 bfmul z5.h, z0.h, z4.h[0]
+64252805 bfmul z5.h, z0.h, z5.h[0]
+64262805 bfmul z5.h, z0.h, z6.h[0]
+64272805 bfmul z5.h, z0.h, z7.h[0]
+64282800 bfmul z0.h, z0.h, z0.h[1]
+64602805 bfmul z5.h, z0.h, z0.h[4]
+64702805 bfmul z5.h, z0.h, z0.h[6]
+64782805 bfmul z5.h, z0.h, z0.h[7]

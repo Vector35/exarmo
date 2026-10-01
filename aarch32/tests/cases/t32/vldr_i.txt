@@ -1,0 +1,73 @@
+// VLDR_T1_D 1110110|P=1|U=x|D=x|W=0|L=1|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxxx
+// VldrT1D: VLDR{<c>}{<q>}{<.64>}  <Dd>, [<Rn> {, #{<+/->}<imm>}]
+// read together by <Dd>: D, Vd
+// register fields: Rn
+// IT state read: condition
+ed568ba0 vldr d24, [r6, #-640]
+ed9a0b45 vldr d0, [r10, #276]
+ed920b21 vldr d0, [r2, #132]
+ed1b2bfe vldr d2, [r11, #-1016]
+ed9b1bbc vldr d1, [r11, #752]
+ed556b51 vldr d22, [r5, #-324]
+ed577b05 vldr d23, [r7, #-20]
+ed977b32 vldr d7, [r7, #200]
+ED50FB00 vldr d31, [r0, #-0x0]
+ED564BFF vldr d20, [r6, #-0x3fc]
+ED16FB80 vldr d15, [r6, #-0x200]
+ED560B40 vldr d16, [r6, #-0x100]
+ED56FB20 vldr d31, [r6, #-0x80]
+ED568B10 vldr d24, [r6, #-0x40]
+ED568B08 vldr d24, [r6, #-0x20]
+ED568B04 vldr d24, [r6, #-0x10]
+ED568B02 vldr d24, [r6, #-0x8]
+ED568B01 vldr d24, [r6, #-0x4]
+ED568BA0 [ne] vldrne d24, [r6, #-0x280]
+
+// VLDR_T1_H 1110110|P=1|U=x|D=x|W=0|L=1|Rn=xxxx|Vd=xxxx|10|size=01|imm8=xxxxxxxx
+// VldrT1H: VLDR{<c>}{<q>}.16  <Sd>, [<Rn> {, #{<+/->}<imm>}]
+// read together by <Sd>: D, Vd
+// register fields: Rn
+// IT state read: condition
+ed94e9e6 vldr.16 s28, [r4, #460]
+ed16d979 vldr.16 s26, [r6, #-242]
+ed170902 vldr.16 s0, [r7, #-4]
+ed1b19ee vldr.16 s2, [r11, #-476]
+ed16e9df vldr.16 s28, [r6, #-446]
+edde6911 vldr.16 s13, [lr, #34]
+ed1189bd vldr.16 s16, [r1, #-378]
+ed54290e vldr.16 s5, [r4, #-28]
+ED90F900 vldr.16 s30, [r0]
+ED9449FF vldr.16 s8, [r4, #0x1fe]
+ED94F980 vldr.16 s30, [r4, #0x100]
+EDD40940 vldr.16 s1, [r4, #0x80]
+EDD4F920 vldr.16 s31, [r4, #0x40]
+ED94E910 vldr.16 s28, [r4, #0x20]
+ED94E908 vldr.16 s28, [r4, #0x10]
+ED94E904 vldr.16 s28, [r4, #0x8]
+ED94E901 vldr.16 s28, [r4, #0x2]
+ED94E9E6 [ne] vldrne.16 s28, [r4, #0x1cc] (unpredictable)
+
+// VLDR_T1_S 1110110|P=1|U=x|D=x|W=0|L=1|Rn=xxxx|Vd=xxxx|10|size=10|imm8=xxxxxxxx
+// VldrT1S: VLDR{<c>}{<q>}{<.32>}  <Sd>, [<Rn> {, #{<+/->}<imm>}]
+// read together by <Sd>: D, Vd
+// register fields: Rn
+// IT state read: condition
+ed134a62 vldr s8, [r3, #-392]
+ed956a60 vldr s12, [r5, #384]
+ed12bad4 vldr s22, [r2, #-848]
+ed9d6a29 vldr s12, [sp, #164]
+ed5d1aa3 vldr s3, [sp, #-652]
+edd6aa67 vldr s21, [r6, #412]
+eddc8aa5 vldr s17, [r12, #660]
+ed557ab1 vldr s15, [r5, #-708]
+ED100A00 vldr s0, [r0, #-0x0]
+ED13FAFF vldr s30, [r3, #-0x3fc]
+ED132A80 vldr s4, [r3, #-0x200]
+ED130A40 vldr s0, [r3, #-0x100]
+ED13FA20 vldr s30, [r3, #-0x80]
+ED530A10 vldr s1, [r3, #-0x40]
+ED53FA08 vldr s31, [r3, #-0x20]
+ED134A04 vldr s8, [r3, #-0x10]
+ED134A02 vldr s8, [r3, #-0x8]
+ED134A01 vldr s8, [r3, #-0x4]
+ED134A62 [ne] vldrne s8, [r3, #-0x188]

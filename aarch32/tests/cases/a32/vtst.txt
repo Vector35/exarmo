@@ -1,0 +1,44 @@
+// VTST_A1_D 1111001|U=0|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1000|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VtstA1D: VTST{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f218a817 vtst.16 d10, d8, d7
+f205d891 vtst.8 d13, d21, d1
+f244189e vtst.8 d17, d20, d14
+f252283a vtst.16 d18, d2, d26
+f21b083e vtst.16 d0, d11, d30
+f215883e vtst.16 d8, d5, d30
+f228b8b8 vtst.32 d11, d24, d24
+f24d981f vtst.8 d25, d13, d15
+F238A817 UNDEFINED
+F210F810 vtst.16 d15, d0, d0
+F21F4814 vtst.16 d4, d15, d4
+F211F812 vtst.16 d15, d1, d2
+F2500810 vtst.16 d16, d0, d0
+F250F8B0 vtst.16 d31, d16, d16
+F21FA83F vtst.16 d10, d15, d31
+F21FA897 vtst.16 d10, d31, d7
+
+// VTST_A1_Q 1111001|U=0|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1000|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VtstA1Q: VTST{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f2088878 vtst.8 q4, q4, q12
+f22e6858 vtst.32 q3, q7, q4
+f20668dc vtst.8 q3, q11, q6
+f22e68de vtst.32 q3, q15, q7
+f222a856 vtst.32 q5, q1, q3
+f25ee8f2 vtst.16 q15, q15, q9
+f22c6856 vtst.32 q3, q6, q3
+f256e8fe vtst.16 q15, q11, q15
+F23FF87F UNDEFINED
+F2000870 vtst.8 q0, q0, q8
+F2044874 vtst.8 q2, q2, q10
+F2011871 UNDEFINED
+F2002850 vtst.8 q1, q0, q0
+F20008F0 vtst.8 q0, q8, q8
+F20FF85F UNDEFINED
+F2480878 vtst.8 q8, q4, q12
+F24FF8FF UNDEFINED

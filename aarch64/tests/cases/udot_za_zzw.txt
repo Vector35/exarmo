@@ -1,0 +1,26 @@
+// udot_za_zzw_2x2 1|10|0000|11|sz=x|1|Zm=xxxx|00|Rv=xx|101|Zn=xxxx|0|U=1|0|off3=xxx
+// UdotZaZzw2x2: UDOT  ZA.<T>[<Wv>, <offs>{, VGx2}], { <Zn1>.<Tb>-<Zn2>.<Tb> }, { <Zm1>.<Tb>-<Zm2>.<Tb> }
+// register fields: Zm, Rv, Zn
+C1A01410 udot za.s[w8, 0, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A01417 udot za.s[w8, 7, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A01456 udot za.s[w8, 6, vgx2], {z2.b-z3.b}, {z0.b-z1.b}
+C1FE37D1 udot za.d[w9, 1, vgx2], {z30.h-z31.h}, {z30.h-z31.h}
+C1A05412 udot za.s[w10, 2, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A07413 udot za.s[w11, 3, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A01414 udot za.s[w8, 4, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A01415 udot za.s[w8, 5, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A254D0 udot za.s[w10, 0, vgx2], {z6.b-z7.b}, {z2.b-z3.b}
+
+// udot_za_zzw_4x4 1|10|0000|11|sz=x|1|Zm=xxx|0|10|Rv=xx|101|Zn=xxx|00|U=1|0|off3=xxx
+// UdotZaZzw4x4: UDOT  ZA.<T>[<Wv>, <offs>{, VGx4}], { <Zn1>.<Tb>-<Zn4>.<Tb> }, { <Zm1>.<Tb>-<Zm4>.<Tb> }
+// register fields: Zm, Rv, Zn
+C1A11415 udot za.s[w8, 5, vgx4], {z0.b-z3.b}, {z0.b-z3.b}
+C1A11493 udot za.s[w8, 3, vgx4], {z4.b-z7.b}, {z0.b-z3.b}
+C1A11511 udot za.s[w8, 1, vgx4], {z8.b-z11.b}, {z0.b-z3.b}
+C1E53590 udot za.d[w9, 0, vgx4], {z12.h-z15.h}, {z4.h-z7.h}
+C1A95612 udot za.s[w10, 2, vgx4], {z16.b-z19.b}, {z8.b-z11.b}
+C1AD7694 udot za.s[w11, 4, vgx4], {z20.b-z23.b}, {z12.b-z15.b}
+C1B11716 udot za.s[w8, 6, vgx4], {z24.b-z27.b}, {z16.b-z19.b}
+C1B51797 udot za.s[w8, 7, vgx4], {z28.b-z31.b}, {z20.b-z23.b}
+C1B91415 udot za.s[w8, 5, vgx4], {z0.b-z3.b}, {z24.b-z27.b}
+C1BD1415 udot za.s[w8, 5, vgx4], {z0.b-z3.b}, {z28.b-z31.b}

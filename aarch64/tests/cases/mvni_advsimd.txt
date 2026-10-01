@@ -1,0 +1,788 @@
+// MVNI_asimdimm_L_hl 0|Q=x|op=1|0111100000|a=x|b=x|c=x|cmode=10x0|o2=0|1|d=x|e=x|f=x|g=x|h=x|Rd=xxxxx
+// MvniAsimdimmLHl: MVNI  <Vd>.<T>, #<imm8>{, LSL #<amount>}
+// read together by <imm8>: a, b, c, d, e, f, g, h
+// register fields: Rd
+2F0286D3 mvni v19.4h, #0x56
+6F0585F2 mvni v18.8h, #0xaf
+2F05A6A9 mvni v9.4h, #0xb5, lsl #0x8
+6F0087F6 mvni v22.8h, #0x1f
+2F03A7A6 mvni v6.4h, #0x7d, lsl #0x8
+6F05A58F mvni v15.8h, #0xac, lsl #0x8
+2F068742 mvni v2.4h, #0xda
+6F00A7C9 mvni v9.8h, #0x1e, lsl #0x8
+2F0385BB mvni v27.4h, #0x6d
+2F0485E4 mvni v4.4h, #0x8f
+2F04879C mvni v28.4h, #0x9c
+6F068526 mvni v6.8h, #0xc9
+2F0784A5 mvni v5.4h, #0xe5
+6F03A424 mvni v4.8h, #0x61, lsl #0x8
+6F008720 mvni v0.8h, #0x19
+2F0186D8 mvni v24.4h, #0x36
+2F0286DF mvni v31.4h, #0x56
+2F008413 mvni v19.4h, #0x0
+2F008433 mvni v19.4h, #0x1
+2F008453 mvni v19.4h, #0x2
+2F008473 mvni v19.4h, #0x3
+2F008493 mvni v19.4h, #0x4
+2F0084B3 mvni v19.4h, #0x5
+2F0084D3 mvni v19.4h, #0x6
+2F0084F3 mvni v19.4h, #0x7
+2F008513 mvni v19.4h, #0x8
+2F008533 mvni v19.4h, #0x9
+2F008553 mvni v19.4h, #0xa
+2F008573 mvni v19.4h, #0xb
+2F008593 mvni v19.4h, #0xc
+2F0085B3 mvni v19.4h, #0xd
+2F0085D3 mvni v19.4h, #0xe
+2F0085F3 mvni v19.4h, #0xf
+2F008613 mvni v19.4h, #0x10
+2F008633 mvni v19.4h, #0x11
+2F008653 mvni v19.4h, #0x12
+2F008673 mvni v19.4h, #0x13
+2F008693 mvni v19.4h, #0x14
+2F0086B3 mvni v19.4h, #0x15
+2F0086D3 mvni v19.4h, #0x16
+2F0086F3 mvni v19.4h, #0x17
+2F008713 mvni v19.4h, #0x18
+2F008753 mvni v19.4h, #0x1a
+2F008773 mvni v19.4h, #0x1b
+2F008793 mvni v19.4h, #0x1c
+2F0087B3 mvni v19.4h, #0x1d
+2F018413 mvni v19.4h, #0x20
+2F018433 mvni v19.4h, #0x21
+2F018453 mvni v19.4h, #0x22
+2F018473 mvni v19.4h, #0x23
+2F018493 mvni v19.4h, #0x24
+2F0184B3 mvni v19.4h, #0x25
+2F0184D3 mvni v19.4h, #0x26
+2F0184F3 mvni v19.4h, #0x27
+2F018513 mvni v19.4h, #0x28
+2F018533 mvni v19.4h, #0x29
+2F018553 mvni v19.4h, #0x2a
+2F018573 mvni v19.4h, #0x2b
+2F018593 mvni v19.4h, #0x2c
+2F0185B3 mvni v19.4h, #0x2d
+2F0185D3 mvni v19.4h, #0x2e
+2F0185F3 mvni v19.4h, #0x2f
+2F018613 mvni v19.4h, #0x30
+2F018633 mvni v19.4h, #0x31
+2F018653 mvni v19.4h, #0x32
+2F018673 mvni v19.4h, #0x33
+2F018693 mvni v19.4h, #0x34
+2F0186B3 mvni v19.4h, #0x35
+2F0186F3 mvni v19.4h, #0x37
+2F018713 mvni v19.4h, #0x38
+2F018733 mvni v19.4h, #0x39
+2F018753 mvni v19.4h, #0x3a
+2F018773 mvni v19.4h, #0x3b
+2F018793 mvni v19.4h, #0x3c
+2F0187B3 mvni v19.4h, #0x3d
+2F0187D3 mvni v19.4h, #0x3e
+2F0187F3 mvni v19.4h, #0x3f
+2F028413 mvni v19.4h, #0x40
+2F028433 mvni v19.4h, #0x41
+2F028453 mvni v19.4h, #0x42
+2F028473 mvni v19.4h, #0x43
+2F028493 mvni v19.4h, #0x44
+2F0284B3 mvni v19.4h, #0x45
+2F0284D3 mvni v19.4h, #0x46
+2F0284F3 mvni v19.4h, #0x47
+2F028513 mvni v19.4h, #0x48
+2F028533 mvni v19.4h, #0x49
+2F028553 mvni v19.4h, #0x4a
+2F028573 mvni v19.4h, #0x4b
+2F028593 mvni v19.4h, #0x4c
+2F0285B3 mvni v19.4h, #0x4d
+2F0285D3 mvni v19.4h, #0x4e
+2F0285F3 mvni v19.4h, #0x4f
+2F028613 mvni v19.4h, #0x50
+2F028633 mvni v19.4h, #0x51
+2F028653 mvni v19.4h, #0x52
+2F028673 mvni v19.4h, #0x53
+2F028693 mvni v19.4h, #0x54
+2F0286B3 mvni v19.4h, #0x55
+2F0286F3 mvni v19.4h, #0x57
+2F028713 mvni v19.4h, #0x58
+2F028733 mvni v19.4h, #0x59
+2F028753 mvni v19.4h, #0x5a
+2F028773 mvni v19.4h, #0x5b
+2F028793 mvni v19.4h, #0x5c
+2F0287B3 mvni v19.4h, #0x5d
+2F0287D3 mvni v19.4h, #0x5e
+2F0287F3 mvni v19.4h, #0x5f
+2F038413 mvni v19.4h, #0x60
+2F038453 mvni v19.4h, #0x62
+2F038473 mvni v19.4h, #0x63
+2F038493 mvni v19.4h, #0x64
+2F0384B3 mvni v19.4h, #0x65
+2F0384D3 mvni v19.4h, #0x66
+2F0384F3 mvni v19.4h, #0x67
+2F038513 mvni v19.4h, #0x68
+2F038533 mvni v19.4h, #0x69
+2F038553 mvni v19.4h, #0x6a
+2F038573 mvni v19.4h, #0x6b
+2F038593 mvni v19.4h, #0x6c
+2F0385D3 mvni v19.4h, #0x6e
+2F0385F3 mvni v19.4h, #0x6f
+2F038613 mvni v19.4h, #0x70
+2F038633 mvni v19.4h, #0x71
+2F038653 mvni v19.4h, #0x72
+2F038673 mvni v19.4h, #0x73
+2F038693 mvni v19.4h, #0x74
+2F0386B3 mvni v19.4h, #0x75
+2F0386D3 mvni v19.4h, #0x76
+2F0386F3 mvni v19.4h, #0x77
+2F038713 mvni v19.4h, #0x78
+2F038733 mvni v19.4h, #0x79
+2F038753 mvni v19.4h, #0x7a
+2F038773 mvni v19.4h, #0x7b
+2F038793 mvni v19.4h, #0x7c
+2F0387D3 mvni v19.4h, #0x7e
+2F0387F3 mvni v19.4h, #0x7f
+2F048413 mvni v19.4h, #0x80
+2F048433 mvni v19.4h, #0x81
+2F048453 mvni v19.4h, #0x82
+2F048473 mvni v19.4h, #0x83
+2F048493 mvni v19.4h, #0x84
+2F0484B3 mvni v19.4h, #0x85
+2F0484D3 mvni v19.4h, #0x86
+2F0484F3 mvni v19.4h, #0x87
+2F048513 mvni v19.4h, #0x88
+2F048533 mvni v19.4h, #0x89
+2F048553 mvni v19.4h, #0x8a
+2F048573 mvni v19.4h, #0x8b
+2F048593 mvni v19.4h, #0x8c
+2F0485B3 mvni v19.4h, #0x8d
+2F0485D3 mvni v19.4h, #0x8e
+2F048613 mvni v19.4h, #0x90
+2F048633 mvni v19.4h, #0x91
+2F048653 mvni v19.4h, #0x92
+2F048673 mvni v19.4h, #0x93
+2F048693 mvni v19.4h, #0x94
+2F0486B3 mvni v19.4h, #0x95
+2F0486D3 mvni v19.4h, #0x96
+2F0486F3 mvni v19.4h, #0x97
+2F048713 mvni v19.4h, #0x98
+2F048733 mvni v19.4h, #0x99
+2F048753 mvni v19.4h, #0x9a
+2F048773 mvni v19.4h, #0x9b
+2F0487B3 mvni v19.4h, #0x9d
+2F0487D3 mvni v19.4h, #0x9e
+2F0487F3 mvni v19.4h, #0x9f
+2F058413 mvni v19.4h, #0xa0
+2F058433 mvni v19.4h, #0xa1
+2F058453 mvni v19.4h, #0xa2
+2F058473 mvni v19.4h, #0xa3
+2F058493 mvni v19.4h, #0xa4
+2F0584B3 mvni v19.4h, #0xa5
+2F0584D3 mvni v19.4h, #0xa6
+2F0584F3 mvni v19.4h, #0xa7
+2F058513 mvni v19.4h, #0xa8
+2F058533 mvni v19.4h, #0xa9
+2F058553 mvni v19.4h, #0xaa
+2F058573 mvni v19.4h, #0xab
+2F0585B3 mvni v19.4h, #0xad
+2F0585D3 mvni v19.4h, #0xae
+2F058613 mvni v19.4h, #0xb0
+2F058633 mvni v19.4h, #0xb1
+2F058653 mvni v19.4h, #0xb2
+2F058673 mvni v19.4h, #0xb3
+2F058693 mvni v19.4h, #0xb4
+2F0586D3 mvni v19.4h, #0xb6
+2F0586F3 mvni v19.4h, #0xb7
+2F058713 mvni v19.4h, #0xb8
+2F058733 mvni v19.4h, #0xb9
+2F058753 mvni v19.4h, #0xba
+2F058773 mvni v19.4h, #0xbb
+2F058793 mvni v19.4h, #0xbc
+2F0587B3 mvni v19.4h, #0xbd
+2F0587D3 mvni v19.4h, #0xbe
+2F0587F3 mvni v19.4h, #0xbf
+2F068413 mvni v19.4h, #0xc0
+2F068433 mvni v19.4h, #0xc1
+2F068453 mvni v19.4h, #0xc2
+2F068473 mvni v19.4h, #0xc3
+2F068493 mvni v19.4h, #0xc4
+2F0684B3 mvni v19.4h, #0xc5
+2F0684D3 mvni v19.4h, #0xc6
+2F0684F3 mvni v19.4h, #0xc7
+2F068513 mvni v19.4h, #0xc8
+2F068553 mvni v19.4h, #0xca
+2F068573 mvni v19.4h, #0xcb
+2F068593 mvni v19.4h, #0xcc
+2F0685B3 mvni v19.4h, #0xcd
+2F0685D3 mvni v19.4h, #0xce
+2F0685F3 mvni v19.4h, #0xcf
+2F068613 mvni v19.4h, #0xd0
+2F068633 mvni v19.4h, #0xd1
+2F068653 mvni v19.4h, #0xd2
+2F068673 mvni v19.4h, #0xd3
+2F068693 mvni v19.4h, #0xd4
+2F0686B3 mvni v19.4h, #0xd5
+2F0686D3 mvni v19.4h, #0xd6
+2F0686F3 mvni v19.4h, #0xd7
+2F068713 mvni v19.4h, #0xd8
+2F068733 mvni v19.4h, #0xd9
+2F068773 mvni v19.4h, #0xdb
+2F068793 mvni v19.4h, #0xdc
+2F0687B3 mvni v19.4h, #0xdd
+2F0687D3 mvni v19.4h, #0xde
+2F0687F3 mvni v19.4h, #0xdf
+2F078413 mvni v19.4h, #0xe0
+2F078433 mvni v19.4h, #0xe1
+2F078453 mvni v19.4h, #0xe2
+2F078473 mvni v19.4h, #0xe3
+2F078493 mvni v19.4h, #0xe4
+2F0784D3 mvni v19.4h, #0xe6
+2F0784F3 mvni v19.4h, #0xe7
+2F078513 mvni v19.4h, #0xe8
+2F078533 mvni v19.4h, #0xe9
+2F078553 mvni v19.4h, #0xea
+2F078573 mvni v19.4h, #0xeb
+2F078593 mvni v19.4h, #0xec
+2F0785B3 mvni v19.4h, #0xed
+2F0785D3 mvni v19.4h, #0xee
+2F0785F3 mvni v19.4h, #0xef
+2F078613 mvni v19.4h, #0xf0
+2F078633 mvni v19.4h, #0xf1
+2F078653 mvni v19.4h, #0xf2
+2F078673 mvni v19.4h, #0xf3
+2F078693 mvni v19.4h, #0xf4
+2F0786B3 mvni v19.4h, #0xf5
+2F0786D3 mvni v19.4h, #0xf6
+2F0786F3 mvni v19.4h, #0xf7
+2F078713 mvni v19.4h, #0xf8
+2F078733 mvni v19.4h, #0xf9
+2F078753 mvni v19.4h, #0xfa
+2F078773 mvni v19.4h, #0xfb
+2F078793 mvni v19.4h, #0xfc
+2F0787B3 mvni v19.4h, #0xfd
+2F0787D3 mvni v19.4h, #0xfe
+2F0787F3 mvni v19.4h, #0xff
+
+// MVNI_asimdimm_L_sl 0|Q=x|op=1|0111100000|a=x|b=x|c=x|cmode=0xx0|o2=0|1|d=x|e=x|f=x|g=x|h=x|Rd=xxxxx
+// MvniAsimdimmLSl: MVNI  <Vd>.<T>, #<imm8>{, LSL #<amount>}
+// read together by <imm8>: a, b, c, d, e, f, g, h
+// register fields: Rd
+6F0527C1 mvni v1.4s, #0xbe, lsl #0x8
+2F026427 mvni v7.2s, #0x41, lsl #0x18
+2F00278E mvni v14.2s, #0x1c, lsl #0x8
+2F0744DE mvni v30.2s, #0xe6, lsl #0x10
+6F006431 mvni v17.4s, #0x1, lsl #0x18
+2F064706 mvni v6.2s, #0xd8, lsl #0x10
+2F030435 mvni v21.2s, #0x61
+6F066754 mvni v20.4s, #0xda, lsl #0x18
+6F020565 mvni v5.4s, #0x4b
+2F03042E mvni v14.2s, #0x61
+2F00067B mvni v27.2s, #0x13
+2F066478 mvni v24.2s, #0xc3, lsl #0x18
+6F006684 mvni v4.4s, #0x14, lsl #0x18
+2F05661A mvni v26.2s, #0xb0, lsl #0x18
+6F0166E1 mvni v1.4s, #0x37, lsl #0x18
+2F03668F mvni v15.2s, #0x74, lsl #0x18
+6F0527C0 mvni v0.4s, #0xbe, lsl #0x8
+6F0527DF mvni v31.4s, #0xbe, lsl #0x8
+6F002401 mvni v1.4s, #0x0, lsl #0x8
+6F002441 mvni v1.4s, #0x2, lsl #0x8
+6F002461 mvni v1.4s, #0x3, lsl #0x8
+6F002481 mvni v1.4s, #0x4, lsl #0x8
+6F0024A1 mvni v1.4s, #0x5, lsl #0x8
+6F0024C1 mvni v1.4s, #0x6, lsl #0x8
+6F0024E1 mvni v1.4s, #0x7, lsl #0x8
+6F002501 mvni v1.4s, #0x8, lsl #0x8
+6F002521 mvni v1.4s, #0x9, lsl #0x8
+6F002541 mvni v1.4s, #0xa, lsl #0x8
+6F002561 mvni v1.4s, #0xb, lsl #0x8
+6F002581 mvni v1.4s, #0xc, lsl #0x8
+6F0025A1 mvni v1.4s, #0xd, lsl #0x8
+6F0025C1 mvni v1.4s, #0xe, lsl #0x8
+6F0025E1 mvni v1.4s, #0xf, lsl #0x8
+6F002601 mvni v1.4s, #0x10, lsl #0x8
+6F002621 mvni v1.4s, #0x11, lsl #0x8
+6F002641 mvni v1.4s, #0x12, lsl #0x8
+6F0026A1 mvni v1.4s, #0x15, lsl #0x8
+6F0026C1 mvni v1.4s, #0x16, lsl #0x8
+6F0026E1 mvni v1.4s, #0x17, lsl #0x8
+6F002701 mvni v1.4s, #0x18, lsl #0x8
+6F002721 mvni v1.4s, #0x19, lsl #0x8
+6F002741 mvni v1.4s, #0x1a, lsl #0x8
+6F002761 mvni v1.4s, #0x1b, lsl #0x8
+6F0027A1 mvni v1.4s, #0x1d, lsl #0x8
+6F0027C1 mvni v1.4s, #0x1e, lsl #0x8
+6F0027E1 mvni v1.4s, #0x1f, lsl #0x8
+6F012401 mvni v1.4s, #0x20, lsl #0x8
+6F012421 mvni v1.4s, #0x21, lsl #0x8
+6F012441 mvni v1.4s, #0x22, lsl #0x8
+6F012461 mvni v1.4s, #0x23, lsl #0x8
+6F012481 mvni v1.4s, #0x24, lsl #0x8
+6F0124A1 mvni v1.4s, #0x25, lsl #0x8
+6F0124C1 mvni v1.4s, #0x26, lsl #0x8
+6F0124E1 mvni v1.4s, #0x27, lsl #0x8
+6F012501 mvni v1.4s, #0x28, lsl #0x8
+6F012521 mvni v1.4s, #0x29, lsl #0x8
+6F012541 mvni v1.4s, #0x2a, lsl #0x8
+6F012561 mvni v1.4s, #0x2b, lsl #0x8
+6F012581 mvni v1.4s, #0x2c, lsl #0x8
+6F0125A1 mvni v1.4s, #0x2d, lsl #0x8
+6F0125C1 mvni v1.4s, #0x2e, lsl #0x8
+6F0125E1 mvni v1.4s, #0x2f, lsl #0x8
+6F012601 mvni v1.4s, #0x30, lsl #0x8
+6F012621 mvni v1.4s, #0x31, lsl #0x8
+6F012641 mvni v1.4s, #0x32, lsl #0x8
+6F012661 mvni v1.4s, #0x33, lsl #0x8
+6F012681 mvni v1.4s, #0x34, lsl #0x8
+6F0126A1 mvni v1.4s, #0x35, lsl #0x8
+6F0126C1 mvni v1.4s, #0x36, lsl #0x8
+6F012701 mvni v1.4s, #0x38, lsl #0x8
+6F012721 mvni v1.4s, #0x39, lsl #0x8
+6F012741 mvni v1.4s, #0x3a, lsl #0x8
+6F012761 mvni v1.4s, #0x3b, lsl #0x8
+6F012781 mvni v1.4s, #0x3c, lsl #0x8
+6F0127A1 mvni v1.4s, #0x3d, lsl #0x8
+6F0127C1 mvni v1.4s, #0x3e, lsl #0x8
+6F0127E1 mvni v1.4s, #0x3f, lsl #0x8
+6F022401 mvni v1.4s, #0x40, lsl #0x8
+6F022441 mvni v1.4s, #0x42, lsl #0x8
+6F022461 mvni v1.4s, #0x43, lsl #0x8
+6F022481 mvni v1.4s, #0x44, lsl #0x8
+6F0224A1 mvni v1.4s, #0x45, lsl #0x8
+6F0224C1 mvni v1.4s, #0x46, lsl #0x8
+6F0224E1 mvni v1.4s, #0x47, lsl #0x8
+6F022501 mvni v1.4s, #0x48, lsl #0x8
+6F022521 mvni v1.4s, #0x49, lsl #0x8
+6F022541 mvni v1.4s, #0x4a, lsl #0x8
+6F022581 mvni v1.4s, #0x4c, lsl #0x8
+6F0225A1 mvni v1.4s, #0x4d, lsl #0x8
+6F0225C1 mvni v1.4s, #0x4e, lsl #0x8
+6F0225E1 mvni v1.4s, #0x4f, lsl #0x8
+6F022601 mvni v1.4s, #0x50, lsl #0x8
+6F022621 mvni v1.4s, #0x51, lsl #0x8
+6F022641 mvni v1.4s, #0x52, lsl #0x8
+6F022661 mvni v1.4s, #0x53, lsl #0x8
+6F022681 mvni v1.4s, #0x54, lsl #0x8
+6F0226A1 mvni v1.4s, #0x55, lsl #0x8
+6F0226C1 mvni v1.4s, #0x56, lsl #0x8
+6F0226E1 mvni v1.4s, #0x57, lsl #0x8
+6F022701 mvni v1.4s, #0x58, lsl #0x8
+6F022721 mvni v1.4s, #0x59, lsl #0x8
+6F022741 mvni v1.4s, #0x5a, lsl #0x8
+6F022761 mvni v1.4s, #0x5b, lsl #0x8
+6F022781 mvni v1.4s, #0x5c, lsl #0x8
+6F0227A1 mvni v1.4s, #0x5d, lsl #0x8
+6F0227C1 mvni v1.4s, #0x5e, lsl #0x8
+6F0227E1 mvni v1.4s, #0x5f, lsl #0x8
+6F032401 mvni v1.4s, #0x60, lsl #0x8
+6F032441 mvni v1.4s, #0x62, lsl #0x8
+6F032461 mvni v1.4s, #0x63, lsl #0x8
+6F032481 mvni v1.4s, #0x64, lsl #0x8
+6F0324A1 mvni v1.4s, #0x65, lsl #0x8
+6F0324C1 mvni v1.4s, #0x66, lsl #0x8
+6F0324E1 mvni v1.4s, #0x67, lsl #0x8
+6F032501 mvni v1.4s, #0x68, lsl #0x8
+6F032521 mvni v1.4s, #0x69, lsl #0x8
+6F032541 mvni v1.4s, #0x6a, lsl #0x8
+6F032561 mvni v1.4s, #0x6b, lsl #0x8
+6F032581 mvni v1.4s, #0x6c, lsl #0x8
+6F0325A1 mvni v1.4s, #0x6d, lsl #0x8
+6F0325C1 mvni v1.4s, #0x6e, lsl #0x8
+6F0325E1 mvni v1.4s, #0x6f, lsl #0x8
+6F032601 mvni v1.4s, #0x70, lsl #0x8
+6F032621 mvni v1.4s, #0x71, lsl #0x8
+6F032641 mvni v1.4s, #0x72, lsl #0x8
+6F032661 mvni v1.4s, #0x73, lsl #0x8
+6F0326A1 mvni v1.4s, #0x75, lsl #0x8
+6F0326C1 mvni v1.4s, #0x76, lsl #0x8
+6F0326E1 mvni v1.4s, #0x77, lsl #0x8
+6F032701 mvni v1.4s, #0x78, lsl #0x8
+6F032721 mvni v1.4s, #0x79, lsl #0x8
+6F032741 mvni v1.4s, #0x7a, lsl #0x8
+6F032761 mvni v1.4s, #0x7b, lsl #0x8
+6F032781 mvni v1.4s, #0x7c, lsl #0x8
+6F0327A1 mvni v1.4s, #0x7d, lsl #0x8
+6F0327C1 mvni v1.4s, #0x7e, lsl #0x8
+6F0327E1 mvni v1.4s, #0x7f, lsl #0x8
+6F042401 mvni v1.4s, #0x80, lsl #0x8
+6F042421 mvni v1.4s, #0x81, lsl #0x8
+6F042441 mvni v1.4s, #0x82, lsl #0x8
+6F042461 mvni v1.4s, #0x83, lsl #0x8
+6F042481 mvni v1.4s, #0x84, lsl #0x8
+6F0424A1 mvni v1.4s, #0x85, lsl #0x8
+6F0424C1 mvni v1.4s, #0x86, lsl #0x8
+6F0424E1 mvni v1.4s, #0x87, lsl #0x8
+6F042501 mvni v1.4s, #0x88, lsl #0x8
+6F042521 mvni v1.4s, #0x89, lsl #0x8
+6F042541 mvni v1.4s, #0x8a, lsl #0x8
+6F042561 mvni v1.4s, #0x8b, lsl #0x8
+6F042581 mvni v1.4s, #0x8c, lsl #0x8
+6F0425A1 mvni v1.4s, #0x8d, lsl #0x8
+6F0425C1 mvni v1.4s, #0x8e, lsl #0x8
+6F0425E1 mvni v1.4s, #0x8f, lsl #0x8
+6F042601 mvni v1.4s, #0x90, lsl #0x8
+6F042621 mvni v1.4s, #0x91, lsl #0x8
+6F042641 mvni v1.4s, #0x92, lsl #0x8
+6F042661 mvni v1.4s, #0x93, lsl #0x8
+6F042681 mvni v1.4s, #0x94, lsl #0x8
+6F0426A1 mvni v1.4s, #0x95, lsl #0x8
+6F0426C1 mvni v1.4s, #0x96, lsl #0x8
+6F0426E1 mvni v1.4s, #0x97, lsl #0x8
+6F042701 mvni v1.4s, #0x98, lsl #0x8
+6F042721 mvni v1.4s, #0x99, lsl #0x8
+6F042741 mvni v1.4s, #0x9a, lsl #0x8
+6F042761 mvni v1.4s, #0x9b, lsl #0x8
+6F042781 mvni v1.4s, #0x9c, lsl #0x8
+6F0427A1 mvni v1.4s, #0x9d, lsl #0x8
+6F0427C1 mvni v1.4s, #0x9e, lsl #0x8
+6F0427E1 mvni v1.4s, #0x9f, lsl #0x8
+6F052401 mvni v1.4s, #0xa0, lsl #0x8
+6F052421 mvni v1.4s, #0xa1, lsl #0x8
+6F052441 mvni v1.4s, #0xa2, lsl #0x8
+6F052461 mvni v1.4s, #0xa3, lsl #0x8
+6F052481 mvni v1.4s, #0xa4, lsl #0x8
+6F0524A1 mvni v1.4s, #0xa5, lsl #0x8
+6F0524C1 mvni v1.4s, #0xa6, lsl #0x8
+6F0524E1 mvni v1.4s, #0xa7, lsl #0x8
+6F052501 mvni v1.4s, #0xa8, lsl #0x8
+6F052521 mvni v1.4s, #0xa9, lsl #0x8
+6F052541 mvni v1.4s, #0xaa, lsl #0x8
+6F052561 mvni v1.4s, #0xab, lsl #0x8
+6F052581 mvni v1.4s, #0xac, lsl #0x8
+6F0525A1 mvni v1.4s, #0xad, lsl #0x8
+6F0525C1 mvni v1.4s, #0xae, lsl #0x8
+6F0525E1 mvni v1.4s, #0xaf, lsl #0x8
+6F052621 mvni v1.4s, #0xb1, lsl #0x8
+6F052641 mvni v1.4s, #0xb2, lsl #0x8
+6F052661 mvni v1.4s, #0xb3, lsl #0x8
+6F052681 mvni v1.4s, #0xb4, lsl #0x8
+6F0526A1 mvni v1.4s, #0xb5, lsl #0x8
+6F0526C1 mvni v1.4s, #0xb6, lsl #0x8
+6F0526E1 mvni v1.4s, #0xb7, lsl #0x8
+6F052701 mvni v1.4s, #0xb8, lsl #0x8
+6F052721 mvni v1.4s, #0xb9, lsl #0x8
+6F052741 mvni v1.4s, #0xba, lsl #0x8
+6F052761 mvni v1.4s, #0xbb, lsl #0x8
+6F052781 mvni v1.4s, #0xbc, lsl #0x8
+6F0527A1 mvni v1.4s, #0xbd, lsl #0x8
+6F0527E1 mvni v1.4s, #0xbf, lsl #0x8
+6F062401 mvni v1.4s, #0xc0, lsl #0x8
+6F062421 mvni v1.4s, #0xc1, lsl #0x8
+6F062441 mvni v1.4s, #0xc2, lsl #0x8
+6F062481 mvni v1.4s, #0xc4, lsl #0x8
+6F0624A1 mvni v1.4s, #0xc5, lsl #0x8
+6F0624C1 mvni v1.4s, #0xc6, lsl #0x8
+6F0624E1 mvni v1.4s, #0xc7, lsl #0x8
+6F062501 mvni v1.4s, #0xc8, lsl #0x8
+6F062521 mvni v1.4s, #0xc9, lsl #0x8
+6F062541 mvni v1.4s, #0xca, lsl #0x8
+6F062561 mvni v1.4s, #0xcb, lsl #0x8
+6F062581 mvni v1.4s, #0xcc, lsl #0x8
+6F0625A1 mvni v1.4s, #0xcd, lsl #0x8
+6F0625C1 mvni v1.4s, #0xce, lsl #0x8
+6F0625E1 mvni v1.4s, #0xcf, lsl #0x8
+6F062601 mvni v1.4s, #0xd0, lsl #0x8
+6F062621 mvni v1.4s, #0xd1, lsl #0x8
+6F062641 mvni v1.4s, #0xd2, lsl #0x8
+6F062661 mvni v1.4s, #0xd3, lsl #0x8
+6F062681 mvni v1.4s, #0xd4, lsl #0x8
+6F0626A1 mvni v1.4s, #0xd5, lsl #0x8
+6F0626C1 mvni v1.4s, #0xd6, lsl #0x8
+6F0626E1 mvni v1.4s, #0xd7, lsl #0x8
+6F062721 mvni v1.4s, #0xd9, lsl #0x8
+6F062761 mvni v1.4s, #0xdb, lsl #0x8
+6F062781 mvni v1.4s, #0xdc, lsl #0x8
+6F0627A1 mvni v1.4s, #0xdd, lsl #0x8
+6F0627C1 mvni v1.4s, #0xde, lsl #0x8
+6F0627E1 mvni v1.4s, #0xdf, lsl #0x8
+6F072401 mvni v1.4s, #0xe0, lsl #0x8
+6F072421 mvni v1.4s, #0xe1, lsl #0x8
+6F072441 mvni v1.4s, #0xe2, lsl #0x8
+6F072461 mvni v1.4s, #0xe3, lsl #0x8
+6F072481 mvni v1.4s, #0xe4, lsl #0x8
+6F0724A1 mvni v1.4s, #0xe5, lsl #0x8
+6F0724E1 mvni v1.4s, #0xe7, lsl #0x8
+6F072501 mvni v1.4s, #0xe8, lsl #0x8
+6F072521 mvni v1.4s, #0xe9, lsl #0x8
+6F072541 mvni v1.4s, #0xea, lsl #0x8
+6F072561 mvni v1.4s, #0xeb, lsl #0x8
+6F072581 mvni v1.4s, #0xec, lsl #0x8
+6F0725A1 mvni v1.4s, #0xed, lsl #0x8
+6F0725C1 mvni v1.4s, #0xee, lsl #0x8
+6F0725E1 mvni v1.4s, #0xef, lsl #0x8
+6F072601 mvni v1.4s, #0xf0, lsl #0x8
+6F072621 mvni v1.4s, #0xf1, lsl #0x8
+6F072641 mvni v1.4s, #0xf2, lsl #0x8
+6F072661 mvni v1.4s, #0xf3, lsl #0x8
+6F072681 mvni v1.4s, #0xf4, lsl #0x8
+6F0726A1 mvni v1.4s, #0xf5, lsl #0x8
+6F0726C1 mvni v1.4s, #0xf6, lsl #0x8
+6F0726E1 mvni v1.4s, #0xf7, lsl #0x8
+6F072701 mvni v1.4s, #0xf8, lsl #0x8
+6F072721 mvni v1.4s, #0xf9, lsl #0x8
+6F072741 mvni v1.4s, #0xfa, lsl #0x8
+6F072761 mvni v1.4s, #0xfb, lsl #0x8
+6F072781 mvni v1.4s, #0xfc, lsl #0x8
+6F0727A1 mvni v1.4s, #0xfd, lsl #0x8
+6F0727C1 mvni v1.4s, #0xfe, lsl #0x8
+6F0727E1 mvni v1.4s, #0xff, lsl #0x8
+
+// MVNI_asimdimm_M_sm 0|Q=x|op=1|0111100000|a=x|b=x|c=x|cmode=110x|o2=0|1|d=x|e=x|f=x|g=x|h=x|Rd=xxxxx
+// MvniAsimdimmMSm: MVNI  <Vd>.<T>, #<imm8>, MSL #<amount>
+// read together by <imm8>: a, b, c, d, e, f, g, h
+// register fields: Rd
+6F02C517 mvni v23.4s, #0x48, msl #0x8
+6F06C47E mvni v30.4s, #0xc3, msl #0x8
+6F07D5D4 mvni v20.4s, #0xee, msl #0x10
+6F07C43B mvni v27.4s, #0xe1, msl #0x8
+6F07C703 mvni v3.4s, #0xf8, msl #0x8
+2F04D746 mvni v6.2s, #0x9a, msl #0x10
+2F07C4C9 mvni v9.2s, #0xe6, msl #0x8
+2F01C563 mvni v3.2s, #0x2b, msl #0x8
+2F03D491 mvni v17.2s, #0x64, msl #0x10
+6F03C4D9 mvni v25.4s, #0x66, msl #0x8
+2F05D5CC mvni v12.2s, #0xae, msl #0x10
+6F00D63A mvni v26.4s, #0x11, msl #0x10
+2F05C51A mvni v26.2s, #0xa8, msl #0x8
+6F06D563 mvni v3.4s, #0xcb, msl #0x10
+6F06C676 mvni v22.4s, #0xd3, msl #0x8
+6F01C543 mvni v3.4s, #0x2a, msl #0x8
+6F02C500 mvni v0.4s, #0x48, msl #0x8
+6F02C51F mvni v31.4s, #0x48, msl #0x8
+6F00C417 mvni v23.4s, #0x0, msl #0x8
+6F00C437 mvni v23.4s, #0x1, msl #0x8
+6F00C457 mvni v23.4s, #0x2, msl #0x8
+6F00C477 mvni v23.4s, #0x3, msl #0x8
+6F00C497 mvni v23.4s, #0x4, msl #0x8
+6F00C4B7 mvni v23.4s, #0x5, msl #0x8
+6F00C4D7 mvni v23.4s, #0x6, msl #0x8
+6F00C4F7 mvni v23.4s, #0x7, msl #0x8
+6F00C517 mvni v23.4s, #0x8, msl #0x8
+6F00C537 mvni v23.4s, #0x9, msl #0x8
+6F00C557 mvni v23.4s, #0xa, msl #0x8
+6F00C577 mvni v23.4s, #0xb, msl #0x8
+6F00C597 mvni v23.4s, #0xc, msl #0x8
+6F00C5B7 mvni v23.4s, #0xd, msl #0x8
+6F00C5D7 mvni v23.4s, #0xe, msl #0x8
+6F00C5F7 mvni v23.4s, #0xf, msl #0x8
+6F00C617 mvni v23.4s, #0x10, msl #0x8
+6F00C657 mvni v23.4s, #0x12, msl #0x8
+6F00C677 mvni v23.4s, #0x13, msl #0x8
+6F00C697 mvni v23.4s, #0x14, msl #0x8
+6F00C6B7 mvni v23.4s, #0x15, msl #0x8
+6F00C6D7 mvni v23.4s, #0x16, msl #0x8
+6F00C6F7 mvni v23.4s, #0x17, msl #0x8
+6F00C717 mvni v23.4s, #0x18, msl #0x8
+6F00C737 mvni v23.4s, #0x19, msl #0x8
+6F00C757 mvni v23.4s, #0x1a, msl #0x8
+6F00C777 mvni v23.4s, #0x1b, msl #0x8
+6F00C797 mvni v23.4s, #0x1c, msl #0x8
+6F00C7B7 mvni v23.4s, #0x1d, msl #0x8
+6F00C7D7 mvni v23.4s, #0x1e, msl #0x8
+6F00C7F7 mvni v23.4s, #0x1f, msl #0x8
+6F01C417 mvni v23.4s, #0x20, msl #0x8
+6F01C437 mvni v23.4s, #0x21, msl #0x8
+6F01C457 mvni v23.4s, #0x22, msl #0x8
+6F01C477 mvni v23.4s, #0x23, msl #0x8
+6F01C497 mvni v23.4s, #0x24, msl #0x8
+6F01C4B7 mvni v23.4s, #0x25, msl #0x8
+6F01C4D7 mvni v23.4s, #0x26, msl #0x8
+6F01C4F7 mvni v23.4s, #0x27, msl #0x8
+6F01C517 mvni v23.4s, #0x28, msl #0x8
+6F01C537 mvni v23.4s, #0x29, msl #0x8
+6F01C597 mvni v23.4s, #0x2c, msl #0x8
+6F01C5B7 mvni v23.4s, #0x2d, msl #0x8
+6F01C5D7 mvni v23.4s, #0x2e, msl #0x8
+6F01C5F7 mvni v23.4s, #0x2f, msl #0x8
+6F01C617 mvni v23.4s, #0x30, msl #0x8
+6F01C637 mvni v23.4s, #0x31, msl #0x8
+6F01C657 mvni v23.4s, #0x32, msl #0x8
+6F01C677 mvni v23.4s, #0x33, msl #0x8
+6F01C697 mvni v23.4s, #0x34, msl #0x8
+6F01C6B7 mvni v23.4s, #0x35, msl #0x8
+6F01C6D7 mvni v23.4s, #0x36, msl #0x8
+6F01C6F7 mvni v23.4s, #0x37, msl #0x8
+6F01C717 mvni v23.4s, #0x38, msl #0x8
+6F01C737 mvni v23.4s, #0x39, msl #0x8
+6F01C757 mvni v23.4s, #0x3a, msl #0x8
+6F01C777 mvni v23.4s, #0x3b, msl #0x8
+6F01C797 mvni v23.4s, #0x3c, msl #0x8
+6F01C7B7 mvni v23.4s, #0x3d, msl #0x8
+6F01C7D7 mvni v23.4s, #0x3e, msl #0x8
+6F01C7F7 mvni v23.4s, #0x3f, msl #0x8
+6F02C417 mvni v23.4s, #0x40, msl #0x8
+6F02C437 mvni v23.4s, #0x41, msl #0x8
+6F02C457 mvni v23.4s, #0x42, msl #0x8
+6F02C477 mvni v23.4s, #0x43, msl #0x8
+6F02C497 mvni v23.4s, #0x44, msl #0x8
+6F02C4B7 mvni v23.4s, #0x45, msl #0x8
+6F02C4D7 mvni v23.4s, #0x46, msl #0x8
+6F02C4F7 mvni v23.4s, #0x47, msl #0x8
+6F02C537 mvni v23.4s, #0x49, msl #0x8
+6F02C557 mvni v23.4s, #0x4a, msl #0x8
+6F02C577 mvni v23.4s, #0x4b, msl #0x8
+6F02C597 mvni v23.4s, #0x4c, msl #0x8
+6F02C5B7 mvni v23.4s, #0x4d, msl #0x8
+6F02C5D7 mvni v23.4s, #0x4e, msl #0x8
+6F02C5F7 mvni v23.4s, #0x4f, msl #0x8
+6F02C617 mvni v23.4s, #0x50, msl #0x8
+6F02C637 mvni v23.4s, #0x51, msl #0x8
+6F02C657 mvni v23.4s, #0x52, msl #0x8
+6F02C677 mvni v23.4s, #0x53, msl #0x8
+6F02C697 mvni v23.4s, #0x54, msl #0x8
+6F02C6B7 mvni v23.4s, #0x55, msl #0x8
+6F02C6D7 mvni v23.4s, #0x56, msl #0x8
+6F02C6F7 mvni v23.4s, #0x57, msl #0x8
+6F02C717 mvni v23.4s, #0x58, msl #0x8
+6F02C737 mvni v23.4s, #0x59, msl #0x8
+6F02C757 mvni v23.4s, #0x5a, msl #0x8
+6F02C777 mvni v23.4s, #0x5b, msl #0x8
+6F02C797 mvni v23.4s, #0x5c, msl #0x8
+6F02C7B7 mvni v23.4s, #0x5d, msl #0x8
+6F02C7D7 mvni v23.4s, #0x5e, msl #0x8
+6F02C7F7 mvni v23.4s, #0x5f, msl #0x8
+6F03C417 mvni v23.4s, #0x60, msl #0x8
+6F03C437 mvni v23.4s, #0x61, msl #0x8
+6F03C457 mvni v23.4s, #0x62, msl #0x8
+6F03C477 mvni v23.4s, #0x63, msl #0x8
+6F03C4B7 mvni v23.4s, #0x65, msl #0x8
+6F03C4F7 mvni v23.4s, #0x67, msl #0x8
+6F03C517 mvni v23.4s, #0x68, msl #0x8
+6F03C537 mvni v23.4s, #0x69, msl #0x8
+6F03C557 mvni v23.4s, #0x6a, msl #0x8
+6F03C577 mvni v23.4s, #0x6b, msl #0x8
+6F03C597 mvni v23.4s, #0x6c, msl #0x8
+6F03C5B7 mvni v23.4s, #0x6d, msl #0x8
+6F03C5D7 mvni v23.4s, #0x6e, msl #0x8
+6F03C5F7 mvni v23.4s, #0x6f, msl #0x8
+6F03C617 mvni v23.4s, #0x70, msl #0x8
+6F03C637 mvni v23.4s, #0x71, msl #0x8
+6F03C657 mvni v23.4s, #0x72, msl #0x8
+6F03C677 mvni v23.4s, #0x73, msl #0x8
+6F03C697 mvni v23.4s, #0x74, msl #0x8
+6F03C6B7 mvni v23.4s, #0x75, msl #0x8
+6F03C6D7 mvni v23.4s, #0x76, msl #0x8
+6F03C6F7 mvni v23.4s, #0x77, msl #0x8
+6F03C717 mvni v23.4s, #0x78, msl #0x8
+6F03C737 mvni v23.4s, #0x79, msl #0x8
+6F03C757 mvni v23.4s, #0x7a, msl #0x8
+6F03C777 mvni v23.4s, #0x7b, msl #0x8
+6F03C797 mvni v23.4s, #0x7c, msl #0x8
+6F03C7B7 mvni v23.4s, #0x7d, msl #0x8
+6F03C7D7 mvni v23.4s, #0x7e, msl #0x8
+6F03C7F7 mvni v23.4s, #0x7f, msl #0x8
+6F04C417 mvni v23.4s, #0x80, msl #0x8
+6F04C437 mvni v23.4s, #0x81, msl #0x8
+6F04C457 mvni v23.4s, #0x82, msl #0x8
+6F04C477 mvni v23.4s, #0x83, msl #0x8
+6F04C497 mvni v23.4s, #0x84, msl #0x8
+6F04C4B7 mvni v23.4s, #0x85, msl #0x8
+6F04C4D7 mvni v23.4s, #0x86, msl #0x8
+6F04C4F7 mvni v23.4s, #0x87, msl #0x8
+6F04C517 mvni v23.4s, #0x88, msl #0x8
+6F04C537 mvni v23.4s, #0x89, msl #0x8
+6F04C557 mvni v23.4s, #0x8a, msl #0x8
+6F04C577 mvni v23.4s, #0x8b, msl #0x8
+6F04C597 mvni v23.4s, #0x8c, msl #0x8
+6F04C5B7 mvni v23.4s, #0x8d, msl #0x8
+6F04C5D7 mvni v23.4s, #0x8e, msl #0x8
+6F04C5F7 mvni v23.4s, #0x8f, msl #0x8
+6F04C617 mvni v23.4s, #0x90, msl #0x8
+6F04C637 mvni v23.4s, #0x91, msl #0x8
+6F04C657 mvni v23.4s, #0x92, msl #0x8
+6F04C677 mvni v23.4s, #0x93, msl #0x8
+6F04C697 mvni v23.4s, #0x94, msl #0x8
+6F04C6B7 mvni v23.4s, #0x95, msl #0x8
+6F04C6D7 mvni v23.4s, #0x96, msl #0x8
+6F04C6F7 mvni v23.4s, #0x97, msl #0x8
+6F04C717 mvni v23.4s, #0x98, msl #0x8
+6F04C737 mvni v23.4s, #0x99, msl #0x8
+6F04C777 mvni v23.4s, #0x9b, msl #0x8
+6F04C797 mvni v23.4s, #0x9c, msl #0x8
+6F04C7B7 mvni v23.4s, #0x9d, msl #0x8
+6F04C7D7 mvni v23.4s, #0x9e, msl #0x8
+6F04C7F7 mvni v23.4s, #0x9f, msl #0x8
+6F05C417 mvni v23.4s, #0xa0, msl #0x8
+6F05C437 mvni v23.4s, #0xa1, msl #0x8
+6F05C457 mvni v23.4s, #0xa2, msl #0x8
+6F05C477 mvni v23.4s, #0xa3, msl #0x8
+6F05C497 mvni v23.4s, #0xa4, msl #0x8
+6F05C4B7 mvni v23.4s, #0xa5, msl #0x8
+6F05C4D7 mvni v23.4s, #0xa6, msl #0x8
+6F05C4F7 mvni v23.4s, #0xa7, msl #0x8
+6F05C537 mvni v23.4s, #0xa9, msl #0x8
+6F05C557 mvni v23.4s, #0xaa, msl #0x8
+6F05C577 mvni v23.4s, #0xab, msl #0x8
+6F05C597 mvni v23.4s, #0xac, msl #0x8
+6F05C5B7 mvni v23.4s, #0xad, msl #0x8
+6F05C5F7 mvni v23.4s, #0xaf, msl #0x8
+6F05C617 mvni v23.4s, #0xb0, msl #0x8
+6F05C637 mvni v23.4s, #0xb1, msl #0x8
+6F05C657 mvni v23.4s, #0xb2, msl #0x8
+6F05C677 mvni v23.4s, #0xb3, msl #0x8
+6F05C697 mvni v23.4s, #0xb4, msl #0x8
+6F05C6B7 mvni v23.4s, #0xb5, msl #0x8
+6F05C6D7 mvni v23.4s, #0xb6, msl #0x8
+6F05C6F7 mvni v23.4s, #0xb7, msl #0x8
+6F05C717 mvni v23.4s, #0xb8, msl #0x8
+6F05C737 mvni v23.4s, #0xb9, msl #0x8
+6F05C757 mvni v23.4s, #0xba, msl #0x8
+6F05C777 mvni v23.4s, #0xbb, msl #0x8
+6F05C797 mvni v23.4s, #0xbc, msl #0x8
+6F05C7B7 mvni v23.4s, #0xbd, msl #0x8
+6F05C7D7 mvni v23.4s, #0xbe, msl #0x8
+6F05C7F7 mvni v23.4s, #0xbf, msl #0x8
+6F06C417 mvni v23.4s, #0xc0, msl #0x8
+6F06C437 mvni v23.4s, #0xc1, msl #0x8
+6F06C457 mvni v23.4s, #0xc2, msl #0x8
+6F06C497 mvni v23.4s, #0xc4, msl #0x8
+6F06C4B7 mvni v23.4s, #0xc5, msl #0x8
+6F06C4D7 mvni v23.4s, #0xc6, msl #0x8
+6F06C4F7 mvni v23.4s, #0xc7, msl #0x8
+6F06C517 mvni v23.4s, #0xc8, msl #0x8
+6F06C537 mvni v23.4s, #0xc9, msl #0x8
+6F06C557 mvni v23.4s, #0xca, msl #0x8
+6F06C597 mvni v23.4s, #0xcc, msl #0x8
+6F06C5B7 mvni v23.4s, #0xcd, msl #0x8
+6F06C5D7 mvni v23.4s, #0xce, msl #0x8
+6F06C5F7 mvni v23.4s, #0xcf, msl #0x8
+6F06C617 mvni v23.4s, #0xd0, msl #0x8
+6F06C637 mvni v23.4s, #0xd1, msl #0x8
+6F06C657 mvni v23.4s, #0xd2, msl #0x8
+6F06C697 mvni v23.4s, #0xd4, msl #0x8
+6F06C6B7 mvni v23.4s, #0xd5, msl #0x8
+6F06C6D7 mvni v23.4s, #0xd6, msl #0x8
+6F06C6F7 mvni v23.4s, #0xd7, msl #0x8
+6F06C717 mvni v23.4s, #0xd8, msl #0x8
+6F06C737 mvni v23.4s, #0xd9, msl #0x8
+6F06C757 mvni v23.4s, #0xda, msl #0x8
+6F06C777 mvni v23.4s, #0xdb, msl #0x8
+6F06C797 mvni v23.4s, #0xdc, msl #0x8
+6F06C7B7 mvni v23.4s, #0xdd, msl #0x8
+6F06C7D7 mvni v23.4s, #0xde, msl #0x8
+6F06C7F7 mvni v23.4s, #0xdf, msl #0x8
+6F07C417 mvni v23.4s, #0xe0, msl #0x8
+6F07C457 mvni v23.4s, #0xe2, msl #0x8
+6F07C477 mvni v23.4s, #0xe3, msl #0x8
+6F07C497 mvni v23.4s, #0xe4, msl #0x8
+6F07C4B7 mvni v23.4s, #0xe5, msl #0x8
+6F07C4F7 mvni v23.4s, #0xe7, msl #0x8
+6F07C517 mvni v23.4s, #0xe8, msl #0x8
+6F07C537 mvni v23.4s, #0xe9, msl #0x8
+6F07C557 mvni v23.4s, #0xea, msl #0x8
+6F07C577 mvni v23.4s, #0xeb, msl #0x8
+6F07C597 mvni v23.4s, #0xec, msl #0x8
+6F07C5B7 mvni v23.4s, #0xed, msl #0x8
+6F07C5F7 mvni v23.4s, #0xef, msl #0x8
+6F07C617 mvni v23.4s, #0xf0, msl #0x8
+6F07C637 mvni v23.4s, #0xf1, msl #0x8
+6F07C657 mvni v23.4s, #0xf2, msl #0x8
+6F07C677 mvni v23.4s, #0xf3, msl #0x8
+6F07C697 mvni v23.4s, #0xf4, msl #0x8
+6F07C6B7 mvni v23.4s, #0xf5, msl #0x8
+6F07C6D7 mvni v23.4s, #0xf6, msl #0x8
+6F07C6F7 mvni v23.4s, #0xf7, msl #0x8
+6F07C737 mvni v23.4s, #0xf9, msl #0x8
+6F07C757 mvni v23.4s, #0xfa, msl #0x8
+6F07C777 mvni v23.4s, #0xfb, msl #0x8
+6F07C797 mvni v23.4s, #0xfc, msl #0x8
+6F07C7B7 mvni v23.4s, #0xfd, msl #0x8
+6F07C7D7 mvni v23.4s, #0xfe, msl #0x8
+6F07C7F7 mvni v23.4s, #0xff, msl #0x8

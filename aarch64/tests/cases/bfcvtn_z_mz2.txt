@@ -1,0 +1,9 @@
+// bfcvtn_z_mz2_ 1|10|0000|1|0|op=1|1|000|00|111000|Zn=xxxx|N=1|Zd=xxxxx
+// BfcvtnZMz2: BFCVTN  <Zd>.H, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+C160E023 bfcvtn z3.h, {z0.s-z1.s}
+C160E02A bfcvtn z10.h, {z0.s-z1.s}
+C160E031 bfcvtn z17.h, {z0.s-z1.s}
+C160E3E0 bfcvtn z0.h, {z30.s-z31.s}
+C160E03F bfcvtn z31.h, {z0.s-z1.s}
+C160E020 bfcvtn z0.h, {z0.s-z1.s}

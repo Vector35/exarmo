@@ -1,0 +1,116 @@
+// VSTM_A1 cond=xxxx|110|P=0|U=1|D=x|W=x|L=0|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx0
+// VstmA1: VSTM{<c>}{<q>}{.<size>}  <Rn>{<!>}, <dreglist>
+// register fields: Rn
+1c8e0b0c vstmne lr, {d0, d1, d2, d3, d4, d5}
+5ce08b50 UNPREDICTABLE
+0c841b2a vstmeq r4, {d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21} (unpredictable)
+0c856b5a UNPREDICTABLE
+acea1bb8 UNPREDICTABLE
+dceacbba UNPREDICTABLE
+acc15b32 UNPREDICTABLE
+ec878be8 UNPREDICTABLE
+// Binary Ninja's tests
+ec812b0c vstm r1, {d2, d3, d4, d5, d6, d7}
+FC8E0B0C UNALLOCATED
+8C8FFB00 vstmhi pc, {} (unpredictable)
+4C8E4BFE UNPREDICTABLE
+2C8E0B80 UNPREDICTABLE
+1C8E0B40 vstmne lr, {d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30, d31} (unpredictable)
+1C8E0B20 vstmne lr, {d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15}
+1C8E0B10 vstmne lr, {d0, d1, d2, d3, d4, d5, d6, d7}
+1C8E0B08 vstmne lr, {d0, d1, d2, d3}
+1C8E0B04 vstmne lr, {d0, d1}
+1C8E0B02 vstmne lr, {d0}
+4CE08B0C vstmmi r0!, {d24, d25, d26, d27, d28, d29}
+2C8E4B0C vstmcs lr, {d4, d5, d6, d7, d8, d9}
+
+// VSTM_A2 cond=xxxx|110|P=0|U=1|D=x|W=x|L=0|Rn=xxxx|Vd=xxxx|10|size=10|imm8=xxxxxxxx
+// VstmA2: VSTM{<c>}{<q>}{.<size>}  <Rn>{<!>}, <sreglist>
+// register fields: Rn
+8ca25a73 UNPREDICTABLE
+3c849ae5 UNPREDICTABLE
+6ce3ca71 UNPREDICTABLE
+ccc23a9a UNPREDICTABLE
+5ce01ab1 UNPREDICTABLE
+acc2eaa9 UNPREDICTABLE
+0ca73a22 UNPREDICTABLE
+bc8e6ad9 UNPREDICTABLE
+// Binary Ninja's tests
+ec811a06 vstm r1, {s2, s3, s4, s5, s6, s7}
+FCA25A73 UNALLOCATED
+4CAF0A00 vstmmi pc!, {} (unpredictable)
+2CA2FAFF UNPREDICTABLE
+1CA28A80 UNPREDICTABLE
+8CA24A40 UNPREDICTABLE
+8CA22A20 UNPREDICTABLE
+8CA25A10 vstmhi r2!, {s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24, s25}
+8CA25A08 vstmhi r2!, {s10, s11, s12, s13, s14, s15, s16, s17}
+8CA25A04 vstmhi r2!, {s10, s11, s12, s13}
+8CA25A02 vstmhi r2!, {s10, s11}
+8CA25A01 vstmhi r2!, {s10}
+0CC08A06 vstmeq r0, {s17, s18, s19, s20, s21, s22}
+2C814A06 vstmcs r1, {s8, s9, s10, s11, s12, s13}
+1C812A06 vstmne r1, {s4, s5, s6, s7, s8, s9}
+4CAFFA00 vstmmi pc!, {} (unpredictable)
+4CAF0A20 vstmmi pc!, {s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24, s25, s26, s27, s28, s29, s30, s31} (unpredictable)
+
+// VSTMDB_A1 cond=xxxx|110|P=1|U=0|D=x|W=1|L=0|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx0
+// VpushVstmdbA1: VPUSH{<c>}{<q>}{.<size>}  <dreglist>
+// VstmdbA1: VSTMDB{<c>}{<q>}{.<size>}  <Rn>!, <dreglist>
+// register fields: Rn
+// form chosen on: Rn
+0d6f6b44 UNPREDICTABLE
+5d6e4b5a UNPREDICTABLE
+8d6b4bb6 UNPREDICTABLE
+5d6b7bc4 UNPREDICTABLE
+ad27fbe0 UNPREDICTABLE
+8d271b8a UNPREDICTABLE
+2d66bbfe UNPREDICTABLE
+9d64eba4 UNPREDICTABLE
+// Binary Ninja's tests
+ed2d8b0a vpush {d8, d9, d10, d11, d12}
+ed2d8b10 vpush {d8, d9, d10, d11, d12, d13, d14, d15}
+FD6F6B44 UNALLOCATED
+4D600B00 vstmdbmi r0!, {} (unpredictable)
+1D6F2B80 UNPREDICTABLE
+0D6F6B40 UNPREDICTABLE
+0D6F6B20 UNPREDICTABLE
+0D6F6B08 vstmdbeq pc!, {d22, d23, d24, d25} (unpredictable)
+0D6F6B04 vstmdbeq pc!, {d22, d23} (unpredictable)
+0D6F6B02 vstmdbeq pc!, {d22} (unpredictable)
+0D6D6B02 vpusheq {d22}
+8D2DFB20 vpushhi {d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30}
+2D2D4B0A vpushcs {d4, d5, d6, d7, d8}
+1D2D2B0A vpushne {d2, d3, d4, d5, d6}
+ED2D1B0A vpush {d1, d2, d3, d4, d5}
+
+// VSTMDB_A2 cond=xxxx|110|P=1|U=0|D=x|W=1|L=0|Rn=xxxx|Vd=xxxx|10|size=10|imm8=xxxxxxxx
+// VpushVstmdbA2: VPUSH{<c>}{<q>}{.<size>}  <sreglist>
+// VstmdbA2: VSTMDB{<c>}{<q>}{.<size>}  <Rn>!, <sreglist>
+// register fields: Rn
+// form chosen on: Rn
+7d286af7 UNPREDICTABLE
+4d68fa9f UNPREDICTABLE
+cd2f1a7f UNPREDICTABLE
+1d26aae4 UNPREDICTABLE
+9d2b6a02 vstmdbls r11!, {s12, s13}
+cd67da12 UNPREDICTABLE
+7d2d7a46 UNPREDICTABLE
+1d6cda04 vstmdbne r12!, {s27, s28, s29, s30}
+// Binary Ninja's tests
+ed2d4a05 vpush {s8, s9, s10, s11, s12}
+0D200A00 vstmdbeq r0!, {} (unpredictable)
+FD286AF7 UNALLOCATED
+8D288AFF UNPREDICTABLE
+2D282A80 UNPREDICTABLE
+7D286A40 UNPREDICTABLE
+7D286A20 UNPREDICTABLE
+7D286A10 vstmdbvc r8!, {s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24, s25, s26, s27}
+7D286A08 vstmdbvc r8!, {s12, s13, s14, s15, s16, s17, s18, s19}
+7D286A01 vstmdbvc r8!, {s12}
+1D6DDA04 vpushne {s27, s28, s29, s30}
+8D2FFA02 vstmdbhi pc!, {s30, s31} (unpredictable)
+4D2B8A02 vstmdbmi r11!, {s16, s17}
+2D2B2A02 vstmdbcs r11!, {s4, s5}
+9D2B1A02 vstmdbls r11!, {s2, s3}
+0D200A20 vstmdbeq r0!, {s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24, s25, s26, s27, s28, s29, s30, s31}

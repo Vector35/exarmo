@@ -1,0 +1,41 @@
+// SMADDL_64WA_dp_3src sf=1|op54=00|1|101|1|U=0|01|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Smaddl64waDp3src: SMADDL  <Xd>, <Wn>, <Wm>, <Xa>
+// SmullSmaddl64waDp3src: SMULL  <Xd>, <Wn>, <Wm>
+// register fields: Rm, Ra, Rn, Rd
+// form chosen on: Ra
+9B2B0AF3 smaddl x19, w23, w11, x2
+9B2D0FF2 smaddl x18, wzr, w13, x3
+9B35587A smaddl x26, w3, w21, x22
+9B2A45AA smaddl x10, w13, w10, x17
+9B2657E5 smaddl x5, wzr, w6, x21
+9B326015 smaddl x21, w0, w18, x24
+9B216879 smaddl x25, w3, w1, x26
+9B221C66 smaddl x6, w3, w2, x7
+9B3874C9 smaddl x9, w6, w24, fp
+9B3A4841 smaddl x1, w2, w26, x18
+9B351839 smaddl x25, w1, w21, x6
+9B3D3971 smaddl x17, w11, w29, x14
+9B32210B smaddl x11, w8, w18, x8
+9B221D34 smaddl x20, w9, w2, x7
+9B2406BB smaddl x27, w21, w4, x1
+9B33319B smaddl x27, w12, w19, x12
+9B337F45 smull x5, w26, w19
+9B2D7F01 smull x1, w24, w13
+9B3B7DDC smull x28, w14, w27
+9B3F7C18 smull x24, w0, wzr
+9B3F7D84 smull x4, w12, wzr
+9B287E59 smull x25, w18, w8
+9B247D36 smull x22, w9, w4
+9B2A7EEE smull x14, w23, w10
+9B3C7CE8 smull x8, w7, w28
+9B2D7C0C smull x12, w0, w13
+9B267EA1 smull x1, w21, w6
+9B3B7E50 smull x16, w18, w27
+9B3D7CC1 smull x1, w6, w29
+9B2B7C1F smull xzr, w0, w11
+9B2D7E04 smull x4, w16, w13
+9B237E2D smull x13, w17, w3
+9B2002E0 smaddl x0, w23, w0, x0
+9B2B0973 smaddl x19, w11, w11, x2
+9B2B0AF7 smaddl x23, w23, w11, x2
+9B233E2D smaddl x13, w17, w3, x15

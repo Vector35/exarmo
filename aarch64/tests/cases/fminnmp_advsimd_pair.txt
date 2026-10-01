@@ -1,0 +1,47 @@
+// FMINNMP_asisdpair_only_H 01|U=0|1|111|0|o1=1|sz=0|11000|opcode=01100|10|Rn=xxxxx|Rd=xxxxx
+// FminnmpAsisdpairOnlyH: FMINNMP  <d>, <Vn>.2H
+// register fields: Rn, Rd
+5EB0CB9E fminnmp h30, v28.2h
+5EB0CA9F fminnmp h31, v20.2h
+5EB0CB1C fminnmp h28, v24.2h
+5EB0C8EA fminnmp h10, v7.2h
+5EB0C826 fminnmp h6, v1.2h
+5EB0C901 fminnmp h1, v8.2h
+5EB0CB93 fminnmp h19, v28.2h
+5EB0C81D fminnmp h29, v0.2h
+5EB0CAF6 fminnmp h22, v23.2h
+5EB0C924 fminnmp h4, v9.2h
+5EB0C93F fminnmp h31, v9.2h
+5EB0CB01 fminnmp h1, v24.2h
+5EB0C82E fminnmp h14, v1.2h
+5EB0C989 fminnmp h9, v12.2h
+5EB0CAB7 fminnmp h23, v21.2h
+5EB0C9B7 fminnmp h23, v13.2h
+5EB0CBE0 fminnmp h0, v31.2h
+5EB0CB9C fminnmp h28, v28.2h
+
+// FMINNMP_asisdpair_only_SD 01|U=1|1|111|0|o1=1|sz=x|11000|opcode=01100|10|Rn=xxxxx|Rd=xxxxx
+// FminnmpAsisdpairOnlySd: FMINNMP  <V><d>, <Vn>.<T>
+// read together by <d>: sz, Rd
+// register fields: Rn, Rd
+7EB0C8F5 fminnmp s21, v7.2s
+7EF0C86E fminnmp d14, v3.2d
+7EB0C868 fminnmp s8, v3.2s
+7EB0C808 fminnmp s8, v0.2s
+7EB0CBF2 fminnmp s18, v31.2s
+7EF0C8FE fminnmp d30, v7.2d
+7EB0CAEF fminnmp s15, v23.2s
+7EB0C9A7 fminnmp s7, v13.2s
+7EB0C9B3 fminnmp s19, v13.2s
+7EB0CB48 fminnmp s8, v26.2s
+7EB0CA74 fminnmp s20, v19.2s
+7EF0CBD9 fminnmp d25, v30.2d
+7EF0CA04 fminnmp d4, v16.2d
+7EB0CAAF fminnmp s15, v21.2s
+7EF0C8AF fminnmp d15, v5.2d
+7EB0CBD1 fminnmp s17, v30.2s
+7EB0C8E0 fminnmp s0, v7.2s
+7EB0C8FF fminnmp s31, v7.2s
+7EF0C8E0 fminnmp d0, v7.2d
+7EF0C8FF fminnmp d31, v7.2d
+7EB0C8E7 fminnmp s7, v7.2s

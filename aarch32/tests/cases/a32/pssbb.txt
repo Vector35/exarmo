@@ -1,0 +1,19 @@
+// PSSBB_A1 1111|0|1|01011|1|(1)(1)(1)(1)(1)(1)(1)(1)(0)(0)(0)(0)|opcode=0100|option=0100
+// PssbbA1: PSSBB{<q>}
+// Binary Ninja's tests
+f57ff044 pssbb
+F5700044 pssbb (unpredictable)
+F57FFF44 pssbb (unpredictable)
+F5780044 pssbb (unpredictable)
+F5740044 pssbb (unpredictable)
+F5720044 pssbb (unpredictable)
+F5710044 pssbb (unpredictable)
+F5708044 pssbb (unpredictable)
+F5704044 pssbb (unpredictable)
+F5702044 pssbb (unpredictable)
+F5701044 pssbb (unpredictable)
+F5700844 pssbb (unpredictable)
+F5700444 pssbb (unpredictable)
+F5700244 pssbb (unpredictable)
+F5700144 pssbb (unpredictable)
+F5700F44 pssbb (unpredictable)

@@ -1,0 +1,35 @@
+// umopa_za_pp_zz_32 1|01|0000|u0=1|10|u1=1|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=0|0|0|ZAda=xx
+// UmopaZaPpZz32: UMOPA  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.B, <Zm>.B
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A1A98383 umopa za3.s, p0/m, p4/m, z28.b, z9.b
+A1B5D343 umopa za3.s, p4/m, p6/m, z26.b, z21.b
+A1A78500 umopa za0.s, p1/m, p4/m, z8.b, z7.b
+A1A73CC2 umopa za2.s, p7/m, p1/m, z6.b, z7.b
+A1AE0461 umopa za1.s, p1/m, p0/m, z3.b, z14.b
+A1B14141 umopa za1.s, p0/m, p2/m, z10.b, z17.b
+A1A7C2C3 umopa za3.s, p0/m, p6/m, z22.b, z7.b
+A1A234A2 umopa za2.s, p5/m, p1/m, z5.b, z2.b
+A1A06803 umopa za3.s, p2/m, p3/m, z0.b, z0.b
+A1BFAFE3 umopa za3.s, p3/m, p5/m, z31.b, z31.b
+A1A9FB83 umopa za3.s, p6/m, p7/m, z28.b, z9.b
+A1A48063 umopa za3.s, p0/m, p4/m, z3.b, z4.b
+A1A99383 umopa za3.s, p4/m, p4/m, z28.b, z9.b
+A1A98083 umopa za3.s, p0/m, p4/m, z4.b, z9.b
+
+// umopa_za_pp_zz_64 1|0|1|0000|u0=1|11|u1=1|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=0|0|ZAda=xxx
+// UmopaZaPpZz64: UMOPA  <ZAda>.D, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A1E301C4 umopa za4.d, p0/m, p0/m, z14.h, z3.h
+A1FAA224 umopa za4.d, p0/m, p5/m, z17.h, z26.h
+A1FD16C5 umopa za5.d, p5/m, p0/m, z22.h, z29.h
+A1E45F04 umopa za4.d, p7/m, p2/m, z24.h, z4.h
+A1EBE326 umopa za6.d, p0/m, p7/m, z25.h, z11.h
+A1F66547 umopa za7.d, p1/m, p3/m, z10.h, z22.h
+A1F6A5E3 umopa za3.d, p1/m, p5/m, z15.h, z22.h
+A1FA08A1 umopa za1.d, p2/m, p0/m, z5.h, z26.h
+A1E02C00 umopa za0.d, p3/m, p1/m, z0.h, z0.h
+A1FF93E2 umopa za2.d, p4/m, p4/m, z31.h, z31.h
+A1E3D9C4 umopa za4.d, p6/m, p6/m, z14.h, z3.h
+A1E36004 umopa za4.d, p0/m, p3/m, z0.h, z3.h
+A1E30C04 umopa za4.d, p3/m, p0/m, z0.h, z3.h
+A1E301C0 umopa za0.d, p0/m, p0/m, z14.h, z3.h

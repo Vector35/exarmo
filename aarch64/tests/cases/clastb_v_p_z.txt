@@ -1,0 +1,29 @@
+// clastb_v_p_z_ 000|0010|1|size=xx|1|0|101|B=1|10|0|Pg=xxx|Zm=xxxxx|Vdn=xxxxx
+// ClastbVPZ: CLASTB  <V><dn>, <Pg>, <V><dn>, <Zm>.<T>
+// read together by <dn>: size, Vdn
+// register fields: Pg, Zm, Vdn
+056B94F9 clastb h25, p5, h25, z7.h
+05AB999A clastb s26, p6, s26, z12.s
+05AB85FB clastb s27, p1, s27, z15.s
+056B9C3D clastb h29, p7, h29, z1.h
+05AB8A9A clastb s26, p2, s26, z20.s
+05AB91D7 clastb s23, p4, s23, z14.s
+056B8012 clastb h18, p0, h18, z0.h
+056B8ACD clastb h13, p2, h13, z22.h
+05EB88C1 clastb d1, p2, d1, z6.d
+052B9F52 clastb b18, p7, b18, z26.b
+05EB9590 clastb d16, p5, d16, z12.d
+052B880C clastb b12, p2, b12, z0.b
+05AB8E50 clastb s16, p3, s16, z18.s
+05EB8016 clastb d22, p0, d22, z0.d
+056B8917 clastb h23, p2, h23, z8.h
+052B8B9C clastb b28, p2, b28, z28.b
+056B97E0 clastb h0, p5, h0, z31.h
+056B94FF clastb h31, p5, h31, z7.h
+052B94E0 clastb b0, p5, b0, z7.b
+052B94FF clastb b31, p5, b31, z7.b
+05AB94E0 clastb s0, p5, s0, z7.s
+05AB94FF clastb s31, p5, s31, z7.s
+05EB94E0 clastb d0, p5, d0, z7.d
+05EB94FF clastb d31, p5, d31, z7.d
+056B94E5 clastb h5, p5, h5, z7.h

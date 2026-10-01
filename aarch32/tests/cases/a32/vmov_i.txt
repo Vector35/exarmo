@@ -1,0 +1,993 @@
+// VMOV_i_A1_D 1111001|i=x|1|D=x|000|imm3=xxx|Vd=xxxx|cmode=0xx0|0|Q=0|op=0|1|imm4=xxxx
+// VmovIA1D: VMOV{<c>}{<q>}.I32  <Dd>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <imm>: i, imm3, cmode, imm4
+f3806610 vmov.i32 d6, #0x80000000
+f3c3961e vmov.i32 d25, #0xbe000000
+f2c2801a vmov.i32 d24, #0x2a
+f3c1d617 vmov.i32 d29, #0x97000000
+f3c6741c vmov.i32 d23, #0xec0000
+f2c5d21e vmov.i32 d29, #0x5e00
+f2c6b012 vmov.i32 d27, #0x62
+f2c38614 vmov.i32 d24, #0x34000000
+// Binary Ninja's tests
+f2804010 vmov.i32 d4, #0x0
+f2844612 vmov.i32 d4, #0x42000000
+F387061F vmov.i32 d0, #0xff000000
+F380F618 vmov.i32 d15, #0x88000000
+F3802611 vmov.i32 d2, #0x81000000
+F280101F vmov.i32 d1, #0xf
+F2800210 vmov.i32 d0, #0x0
+F280F21F vmov.i32 d15, #0xf00
+F2C00410 vmov.i32 d16, #0x0
+F2C0F41F vmov.i32 d31, #0xf0000
+F2806610 vmov.i32 d6, #0x0
+F280661F vmov.i32 d6, #0xf000000
+F2816010 vmov.i32 d6, #0x10
+F281601F vmov.i32 d6, #0x1f
+F2816210 vmov.i32 d6, #0x1000
+F281621F vmov.i32 d6, #0x1f00
+F2816410 vmov.i32 d6, #0x100000
+F281641F vmov.i32 d6, #0x1f0000
+F2816610 vmov.i32 d6, #0x10000000
+F281661F vmov.i32 d6, #0x1f000000
+F2826010 vmov.i32 d6, #0x20
+F282601F vmov.i32 d6, #0x2f
+F2826210 vmov.i32 d6, #0x2000
+F282621F vmov.i32 d6, #0x2f00
+F2826410 vmov.i32 d6, #0x200000
+F282641F vmov.i32 d6, #0x2f0000
+F2826610 vmov.i32 d6, #0x20000000
+F282661F vmov.i32 d6, #0x2f000000
+F2836010 vmov.i32 d6, #0x30
+F283601F vmov.i32 d6, #0x3f
+F2836210 vmov.i32 d6, #0x3000
+F283621F vmov.i32 d6, #0x3f00
+F2836410 vmov.i32 d6, #0x300000
+F283641F vmov.i32 d6, #0x3f0000
+F2836610 vmov.i32 d6, #0x30000000
+F283661F vmov.i32 d6, #0x3f000000
+F2846010 vmov.i32 d6, #0x40
+F284601F vmov.i32 d6, #0x4f
+F2846210 vmov.i32 d6, #0x4000
+F284621F vmov.i32 d6, #0x4f00
+F2846410 vmov.i32 d6, #0x400000
+F284641F vmov.i32 d6, #0x4f0000
+F2846610 vmov.i32 d6, #0x40000000
+F284661F vmov.i32 d6, #0x4f000000
+F2856010 vmov.i32 d6, #0x50
+F285601F vmov.i32 d6, #0x5f
+F2856210 vmov.i32 d6, #0x5000
+F285621F vmov.i32 d6, #0x5f00
+F2856410 vmov.i32 d6, #0x500000
+F285641F vmov.i32 d6, #0x5f0000
+F2856610 vmov.i32 d6, #0x50000000
+F285661F vmov.i32 d6, #0x5f000000
+F2866010 vmov.i32 d6, #0x60
+F286601F vmov.i32 d6, #0x6f
+F2866210 vmov.i32 d6, #0x6000
+F286621F vmov.i32 d6, #0x6f00
+F2866410 vmov.i32 d6, #0x600000
+F286641F vmov.i32 d6, #0x6f0000
+F2866610 vmov.i32 d6, #0x60000000
+F286661F vmov.i32 d6, #0x6f000000
+F2876010 vmov.i32 d6, #0x70
+F287601F vmov.i32 d6, #0x7f
+F2876210 vmov.i32 d6, #0x7000
+F287621F vmov.i32 d6, #0x7f00
+F2876410 vmov.i32 d6, #0x700000
+F287641F vmov.i32 d6, #0x7f0000
+F2876610 vmov.i32 d6, #0x70000000
+F287661F vmov.i32 d6, #0x7f000000
+F3806010 vmov.i32 d6, #0x80
+F380601F vmov.i32 d6, #0x8f
+F3806210 vmov.i32 d6, #0x8000
+F380621F vmov.i32 d6, #0x8f00
+F3806410 vmov.i32 d6, #0x800000
+F380641F vmov.i32 d6, #0x8f0000
+F380661F vmov.i32 d6, #0x8f000000
+F3816010 vmov.i32 d6, #0x90
+F381601F vmov.i32 d6, #0x9f
+F3816210 vmov.i32 d6, #0x9000
+F381621F vmov.i32 d6, #0x9f00
+F3816410 vmov.i32 d6, #0x900000
+F381641F vmov.i32 d6, #0x9f0000
+F3816610 vmov.i32 d6, #0x90000000
+F381661F vmov.i32 d6, #0x9f000000
+F3826010 vmov.i32 d6, #0xa0
+F382601F vmov.i32 d6, #0xaf
+F3826210 vmov.i32 d6, #0xa000
+F382621F vmov.i32 d6, #0xaf00
+F3826410 vmov.i32 d6, #0xa00000
+F382641F vmov.i32 d6, #0xaf0000
+F3826610 vmov.i32 d6, #0xa0000000
+F382661F vmov.i32 d6, #0xaf000000
+F3836010 vmov.i32 d6, #0xb0
+F383601F vmov.i32 d6, #0xbf
+F3836210 vmov.i32 d6, #0xb000
+F383621F vmov.i32 d6, #0xbf00
+F3836410 vmov.i32 d6, #0xb00000
+F383641F vmov.i32 d6, #0xbf0000
+F3836610 vmov.i32 d6, #0xb0000000
+F383661F vmov.i32 d6, #0xbf000000
+F3846010 vmov.i32 d6, #0xc0
+F384601F vmov.i32 d6, #0xcf
+F3846210 vmov.i32 d6, #0xc000
+F384621F vmov.i32 d6, #0xcf00
+F3846410 vmov.i32 d6, #0xc00000
+F384641F vmov.i32 d6, #0xcf0000
+F3846610 vmov.i32 d6, #0xc0000000
+F384661F vmov.i32 d6, #0xcf000000
+F3856010 vmov.i32 d6, #0xd0
+F385601F vmov.i32 d6, #0xdf
+F3856210 vmov.i32 d6, #0xd000
+F385621F vmov.i32 d6, #0xdf00
+F3856410 vmov.i32 d6, #0xd00000
+F385641F vmov.i32 d6, #0xdf0000
+F3856610 vmov.i32 d6, #0xd0000000
+F385661F vmov.i32 d6, #0xdf000000
+F3866010 vmov.i32 d6, #0xe0
+F386601F vmov.i32 d6, #0xef
+F3866210 vmov.i32 d6, #0xe000
+F386621F vmov.i32 d6, #0xef00
+F3866410 vmov.i32 d6, #0xe00000
+F386641F vmov.i32 d6, #0xef0000
+F3866610 vmov.i32 d6, #0xe0000000
+F386661F vmov.i32 d6, #0xef000000
+F3876010 vmov.i32 d6, #0xf0
+F387601F vmov.i32 d6, #0xff
+F3876210 vmov.i32 d6, #0xf000
+F387621F vmov.i32 d6, #0xff00
+F3876410 vmov.i32 d6, #0xf00000
+F387641F vmov.i32 d6, #0xff0000
+F3876610 vmov.i32 d6, #0xf0000000
+F387661F vmov.i32 d6, #0xff000000
+
+// VMOV_i_A1_Q 1111001|i=x|1|D=x|000|imm3=xxx|Vd=xxxx|cmode=0xx0|0|Q=1|op=0|1|imm4=xxxx
+// VmovIA1Q: VMOV{<c>}{<q>}.I32  <Qd>, #<imm>
+// read together by <Qd>: D, Vd
+// read together by <imm>: i, imm3, cmode, imm4
+f2c6245b vmov.i32 q9, #0x6b0000
+f382a45d vmov.i32 q5, #0xad0000
+f2c10256 vmov.i32 q8, #0x1600
+f2c5005f vmov.i32 q8, #0x5f
+f380c25f vmov.i32 q6, #0x8f00
+f383e05d vmov.i32 q7, #0xbd
+f2c6e653 vmov.i32 q15, #0x63000000
+f385065c vmov.i32 q0, #0xdc000000
+F2C48450 vmov.i32 q12, #0x400000
+F2C74458 vmov.i32 q10, #0x780000
+F2C6F45B UNDEFINED
+F2C6145B UNDEFINED
+F2C62454 vmov.i32 q9, #0x640000
+F2C62452 vmov.i32 q9, #0x620000
+F2C62451 vmov.i32 q9, #0x610000
+F286F45B UNDEFINED
+F2C02050 vmov.i32 q9, #0x0
+F2C0205F vmov.i32 q9, #0xf
+F2C02250 vmov.i32 q9, #0x0
+F2C0225F vmov.i32 q9, #0xf00
+F2C02450 vmov.i32 q9, #0x0
+F2C0245F vmov.i32 q9, #0xf0000
+F2C02650 vmov.i32 q9, #0x0
+F2C0265F vmov.i32 q9, #0xf000000
+F2C12050 vmov.i32 q9, #0x10
+F2C1205F vmov.i32 q9, #0x1f
+F2C12250 vmov.i32 q9, #0x1000
+F2C1225F vmov.i32 q9, #0x1f00
+F2C12450 vmov.i32 q9, #0x100000
+F2C1245F vmov.i32 q9, #0x1f0000
+F2C12650 vmov.i32 q9, #0x10000000
+F2C1265F vmov.i32 q9, #0x1f000000
+F2C22050 vmov.i32 q9, #0x20
+F2C2205F vmov.i32 q9, #0x2f
+F2C22250 vmov.i32 q9, #0x2000
+F2C2225F vmov.i32 q9, #0x2f00
+F2C22450 vmov.i32 q9, #0x200000
+F2C2245F vmov.i32 q9, #0x2f0000
+F2C22650 vmov.i32 q9, #0x20000000
+F2C2265F vmov.i32 q9, #0x2f000000
+F2C32050 vmov.i32 q9, #0x30
+F2C3205F vmov.i32 q9, #0x3f
+F2C32250 vmov.i32 q9, #0x3000
+F2C3225F vmov.i32 q9, #0x3f00
+F2C32450 vmov.i32 q9, #0x300000
+F2C3245F vmov.i32 q9, #0x3f0000
+F2C32650 vmov.i32 q9, #0x30000000
+F2C3265F vmov.i32 q9, #0x3f000000
+F2C42050 vmov.i32 q9, #0x40
+F2C4205F vmov.i32 q9, #0x4f
+F2C42250 vmov.i32 q9, #0x4000
+F2C4225F vmov.i32 q9, #0x4f00
+F2C42450 vmov.i32 q9, #0x400000
+F2C4245F vmov.i32 q9, #0x4f0000
+F2C42650 vmov.i32 q9, #0x40000000
+F2C4265F vmov.i32 q9, #0x4f000000
+F2C52050 vmov.i32 q9, #0x50
+F2C52250 vmov.i32 q9, #0x5000
+F2C5225F vmov.i32 q9, #0x5f00
+F2C52450 vmov.i32 q9, #0x500000
+F2C5245F vmov.i32 q9, #0x5f0000
+F2C52650 vmov.i32 q9, #0x50000000
+F2C5265F vmov.i32 q9, #0x5f000000
+F2C62050 vmov.i32 q9, #0x60
+F2C6205F vmov.i32 q9, #0x6f
+F2C62250 vmov.i32 q9, #0x6000
+F2C6225F vmov.i32 q9, #0x6f00
+F2C62450 vmov.i32 q9, #0x600000
+F2C6245F vmov.i32 q9, #0x6f0000
+F2C62650 vmov.i32 q9, #0x60000000
+F2C6265F vmov.i32 q9, #0x6f000000
+F2C72050 vmov.i32 q9, #0x70
+F2C7205F vmov.i32 q9, #0x7f
+F2C72250 vmov.i32 q9, #0x7000
+F2C7225F vmov.i32 q9, #0x7f00
+F2C72450 vmov.i32 q9, #0x700000
+F2C7245F vmov.i32 q9, #0x7f0000
+F2C72650 vmov.i32 q9, #0x70000000
+F2C7265F vmov.i32 q9, #0x7f000000
+F3C02050 vmov.i32 q9, #0x80
+F3C0205F vmov.i32 q9, #0x8f
+F3C02250 vmov.i32 q9, #0x8000
+F3C02450 vmov.i32 q9, #0x800000
+F3C0245F vmov.i32 q9, #0x8f0000
+F3C02650 vmov.i32 q9, #0x80000000
+F3C0265F vmov.i32 q9, #0x8f000000
+F3C12050 vmov.i32 q9, #0x90
+F3C1205F vmov.i32 q9, #0x9f
+F3C12250 vmov.i32 q9, #0x9000
+F3C1225F vmov.i32 q9, #0x9f00
+F3C12450 vmov.i32 q9, #0x900000
+F3C1245F vmov.i32 q9, #0x9f0000
+F3C12650 vmov.i32 q9, #0x90000000
+F3C1265F vmov.i32 q9, #0x9f000000
+F3C22050 vmov.i32 q9, #0xa0
+F3C2205F vmov.i32 q9, #0xaf
+F3C22250 vmov.i32 q9, #0xa000
+F3C2225F vmov.i32 q9, #0xaf00
+F3C22450 vmov.i32 q9, #0xa00000
+F3C2245F vmov.i32 q9, #0xaf0000
+F3C22650 vmov.i32 q9, #0xa0000000
+F3C2265F vmov.i32 q9, #0xaf000000
+F3C32050 vmov.i32 q9, #0xb0
+F3C3205F vmov.i32 q9, #0xbf
+F3C32250 vmov.i32 q9, #0xb000
+F3C3225F vmov.i32 q9, #0xbf00
+F3C32450 vmov.i32 q9, #0xb00000
+F3C3245F vmov.i32 q9, #0xbf0000
+F3C32650 vmov.i32 q9, #0xb0000000
+F3C3265F vmov.i32 q9, #0xbf000000
+F3C42050 vmov.i32 q9, #0xc0
+F3C4205F vmov.i32 q9, #0xcf
+F3C42250 vmov.i32 q9, #0xc000
+F3C4225F vmov.i32 q9, #0xcf00
+F3C42450 vmov.i32 q9, #0xc00000
+F3C4245F vmov.i32 q9, #0xcf0000
+F3C42650 vmov.i32 q9, #0xc0000000
+F3C4265F vmov.i32 q9, #0xcf000000
+F3C52050 vmov.i32 q9, #0xd0
+F3C5205F vmov.i32 q9, #0xdf
+F3C52250 vmov.i32 q9, #0xd000
+F3C5225F vmov.i32 q9, #0xdf00
+F3C52450 vmov.i32 q9, #0xd00000
+F3C5245F vmov.i32 q9, #0xdf0000
+F3C52650 vmov.i32 q9, #0xd0000000
+F3C5265F vmov.i32 q9, #0xdf000000
+F3C62050 vmov.i32 q9, #0xe0
+F3C6205F vmov.i32 q9, #0xef
+F3C62250 vmov.i32 q9, #0xe000
+F3C6225F vmov.i32 q9, #0xef00
+F3C62450 vmov.i32 q9, #0xe00000
+F3C6245F vmov.i32 q9, #0xef0000
+F3C62650 vmov.i32 q9, #0xe0000000
+F3C6265F vmov.i32 q9, #0xef000000
+F3C72050 vmov.i32 q9, #0xf0
+F3C7205F vmov.i32 q9, #0xff
+F3C72250 vmov.i32 q9, #0xf000
+F3C7225F vmov.i32 q9, #0xff00
+F3C72450 vmov.i32 q9, #0xf00000
+F3C7245F vmov.i32 q9, #0xff0000
+F3C72650 vmov.i32 q9, #0xf0000000
+F3C7265F vmov.i32 q9, #0xff000000
+
+// VMOV_i_A2_D cond=xxxx|11101|D=x|11|imm4H=xxxx|Vd=xxxx|10|size=11|(0)0(0)0|imm4L=xxxx
+// VmovIA2D: VMOV{<c>}{<q>}.F64  <Dd>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <imm>: imm4H, imm4L
+// floating-point immediate <imm>: imm4H:imm4L
+9eb95b01 vmovls.f64 d5, #-4.250000e+00
+9efafb0d vmovls.f64 d31, #-1.450000e+01
+// Binary Ninja's tests
+eef00b08 vmov.f64 d16, #3.000000e+00
+eef80b08 vmov.f64 d16, #-3.000000e+00
+0EBF8B20 vmoveq.f64 d8, #-1.0 (unpredictable)
+FEB95B01 UNALLOCATED
+8EB44B8F vmovhi.f64 d4, #0.2421875 (unpredictable)
+4EB22BA4 vmovmi.f64 d2, #10.0 (unpredictable)
+2EB11B02 vmovcs.f64 d1, #4.5
+1EB00B00 vmovne.f64 d0, #2.0
+9EB0FB0F vmovls.f64 d15, #3.875
+9EBF5B00 vmovls.f64 d5, #-1.0
+9EBF5B0F vmovls.f64 d5, #-1.9375
+9EB05B00 vmovls.f64 d5, #2.0
+9EB05B0F vmovls.f64 d5, #3.875
+9EB15B00 vmovls.f64 d5, #4.0
+9EB15B0F vmovls.f64 d5, #7.75
+9EB25B00 vmovls.f64 d5, #8.0
+9EB25B0F vmovls.f64 d5, #15.5
+9EB35B00 vmovls.f64 d5, #16.0
+9EB35B0F vmovls.f64 d5, #31.0
+9EB45B00 vmovls.f64 d5, #0.125
+9EB45B0F vmovls.f64 d5, #0.2421875
+9EB55B00 vmovls.f64 d5, #0.25
+9EB55B0F vmovls.f64 d5, #0.484375
+9EB65B00 vmovls.f64 d5, #0.5
+9EB65B0F vmovls.f64 d5, #0.96875
+9EB75B00 vmovls.f64 d5, #1.0
+9EB75B0F vmovls.f64 d5, #1.9375
+9EB85B00 vmovls.f64 d5, #-2.0
+9EB85B0F vmovls.f64 d5, #-3.875
+9EB95B00 vmovls.f64 d5, #-4.0
+9EB95B0F vmovls.f64 d5, #-7.75
+9EBA5B00 vmovls.f64 d5, #-8.0
+9EBA5B0F vmovls.f64 d5, #-15.5
+9EBB5B00 vmovls.f64 d5, #-16.0
+9EBB5B0F vmovls.f64 d5, #-31.0
+9EBC5B00 vmovls.f64 d5, #-0.125
+9EBC5B0F vmovls.f64 d5, #-0.2421875
+9EBD5B00 vmovls.f64 d5, #-0.25
+9EBD5B0F vmovls.f64 d5, #-0.484375
+9EBE5B00 vmovls.f64 d5, #-0.5
+9EBE5B0F vmovls.f64 d5, #-0.96875
+
+// VMOV_i_A2_H cond=xxxx|11101|D=x|11|imm4H=xxxx|Vd=xxxx|10|size=01|(0)0(0)0|imm4L=xxxx
+// VmovIA2H: VMOV{<c>}{<q>}.F16  <Sd>, #<imm>
+// read together by <Sd>: D, Vd
+// read together by <imm>: imm4H, imm4L
+// floating-point immediate <imm>: imm4H:imm4L
+aeb4e90a vmovge.f16 s28, #2.031250e-01 (unpredictable)
+2eb17908 vmovhs.f16 s14, #6.000000e+00 (unpredictable)
+bef21902 vmovlt.f16 s3, #9.000000e+00 (unpredictable)
+8eff790c vmovhi.f16 s15, #-1.750000e+00 (unpredictable)
+3eb6f903 vmovlo.f16 s30, #5.937500e-01 (unpredictable)
+0EB00920 vmoveq.f16 s0, #2.0 (unpredictable)
+FEB4E90A UNALLOCATED
+4EB8898F vmovmi.f16 s16, #-3.875 (unpredictable)
+1EB449A4 vmovne.f16 s8, #0.15625 (unpredictable)
+AEB42901 vmovge.f16 s4, #0.1328125 (unpredictable)
+AEB00900 vmovge.f16 s0, #2.0 (unpredictable)
+AEF0090F vmovge.f16 s1, #3.875 (unpredictable)
+AEFFF900 vmovge.f16 s31, #-1.0 (unpredictable)
+AEBFE90F vmovge.f16 s28, #-1.9375 (unpredictable)
+AEB0E900 vmovge.f16 s28, #2.0 (unpredictable)
+AEB0E90F vmovge.f16 s28, #3.875 (unpredictable)
+AEB1E900 vmovge.f16 s28, #4.0 (unpredictable)
+AEB1E90F vmovge.f16 s28, #7.75 (unpredictable)
+AEB2E900 vmovge.f16 s28, #8.0 (unpredictable)
+AEB2E90F vmovge.f16 s28, #15.5 (unpredictable)
+AEB3E900 vmovge.f16 s28, #16.0 (unpredictable)
+AEB3E90F vmovge.f16 s28, #31.0 (unpredictable)
+AEB4E900 vmovge.f16 s28, #0.125 (unpredictable)
+AEB4E90F vmovge.f16 s28, #0.2421875 (unpredictable)
+AEB5E900 vmovge.f16 s28, #0.25 (unpredictable)
+AEB5E90F vmovge.f16 s28, #0.484375 (unpredictable)
+AEB6E900 vmovge.f16 s28, #0.5 (unpredictable)
+AEB6E90F vmovge.f16 s28, #0.96875 (unpredictable)
+AEB7E900 vmovge.f16 s28, #1.0 (unpredictable)
+AEB7E90F vmovge.f16 s28, #1.9375 (unpredictable)
+AEB8E900 vmovge.f16 s28, #-2.0 (unpredictable)
+AEB8E90F vmovge.f16 s28, #-3.875 (unpredictable)
+AEB9E900 vmovge.f16 s28, #-4.0 (unpredictable)
+AEB9E90F vmovge.f16 s28, #-7.75 (unpredictable)
+AEBAE900 vmovge.f16 s28, #-8.0 (unpredictable)
+AEBAE90F vmovge.f16 s28, #-15.5 (unpredictable)
+AEBBE900 vmovge.f16 s28, #-16.0 (unpredictable)
+AEBBE90F vmovge.f16 s28, #-31.0 (unpredictable)
+AEBCE900 vmovge.f16 s28, #-0.125 (unpredictable)
+AEBCE90F vmovge.f16 s28, #-0.2421875 (unpredictable)
+AEBDE900 vmovge.f16 s28, #-0.25 (unpredictable)
+AEBDE90F vmovge.f16 s28, #-0.484375 (unpredictable)
+AEBEE900 vmovge.f16 s28, #-0.5 (unpredictable)
+AEBEE90F vmovge.f16 s28, #-0.96875 (unpredictable)
+AEBFE900 vmovge.f16 s28, #-1.0 (unpredictable)
+
+// VMOV_i_A2_S cond=xxxx|11101|D=x|11|imm4H=xxxx|Vd=xxxx|10|size=10|(0)0(0)0|imm4L=xxxx
+// VmovIA2S: VMOV{<c>}{<q>}.F32  <Sd>, #<imm>
+// read together by <Sd>: D, Vd
+// read together by <imm>: imm4H, imm4L
+// floating-point immediate <imm>: imm4H:imm4L
+4eb59a0d vmovmi.f32 s18, #4.531250e-01
+aebc8a05 vmovge.f32 s16, #-1.640625e-01
+// Binary Ninja's tests
+eeb00a08 vmov.f32 s0, #3.000000e+00
+eeb80a08 vmov.f32 s0, #-3.000000e+00
+0EFFFA20 vmoveq.f32 s31, #-1.0 (unpredictable)
+FEB59A0D UNALLOCATED
+8EB44A8F vmovhi.f32 s8, #0.2421875 (unpredictable)
+2EB22AA4 vmovcs.f32 s4, #10.0 (unpredictable)
+1EB11A02 vmovne.f32 s2, #4.5
+4EB5FA01 vmovmi.f32 s30, #0.265625
+4EF00A00 vmovmi.f32 s1, #2.0
+4EF0FA0F vmovmi.f32 s31, #3.875
+4EBF9A00 vmovmi.f32 s18, #-1.0
+4EBF9A0F vmovmi.f32 s18, #-1.9375
+4EB09A00 vmovmi.f32 s18, #2.0
+4EB09A0F vmovmi.f32 s18, #3.875
+4EB19A00 vmovmi.f32 s18, #4.0
+4EB19A0F vmovmi.f32 s18, #7.75
+4EB29A00 vmovmi.f32 s18, #8.0
+4EB29A0F vmovmi.f32 s18, #15.5
+4EB39A00 vmovmi.f32 s18, #16.0
+4EB39A0F vmovmi.f32 s18, #31.0
+4EB49A00 vmovmi.f32 s18, #0.125
+4EB49A0F vmovmi.f32 s18, #0.2421875
+4EB59A00 vmovmi.f32 s18, #0.25
+4EB59A0F vmovmi.f32 s18, #0.484375
+4EB69A00 vmovmi.f32 s18, #0.5
+4EB69A0F vmovmi.f32 s18, #0.96875
+4EB79A00 vmovmi.f32 s18, #1.0
+4EB79A0F vmovmi.f32 s18, #1.9375
+4EB89A00 vmovmi.f32 s18, #-2.0
+4EB89A0F vmovmi.f32 s18, #-3.875
+4EB99A00 vmovmi.f32 s18, #-4.0
+4EB99A0F vmovmi.f32 s18, #-7.75
+4EBA9A00 vmovmi.f32 s18, #-8.0
+4EBA9A0F vmovmi.f32 s18, #-15.5
+4EBB9A00 vmovmi.f32 s18, #-16.0
+4EBB9A0F vmovmi.f32 s18, #-31.0
+4EBC9A00 vmovmi.f32 s18, #-0.125
+4EBC9A0F vmovmi.f32 s18, #-0.2421875
+4EBD9A00 vmovmi.f32 s18, #-0.25
+4EBD9A0F vmovmi.f32 s18, #-0.484375
+4EBE9A00 vmovmi.f32 s18, #-0.5
+4EBE9A0F vmovmi.f32 s18, #-0.96875
+
+// VMOV_i_A3_D 1111001|i=x|1|D=x|000|imm3=xxx|Vd=xxxx|cmode=10x0|0|Q=0|op=0|1|imm4=xxxx
+// VmovIA3D: VMOV{<c>}{<q>}.I16  <Dd>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <imm>: i, imm3, cmode, imm4
+f280581b vmov.i16 d5, #0xb
+f285d81b vmov.i16 d13, #0x5b
+f3c26819 vmov.i16 d22, #0xa9
+f2c55813 vmov.i16 d21, #0x53
+f3c5881e vmov.i16 d24, #0xde
+f3817819 vmov.i16 d7, #0x99
+f386e810 vmov.i16 d14, #0xe0
+f387ea1b vmov.i16 d14, #0xfb00
+F283081F vmov.i16 d0, #0x3f
+F284F818 vmov.i16 d15, #0x48
+F2804814 vmov.i16 d4, #0x4
+F2802812 vmov.i16 d2, #0x2
+F2801811 vmov.i16 d1, #0x1
+F2800810 vmov.i16 d0, #0x0
+F280F81F vmov.i16 d15, #0xf
+F2C00A10 vmov.i16 d16, #0x0
+F2C0FA1F vmov.i16 d31, #0xf00
+F2815810 vmov.i16 d5, #0x10
+F281581F vmov.i16 d5, #0x1f
+F2815A10 vmov.i16 d5, #0x1000
+F2815A1F vmov.i16 d5, #0x1f00
+F2825810 vmov.i16 d5, #0x20
+F282581F vmov.i16 d5, #0x2f
+F2825A10 vmov.i16 d5, #0x2000
+F2825A1F vmov.i16 d5, #0x2f00
+F2835810 vmov.i16 d5, #0x30
+F283581F vmov.i16 d5, #0x3f
+F2835A10 vmov.i16 d5, #0x3000
+F2835A1F vmov.i16 d5, #0x3f00
+F2845810 vmov.i16 d5, #0x40
+F284581F vmov.i16 d5, #0x4f
+F2845A10 vmov.i16 d5, #0x4000
+F2845A1F vmov.i16 d5, #0x4f00
+F2855810 vmov.i16 d5, #0x50
+F285581F vmov.i16 d5, #0x5f
+F2855A10 vmov.i16 d5, #0x5000
+F2855A1F vmov.i16 d5, #0x5f00
+F2865810 vmov.i16 d5, #0x60
+F286581F vmov.i16 d5, #0x6f
+F2865A10 vmov.i16 d5, #0x6000
+F2865A1F vmov.i16 d5, #0x6f00
+F2875810 vmov.i16 d5, #0x70
+F287581F vmov.i16 d5, #0x7f
+F2875A10 vmov.i16 d5, #0x7000
+F2875A1F vmov.i16 d5, #0x7f00
+F3805810 vmov.i16 d5, #0x80
+F380581F vmov.i16 d5, #0x8f
+F3805A10 vmov.i16 d5, #0x8000
+F3805A1F vmov.i16 d5, #0x8f00
+F3815810 vmov.i16 d5, #0x90
+F381581F vmov.i16 d5, #0x9f
+F3815A10 vmov.i16 d5, #0x9000
+F3815A1F vmov.i16 d5, #0x9f00
+F3825810 vmov.i16 d5, #0xa0
+F382581F vmov.i16 d5, #0xaf
+F3825A10 vmov.i16 d5, #0xa000
+F3825A1F vmov.i16 d5, #0xaf00
+F3835810 vmov.i16 d5, #0xb0
+F383581F vmov.i16 d5, #0xbf
+F3835A10 vmov.i16 d5, #0xb000
+F3835A1F vmov.i16 d5, #0xbf00
+F3845810 vmov.i16 d5, #0xc0
+F384581F vmov.i16 d5, #0xcf
+F3845A10 vmov.i16 d5, #0xc000
+F3845A1F vmov.i16 d5, #0xcf00
+F3855810 vmov.i16 d5, #0xd0
+F385581F vmov.i16 d5, #0xdf
+F3855A10 vmov.i16 d5, #0xd000
+F3855A1F vmov.i16 d5, #0xdf00
+F386581F vmov.i16 d5, #0xef
+F3865A10 vmov.i16 d5, #0xe000
+F3865A1F vmov.i16 d5, #0xef00
+F3875810 vmov.i16 d5, #0xf0
+F387581F vmov.i16 d5, #0xff
+F3875A10 vmov.i16 d5, #0xf000
+F3875A1F vmov.i16 d5, #0xff00
+
+// VMOV_i_A3_Q 1111001|i=x|1|D=x|000|imm3=xxx|Vd=xxxx|cmode=10x0|0|Q=1|op=0|1|imm4=xxxx
+// VmovIA3Q: VMOV{<c>}{<q>}.I16  <Qd>, #<imm>
+// read together by <Qd>: D, Vd
+// read together by <imm>: i, imm3, cmode, imm4
+f2c6ca5a vmov.i16 q14, #0x6a00
+f3c54853 vmov.i16 q10, #0xd3
+f2c38a51 vmov.i16 q12, #0x3100
+f283aa50 vmov.i16 q5, #0x3000
+f3c4485e vmov.i16 q10, #0xce
+f387e853 vmov.i16 q7, #0xf3
+f3868a52 vmov.i16 q4, #0xe200
+f2872854 vmov.i16 q1, #0x74
+F2C00A5F vmov.i16 q8, #0xf00
+F2810A58 vmov.i16 q0, #0x1800
+F2C20A5A vmov.i16 q8, #0x2a00
+F2C6FA5A UNDEFINED
+F2C61A5A UNDEFINED
+F286FA5A UNDEFINED
+F2C0C850 vmov.i16 q14, #0x0
+F2C0C85F vmov.i16 q14, #0xf
+F2C0CA50 vmov.i16 q14, #0x0
+F2C0CA5F vmov.i16 q14, #0xf00
+F2C1C850 vmov.i16 q14, #0x10
+F2C1C85F vmov.i16 q14, #0x1f
+F2C1CA50 vmov.i16 q14, #0x1000
+F2C1CA5F vmov.i16 q14, #0x1f00
+F2C2C850 vmov.i16 q14, #0x20
+F2C2C85F vmov.i16 q14, #0x2f
+F2C2CA50 vmov.i16 q14, #0x2000
+F2C2CA5F vmov.i16 q14, #0x2f00
+F2C3C850 vmov.i16 q14, #0x30
+F2C3C85F vmov.i16 q14, #0x3f
+F2C3CA5F vmov.i16 q14, #0x3f00
+F2C4C850 vmov.i16 q14, #0x40
+F2C4C85F vmov.i16 q14, #0x4f
+F2C4CA50 vmov.i16 q14, #0x4000
+F2C4CA5F vmov.i16 q14, #0x4f00
+F2C5C850 vmov.i16 q14, #0x50
+F2C5C85F vmov.i16 q14, #0x5f
+F2C5CA50 vmov.i16 q14, #0x5000
+F2C5CA5F vmov.i16 q14, #0x5f00
+F2C6C850 vmov.i16 q14, #0x60
+F2C6C85F vmov.i16 q14, #0x6f
+F2C6CA50 vmov.i16 q14, #0x6000
+F2C6CA5F vmov.i16 q14, #0x6f00
+F2C7C850 vmov.i16 q14, #0x70
+F2C7C85F vmov.i16 q14, #0x7f
+F2C7CA50 vmov.i16 q14, #0x7000
+F2C7CA5F vmov.i16 q14, #0x7f00
+F3C0C850 vmov.i16 q14, #0x80
+F3C0C85F vmov.i16 q14, #0x8f
+F3C0CA50 vmov.i16 q14, #0x8000
+F3C0CA5F vmov.i16 q14, #0x8f00
+F3C1C850 vmov.i16 q14, #0x90
+F3C1C85F vmov.i16 q14, #0x9f
+F3C1CA50 vmov.i16 q14, #0x9000
+F3C1CA5F vmov.i16 q14, #0x9f00
+F3C2C850 vmov.i16 q14, #0xa0
+F3C2C85F vmov.i16 q14, #0xaf
+F3C2CA50 vmov.i16 q14, #0xa000
+F3C2CA5F vmov.i16 q14, #0xaf00
+F3C3C850 vmov.i16 q14, #0xb0
+F3C3C85F vmov.i16 q14, #0xbf
+F3C3CA50 vmov.i16 q14, #0xb000
+F3C3CA5F vmov.i16 q14, #0xbf00
+F3C4C850 vmov.i16 q14, #0xc0
+F3C4C85F vmov.i16 q14, #0xcf
+F3C4CA50 vmov.i16 q14, #0xc000
+F3C4CA5F vmov.i16 q14, #0xcf00
+F3C5C850 vmov.i16 q14, #0xd0
+F3C5C85F vmov.i16 q14, #0xdf
+F3C5CA50 vmov.i16 q14, #0xd000
+F3C5CA5F vmov.i16 q14, #0xdf00
+F3C6C850 vmov.i16 q14, #0xe0
+F3C6C85F vmov.i16 q14, #0xef
+F3C6CA50 vmov.i16 q14, #0xe000
+F3C6CA5F vmov.i16 q14, #0xef00
+F3C7C850 vmov.i16 q14, #0xf0
+F3C7C85F vmov.i16 q14, #0xff
+F3C7CA50 vmov.i16 q14, #0xf000
+F3C7CA5F vmov.i16 q14, #0xff00
+
+// VMOV_i_A4_D 1111001|i=x|1|D=x|000|imm3=xxx|Vd=xxxx|cmode=11xx|0|Q=0|op=0|1|imm4=xxxx
+// VmovIA4D: VMOV{<c>}{<q>}.<dt>  <Dd>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <imm>: i, imm3, cmode, imm4
+f2c5bc1c vmov.i32 d27, #0x5cff
+f3c21e17 vmov.i8 d17, #0xa7
+f284fe19 vmov.i8 d15, #0x49
+f2832d1a vmov.i32 d2, #0x3affff
+f3842c19 vmov.i32 d2, #0xc9ff
+f3c58e10 vmov.i8 d24, #0xd0
+f3879e13 vmov.i8 d9, #0xf3
+f3830e1b vmov.i8 d0, #0xbb
+F2C04F1F vmov.f32 d20, #3.875
+F2C10C18 vmov.i32 d16, #0x18ff
+F2C6FC14 vmov.i32 d31, #0x64ff
+F2C5BC12 vmov.i32 d27, #0x52ff
+F2C5BC11 vmov.i32 d27, #0x51ff
+F2C0BC10 vmov.i32 d27, #0xff
+F2C0BC1F vmov.i32 d27, #0xfff
+F2C0BD10 vmov.i32 d27, #0xffff
+F2C0BD1F vmov.i32 d27, #0xfffff
+F2C0BE10 vmov.i8 d27, #0x0
+F2C0BE1F vmov.i8 d27, #0xf
+F2C0BF10 vmov.f32 d27, #2.0
+F2C0BF1F vmov.f32 d27, #3.875
+F2C1BC10 vmov.i32 d27, #0x10ff
+F2C1BC1F vmov.i32 d27, #0x1fff
+F2C1BD10 vmov.i32 d27, #0x10ffff
+F2C1BD1F vmov.i32 d27, #0x1fffff
+F2C1BE10 vmov.i8 d27, #0x10
+F2C1BE1F vmov.i8 d27, #0x1f
+F2C1BF10 vmov.f32 d27, #4.0
+F2C1BF1F vmov.f32 d27, #7.75
+F2C2BC10 vmov.i32 d27, #0x20ff
+F2C2BC1F vmov.i32 d27, #0x2fff
+F2C2BD10 vmov.i32 d27, #0x20ffff
+F2C2BD1F vmov.i32 d27, #0x2fffff
+F2C2BE10 vmov.i8 d27, #0x20
+F2C2BE1F vmov.i8 d27, #0x2f
+F2C2BF10 vmov.f32 d27, #8.0
+F2C2BF1F vmov.f32 d27, #15.5
+F2C3BC10 vmov.i32 d27, #0x30ff
+F2C3BC1F vmov.i32 d27, #0x3fff
+F2C3BD10 vmov.i32 d27, #0x30ffff
+F2C3BD1F vmov.i32 d27, #0x3fffff
+F2C3BE10 vmov.i8 d27, #0x30
+F2C3BE1F vmov.i8 d27, #0x3f
+F2C3BF10 vmov.f32 d27, #16.0
+F2C3BF1F vmov.f32 d27, #31.0
+F2C4BC10 vmov.i32 d27, #0x40ff
+F2C4BC1F vmov.i32 d27, #0x4fff
+F2C4BD10 vmov.i32 d27, #0x40ffff
+F2C4BD1F vmov.i32 d27, #0x4fffff
+F2C4BE10 vmov.i8 d27, #0x40
+F2C4BE1F vmov.i8 d27, #0x4f
+F2C4BF10 vmov.f32 d27, #0.125
+F2C4BF1F vmov.f32 d27, #0.2421875
+F2C5BC10 vmov.i32 d27, #0x50ff
+F2C5BC1F vmov.i32 d27, #0x5fff
+F2C5BD10 vmov.i32 d27, #0x50ffff
+F2C5BD1F vmov.i32 d27, #0x5fffff
+F2C5BE10 vmov.i8 d27, #0x50
+F2C5BE1F vmov.i8 d27, #0x5f
+F2C5BF10 vmov.f32 d27, #0.25
+F2C5BF1F vmov.f32 d27, #0.484375
+F2C6BC10 vmov.i32 d27, #0x60ff
+F2C6BC1F vmov.i32 d27, #0x6fff
+F2C6BD10 vmov.i32 d27, #0x60ffff
+F2C6BD1F vmov.i32 d27, #0x6fffff
+F2C6BE10 vmov.i8 d27, #0x60
+F2C6BE1F vmov.i8 d27, #0x6f
+F2C6BF10 vmov.f32 d27, #0.5
+F2C6BF1F vmov.f32 d27, #0.96875
+F2C7BC10 vmov.i32 d27, #0x70ff
+F2C7BC1F vmov.i32 d27, #0x7fff
+F2C7BD10 vmov.i32 d27, #0x70ffff
+F2C7BD1F vmov.i32 d27, #0x7fffff
+F2C7BE10 vmov.i8 d27, #0x70
+F2C7BE1F vmov.i8 d27, #0x7f
+F2C7BF10 vmov.f32 d27, #1.0
+F2C7BF1F vmov.f32 d27, #1.9375
+F3C0BC10 vmov.i32 d27, #0x80ff
+F3C0BC1F vmov.i32 d27, #0x8fff
+F3C0BD10 vmov.i32 d27, #0x80ffff
+F3C0BD1F vmov.i32 d27, #0x8fffff
+F3C0BE10 vmov.i8 d27, #0x80
+F3C0BE1F vmov.i8 d27, #0x8f
+F3C0BF10 vmov.f32 d27, #-2.0
+F3C0BF1F vmov.f32 d27, #-3.875
+F3C1BC10 vmov.i32 d27, #0x90ff
+F3C1BC1F vmov.i32 d27, #0x9fff
+F3C1BD10 vmov.i32 d27, #0x90ffff
+F3C1BD1F vmov.i32 d27, #0x9fffff
+F3C1BE10 vmov.i8 d27, #0x90
+F3C1BE1F vmov.i8 d27, #0x9f
+F3C1BF10 vmov.f32 d27, #-4.0
+F3C1BF1F vmov.f32 d27, #-7.75
+F3C2BC10 vmov.i32 d27, #0xa0ff
+F3C2BC1F vmov.i32 d27, #0xafff
+F3C2BD10 vmov.i32 d27, #0xa0ffff
+F3C2BD1F vmov.i32 d27, #0xafffff
+F3C2BE10 vmov.i8 d27, #0xa0
+F3C2BE1F vmov.i8 d27, #0xaf
+F3C2BF10 vmov.f32 d27, #-8.0
+F3C2BF1F vmov.f32 d27, #-15.5
+F3C3BC10 vmov.i32 d27, #0xb0ff
+F3C3BC1F vmov.i32 d27, #0xbfff
+F3C3BD10 vmov.i32 d27, #0xb0ffff
+F3C3BD1F vmov.i32 d27, #0xbfffff
+F3C3BE10 vmov.i8 d27, #0xb0
+F3C3BE1F vmov.i8 d27, #0xbf
+F3C3BF10 vmov.f32 d27, #-16.0
+F3C3BF1F vmov.f32 d27, #-31.0
+F3C4BC10 vmov.i32 d27, #0xc0ff
+F3C4BC1F vmov.i32 d27, #0xcfff
+F3C4BD10 vmov.i32 d27, #0xc0ffff
+F3C4BD1F vmov.i32 d27, #0xcfffff
+F3C4BE10 vmov.i8 d27, #0xc0
+F3C4BE1F vmov.i8 d27, #0xcf
+F3C4BF10 vmov.f32 d27, #-0.125
+F3C4BF1F vmov.f32 d27, #-0.2421875
+F3C5BC10 vmov.i32 d27, #0xd0ff
+F3C5BC1F vmov.i32 d27, #0xdfff
+F3C5BD10 vmov.i32 d27, #0xd0ffff
+F3C5BD1F vmov.i32 d27, #0xdfffff
+F3C5BE1F vmov.i8 d27, #0xdf
+F3C5BF10 vmov.f32 d27, #-0.25
+F3C5BF1F vmov.f32 d27, #-0.484375
+F3C6BC10 vmov.i32 d27, #0xe0ff
+F3C6BC1F vmov.i32 d27, #0xefff
+F3C6BD10 vmov.i32 d27, #0xe0ffff
+F3C6BD1F vmov.i32 d27, #0xefffff
+F3C6BE10 vmov.i8 d27, #0xe0
+F3C6BE1F vmov.i8 d27, #0xef
+F3C6BF10 vmov.f32 d27, #-0.5
+F3C6BF1F vmov.f32 d27, #-0.96875
+F3C7BC10 vmov.i32 d27, #0xf0ff
+F3C7BC1F vmov.i32 d27, #0xffff
+F3C7BD10 vmov.i32 d27, #0xf0ffff
+F3C7BD1F vmov.i32 d27, #0xffffff
+F3C7BE10 vmov.i8 d27, #0xf0
+F3C7BE1F vmov.i8 d27, #0xff
+F3C7BF10 vmov.f32 d27, #-1.0
+F3C7BF1F vmov.f32 d27, #-1.9375
+
+// VMOV_i_A4_Q 1111001|i=x|1|D=x|000|imm3=xxx|Vd=xxxx|cmode=11xx|0|Q=1|op=0|1|imm4=xxxx
+// VmovIA4Q: VMOV{<c>}{<q>}.<dt>  <Qd>, #<imm>
+// read together by <Qd>: D, Vd
+// read together by <imm>: i, imm3, cmode, imm4
+f2c68e57 vmov.i8 q12, #0x67
+f281ad58 vmov.i32 q5, #0x18ffff
+f2824d5e vmov.i32 q2, #0x2effff
+f2c28d5e vmov.i32 q12, #0x2effff
+f285cf5a vmov.f32 q6, #4.062500e-01
+f2872c5f vmov.i32 q1, #0x7fff
+f3c5ae5d vmov.i8 q13, #0xdd
+f2c7cc5b vmov.i32 q14, #0x7bff
+F2C00E50 vmov.i8 q8, #0x0
+F2830E54 vmov.i8 q0, #0x34
+F2C40E52 vmov.i8 q8, #0x42
+F2C6FE57 UNDEFINED
+F2C61E57 UNDEFINED
+F2C68E51 vmov.i8 q12, #0x61
+F286FE57 UNDEFINED
+F2C08C50 vmov.i32 q12, #0xff
+F2C08C5F vmov.i32 q12, #0xfff
+F2C08D50 vmov.i32 q12, #0xffff
+F2C08D5F vmov.i32 q12, #0xfffff
+F2C08E50 vmov.i8 q12, #0x0
+F2C08E5F vmov.i8 q12, #0xf
+F2C08F50 vmov.f32 q12, #2.0
+F2C08F5F vmov.f32 q12, #3.875
+F2C18C50 vmov.i32 q12, #0x10ff
+F2C18C5F vmov.i32 q12, #0x1fff
+F2C18D50 vmov.i32 q12, #0x10ffff
+F2C18D5F vmov.i32 q12, #0x1fffff
+F2C18E50 vmov.i8 q12, #0x10
+F2C18E5F vmov.i8 q12, #0x1f
+F2C18F50 vmov.f32 q12, #4.0
+F2C18F5F vmov.f32 q12, #7.75
+F2C28C50 vmov.i32 q12, #0x20ff
+F2C28C5F vmov.i32 q12, #0x2fff
+F2C28D50 vmov.i32 q12, #0x20ffff
+F2C28D5F vmov.i32 q12, #0x2fffff
+F2C28E50 vmov.i8 q12, #0x20
+F2C28E5F vmov.i8 q12, #0x2f
+F2C28F50 vmov.f32 q12, #8.0
+F2C28F5F vmov.f32 q12, #15.5
+F2C38C50 vmov.i32 q12, #0x30ff
+F2C38C5F vmov.i32 q12, #0x3fff
+F2C38D50 vmov.i32 q12, #0x30ffff
+F2C38D5F vmov.i32 q12, #0x3fffff
+F2C38E50 vmov.i8 q12, #0x30
+F2C38E5F vmov.i8 q12, #0x3f
+F2C38F50 vmov.f32 q12, #16.0
+F2C38F5F vmov.f32 q12, #31.0
+F2C48C50 vmov.i32 q12, #0x40ff
+F2C48C5F vmov.i32 q12, #0x4fff
+F2C48D50 vmov.i32 q12, #0x40ffff
+F2C48D5F vmov.i32 q12, #0x4fffff
+F2C48E50 vmov.i8 q12, #0x40
+F2C48E5F vmov.i8 q12, #0x4f
+F2C48F50 vmov.f32 q12, #0.125
+F2C48F5F vmov.f32 q12, #0.2421875
+F2C58C50 vmov.i32 q12, #0x50ff
+F2C58C5F vmov.i32 q12, #0x5fff
+F2C58D50 vmov.i32 q12, #0x50ffff
+F2C58D5F vmov.i32 q12, #0x5fffff
+F2C58E50 vmov.i8 q12, #0x50
+F2C58E5F vmov.i8 q12, #0x5f
+F2C58F50 vmov.f32 q12, #0.25
+F2C58F5F vmov.f32 q12, #0.484375
+F2C68C50 vmov.i32 q12, #0x60ff
+F2C68C5F vmov.i32 q12, #0x6fff
+F2C68D50 vmov.i32 q12, #0x60ffff
+F2C68D5F vmov.i32 q12, #0x6fffff
+F2C68E50 vmov.i8 q12, #0x60
+F2C68E5F vmov.i8 q12, #0x6f
+F2C68F50 vmov.f32 q12, #0.5
+F2C68F5F vmov.f32 q12, #0.96875
+F2C78C50 vmov.i32 q12, #0x70ff
+F2C78D50 vmov.i32 q12, #0x70ffff
+F2C78D5F vmov.i32 q12, #0x7fffff
+F2C78E50 vmov.i8 q12, #0x70
+F2C78E5F vmov.i8 q12, #0x7f
+F2C78F50 vmov.f32 q12, #1.0
+F2C78F5F vmov.f32 q12, #1.9375
+F3C08C50 vmov.i32 q12, #0x80ff
+F3C08C5F vmov.i32 q12, #0x8fff
+F3C08D50 vmov.i32 q12, #0x80ffff
+F3C08D5F vmov.i32 q12, #0x8fffff
+F3C08E50 vmov.i8 q12, #0x80
+F3C08E5F vmov.i8 q12, #0x8f
+F3C08F50 vmov.f32 q12, #-2.0
+F3C08F5F vmov.f32 q12, #-3.875
+F3C18C50 vmov.i32 q12, #0x90ff
+F3C18C5F vmov.i32 q12, #0x9fff
+F3C18D50 vmov.i32 q12, #0x90ffff
+F3C18D5F vmov.i32 q12, #0x9fffff
+F3C18E50 vmov.i8 q12, #0x90
+F3C18E5F vmov.i8 q12, #0x9f
+F3C18F50 vmov.f32 q12, #-4.0
+F3C18F5F vmov.f32 q12, #-7.75
+F3C28C50 vmov.i32 q12, #0xa0ff
+F3C28C5F vmov.i32 q12, #0xafff
+F3C28D50 vmov.i32 q12, #0xa0ffff
+F3C28D5F vmov.i32 q12, #0xafffff
+F3C28E50 vmov.i8 q12, #0xa0
+F3C28E5F vmov.i8 q12, #0xaf
+F3C28F50 vmov.f32 q12, #-8.0
+F3C28F5F vmov.f32 q12, #-15.5
+F3C38C50 vmov.i32 q12, #0xb0ff
+F3C38C5F vmov.i32 q12, #0xbfff
+F3C38D50 vmov.i32 q12, #0xb0ffff
+F3C38D5F vmov.i32 q12, #0xbfffff
+F3C38E50 vmov.i8 q12, #0xb0
+F3C38E5F vmov.i8 q12, #0xbf
+F3C38F50 vmov.f32 q12, #-16.0
+F3C38F5F vmov.f32 q12, #-31.0
+F3C48C50 vmov.i32 q12, #0xc0ff
+F3C48C5F vmov.i32 q12, #0xcfff
+F3C48D50 vmov.i32 q12, #0xc0ffff
+F3C48D5F vmov.i32 q12, #0xcfffff
+F3C48E50 vmov.i8 q12, #0xc0
+F3C48E5F vmov.i8 q12, #0xcf
+F3C48F50 vmov.f32 q12, #-0.125
+F3C48F5F vmov.f32 q12, #-0.2421875
+F3C58C50 vmov.i32 q12, #0xd0ff
+F3C58C5F vmov.i32 q12, #0xdfff
+F3C58D50 vmov.i32 q12, #0xd0ffff
+F3C58D5F vmov.i32 q12, #0xdfffff
+F3C58E50 vmov.i8 q12, #0xd0
+F3C58E5F vmov.i8 q12, #0xdf
+F3C58F50 vmov.f32 q12, #-0.25
+F3C58F5F vmov.f32 q12, #-0.484375
+F3C68C50 vmov.i32 q12, #0xe0ff
+F3C68C5F vmov.i32 q12, #0xefff
+F3C68D50 vmov.i32 q12, #0xe0ffff
+F3C68D5F vmov.i32 q12, #0xefffff
+F3C68E50 vmov.i8 q12, #0xe0
+F3C68E5F vmov.i8 q12, #0xef
+F3C68F50 vmov.f32 q12, #-0.5
+F3C68F5F vmov.f32 q12, #-0.96875
+F3C78C50 vmov.i32 q12, #0xf0ff
+F3C78C5F vmov.i32 q12, #0xffff
+F3C78D50 vmov.i32 q12, #0xf0ffff
+F3C78D5F vmov.i32 q12, #0xffffff
+F3C78E50 vmov.i8 q12, #0xf0
+F3C78E5F vmov.i8 q12, #0xff
+F3C78F50 vmov.f32 q12, #-1.0
+F3C78F5F vmov.f32 q12, #-1.9375
+
+// VMOV_i_A5_D 1111001|i=x|1|D=x|000|imm3=xxx|Vd=xxxx|cmode=1110|0|Q=0|op=1|1|imm4=xxxx
+// VmovIA5D: VMOV{<c>}{<q>}.I64  <Dd>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <imm>: i, imm3, imm4
+f2c2ae30 vmov.i64 d26, #0xff0000000000
+f383ee3f vmov.i64 d14, #0xff00ffffffffffff
+f381fe34 vmov.i64 d15, #0xff0000ff00ff0000
+f3843e3a vmov.i64 d3, #0xffff0000ff00ff00
+f380be3c vmov.i64 d11, #0xff000000ffff0000
+f3c45e35 vmov.i64 d21, #0xffff000000ff00ff
+f3870e3a vmov.i64 d0, #0xffffffffff00ff00
+f2c21e31 vmov.i64 d17, #0xff00000000ff
+F2C58E38 vmov.i64 d24, #0xff00ffff000000
+F2C64E32 vmov.i64 d20, #0xffff000000ff00
+F2C02E30 vmov.i64 d18, #0x0
+F2C00E3F vmov.i64 d16, #0xffffffff
+F2C1FE30 vmov.i64 d31, #0xff00000000
+F2C1AE3F vmov.i64 d26, #0xffffffffff
+F2C2AE3F vmov.i64 d26, #0xff00ffffffff
+F2C3AE30 vmov.i64 d26, #0xffff00000000
+F2C3AE3F vmov.i64 d26, #0xffffffffffff
+F2C4AE30 vmov.i64 d26, #0xff000000000000
+F2C4AE3F vmov.i64 d26, #0xff0000ffffffff
+F2C5AE30 vmov.i64 d26, #0xff00ff00000000
+F2C5AE3F vmov.i64 d26, #0xff00ffffffffff
+F2C6AE30 vmov.i64 d26, #0xffff0000000000
+F2C6AE3F vmov.i64 d26, #0xffff00ffffffff
+F2C7AE30 vmov.i64 d26, #0xffffff00000000
+F2C7AE3F vmov.i64 d26, #0xffffffffffffff
+F3C0AE30 vmov.i64 d26, #0xff00000000000000
+F3C0AE3F vmov.i64 d26, #0xff000000ffffffff
+F3C1AE30 vmov.i64 d26, #0xff0000ff00000000
+F3C1AE3F vmov.i64 d26, #0xff0000ffffffffff
+F3C2AE30 vmov.i64 d26, #0xff00ff0000000000
+F3C2AE3F vmov.i64 d26, #0xff00ff00ffffffff
+F3C3AE30 vmov.i64 d26, #0xff00ffff00000000
+F3C4AE30 vmov.i64 d26, #0xffff000000000000
+F3C4AE3F vmov.i64 d26, #0xffff0000ffffffff
+F3C5AE30 vmov.i64 d26, #0xffff00ff00000000
+F3C5AE3F vmov.i64 d26, #0xffff00ffffffffff
+F3C6AE30 vmov.i64 d26, #0xffffff0000000000
+F3C6AE3F vmov.i64 d26, #0xffffff00ffffffff
+F3C7AE30 vmov.i64 d26, #0xffffffff00000000
+F3C7AE3F vmov.i64 d26, #0xffffffffffffffff
+
+// VMOV_i_A5_Q 1111001|i=x|1|D=x|000|imm3=xxx|Vd=xxxx|cmode=1110|0|Q=1|op=1|1|imm4=xxxx
+// VmovIA5Q: VMOV{<c>}{<q>}.I64  <Qd>, #<imm>
+// read together by <Qd>: D, Vd
+// read together by <imm>: i, imm3, imm4
+f3c66e7e vmov.i64 q11, #0xffffff00ffffff00
+f2c54e7d vmov.i64 q10, #0xff00ffffff00ff
+f2c12e7f vmov.i64 q9, #0xffffffffff
+f2c1ee74 vmov.i64 q15, #0xff00ff0000
+f2874e74 vmov.i64 q2, #0xffffff00ff0000
+f3c22e79 vmov.i64 q9, #0xff00ff00ff0000ff
+f2c42e74 vmov.i64 q9, #0xff000000ff0000
+F3C00E70 vmov.i64 q8, #0xff00000000000000
+F3C38E78 vmov.i64 q12, #0xff00ffffff000000
+F3C6FE7E UNDEFINED
+F3C61E7E UNDEFINED
+F3860E72 vmov.i64 q0, #0xffffff000000ff00
+F3C60E71 vmov.i64 q8, #0xffffff00000000ff
+F386FE7E UNDEFINED
+F2C06E70 vmov.i64 q11, #0x0
+F2C06E7F vmov.i64 q11, #0xffffffff
+F2C16E70 vmov.i64 q11, #0xff00000000
+F2C26E70 vmov.i64 q11, #0xff0000000000
+F2C26E7F vmov.i64 q11, #0xff00ffffffff
+F2C36E70 vmov.i64 q11, #0xffff00000000
+F2C36E7F vmov.i64 q11, #0xffffffffffff
+F2C46E70 vmov.i64 q11, #0xff000000000000
+F2C46E7F vmov.i64 q11, #0xff0000ffffffff
+F2C56E70 vmov.i64 q11, #0xff00ff00000000
+F2C56E7F vmov.i64 q11, #0xff00ffffffffff
+F2C66E70 vmov.i64 q11, #0xffff0000000000
+F2C66E7F vmov.i64 q11, #0xffff00ffffffff
+F2C76E70 vmov.i64 q11, #0xffffff00000000
+F2C76E7F vmov.i64 q11, #0xffffffffffffff
+F3C06E70 vmov.i64 q11, #0xff00000000000000
+F3C06E7F vmov.i64 q11, #0xff000000ffffffff
+F3C16E70 vmov.i64 q11, #0xff0000ff00000000
+F3C16E7F vmov.i64 q11, #0xff0000ffffffffff
+F3C26E70 vmov.i64 q11, #0xff00ff0000000000
+F3C26E7F vmov.i64 q11, #0xff00ff00ffffffff
+F3C36E70 vmov.i64 q11, #0xff00ffff00000000
+F3C36E7F vmov.i64 q11, #0xff00ffffffffffff
+F3C46E70 vmov.i64 q11, #0xffff000000000000
+F3C46E7F vmov.i64 q11, #0xffff0000ffffffff
+F3C56E70 vmov.i64 q11, #0xffff00ff00000000
+F3C56E7F vmov.i64 q11, #0xffff00ffffffffff
+F3C66E70 vmov.i64 q11, #0xffffff0000000000
+F3C66E7F vmov.i64 q11, #0xffffff00ffffffff
+F3C76E70 vmov.i64 q11, #0xffffffff00000000
+F3C76E7F vmov.i64 q11, #0xffffffffffffffff

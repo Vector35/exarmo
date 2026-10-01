@@ -1,0 +1,28 @@
+// umaxv_r_p_z_ 000|0010|0|size=xx|0|010|op=0|U=1|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// UmaxvRPZ: UMAXV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+04C92394 umaxv d20, p0, z28.d
+04C92F75 umaxv d21, p3, z27.d
+04C93FED umaxv d13, p7, z31.d
+040926F0 umaxv b16, p1, z23.b
+040930DD umaxv b29, p4, z6.b
+04893224 umaxv s4, p4, z17.s
+04092096 umaxv b22, p0, z4.b
+040928FD umaxv b29, p2, z7.b
+04892AF2 umaxv s18, p2, z23.s
+04492BDE umaxv h30, p2, z30.h
+0449297D umaxv h29, p2, z11.h
+04493FAB umaxv h11, p7, z29.h
+04892198 umaxv s24, p0, z12.s
+044922B7 umaxv h23, p0, z21.h
+04C93FFD umaxv d29, p7, z31.d
+04093082 umaxv b2, p4, z4.b
+04C93400 umaxv d0, p5, z0.d
+04C93B9F umaxv d31, p6, z28.d
+04092380 umaxv b0, p0, z28.b
+0409239F umaxv b31, p0, z28.b
+04492380 umaxv h0, p0, z28.h
+0449239F umaxv h31, p0, z28.h
+04892380 umaxv s0, p0, z28.s
+0489239F umaxv s31, p0, z28.s

@@ -1,0 +1,60 @@
+// SUQADD_asimdmisc_R 0|Q=x|U=0|0|111|0|size=xx|10000|opcode=00011|10|Rn=xxxxx|Rd=xxxxx
+// SuqaddAsimdmiscR: SUQADD  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+0E603B97 suqadd v23.4h, v28.4h
+0EA03A2D suqadd v13.2s, v17.2s
+4EE0390B suqadd v11.2d, v8.2d
+4E203BC3 suqadd v3.16b, v30.16b
+4EA03AB0 suqadd v16.4s, v21.4s
+0E203AE7 suqadd v7.8b, v23.8b
+0EA0387A suqadd v26.2s, v3.2s
+4EE038B8 suqadd v24.2d, v5.2d
+4EA03979 suqadd v25.4s, v11.4s
+4EA03AD4 suqadd v20.4s, v22.4s
+0E603853 suqadd v19.4h, v2.4h
+0E203B75 suqadd v21.8b, v27.8b
+4EA0381C suqadd v28.4s, v0.4s
+4E603B4E suqadd v14.8h, v26.8h
+4EE03AE6 suqadd v6.2d, v23.2d
+4EE0383D suqadd v29.2d, v1.2d
+0E603BE0 suqadd v0.4h, v31.4h
+0E603B9F suqadd v31.4h, v28.4h
+0EE03B97 UNDEFINED
+0E603B9C suqadd v28.4h, v28.4h
+
+// SUQADD_asisdmisc_R 01|U=0|1|111|0|size=xx|10000|opcode=00011|10|Rn=xxxxx|Rd=xxxxx
+// SuqaddAsisdmiscR: SUQADD  <V><d>, <V><n>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// register fields: Rn, Rd
+5EA038CC suqadd s12, s6
+5E603B76 suqadd h22, h27
+5EA03B43 suqadd s3, s26
+5E60397F suqadd h31, h11
+5EE03A6A suqadd d10, d19
+5EE038D0 suqadd d16, d6
+5E203B89 suqadd b9, b28
+5EE039F9 suqadd d25, d15
+5EE03B59 suqadd d25, d26
+5EA0398C suqadd s12, s12
+5EE03874 suqadd d20, d3
+5EA03AF2 suqadd s18, s23
+5E60383B suqadd h27, h1
+5E603841 suqadd h1, h2
+5EE039A3 suqadd d3, d13
+5E60382E suqadd h14, h1
+5EA03800 suqadd s0, s0
+5EA03BEC suqadd s12, s31
+5E2038C0 suqadd b0, b6
+5E2038DF suqadd b31, b6
+5E6038C0 suqadd h0, h6
+5EA038DF suqadd s31, s6
+5EE038C0 suqadd d0, d6
+5EE038DF suqadd d31, d6
+5E20380C suqadd b12, b0
+5E203BEC suqadd b12, b31
+5E60380C suqadd h12, h0
+5E603BEC suqadd h12, h31
+5EE0380C suqadd d12, d0
+5EE03BEC suqadd d12, d31

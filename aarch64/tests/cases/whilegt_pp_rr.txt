@@ -1,0 +1,12 @@
+// whilegt_pp_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|01|U=0|lt=0|Rn=xxxxx|1|Pd=xxx|eq=1
+// WhilegtPpRr: WHILEGT  { <Pd1>.<T>, <Pd2>.<T> }, <Xn>, <Xm>
+// register fields: Rm, Rn, Pd
+2520501B whilegt {p10.b, p11.b}, x0, x0
+25205037 whilegt {p6.b, p7.b}, x1, x0
+25205053 whilegt {p2.b, p3.b}, x2, x0
+257F53F1 whilegt {p0.h, p1.h}, xzr, xzr
+25A05015 whilegt {p4.s, p5.s}, x0, x0
+25E05019 whilegt {p8.d, p9.d}, x0, x0
+2520501D whilegt {p12.b, p13.b}, x0, x0
+2520501F whilegt {p14.b, p15.b}, x0, x0
+25205011 whilegt {p0.b, p1.b}, x0, x0

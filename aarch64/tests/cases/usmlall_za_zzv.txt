@@ -1,0 +1,30 @@
+// usmlall_za_zzv_s 1|10|0000|10|sz=0|10|Zm=xxxx|0|Rv=xx|001|Zn=xxxxx|U=0|S=0|op=1|off2=xx
+// UsmlallZaZzvS: USMLALL  ZA.S[<Wv>, <offs1>:<offs4>], <Zn>.B, <Zm>.B
+// register fields: Zm, Rv, Zn
+C1200407 usmlall za.s[w8, 12:15], z0.b, z0.b
+C1200446 usmlall za.s[w8, 8:11], z2.b, z0.b
+C1200485 usmlall za.s[w8, 4:7], z4.b, z0.b
+C12F27E4 usmlall za.s[w9, 0:3], z31.b, z15.b
+C1204407 usmlall za.s[w10, 12:15], z0.b, z0.b
+C1206407 usmlall za.s[w11, 12:15], z0.b, z0.b
+
+// usmlall_za_zzv_s2x1 1|10|0000|10|sz=0|10|Zm=xxxx|0|Rv=xx|000|Zn=xxxxx|U=0|S=0|op=1|0|o1=x
+// UsmlallZaZzvS2x1: USMLALL  ZA.S[<Wv>, <offs1>:<offs4>{, VGx2}], { <Zn1>.B-<Zn2>.B }, <Zm>.B
+// register fields: Zm, Rv, Zn
+C1200025 usmlall za.s[w8, 4:7, vgx2], {z1.b-z2.b}, z0.b
+C1200064 usmlall za.s[w8, 0:3, vgx2], {z3.b-z4.b}, z0.b
+C1200105 usmlall za.s[w8, 4:7, vgx2], {z8.b-z9.b}, z0.b
+C12F2005 usmlall za.s[w9, 4:7, vgx2], {z0.b-z1.b}, z15.b
+C12043E5 usmlall za.s[w10, 4:7, vgx2], {z31.b-z0.b}, z0.b
+C1206025 usmlall za.s[w11, 4:7, vgx2], {z1.b-z2.b}, z0.b
+C1200005 usmlall za.s[w8, 4:7, vgx2], {z0.b-z1.b}, z0.b
+
+// usmlall_za_zzv_s4x1 1|10|0000|10|sz=0|11|Zm=xxxx|0|Rv=xx|000|Zn=xxxxx|U=0|S=0|op=1|0|o1=x
+// UsmlallZaZzvS4x1: USMLALL  ZA.S[<Wv>, <offs1>:<offs4>{, VGx4}], { <Zn1>.B-<Zn4>.B }, <Zm>.B
+// register fields: Zm, Rv, Zn
+C1300005 usmlall za.s[w8, 4:7, vgx4], {z0.b-z3.b}, z0.b
+C1300044 usmlall za.s[w8, 0:3, vgx4], {z2.b-z5.b}, z0.b
+C13000E5 usmlall za.s[w8, 4:7, vgx4], {z7.b-z10.b}, z0.b
+C13F23E5 usmlall za.s[w9, 4:7, vgx4], {z31.b-z2.b}, z15.b
+C1304005 usmlall za.s[w10, 4:7, vgx4], {z0.b-z3.b}, z0.b
+C1306005 usmlall za.s[w11, 4:7, vgx4], {z0.b-z3.b}, z0.b

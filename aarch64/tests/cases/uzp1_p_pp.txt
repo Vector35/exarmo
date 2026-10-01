@@ -1,0 +1,41 @@
+// uzp1_p_pp_ 000|0010|1|size=xx|1|0|Pm=xxxx|010|opc=01|H=0|0|Pn=xxxx|0|Pd=xxxx
+// Uzp1PPp: UZP1  <Pd>.<T>, <Pn>.<T>, <Pm>.<T>
+// register fields: Pm, Pn, Pd
+05A54804 uzp1 p4.s, p0.s, p5.s
+056E4840 uzp1 p0.h, p2.h, p14.h
+05A548AE uzp1 p14.s, p5.s, p5.s
+05294906 uzp1 p6.b, p8.b, p9.b
+05E648A3 uzp1 p3.d, p5.d, p6.d
+05AD482A uzp1 p10.s, p1.s, p13.s
+05A94964 uzp1 p4.s, p11.s, p9.s
+056E4961 uzp1 p1.h, p11.h, p14.h
+05EB48EC uzp1 p12.d, p7.d, p11.d
+05AB48C5 uzp1 p5.s, p6.s, p11.s
+052C49CC uzp1 p12.b, p14.b, p12.b
+05A4492B uzp1 p11.s, p9.s, p4.s
+056748C3 uzp1 p3.h, p6.h, p7.h
+052F4982 uzp1 p2.b, p12.b, p15.b
+05E9496B uzp1 p11.d, p11.d, p9.d
+05654885 uzp1 p5.h, p4.h, p5.h
+05A049EF uzp1 p15.s, p15.s, p0.s
+
+// uzp2_p_pp_ 000|0010|1|size=xx|1|0|Pm=xxxx|010|opc=01|H=1|0|Pn=xxxx|0|Pd=xxxx
+// Uzp2PPp: UZP2  <Pd>.<T>, <Pn>.<T>, <Pm>.<T>
+// register fields: Pm, Pn, Pd
+05AA4D2A uzp2 p10.s, p9.s, p10.s
+05A54DEE uzp2 p14.s, p15.s, p5.s
+05604CE3 uzp2 p3.h, p7.h, p0.h
+05E84C80 uzp2 p0.d, p4.d, p8.d
+052F4CA9 uzp2 p9.b, p5.b, p15.b
+05E24D84 uzp2 p4.d, p12.d, p2.d
+05E34CE0 uzp2 p0.d, p7.d, p3.d
+05A94DC0 uzp2 p0.s, p14.s, p9.s
+05254CC4 uzp2 p4.b, p6.b, p5.b
+05E54DAF uzp2 p15.d, p13.d, p5.d
+05674CE8 uzp2 p8.h, p7.h, p7.h
+056D4D4C uzp2 p12.h, p10.h, p13.h
+056F4CA5 uzp2 p5.h, p5.h, p15.h
+052F4C47 uzp2 p7.b, p2.b, p15.b
+05AF4CE6 uzp2 p6.s, p7.s, p15.s
+052F4C4B uzp2 p11.b, p2.b, p15.b
+05AA4C0A uzp2 p10.s, p0.s, p10.s

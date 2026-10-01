@@ -1,0 +1,21 @@
+// bfclamp_mz_zz_2 1|10|0000|1|size=00|1|Zm=xxxxx|110|000|Zn=xxxxx|Zd=xxxx|op=0
+// BfclampMzZz2: BFCLAMP  { <Zd1>.H-<Zd2>.H }, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zd
+C120C004 bfclamp {z4.h-z5.h}, z0.h, z0.h
+C120C012 bfclamp {z18.h-z19.h}, z0.h, z0.h
+C120C020 bfclamp {z0.h-z1.h}, z1.h, z0.h
+C13FC3FE bfclamp {z30.h-z31.h}, z31.h, z31.h
+C120C000 bfclamp {z0.h-z1.h}, z0.h, z0.h
+C121C046 bfclamp {z6.h-z7.h}, z2.h, z1.h
+
+// bfclamp_mz_zz_4 1|10|0000|1|size=00|1|Zm=xxxxx|110|010|Zn=xxxxx|Zd=xxx|0|op=0
+// BfclampMzZz4: BFCLAMP  { <Zd1>.H-<Zd4>.H }, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zd
+C120C800 bfclamp {z0.h-z3.h}, z0.h, z0.h
+C120C81C bfclamp {z28.h-z31.h}, z0.h, z0.h
+C120C838 bfclamp {z24.h-z27.h}, z1.h, z0.h
+C13FCBE4 bfclamp {z4.h-z7.h}, z31.h, z31.h
+C120C808 bfclamp {z8.h-z11.h}, z0.h, z0.h
+C120C80C bfclamp {z12.h-z15.h}, z0.h, z0.h
+C120C810 bfclamp {z16.h-z19.h}, z0.h, z0.h
+C120C814 bfclamp {z20.h-z23.h}, z0.h, z0.h

@@ -1,0 +1,34 @@
+// VZIP_A1_D 111100111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0011|Q=0|M=x|0|Vm=xxxx
+// VzipA1D: VZIP{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b64181 vzip.16 d4, d1
+f3b60185 vzip.16 d0, d5
+F3F2F1A0 vzip.8 d31, d16
+F3BA4181 UNDEFINED
+F3BE4181 UNDEFINED
+F3B6818F vzip.16 d8, d15
+F3B62188 vzip.16 d2, d8
+F3B61184 vzip.16 d1, d4
+F3B6F182 vzip.16 d15, d2
+F3F60180 vzip.16 d16, d0
+F3F6F18F vzip.16 d31, d15
+F3B641A0 vzip.16 d4, d16
+F3B641AF vzip.16 d4, d31
+
+// VZIP_A1_Q 111100111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0011|Q=1|M=x|0|Vm=xxxx
+// VzipA1Q: VZIP{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3b201e2 vzip.8 q0, q9
+f3f641c4 vzip.16 q10, q2
+f3f221ec vzip.8 q9, q14
+f3fac1c2 vzip.32 q14, q1
+F3BEF1EF UNDEFINED
+F3B281E0 vzip.8 q4, q8
+F3B211E1 UNDEFINED
+F3F201E8 vzip.8 q8, q12
+F3B2F1CF UNDEFINED
+F3F2F1EF UNDEFINED
+F3B201C0 vzip.8 q0, q0
+F3B201E0 vzip.8 q0, q8

@@ -1,0 +1,22 @@
+// movprfx_z_z_ 000|0010|0|opc=00|1|opc2=00000|1011|11|Zn=xxxxx|Zd=xxxxx
+// MovprfxZZ: MOVPRFX  <Zd>, <Zn>
+// register fields: Zn, Zd
+0420BC18 movprfx z24, z0
+0420BD26 movprfx z6, z9
+0420BC8E movprfx z14, z4
+0420BDFA movprfx z26, z15
+0420BE0B movprfx z11, z16
+0420BEBE movprfx z30, z21
+0420BE0A movprfx z10, z16
+0420BF38 movprfx z24, z25
+0420BD12 movprfx z18, z8
+0420BED4 movprfx z20, z22
+0420BD6C movprfx z12, z11
+0420BF52 movprfx z18, z26
+0420BC81 movprfx z1, z4
+0420BC76 movprfx z22, z3
+0420BCA4 movprfx z4, z5
+0420BC41 movprfx z1, z2
+0420BFE0 movprfx z0, z31
+0420BC1F movprfx z31, z0
+0420BC00 movprfx z0, z0

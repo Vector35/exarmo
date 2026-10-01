@@ -1,0 +1,45 @@
+// uunpkhi_z_z_ 000|0010|1|size=xx|1|10|0|U=1|H=1|001110|Zn=xxxxx|Zd=xxxxx
+// UunpkhiZZ: UUNPKHI  <Zd>.<T>, <Zn>.<Tb>
+// register fields: Zn, Zd
+05B3383E uunpkhi z30.s, z1.h
+05B33BAF uunpkhi z15.s, z29.h
+05F33AEF uunpkhi z15.d, z23.s
+05733898 uunpkhi z24.h, z4.b
+05733B3C uunpkhi z28.h, z25.b
+05F3380F uunpkhi z15.d, z0.s
+05B338F9 uunpkhi z25.s, z7.h
+05F33883 uunpkhi z3.d, z4.s
+05B33997 uunpkhi z23.s, z12.h
+057339F2 uunpkhi z18.h, z15.b
+057338B0 uunpkhi z16.h, z5.b
+05F33910 uunpkhi z16.d, z8.s
+05B33A38 uunpkhi z24.s, z17.h
+05B33927 uunpkhi z7.s, z9.h
+05B33B18 uunpkhi z24.s, z24.h
+05733B8F uunpkhi z15.h, z28.b
+05B33BE0 uunpkhi z0.s, z31.h
+05B3383F uunpkhi z31.s, z1.h
+0533383E UNDEFINED
+
+// uunpklo_z_z_ 000|0010|1|size=xx|1|10|0|U=1|H=0|001110|Zn=xxxxx|Zd=xxxxx
+// UunpkloZZ: UUNPKLO  <Zd>.<T>, <Zn>.<Tb>
+// register fields: Zn, Zd
+05B23BBD uunpklo z29.s, z29.h
+05F2380B uunpklo z11.d, z0.s
+05B23AEA uunpklo z10.s, z23.h
+05723853 uunpklo z19.h, z2.b
+05B239FE uunpklo z30.s, z15.h
+05B23B01 uunpklo z1.s, z24.h
+05B2381B uunpklo z27.s, z0.h
+05F23B99 uunpklo z25.d, z28.s
+05F23892 uunpklo z18.d, z4.s
+057238BA uunpklo z26.h, z5.b
+05723AFC uunpklo z28.h, z23.b
+05723868 uunpklo z8.h, z3.b
+05B23BBA uunpklo z26.s, z29.h
+05B2391D uunpklo z29.s, z8.h
+05B23967 uunpklo z7.s, z11.h
+05B239E1 uunpklo z1.s, z15.h
+05B23BE0 uunpklo z0.s, z31.h
+05B23BBF uunpklo z31.s, z29.h
+05323BBD UNDEFINED

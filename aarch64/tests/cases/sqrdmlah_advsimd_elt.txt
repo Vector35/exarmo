@@ -1,0 +1,133 @@
+// SQRDMLAH_asimdelem_R 0|Q=x|U=1|0|111|1|size=xx|L=x|M=x|Rm=xxxx|11|S=0|1|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqrdmlahAsimdelemR: SQRDMLAH  <Vd>.<T>, <Vn>.<T>, <m>.<Ts>[<index>]
+// read together by <T>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+6F6BDB3D sqrdmlah v29.8h, v25.8h, v11.h[6]
+6F4FD060 sqrdmlah v0.8h, v3.8h, v15.h[0]
+6F84D375 sqrdmlah v21.4s, v27.4s, v4.s[0]
+6F84D2FB sqrdmlah v27.4s, v23.4s, v4.s[0]
+6FBFD89A sqrdmlah v26.4s, v4.4s, v31.s[3]
+2F9BD166 sqrdmlah v6.2s, v11.2s, v27.s[0]
+2FA8D863 sqrdmlah v3.2s, v3.2s, v8.s[3]
+2F94D95D sqrdmlah v29.2s, v10.2s, v20.s[2]
+2F6DD3FF sqrdmlah v31.4h, v31.4h, v13.h[2]
+2F9FD2A8 sqrdmlah v8.2s, v21.2s, v31.s[0]
+6FBBD889 sqrdmlah v9.4s, v4.4s, v27.s[3]
+6F86D906 sqrdmlah v6.4s, v8.4s, v6.s[2]
+2F7CD360 sqrdmlah v0.4h, v27.4h, v12.h[3]
+6FABD1A4 sqrdmlah v4.4s, v13.4s, v11.s[1]
+6F93D0FF sqrdmlah v31.4s, v7.4s, v19.s[0]
+6FA6DAD4 sqrdmlah v20.4s, v22.4s, v6.s[3]
+6F60D81D sqrdmlah v29.8h, v0.8h, v0.h[6]
+6F2BDB3D UNDEFINED
+6FEBDB3D UNDEFINED
+6F0BD33D UNDEFINED
+6F0BDB3D UNDEFINED
+6F1BD33D UNDEFINED
+6F1BDB3D UNDEFINED
+6F2BD33D UNDEFINED
+6F3BD33D UNDEFINED
+6F3BDB3D UNDEFINED
+6F4BDB3D sqrdmlah v29.8h, v25.8h, v11.h[4]
+6F5BD33D sqrdmlah v29.8h, v25.8h, v11.h[1]
+6F5BDB3D sqrdmlah v29.8h, v25.8h, v11.h[5]
+6F7BDB3D sqrdmlah v29.8h, v25.8h, v11.h[7]
+6FBBD33D sqrdmlah v29.4s, v25.4s, v27.s[1]
+6FCBD33D UNDEFINED
+6FCBDB3D UNDEFINED
+6FDBD33D UNDEFINED
+6FDBDB3D UNDEFINED
+6FEBD33D UNDEFINED
+6FFBD33D UNDEFINED
+6FFBDB3D UNDEFINED
+6F20DB3D UNDEFINED
+6F2FDB3D UNDEFINED
+6F30DB3D UNDEFINED
+6F3FDB3D UNDEFINED
+6F70DB3D sqrdmlah v29.8h, v25.8h, v0.h[7]
+6F7FDB3D sqrdmlah v29.8h, v25.8h, v15.h[7]
+6FA0DB3D sqrdmlah v29.4s, v25.4s, v0.s[3]
+6FAFDB3D sqrdmlah v29.4s, v25.4s, v15.s[3]
+6FB0DB3D sqrdmlah v29.4s, v25.4s, v16.s[3]
+6FE0DB3D UNDEFINED
+6FEFDB3D UNDEFINED
+6FF0DB3D UNDEFINED
+6FFFDB3D UNDEFINED
+2F2BDB3D UNDEFINED
+2FEBDB3D UNDEFINED
+6F62DB3D sqrdmlah v29.8h, v25.8h, v2.h[6]
+6F61DB3D sqrdmlah v29.8h, v25.8h, v1.h[6]
+
+// SQRDMLAH_asisdelem_R 01|U=1|1|111|1|size=xx|L=x|M=x|Rm=xxxx|11|S=0|1|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqrdmlahAsisdelemR: SQRDMLAH  <V><d>, <V><n>, <m>.<Ts>[<index>]
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+7F70D1C2 sqrdmlah h2, h14, v0.h[3]
+7FA9D8C9 sqrdmlah s9, s6, v9.s[3]
+7F57D3CD sqrdmlah h13, h30, v7.h[1]
+7F53D8FD sqrdmlah h29, h7, v3.h[5]
+7F91D3CE sqrdmlah s14, s30, v17.s[0]
+7F91D124 sqrdmlah s4, s9, v17.s[0]
+7F5AD844 sqrdmlah h4, h2, v10.h[5]
+7F69D845 sqrdmlah h5, h2, v9.h[6]
+7F6CD3E1 sqrdmlah h1, h31, v12.h[2]
+7FA5D0B0 sqrdmlah s16, s5, v5.s[1]
+7F76D3AA sqrdmlah h10, h29, v6.h[3]
+7F97D32E sqrdmlah s14, s25, v23.s[0]
+7F75DA6F sqrdmlah h15, h19, v5.h[7]
+7FA6DB7B sqrdmlah s27, s27, v6.s[3]
+7F8AD2F7 sqrdmlah s23, s23, v10.s[0]
+7F7FDA49 sqrdmlah h9, h18, v15.h[7]
+7F70D000 sqrdmlah h0, h0, v0.h[3]
+7F70D1DF sqrdmlah h31, h14, v0.h[3]
+7F30D1C2 UNDEFINED
+7FF0D1C2 UNDEFINED
+7F00D1C2 UNDEFINED
+7F00D9C2 UNDEFINED
+7F10D1C2 UNDEFINED
+7F10D9C2 UNDEFINED
+7F20D1C2 UNDEFINED
+7F20D9C2 UNDEFINED
+7F30D9C2 UNDEFINED
+7F40D1C2 sqrdmlah h2, h14, v0.h[0]
+7F40D9C2 sqrdmlah h2, h14, v0.h[4]
+7F80D9C2 sqrdmlah s2, s14, v0.s[2]
+7F90D9C2 sqrdmlah s2, s14, v16.s[2]
+7FB0D1C2 sqrdmlah s2, s14, v16.s[1]
+7FB0D9C2 sqrdmlah s2, s14, v16.s[3]
+7FC0D1C2 UNDEFINED
+7FC0D9C2 UNDEFINED
+7FD0D1C2 UNDEFINED
+7FD0D9C2 UNDEFINED
+7FE0D1C2 UNDEFINED
+7FE0D9C2 UNDEFINED
+7FF0D9C2 UNDEFINED
+7F2FD1C2 UNDEFINED
+7F3FD1C2 UNDEFINED
+7F60D1C2 sqrdmlah h2, h14, v0.h[2]
+7F6FD1C2 sqrdmlah h2, h14, v15.h[2]
+7FA0D1C2 sqrdmlah s2, s14, v0.s[1]
+7FAFD1C2 sqrdmlah s2, s14, v15.s[1]
+7FBFD1C2 sqrdmlah s2, s14, v31.s[1]
+7FEFD1C2 UNDEFINED
+7FFFD1C2 UNDEFINED
+7F30D1C0 UNDEFINED
+7F30D1DF UNDEFINED
+7FB0D1C0 sqrdmlah s0, s14, v16.s[1]
+7FB0D1DF sqrdmlah s31, s14, v16.s[1]
+7FF0D1C0 UNDEFINED
+7FF0D1DF UNDEFINED
+7F30D002 UNDEFINED
+7F30D3E2 UNDEFINED
+7FB0D002 sqrdmlah s2, s0, v16.s[1]
+7FB0D3E2 sqrdmlah s2, s31, v16.s[1]
+7FF0D002 UNDEFINED
+7FF0D3E2 UNDEFINED
+7F78D1C2 sqrdmlah h2, h14, v8.h[3]
+7F74D1C2 sqrdmlah h2, h14, v4.h[3]
+7F72D1C2 sqrdmlah h2, h14, v2.h[3]

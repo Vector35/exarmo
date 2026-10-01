@@ -1,0 +1,15 @@
+// faddqv_z_p_z_ 011|0010|0|size=xx|010|opc=000|101|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// FaddqvZPZ: FADDQV  <Vd>.<T>, <Pg>, <Zn>.<Tb>
+// register fields: Pg, Zn, Vd
+6450A003 faddqv v3.8h, p0, z0.h
+6450A00A faddqv v10.8h, p0, z0.h
+6450A011 faddqv v17.8h, p0, z0.h
+6490A7E0 faddqv v0.4s, p1, z31.s
+64D0A81F faddqv v31.2d, p2, z0.d
+6450AC03 faddqv v3.8h, p3, z0.h
+6450B003 faddqv v3.8h, p4, z0.h
+6450B403 faddqv v3.8h, p5, z0.h
+6450B803 faddqv v3.8h, p6, z0.h
+6450BC03 faddqv v3.8h, p7, z0.h
+6410A003 UNDEFINED
+6450A000 faddqv v0.8h, p0, z0.h

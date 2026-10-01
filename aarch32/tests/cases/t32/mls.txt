@@ -1,0 +1,18 @@
+// MLS_T1 111|110110|op1=000|Rn=xxxx|Ra=xxxx|Rd=xxxx|00|op2=01|Rm=xxxx
+// MlsT1: MLS{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+fb02d615 mls r6, r2, r5, sp
+fb0b9e18 mls lr, r11, r8, r9
+fb0c181d mls r8, r12, sp, r1
+fb025b18 mls r11, r2, r8, r5
+fb02ce17 mls lr, r2, r7, r12
+fb006c11 mls r12, r0, r1, r6
+fb0f3f1e mls pc, pc, lr, r3 (unpredictable)
+fb0f5e1c mls lr, pc, r12, r5 (unpredictable)
+FB020010 mls r0, r2, r0, r0
+FB02F61F mls r6, r2, pc, pc (unpredictable)
+FB022616 mls r6, r2, r6, r2
+FB02DD12 mls sp, r2, r2, sp
+FB02D61D mls r6, r2, sp, sp
+FB02D615 [ne] mlsne r6, r2, r5, sp

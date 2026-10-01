@@ -1,0 +1,79 @@
+// SMLABB_A1 cond=xxxx|00010|opc=00|0|Rd=xxxx|Ra=xxxx|Rm=xxxx|1|M=0|N=0|0|Rn=xxxx
+// SmlabbA1: SMLABB{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+2109538f smlabbhs r9, pc, r3, r5 (unpredictable)
+5109088a smlabbpl r9, r10, r8, r0
+210d218c smlabbhs sp, r12, r1, r2
+41018980 smlabbmi r1, r0, r9, r8
+c10d248f smlabbgt sp, pc, r4, r2 (unpredictable)
+41070f81 smlabbmi r7, r1, pc, r0 (unpredictable)
+21097d89 smlabbhs r9, r9, sp, r7
+210f3c89 smlabbhs pc, r9, r12, r3 (unpredictable)
+// Binary Ninja's tests
+a1030981 smlabbge r3, r1, r9, r0
+e1030981 smlabb r3, r1, r9, r0
+0100F08F smlabbeq r0, pc, r0, pc (unpredictable)
+F109538F UNALLOCATED
+81099383 smlabbhi r9, r3, r3, r9
+11095985 smlabbne r9, r5, r9, r5
+2109558F smlabbcs r9, pc, r5, r5 (unpredictable)
+
+// SMLABT_A1 cond=xxxx|00010|opc=00|0|Rd=xxxx|Ra=xxxx|Rm=xxxx|1|M=1|N=0|0|Rn=xxxx
+// SmlabtA1: SMLABT{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+310218c8 smlabtlo r2, r8, r8, r1
+51040cc6 smlabtpl r4, r6, r12, r0
+7105d4c9 smlabtvc r5, r9, r4, sp
+410545cb smlabtmi r5, r11, r5, r4
+b102a8c9 smlabtlt r2, r9, r8, r10
+c109ddc8 smlabtgt r9, r8, sp, sp
+b10379c0 smlabtlt r3, r0, r9, r7
+c10b31c3 smlabtgt r11, r3, r1, r3
+// Binary Ninja's tests
+d10514c6 smlabtle r5, r6, r4, r1
+e10514c6 smlabt r5, r6, r4, r1
+0100F0CF smlabteq r0, pc, r0, pc (unpredictable)
+F1040CC6 UNALLOCATED
+810F1FC8 smlabthi pc, r8, pc, r1 (unpredictable)
+210228C8 smlabtcs r2, r8, r8, r2
+110218C2 smlabtne r2, r2, r8, r1
+
+// SMLATB_A1 cond=xxxx|00010|opc=00|0|Rd=xxxx|Ra=xxxx|Rm=xxxx|1|M=0|N=1|0|Rn=xxxx
+// SmlatbA1: SMLATB{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+a109b6a3 smlatbge r9, r3, r6, r11
+e101f3ac smlatb r1, r12, r3, pc (unpredictable)
+5109eaae smlatbpl r9, lr, r10, lr
+b10846a2 smlatblt r8, r2, r6, r4
+b10474a9 smlatblt r4, r9, r4, r7
+810959af smlatbhi r9, pc, r9, r5 (unpredictable)
+610e04a5 smlatbvs lr, r5, r4, r0
+710396ac smlatbvc r3, r12, r6, r9
+// Binary Ninja's tests
+110423a2 smlatbne r4, r2, r3, r2
+e10423a2 smlatb r4, r2, r3, r2
+0100B0A0 smlatbeq r0, r0, r0, r11
+F109B6A3 UNALLOCATED
+410FBFA3 smlatbmi pc, r3, pc, r11 (unpredictable)
+210996A6 smlatbcs r9, r6, r6, r9
+A109BBA9 smlatbge r9, r9, r11, r11
+
+// SMLATT_A1 cond=xxxx|00010|opc=00|0|Rd=xxxx|Ra=xxxx|Rm=xxxx|1|M=1|N=1|0|Rn=xxxx
+// SmlattA1: SMLATT{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+c10bcfe7 smlattgt r11, r7, pc, r12 (unpredictable)
+610d10ec smlattvs sp, r12, r0, r1
+d10d42e7 smlattle sp, r7, r2, r4
+e1060de3 smlatt r6, r3, sp, r0
+910004e8 smlattls r0, r8, r4, r0
+a106d5ec smlattge r6, r12, r5, sp
+710d82e0 smlattvc sp, r0, r2, r8
+c108e2ea smlattgt r8, r10, r2, lr
+// Binary Ninja's tests
+010848e3 smlatteq r8, r3, r8, r4
+e10848e3 smlatt r8, r3, r8, r4
+F10BCFE7 UNALLOCATED
+810FFFEF smlatthi pc, pc, pc, pc (unpredictable)
+410BCCEB smlattmi r11, r11, r12, r12
+210BCFEC smlattcs r11, r12, pc, r12 (unpredictable)
+110BCFEF smlattne r11, pc, pc, r12 (unpredictable)

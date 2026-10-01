@@ -1,0 +1,145 @@
+// LDR_i_T1 011|B=0|L=1|imm5=xxxxx|Rn=xxx|Rt=xxx
+// LdrIT1: LDR{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+6800 ldr r0, [r0]
+6801 ldr r1, [r0]
+6802 ldr r2, [r0]
+6803 ldr r3, [r0]
+6804 ldr r4, [r0]
+6805 ldr r5, [r0]
+6806 ldr r6, [r0]
+6807 ldr r7, [r0]
+6FC8 ldr r0, [r1, #0x7c]
+6C10 ldr r0, [r2, #0x40]
+6A18 ldr r0, [r3, #0x20]
+6920 ldr r0, [r4, #0x10]
+68A8 ldr r0, [r5, #0x8]
+6870 ldr r0, [r6, #0x4]
+6838 ldr r0, [r7]
+6800 [ne] ldrne r0, [r0]
+
+// LDR_i_T2 1001|L=1|Rt=xxx|imm8=xxxxxxxx
+// LdrIT2: LDR{<c>}{<q>}  <Rt>, [SP{, #{<+>}<imm>}]
+// register fields: Rt
+// IT state read: condition
+9800 ldr r0, [sp]
+9801 ldr r0, [sp, #4]
+9802 ldr r0, [sp, #8]
+9803 ldr r0, [sp, #12]
+9804 ldr r0, [sp, #16]
+9805 ldr r0, [sp, #20]
+9806 ldr r0, [sp, #24]
+9807 ldr r0, [sp, #28]
+99FF ldr r1, [sp, #0x3fc]
+9A80 ldr r2, [sp, #0x200]
+9B40 ldr r3, [sp, #0x100]
+9C20 ldr r4, [sp, #0x80]
+9D10 ldr r5, [sp, #0x40]
+9E08 ldr r6, [sp, #0x20]
+9F00 ldr r7, [sp]
+9800 [ne] ldrne r0, [sp]
+
+// LDR_i_T3 111|1100|01|size=10|L=1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrIT3: LDR{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition, last in block
+F8D00000 ldr r0, [r0]
+F8D0FFFF ldr pc, [r0, #0xfff]
+F8D00800 ldr r0, [r0, #0x800]
+F8D00400 ldr r0, [r0, #0x400]
+F8D00200 ldr r0, [r0, #0x200]
+F8D00100 ldr r0, [r0, #0x100]
+F8D00080 ldr r0, [r0, #0x80]
+F8D00040 ldr r0, [r0, #0x40]
+F8D00020 ldr r0, [r0, #0x20]
+F8D00010 ldr r0, [r0, #0x10]
+F8D00008 ldr r0, [r0, #0x8]
+F8D00004 ldr r0, [r0, #0x4]
+F8D00002 ldr r0, [r0, #0x2]
+F8D00001 ldr r0, [r0, #0x1]
+F8D00000 [ne] ldrne r0, [r0]
+F8D00000 [ne last] ldrne r0, [r0]
+
+// LDR_i_T4_off 111110000|size=10|L=1|Rn=xxxx|Rt=xxxx|1|P=1|U=0|W=0|imm8=xxxxxxxx
+// LdrIT4Off: LDR{<c>}{<q>}  <Rt>, [<Rn> {, #-<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition, last in block
+f8550c80 ldr r0, [r5, #-128]
+f85a8cb4 ldr r8, [r10, #-180]
+f85efc16 ldr pc, [lr, #-22]
+f85bbce8 ldr r11, [r11, #-232]
+f8506cca ldr r6, [r0, #-202]
+f8523c6d ldr r3, [r2, #-109]
+f8525ca7 ldr r5, [r2, #-167]
+f85b2c6a ldr r2, [r11, #-106]
+F8550C00 ldr r0, [r5, #-0x0]
+F8550CFF ldr r0, [r5, #-0xff]
+F8550C40 ldr r0, [r5, #-0x40]
+F8550C20 ldr r0, [r5, #-0x20]
+F8550C10 ldr r0, [r5, #-0x10]
+F8550C08 ldr r0, [r5, #-0x8]
+F8550C04 ldr r0, [r5, #-0x4]
+F8550C02 ldr r0, [r5, #-0x2]
+F8550C01 ldr r0, [r5, #-0x1]
+F8550C80 [ne] ldrne r0, [r5, #-0x80]
+F8550C80 [ne last] ldrne r0, [r5, #-0x80]
+
+// LDR_i_T4_post 111110000|size=10|L=1|Rn=xxxx|Rt=xxxx|1|P=0|U=x|W=1|imm8=xxxxxxxx
+// PopLdrIT4Post: POP{<c>}{<q>}  <single_register_list>
+// LdrIT4Post: LDR{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// read together by the POP alias: Rn, U, imm8
+// register fields: Rn, Rt
+// form chosen on: Rn, U, imm8
+// IT state read: condition, last in block
+f85d699f ldr r6, [sp], #-159
+f8569b2e ldr r9, [r6], #46
+f859fb89 ldr pc, [r9], #137
+f8586be5 ldr r6, [r8], #229
+f8539b62 ldr r9, [r3], #98
+f850e9c8 ldr lr, [r0], #-200
+f859abfb ldr r10, [r9], #251
+f853d945 ldr sp, [r3], #-69
+F85D0900 ldr r0, [sp], #-0x0
+F85DD9FF ldr sp, [sp], #-0xff (unpredictable)
+F85D6980 ldr r6, [sp], #-0x80
+F85D6940 ldr r6, [sp], #-0x40
+F85D6920 ldr r6, [sp], #-0x20
+F85D6910 ldr r6, [sp], #-0x10
+F85D6908 ldr r6, [sp], #-0x8
+F85D6904 ldr r6, [sp], #-0x4
+F85D6902 ldr r6, [sp], #-0x2
+F85D6901 ldr r6, [sp], #-0x1
+F8506900 ldr r6, [r0], #-0x0
+F85069FF ldr r6, [r0], #-0xff
+F8506B00 ldr r6, [r0], #0x0
+F8506BFF ldr r6, [r0], #0xff
+F85D6B04 pop {r6}
+F85D6B04 [ne] popne {r6}
+F85D699F [ne] ldrne r6, [sp], #-0x9f
+F85D699F [ne last] ldrne r6, [sp], #-0x9f
+
+// LDR_i_T4_pre 111110000|size=10|L=1|Rn=xxxx|Rt=xxxx|1|P=1|U=x|W=1|imm8=xxxxxxxx
+// LdrIT4Pre: LDR{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn, Rt
+// IT state read: condition, last in block
+f85add7a ldr sp, [r10, #-122]!
+f859fdf6 ldr pc, [r9, #-246]!
+f8597d4c ldr r7, [r9, #-76]!
+f85d2ffc ldr r2, [sp, #252]!
+f85bbdbd ldr r11, [r11, #-189]! (unpredictable)
+f85c9d31 ldr r9, [r12, #-49]!
+f8529fc0 ldr r9, [r2, #192]!
+f8561ff6 ldr r1, [r6, #246]!
+F8500D00 ldr r0, [r0, #-0x0]! (unpredictable)
+F85ADDFF ldr sp, [r10, #-0xff]!
+F85ADD80 ldr sp, [r10, #-0x80]!
+F85ADD40 ldr sp, [r10, #-0x40]!
+F85ADD20 ldr sp, [r10, #-0x20]!
+F85ADD10 ldr sp, [r10, #-0x10]!
+F85ADD08 ldr sp, [r10, #-0x8]!
+F85ADD04 ldr sp, [r10, #-0x4]!
+F85ADD02 ldr sp, [r10, #-0x2]!
+F85ADD01 ldr sp, [r10, #-0x1]!
+F85ADD7A [ne] ldrne sp, [r10, #-0x7a]!
+F85ADD7A [ne last] ldrne sp, [r10, #-0x7a]!

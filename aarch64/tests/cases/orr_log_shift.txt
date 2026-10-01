@@ -1,0 +1,116 @@
+// ORR_32_log_shift sf=0|opc=01|01010|shift=xx|N=0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Orr32LogShift: ORR  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// MovOrr32LogShift: MOV  <Wd>, <Wm>
+// read together by the MOV alias: shift, imm6, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: shift, imm6, Rn
+2A1503E7 mov w7, w21
+2A1803E8 mov w8, w24
+2A0D03FF mov wzr, w13
+2A0203E9 mov w9, w2
+2A0A03E8 mov w8, w10
+2A1403E4 mov w4, w20
+2A0403E4 mov w4, w4
+2A1703ED mov w13, w23
+2A0103F5 mov w21, w1
+2A1A03E4 mov w4, w26
+2A1E03E6 mov w6, w30
+2A1C03ED mov w13, w28
+2A0F03FF mov wzr, w15
+2A0D03FD mov w29, w13
+2A1903E1 mov w1, w25
+2A1903FE mov w30, w25
+2A4C618D orr w13, w12, w12, lsr #0x18
+2A840A67 orr w7, w19, w4, asr #0x2
+2A834314 orr w20, w24, w3, asr #0x10
+2A444777 orr w23, w27, w4, lsr #0x11
+2AD66F22 orr w2, w25, w22, ror #0x1b
+2A1146EE orr w14, w23, w17, lsl #0x11
+2A926172 orr w18, w11, w18, asr #0x18
+2A495D8A orr w10, w12, w9, lsr #0x17
+2A0968D7 orr w23, w6, w9, lsl #0x1a
+2A504FBA orr w26, w29, w16, lsr #0x13
+2AD225E2 orr w2, w15, w18, ror #0x9
+2A9A53C0 orr w0, w30, w26, asr #0x14
+2A1A5612 orr w18, w16, w26, lsl #0x15
+2A9140BF orr wzr, w5, w17, asr #0x10
+2AD217A2 orr w2, w29, w18, ror #0x5
+2AC837B4 orr w20, w29, w8, ror #0xd
+2A000007 orr w7, w0, w0
+2A1F03E7 mov w7, wzr
+2A15FFE7 UNDEFINED
+2A15FC07 UNDEFINED
+2A550007 orr w7, w0, w21, lsr #0x0
+2A5503E7 orr w7, wzr, w21, lsr #0x0
+2A55FC07 UNDEFINED
+2A55FFE7 UNDEFINED
+2A950007 orr w7, w0, w21, asr #0x0
+2A9503E7 orr w7, wzr, w21, asr #0x0
+2A95FC07 UNDEFINED
+2A95FFE7 UNDEFINED
+2AD50007 orr w7, w0, w21, ror #0x0
+2AD503E7 orr w7, wzr, w21, ror #0x0
+2AD5FC07 UNDEFINED
+2AD5FFE7 UNDEFINED
+2A1583E7 UNDEFINED
+2A1523E7 orr w7, wzr, w21, lsl #0x8
+2A1513E7 orr w7, wzr, w21, lsl #0x4
+2A1507E7 orr w7, wzr, w21, lsl #0x1
+
+// ORR_64_log_shift sf=1|opc=01|01010|shift=xx|N=0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Orr64LogShift: ORR  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// MovOrr64LogShift: MOV  <Xd>, <Xm>
+// read together by the MOV alias: shift, imm6, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: shift, imm6, Rn
+AA1F03E9 mov x9, xzr
+AA1103F8 mov x24, x17
+AA1703F8 mov x24, x23
+AA1303E5 mov x5, x19
+AA0A03F1 mov x17, x10
+AA0403EF mov x15, x4
+AA0803F8 mov x24, x8
+AA0503E7 mov x7, x5
+AA0803FD mov fp, x8
+AA0E03E6 mov x6, x14
+AA0B03EA mov x10, x11
+AA1803EA mov x10, x24
+AA1603FD mov fp, x22
+AA0F03F1 mov x17, x15
+AA1403F5 mov x21, x20
+AA0603FA mov x26, x6
+AA9B9788 orr x8, x28, x27, asr #0x25
+AA950D25 orr x5, x9, x21, asr #0x3
+AA5644D7 orr x23, x6, x22, lsr #0x11
+AA12435D orr fp, x26, x18, lsl #0x10
+AA802794 orr x20, x28, x0, asr #0x9
+AADB2D40 orr x0, x10, x27, ror #0xb
+AA5A3018 orr x24, x0, x26, lsr #0xc
+AA155A42 orr x2, x18, x21, lsl #0x16
+AA09DEDB orr x27, x22, x9, lsl #0x37
+AA95019A orr x26, x12, x21, asr #0x0
+AAC6D9B8 orr x24, x13, x6, ror #0x36
+AA862096 orr x22, x4, x6, asr #0x8
+AAD93B32 orr x18, x25, x25, ror #0xe
+AA87DFC4 orr x4, lr, x7, asr #0x37
+AACAA00F orr x15, x0, x10, ror #0x28
+AADF5572 orr x18, x11, xzr, ror #0x15
+AA1FFFFF orr xzr, xzr, xzr, lsl #0x3f
+AA1F0009 orr x9, x0, xzr
+AA1FFC09 orr x9, x0, xzr, lsl #0x3f
+AA5F0009 orr x9, x0, xzr, lsr #0x0
+AA5F03E9 orr x9, xzr, xzr, lsr #0x0
+AA5FFC09 orr x9, x0, xzr, lsr #0x3f
+AA5FFFE9 orr x9, xzr, xzr, lsr #0x3f
+AA9F0009 orr x9, x0, xzr, asr #0x0
+AA9F03E9 orr x9, xzr, xzr, asr #0x0
+AA9FFC09 orr x9, x0, xzr, asr #0x3f
+AA9FFFE9 orr x9, xzr, xzr, asr #0x3f
+AADF0009 orr x9, x0, xzr, ror #0x0
+AADF03E9 orr x9, xzr, xzr, ror #0x0
+AADFFC09 orr x9, x0, xzr, ror #0x3f
+AADFFFE9 orr x9, xzr, xzr, ror #0x3f
+AA1F83E9 orr x9, xzr, xzr, lsl #0x20
+AA1F13E9 orr x9, xzr, xzr, lsl #0x4
+AA1F0BE9 orr x9, xzr, xzr, lsl #0x2
+AA1F07E9 orr x9, xzr, xzr, lsl #0x1

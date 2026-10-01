@@ -1,0 +1,108 @@
+// VADD_f_A1_D 1111001|U=0|0|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VaddFA1D: VADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f24cfd04 vadd.f32 d31, d12, d4
+f2081d81 vadd.f32 d1, d24, d1
+f2517d0c vadd.f16 d23, d1, d12
+f21bad84 vadd.f16 d10, d27, d4
+f250bd08 vadd.f16 d27, d0, d8
+f20a5d09 vadd.f32 d5, d10, d9
+f21bdd29 vadd.f16 d13, d11, d25
+f2401da6 vadd.f32 d17, d16, d22
+F24F0D00 vadd.f32 d16, d15, d0
+F2448D0F vadd.f32 d24, d4, d15
+F2424D02 vadd.f32 d20, d2, d2
+F24F2D00 vadd.f32 d18, d15, d0
+F20F0D8F vadd.f32 d0, d31, d15
+F20CFD20 vadd.f32 d15, d12, d16
+F24C0D2F vadd.f32 d16, d12, d31
+
+// VADD_f_A1_Q 1111001|U=0|0|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VaddFA1Q: VADD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f218ade4 vadd.f16 q5, q12, q10
+f25e6d4e vadd.f16 q11, q7, q7
+f2024d62 vadd.f32 q2, q1, q9
+f2046de0 vadd.f32 q3, q10, q8
+f2528d62 vadd.f16 q12, q1, q9
+f244ad68 vadd.f32 q13, q2, q12
+f24c6d46 vadd.f32 q11, q6, q3
+f2046dc0 vadd.f32 q3, q10, q0
+F2100DE4 vadd.f16 q0, q8, q10
+F21FFDEF UNDEFINED
+F2111DE1 UNDEFINED
+F2102D64 vadd.f16 q1, q0, q10
+F21FFD4F UNDEFINED
+F2580DE4 vadd.f16 q8, q12, q10
+F25FFDEF UNDEFINED
+
+// VADD_f_A2_D cond=xxxx|1110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=11|N=x|o2=0|M=x|0|Vm=xxxx
+// VaddFA2D: VADD{<c>}{<q>}.F64  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+9e71eba4 vaddls.f64 d30, d17, d20
+ce34fb29 vaddgt.f64 d15, d4, d25
+3e713b09 vaddlo.f64 d19, d1, d9
+ae7dfb02 vaddge.f64 d31, d13, d2
+ce717b0a vaddgt.f64 d23, d1, d10
+3e308b24 vaddlo.f64 d8, d0, d20
+de738b28 vaddle.f64 d24, d3, d24
+ee363b8e vadd.f64 d3, d22, d14
+// Binary Ninja's tests
+ee710ba0 vadd.f64 d16, d17, d16
+0E7F4BAF vaddeq.f64 d20, d31, d31
+8E782BA1 vaddhi.f64 d18, d24, d17
+4E721B80 vaddmi.f64 d17, d18, d0
+2E300B8F vaddcs.f64 d0, d16, d15
+1E7FEB2F vaddne.f64 d30, d15, d31
+9E7FEBA4 vaddls.f64 d30, d31, d20
+
+// VADD_f_A2_H cond=xxxx|1110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=01|N=x|o2=0|M=x|0|Vm=xxxx
+// VaddFA2H: VADD{<c>}{<q>}.F16  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+9e749984 vaddls.f16 s19, s9, s8 (unpredictable)
+0e78598c vaddeq.f16 s11, s17, s24 (unpredictable)
+6e3b790e vaddvs.f16 s14, s22, s28 (unpredictable)
+ee3d098b vadd.f16 s0, s27, s22
+7e38d903 vaddvc.f16 s26, s16, s6 (unpredictable)
+2e3329a2 vaddhs.f16 s4, s7, s5 (unpredictable)
+4e3de925 vaddmi.f16 s28, s26, s11 (unpredictable)
+3e796980 vaddlo.f16 s13, s19, s0 (unpredictable)
+8E70F98F vaddhi.f16 s31, s1, s30 (unpredictable)
+1E7F8988 vaddne.f16 s17, s31, s16 (unpredictable)
+9E724981 vaddls.f16 s9, s5, s2 (unpredictable)
+9E71198F vaddls.f16 s3, s3, s30 (unpredictable)
+9E30F920 vaddls.f16 s30, s0, s1 (unpredictable)
+9E7009AF vaddls.f16 s1, s1, s31 (unpredictable)
+9E7FF904 vaddls.f16 s31, s30, s8 (unpredictable)
+9E7F9984 vaddls.f16 s19, s31, s8 (unpredictable)
+
+// VADD_f_A2_S cond=xxxx|1110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=10|N=x|o2=0|M=x|0|Vm=xxxx
+// VaddFA2S: VADD{<c>}{<q>}.F32  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+7e77ea85 vaddvc.f32 s29, s15, s10
+be38fa24 vaddlt.f32 s30, s16, s9
+1e336aa2 vaddne.f32 s12, s7, s5
+5e3c0a07 vaddpl.f32 s0, s24, s14
+5e3c7a8d vaddpl.f32 s14, s25, s26
+9e3e9aaf vaddls.f32 s18, s29, s31
+6e33ea2e vaddvs.f32 s28, s6, s29
+5e37aa02 vaddpl.f32 s20, s14, s4
+// Binary Ninja's tests
+ee300a80 vadd.f32 s0, s1, s0
+0E7F8A88 vaddeq.f32 s17, s31, s16
+8E744A81 vaddhi.f32 s9, s9, s2
+4E722A8F vaddmi.f32 s5, s5, s30
+2E711AA0 vaddcs.f32 s3, s3, s1
+7E700A05 vaddvc.f32 s1, s0, s10
+7E7FFA05 vaddvc.f32 s31, s30, s10
+7E7FEA85 vaddvc.f32 s29, s31, s10

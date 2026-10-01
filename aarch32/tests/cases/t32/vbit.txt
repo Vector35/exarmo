@@ -1,0 +1,49 @@
+// VBIT_T1_D 111|U=1|11110|D=x|op=10|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VbitT1D: VBIT{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff23719a vbit d7, d19, d10
+ff28a1b2 vbit d10, d24, d18
+ff64719c vbit d23, d20, d12
+ff6761bf vbit d22, d23, d31
+ff28e11f vbit d14, d8, d15
+ff6bb198 vbit d27, d27, d8
+ff646194 vbit d22, d20, d4
+ff607139 vbit d23, d0, d25
+FF2F0190 vbit d0, d31, d0
+FF22F191 vbit d15, d18, d1
+FF218190 vbit d8, d17, d0
+FF2041B0 vbit d4, d16, d16
+FF2F211A vbit d2, d15, d10
+FF2F119A vbit d1, d31, d10
+FF23019A vbit d0, d19, d10
+FF23F19A vbit d15, d19, d10
+FF63019A vbit d16, d19, d10
+FF63F19A vbit d31, d19, d10
+FF23719A [ne] vbitne d7, d19, d10
+
+// VBIT_T1_Q 111|U=1|11110|D=x|op=10|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VbitT1Q: VBIT{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff6ca158 vbit q13, q6, q4
+ff6861fa vbit q11, q12, q13
+ff24617c vbit q3, q2, q14
+ff6a415c vbit q10, q5, q6
+ff6841f2 vbit q10, q12, q9
+ff6461d4 vbit q11, q10, q2
+ff6481de vbit q12, q10, q7
+ff6ac1f4 vbit q14, q13, q10
+FF600150 vbit q8, q0, q0
+FF6FF15F UNDEFINED
+FF622150 vbit q9, q1, q0
+FF611151 UNDEFINED
+FF200170 vbit q0, q0, q8
+FF2FF15F UNDEFINED
+FF6001D8 vbit q8, q8, q4
+FF6FF1FF UNDEFINED
+FF6CA158 [ne] vbitne q13, q6, q4

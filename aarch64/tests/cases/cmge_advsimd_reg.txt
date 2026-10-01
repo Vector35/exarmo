@@ -1,0 +1,48 @@
+// CMGE_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|0011|eq=1|1|Rn=xxxxx|Rd=xxxxx
+// CmgeAsimdsameOnly: CMGE  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4EEC3F22 cmge v2.2d, v25.2d, v12.2d
+0EAA3C73 cmge v19.2s, v3.2s, v10.2s
+0E663EE6 cmge v6.4h, v23.4h, v6.4h
+0E3E3CF6 cmge v22.8b, v7.8b, v30.8b
+0E283CA9 cmge v9.8b, v5.8b, v8.8b
+4E7A3DC4 cmge v4.8h, v14.8h, v26.8h
+4EA03FA8 cmge v8.4s, v29.4s, v0.4s
+0E3D3F95 cmge v21.8b, v28.8b, v29.8b
+0E6F3C12 cmge v18.4h, v0.4h, v15.4h
+0EA73F3E cmge v30.2s, v25.2s, v7.2s
+0EB33DB6 cmge v22.2s, v13.2s, v19.2s
+4E393EBC cmge v28.16b, v21.16b, v25.16b
+4EF73E4F cmge v15.2d, v18.2d, v23.2d
+0EA83F91 cmge v17.2s, v28.2s, v8.2s
+4E343F6B cmge v11.16b, v27.16b, v20.16b
+4E333DD3 cmge v19.16b, v14.16b, v19.16b
+4EFF3FE0 cmge v0.2d, v31.2d, v31.2d
+4EEC3F3F cmge v31.2d, v25.2d, v12.2d
+0EEC3F22 UNDEFINED
+4EEC3F39 cmge v25.2d, v25.2d, v12.2d
+
+// CMGE_asisdsame_only 01|U=0|1|111|0|size=11|1|Rm=xxxxx|0011|eq=1|1|Rn=xxxxx|Rd=xxxxx
+// CmgeAsisdsameOnly: CMGE  <d>, <n>, <m>
+// register fields: Rm, Rn, Rd
+5EE93C3F cmge d31, d1, d9
+5EEB3D53 cmge d19, d10, d11
+5EE73CB7 cmge d23, d5, d7
+5EEA3DF9 cmge d25, d15, d10
+5EEA3C1C cmge d28, d0, d10
+5EF03FF3 cmge d19, d31, d16
+5EEB3CE3 cmge d3, d7, d11
+5EFD3D1B cmge d27, d8, d29
+5EE93F89 cmge d9, d28, d9
+5EEB3E1F cmge d31, d16, d11
+5EFB3C43 cmge d3, d2, d27
+5EF53E7A cmge d26, d19, d21
+5EE43CD9 cmge d25, d6, d4
+5EF03CC5 cmge d5, d6, d16
+5EFE3EBF cmge d31, d21, d30
+5EFD3C52 cmge d18, d2, d29
+5EE03C20 cmge d0, d1, d0
+5EFF3C3F cmge d31, d1, d31
+5EE93D3F cmge d31, d9, d9
+5EE93C21 cmge d1, d1, d9

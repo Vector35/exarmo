@@ -1,0 +1,62 @@
+// UMLSL_asimdelem_L 0|Q=x|U=1|0|111|1|size=xx|L=x|M=x|Rm=xxxx|0|o2=1|10|H=x|0|Rn=xxxxx|Rd=xxxxx
+// UmlslAsimdelemL: UMLSL  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// UmlslAsimdelemL2: UMLSL2  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// read together by <Tb>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+// form chosen on: Q
+2F576120 umlsl v0.4s, v9.4h, v7.h[1]
+2F886913 umlsl v19.2d, v8.2s, v8.s[2]
+2FAC63B4 umlsl v20.2d, v29.2s, v12.s[1]
+2F526879 umlsl v25.4s, v3.4h, v2.h[5]
+2F8C6008 umlsl v8.2d, v0.2s, v12.s[0]
+6FA368B6 umlsl2 v22.2d, v5.4s, v3.s[3]
+2F7C6B36 umlsl v22.4s, v25.4h, v12.h[7]
+6FBA63A0 umlsl2 v0.2d, v29.4s, v26.s[1]
+6FB869C6 umlsl2 v6.2d, v14.4s, v24.s[3]
+6F576199 umlsl2 v25.4s, v12.8h, v7.h[1]
+6F436AD5 umlsl2 v21.4s, v22.8h, v3.h[4]
+6FA469E3 umlsl2 v3.2d, v15.4s, v4.s[3]
+2F6F6A7A umlsl v26.4s, v19.4h, v15.h[6]
+2F7C62FA umlsl v26.4s, v23.4h, v12.h[3]
+6F71612D umlsl2 v13.4s, v9.8h, v1.h[3]
+2F7D6272 umlsl v18.4s, v19.4h, v13.h[3]
+2F5063FF umlsl v31.4s, v31.4h, v0.h[1]
+2F176120 UNDEFINED
+2FD76120 UNDEFINED
+2F076120 UNDEFINED
+2F076920 UNDEFINED
+2F176920 UNDEFINED
+2F276120 UNDEFINED
+2F276920 UNDEFINED
+2F376120 UNDEFINED
+2F376920 UNDEFINED
+2F476120 umlsl v0.4s, v9.4h, v7.h[0]
+2F676120 umlsl v0.4s, v9.4h, v7.h[2]
+2F976120 umlsl v0.2d, v9.2s, v23.s[0]
+2F976920 umlsl v0.2d, v9.2s, v23.s[2]
+2FC76120 UNDEFINED
+2FC76920 UNDEFINED
+2FD76920 UNDEFINED
+2FE76120 UNDEFINED
+2FE76920 UNDEFINED
+2FF76120 UNDEFINED
+2FF76920 UNDEFINED
+2F006120 UNDEFINED
+2F0F6120 UNDEFINED
+2F106120 UNDEFINED
+2F1F6120 UNDEFINED
+2F406120 umlsl v0.4s, v9.4h, v0.h[0]
+2F5F6120 umlsl v0.4s, v9.4h, v15.h[1]
+2F806120 umlsl v0.2d, v9.2s, v0.s[0]
+2F8F6120 umlsl v0.2d, v9.2s, v15.s[0]
+2F906120 umlsl v0.2d, v9.2s, v16.s[0]
+2F9F6120 umlsl v0.2d, v9.2s, v31.s[0]
+2FC06120 UNDEFINED
+2FCF6120 UNDEFINED
+2FD06120 UNDEFINED
+2FDF6120 UNDEFINED
+6F176120 UNDEFINED
+6FD76120 UNDEFINED
+6F406120 umlsl2 v0.4s, v9.8h, v0.h[0]

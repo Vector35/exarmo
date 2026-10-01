@@ -1,0 +1,165 @@
+// SCVTF_D32_float2fix sf=0|0|S=0|11110|ftype=01|0|rmode=00|opcode=010|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// ScvtfD32Float2fix: SCVTF  <Dd>, <Wn>, #<fbits>
+// register fields: Rn, Rd
+1E42BA69 scvtf d9, w19, #0x12
+1E42BB01 scvtf d1, w24, #0x12
+1E42B08F scvtf d15, w4, #0x14
+1E42EEE7 scvtf d7, w23, #0x5
+1E428111 scvtf d17, w8, #0x20
+1E42B504 scvtf d4, w8, #0x13
+1E42B3F1 scvtf d17, wzr, #0x14
+1E428F68 scvtf d8, w27, #0x1d
+1E42A56E scvtf d14, w11, #0x17
+1E428079 scvtf d25, w3, #0x20
+1E428C78 scvtf d24, w3, #0x1d
+1E42E7FC scvtf d28, wzr, #0x7
+1E42CC8D scvtf d13, w4, #0xd
+1E4294AD scvtf d13, w5, #0x1b
+1E42EED5 scvtf d21, w22, #0x5
+1E42ED07 scvtf d7, w8, #0x5
+1E42FC00 scvtf d0, w0, #0x1
+1E42BA7F scvtf d31, w19, #0x12
+1E420269 UNDEFINED
+1E424269 UNDEFINED
+1E422269 UNDEFINED
+1E421269 UNDEFINED
+1E420A69 UNDEFINED
+1E420669 UNDEFINED
+
+// SCVTF_D64_float2fix sf=1|0|S=0|11110|ftype=01|0|rmode=00|opcode=010|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// ScvtfD64Float2fix: SCVTF  <Dd>, <Xn>, #<fbits>
+// register fields: Rn, Rd
+9E428281 scvtf d1, x20, #0x20
+9E42CF83 scvtf d3, x28, #0xd
+9E429267 scvtf d7, x19, #0x1c
+9E426B9B scvtf d27, x28, #0x26
+9E42C75A scvtf d26, x26, #0xf
+9E4267E0 scvtf d0, xzr, #0x27
+9E42A5CB scvtf d11, x14, #0x17
+9E424013 scvtf d19, x0, #0x30
+9E42B62C scvtf d12, x17, #0x13
+9E421D90 scvtf d16, x12, #0x39
+9E42AC36 scvtf d22, x1, #0x15
+9E426FA7 scvtf d7, fp, #0x25
+9E421B67 scvtf d7, x27, #0x3a
+9E4296F8 scvtf d24, x23, #0x1b
+9E428E7C scvtf d28, x19, #0x1d
+9E422F0D scvtf d13, x24, #0x35
+9E42029F scvtf d31, x20, #0x40
+9E42FE81 scvtf d1, x20, #0x1
+9E422281 scvtf d1, x20, #0x38
+9E421281 scvtf d1, x20, #0x3c
+9E420A81 scvtf d1, x20, #0x3e
+9E420681 scvtf d1, x20, #0x3f
+
+// SCVTF_H32_float2fix sf=0|0|S=0|11110|ftype=11|0|rmode=00|opcode=010|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// ScvtfH32Float2fix: SCVTF  <Hd>, <Wn>, #<fbits>
+// register fields: Rn, Rd
+1EC28BE6 scvtf h6, wzr, #0x1e
+1EC297B4 scvtf h20, w29, #0x1b
+1EC2BA45 scvtf h5, w18, #0x12
+1EC2F9ED scvtf h13, w15, #0x2
+1EC2A40E scvtf h14, w0, #0x17
+1EC2A26E scvtf h14, w19, #0x18
+1EC2EA85 scvtf h5, w20, #0x6
+1EC2D7C3 scvtf h3, w30, #0xb
+1EC2B738 scvtf h24, w25, #0x13
+1EC2E8DA scvtf h26, w6, #0x6
+1EC2C3C9 scvtf h9, w30, #0x10
+1EC2E246 scvtf h6, w18, #0x8
+1EC28636 scvtf h22, w17, #0x1f
+1EC2F4E6 scvtf h6, w7, #0x3
+1EC2D132 scvtf h18, w9, #0xc
+1EC2C0AB scvtf h11, w5, #0x10
+1EC2FFE0 scvtf h0, wzr, #0x1
+1EC28BFF scvtf h31, wzr, #0x1e
+1EC203E6 UNDEFINED
+1EC283E6 scvtf h6, wzr, #0x20
+1EC243E6 UNDEFINED
+1EC223E6 UNDEFINED
+1EC213E6 UNDEFINED
+1EC20BE6 UNDEFINED
+1EC207E6 UNDEFINED
+
+// SCVTF_H64_float2fix sf=1|0|S=0|11110|ftype=11|0|rmode=00|opcode=010|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// ScvtfH64Float2fix: SCVTF  <Hd>, <Xn>, #<fbits>
+// register fields: Rn, Rd
+9EC2B973 scvtf h19, x11, #0x12
+9EC21887 scvtf h7, x4, #0x3a
+9EC2FAD6 scvtf h22, x22, #0x2
+9EC2C251 scvtf h17, x18, #0x10
+9EC2627B scvtf h27, x19, #0x28
+9EC22678 scvtf h24, x19, #0x37
+9EC2ABB2 scvtf h18, fp, #0x16
+9EC25842 scvtf h2, x2, #0x2a
+9EC25E67 scvtf h7, x19, #0x29
+9EC268A0 scvtf h0, x5, #0x26
+9EC26CB5 scvtf h21, x5, #0x25
+9EC29C31 scvtf h17, x1, #0x19
+9EC2EC09 scvtf h9, x0, #0x5
+9EC229F4 scvtf h20, x15, #0x36
+9EC2FA6D scvtf h13, x19, #0x2
+9EC249E3 scvtf h3, x15, #0x2e
+9EC203FF scvtf h31, xzr, #0x40
+9EC2FD73 scvtf h19, x11, #0x1
+9EC28173 scvtf h19, x11, #0x20
+9EC24173 scvtf h19, x11, #0x30
+9EC22173 scvtf h19, x11, #0x38
+9EC21173 scvtf h19, x11, #0x3c
+9EC20973 scvtf h19, x11, #0x3e
+9EC20573 scvtf h19, x11, #0x3f
+
+// SCVTF_S32_float2fix sf=0|0|S=0|11110|ftype=00|0|rmode=00|opcode=010|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// ScvtfS32Float2fix: SCVTF  <Sd>, <Wn>, #<fbits>
+// register fields: Rn, Rd
+1E02DC96 scvtf s22, w4, #0x9
+1E02DD6E scvtf s14, w11, #0x9
+1E0286CC scvtf s12, w22, #0x1f
+1E02C4D1 scvtf s17, w6, #0xf
+1E02965E scvtf s30, w18, #0x1b
+1E029C09 scvtf s9, w0, #0x19
+1E02F1A5 scvtf s5, w13, #0x4
+1E0294D1 scvtf s17, w6, #0x1b
+1E02D713 scvtf s19, w24, #0xb
+1E028E39 scvtf s25, w17, #0x1d
+1E02F9E4 scvtf s4, w15, #0x2
+1E02FFDA scvtf s26, w30, #0x1
+1E02F0D9 scvtf s25, w6, #0x4
+1E02BC40 scvtf s0, w2, #0x11
+1E02E210 scvtf s16, w16, #0x8
+1E02F608 scvtf s8, w16, #0x3
+1E02DFFF scvtf s31, wzr, #0x9
+1E020096 UNDEFINED
+1E028096 scvtf s22, w4, #0x20
+1E024096 UNDEFINED
+1E022096 UNDEFINED
+1E021096 UNDEFINED
+1E020896 UNDEFINED
+1E020496 UNDEFINED
+
+// SCVTF_S64_float2fix sf=1|0|S=0|11110|ftype=00|0|rmode=00|opcode=010|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// ScvtfS64Float2fix: SCVTF  <Sd>, <Xn>, #<fbits>
+// register fields: Rn, Rd
+9E020167 scvtf s7, x11, #0x40
+9E02E908 scvtf s8, x8, #0x6
+9E0296D5 scvtf s21, x22, #0x1b
+9E0241E6 scvtf s6, x15, #0x30
+9E02D3B1 scvtf s17, fp, #0xc
+9E02F9AC scvtf s12, x13, #0x2
+9E029C5E scvtf s30, x2, #0x19
+9E025C8C scvtf s12, x4, #0x29
+9E02E00E scvtf s14, x0, #0x8
+9E02EC43 scvtf s3, x2, #0x5
+9E02F7AC scvtf s12, fp, #0x3
+9E02E4EE scvtf s14, x7, #0x7
+9E024222 scvtf s2, x17, #0x30
+9E0200AA scvtf s10, x5, #0x40
+9E02C2F4 scvtf s20, x23, #0x10
+9E0237D1 scvtf s17, lr, #0x33
+9E02FFE0 scvtf s0, xzr, #0x1
+9E02017F scvtf s31, x11, #0x40
+9E028167 scvtf s7, x11, #0x20
+9E022167 scvtf s7, x11, #0x38
+9E021167 scvtf s7, x11, #0x3c
+9E020967 scvtf s7, x11, #0x3e
+9E020567 scvtf s7, x11, #0x3f

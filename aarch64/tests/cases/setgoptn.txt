@@ -1,0 +1,44 @@
+// SETGOETN_memset_go sz=xx|011101|op1=11|0|Rs=(1)(1)(1)(1)(1)|op2=1011|00|Rn=xxxxx|Rd=xxxxx
+// SetgoetnMemsetGo: SETGOETN  [<Xd>]!, <Xn>!
+// register fields: Rn, Rd
+1DDFB101 setgoetn [x1]!, x8!
+1DC0B000 setgoetn [x0]!, x0! (unpredictable)
+1DDFB3FF setgoetn [xzr]!, xzr!
+5DDFB101 UNDEFINED
+9DDFB101 UNDEFINED
+DDDFB101 UNDEFINED
+1DD0B101 setgoetn [x1]!, x8! (unpredictable)
+1DC8B101 setgoetn [x1]!, x8! (unpredictable)
+1DC4B101 setgoetn [x1]!, x8! (unpredictable)
+1DC2B101 setgoetn [x1]!, x8! (unpredictable)
+1DC1B101 setgoetn [x1]!, x8! (unpredictable)
+
+// SETGOMTN_memset_go sz=xx|011101|op1=11|0|Rs=(1)(1)(1)(1)(1)|op2=0111|00|Rn=xxxxx|Rd=xxxxx
+// SetgomtnMemsetGo: SETGOMTN  [<Xd>]!, <Xn>!
+// register fields: Rn, Rd
+1DDF7101 setgomtn [x1]!, x8!
+1DC07000 setgomtn [x0]!, x0! (unpredictable)
+1DDF73FF setgomtn [xzr]!, xzr!
+5DDF7101 UNDEFINED
+9DDF7101 UNDEFINED
+DDDF7101 UNDEFINED
+1DD07101 setgomtn [x1]!, x8! (unpredictable)
+1DC87101 setgomtn [x1]!, x8! (unpredictable)
+1DC47101 setgomtn [x1]!, x8! (unpredictable)
+1DC27101 setgomtn [x1]!, x8! (unpredictable)
+1DC17101 setgomtn [x1]!, x8! (unpredictable)
+
+// SETGOPTN_memset_go sz=xx|011101|op1=11|0|Rs=(1)(1)(1)(1)(1)|op2=0011|00|Rn=xxxxx|Rd=xxxxx
+// SetgoptnMemsetGo: SETGOPTN  [<Xd>]!, <Xn>!
+// register fields: Rn, Rd
+1DDF3101 setgoptn [x1]!, x8!
+1DC03000 setgoptn [x0]!, x0! (unpredictable)
+1DDF33FF setgoptn [xzr]!, xzr!
+5DDF3101 UNDEFINED
+9DDF3101 UNDEFINED
+DDDF3101 UNDEFINED
+1DD03101 setgoptn [x1]!, x8! (unpredictable)
+1DC83101 setgoptn [x1]!, x8! (unpredictable)
+1DC43101 setgoptn [x1]!, x8! (unpredictable)
+1DC23101 setgoptn [x1]!, x8! (unpredictable)
+1DC13101 setgoptn [x1]!, x8! (unpredictable)

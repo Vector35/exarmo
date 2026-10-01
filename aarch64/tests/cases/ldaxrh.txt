@@ -1,0 +1,32 @@
+// LDAXRH_LR32_ldstexclr size=01|00|1|0|0|00|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdaxrhLr32Ldstexclr: LDAXRH  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+485FFFFC ldaxrh w28, [sp]
+485FFC38 ldaxrh w24, [x1]
+485FFC83 ldaxrh w3, [x4]
+485FFC8B ldaxrh w11, [x4]
+485FFCE6 ldaxrh w6, [x7]
+485FFC6A ldaxrh w10, [x3]
+485FFF8C ldaxrh w12, [x28]
+485FFE82 ldaxrh w2, [x20]
+4844AFC2 ldaxrh w2, [lr] (unpredictable)
+485C954B ldaxrh w11, [x10] (unpredictable)
+485B8373 ldaxrh w19, [x27] (unpredictable)
+485BE262 ldaxrh w2, [x19] (unpredictable)
+4845FA17 ldaxrh w23, [x16] (unpredictable)
+485B9B58 ldaxrh w24, [x26] (unpredictable)
+4841B8EE ldaxrh w14, [x7] (unpredictable)
+4853BFDE ldaxrh w30, [lr] (unpredictable)
+48458BDA ldaxrh w26, [lr] (unpredictable)
+4847A94D ldaxrh w13, [x10] (unpredictable)
+4844C157 ldaxrh w23, [x10] (unpredictable)
+4858EFA8 ldaxrh w8, [fp] (unpredictable)
+485F9796 ldaxrh w22, [x28] (unpredictable)
+484F8D2D ldaxrh w13, [x9] (unpredictable)
+484CE494 ldaxrh w20, [x4] (unpredictable)
+4841FC4C ldaxrh w12, [x2] (unpredictable)
+4840FC00 ldaxrh w0, [x0] (unpredictable)
+485FFFFF ldaxrh wzr, [sp]
+4850A3FC ldaxrh w28, [sp] (unpredictable)
+484893FC ldaxrh w28, [sp] (unpredictable)
+484287FC ldaxrh w28, [sp] (unpredictable)

@@ -1,0 +1,42 @@
+// CLS_32_dp_1src sf=0|1|S=0|11010110|opcode2=00000|00010|op=1|Rn=xxxxx|Rd=xxxxx
+// Cls32Dp1src: CLS  <Wd>, <Wn>
+// register fields: Rn, Rd
+5AC01468 cls w8, w3
+5AC016FD cls w29, w23
+5AC016C7 cls w7, w22
+5AC0148E cls w14, w4
+5AC01587 cls w7, w12
+5AC01430 cls w16, w1
+5AC01679 cls w25, w19
+5AC0158C cls w12, w12
+5AC01665 cls w5, w19
+5AC0146F cls w15, w3
+5AC01546 cls w6, w10
+5AC015E6 cls w6, w15
+5AC017E5 cls w5, wzr
+5AC0176D cls w13, w27
+5AC0140E cls w14, w0
+5AC0148F cls w15, w4
+5AC01460 cls w0, w3
+5AC0147F cls wzr, w3
+
+// CLS_64_dp_1src sf=1|1|S=0|11010110|opcode2=00000|00010|op=1|Rn=xxxxx|Rd=xxxxx
+// Cls64Dp1src: CLS  <Xd>, <Xn>
+// register fields: Rn, Rd
+DAC017F5 cls x21, xzr
+DAC01503 cls x3, x8
+DAC0144A cls x10, x2
+DAC0172A cls x10, x25
+DAC017EE cls x14, xzr
+DAC014A9 cls x9, x5
+DAC01461 cls x1, x3
+DAC014BB cls x27, x5
+DAC016D6 cls x22, x22
+DAC01489 cls x9, x4
+DAC014F8 cls x24, x7
+DAC01583 cls x3, x12
+DAC0145F cls xzr, x2
+DAC01659 cls x25, x18
+DAC016AC cls x12, x21
+DAC016BB cls x27, x21
+DAC01400 cls x0, x0

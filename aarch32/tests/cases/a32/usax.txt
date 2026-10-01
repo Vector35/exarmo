@@ -1,0 +1,18 @@
+// USAX_A1 cond=xxxx|011|00|op1=101|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=10|1|Rm=xxxx
+// UsaxA1: USAX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+26537053 usaxhs r7, r3, r3 (unpredictable)
+6650c35c usaxvs r12, r0, r12 (unpredictable)
+865a3252 usaxhi r3, r10, r2 (unpredictable)
+1655b95d usaxne r11, r5, sp (unpredictable)
+965eb25e usaxls r11, lr, lr (unpredictable)
+76575251 usaxvc r5, r7, r1 (unpredictable)
+e65fea56 usax lr, pc, r6 (unpredictable)
+465b6451 usaxmi r6, r11, r1 (unpredictable)
+// Binary Ninja's tests
+16532f54 usaxne r2, r3, r4
+e6532f54 usax r2, r3, r4
+06530850 usaxeq r0, r3, r0 (unpredictable)
+F6537053 UNALLOCATED
+2653F15F usaxcs pc, r3, pc (unpredictable)
+26533053 usaxcs r3, r3, r3 (unpredictable)

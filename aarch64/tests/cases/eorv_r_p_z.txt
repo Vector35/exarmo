@@ -1,0 +1,29 @@
+// eorv_r_p_z_ 000|0010|0|size=xx|0|110|opc=01|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// EorvRPZ: EORV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+041931A8 eorv b8, p4, z13.b
+04993A52 eorv s18, p6, z18.s
+0499346B eorv s11, p5, z3.s
+04593F49 eorv h9, p7, z26.h
+04192274 eorv b20, p0, z19.b
+04D93B3E eorv d30, p6, z25.d
+04D924F8 eorv d24, p1, z7.d
+045921E3 eorv h3, p0, z15.h
+04593239 eorv h25, p4, z17.h
+04D928D6 eorv d22, p2, z6.d
+04592B97 eorv h23, p2, z28.h
+04593759 eorv h25, p5, z26.h
+045931DA eorv h26, p4, z14.h
+04193B9D eorv b29, p6, z28.b
+04993D43 eorv s3, p7, z10.s
+04D9206B eorv d11, p0, z3.d
+04192C00 eorv b0, p3, z0.b
+041933FF eorv b31, p4, z31.b
+04593080 eorv h0, p4, z4.h
+045931BF eorv h31, p4, z13.h
+049931A0 eorv s0, p4, z13.s
+049931BF eorv s31, p4, z13.s
+04D931A0 eorv d0, p4, z13.d
+04D931BF eorv d31, p4, z13.d
+041931A4 eorv b4, p4, z13.b

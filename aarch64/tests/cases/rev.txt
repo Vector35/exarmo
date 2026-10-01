@@ -1,0 +1,43 @@
+// REV_32_dp_1src sf=0|1|S=0|11010110|opcode2=00000|0000|opc=10|Rn=xxxxx|Rd=xxxxx
+// Rev32Dp1src: REV  <Wd>, <Wn>
+// register fields: Rn, Rd
+5AC00AAE rev w14, w21
+5AC00877 rev w23, w3
+5AC0080D rev w13, w0
+5AC00BD3 rev w19, w30
+5AC00A4A rev w10, w18
+5AC00B86 rev w6, w28
+5AC0087F rev wzr, w3
+5AC00BC8 rev w8, w30
+5AC008EA rev w10, w7
+5AC008CE rev w14, w6
+5AC00A9D rev w29, w20
+5AC00B89 rev w9, w28
+5AC00991 rev w17, w12
+5AC00A15 rev w21, w16
+5AC00955 rev w21, w10
+5AC0083F rev wzr, w1
+5AC00BE0 rev w0, wzr
+5AC00AB5 rev w21, w21
+
+// REV_64_dp_1src sf=1|1|S=0|11010110|opcode2=00000|0000|opc=11|Rn=xxxxx|Rd=xxxxx
+// Rev64Dp1src: REV  <Xd>, <Xn>
+// register fields: Rn, Rd
+DAC00CCB rev x11, x6
+DAC00C12 rev x18, x0
+DAC00C65 rev x5, x3
+DAC00FAA rev x10, fp
+DAC00E2B rev x11, x17
+DAC00CAB rev x11, x5
+DAC00E6B rev x11, x19
+DAC00DAC rev x12, x13
+DAC00D91 rev x17, x12
+DAC00F39 rev x25, x25
+DAC00D95 rev x21, x12
+DAC00CC5 rev x5, x6
+DAC00F48 rev x8, x26
+DAC00F2F rev x15, x25
+DAC00D2F rev x15, x9
+DAC00DD2 rev x18, x14
+DAC00FE0 rev x0, xzr
+DAC00CDF rev xzr, x6

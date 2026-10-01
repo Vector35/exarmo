@@ -1,0 +1,40 @@
+// UMADDL_64WA_dp_3src sf=1|op54=00|1|101|1|U=1|01|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Umaddl64waDp3src: UMADDL  <Xd>, <Wn>, <Wm>, <Xa>
+// UmullUmaddl64waDp3src: UMULL  <Xd>, <Wn>, <Wm>
+// register fields: Rm, Ra, Rn, Rd
+// form chosen on: Ra
+9BB20467 umaddl x7, w3, w18, x1
+9BBA1078 umaddl x24, w3, w26, x4
+9BAB63C2 umaddl x2, w30, w11, x24
+9BB91BD5 umaddl x21, w30, w25, x6
+9BA97ADC umaddl x28, w22, w9, lr
+9BB061C8 umaddl x8, w14, w16, x24
+9BA34ECE umaddl x14, w22, w3, x19
+9BBE33DB umaddl x27, w30, w30, x12
+9BB335C0 umaddl x0, w14, w19, x13
+9BA54E92 umaddl x18, w20, w5, x19
+9BB80E37 umaddl x23, w17, w24, x3
+9BA30D17 umaddl x23, w8, w3, x3
+9BBC5B5D umaddl fp, w26, w28, x22
+9BAB27D6 umaddl x22, w30, w11, x9
+9BB5200F umaddl x15, w0, w21, x8
+9BBF28A2 umaddl x2, w5, wzr, x10
+9BB07F03 umull x3, w24, w16
+9BB07C31 umull x17, w1, w16
+9BA27E7D umull fp, w19, w2
+9BB27E52 umull x18, w18, w18
+9BA87D75 umull x21, w11, w8
+9BB27E2A umull x10, w17, w18
+9BA57D2D umull x13, w9, w5
+9BB37DA2 umull x2, w13, w19
+9BA37E74 umull x20, w19, w3
+9BA67E84 umull x4, w20, w6
+9BBD7F84 umull x4, w28, w29
+9BA47E99 umull x25, w20, w4
+9BBE7C2D umull x13, w1, w30
+9BAC7CF1 umull x17, w7, w12
+9BBB7FF8 umull x24, wzr, w27
+9BB67DC2 umull x2, w14, w22
+9BA0007F umaddl xzr, w3, w0, x0
+9BB20461 umaddl x1, w3, w18, x1
+9BA23E7D umaddl fp, w19, w2, x15

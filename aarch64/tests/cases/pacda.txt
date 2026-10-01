@@ -1,0 +1,42 @@
+// PACDA_64P_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=0|010|Rn=xxxxx|Rd=xxxxx
+// Pacda64pDp1src: PACDA  <Xd>, <Xn|SP>
+// register fields: Rn, Rd
+DAC108E4 pacda x4, x7
+DAC108B3 pacda x19, x5
+DAC109AD pacda x13, x13
+DAC10B83 pacda x3, x28
+DAC109A0 pacda x0, x13
+DAC10806 pacda x6, x0
+DAC108A3 pacda x3, x5
+DAC1082A pacda x10, x1
+DAC10B4A pacda x10, x26
+DAC10A4A pacda x10, x18
+DAC109B8 pacda x24, x13
+DAC10821 pacda x1, x1
+DAC10BF3 pacda x19, sp
+DAC10B36 pacda x22, x25
+DAC109C2 pacda x2, x14
+DAC10B7C pacda x28, x27
+DAC108FF pacda xzr, x7
+
+// PACDZA_64Z_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=1|010|Rn=11111|Rd=xxxxx
+// Pacdza64zDp1src: PACDZA  <Xd>
+// register fields: Rd
+DAC12BF4 pacdza x20
+DAC12BE9 pacdza x9
+DAC12BFB pacdza x27
+DAC12BED pacdza x13
+DAC12BFA pacdza x26
+DAC12BF8 pacdza x24
+DAC12BEE pacdza x14
+DAC12BF2 pacdza x18
+DAC12BF9 pacdza x25
+DAC12BF3 pacdza x19
+DAC12BEC pacdza x12
+DAC12BF7 pacdza x23
+DAC12BF1 pacdza x17
+DAC12BEF pacdza x15
+DAC12BF5 pacdza x21
+DAC12BFD pacdza fp
+DAC12BE0 pacdza x0
+DAC12BFF pacdza xzr

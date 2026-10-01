@@ -1,0 +1,47 @@
+// SWPP_128_memop_128 0|S=0|011001|A=0|R=0|1|Rt2=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Swpp128Memop128: SWPP  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19208001 swpp x1, x0, [x0]
+19208008 swpp x8, x0, [x0]
+1920800F swpp x15, x0, [x0]
+192083E0 swpp x0, x0, [sp] (unpredictable)
+193F801F UNDEFINED
+19208000 swpp x0, x0, [x0] (unpredictable)
+192083E1 swpp x1, x0, [sp]
+19208021 swpp x1, x0, [x1]
+
+// SWPPA_128_memop_128 0|S=0|011001|A=1|R=0|1|Rt2=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Swppa128Memop128: SWPPA  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19A08004 swppa x4, x0, [x0]
+19A0800B swppa x11, x0, [x0]
+19A08012 swppa x18, x0, [x0]
+19A083E0 swppa x0, x0, [sp] (unpredictable)
+19BF801F UNDEFINED
+19A08000 swppa x0, x0, [x0] (unpredictable)
+19A083E4 swppa x4, x0, [sp]
+19A08084 swppa x4, x0, [x4]
+
+// SWPPAL_128_memop_128 0|S=0|011001|A=1|R=1|1|Rt2=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Swppal128Memop128: SWPPAL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19E08002 swppal x2, x0, [x0]
+19E08009 swppal x9, x0, [x0]
+19E08010 swppal x16, x0, [x0]
+19E083E0 swppal x0, x0, [sp] (unpredictable)
+19FF801F UNDEFINED
+19E08000 swppal x0, x0, [x0] (unpredictable)
+19E083E2 swppal x2, x0, [sp]
+19E08042 swppal x2, x0, [x2]
+
+// SWPPL_128_memop_128 0|S=0|011001|A=0|R=1|1|Rt2=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Swppl128Memop128: SWPPL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19608006 swppl x6, x0, [x0]
+1960800D swppl x13, x0, [x0]
+19608014 swppl x20, x0, [x0]
+196083E0 swppl x0, x0, [sp] (unpredictable)
+197F801F UNDEFINED
+19608000 swppl x0, x0, [x0] (unpredictable)
+196083E6 swppl x6, x0, [sp]
+196080C6 swppl x6, x0, [x6]

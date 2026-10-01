@@ -1,0 +1,14 @@
+// eor3_z_zzz_ 000|0010|0|opc=00|1|Zm=xxxxx|001|11|o2=0|Zk=xxxxx|Zdn=xxxxx
+// Eor3ZZzz: EOR3  <Zdn>.D, <Zdn>.D, <Zm>.D, <Zk>.D
+// register fields: Zm, Zk, Zdn
+04323BB0 eor3 z16.d, z16.d, z18.d, z29.d
+042C3B31 eor3 z17.d, z17.d, z12.d, z25.d
+043C3974 eor3 z20.d, z20.d, z28.d, z11.d
+04233B32 eor3 z18.d, z18.d, z3.d, z25.d
+043C3A55 eor3 z21.d, z21.d, z28.d, z18.d
+043F3838 eor3 z24.d, z24.d, z31.d, z1.d
+04353AA4 eor3 z4.d, z4.d, z21.d, z21.d
+04203854 eor3 z20.d, z20.d, z0.d, z2.d
+04323800 eor3 z0.d, z0.d, z18.d, z0.d
+04323BFF eor3 z31.d, z31.d, z18.d, z31.d
+04323BB2 eor3 z18.d, z18.d, z18.d, z29.d

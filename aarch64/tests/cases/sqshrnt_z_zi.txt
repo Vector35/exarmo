@@ -1,0 +1,68 @@
+// sqshrnt_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=1|U=0|R=0|T=1|Zn=xxxxx|Zd=xxxxx
+// SqshrntZZi: SQSHRNT  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+452D25BD sqshrnt z29.b, z13.h, #0x3
+452C27EA sqshrnt z10.b, z31.h, #0x4
+457A2658 sqshrnt z24.s, z18.d, #0x6
+4566245C sqshrnt z28.s, z2.d, #0x1a
+45792636 sqshrnt z22.s, z17.d, #0x7
+457D2514 sqshrnt z20.s, z8.d, #0x3
+45282709 sqshrnt z9.b, z24.h, #0x8
+456024DE sqshrnt z30.s, z6.d, #0x20
+45332400 sqshrnt z0.h, z0.s, #0xd
+452F25BF sqshrnt z31.b, z13.h, #0x1
+452025BD UNDEFINED
+452125BD UNDEFINED
+452225BD UNDEFINED
+452325BD UNDEFINED
+452425BD UNDEFINED
+452525BD UNDEFINED
+452625BD UNDEFINED
+452725BD UNDEFINED
+452925BD sqshrnt z29.b, z13.h, #0x7
+452A25BD sqshrnt z29.b, z13.h, #0x6
+452B25BD sqshrnt z29.b, z13.h, #0x5
+452E25BD sqshrnt z29.b, z13.h, #0x2
+453025BD sqshrnt z29.h, z13.s, #0x10
+453125BD sqshrnt z29.h, z13.s, #0xf
+453225BD sqshrnt z29.h, z13.s, #0xe
+453425BD sqshrnt z29.h, z13.s, #0xc
+453525BD sqshrnt z29.h, z13.s, #0xb
+453625BD sqshrnt z29.h, z13.s, #0xa
+453725BD sqshrnt z29.h, z13.s, #0x9
+453825BD sqshrnt z29.h, z13.s, #0x8
+453925BD sqshrnt z29.h, z13.s, #0x7
+453A25BD sqshrnt z29.h, z13.s, #0x6
+453B25BD sqshrnt z29.h, z13.s, #0x5
+453C25BD sqshrnt z29.h, z13.s, #0x4
+453D25BD sqshrnt z29.h, z13.s, #0x3
+453E25BD sqshrnt z29.h, z13.s, #0x2
+453F25BD sqshrnt z29.h, z13.s, #0x1
+456125BD sqshrnt z29.s, z13.d, #0x1f
+456225BD sqshrnt z29.s, z13.d, #0x1e
+456325BD sqshrnt z29.s, z13.d, #0x1d
+456425BD sqshrnt z29.s, z13.d, #0x1c
+456525BD sqshrnt z29.s, z13.d, #0x1b
+456725BD sqshrnt z29.s, z13.d, #0x19
+456825BD sqshrnt z29.s, z13.d, #0x18
+456925BD sqshrnt z29.s, z13.d, #0x17
+456A25BD sqshrnt z29.s, z13.d, #0x16
+456B25BD sqshrnt z29.s, z13.d, #0x15
+456C25BD sqshrnt z29.s, z13.d, #0x14
+456D25BD sqshrnt z29.s, z13.d, #0x13
+456E25BD sqshrnt z29.s, z13.d, #0x12
+456F25BD sqshrnt z29.s, z13.d, #0x11
+457025BD sqshrnt z29.s, z13.d, #0x10
+457125BD sqshrnt z29.s, z13.d, #0xf
+457225BD sqshrnt z29.s, z13.d, #0xe
+457325BD sqshrnt z29.s, z13.d, #0xd
+457425BD sqshrnt z29.s, z13.d, #0xc
+457525BD sqshrnt z29.s, z13.d, #0xb
+457625BD sqshrnt z29.s, z13.d, #0xa
+457725BD sqshrnt z29.s, z13.d, #0x9
+457825BD sqshrnt z29.s, z13.d, #0x8
+457B25BD sqshrnt z29.s, z13.d, #0x5
+457C25BD sqshrnt z29.s, z13.d, #0x4
+457E25BD sqshrnt z29.s, z13.d, #0x2
+457F25BD sqshrnt z29.s, z13.d, #0x1

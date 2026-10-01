@@ -1,0 +1,38 @@
+// uqshrn_z_mz2_ 010|0010|1|1|op0=0|1|tsize=xx|imm3=xxx|0|0|op1=0|U=1|R=0|0|Zn=xxxx|0|Zd=xxxxx
+// UqshrnZMz2: UQSHRN  <Zd>.<T>, { <Zn1>.<Tb>-<Zn2>.<Tb> }, #<const>
+// read together by <const>: tsize, imm3
+// register fields: Zn, Zd
+45A81000 uqshrn z0.b, {z0.h-z1.h}, #0x8
+45A81007 uqshrn z7.b, {z0.h-z1.h}, #0x8
+45A8100E uqshrn z14.b, {z0.h-z1.h}, #0x8
+45B113DF uqshrn z31.h, {z30.s-z31.s}, #0xf
+45BA1000 uqshrn z0.h, {z0.s-z1.s}, #0x6
+45AB1000 uqshrn z0.b, {z0.h-z1.h}, #0x5
+45AC1000 uqshrn z0.b, {z0.h-z1.h}, #0x4
+45AD1000 uqshrn z0.b, {z0.h-z1.h}, #0x3
+45AE1000 uqshrn z0.b, {z0.h-z1.h}, #0x2
+45AF1000 uqshrn z0.b, {z0.h-z1.h}, #0x1
+45A01000 UNDEFINED
+45A11000 UNDEFINED
+45A21000 UNDEFINED
+45A31000 UNDEFINED
+45A41000 UNDEFINED
+45A51000 UNDEFINED
+45A61000 UNDEFINED
+45A71000 UNDEFINED
+45A91000 uqshrn z0.b, {z0.h-z1.h}, #0x7
+45AA1000 uqshrn z0.b, {z0.h-z1.h}, #0x6
+45B01000 uqshrn z0.h, {z0.s-z1.s}, #0x10
+45B21000 uqshrn z0.h, {z0.s-z1.s}, #0xe
+45B31000 uqshrn z0.h, {z0.s-z1.s}, #0xd
+45B41000 uqshrn z0.h, {z0.s-z1.s}, #0xc
+45B51000 uqshrn z0.h, {z0.s-z1.s}, #0xb
+45B61000 uqshrn z0.h, {z0.s-z1.s}, #0xa
+45B71000 uqshrn z0.h, {z0.s-z1.s}, #0x9
+45B81000 uqshrn z0.h, {z0.s-z1.s}, #0x8
+45B91000 uqshrn z0.h, {z0.s-z1.s}, #0x7
+45BB1000 uqshrn z0.h, {z0.s-z1.s}, #0x5
+45BC1000 uqshrn z0.h, {z0.s-z1.s}, #0x4
+45BD1000 uqshrn z0.h, {z0.s-z1.s}, #0x3
+45BE1000 uqshrn z0.h, {z0.s-z1.s}, #0x2
+45BF1000 uqshrn z0.h, {z0.s-z1.s}, #0x1

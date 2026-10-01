@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  # The release runs it before publishing.
+  workflow_call:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: always
+  # Incremental build data is of no use to a fresh runner, and only grows the cache.
+  CARGO_INCREMENTAL: 0
+  RUSTFLAGS: -D warnings
+
+jobs:
+  fmt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: rustup toolchain install
+      - run: cargo fmt --all --check
+
+  test:
+    name: test (${{ matrix.toolchain }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # The toolchain rust-toolchain.toml pins, and the workspace's
+        # rust-version.
+        toolchain: [pinned, MSRV]
+    steps:
+      - uses: actions/checkout@v7
+      # RUSTUP_TOOLCHAIN takes precedence over rust-toolchain.toml.
+      - if: matrix.toolchain == 'MSRV'
+        run: echo "RUSTUP_TOOLCHAIN=$(sed -n 's/^rust-version = "\(.*\)"$/\1/p' Cargo.toml)" >> "$GITHUB_ENV"
+      - run: rustup toolchain install
+      - uses: Swatinem/rust-cache@v2
+        with:
+          cache-on-failure: true
+      - run: cargo build --workspace --all-targets --locked
+      # Every test binary runs, whichever fail.
+      - run: cargo test --workspace --locked --no-fail-fast
+
+  # The published crates' documentation, as docs.rs builds it: every public
+  # item documented and every link resolved.
+  docs:
+    runs-on: ubuntu-latest
+    env:
+      RUSTDOCFLAGS: -D warnings -D missing_docs
+    steps:
+      - uses: actions/checkout@v7
+      - run: rustup toolchain install
+      - uses: Swatinem/rust-cache@v2
+        with:
+          cache-on-failure: true
+      - run: >
+          cargo doc --no-deps --locked
+          -p exarmo-core -p exarmo-aarch64 -p exarmo-aarch32
+          -p exarmo-aarch64-capi -p exarmo-aarch32-capi -p exarmo-cli
+
+  clippy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: rustup toolchain install
+      - uses: Swatinem/rust-cache@v2
+        with:
+          cache-on-failure: true
+      - run: cargo clippy --workspace --all-targets --locked
+      # The command can be built with either instruction set left out.
+      - run: cargo clippy -p exarmo-cli --all-targets --locked --no-default-features --features aarch64
+      - run: cargo clippy -p exarmo-cli --all-targets --locked --no-default-features --features aarch32

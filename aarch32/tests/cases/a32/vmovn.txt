@@ -1,0 +1,20 @@
+// VMOVN_A1 1111|0|01|1|1|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0100|Q=0|M=x|0|Vm=xxxx
+// VmovnA1: VMOVN{<c>}{<q>}.<dt>  <Dd>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+f3fad20c vmovn.i64 d29, q6
+f3f26202 vmovn.i16 d22, q1
+F3B60220 vmovn.i32 d0, q8
+F3FED20F UNDEFINED
+F3FAF208 vmovn.i64 d31, q4
+F3FA8204 vmovn.i64 d24, q2
+F3FA4200 vmovn.i64 d20, q0
+F3FA2220 vmovn.i64 d18, q8
+F3FA120C vmovn.i64 d17, q6
+F3FAD201 UNDEFINED
+F3BA020C vmovn.i64 d0, q6
+F3BAF20C vmovn.i64 d15, q6
+F3FA020C vmovn.i64 d16, q6
+F3FAF20C vmovn.i64 d31, q6
+F3FAD20F UNDEFINED
+F3FAD22F UNDEFINED

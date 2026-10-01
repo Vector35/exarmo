@@ -1,0 +1,32 @@
+// LDAXRB_LR32_ldstexclr size=00|00|1|0|0|00|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdaxrbLr32Ldstexclr: LDAXRB  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+085FFE57 ldaxrb w23, [x18]
+085FFE1F ldaxrb wzr, [x16]
+085FFCE4 ldaxrb w4, [x7]
+085FFDEE ldaxrb w14, [x15]
+085FFF6D ldaxrb w13, [x27]
+085FFC1B ldaxrb w27, [x0]
+085FFDB1 ldaxrb w17, [x13]
+085FFD4D ldaxrb w13, [x10]
+0840D752 ldaxrb w18, [x26] (unpredictable)
+0859E8C4 ldaxrb w4, [x6] (unpredictable)
+084CA1FD ldaxrb w29, [x15] (unpredictable)
+084FA4FA ldaxrb w26, [x7] (unpredictable)
+0852C6F8 ldaxrb w24, [x23] (unpredictable)
+0844FFE3 ldaxrb w3, [sp] (unpredictable)
+0842D535 ldaxrb w21, [x9] (unpredictable)
+084795EA ldaxrb w10, [x15] (unpredictable)
+0844EA84 ldaxrb w4, [x20] (unpredictable)
+085B886B ldaxrb w11, [x3] (unpredictable)
+084AAC78 ldaxrb w24, [x3] (unpredictable)
+085FA651 ldaxrb w17, [x18] (unpredictable)
+0849E503 ldaxrb w3, [x8] (unpredictable)
+085FA239 ldaxrb w25, [x17] (unpredictable)
+0846CFB1 ldaxrb w17, [fp] (unpredictable)
+0841B754 ldaxrb w20, [x26] (unpredictable)
+085F8240 ldaxrb w0, [x18] (unpredictable)
+085FFE52 ldaxrb w18, [x18]
+0850C257 ldaxrb w23, [x18] (unpredictable)
+08489257 ldaxrb w23, [x18] (unpredictable)
+085F8657 ldaxrb w23, [x18] (unpredictable)

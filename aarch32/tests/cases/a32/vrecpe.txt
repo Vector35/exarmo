@@ -1,0 +1,45 @@
+// VRECPE_A1_D 111100111|D=x|11|size=xx|opc1=11|Vd=xxxx|010|F=x|0|Q=0|M=x|0|Vm=xxxx
+// VrecpeA1D: VRECPE{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3bbf504 vrecpe.f32 d15, d4
+f3fbb526 vrecpe.f32 d27, d22
+f3f7652a vrecpe.f16 d22, d26
+f3f7952c vrecpe.f16 d25, d28
+f3f76503 vrecpe.f16 d22, d3
+f3fb7504 vrecpe.f32 d23, d4
+f3bb0504 vrecpe.f32 d0, d4
+F3B3F504 UNDEFINED
+F3BFF504 UNDEFINED
+F3BB8400 vrecpe.u32 d8, d0
+F3BB440F vrecpe.u32 d4, d15
+F3BB2508 vrecpe.f32 d2, d8
+F3BB1502 vrecpe.f32 d1, d2
+F3FB0501 vrecpe.f32 d16, d1
+F3B3F404 UNDEFINED
+F3B7F404 UNDEFINED
+F3BFF404 UNDEFINED
+F3FBF500 vrecpe.f32 d31, d0
+F3BBF50F vrecpe.f32 d15, d15
+F3BBF520 vrecpe.f32 d15, d16
+F3BBF52F vrecpe.f32 d15, d31
+
+// VRECPE_A1_Q 111100111|D=x|11|size=xx|opc1=11|Vd=xxxx|010|F=x|0|Q=1|M=x|0|Vm=xxxx
+// VrecpeA1Q: VRECPE{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+F3B70540 vrecpe.f16 q0, q0
+F3FB8468 vrecpe.u32 q12, q12
+F3B3F56F UNDEFINED
+F3BF1561 UNDEFINED
+F3B74564 vrecpe.f16 q2, q10
+F3BB2462 vrecpe.u32 q1, q9
+F3B3F44F UNDEFINED
+F3F3F56F UNDEFINED
+F3B7846A UNDEFINED
+F3BB0540 vrecpe.f32 q0, q0
+F3BF846A UNDEFINED
+F3BF856A UNDEFINED
+F3FB0560 vrecpe.f32 q8, q8

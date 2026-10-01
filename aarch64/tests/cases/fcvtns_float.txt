@@ -1,0 +1,131 @@
+// FCVTNS_32D_float2int sf=0|0|S=0|11110|ftype=01|1|rmode=00|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtns32dFloat2int: FCVTNS  <Wd>, <Dn>
+// register fields: Rn, Rd
+1E600046 fcvtns w6, d2
+1E6001C6 fcvtns w6, d14
+1E6001E7 fcvtns w7, d15
+1E600266 fcvtns w6, d19
+1E6000C2 fcvtns w2, d6
+1E600201 fcvtns w1, d16
+1E6001F9 fcvtns w25, d15
+1E6001BA fcvtns w26, d13
+1E6000E8 fcvtns w8, d7
+1E6001B7 fcvtns w23, d13
+1E600080 fcvtns w0, d4
+1E6000A1 fcvtns w1, d5
+1E600061 fcvtns w1, d3
+1E600056 fcvtns w22, d2
+1E60005C fcvtns w28, d2
+1E6003A0 fcvtns w0, d29
+1E60001F fcvtns wzr, d0
+1E6003E6 fcvtns w6, d31
+1E600042 fcvtns w2, d2
+
+// FCVTNS_32H_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=00|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtns32hFloat2int: FCVTNS  <Wd>, <Hn>
+// register fields: Rn, Rd
+1EE002E9 fcvtns w9, h23
+1EE00183 fcvtns w3, h12
+1EE00058 fcvtns w24, h2
+1EE001BA fcvtns w26, h13
+1EE0003D fcvtns w29, h1
+1EE0039E fcvtns w30, h28
+1EE0018C fcvtns w12, h12
+1EE000F4 fcvtns w20, h7
+1EE00250 fcvtns w16, h18
+1EE0018F fcvtns w15, h12
+1EE00063 fcvtns w3, h3
+1EE003AA fcvtns w10, h29
+1EE00216 fcvtns w22, h16
+1EE0015B fcvtns w27, h10
+1EE00212 fcvtns w18, h16
+1EE002A7 fcvtns w7, h21
+1EE00000 fcvtns w0, h0
+1EE003FF fcvtns wzr, h31
+
+// FCVTNS_32S_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=00|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtns32sFloat2int: FCVTNS  <Wd>, <Sn>
+// register fields: Rn, Rd
+1E2000BC fcvtns w28, s5
+1E20009D fcvtns w29, s4
+1E200047 fcvtns w7, s2
+1E200138 fcvtns w24, s9
+1E2002BC fcvtns w28, s21
+1E20008C fcvtns w12, s4
+1E200108 fcvtns w8, s8
+1E2000E2 fcvtns w2, s7
+1E2002BA fcvtns w26, s21
+1E20004C fcvtns w12, s2
+1E2002DF fcvtns wzr, s22
+1E200388 fcvtns w8, s28
+1E200062 fcvtns w2, s3
+1E2002F2 fcvtns w18, s23
+1E2000DC fcvtns w28, s6
+1E2000D7 fcvtns w23, s6
+1E200000 fcvtns w0, s0
+1E2003FC fcvtns w28, s31
+
+// FCVTNS_64D_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=00|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtns64dFloat2int: FCVTNS  <Xd>, <Dn>
+// register fields: Rn, Rd
+9E6000FF fcvtns xzr, d7
+9E600323 fcvtns x3, d25
+9E6003C0 fcvtns x0, d30
+9E600328 fcvtns x8, d25
+9E600092 fcvtns x18, d4
+9E60034A fcvtns x10, d26
+9E6002A2 fcvtns x2, d21
+9E6002C0 fcvtns x0, d22
+9E6002E2 fcvtns x2, d23
+9E6001A3 fcvtns x3, d13
+9E60019E fcvtns lr, d12
+9E60016F fcvtns x15, d11
+9E6001E3 fcvtns x3, d15
+9E60011C fcvtns x28, d8
+9E600383 fcvtns x3, d28
+9E600172 fcvtns x18, d11
+9E60001F fcvtns xzr, d0
+9E6003FF fcvtns xzr, d31
+
+// FCVTNS_64H_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=00|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtns64hFloat2int: FCVTNS  <Xd>, <Hn>
+// register fields: Rn, Rd
+9EE000B6 fcvtns x22, h5
+9EE0029D fcvtns fp, h20
+9EE00188 fcvtns x8, h12
+9EE003D5 fcvtns x21, h30
+9EE0005E fcvtns lr, h2
+9EE000CA fcvtns x10, h6
+9EE00009 fcvtns x9, h0
+9EE0018C fcvtns x12, h12
+9EE003AD fcvtns x13, h29
+9EE0027A fcvtns x26, h19
+9EE003ED fcvtns x13, h31
+9EE0011E fcvtns lr, h8
+9EE0014A fcvtns x10, h10
+9EE00346 fcvtns x6, h26
+9EE00114 fcvtns x20, h8
+9EE000A9 fcvtns x9, h5
+9EE000A0 fcvtns x0, h5
+9EE000BF fcvtns xzr, h5
+
+// FCVTNS_64S_float2int sf=1|0|S=0|11110|ftype=00|1|rmode=00|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtns64sFloat2int: FCVTNS  <Xd>, <Sn>
+// register fields: Rn, Rd
+9E200394 fcvtns x20, s28
+9E200080 fcvtns x0, s4
+9E2000FA fcvtns x26, s7
+9E200362 fcvtns x2, s27
+9E200168 fcvtns x8, s11
+9E20031A fcvtns x26, s24
+9E2003AF fcvtns x15, s29
+9E20035A fcvtns x26, s26
+9E2001DC fcvtns x28, s14
+9E2000ED fcvtns x13, s7
+9E2001CC fcvtns x12, s14
+9E2001DB fcvtns x27, s14
+9E200330 fcvtns x16, s25
+9E2000C9 fcvtns x9, s6
+9E2000E3 fcvtns x3, s7
+9E2003F5 fcvtns x21, s31
+9E20001F fcvtns xzr, s0

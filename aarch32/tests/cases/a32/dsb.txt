@@ -1,0 +1,32 @@
+// DSB_A1 1111|0|1|01011|1|(1)(1)(1)(1)(1)(1)(1)(1)(0)(0)(0)(0)|opcode=0100|option=xxxx
+// DsbA1: DSB{<c>}{<q>}  {<option>}
+// Binary Ninja's tests
+f57ff041 dsb oshld
+f57ff042 dsb oshst
+f57ff043 dsb osh
+f57ff045 dsb nshld
+f57ff046 dsb nshst
+f57ff047 dsb nsh
+f57ff048 dsb #0x8
+f57ff049 dsb ishld
+f57ff04a dsb ishst
+f57ff04b dsb ish
+f57ff04c dsb #0xc
+f57ff04d dsb ld
+f57ff04e dsb st
+f57ff04f dsb sy
+F5700041 dsb oshld (unpredictable)
+F57FFF41 dsb oshld (unpredictable)
+F5780041 dsb oshld (unpredictable)
+F5740041 dsb oshld (unpredictable)
+F5720041 dsb oshld (unpredictable)
+F5710041 dsb oshld (unpredictable)
+F5708041 dsb oshld (unpredictable)
+F5704041 dsb oshld (unpredictable)
+F5702041 dsb oshld (unpredictable)
+F5701041 dsb oshld (unpredictable)
+F5700841 dsb oshld (unpredictable)
+F5700441 dsb oshld (unpredictable)
+F5700241 dsb oshld (unpredictable)
+F5700141 dsb oshld (unpredictable)
+F5700F41 dsb oshld (unpredictable)

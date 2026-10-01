@@ -1,0 +1,37 @@
+// tbl_z_zz_1 000|0010|1|size=xx|1|Zm=xxxxx|001100|Zn=xxxxx|Zd=xxxxx
+// TblZZz1: TBL  <Zd>.<T>, { <Zn>.<T> }, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+05B833B6 tbl z22.s, {z29.s}, z24.s
+05A831CD tbl z13.s, {z14.s}, z8.s
+052032BF tbl z31.b, {z21.b}, z0.b
+05EC311F tbl z31.d, {z8.d}, z12.d
+05F4339D tbl z29.d, {z28.d}, z20.d
+05E731A0 tbl z0.d, {z13.d}, z7.d
+05333172 tbl z18.b, {z11.b}, z19.b
+05A331AA tbl z10.s, {z13.s}, z3.s
+057D30EC tbl z12.h, {z7.h}, z29.h
+05A8319F tbl z31.s, {z12.s}, z8.s
+05363364 tbl z4.b, {z27.b}, z22.b
+05A6322D tbl z13.s, {z17.s}, z6.s
+05B5320A tbl z10.s, {z16.s}, z21.s
+05633096 tbl z22.h, {z4.h}, z3.h
+052A32CA tbl z10.b, {z22.b}, z10.b
+05F13060 tbl z0.d, {z3.d}, z17.d
+05BF3016 tbl z22.s, {z0.s}, z31.s
+05B833F6 tbl z22.s, {z31.s}, z24.s
+05B83316 tbl z22.s, {z24.s}, z24.s
+05B833BD tbl z29.s, {z29.s}, z24.s
+
+// tbl_z_zz_2 000|0010|1|size=xx|1|Zm=xxxxx|00101|op=0|Zn=xxxxx|Zd=xxxxx
+// TblZZz2: TBL  <Zd>.<T>, { <Zn1>.<T>, <Zn2>.<T> }, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+05712A95 tbl z21.h, {z20.h, z21.h}, z17.h
+05F7287E tbl z30.d, {z3.d, z4.d}, z23.d
+05AA282C tbl z12.s, {z1.s, z2.s}, z10.s
+05B52A45 tbl z5.s, {z18.s, z19.s}, z21.s
+05A72A86 tbl z6.s, {z20.s, z21.s}, z7.s
+05AB29B4 tbl z20.s, {z13.s, z14.s}, z11.s
+05732B6C tbl z12.h, {z27.h, z28.h}, z19.h
+05632B06 tbl z6.h, {z24.h, z25.h}, z3.h
+05202800 tbl z0.b, {z0.b, z1.b}, z0.b
+057F2BFF tbl z31.h, {z31.h, z0.h}, z31.h

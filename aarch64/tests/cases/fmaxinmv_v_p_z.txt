@@ -1,0 +1,16 @@
+// fmaxinmv_v_p_z_ 011|0010|0|size=xx|0101|opc=00|11|R=0|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// FmaxinmvVPZ: FMAXINMV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+6414DFFF UNDEFINED
+6454C000 fmaxinmv h0, p0, z0.h
+6494C7FF fmaxinmv s31, p1, z31.s
+64D4CBFF fmaxinmv d31, p2, z31.d
+6454CFE0 fmaxinmv h0, p3, z31.h
+6454D3FF fmaxinmv h31, p4, z31.h
+6494D7E0 fmaxinmv s0, p5, z31.s
+6494DBFF fmaxinmv s31, p6, z31.s
+64D4DFE0 fmaxinmv d0, p7, z31.d
+6414DFE0 UNDEFINED
+64D4DCFF fmaxinmv d31, p7, z7.d
+64D4DFE7 fmaxinmv d7, p7, z31.d

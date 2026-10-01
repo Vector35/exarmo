@@ -1,0 +1,29 @@
+// UMLSL_asimddiff_L 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|10|o1=1|0|00|Rn=xxxxx|Rd=xxxxx
+// UmlslAsimddiffL: UMLSL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// UmlslAsimddiffL2: UMLSL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+6E6AA392 umlsl2 v18.4s, v28.8h, v10.8h
+2E78A247 umlsl v7.4s, v18.4h, v24.4h
+6E6CA181 umlsl2 v1.4s, v12.8h, v12.8h
+2EA9A320 umlsl v0.2d, v25.2s, v9.2s
+2EAEA2F9 umlsl v25.2d, v23.2s, v14.2s
+6EBEA131 umlsl2 v17.2d, v9.4s, v30.4s
+6E22A1BE umlsl2 v30.8h, v13.16b, v2.16b
+6EB4A3AA umlsl2 v10.2d, v29.4s, v20.4s
+6E61A36D umlsl2 v13.4s, v27.8h, v1.8h
+6E65A2F0 umlsl2 v16.4s, v23.8h, v5.8h
+6EBFA39E umlsl2 v30.2d, v28.4s, v31.4s
+2E34A2A9 umlsl v9.8h, v21.8b, v20.8b
+6E35A127 umlsl2 v7.8h, v9.16b, v21.16b
+6EB9A14E umlsl2 v14.2d, v10.4s, v25.4s
+2E2CA335 umlsl v21.8h, v25.8b, v12.8b
+2E6EA276 umlsl v22.4s, v19.4h, v14.4h
+6E60A01F umlsl2 v31.4s, v0.8h, v0.8h
+6E6AA3F2 umlsl2 v18.4s, v31.8h, v10.8h
+6EEAA392 UNDEFINED
+2EEAA392 UNDEFINED
+6E6AA38A umlsl2 v10.4s, v28.8h, v10.8h
+6E6AA39C umlsl2 v28.4s, v28.8h, v10.8h
+6E2CA335 umlsl2 v21.8h, v25.16b, v12.16b

@@ -1,0 +1,30 @@
+// STM_u_A1_AS cond=xxxx|10|0|P=x|U=x|op=1|W=(0)|L=0|Rn=xxxx|register_list=xxxxxxxxxxxxxxxx
+// StmUA1As: STM{<amode>}{<c>}{<q>}  <Rn>, <registers>^
+// read together by <amode>: P, U
+// register fields: Rn
+a845f342 stmdage r5, {r1, r6, r8, r9, r12, sp, lr, pc}^
+59ce4401 stmibpl lr, {r0, r10, lr}^
+a9490f97 stmdbge r9, {r0, r1, r2, r4, r7, r8, r9, r10, r11}^
+9947308e stmdbls r7, {r1, r2, r3, r7, r12, sp}^
+6867a156 stmdavs r7, {r1, r2, r4, r6, r8, sp, pc}^ (unpredictable)
+584781cc stmdapl r7, {r2, r3, r6, r7, r8, pc}^
+2943d8af stmdbcs r3, {r0, r1, r2, r3, r5, r7, r11, r12, lr, pc}^
+28c845d4 stmcs r8, {r2, r4, r6, r7, r8, r10, lr}^
+08400000 stmdaeq r0, {}^ (unpredictable)
+884FFFFF stmdahi pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc}^ (unpredictable)
+48458000 stmdami r5, {pc}^
+18454000 stmdane r5, {lr}^
+A8452000 stmdage r5, {sp}^
+A8451000 stmdage r5, {r12}^
+A8450800 stmdage r5, {r11}^
+A8450400 stmdage r5, {r10}^
+A8450200 stmdage r5, {r9}^
+A8450100 stmdage r5, {r8}^
+A8450080 stmdage r5, {r7}^
+A8450040 stmdage r5, {r6}^
+A8450020 stmdage r5, {r5}^
+A8450010 stmdage r5, {r4}^
+A8450008 stmdage r5, {r3}^
+A8450004 stmdage r5, {r2}^
+A8450002 stmdage r5, {r1}^
+A8450001 stmdage r5, {r0}^

@@ -1,0 +1,33 @@
+// SRS_T1_AS 111|0100|opc=00|0|W=x|L=0|Rn=(1)(1)(0)(1)|P=(1)|M=(1)|(0)(0)(0)(0)(0)(0)(0)(0)(0)|mode=xxxxx
+// SrsT1As: SRSDB{<c>}{<q>}  SP{<!>}, #<mode>
+// IT state read: condition
+E8000000 srsdb sp, #0x0 (unpredictable)
+E82FFFFF srsdb sp!, #0x1f (unpredictable)
+E8082010 srsdb sp, #0x10 (unpredictable)
+E8041008 srsdb sp, #0x8 (unpredictable)
+E8020804 srsdb sp, #0x4 (unpredictable)
+E8010402 srsdb sp, #0x2 (unpredictable)
+E8000201 srsdb sp, #0x1 (unpredictable)
+E8000100 srsdb sp, #0x0 (unpredictable)
+E8000080 srsdb sp, #0x0 (unpredictable)
+E8000040 srsdb sp, #0x0 (unpredictable)
+E8000020 srsdb sp, #0x0 (unpredictable)
+E8000000 [ne] srsdbne sp, #0x0 (unpredictable)
+E80DC000 srsdb sp, #0x0
+
+// SRS_T2_AS 111|0100|opc=11|0|W=x|L=0|Rn=(1)(1)(0)(1)|P=(1)|M=(1)|(0)(0)(0)(0)(0)(0)(0)(0)(0)|mode=xxxxx
+// SrsT2As: SRS{<IA>}{<c>}{<q>}  SP{<!>}, #<mode>
+// IT state read: condition
+E9800000 srs sp, #0x0 (unpredictable)
+E9AFFFFF srs sp!, #0x1f (unpredictable)
+E9882010 srs sp, #0x10 (unpredictable)
+E9841008 srs sp, #0x8 (unpredictable)
+E9820804 srs sp, #0x4 (unpredictable)
+E9810402 srs sp, #0x2 (unpredictable)
+E9800201 srs sp, #0x1 (unpredictable)
+E9800100 srs sp, #0x0 (unpredictable)
+E9800080 srs sp, #0x0 (unpredictable)
+E9800040 srs sp, #0x0 (unpredictable)
+E9800020 srs sp, #0x0 (unpredictable)
+E9800000 [ne] srsne sp, #0x0 (unpredictable)
+E98DC000 srs sp, #0x0

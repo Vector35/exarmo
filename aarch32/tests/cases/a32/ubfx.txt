@@ -1,0 +1,24 @@
+// UBFX_A1 cond=xxxx|011|11|U=1|1|widthm1=xxxxx|Rd=xxxx|lsb=xxxxx|10|1|Rn=xxxx
+// UbfxA1: UBFX{<c>}{<q>}  <Rd>, <Rn>, #<lsb>, #<width>
+// register fields: Rd, Rn
+77eab958 ubfxvc r11, r8, #18, #11
+a7f68bd1 UNPREDICTABLE
+97fac9da UNPREDICTABLE
+e7f94c57 UNPREDICTABLE
+47e2e6da ubfxmi lr, r10, #13, #3
+17e3e9d7 ubfxne lr, r7, #19, #4
+a7fc53d6 UNPREDICTABLE
+57ece859 ubfxpl lr, r9, #16, #13
+// Binary Ninja's tests
+c7ef4855 ubfxgt r4, r5, #16, #16
+e7e04855 ubfx r4, r5, #16, #1
+07FF0050 ubfxeq r0, r0, #0x0, #0x20
+F7EAB958 UNALLOCATED
+87F0FFDF UNPREDICTABLE
+27E8B45B ubfxcs r11, r11, #0x8, #0x9
+77E4B258 ubfxvc r11, r8, #0x4, #0x5
+77E1B158 ubfxvc r11, r8, #0x2, #0x2
+77EAB0D8 ubfxvc r11, r8, #0x1, #0xb
+87EAF95F ubfxhi pc, pc, #0x12, #0xb (unpredictable)
+47F0E6DA ubfxmi lr, r10, #0xd, #0x11
+E7E04FD5 ubfx r4, r5, #0x1f, #0x1

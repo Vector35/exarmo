@@ -1,0 +1,25 @@
+// UABD_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|0111|ac=0|1|Rn=xxxxx|Rd=xxxxx
+// UabdAsimdsameOnly: UABD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+2E367437 uabd v23.8b, v1.8b, v22.8b
+6E2F770F uabd v15.16b, v24.16b, v15.16b
+2EA674F0 uabd v16.2s, v7.2s, v6.2s
+2EA477DD uabd v29.2s, v30.2s, v4.2s
+2EAD7420 uabd v0.2s, v1.2s, v13.2s
+6E61748F uabd v15.8h, v4.8h, v1.8h
+2EB874D4 uabd v20.2s, v6.2s, v24.2s
+2E2774A8 uabd v8.8b, v5.8b, v7.8b
+2E79771F uabd v31.4h, v24.4h, v25.4h
+2E6877D4 uabd v20.4h, v30.4h, v8.4h
+6E6F77B2 uabd v18.8h, v29.8h, v15.8h
+2E7975B1 uabd v17.4h, v13.4h, v25.4h
+6EAD7678 uabd v24.4s, v19.4s, v13.4s
+2E3F7534 uabd v20.8b, v9.8b, v31.8b
+2EBD77D0 uabd v16.2s, v30.2s, v29.2s
+2E677531 uabd v17.4h, v9.4h, v7.4h
+2E207417 uabd v23.8b, v0.8b, v0.8b
+2E3677F7 uabd v23.8b, v31.8b, v22.8b
+2EF67437 UNDEFINED
+6EF67437 UNDEFINED
+2E367421 uabd v1.8b, v1.8b, v22.8b

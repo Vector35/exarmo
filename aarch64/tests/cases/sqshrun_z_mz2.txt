@@ -1,0 +1,38 @@
+// sqshrun_z_mz2_ 010|0010|1|1|op0=0|1|tsize=xx|imm3=xxx|0|0|op1=1|U=0|R=0|0|Zn=xxxx|0|Zd=xxxxx
+// SqshrunZMz2: SQSHRUN  <Zd>.<T>, { <Zn1>.<Tb>-<Zn2>.<Tb> }, #<const>
+// read together by <const>: tsize, imm3
+// register fields: Zn, Zd
+45A82006 sqshrun z6.b, {z0.h-z1.h}, #0x8
+45A8200D sqshrun z13.b, {z0.h-z1.h}, #0x8
+45A82014 sqshrun z20.b, {z0.h-z1.h}, #0x8
+45B123C0 sqshrun z0.h, {z30.s-z31.s}, #0xf
+45BA201F sqshrun z31.h, {z0.s-z1.s}, #0x6
+45AB2006 sqshrun z6.b, {z0.h-z1.h}, #0x5
+45AC2006 sqshrun z6.b, {z0.h-z1.h}, #0x4
+45AD2006 sqshrun z6.b, {z0.h-z1.h}, #0x3
+45AE2006 sqshrun z6.b, {z0.h-z1.h}, #0x2
+45AF2006 sqshrun z6.b, {z0.h-z1.h}, #0x1
+45A02006 UNDEFINED
+45A12006 UNDEFINED
+45A22006 UNDEFINED
+45A32006 UNDEFINED
+45A42006 UNDEFINED
+45A52006 UNDEFINED
+45A62006 UNDEFINED
+45A72006 UNDEFINED
+45A92000 sqshrun z0.b, {z0.h-z1.h}, #0x7
+45AA2006 sqshrun z6.b, {z0.h-z1.h}, #0x6
+45B02006 sqshrun z6.h, {z0.s-z1.s}, #0x10
+45B22006 sqshrun z6.h, {z0.s-z1.s}, #0xe
+45B32006 sqshrun z6.h, {z0.s-z1.s}, #0xd
+45B42006 sqshrun z6.h, {z0.s-z1.s}, #0xc
+45B52006 sqshrun z6.h, {z0.s-z1.s}, #0xb
+45B62006 sqshrun z6.h, {z0.s-z1.s}, #0xa
+45B72006 sqshrun z6.h, {z0.s-z1.s}, #0x9
+45B82006 sqshrun z6.h, {z0.s-z1.s}, #0x8
+45B92006 sqshrun z6.h, {z0.s-z1.s}, #0x7
+45BB2006 sqshrun z6.h, {z0.s-z1.s}, #0x5
+45BC2006 sqshrun z6.h, {z0.s-z1.s}, #0x4
+45BD2006 sqshrun z6.h, {z0.s-z1.s}, #0x3
+45BE2006 sqshrun z6.h, {z0.s-z1.s}, #0x2
+45BF2006 sqshrun z6.h, {z0.s-z1.s}, #0x1

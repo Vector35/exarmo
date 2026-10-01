@@ -1,0 +1,39 @@
+// VCGE_i_A1_D 111100111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|001|Q=0|M=x|0|Vm=xxxx
+// VcgeIA1D: VCGE{<c>}{<q>}.<dt>  {<Dd>, }<Dm>, #0
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f594ac vcge.f16 d25, d28, #0
+f3b51083 vcge.s16 d1, d3, #0
+f3b1a089 vcge.s8 d10, d9, #0
+f3b110a7 vcge.s8 d1, d23, #0
+F3F904A0 vcge.f32 d16, d16, #0x0
+F3FD94AC UNDEFINED
+F3F9F0AF vcge.s32 d31, d31, #0x0
+F3F984A8 vcge.f32 d24, d24, #0x0
+F3F544A4 vcge.f16 d20, d20, #0x0
+F3F524A2 vcge.f16 d18, d18, #0x0
+F3B504A1 vcge.f16 d0, d17, #0x0
+F3F194AC UNDEFINED
+F3FD90AC UNDEFINED
+F3B5F480 vcge.f16 d15, d0, #0x0
+F3F5048F vcge.f16 d16, d15, #0x0
+F3F5F4A0 vcge.f16 d31, d16, #0x0
+F3F594AF vcge.f16 d25, d31, #0x0
+
+// VCGE_i_A1_Q 111100111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|001|Q=1|M=x|0|Vm=xxxx
+// VcgeIA1Q: VCGE{<c>}{<q>}.<dt>  {<Qd>, }<Qm>, #0
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f160c4 vcge.s8 q11, q2, #0
+F3B504E0 vcge.f16 q0, q8, #0x0
+F3F980C8 vcge.s32 q12, q4, #0x0
+F3FDF0CF UNDEFINED
+F3F540C2 vcge.s16 q10, q1, #0x0
+F3F524C0 vcge.f16 q9, q0, #0x0
+F3F114C1 UNDEFINED
+F3B900E0 vcge.s32 q0, q8, #0x0
+F3F904C4 vcge.f32 q8, q2, #0x0
+F3BDF0CF UNDEFINED
+F3FDF4EF UNDEFINED

@@ -1,0 +1,34 @@
+// SMUSD_T1 111110110|op1=100|Rn=xxxx|Ra=1111|Rd=xxxx|000|M=0|Rm=xxxx
+// SmusdT1: SMUSD{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb4ef70f smusd r7, lr, pc (unpredictable)
+fb46f201 smusd r2, r6, r1
+fb49fe0a smusd lr, r9, r10
+fb46fc00 smusd r12, r6, r0
+fb46f307 smusd r3, r6, r7
+fb4bff0d smusd pc, r11, sp (unpredictable)
+fb46f509 smusd r5, r6, r9
+fb4bf500 smusd r5, r11, r0
+FB40F00F smusd r0, r0, pc (unpredictable)
+FB4FF707 smusd r7, pc, r7 (unpredictable)
+FB4EFE0F smusd lr, lr, pc (unpredictable)
+FB4EF70E smusd r7, lr, lr
+FB4EF70F [ne] smusdne r7, lr, pc (unpredictable)
+
+// SMUSDX_T1 111110110|op1=100|Rn=xxxx|Ra=1111|Rd=xxxx|000|M=1|Rm=xxxx
+// SmusdxT1: SMUSDX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb4bf817 smusdx r8, r11, r7
+fb4cfd1d smusdx sp, r12, sp
+fb4afa1e smusdx r10, r10, lr
+fb42f919 smusdx r9, r2, r9
+fb41fe16 smusdx lr, r1, r6
+fb4df21c smusdx r2, sp, r12
+fb43fe16 smusdx lr, r3, r6
+fb49f310 smusdx r3, r9, r0
+FB40F01F smusdx r0, r0, pc (unpredictable)
+FB4FFF17 smusdx pc, pc, r7 (unpredictable)
+FB4BF81B smusdx r8, r11, r11
+FB4BF817 [ne] smusdxne r8, r11, r7

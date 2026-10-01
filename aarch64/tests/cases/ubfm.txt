@@ -1,0 +1,201 @@
+// UBFM_32M_bitfield sf=0|opc=10|100110|N=0|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Ubfm32mBitfield: UBFM  <Wd>, <Wn>, #<immr>, #<imms>
+// LslUbfm32mBitfield: LSL  <Wd>, <Wn>, #<shift>
+// LsrUbfm32mBitfield: LSR  <Wd>, <Wn>, #<shift>
+// UbfizUbfm32mBitfield: UBFIZ  <Wd>, <Wn>, #<lsb>, #<width>
+// UbfxUbfm32mBitfield: UBFX  <Wd>, <Wn>, #<lsb>, #<width>
+// UxtbUbfm32mBitfield: UXTB  <Wd>, <Wn>
+// UxthUbfm32mBitfield: UXTH  <Wd>, <Wn>
+// read together by <width> and the LSL alias and the UBFIZ alias and the UBFX alias and the UXTB alias and the UXTH alias: immr, imms
+// register fields: Rn, Rd
+// form chosen on: immr, imms
+53007F50 lsr w16, w26, #0x0
+53167CD9 lsr w25, w6, #0x16
+53077DB6 lsr w22, w13, #0x7
+53017E54 lsr w20, w18, #0x1
+53117DA7 lsr w7, w13, #0x11
+53127E80 lsr w0, w20, #0x12
+53047C2E lsr w14, w1, #0x4
+53027DE6 lsr w6, w15, #0x2
+531F7C64 lsr w4, w3, #0x1f
+53117F57 lsr w23, w26, #0x11
+530E7CDC lsr w28, w6, #0xe
+531B7CBF lsr wzr, w5, #0x1b
+531F7D68 lsr w8, w11, #0x1f
+53087C24 lsr w4, w1, #0x8
+53057DFA lsr w26, w15, #0x5
+531E7E52 lsr w18, w18, #0x1e
+530B2801 lsl w1, w0, #0x15
+53134AF7 lsl w23, w23, #0xd
+531C6FB4 lsl w20, w29, #0x4
+531C6C42 lsl w2, w2, #0x4
+53196347 lsl w7, w26, #0x7
+5319622C lsl w12, w17, #0x7
+530B2B11 lsl w17, w24, #0x15
+531657CB lsl w11, w30, #0xa
+531245A4 lsl w4, w13, #0xe
+530922C8 lsl w8, w22, #0x17
+531D7333 lsl w19, w25, #0x3
+53103E04 lsl w4, w16, #0x10
+53081C3C lsl w28, w1, #0x18
+530204DD lsl w29, w6, #0x1e
+530206DF lsl wzr, w22, #0x1e
+530F397D lsl w29, w11, #0x11
+531F17E4 ubfiz w4, wzr, #0x1, #0x6
+531A30F8 ubfiz w24, w7, #0x6, #0xd
+531E4687 ubfiz w7, w20, #0x2, #0x12
+53130E1B ubfiz w27, w16, #0xd, #0x4
+531117A5 ubfiz w5, w29, #0xf, #0x6
+531340B3 ubfiz w19, w5, #0xd, #0x11
+530E2FFA ubfiz w26, wzr, #0x12, #0xc
+53101EC9 ubfiz w9, w22, #0x10, #0x8
+53113D00 ubfiz w0, w8, #0xf, #0x10
+530F0F90 ubfiz w16, w28, #0x11, #0x4
+531C48B7 ubfiz w23, w5, #0x4, #0x13
+53174BE0 ubfiz w0, wzr, #0x9, #0x13
+531B1AE7 ubfiz w7, w23, #0x5, #0x7
+53164448 ubfiz w8, w2, #0xa, #0x12
+5310188A ubfiz w10, w4, #0x10, #0x7
+530D0BA8 ubfiz w8, w29, #0x13, #0x3
+53035FFA ubfx w26, wzr, #0x3, #0x15
+531C7A16 ubfx w22, w16, #0x1c, #0x3
+530960C0 ubfx w0, w6, #0x9, #0x10
+53196894 ubfx w20, w4, #0x19, #0x2
+531C71D2 ubfx w18, w14, #0x1c, #0x1
+5310755A ubfx w26, w10, #0x10, #0xe
+5303298B ubfx w11, w12, #0x3, #0x8
+5302507B ubfx w27, w3, #0x2, #0x13
+53196D16 ubfx w22, w8, #0x19, #0x3
+53033A0D ubfx w13, w16, #0x3, #0xc
+5309469B ubfx w27, w20, #0x9, #0x9
+5306753A ubfx w26, w9, #0x6, #0x18
+53107ADF ubfx wzr, w22, #0x10, #0xf
+53073C61 ubfx w1, w3, #0x7, #0x9
+530B7AEF ubfx w15, w23, #0xb, #0x14
+53176B34 ubfx w20, w25, #0x17, #0x4
+53001E48 uxtb w8, w18
+53001FC9 uxtb w9, w30
+53001D42 uxtb w2, w10
+53001E75 uxtb w21, w19
+53001C1E uxtb w30, w0
+53001ED4 uxtb w20, w22
+53001E59 uxtb w25, w18
+53001F04 uxtb w4, w24
+53001CB9 uxtb w25, w5
+53001E03 uxtb w3, w16
+53001D46 uxtb w6, w10
+53001D9C uxtb w28, w12
+53001DFF uxtb wzr, w15
+53001F18 uxtb w24, w24
+53001F99 uxtb w25, w28
+53001C72 uxtb w18, w3
+53003ED6 uxth w22, w22
+53003C6C uxth w12, w3
+53003CF9 uxth w25, w7
+53003FA8 uxth w8, w29
+53003D17 uxth w23, w8
+53003D65 uxth w5, w11
+53003EAA uxth w10, w21
+53003DFB uxth w27, w15
+53003EDC uxth w28, w22
+53003CE1 uxth w1, w7
+53003E14 uxth w20, w16
+53003DA3 uxth w3, w13
+53003C5A uxth w26, w2
+53003E29 uxth w9, w17
+53003DB7 uxth w23, w13
+53003DA5 uxth w5, w13
+53000350 ubfx w16, w26, #0x0, #0x1
+533FFF50 UNDEFINED
+5300FF50 UNDEFINED
+533F0350 UNDEFINED
+53208350 UNDEFINED
+53001350 ubfx w16, w26, #0x0, #0x5
+53010350 lsl w16, w26, #0x1f
+53007C5A lsr w26, w2, #0x0
+53020350 ubfiz w16, w26, #0x1e, #0x1
+53011C1E ubfx w30, w0, #0x1, #0x7
+
+// UBFM_64M_bitfield sf=1|opc=10|100110|N=1|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Ubfm64mBitfield: UBFM  <Xd>, <Xn>, #<immr>, #<imms>
+// LslUbfm64mBitfield: LSL  <Xd>, <Xn>, #<shift>
+// LsrUbfm64mBitfield: LSR  <Xd>, <Xn>, #<shift>
+// UbfizUbfm64mBitfield: UBFIZ  <Xd>, <Xn>, #<lsb>, #<width>
+// UbfxUbfm64mBitfield: UBFX  <Xd>, <Xn>, #<lsb>, #<width>
+// read together by <width> and the LSL alias and the UBFIZ alias and the UBFX alias: immr, imms
+// register fields: Rn, Rd
+// form chosen on: immr, imms
+D359FD4B lsr x11, x10, #0x19
+D364FE56 lsr x22, x18, #0x24
+D372FC59 lsr x25, x2, #0x32
+D36EFC97 lsr x23, x4, #0x2e
+D357FCFC lsr x28, x7, #0x17
+D35EFEB4 lsr x20, x21, #0x1e
+D347FDDE lsr lr, x14, #0x7
+D35CFEB2 lsr x18, x21, #0x1c
+D34DFF89 lsr x9, x28, #0xd
+D35AFE0E lsr x14, x16, #0x1a
+D37FFE23 lsr x3, x17, #0x3f
+D36EFC1F lsr xzr, x0, #0x2e
+D371FFD3 lsr x19, lr, #0x31
+D36FFE8A lsr x10, x20, #0x2f
+D35EFCDF lsr xzr, x6, #0x1e
+D359FF7B lsr x27, x27, #0x19
+D36EB5F3 lsl x19, x15, #0x12
+D35D7026 lsl x6, x1, #0x23
+D3440F59 lsl x25, x26, #0x3c
+D35A6795 lsl x21, x28, #0x26
+D3648FB3 lsl x19, fp, #0x1c
+D3492184 lsl x4, x12, #0x37
+D372C474 lsl x20, x3, #0xe
+D377D873 lsl x19, x3, #0x9
+D36DB1C3 lsl x3, x14, #0x13
+D37AE4B1 lsl x17, x5, #0x6
+D34F3A27 lsl x7, x17, #0x31
+D37BE8A5 lsl x5, x5, #0x5
+D37DF276 lsl x22, x19, #0x3
+D3638846 lsl x6, x2, #0x1d
+D35E74C7 lsl x7, x6, #0x22
+D3492013 lsl x19, x0, #0x37
+D36D0D80 ubfiz x0, x12, #0x13, #0x4
+D36B53DA ubfiz x26, lr, #0x15, #0x15
+D37512C4 ubfiz x4, x22, #0xb, #0x5
+D363591B ubfiz x27, x8, #0x1d, #0x17
+D37E79B0 ubfiz x16, x13, #0x2, #0x1f
+D3777D22 ubfiz x2, x9, #0x9, #0x20
+D35C38C5 ubfiz x5, x6, #0x24, #0xf
+D3553423 ubfiz x3, x1, #0x2b, #0xe
+D3521F8B ubfiz x11, x28, #0x2e, #0x8
+D35F410D ubfiz x13, x8, #0x21, #0x11
+D36250DD ubfiz fp, x6, #0x1e, #0x15
+D3666004 ubfiz x4, x0, #0x1a, #0x19
+D3687887 ubfiz x7, x4, #0x18, #0x1f
+D35A4F24 ubfiz x4, x25, #0x26, #0x14
+D36533AA ubfiz x10, fp, #0x1b, #0xd
+D35D49CB ubfiz x11, x14, #0x23, #0x13
+D34C4EE0 ubfx x0, x23, #0xc, #0x8
+D364D76D ubfx x13, x27, #0x24, #0x12
+D347CFEB ubfx x11, xzr, #0x7, #0x2d
+D348EDD7 ubfx x23, x14, #0x8, #0x34
+D359D2A8 ubfx x8, x21, #0x19, #0x1c
+D370DEE9 ubfx x9, x23, #0x30, #0x8
+D3453CAB ubfx x11, x5, #0x5, #0xb
+D354EB9D ubfx fp, x28, #0x14, #0x27
+D3488DE0 ubfx x0, x15, #0x8, #0x1c
+D34A4545 ubfx x5, x10, #0xa, #0x8
+D372EE61 ubfx x1, x19, #0x32, #0xa
+D34BF4E3 ubfx x3, x7, #0xb, #0x33
+D375E15B ubfx x27, x10, #0x35, #0x4
+D3519DA8 ubfx x8, x13, #0x11, #0x17
+D34DE520 ubfx x0, x9, #0xd, #0x2d
+D3539E31 ubfx x17, x17, #0x13, #0x15
+D340014B ubfx x11, x10, #0x0, #0x1
+D340FD4B lsr x11, x10, #0x0
+D37F014B ubfiz x11, x10, #0x1, #0x1
+D360814B ubfx x11, x10, #0x20, #0x1
+D350094B ubfiz x11, x10, #0x30, #0x3
+D342054B lsl x11, x10, #0x3e
+D341FD4B lsr x11, x10, #0x1
+D341014B lsl x11, x10, #0x3f
+D3407D4B ubfx x11, x10, #0x0, #0x20
+D342014B ubfiz x11, x10, #0x3e, #0x1

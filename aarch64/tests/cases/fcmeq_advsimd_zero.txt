@@ -1,0 +1,93 @@
+// FCMEQ_asimdmisc_FZ 0|Q=x|U=0|0|111|0|1|sz=x|10000|0110|op=1|10|Rn=xxxxx|Rd=xxxxx
+// FcmeqAsimdmiscFz: FCMEQ  <Vd>.<T>, <Vn>.<T>, #0.0
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+4EE0D86F fcmeq v15.2d, v3.2d, #0.0
+4EA0DA16 fcmeq v22.4s, v16.4s, #0.0
+0EA0DB20 fcmeq v0.2s, v25.2s, #0.0
+4EE0DA54 fcmeq v20.2d, v18.2d, #0.0
+4EA0DB92 fcmeq v18.4s, v28.4s, #0.0
+4EE0DAA5 fcmeq v5.2d, v21.2d, #0.0
+4EE0DB37 fcmeq v23.2d, v25.2d, #0.0
+0EA0DB8E fcmeq v14.2s, v28.2s, #0.0
+4EA0DAFA fcmeq v26.4s, v23.4s, #0.0
+4EA0DBFF fcmeq v31.4s, v31.4s, #0.0
+4EA0D90C fcmeq v12.4s, v8.4s, #0.0
+0EA0D908 fcmeq v8.2s, v8.2s, #0.0
+4EE0D8D1 fcmeq v17.2d, v6.2d, #0.0
+0EA0D93C fcmeq v28.2s, v9.2s, #0.0
+0EA0D829 fcmeq v9.2s, v1.2s, #0.0
+4EE0DBFE fcmeq v30.2d, v31.2d, #0.0
+4EE0D80F fcmeq v15.2d, v0.2d, #0.0
+0EE0D86F UNDEFINED
+
+// FCMEQ_asimdmiscfp16_FZ 0|Q=x|U=0|0|111|0|a=1|1111|00|0110|op=1|10|Rn=xxxxx|Rd=xxxxx
+// FcmeqAsimdmiscfp16Fz: FCMEQ  <Vd>.<T>, <Vn>.<T>, #0.0
+// register fields: Rn, Rd
+4EF8D92F fcmeq v15.8h, v9.8h, #0.0
+4EF8DA1B fcmeq v27.8h, v16.8h, #0.0
+4EF8DBF7 fcmeq v23.8h, v31.8h, #0.0
+4EF8DAEA fcmeq v10.8h, v23.8h, #0.0
+4EF8DBCD fcmeq v13.8h, v30.8h, #0.0
+0EF8DA3F fcmeq v31.4h, v17.4h, #0.0
+0EF8DB20 fcmeq v0.4h, v25.4h, #0.0
+4EF8DB1E fcmeq v30.8h, v24.8h, #0.0
+0EF8D893 fcmeq v19.4h, v4.4h, #0.0
+4EF8DA2D fcmeq v13.8h, v17.8h, #0.0
+4EF8DBC1 fcmeq v1.8h, v30.8h, #0.0
+0EF8DAD9 fcmeq v25.4h, v22.4h, #0.0
+4EF8D911 fcmeq v17.8h, v8.8h, #0.0
+0EF8DB3D fcmeq v29.4h, v25.4h, #0.0
+4EF8D8F6 fcmeq v22.8h, v7.8h, #0.0
+4EF8DB21 fcmeq v1.8h, v25.8h, #0.0
+4EF8D80F fcmeq v15.8h, v0.8h, #0.0
+4EF8D929 fcmeq v9.8h, v9.8h, #0.0
+
+// FCMEQ_asisdmisc_FZ 01|U=0|1|111|0|1|sz=x|10000|0110|op=1|10|Rn=xxxxx|Rd=xxxxx
+// FcmeqAsisdmiscFz: FCMEQ  <V><d>, <V><n>, #0.0
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+5EA0DAE9 fcmeq s9, s23, #0.0
+5EA0DAED fcmeq s13, s23, #0.0
+5EA0D96D fcmeq s13, s11, #0.0
+5EA0DBA7 fcmeq s7, s29, #0.0
+5EA0D866 fcmeq s6, s3, #0.0
+5EE0DB79 fcmeq d25, d27, #0.0
+5EA0DBA3 fcmeq s3, s29, #0.0
+5EE0D92B fcmeq d11, d9, #0.0
+5EA0DAF5 fcmeq s21, s23, #0.0
+5EE0D8DB fcmeq d27, d6, #0.0
+5EE0D8BD fcmeq d29, d5, #0.0
+5EE0D9A3 fcmeq d3, d13, #0.0
+5EE0DAF2 fcmeq d18, d23, #0.0
+5EE0DBC6 fcmeq d6, d30, #0.0
+5EE0D98D fcmeq d13, d12, #0.0
+5EA0DA5F fcmeq s31, s18, #0.0
+5EA0D800 fcmeq s0, s0, #0.0
+5EA0DBE9 fcmeq s9, s31, #0.0
+5EE0DAE0 fcmeq d0, d23, #0.0
+5EE0DAFF fcmeq d31, d23, #0.0
+5EE0D809 fcmeq d9, d0, #0.0
+5EE0DBE9 fcmeq d9, d31, #0.0
+
+// FCMEQ_asisdmiscfp16_FZ 01|U=0|1|111|0|a=1|1111|00|0110|op=1|10|Rn=xxxxx|Rd=xxxxx
+// FcmeqAsisdmiscfp16Fz: FCMEQ  <Hd>, <Hn>, #0.0
+// register fields: Rn, Rd
+5EF8D8F0 fcmeq h16, h7, #0.0
+5EF8D8A5 fcmeq h5, h5, #0.0
+5EF8D968 fcmeq h8, h11, #0.0
+5EF8DB2B fcmeq h11, h25, #0.0
+5EF8DB83 fcmeq h3, h28, #0.0
+5EF8DB59 fcmeq h25, h26, #0.0
+5EF8D982 fcmeq h2, h12, #0.0
+5EF8D83D fcmeq h29, h1, #0.0
+5EF8D9F9 fcmeq h25, h15, #0.0
+5EF8D858 fcmeq h24, h2, #0.0
+5EF8D87E fcmeq h30, h3, #0.0
+5EF8DA88 fcmeq h8, h20, #0.0
+5EF8DA1B fcmeq h27, h16, #0.0
+5EF8DB20 fcmeq h0, h25, #0.0
+5EF8DB92 fcmeq h18, h28, #0.0
+5EF8D805 fcmeq h5, h0, #0.0
+5EF8DBFF fcmeq h31, h31, #0.0

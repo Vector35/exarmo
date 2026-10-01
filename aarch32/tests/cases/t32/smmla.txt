@@ -1,0 +1,25 @@
+// SMMLA_T1 111110110|op1=101|Rn=xxxx|Ra=xxxx|Rd=xxxx|000|R=0|Rm=xxxx
+// SmmlaT1: SMMLA{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+FB500000 smmla r0, r0, r0, r0
+FB5F0F0F smmla pc, pc, pc, r0 (unpredictable)
+FB500000 [ne] smmlane r0, r0, r0, r0
+FB512304 smmla r3, r1, r4, r2
+
+// SMMLAR_T1 111110110|op1=101|Rn=xxxx|Ra=xxxx|Rd=xxxx|000|R=1|Rm=xxxx
+// SmmlarT1: SMMLAR{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+fb508c16 smmlar r12, r0, r6, r8
+fb51cf1f smmlar pc, r1, pc, r12 (unpredictable)
+fb56ee1f smmlar lr, r6, pc, lr (unpredictable)
+fb55e618 smmlar r6, r5, r8, lr
+fb5d871a smmlar r7, sp, r10, r8
+fb52211d smmlar r1, r2, sp, r2
+fb591915 smmlar r9, r9, r5, r1
+fb54b91a smmlar r9, r4, r10, r11
+FB5F0010 smmlar r0, pc, r0, r0 (unpredictable)
+FB508C10 smmlar r12, r0, r0, r8
+FB508C18 smmlar r12, r0, r8, r8
+FB508C16 [ne] smmlarne r12, r0, r6, r8

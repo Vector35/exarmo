@@ -1,0 +1,15 @@
+// SEL_T1 111|11010|1|op1=010|Rn=xxxx|1111|Rd=xxxx|10|op2=00|Rm=xxxx
+// SelT1: SEL{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+faa6f081 sel r0, r6, r1
+faa2fe89 sel lr, r2, r9
+faabf08d sel r0, r11, sp
+faafff80 sel pc, pc, r0 (unpredictable)
+faa6f582 sel r5, r6, r2
+faaafe8f sel lr, r10, pc (unpredictable)
+faa1f584 sel r5, r1, r4
+faa3fb81 sel r11, r3, r1
+FAA0F080 sel r0, r0, r0
+FAA6F086 sel r0, r6, r6
+FAA6F081 [ne] selne r0, r6, r1

@@ -1,0 +1,87 @@
+// ORN_32_log_shift sf=0|opc=01|01010|shift=xx|N=1|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Orn32LogShift: ORN  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// MvnOrn32LogShift: MVN  <Wd>, <Wm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+// form chosen on: Rn
+2AAB27E2 mvn w2, w11, asr #0x9
+2A3C07FB mvn w27, w28, lsl #0x1
+2A3D77F6 mvn w22, w29, lsl #0x1d
+2AAF6BE8 mvn w8, w15, asr #0x1a
+2AF117E0 mvn w0, w17, ror #0x5
+2ABC3BFC mvn w28, w28, asr #0xe
+2AE91FF8 mvn w24, w9, ror #0x7
+2A235FE7 mvn w7, w3, lsl #0x17
+2A3E7BF5 mvn w21, w30, lsl #0x1e
+2A6027ED mvn w13, w0, lsr #0x9
+2A3253F0 mvn w16, w18, lsl #0x14
+2A206FE7 mvn w7, w0, lsl #0x1b
+2AB743EB mvn w11, w23, asr #0x10
+2AB32BFC mvn w28, w19, asr #0xa
+2A2133F6 mvn w22, w1, lsl #0xc
+2A6453E7 mvn w7, w4, lsr #0x14
+2AA61521 orn w1, w9, w6, asr #0x5
+2AB546BC orn w28, w21, w21, asr #0x11
+2AE90F23 orn w3, w25, w9, ror #0x3
+2AAC7018 orn w24, w0, w12, asr #0x1c
+2A665E0F orn w15, w16, w6, lsr #0x17
+2A707816 orn w22, w0, w16, lsr #0x1e
+2A7A58F8 orn w24, w7, w26, lsr #0x16
+2A7E6CC7 orn w7, w6, w30, lsr #0x1b
+2A6A3AD5 orn w21, w22, w10, lsr #0xe
+2A2E6748 orn w8, w26, w14, lsl #0x19
+2AB9202D orn w13, w1, w25, asr #0x8
+2AFF159B orn w27, w12, wzr, ror #0x5
+2A61077D orn w29, w27, w1, lsr #0x1
+2A792184 orn w4, w12, w25, lsr #0x8
+2AA661E1 orn w1, w15, w6, asr #0x18
+2A635CE0 orn w0, w7, w3, lsr #0x17
+2AAB03FF mvn wzr, w11, asr #0x0
+2AABFFE2 UNDEFINED
+2AAB83E2 UNDEFINED
+2AAB13E2 mvn w2, w11, asr #0x4
+2AAB0BE2 mvn w2, w11, asr #0x2
+2A206DE7 orn w7, w15, w0, lsl #0x1b
+
+// ORN_64_log_shift sf=1|opc=01|01010|shift=xx|N=1|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Orn64LogShift: ORN  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// MvnOrn64LogShift: MVN  <Xd>, <Xm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+// form chosen on: Rn
+AA731FFA mvn x26, x19, lsr #0x7
+AAA273EF mvn x15, x2, asr #0x1c
+AAF803F8 mvn x24, x24, ror #0x0
+AA2567EF mvn x15, x5, lsl #0x19
+AAE01BEB mvn x11, x0, ror #0x6
+AA76FBF7 mvn x23, x22, lsr #0x3e
+AAF69FEC mvn x12, x22, ror #0x27
+AAFFEBE8 mvn x8, xzr, ror #0x3a
+AAF4DFF0 mvn x16, x20, ror #0x37
+AA7D83E7 mvn x7, fp, lsr #0x20
+AA6717FF mvn xzr, x7, lsr #0x5
+AAB477EF mvn x15, x20, asr #0x1d
+AABFE3EB mvn x11, xzr, asr #0x38
+AA38B7EB mvn x11, x24, lsl #0x2d
+AAFEE3E3 mvn x3, lr, ror #0x38
+AAE393ED mvn x13, x3, ror #0x24
+AAEC661C orn x28, x16, x12, ror #0x19
+AA7FC128 orn x8, x9, xzr, lsr #0x30
+AA202EA2 orn x2, x21, x0, lsl #0xb
+AA24D4C3 orn x3, x6, x4, lsl #0x35
+AA2EEA24 orn x4, x17, x14, lsl #0x3a
+AA3B4CAD orn x13, x5, x27, lsl #0x13
+AA285AF2 orn x18, x23, x8, lsl #0x16
+AA2F69C3 orn x3, x14, x15, lsl #0x1a
+AA25EF86 orn x6, x28, x5, lsl #0x3b
+AAE551DE orn lr, x14, x5, ror #0x14
+AA32FFDA orn x26, lr, x18, lsl #0x3f
+AA286F82 orn x2, x28, x8, lsl #0x1b
+AA604386 orn x6, x28, x0, lsr #0x10
+AA31CEA2 orn x2, x21, x17, lsl #0x33
+AA391B26 orn x6, x25, x25, lsl #0x6
+AAB1D0EA orn x10, x7, x17, asr #0x34
+AA731C00 orn x0, x0, x19, lsr #0x7
+AA7323FA mvn x26, x19, lsr #0x8
+AA7313FA mvn x26, x19, lsr #0x4
+AA730BFA mvn x26, x19, lsr #0x2
+AA7307FA mvn x26, x19, lsr #0x1
+AA2565EF orn x15, x15, x5, lsl #0x19

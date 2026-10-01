@@ -1,0 +1,9 @@
+// TSB_A1 cond=xxxx|00|1|10|R=0|10|imm4=0000|(1)(1)(1)(1)|imm12=(0)(0)(0)(0)00010010
+// TsbA1: TSB{<c>}{<q>}  CSYNC
+03200012 tsbeq csync (unpredictable)
+8320FF12 tsbhi csync (unpredictable)
+43208812 tsbmi csync (unpredictable)
+23204412 tsbcs csync (unpredictable)
+13202212 tsbne csync (unpredictable)
+03201112 tsbeq csync (unpredictable)
+0320F012 tsbeq csync (unpredictable)

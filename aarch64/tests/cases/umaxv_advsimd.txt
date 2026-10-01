@@ -1,0 +1,31 @@
+// UMAXV_asimdall_only 0|Q=x|U=1|0|111|0|size=xx|11000|op=0|1010|10|Rn=xxxxx|Rd=xxxxx
+// UmaxvAsimdallOnly: UMAXV  <V><d>, <Vn>.<T>
+// read together by <d>: size, Rd
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+2E70A829 umaxv h9, v1.4h
+6E30AB58 umaxv b24, v26.16b
+6E30A9FF umaxv b31, v15.16b
+6E70ABE1 umaxv h1, v31.8h
+2E70A990 umaxv h16, v12.4h
+2E70A98C umaxv h12, v12.4h
+6EB0A952 umaxv s18, v10.4s
+6EB0A9FC umaxv s28, v15.4s
+2E70A965 umaxv h5, v11.4h
+6E70A946 umaxv h6, v10.8h
+6E30AA28 umaxv b8, v17.16b
+2E30AA28 umaxv b8, v17.8b
+6E70ABAF umaxv h15, v29.8h
+2E30A9A6 umaxv b6, v13.8b
+6E70A948 umaxv h8, v10.8h
+6E30A992 umaxv b18, v12.16b
+2E70A800 umaxv h0, v0.4h
+2EF0A829 UNDEFINED
+2EB0A829 UNDEFINED
+6EF0A829 UNDEFINED
+2E30A820 umaxv b0, v1.8b
+2E70A83F umaxv h31, v1.4h
+6EB0AB40 umaxv s0, v26.4s
+6EB0AB5F umaxv s31, v26.4s
+2EF0A820 UNDEFINED
+2EF0A83F UNDEFINED

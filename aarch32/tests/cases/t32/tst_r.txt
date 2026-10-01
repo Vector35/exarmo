@@ -1,0 +1,80 @@
+// TST_r_T1 010000|op=1000|Rm=xxx|Rn=xxx
+// TstRT1: TST{<c>}{<q>}  <Rn>, <Rm>
+// register fields: Rm, Rn
+// IT state read: condition
+4200 tst r0, r0
+4201 tst r1, r0
+4202 tst r2, r0
+4203 tst r3, r0
+4204 tst r4, r0
+4205 tst r5, r0
+4206 tst r6, r0
+4207 tst r7, r0
+4208 tst r0, r1
+4210 tst r0, r2
+4218 tst r0, r3
+4220 tst r0, r4
+4228 tst r0, r5
+4230 tst r0, r6
+4238 tst r0, r7
+4200 [ne] tstne r0, r0
+
+// TST_r_T2 1110101|op1=0000|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=1111|imm2=xx|stype=xx|Rm=xxxx
+// TstRT2: TST{<c>}{<q>}  <Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rm
+// IT state read: condition
+ea1f6f26 tst pc, r6, asr #24 (unpredictable)
+ea1bff14 tst r11, r4, lsr #28 (unpredictable)
+ea1fef3c tst pc, r12, ror #24 (unpredictable)
+ea155f1f tst r5, pc, lsr #20 (unpredictable)
+ea1c2f33 tst r12, r3, ror #8
+ea11dfdc tst r1, r12, lsr #23 (unpredictable)
+ea19df93 tst r9, r3, lsr #22 (unpredictable)
+ea14ef07 tst r4, r7, lsl #24 (unpredictable)
+EA100F60 tst r0, r0, asr #0x1
+EA1F1F2F tst pc, pc, asr #0x4 (unpredictable)
+EA1F3F26 tst pc, r6, asr #0xc (unpredictable)
+EA1F4F26 tst pc, r6, asr #0x10 (unpredictable)
+EA1F0F26 tst pc, r6, asr #0x20 (unpredictable)
+EA1F0F66 tst pc, r6, asr #0x1 (unpredictable)
+EA1F0FA6 tst pc, r6, asr #0x2 (unpredictable)
+EA1F0FE6 tst pc, r6, asr #0x3 (unpredictable)
+EA1F1F26 tst pc, r6, asr #0x4 (unpredictable)
+EA1F1F66 tst pc, r6, asr #0x5 (unpredictable)
+EA1F1FA6 tst pc, r6, asr #0x6 (unpredictable)
+EA1F1FE6 tst pc, r6, asr #0x7 (unpredictable)
+EA1F2F66 tst pc, r6, asr #0x9 (unpredictable)
+EA1F2FA6 tst pc, r6, asr #0xa (unpredictable)
+EA1F2FE6 tst pc, r6, asr #0xb (unpredictable)
+EA1F3F66 tst pc, r6, asr #0xd (unpredictable)
+EA1F3FA6 tst pc, r6, asr #0xe (unpredictable)
+EA1F3FE6 tst pc, r6, asr #0xf (unpredictable)
+EA1F4F66 tst pc, r6, asr #0x11 (unpredictable)
+EA1F4FA6 tst pc, r6, asr #0x12 (unpredictable)
+EA1F4FE6 tst pc, r6, asr #0x13 (unpredictable)
+EA1F5F66 tst pc, r6, asr #0x15 (unpredictable)
+EA1F6F66 tst pc, r6, asr #0x19 (unpredictable)
+EA1F6FA6 tst pc, r6, asr #0x1a (unpredictable)
+EA1F6FE6 tst pc, r6, asr #0x1b (unpredictable)
+EA1F7F66 tst pc, r6, asr #0x1d (unpredictable)
+EA1F7FA6 tst pc, r6, asr #0x1e (unpredictable)
+EA1F7FE6 tst pc, r6, asr #0x1f (unpredictable)
+EA1F6F26 [ne] tstne pc, r6, asr #0x18 (unpredictable)
+
+// TST_r_T2_RRX 1110101|op1=0000|S=1|Rn=xxxx|(0)|imm3=000|Rd=1111|imm2=00|stype=11|Rm=xxxx
+// TstRT2Rrx: TST{<c>}{<q>}  <Rn>, <Rm>, RRX
+// register fields: Rn, Rm
+// IT state read: condition
+ea1e8f37 tst lr, r7, rrx (unpredictable)
+ea180f3a tst r8, r10, rrx
+ea1c0f37 tst r12, r7, rrx
+ea1a8f3f tst r10, pc, rrx (unpredictable)
+ea1d0f35 tst sp, r5, rrx
+ea170f36 tst r7, r6, rrx
+ea188f3e tst r8, lr, rrx (unpredictable)
+ea190f32 tst r9, r2, rrx
+EA108F30 tst r0, r0, rrx (unpredictable)
+EA1F8F37 tst pc, r7, rrx (unpredictable)
+EA1E8F3E tst lr, lr, rrx (unpredictable)
+EA1E8F37 [ne] tstne lr, r7, rrx (unpredictable)

@@ -1,0 +1,37 @@
+// VMOV_r_A2_D cond=xxxx|11101|D=x|11|o1=0|opc2=000|Vd=xxxx|10|size=11|o3=0|1|M=x|0|Vm=xxxx
+// VmovRA2D: VMOV{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+7ef02b41 vmovvc.f64 d18, d1
+ceb03b45 vmovgt.f64 d3, d5
+3ef0fb42 vmovlo.f64 d31, d2
+6eb03b60 vmovvs.f64 d3, d16
+5eb02b44 vmovpl.f64 d2, d4
+7eb00b66 vmovvc.f64 d0, d22
+6eb07b6e vmovvs.f64 d7, d30
+2ef09b46 vmovhs.f64 d25, d6
+0EF08B4F vmoveq.f64 d24, d15
+FEF02B41 UNALLOCATED
+8EF04B48 vmovhi.f64 d20, d8
+4EF01B40 vmovmi.f64 d17, d0
+1EB0FB4F vmovne.f64 d15, d15
+7EF00B6F vmovvc.f64 d16, d31
+
+// VMOV_r_A2_S cond=xxxx|11101|D=x|11|o1=0|opc2=000|Vd=xxxx|10|size=10|o3=0|1|M=x|0|Vm=xxxx
+// VmovRA2S: VMOV{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+4ef0ca65 vmovmi.f32 s25, s11
+1eb01a41 vmovne.f32 s2, s2
+3ef0fa6c vmovlo.f32 s31, s25
+beb02a43 vmovlt.f32 s4, s6
+7eb08a41 vmovvc.f32 s16, s2
+ceb09a4d vmovgt.f32 s18, s26
+4ef02a60 vmovmi.f32 s5, s1
+3ef0da40 vmovlo.f32 s27, s0
+0EF00A6F vmoveq.f32 s1, s31
+8EF04A68 vmovhi.f32 s9, s17
+2EB00A64 vmovcs.f32 s0, s9
+4EB0FA62 vmovmi.f32 s30, s5
+4EF00A4F vmovmi.f32 s1, s30
+4EF0CA6F vmovmi.f32 s25, s31

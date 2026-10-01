@@ -1,0 +1,45 @@
+// CMLT_asimdmisc_Z 0|Q=x|U=0|0|111|0|size=xx|10000|opcode=01010|10|Rn=xxxxx|Rd=xxxxx
+// CmltAsimdmiscZ: CMLT  <Vd>.<T>, <Vn>.<T>, #0
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+0E60AAF2 cmlt v18.4h, v23.4h, #0x0
+0E60AB81 cmlt v1.4h, v28.4h, #0x0
+0E20AAE2 cmlt v2.8b, v23.8b, #0x0
+0EA0A88E cmlt v14.2s, v4.2s, #0x0
+4E20A9C4 cmlt v4.16b, v14.16b, #0x0
+4E60A8C3 cmlt v3.8h, v6.8h, #0x0
+4EA0ABDB cmlt v27.4s, v30.4s, #0x0
+4EA0AA79 cmlt v25.4s, v19.4s, #0x0
+0E60A9E8 cmlt v8.4h, v15.4h, #0x0
+0E60AA92 cmlt v18.4h, v20.4h, #0x0
+0EA0AA71 cmlt v17.2s, v19.2s, #0x0
+0E20ABCE cmlt v14.8b, v30.8b, #0x0
+0E20A945 cmlt v5.8b, v10.8b, #0x0
+4EE0A8B8 cmlt v24.2d, v5.2d, #0x0
+4EE0A8E1 cmlt v1.2d, v7.2d, #0x0
+4E20AA2A cmlt v10.16b, v17.16b, #0x0
+0E60A800 cmlt v0.4h, v0.4h, #0x0
+0E60ABFF cmlt v31.4h, v31.4h, #0x0
+0EE0AAF2 UNDEFINED
+
+// CMLT_asisdmisc_Z 01|U=0|1|111|0|size=11|10000|opcode=01010|10|Rn=xxxxx|Rd=xxxxx
+// CmltAsisdmiscZ: CMLT  <d>, <n>, #0
+// register fields: Rn, Rd
+5EE0ABAA cmlt d10, d29, #0x0
+5EE0A9EC cmlt d12, d15, #0x0
+5EE0A82E cmlt d14, d1, #0x0
+5EE0A9F8 cmlt d24, d15, #0x0
+5EE0A892 cmlt d18, d4, #0x0
+5EE0A86B cmlt d11, d3, #0x0
+5EE0A913 cmlt d19, d8, #0x0
+5EE0ABF3 cmlt d19, d31, #0x0
+5EE0A9ED cmlt d13, d15, #0x0
+5EE0A871 cmlt d17, d3, #0x0
+5EE0ABAE cmlt d14, d29, #0x0
+5EE0AA15 cmlt d21, d16, #0x0
+5EE0AB24 cmlt d4, d25, #0x0
+5EE0A95C cmlt d28, d10, #0x0
+5EE0A90A cmlt d10, d8, #0x0
+5EE0A939 cmlt d25, d9, #0x0
+5EE0A800 cmlt d0, d0, #0x0
+5EE0ABBF cmlt d31, d29, #0x0

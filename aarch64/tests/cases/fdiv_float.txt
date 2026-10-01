@@ -1,0 +1,66 @@
+// FDIV_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|opcode=0001|10|Rn=xxxxx|Rd=xxxxx
+// FdivDFloatdp2: FDIV  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E7A181E fdiv d30, d0, d26
+1E6A18A1 fdiv d1, d5, d10
+1E69186B fdiv d11, d3, d9
+1E61199A fdiv d26, d12, d1
+1E621848 fdiv d8, d2, d2
+1E6418BE fdiv d30, d5, d4
+1E671A08 fdiv d8, d16, d7
+1E6B1B0D fdiv d13, d24, d11
+1E651824 fdiv d4, d1, d5
+1E6E1BA1 fdiv d1, d29, d14
+1E6618C5 fdiv d5, d6, d6
+1E6518A4 fdiv d4, d5, d5
+1E711BD2 fdiv d18, d30, d17
+1E761898 fdiv d24, d4, d22
+1E711914 fdiv d20, d8, d17
+1E6C1B8B fdiv d11, d28, d12
+1E601BE0 fdiv d0, d31, d0
+1E7F181F fdiv d31, d0, d31
+1E7A1800 fdiv d0, d0, d26
+
+// FDIV_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|opcode=0001|10|Rn=xxxxx|Rd=xxxxx
+// FdivHFloatdp2: FDIV  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EF91B2B fdiv h11, h25, h25
+1EFB1A49 fdiv h9, h18, h27
+1EE91847 fdiv h7, h2, h9
+1EF01856 fdiv h22, h2, h16
+1EE61957 fdiv h23, h10, h6
+1EE61B63 fdiv h3, h27, h6
+1EF518FF fdiv h31, h7, h21
+1EF51B95 fdiv h21, h28, h21
+1EF91B87 fdiv h7, h28, h25
+1EF71972 fdiv h18, h11, h23
+1EEE185C fdiv h28, h2, h14
+1EEC1B78 fdiv h24, h27, h12
+1EE51911 fdiv h17, h8, h5
+1EF6191F fdiv h31, h8, h22
+1EFA196E fdiv h14, h11, h26
+1EE81A15 fdiv h21, h16, h8
+1EE01800 fdiv h0, h0, h0
+1EFF1BEB fdiv h11, h31, h31
+
+// FDIV_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|opcode=0001|10|Rn=xxxxx|Rd=xxxxx
+// FdivSFloatdp2: FDIV  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E331970 fdiv s16, s11, s19
+1E3618C3 fdiv s3, s6, s22
+1E2F197F fdiv s31, s11, s15
+1E341B67 fdiv s7, s27, s20
+1E3F1933 fdiv s19, s9, s31
+1E2E1A25 fdiv s5, s17, s14
+1E381B61 fdiv s1, s27, s24
+1E24183C fdiv s28, s1, s4
+1E3118C5 fdiv s5, s6, s17
+1E2C1AC3 fdiv s3, s22, s12
+1E2D1967 fdiv s7, s11, s13
+1E231AE5 fdiv s5, s23, s3
+1E351829 fdiv s9, s1, s21
+1E3B1A32 fdiv s18, s17, s27
+1E321BBC fdiv s28, s29, s18
+1E2B1B38 fdiv s24, s25, s11
+1E201800 fdiv s0, s0, s0
+1E331BF0 fdiv s16, s31, s19

@@ -1,0 +1,47 @@
+// VTBL_T1 111111111|D=x|11|Vn=xxxx|Vd=xxxx|10|len=xx|N=x|op=0|M=x|0|Vm=xxxx
+// VtblT1: VTBL{<c>}{<q>}.8  <Dd>, <list>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fffd9a22 vtbl.8 d25, {d13, d14, d15}, d18
+fff2c8ac vtbl.8 d28, {d18}, d28
+fff6cb01 vtbl.8 d28, {d6, d7, d8, d9}, d1
+fff19926 vtbl.8 d25, {d1, d2}, d22
+fff6d9a5 vtbl.8 d29, {d22, d23}, d21
+fff1da2c vtbl.8 d29, {d1, d2, d3}, d28
+ffb23bac vtbl.8 d3, {d18, d19, d20, d21}, d28
+ffbed9a1 vtbl.8 d13, {d30, d31}, d17
+FFF00A20 vtbl.8 d16, {d0, d1, d2}, d16
+FFFFFA2F vtbl.8 d31, {d15, d16, d17}, d31
+FFF88A28 vtbl.8 d24, {d8, d9, d10}, d24
+FFF44A24 vtbl.8 d20, {d4, d5, d6}, d20
+FFFD2A00 vtbl.8 d18, {d13, d14, d15}, d0
+FFFD1A0F vtbl.8 d17, {d13, d14, d15}, d15
+FFBD0A20 vtbl.8 d0, {d13, d14, d15}, d16
+FFBDFA2F vtbl.8 d15, {d13, d14, d15}, d31
+FFFD0A22 vtbl.8 d16, {d13, d14, d15}, d18
+FFFDFA22 vtbl.8 d31, {d13, d14, d15}, d18
+FFFD9A22 [ne] vtblne.8 d25, {d13, d14, d15}, d18
+
+// VTBX_T1 111111111|D=x|11|Vn=xxxx|Vd=xxxx|10|len=xx|N=x|op=1|M=x|0|Vm=xxxx
+// VtbxT1: VTBX{<c>}{<q>}.8  <Dd>, <list>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fff8a96e vtbx.8 d26, {d8, d9}, d30
+ffb2f947 vtbx.8 d15, {d2, d3}, d7
+fffdcbc9 UNPREDICTABLE
+fffafacf vtbx.8 d31, {d26, d27, d28}, d15
+fff3ba6b vtbx.8 d27, {d3, d4, d5}, d27
+ffbc98c8 vtbx.8 d9, {d28}, d8
+fff169cf vtbx.8 d22, {d17, d18}, d15
+fff11ae9 vtbx.8 d17, {d17, d18, d19}, d25
+FFF00960 vtbx.8 d16, {d0, d1}, d16
+FFFF8964 vtbx.8 d24, {d15, d16}, d20
+FFF44962 vtbx.8 d20, {d4, d5}, d18
+FFF82961 vtbx.8 d18, {d8, d9}, d17
+FFB80940 vtbx.8 d0, {d8, d9}, d0
+FFF80960 vtbx.8 d16, {d8, d9}, d16
+FFF8A96F vtbx.8 d26, {d8, d9}, d31
+FFF8A96E [ne] vtbxne.8 d26, {d8, d9}, d30
+FFF8AB6E vtbx.8 d26, {d8, d9, d10, d11}, d30

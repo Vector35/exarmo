@@ -1,0 +1,14 @@
+// fdot_z32_zz8z8i_ 011|0010|0|0|op=1|1|i2=xx|Zm=xxx|01|0|0|opc2=01|Zn=xxxxx|Zda=xxxxx
+// FdotZ32Zz8z8i: FDOT  <Zda>.S, <Zn>.B, <Zm>.B[<imm>]
+// register fields: Zm, Zn, Zda
+64604403 fdot z3.s, z0.b, z0.b[0]
+6460440A fdot z10.s, z0.b, z0.b[0]
+64604411 fdot z17.s, z0.b, z0.b[0]
+646947E0 fdot z0.s, z31.b, z1.b[1]
+6472441F fdot z31.s, z0.b, z2.b[2]
+647B4403 fdot z3.s, z0.b, z3.b[3]
+64644403 fdot z3.s, z0.b, z4.b[0]
+64654403 fdot z3.s, z0.b, z5.b[0]
+64664403 fdot z3.s, z0.b, z6.b[0]
+64674403 fdot z3.s, z0.b, z7.b[0]
+64604400 fdot z0.s, z0.b, z0.b[0]

@@ -1,0 +1,56 @@
+// STRH_r_A1_off cond=xxxx|000|P=1|U=x|0|W=0|o1=0|Rn=xxxx|Rt=xxxx|(0)(0)(0)(0)1|op2=01|1|Rm=xxxx
+// StrhRA1Off: STRH{<c>}{<q>}  <Rt>, [<Rn>, {<+/->}<Rm>]
+// register fields: Rn, Rt, Rm
+418bcdb8 strhmi r12, [r11, r8] (unpredictable)
+110ab0be strhne r11, [r10, -lr]
+910dd9bf strhls sp, [sp, -pc] (unpredictable)
+d106c4b3 strhle r12, [r6, -r3] (unpredictable)
+b10842b4 strhlt r4, [r8, -r4] (unpredictable)
+e1026fb5 strh r6, [r2, -r5] (unpredictable)
+b10d26bc strhlt r2, [sp, -r12] (unpredictable)
+310863ba strhlo r6, [r8, -r10] (unpredictable)
+// Binary Ninja's tests
+e18560b4 strh r6, [r5, r4]
+018008B0 strheq r0, [r0, r0] (unpredictable)
+F18BCDB8 UNALLOCATED
+818FF1B8 strhhi pc, [pc, r8] (unpredictable)
+218BCDBB strhcs r12, [r11, r11] (unpredictable)
+
+// STRH_r_A1_post cond=xxxx|000|P=0|U=x|0|W=0|o1=0|Rn=xxxx|Rt=xxxx|(0)(0)(0)(0)1|op2=01|1|Rm=xxxx
+// StrhRA1Post: STRH{<c>}{<q>}  <Rt>, [<Rn>], {<+/->}<Rm>
+// register fields: Rn, Rt, Rm
+908151bc strhls r5, [r1], r12 (unpredictable)
+400d7ab5 strhmi r7, [sp], -r5 (unpredictable)
+c00447b0 strhgt r4, [r4], -r0 (unpredictable)
+108638ba strhne r3, [r6], r10 (unpredictable)
+408c68bc strhmi r6, [r12], r12 (unpredictable)
+400579bc strhmi r7, [r5], -r12 (unpredictable)
+d085b4be strhle r11, [r5], lr (unpredictable)
+508012b2 strhpl r1, [r0], r2 (unpredictable)
+// Binary Ninja's tests
+e00340b2 strh r4, [r3], -r2
+e08790b2 strh r9, [r7], r2
+008F0FBF strheq r0, [pc], pc (unpredictable)
+F08151BC UNALLOCATED
+8081F1BC strhhi pc, [r1], r12 (unpredictable)
+208151B5 strhcs r5, [r1], r5 (unpredictable)
+
+// STRH_r_A1_pre cond=xxxx|000|P=1|U=x|0|W=1|o1=0|Rn=xxxx|Rt=xxxx|(0)(0)(0)(0)1|op2=01|1|Rm=xxxx
+// StrhRA1Pre: STRH{<c>}{<q>}  <Rt>, [<Rn>, {<+/->}<Rm>]!
+// register fields: Rn, Rt, Rm
+7121a2bf strhvc r10, [r1, -pc]! (unpredictable)
+712b73b2 strhvc r7, [r11, -r2]! (unpredictable)
+a1ad18b3 strhge r1, [sp, r3]! (unpredictable)
+e1a5bbb4 strh r11, [r5, r4]! (unpredictable)
+81a7d3b5 strhhi sp, [r7, r5]! (unpredictable)
+512d4ab7 strhpl r4, [sp, -r7]! (unpredictable)
+c1acaeb3 strhgt r10, [r12, r3]! (unpredictable)
+01a5b2b0 strheq r11, [r5, r0]! (unpredictable)
+// Binary Ninja's tests
+e12210b1 strh r1, [r2, -r1]!
+e1a830bb strh r3, [r8, r11]!
+F121A2BF UNALLOCATED
+41200FBF strhmi r0, [r0, -pc]! (unpredictable)
+212FF4BF strhcs pc, [pc, -pc]! (unpredictable)
+112111BF strhne r1, [r1, -pc]! (unpredictable)
+7121A2B1 strhvc r10, [r1, -r1]! (unpredictable)

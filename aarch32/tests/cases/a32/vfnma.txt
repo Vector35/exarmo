@@ -1,0 +1,67 @@
+// VFNMA_A1_D cond=xxxx|1110|o0=1|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=1|M=x|0|Vm=xxxx
+// VfnmaA1D: VFNMA{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+6ed47b6d vfnmavs.f64 d23, d4, d29
+5e9b6be7 vfnmapl.f64 d6, d27, d23
+2e902bc0 vfnmahs.f64 d2, d16, d0
+2edb0b65 vfnmahs.f64 d16, d11, d21
+9ed42be9 vfnmals.f64 d18, d20, d25
+6e9cbb4e vfnmavs.f64 d11, d12, d14
+5edbfb69 vfnmapl.f64 d31, d11, d25
+1ed4db62 vfnmane.f64 d29, d4, d18
+// Binary Ninja's tests
+eed20be1 vfnma.f64 d16, d18, d17
+0EDF8B6F vfnmaeq.f64 d24, d15, d31
+FED47B6D UNALLOCATED
+8ED84B68 vfnmahi.f64 d20, d8, d24
+4ED11B64 vfnmami.f64 d17, d1, d20
+6E900B4F vfnmavs.f64 d0, d0, d15
+6E9FFB60 vfnmavs.f64 d15, d15, d16
+6EDF7BEF vfnmavs.f64 d23, d31, d31
+
+// VFNMA_A1_H cond=xxxx|1110|o0=1|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=1|M=x|0|Vm=xxxx
+// VfnmaA1H: VFNMA{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+2e935944 vfnmahs.f16 s10, s6, s8 (unpredictable)
+de9a49e1 vfnmale.f16 s8, s21, s3 (unpredictable)
+0e9789e1 vfnmaeq.f16 s16, s15, s3 (unpredictable)
+0edf79c0 vfnmaeq.f16 s15, s31, s0 (unpredictable)
+5e98394c vfnmapl.f16 s6, s16, s24 (unpredictable)
+5edc394a vfnmapl.f16 s7, s24, s20 (unpredictable)
+ce91394f vfnmagt.f16 s6, s2, s30 (unpredictable)
+1edc0962 vfnmane.f16 s1, s24, s5 (unpredictable)
+FE935944 UNALLOCATED
+8E90F948 vfnmahi.f16 s30, s0, s16 (unpredictable)
+4E942960 vfnmami.f16 s4, s8, s1 (unpredictable)
+2E92196F vfnmacs.f16 s2, s4, s31 (unpredictable)
+2E900944 vfnmacs.f16 s0, s0, s8 (unpredictable)
+2E90F9C4 vfnmacs.f16 s30, s1, s8 (unpredictable)
+2EDFF944 vfnmacs.f16 s31, s30, s8 (unpredictable)
+
+// VFNMA_A1_S cond=xxxx|1110|o0=1|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=1|M=x|0|Vm=xxxx
+// VfnmaA1S: VFNMA{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+9e922a6e vfnmals.f32 s4, s4, s29
+2e9eca4d vfnmahs.f32 s24, s28, s26
+dede9a66 vfnmale.f32 s19, s28, s13
+5ed95a42 vfnmapl.f32 s11, s18, s4
+9e918a42 vfnmals.f32 s16, s2, s4
+ded98acb vfnmale.f32 s17, s19, s22
+dedfaa66 vfnmale.f32 s21, s30, s13
+4e9c3ae6 vfnmami.f32 s6, s25, s13
+// Binary Ninja's tests
+ee921a40 vfnma.f32 s2, s4, s0
+0E900A6F vfnmaeq.f32 s0, s0, s31
+FE922A6E UNALLOCATED
+8E98FA68 vfnmahi.f32 s30, s16, s17
+1E944A64 vfnmane.f32 s8, s8, s9
+9E900A61 vfnmals.f32 s0, s0, s3
+9E90FACF vfnmals.f32 s30, s1, s30
+9EDF0AE0 vfnmals.f32 s1, s31, s1
+9ED2FA6F vfnmals.f32 s31, s4, s31

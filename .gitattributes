@@ -1,0 +1,3 @@
+# Generated code, checked in so that building needs only a Rust toolchain.
+aarch64/src/generated/** linguist-generated=true
+aarch64-capi/include/aarch64_generated.h linguist-generated=true

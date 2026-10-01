@@ -1,0 +1,76 @@
+// VSTR_A1_D cond=xxxx|110|P=1|U=x|D=x|W=0|L=0|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxxx
+// VstrA1D: VSTR{<c>}{<q>}{<.64>}  <Dd>, [<Rn>{, #{<+/->}<imm>}]
+// read together by <Dd>: D, Vd
+// register fields: Rn
+4d04cbd8 vstrmi d12, [r4, #-864]
+9d8bdbff vstrls d13, [r11, #1020]
+cdcd4bee vstrgt d20, [sp, #952]
+1d4f0b78 vstrne d16, [pc, #-480]
+1dcc0b2e vstrne d16, [r12, #184]
+bdc10b35 vstrlt d16, [r1, #212]
+ed029b74 vstr d9, [r2, #-464]
+dd822b10 vstrle d2, [r2, #64]
+// Binary Ninja's tests
+ed014b06 vstr d4, [r1, #-24]
+ed814b00 vstr d4, [r1]
+ed814b06 vstr d4, [r1, #24]
+ed8e0b00 vstr d0, [lr]
+0D00FB80 vstreq d15, [r0, #-0x200]
+FD04CBD8 UNALLOCATED
+8D048B40 vstrhi d8, [r4, #-0x100]
+2D041B20 vstrcs d1, [r4, #-0x80]
+4D04FB08 vstrmi d15, [r4, #-0x20]
+4D44FB04 vstrmi d31, [r4, #-0x10]
+4D04CB02 vstrmi d12, [r4, #-0x8]
+4D04CB01 vstrmi d12, [r4, #-0x4]
+
+// VSTR_A1_H cond=xxxx|110|P=1|U=x|D=x|W=0|L=0|Rn=xxxx|Vd=xxxx|10|size=01|imm8=xxxxxxxx
+// VstrA1H: VSTR{<c>}{<q>}.16  <Sd>, [<Rn>{, #{<+/->}<imm>}]
+// read together by <Sd>: D, Vd
+// register fields: Rn
+ad42f922 vstrge.16 s31, [r2, #-68] (unpredictable)
+4d0619a5 vstrmi.16 s2, [r6, #-330] (unpredictable)
+2dc799bd vstrhs.16 s19, [r7, #378] (unpredictable)
+2dc0f959 vstrhs.16 s31, [r0, #178] (unpredictable)
+8dcb0979 vstrhi.16 s1, [r11, #242] (unpredictable)
+ed8749ce vstr.16 s8, [r7, #412]
+3d84a975 vstrlo.16 s20, [r4, #234] (unpredictable)
+ad46b942 vstrge.16 s23, [r6, #-132] (unpredictable)
+0D4F8900 vstreq.16 s17, [pc, #-0x0] (unpredictable)
+FD42F922 UNALLOCATED
+1D4229FF vstrne.16 s5, [r2, #-0x1fe] (unpredictable)
+AD020980 vstrge.16 s0, [r2, #-0x100] (unpredictable)
+AD02F940 vstrge.16 s30, [r2, #-0x80] (unpredictable)
+AD42F920 vstrge.16 s31, [r2, #-0x40] (unpredictable)
+AD42F910 vstrge.16 s31, [r2, #-0x20] (unpredictable)
+AD42F908 vstrge.16 s31, [r2, #-0x10] (unpredictable)
+AD42F904 vstrge.16 s31, [r2, #-0x8] (unpredictable)
+AD42F902 vstrge.16 s31, [r2, #-0x4] (unpredictable)
+AD42F901 vstrge.16 s31, [r2, #-0x2] (unpredictable)
+
+// VSTR_A1_S cond=xxxx|110|P=1|U=x|D=x|W=0|L=0|Rn=xxxx|Vd=xxxx|10|size=10|imm8=xxxxxxxx
+// VstrA1S: VSTR{<c>}{<q>}{<.32>}  <Sd>, [<Rn>{, #{<+/->}<imm>}]
+// read together by <Sd>: D, Vd
+// register fields: Rn
+dd880abc vstrle s0, [r8, #752]
+7dc98ab6 vstrvc s17, [r9, #728]
+2d4a0af3 vstrhs s1, [r10, #-972]
+cd428ad1 vstrgt s17, [r2, #-836]
+1d8fca82 vstrne s24, [pc, #520]
+ad04ba02 vstrge s22, [r4, #-8]
+3d816a78 vstrlo s12, [r1, #480]
+7d43ea21 vstrvc s29, [r3, #-132]
+// Binary Ninja's tests
+ed012a06 vstr s4, [r1, #-24]
+ed812a00 vstr s4, [r1]
+ed812a06 vstr s4, [r1, #24]
+ed8e0a00 vstr s0, [lr]
+0D80FAFF vstreq s30, [r0, #0x3fc]
+FD880ABC UNALLOCATED
+8D884A80 vstrhi s8, [r8, #0x200]
+4D881A40 vstrmi s2, [r8, #0x100]
+DD88FA20 vstrle s30, [r8, #0x80]
+DDC8FA10 vstrle s31, [r8, #0x40]
+DD880A08 vstrle s0, [r8, #0x20]
+DD880A04 vstrle s0, [r8, #0x10]
+DD880A01 vstrle s0, [r8, #0x4]

@@ -1,0 +1,34 @@
+// STLXRH_SR32_ldstexclr size=01|00|1|0|0|00|L=0|0|Rs=xxxxx|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// StlxrhSr32Ldstexclr: STLXRH  <Ws>, <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+480CFC61 stlxrh w12, w1, [x3]
+481EFF15 stlxrh w30, w21, [x24]
+480BFDE5 stlxrh w11, w5, [x15]
+4807FC53 stlxrh w7, w19, [x2]
+480BFFCC stlxrh w11, w12, [lr]
+481DFF17 stlxrh w29, w23, [x24]
+4812FC12 stlxrh w18, w18, [x0] (unpredictable)
+4809FE33 stlxrh w9, w19, [x17]
+481CA257 stlxrh w28, w23, [x18] (unpredictable)
+4817A77D stlxrh w23, w29, [x27] (unpredictable)
+4810A7F6 stlxrh w16, w22, [sp] (unpredictable)
+480EF502 stlxrh w14, w2, [x8] (unpredictable)
+4804B23D stlxrh w4, w29, [x17] (unpredictable)
+48038856 stlxrh w3, w22, [x2] (unpredictable)
+480ACAA2 stlxrh w10, w2, [x21] (unpredictable)
+480E9A9C stlxrh w14, w28, [x20] (unpredictable)
+480ED64B stlxrh w14, w11, [x18] (unpredictable)
+481FB58E stlxrh wzr, w14, [x12] (unpredictable)
+480CDE24 stlxrh w12, w4, [x17] (unpredictable)
+4818CDD2 stlxrh w24, w18, [x14] (unpredictable)
+48009707 stlxrh w0, w7, [x24] (unpredictable)
+4808E039 stlxrh w8, w25, [x1] (unpredictable)
+4809E2D4 stlxrh w9, w20, [x22] (unpredictable)
+48098E26 stlxrh w9, w6, [x17] (unpredictable)
+480C8060 stlxrh w12, w0, [x3] (unpredictable)
+480CFC7F stlxrh w12, wzr, [x3]
+480CFD81 stlxrh w12, w1, [x12] (unpredictable)
+480CFC63 stlxrh w12, w3, [x3]
+480CC061 stlxrh w12, w1, [x3] (unpredictable)
+480C9061 stlxrh w12, w1, [x3] (unpredictable)
+480C8461 stlxrh w12, w1, [x3] (unpredictable)

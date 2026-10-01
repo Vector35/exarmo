@@ -1,0 +1,16 @@
+// BFDOT_asimdelem_E 0|Q=x|U=0|0|111|1|size=01|L=x|M=x|Rm=xxxx|opcode=1111|H=x|0|Rn=xxxxx|Rd=xxxxx
+// BfdotAsimdelemE: BFDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.2H[<index>]
+// read together by <Vm>: M, Rm
+// read together by <index>: L, H
+// register fields: Rn, Rd
+0F40F003 bfdot v3.2s, v0.4h, v0.2h[0]
+0F40F00A bfdot v10.2s, v0.4h, v0.2h[0]
+0F40F011 bfdot v17.2s, v0.4h, v0.2h[0]
+4F7FFBE0 bfdot v0.4s, v31.8h, v31.2h[3]
+0F40F01F bfdot v31.2s, v0.4h, v0.2h[0]
+0F4FF800 bfdot v0.2s, v0.4h, v15.2h[2]
+0F70F003 bfdot v3.2s, v0.4h, v16.2h[1]
+0F48F003 bfdot v3.2s, v0.4h, v8.2h[0]
+0F44F003 bfdot v3.2s, v0.4h, v4.2h[0]
+0F42F003 bfdot v3.2s, v0.4h, v2.2h[0]
+0F41F003 bfdot v3.2s, v0.4h, v1.2h[0]

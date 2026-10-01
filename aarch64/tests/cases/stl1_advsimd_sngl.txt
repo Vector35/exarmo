@@ -1,0 +1,9 @@
+// STL1_asisdlso_D1 0|Q=x|00|1|1|0|10|L=0|R=0|0000|o2=1|opcode=100|S=0|size=01|Rn=xxxxx|Rt=xxxxx
+// Stl1AsisdlsoD1: STL1  { <Vt>.D }[<index>], [<Xn|SP>]
+// register fields: Rn, Rt
+0D018403 stl1 {v3.d}[0], [x0]
+0D01840A stl1 {v10.d}[0], [x0]
+0D018411 stl1 {v17.d}[0], [x0]
+4D0187E0 stl1 {v0.d}[1], [sp]
+0D01841F stl1 {v31.d}[0], [x0]
+0D018400 stl1 {v0.d}[0], [x0]

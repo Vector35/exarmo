@@ -1,0 +1,43 @@
+// ldnt1b_mzx_p_br_2x8 1|01|0000|10|00|Rm=xxxxx|0|msz=00|PNg=xxx|Rn=xxxxx|T=x|N=1|Zt=xxx
+// Ldnt1bMzxPBr2x8: LDNT1B  { <Zt1>.B, <Zt2>.B }, <PNg>/Z, [<Xn|SP>, <Xm>]
+// read together by <Zt1> and <Zt2>: T, Zt
+// register fields: Rm, PNg, Rn
+A100000E ldnt1b {z6.b, z14.b}, pn8/z, [x0, x0]
+A100001C ldnt1b {z20.b, z28.b}, pn8/z, [x0, x0]
+A100002A ldnt1b {z2.b, z10.b}, pn8/z, [x1, x0]
+A11F07E8 ldnt1b {z0.b, z8.b}, pn9/z, [sp, xzr]
+A1000809 ldnt1b {z1.b, z9.b}, pn10/z, [x0, x0]
+A1000C0B ldnt1b {z3.b, z11.b}, pn11/z, [x0, x0]
+A100100D ldnt1b {z5.b, z13.b}, pn12/z, [x0, x0]
+A100140F ldnt1b {z7.b, z15.b}, pn13/z, [x0, x0]
+A100180E ldnt1b {z6.b, z14.b}, pn14/z, [x0, x0]
+A1001C0E ldnt1b {z6.b, z14.b}, pn15/z, [x0, x0]
+A100000C ldnt1b {z4.b, z12.b}, pn8/z, [x0, x0]
+A1000018 ldnt1b {z16.b, z24.b}, pn8/z, [x0, x0]
+A1000019 ldnt1b {z17.b, z25.b}, pn8/z, [x0, x0]
+A100001A ldnt1b {z18.b, z26.b}, pn8/z, [x0, x0]
+A100001B ldnt1b {z19.b, z27.b}, pn8/z, [x0, x0]
+A100001D ldnt1b {z21.b, z29.b}, pn8/z, [x0, x0]
+A100001E ldnt1b {z22.b, z30.b}, pn8/z, [x0, x0]
+A100001F ldnt1b {z23.b, z31.b}, pn8/z, [x0, x0]
+A101086E ldnt1b {z6.b, z14.b}, pn10/z, [x3, x1]
+
+// ldnt1b_mzx_p_br_4x4 1|01|0000|10|00|Rm=xxxxx|1|msz=00|PNg=xxx|Rn=xxxxx|T=x|N=1|0|Zt=xx
+// Ldnt1bMzxPBr4x4: LDNT1B  { <Zt1>.B, <Zt2>.B, <Zt3>.B, <Zt4>.B }, <PNg>/Z, [<Xn|SP>, <Xm>]
+// read together by <Zt1> and <Zt2> and <Zt3> and <Zt4>: T, Zt
+// register fields: Rm, PNg, Rn
+A100801B ldnt1b {z19.b, z23.b, z27.b, z31.b}, pn8/z, [x0, x0]
+A1008029 ldnt1b {z1.b, z5.b, z9.b, z13.b}, pn8/z, [x1, x0]
+A100805A ldnt1b {z18.b, z22.b, z26.b, z30.b}, pn8/z, [x2, x0]
+A11F87F8 ldnt1b {z16.b, z20.b, z24.b, z28.b}, pn9/z, [sp, xzr]
+A100881B ldnt1b {z19.b, z23.b, z27.b, z31.b}, pn10/z, [x0, x0]
+A1008C1B ldnt1b {z19.b, z23.b, z27.b, z31.b}, pn11/z, [x0, x0]
+A100901B ldnt1b {z19.b, z23.b, z27.b, z31.b}, pn12/z, [x0, x0]
+A100941B ldnt1b {z19.b, z23.b, z27.b, z31.b}, pn13/z, [x0, x0]
+A100981B ldnt1b {z19.b, z23.b, z27.b, z31.b}, pn14/z, [x0, x0]
+A1009C1B ldnt1b {z19.b, z23.b, z27.b, z31.b}, pn15/z, [x0, x0]
+A1008008 ldnt1b {z0.b, z4.b, z8.b, z12.b}, pn8/z, [x0, x0]
+A100800A ldnt1b {z2.b, z6.b, z10.b, z14.b}, pn8/z, [x0, x0]
+A100800B ldnt1b {z3.b, z7.b, z11.b, z15.b}, pn8/z, [x0, x0]
+A1008019 ldnt1b {z17.b, z21.b, z25.b, z29.b}, pn8/z, [x0, x0]
+A101887B ldnt1b {z19.b, z23.b, z27.b, z31.b}, pn10/z, [x3, x1]

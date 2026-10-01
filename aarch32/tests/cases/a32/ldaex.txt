@@ -1,0 +1,12 @@
+// LDAEX_A1 cond=xxxx|00|01|1|size=00|L=1|Rn=xxxx|Rt=xxxx|(1)(1)|ex=1|ord=0|1|00|1|xRt=(1)(1)(1)(1)
+// LdaexA1: LDAEX{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// Binary Ninja's tests
+e1965e9f ldaex r5, [r6]
+e1971e9f ldaex r1, [r7]
+01900290 ldaexeq r0, [r0] (unpredictable)
+F1965E9F UNALLOCATED
+819FF698 ldaexhi pc, [pc] (unpredictable)
+41966A94 ldaexmi r6, [r6] (unpredictable)
+21965E92 ldaexcs r5, [r6] (unpredictable)
+11965E91 ldaexne r5, [r6] (unpredictable)

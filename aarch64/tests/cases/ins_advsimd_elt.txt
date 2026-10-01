@@ -1,0 +1,30 @@
+// INS_asimdins_IV_v 0|Q=1|op=1|0|111|00|00|imm5=xxxxx|0|imm4=xxxx|1|Rn=xxxxx|Rd=xxxxx
+// InsAsimdinsIvV: INS  <Vd>.<Ts>[<index1>], <Vn>.<Ts>[<index2>]
+// MovInsAsimdinsIvV: MOV  <Vd>.<Ts>[<index1>], <Vn>.<Ts>[<index2>]
+// read together by <index2>: imm5, imm4
+// register fields: Rn, Rd
+6E060CE4 mov v4.h[1], v7.h[0]
+6E163DD1 mov v17.h[5], v14.h[3]
+6E1F0466 mov v6.b[15], v3.b[0]
+6E096598 mov v24.b[4], v12.b[12]
+6E046698 mov v24.s[0], v20.s[3]
+6E041FBD mov v29.s[0], v29.s[0]
+6E055618 mov v24.b[2], v16.b[10]
+6E052F44 mov v4.b[2], v26.b[5]
+6E0B3D3F mov v31.b[5], v9.b[7]
+6E090416 mov v22.b[4], v0.b[0]
+6E125C9D mov v29.h[4], v4.h[5]
+6E1906CF mov v15.b[12], v22.b[0]
+6E0136B1 mov v17.b[0], v21.b[6]
+6E112C06 mov v6.b[8], v0.b[5]
+6E1407A6 mov v6.s[2], v29.s[0]
+6E021D81 mov v1.h[0], v12.h[1]
+6E067FE0 mov v0.h[1], v31.h[7]
+6E000CE4 UNDEFINED
+6E0004E4 UNDEFINED
+6E007CE4 UNDEFINED
+6E1F7CE4 mov v4.b[15], v7.b[15]
+6E100CE4 UNDEFINED
+6E0844E4 mov v4.d[0], v7.d[1]
+6E0624E4 mov v4.h[1], v7.h[2]
+6E0614E4 mov v4.h[1], v7.h[1]

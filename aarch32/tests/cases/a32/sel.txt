@@ -1,0 +1,18 @@
+// SEL_A1 cond=xxxx|011|01000|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|101|1|Rm=xxxx
+// SelA1: SEL{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+b68b65b1 sellt r6, r11, r1 (unpredictable)
+968604b0 sells r0, r6, r0 (unpredictable)
+66842cbd selvs r2, r4, sp (unpredictable)
+d684bebd selle r11, r4, sp (unpredictable)
+a68919bc selge r1, r9, r12 (unpredictable)
+9682a6b4 sells r10, r2, r4 (unpredictable)
+26811fbb selhs r1, r1, r11
+368fb1b8 sello r11, pc, r8 (unpredictable)
+// Binary Ninja's tests
+16829fb1 selne r9, r2, r1
+e6829fb1 sel r9, r2, r1
+0680F0BF seleq pc, r0, pc (unpredictable)
+F68B65B1 UNALLOCATED
+868B68BB selhi r6, r11, r11 (unpredictable)
+468B62B1 selmi r6, r11, r1 (unpredictable)

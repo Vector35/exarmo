@@ -1,0 +1,50 @@
+// LDRBT_A1 cond=xxxx|010|P=0|U=x|op2=1|W=1|op1=1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrbtA1: LDRBT{<c>}{<q>}  <Rt>, [<Rn>] {, #{<+/->}<imm>}
+// register fields: Rn, Rt
+047e5413 ldrbteq r5, [lr], #-1043
+24fc0c1b ldrbths r0, [r12], #3099
+8478617a ldrbthi r6, [r8], #-378
+04f29afa ldrbteq r9, [r2], #2810
+3479ba28 ldrbtlo r11, [r9], #-2600
+54fae760 ldrbtpl lr, [r10], #1888
+847c8234 ldrbthi r8, [r12], #-564
+9473b083 ldrbtls r11, [r3], #-131
+// Binary Ninja's tests
+e4782008 ldrbt r2, [r8], #-8
+e4f01004 ldrbt r1, [r0], #4
+e4f13004 ldrbt r3, [r1], #4
+F47E5413 UNPREDICTABLE
+447FF000 ldrbtmi pc, [pc], #-0x0 (unpredictable)
+147EEFFF ldrbtne lr, [lr], #-0xfff (unpredictable)
+047E5800 ldrbteq r5, [lr], #-0x800
+047E5400 ldrbteq r5, [lr], #-0x400
+047E5200 ldrbteq r5, [lr], #-0x200
+047E5100 ldrbteq r5, [lr], #-0x100
+047E5080 ldrbteq r5, [lr], #-0x80
+047E5040 ldrbteq r5, [lr], #-0x40
+047E5020 ldrbteq r5, [lr], #-0x20
+047E5010 ldrbteq r5, [lr], #-0x10
+047E5002 ldrbteq r5, [lr], #-0x2
+047E5001 ldrbteq r5, [lr], #-0x1
+
+// LDRBT_A2 cond=xxxx|011|P=0|U=x|op2=1|W=1|op1=1|Rn=xxxx|Rt=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// LdrbtA2: LDRBT{<c>}{<q>}  <Rt>, [<Rn>], {<+/->}<Rm>{, <shift>}
+// register fields: Rn, Rt, Rm
+36f951ef ldrbtlo r5, [r9], pc, ror #3 (unpredictable)
+26fb3e61 ldrbths r3, [r11], r1, ror #28
+c67d318d ldrbtgt r3, [sp], -sp, lsl #3
+b67290c3 ldrbtlt r9, [r2], -r3, asr #1
+66feaeed ldrbtvs r10, [lr], sp, ror #29
+46f8b9a5 ldrbtmi r11, [r8], r5, lsr #19
+66f13fc0 ldrbtvs r3, [r1], r0, asr #31
+d6f85d40 ldrbtle r5, [r8], r0, asr #26
+// Binary Ninja's tests
+e6721606 ldrbt r1, [r2], -r6, lsl #12
+e6f01002 ldrbt r1, [r0], r2
+e6f011a2 ldrbt r1, [r0], r2, lsr #3
+e6f78006 ldrbt r8, [r7], r6
+06FF086F ldrbteq r0, [pc], pc, ror #0x10 (unpredictable)
+F6F951EF UNPREDICTABLE
+86F9F46F ldrbthi pc, [r9], pc, ror #0x8 (unpredictable)
+16F9926F ldrbtne r9, [r9], pc, ror #0x4 (unpredictable)
+36F95165 ldrbtcc r5, [r9], r5, ror #0x2

@@ -1,0 +1,10 @@
+// fcmtl_p_zz_ 011|0010|1|size=xx|0|Zm=xxxxx|000|opc=100|Zn=xxxxx|0|Pd=xxxx
+// FcmtlPZz: FCMTL  <Pd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Pd
+651F13EF UNDEFINED
+65401000 fcmtl p0.h, z0.h, z0.h
+659F13EF fcmtl p15.s, z31.s, z31.s
+65DF13EF fcmtl p15.d, z31.d, z31.d
+65CF13EF fcmtl p15.d, z31.d, z15.d
+65DF11EF fcmtl p15.d, z15.d, z31.d
+65411043 fcmtl p3.h, z2.h, z1.h

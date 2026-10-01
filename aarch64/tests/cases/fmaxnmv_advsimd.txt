@@ -1,0 +1,42 @@
+// FMAXNMV_asimdall_only_H 0|Q=x|U=0|0|111|0|o1=0|0|11000|opcode=01100|10|Rn=xxxxx|Rd=xxxxx
+// FmaxnmvAsimdallOnlyH: FMAXNMV  <d>, <Vn>.<T>
+// register fields: Rn, Rd
+0E30CADF fmaxnmv h31, v22.4h
+4E30C8DF fmaxnmv h31, v6.8h
+4E30CAD9 fmaxnmv h25, v22.8h
+4E30CB25 fmaxnmv h5, v25.8h
+4E30C864 fmaxnmv h4, v3.8h
+4E30CAD3 fmaxnmv h19, v22.8h
+0E30C9F5 fmaxnmv h21, v15.4h
+4E30C8A3 fmaxnmv h3, v5.8h
+4E30CA9D fmaxnmv h29, v20.8h
+4E30C9ED fmaxnmv h13, v15.8h
+4E30CAF0 fmaxnmv h16, v23.8h
+0E30CACE fmaxnmv h14, v22.4h
+0E30CAEC fmaxnmv h12, v23.4h
+4E30C959 fmaxnmv h25, v10.8h
+0E30C890 fmaxnmv h16, v4.4h
+4E30C967 fmaxnmv h7, v11.8h
+0E30C800 fmaxnmv h0, v0.4h
+0E30CBFF fmaxnmv h31, v31.4h
+
+// FMAXNMV_asimdall_only_SD 0|Q=1|U=1|0|111|0|o1=0|sz=0|11000|opcode=01100|10|Rn=xxxxx|Rd=xxxxx
+// FmaxnmvAsimdallOnlySd: FMAXNMV  <d>, <Vn>.4S
+// register fields: Rn, Rd
+6E30C815 fmaxnmv s21, v0.4s
+6E30C836 fmaxnmv s22, v1.4s
+6E30CB41 fmaxnmv s1, v26.4s
+6E30C9E0 fmaxnmv s0, v15.4s
+6E30C990 fmaxnmv s16, v12.4s
+6E30CAF6 fmaxnmv s22, v23.4s
+6E30C821 fmaxnmv s1, v1.4s
+6E30CBCB fmaxnmv s11, v30.4s
+6E30CB20 fmaxnmv s0, v25.4s
+6E30C95F fmaxnmv s31, v10.4s
+6E30CBA3 fmaxnmv s3, v29.4s
+6E30C910 fmaxnmv s16, v8.4s
+6E30CA81 fmaxnmv s1, v20.4s
+6E30CA7B fmaxnmv s27, v19.4s
+6E30CA15 fmaxnmv s21, v16.4s
+6E30CB77 fmaxnmv s23, v27.4s
+6E30CBF5 fmaxnmv s21, v31.4s

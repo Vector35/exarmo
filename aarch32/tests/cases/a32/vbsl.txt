@@ -1,0 +1,39 @@
+// VBSL_A1_D 1111001|U=1|0|D=x|op=01|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VbslA1D: VBSL{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f311e115 vbsl d14, d1, d5
+f3543136 vbsl d19, d4, d22
+f35421bb vbsl d18, d20, d27
+f357c118 vbsl d28, d7, d8
+f35481b3 vbsl d24, d20, d19
+f3599190 vbsl d25, d25, d0
+f313c197 vbsl d12, d19, d7
+f35ca1b3 vbsl d26, d28, d19
+F310011F vbsl d0, d0, d15
+F31FF114 vbsl d15, d15, d4
+F3184112 vbsl d4, d8, d2
+F3121111 vbsl d1, d2, d1
+F310F1B0 vbsl d15, d16, d16
+F35F013F vbsl d16, d15, d31
+F35FF195 vbsl d31, d31, d5
+
+// VBSL_A1_Q 1111001|U=1|0|D=x|op=01|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VbslA1Q: VBSL{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f31c2176 vbsl q1, q6, q11
+f310617e vbsl q3, q0, q15
+f3104152 vbsl q2, q0, q1
+f35681f4 vbsl q12, q11, q10
+f35a8176 vbsl q12, q5, q11
+f31821d0 vbsl q1, q12, q0
+F31FF17F UNDEFINED
+F3140178 vbsl q0, q2, q12
+F3120170 vbsl q0, q1, q8
+F3111171 UNDEFINED
+F31FF15F UNDEFINED
+F35001F6 vbsl q8, q8, q11
+F35FF1FF UNDEFINED

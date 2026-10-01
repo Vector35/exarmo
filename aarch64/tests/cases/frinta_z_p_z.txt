@@ -1,0 +1,281 @@
+// frinta_z_p_z_m 011|0010|1|size=xx|0|00|opc=100|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintaZPZM: FRINTA  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6544ACA6 frinta z6.h, p3/m, z5.h
+6584A6C3 frinta z3.s, p1/m, z22.s
+6584A4B3 frinta z19.s, p1/m, z5.s
+6544B8CF frinta z15.h, p6/m, z6.h
+65C4A17B frinta z27.d, p0/m, z11.d
+6584A44D frinta z13.s, p1/m, z2.s
+6584A3B9 frinta z25.s, p0/m, z29.s
+6544BEC1 frinta z1.h, p7/m, z22.h
+65C4B7AC frinta z12.d, p5/m, z29.d
+65C4ABF9 frinta z25.d, p2/m, z31.d
+6544B77E frinta z30.h, p5/m, z27.h
+6544AAC3 frinta z3.h, p2/m, z22.h
+6584AE35 frinta z21.s, p3/m, z17.s
+6544A868 frinta z8.h, p2/m, z3.h
+6584AAAC frinta z12.s, p2/m, z21.s
+6544AA0B frinta z11.h, p2/m, z16.h
+6544B000 frinta z0.h, p4/m, z0.h
+6544ACBF frinta z31.h, p3/m, z5.h
+6504ACA6 UNDEFINED
+6544ACA3 frinta z3.h, p3/m, z5.h
+
+// frinta_z_p_z_z 011|0010|0|size=xx|011|00|op=1|1|opc2=00|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintaZPZZ: FRINTA  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+64598001 frinta z1.h, p0/z, z0.h
+64598008 frinta z8.h, p0/z, z0.h
+6459800F frinta z15.h, p0/z, z0.h
+649987E0 frinta z0.s, p1/z, z31.s
+64D9881F frinta z31.d, p2/z, z0.d
+64598C01 frinta z1.h, p3/z, z0.h
+64599001 frinta z1.h, p4/z, z0.h
+64599401 frinta z1.h, p5/z, z0.h
+64599801 frinta z1.h, p6/z, z0.h
+64599C01 frinta z1.h, p7/z, z0.h
+64198001 UNDEFINED
+64598000 frinta z0.h, p0/z, z0.h
+
+// frinti_z_p_z_m 011|0010|1|size=xx|0|00|opc=111|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintiZPZM: FRINTI  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6547B3B0 frinti z16.h, p4/m, z29.h
+65C7B96F frinti z15.d, p6/m, z11.d
+6547AC8C frinti z12.h, p3/m, z4.h
+6587B248 frinti z8.s, p4/m, z18.s
+6587B076 frinti z22.s, p4/m, z3.s
+6547A909 frinti z9.h, p2/m, z8.h
+6587B7C6 frinti z6.s, p5/m, z30.s
+65C7A4E6 frinti z6.d, p1/m, z7.d
+65C7A174 frinti z20.d, p0/m, z11.d
+65C7AE1F frinti z31.d, p3/m, z16.d
+65C7BFD1 frinti z17.d, p7/m, z30.d
+6587BCF9 frinti z25.s, p7/m, z7.s
+6587A6D5 frinti z21.s, p1/m, z22.s
+6587A435 frinti z21.s, p1/m, z1.s
+65C7A73D frinti z29.d, p1/m, z25.d
+6547B66A frinti z10.h, p5/m, z19.h
+6547B000 frinti z0.h, p4/m, z0.h
+6547B3F0 frinti z16.h, p4/m, z31.h
+6507B3B0 UNDEFINED
+6547B3A4 frinti z4.h, p4/m, z29.h
+
+// frinti_z_p_z_z 011|0010|0|size=xx|011|00|op=1|1|opc2=11|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintiZPZZ: FRINTI  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6459E002 frinti z2.h, p0/z, z0.h
+6459E009 frinti z9.h, p0/z, z0.h
+6459E010 frinti z16.h, p0/z, z0.h
+6499E7E0 frinti z0.s, p1/z, z31.s
+64D9E81F frinti z31.d, p2/z, z0.d
+6459EC02 frinti z2.h, p3/z, z0.h
+6459F002 frinti z2.h, p4/z, z0.h
+6459F402 frinti z2.h, p5/z, z0.h
+6459F802 frinti z2.h, p6/z, z0.h
+6459FC02 frinti z2.h, p7/z, z0.h
+6419E002 UNDEFINED
+6459E000 frinti z0.h, p0/z, z0.h
+
+// frintm_z_p_z_m 011|0010|1|size=xx|0|00|opc=010|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintmZPZM: FRINTM  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6542AA58 frintm z24.h, p2/m, z18.h
+6542B1EB frintm z11.h, p4/m, z15.h
+6582B9A7 frintm z7.s, p6/m, z13.s
+6582ABFA frintm z26.s, p2/m, z31.s
+65C2A810 frintm z16.d, p2/m, z0.d
+65C2A495 frintm z21.d, p1/m, z4.d
+6542A1F0 frintm z16.h, p0/m, z15.h
+6582B4BB frintm z27.s, p5/m, z5.s
+65C2A2A9 frintm z9.d, p0/m, z21.d
+65C2B7DD frintm z29.d, p5/m, z30.d
+6542A8FF frintm z31.h, p2/m, z7.h
+6542A135 frintm z21.h, p0/m, z9.h
+65C2A5EA frintm z10.d, p1/m, z15.d
+65C2A2D0 frintm z16.d, p0/m, z22.d
+65C2AE4A frintm z10.d, p3/m, z18.d
+65C2BA2D frintm z13.d, p6/m, z17.d
+6542BE40 frintm z0.h, p7/m, z18.h
+6502AA58 UNDEFINED
+6542AA42 frintm z2.h, p2/m, z18.h
+6542AA52 frintm z18.h, p2/m, z18.h
+
+// frintm_z_p_z_z 011|0010|0|size=xx|011|00|op=0|1|opc2=10|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintmZPZZ: FRINTM  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6458C006 frintm z6.h, p0/z, z0.h
+6458C00D frintm z13.h, p0/z, z0.h
+6458C014 frintm z20.h, p0/z, z0.h
+6498C7E0 frintm z0.s, p1/z, z31.s
+64D8C81F frintm z31.d, p2/z, z0.d
+6458CC06 frintm z6.h, p3/z, z0.h
+6458D006 frintm z6.h, p4/z, z0.h
+6458D406 frintm z6.h, p5/z, z0.h
+6458D806 frintm z6.h, p6/z, z0.h
+6458DC06 frintm z6.h, p7/z, z0.h
+6418C006 UNDEFINED
+6458C000 frintm z0.h, p0/z, z0.h
+
+// frintn_z_p_z_m 011|0010|1|size=xx|0|00|opc=000|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintnZPZM: FRINTN  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6580B494 frintn z20.s, p5/m, z4.s
+6580BE7D frintn z29.s, p7/m, z19.s
+6540B7E4 frintn z4.h, p5/m, z31.h
+65C0A5D1 frintn z17.d, p1/m, z14.d
+6580A869 frintn z9.s, p2/m, z3.s
+65C0BF81 frintn z1.d, p7/m, z28.d
+6580BD61 frintn z1.s, p7/m, z11.s
+65C0AB75 frintn z21.d, p2/m, z27.d
+65C0A65F frintn z31.d, p1/m, z18.d
+6580B8E4 frintn z4.s, p6/m, z7.s
+65C0B5D8 frintn z24.d, p5/m, z14.d
+6540B6AA frintn z10.h, p5/m, z21.h
+6540B5B8 frintn z24.h, p5/m, z13.h
+6580AA50 frintn z16.s, p2/m, z18.s
+6580A0D6 frintn z22.s, p0/m, z6.s
+65C0B615 frintn z21.d, p5/m, z16.d
+6580AC00 frintn z0.s, p3/m, z0.s
+6580B094 frintn z20.s, p4/m, z4.s
+6500B494 UNDEFINED
+6580B485 frintn z5.s, p5/m, z4.s
+
+// frintn_z_p_z_z 011|0010|0|size=xx|011|00|op=0|1|opc2=00|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintnZPZZ: FRINTN  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+64588003 frintn z3.h, p0/z, z0.h
+6458800A frintn z10.h, p0/z, z0.h
+64588011 frintn z17.h, p0/z, z0.h
+649887E0 frintn z0.s, p1/z, z31.s
+64D8881F frintn z31.d, p2/z, z0.d
+64588C03 frintn z3.h, p3/z, z0.h
+64589003 frintn z3.h, p4/z, z0.h
+64589403 frintn z3.h, p5/z, z0.h
+64589803 frintn z3.h, p6/z, z0.h
+64589C03 frintn z3.h, p7/z, z0.h
+64188003 UNDEFINED
+64588000 frintn z0.h, p0/z, z0.h
+
+// frintp_z_p_z_m 011|0010|1|size=xx|0|00|opc=001|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintpZPZM: FRINTP  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6581BEFF frintp z31.s, p7/m, z23.s
+6581AE40 frintp z0.s, p3/m, z18.s
+6581B75A frintp z26.s, p5/m, z26.s
+6541BCE3 frintp z3.h, p7/m, z7.h
+65C1AC45 frintp z5.d, p3/m, z2.d
+6581A016 frintp z22.s, p0/m, z0.s
+65C1A51F frintp z31.d, p1/m, z8.d
+6541BC06 frintp z6.h, p7/m, z0.h
+6541BD1E frintp z30.h, p7/m, z8.h
+65C1B97F frintp z31.d, p6/m, z11.d
+6581B291 frintp z17.s, p4/m, z20.s
+6581AF9E frintp z30.s, p3/m, z28.s
+6581B2E3 frintp z3.s, p4/m, z23.s
+65C1B31C frintp z28.d, p4/m, z24.d
+6581BEC0 frintp z0.s, p7/m, z22.s
+6541AA7B frintp z27.h, p2/m, z19.h
+6581BFFF frintp z31.s, p7/m, z31.s
+6501BEFF UNDEFINED
+6581BEE7 frintp z7.s, p7/m, z23.s
+
+// frintp_z_p_z_z 011|0010|0|size=xx|011|00|op=0|1|opc2=01|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintpZPZZ: FRINTP  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6458A001 frintp z1.h, p0/z, z0.h
+6458A008 frintp z8.h, p0/z, z0.h
+6458A00F frintp z15.h, p0/z, z0.h
+6498A7E0 frintp z0.s, p1/z, z31.s
+64D8A81F frintp z31.d, p2/z, z0.d
+6458AC01 frintp z1.h, p3/z, z0.h
+6458B001 frintp z1.h, p4/z, z0.h
+6458B401 frintp z1.h, p5/z, z0.h
+6458B801 frintp z1.h, p6/z, z0.h
+6458BC01 frintp z1.h, p7/z, z0.h
+6418A001 UNDEFINED
+6458A000 frintp z0.h, p0/z, z0.h
+
+// frintx_z_p_z_m 011|0010|1|size=xx|0|00|opc=110|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintxZPZM: FRINTX  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6546BB47 frintx z7.h, p6/m, z26.h
+65C6A77E frintx z30.d, p1/m, z27.d
+6546B22E frintx z14.h, p4/m, z17.h
+6586B1FD frintx z29.s, p4/m, z15.s
+65C6BC11 frintx z17.d, p7/m, z0.d
+65C6A7E7 frintx z7.d, p1/m, z31.d
+65C6BC15 frintx z21.d, p7/m, z0.d
+6546BF76 frintx z22.h, p7/m, z27.h
+6586A91E frintx z30.s, p2/m, z8.s
+6546A258 frintx z24.h, p0/m, z18.h
+65C6BB99 frintx z25.d, p6/m, z28.d
+6586AFB8 frintx z24.s, p3/m, z29.s
+65C6A3EB frintx z11.d, p0/m, z31.d
+65C6A33B frintx z27.d, p0/m, z25.d
+6546B759 frintx z25.h, p5/m, z26.h
+65C6A630 frintx z16.d, p1/m, z17.d
+6546BB40 frintx z0.h, p6/m, z26.h
+6546BB5F frintx z31.h, p6/m, z26.h
+6506BB47 UNDEFINED
+6546B8C7 frintx z7.h, p6/m, z6.h
+6546BB46 frintx z6.h, p6/m, z26.h
+6546BB5A frintx z26.h, p6/m, z26.h
+
+// frintx_z_p_z_z 011|0010|0|size=xx|011|00|op=1|1|opc2=10|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintxZPZZ: FRINTX  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6459C004 frintx z4.h, p0/z, z0.h
+6459C00B frintx z11.h, p0/z, z0.h
+6459C012 frintx z18.h, p0/z, z0.h
+6499C7E0 frintx z0.s, p1/z, z31.s
+64D9C81F frintx z31.d, p2/z, z0.d
+6459CC04 frintx z4.h, p3/z, z0.h
+6459D004 frintx z4.h, p4/z, z0.h
+6459D404 frintx z4.h, p5/z, z0.h
+6459D804 frintx z4.h, p6/z, z0.h
+6459DC04 frintx z4.h, p7/z, z0.h
+6419C004 UNDEFINED
+6459C000 frintx z0.h, p0/z, z0.h
+
+// frintz_z_p_z_m 011|0010|1|size=xx|0|00|opc=011|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintzZPZM: FRINTZ  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6583B883 frintz z3.s, p6/m, z4.s
+65C3B51B frintz z27.d, p5/m, z8.d
+6543B5A4 frintz z4.h, p5/m, z13.h
+65C3B2FF frintz z31.d, p4/m, z23.d
+65C3BCC8 frintz z8.d, p7/m, z6.d
+6583BA20 frintz z0.s, p6/m, z17.s
+6583A407 frintz z7.s, p1/m, z0.s
+6543BE69 frintz z9.h, p7/m, z19.h
+6543B1C5 frintz z5.h, p4/m, z14.h
+6543BA0C frintz z12.h, p6/m, z16.h
+6583A454 frintz z20.s, p1/m, z2.s
+6543AAA2 frintz z2.h, p2/m, z21.h
+6543AB4E frintz z14.h, p2/m, z26.h
+65C3B4E0 frintz z0.d, p5/m, z7.d
+6583A44C frintz z12.s, p1/m, z2.s
+6583A76B frintz z11.s, p1/m, z27.s
+6583A3E3 frintz z3.s, p0/m, z31.s
+6583AC83 frintz z3.s, p3/m, z4.s
+6503B883 UNDEFINED
+6583B8C3 frintz z3.s, p6/m, z6.s
+6583B884 frintz z4.s, p6/m, z4.s
+
+// frintz_z_p_z_z 011|0010|0|size=xx|011|00|op=0|1|opc2=11|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrintzZPZZ: FRINTZ  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6458E004 frintz z4.h, p0/z, z0.h
+6458E00B frintz z11.h, p0/z, z0.h
+6458E012 frintz z18.h, p0/z, z0.h
+6498E7E0 frintz z0.s, p1/z, z31.s
+64D8E81F frintz z31.d, p2/z, z0.d
+6458EC04 frintz z4.h, p3/z, z0.h
+6458F004 frintz z4.h, p4/z, z0.h
+6458F404 frintz z4.h, p5/z, z0.h
+6458F804 frintz z4.h, p6/z, z0.h
+6458FC04 frintz z4.h, p7/z, z0.h
+6418E004 UNDEFINED
+6458E000 frintz z0.h, p0/z, z0.h

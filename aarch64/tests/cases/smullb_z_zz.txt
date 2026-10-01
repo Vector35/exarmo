@@ -1,0 +1,16 @@
+// smullb_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|11|op=1|U=0|T=0|Zn=xxxxx|Zd=xxxxx
+// SmullbZZz: SMULLB  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45C9711C smullb z28.d, z8.s, z9.s
+455072E3 smullb z3.h, z23.b, z16.b
+45C670A9 smullb z9.d, z5.s, z6.s
+455B7010 smullb z16.h, z0.b, z27.b
+45857093 smullb z19.s, z4.h, z5.h
+459771DD smullb z29.s, z14.h, z23.h
+45DE70C0 smullb z0.d, z6.s, z30.s
+45877132 smullb z18.s, z9.h, z7.h
+45C073FF smullb z31.d, z31.s, z0.s
+45DF711C smullb z28.d, z8.s, z31.s
+4509711C UNDEFINED
+45C9713C smullb z28.d, z9.s, z9.s
+45C97109 smullb z9.d, z8.s, z9.s

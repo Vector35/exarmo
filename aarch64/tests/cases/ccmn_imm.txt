@@ -1,0 +1,48 @@
+// CCMN_32_condcmp_imm sf=0|op=0|S=1|11010010|imm5=xxxxx|cond=xxxx|1|o2=0|Rn=xxxxx|o3=0|nzcv=xxxx
+// Ccmn32CondcmpImm: CCMN  <Wn>, #<imm>, #<nzcv>, <cond>
+// register fields: Rn
+3A5B7BE7 ccmn wzr, #0x1b, #0x7, vc
+3A50CA8B ccmn w20, #0x10, #0xb, gt
+3A5FBB84 ccmn w28, #0x1f, #0x4, lt
+3A458A8F ccmn w20, #0x5, #0xf, hi
+3A5DDAA2 ccmn w21, #0x1d, #0x2, le
+3A5DEAC2 ccmn w22, #0x1d, #0x2, al
+3A4EABA0 ccmn w29, #0xe, #0x0, ge
+3A53BBE3 ccmn wzr, #0x13, #0x3, lt
+3A488AA9 ccmn w21, #0x8, #0x9, hi
+3A4D8B8C ccmn w28, #0xd, #0xc, hi
+3A5D4A66 ccmn w19, #0x1d, #0x6, mi
+3A4C6BEF ccmn wzr, #0xc, #0xf, vs
+3A4FB8EB ccmn w7, #0xf, #0xb, lt
+3A5DDB4E ccmn w26, #0x1d, #0xe, le
+3A55CA8F ccmn w20, #0x15, #0xf, gt
+3A51E82A ccmn w1, #0x11, #0xa, al
+3A400807 ccmn w0, #0x0, #0x7, eq
+3A5BFBE7 ccmn wzr, #0x1b, #0x7, nv
+3A442BE8 ccmn wzr, #0x4, #0x8, cs
+3A421BE1 ccmn wzr, #0x2, #0x1, ne
+3A417BE7 ccmn wzr, #0x1, #0x7, vc
+
+// CCMN_64_condcmp_imm sf=1|op=0|S=1|11010010|imm5=xxxxx|cond=xxxx|1|o2=0|Rn=xxxxx|o3=0|nzcv=xxxx
+// Ccmn64CondcmpImm: CCMN  <Xn>, #<imm>, #<nzcv>, <cond>
+// register fields: Rn
+BA537B2F ccmn x25, #0x13, #0xf, vc
+BA4A280D ccmn x0, #0xa, #0xd, cs
+BA584926 ccmn x9, #0x18, #0x6, mi
+BA54BA09 ccmn x16, #0x14, #0x9, lt
+BA4509A5 ccmn x13, #0x5, #0x5, eq
+BA4EB804 ccmn x0, #0xe, #0x4, lt
+BA5D7B40 ccmn x26, #0x1d, #0x0, vc
+BA4338ED ccmn x7, #0x3, #0xd, cc
+BA4418CD ccmn x6, #0x4, #0xd, ne
+BA5F9BEA ccmn xzr, #0x1f, #0xa, ls
+BA53F9EC ccmn x15, #0x13, #0xc, nv
+BA44AA6A ccmn x19, #0x4, #0xa, ge
+BA51598F ccmn x12, #0x11, #0xf, pl
+BA4E5B2A ccmn x25, #0xe, #0xa, pl
+BA4C3928 ccmn x9, #0xc, #0x8, cc
+BA411844 ccmn x2, #0x1, #0x4, ne
+BA407B2F ccmn x25, #0x0, #0xf, vc
+BA508B22 ccmn x25, #0x10, #0x2, hi
+BA487B21 ccmn x25, #0x8, #0x1, vc
+BA427B2F ccmn x25, #0x2, #0xf, vc

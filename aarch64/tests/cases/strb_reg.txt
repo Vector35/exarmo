@@ -1,0 +1,57 @@
+// STRB_32B_ldst_regoff size=00|111|VR=0|00|opc=00|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Strb32bLdstRegoff: STRB  <Wt>, [<Xn|SP>, (<Wm>|<Xm>), <extend> {<amount>}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+383F4907 strb w7, [x8, wzr, uxtw]
+382CF8BC strb w28, [x5, x12, sxtx #0x0]
+382CEBFC strb w28, [sp, x12, sxtx]
+382CFB77 strb w23, [x27, x12, sxtx #0x0]
+383D4B71 strb w17, [x27, w29, uxtw]
+383FDA60 strb w0, [x19, wzr, sxtw #0x0]
+3828C8C6 strb w6, [x6, w8, sxtw]
+38364895 strb w21, [x4, w22, uxtw]
+383BE9BF strb wzr, [x13, x27, sxtx]
+3835CB80 strb w0, [x28, w21, sxtw]
+3822D8A7 strb w7, [x5, w2, sxtw #0x0]
+3828F8CB strb w11, [x6, x8, sxtx #0x0]
+382EF978 strb w24, [x11, x14, sxtx #0x0]
+383B49FF strb wzr, [x15, w27, uxtw]
+38205B93 strb w19, [x28, w0, uxtw #0x0]
+38265B27 strb w7, [x25, w6, uxtw #0x0]
+383F4807 strb w7, [x0, wzr, uxtw]
+383F0907 UNDEFINED
+383F2907 UNDEFINED
+383F8907 UNDEFINED
+383FA907 UNDEFINED
+38200907 UNDEFINED
+38202907 UNDEFINED
+38208907 UNDEFINED
+3820A907 UNDEFINED
+3820C907 strb w7, [x8, w0, sxtw]
+3820E907 strb w7, [x8, x0, sxtx]
+383FE907 strb w7, [x8, xzr, sxtx]
+383F4BE7 strb w7, [sp, wzr, uxtw]
+383F491F strb wzr, [x8, wzr, uxtw]
+
+// STRB_32BL_ldst_regoff size=00|111|VR=0|00|opc=00|1|Rm=xxxxx|option=011|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Strb32blLdstRegoff: STRB  <Wt>, [<Xn|SP>, <Xm>{, LSL <amount>}]
+// register fields: Rm, Rn, Rt
+38307A8D strb w13, [x20, x16, lsl #0x0]
+3839690C strb w12, [x8, x25]
+38276AF8 strb w24, [x23, x7]
+383E7A0D strb w13, [x16, lr, lsl #0x0]
+3824681E strb w30, [x0, x4]
+383F7B66 strb w6, [x27, xzr, lsl #0x0]
+38257BAA strb w10, [fp, x5, lsl #0x0]
+383A6BCE strb w14, [lr, x26]
+38326A75 strb w21, [x19, x18]
+38337B8E strb w14, [x28, x19, lsl #0x0]
+382A798E strb w14, [x12, x10, lsl #0x0]
+382E7A9B strb w27, [x20, x14, lsl #0x0]
+382D7AFE strb w30, [x23, x13, lsl #0x0]
+383D78E7 strb w7, [x7, fp, lsl #0x0]
+38367AB8 strb w24, [x21, x22, lsl #0x0]
+383B7892 strb w18, [x4, x27, lsl #0x0]
+38207BE0 strb w0, [sp, x0, lsl #0x0]
+38307A9F strb wzr, [x20, x16, lsl #0x0]
+38307A0D strb w13, [x16, x16, lsl #0x0]

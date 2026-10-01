@@ -1,0 +1,45 @@
+// FMLSL2_asimdsame_F 0|Q=x|U=1|0|111|0|S=1|sz=0|1|Rm=xxxxx|opcode=11001|1|Rn=xxxxx|Rd=xxxxx
+// Fmlsl2AsimdsameF: FMLSL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// register fields: Rm, Rn, Rd
+6EA1CD40 fmlsl2 v0.4s, v10.4h, v1.4h
+6EB0CC92 fmlsl2 v18.4s, v4.4h, v16.4h
+2EBCCF15 fmlsl2 v21.2s, v24.2h, v28.2h
+2EB2CF0D fmlsl2 v13.2s, v24.2h, v18.2h
+6EB0CE8A fmlsl2 v10.4s, v20.4h, v16.4h
+2EABCC73 fmlsl2 v19.2s, v3.2h, v11.2h
+2EA8CEAB fmlsl2 v11.2s, v21.2h, v8.2h
+2EAFCF92 fmlsl2 v18.2s, v28.2h, v15.2h
+6EA8CF69 fmlsl2 v9.4s, v27.4h, v8.4h
+2EB1CC0C fmlsl2 v12.2s, v0.2h, v17.2h
+6EA7CF0B fmlsl2 v11.4s, v24.4h, v7.4h
+2EB6CFF9 fmlsl2 v25.2s, v31.2h, v22.2h
+6EADCC53 fmlsl2 v19.4s, v2.4h, v13.4h
+2EBECE89 fmlsl2 v9.2s, v20.2h, v30.2h
+6EA9CC00 fmlsl2 v0.4s, v0.4h, v9.4h
+2EAFCF46 fmlsl2 v6.2s, v26.2h, v15.2h
+6EA0CD5F fmlsl2 v31.4s, v10.4h, v0.4h
+6EBFCD40 fmlsl2 v0.4s, v10.4h, v31.4h
+6EA1CC20 fmlsl2 v0.4s, v1.4h, v1.4h
+6EA1CD41 fmlsl2 v1.4s, v10.4h, v1.4h
+
+// FMLSL_asimdsame_F 0|Q=x|U=0|0|111|0|S=1|sz=0|1|Rm=xxxxx|opcode=11101|1|Rn=xxxxx|Rd=xxxxx
+// FmlslAsimdsameF: FMLSL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// register fields: Rm, Rn, Rd
+0EA6EF4F fmlsl v15.2s, v26.2h, v6.2h
+0EA8ED50 fmlsl v16.2s, v10.2h, v8.2h
+0EA6EDB0 fmlsl v16.2s, v13.2h, v6.2h
+4EB4EE09 fmlsl v9.4s, v16.4h, v20.4h
+0EB0ED1B fmlsl v27.2s, v8.2h, v16.2h
+0EB3EDCF fmlsl v15.2s, v14.2h, v19.2h
+0EA9ED25 fmlsl v5.2s, v9.2h, v9.2h
+0EB5EFDA fmlsl v26.2s, v30.2h, v21.2h
+0EBFED27 fmlsl v7.2s, v9.2h, v31.2h
+4EAEEF70 fmlsl v16.4s, v27.4h, v14.4h
+0EA6EE21 fmlsl v1.2s, v17.2h, v6.2h
+0EA4EC5A fmlsl v26.2s, v2.2h, v4.2h
+0EAFED81 fmlsl v1.2s, v12.2h, v15.2h
+4EADEFFD fmlsl v29.4s, v31.4h, v13.4h
+0EAFECDD fmlsl v29.2s, v6.2h, v15.2h
+4EA3EF6F fmlsl v15.4s, v27.4h, v3.4h
+0EA0EC00 fmlsl v0.2s, v0.2h, v0.2h
+0EA6EF5F fmlsl v31.2s, v26.2h, v6.2h

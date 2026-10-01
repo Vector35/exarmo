@@ -1,0 +1,9 @@
+/target
+__pycache__/
+.DS_Store
+
+# insta pending snapshots
+*.snap.new
+
+CLAUDE.md
+AGENTS.md

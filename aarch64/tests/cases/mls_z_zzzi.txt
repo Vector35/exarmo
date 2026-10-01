@@ -1,0 +1,52 @@
+// mls_z_zzzi_d 010|0010|0|size=11|1|i1=x|Zm=xxxx|00001|S=1|Zn=xxxxx|Zda=xxxxx
+// MlsZZzziD: MLS  <Zda>.D, <Zn>.D, <Zm>.D[<imm>]
+// register fields: Zm, Zn, Zda
+44E90F95 mls z21.d, z28.d, z9.d[0]
+44EC0FA1 mls z1.d, z29.d, z12.d[0]
+44E80E03 mls z3.d, z16.d, z8.d[0]
+44EE0F00 mls z0.d, z24.d, z14.d[0]
+44FB0E85 mls z5.d, z20.d, z11.d[1]
+44F00C2D mls z13.d, z1.d, z0.d[1]
+44EB0E1A mls z26.d, z16.d, z11.d[0]
+44E00E0F mls z15.d, z16.d, z0.d[0]
+44EF0C1F mls z31.d, z0.d, z15.d[0]
+44E90FF5 mls z21.d, z31.d, z9.d[0]
+44E90D35 mls z21.d, z9.d, z9.d[0]
+44E90F89 mls z9.d, z28.d, z9.d[0]
+44E90F9C mls z28.d, z28.d, z9.d[0]
+
+// mls_z_zzzi_h 010|0010|0|0|i3h=x|1|i3l=xx|Zm=xxx|00001|S=1|Zn=xxxxx|Zda=xxxxx
+// MlsZZzziH: MLS  <Zda>.H, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+44650F1C mls z28.h, z24.h, z5.h[4]
+44350E5E mls z30.h, z18.h, z5.h[2]
+44640E56 mls z22.h, z18.h, z4.h[4]
+44260DBE mls z30.h, z13.h, z6.h[0]
+44340F78 mls z24.h, z27.h, z4.h[2]
+44700E33 mls z19.h, z17.h, z0.h[6]
+442F0CC4 mls z4.h, z6.h, z7.h[1]
+442D0D31 mls z17.h, z9.h, z5.h[1]
+44790C00 mls z0.h, z0.h, z1.h[7]
+44620FFF mls z31.h, z31.h, z2.h[4]
+44630F1C mls z28.h, z24.h, z3.h[4]
+443D0CBC mls z28.h, z5.h, z5.h[3]
+446D0F05 mls z5.h, z24.h, z5.h[5]
+
+// mls_z_zzzi_s 010|0010|0|size=10|1|i2=xx|Zm=xxx|00001|S=1|Zn=xxxxx|Zda=xxxxx
+// MlsZZzziS: MLS  <Zda>.S, <Zn>.S, <Zm>.S[<imm>]
+// register fields: Zm, Zn, Zda
+44B50D1E mls z30.s, z8.s, z5.s[2]
+44B70D6D mls z13.s, z11.s, z7.s[2]
+44AD0CB0 mls z16.s, z5.s, z5.s[1]
+44B50DA7 mls z7.s, z13.s, z5.s[2]
+44A70E0C mls z12.s, z16.s, z7.s[0]
+44AF0DC0 mls z0.s, z14.s, z7.s[1]
+44BC0CFA mls z26.s, z7.s, z4.s[3]
+44A90F9D mls z29.s, z28.s, z1.s[1]
+44B00C1F mls z31.s, z0.s, z0.s[2]
+44B20FFE mls z30.s, z31.s, z2.s[2]
+44B30D1E mls z30.s, z8.s, z3.s[2]
+44B60D1E mls z30.s, z8.s, z6.s[2]
+44B50D05 mls z5.s, z8.s, z5.s[2]
+44B50D08 mls z8.s, z8.s, z5.s[2]

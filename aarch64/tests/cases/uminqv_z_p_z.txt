@@ -1,0 +1,14 @@
+// uminqv_z_p_z_ 000|0010|0|size=xx|0|011|op=1|U=1|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// UminqvZPZ: UMINQV  <Vd>.<T>, <Pg>, <Zn>.<Tb>
+// register fields: Pg, Zn, Vd
+040F2006 uminqv v6.16b, p0, z0.b
+040F200D uminqv v13.16b, p0, z0.b
+040F2014 uminqv v20.16b, p0, z0.b
+044F27E0 uminqv v0.8h, p1, z31.h
+048F281F uminqv v31.4s, p2, z0.s
+04CF2C06 uminqv v6.2d, p3, z0.d
+040F3006 uminqv v6.16b, p4, z0.b
+040F3406 uminqv v6.16b, p5, z0.b
+040F3806 uminqv v6.16b, p6, z0.b
+040F3C06 uminqv v6.16b, p7, z0.b
+040F2000 uminqv v0.16b, p0, z0.b

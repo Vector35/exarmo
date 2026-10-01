@@ -1,0 +1,22 @@
+// AND_asimdsame_only 0|Q=x|U=0|0|111|0|size=00|1|Rm=xxxxx|opcode=00011|1|Rn=xxxxx|Rd=xxxxx
+// AndAsimdsameOnly: AND  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+4E391F6A and v10.16b, v27.16b, v25.16b
+0E391D48 and v8.8b, v10.8b, v25.8b
+4E301EDA and v26.16b, v22.16b, v16.16b
+4E331D3E and v30.16b, v9.16b, v19.16b
+4E251CD7 and v23.16b, v6.16b, v5.16b
+0E2F1D2B and v11.8b, v9.8b, v15.8b
+0E3C1F68 and v8.8b, v27.8b, v28.8b
+0E391CFE and v30.8b, v7.8b, v25.8b
+0E291D35 and v21.8b, v9.8b, v9.8b
+4E2F1DBF and v31.16b, v13.16b, v15.16b
+0E241CF1 and v17.8b, v7.8b, v4.8b
+4E2A1FF4 and v20.16b, v31.16b, v10.16b
+0E2C1C66 and v6.8b, v3.8b, v12.8b
+0E211C0D and v13.8b, v0.8b, v1.8b
+0E311E8B and v11.8b, v20.8b, v17.8b
+0E341FB5 and v21.8b, v29.8b, v20.8b
+4E201F60 and v0.16b, v27.16b, v0.16b
+4E3F1F6A and v10.16b, v27.16b, v31.16b
+4E391F7B and v27.16b, v27.16b, v25.16b

@@ -1,0 +1,14 @@
+// bcax_z_zzz_ 000|0010|0|opc=01|1|Zm=xxxxx|001|11|o2=0|Zk=xxxxx|Zdn=xxxxx
+// BcaxZZzz: BCAX  <Zdn>.D, <Zdn>.D, <Zm>.D, <Zk>.D
+// register fields: Zm, Zk, Zdn
+046A3AEA bcax z10.d, z10.d, z10.d, z23.d
+046B3868 bcax z8.d, z8.d, z11.d, z3.d
+04773B72 bcax z18.d, z18.d, z23.d, z27.d
+04623814 bcax z20.d, z20.d, z2.d, z0.d
+047A3A3C bcax z28.d, z28.d, z26.d, z17.d
+046F388A bcax z10.d, z10.d, z15.d, z4.d
+0461394A bcax z10.d, z10.d, z1.d, z10.d
+046239A2 bcax z2.d, z2.d, z2.d, z13.d
+04603BE0 bcax z0.d, z0.d, z0.d, z31.d
+047F3AFF bcax z31.d, z31.d, z31.d, z23.d
+046A394A bcax z10.d, z10.d, z10.d, z10.d

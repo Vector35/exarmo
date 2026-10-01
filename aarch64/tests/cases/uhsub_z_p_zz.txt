@@ -1,0 +1,16 @@
+// uhsub_z_p_zz_ 010|0010|0|size=xx|0|10|R=0|S=1|U=1|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UhsubZPZz: UHSUB  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+44538E7D uhsub z29.h, p3/m, z29.h, z19.h
+44138604 uhsub z4.b, p1/m, z4.b, z16.b
+44539413 uhsub z19.h, p5/m, z19.h, z0.h
+449388CD uhsub z13.s, p2/m, z13.s, z6.s
+4493887F uhsub z31.s, p2/m, z31.s, z3.s
+441393E0 uhsub z0.b, p4/m, z0.b, z31.b
+44539C37 uhsub z23.h, p7/m, z23.h, z1.h
+4413940F uhsub z15.b, p5/m, z15.b, z0.b
+44D3827D uhsub z29.d, p0/m, z29.d, z19.d
+44539A7D uhsub z29.h, p6/m, z29.h, z19.h
+44538C7D uhsub z29.h, p3/m, z29.h, z3.h
+44538E63 uhsub z3.h, p3/m, z3.h, z19.h
+44538E73 uhsub z19.h, p3/m, z19.h, z19.h

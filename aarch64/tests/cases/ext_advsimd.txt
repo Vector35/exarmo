@@ -1,0 +1,27 @@
+// EXT_asimdext_only 0|Q=x|10|111|0|op2=00|0|Rm=xxxxx|0|imm4=xxxx|0|Rn=xxxxx|Rd=xxxxx
+// ExtAsimdextOnly: EXT  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>, #<index>
+// read together by <index>: Q, imm4
+// register fields: Rm, Rn, Rd
+2E1221F9 ext v25.8b, v15.8b, v18.8b, #0x4
+2E1602A2 ext v2.8b, v21.8b, v22.8b, #0x0
+6E080B29 ext v9.16b, v25.16b, v8.16b, #0x1
+6E013A39 ext v25.16b, v17.16b, v1.16b, #0x7
+6E0E0B76 ext v22.16b, v27.16b, v14.16b, #0x1
+6E127ACC ext v12.16b, v22.16b, v18.16b, #0xf
+2E06220A ext v10.8b, v16.8b, v6.8b, #0x4
+6E183A4C ext v12.16b, v18.16b, v24.16b, #0x7
+6E1450E5 ext v5.16b, v7.16b, v20.16b, #0xa
+6E07297E ext v30.16b, v11.16b, v7.16b, #0x5
+6E177080 ext v0.16b, v4.16b, v23.16b, #0xe
+6E1930FD ext v29.16b, v7.16b, v25.16b, #0x6
+6E093954 ext v20.16b, v10.16b, v9.16b, #0x7
+6E142348 ext v8.16b, v26.16b, v20.16b, #0x4
+6E0A029F ext v31.16b, v20.16b, v10.16b, #0x0
+6E1C71BE ext v30.16b, v13.16b, v28.16b, #0xe
+2E002019 ext v25.8b, v0.8b, v0.8b, #0x4
+2E1F23F9 ext v25.8b, v31.8b, v31.8b, #0x4
+2E1279F9 UNDEFINED
+2E1221F2 ext v18.8b, v15.8b, v18.8b, #0x4
+2E1221EF ext v15.8b, v15.8b, v18.8b, #0x4
+6E084329 ext v9.16b, v25.16b, v8.16b, #0x8
+2E1211F9 ext v25.8b, v15.8b, v18.8b, #0x2

@@ -1,0 +1,11 @@
+// uzpq2_z_zz_ 010|0010|0|size=xx|0|Zm=xxxxx|111|01|H=1|Zn=xxxxx|Zd=xxxxx
+// Uzpq2ZZz: UZPQ2  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+4400EC03 uzpq2 z3.b, z0.b, z0.b
+4400EC0A uzpq2 z10.b, z0.b, z0.b
+4400EC11 uzpq2 z17.b, z0.b, z0.b
+445FEFE0 uzpq2 z0.h, z31.h, z31.h
+4480EC1F uzpq2 z31.s, z0.s, z0.s
+44C0EC03 uzpq2 z3.d, z0.d, z0.d
+4400EC00 uzpq2 z0.b, z0.b, z0.b
+4401EC43 uzpq2 z3.b, z2.b, z1.b

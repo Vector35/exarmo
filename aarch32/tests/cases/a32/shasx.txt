@@ -1,0 +1,18 @@
+// SHASX_A1 cond=xxxx|011|00|op1=011|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=01|1|Rm=xxxx
+// ShasxA1: SHASX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+863c4c33 shasxhi r4, r12, r3 (unpredictable)
+363f2239 shasxlo r2, pc, r9 (unpredictable)
+0630fe39 shasxeq pc, r0, r9 (unpredictable)
+e634fb36 shasx pc, r4, r6 (unpredictable)
+5631083c shasxpl r0, r1, r12 (unpredictable)
+863a4b34 shasxhi r4, r10, r4 (unpredictable)
+76345f36 shasxvc r5, r4, r6
+c6376b3e shasxgt r6, r7, lr (unpredictable)
+// Binary Ninja's tests
+c6384f32 shasxgt r4, r8, r2
+e6384f32 shasx r4, r8, r2
+F63C4C33 UNALLOCATED
+463CC030 shasxmi r12, r12, r0 (unpredictable)
+263C443F shasxcs r4, r12, pc (unpredictable)
+163C413C shasxne r4, r12, r12 (unpredictable)

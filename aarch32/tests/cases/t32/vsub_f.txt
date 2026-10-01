@@ -1,0 +1,116 @@
+// VSUB_f_T1_D 111|U=0|11110|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VsubFT1D: VSUB{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef674d29 vsub.f32 d20, d7, d25
+ef675daa vsub.f32 d21, d23, d26
+ef2b4da5 vsub.f32 d4, d27, d21
+ef75fd0d vsub.f16 d31, d5, d13
+ef780d04 vsub.f16 d16, d8, d4
+ef6c5d8f vsub.f32 d21, d28, d15
+ef3dada3 vsub.f16 d10, d29, d19
+ef680d87 vsub.f32 d16, d24, d7
+EF608D20 vsub.f32 d24, d0, d16
+EF6F2D28 vsub.f32 d18, d15, d24
+EF641D22 vsub.f32 d17, d4, d18
+EF220D21 vsub.f32 d0, d2, d17
+EF21FD00 vsub.f32 d15, d1, d0
+EF604D20 vsub.f32 d20, d0, d16
+EF604DAF vsub.f32 d20, d16, d31
+EF6F4D29 vsub.f32 d20, d15, d25
+EF6F4DA9 vsub.f32 d20, d31, d25
+EF674D29 [ne] vsubne.f32 d20, d7, d25
+
+// VSUB_f_T1_Q 111|U=0|11110|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VsubFT1Q: VSUB{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef622d6a vsub.f32 q9, q1, q13
+ef6c8dea vsub.f32 q12, q14, q13
+ef6a4dce vsub.f32 q10, q13, q7
+ef24edcc vsub.f32 q7, q10, q6
+ef2c2de0 vsub.f32 q1, q14, q8
+ef624dce vsub.f32 q10, q9, q7
+ef604de2 vsub.f32 q10, q8, q9
+ef68ad44 vsub.f32 q13, q4, q2
+EF700D68 vsub.f16 q8, q0, q12
+EF6FFD6F UNDEFINED
+EF611D61 UNDEFINED
+EF220D40 vsub.f32 q0, q1, q0
+EF2FFD4F UNDEFINED
+EF620D6A vsub.f32 q8, q1, q13
+EF6FFDEF UNDEFINED
+EF622D6A [ne] vsubne.f32 q9, q1, q13
+
+// VSUB_f_T2_D 11101110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=11|N=x|o2=1|M=x|0|Vm=xxxx
+// VsubFT2D: VSUB{<c>}{<q>}.F64  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ee7f8b40 vsub.f64 d24, d15, d0
+ee321b49 vsub.f64 d1, d2, d9
+ee3f7bc8 vsub.f64 d7, d31, d8
+ee3eab61 vsub.f64 d10, d14, d17
+ee7ebbe0 vsub.f64 d27, d30, d16
+ee7efb49 vsub.f64 d31, d14, d9
+ee73fbe0 vsub.f64 d31, d19, d16
+ee7b2b48 vsub.f64 d18, d11, d8
+EE700B4F vsub.f64 d16, d0, d15
+EE784B44 vsub.f64 d20, d8, d4
+EE340B42 vsub.f64 d0, d4, d2
+EE31FB4F vsub.f64 d15, d1, d15
+EE700B6F vsub.f64 d16, d0, d31
+EE708BC0 vsub.f64 d24, d16, d0
+EE7F8B40 [ne] vsubne.f64 d24, d15, d0
+
+// VSUB_f_T2_H 11101110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=01|N=x|o2=1|M=x|0|Vm=xxxx
+// VsubFT2H: VSUB{<c>}{<q>}.F16  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee3759c3 vsub.f16 s10, s15, s6
+ee33c94a vsub.f16 s24, s6, s20
+ee320945 vsub.f16 s0, s4, s10
+ee33a9c1 vsub.f16 s20, s7, s2
+ee3b09e7 vsub.f16 s0, s23, s15
+ee7339e3 vsub.f16 s7, s7, s7
+ee7d696b vsub.f16 s13, s26, s23
+ee785947 vsub.f16 s11, s16, s14
+EE30F9C0 vsub.f16 s30, s1, s0
+EE3F89CF vsub.f16 s16, s31, s30
+EE3449C8 vsub.f16 s8, s9, s16
+EE3129C4 vsub.f16 s4, s3, s8
+EE301942 vsub.f16 s2, s0, s4
+EE7F094F vsub.f16 s1, s30, s30
+EE7FF9E0 vsub.f16 s31, s31, s1
+EE3759EF vsub.f16 s10, s15, s31
+EE3759C3 [ne] vsubne.f16 s10, s15, s6 (unpredictable)
+
+// VSUB_f_T2_S 11101110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=10|N=x|o2=1|M=x|0|Vm=xxxx
+// VsubFT2S: VSUB{<c>}{<q>}.F32  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee7b5a45 vsub.f32 s11, s22, s10
+ee383a6f vsub.f32 s6, s16, s31
+ee3e1ac9 vsub.f32 s2, s29, s18
+ee7dfac2 vsub.f32 s31, s27, s4
+ee39ba4f vsub.f32 s22, s18, s30
+ee707ac5 vsub.f32 s15, s1, s10
+ee7d8a62 vsub.f32 s17, s26, s5
+ee309ae1 vsub.f32 s18, s1, s3
+EE7F0A40 vsub.f32 s1, s30, s0
+EE744A48 vsub.f32 s9, s8, s16
+EE722A44 vsub.f32 s5, s4, s8
+EE310A40 vsub.f32 s0, s2, s0
+EE30FA60 vsub.f32 s30, s0, s1
+EE7F0A45 vsub.f32 s1, s30, s10
+EE7F5AC5 vsub.f32 s11, s31, s10
+EE7B5A45 [ne] vsubne.f32 s11, s22, s10

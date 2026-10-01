@@ -1,0 +1,72 @@
+// STR_r_A1_off cond=xxxx|011|P=1|U=x|op2=0|W=0|op1=0|Rn=xxxx|Rt=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// StrRA1Off: STR{<c>}{<q>}  <Rt>, [<Rn>, {<+/->}<Rm>{, <shift>}]
+// register fields: Rn, Rt, Rm
+b78236ec strlt r3, [r2, r12, ror #13]
+478c60ab strmi r6, [r12, r11, lsr #1]
+878de844 strhi lr, [sp, r4, asr #16]
+c7838e86 strgt r8, [r3, r6, lsl #29]
+9785db42 strls sp, [r5, r2, asr #22]
+470f3c05 strmi r3, [pc, -r5, lsl #24]
+8702214f strhi r2, [r2, -pc, asr #2] (unpredictable)
+770b4a4c strvc r4, [r11, -r12, asr #20]
+// Binary Ninja's tests
+e7008002 str r8, [r0, -r2]
+e7043102 str r3, [r4, -r2, lsl #2]
+e7800000 str r0, [r0, r0]
+e7800020 str r0, [r0, r0, lsr #32]
+e7800040 str r0, [r0, r0, asr #32]
+e7800060 str r0, [r0, r0, rrx]
+e7800800 str r0, [r0, r0, lsl #16]
+e7800820 str r0, [r0, r0, lsr #16]
+e7800840 str r0, [r0, r0, asr #16]
+e7800860 str r0, [r0, r0, ror #16]
+e7869003 str r9, [r6, r3]
+0782FFEC streq pc, [r2, r12, ror #0x1f]
+F78236EC UNALLOCATED
+2782346C strcs r3, [r2, r12, ror #0x8]
+1782326C strne r3, [r2, r12, ror #0x4]
+
+// STR_r_A1_post cond=xxxx|011|P=0|U=x|op2=0|W=0|op1=0|Rn=xxxx|Rt=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// StrRA1Post: STR{<c>}{<q>}  <Rt>, [<Rn>], {<+/->}<Rm>{, <shift>}
+// register fields: Rn, Rt, Rm
+36827448 strlo r7, [r2], r8, asr #8
+368800af strlo r0, [r8], pc, lsr #1 (unpredictable)
+76853080 strvc r3, [r5], r0, lsl #1
+a681d78b strge sp, [r1], r11, lsl #15
+56842189 strpl r2, [r4], r9, lsl #3
+b680d0e1 strlt sp, [r0], r1, ror #1
+d68711c5 strle r1, [r7], r5, asr #3
+6602d0c6 strvs sp, [r2], -r6, asr #1
+// Binary Ninja's tests
+e6024005 str r4, [r2], -r5
+e6835009 str r5, [r3], r9
+e6872c43 str r2, [r7], r3, asr #24
+e6876008 str r6, [r7], r8
+e68a900b str r9, [r10], r11
+068FFFC8 streq pc, [pc], r8, asr #0x1f (unpredictable)
+F6827448 UNALLOCATED
+86822848 strhi r2, [r2], r8, asr #0x10 (unpredictable)
+46827242 strmi r7, [r2], r2, asr #0x4
+26827147 strcs r7, [r2], r7, asr #0x2
+16827448 strne r7, [r2], r8, asr #0x8
+
+// STR_r_A1_pre cond=xxxx|011|P=1|U=x|op2=0|W=1|op1=0|Rn=xxxx|Rt=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// StrRA1Pre: STR{<c>}{<q>}  <Rt>, [<Rn>, {<+/->}<Rm>{, <shift>}]!
+// register fields: Rn, Rt, Rm
+87a2a72b strhi r10, [r2, r11, lsr #14]!
+e7204409 str r4, [r0, -r9, lsl #8]!
+07a4728b streq r7, [r4, r11, lsl #5]!
+8725d88a strhi sp, [r5, -r10, lsl #17]!
+472af7c4 strmi pc, [r10, -r4, asr #15]!
+a7218e80 strge r8, [r1, -r0, lsl #29]!
+e7a6a926 str r10, [r6, r6, lsr #18]!
+17afb9cc strne r11, [pc, r12, asr #19]! (unpredictable)
+// Binary Ninja's tests
+e72d6001 str r6, [sp, -r1]!
+e7a17006 str r7, [r1, r6]!
+F7A2A72B UNALLOCATED
+27A20FEF strcs r0, [r2, pc, ror #0x1f]! (unpredictable)
+87A2282B strhi r2, [r2, r11, lsr #0x10]! (unpredictable)
+87A2A22A strhi r10, [r2, r10, lsr #0x4]!
+87A2A12B strhi r10, [r2, r11, lsr #0x2]!
+87A2A0AB strhi r10, [r2, r11, lsr #0x1]!

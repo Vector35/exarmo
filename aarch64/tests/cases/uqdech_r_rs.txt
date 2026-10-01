@@ -1,0 +1,48 @@
+// uqdech_r_rs_uw 000|0010|0|size=01|1|sf=0|imm4=xxxx|11|11|D=1|U=1|pattern=xxxxx|Rdn=xxxxx
+// UqdechRRsUw: UQDECH  <Wdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0467FEE7 uqdech w7, #0x17, mul #0x8
+0468FF06 uqdech w6, #0x18, mul #0x9
+0465FD79 uqdech w25, vl64, mul #0x6
+0464FF47 uqdech w7, #0x1a, mul #0x5
+046DFEEB uqdech w11, #0x17, mul #0xe
+0463FCB0 uqdech w16, vl5, mul #0x4
+0460FD3A uqdech w26, vl16
+0460FEAF uqdech w15, #0x15
+046AFD7B uqdech w27, vl64, mul #0xb
+046EFD1A uqdech w26, vl8, mul #0xf
+046AFE5A uqdech w26, #0x12, mul #0xb
+046BFFEE uqdech w14, all, mul #0xc
+0464FDA1 uqdech w1, vl256, mul #0x5
+0461FCDF uqdech wzr, vl6, mul #0x2
+0463FD8E uqdech w14, vl128, mul #0x4
+0464FDA0 uqdech w0, vl256, mul #0x5
+046FFC07 uqdech w7, pow2, mul #0x10
+0462FE07 uqdech w7, #0x10, mul #0x3
+0467FC87 uqdech w7, vl4, mul #0x8
+0467FC47 uqdech w7, vl2, mul #0x8
+0467FC27 uqdech w7, vl1, mul #0x8
+
+// uqdech_r_rs_x 000|0010|0|size=01|1|sf=1|imm4=xxxx|11|11|D=1|U=1|pattern=xxxxx|Rdn=xxxxx
+// UqdechRRsX: UQDECH  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0472FDD9 uqdech x25, #0xe, mul #0x3
+0472FF0C uqdech x12, #0x18, mul #0x3
+0477FEC7 uqdech x7, #0x16, mul #0x8
+047AFE5C uqdech x28, #0x12, mul #0xb
+0471FD6C uqdech x12, vl64, mul #0x2
+0477FCA0 uqdech x0, vl5, mul #0x8
+047CFC59 uqdech x25, vl2, mul #0xd
+0471FDB4 uqdech x20, vl256, mul #0x2
+0475FEBA uqdech x26, #0x15, mul #0x6
+0477FE03 uqdech x3, #0x10, mul #0x8
+047FFD7C uqdech x28, vl64, mul #0x10
+0472FDD0 uqdech x16, #0xe, mul #0x3
+0470FE90 uqdech x16, #0x14
+0477FC0B uqdech x11, pow2, mul #0x8
+047EFEB5 uqdech x21, #0x15, mul #0xf
+0470FFFB uqdech x27
+0472FDDF uqdech xzr, #0xe, mul #0x3
+0478FD19 uqdech x25, vl8, mul #0x9
+0474FC99 uqdech x25, vl4, mul #0x5
+0472FC39 uqdech x25, vl1, mul #0x3

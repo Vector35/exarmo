@@ -1,0 +1,119 @@
+// RSB_i_T1 010000|op=1001|Rn=xxx|Rd=xxx
+// RsbIT1: RSB<c>{<q>}  {<Rd>, }<Rn>, #0
+// T1bRsbIT1: RSBS{<q>}  {<Rd>, }<Rn>, #0
+// register fields: Rn, Rd
+// IT state read: condition, in block
+4240 rsbs r0, r0, #0
+4241 rsbs r1, r0, #0
+4242 rsbs r2, r0, #0
+4243 rsbs r3, r0, #0
+4244 rsbs r4, r0, #0
+4245 rsbs r5, r0, #0
+4246 rsbs r6, r0, #0
+4247 rsbs r7, r0, #0
+4248 rsbs r0, r1, #0x0
+4250 rsbs r0, r2, #0x0
+4258 rsbs r0, r3, #0x0
+4260 rsbs r0, r4, #0x0
+4268 rsbs r0, r5, #0x0
+4270 rsbs r0, r6, #0x0
+4278 rsbs r0, r7, #0x0
+4240 [ne] rsbne r0, r0, #0x0
+
+// RSB_i_T2 11110|i=x|0|op1=1110|S=0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// RsbIT2: RSB{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F1C00000 rsb r0, r0, #0x0
+F5CF1FFF rsb pc, pc, #0x1fe000 (unpredictable)
+F1C02080 rsb r0, r0, #0x80008000
+F1C03040 rsb r0, r0, #0x40404040
+F1C04020 rsb r0, r0, #0xa0000000
+F1C05010 rsb r0, r0, #0x24000000
+F1C06008 rsb r0, r0, #0x8800000
+F1C07004 rsb r0, r0, #0x2100000
+F1C00002 rsb r0, r0, #0x2
+F1C00001 rsb r0, r0, #0x1
+F1C000FF rsb r0, r0, #0xff
+F1C01000 rsb r0, r0, #0x0
+F1C010FF rsb r0, r0, #0xff00ff
+F1C02000 rsb r0, r0, #0x0
+F1C020FF rsb r0, r0, #0xff00ff00
+F1C03000 rsb r0, r0, #0x0
+F1C030FF rsb r0, r0, #0xffffffff
+F1C04000 rsb r0, r0, #0x80000000
+F1C040FF rsb r0, r0, #0x7f800000
+F1C05000 rsb r0, r0, #0x20000000
+F1C050FF rsb r0, r0, #0x1fe00000
+F1C06000 rsb r0, r0, #0x8000000
+F1C060FF rsb r0, r0, #0x7f80000
+F1C07000 rsb r0, r0, #0x2000000
+F1C070FF rsb r0, r0, #0x1fe0000
+F5C00000 rsb r0, r0, #0x800000
+F5C000FF rsb r0, r0, #0x7f8000
+F5C01000 rsb r0, r0, #0x200000
+F5C010FF rsb r0, r0, #0x1fe000
+F5C02000 rsb r0, r0, #0x80000
+F5C020FF rsb r0, r0, #0x7f800
+F5C03000 rsb r0, r0, #0x20000
+F5C030FF rsb r0, r0, #0x1fe00
+F5C04000 rsb r0, r0, #0x8000
+F5C040FF rsb r0, r0, #0x7f80
+F5C05000 rsb r0, r0, #0x2000
+F5C050FF rsb r0, r0, #0x1fe0
+F5C06000 rsb r0, r0, #0x800
+F5C060FF rsb r0, r0, #0x7f8
+F5C07000 rsb r0, r0, #0x200
+F5C070FF rsb r0, r0, #0x1fe
+F1C00000 [ne] rsbne r0, r0, #0x0
+F1C10200 rsb r2, r1, #0x0
+
+// RSBS_i_T2 11110|i=x|0|op1=1110|S=1|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// RsbsIT2: RSBS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F1D00000 rsbs r0, r0, #0x0
+F5DF1FFF rsbs pc, pc, #0x1fe000 (unpredictable)
+F1D02080 rsbs r0, r0, #0x80008000
+F1D03040 rsbs r0, r0, #0x40404040
+F1D04020 rsbs r0, r0, #0xa0000000
+F1D05010 rsbs r0, r0, #0x24000000
+F1D06008 rsbs r0, r0, #0x8800000
+F1D07004 rsbs r0, r0, #0x2100000
+F1D00002 rsbs r0, r0, #0x2
+F1D00001 rsbs r0, r0, #0x1
+F1D000FF rsbs r0, r0, #0xff
+F1D01000 rsbs r0, r0, #0x0
+F1D010FF rsbs r0, r0, #0xff00ff
+F1D02000 rsbs r0, r0, #0x0
+F1D020FF rsbs r0, r0, #0xff00ff00
+F1D03000 rsbs r0, r0, #0x0
+F1D030FF rsbs r0, r0, #0xffffffff
+F1D04000 rsbs r0, r0, #0x80000000
+F1D040FF rsbs r0, r0, #0x7f800000
+F1D05000 rsbs r0, r0, #0x20000000
+F1D050FF rsbs r0, r0, #0x1fe00000
+F1D06000 rsbs r0, r0, #0x8000000
+F1D060FF rsbs r0, r0, #0x7f80000
+F1D07000 rsbs r0, r0, #0x2000000
+F1D070FF rsbs r0, r0, #0x1fe0000
+F5D00000 rsbs r0, r0, #0x800000
+F5D000FF rsbs r0, r0, #0x7f8000
+F5D01000 rsbs r0, r0, #0x200000
+F5D010FF rsbs r0, r0, #0x1fe000
+F5D02000 rsbs r0, r0, #0x80000
+F5D020FF rsbs r0, r0, #0x7f800
+F5D03000 rsbs r0, r0, #0x20000
+F5D030FF rsbs r0, r0, #0x1fe00
+F5D04000 rsbs r0, r0, #0x8000
+F5D040FF rsbs r0, r0, #0x7f80
+F5D05000 rsbs r0, r0, #0x2000
+F5D050FF rsbs r0, r0, #0x1fe0
+F5D06000 rsbs r0, r0, #0x800
+F5D060FF rsbs r0, r0, #0x7f8
+F5D07000 rsbs r0, r0, #0x200
+F5D070FF rsbs r0, r0, #0x1fe
+F1D00000 [ne] rsbsne r0, r0, #0x0
+F1D10200 rsbs r2, r1, #0x0

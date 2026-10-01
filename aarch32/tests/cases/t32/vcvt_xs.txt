@@ -1,0 +1,57 @@
+// VCVT_xs_T1_D 111|U=x|11111|D=x|imm6=xxxxxx|Vd=xxxx|11|op=xx|L=0|Q=0|M=x|1|Vm=xxxx
+// VcvtXsT1D: VCVT{<c>}{<q>}.<dt1>.<dt2>  <Dd>, <Dm>, #<fbits>
+// read together by <dt1> and <dt2>: U, op
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffea0e38 vcvt.f32.u32 d16, d24, #22
+efb7de33 vcvt.f32.s32 d13, d19, #9
+fff71e3a vcvt.f32.u32 d17, d26, #9
+efab8e1e vcvt.f32.s32 d8, d14, #21
+fff75c37 vcvt.f16.u16 d21, d23, #9
+ffe64e3c vcvt.f32.u32 d20, d28, #26
+eff35c1c vcvt.f16.s16 d21, d12, #13
+ffb6ef18 vcvt.u32.f32 d14, d8, #10
+FFFFFD30 vcvt.u16.f16 d31, d16, #0x1
+EFE02F3F vcvt.s32.f32 d18, d31, #0x20
+FFD00E38 UNDEFINED
+FFC80E38 UNDEFINED
+FFAA0E34 vcvt.f32.u32 d0, d20, #0x16
+FFAAFE32 vcvt.f32.u32 d15, d18, #0x16
+FFEAFE31 vcvt.f32.u32 d31, d17, #0x16
+EFB7DD10 vcvt.s16.f16 d13, d0, #0x9
+FFB7DD1F vcvt.u16.f16 d13, d15, #0x9
+FFEA0E30 vcvt.f32.u32 d16, d16, #0x16
+FFEA0E3F vcvt.f32.u32 d16, d31, #0x16
+EFC02F3F UNALLOCATED
+EFC42F3F UNALLOCATED
+EFC22F3F UNALLOCATED
+EFC12F3F UNALLOCATED
+FFEA0E38 [ne] vcvtne.f32.u32 d16, d24, #0x16
+
+// VCVT_xs_T1_Q 111|U=x|11111|D=x|imm6=xxxxxx|Vd=xxxx|11|op=xx|L=0|Q=1|M=x|1|Vm=xxxx
+// VcvtXsT1Q: VCVT{<c>}{<q>}.<dt1>.<dt2>  <Qd>, <Qm>, #<fbits>
+// read together by <dt1> and <dt2>: U, op
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+effeee72 vcvt.f32.s32 q15, q9, #2
+efad2f70 vcvt.s32.f32 q1, q8, #19
+effa4e50 vcvt.f32.s32 q10, q0, #6
+efe26f76 vcvt.s32.f32 q11, q11, #30
+eff3cc50 vcvt.f16.s16 q14, q0, #13
+efb58d74 vcvt.s16.f16 q4, q10, #11
+efed6e7a vcvt.f32.s32 q11, q13, #19
+efb9ef7c vcvt.s32.f32 q7, q14, #7
+FFFF0E78 vcvt.f32.u32 q8, q12, #0x1
+EF80FF7F UNALLOCATED
+FFA00E72 vcvt.f32.u32 q0, q9, #0x20
+EFD01E71 UNDEFINED
+EF88FE5F UNDEFINED
+EFC4FF7F UNALLOCATED
+EF822F70 UNALLOCATED
+EF812F70 UNALLOCATED
+FFFE0C72 vcvt.f16.u16 q8, q9, #0x2
+FFFEED72 vcvt.u16.f16 q15, q9, #0x2
+FFFEEF72 vcvt.u32.f32 q15, q9, #0x2
+EFFEEE72 [ne] vcvtne.f32.s32 q15, q9, #0x2

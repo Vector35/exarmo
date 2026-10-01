@@ -1,0 +1,16 @@
+// histseg_z_zz_ 010|0010|1|size=xx|1|Zm=xxxxx|101|000|Zn=xxxxx|Zd=xxxxx
+// HistsegZZz: HISTSEG  <Zd>.B, <Zn>.B, <Zm>.B
+// register fields: Zm, Zn, Zd
+4533A017 histseg z23.b, z0.b, z19.b
+4524A279 histseg z25.b, z19.b, z4.b
+452CA0A7 histseg z7.b, z5.b, z12.b
+453EA3DE histseg z30.b, z30.b, z30.b
+4527A25E histseg z30.b, z18.b, z7.b
+4523A190 histseg z16.b, z12.b, z3.b
+4539A1D2 histseg z18.b, z14.b, z25.b
+453EA286 histseg z6.b, z20.b, z30.b
+4520A3E0 histseg z0.b, z31.b, z0.b
+453FA01F histseg z31.b, z0.b, z31.b
+4573A017 UNDEFINED
+45B3A017 UNDEFINED
+45F3A017 UNDEFINED

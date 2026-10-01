@@ -1,0 +1,265 @@
+// scvtf_z_p_z_h2fp16 011|0010|1|opc=01|0|10|opc2=01|int_U=0|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZH2fp16: SCVTF  <Zd>.H, <Pg>/M, <Zn>.H
+// register fields: Pg, Zn, Zd
+6552A8E0 scvtf z0.h, p2/m, z7.h
+6552B1C3 scvtf z3.h, p4/m, z14.h
+6552A4B9 scvtf z25.h, p1/m, z5.h
+6552AA46 scvtf z6.h, p2/m, z18.h
+6552AF19 scvtf z25.h, p3/m, z24.h
+6552AF0D scvtf z13.h, p3/m, z24.h
+6552BA0D scvtf z13.h, p6/m, z16.h
+6552BCCD scvtf z13.h, p7/m, z6.h
+6552BDA1 scvtf z1.h, p7/m, z13.h
+6552B26E scvtf z14.h, p4/m, z19.h
+6552B133 scvtf z19.h, p4/m, z9.h
+6552B96D scvtf z13.h, p6/m, z11.h
+6552AFFF scvtf z31.h, p3/m, z31.h
+6552B3C2 scvtf z2.h, p4/m, z30.h
+6552A983 scvtf z3.h, p2/m, z12.h
+6552BEC1 scvtf z1.h, p7/m, z22.h
+6552A000 scvtf z0.h, p0/m, z0.h
+6552B4E0 scvtf z0.h, p5/m, z7.h
+
+// scvtf_z_p_z_h2fp16z 011|0010|0|opc=01|011|10|o2=0|1|o3=1|int_U=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZH2fp16z: SCVTF  <Zd>.H, <Pg>/Z, <Zn>.H
+// register fields: Pg, Zn, Zd
+645CC005 scvtf z5.h, p0/z, z0.h
+645CC00C scvtf z12.h, p0/z, z0.h
+645CC013 scvtf z19.h, p0/z, z0.h
+645CC7E0 scvtf z0.h, p1/z, z31.h
+645CC81F scvtf z31.h, p2/z, z0.h
+645CCC05 scvtf z5.h, p3/z, z0.h
+645CD005 scvtf z5.h, p4/z, z0.h
+645CD405 scvtf z5.h, p5/z, z0.h
+645CD805 scvtf z5.h, p6/z, z0.h
+645CDC05 scvtf z5.h, p7/z, z0.h
+645CC000 scvtf z0.h, p0/z, z0.h
+
+// scvtf_z_p_z_w2d 011|0010|1|opc=11|0|10|opc2=00|int_U=0|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZW2d: SCVTF  <Zd>.D, <Pg>/M, <Zn>.S
+// register fields: Pg, Zn, Zd
+65D0B7A0 scvtf z0.d, p5/m, z29.s
+65D0BBE2 scvtf z2.d, p6/m, z31.s
+65D0A7B9 scvtf z25.d, p1/m, z29.s
+65D0AF01 scvtf z1.d, p3/m, z24.s
+65D0A3B2 scvtf z18.d, p0/m, z29.s
+65D0A6E0 scvtf z0.d, p1/m, z23.s
+65D0A9C6 scvtf z6.d, p2/m, z14.s
+65D0A0F7 scvtf z23.d, p0/m, z7.s
+65D0A7BB scvtf z27.d, p1/m, z29.s
+65D0A8D3 scvtf z19.d, p2/m, z6.s
+65D0B4D9 scvtf z25.d, p5/m, z6.s
+65D0B81E scvtf z30.d, p6/m, z0.s
+65D0A96C scvtf z12.d, p2/m, z11.s
+65D0A5E9 scvtf z9.d, p1/m, z15.s
+65D0A15B scvtf z27.d, p0/m, z10.s
+65D0B625 scvtf z5.d, p5/m, z17.s
+65D0B3BF scvtf z31.d, p4/m, z29.s
+65D0BFA0 scvtf z0.d, p7/m, z29.s
+65D0B4A0 scvtf z0.d, p5/m, z5.s
+65D0B7BD scvtf z29.d, p5/m, z29.s
+
+// scvtf_z_p_z_w2dz 011|0010|0|opc=11|011|10|o2=0|1|o3=0|int_U=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZW2dz: SCVTF  <Zd>.D, <Pg>/Z, <Zn>.S
+// register fields: Pg, Zn, Zd
+64DC8005 scvtf z5.d, p0/z, z0.s
+64DC800C scvtf z12.d, p0/z, z0.s
+64DC8013 scvtf z19.d, p0/z, z0.s
+64DC87E0 scvtf z0.d, p1/z, z31.s
+64DC881F scvtf z31.d, p2/z, z0.s
+64DC8C05 scvtf z5.d, p3/z, z0.s
+64DC9005 scvtf z5.d, p4/z, z0.s
+64DC9405 scvtf z5.d, p5/z, z0.s
+64DC9805 scvtf z5.d, p6/z, z0.s
+64DC9C05 scvtf z5.d, p7/z, z0.s
+64DC8000 scvtf z0.d, p0/z, z0.s
+
+// scvtf_z_p_z_w2fp16 011|0010|1|opc=01|0|10|opc2=10|int_U=0|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZW2fp16: SCVTF  <Zd>.H, <Pg>/M, <Zn>.S
+// register fields: Pg, Zn, Zd
+6554AE87 scvtf z7.h, p3/m, z20.s
+6554B083 scvtf z3.h, p4/m, z4.s
+6554BABD scvtf z29.h, p6/m, z21.s
+6554B17E scvtf z30.h, p4/m, z11.s
+6554A6F7 scvtf z23.h, p1/m, z23.s
+6554B6E0 scvtf z0.h, p5/m, z23.s
+6554B0FC scvtf z28.h, p4/m, z7.s
+6554BED1 scvtf z17.h, p7/m, z22.s
+6554AE9A scvtf z26.h, p3/m, z20.s
+6554AF1E scvtf z30.h, p3/m, z24.s
+6554B20F scvtf z15.h, p4/m, z16.s
+6554B56B scvtf z11.h, p5/m, z11.s
+6554BC62 scvtf z2.h, p7/m, z3.s
+6554ACD3 scvtf z19.h, p3/m, z6.s
+6554A29B scvtf z27.h, p0/m, z20.s
+6554A2AB scvtf z11.h, p0/m, z21.s
+6554A81F scvtf z31.h, p2/m, z0.s
+6554AFE7 scvtf z7.h, p3/m, z31.s
+6554AE83 scvtf z3.h, p3/m, z20.s
+
+// scvtf_z_p_z_w2fp16z 011|0010|0|opc=01|011|10|o2=1|1|o3=0|int_U=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZW2fp16z: SCVTF  <Zd>.H, <Pg>/Z, <Zn>.S
+// register fields: Pg, Zn, Zd
+645D8000 scvtf z0.h, p0/z, z0.s
+645D8007 scvtf z7.h, p0/z, z0.s
+645D800E scvtf z14.h, p0/z, z0.s
+645D87FF scvtf z31.h, p1/z, z31.s
+645D8800 scvtf z0.h, p2/z, z0.s
+645D8C00 scvtf z0.h, p3/z, z0.s
+645D9000 scvtf z0.h, p4/z, z0.s
+645D9400 scvtf z0.h, p5/z, z0.s
+645D9800 scvtf z0.h, p6/z, z0.s
+645D9C00 scvtf z0.h, p7/z, z0.s
+645D8443 scvtf z3.h, p1/z, z2.s
+
+// scvtf_z_p_z_w2s 011|0010|1|opc=10|0|10|opc2=10|int_U=0|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZW2s: SCVTF  <Zd>.S, <Pg>/M, <Zn>.S
+// register fields: Pg, Zn, Zd
+6594B1AF scvtf z15.s, p4/m, z13.s
+6594BB24 scvtf z4.s, p6/m, z25.s
+6594BA32 scvtf z18.s, p6/m, z17.s
+6594B364 scvtf z4.s, p4/m, z27.s
+6594BF65 scvtf z5.s, p7/m, z27.s
+6594BFA5 scvtf z5.s, p7/m, z29.s
+6594A217 scvtf z23.s, p0/m, z16.s
+6594AAD3 scvtf z19.s, p2/m, z22.s
+6594A8DB scvtf z27.s, p2/m, z6.s
+6594A9F3 scvtf z19.s, p2/m, z15.s
+6594A41A scvtf z26.s, p1/m, z0.s
+6594A0B3 scvtf z19.s, p0/m, z5.s
+6594BE59 scvtf z25.s, p7/m, z18.s
+6594AD2D scvtf z13.s, p3/m, z9.s
+6594BDF6 scvtf z22.s, p7/m, z15.s
+6594A19B scvtf z27.s, p0/m, z12.s
+6594B7E0 scvtf z0.s, p5/m, z31.s
+6594B1BF scvtf z31.s, p4/m, z13.s
+6594B08F scvtf z15.s, p4/m, z4.s
+6594B1AD scvtf z13.s, p4/m, z13.s
+
+// scvtf_z_p_z_w2sz 011|0010|0|opc=10|011|10|o2=1|1|o3=0|int_U=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZW2sz: SCVTF  <Zd>.S, <Pg>/Z, <Zn>.S
+// register fields: Pg, Zn, Zd
+649D8005 scvtf z5.s, p0/z, z0.s
+649D800C scvtf z12.s, p0/z, z0.s
+649D8013 scvtf z19.s, p0/z, z0.s
+649D87E0 scvtf z0.s, p1/z, z31.s
+649D881F scvtf z31.s, p2/z, z0.s
+649D8C05 scvtf z5.s, p3/z, z0.s
+649D9005 scvtf z5.s, p4/z, z0.s
+649D9405 scvtf z5.s, p5/z, z0.s
+649D9805 scvtf z5.s, p6/z, z0.s
+649D9C05 scvtf z5.s, p7/z, z0.s
+649D8000 scvtf z0.s, p0/z, z0.s
+
+// scvtf_z_p_z_x2d 011|0010|1|opc=11|0|10|opc2=11|int_U=0|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZX2d: SCVTF  <Zd>.D, <Pg>/M, <Zn>.D
+// register fields: Pg, Zn, Zd
+65D6A2D1 scvtf z17.d, p0/m, z22.d
+65D6B7E5 scvtf z5.d, p5/m, z31.d
+65D6AAB7 scvtf z23.d, p2/m, z21.d
+65D6B4A1 scvtf z1.d, p5/m, z5.d
+65D6BB8C scvtf z12.d, p6/m, z28.d
+65D6A4A0 scvtf z0.d, p1/m, z5.d
+65D6B03B scvtf z27.d, p4/m, z1.d
+65D6AE41 scvtf z1.d, p3/m, z18.d
+65D6B512 scvtf z18.d, p5/m, z8.d
+65D6A27B scvtf z27.d, p0/m, z19.d
+65D6AB5C scvtf z28.d, p2/m, z26.d
+65D6AC3E scvtf z30.d, p3/m, z1.d
+65D6B456 scvtf z22.d, p5/m, z2.d
+65D6BB9E scvtf z30.d, p6/m, z28.d
+65D6A33C scvtf z28.d, p0/m, z25.d
+65D6A6C8 scvtf z8.d, p1/m, z22.d
+65D6BC1F scvtf z31.d, p7/m, z0.d
+65D6A2D6 scvtf z22.d, p0/m, z22.d
+
+// scvtf_z_p_z_x2dz 011|0010|0|opc=11|011|10|o2=1|1|o3=1|int_U=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZX2dz: SCVTF  <Zd>.D, <Pg>/Z, <Zn>.D
+// register fields: Pg, Zn, Zd
+64DDC006 scvtf z6.d, p0/z, z0.d
+64DDC00D scvtf z13.d, p0/z, z0.d
+64DDC014 scvtf z20.d, p0/z, z0.d
+64DDC7E0 scvtf z0.d, p1/z, z31.d
+64DDC81F scvtf z31.d, p2/z, z0.d
+64DDCC06 scvtf z6.d, p3/z, z0.d
+64DDD006 scvtf z6.d, p4/z, z0.d
+64DDD406 scvtf z6.d, p5/z, z0.d
+64DDD806 scvtf z6.d, p6/z, z0.d
+64DDDC06 scvtf z6.d, p7/z, z0.d
+64DDC000 scvtf z0.d, p0/z, z0.d
+
+// scvtf_z_p_z_x2fp16 011|0010|1|opc=01|0|10|opc2=11|int_U=0|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZX2fp16: SCVTF  <Zd>.H, <Pg>/M, <Zn>.D
+// register fields: Pg, Zn, Zd
+6556B2DE scvtf z30.h, p4/m, z22.d
+6556B02F scvtf z15.h, p4/m, z1.d
+6556B26A scvtf z10.h, p4/m, z19.d
+6556B381 scvtf z1.h, p4/m, z28.d
+6556B2A4 scvtf z4.h, p4/m, z21.d
+6556A18B scvtf z11.h, p0/m, z12.d
+6556AD6B scvtf z11.h, p3/m, z11.d
+6556B9F5 scvtf z21.h, p6/m, z15.d
+6556AAA3 scvtf z3.h, p2/m, z21.d
+6556ABF7 scvtf z23.h, p2/m, z31.d
+6556B095 scvtf z21.h, p4/m, z4.d
+6556AB3B scvtf z27.h, p2/m, z25.d
+6556A995 scvtf z21.h, p2/m, z12.d
+6556ABB0 scvtf z16.h, p2/m, z29.d
+6556AD9F scvtf z31.h, p3/m, z12.d
+6556B6C0 scvtf z0.h, p5/m, z22.d
+6556A41E scvtf z30.h, p1/m, z0.d
+6556BEDE scvtf z30.h, p7/m, z22.d
+
+// scvtf_z_p_z_x2fp16z 011|0010|0|opc=01|011|10|o2=1|1|o3=1|int_U=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZX2fp16z: SCVTF  <Zd>.H, <Pg>/Z, <Zn>.D
+// register fields: Pg, Zn, Zd
+645DC003 scvtf z3.h, p0/z, z0.d
+645DC00A scvtf z10.h, p0/z, z0.d
+645DC011 scvtf z17.h, p0/z, z0.d
+645DC7E0 scvtf z0.h, p1/z, z31.d
+645DC81F scvtf z31.h, p2/z, z0.d
+645DCC03 scvtf z3.h, p3/z, z0.d
+645DD003 scvtf z3.h, p4/z, z0.d
+645DD403 scvtf z3.h, p5/z, z0.d
+645DD803 scvtf z3.h, p6/z, z0.d
+645DDC03 scvtf z3.h, p7/z, z0.d
+645DC000 scvtf z0.h, p0/z, z0.d
+
+// scvtf_z_p_z_x2s 011|0010|1|opc=11|0|10|opc2=10|int_U=0|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZX2s: SCVTF  <Zd>.S, <Pg>/M, <Zn>.D
+// register fields: Pg, Zn, Zd
+65D4AB99 scvtf z25.s, p2/m, z28.d
+65D4B38A scvtf z10.s, p4/m, z28.d
+65D4B158 scvtf z24.s, p4/m, z10.d
+65D4B64F scvtf z15.s, p5/m, z18.d
+65D4A1A2 scvtf z2.s, p0/m, z13.d
+65D4ADC4 scvtf z4.s, p3/m, z14.d
+65D4A979 scvtf z25.s, p2/m, z11.d
+65D4BFED scvtf z13.s, p7/m, z31.d
+65D4BE03 scvtf z3.s, p7/m, z16.d
+65D4B7FE scvtf z30.s, p5/m, z31.d
+65D4AE6A scvtf z10.s, p3/m, z19.d
+65D4A8F8 scvtf z24.s, p2/m, z7.d
+65D4ACFB scvtf z27.s, p3/m, z7.d
+65D4B4EA scvtf z10.s, p5/m, z7.d
+65D4B1BD scvtf z29.s, p4/m, z13.d
+65D4BBA9 scvtf z9.s, p6/m, z29.d
+65D4A400 scvtf z0.s, p1/m, z0.d
+65D4AB9F scvtf z31.s, p2/m, z28.d
+65D4A859 scvtf z25.s, p2/m, z2.d
+65D4AB82 scvtf z2.s, p2/m, z28.d
+
+// scvtf_z_p_z_x2sz 011|0010|0|opc=11|011|10|o2=1|1|o3=0|int_U=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ScvtfZPZX2sz: SCVTF  <Zd>.S, <Pg>/Z, <Zn>.D
+// register fields: Pg, Zn, Zd
+64DD8003 scvtf z3.s, p0/z, z0.d
+64DD800A scvtf z10.s, p0/z, z0.d
+64DD8011 scvtf z17.s, p0/z, z0.d
+64DD87E0 scvtf z0.s, p1/z, z31.d
+64DD881F scvtf z31.s, p2/z, z0.d
+64DD8C03 scvtf z3.s, p3/z, z0.d
+64DD9003 scvtf z3.s, p4/z, z0.d
+64DD9403 scvtf z3.s, p5/z, z0.d
+64DD9803 scvtf z3.s, p6/z, z0.d
+64DD9C03 scvtf z3.s, p7/z, z0.d
+64DD8000 scvtf z0.s, p0/z, z0.d

@@ -1,0 +1,100 @@
+// FABD_asimdsame_only 0|Q=x|U=1|0|111|0|1|sz=x|1|Rm=xxxxx|opcode=11010|1|Rn=xxxxx|Rd=xxxxx
+// FabdAsimdsameOnly: FABD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+6EA1D645 fabd v5.4s, v18.4s, v1.4s
+6EFDD5B4 fabd v20.2d, v13.2d, v29.2d
+6EF4D7C9 fabd v9.2d, v30.2d, v20.2d
+6EB0D438 fabd v24.4s, v1.4s, v16.4s
+2EB6D5AF fabd v15.2s, v13.2s, v22.2s
+2EA9D4BD fabd v29.2s, v5.2s, v9.2s
+6EFCD43B fabd v27.2d, v1.2d, v28.2d
+2EAED6DB fabd v27.2s, v22.2s, v14.2s
+6EE3D7B2 fabd v18.2d, v29.2d, v3.2d
+2EBED723 fabd v3.2s, v25.2s, v30.2s
+6EA7D791 fabd v17.4s, v28.4s, v7.4s
+6EF7D639 fabd v25.2d, v17.2d, v23.2d
+6EE1D520 fabd v0.2d, v9.2d, v1.2d
+6EEAD5FC fabd v28.2d, v15.2d, v10.2d
+6EF3D693 fabd v19.2d, v20.2d, v19.2d
+2EB3D7DB fabd v27.2s, v30.2s, v19.2s
+6EA0D41F fabd v31.4s, v0.4s, v0.4s
+6EBFD7E5 fabd v5.4s, v31.4s, v31.4s
+2EE1D645 UNDEFINED
+6EA1D652 fabd v18.4s, v18.4s, v1.4s
+
+// FABD_asimdsamefp16_only 0|Q=x|U=1|0|111|0|a=1|10|Rm=xxxxx|00|opcode=010|1|Rn=xxxxx|Rd=xxxxx
+// FabdAsimdsamefp16Only: FABD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+6ED21776 fabd v22.8h, v27.8h, v18.8h
+6ED415E5 fabd v5.8h, v15.8h, v20.8h
+6EC7179F fabd v31.8h, v28.8h, v7.8h
+6EDA145C fabd v28.8h, v2.8h, v26.8h
+6ED51697 fabd v23.8h, v20.8h, v21.8h
+6ED316E2 fabd v2.8h, v23.8h, v19.8h
+2EDD15F5 fabd v21.4h, v15.4h, v29.4h
+2ED315A9 fabd v9.4h, v13.4h, v19.4h
+6EDF1633 fabd v19.8h, v17.8h, v31.8h
+2ED5179F fabd v31.4h, v28.4h, v21.4h
+6EC0149B fabd v27.8h, v4.8h, v0.8h
+6EC0155C fabd v28.8h, v10.8h, v0.8h
+2EDA1749 fabd v9.4h, v26.4h, v26.4h
+6EC21413 fabd v19.8h, v0.8h, v2.8h
+6EC4178F fabd v15.8h, v28.8h, v4.8h
+6ED11419 fabd v25.8h, v0.8h, v17.8h
+6ED217E0 fabd v0.8h, v31.8h, v18.8h
+6ED21772 fabd v18.8h, v27.8h, v18.8h
+6ED2177B fabd v27.8h, v27.8h, v18.8h
+
+// FABD_asisdsame_only 01|U=1|1|111|0|1|sz=x|1|Rm=xxxxx|opcode=11010|1|Rn=xxxxx|Rd=xxxxx
+// FabdAsisdsameOnly: FABD  <V><d>, <V><n>, <V><m>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// read together by <m>: sz, Rm
+// register fields: Rm, Rn, Rd
+7EAAD4C0 fabd s0, s6, s10
+7EA2D62C fabd s12, s17, s2
+7EA8D72A fabd s10, s25, s8
+7EFFD4D9 fabd d25, d6, d31
+7EFCD505 fabd d5, d8, d28
+7EF7D7A9 fabd d9, d29, d23
+7EA3D411 fabd s17, s0, s3
+7EF3D4DF fabd d31, d6, d19
+7EFCD509 fabd d9, d8, d28
+7EF6D59D fabd d29, d12, d22
+7EA7D78A fabd s10, s28, s7
+7EAED4CC fabd s12, s6, s14
+7EE3D670 fabd d16, d19, d3
+7EAAD7DE fabd s30, s30, s10
+7EE1D477 fabd d23, d3, d1
+7EF3D742 fabd d2, d26, d19
+7EA0D7E0 fabd s0, s31, s0
+7EAAD55F fabd s31, s10, s10
+7EEAD4C0 fabd d0, d6, d10
+7EBFD4C0 fabd s0, s6, s31
+7EE0D4C0 fabd d0, d6, d0
+7EEAD400 fabd d0, d0, d10
+7EEAD7E0 fabd d0, d31, d10
+
+// FABD_asisdsamefp16_only 01|U=1|1|111|0|a=1|10|Rm=xxxxx|00|opcode=010|1|Rn=xxxxx|Rd=xxxxx
+// FabdAsisdsamefp16Only: FABD  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+7EC51429 fabd h9, h1, h5
+7ED116B8 fabd h24, h21, h17
+7EC916DC fabd h28, h22, h9
+7EDC1640 fabd h0, h18, h28
+7EDD17C0 fabd h0, h30, h29
+7EDC16AA fabd h10, h21, h28
+7EC7163D fabd h29, h17, h7
+7EC115A5 fabd h5, h13, h1
+7ED1145F fabd h31, h2, h17
+7EC6153B fabd h27, h9, h6
+7EC0141A fabd h26, h0, h0
+7ED61494 fabd h20, h4, h22
+7ED516FA fabd h26, h23, h21
+7ED016F2 fabd h18, h23, h16
+7ED5151D fabd h29, h8, h21
+7EC715C8 fabd h8, h14, h7
+7EDF17E9 fabd h9, h31, h31
+7EC51425 fabd h5, h1, h5
+7EC51421 fabd h1, h1, h5

@@ -1,0 +1,178 @@
+// SUB_SP_i_T1 1011|0000|S=1|imm7=xxxxxxx
+// SubSpIT1: SUB{<c>}{<q>}  {<SP>, }<SP>, #<imm7>
+// IT state read: condition
+b080 sub sp, #0
+b081 sub sp, #4
+b082 sub sp, #8
+b083 sub sp, #12
+b084 sub sp, #16
+b085 sub sp, #20
+b086 sub sp, #24
+b087 sub sp, #28
+B0FF sub sp, #0x1fc
+B0C0 sub sp, #0x100
+B0A0 sub sp, #0x80
+B090 sub sp, #0x40
+B088 sub sp, #0x20
+B080 [ne] subne sp, #0x0
+
+// SUB_SP_i_T2 11110|i=x|0|op1=1101|S=0|Rn=1101|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// SubSpIT2: SUB{<c>}{<q>}  {<Rd>, }SP, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f1ad6065 sub r0, sp, #240123904
+f1ad0950 sub r9, sp, #80
+f5ad70af sub r0, sp, #350
+f5ad2687 sub r6, sp, #276480
+f1ad1f6a sub pc, sp, #6946922 (unpredictable)
+f5ad1677 sub r6, sp, #4046848
+F1AD3000 sub r0, sp, #0x0
+F1AD40FF sub r0, sp, #0x7f800000
+F1AD5080 sub r0, sp, #0x10000000
+F1AD6040 sub r0, sp, #0xc000000
+F1AD6020 sub r0, sp, #0xa000000
+F1AD6010 sub r0, sp, #0x9000000
+F1AD6008 sub r0, sp, #0x8800000
+F1AD6004 sub r0, sp, #0x8400000
+F1AD6002 sub r0, sp, #0x8200000
+F1AD6001 sub r0, sp, #0x8100000
+F1AD0000 sub r0, sp, #0x0
+F1AD00FF sub r0, sp, #0xff
+F1AD1000 sub r0, sp, #0x0
+F1AD10FF sub r0, sp, #0xff00ff
+F1AD2000 sub r0, sp, #0x0
+F1AD20FF sub r0, sp, #0xff00ff00
+F1AD30FF sub r0, sp, #0xffffffff
+F1AD4000 sub r0, sp, #0x80000000
+F1AD5000 sub r0, sp, #0x20000000
+F1AD50FF sub r0, sp, #0x1fe00000
+F1AD6000 sub r0, sp, #0x8000000
+F1AD60FF sub r0, sp, #0x7f80000
+F1AD7000 sub r0, sp, #0x2000000
+F1AD70FF sub r0, sp, #0x1fe0000
+F5AD0000 sub r0, sp, #0x800000
+F5AD00FF sub r0, sp, #0x7f8000
+F5AD1000 sub r0, sp, #0x200000
+F5AD10FF sub r0, sp, #0x1fe000
+F5AD2000 sub r0, sp, #0x80000
+F5AD20FF sub r0, sp, #0x7f800
+F5AD3000 sub r0, sp, #0x20000
+F5AD30FF sub r0, sp, #0x1fe00
+F5AD4000 sub r0, sp, #0x8000
+F5AD40FF sub r0, sp, #0x7f80
+F5AD5000 sub r0, sp, #0x2000
+F5AD50FF sub r0, sp, #0x1fe0
+F5AD6000 sub r0, sp, #0x800
+F5AD60FF sub r0, sp, #0x7f8
+F5AD7000 sub r0, sp, #0x200
+F5AD70FF sub r0, sp, #0x1fe
+F1AD6065 [ne] subne r0, sp, #0xe500000
+
+// SUB_SP_i_T3 111|10|i=x|1|0|o1=1|0|o2=1|0|Rn=1101|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// T3bSubSpIT3: SUBW{<c>}{<q>}  {<Rd>, }SP, #<imm12>
+// read together by <imm12>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f6ad5bed subw r11, sp, #3565
+f6ad6119 subw r1, sp, #3609
+f2ad7dc4 subw sp, sp, #1988
+f2ad180f subw r8, sp, #271
+f2ad1b18 subw r11, sp, #280
+f2ad746f subw r4, sp, #1903
+F6AD0000 subw r0, sp, #0x800
+F6AD2FFF subw pc, sp, #0xaff (unpredictable)
+F6AD3B80 subw r11, sp, #0xb80
+F6AD4B40 subw r11, sp, #0xc40
+F6AD5B20 subw r11, sp, #0xd20
+F6AD5B10 subw r11, sp, #0xd10
+F6AD5B08 subw r11, sp, #0xd08
+F6AD5B04 subw r11, sp, #0xd04
+F6AD5B02 subw r11, sp, #0xd02
+F6AD5B01 subw r11, sp, #0xd01
+F2AD0B00 subw r11, sp, #0x0
+F2AD0BFF subw r11, sp, #0xff
+F2AD1B00 subw r11, sp, #0x100
+F2AD1BFF subw r11, sp, #0x1ff
+F2AD2B00 subw r11, sp, #0x200
+F2AD2BFF subw r11, sp, #0x2ff
+F2AD3B00 subw r11, sp, #0x300
+F2AD3BFF subw r11, sp, #0x3ff
+F2AD4B00 subw r11, sp, #0x400
+F2AD4BFF subw r11, sp, #0x4ff
+F2AD5B00 subw r11, sp, #0x500
+F2AD5BFF subw r11, sp, #0x5ff
+F2AD6B00 subw r11, sp, #0x600
+F2AD6BFF subw r11, sp, #0x6ff
+F2AD7B00 subw r11, sp, #0x700
+F2AD7BFF subw r11, sp, #0x7ff
+F6AD0B00 subw r11, sp, #0x800
+F6AD0BFF subw r11, sp, #0x8ff
+F6AD1B00 subw r11, sp, #0x900
+F6AD1BFF subw r11, sp, #0x9ff
+F6AD2B00 subw r11, sp, #0xa00
+F6AD2BFF subw r11, sp, #0xaff
+F6AD3B00 subw r11, sp, #0xb00
+F6AD3BFF subw r11, sp, #0xbff
+F6AD4B00 subw r11, sp, #0xc00
+F6AD4BFF subw r11, sp, #0xcff
+F6AD5B00 subw r11, sp, #0xd00
+F6AD5BFF subw r11, sp, #0xdff
+F6AD6B00 subw r11, sp, #0xe00
+F6AD6BFF subw r11, sp, #0xeff
+F6AD7B00 subw r11, sp, #0xf00
+F6AD7BFF subw r11, sp, #0xfff
+F6AD5BED [ne] subwne r11, sp, #0xded
+
+// SUBS_SP_i_T2 11110|i=x|0|op1=1101|S=1|Rn=1101|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// SubsSpIT2: SUBS{<c>}{<q>}  {<Rd>, }SP, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f1bd749d subs r4, sp, #20578304
+f5bd4762 subs r7, sp, #57856
+f1bd1197 subs r1, sp, #9896087
+f5bd4614 subs r6, sp, #37888
+f1bd3050 subs r0, sp, #1347440720
+f1bd2db0 subs sp, sp, #2952835072
+F1BD0400 subs r4, sp, #0x0
+F1BD54FF subs r4, sp, #0x1fe00000
+F1BD6480 subs r4, sp, #0x4000000
+F1BD7440 subs r4, sp, #0x3000000
+F1BD7420 subs r4, sp, #0x2800000
+F1BD7410 subs r4, sp, #0x2400000
+F1BD7408 subs r4, sp, #0x2200000
+F1BD7404 subs r4, sp, #0x2100000
+F1BD7402 subs r4, sp, #0x2080000
+F1BD7401 subs r4, sp, #0x2040000
+F1BD04FF subs r4, sp, #0xff
+F1BD1400 subs r4, sp, #0x0
+F1BD14FF subs r4, sp, #0xff00ff
+F1BD2400 subs r4, sp, #0x0
+F1BD24FF subs r4, sp, #0xff00ff00
+F1BD3400 subs r4, sp, #0x0
+F1BD34FF subs r4, sp, #0xffffffff
+F1BD4400 subs r4, sp, #0x80000000
+F1BD44FF subs r4, sp, #0x7f800000
+F1BD5400 subs r4, sp, #0x20000000
+F1BD6400 subs r4, sp, #0x8000000
+F1BD64FF subs r4, sp, #0x7f80000
+F1BD7400 subs r4, sp, #0x2000000
+F1BD74FF subs r4, sp, #0x1fe0000
+F5BD0400 subs r4, sp, #0x800000
+F5BD04FF subs r4, sp, #0x7f8000
+F5BD1400 subs r4, sp, #0x200000
+F5BD14FF subs r4, sp, #0x1fe000
+F5BD2400 subs r4, sp, #0x80000
+F5BD24FF subs r4, sp, #0x7f800
+F5BD3400 subs r4, sp, #0x20000
+F5BD34FF subs r4, sp, #0x1fe00
+F5BD4400 subs r4, sp, #0x8000
+F5BD44FF subs r4, sp, #0x7f80
+F5BD5400 subs r4, sp, #0x2000
+F5BD54FF subs r4, sp, #0x1fe0
+F5BD6400 subs r4, sp, #0x800
+F5BD64FF subs r4, sp, #0x7f8
+F5BD7400 subs r4, sp, #0x200
+F5BD74FF subs r4, sp, #0x1fe
+F1BD749D [ne] subsne r4, sp, #0x13a0000

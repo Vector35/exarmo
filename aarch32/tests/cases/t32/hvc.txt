@@ -1,0 +1,28 @@
+// HVC_T1 111|10|1|1111|1|o1=0|imm4=xxxx|1|0|o2=0|0|imm12=xxxxxxxxxxxx
+// HvcT1: HVC{<q>}  {#}<imm16>
+// read together by <imm16>: imm4, imm12
+f7e48896 hvc #18582
+f7e28d03 hvc #11523
+f7e08d8f hvc #3471
+f7e789a7 hvc #31143
+f7e88c02 hvc #35842
+f7e389d7 hvc #14807
+f7e88a76 hvc #35446
+f7ea8ab3 hvc #43699
+F7EF8000 hvc #0xf000
+F7E18FFF hvc #0x1fff
+F7E48800 hvc #0x4800
+F7E48400 hvc #0x4400
+F7E48200 hvc #0x4200
+F7E48100 hvc #0x4100
+F7E48080 hvc #0x4080
+F7E48040 hvc #0x4040
+F7E48020 hvc #0x4020
+F7E48010 hvc #0x4010
+F7E48008 hvc #0x4008
+F7E48004 hvc #0x4004
+F7E48002 hvc #0x4002
+F7E48001 hvc #0x4001
+F7E08000 hvc #0x0
+F7E08FFF hvc #0xfff
+F7EF8FFF hvc #0xffff

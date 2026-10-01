@@ -1,0 +1,22 @@
+// VRSHRN_A1 1111|0|01|U=0|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=1000|L=0|Q=1|M=x|1|Vm=xxxx
+// VrshrnA1: VRSHRN{<c>}{<q>}.I<size>  <Dd>, <Qm>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+f2aae85e vrshrn.i64 d14, q7, #22
+f2e27854 vrshrn.i64 d23, q2, #30
+f28f2878 vrshrn.i16 d2, q12, #1
+f29e0872 vrshrn.i32 d0, q9, #2
+f2d37872 vrshrn.i32 d23, q9, #13
+f2ba8872 vrshrn.i64 d8, q9, #6
+f2b46876 vrshrn.i64 d6, q11, #12
+f2e8c85a vrshrn.i64 d28, q5, #24
+F2C0785F UNDEFINED
+F2BFF850 vrshrn.i64 d15, q0, #0x1
+F2A04850 vrshrn.i64 d4, q0, #0x20
+F2901870 vrshrn.i32 d1, q8, #0x10
+F288F85E vrshrn.i16 d15, q7, #0x8
+F2C47851 UNDEFINED
+F2C2785F UNDEFINED
+F2C1787F UNDEFINED
+F2EA085E vrshrn.i64 d16, q7, #0x16
+F2EAF85E vrshrn.i64 d31, q7, #0x16

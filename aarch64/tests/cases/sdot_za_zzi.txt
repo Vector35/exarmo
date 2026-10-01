@@ -1,0 +1,49 @@
+// sdot_za_zzi_d2xi 1|10|0000|1|11|01|Zm=xxxx|0|Rv=xx|00|i1=x|Zn=xxxx|0|U=0|1|off3=xxx
+// SdotZaZziD2xi: SDOT  ZA.D[<Wv>, <offs>{, VGx2}], { <Zn1>.H-<Zn2>.H }, <Zm>.H[<index>]
+// register fields: Zm, Rv, Zn
+C1D0000E sdot za.d[w8, 6, vgx2], {z0.h-z1.h}, z0.h[0]
+C1D0004D sdot za.d[w8, 5, vgx2], {z2.h-z3.h}, z0.h[0]
+C1D0008C sdot za.d[w8, 4, vgx2], {z4.h-z5.h}, z0.h[0]
+C1DF27C8 sdot za.d[w9, 0, vgx2], {z30.h-z31.h}, z15.h[1]
+C1D04009 sdot za.d[w10, 1, vgx2], {z0.h-z1.h}, z0.h[0]
+C1D0600A sdot za.d[w11, 2, vgx2], {z0.h-z1.h}, z0.h[0]
+C1D0000B sdot za.d[w8, 3, vgx2], {z0.h-z1.h}, z0.h[0]
+C1D0000F sdot za.d[w8, 7, vgx2], {z0.h-z1.h}, z0.h[0]
+C1D140CE sdot za.d[w10, 6, vgx2], {z6.h-z7.h}, z1.h[0]
+
+// sdot_za_zzi_d4xi 1|10|0000|1|11|01|Zm=xxxx|1|Rv=xx|0|op=0|i1=x|Zn=xxx|00|U=0|1|off3=xxx
+// SdotZaZziD4xi: SDOT  ZA.D[<Wv>, <offs>{, VGx4}], { <Zn1>.H-<Zn4>.H }, <Zm>.H[<index>]
+// register fields: Zm, Rv, Zn
+C1D0800D sdot za.d[w8, 5, vgx4], {z0.h-z3.h}, z0.h[0]
+C1D0808B sdot za.d[w8, 3, vgx4], {z4.h-z7.h}, z0.h[0]
+C1D08109 sdot za.d[w8, 1, vgx4], {z8.h-z11.h}, z0.h[0]
+C1DFA588 sdot za.d[w9, 0, vgx4], {z12.h-z15.h}, z15.h[1]
+C1D0C20A sdot za.d[w10, 2, vgx4], {z16.h-z19.h}, z0.h[0]
+C1D0E28C sdot za.d[w11, 4, vgx4], {z20.h-z23.h}, z0.h[0]
+C1D0830E sdot za.d[w8, 6, vgx4], {z24.h-z27.h}, z0.h[0]
+C1D0838F sdot za.d[w8, 7, vgx4], {z28.h-z31.h}, z0.h[0]
+
+// sdot_za_zzi_s2xi 1|10|0000|1|01|01|Zm=xxxx|0|Rv=xx|op=1|i2=xx|Zn=xxxx|1|U=0|0|off3=xxx
+// SdotZaZziS2xi: SDOT  ZA.S[<Wv>, <offs>{, VGx2}], { <Zn1>.B-<Zn2>.B }, <Zm>.B[<index>]
+// register fields: Zm, Rv, Zn
+C1501026 sdot za.s[w8, 6, vgx2], {z0.b-z1.b}, z0.b[0]
+C1501065 sdot za.s[w8, 5, vgx2], {z2.b-z3.b}, z0.b[0]
+C15010A4 sdot za.s[w8, 4, vgx2], {z4.b-z5.b}, z0.b[0]
+C15F37E0 sdot za.s[w9, 0, vgx2], {z30.b-z31.b}, z15.b[1]
+C1505821 sdot za.s[w10, 1, vgx2], {z0.b-z1.b}, z0.b[2]
+C1507C22 sdot za.s[w11, 2, vgx2], {z0.b-z1.b}, z0.b[3]
+C1501023 sdot za.s[w8, 3, vgx2], {z0.b-z1.b}, z0.b[0]
+C1501027 sdot za.s[w8, 7, vgx2], {z0.b-z1.b}, z0.b[0]
+C15150E6 sdot za.s[w10, 6, vgx2], {z6.b-z7.b}, z1.b[0]
+
+// sdot_za_zzi_s4xi 1|10|0000|1|01|01|Zm=xxxx|1|Rv=xx|op=1|i2=xx|Zn=xxx|0|1|U=0|0|off3=xxx
+// SdotZaZziS4xi: SDOT  ZA.S[<Wv>, <offs>{, VGx4}], { <Zn1>.B-<Zn4>.B }, <Zm>.B[<index>]
+// register fields: Zm, Rv, Zn
+C1509025 sdot za.s[w8, 5, vgx4], {z0.b-z3.b}, z0.b[0]
+C15090A3 sdot za.s[w8, 3, vgx4], {z4.b-z7.b}, z0.b[0]
+C1509121 sdot za.s[w8, 1, vgx4], {z8.b-z11.b}, z0.b[0]
+C15FB5A0 sdot za.s[w9, 0, vgx4], {z12.b-z15.b}, z15.b[1]
+C150DA22 sdot za.s[w10, 2, vgx4], {z16.b-z19.b}, z0.b[2]
+C150FEA4 sdot za.s[w11, 4, vgx4], {z20.b-z23.b}, z0.b[3]
+C1509326 sdot za.s[w8, 6, vgx4], {z24.b-z27.b}, z0.b[0]
+C15093A7 sdot za.s[w8, 7, vgx4], {z28.b-z31.b}, z0.b[0]

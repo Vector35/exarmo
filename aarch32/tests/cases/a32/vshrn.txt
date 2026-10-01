@@ -1,0 +1,22 @@
+// VSHRN_A1 1111|0|01|U=0|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=1000|L=0|Q=0|M=x|1|Vm=xxxx
+// VshrnA1: VSHRN{<c>}{<q>}.I<size>  <Dd>, <Qm>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+f2b1a83a vshrn.i64 d10, q13, #15
+f29bb81e vshrn.i32 d11, q7, #5
+f2d00836 vshrn.i32 d16, q11, #16
+f294a81e vshrn.i32 d10, q7, #12
+f2e49830 vshrn.i64 d25, q8, #28
+f2dba818 vshrn.i32 d26, q4, #5
+f2af0812 vshrn.i64 d0, q1, #17
+f289d832 vshrn.i16 d13, q9, #7
+F2BFF834 vshrn.i64 d15, q10, #0x1
+F2A08810 vshrn.i64 d8, q0, #0x20
+F288483A vshrn.i16 d4, q13, #0x8
+F2B1283A vshrn.i64 d2, q13, #0xf
+F2B1183A vshrn.i64 d1, q13, #0xf
+F2B1A83F UNDEFINED
+F2B1A831 UNDEFINED
+F2B1F83A vshrn.i64 d15, q13, #0xf
+F2F1F83A vshrn.i64 d31, q13, #0xf
+F2B1A81F UNDEFINED

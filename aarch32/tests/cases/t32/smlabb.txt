@@ -1,0 +1,61 @@
+// SMLABB_T1 111110110|op1=001|Rn=xxxx|Ra=xxxx|Rd=xxxx|00|N=0|M=0|Rm=xxxx
+// SmlabbT1: SMLABB{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+FB100000 smlabb r0, r0, r0, r0
+FB1F0F0F smlabb pc, pc, pc, r0 (unpredictable)
+FB100000 [ne] smlabbne r0, r0, r0, r0
+FB112304 smlabb r3, r1, r4, r2
+
+// SMLABT_T1 111110110|op1=001|Rn=xxxx|Ra=xxxx|Rd=xxxx|00|N=0|M=1|Rm=xxxx
+// SmlabtT1: SMLABT{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+fb1f6e1b smlabt lr, pc, r11, r6 (unpredictable)
+fb1b2c1f smlabt r12, r11, pc, r2 (unpredictable)
+fb19bf10 smlabt pc, r9, r0, r11 (unpredictable)
+fb108c1b smlabt r12, r0, r11, r8
+fb18cc1c smlabt r12, r8, r12, r12
+fb110211 smlabt r2, r1, r1, r0
+fb153912 smlabt r9, r5, r2, r3
+fb145e10 smlabt lr, r4, r0, r5
+FB16601B smlabt r0, r6, r11, r6
+FB1F6F1B smlabt pc, pc, r11, r6 (unpredictable)
+FB1F6E1B [ne] smlabtne lr, pc, r11, r6 (unpredictable)
+
+// SMLATB_T1 111110110|op1=001|Rn=xxxx|Ra=xxxx|Rd=xxxx|00|N=1|M=0|Rm=xxxx
+// SmlatbT1: SMLATB{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+fb12c12f smlatb r1, r2, pc, r12 (unpredictable)
+fb108c25 smlatb r12, r0, r5, r8
+fb1bcc2b smlatb r12, r11, r11, r12
+fb1a4c2a smlatb r12, r10, r10, r4
+fb11eb22 smlatb r11, r1, r2, lr
+fb113e2c smlatb lr, r1, r12, r3
+fb1f1425 smlatb r4, pc, r5, r1 (unpredictable)
+fb179220 smlatb r2, r7, r0, r9
+FB12002F smlatb r0, r2, pc, r0 (unpredictable)
+FB122F2F smlatb pc, r2, pc, r2 (unpredictable)
+FB12C22C smlatb r2, r2, r12, r12
+FB12C121 smlatb r1, r2, r1, r12
+FB12C12F [ne] smlatbne r1, r2, pc, r12 (unpredictable)
+
+// SMLATT_T1 111110110|op1=001|Rn=xxxx|Ra=xxxx|Rd=xxxx|00|N=1|M=1|Rm=xxxx
+// SmlattT1: SMLATT{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+fb18aa34 smlatt r10, r8, r4, r10
+fb15013a smlatt r1, r5, r10, r0
+fb117639 smlatt r6, r1, r9, r7
+fb107837 smlatt r8, r0, r7, r7
+fb173136 smlatt r1, r7, r6, r3
+fb17bd32 smlatt sp, r7, r2, r11
+fb129337 smlatt r3, r2, r7, r9
+fb105536 smlatt r5, r0, r6, r5
+FB1FA030 smlatt r0, pc, r0, r10 (unpredictable)
+FB188F3F smlatt pc, r8, pc, r8 (unpredictable)
+FB18A834 smlatt r8, r8, r4, r10
+FB18AA38 smlatt r10, r8, r8, r10
+FB18AA3A smlatt r10, r8, r10, r10
+FB18AA34 [ne] smlattne r10, r8, r4, r10

@@ -1,0 +1,21 @@
+// sqsub_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|000|11|U=0|Zn=xxxxx|Zd=xxxxx
+// SqsubZZz: SQSUB  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+042818B6 sqsub z22.b, z5.b, z8.b
+04BA18FE sqsub z30.s, z7.s, z26.s
+04F11AB5 sqsub z21.d, z21.d, z17.d
+04761B98 sqsub z24.h, z28.h, z22.h
+04B81BF6 sqsub z22.s, z31.s, z24.s
+0461196C sqsub z12.h, z11.h, z1.h
+043A1ADB sqsub z27.b, z22.b, z26.b
+04A61AF9 sqsub z25.s, z23.s, z6.s
+04631A87 sqsub z7.h, z20.h, z3.h
+04FF1A1E sqsub z30.d, z16.d, z31.d
+04EA1B0A sqsub z10.d, z24.d, z10.d
+046818CF sqsub z15.h, z6.h, z8.h
+046819C8 sqsub z8.h, z14.h, z8.h
+04E31859 sqsub z25.d, z2.d, z3.d
+04E118F7 sqsub z23.d, z7.d, z1.d
+04AE19D1 sqsub z17.s, z14.s, z14.s
+04201800 sqsub z0.b, z0.b, z0.b
+042818BF sqsub z31.b, z5.b, z8.b

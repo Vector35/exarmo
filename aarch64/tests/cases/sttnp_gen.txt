@@ -1,0 +1,17 @@
+// STTNP_64_ldstnapair_offs opc=11|10|1|VR=0|0|00|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Sttnp64LdstnapairOffs: STTNP  <Xt1>, <Xt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+E8000006 sttnp x6, x0, [x0]
+E800000D sttnp x13, x0, [x0]
+E8000014 sttnp x20, x0, [x0]
+E83FFFE0 sttnp x0, xzr, [sp, #-0x8]
+E800001F sttnp xzr, x0, [x0]
+E8000000 sttnp x0, x0, [x0]
+E8200006 sttnp x6, x0, [x0, #-0x200]
+E8100006 sttnp x6, x0, [x0, #0x100]
+E8080006 sttnp x6, x0, [x0, #0x80]
+E8040006 sttnp x6, x0, [x0, #0x40]
+E8020006 sttnp x6, x0, [x0, #0x20]
+E8010006 sttnp x6, x0, [x0, #0x10]
+E8008006 sttnp x6, x0, [x0, #0x8]
+E8000443 sttnp x3, x1, [x2]

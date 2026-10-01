@@ -1,0 +1,24 @@
+// UZP1_asimdperm_only 0|Q=x|00|111|0|size=xx|0|Rm=xxxxx|0|op=0|01|10|Rn=xxxxx|Rd=xxxxx
+// Uzp1AsimdpermOnly: UZP1  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4EC81B6C uzp1 v12.2d, v27.2d, v8.2d
+4E0A1B11 uzp1 v17.16b, v24.16b, v10.16b
+0E1F1A75 uzp1 v21.8b, v19.8b, v31.8b
+4E02191D uzp1 v29.16b, v8.16b, v2.16b
+0E1719CC uzp1 v12.8b, v14.8b, v23.8b
+0E4F1B39 uzp1 v25.4h, v25.4h, v15.4h
+4ECA1972 uzp1 v18.2d, v11.2d, v10.2d
+0E071A95 uzp1 v21.8b, v20.8b, v7.8b
+4E9918B9 uzp1 v25.4s, v5.4s, v25.4s
+4E5E1B58 uzp1 v24.8h, v26.8h, v30.8h
+4E541AC2 uzp1 v2.8h, v22.8h, v20.8h
+4E86189E uzp1 v30.4s, v4.4s, v6.4s
+0E4419DA uzp1 v26.4h, v14.4h, v4.4h
+0E581B06 uzp1 v6.4h, v24.4h, v24.4h
+0E121B6F uzp1 v15.8b, v27.8b, v18.8b
+4E4D188A uzp1 v10.8h, v4.8h, v13.8h
+4EC01800 uzp1 v0.2d, v0.2d, v0.2d
+4EC81BFF uzp1 v31.2d, v31.2d, v8.2d
+0E881B6C uzp1 v12.2s, v27.2s, v8.2s
+0EC81B6C UNDEFINED

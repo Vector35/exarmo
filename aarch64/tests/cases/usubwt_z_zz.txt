@@ -1,0 +1,16 @@
+// usubwt_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|10|S=1|U=1|T=1|Zn=xxxxx|Zd=xxxxx
+// UsubwtZZz: USUBWT  <Zd>.<T>, <Zn>.<T>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45905C86 usubwt z6.s, z4.s, z16.h
+45995EE2 usubwt z2.s, z23.s, z25.h
+45C35DC4 usubwt z4.d, z14.d, z3.s
+45805E8D usubwt z13.s, z20.s, z0.h
+458D5D55 usubwt z21.s, z10.s, z13.h
+45D35EBD usubwt z29.d, z21.d, z19.s
+45DC5DC3 usubwt z3.d, z14.d, z28.s
+45D35F79 usubwt z25.d, z27.d, z19.s
+455F5C00 usubwt z0.h, z0.h, z31.b
+45905FFF usubwt z31.s, z31.s, z16.h
+45105C86 UNDEFINED
+45905E06 usubwt z6.s, z16.s, z16.h
+45905C90 usubwt z16.s, z4.s, z16.h

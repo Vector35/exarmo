@@ -1,0 +1,70 @@
+// FCCMP_D_floatccmp M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|cond=xxxx|01|Rn=xxxxx|op=0|nzcv=xxxx
+// FccmpDFloatccmp: FCCMP  <Dn>, <Dm>, #<nzcv>, <cond>
+// register fields: Rm, Rn
+1E7C344F fccmp d2, d28, #0xf, cc
+1E79650C fccmp d8, d25, #0xc, vs
+1E7CE50F fccmp d8, d28, #0xf, al
+1E7F84A3 fccmp d5, d31, #0x3, hi
+1E7A5724 fccmp d25, d26, #0x4, pl
+1E77574F fccmp d26, d23, #0xf, pl
+1E72D6A7 fccmp d21, d18, #0x7, le
+1E670526 fccmp d9, d7, #0x6, eq
+1E761725 fccmp d25, d22, #0x5, ne
+1E6F66E3 fccmp d23, d15, #0x3, vs
+1E7E9786 fccmp d28, d30, #0x6, ls
+1E7DA5C1 fccmp d14, d29, #0x1, ge
+1E7164A4 fccmp d5, d17, #0x4, vs
+1E6256A4 fccmp d21, d2, #0x4, pl
+1E60C72A fccmp d25, d0, #0xa, gt
+1E60946E fccmp d3, d0, #0xe, ls
+1E7CF400 fccmp d0, d28, #0x0, nv
+1E7C37EF fccmp d31, d28, #0xf, cc
+1E7C378F fccmp d28, d28, #0xf, cc
+1E7C4448 fccmp d2, d28, #0x8, mi
+1E7C2442 fccmp d2, d28, #0x2, cs
+
+// FCCMP_H_floatccmp M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|cond=xxxx|01|Rn=xxxxx|op=0|nzcv=xxxx
+// FccmpHFloatccmp: FCCMP  <Hn>, <Hm>, #<nzcv>, <cond>
+// register fields: Rm, Rn
+1EEBE40B fccmp h0, h11, #0xb, al
+1EF5E64F fccmp h18, h21, #0xf, al
+1EEAD52B fccmp h9, h10, #0xb, le
+1EF18684 fccmp h20, h17, #0x4, hi
+1EF724EC fccmp h7, h23, #0xc, cs
+1EF915C9 fccmp h14, h25, #0x9, ne
+1EF4D7A8 fccmp h29, h20, #0x8, le
+1EFF6763 fccmp h27, h31, #0x3, vs
+1EF1B62E fccmp h17, h17, #0xe, lt
+1EF2A6AA fccmp h21, h18, #0xa, ge
+1EED37E5 fccmp h31, h13, #0x5, cc
+1EF32642 fccmp h18, h19, #0x2, cs
+1EF9C627 fccmp h17, h25, #0x7, gt
+1EF61562 fccmp h11, h22, #0x2, ne
+1EE274A0 fccmp h5, h2, #0x0, vc
+1EFF660C fccmp h16, h31, #0xc, vs
+1EE0040B fccmp h0, h0, #0xb, eq
+1EEBF40B fccmp h0, h11, #0xb, nv
+1EEB4401 fccmp h0, h11, #0x1, mi
+
+// FCCMP_S_floatccmp M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|cond=xxxx|01|Rn=xxxxx|op=0|nzcv=xxxx
+// FccmpSFloatccmp: FCCMP  <Sn>, <Sm>, #<nzcv>, <cond>
+// register fields: Rm, Rn
+1E3F26E6 fccmp s23, s31, #0x6, cs
+1E3004E0 fccmp s7, s16, #0x0, eq
+1E3685A8 fccmp s13, s22, #0x8, hi
+1E20072F fccmp s25, s0, #0xf, eq
+1E2107C2 fccmp s30, s1, #0x2, eq
+1E22158B fccmp s12, s2, #0xb, ne
+1E2F1440 fccmp s2, s15, #0x0, ne
+1E2D96CC fccmp s22, s13, #0xc, ls
+1E32F7AA fccmp s29, s18, #0xa, nv
+1E396722 fccmp s25, s25, #0x2, vs
+1E2F0788 fccmp s28, s15, #0x8, eq
+1E20A42C fccmp s1, s0, #0xc, ge
+1E394541 fccmp s10, s25, #0x1, mi
+1E3EE585 fccmp s12, s30, #0x5, al
+1E25650B fccmp s8, s5, #0xb, vs
+1E2276AC fccmp s21, s2, #0xc, vc
+1E3F2406 fccmp s0, s31, #0x6, cs
+1E3F27E6 fccmp s31, s31, #0x6, cs
+1E3F26E4 fccmp s23, s31, #0x4, cs

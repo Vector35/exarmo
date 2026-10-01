@@ -1,0 +1,45 @@
+// FRINTA_asimdmisc_R 0|Q=x|U=1|0|111|0|o2=0|sz=x|10000|1100|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FrintaAsimdmiscR: FRINTA  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+2E218885 frinta v5.2s, v4.2s
+2E2189F2 frinta v18.2s, v15.2s
+6E218BC3 frinta v3.4s, v30.4s
+2E218980 frinta v0.2s, v12.2s
+2E218AA1 frinta v1.2s, v21.2s
+6E218A02 frinta v2.4s, v16.4s
+6E6189A3 frinta v3.2d, v13.2d
+6E618930 frinta v16.2d, v9.2d
+6E218947 frinta v7.4s, v10.4s
+6E618954 frinta v20.2d, v10.2d
+6E218AF2 frinta v18.4s, v23.4s
+6E618A3E frinta v30.2d, v17.2d
+6E618878 frinta v24.2d, v3.2d
+6E61880F frinta v15.2d, v0.2d
+2E218B72 frinta v18.2s, v27.2s
+6E6189EC frinta v12.2d, v15.2d
+2E218BFF frinta v31.2s, v31.2s
+2E618885 UNDEFINED
+
+// FRINTA_asimdmiscfp16_R 0|Q=x|U=1|0|111|0|o2=0|1111|00|1100|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FrintaAsimdmiscfp16R: FRINTA  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+6E79890C frinta v12.8h, v8.8h
+6E79892C frinta v12.8h, v9.8h
+2E798AF0 frinta v16.4h, v23.4h
+2E7988B7 frinta v23.4h, v5.4h
+2E798ADE frinta v30.4h, v22.4h
+2E7989B9 frinta v25.4h, v13.4h
+2E7989FA frinta v26.4h, v15.4h
+6E79880C frinta v12.8h, v0.8h
+2E79892E frinta v14.4h, v9.4h
+6E798887 frinta v7.8h, v4.8h
+6E798B3A frinta v26.8h, v25.8h
+6E798921 frinta v1.8h, v9.8h
+2E798AA1 frinta v1.4h, v21.4h
+6E798893 frinta v19.8h, v4.8h
+2E7989F7 frinta v23.4h, v15.4h
+2E7989E2 frinta v2.4h, v15.4h
+6E798BE0 frinta v0.8h, v31.8h
+6E79891F frinta v31.8h, v8.8h
+6E798908 frinta v8.8h, v8.8h

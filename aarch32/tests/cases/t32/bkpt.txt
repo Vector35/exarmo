@@ -1,0 +1,16 @@
+// BKPT_T1 1011|1110|imm8=xxxxxxxx
+// BkptT1: BKPT{<q>}  {#}<imm>
+be00 bkpt #0
+be01 bkpt #1
+be02 bkpt #2
+be03 bkpt #3
+be04 bkpt #4
+be05 bkpt #5
+be06 bkpt #6
+be07 bkpt #7
+BEFF bkpt #0xff
+BE80 bkpt #0x80
+BE40 bkpt #0x40
+BE20 bkpt #0x20
+BE10 bkpt #0x10
+BE08 bkpt #0x8

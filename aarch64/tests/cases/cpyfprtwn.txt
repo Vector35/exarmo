@@ -1,0 +1,29 @@
+// CPYFERTWN_CPY_memcms sz=xx|011|o0=0|01|op1=10|0|Rs=xxxxx|op2=0110|01|Rn=xxxxx|Rd=xxxxx
+// CpyfertwnCpyMemcms: CPYFERTWN  [<Xd>]!, [<Xs>]!, <Xn>!
+// register fields: Rs, Rn, Rd
+19806400 cpyfertwn [x0]!, [x0]!, x0!
+199F67FF cpyfertwn [xzr]!, [xzr]!, xzr!
+59806400 UNDEFINED
+99806400 UNDEFINED
+D9806400 UNDEFINED
+19816443 cpyfertwn [x3]!, [x1]!, x2!
+
+// CPYFMRTWN_CPY_memcms sz=xx|011|o0=0|01|op1=01|0|Rs=xxxxx|op2=0110|01|Rn=xxxxx|Rd=xxxxx
+// CpyfmrtwnCpyMemcms: CPYFMRTWN  [<Xd>]!, [<Xs>]!, <Xn>!
+// register fields: Rs, Rn, Rd
+19406400 cpyfmrtwn [x0]!, [x0]!, x0!
+195F67FF cpyfmrtwn [xzr]!, [xzr]!, xzr!
+59406400 UNDEFINED
+99406400 UNDEFINED
+D9406400 UNDEFINED
+19416443 cpyfmrtwn [x3]!, [x1]!, x2!
+
+// CPYFPRTWN_CPY_memcms sz=xx|011|o0=0|01|op1=00|0|Rs=xxxxx|op2=0110|01|Rn=xxxxx|Rd=xxxxx
+// CpyfprtwnCpyMemcms: CPYFPRTWN  [<Xd>]!, [<Xs>]!, <Xn>!
+// register fields: Rs, Rn, Rd
+19006400 cpyfprtwn [x0]!, [x0]!, x0!
+191F67FF cpyfprtwn [xzr]!, [xzr]!, xzr!
+59006400 UNDEFINED
+99006400 UNDEFINED
+D9006400 UNDEFINED
+19016443 cpyfprtwn [x3]!, [x1]!, x2!

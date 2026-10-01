@@ -1,0 +1,45 @@
+// CMN_i_A1 cond=xxxx|00|1|10|opc=11|1|Rn=xxxx|(0)(0)(0)(0)|imm12=xxxxxxxxxxxx
+// CmnIA1: CMN{<c>}{<q>}  <Rn>, #<const>
+// register fields: Rn
+// modified immediate <const>: imm12
+7371e49d cmnvc r1, #2634022912 (unpredictable)
+d37c10a4 cmnle r12, #164 (unpredictable)
+137b17e4 cmnne r11, #59768832 (unpredictable)
+63755794 cmnvs r5, #38797312 (unpredictable)
+b3759337 cmnlt r5, #3690987520 (unpredictable)
+b37c55a6 cmnlt r12, #696254464 (unpredictable)
+437fefe9 cmnmi pc, #932 (unpredictable)
+137b9014 cmnne r11, #20 (unpredictable)
+// Binary Ninja's tests
+e3700002 cmn r0, #2
+e371000f cmn r1, #15
+0371F000 cmneq r1, #0x0 (unpredictable)
+F37C10A4 UNDEFINED
+83718FFF cmnhi r1, #0x3fc (unpredictable)
+23714800 cmncs r1, #0x0 (unpredictable)
+73712400 cmnvc r1, #0x0 (unpredictable)
+7371E200 cmnvc r1, #0x0 (unpredictable)
+7371E100 cmnvc r1, #0x0 (unpredictable)
+7371E080 cmnvc r1, #0x80 (unpredictable)
+7371E040 cmnvc r1, #0x40 (unpredictable)
+7371E020 cmnvc r1, #0x20 (unpredictable)
+7371E010 cmnvc r1, #0x10 (unpredictable)
+7371E008 cmnvc r1, #0x8 (unpredictable)
+7371E004 cmnvc r1, #0x4 (unpredictable)
+7371E001 cmnvc r1, #0x1 (unpredictable)
+7371E081 cmnvc r1, #0x81 (unpredictable)
+7371E181 cmnvc r1, #0x40000020 (unpredictable)
+7371E281 cmnvc r1, #0x10000008 (unpredictable)
+7371E381 cmnvc r1, #0x4000002 (unpredictable)
+7371E481 cmnvc r1, #0x81000000 (unpredictable)
+7371E581 cmnvc r1, #0x20400000 (unpredictable)
+7371E681 cmnvc r1, #0x8100000 (unpredictable)
+7371E781 cmnvc r1, #0x2040000 (unpredictable)
+7371E881 cmnvc r1, #0x810000 (unpredictable)
+7371E981 cmnvc r1, #0x204000 (unpredictable)
+7371EA81 cmnvc r1, #0x81000 (unpredictable)
+7371EB81 cmnvc r1, #0x20400 (unpredictable)
+7371EC81 cmnvc r1, #0x8100 (unpredictable)
+7371ED81 cmnvc r1, #0x2040 (unpredictable)
+7371EE81 cmnvc r1, #0x810 (unpredictable)
+7371EF81 cmnvc r1, #0x204 (unpredictable)

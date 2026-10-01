@@ -1,0 +1,42 @@
+// FMAXV_asimdall_only_H 0|Q=x|U=0|0|111|0|o1=0|0|11000|opcode=01111|10|Rn=xxxxx|Rd=xxxxx
+// FmaxvAsimdallOnlyH: FMAXV  <d>, <Vn>.<T>
+// register fields: Rn, Rd
+0E30F8DC fmaxv h28, v6.4h
+4E30FA06 fmaxv h6, v16.8h
+0E30FB02 fmaxv h2, v24.4h
+4E30F8B4 fmaxv h20, v5.8h
+0E30F838 fmaxv h24, v1.4h
+4E30F95B fmaxv h27, v10.8h
+0E30F8A1 fmaxv h1, v5.4h
+0E30FA80 fmaxv h0, v20.4h
+4E30F8B2 fmaxv h18, v5.8h
+0E30F83F fmaxv h31, v1.4h
+4E30FAB9 fmaxv h25, v21.8h
+4E30F801 fmaxv h1, v0.8h
+4E30FBEB fmaxv h11, v31.8h
+4E30F80A fmaxv h10, v0.8h
+4E30F8A9 fmaxv h9, v5.8h
+0E30FA85 fmaxv h5, v20.4h
+0E30F8C6 fmaxv h6, v6.4h
+
+// FMAXV_asimdall_only_SD 0|Q=1|U=1|0|111|0|o1=0|sz=0|11000|opcode=01111|10|Rn=xxxxx|Rd=xxxxx
+// FmaxvAsimdallOnlySd: FMAXV  <d>, <Vn>.4S
+// register fields: Rn, Rd
+6E30F878 fmaxv s24, v3.4s
+6E30FACC fmaxv s12, v22.4s
+6E30FA86 fmaxv s6, v20.4s
+6E30F8E1 fmaxv s1, v7.4s
+6E30F84A fmaxv s10, v2.4s
+6E30FB42 fmaxv s2, v26.4s
+6E30F84E fmaxv s14, v2.4s
+6E30FB0B fmaxv s11, v24.4s
+6E30F9BD fmaxv s29, v13.4s
+6E30F890 fmaxv s16, v4.4s
+6E30F8D5 fmaxv s21, v6.4s
+6E30F8AA fmaxv s10, v5.4s
+6E30F8E5 fmaxv s5, v7.4s
+6E30FA18 fmaxv s24, v16.4s
+6E30F8D0 fmaxv s16, v6.4s
+6E30FB8F fmaxv s15, v28.4s
+6E30F800 fmaxv s0, v0.4s
+6E30FBFF fmaxv s31, v31.4s

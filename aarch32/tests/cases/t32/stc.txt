@@ -1,0 +1,94 @@
+// STC_T1_off 1110110|P=1|U=x|D=0|W=0|L=0|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// StcT1Off: STC{<c>}{<q>}  p14, c5, [<Rn>{, #{<+/->}<imm>}]
+// register fields: Rn
+// IT state read: condition
+ed805e01 stc p14, c5, [r0, #4]
+ed0a5ecc stc p14, c5, [r10, #-816]
+ed035e89 stc p14, c5, [r3, #-548]
+ed005e4f stc p14, c5, [r0, #-316]
+ed085ec9 stc p14, c5, [r8, #-804]
+ed0f5e57 stc p14, c5, [pc, #-348] (unpredictable)
+ed015e82 stc p14, c5, [r1, #-520]
+ed0d5e20 stc p14, c5, [sp, #-128]
+ed045eb6 stc p14, c5, [r4, #-728]
+ED805E00 stc p14, c5, [r0]
+ED805EFF stc p14, c5, [r0, #0x3fc]
+ED805E80 stc p14, c5, [r0, #0x200]
+ED805E40 stc p14, c5, [r0, #0x100]
+ED805E10 stc p14, c5, [r0, #0x40]
+ED805E08 stc p14, c5, [r0, #0x20]
+ED805E04 stc p14, c5, [r0, #0x10]
+ED805E02 stc p14, c5, [r0, #0x8]
+ED805E01 [ne] stcne p14, c5, [r0, #0x4]
+
+// STC_T1_post 1110110|P=0|U=x|D=0|W=1|L=0|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// StcT1Post: STC{<c>}{<q>}  p14, c5, [<Rn>], #{<+/->}<imm>
+// register fields: Rn
+// IT state read: condition
+eca05e01 stc p14, c5, [r0], #4
+ec245e53 stc p14, c5, [r4], #-332
+ec295e8c stc p14, c5, [r9], #-560
+ec2a5ecc stc p14, c5, [r10], #-816
+ec2a5e8a stc p14, c5, [r10], #-552
+ec2c5ee3 stc p14, c5, [r12], #-908
+ec265ef0 stc p14, c5, [r6], #-960
+ec2e5ed9 stc p14, c5, [lr], #-868
+ec265e94 stc p14, c5, [r6], #-592
+ECAF5E00 stc p14, c5, [pc], #0x0 (unpredictable)
+ECA05EFF stc p14, c5, [r0], #0x3fc
+ECA05E80 stc p14, c5, [r0], #0x200
+ECA05E40 stc p14, c5, [r0], #0x100
+ECA05E20 stc p14, c5, [r0], #0x80
+ECA05E10 stc p14, c5, [r0], #0x40
+ECA05E08 stc p14, c5, [r0], #0x20
+ECA05E04 stc p14, c5, [r0], #0x10
+ECA05E02 stc p14, c5, [r0], #0x8
+ECA05E01 [ne] stcne p14, c5, [r0], #0x4
+
+// STC_T1_pre 1110110|P=1|U=x|D=0|W=1|L=0|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// StcT1Pre: STC{<c>}{<q>}  p14, c5, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn
+// IT state read: condition
+eda05e01 stc p14, c5, [r0, #4]!
+ed265ed0 stc p14, c5, [r6, #-832]!
+ed2a5ea1 stc p14, c5, [r10, #-644]!
+ed2a5ec3 stc p14, c5, [r10, #-780]!
+ed2c5e27 stc p14, c5, [r12, #-156]!
+ed295e18 stc p14, c5, [r9, #-96]!
+ed2f5ea7 stc p14, c5, [pc, #-668]! (unpredictable)
+ed275e88 stc p14, c5, [r7, #-544]!
+ed265ea1 stc p14, c5, [r6, #-644]!
+EDA05E00 stc p14, c5, [r0, #0x0]!
+EDA05EFF stc p14, c5, [r0, #0x3fc]!
+EDA05E80 stc p14, c5, [r0, #0x200]!
+EDA05E40 stc p14, c5, [r0, #0x100]!
+EDA05E20 stc p14, c5, [r0, #0x80]!
+EDA05E10 stc p14, c5, [r0, #0x40]!
+EDA05E08 stc p14, c5, [r0, #0x20]!
+EDA05E04 stc p14, c5, [r0, #0x10]!
+EDA05E02 stc p14, c5, [r0, #0x8]!
+EDA05E01 [ne] stcne p14, c5, [r0, #0x4]!
+
+// STC_T1_unind 1110110|P=0|U=1|D=0|W=0|L=0|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// StcT1Unind: STC{<c>}{<q>}  p14, c5, [<Rn>], <option>
+// register fields: Rn
+// IT state read: condition
+ec8b5ed7 stc p14, c5, [r11], {215}
+ec805e15 stc p14, c5, [r0], {21}
+ec815e66 stc p14, c5, [r1], {102}
+ec8e5e57 stc p14, c5, [lr], {87}
+ec8b5e18 stc p14, c5, [r11], {24}
+ec8a5eb0 stc p14, c5, [r10], {176}
+ec835ea3 stc p14, c5, [r3], {163}
+ec895e35 stc p14, c5, [r9], {53}
+EC8F5E00 stc p14, c5, [pc], {0} (unpredictable)
+EC8B5EFF stc p14, c5, [r11], {255}
+EC8B5E80 stc p14, c5, [r11], {128}
+EC8B5E40 stc p14, c5, [r11], {64}
+EC8B5E20 stc p14, c5, [r11], {32}
+EC8B5E10 stc p14, c5, [r11], {16}
+EC8B5E08 stc p14, c5, [r11], {8}
+EC8B5E04 stc p14, c5, [r11], {4}
+EC8B5E02 stc p14, c5, [r11], {2}
+EC8B5E01 stc p14, c5, [r11], {1}
+EC8B5ED7 [ne] stcne p14, c5, [r11], {215}

@@ -1,0 +1,78 @@
+// VLDR_A1_D cond=xxxx|110|P=1|U=x|D=x|W=0|L=1|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxxx
+// VldrA1D: VLDR{<c>}{<q>}{<.64>}  <Dd>, [<Rn> {, #{<+/->}<imm>}]
+// read together by <Dd>: D, Vd
+// register fields: Rn
+ad920b21 vldrge d0, [r2, #132]
+ed1b2bfe vldr d2, [r11, #-1016]
+8d9b1bbc vldrhi d1, [r11, #752]
+4d556b51 vldrmi d22, [r5, #-324]
+7d15cba3 vldrvc d12, [r5, #-652]
+8d577b05 vldrhi d23, [r7, #-20]
+0d977b32 vldreq d7, [r7, #200]
+3d932bb7 vldrlo d2, [r3, #732]
+// Binary Ninja's tests
+ed121b08 vldr d1, [r2, #-32]
+ed921b08 vldr d1, [r2, #32]
+ed932b00 vldr d2, [r3]
+ed9e0b00 vldr d0, [lr]
+edd01b00 vldr d17, [r0]
+FD9F0B21 UNALLOCATED
+2D92FBFF vldrcs d15, [r2, #0x3fc]
+1D928B80 vldrne d8, [r2, #0x200]
+AD924B40 vldrge d4, [r2, #0x100]
+AD92FB20 vldrge d15, [r2, #0x80]
+ADD20B10 vldrge d16, [r2, #0x40]
+ADD2FB04 vldrge d31, [r2, #0x10]
+AD920B02 vldrge d0, [r2, #0x8]
+AD920B01 vldrge d0, [r2, #0x4]
+
+// VLDR_A1_H cond=xxxx|110|P=1|U=x|D=x|W=0|L=1|Rn=xxxx|Vd=xxxx|10|size=01|imm8=xxxxxxxx
+// VldrA1H: VLDR{<c>}{<q>}.16  <Sd>, [<Rn> {, #{<+/->}<imm>}]
+// read together by <Sd>: D, Vd
+// register fields: Rn
+8d94e9e6 vldrhi.16 s28, [r4, #460] (unpredictable)
+ad16d979 vldrge.16 s26, [r6, #-242] (unpredictable)
+8d170902 vldrhi.16 s0, [r7, #-4] (unpredictable)
+4d1b19ee vldrmi.16 s2, [r11, #-476] (unpredictable)
+9d53990d vldrls.16 s19, [r3, #-26] (unpredictable)
+9dddb9a3 vldrls.16 s23, [sp, #326] (unpredictable)
+cdde6911 vldrgt.16 s13, [lr, #34] (unpredictable)
+8d55e91d vldrhi.16 s29, [r5, #-58] (unpredictable)
+0D90F900 vldreq.16 s30, [r0] (unpredictable)
+FD9FE9E6 UNALLOCATED
+2D9489FF vldrcs.16 s16, [r4, #0x1fe] (unpredictable)
+1D944980 vldrne.16 s8, [r4, #0x100] (unpredictable)
+8D942940 vldrhi.16 s4, [r4, #0x80] (unpredictable)
+8D94F920 vldrhi.16 s30, [r4, #0x40] (unpredictable)
+8DD40910 vldrhi.16 s1, [r4, #0x20] (unpredictable)
+8DD4F908 vldrhi.16 s31, [r4, #0x10] (unpredictable)
+8D94E904 vldrhi.16 s28, [r4, #0x8] (unpredictable)
+8D94E901 vldrhi.16 s28, [r4, #0x2] (unpredictable)
+
+// VLDR_A1_S cond=xxxx|110|P=1|U=x|D=x|W=0|L=1|Rn=xxxx|Vd=xxxx|10|size=10|imm8=xxxxxxxx
+// VldrA1S: VLDR{<c>}{<q>}{<.32>}  <Sd>, [<Rn> {, #{<+/->}<imm>}]
+// read together by <Sd>: D, Vd
+// register fields: Rn
+cd134a62 vldrgt s8, [r3, #-392]
+8d956a60 vldrhi s12, [r5, #384]
+ad12bad4 vldrge s22, [r2, #-848]
+2dd6aa67 vldrhs s21, [r6, #412]
+dd153a54 vldrle s6, [r5, #-336]
+3d195aec vldrlo s10, [r9, #-944]
+bd5c8abd vldrlt s17, [r12, #-756]
+6ddd3a4e vldrvs s7, [sp, #312]
+// Binary Ninja's tests
+ed520a08 vldr s1, [r2, #-32]
+ed931a00 vldr s2, [r3]
+ed9e0a00 vldr s0, [lr]
+edd06a00 vldr s13, [r0]
+edd20a08 vldr s1, [r2, #32]
+0D13FAFF vldreq s30, [r3, #-0x3fc]
+FD1F4A62 UNALLOCATED
+4D132A80 vldrmi s4, [r3, #-0x200]
+1D13FA40 vldrne s30, [r3, #-0x100]
+CD53FA20 vldrgt s31, [r3, #-0x80]
+CD134A10 vldrgt s8, [r3, #-0x40]
+CD134A04 vldrgt s8, [r3, #-0x10]
+CD134A02 vldrgt s8, [r3, #-0x8]
+CD134A01 vldrgt s8, [r3, #-0x4]

@@ -1,0 +1,52 @@
+// VQMOVN_T1 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|0010|op=1x|M=x|0|Vm=xxxx
+// VqmovnT1: VQMOVN{<c>}{<q>}.<dt>  <Dd>, <Qm>
+// read together by <dt>: size, op
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb672c4 vqmovn.u32 d7, q2
+ffba72a4 vqmovn.s64 d7, q10
+fffa82e2 vqmovn.u64 d24, q9
+ffb602e8 vqmovn.u32 d0, q12
+fff2c2ce vqmovn.u16 d28, q7
+fffad288 vqmovn.s64 d29, q4
+ffb682aa vqmovn.s32 d8, q13
+fff6a2aa vqmovn.s32 d26, q13
+FFBE72CF UNDEFINED
+FFB2F280 vqmovn.s16 d15, q0
+FFB642C0 vqmovn.u32 d4, q0
+FFB622E0 vqmovn.u32 d2, q8
+FFB612C4 vqmovn.u32 d1, q2
+FFBE7281 UNDEFINED
+FFB6F2C4 vqmovn.u32 d15, q2
+FFF602C4 vqmovn.u32 d16, q2
+FFF6F2C4 vqmovn.u32 d31, q2
+FFB672EF UNDEFINED
+FFB672C4 [ne] vqmovnne.u32 d7, q2
+
+// VQMOVUN_T1 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|0010|op=01|M=x|0|Vm=xxxx
+// VqmovunT1: VQMOVUN{<c>}{<q>}.<dt>  <Dd>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb2e26e vqmovun.s16 d14, q15
+ffb2f26c vqmovun.s16 d15, q14
+fff67242 vqmovun.s32 d23, q1
+ffb6326c vqmovun.s32 d3, q14
+fff2326a vqmovun.s16 d19, q13
+ffb26264 vqmovun.s16 d6, q10
+fffa6268 vqmovun.s64 d22, q12
+fffa626a vqmovun.s64 d22, q13
+FFBEE26F UNDEFINED
+FFB20260 vqmovun.s16 d0, q8
+FFB28240 vqmovun.s16 d8, q0
+FFB24260 vqmovun.s16 d4, q8
+FFB2226E vqmovun.s16 d2, q15
+FFB2126E vqmovun.s16 d1, q15
+FFB2E261 UNDEFINED
+FFB2026E vqmovun.s16 d0, q15
+FFF2026E vqmovun.s16 d16, q15
+FFF2F26E vqmovun.s16 d31, q15
+FFB2E24F UNDEFINED
+FFB2E26F UNDEFINED
+FFB2E26E [ne] vqmovunne.s16 d14, q15

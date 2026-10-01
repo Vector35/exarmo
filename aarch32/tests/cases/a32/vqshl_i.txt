@@ -1,0 +1,103 @@
+// VQSHL_i_A1_D 1111001|U=x|1|D=x|imm6=xxxxxx|Vd=xxxx|011|op=1|L=x|Q=0|M=x|1|Vm=xxxx
+// VqshlIA1D: VQSHL{<c>}{<q>}.<type><size>  {<Dd>, }<Dm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f2d467bb vqshl.s64 d22, d27, #20
+f3f6e739 vqshl.u32 d30, d25, #22
+f2d4e73d vqshl.s16 d30, d29, #4
+f28917b7 vqshl.s64 d1, d23, #9
+f2cb1712 vqshl.s8 d17, d2, #3
+f2b61713 vqshl.s32 d1, d3, #22
+f396d796 vqshl.u64 d13, d6, #22
+f2e5b71b vqshl.s32 d27, d11, #5
+F2C007B0 vqshl.s64 d16, d16, #0x0
+F2FFF7BF vqshl.s64 d31, d31, #0x3f
+F2E087B8 vqshl.s64 d24, d24, #0x20
+F2D047B4 vqshl.s64 d20, d20, #0x10
+F2C827B1 vqshl.s64 d18, d17, #0x8
+F2840790 vqshl.s64 d0, d0, #0x4
+F282F79F vqshl.s64 d15, d15, #0x2
+F2C107B0 vqshl.s64 d16, d16, #0x1
+F2C0F7BF vqshl.s64 d31, d31, #0x0
+F2FF673B vqshl.s32 d22, d27, #0x1f
+F2FF67BB vqshl.s64 d22, d27, #0x3f
+
+// VQSHL_i_A1_Q 1111001|U=x|1|D=x|imm6=xxxxxx|Vd=xxxx|011|op=1|L=x|Q=1|M=x|1|Vm=xxxx
+// VqshlIA1Q: VQSHL{<c>}{<q>}.<type><size>  {<Qd>, }<Qm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f390a754 vqshl.u16 q5, q2, #0
+f29707d0 vqshl.s64 q0, q0, #23
+f3c347f8 vqshl.u64 q10, q12, #3
+f2cee750 vqshl.s8 q15, q0, #6
+f2ae2754 vqshl.s32 q1, q2, #14
+f39b07d8 vqshl.u64 q0, q4, #27
+f3eec7f4 vqshl.u64 q14, q10, #46
+f2fba772 vqshl.s32 q13, q9, #27
+F28087F0 vqshl.s64 q4, q8, #0x0
+F3FF0754 vqshl.u32 q8, q2, #0x1f
+F3A0A754 vqshl.u32 q5, q2, #0x0
+F388A754 vqshl.u8 q5, q2, #0x0
+F28407D0 vqshl.s64 q0, q0, #0x4
+F28207D0 vqshl.s64 q0, q0, #0x2
+F28107D0 vqshl.s64 q0, q0, #0x1
+F380F75F UNDEFINED
+F3901751 UNDEFINED
+F380A7D4 vqshl.u64 q5, q2, #0x0
+F3BFA754 vqshl.u32 q5, q2, #0x1f
+F3BFA7D4 vqshl.u64 q5, q2, #0x3f
+F390F75F UNDEFINED
+F3D0F77F UNDEFINED
+
+// VQSHLU_i_A1_D 1111001|U=1|1|D=x|imm6=xxxxxx|Vd=xxxx|011|op=0|L=x|Q=0|M=x|1|Vm=xxxx
+// VqshluIA1D: VQSHLU{<c>}{<q>}.<type><size>  {<Dd>, }<Dm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f18698 vqshlu.s64 d24, d8, #49
+f397f696 vqshlu.s64 d15, d6, #23
+f3fd76bb vqshlu.s64 d23, d27, #61
+f3f6869e vqshlu.s64 d24, d14, #54
+f39ee617 vqshlu.s16 d14, d7, #14
+f3d3e6bc vqshlu.s64 d30, d28, #19
+f3bc769c vqshlu.s64 d7, d12, #60
+f387e69a vqshlu.s64 d14, d10, #7
+F3C00690 vqshlu.s64 d16, d0, #0x0
+F3FF469F vqshlu.s64 d20, d15, #0x3f
+F3E02694 vqshlu.s64 d18, d4, #0x20
+F3D01692 vqshlu.s64 d17, d2, #0x10
+F3880691 vqshlu.s64 d0, d1, #0x8
+F3C40690 vqshlu.s64 d16, d0, #0x4
+F3C2F69F vqshlu.s64 d31, d15, #0x2
+F3C186B0 vqshlu.s64 d24, d16, #0x1
+F3C086BF vqshlu.s64 d24, d31, #0x0
+F3FF8618 vqshlu.s32 d24, d8, #0x1f
+F3FF8698 vqshlu.s64 d24, d8, #0x3f
+
+// VQSHLU_i_A1_Q 1111001|U=1|1|D=x|imm6=xxxxxx|Vd=xxxx|011|op=0|L=x|Q=1|M=x|1|Vm=xxxx
+// VqshluIA1Q: VQSHLU{<c>}{<q>}.<type><size>  {<Qd>, }<Qm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3d68652 vqshlu.s16 q12, q1, #6
+f38046d2 vqshlu.s64 q2, q1, #0
+f3fae6d6 vqshlu.s64 q15, q3, #58
+f3eee656 vqshlu.s32 q15, q3, #14
+f39f6678 vqshlu.s16 q3, q12, #15
+f3ad46f4 vqshlu.s64 q2, q10, #45
+f3c4e6fc vqshlu.s64 q15, q14, #4
+f39926f2 vqshlu.s64 q1, q9, #25
+F3FF0650 vqshlu.s32 q8, q0, #0x1f
+F3A00650 vqshlu.s32 q0, q0, #0x0
+F3D00670 vqshlu.s16 q8, q8, #0x0
+F3C88652 vqshlu.s8 q12, q1, #0x0
+F38246D2 vqshlu.s64 q2, q1, #0x2
+F38146D2 vqshlu.s64 q2, q1, #0x1
+F3C0F65F UNDEFINED
+F3D61651 UNDEFINED
+F3FF8652 vqshlu.s32 q12, q1, #0x1f
+F3FF86D2 vqshlu.s64 q12, q1, #0x3f
+F396F65F UNDEFINED
+F3D6F67F UNDEFINED

@@ -1,0 +1,55 @@
+// AUTIB1716_HI_hints 11010101000000110010|CRm=0001|op2=110|11111
+// Autib1716HiHints: AUTIB1716
+D50321DF autib1716
+
+// AUTIB_64P_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=0|101|Rn=xxxxx|Rd=xxxxx
+// Autib64pDp1src: AUTIB  <Xd>, <Xn|SP>
+// register fields: Rn, Rd
+DAC11748 autib x8, x26
+DAC11569 autib x9, x11
+DAC116ED autib x13, x23
+DAC11473 autib x19, x3
+DAC114B5 autib x21, x5
+DAC11694 autib x20, x20
+DAC114AD autib x13, x5
+DAC11630 autib x16, x17
+DAC11571 autib x17, x11
+DAC11533 autib x19, x9
+DAC1154D autib x13, x10
+DAC1166A autib x10, x19
+DAC1164E autib x14, x18
+DAC114B3 autib x19, x5
+DAC11787 autib x7, x28
+DAC116C7 autib x7, x22
+DAC11400 autib x0, x0
+DAC117FF autib xzr, sp
+
+// AUTIBSP_HI_hints 11010101000000110010|CRm=0011|op2=111|11111
+// AutibspHiHints: AUTIBSP
+D50323FF autibsp
+
+// AUTIBZ_HI_hints 11010101000000110010|CRm=0011|op2=110|11111
+// AutibzHiHints: AUTIBZ
+D50323DF autibz
+
+// AUTIZB_64Z_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=1|101|Rn=11111|Rd=xxxxx
+// Autizb64zDp1src: AUTIZB  <Xd>
+// register fields: Rd
+DAC137F7 autizb x23
+DAC137EE autizb x14
+DAC137F3 autizb x19
+DAC137ED autizb x13
+DAC137E9 autizb x9
+DAC137FA autizb x26
+DAC137FD autizb fp
+DAC137E7 autizb x7
+DAC137E1 autizb x1
+DAC137F0 autizb x16
+DAC137FE autizb lr
+DAC137E2 autizb x2
+DAC137E3 autizb x3
+DAC137FB autizb x27
+DAC137EC autizb x12
+DAC137EB autizb x11
+DAC137E0 autizb x0
+DAC137FF autizb xzr

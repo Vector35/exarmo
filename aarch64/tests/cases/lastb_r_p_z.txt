@@ -1,0 +1,28 @@
+// lastb_r_p_z_ 000|0010|1|size=xx|1|0|000|B=1|10|1|Pg=xxx|Zn=xxxxx|Rd=xxxxx
+// LastbRPZ: LASTB  <d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Rd
+// register fields: Pg, Zn, Rd
+05E1A4DA lastb x26, p1, z6.d
+05A1A239 lastb w25, p0, z17.s
+05E1B27E lastb lr, p4, z19.d
+05A1BD68 lastb w8, p7, z11.s
+05A1A751 lastb w17, p1, z26.s
+0561BF2F lastb w15, p7, z25.h
+05E1B580 lastb x0, p5, z12.d
+0561B9F5 lastb w21, p6, z15.h
+0561A531 lastb w17, p1, z9.h
+05E1A327 lastb x7, p0, z25.d
+0561A08E lastb w14, p0, z4.h
+05E1A887 lastb x7, p2, z4.d
+0561B314 lastb w20, p4, z24.h
+0561BF27 lastb w7, p7, z25.h
+05E1A7E0 lastb x0, p1, z31.d
+05E1B62E lastb x14, p5, z17.d
+0521AC1F lastb wzr, p3, z0.b
+0521A420 lastb w0, p1, z1.b
+0561A4C0 lastb w0, p1, z6.h
+0561A4DF lastb wzr, p1, z6.h
+05A1A4C0 lastb w0, p1, z6.s
+05A1A4DF lastb wzr, p1, z6.s
+05E1A4DF lastb xzr, p1, z6.d
+05E1A4C6 lastb x6, p1, z6.d

@@ -1,0 +1,96 @@
+// FCVTMS_asimdmisc_R 0|Q=x|U=0|0|111|0|o2=0|sz=x|10000|1101|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FcvtmsAsimdmiscR: FCVTMS  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+4E21BB9F fcvtms v31.4s, v28.4s
+0E21B99F fcvtms v31.2s, v12.2s
+0E21B8F5 fcvtms v21.2s, v7.2s
+4E21BAE8 fcvtms v8.4s, v23.4s
+4E21B8A1 fcvtms v1.4s, v5.4s
+0E21B94C fcvtms v12.2s, v10.2s
+4E61B899 fcvtms v25.2d, v4.2d
+4E61BA88 fcvtms v8.2d, v20.2d
+4E61BBCA fcvtms v10.2d, v30.2d
+4E61B8E4 fcvtms v4.2d, v7.2d
+4E21BAEA fcvtms v10.4s, v23.4s
+0E21B834 fcvtms v20.2s, v1.2s
+4E21BABC fcvtms v28.4s, v21.4s
+4E61BAE0 fcvtms v0.2d, v23.2d
+0E21B85D fcvtms v29.2s, v2.2s
+4E61BAF4 fcvtms v20.2d, v23.2d
+4E21B81F fcvtms v31.4s, v0.4s
+4E21BBFF fcvtms v31.4s, v31.4s
+0E61BB9F UNDEFINED
+
+// FCVTMS_asimdmiscfp16_R 0|Q=x|U=0|0|111|0|o2=0|1111|00|1101|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FcvtmsAsimdmiscfp16R: FCVTMS  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+0E79B972 fcvtms v18.4h, v11.4h
+0E79BB91 fcvtms v17.4h, v28.4h
+4E79BAD5 fcvtms v21.8h, v22.8h
+4E79B946 fcvtms v6.8h, v10.8h
+4E79B84D fcvtms v13.8h, v2.8h
+0E79B902 fcvtms v2.4h, v8.4h
+4E79BAEA fcvtms v10.8h, v23.8h
+0E79BADC fcvtms v28.4h, v22.4h
+4E79B8C7 fcvtms v7.8h, v6.8h
+4E79B9CE fcvtms v14.8h, v14.8h
+4E79B933 fcvtms v19.8h, v9.8h
+4E79BBF3 fcvtms v19.8h, v31.8h
+4E79B962 fcvtms v2.8h, v11.8h
+0E79BA44 fcvtms v4.4h, v18.4h
+4E79BA8E fcvtms v14.8h, v20.8h
+4E79B985 fcvtms v5.8h, v12.8h
+0E79B800 fcvtms v0.4h, v0.4h
+0E79B97F fcvtms v31.4h, v11.4h
+
+// FCVTMS_asisdmisc_R 01|U=0|1|111|0|o2=0|sz=x|10000|1101|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FcvtmsAsisdmiscR: FCVTMS  <V><d>, <V><n>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+5E61BB81 fcvtms d1, d28
+5E21B9FB fcvtms s27, s15
+5E61BAE9 fcvtms d9, d23
+5E61BBA1 fcvtms d1, d29
+5E21BB49 fcvtms s9, s26
+5E61BB57 fcvtms d23, d26
+5E61B888 fcvtms d8, d4
+5E21BA9A fcvtms s26, s20
+5E61B9FC fcvtms d28, d15
+5E21BB9C fcvtms s28, s28
+5E21B80E fcvtms s14, s0
+5E21B84B fcvtms s11, s2
+5E61BB82 fcvtms d2, d28
+5E21B9D7 fcvtms s23, s14
+5E61BB45 fcvtms d5, d26
+5E61BB6D fcvtms d13, d27
+5E61BBE0 fcvtms d0, d31
+5E61BB9F fcvtms d31, d28
+5E21BB80 fcvtms s0, s28
+5E21BB9F fcvtms s31, s28
+5E21BBE1 fcvtms s1, s31
+5E61B801 fcvtms d1, d0
+
+// FCVTMS_asisdmiscfp16_R 01|U=0|1|111|0|o2=0|1111|00|1101|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FcvtmsAsisdmiscfp16R: FCVTMS  <Hd>, <Hn>
+// register fields: Rn, Rd
+5E79B9C9 fcvtms h9, h14
+5E79BB40 fcvtms h0, h26
+5E79BAAC fcvtms h12, h21
+5E79B82A fcvtms h10, h1
+5E79BBA1 fcvtms h1, h29
+5E79B8A6 fcvtms h6, h5
+5E79B8F6 fcvtms h22, h7
+5E79BA22 fcvtms h2, h17
+5E79BAB2 fcvtms h18, h21
+5E79BBB3 fcvtms h19, h29
+5E79BAE6 fcvtms h6, h23
+5E79BB51 fcvtms h17, h26
+5E79B921 fcvtms h1, h9
+5E79BB02 fcvtms h2, h24
+5E79BADC fcvtms h28, h22
+5E79B840 fcvtms h0, h2
+5E79B81F fcvtms h31, h0
+5E79BBE9 fcvtms h9, h31
+5E79B9CE fcvtms h14, h14

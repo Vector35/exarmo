@@ -1,0 +1,33 @@
+// udot_z16_zzzi_h 010|0010|0|0|i3h=x|1|i3l=xx|Zm=xxx|00000|U=1|Zn=xxxxx|Zda=xxxxx
+// UdotZ16ZzziH: UDOT  <Zda>.H, <Zn>.B, <Zm>.B[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+44200406 udot z6.h, z0.b, z0.b[0]
+4420040D udot z13.h, z0.b, z0.b[0]
+44200414 udot z20.h, z0.b, z0.b[0]
+446907E0 udot z0.h, z31.b, z1.b[5]
+4432041F udot z31.h, z0.b, z2.b[2]
+443B0406 udot z6.h, z0.b, z3.b[3]
+44240406 udot z6.h, z0.b, z4.b[0]
+44250406 udot z6.h, z0.b, z5.b[0]
+44260406 udot z6.h, z0.b, z6.b[0]
+44270406 udot z6.h, z0.b, z7.b[0]
+44280400 udot z0.h, z0.b, z0.b[1]
+44600406 udot z6.h, z0.b, z0.b[4]
+44700406 udot z6.h, z0.b, z0.b[6]
+44780406 udot z6.h, z0.b, z0.b[7]
+
+// udot_z32_zzzi_ 010|0010|0100|i2=xx|Zm=xxx|11001|U=1|Zn=xxxxx|Zda=xxxxx
+// UdotZ32Zzzi: UDOT  <Zda>.S, <Zn>.H, <Zm>.H[<imm>]
+// register fields: Zm, Zn, Zda
+4480CC01 udot z1.s, z0.h, z0.h[0]
+4480CC08 udot z8.s, z0.h, z0.h[0]
+4480CC0F udot z15.s, z0.h, z0.h[0]
+4489CFE0 udot z0.s, z31.h, z1.h[1]
+4492CC1F udot z31.s, z0.h, z2.h[2]
+449BCC01 udot z1.s, z0.h, z3.h[3]
+4484CC01 udot z1.s, z0.h, z4.h[0]
+4485CC01 udot z1.s, z0.h, z5.h[0]
+4486CC01 udot z1.s, z0.h, z6.h[0]
+4487CC01 udot z1.s, z0.h, z7.h[0]
+4480CC00 udot z0.s, z0.h, z0.h[0]

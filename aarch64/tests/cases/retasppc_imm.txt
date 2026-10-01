@@ -1,0 +1,46 @@
+// RETAASPPC_only_miscbranch 01010101|opc=000|imm16=xxxxxxxxxxxxxxxx|op2=11111
+// RetaasppcOnlyMiscbranch: RETAASPPC  <label>
+550000DF retaasppc 0x7fffffffffffffec
+550001BF retaasppc 0x7fffffffffffffd0
+5500029F retaasppc 0x7fffffffffffffb4
+5500001F retaasppc 0x8000000000000004
+551FFFFF retaasppc 0x7ffffffffffc0008
+5510001F retaasppc 0x7ffffffffffe0004
+5508001F retaasppc 0x7fffffffffff0004
+5504001F retaasppc 0x7fffffffffff8004
+5502001F retaasppc 0x7fffffffffffc004
+5501001F retaasppc 0x7fffffffffffe004
+5500801F retaasppc 0x7ffffffffffff004
+5500401F retaasppc 0x7ffffffffffff804
+5500201F retaasppc 0x7ffffffffffffc04
+5500101F retaasppc 0x7ffffffffffffe04
+5500081F retaasppc 0x7fffffffffffff04
+5500041F retaasppc 0x7fffffffffffff84
+5500021F retaasppc 0x7fffffffffffffc4
+5500011F retaasppc 0x7fffffffffffffe4
+5500009F retaasppc 0x7ffffffffffffff4
+5500005F retaasppc 0x7ffffffffffffffc
+5500003F retaasppc 0x8000000000000000
+
+// RETABSPPC_only_miscbranch 01010101|opc=001|imm16=xxxxxxxxxxxxxxxx|op2=11111
+// RetabsppcOnlyMiscbranch: RETABSPPC  <label>
+5520009F retabsppc 0x7ffffffffffffff4
+5520017F retabsppc 0x7fffffffffffffd8
+5520025F retabsppc 0x7fffffffffffffbc
+5520001F retabsppc 0x8000000000000004
+553FFFFF retabsppc 0x7ffffffffffc0008
+5530001F retabsppc 0x7ffffffffffe0004
+5528001F retabsppc 0x7fffffffffff0004
+5524001F retabsppc 0x7fffffffffff8004
+5522001F retabsppc 0x7fffffffffffc004
+5521001F retabsppc 0x7fffffffffffe004
+5520801F retabsppc 0x7ffffffffffff004
+5520401F retabsppc 0x7ffffffffffff804
+5520201F retabsppc 0x7ffffffffffffc04
+5520101F retabsppc 0x7ffffffffffffe04
+5520081F retabsppc 0x7fffffffffffff04
+5520041F retabsppc 0x7fffffffffffff84
+5520021F retabsppc 0x7fffffffffffffc4
+5520011F retabsppc 0x7fffffffffffffe4
+5520005F retabsppc 0x7ffffffffffffffc
+5520003F retabsppc 0x8000000000000000

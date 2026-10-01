@@ -1,0 +1,23 @@
+// LDRSBT_T1 111|1100|10|size=00|1|Rn=xxxx|Rt=xxxx|1110|imm8=xxxxxxxx
+// LdrsbtT1: LDRSBT{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f9186e7b ldrsbt r6, [r8, #123]
+f9105ee9 ldrsbt r5, [r0, #233]
+f9144e44 ldrsbt r4, [r4, #68]
+f91b5e75 ldrsbt r5, [r11, #117]
+f91d0e09 ldrsbt r0, [sp, #9]
+f913de9a ldrsbt sp, [r3, #154]
+f91e6eab ldrsbt r6, [lr, #171]
+f917be4d ldrsbt r11, [r7, #77]
+F918FE00 ldrsbt pc, [r8] (unpredictable)
+F9186EFF ldrsbt r6, [r8, #0xff]
+F9186E80 ldrsbt r6, [r8, #0x80]
+F9186E40 ldrsbt r6, [r8, #0x40]
+F9186E20 ldrsbt r6, [r8, #0x20]
+F9186E10 ldrsbt r6, [r8, #0x10]
+F9186E08 ldrsbt r6, [r8, #0x8]
+F9186E04 ldrsbt r6, [r8, #0x4]
+F9186E02 ldrsbt r6, [r8, #0x2]
+F9186E01 ldrsbt r6, [r8, #0x1]
+F9186E7B [ne] ldrsbtne r6, [r8, #0x7b]

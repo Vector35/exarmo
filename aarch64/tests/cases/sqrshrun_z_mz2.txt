@@ -1,0 +1,28 @@
+// sqrshrun_z_mz2_ 010|0010|1|1|op0=0|1|1|imm4=xxxx|0|0|op1=0|U=0|R=1|0|Zn=xxxx|0|Zd=xxxxx
+// SqrshrunZMz2: SQRSHRUN  <Zd>.H, { <Zn1>.S-<Zn2>.S }, #<const>
+// register fields: Zn, Zd
+45B00802 sqrshrun z2.h, {z0.s-z1.s}, #0x10
+45B00809 sqrshrun z9.h, {z0.s-z1.s}, #0x10
+45B00810 sqrshrun z16.h, {z0.s-z1.s}, #0x10
+45BF0BC0 sqrshrun z0.h, {z30.s-z31.s}, #0x1
+45B0081F sqrshrun z31.h, {z0.s-z1.s}, #0x10
+45B00800 sqrshrun z0.h, {z0.s-z1.s}, #0x10
+45B80802 sqrshrun z2.h, {z0.s-z1.s}, #0x8
+45B40802 sqrshrun z2.h, {z0.s-z1.s}, #0xc
+45B20802 sqrshrun z2.h, {z0.s-z1.s}, #0xe
+45B10802 sqrshrun z2.h, {z0.s-z1.s}, #0xf
+
+// sqrshrun_z_mz2_b 010|0010|1|1|op0=0|1|01|imm3=xxx|0|0|op1=0|U=0|R=1|0|Zn=xxxx|0|Zd=xxxxx
+// SqrshrunZMz2B: SQRSHRUN  <Zd>.B, { <Zn1>.H-<Zn2>.H }, #<const>
+// register fields: Zn, Zd
+45A80804 sqrshrun z4.b, {z0.h-z1.h}, #0x8
+45A8080B sqrshrun z11.b, {z0.h-z1.h}, #0x8
+45A80812 sqrshrun z18.b, {z0.h-z1.h}, #0x8
+45A90BC0 sqrshrun z0.b, {z30.h-z31.h}, #0x7
+45AA081F sqrshrun z31.b, {z0.h-z1.h}, #0x6
+45AB0804 sqrshrun z4.b, {z0.h-z1.h}, #0x5
+45AC0804 sqrshrun z4.b, {z0.h-z1.h}, #0x4
+45AD0804 sqrshrun z4.b, {z0.h-z1.h}, #0x3
+45AE0804 sqrshrun z4.b, {z0.h-z1.h}, #0x2
+45AF0804 sqrshrun z4.b, {z0.h-z1.h}, #0x1
+45A80800 sqrshrun z0.b, {z0.h-z1.h}, #0x8

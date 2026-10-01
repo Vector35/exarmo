@@ -1,0 +1,140 @@
+// ADC_r_T1 010000|op=0101|Rm=xxx|Rdn=xxx
+// AdcRT1: ADC<c>{<q>}  {<Rdn>, }<Rdn>, <Rm>
+// T1bAdcRT1: ADCS{<q>}  {<Rdn>, }<Rdn>, <Rm>
+// register fields: Rm, Rdn
+// IT state read: condition, in block
+4140 adcs r0, r0
+4141 adcs r1, r0
+4142 adcs r2, r0
+4143 adcs r3, r0
+4144 adcs r4, r0
+4145 adcs r5, r0
+4146 adcs r6, r0
+4147 adcs r7, r0
+4148 adcs r0, r1
+4150 adcs r0, r2
+4158 adcs r0, r3
+4160 adcs r0, r4
+4168 adcs r0, r5
+4170 adcs r0, r6
+4178 adcs r0, r7
+4140 [ne] adcne r0, r0
+
+// ADC_r_T2 1110101|op1=1010|S=0|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// AdcRT2: ADC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EB400000 adc r0, r0, r0
+EB4F9F5F adc pc, pc, pc, lsr #0x5 (unpredictable)
+EB4020A0 adc r0, r0, r0, asr #0xa
+EB4030F0 adc r0, r0, r0, ror #0xf
+EB404000 adc r0, r0, r0, lsl #0x10
+EB405000 adc r0, r0, r0, lsl #0x14
+EB406000 adc r0, r0, r0, lsl #0x18
+EB407000 adc r0, r0, r0, lsl #0x1c
+EB400040 adc r0, r0, r0, lsl #0x1
+EB400080 adc r0, r0, r0, lsl #0x2
+EB4000C0 adc r0, r0, r0, lsl #0x3
+EB401000 adc r0, r0, r0, lsl #0x4
+EB401040 adc r0, r0, r0, lsl #0x5
+EB401080 adc r0, r0, r0, lsl #0x6
+EB4010C0 adc r0, r0, r0, lsl #0x7
+EB402000 adc r0, r0, r0, lsl #0x8
+EB402040 adc r0, r0, r0, lsl #0x9
+EB402080 adc r0, r0, r0, lsl #0xa
+EB4020C0 adc r0, r0, r0, lsl #0xb
+EB403000 adc r0, r0, r0, lsl #0xc
+EB403040 adc r0, r0, r0, lsl #0xd
+EB403080 adc r0, r0, r0, lsl #0xe
+EB4030C0 adc r0, r0, r0, lsl #0xf
+EB404040 adc r0, r0, r0, lsl #0x11
+EB404080 adc r0, r0, r0, lsl #0x12
+EB4040C0 adc r0, r0, r0, lsl #0x13
+EB405040 adc r0, r0, r0, lsl #0x15
+EB405080 adc r0, r0, r0, lsl #0x16
+EB4050C0 adc r0, r0, r0, lsl #0x17
+EB406040 adc r0, r0, r0, lsl #0x19
+EB406080 adc r0, r0, r0, lsl #0x1a
+EB4060C0 adc r0, r0, r0, lsl #0x1b
+EB407040 adc r0, r0, r0, lsl #0x1d
+EB407080 adc r0, r0, r0, lsl #0x1e
+EB4070C0 adc r0, r0, r0, lsl #0x1f
+EB400000 [ne] adcne r0, r0, r0
+EB410203 adc r2, r1, r3
+
+// ADC_r_T2_RRX 1110101|op1=1010|S=0|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// AdcRT2Rrx: ADC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+eb4f0f39 adc pc, pc, r9, rrx (unpredictable)
+eb4e8c33 adc r12, lr, r3, rrx (unpredictable)
+eb410036 adc r0, r1, r6, rrx
+eb4e0338 adc r3, lr, r8, rrx
+eb428036 adc r0, r2, r6, rrx (unpredictable)
+eb450a35 adc r10, r5, r5, rrx
+eb478a31 adc r10, r7, r1, rrx (unpredictable)
+eb4a0a3f adc r10, r10, pc, rrx (unpredictable)
+EB400F30 adc pc, r0, r0, rrx (unpredictable)
+EB4F0F3F adc pc, pc, pc, rrx (unpredictable)
+EB4F0F39 [ne] adcne pc, pc, r9, rrx (unpredictable)
+
+// ADCS_r_T2 1110101|op1=1010|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// AdcsRT2: ADCS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EB500000 adcs r0, r0, r0
+EB5F9F5F adcs pc, pc, pc, lsr #0x5 (unpredictable)
+EB5020A0 adcs r0, r0, r0, asr #0xa
+EB5030F0 adcs r0, r0, r0, ror #0xf
+EB504000 adcs r0, r0, r0, lsl #0x10
+EB505000 adcs r0, r0, r0, lsl #0x14
+EB506000 adcs r0, r0, r0, lsl #0x18
+EB507000 adcs r0, r0, r0, lsl #0x1c
+EB500040 adcs r0, r0, r0, lsl #0x1
+EB500080 adcs r0, r0, r0, lsl #0x2
+EB5000C0 adcs r0, r0, r0, lsl #0x3
+EB501000 adcs r0, r0, r0, lsl #0x4
+EB501040 adcs r0, r0, r0, lsl #0x5
+EB501080 adcs r0, r0, r0, lsl #0x6
+EB5010C0 adcs r0, r0, r0, lsl #0x7
+EB502000 adcs r0, r0, r0, lsl #0x8
+EB502040 adcs r0, r0, r0, lsl #0x9
+EB502080 adcs r0, r0, r0, lsl #0xa
+EB5020C0 adcs r0, r0, r0, lsl #0xb
+EB503000 adcs r0, r0, r0, lsl #0xc
+EB503040 adcs r0, r0, r0, lsl #0xd
+EB503080 adcs r0, r0, r0, lsl #0xe
+EB5030C0 adcs r0, r0, r0, lsl #0xf
+EB504040 adcs r0, r0, r0, lsl #0x11
+EB504080 adcs r0, r0, r0, lsl #0x12
+EB5040C0 adcs r0, r0, r0, lsl #0x13
+EB505040 adcs r0, r0, r0, lsl #0x15
+EB505080 adcs r0, r0, r0, lsl #0x16
+EB5050C0 adcs r0, r0, r0, lsl #0x17
+EB506040 adcs r0, r0, r0, lsl #0x19
+EB506080 adcs r0, r0, r0, lsl #0x1a
+EB5060C0 adcs r0, r0, r0, lsl #0x1b
+EB507040 adcs r0, r0, r0, lsl #0x1d
+EB507080 adcs r0, r0, r0, lsl #0x1e
+EB5070C0 adcs r0, r0, r0, lsl #0x1f
+EB500000 [ne] adcsne r0, r0, r0
+EB510203 adcs r2, r1, r3
+
+// ADCS_r_T2_RRX 1110101|op1=1010|S=1|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// AdcsRT2Rrx: ADCS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+eb5e813f adcs r1, lr, pc, rrx (unpredictable)
+eb5b8735 adcs r7, r11, r5, rrx (unpredictable)
+eb57813c adcs r1, r7, r12, rrx (unpredictable)
+eb5e0f3b adcs pc, lr, r11, rrx (unpredictable)
+eb50093b adcs r9, r0, r11, rrx
+eb5f0434 adcs r4, pc, r4, rrx (unpredictable)
+eb500432 adcs r4, r0, r2, rrx
+eb530d3a adcs sp, r3, r10, rrx
+EB5E8030 adcs r0, lr, r0, rrx (unpredictable)
+EB5E8E3F adcs lr, lr, pc, rrx (unpredictable)
+EB5E813E adcs r1, lr, lr, rrx (unpredictable)
+EB5E813F [ne] adcsne r1, lr, pc, rrx (unpredictable)

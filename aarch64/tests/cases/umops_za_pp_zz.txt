@@ -1,0 +1,38 @@
+// umops_za_pp_zz_32 1|01|0000|u0=1|10|u1=1|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|0|0|ZAda=xx
+// UmopsZaPpZz32: UMOPS  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.B, <Zm>.B
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A1A919D3 umops za3.s, p6/m, p0/m, z14.b, z9.b
+A1ACDEB1 umops za1.s, p7/m, p6/m, z21.b, z12.b
+A1A8FCD0 umops za0.s, p7/m, p7/m, z6.b, z8.b
+A1AE6773 umops za3.s, p1/m, p3/m, z27.b, z14.b
+A1A6B433 umops za3.s, p5/m, p5/m, z1.b, z6.b
+A1A505B3 umops za3.s, p1/m, p0/m, z13.b, z5.b
+A1A72071 umops za1.s, p0/m, p1/m, z3.b, z7.b
+A1B21C53 umops za3.s, p7/m, p0/m, z2.b, z18.b
+A1A04812 umops za2.s, p2/m, p2/m, z0.b, z0.b
+A1BF8FF3 umops za3.s, p3/m, p4/m, z31.b, z31.b
+A1A911D3 umops za3.s, p4/m, p0/m, z14.b, z9.b
+A1A018D3 umops za3.s, p6/m, p0/m, z6.b, z0.b
+A1A61813 umops za3.s, p6/m, p0/m, z0.b, z6.b
+A1A319D3 umops za3.s, p6/m, p0/m, z14.b, z3.b
+A1A91873 umops za3.s, p6/m, p0/m, z3.b, z9.b
+
+// umops_za_pp_zz_64 1|0|1|0000|u0=1|11|u1=1|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|0|ZAda=xxx
+// UmopsZaPpZz64: UMOPS  <ZAda>.D, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A1EE87D4 umops za4.d, p1/m, p4/m, z30.h, z14.h
+A1F53AB2 umops za2.d, p6/m, p1/m, z21.h, z21.h
+A1F207D4 umops za4.d, p1/m, p0/m, z30.h, z18.h
+A1E8C4D5 umops za5.d, p1/m, p6/m, z6.h, z8.h
+A1F1F3F2 umops za2.d, p4/m, p7/m, z31.h, z17.h
+A1E02ED4 umops za4.d, p3/m, p1/m, z22.h, z0.h
+A1FFAFB5 umops za5.d, p3/m, p5/m, z29.h, z31.h
+A1F5BB12 umops za2.d, p6/m, p5/m, z24.h, z21.h
+A1EE4010 umops za0.d, p0/m, p2/m, z0.h, z14.h
+A1EE6BD1 umops za1.d, p2/m, p3/m, z30.h, z14.h
+A1EE97D3 umops za3.d, p5/m, p4/m, z30.h, z14.h
+A1EE9FD6 umops za6.d, p7/m, p4/m, z30.h, z14.h
+A1EE87D7 umops za7.d, p1/m, p4/m, z30.h, z14.h
+A1E487D4 umops za4.d, p1/m, p4/m, z30.h, z4.h
+A1E187D4 umops za4.d, p1/m, p4/m, z30.h, z1.h
+A1E493D4 umops za4.d, p4/m, p4/m, z30.h, z4.h

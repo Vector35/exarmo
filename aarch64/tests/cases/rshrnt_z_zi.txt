@@ -1,0 +1,69 @@
+// rshrnt_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=0|U=1|R=1|T=1|Zn=xxxxx|Zd=xxxxx
+// RshrntZZi: RSHRNT  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+452B1C70 rshrnt z16.b, z3.h, #0x5
+453F1E2D rshrnt z13.h, z17.s, #0x1
+456B1E09 rshrnt z9.s, z16.d, #0x15
+45391D1F rshrnt z31.h, z8.s, #0x7
+456D1DDB rshrnt z27.s, z14.d, #0x13
+453B1D2E rshrnt z14.h, z9.s, #0x5
+45721EB8 rshrnt z24.s, z21.d, #0xe
+452B1F10 rshrnt z16.b, z24.h, #0x5
+45601C00 rshrnt z0.s, z0.d, #0x20
+452C1FF0 rshrnt z16.b, z31.h, #0x4
+452E1C70 rshrnt z16.b, z3.h, #0x2
+45201C70 UNDEFINED
+45211C70 UNDEFINED
+45221C70 UNDEFINED
+45231C70 UNDEFINED
+45241C70 UNDEFINED
+45251C70 UNDEFINED
+45261C70 UNDEFINED
+45271C70 UNDEFINED
+45281C70 rshrnt z16.b, z3.h, #0x8
+45291C70 rshrnt z16.b, z3.h, #0x7
+452A1C70 rshrnt z16.b, z3.h, #0x6
+452D1C70 rshrnt z16.b, z3.h, #0x3
+452F1C70 rshrnt z16.b, z3.h, #0x1
+45301C70 rshrnt z16.h, z3.s, #0x10
+45311C70 rshrnt z16.h, z3.s, #0xf
+45321C70 rshrnt z16.h, z3.s, #0xe
+45331C70 rshrnt z16.h, z3.s, #0xd
+45341C70 rshrnt z16.h, z3.s, #0xc
+45351C70 rshrnt z16.h, z3.s, #0xb
+45361C70 rshrnt z16.h, z3.s, #0xa
+45371C70 rshrnt z16.h, z3.s, #0x9
+45381C70 rshrnt z16.h, z3.s, #0x8
+453A1C70 rshrnt z16.h, z3.s, #0x6
+453C1C70 rshrnt z16.h, z3.s, #0x4
+453D1C70 rshrnt z16.h, z3.s, #0x3
+453E1C70 rshrnt z16.h, z3.s, #0x2
+45611C70 rshrnt z16.s, z3.d, #0x1f
+45621C70 rshrnt z16.s, z3.d, #0x1e
+45631C70 rshrnt z16.s, z3.d, #0x1d
+45641C70 rshrnt z16.s, z3.d, #0x1c
+45651C70 rshrnt z16.s, z3.d, #0x1b
+45661C70 rshrnt z16.s, z3.d, #0x1a
+45671C70 rshrnt z16.s, z3.d, #0x19
+45681C70 rshrnt z16.s, z3.d, #0x18
+45691C70 rshrnt z16.s, z3.d, #0x17
+456A1C70 rshrnt z16.s, z3.d, #0x16
+456C1C70 rshrnt z16.s, z3.d, #0x14
+456E1C70 rshrnt z16.s, z3.d, #0x12
+456F1C70 rshrnt z16.s, z3.d, #0x11
+45701C70 rshrnt z16.s, z3.d, #0x10
+45711C70 rshrnt z16.s, z3.d, #0xf
+45731C70 rshrnt z16.s, z3.d, #0xd
+45741C70 rshrnt z16.s, z3.d, #0xc
+45751C70 rshrnt z16.s, z3.d, #0xb
+45761C70 rshrnt z16.s, z3.d, #0xa
+45771C70 rshrnt z16.s, z3.d, #0x9
+45781C70 rshrnt z16.s, z3.d, #0x8
+45791C70 rshrnt z16.s, z3.d, #0x7
+457A1C70 rshrnt z16.s, z3.d, #0x6
+457B1C70 rshrnt z16.s, z3.d, #0x5
+457C1C70 rshrnt z16.s, z3.d, #0x4
+457D1C70 rshrnt z16.s, z3.d, #0x3
+457E1C70 rshrnt z16.s, z3.d, #0x2
+457F1C70 rshrnt z16.s, z3.d, #0x1

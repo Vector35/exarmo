@@ -1,0 +1,137 @@
+// FCMP_D_floatcmp M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|op=00|1000|Rn=xxxxx|opc=00|000
+// FcmpDFloatcmp: FCMP  <Dn>, <Dm>
+// register fields: Rm, Rn
+1E712040 fcmp d2, d17
+1E632360 fcmp d27, d3
+1E7A2260 fcmp d19, d26
+1E642060 fcmp d3, d4
+1E732320 fcmp d25, d19
+1E7D2340 fcmp d26, d29
+1E732260 fcmp d19, d19
+1E792100 fcmp d8, d25
+1E772180 fcmp d12, d23
+1E772280 fcmp d20, d23
+1E7F2220 fcmp d17, d31
+1E602100 fcmp d8, d0
+1E772300 fcmp d24, d23
+1E6B2140 fcmp d10, d11
+1E7C21E0 fcmp d15, d28
+1E7F2380 fcmp d28, d31
+1E712000 fcmp d0, d17
+1E7123E0 fcmp d31, d17
+
+// FCMP_DZ_floatcmp M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|op=00|1000|Rn=xxxxx|opc=01|000
+// FcmpDzFloatcmp: FCMP  <Dn>, #0.0
+// register fields: Rn
+1E682148 fcmp d10, #0.0
+1E7120A8 fcmp d5, #0.0
+1E6920E8 fcmp d7, #0.0
+1E7D21C8 fcmp d14, #0.0
+1E7D22C8 fcmp d22, #0.0
+1E682168 fcmp d11, #0.0
+1E612208 fcmp d16, #0.0
+1E6D2128 fcmp d9, #0.0
+1E652328 fcmp d25, #0.0
+1E7E23E8 fcmp d31, #0.0
+1E702148 fcmp d10, #0.0
+1E612128 fcmp d9, #0.0
+1E6E23E8 fcmp d31, #0.0
+1E772168 fcmp d11, #0.0
+1E642088 fcmp d4, #0.0
+1E7A2248 fcmp d18, #0.0
+1E602008 fcmp d0, #0.0
+1E7F2148 fcmp d10, #0.0
+1E622148 fcmp d10, #0.0
+
+// FCMP_H_floatcmp M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|op=00|1000|Rn=xxxxx|opc=00|000
+// FcmpHFloatcmp: FCMP  <Hn>, <Hm>
+// register fields: Rm, Rn
+1EF12100 fcmp h8, h17
+1EFA2240 fcmp h18, h26
+1EEA2100 fcmp h8, h10
+1EFE2100 fcmp h8, h30
+1EF72180 fcmp h12, h23
+1EE52180 fcmp h12, h5
+1EF02300 fcmp h24, h16
+1EF62180 fcmp h12, h22
+1EEC2240 fcmp h18, h12
+1EFB2040 fcmp h2, h27
+1EE623A0 fcmp h29, h6
+1EFA21E0 fcmp h15, h26
+1EF622C0 fcmp h22, h22
+1EFD2160 fcmp h11, h29
+1EEB2320 fcmp h25, h11
+1EEA2080 fcmp h4, h10
+1EE02000 fcmp h0, h0
+1EFF23E0 fcmp h31, h31
+
+// FCMP_HZ_floatcmp M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|op=00|1000|Rn=xxxxx|opc=01|000
+// FcmpHzFloatcmp: FCMP  <Hn>, #0.0
+// register fields: Rn
+1EF82268 fcmp h19, #0.0
+1EEF2348 fcmp h26, #0.0
+1EF921E8 fcmp h15, #0.0
+1EE82308 fcmp h24, #0.0
+1EEB2328 fcmp h25, #0.0
+1EE52328 fcmp h25, #0.0
+1EF02188 fcmp h12, #0.0
+1EE92008 fcmp h0, #0.0
+1EEB2088 fcmp h4, #0.0
+1EE721A8 fcmp h13, #0.0
+1EE52348 fcmp h26, #0.0
+1EF72088 fcmp h4, #0.0
+1EF722A8 fcmp h21, #0.0
+1EEA21A8 fcmp h13, #0.0
+1EEC22E8 fcmp h23, #0.0
+1EF42308 fcmp h24, #0.0
+1EE023E8 fcmp h31, #0.0
+1EFF2268 fcmp h19, #0.0
+1EE42268 fcmp h19, #0.0
+1EE22268 fcmp h19, #0.0
+1EE12268 fcmp h19, #0.0
+
+// FCMP_S_floatcmp M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|op=00|1000|Rn=xxxxx|opc=00|000
+// FcmpSFloatcmp: FCMP  <Sn>, <Sm>
+// register fields: Rm, Rn
+1E332040 fcmp s2, s19
+1E272080 fcmp s4, s7
+1E382040 fcmp s2, s24
+1E352040 fcmp s2, s21
+1E222240 fcmp s18, s2
+1E3F2360 fcmp s27, s31
+1E262160 fcmp s11, s6
+1E282200 fcmp s16, s8
+1E3023A0 fcmp s29, s16
+1E3D2240 fcmp s18, s29
+1E3F2260 fcmp s19, s31
+1E2123A0 fcmp s29, s1
+1E2E2300 fcmp s24, s14
+1E312000 fcmp s0, s17
+1E272260 fcmp s19, s7
+1E2521A0 fcmp s13, s5
+1E2023E0 fcmp s31, s0
+1E332260 fcmp s19, s19
+
+// FCMP_SZ_floatcmp M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|op=00|1000|Rn=xxxxx|opc=01|000
+// FcmpSzFloatcmp: FCMP  <Sn>, #0.0
+// register fields: Rn
+1E272288 fcmp s20, #0.0
+1E3923A8 fcmp s29, #0.0
+1E242348 fcmp s26, #0.0
+1E3E20A8 fcmp s5, #0.0
+1E2323E8 fcmp s31, #0.0
+1E3D2348 fcmp s26, #0.0
+1E392148 fcmp s10, #0.0
+1E202108 fcmp s8, #0.0
+1E3921C8 fcmp s14, #0.0
+1E2E21A8 fcmp s13, #0.0
+1E3C2188 fcmp s12, #0.0
+1E2220E8 fcmp s7, #0.0
+1E252348 fcmp s26, #0.0
+1E3A23E8 fcmp s31, #0.0
+1E372248 fcmp s18, #0.0
+1E3C2308 fcmp s24, #0.0
+1E3F2008 fcmp s0, #0.0
+1E302288 fcmp s20, #0.0
+1E282288 fcmp s20, #0.0
+1E212288 fcmp s20, #0.0

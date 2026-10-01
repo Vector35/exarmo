@@ -1,0 +1,83 @@
+// LDR_32_ldst_regoff size=10|111|VR=0|00|opc=01|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldr32LdstRegoff: LDR  <Wt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+B86DDACA ldr w10, [x22, w13, sxtw #0x2]
+B874EB85 ldr w5, [x28, x20, sxtx]
+B8756A9D ldr w29, [x20, x21]
+B861F95A ldr w26, [x10, x1, sxtx #0x2]
+B8785975 ldr w21, [x11, w24, uxtw #0x2]
+B8686A18 ldr w24, [x16, x8]
+B8647950 ldr w16, [x10, x4, lsl #0x2]
+B8724B76 ldr w22, [x27, w18, uxtw]
+B86379F8 ldr w24, [x15, x3, lsl #0x2]
+B86AC994 ldr w20, [x12, w10, sxtw]
+B87EFAF6 ldr w22, [x23, lr, sxtx #0x2]
+B8727B00 ldr w0, [x24, x18, lsl #0x2]
+B8615BF9 ldr w25, [sp, w1, uxtw #0x2]
+B87E5A50 ldr w16, [x18, w30, uxtw #0x2]
+B8695818 ldr w24, [x0, w9, uxtw #0x2]
+B867EB3E ldr w30, [x25, x7, sxtx]
+B860DADF ldr wzr, [x22, w0, sxtw #0x2]
+B87FDACA ldr w10, [x22, wzr, sxtw #0x2]
+B86D1ACA UNDEFINED
+B86D3ACA UNDEFINED
+B86D9ACA UNDEFINED
+B86DBACA UNDEFINED
+B8601ACA UNDEFINED
+B8603ACA UNDEFINED
+B8605AD6 ldr w22, [x22, w0, uxtw #0x2]
+B8607ACA ldr w10, [x22, x0, lsl #0x2]
+B8609ACA UNDEFINED
+B860BACA UNDEFINED
+B860FACA ldr w10, [x22, x0, sxtx #0x2]
+B87F1ACA UNDEFINED
+B87F3ACA UNDEFINED
+B87F5ACA ldr w10, [x22, wzr, uxtw #0x2]
+B87F7ACA ldr w10, [x22, xzr, lsl #0x2]
+B87F9ACA UNDEFINED
+B87FBACA UNDEFINED
+B87FFACA ldr w10, [x22, xzr, sxtx #0x2]
+B86DD9AA ldr w10, [x13, w13, sxtw #0x2]
+B86DDACD ldr w13, [x22, w13, sxtw #0x2]
+
+// LDR_64_ldst_regoff size=11|111|VR=0|00|opc=01|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldr64LdstRegoff: LDR  <Xt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+F87B5ADC ldr x28, [x22, w27, uxtw #0x3]
+F86D7B64 ldr x4, [x27, x13, lsl #0x3]
+F871D9F0 ldr x16, [x15, w17, sxtw #0x3]
+F8716B46 ldr x6, [x26, x17]
+F86F5B1F ldr xzr, [x24, w15, uxtw #0x3]
+F8756B94 ldr x20, [x28, x21]
+F872F9AE ldr x14, [x13, x18, sxtx #0x3]
+F86E5AD5 ldr x21, [x22, w14, uxtw #0x3]
+F8767998 ldr x24, [x12, x22, lsl #0x3]
+F86169AF ldr x15, [x13, x1]
+F8737894 ldr x20, [x4, x19, lsl #0x3]
+F86EFAB4 ldr x20, [x21, x14, sxtx #0x3]
+F865D843 ldr x3, [x2, w5, sxtw #0x3]
+F867FB9D ldr fp, [x28, x7, sxtx #0x3]
+F87CD8FF ldr xzr, [x7, w28, sxtw #0x3]
+F87B696C ldr x12, [x11, x27]
+F8605800 ldr x0, [x0, w0, uxtw #0x3]
+F87F5BFC ldr x28, [sp, wzr, uxtw #0x3]
+F87B1ADC UNDEFINED
+F87B3ADC UNDEFINED
+F87B9ADC UNDEFINED
+F87BBADC UNDEFINED
+F8601ADC UNDEFINED
+F8603ADC UNDEFINED
+F8607ADC ldr x28, [x22, x0, lsl #0x3]
+F8609ADC UNDEFINED
+F860BADC UNDEFINED
+F860DADC ldr x28, [x22, w0, sxtw #0x3]
+F860FADC ldr x28, [x22, x0, sxtx #0x3]
+F87F1ADC UNDEFINED
+F87F3ADC UNDEFINED
+F87F7ADC ldr x28, [x22, xzr, lsl #0x3]
+F87F9ADC UNDEFINED
+F87FBADC UNDEFINED
+F87FDADC ldr x28, [x22, wzr, sxtw #0x3]
+F87FFADC ldr x28, [x22, xzr, sxtx #0x3]

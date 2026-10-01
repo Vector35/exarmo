@@ -1,0 +1,43 @@
+// VUDOT_A1_D 1111110|op1=00|D=x|op2=10|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=1|N=x|Q=0|M=x|U=1|Vm=xxxx
+// VudotA1D: VUDOT{<q>}.U8  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fc2dbd9f vudot.u8 d11, d29, d15
+fc2c9d3c vudot.u8 d9, d12, d28
+fc616d31 vudot.u8 d22, d1, d17
+fc25edba vudot.u8 d14, d21, d26
+fc2c6d90 vudot.u8 d6, d28, d0
+fc691db0 vudot.u8 d17, d25, d16
+fc29bd9b vudot.u8 d11, d25, d11
+fc2a1d39 vudot.u8 d1, d10, d25
+FC200D98 vudot.u8 d0, d16, d8
+FC2FFD94 vudot.u8 d15, d31, d4
+FC288D92 vudot.u8 d8, d24, d2
+FC244DBF vudot.u8 d4, d20, d31
+FC222D9F vudot.u8 d2, d18, d15
+FC200D1F vudot.u8 d0, d0, d15
+FC20FD9F vudot.u8 d15, d16, d15
+FC6F0D1F vudot.u8 d16, d15, d15
+FC6FFD9F vudot.u8 d31, d31, d15
+
+// VUDOT_A1_Q 1111110|op1=00|D=x|op2=10|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=1|N=x|Q=1|M=x|U=1|Vm=xxxx
+// VudotA1Q: VUDOT{<q>}.U8  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+fc204d56 vudot.u8 q2, q0, q3
+fc628d52 vudot.u8 q12, q1, q1
+fc64cd56 vudot.u8 q14, q2, q3
+fc224d5c vudot.u8 q2, q1, q6
+fc2a6d74 vudot.u8 q3, q5, q10
+fc22cd5e vudot.u8 q6, q1, q7
+fc224d76 vudot.u8 q2, q1, q11
+fc22cd7e vudot.u8 q6, q1, q15
+FC2FFD5F UNDEFINED
+FC280DD0 vudot.u8 q0, q12, q0
+FC211D51 UNDEFINED
+FC202DD8 vudot.u8 q1, q8, q4
+FC200D50 vudot.u8 q0, q0, q0
+FC600D70 vudot.u8 q8, q0, q8
+FC6FFDFF UNDEFINED

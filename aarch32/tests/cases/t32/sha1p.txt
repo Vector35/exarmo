@@ -1,0 +1,21 @@
+// SHA1P_T1 111|U=0|11|11|0|D=x|size=01|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=x|M=x|o1=0|Vm=xxxx
+// Sha1pT1: SHA1P.32  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+ef5acc6a sha1p.32 q14, q5, q13
+ef1c4c4c sha1p.32 q2, q6, q6
+ef1ccc68 sha1p.32 q6, q6, q12
+ef526c60 sha1p.32 q11, q1, q8
+ef102cea sha1p.32 q1, q8, q13
+ef504c68 sha1p.32 q10, q0, q12
+ef126cc8 sha1p.32 q3, q9, q4
+ef5a6ce8 sha1p.32 q11, q13, q12
+EF5FFC2F UNDEFINED
+EF580C64 sha1p.32 q8, q4, q10
+EF548C62 sha1p.32 q12, q2, q9
+EF511C61 UNDEFINED
+EF1A0C40 sha1p.32 q0, q5, q0
+EF1FFC4F UNDEFINED
+EF5A0C6A sha1p.32 q8, q5, q13
+EF5FFCEF UNDEFINED

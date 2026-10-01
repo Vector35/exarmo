@@ -1,0 +1,32 @@
+// VMOV_h_A1 cond=xxxx|1110000|op=1|Vn=xxxx|Rt=xxxx|1001|N=x|(0)(0)1(0)(0)(0)(0)
+// VmovHA1: VMOV{<c>}{<q>}.F16  <Rt>, <Sn>
+// read together by <Sn>: Vn, N
+// register fields: Rt
+0E100910 vmoveq.f16 r0, s0 (unpredictable)
+FE100910 UNALLOCATED
+8E1FF9FF vmovhi.f16 pc, s31 (unpredictable)
+4E180950 vmovmi.f16 r0, s16 (unpredictable)
+2E140930 vmovcs.f16 r0, s8 (unpredictable)
+1E120918 vmovne.f16 r0, s4 (unpredictable)
+0E110914 vmoveq.f16 r0, s2 (unpredictable)
+0E100912 vmoveq.f16 r0, s0 (unpredictable)
+0E100991 vmoveq.f16 r0, s1 (unpredictable)
+0E1F0910 vmoveq.f16 r0, s30 (unpredictable)
+0E1F0990 vmoveq.f16 r0, s31 (unpredictable)
+
+// VMOV_toh_A1 cond=xxxx|1110000|op=0|Vn=xxxx|Rt=xxxx|1001|N=x|(0)(0)1(0)(0)(0)(0)
+// VmovTohA1: VMOV{<c>}{<q>}.F16  <Sn>, <Rt>
+// read together by <Sn>: Vn, N
+// register fields: Rt
+9e06a990 vmovls.f16 s13, r10 (unpredictable)
+0E00097F vmoveq.f16 s0, r0 (unpredictable)
+FE06A990 UNALLOCATED
+8E0FF9D0 vmovhi.f16 s31, pc (unpredictable)
+4E08A9B0 vmovmi.f16 s17, r10 (unpredictable)
+2E04A998 vmovcs.f16 s9, r10 (unpredictable)
+1E02A994 vmovne.f16 s5, r10 (unpredictable)
+9E01A992 vmovls.f16 s3, r10 (unpredictable)
+9E00A911 vmovls.f16 s0, r10 (unpredictable)
+9E00A990 vmovls.f16 s1, r10 (unpredictable)
+9E0FA910 vmovls.f16 s30, r10 (unpredictable)
+9E0FA990 vmovls.f16 s31, r10 (unpredictable)

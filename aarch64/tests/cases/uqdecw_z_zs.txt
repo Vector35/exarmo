@@ -1,0 +1,25 @@
+// uqdecw_z_zs_ 000|0010|0|size=10|1|0|imm4=xxxx|11|00|D=1|U=1|pattern=xxxxx|Zdn=xxxxx
+// UqdecwZZs: UQDECW  <Zdn>.S{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04AECDFA uqdecw z26.s, #0xf, mul #0xf
+04A9CDFC uqdecw z28.s, #0xf, mul #0xa
+04A5CF2E uqdecw z14.s, #0x19, mul #0x6
+04A9CEAC uqdecw z12.s, #0x15, mul #0xa
+04AFCE5E uqdecw z30.s, #0x12, mul #0x10
+04AACE7B uqdecw z27.s, #0x13, mul #0xb
+04A3CF56 uqdecw z22.s, #0x1a, mul #0x4
+04A1CE28 uqdecw z8.s, #0x11, mul #0x2
+04AFCCF8 uqdecw z24.s, vl7, mul #0x10
+04A3CF03 uqdecw z3.s, #0x18, mul #0x4
+04A7CE00 uqdecw z0.s, #0x10, mul #0x8
+04ADCDE4 uqdecw z4.s, #0xf, mul #0xe
+04A1CDE2 uqdecw z2.s, #0xf, mul #0x2
+04A1CF54 uqdecw z20.s, #0x1a, mul #0x2
+04A4CE5E uqdecw z30.s, #0x12, mul #0x5
+04A3CDB9 uqdecw z25.s, vl256, mul #0x4
+04A0CC1F uqdecw z31.s, pow2
+04AECFFA uqdecw z26.s, all, mul #0xf
+04A8CD1A uqdecw z26.s, vl8, mul #0x9
+04A2CC9A uqdecw z26.s, vl4, mul #0x3
+04AECC5A uqdecw z26.s, vl2, mul #0xf
+04AECC3A uqdecw z26.s, vl1, mul #0xf

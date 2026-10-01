@@ -1,0 +1,31 @@
+// sqrdcmlah_z_zzzi_h 010|0010|0|size=10|1|i2=xx|Zm=xxx|0111|rot=xx|Zn=xxxxx|Zda=xxxxx
+// SqrdcmlahZZzziH: SQRDCMLAH  <Zda>.H, <Zn>.H, <Zm>.H[<imm>], <const>
+// register fields: Zm, Zn, Zda
+44AE78E1 sqrdcmlah z1.h, z7.h, z6.h[1], #0xb4
+44B67531 sqrdcmlah z17.h, z9.h, z6.h[2], #0x5a
+44BD7943 sqrdcmlah z3.h, z10.h, z5.h[3], #0xb4
+44B97B1E sqrdcmlah z30.h, z24.h, z1.h[3], #0xb4
+44B87628 sqrdcmlah z8.h, z17.h, z0.h[3], #0x5a
+44A77F22 sqrdcmlah z2.h, z25.h, z7.h[0], #0x10e
+44AA7556 sqrdcmlah z22.h, z10.h, z2.h[1], #0x5a
+44B9756B sqrdcmlah z11.h, z11.h, z1.h[3], #0x5a
+44AB7000 sqrdcmlah z0.h, z0.h, z3.h[1], #0x0
+44AC7BFF sqrdcmlah z31.h, z31.h, z4.h[1], #0xb4
+44AE78C1 sqrdcmlah z1.h, z6.h, z6.h[1], #0xb4
+44AE78E6 sqrdcmlah z6.h, z7.h, z6.h[1], #0xb4
+
+// sqrdcmlah_z_zzzi_s 010|0010|0|size=11|1|i1=x|Zm=xxxx|0111|rot=xx|Zn=xxxxx|Zda=xxxxx
+// SqrdcmlahZZzziS: SQRDCMLAH  <Zda>.S, <Zn>.S, <Zm>.S[<imm>], <const>
+// register fields: Zm, Zn, Zda
+44E1785A sqrdcmlah z26.s, z2.s, z1.s[0], #0xb4
+44F97D01 sqrdcmlah z1.s, z8.s, z9.s[1], #0x10e
+44E27344 sqrdcmlah z4.s, z26.s, z2.s[0], #0x0
+44FD75B4 sqrdcmlah z20.s, z13.s, z13.s[1], #0x5a
+44E17244 sqrdcmlah z4.s, z18.s, z1.s[0], #0x0
+44E07B8E sqrdcmlah z14.s, z28.s, z0.s[0], #0xb4
+44E17769 sqrdcmlah z9.s, z27.s, z1.s[0], #0x5a
+44EF72E0 sqrdcmlah z0.s, z23.s, z15.s[0], #0x0
+44E1781F sqrdcmlah z31.s, z0.s, z1.s[0], #0xb4
+44E17BFA sqrdcmlah z26.s, z31.s, z1.s[0], #0xb4
+44E17841 sqrdcmlah z1.s, z2.s, z1.s[0], #0xb4
+44E17842 sqrdcmlah z2.s, z2.s, z1.s[0], #0xb4

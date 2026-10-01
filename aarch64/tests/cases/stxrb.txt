@@ -1,0 +1,32 @@
+// STXRB_SR32_ldstexclr size=00|00|1|0|0|00|L=0|0|Rs=xxxxx|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// StxrbSr32Ldstexclr: STXRB  <Ws>, <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+080D7CD2 stxrb w13, w18, [x6]
+080C7D20 stxrb w12, w0, [x9]
+080A7F85 stxrb w10, w5, [x28]
+08157EF2 stxrb w21, w18, [x23]
+080B7D09 stxrb w11, w9, [x8]
+08007EE6 stxrb w0, w6, [x23]
+08197D5F stxrb w25, wzr, [x10]
+081B7FF3 stxrb w27, w19, [sp]
+08073002 stxrb w7, w2, [x0] (unpredictable)
+080F2FC6 stxrb w15, w6, [lr] (unpredictable)
+08007439 stxrb w0, w25, [x1] (unpredictable)
+08145BF5 stxrb w20, w21, [sp] (unpredictable)
+081C7CD6 stxrb w28, w22, [x6]
+081F6CE9 stxrb wzr, w9, [x7] (unpredictable)
+080A227C stxrb w10, w28, [x19] (unpredictable)
+080A4B18 stxrb w10, w24, [x24] (unpredictable)
+081C1053 stxrb w28, w19, [x2] (unpredictable)
+080C4744 stxrb w12, w4, [x26] (unpredictable)
+080D0A54 stxrb w13, w20, [x18] (unpredictable)
+08177EA1 stxrb w23, w1, [x21]
+080B59DB stxrb w11, w27, [x14] (unpredictable)
+080B6F13 stxrb w11, w19, [x24] (unpredictable)
+08073218 stxrb w7, w24, [x16] (unpredictable)
+0819176F stxrb w25, w15, [x27] (unpredictable)
+080D00D2 stxrb w13, w18, [x6] (unpredictable)
+080D7DB2 stxrb w13, w18, [x13] (unpredictable)
+080D7CCD stxrb w13, w13, [x6] (unpredictable)
+080D40D2 stxrb w13, w18, [x6] (unpredictable)
+080D04D2 stxrb w13, w18, [x6] (unpredictable)

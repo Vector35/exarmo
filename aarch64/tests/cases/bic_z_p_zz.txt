@@ -1,0 +1,21 @@
+// bic_z_p_zz_ 000|0010|0|size=xx|0|11|opc=011|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// BicZPZz: BIC  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+041B1F67 bic z7.b, p7/m, z7.b, z27.b
+045B02B7 bic z23.h, p0/m, z23.h, z21.h
+041B0524 bic z4.b, p1/m, z4.b, z9.b
+049B1419 bic z25.s, p5/m, z25.s, z0.s
+049B162E bic z14.s, p5/m, z14.s, z17.s
+045B05C2 bic z2.h, p1/m, z2.h, z14.h
+04DB1353 bic z19.d, p4/m, z19.d, z26.d
+041B02B0 bic z16.b, p0/m, z16.b, z21.b
+041B1B30 bic z16.b, p6/m, z16.b, z25.b
+04DB14A1 bic z1.d, p5/m, z1.d, z5.d
+049B04E7 bic z7.s, p1/m, z7.s, z7.s
+045B0D39 bic z25.h, p3/m, z25.h, z9.h
+049B0A56 bic z22.s, p2/m, z22.s, z18.s
+041B0D06 bic z6.b, p3/m, z6.b, z8.b
+045B0837 bic z23.h, p2/m, z23.h, z1.h
+04DB0346 bic z6.d, p0/m, z6.d, z26.d
+041B1FE0 bic z0.b, p7/m, z0.b, z31.b
+041B1F7F bic z31.b, p7/m, z31.b, z27.b

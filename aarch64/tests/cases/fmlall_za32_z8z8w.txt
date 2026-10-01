@@ -1,0 +1,25 @@
+// fmlall_za32_z8z8w_2x2 1|10|0000|11|0|1|Zm=xxxx|00|Rv=xx|000|Zn=xxxx|1|000|0|o1=x
+// FmlallZa32Z8z8w2x2: FMLALL  ZA.S[<Wv>, <offs1>:<offs4>{, VGx2}], { <Zn1>.B-<Zn2>.B }, { <Zm1>.B-<Zm2>.B }
+// register fields: Zm, Rv, Zn
+C1A00021 fmlall za.s[w8, 4:7, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A00060 fmlall za.s[w8, 0:3, vgx2], {z2.b-z3.b}, {z0.b-z1.b}
+C1A001E1 fmlall za.s[w8, 4:7, vgx2], {z14.b-z15.b}, {z0.b-z1.b}
+C1BE23E1 fmlall za.s[w9, 4:7, vgx2], {z30.b-z31.b}, {z30.b-z31.b}
+C1A04021 fmlall za.s[w10, 4:7, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A06021 fmlall za.s[w11, 4:7, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A240E1 fmlall za.s[w10, 4:7, vgx2], {z6.b-z7.b}, {z2.b-z3.b}
+
+// fmlall_za32_z8z8w_4x4 1|10|0000|11|0|1|Zm=xxx|0|10|Rv=xx|000|Zn=xxx|01|000|0|o1=x
+// FmlallZa32Z8z8w4x4: FMLALL  ZA.S[<Wv>, <offs1>:<offs4>{, VGx4}], { <Zn1>.B-<Zn4>.B }, { <Zm1>.B-<Zm4>.B }
+// register fields: Zm, Rv, Zn
+C1A101A0 fmlall za.s[w8, 0:3, vgx4], {z12.b-z15.b}, {z0.b-z3.b}
+C1A10321 fmlall za.s[w8, 4:7, vgx4], {z24.b-z27.b}, {z0.b-z3.b}
+C1A12120 fmlall za.s[w9, 0:3, vgx4], {z8.b-z11.b}, {z0.b-z3.b}
+C1A54020 fmlall za.s[w10, 0:3, vgx4], {z0.b-z3.b}, {z4.b-z7.b}
+C1A960A0 fmlall za.s[w11, 0:3, vgx4], {z4.b-z7.b}, {z8.b-z11.b}
+C1AD0220 fmlall za.s[w8, 0:3, vgx4], {z16.b-z19.b}, {z12.b-z15.b}
+C1B102A0 fmlall za.s[w8, 0:3, vgx4], {z20.b-z23.b}, {z16.b-z19.b}
+C1B503A0 fmlall za.s[w8, 0:3, vgx4], {z28.b-z31.b}, {z20.b-z23.b}
+C1B901A0 fmlall za.s[w8, 0:3, vgx4], {z12.b-z15.b}, {z24.b-z27.b}
+C1BD01A0 fmlall za.s[w8, 0:3, vgx4], {z12.b-z15.b}, {z28.b-z31.b}
+C1A10020 fmlall za.s[w8, 0:3, vgx4], {z0.b-z3.b}, {z0.b-z3.b}

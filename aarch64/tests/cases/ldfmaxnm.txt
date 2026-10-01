@@ -1,0 +1,127 @@
+// LDFMAXNM_16 size=01|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnm16: LDFMAXNM  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+7C206002 ldfmaxnm h0, h2, [x0]
+7C206009 ldfmaxnm h0, h9, [x0]
+7C206010 ldfmaxnm h0, h16, [x0]
+7C3F63E0 ldfmaxnm h31, h0, [sp]
+7C20601F ldfmaxnm h0, h31, [x0]
+7C206000 ldfmaxnm h0, h0, [x0]
+7C216043 ldfmaxnm h1, h3, [x2]
+
+// LDFMAXNM_32 size=10|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnm32: LDFMAXNM  <Ss>, <St>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+BC206001 ldfmaxnm s0, s1, [x0]
+BC206008 ldfmaxnm s0, s8, [x0]
+BC20600F ldfmaxnm s0, s15, [x0]
+BC3F63E0 ldfmaxnm s31, s0, [sp]
+BC20601F ldfmaxnm s0, s31, [x0]
+BC206000 ldfmaxnm s0, s0, [x0]
+BC216043 ldfmaxnm s1, s3, [x2]
+
+// LDFMAXNM_64 size=11|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnm64: LDFMAXNM  <Ds>, <Dt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+FC206000 ldfmaxnm d0, d0, [x0]
+FC206007 ldfmaxnm d0, d7, [x0]
+FC20600E ldfmaxnm d0, d14, [x0]
+FC3F63FF ldfmaxnm d31, d31, [sp]
+FC216043 ldfmaxnm d1, d3, [x2]
+
+// LDFMAXNMA_16 size=01|111|VR=1|00|A=1|R=0|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnma16: LDFMAXNMA  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+7CA06005 ldfmaxnma h0, h5, [x0]
+7CA0600C ldfmaxnma h0, h12, [x0]
+7CA06013 ldfmaxnma h0, h19, [x0]
+7CBF63E0 ldfmaxnma h31, h0, [sp]
+7CA0601F ldfmaxnma h0, h31, [x0]
+7CA06000 ldfmaxnma h0, h0, [x0]
+7CA16043 ldfmaxnma h1, h3, [x2]
+
+// LDFMAXNMA_32 size=10|111|VR=1|00|A=1|R=0|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnma32: LDFMAXNMA  <Ss>, <St>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+BCA06004 ldfmaxnma s0, s4, [x0]
+BCA0600B ldfmaxnma s0, s11, [x0]
+BCA06012 ldfmaxnma s0, s18, [x0]
+BCBF63E0 ldfmaxnma s31, s0, [sp]
+BCA0601F ldfmaxnma s0, s31, [x0]
+BCA06000 ldfmaxnma s0, s0, [x0]
+BCA16043 ldfmaxnma s1, s3, [x2]
+
+// LDFMAXNMA_64 size=11|111|VR=1|00|A=1|R=0|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnma64: LDFMAXNMA  <Ds>, <Dt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+FCA06003 ldfmaxnma d0, d3, [x0]
+FCA0600A ldfmaxnma d0, d10, [x0]
+FCA06011 ldfmaxnma d0, d17, [x0]
+FCBF63E0 ldfmaxnma d31, d0, [sp]
+FCA0601F ldfmaxnma d0, d31, [x0]
+FCA06000 ldfmaxnma d0, d0, [x0]
+FCA16043 ldfmaxnma d1, d3, [x2]
+
+// LDFMAXNMAL_16 size=01|111|VR=1|00|A=1|R=1|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnmal16: LDFMAXNMAL  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+7CE06003 ldfmaxnmal h0, h3, [x0]
+7CE0600A ldfmaxnmal h0, h10, [x0]
+7CE06011 ldfmaxnmal h0, h17, [x0]
+7CFF63E0 ldfmaxnmal h31, h0, [sp]
+7CE0601F ldfmaxnmal h0, h31, [x0]
+7CE06000 ldfmaxnmal h0, h0, [x0]
+7CE16043 ldfmaxnmal h1, h3, [x2]
+
+// LDFMAXNMAL_32 size=10|111|VR=1|00|A=1|R=1|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnmal32: LDFMAXNMAL  <Ss>, <St>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+BCE06002 ldfmaxnmal s0, s2, [x0]
+BCE06009 ldfmaxnmal s0, s9, [x0]
+BCE06010 ldfmaxnmal s0, s16, [x0]
+BCFF63E0 ldfmaxnmal s31, s0, [sp]
+BCE0601F ldfmaxnmal s0, s31, [x0]
+BCE06000 ldfmaxnmal s0, s0, [x0]
+BCE16043 ldfmaxnmal s1, s3, [x2]
+
+// LDFMAXNMAL_64 size=11|111|VR=1|00|A=1|R=1|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnmal64: LDFMAXNMAL  <Ds>, <Dt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+FCE06001 ldfmaxnmal d0, d1, [x0]
+FCE06008 ldfmaxnmal d0, d8, [x0]
+FCE0600F ldfmaxnmal d0, d15, [x0]
+FCFF63E0 ldfmaxnmal d31, d0, [sp]
+FCE0601F ldfmaxnmal d0, d31, [x0]
+FCE06000 ldfmaxnmal d0, d0, [x0]
+FCE16043 ldfmaxnmal d1, d3, [x2]
+
+// LDFMAXNML_16 size=01|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnml16: LDFMAXNML  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+7C606000 ldfmaxnml h0, h0, [x0]
+7C606007 ldfmaxnml h0, h7, [x0]
+7C60600E ldfmaxnml h0, h14, [x0]
+7C7F63FF ldfmaxnml h31, h31, [sp]
+7C616043 ldfmaxnml h1, h3, [x2]
+
+// LDFMAXNML_32 size=10|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnml32: LDFMAXNML  <Ss>, <St>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+BC606006 ldfmaxnml s0, s6, [x0]
+BC60600D ldfmaxnml s0, s13, [x0]
+BC606014 ldfmaxnml s0, s20, [x0]
+BC7F63E0 ldfmaxnml s31, s0, [sp]
+BC60601F ldfmaxnml s0, s31, [x0]
+BC606000 ldfmaxnml s0, s0, [x0]
+BC616043 ldfmaxnml s1, s3, [x2]
+
+// LDFMAXNML_64 size=11|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=0|opc=110|00|Rn=xxxxx|Rt=xxxxx
+// Ldfmaxnml64: LDFMAXNML  <Ds>, <Dt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+FC606005 ldfmaxnml d0, d5, [x0]
+FC60600C ldfmaxnml d0, d12, [x0]
+FC606013 ldfmaxnml d0, d19, [x0]
+FC7F63E0 ldfmaxnml d31, d0, [sp]
+FC60601F ldfmaxnml d0, d31, [x0]
+FC606000 ldfmaxnml d0, d0, [x0]
+FC616043 ldfmaxnml d1, d3, [x2]

@@ -1,0 +1,87 @@
+// ADD_SP_i_A1 cond=xxxx|0010|opc=100|S=0|Rn=1101|Rd=xxxx|imm12=xxxxxxxxxxxx
+// AddSpIA1: ADD{<c>}{<q>}  {<Rd>, }SP, #<const>
+// register fields: Rd
+// modified immediate <const>: imm12
+a28df65d addge pc, sp, #97517568
+a28d4a54 addge r4, sp, #344064
+728dd56a addvc sp, sp, #444596224
+c28df53e addgt pc, sp, #260046848
+128dc275 addne r12, sp, #1342177287
+b28d3f25 addlt r3, sp, #148
+928d5ae5 addls r5, sp, #937984
+128d5014 addne r5, sp, #20
+028D0000 addeq r0, sp, #0x0
+F28DF65D UNALLOCATED
+828DFFFF addhi pc, sp, #0x3fc
+428DF800 addmi pc, sp, #0x0
+228DF400 addcs pc, sp, #0x0
+A28DF200 addge pc, sp, #0x0
+A28DF100 addge pc, sp, #0x0
+A28DF080 addge pc, sp, #0x80
+A28DF040 addge pc, sp, #0x40
+A28DF020 addge pc, sp, #0x20
+A28DF010 addge pc, sp, #0x10
+A28DF008 addge pc, sp, #0x8
+A28DF004 addge pc, sp, #0x4
+A28DF002 addge pc, sp, #0x2
+A28DF001 addge pc, sp, #0x1
+A28DF081 addge pc, sp, #0x81
+A28DF181 addge pc, sp, #0x40000020
+A28DF281 addge pc, sp, #0x10000008
+A28DF381 addge pc, sp, #0x4000002
+A28DF481 addge pc, sp, #0x81000000
+A28DF581 addge pc, sp, #0x20400000
+A28DF681 addge pc, sp, #0x8100000
+A28DF781 addge pc, sp, #0x2040000
+A28DF881 addge pc, sp, #0x810000
+A28DF981 addge pc, sp, #0x204000
+A28DFA81 addge pc, sp, #0x81000
+A28DFB81 addge pc, sp, #0x20400
+A28DFC81 addge pc, sp, #0x8100
+A28DFD81 addge pc, sp, #0x2040
+A28DFE81 addge pc, sp, #0x810
+A28DFF81 addge pc, sp, #0x204
+
+// ADDS_SP_i_A1 cond=xxxx|0010|opc=100|S=1|Rn=1101|Rd=xxxx|imm12=xxxxxxxxxxxx
+// AddsSpIA1: ADDS{<c>}{<q>}  {<Rd>, }SP, #<const>
+// register fields: Rd
+// modified immediate <const>: imm12
+829d8920 addshi r8, sp, #524288
+229ddcaf addshs sp, sp, #44800
+629d62b8 addsvs r6, sp, #2147483659
+429d94cc addsmi r9, sp, #3422552064
+d29da451 addsle r10, sp, #1358954496
+e29dde54 adds sp, sp, #1344
+129dab92 addsne r10, sp, #149504
+429d7d0e addsmi r7, sp, #896
+029D0000 addseq r0, sp, #0x0
+F29DDCAF UNDEFINED
+829DFFFF addshi pc, sp, #0x3fc
+829D8800 addshi r8, sp, #0x0
+829D8400 addshi r8, sp, #0x0
+829D8200 addshi r8, sp, #0x0
+829D8100 addshi r8, sp, #0x0
+829D8080 addshi r8, sp, #0x80
+829D8040 addshi r8, sp, #0x40
+829D8020 addshi r8, sp, #0x20
+829D8010 addshi r8, sp, #0x10
+829D8008 addshi r8, sp, #0x8
+829D8004 addshi r8, sp, #0x4
+829D8002 addshi r8, sp, #0x2
+829D8001 addshi r8, sp, #0x1
+829D8081 addshi r8, sp, #0x81
+829D8181 addshi r8, sp, #0x40000020
+829D8281 addshi r8, sp, #0x10000008
+829D8381 addshi r8, sp, #0x4000002
+829D8481 addshi r8, sp, #0x81000000
+829D8581 addshi r8, sp, #0x20400000
+829D8681 addshi r8, sp, #0x8100000
+829D8781 addshi r8, sp, #0x2040000
+829D8881 addshi r8, sp, #0x810000
+829D8981 addshi r8, sp, #0x204000
+829D8A81 addshi r8, sp, #0x81000
+829D8B81 addshi r8, sp, #0x20400
+829D8C81 addshi r8, sp, #0x8100
+829D8D81 addshi r8, sp, #0x2040
+829D8E81 addshi r8, sp, #0x810
+829D8F81 addshi r8, sp, #0x204

@@ -1,0 +1,73 @@
+// LDR_r_A1_off cond=xxxx|011|P=1|U=x|op2=0|W=0|op1=1|Rn=xxxx|Rt=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// LdrRA1Off: LDR{<c>}{<q>}  <Rt>, [<Rn>, {<+/->}<Rm>{, <shift>}]
+// register fields: Rn, Rt, Rm
+b71eb0ae ldrlt r11, [lr, -lr, lsr #1]
+c71e98e1 ldrgt r9, [lr, -r1, ror #17]
+0790cce8 ldreq r12, [r0, r8, ror #25]
+a7904be8 ldrge r4, [r0, r8, ror #23]
+b7113c23 ldrlt r3, [r1, -r3, lsr #24]
+479c4708 ldrmi r4, [r12, r8, lsl #14]
+079583ac ldreq r8, [r5, r12, lsr #7]
+d79bb024 ldrle r11, [r11, r4, lsr #32]
+// Binary Ninja's tests
+e7152003 ldr r2, [r5, -r3]
+e7183782 ldr r3, [r8, -r2, lsl #15]
+e7900000 ldr r0, [r0, r0]
+e7900020 ldr r0, [r0, r0, lsr #32]
+e7900040 ldr r0, [r0, r0, asr #32]
+e7900060 ldr r0, [r0, r0, rrx]
+e7900800 ldr r0, [r0, r0, lsl #16]
+e7900820 ldr r0, [r0, r0, lsr #16]
+e7900840 ldr r0, [r0, r0, asr #16]
+e7900860 ldr r0, [r0, r0, ror #16]
+e7983001 ldr r3, [r8, r1]
+871FFFAF ldrhi pc, [pc, -pc, lsr #0x1f] (unpredictable)
+271EB42E ldrcs r11, [lr, -lr, lsr #0x8]
+171EB22E ldrne r11, [lr, -lr, lsr #0x4]
+B71EB12E ldrlt r11, [lr, -lr, lsr #0x2]
+
+// LDR_r_A1_post cond=xxxx|011|P=0|U=x|op2=0|W=0|op1=1|Rn=xxxx|Rt=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// LdrRA1Post: LDR{<c>}{<q>}  <Rt>, [<Rn>], {<+/->}<Rm>{, <shift>}
+// register fields: Rn, Rt, Rm
+d61ebb0e ldrle r11, [lr], -lr, lsl #22
+a6195b64 ldrge r5, [r9], -r4, ror #22
+269d89c2 ldrhs r8, [sp], r2, asr #19
+b613ec21 ldrlt lr, [r3], -r1, lsr #24
+469cbca0 ldrmi r11, [r12], r0, lsr #25
+e691212d ldr r2, [r1], sp, lsr #2
+e69d47ee ldr r4, [sp], lr, ror #15
+76916521 ldrvc r6, [r1], r1, lsr #10
+// Binary Ninja's tests
+e6134006 ldr r4, [r3], -r6
+e6910062 ldr r0, [r1], r2, rrx
+e6943005 ldr r3, [r4], r5
+e69517c3 ldr r1, [r5], r3, asr #15
+e6995002 ldr r5, [r9], r2
+0610FF8F ldreq pc, [r0], -pc, lsl #0x1f (unpredictable)
+F61EBB0E reserved hint
+861FB80B ldrhi r11, [pc], -r11, lsl #0x10 (unpredictable)
+161EE40E ldrne lr, [lr], -lr, lsl #0x8 (unpredictable)
+D61EB20E ldrle r11, [lr], -lr, lsl #0x4
+D61EB08E ldrle r11, [lr], -lr, lsl #0x1
+
+// LDR_r_A1_pre cond=xxxx|011|P=1|U=x|op2=0|W=1|op1=1|Rn=xxxx|Rt=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// LdrRA1Pre: LDR{<c>}{<q>}  <Rt>, [<Rn>, {<+/->}<Rm>{, <shift>}]!
+// register fields: Rn, Rt, Rm
+e7b4ef83 ldr lr, [r4, r3, lsl #31]!
+6736980b ldrvs r9, [r6, -r11, lsl #16]!
+c7b0d669 ldrgt sp, [r0, r9, ror #12]!
+37b874ca ldrlo r7, [r8, r10, asr #9]!
+b739fa4c ldrlt pc, [r9, -r12, asr #20]!
+a7bf1981 ldrge r1, [pc, r1, lsl #19]! (unpredictable)
+d7342e69 ldrle r2, [r4, -r9, ror #28]!
+e7b6814b ldr r8, [r6, r11, asr #2]!
+// Binary Ninja's tests
+e7376008 ldr r6, [r7, -r8]!
+e7b011a2 ldr r1, [r0, r2, lsr #3]!
+e7b51009 ldr r1, [r5, r9]!
+07B40400 ldreq r0, [r4, r0, lsl #0x8]!
+F7B4EF83 UNPREDICTABLE
+87B4420F ldrhi r4, [r4, pc, lsl #0x4]! (unpredictable)
+47B4E084 ldrmi lr, [r4, r4, lsl #0x1]!
+27B4EF83 ldrcs lr, [r4, r3, lsl #0x1f]!
+17B4EF83 ldrne lr, [r4, r3, lsl #0x1f]!

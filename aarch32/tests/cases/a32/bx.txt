@@ -1,0 +1,21 @@
+// BX_A1 cond=xxxx|00|010|op0=01|0|(1)(1)(1)(1)(1)(1)(1)(1)(1)(1)(1)(1)|0|001|Rm=xxxx
+// BxA1: BX{<c>}{<q>}  <Rm>
+// register fields: Rm
+// Binary Ninja's tests
+112fff12 bxne r2
+e12fff12 bx r2
+e12fff1e bx lr
+01200010 bxeq r0 (unpredictable)
+F12FFF12 UNALLOCATED
+8128001F bxhi pc (unpredictable)
+41240012 bxmi r2 (unpredictable)
+21220012 bxcs r2 (unpredictable)
+11210012 bxne r2 (unpredictable)
+11208012 bxne r2 (unpredictable)
+11204012 bxne r2 (unpredictable)
+11202012 bxne r2 (unpredictable)
+11201012 bxne r2 (unpredictable)
+11200812 bxne r2 (unpredictable)
+11200412 bxne r2 (unpredictable)
+11200212 bxne r2 (unpredictable)
+11200112 bxne r2 (unpredictable)

@@ -1,0 +1,26 @@
+// uqsub_z_zi_ 001|0010|1|size=xx|1|00|11|U=1|11|sh=x|imm8=xxxxxxxx|Zdn=xxxxx
+// UqsubZZi: UQSUB  <Zdn>.<T>, <Zdn>.<T>, #<imm>{, <shift>}
+// register fields: Zdn
+25E7D5A8 uqsub z8.d, z8.d, #0xad
+2567E088 uqsub z8.h, z8.h, #0x4, lsl #0x8
+25E7C151 uqsub z17.d, z17.d, #0xa
+2527D3D3 uqsub z19.b, z19.b, #0x9e
+2567FA53 uqsub z19.h, z19.h, #0xd2, lsl #0x8
+2527DD00 uqsub z0.b, z0.b, #0xe8
+25A7E436 uqsub z22.s, z22.s, #0x21, lsl #0x8
+25E7CA86 uqsub z6.d, z6.d, #0x54
+2527D565 uqsub z5.b, z5.b, #0xab
+25E7FACD uqsub z13.d, z13.d, #0xd6, lsl #0x8
+2567C71B uqsub z27.h, z27.h, #0x38
+2567E807 uqsub z7.h, z7.h, #0x40, lsl #0x8
+25E7F911 uqsub z17.d, z17.d, #0xc8, lsl #0x8
+2567DB48 uqsub z8.h, z8.h, #0xda
+25A7C07F uqsub z31.s, z31.s, #0x3
+2527D013 uqsub z19.b, z19.b, #0x80
+25E7C008 uqsub z8.d, z8.d, #0x0
+25E7DFE8 uqsub z8.d, z8.d, #0xff
+25E7C408 uqsub z8.d, z8.d, #0x20
+25E7C208 uqsub z8.d, z8.d, #0x10
+25E7C108 uqsub z8.d, z8.d, #0x8
+25E7C048 uqsub z8.d, z8.d, #0x2
+25E7C028 uqsub z8.d, z8.d, #0x1

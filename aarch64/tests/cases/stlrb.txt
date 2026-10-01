@@ -1,0 +1,32 @@
+// STLRB_SL32_ldstord size=00|00|1|0|0|01|L=0|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// StlrbSl32Ldstord: STLRB  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+089FFD84 stlrb w4, [x12]
+089FFD65 stlrb w5, [x11]
+089FFD62 stlrb w2, [x11]
+089FFFA0 stlrb w0, [fp]
+089FFC78 stlrb w24, [x3]
+089FFC91 stlrb w17, [x4]
+089FFDEE stlrb w14, [x15]
+089FFC36 stlrb w22, [x1]
+088CB9F2 stlrb w18, [x15] (unpredictable)
+088FD312 stlrb w18, [x24] (unpredictable)
+08808A54 stlrb w20, [x18] (unpredictable)
+0893AE18 stlrb w24, [x16] (unpredictable)
+089BE32D stlrb w13, [x25] (unpredictable)
+088FAB9E stlrb w30, [x28] (unpredictable)
+088FC8AF stlrb w15, [x5] (unpredictable)
+0896D917 stlrb w23, [x8] (unpredictable)
+088AF737 stlrb w23, [x25] (unpredictable)
+08849EF1 stlrb w17, [x23] (unpredictable)
+089EDE44 stlrb w4, [x18] (unpredictable)
+089C981E stlrb w30, [x0] (unpredictable)
+08818BF5 stlrb w21, [sp] (unpredictable)
+089BC185 stlrb w5, [x12] (unpredictable)
+088685E0 stlrb w0, [x15] (unpredictable)
+0885F7E7 stlrb w7, [sp] (unpredictable)
+089F819F stlrb wzr, [x12] (unpredictable)
+089FFD8C stlrb w12, [x12]
+0890A184 stlrb w4, [x12] (unpredictable)
+08889184 stlrb w4, [x12] (unpredictable)
+0882FD84 stlrb w4, [x12] (unpredictable)

@@ -1,0 +1,23 @@
+// uqsub_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|000|11|U=1|Zn=xxxxx|Zd=xxxxx
+// UqsubZZz: UQSUB  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+042D1D6C uqsub z12.b, z11.b, z13.b
+04AB1CF7 uqsub z23.s, z7.s, z11.s
+04EA1DB2 uqsub z18.d, z13.d, z10.d
+04A71C94 uqsub z20.s, z4.s, z7.s
+04E51E89 uqsub z9.d, z20.d, z5.d
+04231F3E uqsub z30.b, z25.b, z3.b
+04E91EDE uqsub z30.d, z22.d, z9.d
+04731CCD uqsub z13.h, z6.h, z19.h
+04FF1DD8 uqsub z24.d, z14.d, z31.d
+04A81FCB uqsub z11.s, z30.s, z8.s
+04A91DF4 uqsub z20.s, z15.s, z9.s
+047E1E53 uqsub z19.h, z18.h, z30.h
+04601FA7 uqsub z7.h, z29.h, z0.h
+04381DCE uqsub z14.b, z14.b, z24.b
+042A1C15 uqsub z21.b, z0.b, z10.b
+04E81E1A uqsub z26.d, z16.d, z8.d
+042D1FE0 uqsub z0.b, z31.b, z13.b
+042D1D7F uqsub z31.b, z11.b, z13.b
+042D1DAC uqsub z12.b, z13.b, z13.b
+042D1D6D uqsub z13.b, z11.b, z13.b

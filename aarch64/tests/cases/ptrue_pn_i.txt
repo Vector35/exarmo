@@ -1,0 +1,12 @@
+// ptrue_pn_i_ 001|0010|1|size=xx|1|00000|01|111|000000|1|0|PNd=xxx
+// PtruePnI: PTRUE  <PNd>.<T>
+// register fields: PNd
+// PTRUE_PN_I_ SVE predicate-as-counter (SME2/SVE2p1)
+25e07811 ptrue pn9.d
+25207810 ptrue pn8.b
+25a07817 ptrue pn15.s
+25607812 ptrue pn10.h
+25E07813 ptrue pn11.d
+25E07814 ptrue pn12.d
+25E07815 ptrue pn13.d
+25E07816 ptrue pn14.d

@@ -1,0 +1,100 @@
+// SLI_asimdshf_R 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|opcode=01010|1|Rn=xxxxx|Rd=xxxxx
+// SliAsimdshfR: SLI  <Vd>.<T>, <Vn>.<T>, #<shift>
+// read together by <T>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+6F6C54AA sli v10.2d, v5.2d, #0x2c
+6F6955D8 sli v24.2d, v14.2d, #0x29
+6F535493 sli v19.2d, v4.2d, #0x13
+6F095739 sli v25.16b, v25.16b, #0x1
+6F395643 sli v3.4s, v18.4s, #0x19
+6F665788 sli v8.2d, v28.2d, #0x26
+6F645746 sli v6.2d, v26.2d, #0x24
+2F165630 sli v16.4h, v17.4h, #0x6
+6F5E5493 sli v19.2d, v4.2d, #0x1e
+6F7B54FE sli v30.2d, v7.2d, #0x3b
+6F7B5757 sli v23.2d, v26.2d, #0x3b
+6F425762 sli v2.2d, v27.2d, #0x2
+6F7D5416 sli v22.2d, v0.2d, #0x3d
+6F225630 sli v16.4s, v17.4s, #0x2
+6F7F5724 sli v4.2d, v25.2d, #0x3f
+2F105597 sli v23.4h, v12.4h, #0x0
+6F6C57E0 sli v0.2d, v31.2d, #0x2c
+6F6C54BF sli v31.2d, v5.2d, #0x2c
+2F7C54AA UNDEFINED
+6F7854AA sli v10.2d, v5.2d, #0x38
+6F7954AA sli v10.2d, v5.2d, #0x39
+6F7A54AA sli v10.2d, v5.2d, #0x3a
+6F7C54AA sli v10.2d, v5.2d, #0x3c
+6F7E54AA sli v10.2d, v5.2d, #0x3e
+
+// SLI_asisdshf_R 01|U=1|1|111|10|immh=1xxx|immb=xxx|opcode=01010|1|Rn=xxxxx|Rd=xxxxx
+// SliAsisdshfR: SLI  <d>, <n>, #<shift>
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+7F6D5475 sli d21, d3, #0x2d
+7F63554D sli d13, d10, #0x23
+7F4B574D sli d13, d26, #0xb
+7F555588 sli d8, d12, #0x15
+7F7B5645 sli d5, d18, #0x3b
+7F4A56E8 sli d8, d23, #0xa
+7F6454F4 sli d20, d7, #0x24
+7F4F56FC sli d28, d23, #0xf
+7F7C57E1 sli d1, d31, #0x3c
+7F4856D2 sli d18, d22, #0x8
+7F7556FA sli d26, d23, #0x35
+7F59576C sli d12, d27, #0x19
+7F6E55B2 sli d18, d13, #0x2e
+7F685404 sli d4, d0, #0x28
+7F7B5743 sli d3, d26, #0x3b
+7F4955CB sli d11, d14, #0x9
+7F455460 sli d0, d3, #0x5
+7F6D547F sli d31, d3, #0x2d
+7F405463 sli d3, d3, #0x0
+7F415475 sli d21, d3, #0x1
+7F425475 sli d21, d3, #0x2
+7F435475 sli d21, d3, #0x3
+7F445475 sli d21, d3, #0x4
+7F465475 sli d21, d3, #0x6
+7F475475 sli d21, d3, #0x7
+7F4C5475 sli d21, d3, #0xc
+7F4D5475 sli d21, d3, #0xd
+7F4E5475 sli d21, d3, #0xe
+7F505475 sli d21, d3, #0x10
+7F515475 sli d21, d3, #0x11
+7F525475 sli d21, d3, #0x12
+7F535475 sli d21, d3, #0x13
+7F545475 sli d21, d3, #0x14
+7F565475 sli d21, d3, #0x16
+7F575475 sli d21, d3, #0x17
+7F585475 sli d21, d3, #0x18
+7F5A5475 sli d21, d3, #0x1a
+7F5B5475 sli d21, d3, #0x1b
+7F5C5475 sli d21, d3, #0x1c
+7F5D5475 sli d21, d3, #0x1d
+7F5E5475 sli d21, d3, #0x1e
+7F5F5475 sli d21, d3, #0x1f
+7F605475 sli d21, d3, #0x20
+7F615475 sli d21, d3, #0x21
+7F625475 sli d21, d3, #0x22
+7F655475 sli d21, d3, #0x25
+7F665475 sli d21, d3, #0x26
+7F675475 sli d21, d3, #0x27
+7F695475 sli d21, d3, #0x29
+7F6A5475 sli d21, d3, #0x2a
+7F6B5475 sli d21, d3, #0x2b
+7F6C5475 sli d21, d3, #0x2c
+7F6F5475 sli d21, d3, #0x2f
+7F705475 sli d21, d3, #0x30
+7F715475 sli d21, d3, #0x31
+7F725475 sli d21, d3, #0x32
+7F735475 sli d21, d3, #0x33
+7F745475 sli d21, d3, #0x34
+7F765475 sli d21, d3, #0x36
+7F775475 sli d21, d3, #0x37
+7F785475 sli d21, d3, #0x38
+7F795475 sli d21, d3, #0x39
+7F7A5475 sli d21, d3, #0x3a
+7F7D5475 sli d21, d3, #0x3d
+7F7E5475 sli d21, d3, #0x3e
+7F7F5475 sli d21, d3, #0x3f

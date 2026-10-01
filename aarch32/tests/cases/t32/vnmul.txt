@@ -1,0 +1,73 @@
+// VNMUL_T1_D 11101110|o0=0|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=11|N=x|o2=1|M=x|0|Vm=xxxx
+// VnmulT1D: VNMUL{<c>}{<q>}.F64  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ee649be9 vnmul.f64 d25, d20, d25
+ee237b46 vnmul.f64 d7, d3, d6
+ee226b46 vnmul.f64 d6, d2, d6
+ee68dbc3 vnmul.f64 d29, d24, d3
+ee6f9b6c vnmul.f64 d25, d15, d28
+ee260b49 vnmul.f64 d0, d6, d9
+ee2d3bed vnmul.f64 d3, d29, d29
+ee6c2bcd vnmul.f64 d18, d28, d13
+EE60FBE0 vnmul.f64 d31, d16, d16
+EE618BEF vnmul.f64 d24, d17, d31
+EE604B68 vnmul.f64 d20, d0, d24
+EE601BE4 vnmul.f64 d17, d16, d20
+EE2FFBE2 vnmul.f64 d15, d31, d18
+EE640BE1 vnmul.f64 d16, d20, d17
+EE64FBC0 vnmul.f64 d31, d20, d0
+EE649BCF vnmul.f64 d25, d20, d15
+EE649BE0 vnmul.f64 d25, d20, d16
+EE649BEF vnmul.f64 d25, d20, d31
+EE649BE9 [ne] vnmulne.f64 d25, d20, d25
+
+// VNMUL_T1_H 11101110|o0=0|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=01|N=x|o2=1|M=x|0|Vm=xxxx
+// VnmulT1H: VNMUL{<c>}{<q>}.F16  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee20b9c2 vnmul.f16 s22, s1, s4
+ee6ee947 vnmul.f16 s29, s28, s14
+ee6169c2 vnmul.f16 s13, s3, s4
+ee2419ee vnmul.f16 s2, s9, s29
+ee6719c5 vnmul.f16 s3, s15, s10
+ee2e4943 vnmul.f16 s8, s28, s6
+ee2a4947 vnmul.f16 s8, s20, s14
+ee68e9e1 vnmul.f16 s29, s17, s3
+EE2F09C0 vnmul.f16 s0, s31, s0
+EE22F9CF vnmul.f16 s30, s5, s30
+EE208948 vnmul.f16 s16, s0, s16
+EE2F2944 vnmul.f16 s4, s30, s8
+EE20F9CF vnmul.f16 s30, s1, s30
+EE6009E0 vnmul.f16 s1, s1, s1
+EE60F9EF vnmul.f16 s31, s1, s31
+EE20B9C2 [ne] vnmulne.f16 s22, s1, s4 (unpredictable)
+
+// VNMUL_T1_S 11101110|o0=0|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=10|N=x|o2=1|M=x|0|Vm=xxxx
+// VnmulT1S: VNMUL{<c>}{<q>}.F32  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee6eea4c vnmul.f32 s29, s28, s24
+ee6e6a43 vnmul.f32 s13, s28, s6
+ee222ace vnmul.f32 s4, s5, s28
+ee25da42 vnmul.f32 s26, s10, s4
+ee6d5a4f vnmul.f32 s11, s26, s30
+ee6fbac4 vnmul.f32 s23, s31, s8
+ee635acd vnmul.f32 s11, s7, s26
+ee675a69 vnmul.f32 s11, s14, s19
+EE600A40 vnmul.f32 s1, s0, s0
+EE68FA48 vnmul.f32 s31, s16, s16
+EE648A41 vnmul.f32 s17, s8, s2
+EE614A40 vnmul.f32 s9, s2, s0
+EE601A60 vnmul.f32 s3, s0, s1
+EE200AEF vnmul.f32 s0, s1, s31
+EE2FFA4C vnmul.f32 s30, s30, s24
+EE6E0A4C vnmul.f32 s1, s28, s24
+EE6EFA4C vnmul.f32 s31, s28, s24
+EE6EEA4C [ne] vnmulne.f32 s29, s28, s24

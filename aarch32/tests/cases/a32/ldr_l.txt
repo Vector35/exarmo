@@ -1,0 +1,26 @@
+// LDR_l_A1 cond=xxxx|010|P=x|U=x|op2=0|W=x|op1=1|Rn=1111|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrLA1: LDR{<c>}{<q>}  <Rt>, <label>
+// register fields: Rt
+c5bf5226 ldrgt r5, 0x1022e (unpredictable)
+749f888d ldrvc r8, 0x10895 (unpredictable)
+a53fdbef ldrge sp, 0xf419 (unpredictable)
+041f182d ldreq r1, 0xf7db (unpredictable)
+b49f8034 ldrlt r8, 0x1003c (unpredictable)
+249f64c6 ldrcs r6, 0x104ce (unpredictable)
+459f796c ldrmi r7, 0x10974
+449f1abe ldrmi r1, 0x10ac6 (unpredictable)
+F5BF5226 UNPREDICTABLE
+85BF0000 ldrhi r0, 0x10008 (unpredictable)
+15BFFFFF ldrne pc, 0x11007 (unpredictable)
+C5BF5800 ldrgt r5, 0x10808 (unpredictable)
+C5BF5400 ldrgt r5, 0x10408 (unpredictable)
+C5BF5200 ldrgt r5, 0x10208 (unpredictable)
+C5BF5100 ldrgt r5, 0x10108 (unpredictable)
+C5BF5080 ldrgt r5, 0x10088 (unpredictable)
+C5BF5040 ldrgt r5, 0x10048 (unpredictable)
+C5BF5020 ldrgt r5, 0x10028 (unpredictable)
+C5BF5010 ldrgt r5, 0x10018 (unpredictable)
+C5BF5008 ldrgt r5, 0x10010 (unpredictable)
+C5BF5004 ldrgt r5, 0x1000c (unpredictable)
+C5BF5002 ldrgt r5, 0x1000a (unpredictable)
+C5BF5001 ldrgt r5, 0x10009 (unpredictable)

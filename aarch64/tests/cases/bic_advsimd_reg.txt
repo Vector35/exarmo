@@ -1,0 +1,23 @@
+// BIC_asimdsame_only 0|Q=x|U=0|0|111|0|size=01|1|Rm=xxxxx|opcode=00011|1|Rn=xxxxx|Rd=xxxxx
+// BicAsimdsameOnly: BIC  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+4E6B1F5B bic v27.16b, v26.16b, v11.16b
+4E7C1D44 bic v4.16b, v10.16b, v28.16b
+0E711EB7 bic v23.8b, v21.8b, v17.8b
+4E611FD7 bic v23.16b, v30.16b, v1.16b
+0E731D5B bic v27.8b, v10.8b, v19.8b
+4E7C1EF5 bic v21.16b, v23.16b, v28.16b
+0E771DE4 bic v4.8b, v15.8b, v23.8b
+4E781C0F bic v15.16b, v0.16b, v24.16b
+4E7A1DBC bic v28.16b, v13.16b, v26.16b
+0E6E1C0D bic v13.8b, v0.8b, v14.8b
+4E6D1ECD bic v13.16b, v22.16b, v13.16b
+0E781C33 bic v19.8b, v1.8b, v24.8b
+0E671C99 bic v25.8b, v4.8b, v7.8b
+0E701DF0 bic v16.8b, v15.8b, v16.8b
+0E7A1CDE bic v30.8b, v6.8b, v26.8b
+0E7C1ED3 bic v19.8b, v22.8b, v28.8b
+4E601FE0 bic v0.16b, v31.16b, v0.16b
+4E7F1F5F bic v31.16b, v26.16b, v31.16b
+4E6B1D7B bic v27.16b, v11.16b, v11.16b
+4E6B1F5A bic v26.16b, v26.16b, v11.16b

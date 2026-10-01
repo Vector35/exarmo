@@ -1,0 +1,13 @@
+// stnt1d_z_p_ar_d_64_unscaled 111|0010|msz=11|0|0|Rm=xxxxx|001|Pg=xxx|Zn=xxxxx|Zt=xxxxx
+// Stnt1dZPArD64Unscaled: STNT1D  { <Zt>.D }, <Pg>, [<Zn>.D{, <Xm>}]
+// register fields: Rm, Pg, Zn, Zt
+E58E3D24 stnt1d {z4.d}, p7, [z9.d, x14]
+E5952BC3 stnt1d {z3.d}, p2, [z30.d, x21]
+E5942A54 stnt1d {z20.d}, p2, [z18.d, x20]
+E5993B51 stnt1d {z17.d}, p6, [z26.d, x25]
+E58F293D stnt1d {z29.d}, p2, [z9.d, x15]
+E5993674 stnt1d {z20.d}, p5, [z19.d, x25]
+E58A242F stnt1d {z15.d}, p1, [z1.d, x10]
+E58F323D stnt1d {z29.d}, p4, [z17.d, x15]
+E5802000 stnt1d {z0.d}, p0, [z0.d, x0]
+E59F2FFF stnt1d {z31.d}, p3, [z31.d]

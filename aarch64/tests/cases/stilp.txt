@@ -1,0 +1,43 @@
+// STILP_32S_ldiappstilp size=10|0110010|L=0|0|Rt2=xxxxx|opc2=0001|10|Rn=xxxxx|Rt=xxxxx
+// Stilp32sLdiappstilp: STILP  <Wt1>, <Wt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+99001803 stilp w3, w0, [x0]
+9900180A stilp w10, w0, [x0]
+99001811 stilp w17, w0, [x0]
+991F1BE0 stilp w0, wzr, [sp]
+9900181F stilp wzr, w0, [x0]
+99001800 stilp w0, w0, [x0]
+99011843 stilp w3, w1, [x2]
+
+// STILP_32SE_ldiappstilp size=10|0110010|L=0|0|Rt2=xxxxx|opc2=0000|10|Rn=xxxxx|Rt=xxxxx
+// Stilp32seLdiappstilp: STILP  <Wt1>, <Wt2>, [<Xn|SP>, #-8]!
+// register fields: Rt2, Rn, Rt
+99000804 stilp w4, w0, [x0, #-8]! (unpredictable)
+9900080B stilp w11, w0, [x0, #-8]! (unpredictable)
+99000812 stilp w18, w0, [x0, #-8]! (unpredictable)
+991F0BE0 stilp w0, wzr, [sp, #-0x8]!
+9900081F stilp wzr, w0, [x0, #-0x8]! (unpredictable)
+99000800 stilp w0, w0, [x0, #-0x8]! (unpredictable)
+99010843 stilp w3, w1, [x2, #-0x8]!
+
+// STILP_64S_ldiappstilp size=11|0110010|L=0|0|Rt2=xxxxx|opc2=0001|10|Rn=xxxxx|Rt=xxxxx
+// Stilp64sLdiappstilp: STILP  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+D9001802 stilp x2, x0, [x0]
+D9001809 stilp x9, x0, [x0]
+D9001810 stilp x16, x0, [x0]
+D91F1BE0 stilp x0, xzr, [sp]
+D900181F stilp xzr, x0, [x0]
+D9001800 stilp x0, x0, [x0]
+D9011843 stilp x3, x1, [x2]
+
+// STILP_64SS_ldiappstilp size=11|0110010|L=0|0|Rt2=xxxxx|opc2=0000|10|Rn=xxxxx|Rt=xxxxx
+// Stilp64ssLdiappstilp: STILP  <Xt1>, <Xt2>, [<Xn|SP>, #-16]!
+// register fields: Rt2, Rn, Rt
+D9000803 stilp x3, x0, [x0, #-16]! (unpredictable)
+D900080A stilp x10, x0, [x0, #-16]! (unpredictable)
+D9000811 stilp x17, x0, [x0, #-16]! (unpredictable)
+D91F0BE0 stilp x0, xzr, [sp, #-0x10]!
+D900081F stilp xzr, x0, [x0, #-0x10]! (unpredictable)
+D9000800 stilp x0, x0, [x0, #-0x10]! (unpredictable)
+D9010843 stilp x3, x1, [x2, #-0x10]!

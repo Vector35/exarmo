@@ -1,0 +1,12 @@
+// LDREXD_T1 111|0100|op0=0110|L=1|Rn=xxxx|Rt=xxxx|Rt2=xxxx|01|sz=11|Rd=(1)(1)(1)(1)
+// LdrexdT1: LDREXD{<c>}{<q>}  <Rt>, <Rt2>, [<Rn>]
+// register fields: Rn, Rt, Rt2
+// IT state read: condition
+E8D00070 ldrexd r0, r0, [r0] (unpredictable)
+E8DFFF7F ldrexd pc, pc, [pc] (unpredictable)
+E8D00078 ldrexd r0, r0, [r0] (unpredictable)
+E8D00074 ldrexd r0, r0, [r0] (unpredictable)
+E8D00072 ldrexd r0, r0, [r0] (unpredictable)
+E8D00071 ldrexd r0, r0, [r0] (unpredictable)
+E8D00070 [ne] ldrexdne r0, r0, [r0] (unpredictable)
+E8D1237F ldrexd r2, r3, [r1]

@@ -1,0 +1,118 @@
+// VFMS_A1_D 1111001|U=0|0|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VfmsA1D: VFMS{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f268fc3a vfms.f32 d31, d8, d26
+f27bec3b vfms.f16 d30, d11, d27
+f2738c1b vfms.f16 d24, d3, d11
+f2728c31 vfms.f16 d24, d2, d17
+f2346c1b vfms.f16 d6, d4, d11
+f27d7cb1 vfms.f16 d23, d29, d17
+f227bc3a vfms.f32 d11, d7, d26
+f235cc97 vfms.f16 d12, d21, d7
+// Binary Ninja's tests
+f2620cb1 vfms.f32 d16, d18, d17
+F2604C30 vfms.f32 d20, d0, d16
+F26F2C3F vfms.f32 d18, d15, d31
+F2611C38 vfms.f32 d17, d1, d24
+F2200C34 vfms.f32 d0, d0, d20
+F220FCB2 vfms.f32 d15, d16, d18
+F26FFC10 vfms.f32 d31, d15, d0
+F26FFC9F vfms.f32 d31, d31, d15
+F268FC30 vfms.f32 d31, d8, d16
+F268FC3F vfms.f32 d31, d8, d31
+
+// VFMS_A1_Q 1111001|U=0|0|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VfmsA1Q: VFMS{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f2764cfe vfms.f16 q10, q11, q15
+f228ccfc vfms.f32 q6, q12, q14
+f278ecf6 vfms.f16 q15, q12, q11
+f2782cf4 vfms.f16 q9, q12, q10
+f2728cf0 vfms.f16 q12, q9, q8
+f2244cda vfms.f32 q2, q10, q5
+f27a6c7c vfms.f16 q11, q5, q14
+f26aacd4 vfms.f32 q13, q13, q2
+// Binary Ninja's tests
+f2284c50 vfms.f32 q2, q4, q0
+F2700CF8 vfms.f16 q8, q8, q12
+F27FFCFF UNDEFINED
+F2711CF1 UNDEFINED
+F2300C72 vfms.f16 q0, q0, q9
+F23FFC5F UNDEFINED
+F2700CFE vfms.f16 q8, q8, q15
+
+// VFMS_A2_D cond=xxxx|1110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=1|M=x|0|Vm=xxxx
+// VfmsA2D: VFMS{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+2eaa9b43 vfmshs.f64 d9, d10, d3
+6eeb7b63 vfmsvs.f64 d23, d11, d19
+0eeb8bc1 vfmseq.f64 d24, d27, d1
+dee47bc2 vfmsle.f64 d23, d20, d2
+1ee68be6 vfmsne.f64 d24, d22, d22
+6ee82bcc vfmsvs.f64 d18, d24, d12
+deaafb43 vfmsle.f64 d15, d10, d3
+deeb0b49 vfmsle.f64 d16, d11, d9
+// Binary Ninja's tests
+eee20be1 vfms.f64 d16, d18, d17
+FEAA9B43 UNALLOCATED
+8EA04B40 vfmshi.f64 d4, d0, d0
+4EAF1B4F vfmsmi.f64 d1, d15, d15
+2EA10B48 vfmscs.f64 d0, d1, d8
+2EE0FB44 vfmscs.f64 d31, d0, d4
+2EA09BC0 vfmscs.f64 d9, d16, d0
+2EAF9B4F vfmscs.f64 d9, d15, d15
+2EAF9BE0 vfmscs.f64 d9, d31, d16
+2EAA9B6F vfmscs.f64 d9, d10, d31
+
+// VFMS_A2_H cond=xxxx|1110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=1|M=x|0|Vm=xxxx
+// VfmsA2H: VFMS{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+eeae0945 vfms.f16 s0, s28, s10
+8eeaa961 vfmshi.f16 s21, s20, s3 (unpredictable)
+2eeec966 vfmshs.f16 s25, s28, s13 (unpredictable)
+8eea29e6 vfmshi.f16 s5, s21, s13 (unpredictable)
+ceea39c2 vfmsgt.f16 s7, s21, s4 (unpredictable)
+2ee60942 vfmshs.f16 s1, s12, s4 (unpredictable)
+4ea1494c vfmsmi.f16 s8, s2, s24 (unpredictable)
+dee9d9ea vfmsle.f16 s27, s19, s21 (unpredictable)
+0EA0F940 vfmseq.f16 s30, s0, s0 (unpredictable)
+FEAE0945 UNALLOCATED
+1EAF894F vfmsne.f16 s16, s30, s30 (unpredictable)
+EEA81948 vfms.f16 s2, s16, s16
+EEA4F944 vfms.f16 s30, s8, s8
+EEE2F940 vfms.f16 s31, s4, s0
+EEA0094F vfms.f16 s0, s0, s30
+EEA009E0 vfms.f16 s0, s1, s1
+EEAF096F vfms.f16 s0, s30, s31
+EEAF09C5 vfms.f16 s0, s31, s10
+
+// VFMS_A2_S cond=xxxx|1110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=1|M=x|0|Vm=xxxx
+// VfmsA2S: VFMS{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+1ea6ca4a vfmsne.f32 s24, s12, s20
+cee27ae4 vfmsgt.f32 s15, s5, s9
+6ee0aacc vfmsvs.f32 s21, s1, s24
+1eab9a4b vfmsne.f32 s18, s22, s22
+beeaca4d vfmslt.f32 s25, s20, s26
+ceac9ae0 vfmsgt.f32 s18, s25, s1
+1eae0a49 vfmsne.f32 s0, s28, s18
+4ea4fa6e vfmsmi.f32 s30, s8, s29
+// Binary Ninja's tests
+eea21a40 vfms.f32 s2, s4, s0
+0EAF8A4F vfmseq.f32 s16, s30, s30
+FEA6CA4A UNALLOCATED
+8EA84A48 vfmshi.f32 s8, s16, s16
+2EA12A42 vfmscs.f32 s4, s2, s4
+1EE00A41 vfmsne.f32 s1, s0, s2
+1EEFFA4F vfmsne.f32 s31, s30, s30
+1EAFCAEF vfmsne.f32 s24, s31, s31

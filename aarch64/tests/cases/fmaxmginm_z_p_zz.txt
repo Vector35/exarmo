@@ -1,0 +1,15 @@
+// fmaxmginm_z_p_zz_ 011|0010|0|size=xx|00|op=1|0|opc=00|111|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FmaxmginmZPZz: FMAXMGINM  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+6408FFFF UNDEFINED
+6448E000 fmaxmginm z0.h, p0/m, z0.h, z0.h
+6488E7FF fmaxmginm z31.s, p1/m, z31.s, z31.s
+64C8EBFF fmaxmginm z31.d, p2/m, z31.d, z31.d
+64C8EFFF fmaxmginm z31.d, p3/m, z31.d, z31.d
+64C8F3FF fmaxmginm z31.d, p4/m, z31.d, z31.d
+64C8F7FF fmaxmginm z31.d, p5/m, z31.d, z31.d
+64C8FBFF fmaxmginm z31.d, p6/m, z31.d, z31.d
+64C8FFFF fmaxmginm z31.d, p7/m, z31.d, z31.d
+64C8FCFF fmaxmginm z31.d, p7/m, z31.d, z7.d
+64C8FFE7 fmaxmginm z7.d, p7/m, z7.d, z31.d
+6448E443 fmaxmginm z3.h, p1/m, z3.h, z2.h

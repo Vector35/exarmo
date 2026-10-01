@@ -1,0 +1,28 @@
+// insr_z_v_ 000|0010|1|size=xx|1|10|100|001110|Vm=xxxxx|Zdn=xxxxx
+// InsrZV: INSR  <Zdn>.<T>, <V><m>
+// read together by <m>: size, Vm
+// register fields: Vm, Zdn
+05743AE3 insr z3.h, h23
+05F4396A insr z10.d, d11
+05F43942 insr z2.d, d10
+05F43894 insr z20.d, d4
+05B4381E insr z30.s, s0
+05F438A8 insr z8.d, d5
+05343B2E insr z14.b, b25
+05743845 insr z5.h, h2
+05F43A86 insr z6.d, d20
+05F43A63 insr z3.d, d19
+05F439AD insr z13.d, d13
+0534385E insr z30.b, b2
+057439EB insr z11.h, h15
+05343993 insr z19.b, b12
+05B43835 insr z21.s, s1
+05B4389B insr z27.s, s4
+05743BE0 insr z0.h, h31
+05743AFF insr z31.h, h23
+05343803 insr z3.b, b0
+05343BE3 insr z3.b, b31
+05743803 insr z3.h, h0
+05B43BE3 insr z3.s, s31
+05F43803 insr z3.d, d0
+05F43BE3 insr z3.d, d31

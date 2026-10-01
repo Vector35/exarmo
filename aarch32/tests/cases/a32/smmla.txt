@@ -1,0 +1,38 @@
+// SMMLA_A1 cond=xxxx|01110|op1=101|Rd=xxxx|Ra=xxxx|Rm=xxxx|00|R=0|1|Rn=xxxx
+// SmmlaA1: SMMLA{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+27547111 smmlahs r4, r1, r1, r7
+975c8617 smmlals r12, r7, r6, r8
+47531915 smmlami r3, r5, r9, r1
+87529b19 smmlahi r2, r9, r11, r9
+a7505f19 smmlage r0, r9, pc, r5 (unpredictable)
+a75f3416 smmlage pc, r6, r4, r3 (unpredictable)
+1759c012 smmlane r9, r2, r0, r12
+8753ea1f smmlahi r3, pc, r10, lr (unpredictable)
+// Binary Ninja's tests
+37514312 smmlalo r1, r2, r3, r4
+e7514312 smmla r1, r2, r3, r4
+07540410 smmlaeq r4, r0, r4, r0
+F754F111 UNALLOCATED
+27544111 smmlacs r4, r1, r1, r4
+27547714 smmlacs r4, r4, r7, r7
+
+// SMMLAR_A1 cond=xxxx|01110|op1=101|Rd=xxxx|Ra=xxxx|Rm=xxxx|00|R=1|1|Rn=xxxx
+// SmmlarA1: SMMLAR{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+2754ac38 smmlarhs r4, r8, r12, r10
+5756623c smmlarpl r6, r12, r2, r6
+175e3c33 smmlarne lr, r3, r12, r3
+c752573b smmlargt r2, r11, r7, r5
+c75b9432 smmlargt r11, r2, r4, r9
+e755753b smmlar r5, r11, r5, r7
+27563137 smmlarhs r6, r7, r1, r3
+075e8a3e smmlareq lr, lr, r10, r8
+// Binary Ninja's tests
+27541233 smmlarhs r4, r3, r2, r1
+e7541233 smmlar r4, r3, r2, r1
+F754FC38 UNALLOCATED
+87500030 smmlarhi r0, r0, r0, r0
+475FAF3F smmlarmi pc, pc, pc, r10 (unpredictable)
+2754AA38 smmlarcs r4, r8, r10, r10
+2754AC3C smmlarcs r4, r12, r12, r10

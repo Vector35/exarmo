@@ -1,0 +1,34 @@
+// VQNEG_A1_D 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1111|Q=0|M=x|0|Vm=xxxx
+// VqnegA1D: VQNEG{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b0378e vqneg.s8 d3, d14
+f3b85782 vqneg.s32 d5, d2
+f3f4d7ab vqneg.s16 d29, d27
+f3f80784 vqneg.s32 d16, d4
+f3b807a8 vqneg.s32 d0, d24
+F3BC378E UNDEFINED
+F3B0F780 vqneg.s8 d15, d0
+F3B0878F vqneg.s8 d8, d15
+F3B04781 vqneg.s8 d4, d1
+F3B02780 vqneg.s8 d2, d0
+F3B0178F vqneg.s8 d1, d15
+F3B0F7A0 vqneg.s8 d15, d16
+F3F0F7AF vqneg.s8 d31, d31
+
+// VQNEG_A1_Q 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1111|Q=1|M=x|0|Vm=xxxx
+// VqnegA1Q: VQNEG{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3b4c7e8 vqneg.s16 q6, q12
+f3f807e8 vqneg.s32 q8, q12
+f3b4c7ca vqneg.s16 q6, q5
+F3B087E0 vqneg.s8 q4, q8
+F3BCF7EF UNDEFINED
+F3B447E4 vqneg.s16 q2, q10
+F3B427E2 vqneg.s16 q1, q9
+F3B417E1 UNDEFINED
+F3B407C0 vqneg.s16 q0, q0
+F3B4F7CF UNDEFINED
+F3F4F7EF UNDEFINED
+F3B4C7E0 vqneg.s16 q6, q8

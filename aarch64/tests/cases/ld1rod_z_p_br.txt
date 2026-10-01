@@ -1,0 +1,18 @@
+// ld1rod_z_p_br_contiguous 101|0010|msz=11|ssz=01|Rm=xxxxx|000|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld1rodZPBrContiguous: LD1ROD  { <Zt>.D }, <Pg>/Z, [<Xn|SP>, <Xm>, LSL #3]
+// register fields: Rm, Pg, Rn, Zt
+A5BD0A61 ld1rod {z1.d}, p2/z, [x19, fp, lsl #0x3]
+A5B51BD4 ld1rod {z20.d}, p6/z, [lr, x21, lsl #0x3]
+A5AE0238 ld1rod {z24.d}, p0/z, [x17, x14, lsl #0x3]
+A5BA113B ld1rod {z27.d}, p4/z, [x9, x26, lsl #0x3]
+A5AD0951 ld1rod {z17.d}, p2/z, [x10, x13, lsl #0x3]
+A5BE08FA ld1rod {z26.d}, p2/z, [x7, lr, lsl #0x3]
+A5A90BFA ld1rod {z26.d}, p2/z, [sp, x9, lsl #0x3]
+A5A415CC ld1rod {z12.d}, p5/z, [x14, x4, lsl #0x3]
+A5A00400 ld1rod {z0.d}, p1/z, [x0, x0, lsl #0x3]
+A5BD0E7F ld1rod {z31.d}, p3/z, [x19, fp, lsl #0x3]
+A5BD1E61 ld1rod {z1.d}, p7/z, [x19, fp, lsl #0x3]
+A5BF0A61 UNALLOCATED
+A5A20A61 ld1rod {z1.d}, p2/z, [x19, x2, lsl #0x3]
+A5BD0841 ld1rod {z1.d}, p2/z, [x2, fp, lsl #0x3]
+A5BD0A62 ld1rod {z2.d}, p2/z, [x19, fp, lsl #0x3]

@@ -1,0 +1,37 @@
+// VTBL_A1 111100111|D=x|11|Vn=xxxx|Vd=xxxx|10|len=xx|N=x|op=0|M=x|0|Vm=xxxx
+// VtblA1: VTBL{<c>}{<q>}.8  <Dd>, <list>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b9ea26 vtbl.8 d14, {d9, d10, d11}, d22
+f3b17b8d vtbl.8 d7, {d17, d18, d19, d20}, d13
+f3f688a4 vtbl.8 d24, {d22}, d20
+f3b04920 vtbl.8 d4, {d0, d1}, d16
+f3f06b22 vtbl.8 d22, {d0, d1, d2, d3}, d18
+f3f5182f vtbl.8 d17, {d5}, d31
+f3f62920 vtbl.8 d18, {d6, d7}, d16
+f3f6aa85 vtbl.8 d26, {d22, d23, d24}, d5
+F3BF0A28 vtbl.8 d0, {d15, d16, d17}, d24
+F3B8FA21 vtbl.8 d15, {d8, d9, d10}, d17
+F3B40A00 vtbl.8 d0, {d4, d5, d6}, d0
+F3B2FA0F vtbl.8 d15, {d2, d3, d4}, d15
+F3F90A26 vtbl.8 d16, {d9, d10, d11}, d22
+F3F9FA26 vtbl.8 d31, {d9, d10, d11}, d22
+
+// VTBX_A1 111100111|D=x|11|Vn=xxxx|Vd=xxxx|10|len=xx|N=x|op=1|M=x|0|Vm=xxxx
+// VtbxA1: VTBX{<c>}{<q>}.8  <Dd>, <list>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b69ae5 vtbx.8 d9, {d22, d23, d24}, d21
+f3f6996f vtbx.8 d25, {d6, d7}, d31
+f3b8cb64 vtbx.8 d12, {d8, d9, d10, d11}, d20
+f3b20ae0 vtbx.8 d0, {d18, d19, d20}, d16
+f3f3484b vtbx.8 d20, {d3}, d11
+f3b6196b vtbx.8 d1, {d6, d7}, d27
+f3bc086e vtbx.8 d0, {d12}, d30
+f3ffaa4d vtbx.8 d26, {d15, d16, d17}, d13
+F3B0FAE8 vtbx.8 d15, {d16, d17, d18}, d24
+F3B48AE2 vtbx.8 d8, {d20, d21, d22}, d18
+F3B12AE1 vtbx.8 d2, {d17, d18, d19}, d17
+F3B6FAC0 vtbx.8 d15, {d22, d23, d24}, d0
+F3F60ACF vtbx.8 d16, {d22, d23, d24}, d15
+F3F6FAE5 vtbx.8 d31, {d22, d23, d24}, d21

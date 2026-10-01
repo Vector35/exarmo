@@ -1,0 +1,70 @@
+// FMUL_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|op=0|00010|Rn=xxxxx|Rd=xxxxx
+// FmulDFloatdp2: FMUL  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E750A6F fmul d15, d19, d21
+1E700B61 fmul d1, d27, d16
+1E700B56 fmul d22, d26, d16
+1E6F0B82 fmul d2, d28, d15
+1E710800 fmul d0, d0, d17
+1E7B09FF fmul d31, d15, d27
+1E780A30 fmul d16, d17, d24
+1E7408F1 fmul d17, d7, d20
+1E79096A fmul d10, d11, d25
+1E790875 fmul d21, d3, d25
+1E7009C9 fmul d9, d14, d16
+1E7D0A74 fmul d20, d19, d29
+1E780929 fmul d9, d9, d24
+1E610A19 fmul d25, d16, d1
+1E6D09FC fmul d28, d15, d13
+1E6808CC fmul d12, d6, d8
+1E600BEF fmul d15, d31, d0
+1E7F0A6F fmul d15, d19, d31
+1E750AAF fmul d15, d21, d21
+1E750A75 fmul d21, d19, d21
+
+// FMUL_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|op=0|00010|Rn=xxxxx|Rd=xxxxx
+// FmulHFloatdp2: FMUL  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EE809C3 fmul h3, h14, h8
+1EE008E1 fmul h1, h7, h0
+1EF9093E fmul h30, h9, h25
+1EE40B1E fmul h30, h24, h4
+1EF80A81 fmul h1, h20, h24
+1EE50A97 fmul h23, h20, h5
+1EFE083F fmul h31, h1, h30
+1EE608AD fmul h13, h5, h6
+1EFB09FA fmul h26, h15, h27
+1EF30A4D fmul h13, h18, h19
+1EE308F6 fmul h22, h7, h3
+1EF70B81 fmul h1, h28, h23
+1EFE0AE1 fmul h1, h23, h30
+1EFB099C fmul h28, h12, h27
+1EE40995 fmul h21, h12, h4
+1EFB0A56 fmul h22, h18, h27
+1EFF0800 fmul h0, h0, h31
+1EE80BE3 fmul h3, h31, h8
+1EE80903 fmul h3, h8, h8
+1EE809C8 fmul h8, h14, h8
+
+// FMUL_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|op=0|00010|Rn=xxxxx|Rd=xxxxx
+// FmulSFloatdp2: FMUL  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E270A21 fmul s1, s17, s7
+1E390A97 fmul s23, s20, s25
+1E270B8D fmul s13, s28, s7
+1E350927 fmul s7, s9, s21
+1E2009D1 fmul s17, s14, s0
+1E300B9A fmul s26, s28, s16
+1E2C0BB8 fmul s24, s29, s12
+1E2D099D fmul s29, s12, s13
+1E360BBC fmul s28, s29, s22
+1E2D0956 fmul s22, s10, s13
+1E3009C4 fmul s4, s14, s16
+1E360876 fmul s22, s3, s22
+1E370B62 fmul s2, s27, s23
+1E390A2E fmul s14, s17, s25
+1E3A0919 fmul s25, s8, s26
+1E3509F3 fmul s19, s15, s21
+1E3F0800 fmul s0, s0, s31
+1E270BFF fmul s31, s31, s7
+1E2708E1 fmul s1, s7, s7

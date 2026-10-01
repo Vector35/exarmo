@@ -1,0 +1,85 @@
+// BRAA_64P_branch_reg 1101011|Z=1|0|op=00|op2=11111|0000|A=1|M=0|Rn=xxxxx|Rm=xxxxx
+// Braa64pBranchReg: BRAA  <Xn>, <Xm|SP>
+// register fields: Rn, Rm
+D71F091C braa x8, x28
+D71F0BEE braa xzr, x14
+D71F08A6 braa x5, x6
+D71F0873 braa x3, x19
+D71F092F braa x9, x15
+D71F0A03 braa x16, x3
+D71F0B86 braa x28, x6
+D71F08C7 braa x6, x7
+D71F0A0E braa x16, x14
+D71F09D5 braa x14, x21
+D71F0B4B braa x26, x11
+D71F0ADE braa x22, lr
+D71F0996 braa x12, x22
+D71F08CD braa x6, x13
+D71F0A45 braa x18, x5
+D71F08EF braa x7, x15
+D71F0800 braa x0, x0
+D71F091F braa x8, sp
+
+// BRAAZ_64_branch_reg 1101011|Z=0|0|op=00|op2=11111|0000|A=1|M=0|Rn=xxxxx|Rm=11111
+// Braaz64BranchReg: BRAAZ  <Xn>
+// register fields: Rn
+D61F0BBF braaz fp
+D61F097F braaz x11
+D61F0B5F braaz x26
+D61F08DF braaz x6
+D61F0ADF braaz x22
+D61F0A3F braaz x17
+D61F09FF braaz x15
+D61F083F braaz x1
+D61F09BF braaz x13
+D61F087F braaz x3
+D61F0B7F braaz x27
+D61F09DF braaz x14
+D61F08FF braaz x7
+D61F0A7F braaz x19
+D61F091F braaz x8
+D61F0A5F braaz x18
+D61F081F braaz x0
+D61F0BFF braaz xzr
+
+// BRAB_64P_branch_reg 1101011|Z=1|0|op=00|op2=11111|0000|A=1|M=1|Rn=xxxxx|Rm=xxxxx
+// Brab64pBranchReg: BRAB  <Xn>, <Xm|SP>
+// register fields: Rn, Rm
+D71F0CD0 brab x6, x16
+D71F0DD0 brab x14, x16
+D71F0D09 brab x8, x9
+D71F0FFC brab xzr, x28
+D71F0E58 brab x18, x24
+D71F0CDF brab x6, sp
+D71F0C62 brab x3, x2
+D71F0F4A brab x26, x10
+D71F0FC4 brab lr, x4
+D71F0E03 brab x16, x3
+D71F0DDF brab x14, sp
+D71F0F07 brab x24, x7
+D71F0F86 brab x28, x6
+D71F0FE5 brab xzr, x5
+D71F0DA1 brab x13, x1
+D71F0F7B brab x27, x27
+D71F0C00 brab x0, x0
+
+// BRABZ_64_branch_reg 1101011|Z=0|0|op=00|op2=11111|0000|A=1|M=1|Rn=xxxxx|Rm=11111
+// Brabz64BranchReg: BRABZ  <Xn>
+// register fields: Rn
+D61F0F1F brabz x24
+D61F0F3F brabz x25
+D61F0D5F brabz x10
+D61F0C1F brabz x0
+D61F0C7F brabz x3
+D61F0D3F brabz x9
+D61F0C3F brabz x1
+D61F0EBF brabz x21
+D61F0E5F brabz x18
+D61F0D9F brabz x12
+D61F0EDF brabz x22
+D61F0F9F brabz x28
+D61F0DFF brabz x15
+D61F0FDF brabz lr
+D61F0F7F brabz x27
+D61F0E9F brabz x20
+D61F0FFF brabz xzr

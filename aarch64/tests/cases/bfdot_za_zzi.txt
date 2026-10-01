@@ -1,0 +1,24 @@
+// bfdot_za_zzi_2xi 1|10|0000|1|01|01|Zm=xxxx|0|Rv=xx|op=1|i2=xx|Zn=xxxx|opc2=011|off3=xxx
+// BfdotZaZzi2xi: BFDOT  ZA.S[<Wv>, <offs>{, VGx2}], { <Zn1>.H-<Zn2>.H }, <Zm>.H[<index>]
+// register fields: Zm, Rv, Zn
+C1501018 bfdot za.s[w8, 0, vgx2], {z0.h-z1.h}, z0.h[0]
+C150101F bfdot za.s[w8, 7, vgx2], {z0.h-z1.h}, z0.h[0]
+C150105E bfdot za.s[w8, 6, vgx2], {z2.h-z3.h}, z0.h[0]
+C15F37D9 bfdot za.s[w9, 1, vgx2], {z30.h-z31.h}, z15.h[1]
+C150581A bfdot za.s[w10, 2, vgx2], {z0.h-z1.h}, z0.h[2]
+C1507C1B bfdot za.s[w11, 3, vgx2], {z0.h-z1.h}, z0.h[3]
+C150101C bfdot za.s[w8, 4, vgx2], {z0.h-z1.h}, z0.h[0]
+C150101D bfdot za.s[w8, 5, vgx2], {z0.h-z1.h}, z0.h[0]
+C15150D8 bfdot za.s[w10, 0, vgx2], {z6.h-z7.h}, z1.h[0]
+
+// bfdot_za_zzi_4xi 1|10|0000|1|01|01|Zm=xxxx|1|Rv=xx|op=1|i2=xx|Zn=xxx|0|opc2=011|off3=xxx
+// BfdotZaZzi4xi: BFDOT  ZA.S[<Wv>, <offs>{, VGx4}], { <Zn1>.H-<Zn4>.H }, <Zm>.H[<index>]
+// register fields: Zm, Rv, Zn
+C150901E bfdot za.s[w8, 6, vgx4], {z0.h-z3.h}, z0.h[0]
+C150909C bfdot za.s[w8, 4, vgx4], {z4.h-z7.h}, z0.h[0]
+C150911A bfdot za.s[w8, 2, vgx4], {z8.h-z11.h}, z0.h[0]
+C15FB598 bfdot za.s[w9, 0, vgx4], {z12.h-z15.h}, z15.h[1]
+C150DA19 bfdot za.s[w10, 1, vgx4], {z16.h-z19.h}, z0.h[2]
+C150FE9B bfdot za.s[w11, 3, vgx4], {z20.h-z23.h}, z0.h[3]
+C150931D bfdot za.s[w8, 5, vgx4], {z24.h-z27.h}, z0.h[0]
+C150939F bfdot za.s[w8, 7, vgx4], {z28.h-z31.h}, z0.h[0]

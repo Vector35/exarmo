@@ -1,0 +1,16 @@
+// SASX_T1 111|11010|1|op1=010|Rn=xxxx|1111|Rd=xxxx|0|U=0|H=0|S=0|Rm=xxxx
+// SasxT1: SASX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+faa1f206 sasx r2, r1, r6
+faa6fc0e sasx r12, r6, lr
+faa9f902 sasx r9, r9, r2
+faacfb01 sasx r11, r12, r1
+faa3f60b sasx r6, r3, r11
+faaffa0b sasx r10, pc, r11 (unpredictable)
+faa6f501 sasx r5, r6, r1
+faa5fe05 sasx lr, r5, r5
+FAA0F000 sasx r0, r0, r0
+FAA1FF0F sasx pc, r1, pc (unpredictable)
+FAA1F202 sasx r2, r1, r2
+FAA1F206 [ne] sasxne r2, r1, r6

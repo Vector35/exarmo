@@ -1,0 +1,69 @@
+// shrnt_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=0|U=1|R=0|T=1|Zn=xxxxx|Zd=xxxxx
+// ShrntZZi: SHRNT  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+457B161A shrnt z26.s, z16.d, #0x5
+4561151C shrnt z28.s, z8.d, #0x1f
+457614B3 shrnt z19.s, z5.d, #0xa
+4577157F shrnt z31.s, z11.d, #0x9
+452D1777 shrnt z23.b, z27.h, #0x3
+456C175A shrnt z26.s, z26.d, #0x14
+4562166F shrnt z15.s, z19.d, #0x1e
+45391614 shrnt z20.h, z16.s, #0x7
+45781400 shrnt z0.s, z0.d, #0x8
+457B17FA shrnt z26.s, z31.d, #0x5
+4520161A UNDEFINED
+4521161A UNDEFINED
+4522161A UNDEFINED
+4523161A UNDEFINED
+4524161A UNDEFINED
+4525161A UNDEFINED
+4526161A UNDEFINED
+4527161A UNDEFINED
+4528161A shrnt z26.b, z16.h, #0x8
+4529161A shrnt z26.b, z16.h, #0x7
+452A161A shrnt z26.b, z16.h, #0x6
+452B161A shrnt z26.b, z16.h, #0x5
+452C161A shrnt z26.b, z16.h, #0x4
+452E161A shrnt z26.b, z16.h, #0x2
+452F161A shrnt z26.b, z16.h, #0x1
+4530161A shrnt z26.h, z16.s, #0x10
+4531161A shrnt z26.h, z16.s, #0xf
+4532161A shrnt z26.h, z16.s, #0xe
+4533161A shrnt z26.h, z16.s, #0xd
+4534161A shrnt z26.h, z16.s, #0xc
+4535161A shrnt z26.h, z16.s, #0xb
+4536161A shrnt z26.h, z16.s, #0xa
+4537161A shrnt z26.h, z16.s, #0x9
+4538161A shrnt z26.h, z16.s, #0x8
+453A161A shrnt z26.h, z16.s, #0x6
+453B161A shrnt z26.h, z16.s, #0x5
+453C161A shrnt z26.h, z16.s, #0x4
+453D161A shrnt z26.h, z16.s, #0x3
+453E161A shrnt z26.h, z16.s, #0x2
+453F161A shrnt z26.h, z16.s, #0x1
+4560161A shrnt z26.s, z16.d, #0x20
+4563161A shrnt z26.s, z16.d, #0x1d
+4564161A shrnt z26.s, z16.d, #0x1c
+4565161A shrnt z26.s, z16.d, #0x1b
+4566161A shrnt z26.s, z16.d, #0x1a
+4567161A shrnt z26.s, z16.d, #0x19
+4568161A shrnt z26.s, z16.d, #0x18
+4569161A shrnt z26.s, z16.d, #0x17
+456A161A shrnt z26.s, z16.d, #0x16
+456B161A shrnt z26.s, z16.d, #0x15
+456D161A shrnt z26.s, z16.d, #0x13
+456E161A shrnt z26.s, z16.d, #0x12
+456F161A shrnt z26.s, z16.d, #0x11
+4570161A shrnt z26.s, z16.d, #0x10
+4571161A shrnt z26.s, z16.d, #0xf
+4572161A shrnt z26.s, z16.d, #0xe
+4573161A shrnt z26.s, z16.d, #0xd
+4574161A shrnt z26.s, z16.d, #0xc
+4575161A shrnt z26.s, z16.d, #0xb
+4579161A shrnt z26.s, z16.d, #0x7
+457A161A shrnt z26.s, z16.d, #0x6
+457C161A shrnt z26.s, z16.d, #0x4
+457D161A shrnt z26.s, z16.d, #0x3
+457E161A shrnt z26.s, z16.d, #0x2
+457F161A shrnt z26.s, z16.d, #0x1

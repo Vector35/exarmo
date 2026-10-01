@@ -1,0 +1,22 @@
+// nand_p_p_pp_z 001|0010|1|op=1|S=0|00|Pm=xxxx|01|Pg=xxxx|o2=1|Pn=xxxx|o3=1|Pd=xxxx
+// NandPPPpZ: NAND  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// register fields: Pm, Pg, Pn, Pd
+25887E9D nand p13.b, p15/z, p4.b, p8.b
+258E6E7B nand p11.b, p11/z, p3.b, p14.b
+258A6253 nand p3.b, p8/z, p2.b, p10.b
+258E42F7 nand p7.b, p0/z, p7.b, p14.b
+25867A97 nand p7.b, p14/z, p4.b, p6.b
+25836A70 nand p0.b, p10/z, p3.b, p3.b
+258743FE nand p14.b, p0/z, p15.b, p7.b
+25826A56 nand p6.b, p10/z, p2.b, p2.b
+258B7F18 nand p8.b, p15/z, p8.b, p11.b
+25877F75 nand p5.b, p15/z, p11.b, p7.b
+258C4A16 nand p6.b, p2/z, p0.b, p12.b
+25846AB2 nand p2.b, p10/z, p5.b, p4.b
+25837A51 nand p1.b, p14/z, p2.b, p3.b
+258F4ED8 nand p8.b, p3/z, p6.b, p15.b
+258E7E99 nand p9.b, p15/z, p4.b, p14.b
+25875612 nand p2.b, p5/z, p0.b, p7.b
+25807E9F nand p15.b, p15/z, p4.b, p0.b
+2588629D nand p13.b, p8/z, p4.b, p8.b
+25887FF8 nand p8.b, p15/z, p15.b, p8.b

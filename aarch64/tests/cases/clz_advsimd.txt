@@ -1,0 +1,24 @@
+// CLZ_asimdmisc_R 0|Q=x|U=1|0|111|0|size=xx|10000|opcode=00100|10|Rn=xxxxx|Rd=xxxxx
+// ClzAsimdmiscR: CLZ  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+2EA04B7A clz v26.2s, v27.2s
+6E204907 clz v7.16b, v8.16b
+6E604B9C clz v28.8h, v28.8h
+6EA04A95 clz v21.4s, v20.4s
+6E204912 clz v18.16b, v8.16b
+6E6048C1 clz v1.8h, v6.8h
+2E604983 clz v3.4h, v12.4h
+2E2048E8 clz v8.8b, v7.8b
+2E604B2A clz v10.4h, v25.4h
+6E60495B clz v27.8h, v10.8h
+2EA04964 clz v4.2s, v11.2s
+6E2048F4 clz v20.16b, v7.16b
+6E604965 clz v5.8h, v11.8h
+6E6048F8 clz v24.8h, v7.8h
+2E204B60 clz v0.8b, v27.8b
+2EA04A92 clz v18.2s, v20.2s
+2EA0481F clz v31.2s, v0.2s
+2EA04BFA clz v26.2s, v31.2s
+2EE04B7A UNDEFINED
+6EE04B7A UNDEFINED

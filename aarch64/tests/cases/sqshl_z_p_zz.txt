@@ -1,0 +1,16 @@
+// sqshl_z_p_zz_ 010|0010|0|size=xx|0|0|Q=1|R=0|N=0|U=0|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SqshlZPZz: SQSHL  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+44888271 sqshl z17.s, p0/m, z17.s, z19.s
+4448881D sqshl z29.h, p2/m, z29.h, z0.h
+440881D8 sqshl z24.b, p0/m, z24.b, z14.b
+44C89AC6 sqshl z6.d, p6/m, z6.d, z22.d
+44C884B5 sqshl z21.d, p1/m, z21.d, z5.d
+44C884E2 sqshl z2.d, p1/m, z2.d, z7.d
+44489A45 sqshl z5.h, p6/m, z5.h, z18.h
+44489C73 sqshl z19.h, p7/m, z19.h, z3.h
+44888FE0 sqshl z0.s, p3/m, z0.s, z31.s
+4488927F sqshl z31.s, p4/m, z31.s, z19.s
+44889671 sqshl z17.s, p5/m, z17.s, z19.s
+44888011 sqshl z17.s, p0/m, z17.s, z0.s
+44888273 sqshl z19.s, p0/m, z19.s, z19.s

@@ -1,0 +1,23 @@
+// movprfx_z_p_z_ 000|0010|0|size=xx|0|10|opc=00|M=x|001|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// MovprfxZPZ: MOVPRFX  <Zd>.<T>, <Pg>/<ZM>, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+04113549 movprfx z9.b, p5/m, z10.b
+04913666 movprfx z6.s, p5/m, z19.s
+041027F4 movprfx z20.b, p1/z, z31.b
+04D02914 movprfx z20.d, p2/z, z8.d
+04D03802 movprfx z2.d, p6/z, z0.d
+04513F4C movprfx z12.h, p7/m, z26.h
+04102A09 movprfx z9.b, p2/z, z16.b
+0450230C movprfx z12.h, p0/z, z24.h
+04512E48 movprfx z8.h, p3/m, z18.h
+04D0378A movprfx z10.d, p5/z, z28.d
+04902490 movprfx z16.s, p1/z, z4.s
+0450242A movprfx z10.h, p1/z, z1.h
+04912E01 movprfx z1.s, p3/m, z16.s
+04D02A47 movprfx z7.d, p2/z, z18.d
+049024AA movprfx z10.s, p1/z, z5.s
+04913668 movprfx z8.s, p5/m, z19.s
+04113140 movprfx z0.b, p4/m, z10.b
+0411355F movprfx z31.b, p5/m, z10.b
+04113545 movprfx z5.b, p5/m, z10.b
+0411354A movprfx z10.b, p5/m, z10.b

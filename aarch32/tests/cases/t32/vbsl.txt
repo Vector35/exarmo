@@ -1,0 +1,45 @@
+// VBSL_T1_D 111|U=1|11110|D=x|op=01|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VbslT1D: VBSL{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff534198 vbsl d20, d19, d8
+ff549135 vbsl d25, d4, d21
+ff518118 vbsl d24, d1, d8
+ff5ba1bf vbsl d26, d27, d31
+ff1de11b vbsl d14, d13, d11
+ff19c199 vbsl d12, d25, d9
+ff5c21bf vbsl d18, d28, d31
+ff59b1bf vbsl d27, d25, d31
+FF500190 vbsl d16, d16, d0
+FF5FF194 vbsl d31, d31, d4
+FF581192 vbsl d17, d24, d2
+FF120191 vbsl d0, d18, d1
+FF10F110 vbsl d15, d0, d0
+FF50019F vbsl d16, d16, d15
+FF5FF130 vbsl d31, d15, d16
+FF5F4198 vbsl d20, d31, d8
+FF534198 [ne] vbslne d20, d19, d8
+
+// VBSL_T1_Q 111|U=1|11110|D=x|op=01|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VbslT1Q: VBSL{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff5041d0 vbsl q10, q8, q0
+ff1e8172 vbsl q4, q7, q9
+ff54817a vbsl q12, q2, q13
+ff56215e vbsl q9, q3, q7
+ff1ec1da vbsl q6, q15, q5
+ff5ce1d0 vbsl q15, q14, q0
+ff1001f0 vbsl q0, q8, q8
+ff1801dc vbsl q0, q12, q6
+FF5FF1DF UNDEFINED
+FF5201D8 vbsl q8, q9, q4
+FF5111D1 UNDEFINED
+FF504154 vbsl q10, q0, q2
+FF1FF15F UNDEFINED
+FF5FF1FF UNDEFINED
+FF5041D0 [ne] vbslne q10, q8, q0

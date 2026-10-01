@@ -1,0 +1,49 @@
+// CMEQ_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|opcode=10001|1|Rn=xxxxx|Rd=xxxxx
+// CmeqAsimdsameOnly: CMEQ  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E268FBF cmeq v31.16b, v29.16b, v6.16b
+6E668C65 cmeq v5.8h, v3.8h, v6.8h
+2E308E89 cmeq v9.8b, v20.8b, v16.8b
+6E298C9F cmeq v31.16b, v4.16b, v9.16b
+6E6A8DCF cmeq v15.8h, v14.8h, v10.8h
+2EAF8CDD cmeq v29.2s, v6.2s, v15.2s
+6EE58D6A cmeq v10.2d, v11.2d, v5.2d
+2EB68C78 cmeq v24.2s, v3.2s, v22.2s
+6E2D8C6E cmeq v14.16b, v3.16b, v13.16b
+6E228F33 cmeq v19.16b, v25.16b, v2.16b
+6EB48E6A cmeq v10.4s, v19.4s, v20.4s
+6EA08FDE cmeq v30.4s, v30.4s, v0.4s
+6E388C62 cmeq v2.16b, v3.16b, v24.16b
+2E368DD3 cmeq v19.8b, v14.8b, v22.8b
+6E6F8D42 cmeq v2.8h, v10.8h, v15.8h
+2E368CFC cmeq v28.8b, v7.8b, v22.8b
+6E3F8C00 cmeq v0.16b, v0.16b, v31.16b
+6E268FFF cmeq v31.16b, v31.16b, v6.16b
+2E668CDF cmeq v31.4h, v6.4h, v6.4h
+2EE68FBF UNDEFINED
+6E268FA6 cmeq v6.16b, v29.16b, v6.16b
+
+// CMEQ_asisdsame_only 01|U=1|1|111|0|size=11|1|Rm=xxxxx|opcode=10001|1|Rn=xxxxx|Rd=xxxxx
+// CmeqAsisdsameOnly: CMEQ  <d>, <n>, <m>
+// register fields: Rm, Rn, Rd
+7EF68E11 cmeq d17, d16, d22
+7EFC8DE7 cmeq d7, d15, d28
+7EE98EE1 cmeq d1, d23, d9
+7EF18E55 cmeq d21, d18, d17
+7EEC8DD4 cmeq d20, d14, d12
+7EE78E2E cmeq d14, d17, d7
+7EEA8F3D cmeq d29, d25, d10
+7EF68D70 cmeq d16, d11, d22
+7EE18DD8 cmeq d24, d14, d1
+7EFB8DE4 cmeq d4, d15, d27
+7EEA8CA1 cmeq d1, d5, d10
+7EF08FE0 cmeq d0, d31, d16
+7EEA8C55 cmeq d21, d2, d10
+7EEE8D84 cmeq d4, d12, d14
+7EEE8EEF cmeq d15, d23, d14
+7EF68F79 cmeq d25, d27, d22
+7EE08C1F cmeq d31, d0, d0
+7EFF8E11 cmeq d17, d16, d31
+7EF68E16 cmeq d22, d16, d22
+7EF68E10 cmeq d16, d16, d22

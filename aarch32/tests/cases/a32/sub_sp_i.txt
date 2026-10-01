@@ -1,0 +1,87 @@
+// SUB_SP_i_A1 cond=xxxx|0010|opc=010|S=0|Rn=1101|Rd=xxxx|imm12=xxxxxxxxxxxx
+// SubSpIA1: SUB{<c>}{<q>}  {<Rd>, }SP, #<const>
+// register fields: Rd
+// modified immediate <const>: imm12
+124d41b0 subne r4, sp, #44
+424d5a85 submi r5, sp, #544768
+524d0982 subpl r0, sp, #2129920
+124dacdd subne r10, sp, #56576
+224dceec subhs r12, sp, #3776
+a24d521c subge r5, sp, #3221225473
+624d25a3 subvs r2, sp, #683671552
+a24dfa94 subge pc, sp, #606208
+024D4000 subeq r4, sp, #0x0
+F24DACDD UNDEFINED
+824D4FFF subhi r4, sp, #0x3fc
+124D4800 subne r4, sp, #0x0
+124D4400 subne r4, sp, #0x0
+124D4200 subne r4, sp, #0x0
+124D4100 subne r4, sp, #0x0
+124D4080 subne r4, sp, #0x80
+124D4040 subne r4, sp, #0x40
+124D4020 subne r4, sp, #0x20
+124D4010 subne r4, sp, #0x10
+124D4008 subne r4, sp, #0x8
+124D4004 subne r4, sp, #0x4
+124D4002 subne r4, sp, #0x2
+124D4001 subne r4, sp, #0x1
+124D4081 subne r4, sp, #0x81
+124D4181 subne r4, sp, #0x40000020
+124D4281 subne r4, sp, #0x10000008
+124D4381 subne r4, sp, #0x4000002
+124D4481 subne r4, sp, #0x81000000
+124D4581 subne r4, sp, #0x20400000
+124D4681 subne r4, sp, #0x8100000
+124D4781 subne r4, sp, #0x2040000
+124D4881 subne r4, sp, #0x810000
+124D4981 subne r4, sp, #0x204000
+124D4A81 subne r4, sp, #0x81000
+124D4B81 subne r4, sp, #0x20400
+124D4C81 subne r4, sp, #0x8100
+124D4D81 subne r4, sp, #0x2040
+124D4E81 subne r4, sp, #0x810
+124D4F81 subne r4, sp, #0x204
+
+// SUBS_SP_i_A1 cond=xxxx|0010|opc=010|S=1|Rn=1101|Rd=xxxx|imm12=xxxxxxxxxxxx
+// SubsSpIA1: SUBS{<c>}{<q>}  {<Rd>, }SP, #<const>
+// register fields: Rd
+// modified immediate <const>: imm12
+625d3c65 subsvs r3, sp, #25856
+725d1102 subsvc r1, sp, #2147483648
+625dd508 subsvs sp, sp, #33554432
+325d1954 subslo r1, sp, #1376256
+b25dbcb0 subslt r11, sp, #45056
+925d5c33 subsls r5, sp, #13056
+c25d278b subsgt r2, sp, #36438016
+025d0c6e subseq r0, sp, #28160
+F25D3C65 UNDEFINED
+825DF000 subshi pc, sp, #0x0
+425D3FFF subsmi r3, sp, #0x3fc
+225D3800 subscs r3, sp, #0x0
+125D3400 subsne r3, sp, #0x0
+625D3200 subsvs r3, sp, #0x0
+625D3100 subsvs r3, sp, #0x0
+625D3080 subsvs r3, sp, #0x80
+625D3040 subsvs r3, sp, #0x40
+625D3020 subsvs r3, sp, #0x20
+625D3010 subsvs r3, sp, #0x10
+625D3008 subsvs r3, sp, #0x8
+625D3004 subsvs r3, sp, #0x4
+625D3002 subsvs r3, sp, #0x2
+625D3001 subsvs r3, sp, #0x1
+625D3081 subsvs r3, sp, #0x81
+625D3181 subsvs r3, sp, #0x40000020
+625D3281 subsvs r3, sp, #0x10000008
+625D3381 subsvs r3, sp, #0x4000002
+625D3481 subsvs r3, sp, #0x81000000
+625D3581 subsvs r3, sp, #0x20400000
+625D3681 subsvs r3, sp, #0x8100000
+625D3781 subsvs r3, sp, #0x2040000
+625D3881 subsvs r3, sp, #0x810000
+625D3981 subsvs r3, sp, #0x204000
+625D3A81 subsvs r3, sp, #0x81000
+625D3B81 subsvs r3, sp, #0x20400
+625D3C81 subsvs r3, sp, #0x8100
+625D3D81 subsvs r3, sp, #0x2040
+625D3E81 subsvs r3, sp, #0x810
+625D3F81 subsvs r3, sp, #0x204

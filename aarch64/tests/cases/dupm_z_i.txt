@@ -1,0 +1,81 @@
+// dupm_z_i_ 000|0010|1|11|00|00|imm13=xxxxxxxxxxxxx|Zd=xxxxx
+// DupmZI: DUPM  <Zd>.<T>, #<const>
+// MovZMDupmZI: MOV  <Zd>.<T>, #<const>
+// register fields: Zd
+// bitmask immediate <const>: imm13<12>:imm13<11:6>:imm13<5:0>
+// form chosen on: imm13
+05C060F2 mov z18.s, #0xff00000
+05C15E03 dupm z3.b, #0x20
+05C2EB55 mov z21.d, #0x3ffffff800000000
+05C0C942 mov z2.s, #0x3ff80
+05C247C3 mov z3.d, #0xff7fffffffffffff
+05C25514 mov z20.d, #0xffc000007fffffff
+05C18E0A dupm z10.b, #0x80
+05C2943C mov z28.d, #0xffffc0000000ffff
+05C2AE58 mov z24.d, #0xfffff8003fffffff
+05C1D247 mov z7.s, #0x1ffffc0
+05C0B1A9 mov z9.s, #0xfffc00
+05C3AD8D mov z13.d, #0xfffffffffff800
+05C2E1F4 mov z20.d, #0xffff000000000
+05C2F3DC mov z28.d, #0xfffffffc00000001
+05C3F39F mov z31.d, #0x7ffffffc
+05C12965 mov z5.s, #0xf800007f
+05C00000 dupm z0.s, #0x1
+05C3FFF2 UNDEFINED
+05C20012 dupm z18.d, #0x1
+05C10012 dupm z18.s, #0x1
+05C08012 mov z18.s, #0x10000
+05C04012 mov z18.s, #0x1000000
+05C02012 mov z18.s, #0x10000000
+05C01012 mov z18.s, #0x40000000
+05C00812 mov z18.s, #0x80000000
+05C00412 dupm z18.h, #0x1
+05C00212 mov z18.s, #0x1ffff
+05C00112 mov z18.s, #0x1ff
+05C00092 dupm z18.s, #0x1f
+05C00052 dupm z18.s, #0x7
+05C00032 dupm z18.s, #0x3
+05C00792 dupm z18.b, #0x55
+05C00F92 dupm z18.b, #0xaa
+05C1FF92 dupm z18.b, #0xaa
+05C007B2 UNDEFINED
+05C00FB2 UNDEFINED
+05C1FFB2 UNDEFINED
+05C00712 dupm z18.b, #0x11
+05C01F12 dupm z18.b, #0x22
+05C1FF12 dupm z18.b, #0x22
+05C00752 dupm z18.b, #0x77
+05C01F52 dupm z18.b, #0xee
+05C1FF52 dupm z18.b, #0xee
+05C00772 UNDEFINED
+05C01F72 UNDEFINED
+05C1FF72 UNDEFINED
+05C00612 dupm z18.b, #0x1
+05C03E12 dupm z18.b, #0x2
+05C1FE12 dupm z18.b, #0x2
+05C006D2 dupm z18.b, #0x7f
+05C03ED2 dupm z18.b, #0xfe
+05C1FED2 dupm z18.b, #0xfe
+05C006F2 UNDEFINED
+05C03EF2 UNDEFINED
+05C1FEF2 UNDEFINED
+05C07C12 dupm z18.h, #0x2
+05C1FC12 dupm z18.h, #0x2
+05C005D2 mov z18.h, #0x7fff
+05C07DD2 dupm z18.h, #0xfffe
+05C1FDD2 dupm z18.h, #0xfffe
+05C005F2 UNDEFINED
+05C07DF2 UNDEFINED
+05C1FDF2 UNDEFINED
+05C0F812 dupm z18.s, #0x2
+05C1F812 dupm z18.s, #0x2
+05C003D2 mov z18.s, #0x7fffffff
+05C0FBD2 dupm z18.s, #0xfffffffe
+05C1FBD2 dupm z18.s, #0xfffffffe
+05C003F2 UNDEFINED
+05C0FBF2 UNDEFINED
+05C1FBF2 UNDEFINED
+05C3F812 dupm z18.d, #0x2
+05C207D2 mov z18.d, #0x7fffffffffffffff
+05C3FFD2 dupm z18.d, #0xfffffffffffffffe
+05C207F2 UNDEFINED

@@ -1,0 +1,21 @@
+// UMIN_32_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|opcode=011011|Rn=xxxxx|Rd=xxxxx
+// Umin32Dp2src: UMIN  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AC06C05 umin w5, w0, w0
+1AC06C0C umin w12, w0, w0
+1AC06C13 umin w19, w0, w0
+1ADF6FE0 umin w0, wzr, wzr
+1AC06C1F umin wzr, w0, w0
+1AC06C00 umin w0, w0, w0
+1AC16C43 umin w3, w2, w1
+
+// UMIN_64_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|opcode=011011|Rn=xxxxx|Rd=xxxxx
+// Umin64Dp2src: UMIN  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9AC06C03 umin x3, x0, x0
+9AC06C0A umin x10, x0, x0
+9AC06C11 umin x17, x0, x0
+9ADF6FE0 umin x0, xzr, xzr
+9AC06C1F umin xzr, x0, x0
+9AC06C00 umin x0, x0, x0
+9AC16C43 umin x3, x2, x1

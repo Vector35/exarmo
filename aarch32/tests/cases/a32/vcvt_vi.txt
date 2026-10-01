@@ -1,0 +1,69 @@
+// VCVT_vi_A1_D cond=xxxx|11101|D=x|11|o1=1|opc2=000|Vd=xxxx|10|size=11|op=x|1|M=x|0|Vm=xxxx
+// VcvtViA1D: VCVT{<c>}{<q>}.F64.<dt>  <Dd>, <Sm>
+// read together by <Dd>: D, Vd
+// read together by <Sm>: M, Vm
+1ef8bbea vcvtne.f64.s32 d27, s21
+6ef80b6d vcvtvs.f64.u32 d16, s27
+0ef8cb67 vcvteq.f64.u32 d28, s15
+1eb8cbe0 vcvtne.f64.s32 d12, s1
+eef8fb41 vcvt.f64.u32 d31, s2
+aeb81b63 vcvtge.f64.u32 d1, s7
+4eb85be0 vcvtmi.f64.s32 d5, s1
+aeb8ebec vcvtge.f64.s32 d14, s25
+// Binary Ninja's tests
+eef80b40 vcvt.f64.u32 d16, s0
+eef80bc0 vcvt.f64.s32 d16, s0
+FEF8BBEA UNALLOCATED
+8EF88BEF vcvthi.f64.s32 d24, s31
+2EF84BE8 vcvtcs.f64.s32 d20, s17
+1EF82BE4 vcvtne.f64.s32 d18, s9
+1EB80BE2 vcvtne.f64.s32 d0, s5
+1EB8FBCF vcvtne.f64.s32 d15, s30
+1EF8BBEF vcvtne.f64.s32 d27, s31
+
+// VCVT_vi_A1_H cond=xxxx|11101|D=x|11|o1=1|opc2=000|Vd=xxxx|10|size=01|op=x|1|M=x|0|Vm=xxxx
+// VcvtViA1H: VCVT{<c>}{<q>}.F16.<dt>  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+1ef829e3 vcvtne.f16.s32 s5, s7 (unpredictable)
+2eb8a9c0 vcvths.f16.s32 s20, s0 (unpredictable)
+9ef87942 vcvtls.f16.u32 s15, s4 (unpredictable)
+0eb869c1 vcvteq.f16.s32 s12, s2 (unpredictable)
+1eb8a94a vcvtne.f16.u32 s20, s20 (unpredictable)
+5eb879c9 vcvtpl.f16.s32 s14, s18 (unpredictable)
+deb8a96a vcvtle.f16.u32 s20, s21 (unpredictable)
+beb81944 vcvtlt.f16.u32 s2, s8 (unpredictable)
+FEF829E3 UNALLOCATED
+8EF809EF vcvthi.f16.s32 s1, s31 (unpredictable)
+4EF8F9E8 vcvtmi.f16.s32 s31, s17 (unpredictable)
+1EF889CF vcvtne.f16.s32 s17, s30 (unpredictable)
+1EF849E0 vcvtne.f16.s32 s9, s1 (unpredictable)
+1EB809EF vcvtne.f16.s32 s0, s31 (unpredictable)
+1EB8F9E3 vcvtne.f16.s32 s30, s7 (unpredictable)
+1EF809E3 vcvtne.f16.s32 s1, s7 (unpredictable)
+1EF8F9E3 vcvtne.f16.s32 s31, s7 (unpredictable)
+
+// VCVT_vi_A1_S cond=xxxx|11101|D=x|11|o1=1|opc2=000|Vd=xxxx|10|size=10|op=x|1|M=x|0|Vm=xxxx
+// VcvtViA1S: VCVT{<c>}{<q>}.F32.<dt>  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+6eb8ba6c vcvtvs.f32.u32 s22, s25
+6ef85a44 vcvtvs.f32.u32 s11, s8
+deb86a42 vcvtle.f32.u32 s12, s4
+1eb8ea6e vcvtne.f32.u32 s28, s29
+eeb8eaec vcvt.f32.s32 s28, s25
+4ef8aac0 vcvtmi.f32.s32 s21, s0
+6ef8aa41 vcvtvs.f32.u32 s21, s2
+aeb8aae3 vcvtge.f32.s32 s20, s7
+// Binary Ninja's tests
+eeb80a40 vcvt.f32.u32 s0, s0
+eeb80ac0 vcvt.f32.s32 s0, s0
+0EB8FA6F vcvteq.f32.u32 s30, s31
+FEB8EAEC UNALLOCATED
+8EB88A68 vcvthi.f32.u32 s16, s17
+2EB84A4F vcvtcs.f32.u32 s8, s30
+6EB82A60 vcvtvs.f32.u32 s4, s1
+6EB81A6F vcvtvs.f32.u32 s2, s31
+6EB8FA6C vcvtvs.f32.u32 s30, s25
+6EF80A6C vcvtvs.f32.u32 s1, s25
+6EF8FA6C vcvtvs.f32.u32 s31, s25

@@ -1,0 +1,68 @@
+// sqshrunb_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=0|U=0|R=0|T=0|Zn=xxxxx|Zd=xxxxx
+// SqshrunbZZi: SQSHRUNB  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+4562021A sqshrunb z26.s, z16.d, #0x1e
+452D003B sqshrunb z27.b, z1.h, #0x3
+45700381 sqshrunb z1.s, z28.d, #0x10
+45630012 sqshrunb z18.s, z0.d, #0x1d
+457C0168 sqshrunb z8.s, z11.d, #0x4
+457E0320 sqshrunb z0.s, z25.d, #0x2
+457D0118 sqshrunb z24.s, z8.d, #0x3
+4564002C sqshrunb z12.s, z1.d, #0x1c
+456103FF sqshrunb z31.s, z31.d, #0x1f
+4567021A sqshrunb z26.s, z16.d, #0x19
+4520021A UNDEFINED
+4521021A UNDEFINED
+4522021A UNDEFINED
+4523021A UNDEFINED
+4524021A UNDEFINED
+4525021A UNDEFINED
+4526021A UNDEFINED
+4527021A UNDEFINED
+4528021A sqshrunb z26.b, z16.h, #0x8
+4529021A sqshrunb z26.b, z16.h, #0x7
+452A021A sqshrunb z26.b, z16.h, #0x6
+452B021A sqshrunb z26.b, z16.h, #0x5
+452C021A sqshrunb z26.b, z16.h, #0x4
+452E021A sqshrunb z26.b, z16.h, #0x2
+452F021A sqshrunb z26.b, z16.h, #0x1
+4530021A sqshrunb z26.h, z16.s, #0x10
+4531021A sqshrunb z26.h, z16.s, #0xf
+4532021A sqshrunb z26.h, z16.s, #0xe
+4533021A sqshrunb z26.h, z16.s, #0xd
+4534021A sqshrunb z26.h, z16.s, #0xc
+4535021A sqshrunb z26.h, z16.s, #0xb
+4536021A sqshrunb z26.h, z16.s, #0xa
+4537021A sqshrunb z26.h, z16.s, #0x9
+4538021A sqshrunb z26.h, z16.s, #0x8
+4539021A sqshrunb z26.h, z16.s, #0x7
+453A021A sqshrunb z26.h, z16.s, #0x6
+453B021A sqshrunb z26.h, z16.s, #0x5
+453C021A sqshrunb z26.h, z16.s, #0x4
+453D021A sqshrunb z26.h, z16.s, #0x3
+453E021A sqshrunb z26.h, z16.s, #0x2
+453F021A sqshrunb z26.h, z16.s, #0x1
+4560021A sqshrunb z26.s, z16.d, #0x20
+4565021A sqshrunb z26.s, z16.d, #0x1b
+4566021A sqshrunb z26.s, z16.d, #0x1a
+4568021A sqshrunb z26.s, z16.d, #0x18
+4569021A sqshrunb z26.s, z16.d, #0x17
+456A021A sqshrunb z26.s, z16.d, #0x16
+456B021A sqshrunb z26.s, z16.d, #0x15
+456C021A sqshrunb z26.s, z16.d, #0x14
+456D021A sqshrunb z26.s, z16.d, #0x13
+456E021A sqshrunb z26.s, z16.d, #0x12
+456F021A sqshrunb z26.s, z16.d, #0x11
+4571021A sqshrunb z26.s, z16.d, #0xf
+4572021A sqshrunb z26.s, z16.d, #0xe
+4573021A sqshrunb z26.s, z16.d, #0xd
+4574021A sqshrunb z26.s, z16.d, #0xc
+4575021A sqshrunb z26.s, z16.d, #0xb
+4576021A sqshrunb z26.s, z16.d, #0xa
+4577021A sqshrunb z26.s, z16.d, #0x9
+4578021A sqshrunb z26.s, z16.d, #0x8
+4579021A sqshrunb z26.s, z16.d, #0x7
+457A021A sqshrunb z26.s, z16.d, #0x6
+457B021A sqshrunb z26.s, z16.d, #0x5
+457F021A sqshrunb z26.s, z16.d, #0x1

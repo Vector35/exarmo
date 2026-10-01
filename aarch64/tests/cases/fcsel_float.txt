@@ -1,0 +1,76 @@
+// FCSEL_D_floatsel M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|cond=xxxx|11|Rn=xxxxx|Rd=xxxxx
+// FcselDFloatsel: FCSEL  <Dd>, <Dn>, <Dm>, <cond>
+// register fields: Rm, Rn, Rd
+1E746C6A fcsel d10, d3, d20, vs
+1E75ED1E fcsel d30, d8, d21, al
+1E61CD5D fcsel d29, d10, d1, gt
+1E777ECD fcsel d13, d22, d23, vc
+1E7B7C20 fcsel d0, d1, d27, vc
+1E635EDA fcsel d26, d22, d3, pl
+1E6E6F34 fcsel d20, d25, d14, vs
+1E761CD6 fcsel d22, d6, d22, ne
+1E721D18 fcsel d24, d8, d18, ne
+1E6DADF4 fcsel d20, d15, d13, ge
+1E733E92 fcsel d18, d20, d19, cc
+1E74AC14 fcsel d20, d0, d20, ge
+1E619CC6 fcsel d6, d6, d1, ls
+1E63FC0E fcsel d14, d0, d3, nv
+1E64BD14 fcsel d20, d8, d4, lt
+1E701F98 fcsel d24, d28, d16, ne
+1E600FFF fcsel d31, d31, d0, eq
+1E7F6C6A fcsel d10, d3, d31, vs
+1E746E8A fcsel d10, d20, d20, vs
+1E748C6A fcsel d10, d3, d20, hi
+1E744C6A fcsel d10, d3, d20, mi
+1E742C6A fcsel d10, d3, d20, cs
+
+// FCSEL_H_floatsel M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|cond=xxxx|11|Rn=xxxxx|Rd=xxxxx
+// FcselHFloatsel: FCSEL  <Hd>, <Hn>, <Hm>, <cond>
+// register fields: Rm, Rn, Rd
+1EED3D3E fcsel h30, h9, h13, cc
+1EFF6E9D fcsel h29, h20, h31, vs
+1EE3AE3F fcsel h31, h17, h3, ge
+1EE35D6E fcsel h14, h11, h3, pl
+1EFA4F47 fcsel h7, h26, h26, mi
+1EF22D2D fcsel h13, h9, h18, cs
+1EF58D80 fcsel h0, h12, h21, hi
+1EFF7CA0 fcsel h0, h5, h31, vc
+1EF4EE3E fcsel h30, h17, h20, al
+1EF47FAD fcsel h13, h29, h20, vc
+1EE2DCB8 fcsel h24, h5, h2, le
+1EEC8C46 fcsel h6, h2, h12, hi
+1EE1AD42 fcsel h2, h10, h1, ge
+1EF3DE45 fcsel h5, h18, h19, le
+1EE20FAC fcsel h12, h29, h2, eq
+1EF22C42 fcsel h2, h2, h18, cs
+1EE0FC1E fcsel h30, h0, h0, nv
+1EED3FFE fcsel h30, h31, h13, cc
+1EED3D2D fcsel h13, h9, h13, cc
+1EED1D3E fcsel h30, h9, h13, ne
+
+// FCSEL_S_floatsel M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|cond=xxxx|11|Rn=xxxxx|Rd=xxxxx
+// FcselSFloatsel: FCSEL  <Sd>, <Sn>, <Sm>, <cond>
+// register fields: Rm, Rn, Rd
+1E32BE1A fcsel s26, s16, s18, lt
+1E3C7D2F fcsel s15, s9, s28, vc
+1E357C60 fcsel s0, s3, s21, vc
+1E2F8ED1 fcsel s17, s22, s15, hi
+1E2E1E15 fcsel s21, s16, s14, ne
+1E22CEE7 fcsel s7, s23, s2, gt
+1E31DCCE fcsel s14, s6, s17, le
+1E34FF5C fcsel s28, s26, s20, nv
+1E3BBE12 fcsel s18, s16, s27, lt
+1E227C1D fcsel s29, s0, s2, vc
+1E37EC05 fcsel s5, s0, s23, al
+1E3D0E2E fcsel s14, s17, s29, eq
+1E2C6DD9 fcsel s25, s14, s12, vs
+1E2CFCC5 fcsel s5, s6, s12, nv
+1E343FED fcsel s13, s31, s20, cc
+1E24DE3D fcsel s29, s17, s4, le
+1E20BE1F fcsel s31, s16, s0, lt
+1E3FBE1A fcsel s26, s16, s31, lt
+1E32BE5A fcsel s26, s18, s18, lt
+1E32BE12 fcsel s18, s16, s18, lt
+1E32BE10 fcsel s16, s16, s18, lt
+1E324E1A fcsel s26, s16, s18, mi
+1E322E1A fcsel s26, s16, s18, cs

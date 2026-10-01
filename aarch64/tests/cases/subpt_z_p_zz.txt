@@ -1,0 +1,14 @@
+// subpt_z_p_zz_ 000|0010|0|size=11|0|00|opc=101|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SubptZPZz: SUBPT  <Zdn>.D, <Pg>/M, <Zdn>.D, <Zm>.D
+// register fields: Pg, Zm, Zdn
+04C50001 subpt z1.d, p0/m, z1.d, z0.d
+04C50008 subpt z8.d, p0/m, z8.d, z0.d
+04C5000F subpt z15.d, p0/m, z15.d, z0.d
+04C507E0 subpt z0.d, p1/m, z0.d, z31.d
+04C5081F subpt z31.d, p2/m, z31.d, z0.d
+04C50C01 subpt z1.d, p3/m, z1.d, z0.d
+04C51001 subpt z1.d, p4/m, z1.d, z0.d
+04C51401 subpt z1.d, p5/m, z1.d, z0.d
+04C51801 subpt z1.d, p6/m, z1.d, z0.d
+04C51C01 subpt z1.d, p7/m, z1.d, z0.d
+04C50000 subpt z0.d, p0/m, z0.d, z0.d

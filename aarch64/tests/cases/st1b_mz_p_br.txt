@@ -1,0 +1,30 @@
+// st1b_mz_p_br_2 1|01|0000|00|01|Rm=xxxxx|0|msz=00|PNg=xxx|Rn=xxxxx|Zt=xxxx|N=0
+// St1bMzPBr2: ST1B  { <Zt1>.B-<Zt2>.B }, <PNg>, [<Xn|SP>, <Xm>]
+// register fields: Rm, PNg, Rn, Zt
+A0200000 st1b {z0.b-z1.b}, pn8, [x0, x0]
+A020000E st1b {z14.b-z15.b}, pn8, [x0, x0]
+A020001C st1b {z28.b-z29.b}, pn8, [x0, x0]
+A03F07FE st1b {z30.b-z31.b}, pn9, [sp, xzr]
+A0200800 st1b {z0.b-z1.b}, pn10, [x0, x0]
+A0200C00 st1b {z0.b-z1.b}, pn11, [x0, x0]
+A0201000 st1b {z0.b-z1.b}, pn12, [x0, x0]
+A0201400 st1b {z0.b-z1.b}, pn13, [x0, x0]
+A0201800 st1b {z0.b-z1.b}, pn14, [x0, x0]
+A0201C00 st1b {z0.b-z1.b}, pn15, [x0, x0]
+A0210868 st1b {z8.b-z9.b}, pn10, [x3, x1]
+
+// st1b_mz_p_br_4 1|01|0000|00|01|Rm=xxxxx|1|msz=00|PNg=xxx|Rn=xxxxx|Zt=xxx|0|N=0
+// St1bMzPBr4: ST1B  { <Zt1>.B-<Zt4>.B }, <PNg>, [<Xn|SP>, <Xm>]
+// register fields: Rm, PNg, Rn, Zt
+A0208014 st1b {z20.b-z23.b}, pn8, [x0, x0]
+A0208030 st1b {z16.b-z19.b}, pn8, [x1, x0]
+A020804C st1b {z12.b-z15.b}, pn8, [x2, x0]
+A03F87E0 st1b {z0.b-z3.b}, pn9, [sp, xzr]
+A0208804 st1b {z4.b-z7.b}, pn10, [x0, x0]
+A0208C08 st1b {z8.b-z11.b}, pn11, [x0, x0]
+A0209018 st1b {z24.b-z27.b}, pn12, [x0, x0]
+A020941C st1b {z28.b-z31.b}, pn13, [x0, x0]
+A0209814 st1b {z20.b-z23.b}, pn14, [x0, x0]
+A0209C14 st1b {z20.b-z23.b}, pn15, [x0, x0]
+A0208000 st1b {z0.b-z3.b}, pn8, [x0, x0]
+A0218870 st1b {z16.b-z19.b}, pn10, [x3, x1]

@@ -1,0 +1,105 @@
+// SUBS_32S_addsub_imm sf=0|op=1|S=1|100010|sh=x|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Subs32sAddsubImm: SUBS  <Wd>, <Wn|WSP>, #<imm>{, <shift>}
+// CmpSubs32sAddsubImm: CMP  <Wn|WSP>, #<imm>{, <shift>}
+// register fields: Rn, Rd
+// form chosen on: Rd
+716BDC7F cmp w3, #0xaf7, lsl #0xc
+71204E3F cmp w17, #0x813
+7108347F cmp w3, #0x20d
+713945FF cmp w15, #0xe51
+7143DD9F cmp w12, #0xf7, lsl #0xc
+7153C31F cmp w24, #0x4f0, lsl #0xc
+7129F0DF cmp w6, #0xa7c
+71561AFF cmp w23, #0x586, lsl #0xc
+7124B49F cmp w4, #0x92d
+7174479F cmp w28, #0xd11, lsl #0xc
+712293FF cmp wsp, #0x8a4
+7167C61F cmp w16, #0x9f1, lsl #0xc
+715D8FBF cmp w29, #0x763, lsl #0xc
+71677B5F cmp w26, #0x9de, lsl #0xc
+7148199F cmp w12, #0x206, lsl #0xc
+712D703F cmp w1, #0xb5c
+715F8179 subs w25, w11, #0x7e0, lsl #0xc
+71011327 subs w7, w25, #0x44
+71515C35 subs w21, w1, #0x457, lsl #0xc
+7127229D subs w29, w20, #0x9c8
+715D52D7 subs w23, w22, #0x754, lsl #0xc
+71454566 subs w6, w11, #0x151, lsl #0xc
+71093C35 subs w21, w1, #0x24f
+7132FC35 subs w21, w1, #0xcbf
+714BF081 subs w1, w4, #0x2fc, lsl #0xc
+711FA7CE subs w14, w30, #0x7e9
+711C2D5E subs w30, w10, #0x70b
+7158AC00 subs w0, w0, #0x62b, lsl #0xc
+71642059 subs w25, w2, #0x908, lsl #0xc
+716EDBB2 subs w18, w29, #0xbb6, lsl #0xc
+71068C66 subs w6, w3, #0x1a3
+717EEBCA subs w10, w30, #0xfba, lsl #0xc
+7140007F cmp w3, #0x0, lsl #0xc
+717FFC7F cmp w3, #0xfff, lsl #0xc
+7160007F cmp w3, #0x800, lsl #0xc
+7150007F cmp w3, #0x400, lsl #0xc
+7148007F cmp w3, #0x200, lsl #0xc
+7144007F cmp w3, #0x100, lsl #0xc
+7142007F cmp w3, #0x80, lsl #0xc
+7141007F cmp w3, #0x40, lsl #0xc
+7140807F cmp w3, #0x20, lsl #0xc
+7140407F cmp w3, #0x10, lsl #0xc
+7140207F cmp w3, #0x8, lsl #0xc
+7140107F cmp w3, #0x4, lsl #0xc
+7140087F cmp w3, #0x2, lsl #0xc
+7140047F cmp w3, #0x1, lsl #0xc
+7108346F subs w15, w3, #0x20d
+
+// SUBS_64S_addsub_imm sf=1|op=1|S=1|100010|sh=x|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Subs64sAddsubImm: SUBS  <Xd>, <Xn|SP>, #<imm>{, <shift>}
+// CmpSubs64sAddsubImm: CMP  <Xn|SP>, #<imm>{, <shift>}
+// register fields: Rn, Rd
+// form chosen on: Rd
+F157FC3F cmp x1, #0x5ff, lsl #0xc
+F17C8CBF cmp x5, #0xf23, lsl #0xc
+F14F6CDF cmp x6, #0x3db, lsl #0xc
+F12BABFF cmp sp, #0xaea
+F10B4DBF cmp x13, #0x2d3
+F1004C3F cmp x1, #0x13
+F16377DF cmp lr, #0x8dd, lsl #0xc
+F16F10FF cmp x7, #0xbc4, lsl #0xc
+F166FAFF cmp x23, #0x9be, lsl #0xc
+F11D2D7F cmp x11, #0x74b
+F15A903F cmp x1, #0x6a4, lsl #0xc
+F15AF15F cmp x10, #0x6bc, lsl #0xc
+F141581F cmp x0, #0x56, lsl #0xc
+F1153E5F cmp x18, #0x54f
+F16F6D5F cmp x10, #0xbdb, lsl #0xc
+F12B0FBF cmp fp, #0xac3
+F1664CC8 subs x8, x6, #0x993, lsl #0xc
+F16F4099 subs x25, x4, #0xbd0, lsl #0xc
+F14776F5 subs x21, x23, #0x1dd, lsl #0xc
+F141E237 subs x23, x17, #0x78, lsl #0xc
+F16DD740 subs x0, x26, #0xb75, lsl #0xc
+F14244CD subs x13, x6, #0x91, lsl #0xc
+F1152AE8 subs x8, x23, #0x54a
+F116E198 subs x24, x12, #0x5b8
+F16E6566 subs x6, x11, #0xb99, lsl #0xc
+F103B70F subs x15, x24, #0xed
+F13825BC subs x28, x13, #0xe09
+F1288E94 subs x20, x20, #0xa23
+F1483D3D subs fp, x9, #0x20f, lsl #0xc
+F11527EA subs x10, sp, #0x549
+F14AF3C7 subs x7, lr, #0x2bc, lsl #0xc
+F15D78D1 subs x17, x6, #0x75e, lsl #0xc
+F140003F cmp x1, #0x0, lsl #0xc
+F17FFC3F cmp x1, #0xfff, lsl #0xc
+F160003F cmp x1, #0x800, lsl #0xc
+F150003F cmp x1, #0x400, lsl #0xc
+F148003F cmp x1, #0x200, lsl #0xc
+F144003F cmp x1, #0x100, lsl #0xc
+F142003F cmp x1, #0x80, lsl #0xc
+F141003F cmp x1, #0x40, lsl #0xc
+F140803F cmp x1, #0x20, lsl #0xc
+F140403F cmp x1, #0x10, lsl #0xc
+F140203F cmp x1, #0x8, lsl #0xc
+F140103F cmp x1, #0x4, lsl #0xc
+F140083F cmp x1, #0x2, lsl #0xc
+F140043F cmp x1, #0x1, lsl #0xc
+F1004C2F subs x15, x1, #0x13

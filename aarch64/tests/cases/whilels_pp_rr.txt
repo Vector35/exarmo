@@ -1,0 +1,12 @@
+// whilels_pp_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|01|U=1|lt=1|Rn=xxxxx|1|Pd=xxx|eq=1
+// WhilelsPpRr: WHILELS  { <Pd1>.<T>, <Pd2>.<T> }, <Xn>, <Xm>
+// register fields: Rm, Rn, Pd
+25205C15 whilels {p4.b, p5.b}, x0, x0
+25205C31 whilels {p0.b, p1.b}, x1, x0
+25205C3F whilels {p14.b, p15.b}, x1, x0
+257F5FF3 whilels {p2.h, p3.h}, xzr, xzr
+25A05C17 whilels {p6.s, p7.s}, x0, x0
+25E05C19 whilels {p8.d, p9.d}, x0, x0
+25205C1B whilels {p10.b, p11.b}, x0, x0
+25205C1D whilels {p12.b, p13.b}, x0, x0
+25205C11 whilels {p0.b, p1.b}, x0, x0

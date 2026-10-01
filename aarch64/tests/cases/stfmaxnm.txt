@@ -1,0 +1,59 @@
+// STFMAXNM_16 size=01|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=110|00|Rn=xxxxx|Rt=11111
+// Stfmaxnm16: STFMAXNM  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+7C20E07F stfmaxnm h0, [x3]
+7C20E15F stfmaxnm h0, [x10]
+7C20E23F stfmaxnm h0, [x17]
+7C3FE01F stfmaxnm h31, [x0]
+7C20E3FF stfmaxnm h0, [sp]
+7C20E01F stfmaxnm h0, [x0]
+
+// STFMAXNM_32 size=10|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=110|00|Rn=xxxxx|Rt=11111
+// Stfmaxnm32: STFMAXNM  <Ss>, [<Xn|SP>]
+// register fields: Rs, Rn
+BC20E03F stfmaxnm s0, [x1]
+BC20E11F stfmaxnm s0, [x8]
+BC20E1FF stfmaxnm s0, [x15]
+BC3FE01F stfmaxnm s31, [x0]
+BC20E3FF stfmaxnm s0, [sp]
+BC20E01F stfmaxnm s0, [x0]
+
+// STFMAXNM_64 size=11|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=110|00|Rn=xxxxx|Rt=11111
+// Stfmaxnm64: STFMAXNM  <Ds>, [<Xn|SP>]
+// register fields: Rs, Rn
+FC20E0DF stfmaxnm d0, [x6]
+FC20E1BF stfmaxnm d0, [x13]
+FC20E29F stfmaxnm d0, [x20]
+FC3FE01F stfmaxnm d31, [x0]
+FC20E3FF stfmaxnm d0, [sp]
+FC20E01F stfmaxnm d0, [x0]
+
+// STFMAXNML_16 size=01|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=110|00|Rn=xxxxx|Rt=11111
+// Stfmaxnml16: STFMAXNML  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+7C60E0DF stfmaxnml h0, [x6]
+7C60E1BF stfmaxnml h0, [x13]
+7C60E29F stfmaxnml h0, [x20]
+7C7FE01F stfmaxnml h31, [x0]
+7C60E3FF stfmaxnml h0, [sp]
+7C60E01F stfmaxnml h0, [x0]
+
+// STFMAXNML_32 size=10|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=110|00|Rn=xxxxx|Rt=11111
+// Stfmaxnml32: STFMAXNML  <Ss>, [<Xn|SP>]
+// register fields: Rs, Rn
+BC60E09F stfmaxnml s0, [x4]
+BC60E17F stfmaxnml s0, [x11]
+BC60E25F stfmaxnml s0, [x18]
+BC7FE01F stfmaxnml s31, [x0]
+BC60E3FF stfmaxnml s0, [sp]
+BC60E01F stfmaxnml s0, [x0]
+
+// STFMAXNML_64 size=11|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=110|00|Rn=xxxxx|Rt=11111
+// Stfmaxnml64: STFMAXNML  <Ds>, [<Xn|SP>]
+// register fields: Rs, Rn
+FC60E05F stfmaxnml d0, [x2]
+FC60E13F stfmaxnml d0, [x9]
+FC60E21F stfmaxnml d0, [x16]
+FC7FE01F stfmaxnml d31, [x0]
+FC60E3FF stfmaxnml d0, [sp]
+FC60E01F stfmaxnml d0, [x0]

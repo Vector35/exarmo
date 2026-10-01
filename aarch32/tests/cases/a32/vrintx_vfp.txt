@@ -1,0 +1,64 @@
+// VRINTX_vfp_A1_D cond=xxxx|11101|D=x|11|o1=0|opc2=111|Vd=xxxx|10|size=11|o3=0|1|M=x|0|Vm=xxxx
+// VrintxVfpA1D: VRINTX{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+cef7cb4d vrintxgt.f64 d28, d13
+aeb7cb60 vrintxge.f64 d12, d16
+0ef79b4c vrintxeq.f64 d25, d12
+aeb72b60 vrintxge.f64 d2, d16
+4eb7cb45 vrintxmi.f64 d12, d5
+3eb7eb65 vrintxlo.f64 d14, d21
+4eb7db69 vrintxmi.f64 d13, d25
+beb78b60 vrintxlt.f64 d8, d16
+// Binary Ninja's tests
+0ef7cb6e vrintxeq.f64 d28, d30
+FEF7CB4D UNALLOCATED
+8EF70B4F vrintxhi.f64 d16, d15
+2EF7FB48 vrintxcs.f64 d31, d8
+1EF74B44 vrintxne.f64 d20, d4
+CEF71B42 vrintxgt.f64 d17, d2
+CEB70B41 vrintxgt.f64 d0, d1
+CEB7FB40 vrintxgt.f64 d15, d0
+CEF70B4F vrintxgt.f64 d16, d15
+CEF7FB6F vrintxgt.f64 d31, d31
+
+// VRINTX_vfp_A1_H cond=xxxx|11101|D=x|11|o1=0|opc2=111|Vd=xxxx|10|size=01|o3=0|1|M=x|0|Vm=xxxx
+// VrintxVfpA1H: VRINTX{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+6eb7c940 vrintxvs.f16 s24, s0 (unpredictable)
+7ef7096e vrintxvc.f16 s1, s29 (unpredictable)
+6ef7b96a vrintxvs.f16 s23, s21 (unpredictable)
+deb70965 vrintxle.f16 s0, s11 (unpredictable)
+6ef7894f vrintxvs.f16 s17, s30 (unpredictable)
+deb7296e vrintxle.f16 s4, s29 (unpredictable)
+7ef77948 vrintxvc.f16 s15, s16 (unpredictable)
+aef72969 vrintxge.f16 s5, s19 (unpredictable)
+0EB7F944 vrintxeq.f16 s30, s8 (unpredictable)
+FEB7C940 UNALLOCATED
+8EB74942 vrintxhi.f16 s8, s4 (unpredictable)
+4EB71941 vrintxmi.f16 s2, s2 (unpredictable)
+2EB7F960 vrintxcs.f16 s30, s1 (unpredictable)
+1EF7F96F vrintxne.f16 s31, s31 (unpredictable)
+
+// VRINTX_vfp_A1_S cond=xxxx|11101|D=x|11|o1=0|opc2=111|Vd=xxxx|10|size=10|o3=0|1|M=x|0|Vm=xxxx
+// VrintxVfpA1S: VRINTX{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+3eb7da49 vrintxlo.f32 s26, s18
+deb7ba44 vrintxle.f32 s22, s8
+3eb7da6f vrintxlo.f32 s26, s31
+beb70a69 vrintxlt.f32 s0, s19
+6ef7da41 vrintxvs.f32 s27, s2
+1ef72a61 vrintxne.f32 s5, s3
+deb77a60 vrintxle.f32 s14, s1
+3ef78a67 vrintxlo.f32 s17, s15
+// Binary Ninja's tests
+6eb75a47 vrintxvs.f32 s10, s14
+0EB7FA48 vrintxeq.f32 s30, s16
+FEB7DA49 UNALLOCATED
+8EB74A42 vrintxhi.f32 s8, s4
+4EB71A40 vrintxmi.f32 s2, s0
+2EB7FA4F vrintxcs.f32 s30, s30
+3EF70A49 vrintxcc.f32 s1, s18
+3EF7FA49 vrintxcc.f32 s31, s18

@@ -1,0 +1,8 @@
+// str_zt_br_ 1|11|0000|100|opc=111111|1|00000|Rn=xxxxx|000|opc2=00
+// StrZtBr: STR  ZT0, [<Xn|SP>]
+// register fields: Rn
+E13F8060 str zt0, [x3]
+E13F8140 str zt0, [x10]
+E13F8220 str zt0, [x17]
+E13F8000 str zt0, [x0]
+E13F83E0 str zt0, [sp]

@@ -1,0 +1,18 @@
+// SSAX_T1 111|11010|1|op1=110|Rn=xxxx|1111|Rd=xxxx|0|U=0|H=0|S=0|Rm=xxxx
+// SsaxT1: SSAX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fae3f90b ssax r9, r3, r11
+fae9fc04 ssax r12, r9, r4
+fae1f703 ssax r7, r1, r3
+faeaf60f ssax r6, r10, pc (unpredictable)
+fae6fd08 ssax sp, r6, r8
+fae4fb07 ssax r11, r4, r7
+faebf209 ssax r2, r11, r9
+fae5fa06 ssax r10, r5, r6
+FAE0F000 ssax r0, r0, r0
+FAEFFF0B ssax pc, pc, r11 (unpredictable)
+FAE3F30B ssax r3, r3, r11
+FAE3F903 ssax r9, r3, r3
+FAE3F909 ssax r9, r3, r9
+FAE3F90B [ne] ssaxne r9, r3, r11

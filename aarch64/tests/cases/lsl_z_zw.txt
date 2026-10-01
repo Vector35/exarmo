@@ -1,0 +1,24 @@
+// lsl_z_zw_ 000|0010|0|size=xx|1|Zm=xxxxx|100|0|opc=11|Zn=xxxxx|Zd=xxxxx
+// LslZZw: LSL  <Zd>.<T>, <Zn>.<T>, <Zm>.D
+// register fields: Zm, Zn, Zd
+04738F60 lsl z0.h, z27.h, z19.d
+04618EC9 lsl z9.h, z22.h, z1.d
+046C8F19 lsl z25.h, z24.h, z12.d
+04338EBC lsl z28.b, z21.b, z19.d
+046F8DDF lsl z31.h, z14.h, z15.d
+04A58E47 lsl z7.s, z18.s, z5.d
+04318F51 lsl z17.b, z26.b, z17.d
+04288E54 lsl z20.b, z18.b, z8.d
+04738D0D lsl z13.h, z8.h, z19.d
+04688EBF lsl z31.h, z21.h, z8.d
+046A8F7C lsl z28.h, z27.h, z10.d
+04AE8C1D lsl z29.s, z0.s, z14.d
+04288E1A lsl z26.b, z16.b, z8.d
+04AC8FD0 lsl z16.s, z30.s, z12.d
+04668D1A lsl z26.h, z8.h, z6.d
+04AD8C68 lsl z8.s, z3.s, z13.d
+04608FE0 lsl z0.h, z31.h, z0.d
+047F8F60 lsl z0.h, z27.h, z31.d
+04F38F60 UNDEFINED
+04738E60 lsl z0.h, z19.h, z19.d
+04738F7B lsl z27.h, z27.h, z19.d

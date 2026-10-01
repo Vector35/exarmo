@@ -1,0 +1,27 @@
+// VMOVN_T1 111|1|11|11|1|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0100|Q=0|M=x|0|Vm=xxxx
+// VmovnT1: VMOVN{<c>}{<q>}.<dt>  <Dd>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffba9204 vmovn.i64 d9, q2
+ffb69226 vmovn.i32 d9, q11
+fff6a220 vmovn.i32 d26, q8
+ffb2a22c vmovn.i16 d10, q14
+ffb2c20a vmovn.i16 d12, q5
+ffb2d208 vmovn.i16 d13, q4
+ffb2d228 vmovn.i16 d13, q12
+ffba5202 vmovn.i64 d5, q1
+FFBE920F UNDEFINED
+FFBA0200 vmovn.i64 d0, q0
+FFBAF204 vmovn.i64 d15, q2
+FFBA8204 vmovn.i64 d8, q2
+FFBA4204 vmovn.i64 d4, q2
+FFBA2204 vmovn.i64 d2, q2
+FFBA1204 vmovn.i64 d1, q2
+FFBA9201 UNDEFINED
+FFBA0204 vmovn.i64 d0, q2
+FFFA0204 vmovn.i64 d16, q2
+FFFAF204 vmovn.i64 d31, q2
+FFBA920F UNDEFINED
+FFBA922F UNDEFINED
+FFBA9204 [ne] vmovnne.i64 d9, q2

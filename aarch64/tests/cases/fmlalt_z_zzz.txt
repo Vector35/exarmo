@@ -1,0 +1,21 @@
+// fmlalt_z_zzz_ 011|0010|0|1|o2=0|1|Zm=xxxxx|10|op=0|00|T=1|Zn=xxxxx|Zda=xxxxx
+// FmlaltZZzz: FMLALT  <Zda>.S, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zda
+64A185C4 fmlalt z4.s, z14.h, z1.h
+64BF8716 fmlalt z22.s, z24.h, z31.h
+64A486D6 fmlalt z22.s, z22.h, z4.h
+64B38445 fmlalt z5.s, z2.h, z19.h
+64BB8594 fmlalt z20.s, z12.h, z27.h
+64AF860A fmlalt z10.s, z16.h, z15.h
+64AF85AF fmlalt z15.s, z13.h, z15.h
+64A9851F fmlalt z31.s, z8.h, z9.h
+64A185C4 fmlalt z4.s, z14.h, z1.h
+64BF8716 fmlalt z22.s, z24.h, z31.h
+64A486D6 fmlalt z22.s, z22.h, z4.h
+64B38445 fmlalt z5.s, z2.h, z19.h
+64BB8594 fmlalt z20.s, z12.h, z27.h
+64AF860A fmlalt z10.s, z16.h, z15.h
+64AF85AF fmlalt z15.s, z13.h, z15.h
+64A9851F fmlalt z31.s, z8.h, z9.h
+64A08400 fmlalt z0.s, z0.h, z0.h
+64A187E4 fmlalt z4.s, z31.h, z1.h

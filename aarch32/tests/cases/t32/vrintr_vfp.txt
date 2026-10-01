@@ -1,0 +1,66 @@
+// VRINTR_vfp_T1_D 111011101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=11|op=0|1|M=x|0|Vm=xxxx
+// VrintrVfpT1D: VRINTR{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eeb6db4d vrintr.f64 d13, d13
+eeb63b69 vrintr.f64 d3, d25
+eef6bb62 vrintr.f64 d27, d18
+eeb6ab65 vrintr.f64 d10, d21
+eeb67b67 vrintr.f64 d7, d23
+eeb65b45 vrintr.f64 d5, d5
+eeb66b48 vrintr.f64 d6, d8
+eef66b4e vrintr.f64 d22, d14
+EEB60B40 vrintr.f64 d0, d0
+EEB6FB4F vrintr.f64 d15, d15
+EEB68B44 vrintr.f64 d8, d4
+EEB64B41 vrintr.f64 d4, d1
+EEB62B40 vrintr.f64 d2, d0
+EEB61B4F vrintr.f64 d1, d15
+EEB60B60 vrintr.f64 d0, d16
+EEB6FB6F vrintr.f64 d15, d31
+EEF60B4D vrintr.f64 d16, d13
+EEF6FB4D vrintr.f64 d31, d13
+EEB6DB4D [ne] vrintrne.f64 d13, d13
+
+// VRINTR_vfp_T1_H 111011101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=01|op=0|1|M=x|0|Vm=xxxx
+// VrintrVfpT1H: VRINTR{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeb61960 vrintr.f16 s2, s1
+eeb61940 vrintr.f16 s2, s0
+eef61941 vrintr.f16 s3, s2
+eef66944 vrintr.f16 s13, s8
+eef63967 vrintr.f16 s7, s15
+eef60949 vrintr.f16 s1, s18
+eeb6a961 vrintr.f16 s20, s3
+eef6f969 vrintr.f16 s31, s19
+EEB6896F vrintr.f16 s16, s31
+EEB64968 vrintr.f16 s8, s17
+EEB62962 vrintr.f16 s4, s5
+EEB6094F vrintr.f16 s0, s30
+EEB6F96F vrintr.f16 s30, s31
+EEB61960 [ne] vrintrne.f16 s2, s1 (unpredictable)
+
+// VRINTR_vfp_T1_S 111011101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=10|op=0|1|M=x|0|Vm=xxxx
+// VrintrVfpT1S: VRINTR{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeb66a44 vrintr.f32 s12, s8
+eef6ba41 vrintr.f32 s23, s2
+eef63a41 vrintr.f32 s7, s2
+eef65a43 vrintr.f32 s11, s6
+eef60a4e vrintr.f32 s1, s28
+eeb6aa40 vrintr.f32 s20, s0
+eef6ea6f vrintr.f32 s29, s31
+eef64a6c vrintr.f32 s9, s25
+EEB6FA48 vrintr.f32 s30, s16
+EEB68A42 vrintr.f32 s16, s4
+EEB62A4F vrintr.f32 s4, s30
+EEB61A60 vrintr.f32 s2, s1
+EEB60A44 vrintr.f32 s0, s8
+EEB6FA44 vrintr.f32 s30, s8
+EEF6FA44 vrintr.f32 s31, s8
+EEB66A44 [ne] vrintrne.f32 s12, s8

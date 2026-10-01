@@ -1,0 +1,24 @@
+// VMOV_rs_T1 111|0|11|10|0|opc1=xx|L=0|Vd=xxxx|Rt=xxxx|1|011|D=x|opc2=xx|1|(0)(0)(0)(0)
+// VmovRsT1: VMOV{<c>}{<q>}{.<size>}  <Dd[x]>, <Rt>
+// read together by <size>: opc1, opc2
+// register fields: Rt
+// IT state read: condition
+ee6a8bd0 vmov.8 d26[6], r8
+ee029b10 vmov.32 d2[0], r9
+EE200B3F vmov.16 d0[2], r0 (unpredictable)
+EE4FFBF8 vmov.8 d31[3], pc (unpredictable)
+EE088BB4 vmov.16 d24[0], r8 (unpredictable)
+EE048BF2 vmov.16 d20[1], r8 (unpredictable)
+EE218B91 vmov.32 d17[1], r8 (unpredictable)
+EE0A8BD0 UNDEFINED
+EE2A8BB0 vmov.16 d26[2], r8
+EE2A8BD0 UNDEFINED
+EE2A8BF0 vmov.16 d26[3], r8
+EE4A8B90 vmov.8 d26[0], r8
+EE4A8BB0 vmov.8 d26[1], r8
+EE4A8BD0 vmov.8 d26[2], r8
+EE4A8BF0 vmov.8 d26[3], r8
+EE6A8B90 vmov.8 d26[4], r8
+EE6A8BB0 vmov.8 d26[5], r8
+EE6A8BF0 vmov.8 d26[7], r8
+EE6A8BD0 [ne] vmovne.8 d26[6], r8

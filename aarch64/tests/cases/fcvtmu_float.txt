@@ -1,0 +1,130 @@
+// FCVTMU_32D_float2int sf=0|0|S=0|11110|ftype=01|1|rmode=10|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtmu32dFloat2int: FCVTMU  <Wd>, <Dn>
+// register fields: Rn, Rd
+1E710061 fcvtmu w1, d3
+1E7101A5 fcvtmu w5, d13
+1E7102B6 fcvtmu w22, d21
+1E710208 fcvtmu w8, d16
+1E710066 fcvtmu w6, d3
+1E71038E fcvtmu w14, d28
+1E7102C7 fcvtmu w7, d22
+1E7103DD fcvtmu w29, d30
+1E7103C8 fcvtmu w8, d30
+1E7102AD fcvtmu w13, d21
+1E710270 fcvtmu w16, d19
+1E710151 fcvtmu w17, d10
+1E7101E9 fcvtmu w9, d15
+1E710062 fcvtmu w2, d3
+1E710236 fcvtmu w22, d17
+1E7103EB fcvtmu w11, d31
+1E710000 fcvtmu w0, d0
+1E71007F fcvtmu wzr, d3
+
+// FCVTMU_32H_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=10|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtmu32hFloat2int: FCVTMU  <Wd>, <Hn>
+// register fields: Rn, Rd
+1EF101BA fcvtmu w26, h13
+1EF10302 fcvtmu w2, h24
+1EF10373 fcvtmu w19, h27
+1EF1034D fcvtmu w13, h26
+1EF1029E fcvtmu w30, h20
+1EF1015F fcvtmu wzr, h10
+1EF103AD fcvtmu w13, h29
+1EF10146 fcvtmu w6, h10
+1EF10206 fcvtmu w6, h16
+1EF100EC fcvtmu w12, h7
+1EF103C7 fcvtmu w7, h30
+1EF100A5 fcvtmu w5, h5
+1EF10385 fcvtmu w5, h28
+1EF1025D fcvtmu w29, h18
+1EF1004D fcvtmu w13, h2
+1EF1037D fcvtmu w29, h27
+1EF10000 fcvtmu w0, h0
+1EF103FA fcvtmu w26, h31
+
+// FCVTMU_32S_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=10|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtmu32sFloat2int: FCVTMU  <Wd>, <Sn>
+// register fields: Rn, Rd
+1E3102E5 fcvtmu w5, s23
+1E3103FC fcvtmu w28, s31
+1E310157 fcvtmu w23, s10
+1E31006D fcvtmu w13, s3
+1E31007A fcvtmu w26, s3
+1E310141 fcvtmu w1, s10
+1E310062 fcvtmu w2, s3
+1E310263 fcvtmu w3, s19
+1E310156 fcvtmu w22, s10
+1E31023B fcvtmu w27, s17
+1E3103E0 fcvtmu w0, s31
+1E310243 fcvtmu w3, s18
+1E310009 fcvtmu w9, s0
+1E310026 fcvtmu w6, s1
+1E3100F3 fcvtmu w19, s7
+1E310224 fcvtmu w4, s17
+1E3102FF fcvtmu wzr, s23
+1E3102F7 fcvtmu w23, s23
+
+// FCVTMU_64D_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=10|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtmu64dFloat2int: FCVTMU  <Xd>, <Dn>
+// register fields: Rn, Rd
+9E71031A fcvtmu x26, d24
+9E710285 fcvtmu x5, d20
+9E710133 fcvtmu x19, d9
+9E710112 fcvtmu x18, d8
+9E7101C5 fcvtmu x5, d14
+9E71024E fcvtmu x14, d18
+9E7101AA fcvtmu x10, d13
+9E7101FC fcvtmu x28, d15
+9E710030 fcvtmu x16, d1
+9E71018E fcvtmu x14, d12
+9E7103AE fcvtmu x14, d29
+9E71027E fcvtmu lr, d19
+9E710386 fcvtmu x6, d28
+9E71025F fcvtmu xzr, d18
+9E710068 fcvtmu x8, d3
+9E7103E6 fcvtmu x6, d31
+9E710000 fcvtmu x0, d0
+
+// FCVTMU_64H_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=10|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtmu64hFloat2int: FCVTMU  <Xd>, <Hn>
+// register fields: Rn, Rd
+9EF10070 fcvtmu x16, h3
+9EF10294 fcvtmu x20, h20
+9EF1012B fcvtmu x11, h9
+9EF101FA fcvtmu x26, h15
+9EF10377 fcvtmu x23, h27
+9EF1039D fcvtmu fp, h28
+9EF1038F fcvtmu x15, h28
+9EF1020C fcvtmu x12, h16
+9EF100BB fcvtmu x27, h5
+9EF1003D fcvtmu fp, h1
+9EF10058 fcvtmu x24, h2
+9EF101D6 fcvtmu x22, h14
+9EF10257 fcvtmu x23, h18
+9EF10284 fcvtmu x4, h20
+9EF10325 fcvtmu x5, h25
+9EF10029 fcvtmu x9, h1
+9EF10000 fcvtmu x0, h0
+9EF103FF fcvtmu xzr, h31
+
+// FCVTMU_64S_float2int sf=1|0|S=0|11110|ftype=00|1|rmode=10|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtmu64sFloat2int: FCVTMU  <Xd>, <Sn>
+// register fields: Rn, Rd
+9E31007F fcvtmu xzr, s3
+9E310317 fcvtmu x23, s24
+9E3102E9 fcvtmu x9, s23
+9E31005E fcvtmu lr, s2
+9E310167 fcvtmu x7, s11
+9E31021F fcvtmu xzr, s16
+9E310198 fcvtmu x24, s12
+9E310396 fcvtmu x22, s28
+9E3102CD fcvtmu x13, s22
+9E31038D fcvtmu x13, s28
+9E31039F fcvtmu xzr, s28
+9E31031F fcvtmu xzr, s24
+9E31018A fcvtmu x10, s12
+9E3103C1 fcvtmu x1, s30
+9E310033 fcvtmu x19, s1
+9E310060 fcvtmu x0, s3
+9E31001F fcvtmu xzr, s0
+9E3103FF fcvtmu xzr, s31

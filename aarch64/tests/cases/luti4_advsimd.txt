@@ -1,0 +1,22 @@
+// LUTI4_asimdtbl_L5 0|Q=1|001110|op2=01|0|Rm=xxxxx|0|len=x1|op=0|00|Rn=xxxxx|Rd=xxxxx
+// Luti4AsimdtblL5: LUTI4  <Vd>.16B, { <Vn>.16B }, <Vm>[<index>]
+// register fields: Rm, Rn, Rd
+4E402002 luti4 v2.16b, {v0.16b}, v0[0]
+4E402009 luti4 v9.16b, {v0.16b}, v0[0]
+4E402010 luti4 v16.16b, {v0.16b}, v0[0]
+4E5F63E0 luti4 v0.16b, {v31.16b}, v31[1]
+4E40201F luti4 v31.16b, {v0.16b}, v0[0]
+4E402000 luti4 v0.16b, {v0.16b}, v0[0]
+4E412043 luti4 v3.16b, {v2.16b}, v1[0]
+
+// LUTI4_asimdtbl_L7 0|Q=1|001110|op2=01|0|Rm=xxxxx|0|len=xx|op=1|00|Rn=xxxxx|Rd=xxxxx
+// Luti4AsimdtblL7: LUTI4  <Vd>.8H, { <Vn1>.8H, <Vn2>.8H }, <Vm>[<index>]
+// register fields: Rm, Rn, Rd
+4E401003 luti4 v3.8h, {v0.8h, v1.8h}, v0[0]
+4E40100A luti4 v10.8h, {v0.8h, v1.8h}, v0[0]
+4E401011 luti4 v17.8h, {v0.8h, v1.8h}, v0[0]
+4E5F33E0 luti4 v0.8h, {v31.8h, v0.8h}, v31[1]
+4E40501F luti4 v31.8h, {v0.8h, v1.8h}, v0[2]
+4E407003 luti4 v3.8h, {v0.8h, v1.8h}, v0[3]
+4E401000 luti4 v0.8h, {v0.8h, v1.8h}, v0[0]
+4E411043 luti4 v3.8h, {v2.8h, v3.8h}, v1[0]

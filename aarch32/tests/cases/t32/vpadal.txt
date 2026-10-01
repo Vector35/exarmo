@@ -1,0 +1,47 @@
+// VPADAL_T1_D 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|0110|op=x|Q=0|M=x|0|Vm=xxxx
+// VpadalT1D: VPADAL{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <dt>: size, op
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fff016a5 vpadal.u8 d17, d21
+ffb0160a vpadal.s8 d1, d10
+fff0d626 vpadal.s8 d29, d22
+fff4a682 vpadal.u16 d26, d2
+ffb436a8 vpadal.u16 d3, d24
+ffb836ae vpadal.u32 d3, d30
+ffb0168e vpadal.u8 d1, d14
+fff88607 vpadal.s32 d24, d7
+FFFC16A5 UNDEFINED
+FFF40620 vpadal.s16 d16, d16
+FFF0F6AF vpadal.u8 d31, d31
+FFF046A4 vpadal.u8 d20, d20
+FFF026A1 vpadal.u8 d18, d17
+FFFC1625 UNDEFINED
+FFB00680 vpadal.u8 d0, d0
+FFB0F68F vpadal.u8 d15, d15
+FFF006A0 vpadal.u8 d16, d16
+FFF016A5 [ne] vpadalne.u8 d17, d21
+
+// VPADAL_T1_Q 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|0110|op=x|Q=1|M=x|0|Vm=xxxx
+// VpadalT1Q: VPADAL{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <dt>: size, op
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+fff80646 vpadal.s32 q8, q3
+fff866e2 vpadal.u32 q11, q9
+ffb86648 vpadal.s32 q3, q4
+fff44642 vpadal.s16 q10, q1
+ffb0466c vpadal.s8 q2, q14
+ffb866e0 vpadal.u32 q3, q8
+fff8066a vpadal.s32 q8, q13
+ffb0e6e8 vpadal.u8 q7, q12
+FFFCF64F UNDEFINED
+FFF486C4 vpadal.u16 q12, q2
+FFF82640 vpadal.s32 q9, q0
+FFFC1641 UNDEFINED
+FFBCF6CF UNDEFINED
+FFB80646 vpadal.s32 q0, q3
+FFF8F66F UNDEFINED
+FFF80646 [ne] vpadalne.s32 q8, q3

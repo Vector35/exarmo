@@ -1,0 +1,48 @@
+// FMINNMP_asimdsame_only 0|Q=x|U=1|0|111|0|o1=1|sz=x|1|Rm=xxxxx|opcode=11000|1|Rn=xxxxx|Rd=xxxxx
+// FminnmpAsimdsameOnly: FMINNMP  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+2EBFC715 fminnmp v21.2s, v24.2s, v31.2s
+2EA4C646 fminnmp v6.2s, v18.2s, v4.2s
+6EB9C55C fminnmp v28.4s, v10.4s, v25.4s
+6EF0C7F4 fminnmp v20.2d, v31.2d, v16.2d
+6EFCC76F fminnmp v15.2d, v27.2d, v28.2d
+6EE8C588 fminnmp v8.2d, v12.2d, v8.2d
+6EBDC70E fminnmp v14.4s, v24.4s, v29.4s
+6EB7C64C fminnmp v12.4s, v18.4s, v23.4s
+6EFBC79E fminnmp v30.2d, v28.2d, v27.2d
+6EB5C59E fminnmp v30.4s, v12.4s, v21.4s
+6EB6C7BB fminnmp v27.4s, v29.4s, v22.4s
+6EFAC6AE fminnmp v14.2d, v21.2d, v26.2d
+6EF5C50D fminnmp v13.2d, v8.2d, v21.2d
+6EE3C48F fminnmp v15.2d, v4.2d, v3.2d
+6EE6C636 fminnmp v22.2d, v17.2d, v6.2d
+2EA7C408 fminnmp v8.2s, v0.2s, v7.2s
+2EA0C700 fminnmp v0.2s, v24.2s, v0.2s
+2EBFC71F fminnmp v31.2s, v24.2s, v31.2s
+2EFFC715 UNDEFINED
+2EBFC7F5 fminnmp v21.2s, v31.2s, v31.2s
+2EBFC718 fminnmp v24.2s, v24.2s, v31.2s
+
+// FMINNMP_asimdsamefp16_only 0|Q=x|U=1|0|111|0|a=1|10|Rm=xxxxx|00|opcode=000|1|Rn=xxxxx|Rd=xxxxx
+// FminnmpAsimdsamefp16Only: FMINNMP  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+2ED80758 fminnmp v24.4h, v26.4h, v24.4h
+2ECC0511 fminnmp v17.4h, v8.4h, v12.4h
+2ED605A0 fminnmp v0.4h, v13.4h, v22.4h
+2EC404EE fminnmp v14.4h, v7.4h, v4.4h
+6EC507F3 fminnmp v19.8h, v31.8h, v5.8h
+2ED60763 fminnmp v3.4h, v27.4h, v22.4h
+2ED705F7 fminnmp v23.4h, v15.4h, v23.4h
+6ECA060B fminnmp v11.8h, v16.8h, v10.8h
+6EDA05AA fminnmp v10.8h, v13.8h, v26.8h
+2EDB0603 fminnmp v3.4h, v16.4h, v27.4h
+2EC30540 fminnmp v0.4h, v10.4h, v3.4h
+2EC00656 fminnmp v22.4h, v18.4h, v0.4h
+6EC307F9 fminnmp v25.8h, v31.8h, v3.8h
+2EDF04A8 fminnmp v8.4h, v5.4h, v31.4h
+2ECA05E3 fminnmp v3.4h, v15.4h, v10.4h
+6EC20417 fminnmp v23.8h, v0.8h, v2.8h
+2ED8075F fminnmp v31.4h, v26.4h, v24.4h
+2ED80718 fminnmp v24.4h, v24.4h, v24.4h
+2ED8075A fminnmp v26.4h, v26.4h, v24.4h

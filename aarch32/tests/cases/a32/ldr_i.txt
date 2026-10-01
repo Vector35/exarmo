@@ -1,0 +1,93 @@
+// LDR_i_A1_off cond=xxxx|010|P=1|U=x|op2=0|W=0|op1=1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrIA1Off: LDR{<c>}{<q>}  <Rt>, [<Rn> {, #{<+/->}<imm>}]
+// register fields: Rn, Rt
+b51970ad ldrlt r7, [r9, #-173]
+e59eb856 ldr r11, [lr, #2134]
+9519366f ldrls r3, [r9, #-1647]
+d59124fd ldrle r2, [r1, #1277]
+6590d07c ldrvs sp, [r0, #124]
+75142527 ldrvc r2, [r4, #-1319]
+551417cd ldrpl r1, [r4, #-1997]
+851af6e6 ldrhi pc, [r10, #-1766]
+// Binary Ninja's tests
+e593603f ldr r6, [r3, #63]
+e5975000 ldr r5, [r7]
+05190FFF ldreq r0, [r9, #-0xfff]
+45199800 ldrmi r9, [r9, #-0x800]
+25197400 ldrcs r7, [r9, #-0x400]
+15197200 ldrne r7, [r9, #-0x200]
+B5197100 ldrlt r7, [r9, #-0x100]
+B5197080 ldrlt r7, [r9, #-0x80]
+B5197040 ldrlt r7, [r9, #-0x40]
+B5197020 ldrlt r7, [r9, #-0x20]
+B5197010 ldrlt r7, [r9, #-0x10]
+B5197008 ldrlt r7, [r9, #-0x8]
+B5197004 ldrlt r7, [r9, #-0x4]
+B5197002 ldrlt r7, [r9, #-0x2]
+B5197001 ldrlt r7, [r9, #-0x1]
+
+// LDR_i_A1_post cond=xxxx|010|P=0|U=x|op2=0|W=0|op1=1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// PopLdrIA1Post: POP{<c>}{<q>}  <single_register_list>
+// LdrIA1Post: LDR{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// read together by the POP alias: U, Rn, imm12
+// register fields: Rn, Rt
+// form chosen on: U, Rn, imm12
+849d9d80 ldrhi r9, [sp], #3456
+e4136da5 ldr r6, [r3], #-3493
+34917542 ldrlo r7, [r1], #1346
+c496409f ldrgt r4, [r6], #159
+84106ddc ldrhi r6, [r0], #-3548
+84976596 ldrhi r6, [r7], #1430
+041754c0 ldreq r5, [r7], #-1216
+b495ede4 ldrlt lr, [r5], #3556
+// Binary Ninja's tests
+e411301e ldr r3, [r1], #-30
+e4129000 ldr r9, [r2], #-0
+e492101e ldr r1, [r2], #30
+e49d7004 pop {r7}
+F49F9D80 reserved hint
+449D0FFF ldrmi r0, [sp], #0xfff
+249DF800 ldrcs pc, [sp], #0x800
+149DD400 ldrne sp, [sp], #0x400 (unpredictable)
+849D9200 ldrhi r9, [sp], #0x200
+849D9100 ldrhi r9, [sp], #0x100
+849D9080 ldrhi r9, [sp], #0x80
+849D9040 ldrhi r9, [sp], #0x40
+849D9020 ldrhi r9, [sp], #0x20
+849D9010 ldrhi r9, [sp], #0x10
+849D9008 ldrhi r9, [sp], #0x8
+849D9002 ldrhi r9, [sp], #0x2
+849D9001 ldrhi r9, [sp], #0x1
+84109000 ldrhi r9, [r0], #-0x0
+84109FFF ldrhi r9, [r0], #-0xfff
+84909000 ldrhi r9, [r0], #0x0
+84909FFF ldrhi r9, [r0], #0xfff
+E41D7004 ldr r7, [sp], #-0x4
+
+// LDR_i_A1_pre cond=xxxx|010|P=1|U=x|op2=0|W=1|op1=1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrIA1Pre: LDR{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn, Rt
+9539649e ldrls r6, [r9, #-1182]!
+65b4d987 ldrvs sp, [r4, #2439]!
+05be603b ldreq r6, [lr, #59]!
+b5b3df91 ldrlt sp, [r3, #3985]!
+c5b3d8b2 ldrgt sp, [r3, #2226]!
+65ba8e0f ldrvs r8, [r10, #3599]!
+9537d604 ldrls sp, [r7, #-1540]!
+353a695a ldrlo r6, [r10, #-2394]!
+// Binary Ninja's tests
+e5b42fff ldr r2, [r4, #4095]!
+F53F649E UNPREDICTABLE
+85300000 ldrhi r0, [r0, #-0x0]! (unpredictable)
+4539F800 ldrmi pc, [r9, #-0x800]!
+25399400 ldrcs r9, [r9, #-0x400]! (unpredictable)
+15396200 ldrne r6, [r9, #-0x200]!
+95396100 ldrls r6, [r9, #-0x100]!
+95396080 ldrls r6, [r9, #-0x80]!
+95396040 ldrls r6, [r9, #-0x40]!
+95396020 ldrls r6, [r9, #-0x20]!
+95396010 ldrls r6, [r9, #-0x10]!
+95396008 ldrls r6, [r9, #-0x8]!
+95396004 ldrls r6, [r9, #-0x4]!
+95396002 ldrls r6, [r9, #-0x2]!
+95396001 ldrls r6, [r9, #-0x1]!

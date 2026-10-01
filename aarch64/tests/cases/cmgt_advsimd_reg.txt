@@ -1,0 +1,48 @@
+// CMGT_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|0011|eq=0|1|Rn=xxxxx|Rd=xxxxx
+// CmgtAsimdsameOnly: CMGT  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4EB5361B cmgt v27.4s, v16.4s, v21.4s
+0EB53462 cmgt v2.2s, v3.2s, v21.2s
+0E743540 cmgt v0.4h, v10.4h, v20.4h
+4EF23741 cmgt v1.2d, v26.2d, v18.2d
+0E6E3632 cmgt v18.4h, v17.4h, v14.4h
+0E773653 cmgt v19.4h, v18.4h, v23.4h
+0EA035D6 cmgt v22.2s, v14.2s, v0.2s
+0E2735AF cmgt v15.8b, v13.8b, v7.8b
+4E3E34F3 cmgt v19.16b, v7.16b, v30.16b
+0E7F371E cmgt v30.4h, v24.4h, v31.4h
+0EB23560 cmgt v0.2s, v11.2s, v18.2s
+0E363473 cmgt v19.8b, v3.8b, v22.8b
+4EA13486 cmgt v6.4s, v4.4s, v1.4s
+4E74367D cmgt v29.8h, v19.8h, v20.8h
+4EFF35D4 cmgt v20.2d, v14.2d, v31.2d
+0E293524 cmgt v4.8b, v9.8b, v9.8b
+4EB5341F cmgt v31.4s, v0.4s, v21.4s
+4EB537FB cmgt v27.4s, v31.4s, v21.4s
+0EF5361B UNDEFINED
+4EB53615 cmgt v21.4s, v16.4s, v21.4s
+4EB53610 cmgt v16.4s, v16.4s, v21.4s
+
+// CMGT_asisdsame_only 01|U=0|1|111|0|size=11|1|Rm=xxxxx|0011|eq=0|1|Rn=xxxxx|Rd=xxxxx
+// CmgtAsisdsameOnly: CMGT  <d>, <n>, <m>
+// register fields: Rm, Rn, Rd
+5EF837E1 cmgt d1, d31, d24
+5EF93645 cmgt d5, d18, d25
+5EFD34DA cmgt d26, d6, d29
+5EE936C0 cmgt d0, d22, d9
+5EED341F cmgt d31, d0, d13
+5EF7356E cmgt d14, d11, d23
+5EFF36B8 cmgt d24, d21, d31
+5EE1353D cmgt d29, d9, d1
+5EE536B0 cmgt d16, d21, d5
+5EF63690 cmgt d16, d20, d22
+5EFC3520 cmgt d0, d9, d28
+5EE036AC cmgt d12, d21, d0
+5EF3357B cmgt d27, d11, d19
+5EF234B9 cmgt d25, d5, d18
+5EF634DF cmgt d31, d6, d22
+5EF035FB cmgt d27, d15, d16
+5EF83701 cmgt d1, d24, d24
+5EF837F8 cmgt d24, d31, d24
+5EF837FF cmgt d31, d31, d24

@@ -1,0 +1,62 @@
+// LDRB_32B_ldst_regoff size=00|111|VR=0|00|opc=01|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldrb32bLdstRegoff: LDRB  <Wt>, [<Xn|SP>, (<Wm>|<Xm>), <extend> {<amount>}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+3863E8A0 ldrb w0, [x5, x3, sxtx]
+3862F9C1 ldrb w1, [x14, x2, sxtx #0x0]
+387FC95F ldrb wzr, [x10, wzr, sxtw]
+387B4BD5 ldrb w21, [lr, w27, uxtw]
+3860DA11 ldrb w17, [x16, w0, sxtw #0x0]
+38674A22 ldrb w2, [x17, w7, uxtw]
+387D496D ldrb w13, [x11, w29, uxtw]
+387D4A9B ldrb w27, [x20, w29, uxtw]
+387B4BCB ldrb w11, [lr, w27, uxtw]
+3862D9DF ldrb wzr, [x14, w2, sxtw #0x0]
+387459D9 ldrb w25, [x14, w20, uxtw #0x0]
+386DE871 ldrb w17, [x3, x13, sxtx]
+38715ADC ldrb w28, [x22, w17, uxtw #0x0]
+387EE831 ldrb w17, [x1, lr, sxtx]
+3876DB9B ldrb w27, [x28, w22, sxtw #0x0]
+386D5A29 ldrb w9, [x17, w13, uxtw #0x0]
+3863E800 ldrb w0, [x0, x3, sxtx]
+3863EBE0 ldrb w0, [sp, x3, sxtx]
+386308A0 UNDEFINED
+386328A0 UNDEFINED
+386388A0 UNDEFINED
+3863A8A0 UNDEFINED
+386008A0 UNDEFINED
+386028A0 UNDEFINED
+386048A0 ldrb w0, [x5, w0, uxtw]
+386088A0 UNDEFINED
+3860A8A0 UNDEFINED
+3860E8A0 ldrb w0, [x5, x0, sxtx]
+387F08A0 UNDEFINED
+387F28A0 UNDEFINED
+387F48A0 ldrb w0, [x5, wzr, uxtw]
+387F88A0 UNDEFINED
+387FA8A0 UNDEFINED
+387FE8A0 ldrb w0, [x5, xzr, sxtx]
+3863E860 ldrb w0, [x3, x3, sxtx]
+
+// LDRB_32BL_ldst_regoff size=00|111|VR=0|00|opc=01|1|Rm=xxxxx|option=011|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldrb32blLdstRegoff: LDRB  <Wt>, [<Xn|SP>, <Xm>{, LSL <amount>}]
+// register fields: Rm, Rn, Rt
+387E7B04 ldrb w4, [x24, lr, lsl #0x0]
+387C6B8E ldrb w14, [x28, x28]
+387079FB ldrb w27, [x15, x16, lsl #0x0]
+38637AB5 ldrb w21, [x21, x3, lsl #0x0]
+38666B43 ldrb w3, [x26, x6]
+38766BAA ldrb w10, [fp, x22]
+3874785B ldrb w27, [x2, x20, lsl #0x0]
+38756BCE ldrb w14, [lr, x21]
+38786A08 ldrb w8, [x16, x24]
+386768E4 ldrb w4, [x7, x7]
+38666A04 ldrb w4, [x16, x6]
+38636AAB ldrb w11, [x21, x3]
+38736A20 ldrb w0, [x17, x19]
+386769F5 ldrb w21, [x15, x7]
+386D7AF4 ldrb w20, [x23, x13, lsl #0x0]
+387B6BC0 ldrb w0, [lr, x27]
+3860781F ldrb wzr, [x0, x0, lsl #0x0]
+387F7BE4 ldrb w4, [sp, xzr, lsl #0x0]
+387E7B1E ldrb w30, [x24, lr, lsl #0x0]

@@ -1,0 +1,18 @@
+// QSUB16_T1 111|11010|1|op1=101|Rn=xxxx|1111|Rd=xxxx|0|U=0|H=0|S=1|Rm=xxxx
+// Qsub16T1: QSUB16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fad1f916 qsub16 r9, r1, r6
+fadffe19 qsub16 lr, pc, r9 (unpredictable)
+fad9fe13 qsub16 lr, r9, r3
+fad1f618 qsub16 r6, r1, r8
+fadafd18 qsub16 sp, r10, r8
+fad8f41a qsub16 r4, r8, r10
+fad8f915 qsub16 r9, r8, r5
+faddfb12 qsub16 r11, sp, r2
+FAD0F010 qsub16 r0, r0, r0
+FAD1FF1F qsub16 pc, r1, pc (unpredictable)
+FAD1F116 qsub16 r1, r1, r6
+FAD1F911 qsub16 r9, r1, r1
+FAD1F919 qsub16 r9, r1, r9
+FAD1F916 [ne] qsub16ne r9, r1, r6

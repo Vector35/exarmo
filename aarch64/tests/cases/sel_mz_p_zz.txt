@@ -1,0 +1,29 @@
+// sel_mz_p_zz_2 1|10|0000|1|size=xx|1|Zm=xxxx|0|100|PNv=xxx|Zn=xxxx|0|Zd=xxxx|0
+// SelMzPZz2: SEL  { <Zd1>.<T>-<Zd2>.<T> }, <PNv>, { <Zn1>.<T>-<Zn2>.<T> }, { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Zm, PNv, Zn, Zd
+C1208008 sel {z8.b-z9.b}, pn8, {z0.b-z1.b}, {z0.b-z1.b}
+C1208016 sel {z22.b-z23.b}, pn8, {z0.b-z1.b}, {z0.b-z1.b}
+C1208040 sel {z0.b-z1.b}, pn8, {z2.b-z3.b}, {z0.b-z1.b}
+C17E87DE sel {z30.h-z31.h}, pn9, {z30.h-z31.h}, {z30.h-z31.h}
+C1A08808 sel {z8.s-z9.s}, pn10, {z0.s-z1.s}, {z0.s-z1.s}
+C1E08C08 sel {z8.d-z9.d}, pn11, {z0.d-z1.d}, {z0.d-z1.d}
+C1209008 sel {z8.b-z9.b}, pn12, {z0.b-z1.b}, {z0.b-z1.b}
+C1209408 sel {z8.b-z9.b}, pn13, {z0.b-z1.b}, {z0.b-z1.b}
+C1209808 sel {z8.b-z9.b}, pn14, {z0.b-z1.b}, {z0.b-z1.b}
+C1209C08 sel {z8.b-z9.b}, pn15, {z0.b-z1.b}, {z0.b-z1.b}
+C12288C8 sel {z8.b-z9.b}, pn10, {z6.b-z7.b}, {z2.b-z3.b}
+
+// sel_mz_p_zz_4 1|10|0000|1|size=xx|1|Zm=xxx|01|100|PNv=xxx|Zn=xxx|00|Zd=xxx|00
+// SelMzPZz4: SEL  { <Zd1>.<T>-<Zd4>.<T> }, <PNv>, { <Zn1>.<T>-<Zn4>.<T> }, { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Zm, PNv, Zn, Zd
+C1218014 sel {z20.b-z23.b}, pn8, {z0.b-z3.b}, {z0.b-z3.b}
+C1218084 sel {z4.b-z7.b}, pn8, {z4.b-z7.b}, {z0.b-z3.b}
+C1218110 sel {z16.b-z19.b}, pn8, {z8.b-z11.b}, {z0.b-z3.b}
+C1658580 sel {z0.h-z3.h}, pn9, {z12.h-z15.h}, {z4.h-z7.h}
+C1A98A08 sel {z8.s-z11.s}, pn10, {z16.s-z19.s}, {z8.s-z11.s}
+C1ED8E8C sel {z12.d-z15.d}, pn11, {z20.d-z23.d}, {z12.d-z15.d}
+C1319318 sel {z24.b-z27.b}, pn12, {z24.b-z27.b}, {z16.b-z19.b}
+C135979C sel {z28.b-z31.b}, pn13, {z28.b-z31.b}, {z20.b-z23.b}
+C1399814 sel {z20.b-z23.b}, pn14, {z0.b-z3.b}, {z24.b-z27.b}
+C13D9C14 sel {z20.b-z23.b}, pn15, {z0.b-z3.b}, {z28.b-z31.b}
+C1258990 sel {z16.b-z19.b}, pn10, {z12.b-z15.b}, {z4.b-z7.b}

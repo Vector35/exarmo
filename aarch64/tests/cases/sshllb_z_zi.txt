@@ -1,0 +1,70 @@
+// sshllb_z_zi_ 010|0010|1|0|tszh=x|0|tszl=xx|imm3=xxx|10|10|U=0|T=0|Zn=xxxxx|Zd=xxxxx
+// SshllbZZi: SSHLLB  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+450CA08C sshllb z12.h, z4.b, #0x4
+4556A2F0 sshllb z16.d, z23.s, #0x16
+451EA17C sshllb z28.s, z11.h, #0xe
+4518A0D4 sshllb z20.s, z6.h, #0x8
+4516A175 sshllb z21.s, z11.h, #0x6
+455BA2BA sshllb z26.d, z21.s, #0x1b
+451EA239 sshllb z25.s, z17.h, #0xe
+450CA281 sshllb z1.h, z20.b, #0x4
+4541A000 sshllb z0.d, z0.s, #0x1
+450AA3FF sshllb z31.h, z31.b, #0x2
+450DA08C sshllb z12.h, z4.b, #0x5
+450FA08C sshllb z12.h, z4.b, #0x7
+4500A08C UNDEFINED
+4501A08C UNDEFINED
+4502A08C UNDEFINED
+4503A08C UNDEFINED
+4504A08C UNDEFINED
+4505A08C UNDEFINED
+4506A08C UNDEFINED
+4507A08C UNDEFINED
+4508A08C sshllb z12.h, z4.b, #0x0
+4509A08C sshllb z12.h, z4.b, #0x1
+450BA08C sshllb z12.h, z4.b, #0x3
+450EA08C sshllb z12.h, z4.b, #0x6
+4510A08C sshllb z12.s, z4.h, #0x0
+4511A08C sshllb z12.s, z4.h, #0x1
+4512A08C sshllb z12.s, z4.h, #0x2
+4513A08C sshllb z12.s, z4.h, #0x3
+4514A08C sshllb z12.s, z4.h, #0x4
+4515A08C sshllb z12.s, z4.h, #0x5
+4517A08C sshllb z12.s, z4.h, #0x7
+4519A08C sshllb z12.s, z4.h, #0x9
+451AA08C sshllb z12.s, z4.h, #0xa
+451BA08C sshllb z12.s, z4.h, #0xb
+451CA08C sshllb z12.s, z4.h, #0xc
+451DA08C sshllb z12.s, z4.h, #0xd
+451FA08C sshllb z12.s, z4.h, #0xf
+4540A08C sshllb z12.d, z4.s, #0x0
+4542A08C sshllb z12.d, z4.s, #0x2
+4543A08C sshllb z12.d, z4.s, #0x3
+4544A08C sshllb z12.d, z4.s, #0x4
+4545A08C sshllb z12.d, z4.s, #0x5
+4546A08C sshllb z12.d, z4.s, #0x6
+4547A08C sshllb z12.d, z4.s, #0x7
+4548A08C sshllb z12.d, z4.s, #0x8
+4549A08C sshllb z12.d, z4.s, #0x9
+454AA08C sshllb z12.d, z4.s, #0xa
+454BA08C sshllb z12.d, z4.s, #0xb
+454CA08C sshllb z12.d, z4.s, #0xc
+454DA08C sshllb z12.d, z4.s, #0xd
+454EA08C sshllb z12.d, z4.s, #0xe
+454FA08C sshllb z12.d, z4.s, #0xf
+4550A08C sshllb z12.d, z4.s, #0x10
+4551A08C sshllb z12.d, z4.s, #0x11
+4552A08C sshllb z12.d, z4.s, #0x12
+4553A08C sshllb z12.d, z4.s, #0x13
+4554A08C sshllb z12.d, z4.s, #0x14
+4555A08C sshllb z12.d, z4.s, #0x15
+4557A08C sshllb z12.d, z4.s, #0x17
+4558A08C sshllb z12.d, z4.s, #0x18
+4559A08C sshllb z12.d, z4.s, #0x19
+455AA08C sshllb z12.d, z4.s, #0x1a
+455CA08C sshllb z12.d, z4.s, #0x1c
+455DA08C sshllb z12.d, z4.s, #0x1d
+455EA08C sshllb z12.d, z4.s, #0x1e
+455FA08C sshllb z12.d, z4.s, #0x1f

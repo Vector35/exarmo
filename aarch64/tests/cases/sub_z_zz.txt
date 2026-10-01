@@ -1,0 +1,23 @@
+// sub_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|000|opc=001|Zn=xxxxx|Zd=xxxxx
+// SubZZz: SUB  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+04A50715 sub z21.s, z24.s, z5.s
+04F10460 sub z0.d, z3.d, z17.d
+043D04DB sub z27.b, z6.b, z29.b
+046C057E sub z30.h, z11.h, z12.h
+043B04B4 sub z20.b, z5.b, z27.b
+04BA05E5 sub z5.s, z15.s, z26.s
+047D0656 sub z22.h, z18.h, z29.h
+04A00550 sub z16.s, z10.s, z0.s
+0470059A sub z26.h, z12.h, z16.h
+04A405A0 sub z0.s, z13.s, z4.s
+047A0583 sub z3.h, z12.h, z26.h
+04E606DE sub z30.d, z22.d, z6.d
+04EA0537 sub z23.d, z9.d, z10.d
+046D04D2 sub z18.h, z6.h, z13.h
+04FC0762 sub z2.d, z27.d, z28.d
+04E7076D sub z13.d, z27.d, z7.d
+04BF041F sub z31.s, z0.s, z31.s
+04A507F5 sub z21.s, z31.s, z5.s
+04A504B5 sub z21.s, z5.s, z5.s
+04A50718 sub z24.s, z24.s, z5.s

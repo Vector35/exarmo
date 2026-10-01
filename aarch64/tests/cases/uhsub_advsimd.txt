@@ -1,0 +1,25 @@
+// UHSUB_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|opcode=00100|1|Rn=xxxxx|Rd=xxxxx
+// UhsubAsimdsameOnly: UHSUB  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E31242A uhsub v10.16b, v1.16b, v17.16b
+2EAB266A uhsub v10.2s, v19.2s, v11.2s
+2EAF244F uhsub v15.2s, v2.2s, v15.2s
+6E3B26AC uhsub v12.16b, v21.16b, v27.16b
+2E30241E uhsub v30.8b, v0.8b, v16.8b
+6E6726E3 uhsub v3.8h, v23.8h, v7.8h
+6E6225B0 uhsub v16.8h, v13.8h, v2.8h
+2EA026A6 uhsub v6.2s, v21.2s, v0.2s
+2E322555 uhsub v21.8b, v10.8b, v18.8b
+2E3D25F0 uhsub v16.8b, v15.8b, v29.8b
+2E642633 uhsub v19.4h, v17.4h, v4.4h
+2EAC2450 uhsub v16.2s, v2.2s, v12.2s
+2E66263A uhsub v26.4h, v17.4h, v6.4h
+2E69260C uhsub v12.4h, v16.4h, v9.4h
+6EB025C5 uhsub v5.4s, v14.4s, v16.4s
+6EBE25AA uhsub v10.4s, v13.4s, v30.4s
+6E3F27E0 uhsub v0.16b, v31.16b, v31.16b
+6E31243F uhsub v31.16b, v1.16b, v17.16b
+6EF1242A UNDEFINED
+2EF1242A UNDEFINED
+6E312421 uhsub v1.16b, v1.16b, v17.16b

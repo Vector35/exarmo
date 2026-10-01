@@ -1,0 +1,27 @@
+// UADDL_asimddiff_L 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|00|o1=0|0|00|Rn=xxxxx|Rd=xxxxx
+// UaddlAsimddiffL: UADDL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// UaddlAsimddiffL2: UADDL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+2E3602CD uaddl v13.8h, v22.8b, v22.8b
+2E7800FE uaddl v30.4s, v7.4h, v24.4h
+2EB8024E uaddl v14.2d, v18.2s, v24.2s
+6EAD0179 uaddl2 v25.2d, v11.4s, v13.4s
+6EAD039F uaddl2 v31.2d, v28.4s, v13.4s
+6EB50094 uaddl2 v20.2d, v4.4s, v21.4s
+6EA9016C uaddl2 v12.2d, v11.4s, v9.4s
+6E7D0149 uaddl2 v9.4s, v10.8h, v29.8h
+2E2000E8 uaddl v8.8h, v7.8b, v0.8b
+6EB900ED uaddl2 v13.2d, v7.4s, v25.4s
+6EB9035B uaddl2 v27.2d, v26.4s, v25.4s
+6EA90088 uaddl2 v8.2d, v4.4s, v9.4s
+6E75011D uaddl2 v29.4s, v8.8h, v21.8h
+2E2C03FD uaddl v29.8h, v31.8b, v12.8b
+2E7702D8 uaddl v24.4s, v22.4h, v23.4h
+6EA5000D uaddl2 v13.2d, v0.4s, v5.4s
+2E3F02C0 uaddl v0.8h, v22.8b, v31.8b
+2EF602CD UNDEFINED
+6E3602D6 uaddl2 v22.8h, v22.16b, v22.16b
+6EF602CD UNDEFINED
+2E3602D6 uaddl v22.8h, v22.8b, v22.8b

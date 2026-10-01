@@ -1,0 +1,44 @@
+// sel_z_p_zz_ 000|0010|1|size=xx|1|Zm=xxxxx|11|Pv=xxxx|Zn=xxxxx|Zd=xxxxx
+// SelZPZz: SEL  <Zd>.<T>, <Pv>, <Zn>.<T>, <Zm>.<T>
+// MovZPZSelZPZz: MOV  <Zd>.<T>, <Pv>/M, <Zn>.<T>
+// read together by the MOV alias: Zm, Zd
+// register fields: Zm, Pv, Zn, Zd
+// form chosen on: Zm, Zd
+05F7E857 mov z23.d, p10/m, z2.d
+0529EA29 mov z9.b, p10/m, z17.b
+0569F3E9 mov z9.h, p12/m, z31.h
+05BACD9A mov z26.s, p3/m, z12.s
+0578EB78 mov z24.h, p10/m, z27.h
+0527E307 mov z7.b, p8/m, z24.b
+0529F7A9 mov z9.b, p13/m, z29.b
+057EE79E mov z30.h, p9/m, z28.h
+052CD22C mov z12.b, p4/m, z17.b
+0567D987 mov z7.h, p6/m, z12.h
+05A4E244 mov z4.s, p8/m, z18.s
+05EDD88D mov z13.d, p6/m, z4.d
+05F5FE35 mov z21.d, p15/m, z17.d
+05B3DD53 mov z19.s, p7/m, z10.s
+05B1ECD1 mov z17.s, p11/m, z6.s
+05E0C1C0 mov z0.d, p0/m, z14.d
+05B7F912 sel z18.s, p14, z8.s, z23.s
+052AD5B8 sel z24.b, p5, z13.b, z10.b
+05A3D316 sel z22.s, p4, z24.s, z3.s
+0527CA9E sel z30.b, p2, z20.b, z7.b
+0526CA35 sel z21.b, p2, z17.b, z6.b
+05E9E017 sel z23.d, p8, z0.d, z9.d
+0520E2BE sel z30.b, p8, z21.b, z0.b
+05BAEA74 sel z20.s, p10, z19.s, z26.s
+05A0D630 sel z16.s, p5, z17.s, z0.s
+05FDE675 sel z21.d, p9, z19.d, z29.d
+05FEEED4 sel z20.d, p11, z22.d, z30.d
+05E6C771 sel z17.d, p1, z27.d, z6.d
+0530D0AF sel z15.b, p4, z5.b, z16.b
+053CC375 sel z21.b, p0, z27.b, z28.b
+0537FA50 sel z16.b, p14, z18.b, z23.b
+05AFC527 sel z7.s, p1, z9.s, z15.s
+05FFE85F mov z31.d, p10/m, z2.d
+05E0E95F sel z31.d, p10, z10.d, z0.d
+05FFE840 sel z0.d, p10, z2.d, z31.d
+05F7EAF7 mov z23.d, p10/m, z23.d
+05F7E842 sel z2.d, p10, z2.d, z23.d
+0523E307 sel z7.b, p8, z24.b, z3.b

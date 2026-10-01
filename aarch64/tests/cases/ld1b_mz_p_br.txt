@@ -1,0 +1,30 @@
+// ld1b_mz_p_br_2 1|01|0000|00|00|Rm=xxxxx|0|msz=00|PNg=xxx|Rn=xxxxx|Zt=xxxx|N=0
+// Ld1bMzPBr2: LD1B  { <Zt1>.B-<Zt2>.B }, <PNg>/Z, [<Xn|SP>, <Xm>]
+// register fields: Rm, PNg, Rn, Zt
+A0000008 ld1b {z8.b-z9.b}, pn8/z, [x0, x0]
+A0000016 ld1b {z22.b-z23.b}, pn8/z, [x0, x0]
+A0000024 ld1b {z4.b-z5.b}, pn8/z, [x1, x0]
+A01F07E0 ld1b {z0.b-z1.b}, pn9/z, [sp, xzr]
+A000081E ld1b {z30.b-z31.b}, pn10/z, [x0, x0]
+A0000C08 ld1b {z8.b-z9.b}, pn11/z, [x0, x0]
+A0001008 ld1b {z8.b-z9.b}, pn12/z, [x0, x0]
+A0001408 ld1b {z8.b-z9.b}, pn13/z, [x0, x0]
+A0001808 ld1b {z8.b-z9.b}, pn14/z, [x0, x0]
+A0001C08 ld1b {z8.b-z9.b}, pn15/z, [x0, x0]
+A0000000 ld1b {z0.b-z1.b}, pn8/z, [x0, x0]
+A0010868 ld1b {z8.b-z9.b}, pn10/z, [x3, x1]
+
+// ld1b_mz_p_br_4 1|01|0000|00|00|Rm=xxxxx|1|msz=00|PNg=xxx|Rn=xxxxx|Zt=xxx|0|N=0
+// Ld1bMzPBr4: LD1B  { <Zt1>.B-<Zt4>.B }, <PNg>/Z, [<Xn|SP>, <Xm>]
+// register fields: Rm, PNg, Rn, Zt
+A0008000 ld1b {z0.b-z3.b}, pn8/z, [x0, x0]
+A000801C ld1b {z28.b-z31.b}, pn8/z, [x0, x0]
+A0008038 ld1b {z24.b-z27.b}, pn8/z, [x1, x0]
+A01F87E4 ld1b {z4.b-z7.b}, pn9/z, [sp, xzr]
+A0008808 ld1b {z8.b-z11.b}, pn10/z, [x0, x0]
+A0008C0C ld1b {z12.b-z15.b}, pn11/z, [x0, x0]
+A0009010 ld1b {z16.b-z19.b}, pn12/z, [x0, x0]
+A0009414 ld1b {z20.b-z23.b}, pn13/z, [x0, x0]
+A0009800 ld1b {z0.b-z3.b}, pn14/z, [x0, x0]
+A0009C00 ld1b {z0.b-z3.b}, pn15/z, [x0, x0]
+A0018870 ld1b {z16.b-z19.b}, pn10/z, [x3, x1]

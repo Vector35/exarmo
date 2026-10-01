@@ -1,0 +1,69 @@
+// VNMLA_A1_D cond=xxxx|1110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=1|M=x|0|Vm=xxxx
+// VnmlaA1D: VNMLA{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+ce561b47 vnmlagt.f64 d17, d6, d7
+ee56fb4a vnmla.f64 d31, d6, d10
+de148b43 vnmlale.f64 d8, d4, d3
+2e518b40 vnmlahs.f64 d24, d1, d0
+8e544b47 vnmlahi.f64 d20, d4, d7
+0e1d9be5 vnmlaeq.f64 d9, d29, d21
+4e5d2b47 vnmlami.f64 d18, d13, d7
+4e1dfbec vnmlami.f64 d15, d29, d28
+// Binary Ninja's tests
+ee520be1 vnmla.f64 d16, d18, d17
+FE561B47 UNALLOCATED
+1E100B4F vnmlane.f64 d0, d0, d15
+CE5F1B48 vnmlagt.f64 d17, d15, d8
+CE581B44 vnmlagt.f64 d17, d8, d4
+CE501B42 vnmlagt.f64 d17, d0, d2
+CE501BCF vnmlagt.f64 d17, d16, d15
+CE5F1B60 vnmlagt.f64 d17, d15, d16
+CE5F1BEF vnmlagt.f64 d17, d31, d31
+
+// VNMLA_A1_H cond=xxxx|1110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=1|M=x|0|Vm=xxxx
+// VnmlaA1H: VNMLA{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+9e51a9e4 vnmlals.f16 s21, s3, s9 (unpredictable)
+9e5209e0 vnmlals.f16 s1, s5, s1 (unpredictable)
+de5599c4 vnmlale.f16 s19, s11, s8 (unpredictable)
+0e10e9c1 vnmlaeq.f16 s28, s1, s2 (unpredictable)
+2e5f396e vnmlahs.f16 s7, s30, s29 (unpredictable)
+ae57c945 vnmlage.f16 s25, s14, s10 (unpredictable)
+be1c59cd vnmlalt.f16 s10, s25, s26 (unpredictable)
+0e17b941 vnmlaeq.f16 s22, s14, s2 (unpredictable)
+FE51A9E4 UNALLOCATED
+8E58F9EF vnmlahi.f16 s31, s17, s31 (unpredictable)
+4E5489E8 vnmlami.f16 s17, s9, s17 (unpredictable)
+1E504962 vnmlane.f16 s9, s0, s5 (unpredictable)
+9E5F29C0 vnmlals.f16 s5, s31, s0 (unpredictable)
+9E5119CF vnmlals.f16 s3, s3, s30 (unpredictable)
+9E1109EF vnmlals.f16 s0, s3, s31 (unpredictable)
+9E11F9E4 vnmlals.f16 s30, s3, s9 (unpredictable)
+9E51F9E4 vnmlals.f16 s31, s3, s9 (unpredictable)
+
+// VNMLA_A1_S cond=xxxx|1110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=1|M=x|0|Vm=xxxx
+// VnmlaA1S: VNMLA{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+2e1e3ace vnmlahs.f32 s6, s29, s28
+de1eaa42 vnmlale.f32 s20, s28, s4
+5e1f1a6b vnmlapl.f32 s2, s30, s23
+3e157a48 vnmlalo.f32 s14, s10, s16
+2e507ae4 vnmlahs.f32 s15, s1, s9
+0e13aae4 vnmlaeq.f32 s20, s7, s9
+ee120a6b vnmla.f32 s0, s4, s23
+be1fca63 vnmlalt.f32 s24, s30, s7
+// Binary Ninja's tests
+ee510a40 vnmla.f32 s1, s2, s0
+FE1E3ACE UNALLOCATED
+8E18FACF vnmlahi.f32 s30, s17, s30
+4E148AC1 vnmlami.f32 s16, s9, s2
+1E104A4F vnmlane.f32 s8, s0, s30
+2E1F2AE0 vnmlacs.f32 s4, s31, s1
+2E1EFAEF vnmlacs.f32 s30, s29, s31
+2E5EFACE vnmlacs.f32 s31, s29, s28

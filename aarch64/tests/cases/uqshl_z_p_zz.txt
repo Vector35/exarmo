@@ -1,0 +1,16 @@
+// uqshl_z_p_zz_ 010|0010|0|size=xx|0|0|Q=1|R=0|N=0|U=1|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UqshlZPZz: UQSHL  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+44C9994B uqshl z11.d, p6/m, z11.d, z10.d
+448987D1 uqshl z17.s, p1/m, z17.s, z30.s
+440997B4 uqshl z20.b, p5/m, z20.b, z29.b
+44498B7E uqshl z30.h, p2/m, z30.h, z27.h
+44C98336 uqshl z22.d, p0/m, z22.d, z25.d
+4409944A uqshl z10.b, p5/m, z10.b, z2.b
+44899AA3 uqshl z3.s, p6/m, z3.s, z21.s
+4409977C uqshl z28.b, p5/m, z28.b, z27.b
+44C98C00 uqshl z0.d, p3/m, z0.d, z0.d
+44C993FF uqshl z31.d, p4/m, z31.d, z31.d
+44C99D4B uqshl z11.d, p7/m, z11.d, z10.d
+44C998CB uqshl z11.d, p6/m, z11.d, z6.d
+44C99946 uqshl z6.d, p6/m, z6.d, z10.d

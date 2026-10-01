@@ -1,0 +1,42 @@
+// VMIN_f_A1_D 1111001|U=0|0|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VminFA1D: VMIN{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f221df27 vmin.f32 d13, d1, d23
+f22b0f08 vmin.f32 d0, d11, d8
+f2214f0f vmin.f32 d4, d1, d15
+f27fbf86 vmin.f16 d27, d31, d6
+f264afa2 vmin.f32 d26, d20, d18
+f23dbf8e vmin.f16 d11, d29, d14
+f23bdf85 vmin.f16 d13, d27, d5
+f222bfa9 vmin.f32 d11, d18, d25
+F220FF20 vmin.f32 d15, d0, d16
+F2288F24 vmin.f32 d8, d8, d20
+F2202F21 vmin.f32 d2, d0, d17
+F2201F80 vmin.f32 d1, d16, d0
+F22FFF20 vmin.f32 d15, d15, d16
+F2610F2F vmin.f32 d16, d1, d31
+F261FF27 vmin.f32 d31, d1, d23
+
+// VMIN_f_A1_Q 1111001|U=0|0|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VminFA1Q: VMIN{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f23a8f6a vmin.f16 q4, q5, q13
+f2784fc4 vmin.f16 q10, q12, q2
+f22c8f6e vmin.f32 q4, q6, q15
+f2604f42 vmin.f32 q10, q0, q1
+f2366fe2 vmin.f16 q3, q11, q9
+f23e6f6c vmin.f16 q3, q7, q14
+f2766fe6 vmin.f16 q11, q11, q11
+f2382fe6 vmin.f16 q1, q12, q11
+F23FFF6F UNDEFINED
+F2340F60 vmin.f16 q0, q2, q8
+F2320F68 vmin.f16 q0, q1, q12
+F2311F61 UNDEFINED
+F23FFF4F UNDEFINED
+F2700FC0 vmin.f16 q8, q8, q0
+F27FFFEF UNDEFINED
+F23A8F60 vmin.f16 q4, q5, q8

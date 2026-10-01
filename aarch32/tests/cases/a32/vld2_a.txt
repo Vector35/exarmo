@@ -1,0 +1,55 @@
+// VLD2_a_A1_nowb 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=01|size=xx|T=x|a=x|Rm=1111
+// Vld2AA1Nowb: VLD2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// read together by <align>: size, a
+// register fields: Rn
+f4a2cd6f vld2.16 {d12[], d14[]}, [r2]
+f4ecbdbf vld2.32 {d27[], d29[]}, [r12:64]
+f4e9ad1f vld2.8 {d26[], d27[]}, [r9:16]
+f4e27d1f vld2.8 {d23[], d24[]}, [r2:16]
+f4a4ad8f vld2.32 {d10[], d11[]}, [r4]
+f4af0d5f vld2.16 {d0[], d1[]}, [pc:32] (unpredictable)
+F4A0FD2F vld2.8 {d15[], d17[]}, [r0]
+F4A28D6F vld2.16 {d8[], d10[]}, [r2]
+F4A24D6F vld2.16 {d4[], d6[]}, [r2]
+F4A22D6F vld2.16 {d2[], d4[]}, [r2]
+F4A21D6F vld2.16 {d1[], d3[]}, [r2]
+F4A2CDEF UNDEFINED
+F4A2CDFF UNDEFINED
+
+// VLD2_a_A1_posti 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=01|size=xx|T=x|a=x|Rm=1101
+// Vld2AA1Posti: VLD2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// read together by <align>: size, a
+// register fields: Rn
+f4e12d5d vld2.16 {d18[], d19[]}, [r1:32]!
+f4efdd5d vld2.16 {d29[], d30[]}, [pc:32]! (unpredictable)
+f4ae1d8d vld2.32 {d1[], d2[]}, [lr]!
+f4e9cdbd vld2.32 {d28[], d30[]}, [r9:64]!
+f4a32d5d vld2.16 {d2[], d3[]}, [r3:32]!
+f4aa4d3d vld2.8 {d4[], d6[]}, [r10:16]!
+f4a93d6d vld2.16 {d3[], d5[]}, [r9]!
+F4E00D0D vld2.8 {d16[], d17[]}, [r0]!
+F4E1FD5D UNPREDICTABLE
+F4E18D5D vld2.16 {d24[], d25[]}, [r1:32]!
+F4E12DDD UNDEFINED
+F4E12DCD UNDEFINED
+F4AEFD8D vld2.32 {d15[], d16[]}, [lr]!
+
+// VLD2_a_A1_postr 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=01|size=xx|T=x|a=x|Rm=xxxx
+// Vld2AA1Postr: VLD2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// read together by <align>: size, a
+// register fields: Rn, Rm
+f4a11d89 vld2.32 {d1[], d2[]}, [r1], r9
+f4ebad53 vld2.16 {d26[], d27[]}, [r11:32], r3
+f4a3bd5c vld2.16 {d11[], d12[]}, [r3:32], r12
+f4e42d13 vld2.8 {d18[], d19[]}, [r4:16], r3
+f4ad7daa vld2.32 {d7[], d9[]}, [sp], r10
+f4a51d19 vld2.8 {d1[], d2[]}, [r5:16], r9
+f4a73db6 vld2.32 {d3[], d5[]}, [r7:64], r6
+f4ab5d59 vld2.16 {d5[], d6[]}, [r11:32], r9
+F4A00D00 vld2.8 {d0[], d1[]}, [r0], r0
+F4AFFD49 vld2.16 {d15[], d16[]}, [pc], r9 (unpredictable)
+F4A18D81 vld2.32 {d8[], d9[]}, [r1], r1
+F4A14D89 vld2.32 {d4[], d5[]}, [r1], r9
+F4A11DCF UNDEFINED
+F4A11DC9 UNDEFINED
+F4A11DD9 UNDEFINED

@@ -1,0 +1,47 @@
+// LDR_l_T1 01001|Rt=xxx|imm8=xxxxxxxx
+// LdrLT1: LDR{<c>}{<q>}  <Rt>, <label>
+// register fields: Rt
+// IT state read: condition
+4800 ldr r0, 0x10004
+4801 ldr r0, 0x10008
+4802 ldr r0, 0x1000c
+4803 ldr r0, 0x10010
+4804 ldr r0, 0x10014
+4805 ldr r0, 0x10018
+4806 ldr r0, 0x1001c
+4807 ldr r0, 0x10020
+49FF ldr r1, 0x10400
+4A80 ldr r2, 0x10204
+4B40 ldr r3, 0x10104
+4C20 ldr r4, 0x10084
+4D10 ldr r5, 0x10044
+4E08 ldr r6, 0x10024
+4F00 ldr r7, 0x10004
+4800 [ne] ldrne r0, 0x10004
+
+// LDR_l_T2 111|1100|0|U=x|size=10|L=1|1111|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrLT2: LDR{<c>}.W  <Rt>, <label>
+// register fields: Rt
+// IT state read: condition, last in block
+f8df3c9c ldr r3, 0x10ca0
+f85fe902 ldr lr, 0xf702
+f85f81b9 ldr r8, 0xfe4b
+f85ffb4d ldr pc, 0xf4b7
+f8df44c2 ldr r4, 0x104c6
+f85fbf3f ldr r11, 0xf0c5
+F8DF0000 ldr r0, 0x10004
+F8DF3FFF ldr r3, 0x11003
+F8DF3800 ldr r3, 0x10804
+F8DF3400 ldr r3, 0x10404
+F8DF3200 ldr r3, 0x10204
+F8DF3100 ldr r3, 0x10104
+F8DF3080 ldr r3, 0x10084
+F8DF3040 ldr r3, 0x10044
+F8DF3020 ldr r3, 0x10024
+F8DF3010 ldr r3, 0x10014
+F8DF3008 ldr r3, 0x1000c
+F8DF3004 ldr r3, 0x10008
+F8DF3002 ldr r3, 0x10006
+F8DF3001 ldr r3, 0x10005
+F8DF3C9C [ne] ldrne r3, 0x10ca0
+F8DF3C9C [ne last] ldrne r3, 0x10ca0

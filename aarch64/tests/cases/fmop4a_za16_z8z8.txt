@@ -1,0 +1,52 @@
+// fmop4a_za16_z8z8_b1x1 1|00|0000|0|00|1|M=0|Zm=xxx|0|0|00000|N=0|Zn=xxx|0|01|0|0|ZAda=x
+// Fmop4aZa16Z8z8B1x1: FMOP4A  <ZAda>.H, <Zn>.B, <Zm>.B
+// register fields: Zm, Zn, ZAda
+80200089 fmop4a za1.h, z4.b, z16.b
+802000C8 fmop4a za0.h, z6.b, z16.b
+80220149 fmop4a za1.h, z10.b, z18.b
+80240009 fmop4a za1.h, z0.b, z20.b
+80260049 fmop4a za1.h, z2.b, z22.b
+80280109 fmop4a za1.h, z8.b, z24.b
+802A0189 fmop4a za1.h, z12.b, z26.b
+802C01C9 fmop4a za1.h, z14.b, z28.b
+802E0089 fmop4a za1.h, z4.b, z30.b
+
+// fmop4a_za16_z8z8_b1x2 1|00|0000|0|00|1|M=1|Zm=xxx|0|0|00000|N=0|Zn=xxx|0|01|0|0|ZAda=x
+// Fmop4aZa16Z8z8B1x2: FMOP4A  <ZAda>.H, <Zn>.B, { <Zm1>.B-<Zm2>.B }
+// register fields: Zm, Zn, ZAda
+80300149 fmop4a za1.h, z10.b, {z16.b-z17.b}
+80300188 fmop4a za0.h, z12.b, {z16.b-z17.b}
+80320049 fmop4a za1.h, z2.b, {z18.b-z19.b}
+80340009 fmop4a za1.h, z0.b, {z20.b-z21.b}
+80360089 fmop4a za1.h, z4.b, {z22.b-z23.b}
+803800C9 fmop4a za1.h, z6.b, {z24.b-z25.b}
+803A0109 fmop4a za1.h, z8.b, {z26.b-z27.b}
+803C01C9 fmop4a za1.h, z14.b, {z28.b-z29.b}
+803E0149 fmop4a za1.h, z10.b, {z30.b-z31.b}
+
+// fmop4a_za16_z8z8_b2x1 1|00|0000|0|00|1|M=0|Zm=xxx|0|0|00000|N=1|Zn=xxx|0|01|0|0|ZAda=x
+// Fmop4aZa16Z8z8B2x1: FMOP4A  <ZAda>.H, { <Zn1>.B-<Zn2>.B }, <Zm>.B
+// register fields: Zm, Zn, ZAda
+80200249 fmop4a za1.h, {z2.b-z3.b}, z16.b
+80200288 fmop4a za0.h, {z4.b-z5.b}, z16.b
+80220309 fmop4a za1.h, {z8.b-z9.b}, z18.b
+80240209 fmop4a za1.h, {z0.b-z1.b}, z20.b
+802602C9 fmop4a za1.h, {z6.b-z7.b}, z22.b
+80280349 fmop4a za1.h, {z10.b-z11.b}, z24.b
+802A0389 fmop4a za1.h, {z12.b-z13.b}, z26.b
+802C03C9 fmop4a za1.h, {z14.b-z15.b}, z28.b
+802E0249 fmop4a za1.h, {z2.b-z3.b}, z30.b
+
+// fmop4a_za16_z8z8_b2x2 1|00|0000|0|00|1|M=1|Zm=xxx|0|0|00000|N=1|Zn=xxx|0|01|0|0|ZAda=x
+// Fmop4aZa16Z8z8B2x2: FMOP4A  <ZAda>.H, { <Zn1>.B-<Zn2>.B }, { <Zm1>.B-<Zm2>.B }
+// register fields: Zm, Zn, ZAda
+80300309 fmop4a za1.h, {z8.b-z9.b}, {z16.b-z17.b}
+80300348 fmop4a za0.h, {z10.b-z11.b}, {z16.b-z17.b}
+80320209 fmop4a za1.h, {z0.b-z1.b}, {z18.b-z19.b}
+80340249 fmop4a za1.h, {z2.b-z3.b}, {z20.b-z21.b}
+80360289 fmop4a za1.h, {z4.b-z5.b}, {z22.b-z23.b}
+803802C9 fmop4a za1.h, {z6.b-z7.b}, {z24.b-z25.b}
+803A0389 fmop4a za1.h, {z12.b-z13.b}, {z26.b-z27.b}
+803C03C9 fmop4a za1.h, {z14.b-z15.b}, {z28.b-z29.b}
+803E0309 fmop4a za1.h, {z8.b-z9.b}, {z30.b-z31.b}
+80300209 fmop4a za1.h, {z0.b-z1.b}, {z16.b-z17.b}

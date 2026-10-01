@@ -1,0 +1,96 @@
+// cntb_r_s_ 000|0010|0|size=00|1|0|imm4=xxxx|11|100|op=0|pattern=xxxxx|Rd=xxxxx
+// CntbRS: CNTB  <Xd>{, <pattern>{, MUL #<imm>}}
+// register fields: Rd
+042DE1A5 cntb x5, vl256, mul #0xe
+0426E3E2 cntb x2, all, mul #0x7
+0423E01C cntb x28, pow2, mul #0x4
+042EE1E3 cntb x3, #0xf, mul #0xf
+0427E155 cntb x21, vl32, mul #0x8
+0422E10D cntb x13, vl8, mul #0x3
+042AE01B cntb x27, pow2, mul #0xb
+042BE25B cntb x27, #0x12, mul #0xc
+0420E363 cntb x3, #0x1b
+0428E1E1 cntb x1, #0xf, mul #0x9
+042EE1FE cntb lr, #0xf, mul #0xf
+0423E19B cntb x27, vl128, mul #0x4
+0421E218 cntb x24, #0x10, mul #0x2
+0426E3A3 cntb x3, mul4, mul #0x7
+0427E1C0 cntb x0, #0xe, mul #0x8
+0429E0A0 cntb x0, vl5, mul #0xa
+042FE1BF cntb xzr, vl256, mul #0x10
+0424E085 cntb x5, vl4, mul #0x5
+042DE045 cntb x5, vl2, mul #0xe
+042DE025 cntb x5, vl1, mul #0xe
+
+// cntd_r_s_ 000|0010|0|size=11|1|0|imm4=xxxx|11|100|op=0|pattern=xxxxx|Rd=xxxxx
+// CntdRS: CNTD  <Xd>{, <pattern>{, MUL #<imm>}}
+// register fields: Rd
+04E8E18C cntd x12, vl128, mul #0x9
+04EFE308 cntd x8, #0x18, mul #0x10
+04EEE03C cntd x28, vl1, mul #0xf
+04E6E22B cntd x11, #0x11, mul #0x7
+04E4E159 cntd x25, vl32, mul #0x5
+04E8E036 cntd x22, vl1, mul #0x9
+04E9E2FC cntd x28, #0x17, mul #0xa
+04EFE398 cntd x24, #0x1c, mul #0x10
+04E8E08C cntd x12, vl4, mul #0x9
+04E7E17C cntd x28, vl64, mul #0x8
+04E0E1AF cntd x15, vl256
+04E4E2C7 cntd x7, #0x16, mul #0x5
+04E8E05A cntd x26, vl2, mul #0x9
+04EEE19C cntd x28, vl128, mul #0xf
+04E1E313 cntd x19, #0x18, mul #0x2
+04E7E07F cntd xzr, vl3, mul #0x8
+04E8E000 cntd x0, pow2, mul #0x9
+04E8E3EC cntd x12, all, mul #0x9
+04E2E20C cntd x12, #0x10, mul #0x3
+04E8E10C cntd x12, vl8, mul #0x9
+
+// cnth_r_s_ 000|0010|0|size=01|1|0|imm4=xxxx|11|100|op=0|pattern=xxxxx|Rd=xxxxx
+// CnthRS: CNTH  <Xd>{, <pattern>{, MUL #<imm>}}
+// register fields: Rd
+046AE12E cnth x14, vl16, mul #0xb
+046EE0AD cnth x13, vl5, mul #0xf
+0464E34E cnth x14, #0x1a, mul #0x5
+046EE249 cnth x9, #0x12, mul #0xf
+046BE302 cnth x2, #0x18, mul #0xc
+0460E3B0 cnth x16, mul4
+0464E0CF cnth x15, vl6, mul #0x5
+0465E052 cnth x18, vl2, mul #0x6
+0466E116 cnth x22, vl8, mul #0x7
+046AE04D cnth x13, vl2, mul #0xb
+046CE20C cnth x12, #0x10, mul #0xd
+0460E319 cnth x25, #0x18
+0464E290 cnth x16, #0x14, mul #0x5
+046DE2C3 cnth x3, #0x16, mul #0xe
+0467E260 cnth x0, #0x13, mul #0x8
+046BE1A0 cnth x0, vl256, mul #0xc
+046FE01F cnth xzr, pow2, mul #0x10
+046AE3EE cnth x14, all, mul #0xb
+0468E08E cnth x14, vl4, mul #0x9
+0462E02E cnth x14, vl1, mul #0x3
+0461E12E cnth x14, vl16, mul #0x2
+
+// cntw_r_s_ 000|0010|0|size=10|1|0|imm4=xxxx|11|100|op=0|pattern=xxxxx|Rd=xxxxx
+// CntwRS: CNTW  <Xd>{, <pattern>{, MUL #<imm>}}
+// register fields: Rd
+04ABE043 cntw x3, vl2, mul #0xc
+04AEE2B0 cntw x16, #0x15, mul #0xf
+04A9E038 cntw x24, vl1, mul #0xa
+04AFE264 cntw x4, #0x13, mul #0x10
+04AAE20E cntw x14, #0x10, mul #0xb
+04A9E2A0 cntw x0, #0x15, mul #0xa
+04AFE147 cntw x7, vl32, mul #0x10
+04A6E116 cntw x22, vl8, mul #0x7
+04A5E2E6 cntw x6, #0x17, mul #0x6
+04A5E3B5 cntw x21, mul4, mul #0x6
+04AEE315 cntw x21, #0x18, mul #0xf
+04A8E3AB cntw x11, mul4, mul #0x9
+04A9E1FE cntw lr, #0xf, mul #0xa
+04AEE030 cntw x16, vl1, mul #0xf
+04A3E0B8 cntw x24, vl5, mul #0x4
+04A4E129 cntw x9, vl16, mul #0x5
+04A0E01F cntw xzr, pow2
+04ABE3E3 cntw x3, all, mul #0xc
+04A2E083 cntw x3, vl4, mul #0x3
+04A1E043 cntw x3, vl2, mul #0x2

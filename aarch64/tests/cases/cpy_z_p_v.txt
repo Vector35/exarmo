@@ -1,0 +1,29 @@
+// cpy_z_p_v_ 000|0010|1|size=xx|1|0|000|0|10|0|Pg=xxx|Vn=xxxxx|Zd=xxxxx
+// CpyZPV: CPY  <Zd>.<T>, <Pg>/M, <V><n>
+// MovZPVCpyZPV: MOV  <Zd>.<T>, <Pg>/M, <V><n>
+// read together by <n>: size, Vn
+// register fields: Pg, Vn, Zd
+05E09862 mov z2.d, p6/m, d3
+05E08595 mov z21.d, p1/m, d12
+05A09E03 mov z3.s, p7/m, s16
+05209B89 mov z9.b, p6/m, b28
+05A082C5 mov z5.s, p0/m, s22
+05E09B80 mov z0.d, p6/m, d28
+05E08E0A mov z10.d, p3/m, d16
+052096A8 mov z8.b, p5/m, b21
+05A09C77 mov z23.s, p7/m, s3
+05208012 mov z18.b, p0/m, b0
+05A08C47 mov z7.s, p3/m, s2
+05A09D75 mov z21.s, p7/m, s11
+05E09628 mov z8.d, p5/m, d17
+05A09855 mov z21.s, p6/m, s2
+05209235 mov z21.b, p4/m, b17
+0560929F mov z31.h, p4/m, h20
+05E08BE2 mov z2.d, p2/m, d31
+05209BE2 mov z2.b, p6/m, b31
+05609802 mov z2.h, p6/m, h0
+05609BE2 mov z2.h, p6/m, h31
+05A09802 mov z2.s, p6/m, s0
+05A09BE2 mov z2.s, p6/m, s31
+05E09802 mov z2.d, p6/m, d0
+05E09863 mov z3.d, p6/m, d3

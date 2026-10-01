@@ -1,0 +1,19 @@
+// uqxtnt_z_zz_ 010|0010|1|0|tszh=x|1|tszl=xx|00|0|0|10|0|U=1|T=1|Zn=xxxxx|Zd=xxxxx
+// UqxtntZZz: UQXTNT  <Zd>.<T>, <Zn>.<Tb>
+// read together by <T> and <Tb>: tszh, tszl
+// register fields: Zn, Zd
+45284F00 uqxtnt z0.b, z24.h
+45284C53 uqxtnt z19.b, z2.h
+45304E29 uqxtnt z9.h, z17.s
+45304DD2 uqxtnt z18.h, z14.s
+45304F27 uqxtnt z7.h, z25.s
+45604FE0 uqxtnt z0.s, z31.d
+45604DFE uqxtnt z30.s, z15.d
+45284D9B uqxtnt z27.b, z12.h
+45284C1F uqxtnt z31.b, z0.h
+45384F00 UNDEFINED
+45204F00 UNDEFINED
+45684F00 UNDEFINED
+45704F00 UNDEFINED
+45784F00 UNDEFINED
+45284F18 uqxtnt z24.b, z24.h

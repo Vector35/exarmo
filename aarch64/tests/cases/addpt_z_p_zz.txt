@@ -1,0 +1,14 @@
+// addpt_z_p_zz_ 000|0010|0|size=11|0|00|opc=100|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// AddptZPZz: ADDPT  <Zdn>.D, <Pg>/M, <Zdn>.D, <Zm>.D
+// register fields: Pg, Zm, Zdn
+04C40003 addpt z3.d, p0/m, z3.d, z0.d
+04C4000A addpt z10.d, p0/m, z10.d, z0.d
+04C40011 addpt z17.d, p0/m, z17.d, z0.d
+04C407E0 addpt z0.d, p1/m, z0.d, z31.d
+04C4081F addpt z31.d, p2/m, z31.d, z0.d
+04C40C03 addpt z3.d, p3/m, z3.d, z0.d
+04C41003 addpt z3.d, p4/m, z3.d, z0.d
+04C41403 addpt z3.d, p5/m, z3.d, z0.d
+04C41803 addpt z3.d, p6/m, z3.d, z0.d
+04C41C03 addpt z3.d, p7/m, z3.d, z0.d
+04C40000 addpt z0.d, p0/m, z0.d, z0.d

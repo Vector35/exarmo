@@ -1,0 +1,32 @@
+// fcvtxnt_z_p_z_d2s 011|0010|0|opc=00|0010|opc2=10|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FcvtxntZPZD2s: FCVTXNT  <Zd>.S, <Pg>/M, <Zn>.D
+// register fields: Pg, Zn, Zd
+640AA4C9 fcvtxnt z9.s, p1/m, z6.d
+640AB85D fcvtxnt z29.s, p6/m, z2.d
+640AA084 fcvtxnt z4.s, p0/m, z4.d
+640AA352 fcvtxnt z18.s, p0/m, z26.d
+640AABC5 fcvtxnt z5.s, p2/m, z30.d
+640AA1CA fcvtxnt z10.s, p0/m, z14.d
+640AA903 fcvtxnt z3.s, p2/m, z8.d
+640AA940 fcvtxnt z0.s, p2/m, z10.d
+640AAC1F fcvtxnt z31.s, p3/m, z0.d
+640AB3E9 fcvtxnt z9.s, p4/m, z31.d
+640AB4C9 fcvtxnt z9.s, p5/m, z6.d
+640ABCC9 fcvtxnt z9.s, p7/m, z6.d
+640AA429 fcvtxnt z9.s, p1/m, z1.d
+640AA4C1 fcvtxnt z1.s, p1/m, z6.d
+
+// fcvtxnt_z_p_z_d2sz 011|0010|0|opc=00|0000|opc2=10|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FcvtxntZPZD2sz: FCVTXNT  <Zd>.S, <Pg>/Z, <Zn>.D
+// register fields: Pg, Zn, Zd
+6402A005 fcvtxnt z5.s, p0/z, z0.d
+6402A00C fcvtxnt z12.s, p0/z, z0.d
+6402A013 fcvtxnt z19.s, p0/z, z0.d
+6402A7E0 fcvtxnt z0.s, p1/z, z31.d
+6402A81F fcvtxnt z31.s, p2/z, z0.d
+6402AC05 fcvtxnt z5.s, p3/z, z0.d
+6402B005 fcvtxnt z5.s, p4/z, z0.d
+6402B405 fcvtxnt z5.s, p5/z, z0.d
+6402B805 fcvtxnt z5.s, p6/z, z0.d
+6402BC05 fcvtxnt z5.s, p7/z, z0.d
+6402A000 fcvtxnt z0.s, p0/z, z0.d

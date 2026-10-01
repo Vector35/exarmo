@@ -1,0 +1,21 @@
+// pnext_p_p_p_ 001|0010|1|size=xx|01|1001|11|000|10|Pv=xxxx|0|Pdn=xxxx
+// PnextPPP: PNEXT  <Pdn>.<T>, <Pv>, <Pdn>.<T>
+// register fields: Pv, Pdn
+25D9C52F pnext p15.d, p9, p15.d
+25D9C48A pnext p10.d, p4, p10.d
+2519C522 pnext p2.b, p9, p2.b
+25D9C423 pnext p3.d, p1, p3.d
+2599C4E8 pnext p8.s, p7, p8.s
+2519C507 pnext p7.b, p8, p7.b
+2599C52C pnext p12.s, p9, p12.s
+25D9C4C9 pnext p9.d, p6, p9.d
+2599C483 pnext p3.s, p4, p3.s
+2519C580 pnext p0.b, p12, p0.b
+25D9C50A pnext p10.d, p8, p10.d
+25D9C548 pnext p8.d, p10, p8.d
+2599C4AA pnext p10.s, p5, p10.s
+2519C56C pnext p12.b, p11, p12.b
+2599C4EC pnext p12.s, p7, p12.s
+2599C523 pnext p3.s, p9, p3.s
+2559C40F pnext p15.h, p0, p15.h
+25D9C5EF pnext p15.d, p15, p15.d

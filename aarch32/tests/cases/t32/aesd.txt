@@ -1,0 +1,15 @@
+// AESD_T1 111|1|11|11|1|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=0110|Q=1|M=x|0|Vm=xxxx
+// AesdT1: AESD.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+fff0e360 aesd.8 q15, q8
+FFB00348 aesd.8 q0, q4
+FFF4F36F UNDEFINED
+FFF81361 UNDEFINED
+FFBCF34F UNDEFINED
+FFF08364 aesd.8 q12, q10
+FFF04362 aesd.8 q10, q9
+FFF02340 aesd.8 q9, q0
+FFB00360 aesd.8 q0, q8
+FFF00360 aesd.8 q8, q8
+FFF0F36F UNDEFINED

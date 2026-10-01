@@ -1,0 +1,289 @@
+// ST4_asisdlso_B4_4b 0|Q=x|0011010|L=0|R=1|0000|o2=0|opcode=001|S=x|size=xx|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsoB44b: ST4  { <Vt>.B, <Vt2>.B, <Vt3>.B, <Vt4>.B }[<index>], [<Xn|SP>]
+// read together by <index>: Q, S, size
+// register fields: Rn, Rt
+4D2039C6 st4 {v6.b, v7.b, v8.b, v9.b}[14], [x14]
+0D20288C st4 {v12.b, v13.b, v14.b, v15.b}[2], [x4]
+4D2026B9 st4 {v25.b, v26.b, v27.b, v28.b}[9], [x21]
+0D202D08 st4 {v8.b, v9.b, v10.b, v11.b}[3], [x8]
+4D202AD2 st4 {v18.b, v19.b, v20.b, v21.b}[10], [x22]
+4D20350E st4 {v14.b, v15.b, v16.b, v17.b}[13], [x8]
+0D202E30 st4 {v16.b, v17.b, v18.b, v19.b}[3], [x17]
+0D203AC0 st4 {v0.b, v1.b, v2.b, v3.b}[6], [x22]
+4D2038E7 st4 {v7.b, v8.b, v9.b, v10.b}[14], [x7]
+4D2039BD st4 {v29.b, v30.b, v31.b, v0.b}[14], [x13]
+4D203AFE st4 {v30.b, v31.b, v0.b, v1.b}[14], [x23]
+0D203F97 st4 {v23.b, v24.b, v25.b, v26.b}[7], [x28]
+4D2034E6 st4 {v6.b, v7.b, v8.b, v9.b}[13], [x7]
+4D20250D st4 {v13.b, v14.b, v15.b, v16.b}[9], [x8]
+4D2028A7 st4 {v7.b, v8.b, v9.b, v10.b}[10], [x5]
+4D203A0F st4 {v15.b, v16.b, v17.b, v18.b}[14], [x16]
+4D20301F st4 {v31.b, v0.b, v1.b, v2.b}[12], [x0]
+4D203BE6 st4 {v6.b, v7.b, v8.b, v9.b}[14], [sp]
+0D2021C6 st4 {v6.b, v7.b, v8.b, v9.b}[0], [x14]
+0D2025C6 st4 {v6.b, v7.b, v8.b, v9.b}[1], [x14]
+0D2031C6 st4 {v6.b, v7.b, v8.b, v9.b}[4], [x14]
+0D2035C6 st4 {v6.b, v7.b, v8.b, v9.b}[5], [x14]
+4D2021C6 st4 {v6.b, v7.b, v8.b, v9.b}[8], [x14]
+4D202DC6 st4 {v6.b, v7.b, v8.b, v9.b}[11], [x14]
+4D203DC6 st4 {v6.b, v7.b, v8.b, v9.b}[15], [x14]
+
+// ST4_asisdlso_D4_4d 0|Q=x|0011010|L=0|R=1|0000|o2=0|opcode=101|S=0|size=01|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsoD44d: ST4  { <Vt>.D, <Vt2>.D, <Vt3>.D, <Vt4>.D }[<index>], [<Xn|SP>]
+// register fields: Rn, Rt
+4D20A4AF st4 {v15.d, v16.d, v17.d, v18.d}[1], [x5]
+4D20A699 st4 {v25.d, v26.d, v27.d, v28.d}[1], [x20]
+4D20A7C6 st4 {v6.d, v7.d, v8.d, v9.d}[1], [lr]
+0D20A700 st4 {v0.d, v1.d, v2.d, v3.d}[0], [x24]
+4D20A48B st4 {v11.d, v12.d, v13.d, v14.d}[1], [x4]
+4D20A7CF st4 {v15.d, v16.d, v17.d, v18.d}[1], [lr]
+4D20A744 st4 {v4.d, v5.d, v6.d, v7.d}[1], [x26]
+0D20A607 st4 {v7.d, v8.d, v9.d, v10.d}[0], [x16]
+0D20A66D st4 {v13.d, v14.d, v15.d, v16.d}[0], [x19]
+4D20A635 st4 {v21.d, v22.d, v23.d, v24.d}[1], [x17]
+0D20A536 st4 {v22.d, v23.d, v24.d, v25.d}[0], [x9]
+4D20A5AC st4 {v12.d, v13.d, v14.d, v15.d}[1], [x13]
+4D20A6AC st4 {v12.d, v13.d, v14.d, v15.d}[1], [x21]
+4D20A500 st4 {v0.d, v1.d, v2.d, v3.d}[1], [x8]
+0D20A766 st4 {v6.d, v7.d, v8.d, v9.d}[0], [x27]
+0D20A6F8 st4 {v24.d, v25.d, v26.d, v27.d}[0], [x23]
+4D20A41F st4 {v31.d, v0.d, v1.d, v2.d}[1], [x0]
+4D20A7EF st4 {v15.d, v16.d, v17.d, v18.d}[1], [sp]
+4D20A4A5 st4 {v5.d, v6.d, v7.d, v8.d}[1], [x5]
+
+// ST4_asisdlso_H4_4h 0|Q=x|0011010|L=0|R=1|0000|o2=0|opcode=011|S=x|size=x0|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsoH44h: ST4  { <Vt>.H, <Vt2>.H, <Vt3>.H, <Vt4>.H }[<index>], [<Xn|SP>]
+// read together by <index>: Q, S, size
+// register fields: Rn, Rt
+0D20733A st4 {v26.h, v27.h, v28.h, v29.h}[2], [x25]
+0D206B4A st4 {v10.h, v11.h, v12.h, v13.h}[1], [x26]
+4D2062C7 st4 {v7.h, v8.h, v9.h, v10.h}[4], [x22]
+0D2069C1 st4 {v1.h, v2.h, v3.h, v4.h}[1], [x14]
+0D207108 st4 {v8.h, v9.h, v10.h, v11.h}[2], [x8]
+0D207AE7 st4 {v7.h, v8.h, v9.h, v10.h}[3], [x23]
+4D20793A st4 {v26.h, v27.h, v28.h, v29.h}[7], [x9]
+4D20782B st4 {v11.h, v12.h, v13.h, v14.h}[7], [x1]
+0D206827 st4 {v7.h, v8.h, v9.h, v10.h}[1], [x1]
+4D2060AC st4 {v12.h, v13.h, v14.h, v15.h}[4], [x5]
+4D207289 st4 {v9.h, v10.h, v11.h, v12.h}[6], [x20]
+4D207B8C st4 {v12.h, v13.h, v14.h, v15.h}[7], [x28]
+4D207301 st4 {v1.h, v2.h, v3.h, v4.h}[6], [x24]
+0D206156 st4 {v22.h, v23.h, v24.h, v25.h}[0], [x10]
+4D20637A st4 {v26.h, v27.h, v28.h, v29.h}[4], [x27]
+4D207228 st4 {v8.h, v9.h, v10.h, v11.h}[6], [x17]
+0D207000 st4 {v0.h, v1.h, v2.h, v3.h}[2], [x0]
+0D2073FF st4 {v31.h, v0.h, v1.h, v2.h}[2], [sp]
+4D206B3A st4 {v26.h, v27.h, v28.h, v29.h}[5], [x25]
+
+// ST4_asisdlso_S4_4s 0|Q=x|0011010|L=0|R=1|0000|o2=0|opcode=101|S=x|size=00|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsoS44s: ST4  { <Vt>.S, <Vt2>.S, <Vt3>.S, <Vt4>.S }[<index>], [<Xn|SP>]
+// read together by <index>: Q, S
+// register fields: Rn, Rt
+0D20B274 st4 {v20.s, v21.s, v22.s, v23.s}[1], [x19]
+4D20A33C st4 {v28.s, v29.s, v30.s, v31.s}[2], [x25]
+4D20B34B st4 {v11.s, v12.s, v13.s, v14.s}[3], [x26]
+0D20B0CE st4 {v14.s, v15.s, v16.s, v17.s}[1], [x6]
+0D20B382 st4 {v2.s, v3.s, v4.s, v5.s}[1], [x28]
+4D20A2C5 st4 {v5.s, v6.s, v7.s, v8.s}[2], [x22]
+4D20B149 st4 {v9.s, v10.s, v11.s, v12.s}[3], [x10]
+0D20B2C7 st4 {v7.s, v8.s, v9.s, v10.s}[1], [x22]
+4D20A385 st4 {v5.s, v6.s, v7.s, v8.s}[2], [x28]
+0D20B3B7 st4 {v23.s, v24.s, v25.s, v26.s}[1], [fp]
+0D20A103 st4 {v3.s, v4.s, v5.s, v6.s}[0], [x8]
+4D20A13F st4 {v31.s, v0.s, v1.s, v2.s}[2], [x9]
+4D20A384 st4 {v4.s, v5.s, v6.s, v7.s}[2], [x28]
+0D20A363 st4 {v3.s, v4.s, v5.s, v6.s}[0], [x27]
+0D20A216 st4 {v22.s, v23.s, v24.s, v25.s}[0], [x16]
+4D20A02A st4 {v10.s, v11.s, v12.s, v13.s}[2], [x1]
+0D20B000 st4 {v0.s, v1.s, v2.s, v3.s}[1], [x0]
+0D20B3F4 st4 {v20.s, v21.s, v22.s, v23.s}[1], [sp]
+
+// ST4_asisdlsop_B4_i4b 0|Q=x|0011011|L=0|R=1|Rm=11111|opcode=001|S=x|size=xx|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsopB4I4b: ST4  { <Vt>.B, <Vt2>.B, <Vt3>.B, <Vt4>.B }[<index>], [<Xn|SP>], #4
+// read together by <index>: Q, S, size
+// register fields: Rn, Rt
+4DBF34F1 st4 {v17.b, v18.b, v19.b, v20.b}[13], [x7], #0x4
+0DBF3EA6 st4 {v6.b, v7.b, v8.b, v9.b}[7], [x21], #0x4
+4DBF3136 st4 {v22.b, v23.b, v24.b, v25.b}[12], [x9], #0x4
+4DBF25C1 st4 {v1.b, v2.b, v3.b, v4.b}[9], [x14], #0x4
+0DBF28D5 st4 {v21.b, v22.b, v23.b, v24.b}[2], [x6], #0x4
+0DBF2EDA st4 {v26.b, v27.b, v28.b, v29.b}[3], [x22], #0x4
+0DBF21E3 st4 {v3.b, v4.b, v5.b, v6.b}[0], [x15], #0x4
+0DBF3F85 st4 {v5.b, v6.b, v7.b, v8.b}[7], [x28], #0x4
+0DBF3F19 st4 {v25.b, v26.b, v27.b, v28.b}[7], [x24], #0x4
+0DBF39E7 st4 {v7.b, v8.b, v9.b, v10.b}[6], [x15], #0x4
+0DBF3D4C st4 {v12.b, v13.b, v14.b, v15.b}[7], [x10], #0x4
+4DBF208C st4 {v12.b, v13.b, v14.b, v15.b}[8], [x4], #0x4
+4DBF3F6A st4 {v10.b, v11.b, v12.b, v13.b}[15], [x27], #0x4
+0DBF24CF st4 {v15.b, v16.b, v17.b, v18.b}[1], [x6], #0x4
+4DBF2EFD st4 {v29.b, v30.b, v31.b, v0.b}[11], [x23], #0x4
+4DBF3995 st4 {v21.b, v22.b, v23.b, v24.b}[14], [x12], #0x4
+4DBF3400 st4 {v0.b, v1.b, v2.b, v3.b}[13], [x0], #0x4
+4DBF37FF st4 {v31.b, v0.b, v1.b, v2.b}[13], [sp], #0x4
+0DBF30F1 st4 {v17.b, v18.b, v19.b, v20.b}[4], [x7], #0x4
+0DBF34F1 st4 {v17.b, v18.b, v19.b, v20.b}[5], [x7], #0x4
+4DBF28F1 st4 {v17.b, v18.b, v19.b, v20.b}[10], [x7], #0x4
+
+// ST4_asisdlsop_BX4_r4b 0|Q=x|0011011|L=0|R=1|Rm=xxxxx|opcode=001|S=x|size=xx|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsopBx4R4b: ST4  { <Vt>.B, <Vt2>.B, <Vt3>.B, <Vt4>.B }[<index>], [<Xn|SP>], <Xm>
+// read together by <index>: Q, S, size
+// register fields: Rm, Rn, Rt
+4DBA2D49 st4 {v9.b, v10.b, v11.b, v12.b}[11], [x10], x26
+4DB03802 st4 {v2.b, v3.b, v4.b, v5.b}[14], [x0], x16
+4DBB2FC9 st4 {v9.b, v10.b, v11.b, v12.b}[11], [lr], x27
+4DB73246 st4 {v6.b, v7.b, v8.b, v9.b}[12], [x18], x23
+4DB237EF st4 {v15.b, v16.b, v17.b, v18.b}[13], [sp], x18
+0DA232E6 st4 {v6.b, v7.b, v8.b, v9.b}[4], [x23], x2
+4DB93136 st4 {v22.b, v23.b, v24.b, v25.b}[12], [x9], x25
+4DAB28AC st4 {v12.b, v13.b, v14.b, v15.b}[10], [x5], x11
+0DB03BB5 st4 {v21.b, v22.b, v23.b, v24.b}[6], [fp], x16
+0DB03D0B st4 {v11.b, v12.b, v13.b, v14.b}[7], [x8], x16
+4DA43BD7 st4 {v23.b, v24.b, v25.b, v26.b}[14], [lr], x4
+4DBE3520 st4 {v0.b, v1.b, v2.b, v3.b}[13], [x9], lr
+0DB52462 st4 {v2.b, v3.b, v4.b, v5.b}[1], [x3], x21
+4DBD3000 st4 {v0.b, v1.b, v2.b, v3.b}[12], [x0], fp
+0DAA238A st4 {v10.b, v11.b, v12.b, v13.b}[0], [x28], x10
+0DA93045 st4 {v5.b, v6.b, v7.b, v8.b}[4], [x2], x9
+4DA02D5F st4 {v31.b, v0.b, v1.b, v2.b}[11], [x10], x0
+0DBA2B49 st4 {v9.b, v10.b, v11.b, v12.b}[2], [x26], x26
+0DBA2D49 st4 {v9.b, v10.b, v11.b, v12.b}[3], [x10], x26
+0DBA3549 st4 {v9.b, v10.b, v11.b, v12.b}[5], [x10], x26
+4DBA2149 st4 {v9.b, v10.b, v11.b, v12.b}[8], [x10], x26
+4DBA2549 st4 {v9.b, v10.b, v11.b, v12.b}[9], [x10], x26
+4DBA3D49 st4 {v9.b, v10.b, v11.b, v12.b}[15], [x10], x26
+
+// ST4_asisdlsop_D4_i4d 0|Q=x|0011011|L=0|R=1|Rm=11111|opcode=101|S=0|size=01|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsopD4I4d: ST4  { <Vt>.D, <Vt2>.D, <Vt3>.D, <Vt4>.D }[<index>], [<Xn|SP>], #32
+// register fields: Rn, Rt
+0DBFA699 st4 {v25.d, v26.d, v27.d, v28.d}[0], [x20], #0x20
+4DBFA4E1 st4 {v1.d, v2.d, v3.d, v4.d}[1], [x7], #0x20
+0DBFA7E2 st4 {v2.d, v3.d, v4.d, v5.d}[0], [sp], #0x20
+0DBFA69D st4 {v29.d, v30.d, v31.d, v0.d}[0], [x20], #0x20
+4DBFA6DA st4 {v26.d, v27.d, v28.d, v29.d}[1], [x22], #0x20
+0DBFA442 st4 {v2.d, v3.d, v4.d, v5.d}[0], [x2], #0x20
+4DBFA77E st4 {v30.d, v31.d, v0.d, v1.d}[1], [x27], #0x20
+4DBFA40F st4 {v15.d, v16.d, v17.d, v18.d}[1], [x0], #0x20
+4DBFA66B st4 {v11.d, v12.d, v13.d, v14.d}[1], [x19], #0x20
+0DBFA495 st4 {v21.d, v22.d, v23.d, v24.d}[0], [x4], #0x20
+0DBFA6A9 st4 {v9.d, v10.d, v11.d, v12.d}[0], [x21], #0x20
+0DBFA44F st4 {v15.d, v16.d, v17.d, v18.d}[0], [x2], #0x20
+0DBFA4DC st4 {v28.d, v29.d, v30.d, v31.d}[0], [x6], #0x20
+4DBFA533 st4 {v19.d, v20.d, v21.d, v22.d}[1], [x9], #0x20
+0DBFA6BB st4 {v27.d, v28.d, v29.d, v30.d}[0], [x21], #0x20
+4DBFA7B9 st4 {v25.d, v26.d, v27.d, v28.d}[1], [fp], #0x20
+0DBFA680 st4 {v0.d, v1.d, v2.d, v3.d}[0], [x20], #0x20
+0DBFA69F st4 {v31.d, v0.d, v1.d, v2.d}[0], [x20], #0x20
+
+// ST4_asisdlsop_DX4_r4d 0|Q=x|0011011|L=0|R=1|Rm=xxxxx|opcode=101|S=0|size=01|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsopDx4R4d: ST4  { <Vt>.D, <Vt2>.D, <Vt3>.D, <Vt4>.D }[<index>], [<Xn|SP>], <Xm>
+// register fields: Rm, Rn, Rt
+4DA5A6D3 st4 {v19.d, v20.d, v21.d, v22.d}[1], [x22], x5
+0DA4A6FC st4 {v28.d, v29.d, v30.d, v31.d}[0], [x23], x4
+0DABA5A4 st4 {v4.d, v5.d, v6.d, v7.d}[0], [x13], x11
+4DA7A614 st4 {v20.d, v21.d, v22.d, v23.d}[1], [x16], x7
+4DAEA49A st4 {v26.d, v27.d, v28.d, v29.d}[1], [x4], x14
+0DA4A798 st4 {v24.d, v25.d, v26.d, v27.d}[0], [x28], x4
+4DB0A708 st4 {v8.d, v9.d, v10.d, v11.d}[1], [x24], x16
+4DB9A588 st4 {v8.d, v9.d, v10.d, v11.d}[1], [x12], x25
+4DB6A67F st4 {v31.d, v0.d, v1.d, v2.d}[1], [x19], x22
+0DBCA784 st4 {v4.d, v5.d, v6.d, v7.d}[0], [x28], x28
+4DB9A650 st4 {v16.d, v17.d, v18.d, v19.d}[1], [x18], x25
+0DA4A54C st4 {v12.d, v13.d, v14.d, v15.d}[0], [x10], x4
+4DABA481 st4 {v1.d, v2.d, v3.d, v4.d}[1], [x4], x11
+0DB9A566 st4 {v6.d, v7.d, v8.d, v9.d}[0], [x11], x25
+4DB8A505 st4 {v5.d, v6.d, v7.d, v8.d}[1], [x8], x24
+0DBDA796 st4 {v22.d, v23.d, v24.d, v25.d}[0], [x28], fp
+4DA0A400 st4 {v0.d, v1.d, v2.d, v3.d}[1], [x0], x0
+4DA5A7F3 st4 {v19.d, v20.d, v21.d, v22.d}[1], [sp], x5
+
+// ST4_asisdlsop_H4_i4h 0|Q=x|0011011|L=0|R=1|Rm=11111|opcode=011|S=x|size=x0|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsopH4I4h: ST4  { <Vt>.H, <Vt2>.H, <Vt3>.H, <Vt4>.H }[<index>], [<Xn|SP>], #8
+// read together by <index>: Q, S, size
+// register fields: Rn, Rt
+0DBF72FD st4 {v29.h, v30.h, v31.h, v0.h}[2], [x23], #0x8
+4DBF733E st4 {v30.h, v31.h, v0.h, v1.h}[6], [x25], #0x8
+4DBF7BEB st4 {v11.h, v12.h, v13.h, v14.h}[7], [sp], #0x8
+0DBF6146 st4 {v6.h, v7.h, v8.h, v9.h}[0], [x10], #0x8
+4DBF6872 st4 {v18.h, v19.h, v20.h, v21.h}[5], [x3], #0x8
+0DBF7311 st4 {v17.h, v18.h, v19.h, v20.h}[2], [x24], #0x8
+0DBF72FA st4 {v26.h, v27.h, v28.h, v29.h}[2], [x23], #0x8
+4DBF61E3 st4 {v3.h, v4.h, v5.h, v6.h}[4], [x15], #0x8
+4DBF716B st4 {v11.h, v12.h, v13.h, v14.h}[6], [x11], #0x8
+0DBF6116 st4 {v22.h, v23.h, v24.h, v25.h}[0], [x8], #0x8
+4DBF7266 st4 {v6.h, v7.h, v8.h, v9.h}[6], [x19], #0x8
+0DBF7830 st4 {v16.h, v17.h, v18.h, v19.h}[3], [x1], #0x8
+0DBF6967 st4 {v7.h, v8.h, v9.h, v10.h}[1], [x11], #0x8
+0DBF6BE8 st4 {v8.h, v9.h, v10.h, v11.h}[1], [sp], #0x8
+4DBF6279 st4 {v25.h, v26.h, v27.h, v28.h}[4], [x19], #0x8
+4DBF7002 st4 {v2.h, v3.h, v4.h, v5.h}[6], [x0], #0x8
+0DBF72E0 st4 {v0.h, v1.h, v2.h, v3.h}[2], [x23], #0x8
+0DBF72FF st4 {v31.h, v0.h, v1.h, v2.h}[2], [x23], #0x8
+
+// ST4_asisdlsop_HX4_r4h 0|Q=x|0011011|L=0|R=1|Rm=xxxxx|opcode=011|S=x|size=x0|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsopHx4R4h: ST4  { <Vt>.H, <Vt2>.H, <Vt3>.H, <Vt4>.H }[<index>], [<Xn|SP>], <Xm>
+// read together by <index>: Q, S, size
+// register fields: Rm, Rn, Rt
+4DB87B39 st4 {v25.h, v26.h, v27.h, v28.h}[7], [x25], x24
+0DA3618C st4 {v12.h, v13.h, v14.h, v15.h}[0], [x12], x3
+0DB578E8 st4 {v8.h, v9.h, v10.h, v11.h}[3], [x7], x21
+4DA77A35 st4 {v21.h, v22.h, v23.h, v24.h}[7], [x17], x7
+4DA379F4 st4 {v20.h, v21.h, v22.h, v23.h}[7], [x15], x3
+0DA5636F st4 {v15.h, v16.h, v17.h, v18.h}[0], [x27], x5
+0DB16A39 st4 {v25.h, v26.h, v27.h, v28.h}[1], [x17], x17
+4DB661FB st4 {v27.h, v28.h, v29.h, v30.h}[4], [x15], x22
+4DB7685A st4 {v26.h, v27.h, v28.h, v29.h}[5], [x2], x23
+4DBC613B st4 {v27.h, v28.h, v29.h, v30.h}[4], [x9], x28
+4DB07025 st4 {v5.h, v6.h, v7.h, v8.h}[6], [x1], x16
+4DB56206 st4 {v6.h, v7.h, v8.h, v9.h}[4], [x16], x21
+0DB262C9 st4 {v9.h, v10.h, v11.h, v12.h}[0], [x22], x18
+0DA47B91 st4 {v17.h, v18.h, v19.h, v20.h}[3], [x28], x4
+0DA97049 st4 {v9.h, v10.h, v11.h, v12.h}[2], [x2], x9
+0DA3712B st4 {v11.h, v12.h, v13.h, v14.h}[2], [x9], x3
+4DA07800 st4 {v0.h, v1.h, v2.h, v3.h}[7], [x0], x0
+4DB87BFF st4 {v31.h, v0.h, v1.h, v2.h}[7], [sp], x24
+
+// ST4_asisdlsop_S4_i4s 0|Q=x|0011011|L=0|R=1|Rm=11111|opcode=101|S=x|size=00|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsopS4I4s: ST4  { <Vt>.S, <Vt2>.S, <Vt3>.S, <Vt4>.S }[<index>], [<Xn|SP>], #16
+// read together by <index>: Q, S
+// register fields: Rn, Rt
+0DBFB139 st4 {v25.s, v26.s, v27.s, v28.s}[1], [x9], #0x10
+0DBFA23D st4 {v29.s, v30.s, v31.s, v0.s}[0], [x17], #0x10
+0DBFB2FB st4 {v27.s, v28.s, v29.s, v30.s}[1], [x23], #0x10
+4DBFB3C8 st4 {v8.s, v9.s, v10.s, v11.s}[3], [lr], #0x10
+0DBFA1AF st4 {v15.s, v16.s, v17.s, v18.s}[0], [x13], #0x10
+4DBFA29F st4 {v31.s, v0.s, v1.s, v2.s}[2], [x20], #0x10
+0DBFB11C st4 {v28.s, v29.s, v30.s, v31.s}[1], [x8], #0x10
+0DBFA0A8 st4 {v8.s, v9.s, v10.s, v11.s}[0], [x5], #0x10
+0DBFA2C5 st4 {v5.s, v6.s, v7.s, v8.s}[0], [x22], #0x10
+0DBFB16D st4 {v13.s, v14.s, v15.s, v16.s}[1], [x11], #0x10
+0DBFB192 st4 {v18.s, v19.s, v20.s, v21.s}[1], [x12], #0x10
+0DBFB14F st4 {v15.s, v16.s, v17.s, v18.s}[1], [x10], #0x10
+4DBFA0F3 st4 {v19.s, v20.s, v21.s, v22.s}[2], [x7], #0x10
+4DBFA0E9 st4 {v9.s, v10.s, v11.s, v12.s}[2], [x7], #0x10
+0DBFB017 st4 {v23.s, v24.s, v25.s, v26.s}[1], [x0], #0x10
+4DBFA378 st4 {v24.s, v25.s, v26.s, v27.s}[2], [x27], #0x10
+0DBFB3E0 st4 {v0.s, v1.s, v2.s, v3.s}[1], [sp], #0x10
+0DBFB129 st4 {v9.s, v10.s, v11.s, v12.s}[1], [x9], #0x10
+
+// ST4_asisdlsop_SX4_r4s 0|Q=x|0011011|L=0|R=1|Rm=xxxxx|opcode=101|S=x|size=00|Rn=xxxxx|Rt=xxxxx
+// St4AsisdlsopSx4R4s: ST4  { <Vt>.S, <Vt2>.S, <Vt3>.S, <Vt4>.S }[<index>], [<Xn|SP>], <Xm>
+// read together by <index>: Q, S
+// register fields: Rm, Rn, Rt
+0DABA136 st4 {v22.s, v23.s, v24.s, v25.s}[0], [x9], x11
+4DB7A3CB st4 {v11.s, v12.s, v13.s, v14.s}[2], [lr], x23
+0DACA1A6 st4 {v6.s, v7.s, v8.s, v9.s}[0], [x13], x12
+0DABA0F9 st4 {v25.s, v26.s, v27.s, v28.s}[0], [x7], x11
+4DA9B10B st4 {v11.s, v12.s, v13.s, v14.s}[3], [x8], x9
+4DB9B19F st4 {v31.s, v0.s, v1.s, v2.s}[3], [x12], x25
+4DA4A046 st4 {v6.s, v7.s, v8.s, v9.s}[2], [x2], x4
+4DA6A3AB st4 {v11.s, v12.s, v13.s, v14.s}[2], [fp], x6
+0DAEB147 st4 {v7.s, v8.s, v9.s, v10.s}[1], [x10], x14
+4DB9A187 st4 {v7.s, v8.s, v9.s, v10.s}[2], [x12], x25
+0DA2B03F st4 {v31.s, v0.s, v1.s, v2.s}[1], [x1], x2
+4DA1A0A4 st4 {v4.s, v5.s, v6.s, v7.s}[2], [x5], x1
+0DB1B3C4 st4 {v4.s, v5.s, v6.s, v7.s}[1], [lr], x17
+4DA4A1DE st4 {v30.s, v31.s, v0.s, v1.s}[2], [x14], x4
+4DADA0BB st4 {v27.s, v28.s, v29.s, v30.s}[2], [x5], x13
+0DB0B237 st4 {v23.s, v24.s, v25.s, v26.s}[1], [x17], x16
+0DA0A000 st4 {v0.s, v1.s, v2.s, v3.s}[0], [x0], x0
+0DABA3F6 st4 {v22.s, v23.s, v24.s, v25.s}[0], [sp], x11

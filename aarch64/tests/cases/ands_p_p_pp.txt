@@ -1,0 +1,42 @@
+// ands_p_p_pp_z 001|0010|1|op=0|S=1|00|Pm=xxxx|01|Pg=xxxx|o2=0|Pn=xxxx|o3=0|Pd=xxxx
+// AndsPPPpZ: ANDS  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// MovzsPPPAndsPPPpZ: MOVS  <Pd>.B, <Pg>/Z, <Pn>.B
+// read together by the MOVS alias: Pm, Pn
+// register fields: Pm, Pg, Pn, Pd
+// form chosen on: Pm, Pn
+2549492A movs p10.b, p2/z, p9.b
+254D6DAF movs p15.b, p11/z, p13.b
+254B796C movs p12.b, p14/z, p11.b
+254E59C7 movs p7.b, p6/z, p14.b
+254A4149 movs p9.b, p0/z, p10.b
+254564A2 movs p2.b, p9/z, p5.b
+25496928 movs p8.b, p10/z, p9.b
+254664C8 movs p8.b, p9/z, p6.b
+254650CA movs p10.b, p4/z, p6.b
+254F71E1 movs p1.b, p12/z, p15.b
+254E61CB movs p11.b, p8/z, p14.b
+254C458E movs p14.b, p1/z, p12.b
+254A5946 movs p6.b, p6/z, p10.b
+254D51A5 movs p5.b, p4/z, p13.b
+254B7D6A movs p10.b, p15/z, p11.b
+254D59A0 movs p0.b, p6/z, p13.b
+254758C8 ands p8.b, p6/z, p6.b, p7.b
+254078A6 ands p6.b, p14/z, p5.b, p0.b
+254261EB ands p11.b, p8/z, p15.b, p2.b
+25457CC6 ands p6.b, p15/z, p6.b, p5.b
+25495C0A ands p10.b, p7/z, p0.b, p9.b
+254B5C8B ands p11.b, p7/z, p4.b, p11.b
+254F6102 ands p2.b, p8/z, p8.b, p15.b
+254A6843 ands p3.b, p10/z, p2.b, p10.b
+254559C8 ands p8.b, p6/z, p14.b, p5.b
+25426905 ands p5.b, p10/z, p8.b, p2.b
+254344AC ands p12.b, p1/z, p5.b, p3.b
+25456062 ands p2.b, p8/z, p3.b, p5.b
+25477DC4 ands p4.b, p15/z, p14.b, p7.b
+25495D0F ands p15.b, p7/z, p8.b, p9.b
+254E50E7 ands p7.b, p4/z, p7.b, p14.b
+254C60C1 ands p1.b, p8/z, p6.b, p12.b
+2540480A movs p10.b, p2/z, p0.b
+254049EA ands p10.b, p2/z, p15.b, p0.b
+254F480A ands p10.b, p2/z, p0.b, p15.b
+2541480A ands p10.b, p2/z, p0.b, p1.b

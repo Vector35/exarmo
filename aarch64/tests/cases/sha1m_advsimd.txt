@@ -1,0 +1,20 @@
+// SHA1M_QSV_cryptosha3 0101|111|0|size=00|0|Rm=xxxxx|0|opcode=010|00|Rn=xxxxx|Rd=xxxxx
+// Sha1mQsvCryptosha3: SHA1M  <Qd>, <Sn>, <Vm>.4S
+// register fields: Rm, Rn, Rd
+5E0A23E3 sha1m q3, s31, v10.4s
+5E06205A sha1m q26, s2, v6.4s
+5E12204C sha1m q12, s2, v18.4s
+5E0522C3 sha1m q3, s22, v5.4s
+5E05227A sha1m q26, s19, v5.4s
+5E15239E sha1m q30, s28, v21.4s
+5E0C2100 sha1m q0, s8, v12.4s
+5E012303 sha1m q3, s24, v1.4s
+5E1420EB sha1m q11, s7, v20.4s
+5E082111 sha1m q17, s8, v8.4s
+5E002299 sha1m q25, s20, v0.4s
+5E0E222A sha1m q10, s17, v14.4s
+5E0F218C sha1m q12, s12, v15.4s
+5E0520CF sha1m q15, s6, v5.4s
+5E15223A sha1m q26, s17, v21.4s
+5E11204A sha1m q10, s2, v17.4s
+5E1F201F sha1m q31, s0, v31.4s

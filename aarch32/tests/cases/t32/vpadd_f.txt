@@ -1,0 +1,25 @@
+// VPADD_f_T1 111|U=1|11|11|0|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=x|M=x|o1=0|Vm=xxxx
+// VpaddFT1: VPADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff5a9d8d vpadd.f16 d25, d26, d13
+ff490da6 vpadd.f32 d16, d25, d22
+ff1afda4 vpadd.f16 d15, d26, d20
+ff16cd2e vpadd.f16 d12, d6, d30
+ff150dae vpadd.f16 d0, d21, d30
+ff110da4 vpadd.f16 d0, d17, d20
+ff195da8 vpadd.f16 d5, d25, d24
+ff11fd0e vpadd.f16 d15, d1, d14
+FF508D80 vpadd.f16 d24, d16, d0
+FF5F4D8F vpadd.f16 d20, d31, d15
+FF582D82 vpadd.f16 d18, d24, d2
+FF541D81 vpadd.f16 d17, d20, d1
+FF52FD80 vpadd.f16 d31, d18, d0
+FF5A9DCD UNDEFINED
+FF509D0F vpadd.f16 d25, d0, d15
+FF509DA0 vpadd.f16 d25, d16, d16
+FF5F9D2F vpadd.f16 d25, d15, d31
+FF5F9D8D vpadd.f16 d25, d31, d13
+FF5A9D8D [ne] vpaddne.f16 d25, d26, d13 (unpredictable)

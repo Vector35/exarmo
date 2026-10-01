@@ -1,0 +1,35 @@
+// VUZP_A1_D 111100111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0010|Q=0|M=x|0|Vm=xxxx
+// VuzpA1D: VUZP{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f6b106 vuzp.16 d27, d6
+f3b6d12c vuzp.16 d13, d28
+f3f23122 vuzp.8 d19, d18
+F3FAB106 UNDEFINED
+F3FEB106 UNDEFINED
+F3F60100 vuzp.16 d16, d0
+F3F6F10F vuzp.16 d31, d15
+F3F68108 vuzp.16 d24, d8
+F3F64104 vuzp.16 d20, d4
+F3F62101 vuzp.16 d18, d1
+F3F61100 vuzp.16 d17, d0
+F3B6010F vuzp.16 d0, d15
+F3B6F120 vuzp.16 d15, d16
+F3F6012F vuzp.16 d16, d31
+F3F6F106 vuzp.16 d31, d6
+
+// VUZP_A1_Q 111100111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0010|Q=1|M=x|0|Vm=xxxx
+// VuzpA1Q: VUZP{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3b6a148 vuzp.16 q5, q4
+F3F20160 vuzp.8 q8, q8
+F3BA8144 vuzp.32 q4, q2
+F3BEF14F UNDEFINED
+F3B64142 vuzp.16 q2, q1
+F3B62140 vuzp.16 q1, q0
+F3B61141 UNDEFINED
+F3B60160 vuzp.16 q0, q8
+F3B6F14F UNDEFINED
+F3F60148 vuzp.16 q8, q4
+F3F6F16F UNDEFINED

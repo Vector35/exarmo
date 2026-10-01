@@ -1,0 +1,22 @@
+// VPMAX_f_A1 1111|0|01|U=1|0|D=x|op=0|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VpmaxFA1: VPMAX{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f306ff07 vpmax.f32 d15, d6, d7
+f35a3f28 vpmax.f16 d19, d10, d24
+f35fff2a vpmax.f16 d31, d15, d26
+f356af85 vpmax.f16 d26, d22, d5
+f30d5f8a vpmax.f32 d5, d29, d10
+f34c1f23 vpmax.f32 d17, d12, d19
+f3473f25 vpmax.f32 d19, d7, d21
+f3175f8c vpmax.f16 d5, d23, d12
+F3000F00 vpmax.f32 d0, d0, d0
+F3088F0F vpmax.f32 d8, d8, d15
+F3044F04 vpmax.f32 d4, d4, d4
+F3022F02 vpmax.f32 d2, d2, d2
+F3010F01 vpmax.f32 d0, d1, d1
+F3400F00 vpmax.f32 d16, d0, d0
+F300FF8F vpmax.f32 d15, d16, d15
+F30FFFA0 vpmax.f32 d15, d31, d16
+F306FF2F vpmax.f32 d15, d6, d31

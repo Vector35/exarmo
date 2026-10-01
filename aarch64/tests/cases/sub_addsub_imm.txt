@@ -1,0 +1,68 @@
+// SUB_32_addsub_imm sf=0|op=1|S=0|100010|sh=x|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Sub32AddsubImm: SUB  <Wd|WSP>, <Wn|WSP>, #<imm>{, <shift>}
+// register fields: Rn, Rd
+5177273E sub w30, w25, #0xdc9, lsl #0xc
+517F11A5 sub w5, w13, #0xfc4, lsl #0xc
+512C64D1 sub w17, w6, #0xb19
+51178ACD sub w13, w22, #0x5e2
+517B5424 sub w4, w1, #0xed5, lsl #0xc
+516C8AE5 sub w5, w23, #0xb22, lsl #0xc
+51434D60 sub w0, w11, #0xd3, lsl #0xc
+5111BD57 sub w23, w10, #0x46f
+513D8035 sub w21, w1, #0xf60
+511F6304 sub w4, w24, #0x7d8
+51315367 sub w7, w27, #0xc54
+51488A94 sub w20, w20, #0x222, lsl #0xc
+5164B950 sub w16, w10, #0x92e, lsl #0xc
+514FB6C4 sub w4, w22, #0x3ed, lsl #0xc
+5134DA03 sub w3, w16, #0xd36
+517252BB sub w27, w21, #0xc94, lsl #0xc
+5140001F sub wsp, w0, #0x0, lsl #0xc
+517FFFFE sub w30, wsp, #0xfff, lsl #0xc
+5160033E sub w30, w25, #0x800, lsl #0xc
+5150033E sub w30, w25, #0x400, lsl #0xc
+5148033E sub w30, w25, #0x200, lsl #0xc
+5144033E sub w30, w25, #0x100, lsl #0xc
+5142033E sub w30, w25, #0x80, lsl #0xc
+5141033E sub w30, w25, #0x40, lsl #0xc
+5140833E sub w30, w25, #0x20, lsl #0xc
+5140433E sub w30, w25, #0x10, lsl #0xc
+5140233E sub w30, w25, #0x8, lsl #0xc
+5140133E sub w30, w25, #0x4, lsl #0xc
+51400B3E sub w30, w25, #0x2, lsl #0xc
+5140073E sub w30, w25, #0x1, lsl #0xc
+
+// SUB_64_addsub_imm sf=1|op=1|S=0|100010|sh=x|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Sub64AddsubImm: SUB  <Xd|SP>, <Xn|SP>, #<imm>{, <shift>}
+// register fields: Rn, Rd
+D15E0B6F sub x15, x27, #0x782, lsl #0xc
+D100C600 sub x0, x16, #0x31
+D113CAD9 sub x25, x22, #0x4f2
+D156A1C6 sub x6, x14, #0x5a8, lsl #0xc
+D157D42E sub x14, x1, #0x5f5, lsl #0xc
+D162A45A sub x26, x2, #0x8a9, lsl #0xc
+D14C27EE sub x14, sp, #0x309, lsl #0xc
+D1732DD4 sub x20, x14, #0xccb, lsl #0xc
+D14AC3F3 sub x19, sp, #0x2b0, lsl #0xc
+D15E8526 sub x6, x9, #0x7a1, lsl #0xc
+D154F416 sub x22, x0, #0x53d, lsl #0xc
+D166073E sub lr, x25, #0x981, lsl #0xc
+D10F7748 sub x8, x26, #0x3dd
+D1262C26 sub x6, x1, #0x98b
+D13C95EE sub x14, x15, #0xf25
+D1401F68 sub x8, x27, #0x7, lsl #0xc
+D140037F sub sp, x27, #0x0, lsl #0xc
+D17FFF6F sub x15, x27, #0xfff, lsl #0xc
+D15E0B7B sub x27, x27, #0x782, lsl #0xc
+D160036F sub x15, x27, #0x800, lsl #0xc
+D150036F sub x15, x27, #0x400, lsl #0xc
+D148036F sub x15, x27, #0x200, lsl #0xc
+D144036F sub x15, x27, #0x100, lsl #0xc
+D142036F sub x15, x27, #0x80, lsl #0xc
+D141036F sub x15, x27, #0x40, lsl #0xc
+D140836F sub x15, x27, #0x20, lsl #0xc
+D140436F sub x15, x27, #0x10, lsl #0xc
+D140236F sub x15, x27, #0x8, lsl #0xc
+D140136F sub x15, x27, #0x4, lsl #0xc
+D1400B6F sub x15, x27, #0x2, lsl #0xc
+D140076F sub x15, x27, #0x1, lsl #0xc

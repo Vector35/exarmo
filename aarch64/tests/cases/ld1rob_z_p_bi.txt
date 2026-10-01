@@ -1,0 +1,17 @@
+// ld1rob_z_p_bi_u8 101|0010|msz=00|ssz=01|0|imm4=xxxx|001|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld1robZPBiU8: LD1ROB  { <Zt>.B }, <Pg>/Z, [<Xn|SP>{, #<imm>}]
+// register fields: Pg, Rn, Zt
+A42F2549 ld1rob {z9.b}, p1/z, [x10, #-0x20]
+A4292AF3 ld1rob {z19.b}, p2/z, [x23, #-0xe0]
+A422294C ld1rob {z12.b}, p2/z, [x10, #0x40]
+A42F2E4B ld1rob {z11.b}, p3/z, [x18, #-0x20]
+A42F3DC0 ld1rob {z0.b}, p7/z, [x14, #-0x20]
+A42E3157 ld1rob {z23.b}, p4/z, [x10, #-0x40]
+A42C29A2 ld1rob {z2.b}, p2/z, [x13, #-0x80]
+A4212A93 ld1rob {z19.b}, p2/z, [x20, #0x20]
+A420201F ld1rob {z31.b}, p0/z, [x0]
+A42F37E9 ld1rob {z9.b}, p5/z, [sp, #-0x20]
+A42F3949 ld1rob {z9.b}, p6/z, [x10, #-0x20]
+A42F254A ld1rob {z10.b}, p1/z, [x10, #-0x20]
+A4282549 ld1rob {z9.b}, p1/z, [x10, #-0x100]
+A4242549 ld1rob {z9.b}, p1/z, [x10, #0x80]

@@ -1,0 +1,43 @@
+// uqincp_r_p_r_uw 001|0010|1|size=xx|101|0|D=0|U=1|1000|1|sf=0|op=0|Pm=xxxx|Rdn=xxxxx
+// UqincpRPRUw: UQINCP  <Wdn>, <Pm>.<T>
+// register fields: Pm, Rdn
+25A989CB uqincp w11, p14.s
+25298921 uqincp w1, p9.b
+256988B8 uqincp w24, p5.h
+25E988C1 uqincp w1, p6.d
+2529898E uqincp w14, p12.b
+25A989C0 uqincp w0, p14.s
+252989F0 uqincp w16, p15.b
+25E98914 uqincp w20, p8.d
+25E98957 uqincp w23, p10.d
+2569899E uqincp w30, p12.h
+256988F1 uqincp w17, p7.h
+25E98888 uqincp w8, p4.d
+2529899D uqincp w29, p12.b
+25298924 uqincp w4, p9.b
+256988E3 uqincp w3, p7.h
+25A98858 uqincp w24, p2.s
+25A9881F uqincp wzr, p0.s
+25A989CE uqincp w14, p14.s
+
+// uqincp_r_p_r_x 001|0010|1|size=xx|101|0|D=0|U=1|1000|1|sf=1|op=0|Pm=xxxx|Rdn=xxxxx
+// UqincpRPRX: UQINCP  <Xdn>, <Pm>.<T>
+// register fields: Pm, Rdn
+25698C34 uqincp x20, p1.h
+25A98CFE uqincp lr, p7.s
+25298D9A uqincp x26, p12.b
+25A98CCB uqincp x11, p6.s
+25698CC8 uqincp x8, p6.h
+25E98C4A uqincp x10, p2.d
+25298C41 uqincp x1, p2.b
+25298D92 uqincp x18, p12.b
+25698C15 uqincp x21, p0.h
+25698CAF uqincp x15, p5.h
+25298D6C uqincp x12, p11.b
+25298D1C uqincp x28, p8.b
+25A98D2F uqincp x15, p9.s
+25698C19 uqincp x25, p0.h
+25298C55 uqincp x21, p2.b
+25E98CC6 uqincp x6, p6.d
+25698DE0 uqincp x0, p15.h
+25698C3F uqincp xzr, p1.h

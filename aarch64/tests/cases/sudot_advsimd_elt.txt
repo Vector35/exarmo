@@ -1,0 +1,16 @@
+// SUDOT_asimdelem_D 0|Q=x|U=0|0|111|1|US=0|0|L=x|M=x|Rm=xxxx|opcode=1111|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SudotAsimdelemD: SUDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.4B[<index>]
+// read together by <Vm>: M, Rm
+// read together by <index>: L, H
+// register fields: Rn, Rd
+0F00F005 sudot v5.2s, v0.8b, v0.4b[0]
+0F00F00C sudot v12.2s, v0.8b, v0.4b[0]
+0F00F013 sudot v19.2s, v0.8b, v0.4b[0]
+4F3FFBE0 sudot v0.4s, v31.16b, v31.4b[3]
+0F00F01F sudot v31.2s, v0.8b, v0.4b[0]
+0F0FF800 sudot v0.2s, v0.8b, v15.4b[2]
+0F30F005 sudot v5.2s, v0.8b, v16.4b[1]
+0F08F005 sudot v5.2s, v0.8b, v8.4b[0]
+0F04F005 sudot v5.2s, v0.8b, v4.4b[0]
+0F02F005 sudot v5.2s, v0.8b, v2.4b[0]
+0F01F005 sudot v5.2s, v0.8b, v1.4b[0]

@@ -1,0 +1,34 @@
+// umlalb_z_zzzi_d 010|0010|0|size=11|1|i2h=x|Zm=xxxx|10|S=0|U=1|i2l=x|T=0|Zn=xxxxx|Zda=xxxxx
+// UmlalbZZzziD: UMLALB  <Zda>.D, <Zn>.S, <Zm>.S[<imm>]
+// read together by <imm>: i2h, i2l
+// register fields: Zm, Zn, Zda
+44E798B7 umlalb z23.d, z5.s, z7.s[1]
+44F69030 umlalb z16.d, z1.s, z6.s[2]
+44F49B11 umlalb z17.d, z24.s, z4.s[3]
+44F390C9 umlalb z9.d, z6.s, z3.s[2]
+44FD9AAF umlalb z15.d, z21.s, z13.s[3]
+44EA9059 umlalb z25.d, z2.s, z10.s[0]
+44F7903B umlalb z27.d, z1.s, z7.s[2]
+44F09B31 umlalb z17.d, z25.s, z0.s[3]
+44EF9800 umlalb z0.d, z0.s, z15.s[1]
+44E79BFF umlalb z31.d, z31.s, z7.s[1]
+44E798F7 umlalb z23.d, z7.s, z7.s[1]
+44E798A7 umlalb z7.d, z5.s, z7.s[1]
+
+// umlalb_z_zzzi_s 010|0010|0|size=10|1|i3h=xx|Zm=xxx|10|S=0|U=1|i3l=x|T=0|Zn=xxxxx|Zda=xxxxx
+// UmlalbZZzziS: UMLALB  <Zda>.S, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+44B09073 umlalb z19.s, z3.h, z0.h[4]
+44AB9159 umlalb z25.s, z10.h, z3.h[2]
+44A0986E umlalb z14.s, z3.h, z0.h[1]
+44A193FA umlalb z26.s, z31.h, z1.h[0]
+44B09AE6 umlalb z6.s, z23.h, z0.h[5]
+44A298CC umlalb z12.s, z6.h, z2.h[1]
+44A49889 umlalb z9.s, z4.h, z4.h[1]
+44B19A34 umlalb z20.s, z17.h, z1.h[5]
+44BD9000 umlalb z0.s, z0.h, z5.h[6]
+44B6907F umlalb z31.s, z3.h, z6.h[4]
+44B79073 umlalb z19.s, z3.h, z7.h[4]
+44A89860 umlalb z0.s, z3.h, z0.h[3]
+44B89873 umlalb z19.s, z3.h, z0.h[7]

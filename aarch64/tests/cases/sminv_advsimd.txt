@@ -1,0 +1,31 @@
+// SMINV_asimdall_only 0|Q=x|U=0|0|111|0|size=xx|11000|op=1|1010|10|Rn=xxxxx|Rd=xxxxx
+// SminvAsimdallOnly: SMINV  <V><d>, <Vn>.<T>
+// read together by <d>: size, Rd
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+4E31A817 sminv b23, v0.16b
+4E71A9E9 sminv h9, v15.8h
+4E31A984 sminv b4, v12.16b
+4E31A806 sminv b6, v0.16b
+4E71AB55 sminv h21, v26.8h
+4E31A8A0 sminv b0, v5.16b
+4E31A850 sminv b16, v2.16b
+4E31AA44 sminv b4, v18.16b
+4E71AB4B sminv h11, v26.8h
+0E71A929 sminv h9, v9.4h
+4E71AAED sminv h13, v23.8h
+0E31AA78 sminv b24, v19.8b
+4E71AAC2 sminv h2, v22.8h
+4E71AB27 sminv h7, v25.8h
+4EB1A9D3 sminv s19, v14.4s
+4E31AB58 sminv b24, v26.16b
+4E31ABFF sminv b31, v31.16b
+4EF1A817 UNDEFINED
+0EB1A817 UNDEFINED
+0EF1A817 UNDEFINED
+4E71A800 sminv h0, v0.8h
+4E71A81F sminv h31, v0.8h
+4EB1A800 sminv s0, v0.4s
+4EB1A81F sminv s31, v0.4s
+4EF1A800 UNDEFINED
+4EF1A81F UNDEFINED

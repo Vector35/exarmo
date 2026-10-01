@@ -1,0 +1,13 @@
+// sbclt_z_zzz_ 010|0010|1|1|sz=x|0|Zm=xxxxx|11|010|T=1|Zn=xxxxx|Zda=xxxxx
+// SbcltZZzz: SBCLT  <Zda>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zda
+45CCD693 sbclt z19.d, z20.d, z12.d
+45D3D71E sbclt z30.d, z24.d, z19.d
+4590D691 sbclt z17.s, z20.s, z16.s
+45C1D59B sbclt z27.d, z12.d, z1.d
+45D5D56C sbclt z12.d, z11.d, z21.d
+4584D799 sbclt z25.s, z28.s, z4.s
+45CED7F9 sbclt z25.d, z31.d, z14.d
+4581D59D sbclt z29.s, z12.s, z1.s
+45C0D400 sbclt z0.d, z0.d, z0.d
+45DFD69F sbclt z31.d, z20.d, z31.d

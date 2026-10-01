@@ -1,0 +1,65 @@
+// LDXR_LR32_ldstexclr size=10|0010000|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdxrLr32Ldstexclr: LDXR  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+885F7FC0 ldxr w0, [lr]
+885F7F34 ldxr w20, [x25]
+885F7E3B ldxr w27, [x17]
+885F7CC5 ldxr w5, [x6]
+885F7C40 ldxr w0, [x2]
+885F7DE3 ldxr w3, [x15]
+885F7E16 ldxr w22, [x16]
+885F7F90 ldxr w16, [x28]
+88534BE7 ldxr w7, [sp] (unpredictable)
+88455668 ldxr w8, [x19] (unpredictable)
+88556D3B ldxr w27, [x9] (unpredictable)
+88491AFE ldxr w30, [x23] (unpredictable)
+884B4D3F ldxr wzr, [x9] (unpredictable)
+885E09CE ldxr w14, [x14] (unpredictable)
+884C4044 ldxr w4, [x2] (unpredictable)
+88485AF7 ldxr w23, [x23] (unpredictable)
+884C56BC ldxr w28, [x21] (unpredictable)
+885845A7 ldxr w7, [x13] (unpredictable)
+88565B23 ldxr w3, [x25] (unpredictable)
+884C4304 ldxr w4, [x24] (unpredictable)
+88437FF2 ldxr w18, [sp] (unpredictable)
+88495364 ldxr w4, [x27] (unpredictable)
+88496226 ldxr w6, [x17] (unpredictable)
+884A7887 ldxr w7, [x4] (unpredictable)
+88400000 ldxr w0, [x0] (unpredictable)
+885023C0 ldxr w0, [lr] (unpredictable)
+884413C0 ldxr w0, [lr] (unpredictable)
+884207C0 ldxr w0, [lr] (unpredictable)
+88417FC0 ldxr w0, [lr] (unpredictable)
+
+// LDXR_LR64_ldstexclr size=11|0010000|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdxrLr64Ldstexclr: LDXR  <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+C85F7D23 ldxr x3, [x9]
+C85F7CE4 ldxr x4, [x7]
+C85F7FED ldxr x13, [sp]
+C85F7FAA ldxr x10, [fp]
+C85F7D57 ldxr x23, [x10]
+C85F7DE0 ldxr x0, [x15]
+C85F7F09 ldxr x9, [x24]
+C85F7E67 ldxr x7, [x19]
+C8572629 ldxr x9, [x17] (unpredictable)
+C858098E ldxr x14, [x12] (unpredictable)
+C8573E9E ldxr lr, [x20] (unpredictable)
+C84E18B2 ldxr x18, [x5] (unpredictable)
+C8422F95 ldxr x21, [x28] (unpredictable)
+C8533EDB ldxr x27, [x22] (unpredictable)
+C85A5F8E ldxr x14, [x28] (unpredictable)
+C8445345 ldxr x5, [x26] (unpredictable)
+C85250B4 ldxr x20, [x5] (unpredictable)
+C8514FC7 ldxr x7, [lr] (unpredictable)
+C85D4732 ldxr x18, [x25] (unpredictable)
+C84A65E8 ldxr x8, [x15] (unpredictable)
+C8491B97 ldxr x23, [x28] (unpredictable)
+C8580CE4 ldxr x4, [x7] (unpredictable)
+C856116C ldxr x12, [x11] (unpredictable)
+C84D4212 ldxr x18, [x16] (unpredictable)
+C840001F ldxr xzr, [x0] (unpredictable)
+C85F7D29 ldxr x9, [x9]
+C8502123 ldxr x3, [x9] (unpredictable)
+C8480523 ldxr x3, [x9] (unpredictable)
+C8417D23 ldxr x3, [x9] (unpredictable)

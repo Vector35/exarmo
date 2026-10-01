@@ -1,0 +1,20 @@
+// VPADD_i_A1 1111|0|01|U=0|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1011|N=x|Q=x|M=x|o1=1|Vm=xxxx
+// VpaddIA1: VPADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f22c3b95 vpadd.i32 d3, d28, d5
+f269ab9a vpadd.i32 d26, d25, d10
+f262db18 vpadd.i32 d29, d2, d8
+f216dbb0 vpadd.i16 d13, d22, d16
+f24c1b9a vpadd.i8 d17, d28, d10
+f21dfb94 vpadd.i16 d15, d29, d4
+f2515b1c vpadd.i16 d21, d1, d12
+f21fbbb6 vpadd.i16 d11, d31, d22
+F23C3BD5 UNDEFINED
+F2200B9F vpadd.i32 d0, d16, d15
+F2288B92 vpadd.i32 d8, d24, d2
+F2244B91 vpadd.i32 d4, d20, d1
+F2202B10 vpadd.i32 d2, d0, d0
+F26F0B3F vpadd.i32 d16, d15, d31
+F26CFB95 vpadd.i32 d31, d28, d5

@@ -1,0 +1,70 @@
+// sqrshrnb_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=1|U=0|R=1|T=0|Zn=xxxxx|Zd=xxxxx
+// SqrshrnbZZi: SQRSHRNB  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+45332B5A sqrshrnb z26.h, z26.s, #0xd
+453E288D sqrshrnb z13.h, z4.s, #0x2
+45342B39 sqrshrnb z25.h, z25.s, #0xc
+45362934 sqrshrnb z20.h, z9.s, #0xa
+453329A2 sqrshrnb z2.h, z13.s, #0xd
+456D28D2 sqrshrnb z18.s, z6.d, #0x13
+45372BE7 sqrshrnb z7.h, z31.s, #0x9
+45342968 sqrshrnb z8.h, z11.s, #0xc
+45602800 sqrshrnb z0.s, z0.d, #0x20
+45312B5F sqrshrnb z31.h, z26.s, #0xf
+45322B5A sqrshrnb z26.h, z26.s, #0xe
+45202B5A UNDEFINED
+45212B5A UNDEFINED
+45222B5A UNDEFINED
+45232B5A UNDEFINED
+45242B5A UNDEFINED
+45252B5A UNDEFINED
+45262B5A UNDEFINED
+45272B5A UNDEFINED
+45282B5A sqrshrnb z26.b, z26.h, #0x8
+45292B5A sqrshrnb z26.b, z26.h, #0x7
+452A2B5A sqrshrnb z26.b, z26.h, #0x6
+452B2B5A sqrshrnb z26.b, z26.h, #0x5
+452C2B5A sqrshrnb z26.b, z26.h, #0x4
+452D2B5A sqrshrnb z26.b, z26.h, #0x3
+452E2B5A sqrshrnb z26.b, z26.h, #0x2
+452F2B5A sqrshrnb z26.b, z26.h, #0x1
+45302B5A sqrshrnb z26.h, z26.s, #0x10
+45352B5A sqrshrnb z26.h, z26.s, #0xb
+45382B5A sqrshrnb z26.h, z26.s, #0x8
+45392B5A sqrshrnb z26.h, z26.s, #0x7
+453A2B5A sqrshrnb z26.h, z26.s, #0x6
+453B2B5A sqrshrnb z26.h, z26.s, #0x5
+453C2B5A sqrshrnb z26.h, z26.s, #0x4
+453D2B5A sqrshrnb z26.h, z26.s, #0x3
+453F2B5A sqrshrnb z26.h, z26.s, #0x1
+45612B5A sqrshrnb z26.s, z26.d, #0x1f
+45622B5A sqrshrnb z26.s, z26.d, #0x1e
+45632B5A sqrshrnb z26.s, z26.d, #0x1d
+45642B5A sqrshrnb z26.s, z26.d, #0x1c
+45652B5A sqrshrnb z26.s, z26.d, #0x1b
+45662B5A sqrshrnb z26.s, z26.d, #0x1a
+45672B5A sqrshrnb z26.s, z26.d, #0x19
+45682B5A sqrshrnb z26.s, z26.d, #0x18
+45692B5A sqrshrnb z26.s, z26.d, #0x17
+456A2B5A sqrshrnb z26.s, z26.d, #0x16
+456B2B5A sqrshrnb z26.s, z26.d, #0x15
+456C2B5A sqrshrnb z26.s, z26.d, #0x14
+456E2B5A sqrshrnb z26.s, z26.d, #0x12
+456F2B5A sqrshrnb z26.s, z26.d, #0x11
+45702B5A sqrshrnb z26.s, z26.d, #0x10
+45712B5A sqrshrnb z26.s, z26.d, #0xf
+45722B5A sqrshrnb z26.s, z26.d, #0xe
+45732B5A sqrshrnb z26.s, z26.d, #0xd
+45742B5A sqrshrnb z26.s, z26.d, #0xc
+45752B5A sqrshrnb z26.s, z26.d, #0xb
+45762B5A sqrshrnb z26.s, z26.d, #0xa
+45772B5A sqrshrnb z26.s, z26.d, #0x9
+45782B5A sqrshrnb z26.s, z26.d, #0x8
+45792B5A sqrshrnb z26.s, z26.d, #0x7
+457A2B5A sqrshrnb z26.s, z26.d, #0x6
+457B2B5A sqrshrnb z26.s, z26.d, #0x5
+457C2B5A sqrshrnb z26.s, z26.d, #0x4
+457D2B5A sqrshrnb z26.s, z26.d, #0x3
+457E2B5A sqrshrnb z26.s, z26.d, #0x2
+457F2B5A sqrshrnb z26.s, z26.d, #0x1

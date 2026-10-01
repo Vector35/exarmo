@@ -1,0 +1,57 @@
+// STFADD_16 size=01|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=11111
+// Stfadd16: STFADD  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+7C20803F stfadd h0, [x1]
+7C20811F stfadd h0, [x8]
+7C2081FF stfadd h0, [x15]
+7C3F801F stfadd h31, [x0]
+7C2083FF stfadd h0, [sp]
+7C20801F stfadd h0, [x0]
+
+// STFADD_32 size=10|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=11111
+// Stfadd32: STFADD  <Ss>, [<Xn|SP>]
+// register fields: Rs, Rn
+BC2080DF stfadd s0, [x6]
+BC2081BF stfadd s0, [x13]
+BC20829F stfadd s0, [x20]
+BC3F801F stfadd s31, [x0]
+BC2083FF stfadd s0, [sp]
+BC20801F stfadd s0, [x0]
+
+// STFADD_64 size=11|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=11111
+// Stfadd64: STFADD  <Ds>, [<Xn|SP>]
+// register fields: Rs, Rn
+FC20809F stfadd d0, [x4]
+FC20817F stfadd d0, [x11]
+FC20825F stfadd d0, [x18]
+FC3F801F stfadd d31, [x0]
+FC2083FF stfadd d0, [sp]
+FC20801F stfadd d0, [x0]
+
+// STFADDL_16 size=01|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=11111
+// Stfaddl16: STFADDL  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+7C60809F stfaddl h0, [x4]
+7C60817F stfaddl h0, [x11]
+7C60825F stfaddl h0, [x18]
+7C7F801F stfaddl h31, [x0]
+7C6083FF stfaddl h0, [sp]
+7C60801F stfaddl h0, [x0]
+
+// STFADDL_32 size=10|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=11111
+// Stfaddl32: STFADDL  <Ss>, [<Xn|SP>]
+// register fields: Rs, Rn
+BC60805F stfaddl s0, [x2]
+BC60813F stfaddl s0, [x9]
+BC60821F stfaddl s0, [x16]
+BC7F801F stfaddl s31, [x0]
+BC6083FF stfaddl s0, [sp]
+BC60801F stfaddl s0, [x0]
+
+// STFADDL_64 size=11|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=11111
+// Stfaddl64: STFADDL  <Ds>, [<Xn|SP>]
+// register fields: Rs, Rn
+FC60801F stfaddl d0, [x0]
+FC6080FF stfaddl d0, [x7]
+FC6081DF stfaddl d0, [x14]
+FC7F83FF stfaddl d31, [sp]

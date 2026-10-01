@@ -1,0 +1,24 @@
+// VSUBL_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|001|op=0|N=x|0|M=x|0|Vm=xxxx
+// VsublA1: VSUBL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f2e0c203 vsubl.s32 q14, d0, d3
+f2a7228e vsubl.s32 q1, d23, d14
+f2e1022f vsubl.s32 q8, d1, d31
+f2d62207 vsubl.s16 q9, d6, d7
+f397c281 vsubl.u16 q6, d23, d1
+f3ed8222 vsubl.u32 q12, d13, d18
+f28282ad vsubl.s8 q4, d18, d29
+f288a20b vsubl.s8 q5, d8, d11
+F3FDF222 UNDEFINED
+F3CF4200 vsubl.u8 q10, d15, d0
+F2A40208 vsubl.s32 q0, d4, d8
+F2E01203 UNDEFINED
+F2E0C284 vsubl.s32 q14, d16, d4
+F3B6F207 UNDEFINED
+F2E0F203 UNDEFINED
+F2EFC200 vsubl.s32 q14, d15, d0
+F2EFC28F vsubl.s32 q14, d31, d15
+F2E0C220 vsubl.s32 q14, d0, d16

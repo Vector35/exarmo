@@ -1,0 +1,71 @@
+// SUB_32_addsub_ext sf=0|op=1|S=0|01011|opt=00|1|Rm=xxxxx|option=xxx|imm3=xxx|Rn=xxxxx|Rd=xxxxx
+// Sub32AddsubExt: SUB  <Wd|WSP>, <Wn|WSP>, <Wm>{, <extend> {#<amount>}}
+// register fields: Rm, Rn, Rd
+4B2143E3 sub w3, wsp, w1
+4B214BE3 sub w3, wsp, w1, lsl #0x2
+4B2140A3 sub w3, w5, w1, uxtw
+4B2140BF sub wsp, w5, w1
+4B2BC8B6 sub w22, w5, w11, sxtw #0x2
+4B202AEC sub w12, w23, w0, uxth #0x2
+4B3992AA sub w10, w21, w25, sxtb #0x4
+4B3006B0 sub w16, w21, w16, uxtb #0x1
+4B362FFE sub w30, wsp, w22, uxth #0x3
+4B2D2319 sub w25, w24, w13, uxth
+4B2329ED sub w13, w15, w3, uxth #0x2
+4B32CB39 sub w25, w25, w18, sxtw #0x2
+4B3251DB sub w27, w14, w18, uxtw #0x4
+4B228909 sub w9, w8, w2, sxtb #0x2
+4B2DEB78 sub w24, w27, w13, sxtx #0x2
+4B3BE8A3 sub w3, w5, w27, sxtx #0x2
+4B24044C sub w12, w2, w4, uxtb #0x1
+4B2DEAD6 sub w22, w22, w13, sxtx #0x2
+4B26E76A sub w10, w27, w6, sxtx #0x1
+4B2E500B sub w11, w0, w14, uxtw #0x4
+4B3F63E0 sub w0, wsp, wzr, uxtx
+4B21A3E3 sub w3, wsp, w1, sxth
+4B2157E3 UNDEFINED
+4B215BE3 UNDEFINED
+4B215FE3 UNDEFINED
+
+// SUB_64_addsub_ext sf=1|op=1|S=0|01011|opt=00|1|Rm=xxxxx|option=xxx|imm3=xxx|Rn=xxxxx|Rd=xxxxx
+// Sub64AddsubExt: SUB  <Xd|SP>, <Xn|SP>, <m>{, <extend> {#<amount>}}
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rd
+CB2163E3 sub x3, sp, x1
+CB216BE3 sub x3, sp, x1, lsl #0x2
+CB2160A3 sub x3, x5, x1, uxtx
+CB2160BF sub sp, x5, x1
+CB3F8610 sub x16, x16, wzr, sxtb #0x1
+CB31EB11 sub x17, x24, x17, sxtx #0x2
+CB29E4DA sub x26, x6, x9, sxtx #0x1
+CB22ECBF sub sp, x5, x2, sxtx #0x3
+CB34041B sub x27, x0, w20, uxtb #0x1
+CB2CEE7D sub fp, x19, x12, sxtx #0x3
+CB2750CE sub x14, x6, w7, uxtw #0x4
+CB20C22F sub x15, x17, w0, sxtw
+CB2D490F sub x15, x8, w13, uxtw #0x2
+CB31A7EC sub x12, sp, w17, sxth #0x1
+CB3E448C sub x12, x4, w30, uxtw #0x1
+CB2AA0CC sub x12, x6, w10, sxth
+CB390F88 sub x8, x28, w25, uxtb #0x3
+CB2A0DCD sub x13, x14, w10, uxtb #0x3
+CB20230D sub x13, x24, w0, uxth
+CB3D6481 sub x1, x4, fp, uxtx #0x1
+CB2163E0 sub x0, sp, x1
+CB2177E3 UNDEFINED
+CB217BE3 UNDEFINED
+CB217FE3 UNDEFINED
+CB2003E3 sub x3, sp, w0, uxtb
+CB2043E3 sub x3, sp, w0, uxtw
+CB2063E3 sub x3, sp, x0
+CB2083E3 sub x3, sp, w0, sxtb
+CB20A3E3 sub x3, sp, w0, sxth
+CB20E3E3 sub x3, sp, x0, sxtx
+CB3F03E3 sub x3, sp, wzr, uxtb
+CB3F23E3 sub x3, sp, wzr, uxth
+CB3F43E3 sub x3, sp, wzr, uxtw
+CB3F63E3 sub x3, sp, xzr
+CB3FA3E3 sub x3, sp, wzr, sxth
+CB3FC3E3 sub x3, sp, wzr, sxtw
+CB3FE3E3 sub x3, sp, xzr, sxtx
+CB216023 sub x3, x1, x1, uxtx

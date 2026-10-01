@@ -1,0 +1,54 @@
+// VMUL_i_T1_D 111|op=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VmulIT1D: VMUL{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: op, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef1e59b5 vmul.i16 d5, d30, d21
+ef16e9bd vmul.i16 d14, d22, d29
+ef013932 vmul.i8 d3, d1, d18
+ef13a933 vmul.i16 d10, d3, d19
+ef02e996 vmul.i8 d14, d18, d6
+ef01e916 vmul.i8 d14, d1, d6
+ef0b099a vmul.i8 d0, d27, d10
+ef10d9b1 vmul.i16 d13, d16, d17
+FF4FF930 vmul.p8 d31, d15, d16
+EF2889BF vmul.i32 d8, d24, d31
+EF3E59B5 UNDEFINED
+EF2449B8 vmul.i32 d4, d20, d24
+FF002934 vmul.p8 d2, d0, d20
+EF1F1910 vmul.i16 d1, d15, d0
+FF1E59B5 UNDEFINED
+FF2E59B5 UNDEFINED
+FF3E59B5 UNDEFINED
+EF1FF99F vmul.i16 d15, d31, d15
+EF5E09B0 vmul.i16 d16, d30, d16
+EF5EF9BF vmul.i16 d31, d30, d31
+EF1E59B5 [ne] vmulne.i16 d5, d30, d21
+
+// VMUL_i_T1_Q 111|op=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VmulIT1Q: VMUL{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: op, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef5269f0 vmul.i16 q11, q9, q8
+ef1ce9f6 vmul.i16 q7, q14, q11
+ef0869fe vmul.i8 q3, q12, q15
+ef0869fc vmul.i8 q3, q12, q14
+ef2cc954 vmul.i32 q6, q6, q2
+ef28495c vmul.i32 q2, q4, q6
+ef24e9d8 vmul.i32 q7, q10, q4
+ef6a2956 vmul.i32 q9, q5, q3
+FF0009F2 vmul.p8 q0, q8, q9
+EF7FF9FF UNDEFINED
+EF7119F1 UNDEFINED
+FF408950 vmul.p8 q12, q0, q0
+FF1FF95F UNDEFINED
+FF6FF9FF UNDEFINED
+FF7269F0 UNDEFINED
+EF1009F0 vmul.i16 q0, q8, q8
+EF5209F0 vmul.i16 q8, q9, q8
+EF5269F0 [ne] vmulne.i16 q11, q9, q8

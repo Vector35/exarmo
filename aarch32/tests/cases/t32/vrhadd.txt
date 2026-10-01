@@ -1,0 +1,50 @@
+// VRHADD_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VrhaddT1D: VRHADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef4cf126 vrhadd.s8 d31, d12, d22
+ef1f9121 vrhadd.s16 d9, d15, d17
+ff554128 vrhadd.u16 d20, d5, d24
+ef6331a9 vrhadd.s32 d19, d19, d25
+ff5421aa vrhadd.u16 d18, d20, d26
+ef4a7101 vrhadd.s8 d23, d10, d1
+ef0df183 vrhadd.s8 d15, d29, d3
+ff6a3126 vrhadd.u32 d19, d10, d22
+EF7CF126 UNDEFINED
+FF400120 vrhadd.u8 d16, d0, d16
+EF48812F vrhadd.s8 d24, d8, d31
+EF421124 vrhadd.s8 d17, d2, d20
+EF010122 vrhadd.s8 d0, d1, d18
+FF7CF126 UNDEFINED
+EF400100 vrhadd.s8 d16, d0, d0
+EF40F18F vrhadd.s8 d31, d16, d15
+EF4FF1A0 vrhadd.s8 d31, d31, d16
+EF4CF12F vrhadd.s8 d31, d12, d31
+EF4CF126 [ne] vrhaddne.s8 d31, d12, d22
+
+// VRHADD_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VrhaddT1Q: VRHADD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef0ac1e6 vrhadd.s8 q6, q13, q11
+ef2e21e6 vrhadd.s32 q1, q15, q11
+ef02a1c4 vrhadd.s8 q5, q9, q2
+ff2c8166 vrhadd.u32 q4, q6, q11
+ff4c616a vrhadd.u8 q11, q6, q13
+ef644164 vrhadd.s32 q10, q2, q10
+ef00a1e0 vrhadd.s8 q5, q8, q8
+ef1ea1e4 vrhadd.s16 q5, q15, q10
+EF3FF1EF UNDEFINED
+FF1801E8 vrhadd.u16 q0, q12, q12
+EF3111E1 UNDEFINED
+EF000162 vrhadd.s8 q0, q0, q9
+FF3FF14F UNDEFINED
+EF4A01C0 vrhadd.s8 q8, q13, q0
+EF4FF1EF UNDEFINED
+EF0AC1E6 [ne] vrhaddne.s8 q6, q13, q11

@@ -1,0 +1,22 @@
+// VCVTB_T1_bfs 111|0|11|10|1|D=x|11|o1=0|opc2=011|Vd=xxxx|10|size=01|o3=0|1|M=x|0|Vm=xxxx
+// VcvtbT1Bfs: VCVTB{<c>}{<q>}.BF16.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeb3e941 vcvtb.bf16.f32 s28, s2
+eeb3f945 vcvtb.bf16.f32 s30, s10
+eeb3c94e vcvtb.bf16.f32 s24, s28
+eeb37948 vcvtb.bf16.f32 s14, s16
+eeb3c945 vcvtb.bf16.f32 s24, s10
+eeb3f96e vcvtb.bf16.f32 s30, s29
+eef33966 vcvtb.bf16.f32 s7, s13
+eeb3794f vcvtb.bf16.f32 s14, s30
+EEB30940 vcvtb.bf16.f32 s0, s0
+EEB38944 vcvtb.bf16.f32 s16, s8
+EEB34942 vcvtb.bf16.f32 s8, s4
+EEB32940 vcvtb.bf16.f32 s4, s0
+EEB31960 vcvtb.bf16.f32 s2, s1
+EEB3096F vcvtb.bf16.f32 s0, s31
+EEF30941 vcvtb.bf16.f32 s1, s2
+EEF3F941 vcvtb.bf16.f32 s31, s2
+EEB3E941 [ne] vcvtbne.bf16.f32 s28, s2

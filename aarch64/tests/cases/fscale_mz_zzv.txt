@@ -1,0 +1,22 @@
+// fscale_mz_zzv_2x1 1|10|0000|1|size=xx|10|Zm=xxxx|10100|0|01|100|Zdn=xxxx|op=0
+// FscaleMzZzv2x1: FSCALE  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, <Zm>.<T>
+// register fields: Zm, Zdn
+C160A18C fscale {z12.h-z13.h}, {z12.h-z13.h}, z0.h
+C160A19A fscale {z26.h-z27.h}, {z26.h-z27.h}, z0.h
+C161A18A fscale {z10.h-z11.h}, {z10.h-z11.h}, z1.h
+C1AFA180 fscale {z0.s-z1.s}, {z0.s-z1.s}, z15.s
+C1E0A19E fscale {z30.d-z31.d}, {z30.d-z31.d}, z0.d
+C160A180 fscale {z0.h-z1.h}, {z0.h-z1.h}, z0.h
+
+// fscale_mz_zzv_4x1 1|10|0000|1|size=xx|10|Zm=xxxx|10101|0|01|100|Zdn=xxx|0|op=0
+// FscaleMzZzv4x1: FSCALE  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, <Zm>.<T>
+// register fields: Zm, Zdn
+C160A988 fscale {z8.h-z11.h}, {z8.h-z11.h}, z0.h
+C161A994 fscale {z20.h-z23.h}, {z20.h-z23.h}, z1.h
+C162A984 fscale {z4.h-z7.h}, {z4.h-z7.h}, z2.h
+C1AFA980 fscale {z0.s-z3.s}, {z0.s-z3.s}, z15.s
+C1E0A98C fscale {z12.d-z15.d}, {z12.d-z15.d}, z0.d
+C160A990 fscale {z16.h-z19.h}, {z16.h-z19.h}, z0.h
+C160A998 fscale {z24.h-z27.h}, {z24.h-z27.h}, z0.h
+C160A99C fscale {z28.h-z31.h}, {z28.h-z31.h}, z0.h
+C160A980 fscale {z0.h-z3.h}, {z0.h-z3.h}, z0.h

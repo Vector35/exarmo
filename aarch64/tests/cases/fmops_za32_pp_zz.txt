@@ -1,0 +1,17 @@
+// fmops_za32_pp_zz_16 1|00|0000|1|10|1|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|00|ZAda=xx
+// FmopsZa32PpZz16: FMOPS  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+81B3A851 fmops za1.s, p2/m, p5/m, z2.h, z19.h
+81B9C373 fmops za3.s, p0/m, p6/m, z27.h, z25.h
+81BC0A11 fmops za1.s, p2/m, p0/m, z16.h, z28.h
+81A95493 fmops za3.s, p5/m, p2/m, z4.h, z9.h
+81A55DF2 fmops za2.s, p7/m, p2/m, z15.h, z5.h
+81A75373 fmops za3.s, p4/m, p2/m, z27.h, z7.h
+81B70513 fmops za3.s, p1/m, p0/m, z8.h, z23.h
+81B54B72 fmops za2.s, p2/m, p2/m, z27.h, z21.h
+81A02C10 fmops za0.s, p3/m, p1/m, z0.h, z0.h
+81BF7BF1 fmops za1.s, p6/m, p3/m, z31.h, z31.h
+81B38851 fmops za1.s, p2/m, p4/m, z2.h, z19.h
+81B3E851 fmops za1.s, p2/m, p7/m, z2.h, z19.h
+81A5A851 fmops za1.s, p2/m, p5/m, z2.h, z5.h
+81A2A8B1 fmops za1.s, p2/m, p5/m, z5.h, z2.h

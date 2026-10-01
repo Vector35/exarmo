@@ -1,0 +1,22 @@
+// LDRSB_l_A1 cond=xxxx|00|0|P=x|U=x|1|W=x|o1=1|Rn=1111|Rt=xxxx|imm4H=xxxx|1|op2=10|1|imm4L=xxxx
+// LdrsbLA1: LDRSB{<c>}{<q>}  <Rt>, <label>
+// read together by <label>: imm4H, imm4L
+// register fields: Rt
+417f0ddf ldrsbmi r0, 0xff29 (unpredictable)
+d0dfecd6 ldrsble lr, 0x100ce (unpredictable)
+215f7cdc ldrsbhs r7, 0xff3c
+117f87d9 ldrsbne r8, 0xff8f (unpredictable)
+b1dfd1da ldrsblt sp, 0x10022
+60df9bd9 ldrsbvs r9, 0x100c1 (unpredictable)
+715f41dc ldrsbvc r4, 0xffec
+61df11d9 ldrsbvs r1, 0x10021
+017FF0D0 ldrsbeq pc, 0x10008 (unpredictable)
+F17F0DDF UNALLOCATED
+817F0FD8 ldrsbhi r0, 0xff10 (unpredictable)
+417F08D4 ldrsbmi r0, 0xff84 (unpredictable)
+417F04D2 ldrsbmi r0, 0xffc6 (unpredictable)
+417F02D1 ldrsbmi r0, 0xffe7 (unpredictable)
+417F00D0 ldrsbmi r0, 0x10008 (unpredictable)
+417F00DF ldrsbmi r0, 0xfff9 (unpredictable)
+417F0FD0 ldrsbmi r0, 0xff18 (unpredictable)
+417F0FDF ldrsbmi r0, 0xff09 (unpredictable)

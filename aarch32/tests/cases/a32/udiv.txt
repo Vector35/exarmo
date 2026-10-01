@@ -1,0 +1,12 @@
+// UDIV_A1 cond=xxxx|011|10|op1=011|Rd=xxxx|(1)(1)(1)(1)|Rm=xxxx|op2=000|1|Rn=xxxx
+// UdivA1: UDIV{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+6739f21e udivvs r9, lr, r2
+// Binary Ninja's tests
+e733f514 udiv r3, r4, r5
+07300010 udiveq r0, r0, r0 (unpredictable)
+F739F21E UNALLOCATED
+873F8F1F udivhi pc, pc, pc (unpredictable)
+4739491E udivmi r9, lr, r9 (unpredictable)
+27392219 udivcs r9, r9, r2 (unpredictable)
+17391212 udivne r9, r2, r2 (unpredictable)

@@ -1,0 +1,37 @@
+// UXTB_T1 1011|0010|U=1|B=1|Rm=xxx|Rd=xxx
+// UxtbT1: UXTB{<c>}{<q>}  {<Rd>, }<Rm>
+// register fields: Rm, Rd
+// IT state read: condition
+b2c0 uxtb r0, r0
+b2c1 uxtb r1, r0
+b2c2 uxtb r2, r0
+b2c3 uxtb r3, r0
+b2c4 uxtb r4, r0
+b2c5 uxtb r5, r0
+b2c6 uxtb r6, r0
+b2c7 uxtb r7, r0
+B2C8 uxtb r0, r1
+B2D0 uxtb r0, r2
+B2D8 uxtb r0, r3
+B2E0 uxtb r0, r4
+B2E8 uxtb r0, r5
+B2F0 uxtb r0, r6
+B2F8 uxtb r0, r7
+B2C0 [ne] uxtbne r0, r0
+
+// UXTB_T2 111|11010|0|op1=10|U=1|Rn=1111|1111|Rd=xxxx|1(0)|rotate=xx|Rm=xxxx
+// UxtbT2: UXTB{<c>}{<q>}  {<Rd>, }<Rm> {, ROR #<amount>}
+// register fields: Rd, Rm
+// IT state read: condition
+fa5ffdb5 uxtb sp, r5, ror #24
+fa5ffefd uxtb lr, sp, ror #24 (unpredictable)
+fa5ff6d1 uxtb r6, r1, ror #8 (unpredictable)
+fa5ff8de uxtb r8, lr, ror #8 (unpredictable)
+fa5ff5a4 uxtb r5, r4, ror #16
+fa5ffc83 uxtb r12, r3
+fa5ff3be uxtb r3, lr, ror #24
+fa5ff7a9 uxtb r7, r9, ror #16
+FA5FF0B0 uxtb r0, r0, ror #0x18
+FA5FFFBF uxtb pc, pc, ror #0x18 (unpredictable)
+FA5FFDBD uxtb sp, sp, ror #0x18
+FA5FFDB5 [ne] uxtbne sp, r5, ror #0x18

@@ -1,0 +1,43 @@
+// RCWSWP_64_memop 0|S=0|111|VR=0|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=010|00|Rn=xxxxx|Rt=xxxxx
+// Rcwswp64Memop: RCWSWP  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3820A003 rcwswp x0, x3, [x0]
+3820A00A rcwswp x0, x10, [x0]
+3820A011 rcwswp x0, x17, [x0]
+383FA3E0 rcwswp xzr, x0, [sp]
+3820A01F rcwswp x0, xzr, [x0]
+3820A000 rcwswp x0, x0, [x0]
+3821A043 rcwswp x1, x3, [x2]
+
+// RCWSWPA_64_memop 0|S=0|111|VR=0|00|A=1|R=0|1|Rs=xxxxx|o3=1|opc=010|00|Rn=xxxxx|Rt=xxxxx
+// Rcwswpa64Memop: RCWSWPA  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+38A0A006 rcwswpa x0, x6, [x0]
+38A0A00D rcwswpa x0, x13, [x0]
+38A0A014 rcwswpa x0, x20, [x0]
+38BFA3E0 rcwswpa xzr, x0, [sp]
+38A0A01F rcwswpa x0, xzr, [x0]
+38A0A000 rcwswpa x0, x0, [x0]
+38A1A043 rcwswpa x1, x3, [x2]
+
+// RCWSWPAL_64_memop 0|S=0|111|VR=0|00|A=1|R=1|1|Rs=xxxxx|o3=1|opc=010|00|Rn=xxxxx|Rt=xxxxx
+// Rcwswpal64Memop: RCWSWPAL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+38E0A004 rcwswpal x0, x4, [x0]
+38E0A00B rcwswpal x0, x11, [x0]
+38E0A012 rcwswpal x0, x18, [x0]
+38FFA3E0 rcwswpal xzr, x0, [sp]
+38E0A01F rcwswpal x0, xzr, [x0]
+38E0A000 rcwswpal x0, x0, [x0]
+38E1A043 rcwswpal x1, x3, [x2]
+
+// RCWSWPL_64_memop 0|S=0|111|VR=0|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=010|00|Rn=xxxxx|Rt=xxxxx
+// Rcwswpl64Memop: RCWSWPL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3860A001 rcwswpl x0, x1, [x0]
+3860A008 rcwswpl x0, x8, [x0]
+3860A00F rcwswpl x0, x15, [x0]
+387FA3E0 rcwswpl xzr, x0, [sp]
+3860A01F rcwswpl x0, xzr, [x0]
+3860A000 rcwswpl x0, x0, [x0]
+3861A043 rcwswpl x1, x3, [x2]

@@ -1,0 +1,25 @@
+// VABAL_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0101|N=x|0|M=x|0|Vm=xxxx
+// VabalA1: VABAL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f3a98502 vabal.u32 q4, d9, d2
+f29b25a5 vabal.s16 q1, d27, d21
+f38ba58b vabal.u8 q5, d27, d11
+f3ec0528 vabal.u32 q8, d12, d24
+f2928505 vabal.s16 q4, d2, d5
+f3d1e528 vabal.u16 q15, d1, d24
+f2cfa58e vabal.s8 q13, d31, d14
+f3cc05a1 vabal.u8 q8, d28, d17
+F3FCF528 UNDEFINED
+F2A04500 vabal.s32 q2, d0, d0
+F3A8050F vabal.u32 q0, d8, d15
+F3A48504 vabal.u32 q4, d4, d4
+F3A91502 UNDEFINED
+F3BCF528 UNDEFINED
+F3E9F502 UNDEFINED
+F3A08500 vabal.u32 q4, d0, d0
+F3A0858F vabal.u32 q4, d16, d15
+F3AF8520 vabal.u32 q4, d15, d16
+F3A9852F vabal.u32 q4, d9, d31

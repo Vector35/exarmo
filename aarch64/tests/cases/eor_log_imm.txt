@@ -1,0 +1,151 @@
+// EOR_32_log_imm sf=0|opc=10|100100|N=0|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Eor32LogImm: EOR  <Wd|WSP>, <Wn>, #<imm>
+// read together by <imm>: immr, imms
+// register fields: Rn, Rd
+// bitmask immediate <imm>: N:immr:imms
+521DE0B9 eor w25, w5, #0x88888888
+5218DA07 eor w7, w16, #0x7f7f7f7f
+5217B989 eor w9, w12, #0xfefffeff
+5238D2E8 eor w8, w23, #0x1f1f1f1f
+521F3402 eor w2, w0, #0x7ffe
+520C3414 eor w20, w0, #0xfff00003
+522ED34E eor w14, w26, #0x7c7c7c7c
+52258A65 eor w5, w19, #0x38003800
+520B1856 eor w22, w2, #0xfe00000
+522184CD eor w13, w6, #0x80018001
+521E1AFA eor w26, w23, #0x1fc
+5217D408 eor w8, w0, #0x7e7e7e7e
+5225776E eor w14, w27, #0xf9ffffff
+5228E6EC eor w12, w23, #0x33333333
+520B3423 eor w3, w1, #0xffe00007
+5208AC4F eor w15, w2, #0xff0fff0f
+520003E0 eor w0, wzr, #0x1
+523FE0BF eor wsp, w5, #0x22222222
+521DFCB9 UNDEFINED
+5200FCB9 UNDEFINED
+523F00A5 eor w5, w5, #0x2
+523FFCB9 UNDEFINED
+522080B9 eor w25, w5, #0x10001
+521040B9 eor w25, w5, #0xffff0001
+520420B9 eor w25, w5, #0xf000001f
+520210B9 eor w25, w5, #0xc0000007
+520108B9 eor w25, w5, #0x80000003
+521D04B9 eor w25, w5, #0x18
+5200F0B9 eor w25, w5, #0x55555555
+5201F0B9 eor w25, w5, #0xaaaaaaaa
+523FF0B9 eor w25, w5, #0xaaaaaaaa
+5200F4B9 UNDEFINED
+5201F4B9 UNDEFINED
+523FF4B9 UNDEFINED
+5200E0B9 eor w25, w5, #0x11111111
+5203E0B9 eor w25, w5, #0x22222222
+5200E8B9 eor w25, w5, #0x77777777
+5203E8B9 eor w25, w5, #0xeeeeeeee
+523FE8B9 eor w25, w5, #0xeeeeeeee
+5200ECB9 UNDEFINED
+5203ECB9 UNDEFINED
+523FECB9 UNDEFINED
+5200C0B9 eor w25, w5, #0x1010101
+5207C0B9 eor w25, w5, #0x2020202
+523FC0B9 eor w25, w5, #0x2020202
+5200D8B9 eor w25, w5, #0x7f7f7f7f
+5207D8B9 eor w25, w5, #0xfefefefe
+523FD8B9 eor w25, w5, #0xfefefefe
+5200DCB9 UNDEFINED
+5207DCB9 UNDEFINED
+523FDCB9 UNDEFINED
+520080B9 eor w25, w5, #0x10001
+520F80B9 eor w25, w5, #0x20002
+523F80B9 eor w25, w5, #0x20002
+5200B8B9 eor w25, w5, #0x7fff7fff
+520FB8B9 eor w25, w5, #0xfffefffe
+523FB8B9 eor w25, w5, #0xfffefffe
+5200BCB9 UNDEFINED
+520FBCB9 UNDEFINED
+523FBCB9 UNDEFINED
+521F00B9 eor w25, w5, #0x2
+520078B9 eor w25, w5, #0x7fffffff
+521F78B9 eor w25, w5, #0xfffffffe
+523F78B9 eor w25, w5, #0xfffffffe
+52007CB9 UNDEFINED
+521F7CB9 UNDEFINED
+523F7CB9 UNDEFINED
+
+// EOR_64_log_imm sf=1|opc=10|100100|N=x|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Eor64LogImm: EOR  <Xd|SP>, <Xn>, #<imm>
+// read together by <imm>: N, immr, imms
+// register fields: Rn, Rd
+// bitmask immediate <imm>: N:immr:imms
+D26B355B eor x27, x10, #0x7ffe00000
+D269A3AB eor x11, fp, #0xffffffffff800000
+D2300BA3 eor x3, fp, #0x7000000070000
+D248712E eor x14, x9, #0xff000000001fffff
+D25637A8 eor x8, fp, #0xfffc0000000000
+D255B399 eor x25, x28, #0xfffff80000ffffff
+D245C423 eor x3, x1, #0xf8001fffffffffff
+D242022B eor x11, x17, #0x4000000000000000
+D2529D88 eor x8, x12, #0xffffc000003fffff
+D2720B48 eor x8, x26, #0x1c000
+D272419D eor fp, x12, #0x7fffc000
+D2372321 eor x1, x25, #0x3fe000003fe00
+D24F9A54 eor x20, x18, #0xfffe000000ffffff
+D215C766 eor x6, x27, #0x1818181818181818
+D2162894 eor x20, x4, #0x1ffc00001ffc00
+D21A6B78 eor x24, x27, #0xffffffc1ffffffc1
+D2403400 eor x0, x0, #0x3fff
+D27F37FF eor sp, xzr, #0x7ffe
+D26BFD5B UNDEFINED
+D200015B eor x27, x10, #0x100000001
+D200FD5B UNDEFINED
+D23F015B eor x27, x10, #0x200000002
+D23FFD5B UNDEFINED
+D240015B eor x27, x10, #0x1
+D240FD5B UNDEFINED
+D27F015B eor x27, x10, #0x2
+D27FFD5B UNDEFINED
+D260815B eor x27, x10, #0xffffffff00000001
+D250115B eor x27, x10, #0x1f000000000000
+D244055B eor x27, x10, #0x3000000000000000
+D241355B eor x27, x10, #0x8000000000001fff
+D200F15B eor x27, x10, #0x5555555555555555
+D201F15B eor x27, x10, #0xaaaaaaaaaaaaaaaa
+D23FF15B eor x27, x10, #0xaaaaaaaaaaaaaaaa
+D200F55B UNDEFINED
+D201F55B UNDEFINED
+D23FF55B UNDEFINED
+D200E15B eor x27, x10, #0x1111111111111111
+D203E15B eor x27, x10, #0x2222222222222222
+D23FE15B eor x27, x10, #0x2222222222222222
+D200E95B eor x27, x10, #0x7777777777777777
+D203E95B eor x27, x10, #0xeeeeeeeeeeeeeeee
+D23FE95B eor x27, x10, #0xeeeeeeeeeeeeeeee
+D200ED5B UNDEFINED
+D203ED5B UNDEFINED
+D23FED5B UNDEFINED
+D200C15B eor x27, x10, #0x101010101010101
+D207C15B eor x27, x10, #0x202020202020202
+D23FC15B eor x27, x10, #0x202020202020202
+D200D95B eor x27, x10, #0x7f7f7f7f7f7f7f7f
+D207D95B eor x27, x10, #0xfefefefefefefefe
+D23FD95B eor x27, x10, #0xfefefefefefefefe
+D200DD5B UNDEFINED
+D207DD5B UNDEFINED
+D23FDD5B UNDEFINED
+D200815B eor x27, x10, #0x1000100010001
+D20F815B eor x27, x10, #0x2000200020002
+D23F815B eor x27, x10, #0x2000200020002
+D200B95B eor x27, x10, #0x7fff7fff7fff7fff
+D20FB95B eor x27, x10, #0xfffefffefffefffe
+D23FB95B eor x27, x10, #0xfffefffefffefffe
+D200BD5B UNDEFINED
+D20FBD5B UNDEFINED
+D23FBD5B UNDEFINED
+D21F015B eor x27, x10, #0x200000002
+D200795B eor x27, x10, #0x7fffffff7fffffff
+D21F795B eor x27, x10, #0xfffffffefffffffe
+D23F795B eor x27, x10, #0xfffffffefffffffe
+D2007D5B UNDEFINED
+D21F7D5B UNDEFINED
+D23F7D5B UNDEFINED
+D240F95B eor x27, x10, #0x7fffffffffffffff
+D27FF95B eor x27, x10, #0xfffffffffffffffe

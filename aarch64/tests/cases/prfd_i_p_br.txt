@@ -1,0 +1,23 @@
+// prfd_i_p_br_s 100|0010|msz=11|00|Rm=xxxxx|110|Pg=xxx|Rn=xxxxx|0|prfop=xxxx
+// PrfdIPBrS: PRFD  <prfop>, <Pg>, [<Xn|SP>, <Xm>, LSL #3]
+// register fields: Rm, Pg, Rn
+8582CA28 prfd pstl1keep, p2, [x17, x2, lsl #0x3]
+858BCA60 prfd pldl1keep, p2, [x19, x11, lsl #0x3]
+8599C842 prfd pldl2keep, p2, [x2, x25, lsl #0x3]
+859AC040 prfd pldl1keep, p0, [x2, x26, lsl #0x3]
+8586D686 prfd #0x6, p5, [x20, x6, lsl #0x3]
+858ADC8D prfd pstl3strm, p7, [x4, x10, lsl #0x3]
+8582DBC5 prfd pldl3strm, p6, [lr, x2, lsl #0x3]
+859DCA07 prfd #0x7, p2, [x16, fp, lsl #0x3]
+859BD4A4 prfd pldl3keep, p5, [x5, x27, lsl #0x3]
+8598C24E prfd #0xe, p0, [x18, x24, lsl #0x3]
+858BD645 prfd pldl3strm, p5, [x18, x11, lsl #0x3]
+8585C7CE prfd #0xe, p1, [lr, x5, lsl #0x3]
+858CDDCE prfd #0xe, p7, [x14, x12, lsl #0x3]
+8589DE6A prfd pstl2keep, p7, [x19, x9, lsl #0x3]
+8589C2E2 prfd pldl2keep, p0, [x23, x9, lsl #0x3]
+859DC380 prfd pldl1keep, p0, [x28, fp, lsl #0x3]
+8580CC0F prfd #0xf, p3, [x0, x0, lsl #0x3]
+8582D3E8 prfd pstl1keep, p4, [sp, x2, lsl #0x3]
+859FCA28 UNALLOCATED
+8582CA21 prfd pldl1strm, p2, [x17, x2, lsl #0x3]

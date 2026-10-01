@@ -1,0 +1,134 @@
+// SQDMLAL_asimdelem_L 0|Q=x|U=0|0|111|1|size=xx|L=x|M=x|Rm=xxxx|0|o2=0|11|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqdmlalAsimdelemL: SQDMLAL  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// SqdmlalAsimdelemL2: SQDMLAL2  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// read together by <Tb>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+// form chosen on: Q
+0FA23067 sqdmlal v7.2d, v3.2s, v2.s[1]
+0F8F307F sqdmlal v31.2d, v3.2s, v15.s[0]
+0FAE3A41 sqdmlal v1.2d, v18.2s, v14.s[3]
+0F92311C sqdmlal v28.2d, v8.2s, v18.s[0]
+0FB23A1D sqdmlal v29.2d, v16.2s, v18.s[3]
+4FBE3222 sqdmlal2 v2.2d, v17.4s, v30.s[1]
+4F4D30D0 sqdmlal2 v16.4s, v6.8h, v13.h[0]
+4F4639C1 sqdmlal2 v1.4s, v14.8h, v6.h[4]
+4F4A339F sqdmlal2 v31.4s, v28.8h, v10.h[0]
+0F6F3991 sqdmlal v17.4s, v12.4h, v15.h[6]
+0F443BDC sqdmlal v28.4s, v30.4h, v4.h[4]
+4F793B1C sqdmlal2 v28.4s, v24.8h, v9.h[7]
+4F7C31C7 sqdmlal2 v7.4s, v14.8h, v12.h[3]
+4F8D3B6B sqdmlal2 v11.2d, v27.4s, v13.s[2]
+0F4B31BC sqdmlal v28.4s, v13.4h, v11.h[0]
+0F7531ED sqdmlal v13.4s, v15.4h, v5.h[3]
+0FA03000 sqdmlal v0.2d, v0.2s, v0.s[1]
+0FA233E7 sqdmlal v7.2d, v31.2s, v2.s[1]
+0F223067 UNDEFINED
+0FE23067 UNDEFINED
+0F023067 UNDEFINED
+0F023867 UNDEFINED
+0F123067 UNDEFINED
+0F123867 UNDEFINED
+0F223867 UNDEFINED
+0F323067 UNDEFINED
+0F323867 UNDEFINED
+0F523067 sqdmlal v7.4s, v3.4h, v2.h[1]
+0F523867 sqdmlal v7.4s, v3.4h, v2.h[5]
+0F623067 sqdmlal v7.4s, v3.4h, v2.h[2]
+0F923867 sqdmlal v7.2d, v3.2s, v18.s[2]
+0FC23067 UNDEFINED
+0FC23867 UNDEFINED
+0FD23067 UNDEFINED
+0FD23867 UNDEFINED
+0FE23867 UNDEFINED
+0FF23067 UNDEFINED
+0FF23867 UNDEFINED
+0F203067 UNDEFINED
+0F2F3067 UNDEFINED
+0F303067 UNDEFINED
+0F3F3067 UNDEFINED
+0F603067 sqdmlal v7.4s, v3.4h, v0.h[2]
+0F703067 sqdmlal v7.4s, v3.4h, v0.h[3]
+0F7F3067 sqdmlal v7.4s, v3.4h, v15.h[3]
+0FB03067 sqdmlal v7.2d, v3.2s, v16.s[1]
+0FBF3067 sqdmlal v7.2d, v3.2s, v31.s[1]
+0FE03067 UNDEFINED
+0FEF3067 UNDEFINED
+0FF03067 UNDEFINED
+0FFF3067 UNDEFINED
+4F223067 UNDEFINED
+4FE23067 UNDEFINED
+0FA83067 sqdmlal v7.2d, v3.2s, v8.s[1]
+0FA13067 sqdmlal v7.2d, v3.2s, v1.s[1]
+4F443BDC sqdmlal2 v28.4s, v30.8h, v4.h[4]
+
+// SQDMLAL_asisdelem_L 01|U=0|1|111|1|size=xx|L=x|M=x|Rm=xxxx|0|o2=0|11|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqdmlalAsisdelemL: SQDMLAL  <Va><d>, <Vb><n>, <m>.<Ts>[<index>]
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+5F6F3AAA sqdmlal s10, h21, v15.h[6]
+5FAE330B sqdmlal d11, s24, v14.s[1]
+5F7D301B sqdmlal s27, h0, v13.h[3]
+5F7E394A sqdmlal s10, h10, v14.h[7]
+5F9A3B9E sqdmlal d30, s28, v26.s[2]
+5F9630EF sqdmlal d15, s7, v22.s[0]
+5F8233BC sqdmlal d28, s29, v2.s[0]
+5F6F3808 sqdmlal s8, h0, v15.h[6]
+5F493881 sqdmlal s1, h4, v9.h[4]
+5F463340 sqdmlal s0, h26, v6.h[0]
+5F6B39E1 sqdmlal s1, h15, v11.h[6]
+5F85338F sqdmlal d15, s28, v5.s[0]
+5F403183 sqdmlal s3, h12, v0.h[0]
+5F663B2C sqdmlal s12, h25, v6.h[6]
+5F5B395D sqdmlal s29, h10, v11.h[5]
+5F4730B9 sqdmlal s25, h5, v7.h[0]
+5F6F3BFF sqdmlal s31, h31, v15.h[6]
+5F2F3AAA UNDEFINED
+5FEF3AAA UNDEFINED
+5F0F32AA UNDEFINED
+5F0F3AAA UNDEFINED
+5F1F32AA UNDEFINED
+5F1F3AAA UNDEFINED
+5F2F32AA UNDEFINED
+5F3F32AA UNDEFINED
+5F3F3AAA UNDEFINED
+5F5F32AA sqdmlal s10, h21, v15.h[1]
+5F6F32AA sqdmlal s10, h21, v15.h[2]
+5F8F3AAA sqdmlal d10, s21, v15.s[2]
+5FAF3AAA sqdmlal d10, s21, v15.s[3]
+5FBF32AA sqdmlal d10, s21, v31.s[1]
+5FBF3AAA sqdmlal d10, s21, v31.s[3]
+5FCF32AA UNDEFINED
+5FCF3AAA UNDEFINED
+5FDF32AA UNDEFINED
+5FDF3AAA UNDEFINED
+5FEF32AA UNDEFINED
+5FFF32AA UNDEFINED
+5FFF3AAA UNDEFINED
+5F203AAA UNDEFINED
+5F303AAA UNDEFINED
+5F703AAA sqdmlal s10, h21, v0.h[7]
+5F7F3AAA sqdmlal s10, h21, v15.h[7]
+5FA03AAA sqdmlal d10, s21, v0.s[3]
+5FB03AAA sqdmlal d10, s21, v16.s[3]
+5FE03AAA UNDEFINED
+5FF03AAA UNDEFINED
+5F2F3AA0 UNDEFINED
+5F2F3ABF UNDEFINED
+5FAF3AA0 sqdmlal d0, s21, v15.s[3]
+5FAF3ABF sqdmlal d31, s21, v15.s[3]
+5FEF3AA0 UNDEFINED
+5FEF3ABF UNDEFINED
+5F2F380A UNDEFINED
+5F2F3BEA UNDEFINED
+5FAF380A sqdmlal d10, s0, v15.s[3]
+5FAF3BEA sqdmlal d10, s31, v15.s[3]
+5FEF380A UNDEFINED
+5FEF3BEA UNDEFINED
+5F683AAA sqdmlal s10, h21, v8.h[6]
+5F643AAA sqdmlal s10, h21, v4.h[6]
+5F613AAA sqdmlal s10, h21, v1.h[6]

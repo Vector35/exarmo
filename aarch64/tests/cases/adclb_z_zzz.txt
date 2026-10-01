@@ -1,0 +1,15 @@
+// adclb_z_zzz_ 010|0010|1|0|sz=x|0|Zm=xxxxx|11|010|T=0|Zn=xxxxx|Zda=xxxxx
+// AdclbZZzz: ADCLB  <Zda>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zda
+4540D2D6 adclb z22.d, z22.d, z0.d
+4513D09E adclb z30.s, z4.s, z19.s
+4557D298 adclb z24.d, z20.d, z23.d
+450ED104 adclb z4.s, z8.s, z14.s
+455BD0CB adclb z11.d, z6.d, z27.d
+4554D23B adclb z27.d, z17.d, z20.d
+4549D3FB adclb z27.d, z31.d, z9.d
+455BD2CF adclb z15.d, z22.d, z27.d
+455FD000 adclb z0.d, z0.d, z31.d
+4540D2DF adclb z31.d, z22.d, z0.d
+4540D016 adclb z22.d, z0.d, z0.d
+4540D2C0 adclb z0.d, z22.d, z0.d

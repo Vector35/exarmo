@@ -1,0 +1,41 @@
+// st1w_z_p_br_ 111|0010|opc=101|sz=x|Rm=xxxxx|0|1|0|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// St1wZPBr: ST1W  { <Zt>.<T> }, <Pg>, [<Xn|SP>, <Xm>, LSL #2]
+// register fields: Rm, Pg, Rn, Zt
+E55C4AAB st1w {z11.s}, p2, [x21, x28, lsl #0x2]
+E5794427 st1w {z7.d}, p1, [x1, x25, lsl #0x2]
+E55658EE st1w {z14.s}, p6, [x7, x22, lsl #0x2]
+E55C5D66 st1w {z6.s}, p7, [x11, x28, lsl #0x2]
+E57642D4 st1w {z20.d}, p0, [x22, x22, lsl #0x2]
+E571496C st1w {z12.d}, p2, [x11, x17, lsl #0x2]
+E56351DD st1w {z29.d}, p4, [x14, x3, lsl #0x2]
+E5484EF9 st1w {z25.s}, p3, [x23, x8, lsl #0x2]
+E54C5A3D st1w {z29.s}, p6, [x17, x12, lsl #0x2]
+E54B5FB8 st1w {z24.s}, p7, [fp, x11, lsl #0x2]
+E55D4DE3 st1w {z3.s}, p3, [x15, fp, lsl #0x2]
+E5765DFF st1w {z31.d}, p7, [x15, x22, lsl #0x2]
+E54343C1 st1w {z1.s}, p0, [lr, x3, lsl #0x2]
+E575463C st1w {z28.d}, p1, [x17, x21, lsl #0x2]
+E54C5420 st1w {z0.s}, p5, [x1, x12, lsl #0x2]
+E55D5B90 st1w {z16.s}, p6, [x28, fp, lsl #0x2]
+E540480B st1w {z11.s}, p2, [x0, x0, lsl #0x2]
+E55C4BEB st1w {z11.s}, p2, [sp, x28, lsl #0x2]
+E55F4AAB UNALLOCATED
+E5424AB5 st1w {z21.s}, p2, [x21, x2, lsl #0x2]
+E55C4ABC st1w {z28.s}, p2, [x21, x28, lsl #0x2]
+
+// st1w_z_p_br_u128 111|0010|opc=100|o2=0|Rm=xxxxx|0|1|0|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// St1wZPBrU128: ST1W  { <Zt>.Q }, <Pg>, [<Xn|SP>, <Xm>, LSL #2]
+// register fields: Rm, Pg, Rn, Zt
+E5004005 st1w {z5.q}, p0, [x0, x0, lsl #0x2]
+E500400C st1w {z12.q}, p0, [x0, x0, lsl #0x2]
+E5004013 st1w {z19.q}, p0, [x0, x0, lsl #0x2]
+E50047E0 st1w {z0.q}, p1, [sp, x0, lsl #0x2]
+E500481F st1w {z31.q}, p2, [x0, x0, lsl #0x2]
+E5004C05 st1w {z5.q}, p3, [x0, x0, lsl #0x2]
+E5005005 st1w {z5.q}, p4, [x0, x0, lsl #0x2]
+E5005405 st1w {z5.q}, p5, [x0, x0, lsl #0x2]
+E5005805 st1w {z5.q}, p6, [x0, x0, lsl #0x2]
+E5005C05 st1w {z5.q}, p7, [x0, x0, lsl #0x2]
+E51F4005 UNALLOCATED
+E5004000 st1w {z0.q}, p0, [x0, x0, lsl #0x2]
+E5014864 st1w {z4.q}, p2, [x3, x1, lsl #0x2]

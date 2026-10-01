@@ -1,0 +1,21 @@
+// VPADD_f_A1 1111|0|01|U=1|0|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=x|M=x|o1=0|Vm=xxxx
+// VpaddFA1: VPADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f348ad8a vpadd.f32 d26, d24, d10
+f301ed85 vpadd.f32 d14, d17, d5
+f31c4d87 vpadd.f16 d4, d28, d7
+f3174daf vpadd.f16 d4, d23, d31
+f344cda8 vpadd.f32 d28, d20, d24
+f3151dab vpadd.f16 d1, d21, d27
+f3573d04 vpadd.f16 d19, d7, d4
+f3488d07 vpadd.f32 d24, d8, d7
+F3400D80 vpadd.f32 d16, d16, d0
+F34FFD82 vpadd.f32 d31, d31, d2
+F3422D81 vpadd.f32 d18, d18, d1
+F348ADCA UNDEFINED
+F3000D00 vpadd.f32 d0, d0, d0
+F300FD8F vpadd.f32 d15, d16, d15
+F34F0D20 vpadd.f32 d16, d15, d16
+F34FFD8A vpadd.f32 d31, d31, d10

@@ -1,0 +1,23 @@
+// msb_z_p_zzz_ 000|0010|0|size=xx|0|Zm=xxxxx|1|1|op=1|Pg=xxx|Za=xxxxx|Zdn=xxxxx
+// MsbZPZzz: MSB  <Zdn>.<T>, <Pg>/M, <Zm>.<T>, <Za>.<T>
+// register fields: Zm, Pg, Za, Zdn
+04C2EE1F msb z31.d, p3/m, z2.d, z16.d
+041CE269 msb z9.b, p0/m, z28.b, z19.b
+04D7F265 msb z5.d, p4/m, z23.d, z19.d
+0459E72F msb z15.h, p1/m, z25.h, z25.h
+0401FA15 msb z21.b, p6/m, z1.b, z16.b
+0445EF01 msb z1.h, p3/m, z5.h, z24.h
+04DFF8EB msb z11.d, p6/m, z31.d, z7.d
+0449FF6C msb z12.h, p7/m, z9.h, z27.h
+0481FAC2 msb z2.s, p6/m, z1.s, z22.s
+04D5F9A0 msb z0.d, p6/m, z21.d, z13.d
+0495FE52 msb z18.s, p7/m, z21.s, z18.s
+045FF234 msb z20.h, p4/m, z31.h, z17.h
+0408EC3C msb z28.b, p3/m, z8.b, z1.b
+0409EDEE msb z14.b, p3/m, z9.b, z15.b
+0448E9A2 msb z2.h, p2/m, z8.h, z13.h
+048BF59C msb z28.s, p5/m, z11.s, z12.s
+04C0EC1F msb z31.d, p3/m, z0.d, z0.d
+04C2EFFF msb z31.d, p3/m, z2.d, z31.d
+04C2EA1F msb z31.d, p2/m, z2.d, z16.d
+04C2EC62 msb z2.d, p3/m, z2.d, z3.d

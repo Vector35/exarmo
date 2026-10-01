@@ -1,0 +1,26 @@
+// whilele_p_p_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|00|0|sf=x|U=0|lt=1|Rn=xxxxx|eq=1|Pd=xxxx
+// WhilelePPRr: WHILELE  <Pd>.<T>, <n>, <m>
+// read together by <n>: sf, Rn
+// read together by <m>: Rm, sf
+// register fields: Rm, Rn, Pd
+25FE163C whilele p12.d, x17, lr
+252A17F5 whilele p5.b, xzr, x10
+25F507DF whilele p15.d, w30, w21
+257A0438 whilele p8.h, w1, w26
+25B31716 whilele p6.s, x24, x19
+25F807FC whilele p12.d, wzr, w24
+25EC061A whilele p10.d, w16, w12
+25B9059C whilele p12.s, w12, w25
+25731792 whilele p2.h, x28, x19
+25691510 whilele p0.h, x8, x9
+253015D6 whilele p6.b, x14, x16
+252207D6 whilele p6.b, w30, w2
+25FE16BC whilele p12.d, x21, lr
+2537159B whilele p11.b, x12, x23
+257205F0 whilele p0.h, w15, w18
+25210556 whilele p6.b, w10, w1
+25E0141C whilele p12.d, x0, x0
+25FF163C whilele p12.d, x17, xzr
+25E0063C whilele p12.d, w17, w0
+25FF063C whilele p12.d, w17, wzr
+25EC041C whilele p12.d, w0, w12

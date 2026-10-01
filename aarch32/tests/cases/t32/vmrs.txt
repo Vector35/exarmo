@@ -1,0 +1,17 @@
+// VMRS_T1_AS 111|0|11|10|111|L=1|reg=xxxx|Rt=xxxx|1|010|(0)(0)(0)|1|(0)(0)(0)(0)
+// VmrsT1As: VMRS{<c>}{<q>}  <Rt>, <spec_reg>
+// register fields: Rt
+// IT state read: condition
+eef82a74 vmrs r2, fpexc (unpredictable)
+eef01a31 vmrs r1, fpsid (unpredictable)
+eef76a31 vmrs r6, mvfr0 (unpredictable)
+EEFF0A10 UNPREDICTABLE
+EEF4FA5F UNPREDICTABLE
+EEF22A98 UNPREDICTABLE
+EEF12AB2 vmrs r2, fpscr (unpredictable)
+EEF82AD4 vmrs r2, fpexc (unpredictable)
+EEF82AF4 vmrs r2, fpexc (unpredictable)
+EEF82A74 [ne] vmrsne r2, fpexc (unpredictable)
+EEF80A10 vmrs r0, fpexc
+EEF8FA5F vmrs apsr_nzcv, fpexc (unpredictable)
+EEF82A98 vmrs r2, fpexc (unpredictable)

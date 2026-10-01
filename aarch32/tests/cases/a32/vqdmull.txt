@@ -1,0 +1,51 @@
+// VQDMULL_A1 1111|0|01|U=0|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1101|N=x|0|M=x|0|Vm=xxxx
+// VqdmullA1: VQDMULL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f2e28d85 vqdmull.s32 q12, d18, d5
+f2d62da7 vqdmull.s16 q9, d22, d23
+f2daad85 vqdmull.s16 q13, d26, d5
+f2994d83 vqdmull.s16 q2, d25, d3
+f2a50d8e vqdmull.s32 q0, d21, d14
+f2ef2d0b vqdmull.s32 q9, d15, d11
+f2a22d83 vqdmull.s32 q1, d18, d3
+f2dcadaa vqdmull.s16 q13, d28, d26
+// Binary Ninja's tests
+f2e10da0 vqdmull.s32 q8, d17, d16
+F2C2FD85 UNDEFINED
+F2F21D85 UNDEFINED
+F2E08D8F vqdmull.s32 q12, d16, d15
+F2E88D88 vqdmull.s32 q12, d24, d8
+F2E48D84 vqdmull.s32 q12, d20, d4
+F2E08D02 vqdmull.s32 q12, d0, d2
+F2E08D81 vqdmull.s32 q12, d16, d1
+F2A2FD85 UNDEFINED
+F2E2FD85 UNDEFINED
+F2EF8D80 vqdmull.s32 q12, d31, d0
+F2E28D8F vqdmull.s32 q12, d18, d15
+F2E28DAF vqdmull.s32 q12, d18, d31
+
+// VQDMULL_A2 1111|0|01|Q=0|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1011|N=x|1|M=x|0|Vm=xxxx
+// VqdmullA2: VQDMULL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm[x]>
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+f2ed6b46 vqdmull.s32 q11, d13, d6[0]
+f292cbe4 vqdmull.s16 q6, d18, d4[2]
+f2edcb64 vqdmull.s32 q14, d13, d4[1]
+f294ab4a vqdmull.s16 q5, d4, d2[1]
+f2e54b47 vqdmull.s32 q10, d5, d7[0]
+f2a8cbcb vqdmull.s32 q6, d24, d11[0]
+f2950b40 vqdmull.s16 q0, d5, d0[0]
+f2dd0b43 vqdmull.s16 q8, d13, d3[0]
+F2CDFB46 UNDEFINED
+F2FD1B46 UNDEFINED
+F2E08B4F vqdmull.s32 q12, d0, d15[0]
+F2EF2B48 vqdmull.s32 q9, d15, d8[0]
+F2E16B42 vqdmull.s32 q11, d1, d2[0]
+F2E06B41 vqdmull.s32 q11, d0, d1[0]
+F2ADFB46 UNDEFINED
+F2EDFB46 UNDEFINED
+F2E06BC6 vqdmull.s32 q11, d16, d6[0]
+F2EF6B46 vqdmull.s32 q11, d15, d6[0]
+F2EF6BC6 vqdmull.s32 q11, d31, d6[0]

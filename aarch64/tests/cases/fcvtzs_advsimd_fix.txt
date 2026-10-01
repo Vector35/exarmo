@@ -1,0 +1,76 @@
+// FCVTZS_asimdshf_C 0|Q=x|U=0|0|111|10|immh=xxxx|immb=xxx|opcode=11111|1|Rn=xxxxx|Rd=xxxxx
+// FcvtzsAsimdshfC: FCVTZS  <Vd>.<T>, <Vn>.<T>, #<fbits>
+// read together by <T>: Q, immh
+// read together by <fbits>: immh, immb
+// register fields: Rn, Rd
+4F10FFBF fcvtzs v31.8h, v29.8h, #0x10
+4F51FFAD fcvtzs v13.2d, v29.2d, #0x2f
+0F19FF9E fcvtzs v30.4h, v28.4h, #0x7
+4F3FFD16 fcvtzs v22.4s, v8.4s, #0x1
+0F1FFE71 fcvtzs v17.4h, v19.4h, #0x1
+4F55FFD7 fcvtzs v23.2d, v30.2d, #0x2b
+4F5FFC91 fcvtzs v17.2d, v4.2d, #0x21
+0F18FEB9 fcvtzs v25.4h, v21.4h, #0x8
+4F36FEA8 fcvtzs v8.4s, v21.4s, #0xa
+4F74FCCE fcvtzs v14.2d, v6.2d, #0xc
+4F47FC3B fcvtzs v27.2d, v1.2d, #0x39
+4F37FEB2 fcvtzs v18.4s, v21.4s, #0x9
+0F16FD59 fcvtzs v25.4h, v10.4h, #0xa
+4F58FE45 fcvtzs v5.2d, v18.2d, #0x28
+0F1DFCEA fcvtzs v10.4h, v7.4h, #0x3
+4F27FC84 fcvtzs v4.4s, v4.4s, #0x19
+4F7AFC00 fcvtzs v0.2d, v0.2d, #0x6
+4F13FFFF fcvtzs v31.8h, v31.8h, #0xd
+0F78FFBF UNDEFINED
+4F78FFBF fcvtzs v31.2d, v29.2d, #0x8
+4F79FFBF fcvtzs v31.2d, v29.2d, #0x7
+4F7BFFBF fcvtzs v31.2d, v29.2d, #0x5
+4F7CFFBF fcvtzs v31.2d, v29.2d, #0x4
+4F7DFFBF fcvtzs v31.2d, v29.2d, #0x3
+4F7EFFBF fcvtzs v31.2d, v29.2d, #0x2
+4F7FFFBF fcvtzs v31.2d, v29.2d, #0x1
+4F08FFBF UNDEFINED
+
+// FCVTZS_asisdshf_C 01|U=0|1|111|10|immh=xxxx|immb=xxx|opcode=11111|1|Rn=xxxxx|Rd=xxxxx
+// FcvtzsAsisdshfC: FCVTZS  <V><d>, <V><n>, #<fbits>
+// read together by <d>: immh, Rd
+// read together by <n>: immh, Rn
+// read together by <fbits>: immh, immb
+// register fields: Rn, Rd
+5F7CFC95 fcvtzs d21, d4, #0x4
+5F51FCBB fcvtzs d27, d5, #0x2f
+5F2FFE6A fcvtzs s10, s19, #0x11
+5F50FC44 fcvtzs d4, d2, #0x30
+5F7FFE40 fcvtzs d0, d18, #0x1
+5F65FE48 fcvtzs d8, d18, #0x1b
+5F69FD3F fcvtzs d31, d9, #0x17
+5F16FCD2 fcvtzs h18, h6, #0xa
+5F7EFEC7 fcvtzs d7, d22, #0x2
+5F12FFED fcvtzs h13, h31, #0xe
+5F42FE4E fcvtzs d14, d18, #0x3e
+5F30FC35 fcvtzs s21, s1, #0x10
+5F2CFFDE fcvtzs s30, s30, #0x14
+5F6CFE09 fcvtzs d9, d16, #0x14
+5F25FF23 fcvtzs s3, s25, #0x1b
+5F52FC00 fcvtzs d0, d0, #0x2e
+5F7BFC95 fcvtzs d21, d4, #0x5
+5F04FC95 UNALLOCATED
+5F04FC80 UNALLOCATED
+5F04FC9F UNALLOCATED
+5F7CFC9F fcvtzs d31, d4, #0x4
+5F04FC15 UNALLOCATED
+5F04FFF5 UNALLOCATED
+5F7CFC15 fcvtzs d21, d0, #0x4
+5F7CFFF5 fcvtzs d21, d31, #0x4
+5F00FC95 UNALLOCATED
+5F01FC95 UNALLOCATED
+5F02FC95 UNALLOCATED
+5F03FC95 UNALLOCATED
+5F05FC95 UNALLOCATED
+5F06FC95 UNALLOCATED
+5F07FC95 UNALLOCATED
+5F78FC95 fcvtzs d21, d4, #0x8
+5F79FC95 fcvtzs d21, d4, #0x7
+5F7AFC95 fcvtzs d21, d4, #0x6
+5F7DFC95 fcvtzs d21, d4, #0x3
+5F0CFC95 UNDEFINED

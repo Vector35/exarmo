@@ -1,0 +1,32 @@
+// ADDV_asimdall_only 0|Q=x|U=0|0|111|0|size=xx|11000|opcode=11011|10|Rn=xxxxx|Rd=xxxxx
+// AddvAsimdallOnly: ADDV  <V><d>, <Vn>.<T>
+// read together by <d>: size, Rd
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+4E31B9A0 addv b0, v13.16b
+0E71BA69 addv h9, v19.4h
+0E31B8CC addv b12, v6.8b
+4E31B9F5 addv b21, v15.16b
+4EB1B916 addv s22, v8.4s
+0E71BB1B addv h27, v24.4h
+0E31BB4E addv b14, v26.8b
+0E31BA6F addv b15, v19.8b
+4E31BB69 addv b9, v27.16b
+4EB1BAE9 addv s9, v23.4s
+4EB1BAC8 addv s8, v22.4s
+0E71B876 addv h22, v3.4h
+0E71B9B3 addv h19, v13.4h
+4EB1BB95 addv s21, v28.4s
+4E71BBD9 addv h25, v30.8h
+0E31BB90 addv b16, v28.8b
+4E31B81F addv b31, v0.16b
+4E31BBE0 addv b0, v31.16b
+4EF1B9A0 UNDEFINED
+0EB1B9A0 UNDEFINED
+0EF1B9A0 UNDEFINED
+4E71B9A0 addv h0, v13.8h
+4E71B9BF addv h31, v13.8h
+4EB1B9A0 addv s0, v13.4s
+4EB1B9BF addv s31, v13.4s
+4EF1B9BF UNDEFINED
+4E31B9AD addv b13, v13.16b

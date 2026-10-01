@@ -1,0 +1,101 @@
+// ADC_i_A1 cond=xxxx|0010|opc=101|S=0|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// AdcIA1: ADC{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+22a9d11e adchs sp, r9, #2147483655
+02a2adc6 adceq r10, r2, #12672
+a2a1a6aa adcge r10, r1, #178257920
+82a21d42 adchi r1, r2, #4224
+82a1bb3e adchi r11, r1, #63488
+c2a80088 adcgt r0, r8, #136
+62a56c5e adcvs r6, r5, #24064
+62ae4c1d adcvs r4, lr, #7424
+// Binary Ninja's tests
+02a21c0f adceq r1, r2, #3840
+e2a2100f adc r1, r2, #15
+e2a210f0 adc r1, r2, #240
+e2a2120f adc r1, r2, #4026531840
+e2a212ff adc r1, r2, #4026531855
+e2a2140f adc r1, r2, #251658240
+e2a2160f adc r1, r2, #15728640
+e2a2180f adc r1, r2, #983040
+e2a21a0f adc r1, r2, #61440
+e2a21c0f adc r1, r2, #3840
+F2A1A6AA UNDEFINED
+42A0F000 adcmi pc, r0, #0x0
+12AFDFFF adcne sp, pc, #0x3fc
+22A99800 adccs r9, r9, #0x0
+22A9D400 adccs sp, r9, #0x0
+22A9D200 adccs sp, r9, #0x0
+22A9D100 adccs sp, r9, #0x0
+22A9D080 adccs sp, r9, #0x80
+22A9D040 adccs sp, r9, #0x40
+22A9D020 adccs sp, r9, #0x20
+22A9D010 adccs sp, r9, #0x10
+22A9D008 adccs sp, r9, #0x8
+22A9D004 adccs sp, r9, #0x4
+22A9D002 adccs sp, r9, #0x2
+22A9D001 adccs sp, r9, #0x1
+22A9D081 adccs sp, r9, #0x81
+22A9D181 adccs sp, r9, #0x40000020
+22A9D281 adccs sp, r9, #0x10000008
+22A9D381 adccs sp, r9, #0x4000002
+22A9D481 adccs sp, r9, #0x81000000
+22A9D581 adccs sp, r9, #0x20400000
+22A9D681 adccs sp, r9, #0x8100000
+22A9D781 adccs sp, r9, #0x2040000
+22A9D881 adccs sp, r9, #0x810000
+22A9D981 adccs sp, r9, #0x204000
+22A9DA81 adccs sp, r9, #0x81000
+22A9DB81 adccs sp, r9, #0x20400
+22A9DC81 adccs sp, r9, #0x8100
+22A9DD81 adccs sp, r9, #0x2040
+22A9DE81 adccs sp, r9, #0x810
+22A9DF81 adccs sp, r9, #0x204
+
+// ADCS_i_A1 cond=xxxx|0010|opc=101|S=1|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// AdcsIA1: ADCS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+22b6f7ba adcshs pc, r6, #48758784
+42bfa136 adcsmi r10, pc, #2147483661
+a2b25ff5 adcsge r5, r2, #980
+e2b1de48 adcs sp, r1, #1152
+42b23b33 adcsmi r3, r2, #52224
+b2ba21a6 adcslt r2, r10, #2147483689
+82bc645a adcshi r6, r12, #1509949440
+02b7c21e adcseq r12, r7, #3758096385
+// Binary Ninja's tests
+02b21c0f adcseq r1, r2, #3840
+e2b21c0f adcs r1, r2, #3840
+F2B25FF5 UNALLOCATED
+12B00000 adcsne r0, r0, #0x0
+22B66FFF adcscs r6, r6, #0x3fc
+22B6F800 adcscs pc, r6, #0x0
+22B6F400 adcscs pc, r6, #0x0
+22B6F200 adcscs pc, r6, #0x0
+22B6F100 adcscs pc, r6, #0x0
+22B6F080 adcscs pc, r6, #0x80
+22B6F040 adcscs pc, r6, #0x40
+22B6F020 adcscs pc, r6, #0x20
+22B6F010 adcscs pc, r6, #0x10
+22B6F008 adcscs pc, r6, #0x8
+22B6F004 adcscs pc, r6, #0x4
+22B6F002 adcscs pc, r6, #0x2
+22B6F001 adcscs pc, r6, #0x1
+22B6F081 adcscs pc, r6, #0x81
+22B6F181 adcscs pc, r6, #0x40000020
+22B6F281 adcscs pc, r6, #0x10000008
+22B6F381 adcscs pc, r6, #0x4000002
+22B6F481 adcscs pc, r6, #0x81000000
+22B6F581 adcscs pc, r6, #0x20400000
+22B6F681 adcscs pc, r6, #0x8100000
+22B6F781 adcscs pc, r6, #0x2040000
+22B6F881 adcscs pc, r6, #0x810000
+22B6F981 adcscs pc, r6, #0x204000
+22B6FA81 adcscs pc, r6, #0x81000
+22B6FB81 adcscs pc, r6, #0x20400
+22B6FC81 adcscs pc, r6, #0x8100
+22B6FD81 adcscs pc, r6, #0x2040
+22B6FE81 adcscs pc, r6, #0x810
+22B6FF81 adcscs pc, r6, #0x204

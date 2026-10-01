@@ -1,0 +1,46 @@
+// LDRHT_A1 cond=xxxx|00|0|P=0|U=x|1|W=1|o1=1|Rn=xxxx|Rt=xxxx|imm4H=xxxx|1|op2=01|1|imm4L=xxxx
+// LdrhtA1: LDRHT{<c>}{<q>}  <Rt>, [<Rn>] {, #{<+/->}<imm>}
+// read together by <imm>: imm4H, imm4L
+// register fields: Rn, Rt
+a07a45be ldrhtge r4, [r10], #-94
+90f845bf ldrhtls r4, [r8], #95
+c0ff63b9 ldrhtgt r6, [pc], #57 (unpredictable)
+50f8e6b3 ldrhtpl lr, [r8], #99
+00f4bdb2 ldrhteq r11, [r4], #210
+e0f562bd ldrht r6, [r5], #45
+d07159b3 ldrhtle r5, [r1], #-147
+c0735eb4 ldrhtgt r5, [r3], #-228
+// Binary Ninja's tests
+807b80b0 ldrhthi r8, [r11], #-0x0
+80fb80b0 ldrhthi r8, [r11]
+e07344bb ldrht r4, [r3], #-75
+e0f010b4 ldrht r1, [r0], #4
+e0f798b0 ldrht r9, [r7], #128
+F07A45BE UNALLOCATED
+407A0FB8 ldrhtmi r0, [r10], #-0xf8
+207AF1B1 ldrhtcs pc, [r10], #-0x11 (unpredictable)
+107AA0BF ldrhtne r10, [r10], #-0xf (unpredictable)
+A07A4FB0 ldrhtge r4, [r10], #-0xf0
+A07A4FBF ldrhtge r4, [r10], #-0xff
+
+// LDRHT_A2 cond=xxxx|00|0|P=0|U=x|0|W=1|o1=1|Rn=xxxx|Rt=xxxx|(0)(0)(0)(0)|1|op2=01|1|Rm=xxxx
+// LdrhtA2: LDRHT{<c>}{<q>}  <Rt>, [<Rn>], {<+/->}<Rm>
+// register fields: Rn, Rt, Rm
+40340eb0 ldrhtmi r0, [r4], -r0 (unpredictable)
+e0ba93bc ldrht r9, [r10], r12 (unpredictable)
+40b6e7be ldrhtmi lr, [r6], lr (unpredictable)
+c0bfd9bf ldrhtgt sp, [pc], pc (unpredictable)
+10bae3b6 ldrhtne lr, [r10], r6 (unpredictable)
+10ba47b9 ldrhtne r4, [r10], r9 (unpredictable)
+90b26eb9 ldrhtls r6, [r2], r9 (unpredictable)
+703696ba ldrhtvc r9, [r6], -r10 (unpredictable)
+// Binary Ninja's tests
+e03340b2 ldrht r4, [r3], -r2
+e0b010b2 ldrht r1, [r0], r2
+e0b790b2 ldrht r9, [r7], r2
+0034FFB0 ldrhteq pc, [r4], -r0 (unpredictable)
+F0340EB0 UNALLOCATED
+803448B0 ldrhthi r4, [r4], -r0 (unpredictable)
+203404B0 ldrhtcs r0, [r4], -r0 (unpredictable)
+403402B0 ldrhtmi r0, [r4], -r0 (unpredictable)
+403401B0 ldrhtmi r0, [r4], -r0 (unpredictable)

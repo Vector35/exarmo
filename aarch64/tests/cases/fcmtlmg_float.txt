@@ -1,0 +1,20 @@
+// FCMTLMG_D_floatcmp M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|op=10|1000|Rn=xxxxx|opc=01|000
+// FcmtlmgDFloatcmp: FCMTLMG  <Dn>, <Dm>
+// register fields: Rm, Rn
+1E60A008 fcmtlmg d0, d0
+1E7FA3E8 fcmtlmg d31, d31
+1E61A048 fcmtlmg d2, d1
+
+// FCMTLMG_H_floatcmp M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|op=10|1000|Rn=xxxxx|opc=01|000
+// FcmtlmgHFloatcmp: FCMTLMG  <Hn>, <Hm>
+// register fields: Rm, Rn
+1EE0A008 fcmtlmg h0, h0
+1EFFA3E8 fcmtlmg h31, h31
+1EE1A048 fcmtlmg h2, h1
+
+// FCMTLMG_S_floatcmp M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|op=10|1000|Rn=xxxxx|opc=01|000
+// FcmtlmgSFloatcmp: FCMTLMG  <Sn>, <Sm>
+// register fields: Rm, Rn
+1E20A008 fcmtlmg s0, s0
+1E3FA3E8 fcmtlmg s31, s31
+1E21A048 fcmtlmg s2, s1

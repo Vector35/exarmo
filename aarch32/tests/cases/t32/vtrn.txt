@@ -1,0 +1,46 @@
+// VTRN_T1_D 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0001|Q=0|M=x|0|Vm=xxxx
+// VtrnT1D: VTRN{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffb650a3 vtrn.16 d5, d19
+ffbac08a vtrn.32 d12, d10
+ffb64088 vtrn.16 d4, d8
+ffb24080 vtrn.8 d4, d0
+fff2c0a4 vtrn.8 d28, d20
+fff2d08f vtrn.8 d29, d15
+fff630a3 vtrn.16 d19, d19
+fff250a9 vtrn.8 d21, d25
+FFBE50A3 UNDEFINED
+FFB600A2 vtrn.16 d0, d18
+FFB6F0A1 vtrn.16 d15, d17
+FFB680A0 vtrn.16 d8, d16
+FFB620AF vtrn.16 d2, d31
+FFB610A3 vtrn.16 d1, d19
+FFB600A3 vtrn.16 d0, d19
+FFB6F0A3 vtrn.16 d15, d19
+FFF600A3 vtrn.16 d16, d19
+FFF6F0A3 vtrn.16 d31, d19
+FFB650A3 [ne] vtrnne.16 d5, d19
+
+// VTRN_T1_Q 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0001|Q=1|M=x|0|Vm=xxxx
+// VtrnT1Q: VTRN{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb240c4 vtrn.8 q2, q2
+ffba80c4 vtrn.32 q4, q2
+ffbac0e2 vtrn.32 q6, q9
+fff2a0e4 vtrn.8 q13, q10
+ffb2e0e0 vtrn.8 q7, q8
+fff220ca vtrn.8 q9, q5
+fff260ee vtrn.8 q11, q15
+fff260e4 vtrn.8 q11, q10
+FFB600C8 vtrn.16 q0, q4
+FFBEF0CF UNDEFINED
+FFB210C1 UNDEFINED
+FFB200C0 vtrn.8 q0, q0
+FFB2F0CF UNDEFINED
+FFF200C4 vtrn.8 q8, q2
+FFF2F0EF UNDEFINED
+FFB240C4 [ne] vtrnne.8 q2, q2

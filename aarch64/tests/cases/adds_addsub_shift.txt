@@ -1,0 +1,88 @@
+// ADDS_32_addsub_shift sf=0|op=0|S=1|01011|shift=xx|0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Adds32AddsubShift: ADDS  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// CmnAdds32AddsubShift: CMN  <Wn>, <Wm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+// form chosen on: Rd
+2B1B64AB adds w11, w5, w27, lsl #0x19
+2B05134D adds w13, w26, w5, lsl #0x4
+2B4B7407 adds w7, w0, w11, lsr #0x1d
+2B142555 adds w21, w10, w20, lsl #0x9
+2B1C75E6 adds w6, w15, w28, lsl #0x1d
+2B8D5D23 adds w3, w9, w13, asr #0x17
+2B812036 adds w22, w1, w1, asr #0x8
+2B43154F adds w15, w10, w3, lsr #0x5
+2B170D69 adds w9, w11, w23, lsl #0x3
+2B872E0E adds w14, w16, w7, asr #0xb
+2B4327E5 adds w5, wzr, w3, lsr #0x9
+2B876E17 adds w23, w16, w7, asr #0x1b
+2B146B91 adds w17, w28, w20, lsl #0x1a
+2B4E6099 adds w25, w4, w14, lsr #0x18
+2B1C6C54 adds w20, w2, w28, lsl #0x1b
+2B056C3A adds w26, w1, w5, lsl #0x1b
+2B97615F cmn w10, w23, asr #0x18
+2B8B5F9F cmn w28, w11, asr #0x17
+2B9D4D1F cmn w8, w29, asr #0x13
+2B59737F cmn w27, w25, lsr #0x1c
+2B88657F cmn w11, w8, asr #0x19
+2B5362FF cmn w23, w19, lsr #0x18
+2B0903BF cmn w29, w9
+2B90521F cmn w16, w16, asr #0x14
+2B134FFF cmn wzr, w19, lsl #0x13
+2B1F107F cmn w3, wzr, lsl #0x4
+2B4005DF cmn w14, w0, lsr #0x1
+2B18577F cmn w27, w24, lsl #0x15
+2B19039F cmn w28, w25
+2B875ABF cmn w21, w7, asr #0x16
+2B8678DF cmn w6, w6, asr #0x1e
+2B4C511F cmn w8, w12, lsr #0x14
+2B1B64A0 adds w0, w5, w27, lsl #0x19
+2BDBFCAB UNDEFINED
+2B1B80AB UNDEFINED
+2B1B40AB adds w11, w5, w27, lsl #0x10
+2B1B08AB adds w11, w5, w27, lsl #0x2
+2B0903AF adds w15, w29, w9
+
+// ADDS_64_addsub_shift sf=1|op=0|S=1|01011|shift=xx|0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Adds64AddsubShift: ADDS  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// CmnAdds64AddsubShift: CMN  <Xn>, <Xm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+// form chosen on: Rd
+AB58B53D adds fp, x9, x24, lsr #0x2d
+AB51D5F9 adds x25, x15, x17, lsr #0x35
+AB02F753 adds x19, x26, x2, lsl #0x3d
+AB1B538A adds x10, x28, x27, lsl #0x14
+AB0CA4B4 adds x20, x5, x12, lsl #0x29
+AB8AF46D adds x13, x3, x10, asr #0x3d
+AB54F073 adds x19, x3, x20, lsr #0x3c
+AB47B777 adds x23, x27, x7, lsr #0x2d
+AB4E56F8 adds x24, x23, x14, lsr #0x15
+AB1A85B7 adds x23, x13, x26, lsl #0x21
+AB83D5C1 adds x1, x14, x3, asr #0x35
+AB84AC4F adds x15, x2, x4, asr #0x2b
+AB00A3CF adds x15, lr, x0, lsl #0x28
+AB8902BC adds x28, x21, x9, asr #0x0
+AB5ADC00 adds x0, x0, x26, lsr #0x37
+AB075993 adds x19, x12, x7, lsl #0x16
+AB88807F cmn x3, x8, asr #0x20
+AB95CCBF cmn x5, x21, asr #0x33
+AB81F41F cmn x0, x1, asr #0x3d
+AB91A45F cmn x2, x17, asr #0x29
+AB4F40BF cmn x5, x15, lsr #0x10
+AB1A695F cmn x10, x26, lsl #0x1a
+AB03705F cmn x2, x3, lsl #0x1c
+AB0F569F cmn x20, x15, lsl #0x15
+AB9A73DF cmn lr, x26, asr #0x1c
+AB1AF81F cmn x0, x26, lsl #0x3e
+AB11CDDF cmn x14, x17, lsl #0x33
+AB02EA9F cmn x20, x2, lsl #0x3a
+AB58E9FF cmn x15, x24, lsr #0x3a
+AB92855F cmn x10, x18, asr #0x21
+AB83B27F cmn x19, x3, asr #0x2c
+AB80061F cmn x16, x0, asr #0x1
+AB5FFFFD adds fp, xzr, xzr, lsr #0x3f
+ABD8B53D UNDEFINED
+AB58B538 adds x24, x9, x24, lsr #0x2d
+AB58213D adds fp, x9, x24, lsr #0x8
+AB58113D adds fp, x9, x24, lsr #0x4
+AB58093D adds fp, x9, x24, lsr #0x2
+AB00A3DF cmn lr, x0, lsl #0x28

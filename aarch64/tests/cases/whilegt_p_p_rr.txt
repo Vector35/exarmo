@@ -1,0 +1,19 @@
+// whilegt_p_p_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|00|0|sf=x|U=0|lt=0|Rn=xxxxx|eq=1|Pd=xxxx
+// WhilegtPPRr: WHILEGT  <Pd>.<T>, <n>, <m>
+// read together by <n>: sf, Rn
+// read together by <m>: Rm, sf
+// register fields: Rm, Rn, Pd
+257613F2 whilegt p2.h, xzr, x22
+25B1031A whilegt p10.s, w24, w17
+2523101E whilegt p14.b, x0, x3
+25AF033A whilegt p10.s, w25, w15
+25A41359 whilegt p9.s, x26, x4
+256002DE whilegt p14.h, w22, w0
+25BE1096 whilegt p6.s, x4, lr
+25AE10D3 whilegt p3.s, x6, x14
+25FF13F0 whilegt p0.d, xzr, xzr
+257613FF whilegt p15.h, xzr, x22
+25601052 whilegt p2.h, x2, x0
+257F03F2 whilegt p2.h, wzr, wzr
+25620012 whilegt p2.h, w0, w2
+257603F2 whilegt p2.h, wzr, w22

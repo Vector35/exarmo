@@ -1,0 +1,14 @@
+// fdot_z_zzzi_ 011|0010|0|0|op=0|1|i2=xx|Zm=xxx|01|0|0|opc2=00|Zn=xxxxx|Zda=xxxxx
+// FdotZZzzi: FDOT  <Zda>.S, <Zn>.H, <Zm>.H[<imm>]
+// register fields: Zm, Zn, Zda
+64204000 fdot z0.s, z0.h, z0.h[0]
+64204007 fdot z7.s, z0.h, z0.h[0]
+6420400E fdot z14.s, z0.h, z0.h[0]
+642943FF fdot z31.s, z31.h, z1.h[1]
+64324000 fdot z0.s, z0.h, z2.h[2]
+643B4000 fdot z0.s, z0.h, z3.h[3]
+64244000 fdot z0.s, z0.h, z4.h[0]
+64254000 fdot z0.s, z0.h, z5.h[0]
+64264000 fdot z0.s, z0.h, z6.h[0]
+64274000 fdot z0.s, z0.h, z7.h[0]
+64214043 fdot z3.s, z2.h, z1.h[0]

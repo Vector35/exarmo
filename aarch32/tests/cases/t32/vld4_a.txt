@@ -1,0 +1,59 @@
+// VLD4_a_T1_nowb 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=11|size=xx|T=x|a=x|Rm=1111
+// Vld4AT1Nowb: VLD4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// read together by <align>: size, a
+// register fields: Rn
+// IT state read: condition
+f9ae5f2f vld4.8 {d5[], d7[], d9[], d11[]}, [lr]
+f9a5bf4f vld4.16 {d11[], d12[], d13[], d14[]}, [r5]
+f9e9df3f UNPREDICTABLE
+f9e52f9f vld4.32 {d18[], d19[], d20[], d21[]}, [r5:64]
+f9a2ffbf vld4.32 {d15[], d17[], d19[], d21[]}, [r2:64]
+f9a2efff vld4.32 {d14[], d16[], d18[], d20[]}, [r2:128]
+f9eb5f1f vld4.8 {d21[], d22[], d23[], d24[]}, [r11:32]
+f9a62f1f vld4.8 {d2[], d3[], d4[], d5[]}, [r6:32]
+F9A00F7F vld4.16 {d0[], d2[], d4[], d6[]}, [r0:64]
+F9AF8FAF vld4.32 {d8[], d10[], d12[], d14[]}, [pc] (unpredictable)
+F9AE4F2F vld4.8 {d4[], d6[], d8[], d10[]}, [lr]
+F9AE1F2F vld4.8 {d1[], d3[], d5[], d7[]}, [lr]
+F9AE5FEF UNDEFINED
+F9AE5F2F [ne] vld4ne.8 {d5[], d7[], d9[], d11[]}, [lr]
+
+// VLD4_a_T1_posti 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=11|size=xx|T=x|a=x|Rm=1101
+// Vld4AT1Posti: VLD4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// read together by <align>: size, a
+// register fields: Rn
+// IT state read: condition
+f9ab3f8d vld4.32 {d3[], d4[], d5[], d6[]}, [r11]!
+f9e6ef2d UNPREDICTABLE
+f9ef1f9d vld4.32 {d17[], d18[], d19[], d20[]}, [pc:64]! (unpredictable)
+f9e81f2d vld4.8 {d17[], d19[], d21[], d23[]}, [r8]!
+f9e1cf1d vld4.8 {d28[], d29[], d30[], d31[]}, [r1:32]!
+f9ee4f2d vld4.8 {d20[], d22[], d24[], d26[]}, [lr]!
+f9e79fdd vld4.32 {d25[], d26[], d27[], d28[]}, [r7:128]!
+f9e02f8d vld4.32 {d18[], d19[], d20[], d21[]}, [r0]!
+F9AB0F4D vld4.16 {d0[], d1[], d2[], d3[]}, [r11]!
+F9ABFF4D vld4.16 {d15[], d16[], d17[], d18[]}, [r11]!
+F9AB8F5D vld4.16 {d8[], d9[], d10[], d11[]}, [r11:64]!
+F9AB3FCD UNDEFINED
+F9AB3F8D [ne] vld4ne.32 {d3[], d4[], d5[], d6[]}, [r11]!
+
+// VLD4_a_T1_postr 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=11|size=xx|T=x|a=x|Rm=xxxx
+// Vld4AT1Postr: VLD4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// read together by <align>: size, a
+// register fields: Rn, Rm
+// IT state read: condition
+f9a6cf9c vld4.32 {d12[], d13[], d14[], d15[]}, [r6:64], r12
+f9aa3fa4 vld4.32 {d3[], d5[], d7[], d9[]}, [r10], r4
+f9aa7f61 vld4.16 {d7[], d9[], d11[], d13[]}, [r10], r1
+f9e41f13 vld4.8 {d17[], d18[], d19[], d20[]}, [r4:32], r3
+f9af0f45 vld4.16 {d0[], d1[], d2[], d3[]}, [pc], r5 (unpredictable)
+f9a06f53 vld4.16 {d6[], d7[], d8[], d9[]}, [r0:64], r3
+f9e8cffc UNPREDICTABLE
+f9e4ff45 UNPREDICTABLE
+F9A68F00 vld4.8 {d8[], d9[], d10[], d11[]}, [r6], r0
+F9A64F96 vld4.32 {d4[], d5[], d6[], d7[]}, [r6:64], r6
+F9A62F9C vld4.32 {d2[], d3[], d4[], d5[]}, [r6:64], r12
+F9A6CFCC UNDEFINED
+F9A6CF9C [ne] vld4ne.32 {d12[], d13[], d14[], d15[]}, [r6:64], r12
+F9A6FFDC vld4.32 {d15[], d16[], d17[], d18[]}, [r6:128], r12
+F9A6CFDC vld4.32 {d12[], d13[], d14[], d15[]}, [r6:128], r12

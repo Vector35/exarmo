@@ -1,0 +1,88 @@
+// LDC_i_A1_off cond=xxxx|110|P=1|U=x|D=0|W=0|L=1|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// LdcIA1Off: LDC{<c>}{<q>}  p14, c5, [<Rn>{, #{<+/->}<imm>}]
+// register fields: Rn
+ed905e01 ldc p14, c5, [r0, #4]
+1d185e42 ldcne p14, c5, [r8, #-264]
+2d125eec ldchs p14, c5, [r2, #-944]
+9d1a5e10 ldcls p14, c5, [r10, #-64]
+6d1c5edf ldcvs p14, c5, [r12, #-892]
+bd1b5e96 ldclt p14, c5, [r11, #-600]
+2d115e02 ldchs p14, c5, [r1, #-8]
+4d195eb4 ldcmi p14, c5, [r9, #-720]
+4d1e5e2e ldcmi p14, c5, [lr, #-184]
+0D905E00 ldceq p14, c5, [r0]
+FD9F5E01 UNALLOCATED
+8D905EFF ldchi p14, c5, [r0, #0x3fc]
+ED905E80 ldc p14, c5, [r0, #0x200]
+ED905E40 ldc p14, c5, [r0, #0x100]
+ED905E20 ldc p14, c5, [r0, #0x80]
+ED905E08 ldc p14, c5, [r0, #0x20]
+ED905E04 ldc p14, c5, [r0, #0x10]
+
+// LDC_i_A1_post cond=xxxx|110|P=0|U=x|D=0|W=1|L=1|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// LdcIA1Post: LDC{<c>}{<q>}  p14, c5, [<Rn>], #{<+/->}<imm>
+// register fields: Rn
+ecb05e01 ldc p14, c5, [r0], #4
+1c3d5e74 ldcne p14, c5, [sp], #-464
+3c325ec5 ldclo p14, c5, [r2], #-788
+4c395e65 ldcmi p14, c5, [r9], #-404
+5c365ef0 ldcpl p14, c5, [r6], #-960
+dc3c5e8b ldcle p14, c5, [r12], #-556
+bc3c5e16 ldclt p14, c5, [r12], #-88
+3c3b5e06 ldclo p14, c5, [r11], #-24
+bc3c5e92 ldclt p14, c5, [r12], #-584
+0CB05E00 ldceq p14, c5, [r0], #0x0
+FCBF5E01 UNALLOCATED
+8CB05EFF ldchi p14, c5, [r0], #0x3fc
+2CB05E80 ldccs p14, c5, [r0], #0x200
+ECB05E40 ldc p14, c5, [r0], #0x100
+ECB05E20 ldc p14, c5, [r0], #0x80
+ECB05E10 ldc p14, c5, [r0], #0x40
+ECB05E08 ldc p14, c5, [r0], #0x20
+ECB05E04 ldc p14, c5, [r0], #0x10
+ECB05E02 ldc p14, c5, [r0], #0x8
+
+// LDC_i_A1_pre cond=xxxx|110|P=1|U=x|D=0|W=1|L=1|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// LdcIA1Pre: LDC{<c>}{<q>}  p14, c5, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn
+edb05e01 ldc p14, c5, [r0, #4]!
+6d355ee1 ldcvs p14, c5, [r5, #-900]!
+ad325e43 ldcge p14, c5, [r2, #-268]!
+cd3e5e21 ldcgt p14, c5, [lr, #-132]!
+ed3b5e23 ldc p14, c5, [r11, #-140]!
+7d365e07 ldcvc p14, c5, [r6, #-28]!
+8d365ec3 ldchi p14, c5, [r6, #-780]!
+8d375ec6 ldchi p14, c5, [r7, #-792]!
+0d3a5ebc ldceq p14, c5, [r10, #-752]!
+FDBF5E01 UNALLOCATED
+4DB05E00 ldcmi p14, c5, [r0, #0x0]!
+2DB05EFF ldccs p14, c5, [r0, #0x3fc]!
+1DB05E80 ldcne p14, c5, [r0, #0x200]!
+EDB05E40 ldc p14, c5, [r0, #0x100]!
+EDB05E20 ldc p14, c5, [r0, #0x80]!
+EDB05E10 ldc p14, c5, [r0, #0x40]!
+EDB05E08 ldc p14, c5, [r0, #0x20]!
+EDB05E04 ldc p14, c5, [r0, #0x10]!
+EDB05E02 ldc p14, c5, [r0, #0x8]!
+
+// LDC_i_A1_unind cond=xxxx|110|P=0|U=1|D=0|W=0|L=1|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// LdcIA1Unind: LDC{<c>}{<q>}  p14, c5, [<Rn>], <option>
+// register fields: Rn
+ac9c5ece ldcge p14, c5, [r12], {206}
+bc995e1f ldclt p14, c5, [r9], {31}
+1c955e2b ldcne p14, c5, [r5], {43}
+8c955eb0 ldchi p14, c5, [r5], {176}
+4c975e02 ldcmi p14, c5, [r7], {2}
+7c945e1d ldcvc p14, c5, [r4], {29}
+bc995efa ldclt p14, c5, [r9], {250}
+ec975ecc ldc p14, c5, [r7], {204}
+0C905E00 ldceq p14, c5, [r0], {0}
+FC9F5ECE UNALLOCATED
+2C9C5EFF ldccs p14, c5, [r12], {255}
+AC9C5E80 ldcge p14, c5, [r12], {128}
+AC9C5E40 ldcge p14, c5, [r12], {64}
+AC9C5E20 ldcge p14, c5, [r12], {32}
+AC9C5E10 ldcge p14, c5, [r12], {16}
+AC9C5E08 ldcge p14, c5, [r12], {8}
+AC9C5E04 ldcge p14, c5, [r12], {4}
+AC9C5E01 ldcge p14, c5, [r12], {1}

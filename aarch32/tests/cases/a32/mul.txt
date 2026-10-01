@@ -1,0 +1,39 @@
+// MUL_A1 cond=xxxx|0000|opc=000|S=0|Rd=xxxx|RdLo=(0)(0)(0)(0)|Rm=xxxx|1001|Rn=xxxx
+// MulA1: MUL{<c>}{<q>}  <Rd>, <Rn>{, <Rm>}
+// register fields: Rd, Rm, Rn
+d0048f9b mulle r4, r11, pc (unpredictable)
+200d079e mulhs sp, lr, r7
+c007d393 mulgt r7, r3, r3 (unpredictable)
+500b5490 mulpl r11, r0, r4 (unpredictable)
+b009df9a mullt r9, r10, pc (unpredictable)
+30016896 mullo r1, r6, r8 (unpredictable)
+c00de39d mulgt sp, sp, r3 (unpredictable)
+1003d49d mulne r3, sp, r4 (unpredictable)
+// Binary Ninja's tests
+c0050796 mulgt r5, r6, r7
+e0050796 mul r5, r6, r7
+0000F09F muleq r0, pc, r0 (unpredictable)
+F0048F9B UNALLOCATED
+800F4F9B mulhi pc, r11, pc (unpredictable)
+4004249B mulmi r4, r11, r4 (unpredictable)
+D0041F9B mulle r4, r11, pc (unpredictable)
+
+// MULS_A1 cond=xxxx|0000|opc=000|S=1|Rd=xxxx|RdLo=(0)(0)(0)(0)|Rm=xxxx|1001|Rn=xxxx
+// MulsA1: MULS{<c>}{<q>}  <Rd>, <Rn>{, <Rm>}
+// register fields: Rd, Rm, Rn
+60150595 mulsvs r5, r5, r5
+e0117d9f muls r1, pc, sp (unpredictable)
+d01b2396 mulsle r11, r6, r3 (unpredictable)
+50119c9e mulspl r1, lr, r12 (unpredictable)
+a0193a9b mulsge r9, r11, r10 (unpredictable)
+301c2d9c mulslo r12, r12, sp (unpredictable)
+10118f90 mulsne r1, r0, pc (unpredictable)
+30157b9c mulslo r5, r12, r11 (unpredictable)
+// Binary Ninja's tests
+d0150796 mulsle r5, r6, r7
+e0150796 muls r5, r6, r7
+0010F095 mulseq r0, r5, r0 (unpredictable)
+F0150595 UNALLOCATED
+801F4595 mulshi pc, r5, r5 (unpredictable)
+40151595 mulsmi r5, r5, r5 (unpredictable)
+20150595 mulscs r5, r5, r5

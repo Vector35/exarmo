@@ -1,0 +1,41 @@
+// STMDB_T1 111|0100|opc=10|0|W=x|L=0|Rn=xxxx|P=(0)|M=x|register_list=xxxxxxxxxxxxxx
+// PushStmdbT1: PUSH{<c>}{<q>}  <registers>
+// StmdbT1: STMDB{<c>}{<q>}  <Rn>{<!>}, <registers>
+// read together by the PUSH alias: W, Rn, M, register_list
+// register fields: Rn
+// form chosen on: W, Rn, M, register_list
+// IT state read: condition
+E9000000 stmdb r0, {} (unpredictable)
+E92FFFFF stmdb pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+E9002000 stmdb r0, {sp} (unpredictable)
+E9001000 stmdb r0, {r12} (unpredictable)
+E9000800 stmdb r0, {r11} (unpredictable)
+E9000400 stmdb r0, {r10} (unpredictable)
+E9000200 stmdb r0, {r9} (unpredictable)
+E9000100 stmdb r0, {r8} (unpredictable)
+E9000080 stmdb r0, {r7} (unpredictable)
+E9000040 stmdb r0, {r6} (unpredictable)
+E9000020 stmdb r0, {r5} (unpredictable)
+E9000010 stmdb r0, {r4} (unpredictable)
+E9000008 stmdb r0, {r3} (unpredictable)
+E9000004 stmdb r0, {r2} (unpredictable)
+E9000002 stmdb r0, {r1} (unpredictable)
+E9000001 stmdb r0, {r0} (unpredictable)
+E9003FFF stmdb r0, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E9004000 stmdb r0, {lr} (unpredictable)
+E9007FFF stmdb r0, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr} (unpredictable)
+E90F0000 stmdb pc, {} (unpredictable)
+E90F3FFF stmdb pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E90F4000 stmdb pc, {lr} (unpredictable)
+E90F7FFF stmdb pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr} (unpredictable)
+E9200000 stmdb r0!, {} (unpredictable)
+E9203FFF stmdb r0!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E9204000 stmdb r0!, {lr} (unpredictable)
+E9207FFF stmdb r0!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr} (unpredictable)
+E92F0000 stmdb pc!, {} (unpredictable)
+E92F3FFF stmdb pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E92F4000 stmdb pc!, {lr} (unpredictable)
+E92F7FFF stmdb pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr} (unpredictable)
+E92D3FFF push {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E92D3FFF [ne] pushne {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E9001000 [ne] stmdbne r0, {r12} (unpredictable)

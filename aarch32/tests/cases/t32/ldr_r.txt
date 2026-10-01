@@ -1,0 +1,33 @@
+// LDR_r_T1 0101|L=1|B=0|H=0|Rm=xxx|Rn=xxx|Rt=xxx
+// LdrRT1: LDR{<c>}{<q>}  <Rt>, [<Rn>, {<+>}<Rm>]
+// register fields: Rm, Rn, Rt
+// IT state read: condition
+5800 ldr r0, [r0, r0]
+5801 ldr r1, [r0, r0]
+5802 ldr r2, [r0, r0]
+5803 ldr r3, [r0, r0]
+5804 ldr r4, [r0, r0]
+5805 ldr r5, [r0, r0]
+5806 ldr r6, [r0, r0]
+5807 ldr r7, [r0, r0]
+5848 ldr r0, [r1, r1]
+5890 ldr r0, [r2, r2]
+58D8 ldr r0, [r3, r3]
+5920 ldr r0, [r4, r4]
+5968 ldr r0, [r5, r5]
+59B0 ldr r0, [r6, r6]
+59F8 ldr r0, [r7, r7]
+5800 [ne] ldrne r0, [r0, r0]
+5853 ldr r3, [r2, r1]
+
+// LDR_r_T2 111|1100|00|size=10|L=1|Rn=xxxx|Rt=xxxx|000000|imm2=xx|Rm=xxxx
+// LdrRT2: LDR{<c>}{<q>}  <Rt>, [<Rn>, {<+>}<Rm>{, LSL #<imm>}]
+// register fields: Rn, Rt, Rm
+// IT state read: condition, last in block
+F8500000 ldr r0, [r0, r0]
+F850F01F ldr pc, [r0, pc, lsl #0x1] (unpredictable)
+F8500020 ldr r0, [r0, r0, lsl #0x2]
+F8500030 ldr r0, [r0, r0, lsl #0x3]
+F8500000 [ne] ldrne r0, [r0, r0]
+F8500000 [ne last] ldrne r0, [r0, r0]
+F8512003 ldr r2, [r1, r3]

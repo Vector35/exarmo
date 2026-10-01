@@ -1,0 +1,16 @@
+// UXTAH_T1 111|11010|0|op1=00|U=1|Rn=xxxx|1111|Rd=xxxx|1(0)|rotate=xx|Rm=xxxx
+// UxtahT1: UXTAH{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, ROR #<amount>}
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa1afcf5 uxtah r12, r10, r5, ror #24 (unpredictable)
+fa1cf6c0 uxtah r6, r12, r0 (unpredictable)
+fa1bf9d3 uxtah r9, r11, r3, ror #8 (unpredictable)
+fa10f5d2 uxtah r5, r0, r2, ror #8 (unpredictable)
+fa1df1ae uxtah r1, sp, lr, ror #16
+fa1cfaea uxtah r10, r12, r10, ror #16 (unpredictable)
+fa19fed6 uxtah lr, r9, r6, ror #8 (unpredictable)
+fa1cf788 uxtah r7, r12, r8
+FA1AF0FF uxtah r0, r10, pc, ror #0x18 (unpredictable)
+FA1AFFFA uxtah pc, r10, r10, ror #0x18 (unpredictable)
+FA1AFAF5 uxtah r10, r10, r5, ror #0x18 (unpredictable)
+FA1AFCF5 [ne] uxtahne r12, r10, r5, ror #0x18 (unpredictable)

@@ -1,0 +1,69 @@
+// sqshrunt_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=0|U=0|R=0|T=1|Zn=xxxxx|Zd=xxxxx
+// SqshruntZZi: SQSHRUNT  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+453405F9 sqshrunt z25.h, z15.s, #0xc
+453D04B8 sqshrunt z24.h, z5.s, #0x3
+45660772 sqshrunt z18.s, z27.d, #0x1a
+4531065D sqshrunt z29.h, z18.s, #0xf
+457B053C sqshrunt z28.s, z9.d, #0x5
+45750433 sqshrunt z19.s, z1.d, #0xb
+452B0423 sqshrunt z3.b, z1.h, #0x5
+456605C0 sqshrunt z0.s, z14.d, #0x1a
+4530041F sqshrunt z31.h, z0.s, #0x10
+453207F9 sqshrunt z25.h, z31.s, #0xe
+453705F9 sqshrunt z25.h, z15.s, #0x9
+452005F9 UNDEFINED
+452105F9 UNDEFINED
+452205F9 UNDEFINED
+452305F9 UNDEFINED
+452405F9 UNDEFINED
+452505F9 UNDEFINED
+452605F9 UNDEFINED
+452705F9 UNDEFINED
+452805EF sqshrunt z15.b, z15.h, #0x8
+452905F9 sqshrunt z25.b, z15.h, #0x7
+452A05F9 sqshrunt z25.b, z15.h, #0x6
+452C05F9 sqshrunt z25.b, z15.h, #0x4
+452D05F9 sqshrunt z25.b, z15.h, #0x3
+452E05F9 sqshrunt z25.b, z15.h, #0x2
+452F05F9 sqshrunt z25.b, z15.h, #0x1
+453305F9 sqshrunt z25.h, z15.s, #0xd
+453505F9 sqshrunt z25.h, z15.s, #0xb
+453605F9 sqshrunt z25.h, z15.s, #0xa
+453805F9 sqshrunt z25.h, z15.s, #0x8
+453905F9 sqshrunt z25.h, z15.s, #0x7
+453A05F9 sqshrunt z25.h, z15.s, #0x6
+453B05F9 sqshrunt z25.h, z15.s, #0x5
+453C05F9 sqshrunt z25.h, z15.s, #0x4
+453E05F9 sqshrunt z25.h, z15.s, #0x2
+453F05F9 sqshrunt z25.h, z15.s, #0x1
+456005F9 sqshrunt z25.s, z15.d, #0x20
+456105F9 sqshrunt z25.s, z15.d, #0x1f
+456205F9 sqshrunt z25.s, z15.d, #0x1e
+456305F9 sqshrunt z25.s, z15.d, #0x1d
+456405F9 sqshrunt z25.s, z15.d, #0x1c
+456505F9 sqshrunt z25.s, z15.d, #0x1b
+456705F9 sqshrunt z25.s, z15.d, #0x19
+456805F9 sqshrunt z25.s, z15.d, #0x18
+456905F9 sqshrunt z25.s, z15.d, #0x17
+456A05F9 sqshrunt z25.s, z15.d, #0x16
+456B05F9 sqshrunt z25.s, z15.d, #0x15
+456C05F9 sqshrunt z25.s, z15.d, #0x14
+456D05F9 sqshrunt z25.s, z15.d, #0x13
+456E05F9 sqshrunt z25.s, z15.d, #0x12
+456F05F9 sqshrunt z25.s, z15.d, #0x11
+457005F9 sqshrunt z25.s, z15.d, #0x10
+457105F9 sqshrunt z25.s, z15.d, #0xf
+457205F9 sqshrunt z25.s, z15.d, #0xe
+457305F9 sqshrunt z25.s, z15.d, #0xd
+457405F9 sqshrunt z25.s, z15.d, #0xc
+457605F9 sqshrunt z25.s, z15.d, #0xa
+457705F9 sqshrunt z25.s, z15.d, #0x9
+457805F9 sqshrunt z25.s, z15.d, #0x8
+457905F9 sqshrunt z25.s, z15.d, #0x7
+457A05F9 sqshrunt z25.s, z15.d, #0x6
+457C05F9 sqshrunt z25.s, z15.d, #0x4
+457D05F9 sqshrunt z25.s, z15.d, #0x3
+457E05F9 sqshrunt z25.s, z15.d, #0x2
+457F05F9 sqshrunt z25.s, z15.d, #0x1

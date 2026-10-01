@@ -1,0 +1,40 @@
+// frecpx_z_p_z_m 011|0010|1|size=xx|0|011|opc=00|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrecpxZPZM: FRECPX  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+658CAB87 frecpx z7.s, p2/m, z28.s
+658CB183 frecpx z3.s, p4/m, z12.s
+654CBF3F frecpx z31.h, p7/m, z25.h
+654CBD33 frecpx z19.h, p7/m, z9.h
+65CCADB8 frecpx z24.d, p3/m, z13.d
+65CCBA6E frecpx z14.d, p6/m, z19.d
+654CAE39 frecpx z25.h, p3/m, z17.h
+658CB1EC frecpx z12.s, p4/m, z15.s
+654CB3D7 frecpx z23.h, p4/m, z30.h
+658CA1B4 frecpx z20.s, p0/m, z13.s
+654CBA82 frecpx z2.h, p6/m, z20.h
+658CAF0D frecpx z13.s, p3/m, z24.s
+65CCA92A frecpx z10.d, p2/m, z9.d
+65CCB04D frecpx z13.d, p4/m, z2.d
+654CBC62 frecpx z2.h, p7/m, z3.h
+658CB20F frecpx z15.s, p4/m, z16.s
+658CA400 frecpx z0.s, p1/m, z0.s
+658CB7E7 frecpx z7.s, p5/m, z31.s
+650CAB87 UNDEFINED
+658CA847 frecpx z7.s, p2/m, z2.s
+658CAB82 frecpx z2.s, p2/m, z28.s
+
+// frecpx_z_p_z_z 011|0010|0|size=xx|011|011|1|opc=00|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FrecpxZPZZ: FRECPX  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+645B8004 frecpx z4.h, p0/z, z0.h
+645B800B frecpx z11.h, p0/z, z0.h
+645B8012 frecpx z18.h, p0/z, z0.h
+649B87E0 frecpx z0.s, p1/z, z31.s
+64DB881F frecpx z31.d, p2/z, z0.d
+645B8C04 frecpx z4.h, p3/z, z0.h
+645B9004 frecpx z4.h, p4/z, z0.h
+645B9404 frecpx z4.h, p5/z, z0.h
+645B9804 frecpx z4.h, p6/z, z0.h
+645B9C04 frecpx z4.h, p7/z, z0.h
+641B8004 UNDEFINED
+645B8000 frecpx z0.h, p0/z, z0.h

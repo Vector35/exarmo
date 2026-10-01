@@ -1,0 +1,48 @@
+// VHADD_A1_D 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|00|op=0|0|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VhaddA1D: VHADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f25de022 vhadd.s16 d30, d13, d18
+f208d0a1 vhadd.s8 d13, d24, d17
+f258b0af vhadd.s16 d27, d24, d31
+f34330a3 vhadd.u8 d19, d19, d19
+f25c8085 vhadd.s16 d24, d28, d5
+f219b002 vhadd.s16 d11, d9, d2
+f31c602d vhadd.u16 d6, d12, d29
+f34dc0a2 vhadd.u8 d28, d29, d18
+F2600020 vhadd.s32 d16, d0, d16
+F27DE022 UNDEFINED
+F26FF028 vhadd.s32 d31, d15, d24
+F3644024 vhadd.u32 d20, d4, d20
+F2522000 vhadd.s16 d18, d2, d0
+F251100F vhadd.s16 d17, d1, d15
+F37DE022 UNDEFINED
+F2100020 vhadd.s16 d0, d0, d16
+F210F0A2 vhadd.s16 d15, d16, d18
+F25F0022 vhadd.s16 d16, d15, d18
+F25FF0A2 vhadd.s16 d31, d31, d18
+
+// VHADD_A1_Q 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|00|op=0|0|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VhaddA1Q: VHADD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f21a00e6 vhadd.s16 q0, q13, q11
+f22c4068 vhadd.s32 q2, q6, q12
+f22060c4 vhadd.s32 q3, q8, q2
+f20e00cc vhadd.s8 q0, q15, q6
+f32ce06c vhadd.u32 q7, q6, q14
+f2662068 vhadd.s32 q9, q3, q12
+f24220e6 vhadd.s8 q9, q9, q11
+f362e0e6 vhadd.u32 q15, q9, q11
+F23FF0EF UNDEFINED
+F30880E0 vhadd.u8 q4, q12, q8
+F35400E2 vhadd.u16 q8, q10, q9
+F23110E1 UNDEFINED
+F33FF04F UNDEFINED
+F25FF0EF UNDEFINED
+F2100040 vhadd.s16 q0, q0, q0
+F21A00E0 vhadd.s16 q0, q13, q8

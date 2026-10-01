@@ -1,0 +1,19 @@
+// bfmla_z_zzzi_h 011|0010|0|0|i3h=x|1|i3l=xx|Zm=xxx|0000|o2=1|op=0|Zn=xxxxx|Zda=xxxxx
+// BfmlaZZzziH: BFMLA  <Zda>.H, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+64200800 bfmla z0.h, z0.h, z0.h[0]
+64200807 bfmla z7.h, z0.h, z0.h[0]
+6420080E bfmla z14.h, z0.h, z0.h[0]
+64690BFF bfmla z31.h, z31.h, z1.h[5]
+64320800 bfmla z0.h, z0.h, z2.h[2]
+643B0800 bfmla z0.h, z0.h, z3.h[3]
+64240800 bfmla z0.h, z0.h, z4.h[0]
+64250800 bfmla z0.h, z0.h, z5.h[0]
+64260800 bfmla z0.h, z0.h, z6.h[0]
+64270800 bfmla z0.h, z0.h, z7.h[0]
+64280800 bfmla z0.h, z0.h, z0.h[1]
+64600800 bfmla z0.h, z0.h, z0.h[4]
+64700800 bfmla z0.h, z0.h, z0.h[6]
+64780800 bfmla z0.h, z0.h, z0.h[7]
+64210843 bfmla z3.h, z2.h, z1.h[0]

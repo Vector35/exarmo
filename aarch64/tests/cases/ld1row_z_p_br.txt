@@ -1,0 +1,19 @@
+// ld1row_z_p_br_contiguous 101|0010|msz=10|ssz=01|Rm=xxxxx|000|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld1rowZPBrContiguous: LD1ROW  { <Zt>.S }, <Pg>/Z, [<Xn|SP>, <Xm>, LSL #2]
+// register fields: Rm, Pg, Rn, Zt
+A53C0D39 ld1row {z25.s}, p3/z, [x9, x28, lsl #0x2]
+A52B0602 ld1row {z2.s}, p1/z, [x16, x11, lsl #0x2]
+A5331D72 ld1row {z18.s}, p7/z, [x11, x19, lsl #0x2]
+A53E1CBD ld1row {z29.s}, p7/z, [x5, lr, lsl #0x2]
+A53613C0 ld1row {z0.s}, p4/z, [lr, x22, lsl #0x2]
+A5301D68 ld1row {z8.s}, p7/z, [x11, x16, lsl #0x2]
+A53212F3 ld1row {z19.s}, p4/z, [x23, x18, lsl #0x2]
+A53C12EC ld1row {z12.s}, p4/z, [x23, x28, lsl #0x2]
+A520001F ld1row {z31.s}, p0/z, [x0, x0, lsl #0x2]
+A53C0BF9 ld1row {z25.s}, p2/z, [sp, x28, lsl #0x2]
+A53C1539 ld1row {z25.s}, p5/z, [x9, x28, lsl #0x2]
+A53C1939 ld1row {z25.s}, p6/z, [x9, x28, lsl #0x2]
+A53F0D39 UNALLOCATED
+A53C0D3C ld1row {z28.s}, p3/z, [x9, x28, lsl #0x2]
+A53C0D23 ld1row {z3.s}, p3/z, [x9, x28, lsl #0x2]
+A53C0D29 ld1row {z9.s}, p3/z, [x9, x28, lsl #0x2]

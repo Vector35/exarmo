@@ -1,0 +1,27 @@
+// VMOVL_T1 111|U=x|11|11|1|D=x|imm3H=xxx|imm3L=000|Vd=xxxx|opc=1010|L=0|Q=0|M=x|1|Vm=xxxx
+// VmovlT1: VMOVL{<c>}{<q>}.<dt>  <Qd>, <Dm>
+// read together by <dt>: U, imm3H
+// read together by <Qd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+efc8ea30 vmovl.s8 q15, d16
+ffd0aa3b vmovl.u16 q13, d27
+ffe0ca19 vmovl.u32 q14, d9
+ef902a3b vmovl.s16 q1, d27
+ff906a3b vmovl.u16 q3, d27
+efd0ca36 vmovl.s16 q14, d22
+efe08a1b vmovl.s32 q12, d11
+ef900a13 vmovl.s16 q0, d3
+EFD8FA30 UNDEFINED
+FFC84A3F vmovl.u8 q10, d31
+EFE81A30 UNDEFINED
+EFC80A38 vmovl.s8 q8, d24
+EFC8EA34 vmovl.s8 q15, d20
+EFC8EA32 vmovl.s8 q15, d18
+EFC8EA31 vmovl.s8 q15, d17
+EF88FA30 UNDEFINED
+EFC8FA30 UNDEFINED
+EFC8EA10 vmovl.s8 q15, d0
+EFC8EA1F vmovl.s8 q15, d15
+EFC8EA3F vmovl.s8 q15, d31
+EFC8EA30 [ne] vmovlne.s8 q15, d16

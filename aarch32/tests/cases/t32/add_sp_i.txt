@@ -1,0 +1,198 @@
+// ADD_SP_i_T1 1010|SP=1|Rd=xxx|imm8=xxxxxxxx
+// AddSpIT1: ADD{<c>}{<q>}  <Rd>, SP, #<imm8>
+// register fields: Rd
+// IT state read: condition
+a800 add r0, sp, #0
+a801 add r0, sp, #4
+a802 add r0, sp, #8
+a803 add r0, sp, #12
+a804 add r0, sp, #16
+a805 add r0, sp, #20
+a806 add r0, sp, #24
+a807 add r0, sp, #28
+A9FF add r1, sp, #0x3fc
+AA80 add r2, sp, #0x200
+AB40 add r3, sp, #0x100
+AC20 add r4, sp, #0x80
+AD10 add r5, sp, #0x40
+AE08 add r6, sp, #0x20
+AF00 add r7, sp, #0x0
+A800 [ne] addne r0, sp, #0x0
+
+// ADD_SP_i_T2 1011|0000|S=0|imm7=xxxxxxx
+// AddSpIT2: ADD{<c>}{<q>}  {<SP>, }<SP>, #<imm7>
+// IT state read: condition
+b000 add sp, #0
+b001 add sp, #4
+b002 add sp, #8
+b003 add sp, #12
+b004 add sp, #16
+b005 add sp, #20
+b006 add sp, #24
+b007 add sp, #28
+B07F add sp, #0x1fc
+B040 add sp, #0x100
+B020 add sp, #0x80
+B010 add sp, #0x40
+B008 add sp, #0x20
+B000 [ne] addne sp, #0x0
+
+// ADD_SP_i_T3 11110|i=x|0|op1=1000|S=0|Rn=1101|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// AddSpIT3: ADD{<c>}{<q>}  {<Rd>, }SP, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f10d42e7 add r2, sp, #1937768448
+f10d2e31 add lr, sp, #822096128
+f10d26bc add r6, sp, #3154164736
+f50d3342 add r3, sp, #198656
+f10d0bc7 add r11, sp, #199
+f10d6fbc add pc, sp, #98566144 (unpredictable)
+F10D1000 add r0, sp, #0x0
+F10D52FF add r2, sp, #0x1fe00000
+F10D7280 add r2, sp, #0x1000000
+F10D4240 add r2, sp, #0xc0000000
+F10D4220 add r2, sp, #0xa0000000
+F10D4210 add r2, sp, #0x90000000
+F10D4208 add r2, sp, #0x88000000
+F10D4204 add r2, sp, #0x84000000
+F10D4202 add r2, sp, #0x82000000
+F10D4201 add r2, sp, #0x81000000
+F10D0200 add r2, sp, #0x0
+F10D02FF add r2, sp, #0xff
+F10D1200 add r2, sp, #0x0
+F10D12FF add r2, sp, #0xff00ff
+F10D2200 add r2, sp, #0x0
+F10D22FF add r2, sp, #0xff00ff00
+F10D3200 add r2, sp, #0x0
+F10D32FF add r2, sp, #0xffffffff
+F10D4200 add r2, sp, #0x80000000
+F10D42FF add r2, sp, #0x7f800000
+F10D5200 add r2, sp, #0x20000000
+F10D6200 add r2, sp, #0x8000000
+F10D62FF add r2, sp, #0x7f80000
+F10D7200 add r2, sp, #0x2000000
+F10D72FF add r2, sp, #0x1fe0000
+F50D0200 add r2, sp, #0x800000
+F50D02FF add r2, sp, #0x7f8000
+F50D1200 add r2, sp, #0x200000
+F50D12FF add r2, sp, #0x1fe000
+F50D2200 add r2, sp, #0x80000
+F50D22FF add r2, sp, #0x7f800
+F50D3200 add r2, sp, #0x20000
+F50D32FF add r2, sp, #0x1fe00
+F50D4200 add r2, sp, #0x8000
+F50D42FF add r2, sp, #0x7f80
+F50D5200 add r2, sp, #0x2000
+F50D52FF add r2, sp, #0x1fe0
+F50D6200 add r2, sp, #0x800
+F50D62FF add r2, sp, #0x7f8
+F50D7200 add r2, sp, #0x200
+F50D72FF add r2, sp, #0x1fe
+F10D42E7 [ne] addne r2, sp, #0x73800000
+
+// ADD_SP_i_T4 111|10|i=x|1|0|o1=0|0|o2=0|0|Rn=1101|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// T4bAddSpIT4: ADDW{<c>}{<q>}  {<Rd>, }SP, #<imm12>
+// read together by <imm12>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f60d3408 addw r4, sp, #2824
+f60d7558 addw r5, sp, #3928
+f60d3d81 addw sp, sp, #2945
+f20d0f1d addw pc, sp, #29 (unpredictable)
+f60d312a addw r1, sp, #2858
+f60d30fd addw r0, sp, #3069
+F60D1400 addw r4, sp, #0x900
+F60D24FF addw r4, sp, #0xaff
+F60D4480 addw r4, sp, #0xc80
+F60D5440 addw r4, sp, #0xd40
+F60D6420 addw r4, sp, #0xe20
+F60D3410 addw r4, sp, #0xb10
+F60D3404 addw r4, sp, #0xb04
+F60D3402 addw r4, sp, #0xb02
+F60D3401 addw r4, sp, #0xb01
+F20D0400 addw r4, sp, #0x0
+F20D04FF addw r4, sp, #0xff
+F20D1400 addw r4, sp, #0x100
+F20D14FF addw r4, sp, #0x1ff
+F20D2400 addw r4, sp, #0x200
+F20D24FF addw r4, sp, #0x2ff
+F20D3400 addw r4, sp, #0x300
+F20D34FF addw r4, sp, #0x3ff
+F20D4400 addw r4, sp, #0x400
+F20D44FF addw r4, sp, #0x4ff
+F20D5400 addw r4, sp, #0x500
+F20D54FF addw r4, sp, #0x5ff
+F20D6400 addw r4, sp, #0x600
+F20D64FF addw r4, sp, #0x6ff
+F20D7400 addw r4, sp, #0x700
+F20D74FF addw r4, sp, #0x7ff
+F60D0400 addw r4, sp, #0x800
+F60D04FF addw r4, sp, #0x8ff
+F60D14FF addw r4, sp, #0x9ff
+F60D2400 addw r4, sp, #0xa00
+F60D3400 addw r4, sp, #0xb00
+F60D34FF addw r4, sp, #0xbff
+F60D4400 addw r4, sp, #0xc00
+F60D44FF addw r4, sp, #0xcff
+F60D5400 addw r4, sp, #0xd00
+F60D54FF addw r4, sp, #0xdff
+F60D6400 addw r4, sp, #0xe00
+F60D64FF addw r4, sp, #0xeff
+F60D7400 addw r4, sp, #0xf00
+F60D74FF addw r4, sp, #0xfff
+F60D3408 [ne] addwne r4, sp, #0xb08
+
+// ADDS_SP_i_T3 11110|i=x|0|op1=1000|S=1|Rn=1101|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// AddsSpIT3: ADDS{<c>}{<q>}  {<Rd>, }SP, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f11d6707 adds r7, sp, #141557760
+f11d7e3d adds lr, sp, #49545216
+f11d2a8b adds r10, sp, #2332068608
+f11d567d adds r6, sp, #1061158912
+f11d2b49 adds r11, sp, #1224755456
+f11d648c adds r4, sp, #73400320
+F51D0000 adds r0, sp, #0x800000
+F11D17FF adds r7, sp, #0xff00ff
+F11D3780 adds r7, sp, #0x80808080
+F11D4740 adds r7, sp, #0xc0000000
+F11D6720 adds r7, sp, #0xa000000
+F11D6710 adds r7, sp, #0x9000000
+F11D6708 adds r7, sp, #0x8800000
+F11D6704 adds r7, sp, #0x8400000
+F11D6702 adds r7, sp, #0x8200000
+F11D6701 adds r7, sp, #0x8100000
+F11D0700 adds r7, sp, #0x0
+F11D07FF adds r7, sp, #0xff
+F11D1700 adds r7, sp, #0x0
+F11D2700 adds r7, sp, #0x0
+F11D27FF adds r7, sp, #0xff00ff00
+F11D3700 adds r7, sp, #0x0
+F11D37FF adds r7, sp, #0xffffffff
+F11D4700 adds r7, sp, #0x80000000
+F11D47FF adds r7, sp, #0x7f800000
+F11D5700 adds r7, sp, #0x20000000
+F11D57FF adds r7, sp, #0x1fe00000
+F11D6700 adds r7, sp, #0x8000000
+F11D67FF adds r7, sp, #0x7f80000
+F11D7700 adds r7, sp, #0x2000000
+F11D77FF adds r7, sp, #0x1fe0000
+F51D0700 adds r7, sp, #0x800000
+F51D07FF adds r7, sp, #0x7f8000
+F51D1700 adds r7, sp, #0x200000
+F51D17FF adds r7, sp, #0x1fe000
+F51D2700 adds r7, sp, #0x80000
+F51D27FF adds r7, sp, #0x7f800
+F51D3700 adds r7, sp, #0x20000
+F51D37FF adds r7, sp, #0x1fe00
+F51D4700 adds r7, sp, #0x8000
+F51D47FF adds r7, sp, #0x7f80
+F51D5700 adds r7, sp, #0x2000
+F51D57FF adds r7, sp, #0x1fe0
+F51D6700 adds r7, sp, #0x800
+F51D67FF adds r7, sp, #0x7f8
+F51D7700 adds r7, sp, #0x200
+F51D77FF adds r7, sp, #0x1fe
+F11D6707 [ne] addsne r7, sp, #0x8700000

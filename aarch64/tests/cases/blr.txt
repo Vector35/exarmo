@@ -1,0 +1,20 @@
+// BLR_64_branch_reg 110|101|1|Z=0|0|op=01|op2=11111|0000|A=0|M=0|Rn=xxxxx|Rm=00000
+// Blr64BranchReg: BLR  <Xn>
+// register fields: Rn
+D63F0080 blr x4
+D63F00A0 blr x5
+D63F03A0 blr fp
+D63F0320 blr x25
+D63F0260 blr x19
+D63F0120 blr x9
+D63F0100 blr x8
+D63F0240 blr x18
+D63F0180 blr x12
+D63F02E0 blr x23
+D63F0000 blr x0
+D63F0360 blr x27
+D63F0300 blr x24
+D63F0340 blr x26
+D63F0200 blr x16
+D63F0040 blr x2
+D63F03E0 blr xzr

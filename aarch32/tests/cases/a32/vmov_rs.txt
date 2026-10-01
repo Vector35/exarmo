@@ -1,0 +1,23 @@
+// VMOV_rs_A1 cond=xxxx|11|10|0|opc1=xx|L=0|Vd=xxxx|Rt=xxxx|1|011|D=x|opc2=xx|1|(0)(0)(0)(0)
+// VmovRsA1: VMOV{<c>}{<q>}{.<size>}  <Dd[x]>, <Rt>
+// read together by <size>: opc1, opc2
+// register fields: Rt
+0e029b10 vmoveq.32 d2[0], r9
+FE029B50 UNALLOCATED
+8E200BBF vmovhi.16 d16[2], r0 (unpredictable)
+4E4FFB58 vmovmi.8 d15[2], pc (unpredictable)
+2E689B74 vmovcs.8 d8[7], r9 (unpredictable)
+1E049B32 vmovne.16 d4[0], r9 (unpredictable)
+0E019B71 vmoveq.16 d1[1], r9 (unpredictable)
+0E229B10 vmoveq.32 d2[1], r9
+0E229B30 vmoveq.16 d2[2], r9
+0E229B50 UNDEFINED
+0E229B70 vmoveq.16 d2[3], r9
+0E429B10 vmoveq.8 d2[0], r9
+0E429B30 vmoveq.8 d2[1], r9
+0E429B50 vmoveq.8 d2[2], r9
+0E429B70 vmoveq.8 d2[3], r9
+0E629B10 vmoveq.8 d2[4], r9
+0E629B30 vmoveq.8 d2[5], r9
+0E629B50 vmoveq.8 d2[6], r9
+0E629B70 vmoveq.8 d2[7], r9

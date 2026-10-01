@@ -1,0 +1,14 @@
+// subhnb_z_zz_ 010|0010|1|size=xx|1|Zm=xxxxx|0|11|S=1|R=0|T=0|Zn=xxxxx|Zd=xxxxx
+// SubhnbZZz: SUBHNB  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45FF72BB subhnb z27.s, z21.d, z31.d
+45AA71F8 subhnb z24.h, z15.s, z10.s
+457473AD subhnb z13.b, z29.h, z20.h
+45F47188 subhnb z8.s, z12.d, z20.d
+45B67122 subhnb z2.h, z9.s, z22.s
+45AE7293 subhnb z19.h, z20.s, z14.s
+45F772E4 subhnb z4.s, z23.d, z23.d
+4562723F subhnb z31.b, z17.h, z2.h
+45E07000 subhnb z0.s, z0.d, z0.d
+45FF73FB subhnb z27.s, z31.d, z31.d
+453F72BB UNDEFINED

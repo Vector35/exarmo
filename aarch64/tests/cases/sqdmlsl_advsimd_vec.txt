@@ -1,0 +1,71 @@
+// SQDMLSL_asimddiff_L 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|10|o1=1|1|00|Rn=xxxxx|Rd=xxxxx
+// SqdmlslAsimddiffL: SQDMLSL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// SqdmlslAsimddiffL2: SQDMLSL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+4E63B1C4 sqdmlsl2 v4.4s, v14.8h, v3.8h
+0E6BB0BC sqdmlsl v28.4s, v5.4h, v11.4h
+0EA0B04C sqdmlsl v12.2d, v2.2s, v0.2s
+0EAFB14B sqdmlsl v11.2d, v10.2s, v15.2s
+0EB5B291 sqdmlsl v17.2d, v20.2s, v21.2s
+4E78B3A2 sqdmlsl2 v2.4s, v29.8h, v24.8h
+4E65B224 sqdmlsl2 v4.4s, v17.8h, v5.8h
+4EB1B128 sqdmlsl2 v8.2d, v9.4s, v17.4s
+0E62B033 sqdmlsl v19.4s, v1.4h, v2.4h
+4EAEB2BA sqdmlsl2 v26.2d, v21.4s, v14.4s
+0EBAB1CF sqdmlsl v15.2d, v14.2s, v26.2s
+4E66B334 sqdmlsl2 v20.4s, v25.8h, v6.8h
+4EAFB1F3 sqdmlsl2 v19.2d, v15.4s, v15.4s
+4EA6B2BD sqdmlsl2 v29.2d, v21.4s, v6.4s
+0EB4B2A7 sqdmlsl v7.2d, v21.2s, v20.2s
+4E70B273 sqdmlsl2 v19.4s, v19.8h, v16.8h
+4E7FB000 sqdmlsl2 v0.4s, v0.8h, v31.8h
+4E63B3FF sqdmlsl2 v31.4s, v31.8h, v3.8h
+4E23B1C4 UNDEFINED
+4EE3B1C4 UNDEFINED
+0E23B1C4 UNDEFINED
+0EE3B1C4 UNDEFINED
+4E63B1C3 sqdmlsl2 v3.4s, v14.8h, v3.8h
+4E62B033 sqdmlsl2 v19.4s, v1.8h, v2.8h
+
+// SQDMLSL_asisddiff_only 01|U=0|1|111|0|size=xx|1|Rm=xxxxx|10|o1=1|1|00|Rn=xxxxx|Rd=xxxxx
+// SqdmlslAsisddiffOnly: SQDMLSL  <Va><d>, <Vb><n>, <Vb><m>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, Rm
+// register fields: Rm, Rn, Rd
+5EA5B3C0 sqdmlsl d0, s30, s5
+5EAAB0CA sqdmlsl d10, s6, s10
+5E77B04C sqdmlsl s12, h2, h23
+5EA7B203 sqdmlsl d3, s16, s7
+5EB4B1A8 sqdmlsl d8, s13, s20
+5E7AB3D8 sqdmlsl s24, h30, h26
+5E7FB3BF sqdmlsl s31, h29, h31
+5EBCB14B sqdmlsl d11, s10, s28
+5EADB06D sqdmlsl d13, s3, s13
+5E61B3A8 sqdmlsl s8, h29, h1
+5E7FB362 sqdmlsl s2, h27, h31
+5EABB3F4 sqdmlsl d20, s31, s11
+5E70B121 sqdmlsl s1, h9, h16
+5E7CB193 sqdmlsl s19, h12, h28
+5EA1B004 sqdmlsl d4, s0, s1
+5E60B07D sqdmlsl s29, h3, h0
+5E25B3C0 UNDEFINED
+5EE5B3C0 UNDEFINED
+5E25B3DF UNDEFINED
+5E65B0A0 sqdmlsl s0, h5, h5
+5EA5B3DF sqdmlsl d31, s30, s5
+5EE5B3DF UNDEFINED
+5E20B3C0 UNDEFINED
+5E3FB3C0 UNDEFINED
+5EA0B3DE sqdmlsl d30, s30, s0
+5EBFB3C0 sqdmlsl d0, s30, s31
+5EE0B3C0 UNDEFINED
+5EFFB3C0 UNDEFINED
+5E25B000 UNDEFINED
+5E25B3E0 UNDEFINED
+5E65B000 sqdmlsl s0, h0, h5
+5E65B3E0 sqdmlsl s0, h31, h5
+5EE5B000 UNDEFINED
+5EE5B3E0 UNDEFINED

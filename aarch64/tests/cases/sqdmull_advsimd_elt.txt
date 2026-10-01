@@ -1,0 +1,141 @@
+// SQDMULL_asimdelem_L 0|Q=x|U=0|0|111|1|size=xx|L=x|M=x|Rm=xxxx|opcode=1011|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqdmullAsimdelemL: SQDMULL  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// SqdmullAsimdelemL2: SQDMULL2  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// read together by <Tb>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+// form chosen on: Q
+0F5ABB2A sqdmull v10.4s, v25.4h, v10.h[5]
+4FB4B3A7 sqdmull2 v7.2d, v29.4s, v20.s[1]
+4F9FB9A2 sqdmull2 v2.2d, v13.4s, v31.s[2]
+4F89BB73 sqdmull2 v19.2d, v27.4s, v9.s[2]
+0F9EB2F9 sqdmull v25.2d, v23.2s, v30.s[0]
+0F74B821 sqdmull v1.4s, v1.4h, v4.h[7]
+0F92B31F sqdmull v31.2d, v24.2s, v18.s[0]
+0F81B903 sqdmull v3.2d, v8.2s, v1.s[2]
+4FB6B14A sqdmull2 v10.2d, v10.4s, v22.s[1]
+0F7AB920 sqdmull v0.4s, v9.4h, v10.h[7]
+4F55B81D sqdmull2 v29.4s, v0.8h, v5.h[5]
+4F92B08A sqdmull2 v10.2d, v4.4s, v18.s[0]
+0F7FBA0E sqdmull v14.4s, v16.4h, v15.h[7]
+4FB1B359 sqdmull2 v25.2d, v26.4s, v17.s[1]
+0F9FB1B7 sqdmull v23.2d, v13.2s, v31.s[0]
+4F80B180 sqdmull2 v0.2d, v12.4s, v0.s[0]
+0F5ABBEA sqdmull v10.4s, v31.4h, v10.h[5]
+0F1ABB2A UNDEFINED
+0FDABB2A UNDEFINED
+0F0AB32A UNDEFINED
+0F0ABB2A UNDEFINED
+0F1AB32A UNDEFINED
+0F2AB32A UNDEFINED
+0F2ABB2A UNDEFINED
+0F3AB32A UNDEFINED
+0F3ABB2A UNDEFINED
+0F4AB32A sqdmull v10.4s, v25.4h, v10.h[0]
+0F4ABB2A sqdmull v10.4s, v25.4h, v10.h[4]
+0F5AB32A sqdmull v10.4s, v25.4h, v10.h[1]
+0F6AB32A sqdmull v10.4s, v25.4h, v10.h[2]
+0F6ABB2A sqdmull v10.4s, v25.4h, v10.h[6]
+0F7AB32A sqdmull v10.4s, v25.4h, v10.h[3]
+0FAAB32A sqdmull v10.2d, v25.2s, v10.s[1]
+0FAABB2A sqdmull v10.2d, v25.2s, v10.s[3]
+0FBABB2A sqdmull v10.2d, v25.2s, v26.s[3]
+0FCAB32A UNDEFINED
+0FCABB2A UNDEFINED
+0FDAB32A UNDEFINED
+0FEAB32A UNDEFINED
+0FEABB2A UNDEFINED
+0FFAB32A UNDEFINED
+0FFABB2A UNDEFINED
+0F00BB2A UNDEFINED
+0F0FBB2A UNDEFINED
+0F10BB2A UNDEFINED
+0F1FBB2A UNDEFINED
+0F40BB2A sqdmull v10.4s, v25.4h, v0.h[4]
+0F4FBB2A sqdmull v10.4s, v25.4h, v15.h[4]
+0F50BB2A sqdmull v10.4s, v25.4h, v0.h[5]
+0F8FBB2A sqdmull v10.2d, v25.2s, v15.s[2]
+0F90BB2A sqdmull v10.2d, v25.2s, v16.s[2]
+0FC0BB2A UNDEFINED
+0FCFBB2A UNDEFINED
+0FD0BB2A UNDEFINED
+0FDFBB2A UNDEFINED
+4F1ABB2A UNDEFINED
+4FDABB2A UNDEFINED
+0F58BB2A sqdmull v10.4s, v25.4h, v8.h[5]
+4F40BB2A sqdmull2 v10.4s, v25.8h, v0.h[4]
+
+// SQDMULL_asisdelem_L 01|U=0|1|111|1|size=xx|L=x|M=x|Rm=xxxx|opcode=1011|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqdmullAsisdelemL: SQDMULL  <Va><d>, <Vb><n>, <m>.<Ts>[<index>]
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+5F43B1D7 sqdmull s23, h14, v3.h[0]
+5F80B160 sqdmull d0, s11, v0.s[0]
+5F8ABB50 sqdmull d16, s26, v10.s[2]
+5F40BB79 sqdmull s25, h27, v0.h[4]
+5F4AB35A sqdmull s26, h26, v10.h[0]
+5F60BA10 sqdmull s16, h16, v0.h[6]
+5F57B3B9 sqdmull s25, h29, v7.h[1]
+5F4DBB13 sqdmull s19, h24, v13.h[4]
+5F7ABA4B sqdmull s11, h18, v10.h[7]
+5F9DB94C sqdmull d12, s10, v29.s[2]
+5F63B26F sqdmull s15, h19, v3.h[2]
+5F9BB801 sqdmull d1, s0, v27.s[2]
+5F76B990 sqdmull s16, h12, v6.h[7]
+5F65B25E sqdmull s30, h18, v5.h[2]
+5F58B856 sqdmull s22, h2, v8.h[5]
+5FA0BB99 sqdmull d25, s28, v0.s[3]
+5F4FB3FF sqdmull s31, h31, v15.h[0]
+5F03B1D7 UNDEFINED
+5FC3B1D7 UNDEFINED
+5F03B9D7 UNDEFINED
+5F13B1D7 UNDEFINED
+5F13B9D7 UNDEFINED
+5F23B1D7 UNDEFINED
+5F23B9D7 UNDEFINED
+5F33B1D7 UNDEFINED
+5F33B9D7 UNDEFINED
+5F73B1D7 sqdmull s23, h14, v3.h[3]
+5F93B1D7 sqdmull d23, s14, v19.s[0]
+5FA3B1D7 sqdmull d23, s14, v3.s[1]
+5FB3B1D7 sqdmull d23, s14, v19.s[1]
+5FB3B9D7 sqdmull d23, s14, v19.s[3]
+5FC3B9D7 UNDEFINED
+5FD3B1D7 UNDEFINED
+5FD3B9D7 UNDEFINED
+5FE3B1D7 UNDEFINED
+5FE3B9D7 UNDEFINED
+5FF3B1D7 UNDEFINED
+5FF3B9D7 UNDEFINED
+5F00B1D7 UNDEFINED
+5F0FB1D7 UNDEFINED
+5F10B1D7 UNDEFINED
+5F1FB1D7 UNDEFINED
+5F50B1D7 sqdmull s23, h14, v0.h[1]
+5F5FB1D7 sqdmull s23, h14, v15.h[1]
+5F8FB1D7 sqdmull d23, s14, v15.s[0]
+5F90B1D7 sqdmull d23, s14, v16.s[0]
+5F9FB1D7 sqdmull d23, s14, v31.s[0]
+5FC0B1D7 UNDEFINED
+5FCFB1D7 UNDEFINED
+5FD0B1D7 UNDEFINED
+5FDFB1D7 UNDEFINED
+5F03B1C0 UNDEFINED
+5F03B1DF UNDEFINED
+5F43B1C0 sqdmull s0, h14, v3.h[0]
+5F83B1DF sqdmull d31, s14, v3.s[0]
+5FC3B1C0 UNDEFINED
+5FC3B1DF UNDEFINED
+5F03B017 UNDEFINED
+5F03B3F7 UNDEFINED
+5F43B017 sqdmull s23, h0, v3.h[0]
+5F83B3F7 sqdmull d23, s31, v3.s[0]
+5FC3B017 UNDEFINED
+5FC3B3F7 UNDEFINED
+5F44B1D7 sqdmull s23, h14, v4.h[0]
+5F42B1D7 sqdmull s23, h14, v2.h[0]
+5F41B1D7 sqdmull s23, h14, v1.h[0]

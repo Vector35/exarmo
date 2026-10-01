@@ -1,0 +1,21 @@
+// udot_z_zzz_ 010|0010|0|size=1x|0|Zm=xxxxx|0|0000|U=1|Zn=xxxxx|Zda=xxxxx
+// UdotZZzz: UDOT  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+448606A2 udot z2.s, z21.b, z6.b
+44D0057F udot z31.d, z11.h, z16.h
+448206E5 udot z5.s, z23.b, z2.b
+44DD0796 udot z22.d, z28.h, z29.h
+448E079C udot z28.s, z28.b, z14.b
+44920436 udot z22.s, z1.b, z18.b
+44D00450 udot z16.d, z2.h, z16.h
+44DE0434 udot z20.d, z1.h, z30.h
+448C061F udot z31.s, z16.b, z12.b
+44DD0740 udot z0.d, z26.h, z29.h
+44CC06C9 udot z9.d, z22.h, z12.h
+448F064E udot z14.s, z18.b, z15.b
+44C90603 udot z3.d, z16.h, z9.h
+448C04F3 udot z19.s, z7.b, z12.b
+44D40433 udot z19.d, z1.h, z20.h
+448F060B udot z11.s, z16.b, z15.b
+44800402 udot z2.s, z0.b, z0.b
+449F07E2 udot z2.s, z31.b, z31.b

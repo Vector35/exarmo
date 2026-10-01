@@ -1,0 +1,25 @@
+// VSHRN_T1 111|U=0|11|11|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=1000|L=0|Q=0|M=x|1|Vm=xxxx
+// VshrnT1: VSHRN{<c>}{<q>}.I<size>  <Dd>, <Qm>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+efad781a vshrn.i64 d7, q5, #19
+efdb7814 vshrn.i32 d23, q2, #5
+efa6581e vshrn.i64 d5, q7, #26
+efd49830 vshrn.i32 d25, q8, #12
+ef88c814 vshrn.i16 d12, q2, #8
+effa683e vshrn.i64 d22, q15, #6
+ef8c081a vshrn.i16 d0, q5, #4
+efca6838 vshrn.i16 d22, q12, #6
+EFBFF812 vshrn.i64 d15, q1, #0x1
+EFA08810 vshrn.i64 d8, q0, #0x20
+EF90481A vshrn.i32 d4, q5, #0x10
+EFAD281A vshrn.i64 d2, q5, #0x13
+EFAD181A vshrn.i64 d1, q5, #0x13
+EFAD781F UNDEFINED
+EFAD7811 UNDEFINED
+EFADF81A vshrn.i64 d15, q5, #0x13
+EFED081A vshrn.i64 d16, q5, #0x13
+EFEDF81A vshrn.i64 d31, q5, #0x13
+EFAD783F UNDEFINED
+EFAD781A [ne] vshrnne.i64 d7, q5, #0x13

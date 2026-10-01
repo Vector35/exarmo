@@ -1,0 +1,47 @@
+// sqincd_r_rs_sx 000|0010|0|size=11|1|sf=0|imm4=xxxx|11|11|D=0|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqincdRRsSx: SQINCD  <Xdn>, <Wdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04ECF05D sqincd fp, w29, vl2, mul #0xd
+04EFF058 sqincd x24, w24, vl2, mul #0x10
+04E7F16E sqincd x14, w14, vl64, mul #0x8
+04E0F0DD sqincd fp, w29, vl6
+04E2F039 sqincd x25, w25, vl1, mul #0x3
+04EBF3C5 sqincd x5, w5, mul3, mul #0xc
+04E8F297 sqincd x23, w23, #0x14, mul #0x9
+04E6F3B8 sqincd x24, w24, mul4, mul #0x7
+04E6F312 sqincd x18, w18, #0x18, mul #0x7
+04E0F32A sqincd x10, w10, #0x19
+04E2F39E sqincd lr, w30, #0x1c, mul #0x3
+04E2F02E sqincd x14, w14, vl1, mul #0x3
+04E9F241 sqincd x1, w1, #0x12, mul #0xa
+04E2F2C7 sqincd x7, w7, #0x16, mul #0x3
+04E3F171 sqincd x17, w17, vl64, mul #0x4
+04EDF03E sqincd lr, w30, vl1, mul #0xe
+04ECF000 sqincd x0, w0, pow2, mul #0xd
+04ECF3FF sqincd xzr, wzr, all, mul #0xd
+04E4F21D sqincd fp, w29, #0x10, mul #0x5
+04E1F11D sqincd fp, w29, vl8, mul #0x2
+04ECF09D sqincd fp, w29, vl4, mul #0xd
+
+// sqincd_r_rs_x 000|0010|0|size=11|1|sf=1|imm4=xxxx|11|11|D=0|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqincdRRsX: SQINCD  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04FCF389 sqincd x9, #0x1c, mul #0xd
+04FDF047 sqincd x7, vl2, mul #0xe
+04FBF208 sqincd x8, #0x10, mul #0xc
+04F0F034 sqincd x20, vl1
+04FEF3D1 sqincd x17, mul3, mul #0xf
+04F8F01F sqincd xzr, pow2, mul #0x9
+04FAF286 sqincd x6, #0x14, mul #0xb
+04F4F3E6 sqincd x6, all, mul #0x5
+04F4F2AB sqincd x11, #0x15, mul #0x5
+04F7F300 sqincd x0, #0x18, mul #0x8
+04FBF255 sqincd x21, #0x12, mul #0xc
+04F5F159 sqincd x25, vl32, mul #0x6
+04F7F294 sqincd x20, #0x14, mul #0x8
+04FAF2E3 sqincd x3, #0x17, mul #0xb
+04F9F2FB sqincd x27, #0x17, mul #0xa
+04F9F2EB sqincd x11, #0x17, mul #0xa
+04FFF389 sqincd x9, #0x1c, mul #0x10
+04F2F109 sqincd x9, vl8, mul #0x3
+04F1F089 sqincd x9, vl4, mul #0x2

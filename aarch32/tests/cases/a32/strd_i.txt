@@ -1,0 +1,72 @@
+// STRD_i_A1_off cond=xxxx|000|P=1|U=x|1|W=0|o1=0|Rn=xxxx|Rt=xxxx|imm4H=xxxx|1|op2=11|1|imm4L=xxxx
+// StrdIA1Off: STRD{<c>}{<q>}  <Rt>, <Rt2>, [<Rn> {, #{<+/->}<imm>}]
+// read together by <imm>: imm4H, imm4L
+// register fields: Rn, Rt
+41cfe0fb strdmi lr, pc, [pc, #11] (unpredictable)
+01cd54f7 strdeq r5, r6, [sp, #71] (unpredictable)
+414dd9f7 strdmi sp, lr, [sp, #-151] (unpredictable)
+d1449bf5 strdle r9, r10, [r4, #-181] (unpredictable)
+a1c63efd strdge r3, r4, [r6, #237] (unpredictable)
+c14178fb strdgt r7, r8, [r1, #-139] (unpredictable)
+d1c231f1 strdle r3, r4, [r2, #17] (unpredictable)
+// Binary Ninja's tests
+e1c410f0 strd r1, r2, [r4] (unpredictable)
+e1c620f1 strd r2, r3, [r6, #1]
+F1CFE0FB UNALLOCATED
+81C00FFF strdhi r0, r1, [r0, #0xff]
+21CFF2F8 UNPREDICTABLE
+11CFE0F4 strdne lr, pc, [pc, #0x4] (unpredictable)
+41CFE0F2 strdmi lr, pc, [pc, #0x2] (unpredictable)
+41CFE0FF strdmi lr, pc, [pc, #0xf] (unpredictable)
+41CFEFF0 strdmi lr, pc, [pc, #0xf0] (unpredictable)
+41CFEFFF strdmi lr, pc, [pc, #0xff] (unpredictable)
+21CFE2F8 strdcs lr, pc, [pc, #0x28] (unpredictable)
+
+// STRD_i_A1_post cond=xxxx|000|P=0|U=x|1|W=0|o1=0|Rn=xxxx|Rt=xxxx|imm4H=xxxx|1|op2=11|1|imm4L=xxxx
+// StrdIA1Post: STRD{<c>}{<q>}  <Rt>, <Rt2>, [<Rn>], #{<+/->}<imm>
+// read together by <imm>: imm4H, imm4L
+// register fields: Rn, Rt
+20cd75f8 strdhs r7, r8, [sp], #88 (unpredictable)
+804463f7 strdhi r6, r7, [r4], #-55
+d04b9ff4 strdle r9, r10, [r11], #-244 (unpredictable)
+90cb17fc strdls r1, r2, [r11], #124 (unpredictable)
+00473ff1 strdeq r3, r4, [r7], #-241 (unpredictable)
+30c6abf9 strdlo r10, r11, [r6], #185
+// Binary Ninja's tests
+e04970f0 strd r7, r8, [r9], #-0 (unpredictable)
+e0c840f7 strd r4, r5, [r8], #7
+e0cd50f0 strd r5, r6, [sp], #0 (unpredictable)
+e0ce60f0 strd r6, r7, [lr], #0
+F0CD75F8 UNALLOCATED
+40C008FF strdmi r0, r1, [r0], #0x8f (unpredictable)
+10CFF4F2 UNPREDICTABLE
+20CDD2F8 strdcs sp, lr, [sp], #0x28 (unpredictable)
+20CD71F8 strdcs r7, r8, [sp], #0x18 (unpredictable)
+20CD70FF strdcs r7, r8, [sp], #0xf (unpredictable)
+20CD7FF0 strdcs r7, r8, [sp], #0xf0 (unpredictable)
+20CD7FFF strdcs r7, r8, [sp], #0xff (unpredictable)
+10CF74F2 strdne r7, r8, [pc], #0x42 (unpredictable)
+
+// STRD_i_A1_pre cond=xxxx|000|P=1|U=x|1|W=1|o1=0|Rn=xxxx|Rt=xxxx|imm4H=xxxx|1|op2=11|1|imm4L=xxxx
+// StrdIA1Pre: STRD{<c>}{<q>}  <Rt>, <Rt2>, [<Rn>, #{<+/->}<imm>]!
+// read together by <imm>: imm4H, imm4L
+// register fields: Rn, Rt
+81e4aaf3 strdhi r10, r11, [r4, #163]!
+516ceff3 strdpl lr, pc, [r12, #-243]! (unpredictable)
+d1eae1f8 strdle lr, pc, [r10, #24]! (unpredictable)
+11e743ff strdne r4, r5, [r7, #63]!
+51e15ff0 strdpl r5, r6, [r1, #240]! (unpredictable)
+21ee39f7 strdhs r3, r4, [lr, #151]! (unpredictable)
+716d4df6 strdvc r4, r5, [sp, #-214]!
+016a19fe strdeq r1, r2, [r10, #-158]! (unpredictable)
+// Binary Ninja's tests
+e1e731f6 strd r3, r4, [r7, #22]! (unpredictable)
+F1E4AAF3 UNALLOCATED
+41E000F4 strdmi r0, r1, [r0, #0x4]! (unpredictable)
+81EFF8F2 UNPREDICTABLE
+81E444F1 strdhi r4, r5, [r4, #0x41]! (unpredictable)
+81E4A2F3 strdhi r10, r11, [r4, #0x23]!
+81E4A0F0 strdhi r10, r11, [r4, #0x0]!
+81E4A0FF strdhi r10, r11, [r4, #0xf]!
+81E4AFFF strdhi r10, r11, [r4, #0xff]!
+81EFA8F2 strdhi r10, r11, [pc, #0x82]! (unpredictable)

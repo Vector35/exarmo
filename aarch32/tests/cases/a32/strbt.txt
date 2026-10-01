@@ -1,0 +1,53 @@
+// STRBT_A1 cond=xxxx|010|P=0|U=x|op2=1|W=1|op1=0|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// StrbtA1: STRBT{<c>}{<q>}  <Rt>, [<Rn>] {, #{<+/->}<imm>}
+// register fields: Rn, Rt
+a4e72b5c strbtge r2, [r7], #2908
+e467bafb strbt r11, [r7], #-2811
+64efc48f strbtvs r12, [pc], #1167 (unpredictable)
+c4ec0420 strbtgt r0, [r12], #1056
+c4e3ecb8 strbtgt lr, [r3], #3256
+34e126cf strbtlo r2, [r1], #1743
+e46d2fd4 strbt r2, [sp], #-4052
+8464111f strbthi r1, [r4], #-287
+// Binary Ninja's tests
+e466500d strbt r5, [r6], #-13
+e4e01004 strbt r1, [r0], #4
+e4e2600c strbt r6, [r2], #12
+04E7F000 strbteq pc, [r7] (unpredictable)
+F467BAFB UNDEFINED
+44E77FFF strbtmi r7, [r7], #0xfff (unpredictable)
+24E72800 strbtcs r2, [r7], #0x800
+14E72400 strbtne r2, [r7], #0x400
+A4E72200 strbtge r2, [r7], #0x200
+A4E72100 strbtge r2, [r7], #0x100
+A4E72080 strbtge r2, [r7], #0x80
+A4E72040 strbtge r2, [r7], #0x40
+A4E72020 strbtge r2, [r7], #0x20
+A4E72010 strbtge r2, [r7], #0x10
+A4E72008 strbtge r2, [r7], #0x8
+A4E72002 strbtge r2, [r7], #0x2
+A4E72001 strbtge r2, [r7], #0x1
+
+// STRBT_A2 cond=xxxx|011|P=0|U=x|op2=1|W=1|op1=0|Rn=xxxx|Rt=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// StrbtA2: STRBT{<c>}{<q>}  <Rt>, [<Rn>], {<+/->}<Rm>{, <shift>}
+// register fields: Rn, Rt, Rm
+56ecbe6a strbtpl r11, [r12], r10, ror #28
+d6e78ea5 strbtle r8, [r7], r5, lsr #29
+26e7e523 strbths lr, [r7], r3, lsr #10
+c6e104aa strbtgt r0, [r1], r10, lsr #9
+c664b78e strbtgt r11, [r4], -lr, lsl #15
+a6eaba61 strbtge r11, [r10], r1, ror #20
+46662c6f strbtmi r2, [r6], -pc, ror #24 (unpredictable)
+06edea2e strbteq lr, [sp], lr, lsr #20
+// Binary Ninja's tests
+e6683182 strbt r3, [r8], -r2, lsl #3
+e6e01002 strbt r1, [r0], r2
+e6e011a2 strbt r1, [r0], r2, lsr #3
+e6e94005 strbt r4, [r9], r5
+F6ECBE6A UNALLOCATED
+86EFFFC0 strbthi pc, [pc], r0, asr #0x1f (unpredictable)
+16ECC86A strbtne r12, [r12], r10, ror #0x10 (unpredictable)
+56ECB46C strbtpl r11, [r12], r12, ror #0x8
+56ECB26A strbtpl r11, [r12], r10, ror #0x4
+56ECB16A strbtpl r11, [r12], r10, ror #0x2
+56ECB0EA strbtpl r11, [r12], r10, ror #0x1

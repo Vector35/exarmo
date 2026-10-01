@@ -1,0 +1,52 @@
+// BICS_32_log_shift sf=0|opc=11|01010|shift=xx|N=1|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Bics32LogShift: BICS  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+6AEC152F bics w15, w9, w12, ror #0x5
+6A7D52C9 bics w9, w22, w29, lsr #0x14
+6AFA2065 bics w5, w3, w26, ror #0x8
+6A295F0F bics w15, w24, w9, lsl #0x17
+6AE22D0C bics w12, w8, w2, ror #0xb
+6AB52BE4 bics w4, wzr, w21, asr #0xa
+6A27569B bics w27, w20, w7, lsl #0x15
+6AB675F1 bics w17, w15, w22, asr #0x1d
+6AE468B6 bics w22, w5, w4, ror #0x1a
+6AB87C48 bics w8, w2, w24, asr #0x1f
+6AF33B44 bics w4, w26, w19, ror #0xe
+6A6637DC bics w28, w30, w6, lsr #0xd
+6A3C50A8 bics w8, w5, w28, lsl #0x14
+6AF22AEB bics w11, w23, w18, ror #0xa
+6A7B460E bics w14, w16, w27, lsr #0x11
+6AB700F8 bics w24, w7, w23, asr #0x0
+6AE01400 bics w0, w0, w0, ror #0x5
+6AFF153F bics wzr, w9, wzr, ror #0x5
+6AECFD2F UNDEFINED
+6AEC812F UNDEFINED
+6AEC412F bics w15, w9, w12, ror #0x10
+6AEC112F bics w15, w9, w12, ror #0x4
+6AEC092F bics w15, w9, w12, ror #0x2
+6AEC052F bics w15, w9, w12, ror #0x1
+
+// BICS_64_log_shift sf=1|opc=11|01010|shift=xx|N=1|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Bics64LogShift: BICS  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+EA68F745 bics x5, x26, x8, lsr #0x3d
+EA6923FC bics x28, xzr, x9, lsr #0x8
+EAEE6406 bics x6, x0, x14, ror #0x19
+EAE12E67 bics x7, x19, x1, ror #0xb
+EA7B27FF bics xzr, xzr, x27, lsr #0x9
+EAB37E15 bics x21, x16, x19, asr #0x1f
+EA6B40A5 bics x5, x5, x11, lsr #0x10
+EA7194D2 bics x18, x6, x17, lsr #0x25
+EA350A50 bics x16, x18, x21, lsl #0x2
+EAACA99F bics xzr, x12, x12, asr #0x2a
+EAF34F27 bics x7, x25, x19, ror #0x13
+EA26D9BA bics x26, x13, x6, lsl #0x36
+EA7E5D81 bics x1, x12, lr, lsr #0x17
+EA6F74B0 bics x16, x5, x15, lsr #0x1d
+EAF0718D bics x13, x12, x16, ror #0x1c
+EAA96BDF bics xzr, lr, x9, asr #0x1a
+EA600340 bics x0, x26, x0, lsr #0x0
+EA7FFF45 bics x5, x26, xzr, lsr #0x3f
+EA688345 bics x5, x26, x8, lsr #0x20
+EA681345 bics x5, x26, x8, lsr #0x4
+EA680745 bics x5, x26, x8, lsr #0x1

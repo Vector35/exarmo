@@ -1,0 +1,21 @@
+// fmax_z_p_zz_ 011|0010|1|size=xx|0|0|opc=0110|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FmaxZPZz: FMAX  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+658682C0 fmax z0.s, p0/m, z0.s, z22.s
+658697C0 fmax z0.s, p5/m, z0.s, z30.s
+65C684D2 fmax z18.d, p1/m, z18.d, z6.d
+65C68673 fmax z19.d, p1/m, z19.d, z19.d
+65869918 fmax z24.s, p6/m, z24.s, z8.s
+65868A55 fmax z21.s, p2/m, z21.s, z18.s
+658698BA fmax z26.s, p6/m, z26.s, z5.s
+65C69A5C fmax z28.d, p6/m, z28.d, z18.d
+65868EF8 fmax z24.s, p3/m, z24.s, z23.s
+65469ED3 fmax z19.h, p7/m, z19.h, z22.h
+65868BB5 fmax z21.s, p2/m, z21.s, z29.s
+65C68F60 fmax z0.d, p3/m, z0.d, z27.d
+654688CC fmax z12.h, p2/m, z12.h, z6.h
+65C681F3 fmax z19.d, p0/m, z19.d, z15.d
+65C69704 fmax z4.d, p5/m, z4.d, z24.d
+6586881E fmax z30.s, p2/m, z30.s, z0.s
+658693FF fmax z31.s, p4/m, z31.s, z31.s
+65868000 fmax z0.s, p0/m, z0.s, z0.s

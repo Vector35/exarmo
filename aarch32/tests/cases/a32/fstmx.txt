@@ -1,0 +1,45 @@
+// FSTMDBX_A1 cond=xxxx|110|P=1|U=0|D=x|W=1|L=0|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx1
+// FstmdbxA1: FSTMDBX{<c>}{<q>}  <Rn>!, <dreglist>
+// register fields: Rn
+1d255b27 fstmdbxne r5!, {d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23} (unpredictable)
+cd259b5d UNPREDICTABLE
+// Binary Ninja's tests
+1d272b07 fstmdbxne r7!, {d2, d3, d4}
+0D600B01 fstmdbxeq r0!, {} (unpredictable)
+FD255B27 UNALLOCATED
+8D2FFBFF UNPREDICTABLE
+4D258B81 UNPREDICTABLE
+2D254B41 UNPREDICTABLE
+1D251B21 fstmdbxne r5!, {d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16} (unpredictable)
+1D255B11 fstmdbxne r5!, {d5, d6, d7, d8, d9, d10, d11, d12}
+1D255B09 fstmdbxne r5!, {d5, d6, d7, d8}
+1D255B05 fstmdbxne r5!, {d5, d6}
+1D255B03 fstmdbxne r5!, {d5}
+8D2F8B27 fstmdbxhi pc!, {d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26} (unpredictable)
+4D254B27 fstmdbxmi r5!, {d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22} (unpredictable)
+2D255B27 fstmdbxcs r5!, {d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23} (unpredictable)
+1D27FB07 fstmdbxne r7!, {d15, d16, d17} (unpredictable)
+
+// FSTMIAX_A1 cond=xxxx|110|P=0|U=1|D=x|W=x|L=0|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx1
+// FstmiaxA1: FSTMIAX{<c>}{<q>}  <Rn>{<!>}, <dreglist>
+// register fields: Rn
+3cac8b55 UNPREDICTABLE
+9ca1db61 UNPREDICTABLE
+dcabab05 fstmiaxle r11!, {d10, d11}
+bc805b75 UNPREDICTABLE
+cca90b73 UNPREDICTABLE
+// Binary Ninja's tests
+0c848b05 fstmiaxeq r4, {d8, d9}
+eca50b11 fstmiax r5!, {d0, d1, d2, d3, d4, d5, d6, d7}
+FCAC8B55 UNALLOCATED
+8CEFFB01 fstmiaxhi pc!, {} (unpredictable)
+4CAC4BFF UNPREDICTABLE
+2CAC2B81 UNPREDICTABLE
+1CAC1B41 UNPREDICTABLE
+3CAC8B21 fstmiaxcc r12!, {d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23} (unpredictable)
+3CAC8B09 fstmiaxcc r12!, {d8, d9, d10, d11}
+3CAC8B03 fstmiaxcc r12!, {d8}
+4CA04B05 fstmiaxmi r0!, {d4, d5}
+2CAB2B05 fstmiaxcs r11!, {d2, d3}
+1CAB1B05 fstmiaxne r11!, {d1, d2}
+ECA50B41 fstmiax r5!, {d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30, d31} (unpredictable)

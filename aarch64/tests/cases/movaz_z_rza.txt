@@ -1,0 +1,67 @@
+// movaz_z_rza_b 1|10|0000|0|size=00|000|0|1|Q=0|V=x|Rs=xx|000|1|off4=xxxx|Zd=xxxxx
+// MovazZRzaB: MOVAZ  <Zd>.B, ZA0<HV>.B[<Ws>, <offs>]
+// register fields: Rs, Zd
+C0020206 movaz z6.b, za0h.b[w12, 0]
+C002020D movaz z13.b, za0h.b[w12, 0]
+C0020214 movaz z20.b, za0h.b[w12, 0]
+C002A3E0 movaz z0.b, za0v.b[w13, 15]
+C002421F movaz z31.b, za0h.b[w14, 0]
+C0026206 movaz z6.b, za0h.b[w15, 0]
+C0020200 movaz z0.b, za0h.b[w12, 0]
+C0020306 movaz z6.b, za0h.b[w12, 8]
+C0020286 movaz z6.b, za0h.b[w12, 4]
+C0020246 movaz z6.b, za0h.b[w12, 2]
+C0020226 movaz z6.b, za0h.b[w12, 1]
+
+// movaz_z_rza_d 1|10|0000|0|size=11|000|0|1|Q=0|V=x|Rs=xx|000|1|ZAn=xxx|o1=x|Zd=xxxxx
+// MovazZRzaD: MOVAZ  <Zd>.D, <ZAn><HV>.D[<Ws>, <offs>]
+// register fields: Rs, ZAn, Zd
+C0C20200 movaz z0.d, za0h.d[w12, 0]
+C0C20207 movaz z7.d, za0h.d[w12, 0]
+C0C2020E movaz z14.d, za0h.d[w12, 0]
+C0C2A27F movaz z31.d, za1v.d[w13, 1]
+C0C24280 movaz z0.d, za2h.d[w14, 0]
+C0C262C0 movaz z0.d, za3h.d[w15, 0]
+C0C20300 movaz z0.d, za4h.d[w12, 0]
+C0C20340 movaz z0.d, za5h.d[w12, 0]
+C0C20380 movaz z0.d, za6h.d[w12, 0]
+C0C203C0 movaz z0.d, za7h.d[w12, 0]
+C0C22283 movaz z3.d, za2h.d[w13, 0]
+
+// movaz_z_rza_h 1|10|0000|0|size=01|000|0|1|Q=0|V=x|Rs=xx|000|1|ZAn=x|off3=xxx|Zd=xxxxx
+// MovazZRzaH: MOVAZ  <Zd>.H, <ZAn><HV>.H[<Ws>, <offs>]
+// register fields: Rs, ZAn, Zd
+C0420204 movaz z4.h, za0h.h[w12, 0]
+C042020B movaz z11.h, za0h.h[w12, 0]
+C0420212 movaz z18.h, za0h.h[w12, 0]
+C042A320 movaz z0.h, za1v.h[w13, 1]
+C042425F movaz z31.h, za0h.h[w14, 2]
+C0426264 movaz z4.h, za0h.h[w15, 3]
+C0420284 movaz z4.h, za0h.h[w12, 4]
+C04202A4 movaz z4.h, za0h.h[w12, 5]
+C04202C4 movaz z4.h, za0h.h[w12, 6]
+C04202E4 movaz z4.h, za0h.h[w12, 7]
+C0420200 movaz z0.h, za0h.h[w12, 0]
+
+// movaz_z_rza_q 1|10|0000|0|size=11|000|0|1|Q=1|V=x|Rs=xx|000|1|ZAn=xxxx|Zd=xxxxx
+// MovazZRzaQ: MOVAZ  <Zd>.Q, <ZAn><HV>.Q[<Ws>, <offs>]
+// register fields: Rs, ZAn, Zd
+C0C30205 movaz z5.q, za0h.q[w12, 0]
+C0C3020C movaz z12.q, za0h.q[w12, 0]
+C0C30213 movaz z19.q, za0h.q[w12, 0]
+C0C3A3E0 movaz z0.q, za15v.q[w13, 0]
+C0C3421F movaz z31.q, za0h.q[w14, 0]
+C0C36205 movaz z5.q, za0h.q[w15, 0]
+C0C30200 movaz z0.q, za0h.q[w12, 0]
+
+// movaz_z_rza_w 1|10|0000|0|size=10|000|0|1|Q=0|V=x|Rs=xx|000|1|ZAn=xx|off2=xx|Zd=xxxxx
+// MovazZRzaW: MOVAZ  <Zd>.S, <ZAn><HV>.S[<Ws>, <offs>]
+// register fields: Rs, ZAn, Zd
+C0820202 movaz z2.s, za0h.s[w12, 0]
+C0820209 movaz z9.s, za0h.s[w12, 0]
+C0820210 movaz z16.s, za0h.s[w12, 0]
+C082A2A0 movaz z0.s, za1v.s[w13, 1]
+C082435F movaz z31.s, za2h.s[w14, 2]
+C08263E2 movaz z2.s, za3h.s[w15, 3]
+C0820200 movaz z0.s, za0h.s[w12, 0]
+C0822303 movaz z3.s, za2h.s[w13, 0]

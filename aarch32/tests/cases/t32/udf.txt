@@ -1,0 +1,48 @@
+// UDF_T1 1101|111|S=0|imm8=xxxxxxxx
+// UdfT1: UDF{<c>}{<q>}  {#}<imm>
+// IT state read: condition
+de00 udf #0
+de01 udf #1
+de02 udf #2
+de03 udf #3
+de04 udf #4
+de05 udf #5
+de06 udf #6
+de07 udf #7
+DEFF udf #0xff
+DE80 udf #0x80
+DE40 udf #0x40
+DE20 udf #0x20
+DE10 udf #0x10
+DE08 udf #0x8
+DE00 [ne] udfne #0x0
+
+// UDF_T2 111|10|1|1111|1|o1=1|imm4=xxxx|1|0|o2=1|0|imm12=xxxxxxxxxxxx
+// UdfT2: UDF{<c>}{<q>}  {#}<imm>
+// read together by <imm>: imm4, imm12
+// IT state read: condition
+f7f6a1ba udf #25018
+f7f2a119 udf #8473
+f7f6aeec udf #28396
+f7fba578 udf #46456
+f7f8a721 udf #34593
+f7f3a338 udf #13112
+f7faa718 udf #42776
+f7f4a20e udf #16910
+F7F0A000 udf #0x0
+F7FFAFFF udf #0xffff
+F7F1A800 udf #0x1800
+F7F6A400 udf #0x6400
+F7F6A200 udf #0x6200
+F7F6A100 udf #0x6100
+F7F6A080 udf #0x6080
+F7F6A040 udf #0x6040
+F7F6A020 udf #0x6020
+F7F6A010 udf #0x6010
+F7F6A008 udf #0x6008
+F7F6A004 udf #0x6004
+F7F6A002 udf #0x6002
+F7F6A001 udf #0x6001
+F7F0AFFF udf #0xfff
+F7FFA000 udf #0xf000
+F7F6A1BA [ne] udfne #0x61ba

@@ -1,0 +1,32 @@
+// SMUAD_T1 111110110|op1=010|Rn=xxxx|Ra=1111|Rd=xxxx|000|M=0|Rm=xxxx
+// SmuadT1: SMUAD{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb2ff800 smuad r8, pc, r0 (unpredictable)
+fb2ff20a smuad r2, pc, r10 (unpredictable)
+fb29fe0b smuad lr, r9, r11
+fb23f305 smuad r3, r3, r5
+fb28f506 smuad r5, r8, r6
+fb28fb0d smuad r11, r8, sp
+fb23fa0c smuad r10, r3, r12
+fb25f503 smuad r5, r5, r3
+FB20F00F smuad r0, r0, pc (unpredictable)
+FB2FFF0F smuad pc, pc, pc (unpredictable)
+FB2FF808 smuad r8, pc, r8 (unpredictable)
+FB2FF800 [ne] smuadne r8, pc, r0 (unpredictable)
+
+// SMUADX_T1 111110110|op1=010|Rn=xxxx|Ra=1111|Rd=xxxx|000|M=1|Rm=xxxx
+// SmuadxT1: SMUADX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb21f81d smuadx r8, r1, sp
+fb2bf21a smuadx r2, r11, r10
+fb2ef610 smuadx r6, lr, r0
+fb20f616 smuadx r6, r0, r6
+fb27f712 smuadx r7, r7, r2
+fb29fc19 smuadx r12, r9, r9
+fb2af61b smuadx r6, r10, r11
+fb2ff513 smuadx r5, pc, r3 (unpredictable)
+FB21F01F smuadx r0, r1, pc (unpredictable)
+FB21FF1D smuadx pc, r1, sp (unpredictable)
+FB21F81D [ne] smuadxne r8, r1, sp

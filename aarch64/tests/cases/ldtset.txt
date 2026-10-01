@@ -1,0 +1,101 @@
+// LDTSET_32_memop_unpriv 0|sz=0|011001|A=0|R=0|1|Rs=xxxxx|o3=0|opc=011|01|Rn=xxxxx|Rt=xxxxx
+// Ldtset32MemopUnpriv: LDTSET  <Ws>, <Wt>, [<Xn|SP>]
+// SttsetLdtset32MemopUnpriv: STTSET  <Ws>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+19203404 ldtset w0, w4, [x0]
+1920340B ldtset w0, w11, [x0]
+19203412 ldtset w0, w18, [x0]
+1920345F sttset w0, [x2]
+1920353F sttset w0, [x9]
+1920361F sttset w0, [x16]
+193F37E0 ldtset wzr, w0, [sp]
+19203400 ldtset w0, w0, [x0]
+1920344F ldtset w0, w15, [x2]
+
+// LDTSET_64_memop_unpriv 0|sz=1|011001|A=0|R=0|1|Rs=xxxxx|o3=0|opc=011|01|Rn=xxxxx|Rt=xxxxx
+// Ldtset64MemopUnpriv: LDTSET  <Xs>, <Xt>, [<Xn|SP>]
+// SttsetLdtset64MemopUnpriv: STTSET  <Xs>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+59203403 ldtset x0, x3, [x0]
+5920340A ldtset x0, x10, [x0]
+59203411 ldtset x0, x17, [x0]
+5920341F sttset x0, [x0]
+592034FF sttset x0, [x7]
+592035DF sttset x0, [x14]
+593F37E0 ldtset xzr, x0, [sp]
+59203400 ldtset x0, x0, [x0]
+5920340F ldtset x0, x15, [x0]
+
+// LDTSETA_32_memop_unpriv 0|sz=0|011001|A=1|R=0|1|Rs=xxxxx|o3=0|opc=011|01|Rn=xxxxx|Rt=xxxxx
+// Ldtseta32MemopUnpriv: LDTSETA  <Ws>, <Wt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19A03400 ldtseta w0, w0, [x0]
+19A03407 ldtseta w0, w7, [x0]
+19A0340E ldtseta w0, w14, [x0]
+19BF37FF ldtseta wzr, wzr, [sp]
+19A13443 ldtseta w1, w3, [x2]
+
+// LDTSETA_64_memop_unpriv 0|sz=1|011001|A=1|R=0|1|Rs=xxxxx|o3=0|opc=011|01|Rn=xxxxx|Rt=xxxxx
+// Ldtseta64MemopUnpriv: LDTSETA  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+59A03406 ldtseta x0, x6, [x0]
+59A0340D ldtseta x0, x13, [x0]
+59A03414 ldtseta x0, x20, [x0]
+59BF37E0 ldtseta xzr, x0, [sp]
+59A0341F ldtseta x0, xzr, [x0]
+59A03400 ldtseta x0, x0, [x0]
+59A13443 ldtseta x1, x3, [x2]
+
+// LDTSETAL_32_memop_unpriv 0|sz=0|011001|A=1|R=1|1|Rs=xxxxx|o3=0|opc=011|01|Rn=xxxxx|Rt=xxxxx
+// Ldtsetal32MemopUnpriv: LDTSETAL  <Ws>, <Wt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19E03405 ldtsetal w0, w5, [x0]
+19E0340C ldtsetal w0, w12, [x0]
+19E03413 ldtsetal w0, w19, [x0]
+19FF37E0 ldtsetal wzr, w0, [sp]
+19E0341F ldtsetal w0, wzr, [x0]
+19E03400 ldtsetal w0, w0, [x0]
+19E13443 ldtsetal w1, w3, [x2]
+
+// LDTSETAL_64_memop_unpriv 0|sz=1|011001|A=1|R=1|1|Rs=xxxxx|o3=0|opc=011|01|Rn=xxxxx|Rt=xxxxx
+// Ldtsetal64MemopUnpriv: LDTSETAL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+59E03404 ldtsetal x0, x4, [x0]
+59E0340B ldtsetal x0, x11, [x0]
+59E03412 ldtsetal x0, x18, [x0]
+59FF37E0 ldtsetal xzr, x0, [sp]
+59E0341F ldtsetal x0, xzr, [x0]
+59E03400 ldtsetal x0, x0, [x0]
+59E13443 ldtsetal x1, x3, [x2]
+
+// LDTSETL_32_memop_unpriv 0|sz=0|011001|A=0|R=1|1|Rs=xxxxx|o3=0|opc=011|01|Rn=xxxxx|Rt=xxxxx
+// Ldtsetl32MemopUnpriv: LDTSETL  <Ws>, <Wt>, [<Xn|SP>]
+// SttsetlLdtsetl32MemopUnpriv: STTSETL  <Ws>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+19603402 ldtsetl w0, w2, [x0]
+19603409 ldtsetl w0, w9, [x0]
+19603410 ldtsetl w0, w16, [x0]
+196034BF sttsetl w0, [x5]
+1960359F sttsetl w0, [x12]
+1960367F sttsetl w0, [x19]
+197F37E0 ldtsetl wzr, w0, [sp]
+19603400 ldtsetl w0, w0, [x0]
+196034AF ldtsetl w0, w15, [x5]
+
+// LDTSETL_64_memop_unpriv 0|sz=1|011001|A=0|R=1|1|Rs=xxxxx|o3=0|opc=011|01|Rn=xxxxx|Rt=xxxxx
+// Ldtsetl64MemopUnpriv: LDTSETL  <Xs>, <Xt>, [<Xn|SP>]
+// SttsetlLdtsetl64MemopUnpriv: STTSETL  <Xs>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+59603401 ldtsetl x0, x1, [x0]
+59603408 ldtsetl x0, x8, [x0]
+5960340F ldtsetl x0, x15, [x0]
+5960347F sttsetl x0, [x3]
+5960355F sttsetl x0, [x10]
+5960363F sttsetl x0, [x17]
+597F37E0 ldtsetl xzr, x0, [sp]
+59603400 ldtsetl x0, x0, [x0]
+5960341F sttsetl x0, [x0]

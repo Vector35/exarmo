@@ -1,0 +1,11 @@
+// addsubp_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|011|111|Zn=xxxxx|Zd=xxxxx
+// AddsubpZZz: ADDSUBP  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+04207C03 addsubp z3.b, z0.b, z0.b
+04207C0A addsubp z10.b, z0.b, z0.b
+04207C11 addsubp z17.b, z0.b, z0.b
+047F7FE0 addsubp z0.h, z31.h, z31.h
+04A07C1F addsubp z31.s, z0.s, z0.s
+04E07C03 addsubp z3.d, z0.d, z0.d
+04207C00 addsubp z0.b, z0.b, z0.b
+04217C43 addsubp z3.b, z2.b, z1.b

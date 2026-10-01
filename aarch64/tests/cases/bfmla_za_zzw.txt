@@ -1,0 +1,26 @@
+// bfmla_za_zzw_2x2_16 1|10|0000|11|sz=1|1|Zm=xxxx|00|Rv=xx|100|Zn=xxxx|0|S=0|1|off3=xxx
+// BfmlaZaZzw2x216: BFMLA  ZA.H[<Wv>, <offs>{, VGx2}], { <Zn1>.H-<Zn2>.H }, { <Zm1>.H-<Zm2>.H }
+// register fields: Zm, Rv, Zn
+C1E01009 bfmla za.h[w8, 1, vgx2], {z0.h-z1.h}, {z0.h-z1.h}
+C1E01048 bfmla za.h[w8, 0, vgx2], {z2.h-z3.h}, {z0.h-z1.h}
+C1E0104F bfmla za.h[w8, 7, vgx2], {z2.h-z3.h}, {z0.h-z1.h}
+C1FE33CA bfmla za.h[w9, 2, vgx2], {z30.h-z31.h}, {z30.h-z31.h}
+C1E0500B bfmla za.h[w10, 3, vgx2], {z0.h-z1.h}, {z0.h-z1.h}
+C1E0700C bfmla za.h[w11, 4, vgx2], {z0.h-z1.h}, {z0.h-z1.h}
+C1E0100D bfmla za.h[w8, 5, vgx2], {z0.h-z1.h}, {z0.h-z1.h}
+C1E0100E bfmla za.h[w8, 6, vgx2], {z0.h-z1.h}, {z0.h-z1.h}
+C1E250C9 bfmla za.h[w10, 1, vgx2], {z6.h-z7.h}, {z2.h-z3.h}
+
+// bfmla_za_zzw_4x4_16 1|10|0000|11|sz=1|1|Zm=xxx|0|10|Rv=xx|100|Zn=xxx|00|S=0|1|off3=xxx
+// BfmlaZaZzw4x416: BFMLA  ZA.H[<Wv>, <offs>{, VGx4}], { <Zn1>.H-<Zn4>.H }, { <Zm1>.H-<Zm4>.H }
+// register fields: Zm, Rv, Zn
+C1E1100E bfmla za.h[w8, 6, vgx4], {z0.h-z3.h}, {z0.h-z3.h}
+C1E1108C bfmla za.h[w8, 4, vgx4], {z4.h-z7.h}, {z0.h-z3.h}
+C1E1110A bfmla za.h[w8, 2, vgx4], {z8.h-z11.h}, {z0.h-z3.h}
+C1E53188 bfmla za.h[w9, 0, vgx4], {z12.h-z15.h}, {z4.h-z7.h}
+C1E95209 bfmla za.h[w10, 1, vgx4], {z16.h-z19.h}, {z8.h-z11.h}
+C1ED728B bfmla za.h[w11, 3, vgx4], {z20.h-z23.h}, {z12.h-z15.h}
+C1F1130D bfmla za.h[w8, 5, vgx4], {z24.h-z27.h}, {z16.h-z19.h}
+C1F5138F bfmla za.h[w8, 7, vgx4], {z28.h-z31.h}, {z20.h-z23.h}
+C1F9100E bfmla za.h[w8, 6, vgx4], {z0.h-z3.h}, {z24.h-z27.h}
+C1FD100E bfmla za.h[w8, 6, vgx4], {z0.h-z3.h}, {z28.h-z31.h}

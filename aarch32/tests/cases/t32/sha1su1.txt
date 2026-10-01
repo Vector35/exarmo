@@ -1,0 +1,17 @@
+// SHA1SU1_T1 111|1|11|11|1|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0111|Q=0|M=x|0|Vm=xxxx
+// Sha1su1T1: SHA1SU1.32  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+fffa838c sha1su1.32 q12, q6
+fffa63ae sha1su1.32 q11, q15
+fffa638e sha1su1.32 q11, q7
+FFBA0380 sha1su1.32 q0, q0
+FFF2F38F UNDEFINED
+FFF61381 UNDEFINED
+FFBEF38F UNDEFINED
+FFFA4388 sha1su1.32 q10, q4
+FFFA2384 sha1su1.32 q9, q2
+FFBA0382 sha1su1.32 q0, q1
+FFFA0380 sha1su1.32 q8, q0
+FFFAF3AF UNDEFINED
+FFFA83A0 sha1su1.32 q12, q8

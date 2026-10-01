@@ -1,0 +1,23 @@
+// VRSUBHN_A1 1111|0|01|U=1|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0110|N=x|0|M=x|0|Vm=xxxx
+// VrsubhnA1: VRSUBHN{<c>}{<q>}.<dt>  <Dd>, <Qn>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f3ca0600 vrsubhn.i16 d16, q5, q0
+f3c25626 vrsubhn.i16 d21, q1, q11
+f3d88622 vrsubhn.i32 d24, q4, q9
+f3ee360c vrsubhn.i64 d19, q7, q6
+f3d0a60c vrsubhn.i32 d26, q0, q6
+f38a562c vrsubhn.i16 d5, q5, q14
+f3de2626 vrsubhn.i32 d18, q7, q11
+f3dad60e vrsubhn.i32 d29, q5, q7
+F3FF060F UNDEFINED
+F3C4F688 vrsubhn.i16 d31, q10, q4
+F3C10601 UNDEFINED
+F3C04684 vrsubhn.i16 d20, q8, q2
+F3CA1620 vrsubhn.i16 d17, q5, q8
+F38A0600 vrsubhn.i16 d0, q5, q0
+F38AF600 vrsubhn.i16 d15, q5, q0
+F3CAF600 vrsubhn.i16 d31, q5, q0
+F3CF060F UNDEFINED
+F3CF06AF UNDEFINED

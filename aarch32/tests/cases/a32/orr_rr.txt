@@ -1,0 +1,44 @@
+// ORR_rr_A1 cond=xxxx|00011|opc=00|S=0|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// OrrRrA1: ORR{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+918e9e3e orrls r9, lr, lr, lsr lr
+21812519 orrhs r2, r1, r9, lsl r5
+3189e710 orrlo lr, r9, r0, lsl r7
+a18d0612 orrge r0, sp, r2, lsl r6
+018c053b orreq r0, r12, r11, lsr r5
+2189705d orrhs r7, r9, sp, asr r0
+b18d833a orrlt r8, sp, r10, lsr r3
+3180dd7b orrlo sp, r0, r11, ror sp
+// Binary Ninja's tests
+11866957 orrne r6, r6, r7, asr r9
+31876978 orrlo r6, r7, r8, ror r9
+e1866917 orr r6, r6, r7, lsl r9
+e1866937 orr r6, r6, r7, lsr r9
+e1866957 orr r6, r6, r7, asr r9
+e1866977 orr r6, r6, r7, ror r9
+e1876918 orr r6, r7, r8, lsl r9
+e1876938 orr r6, r7, r8, lsr r9
+e1876958 orr r6, r7, r8, asr r9
+e1876978 orr r6, r7, r8, ror r9
+F18E9E3E UNALLOCATED
+818FFF3F orrhi pc, pc, pc, lsr pc (unpredictable)
+418E9E39 orrmi r9, lr, r9, lsr lr
+
+// ORRS_rr_A1 cond=xxxx|00011|opc=00|S=1|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// OrrsRrA1: ORRS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+e191d931 orrs sp, r1, r1, lsr r9
+c191b056 orrsgt r11, r1, r6, asr r0
+11981357 orrsne r1, r8, r7, asr r3
+b195a538 orrslt r10, r5, r8, lsr r5
+019da658 orrseq r10, sp, r8, asr r6
+619e3c71 orrsvs r3, lr, r1, ror r12
+71960635 orrsvc r0, r6, r5, lsr r6
+0193551e orrseq r5, r3, lr, lsl r5
+// Binary Ninja's tests
+b1966977 orrslt r6, r6, r7, ror r9
+F191D931 UNALLOCATED
+8190FF30 orrshi pc, r0, r0, lsr pc (unpredictable)
+419FD93F orrsmi sp, pc, pc, lsr r9 (unpredictable)
+2191D93D orrscs sp, r1, sp, lsr r9
+E191D939 orrs sp, r1, r9, lsr r9

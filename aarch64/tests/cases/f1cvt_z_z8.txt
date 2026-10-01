@@ -1,0 +1,19 @@
+// f1cvt_z_z8_b2h 011|0010|1|00|001|00|L=0|0011|opc=00|Zn=xxxxx|Zd=xxxxx
+// F1cvtZZ8B2h: F1CVT  <Zd>.H, <Zn>.B
+// register fields: Zn, Zd
+65083006 f1cvt z6.h, z0.b
+6508300D f1cvt z13.h, z0.b
+65083014 f1cvt z20.h, z0.b
+650833E0 f1cvt z0.h, z31.b
+6508301F f1cvt z31.h, z0.b
+65083000 f1cvt z0.h, z0.b
+
+// f2cvt_z_z8_b2h 011|0010|1|00|001|00|L=0|0011|opc=01|Zn=xxxxx|Zd=xxxxx
+// F2cvtZZ8B2h: F2CVT  <Zd>.H, <Zn>.B
+// register fields: Zn, Zd
+65083404 f2cvt z4.h, z0.b
+6508340B f2cvt z11.h, z0.b
+65083412 f2cvt z18.h, z0.b
+650837E0 f2cvt z0.h, z31.b
+6508341F f2cvt z31.h, z0.b
+65083400 f2cvt z0.h, z0.b

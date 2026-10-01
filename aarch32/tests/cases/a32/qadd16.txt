@@ -1,0 +1,17 @@
+// QADD16_A1 cond=xxxx|011|00|op1=010|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=00|1|Rm=xxxx
+// Qadd16A1: QADD16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+e62ff017 qadd16 pc, pc, r7 (unpredictable)
+06256c11 qadd16eq r6, r5, r1 (unpredictable)
+e623c81b qadd16 r12, r3, r11 (unpredictable)
+262c151f qadd16hs r1, r12, pc (unpredictable)
+86289c12 qadd16hi r9, r8, r2 (unpredictable)
+0627fe16 qadd16eq pc, r7, r6 (unpredictable)
+76252615 qadd16vc r2, r5, r5 (unpredictable)
+762cf41d qadd16vc pc, r12, sp (unpredictable)
+// Binary Ninja's tests
+c6221f13 qadd16gt r1, r2, r3
+e6221f13 qadd16 r1, r2, r3
+F62FF017 UNALLOCATED
+46200210 qadd16mi r0, r0, r0 (unpredictable)
+162FF11F qadd16ne pc, pc, pc (unpredictable)

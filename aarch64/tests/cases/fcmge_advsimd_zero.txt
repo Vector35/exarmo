@@ -1,0 +1,94 @@
+// FCMGE_asimdmisc_FZ 0|Q=x|U=1|0|111|0|1|sz=x|10000|0110|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FcmgeAsimdmiscFz: FCMGE  <Vd>.<T>, <Vn>.<T>, #0.0
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+6EA0C80F fcmge v15.4s, v0.4s, #0.0
+6EA0CB6B fcmge v11.4s, v27.4s, #0.0
+6EE0C85A fcmge v26.2d, v2.2d, #0.0
+6EE0C86C fcmge v12.2d, v3.2d, #0.0
+6EA0CABB fcmge v27.4s, v21.4s, #0.0
+6EA0C852 fcmge v18.4s, v2.4s, #0.0
+6EA0CAB7 fcmge v23.4s, v21.4s, #0.0
+6EE0CA87 fcmge v7.2d, v20.2d, #0.0
+2EA0CA3F fcmge v31.2s, v17.2s, #0.0
+2EA0C912 fcmge v18.2s, v8.2s, #0.0
+6EE0CA11 fcmge v17.2d, v16.2d, #0.0
+6EA0CAE7 fcmge v7.4s, v23.4s, #0.0
+2EA0C8FE fcmge v30.2s, v7.2s, #0.0
+6EE0CB84 fcmge v4.2d, v28.2d, #0.0
+6EA0C9EB fcmge v11.4s, v15.4s, #0.0
+6EA0CB7E fcmge v30.4s, v27.4s, #0.0
+6EA0CBE0 fcmge v0.4s, v31.4s, #0.0
+2EE0C80F UNDEFINED
+6EA0C800 fcmge v0.4s, v0.4s, #0.0
+
+// FCMGE_asimdmiscfp16_FZ 0|Q=x|U=1|0|111|0|a=1|1111|00|0110|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FcmgeAsimdmiscfp16Fz: FCMGE  <Vd>.<T>, <Vn>.<T>, #0.0
+// register fields: Rn, Rd
+2EF8CA9D fcmge v29.4h, v20.4h, #0.0
+6EF8CA1C fcmge v28.8h, v16.8h, #0.0
+2EF8C876 fcmge v22.4h, v3.4h, #0.0
+6EF8C8CD fcmge v13.8h, v6.8h, #0.0
+6EF8CADF fcmge v31.8h, v22.8h, #0.0
+6EF8CBA3 fcmge v3.8h, v29.8h, #0.0
+2EF8CA14 fcmge v20.4h, v16.4h, #0.0
+2EF8C931 fcmge v17.4h, v9.4h, #0.0
+2EF8C852 fcmge v18.4h, v2.4h, #0.0
+2EF8CB68 fcmge v8.4h, v27.4h, #0.0
+2EF8C843 fcmge v3.4h, v2.4h, #0.0
+6EF8CB87 fcmge v7.8h, v28.8h, #0.0
+6EF8C8A9 fcmge v9.8h, v5.8h, #0.0
+2EF8CAB9 fcmge v25.4h, v21.4h, #0.0
+6EF8CB0D fcmge v13.8h, v24.8h, #0.0
+2EF8CA38 fcmge v24.4h, v17.4h, #0.0
+2EF8C800 fcmge v0.4h, v0.4h, #0.0
+2EF8CBFD fcmge v29.4h, v31.4h, #0.0
+
+// FCMGE_asisdmisc_FZ 01|U=1|1|111|0|1|sz=x|10000|0110|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FcmgeAsisdmiscFz: FCMGE  <V><d>, <V><n>, #0.0
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+7EE0C9FF fcmge d31, d15, #0.0
+7EA0C890 fcmge s16, s4, #0.0
+7EE0C9DA fcmge d26, d14, #0.0
+7EE0CA9D fcmge d29, d20, #0.0
+7EA0CBA1 fcmge s1, s29, #0.0
+7EA0C942 fcmge s2, s10, #0.0
+7EE0C95B fcmge d27, d10, #0.0
+7EE0CAF4 fcmge d20, d23, #0.0
+7EE0CB4D fcmge d13, d26, #0.0
+7EE0CAFB fcmge d27, d23, #0.0
+7EE0CB5E fcmge d30, d26, #0.0
+7EE0C87A fcmge d26, d3, #0.0
+7EA0C8ED fcmge s13, s7, #0.0
+7EA0C92A fcmge s10, s9, #0.0
+7EE0CBD0 fcmge d16, d30, #0.0
+7EE0CBEB fcmge d11, d31, #0.0
+7EE0C800 fcmge d0, d0, #0.0
+7EA0C9E0 fcmge s0, s15, #0.0
+7EA0C9FF fcmge s31, s15, #0.0
+7EA0C81F fcmge s31, s0, #0.0
+7EA0CBFF fcmge s31, s31, #0.0
+
+// FCMGE_asisdmiscfp16_FZ 01|U=1|1|111|0|a=1|1111|00|0110|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FcmgeAsisdmiscfp16Fz: FCMGE  <Hd>, <Hn>, #0.0
+// register fields: Rn, Rd
+7EF8C8FD fcmge h29, h7, #0.0
+7EF8C81A fcmge h26, h0, #0.0
+7EF8C97F fcmge h31, h11, #0.0
+7EF8C816 fcmge h22, h0, #0.0
+7EF8CA1E fcmge h30, h16, #0.0
+7EF8C95A fcmge h26, h10, #0.0
+7EF8CAD5 fcmge h21, h22, #0.0
+7EF8C9C2 fcmge h2, h14, #0.0
+7EF8C841 fcmge h1, h2, #0.0
+7EF8C80D fcmge h13, h0, #0.0
+7EF8CA6C fcmge h12, h19, #0.0
+7EF8C873 fcmge h19, h3, #0.0
+7EF8CAEA fcmge h10, h23, #0.0
+7EF8C859 fcmge h25, h2, #0.0
+7EF8CA9D fcmge h29, h20, #0.0
+7EF8C91E fcmge h30, h8, #0.0
+7EF8CBE0 fcmge h0, h31, #0.0
+7EF8C8E7 fcmge h7, h7, #0.0

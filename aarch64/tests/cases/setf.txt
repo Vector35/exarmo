@@ -1,0 +1,43 @@
+// SETF16_only_setf sf=0|op=0|S=1|11010000|opcode2=000000|sz=1|0010|Rn=xxxxx|o3=0|mask=1101
+// Setf16OnlySetf: SETF16  <Wn>
+// register fields: Rn
+3A00494D setf16 w10
+3A00484D setf16 w2
+3A00498D setf16 w12
+3A004B4D setf16 w26
+3A004BCD setf16 w30
+3A00486D setf16 w3
+3A00496D setf16 w11
+3A0049AD setf16 w13
+3A004ACD setf16 w22
+3A00482D setf16 w1
+3A00490D setf16 w8
+3A0049ED setf16 w15
+3A00492D setf16 w9
+3A004B8D setf16 w28
+3A004BAD setf16 w29
+3A00488D setf16 w4
+3A00480D setf16 w0
+3A004BED setf16 wzr
+
+// SETF8_only_setf sf=0|op=0|S=1|11010000|opcode2=000000|sz=0|0010|Rn=xxxxx|o3=0|mask=1101
+// Setf8OnlySetf: SETF8  <Wn>
+// register fields: Rn
+3A000A4D setf8 w18
+3A000BAD setf8 w29
+3A0009CD setf8 w14
+3A00092D setf8 w9
+3A0009ED setf8 w15
+3A000A6D setf8 w19
+3A000AED setf8 w23
+3A000B2D setf8 w25
+3A000B6D setf8 w27
+3A00098D setf8 w12
+3A0009AD setf8 w13
+3A00084D setf8 w2
+3A00082D setf8 w1
+3A00086D setf8 w3
+3A0008ED setf8 w7
+3A00088D setf8 w4
+3A00080D setf8 w0
+3A000BED setf8 wzr

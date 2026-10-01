@@ -1,0 +1,23 @@
+// fmla_z_p_zzz_ 011|0010|1|size=xx|1|Zm=xxxxx|0|N=0|op=0|Pg=xxx|Zn=xxxxx|Zda=xxxxx
+// FmlaZPZzz: FMLA  <Zda>.<T>, <Pg>/M, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Pg, Zn, Zda
+65AD10BC fmla z28.s, p4/m, z5.s, z13.s
+657F1B70 fmla z16.h, p6/m, z27.h, z31.h
+65EF032D fmla z13.d, p0/m, z25.d, z15.d
+656008EA fmla z10.h, p2/m, z7.h, z0.h
+657E162C fmla z12.h, p5/m, z17.h, z30.h
+65E0088B fmla z11.d, p2/m, z4.d, z0.d
+65FB1D0F fmla z15.d, p7/m, z8.d, z27.d
+65F80525 fmla z5.d, p1/m, z9.d, z24.d
+65BC01FD fmla z29.s, p0/m, z15.s, z28.s
+65F90C06 fmla z6.d, p3/m, z0.d, z25.d
+65770BB9 fmla z25.h, p2/m, z29.h, z23.h
+657A1235 fmla z21.h, p4/m, z17.h, z26.h
+65F21456 fmla z22.d, p5/m, z2.d, z18.d
+65650E80 fmla z0.h, p3/m, z20.h, z5.h
+65E5030E fmla z14.d, p0/m, z24.d, z5.d
+65AF030B fmla z11.s, p0/m, z24.s, z15.s
+65AD13FF fmla z31.s, p4/m, z31.s, z13.s
+65A410BC fmla z28.s, p4/m, z5.s, z4.s
+65AD11A4 fmla z4.s, p4/m, z13.s, z13.s
+65AD108D fmla z13.s, p4/m, z4.s, z13.s

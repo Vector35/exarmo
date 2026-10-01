@@ -1,0 +1,41 @@
+// VCVT_ds_T1 111011101|D=x|11|o1=0|opc2=111|Vd=xxxx|10|size=10|o3=1|1|M=x|0|Vm=xxxx
+// VcvtDsT1: VCVT{<c>}{<q>}.F64.F32  <Dd>, <Sm>
+// read together by <Dd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeb79acb vcvt.f64.f32 d9, s22
+eeb70ac1 vcvt.f64.f32 d0, s2
+eef72aeb vcvt.f64.f32 d18, s23
+eef76ae7 vcvt.f64.f32 d22, s15
+eeb77aca vcvt.f64.f32 d7, s20
+eef76aed vcvt.f64.f32 d22, s27
+eeb7fac2 vcvt.f64.f32 d15, s4
+eef7faef vcvt.f64.f32 d31, s31
+EEB78AC0 vcvt.f64.f32 d8, s0
+EEB74AC8 vcvt.f64.f32 d4, s16
+EEB71AC4 vcvt.f64.f32 d1, s8
+EEF70AC0 vcvt.f64.f32 d16, s0
+EEB79ACF vcvt.f64.f32 d9, s30
+EEB79AE0 vcvt.f64.f32 d9, s1
+EEB79ACB [ne] vcvtne.f64.f32 d9, s22
+
+// VCVT_sd_T1 111011101|D=x|11|o1=0|opc2=111|Vd=xxxx|10|size=11|o3=1|1|M=x|0|Vm=xxxx
+// VcvtSdT1: VCVT{<c>}{<q>}.F32.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eeb7bbe3 vcvt.f32.f64 s22, d19
+eef78bef vcvt.f32.f64 s17, d31
+eeb79bef vcvt.f32.f64 s18, d31
+eeb72be1 vcvt.f32.f64 s4, d17
+eef7cbec vcvt.f32.f64 s25, d28
+eef7bbef vcvt.f32.f64 s23, d31
+eeb70bef vcvt.f32.f64 s0, d31
+eeb7cbe0 vcvt.f32.f64 s24, d16
+EEB7FBC8 vcvt.f32.f64 s30, d8
+EEB74BE4 vcvt.f32.f64 s8, d20
+EEB71BE2 vcvt.f32.f64 s2, d18
+EEB7FBC0 vcvt.f32.f64 s30, d0
+EEF70BCF vcvt.f32.f64 s1, d15
+EEF7FBE3 vcvt.f32.f64 s31, d19
+EEB7BBE3 [ne] vcvtne.f32.f64 s22, d19

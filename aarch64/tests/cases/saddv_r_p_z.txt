@@ -1,0 +1,24 @@
+// saddv_r_p_z_ 000|0010|0|size=xx|0|000|op=0|U=0|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// SaddvRPZ: SADDV  <Dd>, <Pg>, <Zn>.<T>
+// register fields: Pg, Zn, Vd
+04803962 saddv d2, p6, z11.s
+04003119 saddv d25, p4, z8.b
+04002414 saddv d20, p1, z0.b
+04802539 saddv d25, p1, z9.s
+04003B6D saddv d13, p6, z27.b
+04802413 saddv d19, p1, z0.s
+04802B28 saddv d8, p2, z25.s
+04402377 saddv d23, p0, z27.h
+04802601 saddv d1, p1, z16.s
+0480307B saddv d27, p4, z3.s
+04803409 saddv d9, p5, z0.s
+048035D3 saddv d19, p5, z14.s
+04403829 saddv d9, p6, z1.h
+04402CF1 saddv d17, p3, z7.h
+0440293D saddv d29, p2, z9.h
+044028D4 saddv d20, p2, z6.h
+04803FE0 saddv d0, p7, z31.s
+0480397F saddv d31, p6, z11.s
+04C03962 UNDEFINED
+048038C2 saddv d2, p6, z6.s
+0480396B saddv d11, p6, z11.s

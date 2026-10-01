@@ -1,0 +1,40 @@
+// VRECPS_A1_D 1111001|U=0|0|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VrecpsA1D: VRECPS{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f24aafb6 vrecps.f32 d26, d26, d22
+f2407fba vrecps.f32 d23, d16, d26
+f2135f35 vrecps.f16 d5, d3, d21
+f24a1fbe vrecps.f32 d17, d26, d30
+f2484f9f vrecps.f32 d20, d24, d15
+f2498fb7 vrecps.f32 d24, d25, d23
+f2145fb5 vrecps.f16 d5, d20, d21
+f2140f31 vrecps.f16 d0, d4, d17
+F24FFFB0 vrecps.f32 d31, d31, d16
+F2422FB8 vrecps.f32 d18, d18, d24
+F201FFB4 vrecps.f32 d15, d17, d20
+F2400F32 vrecps.f32 d16, d0, d18
+F24FFF10 vrecps.f32 d31, d15, d0
+F24FAFB0 vrecps.f32 d26, d31, d16
+F24AAFBF vrecps.f32 d26, d26, d31
+
+// VRECPS_A1_Q 1111001|U=0|0|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VrecpsA1Q: VRECPS{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f202efd2 vrecps.f32 q7, q9, q1
+f2002f72 vrecps.f32 q1, q0, q9
+f25a2ffc vrecps.f16 q9, q13, q14
+f2400f7c vrecps.f32 q8, q0, q14
+f21eaff0 vrecps.f16 q5, q15, q8
+f2108fd8 vrecps.f16 q4, q8, q4
+f2508ffc vrecps.f16 q12, q8, q14
+f2408f7e vrecps.f32 q12, q0, q15
+F20FFFDF UNDEFINED
+F2084FD4 vrecps.f32 q2, q12, q2
+F2040FD0 vrecps.f32 q0, q10, q0
+F2011FD1 UNDEFINED
+F20FFF5F UNDEFINED
+F24FFFFF UNDEFINED

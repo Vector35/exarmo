@@ -1,0 +1,46 @@
+// VCVTP_asimd_T1_D 111111111|D=x|11|size=xx|opc1=11|Vd=xxxx|00|RM=10|op=x|Q=0|M=x|0|Vm=xxxx
+// VcvtpAsimdT1D: VCVTP{<q>}.<dt>.<dt2>  <Dd>, <Dm>
+// read together by <dt>: size, op
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+ffb76205 vcvtp.s16.f16 d6, d5
+fff75283 vcvtp.u16.f16 d21, d3
+fff76200 vcvtp.s16.f16 d22, d0
+ffbb62a3 vcvtp.u32.f32 d6, d19
+ffb7f28a vcvtp.u16.f16 d15, d10
+ffbb4224 vcvtp.s32.f32 d4, d20
+fffb9207 vcvtp.s32.f32 d25, d7
+ffbba207 vcvtp.s32.f32 d10, d7
+FFB36205 UNDEFINED
+FFBF6205 UNDEFINED
+FFB7020F vcvtp.s16.f16 d0, d15
+FFB78208 vcvtp.s16.f16 d8, d8
+FFB72202 vcvtp.s16.f16 d2, d2
+FFB71201 vcvtp.s16.f16 d1, d1
+FFB36285 UNDEFINED
+FFBF6285 UNDEFINED
+FFF70220 vcvtp.s16.f16 d16, d16
+FFF7F22F vcvtp.s16.f16 d31, d31
+
+// VCVTP_asimd_T1_Q 111111111|D=x|11|size=xx|opc1=11|Vd=xxxx|00|RM=10|op=x|Q=1|M=x|0|Vm=xxxx
+// VcvtpAsimdT1Q: VCVTP{<q>}.<dt>.<dt2>  <Qd>, <Qm>
+// read together by <dt>: size, op
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+ffbb22ce vcvtp.u32.f32 q1, q7
+ffbb6248 vcvtp.s32.f32 q3, q4
+fff782c2 vcvtp.u16.f16 q12, q1
+fff7a2cc vcvtp.u16.f16 q13, q6
+ffbb42ee vcvtp.u32.f32 q2, q15
+ffbb6244 vcvtp.s32.f32 q3, q2
+fffb02e8 vcvtp.u32.f32 q8, q12
+ffb7c2ea vcvtp.u16.f16 q6, q13
+FFB3F2CF UNDEFINED
+FFBF12C1 UNDEFINED
+FFB70240 vcvtp.s16.f16 q0, q0
+FFB3F24F UNDEFINED
+FFF3F2EF UNDEFINED
+FFBF224E UNDEFINED
+FFBF22CE UNDEFINED
+FFBB22C0 vcvtp.u32.f32 q1, q0
+FFBB22E0 vcvtp.u32.f32 q1, q8

@@ -1,0 +1,28 @@
+// add_z_zi_ 001|0010|1|size=xx|1|00|opc=000|11|sh=x|imm8=xxxxxxxx|Zdn=xxxxx
+// AddZZi: ADD  <Zdn>.<T>, <Zdn>.<T>, #<imm>{, <shift>}
+// register fields: Zdn
+2520DCBF add z31.b, z31.b, #0xe5
+25E0F86C add z12.d, z12.d, #0xc3, lsl #0x8
+25E0E169 add z9.d, z9.d, #0xb, lsl #0x8
+25A0F44B add z11.s, z11.s, #0xa2, lsl #0x8
+25A0EA44 add z4.s, z4.s, #0x52, lsl #0x8
+2560E267 add z7.h, z7.h, #0x13, lsl #0x8
+2560E4BD add z29.h, z29.h, #0x25, lsl #0x8
+25A0CE10 add z16.s, z16.s, #0x70
+2560F6FC add z28.h, z28.h, #0xb7, lsl #0x8
+25A0F270 add z16.s, z16.s, #0x93, lsl #0x8
+25A0E43E add z30.s, z30.s, #0x21, lsl #0x8
+25E0D103 add z3.d, z3.d, #0x88
+2560E0A8 add z8.h, z8.h, #0x5, lsl #0x8
+25A0C80D add z13.s, z13.s, #0x40
+25E0E348 add z8.d, z8.d, #0x1a, lsl #0x8
+25A0FFD0 add z16.s, z16.s, #0xfe, lsl #0x8
+2520C000 add z0.b, z0.b, #0x0
+2520DFFF add z31.b, z31.b, #0xff
+2520D01F add z31.b, z31.b, #0x80
+2520C41F add z31.b, z31.b, #0x20
+2520C21F add z31.b, z31.b, #0x10
+2520C11F add z31.b, z31.b, #0x8
+2520C09F add z31.b, z31.b, #0x4
+2520C05F add z31.b, z31.b, #0x2
+2520C03F add z31.b, z31.b, #0x1

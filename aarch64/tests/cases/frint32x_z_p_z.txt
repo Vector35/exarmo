@@ -1,0 +1,29 @@
+// frint32x_z_p_z_m 011|0010|1|opc=00|0|10|0|sz=x|U=1|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// Frint32xZPZM: FRINT32X  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+6511A002 frint32x z2.s, p0/m, z0.s
+6511A009 frint32x z9.s, p0/m, z0.s
+6511A010 frint32x z16.s, p0/m, z0.s
+6513A7E0 frint32x z0.d, p1/m, z31.d
+6511A81F frint32x z31.s, p2/m, z0.s
+6511AC02 frint32x z2.s, p3/m, z0.s
+6511B002 frint32x z2.s, p4/m, z0.s
+6511B402 frint32x z2.s, p5/m, z0.s
+6511B802 frint32x z2.s, p6/m, z0.s
+6511BC02 frint32x z2.s, p7/m, z0.s
+6511A000 frint32x z0.s, p0/m, z0.s
+
+// frint32x_z_p_z_z 011|0010|0|opc=00|011|10|o2=0|1|sz=x|U=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// Frint32xZPZZ: FRINT32X  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+641CA002 frint32x z2.s, p0/z, z0.s
+641CA009 frint32x z9.s, p0/z, z0.s
+641CA010 frint32x z16.s, p0/z, z0.s
+641CE7E0 frint32x z0.d, p1/z, z31.d
+641CA81F frint32x z31.s, p2/z, z0.s
+641CAC02 frint32x z2.s, p3/z, z0.s
+641CB002 frint32x z2.s, p4/z, z0.s
+641CB402 frint32x z2.s, p5/z, z0.s
+641CB802 frint32x z2.s, p6/z, z0.s
+641CBC02 frint32x z2.s, p7/z, z0.s
+641CA000 frint32x z0.s, p0/z, z0.s

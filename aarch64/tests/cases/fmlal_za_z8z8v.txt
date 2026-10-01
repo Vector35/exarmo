@@ -1,0 +1,32 @@
+// fmlal_za_z8z8v_1 1|10|0000|10|0|11|Zm=xxxx|0|Rv=xx|011|Zn=xxxxx|00|off3=xxx
+// FmlalZaZ8z8v1: FMLAL  ZA.H[<Wv>, <offs1>:<offs2>], <Zn>.B, <Zm>.B
+// register fields: Zm, Rv, Zn
+C1300C06 fmlal za.h[w8, 12:13], z0.b, z0.b
+C1300C22 fmlal za.h[w8, 4:5], z1.b, z0.b
+C1300C45 fmlal za.h[w8, 10:11], z2.b, z0.b
+C13F2FE0 fmlal za.h[w9, 0:1], z31.b, z15.b
+C1304C01 fmlal za.h[w10, 2:3], z0.b, z0.b
+C1306C03 fmlal za.h[w11, 6:7], z0.b, z0.b
+C1300C04 fmlal za.h[w8, 8:9], z0.b, z0.b
+C1300C07 fmlal za.h[w8, 14:15], z0.b, z0.b
+
+// fmlal_za_z8z8v_2x1 1|10|0000|10|0|10|Zm=xxxx|0|Rv=xx|010|Zn=xxxxx|op=0|S=0|o2=1|off2=xx
+// FmlalZaZ8z8v2x1: FMLAL  ZA.H[<Wv>, <offs1>:<offs2>{, VGx2}], { <Zn1>.B-<Zn2>.B }, <Zm>.B
+// register fields: Zm, Rv, Zn
+C1200805 fmlal za.h[w8, 2:3, vgx2], {z0.b-z1.b}, z0.b
+C1200844 fmlal za.h[w8, 0:1, vgx2], {z2.b-z3.b}, z0.b
+C1200867 fmlal za.h[w8, 6:7, vgx2], {z3.b-z4.b}, z0.b
+C12F2BE6 fmlal za.h[w9, 4:5, vgx2], {z31.b-z0.b}, z15.b
+C1204805 fmlal za.h[w10, 2:3, vgx2], {z0.b-z1.b}, z0.b
+C1206805 fmlal za.h[w11, 2:3, vgx2], {z0.b-z1.b}, z0.b
+
+// fmlal_za_z8z8v_4x1 1|10|0000|10|0|11|Zm=xxxx|0|Rv=xx|010|Zn=xxxxx|op=0|S=0|o2=1|off2=xx
+// FmlalZaZ8z8v4x1: FMLAL  ZA.H[<Wv>, <offs1>:<offs2>{, VGx4}], { <Zn1>.B-<Zn4>.B }, <Zm>.B
+// register fields: Zm, Rv, Zn
+C1300824 fmlal za.h[w8, 0:1, vgx4], {z1.b-z4.b}, z0.b
+C1300847 fmlal za.h[w8, 6:7, vgx4], {z2.b-z5.b}, z0.b
+C1300886 fmlal za.h[w8, 4:5, vgx4], {z4.b-z7.b}, z0.b
+C13F2805 fmlal za.h[w9, 2:3, vgx4], {z0.b-z3.b}, z15.b
+C1304BE4 fmlal za.h[w10, 0:1, vgx4], {z31.b-z2.b}, z0.b
+C1306824 fmlal za.h[w11, 0:1, vgx4], {z1.b-z4.b}, z0.b
+C1300804 fmlal za.h[w8, 0:1, vgx4], {z0.b-z3.b}, z0.b

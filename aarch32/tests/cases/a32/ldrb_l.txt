@@ -1,0 +1,26 @@
+// LDRB_l_A1 cond=xxxx|010|P=x|U=x|op2=1|W=x|op1=1|Rn=1111|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrbLA1: LDRB{<c>}{<q>}  <Rt>, <label>
+// register fields: Rt
+845f5f4b ldrbhi r5, 0xf0bd (unpredictable)
+45ffaa38 ldrbmi r10, 0x10a40 (unpredictable)
+e45fd7f0 ldrb sp, 0xf818 (unpredictable)
+545fa035 ldrbpl r10, 0xffd3 (unpredictable)
+15ffea2e ldrbne lr, 0x10a36 (unpredictable)
+95ffeb6f ldrbls lr, 0x10b77 (unpredictable)
+74df7b2d ldrbvc r7, 0x10b35 (unpredictable)
+85ff3210 ldrbhi r3, 0x10218 (unpredictable)
+045F0000 ldrbeq r0, 0x10008 (unpredictable)
+F5FFAA38 UNPREDICTABLE
+245FFFFF ldrbcs pc, 0xf009 (unpredictable)
+845F5800 ldrbhi r5, 0xf808 (unpredictable)
+845F5400 ldrbhi r5, 0xfc08 (unpredictable)
+845F5200 ldrbhi r5, 0xfe08 (unpredictable)
+845F5100 ldrbhi r5, 0xff08 (unpredictable)
+845F5080 ldrbhi r5, 0xff88 (unpredictable)
+845F5040 ldrbhi r5, 0xffc8 (unpredictable)
+845F5020 ldrbhi r5, 0xffe8 (unpredictable)
+845F5010 ldrbhi r5, 0xfff8 (unpredictable)
+845F5008 ldrbhi r5, 0x10000 (unpredictable)
+845F5004 ldrbhi r5, 0x10004 (unpredictable)
+845F5002 ldrbhi r5, 0x10006 (unpredictable)
+845F5001 ldrbhi r5, 0x10007 (unpredictable)

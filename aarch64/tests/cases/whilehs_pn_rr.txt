@@ -1,0 +1,12 @@
+// whilehs_pn_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|vl=x|0|U=1|lt=0|Rn=xxxxx|1|eq=0|PNd=xxx
+// WhilehsPnRr: WHILEHS  <PNd>.<T>, <Xn>, <Xm>, <vl>
+// register fields: Rm, Rn, PNd
+// WHILEHS (predicate as counter) - PN8-PN15
+25e24831 whilehs pn9.d, x1, x2, vlx2
+25206810 whilehs pn8.b, x0, x0, vlx4
+257F4BF2 whilehs pn10.h, xzr, xzr, vlx2
+25A24833 whilehs pn11.s, x1, x2, vlx2
+25E24834 whilehs pn12.d, x1, x2, vlx2
+25E24835 whilehs pn13.d, x1, x2, vlx2
+25E24836 whilehs pn14.d, x1, x2, vlx2
+25E24837 whilehs pn15.d, x1, x2, vlx2

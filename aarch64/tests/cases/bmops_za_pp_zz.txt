@@ -1,0 +1,15 @@
+// bmops_za_pp_zz_32 1|00|0000|0|10|0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|10|ZAda=xx
+// BmopsZaPpZz32: BMOPS  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.S, <Zm>.S
+// register fields: Zm, Pm, Pn, Zn, ZAda
+80800039 bmops za1.s, p0/m, p0/m, z1.s, z0.s
+80800078 bmops za0.s, p0/m, p0/m, z3.s, z0.s
+8080009B bmops za3.s, p0/m, p0/m, z4.s, z0.s
+809F241A bmops za2.s, p1/m, p1/m, z0.s, z31.s
+80804BF9 bmops za1.s, p2/m, p2/m, z31.s, z0.s
+80806C39 bmops za1.s, p3/m, p3/m, z1.s, z0.s
+80809039 bmops za1.s, p4/m, p4/m, z1.s, z0.s
+8080B439 bmops za1.s, p5/m, p5/m, z1.s, z0.s
+8080D839 bmops za1.s, p6/m, p6/m, z1.s, z0.s
+8080FC39 bmops za1.s, p7/m, p7/m, z1.s, z0.s
+80800019 bmops za1.s, p0/m, p0/m, z0.s, z0.s
+80858C59 bmops za1.s, p3/m, p4/m, z2.s, z5.s

@@ -1,0 +1,40 @@
+// STRH_32_ldst_regoff size=01|11|1|VR=0|0|0|opc=00|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Strh32LdstRegoff: STRH  <Wt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+78215892 strh w18, [x4, w1, uxtw #0x1]
+7829DB68 strh w8, [x27, w9, sxtw #0x1]
+78234851 strh w17, [x2, w3, uxtw]
+7839EA47 strh w7, [x18, x25, sxtx]
+7825CB76 strh w22, [x27, w5, sxtw]
+7825793F strh wzr, [x9, x5, lsl #0x1]
+782ECB71 strh w17, [x27, w14, sxtw]
+78256A89 strh w9, [x20, x5]
+783B5ADD strh w29, [x22, w27, uxtw #0x1]
+782BD9BF strh wzr, [x13, w11, sxtw #0x1]
+782E49CE strh w14, [x14, w14, uxtw]
+782779D8 strh w24, [x14, x7, lsl #0x1]
+7829E84F strh w15, [x2, x9, sxtx]
+782BEB37 strh w23, [x25, x11, sxtx]
+7823FA7D strh w29, [x19, x3, sxtx #0x1]
+783AF821 strh w1, [x1, x26, sxtx #0x1]
+78205800 strh w0, [x0, w0, uxtw #0x1]
+783F5BF2 strh w18, [sp, wzr, uxtw #0x1]
+78211892 UNDEFINED
+78213892 UNDEFINED
+78219892 UNDEFINED
+7821B892 UNDEFINED
+78201892 UNDEFINED
+78203892 UNDEFINED
+78207892 strh w18, [x4, x0, lsl #0x1]
+78209892 UNDEFINED
+7820B892 UNDEFINED
+7820D892 strh w18, [x4, w0, sxtw #0x1]
+7820F892 strh w18, [x4, x0, sxtx #0x1]
+783F1892 UNDEFINED
+783F3892 UNDEFINED
+783F7892 strh w18, [x4, xzr, lsl #0x1]
+783F9892 UNDEFINED
+783FB892 UNDEFINED
+783FD892 strh w18, [x4, wzr, sxtw #0x1]
+783FF892 strh w18, [x4, xzr, sxtx #0x1]

@@ -1,0 +1,39 @@
+// VSWP_T1_D 111111111|D=x|11|size=00|opc1=10|Vd=xxxx|0|opc2=0000|Q=0|M=x|0|Vm=xxxx
+// VswpT1D: VSWP{<c>}{<q>}{.<dt>}  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffb2200d vswp d2, d13
+ffb23003 vswp d3, d3
+fff28025 vswp d24, d21
+fff2f000 vswp d31, d0
+fff2100c vswp d17, d12
+fff21005 vswp d17, d5
+FFB2000F vswp d0, d15
+FFB24008 vswp d4, d8
+FFB20004 vswp d0, d4
+FFB2F002 vswp d15, d2
+FFF20001 vswp d16, d1
+FFB2200F vswp d2, d15
+FFB22020 vswp d2, d16
+FFB2202F vswp d2, d31
+FFB2200D [ne] vswpne d2, d13
+
+// VSWP_T1_Q 111111111|D=x|11|size=00|opc1=10|Vd=xxxx|0|opc2=0000|Q=1|M=x|0|Vm=xxxx
+// VswpT1Q: VSWP{<c>}{<q>}{.<dt>}  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+fff2206e vswp q9, q15
+fff2a040 vswp q13, q0
+fff28068 vswp q12, q12
+ffb26060 vswp q3, q8
+fff22044 vswp q9, q2
+fff2006e vswp q8, q15
+fff2604a vswp q11, q5
+FFF2F06F UNDEFINED
+FFF24062 vswp q10, q9
+FFF21061 UNDEFINED
+FFB2006E vswp q0, q15
+FFB2F04F UNDEFINED
+FFF2206E [ne] vswpne q9, q15

@@ -1,0 +1,10 @@
+// FCVTN_asimdsame2_D 0|Q=x|U=0|0|111|0|size=01|0|Rm=xxxxx|1|opcode=1110|1|Rn=xxxxx|Rd=xxxxx
+// FcvtnAsimdsame2D: FCVTN  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// register fields: Rm, Rn, Rd
+0E40F402 fcvtn v2.8b, v0.4h, v0.4h
+0E40F409 fcvtn v9.8b, v0.4h, v0.4h
+0E40F410 fcvtn v16.8b, v0.4h, v0.4h
+4E5FF7E0 fcvtn v0.16b, v31.8h, v31.8h
+0E40F41F fcvtn v31.8b, v0.4h, v0.4h
+0E40F400 fcvtn v0.8b, v0.4h, v0.4h
+0E41F443 fcvtn v3.8b, v2.4h, v1.4h

@@ -1,0 +1,49 @@
+// VRINTN_vfp_A1_D 111111101|D=x|111|op1=0|RM=01|Vd=xxxx|10|size=11|op=0|1|M=x|0|Vm=xxxx
+// VrintnVfpA1D: VRINTN{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// Binary Ninja's tests
+feb93b44 vrintn.f64 d3, d4
+FEF90B60 vrintn.f64 d16, d16
+FEB9FB4F vrintn.f64 d15, d15
+FEB98B48 vrintn.f64 d8, d8
+FEB94B42 vrintn.f64 d4, d2
+FEB92B41 vrintn.f64 d2, d1
+FEB91B40 vrintn.f64 d1, d0
+FEB90B4F vrintn.f64 d0, d15
+FEB9FB60 vrintn.f64 d15, d16
+FEF90B6F vrintn.f64 d16, d31
+FEF9FB44 vrintn.f64 d31, d4
+
+// VRINTN_vfp_A1_H 111111101|D=x|111|op1=0|RM=01|Vd=xxxx|10|size=01|op=0|1|M=x|0|Vm=xxxx
+// VrintnVfpA1H: VRINTN{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fef91948 vrintn.f16 s3, s16
+FEB90960 vrintn.f16 s0, s1
+FEF9F94F vrintn.f16 s31, s30
+FEF98944 vrintn.f16 s17, s8
+FEF94942 vrintn.f16 s9, s4
+FEF92941 vrintn.f16 s5, s2
+FEB90940 vrintn.f16 s0, s0
+FEB9F94F vrintn.f16 s30, s30
+FEF90960 vrintn.f16 s1, s1
+FEF9F96F vrintn.f16 s31, s31
+
+// VRINTN_vfp_A1_S 111111101|D=x|111|op1=0|RM=01|Vd=xxxx|10|size=10|op=0|1|M=x|0|Vm=xxxx
+// VrintnVfpA1S: VRINTN{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+feb9ca44 vrintn.f32 s24, s8
+// Binary Ninja's tests
+feb96a60 vrintn.f32 s12, s1
+FEF90A4F vrintn.f32 s1, s30
+FEB9FA48 vrintn.f32 s30, s16
+FEB98A42 vrintn.f32 s16, s4
+FEB94A41 vrintn.f32 s8, s2
+FEB92A40 vrintn.f32 s4, s0
+FEB91A4F vrintn.f32 s2, s30
+FEB90A6F vrintn.f32 s0, s31
+FEB9FA44 vrintn.f32 s30, s8
+FEF90A44 vrintn.f32 s1, s8
+FEF9FA44 vrintn.f32 s31, s8

@@ -1,0 +1,24 @@
+// VPMIN_i_A1 1111|0|01|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1010|N=x|Q=0|M=x|op=1|Vm=xxxx
+// VpminIA1: VPMIN{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f2166a12 vpmin.s16 d6, d6, d2
+f2167a11 vpmin.s16 d7, d6, d1
+f24f6ab1 vpmin.s8 d22, d31, d17
+f3442ab3 vpmin.u8 d18, d20, d19
+f31a7a34 vpmin.u16 d7, d10, d20
+f31b4a33 vpmin.u16 d4, d11, d19
+f2412a16 vpmin.s8 d18, d1, d6
+f3467a94 vpmin.u8 d23, d22, d4
+F2200A10 vpmin.s32 d0, d0, d0
+F2366A12 UNDEFINED
+F228FA1F vpmin.s32 d15, d8, d15
+F3228A18 vpmin.u32 d8, d2, d8
+F2101A10 vpmin.s16 d1, d0, d0
+F3366A12 UNDEFINED
+F2100A9F vpmin.s16 d0, d16, d15
+F21FFA30 vpmin.s16 d15, d15, d16
+F2560A3F vpmin.s16 d16, d6, d31
+F256FA12 vpmin.s16 d31, d6, d2

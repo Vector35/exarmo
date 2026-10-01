@@ -1,0 +1,218 @@
+// SBFM_32M_bitfield sf=0|opc=00|100110|N=0|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Sbfm32mBitfield: SBFM  <Wd>, <Wn>, #<immr>, #<imms>
+// AsrSbfm32mBitfield: ASR  <Wd>, <Wn>, #<shift>
+// SbfizSbfm32mBitfield: SBFIZ  <Wd>, <Wn>, #<lsb>, #<width>
+// SbfxSbfm32mBitfield: SBFX  <Wd>, <Wn>, #<lsb>, #<width>
+// SxtbSbfm32mBitfield: SXTB  <Wd>, <Wn>
+// SxthSbfm32mBitfield: SXTH  <Wd>, <Wn>
+// read together by <width> and the SBFIZ alias and the SBFX alias and the SXTB alias and the SXTH alias: immr, imms
+// register fields: Rn, Rd
+// form chosen on: immr, imms
+// 2020-03 spec
+13077CF5 asr w21, w7, #0x7
+131E7CAF asr w15, w5, #0x1e
+130E7E28 asr w8, w17, #0xe
+131A7CA7 asr w7, w5, #0x1a
+131B7CB1 asr w17, w5, #0x1b
+13017E2D asr w13, w17, #0x1
+13077C3B asr w27, w1, #0x7
+131C7C12 asr w18, w0, #0x1c
+130B7DB1 asr w17, w13, #0xb
+13027FBC asr w28, w29, #0x2
+13177D82 asr w2, w12, #0x17
+13117FCF asr w15, w30, #0x11
+13167E76 asr w22, w19, #0x16
+13047D38 asr w24, w9, #0x4
+130B7E1D asr w29, w16, #0xb
+13007E87 asr w7, w20, #0x0
+13040920 sbfiz w0, w9, #0x1c, #0x3
+13050365 sbfiz w5, w27, #0x1b, #0x1
+13173047 sbfiz w7, w2, #0x9, #0xd
+130E2281 sbfiz w1, w20, #0x12, #0x9
+131A0B5E sbfiz w30, w26, #0x6, #0x3
+1309042B sbfiz w11, w1, #0x17, #0x2
+1312275A sbfiz w26, w26, #0xe, #0xa
+130200A0 sbfiz w0, w5, #0x1e, #0x1
+130E082D sbfiz w13, w1, #0x12, #0x3
+131E2C26 sbfiz w6, w1, #0x2, #0xc
+13131494 sbfiz w20, w4, #0xd, #0x6
+131735A0 sbfiz w0, w13, #0x9, #0xe
+131A66E1 sbfiz w1, w23, #0x6, #0x1a
+131B58FD sbfiz w29, w7, #0x5, #0x17
+1319083A sbfiz w26, w1, #0x7, #0x3
+13184B59 sbfiz w25, w26, #0x8, #0x13
+13016526 sbfx w6, w9, #0x1, #0x19
+130B3EFE sbfx w30, w23, #0xb, #0x5
+130A7396 sbfx w22, w28, #0xa, #0x13
+1312599D sbfx w29, w12, #0x12, #0x5
+130A506E sbfx w14, w3, #0xa, #0xb
+13036FAE sbfx w14, w29, #0x3, #0x19
+131065FD sbfx w29, w15, #0x10, #0xa
+13032622 sbfx w2, w17, #0x3, #0x7
+13093951 sbfx w17, w10, #0x9, #0x6
+13186E7C sbfx w28, w19, #0x18, #0x4
+13145867 sbfx w7, w3, #0x14, #0x3
+130B46BB sbfx w27, w21, #0xb, #0x7
+13095261 sbfx w1, w19, #0x9, #0xc
+130C3AEE sbfx w14, w23, #0xc, #0x3
+13086B57 sbfx w23, w26, #0x8, #0x13
+130211FE sbfx w30, w15, #0x2, #0x3
+13001C8A sxtb w10, w4
+13001E9E sxtb w30, w20
+13001EDA sxtb w26, w22
+13001D60 sxtb w0, w11
+13001E95 sxtb w21, w20
+13001C18 sxtb w24, w0
+13001F3B sxtb w27, w25
+13001EF4 sxtb w20, w23
+13001CC3 sxtb w3, w6
+13001C25 sxtb w5, w1
+13001FA7 sxtb w7, w29
+13001F74 sxtb w20, w27
+13001D61 sxtb w1, w11
+13001CEB sxtb w11, w7
+13001F3C sxtb w28, w25
+13001E96 sxtb w22, w20
+13003EFA sxth w26, w23
+13003E5F sxth wzr, w18
+13003FF7 sxth w23, wzr
+13003C8C sxth w12, w4
+13003ED5 sxth w21, w22
+13003E91 sxth w17, w20
+13003CCB sxth w11, w6
+13003F6F sxth w15, w27
+13003C15 sxth w21, w0
+13003D58 sxth w24, w10
+13003C88 sxth w8, w4
+13003FEC sxth w12, wzr
+13003EA9 sxth w9, w21
+13003F2D sxth w13, w25
+13003E36 sxth w22, w17
+13003FDE sxth w30, w30
+133FFCF5 UNDEFINED
+130000F5 sbfx w21, w7, #0x0, #0x1
+1300FCF5 UNDEFINED
+133F00F5 UNDEFINED
+132080F5 UNDEFINED
+130740F5 sbfx w21, w7, #0x7, #0xa
+13007C15 asr w21, w0, #0x0
+130100F5 sbfiz w21, w7, #0x1f, #0x1
+13011C18 sbfx w24, w0, #0x1, #0x7
+
+// SBFM_64M_bitfield sf=1|opc=00|100110|N=1|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Sbfm64mBitfield: SBFM  <Xd>, <Xn>, #<immr>, #<imms>
+// AsrSbfm64mBitfield: ASR  <Xd>, <Xn>, #<shift>
+// SbfizSbfm64mBitfield: SBFIZ  <Xd>, <Xn>, #<lsb>, #<width>
+// SbfxSbfm64mBitfield: SBFX  <Xd>, <Xn>, #<lsb>, #<width>
+// SxtbSbfm64mBitfield: SXTB  <Xd>, <Wn>
+// SxthSbfm64mBitfield: SXTH  <Xd>, <Wn>
+// SxtwSbfm64mBitfield: SXTW  <Xd>, <Wn>
+// read together by <width> and the SBFIZ alias and the SBFX alias and the SXTB alias and the SXTH alias and the SXTW alias: immr, imms
+// register fields: Rn, Rd
+// form chosen on: immr, imms
+9361FD58 asr x24, x10, #0x21
+937BFFC8 asr x8, lr, #0x3b
+9373FD27 asr x7, x9, #0x33
+935AFEB1 asr x17, x21, #0x1a
+9378FC85 asr x5, x4, #0x38
+9357FD9E asr lr, x12, #0x17
+9351FDC1 asr x1, x14, #0x11
+9361FD87 asr x7, x12, #0x21
+937DFFDB asr x27, lr, #0x3d
+936BFCA0 asr x0, x5, #0x2b
+9344FD33 asr x19, x9, #0x4
+937EFCDA asr x26, x6, #0x3e
+9372FF6B asr x11, x27, #0x32
+936AFFA6 asr x6, fp, #0x2a
+9365FE05 asr x5, x16, #0x25
+9358FED2 asr x18, x22, #0x18
+937096F6 sbfiz x22, x23, #0x10, #0x26
+93600A77 sbfiz x23, x19, #0x20, #0x3
+937FDB26 sbfiz x6, x25, #0x1, #0x37
+937B2A17 sbfiz x23, x16, #0x5, #0xb
+934C2BE2 sbfiz x2, xzr, #0x34, #0xb
+93735C6B sbfiz x11, x3, #0xd, #0x18
+93724663 sbfiz x3, x19, #0xe, #0x12
+936255A6 sbfiz x6, x13, #0x1e, #0x16
+935F3A73 sbfiz x19, x19, #0x21, #0xf
+9378C3BF sbfiz xzr, fp, #0x8, #0x31
+937AA5F8 sbfiz x24, x15, #0x6, #0x2a
+9378C65F sbfiz xzr, x18, #0x8, #0x32
+93470713 sbfiz x19, x24, #0x39, #0x2
+935E17D8 sbfiz x24, lr, #0x22, #0x6
+93730953 sbfiz x19, x10, #0xd, #0x3
+937E9E4B sbfiz x11, x18, #0x2, #0x28
+934B7425 sbfx x5, x1, #0xb, #0x13
+935E8204 sbfx x4, x16, #0x1e, #0x3
+9351B8FA sbfx x26, x7, #0x11, #0x1e
+9349E8BF sbfx xzr, x5, #0x9, #0x32
+93569C1C sbfx x28, x0, #0x16, #0x12
+9367AE61 sbfx x1, x19, #0x27, #0x5
+9365BEC6 sbfx x6, x22, #0x25, #0xb
+934C4DC3 sbfx x3, x14, #0xc, #0x8
+93506CDA sbfx x26, x6, #0x10, #0xc
+9355CCD5 sbfx x21, x6, #0x15, #0x1f
+9348B5C8 sbfx x8, x14, #0x8, #0x26
+934331FF sbfx xzr, x15, #0x3, #0xa
+9343768E sbfx x14, x20, #0x3, #0x1b
+934BE4AE sbfx x14, x5, #0xb, #0x2f
+936DEA9E sbfx lr, x20, #0x2d, #0xe
+9361E9D1 sbfx x17, x14, #0x21, #0x1a
+93401E61 sxtb x1, w19
+93401E14 sxtb x20, w16
+93401E33 sxtb x19, w17
+93401C53 sxtb x19, w2
+93401EDA sxtb x26, w22
+93401DF5 sxtb x21, w15
+93401DEB sxtb x11, w15
+93401D76 sxtb x22, w11
+93401CBF sxtb xzr, w5
+93401E3E sxtb lr, w17
+93401EAB sxtb x11, w21
+93401DB6 sxtb x22, w13
+93401E60 sxtb x0, w19
+93401EEF sxtb x15, w23
+93401E36 sxtb x22, w17
+93401CB5 sxtb x21, w5
+93403DA2 sxth x2, w13
+93403E62 sxth x2, w19
+93403F7A sxth x26, w27
+93403D62 sxth x2, w11
+93403C68 sxth x8, w3
+93403DED sxth x13, w15
+93403EDA sxth x26, w22
+93403E03 sxth x3, w16
+93403E6D sxth x13, w19
+93403CEE sxth x14, w7
+93403E0E sxth x14, w16
+93403E3C sxth x28, w17
+93403E4F sxth x15, w18
+93403C9A sxth x26, w4
+93403E98 sxth x24, w20
+93403DAF sxth x15, w13
+93407DF0 sxtw x16, w15
+93407DEF sxtw x15, w15
+93407F20 sxtw x0, w25
+93407E80 sxtw x0, w20
+93407EDA sxtw x26, w22
+93407F86 sxtw x6, w28
+93407C15 sxtw x21, w0
+93407D25 sxtw x5, w9
+93407D63 sxtw x3, w11
+93407CF4 sxtw x20, w7
+93407CB9 sxtw x25, w5
+93407D4B sxtw x11, w10
+93407DAF sxtw x15, w13
+93407C25 sxtw x5, w1
+93407F51 sxtw x17, w26
+93407EC8 sxtw x8, w22
+93610158 sbfiz x24, x10, #0x1f, #0x1
+93400158 sbfx x24, x10, #0x0, #0x1
+9340FD58 asr x24, x10, #0x0
+937F0158 sbfiz x24, x10, #0x1, #0x1
+937FFD58 asr x24, x10, #0x3f
+93424158 sbfx x24, x10, #0x2, #0xf
+93412158 sbfx x24, x10, #0x1, #0x8
+93611158 sbfiz x24, x10, #0x1f, #0x5
+9340FC15 asr x21, x0, #0x0
+93410158 sbfiz x24, x10, #0x3f, #0x1

@@ -1,0 +1,40 @@
+// SSAT_A1_ASR cond=xxxx|01101|U=0|1|sat_imm=xxxxx|Rd=xxxx|imm5=xxxxx|sh=1|01|Rn=xxxx
+// SsatA1Asr: SSAT{<c>}{<q>}  <Rd>, #<imm>, <Rn>, ASR #<amount>
+// register fields: Rd, Rn
+46a141d3 ssatmi r4, #2, r3, asr #3
+06be16d7 ssateq r1, #31, r7, asr #13
+66ae3d54 ssatvs r3, #15, r4, asr #26
+26a23353 ssaths r3, #3, r3, asr #6
+b6b836dc ssatlt r3, #25, r12, asr #13
+76b76e58 ssatvc r6, #24, r8, asr #28
+26b7a154 ssaths r10, #24, r4, asr #2
+46aaf9d7 ssatmi pc, #11, r7, asr #19 (unpredictable)
+// Binary Ninja's tests
+e6a0805a ssat r8, #1, r10, asr #32
+e6a080da ssat r8, #1, r10, asr #1
+F6A141D3 UNALLOCATED
+86BF0FD0 ssathi r0, #0x20, r0, asr #0x1f
+16B0485F ssatne r4, #0x11, pc, asr #0x10 (unpredictable)
+46A84453 ssatmi r4, #0x9, r3, asr #0x8
+46A44253 ssatmi r4, #0x5, r3, asr #0x4
+
+// SSAT_A1_LSL cond=xxxx|01101|U=0|1|sat_imm=xxxxx|Rd=xxxx|imm5=xxxxx|sh=0|01|Rn=xxxx
+// SsatA1Lsl: SSAT{<c>}{<q>}  <Rd>, #<imm>, <Rn> {, LSL #<amount>}
+// register fields: Rd, Rn
+e6bb1693 ssat r1, #28, r3, lsl #13
+86b3d21c ssathi sp, #20, r12, lsl #4
+e6b9e714 ssat lr, #26, r4, lsl #14
+56bde61b ssatpl lr, #30, r11, lsl #12
+06bad017 ssateq sp, #27, r7
+66b93e9c ssatvs r3, #26, r12, lsl #29
+b6a4fe1e ssatlt pc, #5, lr, lsl #28 (unpredictable)
+e6b5cf10 ssat r12, #22, r0, lsl #30
+// Binary Ninja's tests
+e6a0801a ssat r8, #1, r10
+e6a08f9a ssat r8, #1, r10, lsl #31
+F6BB1693 UNALLOCATED
+46BF081F ssatmi r0, #0x20, pc, lsl #0x10 (unpredictable)
+26B01411 ssatcs r1, #0x11, r1, lsl #0x8
+16A81113 ssatne r1, #0x9, r3, lsl #0x2
+E6A21093 ssat r1, #0x3, r3, lsl #0x1
+E6A11693 ssat r1, #0x2, r3, lsl #0xd

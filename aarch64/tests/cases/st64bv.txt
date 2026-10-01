@@ -1,0 +1,15 @@
+// ST64BV_64_memop size=11|11|1|VR=0|0|0|A=0|R=0|1|Rs=xxxxx|o3=1|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// St64bv64Memop: ST64BV  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+F833B24A st64bv x19, x10, [x18]
+F830B226 st64bv x16, x6, [x17]
+F820B06C st64bv x0, x12, [x3]
+F83FB3E2 st64bv xzr, x2, [sp]
+F82CB0C4 st64bv x12, x4, [x6]
+F82FB076 st64bv x15, x22, [x3]
+F827B10E st64bv x7, x14, [x8]
+F83BB160 st64bv x27, x0, [x11]
+F833B00A st64bv x19, x10, [x0]
+F833B25F UNDEFINED
+F82AB24A st64bv x10, x10, [x18]
+F833B252 st64bv x19, x18, [x18]

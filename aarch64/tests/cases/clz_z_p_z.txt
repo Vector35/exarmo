@@ -1,0 +1,37 @@
+// clz_z_p_z_m 000|0010|0|size=xx|0|M=1|1|opc=001|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ClzZPZM: CLZ  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+04D9B65C clz z28.d, p5/m, z18.d
+0499BAD8 clz z24.s, p6/m, z22.s
+0459AF45 clz z5.h, p3/m, z26.h
+04D9B4EF clz z15.d, p5/m, z7.d
+0459BEC5 clz z5.h, p7/m, z22.h
+0499A308 clz z8.s, p0/m, z24.s
+0499B53D clz z29.s, p5/m, z9.s
+04D9A735 clz z21.d, p1/m, z25.d
+04D9A1A3 clz z3.d, p0/m, z13.d
+0499A922 clz z2.s, p2/m, z9.s
+0459B101 clz z1.h, p4/m, z8.h
+0459B1D9 clz z25.h, p4/m, z14.h
+0459B24F clz z15.h, p4/m, z18.h
+0459BEAB clz z11.h, p7/m, z21.h
+0499B16C clz z12.s, p4/m, z11.s
+0459A08C clz z12.h, p0/m, z4.h
+0419B400 clz z0.b, p5/m, z0.b
+04D9B7FF clz z31.d, p5/m, z31.d
+04D9B4BC clz z28.d, p5/m, z5.d
+
+// clz_z_p_z_z 000|0010|0|size=xx|0|M=0|1|opc=001|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ClzZPZZ: CLZ  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+0409A003 clz z3.b, p0/z, z0.b
+0409A00A clz z10.b, p0/z, z0.b
+0409A011 clz z17.b, p0/z, z0.b
+0449A7E0 clz z0.h, p1/z, z31.h
+0489A81F clz z31.s, p2/z, z0.s
+04C9AC03 clz z3.d, p3/z, z0.d
+0409B003 clz z3.b, p4/z, z0.b
+0409B403 clz z3.b, p5/z, z0.b
+0409B803 clz z3.b, p6/z, z0.b
+0409BC03 clz z3.b, p7/z, z0.b
+0409A000 clz z0.b, p0/z, z0.b

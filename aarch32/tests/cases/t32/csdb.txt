@@ -1,0 +1,11 @@
+// CSDB_T1 111|10|0|1110|10|(1)(1)(1)(1)|1|0(0)0|(0)|000|hint=0001|option=0100
+// CsdbT1: CSDB{<c>}{<q>}
+// IT state read: condition
+F3A08014 csdb (unpredictable)
+F3AFA814 csdb (unpredictable)
+F3A88014 csdb (unpredictable)
+F3A48014 csdb (unpredictable)
+F3A28014 csdb (unpredictable)
+F3A18014 csdb (unpredictable)
+F3A08014 [ne] csdbne (unpredictable)
+F3AF8014 csdb

@@ -1,0 +1,23 @@
+// ld1rqd_z_p_br_contiguous 101|0010|msz=11|ssz=00|Rm=xxxxx|000|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld1rqdZPBrContiguous: LD1RQD  { <Zt>.D }, <Pg>/Z, [<Xn|SP>, <Xm>, LSL #3]
+// register fields: Rm, Pg, Rn, Zt
+A593084C ld1rqd {z12.d}, p2/z, [x2, x19, lsl #0x3]
+A584192E ld1rqd {z14.d}, p6/z, [x9, x4, lsl #0x3]
+A58A1DFD ld1rqd {z29.d}, p7/z, [x15, x10, lsl #0x3]
+A5811EE9 ld1rqd {z9.d}, p7/z, [x23, x1, lsl #0x3]
+A58F0077 ld1rqd {z23.d}, p0/z, [x3, x15, lsl #0x3]
+A58D1E2F ld1rqd {z15.d}, p7/z, [x17, x13, lsl #0x3]
+A599101F ld1rqd {z31.d}, p4/z, [x0, x25, lsl #0x3]
+A5880811 ld1rqd {z17.d}, p2/z, [x0, x8, lsl #0x3]
+A5910FBE ld1rqd {z30.d}, p3/z, [fp, x17, lsl #0x3]
+A581135D ld1rqd {z29.d}, p4/z, [x26, x1, lsl #0x3]
+A5831D2B ld1rqd {z11.d}, p7/z, [x9, x3, lsl #0x3]
+A597015A ld1rqd {z26.d}, p0/z, [x10, x23, lsl #0x3]
+A5911B52 ld1rqd {z18.d}, p6/z, [x26, x17, lsl #0x3]
+A5861DF1 ld1rqd {z17.d}, p7/z, [x15, x6, lsl #0x3]
+A58F145C ld1rqd {z28.d}, p5/z, [x2, x15, lsl #0x3]
+A588152B ld1rqd {z11.d}, p5/z, [x9, x8, lsl #0x3]
+A58007E0 ld1rqd {z0.d}, p1/z, [sp, x0, lsl #0x3]
+A59F084C UNALLOCATED
+A5820842 ld1rqd {z2.d}, p2/z, [x2, x2, lsl #0x3]
+A5930A62 ld1rqd {z2.d}, p2/z, [x19, x19, lsl #0x3]

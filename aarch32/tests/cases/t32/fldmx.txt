@@ -1,0 +1,42 @@
+// FLDMDBX_T1 1110110|P=1|U=0|D=x|W=1|L=1|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx1
+// FldmdbxT1: FLDMDBX{<c>}{<q>}  <Rn>!, <dreglist>
+// register fields: Rn
+// IT state read: condition
+ed3fdbef UNPREDICTABLE
+ed316b53 UNPREDICTABLE
+ed336be3 UNPREDICTABLE
+ED700B01 fldmdbx r0!, {} (unpredictable)
+ED3FFBFF UNPREDICTABLE
+ED3F8B81 UNPREDICTABLE
+ED3F4B41 UNPREDICTABLE
+ED3F2B21 fldmdbx pc!, {d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17} (unpredictable)
+ED3F1B11 fldmdbx pc!, {d1, d2, d3, d4, d5, d6, d7, d8} (unpredictable)
+ED3FDB09 fldmdbx pc!, {d13, d14, d15, d16} (unpredictable)
+ED3FDB05 fldmdbx pc!, {d13, d14} (unpredictable)
+ED3FDB03 fldmdbx pc!, {d13} (unpredictable)
+ED3FDBEF [ne] UNPREDICTABLE
+ED700B01 [ne] fldmdbxne r0!, {} (unpredictable)
+ED70FB01 fldmdbx r0!, {} (unpredictable)
+ED708B01 fldmdbx r0!, {} (unpredictable)
+ED704B01 fldmdbx r0!, {} (unpredictable)
+
+// FLDMIAX_T1 1110110|P=0|U=1|D=x|W=x|L=1|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx1
+// FldmiaxT1: FLDMIAX{<c>}{<q>}  <Rn>{<!>}, <dreglist>
+// register fields: Rn
+// IT state read: condition
+ec917ba1 UNPREDICTABLE
+ec9acb79 UNPREDICTABLE
+ECF00B01 fldmiax r0!, {} (unpredictable)
+EC9FFBFF UNPREDICTABLE
+EC918B81 UNPREDICTABLE
+EC914B41 UNPREDICTABLE
+EC912B21 fldmiax r1, {d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17} (unpredictable)
+EC911B11 fldmiax r1, {d1, d2, d3, d4, d5, d6, d7, d8}
+EC917B09 fldmiax r1, {d7, d8, d9, d10}
+EC917B05 fldmiax r1, {d7, d8}
+EC917B03 fldmiax r1, {d7}
+EC917BA1 [ne] UNPREDICTABLE
+ECF00B01 [ne] fldmiaxne r0!, {} (unpredictable)
+ECFFFB01 fldmiax pc!, {} (unpredictable)
+ECF08B01 fldmiax r0!, {} (unpredictable)
+ECF04B01 fldmiax r0!, {} (unpredictable)

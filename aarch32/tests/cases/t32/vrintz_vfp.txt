@@ -1,0 +1,65 @@
+// VRINTZ_vfp_T1_D 111011101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=11|op=1|1|M=x|0|Vm=xxxx
+// VrintzVfpT1D: VRINTZ{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eeb61bed vrintz.f64 d1, d29
+eeb68bc6 vrintz.f64 d8, d6
+eeb6bbe8 vrintz.f64 d11, d24
+eef65beb vrintz.f64 d21, d27
+eef62be6 vrintz.f64 d18, d22
+eeb67bca vrintz.f64 d7, d10
+eeb60bef vrintz.f64 d0, d31
+eeb68bec vrintz.f64 d8, d28
+EEB6FBE0 vrintz.f64 d15, d16
+EEB64BE4 vrintz.f64 d4, d20
+EEB6FBE2 vrintz.f64 d15, d18
+EEF60BE1 vrintz.f64 d16, d17
+EEF6FBC0 vrintz.f64 d31, d0
+EEB61BCF vrintz.f64 d1, d15
+EEB61BE0 vrintz.f64 d1, d16
+EEB61BED [ne] vrintzne.f64 d1, d29
+
+// VRINTZ_vfp_T1_H 111011101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=01|op=1|1|M=x|0|Vm=xxxx
+// VrintzVfpT1H: VRINTZ{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef629e0 vrintz.f16 s5, s1
+eeb6f9ec vrintz.f16 s30, s25
+eeb649e2 vrintz.f16 s8, s5
+eeb639c6 vrintz.f16 s6, s12
+eef6f9e2 vrintz.f16 s31, s5
+eef6b9ed vrintz.f16 s23, s27
+eeb6a9c7 vrintz.f16 s20, s14
+eef649e2 vrintz.f16 s9, s5
+EEF609EF vrintz.f16 s1, s31
+EEF689E8 vrintz.f16 s17, s17
+EEF619E4 vrintz.f16 s3, s9
+EEB609E1 vrintz.f16 s0, s3
+EEF609C0 vrintz.f16 s1, s0
+EEF629CF vrintz.f16 s5, s30
+EEF629EF vrintz.f16 s5, s31
+EEF629E0 [ne] vrintzne.f16 s5, s1 (unpredictable)
+
+// VRINTZ_vfp_T1_S 111011101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=10|op=1|1|M=x|0|Vm=xxxx
+// VrintzVfpT1S: VRINTZ{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef68acf vrintz.f32 s17, s30
+eeb68ac8 vrintz.f32 s16, s16
+eeb67acb vrintz.f32 s14, s22
+eef69ae4 vrintz.f32 s19, s9
+eeb65aed vrintz.f32 s10, s27
+eeb6cae4 vrintz.f32 s24, s9
+eeb6bacb vrintz.f32 s22, s22
+eeb60ae1 vrintz.f32 s0, s3
+EEF6FAC0 vrintz.f32 s31, s0
+EEF64AC2 vrintz.f32 s9, s4
+EEF62AC0 vrintz.f32 s5, s0
+EEF61AE0 vrintz.f32 s3, s1
+EEB6FAEF vrintz.f32 s30, s31
+EEF60ACF vrintz.f32 s1, s30
+EEF6FACF vrintz.f32 s31, s30
+EEF68ACF [ne] vrintzne.f32 s17, s30

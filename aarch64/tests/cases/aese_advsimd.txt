@@ -1,0 +1,21 @@
+// AESE_B_cryptoaes 0100|111|0|size=00|10100|0010|D=0|10|Rn=xxxxx|Rd=xxxxx
+// AeseBCryptoaes: AESE  <Vd>.16B, <Vn>.16B
+// register fields: Rn, Rd
+4E284BE7 aese v7.16b, v31.16b
+4E284A86 aese v6.16b, v20.16b
+4E2848AF aese v15.16b, v5.16b
+4E2849FE aese v30.16b, v15.16b
+4E284A39 aese v25.16b, v17.16b
+4E284A91 aese v17.16b, v20.16b
+4E28483E aese v30.16b, v1.16b
+4E284A15 aese v21.16b, v16.16b
+4E284A53 aese v19.16b, v18.16b
+4E284839 aese v25.16b, v1.16b
+4E284B09 aese v9.16b, v24.16b
+4E284979 aese v25.16b, v11.16b
+4E28497A aese v26.16b, v11.16b
+4E2848AE aese v14.16b, v5.16b
+4E2848CF aese v15.16b, v6.16b
+4E284A6F aese v15.16b, v19.16b
+4E284800 aese v0.16b, v0.16b
+4E284BFF aese v31.16b, v31.16b

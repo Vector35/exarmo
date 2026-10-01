@@ -1,0 +1,17 @@
+// QDSUB_T1 111|11010|1|op1=000|Rn=xxxx|1111|Rd=xxxx|10|op2=11|Rm=xxxx
+// QdsubT1: QDSUB{<c>}{<q>}  {<Rd>, }<Rm>, <Rn>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa85f1ba qdsub r1, r10, r5
+fa89f5b5 qdsub r5, r5, r9
+fa8df6b5 qdsub r6, r5, sp
+fa83f1bf qdsub r1, pc, r3 (unpredictable)
+fa81fbbe qdsub r11, lr, r1
+fa83f5b9 qdsub r5, r9, r3
+fa86f1b8 qdsub r1, r8, r6
+fa86f2bf qdsub r2, pc, r6 (unpredictable)
+FA80F0B0 qdsub r0, r0, r0
+FA8FFFBA qdsub pc, r10, pc (unpredictable)
+FA85F5BA qdsub r5, r10, r5
+FA85F1B5 qdsub r1, r5, r5
+FA85F1BA [ne] qdsubne r1, r10, r5

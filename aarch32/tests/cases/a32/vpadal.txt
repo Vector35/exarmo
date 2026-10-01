@@ -1,0 +1,40 @@
+// VPADAL_A1_D 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|0110|op=x|Q=0|M=x|0|Vm=xxxx
+// VpadalA1D: VPADAL{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <dt>: size, op
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f4860f vpadal.s16 d24, d15
+f3f05688 vpadal.u8 d21, d8
+f3f0f684 vpadal.u8 d31, d4
+f3f4a684 vpadal.u16 d26, d4
+f3b4b68e vpadal.u16 d11, d14
+f3f47686 vpadal.u16 d23, d6
+f3f49627 vpadal.s16 d25, d23
+f3f0c601 vpadal.s8 d28, d1
+F3F80600 vpadal.s32 d16, d0
+F3FC860F UNDEFINED
+F3F84602 vpadal.s32 d20, d2
+F3F82680 vpadal.u32 d18, d0
+F3F41620 vpadal.s16 d17, d16
+F3FC868F UNDEFINED
+F3B4062F vpadal.s16 d0, d31
+F3B4F60F vpadal.s16 d15, d15
+F3F4060F vpadal.s16 d16, d15
+
+// VPADAL_A1_Q 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|0110|op=x|Q=1|M=x|0|Vm=xxxx
+// VpadalA1Q: VPADAL{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <dt>: size, op
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f806ca vpadal.u32 q8, q5
+f3f486c4 vpadal.u16 q12, q2
+f3f8a6e6 vpadal.u32 q13, q11
+F3B04640 vpadal.s8 q2, q0
+F3FCF6CF UNDEFINED
+F3F02648 vpadal.s8 q9, q4
+F3FC1641 UNDEFINED
+F3B006C2 vpadal.u8 q0, q1
+F3F40640 vpadal.s16 q8, q0
+F3F80660 vpadal.s32 q8, q8
+F3BCF6CF UNDEFINED
+F3F8F6EF UNDEFINED

@@ -1,0 +1,53 @@
+// VRINTA_vfp_A1_D 111111101|D=x|111|op1=0|RM=00|Vd=xxxx|10|size=11|op=0|1|M=x|0|Vm=xxxx
+// VrintaVfpA1D: VRINTA{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+feb8eb4d vrinta.f64 d14, d13
+fef8bb49 vrinta.f64 d27, d9
+// Binary Ninja's tests
+feb83b44 vrinta.f64 d3, d4
+FEB80B60 vrinta.f64 d0, d16
+FEB8FB4F vrinta.f64 d15, d15
+FEB88B48 vrinta.f64 d8, d8
+FEB84B42 vrinta.f64 d4, d2
+FEB82B41 vrinta.f64 d2, d1
+FEB81B40 vrinta.f64 d1, d0
+FEB80B4F vrinta.f64 d0, d15
+FEB8FB60 vrinta.f64 d15, d16
+FEF80B6F vrinta.f64 d16, d31
+FEF8FB4D vrinta.f64 d31, d13
+
+// VRINTA_vfp_A1_H 111111101|D=x|111|op1=0|RM=00|Vd=xxxx|10|size=01|op=0|1|M=x|0|Vm=xxxx
+// VrintaVfpA1H: VRINTA{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fef8b94d vrinta.f16 s23, s26
+feb8794f vrinta.f16 s14, s30
+FEF80960 vrinta.f16 s1, s1
+FEF8F948 vrinta.f16 s31, s16
+FEF88944 vrinta.f16 s17, s8
+FEF84942 vrinta.f16 s9, s4
+FEF82941 vrinta.f16 s5, s2
+FEF81940 vrinta.f16 s3, s0
+FEB80960 vrinta.f16 s0, s1
+FEB8F96F vrinta.f16 s30, s31
+FEF8094D vrinta.f16 s1, s26
+FEF8F94D vrinta.f16 s31, s26
+
+// VRINTA_vfp_A1_S 111111101|D=x|111|op1=0|RM=00|Vd=xxxx|10|size=10|op=0|1|M=x|0|Vm=xxxx
+// VrintaVfpA1S: VRINTA{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fef82a42 vrinta.f32 s5, s4
+fef8aa6e vrinta.f32 s21, s29
+// Binary Ninja's tests
+feb86a60 vrinta.f32 s12, s1
+FEF80A4F vrinta.f32 s1, s30
+FEF8FA48 vrinta.f32 s31, s16
+FEF88A44 vrinta.f32 s17, s8
+FEF84A41 vrinta.f32 s9, s2
+FEF81A40 vrinta.f32 s3, s0
+FEB80A4F vrinta.f32 s0, s30
+FEB8FA6F vrinta.f32 s30, s31
+FEF80A42 vrinta.f32 s1, s4
+FEF8FA42 vrinta.f32 s31, s4

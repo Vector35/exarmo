@@ -1,0 +1,66 @@
+// FMOV_D_floatdp1 M=0|0|S=0|11110|ftype=01|10000|opc=00|10000|Rn=xxxxx|Rd=xxxxx
+// FmovDFloatdp1: FMOV  <Dd>, <Dn>
+// register fields: Rn, Rd
+1E604378 fmov d24, d27
+1E604273 fmov d19, d19
+1E6043A4 fmov d4, d29
+1E6041A6 fmov d6, d13
+1E604230 fmov d16, d17
+1E604145 fmov d5, d10
+1E6042B2 fmov d18, d21
+1E60427E fmov d30, d19
+1E60426E fmov d14, d19
+1E6041FB fmov d27, d15
+1E604101 fmov d1, d8
+1E6040F3 fmov d19, d7
+1E6043DA fmov d26, d30
+1E6040EA fmov d10, d7
+1E604283 fmov d3, d20
+1E6040E9 fmov d9, d7
+1E604000 fmov d0, d0
+1E6043FF fmov d31, d31
+
+// FMOV_H_floatdp1 M=0|0|S=0|11110|ftype=11|10000|opc=00|10000|Rn=xxxxx|Rd=xxxxx
+// FmovHFloatdp1: FMOV  <Hd>, <Hn>
+// register fields: Rn, Rd
+1EE042E6 fmov h6, h23
+1EE04386 fmov h6, h28
+1EE040FC fmov h28, h7
+1EE040DC fmov h28, h6
+1EE0407A fmov h26, h3
+1EE0402F fmov h15, h1
+1EE04065 fmov h5, h3
+1EE042F9 fmov h25, h23
+1EE041DE fmov h30, h14
+1EE041BD fmov h29, h13
+1EE04153 fmov h19, h10
+1EE04295 fmov h21, h20
+1EE0419B fmov h27, h12
+1EE0403F fmov h31, h1
+1EE0431D fmov h29, h24
+1EE04389 fmov h9, h28
+1EE04000 fmov h0, h0
+1EE043E6 fmov h6, h31
+
+// FMOV_S_floatdp1 M=0|0|S=0|11110|ftype=00|10000|opc=00|10000|Rn=xxxxx|Rd=xxxxx
+// FmovSFloatdp1: FMOV  <Sd>, <Sn>
+// register fields: Rn, Rd
+1E204164 fmov s4, s11
+1E204057 fmov s23, s2
+1E2043A4 fmov s4, s29
+1E20431D fmov s29, s24
+1E20433D fmov s29, s25
+1E204238 fmov s24, s17
+1E204158 fmov s24, s10
+1E2040F5 fmov s21, s7
+1E204153 fmov s19, s10
+1E2043B4 fmov s20, s29
+1E20401E fmov s30, s0
+1E204226 fmov s6, s17
+1E2043EB fmov s11, s31
+1E2041B1 fmov s17, s13
+1E2040FD fmov s29, s7
+1E2043CC fmov s12, s30
+1E204160 fmov s0, s11
+1E20417F fmov s31, s11
+1E20416B fmov s11, s11

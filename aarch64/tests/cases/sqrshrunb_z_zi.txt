@@ -1,0 +1,68 @@
+// sqrshrunb_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=0|U=0|R=1|T=0|Zn=xxxxx|Zd=xxxxx
+// SqrshrunbZZi: SQRSHRUNB  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+45700A00 sqrshrunb z0.s, z16.d, #0x10
+452B0BF4 sqrshrunb z20.b, z31.h, #0x5
+456E0937 sqrshrunb z23.s, z9.d, #0x12
+456708DB sqrshrunb z27.s, z6.d, #0x19
+456A09AF sqrshrunb z15.s, z13.d, #0x16
+45310840 sqrshrunb z0.h, z2.s, #0xf
+45630A2C sqrshrunb z12.s, z17.d, #0x1d
+45790AB7 sqrshrunb z23.s, z21.d, #0x7
+4574081F sqrshrunb z31.s, z0.d, #0xc
+45750A00 sqrshrunb z0.s, z16.d, #0xb
+45200A00 UNDEFINED
+45210A00 UNDEFINED
+45220A00 UNDEFINED
+45230A00 UNDEFINED
+45240A00 UNDEFINED
+45250A00 UNDEFINED
+45260A00 UNDEFINED
+45270A00 UNDEFINED
+45280A10 sqrshrunb z16.b, z16.h, #0x8
+45290A00 sqrshrunb z0.b, z16.h, #0x7
+452A0A00 sqrshrunb z0.b, z16.h, #0x6
+452C0A00 sqrshrunb z0.b, z16.h, #0x4
+452D0A00 sqrshrunb z0.b, z16.h, #0x3
+452E0A00 sqrshrunb z0.b, z16.h, #0x2
+452F0A00 sqrshrunb z0.b, z16.h, #0x1
+45300A00 sqrshrunb z0.h, z16.s, #0x10
+45320A00 sqrshrunb z0.h, z16.s, #0xe
+45330A00 sqrshrunb z0.h, z16.s, #0xd
+45340A00 sqrshrunb z0.h, z16.s, #0xc
+45350A00 sqrshrunb z0.h, z16.s, #0xb
+45360A00 sqrshrunb z0.h, z16.s, #0xa
+45370A00 sqrshrunb z0.h, z16.s, #0x9
+45380A00 sqrshrunb z0.h, z16.s, #0x8
+45390A00 sqrshrunb z0.h, z16.s, #0x7
+453A0A00 sqrshrunb z0.h, z16.s, #0x6
+453B0A00 sqrshrunb z0.h, z16.s, #0x5
+453C0A00 sqrshrunb z0.h, z16.s, #0x4
+453D0A00 sqrshrunb z0.h, z16.s, #0x3
+453E0A00 sqrshrunb z0.h, z16.s, #0x2
+453F0A00 sqrshrunb z0.h, z16.s, #0x1
+45600A00 sqrshrunb z0.s, z16.d, #0x20
+45610A00 sqrshrunb z0.s, z16.d, #0x1f
+45620A00 sqrshrunb z0.s, z16.d, #0x1e
+45640A00 sqrshrunb z0.s, z16.d, #0x1c
+45650A00 sqrshrunb z0.s, z16.d, #0x1b
+45660A00 sqrshrunb z0.s, z16.d, #0x1a
+45680A00 sqrshrunb z0.s, z16.d, #0x18
+45690A00 sqrshrunb z0.s, z16.d, #0x17
+456B0A00 sqrshrunb z0.s, z16.d, #0x15
+456C0A00 sqrshrunb z0.s, z16.d, #0x14
+456D0A00 sqrshrunb z0.s, z16.d, #0x13
+456F0A00 sqrshrunb z0.s, z16.d, #0x11
+45710A00 sqrshrunb z0.s, z16.d, #0xf
+45720A00 sqrshrunb z0.s, z16.d, #0xe
+45730A00 sqrshrunb z0.s, z16.d, #0xd
+45760A00 sqrshrunb z0.s, z16.d, #0xa
+45770A00 sqrshrunb z0.s, z16.d, #0x9
+45780A00 sqrshrunb z0.s, z16.d, #0x8
+457A0A00 sqrshrunb z0.s, z16.d, #0x6
+457B0A00 sqrshrunb z0.s, z16.d, #0x5
+457C0A00 sqrshrunb z0.s, z16.d, #0x4
+457D0A00 sqrshrunb z0.s, z16.d, #0x3
+457E0A00 sqrshrunb z0.s, z16.d, #0x2
+457F0A00 sqrshrunb z0.s, z16.d, #0x1

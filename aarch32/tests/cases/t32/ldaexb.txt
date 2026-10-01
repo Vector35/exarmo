@@ -1,0 +1,11 @@
+// LDAEXB_T1 111|0100|op0=0110|L=1|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=1|sz=00|Rd=(1)(1)(1)(1)
+// LdaexbT1: LDAEXB{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// IT state read: condition
+e8dc9fcf ldaexb r9, [r12]
+E8D000C0 ldaexb r0, [r0] (unpredictable)
+E8DFF8C8 ldaexb pc, [pc] (unpredictable)
+E8DCC4C4 ldaexb r12, [r12] (unpredictable)
+E8DC92C2 ldaexb r9, [r12] (unpredictable)
+E8DC91C1 ldaexb r9, [r12] (unpredictable)
+E8DC9FCF [ne] ldaexbne r9, [r12]

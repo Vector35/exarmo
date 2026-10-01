@@ -1,0 +1,19 @@
+// VSMMLA_A1_Q 1111|11|0|0|B=0|D=x|op2=10|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=0|N=x|Q=1|M=x|U=0|Vm=xxxx
+// VsmmlaA1Q: VSMMLA{<q>}.S8  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+fc648c68 vsmmla.s8 q12, q2, q12
+fc60ac46 vsmmla.s8 q13, q0, q3
+fc282c64 vsmmla.s8 q1, q4, q10
+fc66ccce vsmmla.s8 q14, q11, q7
+fc2eece0 vsmmla.s8 q7, q15, q8
+fc208c48 vsmmla.s8 q4, q0, q4
+fc2c2c6e vsmmla.s8 q1, q6, q15
+fc6a0c66 vsmmla.s8 q8, q5, q11
+FC6FFC6F UNDEFINED
+FC624C62 vsmmla.s8 q10, q1, q9
+FC611C61 UNDEFINED
+FC200CC0 vsmmla.s8 q0, q8, q0
+FC2FFC4F UNDEFINED
+FC6FFCEF UNDEFINED

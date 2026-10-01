@@ -1,0 +1,94 @@
+// STRB_32_ldst_immpost size=00|11|1|VR=0|0|0|opc=00|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Strb32LdstImmpost: STRB  <Wt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+381B5666 strb w6, [x19], #-0x4b
+381037CE strb w14, [lr], #-0xfd
+380BA46C strb w12, [x3], #0xba
+3801D5D2 strb w18, [x14], #0x1d
+381AF48B strb w11, [x4], #-0x51
+380F65B9 strb w25, [x13], #0xf6
+3816352D strb w13, [x9], #-0x9d
+380AF45C strb w28, [x2], #0xaf
+381744F1 strb w17, [x7], #-0x8c
+381965D6 strb w22, [x14], #-0x6a
+38025423 strb w3, [x1], #0x25
+3814A790 strb w16, [x28], #-0xb6
+3811D408 strb w8, [x0], #-0xe3
+3816054B strb w11, [x10], #-0xa0
+380DC58B strb w11, [x12], #0xdc
+38179420 strb w0, [x1], #-0x87
+380007FF strb wzr, [sp], #0x0
+381FF666 strb w6, [x19], #-0x1
+38100666 strb w6, [x19], #-0x100
+38080666 strb w6, [x19], #0x80
+38040666 strb w6, [x19], #0x40
+38020666 strb w6, [x19], #0x20
+38010666 strb w6, [x19], #0x10
+38008666 strb w6, [x19], #0x8
+38004666 strb w6, [x19], #0x4
+38002666 strb w6, [x19], #0x2
+38001666 strb w6, [x19], #0x1
+
+// STRB_32_ldst_immpre size=00|11|1|VR=0|0|0|opc=00|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Strb32LdstImmpre: STRB  <Wt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+38129EF9 strb w25, [x23, #-0xd7]!
+381FAED2 strb w18, [x22, #-0x6]!
+38144FC7 strb w7, [lr, #-0xbc]!
+380AACE3 strb w3, [x7, #0xaa]!
+38162DD7 strb w23, [x14, #-0x9e]!
+38181C36 strb w22, [x1, #-0x7f]!
+381B1C4C strb w12, [x2, #-0x4f]!
+38096DFF strb wzr, [x15, #0x96]!
+38077D51 strb w17, [x10, #0x77]!
+38082C22 strb w2, [x1, #0x82]!
+38180C83 strb w3, [x4, #-0x80]!
+381C0E6C strb w12, [x19, #-0x40]!
+38080D10 strb w16, [x8, #0x80]!
+381B2D1E strb w30, [x8, #-0x4e]!
+3801DF9F strb wzr, [x28, #0x1d]!
+3809FE26 strb w6, [x17, #0x9f]!
+38000C00 strb w0, [x0, #0x0]! (unpredictable)
+381FFFF9 strb w25, [sp, #-0x1]!
+38100EF9 strb w25, [x23, #-0x100]!
+38040EF9 strb w25, [x23, #0x40]!
+38020EF9 strb w25, [x23, #0x20]!
+38010EF9 strb w25, [x23, #0x10]!
+38008EF9 strb w25, [x23, #0x8]!
+38004EF9 strb w25, [x23, #0x4]!
+38002EF9 strb w25, [x23, #0x2]!
+38001EF9 strb w25, [x23, #0x1]!
+
+// STRB_32_ldst_pos size=00|11|1|VR=0|0|1|opc=00|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Strb32LdstPos: STRB  <Wt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+39275FE9 strb w9, [sp, #0x9d7]
+393BE4BD strb w29, [x5, #0xef9]
+390DEC8E strb w14, [x4, #0x37b]
+392EE4CC strb w12, [x6, #0xbb9]
+393B7A6F strb w15, [x19, #0xede]
+393A1DA8 strb w8, [x13, #0xe87]
+390BA32C strb w12, [x25, #0x2e8]
+39241579 strb w25, [x11, #0x905]
+391E07E8 strb w8, [sp, #0x781]
+393360C5 strb w5, [x6, #0xcd8]
+39041713 strb w19, [x24, #0x105]
+392DF94E strb w14, [x10, #0xb7e]
+393D7987 strb w7, [x12, #0xf5e]
+39264E4A strb w10, [x18, #0x993]
+392240B6 strb w22, [x5, #0x890]
+390E5ECA strb w10, [x22, #0x397]
+39000000 strb w0, [x0]
+393FFFFF strb wzr, [sp, #0xfff]
+392003E9 strb w9, [sp, #0x800]
+391003E9 strb w9, [sp, #0x400]
+390803E9 strb w9, [sp, #0x200]
+390403E9 strb w9, [sp, #0x100]
+390203E9 strb w9, [sp, #0x80]
+390103E9 strb w9, [sp, #0x40]
+390083E9 strb w9, [sp, #0x20]
+390043E9 strb w9, [sp, #0x10]
+390023E9 strb w9, [sp, #0x8]
+390013E9 strb w9, [sp, #0x4]
+39000BE9 strb w9, [sp, #0x2]
+390007E9 strb w9, [sp, #0x1]

@@ -1,0 +1,93 @@
+// VCVTB_A1_DH cond=xxxx|11101|D=x|11|o1=0|01|op=0|Vd=xxxx|101|sz=1|T=0|1|M=x|0|Vm=xxxx
+// VcvtbA1Dh: VCVTB{<c>}{<q>}.F64.F16  <Dd>, <Sm>
+// read together by <Dd>: D, Vd
+// read together by <Sm>: M, Vm
+def26b4e vcvtble.f64.f16 d22, s28
+6ef24b6d vcvtbvs.f64.f16 d20, s27
+8ef20b6b vcvtbhi.f64.f16 d16, s23
+4eb2bb68 vcvtbmi.f64.f16 d11, s17
+8ef28b69 vcvtbhi.f64.f16 d24, s19
+4ef25b6e vcvtbmi.f64.f16 d21, s29
+cef29b63 vcvtbgt.f64.f16 d25, s7
+5ef29b67 vcvtbpl.f64.f16 d25, s15
+// Binary Ninja's tests
+0eb23b60 vcvtbeq.f64.f16 d3, s1
+eeb23b60 vcvtb.f64.f16 d3, s1
+FEF26B4E UNALLOCATED
+2EF2FB4F vcvtbcs.f64.f16 d31, s30
+1EF22B44 vcvtbne.f64.f16 d18, s8
+DEF21B42 vcvtble.f64.f16 d17, s4
+DEB20B41 vcvtble.f64.f16 d0, s2
+DEB2FB40 vcvtble.f64.f16 d15, s0
+DEF2FB4F vcvtble.f64.f16 d31, s30
+DEF26B6F vcvtble.f64.f16 d22, s31
+
+// VCVTB_A1_HD cond=xxxx|11101|D=x|11|o1=0|01|op=1|Vd=xxxx|101|sz=1|T=0|1|M=x|0|Vm=xxxx
+// VcvtbA1Hd: VCVTB{<c>}{<q>}.F16.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+beb33b6a vcvtblt.f16.f64 s6, d26
+0eb38b68 vcvtbeq.f16.f64 s16, d24
+6eb32b49 vcvtbvs.f16.f64 s4, d9
+7eb37b6c vcvtbvc.f16.f64 s14, d28
+5ef3cb42 vcvtbpl.f16.f64 s25, d2
+eef3cb60 vcvtb.f16.f64 s25, d16
+8eb36b48 vcvtbhi.f16.f64 s12, d8
+def35b42 vcvtble.f16.f64 s11, d2
+// Binary Ninja's tests
+beb32b41 vcvtblt.f16.f64 s4, d1
+eeb32b41 vcvtb.f16.f64 s4, d1
+FEB33B6A UNALLOCATED
+4EB30B6F vcvtbmi.f16.f64 s0, d31
+2EB3FB64 vcvtbcs.f16.f64 s30, d20
+1EB34B40 vcvtbne.f16.f64 s8, d0
+BEB31B4F vcvtblt.f16.f64 s2, d15
+BEB30B6F vcvtblt.f16.f64 s0, d31
+BEB3FB6A vcvtblt.f16.f64 s30, d26
+BEF30B6A vcvtblt.f16.f64 s1, d26
+BEF3FB6A vcvtblt.f16.f64 s31, d26
+
+// VCVTB_A1_HS cond=xxxx|11101|D=x|11|o1=0|01|op=1|Vd=xxxx|101|sz=0|T=0|1|M=x|0|Vm=xxxx
+// VcvtbA1Hs: VCVTB{<c>}{<q>}.F16.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+eef30a6a vcvtb.f16.f32 s1, s21
+def3ba43 vcvtble.f16.f32 s23, s6
+9eb33a69 vcvtbls.f16.f32 s6, s19
+aef3ea66 vcvtbge.f16.f32 s29, s13
+1ef37a6d vcvtbne.f16.f32 s15, s27
+aef32a64 vcvtbge.f16.f32 s5, s9
+cef33a44 vcvtbgt.f16.f32 s7, s8
+aeb3ea6b vcvtbge.f16.f32 s28, s23
+0EF3FA60 vcvtbeq.f16.f32 s31, s1
+FEF30A6A UNALLOCATED
+8EF38A6F vcvtbhi.f16.f32 s17, s31
+4EF34A68 vcvtbmi.f16.f32 s9, s17
+2EF31A62 vcvtbcs.f16.f32 s3, s5
+EEB30A61 vcvtb.f16.f32 s0, s3
+EEB3FA40 vcvtb.f16.f32 s30, s0
+EEF3FA4F vcvtb.f16.f32 s31, s30
+EEF30A60 vcvtb.f16.f32 s1, s1
+EEF30A6F vcvtb.f16.f32 s1, s31
+
+// VCVTB_A1_SH cond=xxxx|11101|D=x|11|o1=0|01|op=0|Vd=xxxx|101|sz=0|T=0|1|M=x|0|Vm=xxxx
+// VcvtbA1Sh: VCVTB{<c>}{<q>}.F32.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+1ef2ba65 vcvtbne.f32.f16 s23, s11
+eef2ca64 vcvtb.f32.f16 s25, s9
+7ef20a4e vcvtbvc.f32.f16 s1, s28
+9ef2da68 vcvtbls.f32.f16 s27, s17
+ceb2fa4a vcvtbgt.f32.f16 s30, s20
+9ef28a65 vcvtbls.f32.f16 s17, s11
+def2ca66 vcvtble.f32.f16 s25, s13
+eef27a6d vcvtb.f32.f16 s15, s27
+0EF24A60 vcvtbeq.f32.f16 s9, s1
+FEF2BA65 UNALLOCATED
+8EF22A6F vcvtbhi.f32.f16 s5, s31
+4EF21A62 vcvtbmi.f32.f16 s3, s5
+2EB20A61 vcvtbcs.f32.f16 s0, s3
+1EF2FA40 vcvtbne.f32.f16 s31, s0
+1EF2BA4F vcvtbne.f32.f16 s23, s30
+1EF2BA60 vcvtbne.f32.f16 s23, s1
+1EF2BA6F vcvtbne.f32.f16 s23, s31

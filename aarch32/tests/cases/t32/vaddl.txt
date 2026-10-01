@@ -1,0 +1,22 @@
+// VADDL_T1 111|U=x|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|000|op=0|N=x|0|M=x|0|Vm=xxxx
+// VaddlT1: VADDL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+EF800000 vaddl.s8 q0, d0, d0
+FFDF80AF vaddl.u16 q12, d31, d31
+EFA84008 vaddl.s32 q2, d8, d8
+EF842004 vaddl.s8 q1, d4, d4
+EF920002 vaddl.s16 q0, d2, d2
+EFE10001 vaddl.s32 q8, d1, d1
+EF80F000 UNDEFINED
+EF801000 UNDEFINED
+FF800000 vaddl.u8 q0, d0, d0
+FF90008F vaddl.u16 q0, d16, d15
+FFAF0020 vaddl.u32 q0, d15, d16
+EFC0F000 UNDEFINED
+EF8F00AF vaddl.s8 q0, d31, d31
+FFFF80AF UNDEFINED
+EF800000 [ne] vaddlne.s8 q0, d0, d0

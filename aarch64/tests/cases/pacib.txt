@@ -1,0 +1,54 @@
+// PACIB1716_HI_hints 11010101000000110010|CRm=0001|op2=010|11111
+// Pacib1716HiHints: PACIB1716
+D503215F pacib1716
+
+// PACIB_64P_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=0|001|Rn=xxxxx|Rd=xxxxx
+// Pacib64pDp1src: PACIB  <Xd>, <Xn|SP>
+// register fields: Rn, Rd
+DAC107F5 pacib x21, sp
+DAC1046F pacib x15, x3
+DAC10400 pacib x0, x0
+DAC10689 pacib x9, x20
+DAC10686 pacib x6, x20
+DAC105DC pacib x28, x14
+DAC1046B pacib x11, x3
+DAC10763 pacib x3, x27
+DAC1076E pacib x14, x27
+DAC10454 pacib x20, x2
+DAC107A3 pacib x3, fp
+DAC10714 pacib x20, x24
+DAC106FC pacib x28, x23
+DAC10550 pacib x16, x10
+DAC10571 pacib x17, x11
+DAC10630 pacib x16, x17
+DAC107FF pacib xzr, sp
+
+// PACIBSP_HI_hints 11010101000000110010|CRm=0011|op2=011|11111
+// PacibspHiHints: PACIBSP
+D503237F pacibsp
+
+// PACIBZ_HI_hints 11010101000000110010|CRm=0011|op2=010|11111
+// PacibzHiHints: PACIBZ
+D503235F pacibz
+
+// PACIZB_64Z_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=1|001|Rn=11111|Rd=xxxxx
+// Pacizb64zDp1src: PACIZB  <Xd>
+// register fields: Rd
+DAC127EE pacizb x14
+DAC127FA pacizb x26
+DAC127E4 pacizb x4
+DAC127E8 pacizb x8
+DAC127F3 pacizb x19
+DAC127E5 pacizb x5
+DAC127F5 pacizb x21
+DAC127EB pacizb x11
+DAC127E3 pacizb x3
+DAC127F8 pacizb x24
+DAC127F6 pacizb x22
+DAC127FC pacizb x28
+DAC127E1 pacizb x1
+DAC127F1 pacizb x17
+DAC127FE pacizb lr
+DAC127FB pacizb x27
+DAC127E0 pacizb x0
+DAC127FF pacizb xzr

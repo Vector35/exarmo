@@ -1,0 +1,17 @@
+// bfmlalt_z_zzzi_ 011|0010|0|1|o2=1|1|i3h=xx|Zm=xxx|01|op=0|0|i3l=x|T=1|Zn=xxxxx|Zda=xxxxx
+// BfmlaltZZzzi: BFMLALT  <Zda>.S, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+64F14C19 bfmlalt z25.s, z0.h, z1.h[5]
+64E54C15 bfmlalt z21.s, z0.h, z5.h[1]
+64E04E74 bfmlalt z20.s, z19.h, z0.h[1]
+64F7462E bfmlalt z14.s, z17.h, z7.h[4]
+64E446D1 bfmlalt z17.s, z22.h, z4.h[0]
+64E846A7 bfmlalt z7.s, z21.h, z0.h[2]
+64FE4C36 bfmlalt z22.s, z1.h, z6.h[7]
+64F24C98 bfmlalt z24.s, z4.h, z2.h[5]
+64F34FE0 bfmlalt z0.s, z31.h, z3.h[5]
+64F14C1F bfmlalt z31.s, z0.h, z1.h[5]
+64E94C39 bfmlalt z25.s, z1.h, z1.h[3]
+64F94401 bfmlalt z1.s, z0.h, z1.h[6]
+64F14C00 bfmlalt z0.s, z0.h, z1.h[5]

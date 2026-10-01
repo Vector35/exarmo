@@ -1,0 +1,13 @@
+// cadd_z_zz_ 010|0010|1|size=xx|0|0000|op=0|11|011|rot=x|Zm=xxxxx|Zdn=xxxxx
+// CaddZZz: CADD  <Zdn>.<T>, <Zdn>.<T>, <Zm>.<T>, <const>
+// register fields: Zm, Zdn
+45C0DE38 cadd z24.d, z24.d, z17.d, #0x10e
+4540DBCE cadd z14.h, z14.h, z30.h, #0x5a
+4580DCC9 cadd z9.s, z9.s, z6.s, #0x10e
+45C0D9BD cadd z29.d, z29.d, z13.d, #0x5a
+45C0D873 cadd z19.d, z19.d, z3.d, #0x5a
+4580DCDF cadd z31.s, z31.s, z6.s, #0x10e
+4540DAC9 cadd z9.h, z9.h, z22.h, #0x5a
+4500DF23 cadd z3.b, z3.b, z25.b, #0x10e
+45C0DC00 cadd z0.d, z0.d, z0.d, #0x10e
+45C0DFF8 cadd z24.d, z24.d, z31.d, #0x10e

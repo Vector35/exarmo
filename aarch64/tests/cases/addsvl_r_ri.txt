@@ -1,0 +1,13 @@
+// addsvl_r_ri_ 000|0010|0|0|op=0|1|Rn=xxxxx|0101|1|imm6=xxxxxx|Rd=xxxxx
+// AddsvlRRi: ADDSVL  <Xd|SP>, <Xn|SP>, #<imm>
+// register fields: Rn, Rd
+04205800 addsvl x0, x0, #0x0
+04205807 addsvl x7, x0, #0x0
+0420580E addsvl x14, x0, #0x0
+043F5FFF addsvl sp, sp, #-0x1
+04205C00 addsvl x0, x0, #-0x20
+04205A00 addsvl x0, x0, #0x10
+04205900 addsvl x0, x0, #0x8
+04205880 addsvl x0, x0, #0x4
+04205840 addsvl x0, x0, #0x2
+04205820 addsvl x0, x0, #0x1

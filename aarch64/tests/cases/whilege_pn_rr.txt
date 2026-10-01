@@ -1,0 +1,14 @@
+// whilege_pn_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|vl=x|0|U=0|lt=0|Rn=xxxxx|1|eq=0|PNd=xxx
+// WhilegePnRr: WHILEGE  <PNd>.<T>, <Xn>, <Xm>, <vl>
+// register fields: Rm, Rn, PNd
+// WHILEGE (predicate as counter) - PN8-PN15
+25214010 whilege pn8.b, x0, x1, vlx2
+25ea60b2 whilege pn10.d, x5, x10, vlx4
+256043F1 whilege pn9.h, xzr, x0, vlx2
+25BF4013 whilege pn11.s, x0, xzr, vlx2
+25214014 whilege pn12.b, x0, x1, vlx2
+25214015 whilege pn13.b, x0, x1, vlx2
+25214016 whilege pn14.b, x0, x1, vlx2
+25214017 whilege pn15.b, x0, x1, vlx2
+25214030 whilege pn8.b, x1, x1, vlx2
+25214011 whilege pn9.b, x0, x1, vlx2

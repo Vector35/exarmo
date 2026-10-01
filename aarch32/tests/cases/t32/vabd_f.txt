@@ -1,0 +1,45 @@
+// VABD_f_T1_D 111|U=1|11110|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VabdFT1D: VABD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff241d0f vabd.f32 d1, d4, d15
+ff3a2d02 vabd.f16 d2, d10, d2
+ff3a2da4 vabd.f16 d2, d26, d20
+ff7bfd07 vabd.f16 d31, d11, d7
+ff24ada1 vabd.f32 d10, d20, d17
+ff60ed22 vabd.f32 d30, d0, d18
+ff6ecdab vabd.f32 d28, d30, d27
+ff258d0b vabd.f32 d8, d5, d11
+FF2F0D00 vabd.f32 d0, d15, d0
+FF284D08 vabd.f32 d4, d8, d8
+FF220D00 vabd.f32 d0, d2, d0
+FF21FD20 vabd.f32 d15, d1, d16
+FF600DAF vabd.f32 d16, d16, d31
+FF2F1D0F vabd.f32 d1, d15, d15
+FF2F1D8F vabd.f32 d1, d31, d15
+FF241D0F [ne] vabdne.f32 d1, d4, d15
+
+// VABD_f_T1_Q 111|U=1|11110|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VabdFT1Q: VABD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff2a0d4a vabd.f32 q0, q5, q5
+ff7ecd4a vabd.f16 q14, q7, q5
+ff700d64 vabd.f16 q8, q0, q10
+ff74ad4a vabd.f16 q13, q2, q5
+ff72cdea vabd.f16 q14, q9, q13
+ff346d6a vabd.f16 q3, q2, q13
+ff7a4dee vabd.f16 q10, q13, q15
+ff6a6d42 vabd.f32 q11, q5, q1
+FF2FFD4F UNDEFINED
+FF288D40 vabd.f32 q4, q4, q0
+FF211D41 UNDEFINED
+FF202DC8 vabd.f32 q1, q8, q4
+FF6FFDEF UNDEFINED
+FF2A0D40 vabd.f32 q0, q5, q0
+FF2A0D60 vabd.f32 q0, q5, q8
+FF2A0D4A [ne] vabdne.f32 q0, q5, q5

@@ -1,0 +1,83 @@
+// STLR_32S_ldapstl_writeback size=10|0110011|L=0|000000000010|Rn=xxxxx|Rt=xxxxx
+// Stlr32sLdapstlWriteback: STLR  <Wt>, [<Xn|SP>, #-4]!
+// register fields: Rn, Rt
+99800800 stlr w0, [x0, #-4]! (unpredictable)
+99800807 stlr w7, [x0, #-4]!
+9980080E stlr w14, [x0, #-4]!
+99800BFF stlr wzr, [sp, #-0x4]!
+
+// STLR_64S_ldapstl_writeback size=11|0110011|L=0|000000000010|Rn=xxxxx|Rt=xxxxx
+// Stlr64sLdapstlWriteback: STLR  <Xt>, [<Xn|SP>, #-8]!
+// register fields: Rn, Rt
+D9800806 stlr x6, [x0, #-8]!
+D980080D stlr x13, [x0, #-8]!
+D9800814 stlr x20, [x0, #-8]!
+D9800BE0 stlr x0, [sp, #-0x8]!
+D980081F stlr xzr, [x0, #-0x8]!
+D9800800 stlr x0, [x0, #-0x8]! (unpredictable)
+
+// STLR_SL32_ldstord size=10|0010001|L=0|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// StlrSl32Ldstord: STLR  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+889FFF7C stlr w28, [x27]
+889FFFFF stlr wzr, [sp]
+889FFF7B stlr w27, [x27]
+889FFEB0 stlr w16, [x21]
+889FFCDA stlr w26, [x6]
+889FFE86 stlr w6, [x20]
+889FFCE5 stlr w5, [x7]
+889FFD52 stlr w18, [x10]
+888DADDF stlr wzr, [x14] (unpredictable)
+889BF878 stlr w24, [x3] (unpredictable)
+8897FAA3 stlr w3, [x21] (unpredictable)
+888BE375 stlr w21, [x27] (unpredictable)
+8890D3DB stlr w27, [lr] (unpredictable)
+889AD13C stlr w28, [x9] (unpredictable)
+8891FEBC stlr w28, [x21] (unpredictable)
+888AB66E stlr w14, [x19] (unpredictable)
+8883FCBF stlr wzr, [x5] (unpredictable)
+888CFA05 stlr w5, [x16] (unpredictable)
+8899F7E0 stlr w0, [sp] (unpredictable)
+889FBE6C stlr w12, [x19] (unpredictable)
+88829B0A stlr w10, [x24] (unpredictable)
+8895BA07 stlr w7, [x16] (unpredictable)
+888BBB77 stlr w23, [x27] (unpredictable)
+888C9261 stlr w1, [x19] (unpredictable)
+8880801C stlr w28, [x0] (unpredictable)
+8888C37C stlr w28, [x27] (unpredictable)
+8884A37C stlr w28, [x27] (unpredictable)
+88818B7C stlr w28, [x27] (unpredictable)
+889F877C stlr w28, [x27] (unpredictable)
+
+// STLR_SL64_ldstord size=11|0010001|L=0|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// StlrSl64Ldstord: STLR  <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+C89FFD31 stlr x17, [x9]
+C89FFF03 stlr x3, [x24]
+C89FFF51 stlr x17, [x26]
+C89FFC71 stlr x17, [x3]
+C89FFE1E stlr lr, [x16]
+C89FFCCA stlr x10, [x6]
+C89FFDCB stlr x11, [x14]
+C89FFDED stlr x13, [x15]
+C88DD332 stlr x18, [x25] (unpredictable)
+C882CE20 stlr x0, [x17] (unpredictable)
+C89B8FC7 stlr x7, [lr] (unpredictable)
+C8849BFC stlr x28, [sp] (unpredictable)
+C880A8E9 stlr x9, [x7] (unpredictable)
+C8938654 stlr x20, [x18] (unpredictable)
+C88383BC stlr x28, [fp] (unpredictable)
+C8968FAF stlr x15, [fp] (unpredictable)
+C89F9283 stlr x3, [x20] (unpredictable)
+C88AE340 stlr x0, [x26] (unpredictable)
+C888CF82 stlr x2, [x28] (unpredictable)
+C88AB748 stlr x8, [x26] (unpredictable)
+C889F06D stlr x13, [x3] (unpredictable)
+C899A607 stlr x7, [x16] (unpredictable)
+C889B2D7 stlr x23, [x22] (unpredictable)
+C881E304 stlr x4, [x24] (unpredictable)
+C89FFC1F stlr xzr, [x0]
+C89FFD29 stlr x9, [x9]
+C890C131 stlr x17, [x9] (unpredictable)
+C89FA131 stlr x17, [x9] (unpredictable)
+C89F8931 stlr x17, [x9] (unpredictable)

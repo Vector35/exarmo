@@ -1,0 +1,23 @@
+// SABA_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|0111|ac=1|1|Rn=xxxxx|Rd=xxxxx
+// SabaAsimdsameOnly: SABA  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+0E2E7C05 saba v5.8b, v0.8b, v14.8b
+0EBF7E34 saba v20.2s, v17.2s, v31.2s
+0E7E7FCC saba v12.4h, v30.4h, v30.4h
+0E717EBB saba v27.4h, v21.4h, v17.4h
+4E787F2F saba v15.8h, v25.8h, v24.8h
+4E2C7F8F saba v15.16b, v28.16b, v12.16b
+0E327EC4 saba v4.8b, v22.8b, v18.8b
+4E287ECD saba v13.16b, v22.16b, v8.16b
+0E777FE6 saba v6.4h, v31.4h, v23.4h
+4E637E19 saba v25.8h, v16.8h, v3.8h
+4E607DC0 saba v0.8h, v14.8h, v0.8h
+0E387EFF saba v31.8b, v23.8b, v24.8b
+0EB57C44 saba v4.2s, v2.2s, v21.2s
+4E797DB7 saba v23.8h, v13.8h, v25.8h
+0E6B7CFA saba v26.4h, v7.4h, v11.4h
+4E727C40 saba v0.8h, v2.8h, v18.8h
+0EEE7C05 UNDEFINED
+4EAE7C00 saba v0.4s, v0.4s, v14.4s
+4EEE7C05 UNDEFINED

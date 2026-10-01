@@ -1,0 +1,9 @@
+// SEVL_A1 cond=xxxx|00|1|10|R=0|10|imm4=0000|(1)(1)(1)(1)|imm12=(0)(0)(0)(0)00000101
+// SevlA1: SEVL{<c>}{<q>}
+// Binary Ninja's tests
+e320f005 sevl
+03200F05 sevleq (unpredictable)
+83208805 sevlhi (unpredictable)
+43204405 sevlmi (unpredictable)
+23202205 sevlcs (unpredictable)
+13201105 sevlne (unpredictable)

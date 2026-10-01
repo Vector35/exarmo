@@ -1,0 +1,9 @@
+// luti6_z_ztz_ 1|10|0000|01|1|001|opc=00001|size=00|opc2=00|Zn=xxxxx|Zd=xxxxx
+// Luti6ZZtz: LUTI6  <Zd>.B, ZT0, <Zn>
+// register fields: Zn, Zd
+C0C84006 luti6 z6.b, zt0, z0
+C0C8400D luti6 z13.b, zt0, z0
+C0C84014 luti6 z20.b, zt0, z0
+C0C843E0 luti6 z0.b, zt0, z31
+C0C8401F luti6 z31.b, zt0, z0
+C0C84000 luti6 z0.b, zt0, z0

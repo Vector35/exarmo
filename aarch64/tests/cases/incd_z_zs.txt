@@ -1,0 +1,76 @@
+// incd_z_zs_ 000|0010|0|size=11|1|1|imm4=xxxx|11|000|D=0|pattern=xxxxx|Zdn=xxxxx
+// IncdZZs: INCD  <Zdn>.D{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04F7C3C3 incd z3.d, mul3, mul #0x8
+04FAC1CE incd z14.d, #0xe, mul #0xb
+04FFC015 incd z21.d, pow2, mul #0x10
+04F7C3F8 incd z24.d, all, mul #0x8
+04F9C13C incd z28.d, vl16, mul #0xa
+04FEC0F7 incd z23.d, vl7, mul #0xf
+04F3C2DF incd z31.d, #0x16, mul #0x4
+04F5C182 incd z2.d, vl128, mul #0x6
+04F4C096 incd z22.d, vl4, mul #0x5
+04F6C07F incd z31.d, vl3, mul #0x7
+04FCC22F incd z15.d, #0x11, mul #0xd
+04F4C22D incd z13.d, #0x11, mul #0x5
+04FFC1CA incd z10.d, #0xe, mul #0x10
+04F6C285 incd z5.d, #0x14, mul #0x7
+04F6C1F2 incd z18.d, #0xf, mul #0x7
+04F6C1A8 incd z8.d, vl256, mul #0x7
+04F0C3C0 incd z0.d, mul3
+04F8C203 incd z3.d, #0x10, mul #0x9
+04F2C103 incd z3.d, vl8, mul #0x3
+04F1C043 incd z3.d, vl2, mul #0x2
+04F7C023 incd z3.d, vl1, mul #0x8
+
+// inch_z_zs_ 000|0010|0|size=01|1|1|imm4=xxxx|11|000|D=0|pattern=xxxxx|Zdn=xxxxx
+// InchZZs: INCH  <Zdn>.H{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+0479C364 inch z4.h, #0x1b, mul #0xa
+047AC34D inch z13.h, #0x1a, mul #0xb
+0470C181 inch z1.h, vl128
+0470C318 inch z24.h, #0x18
+0471C175 inch z21.h, vl64, mul #0x2
+0477C188 inch z8.h, vl128, mul #0x8
+0471C075 inch z21.h, vl3, mul #0x2
+0474C1D7 inch z23.h, #0xe, mul #0x5
+0475C253 inch z19.h, #0x12, mul #0x6
+0476C3DA inch z26.h, mul3, mul #0x7
+0470C0DC inch z28.h, vl6
+047EC369 inch z9.h, #0x1b, mul #0xf
+0474C048 inch z8.h, vl2, mul #0x5
+0470C36C inch z12.h, #0x1b
+0477C181 inch z1.h, vl128, mul #0x8
+0474C09F inch z31.h, vl4, mul #0x5
+047FC000 inch z0.h, pow2, mul #0x10
+0479C3E4 inch z4.h, all, mul #0xa
+0478C204 inch z4.h, #0x10, mul #0x9
+0472C104 inch z4.h, vl8, mul #0x3
+0479C024 inch z4.h, vl1, mul #0xa
+
+// incw_z_zs_ 000|0010|0|size=10|1|1|imm4=xxxx|11|000|D=0|pattern=xxxxx|Zdn=xxxxx
+// IncwZZs: INCW  <Zdn>.S{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04B8C1A1 incw z1.s, vl256, mul #0x9
+04BEC0B1 incw z17.s, vl5, mul #0xf
+04BDC18B incw z11.s, vl128, mul #0xe
+04B8C1F8 incw z24.s, #0xf, mul #0x9
+04B8C1D6 incw z22.s, #0xe, mul #0x9
+04B7C195 incw z21.s, vl128, mul #0x8
+04B5C242 incw z2.s, #0x12, mul #0x6
+04BDC244 incw z4.s, #0x12, mul #0xe
+04B4C0BC incw z28.s, vl5, mul #0x5
+04BDC2B0 incw z16.s, #0x15, mul #0xe
+04BCC00E incw z14.s, pow2, mul #0xd
+04B1C2D5 incw z21.s, #0x16, mul #0x2
+04BFC2DE incw z30.s, #0x16, mul #0x10
+04B7C192 incw z18.s, vl128, mul #0x8
+04B4C1CA incw z10.s, #0xe, mul #0x5
+04B6C3A5 incw z5.s, mul4, mul #0x7
+04B0C3E0 incw z0.s
+04B8C1BF incw z31.s, vl256, mul #0x9
+04B2C201 incw z1.s, #0x10, mul #0x3
+04B8C101 incw z1.s, vl8, mul #0x9
+04B8C081 incw z1.s, vl4, mul #0x9
+04B8C041 incw z1.s, vl2, mul #0x9
+04B8C021 incw z1.s, vl1, mul #0x9

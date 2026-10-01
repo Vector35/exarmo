@@ -1,0 +1,23 @@
+// uabd_z_p_zz_ 000|0010|0|size=xx|0|01|opc=10|U=1|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UabdZPZz: UABD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+040D1AC3 uabd z3.b, p6/m, z3.b, z22.b
+04CD02D9 uabd z25.d, p0/m, z25.d, z22.d
+04CD034C uabd z12.d, p0/m, z12.d, z26.d
+04CD1925 uabd z5.d, p6/m, z5.d, z9.d
+04CD1B3E uabd z30.d, p6/m, z30.d, z25.d
+048D060F uabd z15.s, p1/m, z15.s, z16.s
+040D0627 uabd z7.b, p1/m, z7.b, z17.b
+04CD0C35 uabd z21.d, p3/m, z21.d, z1.d
+040D02EB uabd z11.b, p0/m, z11.b, z23.b
+048D0019 uabd z25.s, p0/m, z25.s, z0.s
+044D0832 uabd z18.h, p2/m, z18.h, z1.h
+048D0AFE uabd z30.s, p2/m, z30.s, z23.s
+048D1FE5 uabd z5.s, p7/m, z5.s, z31.s
+04CD0698 uabd z24.d, p1/m, z24.d, z20.d
+040D1452 uabd z18.b, p5/m, z18.b, z2.b
+040D0CFA uabd z26.b, p3/m, z26.b, z7.b
+040D12C0 uabd z0.b, p4/m, z0.b, z22.b
+040D1ADF uabd z31.b, p6/m, z31.b, z22.b
+040D1AC6 uabd z6.b, p6/m, z6.b, z22.b
+040D1AD6 uabd z22.b, p6/m, z22.b, z22.b

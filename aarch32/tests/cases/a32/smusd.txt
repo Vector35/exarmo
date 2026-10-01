@@ -1,0 +1,39 @@
+// SMUSD_A1 cond=xxxx|01110|op1=000|Rd=xxxx|Ra=1111|Rm=xxxx|01|M=0|1|Rn=xxxx
+// SmusdA1: SMUSD{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+5704ff5a smusdpl r4, r10, pc (unpredictable)
+e702f059 smusd r2, r9, r0
+d700ff51 smusdle r0, r1, pc (unpredictable)
+b706f854 smusdlt r6, r4, r8
+1707fb5a smusdne r7, r10, r11
+4707f15c smusdmi r7, r12, r1
+2702ff57 smusdhs r2, r7, pc (unpredictable)
+770bf658 smusdvc r11, r8, r6
+// Binary Ninja's tests
+0708f253 smusdeq r8, r3, r2
+e703f150 smusd r3, r0, r1
+F704FF5A UNALLOCATED
+870FFF5F smusdhi pc, pc, pc (unpredictable)
+5704F45A smusdpl r4, r10, r4
+5704FF54 smusdpl r4, r4, pc (unpredictable)
+5704FF5F smusdpl r4, pc, pc (unpredictable)
+
+// SMUSDX_A1 cond=xxxx|01110|op1=000|Rd=xxxx|Ra=1111|Rm=xxxx|01|M=1|1|Rn=xxxx
+// SmusdxA1: SMUSDX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+b70cf170 smusdxlt r12, r0, r1
+c705fe7e smusdxgt r5, lr, lr
+a704fc7c smusdxge r4, r12, r12
+c705f670 smusdxgt r5, r0, r6
+9709f771 smusdxls r9, r1, r7
+e708fb77 smusdx r8, r7, r11
+670ef679 smusdxvs lr, r9, r6
+1708f975 smusdxne r8, r5, r9
+// Binary Ninja's tests
+1707f374 smusdxne r7, r4, r3
+e703f279 smusdx r3, r9, r2
+0700F07F smusdxeq r0, pc, r0 (unpredictable)
+F70CF170 UNALLOCATED
+870FFF70 smusdxhi pc, r0, pc (unpredictable)
+470CFC70 smusdxmi r12, r0, r12
+270CF17C smusdxcs r12, r12, r1

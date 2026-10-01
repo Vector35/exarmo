@@ -1,0 +1,7 @@
+// fcvtnb_z8_mz2_s2b 011|0010|1|00|001|010|0011|T=0|1|Zn=xxxx|0|Zd=xxxxx
+// FcvtnbZ8Mz2S2b: FCVTNB  <Zd>.B, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+650A3400 fcvtnb z0.b, {z0.s-z1.s}
+650A3407 fcvtnb z7.b, {z0.s-z1.s}
+650A340E fcvtnb z14.b, {z0.s-z1.s}
+650A37DF fcvtnb z31.b, {z30.s-z31.s}

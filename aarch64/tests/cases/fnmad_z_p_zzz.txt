@@ -1,0 +1,24 @@
+// fnmad_z_p_zzz_ 011|0010|1|size=xx|1|Za=xxxxx|1|N=1|op=0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FnmadZPZzz: FNMAD  <Zdn>.<T>, <Pg>/M, <Zm>.<T>, <Za>.<T>
+// register fields: Za, Pg, Zm, Zdn
+657DCC63 fnmad z3.h, p3/m, z3.h, z29.h
+657FCA5D fnmad z29.h, p2/m, z18.h, z31.h
+65F5D29C fnmad z28.d, p4/m, z20.d, z21.d
+657AD2E0 fnmad z0.h, p4/m, z23.h, z26.h
+65EBCC89 fnmad z9.d, p3/m, z4.d, z11.d
+65F7C704 fnmad z4.d, p1/m, z24.d, z23.d
+6573DA5F fnmad z31.h, p6/m, z18.h, z19.h
+65BBCB1A fnmad z26.s, p2/m, z24.s, z27.s
+65ABC0BB fnmad z27.s, p0/m, z5.s, z11.s
+6562D048 fnmad z8.h, p4/m, z2.h, z2.h
+65F5CF09 fnmad z9.d, p3/m, z24.d, z21.d
+657BDCA6 fnmad z6.h, p7/m, z5.h, z27.h
+65A4CA55 fnmad z21.s, p2/m, z18.s, z4.s
+6563D171 fnmad z17.h, p4/m, z11.h, z3.h
+6560CCA6 fnmad z6.h, p3/m, z5.h, z0.h
+657CC6D9 fnmad z25.h, p1/m, z22.h, z28.h
+657DD403 fnmad z3.h, p5/m, z0.h, z29.h
+657DCFE3 fnmad z3.h, p3/m, z31.h, z29.h
+653DCC63 UNDEFINED
+6563CC63 fnmad z3.h, p3/m, z3.h, z3.h
+657DCC7D fnmad z29.h, p3/m, z3.h, z29.h

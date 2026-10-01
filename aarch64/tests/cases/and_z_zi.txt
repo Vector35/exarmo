@@ -1,0 +1,79 @@
+// and_z_zi_ 000|0010|1|opc=10|00|00|imm13=xxxxxxxxxxxxx|Zdn=xxxxx
+// AndZZi: AND  <Zdn>.<T>, <Zdn>.<T>, #<const>
+// register fields: Zdn
+// bitmask immediate <const>: imm13<12>:imm13<11:6>:imm13<5:0>
+058165CC and z12.h, z12.h, #0xfff7
+05829E48 and z8.d, z8.d, #0xffffe000ffffffff
+0580F9FC and z28.s, z28.s, #0x1fffe
+058144D0 and z16.h, z16.h, #0x7f00
+05814A31 and z17.s, z17.s, #0xff8001ff
+0582057E and z30.d, z30.d, #0xfffffffffff
+05801804 and z4.s, z4.s, #0x20000000
+0583F8DF and z31.d, z31.d, #0xfe
+0581D13F and z31.s, z31.s, #0xffc0
+05828A9A and z26.d, z26.d, #0xffff80000000000f
+05827246 and z6.d, z6.d, #0xfffc00000000001f
+05802B4E and z14.s, z14.s, #0xf83fffff
+05837E3C and z28.d, z28.d, #0xfffffffffffe0007
+058359D3 and z19.d, z19.d, #0xfffe00000
+05823E33 and z19.d, z19.d, #0xfe0007ffffffffff
+05810F27 and z7.b, z7.b, #0x99
+05800000 and z0.s, z0.s, #0x1
+0583FFEC UNDEFINED
+0582000C and z12.d, z12.d, #0x1
+0581000C and z12.s, z12.s, #0x1
+0580800C and z12.s, z12.s, #0x10000
+0580400C and z12.s, z12.s, #0x1000000
+0580200C and z12.s, z12.s, #0x10000000
+0580100C and z12.s, z12.s, #0x40000000
+0580080C and z12.s, z12.s, #0x80000000
+0580040C and z12.h, z12.h, #0x1
+0580020C and z12.s, z12.s, #0x1ffff
+0580010C and z12.s, z12.s, #0x1ff
+0580008C and z12.s, z12.s, #0x1f
+0580004C and z12.s, z12.s, #0x7
+0580002C and z12.s, z12.s, #0x3
+0580078C and z12.b, z12.b, #0x55
+05800F8C and z12.b, z12.b, #0xaa
+0581FF8C and z12.b, z12.b, #0xaa
+058007AC UNDEFINED
+05800FAC UNDEFINED
+0581FFAC UNDEFINED
+0580070C and z12.b, z12.b, #0x11
+05801F0C and z12.b, z12.b, #0x22
+0581FF0C and z12.b, z12.b, #0x22
+0580074C and z12.b, z12.b, #0x77
+05801F4C and z12.b, z12.b, #0xee
+0581FF4C and z12.b, z12.b, #0xee
+0580076C UNDEFINED
+05801F6C UNDEFINED
+0581FF6C UNDEFINED
+0580060C and z12.b, z12.b, #0x1
+05803E0C and z12.b, z12.b, #0x2
+0581FE0C and z12.b, z12.b, #0x2
+058006CC and z12.b, z12.b, #0x7f
+05803ECC and z12.b, z12.b, #0xfe
+0581FECC and z12.b, z12.b, #0xfe
+058006EC UNDEFINED
+05803EEC UNDEFINED
+0581FEEC UNDEFINED
+05807C0C and z12.h, z12.h, #0x2
+0581FC0C and z12.h, z12.h, #0x2
+058005CC and z12.h, z12.h, #0x7fff
+05807DCC and z12.h, z12.h, #0xfffe
+0581FDCC and z12.h, z12.h, #0xfffe
+058005EC UNDEFINED
+05807DEC UNDEFINED
+0581FDEC UNDEFINED
+0580F80C and z12.s, z12.s, #0x2
+0581F80C and z12.s, z12.s, #0x2
+058003CC and z12.s, z12.s, #0x7fffffff
+0580FBCC and z12.s, z12.s, #0xfffffffe
+0581FBCC and z12.s, z12.s, #0xfffffffe
+058003EC UNDEFINED
+0580FBEC UNDEFINED
+0581FBEC UNDEFINED
+0583F80C and z12.d, z12.d, #0x2
+058207CC and z12.d, z12.d, #0x7fffffffffffffff
+0583FFCC and z12.d, z12.d, #0xfffffffffffffffe
+058207EC UNDEFINED

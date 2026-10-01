@@ -1,0 +1,44 @@
+// FSQRT_asimdmisc_R 0|Q=x|U=1|0|111|0|1|sz=x|10000|opcode=11111|10|Rn=xxxxx|Rd=xxxxx
+// FsqrtAsimdmiscR: FSQRT  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+6EE1FA8A fsqrt v10.2d, v20.2d
+6EE1FBCE fsqrt v14.2d, v30.2d
+6EA1F96F fsqrt v15.4s, v11.4s
+6EE1F94A fsqrt v10.2d, v10.2d
+6EA1FA2F fsqrt v15.4s, v17.4s
+2EA1FB6C fsqrt v12.2s, v27.2s
+2EA1FA7B fsqrt v27.2s, v19.2s
+6EE1FA7F fsqrt v31.2d, v19.2d
+2EA1FBD5 fsqrt v21.2s, v30.2s
+6EE1F989 fsqrt v9.2d, v12.2d
+6EA1FB09 fsqrt v9.4s, v24.4s
+6EA1F856 fsqrt v22.4s, v2.4s
+6EE1FB89 fsqrt v9.2d, v28.2d
+2EA1FA54 fsqrt v20.2s, v18.2s
+6EA1F977 fsqrt v23.4s, v11.4s
+6EA1FA40 fsqrt v0.4s, v18.4s
+6EE1F80A fsqrt v10.2d, v0.2d
+6EE1FBEA fsqrt v10.2d, v31.2d
+2EE1FA8A UNDEFINED
+
+// FSQRT_asimdmiscfp16_R 0|Q=x|U=1|0|111|0|a=1|1111|00|opcode=11111|10|Rn=xxxxx|Rd=xxxxx
+// FsqrtAsimdmiscfp16R: FSQRT  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+2EF9F89E fsqrt v30.4h, v4.4h
+2EF9FA84 fsqrt v4.4h, v20.4h
+2EF9F8E0 fsqrt v0.4h, v7.4h
+2EF9FAEB fsqrt v11.4h, v23.4h
+2EF9FA7B fsqrt v27.4h, v19.4h
+6EF9F8D7 fsqrt v23.8h, v6.8h
+2EF9FB54 fsqrt v20.4h, v26.4h
+2EF9FA4F fsqrt v15.4h, v18.4h
+2EF9FB84 fsqrt v4.4h, v28.4h
+2EF9F88C fsqrt v12.4h, v4.4h
+6EF9F9BC fsqrt v28.8h, v13.8h
+2EF9F808 fsqrt v8.4h, v0.4h
+6EF9F8F7 fsqrt v23.8h, v7.8h
+2EF9F8D0 fsqrt v16.4h, v6.4h
+6EF9F95A fsqrt v26.8h, v10.8h
+6EF9F84D fsqrt v13.8h, v2.8h
+2EF9FBFF fsqrt v31.4h, v31.4h

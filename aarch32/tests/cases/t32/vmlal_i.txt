@@ -1,0 +1,27 @@
+// VMLAL_i_T1 111|U=x|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|10|op=0|0|N=x|0|M=x|0|Vm=xxxx
+// VmlalIT1: VMLAL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef8f2827 vmlal.s8 q1, d15, d23
+ef84688e vmlal.s8 q3, d20, d14
+ff9fa881 vmlal.u16 q5, d31, d1
+ff8ea88a vmlal.u8 q5, d30, d10
+efef4880 vmlal.s32 q10, d31, d0
+efdb8800 vmlal.s16 q12, d11, d0
+ffd7888e vmlal.u16 q12, d23, d14
+efed88a1 vmlal.s32 q12, d29, d17
+EFBFF827 UNDEFINED
+FFA0082F vmlal.u32 q0, d0, d31
+EF880828 vmlal.s8 q0, d8, d24
+EFC20824 vmlal.s8 q8, d2, d20
+EF812822 vmlal.s8 q1, d1, d18
+EFBF1827 UNDEFINED
+EF8FF827 UNDEFINED
+EFCFF827 UNDEFINED
+EF80280F vmlal.s8 q1, d0, d15
+EF8028A0 vmlal.s8 q1, d16, d16
+EF8F282F vmlal.s8 q1, d15, d31
+EF8F2827 [ne] vmlalne.s8 q1, d15, d23

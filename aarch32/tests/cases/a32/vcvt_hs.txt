@@ -1,0 +1,40 @@
+// VCVT_hs_A1 111100111|D=x|11|size=xx|opc1=10|Vd=xxxx|011|op=0|0|Q=0|M=x|0|Vm=xxxx
+// VcvtHsA1: VCVT{<c>}{<q>}.F16.F32  <Dd>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f6362c vcvt.f16.f32 d19, q14
+f3f6462a vcvt.f16.f32 d20, q13
+F3B60600 vcvt.f16.f32 d0, q0
+F3F2362F UNDEFINED
+F3FA3621 UNDEFINED
+F3FE360F UNDEFINED
+F3F6F628 vcvt.f16.f32 d31, q12
+F3F68624 vcvt.f16.f32 d24, q10
+F3F62622 vcvt.f16.f32 d18, q9
+F3F61600 vcvt.f16.f32 d17, q0
+F3B60620 vcvt.f16.f32 d0, q8
+F3B6F62C vcvt.f16.f32 d15, q14
+F3F6062C vcvt.f16.f32 d16, q14
+F3F6F62C vcvt.f16.f32 d31, q14
+F3F6362F UNDEFINED
+
+// VCVT_sh_A1 111100111|D=x|11|size=xx|opc1=10|Vd=xxxx|011|op=1|0|Q=0|M=x|0|Vm=xxxx
+// VcvtShA1: VCVT{<c>}{<q>}.F32.F16  <Qd>, <Dm>
+// read together by <Qd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b6670d vcvt.f32.f16 q3, d13
+f3f6c721 vcvt.f32.f16 q14, d17
+f3b66703 vcvt.f32.f16 q3, d3
+f3f6e704 vcvt.f32.f16 q15, d4
+f3f6a726 vcvt.f32.f16 q13, d22
+F3B2F70D UNDEFINED
+F3BA170D UNDEFINED
+F3BEF70D UNDEFINED
+F3B60700 vcvt.f32.f16 q0, d0
+F3B6870F vcvt.f32.f16 q4, d15
+F3B64708 vcvt.f32.f16 q2, d8
+F3B62702 vcvt.f32.f16 q1, d2
+F3F6070F vcvt.f32.f16 q8, d15
+F3F6F70D UNDEFINED
+F3B66720 vcvt.f32.f16 q3, d16
+F3B6672F vcvt.f32.f16 q3, d31

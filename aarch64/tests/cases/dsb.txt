@@ -1,0 +1,30 @@
+// DSB_BO_barriers 110|101|01000000110011|CRm=xxxx|1|opc=00|Rt=11111
+// DsbBoBarriers: DSB  (<option>|#<imm>)
+// PssbbDsbBoBarriers: PSSBB
+// SsbbDsbBoBarriers: SSBB
+// form chosen on: CRm
+D503349F pssbb
+D503309F ssbb
+D503369F dsb nshst
+D5033F9F dsb sy
+D5033D9F dsb ld
+D503339F dsb osh
+D5033E9F dsb st
+D503359F dsb nshld
+D503399F dsb ishld
+D503389F dsb #0x8
+D5033A9F dsb ishst
+D5033C9F dsb #0xc
+D503379F dsb nsh
+D503319F dsb oshld
+D503329F dsb oshst
+D5033B9F dsb ish
+D503349F pssbb
+D503309F ssbb
+
+// DSB_BOn_barriers 110|101|01000000110011|imm2=xx|10|op2=001|Rt=11111
+// DsbBonBarriers: DSB  <option>nXS
+D5033E3F dsb synxs
+D503363F dsb nshnxs
+D503323F dsb oshnxs
+D5033A3F dsb ishnxs

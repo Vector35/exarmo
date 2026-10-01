@@ -1,0 +1,44 @@
+// VEXT_A1_D 111100101|D=x|11|Vn=xxxx|Vd=xxxx|imm4=xxxx|N=x|Q=0|M=x|0|Vm=xxxx
+// VextA1D: VEXT{<c>}{<q>}.8  {<Dd>, }<Dn>, <Dm>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f2bd5622 vext.8 d5, d13, d18, #6
+f2b547a1 vext.8 d4, d21, d17, #7
+f2b1b425 vext.8 d11, d1, d21, #4
+f2bb852f vext.8 d8, d11, d31, #5
+f2fe66a4 vext.8 d22, d30, d20, #6
+f2b6f600 vext.8 d15, d6, d0, #6
+f2bec104 vext.8 d12, d14, d4, #1
+f2b89407 vext.8 d9, d8, d7, #4
+F2B00028 vext.8 d0, d0, d24, #0x0
+F2BF220F vext.8 d2, d15, d15, #0x2
+F2B41620 vext.8 d1, d4, d16, #0x6
+F2B20622 vext.8 d0, d2, d18, #0x6
+F2BD5F22 UNDEFINED
+F2BD5822 UNDEFINED
+F2F00622 vext.8 d16, d0, d18, #0x6
+F2F0F6A2 vext.8 d31, d16, d18, #0x6
+F2BF5622 vext.8 d5, d15, d18, #0x6
+F2BF56A2 vext.8 d5, d31, d18, #0x6
+
+// VEXT_A1_Q 111100101|D=x|11|Vn=xxxx|Vd=xxxx|imm4=xxxx|N=x|Q=1|M=x|0|Vm=xxxx
+// VextA1Q: VEXT{<c>}{<q>}.8  {<Qd>, }<Qn>, <Qm>, #<imm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f2f4e642 vext.8 q15, q2, q1, #6
+f2f6a242 vext.8 q13, q3, q1, #2
+f2b0a0e8 vext.8 q5, q8, q12, #0
+f2f20744 vext.8 q8, q1, q2, #7
+f2faade0 vext.8 q13, q13, q8, #13
+f2b06964 vext.8 q3, q0, q10, #9
+f2f82fc0 vext.8 q9, q12, q0, #15
+f2f440c4 vext.8 q10, q10, q2, #0
+F2FFF64F UNDEFINED
+F2F11641 UNDEFINED
+F2F48842 vext.8 q12, q2, q1, #0x8
+F2B40442 vext.8 q0, q2, q1, #0x4
+F2F4E142 vext.8 q15, q2, q1, #0x1
+F2BFF64F UNDEFINED
+F2FFF6EF UNDEFINED

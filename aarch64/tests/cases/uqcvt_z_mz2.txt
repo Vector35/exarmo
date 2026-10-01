@@ -1,0 +1,9 @@
+// uqcvt_z_mz2_ 1|10|0000|1|0|op=0|1|000|11|111000|Zn=xxxx|U=1|Zd=xxxxx
+// UqcvtZMz2: UQCVT  <Zd>.H, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+C123E026 uqcvt z6.h, {z0.s-z1.s}
+C123E02D uqcvt z13.h, {z0.s-z1.s}
+C123E034 uqcvt z20.h, {z0.s-z1.s}
+C123E3E0 uqcvt z0.h, {z30.s-z31.s}
+C123E03F uqcvt z31.h, {z0.s-z1.s}
+C123E020 uqcvt z0.h, {z0.s-z1.s}

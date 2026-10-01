@@ -1,0 +1,49 @@
+// sqinch_r_rs_sx 000|0010|0|size=01|1|sf=0|imm4=xxxx|11|11|D=0|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqinchRRsSx: SQINCH  <Xdn>, <Wdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0468F0FC sqinch x28, w28, vl7, mul #0x9
+046DF1FF sqinch xzr, wzr, #0xf, mul #0xe
+046EF3F0 sqinch x16, w16, all, mul #0xf
+046EF3B2 sqinch x18, w18, mul4, mul #0xf
+0468F0DA sqinch x26, w26, vl6, mul #0x9
+046DF1BB sqinch x27, w27, vl256, mul #0xe
+0461F21E sqinch lr, w30, #0x10, mul #0x2
+046FF3CE sqinch x14, w14, mul3, mul #0x10
+046FF0C8 sqinch x8, w8, vl6, mul #0x10
+0469F16F sqinch x15, w15, vl64, mul #0xa
+046EF37C sqinch x28, w28, #0x1b, mul #0xf
+0462F18F sqinch x15, w15, vl128, mul #0x3
+0468F2BD sqinch fp, w29, #0x15, mul #0x9
+046CF056 sqinch x22, w22, vl2, mul #0xd
+046DF130 sqinch x16, w16, vl16, mul #0xe
+046BF1C7 sqinch x7, w7, #0xe, mul #0xc
+0460F000 sqinch x0, w0, pow2
+0464F11C sqinch x28, w28, vl8, mul #0x5
+0468F09C sqinch x28, w28, vl4, mul #0x9
+0468F03C sqinch x28, w28, vl1, mul #0x9
+
+// sqinch_r_rs_x 000|0010|0|size=01|1|sf=1|imm4=xxxx|11|11|D=0|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqinchRRsX: SQINCH  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+047CF1F0 sqinch x16, #0xf, mul #0xd
+0477F3FC sqinch x28, all, mul #0x8
+0472F362 sqinch x2, #0x1b, mul #0x3
+047CF1AB sqinch x11, vl256, mul #0xd
+047DF06B sqinch x11, vl3, mul #0xe
+047CF3FA sqinch x26, all, mul #0xd
+0475F009 sqinch x9, pow2, mul #0x6
+0478F2E1 sqinch x1, #0x17, mul #0x9
+047EF1A7 sqinch x7, vl256, mul #0xf
+047BF126 sqinch x6, vl16, mul #0xc
+0472F152 sqinch x18, vl32, mul #0x3
+0473F2AC sqinch x12, #0x15, mul #0x4
+047AF209 sqinch x9, #0x10, mul #0xb
+0471F152 sqinch x18, vl32, mul #0x2
+047DF12F sqinch x15, vl16, mul #0xe
+0471F07E sqinch lr, vl3, mul #0x2
+0470F1E0 sqinch x0, #0xf
+047FF1FF sqinch xzr, #0xf, mul #0x10
+0474F110 sqinch x16, vl8, mul #0x5
+047CF090 sqinch x16, vl4, mul #0xd
+047CF050 sqinch x16, vl2, mul #0xd
+047CF030 sqinch x16, vl1, mul #0xd

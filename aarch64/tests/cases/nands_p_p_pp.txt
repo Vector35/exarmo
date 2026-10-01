@@ -1,0 +1,21 @@
+// nands_p_p_pp_z 001|0010|1|op=1|S=1|00|Pm=xxxx|01|Pg=xxxx|o2=1|Pn=xxxx|o3=1|Pd=xxxx
+// NandsPPPpZ: NANDS  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// register fields: Pm, Pg, Pn, Pd
+25CC63B9 nands p9.b, p8/z, p13.b, p12.b
+25CF4E5C nands p12.b, p3/z, p2.b, p15.b
+25CF6359 nands p9.b, p8/z, p10.b, p15.b
+25CC5313 nands p3.b, p4/z, p8.b, p12.b
+25C257D4 nands p4.b, p5/z, p14.b, p2.b
+25C3577D nands p13.b, p5/z, p11.b, p3.b
+25CB4677 nands p7.b, p1/z, p3.b, p11.b
+25C24A98 nands p8.b, p2/z, p4.b, p2.b
+25C87EFD nands p13.b, p15/z, p7.b, p8.b
+25C95A7C nands p12.b, p6/z, p3.b, p9.b
+25CA52F2 nands p2.b, p4/z, p7.b, p10.b
+25CD7258 nands p8.b, p12/z, p2.b, p13.b
+25C85F11 nands p1.b, p7/z, p8.b, p8.b
+25CF6F18 nands p8.b, p11/z, p8.b, p15.b
+25C66F78 nands p8.b, p11/z, p11.b, p6.b
+25CD6BBC nands p12.b, p10/z, p13.b, p13.b
+25C04210 nands p0.b, p0/z, p0.b, p0.b
+25CC63FF nands p15.b, p8/z, p15.b, p12.b

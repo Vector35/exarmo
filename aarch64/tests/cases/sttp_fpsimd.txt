@@ -1,0 +1,53 @@
+// STTP_Q_ldstpair_off opc=11|10|1|VR=1|0|10|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// SttpQLdstpairOff: STTP  <Qt1>, <Qt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+ED000001 sttp q1, q0, [x0]
+ED000008 sttp q8, q0, [x0]
+ED00000F sttp q15, q0, [x0]
+ED3FFFE0 sttp q0, q31, [sp, #-0x10]
+ED00001F sttp q31, q0, [x0]
+ED000000 sttp q0, q0, [x0]
+ED200001 sttp q1, q0, [x0, #-0x400]
+ED100001 sttp q1, q0, [x0, #0x200]
+ED080001 sttp q1, q0, [x0, #0x100]
+ED040001 sttp q1, q0, [x0, #0x80]
+ED020001 sttp q1, q0, [x0, #0x40]
+ED010001 sttp q1, q0, [x0, #0x20]
+ED008001 sttp q1, q0, [x0, #0x10]
+ED000443 sttp q3, q1, [x2]
+
+// STTP_Q_ldstpair_post opc=11|10|1|VR=1|0|01|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// SttpQLdstpairPost: STTP  <Qt1>, <Qt2>, [<Xn|SP>], #<imm>
+// register fields: Rt2, Rn, Rt
+EC800005 sttp q5, q0, [x0], #0x0
+EC80000C sttp q12, q0, [x0], #0x0
+EC800013 sttp q19, q0, [x0], #0x0
+ECBFFFE0 sttp q0, q31, [sp], #-0x10
+EC80001F sttp q31, q0, [x0], #0x0
+EC800000 sttp q0, q0, [x0], #0x0
+ECA00005 sttp q5, q0, [x0], #-0x400
+EC900005 sttp q5, q0, [x0], #0x200
+EC880005 sttp q5, q0, [x0], #0x100
+EC840005 sttp q5, q0, [x0], #0x80
+EC820005 sttp q5, q0, [x0], #0x40
+EC810005 sttp q5, q0, [x0], #0x20
+EC808005 sttp q5, q0, [x0], #0x10
+EC800443 sttp q3, q1, [x2], #0x0
+
+// STTP_Q_ldstpair_pre opc=11|10|1|VR=1|0|11|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// SttpQLdstpairPre: STTP  <Qt1>, <Qt2>, [<Xn|SP>, #<imm>]!
+// register fields: Rt2, Rn, Rt
+ED800004 sttp q4, q0, [x0, #0x0]!
+ED80000B sttp q11, q0, [x0, #0x0]!
+ED800012 sttp q18, q0, [x0, #0x0]!
+EDBFFFE0 sttp q0, q31, [sp, #-0x10]!
+ED80001F sttp q31, q0, [x0, #0x0]!
+ED800000 sttp q0, q0, [x0, #0x0]!
+EDA00004 sttp q4, q0, [x0, #-0x400]!
+ED900004 sttp q4, q0, [x0, #0x200]!
+ED880004 sttp q4, q0, [x0, #0x100]!
+ED840004 sttp q4, q0, [x0, #0x80]!
+ED820004 sttp q4, q0, [x0, #0x40]!
+ED810004 sttp q4, q0, [x0, #0x20]!
+ED808004 sttp q4, q0, [x0, #0x10]!
+ED800443 sttp q3, q1, [x2, #0x0]!

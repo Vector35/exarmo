@@ -1,0 +1,14 @@
+// srhadd_z_p_zz_ 010|0010|0|size=xx|0|10|R=1|S=0|U=0|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SrhaddZPZz: SRHADD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+445494E7 srhadd z7.h, p5/m, z7.h, z7.h
+44149FFD srhadd z29.b, p7/m, z29.b, z31.b
+44949774 srhadd z20.s, p5/m, z20.s, z27.s
+44949B2B srhadd z11.s, p6/m, z11.s, z25.s
+44148CF7 srhadd z23.b, p3/m, z23.b, z7.b
+445494E4 srhadd z4.h, p5/m, z4.h, z7.h
+44549ACE srhadd z14.h, p6/m, z14.h, z22.h
+441485CC srhadd z12.b, p1/m, z12.b, z14.b
+44D48000 srhadd z0.d, p0/m, z0.d, z0.d
+445488FF srhadd z31.h, p2/m, z31.h, z7.h
+445490E7 srhadd z7.h, p4/m, z7.h, z7.h

@@ -1,0 +1,17 @@
+// SEV_T1 1011|1111|hint=0100|0000
+// SevT1: SEV{<c>}{<q>}
+// IT state read: condition
+bf40 sev
+BF40 [ne] sevne
+
+// SEV_T2 111|10|0|1110|10|(1)(1)(1)(1)|1|0(0)0|(0)|000|hint=0000|option=0100
+// SevT2: SEV{<c>}.W
+// IT state read: condition
+F3A08004 sev (unpredictable)
+F3AFA804 sev (unpredictable)
+F3A88004 sev (unpredictable)
+F3A48004 sev (unpredictable)
+F3A28004 sev (unpredictable)
+F3A18004 sev (unpredictable)
+F3A08004 [ne] sevne (unpredictable)
+F3AF8004 sev

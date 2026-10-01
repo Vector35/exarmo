@@ -1,0 +1,22 @@
+// sqdmulh_mz_zzw_2x2 1|10|0000|1|size=xx|1|Zm=xxxx|0101101|00000|Zdn=xxxx|op=0
+// SqdmulhMzZzw2x2: SQDMULH  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Zm, Zdn
+C120B40A sqdmulh {z10.b-z11.b}, {z10.b-z11.b}, {z0.b-z1.b}
+C120B418 sqdmulh {z24.b-z25.b}, {z24.b-z25.b}, {z0.b-z1.b}
+C122B406 sqdmulh {z6.b-z7.b}, {z6.b-z7.b}, {z2.b-z3.b}
+C17EB400 sqdmulh {z0.h-z1.h}, {z0.h-z1.h}, {z30.h-z31.h}
+C1A0B41E sqdmulh {z30.s-z31.s}, {z30.s-z31.s}, {z0.s-z1.s}
+C1E0B40A sqdmulh {z10.d-z11.d}, {z10.d-z11.d}, {z0.d-z1.d}
+C120B400 sqdmulh {z0.b-z1.b}, {z0.b-z1.b}, {z0.b-z1.b}
+
+// sqdmulh_mz_zzw_4x4 1|10|0000|1|size=xx|1|Zm=xxx|00101111|00000|Zdn=xxx|0|op=0
+// SqdmulhMzZzw4x4: SQDMULH  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Zm, Zdn
+C120BC14 sqdmulh {z20.b-z23.b}, {z20.b-z23.b}, {z0.b-z3.b}
+C124BC0C sqdmulh {z12.b-z15.b}, {z12.b-z15.b}, {z4.b-z7.b}
+C128BC04 sqdmulh {z4.b-z7.b}, {z4.b-z7.b}, {z8.b-z11.b}
+C16CBC00 sqdmulh {z0.h-z3.h}, {z0.h-z3.h}, {z12.h-z15.h}
+C1B0BC08 sqdmulh {z8.s-z11.s}, {z8.s-z11.s}, {z16.s-z19.s}
+C1F4BC10 sqdmulh {z16.d-z19.d}, {z16.d-z19.d}, {z20.d-z23.d}
+C138BC18 sqdmulh {z24.b-z27.b}, {z24.b-z27.b}, {z24.b-z27.b}
+C13CBC1C sqdmulh {z28.b-z31.b}, {z28.b-z31.b}, {z28.b-z31.b}

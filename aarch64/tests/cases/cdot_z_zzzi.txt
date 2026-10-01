@@ -1,0 +1,28 @@
+// cdot_z_zzzi_d 010|0010|0|size=11|1|i1=x|Zm=xxxx|0100|rot=xx|Zn=xxxxx|Zda=xxxxx
+// CdotZZzziD: CDOT  <Zda>.D, <Zn>.H, <Zm>.H[<imm>], <const>
+// register fields: Zm, Zn, Zda
+44EB42C7 cdot z7.d, z22.h, z11.h[0], #0x0
+44F84B3C cdot z28.d, z25.h, z8.h[1], #0xb4
+44FE4ED9 cdot z25.d, z22.h, z14.h[1], #0x10e
+44E44273 cdot z19.d, z19.h, z4.h[0], #0x0
+44F74048 cdot z8.d, z2.h, z7.h[1], #0x0
+44F7430B cdot z11.d, z24.h, z7.h[1], #0x0
+44E347F8 cdot z24.d, z31.h, z3.h[0], #0x5a
+44E14991 cdot z17.d, z12.h, z1.h[0], #0xb4
+44E04000 cdot z0.d, z0.h, z0.h[0], #0x0
+44EF42DF cdot z31.d, z22.h, z15.h[0], #0x0
+
+// cdot_z_zzzi_s 010|0010|0|size=10|1|i2=xx|Zm=xxx|0100|rot=xx|Zn=xxxxx|Zda=xxxxx
+// CdotZZzziS: CDOT  <Zda>.S, <Zn>.B, <Zm>.B[<imm>], <const>
+// register fields: Zm, Zn, Zda
+44A7468B cdot z11.s, z20.b, z7.b[0], #0x5a
+44AD451C cdot z28.s, z8.b, z5.b[1], #0x5a
+44B54E12 cdot z18.s, z16.b, z5.b[2], #0x10e
+44AA4EE2 cdot z2.s, z23.b, z2.b[1], #0x10e
+44AD4C47 cdot z7.s, z2.b, z5.b[1], #0x10e
+44BB4CCC cdot z12.s, z6.b, z3.b[3], #0x10e
+44AA473C cdot z28.s, z25.b, z2.b[1], #0x5a
+44A9411C cdot z28.s, z8.b, z1.b[1], #0x0
+44A04800 cdot z0.s, z0.b, z0.b[0], #0xb4
+44A447FF cdot z31.s, z31.b, z4.b[0], #0x5a
+44A6468B cdot z11.s, z20.b, z6.b[0], #0x5a

@@ -1,0 +1,19 @@
+// VJCVT_A1 cond=xxxx|11|10|1|D=x|11|o1=1|opc2=001|Vd=xxxx|10|size=11|o3=1|1|M=x|0|Vm=xxxx
+// VjcvtA1: VJCVT{<q>}.S32.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+9ef90bc9 vjcvt.s32.f64 s1, d9 (unpredictable)
+bef93bea vjcvt.s32.f64 s7, d26 (unpredictable)
+eeb94bc1 vjcvt.s32.f64 s8, d1
+8ef9abc6 vjcvt.s32.f64 s21, d6 (unpredictable)
+cef9abe0 vjcvt.s32.f64 s21, d16 (unpredictable)
+eeb92bcb vjcvt.s32.f64 s4, d11
+5eb96bc4 vjcvt.s32.f64 s12, d4 (unpredictable)
+1eb92bcf vjcvt.s32.f64 s4, d15 (unpredictable)
+0EF9FBC8 vjcvt.s32.f64 s31, d8 (unpredictable)
+FEF90BC9 UNALLOCATED
+4EF98BC2 vjcvt.s32.f64 s17, d2 (unpredictable)
+2EF91BC0 vjcvt.s32.f64 s3, d0 (unpredictable)
+9EB90BEF vjcvt.s32.f64 s0, d31 (unpredictable)
+9EB9FBC9 vjcvt.s32.f64 s30, d9 (unpredictable)
+9EF9FBC9 vjcvt.s32.f64 s31, d9 (unpredictable)

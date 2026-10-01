@@ -1,0 +1,30 @@
+// revd_z_p_z_m 000|0010|1|size=00|1|0|111|0|10|Z=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// RevdZPZM: REVD  <Zd>.Q, <Pg>/M, <Zn>.Q
+// register fields: Pg, Zn, Zd
+052E93FD revd z29.q, p4/m, z31.q
+052E8F92 revd z18.q, p3/m, z28.q
+052E8EB6 revd z22.q, p3/m, z21.q
+052E8C86 revd z6.q, p3/m, z4.q
+052E940B revd z11.q, p5/m, z0.q
+052E9C0D revd z13.q, p7/m, z0.q
+052E9A85 revd z5.q, p6/m, z20.q
+052E9A09 revd z9.q, p6/m, z16.q
+052E83E0 revd z0.q, p0/m, z31.q
+052E87FF revd z31.q, p1/m, z31.q
+052E8BFD revd z29.q, p2/m, z31.q
+052E909D revd z29.q, p4/m, z4.q
+
+// revd_z_p_z_z 000|0010|1|size=00|1|0|111|0|10|Z=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// RevdZPZZ: REVD  <Zd>.Q, <Pg>/Z, <Zn>.Q
+// register fields: Pg, Zn, Zd
+052EA005 revd z5.q, p0/z, z0.q
+052EA00C revd z12.q, p0/z, z0.q
+052EA013 revd z19.q, p0/z, z0.q
+052EA7E0 revd z0.q, p1/z, z31.q
+052EA81F revd z31.q, p2/z, z0.q
+052EAC05 revd z5.q, p3/z, z0.q
+052EB005 revd z5.q, p4/z, z0.q
+052EB405 revd z5.q, p5/z, z0.q
+052EB805 revd z5.q, p6/z, z0.q
+052EBC05 revd z5.q, p7/z, z0.q
+052EA000 revd z0.q, p0/z, z0.q

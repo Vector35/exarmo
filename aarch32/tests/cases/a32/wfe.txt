@@ -1,0 +1,10 @@
+// WFE_A1 cond=xxxx|00|1|10|R=0|10|imm4=0000|(1)(1)(1)(1)|imm12=(0)(0)(0)(0)00000010
+// WfeA1: WFE{<c>}{<q>}
+// Binary Ninja's tests
+8320f002 wfehi
+e320f002 wfe
+03200F02 wfeeq (unpredictable)
+43208802 wfemi (unpredictable)
+23204402 wfecs (unpredictable)
+13202202 wfene (unpredictable)
+83201102 wfehi (unpredictable)

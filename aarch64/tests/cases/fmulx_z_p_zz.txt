@@ -1,0 +1,21 @@
+// fmulx_z_p_zz_ 011|0010|1|size=xx|0|0|opc=1010|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FmulxZPZz: FMULX  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+654A9618 fmulx z24.h, p5/m, z24.h, z16.h
+65CA87D6 fmulx z22.d, p1/m, z22.d, z30.d
+65CA949B fmulx z27.d, p5/m, z27.d, z4.d
+658A90CF fmulx z15.s, p4/m, z15.s, z6.s
+658A9D65 fmulx z5.s, p7/m, z5.s, z11.s
+654A889E fmulx z30.h, p2/m, z30.h, z4.h
+658A9CA0 fmulx z0.s, p7/m, z0.s, z5.s
+654A8D99 fmulx z25.h, p3/m, z25.h, z12.h
+65CA881B fmulx z27.d, p2/m, z27.d, z0.d
+658A8BB3 fmulx z19.s, p2/m, z19.s, z29.s
+654A8106 fmulx z6.h, p0/m, z6.h, z8.h
+654A943E fmulx z30.h, p5/m, z30.h, z1.h
+654A9DFC fmulx z28.h, p7/m, z28.h, z15.h
+654A9BA3 fmulx z3.h, p6/m, z3.h, z29.h
+65CA8E17 fmulx z23.d, p3/m, z23.d, z16.d
+65CA8421 fmulx z1.d, p1/m, z1.d, z1.d
+654A97FF fmulx z31.h, p5/m, z31.h, z31.h
+650A9618 UNDEFINED

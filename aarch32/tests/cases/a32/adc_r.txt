@@ -1,0 +1,102 @@
+// ADC_r_A1 cond=xxxx|0000|opc=101|S=0|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// AdcRA1: ADC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+00a69aac adceq r9, r6, r12, lsr #21
+a0a0db65 adcge sp, r0, r5, ror #22
+10abc60d adcne r12, r11, sp, lsl #12
+30a4638e adclo r6, r4, lr, lsl #7
+70a8c422 adcvc r12, r8, r2, lsr #8
+30ac69e2 adclo r6, r12, r2, ror #19
+20a895a8 adchs r9, r8, r8, lsr #11
+d0a03888 adcle r3, r0, r8, lsl #17
+// Binary Ninja's tests
+e0a18860 adc r8, r1, r0, ror #16
+e0a21003 adc r1, r2, r3
+e0a3684d adc r6, r3, sp, asr #16
+e0a44025 adc r4, r4, r5, lsr #32
+e0a44045 adc r4, r4, r5, asr #32
+e0a44085 adc r4, r4, r5, lsl #1
+e0a440a5 adc r4, r4, r5, lsr #1
+e0a440c5 adc r4, r4, r5, asr #1
+e0a440e5 adc r4, r4, r5, ror #1
+e0a44f85 adc r4, r4, r5, lsl #31
+e0a44fa5 adc r4, r4, r5, lsr #31
+e0a44fc5 adc r4, r4, r5, asr #31
+e0a44fe5 adc r4, r4, r5, ror #31
+e0a4504b adc r5, r4, r11, asr #32
+e0a54006 adc r4, r5, r6
+e0a54026 adc r4, r5, r6, lsr #32
+e0a54046 adc r4, r5, r6, asr #32
+e0a54086 adc r4, r5, r6, lsl #1
+e0a540a6 adc r4, r5, r6, lsr #1
+e0a540c6 adc r4, r5, r6, asr #1
+e0a540e6 adc r4, r5, r6, ror #1
+e0a5480e adc r4, r5, lr, lsl #16
+e0a54f86 adc r4, r5, r6, lsl #31
+e0a54fa6 adc r4, r5, r6, lsr #31
+e0a54fc6 adc r4, r5, r6, asr #31
+e0a54fe6 adc r4, r5, r6, ror #31
+e0a55006 adc r5, r5, r6
+e0a6300a adc r3, r6, r10
+e0a7282f adc r2, r7, pc, lsr #16
+e0a81029 adc r1, r8, r9, lsr #32
+e0aed00f adc sp, lr, pc
+F0A69AAC UNALLOCATED
+80AF022C adchi r0, pc, r12, lsr #0x4
+40A6F12C adcmi pc, r6, r12, lsr #0x2
+00A69AA9 adceq r9, r6, r9, lsr #0x15
+
+// ADC_r_A1_RRX cond=xxxx|0000|opc=101|S=0|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// AdcRA1Rrx: ADC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+b0ade064 adclt lr, sp, r4, rrx
+40a72062 adcmi r2, r7, r2, rrx
+10af4068 adcne r4, pc, r8, rrx
+90ae0061 adcls r0, lr, r1, rrx
+90a7806e adcls r8, r7, lr, rrx
+60a9e06a adcvs lr, r9, r10, rrx
+c0a1b06e adcgt r11, r1, lr, rrx
+d0a3706c adcle r7, r3, r12, rrx
+// Binary Ninja's tests
+e0a2706c adc r7, r2, r12, rrx
+e0a44065 adc r4, r4, r5, rrx
+e0a54066 adc r4, r5, r6, rrx
+00A0F060 adceq pc, r0, r0, rrx
+F0ADE064 UNALLOCATED
+80ADE06F adchi lr, sp, pc, rrx
+20ADE06D adccs lr, sp, sp, rrx
+
+// ADCS_r_A1 cond=xxxx|0000|opc=101|S=1|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// AdcsRA1: ADCS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+00bf3ecc adcseq r3, pc, r12, asr #29
+40b9af28 adcsmi r10, r9, r8, lsr #30
+20b067e3 adcshs r6, r0, r3, ror #15
+b0b8c340 adcslt r12, r8, r0, asr #6
+a0b6a5cb adcsge r10, r6, r11, asr #11
+80b781e1 adcshi r8, r7, r1, ror #3
+70b04109 adcsvc r4, r0, r9, lsl #2
+90bf59cb adcsls r5, pc, r11, asr #19
+F0BF3ECC UNALLOCATED
+10BF004F adcsne r0, pc, pc, asr #0x20
+00BFFFCF adcseq pc, pc, pc, asr #0x1f
+00BFF84C adcseq pc, pc, r12, asr #0x10
+00BF3443 adcseq r3, pc, r3, asr #0x8
+00BF324C adcseq r3, pc, r12, asr #0x4
+00BF30CC adcseq r3, pc, r12, asr #0x1
+
+// ADCS_r_A1_RRX cond=xxxx|0000|opc=101|S=1|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// AdcsRA1Rrx: ADCS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+10b0b06d adcsne r11, r0, sp, rrx
+c0b29060 adcsgt r9, r2, r0, rrx
+80bec067 adcshi r12, lr, r7, rrx
+d0bab06e adcsle r11, r10, lr, rrx
+b0b1f061 adcslt pc, r1, r1, rrx
+e0b25064 adcs r5, r2, r4, rrx
+c0b0e061 adcsgt lr, r0, r1, rrx
+b0b7a068 adcslt r10, r7, r8, rrx
+00BF006F adcseq r0, pc, pc, rrx
+F0B0B06D UNALLOCATED
+40B0006D adcsmi r0, r0, sp, rrx
+20B0B06B adcscs r11, r0, r11, rrx

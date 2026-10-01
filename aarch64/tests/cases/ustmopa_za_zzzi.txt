@@ -1,0 +1,14 @@
+// ustmopa_za_zzzi_b2x1 1|00|0000|u0=1|01|u1=0|Zm=xxxxx|1|0|0|K=x|Zk=xx|Zn=xxxx|i2=xx|0|0|ZAda=xx
+// UstmopaZaZzziB2x1: USTMOPA  <ZAda>.S, { <Zn1>.B-<Zn2>.B }, <Zm>.B, <Zk>[<index>]
+// read together by <Zk>: K, Zk
+// register fields: Zm, Zn, ZAda
+81408001 ustmopa za1.s, {z0.b-z1.b}, z0.b, z20[0]
+81408032 ustmopa za2.s, {z0.b-z1.b}, z0.b, z20[3]
+81408040 ustmopa za0.s, {z2.b-z3.b}, z0.b, z20[0]
+815F97D3 ustmopa za3.s, {z30.b-z31.b}, z31.b, z29[1]
+81408821 ustmopa za1.s, {z0.b-z1.b}, z0.b, z22[2]
+81408C01 ustmopa za1.s, {z0.b-z1.b}, z0.b, z23[0]
+81408400 ustmopa za0.s, {z0.b-z1.b}, z0.b, z21[0]
+81409001 ustmopa za1.s, {z0.b-z1.b}, z0.b, z28[0]
+81409801 ustmopa za1.s, {z0.b-z1.b}, z0.b, z30[0]
+81409C01 ustmopa za1.s, {z0.b-z1.b}, z0.b, z31[0]

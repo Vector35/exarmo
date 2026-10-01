@@ -1,0 +1,16 @@
+// LDREX_T1 111|0100|op0=0010|L=1|Rn=xxxx|Rt=xxxx|Rd=(1)(1)(1)(1)|imm8=xxxxxxxx
+// LdrexT1: LDREX{<c>}{<q>}  <Rt>, [<Rn> {, #<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+E8500000 ldrex r0, [r0] (unpredictable)
+E85FFFFF ldrex pc, [pc, #0x3fc] (unpredictable)
+E8500880 ldrex r0, [r0, #0x200] (unpredictable)
+E8500440 ldrex r0, [r0, #0x100] (unpredictable)
+E8500220 ldrex r0, [r0, #0x80] (unpredictable)
+E8500110 ldrex r0, [r0, #0x40] (unpredictable)
+E8500008 ldrex r0, [r0, #0x20] (unpredictable)
+E8500004 ldrex r0, [r0, #0x10] (unpredictable)
+E8500002 ldrex r0, [r0, #0x8] (unpredictable)
+E8500001 ldrex r0, [r0, #0x4] (unpredictable)
+E8500000 [ne] ldrexne r0, [r0] (unpredictable)
+E8512F00 ldrex r2, [r1]

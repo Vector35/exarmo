@@ -1,0 +1,13 @@
+// DSB_T1 111|10|0|1110|11|(1)(1)(1)(1)|1|0(0)0|(1)|(1)(1)(1)|opc=0100|option=xxxx
+// DsbT1: DSB{<c>}{<q>}  {<option>}
+// IT state read: condition
+F3B0804F dsb sy (unpredictable)
+F3BFA948 dsb #0x8 (unpredictable)
+F3B8AA42 dsb oshst (unpredictable)
+F3B4AB41 dsb oshld (unpredictable)
+F3B2AC4F dsb sy (unpredictable)
+F3B1AD4F dsb sy (unpredictable)
+F3BFAE4F dsb sy (unpredictable)
+F3BFAF4F dsb sy (unpredictable)
+F3B0804F [ne] dsbne sy (unpredictable)
+F3BF8F4F dsb sy

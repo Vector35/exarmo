@@ -1,0 +1,113 @@
+// SUBS_32S_addsub_ext sf=0|op=1|S=1|01011|opt=00|1|Rm=xxxxx|option=xxx|imm3=xxx|Rn=xxxxx|Rd=xxxxx
+// Subs32sAddsubExt: SUBS  <Wd>, <Wn|WSP>, <Wm>{, <extend> {#<amount>}}
+// CmpSubs32sAddsubExt: CMP  <Wn|WSP>, <Wm>{, <extend> {#<amount>}}
+// register fields: Rm, Rn, Rd
+// form chosen on: Rd
+6B2143FF cmp wsp, w1
+6B214BFF cmp wsp, w1, lsl #0x2
+6B2140BF cmp w5, w1, uxtw
+6B2AE13F cmp w9, w10, sxtx
+6B37433F cmp w25, w23, uxtw
+6B36099F cmp w12, w22, uxtb #0x2
+6B306EFF cmp w23, w16, uxtx #0x3
+6B3928BF cmp w5, w25, uxth #0x2
+6B24C97F cmp w11, w4, sxtw #0x2
+6B386D3F cmp w9, w24, uxtx #0x3
+6B3EEE5F cmp w18, w30, sxtx #0x3
+6B25247F cmp w3, w5, uxth #0x1
+6B3FCD3F cmp w9, wzr, sxtw #0x3
+6B31277F cmp w27, w17, uxth #0x1
+6B28F35F cmp w26, w8, sxtx #0x4
+6B212E5F cmp w18, w1, uxth #0x3
+6B31861F cmp w16, w17, sxtb #0x1
+6B2EF39F cmp w28, w14, sxtx #0x4
+6B20089F cmp w4, w0, uxtb #0x2
+6B2143E3 subs w3, wsp, w1
+6B214BE3 subs w3, wsp, w1, lsl #0x2
+6B2140A3 subs w3, w5, w1, uxtw
+6B2D4738 subs w24, w25, w13, uxtw #0x1
+6B2A688B subs w11, w4, w10, uxtx #0x2
+6B334D76 subs w22, w11, w19, uxtw #0x3
+6B3269BD subs w29, w13, w18, uxtx #0x2
+6B3771CD subs w13, w14, w23, uxtx #0x4
+6B3F2330 subs w16, w25, wzr, uxth
+6B320809 subs w9, w0, w18, uxtb #0x2
+6B3B28F7 subs w23, w7, w27, uxth #0x2
+6B246AE4 subs w4, w23, w4, uxtx #0x2
+6B25B256 subs w22, w18, w5, sxth #0x4
+6B200E77 subs w23, w19, w0, uxtb #0x3
+6B3BC1A2 subs w2, w13, w27, sxtw
+6B2A23FD subs w29, wsp, w10, uxth
+6B22ECBC subs w28, w5, w2, sxtx #0x3
+6B2A2FD0 subs w16, w30, w10, uxth #0x3
+6B33B0F8 subs w24, w7, w19, sxth #0x4
+6B2143E0 subs w0, wsp, w1
+6B2157FF UNDEFINED
+6B215BFF UNDEFINED
+6B215FFF UNDEFINED
+6B21403F cmp w1, w1, uxtw
+6B20088F subs w15, w4, w0, uxtb #0x2
+
+// SUBS_64S_addsub_ext sf=1|op=1|S=1|01011|opt=00|1|Rm=xxxxx|option=xxx|imm3=xxx|Rn=xxxxx|Rd=xxxxx
+// Subs64sAddsubExt: SUBS  <Xd>, <Xn|SP>, <m>{, <extend> {#<amount>}}
+// CmpSubs64sAddsubExt: CMP  <Xn|SP>, <m>{, <extend> {#<amount>}}
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rd
+// form chosen on: Rd
+EB2163FF cmp sp, x1
+EB216BFF cmp sp, x1, lsl #0x2
+EB2160BF cmp x5, x1, uxtx
+EB37CB1F cmp x24, w23, sxtw #0x2
+EB29729F cmp x20, x9, uxtx #0x4
+EB2A61FF cmp x15, x10, uxtx
+EB2AE6FF cmp x23, x10, sxtx #0x1
+EB2FE71F cmp x24, x15, sxtx #0x1
+EB3B4C9F cmp x4, w27, uxtw #0x3
+EB2350DF cmp x6, w3, uxtw #0x4
+EB21C03F cmp x1, w1, sxtw
+EB20C8BF cmp x5, w0, sxtw #0x2
+EB2DCE1F cmp x16, w13, sxtw #0x3
+EB24D23F cmp x17, w4, sxtw #0x4
+EB20727F cmp x19, x0, uxtx #0x4
+EB220ADF cmp x22, w2, uxtb #0x2
+EB2742DF cmp x22, w7, uxtw
+EB24AD9F cmp x12, w4, sxth #0x3
+EB24E53F cmp x9, x4, sxtx #0x1
+EB2163E3 subs x3, sp, x1
+EB216BE3 subs x3, sp, x1, lsl #0x2
+EB2160A3 subs x3, x5, x1, uxtx
+EB35E767 subs x7, x27, x21, sxtx #0x1
+EB36035B subs x27, x26, w22, uxtb
+EB2D8247 subs x7, x18, w13, sxtb
+EB300CF3 subs x19, x7, w16, uxtb #0x3
+EB2A6873 subs x19, x3, x10, uxtx #0x2
+EB270335 subs x21, x25, w7, uxtb
+EB2E0270 subs x16, x19, w14, uxtb
+EB3668DC subs x28, x6, x22, uxtx #0x2
+EB22B07E subs lr, x3, w2, sxth #0x4
+EB3C70A8 subs x8, x5, x28, uxtx #0x4
+EB337170 subs x16, x11, x19, uxtx #0x4
+EB34A162 subs x2, x11, w20, sxth
+EB36C8B3 subs x19, x5, w22, sxtw #0x2
+EB3527D1 subs x17, lr, w21, uxth #0x1
+EB3DD2EF subs x15, x23, w29, sxtw #0x4
+EB3A482F subs x15, x1, w26, uxtw #0x2
+EB3F6000 subs x0, x0, xzr, uxtx
+EB2177FF UNDEFINED
+EB217BFF UNDEFINED
+EB217FFF UNDEFINED
+EB2003FF cmp sp, w0, uxtb
+EB2023FF cmp sp, w0, uxth
+EB2043FF cmp sp, w0, uxtw
+EB2083FF cmp sp, w0, sxtb
+EB20A3FF cmp sp, w0, sxth
+EB20E3FF cmp sp, x0, sxtx
+EB3F03FF cmp sp, wzr, uxtb
+EB3F23FF cmp sp, wzr, uxth
+EB3F43FF cmp sp, wzr, uxtw
+EB3F83FF cmp sp, wzr, sxtb
+EB3FA3FF cmp sp, wzr, sxth
+EB3FC3FF cmp sp, wzr, sxtw
+EB3FE3FF cmp sp, xzr, sxtx
+EB2163E1 subs x1, sp, x1
+EB2003EF subs x15, sp, w0, uxtb

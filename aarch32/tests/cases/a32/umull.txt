@@ -1,0 +1,38 @@
+// UMULL_A1 cond=xxxx|0000|opc=100|S=0|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|1001|Rn=xxxx
+// UmullA1: UMULL{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+a0836e91 umullge r6, r3, r1, lr
+b082a292 umulllt r10, r2, r2, r2
+70898897 umullvc r8, r9, r7, r8
+908bad98 umullls r10, r11, r8, sp
+e08db89a umull r11, sp, r10, r8
+20842d98 umullhs r2, r4, r8, sp
+5086799c umullpl r7, r6, r12, r9
+4085cf9b umullmi r12, r5, r11, pc (unpredictable)
+// Binary Ninja's tests
+c0816692 umullgt r6, r1, r2, r6
+e0842896 umull r2, r4, r6, r8
+00800090 umulleq r0, r0, r0, r0 (unpredictable)
+F0836E91 UNALLOCATED
+808FFE9F umullhi pc, pc, pc, lr (unpredictable)
+10833E91 umullne r3, r3, r1, lr (unpredictable)
+A0836E96 umullge r6, r3, r6, lr
+
+// UMULLS_A1 cond=xxxx|0000|opc=100|S=1|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|1001|Rn=xxxx
+// UmullsA1: UMULLS{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+509a2f91 umullspl r2, r10, r1, pc (unpredictable)
+20940b9c umullshs r0, r4, r12, r11
+609f2593 umullsvs r2, pc, r3, r5 (unpredictable)
+c0921d90 umullsgt r1, r2, r0, sp
+109df49f umullsne pc, sp, pc, r4 (unpredictable)
+209ca899 umullshs r10, r12, r9, r8
+2098e691 umullshs lr, r8, r1, r6
+1093b39c umullsne r11, r3, r12, r3
+// Binary Ninja's tests
+00953291 umullseq r3, r5, r1, r2
+e0992392 umulls r2, r9, r2, r3
+F09A2F91 UNALLOCATED
+80902091 umullshi r2, r0, r1, r0
+409AAF9F umullsmi r10, r10, pc, pc (unpredictable)
+509A229A umullspl r2, r10, r10, r2

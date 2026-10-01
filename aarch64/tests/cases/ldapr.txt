@@ -1,0 +1,73 @@
+// LDAPR_32L_ldapstl_writeback size=10|0110011|L=1|000000000010|Rn=xxxxx|Rt=xxxxx
+// Ldapr32lLdapstlWriteback: LDAPR  <Wt>, [<Xn|SP>], #4
+// register fields: Rn, Rt
+99C00805 ldapr w5, [x0], #0x4
+99C0080C ldapr w12, [x0], #0x4
+99C00813 ldapr w19, [x0], #0x4
+99C00BE0 ldapr w0, [sp], #0x4
+99C0081F ldapr wzr, [x0], #0x4
+99C00800 ldapr w0, [x0], #0x4 (unpredictable)
+
+// LDAPR_32L_memop size=10|111|VR=0|00|A=1|R=0|1|Rs=(1)(1)(1)(1)(1)|o3=1|opc=100|00|Rn=xxxxx|Rt=xxxxx
+// Ldapr32lMemop: LDAPR  <Wt>, [<Xn|SP> {, #0}]
+// register fields: Rn, Rt
+B8BFC17E ldapr w30, [x11]
+B8BFC06B ldapr w11, [x3]
+B8BFC0E4 ldapr w4, [x7]
+B8BFC10A ldapr w10, [x8]
+B8BFC0B9 ldapr w25, [x5]
+B8BFC19D ldapr w29, [x12]
+B8BFC29C ldapr w28, [x20]
+B8BFC3CC ldapr w12, [lr]
+B8BFC187 ldapr w7, [x12]
+B8BFC34D ldapr w13, [x26]
+B8BFC131 ldapr w17, [x9]
+B8BFC057 ldapr w23, [x2]
+B8BFC224 ldapr w4, [x17]
+B8BFC31A ldapr w26, [x24]
+B8BFC334 ldapr w20, [x25]
+B8BFC0C3 ldapr w3, [x6]
+B8A0C000 ldapr w0, [x0] (unpredictable)
+B8BFC3FF ldapr wzr, [sp]
+B8B0C17E ldapr w30, [x11] (unpredictable)
+B8A8C17E ldapr w30, [x11] (unpredictable)
+B8A4C17E ldapr w30, [x11] (unpredictable)
+B8A2C17E ldapr w30, [x11] (unpredictable)
+B8A1C17E ldapr w30, [x11] (unpredictable)
+
+// LDAPR_64L_ldapstl_writeback size=11|0110011|L=1|000000000010|Rn=xxxxx|Rt=xxxxx
+// Ldapr64lLdapstlWriteback: LDAPR  <Xt>, [<Xn|SP>], #8
+// register fields: Rn, Rt
+D9C00804 ldapr x4, [x0], #0x8
+D9C0080B ldapr x11, [x0], #0x8
+D9C00812 ldapr x18, [x0], #0x8
+D9C00BE0 ldapr x0, [sp], #0x8
+D9C0081F ldapr xzr, [x0], #0x8
+D9C00800 ldapr x0, [x0], #0x8 (unpredictable)
+
+// LDAPR_64L_memop size=11|111|VR=0|00|A=1|R=0|1|Rs=(1)(1)(1)(1)(1)|o3=1|opc=100|00|Rn=xxxxx|Rt=xxxxx
+// Ldapr64lMemop: LDAPR  <Xt>, [<Xn|SP> {, #0}]
+// register fields: Rn, Rt
+F8BFC058 ldapr x24, [x2]
+F8BFC165 ldapr x5, [x11]
+F8BFC0CE ldapr x14, [x6]
+F8BFC2C7 ldapr x7, [x22]
+F8BFC176 ldapr x22, [x11]
+F8BFC056 ldapr x22, [x2]
+F8BFC2E6 ldapr x6, [x23]
+F8BFC21C ldapr x28, [x16]
+F8BFC280 ldapr x0, [x20]
+F8BFC2DA ldapr x26, [x22]
+F8BFC09C ldapr x28, [x4]
+F8BFC005 ldapr x5, [x0]
+F8BFC0FE ldapr lr, [x7]
+F8BFC13D ldapr fp, [x9]
+F8BFC004 ldapr x4, [x0]
+F8BFC01F ldapr xzr, [x0]
+F8A0C3F8 ldapr x24, [sp] (unpredictable)
+F8BFC042 ldapr x2, [x2]
+F8B0C058 ldapr x24, [x2] (unpredictable)
+F8A8C058 ldapr x24, [x2] (unpredictable)
+F8A4C058 ldapr x24, [x2] (unpredictable)
+F8A2C058 ldapr x24, [x2] (unpredictable)
+F8A1C058 ldapr x24, [x2] (unpredictable)

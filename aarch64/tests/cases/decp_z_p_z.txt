@@ -1,0 +1,21 @@
+// decp_z_p_z_ 001|0010|1|size=xx|101|1|op=0|D=1|1000|0|opc2=00|Pm=xxxx|Zdn=xxxxx
+// DecpZPZ: DECP  <Zdn>.<T>, <Pm>.<T>
+// register fields: Pm, Zdn
+25AD80C4 decp z4.s, p6.s
+25ED8076 decp z22.d, p3.d
+25AD80B0 decp z16.s, p5.s
+256D8094 decp z20.h, p4.h
+25AD81B4 decp z20.s, p13.s
+25ED804A decp z10.d, p2.d
+25AD80A3 decp z3.s, p5.s
+256D8062 decp z2.h, p3.h
+25AD804E decp z14.s, p2.s
+256D80A5 decp z5.h, p5.h
+25AD8154 decp z20.s, p10.s
+25ED81FF decp z31.d, p15.d
+25ED8191 decp z17.d, p12.d
+25ED817F decp z31.d, p11.d
+25ED8054 decp z20.d, p2.d
+25AD81D8 decp z24.s, p14.s
+25AD8000 decp z0.s, p0.s
+252D80C4 UNDEFINED

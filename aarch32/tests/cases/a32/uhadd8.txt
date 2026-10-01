@@ -1,0 +1,18 @@
+// UHADD8_A1 cond=xxxx|011|00|op1=111|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=1|op2=00|1|Rm=xxxx
+// Uhadd8A1: UHADD8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+367e899e uhadd8lo r8, lr, lr (unpredictable)
+1672df94 uhadd8ne sp, r2, r4
+e67fe29e uhadd8 lr, pc, lr (unpredictable)
+067b6b93 uhadd8eq r6, r11, r3 (unpredictable)
+067af09d uhadd8eq pc, r10, sp (unpredictable)
+367b5591 uhadd8lo r5, r11, r1 (unpredictable)
+1672b990 uhadd8ne r11, r2, r0 (unpredictable)
+267e3995 uhadd8hs r3, lr, r5 (unpredictable)
+// Binary Ninja's tests
+c6784f92 uhadd8gt r4, r8, r2
+e6784f92 uhadd8 r4, r8, r2
+F67E899E UNALLOCATED
+8670089F uhadd8hi r0, r0, pc (unpredictable)
+467EE49E uhadd8mi lr, lr, lr (unpredictable)
+367E819E uhadd8cc r8, lr, lr (unpredictable)

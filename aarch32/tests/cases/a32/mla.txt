@@ -1,0 +1,39 @@
+// MLA_A1 cond=xxxx|0000|opc=001|S=0|Rd=xxxx|Ra=xxxx|Rm=xxxx|1001|Rn=xxxx
+// MlaA1: MLA{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+802a6b95 mlahi r10, r5, r11, r6
+b02b0e9b mlalt r11, r11, lr, r0
+302fec9a mlalo pc, r10, r12, lr (unpredictable)
+80295494 mlahi r9, r4, r4, r5
+40260791 mlami r6, r1, r7, r0
+9026659d mlals r6, sp, r5, r6
+30265693 mlalo r6, r3, r6, r5
+4026f292 mlami r6, r2, r2, pc (unpredictable)
+// Binary Ninja's tests
+10214392 mlane r1, r2, r3, r4
+e0214392 mla r1, r2, r3, r4
+00206090 mlaeq r0, r0, r0, r6
+F02A6B95 UNALLOCATED
+202A6F9F mlacs r10, pc, pc, r6 (unpredictable)
+802A6695 mlahi r10, r5, r6, r6
+802A6B96 mlahi r10, r6, r11, r6
+
+// MLAS_A1 cond=xxxx|0000|opc=001|S=1|Rd=xxxx|Ra=xxxx|Rm=xxxx|1001|Rn=xxxx
+// MlasA1: MLAS{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+0035ed9c mlaseq r5, r12, sp, lr
+20378596 mlashs r7, r6, r5, r8
+00386395 mlaseq r8, r5, r3, r6
+703ce69d mlasvc r12, sp, r6, lr
+20333996 mlashs r3, r6, r9, r3
+703f6892 mlasvc pc, r2, r8, r6 (unpredictable)
+d03e5999 mlasle lr, r9, r9, r5
+2039be9a mlashs r9, r10, lr, r11
+// Binary Ninja's tests
+10314392 mlasne r1, r2, r3, r4
+e0314392 mlas r1, r2, r3, r4
+F035ED9C UNALLOCATED
+80300090 mlashi r0, r0, r0, r0
+4035FF9F mlasmi r5, pc, pc, pc (unpredictable)
+0035E59E mlaseq r5, lr, r5, lr
+0035EE95 mlaseq r5, r5, lr, lr

@@ -1,0 +1,14 @@
+// rdsvl_r_i_ 000|0010|0|1|op=0|1|opc2=11111|0101|1|imm6=xxxxxx|Rd=xxxxx
+// RdsvlRI: RDSVL  <Xd>, #<imm>
+// register fields: Rd
+04BF5804 rdsvl x4, #0x0
+04BF580B rdsvl x11, #0x0
+04BF5812 rdsvl x18, #0x0
+04BF5FE0 rdsvl x0, #-0x1
+04BF581F rdsvl xzr, #0x0
+04BF5C04 rdsvl x4, #-0x20
+04BF5A04 rdsvl x4, #0x10
+04BF5904 rdsvl x4, #0x8
+04BF5884 rdsvl x4, #0x4
+04BF5844 rdsvl x4, #0x2
+04BF5824 rdsvl x4, #0x1

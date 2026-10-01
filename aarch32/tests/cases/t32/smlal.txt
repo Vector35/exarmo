@@ -1,0 +1,8 @@
+// SMLAL_T1 111|1101|11|op1=100|Rn=xxxx|RdLo=xxxx|RdHi=xxxx|op2=0000|Rm=xxxx
+// SmlalT1: SMLAL{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: Rn, RdLo, RdHi, Rm
+// IT state read: condition
+FBC00000 smlal r0, r0, r0, r0 (unpredictable)
+FBCFFF0F smlal pc, pc, pc, pc (unpredictable)
+FBC00000 [ne] smlalne r0, r0, r0, r0 (unpredictable)
+FBC12304 smlal r2, r3, r1, r4

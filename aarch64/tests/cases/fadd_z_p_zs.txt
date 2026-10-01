@@ -1,0 +1,21 @@
+// fadd_z_p_zs_ 011|0010|1|size=xx|0|11|opc=000|100|Pg=xxx|0000|i1=x|Zdn=xxxxx
+// FaddZPZs: FADD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <const>
+// register fields: Pg, Zdn
+65D89021 fadd z1.d, p4/m, z1.d, #1.0
+6598902A fadd z10.s, p4/m, z10.s, #1.0
+6558883A fadd z26.h, p2/m, z26.h, #1.0
+65989C33 fadd z19.s, p7/m, z19.s, #1.0
+65D8902E fadd z14.d, p4/m, z14.d, #1.0
+65D89834 fadd z20.d, p6/m, z20.d, #1.0
+65D88C1F fadd z31.d, p3/m, z31.d, #0.5
+6598800E fadd z14.s, p0/m, z14.s, #0.5
+65989019 fadd z25.s, p4/m, z25.s, #0.5
+65D8842F fadd z15.d, p1/m, z15.d, #1.0
+65D89017 fadd z23.d, p4/m, z23.d, #0.5
+65589C10 fadd z16.h, p7/m, z16.h, #0.5
+65D89019 fadd z25.d, p4/m, z25.d, #0.5
+65D8843F fadd z31.d, p1/m, z31.d, #1.0
+65588421 fadd z1.h, p1/m, z1.h, #1.0
+65989C07 fadd z7.s, p7/m, z7.s, #0.5
+65D89420 fadd z0.d, p5/m, z0.d, #1.0
+65189021 UNDEFINED

@@ -1,0 +1,23 @@
+// add_mz_zzv_2x1 1|10|0000|1|size=xx|10|Zm=xxxx|10100|0|11|000|Zdn=xxxx|op=0
+// AddMzZzv2x1: ADD  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, <Zm>.<T>
+// register fields: Zm, Zdn
+C120A308 add {z8.b-z9.b}, {z8.b-z9.b}, z0.b
+C120A316 add {z22.b-z23.b}, {z22.b-z23.b}, z0.b
+C121A306 add {z6.b-z7.b}, {z6.b-z7.b}, z1.b
+C16FA300 add {z0.h-z1.h}, {z0.h-z1.h}, z15.h
+C1A0A31E add {z30.s-z31.s}, {z30.s-z31.s}, z0.s
+C1E0A308 add {z8.d-z9.d}, {z8.d-z9.d}, z0.d
+C120A300 add {z0.b-z1.b}, {z0.b-z1.b}, z0.b
+
+// add_mz_zzv_4x1 1|10|0000|1|size=xx|10|Zm=xxxx|10101|0|11|000|Zdn=xxx|0|op=0
+// AddMzZzv4x1: ADD  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, <Zm>.<T>
+// register fields: Zm, Zdn
+C120AB04 add {z4.b-z7.b}, {z4.b-z7.b}, z0.b
+C121AB10 add {z16.b-z19.b}, {z16.b-z19.b}, z1.b
+C122AB00 add {z0.b-z3.b}, {z0.b-z3.b}, z2.b
+C16FAB08 add {z8.h-z11.h}, {z8.h-z11.h}, z15.h
+C1A0AB0C add {z12.s-z15.s}, {z12.s-z15.s}, z0.s
+C1E0AB14 add {z20.d-z23.d}, {z20.d-z23.d}, z0.d
+C120AB18 add {z24.b-z27.b}, {z24.b-z27.b}, z0.b
+C120AB1C add {z28.b-z31.b}, {z28.b-z31.b}, z0.b
+C120AB00 add {z0.b-z3.b}, {z0.b-z3.b}, z0.b

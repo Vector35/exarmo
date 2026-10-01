@@ -1,0 +1,39 @@
+// MVN_rr_A1 cond=xxxx|00011|opc=11|S=0|Rn=(0)(0)(0)(0)|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// MvnRrA1: MVN{<c>}{<q>}  <Rd>, <Rm>, <shift> <Rs>
+// register fields: Rd, Rs, Rm
+31e5117e mvnlo r1, lr, ror r1 (unpredictable)
+c1e8345b mvngt r3, r11, asr r4 (unpredictable)
+41e2b65c mvnmi r11, r12, asr r6 (unpredictable)
+b1ee137f mvnlt r1, pc, ror r3 (unpredictable)
+d1e92411 mvnle r2, r1, lsl r4 (unpredictable)
+21e44e5b mvnhs r4, r11, asr lr (unpredictable)
+d1e62e30 mvnle r2, r0, lsr lr (unpredictable)
+91eabb7f mvnls r11, pc, ror r11 (unpredictable)
+// Binary Ninja's tests
+c1e05756 mvngt r5, r6, asr r7
+e1e05716 mvn r5, r6, lsl r7
+01EF007E mvneq r0, lr, ror r0 (unpredictable)
+F1E5117E UNALLOCATED
+81E1FF7E mvnhi pc, lr, ror pc (unpredictable)
+11E51171 mvnne r1, r1, ror r1 (unpredictable)
+31E51171 mvncc r1, r1, ror r1 (unpredictable)
+
+// MVNS_rr_A1 cond=xxxx|00011|opc=11|S=1|Rn=(0)(0)(0)(0)|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// MvnsRrA1: MVNS{<c>}{<q>}  <Rd>, <Rm>, <shift> <Rs>
+// register fields: Rd, Rs, Rm
+61fbc870 mvnsvs r12, r0, ror r8 (unpredictable)
+61fcb974 mvnsvs r11, r4, ror r9 (unpredictable)
+d1ffa035 mvnsle r10, r5, lsr r0 (unpredictable)
+c1f13c7f mvnsgt r3, pc, ror r12 (unpredictable)
+81f49110 mvnshi r9, r0, lsl r1 (unpredictable)
+21fbc553 mvnshs r12, r3, asr r5 (unpredictable)
+01fac27b mvnseq r12, r11, ror r2 (unpredictable)
+61f1ed30 mvnsvs lr, r0, lsr sp (unpredictable)
+// Binary Ninja's tests
+b1f05776 mvnslt r5, r6, ror r7
+e1f05736 mvns r5, r6, lsr r7
+F1FBC870 UNALLOCATED
+41F80F70 mvnsmi r0, r0, ror pc (unpredictable)
+11F2F878 mvnsne pc, r8, ror r8 (unpredictable)
+61FBCC70 mvnsvs r12, r0, ror r12 (unpredictable)
+61FBC87C mvnsvs r12, r12, ror r8 (unpredictable)

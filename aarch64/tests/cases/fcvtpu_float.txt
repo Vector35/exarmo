@@ -1,0 +1,129 @@
+// FCVTPU_32D_float2int sf=0|0|S=0|11110|ftype=01|1|rmode=01|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtpu32dFloat2int: FCVTPU  <Wd>, <Dn>
+// register fields: Rn, Rd
+1E6901A1 fcvtpu w1, d13
+1E690071 fcvtpu w17, d3
+1E690320 fcvtpu w0, d25
+1E690368 fcvtpu w8, d27
+1E690081 fcvtpu w1, d4
+1E6901E1 fcvtpu w1, d15
+1E69008D fcvtpu w13, d4
+1E6901A6 fcvtpu w6, d13
+1E6902E8 fcvtpu w8, d23
+1E690025 fcvtpu w5, d1
+1E690181 fcvtpu w1, d12
+1E690369 fcvtpu w9, d27
+1E690361 fcvtpu w1, d27
+1E69018C fcvtpu w12, d12
+1E690107 fcvtpu w7, d8
+1E690283 fcvtpu w3, d20
+1E69001F fcvtpu wzr, d0
+1E6903E1 fcvtpu w1, d31
+
+// FCVTPU_32H_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=01|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtpu32hFloat2int: FCVTPU  <Wd>, <Hn>
+// register fields: Rn, Rd
+1EE9019E fcvtpu w30, h12
+1EE90148 fcvtpu w8, h10
+1EE90041 fcvtpu w1, h2
+1EE9032A fcvtpu w10, h25
+1EE903FB fcvtpu w27, h31
+1EE9033D fcvtpu w29, h25
+1EE9020F fcvtpu w15, h16
+1EE90036 fcvtpu w22, h1
+1EE90283 fcvtpu w3, h20
+1EE90171 fcvtpu w17, h11
+1EE902AD fcvtpu w13, h21
+1EE9014B fcvtpu w11, h10
+1EE90053 fcvtpu w19, h2
+1EE900AA fcvtpu w10, h5
+1EE902FA fcvtpu w26, h23
+1EE901A5 fcvtpu w5, h13
+1EE90000 fcvtpu w0, h0
+1EE9019F fcvtpu wzr, h12
+
+// FCVTPU_32S_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=01|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtpu32sFloat2int: FCVTPU  <Wd>, <Sn>
+// register fields: Rn, Rd
+1E290071 fcvtpu w17, s3
+1E29034E fcvtpu w14, s26
+1E290304 fcvtpu w4, s24
+1E2903B6 fcvtpu w22, s29
+1E2902CA fcvtpu w10, s22
+1E290010 fcvtpu w16, s0
+1E29020B fcvtpu w11, s16
+1E290365 fcvtpu w5, s27
+1E290139 fcvtpu w25, s9
+1E2900C8 fcvtpu w8, s6
+1E29013A fcvtpu w26, s9
+1E2903F3 fcvtpu w19, s31
+1E290218 fcvtpu w24, s16
+1E290145 fcvtpu w5, s10
+1E29018B fcvtpu w11, s12
+1E290302 fcvtpu w2, s24
+1E290060 fcvtpu w0, s3
+1E29007F fcvtpu wzr, s3
+1E290063 fcvtpu w3, s3
+
+// FCVTPU_64D_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=01|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtpu64dFloat2int: FCVTPU  <Xd>, <Dn>
+// register fields: Rn, Rd
+9E690245 fcvtpu x5, d18
+9E6903D8 fcvtpu x24, d30
+9E6900E8 fcvtpu x8, d7
+9E6901B8 fcvtpu x24, d13
+9E69011C fcvtpu x28, d8
+9E690270 fcvtpu x16, d19
+9E6903F3 fcvtpu x19, d31
+9E69020D fcvtpu x13, d16
+9E690073 fcvtpu x19, d3
+9E6902BB fcvtpu x27, d21
+9E6902F6 fcvtpu x22, d23
+9E69018D fcvtpu x13, d12
+9E69033F fcvtpu xzr, d25
+9E69034A fcvtpu x10, d26
+9E69008A fcvtpu x10, d4
+9E69003E fcvtpu lr, d1
+9E690000 fcvtpu x0, d0
+
+// FCVTPU_64H_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=01|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtpu64hFloat2int: FCVTPU  <Xd>, <Hn>
+// register fields: Rn, Rd
+9EE9003B fcvtpu x27, h1
+9EE90271 fcvtpu x17, h19
+9EE90339 fcvtpu x25, h25
+9EE902DB fcvtpu x27, h22
+9EE9013C fcvtpu x28, h9
+9EE90158 fcvtpu x24, h10
+9EE9014E fcvtpu x14, h10
+9EE90011 fcvtpu x17, h0
+9EE901C7 fcvtpu x7, h14
+9EE900AC fcvtpu x12, h5
+9EE90100 fcvtpu x0, h8
+9EE900D6 fcvtpu x22, h6
+9EE90303 fcvtpu x3, h24
+9EE90105 fcvtpu x5, h8
+9EE903F7 fcvtpu x23, h31
+9EE9032A fcvtpu x10, h25
+9EE9003F fcvtpu xzr, h1
+
+// FCVTPU_64S_float2int sf=1|0|S=0|11110|ftype=00|1|rmode=01|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtpu64sFloat2int: FCVTPU  <Xd>, <Sn>
+// register fields: Rn, Rd
+9E290255 fcvtpu x21, s18
+9E290103 fcvtpu x3, s8
+9E29037C fcvtpu x28, s27
+9E290389 fcvtpu x9, s28
+9E2902A0 fcvtpu x0, s21
+9E2900E2 fcvtpu x2, s7
+9E290272 fcvtpu x18, s19
+9E29015A fcvtpu x26, s10
+9E2901AC fcvtpu x12, s13
+9E2902DF fcvtpu xzr, s22
+9E290237 fcvtpu x23, s17
+9E2903F5 fcvtpu x21, s31
+9E290033 fcvtpu x19, s1
+9E29013B fcvtpu x27, s9
+9E290001 fcvtpu x1, s0
+9E2903C1 fcvtpu x1, s30
+9E290252 fcvtpu x18, s18

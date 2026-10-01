@@ -1,0 +1,87 @@
+// SSAT_T1_ASR 11110(0)1100|sh=1|0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm2=xx|(0)|sat_imm=xxxxx
+// SsatT1Asr: SSAT{<c>}{<q>}  <Rd>, #<imm>, <Rn>, ASR #<amount>
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd
+// IT state read: condition
+f3232085 ssat r0, #6, r3, asr #10
+f32b319e ssat r1, #31, r11, asr #14
+f3215ddf ssat sp, #32, r1, asr #23
+f3216f58 ssat pc, #25, r1, asr #25 (unpredictable)
+f3202bc4 ssat r11, #5, r0, asr #11
+F72F00A0 ssat r0, #0x1, pc, asr #0x2 (unpredictable)
+F3231310 ssat r3, #0x11, r3, asr #0x4
+F3234088 ssat r0, #0x9, r3, asr #0x12
+F3237082 ssat r0, #0x3, r3, asr #0x1e
+F3230041 ssat r0, #0x2, r3, asr #0x1
+F3230085 ssat r0, #0x6, r3, asr #0x2
+F32300C5 ssat r0, #0x6, r3, asr #0x3
+F3231005 ssat r0, #0x6, r3, asr #0x4
+F3231045 ssat r0, #0x6, r3, asr #0x5
+F3231085 ssat r0, #0x6, r3, asr #0x6
+F32310C5 ssat r0, #0x6, r3, asr #0x7
+F3232005 ssat r0, #0x6, r3, asr #0x8
+F3232045 ssat r0, #0x6, r3, asr #0x9
+F3233005 ssat r0, #0x6, r3, asr #0xc
+F3233045 ssat r0, #0x6, r3, asr #0xd
+F32330C5 ssat r0, #0x6, r3, asr #0xf
+F3234005 ssat r0, #0x6, r3, asr #0x10
+F3234045 ssat r0, #0x6, r3, asr #0x11
+F3234085 ssat r0, #0x6, r3, asr #0x12
+F32340C5 ssat r0, #0x6, r3, asr #0x13
+F3235005 ssat r0, #0x6, r3, asr #0x14
+F3235045 ssat r0, #0x6, r3, asr #0x15
+F3235085 ssat r0, #0x6, r3, asr #0x16
+F3236005 ssat r0, #0x6, r3, asr #0x18
+F3236085 ssat r0, #0x6, r3, asr #0x1a
+F32360C5 ssat r0, #0x6, r3, asr #0x1b
+F3237005 ssat r0, #0x6, r3, asr #0x1c
+F3237045 ssat r0, #0x6, r3, asr #0x1d
+F3237085 ssat r0, #0x6, r3, asr #0x1e
+F32370C5 ssat r0, #0x6, r3, asr #0x1f
+F3232085 [ne] ssatne r0, #0x6, r3, asr #0xa
+
+// SSAT_T1_LSL 11110(0)1100|sh=0|0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm2=xx|(0)|sat_imm=xxxxx
+// SsatT1Lsl: SSAT{<c>}{<q>}  <Rd>, #<imm>, <Rn> {, LSL #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd
+// IT state read: condition
+F3000000 ssat r0, #0x1, r0
+F70F1F7F ssat pc, #0x20, pc, lsl #0x5 (unpredictable)
+F3002090 ssat r0, #0x11, r0, lsl #0xa
+F30030C8 ssat r0, #0x9, r0, lsl #0xf
+F3004004 ssat r0, #0x5, r0, lsl #0x10
+F3005002 ssat r0, #0x3, r0, lsl #0x14
+F3006001 ssat r0, #0x2, r0, lsl #0x18
+F3007000 ssat r0, #0x1, r0, lsl #0x1c
+F3000040 ssat r0, #0x1, r0, lsl #0x1
+F3000080 ssat r0, #0x1, r0, lsl #0x2
+F30000C0 ssat r0, #0x1, r0, lsl #0x3
+F3001000 ssat r0, #0x1, r0, lsl #0x4
+F3001040 ssat r0, #0x1, r0, lsl #0x5
+F3001080 ssat r0, #0x1, r0, lsl #0x6
+F30010C0 ssat r0, #0x1, r0, lsl #0x7
+F3002000 ssat r0, #0x1, r0, lsl #0x8
+F3002040 ssat r0, #0x1, r0, lsl #0x9
+F3002080 ssat r0, #0x1, r0, lsl #0xa
+F30020C0 ssat r0, #0x1, r0, lsl #0xb
+F3003000 ssat r0, #0x1, r0, lsl #0xc
+F3003040 ssat r0, #0x1, r0, lsl #0xd
+F3003080 ssat r0, #0x1, r0, lsl #0xe
+F30030C0 ssat r0, #0x1, r0, lsl #0xf
+F3004000 ssat r0, #0x1, r0, lsl #0x10
+F3004040 ssat r0, #0x1, r0, lsl #0x11
+F3004080 ssat r0, #0x1, r0, lsl #0x12
+F30040C0 ssat r0, #0x1, r0, lsl #0x13
+F3005000 ssat r0, #0x1, r0, lsl #0x14
+F3005040 ssat r0, #0x1, r0, lsl #0x15
+F3005080 ssat r0, #0x1, r0, lsl #0x16
+F30050C0 ssat r0, #0x1, r0, lsl #0x17
+F3006000 ssat r0, #0x1, r0, lsl #0x18
+F3006040 ssat r0, #0x1, r0, lsl #0x19
+F3006080 ssat r0, #0x1, r0, lsl #0x1a
+F30060C0 ssat r0, #0x1, r0, lsl #0x1b
+F3007040 ssat r0, #0x1, r0, lsl #0x1d
+F3007080 ssat r0, #0x1, r0, lsl #0x1e
+F30070C0 ssat r0, #0x1, r0, lsl #0x1f
+F3000000 [ne] ssatne r0, #0x1, r0
+F3010200 ssat r2, #0x1, r1

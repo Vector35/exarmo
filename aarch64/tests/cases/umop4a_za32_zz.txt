@@ -1,0 +1,57 @@
+// umop4a_za32_zz_h1x1 1|00|0000|u0=1|00|0|M=0|Zm=xxx|0|1|00000|N=0|Zn=xxx|0|S=0|1|0|ZAda=xx
+// Umop4aZa32ZzH1x1: UMOP4A  <ZAda>.S, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, ZAda
+8100800A umop4a za2.s, z0.h, z16.h
+81008049 umop4a za1.s, z2.h, z16.h
+81008088 umop4a za0.s, z4.h, z16.h
+810280CB umop4a za3.s, z6.h, z18.h
+8104810A umop4a za2.s, z8.h, z20.h
+8106814A umop4a za2.s, z10.h, z22.h
+8108818A umop4a za2.s, z12.h, z24.h
+810A81CA umop4a za2.s, z14.h, z26.h
+810C800A umop4a za2.s, z0.h, z28.h
+810E800A umop4a za2.s, z0.h, z30.h
+
+// umop4a_za32_zz_h1x2 1|00|0000|u0=1|00|0|M=1|Zm=xxx|0|1|00000|N=0|Zn=xxx|0|S=0|1|0|ZAda=xx
+// Umop4aZa32ZzH1x2: UMOP4A  <ZAda>.S, <Zn>.H, { <Zm1>.H-<Zm2>.H }
+// register fields: Zm, Zn, ZAda
+8110808B umop4a za3.s, z4.h, {z16.h-z17.h}
+811080CA umop4a za2.s, z6.h, {z16.h-z17.h}
+81108109 umop4a za1.s, z8.h, {z16.h-z17.h}
+81128008 umop4a za0.s, z0.h, {z18.h-z19.h}
+8114804B umop4a za3.s, z2.h, {z20.h-z21.h}
+8116814B umop4a za3.s, z10.h, {z22.h-z23.h}
+8118818B umop4a za3.s, z12.h, {z24.h-z25.h}
+811A81CB umop4a za3.s, z14.h, {z26.h-z27.h}
+811C808B umop4a za3.s, z4.h, {z28.h-z29.h}
+811E808B umop4a za3.s, z4.h, {z30.h-z31.h}
+8110800B umop4a za3.s, z0.h, {z16.h-z17.h}
+
+// umop4a_za32_zz_h2x1 1|00|0000|u0=1|00|0|M=0|Zm=xxx|0|1|00000|N=1|Zn=xxx|0|S=0|1|0|ZAda=xx
+// Umop4aZa32ZzH2x1: UMOP4A  <ZAda>.S, { <Zn1>.H-<Zn2>.H }, <Zm>.H
+// register fields: Zm, Zn, ZAda
+81008209 umop4a za1.s, {z0.h-z1.h}, z16.h
+81008248 umop4a za0.s, {z2.h-z3.h}, z16.h
+8100834B umop4a za3.s, {z10.h-z11.h}, z16.h
+8102828A umop4a za2.s, {z4.h-z5.h}, z18.h
+810482C9 umop4a za1.s, {z6.h-z7.h}, z20.h
+81068309 umop4a za1.s, {z8.h-z9.h}, z22.h
+81088389 umop4a za1.s, {z12.h-z13.h}, z24.h
+810A83C9 umop4a za1.s, {z14.h-z15.h}, z26.h
+810C8209 umop4a za1.s, {z0.h-z1.h}, z28.h
+810E8209 umop4a za1.s, {z0.h-z1.h}, z30.h
+
+// umop4a_za32_zz_h2x2 1|00|0000|u0=1|00|0|M=1|Zm=xxx|0|1|00000|N=1|Zn=xxx|0|S=0|1|0|ZAda=xx
+// Umop4aZa32ZzH2x2: UMOP4A  <ZAda>.S, { <Zn1>.H-<Zn2>.H }, { <Zm1>.H-<Zm2>.H }
+// register fields: Zm, Zn, ZAda
+8110824B umop4a za3.s, {z2.h-z3.h}, {z16.h-z17.h}
+8110828A umop4a za2.s, {z4.h-z5.h}, {z16.h-z17.h}
+811082C9 umop4a za1.s, {z6.h-z7.h}, {z16.h-z17.h}
+81128208 umop4a za0.s, {z0.h-z1.h}, {z18.h-z19.h}
+8114830B umop4a za3.s, {z8.h-z9.h}, {z20.h-z21.h}
+8116834B umop4a za3.s, {z10.h-z11.h}, {z22.h-z23.h}
+8118838B umop4a za3.s, {z12.h-z13.h}, {z24.h-z25.h}
+811A83CB umop4a za3.s, {z14.h-z15.h}, {z26.h-z27.h}
+811C824B umop4a za3.s, {z2.h-z3.h}, {z28.h-z29.h}
+811E824B umop4a za3.s, {z2.h-z3.h}, {z30.h-z31.h}
+8110820B umop4a za3.s, {z0.h-z1.h}, {z16.h-z17.h}

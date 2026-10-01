@@ -1,0 +1,71 @@
+// STRH_i_A1_off cond=xxxx|000|P=1|U=x|1|W=0|o1=0|Rn=xxxx|Rt=xxxx|imm4H=xxxx|1|op2=01|1|imm4L=xxxx
+// StrhIA1Off: STRH{<c>}{<q>}  <Rt>, [<Rn> {, #{<+/->}<imm>}]
+// read together by <imm>: imm4H, imm4L
+// register fields: Rn, Rt
+21c141bd strhhs r4, [r1, #29]
+e14fb0b3 strh r11, [pc, #-3]
+314b6cbd strhlo r6, [r11, #-205]
+31c6aab9 strhlo r10, [r6, #169]
+31497ebd strhlo r7, [r9, #-237]
+214373bf strhhs r7, [r3, #-63]
+814afdbb strhhi pc, [r10, #-219] (unpredictable)
+a14eaab3 strhge r10, [lr, #-163]
+// Binary Ninja's tests
+e14230b0 strh r3, [r2, #-0x0]
+e1c430b0 strh r3, [r4]
+e1c720b4 strh r2, [r7, #4]
+01C00FB8 strheq r0, [r0, #0xf8]
+F1C141BD UNALLOCATED
+41C118B2 strhmi r1, [r1, #0x82]
+11C144B1 strhne r4, [r1, #0x41]
+21C142BD strhcs r4, [r1, #0x2d]
+21C140BF strhcs r4, [r1, #0xf]
+21C14FB0 strhcs r4, [r1, #0xf0]
+21C14FBF strhcs r4, [r1, #0xff]
+
+// STRH_i_A1_post cond=xxxx|000|P=0|U=x|1|W=0|o1=0|Rn=xxxx|Rt=xxxx|imm4H=xxxx|1|op2=01|1|imm4L=xxxx
+// StrhIA1Post: STRH{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// read together by <imm>: imm4H, imm4L
+// register fields: Rn, Rt
+d0c390be strhle r9, [r3], #14
+b04d31b0 strhlt r3, [sp], #-16
+5048d8bf strhpl sp, [r8], #-143
+30c0b8b1 strhlo r11, [r0], #129
+104050b0 strhne r5, [r0], #-0
+90cd17b8 strhls r1, [sp], #120
+d048ddb3 strhle sp, [r8], #-211
+10c8a9bf strhne r10, [r8], #159
+// Binary Ninja's tests
+e0cdc0b4 strh r12, [sp], #4
+00CF0FB2 strheq r0, [pc], #0xf2 (unpredictable)
+F0C390BE UNALLOCATED
+80C3F4BE strhhi pc, [r3], #0x4e (unpredictable)
+40C332BE strhmi r3, [r3], #0x2e (unpredictable)
+20C390BF strhcs r9, [r3], #0xf
+D0C39FB0 strhle r9, [r3], #0xf0
+D0C39FBF strhle r9, [r3], #0xff
+
+// STRH_i_A1_pre cond=xxxx|000|P=1|U=x|1|W=1|o1=0|Rn=xxxx|Rt=xxxx|imm4H=xxxx|1|op2=01|1|imm4L=xxxx
+// StrhIA1Pre: STRH{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// read together by <imm>: imm4H, imm4L
+// register fields: Rn, Rt
+5165b0b9 strhpl r11, [r5, #-9]!
+d1ee23b0 strhle r2, [lr, #48]!
+b1e967b0 strhlt r6, [r9, #112]!
+416ba8bc strhmi r10, [r11, #-140]!
+61ed98bd strhvs r9, [sp, #141]!
+11e84db3 strhne r4, [r8, #211]!
+e16f9fbd strh r9, [pc, #-253]! (unpredictable)
+01eafab0 strheq pc, [r10, #160]! (unpredictable)
+// Binary Ninja's tests
+e1e814b0 strh r1, [r8, #64]!
+F165B0B9 UNALLOCATED
+816002BF strhhi r0, [r0, #-0x2f]! (unpredictable)
+216551B8 strhcs r5, [r5, #-0x18]! (unpredictable)
+5165B0B4 strhpl r11, [r5, #-0x4]!
+5165B0B2 strhpl r11, [r5, #-0x2]!
+5165B0B1 strhpl r11, [r5, #-0x1]!
+5165B0B0 strhpl r11, [r5, #-0x0]!
+5165B0BF strhpl r11, [r5, #-0xf]!
+5165BFB0 strhpl r11, [r5, #-0xf0]!
+5165BFBF strhpl r11, [r5, #-0xff]!

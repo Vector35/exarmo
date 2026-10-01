@@ -1,0 +1,69 @@
+// shrnb_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=0|U=1|R=0|T=0|Zn=xxxxx|Zd=xxxxx
+// ShrnbZZi: SHRNB  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+453210F7 shrnb z23.h, z7.s, #0xe
+452911CC shrnb z12.b, z14.h, #0x7
+45651070 shrnb z16.s, z3.d, #0x1b
+457F124C shrnb z12.s, z18.d, #0x1
+453313CD shrnb z13.h, z30.s, #0xd
+457A10E2 shrnb z2.s, z7.d, #0x6
+456511A1 shrnb z1.s, z13.d, #0x1b
+45701106 shrnb z6.s, z8.d, #0x10
+45341000 shrnb z0.h, z0.s, #0xc
+453613FF shrnb z31.h, z31.s, #0xa
+452010F7 UNDEFINED
+452110F7 UNDEFINED
+452210F7 UNDEFINED
+452310F7 UNDEFINED
+452410F7 UNDEFINED
+452510F7 UNDEFINED
+452610F7 UNDEFINED
+452710F7 UNDEFINED
+452810F7 shrnb z23.b, z7.h, #0x8
+452A10F7 shrnb z23.b, z7.h, #0x6
+452B10F7 shrnb z23.b, z7.h, #0x5
+452C10F7 shrnb z23.b, z7.h, #0x4
+452D10F7 shrnb z23.b, z7.h, #0x3
+452E10F7 shrnb z23.b, z7.h, #0x2
+452F10F7 shrnb z23.b, z7.h, #0x1
+453010F7 shrnb z23.h, z7.s, #0x10
+453110F7 shrnb z23.h, z7.s, #0xf
+453510F7 shrnb z23.h, z7.s, #0xb
+453710F7 shrnb z23.h, z7.s, #0x9
+453810F7 shrnb z23.h, z7.s, #0x8
+453910F7 shrnb z23.h, z7.s, #0x7
+453A10F7 shrnb z23.h, z7.s, #0x6
+453B10F7 shrnb z23.h, z7.s, #0x5
+453C10F7 shrnb z23.h, z7.s, #0x4
+453D10F7 shrnb z23.h, z7.s, #0x3
+453E10F7 shrnb z23.h, z7.s, #0x2
+453F10F7 shrnb z23.h, z7.s, #0x1
+456010F7 shrnb z23.s, z7.d, #0x20
+456110F7 shrnb z23.s, z7.d, #0x1f
+456210F7 shrnb z23.s, z7.d, #0x1e
+456310F7 shrnb z23.s, z7.d, #0x1d
+456410F7 shrnb z23.s, z7.d, #0x1c
+456610F7 shrnb z23.s, z7.d, #0x1a
+456710F7 shrnb z23.s, z7.d, #0x19
+456810F7 shrnb z23.s, z7.d, #0x18
+456910F7 shrnb z23.s, z7.d, #0x17
+456A10F7 shrnb z23.s, z7.d, #0x16
+456B10F7 shrnb z23.s, z7.d, #0x15
+456C10F7 shrnb z23.s, z7.d, #0x14
+456D10F7 shrnb z23.s, z7.d, #0x13
+456E10F7 shrnb z23.s, z7.d, #0x12
+456F10F7 shrnb z23.s, z7.d, #0x11
+457110F7 shrnb z23.s, z7.d, #0xf
+457210F7 shrnb z23.s, z7.d, #0xe
+457310F7 shrnb z23.s, z7.d, #0xd
+457410F7 shrnb z23.s, z7.d, #0xc
+457510F7 shrnb z23.s, z7.d, #0xb
+457610F7 shrnb z23.s, z7.d, #0xa
+457710F7 shrnb z23.s, z7.d, #0x9
+457810F7 shrnb z23.s, z7.d, #0x8
+457910F7 shrnb z23.s, z7.d, #0x7
+457B10F7 shrnb z23.s, z7.d, #0x5
+457C10F7 shrnb z23.s, z7.d, #0x4
+457D10F7 shrnb z23.s, z7.d, #0x3
+457E10F7 shrnb z23.s, z7.d, #0x2

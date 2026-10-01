@@ -1,0 +1,82 @@
+// LDRSH_32_ldst_regoff size=01|111|VR=0|00|opc=11|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldrsh32LdstRegoff: LDRSH  <Wt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+78F06B68 ldrsh w8, [x27, x16]
+78E149B6 ldrsh w22, [x13, w1, uxtw]
+78FF6B11 ldrsh w17, [x24, xzr]
+78F74ADD ldrsh w29, [x22, w23, uxtw]
+78ED4A4B ldrsh w11, [x18, w13, uxtw]
+78E6F9C1 ldrsh w1, [x14, x6, sxtx #0x1]
+78F2F9FD ldrsh w29, [x15, x18, sxtx #0x1]
+78E248CE ldrsh w14, [x6, w2, uxtw]
+78E7FA5C ldrsh w28, [x18, x7, sxtx #0x1]
+78EFD9F7 ldrsh w23, [x15, w15, sxtw #0x1]
+78E9E91E ldrsh w30, [x8, x9, sxtx]
+78EDC926 ldrsh w6, [x9, w13, sxtw]
+78EE4819 ldrsh w25, [x0, w14, uxtw]
+78EFFA93 ldrsh w19, [x20, x15, sxtx #0x1]
+78E9FB82 ldrsh w2, [x28, x9, sxtx #0x1]
+78FDF9FE ldrsh w30, [x15, fp, sxtx #0x1]
+78E06BE0 ldrsh w0, [sp, x0]
+78F06B7F ldrsh wzr, [x27, x16]
+78F00B68 UNDEFINED
+78F02B68 UNDEFINED
+78F08B68 UNDEFINED
+78F0AB68 UNDEFINED
+78E00B68 UNDEFINED
+78E02B68 UNDEFINED
+78E04B7B ldrsh w27, [x27, w0, uxtw]
+78E08B68 UNDEFINED
+78E0AB68 UNDEFINED
+78E0CB68 ldrsh w8, [x27, w0, sxtw]
+78E0EB68 ldrsh w8, [x27, x0, sxtx]
+78FF0B68 UNDEFINED
+78FF2B68 UNDEFINED
+78FF4B68 ldrsh w8, [x27, wzr, uxtw]
+78FF8B68 UNDEFINED
+78FFAB68 UNDEFINED
+78FFCB68 ldrsh w8, [x27, wzr, sxtw]
+78FFEB68 ldrsh w8, [x27, xzr, sxtx]
+
+// LDRSH_64_ldst_regoff size=01|111|VR=0|00|opc=10|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldrsh64LdstRegoff: LDRSH  <Xt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+78A77969 ldrsh x9, [x11, x7, lsl #0x1]
+78BCCA40 ldrsh x0, [x18, w28, sxtw]
+78B46BA8 ldrsh x8, [fp, x20]
+78A25B6C ldrsh x12, [x27, w2, uxtw #0x1]
+78A14BDC ldrsh x28, [lr, w1, uxtw]
+78A66837 ldrsh x23, [x1, x6]
+78B55BC9 ldrsh x9, [lr, w21, uxtw #0x1]
+78B5D81F ldrsh xzr, [x0, w21, sxtw #0x1]
+78B67AB5 ldrsh x21, [x21, x22, lsl #0x1]
+78AF5A79 ldrsh x25, [x19, w15, uxtw #0x1]
+78A1DA16 ldrsh x22, [x16, w1, sxtw #0x1]
+78BF4977 ldrsh x23, [x11, wzr, uxtw]
+78AA586B ldrsh x11, [x3, w10, uxtw #0x1]
+78AD6A46 ldrsh x6, [x18, x13]
+78B6DB40 ldrsh x0, [x26, w22, sxtw #0x1]
+78A87824 ldrsh x4, [x1, x8, lsl #0x1]
+78A0FBE9 ldrsh x9, [sp, x0, sxtx #0x1]
+78A71969 UNDEFINED
+78A73969 UNDEFINED
+78A79969 UNDEFINED
+78A7B969 UNDEFINED
+78A01969 UNDEFINED
+78A03969 UNDEFINED
+78A05969 ldrsh x9, [x11, w0, uxtw #0x1]
+78A07969 ldrsh x9, [x11, x0, lsl #0x1]
+78A09969 UNDEFINED
+78A0B969 UNDEFINED
+78A0D969 ldrsh x9, [x11, w0, sxtw #0x1]
+78BF1969 UNDEFINED
+78BF3969 UNDEFINED
+78BF7969 ldrsh x9, [x11, xzr, lsl #0x1]
+78BF9969 UNDEFINED
+78BFB969 UNDEFINED
+78BFD969 ldrsh x9, [x11, wzr, sxtw #0x1]
+78BFF969 ldrsh x9, [x11, xzr, sxtx #0x1]
+78A778E9 ldrsh x9, [x7, x7, lsl #0x1]
+78A77967 ldrsh x7, [x11, x7, lsl #0x1]

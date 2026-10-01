@@ -1,0 +1,43 @@
+// LDBFMAX_16 size=00|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=0|opc=100|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfmax16: LDBFMAX  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3C204005 ldbfmax h0, h5, [x0]
+3C20400C ldbfmax h0, h12, [x0]
+3C204013 ldbfmax h0, h19, [x0]
+3C3F43E0 ldbfmax h31, h0, [sp]
+3C20401F ldbfmax h0, h31, [x0]
+3C204000 ldbfmax h0, h0, [x0]
+3C214043 ldbfmax h1, h3, [x2]
+
+// LDBFMAXA_16 size=00|111|VR=1|00|A=1|R=0|1|Rs=xxxxx|o3=0|opc=100|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfmaxa16: LDBFMAXA  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3CA04001 ldbfmaxa h0, h1, [x0]
+3CA04008 ldbfmaxa h0, h8, [x0]
+3CA0400F ldbfmaxa h0, h15, [x0]
+3CBF43E0 ldbfmaxa h31, h0, [sp]
+3CA0401F ldbfmaxa h0, h31, [x0]
+3CA04000 ldbfmaxa h0, h0, [x0]
+3CA14043 ldbfmaxa h1, h3, [x2]
+
+// LDBFMAXAL_16 size=00|111|VR=1|00|A=1|R=1|1|Rs=xxxxx|o3=0|opc=100|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfmaxal16: LDBFMAXAL  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3CE04006 ldbfmaxal h0, h6, [x0]
+3CE0400D ldbfmaxal h0, h13, [x0]
+3CE04014 ldbfmaxal h0, h20, [x0]
+3CFF43E0 ldbfmaxal h31, h0, [sp]
+3CE0401F ldbfmaxal h0, h31, [x0]
+3CE04000 ldbfmaxal h0, h0, [x0]
+3CE14043 ldbfmaxal h1, h3, [x2]
+
+// LDBFMAXL_16 size=00|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=0|opc=100|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfmaxl16: LDBFMAXL  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3C604003 ldbfmaxl h0, h3, [x0]
+3C60400A ldbfmaxl h0, h10, [x0]
+3C604011 ldbfmaxl h0, h17, [x0]
+3C7F43E0 ldbfmaxl h31, h0, [sp]
+3C60401F ldbfmaxl h0, h31, [x0]
+3C604000 ldbfmaxl h0, h0, [x0]
+3C614043 ldbfmaxl h1, h3, [x2]

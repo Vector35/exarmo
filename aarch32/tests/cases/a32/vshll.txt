@@ -1,0 +1,42 @@
+// VSHLL_A1 1111|0|01|U=x|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=1010|L=0|Q=0|M=x|1|Vm=xxxx
+// VshllA1: VSHLL{<c>}{<q>}.<type><size>  <Qd>, <Dm>, #<imm>
+// read together by <Qd>: D, Vd
+// read together by <Dm>: M, Vm
+f3cc0a3a vshll.u8 q8, d26, #4
+f3aa4a3b vshll.u32 q2, d27, #10
+f3bdea3a vshll.u32 q7, d26, #29
+f29b8a1f vshll.s16 q4, d15, #11
+f3d66a12 vshll.u16 q11, d2, #6
+f29c2a32 vshll.s16 q1, d18, #12
+f3ec8a13 vshll.u32 q12, d3, #12
+f38d8a3b vshll.u8 q4, d27, #5
+F3BF0A30 vshll.u32 q0, d16, #0x1f
+F3CCFA3A UNDEFINED
+F3CC1A3A UNDEFINED
+F3CC0A38 vshll.u8 q8, d24, #0x4
+F3CC0A34 vshll.u8 q8, d20, #0x4
+F3CC0A31 vshll.u8 q8, d17, #0x4
+F38CFA3A UNDEFINED
+F3CC0A10 vshll.u8 q8, d0, #0x4
+F3CC0A30 vshll.u8 q8, d16, #0x4
+F3CC0A3F vshll.u8 q8, d31, #0x4
+
+// VSHLL_A2 1111|0|01|1|1|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0110|Q=0|M=x|0|Vm=xxxx
+// VshllA2: VSHLL{<c>}{<q>}.<type><size>  <Qd>, <Dm>, #<imm>
+// read together by <Qd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b64308 vshll.i16 q2, d8, #16
+f3bac308 vshll.i32 q6, d8, #32
+f3b22302 vshll.i8 q1, d2, #8
+F3F60320 vshll.i16 q8, d16, #0x10
+F3BEF308 UNDEFINED
+F3B6830F vshll.i16 q4, d15, #0x10
+F3B61308 UNDEFINED
+F3B60304 vshll.i16 q0, d4, #0x10
+F3F60301 vshll.i16 q8, d1, #0x10
+F3B6F308 UNDEFINED
+F3F6F308 UNDEFINED
+F3B64300 vshll.i16 q2, d0, #0x10
+F3B6430F vshll.i16 q2, d15, #0x10
+F3B64320 vshll.i16 q2, d16, #0x10
+F3B6432F vshll.i16 q2, d31, #0x10

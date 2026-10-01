@@ -1,0 +1,28 @@
+// umin_z_zi_ 001|0010|1|size=xx|1|01|01|U=1|11|o2=0|imm8=xxxxxxxx|Zdn=xxxxx
+// UminZZi: UMIN  <Zdn>.<T>, <Zdn>.<T>, #<imm>
+// register fields: Zdn
+25EBC42C umin z12.d, z12.d, #0x21
+25EBC2DB umin z27.d, z27.d, #0x16
+25EBCEAA umin z10.d, z10.d, #0x75
+25EBC91C umin z28.d, z28.d, #0x48
+25ABC20D umin z13.s, z13.s, #0x10
+25EBDA76 umin z22.d, z22.d, #0xd3
+252BCD90 umin z16.b, z16.b, #0x6c
+256BD9E1 umin z1.h, z1.h, #0xcf
+256BD05E umin z30.h, z30.h, #0x82
+25EBD91C umin z28.d, z28.d, #0xc8
+252BD6BE umin z30.b, z30.b, #0xb5
+256BD2B1 umin z17.h, z17.h, #0x95
+256BDA27 umin z7.h, z7.h, #0xd1
+252BCD0F umin z15.b, z15.b, #0x68
+256BC289 umin z9.h, z9.h, #0x14
+256BC42C umin z12.h, z12.h, #0x21
+25EBC000 umin z0.d, z0.d, #0x0
+25EBDFFF umin z31.d, z31.d, #0xff
+25EBD00C umin z12.d, z12.d, #0x80
+25EBC80C umin z12.d, z12.d, #0x40
+25EBC40C umin z12.d, z12.d, #0x20
+25EBC10C umin z12.d, z12.d, #0x8
+25EBC08C umin z12.d, z12.d, #0x4
+25EBC04C umin z12.d, z12.d, #0x2
+25EBC02C umin z12.d, z12.d, #0x1

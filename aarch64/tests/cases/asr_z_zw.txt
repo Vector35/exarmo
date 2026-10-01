@@ -1,0 +1,22 @@
+// asr_z_zw_ 000|0010|0|size=xx|1|Zm=xxxxx|100|0|0|U=0|Zn=xxxxx|Zd=xxxxx
+// AsrZZw: ASR  <Zd>.<T>, <Zn>.<T>, <Zm>.D
+// register fields: Zm, Zn, Zd
+04AB8110 asr z16.s, z8.s, z11.d
+0466835B asr z27.h, z26.h, z6.d
+042B8338 asr z24.b, z25.b, z11.d
+04638251 asr z17.h, z18.h, z3.d
+04B483A1 asr z1.s, z29.s, z20.d
+047A83F4 asr z20.h, z31.h, z26.d
+04378055 asr z21.b, z2.b, z23.d
+043181BF asr z31.b, z13.b, z17.d
+04B183A5 asr z5.s, z29.s, z17.d
+042E8218 asr z24.b, z16.b, z14.d
+04A2806F asr z15.s, z3.s, z2.d
+04B08171 asr z17.s, z11.s, z16.d
+04768163 asr z3.h, z11.h, z22.d
+04298077 asr z23.b, z3.b, z9.d
+04378192 asr z18.b, z12.b, z23.d
+04AE829C asr z28.s, z20.s, z14.d
+04A08000 asr z0.s, z0.s, z0.d
+04BF8110 asr z16.s, z8.s, z31.d
+04EB8110 UNDEFINED

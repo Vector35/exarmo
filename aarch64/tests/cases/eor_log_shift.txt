@@ -1,0 +1,55 @@
+// EOR_32_log_shift sf=0|opc=10|01010|shift=xx|N=0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Eor32LogShift: EOR  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+4A8F6B59 eor w25, w26, w15, asr #0x1a
+4ADD44FF eor wzr, w7, w29, ror #0x11
+4A541351 eor w17, w26, w20, lsr #0x4
+4A8A1345 eor w5, w26, w10, asr #0x4
+4A1E56C7 eor w7, w22, w30, lsl #0x15
+4A4E058C eor w12, w12, w14, lsr #0x1
+4AC163E0 eor w0, wzr, w1, ror #0x18
+4AC25A3B eor w27, w17, w2, ror #0x16
+4A5B1335 eor w21, w25, w27, lsr #0x4
+4A43742B eor w11, w1, w3, lsr #0x1d
+4A0E5F42 eor w2, w26, w14, lsl #0x17
+4AD53953 eor w19, w10, w21, ror #0xe
+4A053EB0 eor w16, w21, w5, lsl #0xf
+4A8702D9 eor w25, w22, w7, asr #0x0
+4A8A1F07 eor w7, w24, w10, asr #0x7
+4A5372CF eor w15, w22, w19, lsr #0x1c
+4A806819 eor w25, w0, w0, asr #0x1a
+4A9F6B59 eor w25, w26, wzr, asr #0x1a
+4A8FFF59 UNDEFINED
+4A8F6B4F eor w15, w26, w15, asr #0x1a
+4A8F8359 UNDEFINED
+4A8F4359 eor w25, w26, w15, asr #0x10
+4A8F2359 eor w25, w26, w15, asr #0x8
+4A8F0B59 eor w25, w26, w15, asr #0x2
+
+// EOR_64_log_shift sf=1|opc=10|01010|shift=xx|N=0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Eor64LogShift: EOR  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+CA5BFAF0 eor x16, x23, x27, lsr #0x3e
+CA460304 eor x4, x24, x6, lsr #0x0
+CA4842EC eor x12, x23, x8, lsr #0x10
+CA13E575 eor x21, x11, x19, lsl #0x39
+CADD1EDB eor x27, x22, fp, ror #0x7
+CA99B43D eor fp, x1, x25, asr #0x2d
+CA587AE8 eor x8, x23, x24, lsr #0x1e
+CA08037C eor x28, x27, x8
+CADEA515 eor x21, x8, lr, ror #0x29
+CA00F321 eor x1, x25, x0, lsl #0x3c
+CAC308D8 eor x24, x6, x3, ror #0x2
+CA53DB00 eor x0, x24, x19, lsr #0x36
+CAC5923A eor x26, x17, x5, ror #0x24
+CAC08F40 eor x0, x26, x0, ror #0x23
+CA436F7F eor xzr, x27, x3, lsr #0x1b
+CA18E186 eor x6, x12, x24, lsl #0x38
+CA5FFC10 eor x16, x0, xzr, lsr #0x3f
+CA5BFBF0 eor x16, xzr, x27, lsr #0x3e
+CA5BFB70 eor x16, x27, x27, lsr #0x3e
+CA5BFAF7 eor x23, x23, x27, lsr #0x3e
+CA5B82F0 eor x16, x23, x27, lsr #0x20
+CA5B22F0 eor x16, x23, x27, lsr #0x8
+CA5B12F0 eor x16, x23, x27, lsr #0x4
+CA5B06F0 eor x16, x23, x27, lsr #0x1

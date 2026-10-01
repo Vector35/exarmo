@@ -1,0 +1,44 @@
+// LSLV_32_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|0010|op2=00|Rn=xxxxx|Rd=xxxxx
+// Lslv32Dp2src: LSLV  <Wd>, <Wn>, <Wm>
+// LslLslv32Dp2src: LSL  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AD72177 lsl w23, w11, w23
+1ACD2129 lsl w9, w9, w13
+1ACB2385 lsl w5, w28, w11
+1ACE23F6 lsl w22, wzr, w14
+1ADA2249 lsl w9, w18, w26
+1AC92229 lsl w9, w17, w9
+1AC6234C lsl w12, w26, w6
+1AD620D6 lsl w22, w6, w22
+1ACC2238 lsl w24, w17, w12
+1ADF234D lsl w13, w26, wzr
+1AC62373 lsl w19, w27, w6
+1AD520F9 lsl w25, w7, w21
+1AC2213A lsl w26, w9, w2
+1ACA2380 lsl w0, w28, w10
+1AD1203A lsl w26, w1, w17
+1AD82142 lsl w2, w10, w24
+1AC0201F lsl wzr, w0, w0
+
+// LSLV_64_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|0010|op2=00|Rn=xxxxx|Rd=xxxxx
+// Lslv64Dp2src: LSLV  <Xd>, <Xn>, <Xm>
+// LslLslv64Dp2src: LSL  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9ACB2231 lsl x17, x17, x11
+9AD42243 lsl x3, x18, x20
+9AD820E7 lsl x7, x7, x24
+9AD62384 lsl x4, x28, x22
+9ADC2183 lsl x3, x12, x28
+9AC821D8 lsl x24, x14, x8
+9AD023A9 lsl x9, fp, x16
+9ADA20EC lsl x12, x7, x26
+9AD1206E lsl x14, x3, x17
+9AD62301 lsl x1, x24, x22
+9ADF20CF lsl x15, x6, xzr
+9AD2234E lsl x14, x26, x18
+9AC42179 lsl x25, x11, x4
+9AC62173 lsl x19, x11, x6
+9ACC23AB lsl x11, fp, x12
+9AC92174 lsl x20, x11, x9
+9AC02000 lsl x0, x0, x0
+9ACB23FF lsl xzr, xzr, x11

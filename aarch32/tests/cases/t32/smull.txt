@@ -1,0 +1,8 @@
+// SMULL_T1 111|1101|11|op1=000|Rn=xxxx|RdLo=xxxx|RdHi=xxxx|op2=0000|Rm=xxxx
+// SmullT1: SMULL{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: Rn, RdLo, RdHi, Rm
+// IT state read: condition
+FB800000 smull r0, r0, r0, r0 (unpredictable)
+FB8FFF0F smull pc, pc, pc, pc (unpredictable)
+FB800000 [ne] smullne r0, r0, r0, r0 (unpredictable)
+FB812304 smull r2, r3, r1, r4

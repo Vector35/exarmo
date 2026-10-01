@@ -1,0 +1,22 @@
+// umax_mz_zzw_2x2 1|10|0000|1|size=xx|1|Zm=xxxx|0101100|000|opc=00|Zdn=xxxx|U=1
+// UmaxMzZzw2x2: UMAX  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Zm, Zdn
+C120B005 umax {z4.b-z5.b}, {z4.b-z5.b}, {z0.b-z1.b}
+C120B013 umax {z18.b-z19.b}, {z18.b-z19.b}, {z0.b-z1.b}
+C122B001 umax {z0.b-z1.b}, {z0.b-z1.b}, {z2.b-z3.b}
+C17EB01F umax {z30.h-z31.h}, {z30.h-z31.h}, {z30.h-z31.h}
+C1A0B005 umax {z4.s-z5.s}, {z4.s-z5.s}, {z0.s-z1.s}
+C1E0B005 umax {z4.d-z5.d}, {z4.d-z5.d}, {z0.d-z1.d}
+
+// umax_mz_zzw_4x4 1|10|0000|1|size=xx|1|Zm=xxx|00101110|000|opc=00|Zdn=xxx|0|U=1
+// UmaxMzZzw4x4: UMAX  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Zm, Zdn
+C120B801 umax {z0.b-z3.b}, {z0.b-z3.b}, {z0.b-z3.b}
+C120B81D umax {z28.b-z31.b}, {z28.b-z31.b}, {z0.b-z3.b}
+C124B815 umax {z20.b-z23.b}, {z20.b-z23.b}, {z4.b-z7.b}
+C168B805 umax {z4.h-z7.h}, {z4.h-z7.h}, {z8.h-z11.h}
+C1ACB809 umax {z8.s-z11.s}, {z8.s-z11.s}, {z12.s-z15.s}
+C1F0B80D umax {z12.d-z15.d}, {z12.d-z15.d}, {z16.d-z19.d}
+C134B811 umax {z16.b-z19.b}, {z16.b-z19.b}, {z20.b-z23.b}
+C138B819 umax {z24.b-z27.b}, {z24.b-z27.b}, {z24.b-z27.b}
+C13CB801 umax {z0.b-z3.b}, {z0.b-z3.b}, {z28.b-z31.b}

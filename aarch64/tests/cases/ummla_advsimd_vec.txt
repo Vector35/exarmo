@@ -1,0 +1,8 @@
+// UMMLA_asimdsame2_G 0|Q=1|U=1|0|111|0|size=10|0|Rm=xxxxx|1|010|B=0|1|Rn=xxxxx|Rd=xxxxx
+// UmmlaAsimdsame2G: UMMLA  <Vd>.4S, <Vn>.16B, <Vm>.16B
+// register fields: Rm, Rn, Rd
+6E80A400 ummla v0.4s, v0.16b, v0.16b
+6E80A407 ummla v7.4s, v0.16b, v0.16b
+6E80A40E ummla v14.4s, v0.16b, v0.16b
+6E9FA7FF ummla v31.4s, v31.16b, v31.16b
+6E81A443 ummla v3.4s, v2.16b, v1.16b

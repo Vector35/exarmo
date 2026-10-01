@@ -1,0 +1,88 @@
+// USAT_T1_ASR 11110(0)1110|sh=1|0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm2=xx|(0)|sat_imm=xxxxx
+// UsatT1Asr: USAT{<c>}{<q>}  <Rd>, #<imm>, <Rn>, ASR #<amount>
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd
+// IT state read: condition
+f3ab7b0e usat r11, #14, r11, asr #28
+f3ab6f99 usat pc, #25, r11, asr #26 (unpredictable)
+f3a837cc usat r7, #12, r8, asr #15
+F7A01060 usat r0, #0x0, r0, asr #0x5 (unpredictable)
+F3AF2B1F usat r11, #0x1f, pc, asr #0x8 (unpredictable)
+F3AB0F90 usat pc, #0x10, r11, asr #0x2 (unpredictable)
+F3AB4B08 usat r11, #0x8, r11, asr #0x10
+F3AB5B04 usat r11, #0x4, r11, asr #0x14
+F3AB0B42 usat r11, #0x2, r11, asr #0x1
+F3AB0B81 usat r11, #0x1, r11, asr #0x2
+F3AB0BCE usat r11, #0xe, r11, asr #0x3
+F3AB1B0E usat r11, #0xe, r11, asr #0x4
+F3AB1B4E usat r11, #0xe, r11, asr #0x5
+F3AB1B8E usat r11, #0xe, r11, asr #0x6
+F3AB1BCE usat r11, #0xe, r11, asr #0x7
+F3AB2B0E usat r11, #0xe, r11, asr #0x8
+F3AB2B4E usat r11, #0xe, r11, asr #0x9
+F3AB2B8E usat r11, #0xe, r11, asr #0xa
+F3AB2BCE usat r11, #0xe, r11, asr #0xb
+F3AB3B0E usat r11, #0xe, r11, asr #0xc
+F3AB3B4E usat r11, #0xe, r11, asr #0xd
+F3AB3B8E usat r11, #0xe, r11, asr #0xe
+F3AB4B0E usat r11, #0xe, r11, asr #0x10
+F3AB4B4E usat r11, #0xe, r11, asr #0x11
+F3AB4B8E usat r11, #0xe, r11, asr #0x12
+F3AB4BCE usat r11, #0xe, r11, asr #0x13
+F3AB5B0E usat r11, #0xe, r11, asr #0x14
+F3AB5B4E usat r11, #0xe, r11, asr #0x15
+F3AB5B8E usat r11, #0xe, r11, asr #0x16
+F3AB5BCE usat r11, #0xe, r11, asr #0x17
+F3AB6B0E usat r11, #0xe, r11, asr #0x18
+F3AB6B4E usat r11, #0xe, r11, asr #0x19
+F3AB6BCE usat r11, #0xe, r11, asr #0x1b
+F3AB7B4E usat r11, #0xe, r11, asr #0x1d
+F3AB7B8E usat r11, #0xe, r11, asr #0x1e
+F3AB7BCE usat r11, #0xe, r11, asr #0x1f
+F3AB7B0E [ne] usatne r11, #0xe, r11, asr #0x1c
+
+// USAT_T1_LSL 11110(0)1110|sh=0|0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm2=xx|(0)|sat_imm=xxxxx
+// UsatT1Lsl: USAT{<c>}{<q>}  <Rd>, #<imm>, <Rn> {, LSL #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd
+// IT state read: condition
+F3800000 usat r0, #0x0, r0
+F78F1F7F usat pc, #0x1f, pc, lsl #0x5 (unpredictable)
+F3802090 usat r0, #0x10, r0, lsl #0xa
+F38030C8 usat r0, #0x8, r0, lsl #0xf
+F3804004 usat r0, #0x4, r0, lsl #0x10
+F3805002 usat r0, #0x2, r0, lsl #0x14
+F3806001 usat r0, #0x1, r0, lsl #0x18
+F3807000 usat r0, #0x0, r0, lsl #0x1c
+F3800040 usat r0, #0x0, r0, lsl #0x1
+F3800080 usat r0, #0x0, r0, lsl #0x2
+F38000C0 usat r0, #0x0, r0, lsl #0x3
+F3801000 usat r0, #0x0, r0, lsl #0x4
+F3801040 usat r0, #0x0, r0, lsl #0x5
+F3801080 usat r0, #0x0, r0, lsl #0x6
+F38010C0 usat r0, #0x0, r0, lsl #0x7
+F3802000 usat r0, #0x0, r0, lsl #0x8
+F3802040 usat r0, #0x0, r0, lsl #0x9
+F3802080 usat r0, #0x0, r0, lsl #0xa
+F38020C0 usat r0, #0x0, r0, lsl #0xb
+F3803000 usat r0, #0x0, r0, lsl #0xc
+F3803040 usat r0, #0x0, r0, lsl #0xd
+F3803080 usat r0, #0x0, r0, lsl #0xe
+F38030C0 usat r0, #0x0, r0, lsl #0xf
+F3804000 usat r0, #0x0, r0, lsl #0x10
+F3804040 usat r0, #0x0, r0, lsl #0x11
+F3804080 usat r0, #0x0, r0, lsl #0x12
+F38040C0 usat r0, #0x0, r0, lsl #0x13
+F3805000 usat r0, #0x0, r0, lsl #0x14
+F3805040 usat r0, #0x0, r0, lsl #0x15
+F3805080 usat r0, #0x0, r0, lsl #0x16
+F38050C0 usat r0, #0x0, r0, lsl #0x17
+F3806000 usat r0, #0x0, r0, lsl #0x18
+F3806040 usat r0, #0x0, r0, lsl #0x19
+F3806080 usat r0, #0x0, r0, lsl #0x1a
+F38060C0 usat r0, #0x0, r0, lsl #0x1b
+F3807040 usat r0, #0x0, r0, lsl #0x1d
+F3807080 usat r0, #0x0, r0, lsl #0x1e
+F38070C0 usat r0, #0x0, r0, lsl #0x1f
+F3800000 [ne] usatne r0, #0x0, r0
+F3810200 usat r2, #0x0, r1

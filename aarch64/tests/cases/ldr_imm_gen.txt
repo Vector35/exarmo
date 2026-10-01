@@ -1,0 +1,193 @@
+// LDR_32_ldst_immpost size=10|111|VR=0|00|opc=01|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Ldr32LdstImmpost: LDR  <Wt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+B843F650 ldr w16, [x18], #0x3f
+B858B6C8 ldr w8, [x22], #-0x75
+B85237E3 ldr w3, [sp], #-0xdd
+B843F7CC ldr w12, [lr], #0x3f
+B8547626 ldr w6, [x17], #-0xb9
+B84355D9 ldr w25, [x14], #0x35
+B84895FE ldr w30, [x15], #0x89
+B85C35AC ldr w12, [x13], #-0x3d
+B84F248B ldr w11, [x4], #0xf2
+B840D724 ldr w4, [x25], #0xd
+B85CD6C9 ldr w9, [x22], #-0x33
+B84957F4 ldr w20, [sp], #0x95
+B8494597 ldr w23, [x12], #0x94
+B85F5757 ldr w23, [x26], #-0xb
+B846A78A ldr w10, [x28], #0x6a
+B85954A4 ldr w4, [x5], #-0x6b
+B8400400 ldr w0, [x0], #0x0 (unpredictable)
+B85FF65F ldr wzr, [x18], #-0x1
+B8500650 ldr w16, [x18], #-0x100
+B8480650 ldr w16, [x18], #0x80
+B8440650 ldr w16, [x18], #0x40
+B8420650 ldr w16, [x18], #0x20
+B8410650 ldr w16, [x18], #0x10
+B8408650 ldr w16, [x18], #0x8
+B8404650 ldr w16, [x18], #0x4
+B8402650 ldr w16, [x18], #0x2
+B8401650 ldr w16, [x18], #0x1
+
+// LDR_32_ldst_immpre size=10|111|VR=0|00|opc=01|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Ldr32LdstImmpre: LDR  <Wt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+B84ABD0F ldr w15, [x8, #0xab]!
+B841CDC6 ldr w6, [x14, #0x1c]!
+B85D5D94 ldr w20, [x12, #-0x2b]!
+B846EED7 ldr w23, [x22, #0x6e]!
+B8497D0B ldr w11, [x8, #0x97]!
+B84C5DB6 ldr w22, [x13, #0xc5]!
+B8430CC7 ldr w7, [x6, #0x30]!
+B85CCD89 ldr w9, [x12, #-0x34]!
+B8416C0B ldr w11, [x0, #0x16]!
+B84C0D4E ldr w14, [x10, #0xc0]!
+B8519FCF ldr w15, [lr, #-0xe7]!
+B859FD61 ldr w1, [x11, #-0x61]!
+B85E1F15 ldr w21, [x24, #-0x1f]!
+B844FE15 ldr w21, [x16, #0x4f]!
+B851EDF4 ldr w20, [x15, #-0xe2]!
+B8562EF8 ldr w24, [x23, #-0x9e]!
+B8400FE0 ldr w0, [sp, #0x0]!
+B85FFD1F ldr wzr, [x8, #-0x1]!
+B84ABD08 ldr w8, [x8, #0xab]! (unpredictable)
+B8500D0F ldr w15, [x8, #-0x100]!
+B8480D0F ldr w15, [x8, #0x80]!
+B8440D0F ldr w15, [x8, #0x40]!
+B8420D0F ldr w15, [x8, #0x20]!
+B8410D0F ldr w15, [x8, #0x10]!
+B8408D0F ldr w15, [x8, #0x8]!
+B8404D0F ldr w15, [x8, #0x4]!
+B8402D0F ldr w15, [x8, #0x2]!
+B8401D0F ldr w15, [x8, #0x1]!
+
+// LDR_32_ldst_pos size=10|111|VR=0|01|opc=01|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldr32LdstPos: LDR  <Wt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+B965FB5F ldr wzr, [x26, #0x25f8]
+B9619889 ldr w9, [x4, #0x2198]
+B9425735 ldr w21, [x25, #0x254]
+B960144E ldr w14, [x2, #0x2014]
+B9628E57 ldr w23, [x18, #0x228c]
+B97E2A54 ldr w20, [x18, #0x3e28]
+B97406DB ldr w27, [x22, #0x3404]
+B96E5078 ldr w24, [x3, #0x2e50]
+B959A457 ldr w23, [x2, #0x19a4]
+B94F191B ldr w27, [x8, #0xf18]
+B962286C ldr w12, [x3, #0x2228]
+B94B7E65 ldr w5, [x19, #0xb7c]
+B977978A ldr w10, [x28, #0x3794]
+B967E2C8 ldr w8, [x22, #0x27e0]
+B946AD57 ldr w23, [x10, #0x6ac]
+B94CE30E ldr w14, [x24, #0xce0]
+B9400000 ldr w0, [x0]
+B97FFFFF ldr wzr, [sp, #0x3ffc]
+B960035F ldr wzr, [x26, #0x2000]
+B950035F ldr wzr, [x26, #0x1000]
+B948035F ldr wzr, [x26, #0x800]
+B944035F ldr wzr, [x26, #0x400]
+B942035F ldr wzr, [x26, #0x200]
+B941035F ldr wzr, [x26, #0x100]
+B940835F ldr wzr, [x26, #0x80]
+B940435F ldr wzr, [x26, #0x40]
+B940235F ldr wzr, [x26, #0x20]
+B940135F ldr wzr, [x26, #0x10]
+B9400B5F ldr wzr, [x26, #0x8]
+B940075F ldr wzr, [x26, #0x4]
+
+// LDR_64_ldst_immpost size=11|111|VR=0|00|opc=01|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Ldr64LdstImmpost: LDR  <Xt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+F85FA74E ldr x14, [x26], #-0x6
+F8548578 ldr x24, [x11], #-0xb8
+F8402473 ldr x19, [x3], #0x2
+F846854E ldr x14, [x10], #0x68
+F855473F ldr xzr, [x25], #-0xac
+F85B8717 ldr x23, [x24], #-0x48
+F84816AB ldr x11, [x21], #0x81
+F85BD720 ldr x0, [x25], #-0x43
+F84AA765 ldr x5, [x27], #0xaa
+F856852D ldr x13, [x9], #-0x98
+F85C550A ldr x10, [x8], #-0x3b
+F85DA798 ldr x24, [x28], #-0x26
+F84C24F5 ldr x21, [x7], #0xc2
+F85546BD ldr fp, [x21], #-0xac
+F84F953F ldr xzr, [x9], #0xf9
+F85CA4BB ldr x27, [x5], #-0x36
+F840040E ldr x14, [x0], #0x0
+F85FF7EE ldr x14, [sp], #-0x1
+F85FA75A ldr x26, [x26], #-0x6 (unpredictable)
+F850074E ldr x14, [x26], #-0x100
+F848074E ldr x14, [x26], #0x80
+F844074E ldr x14, [x26], #0x40
+F842074E ldr x14, [x26], #0x20
+F841074E ldr x14, [x26], #0x10
+F840874E ldr x14, [x26], #0x8
+F840474E ldr x14, [x26], #0x4
+F840174E ldr x14, [x26], #0x1
+
+// LDR_64_ldst_immpre size=11|111|VR=0|00|opc=01|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Ldr64LdstImmpre: LDR  <Xt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+F845EC10 ldr x16, [x0, #0x5e]!
+F84F9C49 ldr x9, [x2, #0xf9]!
+F8551DE4 ldr x4, [x15, #-0xaf]!
+F85BDFC3 ldr x3, [lr, #-0x43]!
+F84B2DF0 ldr x16, [x15, #0xb2]!
+F8417E91 ldr x17, [x20, #0x17]!
+F8501ECB ldr x11, [x22, #-0xff]!
+F84D5E44 ldr x4, [x18, #0xd5]!
+F8430C75 ldr x21, [x3, #0x30]!
+F859DF11 ldr x17, [x24, #-0x63]!
+F8511F72 ldr x18, [x27, #-0xef]!
+F843ACB6 ldr x22, [x5, #0x3a]!
+F84B7EBA ldr x26, [x21, #0xb7]!
+F8542D5A ldr x26, [x10, #-0xbe]!
+F85D1FFF ldr xzr, [sp, #-0x2f]!
+F85C6FA6 ldr x6, [fp, #-0x3a]!
+F8400C00 ldr x0, [x0, #0x0]! (unpredictable)
+F85FFC10 ldr x16, [x0, #-0x1]!
+F8500C10 ldr x16, [x0, #-0x100]!
+F8480C10 ldr x16, [x0, #0x80]!
+F8440C10 ldr x16, [x0, #0x40]!
+F8420C10 ldr x16, [x0, #0x20]!
+F8410C10 ldr x16, [x0, #0x10]!
+F8408C10 ldr x16, [x0, #0x8]!
+F8404C10 ldr x16, [x0, #0x4]!
+F8402C10 ldr x16, [x0, #0x2]!
+F8401C10 ldr x16, [x0, #0x1]!
+
+// LDR_64_ldst_pos size=11|111|VR=0|01|opc=01|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldr64LdstPos: LDR  <Xt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+F96ECD59 ldr x25, [x10, #0x5d98]
+F96D251A ldr x26, [x8, #0x5a48]
+F955A51E ldr lr, [x8, #0x2b48]
+F9741414 ldr x20, [x0, #0x6828]
+F97CC9B3 ldr x19, [x13, #0x7990]
+F961FBEC ldr x12, [sp, #0x43f0]
+F94DA675 ldr x21, [x19, #0x1b48]
+F943445D ldr fp, [x2, #0x688]
+F94DBA54 ldr x20, [x18, #0x1b70]
+F978908F ldr x15, [x4, #0x7120]
+F97EDDE5 ldr x5, [x15, #0x7db8]
+F9469399 ldr x25, [x28, #0xd20]
+F94B4A43 ldr x3, [x18, #0x1690]
+F96179D8 ldr x24, [x14, #0x42f0]
+F95F7C68 ldr x8, [x3, #0x3ef8]
+F9573869 ldr x9, [x3, #0x2e70]
+F9400140 ldr x0, [x10]
+F97FFD5F ldr xzr, [x10, #0x7ff8]
+F96ECD4A ldr x10, [x10, #0x5d98]
+F9600159 ldr x25, [x10, #0x4000]
+F9500159 ldr x25, [x10, #0x2000]
+F9480159 ldr x25, [x10, #0x1000]
+F9440159 ldr x25, [x10, #0x800]
+F9420159 ldr x25, [x10, #0x400]
+F9410159 ldr x25, [x10, #0x200]
+F9408159 ldr x25, [x10, #0x100]
+F9404159 ldr x25, [x10, #0x80]
+F9402159 ldr x25, [x10, #0x40]
+F9401159 ldr x25, [x10, #0x20]
+F9400959 ldr x25, [x10, #0x10]
+F9400559 ldr x25, [x10, #0x8]

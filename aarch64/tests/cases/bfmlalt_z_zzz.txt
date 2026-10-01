@@ -1,0 +1,15 @@
+// bfmlalt_z_zzz_ 011|0010|0|1|o2=1|1|Zm=xxxxx|10|op=0|00|T=1|Zn=xxxxx|Zda=xxxxx
+// BfmlaltZZzz: BFMLALT  <Zda>.S, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zda
+64E68747 bfmlalt z7.s, z26.h, z6.h
+64EC85D3 bfmlalt z19.s, z14.h, z12.h
+64F184A3 bfmlalt z3.s, z5.h, z17.h
+64F084AF bfmlalt z15.s, z5.h, z16.h
+64EE8721 bfmlalt z1.s, z25.h, z14.h
+64FF8410 bfmlalt z16.s, z0.h, z31.h
+64E786E6 bfmlalt z6.s, z23.h, z7.h
+64F28589 bfmlalt z9.s, z12.h, z18.h
+64E087E0 bfmlalt z0.s, z31.h, z0.h
+64E6875F bfmlalt z31.s, z26.h, z6.h
+64E684C7 bfmlalt z7.s, z6.h, z6.h
+64E6875A bfmlalt z26.s, z26.h, z6.h

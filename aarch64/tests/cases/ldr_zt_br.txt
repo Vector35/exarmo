@@ -1,0 +1,8 @@
+// ldr_zt_br_ 1|11|0000|100|opc=011111|1|00000|Rn=xxxxx|000|opc2=00
+// LdrZtBr: LDR  ZT0, [<Xn|SP>]
+// register fields: Rn
+E11F80A0 ldr zt0, [x5]
+E11F8180 ldr zt0, [x12]
+E11F8260 ldr zt0, [x19]
+E11F8000 ldr zt0, [x0]
+E11F83E0 ldr zt0, [sp]

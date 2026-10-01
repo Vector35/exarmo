@@ -1,0 +1,21 @@
+// UXTAB_A1 cond=xxxx|011|01|U=1|op=10|Rn=xxxx|Rd=xxxx|rotate=xx|(0)(0)|011|1|Rm=xxxx
+// UxtabA1: UXTAB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, ROR #<amount>}
+// register fields: Rn, Rd, Rm
+c6ecef77 uxtabgt lr, r12, r7, ror #24 (unpredictable)
+56ee597f uxtabpl r5, lr, pc, ror #16 (unpredictable)
+e6e1ac75 uxtab r10, r1, r5, ror #24
+26e61171 uxtabhs r1, r6, r1 (unpredictable)
+d6ed2476 uxtable r2, sp, r6, ror #8
+66e7a276 uxtabvs r10, r7, r6 (unpredictable)
+56e5e778 uxtabpl lr, r5, r8, ror #8 (unpredictable)
+86e79579 uxtabhi r9, r7, r9, ror #8 (unpredictable)
+// Binary Ninja's tests
+b6e26479 uxtablt r6, r2, r9, ror #8
+e6e15874 uxtab r5, r1, r4, ror #16
+e6e32074 uxtab r2, r3, r4
+e6e54076 uxtab r4, r5, r6
+e6e87c73 uxtab r7, r8, r3, ror #24
+06E00F70 uxtabeq r0, r0, r0, ror #0x18 (unpredictable)
+F6EFEF77 UNALLOCATED
+46ECFF7C uxtabmi pc, r12, r12, ror #0x18 (unpredictable)
+16ECCF77 uxtabne r12, r12, r7, ror #0x18 (unpredictable)

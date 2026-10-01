@@ -1,0 +1,12 @@
+// uvdot_za32_zzi_2xi 1|10|0000|1|01|01|Zm=xxxx|0|Rv=xx|op=0|i2=xx|Zn=xxxx|1|U=1|0|off3=xxx
+// UvdotZa32Zzi2xi: UVDOT  ZA.S[<Wv>, <offs>{, VGx2}], { <Zn1>.H-<Zn2>.H }, <Zm>.H[<index>]
+// register fields: Zm, Rv, Zn
+C1500035 uvdot za.s[w8, 5, vgx2], {z0.h-z1.h}, z0.h[0]
+C1500074 uvdot za.s[w8, 4, vgx2], {z2.h-z3.h}, z0.h[0]
+C15000B3 uvdot za.s[w8, 3, vgx2], {z4.h-z5.h}, z0.h[0]
+C15F27F0 uvdot za.s[w9, 0, vgx2], {z30.h-z31.h}, z15.h[1]
+C1504831 uvdot za.s[w10, 1, vgx2], {z0.h-z1.h}, z0.h[2]
+C1506C32 uvdot za.s[w11, 2, vgx2], {z0.h-z1.h}, z0.h[3]
+C1500036 uvdot za.s[w8, 6, vgx2], {z0.h-z1.h}, z0.h[0]
+C1500037 uvdot za.s[w8, 7, vgx2], {z0.h-z1.h}, z0.h[0]
+C15140F5 uvdot za.s[w10, 5, vgx2], {z6.h-z7.h}, z1.h[0]

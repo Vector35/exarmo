@@ -1,0 +1,43 @@
+// st1b_mzx_p_br_2x8 1|01|0000|10|01|Rm=xxxxx|0|msz=00|PNg=xxx|Rn=xxxxx|T=x|N=0|Zt=xxx
+// St1bMzxPBr2x8: ST1B  { <Zt1>.B, <Zt2>.B }, <PNg>, [<Xn|SP>, <Xm>]
+// read together by <Zt1> and <Zt2>: T, Zt
+// register fields: Rm, PNg, Rn
+A1200006 st1b {z6.b, z14.b}, pn8, [x0, x0]
+A1200014 st1b {z20.b, z28.b}, pn8, [x0, x0]
+A1200022 st1b {z2.b, z10.b}, pn8, [x1, x0]
+A13F07E0 st1b {z0.b, z8.b}, pn9, [sp, xzr]
+A1200801 st1b {z1.b, z9.b}, pn10, [x0, x0]
+A1200C03 st1b {z3.b, z11.b}, pn11, [x0, x0]
+A1201005 st1b {z5.b, z13.b}, pn12, [x0, x0]
+A1201407 st1b {z7.b, z15.b}, pn13, [x0, x0]
+A1201806 st1b {z6.b, z14.b}, pn14, [x0, x0]
+A1201C06 st1b {z6.b, z14.b}, pn15, [x0, x0]
+A1200004 st1b {z4.b, z12.b}, pn8, [x0, x0]
+A1200010 st1b {z16.b, z24.b}, pn8, [x0, x0]
+A1200011 st1b {z17.b, z25.b}, pn8, [x0, x0]
+A1200012 st1b {z18.b, z26.b}, pn8, [x0, x0]
+A1200013 st1b {z19.b, z27.b}, pn8, [x0, x0]
+A1200015 st1b {z21.b, z29.b}, pn8, [x0, x0]
+A1200016 st1b {z22.b, z30.b}, pn8, [x0, x0]
+A1200017 st1b {z23.b, z31.b}, pn8, [x0, x0]
+A1210866 st1b {z6.b, z14.b}, pn10, [x3, x1]
+
+// st1b_mzx_p_br_4x4 1|01|0000|10|01|Rm=xxxxx|1|msz=00|PNg=xxx|Rn=xxxxx|T=x|N=0|0|Zt=xx
+// St1bMzxPBr4x4: ST1B  { <Zt1>.B, <Zt2>.B, <Zt3>.B, <Zt4>.B }, <PNg>, [<Xn|SP>, <Xm>]
+// read together by <Zt1> and <Zt2> and <Zt3> and <Zt4>: T, Zt
+// register fields: Rm, PNg, Rn
+A1208013 st1b {z19.b, z23.b, z27.b, z31.b}, pn8, [x0, x0]
+A1208021 st1b {z1.b, z5.b, z9.b, z13.b}, pn8, [x1, x0]
+A1208052 st1b {z18.b, z22.b, z26.b, z30.b}, pn8, [x2, x0]
+A13F87F0 st1b {z16.b, z20.b, z24.b, z28.b}, pn9, [sp, xzr]
+A1208813 st1b {z19.b, z23.b, z27.b, z31.b}, pn10, [x0, x0]
+A1208C13 st1b {z19.b, z23.b, z27.b, z31.b}, pn11, [x0, x0]
+A1209013 st1b {z19.b, z23.b, z27.b, z31.b}, pn12, [x0, x0]
+A1209413 st1b {z19.b, z23.b, z27.b, z31.b}, pn13, [x0, x0]
+A1209813 st1b {z19.b, z23.b, z27.b, z31.b}, pn14, [x0, x0]
+A1209C13 st1b {z19.b, z23.b, z27.b, z31.b}, pn15, [x0, x0]
+A1208000 st1b {z0.b, z4.b, z8.b, z12.b}, pn8, [x0, x0]
+A1208002 st1b {z2.b, z6.b, z10.b, z14.b}, pn8, [x0, x0]
+A1208003 st1b {z3.b, z7.b, z11.b, z15.b}, pn8, [x0, x0]
+A1208011 st1b {z17.b, z21.b, z25.b, z29.b}, pn8, [x0, x0]
+A1218873 st1b {z19.b, z23.b, z27.b, z31.b}, pn10, [x3, x1]

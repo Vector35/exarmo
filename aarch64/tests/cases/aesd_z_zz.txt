@@ -1,0 +1,13 @@
+// aesd_z_zz_ 010|0010|1|size=00|1|000|1|op=0|111|00|o2=1|Zm=xxxxx|Zdn=xxxxx
+// AesdZZz: AESD  <Zdn>.B, <Zdn>.B, <Zm>.B
+// register fields: Zm, Zdn
+4522E5DE aesd z30.b, z30.b, z14.b
+4522E7ED aesd z13.b, z13.b, z31.b
+4522E734 aesd z20.b, z20.b, z25.b
+4522E67E aesd z30.b, z30.b, z19.b
+4522E6E8 aesd z8.b, z8.b, z23.b
+4522E569 aesd z9.b, z9.b, z11.b
+4522E628 aesd z8.b, z8.b, z17.b
+4522E667 aesd z7.b, z7.b, z19.b
+4522E400 aesd z0.b, z0.b, z0.b
+4522E5DF aesd z31.b, z31.b, z14.b

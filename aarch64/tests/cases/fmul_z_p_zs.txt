@@ -1,0 +1,23 @@
+// fmul_z_p_zs_ 011|0010|1|size=xx|0|11|opc=010|100|Pg=xxx|0000|i1=x|Zdn=xxxxx
+// FmulZPZs: FMUL  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <const>
+// register fields: Pg, Zdn
+655A9414 fmul z20.h, p5/m, z20.h, #0.5
+655A8C27 fmul z7.h, p3/m, z7.h, #2.0
+65DA9C2F fmul z15.d, p7/m, z15.d, #2.0
+659A880E fmul z14.s, p2/m, z14.s, #0.5
+659A8818 fmul z24.s, p2/m, z24.s, #0.5
+659A8813 fmul z19.s, p2/m, z19.s, #0.5
+659A8C34 fmul z20.s, p3/m, z20.s, #2.0
+65DA982E fmul z14.d, p6/m, z14.d, #2.0
+655A9C27 fmul z7.h, p7/m, z7.h, #2.0
+655A9C2B fmul z11.h, p7/m, z11.h, #2.0
+655A943E fmul z30.h, p5/m, z30.h, #2.0
+655A8C09 fmul z9.h, p3/m, z9.h, #0.5
+659A9C08 fmul z8.s, p7/m, z8.s, #0.5
+659A8C3F fmul z31.s, p3/m, z31.s, #2.0
+65DA9C0D fmul z13.d, p7/m, z13.d, #0.5
+659A943E fmul z30.s, p5/m, z30.s, #2.0
+655A8000 fmul z0.h, p0/m, z0.h, #0.5
+655A8414 fmul z20.h, p1/m, z20.h, #0.5
+655A9014 fmul z20.h, p4/m, z20.h, #0.5
+651A9414 UNDEFINED

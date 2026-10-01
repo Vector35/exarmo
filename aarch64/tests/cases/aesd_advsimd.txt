@@ -1,0 +1,20 @@
+// AESD_B_cryptoaes 0100|111|0|size=00|10100|0010|D=1|10|Rn=xxxxx|Rd=xxxxx
+// AesdBCryptoaes: AESD  <Vd>.16B, <Vn>.16B
+// register fields: Rn, Rd
+4E285802 aesd v2.16b, v0.16b
+4E285A99 aesd v25.16b, v20.16b
+4E2859FF aesd v31.16b, v15.16b
+4E285A63 aesd v3.16b, v19.16b
+4E28593C aesd v28.16b, v9.16b
+4E285BD9 aesd v25.16b, v30.16b
+4E285A54 aesd v20.16b, v18.16b
+4E28591B aesd v27.16b, v8.16b
+4E28595F aesd v31.16b, v10.16b
+4E285907 aesd v7.16b, v8.16b
+4E285AB7 aesd v23.16b, v21.16b
+4E285BFD aesd v29.16b, v31.16b
+4E285AA7 aesd v7.16b, v21.16b
+4E285B28 aesd v8.16b, v25.16b
+4E285931 aesd v17.16b, v9.16b
+4E28586C aesd v12.16b, v3.16b
+4E285800 aesd v0.16b, v0.16b

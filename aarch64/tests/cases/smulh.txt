@@ -1,0 +1,24 @@
+// SMULH_64_dp_3src sf=1|op54=00|1|101|1|U=0|10|Rm=xxxxx|o0=0|Ra=(1)(1)(1)(1)(1)|Rn=xxxxx|Rd=xxxxx
+// Smulh64Dp3src: SMULH  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9B47643B smulh x27, x1, x7 (unpredictable)
+9B4F14FB smulh x27, x7, x15 (unpredictable)
+9B4D3B73 smulh x19, x27, x13 (unpredictable)
+9B51074D smulh x13, x26, x17 (unpredictable)
+9B4B4756 smulh x22, x26, x11 (unpredictable)
+9B582503 smulh x3, x8, x24 (unpredictable)
+9B5A7325 smulh x5, x25, x26 (unpredictable)
+9B4C58CC smulh x12, x6, x12 (unpredictable)
+9B415B95 smulh x21, x28, x1 (unpredictable)
+9B4251F9 smulh x25, x15, x2 (unpredictable)
+9B44733E smulh lr, x25, x4 (unpredictable)
+9B4C3B0D smulh x13, x24, x12 (unpredictable)
+9B49202E smulh x14, x1, x9 (unpredictable)
+9B5919B3 smulh x19, x13, x25 (unpredictable)
+9B4B106B smulh x11, x3, x11 (unpredictable)
+9B4F375C smulh x28, x26, x15 (unpredictable)
+9B400000 smulh x0, x0, x0 (unpredictable)
+9B5F7FFF smulh xzr, xzr, xzr
+9B47403B smulh x27, x1, x7 (unpredictable)
+9B47083B smulh x27, x1, x7 (unpredictable)
+9B417C43 smulh x3, x2, x1

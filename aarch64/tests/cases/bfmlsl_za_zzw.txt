@@ -1,0 +1,24 @@
+// bfmlsl_za_zzw_2x2 1|10|0000|11|0|1|Zm=xxxx|00|Rv=xx|010|Zn=xxxx|0|op=1|S=1|0|off2=xx
+// BfmlslZaZzw2x2: BFMLSL  ZA.S[<Wv>, <offs1>:<offs2>{, VGx2}], { <Zn1>.H-<Zn2>.H }, { <Zm1>.H-<Zm2>.H }
+// register fields: Zm, Rv, Zn
+C1A0089B bfmlsl za.s[w8, 6:7, vgx2], {z4.h-z5.h}, {z0.h-z1.h}
+C1A008DA bfmlsl za.s[w8, 4:5, vgx2], {z6.h-z7.h}, {z0.h-z1.h}
+C1A00919 bfmlsl za.s[w8, 2:3, vgx2], {z8.h-z9.h}, {z0.h-z1.h}
+C1BE2818 bfmlsl za.s[w9, 0:1, vgx2], {z0.h-z1.h}, {z30.h-z31.h}
+C1A04BDB bfmlsl za.s[w10, 6:7, vgx2], {z30.h-z31.h}, {z0.h-z1.h}
+C1A0689B bfmlsl za.s[w11, 6:7, vgx2], {z4.h-z5.h}, {z0.h-z1.h}
+C1A0081B bfmlsl za.s[w8, 6:7, vgx2], {z0.h-z1.h}, {z0.h-z1.h}
+
+// bfmlsl_za_zzw_4x4 1|10|0000|11|0|1|Zm=xxx|0|10|Rv=xx|010|Zn=xxx|00|op=1|S=1|0|off2=xx
+// BfmlslZaZzw4x4: BFMLSL  ZA.S[<Wv>, <offs1>:<offs2>{, VGx4}], { <Zn1>.H-<Zn4>.H }, { <Zm1>.H-<Zm4>.H }
+// register fields: Zm, Rv, Zn
+C1A1081B bfmlsl za.s[w8, 6:7, vgx4], {z0.h-z3.h}, {z0.h-z3.h}
+C1A10899 bfmlsl za.s[w8, 2:3, vgx4], {z4.h-z7.h}, {z0.h-z3.h}
+C1A10A1A bfmlsl za.s[w8, 4:5, vgx4], {z16.h-z19.h}, {z0.h-z3.h}
+C1A52918 bfmlsl za.s[w9, 0:1, vgx4], {z8.h-z11.h}, {z4.h-z7.h}
+C1A9499B bfmlsl za.s[w10, 6:7, vgx4], {z12.h-z15.h}, {z8.h-z11.h}
+C1AD6A9B bfmlsl za.s[w11, 6:7, vgx4], {z20.h-z23.h}, {z12.h-z15.h}
+C1B10B1B bfmlsl za.s[w8, 6:7, vgx4], {z24.h-z27.h}, {z16.h-z19.h}
+C1B50B9B bfmlsl za.s[w8, 6:7, vgx4], {z28.h-z31.h}, {z20.h-z23.h}
+C1B9081B bfmlsl za.s[w8, 6:7, vgx4], {z0.h-z3.h}, {z24.h-z27.h}
+C1BD081B bfmlsl za.s[w8, 6:7, vgx4], {z0.h-z3.h}, {z28.h-z31.h}

@@ -1,0 +1,29 @@
+// mul_z_zi_ 001|0010|1|size=xx|1|10|opc=000|11|o2=0|imm8=xxxxxxxx|Zdn=xxxxx
+// MulZZi: MUL  <Zdn>.<T>, <Zdn>.<T>, #<imm>
+// register fields: Zdn
+2530DEC1 mul z1.b, z1.b, #-10
+25B0D083 mul z3.s, z3.s, #-124
+25F0C84F mul z15.d, z15.d, #0x42
+25B0DF86 mul z6.s, z6.s, #-4
+25B0CD48 mul z8.s, z8.s, #0x6a
+25F0D96E mul z14.d, z14.d, #-53
+2570CB28 mul z8.h, z8.h, #0x59
+25F0C5DB mul z27.d, z27.d, #0x2e
+2570D5AB mul z11.h, z11.h, #-83
+2570C4F0 mul z16.h, z16.h, #0x27
+2530D79E mul z30.b, z30.b, #-68
+2530CD00 mul z0.b, z0.b, #0x68
+25B0C1E3 mul z3.s, z3.s, #0xf
+25B0C568 mul z8.s, z8.s, #0x2b
+25F0CCA9 mul z9.d, z9.d, #0x65
+2530D3FC mul z28.b, z28.b, #-97
+2530C01F mul z31.b, z31.b, #0x0
+2530DFE1 mul z1.b, z1.b, #-0x1
+2530D001 mul z1.b, z1.b, #-0x80
+2530C801 mul z1.b, z1.b, #0x40
+2530C401 mul z1.b, z1.b, #0x20
+2530C201 mul z1.b, z1.b, #0x10
+2530C101 mul z1.b, z1.b, #0x8
+2530C081 mul z1.b, z1.b, #0x4
+2530C041 mul z1.b, z1.b, #0x2
+2530C021 mul z1.b, z1.b, #0x1

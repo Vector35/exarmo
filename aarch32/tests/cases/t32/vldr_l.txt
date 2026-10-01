@@ -1,0 +1,71 @@
+// VLDR_l_T1_D 1110110|P=1|U=x|D=x|W=0|L=1|Rn=1111|Vd=xxxx|10|size=11|imm8=xxxxxxxx
+// VldrLT1D: VLDR{<c>}{<q>}{<.64>}  <Dd>, <label>
+// read together by <Dd>: D, Vd
+// IT state read: condition
+ed1f2b4f vldr d2, 0xfec8
+eddf1b5f vldr d17, 0x10180
+ed1feb82 vldr d14, 0xfdfc
+ed5f8bb2 vldr d24, 0xfd3c
+ed9f6b65 vldr d6, 0x10198
+ed5fabac vldr d26, 0xfd54
+ed5f5b31 vldr d21, 0xff40
+ed9f1b4a vldr d1, 0x1012c
+ED1F0B00 vldr d0, 0x10004
+ED1FFBFF vldr d15, 0xfc08
+ED1F4B80 vldr d4, 0xfe04
+ED1F0B40 vldr d0, 0xff04
+ED1FFB20 vldr d15, 0xff84
+ED5F0B10 vldr d16, 0xffc4
+ED5FFB08 vldr d31, 0xffe4
+ED1F2B04 vldr d2, 0xfff4
+ED1F2B02 vldr d2, 0xfffc
+ED1F2B01 vldr d2, 0x10000
+ED1F2B4F [ne] vldrne d2, 0xfec8
+
+// VLDR_l_T1_H 1110110|P=1|U=x|D=x|W=0|L=1|Rn=1111|Vd=xxxx|10|size=01|imm8=xxxxxxxx
+// VldrLT1H: VLDR{<c>}{<q>}.16  <Sd>, <label>
+// read together by <Sd>: D, Vd
+// IT state read: condition
+ed9f796c vldr.16 s14, 0x100dc
+ed1f8905 vldr.16 s16, 0xfffa
+ed5f3903 vldr.16 s7, 0xfffe
+ed9f695f vldr.16 s12, 0x100c2
+ed9f793b vldr.16 s14, 0x1007a
+ed1f890d vldr.16 s16, 0xffea
+eddfc98f vldr.16 s25, 0x10122
+eddf79e4 vldr.16 s15, 0x101cc
+ED9F0900 vldr.16 s0, 0x10004
+ED9FF9FF vldr.16 s30, 0x10202
+ED9F4980 vldr.16 s8, 0x10104
+ED9F2940 vldr.16 s4, 0x10084
+ED9F1920 vldr.16 s2, 0x10044
+ED9F0910 vldr.16 s0, 0x10024
+ED9FF908 vldr.16 s30, 0x10014
+EDDF0904 vldr.16 s1, 0x1000c
+EDDFF902 vldr.16 s31, 0x10008
+ED9F7901 vldr.16 s14, 0x10006
+ED9F796C [ne] vldrne.16 s14, 0x100dc (unpredictable)
+
+// VLDR_l_T1_S 1110110|P=1|U=x|D=x|W=0|L=1|Rn=1111|Vd=xxxx|10|size=10|imm8=xxxxxxxx
+// VldrLT1S: VLDR{<c>}{<q>}{<.32>}  <Sd>, <label>
+// read together by <Sd>: D, Vd
+// IT state read: condition
+ed5fba4f vldr s23, 0xfec8
+eddf8a56 vldr s17, 0x1015c
+ed5fba57 vldr s23, 0xfea8
+eddf2a4d vldr s5, 0x10138
+ed5f2a53 vldr s5, 0xfeb8
+eddf4a15 vldr s9, 0x10058
+ed9f8a3f vldr s16, 0x10100
+ed5fbadc vldr s23, 0xfc94
+ED5F0A00 vldr s1, 0x10004
+ED5FFAFF vldr s31, 0xfc08
+ED5F1A80 vldr s3, 0xfe04
+ED1F0A40 vldr s0, 0xff04
+ED1FFA20 vldr s30, 0xff84
+ED5F0A10 vldr s1, 0xffc4
+ED5FFA08 vldr s31, 0xffe4
+ED5FBA04 vldr s23, 0xfff4
+ED5FBA02 vldr s23, 0xfffc
+ED5FBA01 vldr s23, 0x10000
+ED5FBA4F [ne] vldrne s23, 0xfec8

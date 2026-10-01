@@ -1,0 +1,23 @@
+// brkpa_p_p_pp_ 001|0010|1|op=0|S=0|00|Pm=xxxx|11|Pg=xxxx|0|Pn=xxxx|B=0|Pd=xxxx
+// BrkpaPPPp: BRKPA  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// register fields: Pm, Pg, Pn, Pd
+250ADD20 brkpa p0.b, p7/z, p9.b, p10.b
+2505D063 brkpa p3.b, p4/z, p3.b, p5.b
+250BD9CD brkpa p13.b, p6/z, p14.b, p11.b
+2509E9A1 brkpa p1.b, p10/z, p13.b, p9.b
+250FD086 brkpa p6.b, p4/z, p4.b, p15.b
+2502E568 brkpa p8.b, p9/z, p11.b, p2.b
+250BD9AA brkpa p10.b, p6/z, p13.b, p11.b
+2507F00B brkpa p11.b, p12/z, p0.b, p7.b
+250BD58D brkpa p13.b, p5/z, p12.b, p11.b
+2509C088 brkpa p8.b, p0/z, p4.b, p9.b
+250FF00D brkpa p13.b, p12/z, p0.b, p15.b
+2504F84C brkpa p12.b, p14/z, p2.b, p4.b
+250AECA8 brkpa p8.b, p11/z, p5.b, p10.b
+2506F48E brkpa p14.b, p13/z, p4.b, p6.b
+2501F162 brkpa p2.b, p12/z, p11.b, p1.b
+250FE42C brkpa p12.b, p9/z, p1.b, p15.b
+2500FDEF brkpa p15.b, p15/z, p15.b, p0.b
+250AE920 brkpa p0.b, p10/z, p9.b, p10.b
+250ADD40 brkpa p0.b, p7/z, p10.b, p10.b
+250ADD2A brkpa p10.b, p7/z, p9.b, p10.b

@@ -1,0 +1,265 @@
+// ucvtf_z_p_z_h2fp16 011|0010|1|opc=01|0|10|opc2=01|int_U=1|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZH2fp16: UCVTF  <Zd>.H, <Pg>/M, <Zn>.H
+// register fields: Pg, Zn, Zd
+6553BA8D ucvtf z13.h, p6/m, z20.h
+6553BEE7 ucvtf z7.h, p7/m, z23.h
+6553A4C9 ucvtf z9.h, p1/m, z6.h
+6553BF95 ucvtf z21.h, p7/m, z28.h
+6553BC97 ucvtf z23.h, p7/m, z4.h
+6553B600 ucvtf z0.h, p5/m, z16.h
+6553B6C9 ucvtf z9.h, p5/m, z22.h
+6553AFA2 ucvtf z2.h, p3/m, z29.h
+6553B75C ucvtf z28.h, p5/m, z26.h
+6553A404 ucvtf z4.h, p1/m, z0.h
+6553B526 ucvtf z6.h, p5/m, z9.h
+6553B149 ucvtf z9.h, p4/m, z10.h
+6553A8D7 ucvtf z23.h, p2/m, z6.h
+6553BECB ucvtf z11.h, p7/m, z22.h
+6553AA7F ucvtf z31.h, p2/m, z19.h
+6553ACCC ucvtf z12.h, p3/m, z6.h
+6553A3ED ucvtf z13.h, p0/m, z31.h
+6553B8CD ucvtf z13.h, p6/m, z6.h
+6553BA94 ucvtf z20.h, p6/m, z20.h
+
+// ucvtf_z_p_z_h2fp16z 011|0010|0|opc=01|011|10|o2=0|1|o3=1|int_U=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZH2fp16z: UCVTF  <Zd>.H, <Pg>/Z, <Zn>.H
+// register fields: Pg, Zn, Zd
+645CE003 ucvtf z3.h, p0/z, z0.h
+645CE00A ucvtf z10.h, p0/z, z0.h
+645CE011 ucvtf z17.h, p0/z, z0.h
+645CE7E0 ucvtf z0.h, p1/z, z31.h
+645CE81F ucvtf z31.h, p2/z, z0.h
+645CEC03 ucvtf z3.h, p3/z, z0.h
+645CF003 ucvtf z3.h, p4/z, z0.h
+645CF403 ucvtf z3.h, p5/z, z0.h
+645CF803 ucvtf z3.h, p6/z, z0.h
+645CFC03 ucvtf z3.h, p7/z, z0.h
+645CE000 ucvtf z0.h, p0/z, z0.h
+
+// ucvtf_z_p_z_w2d 011|0010|1|opc=11|0|10|opc2=00|int_U=1|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZW2d: UCVTF  <Zd>.D, <Pg>/M, <Zn>.S
+// register fields: Pg, Zn, Zd
+65D1B5AB ucvtf z11.d, p5/m, z13.s
+65D1B0E1 ucvtf z1.d, p4/m, z7.s
+65D1A241 ucvtf z1.d, p0/m, z18.s
+65D1B11E ucvtf z30.d, p4/m, z8.s
+65D1ABF6 ucvtf z22.d, p2/m, z31.s
+65D1B572 ucvtf z18.d, p5/m, z11.s
+65D1A0CB ucvtf z11.d, p0/m, z6.s
+65D1AC72 ucvtf z18.d, p3/m, z3.s
+65D1B128 ucvtf z8.d, p4/m, z9.s
+65D1B5B0 ucvtf z16.d, p5/m, z13.s
+65D1AB3A ucvtf z26.d, p2/m, z25.s
+65D1A9A0 ucvtf z0.d, p2/m, z13.s
+65D1BCE4 ucvtf z4.d, p7/m, z7.s
+65D1B528 ucvtf z8.d, p5/m, z9.s
+65D1A7AE ucvtf z14.d, p1/m, z29.s
+65D1AAD1 ucvtf z17.d, p2/m, z22.s
+65D1B81F ucvtf z31.d, p6/m, z0.s
+65D1B5A5 ucvtf z5.d, p5/m, z13.s
+65D1B5AD ucvtf z13.d, p5/m, z13.s
+
+// ucvtf_z_p_z_w2dz 011|0010|0|opc=11|011|10|o2=0|1|o3=0|int_U=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZW2dz: UCVTF  <Zd>.D, <Pg>/Z, <Zn>.S
+// register fields: Pg, Zn, Zd
+64DCA003 ucvtf z3.d, p0/z, z0.s
+64DCA00A ucvtf z10.d, p0/z, z0.s
+64DCA011 ucvtf z17.d, p0/z, z0.s
+64DCA7E0 ucvtf z0.d, p1/z, z31.s
+64DCA81F ucvtf z31.d, p2/z, z0.s
+64DCAC03 ucvtf z3.d, p3/z, z0.s
+64DCB003 ucvtf z3.d, p4/z, z0.s
+64DCB403 ucvtf z3.d, p5/z, z0.s
+64DCB803 ucvtf z3.d, p6/z, z0.s
+64DCBC03 ucvtf z3.d, p7/z, z0.s
+64DCA000 ucvtf z0.d, p0/z, z0.s
+
+// ucvtf_z_p_z_w2fp16 011|0010|1|opc=01|0|10|opc2=10|int_U=1|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZW2fp16: UCVTF  <Zd>.H, <Pg>/M, <Zn>.S
+// register fields: Pg, Zn, Zd
+6555A013 ucvtf z19.h, p0/m, z0.s
+6555A7C8 ucvtf z8.h, p1/m, z30.s
+6555B02B ucvtf z11.h, p4/m, z1.s
+6555BA52 ucvtf z18.h, p6/m, z18.s
+6555B32C ucvtf z12.h, p4/m, z25.s
+6555ACD4 ucvtf z20.h, p3/m, z6.s
+6555BC1E ucvtf z30.h, p7/m, z0.s
+6555AB75 ucvtf z21.h, p2/m, z27.s
+6555A93D ucvtf z29.h, p2/m, z9.s
+6555A78F ucvtf z15.h, p1/m, z28.s
+6555B9BE ucvtf z30.h, p6/m, z13.s
+6555BF83 ucvtf z3.h, p7/m, z28.s
+6555B331 ucvtf z17.h, p4/m, z25.s
+6555A21B ucvtf z27.h, p0/m, z16.s
+6555ADDF ucvtf z31.h, p3/m, z14.s
+6555B895 ucvtf z21.h, p6/m, z4.s
+6555B7E0 ucvtf z0.h, p5/m, z31.s
+6555A000 ucvtf z0.h, p0/m, z0.s
+
+// ucvtf_z_p_z_w2fp16z 011|0010|0|opc=01|011|10|o2=1|1|o3=0|int_U=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZW2fp16z: UCVTF  <Zd>.H, <Pg>/Z, <Zn>.S
+// register fields: Pg, Zn, Zd
+645DA005 ucvtf z5.h, p0/z, z0.s
+645DA00C ucvtf z12.h, p0/z, z0.s
+645DA013 ucvtf z19.h, p0/z, z0.s
+645DA7E0 ucvtf z0.h, p1/z, z31.s
+645DA81F ucvtf z31.h, p2/z, z0.s
+645DAC05 ucvtf z5.h, p3/z, z0.s
+645DB005 ucvtf z5.h, p4/z, z0.s
+645DB405 ucvtf z5.h, p5/z, z0.s
+645DB805 ucvtf z5.h, p6/z, z0.s
+645DBC05 ucvtf z5.h, p7/z, z0.s
+645DA000 ucvtf z0.h, p0/z, z0.s
+
+// ucvtf_z_p_z_w2s 011|0010|1|opc=10|0|10|opc2=10|int_U=1|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZW2s: UCVTF  <Zd>.S, <Pg>/M, <Zn>.S
+// register fields: Pg, Zn, Zd
+6595A525 ucvtf z5.s, p1/m, z9.s
+6595A026 ucvtf z6.s, p0/m, z1.s
+6595A388 ucvtf z8.s, p0/m, z28.s
+6595AC17 ucvtf z23.s, p3/m, z0.s
+6595A324 ucvtf z4.s, p0/m, z25.s
+6595B83A ucvtf z26.s, p6/m, z1.s
+6595A453 ucvtf z19.s, p1/m, z2.s
+6595A823 ucvtf z3.s, p2/m, z1.s
+6595AD85 ucvtf z5.s, p3/m, z12.s
+6595ADD7 ucvtf z23.s, p3/m, z14.s
+6595A37F ucvtf z31.s, p0/m, z27.s
+6595BF45 ucvtf z5.s, p7/m, z26.s
+6595A9A4 ucvtf z4.s, p2/m, z13.s
+6595BFFC ucvtf z28.s, p7/m, z31.s
+6595A51B ucvtf z27.s, p1/m, z8.s
+6595BCE3 ucvtf z3.s, p7/m, z7.s
+6595B120 ucvtf z0.s, p4/m, z9.s
+6595B525 ucvtf z5.s, p5/m, z9.s
+6595A529 ucvtf z9.s, p1/m, z9.s
+
+// ucvtf_z_p_z_w2sz 011|0010|0|opc=10|011|10|o2=1|1|o3=0|int_U=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZW2sz: UCVTF  <Zd>.S, <Pg>/Z, <Zn>.S
+// register fields: Pg, Zn, Zd
+649DA003 ucvtf z3.s, p0/z, z0.s
+649DA00A ucvtf z10.s, p0/z, z0.s
+649DA011 ucvtf z17.s, p0/z, z0.s
+649DA7E0 ucvtf z0.s, p1/z, z31.s
+649DA81F ucvtf z31.s, p2/z, z0.s
+649DAC03 ucvtf z3.s, p3/z, z0.s
+649DB003 ucvtf z3.s, p4/z, z0.s
+649DB403 ucvtf z3.s, p5/z, z0.s
+649DB803 ucvtf z3.s, p6/z, z0.s
+649DBC03 ucvtf z3.s, p7/z, z0.s
+649DA000 ucvtf z0.s, p0/z, z0.s
+
+// ucvtf_z_p_z_x2d 011|0010|1|opc=11|0|10|opc2=11|int_U=1|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZX2d: UCVTF  <Zd>.D, <Pg>/M, <Zn>.D
+// register fields: Pg, Zn, Zd
+65D7A545 ucvtf z5.d, p1/m, z10.d
+65D7A812 ucvtf z18.d, p2/m, z0.d
+65D7BAE0 ucvtf z0.d, p6/m, z23.d
+65D7B6C7 ucvtf z7.d, p5/m, z22.d
+65D7AB34 ucvtf z20.d, p2/m, z25.d
+65D7AD60 ucvtf z0.d, p3/m, z11.d
+65D7BCC3 ucvtf z3.d, p7/m, z6.d
+65D7A0F3 ucvtf z19.d, p0/m, z7.d
+65D7B5B4 ucvtf z20.d, p5/m, z13.d
+65D7B270 ucvtf z16.d, p4/m, z19.d
+65D7AA11 ucvtf z17.d, p2/m, z16.d
+65D7BCA4 ucvtf z4.d, p7/m, z5.d
+65D7B355 ucvtf z21.d, p4/m, z26.d
+65D7BA12 ucvtf z18.d, p6/m, z16.d
+65D7BEDD ucvtf z29.d, p7/m, z22.d
+65D7BCDE ucvtf z30.d, p7/m, z6.d
+65D7A7FF ucvtf z31.d, p1/m, z31.d
+65D7A425 ucvtf z5.d, p1/m, z1.d
+65D7A541 ucvtf z1.d, p1/m, z10.d
+
+// ucvtf_z_p_z_x2dz 011|0010|0|opc=11|011|10|o2=1|1|o3=1|int_U=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZX2dz: UCVTF  <Zd>.D, <Pg>/Z, <Zn>.D
+// register fields: Pg, Zn, Zd
+64DDE004 ucvtf z4.d, p0/z, z0.d
+64DDE00B ucvtf z11.d, p0/z, z0.d
+64DDE012 ucvtf z18.d, p0/z, z0.d
+64DDE7E0 ucvtf z0.d, p1/z, z31.d
+64DDE81F ucvtf z31.d, p2/z, z0.d
+64DDEC04 ucvtf z4.d, p3/z, z0.d
+64DDF004 ucvtf z4.d, p4/z, z0.d
+64DDF404 ucvtf z4.d, p5/z, z0.d
+64DDF804 ucvtf z4.d, p6/z, z0.d
+64DDFC04 ucvtf z4.d, p7/z, z0.d
+64DDE000 ucvtf z0.d, p0/z, z0.d
+
+// ucvtf_z_p_z_x2fp16 011|0010|1|opc=01|0|10|opc2=11|int_U=1|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZX2fp16: UCVTF  <Zd>.H, <Pg>/M, <Zn>.D
+// register fields: Pg, Zn, Zd
+6557AC56 ucvtf z22.h, p3/m, z2.d
+6557BEBE ucvtf z30.h, p7/m, z21.d
+6557A2C8 ucvtf z8.h, p0/m, z22.d
+6557BF79 ucvtf z25.h, p7/m, z27.d
+6557A582 ucvtf z2.h, p1/m, z12.d
+6557B991 ucvtf z17.h, p6/m, z12.d
+6557A2D5 ucvtf z21.h, p0/m, z22.d
+6557B61E ucvtf z30.h, p5/m, z16.d
+6557A31E ucvtf z30.h, p0/m, z24.d
+6557BAB8 ucvtf z24.h, p6/m, z21.d
+6557A825 ucvtf z5.h, p2/m, z1.d
+6557BA05 ucvtf z5.h, p6/m, z16.d
+6557B62A ucvtf z10.h, p5/m, z17.d
+6557A7A7 ucvtf z7.h, p1/m, z29.d
+6557B750 ucvtf z16.h, p5/m, z26.d
+6557BD52 ucvtf z18.h, p7/m, z10.d
+6557B000 ucvtf z0.h, p4/m, z0.d
+6557AFFF ucvtf z31.h, p3/m, z31.d
+6557AC76 ucvtf z22.h, p3/m, z3.d
+6557AC43 ucvtf z3.h, p3/m, z2.d
+
+// ucvtf_z_p_z_x2fp16z 011|0010|0|opc=01|011|10|o2=1|1|o3=1|int_U=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZX2fp16z: UCVTF  <Zd>.H, <Pg>/Z, <Zn>.D
+// register fields: Pg, Zn, Zd
+645DE001 ucvtf z1.h, p0/z, z0.d
+645DE008 ucvtf z8.h, p0/z, z0.d
+645DE00F ucvtf z15.h, p0/z, z0.d
+645DE7E0 ucvtf z0.h, p1/z, z31.d
+645DE81F ucvtf z31.h, p2/z, z0.d
+645DEC01 ucvtf z1.h, p3/z, z0.d
+645DF001 ucvtf z1.h, p4/z, z0.d
+645DF401 ucvtf z1.h, p5/z, z0.d
+645DF801 ucvtf z1.h, p6/z, z0.d
+645DFC01 ucvtf z1.h, p7/z, z0.d
+645DE000 ucvtf z0.h, p0/z, z0.d
+
+// ucvtf_z_p_z_x2s 011|0010|1|opc=11|0|10|opc2=10|int_U=1|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZX2s: UCVTF  <Zd>.S, <Pg>/M, <Zn>.D
+// register fields: Pg, Zn, Zd
+65D5AA23 ucvtf z3.s, p2/m, z17.d
+65D5BA66 ucvtf z6.s, p6/m, z19.d
+65D5AAD9 ucvtf z25.s, p2/m, z22.d
+65D5A43D ucvtf z29.s, p1/m, z1.d
+65D5A5A9 ucvtf z9.s, p1/m, z13.d
+65D5B4FC ucvtf z28.s, p5/m, z7.d
+65D5B01A ucvtf z26.s, p4/m, z0.d
+65D5A445 ucvtf z5.s, p1/m, z2.d
+65D5A1AF ucvtf z15.s, p0/m, z13.d
+65D5AEC5 ucvtf z5.s, p3/m, z22.d
+65D5AD10 ucvtf z16.s, p3/m, z8.d
+65D5BA88 ucvtf z8.s, p6/m, z20.d
+65D5A7D9 ucvtf z25.s, p1/m, z30.d
+65D5B3E1 ucvtf z1.s, p4/m, z31.d
+65D5B4D3 ucvtf z19.s, p5/m, z6.d
+65D5A088 ucvtf z8.s, p0/m, z4.d
+65D5BE20 ucvtf z0.s, p7/m, z17.d
+65D5AA3F ucvtf z31.s, p2/m, z17.d
+65D5AA31 ucvtf z17.s, p2/m, z17.d
+
+// ucvtf_z_p_z_x2sz 011|0010|0|opc=11|011|10|o2=1|1|o3=0|int_U=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UcvtfZPZX2sz: UCVTF  <Zd>.S, <Pg>/Z, <Zn>.D
+// register fields: Pg, Zn, Zd
+64DDA001 ucvtf z1.s, p0/z, z0.d
+64DDA008 ucvtf z8.s, p0/z, z0.d
+64DDA00F ucvtf z15.s, p0/z, z0.d
+64DDA7E0 ucvtf z0.s, p1/z, z31.d
+64DDA81F ucvtf z31.s, p2/z, z0.d
+64DDAC01 ucvtf z1.s, p3/z, z0.d
+64DDB001 ucvtf z1.s, p4/z, z0.d
+64DDB401 ucvtf z1.s, p5/z, z0.d
+64DDB801 ucvtf z1.s, p6/z, z0.d
+64DDBC01 ucvtf z1.s, p7/z, z0.d
+64DDA000 ucvtf z0.s, p0/z, z0.d

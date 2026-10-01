@@ -1,0 +1,29 @@
+// VMULL_i_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|11|op=x|0|N=x|0|M=x|0|Vm=xxxx
+// VmullIA1: VMULL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size, op
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f2d2ac20 vmull.s16 q13, d2, d16
+f2ef6c23 vmull.s32 q11, d15, d19
+f2dc6c2a vmull.s16 q11, d12, d26
+f2a9ce27 vmull.p64 q6, d9, d23
+f3ac4c86 vmull.u32 q2, d28, d6
+f28bac0f vmull.s8 q5, d11, d15
+f3ef0c8b vmull.u32 q8, d31, d11
+f381ec87 vmull.u8 q7, d17, d7
+F2F2FC20 UNDEFINED
+F2C08E28 vmull.p8 q12, d0, d24
+F3D82C24 vmull.u16 q9, d8, d20
+F2940C22 vmull.s16 q0, d4, d18
+F2D21E20 UNDEFINED
+F2D0AC21 vmull.s16 q13, d0, d17
+F2B2FC20 UNDEFINED
+F2F2FE20 UNDEFINED
+F3C2AE20 UNDEFINED
+F3D2AE20 UNDEFINED
+F3E2AE20 UNDEFINED
+F3BC4C86 UNALLOCATED
+F3F2AE20 UNALLOCATED
+F2D0AC80 vmull.s16 q13, d16, d0
+F2D2AC2F vmull.s16 q13, d2, d31

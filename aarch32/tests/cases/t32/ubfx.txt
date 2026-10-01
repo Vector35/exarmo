@@ -1,0 +1,46 @@
+// UBFX_T1 111|10|(0)|1|1|op1=110|0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm2=xx|(0)|widthm1=xxxxx
+// UbfxT1: UBFX{<c>}{<q>}  <Rd>, <Rn>, #<lsb>, #<width>
+// read together by <lsb>: imm3, imm2
+// register fields: Rn, Rd
+// IT state read: condition
+F3C00000 ubfx r0, r0, #0x0, #0x1
+F7CF1F7F UNPREDICTABLE
+F3C02090 ubfx r0, r0, #0xa, #0x11
+F3C030C8 ubfx r0, r0, #0xf, #0x9
+F3C04004 ubfx r0, r0, #0x10, #0x5
+F3C05002 ubfx r0, r0, #0x14, #0x3
+F3C06001 ubfx r0, r0, #0x18, #0x2
+F3C07000 ubfx r0, r0, #0x1c, #0x1
+F3C00040 ubfx r0, r0, #0x1, #0x1
+F3C00080 ubfx r0, r0, #0x2, #0x1
+F3C000C0 ubfx r0, r0, #0x3, #0x1
+F3C01000 ubfx r0, r0, #0x4, #0x1
+F3C01040 ubfx r0, r0, #0x5, #0x1
+F3C01080 ubfx r0, r0, #0x6, #0x1
+F3C010C0 ubfx r0, r0, #0x7, #0x1
+F3C02000 ubfx r0, r0, #0x8, #0x1
+F3C02040 ubfx r0, r0, #0x9, #0x1
+F3C02080 ubfx r0, r0, #0xa, #0x1
+F3C020C0 ubfx r0, r0, #0xb, #0x1
+F3C03000 ubfx r0, r0, #0xc, #0x1
+F3C03040 ubfx r0, r0, #0xd, #0x1
+F3C03080 ubfx r0, r0, #0xe, #0x1
+F3C030C0 ubfx r0, r0, #0xf, #0x1
+F3C04000 ubfx r0, r0, #0x10, #0x1
+F3C04040 ubfx r0, r0, #0x11, #0x1
+F3C04080 ubfx r0, r0, #0x12, #0x1
+F3C040C0 ubfx r0, r0, #0x13, #0x1
+F3C05000 ubfx r0, r0, #0x14, #0x1
+F3C05040 ubfx r0, r0, #0x15, #0x1
+F3C05080 ubfx r0, r0, #0x16, #0x1
+F3C050C0 ubfx r0, r0, #0x17, #0x1
+F3C06000 ubfx r0, r0, #0x18, #0x1
+F3C06040 ubfx r0, r0, #0x19, #0x1
+F3C06080 ubfx r0, r0, #0x1a, #0x1
+F3C060C0 ubfx r0, r0, #0x1b, #0x1
+F3C07040 ubfx r0, r0, #0x1d, #0x1
+F3C07080 ubfx r0, r0, #0x1e, #0x1
+F3C070C0 ubfx r0, r0, #0x1f, #0x1
+F3C00000 [ne] ubfxne r0, r0, #0x0, #0x1
+F7CF0F3F ubfx pc, pc, #0x0, #0x20 (unpredictable)
+F3C10200 ubfx r2, r1, #0x0, #0x1

@@ -1,0 +1,37 @@
+// FCVTAS_sisd_32D sf=0|0|S=0|11110|ftype=01|1|rmode=11|opcode=010|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtasSisd32d: FCVTAS  <Sd>, <Dn>
+// register fields: Rn, Rd
+1E7A0006 fcvtas s6, d0
+1E7A000D fcvtas s13, d0
+1E7A0014 fcvtas s20, d0
+1E7A03E0 fcvtas s0, d31
+1E7A001F fcvtas s31, d0
+1E7A0000 fcvtas s0, d0
+
+// FCVTAS_sisd_32H sf=0|0|S=0|11110|ftype=11|1|rmode=11|opcode=010|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtasSisd32h: FCVTAS  <Sd>, <Hn>
+// register fields: Rn, Rd
+1EFA0002 fcvtas s2, h0
+1EFA0009 fcvtas s9, h0
+1EFA0010 fcvtas s16, h0
+1EFA03E0 fcvtas s0, h31
+1EFA001F fcvtas s31, h0
+1EFA0000 fcvtas s0, h0
+
+// FCVTAS_sisd_64H sf=1|0|S=0|11110|ftype=11|1|rmode=11|opcode=010|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtasSisd64h: FCVTAS  <Dd>, <Hn>
+// register fields: Rn, Rd
+9EFA0000 fcvtas d0, h0
+9EFA0007 fcvtas d7, h0
+9EFA000E fcvtas d14, h0
+9EFA03FF fcvtas d31, h31
+
+// FCVTAS_sisd_64S sf=1|0|S=0|11110|ftype=00|1|rmode=11|opcode=010|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtasSisd64s: FCVTAS  <Dd>, <Sn>
+// register fields: Rn, Rd
+9E3A0006 fcvtas d6, s0
+9E3A000D fcvtas d13, s0
+9E3A0014 fcvtas d20, s0
+9E3A03E0 fcvtas d0, s31
+9E3A001F fcvtas d31, s0
+9E3A0000 fcvtas d0, s0

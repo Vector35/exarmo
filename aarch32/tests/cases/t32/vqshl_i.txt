@@ -1,0 +1,111 @@
+// VQSHL_i_T1_D 111|U=x|11111|D=x|imm6=xxxxxx|Vd=xxxx|011|op=1|L=x|Q=0|M=x|1|Vm=xxxx
+// VqshlIT1D: VQSHL{<c>}{<q>}.<type><size>  {<Dd>, }<Dm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef8c1719 vqshl.s8 d1, d9, #4
+efb6c733 vqshl.s32 d12, d19, #22
+ffe6773b vqshl.u32 d23, d27, #6
+ffb1f791 vqshl.u64 d15, d1, #49
+efbb2799 vqshl.s64 d2, d9, #59
+efa917b9 vqshl.s64 d1, d25, #41
+efdd0731 vqshl.s16 d16, d17, #13
+ff97f7ba vqshl.u64 d15, d26, #23
+FF808790 vqshl.u64 d8, d0, #0x0
+EFBF471F vqshl.s32 d4, d15, #0x1f
+EFA00718 vqshl.s32 d0, d8, #0x0
+EFD0F714 vqshl.s16 d31, d4, #0x0
+EF881712 vqshl.s8 d1, d2, #0x0
+FF84F790 vqshl.u64 d15, d0, #0x4
+FF82F79F vqshl.u64 d15, d15, #0x2
+FF81F7B0 vqshl.u64 d15, d16, #0x1
+EF8017BF vqshl.s64 d1, d31, #0x0
+EFBF1719 vqshl.s32 d1, d9, #0x1f
+EFBF1799 vqshl.s64 d1, d9, #0x3f
+EF8C1719 [ne] vqshlne.s8 d1, d9, #0x4
+
+// VQSHL_i_T1_Q 111|U=x|11111|D=x|imm6=xxxxxx|Vd=xxxx|011|op=1|L=x|Q=1|M=x|1|Vm=xxxx
+// VqshlIT1Q: VQSHL{<c>}{<q>}.<type><size>  {<Qd>, }<Qm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff9967d4 vqshl.u64 q3, q2, #25
+efd2a752 vqshl.s16 q13, q1, #2
+fff3c7d6 vqshl.u64 q14, q3, #51
+ffb047f6 vqshl.u64 q2, q11, #48
+ef93e7fe vqshl.s64 q7, q15, #19
+ffd4a770 vqshl.u16 q13, q8, #4
+fff1877e vqshl.u32 q12, q15, #17
+eff587f4 vqshl.s64 q12, q10, #53
+FF8007D8 vqshl.u64 q0, q4, #0x0
+FFBF27D0 vqshl.u64 q1, q0, #0x3f
+FFA007D4 vqshl.u64 q0, q2, #0x20
+FFD007D4 vqshl.u64 q8, q2, #0x10
+FF8867D4 vqshl.u64 q3, q2, #0x8
+FF8467D4 vqshl.u64 q3, q2, #0x4
+FF8267D4 vqshl.u64 q3, q2, #0x2
+FF8167D4 vqshl.u64 q3, q2, #0x1
+FF80F75F UNDEFINED
+FF9917D1 UNDEFINED
+FF8067D4 vqshl.u64 q3, q2, #0x0
+FFBF6754 vqshl.u32 q3, q2, #0x1f
+FFBF67D4 vqshl.u64 q3, q2, #0x3f
+FF99F7DF UNDEFINED
+FFD9F7FF UNDEFINED
+FF9967D4 [ne] vqshlne.u64 q3, q2, #0x19
+
+// VQSHLU_i_T1_D 111|U=1|11111|D=x|imm6=xxxxxx|Vd=xxxx|011|op=0|L=x|Q=0|M=x|1|Vm=xxxx
+// VqshluIT1D: VQSHLU{<c>}{<q>}.<type><size>  {<Dd>, }<Dm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fff43617 vqshlu.s32 d19, d7, #20
+ff902699 vqshlu.s64 d2, d9, #16
+ffb0d631 vqshlu.s32 d13, d17, #16
+fffda615 vqshlu.s32 d26, d5, #29
+fff7f63e vqshlu.s32 d31, d30, #23
+ffa016be vqshlu.s64 d1, d30, #32
+ffd156b2 vqshlu.s64 d21, d18, #17
+ffdd56b9 vqshlu.s64 d21, d25, #29
+FF800690 vqshlu.s64 d0, d0, #0x0
+FFFF861F vqshlu.s32 d24, d15, #0x1f
+FFC84618 vqshlu.s8 d20, d8, #0x0
+FF840694 vqshlu.s64 d0, d4, #0x4
+FF82F690 vqshlu.s64 d15, d0, #0x2
+FFC1069F vqshlu.s64 d16, d15, #0x1
+FFC036B0 vqshlu.s64 d19, d16, #0x0
+FFFF363F vqshlu.s32 d19, d31, #0x1f
+FFFF3697 vqshlu.s64 d19, d7, #0x3f
+FFF43617 [ne] vqshlune.s32 d19, d7, #0x14
+
+// VQSHLU_i_T1_Q 111|U=1|11111|D=x|imm6=xxxxxx|Vd=xxxx|011|op=0|L=x|Q=1|M=x|1|Vm=xxxx
+// VqshluIT1Q: VQSHLU{<c>}{<q>}.<type><size>  {<Qd>, }<Qm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffbe867e vqshlu.s32 q4, q15, #30
+fffc8650 vqshlu.s32 q12, q0, #28
+ffd72672 vqshlu.s16 q9, q9, #7
+ffffa65e vqshlu.s32 q13, q7, #31
+ff92e65e vqshlu.s16 q7, q7, #2
+ff9ce6d2 vqshlu.s64 q7, q1, #28
+ffbc8652 vqshlu.s32 q4, q1, #28
+ff97e650 vqshlu.s16 q7, q0, #7
+FF8006D8 vqshlu.s64 q0, q4, #0x0
+FFA04674 vqshlu.s32 q2, q10, #0x0
+FF900670 vqshlu.s16 q0, q8, #0x0
+FFC8067E vqshlu.s8 q8, q15, #0x0
+FF84E6D2 vqshlu.s64 q7, q1, #0x4
+FF82E6D2 vqshlu.s64 q7, q1, #0x2
+FF81E6D2 vqshlu.s64 q7, q1, #0x1
+FF80F67F UNDEFINED
+FFBE1671 UNDEFINED
+FF8086FE vqshlu.s64 q4, q15, #0x0
+FFBF86FE vqshlu.s64 q4, q15, #0x3f
+FFBEF65F UNDEFINED
+FFFEF67F UNDEFINED
+FFBE867E [ne] vqshlune.s32 q4, q15, #0x1e

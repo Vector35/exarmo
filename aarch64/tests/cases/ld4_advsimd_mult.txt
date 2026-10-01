@@ -1,0 +1,72 @@
+// LD4_asisdlse_R4 0|Q=x|00|1|1|0|00|L=1|000000|opcode=0000|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlseR4: LD4  { <Vt>.<T>, <Vt2>.<T>, <Vt3>.<T>, <Vt4>.<T> }, [<Xn|SP>]
+// read together by <T>: Q, size
+// register fields: Rn, Rt
+0C40097D ld4 {v29.2s, v30.2s, v31.2s, v0.2s}, [x11]
+0C4005DF ld4 {v31.4h, v0.4h, v1.4h, v2.4h}, [x14]
+4C400751 ld4 {v17.8h, v18.8h, v19.8h, v20.8h}, [x26]
+0C400093 ld4 {v19.8b, v20.8b, v21.8b, v22.8b}, [x4]
+4C400AF4 ld4 {v20.4s, v21.4s, v22.4s, v23.4s}, [x23]
+4C400DE8 ld4 {v8.2d, v9.2d, v10.2d, v11.2d}, [x15]
+4C400758 ld4 {v24.8h, v25.8h, v26.8h, v27.8h}, [x26]
+0C4001DA ld4 {v26.8b, v27.8b, v28.8b, v29.8b}, [x14]
+0C4000EA ld4 {v10.8b, v11.8b, v12.8b, v13.8b}, [x7]
+0C40015B ld4 {v27.8b, v28.8b, v29.8b, v30.8b}, [x10]
+4C4005B8 ld4 {v24.8h, v25.8h, v26.8h, v27.8h}, [x13]
+4C4004C0 ld4 {v0.8h, v1.8h, v2.8h, v3.8h}, [x6]
+4C400098 ld4 {v24.16b, v25.16b, v26.16b, v27.16b}, [x4]
+0C400AF4 ld4 {v20.2s, v21.2s, v22.2s, v23.2s}, [x23]
+4C4000CD ld4 {v13.16b, v14.16b, v15.16b, v16.16b}, [x6]
+4C400C98 ld4 {v24.2d, v25.2d, v26.2d, v27.2d}, [x4]
+0C40081D ld4 {v29.2s, v30.2s, v31.2s, v0.2s}, [x0]
+0C400BFD ld4 {v29.2s, v30.2s, v31.2s, v0.2s}, [sp]
+0C400D7D UNDEFINED
+0C40096B ld4 {v11.2s, v12.2s, v13.2s, v14.2s}, [x11]
+
+// LD4_asisdlsep_I4_i 0|Q=x|0011001|L=1|0|Rm=11111|opcode=0000|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsepI4I: LD4  { <Vt>.<T>, <Vt2>.<T>, <Vt3>.<T>, <Vt4>.<T> }, [<Xn|SP>], <imm>
+// read together by <T>: Q, size
+// register fields: Rn, Rt
+4CDF0D02 ld4 {v2.2d, v3.2d, v4.2d, v5.2d}, [x8], #0x40
+4CDF0FE0 ld4 {v0.2d, v1.2d, v2.2d, v3.2d}, [sp], #0x40
+0CDF047C ld4 {v28.4h, v29.4h, v30.4h, v31.4h}, [x3], #0x20
+0CDF0A92 ld4 {v18.2s, v19.2s, v20.2s, v21.2s}, [x20], #0x20
+4CDF0F54 ld4 {v20.2d, v21.2d, v22.2d, v23.2d}, [x26], #0x40
+4CDF04A5 ld4 {v5.8h, v6.8h, v7.8h, v8.8h}, [x5], #0x40
+0CDF05C8 ld4 {v8.4h, v9.4h, v10.4h, v11.4h}, [x14], #0x20
+4CDF0920 ld4 {v0.4s, v1.4s, v2.4s, v3.4s}, [x9], #0x40
+0CDF0A5C ld4 {v28.2s, v29.2s, v30.2s, v31.2s}, [x18], #0x20
+4CDF047E ld4 {v30.8h, v31.8h, v0.8h, v1.8h}, [x3], #0x40
+4CDF0653 ld4 {v19.8h, v20.8h, v21.8h, v22.8h}, [x18], #0x40
+4CDF0233 ld4 {v19.16b, v20.16b, v21.16b, v22.16b}, [x17], #0x40
+4CDF0723 ld4 {v3.8h, v4.8h, v5.8h, v6.8h}, [x25], #0x40
+0CDF0210 ld4 {v16.8b, v17.8b, v18.8b, v19.8b}, [x16], #0x20
+4CDF014C ld4 {v12.16b, v13.16b, v14.16b, v15.16b}, [x10], #0x40
+0CDF0A17 ld4 {v23.2s, v24.2s, v25.2s, v26.2s}, [x16], #0x20
+4CDF0C1F ld4 {v31.2d, v0.2d, v1.2d, v2.2d}, [x0], #0x40
+0CDF0D02 UNDEFINED
+
+// LD4_asisdlsep_R4_r 0|Q=x|0011001|L=1|0|Rm=xxxxx|opcode=0000|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsepR4R: LD4  { <Vt>.<T>, <Vt2>.<T>, <Vt3>.<T>, <Vt4>.<T> }, [<Xn|SP>], <Xm>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rt
+0CDD0023 ld4 {v3.8b, v4.8b, v5.8b, v6.8b}, [x1], fp
+0CC908E2 ld4 {v2.2s, v3.2s, v4.2s, v5.2s}, [x7], x9
+4CCB0D2B ld4 {v11.2d, v12.2d, v13.2d, v14.2d}, [x9], x11
+4CC60CEC ld4 {v12.2d, v13.2d, v14.2d, v15.2d}, [x7], x6
+0CD800BA ld4 {v26.8b, v27.8b, v28.8b, v29.8b}, [x5], x24
+4CCA0E93 ld4 {v19.2d, v20.2d, v21.2d, v22.2d}, [x20], x10
+0CC80328 ld4 {v8.8b, v9.8b, v10.8b, v11.8b}, [x25], x8
+4CC20950 ld4 {v16.4s, v17.4s, v18.4s, v19.4s}, [x10], x2
+4CCA081F ld4 {v31.4s, v0.4s, v1.4s, v2.4s}, [x0], x10
+4CC2087F ld4 {v31.4s, v0.4s, v1.4s, v2.4s}, [x3], x2
+4CDB049D ld4 {v29.8h, v30.8h, v31.8h, v0.8h}, [x4], x27
+0CC3001B ld4 {v27.8b, v28.8b, v29.8b, v30.8b}, [x0], x3
+0CD307B1 ld4 {v17.4h, v18.4h, v19.4h, v20.4h}, [fp], x19
+4CC60033 ld4 {v19.16b, v20.16b, v21.16b, v22.16b}, [x1], x6
+0CC708CC ld4 {v12.2s, v13.2s, v14.2s, v15.2s}, [x6], x7
+4CC40EB2 ld4 {v18.2d, v19.2d, v20.2d, v21.2d}, [x21], x4
+0CC003E0 ld4 {v0.8b, v1.8b, v2.8b, v3.8b}, [sp], x0
+0CDD0C23 UNDEFINED
+0CDD03A3 ld4 {v3.8b, v4.8b, v5.8b, v6.8b}, [fp], fp
+0CDD0021 ld4 {v1.8b, v2.8b, v3.8b, v4.8b}, [x1], fp

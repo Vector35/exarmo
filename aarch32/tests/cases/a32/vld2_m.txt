@@ -1,0 +1,96 @@
+// VLD2_m_A1_nowb 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=100x|size=xx|align=xx|Rm=1111
+// Vld2MA1Nowb: VLD2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f428f94f vld2.16 {d15, d17}, [r8]
+f42e795f vld2.16 {d7, d9}, [lr:64]
+f42008af vld2.32 {d0, d1}, [r0:128]
+f42d892f vld2.8 {d8, d10}, [sp:128]
+f423082f vld2.8 {d0, d1}, [r3:128]
+f421f94f vld2.16 {d15, d17}, [r1]
+f469790f vld2.8 {d23, d25}, [r9]
+f46c986f vld2.16 {d25, d26}, [r12:128]
+F42F494F vld2.16 {d4, d6}, [pc] (unpredictable)
+F428294F vld2.16 {d2, d4}, [r8]
+F428194F vld2.16 {d1, d3}, [r8]
+F428F9FF UNDEFINED
+
+// VLD2_m_A1_posti 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=100x|size=xx|align=xx|Rm=1101
+// Vld2MA1Posti: VLD2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f42a598d vld2.32 {d5, d7}, [r10]!
+f464490d vld2.8 {d20, d22}, [r4]!
+f461e81d vld2.8 {d30, d31}, [r1:64]!
+f42ce95d vld2.16 {d14, d16}, [r12:64]!
+f420f86d vld2.16 {d15, d16}, [r0:128]!
+f420099d vld2.32 {d0, d2}, [r0:64]!
+f46c988d vld2.32 {d25, d26}, [r12]!
+F42F898D vld2.32 {d8, d10}, [pc]! (unpredictable)
+F42A298D vld2.32 {d2, d4}, [r10]!
+F42A198D vld2.32 {d1, d3}, [r10]!
+F42A59FD UNDEFINED
+
+// VLD2_m_A1_postr 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=100x|size=xx|align=xx|Rm=xxxx
+// Vld2MA1Postr: VLD2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f423f925 vld2.8 {d15, d17}, [r3:128], r5
+f4233862 vld2.16 {d3, d4}, [r3:128], r2
+f4258888 vld2.32 {d8, d9}, [r5], r8
+f4282887 vld2.32 {d2, d3}, [r8], r7
+f429a907 vld2.8 {d10, d12}, [r9], r7
+f46e996c vld2.16 {d25, d27}, [lr:128], r12
+f469c85c vld2.16 {d28, d29}, [r9:64], r12
+F4200920 vld2.8 {d0, d2}, [r0:128], r0
+F42F4925 vld2.8 {d4, d6}, [pc:128], r5 (unpredictable)
+F4231923 vld2.8 {d1, d3}, [r3:128], r3
+F423F9FF UNDEFINED
+
+// VLD2_m_A2_nowb 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0011|size=xx|align=xx|Rm=1111
+// Vld2MA2Nowb: VLD2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f46ed32f UNPREDICTABLE
+f427c3af vld2.32 {d12, d13, d14, d15}, [r7:128]
+f426934f vld2.16 {d9, d10, d11, d12}, [r6]
+f462132f vld2.8 {d17, d18, d19, d20}, [r2:128]
+f462333f vld2.8 {d19, d20, d21, d22}, [r2:256]
+f42b438f vld2.32 {d4, d5, d6, d7}, [r11]
+f42ca33f vld2.8 {d10, d11, d12, d13}, [r12:256]
+f462e37f UNPREDICTABLE
+F460031F vld2.8 {d16, d17, d18, d19}, [r0:64]
+F46FF32F UNPREDICTABLE
+F46E832F vld2.8 {d24, d25, d26, d27}, [lr:128]
+F46E232F vld2.8 {d18, d19, d20, d21}, [lr:128]
+F46ED3EF UNDEFINED
+F42FF3AF vld2.32 {d15, d16, d17, d18}, [pc:128] (unpredictable)
+
+// VLD2_m_A2_posti 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0011|size=xx|align=xx|Rm=1101
+// Vld2MA2Posti: VLD2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f422635d vld2.16 {d6, d7, d8, d9}, [r2:64]!
+f469436d vld2.16 {d20, d21, d22, d23}, [r9:128]!
+f469c30d vld2.8 {d28, d29, d30, d31}, [r9]!
+f462f32d UNPREDICTABLE
+f466631d vld2.8 {d22, d23, d24, d25}, [r6:64]!
+f46f035d vld2.16 {d16, d17, d18, d19}, [pc:64]! (unpredictable)
+f425a38d vld2.32 {d10, d11, d12, d13}, [r5]!
+f42b136d vld2.16 {d1, d2, d3, d4}, [r11:128]!
+F420837D vld2.16 {d8, d9, d10, d11}, [r0:256]!
+F422235D vld2.16 {d2, d3, d4, d5}, [r2:64]!
+F42263DD UNDEFINED
+F422F35D vld2.16 {d15, d16, d17, d18}, [r2:64]!
+
+// VLD2_m_A2_postr 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0011|size=xx|align=xx|Rm=xxxx
+// Vld2MA2Postr: VLD2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f461139a vld2.32 {d17, d18, d19, d20}, [r1:64], r10
+f4669336 vld2.8 {d25, d26, d27, d28}, [r6:256], r6
+f42463b6 vld2.32 {d6, d7, d8, d9}, [r4:256], r6
+f46953a8 vld2.32 {d21, d22, d23, d24}, [r9:128], r8
+f461f323 UNPREDICTABLE
+f42d63a4 vld2.32 {d6, d7, d8, d9}, [sp:128], r4
+f467a3b6 vld2.32 {d26, d27, d28, d29}, [r7:256], r6
+f46e83bb vld2.32 {d24, d25, d26, d27}, [lr:256], r11
+F4600340 vld2.16 {d16, d17, d18, d19}, [r0], r0
+F46F439A vld2.32 {d20, d21, d22, d23}, [pc:64], r10 (unpredictable)
+F461239A vld2.32 {d18, d19, d20, d21}, [r1:64], r10
+F46113DF UNDEFINED
+F424F3B6 vld2.32 {d15, d16, d17, d18}, [r4:256], r6

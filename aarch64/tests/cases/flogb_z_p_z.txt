@@ -1,0 +1,31 @@
+// flogb_z_p_z_m 011|0010|1|opc=00|0|11|size=xx|U=0|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FlogbZPZM: FLOGB  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+651EA7F4 flogb z20.d, p1/m, z31.d
+651EA4B9 flogb z25.d, p1/m, z5.d
+651AB988 flogb z8.h, p6/m, z12.h
+651CA913 flogb z19.s, p2/m, z8.s
+651EB757 flogb z23.d, p5/m, z26.d
+651EABD4 flogb z20.d, p2/m, z30.d
+651AB63D flogb z29.h, p5/m, z17.h
+651EACFD flogb z29.d, p3/m, z7.d
+651EA000 flogb z0.d, p0/m, z0.d
+651EB3FF flogb z31.d, p4/m, z31.d
+651EBFF4 flogb z20.d, p7/m, z31.d
+6518A7F4 UNDEFINED
+
+// flogb_z_p_z_z 011|0010|0|opc=00|011|11|o2=0|1|size=xx|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FlogbZPZZ: FLOGB  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+641EA005 flogb z5.h, p0/z, z0.h
+641EA00C flogb z12.h, p0/z, z0.h
+641EA013 flogb z19.h, p0/z, z0.h
+641EC7E0 flogb z0.s, p1/z, z31.s
+641EE81F flogb z31.d, p2/z, z0.d
+641EAC05 flogb z5.h, p3/z, z0.h
+641EB005 flogb z5.h, p4/z, z0.h
+641EB405 flogb z5.h, p5/z, z0.h
+641EB805 flogb z5.h, p6/z, z0.h
+641EBC05 flogb z5.h, p7/z, z0.h
+641E8005 UNDEFINED
+641EA000 flogb z0.h, p0/z, z0.h

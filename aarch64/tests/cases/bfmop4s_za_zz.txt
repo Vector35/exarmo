@@ -1,0 +1,52 @@
+// bfmop4s_za_zz_h1x1 1|00|0000|1|00|1|M=0|Zm=xxx|0|0|00000|N=0|Zn=xxx|0|S=1|1|0|0|ZAda=x
+// Bfmop4sZaZzH1x1: BFMOP4S  <ZAda>.H, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, ZAda
+81200018 bfmop4s za0.h, z0.h, z16.h
+81200199 bfmop4s za1.h, z12.h, z16.h
+812001D8 bfmop4s za0.h, z14.h, z16.h
+81220058 bfmop4s za0.h, z2.h, z18.h
+81240098 bfmop4s za0.h, z4.h, z20.h
+812600D8 bfmop4s za0.h, z6.h, z22.h
+81280118 bfmop4s za0.h, z8.h, z24.h
+812A0158 bfmop4s za0.h, z10.h, z26.h
+812C0018 bfmop4s za0.h, z0.h, z28.h
+812E0018 bfmop4s za0.h, z0.h, z30.h
+
+// bfmop4s_za_zz_h1x2 1|00|0000|1|00|1|M=1|Zm=xxx|0|0|00000|N=0|Zn=xxx|0|S=1|1|0|0|ZAda=x
+// Bfmop4sZaZzH1x2: BFMOP4S  <ZAda>.H, <Zn>.H, { <Zm1>.H-<Zm2>.H }
+// register fields: Zm, Zn, ZAda
+81300099 bfmop4s za1.h, z4.h, {z16.h-z17.h}
+813000D8 bfmop4s za0.h, z6.h, {z16.h-z17.h}
+81320159 bfmop4s za1.h, z10.h, {z18.h-z19.h}
+81340019 bfmop4s za1.h, z0.h, {z20.h-z21.h}
+81360059 bfmop4s za1.h, z2.h, {z22.h-z23.h}
+81380119 bfmop4s za1.h, z8.h, {z24.h-z25.h}
+813A0199 bfmop4s za1.h, z12.h, {z26.h-z27.h}
+813C01D9 bfmop4s za1.h, z14.h, {z28.h-z29.h}
+813E0099 bfmop4s za1.h, z4.h, {z30.h-z31.h}
+
+// bfmop4s_za_zz_h2x1 1|00|0000|1|00|1|M=0|Zm=xxx|0|0|00000|N=1|Zn=xxx|0|S=1|1|0|0|ZAda=x
+// Bfmop4sZaZzH2x1: BFMOP4S  <ZAda>.H, { <Zn1>.H-<Zn2>.H }, <Zm>.H
+// register fields: Zm, Zn, ZAda
+81200359 bfmop4s za1.h, {z10.h-z11.h}, z16.h
+81200398 bfmop4s za0.h, {z12.h-z13.h}, z16.h
+81220259 bfmop4s za1.h, {z2.h-z3.h}, z18.h
+81240219 bfmop4s za1.h, {z0.h-z1.h}, z20.h
+81260299 bfmop4s za1.h, {z4.h-z5.h}, z22.h
+812802D9 bfmop4s za1.h, {z6.h-z7.h}, z24.h
+812A0319 bfmop4s za1.h, {z8.h-z9.h}, z26.h
+812C03D9 bfmop4s za1.h, {z14.h-z15.h}, z28.h
+812E0359 bfmop4s za1.h, {z10.h-z11.h}, z30.h
+
+// bfmop4s_za_zz_h2x2 1|00|0000|1|00|1|M=1|Zm=xxx|0|0|00000|N=1|Zn=xxx|0|S=1|1|0|0|ZAda=x
+// Bfmop4sZaZzH2x2: BFMOP4S  <ZAda>.H, { <Zn1>.H-<Zn2>.H }, { <Zm1>.H-<Zm2>.H }
+// register fields: Zm, Zn, ZAda
+81300259 bfmop4s za1.h, {z2.h-z3.h}, {z16.h-z17.h}
+81300298 bfmop4s za0.h, {z4.h-z5.h}, {z16.h-z17.h}
+81320319 bfmop4s za1.h, {z8.h-z9.h}, {z18.h-z19.h}
+81340219 bfmop4s za1.h, {z0.h-z1.h}, {z20.h-z21.h}
+813602D9 bfmop4s za1.h, {z6.h-z7.h}, {z22.h-z23.h}
+81380359 bfmop4s za1.h, {z10.h-z11.h}, {z24.h-z25.h}
+813A0399 bfmop4s za1.h, {z12.h-z13.h}, {z26.h-z27.h}
+813C03D9 bfmop4s za1.h, {z14.h-z15.h}, {z28.h-z29.h}
+813E0259 bfmop4s za1.h, {z2.h-z3.h}, {z30.h-z31.h}

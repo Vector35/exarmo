@@ -1,0 +1,14 @@
+// ERET_T1 111|10|0|1111|01|Rn=1110|1|0(0)0|(1)|(1)(1)(1)|imm8=00000000
+// EretT1: ERET{<c>}{<q>}
+// IT state read: condition, last in block
+F3DE8000 eret (unpredictable)
+F3DEA900 eret (unpredictable)
+F3DE8200 eret (unpredictable)
+F3DE8300 eret (unpredictable)
+F3DE8400 eret (unpredictable)
+F3DE8500 eret (unpredictable)
+F3DE8600 eret (unpredictable)
+F3DE8700 eret (unpredictable)
+F3DE8000 [ne] eretne (unpredictable)
+F3DE8000 [ne last] eretne (unpredictable)
+F3DE8F00 eret

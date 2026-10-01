@@ -1,0 +1,73 @@
+// decd_z_zs_ 000|0010|0|size=11|1|1|imm4=xxxx|11|000|D=1|pattern=xxxxx|Zdn=xxxxx
+// DecdZZs: DECD  <Zdn>.D{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04FBC52A decd z10.d, vl16, mul #0xc
+04F7C5C7 decd z7.d, #0xe, mul #0x8
+04FBC732 decd z18.d, #0x19, mul #0xc
+04FCC454 decd z20.d, vl2, mul #0xd
+04F3C7F9 decd z25.d, all, mul #0x4
+04F1C6B3 decd z19.d, #0x15, mul #0x2
+04FDC402 decd z2.d, pow2, mul #0xe
+04F5C709 decd z9.d, #0x18, mul #0x6
+04FDC5E2 decd z2.d, #0xf, mul #0xe
+04FDC75A decd z26.d, #0x1a, mul #0xe
+04F8C48F decd z15.d, vl4, mul #0x9
+04F8C468 decd z8.d, vl3, mul #0x9
+04F9C491 decd z17.d, vl4, mul #0xa
+04F3C764 decd z4.d, #0x1b, mul #0x4
+04FBC5F3 decd z19.d, #0xf, mul #0xc
+04F2C47D decd z29.d, vl3, mul #0x3
+04F0C520 decd z0.d, vl16
+04FFC53F decd z31.d, vl16, mul #0x10
+04F4C60A decd z10.d, #0x10, mul #0x5
+04FBC50A decd z10.d, vl8, mul #0xc
+04FBC42A decd z10.d, vl1, mul #0xc
+
+// dech_z_zs_ 000|0010|0|size=01|1|1|imm4=xxxx|11|000|D=1|pattern=xxxxx|Zdn=xxxxx
+// DechZZs: DECH  <Zdn>.H{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+0474C747 dech z7.h, #0x1a, mul #0x5
+0475C5B5 dech z21.h, vl256, mul #0x6
+0479C731 dech z17.h, #0x19, mul #0xa
+0472C407 dech z7.h, pow2, mul #0x3
+0471C47E dech z30.h, vl3, mul #0x2
+0473C6FF dech z31.h, #0x17, mul #0x4
+0470C7C5 dech z5.h, mul3
+0476C428 dech z8.h, vl1, mul #0x7
+0472C696 dech z22.h, #0x14, mul #0x3
+047AC7CC dech z12.h, mul3, mul #0xb
+0474C6F4 dech z20.h, #0x17, mul #0x5
+0479C54D dech z13.h, vl32, mul #0xa
+0477C4C1 dech z1.h, vl6, mul #0x8
+047FC648 dech z8.h, #0x12, mul #0x10
+0471C571 dech z17.h, vl64, mul #0x2
+0470C40D dech z13.h, pow2
+0474C7E0 dech z0.h, all, mul #0x5
+0478C607 dech z7.h, #0x10, mul #0x9
+0474C507 dech z7.h, vl8, mul #0x5
+0474C487 dech z7.h, vl4, mul #0x5
+0474C447 dech z7.h, vl2, mul #0x5
+
+// decw_z_zs_ 000|0010|0|size=10|1|1|imm4=xxxx|11|000|D=1|pattern=xxxxx|Zdn=xxxxx
+// DecwZZs: DECW  <Zdn>.S{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04BAC6BA decw z26.s, #0x15, mul #0xb
+04B8C43E decw z30.s, vl1, mul #0x9
+04B7C799 decw z25.s, #0x1c, mul #0x8
+04B2C4AC decw z12.s, vl5, mul #0x3
+04B5C492 decw z18.s, vl4, mul #0x6
+04B1C776 decw z22.s, #0x1b, mul #0x2
+04BEC71B decw z27.s, #0x18, mul #0xf
+04B9C710 decw z16.s, #0x18, mul #0xa
+04B3C528 decw z8.s, vl16, mul #0x4
+04BDC445 decw z5.s, vl2, mul #0xe
+04B7C745 decw z5.s, #0x1a, mul #0x8
+04BFC5B5 decw z21.s, vl256, mul #0x10
+04BEC6C2 decw z2.s, #0x16, mul #0xf
+04BCC7B8 decw z24.s, mul4, mul #0xd
+04B5C62D decw z13.s, #0x11, mul #0x6
+04BDC79D decw z29.s, #0x1c, mul #0xe
+04B0C400 decw z0.s, pow2
+04BAC7FF decw z31.s, all, mul #0xb
+04B4C61A decw z26.s, #0x10, mul #0x5
+04BAC51A decw z26.s, vl8, mul #0xb

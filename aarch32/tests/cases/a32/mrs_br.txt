@@ -1,0 +1,19 @@
+// MRS_br_A1_AS cond=xxxx|00|010|R=x|0|0|M1=xxxx|Rd=xxxx|(0)(0)|B=1|M=x|0|000|Rn=(0)(0)(0)(0)
+// MrsBrA1As: MRS{<c>}{<q>}  <Rd>, <banked_reg>
+// read together by <banked_reg>: R, M1, M
+// register fields: Rd
+01000200 mrseq r0, r8_usr
+F1000200 UNALLOCATED
+814FF70F UNPREDICTABLE
+41080A08 mrsmi r0, r8_fiq (unpredictable)
+21040E04 mrscs r0, r12_usr (unpredictable)
+11020202 mrsne r0, r10_usr (unpredictable)
+01010201 mrseq r0, r9_usr (unpredictable)
+01000300 mrseq r0, lr_irq
+010F0200 UNPREDICTABLE
+010F0300 mrseq r0, sp_hyp
+01400200 UNPREDICTABLE
+01400300 mrseq r0, spsr_irq
+014F0200 UNPREDICTABLE
+014F0300 UNPREDICTABLE
+8100F60F mrshi pc, r8_usr (unpredictable)

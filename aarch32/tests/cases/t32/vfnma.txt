@@ -1,0 +1,67 @@
+// VFNMA_T1_D 11101110|o0=1|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=1|M=x|0|Vm=xxxx
+// VfnmaT1D: VFNMA{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eed02bc9 vfnma.f64 d18, d16, d9
+ee94ab45 vfnma.f64 d10, d4, d5
+eed47b6d vfnma.f64 d23, d4, d29
+eed13bc4 vfnma.f64 d19, d17, d4
+eed76b60 vfnma.f64 d22, d7, d16
+ee902bc0 vfnma.f64 d2, d16, d0
+ee93cbcb vfnma.f64 d12, d19, d11
+eedb0b65 vfnma.f64 d16, d11, d21
+EEDFFBCF vfnma.f64 d31, d31, d15
+EED88BC8 vfnma.f64 d24, d24, d8
+EED24BC2 vfnma.f64 d20, d18, d2
+EED01B41 vfnma.f64 d17, d0, d1
+EE9F0B4F vfnma.f64 d0, d15, d15
+EE9FFBEF vfnma.f64 d15, d31, d31
+EED0FBC9 vfnma.f64 d31, d16, d9
+EED02BC9 [ne] vfnmane.f64 d18, d16, d9
+
+// VFNMA_T1_H 11101110|o0=1|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=1|M=x|0|Vm=xxxx
+// VfnmaT1H: VFNMA{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee9d89c2 vfnma.f16 s16, s27, s4
+eed7096a vfnma.f16 s1, s14, s21
+eedc69c5 vfnma.f16 s13, s25, s10
+ee935944 vfnma.f16 s10, s6, s8
+ee9789e1 vfnma.f16 s16, s15, s3
+eedf79c0 vfnma.f16 s15, s31, s0
+eed43966 vfnma.f16 s7, s8, s13
+ee91494c vfnma.f16 s8, s2, s24
+EE90F9CF vfnma.f16 s30, s1, s30
+EE9829C8 vfnma.f16 s4, s17, s16
+EE9219CF vfnma.f16 s2, s5, s30
+EE900960 vfnma.f16 s0, s0, s1
+EE90F9EF vfnma.f16 s30, s1, s31
+EEDFF942 vfnma.f16 s31, s30, s4
+EE9D89C2 [ne] vfnmane.f16 s16, s27, s4 (unpredictable)
+
+// VFNMA_T1_S 11101110|o0=1|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=1|M=x|0|Vm=xxxx
+// VfnmaT1S: VFNMA{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eedc1a4f vfnma.f32 s3, s24, s30
+ee9a4ac0 vfnma.f32 s8, s21, s0
+ee9eca4d vfnma.f32 s24, s28, s26
+ee913ac6 vfnma.f32 s6, s3, s12
+ee969a43 vfnma.f32 s18, s12, s6
+ee9b2a41 vfnma.f32 s4, s22, s2
+ee9e5a6f vfnma.f32 s10, s28, s31
+ee9faa4e vfnma.f32 s20, s30, s28
+EED00A48 vfnma.f32 s1, s0, s16
+EED8FA44 vfnma.f32 s31, s16, s8
+EED48A42 vfnma.f32 s17, s8, s4
+EE920A60 vfnma.f32 s0, s4, s1
+EE90FA4F vfnma.f32 s30, s0, s30
+EED00ACF vfnma.f32 s1, s1, s30
+EEDFFACF vfnma.f32 s31, s31, s30
+EEDC1A4F [ne] vfnmane.f32 s3, s24, s30

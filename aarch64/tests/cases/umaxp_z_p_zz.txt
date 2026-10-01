@@ -1,0 +1,15 @@
+// umaxp_z_p_zz_ 010|0010|0|size=xx|0|10|opc=10|U=1|10|1|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UmaxpZPZz: UMAXP  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+4455BC67 umaxp z7.h, p7/m, z7.h, z3.h
+4495A30A umaxp z10.s, p0/m, z10.s, z24.s
+4455BAE1 umaxp z1.h, p6/m, z1.h, z23.h
+4455A790 umaxp z16.h, p1/m, z16.h, z28.h
+4415A484 umaxp z4.b, p1/m, z4.b, z4.b
+4415BE4A umaxp z10.b, p7/m, z10.b, z18.b
+4455AF9A umaxp z26.h, p3/m, z26.h, z28.h
+4495A40D umaxp z13.s, p1/m, z13.s, z0.s
+44D5ABE0 umaxp z0.d, p2/m, z0.d, z31.d
+4455B07F umaxp z31.h, p4/m, z31.h, z3.h
+4455B467 umaxp z7.h, p5/m, z7.h, z3.h
+4455BCE7 umaxp z7.h, p7/m, z7.h, z7.h

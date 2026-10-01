@@ -1,0 +1,73 @@
+// SQRDMULH_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|opcode=10110|1|Rn=xxxxx|Rd=xxxxx
+// SqrdmulhAsimdsameOnly: SQRDMULH  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+2EACB6E9 sqrdmulh v9.2s, v23.2s, v12.2s
+6E66B657 sqrdmulh v23.8h, v18.8h, v6.8h
+6EAAB750 sqrdmulh v16.4s, v26.4s, v10.4s
+6EB1B69E sqrdmulh v30.4s, v20.4s, v17.4s
+2EA6B669 sqrdmulh v9.2s, v19.2s, v6.2s
+6EADB524 sqrdmulh v4.4s, v9.4s, v13.4s
+2E65B4F3 sqrdmulh v19.4h, v7.4h, v5.4h
+2EBAB58A sqrdmulh v10.2s, v12.2s, v26.2s
+2EBAB7C0 sqrdmulh v0.2s, v30.2s, v26.2s
+2E61B7F9 sqrdmulh v25.4h, v31.4h, v1.4h
+2EAFB5C9 sqrdmulh v9.2s, v14.2s, v15.2s
+2E67B626 sqrdmulh v6.4h, v17.4h, v7.4h
+2E6EB605 sqrdmulh v5.4h, v16.4h, v14.4h
+2EB1B649 sqrdmulh v9.2s, v18.2s, v17.2s
+6EBEB609 sqrdmulh v9.4s, v16.4s, v30.4s
+6EB1B713 sqrdmulh v19.4s, v24.4s, v17.4s
+2EA0B41F sqrdmulh v31.2s, v0.2s, v0.2s
+2EBFB6E9 sqrdmulh v9.2s, v23.2s, v31.2s
+2E2CB6E9 UNDEFINED
+2EECB6E9 UNDEFINED
+6E2CB6E9 UNDEFINED
+6EECB6E9 UNDEFINED
+2EACB6EC sqrdmulh v12.2s, v23.2s, v12.2s
+2EACB6F7 sqrdmulh v23.2s, v23.2s, v12.2s
+
+// SQRDMULH_asisdsame_only 01|U=1|1|111|0|size=xx|1|Rm=xxxxx|opcode=10110|1|Rn=xxxxx|Rd=xxxxx
+// SqrdmulhAsisdsameOnly: SQRDMULH  <V><d>, <V><n>, <V><m>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, Rm
+// register fields: Rm, Rn, Rd
+7EABB790 sqrdmulh s16, s28, s11
+7EB0B7D9 sqrdmulh s25, s30, s16
+7E69B7C1 sqrdmulh h1, h30, h9
+7EBAB536 sqrdmulh s22, s9, s26
+7E78B678 sqrdmulh h24, h19, h24
+7E77B584 sqrdmulh h4, h12, h23
+7EBFB4A3 sqrdmulh s3, s5, s31
+7E77B60C sqrdmulh h12, h16, h23
+7EBAB694 sqrdmulh s20, s20, s26
+7EA0B5A2 sqrdmulh s2, s13, s0
+7E67B7BA sqrdmulh h26, h29, h7
+7EB0B674 sqrdmulh s20, s19, s16
+7E78B7ED sqrdmulh h13, h31, h24
+7EA9B63C sqrdmulh s28, s17, s9
+7EB1B5C7 sqrdmulh s7, s14, s17
+7EA6B625 sqrdmulh s5, s17, s6
+7EABB400 sqrdmulh s0, s0, s11
+7EABB79F sqrdmulh s31, s28, s11
+7E2BB790 UNDEFINED
+7EEBB790 UNDEFINED
+7E2BB780 UNDEFINED
+7E2BB79F UNDEFINED
+7E6BB560 sqrdmulh h0, h11, h11
+7E6BB79F sqrdmulh h31, h28, h11
+7EEBB780 UNDEFINED
+7EEBB79F UNDEFINED
+7E20B790 UNDEFINED
+7E3FB790 UNDEFINED
+7E60B790 sqrdmulh h16, h28, h0
+7E7FB790 sqrdmulh h16, h28, h31
+7EE0B790 UNDEFINED
+7EFFB790 UNDEFINED
+7E2BB410 UNDEFINED
+7E2BB7F0 UNDEFINED
+7E6BB410 sqrdmulh h16, h0, h11
+7EABB7F0 sqrdmulh s16, s31, s11
+7EEBB410 UNDEFINED
+7EEBB7F0 UNDEFINED

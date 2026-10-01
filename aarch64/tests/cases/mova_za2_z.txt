@@ -1,0 +1,48 @@
+// mova_za2_z_b1 1|10|0000|0|size=00|000|1|0|0|V=x|Rs=xx|000|Zn=xxxx|0|0|0|off3=xxx
+// MovaZa2ZB1: MOVA  ZA0<HV>.B[<Ws>, <offs1>:<offs2>], { <Zn1>.B-<Zn2>.B }
+// MovZa2ZB1MovaZa2ZB1: MOV  ZA0<HV>.B[<Ws>, <offs1>:<offs2>], { <Zn1>.B-<Zn2>.B }
+// register fields: Rs, Zn
+C0040003 mov za0h.b[w12, 6:7], {z0.b-z1.b}
+C0040042 mov za0h.b[w12, 4:5], {z2.b-z3.b}
+C0040081 mov za0h.b[w12, 2:3], {z4.b-z5.b}
+C004A3C0 mov za0v.b[w13, 0:1], {z30.b-z31.b}
+C0044004 mov za0h.b[w14, 8:9], {z0.b-z1.b}
+C0046005 mov za0h.b[w15, 10:11], {z0.b-z1.b}
+C0040006 mov za0h.b[w12, 12:13], {z0.b-z1.b}
+C0040007 mov za0h.b[w12, 14:15], {z0.b-z1.b}
+
+// mova_za2_z_d1 1|10|0000|0|size=11|000|1|0|0|V=x|Rs=xx|000|Zn=xxxx|0|0|0|ZAd=xxx
+// MovaZa2ZD1: MOVA  <ZAd><HV>.D[<Ws>, <offs1>:<offs2>], { <Zn1>.D-<Zn2>.D }
+// MovZa2ZD1MovaZa2ZD1: MOV  <ZAd><HV>.D[<Ws>, <offs1>:<offs2>], { <Zn1>.D-<Zn2>.D }
+// register fields: Rs, Zn, ZAd
+C0C40004 mov za4h.d[w12, 0:1], {z0.d-z1.d}
+C0C40043 mov za3h.d[w12, 0:1], {z2.d-z3.d}
+C0C40082 mov za2h.d[w12, 0:1], {z4.d-z5.d}
+C0C4A3C0 mov za0v.d[w13, 0:1], {z30.d-z31.d}
+C0C44001 mov za1h.d[w14, 0:1], {z0.d-z1.d}
+C0C46005 mov za5h.d[w15, 0:1], {z0.d-z1.d}
+C0C40006 mov za6h.d[w12, 0:1], {z0.d-z1.d}
+C0C40007 mov za7h.d[w12, 0:1], {z0.d-z1.d}
+C0C40000 mov za0h.d[w12, 0:1], {z0.d-z1.d}
+
+// mova_za2_z_h1 1|10|0000|0|size=01|000|1|0|0|V=x|Rs=xx|000|Zn=xxxx|0|0|0|ZAd=x|off2=xx
+// MovaZa2ZH1: MOVA  <ZAd><HV>.H[<Ws>, <offs1>:<offs2>], { <Zn1>.H-<Zn2>.H }
+// MovZa2ZH1MovaZa2ZH1: MOV  <ZAd><HV>.H[<Ws>, <offs1>:<offs2>], { <Zn1>.H-<Zn2>.H }
+// register fields: Rs, Zn, ZAd
+C0440001 mov za0h.h[w12, 2:3], {z0.h-z1.h}
+C0440040 mov za0h.h[w12, 0:1], {z2.h-z3.h}
+C0440047 mov za1h.h[w12, 6:7], {z2.h-z3.h}
+C044A3C2 mov za0v.h[w13, 4:5], {z30.h-z31.h}
+C0444001 mov za0h.h[w14, 2:3], {z0.h-z1.h}
+C0446001 mov za0h.h[w15, 2:3], {z0.h-z1.h}
+
+// mova_za2_z_w1 1|10|0000|0|size=10|000|1|0|0|V=x|Rs=xx|000|Zn=xxxx|0|0|0|ZAd=xx|o1=x
+// MovaZa2ZW1: MOVA  <ZAd><HV>.S[<Ws>, <offs1>:<offs2>], { <Zn1>.S-<Zn2>.S }
+// MovZa2ZW1MovaZa2ZW1: MOV  <ZAd><HV>.S[<Ws>, <offs1>:<offs2>], { <Zn1>.S-<Zn2>.S }
+// register fields: Rs, Zn, ZAd
+C0840006 mov za3h.s[w12, 0:1], {z0.s-z1.s}
+C0840045 mov za2h.s[w12, 2:3], {z2.s-z3.s}
+C0840084 mov za2h.s[w12, 0:1], {z4.s-z5.s}
+C084A3C0 mov za0v.s[w13, 0:1], {z30.s-z31.s}
+C0844002 mov za1h.s[w14, 0:1], {z0.s-z1.s}
+C0846006 mov za3h.s[w15, 0:1], {z0.s-z1.s}

@@ -1,0 +1,14 @@
+// umops_za32_pp_zz_16 1|01|0000|u0=1|10|0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|1|0|ZAda=xx
+// UmopsZa32PpZz16: UMOPS  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A1800018 umops za0.s, p0/m, p0/m, z0.h, z0.h
+A180003B umops za3.s, p0/m, p0/m, z1.h, z0.h
+A180007A umops za2.s, p0/m, p0/m, z3.h, z0.h
+A19F27F9 umops za1.s, p1/m, p1/m, z31.h, z31.h
+A1804818 umops za0.s, p2/m, p2/m, z0.h, z0.h
+A1806C18 umops za0.s, p3/m, p3/m, z0.h, z0.h
+A1809018 umops za0.s, p4/m, p4/m, z0.h, z0.h
+A180B418 umops za0.s, p5/m, p5/m, z0.h, z0.h
+A180D818 umops za0.s, p6/m, p6/m, z0.h, z0.h
+A180FC18 umops za0.s, p7/m, p7/m, z0.h, z0.h
+A1858C59 umops za1.s, p3/m, p4/m, z2.h, z5.h

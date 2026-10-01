@@ -1,0 +1,8 @@
+// fcvtl_mz2_z_ 1|10|0000|1|10|1|000|00|111000|Zn=xxxxx|Zd=xxxx|L=1
+// FcvtlMz2Z: FCVTL  { <Zd1>.S-<Zd2>.S }, <Zn>.H
+// register fields: Zn, Zd
+C1A0E005 fcvtl {z4.s-z5.s}, z0.h
+C1A0E013 fcvtl {z18.s-z19.s}, z0.h
+C1A0E021 fcvtl {z0.s-z1.s}, z1.h
+C1A0E3FF fcvtl {z30.s-z31.s}, z31.h
+C1A0E001 fcvtl {z0.s-z1.s}, z0.h

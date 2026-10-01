@@ -1,0 +1,47 @@
+// uqinch_r_rs_uw 000|0010|0|size=01|1|sf=0|imm4=xxxx|11|11|D=0|U=1|pattern=xxxxx|Rdn=xxxxx
+// UqinchRRsUw: UQINCH  <Wdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0469F59E uqinch w30, vl128, mul #0xa
+0465F754 uqinch w20, #0x1a, mul #0x6
+0468F44F uqinch w15, vl2, mul #0x9
+0464F443 uqinch w3, vl2, mul #0x5
+0469F566 uqinch w6, vl64, mul #0xa
+0467F495 uqinch w21, vl4, mul #0x8
+0468F7B2 uqinch w18, mul4, mul #0x9
+046CF60C uqinch w12, #0x10, mul #0xd
+0460F546 uqinch w6, vl32
+0468F5AD uqinch w13, vl256, mul #0x9
+0461F604 uqinch w4, #0x10, mul #0x2
+0463F4E3 uqinch w3, vl7, mul #0x4
+046DF4E5 uqinch w5, vl7, mul #0xe
+0460F5EE uqinch w14, #0xf
+046FF7D6 uqinch w22, mul3, mul #0x10
+046AF5D6 uqinch w22, #0xe, mul #0xb
+0469F400 uqinch w0, pow2, mul #0xa
+0469F7FF uqinch wzr, all, mul #0xa
+0462F51E uqinch w30, vl8, mul #0x3
+0469F43E uqinch w30, vl1, mul #0xa
+
+// uqinch_r_rs_x 000|0010|0|size=01|1|sf=1|imm4=xxxx|11|11|D=0|U=1|pattern=xxxxx|Rdn=xxxxx
+// UqinchRRsX: UQINCH  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0477F5F9 uqinch x25, #0xf, mul #0x8
+0478F46C uqinch x12, vl3, mul #0x9
+0472F786 uqinch x6, #0x1c, mul #0x3
+0477F437 uqinch x23, vl1, mul #0x8
+047AF629 uqinch x9, #0x11, mul #0xb
+0473F44B uqinch x11, vl2, mul #0x4
+047CF72B uqinch x11, #0x19, mul #0xd
+0474F7CB uqinch x11, mul3, mul #0x5
+0478F546 uqinch x6, vl32, mul #0x9
+047EF406 uqinch x6, pow2, mul #0xf
+0477F68D uqinch x13, #0x14, mul #0x8
+0474F68C uqinch x12, #0x14, mul #0x5
+047FF50B uqinch x11, vl8, mul #0x10
+0478F50C uqinch x12, vl8, mul #0x9
+0476F5A4 uqinch x4, vl256, mul #0x7
+0478F753 uqinch x19, #0x1a, mul #0x9
+0470F7E0 uqinch x0
+0477F5FF uqinch xzr, #0xf, mul #0x8
+0471F619 uqinch x25, #0x10, mul #0x2
+0477F499 uqinch x25, vl4, mul #0x8

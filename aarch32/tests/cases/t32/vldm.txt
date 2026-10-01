@@ -1,0 +1,126 @@
+// VLDM_T1 1110110|P=0|U=1|D=x|W=x|L=1|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx0
+// VpopVldmT1: VPOP{<c>}{<q>}{.<size>}  <dreglist>
+// VldmT1: VLDM{<c>}{<q>}{.<size>}  <Rn>{<!>}, <dreglist>
+// read together by the VPOP alias: W, Rn
+// register fields: Rn
+// form chosen on: W, Rn
+// IT state read: condition
+ec999b80 UNPREDICTABLE
+ecb41b08 vldm r4!, {d1, d2, d3, d4}
+ec98fb8e UNPREDICTABLE
+ecfc4b7e UNPREDICTABLE
+ecf18b36 UNPREDICTABLE
+ecb97bc0 UNPREDICTABLE
+ec9d0bc0 UNPREDICTABLE
+ec9e3b30 vldm lr, {d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26} (unpredictable)
+EC902B00 vldm r0, {} (unpredictable)
+EC9F9BFE UNPREDICTABLE
+EC909B40 UNPREDICTABLE
+EC9F9B20 vldm pc, {d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24} (unpredictable)
+ECB09B10 vldm r0!, {d9, d10, d11, d12, d13, d14, d15, d16}
+ECBF9B04 vldm pc!, {d9, d10} (unpredictable)
+EC999B02 vldm r9, {d9}
+ECBD0BC0 UNPREDICTABLE
+ECBD0BC0 [ne] UNPREDICTABLE
+EC999B80 [ne] UNPREDICTABLE
+ECB41B08 [ne] vldmne r4!, {d1, d2, d3, d4}
+ECF40B08 vldm r4!, {d16, d17, d18, d19}
+ECB4FB08 vldm r4!, {d15, d16, d17, d18}
+ECB48B08 vldm r4!, {d8, d9, d10, d11}
+ECB44B08 vldm r4!, {d4, d5, d6, d7}
+ECBD9B04 vpop {d9, d10}
+ECBD9B04 [ne] vpopne {d9, d10}
+
+// VLDM_T2 1110110|P=0|U=1|D=x|W=x|L=1|Rn=xxxx|Vd=xxxx|10|size=10|imm8=xxxxxxxx
+// VpopVldmT2: VPOP{<c>}{<q>}{.<size>}  <sreglist>
+// VldmT2: VLDM{<c>}{<q>}{.<size>}  <Rn>{<!>}, <sreglist>
+// read together by the VPOP alias: W, Rn
+// register fields: Rn
+// form chosen on: W, Rn
+// IT state read: condition
+ecf9caca UNPREDICTABLE
+ecf29afa UNPREDICTABLE
+ec976a7c UNPREDICTABLE
+ecd25aa7 UNPREDICTABLE
+ecd07a95 UNPREDICTABLE
+ec9f1abe UNPREDICTABLE
+ecfa0a38 UNPREDICTABLE
+ec91aaa8 UNPREDICTABLE
+ECF0FA00 vldm r0!, {} (unpredictable)
+ECFF8AFF UNPREDICTABLE
+ECF94A80 UNPREDICTABLE
+ECF92A40 UNPREDICTABLE
+ECF9CA20 UNPREDICTABLE
+ECF9CA10 UNPREDICTABLE
+ECF9CA08 UNPREDICTABLE
+ECF9CA04 vldm r9!, {s25, s26, s27, s28}
+ECF9CA02 vldm r9!, {s25, s26}
+ECF9CA01 vldm r9!, {s25}
+ECFD2A40 UNPREDICTABLE
+ECFD2A40 [ne] UNPREDICTABLE
+ECF9CACA [ne] UNPREDICTABLE
+ECF0FA00 [ne] vldmne r0!, {} (unpredictable)
+EC9F0A20 vldm pc, {s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24, s25, s26, s27, s28, s29, s30, s31} (unpredictable)
+ECD08A08 vldm r0, {s17, s18, s19, s20, s21, s22, s23, s24}
+ECDF4A10 vldm pc, {s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24} (unpredictable)
+ECFF2A00 vldm pc!, {} (unpredictable)
+ECF01A00 vldm r0!, {} (unpredictable)
+ECFDCA01 vpop {s25}
+ECFDCA01 [ne] vpopne {s25}
+
+// VLDMDB_T1 1110110|P=1|U=0|D=x|W=1|L=1|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx0
+// VldmdbT1: VLDMDB{<c>}{<q>}{.<size>}  <Rn>!, <dreglist>
+// register fields: Rn
+// IT state read: condition
+ed36ab3a UNPREDICTABLE
+ed71bb2c UNPREDICTABLE
+ed38ab80 UNPREDICTABLE
+ed7d1b62 UNPREDICTABLE
+ed72abf0 UNPREDICTABLE
+ed7b6b68 UNPREDICTABLE
+ed387b7a UNPREDICTABLE
+ed7afb80 UNPREDICTABLE
+ED300B00 vldmdb r0!, {} (unpredictable)
+ED3F8BFE UNPREDICTABLE
+ED364B40 UNPREDICTABLE
+ED362B20 vldmdb r6!, {d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17}
+ED36AB10 vldmdb r6!, {d10, d11, d12, d13, d14, d15, d16, d17}
+ED36AB08 vldmdb r6!, {d10, d11, d12, d13}
+ED36AB04 vldmdb r6!, {d10, d11}
+ED36AB02 vldmdb r6!, {d10}
+ED36AB3A [ne] UNPREDICTABLE
+ED300B00 [ne] vldmdbne r0!, {} (unpredictable)
+ED7FFB00 vldmdb pc!, {} (unpredictable)
+ED308B00 vldmdb r0!, {} (unpredictable)
+ED304B00 vldmdb r0!, {} (unpredictable)
+ED301B00 vldmdb r0!, {} (unpredictable)
+ED300B40 vldmdb r0!, {d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30, d31} (unpredictable)
+
+// VLDMDB_T2 1110110|P=1|U=0|D=x|W=1|L=1|Rn=xxxx|Vd=xxxx|10|size=10|imm8=xxxxxxxx
+// VldmdbT2: VLDMDB{<c>}{<q>}{.<size>}  <Rn>!, <sreglist>
+// register fields: Rn
+// IT state read: condition
+ed7e4ada UNPREDICTABLE
+ed736a98 UNPREDICTABLE
+ed3cda05 vldmdb r12!, {s26, s27, s28, s29, s30}
+ed731a44 UNPREDICTABLE
+ed784a23 UNPREDICTABLE
+ed751a3d UNPREDICTABLE
+ed7ccac9 UNPREDICTABLE
+ed70da87 UNPREDICTABLE
+ED7F0A00 vldmdb pc!, {} (unpredictable)
+ED7EFAFF UNPREDICTABLE
+ED7E8A80 UNPREDICTABLE
+ED7E2A40 UNPREDICTABLE
+ED7E4A20 UNPREDICTABLE
+ED7E4A10 vldmdb lr!, {s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24}
+ED7E4A08 vldmdb lr!, {s9, s10, s11, s12, s13, s14, s15, s16}
+ED7E4A04 vldmdb lr!, {s9, s10, s11, s12}
+ED7E4A02 vldmdb lr!, {s9, s10}
+ED7E4A01 vldmdb lr!, {s9}
+ED7E4ADA [ne] UNPREDICTABLE
+ED3CDA05 [ne] vldmdbne r12!, {s26, s27, s28, s29, s30}
+ED308A05 vldmdb r0!, {s16, s17, s18, s19, s20}
+ED7FFA00 vldmdb pc!, {} (unpredictable)
+ED3C2A05 vldmdb r12!, {s4, s5, s6, s7, s8}
+ED3C1A05 vldmdb r12!, {s2, s3, s4, s5, s6}

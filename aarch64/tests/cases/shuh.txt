@@ -1,0 +1,4 @@
+// SHUH_HI_hints 110|101|01000000110010|CRm=0110|op2=01x|11111
+// ShuhHiHints: SHUH  {<PH>}
+D503265F shuh
+D503267F shuh ph

@@ -1,0 +1,13 @@
+// nbsl_z_zzz_ 000|0010|0|opc=11|1|Zm=xxxxx|001|11|o2=1|Zk=xxxxx|Zdn=xxxxx
+// NbslZZzz: NBSL  <Zdn>.D, <Zdn>.D, <Zm>.D, <Zk>.D
+// register fields: Zm, Zk, Zdn
+04FF3D9E nbsl z30.d, z30.d, z31.d, z12.d
+04E93D65 nbsl z5.d, z5.d, z9.d, z11.d
+04E33FE5 nbsl z5.d, z5.d, z3.d, z31.d
+04F23D46 nbsl z6.d, z6.d, z18.d, z10.d
+04F23E99 nbsl z25.d, z25.d, z18.d, z20.d
+04EB3E75 nbsl z21.d, z21.d, z11.d, z19.d
+04EE3DF4 nbsl z20.d, z20.d, z14.d, z15.d
+04ED3CEE nbsl z14.d, z14.d, z13.d, z7.d
+04E03C00 nbsl z0.d, z0.d, z0.d, z0.d
+04FF3D9F nbsl z31.d, z31.d, z31.d, z12.d

@@ -1,0 +1,21 @@
+// orr_z_p_zz_ 000|0010|0|size=xx|0|11|opc=000|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// OrrZPZz: ORR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04181CF6 orr z22.b, p7/m, z22.b, z7.b
+04D80EBB orr z27.d, p3/m, z27.d, z21.d
+04180050 orr z16.b, p0/m, z16.b, z2.b
+04980D98 orr z24.s, p3/m, z24.s, z12.s
+04181519 orr z25.b, p5/m, z25.b, z8.b
+041813FB orr z27.b, p4/m, z27.b, z31.b
+045818E5 orr z5.h, p6/m, z5.h, z7.h
+04D813D9 orr z25.d, p4/m, z25.d, z30.d
+04181ED6 orr z22.b, p7/m, z22.b, z22.b
+04181EBC orr z28.b, p7/m, z28.b, z21.b
+04D81808 orr z8.d, p6/m, z8.d, z0.d
+041801AA orr z10.b, p0/m, z10.b, z13.b
+049819CC orr z12.s, p6/m, z12.s, z14.s
+04D8086E orr z14.d, p2/m, z14.d, z3.d
+04980DFF orr z31.s, p3/m, z31.s, z15.s
+0458138A orr z10.h, p4/m, z10.h, z28.h
+041804E0 orr z0.b, p1/m, z0.b, z7.b
+04181CE7 orr z7.b, p7/m, z7.b, z7.b

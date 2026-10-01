@@ -1,0 +1,23 @@
+// fmul_mz_zzw_2x2 1|10|0000|1|size=xx|1|Zm=xxxx|0|111001|Zn=xxxx|0|Zd=xxxx|0
+// FmulMzZzw2x2: FMUL  { <Zd1>.<T>-<Zd2>.<T> }, { <Zn1>.<T>-<Zn2>.<T> }, { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Zm, Zn, Zd
+C160E40C fmul {z12.h-z13.h}, {z0.h-z1.h}, {z0.h-z1.h}
+C160E41A fmul {z26.h-z27.h}, {z0.h-z1.h}, {z0.h-z1.h}
+C160E444 fmul {z4.h-z5.h}, {z2.h-z3.h}, {z0.h-z1.h}
+C1BEE7C0 fmul {z0.s-z1.s}, {z30.s-z31.s}, {z30.s-z31.s}
+C1E0E41E fmul {z30.d-z31.d}, {z0.d-z1.d}, {z0.d-z1.d}
+C160E400 fmul {z0.h-z1.h}, {z0.h-z1.h}, {z0.h-z1.h}
+
+// fmul_mz_zzw_4x4 1|10|0000|1|size=xx|1|Zm=xxx|01|111001|Zn=xxx|0|0|Zd=xxx|0|0
+// FmulMzZzw4x4: FMUL  { <Zd1>.<T>-<Zd4>.<T> }, { <Zn1>.<T>-<Zn4>.<T> }, { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Zm, Zn, Zd
+C161E418 fmul {z24.h-z27.h}, {z0.h-z3.h}, {z0.h-z3.h}
+C161E488 fmul {z8.h-z11.h}, {z4.h-z7.h}, {z0.h-z3.h}
+C161E514 fmul {z20.h-z23.h}, {z8.h-z11.h}, {z0.h-z3.h}
+C1A5E580 fmul {z0.s-z3.s}, {z12.s-z15.s}, {z4.s-z7.s}
+C1E9E604 fmul {z4.d-z7.d}, {z16.d-z19.d}, {z8.d-z11.d}
+C16DE68C fmul {z12.h-z15.h}, {z20.h-z23.h}, {z12.h-z15.h}
+C171E710 fmul {z16.h-z19.h}, {z24.h-z27.h}, {z16.h-z19.h}
+C175E79C fmul {z28.h-z31.h}, {z28.h-z31.h}, {z20.h-z23.h}
+C179E418 fmul {z24.h-z27.h}, {z0.h-z3.h}, {z24.h-z27.h}
+C17DE418 fmul {z24.h-z27.h}, {z0.h-z3.h}, {z28.h-z31.h}

@@ -1,0 +1,132 @@
+// srshr_z_p_zi_ 000|0010|0|tszh=xx|0|0|opc=11|L=0|U=0|100|Pg=xxx|tszl=xx|imm3=xxx|Zdn=xxxxx
+// SrshrZPZi: SRSHR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Pg, Zdn
+040C96F7 srshr z23.h, p5/m, z23.h, #0x9
+040C8AAE srshr z14.h, p2/m, z14.h, #0xb
+044C947A srshr z26.s, p5/m, z26.s, #0x1d
+04CC9140 srshr z0.d, p4/m, z0.d, #0x16
+044C9171 srshr z17.s, p4/m, z17.s, #0x15
+04CC84A0 srshr z0.d, p1/m, z0.d, #0x1b
+044C8E4D srshr z13.s, p3/m, z13.s, #0xe
+04CC81BA srshr z26.d, p0/m, z26.d, #0x13
+048C9B1F srshr z31.d, p6/m, z31.d, #0x28
+040C9E37 srshr z23.h, p7/m, z23.h, #0xf
+040C9697 srshr z23.h, p5/m, z23.h, #0xc
+040C96D7 srshr z23.h, p5/m, z23.h, #0xa
+040C9417 UNDEFINED
+040C9437 UNDEFINED
+040C9457 UNDEFINED
+040C9477 UNDEFINED
+040C9497 UNDEFINED
+040C94B7 UNDEFINED
+040C94D7 UNDEFINED
+040C94F7 UNDEFINED
+040C9505 srshr z5.b, p5/m, z5.b, #0x8
+040C9537 srshr z23.b, p5/m, z23.b, #0x7
+040C9557 srshr z23.b, p5/m, z23.b, #0x6
+040C9577 srshr z23.b, p5/m, z23.b, #0x5
+040C9597 srshr z23.b, p5/m, z23.b, #0x4
+040C95B7 srshr z23.b, p5/m, z23.b, #0x3
+040C95D7 srshr z23.b, p5/m, z23.b, #0x2
+040C95F7 srshr z23.b, p5/m, z23.b, #0x1
+040C9617 srshr z23.h, p5/m, z23.h, #0x10
+040C9657 srshr z23.h, p5/m, z23.h, #0xe
+040C9677 srshr z23.h, p5/m, z23.h, #0xd
+040C9717 srshr z23.h, p5/m, z23.h, #0x8
+040C9737 srshr z23.h, p5/m, z23.h, #0x7
+040C9757 srshr z23.h, p5/m, z23.h, #0x6
+040C9777 srshr z23.h, p5/m, z23.h, #0x5
+040C9797 srshr z23.h, p5/m, z23.h, #0x4
+040C97B7 srshr z23.h, p5/m, z23.h, #0x3
+040C97D7 srshr z23.h, p5/m, z23.h, #0x2
+040C97F7 srshr z23.h, p5/m, z23.h, #0x1
+044C9417 srshr z23.s, p5/m, z23.s, #0x20
+044C9437 srshr z23.s, p5/m, z23.s, #0x1f
+044C9457 srshr z23.s, p5/m, z23.s, #0x1e
+044C9497 srshr z23.s, p5/m, z23.s, #0x1c
+044C94B7 srshr z23.s, p5/m, z23.s, #0x1b
+044C94D7 srshr z23.s, p5/m, z23.s, #0x1a
+044C94F7 srshr z23.s, p5/m, z23.s, #0x19
+044C9517 srshr z23.s, p5/m, z23.s, #0x18
+044C9537 srshr z23.s, p5/m, z23.s, #0x17
+044C9557 srshr z23.s, p5/m, z23.s, #0x16
+044C9597 srshr z23.s, p5/m, z23.s, #0x14
+044C95B7 srshr z23.s, p5/m, z23.s, #0x13
+044C95D7 srshr z23.s, p5/m, z23.s, #0x12
+044C95F7 srshr z23.s, p5/m, z23.s, #0x11
+044C9617 srshr z23.s, p5/m, z23.s, #0x10
+044C9637 srshr z23.s, p5/m, z23.s, #0xf
+044C9677 srshr z23.s, p5/m, z23.s, #0xd
+044C9697 srshr z23.s, p5/m, z23.s, #0xc
+044C96B7 srshr z23.s, p5/m, z23.s, #0xb
+044C96D7 srshr z23.s, p5/m, z23.s, #0xa
+044C96F7 srshr z23.s, p5/m, z23.s, #0x9
+044C9717 srshr z23.s, p5/m, z23.s, #0x8
+044C9737 srshr z23.s, p5/m, z23.s, #0x7
+044C9757 srshr z23.s, p5/m, z23.s, #0x6
+044C9777 srshr z23.s, p5/m, z23.s, #0x5
+044C9797 srshr z23.s, p5/m, z23.s, #0x4
+044C97B7 srshr z23.s, p5/m, z23.s, #0x3
+044C97D7 srshr z23.s, p5/m, z23.s, #0x2
+044C97F7 srshr z23.s, p5/m, z23.s, #0x1
+048C9417 srshr z23.d, p5/m, z23.d, #0x40
+048C9437 srshr z23.d, p5/m, z23.d, #0x3f
+048C9457 srshr z23.d, p5/m, z23.d, #0x3e
+048C9477 srshr z23.d, p5/m, z23.d, #0x3d
+048C9497 srshr z23.d, p5/m, z23.d, #0x3c
+048C94B7 srshr z23.d, p5/m, z23.d, #0x3b
+048C94D7 srshr z23.d, p5/m, z23.d, #0x3a
+048C94F7 srshr z23.d, p5/m, z23.d, #0x39
+048C9517 srshr z23.d, p5/m, z23.d, #0x38
+048C9537 srshr z23.d, p5/m, z23.d, #0x37
+048C9557 srshr z23.d, p5/m, z23.d, #0x36
+048C9577 srshr z23.d, p5/m, z23.d, #0x35
+048C9597 srshr z23.d, p5/m, z23.d, #0x34
+048C95B7 srshr z23.d, p5/m, z23.d, #0x33
+048C95D7 srshr z23.d, p5/m, z23.d, #0x32
+048C95F7 srshr z23.d, p5/m, z23.d, #0x31
+048C9617 srshr z23.d, p5/m, z23.d, #0x30
+048C9637 srshr z23.d, p5/m, z23.d, #0x2f
+048C9657 srshr z23.d, p5/m, z23.d, #0x2e
+048C9677 srshr z23.d, p5/m, z23.d, #0x2d
+048C9697 srshr z23.d, p5/m, z23.d, #0x2c
+048C96B7 srshr z23.d, p5/m, z23.d, #0x2b
+048C96D7 srshr z23.d, p5/m, z23.d, #0x2a
+048C96F7 srshr z23.d, p5/m, z23.d, #0x29
+048C9737 srshr z23.d, p5/m, z23.d, #0x27
+048C9757 srshr z23.d, p5/m, z23.d, #0x26
+048C9777 srshr z23.d, p5/m, z23.d, #0x25
+048C9797 srshr z23.d, p5/m, z23.d, #0x24
+048C97B7 srshr z23.d, p5/m, z23.d, #0x23
+048C97D7 srshr z23.d, p5/m, z23.d, #0x22
+048C97F7 srshr z23.d, p5/m, z23.d, #0x21
+04CC9417 srshr z23.d, p5/m, z23.d, #0x20
+04CC9437 srshr z23.d, p5/m, z23.d, #0x1f
+04CC9457 srshr z23.d, p5/m, z23.d, #0x1e
+04CC9477 srshr z23.d, p5/m, z23.d, #0x1d
+04CC9497 srshr z23.d, p5/m, z23.d, #0x1c
+04CC94D7 srshr z23.d, p5/m, z23.d, #0x1a
+04CC94F7 srshr z23.d, p5/m, z23.d, #0x19
+04CC9517 srshr z23.d, p5/m, z23.d, #0x18
+04CC9537 srshr z23.d, p5/m, z23.d, #0x17
+04CC9577 srshr z23.d, p5/m, z23.d, #0x15
+04CC9597 srshr z23.d, p5/m, z23.d, #0x14
+04CC95D7 srshr z23.d, p5/m, z23.d, #0x12
+04CC95F7 srshr z23.d, p5/m, z23.d, #0x11
+04CC9617 srshr z23.d, p5/m, z23.d, #0x10
+04CC9637 srshr z23.d, p5/m, z23.d, #0xf
+04CC9657 srshr z23.d, p5/m, z23.d, #0xe
+04CC9677 srshr z23.d, p5/m, z23.d, #0xd
+04CC9697 srshr z23.d, p5/m, z23.d, #0xc
+04CC96B7 srshr z23.d, p5/m, z23.d, #0xb
+04CC96D7 srshr z23.d, p5/m, z23.d, #0xa
+04CC96F7 srshr z23.d, p5/m, z23.d, #0x9
+04CC9717 srshr z23.d, p5/m, z23.d, #0x8
+04CC9737 srshr z23.d, p5/m, z23.d, #0x7
+04CC9757 srshr z23.d, p5/m, z23.d, #0x6
+04CC9777 srshr z23.d, p5/m, z23.d, #0x5
+04CC9797 srshr z23.d, p5/m, z23.d, #0x4
+04CC97B7 srshr z23.d, p5/m, z23.d, #0x3
+04CC97D7 srshr z23.d, p5/m, z23.d, #0x2
+04CC97F7 srshr z23.d, p5/m, z23.d, #0x1

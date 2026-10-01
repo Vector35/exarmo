@@ -1,0 +1,18 @@
+// STREXD_T1 111|0100|op0=0110|L=0|Rn=xxxx|Rt=xxxx|Rt2=xxxx|01|sz=11|Rd=xxxx
+// StrexdT1: STREXD{<c>}{<q>}  <Rd>, <Rt>, <Rt2>, [<Rn>]
+// register fields: Rn, Rt, Rt2, Rd
+// IT state read: condition
+e8cae975 strexd r5, lr, r9, [r10]
+e8c9e17b strexd r11, lr, r1, [r9]
+e8c00e72 strexd r2, r0, lr, [r0]
+e8c6f873 strexd r3, pc, r8, [r6] (unpredictable)
+e8ce8c76 strexd r6, r8, r12, [lr]
+e8c5e473 strexd r3, lr, r4, [r5]
+e8cab17e strexd lr, r11, r1, [r10]
+e8c5087c strexd r12, r0, r8, [r5]
+E8CFE070 strexd r0, lr, r0, [pc] (unpredictable)
+E8CAEF7F strexd pc, lr, pc, [r10] (unpredictable)
+E8CAEA7E strexd lr, lr, r10, [r10] (unpredictable)
+E8CAEE7A strexd r10, lr, lr, [r10] (unpredictable)
+E8CAE979 strexd r9, lr, r9, [r10] (unpredictable)
+E8CAE975 [ne] strexdne r5, lr, r9, [r10]

@@ -1,0 +1,12 @@
+// LDA_A1 cond=xxxx|00|01|1|size=00|L=1|Rn=xxxx|Rt=xxxx|(1)(1)|ex=0|ord=0|1|00|1|xRt=(1)(1)(1)(1)
+// LdaA1: LDA{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+01900090 ldaeq r0, [r0] (unpredictable)
+F1900090 UNALLOCATED
+819FF49F ldahi pc, [pc] (unpredictable)
+41900898 ldami r0, [r0] (unpredictable)
+21900C94 ldacs r0, [r0] (unpredictable)
+11900092 ldane r0, [r0] (unpredictable)
+01900091 ldaeq r0, [r0] (unpredictable)
+01900C9F ldaeq r0, [r0]
+01912C9F ldaeq r2, [r1]

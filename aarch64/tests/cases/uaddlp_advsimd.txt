@@ -1,0 +1,24 @@
+// UADDLP_asimdmisc_P 0|Q=x|U=1|0|111|0|size=xx|10000|00|op=0|10|10|Rn=xxxxx|Rd=xxxxx
+// UaddlpAsimdmiscP: UADDLP  <Vd>.<Ta>, <Vn>.<Tb>
+// read together by <Ta> and <Tb>: Q, size
+// register fields: Rn, Rd
+6EA0290B uaddlp v11.2d, v8.4s
+2E602A49 uaddlp v9.2s, v18.4h
+2E60296D uaddlp v13.2s, v11.4h
+6EA0282F uaddlp v15.2d, v1.4s
+2E602AC9 uaddlp v9.2s, v22.4h
+6EA029FF uaddlp v31.2d, v15.4s
+2E202947 uaddlp v7.4h, v10.8b
+6EA02954 uaddlp v20.2d, v10.4s
+6E602A63 uaddlp v3.4s, v19.8h
+6E2029F3 uaddlp v19.8h, v15.16b
+6EA02943 uaddlp v3.2d, v10.4s
+2E602864 uaddlp v4.2s, v3.4h
+2EA02A47 uaddlp v7.1d, v18.2s
+2EA02A34 uaddlp v20.1d, v17.2s
+6E602895 uaddlp v21.4s, v4.8h
+6EA02948 uaddlp v8.2d, v10.4s
+6EA02800 uaddlp v0.2d, v0.4s
+6EA02BEB uaddlp v11.2d, v31.4s
+6EE0290B UNDEFINED
+2EE0290B UNDEFINED

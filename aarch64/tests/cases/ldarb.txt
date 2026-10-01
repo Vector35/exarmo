@@ -1,0 +1,34 @@
+// LDARB_LR32_ldstord size=00|00|1|0|0|01|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdarbLr32Ldstord: LDARB  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+08DFFE9C ldarb w28, [x20]
+08DFFE94 ldarb w20, [x20]
+08DFFE90 ldarb w16, [x20]
+08DFFC98 ldarb w24, [x4]
+08DFFEF9 ldarb w25, [x23]
+08DFFCE7 ldarb w7, [x7]
+08DFFF47 ldarb w7, [x26]
+08DFFCEE ldarb w14, [x7]
+08CFFD6F ldarb w15, [x11] (unpredictable)
+08DFFCCA ldarb w10, [x6]
+08DFFE08 ldarb w8, [x16]
+08DFFF25 ldarb w5, [x25]
+08CFFD7C ldarb w28, [x11] (unpredictable)
+08DFFFF2 ldarb w18, [sp]
+08CFFDC6 ldarb w6, [x14] (unpredictable)
+08CFFCE8 ldarb w8, [x7] (unpredictable)
+08CFFC6A ldarb w10, [x3] (unpredictable)
+08CFFC52 ldarb w18, [x2] (unpredictable)
+08CFFFEE ldarb w14, [sp] (unpredictable)
+08CFFFEB ldarb w11, [sp] (unpredictable)
+08DFFD7E ldarb w30, [x11]
+08CFFF26 ldarb w6, [x25] (unpredictable)
+08CFFD4B ldarb w11, [x10] (unpredictable)
+08CFFC49 ldarb w9, [x2] (unpredictable)
+08C08000 ldarb w0, [x0] (unpredictable)
+08DFFE9F ldarb wzr, [x20]
+08D0C29C ldarb w28, [x20] (unpredictable)
+08C8A29C ldarb w28, [x20] (unpredictable)
+08C4929C ldarb w28, [x20] (unpredictable)
+08C28A9C ldarb w28, [x20] (unpredictable)
+08C1869C ldarb w28, [x20] (unpredictable)

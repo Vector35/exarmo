@@ -1,0 +1,107 @@
+// CFLTEQ_32_regs sf=0|1110110|cc=110|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cflteq32Regs: CFLTEQ  #<reason>, <Wt|WSP>, <Wm|WSP>
+// register fields: Rm, Rt
+76C00200 cflteq #0x0, w0, w0
+76DF061F cflteq #0x1, wsp, wsp
+76C00A00 cflteq #0x2, w0, w0
+76C00E00 cflteq #0x3, w0, w0
+76C10202 cflteq #0x0, w2, w1
+
+// CFLTEQ_64_regs sf=1|1110110|cc=110|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cflteq64Regs: CFLTEQ  #<reason>, <Xt|SP>, <Xm|SP>
+// register fields: Rm, Rt
+F6C00200 cflteq #0x0, x0, x0
+F6DF061F cflteq #0x1, sp, sp
+F6C00A00 cflteq #0x2, x0, x0
+F6C00E00 cflteq #0x3, x0, x0
+F6C10202 cflteq #0x0, x2, x1
+
+// CFLTGE_32_regs sf=0|1110110|cc=001|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cfltge32Regs: CFLTGE  #<reason>, <Wt|WSP>, <Wm|WSP>
+// register fields: Rm, Rt
+76200200 cfltge #0x0, w0, w0
+763F061F cfltge #0x1, wsp, wsp
+76200A00 cfltge #0x2, w0, w0
+76200E00 cfltge #0x3, w0, w0
+76210202 cfltge #0x0, w2, w1
+
+// CFLTGE_64_regs sf=1|1110110|cc=001|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cfltge64Regs: CFLTGE  #<reason>, <Xt|SP>, <Xm|SP>
+// register fields: Rm, Rt
+F6200200 cfltge #0x0, x0, x0
+F63F061F cfltge #0x1, sp, sp
+F6200A00 cfltge #0x2, x0, x0
+F6200E00 cfltge #0x3, x0, x0
+F6210202 cfltge #0x0, x2, x1
+
+// CFLTGT_32_regs sf=0|1110110|cc=000|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cfltgt32Regs: CFLTGT  #<reason>, <Wt|WSP>, <Wm|WSP>
+// register fields: Rm, Rt
+76000200 cfltgt #0x0, w0, w0
+761F061F cfltgt #0x1, wsp, wsp
+76000A00 cfltgt #0x2, w0, w0
+76000E00 cfltgt #0x3, w0, w0
+76010202 cfltgt #0x0, w2, w1
+
+// CFLTGT_64_regs sf=1|1110110|cc=000|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cfltgt64Regs: CFLTGT  #<reason>, <Xt|SP>, <Xm|SP>
+// register fields: Rm, Rt
+F6000200 cfltgt #0x0, x0, x0
+F61F061F cfltgt #0x1, sp, sp
+F6000A00 cfltgt #0x2, x0, x0
+F6000E00 cfltgt #0x3, x0, x0
+F6010202 cfltgt #0x0, x2, x1
+
+// CFLTHI_32_regs sf=0|1110110|cc=010|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cflthi32Regs: CFLTHI  #<reason>, <Wt|WSP>, <Wm|WSP>
+// register fields: Rm, Rt
+76400200 cflthi #0x0, w0, w0
+765F061F cflthi #0x1, wsp, wsp
+76400A00 cflthi #0x2, w0, w0
+76400E00 cflthi #0x3, w0, w0
+76410202 cflthi #0x0, w2, w1
+
+// CFLTHI_64_regs sf=1|1110110|cc=010|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cflthi64Regs: CFLTHI  #<reason>, <Xt|SP>, <Xm|SP>
+// register fields: Rm, Rt
+F6400200 cflthi #0x0, x0, x0
+F65F061F cflthi #0x1, sp, sp
+F6400A00 cflthi #0x2, x0, x0
+F6400E00 cflthi #0x3, x0, x0
+F6410202 cflthi #0x0, x2, x1
+
+// CFLTHS_32_regs sf=0|1110110|cc=011|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cflths32Regs: CFLTHS  #<reason>, <Wt|WSP>, <Wm|WSP>
+// register fields: Rm, Rt
+76600200 cflths #0x0, w0, w0
+767F061F cflths #0x1, wsp, wsp
+76600A00 cflths #0x2, w0, w0
+76600E00 cflths #0x3, w0, w0
+76610202 cflths #0x0, w2, w1
+
+// CFLTHS_64_regs sf=1|1110110|cc=011|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cflths64Regs: CFLTHS  #<reason>, <Xt|SP>, <Xm|SP>
+// register fields: Rm, Rt
+F6600200 cflths #0x0, x0, x0
+F67F061F cflths #0x1, sp, sp
+F6600A00 cflths #0x2, x0, x0
+F6600E00 cflths #0x3, x0, x0
+F6610202 cflths #0x0, x2, x1
+
+// CFLTNE_32_regs sf=0|1110110|cc=111|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cfltne32Regs: CFLTNE  #<reason>, <Wt|WSP>, <Wm|WSP>
+// register fields: Rm, Rt
+76E00200 cfltne #0x0, w0, w0
+76FF061F cfltne #0x1, wsp, wsp
+76E00A00 cfltne #0x2, w0, w0
+76E00E00 cfltne #0x3, w0, w0
+76E10202 cfltne #0x0, w2, w1
+
+// CFLTNE_64_regs sf=1|1110110|cc=111|Rm=xxxxx|0000|imm2=xx|10000|Rt=xxxxx
+// Cfltne64Regs: CFLTNE  #<reason>, <Xt|SP>, <Xm|SP>
+// register fields: Rm, Rt
+F6E00200 cfltne #0x0, x0, x0
+F6FF061F cfltne #0x1, sp, sp
+F6E00A00 cfltne #0x2, x0, x0
+F6E00E00 cfltne #0x3, x0, x0
+F6E10202 cfltne #0x0, x2, x1

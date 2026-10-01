@@ -1,0 +1,19 @@
+// SSBB_A1 1111|0|1|01011|1|(1)(1)(1)(1)(1)(1)(1)(1)(0)(0)(0)(0)|opcode=0100|option=0000
+// SsbbA1: SSBB{<q>}
+// Binary Ninja's tests
+f57ff040 ssbb
+F5700040 ssbb (unpredictable)
+F57FFF40 ssbb (unpredictable)
+F5780040 ssbb (unpredictable)
+F5740040 ssbb (unpredictable)
+F5720040 ssbb (unpredictable)
+F5710040 ssbb (unpredictable)
+F5708040 ssbb (unpredictable)
+F5704040 ssbb (unpredictable)
+F5702040 ssbb (unpredictable)
+F5701040 ssbb (unpredictable)
+F5700840 ssbb (unpredictable)
+F5700440 ssbb (unpredictable)
+F5700240 ssbb (unpredictable)
+F5700140 ssbb (unpredictable)
+F5700F40 ssbb (unpredictable)

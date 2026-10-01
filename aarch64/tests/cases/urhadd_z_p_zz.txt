@@ -1,0 +1,16 @@
+// urhadd_z_p_zz_ 010|0010|0|size=xx|0|10|R=1|S=0|U=1|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UrhaddZPZz: URHADD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+449594C0 urhadd z0.s, p5/m, z0.s, z6.s
+44559F70 urhadd z16.h, p7/m, z16.h, z27.h
+44D58A73 urhadd z19.d, p2/m, z19.d, z19.d
+445588BA urhadd z26.h, p2/m, z26.h, z5.h
+44958075 urhadd z21.s, p0/m, z21.s, z3.s
+44959EA9 urhadd z9.s, p7/m, z9.s, z21.s
+44959FBE urhadd z30.s, p7/m, z30.s, z29.s
+44159641 urhadd z1.b, p5/m, z1.b, z18.b
+4495841F urhadd z31.s, p1/m, z31.s, z0.s
+44958FE0 urhadd z0.s, p3/m, z0.s, z31.s
+449590C0 urhadd z0.s, p4/m, z0.s, z6.s
+449598C0 urhadd z0.s, p6/m, z0.s, z6.s
+449594C5 urhadd z5.s, p5/m, z5.s, z6.s

@@ -1,0 +1,9 @@
+// sqcvt_z_mz2_ 1|10|0000|1|0|op=0|1|000|11|111000|Zn=xxxx|U=0|Zd=xxxxx
+// SqcvtZMz2: SQCVT  <Zd>.H, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+C123E003 sqcvt z3.h, {z0.s-z1.s}
+C123E00A sqcvt z10.h, {z0.s-z1.s}
+C123E011 sqcvt z17.h, {z0.s-z1.s}
+C123E3C0 sqcvt z0.h, {z30.s-z31.s}
+C123E01F sqcvt z31.h, {z0.s-z1.s}
+C123E000 sqcvt z0.h, {z0.s-z1.s}

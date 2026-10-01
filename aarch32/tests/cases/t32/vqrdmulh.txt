@@ -1,0 +1,94 @@
+// VQRDMULH_T1_D 111|U=1|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1011|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VqrdmulhT1D: VQRDMULH{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff1d2b84 vqrdmulh.s16 d2, d29, d4
+ff1bfbaf vqrdmulh.s16 d15, d27, d31
+ff117b2e vqrdmulh.s16 d7, d1, d30
+ff5a3b27 vqrdmulh.s16 d19, d10, d23
+ff1eaba0 vqrdmulh.s16 d10, d30, d16
+ff691b0e vqrdmulh.s32 d17, d9, d14
+ff583b25 vqrdmulh.s16 d19, d8, d21
+ff17db2d vqrdmulh.s16 d13, d7, d29
+FF0D2B84 UNDEFINED
+FF3D2B84 UNDEFINED
+FF100B88 vqrdmulh.s16 d0, d16, d8
+FF1F8B82 vqrdmulh.s16 d8, d31, d2
+FF144B81 vqrdmulh.s16 d4, d20, d1
+FF120B80 vqrdmulh.s16 d0, d18, d0
+FF500B0F vqrdmulh.s16 d16, d0, d15
+FF50FB84 vqrdmulh.s16 d31, d16, d4
+FF1F2B04 vqrdmulh.s16 d2, d15, d4
+FF1F2B84 vqrdmulh.s16 d2, d31, d4
+FF1D2B84 [ne] vqrdmulhne.s16 d2, d29, d4
+
+// VQRDMULH_T1_Q 111|U=1|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1011|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VqrdmulhT1Q: VQRDMULH{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff588bc6 vqrdmulh.s16 q12, q12, q3
+ff60ebc4 vqrdmulh.s32 q15, q8, q2
+ff2ecbc0 vqrdmulh.s32 q6, q15, q0
+ff1eabce vqrdmulh.s16 q5, q15, q7
+ff6a0be8 vqrdmulh.s32 q8, q13, q12
+ff6c6be8 vqrdmulh.s32 q11, q14, q12
+ff186bea vqrdmulh.s16 q3, q12, q13
+ff2e2be4 vqrdmulh.s32 q1, q15, q10
+FF4FFBCF UNDEFINED
+FF711BC1 UNDEFINED
+FF544B42 vqrdmulh.s16 q10, q2, q1
+FF120BE0 vqrdmulh.s16 q0, q9, q8
+FF1FFB4F UNDEFINED
+FF5FFBEF UNDEFINED
+FF508B46 vqrdmulh.s16 q12, q0, q3
+FF588BC6 [ne] vqrdmulhne.s16 q12, q12, q3
+
+// VQRDMULH_T2_D 111|Q=0|11111|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1101|N=x|1|M=x|0|Vm=xxxx
+// VqrdmulhT2D: VQRDMULH{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm[x]>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// IT state read: condition
+ef921de2 vqrdmulh.s16 d1, d18, d2[2]
+ef94fd6a vqrdmulh.s16 d15, d4, d2[3]
+efdd0d47 vqrdmulh.s16 d16, d13, d7[0]
+efabad46 vqrdmulh.s32 d10, d11, d6[0]
+efd81d60 vqrdmulh.s16 d17, d8, d0[2]
+efa4cdec vqrdmulh.s32 d12, d20, d12[1]
+efabbdce vqrdmulh.s32 d11, d27, d14[0]
+ef9bdd64 vqrdmulh.s16 d13, d11, d4[2]
+EF821DE2 UNDEFINED
+EFB21DE2 UNDEFINED
+EF908DEF vqrdmulh.s16 d8, d16, d7[3]
+EF9F4DE8 vqrdmulh.s16 d4, d31, d0[3]
+EF912DE1 vqrdmulh.s16 d2, d17, d1[2]
+EF900D62 vqrdmulh.s16 d0, d0, d2[2]
+EFD0FDE2 vqrdmulh.s16 d31, d16, d2[2]
+EF9F1D62 vqrdmulh.s16 d1, d15, d2[2]
+EF9F1DE2 vqrdmulh.s16 d1, d31, d2[2]
+EF921DE2 [ne] vqrdmulhne.s16 d1, d18, d2[2]
+
+// VQRDMULH_T2_Q 111|Q=1|11111|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1101|N=x|1|M=x|0|Vm=xxxx
+// VqrdmulhT2Q: VQRDMULH{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Dm[x]>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// IT state read: condition
+ffe64d49 vqrdmulh.s32 q10, q3, d9[0]
+ff902dc8 vqrdmulh.s16 q1, q8, d0[1]
+ffd04d69 vqrdmulh.s16 q10, q0, d1[3]
+ffd26d40 vqrdmulh.s16 q11, q1, d0[0]
+ff984d4e vqrdmulh.s16 q2, q4, d6[1]
+ff98cdca vqrdmulh.s16 q6, q12, d2[1]
+ffd00d6c vqrdmulh.s16 q8, q0, d4[3]
+ffd48def vqrdmulh.s16 q12, q10, d7[3]
+FFCFFD49 UNDEFINED
+FFF11D49 UNALLOCATED
+FFA60D44 vqrdmulh.s32 q0, q3, d4[0]
+FFE64D42 vqrdmulh.s32 q10, q3, d2[0]
+FFE64D41 vqrdmulh.s32 q10, q3, d1[0]
+FFAFFD49 UNDEFINED
+FFEFFDC9 UNDEFINED
+FFE64D49 [ne] vqrdmulhne.s32 q10, q3, d9[0]

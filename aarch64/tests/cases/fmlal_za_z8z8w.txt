@@ -1,0 +1,24 @@
+// fmlal_za_z8z8w_2x2 1|10|0000|11|0|1|Zm=xxxx|00|Rv=xx|010|Zn=xxxx|1|000|off2=xx
+// FmlalZaZ8z8w2x2: FMLAL  ZA.H[<Wv>, <offs1>:<offs2>{, VGx2}], { <Zn1>.B-<Zn2>.B }, { <Zm1>.B-<Zm2>.B }
+// register fields: Zm, Rv, Zn
+C1A00863 fmlal za.h[w8, 6:7, vgx2], {z2.b-z3.b}, {z0.b-z1.b}
+C1A008A2 fmlal za.h[w8, 4:5, vgx2], {z4.b-z5.b}, {z0.b-z1.b}
+C1A008E1 fmlal za.h[w8, 2:3, vgx2], {z6.b-z7.b}, {z0.b-z1.b}
+C1BE2820 fmlal za.h[w9, 0:1, vgx2], {z0.b-z1.b}, {z30.b-z31.b}
+C1A04BE3 fmlal za.h[w10, 6:7, vgx2], {z30.b-z31.b}, {z0.b-z1.b}
+C1A06863 fmlal za.h[w11, 6:7, vgx2], {z2.b-z3.b}, {z0.b-z1.b}
+C1A00823 fmlal za.h[w8, 6:7, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+
+// fmlal_za_z8z8w_4x4 1|10|0000|11|0|1|Zm=xxx|0|10|Rv=xx|010|Zn=xxx|01|000|off2=xx
+// FmlalZaZ8z8w4x4: FMLAL  ZA.H[<Wv>, <offs1>:<offs2>{, VGx4}], { <Zn1>.B-<Zn4>.B }, { <Zm1>.B-<Zm4>.B }
+// register fields: Zm, Rv, Zn
+C1A10822 fmlal za.h[w8, 4:5, vgx4], {z0.b-z3.b}, {z0.b-z3.b}
+C1A108A0 fmlal za.h[w8, 0:1, vgx4], {z4.b-z7.b}, {z0.b-z3.b}
+C1A109A3 fmlal za.h[w8, 6:7, vgx4], {z12.b-z15.b}, {z0.b-z3.b}
+C1A52921 fmlal za.h[w9, 2:3, vgx4], {z8.b-z11.b}, {z4.b-z7.b}
+C1A94A22 fmlal za.h[w10, 4:5, vgx4], {z16.b-z19.b}, {z8.b-z11.b}
+C1AD6AA2 fmlal za.h[w11, 4:5, vgx4], {z20.b-z23.b}, {z12.b-z15.b}
+C1B10B22 fmlal za.h[w8, 4:5, vgx4], {z24.b-z27.b}, {z16.b-z19.b}
+C1B50BA2 fmlal za.h[w8, 4:5, vgx4], {z28.b-z31.b}, {z20.b-z23.b}
+C1B90822 fmlal za.h[w8, 4:5, vgx4], {z0.b-z3.b}, {z24.b-z27.b}
+C1BD0822 fmlal za.h[w8, 4:5, vgx4], {z0.b-z3.b}, {z28.b-z31.b}

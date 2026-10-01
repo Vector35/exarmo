@@ -1,0 +1,33 @@
+// addha_za_pp_z_32 1|10|0000|0|1|op=0|010|00|V=0|Pm=xxx|Pn=xxx|Zn=xxxxx|0|0|0|ZAda=xx
+// AddhaZaPpZ32: ADDHA  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.S
+// register fields: Pm, Pn, Zn, ZAda
+C0909662 addha za2.s, p5/m, p4/m, z19.s
+C0903260 addha za0.s, p4/m, p1/m, z19.s
+C0903C60 addha za0.s, p7/m, p1/m, z3.s
+C090BF63 addha za3.s, p7/m, p5/m, z27.s
+C090AD21 addha za1.s, p3/m, p5/m, z9.s
+C0900920 addha za0.s, p2/m, p0/m, z9.s
+C090F5E3 addha za3.s, p5/m, p7/m, z15.s
+C090DBE3 addha za3.s, p6/m, p6/m, z31.s
+C0904002 addha za2.s, p0/m, p2/m, z0.s
+C0906662 addha za2.s, p1/m, p3/m, z19.s
+C0908882 addha za2.s, p2/m, p4/m, z4.s
+C0909442 addha za2.s, p5/m, p4/m, z2.s
+
+// addha_za_pp_z_64 1|10|0000|0|1|op=1|010|00|V=0|Pm=xxx|Pn=xxx|Zn=xxxxx|0|0|ZAda=xxx
+// AddhaZaPpZ64: ADDHA  <ZAda>.D, <Pn>/M, <Pm>/M, <Zn>.D
+// register fields: Pm, Pn, Zn, ZAda
+C0D053E5 addha za5.d, p4/m, p2/m, z31.d
+C0D012C2 addha za2.d, p4/m, p0/m, z22.d
+C0D02983 addha za3.d, p2/m, p1/m, z12.d
+C0D019C2 addha za2.d, p6/m, p0/m, z14.d
+C0D0E1A5 addha za5.d, p0/m, p7/m, z13.d
+C0D02E24 addha za4.d, p3/m, p1/m, z17.d
+C0D0E5C6 addha za6.d, p1/m, p7/m, z14.d
+C0D0C661 addha za1.d, p1/m, p6/m, z19.d
+C0D07400 addha za0.d, p5/m, p3/m, z0.d
+C0D09FE7 addha za7.d, p7/m, p4/m, z31.d
+C0D0B3E5 addha za5.d, p4/m, p5/m, z31.d
+C0D04BE5 addha za5.d, p2/m, p2/m, z31.d
+C0D05045 addha za5.d, p4/m, p2/m, z2.d
+C0D05085 addha za5.d, p4/m, p2/m, z4.d

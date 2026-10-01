@@ -1,0 +1,33 @@
+// VMOV_s_T1 11101110000|op=1|Vn=xxxx|Rt=xxxx|1010|N=x|(0)(0)1(0)(0)(0)(0)
+// VmovST1: VMOV{<c>}{<q>}  <Rt>, <Sn>
+// read together by <Sn>: Vn, N
+// register fields: Rt
+// IT state read: condition
+EE100A10 vmov r0, s0
+EE1FFAFF vmov pc, s31 (unpredictable)
+EE180A50 vmov r0, s16 (unpredictable)
+EE140A30 vmov r0, s8 (unpredictable)
+EE120A18 vmov r0, s4 (unpredictable)
+EE110A14 vmov r0, s2 (unpredictable)
+EE100A91 vmov r0, s1 (unpredictable)
+EE1F0A10 vmov r0, s30
+EE1F0A90 vmov r0, s31
+EE100A12 vmov r0, s0 (unpredictable)
+EE100A10 [ne] vmovne r0, s0
+
+// VMOV_tos_T1 11101110000|op=0|Vn=xxxx|Rt=xxxx|1010|N=x|(0)(0)1(0)(0)(0)(0)
+// VmovTosT1: VMOV{<c>}{<q>}  <Sn>, <Rt>
+// read together by <Sn>: Vn, N
+// register fields: Rt
+// IT state read: condition
+EE000A10 vmov s0, r0
+EE0FFAFF vmov s31, pc (unpredictable)
+EE080A50 vmov s16, r0 (unpredictable)
+EE040A30 vmov s8, r0 (unpredictable)
+EE020A18 vmov s4, r0 (unpredictable)
+EE010A14 vmov s2, r0 (unpredictable)
+EE000A12 vmov s0, r0 (unpredictable)
+EE000A91 vmov s1, r0 (unpredictable)
+EE0F0A10 vmov s30, r0
+EE0F0A90 vmov s31, r0
+EE000A10 [ne] vmovne s0, r0

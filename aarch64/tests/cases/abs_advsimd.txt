@@ -1,0 +1,45 @@
+// ABS_asimdmisc_R 0|Q=x|U=0|0|111|0|size=xx|10000|opcode=01011|10|Rn=xxxxx|Rd=xxxxx
+// AbsAsimdmiscR: ABS  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+0E60BA1C abs v28.4h, v16.4h
+0EA0B9A1 abs v1.2s, v13.2s
+4E60BADD abs v29.8h, v22.8h
+0E60BA35 abs v21.4h, v17.4h
+0E20B950 abs v16.8b, v10.8b
+4E20BAB4 abs v20.16b, v21.16b
+0EA0B973 abs v19.2s, v11.2s
+0E20B94B abs v11.8b, v10.8b
+4E20B825 abs v5.16b, v1.16b
+0EA0BBD6 abs v22.2s, v30.2s
+4E60BB02 abs v2.8h, v24.8h
+4EE0BAEE abs v14.2d, v23.2d
+4E60B856 abs v22.8h, v2.8h
+0E20B83E abs v30.8b, v1.8b
+4EA0BA6C abs v12.4s, v19.4s
+0EA0BBF0 abs v16.2s, v31.2s
+0E60B800 abs v0.4h, v0.4h
+0E60BA1F abs v31.4h, v16.4h
+0EE0BA1C UNDEFINED
+
+// ABS_asisdmisc_R 01|U=0|1|111|0|size=11|10000|opcode=01011|10|Rn=xxxxx|Rd=xxxxx
+// AbsAsisdmiscR: ABS  <d>, <n>
+// register fields: Rn, Rd
+5EE0B942 abs d2, d10
+5EE0BBF6 abs d22, d31
+5EE0B9FD abs d29, d15
+5EE0B9EE abs d14, d15
+5EE0B9A8 abs d8, d13
+5EE0BA13 abs d19, d16
+5EE0BB59 abs d25, d26
+5EE0BA2B abs d11, d17
+5EE0B98A abs d10, d12
+5EE0B8D5 abs d21, d6
+5EE0BA91 abs d17, d20
+5EE0BA9A abs d26, d20
+5EE0B91B abs d27, d8
+5EE0B8E9 abs d9, d7
+5EE0BBDC abs d28, d30
+5EE0BA52 abs d18, d18
+5EE0B800 abs d0, d0
+5EE0B95F abs d31, d10

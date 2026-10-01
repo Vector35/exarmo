@@ -1,0 +1,161 @@
+// VST4_1_T1_nowb 111110011|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=00|N=11|index_align=xxxx|Rm=1111
+// Vst41T1Nowb: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f98c137f vst4.8 {d1[3], d2[3], d3[3], d4[3]}, [r12:32]
+f98113af vst4.8 {d1[5], d2[5], d3[5], d4[5]}, [r1]
+f98c534f vst4.8 {d5[2], d6[2], d7[2], d8[2]}, [r12]
+f985738f vst4.8 {d7[4], d8[4], d9[4], d10[4]}, [r5]
+f980e31f vst4.8 {d14[0], d15[0], d16[0], d17[0]}, [r0:32]
+f986e39f vst4.8 {d14[4], d15[4], d16[4], d17[4]}, [r6:32]
+f9cf731f vst4.8 {d23[0], d24[0], d25[0], d26[0]}, [pc:32] (unpredictable)
+F98C030F vst4.8 {d0[0], d1[0], d2[0], d3[0]}, [r12]
+F98CF3FF vst4.8 {d15[7], d16[7], d17[7], d18[7]}, [r12:32]
+F98C832F vst4.8 {d8[1], d9[1], d10[1], d11[1]}, [r12]
+F98C437F vst4.8 {d4[3], d5[3], d6[3], d7[3]}, [r12:32]
+F98C237F vst4.8 {d2[3], d3[3], d4[3], d5[3]}, [r12:32]
+F98C137F [ne] vst4ne.8 {d1[3], d2[3], d3[3], d4[3]}, [r12:32]
+
+// VST4_1_T1_posti 111110011|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=00|N=11|index_align=xxxx|Rm=1101
+// Vst41T1Posti: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f989130d vst4.8 {d1[0], d2[0], d3[0], d4[0]}, [r9]!
+f9c4b32d vst4.8 {d27[1], d28[1], d29[1], d30[1]}, [r4]!
+f98bd33d vst4.8 {d13[1], d14[1], d15[1], d16[1]}, [r11:32]!
+f9c3c3ad vst4.8 {d28[5], d29[5], d30[5], d31[5]}, [r3]!
+f98e73bd vst4.8 {d7[5], d8[5], d9[5], d10[5]}, [lr:32]!
+f98f230d vst4.8 {d2[0], d3[0], d4[0], d5[0]}, [pc]! (unpredictable)
+F98003FD vst4.8 {d0[7], d1[7], d2[7], d3[7]}, [r0:32]!
+F989F38D vst4.8 {d15[4], d16[4], d17[4], d18[4]}, [r9]!
+F989834D vst4.8 {d8[2], d9[2], d10[2], d11[2]}, [r9]!
+F989431D vst4.8 {d4[0], d5[0], d6[0], d7[0]}, [r9:32]!
+F989130D [ne] vst4ne.8 {d1[0], d2[0], d3[0], d4[0]}, [r9]!
+
+// VST4_1_T1_postr 111110011|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=00|N=11|index_align=xxxx|Rm=xxxx
+// Vst41T1Postr: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f9cd6387 vst4.8 {d22[4], d23[4], d24[4], d25[4]}, [sp], r7
+f98af336 vst4.8 {d15[1], d16[1], d17[1], d18[1]}, [r10:32], r6
+f986d34a vst4.8 {d13[2], d14[2], d15[2], d16[2]}, [r6], r10
+f9cdb3b0 vst4.8 {d27[5], d28[5], d29[5], d30[5]}, [sp:32], r0
+f9c213c5 vst4.8 {d17[6], d18[6], d19[6], d20[6]}, [r2], r5
+f98a63a8 vst4.8 {d6[5], d7[5], d8[5], d9[5]}, [r10], r8
+F9C00307 vst4.8 {d16[0], d17[0], d18[0], d19[0]}, [r0], r7
+F9CF83F7 vst4.8 {d24[7], d25[7], d26[7], d27[7]}, [pc:32], r7 (unpredictable)
+F9C74327 vst4.8 {d20[1], d21[1], d22[1], d23[1]}, [r7], r7
+F9CD2317 vst4.8 {d18[0], d19[0], d20[0], d21[0]}, [sp:32], r7
+F9CD6387 [ne] vst4ne.8 {d22[4], d23[4], d24[4], d25[4]}, [sp], r7
+
+// VST4_1_T2_nowb 111110011|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=01|N=11|index_align=xxxx|Rm=1111
+// Vst41T2Nowb: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f98c87ff vst4.16 {d8[3], d10[3], d12[3], d14[3]}, [r12:64]
+f98737ff vst4.16 {d3[3], d5[3], d7[3], d9[3]}, [r7:64]
+f989e7ef vst4.16 {d14[3], d16[3], d18[3], d20[3]}, [r9]
+f98767cf vst4.16 {d6[3], d7[3], d8[3], d9[3]}, [r7]
+f9cd179f vst4.16 {d17[2], d18[2], d19[2], d20[2]}, [sp:64]
+f9c607af vst4.16 {d16[2], d18[2], d20[2], d22[2]}, [r6]
+f9ce378f vst4.16 {d19[2], d20[2], d21[2], d22[2]}, [lr]
+F980F70F vst4.16 {d15[0], d16[0], d17[0], d18[0]}, [r0]
+F98F474F vst4.16 {d4[1], d5[1], d6[1], d7[1]}, [pc] (unpredictable)
+F98C272F vst4.16 {d2[0], d4[0], d6[0], d8[0]}, [r12]
+F98C871F vst4.16 {d8[0], d9[0], d10[0], d11[0]}, [r12:64]
+F98C87FF [ne] vst4ne.16 {d8[3], d10[3], d12[3], d14[3]}, [r12:64]
+
+// VST4_1_T2_posti 111110011|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=01|N=11|index_align=xxxx|Rm=1101
+// Vst41T2Posti: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f9c6473d vst4.16 {d20[0], d22[0], d24[0], d26[0]}, [r6:64]!
+f984d7dd vst4.16 {d13[3], d14[3], d15[3], d16[3]}, [r4:64]!
+f9c177cd vst4.16 {d23[3], d24[3], d25[3], d26[3]}, [r1]!
+f98b476d vst4.16 {d4[1], d6[1], d8[1], d10[1]}, [r11]!
+f98f976d vst4.16 {d9[1], d11[1], d13[1], d15[1]}, [pc]! (unpredictable)
+f9cf07fd vst4.16 {d16[3], d18[3], d20[3], d22[3]}, [pc:64]! (unpredictable)
+f981e77d vst4.16 {d14[1], d16[1], d18[1], d20[1]}, [r1:64]!
+f9ce774d vst4.16 {d23[1], d24[1], d25[1], d26[1]}, [lr]!
+F9C0F70D UNPREDICTABLE
+F9C6878D vst4.16 {d24[2], d25[2], d26[2], d27[2]}, [r6]!
+F9C6272D vst4.16 {d18[0], d20[0], d22[0], d24[0]}, [r6]!
+F9C6171D vst4.16 {d17[0], d18[0], d19[0], d20[0]}, [r6:64]!
+F9C6473D [ne] vst4ne.16 {d20[0], d22[0], d24[0], d26[0]}, [r6:64]!
+F9C0470D vst4.16 {d20[0], d21[0], d22[0], d23[0]}, [r0]!
+F984F7DD vst4.16 {d15[3], d16[3], d17[3], d18[3]}, [r4:64]!
+
+// VST4_1_T2_postr 111110011|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=01|N=11|index_align=xxxx|Rm=xxxx
+// Vst41T2Postr: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f98c575e vst4.16 {d5[1], d6[1], d7[1], d8[1]}, [r12:64], lr
+f980e71b vst4.16 {d14[0], d15[0], d16[0], d17[0]}, [r0:64], r11
+f98de77a vst4.16 {d14[1], d16[1], d18[1], d20[1]}, [sp:64], r10
+f9c4b71a vst4.16 {d27[0], d28[0], d29[0], d30[0]}, [r4:64], r10
+f9c89749 vst4.16 {d25[1], d26[1], d27[1], d28[1]}, [r8], r9
+f98757d5 vst4.16 {d5[3], d6[3], d7[3], d8[3]}, [r7:64], r5
+F98F0700 vst4.16 {d0[0], d1[0], d2[0], d3[0]}, [pc], r0 (unpredictable)
+F98CF7FC vst4.16 {d15[3], d17[3], d19[3], d21[3]}, [r12:64], r12
+F98C878E vst4.16 {d8[2], d9[2], d10[2], d11[2]}, [r12], lr
+F98C472E vst4.16 {d4[0], d6[0], d8[0], d10[0]}, [r12], lr
+F98C275E vst4.16 {d2[1], d3[1], d4[1], d5[1]}, [r12:64], lr
+F98C175E vst4.16 {d1[1], d2[1], d3[1], d4[1]}, [r12:64], lr
+F98C575E [ne] vst4ne.16 {d5[1], d6[1], d7[1], d8[1]}, [r12:64], lr
+
+// VST4_1_T3_nowb 111110011|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=10|N=11|index_align=xxxx|Rm=1111
+// Vst41T3Nowb: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f9c20b9f vst4.32 {d16[1], d17[1], d18[1], d19[1]}, [r2:64]
+f980cb8f vst4.32 {d12[1], d13[1], d14[1], d15[1]}, [r0]
+f9ce1b1f vst4.32 {d17[0], d18[0], d19[0], d20[0]}, [lr:64]
+f9ce2bcf vst4.32 {d18[1], d20[1], d22[1], d24[1]}, [lr]
+f9ca9b8f vst4.32 {d25[1], d26[1], d27[1], d28[1]}, [r10]
+f9c24b1f vst4.32 {d20[0], d21[0], d22[0], d23[0]}, [r2:64]
+f9c14b8f vst4.32 {d20[1], d21[1], d22[1], d23[1]}, [r1]
+f9819b0f vst4.32 {d9[0], d10[0], d11[0], d12[0]}, [r1]
+F9CFFB4F UNPREDICTABLE
+F9C28B2F vst4.32 {d24[0], d25[0], d26[0], d27[0]}, [r2:128]
+F9C20BFF UNDEFINED
+F9C20B9F [ne] vst4ne.32 {d16[1], d17[1], d18[1], d19[1]}, [r2:64]
+F9CF0B4F vst4.32 {d16[0], d18[0], d20[0], d22[0]}, [pc] (unpredictable)
+F980FB8F vst4.32 {d15[1], d16[1], d17[1], d18[1]}, [r0]
+
+// VST4_1_T3_posti 111110011|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=10|N=11|index_align=xxxx|Rm=1101
+// Vst41T3Posti: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f984cb8d vst4.32 {d12[1], d13[1], d14[1], d15[1]}, [r4]!
+f98b3b5d vst4.32 {d3[0], d5[0], d7[0], d9[0]}, [r11:64]!
+f9813b8d vst4.32 {d3[1], d4[1], d5[1], d6[1]}, [r1]!
+f987fb4d vst4.32 {d15[0], d17[0], d19[0], d21[0]}, [r7]!
+f984ab9d vst4.32 {d10[1], d11[1], d12[1], d13[1]}, [r4:64]!
+f9cf2b4d vst4.32 {d18[0], d20[0], d22[0], d24[0]}, [pc]! (unpredictable)
+f985cb5d vst4.32 {d12[0], d14[0], d16[0], d18[0]}, [r5:64]!
+F9800B0D vst4.32 {d0[0], d1[0], d2[0], d3[0]}, [r0]!
+F9848B2D vst4.32 {d8[0], d9[0], d10[0], d11[0]}, [r4:128]!
+F9844B1D vst4.32 {d4[0], d5[0], d6[0], d7[0]}, [r4:64]!
+F9841B8D vst4.32 {d1[1], d2[1], d3[1], d4[1]}, [r4]!
+F984CBFD UNDEFINED
+F984CB8D [ne] vst4ne.32 {d12[1], d13[1], d14[1], d15[1]}, [r4]!
+
+// VST4_1_T3_postr 111110011|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=10|N=11|index_align=xxxx|Rm=xxxx
+// Vst41T3Postr: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f9cf5b83 vst4.32 {d21[1], d22[1], d23[1], d24[1]}, [pc], r3 (unpredictable)
+f9822b92 vst4.32 {d2[1], d3[1], d4[1], d5[1]}, [r2:64], r2
+f9c68b53 vst4.32 {d24[0], d26[0], d28[0], d30[0]}, [r6:64], r3
+f9c90b40 vst4.32 {d16[0], d18[0], d20[0], d22[0]}, [r9], r0
+f982cb53 vst4.32 {d12[0], d14[0], d16[0], d18[0]}, [r2:64], r3
+f9838b51 vst4.32 {d8[0], d10[0], d12[0], d14[0]}, [r3:64], r1
+f9c67b9a vst4.32 {d23[1], d24[1], d25[1], d26[1]}, [r6:64], r10
+f9cd9b55 vst4.32 {d25[0], d27[0], d29[0], d31[0]}, [sp:64], r5
+F9C0FB03 UNPREDICTABLE
+F9CF4B23 vst4.32 {d20[0], d21[0], d22[0], d23[0]}, [pc:128], r3 (unpredictable)
+F9CF1B13 vst4.32 {d17[0], d18[0], d19[0], d20[0]}, [pc:64], r3 (unpredictable)
+F9CF5BFF UNDEFINED
+F9CF5B83 [ne] vst4ne.32 {d21[1], d22[1], d23[1], d24[1]}, [pc], r3 (unpredictable)
+F9C05B03 vst4.32 {d21[0], d22[0], d23[0], d24[0]}, [r0], r3
+F982FB92 vst4.32 {d15[1], d16[1], d17[1], d18[1]}, [r2:64], r2

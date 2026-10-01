@@ -1,0 +1,48 @@
+// VTST_T1_D 111|U=0|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1000|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VtstT1D: VTST{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef2378bd vtst.32 d7, d19, d29
+ef0f483d vtst.8 d4, d15, d29
+ef66f890 vtst.32 d31, d22, d0
+ef1748bc vtst.16 d4, d23, d28
+ef184898 vtst.16 d4, d24, d8
+ef1d889d vtst.16 d8, d29, d13
+ef2a98bd vtst.32 d9, d26, d29
+ef259890 vtst.32 d9, d21, d0
+EF3378BD UNDEFINED
+EF2008BF vtst.32 d0, d16, d31
+EF2428B4 vtst.32 d2, d20, d20
+EF2218B2 vtst.32 d1, d18, d18
+EF2108B1 vtst.32 d0, d17, d17
+EF20F81F vtst.32 d15, d0, d15
+EF6008B0 vtst.32 d16, d16, d16
+EF2F78BF vtst.32 d7, d31, d31
+EF2378BD [ne] vtstne.32 d7, d19, d29
+
+// VTST_T1_Q 111|U=0|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1000|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VtstT1Q: VTST{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef2c2850 vtst.32 q1, q6, q0
+ef00a8fe vtst.8 q5, q8, q15
+ef60c8f4 vtst.32 q14, q8, q10
+ef546876 vtst.16 q11, q2, q11
+ef1ca8d2 vtst.16 q5, q14, q1
+ef68287c vtst.32 q9, q4, q14
+ef40c8f4 vtst.8 q14, q8, q10
+ef42e85a vtst.8 q15, q1, q5
+EF3FF85F UNDEFINED
+EF211851 UNDEFINED
+EF200858 vtst.32 q0, q0, q4
+EF2C8870 vtst.32 q4, q6, q8
+EF2C4850 vtst.32 q2, q6, q0
+EF2C0850 vtst.32 q0, q6, q0
+EF2FF85F UNDEFINED
+EF6C0850 vtst.32 q8, q6, q0
+EF6FF8FF UNDEFINED
+EF2C2850 [ne] vtstne.32 q1, q6, q0

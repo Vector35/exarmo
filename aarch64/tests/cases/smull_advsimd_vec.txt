@@ -1,0 +1,27 @@
+// SMULL_asimddiff_L 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=1100|00|Rn=xxxxx|Rd=xxxxx
+// SmullAsimddiffL: SMULL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// SmullAsimddiffL2: SMULL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+0E32C2C4 smull v4.8h, v22.8b, v18.8b
+4E78C1A1 smull2 v1.4s, v13.8h, v24.8h
+0E7FC066 smull v6.4s, v3.4h, v31.4h
+4EB4C3F0 smull2 v16.2d, v31.4s, v20.4s
+0E3AC251 smull v17.8h, v18.8b, v26.8b
+0E28C327 smull v7.8h, v25.8b, v8.8b
+0EABC323 smull v3.2d, v25.2s, v11.2s
+0EB7C28D smull v13.2d, v20.2s, v23.2s
+0E2BC241 smull v1.8h, v18.8b, v11.8b
+4EA5C308 smull2 v8.2d, v24.4s, v5.4s
+0E3DC1C7 smull v7.8h, v14.8b, v29.8b
+4E61C0EF smull2 v15.4s, v7.8h, v1.8h
+4E7DC288 smull2 v8.4s, v20.8h, v29.8h
+4E34C2EC smull2 v12.8h, v23.16b, v20.16b
+4E68C34E smull2 v14.4s, v26.8h, v8.8h
+4EBEC3A9 smull2 v9.2d, v29.4s, v30.4s
+0E20C000 smull v0.8h, v0.8b, v0.8b
+0E32C2DF smull v31.8h, v22.8b, v18.8b
+0EF2C2C4 UNDEFINED
+4EF2C2C4 UNDEFINED
+4E20C000 smull2 v0.8h, v0.16b, v0.16b

@@ -1,0 +1,23 @@
+// VADDW_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|000|op=1|N=x|0|M=x|0|Vm=xxxx
+// VaddwA1: VADDW{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Dm>: M, Vm
+f392810a vaddw.u16 q4, q1, d10
+f3d0c1a4 vaddw.u16 q14, q8, d20
+f39e210c vaddw.u16 q1, q7, d12
+f2aae10f vaddw.s32 q7, q5, d15
+f2c02121 vaddw.s8 q9, q0, d17
+f28a418c vaddw.s8 q2, q13, d12
+f2eee122 vaddw.s32 q15, q7, d18
+f3824106 vaddw.u8 q2, q1, d6
+F3FFF1A4 UNDEFINED
+F2980100 vaddw.s16 q0, q4, d0
+F3A40108 vaddw.u32 q0, q2, d8
+F391110A UNDEFINED
+F3BFF124 UNDEFINED
+F3D20100 vaddw.u16 q8, q1, d0
+F3DFF18A UNDEFINED
+F3928120 vaddw.u16 q4, q1, d16
+F392812F vaddw.u16 q4, q1, d31

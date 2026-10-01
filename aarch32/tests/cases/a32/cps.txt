@@ -1,0 +1,77 @@
+// CPS_A1_AS 111100010000|imod=00|M=1|op=0|(0)(0)(0)(0)(0)(0)|E=(0)|A=x|I=x|F=x|0|mode=xxxxx
+// CpsA1As: CPS{<q>}  #<mode>
+f102a7c6 cps #6 (unpredictable)
+f1029352 cps #18 (unpredictable)
+// Binary Ninja's tests
+f102000f cps #15
+F102FFC0 cps #0x0 (unpredictable)
+F10283DF cps #0x1f (unpredictable)
+F10243D0 cps #0x10 (unpredictable)
+F10223C8 cps #0x8 (unpredictable)
+F10213C4 cps #0x4 (unpredictable)
+F1020BC2 cps #0x2 (unpredictable)
+F10207C1 cps #0x1 (unpredictable)
+
+// CPSID_A1_AS 111100010000|imod=11|M=0|op=0|(0)(0)(0)(0)(0)(0)|E=(0)|A=x|I=x|F=x|0|mode=xxxxx
+// CpsidA1As: CPSID{<q>}  <iflags>
+// read together by <iflags>: A, I, F
+f10c68cb cpsid if (unpredictable)
+f10c53ce cpsid aif (unpredictable)
+f10ce659 cpsid f (unpredictable)
+F10C0080 cpsid i
+F10CFC1F cpsid #0x0 (unpredictable)
+F10C8090 cpsid i (unpredictable)
+F10C4108 cpsid a (unpredictable)
+F10C2144 cpsid af (unpredictable)
+F10C1182 cpsid ai (unpredictable)
+F10C08C1 cpsid if (unpredictable)
+F10C04CB cpsid if (unpredictable)
+
+// CPSID_A1_ASM 111100010000|imod=11|M=1|op=0|(0)(0)(0)(0)(0)(0)|E=(0)|A=x|I=x|F=x|0|mode=xxxxx
+// CpsidA1Asm: CPSID{<q>}  <iflags> , #<mode>
+// read together by <iflags>: A, I, F
+f10e7357 cpsid af, #23 (unpredictable)
+f10ed98e cpsid ai, #14 (unpredictable)
+f10e5086 cpsid i, #6 (unpredictable)
+f10ea089 cpsid i, #9 (unpredictable)
+// Binary Ninja's tests
+f10e00ca cpsid if, #10
+F10EFE00 cpsid #0x0, #0x0 (unpredictable)
+F10E825F cpsid f, #0x1f (unpredictable)
+F10E4310 cpsid a, #0x10 (unpredictable)
+F10E23C8 cpsid aif, #0x8 (unpredictable)
+F10E1344 cpsid af, #0x4 (unpredictable)
+F10E0B42 cpsid af, #0x2 (unpredictable)
+F10E0741 cpsid af, #0x1 (unpredictable)
+
+// CPSIE_A1_AS 111100010000|imod=10|M=0|op=0|(0)(0)(0)(0)(0)(0)|E=(0)|A=x|I=x|F=x|0|mode=xxxxx
+// CpsieA1As: CPSIE{<q>}  <iflags>
+// read together by <iflags>: A, I, F
+f1083180 cpsie ai (unpredictable)
+f1088ecd cpsie if (unpredictable)
+f108d28e cpsie i (unpredictable)
+// Binary Ninja's tests
+f10801c0 cpsie aif
+F108FD1F cpsie a (unpredictable)
+F1088010 cpsie #0x0 (unpredictable)
+F1084048 cpsie f (unpredictable)
+F1082104 cpsie a (unpredictable)
+F1081142 cpsie af (unpredictable)
+F1080981 cpsie ai (unpredictable)
+F1080580 cpsie ai (unpredictable)
+
+// CPSIE_A1_ASM 111100010000|imod=10|M=1|op=0|(0)(0)(0)(0)(0)(0)|E=(0)|A=x|I=x|F=x|0|mode=xxxxx
+// CpsieA1Asm: CPSIE{<q>}  <iflags> , #<mode>
+// read together by <iflags>: A, I, F
+f10a0951 cpsie af, #17 (unpredictable)
+f10a8550 cpsie af, #16 (unpredictable)
+f10a3bcf cpsie aif, #15 (unpredictable)
+f10afb8d cpsie ai, #13 (unpredictable)
+// Binary Ninja's tests
+f10a0000 cpsie #0, #0 (unpredictable)
+F10AFC5F cpsie f, #0x1f (unpredictable)
+F10A8088 cpsie i, #0x8 (unpredictable)
+F10A40C4 cpsie if, #0x4 (unpredictable)
+F10A2102 cpsie a, #0x2 (unpredictable)
+F10A1141 cpsie af, #0x1 (unpredictable)
+F10A0551 cpsie af, #0x11 (unpredictable)

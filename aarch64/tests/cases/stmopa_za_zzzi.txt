@@ -1,0 +1,14 @@
+// stmopa_za_zzzi_b2x1 1|00|0000|u0=0|01|u1=0|Zm=xxxxx|1|0|0|K=x|Zk=xx|Zn=xxxx|i2=xx|0|0|ZAda=xx
+// StmopaZaZzziB2x1: STMOPA  <ZAda>.S, { <Zn1>.B-<Zn2>.B }, <Zm>.B, <Zk>[<index>]
+// read together by <Zk>: K, Zk
+// register fields: Zm, Zn, ZAda
+80408002 stmopa za2.s, {z0.b-z1.b}, z0.b, z20[0]
+80408010 stmopa za0.s, {z0.b-z1.b}, z0.b, z20[1]
+80408033 stmopa za3.s, {z0.b-z1.b}, z0.b, z20[3]
+805F97E1 stmopa za1.s, {z30.b-z31.b}, z31.b, z29[2]
+80408802 stmopa za2.s, {z0.b-z1.b}, z0.b, z22[0]
+80408C02 stmopa za2.s, {z0.b-z1.b}, z0.b, z23[0]
+80408402 stmopa za2.s, {z0.b-z1.b}, z0.b, z21[0]
+80409002 stmopa za2.s, {z0.b-z1.b}, z0.b, z28[0]
+80409802 stmopa za2.s, {z0.b-z1.b}, z0.b, z30[0]
+80409C02 stmopa za2.s, {z0.b-z1.b}, z0.b, z31[0]

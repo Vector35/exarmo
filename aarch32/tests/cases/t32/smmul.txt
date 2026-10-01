@@ -1,0 +1,34 @@
+// SMMUL_T1 111110110|op1=101|Rn=xxxx|Ra=1111|Rd=xxxx|000|R=0|Rm=xxxx
+// SmmulT1: SMMUL{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb59f908 smmul r9, r9, r8
+fb59f605 smmul r6, r9, r5
+fb58ff0d smmul pc, r8, sp (unpredictable)
+fb53fe0c smmul lr, r3, r12
+fb54f301 smmul r3, r4, r1
+fb5ff302 smmul r3, pc, r2 (unpredictable)
+fb5cf707 smmul r7, r12, r7
+fb58f609 smmul r6, r8, r9
+FB50F000 smmul r0, r0, r0
+FB59F90F smmul r9, r9, pc (unpredictable)
+FB59F909 smmul r9, r9, r9
+FB59F908 [ne] smmulne r9, r9, r8
+
+// SMMULR_T1 111110110|op1=101|Rn=xxxx|Ra=1111|Rd=xxxx|000|R=1|Rm=xxxx
+// SmmulrT1: SMMULR{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb52f11a smmulr r1, r2, r10
+fb52f614 smmulr r6, r2, r4
+fb59f01d smmulr r0, r9, sp
+fb59f913 smmulr r9, r9, r3
+fb58f116 smmulr r1, r8, r6
+fb5bf11c smmulr r1, r11, r12
+fb59f412 smmulr r4, r9, r2
+fb5af11e smmulr r1, r10, lr
+FB50FF10 smmulr pc, r0, r0 (unpredictable)
+FB5FF11F smmulr r1, pc, pc (unpredictable)
+FB52F112 smmulr r1, r2, r2
+FB52F111 smmulr r1, r2, r1
+FB52F11A [ne] smmulrne r1, r2, r10

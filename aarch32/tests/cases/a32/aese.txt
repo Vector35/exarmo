@@ -1,0 +1,13 @@
+// AESE_A1 1111|0|01|1|1|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=0110|Q=0|M=x|0|Vm=xxxx
+// AeseA1: AESE.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+F3B00300 aese.8 q0, q0
+F3F08328 aese.8 q12, q12
+F3B4F30F UNDEFINED
+F3B81301 UNDEFINED
+F3BCF30F UNDEFINED
+F3B04304 aese.8 q2, q2
+F3B02302 aese.8 q1, q1
+F3F00320 aese.8 q8, q8
+F3F0F32F UNDEFINED

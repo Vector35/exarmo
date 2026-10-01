@@ -1,0 +1,131 @@
+// UCVTF_D32_float2int sf=0|0|S=0|11110|ftype=01|1|rmode=00|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// UcvtfD32Float2int: UCVTF  <Dd>, <Wn>
+// register fields: Rn, Rd
+1E6300E0 ucvtf d0, w7
+1E630333 ucvtf d19, w25
+1E6300B3 ucvtf d19, w5
+1E63021A ucvtf d26, w16
+1E6303BA ucvtf d26, w29
+1E6302AB ucvtf d11, w21
+1E63013C ucvtf d28, w9
+1E63018B ucvtf d11, w12
+1E6301CC ucvtf d12, w14
+1E6303CB ucvtf d11, w30
+1E630066 ucvtf d6, w3
+1E6301E3 ucvtf d3, w15
+1E630241 ucvtf d1, w18
+1E630198 ucvtf d24, w12
+1E6303BB ucvtf d27, w29
+1E6303BC ucvtf d28, w29
+1E63001F ucvtf d31, w0
+1E6303E0 ucvtf d0, wzr
+1E6300E7 ucvtf d7, w7
+
+// UCVTF_D64_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=00|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// UcvtfD64Float2int: UCVTF  <Dd>, <Xn>
+// register fields: Rn, Rd
+9E63027E ucvtf d30, x19
+9E63038A ucvtf d10, x28
+9E6302B0 ucvtf d16, x21
+9E630312 ucvtf d18, x24
+9E63010C ucvtf d12, x8
+9E63016B ucvtf d11, x11
+9E63023A ucvtf d26, x17
+9E630072 ucvtf d18, x3
+9E6301A9 ucvtf d9, x13
+9E6302A0 ucvtf d0, x21
+9E6301F1 ucvtf d17, x15
+9E630232 ucvtf d18, x17
+9E6303CA ucvtf d10, lr
+9E6301C2 ucvtf d2, x14
+9E630071 ucvtf d17, x3
+9E630258 ucvtf d24, x18
+9E63001F ucvtf d31, x0
+9E6303FE ucvtf d30, xzr
+
+// UCVTF_H32_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=00|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// UcvtfH32Float2int: UCVTF  <Hd>, <Wn>
+// register fields: Rn, Rd
+1EE30185 ucvtf h5, w12
+1EE301FE ucvtf h30, w15
+1EE301A7 ucvtf h7, w13
+1EE3011A ucvtf h26, w8
+1EE303BF ucvtf h31, w29
+1EE30170 ucvtf h16, w11
+1EE300B0 ucvtf h16, w5
+1EE303FC ucvtf h28, wzr
+1EE3006A ucvtf h10, w3
+1EE30091 ucvtf h17, w4
+1EE302E2 ucvtf h2, w23
+1EE3017B ucvtf h27, w11
+1EE3017F ucvtf h31, w11
+1EE3009D ucvtf h29, w4
+1EE30201 ucvtf h1, w16
+1EE3016E ucvtf h14, w11
+1EE30000 ucvtf h0, w0
+
+// UCVTF_H64_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=00|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// UcvtfH64Float2int: UCVTF  <Hd>, <Xn>
+// register fields: Rn, Rd
+9EE30043 ucvtf h3, x2
+9EE302B2 ucvtf h18, x21
+9EE300F2 ucvtf h18, x7
+9EE303BB ucvtf h27, fp
+9EE301F2 ucvtf h18, x15
+9EE301F5 ucvtf h21, x15
+9EE3039F ucvtf h31, x28
+9EE30306 ucvtf h6, x24
+9EE30370 ucvtf h16, x27
+9EE30329 ucvtf h9, x25
+9EE302F5 ucvtf h21, x23
+9EE301DE ucvtf h30, x14
+9EE3025A ucvtf h26, x18
+9EE30025 ucvtf h5, x1
+9EE30141 ucvtf h1, x10
+9EE300D4 ucvtf h20, x6
+9EE30000 ucvtf h0, x0
+9EE303E3 ucvtf h3, xzr
+
+// UCVTF_S32_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=00|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// UcvtfS32Float2int: UCVTF  <Sd>, <Wn>
+// register fields: Rn, Rd
+1E23031D ucvtf s29, w24
+1E2300E6 ucvtf s6, w7
+1E2302FF ucvtf s31, w23
+1E230015 ucvtf s21, w0
+1E23032C ucvtf s12, w25
+1E230009 ucvtf s9, w0
+1E2302AD ucvtf s13, w21
+1E23029D ucvtf s29, w20
+1E23026C ucvtf s12, w19
+1E2303B3 ucvtf s19, w29
+1E230254 ucvtf s20, w18
+1E2300E8 ucvtf s8, w7
+1E230170 ucvtf s16, w11
+1E23028A ucvtf s10, w20
+1E230267 ucvtf s7, w19
+1E2302B0 ucvtf s16, w21
+1E2303E0 ucvtf s0, wzr
+1E230318 ucvtf s24, w24
+
+// UCVTF_S64_float2int sf=1|0|S=0|11110|ftype=00|1|rmode=00|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// UcvtfS64Float2int: UCVTF  <Sd>, <Xn>
+// register fields: Rn, Rd
+9E2300BD ucvtf s29, x5
+9E230117 ucvtf s23, x8
+9E2301D6 ucvtf s22, x14
+9E23016A ucvtf s10, x11
+9E2302BC ucvtf s28, x21
+9E2302F3 ucvtf s19, x23
+9E230236 ucvtf s22, x17
+9E23008F ucvtf s15, x4
+9E2302BE ucvtf s30, x21
+9E230198 ucvtf s24, x12
+9E230394 ucvtf s20, x28
+9E230396 ucvtf s22, x28
+9E2302AB ucvtf s11, x21
+9E230049 ucvtf s9, x2
+9E230266 ucvtf s6, x19
+9E2302FA ucvtf s26, x23
+9E230000 ucvtf s0, x0
+9E2303FF ucvtf s31, xzr

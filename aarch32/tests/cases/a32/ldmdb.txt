@@ -1,0 +1,32 @@
+// LDMDB_A1 cond=xxxx|10|0|P=1|U=0|op=0|W=x|L=1|Rn=xxxx|register_list=xxxxxxxxxxxxxxxx
+// LdmdbA1: LDMDB{<c>}{<q>}  <Rn>{<!>}, <registers>
+// register fields: Rn
+993065d7 ldmdbls r0!, {r0, r1, r2, r4, r6, r7, r8, r10, sp, lr} (unpredictable)
+d9145f75 ldmdble r4, {r0, r2, r4, r5, r6, r8, r9, r10, r11, r12, lr}
+59181834 ldmdbpl r8, {r2, r4, r5, r11, r12}
+991bedc1 ldmdbls r11, {r0, r6, r7, r8, r10, r11, sp, lr, pc}
+a931bf3d ldmdbge r1!, {r0, r2, r3, r4, r5, r8, r9, r10, r11, r12, sp, pc}
+591df308 ldmdbpl sp, {r3, r8, r9, r12, sp, lr, pc}
+b93812c7 ldmdblt r8!, {r0, r1, r2, r6, r7, r9, r12}
+e93131bd ldmdb r1!, {r0, r2, r3, r4, r5, r7, r8, r12, sp}
+// Binary Ninja's tests
+e912207a ldmdb r2, {r1, r3, r4, r5, r6, sp}
+e932207a ldmdb r2!, {r1, r3, r4, r5, r6, sp}
+093F0000 ldmdbeq pc!, {} (unpredictable)
+8930FFFF ldmdbhi r0!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+49308000 ldmdbmi r0!, {pc}
+29304000 ldmdbcs r0!, {lr}
+19302000 ldmdbne r0!, {sp}
+99301000 ldmdbls r0!, {r12}
+99300800 ldmdbls r0!, {r11}
+99300400 ldmdbls r0!, {r10}
+99300200 ldmdbls r0!, {r9}
+99300100 ldmdbls r0!, {r8}
+99300080 ldmdbls r0!, {r7}
+99300040 ldmdbls r0!, {r6}
+99300020 ldmdbls r0!, {r5}
+99300010 ldmdbls r0!, {r4}
+99300008 ldmdbls r0!, {r3}
+99300004 ldmdbls r0!, {r2}
+99300002 ldmdbls r0!, {r1}
+99300001 ldmdbls r0!, {r0} (unpredictable)

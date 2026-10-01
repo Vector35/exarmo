@@ -1,0 +1,25 @@
+// UMAX_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|0110|o1=0|1|Rn=xxxxx|Rd=xxxxx
+// UmaxAsimdsameOnly: UMAX  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E3C65FD umax v29.16b, v15.16b, v28.16b
+6EBC6777 umax v23.4s, v27.4s, v28.4s
+6EA06694 umax v20.4s, v20.4s, v0.4s
+2EB86428 umax v8.2s, v1.2s, v24.2s
+2E7B65C2 umax v2.4h, v14.4h, v27.4h
+2E736593 umax v19.4h, v12.4h, v19.4h
+6E3E6793 umax v19.16b, v28.16b, v30.16b
+2E2467EC umax v12.8b, v31.8b, v4.8b
+2EB464E3 umax v3.2s, v7.2s, v20.2s
+2E2E6779 umax v25.8b, v27.8b, v14.8b
+2EB56776 umax v22.2s, v27.2s, v21.2s
+6E64656D umax v13.8h, v11.8h, v4.8h
+6E2C664E umax v14.16b, v18.16b, v12.16b
+2E7D640B umax v11.4h, v0.4h, v29.4h
+6E796595 umax v21.8h, v12.8h, v25.8h
+6E78654B umax v11.8h, v10.8h, v24.8h
+6E3F65E0 umax v0.16b, v15.16b, v31.16b
+6E3C65FF umax v31.16b, v15.16b, v28.16b
+6EFC65FD UNDEFINED
+2EFC65FD UNDEFINED
+6E3C679D umax v29.16b, v28.16b, v28.16b

@@ -1,0 +1,32 @@
+// sumops_za_pp_zz_32 1|01|0000|u0=0|10|u1=1|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|0|0|ZAda=xx
+// SumopsZaPpZz32: SUMOPS  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.B, <Zm>.B
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A0A07950 sumops za0.s, p6/m, p3/m, z10.b, z0.b
+A0B810B1 sumops za1.s, p4/m, p0/m, z5.b, z24.b
+A0A2A753 sumops za3.s, p1/m, p5/m, z26.b, z2.b
+A0BC3C31 sumops za1.s, p7/m, p1/m, z1.b, z28.b
+A0ACEA33 sumops za3.s, p2/m, p7/m, z17.b, z12.b
+A0AE2C72 sumops za2.s, p3/m, p1/m, z3.b, z14.b
+A0A50311 sumops za1.s, p0/m, p0/m, z24.b, z5.b
+A0B64A33 sumops za3.s, p2/m, p2/m, z17.b, z22.b
+A0BF9410 sumops za0.s, p5/m, p4/m, z0.b, z31.b
+A0A0DBF0 sumops za0.s, p6/m, p6/m, z31.b, z0.b
+A0A00150 sumops za0.s, p0/m, p0/m, z10.b, z0.b
+A0A06150 sumops za0.s, p0/m, p3/m, z10.b, z0.b
+A0A07810 sumops za0.s, p6/m, p3/m, z0.b, z0.b
+
+// sumops_za_pp_zz_64 1|0|1|0000|u0=0|11|u1=1|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|0|ZAda=xxx
+// SumopsZaPpZz64: SUMOPS  <ZAda>.D, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A0FCD672 sumops za2.d, p5/m, p6/m, z19.h, z28.h
+A0E33ED3 sumops za3.d, p7/m, p1/m, z22.h, z3.h
+A0E20233 sumops za3.d, p0/m, p0/m, z17.h, z2.h
+A0F3ACB4 sumops za4.d, p3/m, p5/m, z5.h, z19.h
+A0F683B5 sumops za5.d, p0/m, p4/m, z29.h, z22.h
+A0FD25F0 sumops za0.d, p1/m, p1/m, z15.h, z29.h
+A0EC1054 sumops za4.d, p4/m, p0/m, z2.h, z12.h
+A0E9EA77 sumops za7.d, p2/m, p7/m, z19.h, z9.h
+A0E05811 sumops za1.d, p6/m, p2/m, z0.h, z0.h
+A0FF77F6 sumops za6.d, p5/m, p3/m, z31.h, z31.h
+A0E6D4B2 sumops za2.d, p5/m, p6/m, z5.h, z6.h
+A0E5D452 sumops za2.d, p5/m, p6/m, z2.h, z5.h

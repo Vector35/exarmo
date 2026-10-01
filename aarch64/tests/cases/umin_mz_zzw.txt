@@ -1,0 +1,21 @@
+// umin_mz_zzw_2x2 1|10|0000|1|size=xx|1|Zm=xxxx|0101100|000|opc=01|Zdn=xxxx|U=1
+// UminMzZzw2x2: UMIN  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Zm, Zdn
+C120B021 umin {z0.b-z1.b}, {z0.b-z1.b}, {z0.b-z1.b}
+C120B02F umin {z14.b-z15.b}, {z14.b-z15.b}, {z0.b-z1.b}
+C120B03D umin {z28.b-z29.b}, {z28.b-z29.b}, {z0.b-z1.b}
+C17EB03F umin {z30.h-z31.h}, {z30.h-z31.h}, {z30.h-z31.h}
+C1A0B021 umin {z0.s-z1.s}, {z0.s-z1.s}, {z0.s-z1.s}
+C1E0B021 umin {z0.d-z1.d}, {z0.d-z1.d}, {z0.d-z1.d}
+
+// umin_mz_zzw_4x4 1|10|0000|1|size=xx|1|Zm=xxx|00101110|000|opc=01|Zdn=xxx|0|U=1
+// UminMzZzw4x4: UMIN  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Zm, Zdn
+C120B839 umin {z24.b-z27.b}, {z24.b-z27.b}, {z0.b-z3.b}
+C124B831 umin {z16.b-z19.b}, {z16.b-z19.b}, {z4.b-z7.b}
+C128B829 umin {z8.b-z11.b}, {z8.b-z11.b}, {z8.b-z11.b}
+C16CB821 umin {z0.h-z3.h}, {z0.h-z3.h}, {z12.h-z15.h}
+C1B0B825 umin {z4.s-z7.s}, {z4.s-z7.s}, {z16.s-z19.s}
+C1F4B82D umin {z12.d-z15.d}, {z12.d-z15.d}, {z20.d-z23.d}
+C138B835 umin {z20.b-z23.b}, {z20.b-z23.b}, {z24.b-z27.b}
+C13CB83D umin {z28.b-z31.b}, {z28.b-z31.b}, {z28.b-z31.b}

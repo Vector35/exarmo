@@ -1,0 +1,89 @@
+// STC_A1_off cond=xxxx|110|P=1|U=x|D=0|W=0|L=0|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// StcA1Off: STC{<c>}{<q>}  p14, c5, [<Rn>{, #{<+/->}<imm>}]
+// register fields: Rn
+ed805e01 stc p14, c5, [r0, #4]
+4d0a5ecc stcmi p14, c5, [r10, #-816]
+5d0d5e96 stcpl p14, c5, [sp, #-600]
+4d035e89 stcmi p14, c5, [r3, #-548]
+7d005eca stcvc p14, c5, [r0, #-808]
+dd075ea6 stcle p14, c5, [r7, #-664]
+3d0e5e99 stclo p14, c5, [lr, #-612]
+4d0f5e57 stcmi p14, c5, [pc, #-348]
+5d075efc stcpl p14, c5, [r7, #-1008]
+0D805E00 stceq p14, c5, [r0]
+FD805E01 UNALLOCATED
+8D805EFF stchi p14, c5, [r0, #0x3fc]
+2D805E80 stccs p14, c5, [r0, #0x200]
+1D805E40 stcne p14, c5, [r0, #0x100]
+ED805E20 stc p14, c5, [r0, #0x80]
+ED805E10 stc p14, c5, [r0, #0x40]
+ED805E08 stc p14, c5, [r0, #0x20]
+ED805E04 stc p14, c5, [r0, #0x10]
+ED805E02 stc p14, c5, [r0, #0x8]
+
+// STC_A1_post cond=xxxx|110|P=0|U=x|D=0|W=1|L=0|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// StcA1Post: STC{<c>}{<q>}  p14, c5, [<Rn>], #{<+/->}<imm>
+// register fields: Rn
+eca05e01 stc p14, c5, [r0], #4
+7c235e1b stcvc p14, c5, [r3], #-108
+4c245e53 stcmi p14, c5, [r4], #-332
+3c2a5e09 stclo p14, c5, [r10], #-36
+5c235e2b stcpl p14, c5, [r3], #-172
+9c2c5ea3 stcls p14, c5, [r12], #-652
+dc245e26 stcle p14, c5, [r4], #-152
+0c2a5e8a stceq p14, c5, [r10], #-552
+2c2c5ee3 stchs p14, c5, [r12], #-908
+FCA05E01 UNALLOCATED
+8CAF5E00 stchi p14, c5, [pc], #0x0 (unpredictable)
+1CA05EFF stcne p14, c5, [r0], #0x3fc
+ECA05E80 stc p14, c5, [r0], #0x200
+ECA05E40 stc p14, c5, [r0], #0x100
+ECA05E20 stc p14, c5, [r0], #0x80
+ECA05E10 stc p14, c5, [r0], #0x40
+ECA05E08 stc p14, c5, [r0], #0x20
+ECA05E04 stc p14, c5, [r0], #0x10
+ECA05E02 stc p14, c5, [r0], #0x8
+
+// STC_A1_pre cond=xxxx|110|P=1|U=x|D=0|W=1|L=0|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// StcA1Pre: STC{<c>}{<q>}  p14, c5, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn
+eda05e01 stc p14, c5, [r0, #4]!
+3d235e59 stclo p14, c5, [r3, #-356]!
+8d2c5e27 stchi p14, c5, [r12, #-156]!
+6d295e18 stcvs p14, c5, [r9, #-96]!
+0d2f5ea7 stceq p14, c5, [pc, #-668]! (unpredictable)
+ed275e88 stc p14, c5, [r7, #-544]!
+dd265ed5 stcle p14, c5, [r6, #-852]!
+bd2a5e54 stclt p14, c5, [r10, #-336]!
+4d2a5ebc stcmi p14, c5, [r10, #-752]!
+FDA05E01 UNALLOCATED
+2DA05E00 stccs p14, c5, [r0, #0x0]!
+1DA05EFF stcne p14, c5, [r0, #0x3fc]!
+EDA05E80 stc p14, c5, [r0, #0x200]!
+EDA05E40 stc p14, c5, [r0, #0x100]!
+EDA05E20 stc p14, c5, [r0, #0x80]!
+EDA05E10 stc p14, c5, [r0, #0x40]!
+EDA05E08 stc p14, c5, [r0, #0x20]!
+EDA05E04 stc p14, c5, [r0, #0x10]!
+EDA05E02 stc p14, c5, [r0, #0x8]!
+
+// STC_A1_unind cond=xxxx|110|P=0|U=1|D=0|W=0|L=0|Rn=xxxx|CRd=0101|111|cp15=0|imm8=xxxxxxxx
+// StcA1Unind: STC{<c>}{<q>}  p14, c5, [<Rn>], <option>
+// register fields: Rn
+bc875ea5 stclt p14, c5, [r7], {165}
+7c855e4a stcvc p14, c5, [r5], {74}
+0c8b5e18 stceq p14, c5, [r11], {24}
+5c855ea1 stcpl p14, c5, [r5], {161}
+ec8a5eb0 stc p14, c5, [r10], {176}
+3c8e5eff stclo p14, c5, [lr], {255}
+3c825e20 stclo p14, c5, [r2], {32}
+6c835ea3 stcvs p14, c5, [r3], {163}
+FC875EA5 UNALLOCATED
+8C805E00 stchi p14, c5, [r0], {0}
+4C8F5E80 stcmi p14, c5, [pc], {128}
+2C875E40 stccs p14, c5, [r7], {64}
+1C875E10 stcne p14, c5, [r7], {16}
+BC875E08 stclt p14, c5, [r7], {8}
+BC875E04 stclt p14, c5, [r7], {4}
+BC875E02 stclt p14, c5, [r7], {2}
+BC875E01 stclt p14, c5, [r7], {1}

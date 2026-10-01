@@ -1,0 +1,11 @@
+// zipq1_z_zz_ 010|0010|0|size=xx|0|Zm=xxxxx|111|00|H=0|Zn=xxxxx|Zd=xxxxx
+// Zipq1ZZz: ZIPQ1  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+4400E002 zipq1 z2.b, z0.b, z0.b
+4400E009 zipq1 z9.b, z0.b, z0.b
+4400E010 zipq1 z16.b, z0.b, z0.b
+445FE3E0 zipq1 z0.h, z31.h, z31.h
+4480E01F zipq1 z31.s, z0.s, z0.s
+44C0E002 zipq1 z2.d, z0.d, z0.d
+4400E000 zipq1 z0.b, z0.b, z0.b
+4401E043 zipq1 z3.b, z2.b, z1.b

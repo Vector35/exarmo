@@ -1,0 +1,16 @@
+// MCRR_A1 cond=xxxx|11|0|00|D=1|0|L=0|Rt2=xxxx|Rt=xxxx|1|11|cp15=x|opc1=xxxx|CRm=xxxx
+// McrrA1: MCRR{<c>}{<q>}  <coproc>, {#}<opc1>, <Rt>, <Rt2>, <CRm>
+// register fields: Rt2, Rt
+ac44dff1 mcrrge p15, #15, sp, r4, c1
+cc4a8e7f mcrrgt p14, #7, r8, r10, c15
+1c467f9e mcrrne p15, #9, r7, r6, c14
+dc42ce36 mcrrle p14, #3, r12, r2, c6
+9c416fc9 mcrrls p15, #12, r6, r1, c9
+1c455f4a mcrrne p15, #4, r5, r5, c10
+ec45be40 mcrr p14, #4, r11, r5, c0
+2c434ea8 mcrrhs p14, #10, r4, r3, c8
+0C400F04 mcrreq p15, #0x0, r0, r0, c4
+FC44DFF1 UNALLOCATED
+8C4FFF82 mcrrhi p15, #0x8, pc, pc, c2 (unpredictable)
+4C44DF21 mcrrmi p15, #0x2, sp, r4, c1
+AC44DF11 mcrrge p15, #0x1, sp, r4, c1

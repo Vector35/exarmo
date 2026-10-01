@@ -1,0 +1,70 @@
+// VDIV_T1_D 11101110|o0=1|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=11|N=x|o2=0|M=x|0|Vm=xxxx
+// VdivT1D: VDIV{<c>}{<q>}.F64  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eecbeb28 vdiv.f64 d30, d11, d24
+ee82db2b vdiv.f64 d13, d2, d27
+ee8afb0b vdiv.f64 d15, d10, d11
+eec83ba2 vdiv.f64 d19, d24, d18
+eec31bae vdiv.f64 d17, d19, d30
+ee806b84 vdiv.f64 d6, d16, d4
+ee8d0b23 vdiv.f64 d0, d13, d19
+eec70b2d vdiv.f64 d16, d7, d29
+EECF8B20 vdiv.f64 d24, d15, d16
+EEC44B2F vdiv.f64 d20, d4, d31
+EEC12B21 vdiv.f64 d18, d1, d17
+EEC0FB00 vdiv.f64 d31, d0, d0
+EECFEB0F vdiv.f64 d30, d15, d15
+EECFEBA0 vdiv.f64 d30, d31, d16
+EECBEB2F vdiv.f64 d30, d11, d31
+EECBEB28 [ne] vdivne.f64 d30, d11, d24
+
+// VDIV_T1_H 11101110|o0=1|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=01|N=x|o2=0|M=x|0|Vm=xxxx
+// VdivT1H: VDIV{<c>}{<q>}.F16  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eecec9a2 vdiv.f16 s25, s29, s5
+ee8469ab vdiv.f16 s12, s9, s23
+ee8f9987 vdiv.f16 s18, s31, s14
+eec6f9ab vdiv.f16 s31, s13, s23
+eec759a2 vdiv.f16 s11, s15, s5
+ee8d498b vdiv.f16 s8, s27, s22
+ee80f98e vdiv.f16 s30, s1, s28
+eecf79a1 vdiv.f16 s15, s31, s3
+EEC80920 vdiv.f16 s1, s16, s1
+EEC289AF vdiv.f16 s17, s5, s31
+EEC129A8 vdiv.f16 s5, s3, s17
+EEC01924 vdiv.f16 s3, s0, s9
+EE8F0900 vdiv.f16 s0, s30, s0
+EECE098F vdiv.f16 s1, s29, s30
+EECEC9A0 vdiv.f16 s25, s29, s1
+EECEC9AF vdiv.f16 s25, s29, s31
+EECEC9A2 [ne] vdivne.f16 s25, s29, s5 (unpredictable)
+
+// VDIV_T1_S 11101110|o0=1|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=10|N=x|o2=0|M=x|0|Vm=xxxx
+// VdivT1S: VDIV{<c>}{<q>}.F32  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eecfda0e vdiv.f32 s27, s30, s28
+ee821a2b vdiv.f32 s2, s4, s23
+eecd8aa5 vdiv.f32 s17, s27, s11
+eec7aaa0 vdiv.f32 s21, s15, s1
+eec57a27 vdiv.f32 s15, s10, s15
+ee875a27 vdiv.f32 s10, s14, s15
+eec79aa5 vdiv.f32 s19, s15, s11
+ee86aaa3 vdiv.f32 s20, s13, s7
+EEC00A0F vdiv.f32 s1, s0, s30
+EEC8FA08 vdiv.f32 s31, s16, s16
+EEC44A04 vdiv.f32 s9, s8, s8
+EEC12A02 vdiv.f32 s5, s2, s4
+EE800A01 vdiv.f32 s0, s0, s2
+EE80FA80 vdiv.f32 s30, s1, s0
+EECF0A8F vdiv.f32 s1, s31, s30
+EECFFA2F vdiv.f32 s31, s30, s31
+EECFDA0E [ne] vdivne.f32 s27, s30, s28

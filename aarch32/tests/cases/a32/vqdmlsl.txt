@@ -1,0 +1,52 @@
+// VQDMLSL_A1 1111|0|01|U=0|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|10|op=1|1|N=x|0|M=x|0|Vm=xxxx
+// VqdmlslA1: VQDMLSL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f2d20b8c vqdmlsl.s16 q8, d18, d12
+f296cb27 vqdmlsl.s16 q6, d6, d23
+f2ebab80 vqdmlsl.s32 q13, d27, d0
+f2954b06 vqdmlsl.s16 q2, d5, d6
+f2928ba5 vqdmlsl.s16 q4, d18, d21
+f2a62b0b vqdmlsl.s32 q1, d6, d11
+f2d3eb8c vqdmlsl.s16 q15, d19, d12
+f2dd0b25 vqdmlsl.s16 q8, d13, d21
+F2C2FB8C UNDEFINED
+F2F21B8C UNDEFINED
+F2900B8F vqdmlsl.s16 q0, d16, d15
+F2DF0B88 vqdmlsl.s16 q8, d31, d8
+F2D80B84 vqdmlsl.s16 q8, d24, d4
+F2D40B82 vqdmlsl.s16 q8, d20, d2
+F2D10B81 vqdmlsl.s16 q8, d17, d1
+F292FB8C UNDEFINED
+F2D2FB8C UNDEFINED
+F2D00B0F vqdmlsl.s16 q8, d0, d15
+F2D00BA0 vqdmlsl.s16 q8, d16, d16
+F2DF0B2F vqdmlsl.s16 q8, d15, d31
+F2DF0B8C vqdmlsl.s16 q8, d31, d12
+
+// VQDMLSL_A2 1111|0|01|Q=0|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|0|op=1|11|N=x|1|M=x|0|Vm=xxxx
+// VqdmlslA2: VQDMLSL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>[<index>]
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <index>: M, Vm
+f296a7c3 vqdmlsl.s16 q5, d22, d3[0]
+f2a407e0 vqdmlsl.s32 q0, d20, d0[1]
+f2e347e6 vqdmlsl.s32 q10, d19, d6[1]
+f2ad47c4 vqdmlsl.s32 q2, d29, d4[0]
+f2d96762 vqdmlsl.s16 q11, d9, d2[2]
+f2a8a743 vqdmlsl.s32 q5, d8, d3[0]
+f2e4274c vqdmlsl.s32 q9, d4, d12[0]
+f2aac74f vqdmlsl.s32 q6, d10, d15[0]
+F286F7C3 UNDEFINED
+F2B617C3 UNDEFINED
+F29087C8 vqdmlsl.s16 q4, d16, d0[1]
+F2DF07C1 vqdmlsl.s16 q8, d31, d1[0]
+F292A7C0 vqdmlsl.s16 q5, d18, d0[0]
+F291A7EF vqdmlsl.s16 q5, d17, d7[3]
+F296F7C3 UNDEFINED
+F2D6F7C3 UNDEFINED
+F290A743 vqdmlsl.s16 q5, d0, d3[0]
+F290A7C3 vqdmlsl.s16 q5, d16, d3[0]
+F29FA743 vqdmlsl.s16 q5, d15, d3[0]
+F29FA7C3 vqdmlsl.s16 q5, d31, d3[0]

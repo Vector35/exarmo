@@ -1,0 +1,19 @@
+// wrffr_f_p_ 001|0010|1|opc=00|101|0|00|1001|000|Pn=xxxx|00000
+// WrffrFP: WRFFR  <Pn>.B
+// register fields: Pn
+25289020 wrffr p1.b
+25289100 wrffr p8.b
+252891E0 wrffr p15.b
+25289080 wrffr p4.b
+25289040 wrffr p2.b
+25289000 wrffr p0.b
+252890A0 wrffr p5.b
+25289120 wrffr p9.b
+252891C0 wrffr p14.b
+252890E0 wrffr p7.b
+252890C0 wrffr p6.b
+25289180 wrffr p12.b
+25289140 wrffr p10.b
+25289160 wrffr p11.b
+252891A0 wrffr p13.b
+25289060 wrffr p3.b

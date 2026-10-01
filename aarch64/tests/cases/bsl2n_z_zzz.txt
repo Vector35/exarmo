@@ -1,0 +1,13 @@
+// bsl2n_z_zzz_ 000|0010|0|opc=10|1|Zm=xxxxx|001|11|o2=1|Zk=xxxxx|Zdn=xxxxx
+// Bsl2nZZzz: BSL2N  <Zdn>.D, <Zdn>.D, <Zm>.D, <Zk>.D
+// register fields: Zm, Zk, Zdn
+04B33EEC bsl2n z12.d, z12.d, z19.d, z23.d
+04A33E70 bsl2n z16.d, z16.d, z3.d, z19.d
+04A63E71 bsl2n z17.d, z17.d, z6.d, z19.d
+04B93F3F bsl2n z31.d, z31.d, z25.d, z25.d
+04A43E1B bsl2n z27.d, z27.d, z4.d, z16.d
+04B63FB8 bsl2n z24.d, z24.d, z22.d, z29.d
+04B83E5E bsl2n z30.d, z30.d, z24.d, z18.d
+04B33C39 bsl2n z25.d, z25.d, z19.d, z1.d
+04A03C00 bsl2n z0.d, z0.d, z0.d, z0.d
+04BF3FEC bsl2n z12.d, z12.d, z31.d, z31.d

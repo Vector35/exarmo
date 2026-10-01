@@ -1,0 +1,8 @@
+// bfmul_z_zz_ 011|0010|1|size=00|0|Zm=xxxxx|000|opc=010|Zn=xxxxx|Zd=xxxxx
+// BfmulZZz: BFMUL  <Zd>.H, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zd
+65000800 bfmul z0.h, z0.h, z0.h
+65000807 bfmul z7.h, z0.h, z0.h
+6500080E bfmul z14.h, z0.h, z0.h
+651F0BFF bfmul z31.h, z31.h, z31.h
+65010843 bfmul z3.h, z2.h, z1.h

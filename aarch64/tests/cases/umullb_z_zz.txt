@@ -1,0 +1,14 @@
+// umullb_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|11|op=1|U=1|T=0|Zn=xxxxx|Zd=xxxxx
+// UmullbZZz: UMULLB  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45D27859 umullb z25.d, z2.s, z18.s
+45457BB6 umullb z22.h, z29.b, z5.b
+45C378F7 umullb z23.d, z7.s, z3.s
+454D7A78 umullb z24.h, z19.b, z13.b
+458F7946 umullb z6.s, z10.h, z15.h
+45D67A3D umullb z29.d, z17.s, z22.s
+458B7927 umullb z7.s, z9.h, z11.h
+4587795B umullb z27.s, z10.h, z7.h
+45C07800 umullb z0.d, z0.s, z0.s
+45DF7BFF umullb z31.d, z31.s, z31.s
+45127859 UNDEFINED

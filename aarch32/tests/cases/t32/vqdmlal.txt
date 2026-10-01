@@ -1,0 +1,51 @@
+// VQDMLAL_T1 111|U=0|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|10|op=0|1|N=x|0|M=x|0|Vm=xxxx
+// VqdmlalT1: VQDMLAL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+efa6a926 vqdmlal.s32 q5, d6, d22
+efabe980 vqdmlal.s32 q7, d27, d0
+ef9289a5 vqdmlal.s16 q4, d18, d21
+ef99e986 vqdmlal.s16 q7, d25, d6
+efdf6928 vqdmlal.s16 q11, d15, d24
+efdd4982 vqdmlal.s16 q10, d29, d2
+efe949a0 vqdmlal.s32 q10, d25, d16
+ef91492f vqdmlal.s16 q2, d1, d31
+EF86F926 UNDEFINED
+EFB61926 UNDEFINED
+EFA00924 vqdmlal.s32 q0, d0, d20
+EFA82921 vqdmlal.s32 q1, d8, d17
+EFA4090F vqdmlal.s32 q0, d4, d15
+EFA6F926 UNDEFINED
+EFE00926 vqdmlal.s32 q8, d0, d22
+EFE6F926 UNDEFINED
+EFA0A9A6 vqdmlal.s32 q5, d16, d22
+EFAFA9A6 vqdmlal.s32 q5, d31, d22
+EFA6A926 [ne] vqdmlalne.s32 q5, d6, d22
+
+// VQDMLAL_T2 111|Q=0|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|0|op=0|11|N=x|1|M=x|0|Vm=xxxx
+// VqdmlalT2: VQDMLAL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>[<index>]
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <index>: M, Vm
+// IT state read: condition
+efe1c34d vqdmlal.s32 q14, d1, d13[0]
+ef9cc3c4 vqdmlal.s16 q6, d28, d4[0]
+efef23c0 vqdmlal.s32 q9, d31, d0[0]
+ef9b6366 vqdmlal.s16 q3, d11, d6[2]
+efd4a36d vqdmlal.s16 q13, d4, d5[3]
+efafa3c4 vqdmlal.s32 q5, d31, d4[0]
+efefa3ef vqdmlal.s32 q13, d31, d15[1]
+efafe3ef vqdmlal.s32 q7, d31, d15[1]
+EFC1F34D UNDEFINED
+EFF1134D UNDEFINED
+EFE00348 vqdmlal.s32 q8, d0, d8[0]
+EFE88342 vqdmlal.s32 q12, d8, d2[0]
+EFE24341 vqdmlal.s32 q10, d2, d1[0]
+EFA0034F vqdmlal.s32 q0, d0, d15[0]
+EFA1F34D UNDEFINED
+EFE003E0 vqdmlal.s32 q8, d16, d0[1]
+EFE1F34D UNDEFINED
+EFEFC34D vqdmlal.s32 q14, d15, d13[0]
+EFE1C34D [ne] vqdmlalne.s32 q14, d1, d13[0]

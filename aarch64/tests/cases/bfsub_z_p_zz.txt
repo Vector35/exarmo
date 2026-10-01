@@ -1,0 +1,14 @@
+// bfsub_z_p_zz_ 011|0010|1|size=00|0|0|opc=0001|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// BfsubZPZz: BFSUB  <Zdn>.H, <Pg>/M, <Zdn>.H, <Zm>.H
+// register fields: Pg, Zm, Zdn
+65018001 bfsub z1.h, p0/m, z1.h, z0.h
+65018008 bfsub z8.h, p0/m, z8.h, z0.h
+6501800F bfsub z15.h, p0/m, z15.h, z0.h
+650187E0 bfsub z0.h, p1/m, z0.h, z31.h
+6501881F bfsub z31.h, p2/m, z31.h, z0.h
+65018C01 bfsub z1.h, p3/m, z1.h, z0.h
+65019001 bfsub z1.h, p4/m, z1.h, z0.h
+65019401 bfsub z1.h, p5/m, z1.h, z0.h
+65019801 bfsub z1.h, p6/m, z1.h, z0.h
+65019C01 bfsub z1.h, p7/m, z1.h, z0.h
+65018000 bfsub z0.h, p0/m, z0.h, z0.h

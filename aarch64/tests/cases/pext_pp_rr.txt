@@ -1,0 +1,13 @@
+// pext_pp_rr_ 001|0010|1|size=xx|1|00000|01|110|10|i1=x|PNn=xxx|1|Pd=xxxx
+// PextPpRr: PEXT  { <Pd1>.<T>, <Pd2>.<T> }, <PNn>[<imm>]
+// register fields: PNn, Pd
+25207410 pext {p0.b, p1.b}, pn8[0]
+25207417 pext {p7.b, p8.b}, pn8[0]
+2520741E pext {p14.b, p15.b}, pn8[0]
+2560753F pext {p15.h, p0.h}, pn9[1]
+25A07450 pext {p0.s, p1.s}, pn10[0]
+25E07470 pext {p0.d, p1.d}, pn11[0]
+25207490 pext {p0.b, p1.b}, pn12[0]
+252074B0 pext {p0.b, p1.b}, pn13[0]
+252074D0 pext {p0.b, p1.b}, pn14[0]
+252074F0 pext {p0.b, p1.b}, pn15[0]

@@ -1,0 +1,28 @@
+// eor_p_p_pp_z 001|0010|1|op=0|S=0|00|Pm=xxxx|01|Pg=xxxx|o2=1|Pn=xxxx|o3=0|Pd=xxxx
+// EorPPPpZ: EOR  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// NotPPPZEorPPPpZ: NOT  <Pd>.B, <Pg>/Z, <Pn>.B
+// read together by the NOT alias: Pm, Pg
+// register fields: Pm, Pg, Pn, Pd
+// form chosen on: Pm, Pg
+2506566A eor p10.b, p5/z, p3.b, p6.b
+2501430B eor p11.b, p0/z, p8.b, p1.b
+250B5AAD eor p13.b, p6/z, p5.b, p11.b
+250257A5 eor p5.b, p5/z, p13.b, p2.b
+25067ACC eor p12.b, p14/z, p6.b, p6.b
+25016743 eor p3.b, p9/z, p10.b, p1.b
+250667C7 eor p7.b, p9/z, p14.b, p6.b
+25016A40 eor p0.b, p10/z, p2.b, p1.b
+250F4364 eor p4.b, p0/z, p11.b, p15.b
+25036A6E eor p14.b, p10/z, p3.b, p3.b
+25006A6F eor p15.b, p10/z, p3.b, p0.b
+250B5767 eor p7.b, p5/z, p11.b, p11.b
+250A72AF eor p15.b, p12/z, p5.b, p10.b
+250B7F21 eor p1.b, p15/z, p9.b, p11.b
+250E4385 eor p5.b, p0/z, p12.b, p14.b
+250667ED eor p13.b, p9/z, p15.b, p6.b
+25004200 not p0.b, p0/z, p0.b
+25004207 not p7.b, p0/z, p0.b
+2500420E not p14.b, p0/z, p0.b
+25007E6A eor p10.b, p15/z, p3.b, p0.b
+250F7E6A not p10.b, p15/z, p3.b
+25014200 eor p0.b, p0/z, p0.b, p1.b

@@ -1,0 +1,50 @@
+// BFC_T1 111|10|(0)|1|1|op1=011|0|Rn=1111|0|imm3=xxx|Rd=xxxx|imm2=xx|(0)|msb=xxxxx
+// BfcT1: BFC{<c>}{<q>}  <Rd>, #<lsb>, #<width>
+// read together by <lsb>: imm3, imm2
+// register fields: Rd
+// IT state read: condition
+f36f26dd bfc r6, #11, #19
+f36f69d9 UNPREDICTABLE
+f36f1500 UNPREDICTABLE
+F76F007F bfc r0, #0x1, #0x1f (unpredictable)
+F36F3F90 bfc pc, #0xe, #0x3 (unpredictable)
+F36F46C8 UNPREDICTABLE
+F36F56C4 UNPREDICTABLE
+F36F76C2 UNPREDICTABLE
+F36F0601 bfc r6, #0x0, #0x2
+F36F065D bfc r6, #0x1, #0x1d
+F36F069D bfc r6, #0x2, #0x1c
+F36F06DD bfc r6, #0x3, #0x1b
+F36F165D bfc r6, #0x5, #0x19
+F36F169D bfc r6, #0x6, #0x18
+F36F16DD bfc r6, #0x7, #0x17
+F36F261D bfc r6, #0x8, #0x16
+F36F265D bfc r6, #0x9, #0x15
+F36F269D bfc r6, #0xa, #0x14
+F36F361D bfc r6, #0xc, #0x12
+F36F365D bfc r6, #0xd, #0x11
+F36F369D bfc r6, #0xe, #0x10
+F36F36DD bfc r6, #0xf, #0xf
+F36F461D bfc r6, #0x10, #0xe
+F36F465D bfc r6, #0x11, #0xd
+F36F469D bfc r6, #0x12, #0xc
+F36F46DD bfc r6, #0x13, #0xb
+F36F561D bfc r6, #0x14, #0xa
+F36F565D bfc r6, #0x15, #0x9
+F36F569D bfc r6, #0x16, #0x8
+F36F56DD bfc r6, #0x17, #0x7
+F36F661D bfc r6, #0x18, #0x6
+F36F665D bfc r6, #0x19, #0x5
+F36F669D bfc r6, #0x1a, #0x4
+F36F761D bfc r6, #0x1c, #0x2
+F36F765D bfc r6, #0x1d, #0x1
+F36F769D UNPREDICTABLE
+F36F76DD UNPREDICTABLE
+F36F26DD [ne] bfcne r6, #0xb, #0x13
+F36F0600 bfc r6, #0x0, #0x1
+F76F1028 bfc r0, #0x4, #0x5 (unpredictable)
+F76F0064 bfc r0, #0x1, #0x4 (unpredictable)
+F76F0062 bfc r0, #0x1, #0x2 (unpredictable)
+F36F66DD bfc r6, #0x1b, #0x3
+F76F70BF bfc r0, #0x1e, #0x2 (unpredictable)
+F76F70FF bfc r0, #0x1f, #0x1 (unpredictable)

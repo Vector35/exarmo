@@ -1,0 +1,10 @@
+// fdot_z_zz8z8_ 011|0010|0|0|op=0|1|Zm=xxxxx|10|0|00|o2=1|Zn=xxxxx|Zda=xxxxx
+// FdotZZz8z8: FDOT  <Zda>.H, <Zn>.B, <Zm>.B
+// register fields: Zm, Zn, Zda
+64208401 fdot z1.h, z0.b, z0.b
+64208408 fdot z8.h, z0.b, z0.b
+6420840F fdot z15.h, z0.b, z0.b
+643F87E0 fdot z0.h, z31.b, z31.b
+6420841F fdot z31.h, z0.b, z0.b
+64208400 fdot z0.h, z0.b, z0.b
+64218443 fdot z3.h, z2.b, z1.b

@@ -1,0 +1,98 @@
+// FACGE_asimdsame_only 0|Q=x|U=1|0|111|0|E=0|sz=x|1|Rm=xxxxx|1110|ac=1|1|Rn=xxxxx|Rd=xxxxx
+// FacgeAsimdsameOnly: FACGE  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+6E7CEFC9 facge v9.2d, v30.2d, v28.2d
+2E3BEE3E facge v30.2s, v17.2s, v27.2s
+6E7BEF9B facge v27.2d, v28.2d, v27.2d
+6E73ECC5 facge v5.2d, v6.2d, v19.2d
+6E64EE6A facge v10.2d, v19.2d, v4.2d
+6E71ED9B facge v27.2d, v12.2d, v17.2d
+6E66ECAB facge v11.2d, v5.2d, v6.2d
+2E24EE5B facge v27.2s, v18.2s, v4.2s
+6E66ED55 facge v21.2d, v10.2d, v6.2d
+2E39EF11 facge v17.2s, v24.2s, v25.2s
+2E3FEE80 facge v0.2s, v20.2s, v31.2s
+6E3FEE51 facge v17.4s, v18.4s, v31.4s
+6E28EC53 facge v19.4s, v2.4s, v8.4s
+6E3CED30 facge v16.4s, v9.4s, v28.4s
+2E2AEC0A facge v10.2s, v0.2s, v10.2s
+2E20EFAC facge v12.2s, v29.2s, v0.2s
+6E7CEFFF facge v31.2d, v31.2d, v28.2d
+2E7CEFC9 UNDEFINED
+6E7CEF89 facge v9.2d, v28.2d, v28.2d
+
+// FACGE_asimdsamefp16_only 0|Q=x|U=1|0|111|0|E=0|10|Rm=xxxxx|00|10|ac=1|1|Rn=xxxxx|Rd=xxxxx
+// FacgeAsimdsamefp16Only: FACGE  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+2E4A2C42 facge v2.4h, v2.4h, v10.4h
+6E4C2C36 facge v22.8h, v1.8h, v12.8h
+6E4E2E4A facge v10.8h, v18.8h, v14.8h
+2E4B2D7A facge v26.4h, v11.4h, v11.4h
+6E5C2FE5 facge v5.8h, v31.8h, v28.8h
+6E5B2C45 facge v5.8h, v2.8h, v27.8h
+2E4F2F8C facge v12.4h, v28.4h, v15.4h
+2E552DBD facge v29.4h, v13.4h, v21.4h
+6E5B2D81 facge v1.8h, v12.8h, v27.8h
+2E5D2CBF facge v31.4h, v5.4h, v29.4h
+2E5C2EB8 facge v24.4h, v21.4h, v28.4h
+6E572FBE facge v30.8h, v29.8h, v23.8h
+6E592E2B facge v11.8h, v17.8h, v25.8h
+6E5E2EFA facge v26.8h, v23.8h, v30.8h
+6E4C2CB2 facge v18.8h, v5.8h, v12.8h
+6E5A2DD7 facge v23.8h, v14.8h, v26.8h
+2E402C00 facge v0.4h, v0.4h, v0.4h
+2E5F2C42 facge v2.4h, v2.4h, v31.4h
+
+// FACGE_asisdsame_only 01|U=1|1|111|0|E=0|sz=x|1|Rm=xxxxx|1110|ac=1|1|Rn=xxxxx|Rd=xxxxx
+// FacgeAsisdsameOnly: FACGE  <V><d>, <V><n>, <V><m>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// read together by <m>: sz, Rm
+// register fields: Rm, Rn, Rd
+7E26EF9A facge s26, s28, s6
+7E25EE1E facge s30, s16, s5
+7E32EFB8 facge s24, s29, s18
+7E31EDB6 facge s22, s13, s17
+7E7DEFC3 facge d3, d30, d29
+7E23ECF1 facge s17, s7, s3
+7E7CEECA facge d10, d22, d28
+7E29EC18 facge s24, s0, s9
+7E3FEFC2 facge s2, s30, s31
+7E60EE45 facge d5, d18, d0
+7E70EF36 facge d22, d25, d16
+7E68EDB3 facge d19, d13, d8
+7E7FEFF6 facge d22, d31, d31
+7E6AEEE6 facge d6, d23, d10
+7E70EF85 facge d5, d28, d16
+7E76EE0C facge d12, d16, d22
+7E26EF80 facge s0, s28, s6
+7E26EF9F facge s31, s28, s6
+7E66EF80 facge d0, d28, d6
+7E66EF9F facge d31, d28, d6
+7E20EF9C facge s28, s28, s0
+7E26EFE6 facge s6, s31, s6
+7E66EC1A facge d26, d0, d6
+
+// FACGE_asisdsamefp16_only 01|U=1|1|111|0|E=0|10|Rm=xxxxx|00|10|ac=1|1|Rn=xxxxx|Rd=xxxxx
+// FacgeAsisdsamefp16Only: FACGE  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+7E592CBD facge h29, h5, h25
+7E5F2DDF facge h31, h14, h31
+7E502D77 facge h23, h11, h16
+7E562D26 facge h6, h9, h22
+7E402F13 facge h19, h24, h0
+7E5E2C7A facge h26, h3, h30
+7E532CCF facge h15, h6, h19
+7E502EF2 facge h18, h23, h16
+7E582EC2 facge h2, h22, h24
+7E542D97 facge h23, h12, h20
+7E4B2F17 facge h23, h24, h11
+7E412D37 facge h23, h9, h1
+7E582CB3 facge h19, h5, h24
+7E4F2E61 facge h1, h19, h15
+7E402D5B facge h27, h10, h0
+7E402E84 facge h4, h20, h0
+7E592C00 facge h0, h0, h25
+7E592FFD facge h29, h31, h25
+7E592F3D facge h29, h25, h25

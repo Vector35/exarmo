@@ -1,0 +1,42 @@
+// CMN_r_A1 cond=xxxx|00010|opc=11|1|Rn=xxxx|(0)(0)(0)(0)|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// CmnRA1: CMN{<c>}{<q>}  <Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rm
+117e2265 cmnne lr, r5, ror #4 (unpredictable)
+9175c9a0 cmnls r5, r0, lsr #19 (unpredictable)
+017c7908 cmneq r12, r8, lsl #18 (unpredictable)
+817432a9 cmnhi r4, r9, lsr #5 (unpredictable)
+4171d8c1 cmnmi r1, r1, asr #17 (unpredictable)
+5170e561 cmnpl r0, r1, ror #10 (unpredictable)
+217614cf cmnhs r6, pc, asr #9 (unpredictable)
+51778a41 cmnpl r7, r1, asr #20 (unpredictable)
+// Binary Ninja's tests
+e1710006 cmn r1, r6
+e1710506 cmn r1, r6, lsl #10
+e1710526 cmn r1, r6, lsr #10
+e1710546 cmn r1, r6, asr #10
+e1710566 cmn r1, r6, ror #10
+e17d0526 cmn sp, r6, lsr #10
+F17E2265 UNALLOCATED
+117FFFE5 cmnne pc, r5, ror #0x1f (unpredictable)
+117E4865 cmnne lr, r5, ror #0x10 (unpredictable)
+117E2465 cmnne lr, r5, ror #0x8 (unpredictable)
+117E2165 cmnne lr, r5, ror #0x2 (unpredictable)
+117E20E5 cmnne lr, r5, ror #0x1 (unpredictable)
+
+// CMN_r_A1_RRX cond=xxxx|00010|opc=11|1|Rn=xxxx|(0)(0)(0)(0)|imm5=00000|stype=11|0|Rm=xxxx
+// CmnRA1Rrx: CMN{<c>}{<q>}  <Rn>, <Rm>, RRX
+// register fields: Rn, Rm
+c17b2061 cmngt r11, r1, rrx (unpredictable)
+317f3064 cmnlo pc, r4, rrx (unpredictable)
+81771066 cmnhi r7, r6, rrx (unpredictable)
+3175a065 cmnlo r5, r5, rrx (unpredictable)
+1175c06a cmnne r5, r10, rrx (unpredictable)
+e17b2063 cmn r11, r3, rrx (unpredictable)
+617d806f cmnvs sp, pc, rrx (unpredictable)
+a1746062 cmnge r4, r2, rrx (unpredictable)
+// Binary Ninja's tests
+e1710066 cmn r1, r6, rrx
+0170F060 cmneq r0, r0, rrx (unpredictable)
+F17B2061 UNALLOCATED
+417B4061 cmnmi r11, r1, rrx (unpredictable)
+217B2061 cmncs r11, r1, rrx (unpredictable)

@@ -1,0 +1,14 @@
+// BLX_r_T1 010001|11|L=1|Rm=xxxx|(0)(0)(0)
+// BlxRT1: BLX{<c>}{<q>}  <Rm>
+// register fields: Rm
+// IT state read: condition, last in block
+4780 blx r0
+47F9 blx pc (unpredictable)
+4782 blx r0 (unpredictable)
+4783 blx r0 (unpredictable)
+4784 blx r0 (unpredictable)
+4785 blx r0 (unpredictable)
+4786 blx r0 (unpredictable)
+4787 blx r0 (unpredictable)
+4780 [ne] blxne r0 (unpredictable)
+4780 [ne last] blxne r0

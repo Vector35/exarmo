@@ -1,0 +1,23 @@
+// sdot_za32_zzv_2x1 1|10|0000|10|1|10|Zm=xxxx|0|Rv=xx|101|Zn=xxxxx|U=0|1|off3=xxx
+// SdotZa32Zzv2x1: SDOT  ZA.S[<Wv>, <offs>{, VGx2}], { <Zn1>.H-<Zn2>.H }, <Zm>.H
+// register fields: Zm, Rv, Zn
+C160140B sdot za.s[w8, 3, vgx2], {z0.h-z1.h}, z0.h
+C160142E sdot za.s[w8, 6, vgx2], {z1.h-z2.h}, z0.h
+C160144A sdot za.s[w8, 2, vgx2], {z2.h-z3.h}, z0.h
+C16F37E8 sdot za.s[w9, 0, vgx2], {z31.h-z0.h}, z15.h
+C1605409 sdot za.s[w10, 1, vgx2], {z0.h-z1.h}, z0.h
+C160740C sdot za.s[w11, 4, vgx2], {z0.h-z1.h}, z0.h
+C160140D sdot za.s[w8, 5, vgx2], {z0.h-z1.h}, z0.h
+C160140F sdot za.s[w8, 7, vgx2], {z0.h-z1.h}, z0.h
+
+// sdot_za32_zzv_4x1 1|10|0000|10|1|11|Zm=xxxx|0|Rv=xx|101|Zn=xxxxx|U=0|1|off3=xxx
+// SdotZa32Zzv4x1: SDOT  ZA.S[<Wv>, <offs>{, VGx4}], { <Zn1>.H-<Zn4>.H }, <Zm>.H
+// register fields: Zm, Rv, Zn
+C170140E sdot za.s[w8, 6, vgx4], {z0.h-z3.h}, z0.h
+C170142A sdot za.s[w8, 2, vgx4], {z1.h-z4.h}, z0.h
+C170144D sdot za.s[w8, 5, vgx4], {z2.h-z5.h}, z0.h
+C17F37E8 sdot za.s[w9, 0, vgx4], {z31.h-z2.h}, z15.h
+C1705409 sdot za.s[w10, 1, vgx4], {z0.h-z3.h}, z0.h
+C170740B sdot za.s[w11, 3, vgx4], {z0.h-z3.h}, z0.h
+C170140C sdot za.s[w8, 4, vgx4], {z0.h-z3.h}, z0.h
+C170140F sdot za.s[w8, 7, vgx4], {z0.h-z3.h}, z0.h

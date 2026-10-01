@@ -1,0 +1,259 @@
+// Within TCANCEL_EX_exception 11010100|opc=011|imm16=xxxxxxxxxxxxxxxx|op2=000|LL=00
+// TCANCEL #<imm>
+// Removed in 2025-09 ISA specification
+D478DA60 UNALLOCATED
+D469F740 UNALLOCATED
+D47B3CC0 UNALLOCATED
+D47EC080 UNALLOCATED
+D475F200 UNALLOCATED
+D46AAE20 UNALLOCATED
+D4666BE0 UNALLOCATED
+D47DA280 UNALLOCATED
+
+// Within TCOMMIT_only_barriers 1101010100|L=0|op0=00|op1=011|CRn=0011|CRm=0000|op2=011|Rt=11111
+// TCOMMIT
+// Removed in 2025-09 ISA specification
+D503307F UNALLOCATED
+
+// Within TSTART_BR_systemresult 1101010100|L=1|op0=00|op1=011|CRn=0011|CRm=0000|op2=011|Rt=xxxxx
+// TSTART <Xt>
+// Removed in 2025-09 ISA specification
+D5233070 UNALLOCATED
+D5233068 UNALLOCATED
+D523307C UNALLOCATED
+D5233062 UNALLOCATED
+D523307F UNALLOCATED
+D523306B UNALLOCATED
+D523307A UNALLOCATED
+D5233076 UNALLOCATED
+
+// Within TTEST_BR_systemresult 1101010100|L=1|op0=00|op1=011|CRn=0011|CRm=0001|op2=011|Rt=xxxxx
+// TTEST <Xt>
+// Removed in 2025-09 ISA specification
+D5233178 UNALLOCATED
+D5233177 UNALLOCATED
+D523317C UNALLOCATED
+D5233169 UNALLOCATED
+D523317D UNALLOCATED
+D523317F UNALLOCATED
+D5233162 UNALLOCATED
+D5233172 UNALLOCATED
+
+// Within ANDS_32S_log_imm 0111001000xxxxxxxxxxxxxxxxxxxxxx
+72007CBE UNDEFINED
+72207C8F UNDEFINED
+
+// Within ANDS_64S_log_imm 111100100xxxxxxxxxxxxxxxxxxxxxxx
+F2007C03 UNDEFINED
+F240FC16 UNDEFINED
+
+// Within AND_32_log_imm 0001001000xxxxxxxxxxxxxxxxxxxxxx
+12007C8E UNDEFINED
+12207C5F UNDEFINED
+
+// Within AND_64_log_imm 100100100xxxxxxxxxxxxxxxxxxxxxxx
+92007CCE UNDEFINED
+9240FCE1 UNDEFINED
+
+// Within EOR_32_log_imm 0101001000xxxxxxxxxxxxxxxxxxxxxx
+52007CAE UNDEFINED
+52207C7F UNDEFINED
+
+// Within EOR_64_log_imm 110100100xxxxxxxxxxxxxxxxxxxxxxx
+D2007CEE UNDEFINED
+D240FC06 UNDEFINED
+
+// Within MSR_SI_pstate 1101010100000xxxxxxxxxxxxxxxxxxx
+D501441F UNDEFINED
+D501481F UNDEFINED
+D5014F1F UNDEFINED
+D503407F UNDEFINED
+D503487F UNDEFINED
+D5034E7F UNDEFINED
+D50040DF UNDEFINED
+D50040FF UNDEFINED
+D501403F UNDEFINED
+D502401F UNDEFINED
+D503401F UNDEFINED
+D50340BF UNDEFINED
+D504401F UNDEFINED
+D50740FF UNDEFINED
+
+// Within ORR_32_log_imm 0011001000xxxxxxxxxxxxxxxxxxxxxx
+32007C9E UNDEFINED
+32207C6F UNDEFINED
+
+// Within ORR_64_log_imm 101100100xxxxxxxxxxxxxxxxxxxxxxx
+B2007CDE UNDEFINED
+B240FCF1 UNDEFINED
+
+// Within PMULL_asimddiff_L 0x001110xx1xxxxx111000xxxxxxxxxx
+0E60E000 UNDEFINED
+0EA0E000 UNDEFINED
+4E60E000 UNDEFINED
+4EA0E000 UNDEFINED
+
+// Within SQSHLU_asisdshf_R 011111110xxxxxxx011001xxxxxxxxxx
+7F0064BF UNALLOCATED
+
+// Within SQSHL_asisdshf_R 010111110xxxxxxx0111xxxxxxxxxxxx
+5F00745F UNALLOCATED
+
+// Within dupm_z_i_ 00000101110000xxxxxxxxxxxxxxxxxx
+// DUPM <Zd>.<T>, #<const>
+05C013FD UNDEFINED
+05800F74 UNDEFINED
+
+// Within eor_z_zi_ 00000101010000xxxxxxxxxxxxxxxxxx
+054006FF UNDEFINED
+
+// Within orr_z_zi_ 00000101000000xxxxxxxxxxxxxxxxxx
+05001BF4 UNDEFINED
+
+// Within MSRR_SR_systemmovepr 1101010101|L=0|1|o0=x|op1=xxx|CRn=xxxx|CRm=xxxx|op2=xxx|Rt=xxxxx
+// MSRR (<systemreg>|S<op0>_<op1>_<Cn>_<Cm>_<op2>),<Xt>,<Xt+1>
+D5584001 UNDEFINED
+
+// Within MRRS_RS_systemmovepr 1101010101|L=1|1|o0=x|op1=xxx|CRn=xxxx|CRm=xxxx|op2=xxx|Rt=xxxxx
+// MRRS <Xt>,<Xt+1>,(<systemreg>|S<op0>_<op1>_<Cn>_<Cm>_<op2>)
+D5716213 UNDEFINED
+
+// Within SETGOP_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=0000|00|Rn=xxxxx|Rd=xxxxx
+// SETGOP [<Xd>]!,<Xn>!
+DDDF030F UNDEFINED
+5DDF0286 UNDEFINED
+
+// Within SETGOM_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=0100|00|Rn=xxxxx|Rd=xxxxx
+// SETGOM [<Xd>]!,<Xn>!
+DDDF430F UNDEFINED
+5DDF4286 UNDEFINED
+
+// Within SETGOE_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=1000|00|Rn=xxxxx|Rd=xxxxx
+// SETGOE [<Xd>]!,<Xn>!
+DDDF830F UNDEFINED
+5DDF8286 UNDEFINED
+
+// Within SETGOPN_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=0010|00|Rn=xxxxx|Rd=xxxxx
+// SETGOPN [<Xd>]!,<Xn>!
+DDDF230F UNDEFINED
+5DDF2286 UNDEFINED
+
+// Within SETGOMN_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=0110|00|Rn=xxxxx|Rd=xxxxx
+// SETGOMN [<Xd>]!,<Xn>!
+DDDF630F UNDEFINED
+5DDF6286 UNDEFINED
+
+// Within SETGOEN_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=1010|00|Rn=xxxxx|Rd=xxxxx
+// SETGOEN [<Xd>]!,<Xn>!
+DDDFA30F UNDEFINED
+5DDFA286 UNDEFINED
+
+// Within SETGOPT_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=0001|00|Rn=xxxxx|Rd=xxxxx
+// SETGOPT [<Xd>]!,<Xn>!
+DDDF130F UNDEFINED
+5DDF1286 UNDEFINED
+
+// Within SETGOMT_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=0101|00|Rn=xxxxx|Rd=xxxxx
+// SETGOMT [<Xd>]!,<Xn>!
+DDDF530F UNDEFINED
+5DDF5286 UNDEFINED
+
+// Within SETGOET_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=1001|00|Rn=xxxxx|Rd=xxxxx
+// SETGOET [<Xd>]!,<Xn>!
+DDDF930F UNDEFINED
+5DDF9286 UNDEFINED
+
+// Within SETGOPTN_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=0011|00|Rn=xxxxx|Rd=xxxxx
+// SETGOPTN [<Xd>]!,<Xn>!
+DDDF330F UNDEFINED
+5DDF3286 UNDEFINED
+
+// Within SETGOMTN_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=0111|00|Rn=xxxxx|Rd=xxxxx
+// SETGOMTN [<Xd>]!,<Xn>!
+DDDF730F UNDEFINED
+5DDF7286 UNDEFINED
+
+// Within SETGOETN_memset_go sz=xx|011101|op1=11|0|Rs=11111|op2=1011|00|Rn=xxxxx|Rd=xxxxx
+// SETGOETN [<Xd>]!,<Xn>!
+DDDFB30F UNDEFINED
+5DDFB286 UNDEFINED
+
+// Each word below is in an UNALLOCATED row of an iclass whose encodings all
+// begin with the same UNDEFINED test, size == '00' say, and fails that test.
+// The test belongs to the encodings and the word is none of them, so it is
+// UNALLOCATED, not UNDEFINED.
+
+// Within asimdperm, UNALLOCATED: opcode=x00
+0EC00B86 UNALLOCATED
+
+// Within memcms, UNALLOCATED: op1=11, op2=11xx
+D9CBD6CC UNALLOCATED
+
+// Within memop_128, UNALLOCATED: S=0, o3=0, opc=0x0
+19BF204A UNALLOCATED
+
+// Within memop_128, UNALLOCATED: S=1, o3=0, opc=0xx
+5937029F UNALLOCATED
+
+// Within memop_128, UNALLOCATED: S=1, o3=1, opc=000
+596F813F UNALLOCATED
+
+// Within memset_go, UNALLOCATED: op1=11, op2=11xx
+5DC0F06A UNALLOCATED
+
+// Within mortlach_multi4_qrshr, UNALLOCATED: op=1, U=1
+C127DF62 UNALLOCATED
+
+// Within sve_fp_2op_p_pd, UNALLOCATED: eq=1, ne=1
+65122452 UNALLOCATED
+
+// Within sve_fp_2op_p_zd_a, UNALLOCATED: opc=101
+6505A01F UNALLOCATED
+
+// Within sve_fp_fast_red, UNALLOCATED: opc=001
+65013DB8 UNALLOCATED
+
+// Within sve_fp_fast_red, UNALLOCATED: opc=01x
+65022F52 UNALLOCATED
+
+// Within sve_fp_fast_red_1, UNALLOCATED: opc=1x, R=0
+6417C824 UNALLOCATED
+
+// Within sve_fp_fast_redq, UNALLOCATED: opc=001
+6411B9BF UNALLOCATED
+
+// Within sve_fp_fast_redq, UNALLOCATED: opc=01x
+6412A831 UNALLOCATED
+
+// Within sve_fp_maxmin, UNALLOCATED: op=0, opc=1x
+6403F763 UNALLOCATED
+
+// Within sve_fp_pairwise, UNALLOCATED: opc=001
+641186D2 UNALLOCATED
+
+// Within sve_fp_pairwise, UNALLOCATED: opc=01x
+64139F0D UNALLOCATED
+
+// Within sve_fp_z2op_p_zd_a, UNALLOCATED: op=1, opc2=01
+6419BFF8 UNALLOCATED
+
+// Within sve_int_bin_pred_shift_0, UNALLOCATED: opc=00, L=1, U=0
+0402900B UNALLOCATED
+
+// Within sve_int_bin_pred_shift_0, UNALLOCATED: opc=01, L=0, U=1
+0405886B UNALLOCATED
+
+// Within sve_int_bin_pred_shift_0, UNALLOCATED: opc=10
+040B94DA UNALLOCATED
+
+// Within sve_int_bin_pred_shift_0, UNALLOCATED: opc=11, L=1, U=0
+040E845F UNALLOCATED
+
+// Within sve_int_bin_pred_shift_2, UNALLOCATED: R=0, L=1, U=0
+04DA8FB7 UNALLOCATED
+
+// Within sve_intx_clong, UNALLOCATED: S=0, tb=1
+4502854F UNALLOCATED
+
+// Within sve_intx_cons_arith_long, UNALLOCATED: op=1, S=0
+450A2E18 UNALLOCATED

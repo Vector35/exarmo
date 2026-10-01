@@ -1,0 +1,17 @@
+// fmaxnmp_z_p_zz_ 011|0010|0|size=xx|010|opc=100|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FmaxnmpZPZz: FMAXNMP  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+6454838D fmaxnmp z13.h, p0/m, z13.h, z28.h
+64948F57 fmaxnmp z23.s, p3/m, z23.s, z26.s
+64D495B5 fmaxnmp z21.d, p5/m, z21.d, z13.d
+64D48CAE fmaxnmp z14.d, p3/m, z14.d, z5.d
+64D4921E fmaxnmp z30.d, p4/m, z30.d, z16.d
+64D49BDF fmaxnmp z31.d, p6/m, z31.d, z30.d
+64548D85 fmaxnmp z5.h, p3/m, z5.h, z12.h
+64D48C55 fmaxnmp z21.d, p3/m, z21.d, z2.d
+64548400 fmaxnmp z0.h, p1/m, z0.h, z0.h
+64548BED fmaxnmp z13.h, p2/m, z13.h, z31.h
+64549F8D fmaxnmp z13.h, p7/m, z13.h, z28.h
+6414838D UNDEFINED
+6454800D fmaxnmp z13.h, p0/m, z13.h, z0.h
+64548380 fmaxnmp z0.h, p0/m, z0.h, z28.h

@@ -1,0 +1,125 @@
+// LDRSB_32B_ldst_regoff size=00|111|VR=0|00|opc=11|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldrsb32bLdstRegoff: LDRSB  <Wt>, [<Xn|SP>, (<Wm>|<Xm>), <extend> {<amount>}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+38F44831 ldrsb w17, [x1, w20, uxtw]
+38F249F9 ldrsb w25, [x15, w18, uxtw]
+38F95823 ldrsb w3, [x1, w25, uxtw #0x0]
+38FBEACC ldrsb w12, [x22, x27, sxtx]
+38F6F80A ldrsb w10, [x0, x22, sxtx #0x0]
+38E24B34 ldrsb w20, [x25, w2, uxtw]
+38FD5AC1 ldrsb w1, [x22, w29, uxtw #0x0]
+38F0EB08 ldrsb w8, [x24, x16, sxtx]
+38EEF927 ldrsb w7, [x9, x14, sxtx #0x0]
+38ED4828 ldrsb w8, [x1, w13, uxtw]
+38EFC8AD ldrsb w13, [x5, w15, sxtw]
+38E24867 ldrsb w7, [x3, w2, uxtw]
+38EBE9C4 ldrsb w4, [x14, x11, sxtx]
+38E9CA91 ldrsb w17, [x20, w9, sxtw]
+38E6597B ldrsb w27, [x11, w6, uxtw #0x0]
+38FDFB93 ldrsb w19, [x28, fp, sxtx #0x0]
+38E04BE0 ldrsb w0, [sp, w0, uxtw]
+38FF483F ldrsb wzr, [x1, wzr, uxtw]
+38F40831 UNDEFINED
+38F42831 UNDEFINED
+38F48831 UNDEFINED
+38F4A831 UNDEFINED
+38E00831 UNDEFINED
+38E02831 UNDEFINED
+38E08831 UNDEFINED
+38E0A831 UNDEFINED
+38E0C821 ldrsb w1, [x1, w0, sxtw]
+38E0E831 ldrsb w17, [x1, x0, sxtx]
+38FF0831 UNDEFINED
+38FF2831 UNDEFINED
+38FF8831 UNDEFINED
+38FFA831 UNDEFINED
+38FFC831 ldrsb w17, [x1, wzr, sxtw]
+38FFE831 ldrsb w17, [x1, xzr, sxtx]
+38F44A91 ldrsb w17, [x20, w20, uxtw]
+
+// LDRSB_32BL_ldst_regoff size=00|111|VR=0|00|opc=11|1|Rm=xxxxx|option=011|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldrsb32blLdstRegoff: LDRSB  <Wt>, [<Xn|SP>, <Xm>{, LSL <amount>}]
+// register fields: Rm, Rn, Rt
+38E86B86 ldrsb w6, [x28, x8]
+38E16BA2 ldrsb w2, [fp, x1]
+38FB7BB0 ldrsb w16, [fp, x27, lsl #0x0]
+38E17913 ldrsb w19, [x8, x1, lsl #0x0]
+38E26986 ldrsb w6, [x12, x2]
+38EC7894 ldrsb w20, [x4, x12, lsl #0x0]
+38F969A1 ldrsb w1, [x13, x25]
+38E06843 ldrsb w3, [x2, x0]
+38EC78BF ldrsb wzr, [x5, x12, lsl #0x0]
+38E17AE3 ldrsb w3, [x23, x1, lsl #0x0]
+38EE79DF ldrsb wzr, [x14, x14, lsl #0x0]
+38F56854 ldrsb w20, [x2, x21]
+38E069B7 ldrsb w23, [x13, x0]
+38EB69B2 ldrsb w18, [x13, x11]
+38E879C9 ldrsb w9, [x14, x8, lsl #0x0]
+38FF7963 ldrsb w3, [x11, xzr, lsl #0x0]
+38E86800 ldrsb w0, [x0, x8]
+38E86BE6 ldrsb w6, [sp, x8]
+38E86B88 ldrsb w8, [x28, x8]
+
+// LDRSB_64B_ldst_regoff size=00|111|VR=0|00|opc=10|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldrsb64bLdstRegoff: LDRSB  <Xt>, [<Xn|SP>, (<Wm>|<Xm>), <extend> {<amount>}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+38BD59F0 ldrsb x16, [x15, w29, uxtw #0x0]
+38A1FB13 ldrsb x19, [x24, x1, sxtx #0x0]
+38B04A07 ldrsb x7, [x16, w16, uxtw]
+38A1FAE4 ldrsb x4, [x23, x1, sxtx #0x0]
+38A24A73 ldrsb x19, [x19, w2, uxtw]
+38A0E992 ldrsb x18, [x12, x0, sxtx]
+38AE5949 ldrsb x9, [x10, w14, uxtw #0x0]
+38A3D865 ldrsb x5, [x3, w3, sxtw #0x0]
+38BB5A1F ldrsb xzr, [x16, w27, uxtw #0x0]
+38A0E8F6 ldrsb x22, [x7, x0, sxtx]
+38A85ACD ldrsb x13, [x22, w8, uxtw #0x0]
+38A84A2F ldrsb x15, [x17, w8, uxtw]
+38A25A4C ldrsb x12, [x18, w2, uxtw #0x0]
+38A45A3D ldrsb fp, [x17, w4, uxtw #0x0]
+38A7E95F ldrsb xzr, [x10, x7, sxtx]
+38A848EB ldrsb x11, [x7, w8, uxtw]
+38BF5800 ldrsb x0, [x0, wzr, uxtw #0x0]
+38BD5BF0 ldrsb x16, [sp, w29, uxtw #0x0]
+38BD19F0 UNDEFINED
+38BD39F0 UNDEFINED
+38BD99F0 UNDEFINED
+38BDB9F0 UNDEFINED
+38A019F0 UNDEFINED
+38A039F0 UNDEFINED
+38A059F0 ldrsb x16, [x15, w0, uxtw #0x0]
+38A099F0 UNDEFINED
+38A0B9F0 UNDEFINED
+38A0D9F0 ldrsb x16, [x15, w0, sxtw #0x0]
+38BF19F0 UNDEFINED
+38BF39F0 UNDEFINED
+38BF99F0 UNDEFINED
+38BFB9F0 UNDEFINED
+38BFD9F0 ldrsb x16, [x15, wzr, sxtw #0x0]
+38BFF9F0 ldrsb x16, [x15, xzr, sxtx #0x0]
+38BD59FD ldrsb fp, [x15, w29, uxtw #0x0]
+
+// LDRSB_64BL_ldst_regoff size=00|111|VR=0|00|opc=10|1|Rm=xxxxx|option=011|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldrsb64blLdstRegoff: LDRSB  <Xt>, [<Xn|SP>, <Xm>{, LSL <amount>}]
+// register fields: Rm, Rn, Rt
+38B07922 ldrsb x2, [x9, x16, lsl #0x0]
+38A07997 ldrsb x23, [x12, x0, lsl #0x0]
+38A06A1C ldrsb x28, [x16, x0]
+38A37951 ldrsb x17, [x10, x3, lsl #0x0]
+38A37AFE ldrsb lr, [x23, x3, lsl #0x0]
+38AD6A55 ldrsb x21, [x18, x13]
+38BB7982 ldrsb x2, [x12, x27, lsl #0x0]
+38AB7824 ldrsb x4, [x1, x11, lsl #0x0]
+38AF79E2 ldrsb x2, [x15, x15, lsl #0x0]
+38BF699B ldrsb x27, [x12, xzr]
+38BB790E ldrsb x14, [x8, x27, lsl #0x0]
+38A97A84 ldrsb x4, [x20, x9, lsl #0x0]
+38BC7A42 ldrsb x2, [x18, x28, lsl #0x0]
+38B978B4 ldrsb x20, [x5, x25, lsl #0x0]
+38A17B7E ldrsb lr, [x27, x1, lsl #0x0]
+38AF78D1 ldrsb x17, [x6, x15, lsl #0x0]
+38B07800 ldrsb x0, [x0, x16, lsl #0x0]
+38B07BFF ldrsb xzr, [sp, x16, lsl #0x0]
+38B07930 ldrsb x16, [x9, x16, lsl #0x0]

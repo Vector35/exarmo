@@ -1,0 +1,17 @@
+// MRS_A1_AS cond=xxxx|00|010|R=x|0|0|mask=(1)(1)(1)(1)|Rd=xxxx|(0)(0)|B=0|m=(0)|0|000|Rn=(0)(0)(0)(0)
+// MrsA1As: MRS{<c>}{<q>}  <Rd>, <spec_reg>
+// register fields: Rd
+c146610a mrsgt r6, spsr (unpredictable)
+6145b906 mrsvs r11, spsr (unpredictable)
+b14cbc02 mrslt r11, spsr (unpredictable)
+c1497d08 mrsgt r7, spsr (unpredictable)
+61095501 mrsvs r5, apsr (unpredictable)
+// Binary Ninja's tests
+e10f8000 mrs r8, apsr
+e14f8000 mrs r8, spsr
+0140010F mrseq r0, spsr (unpredictable)
+F146610A UNALLOCATED
+8148F104 mrshi pc, spsr (unpredictable)
+4144610A mrsmi r6, spsr (unpredictable)
+2142610A mrscs r6, spsr (unpredictable)
+1141610A mrsne r6, spsr (unpredictable)

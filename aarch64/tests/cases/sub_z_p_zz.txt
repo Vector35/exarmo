@@ -1,0 +1,23 @@
+// sub_z_p_zz_ 000|0010|0|size=xx|0|00|opc=001|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SubZPZz: SUB  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+048109E1 sub z1.s, p2/m, z1.s, z15.s
+04411268 sub z8.h, p4/m, z8.h, z19.h
+04C118E5 sub z5.d, p6/m, z5.d, z7.d
+044101DF sub z31.h, p0/m, z31.h, z14.h
+04811182 sub z2.s, p4/m, z2.s, z12.s
+04010024 sub z4.b, p0/m, z4.b, z1.b
+04010623 sub z3.b, p1/m, z3.b, z17.b
+048101C3 sub z3.s, p0/m, z3.s, z14.s
+04C11353 sub z19.d, p4/m, z19.d, z26.d
+04C112B9 sub z25.d, p4/m, z25.d, z21.d
+0441101C sub z28.h, p4/m, z28.h, z0.h
+04410878 sub z24.h, p2/m, z24.h, z3.h
+044103E1 sub z1.h, p0/m, z1.h, z31.h
+04011E85 sub z5.b, p7/m, z5.b, z20.b
+04811027 sub z7.s, p4/m, z7.s, z1.s
+04411577 sub z23.h, p5/m, z23.h, z11.h
+04810DE0 sub z0.s, p3/m, z0.s, z15.s
+04810841 sub z1.s, p2/m, z1.s, z2.s
+048109E2 sub z2.s, p2/m, z2.s, z15.s
+048109EF sub z15.s, p2/m, z15.s, z15.s

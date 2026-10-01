@@ -1,0 +1,151 @@
+// AND_32_log_imm sf=0|opc=00|100100|N=0|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// And32LogImm: AND  <Wd|WSP>, <Wn>, #<imm>
+// read together by <imm>: immr, imms
+// register fields: Rn, Rd
+// bitmask immediate <imm>: N:immr:imms
+120C2002 and w2, w0, #0x1ff00000
+120F3C02 and w2, w0, #0xfffe0001
+121A3BF6 and w22, wzr, #0x1fffc0
+12289301 and w1, w24, #0x1f001f00
+121B884A and w10, w2, #0xe000e0
+12173465 and w5, w3, #0x7ffe00
+121066F8 and w24, w23, #0xffff03ff
+12079C73 and w19, w3, #0xfe01fe01
+12023426 and w6, w1, #0xc0000fff
+12176297 and w23, w20, #0xfffffe03
+122F41AD and w13, w13, #0xfffe0003
+123544EA and w10, w7, #0x1ffff800
+1213B23C and w28, w17, #0xe3ffe3ff
+123A3AB6 and w22, w21, #0x1fffc0
+1227104F and w15, w2, #0x3e000000
+1203055C and w28, w10, #0x60000000
+12000000 and w0, w0, #0x1
+123F201F and wsp, w0, #0x3fe
+120CFC02 UNDEFINED
+1200FC02 UNDEFINED
+123F0002 and w2, w0, #0x2
+123FFC02 UNDEFINED
+12208002 and w2, w0, #0x10001
+12080802 and w2, w0, #0x7000000
+12042002 and w2, w0, #0xf000001f
+12012002 and w2, w0, #0x800000ff
+1200F002 and w2, w0, #0x55555555
+1201F002 and w2, w0, #0xaaaaaaaa
+123FF002 and w2, w0, #0xaaaaaaaa
+1200F402 UNDEFINED
+1201F402 UNDEFINED
+123FF402 UNDEFINED
+1200E002 and w2, w0, #0x11111111
+1203E002 and w2, w0, #0x22222222
+123FE002 and w2, w0, #0x22222222
+1200E802 and w2, w0, #0x77777777
+1203E802 and w2, w0, #0xeeeeeeee
+123FE802 and w2, w0, #0xeeeeeeee
+1200EC02 UNDEFINED
+1203EC02 UNDEFINED
+123FEC02 UNDEFINED
+1200C002 and w2, w0, #0x1010101
+1207C002 and w2, w0, #0x2020202
+123FC002 and w2, w0, #0x2020202
+1200D802 and w2, w0, #0x7f7f7f7f
+1207D802 and w2, w0, #0xfefefefe
+123FD802 and w2, w0, #0xfefefefe
+1200DC02 UNDEFINED
+1207DC02 UNDEFINED
+123FDC02 UNDEFINED
+12008002 and w2, w0, #0x10001
+120F8002 and w2, w0, #0x20002
+123F8002 and w2, w0, #0x20002
+1200B802 and w2, w0, #0x7fff7fff
+120FB802 and w2, w0, #0xfffefffe
+123FB802 and w2, w0, #0xfffefffe
+1200BC02 UNDEFINED
+120FBC02 UNDEFINED
+123FBC02 UNDEFINED
+121F0002 and w2, w0, #0x2
+12007802 and w2, w0, #0x7fffffff
+121F7802 and w2, w0, #0xfffffffe
+123F7802 and w2, w0, #0xfffffffe
+12007C02 UNDEFINED
+121F7C02 UNDEFINED
+123F7C02 UNDEFINED
+
+// AND_64_log_imm sf=1|opc=00|100100|N=x|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// And64LogImm: AND  <Xd|SP>, <Xn>, #<imm>
+// read together by <imm>: N, immr, imms
+// register fields: Rn, Rd
+// bitmask immediate <imm>: N:immr:imms
+92103567 and x7, x11, #0x3fff00003fff0000
+9208A8E8 and x8, x7, #0xff07ff07ff07ff07
+922667CB and x11, lr, #0xfc0ffffffc0fffff
+9247F62E and x14, x17, #0xfe7fffffffffffff
+9250519C and x28, x12, #0xffff00000000001f
+923ACA10 and x16, x16, #0xc1c1c1c1c1c1c1c1
+9240A29F and sp, x20, #0x1ffffffffff
+9201AE10 and x16, x16, #0x87ff87ff87ff87ff
+92798558 and x24, x10, #0x1ffffffff80
+9220370F and x15, x24, #0x3fff00003fff
+923F0A3F and sp, x17, #0xe0000000e
+9266E69B and x27, x20, #0xfffffffffc0fffff
+92185F5B and x27, x26, #0xffffff00ffffff00
+927EAA6D and x13, x19, #0x1ffffffffffc
+927137A9 and x9, fp, #0x1fff8000
+924BD1E8 and x8, x15, #0xffe003ffffffffff
+92100000 and x0, x0, #0x1000000010000
+921037E7 and x7, xzr, #0x3fff00003fff0000
+9210FD67 UNDEFINED
+92000167 and x7, x11, #0x100000001
+9200FD67 UNDEFINED
+923F0167 and x7, x11, #0x200000002
+923FFD67 UNDEFINED
+92400167 and x7, x11, #0x1
+9240FD67 UNDEFINED
+927F0167 and x7, x11, #0x2
+927FFD67 UNDEFINED
+92048167 and x7, x11, #0x1000100010001000
+92024167 and x7, x11, #0xc0007fffc0007fff
+92102167 and x7, x11, #0x1ff000001ff0000
+92101167 and x7, x11, #0x1f0000001f0000
+92100567 and x7, x11, #0x3000000030000
+9200F167 and x7, x11, #0x5555555555555555
+9201F167 and x7, x11, #0xaaaaaaaaaaaaaaaa
+923FF167 and x7, x11, #0xaaaaaaaaaaaaaaaa
+9200F567 UNDEFINED
+9201F567 UNDEFINED
+923FF567 UNDEFINED
+9200E167 and x7, x11, #0x1111111111111111
+9203E167 and x7, x11, #0x2222222222222222
+923FE167 and x7, x11, #0x2222222222222222
+9200E967 and x7, x11, #0x7777777777777777
+9203E967 and x7, x11, #0xeeeeeeeeeeeeeeee
+923FE967 and x7, x11, #0xeeeeeeeeeeeeeeee
+9200ED67 UNDEFINED
+9203ED67 UNDEFINED
+923FED67 UNDEFINED
+9200C167 and x7, x11, #0x101010101010101
+9207C167 and x7, x11, #0x202020202020202
+923FC167 and x7, x11, #0x202020202020202
+9200D967 and x7, x11, #0x7f7f7f7f7f7f7f7f
+9207D967 and x7, x11, #0xfefefefefefefefe
+923FD967 and x7, x11, #0xfefefefefefefefe
+9200DD67 UNDEFINED
+9207DD67 UNDEFINED
+923FDD67 UNDEFINED
+92008167 and x7, x11, #0x1000100010001
+920F8167 and x7, x11, #0x2000200020002
+923F8167 and x7, x11, #0x2000200020002
+9200B967 and x7, x11, #0x7fff7fff7fff7fff
+920FB967 and x7, x11, #0xfffefffefffefffe
+923FB967 and x7, x11, #0xfffefffefffefffe
+9200BD67 UNDEFINED
+920FBD67 UNDEFINED
+923FBD67 UNDEFINED
+921F0167 and x7, x11, #0x200000002
+92007967 and x7, x11, #0x7fffffff7fffffff
+921F7967 and x7, x11, #0xfffffffefffffffe
+923F7967 and x7, x11, #0xfffffffefffffffe
+92007D67 UNDEFINED
+921F7D67 UNDEFINED
+923F7D67 UNDEFINED
+9240F967 and x7, x11, #0x7fffffffffffffff
+927FF967 and x7, x11, #0xfffffffffffffffe

@@ -1,0 +1,21 @@
+// SHA512SU1_VVV2_cryptosha512_3 1100|111|00|11|Rm=xxxxx|1|O=0|00|opcode=10|Rn=xxxxx|Rd=xxxxx
+// Sha512su1Vvv2Cryptosha5123: SHA512SU1  <Vd>.2D, <Vn>.2D, <Vm>.2D
+// register fields: Rm, Rn, Rd
+CE6588CD sha512su1 v13.2d, v6.2d, v5.2d
+CE6C8A72 sha512su1 v18.2d, v19.2d, v12.2d
+CE7A890D sha512su1 v13.2d, v8.2d, v26.2d
+CE7789BF sha512su1 v31.2d, v13.2d, v23.2d
+CE6688E6 sha512su1 v6.2d, v7.2d, v6.2d
+CE7188FC sha512su1 v28.2d, v7.2d, v17.2d
+CE778BFC sha512su1 v28.2d, v31.2d, v23.2d
+CE7E8A46 sha512su1 v6.2d, v18.2d, v30.2d
+CE7C8BFF sha512su1 v31.2d, v31.2d, v28.2d
+CE728932 sha512su1 v18.2d, v9.2d, v18.2d
+CE7689E0 sha512su1 v0.2d, v15.2d, v22.2d
+CE648AEB sha512su1 v11.2d, v23.2d, v4.2d
+CE678995 sha512su1 v21.2d, v12.2d, v7.2d
+CE6A89E4 sha512su1 v4.2d, v15.2d, v10.2d
+CE6589E9 sha512su1 v9.2d, v15.2d, v5.2d
+CE6A8B05 sha512su1 v5.2d, v24.2d, v10.2d
+CE60880D sha512su1 v13.2d, v0.2d, v0.2d
+CE7F88CD sha512su1 v13.2d, v6.2d, v31.2d

@@ -1,0 +1,97 @@
+// incb_r_rs_ 000|0010|0|size=00|1|1|imm4=xxxx|11|100|D=0|pattern=xxxxx|Rdn=xxxxx
+// IncbRRs: INCB  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+043DE32B incb x11, #0x19, mul #0xe
+0435E22C incb x12, #0x11, mul #0x6
+0439E274 incb x20, #0x13, mul #0xa
+043AE3E2 incb x2, all, mul #0xb
+043BE1F8 incb x24, #0xf, mul #0xc
+043FE105 incb x5, vl8, mul #0x10
+043CE183 incb x3, vl128, mul #0xd
+0439E177 incb x23, vl64, mul #0xa
+0439E143 incb x3, vl32, mul #0xa
+043BE3C9 incb x9, mul3, mul #0xc
+0432E3E8 incb x8, all, mul #0x3
+043BE35E incb lr, #0x1a, mul #0xc
+0436E119 incb x25, vl8, mul #0x7
+043AE245 incb x5, #0x12, mul #0xb
+043DE05A incb x26, vl2, mul #0xe
+043FE35C incb x28, #0x1a, mul #0x10
+0430E000 incb x0, pow2
+043DE33F incb xzr, #0x19, mul #0xe
+0438E20B incb x11, #0x10, mul #0x9
+0434E08B incb x11, vl4, mul #0x5
+0431E02B incb x11, vl1, mul #0x2
+
+// incd_r_rs_ 000|0010|0|size=11|1|1|imm4=xxxx|11|100|D=0|pattern=xxxxx|Rdn=xxxxx
+// IncdRRs: INCD  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04FBE399 incd x25, #0x1c, mul #0xc
+04FBE016 incd x22, pow2, mul #0xc
+04FBE29F incd xzr, #0x14, mul #0xc
+04F6E2A1 incd x1, #0x15, mul #0x7
+04F8E117 incd x23, vl8, mul #0x9
+04F3E0BF incd xzr, vl5, mul #0x4
+04F9E3C5 incd x5, mul3, mul #0xa
+04FFE312 incd x18, #0x18, mul #0x10
+04F5E300 incd x0, #0x18, mul #0x6
+04F3E047 incd x7, vl2, mul #0x4
+04F8E154 incd x20, vl32, mul #0x9
+04F8E39D incd fp, #0x1c, mul #0x9
+04FCE070 incd x16, vl3, mul #0xd
+04FEE297 incd x23, #0x14, mul #0xf
+04F5E076 incd x22, vl3, mul #0x6
+04FEE382 incd x2, #0x1c, mul #0xf
+04F0E3F9 incd x25
+04F4E219 incd x25, #0x10, mul #0x5
+04F2E099 incd x25, vl4, mul #0x3
+04F1E039 incd x25, vl1, mul #0x2
+
+// inch_r_rs_ 000|0010|0|size=01|1|1|imm4=xxxx|11|100|D=0|pattern=xxxxx|Rdn=xxxxx
+// InchRRs: INCH  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+047DE32F inch x15, #0x19, mul #0xe
+047EE2D8 inch x24, #0x16, mul #0xf
+047DE2A3 inch x3, #0x15, mul #0xe
+0478E379 inch x25, #0x1b, mul #0x9
+0473E037 inch x23, vl1, mul #0x4
+0470E005 inch x5, pow2
+047DE30E inch x14, #0x18, mul #0xe
+047AE26B inch x11, #0x13, mul #0xb
+047DE03D inch fp, vl1, mul #0xe
+0479E2AA inch x10, #0x15, mul #0xa
+0476E28E inch x14, #0x14, mul #0x7
+0470E37A inch x26, #0x1b
+0475E2C0 inch x0, #0x16, mul #0x6
+0479E2F4 inch x20, #0x17, mul #0xa
+0470E282 inch x2, #0x14
+0476E3E4 inch x4, all, mul #0x7
+047FE33F inch xzr, #0x19, mul #0x10
+0474E20F inch x15, #0x10, mul #0x5
+0472E10F inch x15, vl8, mul #0x3
+0471E08F inch x15, vl4, mul #0x2
+047DE04F inch x15, vl2, mul #0xe
+
+// incw_r_rs_ 000|0010|0|size=10|1|1|imm4=xxxx|11|100|D=0|pattern=xxxxx|Rdn=xxxxx
+// IncwRRs: INCW  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04BBE1D7 incw x23, #0xe, mul #0xc
+04B9E3E3 incw x3, all, mul #0xa
+04BAE00B incw x11, pow2, mul #0xb
+04B0E3E5 incw x5
+04B9E248 incw x8, #0x12, mul #0xa
+04B9E2E0 incw x0, #0x17, mul #0xa
+04BAE283 incw x3, #0x14, mul #0xb
+04B2E284 incw x4, #0x14, mul #0x3
+04BEE28F incw x15, #0x14, mul #0xf
+04B0E2E1 incw x1, #0x17
+04BBE041 incw x1, vl2, mul #0xc
+04BFE269 incw x9, #0x13, mul #0x10
+04B7E3F3 incw x19, all, mul #0x8
+04B3E0B7 incw x23, vl5, mul #0x4
+04BBE14D incw x13, vl32, mul #0xc
+04BAE088 incw x8, vl4, mul #0xb
+04BBE1DF incw xzr, #0xe, mul #0xc
+04B8E217 incw x23, #0x10, mul #0x9
+04B4E117 incw x23, vl8, mul #0x5
+04B1E037 incw x23, vl1, mul #0x2

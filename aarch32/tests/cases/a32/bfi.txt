@@ -1,0 +1,26 @@
+// BFI_A1 cond=xxxx|011|1110|msb=xxxxx|Rd=xxxx|lsb=xxxxx|00|1|Rn=xxxx
+// BfiA1: BFI{<c>}{<q>}  <Rd>, <Rn>, #<lsb>, #<width>
+// register fields: Rd, Rn
+c7ccf618 bfigt pc, r8, #12, #1 (unpredictable)
+a7d8c395 bfige r12, r5, #7, #18
+67cbee1d UNPREDICTABLE
+a7d7841e bfige r8, lr, #8, #16
+c7d28192 bfigt r8, r2, #3, #16
+97c6e813 UNPREDICTABLE
+27d4c291 bfihs r12, r1, #5, #16
+a7c6061e UNPREDICTABLE
+// Binary Ninja's tests
+17d35192 bfine r5, r2, #3, #17
+e7cb0290 bfi r0, r0, #5, #7
+e7d35192 bfi r5, r2, #3, #17
+07C0F018 bfieq pc, r8, #0x0, #0x1 (unpredictable)
+F7CCF61F UNALLOCATED
+87DFFF98 bfihi pc, r8, #0x1f, #0x1 (unpredictable)
+47D0F218 bfimi pc, r8, #0x4, #0xd (unpredictable)
+C7C8F118 bfigt pc, r8, #0x2, #0x7 (unpredictable)
+C7C4F098 bfigt pc, r8, #0x1, #0x4 (unpredictable)
+C7C2F618 UNPREDICTABLE
+C7C1F618 UNPREDICTABLE
+07C2F018 bfieq pc, r8, #0x0, #0x3 (unpredictable)
+07C1F018 bfieq pc, r8, #0x0, #0x2 (unpredictable)
+A7D8C815 bfige r12, r5, #0x10, #0x9

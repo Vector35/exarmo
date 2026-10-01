@@ -1,0 +1,93 @@
+// FCVTAS_asimdmisc_R 0|Q=x|U=0|0|111|0|0|sz=x|10000|opcode=11100|10|Rn=xxxxx|Rd=xxxxx
+// FcvtasAsimdmiscR: FCVTAS  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+0E21C92B fcvtas v11.2s, v9.2s
+4E21CB81 fcvtas v1.4s, v28.4s
+4E21CA43 fcvtas v3.4s, v18.4s
+0E21C8E5 fcvtas v5.2s, v7.2s
+4E21C981 fcvtas v1.4s, v12.4s
+0E21CB50 fcvtas v16.2s, v26.2s
+0E21C8C7 fcvtas v7.2s, v6.2s
+4E21CA12 fcvtas v18.4s, v16.4s
+0E21C820 fcvtas v0.2s, v1.2s
+4E21C840 fcvtas v0.4s, v2.4s
+0E21C994 fcvtas v20.2s, v12.2s
+0E21CAC7 fcvtas v7.2s, v22.2s
+0E21C802 fcvtas v2.2s, v0.2s
+4E21CBA3 fcvtas v3.4s, v29.4s
+4E21CAE1 fcvtas v1.4s, v23.4s
+4E61CBA4 fcvtas v4.2d, v29.2d
+0E21CBFF fcvtas v31.2s, v31.2s
+0E61C92B UNDEFINED
+
+// FCVTAS_asimdmiscfp16_R 0|Q=x|U=0|0|111|0|a=0|1111|00|opcode=11100|10|Rn=xxxxx|Rd=xxxxx
+// FcvtasAsimdmiscfp16R: FCVTAS  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+4E79C904 fcvtas v4.8h, v8.8h
+4E79C9B2 fcvtas v18.8h, v13.8h
+0E79CA35 fcvtas v21.4h, v17.4h
+0E79CB26 fcvtas v6.4h, v25.4h
+4E79CAF8 fcvtas v24.8h, v23.8h
+0E79CAF7 fcvtas v23.4h, v23.4h
+0E79C90D fcvtas v13.4h, v8.4h
+4E79CB7E fcvtas v30.8h, v27.8h
+4E79CBF7 fcvtas v23.8h, v31.8h
+4E79CB49 fcvtas v9.8h, v26.8h
+0E79CB0A fcvtas v10.4h, v24.4h
+0E79C9CC fcvtas v12.4h, v14.4h
+0E79C816 fcvtas v22.4h, v0.4h
+4E79C8E7 fcvtas v7.8h, v7.8h
+0E79CB7C fcvtas v28.4h, v27.4h
+4E79C9FB fcvtas v27.8h, v15.8h
+4E79C900 fcvtas v0.8h, v8.8h
+4E79C91F fcvtas v31.8h, v8.8h
+
+// FCVTAS_asisdmisc_R 01|U=0|1|111|0|0|sz=x|10000|opcode=11100|10|Rn=xxxxx|Rd=xxxxx
+// FcvtasAsisdmiscR: FCVTAS  <V><d>, <V><n>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+5E61C9DA fcvtas d26, d14
+5E21C84B fcvtas s11, s2
+5E21CB84 fcvtas s4, s28
+5E21CAAE fcvtas s14, s21
+5E61CA0A fcvtas d10, d16
+5E61C848 fcvtas d8, d2
+5E61CBE2 fcvtas d2, d31
+5E61C837 fcvtas d23, d1
+5E61C98E fcvtas d14, d12
+5E61CA4C fcvtas d12, d18
+5E61CBA9 fcvtas d9, d29
+5E21C952 fcvtas s18, s10
+5E61C992 fcvtas d18, d12
+5E61C918 fcvtas d24, d8
+5E21C989 fcvtas s9, s12
+5E61C9C7 fcvtas d7, d14
+5E61C800 fcvtas d0, d0
+5E61C9DF fcvtas d31, d14
+5E21C9C0 fcvtas s0, s14
+5E21C9DF fcvtas s31, s14
+5E21C81A fcvtas s26, s0
+5E21CBFA fcvtas s26, s31
+
+// FCVTAS_asisdmiscfp16_R 01|U=0|1|111|0|a=0|1111|00|opcode=11100|10|Rn=xxxxx|Rd=xxxxx
+// FcvtasAsisdmiscfp16R: FCVTAS  <Hd>, <Hn>
+// register fields: Rn, Rd
+5E79CAF8 fcvtas h24, h23
+5E79CBA5 fcvtas h5, h29
+5E79C912 fcvtas h18, h8
+5E79C8A0 fcvtas h0, h5
+5E79CA85 fcvtas h5, h20
+5E79CB0C fcvtas h12, h24
+5E79C8B0 fcvtas h16, h5
+5E79CA40 fcvtas h0, h18
+5E79C943 fcvtas h3, h10
+5E79C813 fcvtas h19, h0
+5E79C85E fcvtas h30, h2
+5E79C84B fcvtas h11, h2
+5E79C929 fcvtas h9, h9
+5E79CBB9 fcvtas h25, h29
+5E79CABA fcvtas h26, h21
+5E79CAE8 fcvtas h8, h23
+5E79CBFF fcvtas h31, h31

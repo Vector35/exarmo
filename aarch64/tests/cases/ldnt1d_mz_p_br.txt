@@ -1,0 +1,30 @@
+// ldnt1d_mz_p_br_2 1|01|0000|00|00|Rm=xxxxx|0|msz=11|PNg=xxx|Rn=xxxxx|Zt=xxxx|N=1
+// Ldnt1dMzPBr2: LDNT1D  { <Zt1>.D-<Zt2>.D }, <PNg>/Z, [<Xn|SP>, <Xm>, LSL #3]
+// register fields: Rm, PNg, Rn, Zt
+A0006009 ldnt1d {z8.d-z9.d}, pn8/z, [x0, x0, lsl #0x3]
+A0006017 ldnt1d {z22.d-z23.d}, pn8/z, [x0, x0, lsl #0x3]
+A0006025 ldnt1d {z4.d-z5.d}, pn8/z, [x1, x0, lsl #0x3]
+A01F67E1 ldnt1d {z0.d-z1.d}, pn9/z, [sp, xzr, lsl #0x3]
+A000681F ldnt1d {z30.d-z31.d}, pn10/z, [x0, x0, lsl #0x3]
+A0006C09 ldnt1d {z8.d-z9.d}, pn11/z, [x0, x0, lsl #0x3]
+A0007009 ldnt1d {z8.d-z9.d}, pn12/z, [x0, x0, lsl #0x3]
+A0007409 ldnt1d {z8.d-z9.d}, pn13/z, [x0, x0, lsl #0x3]
+A0007809 ldnt1d {z8.d-z9.d}, pn14/z, [x0, x0, lsl #0x3]
+A0007C09 ldnt1d {z8.d-z9.d}, pn15/z, [x0, x0, lsl #0x3]
+A0006001 ldnt1d {z0.d-z1.d}, pn8/z, [x0, x0, lsl #0x3]
+A0016869 ldnt1d {z8.d-z9.d}, pn10/z, [x3, x1, lsl #0x3]
+
+// ldnt1d_mz_p_br_4 1|01|0000|00|00|Rm=xxxxx|1|msz=11|PNg=xxx|Rn=xxxxx|Zt=xxx|0|N=1
+// Ldnt1dMzPBr4: LDNT1D  { <Zt1>.D-<Zt4>.D }, <PNg>/Z, [<Xn|SP>, <Xm>, LSL #3]
+// register fields: Rm, PNg, Rn, Zt
+A000E001 ldnt1d {z0.d-z3.d}, pn8/z, [x0, x0, lsl #0x3]
+A000E01D ldnt1d {z28.d-z31.d}, pn8/z, [x0, x0, lsl #0x3]
+A000E039 ldnt1d {z24.d-z27.d}, pn8/z, [x1, x0, lsl #0x3]
+A01FE7E5 ldnt1d {z4.d-z7.d}, pn9/z, [sp, xzr, lsl #0x3]
+A000E809 ldnt1d {z8.d-z11.d}, pn10/z, [x0, x0, lsl #0x3]
+A000EC0D ldnt1d {z12.d-z15.d}, pn11/z, [x0, x0, lsl #0x3]
+A000F011 ldnt1d {z16.d-z19.d}, pn12/z, [x0, x0, lsl #0x3]
+A000F415 ldnt1d {z20.d-z23.d}, pn13/z, [x0, x0, lsl #0x3]
+A000F801 ldnt1d {z0.d-z3.d}, pn14/z, [x0, x0, lsl #0x3]
+A000FC01 ldnt1d {z0.d-z3.d}, pn15/z, [x0, x0, lsl #0x3]
+A001E871 ldnt1d {z16.d-z19.d}, pn10/z, [x3, x1, lsl #0x3]

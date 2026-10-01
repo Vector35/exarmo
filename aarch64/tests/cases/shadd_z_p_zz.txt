@@ -1,0 +1,14 @@
+// shadd_z_p_zz_ 010|0010|0|size=xx|0|10|R=0|S=0|U=0|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// ShaddZPZz: SHADD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+44108154 shadd z20.b, p0/m, z20.b, z10.b
+44109B98 shadd z24.b, p6/m, z24.b, z28.b
+4490939E shadd z30.s, p4/m, z30.s, z28.s
+4410993C shadd z28.b, p6/m, z28.b, z9.b
+44509330 shadd z16.h, p4/m, z16.h, z25.h
+44D0875A shadd z26.d, p1/m, z26.d, z26.d
+44D09CFB shadd z27.d, p7/m, z27.d, z7.d
+445089D0 shadd z16.h, p2/m, z16.h, z14.h
+44108C00 shadd z0.b, p3/m, z0.b, z0.b
+441097FF shadd z31.b, p5/m, z31.b, z31.b
+44108140 shadd z0.b, p0/m, z0.b, z10.b

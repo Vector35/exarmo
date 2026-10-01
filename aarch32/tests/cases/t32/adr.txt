@@ -1,0 +1,130 @@
+// ADR_T1 1010|SP=0|Rd=xxx|imm8=xxxxxxxx
+// AdrT1: ADR{<c>}{<q>}  <Rd>, <label>
+// register fields: Rd
+// IT state read: condition
+a000 adr r0, 0x10004
+a001 adr r0, 0x10008
+a002 adr r0, 0x1000c
+a003 adr r0, 0x10010
+a004 adr r0, 0x10014
+a005 adr r0, 0x10018
+a006 adr r0, 0x1001c
+a007 adr r0, 0x10020
+A1FF adr r1, 0x10400
+A280 adr r2, 0x10204
+A340 adr r3, 0x10104
+A420 adr r4, 0x10084
+A510 adr r5, 0x10044
+A608 adr r6, 0x10024
+A700 adr r7, 0x10004
+A000 [ne] adrne r0, 0x10004
+
+// ADR_T2 111|10|i=x|1|0|o1=1|0|o2=1|0|Rn=1111|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// SubAdrT2: SUB{<c>}{<q>}  <Rd>, PC, #<imm12>
+// AdrT2: ADR{<c>}{<q>}  <Rd>, <label>
+// read together by <imm12> and the SUB alias and <label>: i, imm3, imm8
+// register fields: Rd
+// form chosen on: i, imm3, imm8
+// IT state read: condition
+f6af5e6b adr lr, 0xf299
+f2af7780 adr r7, 0xf884
+f6af083d adr r8, 0xf7c7
+f2af7570 adr r5, 0xf894
+f6af72ae adr r2, 0xf056
+f2af2a77 adr r10, 0xfd8d
+F6AF1000 adr r0, 0xf704
+F6AF3FFF adr pc, 0xf405 (unpredictable)
+F6AF4E40 adr lr, 0xf3c4
+F6AF6E20 adr lr, 0xf1e4
+F6AF5E10 adr lr, 0xf2f4
+F6AF5E08 adr lr, 0xf2fc
+F6AF5E04 adr lr, 0xf300
+F6AF5E02 adr lr, 0xf302
+F6AF5E01 adr lr, 0xf303
+F2AF0E00 sub lr, pc, #0x0
+F2AF0EFF adr lr, 0xff05
+F2AF1E00 adr lr, 0xff04
+F2AF1EFF adr lr, 0xfe05
+F2AF2E00 adr lr, 0xfe04
+F2AF2EFF adr lr, 0xfd05
+F2AF3E00 adr lr, 0xfd04
+F2AF3EFF adr lr, 0xfc05
+F2AF4E00 adr lr, 0xfc04
+F2AF4EFF adr lr, 0xfb05
+F2AF5E00 adr lr, 0xfb04
+F2AF5EFF adr lr, 0xfa05
+F2AF6E00 adr lr, 0xfa04
+F2AF6EFF adr lr, 0xf905
+F2AF7E00 adr lr, 0xf904
+F2AF7EFF adr lr, 0xf805
+F6AF0E00 adr lr, 0xf804
+F6AF0EFF adr lr, 0xf705
+F6AF1E00 adr lr, 0xf704
+F6AF1EFF adr lr, 0xf605
+F6AF2E00 adr lr, 0xf604
+F6AF2EFF adr lr, 0xf505
+F6AF3E00 adr lr, 0xf504
+F6AF3EFF adr lr, 0xf405
+F6AF4E00 adr lr, 0xf404
+F6AF4EFF adr lr, 0xf305
+F6AF5E00 adr lr, 0xf304
+F6AF5EFF adr lr, 0xf205
+F6AF6E00 adr lr, 0xf204
+F6AF6EFF adr lr, 0xf105
+F6AF7E00 adr lr, 0xf104
+F6AF7EFF adr lr, 0xf005
+F2AF0E00 [ne] subne lr, pc, #0x0
+F6AF5E6B [ne] adrne lr, 0xf299
+
+// ADR_T3 111|10|i=x|1|0|o1=0|0|o2=0|0|Rn=1111|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// AdrT3: ADR{<c>}{<q>}  <Rd>, <label>
+// read together by <label>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f60f2f9a adr pc, 0x10a9e (unpredictable)
+f20f5327 adr r3, 0x1052b
+f60f44ff adr r4, 0x10d03
+f20f7794 adr r7, 0x10798
+f20f239d adr r3, 0x102a1
+f60f38f7 adr r8, 0x10bfb
+F60F0000 adr r0, 0x10804
+F60F1F80 adr pc, 0x10984 (unpredictable)
+F60F6F40 adr pc, 0x10e44 (unpredictable)
+F60F2F20 adr pc, 0x10a24 (unpredictable)
+F60F2F10 adr pc, 0x10a14 (unpredictable)
+F60F2F08 adr pc, 0x10a0c (unpredictable)
+F60F2F04 adr pc, 0x10a08 (unpredictable)
+F60F2F02 adr pc, 0x10a06 (unpredictable)
+F60F2F01 adr pc, 0x10a05 (unpredictable)
+F20F0F00 adr pc, 0x10004 (unpredictable)
+F20F0FFF adr pc, 0x10103 (unpredictable)
+F20F1F00 adr pc, 0x10104 (unpredictable)
+F20F1FFF adr pc, 0x10203 (unpredictable)
+F20F2F00 adr pc, 0x10204 (unpredictable)
+F20F2FFF adr pc, 0x10303 (unpredictable)
+F20F3F00 adr pc, 0x10304 (unpredictable)
+F20F3FFF adr pc, 0x10403 (unpredictable)
+F20F4F00 adr pc, 0x10404 (unpredictable)
+F20F4FFF adr pc, 0x10503 (unpredictable)
+F20F5F00 adr pc, 0x10504 (unpredictable)
+F20F5FFF adr pc, 0x10603 (unpredictable)
+F20F6F00 adr pc, 0x10604 (unpredictable)
+F20F6FFF adr pc, 0x10703 (unpredictable)
+F20F7F00 adr pc, 0x10704 (unpredictable)
+F20F7FFF adr pc, 0x10803 (unpredictable)
+F60F0F00 adr pc, 0x10804 (unpredictable)
+F60F0FFF adr pc, 0x10903 (unpredictable)
+F60F1F00 adr pc, 0x10904 (unpredictable)
+F60F1FFF adr pc, 0x10a03 (unpredictable)
+F60F2F00 adr pc, 0x10a04 (unpredictable)
+F60F2FFF adr pc, 0x10b03 (unpredictable)
+F60F3F00 adr pc, 0x10b04 (unpredictable)
+F60F3FFF adr pc, 0x10c03 (unpredictable)
+F60F4F00 adr pc, 0x10c04 (unpredictable)
+F60F5F00 adr pc, 0x10d04 (unpredictable)
+F60F5FFF adr pc, 0x10e03 (unpredictable)
+F60F6F00 adr pc, 0x10e04 (unpredictable)
+F60F6FFF adr pc, 0x10f03 (unpredictable)
+F60F7F00 adr pc, 0x10f04 (unpredictable)
+F60F7FFF adr pc, 0x11003 (unpredictable)
+F60F2F9A [ne] adrne pc, 0x10a9e (unpredictable)

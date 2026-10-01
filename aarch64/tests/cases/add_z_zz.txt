@@ -1,0 +1,22 @@
+// add_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|000|opc=000|Zn=xxxxx|Zd=xxxxx
+// AddZZz: ADD  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+046A03AD add z13.h, z29.h, z10.h
+04FE0238 add z24.d, z17.d, z30.d
+04B301F3 add z19.s, z15.s, z19.s
+04B70123 add z3.s, z9.s, z23.s
+043D0184 add z4.b, z12.b, z29.b
+04AF0255 add z21.s, z18.s, z15.s
+04650202 add z2.h, z16.h, z5.h
+042703D5 add z21.b, z30.b, z7.b
+046E038D add z13.h, z28.h, z14.h
+04FE0296 add z22.d, z20.d, z30.d
+04AF01CA add z10.s, z14.s, z15.s
+04E20098 add z24.d, z4.d, z2.d
+04F5008E add z14.d, z4.d, z21.d
+047E03B6 add z22.h, z29.h, z30.h
+046C0360 add z0.h, z27.h, z12.h
+043702BA add z26.b, z21.b, z23.b
+0460001F add z31.h, z0.h, z0.h
+047F03ED add z13.h, z31.h, z31.h
+046A03BD add z29.h, z29.h, z10.h

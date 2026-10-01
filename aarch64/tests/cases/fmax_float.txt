@@ -1,0 +1,66 @@
+// FMAX_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|01|op=00|10|Rn=xxxxx|Rd=xxxxx
+// FmaxDFloatdp2: FMAX  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E784865 fmax d5, d3, d24
+1E7E4832 fmax d18, d1, d30
+1E604B8F fmax d15, d28, d0
+1E674AE1 fmax d1, d23, d7
+1E794988 fmax d8, d12, d25
+1E7F48F8 fmax d24, d7, d31
+1E674950 fmax d16, d10, d7
+1E734B06 fmax d6, d24, d19
+1E6648BE fmax d30, d5, d6
+1E754861 fmax d1, d3, d21
+1E6449EC fmax d12, d15, d4
+1E7C496D fmax d13, d11, d28
+1E7F4B1A fmax d26, d24, d31
+1E7C4B5C fmax d28, d26, d28
+1E7548CD fmax d13, d6, d21
+1E604991 fmax d17, d12, d0
+1E784800 fmax d0, d0, d24
+1E784BFF fmax d31, d31, d24
+1E784B05 fmax d5, d24, d24
+
+// FMAX_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|01|op=00|10|Rn=xxxxx|Rd=xxxxx
+// FmaxHFloatdp2: FMAX  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EF74AB6 fmax h22, h21, h23
+1EFF4803 fmax h3, h0, h31
+1EE84855 fmax h21, h2, h8
+1EF349B0 fmax h16, h13, h19
+1EFD4A62 fmax h2, h19, h29
+1EF64B38 fmax h24, h25, h22
+1EED48BD fmax h29, h5, h13
+1EE749B1 fmax h17, h13, h7
+1EED49FE fmax h30, h15, h13
+1EF04B52 fmax h18, h26, h16
+1EF64AE0 fmax h0, h23, h22
+1EED4A2D fmax h13, h17, h13
+1EE749B6 fmax h22, h13, h7
+1EEA498A fmax h10, h12, h10
+1EF848BE fmax h30, h5, h24
+1EE048F6 fmax h22, h7, h0
+1EF74BFF fmax h31, h31, h23
+1EF74AF6 fmax h22, h23, h23
+
+// FMAX_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|01|op=00|10|Rn=xxxxx|Rd=xxxxx
+// FmaxSFloatdp2: FMAX  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E2F49E6 fmax s6, s15, s15
+1E2349EA fmax s10, s15, s3
+1E2349B6 fmax s22, s13, s3
+1E3A4A9E fmax s30, s20, s26
+1E27493B fmax s27, s9, s7
+1E2748D7 fmax s23, s6, s7
+1E3D48F9 fmax s25, s7, s29
+1E384A52 fmax s18, s18, s24
+1E364963 fmax s3, s11, s22
+1E2E496E fmax s14, s11, s14
+1E3B4914 fmax s20, s8, s27
+1E3B4B60 fmax s0, s27, s27
+1E324AB6 fmax s22, s21, s18
+1E3D4ACD fmax s13, s22, s29
+1E204BB9 fmax s25, s29, s0
+1E344A6A fmax s10, s19, s20
+1E3F481F fmax s31, s0, s31
+1E2F4BE6 fmax s6, s31, s15

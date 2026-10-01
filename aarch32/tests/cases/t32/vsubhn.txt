@@ -1,0 +1,22 @@
+// VSUBHN_T1 111|U=0|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0110|N=x|0|M=x|0|Vm=xxxx
+// VsubhnT1: VSUBHN{<c>}{<q>}.<dt>  <Dd>, <Qn>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef94062e vsubhn.i32 d0, q2, q15
+ef88f62a vsubhn.i16 d15, q4, q13
+efa25620 vsubhn.i64 d5, q1, q8
+efd4d620 vsubhn.i32 d29, q2, q8
+ef948682 vsubhn.i32 d8, q10, q1
+efe2868c vsubhn.i64 d24, q9, q6
+efca068c vsubhn.i16 d16, q13, q6
+efde462c vsubhn.i32 d20, q7, q14
+EF902628 vsubhn.i32 d2, q0, q12
+EF9F062F UNDEFINED
+EF910621 UNDEFINED
+EF901624 vsubhn.i32 d1, q0, q10
+EFD0F680 vsubhn.i32 d31, q8, q0
+EF9F060F UNDEFINED
+EF9F06AF UNDEFINED
+EF94062E [ne] vsubhnne.i32 d0, q2, q15

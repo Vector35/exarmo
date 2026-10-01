@@ -1,0 +1,90 @@
+// SUB_32_addsub_shift sf=0|op=1|S=0|01011|shift=xx|0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Sub32AddsubShift: SUB  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// NegSub32AddsubShift: NEG  <Wd>, <Wm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+// form chosen on: Rn
+4B8C13E1 neg w1, w12, asr #0x4
+4B1B3FF4 neg w20, w27, lsl #0xf
+4B564FF9 neg w25, w22, lsr #0x13
+4B5C67F1 neg w17, w28, lsr #0x19
+4B4307F4 neg w20, w3, lsr #0x1
+4B8253E5 neg w5, w2, asr #0x14
+4B0F6BFB neg w27, w15, lsl #0x1a
+4B807FE3 neg w3, w0, asr #0x1f
+4B492FEB neg w11, w9, lsr #0xb
+4B125FF2 neg w18, w18, lsl #0x17
+4B582FE5 neg w5, w24, lsr #0xb
+4B1F07E4 neg w4, wzr, lsl #0x1
+4B4F77FD neg w29, w15, lsr #0x1d
+4B101FFD neg w29, w16, lsl #0x7
+4B5A2BE0 neg w0, w26, lsr #0xa
+4B123FE8 neg w8, w18, lsl #0xf
+4B896360 sub w0, w27, w9, asr #0x18
+4B59610A sub w10, w8, w25, lsr #0x18
+4B1735A6 sub w6, w13, w23, lsl #0xd
+4B084F2C sub w12, w25, w8, lsl #0x13
+4B074710 sub w16, w24, w7, lsl #0x11
+4B0336E0 sub w0, w23, w3, lsl #0xd
+4B964787 sub w7, w28, w22, asr #0x11
+4B4E2EC7 sub w7, w22, w14, lsr #0xb
+4B0C3215 sub w21, w16, w12, lsl #0xc
+4B883BB8 sub w24, w29, w8, asr #0xe
+4B1000B7 sub w23, w5, w16
+4B980EB4 sub w20, w21, w24, asr #0x3
+4B4A2DA2 sub w2, w13, w10, lsr #0xb
+4B9607D9 sub w25, w30, w22, asr #0x1
+4B82485D sub w29, w2, w2, asr #0x12
+4B860FD1 sub w17, w30, w6, asr #0x3
+4B8C101F sub wzr, w0, w12, asr #0x4
+4BCCFFE1 UNDEFINED
+4B8C13FF neg wzr, w12, asr #0x4
+4B8C83E1 UNDEFINED
+4B8C43E1 neg w1, w12, asr #0x10
+4B8C23E1 neg w1, w12, asr #0x8
+4B8C0BE1 neg w1, w12, asr #0x2
+4B0337E0 neg w0, w3, lsl #0xd
+
+// SUB_64_addsub_shift sf=1|op=1|S=0|01011|shift=xx|0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Sub64AddsubShift: SUB  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// NegSub64AddsubShift: NEG  <Xd>, <Xm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+// form chosen on: Rn
+CB9017FA neg x26, x16, asr #0x5
+CB191FEC neg x12, x25, lsl #0x7
+CB0C53F2 neg x18, x12, lsl #0x14
+CB9E2FFC neg x28, lr, asr #0xb
+CB4493E3 neg x3, x4, lsr #0x24
+CB49DBEA neg x10, x9, lsr #0x36
+CB4C1FFE neg lr, x12, lsr #0x7
+CB4F5FFC neg x28, x15, lsr #0x17
+CB80C3F8 neg x24, x0, asr #0x30
+CB1D03E6 neg x6, fp
+CB1D97E5 neg x5, fp, lsl #0x25
+CB5763EF neg x15, x23, lsr #0x18
+CB8763F8 neg x24, x7, asr #0x18
+CB06F7E7 neg x7, x6, lsl #0x3d
+CB5583F6 neg x22, x21, lsr #0x20
+CB9ABFED neg x13, x26, asr #0x2f
+CB162AD1 sub x17, x22, x22, lsl #0xa
+CB8219D3 sub x19, x14, x2, asr #0x6
+CB8685F6 sub x22, x15, x6, asr #0x21
+CB4EB552 sub x18, x10, x14, lsr #0x2d
+CB5EEC79 sub x25, x3, lr, lsr #0x3b
+CB48761D sub fp, x16, x8, lsr #0x1d
+CB4FC9F5 sub x21, x15, x15, lsr #0x32
+CB5EF283 sub x3, x20, lr, lsr #0x3c
+CB15CA3F sub xzr, x17, x21, lsl #0x32
+CB14B9A1 sub x1, x13, x20, lsl #0x2e
+CB18BCF9 sub x25, x7, x24, lsl #0x2f
+CB1306F0 sub x16, x23, x19, lsl #0x1
+CB5CB908 sub x8, x8, x28, lsr #0x2e
+CB4E126D sub x13, x19, x14, lsr #0x4
+CB8CE43E sub lr, x1, x12, asr #0x39
+CB882A73 sub x19, x19, x8, asr #0xa
+CB9FFC00 sub x0, x0, xzr, asr #0x3f
+CBD017FA UNDEFINED
+CB9017F0 neg x16, x16, asr #0x5
+CB9043FA neg x26, x16, asr #0x10
+CB9023FA neg x26, x16, asr #0x8
+CB900BFA neg x26, x16, asr #0x2
+CB06F5E7 sub x7, x15, x6, lsl #0x3d

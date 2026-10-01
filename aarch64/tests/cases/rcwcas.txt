@@ -1,0 +1,43 @@
+// RCWCAS_C64_rcwcomswap 0|S=0|011001|A=0|R=0|1|Rs=xxxxx|000010|Rn=xxxxx|Rt=xxxxx
+// RcwcasC64Rcwcomswap: RCWCAS  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19200805 rcwcas x0, x5, [x0]
+1920080C rcwcas x0, x12, [x0]
+19200813 rcwcas x0, x19, [x0]
+193F0BE0 rcwcas xzr, x0, [sp]
+1920081F rcwcas x0, xzr, [x0]
+19200800 rcwcas x0, x0, [x0]
+19210843 rcwcas x1, x3, [x2]
+
+// RCWCASA_C64_rcwcomswap 0|S=0|011001|A=1|R=0|1|Rs=xxxxx|000010|Rn=xxxxx|Rt=xxxxx
+// RcwcasaC64Rcwcomswap: RCWCASA  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19A00801 rcwcasa x0, x1, [x0]
+19A00808 rcwcasa x0, x8, [x0]
+19A0080F rcwcasa x0, x15, [x0]
+19BF0BE0 rcwcasa xzr, x0, [sp]
+19A0081F rcwcasa x0, xzr, [x0]
+19A00800 rcwcasa x0, x0, [x0]
+19A10843 rcwcasa x1, x3, [x2]
+
+// RCWCASAL_C64_rcwcomswap 0|S=0|011001|A=1|R=1|1|Rs=xxxxx|000010|Rn=xxxxx|Rt=xxxxx
+// RcwcasalC64Rcwcomswap: RCWCASAL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19E00806 rcwcasal x0, x6, [x0]
+19E0080D rcwcasal x0, x13, [x0]
+19E00814 rcwcasal x0, x20, [x0]
+19FF0BE0 rcwcasal xzr, x0, [sp]
+19E0081F rcwcasal x0, xzr, [x0]
+19E00800 rcwcasal x0, x0, [x0]
+19E10843 rcwcasal x1, x3, [x2]
+
+// RCWCASL_C64_rcwcomswap 0|S=0|011001|A=0|R=1|1|Rs=xxxxx|000010|Rn=xxxxx|Rt=xxxxx
+// RcwcaslC64Rcwcomswap: RCWCASL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19600803 rcwcasl x0, x3, [x0]
+1960080A rcwcasl x0, x10, [x0]
+19600811 rcwcasl x0, x17, [x0]
+197F0BE0 rcwcasl xzr, x0, [sp]
+1960081F rcwcasl x0, xzr, [x0]
+19600800 rcwcasl x0, x0, [x0]
+19610843 rcwcasl x1, x3, [x2]

@@ -1,0 +1,25 @@
+// VPMAX_i_A1 1111|0|01|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1010|N=x|Q=0|M=x|op=0|Vm=xxxx
+// VpmaxIA1: VPMAX{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f306ca8a vpmax.u8 d12, d22, d10
+f34eca8f vpmax.u8 d28, d30, d15
+f2098aa8 vpmax.s8 d8, d25, d24
+f35b8a28 vpmax.u16 d24, d11, d24
+f22b5a29 vpmax.s32 d5, d11, d25
+f3068a01 vpmax.u8 d8, d6, d1
+f26a9a29 vpmax.s32 d25, d10, d25
+f3626a8d vpmax.u32 d22, d18, d13
+F336CA8A UNDEFINED
+F2100A80 vpmax.s16 d0, d16, d0
+F30FFA84 vpmax.u8 d15, d31, d4
+F3084A82 vpmax.u8 d4, d24, d2
+F3042A80 vpmax.u8 d2, d20, d0
+F3011AA0 vpmax.u8 d1, d17, d16
+F236CA8A UNDEFINED
+F3000A2F vpmax.u8 d0, d0, d31
+F300FA8A vpmax.u8 d15, d16, d10
+F34F0A0A vpmax.u8 d16, d15, d10
+F34FFA8A vpmax.u8 d31, d31, d10

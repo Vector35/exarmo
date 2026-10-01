@@ -1,0 +1,43 @@
+// FRINT64Z_D_floatdp1 M=0|0|S=0|11110|ftype=01|10100|op=10|10000|Rn=xxxxx|Rd=xxxxx
+// Frint64zDFloatdp1: FRINT64Z  <Dd>, <Dn>
+// register fields: Rn, Rd
+1E694370 frint64z d16, d27
+1E69416A frint64z d10, d11
+1E694167 frint64z d7, d11
+1E69418C frint64z d12, d12
+1E694018 frint64z d24, d0
+1E6942C9 frint64z d9, d22
+1E694372 frint64z d18, d27
+1E69436B frint64z d11, d27
+1E694306 frint64z d6, d24
+1E69439B frint64z d27, d28
+1E69431D frint64z d29, d24
+1E69430B frint64z d11, d24
+1E694398 frint64z d24, d28
+1E694005 frint64z d5, d0
+1E694112 frint64z d18, d8
+1E69436F frint64z d15, d27
+1E6943E0 frint64z d0, d31
+1E69437F frint64z d31, d27
+
+// FRINT64Z_S_floatdp1 M=0|0|S=0|11110|ftype=00|10100|op=10|10000|Rn=xxxxx|Rd=xxxxx
+// Frint64zSFloatdp1: FRINT64Z  <Sd>, <Sn>
+// register fields: Rn, Rd
+1E2943DA frint64z s26, s30
+1E2940C5 frint64z s5, s6
+1E2940DD frint64z s29, s6
+1E2941AD frint64z s13, s13
+1E2943A9 frint64z s9, s29
+1E29420F frint64z s15, s16
+1E294239 frint64z s25, s17
+1E2941D2 frint64z s18, s14
+1E29409F frint64z s31, s4
+1E2942D5 frint64z s21, s22
+1E294091 frint64z s17, s4
+1E294207 frint64z s7, s16
+1E2942C1 frint64z s1, s22
+1E294390 frint64z s16, s28
+1E2940A8 frint64z s8, s5
+1E294171 frint64z s17, s11
+1E294000 frint64z s0, s0
+1E2943FA frint64z s26, s31

@@ -1,0 +1,56 @@
+// LDTP_Q_ldstpair_off opc=11|10|1|VR=1|0|10|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// LdtpQLdstpairOff: LDTP  <Qt1>, <Qt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+ED400006 ldtp q6, q0, [x0]
+ED40000D ldtp q13, q0, [x0]
+ED400014 ldtp q20, q0, [x0]
+ED7FFFE0 ldtp q0, q31, [sp, #-0x10]
+ED40001F ldtp q31, q0, [x0]
+ED400000 ldtp q0, q0, [x0] (unpredictable)
+ED600006 ldtp q6, q0, [x0, #-0x400]
+ED500006 ldtp q6, q0, [x0, #0x200]
+ED480006 ldtp q6, q0, [x0, #0x100]
+ED440006 ldtp q6, q0, [x0, #0x80]
+ED420006 ldtp q6, q0, [x0, #0x40]
+ED410006 ldtp q6, q0, [x0, #0x20]
+ED408006 ldtp q6, q0, [x0, #0x10]
+ED4000C6 ldtp q6, q0, [x6]
+ED400443 ldtp q3, q1, [x2]
+
+// LDTP_Q_ldstpair_post opc=11|10|1|VR=1|0|01|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// LdtpQLdstpairPost: LDTP  <Qt1>, <Qt2>, [<Xn|SP>], #<imm>
+// register fields: Rt2, Rn, Rt
+ECC00003 ldtp q3, q0, [x0], #0x0
+ECC0000A ldtp q10, q0, [x0], #0x0
+ECC00011 ldtp q17, q0, [x0], #0x0
+ECFFFFE0 ldtp q0, q31, [sp], #-0x10
+ECC0001F ldtp q31, q0, [x0], #0x0
+ECC00000 ldtp q0, q0, [x0], #0x0 (unpredictable)
+ECE00003 ldtp q3, q0, [x0], #-0x400
+ECD00003 ldtp q3, q0, [x0], #0x200
+ECC80003 ldtp q3, q0, [x0], #0x100
+ECC40003 ldtp q3, q0, [x0], #0x80
+ECC20003 ldtp q3, q0, [x0], #0x40
+ECC10003 ldtp q3, q0, [x0], #0x20
+ECC08003 ldtp q3, q0, [x0], #0x10
+ECC00063 ldtp q3, q0, [x3], #0x0
+ECC00443 ldtp q3, q1, [x2], #0x0
+
+// LDTP_Q_ldstpair_pre opc=11|10|1|VR=1|0|11|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// LdtpQLdstpairPre: LDTP  <Qt1>, <Qt2>, [<Xn|SP>, #<imm>]!
+// register fields: Rt2, Rn, Rt
+EDC00002 ldtp q2, q0, [x0, #0x0]!
+EDC00009 ldtp q9, q0, [x0, #0x0]!
+EDC00010 ldtp q16, q0, [x0, #0x0]!
+EDFFFFE0 ldtp q0, q31, [sp, #-0x10]!
+EDC0001F ldtp q31, q0, [x0, #0x0]!
+EDC00000 ldtp q0, q0, [x0, #0x0]! (unpredictable)
+EDE00002 ldtp q2, q0, [x0, #-0x400]!
+EDD00002 ldtp q2, q0, [x0, #0x200]!
+EDC80002 ldtp q2, q0, [x0, #0x100]!
+EDC40002 ldtp q2, q0, [x0, #0x80]!
+EDC20002 ldtp q2, q0, [x0, #0x40]!
+EDC10002 ldtp q2, q0, [x0, #0x20]!
+EDC08002 ldtp q2, q0, [x0, #0x10]!
+EDC00042 ldtp q2, q0, [x2, #0x0]!
+EDC00443 ldtp q3, q1, [x2, #0x0]!

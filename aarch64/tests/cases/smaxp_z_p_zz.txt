@@ -1,0 +1,16 @@
+// smaxp_z_p_zz_ 010|0010|0|size=xx|0|10|opc=10|U=0|10|1|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SmaxpZPZz: SMAXP  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+4494A4A5 smaxp z5.s, p1/m, z5.s, z5.s
+4454B614 smaxp z20.h, p5/m, z20.h, z16.h
+4454AEDD smaxp z29.h, p3/m, z29.h, z22.h
+4454A6CD smaxp z13.h, p1/m, z13.h, z22.h
+44D4B59B smaxp z27.d, p5/m, z27.d, z12.d
+44D4A434 smaxp z20.d, p1/m, z20.d, z1.d
+4414B46D smaxp z13.b, p5/m, z13.b, z3.b
+4414A55D smaxp z29.b, p1/m, z29.b, z10.b
+4494A000 smaxp z0.s, p0/m, z0.s, z0.s
+4494ABFF smaxp z31.s, p2/m, z31.s, z31.s
+4494B0A5 smaxp z5.s, p4/m, z5.s, z5.s
+4494B8A5 smaxp z5.s, p6/m, z5.s, z5.s
+4494BCA5 smaxp z5.s, p7/m, z5.s, z5.s

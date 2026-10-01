@@ -1,0 +1,48 @@
+// fmlal_za_zzi_1 1|10|0000|1|10|00|Zm=xxxx|i3h=x|Rv=xx|1|i3l=xx|Zn=xxxxx|op=0|S=0|off3=xxx
+// FmlalZaZzi1: FMLAL  ZA.S[<Wv>, <offs1>:<offs2>], <Zn>.H, <Zm>.H[<index>]
+// read together by <index>: i3h, i3l
+// register fields: Zm, Rv, Zn
+C1801005 fmlal za.s[w8, 10:11], z0.h, z0.h[0]
+C1801021 fmlal za.s[w8, 2:3], z1.h, z0.h[0]
+C1801044 fmlal za.s[w8, 8:9], z2.h, z0.h[0]
+C18FB7E0 fmlal za.s[w9, 0:1], z31.h, z15.h[5]
+C1805802 fmlal za.s[w10, 4:5], z0.h, z0.h[2]
+C1807C03 fmlal za.s[w11, 6:7], z0.h, z0.h[3]
+C1801006 fmlal za.s[w8, 12:13], z0.h, z0.h[0]
+C1801007 fmlal za.s[w8, 14:15], z0.h, z0.h[0]
+C1801405 fmlal za.s[w8, 10:11], z0.h, z0.h[1]
+C1809005 fmlal za.s[w8, 10:11], z0.h, z0.h[4]
+C1809805 fmlal za.s[w8, 10:11], z0.h, z0.h[6]
+C1809C05 fmlal za.s[w8, 10:11], z0.h, z0.h[7]
+
+// fmlal_za_zzi_2xi 1|10|0000|1|10|01|Zm=xxxx|0|Rv=xx|1|i3h=xx|Zn=xxxx|0|op=0|S=0|i3l=x|off2=xx
+// FmlalZaZzi2xi: FMLAL  ZA.S[<Wv>, <offs1>:<offs2>{, VGx2}], { <Zn1>.H-<Zn2>.H }, <Zm>.H[<index>]
+// read together by <index>: i3h, i3l
+// register fields: Zm, Rv, Zn
+C1901001 fmlal za.s[w8, 2:3, vgx2], {z0.h-z1.h}, z0.h[0]
+C1901040 fmlal za.s[w8, 0:1, vgx2], {z2.h-z3.h}, z0.h[0]
+C1901047 fmlal za.s[w8, 6:7, vgx2], {z2.h-z3.h}, z0.h[1]
+C19F37C2 fmlal za.s[w9, 4:5, vgx2], {z30.h-z31.h}, z15.h[2]
+C1905801 fmlal za.s[w10, 2:3, vgx2], {z0.h-z1.h}, z0.h[4]
+C1907C01 fmlal za.s[w11, 2:3, vgx2], {z0.h-z1.h}, z0.h[6]
+C1901405 fmlal za.s[w8, 2:3, vgx2], {z0.h-z1.h}, z0.h[3]
+C1901805 fmlal za.s[w8, 2:3, vgx2], {z0.h-z1.h}, z0.h[5]
+C1901C05 fmlal za.s[w8, 2:3, vgx2], {z0.h-z1.h}, z0.h[7]
+C19150C1 fmlal za.s[w10, 2:3, vgx2], {z6.h-z7.h}, z1.h[0]
+
+// fmlal_za_zzi_4xi 1|10|0000|1|10|01|Zm=xxxx|1|Rv=xx|1|i3h=xx|Zn=xxx|00|op=0|S=0|i3l=x|off2=xx
+// FmlalZaZzi4xi: FMLAL  ZA.S[<Wv>, <offs1>:<offs2>{, VGx4}], { <Zn1>.H-<Zn4>.H }, <Zm>.H[<index>]
+// read together by <index>: i3h, i3l
+// register fields: Zm, Rv, Zn
+C1909000 fmlal za.s[w8, 0:1, vgx4], {z0.h-z3.h}, z0.h[0]
+C1909007 fmlal za.s[w8, 6:7, vgx4], {z0.h-z3.h}, z0.h[1]
+C1909085 fmlal za.s[w8, 2:3, vgx4], {z4.h-z7.h}, z0.h[1]
+C19FB502 fmlal za.s[w9, 4:5, vgx4], {z8.h-z11.h}, z15.h[2]
+C190D980 fmlal za.s[w10, 0:1, vgx4], {z12.h-z15.h}, z0.h[4]
+C190FE00 fmlal za.s[w11, 0:1, vgx4], {z16.h-z19.h}, z0.h[6]
+C1909280 fmlal za.s[w8, 0:1, vgx4], {z20.h-z23.h}, z0.h[0]
+C1909300 fmlal za.s[w8, 0:1, vgx4], {z24.h-z27.h}, z0.h[0]
+C1909380 fmlal za.s[w8, 0:1, vgx4], {z28.h-z31.h}, z0.h[0]
+C1909404 fmlal za.s[w8, 0:1, vgx4], {z0.h-z3.h}, z0.h[3]
+C1909804 fmlal za.s[w8, 0:1, vgx4], {z0.h-z3.h}, z0.h[5]
+C1909C04 fmlal za.s[w8, 0:1, vgx4], {z0.h-z3.h}, z0.h[7]

@@ -1,0 +1,14 @@
+// bfscale_z_p_zz_ 011|0010|1|size=00|0|0|opc=1001|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// BfscaleZPZz: BFSCALE  <Zdn>.H, <Pg>/M, <Zdn>.H, <Zm>.H
+// register fields: Pg, Zm, Zdn
+65098006 bfscale z6.h, p0/m, z6.h, z0.h
+6509800D bfscale z13.h, p0/m, z13.h, z0.h
+65098014 bfscale z20.h, p0/m, z20.h, z0.h
+650987E0 bfscale z0.h, p1/m, z0.h, z31.h
+6509881F bfscale z31.h, p2/m, z31.h, z0.h
+65098C06 bfscale z6.h, p3/m, z6.h, z0.h
+65099006 bfscale z6.h, p4/m, z6.h, z0.h
+65099406 bfscale z6.h, p5/m, z6.h, z0.h
+65099806 bfscale z6.h, p6/m, z6.h, z0.h
+65099C06 bfscale z6.h, p7/m, z6.h, z0.h
+65098000 bfscale z0.h, p0/m, z0.h, z0.h

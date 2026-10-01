@@ -1,0 +1,20 @@
+// VFMA_bf_T1_Q 111|1|11|0|op1=00|D=x|op2=11|Vn=xxxx|Vd=xxxx|1|op3=0|0|op4=0|N=x|Q=x|M=x|U=1|Vm=xxxx
+// VfmaBfT1Q: VFMA<bt>{<q>}.BF16  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+fc386872 vfmat.bf16 q3, q4, q9
+fc302890 vfmab.bf16 q1, q8, q0
+fc34a81e vfmab.bf16 q5, q2, q7
+fc7c4814 vfmab.bf16 q10, q6, q2
+fc3c88b4 vfmab.bf16 q4, q14, q10
+fc7a483e vfmab.bf16 q10, q5, q15
+fc74881e vfmab.bf16 q12, q2, q7
+fc36681c vfmab.bf16 q3, q3, q6
+FC320878 vfmat.bf16 q0, q1, q12
+FC300870 vfmat.bf16 q0, q0, q8
+FC3FF87F UNDEFINED
+FC311871 UNDEFINED
+FC3FF85F UNDEFINED
+FC780872 vfmat.bf16 q8, q4, q9
+FC7FF8FF UNDEFINED

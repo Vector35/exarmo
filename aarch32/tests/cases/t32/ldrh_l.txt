@@ -1,0 +1,25 @@
+// LDRH_l_T1 111|1100|0|U=x|size=01|L=1|1111|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrhLT1: LDRH{<c>}{<q>}  <Rt>, <label>
+// register fields: Rt
+// IT state read: condition
+f8bf9d9f ldrh r9, 0x10da3
+f8bf9b34 ldrh r9, 0x10b38
+f83fe05e ldrh lr, 0xffa6
+f8bf57aa ldrh r5, 0x107ae
+f83fe9c2 ldrh lr, 0xf642
+f8bf0d8f ldrh r0, 0x10d93
+F8BF9000 ldrh r9, 0x10004
+F8BF9FFF ldrh r9, 0x11003
+F8BF9800 ldrh r9, 0x10804
+F8BF9400 ldrh r9, 0x10404
+F8BF9200 ldrh r9, 0x10204
+F8BF9100 ldrh r9, 0x10104
+F8BF9080 ldrh r9, 0x10084
+F8BF9040 ldrh r9, 0x10044
+F8BF9020 ldrh r9, 0x10024
+F8BF9010 ldrh r9, 0x10014
+F8BF9008 ldrh r9, 0x1000c
+F8BF9004 ldrh r9, 0x10008
+F8BF9002 ldrh r9, 0x10006
+F8BF9001 ldrh r9, 0x10005
+F8BF9D9F [ne] ldrhne r9, 0x10da3

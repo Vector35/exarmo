@@ -1,0 +1,15 @@
+// bext_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|10|11|opc=00|Zn=xxxxx|Zd=xxxxx
+// BextZZz: BEXT  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+4559B2A4 bext z4.h, z21.h, z25.h
+459DB054 bext z20.s, z2.s, z29.s
+4588B061 bext z1.s, z3.s, z8.s
+454AB340 bext z0.h, z26.h, z10.h
+4503B0C9 bext z9.b, z6.b, z3.b
+4544B163 bext z3.h, z11.h, z4.h
+459AB2EF bext z15.s, z23.s, z26.s
+45D1B22D bext z13.d, z17.d, z17.d
+4540B01F bext z31.h, z0.h, z0.h
+455FB3E4 bext z4.h, z31.h, z31.h
+4559B2B9 bext z25.h, z21.h, z25.h
+4559B2B5 bext z21.h, z21.h, z25.h

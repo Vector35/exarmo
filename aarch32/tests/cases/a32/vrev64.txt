@@ -1,0 +1,35 @@
+// VREV64_A1_D 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|000|op=00|Q=0|M=x|0|Vm=xxxx
+// Vrev64A1D: VREV64{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f41022 vrev64.16 d17, d18
+f3b83003 vrev64.32 d3, d3
+f3f8a02c vrev64.32 d26, d28
+f3b01005 vrev64.8 d1, d5
+f3b0b027 vrev64.8 d11, d23
+f3f4b009 vrev64.16 d27, d9
+f3f8a022 vrev64.32 d26, d18
+F3FC1022 UNDEFINED
+F3F40020 vrev64.16 d16, d16
+F3F4F02F vrev64.16 d31, d31
+F3F48028 vrev64.16 d24, d24
+F3F44024 vrev64.16 d20, d20
+F3F42021 vrev64.16 d18, d17
+F3B40000 vrev64.16 d0, d0
+F3B4F00F vrev64.16 d15, d15
+
+// VREV64_A1_Q 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|000|op=00|Q=1|M=x|0|Vm=xxxx
+// Vrev64A1Q: VREV64{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f0604a vrev64.8 q11, q5
+f3f04064 vrev64.8 q10, q10
+F3B40040 vrev64.16 q0, q0
+F3F88048 vrev64.32 q12, q4
+F3FCF04F UNDEFINED
+F3F02042 vrev64.8 q9, q1
+F3F01041 UNDEFINED
+F3B00040 vrev64.8 q0, q0
+F3B0F04F UNDEFINED
+F3F00060 vrev64.8 q8, q8
+F3F0F06F UNDEFINED

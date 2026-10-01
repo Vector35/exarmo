@@ -1,0 +1,95 @@
+// ADR_A1 cond=xxxx|00|1|0|opc=100|S=0|Rn=1111|Rd=xxxx|imm12=xxxxxxxxxxxx
+// AdrA1: ADR{<c>}{<q>}  <Rd>, <label>
+// register fields: Rd
+// modified immediate <label>: imm12
+928fd0cc adrls sp, 0x100d4
+d28f18ee adrle r1, 0xef0008
+328f1155 adrcc r1, 0x4001001d
+228f0061 adrcs r0, 0x10069
+a28f300b adrge r3, 0x10013
+d28f562f adrle r5, 0x2f10008
+a28f34d5 adrge r3, 0xd5010008
+a28f1fd7 adrge r1, 0x10364
+// Binary Ninja's tests
+e28f0000 adr r0, 0x10008
+e28f0024 adr r0, 0x1002c
+e28f007b adr r0, 0x10083
+028FFFFF adreq pc, 0x10404
+F28FD0CC UNDEFINED
+828FD800 adrhi sp, 0x10008
+428FD400 adrmi sp, 0x10008
+128FD200 adrne sp, 0x10008
+928FD100 adrls sp, 0x10008
+928FD080 adrls sp, 0x10088
+928FD040 adrls sp, 0x10048
+928FD020 adrls sp, 0x10028
+928FD010 adrls sp, 0x10018
+928FD008 adrls sp, 0x10010
+928FD004 adrls sp, 0x1000c
+928FD002 adrls sp, 0x1000a
+928FD001 adrls sp, 0x10009
+928FD081 adrls sp, 0x10089
+928FD181 adrls sp, 0x40010028
+928FD281 adrls sp, 0x10010010
+928FD381 adrls sp, 0x401000a
+928FD481 adrls sp, 0x81010008
+928FD581 adrls sp, 0x20410008
+928FD681 adrls sp, 0x8110008
+928FD781 adrls sp, 0x2050008
+928FD881 adrls sp, 0x820008
+928FD981 adrls sp, 0x214008
+928FDA81 adrls sp, 0x91008
+928FDB81 adrls sp, 0x30408
+928FDC81 adrls sp, 0x18108
+928FDD81 adrls sp, 0x12048
+928FDE81 adrls sp, 0x10818
+928FDF81 adrls sp, 0x1020c
+
+// ADR_A2 cond=xxxx|00|1|0|opc=010|S=0|Rn=1111|Rd=xxxx|imm12=xxxxxxxxxxxx
+// SubAdrA2: SUB{<c>}{<q>}  <Rd>, PC, #<const>
+// AdrA2: ADR{<c>}{<q>}  <Rd>, <label>
+// register fields: Rd
+// modified immediate <const>: imm12
+// form chosen on: imm12
+224f01b5 adrcs r0, 0xc000ffdb
+e24f0dad adr r0, 0xd4c8
+724f59c3 adrvc r5, 0xffd04008
+124f93ce adrne r9, 0xc8010005
+324f03ec adrcc r0, 0x50010005
+624f9d61 adrvs r9, 0xe7c8
+724fccc3 adrvc r12, 0x3d08
+224f9410 adrcs r9, 0xf0010008
+// Binary Ninja's tests
+e24f0000 sub r0, pc, #0
+e24f0024 adr r0, 0xffe4
+024FFFFF adreq pc, 0xfc0c
+F24F59C3 UNDEFINED
+824F0800 adrhi r0, 0x10008
+424F0400 adrmi r0, 0x10008
+224F0200 adrcs r0, 0x10008
+224F0100 adrcs r0, 0x10008
+224F0080 adrcs r0, 0xff88
+224F0040 adrcs r0, 0xffc8
+224F0020 adrcs r0, 0xffe8
+224F0010 adrcs r0, 0xfff8
+224F0008 adrcs r0, 0x10000
+224F0004 adrcs r0, 0x10004
+224F0002 adrcs r0, 0x10006
+224F0001 adrcs r0, 0x10007
+224F0081 adrcs r0, 0xff87
+224F0181 adrcs r0, 0xc000ffe8
+224F0281 adrcs r0, 0xf0010000
+224F0381 adrcs r0, 0xfc010006
+224F0481 adrcs r0, 0x7f010008
+224F0581 adrcs r0, 0xdfc10008
+224F0681 adrcs r0, 0xf7f10008
+224F0781 adrcs r0, 0xfdfd0008
+224F0881 adrcs r0, 0xff800008
+224F0981 adrcs r0, 0xffe0c008
+224F0A81 adrcs r0, 0xfff8f008
+224F0B81 adrcs r0, 0xfffefc08
+224F0C81 adrcs r0, 0x7f08
+224F0D81 adrcs r0, 0xdfc8
+224F0E81 adrcs r0, 0xf7f8
+224F0F81 adrcs r0, 0xfe04
+224F0000 subcs r0, pc, #0x0

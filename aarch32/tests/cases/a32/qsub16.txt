@@ -1,0 +1,18 @@
+// QSUB16_A1 cond=xxxx|011|00|op1=010|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=11|1|Rm=xxxx
+// Qsub16A1: QSUB16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+262d3c7b qsub16hs r3, sp, r11 (unpredictable)
+b62a917b qsub16lt r9, r10, r11 (unpredictable)
+e62edf72 qsub16 sp, lr, r2
+c628847f qsub16gt r8, r8, pc (unpredictable)
+1621fa74 qsub16ne pc, r1, r4 (unpredictable)
+162bf479 qsub16ne pc, r11, r9 (unpredictable)
+362cc378 qsub16lo r12, r12, r8 (unpredictable)
+662fd572 qsub16vs sp, pc, r2 (unpredictable)
+// Binary Ninja's tests
+c6221f73 qsub16gt r1, r2, r3
+e6221f73 qsub16 r1, r2, r3
+06200070 qsub16eq r0, r0, r0 (unpredictable)
+F62D3C7B UNALLOCATED
+862D387D qsub16hi r3, sp, sp (unpredictable)
+462D3273 qsub16mi r3, sp, r3 (unpredictable)

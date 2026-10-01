@@ -1,0 +1,50 @@
+// VSHL_r_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0100|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VshlRT1D: VSHL{<c>}{<q>}.<dt>  {<Dd>, }<Dm>, <Dn>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// read together by <Dn>: Vn, N
+// IT state read: condition
+ef40b48d vshl.s8 d27, d13, d16
+ef204409 vshl.s32 d4, d9, d0
+ef74e421 vshl.s64 d30, d17, d4
+ef435429 vshl.s8 d21, d25, d3
+ff57c426 vshl.u16 d28, d22, d7
+ff257429 vshl.u32 d7, d25, d5
+ff5f84af vshl.u16 d24, d31, d31
+ef3ba405 vshl.s64 d10, d5, d11
+EF580480 vshl.s16 d16, d0, d24
+FF42F488 vshl.u8 d31, d8, d18
+FF712484 vshl.u64 d18, d4, d17
+EF4F1402 vshl.s8 d17, d2, d15
+EF000480 vshl.s8 d0, d0, d16
+EF00F48F vshl.s8 d15, d15, d16
+EF4004A0 vshl.s8 d16, d16, d16
+EF40F48D vshl.s8 d31, d13, d16
+EF40B48D [ne] vshlne.s8 d27, d13, d16
+
+// VSHL_r_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0100|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VshlRT1Q: VSHL{<c>}{<q>}.<dt>  {<Qd>, }<Qm>, <Qn>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// read together by <Qn>: Vn, N
+// IT state read: condition
+ff0ac460 vshl.u8 q6, q8, q5
+ef1ee4c2 vshl.s16 q7, q1, q15
+ff1ee44e vshl.u16 q7, q7, q7
+ef6cc4e0 vshl.s32 q14, q8, q14
+ef24a4e2 vshl.s32 q5, q9, q10
+ef3e4446 vshl.s64 q2, q3, q7
+ef1ce4e6 vshl.s16 q7, q11, q14
+ff1e64ee vshl.u16 q3, q15, q15
+EF000468 vshl.s8 q0, q12, q0
+FF0FF46F UNDEFINED
+FF288464 vshl.u32 q4, q10, q4
+FF322440 vshl.u64 q1, q0, q1
+FF011461 UNDEFINED
+FF000460 vshl.u8 q0, q8, q0
+FF0FF44F UNDEFINED
+FF4004E0 vshl.u8 q8, q8, q8
+FF4FF4EF UNDEFINED
+FF0AC460 [ne] vshlne.u8 q6, q8, q5

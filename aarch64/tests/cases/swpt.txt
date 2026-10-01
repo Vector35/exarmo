@@ -1,0 +1,85 @@
+// SWPT_32_memop_unpriv 0|sz=0|011001|A=0|R=0|1|Rs=xxxxx|o3=1|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Swpt32MemopUnpriv: SWPT  <Ws>, <Wt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19208406 swpt w0, w6, [x0]
+1920840D swpt w0, w13, [x0]
+19208414 swpt w0, w20, [x0]
+193F87E0 swpt wzr, w0, [sp]
+1920841F swpt w0, wzr, [x0]
+19208400 swpt w0, w0, [x0]
+19218443 swpt w1, w3, [x2]
+
+// SWPT_64_memop_unpriv 0|sz=1|011001|A=0|R=0|1|Rs=xxxxx|o3=1|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Swpt64MemopUnpriv: SWPT  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+59208405 swpt x0, x5, [x0]
+5920840C swpt x0, x12, [x0]
+59208413 swpt x0, x19, [x0]
+593F87E0 swpt xzr, x0, [sp]
+5920841F swpt x0, xzr, [x0]
+59208400 swpt x0, x0, [x0]
+59218443 swpt x1, x3, [x2]
+
+// SWPTA_32_memop_unpriv 0|sz=0|011001|A=1|R=0|1|Rs=xxxxx|o3=1|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Swpta32MemopUnpriv: SWPTA  <Ws>, <Wt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19A08402 swpta w0, w2, [x0]
+19A08409 swpta w0, w9, [x0]
+19A08410 swpta w0, w16, [x0]
+19BF87E0 swpta wzr, w0, [sp]
+19A0841F swpta w0, wzr, [x0]
+19A08400 swpta w0, w0, [x0]
+19A18443 swpta w1, w3, [x2]
+
+// SWPTA_64_memop_unpriv 0|sz=1|011001|A=1|R=0|1|Rs=xxxxx|o3=1|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Swpta64MemopUnpriv: SWPTA  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+59A08401 swpta x0, x1, [x0]
+59A08408 swpta x0, x8, [x0]
+59A0840F swpta x0, x15, [x0]
+59BF87E0 swpta xzr, x0, [sp]
+59A0841F swpta x0, xzr, [x0]
+59A08400 swpta x0, x0, [x0]
+59A18443 swpta x1, x3, [x2]
+
+// SWPTAL_32_memop_unpriv 0|sz=0|011001|A=1|R=1|1|Rs=xxxxx|o3=1|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Swptal32MemopUnpriv: SWPTAL  <Ws>, <Wt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19E08400 swptal w0, w0, [x0]
+19E08407 swptal w0, w7, [x0]
+19E0840E swptal w0, w14, [x0]
+19FF87FF swptal wzr, wzr, [sp]
+19E18443 swptal w1, w3, [x2]
+
+// SWPTAL_64_memop_unpriv 0|sz=1|011001|A=1|R=1|1|Rs=xxxxx|o3=1|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Swptal64MemopUnpriv: SWPTAL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+59E08406 swptal x0, x6, [x0]
+59E0840D swptal x0, x13, [x0]
+59E08414 swptal x0, x20, [x0]
+59FF87E0 swptal xzr, x0, [sp]
+59E0841F swptal x0, xzr, [x0]
+59E08400 swptal x0, x0, [x0]
+59E18443 swptal x1, x3, [x2]
+
+// SWPTL_32_memop_unpriv 0|sz=0|011001|A=0|R=1|1|Rs=xxxxx|o3=1|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Swptl32MemopUnpriv: SWPTL  <Ws>, <Wt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19608404 swptl w0, w4, [x0]
+1960840B swptl w0, w11, [x0]
+19608412 swptl w0, w18, [x0]
+197F87E0 swptl wzr, w0, [sp]
+1960841F swptl w0, wzr, [x0]
+19608400 swptl w0, w0, [x0]
+19618443 swptl w1, w3, [x2]
+
+// SWPTL_64_memop_unpriv 0|sz=1|011001|A=0|R=1|1|Rs=xxxxx|o3=1|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Swptl64MemopUnpriv: SWPTL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+59608403 swptl x0, x3, [x0]
+5960840A swptl x0, x10, [x0]
+59608411 swptl x0, x17, [x0]
+597F87E0 swptl xzr, x0, [sp]
+5960841F swptl x0, xzr, [x0]
+59608400 swptl x0, x0, [x0]
+59618443 swptl x1, x3, [x2]

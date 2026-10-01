@@ -1,0 +1,90 @@
+// STZ2G_64Soffset_ldsttags 1101|1|0|0|1|opc=11|1|imm9=xxxxxxxxx|op2=10|Rn=xxxxx|Rt=xxxxx
+// Stz2g64soffsetLdsttags: STZ2G  <Xt|SP>, [<Xn|SP>{, #<simm>}]
+// register fields: Rn, Rt
+D9EF79A4 stz2g x4, [x13, #0xf70]
+D9E87BD4 stz2g x20, [lr, #0x870]
+D9E9AB99 stz2g x25, [x28, #0x9a0]
+D9FB1932 stz2g x18, [x9, #-0x4f0]
+D9E66AAE stz2g x14, [x21, #0x660]
+D9F688B2 stz2g x18, [x5, #-0x980]
+D9F42BB0 stz2g x16, [fp, #-0xbe0]
+D9F0587D stz2g fp, [x3, #-0xfb0]
+D9F1B9C9 stz2g x9, [x14, #-0xe50]
+D9F05BDE stz2g lr, [lr, #-0xfb0]
+D9FBBB21 stz2g x1, [x25, #-0x450]
+D9FDFAAC stz2g x12, [x21, #-0x210]
+D9F12AC2 stz2g x2, [x22, #-0xee0]
+D9F5EA78 stz2g x24, [x19, #-0xa20]
+D9F269F7 stz2g x23, [x15, #-0xda0]
+D9FC1A91 stz2g x17, [x20, #-0x3f0]
+D9E00800 stz2g x0, [x0]
+D9FFFBFF stz2g sp, [sp, #-0x10]
+D9F009A4 stz2g x4, [x13, #-0x1000]
+D9E809A4 stz2g x4, [x13, #0x800]
+D9E409A4 stz2g x4, [x13, #0x400]
+D9E209A4 stz2g x4, [x13, #0x200]
+D9E109A4 stz2g x4, [x13, #0x100]
+D9E089A4 stz2g x4, [x13, #0x80]
+D9E049A4 stz2g x4, [x13, #0x40]
+D9E029A4 stz2g x4, [x13, #0x20]
+D9E019A4 stz2g x4, [x13, #0x10]
+
+// STZ2G_64Spost_ldsttags 1101|1|0|0|1|opc=11|1|imm9=xxxxxxxxx|op2=01|Rn=xxxxx|Rt=xxxxx
+// Stz2g64spostLdsttags: STZ2G  <Xt|SP>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+D9EB345A stz2g x26, [x2], #0xb30
+D9FED547 stz2g x7, [x10], #-0x130
+D9F9A69A stz2g x26, [x20], #-0x660
+D9EA0447 stz2g x7, [x2], #0xa00
+D9E02795 stz2g x21, [x28], #0x20
+D9E80676 stz2g x22, [x19], #0x800
+D9F13783 stz2g x3, [x28], #-0xed0
+D9F83771 stz2g x17, [x27], #-0x7d0
+D9E987D3 stz2g x19, [lr], #0x980
+D9EE9516 stz2g x22, [x8], #0xe90
+D9E3B47C stz2g x28, [x3], #0x3b0
+D9FF46BC stz2g x28, [x21], #-0xc0
+D9F59536 stz2g x22, [x9], #-0xa70
+D9F767B7 stz2g x23, [fp], #-0x8a0
+D9E40650 stz2g x16, [x18], #0x400
+D9E4A50F stz2g x15, [x8], #0x4a0
+D9E00400 stz2g x0, [x0], #0x0
+D9FFF7FF stz2g sp, [sp], #-0x10
+D9F0045A stz2g x26, [x2], #-0x1000
+D9E2045A stz2g x26, [x2], #0x200
+D9E1045A stz2g x26, [x2], #0x100
+D9E0845A stz2g x26, [x2], #0x80
+D9E0445A stz2g x26, [x2], #0x40
+D9E0145A stz2g x26, [x2], #0x10
+
+// STZ2G_64Spre_ldsttags 1101|1|0|0|1|opc=11|1|imm9=xxxxxxxxx|op2=11|Rn=xxxxx|Rt=xxxxx
+// Stz2g64spreLdsttags: STZ2G  <Xt|SP>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+D9E3FC1E stz2g lr, [x0, #0x3f0]!
+D9EE1D09 stz2g x9, [x8, #0xe10]!
+D9FA4FCB stz2g x11, [lr, #-0x5c0]!
+D9FCBC22 stz2g x2, [x1, #-0x350]!
+D9E59F16 stz2g x22, [x24, #0x590]!
+D9F78D5F stz2g sp, [x10, #-0x880]!
+D9E18CF6 stz2g x22, [x7, #0x180]!
+D9E29F91 stz2g x17, [x28, #0x290]!
+D9E59E65 stz2g x5, [x19, #0x590]!
+D9EAFF44 stz2g x4, [x26, #0xaf0]!
+D9F43F7E stz2g lr, [x27, #-0xbd0]!
+D9E19E71 stz2g x17, [x19, #0x190]!
+D9E3FD9C stz2g x28, [x12, #0x3f0]!
+D9FDCF30 stz2g x16, [x25, #-0x240]!
+D9FD4E11 stz2g x17, [x16, #-0x2c0]!
+D9F7FF62 stz2g x2, [x27, #-0x810]!
+D9E00FE0 stz2g x0, [sp, #0x0]!
+D9FFFC1E stz2g lr, [x0, #-0x10]!
+D9E3FC00 stz2g x0, [x0, #0x3f0]!
+D9F00C1E stz2g lr, [x0, #-0x1000]!
+D9E80C1E stz2g lr, [x0, #0x800]!
+D9E40C1E stz2g lr, [x0, #0x400]!
+D9E20C1E stz2g lr, [x0, #0x200]!
+D9E10C1E stz2g lr, [x0, #0x100]!
+D9E08C1E stz2g lr, [x0, #0x80]!
+D9E04C1E stz2g lr, [x0, #0x40]!
+D9E02C1E stz2g lr, [x0, #0x20]!
+D9E01C1E stz2g lr, [x0, #0x10]!

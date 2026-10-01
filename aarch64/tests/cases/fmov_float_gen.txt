@@ -1,0 +1,216 @@
+// FMOV_32H_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=00|opcode=110|000000|Rn=xxxxx|Rd=xxxxx
+// Fmov32hFloat2int: FMOV  <Wd>, <Hn>
+// register fields: Rn, Rd
+1EE60222 fmov w2, h17
+1EE60298 fmov w24, h20
+1EE602CA fmov w10, h22
+1EE601BA fmov w26, h13
+1EE6003F fmov wzr, h1
+1EE60287 fmov w7, h20
+1EE60245 fmov w5, h18
+1EE601C6 fmov w6, h14
+1EE600FF fmov wzr, h7
+1EE60119 fmov w25, h8
+1EE601DD fmov w29, h14
+1EE602DF fmov wzr, h22
+1EE6014E fmov w14, h10
+1EE60195 fmov w21, h12
+1EE60217 fmov w23, h16
+1EE60272 fmov w18, h19
+1EE60000 fmov w0, h0
+1EE603E2 fmov w2, h31
+
+// FMOV_32S_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=00|opcode=110|000000|Rn=xxxxx|Rd=xxxxx
+// Fmov32sFloat2int: FMOV  <Wd>, <Sn>
+// register fields: Rn, Rd
+1E2602EA fmov w10, s23
+1E2602EC fmov w12, s23
+1E260088 fmov w8, s4
+1E260385 fmov w5, s28
+1E26036C fmov w12, s27
+1E260365 fmov w5, s27
+1E260211 fmov w17, s16
+1E260015 fmov w21, s0
+1E2601DB fmov w27, s14
+1E26027C fmov w28, s19
+1E2601B4 fmov w20, s13
+1E2602C8 fmov w8, s22
+1E2600B8 fmov w24, s5
+1E2601FC fmov w28, s15
+1E2601C7 fmov w7, s14
+1E2602F7 fmov w23, s23
+1E2603E0 fmov w0, s31
+1E2602FF fmov wzr, s23
+
+// FMOV_64D_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=00|opcode=110|000000|Rn=xxxxx|Rd=xxxxx
+// Fmov64dFloat2int: FMOV  <Xd>, <Dn>
+// register fields: Rn, Rd
+9E6603F9 fmov x25, d31
+9E660315 fmov x21, d24
+9E66001A fmov x26, d0
+9E6602A5 fmov x5, d21
+9E660066 fmov x6, d3
+9E660068 fmov x8, d3
+9E6601C3 fmov x3, d14
+9E660317 fmov x23, d24
+9E6601FA fmov x26, d15
+9E660060 fmov x0, d3
+9E6603A8 fmov x8, d29
+9E66016B fmov x11, d11
+9E660122 fmov x2, d9
+9E66028A fmov x10, d20
+9E6602B6 fmov x22, d21
+9E6601B7 fmov x23, d13
+9E6603FF fmov xzr, d31
+
+// FMOV_64H_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=00|opcode=110|000000|Rn=xxxxx|Rd=xxxxx
+// Fmov64hFloat2int: FMOV  <Xd>, <Hn>
+// register fields: Rn, Rd
+9EE6017A fmov x26, h11
+9EE60075 fmov x21, h3
+9EE602A3 fmov x3, h21
+9EE603CF fmov x15, h30
+9EE6011B fmov x27, h8
+9EE60039 fmov x25, h1
+9EE6035A fmov x26, h26
+9EE602DF fmov xzr, h22
+9EE60153 fmov x19, h10
+9EE60250 fmov x16, h18
+9EE6010A fmov x10, h8
+9EE6000F fmov x15, h0
+9EE60396 fmov x22, h28
+9EE6034C fmov x12, h26
+9EE603BE fmov lr, h29
+9EE60125 fmov x5, h9
+9EE603E0 fmov x0, h31
+
+// FMOV_64VX_float2int sf=1|0|S=0|11110|ftype=10|1|rmode=01|opcode=110|000000|Rn=xxxxx|Rd=xxxxx
+// Fmov64vxFloat2int: FMOV  <Xd>, <Vn>.D[1]
+// register fields: Rn, Rd
+9EAE0384 fmov x4, v28.d[1]
+9EAE0107 fmov x7, v8.d[1]
+9EAE02E4 fmov x4, v23.d[1]
+9EAE02AF fmov x15, v21.d[1]
+9EAE0351 fmov x17, v26.d[1]
+9EAE0335 fmov x21, v25.d[1]
+9EAE0320 fmov x0, v25.d[1]
+9EAE0192 fmov x18, v12.d[1]
+9EAE00EA fmov x10, v7.d[1]
+9EAE0207 fmov x7, v16.d[1]
+9EAE00E2 fmov x2, v7.d[1]
+9EAE0161 fmov x1, v11.d[1]
+9EAE03EE fmov x14, v31.d[1]
+9EAE026D fmov x13, v19.d[1]
+9EAE0088 fmov x8, v4.d[1]
+9EAE0350 fmov x16, v26.d[1]
+9EAE001F fmov xzr, v0.d[1]
+9EAE039C fmov x28, v28.d[1]
+
+// FMOV_D64_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=00|opcode=111|000000|Rn=xxxxx|Rd=xxxxx
+// FmovD64Float2int: FMOV  <Dd>, <Xn>
+// register fields: Rn, Rd
+9E670013 fmov d19, x0
+9E6702A8 fmov d8, x21
+9E6703F6 fmov d22, xzr
+9E6700CD fmov d13, x6
+9E670198 fmov d24, x12
+9E6701D7 fmov d23, x14
+9E6703B4 fmov d20, fp
+9E6700A1 fmov d1, x5
+9E67017F fmov d31, x11
+9E670237 fmov d23, x17
+9E670134 fmov d20, x9
+9E670269 fmov d9, x19
+9E6703E7 fmov d7, xzr
+9E6702F4 fmov d20, x23
+9E6702BE fmov d30, x21
+9E67004D fmov d13, x2
+9E670000 fmov d0, x0
+
+// FMOV_H32_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=00|opcode=111|000000|Rn=xxxxx|Rd=xxxxx
+// FmovH32Float2int: FMOV  <Hd>, <Wn>
+// register fields: Rn, Rd
+1EE7027C fmov h28, w19
+1EE700A2 fmov h2, w5
+1EE70112 fmov h18, w8
+1EE70179 fmov h25, w11
+1EE70221 fmov h1, w17
+1EE70211 fmov h17, w16
+1EE700A4 fmov h4, w5
+1EE70252 fmov h18, w18
+1EE70355 fmov h21, w26
+1EE702EA fmov h10, w23
+1EE70009 fmov h9, w0
+1EE703FB fmov h27, wzr
+1EE701D2 fmov h18, w14
+1EE7033A fmov h26, w25
+1EE70167 fmov h7, w11
+1EE70024 fmov h4, w1
+1EE70260 fmov h0, w19
+1EE7027F fmov h31, w19
+
+// FMOV_H64_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=00|opcode=111|000000|Rn=xxxxx|Rd=xxxxx
+// FmovH64Float2int: FMOV  <Hd>, <Xn>
+// register fields: Rn, Rd
+9EE701CA fmov h10, x14
+9EE703A9 fmov h9, fp
+9EE70153 fmov h19, x10
+9EE703B4 fmov h20, fp
+9EE703FB fmov h27, xzr
+9EE70394 fmov h20, x28
+9EE701C8 fmov h8, x14
+9EE70102 fmov h2, x8
+9EE70141 fmov h1, x10
+9EE700D0 fmov h16, x6
+9EE701E3 fmov h3, x15
+9EE70297 fmov h23, x20
+9EE70157 fmov h23, x10
+9EE7035C fmov h28, x26
+9EE7032F fmov h15, x25
+9EE700A0 fmov h0, x5
+9EE7001F fmov h31, x0
+9EE701CE fmov h14, x14
+
+// FMOV_S32_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=00|opcode=111|000000|Rn=xxxxx|Rd=xxxxx
+// FmovS32Float2int: FMOV  <Sd>, <Wn>
+// register fields: Rn, Rd
+1E270051 fmov s17, w2
+1E2703E1 fmov s1, wzr
+1E2700ED fmov s13, w7
+1E270242 fmov s2, w18
+1E2700C7 fmov s7, w6
+1E2703E0 fmov s0, wzr
+1E2701F3 fmov s19, w15
+1E27008D fmov s13, w4
+1E27032F fmov s15, w25
+1E27034D fmov s13, w26
+1E2701C6 fmov s6, w14
+1E270220 fmov s0, w17
+1E270362 fmov s2, w27
+1E270353 fmov s19, w26
+1E2703C2 fmov s2, w30
+1E27039D fmov s29, w28
+1E27001F fmov s31, w0
+1E270042 fmov s2, w2
+
+// FMOV_V64I_float2int sf=1|0|S=0|11110|ftype=10|1|rmode=01|opcode=111|000000|Rn=xxxxx|Rd=xxxxx
+// FmovV64iFloat2int: FMOV  <Vd>.D[1], <Xn>
+// register fields: Rn, Rd
+9EAF034E fmov v14.d[1], x26
+9EAF01DC fmov v28.d[1], x14
+9EAF01B7 fmov v23.d[1], x13
+9EAF03ED fmov v13.d[1], xzr
+9EAF00CC fmov v12.d[1], x6
+9EAF0243 fmov v3.d[1], x18
+9EAF03B7 fmov v23.d[1], fp
+9EAF02C6 fmov v6.d[1], x22
+9EAF03CA fmov v10.d[1], lr
+9EAF0227 fmov v7.d[1], x17
+9EAF026E fmov v14.d[1], x19
+9EAF004B fmov v11.d[1], x2
+9EAF01BC fmov v28.d[1], x13
+9EAF0111 fmov v17.d[1], x8
+9EAF036D fmov v13.d[1], x27
+9EAF00E8 fmov v8.d[1], x7
+9EAF0000 fmov v0.d[1], x0
+9EAF035F fmov v31.d[1], x26

@@ -1,0 +1,29 @@
+// dup_z_i_ 001|0010|1|size=xx|1|11|opc=00|0|11|sh=x|imm8=xxxxxxxx|Zd=xxxxx
+// DupZI: DUP  <Zd>.<T>, #<imm>{, <shift>}
+// MovZIDupZI: MOV  <Zd>.<T>, #<imm>{, <shift>}
+// register fields: Zd
+25F8F691 mov z17.d, #-0x4c, lsl #0x8
+25F8E805 mov z5.d, #0x40, lsl #0x8
+2578D8E1 mov z1.h, #-57
+2578C639 mov z25.h, #0x31
+25F8C8E9 mov z9.d, #0x47
+2578C66E mov z14.h, #0x33
+25B8D864 mov z4.s, #-61
+25B8E883 mov z3.s, #0x44, lsl #0x8
+25B8D2A7 mov z7.s, #-107
+2578CF2A mov z10.h, #0x79
+25F8EA6B mov z11.d, #0x53, lsl #0x8
+25F8EAC4 mov z4.d, #0x56, lsl #0x8
+25B8E61A mov z26.s, #0x30, lsl #0x8
+2578D140 mov z0.h, #-118
+25F8C597 mov z23.d, #0x2c
+2578DA1E mov z30.h, #-48
+2538C01F mov z31.b, #0x0
+25F8FFF1 mov z17.d, #-0x1, lsl #0x8
+25F8F011 mov z17.d, #-0x80, lsl #0x8
+25F8E411 mov z17.d, #0x20, lsl #0x8
+25F8E211 mov z17.d, #0x10, lsl #0x8
+25F8E111 mov z17.d, #0x8, lsl #0x8
+25F8E091 mov z17.d, #0x4, lsl #0x8
+25F8E051 mov z17.d, #0x2, lsl #0x8
+25F8E031 mov z17.d, #0x1, lsl #0x8

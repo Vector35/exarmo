@@ -1,0 +1,23 @@
+// fclamp_mz_zz_2 1|10|0000|1|size=xx|1|Zm=xxxxx|110|000|Zn=xxxxx|Zd=xxxx|op=0
+// FclampMzZz2: FCLAMP  { <Zd1>.<T>-<Zd2>.<T> }, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+C160C002 fclamp {z2.h-z3.h}, z0.h, z0.h
+C160C010 fclamp {z16.h-z17.h}, z0.h, z0.h
+C160C01E fclamp {z30.h-z31.h}, z0.h, z0.h
+C1BFC3E0 fclamp {z0.s-z1.s}, z31.s, z31.s
+C1E0C002 fclamp {z2.d-z3.d}, z0.d, z0.d
+C160C000 fclamp {z0.h-z1.h}, z0.h, z0.h
+C161C046 fclamp {z6.h-z7.h}, z2.h, z1.h
+
+// fclamp_mz_zz_4 1|10|0000|1|size=xx|1|Zm=xxxxx|110|010|Zn=xxxxx|Zd=xxx|0|op=0
+// FclampMzZz4: FCLAMP  { <Zd1>.<T>-<Zd4>.<T> }, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+C160C80C fclamp {z12.h-z15.h}, z0.h, z0.h
+C160C828 fclamp {z8.h-z11.h}, z1.h, z0.h
+C160C844 fclamp {z4.h-z7.h}, z2.h, z0.h
+C1BFCBE0 fclamp {z0.s-z3.s}, z31.s, z31.s
+C1E0C810 fclamp {z16.d-z19.d}, z0.d, z0.d
+C160C814 fclamp {z20.h-z23.h}, z0.h, z0.h
+C160C818 fclamp {z24.h-z27.h}, z0.h, z0.h
+C160C81C fclamp {z28.h-z31.h}, z0.h, z0.h
+C160C800 fclamp {z0.h-z3.h}, z0.h, z0.h

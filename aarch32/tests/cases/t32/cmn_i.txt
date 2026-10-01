@@ -1,0 +1,56 @@
+// CMN_i_T1 111|10|i=x|0|op1=1000|S=1|Rn=xxxx|0|imm3=xxx|Rd=1111|imm8=xxxxxxxx
+// CmnIT1: CMN{<c>}{<q>}  <Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn
+// IT state read: condition
+f1156faf cmn r5, #91750400
+f5166f6b cmn r6, #3760
+f5156ffd cmn r5, #2024
+f1141ff8 cmn r4, #16253176
+f5111f38 cmn r1, #3014656
+f5123fd7 cmn r2, #110080
+f5134f63 cmn r3, #58112
+f5163f99 cmn r6, #78336
+F1100F00 cmn r0, #0x0
+F11F2FFF cmn pc, #0xff00ff00 (unpredictable)
+F1155F80 cmn r5, #0x10000000
+F1157F40 cmn r5, #0x3000000
+F1156F20 cmn r5, #0xa000000
+F1156F10 cmn r5, #0x9000000
+F1156F08 cmn r5, #0x8800000
+F1156F04 cmn r5, #0x8400000
+F1156F02 cmn r5, #0x8200000
+F1156F01 cmn r5, #0x8100000
+F1150F00 cmn r5, #0x0
+F1150FFF cmn r5, #0xff
+F1151F00 cmn r5, #0x0
+F1151FFF cmn r5, #0xff00ff
+F1152F00 cmn r5, #0x0
+F1152FFF cmn r5, #0xff00ff00
+F1153F00 cmn r5, #0x0
+F1153FFF cmn r5, #0xffffffff
+F1154F00 cmn r5, #0x80000000
+F1154FFF cmn r5, #0x7f800000
+F1155F00 cmn r5, #0x20000000
+F1155FFF cmn r5, #0x1fe00000
+F1156F00 cmn r5, #0x8000000
+F1156FFF cmn r5, #0x7f80000
+F1157F00 cmn r5, #0x2000000
+F1157FFF cmn r5, #0x1fe0000
+F5150F00 cmn r5, #0x800000
+F5150FFF cmn r5, #0x7f8000
+F5151F00 cmn r5, #0x200000
+F5151FFF cmn r5, #0x1fe000
+F5152F00 cmn r5, #0x80000
+F5152FFF cmn r5, #0x7f800
+F5153F00 cmn r5, #0x20000
+F5153FFF cmn r5, #0x1fe00
+F5154F00 cmn r5, #0x8000
+F5154FFF cmn r5, #0x7f80
+F5155F00 cmn r5, #0x2000
+F5155FFF cmn r5, #0x1fe0
+F5156F00 cmn r5, #0x800
+F5156FFF cmn r5, #0x7f8
+F5157F00 cmn r5, #0x200
+F5157FFF cmn r5, #0x1fe
+F1156FAF [ne] cmnne r5, #0x5780000

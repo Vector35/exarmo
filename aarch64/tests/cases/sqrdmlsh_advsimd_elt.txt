@@ -1,0 +1,133 @@
+// SQRDMLSH_asimdelem_R 0|Q=x|U=1|0|111|1|size=xx|L=x|M=x|Rm=xxxx|11|S=1|1|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqrdmlshAsimdelemR: SQRDMLSH  <Vd>.<T>, <Vn>.<T>, <m>.<Ts>[<index>]
+// read together by <T>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+2FA1F379 sqrdmlsh v25.2s, v27.2s, v1.s[1]
+2F72F37F sqrdmlsh v31.4h, v27.4h, v2.h[3]
+2F76F180 sqrdmlsh v0.4h, v12.4h, v6.h[3]
+2FA5F8B5 sqrdmlsh v21.2s, v5.2s, v5.s[3]
+2F89F080 sqrdmlsh v0.2s, v4.2s, v9.s[0]
+2F4CF2A5 sqrdmlsh v5.4h, v21.4h, v12.h[0]
+6F7EF338 sqrdmlsh v24.8h, v25.8h, v14.h[3]
+2F43F1C9 sqrdmlsh v9.4h, v14.4h, v3.h[0]
+2F85F88F sqrdmlsh v15.2s, v4.2s, v5.s[2]
+2F68FA60 sqrdmlsh v0.4h, v19.4h, v8.h[6]
+6F94F9D0 sqrdmlsh v16.4s, v14.4s, v20.s[2]
+2FACF2BB sqrdmlsh v27.2s, v21.2s, v12.s[1]
+6FA6F958 sqrdmlsh v24.4s, v10.4s, v6.s[3]
+2F90F138 sqrdmlsh v24.2s, v9.2s, v16.s[0]
+6F85F3BE sqrdmlsh v30.4s, v29.4s, v5.s[0]
+6F50F3A6 sqrdmlsh v6.8h, v29.8h, v0.h[1]
+2FAFF019 sqrdmlsh v25.2s, v0.2s, v15.s[1]
+2FA1F3F9 sqrdmlsh v25.2s, v31.2s, v1.s[1]
+2F21F379 UNDEFINED
+2FE1F379 UNDEFINED
+2F01F379 UNDEFINED
+2F01FB79 UNDEFINED
+2F11F379 UNDEFINED
+2F11FB79 UNDEFINED
+2F21FB79 UNDEFINED
+2F31F379 UNDEFINED
+2F31FB79 UNDEFINED
+2F41FB7B sqrdmlsh v27.4h, v27.4h, v1.h[4]
+2F51FB79 sqrdmlsh v25.4h, v27.4h, v1.h[5]
+2F61F379 sqrdmlsh v25.4h, v27.4h, v1.h[2]
+2F71FB79 sqrdmlsh v25.4h, v27.4h, v1.h[7]
+2FB1F379 sqrdmlsh v25.2s, v27.2s, v17.s[1]
+2FB1FB79 sqrdmlsh v25.2s, v27.2s, v17.s[3]
+2FC1F379 UNDEFINED
+2FC1FB79 UNDEFINED
+2FD1F379 UNDEFINED
+2FD1FB79 UNDEFINED
+2FE1FB79 UNDEFINED
+2FF1F379 UNDEFINED
+2FF1FB79 UNDEFINED
+2F20F379 UNDEFINED
+2F2FF379 UNDEFINED
+2F30F379 UNDEFINED
+2F3FF379 UNDEFINED
+2F60F379 sqrdmlsh v25.4h, v27.4h, v0.h[2]
+2F6FF379 sqrdmlsh v25.4h, v27.4h, v15.h[2]
+2F7FF379 sqrdmlsh v25.4h, v27.4h, v15.h[3]
+2FA0F379 sqrdmlsh v25.2s, v27.2s, v0.s[1]
+2FBFF379 sqrdmlsh v25.2s, v27.2s, v31.s[1]
+2FE0F379 UNDEFINED
+2FEFF379 UNDEFINED
+2FF0F379 UNDEFINED
+2FFFF379 UNDEFINED
+6F21F379 UNDEFINED
+6FE1F379 UNDEFINED
+
+// SQRDMLSH_asisdelem_R 01|U=1|1|111|1|size=xx|L=x|M=x|Rm=xxxx|11|S=1|1|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqrdmlshAsisdelemR: SQRDMLSH  <V><d>, <V><n>, <m>.<Ts>[<index>]
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+7F68F3F5 sqrdmlsh h21, h31, v8.h[2]
+7F6EF313 sqrdmlsh h19, h24, v14.h[2]
+7F52F156 sqrdmlsh h22, h10, v2.h[1]
+7FAFFB96 sqrdmlsh s22, s28, v15.s[3]
+7F73F2D3 sqrdmlsh h19, h22, v3.h[3]
+7F46F340 sqrdmlsh h0, h26, v6.h[0]
+7F62F837 sqrdmlsh h23, h1, v2.h[6]
+7FB7F0A8 sqrdmlsh s8, s5, v23.s[1]
+7F7EF3C3 sqrdmlsh h3, h30, v14.h[3]
+7F91F8DA sqrdmlsh s26, s6, v17.s[2]
+7F6DFB59 sqrdmlsh h25, h26, v13.h[6]
+7F5DF3B4 sqrdmlsh h20, h29, v13.h[1]
+7FAAF2C7 sqrdmlsh s7, s22, v10.s[1]
+7F93F868 sqrdmlsh s8, s3, v19.s[2]
+7F9DF2F8 sqrdmlsh s24, s23, v29.s[0]
+7FBBF1E6 sqrdmlsh s6, s15, v27.s[1]
+7F60F01F sqrdmlsh h31, h0, v0.h[2]
+7F28F3F5 UNDEFINED
+7FE8F3F5 UNDEFINED
+7F08F3F5 UNDEFINED
+7F08FBF5 UNDEFINED
+7F18F3F5 UNDEFINED
+7F18FBF5 UNDEFINED
+7F28FBF5 UNDEFINED
+7F38F3F5 UNDEFINED
+7F38FBF5 UNDEFINED
+7F48FBFF sqrdmlsh h31, h31, v8.h[4]
+7F58FBF5 sqrdmlsh h21, h31, v8.h[5]
+7F78FBF5 sqrdmlsh h21, h31, v8.h[7]
+7F88F3F5 sqrdmlsh s21, s31, v8.s[0]
+7F88FBF5 sqrdmlsh s21, s31, v8.s[2]
+7FB8FBF5 sqrdmlsh s21, s31, v24.s[3]
+7FC8F3F5 UNDEFINED
+7FC8FBF5 UNDEFINED
+7FD8F3F5 UNDEFINED
+7FD8FBF5 UNDEFINED
+7FE8FBF5 UNDEFINED
+7FF8F3F5 UNDEFINED
+7FF8FBF5 UNDEFINED
+7F20F3F5 UNDEFINED
+7F2FF3F5 UNDEFINED
+7F30F3F5 UNDEFINED
+7F3FF3F5 UNDEFINED
+7F6FF3F5 sqrdmlsh h21, h31, v15.h[2]
+7F70F3F5 sqrdmlsh h21, h31, v0.h[3]
+7F7FF3F5 sqrdmlsh h21, h31, v15.h[3]
+7FA0F3F5 sqrdmlsh s21, s31, v0.s[1]
+7FB0F3F5 sqrdmlsh s21, s31, v16.s[1]
+7FBFF3F5 sqrdmlsh s21, s31, v31.s[1]
+7FE0F3F5 UNDEFINED
+7FEFF3F5 UNDEFINED
+7FF0F3F5 UNDEFINED
+7FFFF3F5 UNDEFINED
+7F28F3E0 UNDEFINED
+7F28F3FF UNDEFINED
+7FA8F3E0 sqrdmlsh s0, s31, v8.s[1]
+7FA8F3FF sqrdmlsh s31, s31, v8.s[1]
+7FE8F3E0 UNDEFINED
+7FE8F3FF UNDEFINED
+7F28F015 UNDEFINED
+7FA8F015 sqrdmlsh s21, s0, v8.s[1]
+7FA8F3F5 sqrdmlsh s21, s31, v8.s[1]
+7FE8F015 UNDEFINED
+7F64F3F5 sqrdmlsh h21, h31, v4.h[2]

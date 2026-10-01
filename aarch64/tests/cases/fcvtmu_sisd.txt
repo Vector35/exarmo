@@ -1,0 +1,39 @@
+// FCVTMU_sisd_32D sf=0|0|S=0|11110|ftype=01|1|rmode=10|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtmuSisd32d: FCVTMU  <Sd>, <Dn>
+// register fields: Rn, Rd
+1E750002 fcvtmu s2, d0
+1E750009 fcvtmu s9, d0
+1E750010 fcvtmu s16, d0
+1E7503E0 fcvtmu s0, d31
+1E75001F fcvtmu s31, d0
+1E750000 fcvtmu s0, d0
+
+// FCVTMU_sisd_32H sf=0|0|S=0|11110|ftype=11|1|rmode=10|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtmuSisd32h: FCVTMU  <Sd>, <Hn>
+// register fields: Rn, Rd
+1EF50005 fcvtmu s5, h0
+1EF5000C fcvtmu s12, h0
+1EF50013 fcvtmu s19, h0
+1EF503E0 fcvtmu s0, h31
+1EF5001F fcvtmu s31, h0
+1EF50000 fcvtmu s0, h0
+
+// FCVTMU_sisd_64H sf=1|0|S=0|11110|ftype=11|1|rmode=10|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtmuSisd64h: FCVTMU  <Dd>, <Hn>
+// register fields: Rn, Rd
+9EF50003 fcvtmu d3, h0
+9EF5000A fcvtmu d10, h0
+9EF50011 fcvtmu d17, h0
+9EF503E0 fcvtmu d0, h31
+9EF5001F fcvtmu d31, h0
+9EF50000 fcvtmu d0, h0
+
+// FCVTMU_sisd_64S sf=1|0|S=0|11110|ftype=00|1|rmode=10|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtmuSisd64s: FCVTMU  <Dd>, <Sn>
+// register fields: Rn, Rd
+9E350002 fcvtmu d2, s0
+9E350009 fcvtmu d9, s0
+9E350010 fcvtmu d16, s0
+9E3503E0 fcvtmu d0, s31
+9E35001F fcvtmu d31, s0
+9E350000 fcvtmu d0, s0

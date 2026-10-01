@@ -1,0 +1,18 @@
+// LDTNP_64_ldstnapair_offs opc=11|10|1|VR=0|0|00|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldtnp64LdstnapairOffs: LDTNP  <Xt1>, <Xt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+E8400004 ldtnp x4, x0, [x0]
+E840000B ldtnp x11, x0, [x0]
+E8400012 ldtnp x18, x0, [x0]
+E87FFFE0 ldtnp x0, xzr, [sp, #-0x8]
+E840001F ldtnp xzr, x0, [x0]
+E8400000 ldtnp x0, x0, [x0] (unpredictable)
+E8600004 ldtnp x4, x0, [x0, #-0x200]
+E8500004 ldtnp x4, x0, [x0, #0x100]
+E8480004 ldtnp x4, x0, [x0, #0x80]
+E8440004 ldtnp x4, x0, [x0, #0x40]
+E8420004 ldtnp x4, x0, [x0, #0x20]
+E8410004 ldtnp x4, x0, [x0, #0x10]
+E8408004 ldtnp x4, x0, [x0, #0x8]
+E8400084 ldtnp x4, x0, [x4]
+E8400443 ldtnp x3, x1, [x2]

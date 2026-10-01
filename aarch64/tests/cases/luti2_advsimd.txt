@@ -1,0 +1,27 @@
+// LUTI2_asimdtbl_L5 0|Q=1|001110|op2=10|0|Rm=xxxxx|0|len=xx|op=1|00|Rn=xxxxx|Rd=xxxxx
+// Luti2AsimdtblL5: LUTI2  <Vd>.16B, { <Vn>.16B }, <Vm>[<index>]
+// register fields: Rm, Rn, Rd
+4E801001 luti2 v1.16b, {v0.16b}, v0[0]
+4E801008 luti2 v8.16b, {v0.16b}, v0[0]
+4E80100F luti2 v15.16b, {v0.16b}, v0[0]
+4E9F33E0 luti2 v0.16b, {v31.16b}, v31[1]
+4E80501F luti2 v31.16b, {v0.16b}, v0[2]
+4E807001 luti2 v1.16b, {v0.16b}, v0[3]
+4E801000 luti2 v0.16b, {v0.16b}, v0[0]
+4E811043 luti2 v3.16b, {v2.16b}, v1[0]
+
+// LUTI2_asimdtbl_L6 0|Q=1|001110|op2=11|0|Rm=xxxxx|0|len=xx|op=x|00|Rn=xxxxx|Rd=xxxxx
+// Luti2AsimdtblL6: LUTI2  <Vd>.8H, { <Vn>.8H }, <Vm>[<index>]
+// read together by <index>: len, op
+// register fields: Rm, Rn, Rd
+4EC00000 luti2 v0.8h, {v0.8h}, v0[0]
+4EC00007 luti2 v7.8h, {v0.8h}, v0[0]
+4EC0000E luti2 v14.8h, {v0.8h}, v0[0]
+4EDF33FF luti2 v31.8h, {v31.8h}, v31[3]
+4EC04000 luti2 v0.8h, {v0.8h}, v0[4]
+4EC06000 luti2 v0.8h, {v0.8h}, v0[6]
+4EC01000 luti2 v0.8h, {v0.8h}, v0[1]
+4EC02000 luti2 v0.8h, {v0.8h}, v0[2]
+4EC05000 luti2 v0.8h, {v0.8h}, v0[5]
+4EC07000 luti2 v0.8h, {v0.8h}, v0[7]
+4EC10043 luti2 v3.8h, {v2.8h}, v1[0]

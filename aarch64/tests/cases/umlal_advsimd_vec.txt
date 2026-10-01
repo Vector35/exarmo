@@ -1,0 +1,29 @@
+// UMLAL_asimddiff_L 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|10|o1=0|0|00|Rn=xxxxx|Rd=xxxxx
+// UmlalAsimddiffL: UMLAL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// UmlalAsimddiffL2: UMLAL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+2E2980E0 umlal v0.8h, v7.8b, v9.8b
+6EAF80E3 umlal2 v3.2d, v7.4s, v15.4s
+2EA981E6 umlal v6.2d, v15.2s, v9.2s
+6EB68367 umlal2 v7.2d, v27.4s, v22.4s
+2E6781CE umlal v14.4s, v14.4h, v7.4h
+6E388175 umlal2 v21.8h, v11.16b, v24.16b
+2E7D8358 umlal v24.4s, v26.4h, v29.4h
+2E348141 umlal v1.8h, v10.8b, v20.8b
+2E6182A5 umlal v5.4s, v21.4h, v1.4h
+6E6B8029 umlal2 v9.4s, v1.8h, v11.8h
+6E2D816B umlal2 v11.8h, v11.16b, v13.16b
+6E6783EB umlal2 v11.4s, v31.8h, v7.8h
+2E3C80A7 umlal v7.8h, v5.8b, v28.8b
+2EA88017 umlal v23.2d, v0.2s, v8.2s
+6EB280E5 umlal2 v5.2d, v7.4s, v18.4s
+2E3083B6 umlal v22.8h, v29.8b, v16.8b
+2E2080FF umlal v31.8h, v7.8b, v0.8b
+2E3F80E0 umlal v0.8h, v7.8b, v31.8b
+2EE980E0 UNDEFINED
+6EE980E0 UNDEFINED
+2E298120 umlal v0.8h, v9.8b, v9.8b
+2E2980E9 umlal v9.8h, v7.8b, v9.8b
+6E2080FF umlal2 v31.8h, v7.16b, v0.16b

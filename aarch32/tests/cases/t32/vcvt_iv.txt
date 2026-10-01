@@ -1,0 +1,132 @@
+// VCVT_siv_T1_D 111011101|D=x|11|o1=1|opc2=101|Vd=xxxx|10|size=11|op=1|1|M=x|0|Vm=xxxx
+// VcvtSivT1D: VCVT{<c>}{<q>}.S32.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eebdabcb vcvt.s32.f64 s20, d11
+eefdfbca vcvt.s32.f64 s31, d10
+eefd9be1 vcvt.s32.f64 s19, d17
+eefd7bc7 vcvt.s32.f64 s15, d7
+eefd7bc8 vcvt.s32.f64 s15, d8
+eebd8bc0 vcvt.s32.f64 s16, d0
+eebd2be1 vcvt.s32.f64 s4, d17
+eebd2be8 vcvt.s32.f64 s4, d24
+EEBD0BCF vcvt.s32.f64 s0, d15
+EEBD4BC4 vcvt.s32.f64 s8, d4
+EEBD1BC2 vcvt.s32.f64 s2, d2
+EEBDFBE0 vcvt.s32.f64 s30, d16
+EEFD0BEF vcvt.s32.f64 s1, d31
+EEBDABCB [ne] vcvtne.s32.f64 s20, d11
+
+// VCVT_siv_T1_H 111011101|D=x|11|o1=1|opc2=101|Vd=xxxx|10|size=01|op=1|1|M=x|0|Vm=xxxx
+// VcvtSivT1H: VCVT{<c>}{<q>}.S32.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eebd49e1 vcvt.s32.f16 s8, s3
+eebd89cc vcvt.s32.f16 s16, s24
+eefd49c7 vcvt.s32.f16 s9, s14
+eebdb9cc vcvt.s32.f16 s22, s24
+eebde9ea vcvt.s32.f16 s28, s21
+eebd39c4 vcvt.s32.f16 s6, s8
+eefd29cb vcvt.s32.f16 s5, s22
+eebdf9c2 vcvt.s32.f16 s30, s4
+EEBD09E0 vcvt.s32.f16 s0, s1
+EEBD19EF vcvt.s32.f16 s2, s31
+EEBD09E8 vcvt.s32.f16 s0, s17
+EEFD09C0 vcvt.s32.f16 s1, s0
+EEFDF9CF vcvt.s32.f16 s31, s30
+EEBD49E0 vcvt.s32.f16 s8, s1
+EEBD49EF vcvt.s32.f16 s8, s31
+EEBD49E1 [ne] vcvtne.s32.f16 s8, s3 (unpredictable)
+
+// VCVT_siv_T1_S 111011101|D=x|11|o1=1|opc2=101|Vd=xxxx|10|size=10|op=1|1|M=x|0|Vm=xxxx
+// VcvtSivT1S: VCVT{<c>}{<q>}.S32.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eebd5aca vcvt.s32.f32 s10, s20
+eefdeac4 vcvt.s32.f32 s29, s8
+eebd3ae5 vcvt.s32.f32 s6, s11
+eebd6ac1 vcvt.s32.f32 s12, s2
+eebdeae2 vcvt.s32.f32 s28, s5
+eefdaae1 vcvt.s32.f32 s21, s3
+eebd6aea vcvt.s32.f32 s12, s21
+eebd7ace vcvt.s32.f32 s14, s28
+EEBD0AC0 vcvt.s32.f32 s0, s0
+EEBDFACF vcvt.s32.f32 s30, s30
+EEBD8AC8 vcvt.s32.f32 s16, s16
+EEBD4AC0 vcvt.s32.f32 s8, s0
+EEBD2ACF vcvt.s32.f32 s4, s30
+EEBD1AE0 vcvt.s32.f32 s2, s1
+EEBD0AEF vcvt.s32.f32 s0, s31
+EEBDFACA vcvt.s32.f32 s30, s20
+EEFD0ACA vcvt.s32.f32 s1, s20
+EEFDFACA vcvt.s32.f32 s31, s20
+EEBD5ACA [ne] vcvtne.s32.f32 s10, s20
+
+// VCVT_uiv_T1_D 111011101|D=x|11|o1=1|opc2=100|Vd=xxxx|10|size=11|op=1|1|M=x|0|Vm=xxxx
+// VcvtUivT1D: VCVT{<c>}{<q>}.U32.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eebcfbec vcvt.u32.f64 s30, d28
+eefc5be5 vcvt.u32.f64 s11, d21
+eebc3bcb vcvt.u32.f64 s6, d11
+eefc5bc7 vcvt.u32.f64 s11, d7
+eebcfbe4 vcvt.u32.f64 s30, d20
+eefc3be0 vcvt.u32.f64 s7, d16
+eefc9be3 vcvt.u32.f64 s19, d19
+eefc1be6 vcvt.u32.f64 s3, d22
+EEBC0BEF vcvt.u32.f64 s0, d31
+EEBC8BE8 vcvt.u32.f64 s16, d24
+EEBC4BE2 vcvt.u32.f64 s8, d18
+EEBC2BE1 vcvt.u32.f64 s4, d17
+EEBC0BC0 vcvt.u32.f64 s0, d0
+EEFC0BCF vcvt.u32.f64 s1, d15
+EEFCFBEF vcvt.u32.f64 s31, d31
+EEBCFBEC [ne] vcvtne.u32.f64 s30, d28
+
+// VCVT_uiv_T1_H 111011101|D=x|11|o1=1|opc2=100|Vd=xxxx|10|size=01|op=1|1|M=x|0|Vm=xxxx
+// VcvtUivT1H: VCVT{<c>}{<q>}.U32.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eefc19cd vcvt.u32.f16 s3, s26
+eefc09e9 vcvt.u32.f16 s1, s19
+eefc39cf vcvt.u32.f16 s7, s30
+eefc29e0 vcvt.u32.f16 s5, s1
+eebc79c0 vcvt.u32.f16 s14, s0
+eefc49e5 vcvt.u32.f16 s9, s11
+eebcd9ea vcvt.u32.f16 s26, s21
+eefc39e8 vcvt.u32.f16 s7, s17
+EEFCF9C4 vcvt.u32.f16 s31, s8
+EEFC89C2 vcvt.u32.f16 s17, s4
+EEBC09C1 vcvt.u32.f16 s0, s2
+EEBCF9EF vcvt.u32.f16 s30, s31
+EEFCF9CD vcvt.u32.f16 s31, s26
+EEFC19CD [ne] vcvtne.u32.f16 s3, s26 (unpredictable)
+
+// VCVT_uiv_T1_S 111011101|D=x|11|o1=1|opc2=100|Vd=xxxx|10|size=10|op=1|1|M=x|0|Vm=xxxx
+// VcvtUivT1S: VCVT{<c>}{<q>}.U32.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eebc7ace vcvt.u32.f32 s14, s28
+eefcdac1 vcvt.u32.f32 s27, s2
+eefcaaea vcvt.u32.f32 s21, s21
+eefcdae5 vcvt.u32.f32 s27, s11
+eebcbae8 vcvt.u32.f32 s22, s17
+eefc4ac0 vcvt.u32.f32 s9, s0
+eebc5ae2 vcvt.u32.f32 s10, s5
+eefcbae9 vcvt.u32.f32 s23, s19
+EEBC0ACF vcvt.u32.f32 s0, s30
+EEBCFAC4 vcvt.u32.f32 s30, s8
+EEBC8ACF vcvt.u32.f32 s16, s30
+EEBC2AE0 vcvt.u32.f32 s4, s1
+EEBC1AEF vcvt.u32.f32 s2, s31
+EEBC0ACE vcvt.u32.f32 s0, s28
+EEBCFACE vcvt.u32.f32 s30, s28
+EEFC0ACE vcvt.u32.f32 s1, s28
+EEFCFACE vcvt.u32.f32 s31, s28
+EEBC7ACE [ne] vcvtne.u32.f32 s14, s28

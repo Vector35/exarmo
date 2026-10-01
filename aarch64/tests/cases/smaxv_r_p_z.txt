@@ -1,0 +1,29 @@
+// smaxv_r_p_z_ 000|0010|0|size=xx|0|010|op=0|U=0|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// SmaxvRPZ: SMAXV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+04083307 smaxv b7, p4, z24.b
+04882C7A smaxv s26, p3, z3.s
+048822C4 smaxv s4, p0, z22.s
+0448386D smaxv h13, p6, z3.h
+04C82583 smaxv d3, p1, z12.d
+04482A13 smaxv h19, p2, z16.h
+04882F57 smaxv s23, p3, z26.s
+04482CDC smaxv h28, p3, z6.h
+044831E2 smaxv h2, p4, z15.h
+04483D1A smaxv h26, p7, z8.h
+04882CDD smaxv s29, p3, z6.s
+04C820C5 smaxv d5, p0, z6.d
+04C828AA smaxv d10, p2, z5.d
+04482C94 smaxv h20, p3, z4.h
+04482389 smaxv h9, p0, z28.h
+04883654 smaxv s20, p5, z18.s
+04083000 smaxv b0, p4, z0.b
+040833FF smaxv b31, p4, z31.b
+04483300 smaxv h0, p4, z24.h
+0448331F smaxv h31, p4, z24.h
+04883300 smaxv s0, p4, z24.s
+0488331F smaxv s31, p4, z24.s
+04C83300 smaxv d0, p4, z24.d
+04C8331F smaxv d31, p4, z24.d
+04083304 smaxv b4, p4, z24.b

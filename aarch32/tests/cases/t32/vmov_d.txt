@@ -1,0 +1,41 @@
+// VMOV_d_T1 111011000|D=1|0|op=1|Rt2=xxxx|Rt=xxxx|10|size=11|opc2=00|M=x|o3=1|Vm=xxxx
+// VmovDT1: VMOV{<c>}{<q>}  <Rt>, <Rt2>, <Dm>
+// read together by <Dm>: M, Vm
+// register fields: Rt2, Rt
+// IT state read: condition
+ec50eb3a vmov lr, r0, d26
+ec5c3b1f vmov r3, r12, d15
+ec583b39 vmov r3, r8, d25
+ec511b15 vmov r1, r1, d5 (unpredictable)
+ec541b3d vmov r1, r4, d29
+ec528b35 vmov r8, r2, d21
+ec577b3b vmov r7, r7, d27 (unpredictable)
+ec509b3e vmov r9, r0, d30
+EC5F0B30 vmov r0, pc, d16 (unpredictable)
+EC50FB38 vmov pc, r0, d24 (unpredictable)
+EC50EB34 vmov lr, r0, d20
+EC50EB32 vmov lr, r0, d18
+EC50EB31 vmov lr, r0, d17
+EC50EB10 vmov lr, r0, d0
+EC50EB30 vmov lr, r0, d16
+EC50EB3F vmov lr, r0, d31
+EC50EB3A [ne] vmovne lr, r0, d26
+
+// VMOV_tod_T1 111011000|D=1|0|op=0|Rt2=xxxx|Rt=xxxx|10|size=11|opc2=00|M=x|o3=1|Vm=xxxx
+// VmovTodT1: VMOV{<c>}{<q>}  <Dm>, <Rt>, <Rt2>
+// read together by <Dm>: M, Vm
+// register fields: Rt2, Rt
+// IT state read: condition
+ec4edb18 vmov d8, sp, lr
+ec458b3f vmov d31, r8, r5
+ec464b37 vmov d23, r4, r6
+ec4a6b34 vmov d20, r6, r10
+ec4e2b14 vmov d4, r2, lr
+ec43eb3d vmov d29, lr, r3
+ec4ddb10 vmov d0, sp, sp
+ec4b1b3b vmov d27, r1, r11
+EC400B12 vmov d2, r0, r0
+EC4FFB11 vmov d1, pc, pc (unpredictable)
+EC4EDB1F vmov d15, sp, lr
+EC4EDB30 vmov d16, sp, lr
+EC4EDB18 [ne] vmovne d8, sp, lr

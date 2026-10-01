@@ -1,0 +1,96 @@
+// FCVTNU_asimdmisc_R 0|Q=x|U=1|0|111|0|o2=0|sz=x|10000|1101|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FcvtnuAsimdmiscR: FCVTNU  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+6E21AADD fcvtnu v29.4s, v22.4s
+2E21A9F8 fcvtnu v24.2s, v15.2s
+6E21A97E fcvtnu v30.4s, v11.4s
+6E21AA45 fcvtnu v5.4s, v18.4s
+6E21A8DA fcvtnu v26.4s, v6.4s
+6E61A980 fcvtnu v0.2d, v12.2d
+6E21A918 fcvtnu v24.4s, v8.4s
+6E21AA85 fcvtnu v5.4s, v20.4s
+6E61AB23 fcvtnu v3.2d, v25.2d
+6E61A997 fcvtnu v23.2d, v12.2d
+6E21AA74 fcvtnu v20.4s, v19.4s
+6E21A90F fcvtnu v15.4s, v8.4s
+6E61A90E fcvtnu v14.2d, v8.2d
+2E21AA91 fcvtnu v17.2s, v20.2s
+6E61A9E8 fcvtnu v8.2d, v15.2d
+6E21ABD4 fcvtnu v20.4s, v30.4s
+6E21A81F fcvtnu v31.4s, v0.4s
+6E21ABFD fcvtnu v29.4s, v31.4s
+2E61AADD UNDEFINED
+6E21AAD6 fcvtnu v22.4s, v22.4s
+
+// FCVTNU_asimdmiscfp16_R 0|Q=x|U=1|0|111|0|o2=0|1111|00|1101|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FcvtnuAsimdmiscfp16R: FCVTNU  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+6E79A8A8 fcvtnu v8.8h, v5.8h
+2E79A84A fcvtnu v10.4h, v2.4h
+6E79ABEA fcvtnu v10.8h, v31.8h
+6E79A8F8 fcvtnu v24.8h, v7.8h
+6E79AB03 fcvtnu v3.8h, v24.8h
+2E79AB2C fcvtnu v12.4h, v25.4h
+2E79AB57 fcvtnu v23.4h, v26.4h
+6E79AB70 fcvtnu v16.8h, v27.8h
+2E79AAB7 fcvtnu v23.4h, v21.4h
+6E79AAFF fcvtnu v31.8h, v23.8h
+2E79A9D6 fcvtnu v22.4h, v14.4h
+2E79AA22 fcvtnu v2.4h, v17.4h
+2E79A92D fcvtnu v13.4h, v9.4h
+2E79A9C0 fcvtnu v0.4h, v14.4h
+2E79AA39 fcvtnu v25.4h, v17.4h
+2E79A9CA fcvtnu v10.4h, v14.4h
+6E79A808 fcvtnu v8.8h, v0.8h
+6E79A8A5 fcvtnu v5.8h, v5.8h
+
+// FCVTNU_asisdmisc_R 01|U=1|1|111|0|o2=0|sz=x|10000|1101|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FcvtnuAsisdmiscR: FCVTNU  <V><d>, <V><n>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+7E21A829 fcvtnu s9, s1
+7E21A9CD fcvtnu s13, s14
+7E61A8AC fcvtnu d12, d5
+7E61A86E fcvtnu d14, d3
+7E61ABD5 fcvtnu d21, d30
+7E21AA13 fcvtnu s19, s16
+7E61A8D9 fcvtnu d25, d6
+7E21A886 fcvtnu s6, s4
+7E21AAD6 fcvtnu s22, s22
+7E21A84F fcvtnu s15, s2
+7E21AA82 fcvtnu s2, s20
+7E61AB18 fcvtnu d24, d24
+7E61A9F0 fcvtnu d16, d15
+7E61ABA1 fcvtnu d1, d29
+7E61AAD6 fcvtnu d22, d22
+7E21AB44 fcvtnu s4, s26
+7E21A800 fcvtnu s0, s0
+7E21ABFF fcvtnu s31, s31
+7E61A820 fcvtnu d0, d1
+7E61A83F fcvtnu d31, d1
+7E61A809 fcvtnu d9, d0
+7E61ABE9 fcvtnu d9, d31
+
+// FCVTNU_asisdmiscfp16_R 01|U=1|1|111|0|o2=0|1111|00|1101|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FcvtnuAsisdmiscfp16R: FCVTNU  <Hd>, <Hn>
+// register fields: Rn, Rd
+7E79A8C6 fcvtnu h6, h6
+7E79AB26 fcvtnu h6, h25
+7E79AA44 fcvtnu h4, h18
+7E79AA76 fcvtnu h22, h19
+7E79A976 fcvtnu h22, h11
+7E79ABD4 fcvtnu h20, h30
+7E79AA7D fcvtnu h29, h19
+7E79A952 fcvtnu h18, h10
+7E79A966 fcvtnu h6, h11
+7E79A99E fcvtnu h30, h12
+7E79AA15 fcvtnu h21, h16
+7E79AAB2 fcvtnu h18, h21
+7E79AAA9 fcvtnu h9, h21
+7E79AB68 fcvtnu h8, h27
+7E79A884 fcvtnu h4, h4
+7E79A91E fcvtnu h30, h8
+7E79A800 fcvtnu h0, h0
+7E79ABFF fcvtnu h31, h31

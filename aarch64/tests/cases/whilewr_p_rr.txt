@@ -1,0 +1,15 @@
+// whilewr_p_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|00|11|00|Rn=xxxxx|rw=0|Pd=xxxx
+// WhilewrPRr: WHILEWR  <Pd>.<T>, <Xn>, <Xm>
+// register fields: Rm, Rn, Pd
+252E336D whilewr p13.b, x27, x14
+25F0302E whilewr p14.d, x1, x16
+25603326 whilewr p6.h, x25, x0
+25B63304 whilewr p4.s, x24, x22
+25F83343 whilewr p3.d, x26, x24
+25E331A8 whilewr p8.d, x13, x3
+25FB3168 whilewr p8.d, x11, x27
+253B31C1 whilewr p1.b, x14, x27
+253F3000 whilewr p0.b, x0, xzr
+252E33EF whilewr p15.b, xzr, x14
+252E31CD whilewr p13.b, x14, x14
+252E336E whilewr p14.b, x27, x14

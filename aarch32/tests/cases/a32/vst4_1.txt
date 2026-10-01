@@ -1,0 +1,137 @@
+// VST4_1_A1_nowb 111101001|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=00|N=11|index_align=xxxx|Rm=1111
+// Vst41A1Nowb: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f48c23ef vst4.8 {d2[7], d3[7], d4[7], d5[7]}, [r12]
+f4cf638f vst4.8 {d22[4], d23[4], d24[4], d25[4]}, [pc] (unpredictable)
+f484e32f vst4.8 {d14[1], d15[1], d16[1], d17[1]}, [r4]
+f485b31f vst4.8 {d11[0], d12[0], d13[0], d14[0]}, [r5:32]
+f4c1a37f vst4.8 {d26[3], d27[3], d28[3], d29[3]}, [r1:32]
+f4c793df vst4.8 {d25[6], d26[6], d27[6], d28[6]}, [r7:32]
+f48c73df vst4.8 {d7[6], d8[6], d9[6], d10[6]}, [r12:32]
+f48ea39f vst4.8 {d10[4], d11[4], d12[4], d13[4]}, [lr:32]
+F480030F vst4.8 {d0[0], d1[0], d2[0], d3[0]}, [r0]
+F48CF3FF vst4.8 {d15[7], d16[7], d17[7], d18[7]}, [r12:32]
+F48C834F vst4.8 {d8[2], d9[2], d10[2], d11[2]}, [r12]
+F48C43EF vst4.8 {d4[7], d5[7], d6[7], d7[7]}, [r12]
+F48C13EF vst4.8 {d1[7], d2[7], d3[7], d4[7]}, [r12]
+
+// VST4_1_A1_posti 111101001|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=00|N=11|index_align=xxxx|Rm=1101
+// Vst41A1Posti: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f4c623dd vst4.8 {d18[6], d19[6], d20[6], d21[6]}, [r6:32]!
+f4c2b31d vst4.8 {d27[0], d28[0], d29[0], d30[0]}, [r2:32]!
+f4cd13fd vst4.8 {d17[7], d18[7], d19[7], d20[7]}, [sp:32]!
+f48d13ed vst4.8 {d1[7], d2[7], d3[7], d4[7]}, [sp]!
+f487e37d vst4.8 {d14[3], d15[3], d16[3], d17[3]}, [r7:32]!
+f485b38d vst4.8 {d11[4], d12[4], d13[4], d14[4]}, [r5]!
+f485b37d vst4.8 {d11[3], d12[3], d13[3], d14[3]}, [r5:32]!
+f48ee3ed vst4.8 {d14[7], d15[7], d16[7], d17[7]}, [lr]!
+F4C0030D vst4.8 {d16[0], d17[0], d18[0], d19[0]}, [r0]!
+F4CFF34D UNPREDICTABLE
+F4C6832D vst4.8 {d24[1], d25[1], d26[1], d27[1]}, [r6]!
+F4C643DD vst4.8 {d20[6], d21[6], d22[6], d23[6]}, [r6:32]!
+F4CF234D vst4.8 {d18[2], d19[2], d20[2], d21[2]}, [pc]! (unpredictable)
+F48DF3ED vst4.8 {d15[7], d16[7], d17[7], d18[7]}, [sp]!
+
+// VST4_1_A1_postr 111101001|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=00|N=11|index_align=xxxx|Rm=xxxx
+// Vst41A1Postr: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f488833b vst4.8 {d8[1], d9[1], d10[1], d11[1]}, [r8:32], r11
+f484330a vst4.8 {d3[0], d4[0], d5[0], d6[0]}, [r4], r10
+f48ce3b7 vst4.8 {d14[5], d15[5], d16[5], d17[5]}, [r12:32], r7
+f4879328 vst4.8 {d9[1], d10[1], d11[1], d12[1]}, [r7], r8
+f4c61335 vst4.8 {d17[1], d18[1], d19[1], d20[1]}, [r6:32], r5
+f48db38c vst4.8 {d11[4], d12[4], d13[4], d14[4]}, [sp], r12
+f48ac361 vst4.8 {d12[3], d13[3], d14[3], d15[3]}, [r10], r1
+f48a7339 vst4.8 {d7[1], d8[1], d9[1], d10[1]}, [r10:32], r9
+F48003F0 vst4.8 {d0[7], d1[7], d2[7], d3[7]}, [r0:32], r0
+F48FF34B vst4.8 {d15[2], d16[2], d17[2], d18[2]}, [pc], r11 (unpredictable)
+F4884318 vst4.8 {d4[0], d5[0], d6[0], d7[0]}, [r8:32], r8
+F488233B vst4.8 {d2[1], d3[1], d4[1], d5[1]}, [r8:32], r11
+
+// VST4_1_A2_nowb 111101001|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=01|N=11|index_align=xxxx|Rm=1111
+// Vst41A2Nowb: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f48207ef vst4.16 {d0[3], d2[3], d4[3], d6[3]}, [r2]
+f48a37ef vst4.16 {d3[3], d5[3], d7[3], d9[3]}, [r10]
+f4c8772f vst4.16 {d23[0], d25[0], d27[0], d29[0]}, [r8]
+f484b72f vst4.16 {d11[0], d13[0], d15[0], d17[0]}, [r4]
+f48e07ef vst4.16 {d0[3], d2[3], d4[3], d6[3]}, [lr]
+f482777f vst4.16 {d7[1], d9[1], d11[1], d13[1]}, [r2:64]
+f4c9171f vst4.16 {d17[0], d18[0], d19[0], d20[0]}, [r9:64]
+F480F70F vst4.16 {d15[0], d16[0], d17[0], d18[0]}, [r0]
+F48F87FF vst4.16 {d8[3], d10[3], d12[3], d14[3]}, [pc:64] (unpredictable)
+F482478F vst4.16 {d4[2], d5[2], d6[2], d7[2]}, [r2]
+F482274F vst4.16 {d2[1], d3[1], d4[1], d5[1]}, [r2]
+
+// VST4_1_A2_posti 111101001|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=01|N=11|index_align=xxxx|Rm=1101
+// Vst41A2Posti: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f48a278d vst4.16 {d2[2], d3[2], d4[2], d5[2]}, [r10]!
+f485171d vst4.16 {d1[0], d2[0], d3[0], d4[0]}, [r5:64]!
+f4c6378d vst4.16 {d19[2], d20[2], d21[2], d22[2]}, [r6]!
+f48527fd vst4.16 {d2[3], d4[3], d6[3], d8[3]}, [r5:64]!
+f486d7ad vst4.16 {d13[2], d15[2], d17[2], d19[2]}, [r6]!
+f4cb471d vst4.16 {d20[0], d21[0], d22[0], d23[0]}, [r11:64]!
+f4ce975d vst4.16 {d25[1], d26[1], d27[1], d28[1]}, [lr:64]!
+F480070D vst4.16 {d0[0], d1[0], d2[0], d3[0]}, [r0]!
+F48FF74D vst4.16 {d15[1], d16[1], d17[1], d18[1]}, [pc]! (unpredictable)
+F48A872D vst4.16 {d8[0], d10[0], d12[0], d14[0]}, [r10]!
+
+// VST4_1_A2_postr 111101001|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=01|N=11|index_align=xxxx|Rm=xxxx
+// Vst41A2Postr: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f48d0719 vst4.16 {d0[0], d1[0], d2[0], d3[0]}, [sp:64], r9
+f48e4722 vst4.16 {d4[0], d6[0], d8[0], d10[0]}, [lr], r2
+f48b27d4 vst4.16 {d2[3], d3[3], d4[3], d5[3]}, [r11:64], r4
+f4cc57c7 vst4.16 {d21[3], d22[3], d23[3], d24[3]}, [r12], r7
+f48b57d4 vst4.16 {d5[3], d6[3], d7[3], d8[3]}, [r11:64], r4
+f4cc87b3 vst4.16 {d24[2], d26[2], d28[2], d30[2]}, [r12:64], r3
+f48d6781 vst4.16 {d6[2], d7[2], d8[2], d9[2]}, [sp], r1
+f484c7c6 vst4.16 {d12[3], d13[3], d14[3], d15[3]}, [r4], r6
+F480F700 vst4.16 {d15[0], d16[0], d17[0], d18[0]}, [r0], r0
+F48F17F9 vst4.16 {d1[3], d3[3], d5[3], d7[3]}, [pc:64], r9 (unpredictable)
+F4890749 vst4.16 {d0[1], d1[1], d2[1], d3[1]}, [r9], r9
+
+// VST4_1_A3_nowb 111101001|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=10|N=11|index_align=xxxx|Rm=1111
+// Vst41A3Nowb: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f48f3bcf vst4.32 {d3[1], d5[1], d7[1], d9[1]}, [pc] (unpredictable)
+f4819b5f vst4.32 {d9[0], d11[0], d13[0], d15[0]}, [r1:64]
+f4c82b8f vst4.32 {d18[1], d19[1], d20[1], d21[1]}, [r8]
+f480eb0f vst4.32 {d14[0], d15[0], d16[0], d17[0]}, [r0]
+F48F0B4F vst4.32 {d0[0], d2[0], d4[0], d6[0]}, [pc] (unpredictable)
+F48FFB2F vst4.32 {d15[0], d16[0], d17[0], d18[0]}, [pc:128] (unpredictable)
+F48F8B1F vst4.32 {d8[0], d9[0], d10[0], d11[0]}, [pc:64] (unpredictable)
+F48F4BCF vst4.32 {d4[1], d6[1], d8[1], d10[1]}, [pc] (unpredictable)
+F48F1BCF vst4.32 {d1[1], d3[1], d5[1], d7[1]}, [pc] (unpredictable)
+F48F3BFF UNDEFINED
+
+// VST4_1_A3_posti 111101001|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=10|N=11|index_align=xxxx|Rm=1101
+// Vst41A3Posti: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f4c0cb1d vst4.32 {d28[0], d29[0], d30[0], d31[0]}, [r0:64]!
+f4c54b5d vst4.32 {d20[0], d22[0], d24[0], d26[0]}, [r5:64]!
+f4c43b9d vst4.32 {d19[1], d20[1], d21[1], d22[1]}, [r4:64]!
+f4c4ab0d vst4.32 {d26[0], d27[0], d28[0], d29[0]}, [r4]!
+f48b8b9d vst4.32 {d8[1], d9[1], d10[1], d11[1]}, [r11:64]!
+F4CF0B8D vst4.32 {d16[1], d17[1], d18[1], d19[1]}, [pc]! (unpredictable)
+F4C0FB4D UNPREDICTABLE
+F4C02B2D vst4.32 {d18[0], d19[0], d20[0], d21[0]}, [r0:128]!
+F4C01B1D vst4.32 {d17[0], d18[0], d19[0], d20[0]}, [r0:64]!
+F4C0CBFD UNDEFINED
+F48BFB4D vst4.32 {d15[0], d17[0], d19[0], d21[0]}, [r11]!
+
+// VST4_1_A3_postr 111101001|D=x|L=0|0|Rn=xxxx|Vd=xxxx|size=10|N=11|index_align=xxxx|Rm=xxxx
+// Vst41A3Postr: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f48a2bd8 vst4.32 {d2[1], d4[1], d6[1], d8[1]}, [r10:64], r8
+f4870b09 vst4.32 {d0[0], d1[0], d2[0], d3[0]}, [r7], r9
+f486fbd0 vst4.32 {d15[1], d17[1], d19[1], d21[1]}, [r6:64], r0
+f4c26b48 vst4.32 {d22[0], d24[0], d26[0], d28[0]}, [r2], r8
+f4c10b41 vst4.32 {d16[0], d18[0], d20[0], d22[0]}, [r1], r1
+f4822b08 vst4.32 {d2[0], d3[0], d4[0], d5[0]}, [r2], r8
+F4808B88 vst4.32 {d8[1], d9[1], d10[1], d11[1]}, [r0], r8
+F48F4B28 vst4.32 {d4[0], d5[0], d6[0], d7[0]}, [pc:128], r8 (unpredictable)
+F48A1B18 vst4.32 {d1[0], d2[0], d3[0], d4[0]}, [r10:64], r8
+F48A2BFF UNDEFINED

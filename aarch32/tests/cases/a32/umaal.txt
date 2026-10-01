@@ -1,0 +1,18 @@
+// UMAAL_A1 cond=xxxx|00|0|0|opc=010|S=0|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|1|00|1|Rn=xxxx
+// UmaalA1: UMAAL{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+b043ed9f umaallt lr, r3, pc, sp (unpredictable)
+4045699a umaalmi r6, r5, r10, r9
+a040bb94 umaalge r11, r0, r4, r11
+b046f594 umaallt pc, r6, r4, r5 (unpredictable)
+6044ea98 umaalvs lr, r4, r8, r10
+104bb097 umaalne r11, r11, r7, r0 (unpredictable)
+4047af90 umaalmi r10, r7, r0, pc (unpredictable)
+30410f9f umaallo r0, r1, pc, pc (unpredictable)
+// Binary Ninja's tests
+b0443695 umaallt r3, r4, r5, r6
+e0443695 umaal r3, r4, r5, r6
+004FED9E umaaleq lr, pc, lr, sp (unpredictable)
+F043ED9F UNALLOCATED
+8043E39F umaalhi lr, r3, pc, r3 (unpredictable)
+2043ED93 umaalcs lr, r3, r3, sp

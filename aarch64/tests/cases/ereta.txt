@@ -1,0 +1,7 @@
+// ERETAA_64E_branch_reg 1101011|opc=0100|op2=11111|0000|A=1|M=0|Rn=11111|op4=11111
+// Eretaa64eBranchReg: ERETAA
+D69F0BFF eretaa
+
+// ERETAB_64E_branch_reg 1101011|opc=0100|op2=11111|0000|A=1|M=1|Rn=11111|op4=11111
+// Eretab64eBranchReg: ERETAB
+D69F0FFF eretab

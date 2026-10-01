@@ -1,0 +1,43 @@
+// RBIT_32_dp_1src sf=0|1|S=0|11010110|opcode2=00000|opcode=000000|Rn=xxxxx|Rd=xxxxx
+// Rbit32Dp1src: RBIT  <Wd>, <Wn>
+// register fields: Rn, Rd
+5AC0038E rbit w14, w28
+5AC001F4 rbit w20, w15
+5AC00069 rbit w9, w3
+5AC00044 rbit w4, w2
+5AC00394 rbit w20, w28
+5AC002F4 rbit w20, w23
+5AC003CE rbit w14, w30
+5AC000D3 rbit w19, w6
+5AC00230 rbit w16, w17
+5AC00102 rbit w2, w8
+5AC00291 rbit w17, w20
+5AC000B8 rbit w24, w5
+5AC0026C rbit w12, w19
+5AC0020B rbit w11, w16
+5AC003D6 rbit w22, w30
+5AC000F2 rbit w18, w7
+5AC00000 rbit w0, w0
+5AC003FF rbit wzr, wzr
+
+// RBIT_64_dp_1src sf=1|1|S=0|11010110|opcode2=00000|opcode=000000|Rn=xxxxx|Rd=xxxxx
+// Rbit64Dp1src: RBIT  <Xd>, <Xn>
+// register fields: Rn, Rd
+DAC0023A rbit x26, x17
+DAC002DF rbit xzr, x22
+DAC000CB rbit x11, x6
+DAC00024 rbit x4, x1
+DAC00328 rbit x8, x25
+DAC001DE rbit lr, x14
+DAC0030A rbit x10, x24
+DAC001A2 rbit x2, x13
+DAC003C8 rbit x8, lr
+DAC00348 rbit x8, x26
+DAC001E0 rbit x0, x15
+DAC000A7 rbit x7, x5
+DAC00001 rbit x1, x0
+DAC000AB rbit x11, x5
+DAC001E7 rbit x7, x15
+DAC00006 rbit x6, x0
+DAC003FA rbit x26, xzr
+DAC00231 rbit x17, x17

@@ -1,0 +1,23 @@
+// sqinch_z_zs_ 000|0010|0|size=01|1|0|imm4=xxxx|11|00|D=0|U=0|pattern=xxxxx|Zdn=xxxxx
+// SqinchZZs: SQINCH  <Zdn>.H{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+0469C322 sqinch z2.h, #0x19, mul #0xa
+0465C33D sqinch z29.h, #0x19, mul #0x6
+046DC336 sqinch z22.h, #0x19, mul #0xe
+0469C3F6 sqinch z22.h, all, mul #0xa
+0465C37B sqinch z27.h, #0x1b, mul #0x6
+0462C1C9 sqinch z9.h, #0xe, mul #0x3
+0463C3E8 sqinch z8.h, all, mul #0x4
+0463C323 sqinch z3.h, #0x19, mul #0x4
+046AC11B sqinch z27.h, vl8, mul #0xb
+046EC300 sqinch z0.h, #0x18, mul #0xf
+046FC25B sqinch z27.h, #0x12, mul #0x10
+046CC31E sqinch z30.h, #0x18, mul #0xd
+0467C279 sqinch z25.h, #0x13, mul #0x8
+0460C346 sqinch z6.h, #0x1a
+0461C03C sqinch z28.h, vl1, mul #0x2
+0467C008 sqinch z8.h, pow2, mul #0x8
+0469C33F sqinch z31.h, #0x19, mul #0xa
+0468C202 sqinch z2.h, #0x10, mul #0x9
+0464C082 sqinch z2.h, vl4, mul #0x5
+0469C042 sqinch z2.h, vl2, mul #0xa

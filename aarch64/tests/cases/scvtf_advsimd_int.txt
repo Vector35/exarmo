@@ -1,0 +1,94 @@
+// SCVTF_asimdmisc_R 0|Q=x|U=0|0|111|0|0|sz=x|10000|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// ScvtfAsimdmiscR: SCVTF  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+0E21DADA scvtf v26.2s, v22.2s
+4E21DBED scvtf v13.4s, v31.4s
+4E61DA74 scvtf v20.2d, v19.2d
+4E21D9C2 scvtf v2.4s, v14.4s
+4E21D9F6 scvtf v22.4s, v15.4s
+0E21DADC scvtf v28.2s, v22.2s
+0E21DA78 scvtf v24.2s, v19.2s
+4E21DABD scvtf v29.4s, v21.4s
+4E61DA7D scvtf v29.2d, v19.2d
+0E21D80B scvtf v11.2s, v0.2s
+0E21D89C scvtf v28.2s, v4.2s
+4E21D827 scvtf v7.4s, v1.4s
+4E61D9BE scvtf v30.2d, v13.2d
+0E21DBB5 scvtf v21.2s, v29.2s
+4E21DBE5 scvtf v5.4s, v31.4s
+4E61D8F0 scvtf v16.2d, v7.2d
+0E21DAC0 scvtf v0.2s, v22.2s
+0E21DADF scvtf v31.2s, v22.2s
+0E61DADA UNDEFINED
+0E21DAD6 scvtf v22.2s, v22.2s
+
+// SCVTF_asimdmiscfp16_R 0|Q=x|U=0|0|111|0|a=0|1111|00|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// ScvtfAsimdmiscfp16R: SCVTF  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+4E79DB24 scvtf v4.8h, v25.8h
+0E79DA83 scvtf v3.4h, v20.4h
+4E79D879 scvtf v25.8h, v3.8h
+4E79DA55 scvtf v21.8h, v18.8h
+4E79D83F scvtf v31.8h, v1.8h
+0E79DAB6 scvtf v22.4h, v21.4h
+0E79DA58 scvtf v24.4h, v18.4h
+0E79DA76 scvtf v22.4h, v19.4h
+4E79D9D3 scvtf v19.8h, v14.8h
+4E79D86E scvtf v14.8h, v3.8h
+0E79D956 scvtf v22.4h, v10.4h
+4E79DA8B scvtf v11.8h, v20.8h
+0E79D9BE scvtf v30.4h, v13.4h
+4E79D961 scvtf v1.8h, v11.8h
+4E79DAC3 scvtf v3.8h, v22.8h
+4E79DBEA scvtf v10.8h, v31.8h
+4E79D800 scvtf v0.8h, v0.8h
+
+// SCVTF_asisdmisc_R 01|U=0|1|111|0|0|sz=x|10000|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// ScvtfAsisdmiscR: SCVTF  <V><d>, <V><n>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+5E21DB2A scvtf s10, s25
+5E21D974 scvtf s20, s11
+5E61DBBA scvtf d26, d29
+5E61D8FD scvtf d29, d7
+5E21DA86 scvtf s6, s20
+5E21DB15 scvtf s21, s24
+5E21DBA2 scvtf s2, s29
+5E21DBE1 scvtf s1, s31
+5E21D998 scvtf s24, s12
+5E21DBB0 scvtf s16, s29
+5E61D9C7 scvtf d7, d14
+5E21DB55 scvtf s21, s26
+5E21DAC8 scvtf s8, s22
+5E21D934 scvtf s20, s9
+5E61D9A1 scvtf d1, d13
+5E61DBF9 scvtf d25, d31
+5E21D800 scvtf s0, s0
+5E21DB3F scvtf s31, s25
+5E61DB20 scvtf d0, d25
+5E61DB3F scvtf d31, d25
+5E61D80A scvtf d10, d0
+
+// SCVTF_asisdmiscfp16_R 01|U=0|1|111|0|a=0|1111|00|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// ScvtfAsisdmiscfp16R: SCVTF  <Hd>, <Hn>
+// register fields: Rn, Rd
+5E79D8B4 scvtf h20, h5
+5E79DB9F scvtf h31, h28
+5E79D8E7 scvtf h7, h7
+5E79D9D4 scvtf h20, h14
+5E79DAEA scvtf h10, h23
+5E79DBB4 scvtf h20, h29
+5E79DB49 scvtf h9, h26
+5E79D8AA scvtf h10, h5
+5E79D87A scvtf h26, h3
+5E79D8CB scvtf h11, h6
+5E79DA31 scvtf h17, h17
+5E79DAD9 scvtf h25, h22
+5E79D969 scvtf h9, h11
+5E79D9C3 scvtf h3, h14
+5E79DA12 scvtf h18, h16
+5E79D924 scvtf h4, h9
+5E79D800 scvtf h0, h0
+5E79DBF4 scvtf h20, h31

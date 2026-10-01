@@ -1,0 +1,90 @@
+// mova_za_p_rz_b 1|10|0000|0|size=00|000|0|0|Q=0|V=x|Rs=xx|Pg=xxx|Zn=xxxxx|0|off4=xxxx
+// MovaZaPRzB: MOVA  ZA0<HV>.B[<Ws>, <offs>], <Pg>/M, <Zn>.B
+// MovZaPRzBMovaZaPRzB: MOV  ZA0<HV>.B[<Ws>, <offs>], <Pg>/M, <Zn>.B
+// register fields: Rs, Pg, Zn
+C0002F06 mov za0h.b[w13, 6], p3/m, z24.b
+C000F88B mov za0v.b[w15, 11], p6/m, z4.b
+C00089EF mov za0v.b[w12, 15], p2/m, z15.b
+C00033A8 mov za0h.b[w13, 8], p4/m, z29.b
+C00006A4 mov za0h.b[w12, 4], p1/m, z21.b
+C0001560 mov za0h.b[w12, 0], p5/m, z11.b
+C00049CA mov za0h.b[w14, 10], p2/m, z14.b
+C0006900 mov za0h.b[w15, 0], p2/m, z8.b
+C0002006 mov za0h.b[w13, 6], p0/m, z0.b
+C0003FE6 mov za0h.b[w13, 6], p7/m, z31.b
+C0002C26 mov za0h.b[w13, 6], p3/m, z1.b
+C0002F02 mov za0h.b[w13, 2], p3/m, z24.b
+C0002F01 mov za0h.b[w13, 1], p3/m, z24.b
+
+// mova_za_p_rz_d 1|10|0000|0|size=11|000|0|0|Q=0|V=x|Rs=xx|Pg=xxx|Zn=xxxxx|0|ZAd=xxx|o1=x
+// MovaZaPRzD: MOVA  <ZAd><HV>.D[<Ws>, <offs>], <Pg>/M, <Zn>.D
+// MovZaPRzDMovaZaPRzD: MOV  <ZAd><HV>.D[<Ws>, <offs>], <Pg>/M, <Zn>.D
+// register fields: Rs, Pg, Zn, ZAd
+C0C0F4E9 mov za4v.d[w15, 1], p5/m, z7.d
+C0C0C5CC mov za6v.d[w14, 0], p1/m, z14.d
+C0C09B6C mov za6v.d[w12, 0], p6/m, z27.d
+C0C0096F mov za7h.d[w12, 1], p2/m, z11.d
+C0C02F03 mov za1h.d[w13, 1], p3/m, z24.d
+C0C071CE mov za7h.d[w15, 0], p4/m, z14.d
+C0C0862D mov za6v.d[w12, 1], p1/m, z17.d
+C0C042E5 mov za2h.d[w14, 1], p0/m, z23.d
+C0C0FC01 mov za0v.d[w15, 1], p7/m, z0.d
+C0C0F7E7 mov za3v.d[w15, 1], p5/m, z31.d
+C0C0F4EB mov za5v.d[w15, 1], p5/m, z7.d
+C0C0ECE9 mov za4v.d[w15, 1], p3/m, z7.d
+C0C0F469 mov za4v.d[w15, 1], p5/m, z3.d
+C0C0F4A9 mov za4v.d[w15, 1], p5/m, z5.d
+
+// mova_za_p_rz_h 1|10|0000|0|size=01|000|0|0|Q=0|V=x|Rs=xx|Pg=xxx|Zn=xxxxx|0|ZAd=x|off3=xxx
+// MovaZaPRzH: MOVA  <ZAd><HV>.H[<Ws>, <offs>], <Pg>/M, <Zn>.H
+// MovZaPRzHMovaZaPRzH: MOV  <ZAd><HV>.H[<Ws>, <offs>], <Pg>/M, <Zn>.H
+// register fields: Rs, Pg, Zn, ZAd
+C040B14E mov za1v.h[w13, 6], p4/m, z10.h
+C04025EF mov za1h.h[w13, 7], p1/m, z15.h
+C040776C mov za1h.h[w15, 4], p5/m, z27.h
+C040EB61 mov za0v.h[w15, 1], p2/m, z27.h
+C040AC05 mov za0v.h[w13, 5], p3/m, z0.h
+C0401F6B mov za1h.h[w12, 3], p7/m, z27.h
+C040F924 mov za0v.h[w15, 4], p6/m, z9.h
+C040828E mov za1v.h[w12, 6], p0/m, z20.h
+C040D3E8 mov za1v.h[w14, 0], p4/m, z31.h
+C040B14A mov za1v.h[w13, 2], p4/m, z10.h
+C040B02E mov za1v.h[w13, 6], p4/m, z1.h
+C040B08E mov za1v.h[w13, 6], p4/m, z4.h
+
+// mova_za_p_rz_q 1|10|0000|0|size=11|000|0|0|Q=1|V=x|Rs=xx|Pg=xxx|Zn=xxxxx|0|ZAd=xxxx
+// MovaZaPRzQ: MOVA  <ZAd><HV>.Q[<Ws>, <offs>], <Pg>/M, <Zn>.Q
+// MovZaPRzQMovaZaPRzQ: MOV  <ZAd><HV>.Q[<Ws>, <offs>], <Pg>/M, <Zn>.Q
+// register fields: Rs, Pg, Zn, ZAd
+C0C1D2E5 mov za5v.q[w14, 0], p4/m, z23.q
+C0C1A9CE mov za14v.q[w13, 0], p2/m, z14.q
+C0C1C620 mov za0v.q[w14, 0], p1/m, z17.q
+C0C110C2 mov za2h.q[w12, 0], p4/m, z6.q
+C0C1F2C9 mov za9v.q[w15, 0], p4/m, z22.q
+C0C1C328 mov za8v.q[w14, 0], p0/m, z25.q
+C0C14E60 mov za0h.q[w14, 0], p3/m, z19.q
+C0C1F2A6 mov za6v.q[w15, 0], p4/m, z21.q
+C0C1D40F mov za15v.q[w14, 0], p5/m, z0.q
+C0C1DBE5 mov za5v.q[w14, 0], p6/m, z31.q
+C0C1DEE5 mov za5v.q[w14, 0], p7/m, z23.q
+C0C1CAE5 mov za5v.q[w14, 0], p2/m, z23.q
+C0C1D044 mov za4v.q[w14, 0], p4/m, z2.q
+C0C1D082 mov za2v.q[w14, 0], p4/m, z4.q
+
+// mova_za_p_rz_w 1|10|0000|0|size=10|000|0|0|Q=0|V=x|Rs=xx|Pg=xxx|Zn=xxxxx|0|ZAd=xx|off2=xx
+// MovaZaPRzW: MOVA  <ZAd><HV>.S[<Ws>, <offs>], <Pg>/M, <Zn>.S
+// MovZaPRzWMovaZaPRzW: MOV  <ZAd><HV>.S[<Ws>, <offs>], <Pg>/M, <Zn>.S
+// register fields: Rs, Pg, Zn, ZAd
+C0803C6A mov za2h.s[w13, 2], p7/m, z3.s
+C0803B0D mov za3h.s[w13, 1], p6/m, z24.s
+C080F206 mov za1v.s[w15, 2], p4/m, z16.s
+C080B5A0 mov za0v.s[w13, 0], p5/m, z13.s
+C080BAEA mov za2v.s[w13, 2], p6/m, z23.s
+C08039EE mov za3h.s[w13, 2], p6/m, z15.s
+C080B5E7 mov za1v.s[w13, 3], p5/m, z15.s
+C0809C6D mov za3v.s[w12, 1], p7/m, z3.s
+C080400A mov za2h.s[w14, 2], p0/m, z0.s
+C08027EA mov za2h.s[w13, 2], p1/m, z31.s
+C080286A mov za2h.s[w13, 2], p2/m, z3.s
+C0802C6A mov za2h.s[w13, 2], p3/m, z3.s
+C0803C2A mov za2h.s[w13, 2], p7/m, z1.s

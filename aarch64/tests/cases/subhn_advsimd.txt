@@ -1,0 +1,26 @@
+// SUBHN_asimddiff_N 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|01|o1=1|0|00|Rn=xxxxx|Rd=xxxxx
+// SubhnAsimddiffN: SUBHN  <Vd>.<Tb>, <Vn>.<Ta>, <Vm>.<Ta>
+// SubhnAsimddiffN2: SUBHN2  <Vd>.<Tb>, <Vn>.<Ta>, <Vm>.<Ta>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+0E236382 subhn v2.8b, v28.8h, v3.8h
+4E2263F8 subhn2 v24.16b, v31.8h, v2.8h
+0E776245 subhn v5.4h, v18.4s, v23.4s
+0EB061E7 subhn v7.2s, v15.2d, v16.2d
+0EB462D7 subhn v23.2s, v22.2d, v20.2d
+4E3661A7 subhn2 v7.16b, v13.8h, v22.8h
+4E3C63E8 subhn2 v8.16b, v31.8h, v28.8h
+4E666292 subhn2 v18.8h, v20.4s, v6.4s
+0E3F6078 subhn v24.8b, v3.8h, v31.8h
+4E7962F7 subhn2 v23.8h, v23.4s, v25.4s
+0E7A6059 subhn v25.4h, v2.4s, v26.4s
+4EA4637D subhn2 v29.4s, v27.2d, v4.2d
+0E626272 subhn v18.4h, v19.4s, v2.4s
+0E6B611F subhn v31.4h, v8.4s, v11.4s
+0EB6615B subhn v27.2s, v10.2d, v22.2d
+0EB461D8 subhn v24.2s, v14.2d, v20.2d
+0E206000 subhn v0.8b, v0.8h, v0.8h
+0EE36382 UNDEFINED
+4EE36382 UNDEFINED
+4E206000 subhn2 v0.16b, v0.8h, v0.8h

@@ -1,0 +1,127 @@
+// LDFADD_16 size=01|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfadd16: LDFADD  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+7C200001 ldfadd h0, h1, [x0]
+7C200008 ldfadd h0, h8, [x0]
+7C20000F ldfadd h0, h15, [x0]
+7C3F03E0 ldfadd h31, h0, [sp]
+7C20001F ldfadd h0, h31, [x0]
+7C200000 ldfadd h0, h0, [x0]
+7C210043 ldfadd h1, h3, [x2]
+
+// LDFADD_32 size=10|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfadd32: LDFADD  <Ss>, <St>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+BC200000 ldfadd s0, s0, [x0]
+BC200007 ldfadd s0, s7, [x0]
+BC20000E ldfadd s0, s14, [x0]
+BC3F03FF ldfadd s31, s31, [sp]
+BC210043 ldfadd s1, s3, [x2]
+
+// LDFADD_64 size=11|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfadd64: LDFADD  <Ds>, <Dt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+FC200006 ldfadd d0, d6, [x0]
+FC20000D ldfadd d0, d13, [x0]
+FC200014 ldfadd d0, d20, [x0]
+FC3F03E0 ldfadd d31, d0, [sp]
+FC20001F ldfadd d0, d31, [x0]
+FC200000 ldfadd d0, d0, [x0]
+FC210043 ldfadd d1, d3, [x2]
+
+// LDFADDA_16 size=01|111|VR=1|00|A=1|R=0|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfadda16: LDFADDA  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+7CA00004 ldfadda h0, h4, [x0]
+7CA0000B ldfadda h0, h11, [x0]
+7CA00012 ldfadda h0, h18, [x0]
+7CBF03E0 ldfadda h31, h0, [sp]
+7CA0001F ldfadda h0, h31, [x0]
+7CA00000 ldfadda h0, h0, [x0]
+7CA10043 ldfadda h1, h3, [x2]
+
+// LDFADDA_32 size=10|111|VR=1|00|A=1|R=0|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfadda32: LDFADDA  <Ss>, <St>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+BCA00003 ldfadda s0, s3, [x0]
+BCA0000A ldfadda s0, s10, [x0]
+BCA00011 ldfadda s0, s17, [x0]
+BCBF03E0 ldfadda s31, s0, [sp]
+BCA0001F ldfadda s0, s31, [x0]
+BCA00000 ldfadda s0, s0, [x0]
+BCA10043 ldfadda s1, s3, [x2]
+
+// LDFADDA_64 size=11|111|VR=1|00|A=1|R=0|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfadda64: LDFADDA  <Ds>, <Dt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+FCA00002 ldfadda d0, d2, [x0]
+FCA00009 ldfadda d0, d9, [x0]
+FCA00010 ldfadda d0, d16, [x0]
+FCBF03E0 ldfadda d31, d0, [sp]
+FCA0001F ldfadda d0, d31, [x0]
+FCA00000 ldfadda d0, d0, [x0]
+FCA10043 ldfadda d1, d3, [x2]
+
+// LDFADDAL_16 size=01|111|VR=1|00|A=1|R=1|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfaddal16: LDFADDAL  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+7CE00002 ldfaddal h0, h2, [x0]
+7CE00009 ldfaddal h0, h9, [x0]
+7CE00010 ldfaddal h0, h16, [x0]
+7CFF03E0 ldfaddal h31, h0, [sp]
+7CE0001F ldfaddal h0, h31, [x0]
+7CE00000 ldfaddal h0, h0, [x0]
+7CE10043 ldfaddal h1, h3, [x2]
+
+// LDFADDAL_32 size=10|111|VR=1|00|A=1|R=1|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfaddal32: LDFADDAL  <Ss>, <St>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+BCE00001 ldfaddal s0, s1, [x0]
+BCE00008 ldfaddal s0, s8, [x0]
+BCE0000F ldfaddal s0, s15, [x0]
+BCFF03E0 ldfaddal s31, s0, [sp]
+BCE0001F ldfaddal s0, s31, [x0]
+BCE00000 ldfaddal s0, s0, [x0]
+BCE10043 ldfaddal s1, s3, [x2]
+
+// LDFADDAL_64 size=11|111|VR=1|00|A=1|R=1|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfaddal64: LDFADDAL  <Ds>, <Dt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+FCE00000 ldfaddal d0, d0, [x0]
+FCE00007 ldfaddal d0, d7, [x0]
+FCE0000E ldfaddal d0, d14, [x0]
+FCFF03FF ldfaddal d31, d31, [sp]
+FCE10043 ldfaddal d1, d3, [x2]
+
+// LDFADDL_16 size=01|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfaddl16: LDFADDL  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+7C600006 ldfaddl h0, h6, [x0]
+7C60000D ldfaddl h0, h13, [x0]
+7C600014 ldfaddl h0, h20, [x0]
+7C7F03E0 ldfaddl h31, h0, [sp]
+7C60001F ldfaddl h0, h31, [x0]
+7C600000 ldfaddl h0, h0, [x0]
+7C610043 ldfaddl h1, h3, [x2]
+
+// LDFADDL_32 size=10|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfaddl32: LDFADDL  <Ss>, <St>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+BC600005 ldfaddl s0, s5, [x0]
+BC60000C ldfaddl s0, s12, [x0]
+BC600013 ldfaddl s0, s19, [x0]
+BC7F03E0 ldfaddl s31, s0, [sp]
+BC60001F ldfaddl s0, s31, [x0]
+BC600000 ldfaddl s0, s0, [x0]
+BC610043 ldfaddl s1, s3, [x2]
+
+// LDFADDL_64 size=11|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldfaddl64: LDFADDL  <Ds>, <Dt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+FC600004 ldfaddl d0, d4, [x0]
+FC60000B ldfaddl d0, d11, [x0]
+FC600012 ldfaddl d0, d18, [x0]
+FC7F03E0 ldfaddl d31, d0, [sp]
+FC60001F ldfaddl d0, d31, [x0]
+FC600000 ldfaddl d0, d0, [x0]
+FC610043 ldfaddl d1, d3, [x2]

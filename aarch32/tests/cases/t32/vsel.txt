@@ -1,0 +1,261 @@
+// VSELEQ_T1_D 111111100|D=x|cc=00|Vn=xxxx|Vd=xxxx|10|size=11|N=x|0|M=x|0|Vm=xxxx
+// VseleqT1D: VSELEQ.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fe06cb08 vseleq.f64 d12, d6, d8
+fe0e7b20 vseleq.f64 d7, d14, d16
+fe0aeb05 vseleq.f64 d14, d10, d5
+fe442ba5 vseleq.f64 d18, d20, d21
+fe4d4b81 vseleq.f64 d20, d29, d1
+fe0d0b8f vseleq.f64 d0, d29, d15
+fe4dbb2b vseleq.f64 d27, d13, d27
+fe073b8d vseleq.f64 d3, d23, d13
+FE00FB04 vseleq.f64 d15, d0, d4
+FE0F8B02 vseleq.f64 d8, d15, d2
+FE081B00 vseleq.f64 d1, d8, d0
+FE02FB2F vseleq.f64 d15, d2, d31
+FE410B08 vseleq.f64 d16, d1, d8
+FE40FB08 vseleq.f64 d31, d0, d8
+FE00CB88 vseleq.f64 d12, d16, d8
+FE0FCB08 vseleq.f64 d12, d15, d8
+FE0FCB88 vseleq.f64 d12, d31, d8
+
+// VSELEQ_T1_H 111111100|D=x|cc=00|Vn=xxxx|Vd=xxxx|10|size=01|N=x|0|M=x|0|Vm=xxxx
+// VseleqT1H: VSELEQ.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe08d902 vseleq.f16 s26, s16, s4
+fe4c990a vseleq.f16 s19, s24, s20
+fe0b6909 vseleq.f16 s12, s22, s18
+fe48b9ad vseleq.f16 s23, s17, s27
+fe07192a vseleq.f16 s2, s14, s21
+fe4ba98b vseleq.f16 s21, s23, s22
+fe02b98d vseleq.f16 s22, s5, s26
+fe423902 vseleq.f16 s7, s4, s4
+FE0FF90F vseleq.f16 s30, s30, s30
+FE048908 vseleq.f16 s16, s8, s16
+FE014904 vseleq.f16 s8, s2, s8
+FE002901 vseleq.f16 s4, s0, s2
+FE000980 vseleq.f16 s0, s1, s0
+FE4F09A0 vseleq.f16 s1, s31, s1
+FE48F92F vseleq.f16 s31, s16, s31
+
+// VSELEQ_T1_S 111111100|D=x|cc=00|Vn=xxxx|Vd=xxxx|10|size=10|N=x|0|M=x|0|Vm=xxxx
+// VseleqT1S: VSELEQ.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe0cba08 vseleq.f32 s22, s24, s16
+fe060a01 vseleq.f32 s0, s12, s2
+fe4a1a88 vseleq.f32 s3, s21, s16
+fe08faa4 vseleq.f32 s30, s17, s9
+fe470a0a vseleq.f32 s1, s14, s20
+fe493a0d vseleq.f32 s7, s18, s26
+fe078a87 vseleq.f32 s16, s15, s14
+fe408a0a vseleq.f32 s17, s0, s20
+FE0F4A00 vseleq.f32 s8, s30, s0
+FE042A0F vseleq.f32 s4, s8, s30
+FE42FA02 vseleq.f32 s31, s4, s4
+FE01BA00 vseleq.f32 s22, s2, s0
+FE00BA8F vseleq.f32 s22, s1, s30
+FE0FBA20 vseleq.f32 s22, s30, s1
+FE0FBAAF vseleq.f32 s22, s31, s31
+
+// VSELGE_T1_D 111111100|D=x|cc=10|Vn=xxxx|Vd=xxxx|10|size=11|N=x|0|M=x|0|Vm=xxxx
+// VselgeT1D: VSELGE.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fe624ba2 vselge.f64 d20, d18, d18
+fe2d2b8b vselge.f64 d2, d29, d11
+fe2f0b84 vselge.f64 d0, d31, d4
+fe2d6b26 vselge.f64 d6, d13, d22
+fe2fab2c vselge.f64 d10, d15, d28
+fe66cba2 vselge.f64 d28, d22, d18
+fe6d1b29 vselge.f64 d17, d13, d25
+fe23bbad vselge.f64 d11, d19, d29
+FE60FBA0 vselge.f64 d31, d16, d16
+FE688BAF vselge.f64 d24, d24, d31
+FE24FBA8 vselge.f64 d15, d20, d24
+FE610BA1 vselge.f64 d16, d17, d17
+FE60FB00 vselge.f64 d31, d0, d0
+FE604B8F vselge.f64 d20, d16, d15
+FE624BA0 vselge.f64 d20, d18, d16
+FE624BAF vselge.f64 d20, d18, d31
+
+// VSELGE_T1_H 111111100|D=x|cc=10|Vn=xxxx|Vd=xxxx|10|size=01|N=x|0|M=x|0|Vm=xxxx
+// VselgeT1H: VSELGE.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe6f1986 vselge.f16 s3, s31, s12
+fe23298c vselge.f16 s4, s7, s24
+fe623925 vselge.f16 s7, s4, s11
+fe2ee923 vselge.f16 s28, s28, s7
+fe6bb9ae vselge.f16 s23, s23, s29
+fe21498b vselge.f16 s8, s3, s22
+fe2d09a9 vselge.f16 s0, s27, s19
+fe607904 vselge.f16 s15, s0, s8
+FE68F980 vselge.f16 s31, s17, s0
+FE64898F vselge.f16 s17, s9, s30
+FE20F988 vselge.f16 s30, s1, s16
+FE6F0902 vselge.f16 s1, s30, s4
+FE6FF981 vselge.f16 s31, s31, s2
+FE6F1980 vselge.f16 s3, s31, s0
+FE6F198F vselge.f16 s3, s31, s30
+FE6F19A0 vselge.f16 s3, s31, s1
+FE6F19AF vselge.f16 s3, s31, s31
+
+// VSELGE_T1_S 111111100|D=x|cc=10|Vn=xxxx|Vd=xxxx|10|size=10|N=x|0|M=x|0|Vm=xxxx
+// VselgeT1S: VSELGE.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe62faab vselge.f32 s31, s5, s23
+fe270aaa vselge.f32 s0, s15, s21
+fe6ada20 vselge.f32 s27, s20, s1
+fe2fea83 vselge.f32 s28, s31, s6
+fe2a8a00 vselge.f32 s16, s20, s0
+fe205a0e vselge.f32 s10, s0, s28
+fe6dbaa2 vselge.f32 s23, s27, s5
+fe21daa7 vselge.f32 s26, s3, s15
+FE684AAF vselge.f32 s9, s17, s31
+FE642AA8 vselge.f32 s5, s9, s17
+FE601AA4 vselge.f32 s3, s1, s9
+FE2FFA21 vselge.f32 s30, s30, s3
+FE620A8F vselge.f32 s1, s5, s30
+FE62FAAF vselge.f32 s31, s5, s31
+
+// VSELGT_T1_D 111111100|D=x|cc=11|Vn=xxxx|Vd=xxxx|10|size=11|N=x|0|M=x|0|Vm=xxxx
+// VselgtT1D: VSELGT.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fe71eba4 vselgt.f64 d30, d17, d20
+fe713b09 vselgt.f64 d19, d1, d9
+fe308b24 vselgt.f64 d8, d0, d20
+fe738b28 vselgt.f64 d24, d3, d24
+fe397b22 vselgt.f64 d7, d9, d18
+fe7bdb8e vselgt.f64 d29, d27, d14
+fe7e4ba7 vselgt.f64 d20, d30, d23
+fe705b8f vselgt.f64 d21, d16, d15
+FE7F0BA0 vselgt.f64 d16, d31, d16
+FE78FBA1 vselgt.f64 d31, d24, d17
+FE742B80 vselgt.f64 d18, d20, d0
+FE721BA0 vselgt.f64 d17, d18, d16
+FE3F0B2F vselgt.f64 d0, d15, d31
+FE3FFBA4 vselgt.f64 d15, d31, d20
+FE710BA4 vselgt.f64 d16, d17, d20
+FE71FBA4 vselgt.f64 d31, d17, d20
+
+// VSELGT_T1_H 111111100|D=x|cc=11|Vn=xxxx|Vd=xxxx|10|size=01|N=x|0|M=x|0|Vm=xxxx
+// VselgtT1H: VSELGT.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe749984 vselgt.f16 s19, s9, s8
+fe38d903 vselgt.f16 s26, s16, s6
+fe796980 vselgt.f16 s13, s19, s0
+fe731922 vselgt.f16 s3, s6, s5
+fe3999af vselgt.f16 s18, s19, s31
+fe3bd9a7 vselgt.f16 s26, s23, s15
+fe3e292c vselgt.f16 s4, s28, s25
+fe77092b vselgt.f16 s1, s14, s23
+FE70F988 vselgt.f16 s31, s1, s16
+FE7F8981 vselgt.f16 s17, s31, s2
+FE72498F vselgt.f16 s9, s5, s30
+FE3109A0 vselgt.f16 s0, s3, s1
+FE30F904 vselgt.f16 s30, s0, s8
+FE70F984 vselgt.f16 s31, s1, s8
+FE7F9904 vselgt.f16 s19, s30, s8
+FE7F9984 vselgt.f16 s19, s31, s8
+
+// VSELGT_T1_S 111111100|D=x|cc=11|Vn=xxxx|Vd=xxxx|10|size=10|N=x|0|M=x|0|Vm=xxxx
+// VselgtT1S: VSELGT.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe77ea85 vselgt.f32 s29, s15, s10
+fe38fa24 vselgt.f32 s30, s16, s9
+fe336aa2 vselgt.f32 s12, s7, s5
+fe3c0a07 vselgt.f32 s0, s24, s14
+fe3c7a8d vselgt.f32 s14, s25, s26
+fe3e9aaf vselgt.f32 s18, s29, s31
+fe37aa02 vselgt.f32 s20, s14, s4
+fe308a2e vselgt.f32 s16, s0, s29
+FE7F4A80 vselgt.f32 s9, s31, s0
+FE742A88 vselgt.f32 s5, s9, s16
+FE721A81 vselgt.f32 s3, s5, s2
+FE710A80 vselgt.f32 s1, s3, s0
+FE70FA8F vselgt.f32 s31, s1, s30
+FE7FEA20 vselgt.f32 s29, s30, s1
+FE7FEA85 vselgt.f32 s29, s31, s10
+
+// VSELVS_T1_D 111111100|D=x|cc=01|Vn=xxxx|Vd=xxxx|10|size=11|N=x|0|M=x|0|Vm=xxxx
+// VselvsT1D: VSELVS.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fe5ebb2b vselvs.f64 d27, d14, d27
+fe52db86 vselvs.f64 d29, d18, d6
+fe51cba1 vselvs.f64 d28, d17, d17
+fe577b03 vselvs.f64 d23, d7, d3
+fe51dba5 vselvs.f64 d29, d17, d21
+fe157b05 vselvs.f64 d7, d5, d5
+fe100b8e vselvs.f64 d0, d16, d14
+fe541b20 vselvs.f64 d17, d4, d16
+FE5FFB2F vselvs.f64 d31, d15, d31
+FE588B28 vselvs.f64 d24, d8, d24
+FE504B24 vselvs.f64 d20, d0, d20
+FE5F2B22 vselvs.f64 d18, d15, d18
+FE1FFB80 vselvs.f64 d15, d31, d0
+FE5E0B0F vselvs.f64 d16, d14, d15
+FE5EFB2F vselvs.f64 d31, d14, d31
+
+// VSELVS_T1_H 111111100|D=x|cc=01|Vn=xxxx|Vd=xxxx|10|size=01|N=x|0|M=x|0|Vm=xxxx
+// VselvsT1H: VSELVS.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe5cd90d vselvs.f16 s27, s24, s26
+fe1b790f vselvs.f16 s14, s22, s30
+fe52098c vselvs.f16 s1, s5, s24
+fe521908 vselvs.f16 s3, s4, s16
+fe5c89a2 vselvs.f16 s17, s25, s5
+fe19b9af vselvs.f16 s22, s19, s31
+fe168985 vselvs.f16 s16, s13, s10
+fe5d5929 vselvs.f16 s11, s26, s19
+FE50F900 vselvs.f16 s31, s0, s0
+FE5F4904 vselvs.f16 s9, s30, s8
+FE582901 vselvs.f16 s5, s16, s2
+FE140900 vselvs.f16 s0, s8, s0
+FE11F920 vselvs.f16 s30, s2, s1
+FE50F90D vselvs.f16 s31, s0, s26
+FE50D98D vselvs.f16 s27, s1, s26
+FE5FD90D vselvs.f16 s27, s30, s26
+FE5FD98D vselvs.f16 s27, s31, s26
+
+// VSELVS_T1_S 111111100|D=x|cc=01|Vn=xxxx|Vd=xxxx|10|size=10|N=x|0|M=x|0|Vm=xxxx
+// VselvsT1S: VSELVS.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe548a04 vselvs.f32 s17, s8, s8
+fe1d2a04 vselvs.f32 s4, s26, s8
+fe17caac vselvs.f32 s24, s15, s25
+fe540aac vselvs.f32 s1, s9, s25
+fe546a2d vselvs.f32 s13, s8, s27
+fe1e4a8f vselvs.f32 s8, s29, s30
+fe5d9aa9 vselvs.f32 s19, s27, s19
+fe5c7a04 vselvs.f32 s15, s24, s8
+FE50FA00 vselvs.f32 s31, s0, s0
+FE5F1A08 vselvs.f32 s3, s30, s16
+FE180A02 vselvs.f32 s0, s16, s4
+FE12FA01 vselvs.f32 s30, s4, s2
+FE51FA00 vselvs.f32 s31, s2, s0
+FE508A20 vselvs.f32 s17, s0, s1
+FE508AAF vselvs.f32 s17, s1, s31
+FE5F8A04 vselvs.f32 s17, s30, s8
+FE5F8A84 vselvs.f32 s17, s31, s8

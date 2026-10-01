@@ -1,0 +1,27 @@
+// SADDW_asimddiff_W 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|00|o1=0|1|00|Rn=xxxxx|Rd=xxxxx
+// SaddwAsimddiffW: SADDW  <Vd>.<Ta>, <Vn>.<Ta>, <Vm>.<Tb>
+// SaddwAsimddiffW2: SADDW2  <Vd>.<Ta>, <Vn>.<Ta>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+4E36109A saddw2 v26.8h, v4.8h, v22.16b
+4EB11077 saddw2 v23.2d, v3.2d, v17.4s
+4E2A1185 saddw2 v5.8h, v12.8h, v10.16b
+4E771399 saddw2 v25.4s, v28.4s, v23.8h
+4E231210 saddw2 v16.8h, v16.8h, v3.16b
+0E621189 saddw v9.4s, v12.4s, v2.4h
+4EA710C8 saddw2 v8.2d, v6.2d, v7.4s
+4E23104D saddw2 v13.8h, v2.8h, v3.16b
+0E691328 saddw v8.4s, v25.4s, v9.4h
+0EB012EA saddw v10.2d, v23.2d, v16.2s
+4E731096 saddw2 v22.4s, v4.4s, v19.8h
+4EB8125A saddw2 v26.2d, v18.2d, v24.4s
+0E3C1228 saddw v8.8h, v17.8h, v28.8b
+4E32121F saddw2 v31.8h, v16.8h, v18.16b
+4E721227 saddw2 v7.4s, v17.4s, v18.8h
+4E6512BC saddw2 v28.4s, v21.4s, v5.8h
+4E201000 saddw2 v0.8h, v0.8h, v0.16b
+4E3F13FA saddw2 v26.8h, v31.8h, v31.16b
+4EF6109A UNDEFINED
+0EF6109A UNDEFINED
+4E3C1228 saddw2 v8.8h, v17.8h, v28.16b

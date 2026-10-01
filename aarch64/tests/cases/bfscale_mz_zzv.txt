@@ -1,0 +1,20 @@
+// bfscale_mz_zzv_2x1 1|10|0000|1|size=00|10|Zm=xxxx|10100|0|01|100|Zdn=xxxx|op=0
+// BfscaleMzZzv2x1: BFSCALE  { <Zdn1>.H-<Zdn2>.H }, { <Zdn1>.H-<Zdn2>.H }, <Zm>.H
+// register fields: Zm, Zdn
+C120A180 bfscale {z0.h-z1.h}, {z0.h-z1.h}, z0.h
+C120A18E bfscale {z14.h-z15.h}, {z14.h-z15.h}, z0.h
+C120A19C bfscale {z28.h-z29.h}, {z28.h-z29.h}, z0.h
+C12FA19E bfscale {z30.h-z31.h}, {z30.h-z31.h}, z15.h
+
+// bfscale_mz_zzv_4x1 1|10|0000|1|size=00|10|Zm=xxxx|10101|0|01|100|Zdn=xxx|0|op=0
+// BfscaleMzZzv4x1: BFSCALE  { <Zdn1>.H-<Zdn4>.H }, { <Zdn1>.H-<Zdn4>.H }, <Zm>.H
+// register fields: Zm, Zdn
+C120A998 bfscale {z24.h-z27.h}, {z24.h-z27.h}, z0.h
+C121A988 bfscale {z8.h-z11.h}, {z8.h-z11.h}, z1.h
+C122A994 bfscale {z20.h-z23.h}, {z20.h-z23.h}, z2.h
+C12FA980 bfscale {z0.h-z3.h}, {z0.h-z3.h}, z15.h
+C120A984 bfscale {z4.h-z7.h}, {z4.h-z7.h}, z0.h
+C120A98C bfscale {z12.h-z15.h}, {z12.h-z15.h}, z0.h
+C120A990 bfscale {z16.h-z19.h}, {z16.h-z19.h}, z0.h
+C120A99C bfscale {z28.h-z31.h}, {z28.h-z31.h}, z0.h
+C120A980 bfscale {z0.h-z3.h}, {z0.h-z3.h}, z0.h

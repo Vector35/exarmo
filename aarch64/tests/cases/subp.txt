@@ -1,0 +1,21 @@
+// SUBP_64S_dp_2src sf=1|0|S=0|1|101|0110|Rm=xxxxx|opcode=000000|Rn=xxxxx|Rd=xxxxx
+// Subp64sDp2src: SUBP  <Xd>, <Xn|SP>, <Xm|SP>
+// register fields: Rm, Rn, Rd
+9ADB004D subp x13, x2, x27
+9ADC0375 subp x21, x27, x28
+9AC90232 subp x18, x17, x9
+9ADA01F3 subp x19, x15, x26
+9AC301C1 subp x1, x14, x3
+9AD802E5 subp x5, x23, x24
+9AD101D7 subp x23, x14, x17
+9ADA006D subp x13, x3, x26
+9AD701E3 subp x3, x15, x23
+9ACD02D5 subp x21, x22, x13
+9ADC0168 subp x8, x11, x28
+9AC80184 subp x4, x12, x8
+9ACE0135 subp x21, x9, x14
+9AD8021F subp xzr, x16, x24
+9ADE010B subp x11, x8, lr
+9AC70042 subp x2, x2, x7
+9AC00000 subp x0, x0, x0
+9ADF03ED subp x13, sp, sp

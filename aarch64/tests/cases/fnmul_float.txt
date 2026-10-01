@@ -1,0 +1,66 @@
+// FNMUL_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|op=1|00010|Rn=xxxxx|Rd=xxxxx
+// FnmulDFloatdp2: FNMUL  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E6B8ABB fnmul d27, d21, d11
+1E7889C4 fnmul d4, d14, d24
+1E748A64 fnmul d4, d19, d20
+1E668AF8 fnmul d24, d23, d6
+1E7588CF fnmul d15, d6, d21
+1E6D8BB8 fnmul d24, d29, d13
+1E6C8A98 fnmul d24, d20, d12
+1E678A6E fnmul d14, d19, d7
+1E6B8B5F fnmul d31, d26, d11
+1E66889B fnmul d27, d4, d6
+1E608B19 fnmul d25, d24, d0
+1E698B42 fnmul d2, d26, d9
+1E6F88DB fnmul d27, d6, d15
+1E7D89B0 fnmul d16, d13, d29
+1E728A48 fnmul d8, d18, d18
+1E748963 fnmul d3, d11, d20
+1E7F8800 fnmul d0, d0, d31
+1E6B8BFB fnmul d27, d31, d11
+1E6B8AAB fnmul d11, d21, d11
+
+// FNMUL_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|op=1|00010|Rn=xxxxx|Rd=xxxxx
+// FnmulHFloatdp2: FNMUL  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EE2899F fnmul h31, h12, h2
+1EF18B7A fnmul h26, h27, h17
+1EE1896F fnmul h15, h11, h1
+1EE288B1 fnmul h17, h5, h2
+1EF289FF fnmul h31, h15, h18
+1EEA8BC4 fnmul h4, h30, h10
+1EF58939 fnmul h25, h9, h21
+1EF98842 fnmul h2, h2, h25
+1EEC8AAC fnmul h12, h21, h12
+1EF88AE8 fnmul h8, h23, h24
+1EEC8959 fnmul h25, h10, h12
+1EE28A79 fnmul h25, h19, h2
+1EE88996 fnmul h22, h12, h8
+1EF48A21 fnmul h1, h17, h20
+1EFD8B78 fnmul h24, h27, h29
+1EEB89A1 fnmul h1, h13, h11
+1EE08800 fnmul h0, h0, h0
+1EFF8BFF fnmul h31, h31, h31
+
+// FNMUL_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|op=1|00010|Rn=xxxxx|Rd=xxxxx
+// FnmulSFloatdp2: FNMUL  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E308BB8 fnmul s24, s29, s16
+1E3C8AD3 fnmul s19, s22, s28
+1E3E8804 fnmul s4, s0, s30
+1E3A8BAA fnmul s10, s29, s26
+1E3B8B32 fnmul s18, s25, s27
+1E318ADC fnmul s28, s22, s17
+1E2A8A73 fnmul s19, s19, s10
+1E248ABB fnmul s27, s21, s4
+1E318A1E fnmul s30, s16, s17
+1E298A0E fnmul s14, s16, s9
+1E21883A fnmul s26, s1, s1
+1E3B8B0F fnmul s15, s24, s27
+1E2E8B2D fnmul s13, s25, s14
+1E338847 fnmul s7, s2, s19
+1E298982 fnmul s2, s12, s9
+1E2D8B08 fnmul s8, s24, s13
+1E208BE0 fnmul s0, s31, s0
+1E3F8BBF fnmul s31, s29, s31

@@ -1,0 +1,22 @@
+// frecps_z_zz_ 011|0010|1|size=xx|0|Zm=xxxxx|000|opc=110|Zn=xxxxx|Zd=xxxxx
+// FrecpsZZz: FRECPS  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+65D61BFB frecps z27.d, z31.d, z22.d
+65DF196B frecps z11.d, z11.d, z31.d
+654D1A04 frecps z4.h, z16.h, z13.h
+65C819D8 frecps z24.d, z14.d, z8.d
+65821997 frecps z23.s, z12.s, z2.s
+65DC186C frecps z12.d, z3.d, z28.d
+6596194F frecps z15.s, z10.s, z22.s
+6586192E frecps z14.s, z9.s, z6.s
+65CD1866 frecps z6.d, z3.d, z13.d
+65411970 frecps z16.h, z11.h, z1.h
+65DC1BF2 frecps z18.d, z31.d, z28.d
+65D21AA8 frecps z8.d, z21.d, z18.d
+65801BC4 frecps z4.s, z30.s, z0.s
+65901919 frecps z25.s, z8.s, z16.s
+65D31B42 frecps z2.d, z26.d, z19.d
+659D1BBD frecps z29.s, z29.s, z29.s
+65D61800 frecps z0.d, z0.d, z22.d
+65D61BFF frecps z31.d, z31.d, z22.d
+65161BFB UNDEFINED

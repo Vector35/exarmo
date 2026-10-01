@@ -1,0 +1,45 @@
+// CMGE_asimdmisc_Z 0|Q=x|U=1|0|111|0|size=xx|10000|0100|op=0|10|Rn=xxxxx|Rd=xxxxx
+// CmgeAsimdmiscZ: CMGE  <Vd>.<T>, <Vn>.<T>, #0
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+6E60883B cmge v27.8h, v1.8h, #0x0
+6E208B34 cmge v20.16b, v25.16b, #0x0
+2EA08877 cmge v23.2s, v3.2s, #0x0
+6E608A71 cmge v17.8h, v19.8h, #0x0
+2E2089DA cmge v26.8b, v14.8b, #0x0
+2E208A2B cmge v11.8b, v17.8b, #0x0
+6E6088E9 cmge v9.8h, v7.8h, #0x0
+6EA08874 cmge v20.4s, v3.4s, #0x0
+6E208998 cmge v24.16b, v12.16b, #0x0
+6EE08BA3 cmge v3.2d, v29.2d, #0x0
+6E60898C cmge v12.8h, v12.8h, #0x0
+6E608B71 cmge v17.8h, v27.8h, #0x0
+2E20889F cmge v31.8b, v4.8b, #0x0
+2EA088EA cmge v10.2s, v7.2s, #0x0
+2E6089C4 cmge v4.4h, v14.4h, #0x0
+2E60885A cmge v26.4h, v2.4h, #0x0
+6E608800 cmge v0.8h, v0.8h, #0x0
+6E608BFB cmge v27.8h, v31.8h, #0x0
+2EE0883B UNDEFINED
+
+// CMGE_asisdmisc_Z 01|U=1|1|111|0|size=11|10000|0100|op=0|10|Rn=xxxxx|Rd=xxxxx
+// CmgeAsisdmiscZ: CMGE  <d>, <n>, #0
+// register fields: Rn, Rd
+7EE08B9E cmge d30, d28, #0x0
+7EE08B18 cmge d24, d24, #0x0
+7EE08A7D cmge d29, d19, #0x0
+7EE08B1D cmge d29, d24, #0x0
+7EE08934 cmge d20, d9, #0x0
+7EE08AF5 cmge d21, d23, #0x0
+7EE08B40 cmge d0, d26, #0x0
+7EE0897A cmge d26, d11, #0x0
+7EE08AD3 cmge d19, d22, #0x0
+7EE0889E cmge d30, d4, #0x0
+7EE08869 cmge d9, d3, #0x0
+7EE08B0C cmge d12, d24, #0x0
+7EE08A22 cmge d2, d17, #0x0
+7EE088A5 cmge d5, d5, #0x0
+7EE08B31 cmge d17, d25, #0x0
+7EE08B6E cmge d14, d27, #0x0
+7EE0881F cmge d31, d0, #0x0
+7EE08BFE cmge d30, d31, #0x0

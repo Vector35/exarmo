@@ -1,0 +1,83 @@
+// RSB_r_A1 cond=xxxx|0000|opc=011|S=0|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// RsbRA1: RSB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+c0691ee8 rsbgt r1, r9, r8, ror #29
+a06132e6 rsbge r3, r1, r6, ror #5
+c06d0127 rsbgt r0, sp, r7, lsr #2
+906c87ab rsbls r8, r12, r11, lsr #15
+d06afbeb rsble pc, r10, r11, ror #23
+b06ba12a rsblt r10, r11, r10, lsr #2
+3065a3a0 rsblo r10, r5, r0, lsr #7
+30624b40 rsblo r4, r2, r0, asr #22
+// Binary Ninja's tests
+106442a5 rsbne r4, r4, r5, lsr #5
+306542a6 rsblo r4, r5, r6, lsr #5
+e0644005 rsb r4, r4, r5
+e0644285 rsb r4, r4, r5, lsl #5
+e06442a5 rsb r4, r4, r5, lsr #5
+e06442c5 rsb r4, r4, r5, asr #5
+e06442e5 rsb r4, r4, r5, ror #5
+e0654006 rsb r4, r5, r6
+e0654286 rsb r4, r5, r6, lsl #5
+e06542a6 rsb r4, r5, r6, lsr #5
+e06542c6 rsb r4, r5, r6, asr #5
+e06542e6 rsb r4, r5, r6, ror #5
+00601FEF rsbeq r1, r0, pc, ror #0x1f
+F0691EE8 UNALLOCATED
+806F1868 rsbhi r1, pc, r8, ror #0x10
+40691469 rsbmi r1, r9, r9, ror #0x8
+20691268 rsbcs r1, r9, r8, ror #0x4
+C06910E8 rsbgt r1, r9, r8, ror #0x1
+
+// RSB_r_A1_RRX cond=xxxx|0000|opc=011|S=0|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// RsbRA1Rrx: RSB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+4062d060 rsbmi sp, r2, r0, rrx
+8061906d rsbhi r9, r1, sp, rrx
+90659065 rsbls r9, r5, r5, rrx
+b067f06d rsblt pc, r7, sp, rrx
+606f106e rsbvs r1, pc, lr, rrx
+506b6069 rsbpl r6, r11, r9, rrx
+d065e062 rsble lr, r5, r2, rrx
+c06b3061 rsbgt r3, r11, r1, rrx
+// Binary Ninja's tests
+e0644065 rsb r4, r4, r5, rrx
+e0654066 rsb r4, r5, r6, rrx
+0060006F rsbeq r0, r0, pc, rrx
+F062D060 UNALLOCATED
+2062D06D rsbcs sp, r2, sp, rrx
+1062D060 rsbne sp, r2, r0, rrx
+
+// RSBS_r_A1 cond=xxxx|0000|opc=011|S=1|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// RsbsRA1: RSBS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+9073558d rsbsls r5, r3, sp, lsl #11
+407ce8a1 rsbsmi lr, r12, r1, lsr #17
+a0734902 rsbsge r4, r3, r2, lsl #18
+d077f329 rsbsle pc, r7, r9, lsr #6
+007db0e2 rsbseq r11, sp, r2, ror #1
+b07032a8 rsbslt r3, r0, r8, lsr #5
+00729109 rsbseq r9, r2, r9, lsl #2
+c074b7e0 rsbsgt r11, r4, r0, ror #15
+F073558D UNALLOCATED
+807F004F rsbshi r0, pc, pc, asr #0x20
+20733F8D rsbscs r3, r3, sp, lsl #0x1f
+10735803 rsbsne r5, r3, r3, lsl #0x10
+9073540D rsbsls r5, r3, sp, lsl #0x8
+9073520D rsbsls r5, r3, sp, lsl #0x4
+
+// RSBS_r_A1_RRX cond=xxxx|0000|opc=011|S=1|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// RsbsRA1Rrx: RSBS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+5075f067 rsbspl pc, r5, r7, rrx
+007eb062 rsbseq r11, lr, r2, rrx
+907f5067 rsbsls r5, pc, r7, rrx
+7071c06c rsbsvc r12, r1, r12, rrx
+a074306e rsbsge r3, r4, lr, rrx
+c076b066 rsbsgt r11, r6, r6, rrx
+8076406e rsbshi r4, r6, lr, rrx
+50741066 rsbspl r1, r4, r6, rrx
+F075F067 UNALLOCATED
+40700060 rsbsmi r0, r0, r0, rrx
+2075506F rsbscs r5, r5, pc, rrx
+1075F067 rsbsne pc, r5, r7, rrx

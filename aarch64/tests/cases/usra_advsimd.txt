@@ -1,0 +1,104 @@
+// USRA_asimdshf_R 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|00|o1=0|o0=1|0|1|Rn=xxxxx|Rd=xxxxx
+// UsraAsimdshfR: USRA  <Vd>.<T>, <Vn>.<T>, #<shift>
+// read together by <T>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+6F3A1743 usra v3.4s, v26.4s, #0x6
+6F7B1536 usra v22.2d, v9.2d, #0x5
+2F141460 usra v0.4h, v3.4h, #0xc
+6F19152C usra v12.8h, v9.8h, #0x7
+6F7A1514 usra v20.2d, v8.2d, #0x6
+2F2F165E usra v30.2s, v18.2s, #0x11
+2F1D1747 usra v7.4h, v26.4h, #0x3
+6F7A173D usra v29.2d, v25.2d, #0x6
+6F7216B2 usra v18.2d, v21.2d, #0xe
+6F7B17B0 usra v16.2d, v29.2d, #0x5
+6F1A1656 usra v22.8h, v18.8h, #0x6
+6F1D1447 usra v7.8h, v2.8h, #0x3
+2F371708 usra v8.2s, v24.2s, #0x9
+6F3416AB usra v11.4s, v21.4s, #0xc
+2F3D1452 usra v18.2s, v2.2s, #0x3
+6F2C14E4 usra v4.4s, v7.4s, #0x14
+6F38141F usra v31.4s, v0.4s, #0x8
+6F3E17E3 usra v3.4s, v31.4s, #0x2
+2F7A1743 UNDEFINED
+6F78175A usra v26.2d, v26.2d, #0x8
+6F791743 usra v3.2d, v26.2d, #0x7
+6F7C1743 usra v3.2d, v26.2d, #0x4
+6F7D1743 usra v3.2d, v26.2d, #0x3
+6F7E1743 usra v3.2d, v26.2d, #0x2
+6F7F1743 usra v3.2d, v26.2d, #0x1
+6F421743 usra v3.2d, v26.2d, #0x3e
+6F221743 usra v3.4s, v26.4s, #0x1e
+6F0A1743 usra v3.16b, v26.16b, #0x6
+
+// USRA_asisdshf_R 01|U=1|1|111|10|immh=1xxx|immb=xxx|00|o1=0|o0=1|0|1|Rn=xxxxx|Rd=xxxxx
+// UsraAsisdshfR: USRA  <d>, <n>, #<shift>
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+7F46175D usra d29, d26, #0x3a
+7F7715D2 usra d18, d14, #0x9
+7F691735 usra d21, d25, #0x17
+7F7816C2 usra d2, d22, #0x8
+7F781781 usra d1, d28, #0x8
+7F561600 usra d0, d16, #0x2a
+7F43147F usra d31, d3, #0x3d
+7F5F15A3 usra d3, d13, #0x21
+7F7B16A4 usra d4, d21, #0x5
+7F4B17A0 usra d0, d29, #0x35
+7F5E165A usra d26, d18, #0x22
+7F43148E usra d14, d4, #0x3d
+7F751459 usra d25, d2, #0xb
+7F40146A usra d10, d3, #0x40
+7F7E14F3 usra d19, d7, #0x2
+7F661696 usra d22, d20, #0x1a
+7F42141D usra d29, d0, #0x3e
+7F4417FD usra d29, d31, #0x3c
+7F41175A usra d26, d26, #0x3f
+7F45175D usra d29, d26, #0x3b
+7F47175D usra d29, d26, #0x39
+7F48175D usra d29, d26, #0x38
+7F49175D usra d29, d26, #0x37
+7F4A175D usra d29, d26, #0x36
+7F4C175D usra d29, d26, #0x34
+7F4D175D usra d29, d26, #0x33
+7F4E175D usra d29, d26, #0x32
+7F4F175D usra d29, d26, #0x31
+7F50175D usra d29, d26, #0x30
+7F51175D usra d29, d26, #0x2f
+7F52175D usra d29, d26, #0x2e
+7F53175D usra d29, d26, #0x2d
+7F54175D usra d29, d26, #0x2c
+7F55175D usra d29, d26, #0x2b
+7F57175D usra d29, d26, #0x29
+7F58175D usra d29, d26, #0x28
+7F59175D usra d29, d26, #0x27
+7F5A175D usra d29, d26, #0x26
+7F5B175D usra d29, d26, #0x25
+7F5C175D usra d29, d26, #0x24
+7F5D175D usra d29, d26, #0x23
+7F60175D usra d29, d26, #0x20
+7F61175D usra d29, d26, #0x1f
+7F62175D usra d29, d26, #0x1e
+7F63175D usra d29, d26, #0x1d
+7F64175D usra d29, d26, #0x1c
+7F65175D usra d29, d26, #0x1b
+7F67175D usra d29, d26, #0x19
+7F68175D usra d29, d26, #0x18
+7F6A175D usra d29, d26, #0x16
+7F6B175D usra d29, d26, #0x15
+7F6C175D usra d29, d26, #0x14
+7F6D175D usra d29, d26, #0x13
+7F6E175D usra d29, d26, #0x12
+7F6F175D usra d29, d26, #0x11
+7F70175D usra d29, d26, #0x10
+7F71175D usra d29, d26, #0xf
+7F72175D usra d29, d26, #0xe
+7F73175D usra d29, d26, #0xd
+7F74175D usra d29, d26, #0xc
+7F76175D usra d29, d26, #0xa
+7F79175D usra d29, d26, #0x7
+7F7A175D usra d29, d26, #0x6
+7F7C175D usra d29, d26, #0x4
+7F7D175D usra d29, d26, #0x3
+7F7F175D usra d29, d26, #0x1

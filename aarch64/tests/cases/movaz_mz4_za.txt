@@ -1,0 +1,51 @@
+// movaz_mz4_za_b1 1|10|0000|0|size=00|000|1|1|0|V=x|Rs=xx|001|10|0|off2=xx|Zd=xxx|00
+// MovazMz4ZaB1: MOVAZ  { <Zd1>.B-<Zd4>.B }, ZA0<HV>.B[<Ws>, <offs1>:<offs4>]
+// register fields: Rs, Zd
+C0060618 movaz {z24.b-z27.b}, za0h.b[w12, 0:3]
+C0060634 movaz {z20.b-z23.b}, za0h.b[w12, 4:7]
+C0060650 movaz {z16.b-z19.b}, za0h.b[w12, 8:11]
+C006A660 movaz {z0.b-z3.b}, za0v.b[w13, 12:15]
+C0064604 movaz {z4.b-z7.b}, za0h.b[w14, 0:3]
+C0066608 movaz {z8.b-z11.b}, za0h.b[w15, 0:3]
+C006060C movaz {z12.b-z15.b}, za0h.b[w12, 0:3]
+C006061C movaz {z28.b-z31.b}, za0h.b[w12, 0:3]
+C0060600 movaz {z0.b-z3.b}, za0h.b[w12, 0:3]
+
+// movaz_mz4_za_d1 1|10|0000|0|size=11|000|1|1|0|V=x|Rs=xx|001|10|ZAn=xxx|Zd=xxx|00
+// MovazMz4ZaD1: MOVAZ  { <Zd1>.D-<Zd4>.D }, <ZAn><HV>.D[<Ws>, <offs1>:<offs4>]
+// register fields: Rs, ZAn, Zd
+C0C60600 movaz {z0.d-z3.d}, za0h.d[w12, 0:3]
+C0C6A624 movaz {z4.d-z7.d}, za1v.d[w13, 0:3]
+C0C64648 movaz {z8.d-z11.d}, za2h.d[w14, 0:3]
+C0C6666C movaz {z12.d-z15.d}, za3h.d[w15, 0:3]
+C0C60690 movaz {z16.d-z19.d}, za4h.d[w12, 0:3]
+C0C606B4 movaz {z20.d-z23.d}, za5h.d[w12, 0:3]
+C0C606D8 movaz {z24.d-z27.d}, za6h.d[w12, 0:3]
+C0C606FC movaz {z28.d-z31.d}, za7h.d[w12, 0:3]
+C0C6264C movaz {z12.d-z15.d}, za2h.d[w13, 0:3]
+
+// movaz_mz4_za_h1 1|10|0000|0|size=01|000|1|1|0|V=x|Rs=xx|001|10|0|ZAn=x|o1=x|Zd=xxx|00
+// MovazMz4ZaH1: MOVAZ  { <Zd1>.H-<Zd4>.H }, <ZAn><HV>.H[<Ws>, <offs1>:<offs4>]
+// register fields: Rs, ZAn, Zd
+C0460608 movaz {z8.h-z11.h}, za0h.h[w12, 0:3]
+C0460624 movaz {z4.h-z7.h}, za0h.h[w12, 4:7]
+C0460640 movaz {z0.h-z3.h}, za1h.h[w12, 0:3]
+C046A60C movaz {z12.h-z15.h}, za0v.h[w13, 0:3]
+C0464610 movaz {z16.h-z19.h}, za0h.h[w14, 0:3]
+C0466614 movaz {z20.h-z23.h}, za0h.h[w15, 0:3]
+C0460618 movaz {z24.h-z27.h}, za0h.h[w12, 0:3]
+C046061C movaz {z28.h-z31.h}, za0h.h[w12, 0:3]
+C0460600 movaz {z0.h-z3.h}, za0h.h[w12, 0:3]
+
+// movaz_mz4_za_w1 1|10|0000|0|size=10|000|1|1|0|V=x|Rs=xx|001|10|0|ZAn=xx|Zd=xxx|00
+// MovazMz4ZaW1: MOVAZ  { <Zd1>.S-<Zd4>.S }, <ZAn><HV>.S[<Ws>, <offs1>:<offs4>]
+// register fields: Rs, ZAn, Zd
+C0860614 movaz {z20.s-z23.s}, za0h.s[w12, 0:3]
+C0860630 movaz {z16.s-z19.s}, za1h.s[w12, 0:3]
+C086064C movaz {z12.s-z15.s}, za2h.s[w12, 0:3]
+C086A660 movaz {z0.s-z3.s}, za3v.s[w13, 0:3]
+C0864604 movaz {z4.s-z7.s}, za0h.s[w14, 0:3]
+C0866608 movaz {z8.s-z11.s}, za0h.s[w15, 0:3]
+C0860618 movaz {z24.s-z27.s}, za0h.s[w12, 0:3]
+C086061C movaz {z28.s-z31.s}, za0h.s[w12, 0:3]
+C0860600 movaz {z0.s-z3.s}, za0h.s[w12, 0:3]

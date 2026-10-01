@@ -1,0 +1,16 @@
+// CLZ_T1 111|11010|1|op1=011|Rn=xxxx|1111|Rd=xxxx|10|op2=00|Rm=xxxx
+// ClzT1: CLZ{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rd, Rm
+// IT state read: condition
+fabdf782 clz r7, r2 (unpredictable)
+fab5f889 clz r8, r9 (unpredictable)
+fab6f68a clz r6, r10 (unpredictable)
+fab4fd84 clz sp, r4
+fabffc88 clz r12, r8 (unpredictable)
+fabffb8d clz r11, sp (unpredictable)
+fab4f685 clz r6, r5 (unpredictable)
+fab1f68d clz r6, sp (unpredictable)
+FAB0F080 clz r0, r0
+FAB8FF8F clz pc, pc (unpredictable)
+FAB2F787 clz r7, r7 (unpredictable)
+FABDF782 [ne] clzne r7, r2 (unpredictable)

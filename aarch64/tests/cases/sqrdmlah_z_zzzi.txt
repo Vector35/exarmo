@@ -1,0 +1,48 @@
+// sqrdmlah_z_zzzi_d 010|0010|0|size=11|1|i1=x|Zm=xxxx|00010|S=0|Zn=xxxxx|Zda=xxxxx
+// SqrdmlahZZzziD: SQRDMLAH  <Zda>.D, <Zn>.D, <Zm>.D[<imm>]
+// register fields: Zm, Zn, Zda
+44E11023 sqrdmlah z3.d, z1.d, z1.d[0]
+44F0127C sqrdmlah z28.d, z19.d, z0.d[1]
+44FE1229 sqrdmlah z9.d, z17.d, z14.d[1]
+44E3131F sqrdmlah z31.d, z24.d, z3.d[0]
+44F3102D sqrdmlah z13.d, z1.d, z3.d[1]
+44EC11BE sqrdmlah z30.d, z13.d, z12.d[0]
+44FF1392 sqrdmlah z18.d, z28.d, z15.d[1]
+44ED13AF sqrdmlah z15.d, z29.d, z13.d[0]
+44E11000 sqrdmlah z0.d, z0.d, z1.d[0]
+44E113E3 sqrdmlah z3.d, z31.d, z1.d[0]
+44E11021 sqrdmlah z1.d, z1.d, z1.d[0]
+
+// sqrdmlah_z_zzzi_h 010|0010|0|0|i3h=x|1|i3l=xx|Zm=xxx|00010|S=0|Zn=xxxxx|Zda=xxxxx
+// SqrdmlahZZzziH: SQRDMLAH  <Zda>.H, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+44761078 sqrdmlah z24.h, z3.h, z6.h[6]
+446211DC sqrdmlah z28.h, z14.h, z2.h[4]
+446D13FD sqrdmlah z29.h, z31.h, z5.h[5]
+447B121A sqrdmlah z26.h, z16.h, z3.h[7]
+4468127E sqrdmlah z30.h, z19.h, z0.h[5]
+443711EC sqrdmlah z12.h, z15.h, z7.h[2]
+44271335 sqrdmlah z21.h, z25.h, z7.h[0]
+443E10F6 sqrdmlah z22.h, z7.h, z6.h[3]
+44711000 sqrdmlah z0.h, z0.h, z1.h[6]
+4474107F sqrdmlah z31.h, z3.h, z4.h[6]
+442E10D8 sqrdmlah z24.h, z6.h, z6.h[1]
+44761066 sqrdmlah z6.h, z3.h, z6.h[6]
+
+// sqrdmlah_z_zzzi_s 010|0010|0|size=10|1|i2=xx|Zm=xxx|00010|S=0|Zn=xxxxx|Zda=xxxxx
+// SqrdmlahZZzziS: SQRDMLAH  <Zda>.S, <Zn>.S, <Zm>.S[<imm>]
+// register fields: Zm, Zn, Zda
+44B8108F sqrdmlah z15.s, z4.s, z0.s[3]
+44A6112F sqrdmlah z15.s, z9.s, z6.s[0]
+44AD12C6 sqrdmlah z6.s, z22.s, z5.s[1]
+44BA126E sqrdmlah z14.s, z19.s, z2.s[3]
+44AD13EE sqrdmlah z14.s, z31.s, z5.s[1]
+44AC128D sqrdmlah z13.s, z20.s, z4.s[1]
+44A21232 sqrdmlah z18.s, z17.s, z2.s[0]
+44AD1271 sqrdmlah z17.s, z19.s, z5.s[1]
+44B11000 sqrdmlah z0.s, z0.s, z1.s[2]
+44BB109F sqrdmlah z31.s, z4.s, z3.s[3]
+44BF108F sqrdmlah z15.s, z4.s, z7.s[3]
+44B8100F sqrdmlah z15.s, z0.s, z0.s[3]
+44B81080 sqrdmlah z0.s, z4.s, z0.s[3]

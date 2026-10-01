@@ -1,0 +1,46 @@
+// VRHADD_A1_D 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VrhaddA1D: VRHADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f32b1188 vrhadd.u32 d1, d27, d8
+f3096106 vrhadd.u8 d6, d9, d6
+f22441ae vrhadd.s32 d4, d20, d30
+f24bb18b vrhadd.s8 d27, d27, d11
+f24cb10f vrhadd.s8 d27, d12, d15
+f20ae12a vrhadd.s8 d14, d10, d26
+f253f10c vrhadd.s16 d31, d3, d12
+f24f6126 vrhadd.s8 d22, d15, d22
+F33B1188 UNDEFINED
+F3100180 vrhadd.u16 d0, d16, d0
+F3288184 vrhadd.u32 d8, d24, d4
+F3222182 vrhadd.u32 d2, d18, d2
+F3210181 vrhadd.u32 d0, d17, d1
+F23B1188 UNDEFINED
+F320F100 vrhadd.u32 d15, d0, d0
+F36001A0 vrhadd.u32 d16, d16, d16
+F32F11AF vrhadd.u32 d1, d31, d31
+
+// VRHADD_A1_Q 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VrhaddA1Q: VRHADD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f24a81ce vrhadd.s8 q12, q13, q7
+f36081c6 vrhadd.u32 q12, q8, q3
+f358814a vrhadd.u16 q12, q4, q5
+f204e1c2 vrhadd.s8 q7, q10, q1
+f22c81cc vrhadd.s32 q4, q14, q6
+f360c168 vrhadd.u32 q14, q0, q12
+f302e142 vrhadd.u8 q7, q1, q1
+f22e21c2 vrhadd.s32 q1, q15, q1
+F27FF1CF UNDEFINED
+F27111C1 UNDEFINED
+F25A01C0 vrhadd.s16 q8, q13, q0
+F24A41C4 vrhadd.s8 q10, q13, q2
+F33FF14F UNDEFINED
+F20A01C0 vrhadd.s8 q0, q13, q0
+F24A01E0 vrhadd.s8 q8, q13, q8
+F24FF1EF UNDEFINED

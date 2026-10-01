@@ -1,0 +1,21 @@
+// ADDP_asisdpair_only 01|U=0|1|111|0|size=11|11000|opcode=11011|10|Rn=xxxxx|Rd=xxxxx
+// AddpAsisdpairOnly: ADDP  <d>, <Vn>.2D
+// register fields: Rn, Rd
+5EF1B94B addp d11, v10.2d
+5EF1BA04 addp d4, v16.2d
+5EF1BBC5 addp d5, v30.2d
+5EF1BAA4 addp d4, v21.2d
+5EF1BB12 addp d18, v24.2d
+5EF1B826 addp d6, v1.2d
+5EF1B8B5 addp d21, v5.2d
+5EF1BBAA addp d10, v29.2d
+5EF1B8AC addp d12, v5.2d
+5EF1B9BD addp d29, v13.2d
+5EF1BBC4 addp d4, v30.2d
+5EF1B9A7 addp d7, v13.2d
+5EF1B9A8 addp d8, v13.2d
+5EF1BBDC addp d28, v30.2d
+5EF1BA07 addp d7, v16.2d
+5EF1B949 addp d9, v10.2d
+5EF1B800 addp d0, v0.2d
+5EF1BBFF addp d31, v31.2d

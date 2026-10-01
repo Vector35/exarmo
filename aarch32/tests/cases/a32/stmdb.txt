@@ -1,0 +1,47 @@
+// STMDB_A1 cond=xxxx|10|0|P=1|U=0|op=0|W=x|L=0|Rn=xxxx|register_list=xxxxxxxxxxxxxxxx
+// PushStmdbA1: PUSH{<c>}{<q>}  <registers>
+// StmdbA1: STMDB{<c>}{<q>}  <Rn>{<!>}, <registers>
+// read together by the PUSH alias: W, Rn, register_list
+// register fields: Rn
+// form chosen on: W, Rn, register_list
+090c066c stmdbeq r12, {r2, r3, r5, r6, r9, r10}
+09099422 stmdbeq r9, {r1, r5, r10, r12, pc}
+39017862 stmdblo r1, {r1, r5, r6, r11, r12, sp, lr}
+e924de2a stmdb r4!, {r1, r3, r5, r9, r10, r11, r12, lr, pc}
+290b35c2 stmdbhs r11, {r1, r6, r7, r8, r10, r12, sp}
+9900007f stmdbls r0, {r0, r1, r2, r3, r4, r5, r6}
+b9097558 stmdblt r9, {r3, r4, r6, r8, r10, r12, sp, lr}
+890c6126 stmdbhi r12, {r1, r2, r5, r8, sp, lr}
+// Binary Ninja's tests
+e906017a stmdb r6, {r1, r3, r4, r5, r6, r8}
+e90d207a stmdb sp, {r1, r3, r4, r5, r6, sp}
+e92020a2 stmdb r0!, {r1, r5, r7, sp}
+e92d0780 push {r7, r8, r9, r10}
+F90C066C UNALLOCATED
+490F0000 stmdbmi pc, {} (unpredictable)
+190CFFFF stmdbne r12, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc}
+090C8000 stmdbeq r12, {pc}
+090C4000 stmdbeq r12, {lr}
+090C2000 stmdbeq r12, {sp}
+090C1000 stmdbeq r12, {r12}
+090C0800 stmdbeq r12, {r11}
+090C0400 stmdbeq r12, {r10}
+090C0200 stmdbeq r12, {r9}
+090C0100 stmdbeq r12, {r8}
+090C0080 stmdbeq r12, {r7}
+090C0040 stmdbeq r12, {r6}
+090C0020 stmdbeq r12, {r5}
+090C0010 stmdbeq r12, {r4}
+090C0008 stmdbeq r12, {r3}
+090C0004 stmdbeq r12, {r2}
+090C0002 stmdbeq r12, {r1}
+090C0001 stmdbeq r12, {r0}
+09000000 stmdbeq r0, {} (unpredictable)
+0900FFFF stmdbeq r0, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc}
+090F0000 stmdbeq pc, {} (unpredictable)
+090FFFFF stmdbeq pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+09200000 stmdbeq r0!, {} (unpredictable)
+0920FFFF stmdbeq r0!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc}
+092F0000 stmdbeq pc!, {} (unpredictable)
+092FFFFF stmdbeq pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+092DFFFF pusheq {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc}

@@ -1,0 +1,15 @@
+// IT_T1 1011|1111|firstcond=xxxx|mask=xxxx
+// ItT1: IT{<x>{<y>{<z>}}}{<q>}  <cond>
+bf01 itttt eq
+bf02 ittt eq
+bf03 ittte eq
+bf04 itt eq
+bf05 ittet eq
+bf06 itte eq
+bf07 ittee eq
+bf08 it eq
+BFF0 reserved hint
+BF8F iteee hi
+BF41 itttt mi
+BF21 itttt cs
+BF11 iteee ne

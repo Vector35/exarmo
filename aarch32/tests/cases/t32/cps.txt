@@ -1,0 +1,101 @@
+// CPS_T2_AS 111100111010(1)(1)(1)(1)10(0)0(0)|imod=00|M=1|A=x|I=x|F=x|mode=xxxxx
+// CpsT2As: CPS{<q>}  #<mode>
+F3A08100 cps #0x0 (unpredictable)
+F3AFA9FF cps #0x1f (unpredictable)
+F3A88110 cps #0x10 (unpredictable)
+F3A48108 cps #0x8 (unpredictable)
+F3A28104 cps #0x4 (unpredictable)
+F3A18102 cps #0x2 (unpredictable)
+F3A0A101 cps #0x1 (unpredictable)
+F3A08900 cps #0x0 (unpredictable)
+F3AF8100 cps #0x0
+F3A0A900 cps #0x0 (unpredictable)
+
+// CPSID_T1_AS 1011011001|op=1|im=1|(0)|A=x|I=x|F=x
+// CpsidT1As: CPSID{<q>}  <iflags>
+// read together by <iflags>: A, I, F
+b670 cpsid #0 (unpredictable)
+b671 cpsid f
+b672 cpsid i
+b673 cpsid if
+b674 cpsid a
+b675 cpsid af
+b676 cpsid ai
+b677 cpsid aif
+B678 cpsid #0x0 (unpredictable)
+
+// CPSID_T2_AS 111100111010(1)(1)(1)(1)10(0)0(0)|imod=11|M=0|A=x|I=x|F=x|mode=xxxxx
+// CpsidT2As: CPSID.W  <iflags>
+// read together by <iflags>: A, I, F
+F3A08600 cpsid #0x0 (unpredictable)
+F3AFAEFF cpsid aif (unpredictable)
+F3A88610 cpsid #0x0 (unpredictable)
+F3A48628 cpsid f (unpredictable)
+F3A28644 cpsid i (unpredictable)
+F3A18662 cpsid if (unpredictable)
+F3A0A681 cpsid a (unpredictable)
+F3A08EA0 cpsid af (unpredictable)
+F3A086C0 cpsid ai (unpredictable)
+F3A086E0 cpsid aif (unpredictable)
+F3AF8600 cpsid #0x0 (unpredictable)
+F3A0AE00 cpsid #0x0 (unpredictable)
+
+// CPSID_T2_ASM 111100111010(1)(1)(1)(1)10(0)0(0)|imod=11|M=1|A=x|I=x|F=x|mode=xxxxx
+// CpsidT2Asm: CPSID{<q>}  <iflags>, #<mode>
+// read together by <iflags>: A, I, F
+F3A08700 cpsid #0x0, #0x0 (unpredictable)
+F3AFAFFF cpsid aif, #0x1f (unpredictable)
+F3A88710 cpsid #0x0, #0x10 (unpredictable)
+F3A48728 cpsid f, #0x8 (unpredictable)
+F3A28744 cpsid i, #0x4 (unpredictable)
+F3A18762 cpsid if, #0x2 (unpredictable)
+F3A0A781 cpsid a, #0x1 (unpredictable)
+F3A08FA0 cpsid af, #0x0 (unpredictable)
+F3A087C0 cpsid ai, #0x0 (unpredictable)
+F3A087E0 cpsid aif, #0x0 (unpredictable)
+F3AF8700 cpsid #0x0, #0x0 (unpredictable)
+F3A0AF00 cpsid #0x0, #0x0 (unpredictable)
+
+// CPSIE_T1_AS 1011011001|op=1|im=0|(0)|A=x|I=x|F=x
+// CpsieT1As: CPSIE{<q>}  <iflags>
+// read together by <iflags>: A, I, F
+b660 cpsie #0 (unpredictable)
+b661 cpsie f
+b662 cpsie i
+b663 cpsie if
+b664 cpsie a
+b665 cpsie af
+b666 cpsie ai
+b667 cpsie aif
+B668 cpsie #0x0 (unpredictable)
+
+// CPSIE_T2_AS 111100111010(1)(1)(1)(1)10(0)0(0)|imod=10|M=0|A=x|I=x|F=x|mode=xxxxx
+// CpsieT2As: CPSIE.W  <iflags>
+// read together by <iflags>: A, I, F
+F3A08400 cpsie #0x0 (unpredictable)
+F3AFACFF cpsie aif (unpredictable)
+F3A88410 cpsie #0x0 (unpredictable)
+F3A48428 cpsie f (unpredictable)
+F3A28444 cpsie i (unpredictable)
+F3A18462 cpsie if (unpredictable)
+F3A0A481 cpsie a (unpredictable)
+F3A08CA0 cpsie af (unpredictable)
+F3A084C0 cpsie ai (unpredictable)
+F3A084E0 cpsie aif (unpredictable)
+F3AF8400 cpsie #0x0 (unpredictable)
+F3A0AC00 cpsie #0x0 (unpredictable)
+
+// CPSIE_T2_ASM 111100111010(1)(1)(1)(1)10(0)0(0)|imod=10|M=1|A=x|I=x|F=x|mode=xxxxx
+// CpsieT2Asm: CPSIE{<q>}  <iflags>, #<mode>
+// read together by <iflags>: A, I, F
+F3AFADFF cpsie aif, #0x1f (unpredictable)
+F3A88510 cpsie #0x0, #0x10 (unpredictable)
+F3A48528 cpsie f, #0x8 (unpredictable)
+F3A28544 cpsie i, #0x4 (unpredictable)
+F3A18562 cpsie if, #0x2 (unpredictable)
+F3A0A581 cpsie a, #0x1 (unpredictable)
+F3A08DA0 cpsie af, #0x0 (unpredictable)
+F3A085C0 cpsie ai, #0x0 (unpredictable)
+F3A085E0 cpsie aif, #0x0 (unpredictable)
+F3AF85FF cpsie aif, #0x1f
+F3A0ADFF cpsie aif, #0x1f (unpredictable)

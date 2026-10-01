@@ -1,0 +1,9 @@
+// sqcvtun_z_mz2_ 010|0010|1|0|tszh=0|1|tszl=10|00|1|0|10|opc=10|0|Zn=xxxx|0|Zd=xxxxx
+// SqcvtunZMz2: SQCVTUN  <Zd>.H, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+45315003 sqcvtun z3.h, {z0.s-z1.s}
+4531500A sqcvtun z10.h, {z0.s-z1.s}
+45315011 sqcvtun z17.h, {z0.s-z1.s}
+453153C0 sqcvtun z0.h, {z30.s-z31.s}
+4531501F sqcvtun z31.h, {z0.s-z1.s}
+45315000 sqcvtun z0.h, {z0.s-z1.s}

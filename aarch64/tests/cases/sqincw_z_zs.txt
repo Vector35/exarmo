@@ -1,0 +1,21 @@
+// sqincw_z_zs_ 000|0010|0|size=10|1|0|imm4=xxxx|11|00|D=0|U=0|pattern=xxxxx|Zdn=xxxxx
+// SqincwZZs: SQINCW  <Zdn>.S{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04A0C3BF sqincw z31.s, mul4
+04AFC384 sqincw z4.s, #0x1c, mul #0x10
+04A3C173 sqincw z19.s, vl64, mul #0x4
+04ACC07E sqincw z30.s, vl3, mul #0xd
+04A6C019 sqincw z25.s, pow2, mul #0x7
+04A0C179 sqincw z25.s, vl64
+04A6C122 sqincw z2.s, vl16, mul #0x7
+04A5C226 sqincw z6.s, #0x11, mul #0x6
+04ABC05B sqincw z27.s, vl2, mul #0xc
+04A8C022 sqincw z2.s, vl1, mul #0x9
+04A2C21B sqincw z27.s, #0x10, mul #0x3
+04A5C1C2 sqincw z2.s, #0xe, mul #0x6
+04A8C080 sqincw z0.s, vl4, mul #0x9
+04A3C2AA sqincw z10.s, #0x15, mul #0x4
+04AFC18E sqincw z14.s, vl128, mul #0x10
+04AFC3F8 sqincw z24.s, all, mul #0x10
+04A4C11F sqincw z31.s, vl8, mul #0x5
+04A1C3BF sqincw z31.s, mul4, mul #0x2

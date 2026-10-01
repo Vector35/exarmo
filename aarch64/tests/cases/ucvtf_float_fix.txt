@@ -1,0 +1,165 @@
+// UCVTF_D32_float2fix sf=0|0|S=0|11110|ftype=01|0|rmode=00|opcode=011|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// UcvtfD32Float2fix: UCVTF  <Dd>, <Wn>, #<fbits>
+// register fields: Rn, Rd
+1E438472 ucvtf d18, w3, #0x1f
+1E4390B9 ucvtf d25, w5, #0x1c
+1E43F936 ucvtf d22, w9, #0x2
+1E43F78C ucvtf d12, w28, #0x3
+1E43C062 ucvtf d2, w3, #0x10
+1E4381CD ucvtf d13, w14, #0x20
+1E43F5CF ucvtf d15, w14, #0x3
+1E43C6C2 ucvtf d2, w22, #0xf
+1E43A8FF ucvtf d31, w7, #0x16
+1E43E3C5 ucvtf d5, w30, #0x8
+1E438660 ucvtf d0, w19, #0x1f
+1E4389BD ucvtf d29, w13, #0x1e
+1E43BEF6 ucvtf d22, w23, #0x11
+1E43BFEB ucvtf d11, wzr, #0x11
+1E43A15B ucvtf d27, w10, #0x18
+1E43F6D6 ucvtf d22, w22, #0x3
+1E43FC12 ucvtf d18, w0, #0x1
+1E430072 UNDEFINED
+1E434072 UNDEFINED
+1E432072 UNDEFINED
+1E431072 UNDEFINED
+1E430872 UNDEFINED
+1E430472 UNDEFINED
+
+// UCVTF_D64_float2fix sf=1|0|S=0|11110|ftype=01|0|rmode=00|opcode=011|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// UcvtfD64Float2fix: UCVTF  <Dd>, <Xn>, #<fbits>
+// register fields: Rn, Rd
+9E437753 ucvtf d19, x26, #0x23
+9E432189 ucvtf d9, x12, #0x38
+9E43F013 ucvtf d19, x0, #0x4
+9E43654F ucvtf d15, x10, #0x27
+9E435864 ucvtf d4, x3, #0x2a
+9E43721A ucvtf d26, x16, #0x24
+9E43BB98 ucvtf d24, x28, #0x12
+9E43AA7A ucvtf d26, x19, #0x16
+9E43FAF5 ucvtf d21, x23, #0x2
+9E432643 ucvtf d3, x18, #0x37
+9E430C5C ucvtf d28, x2, #0x3d
+9E43D8F9 ucvtf d25, x7, #0xa
+9E43AE4F ucvtf d15, x18, #0x15
+9E434612 ucvtf d18, x16, #0x2f
+9E43FA76 ucvtf d22, x19, #0x2
+9E43AAFE ucvtf d30, x23, #0x16
+9E4303E0 ucvtf d0, xzr, #0x40
+9E43FF5F ucvtf d31, x26, #0x1
+9E43775A ucvtf d26, x26, #0x23
+9E438353 ucvtf d19, x26, #0x20
+9E434353 ucvtf d19, x26, #0x30
+9E431353 ucvtf d19, x26, #0x3c
+9E430B53 ucvtf d19, x26, #0x3e
+9E430753 ucvtf d19, x26, #0x3f
+
+// UCVTF_H32_float2fix sf=0|0|S=0|11110|ftype=11|0|rmode=00|opcode=011|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// UcvtfH32Float2fix: UCVTF  <Hd>, <Wn>, #<fbits>
+// register fields: Rn, Rd
+1EC3B7A3 ucvtf h3, w29, #0x13
+1EC38CF0 ucvtf h16, w7, #0x1d
+1EC3BE3B ucvtf h27, w17, #0x11
+1EC3BCF5 ucvtf h21, w7, #0x11
+1EC3EFD9 ucvtf h25, w30, #0x5
+1EC3C2AE ucvtf h14, w21, #0x10
+1EC3A0CD ucvtf h13, w6, #0x18
+1EC3B9D6 ucvtf h22, w14, #0x12
+1EC38BB4 ucvtf h20, w29, #0x1e
+1EC394B7 ucvtf h23, w5, #0x1b
+1EC3959B ucvtf h27, w12, #0x1b
+1EC3CF4E ucvtf h14, w26, #0xd
+1EC3A9C3 ucvtf h3, w14, #0x16
+1EC3ED11 ucvtf h17, w8, #0x5
+1EC3FEE4 ucvtf h4, w23, #0x1
+1EC39553 ucvtf h19, w10, #0x1b
+1EC3B400 ucvtf h0, w0, #0x13
+1EC3B7FF ucvtf h31, wzr, #0x13
+1EC303A3 UNDEFINED
+1EC383A3 ucvtf h3, w29, #0x20
+1EC343A3 UNDEFINED
+1EC323A3 UNDEFINED
+1EC313A3 UNDEFINED
+1EC30BA3 UNDEFINED
+1EC307A3 UNDEFINED
+
+// UCVTF_H64_float2fix sf=1|0|S=0|11110|ftype=11|0|rmode=00|opcode=011|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// UcvtfH64Float2fix: UCVTF  <Hd>, <Xn>, #<fbits>
+// register fields: Rn, Rd
+9EC3A9A5 ucvtf h5, x13, #0x16
+9EC3924C ucvtf h12, x18, #0x1c
+9EC3548C ucvtf h12, x4, #0x2b
+9EC3EDC5 ucvtf h5, x14, #0x5
+9EC301E8 ucvtf h8, x15, #0x40
+9EC3E117 ucvtf h23, x8, #0x8
+9EC327DA ucvtf h26, lr, #0x37
+9EC3AE5A ucvtf h26, x18, #0x15
+9EC3ECA3 ucvtf h3, x5, #0x5
+9EC3199D ucvtf h29, x12, #0x3a
+9EC35DBF ucvtf h31, x13, #0x29
+9EC360FD ucvtf h29, x7, #0x28
+9EC353A3 ucvtf h3, fp, #0x2c
+9EC3C7D6 ucvtf h22, lr, #0xf
+9EC3F0DC ucvtf h28, x6, #0x4
+9EC33801 ucvtf h1, x0, #0x32
+9EC3FFE0 ucvtf h0, xzr, #0x1
+9EC3A9AD ucvtf h13, x13, #0x16
+9EC381A5 ucvtf h5, x13, #0x20
+9EC341A5 ucvtf h5, x13, #0x30
+9EC321A5 ucvtf h5, x13, #0x38
+9EC311A5 ucvtf h5, x13, #0x3c
+9EC309A5 ucvtf h5, x13, #0x3e
+9EC305A5 ucvtf h5, x13, #0x3f
+
+// UCVTF_S32_float2fix sf=0|0|S=0|11110|ftype=00|0|rmode=00|opcode=011|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// UcvtfS32Float2fix: UCVTF  <Sd>, <Wn>, #<fbits>
+// register fields: Rn, Rd
+1E03FEC1 ucvtf s1, w22, #0x1
+1E03E306 ucvtf s6, w24, #0x8
+1E03DBE5 ucvtf s5, wzr, #0xa
+1E03BA90 ucvtf s16, w20, #0x12
+1E03BC0D ucvtf s13, w0, #0x11
+1E03C6BE ucvtf s30, w21, #0xf
+1E03AF60 ucvtf s0, w27, #0x15
+1E038E7E ucvtf s30, w19, #0x1d
+1E03CB60 ucvtf s0, w27, #0xe
+1E03EA42 ucvtf s2, w18, #0x6
+1E03B7AD ucvtf s13, w29, #0x13
+1E03FC39 ucvtf s25, w1, #0x1
+1E038C49 ucvtf s9, w2, #0x1d
+1E039E44 ucvtf s4, w18, #0x19
+1E03F91F ucvtf s31, w8, #0x2
+1E038CBE ucvtf s30, w5, #0x1d
+1E0302C1 UNDEFINED
+1E03FED6 ucvtf s22, w22, #0x1
+1E0382C1 ucvtf s1, w22, #0x20
+1E0342C1 UNDEFINED
+1E0322C1 UNDEFINED
+1E0312C1 UNDEFINED
+1E030AC1 UNDEFINED
+1E0306C1 UNDEFINED
+
+// UCVTF_S64_float2fix sf=1|0|S=0|11110|ftype=00|0|rmode=00|opcode=011|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// UcvtfS64Float2fix: UCVTF  <Sd>, <Xn>, #<fbits>
+// register fields: Rn, Rd
+9E03C762 ucvtf s2, x27, #0xf
+9E03C768 ucvtf s8, x27, #0xf
+9E03F7AC ucvtf s12, fp, #0x3
+9E03F668 ucvtf s8, x19, #0x3
+9E03304B ucvtf s11, x2, #0x34
+9E033F11 ucvtf s17, x24, #0x31
+9E03133B ucvtf s27, x25, #0x3c
+9E03521B ucvtf s27, x16, #0x2c
+9E031F82 ucvtf s2, x28, #0x39
+9E034CDA ucvtf s26, x6, #0x2d
+9E03B1F6 ucvtf s22, x15, #0x14
+9E032FDD ucvtf s29, lr, #0x35
+9E0369C0 ucvtf s0, x14, #0x26
+9E0300E2 ucvtf s2, x7, #0x40
+9E03FC1F ucvtf s31, x0, #0x1
+9E034175 ucvtf s21, x11, #0x30
+9E03C7E2 ucvtf s2, xzr, #0xf
+9E03C77B ucvtf s27, x27, #0xf
+9E038362 ucvtf s2, x27, #0x20
+9E032362 ucvtf s2, x27, #0x38
+9E030B62 ucvtf s2, x27, #0x3e
+9E030762 ucvtf s2, x27, #0x3f

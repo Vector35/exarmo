@@ -1,0 +1,68 @@
+// uqrshrnt_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=1|U=1|R=1|T=1|Zn=xxxxx|Zd=xxxxx
+// UqrshrntZZi: UQRSHRNT  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+45343EC6 uqrshrnt z6.h, z22.s, #0xc
+45643E56 uqrshrnt z22.s, z18.d, #0x1c
+452E3FA6 uqrshrnt z6.b, z29.h, #0x2
+45733F2C uqrshrnt z12.s, z25.d, #0xd
+457C3F5E uqrshrnt z30.s, z26.d, #0x4
+453F3DAA uqrshrnt z10.h, z13.s, #0x1
+45713F40 uqrshrnt z0.s, z26.d, #0xf
+45743CD3 uqrshrnt z19.s, z6.d, #0xc
+45303C1F uqrshrnt z31.h, z0.s, #0x10
+45323FE6 uqrshrnt z6.h, z31.s, #0xe
+45353EC6 uqrshrnt z6.h, z22.s, #0xb
+45203EC6 UNDEFINED
+45213EC6 UNDEFINED
+45223EC6 UNDEFINED
+45233EC6 UNDEFINED
+45243EC6 UNDEFINED
+45253EC6 UNDEFINED
+45263EC6 UNDEFINED
+45273EC6 UNDEFINED
+45283ED6 uqrshrnt z22.b, z22.h, #0x8
+45293EC6 uqrshrnt z6.b, z22.h, #0x7
+452A3EC6 uqrshrnt z6.b, z22.h, #0x6
+452B3EC6 uqrshrnt z6.b, z22.h, #0x5
+452C3EC6 uqrshrnt z6.b, z22.h, #0x4
+452D3EC6 uqrshrnt z6.b, z22.h, #0x3
+452F3EC6 uqrshrnt z6.b, z22.h, #0x1
+45313EC6 uqrshrnt z6.h, z22.s, #0xf
+45333EC6 uqrshrnt z6.h, z22.s, #0xd
+45363EC6 uqrshrnt z6.h, z22.s, #0xa
+45373EC6 uqrshrnt z6.h, z22.s, #0x9
+45383EC6 uqrshrnt z6.h, z22.s, #0x8
+45393EC6 uqrshrnt z6.h, z22.s, #0x7
+453A3EC6 uqrshrnt z6.h, z22.s, #0x6
+453B3EC6 uqrshrnt z6.h, z22.s, #0x5
+453C3EC6 uqrshrnt z6.h, z22.s, #0x4
+453D3EC6 uqrshrnt z6.h, z22.s, #0x3
+453E3EC6 uqrshrnt z6.h, z22.s, #0x2
+45603EC6 uqrshrnt z6.s, z22.d, #0x20
+45613EC6 uqrshrnt z6.s, z22.d, #0x1f
+45623EC6 uqrshrnt z6.s, z22.d, #0x1e
+45633EC6 uqrshrnt z6.s, z22.d, #0x1d
+45653EC6 uqrshrnt z6.s, z22.d, #0x1b
+45663EC6 uqrshrnt z6.s, z22.d, #0x1a
+45673EC6 uqrshrnt z6.s, z22.d, #0x19
+45683EC6 uqrshrnt z6.s, z22.d, #0x18
+45693EC6 uqrshrnt z6.s, z22.d, #0x17
+456A3EC6 uqrshrnt z6.s, z22.d, #0x16
+456B3EC6 uqrshrnt z6.s, z22.d, #0x15
+456C3EC6 uqrshrnt z6.s, z22.d, #0x14
+456D3EC6 uqrshrnt z6.s, z22.d, #0x13
+456E3EC6 uqrshrnt z6.s, z22.d, #0x12
+456F3EC6 uqrshrnt z6.s, z22.d, #0x11
+45703EC6 uqrshrnt z6.s, z22.d, #0x10
+45723EC6 uqrshrnt z6.s, z22.d, #0xe
+45753EC6 uqrshrnt z6.s, z22.d, #0xb
+45763EC6 uqrshrnt z6.s, z22.d, #0xa
+45773EC6 uqrshrnt z6.s, z22.d, #0x9
+45783EC6 uqrshrnt z6.s, z22.d, #0x8
+45793EC6 uqrshrnt z6.s, z22.d, #0x7
+457A3EC6 uqrshrnt z6.s, z22.d, #0x6
+457B3EC6 uqrshrnt z6.s, z22.d, #0x5
+457D3EC6 uqrshrnt z6.s, z22.d, #0x3
+457E3EC6 uqrshrnt z6.s, z22.d, #0x2
+457F3EC6 uqrshrnt z6.s, z22.d, #0x1

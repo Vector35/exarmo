@@ -1,0 +1,12 @@
+// whilelt_pp_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|01|U=0|lt=1|Rn=xxxxx|1|Pd=xxx|eq=0
+// WhileltPpRr: WHILELT  { <Pd1>.<T>, <Pd2>.<T> }, <Xn>, <Xm>
+// register fields: Rm, Rn, Pd
+25205412 whilelt {p2.b, p3.b}, x0, x0
+2520543C whilelt {p12.b, p13.b}, x1, x0
+25205458 whilelt {p8.b, p9.b}, x2, x0
+257F57F0 whilelt {p0.h, p1.h}, xzr, xzr
+25A05414 whilelt {p4.s, p5.s}, x0, x0
+25E05416 whilelt {p6.d, p7.d}, x0, x0
+2520541A whilelt {p10.b, p11.b}, x0, x0
+2520541E whilelt {p14.b, p15.b}, x0, x0
+25205410 whilelt {p0.b, p1.b}, x0, x0

@@ -1,0 +1,24 @@
+// UMINP_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|1010|o1=1|1|Rn=xxxxx|Rd=xxxxx
+// UminpAsimdsameOnly: UMINP  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E3BAF1B uminp v27.16b, v24.16b, v27.16b
+2EBDAD92 uminp v18.2s, v12.2s, v29.2s
+6E6BAF5D uminp v29.8h, v26.8h, v11.8h
+2E73AF18 uminp v24.4h, v24.4h, v19.4h
+6E75AEC8 uminp v8.8h, v22.8h, v21.8h
+6E2EAC21 uminp v1.16b, v1.16b, v14.16b
+6E2FAF14 uminp v20.16b, v24.16b, v15.16b
+6E6AAFB2 uminp v18.8h, v29.8h, v10.8h
+6E3FAC57 uminp v23.16b, v2.16b, v31.16b
+6E78AE61 uminp v1.8h, v19.8h, v24.8h
+2E26AFE1 uminp v1.8b, v31.8b, v6.8b
+6EB3ADD1 uminp v17.4s, v14.4s, v19.4s
+2E3EAD1C uminp v28.8b, v8.8b, v30.8b
+2E35AE6C uminp v12.8b, v19.8b, v21.8b
+2E34AC76 uminp v22.8b, v3.8b, v20.8b
+2EAEAD01 uminp v1.2s, v8.2s, v14.2s
+6E20AC00 uminp v0.16b, v0.16b, v0.16b
+6E3BAF1F uminp v31.16b, v24.16b, v27.16b
+6EFBAF1B UNDEFINED
+2EFBAF1B UNDEFINED

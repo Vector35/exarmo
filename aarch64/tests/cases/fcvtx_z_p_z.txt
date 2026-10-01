@@ -1,0 +1,28 @@
+// fcvtx_z_p_z_d2s 011|0010|1|opc=00|0|010|opc2=10|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FcvtxZPZD2s: FCVTX  <Zd>.S, <Pg>/M, <Zn>.D
+// register fields: Pg, Zn, Zd
+650AB30A fcvtx z10.s, p4/m, z24.d
+650AAB4E fcvtx z14.s, p2/m, z26.d
+650AB1C2 fcvtx z2.s, p4/m, z14.d
+650AAC4D fcvtx z13.s, p3/m, z2.d
+650AB9D6 fcvtx z22.s, p6/m, z14.d
+650ABE85 fcvtx z5.s, p7/m, z20.d
+650AB966 fcvtx z6.s, p6/m, z11.d
+650AB528 fcvtx z8.s, p5/m, z9.d
+650AA000 fcvtx z0.s, p0/m, z0.d
+650AA7FF fcvtx z31.s, p1/m, z31.d
+
+// fcvtx_z_p_z_d2sz 011|0010|0|opc=00|011|010|1|opc2=10|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FcvtxZPZD2sz: FCVTX  <Zd>.S, <Pg>/Z, <Zn>.D
+// register fields: Pg, Zn, Zd
+641AC004 fcvtx z4.s, p0/z, z0.d
+641AC00B fcvtx z11.s, p0/z, z0.d
+641AC012 fcvtx z18.s, p0/z, z0.d
+641AC7E0 fcvtx z0.s, p1/z, z31.d
+641AC81F fcvtx z31.s, p2/z, z0.d
+641ACC04 fcvtx z4.s, p3/z, z0.d
+641AD004 fcvtx z4.s, p4/z, z0.d
+641AD404 fcvtx z4.s, p5/z, z0.d
+641AD804 fcvtx z4.s, p6/z, z0.d
+641ADC04 fcvtx z4.s, p7/z, z0.d
+641AC000 fcvtx z0.s, p0/z, z0.d

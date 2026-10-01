@@ -1,0 +1,26 @@
+// VMLSL_s_T1 111|U=x|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|0|op=1|10|N=x|1|M=x|0|Vm=xxxx
+// VmlslST1: VMLSL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm[x]>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// IT state read: condition
+efa34669 vmlsl.s32 q2, d3, d9[1]
+ff9e266c vmlsl.u16 q1, d14, d4[3]
+ffa7a646 vmlsl.u32 q5, d7, d6[0]
+efdd26ce vmlsl.s16 q9, d29, d6[1]
+ef922642 vmlsl.s16 q1, d2, d2[0]
+ef9006eb vmlsl.s16 q0, d16, d3[3]
+ef940665 vmlsl.s16 q0, d4, d5[2]
+ef9e8648 vmlsl.s16 q4, d14, d0[1]
+EF83F669 UNDEFINED
+EFB31669 UNDEFINED
+EFEF0660 vmlsl.s32 q8, d15, d0[1]
+EFA8466F vmlsl.s32 q2, d8, d15[1]
+EFA14664 vmlsl.s32 q2, d1, d4[1]
+EFA04661 vmlsl.s32 q2, d0, d1[1]
+EFF3F669 UNDEFINED
+FF834669 UNDEFINED
+FFB34669 UNDEFINED
+EFAF4669 vmlsl.s32 q2, d15, d9[1]
+EFAF46E9 vmlsl.s32 q2, d31, d9[1]
+EFA34669 [ne] vmlslne.s32 q2, d3, d9[1]

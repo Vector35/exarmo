@@ -1,0 +1,63 @@
+// FRINTI_D_floatdp1 M=0|0|S=0|11110|ftype=01|1001|rmode=111|10000|Rn=xxxxx|Rd=xxxxx
+// FrintiDFloatdp1: FRINTI  <Dd>, <Dn>
+// register fields: Rn, Rd
+1E67C3C3 frinti d3, d30
+1E67C1B5 frinti d21, d13
+1E67C1BE frinti d30, d13
+1E67C1F3 frinti d19, d15
+1E67C314 frinti d20, d24
+1E67C354 frinti d20, d26
+1E67C2F9 frinti d25, d23
+1E67C326 frinti d6, d25
+1E67C383 frinti d3, d28
+1E67C2EF frinti d15, d23
+1E67C0F8 frinti d24, d7
+1E67C343 frinti d3, d26
+1E67C1A5 frinti d5, d13
+1E67C0F7 frinti d23, d7
+1E67C057 frinti d23, d2
+1E67C27A frinti d26, d19
+1E67C000 frinti d0, d0
+1E67C3FF frinti d31, d31
+
+// FRINTI_H_floatdp1 M=0|0|S=0|11110|ftype=11|1001|rmode=111|10000|Rn=xxxxx|Rd=xxxxx
+// FrintiHFloatdp1: FRINTI  <Hd>, <Hn>
+// register fields: Rn, Rd
+1EE7C193 frinti h19, h12
+1EE7C1E8 frinti h8, h15
+1EE7C1E0 frinti h0, h15
+1EE7C00D frinti h13, h0
+1EE7C348 frinti h8, h26
+1EE7C2DC frinti h28, h22
+1EE7C3FB frinti h27, h31
+1EE7C0FB frinti h27, h7
+1EE7C3C5 frinti h5, h30
+1EE7C376 frinti h22, h27
+1EE7C25F frinti h31, h18
+1EE7C1CE frinti h14, h14
+1EE7C36C frinti h12, h27
+1EE7C17F frinti h31, h11
+1EE7C1C7 frinti h7, h14
+1EE7C186 frinti h6, h12
+
+// FRINTI_S_floatdp1 M=0|0|S=0|11110|ftype=00|1001|rmode=111|10000|Rn=xxxxx|Rd=xxxxx
+// FrintiSFloatdp1: FRINTI  <Sd>, <Sn>
+// register fields: Rn, Rd
+1E27C317 frinti s23, s24
+1E27C2EA frinti s10, s23
+1E27C013 frinti s19, s0
+1E27C388 frinti s8, s28
+1E27C341 frinti s1, s26
+1E27C3AA frinti s10, s29
+1E27C090 frinti s16, s4
+1E27C39E frinti s30, s28
+1E27C379 frinti s25, s27
+1E27C059 frinti s25, s2
+1E27C177 frinti s23, s11
+1E27C35B frinti s27, s26
+1E27C3EC frinti s12, s31
+1E27C36A frinti s10, s27
+1E27C1A8 frinti s8, s13
+1E27C260 frinti s0, s19
+1E27C31F frinti s31, s24
+1E27C318 frinti s24, s24

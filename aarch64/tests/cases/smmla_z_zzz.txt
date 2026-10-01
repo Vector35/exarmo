@@ -1,0 +1,14 @@
+// smmla_z_zzz_ 010|0010|1|uns=00|0|Zm=xxxxx|10|0110|Zn=xxxxx|Zda=xxxxx
+// SmmlaZZzz: SMMLA  <Zda>.S, <Zn>.B, <Zm>.B
+// register fields: Zm, Zn, Zda
+45009A56 smmla z22.s, z18.b, z0.b
+45119891 smmla z17.s, z4.b, z17.b
+45029B26 smmla z6.s, z25.b, z2.b
+450C9B16 smmla z22.s, z24.b, z12.b
+450A98C6 smmla z6.s, z6.b, z10.b
+450E9B70 smmla z16.s, z27.b, z14.b
+451398A9 smmla z9.s, z5.b, z19.b
+450D9AD4 smmla z20.s, z22.b, z13.b
+451F9800 smmla z0.s, z0.b, z31.b
+45009BFF smmla z31.s, z31.b, z0.b
+45009816 smmla z22.s, z0.b, z0.b

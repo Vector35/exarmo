@@ -1,0 +1,22 @@
+// SXTB_A1 cond=xxxx|011|01|U=0|op=10|Rn=1111|Rd=xxxx|rotate=xx|(0)(0)|011|1|Rm=xxxx
+// SxtbA1: SXTB{<c>}{<q>}  {<Rd>, }<Rm> {, ROR #<amount>}
+// register fields: Rd, Rm
+06af0f7f sxtbeq r0, pc, ror #24 (unpredictable)
+76af8072 sxtbvc r8, r2
+36afd179 sxtblo sp, r9 (unpredictable)
+06af2d7f sxtbeq r2, pc, ror #24 (unpredictable)
+56afb774 sxtbpl r11, r4, ror #8 (unpredictable)
+d6af5d7f sxtble r5, pc, ror #24 (unpredictable)
+e6afd07e sxtb sp, lr
+b6afdc71 sxtblt sp, r1, ror #24
+// Binary Ninja's tests
+36af5871 sxtblo r5, r1, ror #16
+a6af2074 sxtbge r2, r4
+e6af5076 sxtb r5, r6
+e6af6479 sxtb r6, r9, ror #8
+e6af8c73 sxtb r8, r3, ror #24
+F6AF0F7F UNALLOCATED
+86AFFE70 sxtbhi pc, r0, ror #0x18 (unpredictable)
+46AF0F70 sxtbmi r0, r0, ror #0x18 (unpredictable)
+26AF0F7F sxtbcs r0, pc, ror #0x18 (unpredictable)
+16AF0F7F sxtbne r0, pc, ror #0x18 (unpredictable)

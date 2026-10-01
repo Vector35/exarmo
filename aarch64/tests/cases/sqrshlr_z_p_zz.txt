@@ -1,0 +1,15 @@
+// sqrshlr_z_p_zz_ 010|0010|0|size=xx|0|0|Q=1|R=1|N=1|U=0|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SqrshlrZPZz: SQRSHLR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+448E9FE3 sqrshlr z3.s, p7/m, z3.s, z31.s
+444E9B42 sqrshlr z2.h, p6/m, z2.h, z26.h
+44CE8017 sqrshlr z23.d, p0/m, z23.d, z0.d
+440E8161 sqrshlr z1.b, p0/m, z1.b, z11.b
+440E9F05 sqrshlr z5.b, p7/m, z5.b, z24.b
+440E9A2F sqrshlr z15.b, p6/m, z15.b, z17.b
+444E85CE sqrshlr z14.h, p1/m, z14.h, z14.h
+448E8A1D sqrshlr z29.s, p2/m, z29.s, z16.s
+448E8FE0 sqrshlr z0.s, p3/m, z0.s, z31.s
+448E93FF sqrshlr z31.s, p4/m, z31.s, z31.s
+448E97E3 sqrshlr z3.s, p5/m, z3.s, z31.s
+448E9FE7 sqrshlr z7.s, p7/m, z7.s, z31.s

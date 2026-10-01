@@ -1,0 +1,20 @@
+// brka_p_p_p_ 001|0010|1|B=0|S=0|01|0000|01|Pg=xxxx|0|Pn=xxxx|M=x|Pd=xxxx
+// BrkaPPP: BRKA  <Pd>.B, <Pg>/<ZM>, <Pn>.B
+// register fields: Pg, Pn, Pd
+25106589 brka p9.b, p9/z, p12.b
+2510646B brka p11.b, p9/z, p3.b
+25106185 brka p5.b, p8/z, p12.b
+25104D4F brka p15.b, p3/z, p10.b
+251071B7 brka p7.b, p12/m, p13.b
+25104CD8 brka p8.b, p3/m, p6.b
+25104533 brka p3.b, p1/m, p9.b
+25107066 brka p6.b, p12/z, p3.b
+25105099 brka p9.b, p4/m, p4.b
+25107924 brka p4.b, p14/z, p9.b
+251071F8 brka p8.b, p12/m, p15.b
+25106023 brka p3.b, p8/z, p1.b
+251041A8 brka p8.b, p0/z, p13.b
+2510503B brka p11.b, p4/m, p1.b
+2510785D brka p13.b, p14/m, p2.b
+25107022 brka p2.b, p12/z, p1.b
+25107C00 brka p0.b, p15/z, p0.b

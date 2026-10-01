@@ -1,0 +1,46 @@
+// VCVTA_asimd_T1_D 111111111|D=x|11|size=xx|opc1=11|Vd=xxxx|00|RM=00|op=x|Q=0|M=x|0|Vm=xxxx
+// VcvtaAsimdT1D: VCVTA{<q>}.<dt>.<dt2>  <Dd>, <Dm>
+// read together by <dt>: size, op
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+fff7308a vcvta.u16.f16 d19, d10
+fff7d080 vcvta.u16.f16 d29, d0
+fffb502d vcvta.s32.f32 d21, d29
+fffbb0aa vcvta.u32.f32 d27, d26
+FFB7000F vcvta.s16.f16 d0, d15
+FFF3308A UNDEFINED
+FFFF308A UNDEFINED
+FFF7F088 vcvta.u16.f16 d31, d8
+FFF78084 vcvta.u16.f16 d24, d4
+FFF74082 vcvta.u16.f16 d20, d2
+FFF72081 vcvta.u16.f16 d18, d1
+FFF7108F vcvta.u16.f16 d17, d15
+FFF3300A UNDEFINED
+FFFF300A UNDEFINED
+FFB700A0 vcvta.u16.f16 d0, d16
+FFB7F0AF vcvta.u16.f16 d15, d31
+FFF7008A vcvta.u16.f16 d16, d10
+FFF7F08A vcvta.u16.f16 d31, d10
+
+// VCVTA_asimd_T1_Q 111111111|D=x|11|size=xx|opc1=11|Vd=xxxx|00|RM=00|op=x|Q=1|M=x|0|Vm=xxxx
+// VcvtaAsimdT1Q: VCVTA{<q>}.<dt>.<dt2>  <Qd>, <Qm>
+// read together by <dt>: size, op
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+fff7006c vcvta.s16.f16 q8, q14
+ffb7c040 vcvta.s16.f16 q6, q0
+fffbe0ca vcvta.u32.f32 q15, q5
+ffbb80cc vcvta.u32.f32 q4, q6
+fffba066 vcvta.s32.f32 q13, q11
+fff7a04c vcvta.s16.f16 q13, q6
+fff7c0c2 vcvta.u16.f16 q14, q1
+fff700ca vcvta.u16.f16 q8, q5
+FFF3F06F UNDEFINED
+FFFF1061 UNDEFINED
+FFF74068 vcvta.s16.f16 q10, q12
+FFF72064 vcvta.s16.f16 q9, q10
+FFB3F04F UNDEFINED
+FFF3F0EF UNDEFINED
+FFFF006C UNDEFINED
+FFFF00EC UNDEFINED
+FFB70060 vcvta.s16.f16 q0, q8

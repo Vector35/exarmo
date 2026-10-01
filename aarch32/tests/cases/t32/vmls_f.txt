@@ -1,0 +1,117 @@
+// VMLS_f_T1_D 111|U=0|11110|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VmlsFT1D: VMLS{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef7a4d14 vmls.f16 d20, d10, d4
+ef365dbb vmls.f16 d5, d22, d27
+ef632d91 vmls.f32 d18, d19, d1
+ef60adbe vmls.f32 d26, d16, d30
+ef72cdb7 vmls.f16 d28, d18, d23
+ef33fd90 vmls.f16 d15, d19, d0
+ef6ead91 vmls.f32 d26, d30, d1
+ef70cd1c vmls.f16 d28, d0, d12
+EF7F0D1F vmls.f16 d16, d15, d15
+EF788D18 vmls.f16 d24, d8, d8
+EF741D12 vmls.f16 d17, d4, d2
+EF310D1F vmls.f16 d0, d1, d15
+EF7F0D30 vmls.f16 d16, d15, d16
+EF7FFDBF vmls.f16 d31, d31, d31
+EF7A4D14 [ne] vmlsne.f16 d20, d10, d4 (unpredictable)
+
+// VMLS_f_T1_Q 111|U=0|11110|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VmlsFT1Q: VMLS{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef2e0dfa vmls.f32 q0, q15, q13
+ef3a0dd8 vmls.f16 q0, q13, q4
+ef7a8d56 vmls.f16 q12, q5, q3
+ef782d72 vmls.f16 q9, q4, q9
+ef64cdda vmls.f32 q14, q10, q5
+ef6acdd0 vmls.f32 q14, q13, q0
+ef380df0 vmls.f16 q0, q12, q8
+ef6cad7c vmls.f32 q13, q6, q14
+EF204DF4 vmls.f32 q2, q8, q10
+EF2FFDFF UNDEFINED
+EF620DFA vmls.f32 q8, q9, q13
+EF211DF1 UNDEFINED
+EF2FFD5F UNDEFINED
+EF6FFDFF UNDEFINED
+EF200D7A vmls.f32 q0, q0, q13
+EF200DFA vmls.f32 q0, q8, q13
+EF2E0DFA [ne] vmlsne.f32 q0, q15, q13
+
+// VMLS_f_T2_D 11101110|o0=0|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=1|M=x|0|Vm=xxxx
+// VmlsFT2D: VMLS{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ee4d6bc7 vmls.f64 d22, d29, d7
+ee097b60 vmls.f64 d7, d9, d16
+ee42eb4d vmls.f64 d30, d2, d13
+ee06cbed vmls.f64 d12, d22, d29
+ee473bed vmls.f64 d19, d23, d29
+ee41abe6 vmls.f64 d26, d17, d22
+ee434bec vmls.f64 d20, d19, d28
+ee47fb69 vmls.f64 d31, d7, d25
+EE400BCF vmls.f64 d16, d16, d15
+EE4F8BC8 vmls.f64 d24, d31, d8
+EE482BC4 vmls.f64 d18, d24, d4
+EE441BC2 vmls.f64 d17, d20, d2
+EE000B41 vmls.f64 d0, d0, d1
+EE00FBC0 vmls.f64 d15, d16, d0
+EE4F0B4F vmls.f64 d16, d15, d15
+EE4F6BEF vmls.f64 d22, d31, d31
+EE4D6BC7 [ne] vmlsne.f64 d22, d29, d7
+
+// VMLS_f_T2_H 11101110|o0=0|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=1|M=x|0|Vm=xxxx
+// VmlsFT2H: VMLS{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee0599ca vmls.f16 s18, s11, s20
+ee4ee9ca vmls.f16 s29, s29, s20
+ee44b969 vmls.f16 s23, s8, s19
+ee49a948 vmls.f16 s21, s18, s16
+ee4cf9cf vmls.f16 s31, s25, s30
+ee0b796f vmls.f16 s14, s22, s31
+ee04d96e vmls.f16 s26, s8, s29
+ee469965 vmls.f16 s19, s12, s11
+EE0009C0 vmls.f16 s0, s1, s0
+EE0F89C4 vmls.f16 s16, s31, s8
+EE0849C2 vmls.f16 s8, s17, s4
+EE0229C1 vmls.f16 s4, s5, s2
+EE0119C0 vmls.f16 s2, s3, s0
+EE000960 vmls.f16 s0, s0, s1
+EE00F9CA vmls.f16 s30, s1, s20
+EE4F094A vmls.f16 s1, s30, s20
+EE0F99CA vmls.f16 s18, s31, s20
+EE0599CA [ne] vmlsne.f16 s18, s11, s20 (unpredictable)
+
+// VMLS_f_T2_S 11101110|o0=0|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=1|M=x|0|Vm=xxxx
+// VmlsFT2S: VMLS{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee07eac3 vmls.f32 s28, s15, s6
+ee01aae3 vmls.f32 s20, s3, s7
+ee4efa4a vmls.f32 s31, s28, s20
+ee001a6e vmls.f32 s2, s0, s29
+ee094ae5 vmls.f32 s8, s19, s11
+ee0d4ae0 vmls.f32 s8, s27, s1
+ee4b8a47 vmls.f32 s17, s22, s14
+ee052a41 vmls.f32 s4, s10, s2
+EE0F0ACF vmls.f32 s0, s31, s30
+EE080AC8 vmls.f32 s0, s17, s16
+EE04FAC4 vmls.f32 s30, s9, s8
+EE420AC2 vmls.f32 s1, s5, s4
+EE00EAC0 vmls.f32 s28, s1, s0
+EE0FEA4F vmls.f32 s28, s30, s30
+EE0FEAEF vmls.f32 s28, s31, s31
+EE07EAC3 [ne] vmlsne.f32 s28, s15, s6

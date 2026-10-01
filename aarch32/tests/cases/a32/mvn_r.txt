@@ -1,0 +1,79 @@
+// MVN_r_A1 cond=xxxx|00011|opc=11|S=0|Rn=(0)(0)(0)(0)|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// MvnRA1: MVN{<c>}{<q>}  <Rd>, <Rm> {, <shift> #<amount>}
+// register fields: Rd, Rm
+31e064e2 mvnlo r6, r2, ror #9
+51ebb86d mvnpl r11, sp, ror #16 (unpredictable)
+61eda8e7 mvnvs r10, r7, ror #17 (unpredictable)
+51e114aa mvnpl r1, r10, lsr #9 (unpredictable)
+41ec6480 mvnmi r6, r0, lsl #9 (unpredictable)
+a1e103e3 mvnge r0, r3, ror #7 (unpredictable)
+b1e0a56e mvnlt r10, lr, ror #10
+31ebd486 mvnlo sp, r6, lsl #9 (unpredictable)
+// Binary Ninja's tests
+01e02003 mvneq r2, r3
+e1e01002 mvn r1, r2
+e1e02003 mvn r2, r3
+e1e05246 mvn r5, r6, asr #4
+e1e05366 mvn r5, r6, ror #6
+e1e054a6 mvn r5, r6, lsr #9
+e1e05986 mvn r5, r6, lsl #19
+F1E064E2 UNALLOCATED
+81EFFFEF mvnhi pc, pc, ror #0x1f (unpredictable)
+21E86466 mvncs r6, r6, ror #0x8 (unpredictable)
+11E46162 mvnne r6, r2, ror #0x2 (unpredictable)
+31E260E2 mvncc r6, r2, ror #0x1 (unpredictable)
+
+// MVN_r_A1_RRX cond=xxxx|00011|opc=11|S=0|Rn=(0)(0)(0)(0)|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// MvnRA1Rrx: MVN{<c>}{<q>}  <Rd>, <Rm>, RRX
+// register fields: Rd, Rm
+e1ee2064 mvn r2, r4, rrx (unpredictable)
+e1e49065 mvn r9, r5, rrx (unpredictable)
+b1e7f065 mvnlt pc, r5, rrx (unpredictable)
+b1e16065 mvnlt r6, r5, rrx (unpredictable)
+71ef5067 mvnvc r5, r7, rrx (unpredictable)
+01e4006c mvneq r0, r12, rrx (unpredictable)
+d1ef606e mvnle r6, lr, rrx (unpredictable)
+31e67065 mvnlo r7, r5, rrx (unpredictable)
+// Binary Ninja's tests
+e1e05066 mvn r5, r6, rrx
+F1EE2064 UNALLOCATED
+81E82060 mvnhi r2, r0, rrx (unpredictable)
+41E2206F mvnmi r2, pc, rrx (unpredictable)
+21EE2062 mvncs r2, r2, rrx (unpredictable)
+11EE2064 mvnne r2, r4, rrx (unpredictable)
+
+// MVNS_r_A1 cond=xxxx|00011|opc=11|S=1|Rn=(0)(0)(0)(0)|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// MvnsRA1: MVNS{<c>}{<q>}  <Rd>, <Rm> {, <shift> #<amount>}
+// register fields: Rd, Rm
+21fae041 mvnshs lr, r1, asr #32 (unpredictable)
+21f3bfa1 mvnshs r11, r1, lsr #31 (unpredictable)
+11fe7ccb mvnsne r7, r11, asr #25 (unpredictable)
+91f9a705 mvnsls r10, r5, lsl #14 (unpredictable)
+11f60c8d mvnsne r0, sp, lsl #25 (unpredictable)
+21f8c101 mvnshs r12, r1, lsl #2 (unpredictable)
+31fb3e42 mvnslo r3, r2, asr #28 (unpredictable)
+51f87183 mvnspl r7, r3, lsl #3 (unpredictable)
+// Binary Ninja's tests
+01f02503 mvnseq r2, r3, lsl #10
+e1f01002 mvns r1, r2
+e1f02003 mvns r2, r3
+F1FAE041 UNALLOCATED
+81FFF860 mvnshi pc, r0, ror #0x10 (unpredictable)
+41F4E44F mvnsmi lr, pc, asr #0x8 (unpredictable)
+21F2E24E mvnscs lr, lr, asr #0x4 (unpredictable)
+21F1E0C1 mvnscs lr, r1, asr #0x1 (unpredictable)
+
+// MVNS_r_A1_RRX cond=xxxx|00011|opc=11|S=1|Rn=(0)(0)(0)(0)|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// MvnsRA1Rrx: MVNS{<c>}{<q>}  <Rd>, <Rm>, RRX
+// register fields: Rd, Rm
+d1f0406f mvnsle r4, pc, rrx
+41fa2069 mvnsmi r2, r9, rrx (unpredictable)
+e1f18061 mvns r8, r1, rrx (unpredictable)
+41f2c066 mvnsmi r12, r6, rrx (unpredictable)
+c1f7706a mvnsgt r7, r10, rrx (unpredictable)
+91f3c06c mvnsls r12, r12, rrx (unpredictable)
+11f43061 mvnsne r3, r1, rrx (unpredictable)
+21fbb060 mvnshs r11, r0, rrx (unpredictable)
+01FF006F mvnseq r0, pc, rrx (unpredictable)
+F1F0406F UNALLOCATED
+81F8F06F mvnshi pc, pc, rrx (unpredictable)

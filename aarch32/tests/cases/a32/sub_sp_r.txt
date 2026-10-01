@@ -1,0 +1,61 @@
+// SUB_SP_r_A1 cond=xxxx|0000|opc=010|S=0|Rn=1101|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// SubSpRA1: SUB{<c>}{<q>}  {<Rd>, }SP, <Rm> {, <shift> #<amount>}
+// register fields: Rd, Rm
+904d246a subls r2, sp, r10, ror #8
+604dae23 subvs r10, sp, r3, lsr #28
+204d0368 subhs r0, sp, r8, ror #6
+e04d87a0 sub r8, sp, r0, lsr #15
+304df5ab sublo pc, sp, r11, lsr #11
+604d4ea1 subvs r4, sp, r1, lsr #29
+c04d3807 subgt r3, sp, r7, lsl #16
+a04d38a6 subge r3, sp, r6, lsr #17
+004D2FCF subeq r2, sp, pc, asr #0x1f
+F04D246A UNALLOCATED
+804D2262 subhi r2, sp, r2, ror #0x4
+404D216A submi r2, sp, r10, ror #0x2
+104D20EA subne r2, sp, r10, ror #0x1
+604DA023 subvs r10, sp, r3, lsr #0x20
+
+// SUB_SP_r_A1_RRX cond=xxxx|0000|opc=010|S=0|Rn=1101|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// SubSpRA1Rrx: SUB{<c>}{<q>}  {<Rd>, }SP, <Rm> , RRX
+// register fields: Rd, Rm
+104d206b subne r2, sp, r11, rrx
+004D0060 subeq r0, sp, r0, rrx
+F04D206B UNALLOCATED
+804DF06F subhi pc, sp, pc, rrx
+404D2062 submi r2, sp, r2, rrx
+204D206B subcs r2, sp, r11, rrx
+
+// SUBS_SP_r_A1 cond=xxxx|0000|opc=010|S=1|Rn=1101|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// SubsSpRA1: SUBS{<c>}{<q>}  {<Rd>, }SP, <Rm> {, <shift> #<amount>}
+// register fields: Rd, Rm
+805d650a subshi r6, sp, r10, lsl #10
+205df50a subshs pc, sp, r10, lsl #10
+205dd720 subshs sp, sp, r0, lsr #14
+505dd760 subspl sp, sp, r0, ror #14
+705dc1af subsvc r12, sp, pc, lsr #3
+505da4ad subspl r10, sp, sp, lsr #9
+605d0265 subsvs r0, sp, r5, ror #4
+d05d4201 subsle r4, sp, r1, lsl #4
+005D6046 subseq r6, sp, r6, asr #0x20
+F05D650A UNALLOCATED
+405D6F8A subsmi r6, sp, r10, lsl #0x1f
+105D680A subsne r6, sp, r10, lsl #0x10
+805D640A subshi r6, sp, r10, lsl #0x8
+805D610A subshi r6, sp, r10, lsl #0x2
+805D608A subshi r6, sp, r10, lsl #0x1
+
+// SUBS_SP_r_A1_RRX cond=xxxx|0000|opc=010|S=1|Rn=1101|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// SubsSpRA1Rrx: SUBS{<c>}{<q>}  {<Rd>, }SP, <Rm> , RRX
+// register fields: Rd, Rm
+205dc06f subshs r12, sp, pc, rrx
+005d406b subseq r4, sp, r11, rrx
+705d606f subsvc r6, sp, pc, rrx
+c05d4060 subsgt r4, sp, r0, rrx
+305d206d subslo r2, sp, sp, rrx
+005d7062 subseq r7, sp, r2, rrx
+105de067 subsne lr, sp, r7, rrx
+F05DC06F UNALLOCATED
+805D006F subshi r0, sp, pc, rrx
+405DF06F subsmi pc, sp, pc, rrx
+205DC06C subscs r12, sp, r12, rrx

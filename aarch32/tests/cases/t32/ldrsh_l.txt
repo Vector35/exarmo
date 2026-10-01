@@ -1,0 +1,26 @@
+// LDRSH_l_T1 111|1100|1|U=x|size=01|1|1111|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrshLT1: LDRSH{<c>}{<q>}  <Rt>, <label>
+// register fields: Rt
+// IT state read: condition
+f9bf2e8c ldrsh r2, 0x10e90
+f9bf1f72 ldrsh r1, 0x10f76
+f93fa566 ldrsh r10, 0xfa9e
+f9bf14ea ldrsh r1, 0x104ee
+f93f4905 ldrsh r4, 0xf6ff
+f9bf7990 ldrsh r7, 0x10994
+F9BF0000 ldrsh r0, 0x10004
+F9BFFE8C reserved hint
+F9BF2FFF ldrsh r2, 0x11003
+F9BF2800 ldrsh r2, 0x10804
+F9BF2400 ldrsh r2, 0x10404
+F9BF2200 ldrsh r2, 0x10204
+F9BF2100 ldrsh r2, 0x10104
+F9BF2080 ldrsh r2, 0x10084
+F9BF2040 ldrsh r2, 0x10044
+F9BF2020 ldrsh r2, 0x10024
+F9BF2010 ldrsh r2, 0x10014
+F9BF2008 ldrsh r2, 0x1000c
+F9BF2004 ldrsh r2, 0x10008
+F9BF2002 ldrsh r2, 0x10006
+F9BF2001 ldrsh r2, 0x10005
+F9BF2E8C [ne] ldrshne r2, 0x10e90

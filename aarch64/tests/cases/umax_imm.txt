@@ -1,0 +1,35 @@
+// UMAX_32U_minmax_imm sf=0|op=0|S=0|1000111|opc=0001|imm8=xxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Umax32uMinmaxImm: UMAX  <Wd>, <Wn>, #<uimm>
+// register fields: Rn, Rd
+11C40004 umax w4, w0, #0x0
+11C4000B umax w11, w0, #0x0
+11C40012 umax w18, w0, #0x0
+11C7FFE0 umax w0, wzr, #0xff
+11C4001F umax wzr, w0, #0x0
+11C40000 umax w0, w0, #0x0
+11C60004 umax w4, w0, #0x80
+11C50004 umax w4, w0, #0x40
+11C48004 umax w4, w0, #0x20
+11C44004 umax w4, w0, #0x10
+11C42004 umax w4, w0, #0x8
+11C41004 umax w4, w0, #0x4
+11C40804 umax w4, w0, #0x2
+11C40404 umax w4, w0, #0x1
+
+// UMAX_64U_minmax_imm sf=1|op=0|S=0|1000111|opc=0001|imm8=xxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Umax64uMinmaxImm: UMAX  <Xd>, <Xn>, #<uimm>
+// register fields: Rn, Rd
+91C40002 umax x2, x0, #0x0
+91C40009 umax x9, x0, #0x0
+91C40010 umax x16, x0, #0x0
+91C7FFE0 umax x0, xzr, #0xff
+91C4001F umax xzr, x0, #0x0
+91C40000 umax x0, x0, #0x0
+91C60002 umax x2, x0, #0x80
+91C50002 umax x2, x0, #0x40
+91C48002 umax x2, x0, #0x20
+91C44002 umax x2, x0, #0x10
+91C42002 umax x2, x0, #0x8
+91C41002 umax x2, x0, #0x4
+91C40802 umax x2, x0, #0x2
+91C40402 umax x2, x0, #0x1

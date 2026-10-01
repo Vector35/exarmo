@@ -1,0 +1,48 @@
+// RORV_32_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|0010|op2=11|Rn=xxxxx|Rd=xxxxx
+// Rorv32Dp2src: RORV  <Wd>, <Wn>, <Wm>
+// RorRorv32Dp2src: ROR  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AD82F76 ror w22, w27, w24
+1AC72C00 ror w0, w0, w7
+1ACC2CDA ror w26, w6, w12
+1AD72FE3 ror w3, wzr, w23
+1ACC2C9B ror w27, w4, w12
+1ADE2E86 ror w6, w20, w30
+1AC72EFC ror w28, w23, w7
+1ADB2D40 ror w0, w10, w27
+1AD92F75 ror w21, w27, w25
+1AD12C73 ror w19, w3, w17
+1AC32DFB ror w27, w15, w3
+1AD92CCC ror w12, w6, w25
+1AD72F0D ror w13, w24, w23
+1AD82D29 ror w9, w9, w24
+1ADE2DEB ror w11, w15, w30
+1AC52C8D ror w13, w4, w5
+1AC02F7F ror wzr, w27, w0
+1ADF2F76 ror w22, w27, wzr
+1AD82F16 ror w22, w24, w24
+1AD82F78 ror w24, w27, w24
+
+// RORV_64_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|0010|op2=11|Rn=xxxxx|Rd=xxxxx
+// Rorv64Dp2src: RORV  <Xd>, <Xn>, <Xm>
+// RorRorv64Dp2src: ROR  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9ADB2CD5 ror x21, x6, x27
+9ACF2DCE ror x14, x14, x15
+9ACC2D79 ror x25, x11, x12
+9AD32D3B ror x27, x9, x19
+9AC92D5D ror fp, x10, x9
+9ADC2E76 ror x22, x19, x28
+9AC02D5D ror fp, x10, x0
+9ACD2C13 ror x19, x0, x13
+9ACF2C42 ror x2, x2, x15
+9AC82C6A ror x10, x3, x8
+9AC22EDB ror x27, x22, x2
+9ACB2F9A ror x26, x28, x11
+9AD52C0F ror x15, x0, x21
+9AD82DF6 ror x22, x15, x24
+9ACA2D83 ror x3, x12, x10
+9AD92D64 ror x4, x11, x25
+9ADF2FE0 ror x0, xzr, xzr
+9ADB2CDF ror xzr, x6, x27
+9ADB2CDB ror x27, x6, x27

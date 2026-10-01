@@ -1,0 +1,51 @@
+// VCGE_i_T1_D 111111111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|001|Q=0|M=x|0|Vm=xxxx
+// VcgeIT1D: VCGE{<c>}{<q>}.<dt>  {<Dd>, }<Dm>, #0
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffb5d0aa vcge.s16 d13, d26, #0
+ffb14083 vcge.s8 d4, d3, #0
+fff5d084 vcge.s16 d29, d4, #0
+fff98083 vcge.s32 d24, d3, #0
+fff904ad vcge.f32 d16, d29, #0
+ffb9d086 vcge.s32 d13, d6, #0
+ffb9c0ac vcge.s32 d12, d28, #0
+fff570ad vcge.s16 d23, d29, #0
+FFBDD0AA UNDEFINED
+FFB5F4A0 vcge.f16 d15, d16, #0x0
+FFB520AF vcge.s16 d2, d31, #0x0
+FFB510A8 vcge.s16 d1, d24, #0x0
+FFB500A2 vcge.s16 d0, d18, #0x0
+FFB5F0A1 vcge.s16 d15, d17, #0x0
+FFB1D4AA UNDEFINED
+FFBDD4AA UNDEFINED
+FFF5F080 vcge.s16 d31, d0, #0x0
+FFB5D08F vcge.s16 d13, d15, #0x0
+FFB5D0A0 vcge.s16 d13, d16, #0x0
+FFB5D0AF vcge.s16 d13, d31, #0x0
+FFB5D0AA [ne] vcgene.s16 d13, d26, #0x0
+
+// VCGE_i_T1_Q 111111111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|001|Q=1|M=x|0|Vm=xxxx
+// VcgeIT1Q: VCGE{<c>}{<q>}.<dt>  {<Qd>, }<Qm>, #0
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+fff5c0ea vcge.s16 q14, q13, #0
+ffb9a0c4 vcge.s32 q5, q2, #0
+ffb5e0c6 vcge.s16 q7, q3, #0
+fff5a4c0 vcge.f16 q13, q0, #0
+ffb500c8 vcge.s16 q0, q4, #0
+fff960ee vcge.s32 q11, q15, #0
+ffb1a0ea vcge.s8 q5, q13, #0
+ffb5a4ee vcge.f16 q5, q15, #0
+FFFDF0EF UNDEFINED
+FFF984E2 vcge.f32 q12, q9, #0x0
+FFF540E0 vcge.s16 q10, q8, #0x0
+FFF520EA vcge.s16 q9, q13, #0x0
+FFF114E1 UNDEFINED
+FFBDF0CF UNDEFINED
+FFFDF4EF UNDEFINED
+FFF500EA vcge.s16 q8, q13, #0x0
+FFF5C0EA [ne] vcgene.s16 q14, q13, #0x0

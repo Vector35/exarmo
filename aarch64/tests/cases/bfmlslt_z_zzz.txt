@@ -1,0 +1,8 @@
+// bfmlslt_z_zzz_ 011|0010|0|1|o2=1|1|Zm=xxxxx|10|op=1|00|T=1|Zn=xxxxx|Zda=xxxxx
+// BfmlsltZZzz: BFMLSLT  <Zda>.S, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zda
+64E0A400 bfmlslt z0.s, z0.h, z0.h
+64E0A407 bfmlslt z7.s, z0.h, z0.h
+64E0A40E bfmlslt z14.s, z0.h, z0.h
+64FFA7FF bfmlslt z31.s, z31.h, z31.h
+64E1A443 bfmlslt z3.s, z2.h, z1.h

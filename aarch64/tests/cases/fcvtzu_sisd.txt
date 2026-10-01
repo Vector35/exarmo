@@ -1,0 +1,39 @@
+// FCVTZU_sisd_32D sf=0|0|S=0|11110|ftype=01|1|rmode=10|opcode=111|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtzuSisd32d: FCVTZU  <Sd>, <Dn>
+// register fields: Rn, Rd
+1E770005 fcvtzu s5, d0
+1E77000C fcvtzu s12, d0
+1E770013 fcvtzu s19, d0
+1E7703E0 fcvtzu s0, d31
+1E77001F fcvtzu s31, d0
+1E770000 fcvtzu s0, d0
+
+// FCVTZU_sisd_32H sf=0|0|S=0|11110|ftype=11|1|rmode=10|opcode=111|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtzuSisd32h: FCVTZU  <Sd>, <Hn>
+// register fields: Rn, Rd
+1EF70001 fcvtzu s1, h0
+1EF70008 fcvtzu s8, h0
+1EF7000F fcvtzu s15, h0
+1EF703E0 fcvtzu s0, h31
+1EF7001F fcvtzu s31, h0
+1EF70000 fcvtzu s0, h0
+
+// FCVTZU_sisd_64H sf=1|0|S=0|11110|ftype=11|1|rmode=10|opcode=111|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtzuSisd64h: FCVTZU  <Dd>, <Hn>
+// register fields: Rn, Rd
+9EF70006 fcvtzu d6, h0
+9EF7000D fcvtzu d13, h0
+9EF70014 fcvtzu d20, h0
+9EF703E0 fcvtzu d0, h31
+9EF7001F fcvtzu d31, h0
+9EF70000 fcvtzu d0, h0
+
+// FCVTZU_sisd_64S sf=1|0|S=0|11110|ftype=00|1|rmode=10|opcode=111|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtzuSisd64s: FCVTZU  <Dd>, <Sn>
+// register fields: Rn, Rd
+9E370005 fcvtzu d5, s0
+9E37000C fcvtzu d12, s0
+9E370013 fcvtzu d19, s0
+9E3703E0 fcvtzu d0, s31
+9E37001F fcvtzu d31, s0
+9E370000 fcvtzu d0, s0

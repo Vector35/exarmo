@@ -1,0 +1,35 @@
+// SMIN_32_minmax_imm sf=0|op=0|S=0|1000111|opc=0010|imm8=xxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Smin32MinmaxImm: SMIN  <Wd>, <Wn>, #<simm>
+// register fields: Rn, Rd
+11C80003 smin w3, w0, #0x0
+11C8000A smin w10, w0, #0x0
+11C80011 smin w17, w0, #0x0
+11CBFFE0 smin w0, wzr, #-0x1
+11C8001F smin wzr, w0, #0x0
+11C80000 smin w0, w0, #0x0
+11CA0003 smin w3, w0, #-0x80
+11C90003 smin w3, w0, #0x40
+11C88003 smin w3, w0, #0x20
+11C84003 smin w3, w0, #0x10
+11C82003 smin w3, w0, #0x8
+11C81003 smin w3, w0, #0x4
+11C80803 smin w3, w0, #0x2
+11C80403 smin w3, w0, #0x1
+
+// SMIN_64_minmax_imm sf=1|op=0|S=0|1000111|opc=0010|imm8=xxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Smin64MinmaxImm: SMIN  <Xd>, <Xn>, #<simm>
+// register fields: Rn, Rd
+91C80001 smin x1, x0, #0x0
+91C80008 smin x8, x0, #0x0
+91C8000F smin x15, x0, #0x0
+91CBFFE0 smin x0, xzr, #-0x1
+91C8001F smin xzr, x0, #0x0
+91C80000 smin x0, x0, #0x0
+91CA0001 smin x1, x0, #-0x80
+91C90001 smin x1, x0, #0x40
+91C88001 smin x1, x0, #0x20
+91C84001 smin x1, x0, #0x10
+91C82001 smin x1, x0, #0x8
+91C81001 smin x1, x0, #0x4
+91C80801 smin x1, x0, #0x2
+91C80401 smin x1, x0, #0x1

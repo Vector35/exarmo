@@ -1,0 +1,16 @@
+// RBIT_T1 111|11010|1|op1=001|Rn=xxxx|1111|Rd=xxxx|10|op2=10|Rm=xxxx
+// RbitT1: RBIT{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rd, Rm
+// IT state read: condition
+fa9ef2ac rbit r2, r12 (unpredictable)
+fa9ffca2 rbit r12, r2 (unpredictable)
+fa9af7a4 rbit r7, r4 (unpredictable)
+fa9bf0a7 rbit r0, r7 (unpredictable)
+fa94f2af rbit r2, pc (unpredictable)
+fa9fffae rbit pc, lr (unpredictable)
+fa92fda0 rbit sp, r0 (unpredictable)
+fa9df7a6 rbit r7, r6 (unpredictable)
+FA90F2A2 rbit r2, r2 (unpredictable)
+FA98F2AC rbit r2, r12 (unpredictable)
+FA91F2AC rbit r2, r12 (unpredictable)
+FA9EF2AC [ne] rbitne r2, r12 (unpredictable)

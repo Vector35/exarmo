@@ -1,0 +1,23 @@
+// bfsub_za_zw_2x2_16 1|10|0000|11|sz=1|1|00|10|00|Rv=xx|111|Zm=xxxx|0|0|S=1|off3=xxx
+// BfsubZaZw2x216: BFSUB  ZA.H[<Wv>, <offs>{, VGx2}], { <Zm1>.H-<Zm2>.H }
+// register fields: Rv, Zm
+C1E41C09 bfsub za.h[w8, 1, vgx2], {z0.h-z1.h}
+C1E41C48 bfsub za.h[w8, 0, vgx2], {z2.h-z3.h}
+C1E41C4F bfsub za.h[w8, 7, vgx2], {z2.h-z3.h}
+C1E43FCA bfsub za.h[w9, 2, vgx2], {z30.h-z31.h}
+C1E45C0B bfsub za.h[w10, 3, vgx2], {z0.h-z1.h}
+C1E47C0C bfsub za.h[w11, 4, vgx2], {z0.h-z1.h}
+C1E41C0D bfsub za.h[w8, 5, vgx2], {z0.h-z1.h}
+C1E41C0E bfsub za.h[w8, 6, vgx2], {z0.h-z1.h}
+
+// bfsub_za_zw_4x4_16 1|10|0000|11|sz=1|1|00|10|10|Rv=xx|111|Zm=xxx|00|0|S=1|off3=xxx
+// BfsubZaZw4x416: BFSUB  ZA.H[<Wv>, <offs>{, VGx4}], { <Zm1>.H-<Zm4>.H }
+// register fields: Rv, Zm
+C1E51C0E bfsub za.h[w8, 6, vgx4], {z0.h-z3.h}
+C1E51C8C bfsub za.h[w8, 4, vgx4], {z4.h-z7.h}
+C1E51D0A bfsub za.h[w8, 2, vgx4], {z8.h-z11.h}
+C1E53D88 bfsub za.h[w9, 0, vgx4], {z12.h-z15.h}
+C1E55E09 bfsub za.h[w10, 1, vgx4], {z16.h-z19.h}
+C1E57E8B bfsub za.h[w11, 3, vgx4], {z20.h-z23.h}
+C1E51F0D bfsub za.h[w8, 5, vgx4], {z24.h-z27.h}
+C1E51F8F bfsub za.h[w8, 7, vgx4], {z28.h-z31.h}

@@ -1,0 +1,24 @@
+// FCVTN_asimdmisc_N 0|Q=x|U=0|0|111|0|0|sz=x|10000|opcode=10110|10|Rn=xxxxx|Rd=xxxxx
+// FcvtnAsimdmiscN: FCVTN  <Vd>.<Tb>, <Vn>.<Ta>
+// FcvtnAsimdmiscN2: FCVTN2  <Vd>.<Tb>, <Vn>.<Ta>
+// read together by <Tb>: Q, sz
+// register fields: Rn, Rd
+// form chosen on: Q
+0E6169A2 fcvtn v2.2s, v13.2d
+0E6169CF fcvtn v15.2s, v14.2d
+0E616913 fcvtn v19.2s, v8.2d
+0E616B05 fcvtn v5.2s, v24.2d
+0E6168A0 fcvtn v0.2s, v5.2d
+4E216B5A fcvtn2 v26.8h, v26.4s
+4E216B4E fcvtn2 v14.8h, v26.4s
+4E216840 fcvtn2 v0.8h, v2.4s
+4E6169D3 fcvtn2 v19.4s, v14.2d
+0E216B1F fcvtn v31.4h, v24.4s
+0E616984 fcvtn v4.2s, v12.2d
+0E61698E fcvtn v14.2s, v12.2d
+4E616BD8 fcvtn2 v24.4s, v30.2d
+0E216A99 fcvtn v25.4h, v20.4s
+0E616818 fcvtn v24.2s, v0.2d
+4E616B72 fcvtn2 v18.4s, v27.2d
+0E616BE2 fcvtn v2.2s, v31.2d
+4E216A99 fcvtn2 v25.8h, v20.4s

@@ -1,0 +1,22 @@
+// sqadd_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|000|10|U=0|Zn=xxxxx|Zd=xxxxx
+// SqaddZZz: SQADD  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+04751130 sqadd z16.h, z9.h, z21.h
+04A8120F sqadd z15.s, z16.s, z8.s
+046A1365 sqadd z5.h, z27.h, z10.h
+04F31346 sqadd z6.d, z26.d, z19.d
+0460105A sqadd z26.h, z2.h, z0.h
+042F1191 sqadd z17.b, z12.b, z15.b
+04AF13FE sqadd z30.s, z31.s, z15.s
+042A128C sqadd z12.b, z20.b, z10.b
+04FC10AB sqadd z11.d, z5.d, z28.d
+04AD130D sqadd z13.s, z24.s, z13.s
+04F210C5 sqadd z5.d, z6.d, z18.d
+04791216 sqadd z22.h, z16.h, z25.h
+043A10B6 sqadd z22.b, z5.b, z26.b
+04BA11C4 sqadd z4.s, z14.s, z26.s
+04AE10EB sqadd z11.s, z7.s, z14.s
+04E410BE sqadd z30.d, z5.d, z4.d
+047F1000 sqadd z0.h, z0.h, z31.h
+0475113F sqadd z31.h, z9.h, z21.h
+047512B0 sqadd z16.h, z21.h, z21.h

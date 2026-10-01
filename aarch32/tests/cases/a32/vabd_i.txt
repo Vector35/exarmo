@@ -1,0 +1,48 @@
+// VABD_i_A1_D 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0111|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VabdIA1D: VABD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f3598704 vabd.u16 d24, d9, d4
+f222e7a3 vabd.s32 d14, d18, d19
+f3487707 vabd.u8 d23, d8, d7
+f32287af vabd.u32 d8, d18, d31
+f22e672b vabd.s32 d6, d14, d27
+f2094789 vabd.s8 d4, d25, d9
+f26df70e vabd.s32 d31, d13, d14
+f36d978a vabd.u32 d25, d29, d10
+F3798704 UNDEFINED
+F2500700 vabd.s16 d16, d0, d0
+F35F2708 vabd.u16 d18, d15, d8
+F3541702 vabd.u16 d17, d4, d2
+F3110701 vabd.u16 d0, d1, d1
+F2798704 UNDEFINED
+F310F700 vabd.u16 d15, d0, d0
+F350078F vabd.u16 d16, d16, d15
+F35F8720 vabd.u16 d24, d15, d16
+F35F8784 vabd.u16 d24, d31, d4
+
+// VABD_i_A1_Q 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0111|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VabdIA1Q: VABD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f35667ec vabd.u16 q11, q11, q14
+f24227e2 vabd.s8 q9, q9, q9
+f36e87ec vabd.u32 q12, q15, q14
+f3422762 vabd.u8 q9, q1, q9
+f32cc7ce vabd.u32 q6, q14, q7
+f32247ce vabd.u32 q2, q9, q7
+f31047ea vabd.u16 q2, q8, q13
+f24447ec vabd.s8 q10, q10, q14
+F37FF7EF UNDEFINED
+F25807E0 vabd.s16 q8, q12, q8
+F27117E1 UNDEFINED
+F2200768 vabd.s32 q0, q0, q12
+F35607E4 vabd.u16 q8, q11, q10
+F33FF74F UNDEFINED
+F35FF7EF UNDEFINED
+F35667C0 vabd.u16 q11, q11, q0
+F35667E0 vabd.u16 q11, q11, q8

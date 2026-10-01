@@ -1,0 +1,16 @@
+// UXTAB16_T1 111|11010|0|op1=01|U=1|Rn=xxxx|1111|Rd=xxxx|1(0)|rotate=xx|Rm=xxxx
+// Uxtab16T1: UXTAB16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, ROR #<amount>}
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa3ef093 uxtab16 r0, lr, r3, ror #8
+fa3df1c9 uxtab16 r1, sp, r9 (unpredictable)
+fa3cfdab uxtab16 sp, r12, r11, ror #16
+fa39fc9a uxtab16 r12, r9, r10, ror #8
+fa38f4c4 uxtab16 r4, r8, r4 (unpredictable)
+fa34fedf uxtab16 lr, r4, pc, ror #8 (unpredictable)
+fa3ef3ac uxtab16 r3, lr, r12, ror #16
+fa34faf7 uxtab16 r10, r4, r7, ror #24 (unpredictable)
+FA30FF90 uxtab16 pc, r0, r0, ror #0x8 (unpredictable)
+FA3EFE93 uxtab16 lr, lr, r3, ror #0x8
+FA3EF09E uxtab16 r0, lr, lr, ror #0x8
+FA3EF093 [ne] uxtab16ne r0, lr, r3, ror #0x8

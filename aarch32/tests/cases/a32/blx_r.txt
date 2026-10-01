@@ -1,0 +1,20 @@
+// BLX_r_A1 cond=xxxx|00|010|op0=01|0|(1)(1)(1)(1)(1)(1)(1)(1)(1)(1)(1)(1)|0|011|Rm=xxxx
+// BlxRA1: BLX{<c>}{<q>}  <Rm>
+// register fields: Rm
+// Binary Ninja's tests
+112fff32 blxne r2
+e12fff32 blx r2
+01200030 blxeq r0 (unpredictable)
+F12FFF32 UNALLOCATED
+8128003F blxhi pc (unpredictable)
+41240032 blxmi r2 (unpredictable)
+21220032 blxcs r2 (unpredictable)
+11210032 blxne r2 (unpredictable)
+11208032 blxne r2 (unpredictable)
+11204032 blxne r2 (unpredictable)
+11202032 blxne r2 (unpredictable)
+11201032 blxne r2 (unpredictable)
+11200832 blxne r2 (unpredictable)
+11200432 blxne r2 (unpredictable)
+11200232 blxne r2 (unpredictable)
+11200132 blxne r2 (unpredictable)

@@ -1,0 +1,13 @@
+// USAT16_A1 cond=xxxx|011|01|U=1|10|sat_imm=xxxx|Rd=xxxx|(1)(1)(1)(1)|001|1|Rn=xxxx
+// Usat16A1: USAT16{<c>}{<q>}  <Rd>, #<imm>, <Rn>
+// register fields: Rd, Rn
+a6ef7f3e usat16ge r7, #15, lr
+// Binary Ninja's tests
+e6e22f37 usat16 r2, #2, r7
+e6ef3f35 usat16 r3, #15, r5
+06E00030 usat16eq r0, #0x0, r0 (unpredictable)
+F6EF7F3E UNALLOCATED
+86E8F83F usat16hi pc, #0x8, pc (unpredictable)
+46E47437 usat16mi r7, #0x4, r7 (unpredictable)
+26E1723E usat16cs r7, #0x1, lr (unpredictable)
+16EF713E usat16ne r7, #0xf, lr (unpredictable)

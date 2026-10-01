@@ -1,0 +1,12 @@
+// DBG_A1 cond=xxxx|00|1|10|R=0|10|imm4=0000|(1)(1)(1)(1)|(0)(0)(0)(0)1111|option=xxxx
+// DbgA1: DBG{<c>}{<q>}  #<option>
+// Binary Ninja's tests
+e320f0f0 dbg #0
+e320f0f5 dbg #5
+e320f0ff dbg #15
+03200FF8 dbgeq #0x8 (unpredictable)
+F320F0F0 UNDEFINED
+832088F4 dbghi #0x4 (unpredictable)
+432044F2 dbgmi #0x2 (unpredictable)
+232022F1 dbgcs #0x1 (unpredictable)
+132011F0 dbgne #0x0 (unpredictable)

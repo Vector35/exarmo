@@ -1,0 +1,11 @@
+// SETEND_T1 1011|0110|01|op=0|(1)|E=x|(0)(0)(0)
+// SetendT1: SETEND{<q>}  <endian_specifier>
+B640 setend le (unpredictable)
+B659 setend be (unpredictable)
+B642 setend le (unpredictable)
+B643 setend le (unpredictable)
+B644 setend le (unpredictable)
+B645 setend le (unpredictable)
+B646 setend le (unpredictable)
+B647 setend le (unpredictable)
+B650 setend le

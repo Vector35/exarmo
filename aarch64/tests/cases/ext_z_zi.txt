@@ -1,0 +1,74 @@
+// ext_z_zi_con 000|0010|10|1|1|imm8h=xxxxx|000|imm8l=xxx|Zn=xxxxx|Zd=xxxxx
+// ExtZZiCon: EXT  <Zd>.B, { <Zn1>.B, <Zn2>.B }, #<imm>
+// read together by <imm>: imm8h, imm8l
+// register fields: Zn, Zd
+057617D8 ext z24.b, {z30.b, z31.b}, #0xb5
+05790BAF ext z15.b, {z29.b, z30.b}, #0xca
+0567103E ext z30.b, {z1.b, z2.b}, #0x3c
+0575014A ext z10.b, {z10.b, z11.b}, #0xa8
+05771FA9 ext z9.b, {z29.b, z30.b}, #0xbf
+05761A7A ext z26.b, {z19.b, z20.b}, #0xb6
+056B10B2 ext z18.b, {z5.b, z6.b}, #0x5c
+057401C1 ext z1.b, {z14.b, z15.b}, #0xa0
+05600400 ext z0.b, {z0.b, z1.b}, #0x1
+057F0FFF ext z31.b, {z31.b, z0.b}, #0xfb
+056003D8 ext z24.b, {z30.b, z31.b}, #0x0
+05600BD8 ext z24.b, {z30.b, z31.b}, #0x2
+05600FD8 ext z24.b, {z30.b, z31.b}, #0x3
+056013D8 ext z24.b, {z30.b, z31.b}, #0x4
+056017D8 ext z24.b, {z30.b, z31.b}, #0x5
+05601BD8 ext z24.b, {z30.b, z31.b}, #0x6
+05601FD8 ext z24.b, {z30.b, z31.b}, #0x7
+057F03D8 ext z24.b, {z30.b, z31.b}, #0xf8
+057F07D8 ext z24.b, {z30.b, z31.b}, #0xf9
+057F0BD8 ext z24.b, {z30.b, z31.b}, #0xfa
+057F13D8 ext z24.b, {z30.b, z31.b}, #0xfc
+057F17D8 ext z24.b, {z30.b, z31.b}, #0xfd
+057F1BD8 ext z24.b, {z30.b, z31.b}, #0xfe
+057F1FD8 ext z24.b, {z30.b, z31.b}, #0xff
+057017D8 ext z24.b, {z30.b, z31.b}, #0x85
+056817D8 ext z24.b, {z30.b, z31.b}, #0x45
+056417D8 ext z24.b, {z30.b, z31.b}, #0x25
+056217D8 ext z24.b, {z30.b, z31.b}, #0x15
+056117D8 ext z24.b, {z30.b, z31.b}, #0xd
+
+// ext_z_zi_des 000|0010|10|0|1|imm8h=xxxxx|000|imm8l=xxx|Zm=xxxxx|Zdn=xxxxx
+// ExtZZiDes: EXT  <Zdn>.B, <Zdn>.B, <Zm>.B, #<imm>
+// read together by <imm>: imm8h, imm8l
+// register fields: Zm, Zdn
+05330A08 ext z8.b, z8.b, z16.b, #0x9a
+05290A0C ext z12.b, z12.b, z16.b, #0x4a
+05361DBD ext z29.b, z29.b, z13.b, #0xb7
+05370DF6 ext z22.b, z22.b, z15.b, #0xbb
+05270E5B ext z27.b, z27.b, z18.b, #0x3b
+053910E7 ext z7.b, z7.b, z7.b, #0xcc
+0525195F ext z31.b, z31.b, z10.b, #0x2e
+05270626 ext z6.b, z6.b, z17.b, #0x39
+0524104B ext z11.b, z11.b, z2.b, #0x24
+053D0927 ext z7.b, z7.b, z9.b, #0xea
+052D0DFC ext z28.b, z28.b, z15.b, #0x6b
+05380C09 ext z9.b, z9.b, z0.b, #0xc3
+05341004 ext z4.b, z4.b, z0.b, #0xa4
+052C0FD4 ext z20.b, z20.b, z30.b, #0x63
+05361BE6 ext z6.b, z6.b, z31.b, #0xb6
+052B081E ext z30.b, z30.b, z0.b, #0x5a
+05200200 ext z0.b, z0.b, z16.b, #0x0
+053F1608 ext z8.b, z8.b, z16.b, #0xfd
+05200608 ext z8.b, z8.b, z16.b, #0x1
+05200A08 ext z8.b, z8.b, z16.b, #0x2
+05200E08 ext z8.b, z8.b, z16.b, #0x3
+05201208 ext z8.b, z8.b, z16.b, #0x4
+05201608 ext z8.b, z8.b, z16.b, #0x5
+05201A08 ext z8.b, z8.b, z16.b, #0x6
+05201E08 ext z8.b, z8.b, z16.b, #0x7
+053F0208 ext z8.b, z8.b, z16.b, #0xf8
+053F0608 ext z8.b, z8.b, z16.b, #0xf9
+053F0A08 ext z8.b, z8.b, z16.b, #0xfa
+053F0E08 ext z8.b, z8.b, z16.b, #0xfb
+053F1208 ext z8.b, z8.b, z16.b, #0xfc
+053F1A08 ext z8.b, z8.b, z16.b, #0xfe
+053F1E08 ext z8.b, z8.b, z16.b, #0xff
+05300A08 ext z8.b, z8.b, z16.b, #0x82
+05280A08 ext z8.b, z8.b, z16.b, #0x42
+05220A08 ext z8.b, z8.b, z16.b, #0x12
+05210A08 ext z8.b, z8.b, z16.b, #0xa

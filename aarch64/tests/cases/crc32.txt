@@ -1,0 +1,89 @@
+// CRC32B_32C_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|010|C=0|sz=00|Rn=xxxxx|Rd=xxxxx
+// Crc32b32cDp2src: CRC32B  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AC74347 crc32b w7, w26, w7
+1AC3437B crc32b w27, w27, w3
+1ACE4114 crc32b w20, w8, w14
+1AC6405A crc32b w26, w2, w6
+1AC54379 crc32b w25, w27, w5
+1AC8431D crc32b w29, w24, w8
+1AD6429E crc32b w30, w20, w22
+1AC342F5 crc32b w21, w23, w3
+1ADF40AA crc32b w10, w5, wzr
+1AC6407E crc32b w30, w3, w6
+1ACF401B crc32b w27, w0, w15
+1AC04063 crc32b w3, w3, w0
+1AD8414F crc32b w15, w10, w24
+1ADA4078 crc32b w24, w3, w26
+1AD34013 crc32b w19, w0, w19
+1AC34115 crc32b w21, w8, w3
+1AC743E0 crc32b w0, wzr, w7
+1AC7435F crc32b wzr, w26, w7
+1AC740E7 crc32b w7, w7, w7
+
+// CRC32H_32C_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|010|C=0|sz=01|Rn=xxxxx|Rd=xxxxx
+// Crc32h32cDp2src: CRC32H  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AD544C5 crc32h w5, w6, w21
+1ADD4413 crc32h w19, w0, w29
+1ACD453E crc32h w30, w9, w13
+1ACB4474 crc32h w20, w3, w11
+1AC8464A crc32h w10, w18, w8
+1ACE44A6 crc32h w6, w5, w14
+1ACE47D9 crc32h w25, w30, w14
+1AD54799 crc32h w25, w28, w21
+1AD64504 crc32h w4, w8, w22
+1ADD44CA crc32h w10, w6, w29
+1ACB4738 crc32h w24, w25, w11
+1AD4475C crc32h w28, w26, w20
+1AD9463B crc32h w27, w17, w25
+1AD747EB crc32h w11, wzr, w23
+1AC34526 crc32h w6, w9, w3
+1AC144D5 crc32h w21, w6, w1
+1AC044C0 crc32h w0, w6, w0
+1ADF44DF crc32h wzr, w6, wzr
+1AD546A5 crc32h w5, w21, w21
+1AD544C6 crc32h w6, w6, w21
+
+// CRC32W_32C_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|010|C=0|sz=10|Rn=xxxxx|Rd=xxxxx
+// Crc32w32cDp2src: CRC32W  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AD64800 crc32w w0, w0, w22
+1ACB4AAB crc32w w11, w21, w11
+1AD54BBA crc32w w26, w29, w21
+1ADC4BBC crc32w w28, w29, w28
+1ADF4BDE crc32w w30, w30, wzr
+1ACF49AE crc32w w14, w13, w15
+1AC24B08 crc32w w8, w24, w2
+1AD14B00 crc32w w0, w24, w17
+1ADB48E5 crc32w w5, w7, w27
+1AD84B12 crc32w w18, w24, w24
+1ADA4AF5 crc32w w21, w23, w26
+1AD1490C crc32w w12, w8, w17
+1AD24B37 crc32w w23, w25, w18
+1AC74B5E crc32w w30, w26, w7
+1AC44A89 crc32w w9, w20, w4
+1ACC497C crc32w w28, w11, w12
+1AC04BFF crc32w wzr, wzr, w0
+
+// CRC32X_64C_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|010|C=0|sz=11|Rn=xxxxx|Rd=xxxxx
+// Crc32x64cDp2src: CRC32X  <Wd>, <Wn>, <Xm>
+// register fields: Rm, Rn, Rd
+9AC24E71 crc32x w17, w19, x2
+9AC54C9E crc32x w30, w4, x5
+9AD54E35 crc32x w21, w17, x21
+9ACE4C74 crc32x w20, w3, x14
+9AD64DC7 crc32x w7, w14, x22
+9AD04CC4 crc32x w4, w6, x16
+9AD44C2B crc32x w11, w1, x20
+9AD74E9D crc32x w29, w20, x23
+9ADE4C50 crc32x w16, w2, lr
+9AD94FB2 crc32x w18, w29, x25
+9ADE4D1E crc32x w30, w8, lr
+9ACC4D97 crc32x w23, w12, x12
+9AD94FF7 crc32x w23, wzr, x25
+9AD04D48 crc32x w8, w10, x16
+9AD04D96 crc32x w22, w12, x16
+9ACB4CDD crc32x w29, w6, x11
+9AC04C00 crc32x w0, w0, x0
+9ADF4E7F crc32x wzr, w19, xzr

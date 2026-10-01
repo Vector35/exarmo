@@ -1,0 +1,69 @@
+// sqrshrnt_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=1|U=0|R=1|T=1|Zn=xxxxx|Zd=xxxxx
+// SqrshrntZZi: SQRSHRNT  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+45612C92 sqrshrnt z18.s, z4.d, #0x1f
+452D2D16 sqrshrnt z22.b, z8.h, #0x3
+45612F61 sqrshrnt z1.s, z27.d, #0x1f
+45732D8B sqrshrnt z11.s, z12.d, #0xd
+452E2E0D sqrshrnt z13.b, z16.h, #0x2
+45772FC1 sqrshrnt z1.s, z30.d, #0x9
+453B2C03 sqrshrnt z3.h, z0.s, #0x5
+45692FE3 sqrshrnt z3.s, z31.d, #0x17
+45602C80 sqrshrnt z0.s, z4.d, #0x20
+45622C9F sqrshrnt z31.s, z4.d, #0x1e
+45642C92 sqrshrnt z18.s, z4.d, #0x1c
+45202C92 UNDEFINED
+45212C92 UNDEFINED
+45222C92 UNDEFINED
+45232C92 UNDEFINED
+45242C92 UNDEFINED
+45252C92 UNDEFINED
+45262C92 UNDEFINED
+45272C92 UNDEFINED
+45282C84 sqrshrnt z4.b, z4.h, #0x8
+45292C92 sqrshrnt z18.b, z4.h, #0x7
+452A2C92 sqrshrnt z18.b, z4.h, #0x6
+452B2C92 sqrshrnt z18.b, z4.h, #0x5
+452C2C92 sqrshrnt z18.b, z4.h, #0x4
+452F2C92 sqrshrnt z18.b, z4.h, #0x1
+45302C92 sqrshrnt z18.h, z4.s, #0x10
+45312C92 sqrshrnt z18.h, z4.s, #0xf
+45322C92 sqrshrnt z18.h, z4.s, #0xe
+45332C92 sqrshrnt z18.h, z4.s, #0xd
+45342C92 sqrshrnt z18.h, z4.s, #0xc
+45352C92 sqrshrnt z18.h, z4.s, #0xb
+45362C92 sqrshrnt z18.h, z4.s, #0xa
+45372C92 sqrshrnt z18.h, z4.s, #0x9
+45382C92 sqrshrnt z18.h, z4.s, #0x8
+45392C92 sqrshrnt z18.h, z4.s, #0x7
+453A2C92 sqrshrnt z18.h, z4.s, #0x6
+453C2C92 sqrshrnt z18.h, z4.s, #0x4
+453D2C92 sqrshrnt z18.h, z4.s, #0x3
+453E2C92 sqrshrnt z18.h, z4.s, #0x2
+453F2C92 sqrshrnt z18.h, z4.s, #0x1
+45632C92 sqrshrnt z18.s, z4.d, #0x1d
+45652C92 sqrshrnt z18.s, z4.d, #0x1b
+45662C92 sqrshrnt z18.s, z4.d, #0x1a
+45672C92 sqrshrnt z18.s, z4.d, #0x19
+45682C92 sqrshrnt z18.s, z4.d, #0x18
+456A2C92 sqrshrnt z18.s, z4.d, #0x16
+456B2C92 sqrshrnt z18.s, z4.d, #0x15
+456C2C92 sqrshrnt z18.s, z4.d, #0x14
+456D2C92 sqrshrnt z18.s, z4.d, #0x13
+456E2C92 sqrshrnt z18.s, z4.d, #0x12
+456F2C92 sqrshrnt z18.s, z4.d, #0x11
+45702C92 sqrshrnt z18.s, z4.d, #0x10
+45712C92 sqrshrnt z18.s, z4.d, #0xf
+45722C92 sqrshrnt z18.s, z4.d, #0xe
+45742C92 sqrshrnt z18.s, z4.d, #0xc
+45752C92 sqrshrnt z18.s, z4.d, #0xb
+45762C92 sqrshrnt z18.s, z4.d, #0xa
+45782C92 sqrshrnt z18.s, z4.d, #0x8
+45792C92 sqrshrnt z18.s, z4.d, #0x7
+457A2C92 sqrshrnt z18.s, z4.d, #0x6
+457B2C92 sqrshrnt z18.s, z4.d, #0x5
+457C2C92 sqrshrnt z18.s, z4.d, #0x4
+457D2C92 sqrshrnt z18.s, z4.d, #0x3
+457E2C92 sqrshrnt z18.s, z4.d, #0x2
+457F2C92 sqrshrnt z18.s, z4.d, #0x1

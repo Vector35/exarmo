@@ -1,0 +1,69 @@
+// FMAXNM_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|01|op=10|10|Rn=xxxxx|Rd=xxxxx
+// FmaxnmDFloatdp2: FMAXNM  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E7869A2 fmaxnm d2, d13, d24
+1E71680A fmaxnm d10, d0, d17
+1E786AF9 fmaxnm d25, d23, d24
+1E76685F fmaxnm d31, d2, d22
+1E6B6878 fmaxnm d24, d3, d11
+1E726834 fmaxnm d20, d1, d18
+1E756A3A fmaxnm d26, d17, d21
+1E726B2F fmaxnm d15, d25, d18
+1E706B7F fmaxnm d31, d27, d16
+1E716A57 fmaxnm d23, d18, d17
+1E62693E fmaxnm d30, d9, d2
+1E7869B6 fmaxnm d22, d13, d24
+1E6669F9 fmaxnm d25, d15, d6
+1E6E690E fmaxnm d14, d8, d14
+1E686B5C fmaxnm d28, d26, d8
+1E7E6B75 fmaxnm d21, d27, d30
+1E606BE0 fmaxnm d0, d31, d0
+1E7F69A2 fmaxnm d2, d13, d31
+1E786B02 fmaxnm d2, d24, d24
+1E7869AD fmaxnm d13, d13, d24
+
+// FMAXNM_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|01|op=10|10|Rn=xxxxx|Rd=xxxxx
+// FmaxnmHFloatdp2: FMAXNM  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EFB6ACB fmaxnm h11, h22, h27
+1EE26911 fmaxnm h17, h8, h2
+1EFA6934 fmaxnm h20, h9, h26
+1EF06824 fmaxnm h4, h1, h16
+1EE4685D fmaxnm h29, h2, h4
+1EF76982 fmaxnm h2, h12, h23
+1EE56AFF fmaxnm h31, h23, h5
+1EF16959 fmaxnm h25, h10, h17
+1EFD6960 fmaxnm h0, h11, h29
+1EEF6B5B fmaxnm h27, h26, h15
+1EE469D0 fmaxnm h16, h14, h4
+1EF268AE fmaxnm h14, h5, h18
+1EEE6A7B fmaxnm h27, h19, h14
+1EEC6999 fmaxnm h25, h12, h12
+1EEB688A fmaxnm h10, h4, h11
+1EE96844 fmaxnm h4, h2, h9
+1EE0680B fmaxnm h11, h0, h0
+1EFF6BEB fmaxnm h11, h31, h31
+1EFB6ADB fmaxnm h27, h22, h27
+1EFB6AD6 fmaxnm h22, h22, h27
+
+// FMAXNM_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|01|op=10|10|Rn=xxxxx|Rd=xxxxx
+// FmaxnmSFloatdp2: FMAXNM  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E266ADF fmaxnm s31, s22, s6
+1E236B2C fmaxnm s12, s25, s3
+1E26696C fmaxnm s12, s11, s6
+1E366986 fmaxnm s6, s12, s22
+1E346831 fmaxnm s17, s1, s20
+1E3F6B98 fmaxnm s24, s28, s31
+1E2E6AF5 fmaxnm s21, s23, s14
+1E336BC2 fmaxnm s2, s30, s19
+1E3F698E fmaxnm s14, s12, s31
+1E396B6B fmaxnm s11, s27, s25
+1E3C6B25 fmaxnm s5, s25, s28
+1E2A6A9A fmaxnm s26, s20, s10
+1E2E6AF2 fmaxnm s18, s23, s14
+1E316BB6 fmaxnm s22, s29, s17
+1E2E6BDB fmaxnm s27, s30, s14
+1E376A35 fmaxnm s21, s17, s23
+1E206800 fmaxnm s0, s0, s0
+1E266BFF fmaxnm s31, s31, s6

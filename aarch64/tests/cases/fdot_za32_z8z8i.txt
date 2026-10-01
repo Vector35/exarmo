@@ -1,0 +1,25 @@
+// fdot_za32_z8z8i_2xi 1|10|0000|1|01|01|Zm=xxxx|0|Rv=xx|op=0|i2=xx|Zn=xxxx|opc2=111|off3=xxx
+// FdotZa32Z8z8i2xi: FDOT  ZA.S[<Wv>, <offs>{, VGx2}], { <Zn1>.B-<Zn2>.B }, <Zm>.B[<index>]
+// register fields: Zm, Rv, Zn
+C150003C fdot za.s[w8, 4, vgx2], {z0.b-z1.b}, z0.b[0]
+C150007B fdot za.s[w8, 3, vgx2], {z2.b-z3.b}, z0.b[0]
+C15000BA fdot za.s[w8, 2, vgx2], {z4.b-z5.b}, z0.b[0]
+C15F27F8 fdot za.s[w9, 0, vgx2], {z30.b-z31.b}, z15.b[1]
+C1504839 fdot za.s[w10, 1, vgx2], {z0.b-z1.b}, z0.b[2]
+C1506C3D fdot za.s[w11, 5, vgx2], {z0.b-z1.b}, z0.b[3]
+C150003E fdot za.s[w8, 6, vgx2], {z0.b-z1.b}, z0.b[0]
+C150003F fdot za.s[w8, 7, vgx2], {z0.b-z1.b}, z0.b[0]
+C15140FC fdot za.s[w10, 4, vgx2], {z6.b-z7.b}, z1.b[0]
+
+// fdot_za32_z8z8i_4xi 1|10|0000|1|01|01|Zm=xxxx|1|Rv=xx|op=0|i2=xx|Zn=xxx|0|opc2=001|off3=xxx
+// FdotZa32Z8z8i4xi: FDOT  ZA.S[<Wv>, <offs>{, VGx4}], { <Zn1>.B-<Zn4>.B }, <Zm>.B[<index>]
+// register fields: Zm, Rv, Zn
+C150800A fdot za.s[w8, 2, vgx4], {z0.b-z3.b}, z0.b[0]
+C1508088 fdot za.s[w8, 0, vgx4], {z4.b-z7.b}, z0.b[0]
+C150808F fdot za.s[w8, 7, vgx4], {z4.b-z7.b}, z0.b[0]
+C15FA509 fdot za.s[w9, 1, vgx4], {z8.b-z11.b}, z15.b[1]
+C150C98B fdot za.s[w10, 3, vgx4], {z12.b-z15.b}, z0.b[2]
+C150EE0C fdot za.s[w11, 4, vgx4], {z16.b-z19.b}, z0.b[3]
+C150828D fdot za.s[w8, 5, vgx4], {z20.b-z23.b}, z0.b[0]
+C150830E fdot za.s[w8, 6, vgx4], {z24.b-z27.b}, z0.b[0]
+C150838A fdot za.s[w8, 2, vgx4], {z28.b-z31.b}, z0.b[0]

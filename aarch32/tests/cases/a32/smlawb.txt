@@ -1,0 +1,39 @@
+// SMLAWB_A1 cond=xxxx|00010|opc=01|0|Rd=xxxx|Ra=xxxx|Rm=xxxx|1|M=0|N=0|0|Rn=xxxx
+// SmlawbA1: SMLAWB{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+a1249e81 smlawbge r4, r1, lr, r9
+d1265482 smlawble r6, r2, r4, r5
+c12dc986 smlawbgt sp, r6, r9, r12
+0129ef82 smlawbeq r9, r2, pc, lr (unpredictable)
+c12e7782 smlawbgt lr, r2, r7, r7
+a12f348c smlawbge pc, r12, r4, r3 (unpredictable)
+71248181 smlawbvc r4, r1, r1, r8
+8128d188 smlawbhi r8, r8, r1, sp
+// Binary Ninja's tests
+01228587 smlawbeq r2, r7, r5, r8
+e1228a83 smlawb r2, r3, r10, r8
+F1249E81 UNALLOCATED
+41200080 smlawbmi r0, r0, r0, r0
+2124F48F smlawbcs r4, pc, r4, pc (unpredictable)
+11244E81 smlawbne r4, r1, lr, r4
+A1249E89 smlawbge r4, r9, lr, r9
+
+// SMLAWT_A1 cond=xxxx|00010|opc=01|0|Rd=xxxx|Ra=xxxx|Rm=xxxx|1|M=1|N=0|0|Rn=xxxx
+// SmlawtA1: SMLAWT{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+b127eaca smlawtlt r7, r10, r10, lr
+5125c5ce smlawtpl r5, lr, r5, r12
+712418c0 smlawtvc r4, r0, r8, r1
+a12dd7cb smlawtge sp, r11, r7, sp
+812114c8 smlawthi r1, r8, r4, r1
+712850ce smlawtvc r8, lr, r0, r5
+212274c1 smlawths r2, r1, r4, r7
+412eafc7 smlawtmi lr, r7, pc, r10 (unpredictable)
+// Binary Ninja's tests
+812180c3 smlawthi r1, r3, r0, r8
+e12895c3 smlawt r8, r3, r5, r9
+01200ACF smlawteq r0, pc, r10, r0 (unpredictable)
+F127EACA UNALLOCATED
+112FFACA smlawtne pc, r10, r10, pc (unpredictable)
+B127EEC7 smlawtlt r7, r7, lr, lr
+B127EACE smlawtlt r7, lr, r10, lr

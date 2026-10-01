@@ -1,0 +1,31 @@
+// index_z_ir_ 000|0010|0|size=xx|1|Rm=xxxxx|0100|10|imm5=xxxxx|Zd=xxxxx
+// IndexZIr: INDEX  <Zd>.<T>, #<imm>, <m>
+// read together by <m>: size, Rm
+// register fields: Rm, Zd
+04B949A9 index z9.s, #0xd, w25
+04F54B12 index z18.d, #-8, x21
+042949B9 index z25.b, #0xd, w9
+046F48C5 index z5.h, #0x6, w15
+042A48CF index z15.b, #0x6, w10
+046F4876 index z22.h, #0x3, w15
+04B64BD7 index z23.s, #-2, w22
+04614AE1 index z1.h, #-9, w1
+04B24887 index z7.s, #0x4, w18
+042E4A75 index z21.b, #-13, w14
+04B749DA index z26.s, #0xe, w23
+04254835 index z21.b, #0x1, w5
+0426499E index z30.b, #0xc, w6
+04A948DD index z29.s, #0x6, w9
+046449B8 index z24.h, #0xd, w4
+04A84ABF index z31.s, #-11, w8
+04A04800 index z0.s, #0x0, w0
+04BF4BE9 index z9.s, #-0x1, wzr
+042049A9 index z9.b, #0xd, w0
+043F49A9 index z9.b, #0xd, wzr
+046049A9 index z9.h, #0xd, w0
+047F49A9 index z9.h, #0xd, wzr
+04E049A9 index z9.d, #0xd, x0
+04FF49A9 index z9.d, #0xd, xzr
+04B94A09 index z9.s, #-0x10, w25
+04B94909 index z9.s, #0x8, w25
+04B94849 index z9.s, #0x2, w25

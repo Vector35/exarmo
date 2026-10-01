@@ -1,0 +1,58 @@
+// USQADD_asimdmisc_R 0|Q=x|U=1|0|111|0|size=xx|10000|opcode=00011|10|Rn=xxxxx|Rd=xxxxx
+// UsqaddAsimdmiscR: USQADD  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+6EA03AAC usqadd v12.4s, v21.4s
+6EE038D0 usqadd v16.2d, v6.2d
+2EA039C9 usqadd v9.2s, v14.2s
+2E203A10 usqadd v16.8b, v16.8b
+6EE03B00 usqadd v0.2d, v24.2d
+6EE0383D usqadd v29.2d, v1.2d
+6EA03A0B usqadd v11.4s, v16.4s
+6E203956 usqadd v22.16b, v10.16b
+6EA03A94 usqadd v20.4s, v20.4s
+6EA03819 usqadd v25.4s, v0.4s
+2E203A31 usqadd v17.8b, v17.8b
+6E603BE7 usqadd v7.8h, v31.8h
+6E203A9F usqadd v31.16b, v20.16b
+6E60391E usqadd v30.8h, v8.8h
+6EA0386A usqadd v10.4s, v3.4s
+6EE03B54 usqadd v20.2d, v26.2d
+2E603AAC usqadd v12.4h, v21.4h
+2EE03AAC UNDEFINED
+
+// USQADD_asisdmisc_R 01|U=1|1|111|0|size=xx|10000|opcode=00011|10|Rn=xxxxx|Rd=xxxxx
+// UsqaddAsisdmiscR: USQADD  <V><d>, <V><n>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// register fields: Rn, Rd
+7EE03B7F usqadd d31, d27
+7EA039BC usqadd s28, s13
+7EE03AF2 usqadd d18, d23
+7E603A16 usqadd h22, h16
+7EE03B1C usqadd d28, d24
+7E203914 usqadd b20, b8
+7EA03AB1 usqadd s17, s21
+7EE0398C usqadd d12, d12
+7E603A6A usqadd h10, h19
+7EE038FF usqadd d31, d7
+7E603BC1 usqadd h1, h30
+7EE03925 usqadd d5, d9
+7EA03948 usqadd s8, s10
+7EE039CF usqadd d15, d14
+7EA03A74 usqadd s20, s19
+7EE03B8B usqadd d11, d28
+7EE03800 usqadd d0, d0
+7EE03BFF usqadd d31, d31
+7E203B60 usqadd b0, b27
+7E203B7F usqadd b31, b27
+7E603B60 usqadd h0, h27
+7E603B7F usqadd h31, h27
+7EA03B60 usqadd s0, s27
+7EA03B7F usqadd s31, s27
+7E20381F usqadd b31, b0
+7E203BFF usqadd b31, b31
+7E60381F usqadd h31, h0
+7E603BFF usqadd h31, h31
+7EA0381F usqadd s31, s0
+7EA03BFF usqadd s31, s31

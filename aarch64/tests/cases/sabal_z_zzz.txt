@@ -1,0 +1,11 @@
+// sabal_z_zz_ 010|0010|0|size=xx|0|Zm=xxxxx|1101|U=0|1|Zn=xxxxx|Zda=xxxxx
+// SabalZZz: SABAL  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+4440D406 sabal z6.h, z0.b, z0.b
+4440D40D sabal z13.h, z0.b, z0.b
+4440D414 sabal z20.h, z0.b, z0.b
+449FD7E0 sabal z0.s, z31.h, z31.h
+44C0D41F sabal z31.d, z0.s, z0.s
+4400D406 UNDEFINED
+4440D400 sabal z0.h, z0.b, z0.b
+4441D443 sabal z3.h, z2.b, z1.b

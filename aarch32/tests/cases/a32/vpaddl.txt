@@ -1,0 +1,42 @@
+// VPADDL_A1_D 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|0010|op=x|Q=0|M=x|0|Vm=xxxx
+// VpaddlA1D: VPADDL{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <dt>: size, op
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b0d286 vpaddl.u8 d13, d6
+f3b4e20b vpaddl.s16 d14, d11
+f3f4122b vpaddl.s16 d17, d27
+f3f85204 vpaddl.s32 d21, d4
+f3f41229 vpaddl.s16 d17, d25
+f3b82209 vpaddl.s32 d2, d9
+f3f0928b vpaddl.u8 d25, d11
+f3b88289 vpaddl.u32 d8, d9
+F3BCD286 UNDEFINED
+F3B00200 vpaddl.s8 d0, d0
+F3B4F28F vpaddl.u16 d15, d15
+F3B04288 vpaddl.u8 d4, d8
+F3B00282 vpaddl.u8 d0, d2
+F3B0F281 vpaddl.u8 d15, d1
+F3BCD206 UNDEFINED
+F3F00280 vpaddl.u8 d16, d0
+F3F0F28F vpaddl.u8 d31, d15
+F3B0D2A0 vpaddl.u8 d13, d16
+F3B0D2AF vpaddl.u8 d13, d31
+
+// VPADDL_A1_Q 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|0010|op=x|Q=1|M=x|0|Vm=xxxx
+// VpaddlA1Q: VPADDL{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <dt>: size, op
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f802e6 vpaddl.u32 q8, q11
+F3B08240 vpaddl.s8 q4, q0
+F3F442E8 vpaddl.u16 q10, q12
+F3FCF2EF UNDEFINED
+F3F02264 vpaddl.s8 q9, q10
+F3FC1261 UNDEFINED
+F3B002E2 vpaddl.u8 q0, q9
+F3F40240 vpaddl.s16 q8, q0
+F3F402E0 vpaddl.u16 q8, q8
+F3F80266 vpaddl.s32 q8, q11
+F3BCF2CF UNDEFINED
+F3F8F2EF UNDEFINED

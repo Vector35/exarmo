@@ -1,0 +1,19 @@
+// whilehs_p_p_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|00|0|sf=x|U=1|lt=0|Rn=xxxxx|eq=0|Pd=xxxx
+// WhilehsPPRr: WHILEHS  <Pd>.<T>, <n>, <m>
+// read together by <n>: sf, Rn
+// read together by <m>: Rm, sf
+// register fields: Rm, Rn, Pd
+25E80904 whilehs p4.d, w8, w8
+257D094D whilehs p13.h, w10, w29
+25E918A2 whilehs p2.d, x5, x9
+25BA0947 whilehs p7.s, w10, w26
+25750A0F whilehs p15.h, w16, w21
+25A11BAA whilehs p10.s, fp, x1
+25A51981 whilehs p1.s, x12, x5
+25B509C3 whilehs p3.s, w14, w21
+25200800 whilehs p0.b, w0, w0
+25FF0BE4 whilehs p4.d, wzr, wzr
+25E01904 whilehs p4.d, x8, x0
+25FF1904 whilehs p4.d, x8, xzr
+25E81804 whilehs p4.d, x0, x8
+25E81BE4 whilehs p4.d, xzr, x8

@@ -1,0 +1,14 @@
+// st1q_z_p_ar_d_64_unscaled 111|0010|000|1|Rm=xxxxx|001|Pg=xxx|Zn=xxxxx|Zt=xxxxx
+// St1qZPArD64Unscaled: ST1Q  { <Zt>.Q }, <Pg>, [<Zn>.D{, <Xm>}]
+// register fields: Rm, Pg, Zn, Zt
+E4202000 st1q {z0.q}, p0, [z0.d, x0]
+E4202007 st1q {z7.q}, p0, [z0.d, x0]
+E420200E st1q {z14.q}, p0, [z0.d, x0]
+E43F27FF st1q {z31.q}, p1, [z31.d]
+E4202800 st1q {z0.q}, p2, [z0.d, x0]
+E4202C00 st1q {z0.q}, p3, [z0.d, x0]
+E4203000 st1q {z0.q}, p4, [z0.d, x0]
+E4203400 st1q {z0.q}, p5, [z0.d, x0]
+E4203800 st1q {z0.q}, p6, [z0.d, x0]
+E4203C00 st1q {z0.q}, p7, [z0.d, x0]
+E4212864 st1q {z4.q}, p2, [z3.d, x1]

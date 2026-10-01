@@ -1,0 +1,45 @@
+// FRINTP_asimdmisc_R 0|Q=x|U=0|0|111|0|o2=1|sz=x|10000|1100|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FrintpAsimdmiscR: FRINTP  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+4EE18A29 frintp v9.2d, v17.2d
+4EA18AC8 frintp v8.4s, v22.4s
+4EE18A5F frintp v31.2d, v18.2d
+4EA1896C frintp v12.4s, v11.4s
+4EE18A47 frintp v7.2d, v18.2d
+4EA1891B frintp v27.4s, v8.4s
+4EE18AB1 frintp v17.2d, v21.2d
+4EE18A63 frintp v3.2d, v19.2d
+4EE18A05 frintp v5.2d, v16.2d
+0EA18988 frintp v8.2s, v12.2s
+0EA18B27 frintp v7.2s, v25.2s
+4EE18AE4 frintp v4.2d, v23.2d
+4EE18B94 frintp v20.2d, v28.2d
+4EA18B84 frintp v4.4s, v28.4s
+4EA18987 frintp v7.4s, v12.4s
+4EA18AAC frintp v12.4s, v21.4s
+4EE18800 frintp v0.2d, v0.2d
+4EE18BE9 frintp v9.2d, v31.2d
+0EE18A29 UNDEFINED
+
+// FRINTP_asimdmiscfp16_R 0|Q=x|U=0|0|111|0|o2=1|1111|00|1100|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FrintpAsimdmiscfp16R: FRINTP  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+4EF98826 frintp v6.8h, v1.8h
+0EF989F2 frintp v18.4h, v15.4h
+4EF98B47 frintp v7.8h, v26.8h
+4EF988CF frintp v15.8h, v6.8h
+4EF988AD frintp v13.8h, v5.8h
+0EF98971 frintp v17.4h, v11.4h
+0EF989B4 frintp v20.4h, v13.4h
+4EF98B76 frintp v22.8h, v27.8h
+0EF98BB7 frintp v23.4h, v29.4h
+4EF98BE0 frintp v0.8h, v31.8h
+4EF98BAF frintp v15.8h, v29.8h
+4EF98946 frintp v6.8h, v10.8h
+0EF988C3 frintp v3.4h, v6.4h
+4EF9884E frintp v14.8h, v2.8h
+4EF98A04 frintp v4.8h, v16.8h
+4EF98B81 frintp v1.8h, v28.8h
+4EF9881F frintp v31.8h, v0.8h
+4EF98821 frintp v1.8h, v1.8h

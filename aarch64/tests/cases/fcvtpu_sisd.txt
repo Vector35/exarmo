@@ -1,0 +1,37 @@
+// FCVTPU_sisd_32D sf=0|0|S=0|11110|ftype=01|1|rmode=10|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtpuSisd32d: FCVTPU  <Sd>, <Dn>
+// register fields: Rn, Rd
+1E730006 fcvtpu s6, d0
+1E73000D fcvtpu s13, d0
+1E730014 fcvtpu s20, d0
+1E7303E0 fcvtpu s0, d31
+1E73001F fcvtpu s31, d0
+1E730000 fcvtpu s0, d0
+
+// FCVTPU_sisd_32H sf=0|0|S=0|11110|ftype=11|1|rmode=10|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtpuSisd32h: FCVTPU  <Sd>, <Hn>
+// register fields: Rn, Rd
+1EF30002 fcvtpu s2, h0
+1EF30009 fcvtpu s9, h0
+1EF30010 fcvtpu s16, h0
+1EF303E0 fcvtpu s0, h31
+1EF3001F fcvtpu s31, h0
+1EF30000 fcvtpu s0, h0
+
+// FCVTPU_sisd_64H sf=1|0|S=0|11110|ftype=11|1|rmode=10|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtpuSisd64h: FCVTPU  <Dd>, <Hn>
+// register fields: Rn, Rd
+9EF30000 fcvtpu d0, h0
+9EF30007 fcvtpu d7, h0
+9EF3000E fcvtpu d14, h0
+9EF303FF fcvtpu d31, h31
+
+// FCVTPU_sisd_64S sf=1|0|S=0|11110|ftype=00|1|rmode=10|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtpuSisd64s: FCVTPU  <Dd>, <Sn>
+// register fields: Rn, Rd
+9E330006 fcvtpu d6, s0
+9E33000D fcvtpu d13, s0
+9E330014 fcvtpu d20, s0
+9E3303E0 fcvtpu d0, s31
+9E33001F fcvtpu d31, s0
+9E330000 fcvtpu d0, s0

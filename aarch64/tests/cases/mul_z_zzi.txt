@@ -1,0 +1,47 @@
+// mul_z_zzi_d 010|0010|0|size=11|1|i1=x|Zm=xxxx|111110|Zn=xxxxx|Zd=xxxxx
+// MulZZziD: MUL  <Zd>.D, <Zn>.D, <Zm>.D[<imm>]
+// register fields: Zm, Zn, Zd
+44F8F9E9 mul z9.d, z15.d, z8.d[1]
+44FEF896 mul z22.d, z4.d, z14.d[1]
+44E9F877 mul z23.d, z3.d, z9.d[0]
+44FEFBEC mul z12.d, z31.d, z14.d[1]
+44E4F8FE mul z30.d, z7.d, z4.d[0]
+44E0F8C9 mul z9.d, z6.d, z0.d[0]
+44F1FB8A mul z10.d, z28.d, z1.d[1]
+44EAF83F mul z31.d, z1.d, z10.d[0]
+44FFF800 mul z0.d, z0.d, z15.d[1]
+44F8F909 mul z9.d, z8.d, z8.d[1]
+44F8F9E8 mul z8.d, z15.d, z8.d[1]
+
+// mul_z_zzi_h 010|0010|0|0|i3h=x|1|i3l=xx|Zm=xxx|111110|Zn=xxxxx|Zd=xxxxx
+// MulZZziH: MUL  <Zd>.H, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zd
+4471F827 mul z7.h, z1.h, z1.h[6]
+4424F89F mul z31.h, z4.h, z4.h[0]
+446DF99C mul z28.h, z12.h, z5.h[5]
+443DF8FB mul z27.h, z7.h, z5.h[3]
+446BFAF8 mul z24.h, z23.h, z3.h[5]
+4433F8A6 mul z6.h, z5.h, z3.h[2]
+4472FBAD mul z13.h, z29.h, z2.h[6]
+4474FA25 mul z5.h, z17.h, z4.h[6]
+4470F800 mul z0.h, z0.h, z0.h[6]
+4476FBE7 mul z7.h, z31.h, z6.h[6]
+4477F827 mul z7.h, z1.h, z7.h[6]
+4429F827 mul z7.h, z1.h, z1.h[1]
+4461F827 mul z7.h, z1.h, z1.h[4]
+4479F827 mul z7.h, z1.h, z1.h[7]
+
+// mul_z_zzi_s 010|0010|0|size=10|1|i2=xx|Zm=xxx|111110|Zn=xxxxx|Zd=xxxxx
+// MulZZziS: MUL  <Zd>.S, <Zn>.S, <Zm>.S[<imm>]
+// register fields: Zm, Zn, Zd
+44BBF8E1 mul z1.s, z7.s, z3.s[3]
+44AAF881 mul z1.s, z4.s, z2.s[1]
+44AAFB75 mul z21.s, z27.s, z2.s[1]
+44BCFAD8 mul z24.s, z22.s, z4.s[3]
+44B1FA78 mul z24.s, z19.s, z1.s[2]
+44BDF9F6 mul z22.s, z15.s, z5.s[3]
+44AFFA71 mul z17.s, z19.s, z7.s[1]
+44BAFA45 mul z5.s, z18.s, z2.s[3]
+44A0F800 mul z0.s, z0.s, z0.s[0]
+44BEFBFF mul z31.s, z31.s, z6.s[3]

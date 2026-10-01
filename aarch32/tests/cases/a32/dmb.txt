@@ -1,0 +1,34 @@
+// DMB_A1 1111|0|1|01011|1|(1)(1)(1)(1)(1)(1)(1)(1)(0)(0)(0)(0)|opcode=0101|option=xxxx
+// DmbA1: DMB{<c>}{<q>}  {<option>}
+// Binary Ninja's tests
+f57ff050 dmb #0x0
+f57ff051 dmb oshld
+f57ff052 dmb oshst
+f57ff053 dmb osh
+f57ff054 dmb #0x4
+f57ff055 dmb nshld
+f57ff056 dmb nshst
+f57ff057 dmb nsh
+f57ff058 dmb #0x8
+f57ff059 dmb ishld
+f57ff05a dmb ishst
+f57ff05b dmb ish
+f57ff05c dmb #0xc
+f57ff05d dmb ld
+f57ff05e dmb st
+f57ff05f dmb sy
+F5700050 dmb #0x0 (unpredictable)
+F57FFF50 dmb #0x0 (unpredictable)
+F5780050 dmb #0x0 (unpredictable)
+F5740050 dmb #0x0 (unpredictable)
+F5720050 dmb #0x0 (unpredictable)
+F5710050 dmb #0x0 (unpredictable)
+F5708050 dmb #0x0 (unpredictable)
+F5704050 dmb #0x0 (unpredictable)
+F5702050 dmb #0x0 (unpredictable)
+F5701050 dmb #0x0 (unpredictable)
+F5700850 dmb #0x0 (unpredictable)
+F5700450 dmb #0x0 (unpredictable)
+F5700250 dmb #0x0 (unpredictable)
+F5700150 dmb #0x0 (unpredictable)
+F5700F50 dmb #0x0 (unpredictable)

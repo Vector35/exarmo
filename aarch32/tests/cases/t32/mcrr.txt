@@ -1,0 +1,16 @@
+// MCRR_T1 111|0|11|0|00|D=1|0|L=0|Rt2=xxxx|Rt=xxxx|1|11|cp15=x|opc1=xxxx|CRm=xxxx
+// McrrT1: MCRR{<c>}{<q>}  <coproc>, {#}<opc1>, <Rt>, <Rt2>, <CRm>
+// register fields: Rt2, Rt
+// IT state read: condition
+ec49df7d mcrr p15, #7, sp, r9, c13
+ec42ce53 mcrr p14, #5, r12, r2, c3
+ec4ecfb1 mcrr p15, #11, r12, lr, c1
+ec44dff1 mcrr p15, #15, sp, r4, c1
+ec4a8e7f mcrr p14, #7, r8, r10, c15
+ec4cde1f mcrr p14, #1, sp, r12, c15
+ec45be40 mcrr p14, #4, r11, r5, c0
+ec4bfef1 mcrr p14, #15, pc, r11, c1 (unpredictable)
+EC400F08 mcrr p15, #0x0, r0, r0, c8
+EC4FDF84 mcrr p15, #0x8, sp, pc, c4 (unpredictable)
+EC499F22 mcrr p15, #0x2, r9, r9, c2
+EC49DF7D [ne] mcrrne p15, #0x7, sp, r9, c13

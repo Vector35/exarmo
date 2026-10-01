@@ -1,0 +1,43 @@
+// stnt1b_mzx_p_br_2x8 1|01|0000|10|01|Rm=xxxxx|0|msz=00|PNg=xxx|Rn=xxxxx|T=x|N=1|Zt=xxx
+// Stnt1bMzxPBr2x8: STNT1B  { <Zt1>.B, <Zt2>.B }, <PNg>, [<Xn|SP>, <Xm>]
+// read together by <Zt1> and <Zt2>: T, Zt
+// register fields: Rm, PNg, Rn
+A120000D stnt1b {z5.b, z13.b}, pn8, [x0, x0]
+A120001B stnt1b {z19.b, z27.b}, pn8, [x0, x0]
+A1200029 stnt1b {z1.b, z9.b}, pn8, [x1, x0]
+A13F07E8 stnt1b {z0.b, z8.b}, pn9, [sp, xzr]
+A120080A stnt1b {z2.b, z10.b}, pn10, [x0, x0]
+A1200C0C stnt1b {z4.b, z12.b}, pn11, [x0, x0]
+A120100E stnt1b {z6.b, z14.b}, pn12, [x0, x0]
+A120140F stnt1b {z7.b, z15.b}, pn13, [x0, x0]
+A120180D stnt1b {z5.b, z13.b}, pn14, [x0, x0]
+A1201C0D stnt1b {z5.b, z13.b}, pn15, [x0, x0]
+A120000B stnt1b {z3.b, z11.b}, pn8, [x0, x0]
+A1200018 stnt1b {z16.b, z24.b}, pn8, [x0, x0]
+A1200019 stnt1b {z17.b, z25.b}, pn8, [x0, x0]
+A120001A stnt1b {z18.b, z26.b}, pn8, [x0, x0]
+A120001C stnt1b {z20.b, z28.b}, pn8, [x0, x0]
+A120001D stnt1b {z21.b, z29.b}, pn8, [x0, x0]
+A120001E stnt1b {z22.b, z30.b}, pn8, [x0, x0]
+A120001F stnt1b {z23.b, z31.b}, pn8, [x0, x0]
+A121086D stnt1b {z5.b, z13.b}, pn10, [x3, x1]
+
+// stnt1b_mzx_p_br_4x4 1|01|0000|10|01|Rm=xxxxx|1|msz=00|PNg=xxx|Rn=xxxxx|T=x|N=1|0|Zt=xx
+// Stnt1bMzxPBr4x4: STNT1B  { <Zt1>.B, <Zt2>.B, <Zt3>.B, <Zt4>.B }, <PNg>, [<Xn|SP>, <Xm>]
+// read together by <Zt1> and <Zt2> and <Zt3> and <Zt4>: T, Zt
+// register fields: Rm, PNg, Rn
+A120801A stnt1b {z18.b, z22.b, z26.b, z30.b}, pn8, [x0, x0]
+A1208028 stnt1b {z0.b, z4.b, z8.b, z12.b}, pn8, [x1, x0]
+A120804B stnt1b {z3.b, z7.b, z11.b, z15.b}, pn8, [x2, x0]
+A13F87F9 stnt1b {z17.b, z21.b, z25.b, z29.b}, pn9, [sp, xzr]
+A120881A stnt1b {z18.b, z22.b, z26.b, z30.b}, pn10, [x0, x0]
+A1208C1A stnt1b {z18.b, z22.b, z26.b, z30.b}, pn11, [x0, x0]
+A120901A stnt1b {z18.b, z22.b, z26.b, z30.b}, pn12, [x0, x0]
+A120941A stnt1b {z18.b, z22.b, z26.b, z30.b}, pn13, [x0, x0]
+A120981A stnt1b {z18.b, z22.b, z26.b, z30.b}, pn14, [x0, x0]
+A1209C1A stnt1b {z18.b, z22.b, z26.b, z30.b}, pn15, [x0, x0]
+A1208009 stnt1b {z1.b, z5.b, z9.b, z13.b}, pn8, [x0, x0]
+A120800A stnt1b {z2.b, z6.b, z10.b, z14.b}, pn8, [x0, x0]
+A1208018 stnt1b {z16.b, z20.b, z24.b, z28.b}, pn8, [x0, x0]
+A120801B stnt1b {z19.b, z23.b, z27.b, z31.b}, pn8, [x0, x0]
+A121887A stnt1b {z18.b, z22.b, z26.b, z30.b}, pn10, [x3, x1]

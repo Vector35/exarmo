@@ -1,0 +1,18 @@
+// fmlalb_z_zzzi_s 011|0010|0|1|o2=0|1|i3h=xx|Zm=xxx|01|op=0|0|i3l=x|T=0|Zn=xxxxx|Zda=xxxxx
+// FmlalbZZzziS: FMLALB  <Zda>.S, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+64A04003 fmlalb z3.s, z0.h, z0.h[0]
+64A0400A fmlalb z10.s, z0.h, z0.h[0]
+64A04011 fmlalb z17.s, z0.h, z0.h[0]
+64A94BE0 fmlalb z0.s, z31.h, z1.h[3]
+64B2401F fmlalb z31.s, z0.h, z2.h[4]
+64BB4003 fmlalb z3.s, z0.h, z3.h[6]
+64A44003 fmlalb z3.s, z0.h, z4.h[0]
+64A54003 fmlalb z3.s, z0.h, z5.h[0]
+64A64003 fmlalb z3.s, z0.h, z6.h[0]
+64A74003 fmlalb z3.s, z0.h, z7.h[0]
+64A04800 fmlalb z0.s, z0.h, z0.h[1]
+64A84003 fmlalb z3.s, z0.h, z0.h[2]
+64B04803 fmlalb z3.s, z0.h, z0.h[5]
+64B84803 fmlalb z3.s, z0.h, z0.h[7]

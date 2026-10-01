@@ -1,0 +1,37 @@
+// rbit_z_p_z_m 000|0010|1|size=xx|1|0|01|opc=11|10|Z=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// RbitZPZM: RBIT  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+05A792DF rbit z31.s, p4/m, z22.s
+05678242 rbit z2.h, p0/m, z18.h
+05E7910E rbit z14.d, p4/m, z8.d
+05E784F7 rbit z23.d, p1/m, z7.d
+05E798DE rbit z30.d, p6/m, z6.d
+05A780BF rbit z31.s, p0/m, z5.s
+05A79678 rbit z24.s, p5/m, z19.s
+05E7971D rbit z29.d, p5/m, z24.d
+05679337 rbit z23.h, p4/m, z25.h
+05278321 rbit z1.b, p0/m, z25.b
+05E79630 rbit z16.d, p5/m, z17.d
+05678CD6 rbit z22.h, p3/m, z6.h
+05279288 rbit z8.b, p4/m, z20.b
+05278D7B rbit z27.b, p3/m, z11.b
+05678066 rbit z6.h, p0/m, z3.h
+05E78900 rbit z0.d, p2/m, z8.d
+05A79C1F rbit z31.s, p7/m, z0.s
+05A793FF rbit z31.s, p4/m, z31.s
+05A792C4 rbit z4.s, p4/m, z22.s
+
+// rbit_z_p_z_z 000|0010|1|size=xx|1|0|01|opc=11|10|Z=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// RbitZPZZ: RBIT  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+0527A005 rbit z5.b, p0/z, z0.b
+0527A00C rbit z12.b, p0/z, z0.b
+0527A013 rbit z19.b, p0/z, z0.b
+0567A7E0 rbit z0.h, p1/z, z31.h
+05A7A81F rbit z31.s, p2/z, z0.s
+05E7AC05 rbit z5.d, p3/z, z0.d
+0527B005 rbit z5.b, p4/z, z0.b
+0527B405 rbit z5.b, p5/z, z0.b
+0527B805 rbit z5.b, p6/z, z0.b
+0527BC05 rbit z5.b, p7/z, z0.b
+0527A000 rbit z0.b, p0/z, z0.b

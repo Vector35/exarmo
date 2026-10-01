@@ -1,0 +1,88 @@
+// SUB_r_A1 cond=xxxx|0000|opc=010|S=0|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// SubRA1: SUB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+d042f621 suble pc, r2, r1, lsr #12
+604077c2 subvs r7, r0, r2, asr #15
+80437487 subhi r7, r3, r7, lsl #9
+004b9344 subeq r9, r11, r4, asr #6
+904e5cc7 subls r5, lr, r7, asr #25
+404aba83 submi r11, r10, r3, lsl #21
+c04af68d subgt pc, r10, sp, lsl #13
+50409e2e subpl r9, r0, lr, lsr #28
+// Binary Ninja's tests
+e0413022 sub r3, r1, r2, lsr #32
+e0413042 sub r3, r1, r2, asr #32
+e0421003 sub r1, r2, r3
+e0422003 sub r2, r2, r3
+e0444005 sub r4, r4, r5
+e0444285 sub r4, r4, r5, lsl #5
+e04442a5 sub r4, r4, r5, lsr #5
+e04442c5 sub r4, r4, r5, asr #5
+e04442e5 sub r4, r4, r5, ror #5
+e0454006 sub r4, r5, r6
+e0454286 sub r4, r5, r6, lsl #5
+e04542a6 sub r4, r5, r6, lsr #5
+e04542c6 sub r4, r5, r6, asr #5
+e04542e6 sub r4, r5, r6, ror #5
+F042F621 UNALLOCATED
+204F0FA0 subcs r0, pc, r0, lsr #0x1f
+1042F82F subne pc, r2, pc, lsr #0x10
+D042F422 suble pc, r2, r2, lsr #0x8
+D042F221 suble pc, r2, r1, lsr #0x4
+D042F121 suble pc, r2, r1, lsr #0x2
+D042F0A1 suble pc, r2, r1, lsr #0x1
+
+// SUB_r_A1_RRX cond=xxxx|0000|opc=010|S=0|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// SubRA1Rrx: SUB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+e043406a sub r4, r3, r10, rrx
+a0497065 subge r7, r9, r5, rrx
+c04ce06c subgt lr, r12, r12, rrx
+10481069 subne r1, r8, r9, rrx
+10413065 subne r3, r1, r5, rrx
+204ab065 subhs r11, r10, r5, rrx
+40471069 submi r1, r7, r9, rrx
+204c3061 subhs r3, r12, r1, rrx
+00400060 subeq r0, r0, r0, rrx
+F043406A UNALLOCATED
+804FF06F subhi pc, pc, pc, rrx
+E043306A sub r3, r3, r10, rrx
+E0434064 sub r4, r3, r4, rrx
+
+// SUBS_r_A1 cond=xxxx|0000|opc=010|S=1|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// SubsRA1: SUBS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+005a2028 subseq r2, r10, r8, lsr #32
+705f13e8 subsvc r1, pc, r8, ror #7
+405cb0ef subsmi r11, r12, pc, ror #1
+905adf05 subsls sp, r10, r5, lsl #30
+805fd76f subshi sp, pc, pc, ror #14
+9057eae3 subsls lr, r7, r3, ror #21
+7056ed43 subsvc lr, r6, r3, asr #26
+7051b1e4 subsvc r11, r1, r4, ror #3
+// Binary Ninja's tests
+00522003 subseq r2, r2, r3
+e0521003 subs r1, r2, r3
+F05A2028 UNALLOCATED
+20500FA0 subscs r0, r0, r0, lsr #0x1f
+105AF828 subsne pc, r10, r8, lsr #0x10
+005A2422 subseq r2, r10, r2, lsr #0x8
+005A2228 subseq r2, r10, r8, lsr #0x4
+005A2128 subseq r2, r10, r8, lsr #0x2
+
+// SUBS_r_A1_RRX cond=xxxx|0000|opc=010|S=1|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// SubsRA1Rrx: SUBS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+20580066 subshs r0, r8, r6, rrx
+705e2062 subsvc r2, lr, r2, rrx
+b0569061 subslt r9, r6, r1, rrx
+805ef063 subshi pc, lr, r3, rrx
+b05c2061 subslt r2, r12, r1, rrx
+e0531067 subs r1, r3, r7, rrx
+a05c806b subsge r8, r12, r11, rrx
+505a906b subspl r9, r10, r11, rrx
+00500060 subseq r0, r0, r0, rrx
+F0580066 UNALLOCATED
+405F006F subsmi r0, pc, pc, rrx
+10588066 subsne r8, r8, r6, rrx
+20580068 subscs r0, r8, r8, rrx

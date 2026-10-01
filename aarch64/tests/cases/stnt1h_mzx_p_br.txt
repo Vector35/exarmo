@@ -1,0 +1,43 @@
+// stnt1h_mzx_p_br_2x8 1|01|0000|10|01|Rm=xxxxx|0|msz=01|PNg=xxx|Rn=xxxxx|T=x|N=1|Zt=xxx
+// Stnt1hMzxPBr2x8: STNT1H  { <Zt1>.H, <Zt2>.H }, <PNg>, [<Xn|SP>, <Xm>, LSL #1]
+// read together by <Zt1> and <Zt2>: T, Zt
+// register fields: Rm, PNg, Rn
+A120200B stnt1h {z3.h, z11.h}, pn8, [x0, x0, lsl #0x1]
+A1202019 stnt1h {z17.h, z25.h}, pn8, [x0, x0, lsl #0x1]
+A120202E stnt1h {z6.h, z14.h}, pn8, [x1, x0, lsl #0x1]
+A13F27E8 stnt1h {z0.h, z8.h}, pn9, [sp, xzr, lsl #0x1]
+A120280A stnt1h {z2.h, z10.h}, pn10, [x0, x0, lsl #0x1]
+A1202C0C stnt1h {z4.h, z12.h}, pn11, [x0, x0, lsl #0x1]
+A120300D stnt1h {z5.h, z13.h}, pn12, [x0, x0, lsl #0x1]
+A120340F stnt1h {z7.h, z15.h}, pn13, [x0, x0, lsl #0x1]
+A120380B stnt1h {z3.h, z11.h}, pn14, [x0, x0, lsl #0x1]
+A1203C0B stnt1h {z3.h, z11.h}, pn15, [x0, x0, lsl #0x1]
+A1202009 stnt1h {z1.h, z9.h}, pn8, [x0, x0, lsl #0x1]
+A1202018 stnt1h {z16.h, z24.h}, pn8, [x0, x0, lsl #0x1]
+A120201A stnt1h {z18.h, z26.h}, pn8, [x0, x0, lsl #0x1]
+A120201B stnt1h {z19.h, z27.h}, pn8, [x0, x0, lsl #0x1]
+A120201C stnt1h {z20.h, z28.h}, pn8, [x0, x0, lsl #0x1]
+A120201D stnt1h {z21.h, z29.h}, pn8, [x0, x0, lsl #0x1]
+A120201E stnt1h {z22.h, z30.h}, pn8, [x0, x0, lsl #0x1]
+A120201F stnt1h {z23.h, z31.h}, pn8, [x0, x0, lsl #0x1]
+A121286B stnt1h {z3.h, z11.h}, pn10, [x3, x1, lsl #0x1]
+
+// stnt1h_mzx_p_br_4x4 1|01|0000|10|01|Rm=xxxxx|1|msz=01|PNg=xxx|Rn=xxxxx|T=x|N=1|0|Zt=xx
+// Stnt1hMzxPBr4x4: STNT1H  { <Zt1>.H, <Zt2>.H, <Zt3>.H, <Zt4>.H }, <PNg>, [<Xn|SP>, <Xm>, LSL #1]
+// read together by <Zt1> and <Zt2> and <Zt3> and <Zt4>: T, Zt
+// register fields: Rm, PNg, Rn
+A120A00A stnt1h {z2.h, z6.h, z10.h, z14.h}, pn8, [x0, x0, lsl #0x1]
+A120A018 stnt1h {z16.h, z20.h, z24.h, z28.h}, pn8, [x0, x0, lsl #0x1]
+A120A03B stnt1h {z19.h, z23.h, z27.h, z31.h}, pn8, [x1, x0, lsl #0x1]
+A13FA7E9 stnt1h {z1.h, z5.h, z9.h, z13.h}, pn9, [sp, xzr, lsl #0x1]
+A120A80A stnt1h {z2.h, z6.h, z10.h, z14.h}, pn10, [x0, x0, lsl #0x1]
+A120AC0A stnt1h {z2.h, z6.h, z10.h, z14.h}, pn11, [x0, x0, lsl #0x1]
+A120B00A stnt1h {z2.h, z6.h, z10.h, z14.h}, pn12, [x0, x0, lsl #0x1]
+A120B40A stnt1h {z2.h, z6.h, z10.h, z14.h}, pn13, [x0, x0, lsl #0x1]
+A120B80A stnt1h {z2.h, z6.h, z10.h, z14.h}, pn14, [x0, x0, lsl #0x1]
+A120BC0A stnt1h {z2.h, z6.h, z10.h, z14.h}, pn15, [x0, x0, lsl #0x1]
+A120A008 stnt1h {z0.h, z4.h, z8.h, z12.h}, pn8, [x0, x0, lsl #0x1]
+A120A00B stnt1h {z3.h, z7.h, z11.h, z15.h}, pn8, [x0, x0, lsl #0x1]
+A120A019 stnt1h {z17.h, z21.h, z25.h, z29.h}, pn8, [x0, x0, lsl #0x1]
+A120A01A stnt1h {z18.h, z22.h, z26.h, z30.h}, pn8, [x0, x0, lsl #0x1]
+A121A86A stnt1h {z2.h, z6.h, z10.h, z14.h}, pn10, [x3, x1, lsl #0x1]

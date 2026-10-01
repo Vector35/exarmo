@@ -1,0 +1,17 @@
+// ldnt1sw_z_p_ar_d_64_unscaled 110|0010|msz=10|00|Rm=xxxxx|1|U=0|0|Pg=xxx|Zn=xxxxx|Zt=xxxxx
+// Ldnt1swZPArD64Unscaled: LDNT1SW  { <Zt>.D }, <Pg>/Z, [<Zn>.D{, <Xm>}]
+// register fields: Rm, Pg, Zn, Zt
+C50B865C ldnt1sw {z28.d}, p1/z, [z18.d, x11]
+C50C88EA ldnt1sw {z10.d}, p2/z, [z7.d, x12]
+C50C99F8 ldnt1sw {z24.d}, p6/z, [z15.d, x12]
+C5099F35 ldnt1sw {z21.d}, p7/z, [z25.d, x9]
+C50C9EB3 ldnt1sw {z19.d}, p7/z, [z21.d, x12]
+C505823D ldnt1sw {z29.d}, p0/z, [z17.d, x5]
+C5019EA1 ldnt1sw {z1.d}, p7/z, [z21.d, x1]
+C50F8883 ldnt1sw {z3.d}, p2/z, [z4.d, x15]
+C5008C00 ldnt1sw {z0.d}, p3/z, [z0.d, x0]
+C51F93FF ldnt1sw {z31.d}, p4/z, [z31.d]
+C50B965C ldnt1sw {z28.d}, p5/z, [z18.d, x11]
+C501865C ldnt1sw {z28.d}, p1/z, [z18.d, x1]
+C50B843C ldnt1sw {z28.d}, p1/z, [z1.d, x11]
+C50B8641 ldnt1sw {z1.d}, p1/z, [z18.d, x11]

@@ -1,0 +1,33 @@
+// VMOV_h_T1 11101110000|op=1|Vn=xxxx|Rt=xxxx|1001|N=x|(0)(0)1(0)(0)(0)(0)
+// VmovHT1: VMOV{<c>}{<q>}.F16  <Rt>, <Sn>
+// read together by <Sn>: Vn, N
+// register fields: Rt
+// IT state read: condition
+EE100910 vmov.f16 r0, s0
+EE1FF9FF vmov.f16 pc, s31 (unpredictable)
+EE180950 vmov.f16 r0, s16 (unpredictable)
+EE140930 vmov.f16 r0, s8 (unpredictable)
+EE120918 vmov.f16 r0, s4 (unpredictable)
+EE110914 vmov.f16 r0, s2 (unpredictable)
+EE100912 vmov.f16 r0, s0 (unpredictable)
+EE100991 vmov.f16 r0, s1 (unpredictable)
+EE1F0910 vmov.f16 r0, s30
+EE1F0990 vmov.f16 r0, s31
+EE100910 [ne] vmovne.f16 r0, s0 (unpredictable)
+
+// VMOV_toh_T1 11101110000|op=0|Vn=xxxx|Rt=xxxx|1001|N=x|(0)(0)1(0)(0)(0)(0)
+// VmovTohT1: VMOV{<c>}{<q>}.F16  <Sn>, <Rt>
+// read together by <Sn>: Vn, N
+// register fields: Rt
+// IT state read: condition
+EE000910 vmov.f16 s0, r0
+EE0FF9FF vmov.f16 s31, pc (unpredictable)
+EE080950 vmov.f16 s16, r0 (unpredictable)
+EE040930 vmov.f16 s8, r0 (unpredictable)
+EE020918 vmov.f16 s4, r0 (unpredictable)
+EE010914 vmov.f16 s2, r0 (unpredictable)
+EE000912 vmov.f16 s0, r0 (unpredictable)
+EE000991 vmov.f16 s1, r0 (unpredictable)
+EE0F0910 vmov.f16 s30, r0
+EE0F0990 vmov.f16 s31, r0
+EE000910 [ne] vmovne.f16 s0, r0 (unpredictable)

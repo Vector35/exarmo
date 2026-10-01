@@ -1,0 +1,50 @@
+// sqdecw_r_rs_sx 000|0010|0|size=10|1|sf=0|imm4=xxxx|11|11|D=1|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqdecwRRsSx: SQDECW  <Xdn>, <Wdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04A1FAF5 sqdecw x21, w21, #0x17, mul #0x2
+04A4FA11 sqdecw x17, w17, #0x10, mul #0x5
+04A9FB66 sqdecw x6, w6, #0x1b, mul #0xa
+04A7F8E5 sqdecw x5, w5, vl7, mul #0x8
+04A6FAE5 sqdecw x5, w5, #0x17, mul #0x7
+04A6F8E6 sqdecw x6, w6, vl7, mul #0x7
+04A5F8F2 sqdecw x18, w18, vl7, mul #0x6
+04A0F936 sqdecw x22, w22, vl16
+04A4FBA0 sqdecw x0, w0, mul4, mul #0x5
+04A2FAF8 sqdecw x24, w24, #0x17, mul #0x3
+04A2FAA1 sqdecw x1, w1, #0x15, mul #0x3
+04ABF948 sqdecw x8, w8, vl32, mul #0xc
+04AAF90E sqdecw x14, w14, vl8, mul #0xb
+04A7FBA3 sqdecw x3, w3, mul4, mul #0x8
+04A4FBA8 sqdecw x8, w8, mul4, mul #0x5
+04A6F9E3 sqdecw x3, w3, #0xf, mul #0x7
+04AFF81F sqdecw xzr, wzr, pow2, mul #0x10
+04A1FBF5 sqdecw x21, w21, all, mul #0x2
+04A8F895 sqdecw x21, w21, vl4, mul #0x9
+04A1F855 sqdecw x21, w21, vl2, mul #0x2
+04A1F835 sqdecw x21, w21, vl1, mul #0x2
+
+// sqdecw_r_rs_x 000|0010|0|size=10|1|sf=1|imm4=xxxx|11|11|D=1|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqdecwRRsX: SQDECW  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04BBF9D3 sqdecw x19, #0xe, mul #0xc
+04B7FBCF sqdecw x15, mul3, mul #0x8
+04BFFA7D sqdecw fp, #0x13, mul #0x10
+04BBF9D0 sqdecw x16, #0xe, mul #0xc
+04B4F823 sqdecw x3, vl1, mul #0x5
+04B8FA7E sqdecw lr, #0x13, mul #0x9
+04BCFB67 sqdecw x7, #0x1b, mul #0xd
+04B2F9B6 sqdecw x22, vl256, mul #0x3
+04BDF868 sqdecw x8, vl3, mul #0xe
+04B9FBB1 sqdecw x17, mul4, mul #0xa
+04B1F9BD sqdecw fp, vl256, mul #0x2
+04B8FA27 sqdecw x7, #0x11, mul #0x9
+04B5F8C1 sqdecw x1, vl6, mul #0x6
+04BFFA33 sqdecw x19, #0x11, mul #0x10
+04BFFB9B sqdecw x27, #0x1c, mul #0x10
+04B0F830 sqdecw x16, vl1
+04BBF800 sqdecw x0, pow2, mul #0xc
+04BBFBFF sqdecw xzr, all, mul #0xc
+04BBFA13 sqdecw x19, #0x10, mul #0xc
+04BBF913 sqdecw x19, vl8, mul #0xc
+04BBF893 sqdecw x19, vl4, mul #0xc
+04BBF853 sqdecw x19, vl2, mul #0xc

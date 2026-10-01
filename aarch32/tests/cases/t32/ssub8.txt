@@ -1,0 +1,15 @@
+// SSUB8_T1 111|11010|1|op1=100|Rn=xxxx|1111|Rd=xxxx|0|U=0|H=0|S=0|Rm=xxxx
+// Ssub8T1: SSUB8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fac0f00b ssub8 r0, r0, r11
+fac4f00e ssub8 r0, r4, lr
+fac8ff09 ssub8 pc, r8, r9 (unpredictable)
+facaf004 ssub8 r0, r10, r4
+fac6ff0d ssub8 pc, r6, sp (unpredictable)
+fac1fb02 ssub8 r11, r1, r2
+facffb07 ssub8 r11, pc, r7 (unpredictable)
+fac1f203 ssub8 r2, r1, r3
+FAC0F000 ssub8 r0, r0, r0
+FAC0F00F ssub8 r0, r0, pc (unpredictable)
+FAC0F00B [ne] ssub8ne r0, r0, r11

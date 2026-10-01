@@ -1,0 +1,28 @@
+// BFC_A1 cond=xxxx|011|1110|msb=xxxxx|Rd=xxxx|lsb=xxxxx|00|1|Rn=1111
+// BfcA1: BFC{<c>}{<q>}  <Rd>, #<lsb>, #<width>
+// register fields: Rd
+47cbe69f UNPREDICTABLE
+17d54c1f UNPREDICTABLE
+77cadc1f UNPREDICTABLE
+27c3b61f UNPREDICTABLE
+87c43d1f UNPREDICTABLE
+97c19b1f UNPREDICTABLE
+a7cd3b9f UNPREDICTABLE
+67d7e29f bfcvs lr, #5, #19
+// Binary Ninja's tests
+37d3519f bfclo r5, #3, #17
+e7d3519f bfc r5, #3, #17
+07C0001F bfceq r0, #0x0, #0x1
+F7CBE69F UNALLOCATED
+47DFFF9F bfcmi pc, #0x1f, #0x1 (unpredictable)
+47D0E81F bfcmi lr, #0x10, #0x1
+47C8E41F bfcmi lr, #0x8, #0x1
+47C2E21F UNPREDICTABLE
+47CBE11F bfcmi lr, #0x2, #0xa
+47CBE09F bfcmi lr, #0x1, #0xb
+87D7E21F bfchi lr, #0x4, #0x14
+27D7E29F bfccs lr, #0x5, #0x13
+17D7E29F bfcne lr, #0x5, #0x13
+37C4519F bfccc r5, #0x3, #0x2
+07C2001F bfceq r0, #0x0, #0x3
+07C1001F bfceq r0, #0x0, #0x2

@@ -1,0 +1,118 @@
+// RSB_r_T1 1110101|op1=1110|S=0|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// RsbRT1: RSB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EBC00000 rsb r0, r0, r0
+EBCF9F5F rsb pc, pc, pc, lsr #0x5 (unpredictable)
+EBC020A0 rsb r0, r0, r0, asr #0xa
+EBC030F0 rsb r0, r0, r0, ror #0xf
+EBC04000 rsb r0, r0, r0, lsl #0x10
+EBC05000 rsb r0, r0, r0, lsl #0x14
+EBC06000 rsb r0, r0, r0, lsl #0x18
+EBC07000 rsb r0, r0, r0, lsl #0x1c
+EBC00040 rsb r0, r0, r0, lsl #0x1
+EBC00080 rsb r0, r0, r0, lsl #0x2
+EBC000C0 rsb r0, r0, r0, lsl #0x3
+EBC01000 rsb r0, r0, r0, lsl #0x4
+EBC01040 rsb r0, r0, r0, lsl #0x5
+EBC01080 rsb r0, r0, r0, lsl #0x6
+EBC010C0 rsb r0, r0, r0, lsl #0x7
+EBC02000 rsb r0, r0, r0, lsl #0x8
+EBC02040 rsb r0, r0, r0, lsl #0x9
+EBC02080 rsb r0, r0, r0, lsl #0xa
+EBC020C0 rsb r0, r0, r0, lsl #0xb
+EBC03000 rsb r0, r0, r0, lsl #0xc
+EBC03040 rsb r0, r0, r0, lsl #0xd
+EBC03080 rsb r0, r0, r0, lsl #0xe
+EBC030C0 rsb r0, r0, r0, lsl #0xf
+EBC04040 rsb r0, r0, r0, lsl #0x11
+EBC04080 rsb r0, r0, r0, lsl #0x12
+EBC040C0 rsb r0, r0, r0, lsl #0x13
+EBC05040 rsb r0, r0, r0, lsl #0x15
+EBC05080 rsb r0, r0, r0, lsl #0x16
+EBC050C0 rsb r0, r0, r0, lsl #0x17
+EBC06040 rsb r0, r0, r0, lsl #0x19
+EBC06080 rsb r0, r0, r0, lsl #0x1a
+EBC060C0 rsb r0, r0, r0, lsl #0x1b
+EBC07040 rsb r0, r0, r0, lsl #0x1d
+EBC07080 rsb r0, r0, r0, lsl #0x1e
+EBC070C0 rsb r0, r0, r0, lsl #0x1f
+EBC00000 [ne] rsbne r0, r0, r0
+EBC10203 rsb r2, r1, r3
+
+// RSB_r_T1_RRX 1110101|op1=1110|S=0|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// RsbRT1Rrx: RSB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+ebc10c31 rsb r12, r1, r1, rrx
+ebcb8833 rsb r8, r11, r3, rrx (unpredictable)
+ebc90039 rsb r0, r9, r9, rrx
+ebcc833f rsb r3, r12, pc, rrx (unpredictable)
+ebc38635 rsb r6, r3, r5, rrx (unpredictable)
+ebc9883f rsb r8, r9, pc, rrx (unpredictable)
+ebc0053e rsb r5, r0, lr, rrx
+ebcb8b30 rsb r11, r11, r0, rrx (unpredictable)
+EBCF0F31 rsb pc, pc, r1, rrx (unpredictable)
+EBC10C3C rsb r12, r1, r12, rrx
+EBC10C31 [ne] rsbne r12, r1, r1, rrx
+
+// RSBS_r_T1 1110101|op1=1110|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// RsbsRT1: RSBS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EBD00000 rsbs r0, r0, r0
+EBDF9F5F rsbs pc, pc, pc, lsr #0x5 (unpredictable)
+EBD020A0 rsbs r0, r0, r0, asr #0xa
+EBD030F0 rsbs r0, r0, r0, ror #0xf
+EBD04000 rsbs r0, r0, r0, lsl #0x10
+EBD05000 rsbs r0, r0, r0, lsl #0x14
+EBD06000 rsbs r0, r0, r0, lsl #0x18
+EBD07000 rsbs r0, r0, r0, lsl #0x1c
+EBD00040 rsbs r0, r0, r0, lsl #0x1
+EBD00080 rsbs r0, r0, r0, lsl #0x2
+EBD000C0 rsbs r0, r0, r0, lsl #0x3
+EBD01000 rsbs r0, r0, r0, lsl #0x4
+EBD01040 rsbs r0, r0, r0, lsl #0x5
+EBD01080 rsbs r0, r0, r0, lsl #0x6
+EBD010C0 rsbs r0, r0, r0, lsl #0x7
+EBD02000 rsbs r0, r0, r0, lsl #0x8
+EBD02040 rsbs r0, r0, r0, lsl #0x9
+EBD02080 rsbs r0, r0, r0, lsl #0xa
+EBD020C0 rsbs r0, r0, r0, lsl #0xb
+EBD03000 rsbs r0, r0, r0, lsl #0xc
+EBD03040 rsbs r0, r0, r0, lsl #0xd
+EBD03080 rsbs r0, r0, r0, lsl #0xe
+EBD030C0 rsbs r0, r0, r0, lsl #0xf
+EBD04040 rsbs r0, r0, r0, lsl #0x11
+EBD04080 rsbs r0, r0, r0, lsl #0x12
+EBD040C0 rsbs r0, r0, r0, lsl #0x13
+EBD05040 rsbs r0, r0, r0, lsl #0x15
+EBD05080 rsbs r0, r0, r0, lsl #0x16
+EBD050C0 rsbs r0, r0, r0, lsl #0x17
+EBD06040 rsbs r0, r0, r0, lsl #0x19
+EBD06080 rsbs r0, r0, r0, lsl #0x1a
+EBD060C0 rsbs r0, r0, r0, lsl #0x1b
+EBD07040 rsbs r0, r0, r0, lsl #0x1d
+EBD07080 rsbs r0, r0, r0, lsl #0x1e
+EBD070C0 rsbs r0, r0, r0, lsl #0x1f
+EBD00000 [ne] rsbsne r0, r0, r0
+EBD10203 rsbs r2, r1, r3
+
+// RSBS_r_T1_RRX 1110101|op1=1110|S=1|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// RsbsRT1Rrx: RSBS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+ebda8e3c rsbs lr, r10, r12, rrx (unpredictable)
+ebd08e34 rsbs lr, r0, r4, rrx (unpredictable)
+ebdd0c3e rsbs r12, sp, lr, rrx
+ebdb0838 rsbs r8, r11, r8, rrx
+ebdd8038 rsbs r0, sp, r8, rrx (unpredictable)
+ebd48232 rsbs r2, r4, r2, rrx (unpredictable)
+ebd08f37 rsbs pc, r0, r7, rrx (unpredictable)
+ebd48a35 rsbs r10, r4, r5, rrx (unpredictable)
+EBDF8E30 rsbs lr, pc, r0, rrx (unpredictable)
+EBDA8A3F rsbs r10, r10, pc, rrx (unpredictable)
+EBDA8E3A rsbs lr, r10, r10, rrx (unpredictable)
+EBDA8E3C [ne] rsbsne lr, r10, r12, rrx (unpredictable)

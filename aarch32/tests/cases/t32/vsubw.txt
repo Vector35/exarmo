@@ -1,0 +1,24 @@
+// VSUBW_T1 111|U=x|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|001|op=1|N=x|0|M=x|0|Vm=xxxx
+// VsubwT1: VSUBW{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef94e3a4 vsubw.s16 q7, q10, d20
+efd8c322 vsubw.s16 q14, q4, d18
+efc4430d vsubw.s8 q10, q2, d13
+efdc6386 vsubw.s16 q11, q14, d6
+efa063a6 vsubw.s32 q3, q8, d22
+ff86030f vsubw.u8 q0, q3, d15
+ef880300 vsubw.s8 q0, q4, d0
+efe4a3a4 vsubw.s32 q13, q10, d20
+FFBFF3A4 UNDEFINED
+FF9283A8 vsubw.u16 q4, q9, d24
+EF9113A4 UNDEFINED
+FFA02321 vsubw.u32 q1, q0, d17
+EF9FF324 UNDEFINED
+EFD403A0 vsubw.s16 q8, q10, d16
+EFDFF3A4 UNDEFINED
+EF94E3AF vsubw.s16 q7, q10, d31
+EF94E3A4 [ne] vsubwne.s16 q7, q10, d20

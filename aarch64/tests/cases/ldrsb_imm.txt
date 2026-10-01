@@ -1,0 +1,194 @@
+// LDRSB_32_ldst_immpost size=00|111|VR=0|00|opc=11|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Ldrsb32LdstImmpost: LDRSB  <Wt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+38D4659D ldrsb w29, [x12], #-0xba
+38CD6742 ldrsb w2, [x26], #0xd6
+38CB6755 ldrsb w21, [x26], #0xb6
+38DC8564 ldrsb w4, [x11], #-0x38
+38CB47CA ldrsb w10, [lr], #0xb4
+38C60462 ldrsb w2, [x3], #0x60
+38D8A7EE ldrsb w14, [sp], #-0x76
+38DE34FB ldrsb w27, [x7], #-0x1d
+38CC053F ldrsb wzr, [x9], #0xc0
+38D8859C ldrsb w28, [x12], #-0x78
+38C8E64E ldrsb w14, [x18], #0x8e
+38CDB69B ldrsb w27, [x20], #0xdb
+38C3D594 ldrsb w20, [x12], #0x3d
+38CEE572 ldrsb w18, [x11], #0xee
+38C58640 ldrsb w0, [x18], #0x58
+38D1C779 ldrsb w25, [x27], #-0xe4
+38C0041D ldrsb w29, [x0], #0x0
+38DFF59D ldrsb w29, [x12], #-0x1
+38D4658C ldrsb w12, [x12], #-0xba (unpredictable)
+38D0059D ldrsb w29, [x12], #-0x100
+38C8059D ldrsb w29, [x12], #0x80
+38C4059D ldrsb w29, [x12], #0x40
+38C2059D ldrsb w29, [x12], #0x20
+38C1059D ldrsb w29, [x12], #0x10
+38C0859D ldrsb w29, [x12], #0x8
+38C0459D ldrsb w29, [x12], #0x4
+38C0259D ldrsb w29, [x12], #0x2
+38C0159D ldrsb w29, [x12], #0x1
+
+// LDRSB_32_ldst_immpre size=00|111|VR=0|00|opc=11|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Ldrsb32LdstImmpre: LDRSB  <Wt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+38DCCD76 ldrsb w22, [x11, #-0x34]!
+38DFDD88 ldrsb w8, [x12, #-0x3]!
+38CABC52 ldrsb w18, [x2, #0xab]!
+38CFCC38 ldrsb w24, [x1, #0xfc]!
+38D87C85 ldrsb w5, [x4, #-0x79]!
+38DCBC97 ldrsb w23, [x4, #-0x35]!
+38C26CF5 ldrsb w21, [x7, #0x26]!
+38D03E09 ldrsb w9, [x16, #-0xfd]!
+38D36D4C ldrsb w12, [x10, #-0xca]!
+38C47D3A ldrsb w26, [x9, #0x47]!
+38DD4C4F ldrsb w15, [x2, #-0x2c]!
+38D89EB0 ldrsb w16, [x21, #-0x77]!
+38DC5F86 ldrsb w6, [x28, #-0x3b]!
+38D11F34 ldrsb w20, [x25, #-0xef]!
+38D60DB7 ldrsb w23, [x13, #-0xa0]!
+38DBDE94 ldrsb w20, [x20, #-67]! (unpredictable)
+38C00C00 ldrsb w0, [x0, #0x0]! (unpredictable)
+38DFFFFF ldrsb wzr, [sp, #-0x1]!
+38D00D76 ldrsb w22, [x11, #-0x100]!
+38C80D76 ldrsb w22, [x11, #0x80]!
+38C40D76 ldrsb w22, [x11, #0x40]!
+38C20D76 ldrsb w22, [x11, #0x20]!
+38C10D76 ldrsb w22, [x11, #0x10]!
+38C08D76 ldrsb w22, [x11, #0x8]!
+38C04D76 ldrsb w22, [x11, #0x4]!
+38C02D76 ldrsb w22, [x11, #0x2]!
+38C01D76 ldrsb w22, [x11, #0x1]!
+
+// LDRSB_32_ldst_pos size=00|111|VR=0|01|opc=11|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldrsb32LdstPos: LDRSB  <Wt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+39E28D75 ldrsb w21, [x11, #0x8a3]
+39C6A370 ldrsb w16, [x27, #0x1a8]
+39E57F13 ldrsb w19, [x24, #0x95f]
+39CECBFC ldrsb w28, [sp, #0x3b2]
+39E1694A ldrsb w10, [x10, #0x85a]
+39D8A60D ldrsb w13, [x16, #0x629]
+39CF3A30 ldrsb w16, [x17, #0x3ce]
+39FAC893 ldrsb w19, [x4, #0xeb2]
+39D3B395 ldrsb w21, [x28, #0x4ec]
+39CECC29 ldrsb w9, [x1, #0x3b3]
+39C20DEC ldrsb w12, [x15, #0x83]
+39DFCFD7 ldrsb w23, [lr, #0x7f3]
+39D45761 ldrsb w1, [x27, #0x515]
+39DA169A ldrsb w26, [x20, #0x685]
+39F51B0E ldrsb w14, [x24, #0xd46]
+39DE7AC1 ldrsb w1, [x22, #0x79e]
+39C00000 ldrsb w0, [x0]
+39FFFD7F ldrsb wzr, [x11, #0xfff]
+39E00175 ldrsb w21, [x11, #0x800]
+39D00175 ldrsb w21, [x11, #0x400]
+39C80175 ldrsb w21, [x11, #0x200]
+39C40175 ldrsb w21, [x11, #0x100]
+39C20175 ldrsb w21, [x11, #0x80]
+39C10175 ldrsb w21, [x11, #0x40]
+39C08175 ldrsb w21, [x11, #0x20]
+39C04175 ldrsb w21, [x11, #0x10]
+39C02175 ldrsb w21, [x11, #0x8]
+39C01175 ldrsb w21, [x11, #0x4]
+39C00975 ldrsb w21, [x11, #0x2]
+39C00575 ldrsb w21, [x11, #0x1]
+
+// LDRSB_64_ldst_immpost size=00|111|VR=0|00|opc=10|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Ldrsb64LdstImmpost: LDRSB  <Xt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+389F74C9 ldrsb x9, [x6], #-0x9
+3884F64D ldrsb x13, [x18], #0x4f
+389D66B5 ldrsb x21, [x21], #-0x2a (unpredictable)
+3899E537 ldrsb x23, [x9], #-0x62
+3889C754 ldrsb x20, [x26], #0x9c
+3896A568 ldrsb x8, [x11], #-0x96
+389FB425 ldrsb x5, [x1], #-0x5
+389B641A ldrsb x26, [x0], #-0x4a
+388A34D4 ldrsb x20, [x6], #0xa3
+3890F6F0 ldrsb x16, [x23], #-0xf1
+389637BF ldrsb xzr, [fp], #-0x9d
+388BA577 ldrsb x23, [x11], #0xba
+388115B4 ldrsb x20, [x13], #0x11
+388BB4B7 ldrsb x23, [x5], #0xbb
+3889B788 ldrsb x8, [x28], #0x9b
+389CA451 ldrsb x17, [x2], #-0x36
+388007E0 ldrsb x0, [sp], #0x0
+389FF4C9 ldrsb x9, [x6], #-0x1
+389004C9 ldrsb x9, [x6], #-0x100
+388804C9 ldrsb x9, [x6], #0x80
+388404C9 ldrsb x9, [x6], #0x40
+388204C9 ldrsb x9, [x6], #0x20
+388104C9 ldrsb x9, [x6], #0x10
+388084C9 ldrsb x9, [x6], #0x8
+388044C9 ldrsb x9, [x6], #0x4
+388024C9 ldrsb x9, [x6], #0x2
+388014C9 ldrsb x9, [x6], #0x1
+
+// LDRSB_64_ldst_immpre size=00|111|VR=0|00|opc=10|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Ldrsb64LdstImmpre: LDRSB  <Xt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+389BDF6D ldrsb x13, [x27, #-0x43]!
+3895AF7D ldrsb fp, [x27, #-0xa6]!
+38971E8B ldrsb x11, [x20, #-0x8f]!
+38837CD5 ldrsb x21, [x6, #0x37]!
+389CECC3 ldrsb x3, [x6, #-0x32]!
+389CBE16 ldrsb x22, [x16, #-0x35]!
+38915D49 ldrsb x9, [x10, #-0xeb]!
+38994EA4 ldrsb x4, [x21, #-0x6c]!
+38933F69 ldrsb x9, [x27, #-0xcd]!
+3892FDEA ldrsb x10, [x15, #-0xd1]!
+389D5D60 ldrsb x0, [x11, #-0x2b]!
+389CBEE4 ldrsb x4, [x23, #-0x35]!
+3891AD81 ldrsb x1, [x12, #-0xe6]!
+388E8C46 ldrsb x6, [x2, #0xe8]!
+38832DEC ldrsb x12, [x15, #0x32]!
+38974EFD ldrsb fp, [x23, #-0x8c]!
+38800C1F ldrsb xzr, [x0, #0x0]!
+389FFFED ldrsb x13, [sp, #-0x1]!
+389BDF7B ldrsb x27, [x27, #-0x43]! (unpredictable)
+38900F6D ldrsb x13, [x27, #-0x100]!
+38880F6D ldrsb x13, [x27, #0x80]!
+38840F6D ldrsb x13, [x27, #0x40]!
+38820F6D ldrsb x13, [x27, #0x20]!
+38810F6D ldrsb x13, [x27, #0x10]!
+38808F6D ldrsb x13, [x27, #0x8]!
+38804F6D ldrsb x13, [x27, #0x4]!
+38802F6D ldrsb x13, [x27, #0x2]!
+38801F6D ldrsb x13, [x27, #0x1]!
+
+// LDRSB_64_ldst_pos size=00|111|VR=0|01|opc=10|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldrsb64LdstPos: LDRSB  <Xt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+39BDEF57 ldrsb x23, [x26, #0xf7b]
+39BB1345 ldrsb x5, [x26, #0xec4]
+39A62BC2 ldrsb x2, [lr, #0x98a]
+3990FA28 ldrsb x8, [x17, #0x43e]
+3990625F ldrsb xzr, [x18, #0x418]
+39BC9870 ldrsb x16, [x3, #0xf26]
+39B7A007 ldrsb x7, [x0, #0xde8]
+39BC950D ldrsb x13, [x8, #0xf25]
+39BF46DD ldrsb fp, [x22, #0xfd1]
+39BE05F3 ldrsb x19, [x15, #0xf81]
+39A3FCBF ldrsb xzr, [x5, #0x8ff]
+39ADE0CF ldrsb x15, [x6, #0xb78]
+39BEEAA6 ldrsb x6, [x21, #0xfba]
+3994DFD1 ldrsb x17, [lr, #0x537]
+39B6DC06 ldrsb x6, [x0, #0xdb7]
+3998E413 ldrsb x19, [x0, #0x639]
+398003E0 ldrsb x0, [sp]
+39BFFF57 ldrsb x23, [x26, #0xfff]
+39BDEF5A ldrsb x26, [x26, #0xf7b]
+39A00357 ldrsb x23, [x26, #0x800]
+39900357 ldrsb x23, [x26, #0x400]
+39880357 ldrsb x23, [x26, #0x200]
+39840357 ldrsb x23, [x26, #0x100]
+39820357 ldrsb x23, [x26, #0x80]
+39810357 ldrsb x23, [x26, #0x40]
+39808357 ldrsb x23, [x26, #0x20]
+39804357 ldrsb x23, [x26, #0x10]
+39802357 ldrsb x23, [x26, #0x8]
+39801357 ldrsb x23, [x26, #0x4]
+39800B57 ldrsb x23, [x26, #0x2]
+39800757 ldrsb x23, [x26, #0x1]

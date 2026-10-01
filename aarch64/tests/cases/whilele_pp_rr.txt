@@ -1,0 +1,12 @@
+// whilele_pp_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|01|U=0|lt=1|Rn=xxxxx|1|Pd=xxx|eq=1
+// WhilelePpRr: WHILELE  { <Pd1>.<T>, <Pd2>.<T> }, <Xn>, <Xm>
+// register fields: Rm, Rn, Pd
+25205419 whilele {p8.b, p9.b}, x0, x0
+25205435 whilele {p4.b, p5.b}, x1, x0
+25205451 whilele {p0.b, p1.b}, x2, x0
+257F57F3 whilele {p2.h, p3.h}, xzr, xzr
+25A05417 whilele {p6.s, p7.s}, x0, x0
+25E0541B whilele {p10.d, p11.d}, x0, x0
+2520541D whilele {p12.b, p13.b}, x0, x0
+2520541F whilele {p14.b, p15.b}, x0, x0
+25205411 whilele {p0.b, p1.b}, x0, x0

@@ -1,0 +1,114 @@
+// VST2_m_T1_nowb 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=100x|size=xx|align=xx|Rm=1111
+// Vst2MT1Nowb: VST2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f905b89f vst2.32 {d11, d12}, [r5:64]
+f945191f vst2.8 {d17, d19}, [r5:64]
+f904e89f vst2.32 {d14, d15}, [r4:64]
+f903089f vst2.32 {d0, d1}, [r3:64]
+f946d95f vst2.16 {d29, d31}, [r6:64]
+f903592f vst2.8 {d5, d7}, [r3:128]
+f902e88f vst2.32 {d14, d15}, [r2]
+F900F89F vst2.32 {d15, d16}, [r0:64]
+F90F889F vst2.32 {d8, d9}, [pc:64] (unpredictable)
+F905489F vst2.32 {d4, d5}, [r5:64]
+F905289F vst2.32 {d2, d3}, [r5:64]
+F905B8FF UNDEFINED
+F905B89F [ne] vst2ne.32 {d11, d12}, [r5:64]
+
+// VST2_m_T1_posti 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=100x|size=xx|align=xx|Rm=1101
+// Vst2MT1Posti: VST2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f949c91d vst2.8 {d28, d30}, [r9:64]!
+f943086d vst2.16 {d16, d17}, [r3:128]!
+f947094d vst2.16 {d16, d18}, [r7]!
+f908888d vst2.32 {d8, d9}, [r8]!
+f900099d vst2.32 {d0, d2}, [r0:64]!
+f90c995d vst2.16 {d9, d11}, [r12:64]!
+f944e84d vst2.16 {d30, d31}, [r4]!
+F94FF91D UNPREDICTABLE
+F949491D vst2.8 {d20, d22}, [r9:64]!
+F949291D vst2.8 {d18, d20}, [r9:64]!
+F949191D vst2.8 {d17, d19}, [r9:64]!
+F949C9FD UNDEFINED
+F949C91D [ne] vst2ne.8 {d28, d30}, [r9:64]!
+F94FC91D vst2.8 {d28, d30}, [pc:64]! (unpredictable)
+F908F88D vst2.32 {d15, d16}, [r8]!
+
+// VST2_m_T1_postr 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=100x|size=xx|align=xx|Rm=xxxx
+// Vst2MT1Postr: VST2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f9017862 vst2.16 {d7, d8}, [r1:128], r2
+f941a866 vst2.16 {d26, d27}, [r1:128], r6
+f9473899 vst2.32 {d19, d20}, [r7:64], r9
+f9024927 vst2.8 {d4, d6}, [r2:128], r7
+f94ba82e vst2.8 {d26, d27}, [r11:128], lr
+f94f9944 vst2.16 {d25, d27}, [pc], r4 (unpredictable)
+f900c814 vst2.8 {d12, d13}, [r0:64], r4
+F9010860 vst2.16 {d0, d1}, [r1:128], r0
+F901F861 vst2.16 {d15, d16}, [r1:128], r1
+F9018862 vst2.16 {d8, d9}, [r1:128], r2
+F9012862 vst2.16 {d2, d3}, [r1:128], r2
+F9011862 vst2.16 {d1, d2}, [r1:128], r2
+F90178FF UNDEFINED
+F9017862 [ne] vst2ne.16 {d7, d8}, [r1:128], r2
+
+// VST2_m_T2_nowb 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=0011|size=xx|align=xx|Rm=1111
+// Vst2MT2Nowb: VST2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f906033f vst2.8 {d0, d1, d2, d3}, [r6:256]
+f949b36f vst2.16 {d27, d28, d29, d30}, [r9:128]
+f902e34f vst2.16 {d14, d15, d16, d17}, [r2]
+f948038f vst2.32 {d16, d17, d18, d19}, [r8]
+f907439f vst2.32 {d4, d5, d6, d7}, [r7:64]
+f94e738f vst2.32 {d23, d24, d25, d26}, [lr]
+f900537f vst2.16 {d5, d6, d7, d8}, [r0:256]
+f900031f vst2.8 {d0, d1, d2, d3}, [r0:64]
+F90FF33F vst2.8 {d15, d16, d17, d18}, [pc:256] (unpredictable)
+F906833F vst2.8 {d8, d9, d10, d11}, [r6:256]
+F906233F vst2.8 {d2, d3, d4, d5}, [r6:256]
+F906133F vst2.8 {d1, d2, d3, d4}, [r6:256]
+F90603FF UNDEFINED
+F906033F [ne] vst2ne.8 {d0, d1, d2, d3}, [r6:256]
+
+// VST2_m_T2_posti 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=0011|size=xx|align=xx|Rm=1101
+// Vst2MT2Posti: VST2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f90d931d vst2.8 {d9, d10, d11, d12}, [sp:64]!
+f94e73ad vst2.32 {d23, d24, d25, d26}, [lr:128]!
+f90ab31d vst2.8 {d11, d12, d13, d14}, [r10:64]!
+f94953ad vst2.32 {d21, d22, d23, d24}, [r9:128]!
+f947a31d vst2.8 {d26, d27, d28, d29}, [r7:64]!
+f94ec37d vst2.16 {d28, d29, d30, d31}, [lr:256]!
+f94a130d vst2.8 {d17, d18, d19, d20}, [r10]!
+f90d638d vst2.32 {d6, d7, d8, d9}, [sp]!
+F900031D vst2.8 {d0, d1, d2, d3}, [r0:64]!
+F90FF31D vst2.8 {d15, d16, d17, d18}, [pc:64]! (unpredictable)
+F90D831D vst2.8 {d8, d9, d10, d11}, [sp:64]!
+F90D431D vst2.8 {d4, d5, d6, d7}, [sp:64]!
+F90D231D vst2.8 {d2, d3, d4, d5}, [sp:64]!
+F90D93DD UNDEFINED
+F90D931D [ne] vst2ne.8 {d9, d10, d11, d12}, [sp:64]!
+
+// VST2_m_T2_postr 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=0011|size=xx|align=xx|Rm=xxxx
+// Vst2MT2Postr: VST2{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f94533b8 vst2.32 {d19, d20, d21, d22}, [r5:256], r8
+f9430382 vst2.32 {d16, d17, d18, d19}, [r3], r2
+f9462328 vst2.8 {d18, d19, d20, d21}, [r6:128], r8
+f9467314 vst2.8 {d23, d24, d25, d26}, [r6:64], r4
+f90a4325 vst2.8 {d4, d5, d6, d7}, [r10:128], r5
+f944134b vst2.16 {d17, d18, d19, d20}, [r4], r11
+f902a34a vst2.16 {d10, d11, d12, d13}, [r2], r10
+f947a3b7 vst2.32 {d26, d27, d28, d29}, [r7:256], r7
+F940F3B0 UNPREDICTABLE
+F94F83B8 vst2.32 {d24, d25, d26, d27}, [pc:256], r8 (unpredictable)
+F94533FF UNDEFINED
+F94533B8 [ne] vst2ne.32 {d19, d20, d21, d22}, [r5:256], r8
+F94033B0 vst2.32 {d19, d20, d21, d22}, [r0:256], r0
+F90AF325 vst2.8 {d15, d16, d17, d18}, [r10:128], r5

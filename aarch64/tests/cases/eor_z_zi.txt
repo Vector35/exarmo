@@ -1,0 +1,79 @@
+// eor_z_zi_ 000|0010|1|opc=01|00|00|imm13=xxxxxxxxxxxxx|Zdn=xxxxx
+// EorZZi: EOR  <Zdn>.<T>, <Zdn>.<T>, #<const>
+// register fields: Zdn
+// bitmask immediate <const>: imm13<12>:imm13<11:6>:imm13<5:0>
+0540CD26 eor z6.h, z6.h, #0xff81
+0541BC8D eor z13.h, z13.h, #0x3e00
+05426718 eor z24.d, z24.d, #0xfff01fffffffffff
+0542FB43 eor z3.d, z3.d, #0xffffffe00000000
+0540BF01 eor z1.b, z1.b, #0x22
+0542D79B eor z27.d, z27.d, #0xffffffc7ffffffff
+0543B9EF eor z15.d, z15.d, #0x1fffe00
+05435EF2 eor z18.d, z18.d, #0xffffffffffe01fff
+0543231D eor z29.d, z29.d, #0x1ffffff0000000
+054165CD eor z13.h, z13.h, #0xfff7
+0542949F eor z31.d, z31.d, #0xffffc0000007ffff
+05420DA1 eor z1.d, z1.d, #0x80001fffffffffff
+054293DC eor z28.d, z28.d, #0xffffc00000001fff
+05417744 eor z4.b, z4.b, #0xdd
+05420AFC eor z28.d, z28.d, #0x80000000007fffff
+05430257 eor z23.d, z23.d, #0x7ffff00000000
+05400000 eor z0.s, z0.s, #0x1
+0543FFE6 UNDEFINED
+05420006 eor z6.d, z6.d, #0x1
+05410006 eor z6.s, z6.s, #0x1
+05408006 eor z6.s, z6.s, #0x10000
+05404006 eor z6.s, z6.s, #0x1000000
+05402006 eor z6.s, z6.s, #0x10000000
+05401006 eor z6.s, z6.s, #0x40000000
+05400806 eor z6.s, z6.s, #0x80000000
+05400406 eor z6.h, z6.h, #0x1
+05400206 eor z6.s, z6.s, #0x1ffff
+05400106 eor z6.s, z6.s, #0x1ff
+05400086 eor z6.s, z6.s, #0x1f
+05400046 eor z6.s, z6.s, #0x7
+05400026 eor z6.s, z6.s, #0x3
+05400786 eor z6.b, z6.b, #0x55
+05400F86 eor z6.b, z6.b, #0xaa
+0541FF86 eor z6.b, z6.b, #0xaa
+054007A6 UNDEFINED
+05400FA6 UNDEFINED
+0541FFA6 UNDEFINED
+05400706 eor z6.b, z6.b, #0x11
+05401F06 eor z6.b, z6.b, #0x22
+0541FF06 eor z6.b, z6.b, #0x22
+05400746 eor z6.b, z6.b, #0x77
+05401F46 eor z6.b, z6.b, #0xee
+0541FF46 eor z6.b, z6.b, #0xee
+05400766 UNDEFINED
+05401F66 UNDEFINED
+0541FF66 UNDEFINED
+05400606 eor z6.b, z6.b, #0x1
+05403E06 eor z6.b, z6.b, #0x2
+0541FE06 eor z6.b, z6.b, #0x2
+054006C6 eor z6.b, z6.b, #0x7f
+05403EC6 eor z6.b, z6.b, #0xfe
+0541FEC6 eor z6.b, z6.b, #0xfe
+054006E6 UNDEFINED
+05403EE6 UNDEFINED
+0541FEE6 UNDEFINED
+05407C06 eor z6.h, z6.h, #0x2
+0541FC06 eor z6.h, z6.h, #0x2
+054005C6 eor z6.h, z6.h, #0x7fff
+05407DC6 eor z6.h, z6.h, #0xfffe
+0541FDC6 eor z6.h, z6.h, #0xfffe
+054005E6 UNDEFINED
+05407DE6 UNDEFINED
+0541FDE6 UNDEFINED
+0540F806 eor z6.s, z6.s, #0x2
+0541F806 eor z6.s, z6.s, #0x2
+054003C6 eor z6.s, z6.s, #0x7fffffff
+0540FBC6 eor z6.s, z6.s, #0xfffffffe
+0541FBC6 eor z6.s, z6.s, #0xfffffffe
+054003E6 UNDEFINED
+0540FBE6 UNDEFINED
+0541FBE6 UNDEFINED
+0543F806 eor z6.d, z6.d, #0x2
+054207C6 eor z6.d, z6.d, #0x7fffffffffffffff
+0543FFC6 eor z6.d, z6.d, #0xfffffffffffffffe
+054207E6 UNDEFINED

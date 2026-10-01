@@ -1,0 +1,48 @@
+// uqincb_r_rs_uw 000|0010|0|size=00|1|sf=0|imm4=xxxx|11|11|D=0|U=1|pattern=xxxxx|Rdn=xxxxx
+// UqincbRRsUw: UQINCB  <Wdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0428F4A9 uqincb w9, vl5, mul #0x9
+042CF7A9 uqincb w9, mul4, mul #0xd
+042CF4E8 uqincb w8, vl7, mul #0xd
+0421F741 uqincb w1, #0x1a, mul #0x2
+0420F79D uqincb w29, #0x1c
+0423F682 uqincb w2, #0x14, mul #0x4
+0421F54A uqincb w10, vl32, mul #0x2
+042CF6F0 uqincb w16, #0x17, mul #0xd
+0424F7A1 uqincb w1, mul4, mul #0x5
+042AF480 uqincb w0, vl4, mul #0xb
+042BF68A uqincb w10, #0x14, mul #0xc
+0421F46F uqincb w15, vl3, mul #0x2
+042CF444 uqincb w4, vl2, mul #0xd
+0423F541 uqincb w1, vl32, mul #0x4
+042BF5E9 uqincb w9, #0xf, mul #0xc
+042CF511 uqincb w17, vl8, mul #0xd
+042FF41F uqincb wzr, pow2, mul #0x10
+0428F7E9 uqincb w9, all, mul #0x9
+0422F609 uqincb w9, #0x10, mul #0x3
+0428F429 uqincb w9, vl1, mul #0x9
+
+// uqincb_r_rs_x 000|0010|0|size=00|1|sf=1|imm4=xxxx|11|11|D=0|U=1|pattern=xxxxx|Rdn=xxxxx
+// UqincbRRsX: UQINCB  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0435F5A2 uqincb x2, vl256, mul #0x6
+0439F4A9 uqincb x9, vl5, mul #0xa
+043EF796 uqincb x22, #0x1c, mul #0xf
+0436F7A0 uqincb x0, mul4, mul #0x7
+0430F5E9 uqincb x9, #0xf
+0432F766 uqincb x6, #0x1b, mul #0x3
+0438F75F uqincb xzr, #0x1a, mul #0x9
+0437F753 uqincb x19, #0x1a, mul #0x8
+0432F7A2 uqincb x2, mul4, mul #0x3
+0435F52B uqincb x11, vl16, mul #0x6
+0432F624 uqincb x4, #0x11, mul #0x3
+0430F50C uqincb x12, vl8
+043CF6C0 uqincb x0, #0x16, mul #0xd
+043EF4F9 uqincb x25, vl7, mul #0xf
+0435F490 uqincb x16, vl4, mul #0x6
+043FF7D3 uqincb x19, mul3, mul #0x10
+0435F402 uqincb x2, pow2, mul #0x6
+0435F7E2 uqincb x2, all, mul #0x6
+0434F602 uqincb x2, #0x10, mul #0x5
+0431F442 uqincb x2, vl2, mul #0x2
+0435F422 uqincb x2, vl1, mul #0x6

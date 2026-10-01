@@ -1,0 +1,14 @@
+// raddhnt_z_zz_ 010|0010|1|size=xx|1|Zm=xxxxx|0|11|S=0|R=1|T=1|Zn=xxxxx|Zd=xxxxx
+// RaddhntZZz: RADDHNT  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45A26CA7 raddhnt z7.h, z5.s, z2.s
+45B96D4C raddhnt z12.h, z10.s, z25.s
+45B06D35 raddhnt z21.h, z9.s, z16.s
+45746DEE raddhnt z14.b, z15.h, z20.h
+45E66C25 raddhnt z5.s, z1.d, z6.d
+45F06D2C raddhnt z12.s, z9.d, z16.d
+45636E12 raddhnt z18.b, z16.h, z3.h
+45E96F18 raddhnt z24.s, z24.d, z9.d
+45A06C00 raddhnt z0.h, z0.s, z0.s
+45BF6FFF raddhnt z31.h, z31.s, z31.s
+45226CA7 UNDEFINED

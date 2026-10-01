@@ -1,0 +1,22 @@
+// fdivr_z_p_zz_ 011|0010|1|size=xx|0|0|opc=1100|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FdivrZPZz: FDIVR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+65CC9134 fdivr z20.d, p4/m, z20.d, z9.d
+654C9EF2 fdivr z18.h, p7/m, z18.h, z23.h
+654C9E3D fdivr z29.h, p7/m, z29.h, z17.h
+654C8A2A fdivr z10.h, p2/m, z10.h, z17.h
+658C858C fdivr z12.s, p1/m, z12.s, z12.s
+65CC9964 fdivr z4.d, p6/m, z4.d, z11.d
+658C956F fdivr z15.s, p5/m, z15.s, z11.s
+65CC93F6 fdivr z22.d, p4/m, z22.d, z31.d
+658C88C8 fdivr z8.s, p2/m, z8.s, z6.s
+654C9F59 fdivr z25.h, p7/m, z25.h, z26.h
+65CC9BCD fdivr z13.d, p6/m, z13.d, z30.d
+658C9526 fdivr z6.s, p5/m, z6.s, z9.s
+658C8B74 fdivr z20.s, p2/m, z20.s, z27.s
+658C9BDF fdivr z31.s, p6/m, z31.s, z30.s
+658C9EA6 fdivr z6.s, p7/m, z6.s, z21.s
+654C9208 fdivr z8.h, p4/m, z8.h, z16.h
+65CC8000 fdivr z0.d, p0/m, z0.d, z0.d
+65CC8D34 fdivr z20.d, p3/m, z20.d, z9.d
+650C9134 UNDEFINED

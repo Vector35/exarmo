@@ -1,0 +1,21 @@
+// REV32_64_dp_1src sf=1|1|S=0|1|101|0110|opcode2=00000|0000|opc=10|Rn=xxxxx|Rd=xxxxx
+// Rev3264Dp1src: REV32  <Xd>, <Xn>
+// register fields: Rn, Rd
+DAC0091D rev32 fp, x8
+DAC00B52 rev32 x18, x26
+DAC00848 rev32 x8, x2
+DAC00991 rev32 x17, x12
+DAC00934 rev32 x20, x9
+DAC00967 rev32 x7, x11
+DAC00A26 rev32 x6, x17
+DAC008B5 rev32 x21, x5
+DAC00B2F rev32 x15, x25
+DAC00B04 rev32 x4, x24
+DAC00ACA rev32 x10, x22
+DAC008E8 rev32 x8, x7
+DAC008D8 rev32 x24, x6
+DAC00A2E rev32 x14, x17
+DAC00BAB rev32 x11, fp
+DAC00AF0 rev32 x16, x23
+DAC00800 rev32 x0, x0
+DAC00BFF rev32 xzr, xzr

@@ -1,0 +1,10 @@
+// MSUBPT_64A_dp_3src sf=1|op54=00|1|101|1|op31=011|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Msubpt64aDp3src: MSUBPT  <Xd>, <Xn>, <Xm>, <Xa>
+// register fields: Rm, Ra, Rn, Rd
+9B608002 msubpt x2, x0, x0, x0
+9B608009 msubpt x9, x0, x0, x0
+9B608010 msubpt x16, x0, x0, x0
+9B7FFFE0 msubpt x0, xzr, xzr, xzr
+9B60801F msubpt xzr, x0, x0, x0
+9B608000 msubpt x0, x0, x0, x0
+9B618864 msubpt x4, x3, x1, x2

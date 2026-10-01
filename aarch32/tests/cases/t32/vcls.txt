@@ -1,0 +1,47 @@
+// VCLS_T1_D 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1000|Q=0|M=x|0|Vm=xxxx
+// VclsT1D: VCLS{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fff8e405 vcls.s32 d30, d5
+fff4740a vcls.s16 d23, d10
+ffb0040a vcls.s8 d0, d10
+ffb8b429 vcls.s32 d11, d25
+fff4f425 vcls.s16 d31, d21
+fff45424 vcls.s16 d21, d20
+fff42401 vcls.s16 d18, d1
+fff4f426 vcls.s16 d31, d22
+FFFCE405 UNDEFINED
+FFF88400 vcls.s32 d24, d0
+FFF8440F vcls.s32 d20, d15
+FFF81408 vcls.s32 d17, d8
+FFB8F402 vcls.s32 d15, d2
+FFF80400 vcls.s32 d16, d0
+FFF8E40F vcls.s32 d30, d15
+FFF8E420 vcls.s32 d30, d16
+FFF8E42F vcls.s32 d30, d31
+FFF8E405 [ne] vclsne.s32 d30, d5
+
+// VCLS_T1_Q 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1000|Q=1|M=x|0|Vm=xxxx
+// VclsT1Q: VCLS{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb4246e vcls.s16 q1, q15
+fff82462 vcls.s32 q9, q9
+fff4a46c vcls.s16 q13, q14
+fff8e46a vcls.s32 q15, q13
+ffb8644e vcls.s32 q3, q7
+fff0e462 vcls.s8 q15, q9
+fff46444 vcls.s16 q11, q2
+ffb8c440 vcls.s32 q6, q0
+FFBCF46F UNDEFINED
+FFB40468 vcls.s16 q0, q12
+FFB48460 vcls.s16 q4, q8
+FFB4446E vcls.s16 q2, q15
+FFB41461 UNDEFINED
+FFB4046E vcls.s16 q0, q15
+FFB4F44F UNDEFINED
+FFF4046E vcls.s16 q8, q15
+FFF4F46F UNDEFINED
+FFB4246E [ne] vclsne.s16 q1, q15

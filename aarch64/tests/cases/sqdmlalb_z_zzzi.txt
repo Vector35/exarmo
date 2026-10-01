@@ -1,0 +1,34 @@
+// sqdmlalb_z_zzzi_d 010|0010|0|size=11|1|i2h=x|Zm=xxxx|001|S=0|i2l=x|T=0|Zn=xxxxx|Zda=xxxxx
+// SqdmlalbZZzziD: SQDMLALB  <Zda>.D, <Zn>.S, <Zm>.S[<imm>]
+// read together by <imm>: i2h, i2l
+// register fields: Zm, Zn, Zda
+44E62918 sqdmlalb z24.d, z8.s, z6.s[1]
+44EB23F6 sqdmlalb z22.d, z31.s, z11.s[0]
+44EC2BBB sqdmlalb z27.d, z29.s, z12.s[1]
+44FB2976 sqdmlalb z22.d, z11.s, z11.s[3]
+44F028F4 sqdmlalb z20.d, z7.s, z0.s[3]
+44F52097 sqdmlalb z23.d, z4.s, z5.s[2]
+44EB22EC sqdmlalb z12.d, z23.s, z11.s[0]
+44E32AFA sqdmlalb z26.d, z23.s, z3.s[1]
+44EF2800 sqdmlalb z0.d, z0.s, z15.s[1]
+44E6291F sqdmlalb z31.d, z8.s, z6.s[1]
+44E62906 sqdmlalb z6.d, z8.s, z6.s[1]
+
+// sqdmlalb_z_zzzi_s 010|0010|0|size=10|1|i3h=xx|Zm=xxx|001|S=0|i3l=x|T=0|Zn=xxxxx|Zda=xxxxx
+// SqdmlalbZZzziS: SQDMLALB  <Zda>.S, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+44A0211D sqdmlalb z29.s, z8.h, z0.h[0]
+44A621C7 sqdmlalb z7.s, z14.h, z6.h[0]
+44B82932 sqdmlalb z18.s, z9.h, z0.h[7]
+44BC2B65 sqdmlalb z5.s, z27.h, z4.h[7]
+44AB2B9C sqdmlalb z28.s, z28.h, z3.h[3]
+44B62814 sqdmlalb z20.s, z0.h, z6.h[5]
+44AA2947 sqdmlalb z7.s, z10.h, z2.h[3]
+44B52A31 sqdmlalb z17.s, z17.h, z5.h[5]
+44A123E0 sqdmlalb z0.s, z31.h, z1.h[0]
+44A7211F sqdmlalb z31.s, z8.h, z7.h[0]
+44A0281D sqdmlalb z29.s, z0.h, z0.h[1]
+44A82100 sqdmlalb z0.s, z8.h, z0.h[2]
+44B0211D sqdmlalb z29.s, z8.h, z0.h[4]
+44B8211D sqdmlalb z29.s, z8.h, z0.h[6]

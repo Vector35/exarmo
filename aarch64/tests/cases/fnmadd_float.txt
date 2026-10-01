@@ -1,0 +1,69 @@
+// FNMADD_D_floatdp3 M=0|0|S=0|11111|ftype=01|o1=1|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FnmaddDFloatdp3: FNMADD  <Dd>, <Dn>, <Dm>, <Da>
+// register fields: Rm, Ra, Rn, Rd
+1F79746A fnmadd d10, d3, d25, d29
+1F7A7CE0 fnmadd d0, d7, d26, d31
+1F7E7ED5 fnmadd d21, d22, d30, d31
+1F7C59BB fnmadd d27, d13, d28, d22
+1F756BF5 fnmadd d21, d31, d21, d26
+1F623657 fnmadd d23, d18, d2, d13
+1F670AB9 fnmadd d25, d21, d7, d2
+1F7D1113 fnmadd d19, d8, d29, d4
+1F7F6C2E fnmadd d14, d1, d31, d27
+1F73562F fnmadd d15, d17, d19, d21
+1F7B1639 fnmadd d25, d17, d27, d5
+1F6A5429 fnmadd d9, d1, d10, d21
+1F71389F fnmadd d31, d4, d17, d14
+1F7C0F0C fnmadd d12, d24, d28, d3
+1F6F1665 fnmadd d5, d19, d15, d5
+1F7869A9 fnmadd d9, d13, d24, d26
+1F60000A fnmadd d10, d0, d0, d0
+1F797463 fnmadd d3, d3, d25, d29
+
+// FNMADD_H_floatdp3 M=0|0|S=0|11111|ftype=11|o1=1|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FnmaddHFloatdp3: FNMADD  <Hd>, <Hn>, <Hm>, <Ha>
+// register fields: Rm, Ra, Rn, Rd
+1FFF30AB fnmadd h11, h5, h31, h12
+1FEC0C56 fnmadd h22, h2, h12, h3
+1FFC21B8 fnmadd h24, h13, h28, h8
+1FF14DF0 fnmadd h16, h15, h17, h19
+1FF30A79 fnmadd h25, h19, h19, h2
+1FFE0913 fnmadd h19, h8, h30, h2
+1FF049D9 fnmadd h25, h14, h16, h18
+1FE37933 fnmadd h19, h9, h3, h30
+1FF9234B fnmadd h11, h26, h25, h8
+1FF00299 fnmadd h25, h20, h16, h0
+1FFE08B0 fnmadd h16, h5, h30, h2
+1FE63418 fnmadd h24, h0, h6, h13
+1FF95D35 fnmadd h21, h9, h25, h23
+1FF27829 fnmadd h9, h1, h18, h30
+1FE63357 fnmadd h23, h26, h6, h12
+1FF36F58 fnmadd h24, h26, h19, h27
+1FE07FE0 fnmadd h0, h31, h0, h31
+1FFF30BF fnmadd h31, h5, h31, h12
+1FFF7CA5 fnmadd h5, h5, h31, h31
+1FFF30AC fnmadd h12, h5, h31, h12
+
+// FNMADD_S_floatdp3 M=0|0|S=0|11111|ftype=00|o1=1|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FnmaddSFloatdp3: FNMADD  <Sd>, <Sn>, <Sm>, <Sa>
+// register fields: Rm, Ra, Rn, Rd
+1F3C347C fnmadd s28, s3, s28, s13
+1F2C2D30 fnmadd s16, s9, s12, s11
+1F3F770A fnmadd s10, s24, s31, s29
+1F284809 fnmadd s9, s0, s8, s18
+1F2D2F34 fnmadd s20, s25, s13, s11
+1F2C48DA fnmadd s26, s6, s12, s18
+1F3040C2 fnmadd s2, s6, s16, s16
+1F3E1094 fnmadd s20, s4, s30, s4
+1F2C40F9 fnmadd s25, s7, s12, s16
+1F2C4FF9 fnmadd s25, s31, s12, s19
+1F3C19AB fnmadd s11, s13, s28, s6
+1F3613DA fnmadd s26, s30, s22, s4
+1F2D3657 fnmadd s23, s18, s13, s13
+1F307FD7 fnmadd s23, s30, s16, s31
+1F2F776C fnmadd s12, s27, s15, s29
+1F3C4711 fnmadd s17, s24, s28, s17
+1F200060 fnmadd s0, s3, s0, s0
+1F3C347F fnmadd s31, s3, s28, s13
+1F3C379C fnmadd s28, s28, s28, s13
+1F3C3463 fnmadd s3, s3, s28, s13

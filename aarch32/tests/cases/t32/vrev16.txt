@@ -1,0 +1,44 @@
+// VREV16_T1_D 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|000|op=10|Q=0|M=x|0|Vm=xxxx
+// Vrev16T1D: VREV16{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fff0c122 vrev16.8 d28, d18
+fff0212f vrev16.8 d18, d31
+ffb02100 vrev16.8 d2, d0
+fff02101 vrev16.8 d18, d1
+fff09105 vrev16.8 d25, d5
+ffb0912b vrev16.8 d9, d27
+fff0710e vrev16.8 d23, d14
+fff0d10e vrev16.8 d29, d14
+FFF4C122 UNDEFINED
+FFF8C122 UNDEFINED
+FFFCC122 UNDEFINED
+FFF00128 vrev16.8 d16, d24
+FFF0F124 vrev16.8 d31, d20
+FFF0810F vrev16.8 d24, d15
+FFF04120 vrev16.8 d20, d16
+FFF01122 vrev16.8 d17, d18
+FFB00122 vrev16.8 d0, d18
+FFB0F122 vrev16.8 d15, d18
+FFF00122 vrev16.8 d16, d18
+FFF0F122 vrev16.8 d31, d18
+FFF0C122 [ne] vrev16ne.8 d28, d18
+
+// VREV16_T1_Q 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|000|op=10|Q=1|M=x|0|Vm=xxxx
+// Vrev16T1Q: VREV16{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb0616a vrev16.8 q3, q13
+ffb0c14a vrev16.8 q6, q5
+FFF00160 vrev16.8 q8, q8
+FFB4F16F UNDEFINED
+FFB81161 UNDEFINED
+FFBCF14F UNDEFINED
+FFB08168 vrev16.8 q4, q12
+FFB04164 vrev16.8 q2, q10
+FFB02162 vrev16.8 q1, q9
+FFB00140 vrev16.8 q0, q0
+FFF0F16F UNDEFINED
+FFB0616A [ne] vrev16ne.8 q3, q13

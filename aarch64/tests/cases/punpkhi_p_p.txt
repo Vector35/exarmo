@@ -1,0 +1,43 @@
+// punpkhi_p_p_ 000|0010|1|00|1|1000|H=1|010|0000|Pn=xxxx|0|Pd=xxxx
+// PunpkhiPP: PUNPKHI  <Pd>.H, <Pn>.B
+// register fields: Pn, Pd
+05314060 punpkhi p0.h, p3.b
+05314081 punpkhi p1.h, p4.b
+05314125 punpkhi p5.h, p9.b
+053141C0 punpkhi p0.h, p14.b
+053141E2 punpkhi p2.h, p15.b
+053141AB punpkhi p11.h, p13.b
+053141A5 punpkhi p5.h, p13.b
+05314180 punpkhi p0.h, p12.b
+0531400C punpkhi p12.h, p0.b
+05314189 punpkhi p9.h, p12.b
+05314102 punpkhi p2.h, p8.b
+05314025 punpkhi p5.h, p1.b
+05314009 punpkhi p9.h, p0.b
+0531408E punpkhi p14.h, p4.b
+05314002 punpkhi p2.h, p0.b
+0531416A punpkhi p10.h, p11.b
+0531406F punpkhi p15.h, p3.b
+05314063 punpkhi p3.h, p3.b
+
+// punpklo_p_p_ 000|0010|1|00|1|1000|H=0|010|0000|Pn=xxxx|0|Pd=xxxx
+// PunpkloPP: PUNPKLO  <Pd>.H, <Pn>.B
+// register fields: Pn, Pd
+05304142 punpklo p2.h, p10.b
+05304109 punpklo p9.h, p8.b
+053041A3 punpklo p3.h, p13.b
+0530408D punpklo p13.h, p4.b
+053041AD punpklo p13.h, p13.b
+05304063 punpklo p3.h, p3.b
+0530414B punpklo p11.h, p10.b
+053040E7 punpklo p7.h, p7.b
+0530400C punpklo p12.h, p0.b
+0530406A punpklo p10.h, p3.b
+053041E8 punpklo p8.h, p15.b
+05304181 punpklo p1.h, p12.b
+05304182 punpklo p2.h, p12.b
+05304124 punpklo p4.h, p9.b
+053041A6 punpklo p6.h, p13.b
+053040E2 punpklo p2.h, p7.b
+05304140 punpklo p0.h, p10.b
+0530414F punpklo p15.h, p10.b

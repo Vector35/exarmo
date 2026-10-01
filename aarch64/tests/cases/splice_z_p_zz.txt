@@ -1,0 +1,37 @@
+// splice_z_p_zz_con 000|0010|1|size=xx|1|0|110|1|10|0|Pv=xxx|Zn=xxxxx|Zd=xxxxx
+// SpliceZPZzCon: SPLICE  <Zd>.<T>, <Pv>, { <Zn1>.<T>, <Zn2>.<T> }
+// register fields: Pv, Zn, Zd
+05ED92DE splice z30.d, p4, {z22.d, z23.d}
+052D8F36 splice z22.b, p3, {z25.b, z26.b}
+05AD8E4C splice z12.s, p3, {z18.s, z19.s}
+05ED92A2 splice z2.d, p4, {z21.d, z22.d}
+056D8529 splice z9.h, p1, {z9.h, z10.h}
+05ED910A splice z10.d, p4, {z8.d, z9.d}
+056D9673 splice z19.h, p5, {z19.h, z20.h}
+056D954A splice z10.h, p5, {z10.h, z11.h}
+05ED8000 splice z0.d, p0, {z0.d, z1.d}
+05ED8BFF splice z31.d, p2, {z31.d, z0.d}
+05ED9ADE splice z30.d, p6, {z22.d, z23.d}
+05ED9EDE splice z30.d, p7, {z22.d, z23.d}
+
+// splice_z_p_zz_des 000|0010|1|size=xx|1|0|110|0|10|0|Pv=xxx|Zm=xxxxx|Zdn=xxxxx
+// SpliceZPZzDes: SPLICE  <Zdn>.<T>, <Pv>, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pv, Zm, Zdn
+056C9CBE splice z30.h, p7, z30.h, z5.h
+056C8A63 splice z3.h, p2, z3.h, z19.h
+052C98D1 splice z17.b, p6, z17.b, z6.b
+05AC9232 splice z18.s, p4, z18.s, z17.s
+052C93ED splice z13.b, p4, z13.b, z31.b
+05AC8D2A splice z10.s, p3, z10.s, z9.s
+05AC83E0 splice z0.s, p0, z0.s, z31.s
+052C9009 splice z9.b, p4, z9.b, z0.b
+05AC95A0 splice z0.s, p5, z0.s, z13.s
+052C8B56 splice z22.b, p2, z22.b, z26.b
+056C8E22 splice z2.h, p3, z2.h, z17.h
+05EC87F5 splice z21.d, p1, z21.d, z31.d
+05AC8195 splice z21.s, p0, z21.s, z12.s
+05AC9F1C splice z28.s, p7, z28.s, z24.s
+056C85F1 splice z17.h, p1, z17.h, z15.h
+05EC8A0C splice z12.d, p2, z12.d, z16.d
+056C9CBF splice z31.h, p7, z31.h, z5.h
+056C9CA5 splice z5.h, p7, z5.h, z5.h

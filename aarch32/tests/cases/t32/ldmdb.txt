@@ -1,0 +1,22 @@
+// LDMDB_T1 111|0100|opc=10|0|W=x|L=1|Rn=xxxx|P=x|M=x|register_list=xxxxxxxxxxxxxx
+// LdmdbT1: LDMDB{<c>}{<q>}  <Rn>{<!>}, <registers>
+// register fields: Rn
+// IT state read: condition, last in block
+E9100000 ldmdb r0, {} (unpredictable)
+E93FFFFF ldmdb pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+E9102000 ldmdb r0, {sp} (unpredictable)
+E9101000 ldmdb r0, {r12} (unpredictable)
+E9100800 ldmdb r0, {r11} (unpredictable)
+E9100400 ldmdb r0, {r10} (unpredictable)
+E9100200 ldmdb r0, {r9} (unpredictable)
+E9100100 ldmdb r0, {r8} (unpredictable)
+E9100080 ldmdb r0, {r7} (unpredictable)
+E9100040 ldmdb r0, {r6} (unpredictable)
+E9100020 ldmdb r0, {r5} (unpredictable)
+E9100010 ldmdb r0, {r4} (unpredictable)
+E9100008 ldmdb r0, {r3} (unpredictable)
+E9100004 ldmdb r0, {r2} (unpredictable)
+E9100002 ldmdb r0, {r1} (unpredictable)
+E9100001 ldmdb r0, {r0} (unpredictable)
+E9101000 [ne] ldmdbne r0, {r12} (unpredictable)
+E9101000 [ne last] ldmdbne r0, {r12} (unpredictable)

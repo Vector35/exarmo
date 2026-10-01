@@ -1,0 +1,20 @@
+// FMININM_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|10|op=11|10|Rn=xxxxx|Rd=xxxxx
+// FmininmDFloatdp2: FMININM  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E60B800 fmininm d0, d0, d0
+1E7FBBFF fmininm d31, d31, d31
+1E61B843 fmininm d3, d2, d1
+
+// FMININM_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|10|op=11|10|Rn=xxxxx|Rd=xxxxx
+// FmininmHFloatdp2: FMININM  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EE0B800 fmininm h0, h0, h0
+1EFFBBFF fmininm h31, h31, h31
+1EE1B843 fmininm h3, h2, h1
+
+// FMININM_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|10|op=11|10|Rn=xxxxx|Rd=xxxxx
+// FmininmSFloatdp2: FMININM  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E20B800 fmininm s0, s0, s0
+1E3FBBFF fmininm s31, s31, s31
+1E21B843 fmininm s3, s2, s1

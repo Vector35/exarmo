@@ -1,0 +1,13 @@
+// fmopab_za16_zz8z 1|00|0000|0|10|1|Zm=xxxxx|T=0|0|0|K=x|Zk=xx|Zn=xxxx|0|1|10|0|ZAda=x
+// FmopabZa16Zz8z: FMOPAB  <ZAda>.H, { <Zn1>.H-<Zn2>.H }, <Zm>.B, <Zk>.B
+// read together by <Zk>: K, Zk
+// register fields: Zm, Zn, ZAda
+80A00018 fmopab za0.h, {z0.h-z1.h}, z0.b, z20.b
+80BF17D9 fmopab za1.h, {z30.h-z31.h}, z31.b, z29.b
+80A00818 fmopab za0.h, {z0.h-z1.h}, z0.b, z22.b
+80A00C18 fmopab za0.h, {z0.h-z1.h}, z0.b, z23.b
+80A00418 fmopab za0.h, {z0.h-z1.h}, z0.b, z21.b
+80A01018 fmopab za0.h, {z0.h-z1.h}, z0.b, z28.b
+80A01418 fmopab za0.h, {z0.h-z1.h}, z0.b, z29.b
+80A01818 fmopab za0.h, {z0.h-z1.h}, z0.b, z30.b
+80A01C18 fmopab za0.h, {z0.h-z1.h}, z0.b, z31.b

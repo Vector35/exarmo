@@ -1,0 +1,26 @@
+// FCADD_asimdsame2_C 0|Q=x|U=1|0|111|0|size=xx|0|Rm=xxxxx|1|11|rot=x|0|1|Rn=xxxxx|Rd=xxxxx
+// FcaddAsimdsame2C: FCADD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>, #<rotate>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E47E437 fcadd v23.8h, v1.8h, v7.8h, #0x5a
+2E94E715 fcadd v21.2s, v24.2s, v20.2s, #0x5a
+2E90F7F8 fcadd v24.2s, v31.2s, v16.2s, #0x10e
+6EDEF7A0 fcadd v0.2d, v29.2d, v30.2d, #0x10e
+6EC9E490 fcadd v16.2d, v4.2d, v9.2d, #0x5a
+6EDAF58F fcadd v15.2d, v12.2d, v26.2d, #0x10e
+6ED0F70F fcadd v15.2d, v24.2d, v16.2d, #0x10e
+6E5EE7ED fcadd v13.8h, v31.8h, v30.8h, #0x5a
+6ED8F647 fcadd v7.2d, v18.2d, v24.2d, #0x10e
+6E84E564 fcadd v4.4s, v11.4s, v4.4s, #0x5a
+2E45E497 fcadd v23.4h, v4.4h, v5.4h, #0x5a
+6E9DF6F0 fcadd v16.4s, v23.4s, v29.4s, #0x10e
+6EC0E4A1 fcadd v1.2d, v5.2d, v0.2d, #0x5a
+2E41F717 fcadd v23.4h, v24.4h, v1.4h, #0x10e
+2E81F492 fcadd v18.2s, v4.2s, v1.2s, #0x10e
+2E8CE55B fcadd v27.2s, v10.2s, v12.2s, #0x5a
+6E5FE41F fcadd v31.8h, v0.8h, v31.8h, #0x5a
+6E07E437 UNDEFINED
+2E07E437 UNDEFINED
+2EC7E437 UNDEFINED
+6E47E4F7 fcadd v23.8h, v7.8h, v7.8h, #0x5a
+6E47E421 fcadd v1.8h, v1.8h, v7.8h, #0x5a

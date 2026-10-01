@@ -1,0 +1,100 @@
+// LDTADD_32_memop_unpriv 0|sz=0|011001|A=0|R=0|1|Rs=xxxxx|o3=0|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Ldtadd32MemopUnpriv: LDTADD  <Ws>, <Wt>, [<Xn|SP>]
+// SttaddLdtadd32MemopUnpriv: STTADD  <Ws>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+19200400 ldtadd w0, w0, [x0]
+19200407 ldtadd w0, w7, [x0]
+1920040E ldtadd w0, w14, [x0]
+1920043F sttadd w0, [x1]
+1920051F sttadd w0, [x8]
+192005FF sttadd w0, [x15]
+193F07E0 ldtadd wzr, w0, [sp]
+1920042F ldtadd w0, w15, [x1]
+
+// LDTADD_64_memop_unpriv 0|sz=1|011001|A=0|R=0|1|Rs=xxxxx|o3=0|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Ldtadd64MemopUnpriv: LDTADD  <Xs>, <Xt>, [<Xn|SP>]
+// SttaddLdtadd64MemopUnpriv: STTADD  <Xs>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+59200406 ldtadd x0, x6, [x0]
+5920040D ldtadd x0, x13, [x0]
+59200414 ldtadd x0, x20, [x0]
+592004DF sttadd x0, [x6]
+592005BF sttadd x0, [x13]
+5920069F sttadd x0, [x20]
+593F07E0 ldtadd xzr, x0, [sp]
+59200400 ldtadd x0, x0, [x0]
+592004CF ldtadd x0, x15, [x6]
+
+// LDTADDA_32_memop_unpriv 0|sz=0|011001|A=1|R=0|1|Rs=xxxxx|o3=0|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Ldtadda32MemopUnpriv: LDTADDA  <Ws>, <Wt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19A00403 ldtadda w0, w3, [x0]
+19A0040A ldtadda w0, w10, [x0]
+19A00411 ldtadda w0, w17, [x0]
+19BF07E0 ldtadda wzr, w0, [sp]
+19A0041F ldtadda w0, wzr, [x0]
+19A00400 ldtadda w0, w0, [x0]
+19A10443 ldtadda w1, w3, [x2]
+
+// LDTADDA_64_memop_unpriv 0|sz=1|011001|A=1|R=0|1|Rs=xxxxx|o3=0|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Ldtadda64MemopUnpriv: LDTADDA  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+59A00402 ldtadda x0, x2, [x0]
+59A00409 ldtadda x0, x9, [x0]
+59A00410 ldtadda x0, x16, [x0]
+59BF07E0 ldtadda xzr, x0, [sp]
+59A0041F ldtadda x0, xzr, [x0]
+59A00400 ldtadda x0, x0, [x0]
+59A10443 ldtadda x1, x3, [x2]
+
+// LDTADDAL_32_memop_unpriv 0|sz=0|011001|A=1|R=1|1|Rs=xxxxx|o3=0|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Ldtaddal32MemopUnpriv: LDTADDAL  <Ws>, <Wt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19E00401 ldtaddal w0, w1, [x0]
+19E00408 ldtaddal w0, w8, [x0]
+19E0040F ldtaddal w0, w15, [x0]
+19FF07E0 ldtaddal wzr, w0, [sp]
+19E0041F ldtaddal w0, wzr, [x0]
+19E00400 ldtaddal w0, w0, [x0]
+19E10443 ldtaddal w1, w3, [x2]
+
+// LDTADDAL_64_memop_unpriv 0|sz=1|011001|A=1|R=1|1|Rs=xxxxx|o3=0|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Ldtaddal64MemopUnpriv: LDTADDAL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+59E00400 ldtaddal x0, x0, [x0]
+59E00407 ldtaddal x0, x7, [x0]
+59E0040E ldtaddal x0, x14, [x0]
+59FF07FF ldtaddal xzr, xzr, [sp]
+59E10443 ldtaddal x1, x3, [x2]
+
+// LDTADDL_32_memop_unpriv 0|sz=0|011001|A=0|R=1|1|Rs=xxxxx|o3=0|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Ldtaddl32MemopUnpriv: LDTADDL  <Ws>, <Wt>, [<Xn|SP>]
+// SttaddlLdtaddl32MemopUnpriv: STTADDL  <Ws>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+19600405 ldtaddl w0, w5, [x0]
+1960040C ldtaddl w0, w12, [x0]
+19600413 ldtaddl w0, w19, [x0]
+1960049F sttaddl w0, [x4]
+1960057F sttaddl w0, [x11]
+1960065F sttaddl w0, [x18]
+197F07E0 ldtaddl wzr, w0, [sp]
+19600400 ldtaddl w0, w0, [x0]
+1960048F ldtaddl w0, w15, [x4]
+
+// LDTADDL_64_memop_unpriv 0|sz=1|011001|A=0|R=1|1|Rs=xxxxx|o3=0|opc=000|01|Rn=xxxxx|Rt=xxxxx
+// Ldtaddl64MemopUnpriv: LDTADDL  <Xs>, <Xt>, [<Xn|SP>]
+// SttaddlLdtaddl64MemopUnpriv: STTADDL  <Xs>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+59600404 ldtaddl x0, x4, [x0]
+5960040B ldtaddl x0, x11, [x0]
+59600412 ldtaddl x0, x18, [x0]
+5960045F sttaddl x0, [x2]
+5960053F sttaddl x0, [x9]
+5960061F sttaddl x0, [x16]
+597F07E0 ldtaddl xzr, x0, [sp]
+59600400 ldtaddl x0, x0, [x0]
+5960044F ldtaddl x0, x15, [x2]

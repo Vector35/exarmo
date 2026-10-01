@@ -1,0 +1,66 @@
+// FRINTA_D_floatdp1 M=0|0|S=0|11110|ftype=01|1001|rmode=100|10000|Rn=xxxxx|Rd=xxxxx
+// FrintaDFloatdp1: FRINTA  <Dd>, <Dn>
+// register fields: Rn, Rd
+1E664363 frinta d3, d27
+1E6641B6 frinta d22, d13
+1E66431B frinta d27, d24
+1E6643C7 frinta d7, d30
+1E6640F5 frinta d21, d7
+1E66425E frinta d30, d18
+1E664378 frinta d24, d27
+1E664279 frinta d25, d19
+1E6642BD frinta d29, d21
+1E66414B frinta d11, d10
+1E66416A frinta d10, d11
+1E6641EE frinta d14, d15
+1E664011 frinta d17, d0
+1E664128 frinta d8, d9
+1E664211 frinta d17, d16
+1E6642F2 frinta d18, d23
+1E6643E0 frinta d0, d31
+1E66437F frinta d31, d27
+1E66437B frinta d27, d27
+
+// FRINTA_H_floatdp1 M=0|0|S=0|11110|ftype=11|1001|rmode=100|10000|Rn=xxxxx|Rd=xxxxx
+// FrintaHFloatdp1: FRINTA  <Hd>, <Hn>
+// register fields: Rn, Rd
+1EE6436C frinta h12, h27
+1EE641A4 frinta h4, h13
+1EE64150 frinta h16, h10
+1EE640D8 frinta h24, h6
+1EE64075 frinta h21, h3
+1EE64313 frinta h19, h24
+1EE641FA frinta h26, h15
+1EE64329 frinta h9, h25
+1EE64022 frinta h2, h1
+1EE6416D frinta h13, h11
+1EE6430C frinta h12, h24
+1EE64050 frinta h16, h2
+1EE64002 frinta h2, h0
+1EE640E8 frinta h8, h7
+1EE641F7 frinta h23, h15
+1EE6412F frinta h15, h9
+1EE643E0 frinta h0, h31
+1EE6437F frinta h31, h27
+1EE6437B frinta h27, h27
+
+// FRINTA_S_floatdp1 M=0|0|S=0|11110|ftype=00|1001|rmode=100|10000|Rn=xxxxx|Rd=xxxxx
+// FrintaSFloatdp1: FRINTA  <Sd>, <Sn>
+// register fields: Rn, Rd
+1E26401C frinta s28, s0
+1E264057 frinta s23, s2
+1E2643B8 frinta s24, s29
+1E26425B frinta s27, s18
+1E26415B frinta s27, s10
+1E26427B frinta s27, s19
+1E26429E frinta s30, s20
+1E26417F frinta s31, s11
+1E2643A7 frinta s7, s29
+1E264073 frinta s19, s3
+1E264178 frinta s24, s11
+1E2640F9 frinta s25, s7
+1E2642E6 frinta s6, s23
+1E2640EC frinta s12, s7
+1E26409A frinta s26, s4
+1E2643E1 frinta s1, s31
+1E264000 frinta s0, s0

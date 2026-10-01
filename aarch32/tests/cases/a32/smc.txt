@@ -1,0 +1,19 @@
+// SMC_A1_AS cond=xxxx|00|010|opc=11|0|imm12=(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)|0|111|imm4=xxxx
+// SmcA1As: SMC{<c>}{<q>}  {#}<imm4>
+// Binary Ninja's tests
+01600070 smceq #0
+e160007f smc #15
+F1600070 UNALLOCATED
+816FFF78 smchi #0x8 (unpredictable)
+41680074 smcmi #0x4 (unpredictable)
+21640072 smccs #0x2 (unpredictable)
+11620071 smcne #0x1 (unpredictable)
+01610070 smceq #0x0 (unpredictable)
+01608070 smceq #0x0 (unpredictable)
+01604070 smceq #0x0 (unpredictable)
+01602070 smceq #0x0 (unpredictable)
+01601070 smceq #0x0 (unpredictable)
+01600870 smceq #0x0 (unpredictable)
+01600470 smceq #0x0 (unpredictable)
+01600270 smceq #0x0 (unpredictable)
+01600170 smceq #0x0 (unpredictable)

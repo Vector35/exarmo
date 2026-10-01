@@ -1,0 +1,40 @@
+// SMMLS_A1 cond=xxxx|01110|op1=101|Rd=xxxx|Ra=xxxx|Rm=xxxx|11|R=0|1|Rn=xxxx
+// SmmlsA1: SMMLS{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+275004dc smmlshs r0, r12, r4, r0
+5759aedb smmlspl r9, r11, lr, r10
+c7549bd5 smmlsgt r4, r5, r11, r9
+a756bfdd smmlsge r6, sp, pc, r11 (unpredictable)
+375f0cd4 smmlslo pc, r4, r12, r0 (unpredictable)
+575ac3d4 smmlspl r10, r4, r3, r12
+17548cd3 smmlsne r4, r3, r12, r8
+27544ad7 smmlshs r4, r7, r10, r4
+// Binary Ninja's tests
+375143d2 smmlslo r1, r2, r3, r4
+e75143d2 smmls r1, r2, r3, r4
+0750F0D0 smmlseq r0, r0, r0, pc (unpredictable)
+F75004DC UNALLOCATED
+875000DF smmlshi r0, pc, r0, r0 (unpredictable)
+475000D0 smmlsmi r0, r0, r0, r0
+275004D0 smmlscs r0, r0, r4, r0
+275004D4 smmlscs r0, r4, r4, r0
+
+// SMMLSR_A1 cond=xxxx|01110|op1=101|Rd=xxxx|Ra=xxxx|Rm=xxxx|11|R=1|1|Rn=xxxx
+// SmmlsrA1: SMMLSR{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+b755ccf4 smmlsrlt r5, r4, r12, r12
+c757f9f3 smmlsrgt r7, r3, r9, pc (unpredictable)
+875269f0 smmlsrhi r2, r0, r9, r6
+175c74f2 smmlsrne r12, r2, r4, r7
+e75133fa smmlsr r1, r10, r3, r3
+37506cf4 smmlsrlo r0, r4, r12, r6
+975a00ff smmlsrls r10, pc, r0, r0 (unpredictable)
+075896f5 smmlsreq r8, r5, r6, r9
+// Binary Ninja's tests
+275412f3 smmlsrhs r4, r3, r2, r1
+e75412f3 smmlsr r4, r3, r2, r1
+F755CCF4 UNALLOCATED
+475FCFFC smmlsrmi pc, r12, pc, r12 (unpredictable)
+B7555CFC smmlsrlt r5, r12, r12, r5
+B755C5F4 smmlsrlt r5, r4, r5, r12
+B755CCF5 smmlsrlt r5, r5, r12, r12

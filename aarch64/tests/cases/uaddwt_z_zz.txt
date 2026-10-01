@@ -1,0 +1,16 @@
+// uaddwt_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|10|S=0|U=1|T=1|Zn=xxxxx|Zd=xxxxx
+// UaddwtZZz: UADDWT  <Zd>.<T>, <Zn>.<T>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+459E4D8E uaddwt z14.s, z12.s, z30.h
+45DF4EAB uaddwt z11.d, z21.d, z31.s
+45CC4CD3 uaddwt z19.d, z6.d, z12.s
+45964F0D uaddwt z13.s, z24.s, z22.h
+45DF4C60 uaddwt z0.d, z3.d, z31.s
+459C4FA8 uaddwt z8.s, z29.s, z28.h
+458F4E06 uaddwt z6.s, z16.s, z15.h
+459F4C7B uaddwt z27.s, z3.s, z31.h
+45404C1F uaddwt z31.h, z0.h, z0.b
+459E4FEE uaddwt z14.s, z31.s, z30.h
+451E4D8E UNDEFINED
+459E4D9E uaddwt z30.s, z12.s, z30.h
+459E4D8C uaddwt z12.s, z12.s, z30.h

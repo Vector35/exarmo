@@ -1,0 +1,14 @@
+// STL_A1 cond=xxxx|00|01|1|size=00|L=0|Rn=xxxx|xRd=(1)(1)(1)(1)|(1)(1)|ex=0|ord=0|1|00|1|Rt=xxxx
+// StlA1: STL{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// Binary Ninja's tests
+e180fc93 stl r3, [r0]
+e181fc94 stl r4, [r1]
+e182fc95 stl r5, [r2]
+e183fc96 stl r6, [r3]
+018F0090 stleq r0, [pc] (unpredictable)
+F180FC93 UNALLOCATED
+8180849F stlhi pc, [r0] (unpredictable)
+41804890 stlmi r0, [r0] (unpredictable)
+21802C93 stlcs r3, [r0] (unpredictable)
+11801C93 stlne r3, [r0] (unpredictable)

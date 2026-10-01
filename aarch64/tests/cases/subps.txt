@@ -1,0 +1,40 @@
+// SUBPS_64S_dp_2src sf=1|0|S=1|1|101|0110|Rm=xxxxx|opcode=000000|Rn=xxxxx|Rd=xxxxx
+// Subps64sDp2src: SUBPS  <Xd>, <Xn|SP>, <Xm|SP>
+// CmppSubps64sDp2src: CMPP  <Xn|SP>, <Xm|SP>
+// register fields: Rm, Rn, Rd
+// form chosen on: Rd
+BAC202FF cmpp x23, x2
+BAD1005F cmpp x2, x17
+BAD6009F cmpp x4, x22
+BAC6015F cmpp x10, x6
+BADF029F cmpp x20, sp
+BADE011F cmpp x8, lr
+BAC602BF cmpp x21, x6
+BAC3003F cmpp x1, x3
+BACB005F cmpp x2, x11
+BAD3029F cmpp x20, x19
+BAD5005F cmpp x2, x21
+BAC8007F cmpp x3, x8
+BACC00BF cmpp x5, x12
+BAD902BF cmpp x21, x25
+BAD103DF cmpp lr, x17
+BACA023F cmpp x17, x10
+BAD601FA subps x26, x15, x22
+BAD102FD subps fp, x23, x17
+BAC202CB subps x11, x22, x2
+BAD40054 subps x20, x2, x20
+BADF02E4 subps x4, x23, sp
+BACA02FC subps x28, x23, x10
+BAD500B9 subps x25, x5, x21
+BAC30084 subps x4, x4, x3
+BAC50032 subps x18, x1, x5
+BACD0187 subps x7, x12, x13
+BAD303FA subps x26, sp, x19
+BAD101A6 subps x6, x13, x17
+BAC60137 subps x23, x9, x6
+BAC403F9 subps x25, sp, x4
+BAC101C5 subps x5, x14, x1
+BAC00399 subps x25, x28, x0
+BAC20000 subps x0, x0, x2
+BAC2005F cmpp x2, x2
+BAC2004F subps x15, x2, x2

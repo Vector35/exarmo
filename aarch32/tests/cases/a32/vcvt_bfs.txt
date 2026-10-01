@@ -1,0 +1,18 @@
+// VCVT_bfs_A1 1111|0|01|1|1|D=x|11|size=01|opc1=10|Vd=xxxx|0|opc2=1100|Q=1|M=x|0|Vm=xxxx
+// VcvtBfsA1: VCVT{<c>}{<q>}.BF16.F32  <Dd>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+f3b61642 vcvt.bf16.f32 d1, q1
+f3f61664 vcvt.bf16.f32 d17, q10
+F3B60640 vcvt.bf16.f32 d0, q0
+F3B6F648 vcvt.bf16.f32 d15, q4
+F3B68640 vcvt.bf16.f32 d8, q0
+F3B64660 vcvt.bf16.f32 d4, q8
+F3B62642 vcvt.bf16.f32 d2, q1
+F3B6164F UNDEFINED
+F3B61641 UNDEFINED
+F3B60642 vcvt.bf16.f32 d0, q1
+F3B6F642 vcvt.bf16.f32 d15, q1
+F3F60642 vcvt.bf16.f32 d16, q1
+F3F6F642 vcvt.bf16.f32 d31, q1
+F3B6166F UNDEFINED

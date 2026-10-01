@@ -1,0 +1,18 @@
+// CLREX_BN_barriers 110|101|01000000110011|CRm=xxxx|op2=010|Rt=11111
+// ClrexBnBarriers: CLREX  {#<imm>}
+D5033E5F clrex #0xe
+D503315F clrex #0x1
+D5033B5F clrex #0xb
+D503325F clrex #0x2
+D503335F clrex #0x3
+D503375F clrex #0x7
+D5033D5F clrex #0xd
+D5033C5F clrex #0xc
+D503365F clrex #0x6
+D503355F clrex #0x5
+D503305F clrex #0x0
+D503395F clrex #0x9
+D5033A5F clrex #0xa
+D503345F clrex #0x4
+D5033F5F clrex
+D503385F clrex #0x8

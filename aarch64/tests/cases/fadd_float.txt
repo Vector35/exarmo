@@ -1,0 +1,67 @@
+// FADD_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|001|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FaddDFloatdp2: FADD  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E72293E fadd d30, d9, d18
+1E7929F7 fadd d23, d15, d25
+1E6429CA fadd d10, d14, d4
+1E6A2984 fadd d4, d12, d10
+1E7D2B72 fadd d18, d27, d29
+1E742915 fadd d21, d8, d20
+1E6528FB fadd d27, d7, d5
+1E672930 fadd d16, d9, d7
+1E662A40 fadd d0, d18, d6
+1E7828A7 fadd d7, d5, d24
+1E71298B fadd d11, d12, d17
+1E692A73 fadd d19, d19, d9
+1E682912 fadd d18, d8, d8
+1E692BCC fadd d12, d30, d9
+1E7C294A fadd d10, d10, d28
+1E6F2941 fadd d1, d10, d15
+1E60281F fadd d31, d0, d0
+1E7F2BFE fadd d30, d31, d31
+1E722932 fadd d18, d9, d18
+
+// FADD_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|001|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FaddHFloatdp2: FADD  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EED2AF8 fadd h24, h23, h13
+1EFE2831 fadd h17, h1, h30
+1EFA2804 fadd h4, h0, h26
+1EE22B99 fadd h25, h28, h2
+1EE02B80 fadd h0, h28, h0
+1EF92B08 fadd h8, h24, h25
+1EEA292D fadd h13, h9, h10
+1EF628CE fadd h14, h6, h22
+1EE42874 fadd h20, h3, h4
+1EFD2BD3 fadd h19, h30, h29
+1EF92836 fadd h22, h1, h25
+1EF42B74 fadd h20, h27, h20
+1EE529E5 fadd h5, h15, h5
+1EF2295F fadd h31, h10, h18
+1EF22AAD fadd h13, h21, h18
+1EFD29B8 fadd h24, h13, h29
+1EFF2BF8 fadd h24, h31, h31
+1EED2AF7 fadd h23, h23, h13
+
+// FADD_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|001|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FaddSFloatdp2: FADD  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E3F2A72 fadd s18, s19, s31
+1E2E285E fadd s30, s2, s14
+1E202AD9 fadd s25, s22, s0
+1E272BAF fadd s15, s29, s7
+1E3C2A70 fadd s16, s19, s28
+1E3D28F2 fadd s18, s7, s29
+1E3A2909 fadd s9, s8, s26
+1E2C2892 fadd s18, s4, s12
+1E2529AA fadd s10, s13, s5
+1E362BE2 fadd s2, s31, s22
+1E282860 fadd s0, s3, s8
+1E21289A fadd s26, s4, s1
+1E242977 fadd s23, s11, s4
+1E292B96 fadd s22, s28, s9
+1E292980 fadd s0, s12, s9
+1E282822 fadd s2, s1, s8
+1E3F281F fadd s31, s0, s31
+1E3F2BF2 fadd s18, s31, s31
+1E3F2A73 fadd s19, s19, s31

@@ -1,0 +1,24 @@
+// fmad_z_p_zzz_ 011|0010|1|size=xx|1|Za=xxxxx|1|N=0|op=0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FmadZPZzz: FMAD  <Zdn>.<T>, <Pg>/M, <Zm>.<T>, <Za>.<T>
+// register fields: Za, Pg, Zm, Zdn
+65F29337 fmad z23.d, p4/m, z25.d, z18.d
+65AB885E fmad z30.s, p2/m, z2.s, z11.s
+65678690 fmad z16.h, p1/m, z20.h, z7.h
+657A8EBF fmad z31.h, p3/m, z21.h, z26.h
+65B1820D fmad z13.s, p0/m, z16.s, z17.s
+6570841E fmad z30.h, p1/m, z0.h, z16.h
+65EA9965 fmad z5.d, p6/m, z11.d, z10.d
+657A81F1 fmad z17.h, p0/m, z15.h, z26.h
+65F39A45 fmad z5.d, p6/m, z18.d, z19.d
+656896DE fmad z30.h, p5/m, z22.h, z8.h
+657A8293 fmad z19.h, p0/m, z20.h, z26.h
+65A39479 fmad z25.s, p5/m, z3.s, z3.s
+65748E7E fmad z30.h, p3/m, z19.h, z20.h
+65E18DFF fmad z31.d, p3/m, z15.d, z1.d
+65ED84EF fmad z15.d, p1/m, z7.d, z13.d
+65E59402 fmad z2.d, p5/m, z0.d, z5.d
+65E09FE0 fmad z0.d, p7/m, z31.d, z0.d
+65FF9337 fmad z23.d, p4/m, z25.d, z31.d
+65329337 UNDEFINED
+65F29324 fmad z4.d, p4/m, z25.d, z18.d
+65F29339 fmad z25.d, p4/m, z25.d, z18.d

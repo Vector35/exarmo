@@ -1,0 +1,24 @@
+// STRBT_T1 111|1100|00|size=00|L=0|Rn=xxxx|Rt=xxxx|1110|imm8=xxxxxxxx
+// StrbtT1: STRBT{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f804fee1 strbt pc, [r4, #225] (unpredictable)
+f8073e47 strbt r3, [r7, #71]
+f804ae5c strbt r10, [r4, #92]
+f8097e85 strbt r7, [r9, #133]
+f808aefa strbt r10, [r8, #250]
+f800fe3f strbt pc, [r0, #63] (unpredictable)
+f8064e44 strbt r4, [r6, #68]
+f80dfe58 strbt pc, [sp, #88] (unpredictable)
+F80FFEE1 UNALLOCATED
+F8040E00 strbt r0, [r4]
+F8044EFF strbt r4, [r4, #0xff]
+F804FE80 strbt pc, [r4, #0x80] (unpredictable)
+F804FE40 strbt pc, [r4, #0x40] (unpredictable)
+F804FE20 strbt pc, [r4, #0x20] (unpredictable)
+F804FE10 strbt pc, [r4, #0x10] (unpredictable)
+F804FE08 strbt pc, [r4, #0x8] (unpredictable)
+F804FE04 strbt pc, [r4, #0x4] (unpredictable)
+F804FE02 strbt pc, [r4, #0x2] (unpredictable)
+F804FE01 strbt pc, [r4, #0x1] (unpredictable)
+F804FEE1 [ne] strbtne pc, [r4, #0xe1] (unpredictable)

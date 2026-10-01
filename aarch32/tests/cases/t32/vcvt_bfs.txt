@@ -1,0 +1,22 @@
+// VCVT_bfs_T1 111|1|11|11|1|D=x|11|size=01|opc1=10|Vd=xxxx|0|opc2=1100|Q=1|M=x|0|Vm=xxxx
+// VcvtBfsT1: VCVT{<c>}{<q>}.BF16.F32  <Dd>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb6564a vcvt.bf16.f32 d5, q5
+fff6664e vcvt.bf16.f32 d22, q7
+fff6c66c vcvt.bf16.f32 d28, q14
+FFB60640 vcvt.bf16.f32 d0, q0
+FFB6F648 vcvt.bf16.f32 d15, q4
+FFB68644 vcvt.bf16.f32 d8, q2
+FFB64642 vcvt.bf16.f32 d4, q1
+FFB62640 vcvt.bf16.f32 d2, q0
+FFB61660 vcvt.bf16.f32 d1, q8
+FFB6564F UNDEFINED
+FFB65641 UNDEFINED
+FFB6064A vcvt.bf16.f32 d0, q5
+FFB6F64A vcvt.bf16.f32 d15, q5
+FFF6064A vcvt.bf16.f32 d16, q5
+FFF6F64A vcvt.bf16.f32 d31, q5
+FFB6566F UNDEFINED
+FFB6564A [ne] vcvtne.bf16.f32 d5, q5

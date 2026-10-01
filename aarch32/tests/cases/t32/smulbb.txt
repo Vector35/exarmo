@@ -1,0 +1,68 @@
+// SMULBB_T1 111110110|op1=001|Rn=xxxx|Ra=1111|Rd=xxxx|00|N=0|M=0|Rm=xxxx
+// SmulbbT1: SMULBB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb13f104 smulbb r1, r3, r4
+fb16f906 smulbb r9, r6, r6
+fb13f403 smulbb r4, r3, r3
+fb17f600 smulbb r6, r7, r0
+fb11f502 smulbb r5, r1, r2
+fb19f005 smulbb r0, r9, r5
+fb18ff05 smulbb pc, r8, r5 (unpredictable)
+fb15fa02 smulbb r10, r5, r2
+FB10F10F smulbb r1, r0, pc (unpredictable)
+FB1FF101 smulbb r1, pc, r1 (unpredictable)
+FB13F304 smulbb r3, r3, r4
+FB13F104 [ne] smulbbne r1, r3, r4
+
+// SMULBT_T1 111110110|op1=001|Rn=xxxx|Ra=1111|Rd=xxxx|00|N=0|M=1|Rm=xxxx
+// SmulbtT1: SMULBT{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb11fb15 smulbt r11, r1, r5
+fb14fe18 smulbt lr, r4, r8
+fb1bf01e smulbt r0, r11, lr
+fb14f613 smulbt r6, r4, r3
+fb16fe16 smulbt lr, r6, r6
+fb1eff19 smulbt pc, lr, r9 (unpredictable)
+fb12f21f smulbt r2, r2, pc (unpredictable)
+fb15f211 smulbt r2, r5, r1
+FB10FB10 smulbt r11, r0, r0
+FB1FFB1B smulbt r11, pc, r11 (unpredictable)
+FB11FB15 [ne] smulbtne r11, r1, r5
+
+// SMULTB_T1 111110110|op1=001|Rn=xxxx|Ra=1111|Rd=xxxx|00|N=1|M=0|Rm=xxxx
+// SmultbT1: SMULTB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb10ff2c smultb pc, r0, r12 (unpredictable)
+fb18f92a smultb r9, r8, r10
+fb1df922 smultb r9, sp, r2
+fb1bf72e smultb r7, r11, lr
+fb1bf62b smultb r6, r11, r11
+fb19fe2d smultb lr, r9, sp
+fb1df621 smultb r6, sp, r1
+fb1ffe2b smultb lr, pc, r11 (unpredictable)
+FB10F020 smultb r0, r0, r0
+FB10F02F smultb r0, r0, pc (unpredictable)
+FB10FF2F smultb pc, r0, pc (unpredictable)
+FB10FF2C [ne] smultbne pc, r0, r12 (unpredictable)
+
+// SMULTT_T1 111110110|op1=001|Rn=xxxx|Ra=1111|Rd=xxxx|00|N=1|M=1|Rm=xxxx
+// SmulttT1: SMULTT{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb1cf731 smultt r7, r12, r1
+fb1ff836 smultt r8, pc, r6 (unpredictable)
+fb16f13e smultt r1, r6, lr
+fb1afe3c smultt lr, r10, r12
+fb11f532 smultt r5, r1, r2
+fb10fd39 smultt sp, r0, r9
+fb1df33b smultt r3, sp, r11
+fb11f236 smultt r2, r1, r6
+FB1CF030 smultt r0, r12, r0
+FB1CFF3F smultt pc, r12, pc (unpredictable)
+FB1CFC31 smultt r12, r12, r1
+FB1CF73C smultt r7, r12, r12
+FB1CF737 smultt r7, r12, r7
+FB1CF731 [ne] smulttne r7, r12, r1

@@ -1,0 +1,39 @@
+// TBB_T1 1110100|op0=0110|1|Rn=xxxx|(1)(1)(1)(1)(0)(0)(0)(0)000|H=0|Rm=xxxx
+// TbbT1: TBB{<c>}{<q>}  [<Rn>, <Rm>]
+// register fields: Rn, Rm
+// IT state read: condition, last in block
+E8D00000 tbb [r0, r0] (unpredictable)
+E8DFFF0F tbb [pc, pc] (unpredictable)
+E8D08000 tbb [r0, r0] (unpredictable)
+E8D04000 tbb [r0, r0] (unpredictable)
+E8D02000 tbb [r0, r0] (unpredictable)
+E8D01000 tbb [r0, r0] (unpredictable)
+E8D00800 tbb [r0, r0] (unpredictable)
+E8D00400 tbb [r0, r0] (unpredictable)
+E8D00200 tbb [r0, r0] (unpredictable)
+E8D00100 tbb [r0, r0] (unpredictable)
+E8D00000 [ne] tbbne [r0, r0] (unpredictable)
+E8D00000 [ne last] tbbne [r0, r0] (unpredictable)
+E8D0F000 tbb [r0, r0]
+E8D00F00 tbb [r0, r0] (unpredictable)
+E8D1F002 tbb [r1, r2]
+
+// TBH_T1 1110100|op0=0110|1|Rn=xxxx|(1)(1)(1)(1)(0)(0)(0)(0)000|H=1|Rm=xxxx
+// TbhT1: TBH{<c>}{<q>}  [<Rn>, <Rm>, LSL #1]
+// register fields: Rn, Rm
+// IT state read: condition, last in block
+E8D00010 tbh [r0, r0, lsl #0x1] (unpredictable)
+E8DFFF1F tbh [pc, pc, lsl #0x1] (unpredictable)
+E8D08010 tbh [r0, r0, lsl #0x1] (unpredictable)
+E8D04010 tbh [r0, r0, lsl #0x1] (unpredictable)
+E8D02010 tbh [r0, r0, lsl #0x1] (unpredictable)
+E8D01010 tbh [r0, r0, lsl #0x1] (unpredictable)
+E8D00810 tbh [r0, r0, lsl #0x1] (unpredictable)
+E8D00410 tbh [r0, r0, lsl #0x1] (unpredictable)
+E8D00210 tbh [r0, r0, lsl #0x1] (unpredictable)
+E8D00110 tbh [r0, r0, lsl #0x1] (unpredictable)
+E8D00010 [ne] tbhne [r0, r0, lsl #0x1] (unpredictable)
+E8D00010 [ne last] tbhne [r0, r0, lsl #0x1] (unpredictable)
+E8D0F010 tbh [r0, r0, lsl #0x1]
+E8D00F10 tbh [r0, r0, lsl #0x1] (unpredictable)
+E8D1F012 tbh [r1, r2, lsl #0x1]

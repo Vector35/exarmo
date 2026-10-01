@@ -1,0 +1,9 @@
+// LDAP1_asisdlso_D1 0|Q=x|00|1|1|0|10|L=1|R=0|0000|o2=1|opcode=100|S=0|size=01|Rn=xxxxx|Rt=xxxxx
+// Ldap1AsisdlsoD1: LDAP1  { <Vt>.D }[<index>], [<Xn|SP>]
+// register fields: Rn, Rt
+0D418401 ldap1 {v1.d}[0], [x0]
+0D418408 ldap1 {v8.d}[0], [x0]
+0D41840F ldap1 {v15.d}[0], [x0]
+4D4187E0 ldap1 {v0.d}[1], [sp]
+0D41841F ldap1 {v31.d}[0], [x0]
+0D418400 ldap1 {v0.d}[0], [x0]

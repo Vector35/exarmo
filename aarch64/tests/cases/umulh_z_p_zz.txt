@@ -1,0 +1,21 @@
+// umulh_z_p_zz_ 000|0010|0|size=xx|0|100|H=1|U=1|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UmulhZPZz: UMULH  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04931E53 umulh z19.s, p7/m, z19.s, z18.s
+045301C0 umulh z0.h, p0/m, z0.h, z14.h
+04D317F6 umulh z22.d, p5/m, z22.d, z31.d
+04930567 umulh z7.s, p1/m, z7.s, z11.s
+04D31F17 umulh z23.d, p7/m, z23.d, z24.d
+04D3190D umulh z13.d, p6/m, z13.d, z8.d
+04D31F5E umulh z30.d, p7/m, z30.d, z26.d
+04D3037A umulh z26.d, p0/m, z26.d, z27.d
+04131030 umulh z16.b, p4/m, z16.b, z1.b
+045304E5 umulh z5.h, p1/m, z5.h, z7.h
+049319DB umulh z27.s, p6/m, z27.s, z14.s
+04930849 umulh z9.s, p2/m, z9.s, z2.s
+04D3017E umulh z30.d, p0/m, z30.d, z11.d
+04D30ED0 umulh z16.d, p3/m, z16.d, z22.d
+0493036D umulh z13.s, p0/m, z13.s, z27.s
+04D30072 umulh z18.d, p0/m, z18.d, z3.d
+04931C1F umulh z31.s, p7/m, z31.s, z0.s
+04931E52 umulh z18.s, p7/m, z18.s, z18.s

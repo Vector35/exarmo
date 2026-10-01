@@ -1,0 +1,18 @@
+// ISB_BI_barriers 110|101|01000000110011|CRm=xxxx|1|opc=10|Rt=11111
+// IsbBiBarriers: ISB  {<option>|#<imm>}
+D50331DF isb #0x1
+D5033FDF isb
+D5033ADF isb #0xa
+D5033EDF isb #0xe
+D5033DDF isb #0xd
+D50339DF isb #0x9
+D50334DF isb #0x4
+D50335DF isb #0x5
+D50333DF isb #0x3
+D5033CDF isb #0xc
+D50336DF isb #0x6
+D50337DF isb #0x7
+D50330DF isb #0x0
+D50332DF isb #0x2
+D50338DF isb #0x8
+D5033BDF isb #0xb

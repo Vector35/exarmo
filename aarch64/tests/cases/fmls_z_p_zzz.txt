@@ -1,0 +1,24 @@
+// fmls_z_p_zzz_ 011|0010|1|size=xx|1|Zm=xxxxx|0|N=0|op=1|Pg=xxx|Zn=xxxxx|Zda=xxxxx
+// FmlsZPZzz: FMLS  <Zda>.<T>, <Pg>/M, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Pg, Zn, Zda
+65B826B4 fmls z20.s, p1/m, z21.s, z24.s
+65A22A23 fmls z3.s, p2/m, z17.s, z2.s
+6564249E fmls z30.h, p1/m, z4.h, z4.h
+65693CD0 fmls z16.h, p7/m, z6.h, z9.h
+65632570 fmls z16.h, p1/m, z11.h, z3.h
+65762545 fmls z5.h, p1/m, z10.h, z22.h
+656F2C1F fmls z31.h, p3/m, z0.h, z15.h
+657C254D fmls z13.h, p1/m, z10.h, z28.h
+65602FBE fmls z30.h, p3/m, z29.h, z0.h
+6575397C fmls z28.h, p6/m, z11.h, z21.h
+65EC3C30 fmls z16.d, p7/m, z1.d, z12.d
+65F238DB fmls z27.d, p6/m, z6.d, z18.d
+65BB3D32 fmls z18.s, p7/m, z9.s, z27.s
+65EA3DF7 fmls z23.d, p7/m, z15.d, z10.d
+65692D48 fmls z8.h, p3/m, z10.h, z9.h
+65632562 fmls z2.h, p1/m, z11.h, z3.h
+65BF23E0 fmls z0.s, p0/m, z31.s, z31.s
+65B832B4 fmls z20.s, p4/m, z21.s, z24.s
+65B836B4 fmls z20.s, p5/m, z21.s, z24.s
+65B826B8 fmls z24.s, p1/m, z21.s, z24.s
+65B826B5 fmls z21.s, p1/m, z21.s, z24.s

@@ -1,0 +1,11 @@
+// tbxq_z_zz_ 000|0010|1|size=xx|1|Zm=xxxxx|001101|Zn=xxxxx|Zd=xxxxx
+// TbxqZZz: TBXQ  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+05203403 tbxq z3.b, z0.b, z0.b
+0520340A tbxq z10.b, z0.b, z0.b
+05203411 tbxq z17.b, z0.b, z0.b
+057F37E0 tbxq z0.h, z31.h, z31.h
+05A0341F tbxq z31.s, z0.s, z0.s
+05E03403 tbxq z3.d, z0.d, z0.d
+05203400 tbxq z0.b, z0.b, z0.b
+05213443 tbxq z3.b, z2.b, z1.b

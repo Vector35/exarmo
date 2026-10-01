@@ -1,0 +1,28 @@
+// UABAL_asimddiff_L 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|01|op=0|1|00|Rn=xxxxx|Rd=xxxxx
+// UabalAsimddiffL: UABAL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// UabalAsimddiffL2: UABAL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+6E2C53D9 uabal2 v25.8h, v30.16b, v12.16b
+6E3851B8 uabal2 v24.8h, v13.16b, v24.16b
+2E24522E uabal v14.8h, v17.8b, v4.8b
+2E605112 uabal v18.4s, v8.4h, v0.4h
+6EA15032 uabal2 v18.2d, v1.4s, v1.4s
+6E7451E0 uabal2 v0.4s, v15.8h, v20.8h
+6E2951DD uabal2 v29.8h, v14.16b, v9.16b
+2E3252C7 uabal v7.8h, v22.8b, v18.8b
+6EBB5238 uabal2 v24.2d, v17.4s, v27.4s
+6E7F51F8 uabal2 v24.4s, v15.8h, v31.8h
+2E2D5024 uabal v4.8h, v1.8b, v13.8b
+2EB65325 uabal v5.2d, v25.2s, v22.2s
+6E3B5085 uabal2 v5.8h, v4.16b, v27.16b
+6E7E5162 uabal2 v2.4s, v11.8h, v30.8h
+6E3F522B uabal2 v11.8h, v17.16b, v31.16b
+2E365073 uabal v19.8h, v3.8b, v22.8b
+6E2C501F uabal2 v31.8h, v0.16b, v12.16b
+6E2C53F9 uabal2 v25.8h, v31.16b, v12.16b
+6EEC53D9 UNDEFINED
+2EEC53D9 UNDEFINED
+6E2C53DE uabal2 v30.8h, v30.16b, v12.16b
+6E24522E uabal2 v14.8h, v17.16b, v4.16b

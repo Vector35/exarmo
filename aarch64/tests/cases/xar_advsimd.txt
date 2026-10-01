@@ -1,0 +1,26 @@
+// XAR_VVV2_crypto3_imm6 1100|111|01|00|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// XarVvv2Crypto3Imm6: XAR  <Vd>.2D, <Vn>.2D, <Vm>.2D, #<imm6>
+// register fields: Rm, Rn, Rd
+CE8FCBA8 xar v8.2d, v29.2d, v15.2d, #0x32
+CE9AAD58 xar v24.2d, v10.2d, v26.2d, #0x2b
+CE854A23 xar v3.2d, v17.2d, v5.2d, #0x12
+CE852662 xar v2.2d, v19.2d, v5.2d, #0x9
+CE88A683 xar v3.2d, v20.2d, v8.2d, #0x29
+CE9E3210 xar v16.2d, v16.2d, v30.2d, #0xc
+CE9C03D8 xar v24.2d, v30.2d, v28.2d, #0x0
+CE89AD16 xar v22.2d, v8.2d, v9.2d, #0x2b
+CE9C6533 xar v19.2d, v9.2d, v28.2d, #0x19
+CE83FBDA xar v26.2d, v30.2d, v3.2d, #0x3e
+CE95AD1F xar v31.2d, v8.2d, v21.2d, #0x2b
+CE80BAE6 xar v6.2d, v23.2d, v0.2d, #0x2e
+CE81601B xar v27.2d, v0.2d, v1.2d, #0x18
+CE86C682 xar v2.2d, v20.2d, v6.2d, #0x31
+CE8A21E9 xar v9.2d, v15.2d, v10.2d, #0x8
+CE96A113 xar v19.2d, v8.2d, v22.2d, #0x28
+CE9FFFE0 xar v0.2d, v31.2d, v31.2d, #0x3f
+CE8FCBAF xar v15.2d, v29.2d, v15.2d, #0x32
+CE8F83A8 xar v8.2d, v29.2d, v15.2d, #0x20
+CE8F43A8 xar v8.2d, v29.2d, v15.2d, #0x10
+CE8F13A8 xar v8.2d, v29.2d, v15.2d, #0x4
+CE8F0BA8 xar v8.2d, v29.2d, v15.2d, #0x2
+CE8F07A8 xar v8.2d, v29.2d, v15.2d, #0x1

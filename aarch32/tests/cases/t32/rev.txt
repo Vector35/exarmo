@@ -1,0 +1,37 @@
+// REV_T1 1011|1010|op=00|Rm=xxx|Rd=xxx
+// RevT1: REV{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rm, Rd
+// IT state read: condition
+ba00 rev r0, r0
+ba01 rev r1, r0
+ba02 rev r2, r0
+ba03 rev r3, r0
+ba04 rev r4, r0
+ba05 rev r5, r0
+ba06 rev r6, r0
+ba07 rev r7, r0
+BA08 rev r0, r1
+BA10 rev r0, r2
+BA18 rev r0, r3
+BA20 rev r0, r4
+BA28 rev r0, r5
+BA30 rev r0, r6
+BA38 rev r0, r7
+BA00 [ne] revne r0, r0
+
+// REV_T2 111|11010|1|op1=001|Rn=xxxx|1111|Rd=xxxx|10|op2=00|Rm=xxxx
+// RevT2: REV{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rd, Rm
+// IT state read: condition
+fa9cf58a rev r5, r10 (unpredictable)
+fa9ff089 rev r0, r9 (unpredictable)
+fa97f58b rev r5, r11 (unpredictable)
+fa98f783 rev r7, r3 (unpredictable)
+fa97fc89 rev r12, r9 (unpredictable)
+fa96f386 rev r3, r6
+fa9ffd88 rev sp, r8 (unpredictable)
+fa92ff83 rev pc, r3 (unpredictable)
+FA90F580 rev r5, r0
+FA94F58F rev r5, pc (unpredictable)
+FA91F585 rev r5, r5 (unpredictable)
+FA9CF58A [ne] revne r5, r10 (unpredictable)

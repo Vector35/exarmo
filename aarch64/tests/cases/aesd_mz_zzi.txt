@@ -1,0 +1,23 @@
+// aesd_mz_zzi_2x1 010|0010|1|size=00|1|i2=xx|01|op=0|111|01|o2=1|Zm=xxxxx|Zdn=xxxx|o3=0
+// AesdMzZzi2x1: AESD  { <Zdn1>.B-<Zdn2>.B }, { <Zdn1>.B-<Zdn2>.B }, <Zm>.Q[<index>]
+// register fields: Zm, Zdn
+4522EC04 aesd {z4.b-z5.b}, {z4.b-z5.b}, z0.q[0]
+4522EC12 aesd {z18.b-z19.b}, {z18.b-z19.b}, z0.q[0]
+4522EC20 aesd {z0.b-z1.b}, {z0.b-z1.b}, z1.q[0]
+452AEFFE aesd {z30.b-z31.b}, {z30.b-z31.b}, z31.q[1]
+4532EC04 aesd {z4.b-z5.b}, {z4.b-z5.b}, z0.q[2]
+453AEC04 aesd {z4.b-z5.b}, {z4.b-z5.b}, z0.q[3]
+4522EC00 aesd {z0.b-z1.b}, {z0.b-z1.b}, z0.q[0]
+
+// aesd_mz_zzi_4x1 010|0010|1|size=00|1|i2=xx|11|op=0|111|01|o2=1|Zm=xxxxx|Zdn=xxx|opc3=00
+// AesdMzZzi4x1: AESD  { <Zdn1>.B-<Zdn4>.B }, { <Zdn1>.B-<Zdn4>.B }, <Zm>.Q[<index>]
+// register fields: Zm, Zdn
+4526EC18 aesd {z24.b-z27.b}, {z24.b-z27.b}, z0.q[0]
+4526EC34 aesd {z20.b-z23.b}, {z20.b-z23.b}, z1.q[0]
+4526EC50 aesd {z16.b-z19.b}, {z16.b-z19.b}, z2.q[0]
+452EEFE0 aesd {z0.b-z3.b}, {z0.b-z3.b}, z31.q[1]
+4536EC04 aesd {z4.b-z7.b}, {z4.b-z7.b}, z0.q[2]
+453EEC08 aesd {z8.b-z11.b}, {z8.b-z11.b}, z0.q[3]
+4526EC0C aesd {z12.b-z15.b}, {z12.b-z15.b}, z0.q[0]
+4526EC1C aesd {z28.b-z31.b}, {z28.b-z31.b}, z0.q[0]
+4526EC00 aesd {z0.b-z3.b}, {z0.b-z3.b}, z0.q[0]

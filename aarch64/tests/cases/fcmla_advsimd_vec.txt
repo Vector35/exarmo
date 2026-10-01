@@ -1,0 +1,27 @@
+// FCMLA_asimdsame2_C 0|Q=x|U=1|0|111|0|size=xx|0|Rm=xxxxx|1|10|rot=xx|1|Rn=xxxxx|Rd=xxxxx
+// FcmlaAsimdsame2C: FCMLA  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>, #<rotate>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E9FC449 fcmla v9.4s, v2.4s, v31.4s, #0x0
+2E90CED2 fcmla v18.2s, v22.2s, v16.2s, #0x5a
+2E47C5E2 fcmla v2.4h, v15.4h, v7.4h, #0x0
+2E81CD4D fcmla v13.2s, v10.2s, v1.2s, #0x5a
+6E41D5C0 fcmla v0.8h, v14.8h, v1.8h, #0xb4
+2E4ECF24 fcmla v4.4h, v25.4h, v14.4h, #0x5a
+6E4ED6C6 fcmla v6.8h, v22.8h, v14.8h, #0xb4
+2E48DF73 fcmla v19.4h, v27.4h, v8.4h, #0x10e
+6E82CDD1 fcmla v17.4s, v14.4s, v2.4s, #0x5a
+2E82D607 fcmla v7.2s, v16.2s, v2.2s, #0xb4
+2E86CC23 fcmla v3.2s, v1.2s, v6.2s, #0x5a
+2E8ADD63 fcmla v3.2s, v11.2s, v10.2s, #0x10e
+2E9BCD21 fcmla v1.2s, v9.2s, v27.2s, #0x5a
+6E4ED4F6 fcmla v22.8h, v7.8h, v14.8h, #0xb4
+2E81CE4D fcmla v13.2s, v18.2s, v1.2s, #0x5a
+2E9FDE01 fcmla v1.2s, v16.2s, v31.2s, #0x10e
+6EC0C41F fcmla v31.2d, v0.2d, v0.2d, #0x0
+6E9FC7E9 fcmla v9.4s, v31.4s, v31.4s, #0x0
+6E1FC449 UNDEFINED
+2E1FC449 UNDEFINED
+2EDFC449 UNDEFINED
+6E9FC45F fcmla v31.4s, v2.4s, v31.4s, #0x0
+6E9FC442 fcmla v2.4s, v2.4s, v31.4s, #0x0

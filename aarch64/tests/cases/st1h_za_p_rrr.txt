@@ -1,0 +1,17 @@
+// st1h_za_p_rrr_ 1|11|0000|0|msz=01|1|Rm=xxxxx|V=x|Rs=xx|Pg=xxx|Rn=xxxxx|0|ZAt=x|off3=xxx
+// St1hZaPRrr: ST1H  { <ZAt><HV>.H[<Ws>, <offs>] }, <Pg>, [<Xn|SP>{, <Xm>, LSL #1}]
+// register fields: Rm, Rs, Pg, Rn, ZAt
+E07CDD80 st1h {za0v.h[w14, 0]}, p7, [x12, x28, lsl #0x1]
+E062EB89 st1h {za1v.h[w15, 1]}, p2, [x28, x2, lsl #0x1]
+E06DF064 st1h {za0v.h[w15, 4]}, p4, [x3, x13, lsl #0x1]
+E06A170E st1h {za1h.h[w12, 6]}, p5, [x24, x10, lsl #0x1]
+E062B440 st1h {za0v.h[w13, 0]}, p5, [x2, x2, lsl #0x1]
+E07C9061 st1h {za0v.h[w12, 1]}, p4, [x3, x28, lsl #0x1]
+E0798B42 st1h {za0v.h[w12, 2]}, p2, [x26, x25, lsl #0x1]
+E07F0AA2 st1h {za0h.h[w12, 2]}, p2, [x21]
+E060C003 st1h {za0v.h[w14, 3]}, p0, [x0, x0, lsl #0x1]
+E07CC7E5 st1h {za0v.h[w14, 5]}, p1, [sp, x28, lsl #0x1]
+E07CCD87 st1h {za0v.h[w14, 7]}, p3, [x12, x28, lsl #0x1]
+E07CD980 st1h {za0v.h[w14, 0]}, p6, [x12, x28, lsl #0x1]
+E062DD80 st1h {za0v.h[w14, 0]}, p7, [x12, x2, lsl #0x1]
+E07CC980 st1h {za0v.h[w14, 0]}, p2, [x12, x28, lsl #0x1]

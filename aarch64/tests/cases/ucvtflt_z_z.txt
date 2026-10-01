@@ -1,0 +1,10 @@
+// ucvtflt_z_z_ 011|0010|1|size=xx|001|100|0011|1|U=1|Zn=xxxxx|Zd=xxxxx
+// UcvtfltZZ: UCVTFLT  <Zd>.<T>, <Zn>.<Tb>
+// register fields: Zn, Zd
+654C3C04 ucvtflt z4.h, z0.b
+654C3C0B ucvtflt z11.h, z0.b
+654C3C12 ucvtflt z18.h, z0.b
+658C3FE0 ucvtflt z0.s, z31.h
+65CC3C1F ucvtflt z31.d, z0.s
+650C3C04 UNDEFINED
+654C3C00 ucvtflt z0.h, z0.b

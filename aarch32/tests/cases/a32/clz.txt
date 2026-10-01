@@ -1,0 +1,12 @@
+// CLZ_A1 cond=xxxx|00|010|op0=11|0|(1)(1)(1)(1)|Rd=xxxx|(1)(1)(1)(1)|0|001|Rm=xxxx
+// ClzA1: CLZ{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rd, Rm
+// Binary Ninja's tests
+016f1f12 clzeq r1, r2
+e16f1f12 clz r1, r2
+F16F1F12 UNALLOCATED
+81600010 clzhi r0, r0 (unpredictable)
+4168F81F clzmi pc, pc (unpredictable)
+21641411 clzcs r1, r1 (unpredictable)
+11621212 clzne r1, r2 (unpredictable)
+01611112 clzeq r1, r2 (unpredictable)

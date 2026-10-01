@@ -1,0 +1,128 @@
+// FCVTMS_32D_float2int sf=0|0|S=0|11110|ftype=01|1|rmode=10|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtms32dFloat2int: FCVTMS  <Wd>, <Dn>
+// register fields: Rn, Rd
+1E700221 fcvtms w1, d17
+1E7000E7 fcvtms w7, d7
+1E700202 fcvtms w2, d16
+1E7003A4 fcvtms w4, d29
+1E7002C2 fcvtms w2, d22
+1E700291 fcvtms w17, d20
+1E700229 fcvtms w9, d17
+1E700143 fcvtms w3, d10
+1E700255 fcvtms w21, d18
+1E700214 fcvtms w20, d16
+1E7003F3 fcvtms w19, d31
+1E700150 fcvtms w16, d10
+1E700091 fcvtms w17, d4
+1E700008 fcvtms w8, d0
+1E700169 fcvtms w9, d11
+1E70036A fcvtms w10, d27
+1E700220 fcvtms w0, d17
+1E70023F fcvtms wzr, d17
+
+// FCVTMS_32H_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=10|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtms32hFloat2int: FCVTMS  <Wd>, <Hn>
+// register fields: Rn, Rd
+1EF00169 fcvtms w9, h11
+1EF00287 fcvtms w7, h20
+1EF00139 fcvtms w25, h9
+1EF001C7 fcvtms w7, h14
+1EF0021B fcvtms w27, h16
+1EF00366 fcvtms w6, h27
+1EF00095 fcvtms w21, h4
+1EF0035B fcvtms w27, h26
+1EF0005D fcvtms w29, h2
+1EF000A6 fcvtms w6, h5
+1EF000AE fcvtms w14, h5
+1EF000E3 fcvtms w3, h7
+1EF0034D fcvtms w13, h26
+1EF00257 fcvtms w23, h18
+1EF003E9 fcvtms w9, h31
+1EF001FD fcvtms w29, h15
+1EF00000 fcvtms w0, h0
+1EF0017F fcvtms wzr, h11
+
+// FCVTMS_32S_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=10|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtms32sFloat2int: FCVTMS  <Wd>, <Sn>
+// register fields: Rn, Rd
+1E300393 fcvtms w19, s28
+1E300350 fcvtms w16, s26
+1E3000EB fcvtms w11, s7
+1E3001D7 fcvtms w23, s14
+1E30010B fcvtms w11, s8
+1E300039 fcvtms w25, s1
+1E3000D6 fcvtms w22, s6
+1E300382 fcvtms w2, s28
+1E300338 fcvtms w24, s25
+1E300378 fcvtms w24, s27
+1E3003F3 fcvtms w19, s31
+1E3001D9 fcvtms w25, s14
+1E30012C fcvtms w12, s9
+1E3000FB fcvtms w27, s7
+1E300220 fcvtms w0, s17
+1E3001F5 fcvtms w21, s15
+1E30001F fcvtms wzr, s0
+1E30039C fcvtms w28, s28
+
+// FCVTMS_64D_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=10|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtms64dFloat2int: FCVTMS  <Xd>, <Dn>
+// register fields: Rn, Rd
+9E7003D6 fcvtms x22, d30
+9E7002D6 fcvtms x22, d22
+9E700273 fcvtms x19, d19
+9E7000AC fcvtms x12, d5
+9E70025B fcvtms x27, d18
+9E700262 fcvtms x2, d19
+9E700209 fcvtms x9, d16
+9E700098 fcvtms x24, d4
+9E7002CC fcvtms x12, d22
+9E70035E fcvtms lr, d26
+9E70019E fcvtms lr, d12
+9E700193 fcvtms x19, d12
+9E70014B fcvtms x11, d10
+9E700171 fcvtms x17, d11
+9E700382 fcvtms x2, d28
+9E70017F fcvtms xzr, d11
+9E700000 fcvtms x0, d0
+9E7003F6 fcvtms x22, d31
+
+// FCVTMS_64H_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=10|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtms64hFloat2int: FCVTMS  <Xd>, <Hn>
+// register fields: Rn, Rd
+9EF003BD fcvtms fp, h29
+9EF001A0 fcvtms x0, h13
+9EF000D9 fcvtms x25, h6
+9EF00014 fcvtms x20, h0
+9EF003F8 fcvtms x24, h31
+9EF000D4 fcvtms x20, h6
+9EF00181 fcvtms x1, h12
+9EF00360 fcvtms x0, h27
+9EF00091 fcvtms x17, h4
+9EF002FF fcvtms xzr, h23
+9EF000CB fcvtms x11, h6
+9EF000C9 fcvtms x9, h6
+9EF0025D fcvtms fp, h18
+9EF00038 fcvtms x24, h1
+9EF000B4 fcvtms x20, h5
+9EF002C2 fcvtms x2, h22
+
+// FCVTMS_64S_float2int sf=1|0|S=0|11110|ftype=00|1|rmode=10|opcode=000|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtms64sFloat2int: FCVTMS  <Xd>, <Sn>
+// register fields: Rn, Rd
+9E30006D fcvtms x13, s3
+9E3001BE fcvtms lr, s13
+9E300234 fcvtms x20, s17
+9E3001E6 fcvtms x6, s15
+9E30033F fcvtms xzr, s25
+9E300294 fcvtms x20, s20
+9E30011C fcvtms x28, s8
+9E300006 fcvtms x6, s0
+9E3001FC fcvtms x28, s15
+9E3000F9 fcvtms x25, s7
+9E300289 fcvtms x9, s20
+9E30010C fcvtms x12, s8
+9E3002A1 fcvtms x1, s21
+9E300076 fcvtms x22, s3
+9E300074 fcvtms x20, s3
+9E3002BF fcvtms xzr, s21
+9E3003E0 fcvtms x0, s31

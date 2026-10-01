@@ -1,0 +1,19 @@
+// CTZ_32_dp_1src sf=0|1|S=0|11010110|opcode2=00000|opcode=000110|Rn=xxxxx|Rd=xxxxx
+// Ctz32Dp1src: CTZ  <Wd>, <Wn>
+// register fields: Rn, Rd
+5AC01804 ctz w4, w0
+5AC0180B ctz w11, w0
+5AC01812 ctz w18, w0
+5AC01BE0 ctz w0, wzr
+5AC0181F ctz wzr, w0
+5AC01800 ctz w0, w0
+
+// CTZ_64_dp_1src sf=1|1|S=0|11010110|opcode2=00000|opcode=000110|Rn=xxxxx|Rd=xxxxx
+// Ctz64Dp1src: CTZ  <Xd>, <Xn>
+// register fields: Rn, Rd
+DAC01802 ctz x2, x0
+DAC01809 ctz x9, x0
+DAC01810 ctz x16, x0
+DAC01BE0 ctz x0, xzr
+DAC0181F ctz xzr, x0
+DAC01800 ctz x0, x0

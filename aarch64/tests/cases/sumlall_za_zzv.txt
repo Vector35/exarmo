@@ -1,0 +1,21 @@
+// sumlall_za_zzv_s2x1 1|10|0000|10|sz=0|10|Zm=xxxx|0|Rv=xx|000|Zn=xxxxx|U=1|S=0|op=1|0|o1=x
+// SumlallZaZzvS2x1: SUMLALL  ZA.S[<Wv>, <offs1>:<offs4>{, VGx2}], { <Zn1>.B-<Zn2>.B }, <Zm>.B
+// register fields: Zm, Rv, Zn
+C1200095 sumlall za.s[w8, 4:7, vgx2], {z4.b-z5.b}, z0.b
+C12000D4 sumlall za.s[w8, 0:3, vgx2], {z6.b-z7.b}, z0.b
+C1200175 sumlall za.s[w8, 4:7, vgx2], {z11.b-z12.b}, z0.b
+C12F2015 sumlall za.s[w9, 4:7, vgx2], {z0.b-z1.b}, z15.b
+C12043F5 sumlall za.s[w10, 4:7, vgx2], {z31.b-z0.b}, z0.b
+C1206095 sumlall za.s[w11, 4:7, vgx2], {z4.b-z5.b}, z0.b
+C1200015 sumlall za.s[w8, 4:7, vgx2], {z0.b-z1.b}, z0.b
+
+// sumlall_za_zzv_s4x1 1|10|0000|10|sz=0|11|Zm=xxxx|0|Rv=xx|000|Zn=xxxxx|U=1|S=0|op=1|0|o1=x
+// SumlallZaZzvS4x1: SUMLALL  ZA.S[<Wv>, <offs1>:<offs4>{, VGx4}], { <Zn1>.B-<Zn4>.B }, <Zm>.B
+// register fields: Zm, Rv, Zn
+C1300075 sumlall za.s[w8, 4:7, vgx4], {z3.b-z6.b}, z0.b
+C13000B4 sumlall za.s[w8, 0:3, vgx4], {z5.b-z8.b}, z0.b
+C1300155 sumlall za.s[w8, 4:7, vgx4], {z10.b-z13.b}, z0.b
+C13F2015 sumlall za.s[w9, 4:7, vgx4], {z0.b-z3.b}, z15.b
+C13043F5 sumlall za.s[w10, 4:7, vgx4], {z31.b-z2.b}, z0.b
+C1306075 sumlall za.s[w11, 4:7, vgx4], {z3.b-z6.b}, z0.b
+C1300015 sumlall za.s[w8, 4:7, vgx4], {z0.b-z3.b}, z0.b

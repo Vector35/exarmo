@@ -1,0 +1,12 @@
+// LDREX_A1 cond=xxxx|00|01|1|size=00|L=1|Rn=xxxx|Rt=xxxx|(1)(1)|ex=1|ord=1|1|00|1|xRt=(1)(1)(1)(1)
+// LdrexA1: LDREX{<c>}{<q>}  <Rt>, [<Rn> {, {#}<imm>}]
+// register fields: Rn, Rt
+// Binary Ninja's tests
+e1965f9f ldrex r5, [r6]
+e1971f9f ldrex r1, [r7]
+01900390 ldrexeq r0, [r0] (unpredictable)
+F1965F9F UNALLOCATED
+819FF798 ldrexhi pc, [pc] (unpredictable)
+41966B94 ldrexmi r6, [r6] (unpredictable)
+21965F92 ldrexcs r5, [r6] (unpredictable)
+11965F91 ldrexne r5, [r6] (unpredictable)

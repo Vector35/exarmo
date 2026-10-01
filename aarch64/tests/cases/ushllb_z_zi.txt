@@ -1,0 +1,68 @@
+// ushllb_z_zi_ 010|0010|1|0|tszh=x|0|tszl=xx|imm3=xxx|10|10|U=1|T=0|Zn=xxxxx|Zd=xxxxx
+// UshllbZZi: USHLLB  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+4553ABF0 ushllb z16.d, z31.s, #0x13
+4554AAF3 ushllb z19.d, z23.s, #0x14
+454CA8DC ushllb z28.d, z6.s, #0xc
+455BAAF4 ushllb z20.d, z23.s, #0x1b
+450CA8B6 ushllb z22.h, z5.b, #0x4
+4549A8DF ushllb z31.d, z6.s, #0x9
+4552AB74 ushllb z20.d, z27.s, #0x12
+4514A9A6 ushllb z6.s, z13.h, #0x4
+4540A800 ushllb z0.d, z0.s, #0x0
+4555ABF0 ushllb z16.d, z31.s, #0x15
+4556ABF0 ushllb z16.d, z31.s, #0x16
+4557ABF0 ushllb z16.d, z31.s, #0x17
+4500ABF0 UNDEFINED
+4501ABF0 UNDEFINED
+4502ABF0 UNDEFINED
+4503ABF0 UNDEFINED
+4504ABF0 UNDEFINED
+4505ABF0 UNDEFINED
+4506ABF0 UNDEFINED
+4507ABF0 UNDEFINED
+4508ABF0 ushllb z16.h, z31.b, #0x0
+4509ABF0 ushllb z16.h, z31.b, #0x1
+450AABF0 ushllb z16.h, z31.b, #0x2
+450BABF0 ushllb z16.h, z31.b, #0x3
+450DABF0 ushllb z16.h, z31.b, #0x5
+450EABF0 ushllb z16.h, z31.b, #0x6
+450FABF0 ushllb z16.h, z31.b, #0x7
+4510ABF0 ushllb z16.s, z31.h, #0x0
+4511ABF0 ushllb z16.s, z31.h, #0x1
+4512ABF0 ushllb z16.s, z31.h, #0x2
+4513ABF0 ushllb z16.s, z31.h, #0x3
+4515ABF0 ushllb z16.s, z31.h, #0x5
+4516ABF0 ushllb z16.s, z31.h, #0x6
+4517ABF0 ushllb z16.s, z31.h, #0x7
+4518ABF0 ushllb z16.s, z31.h, #0x8
+4519ABF0 ushllb z16.s, z31.h, #0x9
+451AABF0 ushllb z16.s, z31.h, #0xa
+451BABF0 ushllb z16.s, z31.h, #0xb
+451CABF0 ushllb z16.s, z31.h, #0xc
+451DABF0 ushllb z16.s, z31.h, #0xd
+451EABF0 ushllb z16.s, z31.h, #0xe
+451FABF0 ushllb z16.s, z31.h, #0xf
+4541ABF0 ushllb z16.d, z31.s, #0x1
+4542ABF0 ushllb z16.d, z31.s, #0x2
+4543ABF0 ushllb z16.d, z31.s, #0x3
+4544ABF0 ushllb z16.d, z31.s, #0x4
+4545ABF0 ushllb z16.d, z31.s, #0x5
+4546ABF0 ushllb z16.d, z31.s, #0x6
+4547ABF0 ushllb z16.d, z31.s, #0x7
+4548ABF0 ushllb z16.d, z31.s, #0x8
+454AABF0 ushllb z16.d, z31.s, #0xa
+454BABF0 ushllb z16.d, z31.s, #0xb
+454DABF0 ushllb z16.d, z31.s, #0xd
+454EABF0 ushllb z16.d, z31.s, #0xe
+454FABF0 ushllb z16.d, z31.s, #0xf
+4550ABF0 ushllb z16.d, z31.s, #0x10
+4551ABF0 ushllb z16.d, z31.s, #0x11
+4558ABF0 ushllb z16.d, z31.s, #0x18
+4559ABF0 ushllb z16.d, z31.s, #0x19
+455AABF0 ushllb z16.d, z31.s, #0x1a
+455CABF0 ushllb z16.d, z31.s, #0x1c
+455DABF0 ushllb z16.d, z31.s, #0x1d
+455EABF0 ushllb z16.d, z31.s, #0x1e
+455FABF0 ushllb z16.d, z31.s, #0x1f

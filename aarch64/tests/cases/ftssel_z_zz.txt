@@ -1,0 +1,23 @@
+// ftssel_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|1011|0|op=0|Zn=xxxxx|Zd=xxxxx
+// FtsselZZz: FTSSEL  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+04A2B140 ftssel z0.s, z10.s, z2.s
+0479B0D0 ftssel z16.h, z6.h, z25.h
+0479B36E ftssel z14.h, z27.h, z25.h
+04B1B2A1 ftssel z1.s, z21.s, z17.s
+04F2B253 ftssel z19.d, z18.d, z18.d
+0462B235 ftssel z21.h, z17.h, z2.h
+04F6B16E ftssel z14.d, z11.d, z22.d
+04B2B2ED ftssel z13.s, z23.s, z18.s
+04E8B26E ftssel z14.d, z19.d, z8.d
+04F9B080 ftssel z0.d, z4.d, z25.d
+0471B173 ftssel z19.h, z11.h, z17.h
+04F1B1D0 ftssel z16.d, z14.d, z17.d
+04BFB095 ftssel z21.s, z4.s, z31.s
+04F3B2F7 ftssel z23.d, z23.d, z19.d
+0471B267 ftssel z7.h, z19.h, z17.h
+04ADB2DD ftssel z29.s, z22.s, z13.s
+04A0B01F ftssel z31.s, z0.s, z0.s
+04A2B3E0 ftssel z0.s, z31.s, z2.s
+0422B140 UNDEFINED
+04A2B142 ftssel z2.s, z10.s, z2.s

@@ -1,0 +1,21 @@
+// VUMMLA_A1_Q 1111|11|0|0|B=0|D=x|op2=10|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=0|N=x|Q=1|M=x|U=1|Vm=xxxx
+// VummlaA1Q: VUMMLA{<q>}.U8  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+fc2eac7a vummla.u8 q5, q7, q13
+fc66cc54 vummla.u8 q14, q3, q2
+fc600cde vummla.u8 q8, q8, q7
+fc660c5e vummla.u8 q8, q3, q7
+fc622c72 vummla.u8 q9, q1, q9
+fc64acfe vummla.u8 q13, q10, q15
+fc24cc54 vummla.u8 q6, q2, q2
+fc6c4cd2 vummla.u8 q10, q14, q1
+FC2FFC7F UNDEFINED
+FC288C70 vummla.u8 q4, q4, q8
+FC211C71 UNDEFINED
+FC200C78 vummla.u8 q0, q0, q12
+FC2FFC5F UNDEFINED
+FC6FFCFF UNDEFINED
+FC2EAC50 vummla.u8 q5, q7, q0
+FC2EAC70 vummla.u8 q5, q7, q8

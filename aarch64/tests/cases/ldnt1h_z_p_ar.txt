@@ -1,0 +1,33 @@
+// ldnt1h_z_p_ar_d_64_unscaled 110|0010|msz=01|00|Rm=xxxxx|1|U=1|0|Pg=xxx|Zn=xxxxx|Zt=xxxxx
+// Ldnt1hZPArD64Unscaled: LDNT1H  { <Zt>.D }, <Pg>/Z, [<Zn>.D{, <Xm>}]
+// register fields: Rm, Pg, Zn, Zt
+C482C4D2 ldnt1h {z18.d}, p1/z, [z6.d, x2]
+C49AC172 ldnt1h {z18.d}, p0/z, [z11.d, x26]
+C483D154 ldnt1h {z20.d}, p4/z, [z10.d, x3]
+C48DC3A9 ldnt1h {z9.d}, p0/z, [z29.d, x13]
+C496DD26 ldnt1h {z6.d}, p7/z, [z9.d, x22]
+C498D2D7 ldnt1h {z23.d}, p4/z, [z22.d, x24]
+C48AD1A6 ldnt1h {z6.d}, p4/z, [z13.d, x10]
+C48BCEAF ldnt1h {z15.d}, p3/z, [z21.d, x11]
+C480C800 ldnt1h {z0.d}, p2/z, [z0.d, x0]
+C49FD7FF ldnt1h {z31.d}, p5/z, [z31.d]
+C482D8D2 ldnt1h {z18.d}, p6/z, [z6.d, x2]
+C482C8D2 ldnt1h {z18.d}, p2/z, [z6.d, x2]
+C482C4C1 ldnt1h {z1.d}, p1/z, [z6.d, x2]
+
+// ldnt1h_z_p_ar_s_x32_unscaled 100|0010|msz=01|00|Rm=xxxxx|10|U=1|Pg=xxx|Zn=xxxxx|Zt=xxxxx
+// Ldnt1hZPArSX32Unscaled: LDNT1H  { <Zt>.S }, <Pg>/Z, [<Zn>.S{, <Xm>}]
+// register fields: Rm, Pg, Zn, Zt
+8498BA96 ldnt1h {z22.s}, p6/z, [z20.s, x24]
+8494BDAE ldnt1h {z14.s}, p7/z, [z13.s, x20]
+8488BF2B ldnt1h {z11.s}, p7/z, [z25.s, x8]
+8488A791 ldnt1h {z17.s}, p1/z, [z28.s, x8]
+8497B106 ldnt1h {z6.s}, p4/z, [z8.s, x23]
+848DB76A ldnt1h {z10.s}, p5/z, [z27.s, x13]
+8486A165 ldnt1h {z5.s}, p0/z, [z11.s, x6]
+848EA88B ldnt1h {z11.s}, p2/z, [z4.s, x14]
+8480AC00 ldnt1h {z0.s}, p3/z, [z0.s, x0]
+849FBBFF ldnt1h {z31.s}, p6/z, [z31.s]
+8486BA96 ldnt1h {z22.s}, p6/z, [z20.s, x6]
+8498B8D6 ldnt1h {z22.s}, p6/z, [z6.s, x24]
+8498BA86 ldnt1h {z6.s}, p6/z, [z20.s, x24]

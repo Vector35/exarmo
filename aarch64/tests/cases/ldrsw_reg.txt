@@ -1,0 +1,42 @@
+// LDRSW_64_ldst_regoff size=10|11|1|VR=0|0|0|opc=10|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldrsw64LdstRegoff: LDRSW  <Xt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+B8B9792F ldrsw x15, [x9, x25, lsl #0x2]
+B8A64B20 ldrsw x0, [x25, w6, uxtw]
+B8B9DA3E ldrsw lr, [x17, w25, sxtw #0x2]
+B8B84840 ldrsw x0, [x2, w24, uxtw]
+B8B5483D ldrsw fp, [x1, w21, uxtw]
+B8A8498E ldrsw x14, [x12, w8, uxtw]
+B8A85986 ldrsw x6, [x12, w8, uxtw #0x2]
+B8B3581A ldrsw x26, [x0, w19, uxtw #0x2]
+B8A6486D ldrsw x13, [x3, w6, uxtw]
+B8B85888 ldrsw x8, [x4, w24, uxtw #0x2]
+B8BEEB59 ldrsw x25, [x26, lr, sxtx]
+B8A1EB67 ldrsw x7, [x27, x1, sxtx]
+B8BC4B2F ldrsw x15, [x25, w28, uxtw]
+B8AFE906 ldrsw x6, [x8, x15, sxtx]
+B8B8E9E1 ldrsw x1, [x15, x24, sxtx]
+B8B0480F ldrsw x15, [x0, w16, uxtw]
+B8A07BFF ldrsw xzr, [sp, x0, lsl #0x2]
+B8BF792F ldrsw x15, [x9, xzr, lsl #0x2]
+B8B9192F UNDEFINED
+B8B9392F UNDEFINED
+B8B9992F UNDEFINED
+B8B9B92F UNDEFINED
+B8A0192F UNDEFINED
+B8A0392F UNDEFINED
+B8A0592F ldrsw x15, [x9, w0, uxtw #0x2]
+B8A0992F UNDEFINED
+B8A0B92F UNDEFINED
+B8A0D92F ldrsw x15, [x9, w0, sxtw #0x2]
+B8A0F92F ldrsw x15, [x9, x0, sxtx #0x2]
+B8BF192F UNDEFINED
+B8BF392F UNDEFINED
+B8BF592F ldrsw x15, [x9, wzr, uxtw #0x2]
+B8BF992F UNDEFINED
+B8BFB92F UNDEFINED
+B8BFD92F ldrsw x15, [x9, wzr, sxtw #0x2]
+B8BFF92F ldrsw x15, [x9, xzr, sxtx #0x2]
+B8B97B2F ldrsw x15, [x25, x25, lsl #0x2]
+B8B97939 ldrsw x25, [x9, x25, lsl #0x2]

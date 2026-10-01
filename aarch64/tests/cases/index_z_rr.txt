@@ -1,0 +1,33 @@
+// index_z_rr_ 000|0010|0|size=xx|1|Rm=xxxxx|0100|11|Rn=xxxxx|Zd=xxxxx
+// IndexZRr: INDEX  <Zd>.<T>, <n>, <m>
+// read together by <n>: size, Rn
+// read together by <m>: size, Rm
+// register fields: Rm, Rn, Zd
+04734CF5 index z21.h, w7, w19
+04644E58 index z24.h, w18, w4
+04334F1D index z29.b, w24, w19
+047F4E94 index z20.h, w20, wzr
+04224C5F index z31.b, w2, w2
+04614EFB index z27.h, w23, w1
+047F4CCF index z15.h, w6, wzr
+04F44F5A index z26.d, x26, x20
+04324C2B index z11.b, w1, w18
+042C4FE9 index z9.b, wzr, w12
+04F54CF4 index z20.d, x7, x21
+04EE4E90 index z16.d, x20, x14
+04B14FE7 index z7.s, wzr, w17
+04314C51 index z17.b, w2, w17
+04E94E19 index z25.d, x16, x9
+04294DC7 index z7.b, w14, w9
+04604C00 index z0.h, w0, w0
+04204CF5 index z21.b, w7, w0
+043F4CF5 index z21.b, w7, wzr
+04A04CF5 index z21.s, w7, w0
+04BF4CF5 index z21.s, w7, wzr
+04E04CF5 index z21.d, x7, x0
+04FF4CF5 index z21.d, x7, xzr
+04334C15 index z21.b, w0, w19
+04734FF5 index z21.h, wzr, w19
+04B34C15 index z21.s, w0, w19
+04F34C15 index z21.d, x0, x19
+04F34FF5 index z21.d, xzr, x19

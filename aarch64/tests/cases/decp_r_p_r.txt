@@ -1,0 +1,21 @@
+// decp_r_p_r_ 001|0010|1|size=xx|101|1|op=0|D=1|1000|1|opc2=00|Pm=xxxx|Rdn=xxxxx
+// DecpRPR: DECP  <Xdn>, <Pm>.<T>
+// register fields: Pm, Rdn
+252D8986 decp x6, p12.b
+25ED883C decp x28, p1.d
+25ED890B decp x11, p8.d
+252D883A decp x26, p1.b
+25ED8883 decp x3, p4.d
+25ED8907 decp x7, p8.d
+25ED885B decp x27, p2.d
+25ED899C decp x28, p12.d
+25AD8890 decp x16, p4.s
+256D8858 decp x24, p2.h
+25AD88BA decp x26, p5.s
+252D8877 decp x23, p3.b
+25AD883F decp xzr, p1.s
+25AD8904 decp x4, p8.s
+256D890F decp x15, p8.h
+252D88D5 decp x21, p6.b
+252D8800 decp x0, p0.b
+252D89E6 decp x6, p15.b

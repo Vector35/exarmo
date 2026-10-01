@@ -1,0 +1,93 @@
+// FCVTZU_asimdmisc_R 0|Q=x|U=1|0|111|0|o2=1|sz=x|10000|1101|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FcvtzuAsimdmiscR: FCVTZU  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+6EA1BAD7 fcvtzu v23.4s, v22.4s
+6EA1B9F9 fcvtzu v25.4s, v15.4s
+2EA1BA98 fcvtzu v24.2s, v20.2s
+2EA1BB60 fcvtzu v0.2s, v27.2s
+2EA1BA36 fcvtzu v22.2s, v17.2s
+6EE1BA49 fcvtzu v9.2d, v18.2d
+6EE1BB80 fcvtzu v0.2d, v28.2d
+6EE1BA1C fcvtzu v28.2d, v16.2d
+6EE1BAC7 fcvtzu v7.2d, v22.2d
+2EA1B96D fcvtzu v13.2s, v11.2s
+6EE1B92C fcvtzu v12.2d, v9.2d
+6EA1BA8F fcvtzu v15.4s, v20.4s
+6EE1BB3E fcvtzu v30.2d, v25.2d
+6EE1BB72 fcvtzu v18.2d, v27.2d
+6EE1BAE9 fcvtzu v9.2d, v23.2d
+6EE1B81A fcvtzu v26.2d, v0.2d
+6EA1BBFF fcvtzu v31.4s, v31.4s
+2EE1BAD7 UNDEFINED
+
+// FCVTZU_asimdmiscfp16_R 0|Q=x|U=1|0|111|0|o2=1|1111|00|1101|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FcvtzuAsimdmiscfp16R: FCVTZU  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+2EF9B817 fcvtzu v23.4h, v0.4h
+2EF9B830 fcvtzu v16.4h, v1.4h
+6EF9B8BC fcvtzu v28.8h, v5.8h
+6EF9B926 fcvtzu v6.8h, v9.8h
+2EF9BA5F fcvtzu v31.4h, v18.4h
+2EF9BB22 fcvtzu v2.4h, v25.4h
+2EF9B8FE fcvtzu v30.4h, v7.4h
+2EF9BA91 fcvtzu v17.4h, v20.4h
+2EF9BACD fcvtzu v13.4h, v22.4h
+6EF9BAF1 fcvtzu v17.8h, v23.8h
+6EF9BA69 fcvtzu v9.8h, v19.8h
+6EF9BAB7 fcvtzu v23.8h, v21.8h
+2EF9BB93 fcvtzu v19.4h, v28.4h
+2EF9B993 fcvtzu v19.4h, v12.4h
+2EF9BB7D fcvtzu v29.4h, v27.4h
+2EF9B99D fcvtzu v29.4h, v12.4h
+2EF9BBE0 fcvtzu v0.4h, v31.4h
+2EF9B800 fcvtzu v0.4h, v0.4h
+
+// FCVTZU_asisdmisc_R 01|U=1|1|111|0|o2=1|sz=x|10000|1101|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FcvtzuAsisdmiscR: FCVTZU  <V><d>, <V><n>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+7EA1B9B9 fcvtzu s25, s13
+7EE1B9EA fcvtzu d10, d15
+7EE1B897 fcvtzu d23, d4
+7EA1BB8B fcvtzu s11, s28
+7EE1BBB7 fcvtzu d23, d29
+7EA1B91D fcvtzu s29, s8
+7EE1BBC8 fcvtzu d8, d30
+7EA1BAFF fcvtzu s31, s23
+7EA1BBED fcvtzu s13, s31
+7EE1B858 fcvtzu d24, d2
+7EE1BA41 fcvtzu d1, d18
+7EA1BBD5 fcvtzu s21, s30
+7EE1BBD5 fcvtzu d21, d30
+7EA1B964 fcvtzu s4, s11
+7EE1BB09 fcvtzu d9, d24
+7EA1BAE5 fcvtzu s5, s23
+7EA1B800 fcvtzu s0, s0
+7EE1B9A0 fcvtzu d0, d13
+7EE1B9BF fcvtzu d31, d13
+7EE1B819 fcvtzu d25, d0
+7EE1BBF9 fcvtzu d25, d31
+
+// FCVTZU_asisdmiscfp16_R 01|U=1|1|111|0|o2=1|1111|00|1101|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FcvtzuAsisdmiscfp16R: FCVTZU  <Hd>, <Hn>
+// register fields: Rn, Rd
+7EF9BA5F fcvtzu h31, h18
+7EF9B81B fcvtzu h27, h0
+7EF9B9C5 fcvtzu h5, h14
+7EF9B913 fcvtzu h19, h8
+7EF9BB87 fcvtzu h7, h28
+7EF9BBCB fcvtzu h11, h30
+7EF9B80E fcvtzu h14, h0
+7EF9BB49 fcvtzu h9, h26
+7EF9BB1A fcvtzu h26, h24
+7EF9BAD0 fcvtzu h16, h22
+7EF9BA6F fcvtzu h15, h19
+7EF9B937 fcvtzu h23, h9
+7EF9B834 fcvtzu h20, h1
+7EF9BB81 fcvtzu h1, h28
+7EF9B901 fcvtzu h1, h8
+7EF9B838 fcvtzu h24, h1
+7EF9BBE0 fcvtzu h0, h31
+7EF9BA52 fcvtzu h18, h18

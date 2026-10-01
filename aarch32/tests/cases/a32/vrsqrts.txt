@@ -1,0 +1,42 @@
+// VRSQRTS_A1_D 1111001|U=0|0|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VrsqrtsA1D: VRSQRTS{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f23bff93 vrsqrts.f16 d15, d27, d3
+f2276fb4 vrsqrts.f32 d6, d23, d20
+f230afb5 vrsqrts.f16 d10, d16, d21
+f26b5f18 vrsqrts.f32 d21, d11, d8
+f2697f35 vrsqrts.f32 d23, d9, d21
+f2364fbc vrsqrts.f16 d4, d22, d28
+f2370f3b vrsqrts.f16 d0, d7, d27
+f2644fbd vrsqrts.f32 d20, d20, d29
+F23F8F90 vrsqrts.f16 d8, d31, d0
+F2382F9F vrsqrts.f16 d2, d24, d15
+F2321F92 vrsqrts.f16 d1, d18, d2
+F2710F91 vrsqrts.f16 d16, d17, d1
+F270FF10 vrsqrts.f16 d31, d0, d0
+F23FFF1F vrsqrts.f16 d15, d15, d15
+F23FFFB0 vrsqrts.f16 d15, d31, d16
+F23BFFBF vrsqrts.f16 d15, d27, d31
+
+// VRSQRTS_A1_Q 1111001|U=0|0|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VrsqrtsA1Q: VRSQRTS{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f2720f70 vrsqrts.f16 q8, q1, q8
+f278afd6 vrsqrts.f16 q13, q12, q3
+f2308f52 vrsqrts.f16 q4, q0, q1
+f22aeff0 vrsqrts.f32 q7, q13, q8
+f264cf5c vrsqrts.f32 q14, q2, q6
+f2766f52 vrsqrts.f16 q11, q3, q1
+f2720fd8 vrsqrts.f16 q8, q9, q4
+f268cff8 vrsqrts.f32 q14, q12, q12
+F27FFF7F UNDEFINED
+F2711F71 UNDEFINED
+F2704FF4 vrsqrts.f16 q10, q8, q10
+F2722F50 vrsqrts.f16 q9, q1, q0
+F2320F70 vrsqrts.f16 q0, q1, q8
+F23FFF5F UNDEFINED
+F27FFFFF UNDEFINED

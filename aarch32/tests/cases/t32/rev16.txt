@@ -1,0 +1,37 @@
+// REV16_T1 1011|1010|op=01|Rm=xxx|Rd=xxx
+// Rev16T1: REV16{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rm, Rd
+// IT state read: condition
+ba40 rev16 r0, r0
+ba41 rev16 r1, r0
+ba42 rev16 r2, r0
+ba43 rev16 r3, r0
+ba44 rev16 r4, r0
+ba45 rev16 r5, r0
+ba46 rev16 r6, r0
+ba47 rev16 r7, r0
+BA48 rev16 r0, r1
+BA50 rev16 r0, r2
+BA58 rev16 r0, r3
+BA60 rev16 r0, r4
+BA68 rev16 r0, r5
+BA70 rev16 r0, r6
+BA78 rev16 r0, r7
+BA40 [ne] rev16ne r0, r0
+
+// REV16_T2 111|11010|1|op1=001|Rn=xxxx|1111|Rd=xxxx|10|op2=01|Rm=xxxx
+// Rev16T2: REV16{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rd, Rm
+// IT state read: condition
+fa91fd9b rev16 sp, r11 (unpredictable)
+fa9ff397 rev16 r3, r7 (unpredictable)
+fa9afc91 rev16 r12, r1 (unpredictable)
+fa92f093 rev16 r0, r3 (unpredictable)
+fa9af698 rev16 r6, r8 (unpredictable)
+fa9ef99d rev16 r9, sp (unpredictable)
+fa99f493 rev16 r4, r3 (unpredictable)
+fa9ffe97 rev16 lr, r7 (unpredictable)
+FA90FF90 rev16 pc, r0 (unpredictable)
+FA98FD9F rev16 sp, pc (unpredictable)
+FA94FD9D rev16 sp, sp (unpredictable)
+FA91FD9B [ne] rev16ne sp, r11 (unpredictable)

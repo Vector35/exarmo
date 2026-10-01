@@ -1,0 +1,103 @@
+// SSHR_asimdshf_R 0|Q=x|U=0|0|111|10|immh=xxxx|immb=xxx|00|o1=0|o0=0|0|1|Rn=xxxxx|Rd=xxxxx
+// SshrAsimdshfR: SSHR  <Vd>.<T>, <Vn>.<T>, #<shift>
+// read together by <T>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+4F7D06E0 sshr v0.2d, v23.2d, #0x3
+0F1B0592 sshr v18.4h, v12.4h, #0x5
+4F34067E sshr v30.4s, v19.4s, #0xc
+4F0E0673 sshr v19.16b, v19.16b, #0x2
+4F6B07F5 sshr v21.2d, v31.2d, #0x15
+4F4807C6 sshr v6.2d, v30.2d, #0x38
+4F6F064C sshr v12.2d, v18.2d, #0x11
+4F4E05AB sshr v11.2d, v13.2d, #0x32
+0F3C05AE sshr v14.2s, v13.2s, #0x4
+4F5407D5 sshr v21.2d, v30.2d, #0x2c
+0F310576 sshr v22.2s, v11.2s, #0xf
+0F2C050D sshr v13.2s, v8.2s, #0x14
+0F1405F4 sshr v20.4h, v15.4h, #0xc
+4F7B04D9 sshr v25.2d, v6.2d, #0x5
+0F390593 sshr v19.2s, v12.2s, #0x7
+4F1707F6 sshr v22.8h, v31.8h, #0x9
+4F7A041F sshr v31.2d, v0.2d, #0x6
+0F7D06E0 UNDEFINED
+4F7806E0 sshr v0.2d, v23.2d, #0x8
+4F7906E0 sshr v0.2d, v23.2d, #0x7
+4F7C06E0 sshr v0.2d, v23.2d, #0x4
+4F7E06E0 sshr v0.2d, v23.2d, #0x2
+4F7F06E0 sshr v0.2d, v23.2d, #0x1
+4F4506E0 sshr v0.2d, v23.2d, #0x3b
+4F2506E0 sshr v0.4s, v23.4s, #0x1b
+
+// SSHR_asisdshf_R 01|U=0|1|111|10|immh=1xxx|immb=xxx|00|o1=0|o0=0|0|1|Rn=xxxxx|Rd=xxxxx
+// SshrAsisdshfR: SSHR  <d>, <n>, #<shift>
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+5F450550 sshr d16, d10, #0x3b
+5F4B0572 sshr d18, d11, #0x35
+5F5504B7 sshr d23, d5, #0x2b
+5F7305DE sshr d30, d14, #0xd
+5F640481 sshr d1, d4, #0x1c
+5F4505D1 sshr d17, d14, #0x3b
+5F72072C sshr d12, d25, #0xe
+5F4805FB sshr d27, d15, #0x38
+5F6B07BA sshr d26, d29, #0x15
+5F7504DB sshr d27, d6, #0xb
+5F51066E sshr d14, d19, #0x2f
+5F5F0605 sshr d5, d16, #0x21
+5F73056E sshr d14, d11, #0xd
+5F6E0531 sshr d17, d9, #0x12
+5F6E0774 sshr d20, d27, #0x12
+5F6C0403 sshr d3, d0, #0x14
+5F7D07E0 sshr d0, d31, #0x3
+5F45055F sshr d31, d10, #0x3b
+5F40054A sshr d10, d10, #0x40
+5F410550 sshr d16, d10, #0x3f
+5F420550 sshr d16, d10, #0x3e
+5F430550 sshr d16, d10, #0x3d
+5F440550 sshr d16, d10, #0x3c
+5F460550 sshr d16, d10, #0x3a
+5F470550 sshr d16, d10, #0x39
+5F490550 sshr d16, d10, #0x37
+5F4A0550 sshr d16, d10, #0x36
+5F4C0550 sshr d16, d10, #0x34
+5F4D0550 sshr d16, d10, #0x33
+5F4E0550 sshr d16, d10, #0x32
+5F4F0550 sshr d16, d10, #0x31
+5F500550 sshr d16, d10, #0x30
+5F520550 sshr d16, d10, #0x2e
+5F530550 sshr d16, d10, #0x2d
+5F540550 sshr d16, d10, #0x2c
+5F560550 sshr d16, d10, #0x2a
+5F570550 sshr d16, d10, #0x29
+5F580550 sshr d16, d10, #0x28
+5F590550 sshr d16, d10, #0x27
+5F5A0550 sshr d16, d10, #0x26
+5F5B0550 sshr d16, d10, #0x25
+5F5C0550 sshr d16, d10, #0x24
+5F5D0550 sshr d16, d10, #0x23
+5F5E0550 sshr d16, d10, #0x22
+5F600550 sshr d16, d10, #0x20
+5F610550 sshr d16, d10, #0x1f
+5F620550 sshr d16, d10, #0x1e
+5F630550 sshr d16, d10, #0x1d
+5F650550 sshr d16, d10, #0x1b
+5F660550 sshr d16, d10, #0x1a
+5F670550 sshr d16, d10, #0x19
+5F680550 sshr d16, d10, #0x18
+5F690550 sshr d16, d10, #0x17
+5F6A0550 sshr d16, d10, #0x16
+5F6D0550 sshr d16, d10, #0x13
+5F6F0550 sshr d16, d10, #0x11
+5F700550 sshr d16, d10, #0x10
+5F710550 sshr d16, d10, #0xf
+5F740550 sshr d16, d10, #0xc
+5F760550 sshr d16, d10, #0xa
+5F770550 sshr d16, d10, #0x9
+5F780550 sshr d16, d10, #0x8
+5F790550 sshr d16, d10, #0x7
+5F7A0550 sshr d16, d10, #0x6
+5F7B0550 sshr d16, d10, #0x5
+5F7C0550 sshr d16, d10, #0x4
+5F7E0550 sshr d16, d10, #0x2
+5F7F0550 sshr d16, d10, #0x1

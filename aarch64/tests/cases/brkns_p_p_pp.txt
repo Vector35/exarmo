@@ -1,0 +1,23 @@
+// brkns_p_p_pp_ 001|0010|1|0|S=1|01|1000|01|Pg=xxxx|0|Pn=xxxx|0|Pdm=xxxx
+// BrknsPPPp: BRKNS  <Pdm>.B, <Pg>/Z, <Pn>.B, <Pdm>.B
+// register fields: Pg, Pn, Pdm
+2558746A brkns p10.b, p13/z, p3.b, p10.b
+25584082 brkns p2.b, p0/z, p4.b, p2.b
+2558480C brkns p12.b, p2/z, p0.b, p12.b
+255859E7 brkns p7.b, p6/z, p15.b, p7.b
+2558706D brkns p13.b, p12/z, p3.b, p13.b
+25585CAE brkns p14.b, p7/z, p5.b, p14.b
+25586C29 brkns p9.b, p11/z, p1.b, p9.b
+25586805 brkns p5.b, p10/z, p0.b, p5.b
+25586062 brkns p2.b, p8/z, p3.b, p2.b
+25585882 brkns p2.b, p6/z, p4.b, p2.b
+255878A4 brkns p4.b, p14/z, p5.b, p4.b
+255855E8 brkns p8.b, p5/z, p15.b, p8.b
+25586844 brkns p4.b, p10/z, p2.b, p4.b
+2558544C brkns p12.b, p5/z, p2.b, p12.b
+25586D2E brkns p14.b, p11/z, p9.b, p14.b
+25586D61 brkns p1.b, p11/z, p11.b, p1.b
+25587C60 brkns p0.b, p15/z, p3.b, p0.b
+2558746F brkns p15.b, p13/z, p3.b, p15.b
+2558746D brkns p13.b, p13/z, p3.b, p13.b
+25587463 brkns p3.b, p13/z, p3.b, p3.b

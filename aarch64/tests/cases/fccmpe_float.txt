@@ -1,0 +1,74 @@
+// FCCMPE_D_floatccmp M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|cond=xxxx|01|Rn=xxxxx|op=1|nzcv=xxxx
+// FccmpeDFloatccmp: FCCMPE  <Dn>, <Dm>, #<nzcv>, <cond>
+// register fields: Rm, Rn
+1E743417 fccmpe d0, d20, #0x7, cc
+1E60D7B8 fccmpe d29, d0, #0x8, le
+1E635511 fccmpe d8, d3, #0x1, pl
+1E7246B4 fccmpe d21, d18, #0x4, mi
+1E7185DB fccmpe d14, d17, #0xb, hi
+1E63C7D2 fccmpe d30, d3, #0x2, gt
+1E7C475D fccmpe d26, d28, #0xd, mi
+1E7F969C fccmpe d20, d31, #0xc, ls
+1E6C97B0 fccmpe d29, d12, #0x0, ls
+1E79B610 fccmpe d16, d25, #0x0, lt
+1E6A367C fccmpe d19, d10, #0xc, cc
+1E615498 fccmpe d4, d1, #0x8, pl
+1E74C551 fccmpe d10, d20, #0x1, gt
+1E668414 fccmpe d0, d6, #0x4, hi
+1E6994F8 fccmpe d7, d9, #0x8, ls
+1E6837BC fccmpe d29, d8, #0xc, cc
+1E7407FF fccmpe d31, d20, #0xf, eq
+1E74F417 fccmpe d0, d20, #0x7, nv
+1E743697 fccmpe d20, d20, #0x7, cc
+1E742417 fccmpe d0, d20, #0x7, cs
+1E741417 fccmpe d0, d20, #0x7, ne
+
+// FCCMPE_H_floatccmp M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|cond=xxxx|01|Rn=xxxxx|op=1|nzcv=xxxx
+// FccmpeHFloatccmp: FCCMPE  <Hn>, <Hm>, #<nzcv>, <cond>
+// register fields: Rm, Rn
+1EE114B1 fccmpe h5, h1, #0x1, ne
+1EF60415 fccmpe h0, h22, #0x5, eq
+1EFDE611 fccmpe h16, h29, #0x1, al
+1EF40576 fccmpe h11, h20, #0x6, eq
+1EEF2775 fccmpe h27, h15, #0x5, cs
+1EF33458 fccmpe h2, h19, #0x8, cc
+1EE74730 fccmpe h25, h7, #0x0, mi
+1EFE17BC fccmpe h29, h30, #0xc, ne
+1EF36759 fccmpe h26, h19, #0x9, vs
+1EE5C557 fccmpe h10, h5, #0x7, gt
+1EE244B9 fccmpe h5, h2, #0x9, mi
+1EF136BD fccmpe h21, h17, #0xd, cc
+1EE957B7 fccmpe h29, h9, #0x7, pl
+1EE57499 fccmpe h4, h5, #0x9, vc
+1EF6E578 fccmpe h11, h22, #0x8, al
+1EF6D69C fccmpe h20, h22, #0xc, le
+1EE0F7FF fccmpe h31, h0, #0xf, nv
+1EFF14B1 fccmpe h5, h31, #0x1, ne
+1EE11431 fccmpe h1, h1, #0x1, ne
+1EE184B4 fccmpe h5, h1, #0x4, hi
+1EE114B2 fccmpe h5, h1, #0x2, ne
+
+// FCCMPE_S_floatccmp M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|cond=xxxx|01|Rn=xxxxx|op=1|nzcv=xxxx
+// FccmpeSFloatccmp: FCCMPE  <Sn>, <Sm>, #<nzcv>, <cond>
+// register fields: Rm, Rn
+1E33A554 fccmpe s10, s19, #0x4, ge
+1E2B5714 fccmpe s24, s11, #0x4, pl
+1E2C3513 fccmpe s8, s12, #0x3, cc
+1E348492 fccmpe s4, s20, #0x2, hi
+1E3AD538 fccmpe s9, s26, #0x8, le
+1E36051F fccmpe s8, s22, #0xf, eq
+1E3084D9 fccmpe s6, s16, #0x9, hi
+1E2EB652 fccmpe s18, s14, #0x2, lt
+1E2E15F8 fccmpe s15, s14, #0x8, ne
+1E2D57D2 fccmpe s30, s13, #0x2, pl
+1E355752 fccmpe s26, s21, #0x2, pl
+1E299599 fccmpe s12, s9, #0x9, ls
+1E31653A fccmpe s9, s17, #0xa, vs
+1E2C9493 fccmpe s4, s12, #0x3, ls
+1E3CB416 fccmpe s0, s28, #0x6, lt
+1E3B64BA fccmpe s5, s27, #0xa, vs
+1E20F7F0 fccmpe s31, s0, #0x0, nv
+1E3FA554 fccmpe s10, s31, #0x4, ge
+1E33A674 fccmpe s19, s19, #0x4, ge
+1E334551 fccmpe s10, s19, #0x1, mi
+1E332554 fccmpe s10, s19, #0x4, cs

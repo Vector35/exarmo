@@ -1,0 +1,111 @@
+// VSUB_f_A1_D 1111001|U=0|0|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VsubFA1D: VSUB{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f267fd08 vsub.f32 d31, d7, d8
+f278ad26 vsub.f16 d26, d8, d22
+f274eda9 vsub.f16 d30, d20, d25
+f2251d2a vsub.f32 d1, d5, d26
+f278dda7 vsub.f16 d29, d24, d23
+f22ffd89 vsub.f32 d15, d31, d9
+f23e1dad vsub.f16 d1, d30, d29
+f227bd2d vsub.f32 d11, d7, d29
+F2600D00 vsub.f32 d16, d0, d0
+F2628D0F vsub.f32 d24, d2, d15
+F2614D04 vsub.f32 d20, d1, d4
+F2602D02 vsub.f32 d18, d0, d2
+F2200D81 vsub.f32 d0, d16, d1
+F26F0D00 vsub.f32 d16, d15, d0
+F267FD0F vsub.f32 d31, d7, d15
+F267FD20 vsub.f32 d31, d7, d16
+F267FD2F vsub.f32 d31, d7, d31
+
+// VSUB_f_A1_Q 1111001|U=0|0|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VsubFA1Q: VSUB{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f22acdea vsub.f32 q6, q13, q13
+f2642dca vsub.f32 q9, q10, q5
+f2744d44 vsub.f16 q10, q2, q2
+f2386dc4 vsub.f16 q3, q12, q2
+f2762d40 vsub.f16 q9, q3, q0
+f2326d66 vsub.f16 q3, q1, q11
+f234ad64 vsub.f16 q5, q2, q10
+f268cdc6 vsub.f32 q14, q12, q3
+F2200DE8 vsub.f32 q0, q8, q12
+F22FFDEF UNDEFINED
+F2211DE1 UNDEFINED
+F2208D62 vsub.f32 q4, q0, q9
+F2200DE0 vsub.f32 q0, q8, q8
+F22FFD4F UNDEFINED
+F26A0DEA vsub.f32 q8, q13, q13
+F26FFDEF UNDEFINED
+
+// VSUB_f_A2_D cond=xxxx|1110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=11|N=x|o2=1|M=x|0|Vm=xxxx
+// VsubFA2D: VSUB{<c>}{<q>}.F64  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+8e7f8b40 vsubhi.f64 d24, d15, d0
+ee7ebbe0 vsub.f64 d27, d30, d16
+8e7efb49 vsubhi.f64 d31, d14, d9
+be791b40 vsublt.f64 d17, d9, d0
+ae73fbe0 vsubge.f64 d31, d19, d16
+ae316bc6 vsubge.f64 d6, d17, d6
+ae35eb41 vsubge.f64 d14, d5, d1
+1e3d4bee vsubne.f64 d4, d29, d30
+// Binary Ninja's tests
+ee710be0 vsub.f64 d16, d17, d16
+0E702B4F vsubeq.f64 d18, d0, d15
+FE7F8B40 UNALLOCATED
+4E380B48 vsubmi.f64 d0, d8, d8
+2E34FB44 vsubcs.f64 d15, d4, d4
+8E728B42 vsubhi.f64 d24, d2, d2
+8E708B4F vsubhi.f64 d24, d0, d15
+8E708BEF vsubhi.f64 d24, d16, d31
+8E7F8BC0 vsubhi.f64 d24, d31, d0
+
+// VSUB_f_A2_H cond=xxxx|1110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=01|N=x|o2=1|M=x|0|Vm=xxxx
+// VsubFA2H: VSUB{<c>}{<q>}.F16  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+4e33a9c1 vsubmi.f16 s20, s7, s2 (unpredictable)
+7e755948 vsubvc.f16 s11, s10, s16 (unpredictable)
+1e317964 vsubne.f16 s14, s2, s9 (unpredictable)
+be3349c0 vsublt.f16 s8, s7, s0 (unpredictable)
+8e32894e vsubhi.f16 s16, s4, s28 (unpredictable)
+8e3819ef vsubhi.f16 s2, s17, s31 (unpredictable)
+ae7d39c4 vsubge.f16 s7, s27, s8 (unpredictable)
+6e30c94d vsubvs.f16 s24, s0, s26 (unpredictable)
+0E3F09C2 vsubeq.f16 s0, s31, s4 (unpredictable)
+FE33A9C1 UNALLOCATED
+2E34F9CF vsubcs.f16 s30, s9, s30 (unpredictable)
+4E3029E0 vsubmi.f16 s4, s1, s1 (unpredictable)
+4E3F0941 vsubmi.f16 s0, s30, s2 (unpredictable)
+4E3FF9C1 vsubmi.f16 s30, s31, s2 (unpredictable)
+4E7309C1 vsubmi.f16 s1, s7, s2 (unpredictable)
+4E73F9C1 vsubmi.f16 s31, s7, s2 (unpredictable)
+
+// VSUB_f_A2_S cond=xxxx|1110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=10|N=x|o2=1|M=x|0|Vm=xxxx
+// VsubFA2S: VSUB{<c>}{<q>}.F32  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+0e383a6f vsubeq.f32 s6, s16, s31
+3e714ac5 vsublo.f32 s9, s3, s10
+9e7cfae1 vsubls.f32 s31, s25, s3
+be7f2a6c vsublt.f32 s5, s30, s25
+de327a6b vsuble.f32 s14, s4, s23
+ce3e1ac9 vsubgt.f32 s2, s29, s18
+9e3fdaeb vsubls.f32 s26, s31, s23
+1e34cae8 vsubne.f32 s24, s9, s17
+// Binary Ninja's tests
+ee300ac0 vsub.f32 s0, s1, s0
+FE383A6F UNALLOCATED
+8E308A64 vsubhi.f32 s16, s0, s9
+4E38FA62 vsubmi.f32 s30, s16, s5
+2E780A4F vsubcs.f32 s1, s16, s30
+0E383A60 vsubeq.f32 s6, s16, s1

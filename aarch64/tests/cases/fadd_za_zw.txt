@@ -1,0 +1,48 @@
+// fadd_za_zw_2x2 1|10|0000|11|sz=x|1|00|00|00|Rv=xx|111|Zm=xxxx|0|0|S=0|off3=xxx
+// FaddZaZw2x2: FADD  ZA.<T>[<Wv>, <offs>{, VGx2}], { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Rv, Zm
+C1A01C05 fadd za.s[w8, 5, vgx2], {z0.s-z1.s}
+C1A01C44 fadd za.s[w8, 4, vgx2], {z2.s-z3.s}
+C1A01C83 fadd za.s[w8, 3, vgx2], {z4.s-z5.s}
+C1E03FC0 fadd za.d[w9, 0, vgx2], {z30.d-z31.d}
+C1A05C01 fadd za.s[w10, 1, vgx2], {z0.s-z1.s}
+C1A07C02 fadd za.s[w11, 2, vgx2], {z0.s-z1.s}
+C1A01C06 fadd za.s[w8, 6, vgx2], {z0.s-z1.s}
+C1A01C07 fadd za.s[w8, 7, vgx2], {z0.s-z1.s}
+
+// fadd_za_zw_2x2_16 1|10|0000|11|sz=0|1|00|10|00|Rv=xx|111|Zm=xxxx|0|0|S=0|off3=xxx
+// FaddZaZw2x216: FADD  ZA.H[<Wv>, <offs>{, VGx2}], { <Zm1>.H-<Zm2>.H }
+// register fields: Rv, Zm
+C1A41C04 fadd za.h[w8, 4, vgx2], {z0.h-z1.h}
+C1A41C43 fadd za.h[w8, 3, vgx2], {z2.h-z3.h}
+C1A41C82 fadd za.h[w8, 2, vgx2], {z4.h-z5.h}
+C1A43FC0 fadd za.h[w9, 0, vgx2], {z30.h-z31.h}
+C1A45C01 fadd za.h[w10, 1, vgx2], {z0.h-z1.h}
+C1A47C05 fadd za.h[w11, 5, vgx2], {z0.h-z1.h}
+C1A41C06 fadd za.h[w8, 6, vgx2], {z0.h-z1.h}
+C1A41C07 fadd za.h[w8, 7, vgx2], {z0.h-z1.h}
+
+// fadd_za_zw_4x4 1|10|0000|11|sz=x|1|00|00|10|Rv=xx|111|Zm=xxx|00|0|S=0|off3=xxx
+// FaddZaZw4x4: FADD  ZA.<T>[<Wv>, <offs>{, VGx4}], { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Rv, Zm
+C1A11C03 fadd za.s[w8, 3, vgx4], {z0.s-z3.s}
+C1A11C81 fadd za.s[w8, 1, vgx4], {z4.s-z7.s}
+C1A11D06 fadd za.s[w8, 6, vgx4], {z8.s-z11.s}
+C1E13D80 fadd za.d[w9, 0, vgx4], {z12.d-z15.d}
+C1A15E02 fadd za.s[w10, 2, vgx4], {z16.s-z19.s}
+C1A17E84 fadd za.s[w11, 4, vgx4], {z20.s-z23.s}
+C1A11F05 fadd za.s[w8, 5, vgx4], {z24.s-z27.s}
+C1A11F87 fadd za.s[w8, 7, vgx4], {z28.s-z31.s}
+
+// fadd_za_zw_4x4_16 1|10|0000|11|sz=0|1|00|10|10|Rv=xx|111|Zm=xxx|00|0|S=0|off3=xxx
+// FaddZaZw4x416: FADD  ZA.H[<Wv>, <offs>{, VGx4}], { <Zm1>.H-<Zm4>.H }
+// register fields: Rv, Zm
+C1A51C02 fadd za.h[w8, 2, vgx4], {z0.h-z3.h}
+C1A51C80 fadd za.h[w8, 0, vgx4], {z4.h-z7.h}
+C1A51C87 fadd za.h[w8, 7, vgx4], {z4.h-z7.h}
+C1A53D01 fadd za.h[w9, 1, vgx4], {z8.h-z11.h}
+C1A55D83 fadd za.h[w10, 3, vgx4], {z12.h-z15.h}
+C1A57E04 fadd za.h[w11, 4, vgx4], {z16.h-z19.h}
+C1A51E85 fadd za.h[w8, 5, vgx4], {z20.h-z23.h}
+C1A51F06 fadd za.h[w8, 6, vgx4], {z24.h-z27.h}
+C1A51F82 fadd za.h[w8, 2, vgx4], {z28.h-z31.h}

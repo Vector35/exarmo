@@ -1,0 +1,12 @@
+// LDA_T1 111|0100|op0=0110|L=1|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=0|sz=10|Rd=(1)(1)(1)(1)
+// LdaT1: LDA{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// IT state read: condition
+E8D000A0 lda r0, [r0] (unpredictable)
+E8DFFFAF lda pc, [pc] (unpredictable)
+E8D008A8 lda r0, [r0] (unpredictable)
+E8D004A4 lda r0, [r0] (unpredictable)
+E8D002A2 lda r0, [r0] (unpredictable)
+E8D001A1 lda r0, [r0] (unpredictable)
+E8D000A0 [ne] ldane r0, [r0] (unpredictable)
+E8D12FAF lda r2, [r1]

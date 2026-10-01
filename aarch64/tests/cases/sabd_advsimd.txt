@@ -1,0 +1,25 @@
+// SABD_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|0111|ac=0|1|Rn=xxxxx|Rd=xxxxx
+// SabdAsimdsameOnly: SABD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+0EA97596 sabd v22.2s, v12.2s, v9.2s
+4E7E761C sabd v28.8h, v16.8h, v30.8h
+0EB776F5 sabd v21.2s, v23.2s, v23.2s
+4E757698 sabd v24.8h, v20.8h, v21.8h
+0EAD765A sabd v26.2s, v18.2s, v13.2s
+0EB374A1 sabd v1.2s, v5.2s, v19.2s
+4E6B7548 sabd v8.8h, v10.8h, v11.8h
+0E7E7595 sabd v21.4h, v12.4h, v30.4h
+0EAF77A1 sabd v1.2s, v29.2s, v15.2s
+4E697456 sabd v22.8h, v2.8h, v9.8h
+0E65750D sabd v13.4h, v8.4h, v5.4h
+4E6F77C1 sabd v1.8h, v30.8h, v15.8h
+4EAF749A sabd v26.4s, v4.4s, v15.4s
+0E6F75C1 sabd v1.4h, v14.4h, v15.4h
+4E767426 sabd v6.8h, v1.8h, v22.8h
+0E3375C8 sabd v8.8b, v14.8b, v19.8b
+0EA07400 sabd v0.2s, v0.2s, v0.2s
+0EBF77FF sabd v31.2s, v31.2s, v31.2s
+0EE97596 UNDEFINED
+4E297596 sabd v22.16b, v12.16b, v9.16b
+4EE97596 UNDEFINED

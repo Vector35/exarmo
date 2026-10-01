@@ -1,0 +1,24 @@
+// uqrshrn_z_mz4_ 1|10|0000|1|tsize=xx|1|imm5=xxxxx|110|11|N=1|Zn=xxx|op=0|U=1|Zd=xxxxx
+// UqrshrnZMz4: UQRSHRN  <Zd>.<T>, { <Zn1>.<Tb>-<Zn4>.<Tb> }, #<const>
+// read together by <const>: tsize, imm5
+// register fields: Zn, Zd
+C160DC25 uqrshrn z5.b, {z0.s-z3.s}, #0x20
+C160DC2C uqrshrn z12.b, {z0.s-z3.s}, #0x20
+C160DC33 uqrshrn z19.b, {z0.s-z3.s}, #0x20
+C1BFDCA0 uqrshrn z0.h, {z4.d-z7.d}, #0x21
+C1E0DD3F uqrshrn z31.h, {z8.d-z11.d}, #0x20
+C160DDA5 uqrshrn z5.b, {z12.s-z15.s}, #0x20
+C160DE25 uqrshrn z5.b, {z16.s-z19.s}, #0x20
+C160DEA5 uqrshrn z5.b, {z20.s-z23.s}, #0x20
+C160DF25 uqrshrn z5.b, {z24.s-z27.s}, #0x20
+C160DFA5 uqrshrn z5.b, {z28.s-z31.s}, #0x20
+C120DC25 UNDEFINED
+C13FDC25 UNDEFINED
+C17FDC25 uqrshrn z5.b, {z0.s-z3.s}, #0x1
+C1A0DC25 uqrshrn z5.h, {z0.d-z3.d}, #0x40
+C1FFDC25 uqrshrn z5.h, {z0.d-z3.d}, #0x1
+C170DC25 uqrshrn z5.b, {z0.s-z3.s}, #0x10
+C168DC25 uqrshrn z5.b, {z0.s-z3.s}, #0x18
+C164DC25 uqrshrn z5.b, {z0.s-z3.s}, #0x1c
+C162DC25 uqrshrn z5.b, {z0.s-z3.s}, #0x1e
+C161DC25 uqrshrn z5.b, {z0.s-z3.s}, #0x1f

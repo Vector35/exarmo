@@ -1,0 +1,23 @@
+// sqdech_z_zs_ 000|0010|0|size=01|1|0|imm4=xxxx|11|00|D=1|U=0|pattern=xxxxx|Zdn=xxxxx
+// SqdechZZs: SQDECH  <Zdn>.H{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+0463C94D sqdech z13.h, vl32, mul #0x4
+046BC88D sqdech z13.h, vl4, mul #0xc
+0463C9B2 sqdech z18.h, vl256, mul #0x4
+046AC883 sqdech z3.h, vl4, mul #0xb
+0464C938 sqdech z24.h, vl16, mul #0x5
+0462C8A7 sqdech z7.h, vl5, mul #0x3
+0461CB3C sqdech z28.h, #0x19, mul #0x2
+046DCBE1 sqdech z1.h, all, mul #0xe
+0468CBAF sqdech z15.h, mul4, mul #0x9
+0465C990 sqdech z16.h, vl128, mul #0x6
+0461C8C5 sqdech z5.h, vl6, mul #0x2
+0465C9C4 sqdech z4.h, #0xe, mul #0x6
+0460C9C0 sqdech z0.h, #0xe
+0462C959 sqdech z25.h, vl32, mul #0x3
+0466C852 sqdech z18.h, vl2, mul #0x7
+046FC950 sqdech z16.h, vl32, mul #0x10
+0463C81F sqdech z31.h, pow2, mul #0x4
+0463CA0D sqdech z13.h, #0x10, mul #0x4
+0463C90D sqdech z13.h, vl8, mul #0x4
+0463C82D sqdech z13.h, vl1, mul #0x4

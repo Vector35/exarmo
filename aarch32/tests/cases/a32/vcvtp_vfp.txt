@@ -1,0 +1,58 @@
+// VCVTP_vfp_A1_D 111111101|D=x|111|op1=1|RM=10|Vd=xxxx|10|size=11|op=x|1|M=x|0|Vm=xxxx
+// VcvtpVfpA1D: VCVTP{<q>}.<dt>.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+fefeeb43 vcvtp.u32.f64 s29, d3
+febeebcf vcvtp.s32.f64 s28, d15
+febe5bc5 vcvtp.s32.f64 s10, d5
+fefecb6e vcvtp.u32.f64 s25, d30
+// Binary Ninja's tests
+febe0b44 vcvtp.u32.f64 s0, d4
+febe0bc4 vcvtp.s32.f64 s0, d4
+FEFEFB40 vcvtp.u32.f64 s31, d0
+FEFE8B48 vcvtp.u32.f64 s17, d8
+FEFE4B42 vcvtp.u32.f64 s9, d2
+FEFE2B41 vcvtp.u32.f64 s5, d1
+FEFE1B40 vcvtp.u32.f64 s3, d0
+FEBEFB60 vcvtp.u32.f64 s30, d16
+FEFE0B6F vcvtp.u32.f64 s1, d31
+FEFEFB43 vcvtp.u32.f64 s31, d3
+
+// VCVTP_vfp_A1_H 111111101|D=x|111|op1=1|RM=10|Vd=xxxx|10|size=01|op=x|1|M=x|0|Vm=xxxx
+// VcvtpVfpA1H: VCVTP{<q>}.<dt>.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fefe39ed vcvtp.s32.f16 s7, s27
+fefe994d vcvtp.u32.f16 s19, s26
+febeb9cc vcvtp.s32.f16 s22, s24
+fefe696a vcvtp.u32.f16 s13, s21
+FEFE09E0 vcvtp.s32.f16 s1, s1
+FEFEF9EF vcvtp.s32.f16 s31, s31
+FEFE89E8 vcvtp.s32.f16 s17, s17
+FEFE49E4 vcvtp.s32.f16 s9, s9
+FEFE29E2 vcvtp.s32.f16 s5, s5
+FEFE19E1 vcvtp.s32.f16 s3, s3
+FEBE09C0 vcvtp.s32.f16 s0, s0
+FEBEF9CF vcvtp.s32.f16 s30, s30
+
+// VCVTP_vfp_A1_S 111111101|D=x|111|op1=1|RM=10|Vd=xxxx|10|size=10|op=x|1|M=x|0|Vm=xxxx
+// VcvtpVfpA1S: VCVTP{<q>}.<dt>.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fefeba66 vcvtp.u32.f32 s23, s13
+febe6ac9 vcvtp.s32.f32 s12, s18
+febefa6a vcvtp.u32.f32 s30, s21
+fefeea48 vcvtp.u32.f32 s29, s16
+fefe5a67 vcvtp.u32.f32 s11, s15
+fefeeac9 vcvtp.s32.f32 s29, s18
+// Binary Ninja's tests
+febe0a42 vcvtp.u32.f32 s0, s4
+febe0ac2 vcvtp.s32.f32 s0, s4
+FEFE8A60 vcvtp.u32.f32 s17, s1
+FEFE4A6F vcvtp.u32.f32 s9, s31
+FEFE2A64 vcvtp.u32.f32 s5, s9
+FEFE1A61 vcvtp.u32.f32 s3, s3
+FEFE0A40 vcvtp.u32.f32 s1, s0
+FEFEFA4F vcvtp.u32.f32 s31, s30
+FEFEBA60 vcvtp.u32.f32 s23, s1
+FEFEBA6F vcvtp.u32.f32 s23, s31

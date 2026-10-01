@@ -1,0 +1,10 @@
+// BFMLAL_asimdsame2_F_ 0|Q=x|U=1|0|111|0|size=11|0|Rm=xxxxx|1|opcode=1111|1|Rn=xxxxx|Rd=xxxxx
+// BfmlalAsimdsame2F: BFMLAL<bt>  <Vd>.4S, <Vn>.8H, <Vm>.8H
+// register fields: Rm, Rn, Rd
+2EC0FC04 bfmlalb v4.4s, v0.8h, v0.8h
+2EC0FC0B bfmlalb v11.4s, v0.8h, v0.8h
+2EC0FC12 bfmlalb v18.4s, v0.8h, v0.8h
+6EDFFFE0 bfmlalt v0.4s, v31.8h, v31.8h
+2EC0FC1F bfmlalb v31.4s, v0.8h, v0.8h
+2EC0FC00 bfmlalb v0.4s, v0.8h, v0.8h
+2EC1FC43 bfmlalb v3.4s, v2.8h, v1.8h

@@ -1,0 +1,30 @@
+// fmaxv_v_p_z_ 011|0010|1|size=xx|000|opc=110|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// FmaxvVPZ: FMAXV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+65863A14 fmaxv s20, p6, z16.s
+65C62C9C fmaxv d28, p3, z4.d
+65862F8D fmaxv s13, p3, z28.s
+65863898 fmaxv s24, p6, z4.s
+654629CD fmaxv h13, p2, z14.h
+65462772 fmaxv h18, p1, z27.h
+65C63B90 fmaxv d16, p6, z28.d
+65862AEB fmaxv s11, p2, z23.s
+65C620B8 fmaxv d24, p0, z5.d
+65863093 fmaxv s19, p4, z4.s
+65862B9D fmaxv s29, p2, z28.s
+6586328B fmaxv s11, p4, z20.s
+65463C93 fmaxv h19, p7, z4.h
+65862ED9 fmaxv s25, p3, z22.s
+65462A50 fmaxv h16, p2, z18.h
+65462EAA fmaxv h10, p3, z21.h
+65863400 fmaxv s0, p5, z0.s
+65863BFF fmaxv s31, p6, z31.s
+65063A14 UNDEFINED
+65063A00 UNDEFINED
+65063A1F UNDEFINED
+65463A00 fmaxv h0, p6, z16.h
+65463A1F fmaxv h31, p6, z16.h
+65C63A00 fmaxv d0, p6, z16.d
+65C63A1F fmaxv d31, p6, z16.d
+65863A06 fmaxv s6, p6, z16.s

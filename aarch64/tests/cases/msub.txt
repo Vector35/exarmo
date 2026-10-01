@@ -1,0 +1,79 @@
+// MSUB_32A_dp_3src sf=0|op54=00|11011|op31=000|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Msub32aDp3src: MSUB  <Wd>, <Wn>, <Wm>, <Wa>
+// MnegMsub32aDp3src: MNEG  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Ra, Rn, Rd
+// form chosen on: Ra
+1B0CFC7C mneg w28, w3, w12
+1B16FE75 mneg w21, w19, w22
+1B1BFE65 mneg w5, w19, w27
+1B1EFC29 mneg w9, w1, w30
+1B09FF09 mneg w9, w24, w9
+1B1FFF8D mneg w13, w28, wzr
+1B1DFF88 mneg w8, w28, w29
+1B02FEB2 mneg w18, w21, w2
+1B11FD32 mneg w18, w9, w17
+1B16FFE8 mneg w8, wzr, w22
+1B02FDB6 mneg w22, w13, w2
+1B1FFC2C mneg w12, w1, wzr
+1B18FF46 mneg w6, w26, w24
+1B0BFC36 mneg w22, w1, w11
+1B19FC5A mneg w26, w2, w25
+1B15FEA8 mneg w8, w21, w21
+1B00D8DE msub w30, w6, w0, w22
+1B04C75F msub wzr, w26, w4, w17
+1B05D4C2 msub w2, w6, w5, w21
+1B0BE1D0 msub w16, w14, w11, w24
+1B10B1B8 msub w24, w13, w16, w12
+1B1DE5E2 msub w2, w15, w29, w25
+1B1FE00F msub w15, w0, wzr, w24
+1B05919B msub w27, w12, w5, w4
+1B1E843A msub w26, w1, w30, w1
+1B15AC0D msub w13, w0, w21, w11
+1B14CB1A msub w26, w24, w20, w18
+1B06F000 msub w0, w0, w6, w28
+1B07DF77 msub w23, w27, w7, w23
+1B1CC0C9 msub w9, w6, w28, w16
+1B0B94E9 msub w9, w7, w11, w5
+1B02CF4B msub w11, w26, w2, w19
+1B0C807C msub w28, w3, w12, w0
+1B02BDB6 msub w22, w13, w2, w15
+
+// MSUB_64A_dp_3src sf=1|op54=00|11011|op31=000|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Msub64aDp3src: MSUB  <Xd>, <Xn>, <Xm>, <Xa>
+// MnegMsub64aDp3src: MNEG  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Ra, Rn, Rd
+// form chosen on: Ra
+9B1FFE1C mneg x28, x16, xzr
+9B1AFC31 mneg x17, x1, x26
+9B01FE5A mneg x26, x18, x1
+9B1FFC5A mneg x26, x2, xzr
+9B1EFE63 mneg x3, x19, lr
+9B1AFFE9 mneg x9, xzr, x26
+9B08FFF3 mneg x19, xzr, x8
+9B1EFC70 mneg x16, x3, lr
+9B1DFDFE mneg lr, x15, fp
+9B1AFCBE mneg lr, x5, x26
+9B1EFDA7 mneg x7, x13, lr
+9B02FF36 mneg x22, x25, x2
+9B0FFD31 mneg x17, x9, x15
+9B06FD50 mneg x16, x10, x6
+9B1CFF9F mneg xzr, x28, x28
+9B0CFF1C mneg x28, x24, x12
+9B1D8C84 msub x4, x4, fp, x3
+9B0AC571 msub x17, x11, x10, x17
+9B0EF2A3 msub x3, x21, x14, x28
+9B008BFE msub lr, xzr, x0, x2
+9B039EC4 msub x4, x22, x3, x7
+9B10F7C3 msub x3, lr, x16, fp
+9B17B4F5 msub x21, x7, x23, x13
+9B0ADFF8 msub x24, xzr, x10, x23
+9B14E892 msub x18, x4, x20, x26
+9B10F23D msub fp, x17, x16, x28
+9B19F417 msub x23, x0, x25, fp
+9B1DE226 msub x6, x17, fp, x24
+9B1A8FB0 msub x16, fp, x26, x3
+9B0DD84D msub x13, x2, x13, x22
+9B0CD64E msub x14, x18, x12, x21
+9B05BE59 msub x25, x18, x5, x15
+9B1F8200 msub x0, x16, xzr, x0
+9B01BE5A msub x26, x18, x1, x15

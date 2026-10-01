@@ -1,0 +1,53 @@
+// VRECPE_T1_D 111111111|D=x|11|size=xx|opc1=11|Vd=xxxx|010|F=x|0|Q=0|M=x|0|Vm=xxxx
+// VrecpeT1D: VRECPE{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffbbb523 vrecpe.f32 d11, d19
+fff72529 vrecpe.f16 d18, d25
+ffbbe52e vrecpe.f32 d14, d30
+fff78500 vrecpe.f16 d24, d0
+fffb9404 vrecpe.u32 d25, d4
+fffbf528 vrecpe.f32 d31, d24
+fffb2400 vrecpe.u32 d18, d0
+ffb74523 vrecpe.f16 d4, d19
+FFB3B523 UNDEFINED
+FFBFB523 UNDEFINED
+FFBB052F vrecpe.f32 d0, d31
+FFBB1522 vrecpe.f32 d1, d18
+FFBB0521 vrecpe.f32 d0, d17
+FFB3B423 UNDEFINED
+FFB7B423 UNDEFINED
+FFBFB423 UNDEFINED
+FFBBF50F vrecpe.f32 d15, d15
+FFFB0520 vrecpe.f32 d16, d16
+FFBBB52F vrecpe.f32 d11, d31
+FFBBB523 [ne] vrecpene.f32 d11, d19
+
+// VRECPE_T1_Q 111111111|D=x|11|size=xx|opc1=11|Vd=xxxx|010|F=x|0|Q=1|M=x|0|Vm=xxxx
+// VrecpeT1Q: VRECPE{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffbb0468 vrecpe.u32 q0, q12
+ffb7c544 vrecpe.f16 q6, q2
+ffbb8568 vrecpe.f32 q4, q12
+fff74544 vrecpe.f16 q10, q2
+ffbbc54e vrecpe.f32 q6, q7
+fffb446a vrecpe.u32 q10, q13
+ffb78546 vrecpe.f16 q4, q3
+fffb8548 vrecpe.f32 q12, q4
+FFB3F46F UNDEFINED
+FFBF1461 UNDEFINED
+FFBB2460 vrecpe.u32 q1, q8
+FFFB0462 vrecpe.u32 q8, q9
+FFB3F44F UNDEFINED
+FFF3F56F UNDEFINED
+FFB70468 UNDEFINED
+FFBF0468 UNDEFINED
+FFBF0568 UNDEFINED
+FFBB0440 vrecpe.u32 q0, q0
+FFBB0460 vrecpe.u32 q0, q8
+FFBB0468 [ne] vrecpene.u32 q0, q12

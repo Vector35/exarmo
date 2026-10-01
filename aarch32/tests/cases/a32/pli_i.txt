@@ -1,0 +1,17 @@
+// PLI_i_A1 1111|0|1|0|D=0|U=x|R=1|0|1|Rn=xxxx|(1)(1)(1)(1)|imm12=xxxxxxxxxxxx
+// PliIA1: PLI{<c>}{<q>}  [<Rn> {, #{<+/->}<imm>}]
+// register fields: Rn
+F4500000 pli [r0, #-0x0] (unpredictable)
+F4DFFFFF pli [pc, #0xfff]
+F4508800 pli [r0, #-0x800] (unpredictable)
+F4504400 pli [r0, #-0x400] (unpredictable)
+F4502200 pli [r0, #-0x200] (unpredictable)
+F4501100 pli [r0, #-0x100] (unpredictable)
+F4500080 pli [r0, #-0x80] (unpredictable)
+F4500040 pli [r0, #-0x40] (unpredictable)
+F4500020 pli [r0, #-0x20] (unpredictable)
+F4500010 pli [r0, #-0x10] (unpredictable)
+F4500008 pli [r0, #-0x8] (unpredictable)
+F4500004 pli [r0, #-0x4] (unpredictable)
+F4500002 pli [r0, #-0x2] (unpredictable)
+F4500001 pli [r0, #-0x1] (unpredictable)

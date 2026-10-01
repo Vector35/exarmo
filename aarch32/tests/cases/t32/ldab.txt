@@ -1,0 +1,12 @@
+// LDAB_T1 111|0100|op0=0110|L=1|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=0|sz=00|Rd=(1)(1)(1)(1)
+// LdabT1: LDAB{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// IT state read: condition
+E8D00080 ldab r0, [r0] (unpredictable)
+E8DFFF8F ldab pc, [pc] (unpredictable)
+E8D00888 ldab r0, [r0] (unpredictable)
+E8D00484 ldab r0, [r0] (unpredictable)
+E8D00282 ldab r0, [r0] (unpredictable)
+E8D00181 ldab r0, [r0] (unpredictable)
+E8D00080 [ne] ldabne r0, [r0] (unpredictable)
+E8D12F8F ldab r2, [r1]

@@ -1,0 +1,48 @@
+// VHSUB_A1_D 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|00|op=1|0|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VhsubA1D: VHSUB{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f35cd22c vhsub.u16 d29, d12, d28
+f246d22b vhsub.s8 d29, d6, d27
+f20332a3 vhsub.s8 d3, d19, d19
+f24db282 vhsub.s8 d27, d29, d2
+f25c328f vhsub.s16 d19, d28, d15
+f3160209 vhsub.u16 d0, d6, d9
+f21182a6 vhsub.s16 d8, d17, d22
+f2595207 vhsub.s16 d21, d9, d7
+F360F220 vhsub.u32 d31, d0, d16
+F37CD22C UNDEFINED
+F26F4228 vhsub.s32 d20, d15, d24
+F3482224 vhsub.u8 d18, d8, d20
+F3641221 vhsub.u32 d17, d4, d17
+F312F200 vhsub.u16 d15, d2, d0
+F27CD22C UNDEFINED
+F3500220 vhsub.u16 d16, d0, d16
+F350F2AF vhsub.u16 d31, d16, d31
+F35FD22C vhsub.u16 d29, d15, d28
+F35FD2AC vhsub.u16 d29, d31, d28
+
+// VHSUB_A1_Q 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|00|op=1|0|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VhsubA1Q: VHSUB{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f3440268 vhsub.u8 q8, q2, q12
+f20ee26e vhsub.s8 q7, q7, q15
+f24c626e vhsub.s8 q11, q6, q15
+f35642e6 vhsub.u16 q10, q11, q11
+f246e266 vhsub.s8 q15, q3, q11
+f22ec26e vhsub.s32 q6, q7, q15
+f220e2c8 vhsub.s32 q7, q8, q4
+f26a82e2 vhsub.s32 q12, q13, q9
+F37FF26F UNDEFINED
+F2582260 vhsub.s16 q9, q4, q8
+F3220264 vhsub.u32 q0, q1, q10
+F2711261 UNDEFINED
+F33FF24F UNDEFINED
+F34FF2EF UNDEFINED
+F3400240 vhsub.u8 q8, q0, q0
+F3440260 vhsub.u8 q8, q2, q8

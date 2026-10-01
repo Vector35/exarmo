@@ -1,0 +1,18 @@
+// ld3q_z_p_bi_contiguous 101|0010|num=10|00|1|imm4=xxxx|111|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld3qZPBiContiguous: LD3Q  { <Zt1>.Q, <Zt2>.Q, <Zt3>.Q }, <Pg>/Z, [<Xn|SP>{, #<imm>, MUL VL}]
+// register fields: Pg, Rn, Zt
+A510E006 ld3q {z6.q, z7.q, z8.q}, p0/z, [x0]
+A510E00D ld3q {z13.q, z14.q, z15.q}, p0/z, [x0]
+A510E014 ld3q {z20.q, z21.q, z22.q}, p0/z, [x0]
+A51FE7E0 ld3q {z0.q, z1.q, z2.q}, p1/z, [sp, #-0x3, mul vl]
+A510E81F ld3q {z31.q, z0.q, z1.q}, p2/z, [x0]
+A510EC06 ld3q {z6.q, z7.q, z8.q}, p3/z, [x0]
+A510F006 ld3q {z6.q, z7.q, z8.q}, p4/z, [x0]
+A510F406 ld3q {z6.q, z7.q, z8.q}, p5/z, [x0]
+A510F806 ld3q {z6.q, z7.q, z8.q}, p6/z, [x0]
+A510FC06 ld3q {z6.q, z7.q, z8.q}, p7/z, [x0]
+A510E000 ld3q {z0.q, z1.q, z2.q}, p0/z, [x0]
+A518E006 ld3q {z6.q, z7.q, z8.q}, p0/z, [x0, #-0x18, mul vl]
+A514E006 ld3q {z6.q, z7.q, z8.q}, p0/z, [x0, #0xc, mul vl]
+A512E006 ld3q {z6.q, z7.q, z8.q}, p0/z, [x0, #0x6, mul vl]
+A511E006 ld3q {z6.q, z7.q, z8.q}, p0/z, [x0, #0x3, mul vl]

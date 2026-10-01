@@ -1,0 +1,14 @@
+// luti2_z_ztz_ 1|10|0000|01|1|001|1|i4=xxxx|size=xx|opc2=00|Zn=xxxxx|Zd=xxxxx
+// Luti2ZZtz: LUTI2  <Zd>.<T>, ZT0, <Zn>[<index>]
+// register fields: Zn, Zd
+C0CC0002 luti2 z2.b, zt0, z0[0]
+C0CC0009 luti2 z9.b, zt0, z0[0]
+C0CC0010 luti2 z16.b, zt0, z0[0]
+C0CFD3E0 luti2 z0.h, zt0, z31[15]
+C0CC201F luti2 z31.s, zt0, z0[0]
+C0CC3002 UNDEFINED
+C0CC0000 luti2 z0.b, zt0, z0[0]
+C0CE0002 luti2 z2.b, zt0, z0[8]
+C0CD0002 luti2 z2.b, zt0, z0[4]
+C0CC8002 luti2 z2.b, zt0, z0[2]
+C0CC4002 luti2 z2.b, zt0, z0[1]

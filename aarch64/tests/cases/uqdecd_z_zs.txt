@@ -1,0 +1,24 @@
+// uqdecd_z_zs_ 000|0010|0|size=11|1|0|imm4=xxxx|11|00|D=1|U=1|pattern=xxxxx|Zdn=xxxxx
+// UqdecdZZs: UQDECD  <Zdn>.D{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04E9CF85 uqdecd z5.d, #0x1c, mul #0xa
+04EACE0D uqdecd z13.d, #0x10, mul #0xb
+04E6CD9B uqdecd z27.d, vl128, mul #0x7
+04E3CDC2 uqdecd z2.d, #0xe, mul #0x4
+04E0CC3C uqdecd z28.d, vl1
+04E6CF96 uqdecd z22.d, #0x1c, mul #0x7
+04EBCE5C uqdecd z28.d, #0x12, mul #0xc
+04EACD4D uqdecd z13.d, vl32, mul #0xb
+04E2CC11 uqdecd z17.d, pow2, mul #0x3
+04E9CD73 uqdecd z19.d, vl64, mul #0xa
+04E4CE4C uqdecd z12.d, #0x12, mul #0x5
+04EECFA8 uqdecd z8.d, mul4, mul #0xf
+04E5CD8B uqdecd z11.d, vl128, mul #0x6
+04E5CE9B uqdecd z27.d, #0x14, mul #0x6
+04E4CC28 uqdecd z8.d, vl1, mul #0x5
+04EECCC2 uqdecd z2.d, vl6, mul #0xf
+04EFCFE0 uqdecd z0.d, all, mul #0x10
+04E9CF9F uqdecd z31.d, #0x1c, mul #0xa
+04E8CD05 uqdecd z5.d, vl8, mul #0x9
+04E1CC85 uqdecd z5.d, vl4, mul #0x2
+04E9CC45 uqdecd z5.d, vl2, mul #0xa

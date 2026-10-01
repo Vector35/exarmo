@@ -1,0 +1,52 @@
+// VRSHR_A1_D 1111001|U=x|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=0010|L=x|Q=0|M=x|1|Vm=xxxx
+// VrshrA1D: VRSHR{<c>}{<q>}.<type><size>  {<Dd>, }<Dm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f2f6923d vrshr.s32 d25, d29, #10
+f38af29d vrshr.u64 d15, d13, #54
+f3b48217 vrshr.u32 d8, d7, #12
+f3a8e2bb vrshr.u64 d14, d27, #24
+f2a8a21e vrshr.s32 d10, d14, #24
+f3c8c234 vrshr.u8 d28, d20, #8
+f2f332ba vrshr.s64 d19, d26, #13
+f2914211 vrshr.s16 d4, d1, #15
+F3800290 vrshr.u64 d0, d0, #0x40
+F2FF223F vrshr.s32 d18, d31, #0x1
+F2E01238 vrshr.s32 d17, d24, #0x20
+F2900232 vrshr.s16 d0, d18, #0x10
+F3C40290 vrshr.u64 d16, d0, #0x3c
+F3C2F29F vrshr.u64 d31, d15, #0x3e
+F381F2B0 vrshr.u64 d15, d16, #0x3f
+F2C092BF vrshr.s64 d25, d31, #0x40
+F2FF923D vrshr.s32 d25, d29, #0x1
+F2FF92BD vrshr.s64 d25, d29, #0x1
+
+// VRSHR_A1_Q 1111001|U=x|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=0010|L=x|Q=1|M=x|1|Vm=xxxx
+// VrshrA1Q: VRSHR{<c>}{<q>}.<type><size>  {<Qd>, }<Qm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f2f84258 vrshr.s32 q10, q4, #8
+f3b0c2d2 vrshr.u64 q6, q1, #16
+f3f60270 vrshr.u32 q8, q8, #10
+f2b442d2 vrshr.s64 q2, q1, #12
+f3b6e2d4 vrshr.u64 q7, q2, #10
+f3ea4276 vrshr.u32 q10, q11, #22
+f3a6c2de vrshr.u64 q6, q7, #26
+f38cc2dc vrshr.u64 q6, q6, #52
+F38082D0 vrshr.u64 q4, q0, #0x40
+F2FF2258 vrshr.s32 q9, q4, #0x1
+F2A00258 vrshr.s32 q0, q4, #0x20
+F2D04258 vrshr.s16 q10, q4, #0x10
+F2C84258 vrshr.s8 q10, q4, #0x8
+F384C2D2 vrshr.u64 q6, q1, #0x3c
+F382C2D2 vrshr.u64 q6, q1, #0x3e
+F381C2D2 vrshr.u64 q6, q1, #0x3f
+F2C0F25F UNDEFINED
+F2F81251 UNDEFINED
+F2C042D8 vrshr.s64 q10, q4, #0x40
+F2FF4258 vrshr.s32 q10, q4, #0x1
+F2FF42D8 vrshr.s64 q10, q4, #0x1
+F2B8F25F UNDEFINED
+F2F8F27F UNDEFINED

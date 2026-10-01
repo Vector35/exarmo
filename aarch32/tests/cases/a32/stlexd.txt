@@ -1,0 +1,14 @@
+// STLEXD_A1 cond=xxxx|00|01|1|size=01|L=0|Rn=xxxx|Rd=xxxx|(1)(1)|ex=1|ord=0|1|00|1|Rt=xxxx
+// StlexdA1: STLEXD{<c>}{<q>}  <Rd>, <Rt>, <Rt2>, [<Rn>]
+// register fields: Rn, Rd, Rt
+61abbe96 stlexdvs r11, r6, r7, [r11] (unpredictable)
+// Binary Ninja's tests
+e1a62e94 stlexd r2, r4, r5, [r6]
+e1a86e92 stlexd r6, r2, r3, [r8]
+01A00290 stlexdeq r0, r0, r1, [r0] (unpredictable)
+F1ABBE96 UNALLOCATED
+81AFF69F UNPREDICTABLE
+41ABBA9B stlexdmi r11, r11, r12, [r11] (unpredictable)
+21ABBE9B stlexdcs r11, r11, r12, [r11] (unpredictable)
+11ABBE96 stlexdne r11, r6, r7, [r11] (unpredictable)
+81AFF696 stlexdhi pc, r6, r7, [pc] (unpredictable)

@@ -1,0 +1,95 @@
+// LDRSH_i_T1 111|1100|11|size=01|1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrshIT1: LDRSH{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+F9B00000 ldrsh r0, [r0]
+F9B0F000 reserved hint
+F9B00FFF ldrsh r0, [r0, #0xfff]
+F9B00800 ldrsh r0, [r0, #0x800]
+F9B00400 ldrsh r0, [r0, #0x400]
+F9B00200 ldrsh r0, [r0, #0x200]
+F9B00100 ldrsh r0, [r0, #0x100]
+F9B00080 ldrsh r0, [r0, #0x80]
+F9B00040 ldrsh r0, [r0, #0x40]
+F9B00020 ldrsh r0, [r0, #0x20]
+F9B00008 ldrsh r0, [r0, #0x8]
+F9B00004 ldrsh r0, [r0, #0x4]
+F9B00002 ldrsh r0, [r0, #0x2]
+F9B00001 ldrsh r0, [r0, #0x1]
+F9B00010 ldrsh r0, [r0, #0x10]
+F9B00000 [ne] ldrshne r0, [r0]
+F9B12000 ldrsh r2, [r1]
+
+// LDRSH_i_T2_off 111110010|size=01|1|Rn=xxxx|Rt=xxxx|1|P=1|U=0|W=0|imm8=xxxxxxxx
+// LdrshIT2Off: LDRSH{<c>}{<q>}  <Rt>, [<Rn> {, #-<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f9312cef ldrsh r2, [r1, #-239]
+f9303c8e ldrsh r3, [r0, #-142]
+f9326c45 ldrsh r6, [r2, #-69]
+f93d9c4f ldrsh r9, [sp, #-79]
+f9373ce1 ldrsh r3, [r7, #-225]
+f9323c0c ldrsh r3, [r2, #-12]
+f93c7cd3 ldrsh r7, [r12, #-211]
+f93a6ca9 ldrsh r6, [r10, #-169]
+F9310C00 ldrsh r0, [r1, #-0x0]
+F931FCEF reserved hint
+F9311CFF ldrsh r1, [r1, #-0xff]
+F9312C80 ldrsh r2, [r1, #-0x80]
+F9312C40 ldrsh r2, [r1, #-0x40]
+F9312C20 ldrsh r2, [r1, #-0x20]
+F9312C10 ldrsh r2, [r1, #-0x10]
+F9312C08 ldrsh r2, [r1, #-0x8]
+F9312C04 ldrsh r2, [r1, #-0x4]
+F9312C02 ldrsh r2, [r1, #-0x2]
+F9312C01 ldrsh r2, [r1, #-0x1]
+F9312CEF [ne] ldrshne r2, [r1, #-0xef]
+
+// LDRSH_i_T2_post 111110010|size=01|1|Rn=xxxx|Rt=xxxx|1|P=0|U=x|W=1|imm8=xxxxxxxx
+// LdrshIT2Post: LDRSH{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// register fields: Rn, Rt
+// IT state read: condition
+f934eb3d ldrsh lr, [r4], #61
+f9309955 ldrsh r9, [r0], #-85
+f9355989 ldrsh r5, [r5], #-137 (unpredictable)
+f932c964 ldrsh r12, [r2], #-100
+f937291a ldrsh r2, [r7], #-26
+f93d1bbf ldrsh r1, [sp], #191
+f93d79e8 ldrsh r7, [sp], #-232
+f9385940 ldrsh r5, [r8], #-64
+F9340B00 ldrsh r0, [r4], #0x0
+F934FBFF ldrsh pc, [r4], #0xff (unpredictable)
+F934EB80 ldrsh lr, [r4], #0x80
+F934EB20 ldrsh lr, [r4], #0x20
+F934EB10 ldrsh lr, [r4], #0x10
+F934EB08 ldrsh lr, [r4], #0x8
+F934EB04 ldrsh lr, [r4], #0x4
+F934EB02 ldrsh lr, [r4], #0x2
+F934EB01 ldrsh lr, [r4], #0x1
+F93FFBFF reserved hint
+F934EB3D [ne] ldrshne lr, [r4], #0x3d
+
+// LDRSH_i_T2_pre 111110010|size=01|1|Rn=xxxx|Rt=xxxx|1|P=1|U=x|W=1|imm8=xxxxxxxx
+// LdrshIT2Pre: LDRSH{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn, Rt
+// IT state read: condition
+f93bed7f ldrsh lr, [r11, #-127]!
+f9398dca ldrsh r8, [r9, #-202]!
+f93ddf2e ldrsh sp, [sp, #46]! (unpredictable)
+f9372d84 ldrsh r2, [r7, #-132]!
+f931dd97 ldrsh sp, [r1, #-151]!
+f93a2d4d ldrsh r2, [r10, #-77]!
+f933ad95 ldrsh r10, [r3, #-149]!
+f9340fbf ldrsh r0, [r4, #191]!
+F930FD00 ldrsh pc, [r0, #-0x0]! (unpredictable)
+F93BEDFF ldrsh lr, [r11, #-0xff]!
+F93BED80 ldrsh lr, [r11, #-0x80]!
+F93BED40 ldrsh lr, [r11, #-0x40]!
+F93BED20 ldrsh lr, [r11, #-0x20]!
+F93BED10 ldrsh lr, [r11, #-0x10]!
+F93BED08 ldrsh lr, [r11, #-0x8]!
+F93BED04 ldrsh lr, [r11, #-0x4]!
+F93BED02 ldrsh lr, [r11, #-0x2]!
+F93BED01 ldrsh lr, [r11, #-0x1]!
+F93FFD00 reserved hint
+F93BED7F [ne] ldrshne lr, [r11, #-0x7f]!

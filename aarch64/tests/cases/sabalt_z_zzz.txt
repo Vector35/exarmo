@@ -1,0 +1,14 @@
+// sabalt_z_zzz_ 010|0010|1|size=xx|0|Zm=xxxxx|11|00|U=0|T=1|Zn=xxxxx|Zda=xxxxx
+// SabaltZZzz: SABALT  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+45CCC477 sabalt z23.d, z3.s, z12.s
+458FC719 sabalt z25.s, z24.h, z15.h
+45DEC55E sabalt z30.d, z10.s, z30.s
+4583C4F2 sabalt z18.s, z7.h, z3.h
+4556C43E sabalt z30.h, z1.b, z22.b
+45DCC535 sabalt z21.d, z9.s, z28.s
+4586C547 sabalt z7.s, z10.h, z6.h
+454BC6A2 sabalt z2.h, z21.b, z11.b
+45C0C400 sabalt z0.d, z0.s, z0.s
+45DFC7FF sabalt z31.d, z31.s, z31.s
+450CC477 UNDEFINED

@@ -1,0 +1,20 @@
+// pmullt_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|11|op=0|U=1|T=1|Zn=xxxxx|Zd=xxxxx
+// PmulltZZz: PMULLT  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45CA6EC4 pmullt z4.d, z22.s, z10.s
+45D96D24 pmullt z4.d, z9.s, z25.s
+45DA6DCF pmullt z15.d, z14.s, z26.s
+45CF6D78 pmullt z24.d, z11.s, z15.s
+455F6F56 pmullt z22.h, z26.b, z31.b
+45DF6D0E pmullt z14.d, z8.s, z31.s
+45C06C00 pmullt z0.d, z0.s, z0.s
+45CA6FFF pmullt z31.d, z31.s, z10.s
+458A6EC4 UNDEFINED
+
+// pmullt_z_zz_q 010|0010|1|size=00|0|Zm=xxxxx|0|11|op=0|U=1|T=1|Zn=xxxxx|Zd=xxxxx
+// PmulltZZzQ: PMULLT  <Zd>.Q, <Zn>.D, <Zm>.D
+// register fields: Zm, Zn, Zd
+45016D11 pmullt z17.q, z8.d, z1.d
+45066EF8 pmullt z24.q, z23.d, z6.d
+45006C00 pmullt z0.q, z0.d, z0.d
+451F6FFF pmullt z31.q, z31.d, z31.d

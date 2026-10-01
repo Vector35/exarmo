@@ -1,0 +1,11 @@
+// LDAH_A1 cond=xxxx|00|01|1|size=11|L=1|Rn=xxxx|Rt=xxxx|(1)(1)|ex=0|ord=0|1|00|1|xRt=(1)(1)(1)(1)
+// LdahA1: LDAH{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// Binary Ninja's tests
+e1f52c9f ldah r2, [r5]
+01F00090 ldaheq r0, [r0] (unpredictable)
+F1F52C9F UNALLOCATED
+81FFF498 ldahhi pc, [pc] (unpredictable)
+41F55894 ldahmi r5, [r5] (unpredictable)
+21F52C92 ldahcs r2, [r5] (unpredictable)
+11F52C91 ldahne r2, [r5] (unpredictable)

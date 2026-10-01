@@ -1,0 +1,19 @@
+// USADA8_A1 cond=xxxx|011|11000|Rd=xxxx|Ra=xxxx|Rm=xxxx|000|1|Rn=xxxx
+// Usada8A1: USADA8{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+6786d31b usada8vs r6, r11, r3, sp
+37874c19 usada8lo r7, r9, r12, r4
+17801818 usada8ne r0, r8, r8, r1
+478c1719 usada8mi r12, r9, r7, r1
+9780231f usada8ls r0, pc, r3, r2 (unpredictable)
+67875919 usada8vs r7, r9, r9, r5
+a787c319 usada8ge r7, r9, r3, r12
+8788cd1e usada8hi r8, lr, sp, r12
+// Binary Ninja's tests
+c7831512 usada8gt r3, r2, r5, r1
+e7817315 usada8 r1, r5, r3, r7
+078F0010 usada8eq pc, r0, r0, r0 (unpredictable)
+F786F31B UNALLOCATED
+27866F1B usada8cs r6, r11, pc, r6 (unpredictable)
+6786D61D usada8vs r6, sp, r6, sp
+6786DD16 usada8vs r6, r6, sp, sp

@@ -1,0 +1,13 @@
+// WFET_only_systeminstrswithreg 110|101|01000000110001|CRm=0000|op2=000|Rd=xxxxx
+// WfetOnlySysteminstrswithreg: WFET  <Xt>
+// register fields: Rd
+D503100F wfet x15
+D5031004 wfet x4
+D5031007 wfet x7
+D5031001 wfet x1
+D503100E wfet x14
+D5031008 wfet x8
+D5031014 wfet x20
+D5031006 wfet x6
+D5031000 wfet x0
+D503101F wfet xzr

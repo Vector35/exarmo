@@ -1,0 +1,21 @@
+// fmaxnm_z_p_zs_ 011|0010|1|size=xx|0|11|opc=100|100|Pg=xxx|0000|i1=x|Zdn=xxxxx
+// FmaxnmZPZs: FMAXNM  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <const>
+// register fields: Pg, Zdn
+655C8C03 fmaxnm z3.h, p3/m, z3.h, #0.0
+655C903E fmaxnm z30.h, p4/m, z30.h, #1.0
+659C9034 fmaxnm z20.s, p4/m, z20.s, #1.0
+655C803E fmaxnm z30.h, p0/m, z30.h, #1.0
+65DC9019 fmaxnm z25.d, p4/m, z25.d, #0.0
+655C802E fmaxnm z14.h, p0/m, z14.h, #1.0
+655C9038 fmaxnm z24.h, p4/m, z24.h, #1.0
+65DC9C36 fmaxnm z22.d, p7/m, z22.d, #1.0
+65DC8800 fmaxnm z0.d, p2/m, z0.d, #0.0
+655C942E fmaxnm z14.h, p5/m, z14.h, #1.0
+655C8028 fmaxnm z8.h, p0/m, z8.h, #1.0
+655C9816 fmaxnm z22.h, p6/m, z22.h, #0.0
+655C9808 fmaxnm z8.h, p6/m, z8.h, #0.0
+65DC9C1C fmaxnm z28.d, p7/m, z28.d, #0.0
+655C8834 fmaxnm z20.h, p2/m, z20.h, #1.0
+655C8C2C fmaxnm z12.h, p3/m, z12.h, #1.0
+655C841F fmaxnm z31.h, p1/m, z31.h, #0.0
+651C8C03 UNDEFINED

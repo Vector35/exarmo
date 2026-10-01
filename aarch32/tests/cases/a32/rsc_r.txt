@@ -1,0 +1,82 @@
+// RSC_r_A1 cond=xxxx|0000|opc=111|S=0|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// RscRA1: RSC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+e0ed28cb rsc r2, sp, r11, asr #17
+30e30049 rsclo r0, r3, r9, asr #32
+10e15401 rscne r5, r1, r1, lsl #8
+e0ed4e41 rsc r4, sp, r1, asr #28
+70e8a8ac rscvc r10, r8, r12, lsr #17
+80ee7904 rschi r7, lr, r4, lsl #18
+b0eb3fe0 rsclt r3, r11, r0, ror #31
+30e59da2 rsclo r9, r5, r2, lsr #27
+// Binary Ninja's tests
+10e442a5 rscne r4, r4, r5, lsr #5
+30e542a6 rsclo r4, r5, r6, lsr #5
+e0e44005 rsc r4, r4, r5
+e0e44285 rsc r4, r4, r5, lsl #5
+e0e442a5 rsc r4, r4, r5, lsr #5
+e0e442c5 rsc r4, r4, r5, asr #5
+e0e442e5 rsc r4, r4, r5, ror #5
+e0e54006 rsc r4, r5, r6
+e0e54286 rsc r4, r5, r6, lsl #5
+e0e542a6 rsc r4, r5, r6, lsr #5
+e0e542c6 rsc r4, r5, r6, asr #5
+e0e542e6 rsc r4, r5, r6, ror #5
+00E0F84F rsceq pc, r0, pc, asr #0x10
+F0ED28CB UNALLOCATED
+40EF2242 rscmi r2, pc, r2, asr #0x4
+20ED214B rsccs r2, sp, r11, asr #0x2
+E0ED20CB rsc r2, sp, r11, asr #0x1
+
+// RSC_r_A1_RRX cond=xxxx|0000|opc=111|S=0|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// RscRA1Rrx: RSC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+70ee806f rscvc r8, lr, pc, rrx
+a0e9206b rscge r2, r9, r11, rrx
+70e21060 rscvc r1, r2, r0, rrx
+60e7c061 rscvs r12, r7, r1, rrx
+40e58068 rscmi r8, r5, r8, rrx
+b0ed8061 rsclt r8, sp, r1, rrx
+e0e55069 rsc r5, r5, r9, rrx
+30e2606f rsclo r6, r2, pc, rrx
+00E0006F rsceq r0, r0, pc, rrx
+F0EE806F UNALLOCATED
+80EFF06F rschi pc, pc, pc, rrx
+20EE806E rsccs r8, lr, lr, rrx
+10EE806F rscne r8, lr, pc, rrx
+
+// RSCS_r_A1 cond=xxxx|0000|opc=111|S=1|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// RscsRA1: RSCS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+80f8cda7 rscshi r12, r8, r7, lsr #27
+c0f39e86 rscsgt r9, r3, r6, lsl #29
+80f04429 rscshi r4, r0, r9, lsr #8
+30f54c2d rscslo r4, r5, sp, lsr #24
+50f25b2b rscspl r5, r2, r11, lsr #22
+c0fa85ae rscsgt r8, r10, lr, lsr #11
+10faeae4 rscsne lr, r10, r4, ror #21
+a0f76be9 rscsge r6, r7, r9, ror #23
+00FF0040 rscseq r0, pc, r0, asr #0x20
+F0F8CDA7 UNALLOCATED
+40F8FFAF rscsmi pc, r8, pc, lsr #0x1f
+20F88827 rscscs r8, r8, r7, lsr #0x10
+80F8C228 rscshi r12, r8, r8, lsr #0x4
+80F8C12C rscshi r12, r8, r12, lsr #0x2
+80F8C0A7 rscshi r12, r8, r7, lsr #0x1
+
+// RSCS_r_A1_RRX cond=xxxx|0000|opc=111|S=1|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// RscsRA1Rrx: RSCS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+e0f7406f rscs r4, r7, pc, rrx
+40f79063 rscsmi r9, r7, r3, rrx
+90fe9061 rscsls r9, lr, r1, rrx
+90fe006a rscsls r0, lr, r10, rrx
+e0fba065 rscs r10, r11, r5, rrx
+30f2b06e rscslo r11, r2, lr, rrx
+d0f7a06c rscsle r10, r7, r12, rrx
+a0f7506b rscsge r5, r7, r11, rrx
+00F0F060 rscseq pc, r0, r0, rrx
+F0F7406F UNALLOCATED
+80FF4064 rscshi r4, pc, r4, rrx
+20F7706F rscscs r7, r7, pc, rrx
+10F74067 rscsne r4, r7, r7, rrx

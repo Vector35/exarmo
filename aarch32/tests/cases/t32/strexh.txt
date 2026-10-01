@@ -1,0 +1,12 @@
+// STREXH_T1 111|0100|op0=0110|L=0|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|01|sz=01|Rd=xxxx
+// StrexhT1: STREXH{<c>}{<q>}  <Rd>, <Rt>, [<Rn>]
+// register fields: Rn, Rt, Rd
+// IT state read: condition
+e8cc9f59 strexh r9, r9, [r12] (unpredictable)
+E8C00050 strexh r0, r0, [r0] (unpredictable)
+E8CFF85F strexh pc, pc, [pc] (unpredictable)
+E8CCC459 strexh r9, r12, [r12] (unpredictable)
+E8CC925C strexh r12, r9, [r12] (unpredictable)
+E8CC9159 strexh r9, r9, [r12] (unpredictable)
+E8CC9F59 [ne] strexhne r9, r9, [r12] (unpredictable)
+E8C12F53 strexh r3, r2, [r1]

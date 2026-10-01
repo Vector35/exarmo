@@ -1,0 +1,12 @@
+// LDAEXH_T1 111|0100|op0=0110|L=1|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=1|sz=01|Rd=(1)(1)(1)(1)
+// LdaexhT1: LDAEXH{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// IT state read: condition
+E8D000D0 ldaexh r0, [r0] (unpredictable)
+E8DFFFDF ldaexh pc, [pc] (unpredictable)
+E8D008D8 ldaexh r0, [r0] (unpredictable)
+E8D004D4 ldaexh r0, [r0] (unpredictable)
+E8D002D2 ldaexh r0, [r0] (unpredictable)
+E8D001D1 ldaexh r0, [r0] (unpredictable)
+E8D000D0 [ne] ldaexhne r0, [r0] (unpredictable)
+E8D12FDF ldaexh r2, [r1]

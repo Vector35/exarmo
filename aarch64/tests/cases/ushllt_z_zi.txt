@@ -1,0 +1,69 @@
+// ushllt_z_zi_ 010|0010|1|0|tszh=x|0|tszl=xx|imm3=xxx|10|10|U=1|T=1|Zn=xxxxx|Zd=xxxxx
+// UshlltZZi: USHLLT  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+450AAFE1 ushllt z1.h, z31.b, #0x2
+4546AF2F ushllt z15.d, z25.s, #0x6
+4554AC9D ushllt z29.d, z4.s, #0x14
+455EAD0D ushllt z13.d, z8.s, #0x1e
+4554AF81 ushllt z1.d, z28.s, #0x14
+4515ACB0 ushllt z16.s, z5.h, #0x5
+4547ACBB ushllt z27.d, z5.s, #0x7
+4509AFCC ushllt z12.h, z30.b, #0x1
+4508AC00 ushllt z0.h, z0.b, #0x0
+450BAFFF ushllt z31.h, z31.b, #0x3
+4500AFE1 UNDEFINED
+4501AFE1 UNDEFINED
+4502AFE1 UNDEFINED
+4503AFE1 UNDEFINED
+4504AFE1 UNDEFINED
+4505AFE1 UNDEFINED
+4506AFE1 UNDEFINED
+4507AFE1 UNDEFINED
+450CAFE1 ushllt z1.h, z31.b, #0x4
+450DAFE1 ushllt z1.h, z31.b, #0x5
+450EAFE1 ushllt z1.h, z31.b, #0x6
+450FAFE1 ushllt z1.h, z31.b, #0x7
+4510AFE1 ushllt z1.s, z31.h, #0x0
+4511AFE1 ushllt z1.s, z31.h, #0x1
+4512AFE1 ushllt z1.s, z31.h, #0x2
+4513AFE1 ushllt z1.s, z31.h, #0x3
+4514AFE1 ushllt z1.s, z31.h, #0x4
+4516AFE1 ushllt z1.s, z31.h, #0x6
+4517AFE1 ushllt z1.s, z31.h, #0x7
+4518AFE1 ushllt z1.s, z31.h, #0x8
+4519AFE1 ushllt z1.s, z31.h, #0x9
+451AAFE1 ushllt z1.s, z31.h, #0xa
+451BAFE1 ushllt z1.s, z31.h, #0xb
+451CAFE1 ushllt z1.s, z31.h, #0xc
+451DAFE1 ushllt z1.s, z31.h, #0xd
+451EAFE1 ushllt z1.s, z31.h, #0xe
+451FAFE1 ushllt z1.s, z31.h, #0xf
+4540AFE1 ushllt z1.d, z31.s, #0x0
+4541AFE1 ushllt z1.d, z31.s, #0x1
+4542AFE1 ushllt z1.d, z31.s, #0x2
+4543AFE1 ushllt z1.d, z31.s, #0x3
+4544AFE1 ushllt z1.d, z31.s, #0x4
+4545AFE1 ushllt z1.d, z31.s, #0x5
+4548AFE1 ushllt z1.d, z31.s, #0x8
+4549AFE1 ushllt z1.d, z31.s, #0x9
+454AAFE1 ushllt z1.d, z31.s, #0xa
+454BAFE1 ushllt z1.d, z31.s, #0xb
+454CAFE1 ushllt z1.d, z31.s, #0xc
+454DAFE1 ushllt z1.d, z31.s, #0xd
+454EAFE1 ushllt z1.d, z31.s, #0xe
+454FAFE1 ushllt z1.d, z31.s, #0xf
+4550AFE1 ushllt z1.d, z31.s, #0x10
+4551AFE1 ushllt z1.d, z31.s, #0x11
+4552AFE1 ushllt z1.d, z31.s, #0x12
+4553AFE1 ushllt z1.d, z31.s, #0x13
+4555AFE1 ushllt z1.d, z31.s, #0x15
+4556AFE1 ushllt z1.d, z31.s, #0x16
+4557AFE1 ushllt z1.d, z31.s, #0x17
+4558AFE1 ushllt z1.d, z31.s, #0x18
+4559AFE1 ushllt z1.d, z31.s, #0x19
+455AAFE1 ushllt z1.d, z31.s, #0x1a
+455BAFE1 ushllt z1.d, z31.s, #0x1b
+455CAFE1 ushllt z1.d, z31.s, #0x1c
+455DAFE1 ushllt z1.d, z31.s, #0x1d
+455FAFE1 ushllt z1.d, z31.s, #0x1f

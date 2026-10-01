@@ -1,0 +1,8 @@
+// FDOT_asimdsame2_DD 0|Q=x|U=0|0|111|0|size=00|0|Rm=xxxxx|1|opcode=1111|1|Rn=xxxxx|Rd=xxxxx
+// FdotAsimdsame2Dd: FDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// register fields: Rm, Rn, Rd
+0E00FC00 fdot v0.2s, v0.8b, v0.8b
+0E00FC07 fdot v7.2s, v0.8b, v0.8b
+0E00FC0E fdot v14.2s, v0.8b, v0.8b
+4E1FFFFF fdot v31.4s, v31.16b, v31.16b
+0E01FC43 fdot v3.2s, v2.8b, v1.8b

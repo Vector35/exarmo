@@ -1,0 +1,40 @@
+// UMLAL_A1 cond=xxxx|0000|opc=101|S=0|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|1001|Rn=xxxx
+// UmlalA1: UMLAL{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+90ad0b98 umlalls r0, sp, r8, r11
+10a11a9e umlalne r1, r1, lr, r10 (unpredictable)
+e0a93291 umlal r3, r9, r1, r2
+80a1519d umlalhi r5, r1, sp, r1
+d0a37792 umlalle r7, r3, r2, r7
+b0a1d399 umlallt sp, r1, r9, r3
+60af3d98 umlalvs r3, pc, r8, sp (unpredictable)
+70ab0f95 umlalvc r0, r11, r5, pc (unpredictable)
+// Binary Ninja's tests
+c0a16692 umlalgt r6, r1, r2, r6
+e0a42896 umlal r2, r4, r6, r8
+00A0F090 umlaleq pc, r0, r0, r0 (unpredictable)
+F0AD0B98 UNALLOCATED
+40AD0B9F umlalmi r0, sp, pc, r11 (unpredictable)
+20AD0B9D umlalcs r0, sp, sp, r11
+90AD0B90 umlalls r0, sp, r0, r11
+90AD0B9B umlalls r0, sp, r11, r11
+
+// UMLALS_A1 cond=xxxx|0000|opc=101|S=1|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|1001|Rn=xxxx
+// UmlalsA1: UMLALS{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+40b62e98 umlalsmi r2, r6, r8, lr
+30beba92 umlalslo r11, lr, r2, r10
+10b88c9d umlalsne r8, r8, sp, r12 (unpredictable)
+00b3d699 umlalseq sp, r3, r9, r6
+90b1b095 umlalsls r11, r1, r5, r0
+10b5bb99 umlalsne r11, r5, r9, r11
+e0b82f9e umlals r2, r8, lr, pc (unpredictable)
+50b0d79f umlalspl sp, r0, pc, r7 (unpredictable)
+// Binary Ninja's tests
+00b53291 umlalseq r3, r5, r1, r2
+e0b92392 umlals r2, r9, r2, r3
+F0B62E98 UNALLOCATED
+80BF0E90 umlalshi r0, pc, r0, lr (unpredictable)
+20B6F698 umlalscs pc, r6, r8, r6 (unpredictable)
+40B62E96 umlalsmi r2, r6, r6, lr
+40B62E9E umlalsmi r2, r6, lr, lr

@@ -1,0 +1,9 @@
+// pmull_mz_zzw_1x2 010|0010|1|size=00|1|Zm=xxxxx|111|110|Zn=xxxxx|Zd=xxxx|0
+// PmullMzZzw1x2: PMULL  { <Zd1>.Q-<Zd2>.Q }, <Zn>.D, <Zm>.D
+// register fields: Zm, Zn, Zd
+4520F802 pmull {z2.q-z3.q}, z0.d, z0.d
+4520F810 pmull {z16.q-z17.q}, z0.d, z0.d
+4520F81E pmull {z30.q-z31.q}, z0.d, z0.d
+453FFBE0 pmull {z0.q-z1.q}, z31.d, z31.d
+4520F800 pmull {z0.q-z1.q}, z0.d, z0.d
+4521F846 pmull {z6.q-z7.q}, z2.d, z1.d

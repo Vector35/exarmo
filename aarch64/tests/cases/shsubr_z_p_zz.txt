@@ -1,0 +1,16 @@
+// shsubr_z_p_zz_ 010|0010|0|size=xx|0|10|R=1|S=1|U=0|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// ShsubrZPZz: SHSUBR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+449698A1 shsubr z1.s, p6/m, z1.s, z5.s
+44D691B3 shsubr z19.d, p4/m, z19.d, z13.d
+44D690F5 shsubr z21.d, p4/m, z21.d, z7.d
+44D69DD9 shsubr z25.d, p7/m, z25.d, z14.d
+44969CC9 shsubr z9.s, p7/m, z9.s, z6.s
+44D69319 shsubr z25.d, p4/m, z25.d, z24.d
+44968980 shsubr z0.s, p2/m, z0.s, z12.s
+44168ACB shsubr z11.b, p2/m, z11.b, z22.b
+4456801F shsubr z31.h, p0/m, z31.h, z0.h
+449687E1 shsubr z1.s, p1/m, z1.s, z31.s
+44968CA1 shsubr z1.s, p3/m, z1.s, z5.s
+449694A1 shsubr z1.s, p5/m, z1.s, z5.s
+449698A5 shsubr z5.s, p6/m, z5.s, z5.s

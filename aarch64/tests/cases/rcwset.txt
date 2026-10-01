@@ -1,0 +1,41 @@
+// RCWSET_64_memop 0|S=0|111|VR=0|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Rcwset64Memop: RCWSET  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3820B002 rcwset x0, x2, [x0]
+3820B009 rcwset x0, x9, [x0]
+3820B010 rcwset x0, x16, [x0]
+383FB3E0 rcwset xzr, x0, [sp]
+3820B01F rcwset x0, xzr, [x0]
+3820B000 rcwset x0, x0, [x0]
+3821B043 rcwset x1, x3, [x2]
+
+// RCWSETA_64_memop 0|S=0|111|VR=0|00|A=1|R=0|1|Rs=xxxxx|o3=1|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Rcwseta64Memop: RCWSETA  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+38A0B005 rcwseta x0, x5, [x0]
+38A0B00C rcwseta x0, x12, [x0]
+38A0B013 rcwseta x0, x19, [x0]
+38BFB3E0 rcwseta xzr, x0, [sp]
+38A0B01F rcwseta x0, xzr, [x0]
+38A0B000 rcwseta x0, x0, [x0]
+38A1B043 rcwseta x1, x3, [x2]
+
+// RCWSETAL_64_memop 0|S=0|111|VR=0|00|A=1|R=1|1|Rs=xxxxx|o3=1|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsetal64Memop: RCWSETAL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+38E0B003 rcwsetal x0, x3, [x0]
+38E0B00A rcwsetal x0, x10, [x0]
+38E0B011 rcwsetal x0, x17, [x0]
+38FFB3E0 rcwsetal xzr, x0, [sp]
+38E0B01F rcwsetal x0, xzr, [x0]
+38E0B000 rcwsetal x0, x0, [x0]
+38E1B043 rcwsetal x1, x3, [x2]
+
+// RCWSETL_64_memop 0|S=0|111|VR=0|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsetl64Memop: RCWSETL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3860B000 rcwsetl x0, x0, [x0]
+3860B007 rcwsetl x0, x7, [x0]
+3860B00E rcwsetl x0, x14, [x0]
+387FB3FF rcwsetl xzr, xzr, [sp]
+3861B043 rcwsetl x1, x3, [x2]

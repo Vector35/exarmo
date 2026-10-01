@@ -1,0 +1,24 @@
+// famax_mz_zzw_2x2 1|10|0000|1|size=xx|1|Zm=xxxx|0101100|010|opc=10|Zdn=xxxx|o2=0
+// FamaxMzZzw2x2: FAMAX  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Zm, Zdn
+C160B14C famax {z12.h-z13.h}, {z12.h-z13.h}, {z0.h-z1.h}
+C160B15A famax {z26.h-z27.h}, {z26.h-z27.h}, {z0.h-z1.h}
+C162B148 famax {z8.h-z9.h}, {z8.h-z9.h}, {z2.h-z3.h}
+C1BEB140 famax {z0.s-z1.s}, {z0.s-z1.s}, {z30.s-z31.s}
+C1E0B15E famax {z30.d-z31.d}, {z30.d-z31.d}, {z0.d-z1.d}
+C120B14C UNDEFINED
+C160B140 famax {z0.h-z1.h}, {z0.h-z1.h}, {z0.h-z1.h}
+
+// famax_mz_zzw_4x4 1|10|0000|1|size=xx|1|Zm=xxx|00101110|010|opc=10|Zdn=xxx|0|o2=0
+// FamaxMzZzw4x4: FAMAX  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Zm, Zdn
+C160B948 famax {z8.h-z11.h}, {z8.h-z11.h}, {z0.h-z3.h}
+C164B940 famax {z0.h-z3.h}, {z0.h-z3.h}, {z4.h-z7.h}
+C164B95C famax {z28.h-z31.h}, {z28.h-z31.h}, {z4.h-z7.h}
+C1A8B944 famax {z4.s-z7.s}, {z4.s-z7.s}, {z8.s-z11.s}
+C1ECB94C famax {z12.d-z15.d}, {z12.d-z15.d}, {z12.d-z15.d}
+C170B950 famax {z16.h-z19.h}, {z16.h-z19.h}, {z16.h-z19.h}
+C174B954 famax {z20.h-z23.h}, {z20.h-z23.h}, {z20.h-z23.h}
+C178B958 famax {z24.h-z27.h}, {z24.h-z27.h}, {z24.h-z27.h}
+C17CB948 famax {z8.h-z11.h}, {z8.h-z11.h}, {z28.h-z31.h}
+C120B948 UNDEFINED

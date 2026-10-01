@@ -1,0 +1,23 @@
+// fadd_z_zz_ 011|0010|1|size=xx|0|Zm=xxxxx|000|opc=000|Zn=xxxxx|Zd=xxxxx
+// FaddZZz: FADD  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+65900036 fadd z22.s, z1.s, z16.s
+65CF01D8 fadd z24.d, z14.d, z15.d
+659F0228 fadd z8.s, z17.s, z31.s
+65D50293 fadd z19.d, z20.d, z21.d
+6586022F fadd z15.s, z17.s, z6.s
+655F02D2 fadd z18.h, z22.h, z31.h
+658D03AE fadd z14.s, z29.s, z13.s
+659A00A4 fadd z4.s, z5.s, z26.s
+65950062 fadd z2.s, z3.s, z21.s
+65810012 fadd z18.s, z0.s, z1.s
+6546013E fadd z30.h, z9.h, z6.h
+65CD0222 fadd z2.d, z17.d, z13.d
+658F024B fadd z11.s, z18.s, z15.s
+659101AA fadd z10.s, z13.s, z17.s
+6555017E fadd z30.h, z11.h, z21.h
+655701AC fadd z12.h, z13.h, z23.h
+658003E0 fadd z0.s, z31.s, z0.s
+6590003F fadd z31.s, z1.s, z16.s
+65900216 fadd z22.s, z16.s, z16.s
+65900021 fadd z1.s, z1.s, z16.s

@@ -1,0 +1,22 @@
+// asr_z_p_zz_ 000|0010|0|size=xx|0|10|R=0|L=0|U=0|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// AsrZPZz: ASR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04109CDD asr z29.b, p7/m, z29.b, z6.b
+04D08611 asr z17.d, p1/m, z17.d, z16.d
+04909FDD asr z29.s, p7/m, z29.s, z30.s
+04108683 asr z3.b, p1/m, z3.b, z20.b
+04909477 asr z23.s, p5/m, z23.s, z3.s
+045089EB asr z11.h, p2/m, z11.h, z15.h
+045085A0 asr z0.h, p1/m, z0.h, z13.h
+04D08938 asr z24.d, p2/m, z24.d, z9.d
+045087C1 asr z1.h, p1/m, z1.h, z30.h
+04D09FE7 asr z7.d, p7/m, z7.d, z31.d
+04909EF4 asr z20.s, p7/m, z20.s, z23.s
+0490862E asr z14.s, p1/m, z14.s, z17.s
+04908E05 asr z5.s, p3/m, z5.s, z16.s
+045099C3 asr z3.h, p6/m, z3.h, z14.h
+04908340 asr z0.s, p0/m, z0.s, z26.s
+0450969E asr z30.h, p5/m, z30.h, z20.h
+0410901F asr z31.b, p4/m, z31.b, z0.b
+04109CFD asr z29.b, p7/m, z29.b, z7.b
+04109CC6 asr z6.b, p7/m, z6.b, z6.b

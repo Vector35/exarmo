@@ -1,0 +1,23 @@
+// frecpe_z_z_ 011|0010|1|size=xx|001|11|op=0|0011|00|Zn=xxxxx|Zd=xxxxx
+// FrecpeZZ: FRECPE  <Zd>.<T>, <Zn>.<T>
+// register fields: Zn, Zd
+654E3147 frecpe z7.h, z10.h
+654E30C8 frecpe z8.h, z6.h
+654E3315 frecpe z21.h, z24.h
+658E307D frecpe z29.s, z3.s
+654E3206 frecpe z6.h, z16.h
+658E33CD frecpe z13.s, z30.s
+65CE303C frecpe z28.d, z1.d
+65CE316E frecpe z14.d, z11.d
+65CE3309 frecpe z9.d, z24.d
+65CE33B1 frecpe z17.d, z29.d
+65CE3091 frecpe z17.d, z4.d
+658E3212 frecpe z18.s, z16.s
+658E3361 frecpe z1.s, z27.s
+658E300D frecpe z13.s, z0.s
+654E30F3 frecpe z19.h, z7.h
+658E31C6 frecpe z6.s, z14.s
+654E33E0 frecpe z0.h, z31.h
+654E315F frecpe z31.h, z10.h
+650E3147 UNDEFINED
+654E314A frecpe z10.h, z10.h

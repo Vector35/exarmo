@@ -1,0 +1,205 @@
+// SUB_i_T1 00|0|11|1|S=1|imm3=xxx|Rn=xxx|Rd=xxx
+// SubIT1: SUB<c>{<q>}  <Rd>, <Rn>, #<imm3>
+// T1bSubIT1: SUBS{<q>}  <Rd>, <Rn>, #<imm3>
+// register fields: Rn, Rd
+// IT state read: condition, in block
+1e00 subs r0, r0, #0
+1e01 subs r1, r0, #0
+1e02 subs r2, r0, #0
+1e03 subs r3, r0, #0
+1e04 subs r4, r0, #0
+1e05 subs r5, r0, #0
+1e06 subs r6, r0, #0
+1e07 subs r7, r0, #0
+1E48 subs r0, r1, #0x1
+1E90 subs r0, r2, #0x2
+1ED8 subs r0, r3, #0x3
+1F20 subs r0, r4, #0x4
+1F68 subs r0, r5, #0x5
+1FB0 subs r0, r6, #0x6
+1FF8 subs r0, r7, #0x7
+1E00 [ne] subne r0, r0, #0x0
+
+// SUB_i_T2 00|1|op=11|Rdn=xxx|imm8=xxxxxxxx
+// SubIT2: SUB<c>{<q>}  <Rdn>, #<imm8>
+// T2cSubIT2: SUBS{<q>}  <Rdn>, #<imm8>
+// register fields: Rdn
+// IT state read: condition, in block
+3800 subs r0, #0
+3801 subs r0, #1
+3802 subs r0, #2
+3803 subs r0, #3
+3804 subs r0, #4
+3805 subs r0, #5
+3806 subs r0, #6
+3807 subs r0, #7
+39FF subs r1, #0xff
+3A80 subs r2, #0x80
+3B40 subs r3, #0x40
+3C20 subs r4, #0x20
+3D10 subs r5, #0x10
+3E08 subs r6, #0x8
+3F00 subs r7, #0x0
+3800 [ne] subne r0, #0x0
+
+// SUB_i_T3 11110|i=x|0|op1=1101|S=0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// SubIT3: SUB{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F1A00000 sub r0, r0, #0x0
+F5AF1FFF sub pc, pc, #0x1fe000 (unpredictable)
+F1A02080 sub r0, r0, #0x80008000
+F1A03040 sub r0, r0, #0x40404040
+F1A04020 sub r0, r0, #0xa0000000
+F1A05010 sub r0, r0, #0x24000000
+F1A06008 sub r0, r0, #0x8800000
+F1A07004 sub r0, r0, #0x2100000
+F1A00002 sub r0, r0, #0x2
+F1A00001 sub r0, r0, #0x1
+F1A000FF sub r0, r0, #0xff
+F1A01000 sub r0, r0, #0x0
+F1A010FF sub r0, r0, #0xff00ff
+F1A02000 sub r0, r0, #0x0
+F1A020FF sub r0, r0, #0xff00ff00
+F1A03000 sub r0, r0, #0x0
+F1A030FF sub r0, r0, #0xffffffff
+F1A04000 sub r0, r0, #0x80000000
+F1A040FF sub r0, r0, #0x7f800000
+F1A05000 sub r0, r0, #0x20000000
+F1A050FF sub r0, r0, #0x1fe00000
+F1A06000 sub r0, r0, #0x8000000
+F1A060FF sub r0, r0, #0x7f80000
+F1A07000 sub r0, r0, #0x2000000
+F1A070FF sub r0, r0, #0x1fe0000
+F5A00000 sub r0, r0, #0x800000
+F5A000FF sub r0, r0, #0x7f8000
+F5A01000 sub r0, r0, #0x200000
+F5A010FF sub r0, r0, #0x1fe000
+F5A02000 sub r0, r0, #0x80000
+F5A020FF sub r0, r0, #0x7f800
+F5A03000 sub r0, r0, #0x20000
+F5A030FF sub r0, r0, #0x1fe00
+F5A04000 sub r0, r0, #0x8000
+F5A040FF sub r0, r0, #0x7f80
+F5A05000 sub r0, r0, #0x2000
+F5A050FF sub r0, r0, #0x1fe0
+F5A06000 sub r0, r0, #0x800
+F5A060FF sub r0, r0, #0x7f8
+F5A07000 sub r0, r0, #0x200
+F5A070FF sub r0, r0, #0x1fe
+F1A00000 [ne] subne r0, r0, #0x0
+F1A10200 sub r2, r1, #0x0
+
+// SUB_i_T4 111|10|i=x|1|0|o1=1|0|o2=1|0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// T4bSubIT4: SUBW{<c>}{<q>}  {<Rd>, }<Rn>, #<imm12>
+// read together by <imm12>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F2A00000 subw r0, r0, #0x0
+F6A01FFF subw pc, r0, #0x9ff (unpredictable)
+F2A02080 subw r0, r0, #0x280
+F2A03040 subw r0, r0, #0x340
+F2A04020 subw r0, r0, #0x420
+F2A05010 subw r0, r0, #0x510
+F2A06008 subw r0, r0, #0x608
+F2A07004 subw r0, r0, #0x704
+F2A00002 subw r0, r0, #0x2
+F2A00001 subw r0, r0, #0x1
+F2A000FF subw r0, r0, #0xff
+F2A01000 subw r0, r0, #0x100
+F2A010FF subw r0, r0, #0x1ff
+F2A02000 subw r0, r0, #0x200
+F2A020FF subw r0, r0, #0x2ff
+F2A03000 subw r0, r0, #0x300
+F2A030FF subw r0, r0, #0x3ff
+F2A04000 subw r0, r0, #0x400
+F2A040FF subw r0, r0, #0x4ff
+F2A05000 subw r0, r0, #0x500
+F2A050FF subw r0, r0, #0x5ff
+F2A06000 subw r0, r0, #0x600
+F2A060FF subw r0, r0, #0x6ff
+F2A07000 subw r0, r0, #0x700
+F2A070FF subw r0, r0, #0x7ff
+F6A00000 subw r0, r0, #0x800
+F6A000FF subw r0, r0, #0x8ff
+F6A01000 subw r0, r0, #0x900
+F6A010FF subw r0, r0, #0x9ff
+F6A02000 subw r0, r0, #0xa00
+F6A020FF subw r0, r0, #0xaff
+F6A03000 subw r0, r0, #0xb00
+F6A030FF subw r0, r0, #0xbff
+F6A04000 subw r0, r0, #0xc00
+F6A040FF subw r0, r0, #0xcff
+F6A05000 subw r0, r0, #0xd00
+F6A050FF subw r0, r0, #0xdff
+F6A06000 subw r0, r0, #0xe00
+F6A060FF subw r0, r0, #0xeff
+F6A07000 subw r0, r0, #0xf00
+F6A070FF subw r0, r0, #0xfff
+F2A00000 [ne] subwne r0, r0, #0x0
+
+// SUBS_i_T3 11110|i=x|0|op1=1101|S=1|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// SubsIT3: SUBS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F1B00000 subs r0, r0, #0x0
+F5BF10FF subs r0, pc, #0x1fe000 (unpredictable)
+F1B02080 subs r0, r0, #0x80008000
+F1B03040 subs r0, r0, #0x40404040
+F1B04020 subs r0, r0, #0xa0000000
+F1B05010 subs r0, r0, #0x24000000
+F1B06008 subs r0, r0, #0x8800000
+F1B07004 subs r0, r0, #0x2100000
+F1B00002 subs r0, r0, #0x2
+F1B00001 subs r0, r0, #0x1
+F1B000FF subs r0, r0, #0xff
+F1B01000 subs r0, r0, #0x0
+F1B010FF subs r0, r0, #0xff00ff
+F1B02000 subs r0, r0, #0x0
+F1B020FF subs r0, r0, #0xff00ff00
+F1B03000 subs r0, r0, #0x0
+F1B030FF subs r0, r0, #0xffffffff
+F1B04000 subs r0, r0, #0x80000000
+F1B040FF subs r0, r0, #0x7f800000
+F1B05000 subs r0, r0, #0x20000000
+F1B050FF subs r0, r0, #0x1fe00000
+F1B06000 subs r0, r0, #0x8000000
+F1B060FF subs r0, r0, #0x7f80000
+F1B07000 subs r0, r0, #0x2000000
+F1B070FF subs r0, r0, #0x1fe0000
+F5B00000 subs r0, r0, #0x800000
+F5B000FF subs r0, r0, #0x7f8000
+F5B01000 subs r0, r0, #0x200000
+F5B010FF subs r0, r0, #0x1fe000
+F5B02000 subs r0, r0, #0x80000
+F5B020FF subs r0, r0, #0x7f800
+F5B03000 subs r0, r0, #0x20000
+F5B030FF subs r0, r0, #0x1fe00
+F5B04000 subs r0, r0, #0x8000
+F5B040FF subs r0, r0, #0x7f80
+F5B05000 subs r0, r0, #0x2000
+F5B050FF subs r0, r0, #0x1fe0
+F5B06000 subs r0, r0, #0x800
+F5B060FF subs r0, r0, #0x7f8
+F5B07000 subs r0, r0, #0x200
+F5B070FF subs r0, r0, #0x1fe
+F1B00000 [ne] subsne r0, r0, #0x0
+
+// SUBS_PC_T5_AS 111|10|0|1111|01|Rn=xxxx|1|0(0)0|(1)|(1)(1)(1)|imm8=xxxxxxxx
+// SubsPcT5As: SUBS{<c>}{<q>}  PC, LR, #<imm8>
+// IT state read: condition, last in block
+F3D08000 subs pc, lr, #0x0 (unpredictable)
+F3DFA9FF subs pc, lr, #0xff (unpredictable)
+F3D88280 subs pc, lr, #0x80 (unpredictable)
+F3D48340 subs pc, lr, #0x40 (unpredictable)
+F3D28420 subs pc, lr, #0x20 (unpredictable)
+F3D18510 subs pc, lr, #0x10 (unpredictable)
+F3D08608 subs pc, lr, #0x8 (unpredictable)
+F3D08704 subs pc, lr, #0x4 (unpredictable)
+F3D08002 subs pc, lr, #0x2 (unpredictable)
+F3D08001 subs pc, lr, #0x1 (unpredictable)
+F3D08000 [ne] subsne pc, lr, #0x0 (unpredictable)
+F3D08000 [ne last] subsne pc, lr, #0x0 (unpredictable)
+F3D08F00 subs pc, lr, #0x0 (unpredictable)

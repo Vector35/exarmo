@@ -1,0 +1,106 @@
+// ADDS_32S_addsub_imm sf=0|op=0|S=1|100010|sh=x|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Adds32sAddsubImm: ADDS  <Wd>, <Wn|WSP>, #<imm>{, <shift>}
+// CmnAdds32sAddsubImm: CMN  <Wn|WSP>, #<imm>{, <shift>}
+// register fields: Rn, Rd
+// form chosen on: Rd
+311924B4 adds w20, w5, #0x649
+315F4C8D adds w13, w4, #0x7d3, lsl #0xc
+31038750 adds w16, w26, #0xe1
+311D4AF5 adds w21, w23, #0x752
+315C4ACD adds w13, w22, #0x712, lsl #0xc
+3150DAA8 adds w8, w21, #0x436, lsl #0xc
+317092EF adds w15, w23, #0xc24, lsl #0xc
+314BFDC7 adds w7, w14, #0x2ff, lsl #0xc
+31719A44 adds w4, w18, #0xc66, lsl #0xc
+313B1A2D adds w13, w17, #0xec6
+316E8CBC adds w28, w5, #0xba3, lsl #0xc
+31338EB7 adds w23, w21, #0xce3
+31496630 adds w16, w17, #0x259, lsl #0xc
+31654866 adds w6, w3, #0x952, lsl #0xc
+3136E083 adds w3, w4, #0xdb8
+3142A3E0 adds w0, wsp, #0xa8, lsl #0xc
+31493CFF cmn w7, #0x24f, lsl #0xc
+315BA4DF cmn w6, #0x6e9, lsl #0xc
+313460BF cmn w5, #0xd18
+310F6E1F cmn w16, #0x3db
+3144E17F cmn w11, #0x138, lsl #0xc
+317B46FF cmn w23, #0xed1, lsl #0xc
+310BB1FF cmn w15, #0x2ec
+311816BF cmn w21, #0x605
+313AFA3F cmn w17, #0xebe
+3116F19F cmn w12, #0x5bc
+314DD2DF cmn w22, #0x374, lsl #0xc
+3158DA9F cmn w20, #0x636, lsl #0xc
+31465B3F cmn w25, #0x196, lsl #0xc
+310DAA7F cmn w19, #0x36a
+3128811F cmn w8, #0xa20
+3138715F cmn w10, #0xe1c
+31000014 adds w20, w0, #0x0
+313FFCB4 adds w20, w5, #0xfff
+311924A5 adds w5, w5, #0x649
+312000B4 adds w20, w5, #0x800
+311000B4 adds w20, w5, #0x400
+310800B4 adds w20, w5, #0x200
+310400B4 adds w20, w5, #0x100
+310200B4 adds w20, w5, #0x80
+310100B4 adds w20, w5, #0x40
+310080B4 adds w20, w5, #0x20
+310040B4 adds w20, w5, #0x10
+310020B4 adds w20, w5, #0x8
+310010B4 adds w20, w5, #0x4
+310008B4 adds w20, w5, #0x2
+310004B4 adds w20, w5, #0x1
+310BB1EF adds w15, w15, #0x2ec
+
+// ADDS_64S_addsub_imm sf=1|op=0|S=1|100010|sh=x|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Adds64sAddsubImm: ADDS  <Xd>, <Xn|SP>, #<imm>{, <shift>}
+// CmnAdds64sAddsubImm: CMN  <Xn|SP>, #<imm>{, <shift>}
+// register fields: Rn, Rd
+// form chosen on: Rd
+B13F53BE adds lr, fp, #0xfd4
+B116F8EC adds x12, x7, #0x5be
+B1140075 adds x21, x3, #0x500
+B13485BD adds fp, x13, #0xd21
+B108262E adds x14, x17, #0x209
+B16B1451 adds x17, x2, #0xac5, lsl #0xc
+B146775D adds fp, x26, #0x19d, lsl #0xc
+B102E9AB adds x11, x13, #0xba
+B15AEF10 adds x16, x24, #0x6bb, lsl #0xc
+B16119EC adds x12, x15, #0x846, lsl #0xc
+B125C90B adds x11, x8, #0x972
+B129C37C adds x28, x27, #0xa70
+B10A129C adds x28, x20, #0x284
+B178928C adds x12, x20, #0xe24, lsl #0xc
+B14B402A adds x10, x1, #0x2d0, lsl #0xc
+B14C516B adds x11, x11, #0x314, lsl #0xc
+B11B5D3F cmn x9, #0x6d7
+B150699F cmn x12, #0x41a, lsl #0xc
+B170933F cmn x25, #0xc24, lsl #0xc
+B1112E7F cmn x19, #0x44b
+B13BB97F cmn x11, #0xeee
+B1170CDF cmn x6, #0x5c3
+B1377A7F cmn x19, #0xdde
+B168C7DF cmn lr, #0xa31, lsl #0xc
+B161E2FF cmn x23, #0x878, lsl #0xc
+B11CDC9F cmn x4, #0x737
+B15A115F cmn x10, #0x684, lsl #0xc
+B15A27FF cmn sp, #0x689, lsl #0xc
+B129519F cmn x12, #0xa54
+B1071D5F cmn x10, #0x1c7
+B17DFE5F cmn x18, #0xf7f, lsl #0xc
+B16D271F cmn x24, #0xb49, lsl #0xc
+B1000000 adds x0, x0, #0x0
+B13FFFBE adds lr, fp, #0xfff
+B12003BE adds lr, fp, #0x800
+B11003BE adds lr, fp, #0x400
+B10803BE adds lr, fp, #0x200
+B10403BE adds lr, fp, #0x100
+B10203BE adds lr, fp, #0x80
+B10103BE adds lr, fp, #0x40
+B10083BE adds lr, fp, #0x20
+B10043BE adds lr, fp, #0x10
+B10023BE adds lr, fp, #0x8
+B10013BE adds lr, fp, #0x4
+B1000BBE adds lr, fp, #0x2
+B10007BE adds lr, fp, #0x1
+B10007BF cmn fp, #0x1

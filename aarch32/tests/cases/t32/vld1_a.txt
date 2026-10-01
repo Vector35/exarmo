@@ -1,0 +1,70 @@
+// VLD1_a_T1_nowb 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=00|size=xx|T=x|a=x|Rm=1111
+// Vld1AT1Nowb: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// read together by <align>: size, a
+// register fields: Rn
+// IT state read: condition
+f9e56cbf vld1.32 {d22[], d23[]}, [r5:32]
+f9a5ec9f vld1.32 {d14[]}, [r5:32]
+f9aedc6f vld1.16 {d13[], d14[]}, [lr]
+f9ac7c9f vld1.32 {d7[]}, [r12:32]
+f9e7ecaf vld1.32 {d30[], d31[]}, [r7]
+f9aaecbf vld1.32 {d14[], d15[]}, [r10:32]
+f9a93c8f vld1.32 {d3[]}, [r9]
+f9e3fc5f vld1.16 {d31[]}, [r3:16]
+F9E00C2F vld1.8 {d16[], d17[]}, [r0]
+F9EF8CBF vld1.32 {d24[], d25[]}, [pc:32] (unpredictable)
+F9E54CBF vld1.32 {d20[], d21[]}, [r5:32]
+F9E52CBF vld1.32 {d18[], d19[]}, [r5:32]
+F9E51CBF vld1.32 {d17[], d18[]}, [r5:32]
+F9AEDC2F vld1.8 {d13[], d14[]}, [lr]
+F9E56CFF UNDEFINED
+F9E56C3F UNDEFINED
+F9E56CEF UNDEFINED
+F9E56CBF [ne] vld1ne.32 {d22[], d23[]}, [r5:32]
+
+// VLD1_a_T1_posti 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=00|size=xx|T=x|a=x|Rm=1101
+// Vld1AT1Posti: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// read together by <align>: size, a
+// register fields: Rn
+// IT state read: condition
+f9e5ac6d vld1.16 {d26[], d27[]}, [r5]!
+f9e83c9d vld1.32 {d19[]}, [r8:32]!
+f9abcc9d vld1.32 {d12[]}, [r11:32]!
+f9e6dc5d vld1.16 {d29[]}, [r6:16]!
+f9e82c5d vld1.16 {d18[]}, [r8:16]!
+f9e8dc7d vld1.16 {d29[], d30[]}, [r8:16]!
+f9ef2c4d vld1.16 {d18[]}, [pc]! (unpredictable)
+f9a56c7d vld1.16 {d6[], d7[]}, [r5:16]!
+F9E00C2D vld1.8 {d16[], d17[]}, [r0]!
+F9E5FC2D UNPREDICTABLE
+F9E58CAD vld1.32 {d24[], d25[]}, [r5]!
+F9E54C6D vld1.16 {d20[], d21[]}, [r5]!
+F9E51C6D vld1.16 {d17[], d18[]}, [r5]!
+F9E5ACED UNDEFINED
+F9E5AC3D UNDEFINED
+F9E5ACFD UNDEFINED
+F9E5AC6D [ne] vld1ne.16 {d26[], d27[]}, [r5]!
+F9E8FC9D vld1.32 {d31[]}, [r8:32]!
+
+// VLD1_a_T1_postr 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=00|size=xx|T=x|a=x|Rm=xxxx
+// Vld1AT1Postr: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// read together by <align>: size, a
+// register fields: Rn, Rm
+// IT state read: condition
+f9e04c88 vld1.32 {d20[]}, [r0], r8
+f9e7cca3 vld1.32 {d28[], d29[]}, [r7], r3
+f9a75c77 vld1.16 {d5[], d6[]}, [r7:16], r7
+f9a00c88 vld1.32 {d0[]}, [r0], r8
+f9adcc4b vld1.16 {d12[]}, [sp], r11
+f9efbc59 vld1.16 {d27[]}, [pc:16], r9 (unpredictable)
+f9a35c93 vld1.32 {d5[]}, [r3:32], r3
+f9a7ccb9 vld1.32 {d12[], d13[]}, [r7:32], r9
+F9E0FC00 vld1.8 {d31[]}, [r0], r0
+F9E08C08 vld1.8 {d24[]}, [r0], r8
+F9E02C88 vld1.32 {d18[]}, [r0], r8
+F9E01C88 vld1.32 {d17[]}, [r0], r8
+F9E04CCF UNDEFINED
+F9E04C18 UNDEFINED
+F9E04CC8 UNDEFINED
+F9E04CD8 UNDEFINED
+F9E04C88 [ne] vld1ne.32 {d20[]}, [r0], r8

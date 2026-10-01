@@ -1,0 +1,44 @@
+// VMOV_ss_T1 111011000|D=1|0|op=1|Rt2=xxxx|Rt=xxxx|10|size=10|opc2=00|M=x|o3=1|Vm=xxxx
+// VmovSsT1: VMOV{<c>}{<q>}  <Rt>, <Rt2>, <Sm>, <Sm1>
+// read together by <Sm> and <Sm1>: M, Vm
+// register fields: Rt2, Rt
+// IT state read: condition
+ec57ea12 vmov lr, r7, s4, s5
+ec56ca14 vmov r12, r6, s8, s9
+ec59ca1e vmov r12, r9, s28, s29
+ec5a9a1d vmov r9, r10, s26, s27
+ec5f1a3c vmov r1, pc, s25, s26 (unpredictable)
+ec5fea1a vmov lr, pc, s20, s21 (unpredictable)
+ec58fa12 vmov pc, r8, s4, s5 (unpredictable)
+ec558a12 vmov r8, r5, s4, s5
+EC500A10 vmov r0, r0, s0, s1 (unpredictable)
+EC577A1F vmov r7, r7, s30, s31 (unpredictable)
+EC57EA18 vmov lr, r7, s16, s17
+EC57EA11 vmov lr, r7, s2, s3
+EC57EA10 vmov lr, r7, s0, s1
+EC57EA1F vmov lr, r7, s30, s31
+EC57EA30 vmov lr, r7, s1, s2
+EC57EA3F UNPREDICTABLE
+EC57EA12 [ne] vmovne lr, r7, s4, s5
+
+// VMOV_toss_T1 111011000|D=1|0|op=0|Rt2=xxxx|Rt=xxxx|10|size=10|opc2=00|M=x|o3=1|Vm=xxxx
+// VmovTossT1: VMOV{<c>}{<q>}  <Sm>, <Sm1>, <Rt>, <Rt2>
+// read together by <Sm> and <Sm1>: M, Vm
+// register fields: Rt2, Rt
+// IT state read: condition
+ec4f3a3c vmov s25, s26, r3, pc (unpredictable)
+ec4e1a14 vmov s8, s9, r1, lr
+ec480a32 vmov s5, s6, r0, r8
+ec475a1c vmov s24, s25, r5, r7
+ec48ea1c vmov s24, s25, lr, r8
+ec482a16 vmov s12, s13, r2, r8
+ec49fa33 vmov s7, s8, pc, r9 (unpredictable)
+ec4afa30 vmov s1, s2, pc, r10 (unpredictable)
+EC403A3F UNPREDICTABLE
+EC4FFA38 vmov s17, s18, pc, pc (unpredictable)
+EC4F3A31 vmov s3, s4, r3, pc (unpredictable)
+EC4F3A10 vmov s0, s1, r3, pc (unpredictable)
+EC4F3A1F vmov s30, s31, r3, pc (unpredictable)
+EC4F3A3F UNPREDICTABLE
+EC403A3C vmov s25, s26, r3, r0
+EC4F3A3C [ne] vmovne s25, s26, r3, pc (unpredictable)

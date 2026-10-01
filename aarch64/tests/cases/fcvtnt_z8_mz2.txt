@@ -1,0 +1,9 @@
+// fcvtnt_z8_mz2_s2b 011|0010|1|00|001|010|0011|T=1|1|Zn=xxxx|0|Zd=xxxxx
+// FcvtntZ8Mz2S2b: FCVTNT  <Zd>.B, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+650A3C03 fcvtnt z3.b, {z0.s-z1.s}
+650A3C0A fcvtnt z10.b, {z0.s-z1.s}
+650A3C11 fcvtnt z17.b, {z0.s-z1.s}
+650A3FC0 fcvtnt z0.b, {z30.s-z31.s}
+650A3C1F fcvtnt z31.b, {z0.s-z1.s}
+650A3C00 fcvtnt z0.b, {z0.s-z1.s}

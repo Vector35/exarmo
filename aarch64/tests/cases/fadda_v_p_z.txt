@@ -1,0 +1,30 @@
+// fadda_v_p_z_ 011|0010|1|size=xx|011|0|opc=00|001|Pg=xxx|Zm=xxxxx|Vdn=xxxxx
+// FaddaVPZ: FADDA  <V><dn>, <Pg>, <V><dn>, <Zm>.<T>
+// read together by <dn>: size, Vdn
+// register fields: Pg, Zm, Vdn
+655832AB fadda h11, p4, h11, z21.h
+65D82D64 fadda d4, p3, d4, z11.d
+65582B67 fadda h7, p2, h7, z27.h
+65D822EC fadda d12, p0, d12, z23.d
+65982F6D fadda s13, p3, s13, z27.s
+65983D4F fadda s15, p7, s15, z10.s
+65D82785 fadda d5, p1, d5, z28.d
+6558226E fadda h14, p0, h14, z19.h
+65D82849 fadda d9, p2, d9, z2.d
+65583B45 fadda h5, p6, h5, z26.h
+65983D8C fadda s12, p7, s12, z12.s
+65582169 fadda h9, p0, h9, z11.h
+65D82F64 fadda d4, p3, d4, z27.d
+65D83092 fadda d18, p4, d18, z4.d
+65D82973 fadda d19, p2, d19, z11.d
+655838DA fadda h26, p6, h26, z6.h
+65583400 fadda h0, p5, h0, z0.h
+655833FF fadda h31, p4, h31, z31.h
+651832AB UNDEFINED
+651832A0 UNDEFINED
+651832BF UNDEFINED
+659832A0 fadda s0, p4, s0, z21.s
+659832BF fadda s31, p4, s31, z21.s
+65D832A0 fadda d0, p4, d0, z21.d
+65D832BF fadda d31, p4, d31, z21.d
+655832A4 fadda h4, p4, h4, z21.h

@@ -1,0 +1,30 @@
+// sqabs_z_p_z_m 010|0010|0|size=xx|0|0|Q=1|0|Z=0|op=0|10|1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// SqabsZPZM: SQABS  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+4408BB97 sqabs z23.b, p6/m, z28.b
+4408B6FE sqabs z30.b, p5/m, z23.b
+4488A066 sqabs z6.s, p0/m, z3.s
+4448B350 sqabs z16.h, p4/m, z26.h
+44C8AEFD sqabs z29.d, p3/m, z23.d
+4488A768 sqabs z8.s, p1/m, z27.s
+4488A17B sqabs z27.s, p0/m, z11.s
+4448AA27 sqabs z7.h, p2/m, z17.h
+4408BC00 sqabs z0.b, p7/m, z0.b
+4408BBFF sqabs z31.b, p6/m, z31.b
+4408B8D7 sqabs z23.b, p6/m, z6.b
+4408BB86 sqabs z6.b, p6/m, z28.b
+
+// sqabs_z_p_z_z 010|0010|0|size=xx|0|0|Q=1|0|Z=1|op=0|10|1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// SqabsZPZZ: SQABS  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+440AA000 sqabs z0.b, p0/z, z0.b
+440AA007 sqabs z7.b, p0/z, z0.b
+440AA00E sqabs z14.b, p0/z, z0.b
+444AA7FF sqabs z31.h, p1/z, z31.h
+448AA800 sqabs z0.s, p2/z, z0.s
+44CAAC00 sqabs z0.d, p3/z, z0.d
+440AB000 sqabs z0.b, p4/z, z0.b
+440AB400 sqabs z0.b, p5/z, z0.b
+440AB800 sqabs z0.b, p6/z, z0.b
+440ABC00 sqabs z0.b, p7/z, z0.b
+440AA443 sqabs z3.b, p1/z, z2.b

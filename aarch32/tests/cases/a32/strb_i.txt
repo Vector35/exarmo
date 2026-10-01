@@ -1,0 +1,86 @@
+// STRB_i_A1_off cond=xxxx|010|P=1|U=x|op2=1|W=0|op1=0|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// StrbIA1Off: STRB{<c>}{<q>}  <Rt>, [<Rn> {, #{<+/->}<imm>}]
+// register fields: Rn, Rt
+75cc0296 strbvc r0, [r12, #662]
+95ca61ff strbls r6, [r10, #511]
+65c54e1e strbvs r4, [r5, #3614]
+25484da3 strbhs r4, [r8, #-3491]
+65c82f13 strbvs r2, [r8, #3859]
+8541b14c strbhi r11, [r1, #-332]
+25c1c0e2 strbhs r12, [r1, #226]
+554a812a strbpl r8, [r10, #-298]
+// Binary Ninja's tests
+e5c17003 strb r7, [r1, #3]
+e5c29000 strb r9, [r2]
+05C0FFFF strbeq pc, [r0, #0xfff] (unpredictable)
+F5CC0296 UNALLOCATED
+45CF0800 strbmi r0, [pc, #0x800]
+15CCC400 strbne r12, [r12, #0x400]
+75CC0200 strbvc r0, [r12, #0x200]
+75CC0100 strbvc r0, [r12, #0x100]
+75CC0080 strbvc r0, [r12, #0x80]
+75CC0040 strbvc r0, [r12, #0x40]
+75CC0020 strbvc r0, [r12, #0x20]
+75CC0010 strbvc r0, [r12, #0x10]
+75CC0008 strbvc r0, [r12, #0x8]
+75CC0004 strbvc r0, [r12, #0x4]
+75CC0002 strbvc r0, [r12, #0x2]
+75CC0001 strbvc r0, [r12, #0x1]
+
+// STRB_i_A1_post cond=xxxx|010|P=0|U=x|op2=1|W=0|op1=0|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// StrbIA1Post: STRB{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// register fields: Rn, Rt
+54c44c79 strbpl r4, [r4], #3193 (unpredictable)
+04427a2d strbeq r7, [r2], #-2605
+0449df7d strbeq sp, [r9], #-3965
+2442ce53 strbhs r12, [r2], #-3667
+e4ccc9c5 strb r12, [r12], #2501 (unpredictable)
+84441c75 strbhi r1, [r4], #-3189
+5445b23b strbpl r11, [r5], #-571
+54cb2be3 strbpl r2, [r11], #3043
+// Binary Ninja's tests
+e44d1001 strb r1, [sp], #-1
+e4c75048 strb r5, [r7], #72
+F4C44C79 UNALLOCATED
+44C00000 strbmi r0, [r0], #0x0 (unpredictable)
+14CFFFFF strbne pc, [pc], #0xfff (unpredictable)
+54C44800 strbpl r4, [r4], #0x800 (unpredictable)
+54C44400 strbpl r4, [r4], #0x400 (unpredictable)
+54C44200 strbpl r4, [r4], #0x200 (unpredictable)
+54C44100 strbpl r4, [r4], #0x100 (unpredictable)
+54C44080 strbpl r4, [r4], #0x80 (unpredictable)
+54C44040 strbpl r4, [r4], #0x40 (unpredictable)
+54C44020 strbpl r4, [r4], #0x20 (unpredictable)
+54C44010 strbpl r4, [r4], #0x10 (unpredictable)
+54C44008 strbpl r4, [r4], #0x8 (unpredictable)
+54C44004 strbpl r4, [r4], #0x4 (unpredictable)
+54C44002 strbpl r4, [r4], #0x2 (unpredictable)
+
+// STRB_i_A1_pre cond=xxxx|010|P=1|U=x|op2=1|W=1|op1=0|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// StrbIA1Pre: STRB{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn, Rt
+d5664048 strble r4, [r6, #-72]!
+85e846dd strbhi r4, [r8, #1757]!
+c5ee11ec strbgt r1, [lr, #492]!
+55ef9eaf strbpl r9, [pc, #3759]! (unpredictable)
+85e9ff5f strbhi pc, [r9, #3935]! (unpredictable)
+95e1b105 strbls r11, [r1, #261]!
+056ae8e3 strbeq lr, [r10, #-2275]!
+0568b96d strbeq r11, [r8, #-2413]!
+// Binary Ninja's tests
+e5e46195 strb r6, [r4, #405]!
+F5664048 UNALLOCATED
+45600000 strbmi r0, [r0, #-0x0]! (unpredictable)
+25666FFF strbcs r6, [r6, #-0xfff]! (unpredictable)
+15664800 strbne r4, [r6, #-0x800]!
+D5664400 strble r4, [r6, #-0x400]!
+D5664200 strble r4, [r6, #-0x200]!
+D5664100 strble r4, [r6, #-0x100]!
+D5664080 strble r4, [r6, #-0x80]!
+D5664040 strble r4, [r6, #-0x40]!
+D5664020 strble r4, [r6, #-0x20]!
+D5664010 strble r4, [r6, #-0x10]!
+D5664008 strble r4, [r6, #-0x8]!
+D5664004 strble r4, [r6, #-0x4]!
+D5664002 strble r4, [r6, #-0x2]!
+D5664001 strble r4, [r6, #-0x1]!

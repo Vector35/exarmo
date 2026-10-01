@@ -1,0 +1,17 @@
+// sqdmlalbt_z_zzz_ 010|0010|0|size=xx|0|Zm=xxxxx|0|0001|S=0|Zn=xxxxx|Zda=xxxxx
+// SqdmlalbtZZzz: SQDMLALBT  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+445D08B4 sqdmlalbt z20.h, z5.b, z29.b
+44490BE8 sqdmlalbt z8.h, z31.b, z9.b
+44C7080E sqdmlalbt z14.d, z0.s, z7.s
+44CA08E1 sqdmlalbt z1.d, z7.s, z10.s
+44C70A40 sqdmlalbt z0.d, z18.s, z7.s
+449E0A0C sqdmlalbt z12.s, z16.h, z30.h
+44D90A50 sqdmlalbt z16.d, z18.s, z25.s
+44CA08A8 sqdmlalbt z8.d, z5.s, z10.s
+444008BF sqdmlalbt z31.h, z5.b, z0.b
+445F08B4 sqdmlalbt z20.h, z5.b, z31.b
+441D08B4 UNDEFINED
+445D0BB4 sqdmlalbt z20.h, z29.b, z29.b
+445D08BD sqdmlalbt z29.h, z5.b, z29.b
+445D08A5 sqdmlalbt z5.h, z5.b, z29.b

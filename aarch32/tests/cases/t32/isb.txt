@@ -1,0 +1,13 @@
+// ISB_T1 111|10|0|1110|11|(1)(1)(1)(1)|1|0(0)0|(1)|(1)(1)(1)|opc=0110|option=xxxx
+// IsbT1: ISB{<c>}{<q>}  {<option>}
+// IT state read: condition
+F3B08060 isb #0x0 (unpredictable)
+F3BFA96F isb sy (unpredictable)
+F3B88268 isb #0x8 (unpredictable)
+F3B48364 isb #0x4 (unpredictable)
+F3B28462 isb #0x2 (unpredictable)
+F3B18561 isb #0x1 (unpredictable)
+F3B08660 isb #0x0 (unpredictable)
+F3B08760 isb #0x0 (unpredictable)
+F3B08060 [ne] isbne #0x0 (unpredictable)
+F3BF8F60 isb #0x0

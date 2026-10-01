@@ -1,0 +1,22 @@
+// brkas_p_p_p_z 001|0010|1|B=0|S=1|01|0000|01|Pg=xxxx|0|Pn=xxxx|M=0|Pd=xxxx
+// BrkasPPPZ: BRKAS  <Pd>.B, <Pg>/Z, <Pn>.B
+// register fields: Pg, Pn, Pd
+25505426 brkas p6.b, p5/z, p1.b
+255070E9 brkas p9.b, p12/z, p7.b
+25504C0B brkas p11.b, p3/z, p0.b
+25507D29 brkas p9.b, p15/z, p9.b
+2550614E brkas p14.b, p8/z, p10.b
+25505D6B brkas p11.b, p7/z, p11.b
+255048EC brkas p12.b, p2/z, p7.b
+255071C7 brkas p7.b, p12/z, p14.b
+255060E1 brkas p1.b, p8/z, p7.b
+255068E3 brkas p3.b, p10/z, p7.b
+25505CA5 brkas p5.b, p7/z, p5.b
+255078A9 brkas p9.b, p14/z, p5.b
+255055A4 brkas p4.b, p5/z, p13.b
+25504142 brkas p2.b, p0/z, p10.b
+25507D09 brkas p9.b, p15/z, p8.b
+2550682A brkas p10.b, p10/z, p1.b
+255055E0 brkas p0.b, p5/z, p15.b
+2550542F brkas p15.b, p5/z, p1.b
+255054A6 brkas p6.b, p5/z, p5.b

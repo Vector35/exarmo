@@ -1,0 +1,65 @@
+// SMULL_asimdelem_L 0|Q=x|U=0|0|111|1|size=xx|L=x|M=x|Rm=xxxx|opcode=1010|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SmullAsimdelemL: SMULL  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// SmullAsimdelemL2: SMULL2  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// read together by <Tb>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+// form chosen on: Q
+0F4CA106 smull v6.4s, v8.4h, v12.h[0]
+4FA8A3EB smull2 v11.2d, v31.4s, v8.s[1]
+0F93A86B smull v11.2d, v3.2s, v19.s[2]
+0F57A81B smull v27.4s, v0.4h, v7.h[5]
+0FABAA77 smull v23.2d, v19.2s, v11.s[3]
+4F78A308 smull2 v8.4s, v24.8h, v8.h[3]
+4F7DAAAA smull2 v10.4s, v21.8h, v13.h[7]
+4FA9A2BE smull2 v30.2d, v21.4s, v9.s[1]
+0F7AAA42 smull v2.4s, v18.4h, v10.h[7]
+0F84A93E smull v30.2d, v9.2s, v4.s[2]
+4FBEA0A2 smull2 v2.2d, v5.4s, v30.s[1]
+0FBCABBB smull v27.2d, v29.2s, v28.s[3]
+0FBEA175 smull v21.2d, v11.2s, v30.s[1]
+4F81A342 smull2 v2.2d, v26.4s, v1.s[0]
+4FBCAB0E smull2 v14.2d, v24.4s, v28.s[3]
+4F94AA60 smull2 v0.2d, v19.4s, v20.s[2]
+0F40A11F smull v31.4s, v8.4h, v0.h[0]
+0F4FA106 smull v6.4s, v8.4h, v15.h[0]
+0F0CA106 UNDEFINED
+0FCCA106 UNDEFINED
+0F0CA906 UNDEFINED
+0F1CA106 UNDEFINED
+0F1CA906 UNDEFINED
+0F2CA106 UNDEFINED
+0F2CA906 UNDEFINED
+0F3CA106 UNDEFINED
+0F3CA906 UNDEFINED
+0F4CA908 smull v8.4s, v8.4h, v12.h[4]
+0F5CA106 smull v6.4s, v8.4h, v12.h[1]
+0F6CA106 smull v6.4s, v8.4h, v12.h[2]
+0F6CA906 smull v6.4s, v8.4h, v12.h[6]
+0F9CA106 smull v6.2d, v8.2s, v28.s[0]
+0FCCA906 UNDEFINED
+0FDCA106 UNDEFINED
+0FDCA906 UNDEFINED
+0FECA106 UNDEFINED
+0FECA906 UNDEFINED
+0FFCA106 UNDEFINED
+0FFCA906 UNDEFINED
+0F00A106 UNDEFINED
+0F0FA106 UNDEFINED
+0F10A106 UNDEFINED
+0F1FA106 UNDEFINED
+0F50A106 smull v6.4s, v8.4h, v0.h[1]
+0F5FA106 smull v6.4s, v8.4h, v15.h[1]
+0F80A106 smull v6.2d, v8.2s, v0.s[0]
+0F8FA106 smull v6.2d, v8.2s, v15.s[0]
+0F90A106 smull v6.2d, v8.2s, v16.s[0]
+0F9FA106 smull v6.2d, v8.2s, v31.s[0]
+0FC0A106 UNDEFINED
+0FCFA106 UNDEFINED
+0FD0A106 UNDEFINED
+0FDFA106 UNDEFINED
+4F0CA106 UNDEFINED
+4FCCA106 UNDEFINED
+0F42A106 smull v6.4s, v8.4h, v2.h[0]
+4F40A11F smull2 v31.4s, v8.8h, v0.h[0]

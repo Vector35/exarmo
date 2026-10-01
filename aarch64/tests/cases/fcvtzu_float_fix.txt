@@ -1,0 +1,167 @@
+// FCVTZU_32D_float2fix sf=0|0|S=0|11110|ftype=01|0|rmode=11|opcode=001|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Fcvtzu32dFloat2fix: FCVTZU  <Wd>, <Dn>, #<fbits>
+// register fields: Rn, Rd
+1E59A3D6 fcvtzu w22, d30, #0x18
+1E598E17 fcvtzu w23, d16, #0x1d
+1E59EFB0 fcvtzu w16, d29, #0x5
+1E5985CA fcvtzu w10, d14, #0x1f
+1E59D69A fcvtzu w26, d20, #0xb
+1E59E4A1 fcvtzu w1, d5, #0x7
+1E599667 fcvtzu w7, d19, #0x1b
+1E59EC60 fcvtzu w0, d3, #0x5
+1E59D75C fcvtzu w28, d26, #0xb
+1E59B1F3 fcvtzu w19, d15, #0x14
+1E598DC1 fcvtzu w1, d14, #0x1d
+1E59D6E6 fcvtzu w6, d23, #0xb
+1E59C483 fcvtzu w3, d4, #0xf
+1E59AD52 fcvtzu w18, d10, #0x15
+1E59AF13 fcvtzu w19, d24, #0x15
+1E59BBB9 fcvtzu w25, d29, #0x12
+1E59FC1F fcvtzu wzr, d0, #0x1
+1E59A3F6 fcvtzu w22, d31, #0x18
+1E5903D6 UNDEFINED
+1E59A3DE fcvtzu w30, d30, #0x18
+1E5983D6 fcvtzu w22, d30, #0x20
+1E5943D6 UNDEFINED
+1E5923D6 UNDEFINED
+1E5913D6 UNDEFINED
+1E590BD6 UNDEFINED
+1E5907D6 UNDEFINED
+
+// FCVTZU_32H_float2fix sf=0|0|S=0|11110|ftype=11|0|rmode=11|opcode=001|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Fcvtzu32hFloat2fix: FCVTZU  <Wd>, <Hn>, #<fbits>
+// register fields: Rn, Rd
+1ED9C21B fcvtzu w27, h16, #0x10
+1ED9AC9A fcvtzu w26, h4, #0x15
+1ED9F8F0 fcvtzu w16, h7, #0x2
+1ED9B8DB fcvtzu w27, h6, #0x12
+1ED9E64D fcvtzu w13, h18, #0x7
+1ED9DF05 fcvtzu w5, h24, #0x9
+1ED9B84E fcvtzu w14, h2, #0x12
+1ED9BCEB fcvtzu w11, h7, #0x11
+1ED9AC97 fcvtzu w23, h4, #0x15
+1ED9C58D fcvtzu w13, h12, #0xf
+1ED9FE60 fcvtzu w0, h19, #0x1
+1ED9DB51 fcvtzu w17, h26, #0xa
+1ED9DB97 fcvtzu w23, h28, #0xa
+1ED9E6CE fcvtzu w14, h22, #0x7
+1ED9CA48 fcvtzu w8, h18, #0xe
+1ED9AA8C fcvtzu w12, h20, #0x16
+1ED9C01F fcvtzu wzr, h0, #0x10
+1ED9C3FB fcvtzu w27, h31, #0x10
+1ED9021B UNDEFINED
+1ED9C210 fcvtzu w16, h16, #0x10
+1ED9821B fcvtzu w27, h16, #0x20
+1ED9421B UNDEFINED
+1ED9221B UNDEFINED
+1ED9121B UNDEFINED
+1ED90A1B UNDEFINED
+1ED9061B UNDEFINED
+
+// FCVTZU_32S_float2fix sf=0|0|S=0|11110|ftype=00|0|rmode=11|opcode=001|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Fcvtzu32sFloat2fix: FCVTZU  <Wd>, <Sn>, #<fbits>
+// register fields: Rn, Rd
+1E198712 fcvtzu w18, s24, #0x1f
+1E199529 fcvtzu w9, s9, #0x1b
+1E19B325 fcvtzu w5, s25, #0x14
+1E198613 fcvtzu w19, s16, #0x1f
+1E19DB55 fcvtzu w21, s26, #0xa
+1E199E1C fcvtzu w28, s16, #0x19
+1E19CAAD fcvtzu w13, s21, #0xe
+1E19E59F fcvtzu wzr, s12, #0x7
+1E19C45E fcvtzu w30, s2, #0xf
+1E19B0D3 fcvtzu w19, s6, #0x14
+1E19F79A fcvtzu w26, s28, #0x3
+1E19D6DF fcvtzu wzr, s22, #0xb
+1E19A98A fcvtzu w10, s12, #0x16
+1E19D051 fcvtzu w17, s2, #0xc
+1E199830 fcvtzu w16, s1, #0x1a
+1E19B5D1 fcvtzu w17, s14, #0x13
+1E19FC00 fcvtzu w0, s0, #0x1
+1E1987F2 fcvtzu w18, s31, #0x1f
+1E190312 UNDEFINED
+1E198312 fcvtzu w18, s24, #0x20
+1E194312 UNDEFINED
+1E192312 UNDEFINED
+1E191312 UNDEFINED
+1E190B12 UNDEFINED
+1E190712 UNDEFINED
+
+// FCVTZU_64D_float2fix sf=1|0|S=0|11110|ftype=01|0|rmode=11|opcode=001|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Fcvtzu64dFloat2fix: FCVTZU  <Xd>, <Dn>, #<fbits>
+// register fields: Rn, Rd
+9E5925BD fcvtzu fp, d13, #0x37
+9E59A4C4 fcvtzu x4, d6, #0x17
+9E59DF11 fcvtzu x17, d24, #0x9
+9E592B44 fcvtzu x4, d26, #0x36
+9E59B0DC fcvtzu x28, d6, #0x14
+9E591852 fcvtzu x18, d2, #0x3a
+9E592FD7 fcvtzu x23, d30, #0x35
+9E59DCCD fcvtzu x13, d6, #0x9
+9E593733 fcvtzu x19, d25, #0x33
+9E59C923 fcvtzu x3, d9, #0xe
+9E591190 fcvtzu x16, d12, #0x3c
+9E5942D8 fcvtzu x24, d22, #0x30
+9E596CE6 fcvtzu x6, d7, #0x25
+9E590002 fcvtzu x2, d0, #0x40
+9E59AD5F fcvtzu xzr, d10, #0x15
+9E59C5D2 fcvtzu x18, d14, #0xf
+9E59FFE0 fcvtzu x0, d31, #0x1
+9E5925AD fcvtzu x13, d13, #0x37
+9E5981BD fcvtzu fp, d13, #0x20
+9E5921BD fcvtzu fp, d13, #0x38
+9E5909BD fcvtzu fp, d13, #0x3e
+9E5905BD fcvtzu fp, d13, #0x3f
+
+// FCVTZU_64H_float2fix sf=1|0|S=0|11110|ftype=11|0|rmode=11|opcode=001|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Fcvtzu64hFloat2fix: FCVTZU  <Xd>, <Hn>, #<fbits>
+// register fields: Rn, Rd
+9ED9C8BB fcvtzu x27, h5, #0xe
+9ED92254 fcvtzu x20, h18, #0x38
+9ED9CE1C fcvtzu x28, h16, #0xd
+9ED9DA00 fcvtzu x0, h16, #0xa
+9ED90AB6 fcvtzu x22, h21, #0x3e
+9ED9C0A0 fcvtzu x0, h5, #0x10
+9ED9EE18 fcvtzu x24, h16, #0x5
+9ED964DA fcvtzu x26, h6, #0x27
+9ED9C191 fcvtzu x17, h12, #0x10
+9ED9C9F3 fcvtzu x19, h15, #0xe
+9ED93769 fcvtzu x9, h27, #0x33
+9ED97D63 fcvtzu x3, h11, #0x21
+9ED9970A fcvtzu x10, h24, #0x1b
+9ED90172 fcvtzu x18, h11, #0x40
+9ED9319E fcvtzu lr, h12, #0x34
+9ED9F02B fcvtzu x11, h1, #0x4
+9ED9FC1F fcvtzu xzr, h0, #0x1
+9ED9CBFB fcvtzu x27, h31, #0xe
+9ED9C8A5 fcvtzu x5, h5, #0xe
+9ED980BB fcvtzu x27, h5, #0x20
+9ED940BB fcvtzu x27, h5, #0x30
+9ED910BB fcvtzu x27, h5, #0x3c
+9ED904BB fcvtzu x27, h5, #0x3f
+
+// FCVTZU_64S_float2fix sf=1|0|S=0|11110|ftype=00|0|rmode=11|opcode=001|scale=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Fcvtzu64sFloat2fix: FCVTZU  <Xd>, <Sn>, #<fbits>
+// register fields: Rn, Rd
+9E19AFFA fcvtzu x26, s31, #0x15
+9E197D7B fcvtzu x27, s11, #0x21
+9E1920DD fcvtzu fp, s6, #0x38
+9E19B556 fcvtzu x22, s10, #0x13
+9E19B858 fcvtzu x24, s2, #0x12
+9E1979EF fcvtzu x15, s15, #0x22
+9E19F917 fcvtzu x23, s8, #0x2
+9E19EC62 fcvtzu x2, s3, #0x5
+9E1920F8 fcvtzu x24, s7, #0x38
+9E19EBFB fcvtzu x27, s31, #0x6
+9E19F8CF fcvtzu x15, s6, #0x2
+9E19960F fcvtzu x15, s16, #0x1b
+9E199C1F fcvtzu xzr, s0, #0x19
+9E196E7D fcvtzu fp, s19, #0x25
+9E192829 fcvtzu x9, s1, #0x36
+9E194296 fcvtzu x22, s20, #0x30
+9E1903E0 fcvtzu x0, s31, #0x40
+9E19FFFA fcvtzu x26, s31, #0x1
+9E1983FA fcvtzu x26, s31, #0x20
+9E1913FA fcvtzu x26, s31, #0x3c
+9E190BFA fcvtzu x26, s31, #0x3e
+9E1907FA fcvtzu x26, s31, #0x3f

@@ -1,0 +1,60 @@
+// VCVTM_vfp_T1_D 111111101|D=x|111|op1=1|RM=11|Vd=xxxx|10|size=11|op=x|1|M=x|0|Vm=xxxx
+// VcvtmVfpT1D: VCVTM{<q>}.<dt>.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+febf6be8 vcvtm.s32.f64 s12, d24
+febf6be3 vcvtm.s32.f64 s12, d19
+feff4b65 vcvtm.u32.f64 s9, d21
+feffabeb vcvtm.s32.f64 s21, d27
+febf1bca vcvtm.s32.f64 s2, d10
+febfcb46 vcvtm.u32.f64 s24, d6
+febfdbea vcvtm.s32.f64 s26, d26
+feff8bcd vcvtm.s32.f64 s17, d13
+FEBFFBEF vcvtm.s32.f64 s30, d31
+FEBF2BE4 vcvtm.s32.f64 s4, d20
+FEBF0BE2 vcvtm.s32.f64 s0, d18
+FEBFFBE1 vcvtm.s32.f64 s30, d17
+FEFF0BC0 vcvtm.s32.f64 s1, d0
+FEBF6BE0 vcvtm.s32.f64 s12, d16
+FEBF6BEF vcvtm.s32.f64 s12, d31
+FEFFFBCF vcvtm.s32.f64 s31, d15
+
+// VCVTM_vfp_T1_H 111111101|D=x|111|op1=1|RM=11|Vd=xxxx|10|size=01|op=x|1|M=x|0|Vm=xxxx
+// VcvtmVfpT1H: VCVTM{<q>}.<dt>.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+feff296c vcvtm.u32.f16 s5, s25
+feff59e2 vcvtm.s32.f16 s11, s5
+febfb9ee vcvtm.s32.f16 s22, s29
+feff89e5 vcvtm.s32.f16 s17, s11
+feff39ed vcvtm.s32.f16 s7, s27
+feff29e7 vcvtm.s32.f16 s5, s15
+feffd9cc vcvtm.s32.f16 s27, s24
+feff19c3 vcvtm.s32.f16 s3, s6
+FEFF0960 vcvtm.u32.f16 s1, s1
+FEFFF96F vcvtm.u32.f16 s31, s31
+FEFF4968 vcvtm.u32.f16 s9, s17
+FEBF0964 vcvtm.u32.f16 s0, s9
+FEBFF961 vcvtm.u32.f16 s30, s3
+FEFF0940 vcvtm.u32.f16 s1, s0
+FEFFF94F vcvtm.u32.f16 s31, s30
+FEFF2960 vcvtm.u32.f16 s5, s1
+FEFF296F vcvtm.u32.f16 s5, s31
+
+// VCVTM_vfp_T1_S 111111101|D=x|111|op1=1|RM=11|Vd=xxxx|10|size=10|op=x|1|M=x|0|Vm=xxxx
+// VcvtmVfpT1S: VCVTM{<q>}.<dt>.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+febf3ac4 vcvtm.s32.f32 s6, s8
+febfba6e vcvtm.u32.f32 s22, s29
+feffbacf vcvtm.s32.f32 s23, s30
+feff4aee vcvtm.s32.f32 s9, s29
+febffa41 vcvtm.u32.f32 s30, s2
+febf5ae2 vcvtm.s32.f32 s10, s5
+feff0aea vcvtm.s32.f32 s1, s21
+febf6a61 vcvtm.u32.f32 s12, s3
+FEBF8AC0 vcvtm.s32.f32 s16, s0
+FEBF2AC8 vcvtm.s32.f32 s4, s16
+FEBF1AC0 vcvtm.s32.f32 s2, s0
+FEBF0AE0 vcvtm.s32.f32 s0, s1
+FEFFFAEF vcvtm.s32.f32 s31, s31

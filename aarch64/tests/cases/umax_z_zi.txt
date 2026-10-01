@@ -1,0 +1,28 @@
+// umax_z_zi_ 001|0010|1|size=xx|1|01|00|U=1|11|o2=0|imm8=xxxxxxxx|Zdn=xxxxx
+// UmaxZZi: UMAX  <Zdn>.<T>, <Zdn>.<T>, #<imm>
+// register fields: Zdn
+2569DB67 umax z7.h, z7.h, #0xdb
+2529CF6B umax z11.b, z11.b, #0x7b
+2529DC81 umax z1.b, z1.b, #0xe4
+25A9D203 umax z3.s, z3.s, #0x90
+25A9D07C umax z28.s, z28.s, #0x83
+25A9CDF8 umax z24.s, z24.s, #0x6f
+2569D70C umax z12.h, z12.h, #0xb8
+25E9C40B umax z11.d, z11.d, #0x20
+2569C6E0 umax z0.h, z0.h, #0x37
+2569D49C umax z28.h, z28.h, #0xa4
+25E9C793 umax z19.d, z19.d, #0x3c
+2529CAAF umax z15.b, z15.b, #0x55
+25E9C6AE umax z14.d, z14.d, #0x35
+2529C4B4 umax z20.b, z20.b, #0x25
+25E9DDD3 umax z19.d, z19.d, #0xee
+2569DE46 umax z6.h, z6.h, #0xf2
+2569C01F umax z31.h, z31.h, #0x0
+2569DFE7 umax z7.h, z7.h, #0xff
+2569D007 umax z7.h, z7.h, #0x80
+2569C807 umax z7.h, z7.h, #0x40
+2569C207 umax z7.h, z7.h, #0x10
+2569C107 umax z7.h, z7.h, #0x8
+2569C087 umax z7.h, z7.h, #0x4
+2569C047 umax z7.h, z7.h, #0x2
+2569C027 umax z7.h, z7.h, #0x1

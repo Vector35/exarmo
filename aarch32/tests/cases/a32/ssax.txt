@@ -1,0 +1,19 @@
+// SSAX_A1 cond=xxxx|011|00|op1=001|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=10|1|Rm=xxxx
+// SsaxA1: SSAX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+c6149f50 ssaxgt r9, r4, r0
+16199451 ssaxne r9, r9, r1 (unpredictable)
+c61b6450 ssaxgt r6, r11, r0 (unpredictable)
+6617b551 ssaxvs r11, r7, r1 (unpredictable)
+d6156c54 ssaxle r6, r5, r4 (unpredictable)
+b6157e50 ssaxlt r7, r5, r0 (unpredictable)
+d61c3e57 ssaxle r3, r12, r7 (unpredictable)
+6610ea52 ssaxvs lr, r0, r2 (unpredictable)
+// Binary Ninja's tests
+b6132f54 ssaxlt r2, r3, r4
+e6132f54 ssax r2, r3, r4
+061F005F ssaxeq r0, pc, pc (unpredictable)
+F6149F50 UNALLOCATED
+8614F854 ssaxhi pc, r4, r4 (unpredictable)
+46149259 ssaxmi r9, r4, r9 (unpredictable)
+26149150 ssaxcs r9, r4, r0 (unpredictable)

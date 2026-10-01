@@ -1,0 +1,46 @@
+// VMVN_r_T1_D 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1011|Q=0|M=x|0|Vm=xxxx
+// VmvnRT1D: VMVN{<c>}{<q>}{.<dt>}  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffb0c5ad vmvn d12, d29
+ffb025a7 vmvn d2, d23
+ffb075ac vmvn d7, d28
+ffb0858f vmvn d8, d15
+ffb055a1 vmvn d5, d17
+fff0c581 vmvn d28, d1
+fff09584 vmvn d25, d4
+ffb02582 vmvn d2, d2
+FFB4C5AD UNDEFINED
+FFB8C5AD UNDEFINED
+FFBCC5AD UNDEFINED
+FFB005A0 vmvn d0, d16
+FFB0F5A8 vmvn d15, d24
+FFB04580 vmvn d4, d0
+FFB015A0 vmvn d1, d16
+FFB005AF vmvn d0, d31
+FFB0F5AD vmvn d15, d29
+FFF005AD vmvn d16, d29
+FFF0F5AD vmvn d31, d29
+FFB0C5AD [ne] vmvnne d12, d29
+
+// VMVN_r_T1_Q 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1011|Q=1|M=x|0|Vm=xxxx
+// VmvnRT1Q: VMVN{<c>}{<q>}{.<dt>}  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb045ea vmvn q2, q13
+fff025c8 vmvn q9, q4
+ffb0c5c8 vmvn q6, q4
+fff005c8 vmvn q8, q4
+ffb085e8 vmvn q4, q12
+fff065c2 vmvn q11, q1
+FFB4F5EF UNDEFINED
+FFB815E1 UNDEFINED
+FFBCF5CF UNDEFINED
+FFB005E0 vmvn q0, q8
+FFB045E4 vmvn q2, q10
+FFF0F5EF UNDEFINED
+FFB045C0 vmvn q2, q0
+FFB045E0 vmvn q2, q8
+FFB045EA [ne] vmvnne q2, q13

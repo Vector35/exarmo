@@ -1,0 +1,50 @@
+// VQRSHL_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0101|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VqrshlT1D: VQRSHL{<c>}{<q>}.<dt>  {<Dd>, }<Dm>, <Dn>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// read together by <Dn>: Vn, N
+// IT state read: condition
+ff6ff5bc vqrshl.u32 d31, d28, d31
+ff6a4598 vqrshl.u32 d20, d8, d26
+ff7d053c vqrshl.u64 d16, d28, d13
+ff67c53a vqrshl.u32 d28, d26, d7
+ef531593 vqrshl.s16 d17, d3, d19
+ff33859d vqrshl.u64 d8, d13, d19
+ff1d3539 vqrshl.u16 d3, d25, d13
+ef06b536 vqrshl.s8 d11, d22, d6
+EF6025B0 vqrshl.s32 d18, d16, d16
+EF3805BF vqrshl.s64 d0, d31, d24
+FF04F5B4 vqrshl.u8 d15, d20, d20
+FF62F5B2 vqrshl.u32 d31, d18, d18
+FF61F5B1 vqrshl.u32 d31, d17, d17
+FF60F510 vqrshl.u32 d31, d0, d0
+FF60F59F vqrshl.u32 d31, d15, d16
+FF6FF530 vqrshl.u32 d31, d16, d15
+FF6FF5BF vqrshl.u32 d31, d31, d31
+FF6FF5BC [ne] vqrshlne.u32 d31, d28, d31
+
+// VQRSHL_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0101|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VqrshlT1Q: VQRSHL{<c>}{<q>}.<dt>  {<Qd>, }<Qm>, <Qn>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// read together by <Qn>: Vn, N
+// IT state read: condition
+ef086556 vqrshl.s8 q3, q3, q4
+ef50c5f2 vqrshl.s16 q14, q9, q8
+ef7e85d2 vqrshl.s64 q12, q1, q15
+ff6ac5fe vqrshl.u32 q14, q15, q13
+ff54c5de vqrshl.u16 q14, q7, q10
+ff3645d6 vqrshl.u64 q2, q3, q11
+ef14e55e vqrshl.s16 q7, q7, q2
+ff106576 vqrshl.u16 q3, q11, q0
+EF0FF55F UNDEFINED
+EF220550 vqrshl.s32 q0, q0, q1
+EF011551 UNDEFINED
+FF082558 vqrshl.u8 q1, q4, q4
+EF080554 vqrshl.s8 q0, q2, q4
+EF480550 vqrshl.s8 q8, q0, q4
+EF4FF5FF UNDEFINED
+EF086570 vqrshl.s8 q3, q8, q4
+EF086556 [ne] vqrshlne.s8 q3, q3, q4

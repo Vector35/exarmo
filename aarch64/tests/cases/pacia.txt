@@ -1,0 +1,54 @@
+// PACIA1716_HI_hints 11010101000000110010|CRm=0001|op2=000|11111
+// Pacia1716HiHints: PACIA1716
+D503211F pacia1716
+
+// PACIA_64P_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=0|000|Rn=xxxxx|Rd=xxxxx
+// Pacia64pDp1src: PACIA  <Xd>, <Xn|SP>
+// register fields: Rn, Rd
+DAC1030C pacia x12, x24
+DAC1033D pacia fp, x25
+DAC10113 pacia x19, x8
+DAC10323 pacia x3, x25
+DAC10365 pacia x5, x27
+DAC10079 pacia x25, x3
+DAC10228 pacia x8, x17
+DAC101AB pacia x11, x13
+DAC102E9 pacia x9, x23
+DAC1035F pacia xzr, x26
+DAC1034D pacia x13, x26
+DAC10271 pacia x17, x19
+DAC1029B pacia x27, x20
+DAC10385 pacia x5, x28
+DAC102DA pacia x26, x22
+DAC102FB pacia x27, x23
+DAC10000 pacia x0, x0
+DAC103EC pacia x12, sp
+
+// PACIASP_HI_hints 11010101000000110010|CRm=0011|op2=001|11111
+// PaciaspHiHints: PACIASP
+D503233F paciasp
+
+// PACIAZ_HI_hints 11010101000000110010|CRm=0011|op2=000|11111
+// PaciazHiHints: PACIAZ
+D503231F paciaz
+
+// PACIZA_64Z_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=1|000|Rn=11111|Rd=xxxxx
+// Paciza64zDp1src: PACIZA  <Xd>
+// register fields: Rd
+DAC123ED paciza x13
+DAC123F4 paciza x20
+DAC123FB paciza x27
+DAC123E7 paciza x7
+DAC123E0 paciza x0
+DAC123EA paciza x10
+DAC123FE paciza lr
+DAC123E5 paciza x5
+DAC123E1 paciza x1
+DAC123F9 paciza x25
+DAC123F8 paciza x24
+DAC123FD paciza fp
+DAC123FA paciza x26
+DAC123E8 paciza x8
+DAC123F5 paciza x21
+DAC123F3 paciza x19
+DAC123FF paciza xzr

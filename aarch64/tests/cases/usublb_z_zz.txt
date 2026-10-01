@@ -1,0 +1,15 @@
+// usublb_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|0|op=0|S=1|U=1|T=0|Zn=xxxxx|Zd=xxxxx
+// UsublbZZz: USUBLB  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45971B41 usublb z1.s, z26.h, z23.h
+45521A10 usublb z16.h, z16.b, z18.b
+45D7194B usublb z11.d, z10.s, z23.s
+45DD1AC0 usublb z0.d, z22.s, z29.s
+45C01892 usublb z18.d, z4.s, z0.s
+454E1AB8 usublb z24.h, z21.b, z14.b
+4555190C usublb z12.h, z8.b, z21.b
+45DB1B22 usublb z2.d, z25.s, z27.s
+459F181F usublb z31.s, z0.h, z31.h
+45971BE1 usublb z1.s, z31.h, z23.h
+45171B41 UNDEFINED
+45971AE1 usublb z1.s, z23.h, z23.h

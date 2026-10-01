@@ -1,0 +1,25 @@
+// MUL_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=10011|1|Rn=xxxxx|Rd=xxxxx
+// MulAsimdsameOnly: MUL  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4E3E9C65 mul v5.16b, v3.16b, v30.16b
+4E619E2C mul v12.8h, v17.8h, v1.8h
+0E279C47 mul v7.8b, v2.8b, v7.8b
+4E2D9DF0 mul v16.16b, v15.16b, v13.16b
+4E259F10 mul v16.16b, v24.16b, v5.16b
+0E699E60 mul v0.4h, v19.4h, v9.4h
+4EA29D39 mul v25.4s, v9.4s, v2.4s
+4E7D9DBD mul v29.8h, v13.8h, v29.8h
+0EB59FCE mul v14.2s, v30.2s, v21.2s
+4E6C9C0C mul v12.8h, v0.8h, v12.8h
+0E759F6D mul v13.4h, v27.4h, v21.4h
+4EBB9E0B mul v11.4s, v16.4s, v27.4s
+0EB69FD9 mul v25.2s, v30.2s, v22.2s
+0E3B9DF4 mul v20.8b, v15.8b, v27.8b
+0E7A9CFC mul v28.4h, v7.4h, v26.4h
+4E329F1A mul v26.16b, v24.16b, v18.16b
+4E209FFF mul v31.16b, v31.16b, v0.16b
+4E3F9C65 mul v5.16b, v3.16b, v31.16b
+4EFE9C65 UNDEFINED
+0EFE9C65 UNDEFINED
+4E3E9FC5 mul v5.16b, v30.16b, v30.16b

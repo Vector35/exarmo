@@ -1,0 +1,24 @@
+// smulh_z_p_zz_ 000|0010|0|size=xx|0|100|H=1|U=0|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SmulhZPZz: SMULH  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04D209D3 smulh z19.d, p2/m, z19.d, z14.d
+04D20A3F smulh z31.d, p2/m, z31.d, z17.d
+049213BF smulh z31.s, p4/m, z31.s, z29.s
+0452074D smulh z13.h, p1/m, z13.h, z26.h
+04120999 smulh z25.b, p2/m, z25.b, z12.b
+04120418 smulh z24.b, p1/m, z24.b, z0.b
+045213C6 smulh z6.h, p4/m, z6.h, z30.h
+0412117B smulh z27.b, p4/m, z27.b, z11.b
+04921330 smulh z16.s, p4/m, z16.s, z25.s
+04D20575 smulh z21.d, p1/m, z21.d, z11.d
+04121AA9 smulh z9.b, p6/m, z9.b, z21.b
+049206D2 smulh z18.s, p1/m, z18.s, z22.s
+04D2109D smulh z29.d, p4/m, z29.d, z4.d
+04520B51 smulh z17.h, p2/m, z17.h, z26.h
+04521924 smulh z4.h, p6/m, z4.h, z9.h
+0412037A smulh z26.b, p0/m, z26.b, z27.b
+04D20FE0 smulh z0.d, p3/m, z0.d, z31.d
+04D215D3 smulh z19.d, p5/m, z19.d, z14.d
+04D21DD3 smulh z19.d, p7/m, z19.d, z14.d
+04D209C2 smulh z2.d, p2/m, z2.d, z14.d
+04D209CE smulh z14.d, p2/m, z14.d, z14.d

@@ -1,0 +1,52 @@
+// VLD4_m_T1_nowb 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=1111
+// Vld4MT1Nowb: VLD4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f927c06f vld4.16 {d12, d13, d14, d15}, [r7:128]
+f96d109f vld4.32 {d17, d18, d19, d20}, [sp:64]
+f960e04f UNPREDICTABLE
+f923c17f vld4.16 {d12, d14, d16, d18}, [r3:256]
+f92700bf vld4.32 {d0, d1, d2, d3}, [r7:256]
+f96b219f vld4.32 {d18, d20, d22, d24}, [r11:64]
+f964b05f vld4.16 {d27, d28, d29, d30}, [r4:64]
+f96f612f vld4.8 {d22, d24, d26, d28}, [pc:128] (unpredictable)
+F927F06F vld4.16 {d15, d16, d17, d18}, [r7:128]
+F927806F vld4.16 {d8, d9, d10, d11}, [r7:128]
+F927406F vld4.16 {d4, d5, d6, d7}, [r7:128]
+F927C0EF UNDEFINED
+F927C06F [ne] vld4ne.16 {d12, d13, d14, d15}, [r7:128]
+F920C04F vld4.16 {d12, d13, d14, d15}, [r0]
+
+// VLD4_m_T1_posti 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=1101
+// Vld4MT1Posti: VLD4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f960a18d UNPREDICTABLE
+f927702d vld4.8 {d7, d8, d9, d10}, [r7:128]!
+f926010d vld4.8 {d0, d2, d4, d6}, [r6]!
+f929211d vld4.8 {d2, d4, d6, d8}, [r9:64]!
+f962818d vld4.32 {d24, d26, d28, d30}, [r2]!
+f96a414d vld4.16 {d20, d22, d24, d26}, [r10]!
+f969c16d UNPREDICTABLE
+f966701d vld4.8 {d23, d24, d25, d26}, [r6:64]!
+F96FF1BD UNPREDICTABLE
+F960118D vld4.32 {d17, d19, d21, d23}, [r0]!
+F960A1CD UNDEFINED
+F960A18D [ne] UNPREDICTABLE
+F927702D [ne] vld4ne.8 {d7, d8, d9, d10}, [r7:128]!
+F92FF03D vld4.8 {d15, d16, d17, d18}, [pc:256]! (unpredictable)
+
+// VLD4_m_T1_postr 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=xxxx
+// Vld4MT1Postr: VLD4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+F9200000 vld4.8 {d0, d1, d2, d3}, [r0], r0
+F96FF150 UNPREDICTABLE
+F92080A0 vld4.32 {d8, d9, d10, d11}, [r0:128], r0
+F9204030 vld4.8 {d4, d5, d6, d7}, [r0:256], r0
+F9202000 vld4.8 {d2, d3, d4, d5}, [r0], r0
+F9201000 vld4.8 {d1, d2, d3, d4}, [r0], r0
+F92000CF UNDEFINED
+F9200000 [ne] vld4ne.8 {d0, d1, d2, d3}, [r0], r0
+F96F0150 vld4.16 {d16, d18, d20, d22}, [pc:64], r0 (unpredictable)
+F920F000 vld4.8 {d15, d16, d17, d18}, [r0], r0

@@ -1,0 +1,14 @@
+// smlalt_z_zzz_ 010|0010|0|size=xx|0|Zm=xxxxx|0|10|S=0|U=0|T=1|Zn=xxxxx|Zda=xxxxx
+// SmlaltZZzz: SMLALT  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+445E4625 smlalt z5.h, z17.b, z30.b
+44DA477B smlalt z27.d, z27.s, z26.s
+44C4472A smlalt z10.d, z25.s, z4.s
+44C445C1 smlalt z1.d, z14.s, z4.s
+448B4668 smlalt z8.s, z19.h, z11.h
+445B45BC smlalt z28.h, z13.b, z27.b
+445D46E3 smlalt z3.h, z23.b, z29.b
+44C444CB smlalt z11.d, z6.s, z4.s
+44404400 smlalt z0.h, z0.b, z0.b
+445F47FF smlalt z31.h, z31.b, z31.b
+441E4625 UNDEFINED

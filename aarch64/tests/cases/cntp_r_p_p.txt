@@ -1,0 +1,22 @@
+// cntp_r_p_p_ 001|0010|1|size=xx|100|opc=000|10|Pg=xxxx|0|Pn=xxxx|Rd=xxxxx
+// CntpRPP: CNTP  <Xd>, <Pg>, <Pn>.<T>
+// register fields: Pg, Pn, Rd
+25A08C01 cntp x1, p3, p0.s
+25E0A48A cntp x10, p9, p4.d
+25E0987A cntp x26, p6, p3.d
+25609545 cntp x5, p5, p10.h
+2520BCD1 cntp x17, p15, p6.b
+25E0818A cntp x10, p0, p12.d
+25A0AC09 cntp x9, p11, p0.s
+2520A566 cntp x6, p9, p11.b
+25A091D8 cntp x24, p4, p14.s
+25A0B1E6 cntp x6, p12, p15.s
+25A0AC6B cntp x11, p11, p3.s
+25E0B4D1 cntp x17, p13, p6.d
+25E09D81 cntp x1, p7, p12.d
+2560B5F9 cntp x25, p13, p15.h
+25E08D24 cntp x4, p3, p9.d
+256084C8 cntp x8, p1, p6.h
+25A08C00 cntp x0, p3, p0.s
+25A08C1F cntp xzr, p3, p0.s
+25A08C61 cntp x1, p3, p3.s

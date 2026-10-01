@@ -1,0 +1,17 @@
+// SHASX_T1 111|11010|1|op1=010|Rn=xxxx|1111|Rd=xxxx|0|U=0|H=1|S=0|Rm=xxxx
+// ShasxT1: SHASX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+faa0fe25 shasx lr, r0, r5
+faa0ff26 shasx pc, r0, r6 (unpredictable)
+faadfc2b shasx r12, sp, r11
+faa4f027 shasx r0, r4, r7
+faa0f82e shasx r8, r0, lr
+faacf62a shasx r6, r12, r10
+faacf425 shasx r4, r12, r5
+faa9f523 shasx r5, r9, r3
+FAAFFE20 shasx lr, pc, r0 (unpredictable)
+FAA0F02F shasx r0, r0, pc (unpredictable)
+FAA0FE20 shasx lr, r0, r0
+FAA0FE2E shasx lr, r0, lr
+FAA0FE25 [ne] shasxne lr, r0, r5

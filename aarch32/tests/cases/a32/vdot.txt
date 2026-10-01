@@ -1,0 +1,39 @@
+// VDOT_A1_D 1111110|op1=00|D=x|op2=00|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=1|N=x|Q=0|M=x|U=0|Vm=xxxx
+// VdotA1D: VDOT{<q>}.BF16  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fc04dd85 vdot.bf16 d13, d20, d5
+fc437dae vdot.bf16 d23, d19, d30
+fc010d24 vdot.bf16 d0, d1, d20
+fc494d2f vdot.bf16 d20, d9, d31
+fc489da8 vdot.bf16 d25, d24, d24
+fc4d6d8e vdot.bf16 d22, d29, d14
+fc42fd0d vdot.bf16 d31, d2, d13
+fc40ed84 vdot.bf16 d30, d16, d4
+FC0F8D80 vdot.bf16 d8, d31, d0
+FC002D02 vdot.bf16 d2, d0, d2
+FC0F1D01 vdot.bf16 d1, d15, d1
+FC0FFD80 vdot.bf16 d15, d31, d0
+FC440D8F vdot.bf16 d16, d20, d15
+FC04DDA0 vdot.bf16 d13, d20, d16
+
+// VDOT_A1_Q 1111110|op1=00|D=x|op2=00|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=1|N=x|Q=1|M=x|U=0|Vm=xxxx
+// VdotA1Q: VDOT{<q>}.BF16  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+fc466de6 vdot.bf16 q11, q11, q11
+fc4aade6 vdot.bf16 q13, q13, q11
+fc00ed62 vdot.bf16 q7, q0, q9
+fc000dea vdot.bf16 q0, q8, q13
+fc4ced4a vdot.bf16 q15, q6, q5
+fc020d66 vdot.bf16 q0, q1, q11
+FC4FFDEF UNDEFINED
+FC488DE0 vdot.bf16 q12, q12, q8
+FC444DE8 vdot.bf16 q10, q10, q12
+FC411DE1 UNDEFINED
+FC462DE4 vdot.bf16 q9, q11, q10
+FC0FFD4F UNDEFINED
+FC460DC0 vdot.bf16 q8, q11, q0
+FC466DE0 vdot.bf16 q11, q11, q8

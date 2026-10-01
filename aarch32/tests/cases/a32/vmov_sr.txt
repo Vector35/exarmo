@@ -1,0 +1,41 @@
+// VMOV_sr_A1 cond=xxxx|11|10|U=x|opc1=xx|L=1|Vn=xxxx|Rt=xxxx|1|011|N=x|opc2=xx|1|(0)(0)(0)(0)
+// VmovSrA1: VMOV{<c>}{<q>}{.<dt>}  <Rt>, <Dn[x]>
+// read together by <dt>: U, opc1, opc2
+// register fields: Rt
+0E100B10 vmoveq.32 r0, d0[0]
+FE900B10 UNALLOCATED
+8E3FFBBF vmovhi.s16 pc, d31[2] (unpredictable)
+4E580B58 vmovmi.s8 r0, d8[2] (unpredictable)
+2E740B74 vmovcs.s8 r0, d4[7] (unpredictable)
+1E120B12 vmovne.32 r0, d2[0] (unpredictable)
+0E110B31 vmoveq.s16 r0, d1[0] (unpredictable)
+0E100B50 UNDEFINED
+0E100B70 vmoveq.s16 r0, d0[1]
+0E300B10 vmoveq.32 r0, d0[1]
+0E300B30 vmoveq.s16 r0, d0[2]
+0E300B50 UNDEFINED
+0E300B70 vmoveq.s16 r0, d0[3]
+0E500B10 vmoveq.s8 r0, d0[0]
+0E500B30 vmoveq.s8 r0, d0[1]
+0E500B50 vmoveq.s8 r0, d0[2]
+0E500B70 vmoveq.s8 r0, d0[3]
+0E700B10 vmoveq.s8 r0, d0[4]
+0E700B30 vmoveq.s8 r0, d0[5]
+0E700B50 vmoveq.s8 r0, d0[6]
+0E700B70 vmoveq.s8 r0, d0[7]
+0E900B10 UNDEFINED
+0E900B30 vmoveq.u16 r0, d0[0]
+0E900B50 UNDEFINED
+0E900B70 vmoveq.u16 r0, d0[1]
+0EB00B10 UNDEFINED
+0EB00B30 vmoveq.u16 r0, d0[2]
+0EB00B50 UNDEFINED
+0EB00B70 vmoveq.u16 r0, d0[3]
+0ED00B10 vmoveq.u8 r0, d0[0]
+0ED00B30 vmoveq.u8 r0, d0[1]
+0ED00B50 vmoveq.u8 r0, d0[2]
+0ED00B70 vmoveq.u8 r0, d0[3]
+0EF00B10 vmoveq.u8 r0, d0[4]
+0EF00B30 vmoveq.u8 r0, d0[5]
+0EF00B50 vmoveq.u8 r0, d0[6]
+0EF00B70 vmoveq.u8 r0, d0[7]

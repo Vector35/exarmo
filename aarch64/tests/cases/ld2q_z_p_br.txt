@@ -1,0 +1,16 @@
+// ld2q_z_p_br_contiguous 101|0010|num=01|01|Rm=xxxxx|100|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld2qZPBrContiguous: LD2Q  { <Zt1>.Q, <Zt2>.Q }, <Pg>/Z, [<Xn|SP>, <Xm>, LSL #4]
+// register fields: Rm, Pg, Rn, Zt
+A4A08005 ld2q {z5.q, z6.q}, p0/z, [x0, x0, lsl #4]
+A4A0800C ld2q {z12.q, z13.q}, p0/z, [x0, x0, lsl #4]
+A4A08013 ld2q {z19.q, z20.q}, p0/z, [x0, x0, lsl #4]
+A4A087E0 ld2q {z0.q, z1.q}, p1/z, [sp, x0, lsl #0x4]
+A4A0881F ld2q {z31.q, z0.q}, p2/z, [x0, x0, lsl #0x4]
+A4A08C05 ld2q {z5.q, z6.q}, p3/z, [x0, x0, lsl #0x4]
+A4A09005 ld2q {z5.q, z6.q}, p4/z, [x0, x0, lsl #0x4]
+A4A09405 ld2q {z5.q, z6.q}, p5/z, [x0, x0, lsl #0x4]
+A4A09805 ld2q {z5.q, z6.q}, p6/z, [x0, x0, lsl #0x4]
+A4A09C05 ld2q {z5.q, z6.q}, p7/z, [x0, x0, lsl #0x4]
+A4BF8005 UNALLOCATED
+A4A08000 ld2q {z0.q, z1.q}, p0/z, [x0, x0, lsl #0x4]
+A4A18864 ld2q {z4.q, z5.q}, p2/z, [x3, x1, lsl #0x4]

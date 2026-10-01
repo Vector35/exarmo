@@ -1,0 +1,16 @@
+// UADD16_T1 111|11010|1|op1=001|Rn=xxxx|1111|Rd=xxxx|0|U=1|H=0|S=0|Rm=xxxx
+// Uadd16T1: UADD16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa90f945 uadd16 r9, r0, r5
+fa9efe41 uadd16 lr, lr, r1
+fa99f647 uadd16 r6, r9, r7
+fa97fe43 uadd16 lr, r7, r3
+fa9cff40 uadd16 pc, r12, r0 (unpredictable)
+fa9ef74d uadd16 r7, lr, sp
+fa98f643 uadd16 r6, r8, r3
+fa9af540 uadd16 r5, r10, r0
+FA9FF04F uadd16 r0, pc, pc (unpredictable)
+FA90F940 uadd16 r9, r0, r0
+FA90F949 uadd16 r9, r0, r9
+FA90F945 [ne] uadd16ne r9, r0, r5

@@ -1,0 +1,23 @@
+// BKPT_A1 cond=xxxx|00|010|opc=01|0|imm12=xxxxxxxxxxxx|0|111|imm4=xxxx
+// BkptA1: BKPT{<q>}  {#}<imm>
+// read together by <imm>: imm12, imm4
+e123b47a bkpt #15178
+// Binary Ninja's tests
+e120007a bkpt #10
+e12fff7f bkpt #65535
+01280070 bkpt #0x8000 (unpredictable)
+F123B47A UNPREDICTABLE
+81240078 bkpt #0x4008 (unpredictable)
+41220074 bkpt #0x2004 (unpredictable)
+21210072 bkpt #0x1002 (unpredictable)
+11208071 bkpt #0x801 (unpredictable)
+E120407A bkpt #0x40a
+E120207A bkpt #0x20a
+E120107A bkpt #0x10a
+E120087A bkpt #0x8a
+E120047A bkpt #0x4a
+E120027A bkpt #0x2a
+E120017A bkpt #0x1a
+E1200070 bkpt #0x0
+E120007F bkpt #0xf
+E12FFF70 bkpt #0xfff0

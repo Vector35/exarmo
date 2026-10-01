@@ -1,0 +1,33 @@
+// LDLARB_LR32_ldstord size=00|00|1|0|0|01|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdlarbLr32Ldstord: LDLARB  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+08DF7C04 ldlarb w4, [x0]
+08DF7D1E ldlarb w30, [x8]
+08DF7E1A ldlarb w26, [x16]
+08DF7D98 ldlarb w24, [x12]
+08DF7DD7 ldlarb w23, [x14]
+08DF7E5E ldlarb w30, [x18]
+08DF7ECF ldlarb w15, [x22]
+08DF7F7D ldlarb w29, [x27]
+08C87306 ldlarb w6, [x24] (unpredictable)
+08D85C88 ldlarb w8, [x4] (unpredictable)
+08C1609B ldlarb w27, [x4] (unpredictable)
+08C5584A ldlarb w10, [x2] (unpredictable)
+08D2660A ldlarb w10, [x16] (unpredictable)
+08DB0EA4 ldlarb w4, [x21] (unpredictable)
+08DC0665 ldlarb w5, [x19] (unpredictable)
+08D350CD ldlarb w13, [x6] (unpredictable)
+08DD3996 ldlarb w22, [x12] (unpredictable)
+08C2710C ldlarb w12, [x8] (unpredictable)
+08C67B2B ldlarb w11, [x25] (unpredictable)
+08DF0297 ldlarb w23, [x20] (unpredictable)
+08C13895 ldlarb w21, [x4] (unpredictable)
+08D4172C ldlarb w12, [x25] (unpredictable)
+08DB0B1C ldlarb w28, [x24] (unpredictable)
+08D90357 ldlarb w23, [x26] (unpredictable)
+08C07FE0 ldlarb w0, [sp] (unpredictable)
+08DF7C1F ldlarb wzr, [x0]
+08DF7C00 ldlarb w0, [x0]
+08D04004 ldlarb w4, [x0] (unpredictable)
+08C42004 ldlarb w4, [x0] (unpredictable)
+08DF1004 ldlarb w4, [x0] (unpredictable)

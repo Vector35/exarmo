@@ -1,0 +1,46 @@
+// FSUB_asimdsame_only 0|Q=x|U=0|0|111|0|1|sz=x|1|Rm=xxxxx|opcode=11010|1|Rn=xxxxx|Rd=xxxxx
+// FsubAsimdsameOnly: FSUB  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+0EB4D778 fsub v24.2s, v27.2s, v20.2s
+4EAFD605 fsub v5.4s, v16.4s, v15.4s
+0EB3D7D0 fsub v16.2s, v30.2s, v19.2s
+4EF6D567 fsub v7.2d, v11.2d, v22.2d
+4EFBD513 fsub v19.2d, v8.2d, v27.2d
+0EADD49D fsub v29.2s, v4.2s, v13.2s
+4EAED7F2 fsub v18.4s, v31.4s, v14.4s
+4EB9D73D fsub v29.4s, v25.4s, v25.4s
+4EF5D56C fsub v12.2d, v11.2d, v21.2d
+4EF5D7DE fsub v30.2d, v30.2d, v21.2d
+0EB9D4D5 fsub v21.2s, v6.2s, v25.2s
+4EE5D67C fsub v28.2d, v19.2d, v5.2d
+4EE6D4C6 fsub v6.2d, v6.2d, v6.2d
+4EAED652 fsub v18.4s, v18.4s, v14.4s
+4EFED62A fsub v10.2d, v17.2d, v30.2d
+0EADD6B3 fsub v19.2s, v21.2s, v13.2s
+0EA0D400 fsub v0.2s, v0.2s, v0.2s
+0EBFD77F fsub v31.2s, v27.2s, v31.2s
+0EF4D778 UNDEFINED
+
+// FSUB_asimdsamefp16_only 0|Q=x|U=0|0|111|0|a=1|10|Rm=xxxxx|00|opcode=010|1|Rn=xxxxx|Rd=xxxxx
+// FsubAsimdsamefp16Only: FSUB  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+4EC317AA fsub v10.8h, v29.8h, v3.8h
+0ED11778 fsub v24.4h, v27.4h, v17.4h
+4ED315B5 fsub v21.8h, v13.8h, v19.8h
+0ED614C5 fsub v5.4h, v6.4h, v22.4h
+0ED4147C fsub v28.4h, v3.4h, v20.4h
+4ED516C9 fsub v9.8h, v22.8h, v21.8h
+0ECC172B fsub v11.4h, v25.4h, v12.4h
+0ECF1624 fsub v4.4h, v17.4h, v15.4h
+4ED6159A fsub v26.8h, v12.8h, v22.8h
+4ECE15C1 fsub v1.8h, v14.8h, v14.8h
+4ED31402 fsub v2.8h, v0.8h, v19.8h
+0ED31447 fsub v7.4h, v2.4h, v19.4h
+4EDC141F fsub v31.8h, v0.8h, v28.8h
+4EDD164B fsub v11.8h, v18.8h, v29.8h
+4EDC1731 fsub v17.8h, v25.8h, v28.8h
+4ECE15EA fsub v10.8h, v15.8h, v14.8h
+4EC017E0 fsub v0.8h, v31.8h, v0.8h
+4EDF17AA fsub v10.8h, v29.8h, v31.8h
+4EC317BD fsub v29.8h, v29.8h, v3.8h

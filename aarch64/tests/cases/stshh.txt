@@ -1,0 +1,4 @@
+// STSHH_HI_hints 110|101|01000000110010|CRm=0110|op2=00x|11111
+// StshhHiHints: STSHH  <policy>
+D503263F stshh strm
+D503261F stshh keep

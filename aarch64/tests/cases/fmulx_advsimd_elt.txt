@@ -1,0 +1,112 @@
+// FMULX_asimdelem_R_SD 0|Q=x|U=1|0|111|1|1|sz=x|L=x|M=x|Rm=xxxx|opcode=1001|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmulxAsimdelemRSd: FMULX  <Vd>.<T>, <Vn>.<T>, <Vm>.<Ts>[<index>]
+// read together by <T>: Q, sz
+// read together by <Vm>: M, Rm
+// read together by <index>: sz, L, H
+// register fields: Rn, Rd
+6FB79B1E fmulx v30.4s, v24.4s, v23.s[3]
+6FCE9AD8 fmulx v24.2d, v22.2d, v14.d[1]
+2F839252 fmulx v18.2s, v18.2s, v3.s[0]
+6FB299DC fmulx v28.4s, v14.4s, v18.s[3]
+6FB7905B fmulx v27.4s, v2.4s, v23.s[1]
+6FCB93C5 fmulx v5.2d, v30.2d, v11.d[0]
+2FA49BF4 fmulx v20.2s, v31.2s, v4.s[3]
+2FAA9181 fmulx v1.2s, v12.2s, v10.s[1]
+2FBA91B6 fmulx v22.2s, v13.2s, v26.s[1]
+6FC593DB fmulx v27.2d, v30.2d, v5.d[0]
+6FC299B2 fmulx v18.2d, v13.2d, v2.d[1]
+2FAF9B8E fmulx v14.2s, v28.2s, v15.s[3]
+6FDA93F9 fmulx v25.2d, v31.2d, v26.d[0]
+2F8290EB fmulx v11.2s, v7.2s, v2.s[0]
+6FA393E3 fmulx v3.4s, v31.4s, v3.s[1]
+6F9F9900 fmulx v0.4s, v8.4s, v31.s[2]
+6FB0981F fmulx v31.4s, v0.4s, v16.s[3]
+6FF7931E UNDEFINED
+6FF79B1E UNDEFINED
+6FA09B1E fmulx v30.4s, v24.4s, v0.s[3]
+2FF79B1E UNDEFINED
+6FB89B1E fmulx v30.4s, v24.4s, v24.s[3]
+6FB19B1E fmulx v30.4s, v24.4s, v17.s[3]
+
+// FMULX_asimdelem_RH_H 0|Q=x|U=1|0|111|1|size=00|L=x|M=x|Rm=xxxx|opcode=1001|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmulxAsimdelemRhH: FMULX  <Vd>.<T>, <Vn>.<T>, <Vm>.H[<index>]
+// read together by <index>: L, M, H
+// register fields: Rm, Rn, Rd
+6F2B9832 fmulx v18.8h, v1.8h, v11.h[6]
+2F0C917D fmulx v29.4h, v11.4h, v12.h[0]
+2F059291 fmulx v17.4h, v20.4h, v5.h[0]
+2F2B91A1 fmulx v1.4h, v13.4h, v11.h[2]
+6F279240 fmulx v0.8h, v18.8h, v7.h[2]
+6F05917E fmulx v30.8h, v11.8h, v5.h[0]
+2F239903 fmulx v3.4h, v8.4h, v3.h[6]
+6F1491F6 fmulx v22.8h, v15.8h, v4.h[1]
+6F3C9265 fmulx v5.8h, v19.8h, v12.h[3]
+2F0F98D0 fmulx v16.4h, v6.4h, v15.h[4]
+2F1D9AB9 fmulx v25.4h, v21.4h, v13.h[5]
+2F079117 fmulx v23.4h, v8.4h, v7.h[0]
+6F2599D3 fmulx v19.8h, v14.8h, v5.h[6]
+2F249ADF fmulx v31.4h, v22.4h, v4.h[6]
+2F1D9B06 fmulx v6.4h, v24.4h, v13.h[5]
+2F17903B fmulx v27.4h, v1.4h, v7.h[1]
+6F209812 fmulx v18.8h, v0.8h, v0.h[6]
+6F2B9BF2 fmulx v18.8h, v31.8h, v11.h[6]
+6F3B9821 fmulx v1.8h, v1.8h, v11.h[7]
+
+// FMULX_asisdelem_R_SD 01|U=1|1|111|1|1|sz=x|L=x|M=x|Rm=xxxx|opcode=1001|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmulxAsisdelemRSd: FMULX  <V><d>, <V><n>, <Vm>.<Ts>[<index>]
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// read together by <Vm>: M, Rm
+// read together by <index>: sz, L, H
+// register fields: Rn, Rd
+7F899A04 fmulx s4, s16, v9.s[2]
+7F8B9A59 fmulx s25, s18, v11.s[2]
+7F849319 fmulx s25, s24, v4.s[0]
+7F959B16 fmulx s22, s24, v21.s[2]
+7F8A920E fmulx s14, s16, v10.s[0]
+7FB89099 fmulx s25, s4, v24.s[1]
+7FC7912C fmulx d12, d9, v7.d[0]
+7FC193B7 fmulx d23, d29, v1.d[0]
+7F9F98DE fmulx s30, s6, v31.s[2]
+7FD192CF fmulx d15, d22, v17.d[0]
+7F939357 fmulx s23, s26, v19.s[0]
+7F979BB3 fmulx s19, s29, v23.s[2]
+7FCB9889 fmulx d9, d4, v11.d[1]
+7FB6916D fmulx s13, s11, v22.s[1]
+7F9B9A8D fmulx s13, s20, v27.s[2]
+7F829097 fmulx s23, s4, v2.s[0]
+7F809800 fmulx s0, s0, v0.s[2]
+7F899BFF fmulx s31, s31, v9.s[2]
+7FAF9A04 fmulx s4, s16, v15.s[3]
+7FE99204 UNDEFINED
+7FE99A04 UNDEFINED
+7FD09A00 fmulx d0, d16, v16.d[1]
+7FC99A1F fmulx d31, d16, v9.d[1]
+7FC99804 fmulx d4, d0, v9.d[1]
+7FC99BE4 fmulx d4, d31, v9.d[1]
+
+// FMULX_asisdelem_RH_H 01|U=1|1|111|1|size=00|L=x|M=x|Rm=xxxx|opcode=1001|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmulxAsisdelemRhH: FMULX  <Hd>, <Hn>, <Vm>.H[<index>]
+// read together by <index>: L, M, H
+// register fields: Rm, Rn, Rd
+7F089B5D fmulx h29, h26, v8.h[4]
+7F239286 fmulx h6, h20, v3.h[2]
+7F0B9014 fmulx h20, h0, v11.h[0]
+7F2C9282 fmulx h2, h20, v12.h[2]
+7F379A4A fmulx h10, h18, v7.h[7]
+7F319176 fmulx h22, h11, v1.h[3]
+7F2D9086 fmulx h6, h4, v13.h[2]
+7F1E9AEA fmulx h10, h23, v14.h[5]
+7F109334 fmulx h20, h25, v0.h[1]
+7F1C93EA fmulx h10, h31, v12.h[1]
+7F0D9192 fmulx h18, h12, v13.h[0]
+7F1B91C9 fmulx h9, h14, v11.h[1]
+7F369915 fmulx h21, h8, v6.h[7]
+7F019964 fmulx h4, h11, v1.h[4]
+7F169B44 fmulx h4, h26, v6.h[5]
+7F3A9BC8 fmulx h8, h30, v10.h[7]
+7F0F9B40 fmulx h0, h26, v15.h[4]
+7F089B5F fmulx h31, h26, v8.h[4]
+7F28991D fmulx h29, h8, v8.h[6]
+7F089B48 fmulx h8, h26, v8.h[4]
+7F089B5A fmulx h26, h26, v8.h[4]

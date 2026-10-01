@@ -1,0 +1,92 @@
+// AND_r_A1 cond=xxxx|0000|opc=000|S=0|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// AndRA1: AND{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+a00344ea andge r4, r3, r10, ror #9
+a007ac09 andge r10, r7, r9, lsl #24
+5002654b andpl r6, r2, r11, asr #10
+b00480c4 andlt r8, r4, r4, asr #1
+a00d4fc4 andge r4, sp, r4, asr #31
+300cc4cd andlo r12, r12, sp, asr #9
+d00dd32b andle sp, sp, r11, lsr #6
+900488e0 andls r8, r4, r0, ror #17
+// Binary Ninja's tests
+00001840 andeq r1, r0, r0, asr #16
+0001eb00 andeq lr, r1, r0, lsl #22
+e0013022 and r3, r1, r2, lsr #32
+e0013042 and r3, r1, r2, asr #32
+e001a006 and r10, r1, r6
+e001a506 and r10, r1, r6, lsl #10
+e001a526 and r10, r1, r6, lsr #10
+e001a546 and r10, r1, r6, asr #10
+e001a566 and r10, r1, r6, ror #10
+e0021003 and r1, r2, r3
+e0022003 and r2, r2, r3
+e00aa001 and r10, r10, r1
+e00aa501 and r10, r10, r1, lsl #10
+e00aa521 and r10, r10, r1, lsr #10
+e00aa541 and r10, r10, r1, asr #10
+e00aa561 and r10, r10, r1, ror #10
+F00344EA UNALLOCATED
+800F046F andhi r0, pc, pc, ror #0x8
+4003F26A andmi pc, r3, r10, ror #0x4
+2003416A andcs r4, r3, r10, ror #0x2
+100344EA andne r4, r3, r10, ror #0x9
+
+// AND_r_A1_RRX cond=xxxx|0000|opc=000|S=0|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// AndRA1Rrx: AND{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+0006806b andeq r8, r6, r11, rrx
+c00b5062 andgt r5, r11, r2, rrx
+800a9062 andhi r9, r10, r2, rrx
+c005b06d andgt r11, r5, sp, rrx
+4008806c andmi r8, r8, r12, rrx
+60017062 andvs r7, r1, r2, rrx
+e00d1068 and r1, sp, r8, rrx
+c0094062 andgt r4, r9, r2, rrx
+// Binary Ninja's tests
+e001a066 and r10, r1, r6, rrx
+e00aa061 and r10, r10, r1, rrx
+F006806B UNALLOCATED
+20000060 andcs r0, r0, r0, rrx
+100FF06F andne pc, pc, pc, rrx
+00068066 andeq r8, r6, r6, rrx
+00068068 andeq r8, r6, r8, rrx
+
+// ANDS_r_A1 cond=xxxx|0000|opc=000|S=1|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// AndsRA1: ANDS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+401f06c6 andsmi r0, pc, r6, asr #13
+201bf5cb andshs pc, r11, r11, asr #11
+b0116e8e andslt r6, r1, lr, lsl #29
+9015bd6c andsls r11, r5, r12, ror #26
+101a6ac4 andsne r6, r10, r4, asr #21
+b0166ce1 andslt r6, r6, r1, ror #25
+0013652b andseq r6, r3, r11, lsr #10
+6012cb49 andsvs r12, r2, r9, asr #22
+// Binary Ninja's tests
+00122003 andseq r2, r2, r3
+e0121003 ands r1, r2, r3
+F01F06C6 UNALLOCATED
+80100FC0 andshi r0, r0, r0, asr #0x1f
+401F084F andsmi r0, pc, pc, asr #0x10
+401F0440 andsmi r0, pc, r0, asr #0x8
+401F0246 andsmi r0, pc, r6, asr #0x4
+401F0146 andsmi r0, pc, r6, asr #0x2
+401F00C6 andsmi r0, pc, r6, asr #0x1
+
+// ANDS_r_A1_RRX cond=xxxx|0000|opc=000|S=1|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// AndsRA1Rrx: ANDS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+b017506c andslt r5, r7, r12, rrx
+40118060 andsmi r8, r1, r0, rrx
+201a5069 andshs r5, r10, r9, rrx
+5019c06c andspl r12, r9, r12, rrx
+301a806d andslo r8, r10, sp, rrx
+b01e1062 andslt r1, lr, r2, rrx
+5016106f andspl r1, r6, pc, rrx
+b01ac06f andslt r12, r10, pc, rrx
+0010006C andseq r0, r0, r12, rrx
+F017506C UNALLOCATED
+801FF06C andshi pc, pc, r12, rrx
+1017706C andsne r7, r7, r12, rrx
+B0175067 andslt r5, r7, r7, rrx

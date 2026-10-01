@@ -1,0 +1,126 @@
+// SQDMLSL_asimdelem_L 0|Q=x|U=0|0|111|1|size=xx|L=x|M=x|Rm=xxxx|0|o2=1|11|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqdmlslAsimdelemL: SQDMLSL  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// SqdmlslAsimdelemL2: SQDMLSL2  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// read together by <Tb>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+// form chosen on: Q
+0F80799A sqdmlsl v26.2d, v12.2s, v0.s[2]
+4FB778C9 sqdmlsl2 v9.2d, v6.4s, v23.s[3]
+4F497253 sqdmlsl2 v19.4s, v18.8h, v9.h[0]
+4F407ABF sqdmlsl2 v31.4s, v21.8h, v0.h[4]
+0F4471A3 sqdmlsl v3.4s, v13.4h, v4.h[0]
+4F747909 sqdmlsl2 v9.4s, v8.8h, v4.h[7]
+0F5B73B6 sqdmlsl v22.4s, v29.4h, v11.h[1]
+0F787234 sqdmlsl v20.4s, v17.4h, v8.h[3]
+0F887B81 sqdmlsl v1.2d, v28.2s, v8.s[2]
+4FBE798D sqdmlsl2 v13.2d, v12.4s, v30.s[3]
+0F897B3C sqdmlsl v28.2d, v25.2s, v9.s[2]
+0FBF7177 sqdmlsl v23.2d, v11.2s, v31.s[1]
+0FBC7249 sqdmlsl v9.2d, v18.2s, v28.s[1]
+4FA673AB sqdmlsl2 v11.2d, v29.4s, v6.s[1]
+0FAC7985 sqdmlsl v5.2d, v12.2s, v12.s[3]
+0F47711A sqdmlsl v26.4s, v8.4h, v7.h[0]
+0F807800 sqdmlsl v0.2d, v0.2s, v0.s[2]
+0F807BFA sqdmlsl v26.2d, v31.2s, v0.s[2]
+0F00799A UNDEFINED
+0FC0799A UNDEFINED
+0F00719A UNDEFINED
+0F10719A UNDEFINED
+0F10799A UNDEFINED
+0F20719A UNDEFINED
+0F20799A UNDEFINED
+0F30719A UNDEFINED
+0F30799A UNDEFINED
+0F50799A sqdmlsl v26.4s, v12.4h, v0.h[5]
+0F60719A sqdmlsl v26.4s, v12.4h, v0.h[2]
+0F60799A sqdmlsl v26.4s, v12.4h, v0.h[6]
+0F80719A sqdmlsl v26.2d, v12.2s, v0.s[0]
+0F90719A sqdmlsl v26.2d, v12.2s, v16.s[0]
+0F90799A sqdmlsl v26.2d, v12.2s, v16.s[2]
+0FC0719A UNDEFINED
+0FD0719A UNDEFINED
+0FD0799A UNDEFINED
+0FE0719A UNDEFINED
+0FE0799A UNDEFINED
+0FF0719A UNDEFINED
+0FF0799A UNDEFINED
+0F0F799A UNDEFINED
+0F1F799A UNDEFINED
+0F4F799A sqdmlsl v26.4s, v12.4h, v15.h[4]
+0F5F799A sqdmlsl v26.4s, v12.4h, v15.h[5]
+0F8F799A sqdmlsl v26.2d, v12.2s, v15.s[2]
+0FCF799A UNDEFINED
+0FDF799A UNDEFINED
+4F00799A UNDEFINED
+4FC0799A UNDEFINED
+0F82799A sqdmlsl v26.2d, v12.2s, v2.s[2]
+0F81799A sqdmlsl v26.2d, v12.2s, v1.s[2]
+4F4471A3 sqdmlsl2 v3.4s, v13.8h, v4.h[0]
+
+// SQDMLSL_asisdelem_L 01|U=0|1|111|1|size=xx|L=x|M=x|Rm=xxxx|0|o2=1|11|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqdmlslAsisdelemL: SQDMLSL  <Va><d>, <Vb><n>, <m>.<Ts>[<index>]
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+5F6F72F5 sqdmlsl s21, h23, v15.h[2]
+5F527AE5 sqdmlsl s5, h23, v2.h[5]
+5FA3785B sqdmlsl d27, s2, v3.s[3]
+5F54738E sqdmlsl s14, h28, v4.h[1]
+5F9270B1 sqdmlsl d17, s5, v18.s[0]
+5F917904 sqdmlsl d4, s8, v17.s[2]
+5F4E7069 sqdmlsl s9, h3, v14.h[0]
+5FA0723F sqdmlsl d31, s17, v0.s[1]
+5FB27860 sqdmlsl d0, s3, v18.s[3]
+5F7B7084 sqdmlsl s4, h4, v11.h[3]
+5FAE78A7 sqdmlsl d7, s5, v14.s[3]
+5F9F78E4 sqdmlsl d4, s7, v31.s[2]
+5FBE72F3 sqdmlsl d19, s23, v30.s[1]
+5F447051 sqdmlsl s17, h2, v4.h[0]
+5F7878FC sqdmlsl s28, h7, v8.h[7]
+5F8772CA sqdmlsl d10, s22, v7.s[0]
+5F6F7015 sqdmlsl s21, h0, v15.h[2]
+5F6F73F5 sqdmlsl s21, h31, v15.h[2]
+5F2F72F5 UNDEFINED
+5FEF72F5 UNDEFINED
+5F0F72F5 UNDEFINED
+5F0F7AF5 UNDEFINED
+5F1F72F5 UNDEFINED
+5F1F7AF5 UNDEFINED
+5F2F7AF5 UNDEFINED
+5F3F72F5 UNDEFINED
+5F3F7AF5 UNDEFINED
+5F4F7AF5 sqdmlsl s21, h23, v15.h[4]
+5F6F7AF5 sqdmlsl s21, h23, v15.h[6]
+5F8F7AF5 sqdmlsl d21, s23, v15.s[2]
+5FCF72F5 UNDEFINED
+5FCF7AF5 UNDEFINED
+5FDF72F5 UNDEFINED
+5FDF7AF5 UNDEFINED
+5FEF7AF5 UNDEFINED
+5FFF72F5 UNDEFINED
+5FFF7AF5 UNDEFINED
+5F2072F5 UNDEFINED
+5F3072F5 UNDEFINED
+5F6072F5 sqdmlsl s21, h23, v0.h[2]
+5F7072F5 sqdmlsl s21, h23, v0.h[3]
+5F7F72F5 sqdmlsl s21, h23, v15.h[3]
+5FAF72F5 sqdmlsl d21, s23, v15.s[1]
+5FB072F5 sqdmlsl d21, s23, v16.s[1]
+5FE072F5 UNDEFINED
+5FF072F5 UNDEFINED
+5F2F72E0 UNDEFINED
+5F2F72FF UNDEFINED
+5F6F72E0 sqdmlsl s0, h23, v15.h[2]
+5F6F72FF sqdmlsl s31, h23, v15.h[2]
+5FEF72E0 UNDEFINED
+5FEF72FF UNDEFINED
+5F2F7015 UNDEFINED
+5F2F73F5 UNDEFINED
+5FAF7015 sqdmlsl d21, s0, v15.s[1]
+5FAF73F5 sqdmlsl d21, s31, v15.s[1]
+5FEF7015 UNDEFINED
+5FEF73F5 UNDEFINED

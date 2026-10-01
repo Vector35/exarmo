@@ -1,0 +1,67 @@
+// ADD_SP_r_A1 cond=xxxx|0000|opc=100|S=0|Rn=1101|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// AddSpRA1: ADD{<c>}{<q>}  {<Rd>, }SP, <Rm> {, <shift> #<amount>}
+// register fields: Rd, Rm
+308da9e7 addlo r10, sp, r7, ror #19
+a08d27c2 addge r2, sp, r2, asr #15
+108db502 addne r11, sp, r2, lsl #10
+b08d5a8b addlt r5, sp, r11, lsl #21
+708d488c addvc r4, sp, r12, lsl #17
+408d2322 addmi r2, sp, r2, lsr #6
+b08d7b80 addlt r7, sp, r0, lsl #23
+108d1684 addne r1, sp, r4, lsl #13
+008D0FEF addeq r0, sp, pc, ror #0x1f
+F08DA9E7 UNALLOCATED
+808DF867 addhi pc, sp, r7, ror #0x10
+208DA467 addcs r10, sp, r7, ror #0x8
+A08D2042 addge r2, sp, r2, asr #0x20
+308DA267 addcc r10, sp, r7, ror #0x4
+308DA167 addcc r10, sp, r7, ror #0x2
+308DA0E7 addcc r10, sp, r7, ror #0x1
+
+// ADD_SP_r_A1_RRX cond=xxxx|0000|opc=100|S=0|Rn=1101|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// AddSpRA1Rrx: ADD{<c>}{<q>}  {<Rd>, }SP, <Rm> , RRX
+// register fields: Rd, Rm
+408d8066 addmi r8, sp, r6, rrx
+508dd069 addpl sp, sp, r9, rrx
+808d406e addhi r4, sp, lr, rrx
+408df06e addmi pc, sp, lr, rrx
+a08de06f addge lr, sp, pc, rrx
+008D0060 addeq r0, sp, r0, rrx
+F08D8066 UNALLOCATED
+208D8068 addcs r8, sp, r8, rrx
+108D8066 addne r8, sp, r6, rrx
+
+// ADDS_SP_r_A1 cond=xxxx|0000|opc=100|S=1|Rn=1101|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// AddsSpRA1: ADDS{<c>}{<q>}  {<Rd>, }SP, <Rm> {, <shift> #<amount>}
+// register fields: Rd, Rm
+609d8389 addsvs r8, sp, r9, lsl #7
+909dce80 addsls r12, sp, r0, lsl #29
+e09d8b4e adds r8, sp, lr, asr #22
+a09d730c addsge r7, sp, r12, lsl #6
+b09d6a86 addslt r6, sp, r6, lsl #21
+309d80c1 addslo r8, sp, r1, asr #1
+009d3344 addseq r3, sp, r4, asr #6
+809df7ef addshi pc, sp, pc, ror #15
+F09D8389 UNALLOCATED
+409D0029 addsmi r0, sp, r9, lsr #0x20
+209D8F89 addscs r8, sp, r9, lsl #0x1f
+109D8809 addsne r8, sp, r9, lsl #0x10
+609D8409 addsvs r8, sp, r9, lsl #0x8
+609D8209 addsvs r8, sp, r9, lsl #0x4
+609D8109 addsvs r8, sp, r9, lsl #0x2
+
+// ADDS_SP_r_A1_RRX cond=xxxx|0000|opc=100|S=1|Rn=1101|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// AddsSpRA1Rrx: ADDS{<c>}{<q>}  {<Rd>, }SP, <Rm> , RRX
+// register fields: Rd, Rm
+109d4067 addsne r4, sp, r7, rrx
+509da066 addspl r10, sp, r6, rrx
+209df066 addshs pc, sp, r6, rrx
+d09d6069 addsle r6, sp, r9, rrx
+309df06d addslo pc, sp, sp, rrx
+409dd067 addsmi sp, sp, r7, rrx
+a09db06d addsge r11, sp, sp, rrx
+c09d806d addsgt r8, sp, sp, rrx
+009D0060 addseq r0, sp, r0, rrx
+F09D4067 UNALLOCATED
+809D406F addshi r4, sp, pc, rrx
+109D4064 addsne r4, sp, r4, rrx

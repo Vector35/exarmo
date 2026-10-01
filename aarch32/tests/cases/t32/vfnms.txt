@@ -1,0 +1,71 @@
+// VFNMS_T1_D 11101110|o0=1|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=0|M=x|0|Vm=xxxx
+// VfnmsT1D: VFNMS{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eed8db08 vfnms.f64 d29, d8, d8
+eed84b25 vfnms.f64 d20, d8, d21
+ee922b08 vfnms.f64 d2, d2, d8
+eed43ba6 vfnms.f64 d19, d20, d22
+ee9a0b21 vfnms.f64 d0, d10, d17
+eed4bbab vfnms.f64 d27, d20, d27
+ee92eb0b vfnms.f64 d14, d2, d11
+ee905ba6 vfnms.f64 d5, d16, d22
+EEDFFB00 vfnms.f64 d31, d15, d0
+EED18B0F vfnms.f64 d24, d1, d15
+EED01B04 vfnms.f64 d17, d0, d4
+EE9FFB02 vfnms.f64 d15, d15, d2
+EEDF0B80 vfnms.f64 d16, d31, d0
+EED8FB0F vfnms.f64 d31, d8, d15
+EED8DB20 vfnms.f64 d29, d8, d16
+EED8DB2F vfnms.f64 d29, d8, d31
+EED8DB08 [ne] vfnmsne.f64 d29, d8, d8
+
+// VFNMS_T1_H 11101110|o0=1|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=0|M=x|0|Vm=xxxx
+// VfnmsT1H: VFNMS{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee962982 vfnms.f16 s4, s13, s4
+ee914925 vfnms.f16 s8, s2, s11
+eed899ab vfnms.f16 s19, s17, s23
+eed63989 vfnms.f16 s7, s13, s18
+ee9c790f vfnms.f16 s14, s24, s30
+eedda9a7 vfnms.f16 s21, s27, s15
+eed7198b vfnms.f16 s3, s15, s22
+eed209ab vfnms.f16 s1, s5, s23
+EE90F980 vfnms.f16 s30, s1, s0
+EE9F8988 vfnms.f16 s16, s31, s16
+EE940984 vfnms.f16 s0, s9, s8
+EE90F901 vfnms.f16 s30, s0, s2
+EED0F980 vfnms.f16 s31, s1, s0
+EE9F2920 vfnms.f16 s4, s30, s1
+EE9F29AF vfnms.f16 s4, s31, s31
+EE962982 [ne] vfnmsne.f16 s4, s13, s4 (unpredictable)
+
+// VFNMS_T1_S 11101110|o0=1|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=0|M=x|0|Vm=xxxx
+// VfnmsT1S: VFNMS{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eedb0a21 vfnms.f32 s1, s22, s3
+ee913aa2 vfnms.f32 s6, s3, s5
+ee9c6a2b vfnms.f32 s12, s24, s23
+eedbbaa8 vfnms.f32 s23, s23, s17
+eed9fa26 vfnms.f32 s31, s18, s13
+ee970a23 vfnms.f32 s0, s14, s7
+eeda8a2a vfnms.f32 s17, s20, s21
+eed53a8d vfnms.f32 s7, s11, s26
+EED04A20 vfnms.f32 s9, s0, s1
+EEDF2A2F vfnms.f32 s5, s30, s31
+EED81A24 vfnms.f32 s3, s16, s9
+EE94FA00 vfnms.f32 s30, s8, s0
+EED20A0F vfnms.f32 s1, s4, s30
+EED00A20 vfnms.f32 s1, s0, s1
+EED00AAF vfnms.f32 s1, s1, s31
+EEDF0A21 vfnms.f32 s1, s30, s3
+EEDF0AA1 vfnms.f32 s1, s31, s3
+EEDB0A21 [ne] vfnmsne.f32 s1, s22, s3

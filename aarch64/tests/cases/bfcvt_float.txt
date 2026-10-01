@@ -1,0 +1,9 @@
+// BFCVT_BS_floatdp1 M=0|0|S=0|1|111|0|ftype=01|1|opcode=000110|10000|Rn=xxxxx|Rd=xxxxx
+// BfcvtBsFloatdp1: BFCVT  <Hd>, <Sn>
+// register fields: Rn, Rd
+1E634006 bfcvt h6, s0
+1E63400D bfcvt h13, s0
+1E634014 bfcvt h20, s0
+1E6343E0 bfcvt h0, s31
+1E63401F bfcvt h31, s0
+1E634000 bfcvt h0, s0

@@ -1,0 +1,41 @@
+// SBC_rr_A1 cond=xxxx|0000|opc=110|S=0|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// SbcRrA1: SBC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+60cae975 sbcvs lr, r10, r5, ror r9
+d0c1ad1c sbcle r10, r1, r12, lsl sp
+70c90f33 sbcvc r0, r9, r3, lsr pc (unpredictable)
+90c37114 sbcls r7, r3, r4, lsl r1
+20c00e72 sbchs r0, r0, r2, ror lr
+70c1b41e sbcvc r11, r1, lr, lsl r4
+10ca9d79 sbcne r9, r10, r9, ror sp
+c0ca8c18 sbcgt r8, r10, r8, lsl r12
+// Binary Ninja's tests
+e0c66917 sbc r6, r6, r7, lsl r9
+e0c66937 sbc r6, r6, r7, lsr r9
+e0c66957 sbc r6, r6, r7, asr r9
+e0c66977 sbc r6, r6, r7, ror r9
+e0c76918 sbc r6, r7, r8, lsl r9
+e0c76938 sbc r6, r7, r8, lsr r9
+e0c76958 sbc r6, r7, r8, asr r9
+e0c76978 sbc r6, r7, r8, ror r9
+00CFF070 sbceq pc, pc, r0, ror r0 (unpredictable)
+F0CAE975 UNALLOCATED
+80CAEA7F sbchi lr, r10, pc, ror r10 (unpredictable)
+40CAEE7A sbcmi lr, r10, r10, ror lr
+60CAE979 sbcvs lr, r10, r9, ror r9
+
+// SBCS_rr_A1 cond=xxxx|0000|opc=110|S=1|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// SbcsRrA1: SBCS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+80d75816 sbcshi r5, r7, r6, lsl r8
+e0deaf33 sbcs r10, lr, r3, lsr pc (unpredictable)
+d0d17957 sbcsle r7, r1, r7, asr r9
+d0db9c1e sbcsle r9, r11, lr, lsl r12
+d0d96b19 sbcsle r6, r9, r9, lsl r11
+80d6e652 sbcshi lr, r6, r2, asr r6
+00dedb18 sbcseq sp, lr, r8, lsl r11
+e0d7fa14 sbcs pc, r7, r4, lsl r10 (unpredictable)
+F0D75816 UNALLOCATED
+40D00070 sbcsmi r0, r0, r0, ror r0
+20DF551F sbcscs r5, pc, pc, lsl r5 (unpredictable)
+10D77818 sbcsne r7, r7, r8, lsl r8

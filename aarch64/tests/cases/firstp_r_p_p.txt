@@ -1,0 +1,11 @@
+// firstp_r_p_p_ 001|0010|1|size=xx|100|opc=001|10|Pg=xxxx|0|Pn=xxxx|Rd=xxxxx
+// FirstpRPP: FIRSTP  <Xd>, <Pg>, <Pn>.<T>
+// register fields: Pg, Pn, Rd
+25218001 firstp x1, p0, p0.b
+25218008 firstp x8, p0, p0.b
+2521800F firstp x15, p0, p0.b
+2561BDE0 firstp x0, p15, p15.h
+25A1801F firstp xzr, p0, p0.s
+25E18001 firstp x1, p0, p0.d
+25218000 firstp x0, p0, p0.b
+25218443 firstp x3, p1, p2.b

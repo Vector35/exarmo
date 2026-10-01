@@ -1,0 +1,77 @@
+// PLI_i_T1 111|1100|11|size=00|1|Rn=xxxx|Rt=1111|imm12=xxxxxxxxxxxx
+// PliIT1: PLI{<c>}{<q>}  [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn
+// IT state read: condition
+f996f659 pli [r6, #1625]
+f99bfd33 pli [r11, #3379]
+f991f98a pli [r1, #2442]
+f998f12a pli [r8, #298]
+f994f571 pli [r4, #1393]
+f99cfe0f pli [r12, #3599]
+f994f1f6 pli [r4, #502]
+f997f519 pli [r7, #1305]
+F990F000 pli [r0]
+F996FFFF pli [r6, #0xfff]
+F996F800 pli [r6, #0x800]
+F996F400 pli [r6, #0x400]
+F996F200 pli [r6, #0x200]
+F996F100 pli [r6, #0x100]
+F996F080 pli [r6, #0x80]
+F996F040 pli [r6, #0x40]
+F996F020 pli [r6, #0x20]
+F996F010 pli [r6, #0x10]
+F996F008 pli [r6, #0x8]
+F996F004 pli [r6, #0x4]
+F996F002 pli [r6, #0x2]
+F996F001 pli [r6, #0x1]
+F996F659 [ne] pline [r6, #0x659]
+
+// PLI_i_T2 111|1100|10|size=00|1|Rn=xxxx|Rt=1111|1|P=1|U=0|W=0|imm8=xxxxxxxx
+// PliIT2: PLI{<c>}{<q>}  [<Rn> {, #-<imm>}]
+// register fields: Rn
+// IT state read: condition
+f912fc23 pli [r2, #-35]
+f91bfce6 pli [r11, #-230]
+f91dfc0e pli [sp, #-14]
+f917fc7d pli [r7, #-125]
+f91afca6 pli [r10, #-166]
+f915fc5d pli [r5, #-93]
+f913fc62 pli [r3, #-98]
+f912fc02 pli [r2, #-2]
+F910FC00 pli [r0, #-0x0]
+F912FCFF pli [r2, #-0xff]
+F912FC80 pli [r2, #-0x80]
+F912FC40 pli [r2, #-0x40]
+F912FC20 pli [r2, #-0x20]
+F912FC10 pli [r2, #-0x10]
+F912FC08 pli [r2, #-0x8]
+F912FC04 pli [r2, #-0x4]
+F912FC01 pli [r2, #-0x1]
+F912FC23 [ne] pline [r2, #-0x23]
+
+// PLI_i_T3 111|1100|1|U=x|size=00|1|1111|Rt=1111|imm12=xxxxxxxxxxxx
+// PliIT3: PLI{<c>}{<q>}  <label>
+// IT state read: condition
+f99ffa5f pli 0x10a63
+f99ffd6a pli 0x10d6e
+f99ffc8b pli 0x10c8f
+f99ff012 pli 0x10016
+f99ff407 pli 0x1040b
+f99ff53e pli 0x10542
+f91ff764 pli 0xf8a0
+f99ff5fb pli 0x105ff
+F99FF000 pli 0x10004
+F99FFFFF pli 0x11003
+F99FF800 pli 0x10804
+F99FF400 pli 0x10404
+F99FF200 pli 0x10204
+F99FF100 pli 0x10104
+F99FF080 pli 0x10084
+F99FF040 pli 0x10044
+F99FF020 pli 0x10024
+F99FF010 pli 0x10014
+F99FF008 pli 0x1000c
+F99FF004 pli 0x10008
+F99FF002 pli 0x10006
+F99FF001 pli 0x10005
+F99FFA5F [ne] pline 0x10a63

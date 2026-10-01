@@ -1,0 +1,19 @@
+// STBFMAXNM_16 size=00|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=110|00|Rn=xxxxx|Rt=11111
+// Stbfmaxnm16: STBFMAXNM  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+3C20E0BF stbfmaxnm h0, [x5]
+3C20E19F stbfmaxnm h0, [x12]
+3C20E27F stbfmaxnm h0, [x19]
+3C3FE01F stbfmaxnm h31, [x0]
+3C20E3FF stbfmaxnm h0, [sp]
+3C20E01F stbfmaxnm h0, [x0]
+
+// STBFMAXNML_16 size=00|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=110|00|Rn=xxxxx|Rt=11111
+// Stbfmaxnml16: STBFMAXNML  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+3C60E03F stbfmaxnml h0, [x1]
+3C60E11F stbfmaxnml h0, [x8]
+3C60E1FF stbfmaxnml h0, [x15]
+3C7FE01F stbfmaxnml h31, [x0]
+3C60E3FF stbfmaxnml h0, [sp]
+3C60E01F stbfmaxnml h0, [x0]

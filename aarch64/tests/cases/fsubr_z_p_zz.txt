@@ -1,0 +1,24 @@
+// fsubr_z_p_zz_ 011|0010|1|size=xx|0|0|opc=0011|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FsubrZPZz: FSUBR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+65839E3F fsubr z31.s, p7/m, z31.s, z17.s
+65438393 fsubr z19.h, p0/m, z19.h, z28.h
+658382A3 fsubr z3.s, p0/m, z3.s, z21.s
+654393B7 fsubr z23.h, p4/m, z23.h, z29.h
+658393E8 fsubr z8.s, p4/m, z8.s, z31.s
+65839905 fsubr z5.s, p6/m, z5.s, z8.s
+65439F13 fsubr z19.h, p7/m, z19.h, z24.h
+65C39C6A fsubr z10.d, p7/m, z10.d, z3.d
+65C38B89 fsubr z9.d, p2/m, z9.d, z28.d
+65C39B65 fsubr z5.d, p6/m, z5.d, z27.d
+65C3829B fsubr z27.d, p0/m, z27.d, z20.d
+658395DA fsubr z26.s, p5/m, z26.s, z14.s
+65839ACB fsubr z11.s, p6/m, z11.s, z22.s
+65C392BF fsubr z31.d, p4/m, z31.d, z21.d
+658398B8 fsubr z24.s, p6/m, z24.s, z5.s
+658399F1 fsubr z17.s, p6/m, z17.s, z15.s
+65838400 fsubr z0.s, p1/m, z0.s, z0.s
+65838E3F fsubr z31.s, p3/m, z31.s, z17.s
+65039E3F UNDEFINED
+65839CFF fsubr z31.s, p7/m, z31.s, z7.s
+65839E27 fsubr z7.s, p7/m, z7.s, z17.s

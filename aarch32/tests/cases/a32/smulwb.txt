@@ -1,0 +1,36 @@
+// SMULWB_A1 cond=xxxx|00010|opc=01|0|Rd=xxxx|Ra=(0)(0)(0)(0)|Rm=xxxx|1|M=0|N=1|0|Rn=xxxx
+// SmulwbA1: SMULWB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+812a3cae smulwbhi r10, lr, r12 (unpredictable)
+512199a9 smulwbpl r1, r9, r9 (unpredictable)
+c12bada1 smulwbgt r11, r1, sp (unpredictable)
+612dd6a4 smulwbvs sp, r4, r6 (unpredictable)
+112a8bae smulwbne r10, lr, r11 (unpredictable)
+51285daf smulwbpl r8, pc, sp (unpredictable)
+5123c3a6 smulwbpl r3, r6, r3 (unpredictable)
+212bd9a0 smulwbhs r11, r0, r9 (unpredictable)
+// Binary Ninja's tests
+e12300a9 smulwb r3, r9, r0
+0120FFAE smulwbeq r0, lr, pc (unpredictable)
+F12A3CAE UNALLOCATED
+412F4CAE smulwbmi pc, lr, r12 (unpredictable)
+812A2CAA smulwbhi r10, r10, r12 (unpredictable)
+812A1CAE smulwbhi r10, lr, r12 (unpredictable)
+
+// SMULWT_A1 cond=xxxx|00010|opc=01|0|Rd=xxxx|Ra=(0)(0)(0)(0)|Rm=xxxx|1|M=1|N=1|0|Rn=xxxx
+// SmulwtA1: SMULWT{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+d127c0e4 smulwtle r7, r4, r0 (unpredictable)
+c12a31ea smulwtgt r10, r10, r1 (unpredictable)
+112a4ae4 smulwtne r10, r4, r10 (unpredictable)
+012ae5ed smulwteq r10, sp, r5 (unpredictable)
+e123ade0 smulwt r3, r0, sp (unpredictable)
+8128c5ed smulwthi r8, sp, r5 (unpredictable)
+6121e7e9 smulwtvs r1, r9, r7 (unpredictable)
+c1282ee4 smulwtgt r8, r4, lr (unpredictable)
+// Binary Ninja's tests
+e12302e9 smulwt r3, r9, r2
+F127C0E4 UNALLOCATED
+4120FFEF smulwtmi r0, pc, pc (unpredictable)
+212F80E0 smulwtcs pc, r0, r0 (unpredictable)
+D12710E4 smulwtle r7, r4, r0 (unpredictable)

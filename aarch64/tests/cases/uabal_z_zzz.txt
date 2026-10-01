@@ -1,0 +1,11 @@
+// uabal_z_zz_ 010|0010|0|size=xx|0|Zm=xxxxx|1101|U=1|1|Zn=xxxxx|Zda=xxxxx
+// UabalZZz: UABAL  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+4440DC02 uabal z2.h, z0.b, z0.b
+4440DC09 uabal z9.h, z0.b, z0.b
+4440DC10 uabal z16.h, z0.b, z0.b
+449FDFE0 uabal z0.s, z31.h, z31.h
+44C0DC1F uabal z31.d, z0.s, z0.s
+4400DC02 UNDEFINED
+4440DC00 uabal z0.h, z0.b, z0.b
+4441DC43 uabal z3.h, z2.b, z1.b

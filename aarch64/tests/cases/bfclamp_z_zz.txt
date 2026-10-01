@@ -1,0 +1,8 @@
+// bfclamp_z_zz_ 011|0010|0|size=00|1|Zm=xxxxx|001001|Zn=xxxxx|Zd=xxxxx
+// BfclampZZz: BFCLAMP  <Zd>.H, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zd
+64202400 bfclamp z0.h, z0.h, z0.h
+64202407 bfclamp z7.h, z0.h, z0.h
+6420240E bfclamp z14.h, z0.h, z0.h
+643F27FF bfclamp z31.h, z31.h, z31.h
+64212443 bfclamp z3.h, z2.h, z1.h

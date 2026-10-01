@@ -1,0 +1,23 @@
+// SM3SS1_VVV4_crypto4 1100|111|00|Op0=10|Rm=xxxxx|0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Sm3ss1Vvv4Crypto4: SM3SS1  <Vd>.4S, <Vn>.4S, <Vm>.4S, <Va>.4S
+// register fields: Rm, Ra, Rn, Rd
+CE4E66E1 sm3ss1 v1.4s, v23.4s, v14.4s, v25.4s
+CE4F4DA4 sm3ss1 v4.4s, v13.4s, v15.4s, v19.4s
+CE5B3BA2 sm3ss1 v2.4s, v29.4s, v27.4s, v14.4s
+CE4B29E6 sm3ss1 v6.4s, v15.4s, v11.4s, v10.4s
+CE512141 sm3ss1 v1.4s, v10.4s, v17.4s, v8.4s
+CE5341CB sm3ss1 v11.4s, v14.4s, v19.4s, v16.4s
+CE540887 sm3ss1 v7.4s, v4.4s, v20.4s, v2.4s
+CE565FB2 sm3ss1 v18.4s, v29.4s, v22.4s, v23.4s
+CE4D15D0 sm3ss1 v16.4s, v14.4s, v13.4s, v5.4s
+CE432BEF sm3ss1 v15.4s, v31.4s, v3.4s, v10.4s
+CE546C58 sm3ss1 v24.4s, v2.4s, v20.4s, v27.4s
+CE53596B sm3ss1 v11.4s, v11.4s, v19.4s, v22.4s
+CE5B0890 sm3ss1 v16.4s, v4.4s, v27.4s, v2.4s
+CE513998 sm3ss1 v24.4s, v12.4s, v17.4s, v14.4s
+CE5A2A6C sm3ss1 v12.4s, v19.4s, v26.4s, v10.4s
+CE5C301F sm3ss1 v31.4s, v0.4s, v28.4s, v12.4s
+CE4002E0 sm3ss1 v0.4s, v23.4s, v0.4s, v0.4s
+CE5F7EE1 sm3ss1 v1.4s, v23.4s, v31.4s, v31.4s
+CE4E65C1 sm3ss1 v1.4s, v14.4s, v14.4s, v25.4s
+CE4E6721 sm3ss1 v1.4s, v25.4s, v14.4s, v25.4s

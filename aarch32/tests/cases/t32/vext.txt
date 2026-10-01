@@ -1,0 +1,43 @@
+// VEXT_T1_D 111011111|D=x|11|Vn=xxxx|Vd=xxxx|imm4=xxxx|N=x|Q=0|M=x|0|Vm=xxxx
+// VextT1D: VEXT{<c>}{<q>}.8  {<Dd>, }<Dn>, <Dm>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+EFB00000 vext.8 d0, d0, d0, #0x0
+EFFFF4AF vext.8 d31, d31, d31, #0x4
+EFB88208 vext.8 d8, d8, d8, #0x2
+EFB44104 vext.8 d4, d4, d4, #0x1
+EFB22002 vext.8 d2, d2, d2, #0x0
+EFB11001 vext.8 d1, d1, d1, #0x0
+EFB00F00 UNDEFINED
+EFB00800 UNDEFINED
+EFB0F08F vext.8 d15, d16, d15, #0x0
+EFFF0020 vext.8 d16, d15, d16, #0x0
+EFFFF0AF vext.8 d31, d31, d31, #0x0
+EFB00000 [ne] vextne.8 d0, d0, d0, #0x0
+
+// VEXT_T1_Q 111011111|D=x|11|Vn=xxxx|Vd=xxxx|imm4=xxxx|N=x|Q=1|M=x|0|Vm=xxxx
+// VextT1Q: VEXT{<c>}{<q>}.8  {<Qd>, }<Qn>, <Qm>, #<imm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+effe4568 vext.8 q10, q7, q12, #5
+efbe0660 vext.8 q0, q7, q8, #6
+efb4e062 vext.8 q7, q2, q9, #0
+eff4e9c0 vext.8 q15, q10, q0, #9
+efbec04e vext.8 q6, q7, q7, #0
+efb847c6 vext.8 q2, q12, q3, #7
+eff8caee vext.8 q14, q12, q15, #10
+eff84e42 vext.8 q10, q4, q1, #14
+EFF08F64 vext.8 q12, q0, q10, #0xf
+EFFFF56F UNDEFINED
+EFF22868 vext.8 q9, q1, q12, #0x8
+EFF11561 UNDEFINED
+EFF00468 vext.8 q8, q0, q12, #0x4
+EFF042E8 vext.8 q10, q8, q12, #0x2
+EFFE4168 vext.8 q10, q7, q12, #0x1
+EFBFF54F UNDEFINED
+EFFFF5EF UNDEFINED
+EFFE4568 [ne] vextne.8 q10, q7, q12, #0x5

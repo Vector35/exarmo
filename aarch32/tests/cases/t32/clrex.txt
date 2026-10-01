@@ -1,0 +1,13 @@
+// CLREX_T1 111|10|0|1110|11|(1)(1)(1)(1)|1|0(0)0|(1)|(1)(1)(1)|opc=0010|option=(1)(1)(1)(1)
+// ClrexT1: CLREX{<c>}{<q>}
+// IT state read: condition
+F3B08020 clrex (unpredictable)
+F3BFA92F clrex (unpredictable)
+F3B88228 clrex (unpredictable)
+F3B48324 clrex (unpredictable)
+F3B28422 clrex (unpredictable)
+F3B18521 clrex (unpredictable)
+F3B08620 clrex (unpredictable)
+F3B08720 clrex (unpredictable)
+F3B08020 [ne] clrexne (unpredictable)
+F3BF8F2F clrex

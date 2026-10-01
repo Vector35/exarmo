@@ -1,0 +1,68 @@
+// rshrnb_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=0|U=1|R=1|T=0|Zn=xxxxx|Zd=xxxxx
+// RshrnbZZi: RSHRNB  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+45671A73 rshrnb z19.s, z19.d, #0x19
+45751871 rshrnb z17.s, z3.d, #0xb
+45371AB3 rshrnb z19.h, z21.s, #0x9
+452B1B16 rshrnb z22.b, z24.h, #0x5
+45291BB4 rshrnb z20.b, z29.h, #0x7
+45661B63 rshrnb z3.s, z27.d, #0x1a
+453018E0 rshrnb z0.h, z7.s, #0x10
+456F1A14 rshrnb z20.s, z16.d, #0x11
+457A181F rshrnb z31.s, z0.d, #0x6
+45641BF3 rshrnb z19.s, z31.d, #0x1c
+45201A73 UNDEFINED
+45211A73 UNDEFINED
+45221A73 UNDEFINED
+45231A73 UNDEFINED
+45241A73 UNDEFINED
+45251A73 UNDEFINED
+45261A73 UNDEFINED
+45271A73 UNDEFINED
+45281A73 rshrnb z19.b, z19.h, #0x8
+452A1A73 rshrnb z19.b, z19.h, #0x6
+452C1A73 rshrnb z19.b, z19.h, #0x4
+452D1A73 rshrnb z19.b, z19.h, #0x3
+452E1A73 rshrnb z19.b, z19.h, #0x2
+452F1A73 rshrnb z19.b, z19.h, #0x1
+45311A73 rshrnb z19.h, z19.s, #0xf
+45321A73 rshrnb z19.h, z19.s, #0xe
+45331A73 rshrnb z19.h, z19.s, #0xd
+45341A73 rshrnb z19.h, z19.s, #0xc
+45351A73 rshrnb z19.h, z19.s, #0xb
+45361A73 rshrnb z19.h, z19.s, #0xa
+45381A73 rshrnb z19.h, z19.s, #0x8
+45391A73 rshrnb z19.h, z19.s, #0x7
+453A1A73 rshrnb z19.h, z19.s, #0x6
+453B1A73 rshrnb z19.h, z19.s, #0x5
+453C1A73 rshrnb z19.h, z19.s, #0x4
+453D1A73 rshrnb z19.h, z19.s, #0x3
+453E1A73 rshrnb z19.h, z19.s, #0x2
+453F1A73 rshrnb z19.h, z19.s, #0x1
+45601A73 rshrnb z19.s, z19.d, #0x20
+45611A73 rshrnb z19.s, z19.d, #0x1f
+45621A73 rshrnb z19.s, z19.d, #0x1e
+45631A73 rshrnb z19.s, z19.d, #0x1d
+45651A73 rshrnb z19.s, z19.d, #0x1b
+45681A73 rshrnb z19.s, z19.d, #0x18
+45691A73 rshrnb z19.s, z19.d, #0x17
+456A1A73 rshrnb z19.s, z19.d, #0x16
+456B1A73 rshrnb z19.s, z19.d, #0x15
+456C1A73 rshrnb z19.s, z19.d, #0x14
+456D1A73 rshrnb z19.s, z19.d, #0x13
+456E1A73 rshrnb z19.s, z19.d, #0x12
+45701A73 rshrnb z19.s, z19.d, #0x10
+45711A73 rshrnb z19.s, z19.d, #0xf
+45721A73 rshrnb z19.s, z19.d, #0xe
+45731A73 rshrnb z19.s, z19.d, #0xd
+45741A73 rshrnb z19.s, z19.d, #0xc
+45761A73 rshrnb z19.s, z19.d, #0xa
+45771A73 rshrnb z19.s, z19.d, #0x9
+45781A73 rshrnb z19.s, z19.d, #0x8
+45791A73 rshrnb z19.s, z19.d, #0x7
+457B1A73 rshrnb z19.s, z19.d, #0x5
+457C1A73 rshrnb z19.s, z19.d, #0x4
+457D1A73 rshrnb z19.s, z19.d, #0x3
+457E1A73 rshrnb z19.s, z19.d, #0x2
+457F1A73 rshrnb z19.s, z19.d, #0x1

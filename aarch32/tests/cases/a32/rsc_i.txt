@@ -1,0 +1,92 @@
+// RSC_i_A1 cond=xxxx|0010|opc=111|S=0|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// RscIA1: RSC{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+02ecc500 rsceq r12, r12, #0
+82ee14da rschi r1, lr, #3657433088
+52e5483c rscpl r4, r5, #3932160
+62e24c55 rscvs r4, r2, #21760
+b2ebfd55 rsclt pc, r11, #5440
+32e9cb3f rsclo r12, r9, #64512
+02e1fd54 rsceq pc, r1, #5376
+b2e4c8cd rsclt r12, r4, #13434880
+// Binary Ninja's tests
+e2e54a0f rsc r4, r5, #61440
+e2e55a0f rsc r5, r5, #61440
+F2EE14DA UNALLOCATED
+42E00000 rscmi r0, r0, #0x0
+22EFCFFF rsccs r12, pc, #0x3fc
+12ECC800 rscne r12, r12, #0x0
+02ECC400 rsceq r12, r12, #0x0
+02ECC200 rsceq r12, r12, #0x0
+02ECC100 rsceq r12, r12, #0x0
+02ECC080 rsceq r12, r12, #0x80
+02ECC040 rsceq r12, r12, #0x40
+02ECC020 rsceq r12, r12, #0x20
+02ECC010 rsceq r12, r12, #0x10
+02ECC008 rsceq r12, r12, #0x8
+02ECC004 rsceq r12, r12, #0x4
+02ECC002 rsceq r12, r12, #0x2
+02ECC001 rsceq r12, r12, #0x1
+02ECC081 rsceq r12, r12, #0x81
+02ECC181 rsceq r12, r12, #0x40000020
+02ECC281 rsceq r12, r12, #0x10000008
+02ECC381 rsceq r12, r12, #0x4000002
+02ECC481 rsceq r12, r12, #0x81000000
+02ECC581 rsceq r12, r12, #0x20400000
+02ECC681 rsceq r12, r12, #0x8100000
+02ECC781 rsceq r12, r12, #0x2040000
+02ECC881 rsceq r12, r12, #0x810000
+02ECC981 rsceq r12, r12, #0x204000
+02ECCA81 rsceq r12, r12, #0x81000
+02ECCB81 rsceq r12, r12, #0x20400
+02ECCC81 rsceq r12, r12, #0x8100
+02ECCD81 rsceq r12, r12, #0x2040
+02ECCE81 rsceq r12, r12, #0x810
+02ECCF81 rsceq r12, r12, #0x204
+
+// RSCS_i_A1 cond=xxxx|0010|opc=111|S=1|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// RscsIA1: RSCS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+d2f57ac5 rscsle r7, r5, #806912
+22fb986f rscshs r9, r11, #7274496
+22ff9cd3 rscshs r9, pc, #54016
+42fe93d5 rscsmi r9, lr, #1409286147
+32f83b63 rscslo r3, r8, #101376
+32f1d7df rscslo sp, r1, #58458112
+82fb4589 rscshi r4, r11, #574619648
+c2f55713 rscsgt r5, r5, #4980736
+// Binary Ninja's tests
+e2f81efe rscs r1, r8, #4064
+02F00000 rscseq r0, r0, #0x0
+F2F57AC5 UNDEFINED
+12F5FFFF rscsne pc, r5, #0x3fc
+D2F57800 rscsle r7, r5, #0x0
+D2F57400 rscsle r7, r5, #0x0
+D2F57200 rscsle r7, r5, #0x0
+D2F57100 rscsle r7, r5, #0x0
+D2F57080 rscsle r7, r5, #0x80
+D2F57040 rscsle r7, r5, #0x40
+D2F57020 rscsle r7, r5, #0x20
+D2F57010 rscsle r7, r5, #0x10
+D2F57008 rscsle r7, r5, #0x8
+D2F57004 rscsle r7, r5, #0x4
+D2F57002 rscsle r7, r5, #0x2
+D2F57001 rscsle r7, r5, #0x1
+D2F57081 rscsle r7, r5, #0x81
+D2F57181 rscsle r7, r5, #0x40000020
+D2F57281 rscsle r7, r5, #0x10000008
+D2F57381 rscsle r7, r5, #0x4000002
+D2F57481 rscsle r7, r5, #0x81000000
+D2F57581 rscsle r7, r5, #0x20400000
+D2F57681 rscsle r7, r5, #0x8100000
+D2F57781 rscsle r7, r5, #0x2040000
+D2F57881 rscsle r7, r5, #0x810000
+D2F57981 rscsle r7, r5, #0x204000
+D2F57A81 rscsle r7, r5, #0x81000
+D2F57B81 rscsle r7, r5, #0x20400
+D2F57C81 rscsle r7, r5, #0x8100
+D2F57D81 rscsle r7, r5, #0x2040
+D2F57E81 rscsle r7, r5, #0x810
+D2F57F81 rscsle r7, r5, #0x204

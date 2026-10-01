@@ -1,0 +1,18 @@
+// MSR_r_T1_AS 111|10|0|1110|0|R=x|Rn=xxxx|1|0(0)0|mask=xxxx|(0)(0)|0|(0)(0)(0)(0)(0)
+// MsrRT1As: MSR{<c>}{<q>}  <spec_reg>, <Rn>
+// read together by <spec_reg>: R, mask
+// register fields: Rn
+// IT state read: condition
+// Binary Ninja's tests
+f3808400 msr apsr_g, r0
+f3808800 msr apsr_nzcvq, r0
+f3808c00 msr apsr_nzcvqg, r0
+F39FA05F msr #0x10, pc (unpredictable)
+F3808F90 msr cpsr_fsxc, r0 (unpredictable)
+F38082C8 msr cpsr_x, r0 (unpredictable)
+F3808104 msr cpsr_c, r0 (unpredictable)
+F3808002 msr #0x0, r0 (unpredictable)
+F3808F01 msr cpsr_fsxc, r0 (unpredictable)
+F3908000 msr #0x10, r0 (unpredictable)
+F3908F00 msr spsr_fsxc, r0
+F3808400 [ne] msrne apsr_g, r0

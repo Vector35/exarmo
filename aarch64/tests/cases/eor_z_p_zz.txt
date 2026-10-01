@@ -1,0 +1,21 @@
+// eor_z_p_zz_ 000|0010|0|size=xx|0|11|opc=001|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// EorZPZz: EOR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+049914D0 eor z16.s, p5/m, z16.s, z6.s
+049907F8 eor z24.s, p1/m, z24.s, z31.s
+04190834 eor z20.b, p2/m, z20.b, z1.b
+04991E55 eor z21.s, p7/m, z21.s, z18.s
+04D9059F eor z31.d, p1/m, z31.d, z12.d
+04991B39 eor z25.s, p6/m, z25.s, z25.s
+04991B5C eor z28.s, p6/m, z28.s, z26.s
+04D90BDC eor z28.d, p2/m, z28.d, z30.d
+041916BD eor z29.b, p5/m, z29.b, z21.b
+04990AF0 eor z16.s, p2/m, z16.s, z23.s
+04D91C9A eor z26.d, p7/m, z26.d, z4.d
+04D91550 eor z16.d, p5/m, z16.d, z10.d
+04591188 eor z8.h, p4/m, z8.h, z12.h
+04991C11 eor z17.s, p7/m, z17.s, z0.s
+04D90EA6 eor z6.d, p3/m, z6.d, z21.d
+04D90DC5 eor z5.d, p3/m, z5.d, z14.d
+049900C0 eor z0.s, p0/m, z0.s, z6.s
+049914B0 eor z16.s, p5/m, z16.s, z5.s

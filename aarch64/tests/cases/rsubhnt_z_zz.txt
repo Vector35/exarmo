@@ -1,0 +1,14 @@
+// rsubhnt_z_zz_ 010|0010|1|size=xx|1|Zm=xxxxx|0|11|S=1|R=1|T=1|Zn=xxxxx|Zd=xxxxx
+// RsubhntZZz: RSUBHNT  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45657E76 rsubhnt z22.b, z19.h, z5.h
+45757EB3 rsubhnt z19.b, z21.h, z21.h
+45AF7DEA rsubhnt z10.h, z15.s, z15.s
+45E97D7C rsubhnt z28.s, z11.d, z9.d
+45F97F68 rsubhnt z8.s, z27.d, z25.d
+45E57E88 rsubhnt z8.s, z20.d, z5.d
+45BB7EC8 rsubhnt z8.h, z22.s, z27.s
+45A17CC7 rsubhnt z7.h, z6.s, z1.s
+45607C00 rsubhnt z0.b, z0.h, z0.h
+457F7FFF rsubhnt z31.b, z31.h, z31.h
+45257E76 UNDEFINED

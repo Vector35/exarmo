@@ -1,0 +1,24 @@
+// FAMAX_asimdsame_only 0|Q=x|U=0|0|111|0|size=1x|1|Rm=xxxxx|opcode=11011|1|Rn=xxxxx|Rd=xxxxx
+// FamaxAsimdsameOnly: FAMAX  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+0EA0DC04 famax v4.2s, v0.2s, v0.2s
+0EA0DC0B famax v11.2s, v0.2s, v0.2s
+0EA0DC12 famax v18.2s, v0.2s, v0.2s
+4EFFDFE0 famax v0.2d, v31.2d, v31.2d
+0EA0DC1F famax v31.2s, v0.2s, v0.2s
+0EE0DC04 UNDEFINED
+4EA0DC00 famax v0.4s, v0.4s, v0.4s
+0EA0DC00 famax v0.2s, v0.2s, v0.2s
+0EA1DC43 famax v3.2s, v2.2s, v1.2s
+
+// FAMAX_asimdsamefp16_only 0|Q=x|U=0|0|111|0|a=1|10|Rm=xxxxx|00|opcode=011|1|Rn=xxxxx|Rd=xxxxx
+// FamaxAsimdsamefp16Only: FAMAX  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+0EC01C01 famax v1.4h, v0.4h, v0.4h
+0EC01C08 famax v8.4h, v0.4h, v0.4h
+0EC01C0F famax v15.4h, v0.4h, v0.4h
+4EDF1FE0 famax v0.8h, v31.8h, v31.8h
+0EC01C1F famax v31.4h, v0.4h, v0.4h
+0EC01C00 famax v0.4h, v0.4h, v0.4h
+0EC11C43 famax v3.4h, v2.4h, v1.4h

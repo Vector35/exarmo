@@ -1,0 +1,257 @@
+// STP_D_ldstpair_off opc=01|101|VR=1|010|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StpDLdstpairOff: STP  <Dt1>, <Dt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+6D29D427 stp d7, d21, [x1, #-0x168]
+6D387F3C stp d28, d31, [x25, #-0x80]
+6D36BBBD stp d29, d14, [fp, #-0x98]
+6D050937 stp d23, d2, [x9, #0x50]
+6D3489FF stp d31, d2, [x15, #-0xb8]
+6D004FDE stp d30, d19, [lr]
+6D205C92 stp d18, d23, [x4, #-0x200]
+6D03417D stp d29, d16, [x11, #0x30]
+6D200F33 stp d19, d3, [x25, #-0x200]
+6D0B9DF4 stp d20, d7, [x15, #0xb8]
+6D3C5BA0 stp d0, d22, [fp, #-0x40]
+6D0A2A58 stp d24, d10, [x18, #0xa0]
+6D218718 stp d24, d1, [x24, #-0x1e8]
+6D1A6D1F stp d31, d27, [x8, #0x1a0]
+6D16A851 stp d17, d10, [x2, #0x168]
+6D070589 stp d9, d1, [x12, #0x70]
+6D3F8007 stp d7, d0, [x0, #-0x8]
+6D29D7E7 stp d7, d21, [sp, #-0x168]
+6D29D435 stp d21, d21, [x1, #-0x168]
+6D105427 stp d7, d21, [x1, #0x100]
+6D085427 stp d7, d21, [x1, #0x80]
+6D045427 stp d7, d21, [x1, #0x40]
+6D025427 stp d7, d21, [x1, #0x20]
+6D015427 stp d7, d21, [x1, #0x10]
+6D00D427 stp d7, d21, [x1, #0x8]
+
+// STP_D_ldstpair_post opc=01|101|VR=1|001|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StpDLdstpairPost: STP  <Dt1>, <Dt2>, [<Xn|SP>], #<imm>
+// register fields: Rt2, Rn, Rt
+6CB9D3E2 stp d2, d20, [sp], #-0x68
+6CACE02D stp d13, d24, [x1], #-0x138
+6C986E3A stp d26, d27, [x17], #0x180
+6CAC97BC stp d28, d5, [fp], #-0x138
+6CAAA400 stp d0, d9, [x0], #-0x158
+6C878799 stp d25, d1, [x28], #0x78
+6C922153 stp d19, d8, [x10], #0x120
+6CA90E30 stp d16, d3, [x17], #-0x170
+6C94B25F stp d31, d12, [x18], #0x148
+6CB7C69E stp d30, d17, [x20], #-0x88
+6CB4D0F6 stp d22, d20, [x7], #-0xb8
+6C9E0565 stp d5, d1, [x11], #0x1e0
+6CAA1A5A stp d26, d6, [x18], #-0x160
+6CA67397 stp d23, d28, [x28], #-0x1a0
+6C94A110 stp d16, d8, [x8], #0x148
+6C86D23D stp d29, d20, [x17], #0x68
+6C8003E2 stp d2, d0, [sp], #0x0
+6CBFFFE2 stp d2, d31, [sp], #-0x8
+6CB9D3F4 stp d20, d20, [sp], #-0x68
+6CA053E2 stp d2, d20, [sp], #-0x200
+6C9053E2 stp d2, d20, [sp], #0x100
+6C8853E2 stp d2, d20, [sp], #0x80
+6C8453E2 stp d2, d20, [sp], #0x40
+6C8253E2 stp d2, d20, [sp], #0x20
+6C8153E2 stp d2, d20, [sp], #0x10
+6C80D3E2 stp d2, d20, [sp], #0x8
+
+// STP_D_ldstpair_pre opc=01|101|VR=1|011|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StpDLdstpairPre: STP  <Dt1>, <Dt2>, [<Xn|SP>, #<imm>]!
+// register fields: Rt2, Rn, Rt
+6DAC9C96 stp d22, d7, [x4, #-0x138]!
+6D8049F0 stp d16, d18, [x15, #0x0]!
+6DB638F9 stp d25, d14, [x7, #-0xa0]!
+6DA428F8 stp d24, d10, [x7, #-0x1c0]!
+6D81AACE stp d14, d10, [x22, #0x18]!
+6DA169BC stp d28, d26, [x13, #-0x1f0]!
+6D83FAAE stp d14, d30, [x21, #0x38]!
+6D9F9262 stp d2, d4, [x19, #0x1f8]!
+6DB02EA4 stp d4, d11, [x21, #-0x100]!
+6DB9C068 stp d8, d16, [x3, #-0x68]!
+6D9289D5 stp d21, d2, [x14, #0x128]!
+6D8C28B3 stp d19, d10, [x5, #0xc0]!
+6DA247FC stp d28, d17, [sp, #-0x1e0]!
+6DB1C75E stp d30, d17, [x26, #-0xe8]!
+6D8AC1C1 stp d1, d16, [x14, #0xa8]!
+6DA953ED stp d13, d20, [sp, #-0x170]!
+6DBF8000 stp d0, d0, [x0, #-0x8]!
+6DACFC9F stp d31, d31, [x4, #-0x138]!
+6DA01C96 stp d22, d7, [x4, #-0x200]!
+6D901C96 stp d22, d7, [x4, #0x100]!
+6D881C96 stp d22, d7, [x4, #0x80]!
+6D841C96 stp d22, d7, [x4, #0x40]!
+6D821C96 stp d22, d7, [x4, #0x20]!
+6D811C96 stp d22, d7, [x4, #0x10]!
+6D809C96 stp d22, d7, [x4, #0x8]!
+
+// STP_Q_ldstpair_off opc=10|101|VR=1|010|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StpQLdstpairOff: STP  <Qt1>, <Qt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+AD3D318E stp q14, q12, [x12, #-0x60]
+AD13B205 stp q5, q12, [x16, #0x270]
+AD38C613 stp q19, q17, [x16, #-0xf0]
+AD3C300B stp q11, q12, [x0, #-0x80]
+AD2DDE69 stp q9, q23, [x19, #-0x250]
+AD0D4B95 stp q21, q18, [x28, #0x1a0]
+AD0DF8D2 stp q18, q30, [x6, #0x1b0]
+AD0774B7 stp q23, q29, [x5, #0xe0]
+AD040642 stp q2, q1, [x18, #0x80]
+AD3D8660 stp q0, q1, [x19, #-0x50]
+AD0A4A90 stp q16, q18, [x20, #0x140]
+AD1B4E99 stp q25, q19, [x20, #0x360]
+AD3D7AD3 stp q19, q30, [x22, #-0x60]
+AD206A8B stp q11, q26, [x20, #-0x400]
+AD2EAB58 stp q24, q10, [x26, #-0x230]
+AD396225 stp q5, q24, [x17, #-0xe0]
+AD0003FF stp q31, q0, [sp]
+AD3FFD8E stp q14, q31, [x12, #-0x10]
+AD3D318C stp q12, q12, [x12, #-0x60]
+AD10318E stp q14, q12, [x12, #0x200]
+AD08318E stp q14, q12, [x12, #0x100]
+AD02318E stp q14, q12, [x12, #0x40]
+AD01318E stp q14, q12, [x12, #0x20]
+AD00B18E stp q14, q12, [x12, #0x10]
+
+// STP_Q_ldstpair_post opc=10|101|VR=1|001|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StpQLdstpairPost: STP  <Qt1>, <Qt2>, [<Xn|SP>], #<imm>
+// register fields: Rt2, Rn, Rt
+AC9A2AE9 stp q9, q10, [x23], #0x340
+AC93273B stp q27, q9, [x25], #0x260
+AC8877A2 stp q2, q29, [fp], #0x100
+ACB41ACD stp q13, q6, [x22], #-0x180
+ACB90670 stp q16, q1, [x19], #-0xe0
+ACABF219 stp q25, q28, [x16], #-0x290
+ACA064AA stp q10, q25, [x5], #-0x400
+ACB5727A stp q26, q28, [x19], #-0x160
+AC85A503 stp q3, q9, [x8], #0xb0
+AC9C2235 stp q21, q8, [x17], #0x380
+AC99BC3D stp q29, q15, [x1], #0x330
+ACB75D07 stp q7, q23, [x8], #-0x120
+AC80D8C2 stp q2, q22, [x6], #0x10
+ACB86491 stp q17, q25, [x4], #-0x100
+ACB72267 stp q7, q8, [x19], #-0x120
+ACAE81EE stp q14, q0, [x15], #-0x230
+AC807C00 stp q0, q31, [x0], #0x0
+ACBFABFF stp q31, q10, [sp], #-0x10
+AC9A2AEA stp q10, q10, [x23], #0x340
+AC902AE9 stp q9, q10, [x23], #0x200
+AC842AE9 stp q9, q10, [x23], #0x80
+AC822AE9 stp q9, q10, [x23], #0x40
+AC812AE9 stp q9, q10, [x23], #0x20
+
+// STP_Q_ldstpair_pre opc=10|101|VR=1|011|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StpQLdstpairPre: STP  <Qt1>, <Qt2>, [<Xn|SP>, #<imm>]!
+// register fields: Rt2, Rn, Rt
+AD98AE73 stp q19, q11, [x19, #0x310]!
+AD82AC49 stp q9, q11, [x2, #0x50]!
+AD89CC81 stp q1, q19, [x4, #0x130]!
+AD97DF02 stp q2, q23, [x24, #0x2f0]!
+AD8C2326 stp q6, q8, [x25, #0x180]!
+AD8B01B8 stp q24, q0, [x13, #0x160]!
+ADAB3F4F stp q15, q15, [x26, #-0x2a0]!
+AD9525EF stp q15, q9, [x15, #0x2a0]!
+ADB91C8D stp q13, q7, [x4, #-0xe0]!
+ADBD116B stp q11, q4, [x11, #-0x60]!
+AD98049B stp q27, q1, [x4, #0x300]!
+ADBA1BFB stp q27, q6, [sp, #-0xc0]!
+AD8E0BFF stp q31, q2, [sp, #0x1c0]!
+ADB2A744 stp q4, q9, [x26, #-0x1b0]!
+ADA55FB0 stp q16, q23, [fp, #-0x360]!
+AD8D86F7 stp q23, q1, [x23, #0x1b0]!
+AD807C00 stp q0, q31, [x0, #0x0]!
+ADBFAE73 stp q19, q11, [x19, #-0x10]!
+AD98AD73 stp q19, q11, [x11, #0x310]!
+ADA02E73 stp q19, q11, [x19, #-0x400]!
+AD902E73 stp q19, q11, [x19, #0x200]!
+AD882E73 stp q19, q11, [x19, #0x100]!
+AD842E73 stp q19, q11, [x19, #0x80]!
+AD822E73 stp q19, q11, [x19, #0x40]!
+AD812E73 stp q19, q11, [x19, #0x20]!
+AD80AE73 stp q19, q11, [x19, #0x10]!
+
+// STP_S_ldstpair_off opc=00|101|VR=1|010|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StpSLdstpairOff: STP  <St1>, <St2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+2D1CF8E9 stp s9, s30, [x7, #0xe4]
+2D2896FD stp s29, s5, [x23, #-0xbc]
+2D304B9F stp s31, s18, [x28, #-0x80]
+2D391BE0 stp s0, s6, [sp, #-0x38]
+2D097D47 stp s7, s31, [x10, #0x48]
+2D070CCB stp s11, s3, [x6, #0x38]
+2D20C47A stp s26, s17, [x3, #-0xfc]
+2D15B32C stp s12, s12, [x25, #0xac]
+2D12B60B stp s11, s13, [x16, #0x94]
+2D1A1B75 stp s21, s6, [x27, #0xd0]
+2D00C041 stp s1, s16, [x2, #0x4]
+2D0B7445 stp s5, s29, [x2, #0x58]
+2D046902 stp s2, s26, [x8, #0x20]
+2D0D4EA3 stp s3, s19, [x21, #0x68]
+2D0AB7C4 stp s4, s13, [lr, #0x54]
+2D3C0483 stp s3, s1, [x4, #-0x20]
+2D000009 stp s9, s0, [x0]
+2D3FF8E9 stp s9, s30, [x7, #-0x4]
+2D1CF8E7 stp s7, s30, [x7, #0xe4]
+2D2078E9 stp s9, s30, [x7, #-0x100]
+2D1078E9 stp s9, s30, [x7, #0x80]
+2D0878E9 stp s9, s30, [x7, #0x40]
+2D0278E9 stp s9, s30, [x7, #0x10]
+2D0178E9 stp s9, s30, [x7, #0x8]
+
+// STP_S_ldstpair_post opc=00|101|VR=1|001|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StpSLdstpairPost: STP  <St1>, <St2>, [<Xn|SP>], #<imm>
+// register fields: Rt2, Rn, Rt
+2CBEBE36 stp s22, s15, [x17], #-0xc
+2CA5F02B stp s11, s28, [x1], #-0xd4
+2CBA1673 stp s19, s5, [x19], #-0x30
+2CAA0EFE stp s30, s3, [x23], #-0xb0
+2CB776A8 stp s8, s29, [x21], #-0x48
+2CB16B93 stp s19, s26, [x28], #-0x78
+2C88A7FD stp s29, s9, [sp], #0x44
+2C865BE1 stp s1, s22, [sp], #0x30
+2C9874F0 stp s16, s29, [x7], #0xc0
+2C95C477 stp s23, s17, [x3], #0xac
+2C93A788 stp s8, s9, [x28], #0x9c
+2CB26D66 stp s6, s27, [x11], #-0x70
+2CBBFF53 stp s19, s31, [x26], #-0x24
+2CB4998A stp s10, s6, [x12], #-0x5c
+2C941FD9 stp s25, s7, [lr], #0xa0
+2CB654DE stp s30, s21, [x6], #-0x50
+2C800000 stp s0, s0, [x0], #0x0
+2CBFBE3F stp s31, s15, [x17], #-0x4
+2CA03E36 stp s22, s15, [x17], #-0x100
+2C903E36 stp s22, s15, [x17], #0x80
+2C883E36 stp s22, s15, [x17], #0x40
+2C843E36 stp s22, s15, [x17], #0x20
+2C823E36 stp s22, s15, [x17], #0x10
+2C813E36 stp s22, s15, [x17], #0x8
+2C80BE36 stp s22, s15, [x17], #0x4
+
+// STP_S_ldstpair_pre opc=00|101|VR=1|011|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StpSLdstpairPre: STP  <St1>, <St2>, [<Xn|SP>, #<imm>]!
+// register fields: Rt2, Rn, Rt
+2D91F239 stp s25, s28, [x17, #0x8c]!
+2D8D0C73 stp s19, s3, [x3, #0x68]!
+2DB5C0B5 stp s21, s16, [x5, #-0x54]!
+2DA684EE stp s14, s1, [x7, #-0xcc]!
+2DB9BF84 stp s4, s15, [x28, #-0x34]!
+2D829B78 stp s24, s6, [x27, #0x14]!
+2D9D6DD5 stp s21, s27, [x14, #0xe8]!
+2DA6268D stp s13, s9, [x20, #-0xd0]!
+2DAC9281 stp s1, s4, [x20, #-0x9c]!
+2DB188CB stp s11, s2, [x6, #-0x74]!
+2DAFD0DC stp s28, s20, [x6, #-0x84]!
+2D92F3CD stp s13, s28, [lr, #0x94]!
+2D9A2948 stp s8, s10, [x10, #0xd0]!
+2DA01727 stp s7, s5, [x25, #-0x100]!
+2D9C0717 stp s23, s1, [x24, #0xe0]!
+2DB374D0 stp s16, s29, [x6, #-0x68]!
+2D800000 stp s0, s0, [x0, #0x0]!
+2DBFFFFF stp s31, s31, [sp, #-0x4]!
+2D907239 stp s25, s28, [x17, #0x80]!
+2D887239 stp s25, s28, [x17, #0x40]!
+2D847239 stp s25, s28, [x17, #0x20]!
+2D827239 stp s25, s28, [x17, #0x10]!
+2D817239 stp s25, s28, [x17, #0x8]!
+2D80F239 stp s25, s28, [x17, #0x4]!

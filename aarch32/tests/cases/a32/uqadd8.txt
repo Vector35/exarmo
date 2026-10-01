@@ -1,0 +1,19 @@
+// UQADD8_A1 cond=xxxx|011|00|op1=110|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=1|op2=00|1|Rm=xxxx
+// Uqadd8A1: UQADD8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+c6648e98 uqadd8gt r8, r4, r8 (unpredictable)
+e66cd791 uqadd8 sp, r12, r1 (unpredictable)
+36631796 uqadd8lo r1, r3, r6 (unpredictable)
+46681893 uqadd8mi r1, r8, r3 (unpredictable)
+36643494 uqadd8lo r3, r4, r4 (unpredictable)
+a6659091 uqadd8ge r9, r5, r1 (unpredictable)
+96649b9b uqadd8ls r9, r4, r11 (unpredictable)
+d66cf492 uqadd8le pc, r12, r2 (unpredictable)
+// Binary Ninja's tests
+d6618f92 uqadd8le r8, r1, r2
+e6643f98 uqadd8 r3, r4, r8
+06600290 uqadd8eq r0, r0, r0 (unpredictable)
+F6648E98 UNALLOCATED
+866F819F uqadd8hi r8, pc, pc (unpredictable)
+26644E98 uqadd8cs r4, r4, r8 (unpredictable)
+16648E98 uqadd8ne r8, r4, r8 (unpredictable)

@@ -1,0 +1,37 @@
+// SXTH_T1 1011|0010|U=0|B=0|Rm=xxx|Rd=xxx
+// SxthT1: SXTH{<c>}{<q>}  {<Rd>, }<Rm>
+// register fields: Rm, Rd
+// IT state read: condition
+b200 sxth r0, r0
+b201 sxth r1, r0
+b202 sxth r2, r0
+b203 sxth r3, r0
+b204 sxth r4, r0
+b205 sxth r5, r0
+b206 sxth r6, r0
+b207 sxth r7, r0
+B208 sxth r0, r1
+B210 sxth r0, r2
+B218 sxth r0, r3
+B220 sxth r0, r4
+B228 sxth r0, r5
+B230 sxth r0, r6
+B238 sxth r0, r7
+B200 [ne] sxthne r0, r0
+
+// SXTH_T2 111|11010|0|op1=00|U=0|Rn=1111|1111|Rd=xxxx|1(0)|rotate=xx|Rm=xxxx
+// SxthT2: SXTH{<c>}{<q>}  {<Rd>, }<Rm> {, ROR #<amount>}
+// register fields: Rd, Rm
+// IT state read: condition
+fa0ff0f2 sxth r0, r2, ror #24 (unpredictable)
+fa0ffcd8 sxth r12, r8, ror #8 (unpredictable)
+fa0ffcc6 sxth r12, r6 (unpredictable)
+fa0ff7b6 sxth r7, r6, ror #24
+fa0ff49b sxth r4, r11, ror #8
+fa0ff19d sxth r1, sp, ror #8
+fa0ffdea sxth sp, r10, ror #16 (unpredictable)
+fa0ff3a4 sxth r3, r4, ror #16
+FA0FFFF0 sxth pc, r0, ror #0x18 (unpredictable)
+FA0FF0FF sxth r0, pc, ror #0x18 (unpredictable)
+FA0FF0F0 sxth r0, r0, ror #0x18 (unpredictable)
+FA0FF0F2 [ne] sxthne r0, r2, ror #0x18 (unpredictable)

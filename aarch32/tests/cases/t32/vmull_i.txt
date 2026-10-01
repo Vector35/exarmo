@@ -1,0 +1,33 @@
+// VMULL_i_T1 111|U=x|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|11|op=x|0|N=x|0|M=x|0|Vm=xxxx
+// VmullIT1: VMULL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size, op
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef838e86 vmull.p8 q4, d19, d6
+efaeae08 vmull.p64 q5, d14, d8
+efc80ca8 vmull.s8 q8, d24, d24
+efc8cea1 vmull.p8 q14, d24, d17
+ffa48c8d vmull.u32 q4, d20, d13
+ef884ca5 vmull.s8 q2, d24, d21
+ffe9cc85 vmull.u32 q14, d25, d5
+efa88e0b vmull.p64 q4, d8, d11
+EFD02CA0 vmull.s16 q9, d16, d16
+EFB3FE86 UNDEFINED
+EF9F0C8F vmull.s16 q0, d31, d15
+EFA28C84 vmull.s32 q4, d18, d4
+FF818C82 vmull.u8 q4, d17, d2
+EF931E86 UNDEFINED
+EFB3FC86 UNDEFINED
+EFF3FE86 UNDEFINED
+FF838E86 UNDEFINED
+FF908C00 vmull.u16 q4, d0, d0
+FF938E86 UNDEFINED
+FFA38E86 UNDEFINED
+FFB38C86 UNALLOCATED
+FFB38E86 UNALLOCATED
+EF808E8F vmull.p8 q4, d16, d15
+EF8F8E20 vmull.p8 q4, d15, d16
+EF8F8EAF vmull.p8 q4, d31, d31
+EF838E86 [ne] vmullne.p8 q4, d19, d6

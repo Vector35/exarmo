@@ -1,0 +1,49 @@
+// VRSHL_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0101|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VrshlT1D: VRSHL{<c>}{<q>}.<dt>  {<Dd>, }<Dm>, <Dn>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// read together by <Dn>: Vn, N
+// IT state read: condition
+ff44958f vrshl.u8 d25, d15, d20
+ef5ad584 vrshl.s16 d29, d4, d26
+ff1b7501 vrshl.u16 d7, d1, d11
+ef1e9507 vrshl.s16 d9, d7, d14
+ef038520 vrshl.s8 d8, d16, d3
+ff72750d vrshl.u64 d23, d13, d2
+ff4d550a vrshl.u8 d21, d10, d13
+ff7665a1 vrshl.u64 d22, d17, d22
+FF600588 vrshl.u32 d16, d8, d16
+EF6FF582 vrshl.s32 d31, d2, d31
+EF784580 vrshl.s64 d20, d0, d24
+FF6125AF vrshl.u32 d18, d31, d17
+FF40150F vrshl.u8 d17, d15, d0
+FF00058F vrshl.u8 d0, d15, d16
+FF0FF50F vrshl.u8 d15, d15, d15
+FF4F058F vrshl.u8 d16, d15, d31
+FF44F58F vrshl.u8 d31, d15, d20
+FF44958F [ne] vrshlne.u8 d25, d15, d20
+
+// VRSHL_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0101|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VrshlT1Q: VRSHL{<c>}{<q>}.<dt>  {<Qd>, }<Qm>, <Qn>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// read together by <Qn>: Vn, N
+// IT state read: condition
+ff2ea5c8 vrshl.u32 q5, q4, q15
+ef0c85c0 vrshl.s8 q4, q0, q14
+ff76c54c vrshl.u64 q14, q6, q3
+ef104544 vrshl.s16 q2, q2, q0
+ef5805cc vrshl.s16 q8, q6, q12
+ef488546 vrshl.s8 q12, q3, q4
+ef48c5ce vrshl.s8 q14, q7, q12
+ff5205c2 vrshl.u16 q8, q1, q9
+FF2FF5CF UNDEFINED
+EF2425E8 vrshl.s32 q1, q12, q10
+FF2115C1 UNDEFINED
+EF3005E0 vrshl.s64 q0, q8, q8
+FF0EA5C8 vrshl.u8 q5, q4, q15
+FF2FF54F UNDEFINED
+FF6FF5EF UNDEFINED
+FF2EA5C8 [ne] vrshlne.u32 q5, q4, q15

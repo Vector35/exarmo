@@ -1,0 +1,20 @@
+// FMAXMGINM_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|11|op=10|10|Rn=xxxxx|Rd=xxxxx
+// FmaxmginmDFloatdp2: FMAXMGINM  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E60E800 fmaxmginm d0, d0, d0
+1E7FEBFF fmaxmginm d31, d31, d31
+1E61E843 fmaxmginm d3, d2, d1
+
+// FMAXMGINM_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|11|op=10|10|Rn=xxxxx|Rd=xxxxx
+// FmaxmginmHFloatdp2: FMAXMGINM  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EE0E800 fmaxmginm h0, h0, h0
+1EFFEBFF fmaxmginm h31, h31, h31
+1EE1E843 fmaxmginm h3, h2, h1
+
+// FMAXMGINM_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|11|op=10|10|Rn=xxxxx|Rd=xxxxx
+// FmaxmginmSFloatdp2: FMAXMGINM  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E20E800 fmaxmginm s0, s0, s0
+1E3FEBFF fmaxmginm s31, s31, s31
+1E21E843 fmaxmginm s3, s2, s1

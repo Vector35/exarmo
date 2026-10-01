@@ -1,0 +1,11 @@
+// tblq_z_zz_ 010|0010|0|size=xx|0|Zm=xxxxx|111|opc=110|Zn=xxxxx|Zd=xxxxx
+// TblqZZz: TBLQ  <Zd>.<T>, { <Zn>.<T> }, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+4400F804 tblq z4.b, {z0.b}, z0.b
+4400F80B tblq z11.b, {z0.b}, z0.b
+4400F812 tblq z18.b, {z0.b}, z0.b
+445FFBE0 tblq z0.h, {z31.h}, z31.h
+4480F81F tblq z31.s, {z0.s}, z0.s
+44C0F804 tblq z4.d, {z0.d}, z0.d
+4400F800 tblq z0.b, {z0.b}, z0.b
+4401F843 tblq z3.b, {z2.b}, z1.b

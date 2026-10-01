@@ -1,0 +1,11 @@
+// STREXB_T1 111|0100|op0=0110|L=0|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|01|sz=00|Rd=xxxx
+// StrexbT1: STREXB{<c>}{<q>}  <Rd>, <Rt>, [<Rn>]
+// register fields: Rn, Rt, Rd
+// IT state read: condition
+e8c27f4a strexb r10, r7, [r2]
+E8C00040 strexb r0, r0, [r0] (unpredictable)
+E8CFF84F strexb pc, pc, [pc] (unpredictable)
+E8C2244A strexb r10, r2, [r2] (unpredictable)
+E8C27242 strexb r2, r7, [r2] (unpredictable)
+E8C27147 strexb r7, r7, [r2] (unpredictable)
+E8C27F4A [ne] strexbne r10, r7, [r2]

@@ -1,0 +1,135 @@
+// SQDMULH_asimdelem_R 0|Q=x|U=0|0|111|1|size=xx|L=x|M=x|Rm=xxxx|110|op=0|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqdmulhAsimdelemR: SQDMULH  <Vd>.<T>, <Vn>.<T>, <m>.<Ts>[<index>]
+// read together by <T>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+4F81C075 sqdmulh v21.4s, v3.4s, v1.s[0]
+4F4CC971 sqdmulh v17.8h, v11.8h, v12.h[4]
+0F69C1F0 sqdmulh v16.4h, v15.4h, v9.h[2]
+0F47C257 sqdmulh v23.4h, v18.4h, v7.h[0]
+4F78CA42 sqdmulh v2.8h, v18.8h, v8.h[7]
+4FAEC085 sqdmulh v5.4s, v4.4s, v14.s[1]
+0FABC8B3 sqdmulh v19.2s, v5.2s, v11.s[3]
+0F69C12B sqdmulh v11.4h, v9.4h, v9.h[2]
+0F9BC1F4 sqdmulh v20.2s, v15.2s, v27.s[0]
+4F57CA75 sqdmulh v21.8h, v19.8h, v7.h[5]
+4F80CB0D sqdmulh v13.4s, v24.4s, v0.s[2]
+4F99CB5B sqdmulh v27.4s, v26.4s, v25.s[2]
+0FB0C1C0 sqdmulh v0.2s, v14.2s, v16.s[1]
+4FA5CBB2 sqdmulh v18.4s, v29.4s, v5.s[3]
+0F40C39A sqdmulh v26.4h, v28.4h, v0.h[0]
+4F52C8FB sqdmulh v27.8h, v7.8h, v2.h[5]
+4F8FC01F sqdmulh v31.4s, v0.4s, v15.s[0]
+4F81C3F5 sqdmulh v21.4s, v31.4s, v1.s[0]
+4F01C075 UNDEFINED
+4FC1C075 UNDEFINED
+4F01C875 UNDEFINED
+4F11C075 UNDEFINED
+4F11C875 UNDEFINED
+4F21C075 UNDEFINED
+4F21C875 UNDEFINED
+4F31C075 UNDEFINED
+4F31C875 UNDEFINED
+4F51C063 sqdmulh v3.8h, v3.8h, v1.h[1]
+4F61C875 sqdmulh v21.8h, v3.8h, v1.h[6]
+4F71C075 sqdmulh v21.8h, v3.8h, v1.h[3]
+4FB1C875 sqdmulh v21.4s, v3.4s, v17.s[3]
+4FC1C875 UNDEFINED
+4FD1C075 UNDEFINED
+4FD1C875 UNDEFINED
+4FE1C075 UNDEFINED
+4FE1C875 UNDEFINED
+4FF1C075 UNDEFINED
+4FF1C875 UNDEFINED
+4F00C075 UNDEFINED
+4F0FC075 UNDEFINED
+4F10C075 UNDEFINED
+4F1FC075 UNDEFINED
+4F4FC075 sqdmulh v21.8h, v3.8h, v15.h[0]
+4F50C075 sqdmulh v21.8h, v3.8h, v0.h[1]
+4F5FC075 sqdmulh v21.8h, v3.8h, v15.h[1]
+4F9FC075 sqdmulh v21.4s, v3.4s, v31.s[0]
+4FC0C075 UNDEFINED
+4FCFC075 UNDEFINED
+4FD0C075 UNDEFINED
+4FDFC075 UNDEFINED
+0F01C075 UNDEFINED
+0FC1C075 UNDEFINED
+4F84C075 sqdmulh v21.4s, v3.4s, v4.s[0]
+
+// SQDMULH_asisdelem_R 01|U=0|1|111|1|size=xx|L=x|M=x|Rm=xxxx|110|op=0|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SqdmulhAsisdelemR: SQDMULH  <V><d>, <V><n>, <m>.<Ts>[<index>]
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+5F81C17D sqdmulh s29, s11, v1.s[0]
+5F61CB75 sqdmulh h21, h27, v1.h[6]
+5F7BC912 sqdmulh h18, h8, v11.h[7]
+5F53C32B sqdmulh h11, h25, v3.h[1]
+5F55C9F5 sqdmulh h21, h15, v5.h[5]
+5F93C1E7 sqdmulh s7, s15, v19.s[0]
+5F66C38C sqdmulh h12, h28, v6.h[2]
+5F69C9AC sqdmulh h12, h13, v9.h[6]
+5F91C01C sqdmulh s28, s0, v17.s[0]
+5F72CA2E sqdmulh h14, h17, v2.h[7]
+5F7EC3EB sqdmulh h11, h31, v14.h[3]
+5F96C007 sqdmulh s7, s0, v22.s[0]
+5F54C88D sqdmulh h13, h4, v4.h[5]
+5F79CB61 sqdmulh h1, h27, v9.h[7]
+5F62C0B9 sqdmulh h25, h5, v2.h[2]
+5FBAC876 sqdmulh s22, s3, v26.s[3]
+5F80C160 sqdmulh s0, s11, v0.s[0]
+5F8FC17F sqdmulh s31, s11, v15.s[0]
+5F01C17D UNDEFINED
+5FC1C17D UNDEFINED
+5F01C97D UNDEFINED
+5F11C17D UNDEFINED
+5F11C97D UNDEFINED
+5F21C17D UNDEFINED
+5F21C97D UNDEFINED
+5F31C17D UNDEFINED
+5F31C97D UNDEFINED
+5F41C16B sqdmulh h11, h11, v1.h[0]
+5F41C97D sqdmulh h29, h11, v1.h[4]
+5F81C97D sqdmulh s29, s11, v1.s[2]
+5F91C97D sqdmulh s29, s11, v17.s[2]
+5FA1C17D sqdmulh s29, s11, v1.s[1]
+5FA1C97D sqdmulh s29, s11, v1.s[3]
+5FB1C17D sqdmulh s29, s11, v17.s[1]
+5FC1C97D UNDEFINED
+5FD1C17D UNDEFINED
+5FD1C97D UNDEFINED
+5FE1C17D UNDEFINED
+5FE1C97D UNDEFINED
+5FF1C17D UNDEFINED
+5FF1C97D UNDEFINED
+5F00C17D UNDEFINED
+5F0FC17D UNDEFINED
+5F10C17D UNDEFINED
+5F1FC17D UNDEFINED
+5F40C17D sqdmulh h29, h11, v0.h[0]
+5F4FC17D sqdmulh h29, h11, v15.h[0]
+5F50C17D sqdmulh h29, h11, v0.h[1]
+5F5FC17D sqdmulh h29, h11, v15.h[1]
+5F90C17D sqdmulh s29, s11, v16.s[0]
+5F9FC17D sqdmulh s29, s11, v31.s[0]
+5FC0C17D UNDEFINED
+5FCFC17D UNDEFINED
+5FD0C17D UNDEFINED
+5FDFC17D UNDEFINED
+5F01C160 UNDEFINED
+5F01C17F UNDEFINED
+5F41C160 sqdmulh h0, h11, v1.h[0]
+5F41C17F sqdmulh h31, h11, v1.h[0]
+5FC1C160 UNDEFINED
+5FC1C17F UNDEFINED
+5F01C01D UNDEFINED
+5F01C3FD UNDEFINED
+5F41C01D sqdmulh h29, h0, v1.h[0]
+5F81C3FD sqdmulh s29, s31, v1.s[0]
+5FC1C01D UNDEFINED
+5FC1C3FD UNDEFINED
+5F88C17D sqdmulh s29, s11, v8.s[0]

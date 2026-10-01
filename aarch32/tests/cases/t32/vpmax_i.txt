@@ -1,0 +1,26 @@
+// VPMAX_i_T1 111|U=x|11|11|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1010|N=x|Q=0|M=x|op=0|Vm=xxxx
+// VpmaxIT1: VPMAX{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef58aa01 vpmax.s16 d26, d8, d1
+ef1f7aa6 vpmax.s16 d7, d31, d22
+ff09da0b vpmax.u8 d13, d9, d11
+ef0f8a88 vpmax.s8 d8, d31, d8
+ef041a21 vpmax.s8 d1, d4, d17
+ef03daa1 vpmax.s8 d13, d19, d17
+ef04eaaa vpmax.s8 d14, d20, d26
+ef46aaab vpmax.s8 d26, d22, d27
+EF600A00 vpmax.s32 d16, d0, d0
+EF78AA01 UNDEFINED
+EF62FA0F vpmax.s32 d31, d2, d15
+FF514A04 vpmax.u16 d20, d1, d4
+FF602A02 vpmax.u32 d18, d0, d2
+FF78AA01 UNDEFINED
+EF100A80 vpmax.s16 d0, d16, d0
+EF1FFA0F vpmax.s16 d15, d15, d15
+EF580A20 vpmax.s16 d16, d8, d16
+EF58FA2F vpmax.s16 d31, d8, d31
+EF58AA01 [ne] vpmaxne.s16 d26, d8, d1

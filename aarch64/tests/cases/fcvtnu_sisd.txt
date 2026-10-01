@@ -1,0 +1,39 @@
+// FCVTNU_sisd_32D sf=0|0|S=0|11110|ftype=01|1|rmode=01|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtnuSisd32d: FCVTNU  <Sd>, <Dn>
+// register fields: Rn, Rd
+1E6B0001 fcvtnu s1, d0
+1E6B0008 fcvtnu s8, d0
+1E6B000F fcvtnu s15, d0
+1E6B03E0 fcvtnu s0, d31
+1E6B001F fcvtnu s31, d0
+1E6B0000 fcvtnu s0, d0
+
+// FCVTNU_sisd_32H sf=0|0|S=0|11110|ftype=11|1|rmode=01|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtnuSisd32h: FCVTNU  <Sd>, <Hn>
+// register fields: Rn, Rd
+1EEB0004 fcvtnu s4, h0
+1EEB000B fcvtnu s11, h0
+1EEB0012 fcvtnu s18, h0
+1EEB03E0 fcvtnu s0, h31
+1EEB001F fcvtnu s31, h0
+1EEB0000 fcvtnu s0, h0
+
+// FCVTNU_sisd_64H sf=1|0|S=0|11110|ftype=11|1|rmode=01|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtnuSisd64h: FCVTNU  <Dd>, <Hn>
+// register fields: Rn, Rd
+9EEB0002 fcvtnu d2, h0
+9EEB0009 fcvtnu d9, h0
+9EEB0010 fcvtnu d16, h0
+9EEB03E0 fcvtnu d0, h31
+9EEB001F fcvtnu d31, h0
+9EEB0000 fcvtnu d0, h0
+
+// FCVTNU_sisd_64S sf=1|0|S=0|11110|ftype=00|1|rmode=01|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtnuSisd64s: FCVTNU  <Dd>, <Sn>
+// register fields: Rn, Rd
+9E2B0001 fcvtnu d1, s0
+9E2B0008 fcvtnu d8, s0
+9E2B000F fcvtnu d15, s0
+9E2B03E0 fcvtnu d0, s31
+9E2B001F fcvtnu d31, s0
+9E2B0000 fcvtnu d0, s0

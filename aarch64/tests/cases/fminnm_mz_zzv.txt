@@ -1,0 +1,21 @@
+// fminnm_mz_zzv_2x1 1|10|0000|1|size=xx|10|Zm=xxxx|10100|0|01|00|op=1|Zdn=xxxx|o2=1
+// FminnmMzZzv2x1: FMINNM  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, <Zm>.<T>
+// register fields: Zm, Zdn
+C160A123 fminnm {z2.h-z3.h}, {z2.h-z3.h}, z0.h
+C160A131 fminnm {z16.h-z17.h}, {z16.h-z17.h}, z0.h
+C160A13F fminnm {z30.h-z31.h}, {z30.h-z31.h}, z0.h
+C1AFA121 fminnm {z0.s-z1.s}, {z0.s-z1.s}, z15.s
+C1E0A123 fminnm {z2.d-z3.d}, {z2.d-z3.d}, z0.d
+C160A121 fminnm {z0.h-z1.h}, {z0.h-z1.h}, z0.h
+
+// fminnm_mz_zzv_4x1 1|10|0000|1|size=xx|10|Zm=xxxx|10101|0|01|00|op=1|Zdn=xxx|0|o2=1
+// FminnmMzZzv4x1: FMINNM  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, <Zm>.<T>
+// register fields: Zm, Zdn
+C160A92D fminnm {z12.h-z15.h}, {z12.h-z15.h}, z0.h
+C161A939 fminnm {z24.h-z27.h}, {z24.h-z27.h}, z1.h
+C162A929 fminnm {z8.h-z11.h}, {z8.h-z11.h}, z2.h
+C1AFA921 fminnm {z0.s-z3.s}, {z0.s-z3.s}, z15.s
+C1E0A925 fminnm {z4.d-z7.d}, {z4.d-z7.d}, z0.d
+C160A931 fminnm {z16.h-z19.h}, {z16.h-z19.h}, z0.h
+C160A935 fminnm {z20.h-z23.h}, {z20.h-z23.h}, z0.h
+C160A93D fminnm {z28.h-z31.h}, {z28.h-z31.h}, z0.h

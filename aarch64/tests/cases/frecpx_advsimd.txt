@@ -1,0 +1,48 @@
+// FRECPX_asisdmisc_R 01|U=0|1|111|0|1|sz=x|10000|opcode=11111|10|Rn=xxxxx|Rd=xxxxx
+// FrecpxAsisdmiscR: FRECPX  <V><d>, <V><n>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+5EA1FAE1 frecpx s1, s23
+5EA1FAA1 frecpx s1, s21
+5EE1F8D4 frecpx d20, d6
+5EE1F988 frecpx d8, d12
+5EA1FA79 frecpx s25, s19
+5EE1F833 frecpx d19, d1
+5EE1FA61 frecpx d1, d19
+5EA1FBC8 frecpx s8, s30
+5EE1FB3A frecpx d26, d25
+5EE1F962 frecpx d2, d11
+5EE1FAB7 frecpx d23, d21
+5EA1FB04 frecpx s4, s24
+5EA1FAE6 frecpx s6, s23
+5EE1F830 frecpx d16, d1
+5EA1FB47 frecpx s7, s26
+5EA1F854 frecpx s20, s2
+5EA1F800 frecpx s0, s0
+5EA1FBFF frecpx s31, s31
+5EE1FAE0 frecpx d0, d23
+5EE1FAFF frecpx d31, d23
+5EE1F801 frecpx d1, d0
+5EE1FBE1 frecpx d1, d31
+
+// FRECPX_asisdmiscfp16_R 01|U=0|1|111|0|a=1|1111|00|opcode=11111|10|Rn=xxxxx|Rd=xxxxx
+// FrecpxAsisdmiscfp16R: FRECPX  <Hd>, <Hn>
+// register fields: Rn, Rd
+5EF9F8D6 frecpx h22, h6
+5EF9FAB3 frecpx h19, h21
+5EF9FB2D frecpx h13, h25
+5EF9F83F frecpx h31, h1
+5EF9FB65 frecpx h5, h27
+5EF9FBCC frecpx h12, h30
+5EF9F8C7 frecpx h7, h6
+5EF9F908 frecpx h8, h8
+5EF9FAE0 frecpx h0, h23
+5EF9F856 frecpx h22, h2
+5EF9FAE6 frecpx h6, h23
+5EF9FB25 frecpx h5, h25
+5EF9FB1B frecpx h27, h24
+5EF9F9C8 frecpx h8, h14
+5EF9FBF8 frecpx h24, h31
+5EF9F84C frecpx h12, h2
+5EF9F816 frecpx h22, h0

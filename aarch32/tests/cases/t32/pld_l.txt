@@ -1,0 +1,26 @@
+// PLD_l_T1 111|1100|0|U=x|size=0(0)|L=1|1111|Rt=1111|imm12=xxxxxxxxxxxx
+// PldLT1: PLD{<c>}{<q>}  <label>
+// IT state read: condition
+f81fff6f pld 0xf095
+f83fffa8 pld 0xf05c (unpredictable)
+f83ff1dd pld 0xfe27 (unpredictable)
+f89ff7f6 pld 0x107fa
+f89ff1db pld 0x101df
+f83ff2a6 pld 0xfd5e (unpredictable)
+f89ffbe7 pld 0x10beb
+f83ff3e4 pld 0xfc20 (unpredictable)
+F81FF000 pld 0x10004
+F81FFFFF pld 0xf005
+F81FF800 pld 0xf804
+F81FF400 pld 0xfc04
+F81FF200 pld 0xfe04
+F81FF100 pld 0xff04
+F81FF080 pld 0xff84
+F81FF040 pld 0xffc4
+F81FF020 pld 0xffe4
+F81FF010 pld 0xfff4
+F81FF008 pld 0xfffc
+F81FF004 pld 0x10000
+F81FF002 pld 0x10002
+F81FF001 pld 0x10003
+F81FFF6F [ne] pldne 0xf095

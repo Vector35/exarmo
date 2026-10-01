@@ -1,0 +1,15 @@
+// sqrdmulh_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|011|10|R=1|Zn=xxxxx|Zd=xxxxx
+// SqrdmulhZZz: SQRDMULH  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+042374B7 sqrdmulh z23.b, z5.b, z3.b
+043D74A8 sqrdmulh z8.b, z5.b, z29.b
+047A76A1 sqrdmulh z1.h, z21.h, z26.h
+04E074DC sqrdmulh z28.d, z6.d, z0.d
+04647620 sqrdmulh z0.h, z17.h, z4.h
+04EB7791 sqrdmulh z17.d, z28.d, z11.d
+04FD752D sqrdmulh z13.d, z9.d, z29.d
+04F676FA sqrdmulh z26.d, z23.d, z22.d
+04BF741F sqrdmulh z31.s, z0.s, z31.s
+042377F7 sqrdmulh z23.b, z31.b, z3.b
+04237477 sqrdmulh z23.b, z3.b, z3.b
+042374A5 sqrdmulh z5.b, z5.b, z3.b

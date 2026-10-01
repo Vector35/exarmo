@@ -1,0 +1,53 @@
+// DUP_asimdins_DV_v 0|Q=x|op=0|0|111|00|00|imm5=xxxxx|0|imm4=0000|1|Rn=xxxxx|Rd=xxxxx
+// DupAsimdinsDvV: DUP  <Vd>.<T>, <Vn>.<Ts>[<index>]
+// read together by <T>: Q, imm5
+// register fields: Rn, Rd
+4E0506E3 dup v3.16b, v23.b[2]
+4E170572 dup v18.16b, v11.b[11]
+4E04065E dup v30.4s, v18.s[0]
+4E0E04D8 dup v24.8h, v6.h[3]
+4E130794 dup v20.16b, v28.b[9]
+4E18060D dup v13.2d, v16.d[1]
+4E1D0421 dup v1.16b, v1.b[14]
+4E1907C6 dup v6.16b, v30.b[12]
+0E1F0400 dup v0.8b, v0.b[15]
+4E0507FF dup v31.16b, v31.b[2]
+4E0006E3 UNDEFINED
+0E0006E3 UNDEFINED
+4E1F06E3 dup v3.16b, v23.b[15]
+4E1006E3 UNDEFINED
+4E0806E3 dup v3.2d, v23.d[0]
+4E0206E3 dup v3.8h, v23.h[0]
+4E0106E3 dup v3.16b, v23.b[0]
+
+// DUP_asisdone_only 01|op=0|1|111|00|00|imm5=xxxxx|0|imm4=0000|1|Rn=xxxxx|Rd=xxxxx
+// DupAsisdoneOnly: DUP  <V><d>, <Vn>.<T>[<index>]
+// MovDupAsisdoneOnly: MOV  <V><d>, <Vn>.<T>[<index>]
+// read together by <d>: imm5, Rd
+// register fields: Rn, Rd
+5E040506 mov s6, v8.s[0]
+5E130481 mov b1, v4.b[9]
+5E0205B8 mov h24, v13.h[0]
+5E1E0670 mov h16, v19.h[7]
+5E1A04D0 mov h16, v6.h[6]
+5E03045B mov b27, v2.b[1]
+5E0D06CE mov b14, v22.b[6]
+5E170464 mov b4, v3.b[11]
+5E06057A mov h26, v11.h[1]
+5E1F0723 mov b3, v25.b[15]
+5E060417 mov h23, v0.h[1]
+5E1C05C8 mov s8, v14.s[3]
+5E0A055F mov h31, v10.h[2]
+5E1A057E mov h30, v11.h[6]
+5E0E0541 mov h1, v10.h[3]
+5E0E04DC mov h28, v6.h[3]
+5E0407E0 mov s0, v31.s[0]
+5E000506 UNDEFINED
+5E000500 UNDEFINED
+5E00051F UNDEFINED
+5E1F0500 mov b0, v8.b[15]
+5E1F051F mov b31, v8.b[15]
+5E040508 mov s8, v8.s[0]
+5E100506 UNDEFINED
+5E080506 mov d6, v8.d[0]
+5E010506 mov b6, v8.b[0]

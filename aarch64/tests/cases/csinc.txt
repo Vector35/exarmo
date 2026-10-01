@@ -1,0 +1,132 @@
+// CSINC_32_condsel sf=0|op=0|S=0|11010100|Rm=xxxxx|cond=xxxx|0|o2=1|Rn=xxxxx|Rd=xxxxx
+// Csinc32Condsel: CSINC  <Wd>, <Wn>, <Wm>, <cond>
+// CincCsinc32Condsel: CINC  <Wd>, <Wn>, <invcond>
+// CsetCsinc32Condsel: CSET  <Wd>, <invcond>
+// read together by the CINC alias and the CSET alias: Rm, cond, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: Rm, cond, Rn
+1A9B7765 cinc w5, w27, vs
+1A84449F cinc wzr, w4, pl
+1A942699 cinc w25, w20, cc
+1A85C4B8 cinc w24, w5, le
+1A85B4BD cinc w29, w5, ge
+1A9516AE cinc w14, w21, eq
+1A9716F6 cinc w22, w23, eq
+1A9DB7AF cinc w15, w29, ge
+1A84A49F cinc wzr, w4, lt
+1A8AB551 cinc w17, w10, ge
+1A9D47B5 cinc w21, w29, pl
+1A8E95D1 cinc w17, w14, hi
+1A8A354E cinc w14, w10, cs
+1A8FD5E6 cinc w6, w15, gt
+1A8D25B6 cinc w22, w13, cc
+1A8504AA cinc w10, w5, ne
+1A9F17F1 cset w17, eq
+1A9F07F6 cset w22, ne
+1A9FB7F9 cset w25, ge
+1A9FC7E8 cset w8, le
+1A9FB7EB cset w11, ge
+1A9F37E3 cset w3, cs
+1A9F47EF cset w15, pl
+1A9F67E0 cset w0, vc
+1A9F07F2 cset w18, ne
+1A9FB7E4 cset w4, ge
+1A9FD7F6 cset w22, gt
+1A9F67F9 cset w25, vc
+1A9F57E4 cset w4, mi
+1A9F37F9 cset w25, cs
+1A9F07EB cset w11, ne
+1A9F47F3 cset w19, pl
+1A9E3422 csinc w2, w1, w30, cc
+1A9834FF csinc wzr, w7, w24, cc
+1A9E65FE csinc w30, w15, w30, vs
+1A8644EB csinc w11, w7, w6, mi
+1A86756F csinc w15, w11, w6, vc
+1A98F469 csinc w9, w3, w24, nv
+1A99346E csinc w14, w3, w25, cc
+1A8D7643 csinc w3, w18, w13, vc
+1A99944D csinc w13, w2, w25, ls
+1A82C5D1 csinc w17, w14, w2, gt
+1A86B68E csinc w14, w20, w6, lt
+1A8DE69D csinc w29, w20, w13, al
+1A8BE677 csinc w23, w19, w11, al
+1A9785BD csinc w29, w13, w23, hi
+1A8305CC csinc w12, w14, w3, eq
+1A9FE44D csinc w13, w2, wzr, al
+1A807405 cinc w5, w0, vs
+1A800405 cinc w5, w0, ne
+1A8007E5 csinc w5, wzr, w0, eq
+1A80F405 csinc w5, w0, w0, nv
+1A80F7E5 csinc w5, wzr, w0, nv
+1A9F0405 csinc w5, w0, wzr, eq
+1A9FF405 csinc w5, w0, wzr, nv
+1A9FF7E5 csinc w5, wzr, wzr, nv
+1A9B777B cinc w27, w27, vs
+1A8F07EB csinc w11, wzr, w15, eq
+
+// CSINC_64_condsel sf=1|op=0|S=0|11010100|Rm=xxxxx|cond=xxxx|0|o2=1|Rn=xxxxx|Rd=xxxxx
+// Csinc64Condsel: CSINC  <Xd>, <Xn>, <Xm>, <cond>
+// CincCsinc64Condsel: CINC  <Xd>, <Xn>, <invcond>
+// CsetCsinc64Condsel: CSET  <Xd>, <invcond>
+// read together by the CINC alias and the CSET alias: Rm, cond, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: Rm, cond, Rn
+9A8BC574 cinc x20, x11, le
+9A812436 cinc x22, x1, cc
+9A841489 cinc x9, x4, eq
+9A9DC7AF cinc x15, fp, le
+9A89A53A cinc x26, x9, lt
+9A883508 cinc x8, x8, cs
+9A8C0582 cinc x2, x12, ne
+9A926658 cinc x24, x18, vc
+9A9C978B cinc x11, x28, hi
+9A997732 cinc x18, x25, vs
+9A8A654E cinc x14, x10, vc
+9A96A6DB cinc x27, x22, lt
+9A88C50F cinc x15, x8, le
+9A942696 cinc x22, x20, cc
+9A935674 cinc x20, x19, mi
+9A84149A cinc x26, x4, eq
+9A9F97E4 cset x4, hi
+9A9FA7EE cset x14, lt
+9A9F77EA cset x10, vs
+9A9FB7FA cset x26, ge
+9A9FA7E1 cset x1, lt
+9A9FB7FB cset x27, ge
+9A9FD7F6 cset x22, gt
+9A9F47F7 cset x23, pl
+9A9F47F0 cset x16, pl
+9A9FC7F3 cset x19, le
+9A9F87E9 cset x9, ls
+9A9F27FC cset x28, cc
+9A9FA7FA cset x26, lt
+9A9FD7F8 cset x24, gt
+9A9F27FB cset x27, cc
+9A9F77EE cset x14, vs
+9A98456D csinc x13, x11, x24, mi
+9A99048B csinc x11, x4, x25, eq
+9A8927E3 csinc x3, xzr, x9, cs
+9A844777 csinc x23, x27, x4, mi
+9A93846E csinc x14, x3, x19, hi
+9A990515 csinc x21, x8, x25, eq
+9A9B0510 csinc x16, x8, x27, eq
+9A8926B8 csinc x24, x21, x9, cs
+9A8237F7 csinc x23, xzr, x2, cc
+9A9FB525 csinc x5, x9, xzr, lt
+9A958456 csinc x22, x2, x21, hi
+9A8957E9 csinc x9, xzr, x9, pl
+9A877572 csinc x18, x11, x7, vc
+9A989699 csinc x25, x20, x24, ls
+9A91B7DD csinc fp, lr, x17, lt
+9A99742F csinc x15, x1, x25, vc
+9A80F400 csinc x0, x0, x0, nv
+9A8BC57F cinc xzr, x11, le
+9A800414 cinc x20, x0, ne
+9A8007F4 csinc x20, xzr, x0, eq
+9A80F7F4 csinc x20, xzr, x0, nv
+9A9F0414 csinc x20, x0, xzr, eq
+9A9F07F4 cset x20, ne
+9A9FF414 csinc x20, x0, xzr, nv
+9A9FF7F4 csinc x20, xzr, xzr, nv
+9A810414 csinc x20, x0, x1, eq
+9A8F07F4 csinc x20, xzr, x15, eq

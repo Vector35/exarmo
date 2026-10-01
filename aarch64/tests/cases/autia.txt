@@ -1,0 +1,53 @@
+// AUTIA1716_HI_hints 11010101000000110010|CRm=0001|op2=100|11111
+// Autia1716HiHints: AUTIA1716
+D503219F autia1716
+
+// AUTIA_64P_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=0|100|Rn=xxxxx|Rd=xxxxx
+// Autia64pDp1src: AUTIA  <Xd>, <Xn|SP>
+// register fields: Rn, Rd
+DAC1128D autia x13, x20
+DAC1128E autia x14, x20
+DAC11074 autia x20, x3
+DAC11363 autia x3, x27
+DAC11090 autia x16, x4
+DAC11214 autia x20, x16
+DAC110ED autia x13, x7
+DAC11105 autia x5, x8
+DAC111C2 autia x2, x14
+DAC1108D autia x13, x4
+DAC112C7 autia x7, x22
+DAC112F6 autia x22, x23
+DAC111E5 autia x5, x15
+DAC11249 autia x9, x18
+DAC1108E autia x14, x4
+DAC1118A autia x10, x12
+DAC11000 autia x0, x0
+DAC113FF autia xzr, sp
+
+// AUTIASP_HI_hints 11010101000000110010|CRm=0011|op2=101|11111
+// AutiaspHiHints: AUTIASP
+D50323BF autiasp
+
+// AUTIAZ_HI_hints 11010101000000110010|CRm=0011|op2=100|11111
+// AutiazHiHints: AUTIAZ
+D503239F autiaz
+
+// AUTIZA_64Z_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=1|100|Rn=11111|Rd=xxxxx
+// Autiza64zDp1src: AUTIZA  <Xd>
+// register fields: Rd
+DAC133F8 autiza x24
+DAC133EA autiza x10
+DAC133F0 autiza x16
+DAC133E9 autiza x9
+DAC133E8 autiza x8
+DAC133FE autiza lr
+DAC133FA autiza x26
+DAC133ED autiza x13
+DAC133FF autiza xzr
+DAC133F4 autiza x20
+DAC133E0 autiza x0
+DAC133E2 autiza x2
+DAC133F1 autiza x17
+DAC133EB autiza x11
+DAC133E6 autiza x6
+DAC133E3 autiza x3

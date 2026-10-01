@@ -1,0 +1,21 @@
+// LDRH_l_A1 cond=xxxx|00|0|P=x|U=x|1|W=x|o1=1|Rn=1111|Rt=xxxx|imm4H=xxxx|1|op2=01|1|imm4L=xxxx
+// LdrhLA1: LDRH{<c>}{<q>}  <Rt>, <label>
+// read together by <label>: imm4H, imm4L
+// register fields: Rt
+a05f9bb8 ldrhge r9, 0xff50 (unpredictable)
+e1df14b3 ldrh r1, 0x1004b
+317f1fb8 ldrhcc r1, 0xff10 (unpredictable)
+b0df4bbf ldrhlt r4, 0x100c7 (unpredictable)
+51dfb7be ldrhpl r11, 0x10086
+c17f6db2 ldrhgt r6, 0xff36 (unpredictable)
+905f55bc ldrhls r5, 0xffac (unpredictable)
+d15f0bbd ldrhle r0, 0xff4b
+005FF0B0 ldrheq pc, 0x10008 (unpredictable)
+F05F9BB8 UNALLOCATED
+805F98B4 ldrhhi r9, 0xff84 (unpredictable)
+405F92B1 ldrhmi r9, 0xffe7 (unpredictable)
+205F91B8 ldrhcs r9, 0xfff0 (unpredictable)
+105F90B0 ldrhne r9, 0x10008 (unpredictable)
+A05F90BF ldrhge r9, 0xfff9 (unpredictable)
+A05F9FB0 ldrhge r9, 0xff18 (unpredictable)
+A05F9FBF ldrhge r9, 0xff09 (unpredictable)

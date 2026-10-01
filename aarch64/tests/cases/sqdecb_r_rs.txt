@@ -1,0 +1,50 @@
+// sqdecb_r_rs_sx 000|0010|0|size=00|1|sf=0|imm4=xxxx|11|11|D=1|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqdecbRRsSx: SQDECB  <Xdn>, <Wdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0425FBD1 sqdecb x17, w17, mul3, mul #0x6
+042CF9A2 sqdecb x2, w2, vl256, mul #0xd
+0421F8ED sqdecb x13, w13, vl7, mul #0x2
+042BFB75 sqdecb x21, w21, #0x1b, mul #0xc
+0422FAB1 sqdecb x17, w17, #0x15, mul #0x3
+0421FA6A sqdecb x10, w10, #0x13, mul #0x2
+042BFA2B sqdecb x11, w11, #0x11, mul #0xc
+042FF8AB sqdecb x11, w11, vl5, mul #0x10
+042BF8AA sqdecb x10, w10, vl5, mul #0xc
+042EFB33 sqdecb x19, w19, #0x19, mul #0xf
+0421F86F sqdecb x15, w15, vl3, mul #0x2
+0420FAC2 sqdecb x2, w2, #0x16
+042FFA97 sqdecb x23, w23, #0x14, mul #0x10
+042CFAD8 sqdecb x24, w24, #0x16, mul #0xd
+042BFBA4 sqdecb x4, w4, mul4, mul #0xc
+042EFA28 sqdecb x8, w8, #0x11, mul #0xf
+0425F800 sqdecb x0, w0, pow2, mul #0x6
+0425FBFF sqdecb xzr, wzr, all, mul #0x6
+0428FA11 sqdecb x17, w17, #0x10, mul #0x9
+0424F911 sqdecb x17, w17, vl8, mul #0x5
+0425F891 sqdecb x17, w17, vl4, mul #0x6
+0425F851 sqdecb x17, w17, vl2, mul #0x6
+0425F831 sqdecb x17, w17, vl1, mul #0x6
+
+// sqdecb_r_rs_x 000|0010|0|size=00|1|sf=1|imm4=xxxx|11|11|D=1|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqdecbRRsX: SQDECB  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0432F89F sqdecb xzr, vl4, mul #0x3
+0432FAFD sqdecb fp, #0x17, mul #0x3
+0431FAC1 sqdecb x1, #0x16, mul #0x2
+043AFB06 sqdecb x6, #0x18, mul #0xb
+043AFBF1 sqdecb x17, all, mul #0xb
+043DFB8C sqdecb x12, #0x1c, mul #0xe
+0437FAC5 sqdecb x5, #0x16, mul #0x8
+043EFB3A sqdecb x26, #0x19, mul #0xf
+043CFA68 sqdecb x8, #0x13, mul #0xd
+043FFB64 sqdecb x4, #0x1b, mul #0x10
+043EFBF2 sqdecb x18, all, mul #0xf
+043FFBEA sqdecb x10, all, mul #0x10
+0438FA54 sqdecb x20, #0x12, mul #0x9
+0430FB04 sqdecb x4, #0x18
+0433FA5D sqdecb fp, #0x12, mul #0x4
+043AF83C sqdecb x28, vl1, mul #0xb
+0432F800 sqdecb x0, pow2, mul #0x3
+0434FA1F sqdecb xzr, #0x10, mul #0x5
+0432F91F sqdecb xzr, vl8, mul #0x3
+0432F85F sqdecb xzr, vl2, mul #0x3

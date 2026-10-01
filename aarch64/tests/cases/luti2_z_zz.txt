@@ -1,0 +1,27 @@
+// luti2_z_zz_16 010|0010|1|i3h=xx|1|Zm=xxxxx|101|i3l=x|10|Zn=xxxxx|Zd=xxxxx
+// Luti2ZZz16: LUTI2  <Zd>.H, { <Zn>.H }, <Zm>[<index>]
+// read together by <index>: i3h, i3l
+// register fields: Zm, Zn, Zd
+4520A800 luti2 z0.h, {z0.h}, z0[0]
+4520A807 luti2 z7.h, {z0.h}, z0[0]
+4520A80E luti2 z14.h, {z0.h}, z0[0]
+457FBBFF luti2 z31.h, {z31.h}, z31[3]
+45A0A800 luti2 z0.h, {z0.h}, z0[4]
+45E0A800 luti2 z0.h, {z0.h}, z0[6]
+4520B800 luti2 z0.h, {z0.h}, z0[1]
+4560A800 luti2 z0.h, {z0.h}, z0[2]
+45A0B800 luti2 z0.h, {z0.h}, z0[5]
+45E0B800 luti2 z0.h, {z0.h}, z0[7]
+4521A843 luti2 z3.h, {z2.h}, z1[0]
+
+// luti2_z_zz_8 010|0010|1|i2=xx|1|Zm=xxxxx|101|100|Zn=xxxxx|Zd=xxxxx
+// Luti2ZZz8: LUTI2  <Zd>.B, { <Zn>.B }, <Zm>[<index>]
+// register fields: Zm, Zn, Zd
+4520B003 luti2 z3.b, {z0.b}, z0[0]
+4520B00A luti2 z10.b, {z0.b}, z0[0]
+4520B011 luti2 z17.b, {z0.b}, z0[0]
+457FB3E0 luti2 z0.b, {z31.b}, z31[1]
+45A0B01F luti2 z31.b, {z0.b}, z0[2]
+45E0B003 luti2 z3.b, {z0.b}, z0[3]
+4520B000 luti2 z0.b, {z0.b}, z0[0]
+4521B043 luti2 z3.b, {z2.b}, z1[0]

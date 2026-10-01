@@ -1,0 +1,12 @@
+// SETEND_A1 1111|0|00|10000|imod=(0)(0)|M=(0)|op=1|(0)(0)(0)(0)(0)(0)|E=x|A=(0)|I=0|F=0|0|mode=0(0)(0)(0)(0)
+// SetendA1: SETEND{<q>}  <endian_specifier>
+// Binary Ninja's tests
+f1010000 setend le
+f1010200 setend be
+F107FD0F setend le (unpredictable)
+F1098008 setend le (unpredictable)
+F10D4004 setend le (unpredictable)
+F1012002 setend le (unpredictable)
+F1011001 setend le (unpredictable)
+F1010800 setend le (unpredictable)
+F1010400 setend le (unpredictable)

@@ -1,0 +1,15 @@
+// usdot_z_zzz_s 010|0010|0|size=10|0|Zm=xxxxx|0|11110|Zn=xxxxx|Zda=xxxxx
+// UsdotZZzzS: USDOT  <Zda>.S, <Zn>.B, <Zm>.B
+// register fields: Zm, Zn, Zda
+44867AE2 usdot z2.s, z23.b, z6.b
+44897B5E usdot z30.s, z26.b, z9.b
+44917B12 usdot z18.s, z24.b, z17.b
+44817A62 usdot z2.s, z19.b, z1.b
+44967839 usdot z25.s, z1.b, z22.b
+449B7A20 usdot z0.s, z17.b, z27.b
+448E7889 usdot z9.s, z4.b, z14.b
+4482787F usdot z31.s, z3.b, z2.b
+44807802 usdot z2.s, z0.b, z0.b
+449F7BE2 usdot z2.s, z31.b, z31.b
+44867AE6 usdot z6.s, z23.b, z6.b
+44867AF7 usdot z23.s, z23.b, z6.b

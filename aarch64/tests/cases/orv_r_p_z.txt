@@ -1,0 +1,27 @@
+// orv_r_p_z_ 000|0010|0|size=xx|0|110|opc=00|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// OrvRPZ: ORV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+04582949 orv h9, p2, z10.h
+04582301 orv h1, p0, z24.h
+04183B9F orv b31, p6, z28.b
+04182DC9 orv b9, p3, z14.b
+04183BB1 orv b17, p6, z29.b
+04D83D8A orv d10, p7, z12.d
+04D83436 orv d22, p5, z1.d
+04182A90 orv b16, p2, z20.b
+04D82125 orv d5, p0, z9.d
+04D82EFF orv d31, p3, z23.d
+04983FBF orv s31, p7, z29.s
+04583B92 orv h18, p6, z28.h
+049834F0 orv s16, p5, z7.s
+04183ADB orv b27, p6, z22.b
+04583642 orv h2, p5, z18.h
+04582178 orv h24, p0, z11.h
+04582400 orv h0, p1, z0.h
+045833E9 orv h9, p4, z31.h
+04182840 orv b0, p2, z2.b
+0458295F orv h31, p2, z10.h
+04982940 orv s0, p2, z10.s
+04D82940 orv d0, p2, z10.d
+04582942 orv h2, p2, z10.h

@@ -1,0 +1,23 @@
+// famin_mz_zzw_2x2 1|10|0000|1|size=xx|1|Zm=xxxx|0101100|010|opc=10|Zdn=xxxx|o2=1
+// FaminMzZzw2x2: FAMIN  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Zm, Zdn
+C160B145 famin {z4.h-z5.h}, {z4.h-z5.h}, {z0.h-z1.h}
+C160B153 famin {z18.h-z19.h}, {z18.h-z19.h}, {z0.h-z1.h}
+C162B141 famin {z0.h-z1.h}, {z0.h-z1.h}, {z2.h-z3.h}
+C1BEB15F famin {z30.s-z31.s}, {z30.s-z31.s}, {z30.s-z31.s}
+C1E0B145 famin {z4.d-z5.d}, {z4.d-z5.d}, {z0.d-z1.d}
+C120B145 UNDEFINED
+
+// famin_mz_zzw_4x4 1|10|0000|1|size=xx|1|Zm=xxx|00101110|010|opc=10|Zdn=xxx|0|o2=1
+// FaminMzZzw4x4: FAMIN  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Zm, Zdn
+C160B941 famin {z0.h-z3.h}, {z0.h-z3.h}, {z0.h-z3.h}
+C160B95D famin {z28.h-z31.h}, {z28.h-z31.h}, {z0.h-z3.h}
+C164B955 famin {z20.h-z23.h}, {z20.h-z23.h}, {z4.h-z7.h}
+C1A8B945 famin {z4.s-z7.s}, {z4.s-z7.s}, {z8.s-z11.s}
+C1ECB949 famin {z8.d-z11.d}, {z8.d-z11.d}, {z12.d-z15.d}
+C170B94D famin {z12.h-z15.h}, {z12.h-z15.h}, {z16.h-z19.h}
+C174B951 famin {z16.h-z19.h}, {z16.h-z19.h}, {z20.h-z23.h}
+C178B959 famin {z24.h-z27.h}, {z24.h-z27.h}, {z24.h-z27.h}
+C17CB941 famin {z0.h-z3.h}, {z0.h-z3.h}, {z28.h-z31.h}
+C120B941 UNDEFINED

@@ -1,0 +1,91 @@
+// TBX_asimdtbl_L1_1 0|Q=x|001110|op2=00|0|Rm=xxxxx|0|len=00|op=1|00|Rn=xxxxx|Rd=xxxxx
+// TbxAsimdtblL11: TBX  <Vd>.<Ta>, { <Vn>.16B }, <Vm>.<Ta>
+// register fields: Rm, Rn, Rd
+0E061044 tbx v4.8b, {v2.16b}, v6.8b
+4E0C12FB tbx v27.16b, {v23.16b}, v12.16b
+4E0911A8 tbx v8.16b, {v13.16b}, v9.16b
+4E1912BA tbx v26.16b, {v21.16b}, v25.16b
+0E0A13B0 tbx v16.8b, {v29.16b}, v10.8b
+4E1011E4 tbx v4.16b, {v15.16b}, v16.16b
+0E0213E7 tbx v7.8b, {v31.16b}, v2.8b
+0E0C11E1 tbx v1.8b, {v15.16b}, v12.8b
+0E1F1220 tbx v0.8b, {v17.16b}, v31.8b
+4E0D1226 tbx v6.16b, {v17.16b}, v13.16b
+4E0D1162 tbx v2.16b, {v11.16b}, v13.16b
+0E1913B2 tbx v18.8b, {v29.16b}, v25.8b
+0E12114E tbx v14.8b, {v10.16b}, v18.8b
+0E08112C tbx v12.8b, {v9.16b}, v8.8b
+0E19123D tbx v29.8b, {v17.16b}, v25.8b
+4E14115D tbx v29.16b, {v10.16b}, v20.16b
+0E00101F tbx v31.8b, {v0.16b}, v0.8b
+0E061046 tbx v6.8b, {v2.16b}, v6.8b
+0E061042 tbx v2.8b, {v2.16b}, v6.8b
+
+// TBX_asimdtbl_L2_2 0|Q=x|001110|op2=00|0|Rm=xxxxx|0|len=01|op=1|00|Rn=xxxxx|Rd=xxxxx
+// TbxAsimdtblL22: TBX  <Vd>.<Ta>, { <Vn>.16B, <Vn+1>.16B }, <Vm>.<Ta>
+// register fields: Rm, Rn, Rd
+0E1D3262 tbx v2.8b, {v19.16b, v20.16b}, v29.8b
+0E0F3273 tbx v19.8b, {v19.16b, v20.16b}, v15.8b
+0E0630CB tbx v11.8b, {v6.16b, v7.16b}, v6.8b
+4E0A31C1 tbx v1.16b, {v14.16b, v15.16b}, v10.16b
+4E1F3045 tbx v5.16b, {v2.16b, v3.16b}, v31.16b
+0E1E33D0 tbx v16.8b, {v30.16b, v31.16b}, v30.8b
+0E0C30B5 tbx v21.8b, {v5.16b, v6.16b}, v12.8b
+4E073034 tbx v20.16b, {v1.16b, v2.16b}, v7.16b
+0E0A33F7 tbx v23.8b, {v31.16b, v0.16b}, v10.8b
+0E0C325E tbx v30.8b, {v18.16b, v19.16b}, v12.8b
+0E0031E3 tbx v3.8b, {v15.16b, v16.16b}, v0.8b
+0E1431A2 tbx v2.8b, {v13.16b, v14.16b}, v20.8b
+0E1F3373 tbx v19.8b, {v27.16b, v28.16b}, v31.8b
+0E1433BF tbx v31.8b, {v29.16b, v30.16b}, v20.8b
+4E183307 tbx v7.16b, {v24.16b, v25.16b}, v24.16b
+0E1533CC tbx v12.8b, {v30.16b, v31.16b}, v21.8b
+0E1D3000 tbx v0.8b, {v0.16b, v1.16b}, v29.8b
+0E1D327D tbx v29.8b, {v19.16b, v20.16b}, v29.8b
+
+// TBX_asimdtbl_L3_3 0|Q=x|001110|op2=00|0|Rm=xxxxx|0|len=10|op=1|00|Rn=xxxxx|Rd=xxxxx
+// TbxAsimdtblL33: TBX  <Vd>.<Ta>, { <Vn>.16B, <Vn+1>.16B, <Vn+2>.16B }, <Vm>.<Ta>
+// register fields: Rm, Rn, Rd
+4E055339 tbx v25.16b, {v25.16b, v26.16b, v27.16b}, v5.16b
+0E1351A8 tbx v8.8b, {v13.16b, v14.16b, v15.16b}, v19.8b
+0E1D520F tbx v15.8b, {v16.16b, v17.16b, v18.16b}, v29.8b
+0E065369 tbx v9.8b, {v27.16b, v28.16b, v29.16b}, v6.8b
+0E0450D9 tbx v25.8b, {v6.16b, v7.16b, v8.16b}, v4.8b
+0E0D5358 tbx v24.8b, {v26.16b, v27.16b, v28.16b}, v13.8b
+0E12535C tbx v28.8b, {v26.16b, v27.16b, v28.16b}, v18.8b
+0E015044 tbx v4.8b, {v2.16b, v3.16b, v4.16b}, v1.8b
+4E155325 tbx v5.16b, {v25.16b, v26.16b, v27.16b}, v21.16b
+4E0A50A3 tbx v3.16b, {v5.16b, v6.16b, v7.16b}, v10.16b
+0E1551B8 tbx v24.8b, {v13.16b, v14.16b, v15.16b}, v21.8b
+4E155125 tbx v5.16b, {v9.16b, v10.16b, v11.16b}, v21.16b
+4E0A5380 tbx v0.16b, {v28.16b, v29.16b, v30.16b}, v10.16b
+0E135129 tbx v9.8b, {v9.16b, v10.16b, v11.16b}, v19.8b
+0E0E5335 tbx v21.8b, {v25.16b, v26.16b, v27.16b}, v14.8b
+4E0E51D2 tbx v18.16b, {v14.16b, v15.16b, v16.16b}, v14.16b
+4E00501F tbx v31.16b, {v0.16b, v1.16b, v2.16b}, v0.16b
+4E1F53F9 tbx v25.16b, {v31.16b, v0.16b, v1.16b}, v31.16b
+4E055325 tbx v5.16b, {v25.16b, v26.16b, v27.16b}, v5.16b
+
+// TBX_asimdtbl_L4_4 0|Q=x|001110|op2=00|0|Rm=xxxxx|0|len=11|op=1|00|Rn=xxxxx|Rd=xxxxx
+// TbxAsimdtblL44: TBX  <Vd>.<Ta>, { <Vn>.16B, <Vn+1>.16B, <Vn+2>.16B, <Vn+3>.16B }, <Vm>.<Ta>
+// register fields: Rm, Rn, Rd
+4E197385 tbx v5.16b, {v28.16b, v29.16b, v30.16b, v31.16b}, v25.16b
+0E0373A8 tbx v8.8b, {v29.16b, v30.16b, v31.16b, v0.16b}, v3.8b
+0E0C722E tbx v14.8b, {v17.16b, v18.16b, v19.16b, v20.16b}, v12.8b
+4E0371BB tbx v27.16b, {v13.16b, v14.16b, v15.16b, v16.16b}, v3.16b
+0E147272 tbx v18.8b, {v19.16b, v20.16b, v21.16b, v22.16b}, v20.8b
+0E1D713F tbx v31.8b, {v9.16b, v10.16b, v11.16b, v12.16b}, v29.8b
+4E167028 tbx v8.16b, {v1.16b, v2.16b, v3.16b, v4.16b}, v22.16b
+0E1071A7 tbx v7.8b, {v13.16b, v14.16b, v15.16b, v16.16b}, v16.8b
+4E0B72C2 tbx v2.16b, {v22.16b, v23.16b, v24.16b, v25.16b}, v11.16b
+0E1F72EA tbx v10.8b, {v23.16b, v24.16b, v25.16b, v26.16b}, v31.8b
+4E087009 tbx v9.16b, {v0.16b, v1.16b, v2.16b, v3.16b}, v8.16b
+0E17705F tbx v31.8b, {v2.16b, v3.16b, v4.16b, v5.16b}, v23.8b
+0E1172A0 tbx v0.8b, {v21.16b, v22.16b, v23.16b, v24.16b}, v17.8b
+4E017249 tbx v9.16b, {v18.16b, v19.16b, v20.16b, v21.16b}, v1.16b
+0E1172E7 tbx v7.8b, {v23.16b, v24.16b, v25.16b, v26.16b}, v17.8b
+4E127068 tbx v8.16b, {v3.16b, v4.16b, v5.16b, v6.16b}, v18.16b
+4E0073E5 tbx v5.16b, {v31.16b, v0.16b, v1.16b, v2.16b}, v0.16b
+4E197325 tbx v5.16b, {v25.16b, v26.16b, v27.16b, v28.16b}, v25.16b
+4E197399 tbx v25.16b, {v28.16b, v29.16b, v30.16b, v31.16b}, v25.16b
+4E19739C tbx v28.16b, {v28.16b, v29.16b, v30.16b, v31.16b}, v25.16b

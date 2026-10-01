@@ -1,0 +1,19 @@
+// whilege_p_p_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|00|0|sf=x|U=0|lt=0|Rn=xxxxx|eq=0|Pd=xxxx
+// WhilegePPRr: WHILEGE  <Pd>.<T>, <n>, <m>
+// read together by <n>: sf, Rn
+// read together by <m>: Rm, sf
+// register fields: Rm, Rn, Pd
+25B510C1 whilege p1.s, x6, x21
+252C10C1 whilege p1.b, x6, x12
+256401ED whilege p13.h, w15, w4
+257C116F whilege p15.h, x11, x28
+256A03A3 whilege p3.h, w29, w10
+25AB128B whilege p11.s, x20, x11
+25FF13A3 whilege p3.d, fp, xzr
+253D0384 whilege p4.b, w28, w29
+25A01000 whilege p0.s, x0, x0
+25B513E1 whilege p1.s, xzr, x21
+25A000C1 whilege p1.s, w6, w0
+25BF00C1 whilege p1.s, w6, wzr
+25B50001 whilege p1.s, w0, w21
+25B503E1 whilege p1.s, wzr, w21

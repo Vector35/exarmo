@@ -1,0 +1,39 @@
+// cnt_z_p_z_m 000|0010|0|size=xx|0|M=1|1|opc=010|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// CntZPZM: CNT  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+049AB99E cnt z30.s, p6/m, z12.s
+041AAC10 cnt z16.b, p3/m, z0.b
+04DAA07B cnt z27.d, p0/m, z3.d
+041AA1B6 cnt z22.b, p0/m, z13.b
+04DAB1A8 cnt z8.d, p4/m, z13.d
+04DAA753 cnt z19.d, p1/m, z26.d
+045AA533 cnt z19.h, p1/m, z9.h
+04DABF0E cnt z14.d, p7/m, z24.d
+04DAB438 cnt z24.d, p5/m, z1.d
+049AA548 cnt z8.s, p1/m, z10.s
+049AAF13 cnt z19.s, p3/m, z24.s
+041AA32D cnt z13.b, p0/m, z25.b
+045AA1F5 cnt z21.h, p0/m, z15.h
+045AB48C cnt z12.h, p5/m, z4.h
+049AB65A cnt z26.s, p5/m, z18.s
+04DAB128 cnt z8.d, p4/m, z9.d
+049AABE0 cnt z0.s, p2/m, z31.s
+049AB99F cnt z31.s, p6/m, z12.s
+049AB8DE cnt z30.s, p6/m, z6.s
+049AB986 cnt z6.s, p6/m, z12.s
+049AB98C cnt z12.s, p6/m, z12.s
+
+// cnt_z_p_z_z 000|0010|0|size=xx|0|M=0|1|opc=010|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// CntZPZZ: CNT  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+040AA001 cnt z1.b, p0/z, z0.b
+040AA008 cnt z8.b, p0/z, z0.b
+040AA00F cnt z15.b, p0/z, z0.b
+044AA7E0 cnt z0.h, p1/z, z31.h
+048AA81F cnt z31.s, p2/z, z0.s
+04CAAC01 cnt z1.d, p3/z, z0.d
+040AB001 cnt z1.b, p4/z, z0.b
+040AB401 cnt z1.b, p5/z, z0.b
+040AB801 cnt z1.b, p6/z, z0.b
+040ABC01 cnt z1.b, p7/z, z0.b
+040AA000 cnt z0.b, p0/z, z0.b

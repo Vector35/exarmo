@@ -1,0 +1,21 @@
+// PACGA_64P_dp_2src sf=1|0|S=0|1|101|0110|Rm=xxxxx|opcode=001100|Rn=xxxxx|Rd=xxxxx
+// Pacga64pDp2src: PACGA  <Xd>, <Xn>, <Xm|SP>
+// register fields: Rm, Rn, Rd
+9AD03137 pacga x23, x9, x16
+9AD932A6 pacga x6, x21, x25
+9AC730D5 pacga x21, x6, x7
+9ACE335A pacga x26, x26, x14
+9ADA3227 pacga x7, x17, x26
+9ACB30C1 pacga x1, x6, x11
+9ADC3153 pacga x19, x10, x28
+9AC63371 pacga x17, x27, x6
+9ADF30EE pacga x14, x7, sp
+9ADE33D2 pacga x18, lr, lr
+9ADC332A pacga x10, x25, x28
+9ACB31C2 pacga x2, x14, x11
+9ACA3314 pacga x20, x24, x10
+9ACE3301 pacga x1, x24, x14
+9ACB31EC pacga x12, x15, x11
+9AD6325B pacga x27, x18, x22
+9AC03000 pacga x0, x0, x0
+9AD033FF pacga xzr, xzr, x16

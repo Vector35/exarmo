@@ -1,0 +1,16 @@
+// ld3q_z_p_br_contiguous 101|0010|num=10|01|Rm=xxxxx|100|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld3qZPBrContiguous: LD3Q  { <Zt1>.Q, <Zt2>.Q, <Zt3>.Q }, <Pg>/Z, [<Xn|SP>, <Xm>, LSL #4]
+// register fields: Rm, Pg, Rn, Zt
+A5208001 ld3q {z1.q, z2.q, z3.q}, p0/z, [x0, x0, lsl #4]
+A5208008 ld3q {z8.q, z9.q, z10.q}, p0/z, [x0, x0, lsl #4]
+A520800F ld3q {z15.q, z16.q, z17.q}, p0/z, [x0, x0, lsl #4]
+A52087E0 ld3q {z0.q, z1.q, z2.q}, p1/z, [sp, x0, lsl #0x4]
+A520881F ld3q {z31.q, z0.q, z1.q}, p2/z, [x0, x0, lsl #0x4]
+A5208C01 ld3q {z1.q, z2.q, z3.q}, p3/z, [x0, x0, lsl #0x4]
+A5209001 ld3q {z1.q, z2.q, z3.q}, p4/z, [x0, x0, lsl #0x4]
+A5209401 ld3q {z1.q, z2.q, z3.q}, p5/z, [x0, x0, lsl #0x4]
+A5209801 ld3q {z1.q, z2.q, z3.q}, p6/z, [x0, x0, lsl #0x4]
+A5209C01 ld3q {z1.q, z2.q, z3.q}, p7/z, [x0, x0, lsl #0x4]
+A53F8001 UNALLOCATED
+A5208000 ld3q {z0.q, z1.q, z2.q}, p0/z, [x0, x0, lsl #0x4]
+A5218864 ld3q {z4.q, z5.q, z6.q}, p2/z, [x3, x1, lsl #0x4]

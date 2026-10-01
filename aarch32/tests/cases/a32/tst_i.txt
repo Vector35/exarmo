@@ -1,0 +1,28 @@
+// TST_i_A1 cond=xxxx|00|1|10|opc=00|1|Rn=xxxx|(0)(0)(0)(0)|imm12=xxxxxxxxxxxx
+// TstIA1: TST{<c>}{<q>}  <Rn>, #<const>
+// register fields: Rn
+b3144734 tstlt r4, #13631488 (unpredictable)
+031325cf tsteq r3, #868220928 (unpredictable)
+631002ad tstvs r0, #3489660938
+631a964e tstvs r10, #81788928 (unpredictable)
+d31feb12 tstle pc, #18432 (unpredictable)
+b31e23b0 tstlt lr, #3221225474 (unpredictable)
+c315fb3c tstgt r5, #61440 (unpredictable)
+0319bdd0 tsteq r9, #13312 (unpredictable)
+// Binary Ninja's tests
+e3150a0f tst r5, #61440
+F31325CF UNDEFINED
+83148000 tsthi r4, #0x0 (unpredictable)
+43141FFF tstmi r4, #0x3fc (unpredictable)
+23144800 tstcs r4, #0x0 (unpredictable)
+13144400 tstne r4, #0x0 (unpredictable)
+B3144200 tstlt r4, #0x0 (unpredictable)
+B3144100 tstlt r4, #0x0 (unpredictable)
+B3144080 tstlt r4, #0x80 (unpredictable)
+B3144040 tstlt r4, #0x40 (unpredictable)
+B3144020 tstlt r4, #0x20 (unpredictable)
+B3144010 tstlt r4, #0x10 (unpredictable)
+B3144008 tstlt r4, #0x8 (unpredictable)
+B3144004 tstlt r4, #0x4 (unpredictable)
+B3144002 tstlt r4, #0x2 (unpredictable)
+B3144001 tstlt r4, #0x1 (unpredictable)

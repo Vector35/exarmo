@@ -1,0 +1,24 @@
+// sclamp_mz_zz_2 1|10|0000|1|size=xx|1|Zm=xxxxx|110|001|Zn=xxxxx|Zd=xxxx|U=0
+// SclampMzZz2: SCLAMP  { <Zd1>.<T>-<Zd2>.<T> }, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+C120C402 sclamp {z2.b-z3.b}, z0.b, z0.b
+C120C410 sclamp {z16.b-z17.b}, z0.b, z0.b
+C120C41E sclamp {z30.b-z31.b}, z0.b, z0.b
+C17FC7E0 sclamp {z0.h-z1.h}, z31.h, z31.h
+C1A0C402 sclamp {z2.s-z3.s}, z0.s, z0.s
+C1E0C402 sclamp {z2.d-z3.d}, z0.d, z0.d
+C120C400 sclamp {z0.b-z1.b}, z0.b, z0.b
+C121C446 sclamp {z6.b-z7.b}, z2.b, z1.b
+
+// sclamp_mz_zz_4 1|10|0000|1|size=xx|1|Zm=xxxxx|110|011|Zn=xxxxx|Zd=xxx|0|U=0
+// SclampMzZz4: SCLAMP  { <Zd1>.<T>-<Zd4>.<T> }, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+C120CC0C sclamp {z12.b-z15.b}, z0.b, z0.b
+C120CC28 sclamp {z8.b-z11.b}, z1.b, z0.b
+C120CC44 sclamp {z4.b-z7.b}, z2.b, z0.b
+C17FCFE0 sclamp {z0.h-z3.h}, z31.h, z31.h
+C1A0CC10 sclamp {z16.s-z19.s}, z0.s, z0.s
+C1E0CC14 sclamp {z20.d-z23.d}, z0.d, z0.d
+C120CC18 sclamp {z24.b-z27.b}, z0.b, z0.b
+C120CC1C sclamp {z28.b-z31.b}, z0.b, z0.b
+C120CC00 sclamp {z0.b-z3.b}, z0.b, z0.b

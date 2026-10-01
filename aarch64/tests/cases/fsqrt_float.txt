@@ -1,0 +1,65 @@
+// FSQRT_D_floatdp1 M=0|0|S=0|11110|ftype=01|10000|opc=11|10000|Rn=xxxxx|Rd=xxxxx
+// FsqrtDFloatdp1: FSQRT  <Dd>, <Dn>
+// register fields: Rn, Rd
+1E61C26A fsqrt d10, d19
+1E61C0FA fsqrt d26, d7
+1E61C085 fsqrt d5, d4
+1E61C218 fsqrt d24, d16
+1E61C287 fsqrt d7, d20
+1E61C286 fsqrt d6, d20
+1E61C388 fsqrt d8, d28
+1E61C1E5 fsqrt d5, d15
+1E61C258 fsqrt d24, d18
+1E61C0BC fsqrt d28, d5
+1E61C1A8 fsqrt d8, d13
+1E61C3D1 fsqrt d17, d30
+1E61C3BC fsqrt d28, d29
+1E61C18C fsqrt d12, d12
+1E61C3D0 fsqrt d16, d30
+1E61C3B2 fsqrt d18, d29
+1E61C000 fsqrt d0, d0
+1E61C3FF fsqrt d31, d31
+
+// FSQRT_H_floatdp1 M=0|0|S=0|11110|ftype=11|10000|opc=11|10000|Rn=xxxxx|Rd=xxxxx
+// FsqrtHFloatdp1: FSQRT  <Hd>, <Hn>
+// register fields: Rn, Rd
+1EE1C1F3 fsqrt h19, h15
+1EE1C1BA fsqrt h26, h13
+1EE1C219 fsqrt h25, h16
+1EE1C3B8 fsqrt h24, h29
+1EE1C3B3 fsqrt h19, h29
+1EE1C0AF fsqrt h15, h5
+1EE1C261 fsqrt h1, h19
+1EE1C265 fsqrt h5, h19
+1EE1C3A9 fsqrt h9, h29
+1EE1C38D fsqrt h13, h28
+1EE1C094 fsqrt h20, h4
+1EE1C12F fsqrt h15, h9
+1EE1C1A9 fsqrt h9, h13
+1EE1C0A1 fsqrt h1, h5
+1EE1C246 fsqrt h6, h18
+1EE1C1D8 fsqrt h24, h14
+1EE1C000 fsqrt h0, h0
+1EE1C3FF fsqrt h31, h31
+
+// FSQRT_S_floatdp1 M=0|0|S=0|11110|ftype=00|10000|opc=11|10000|Rn=xxxxx|Rd=xxxxx
+// FsqrtSFloatdp1: FSQRT  <Sd>, <Sn>
+// register fields: Rn, Rd
+1E21C215 fsqrt s21, s16
+1E21C0A6 fsqrt s6, s5
+1E21C176 fsqrt s22, s11
+1E21C166 fsqrt s6, s11
+1E21C037 fsqrt s23, s1
+1E21C2A3 fsqrt s3, s21
+1E21C03C fsqrt s28, s1
+1E21C30B fsqrt s11, s24
+1E21C119 fsqrt s25, s8
+1E21C074 fsqrt s20, s3
+1E21C113 fsqrt s19, s8
+1E21C3DE fsqrt s30, s30
+1E21C146 fsqrt s6, s10
+1E21C072 fsqrt s18, s3
+1E21C008 fsqrt s8, s0
+1E21C3D5 fsqrt s21, s30
+1E21C3E0 fsqrt s0, s31
+1E21C21F fsqrt s31, s16

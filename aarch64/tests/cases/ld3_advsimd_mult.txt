@@ -1,0 +1,74 @@
+// LD3_asisdlse_R3 0|Q=x|00|1|1|0|00|L=1|000000|opcode=0100|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld3AsisdlseR3: LD3  { <Vt>.<T>, <Vt2>.<T>, <Vt3>.<T> }, [<Xn|SP>]
+// read together by <T>: Q, size
+// register fields: Rn, Rt
+4C4043AC ld3 {v12.16b, v13.16b, v14.16b}, [fp]
+4C404DA6 ld3 {v6.2d, v7.2d, v8.2d}, [x13]
+4C404FA0 ld3 {v0.2d, v1.2d, v2.2d}, [fp]
+4C404785 ld3 {v5.8h, v6.8h, v7.8h}, [x28]
+0C40471D ld3 {v29.4h, v30.4h, v31.4h}, [x24]
+0C4044A2 ld3 {v2.4h, v3.4h, v4.4h}, [x5]
+0C4047C9 ld3 {v9.4h, v10.4h, v11.4h}, [lr]
+0C404502 ld3 {v2.4h, v3.4h, v4.4h}, [x8]
+0C4040D5 ld3 {v21.8b, v22.8b, v23.8b}, [x6]
+4C404919 ld3 {v25.4s, v26.4s, v27.4s}, [x8]
+0C40463C ld3 {v28.4h, v29.4h, v30.4h}, [x17]
+4C40454E ld3 {v14.8h, v15.8h, v16.8h}, [x10]
+0C40414E ld3 {v14.8b, v15.8b, v16.8b}, [x10]
+4C40490D ld3 {v13.4s, v14.4s, v15.4s}, [x8]
+4C40468C ld3 {v12.8h, v13.8h, v14.8h}, [x20]
+0C404150 ld3 {v16.8b, v17.8b, v18.8b}, [x10]
+4C40401F ld3 {v31.16b, v0.16b, v1.16b}, [x0]
+4C4043EC ld3 {v12.16b, v13.16b, v14.16b}, [sp]
+0C404BBD ld3 {v29.2s, v30.2s, v31.2s}, [fp]
+0C404FAC UNDEFINED
+
+// LD3_asisdlsep_I3_i 0|Q=x|0011001|L=1|0|Rm=11111|opcode=0100|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld3AsisdlsepI3I: LD3  { <Vt>.<T>, <Vt2>.<T>, <Vt3>.<T> }, [<Xn|SP>], <imm>
+// read together by <T>: Q, size
+// register fields: Rn, Rt
+4CDF47A5 ld3 {v5.8h, v6.8h, v7.8h}, [fp], #0x30
+0CDF4A80 ld3 {v0.2s, v1.2s, v2.2s}, [x20], #0x18
+0CDF41D4 ld3 {v20.8b, v21.8b, v22.8b}, [x14], #0x18
+0CDF4723 ld3 {v3.4h, v4.4h, v5.4h}, [x25], #0x18
+0CDF45D0 ld3 {v16.4h, v17.4h, v18.4h}, [x14], #0x18
+4CDF496A ld3 {v10.4s, v11.4s, v12.4s}, [x11], #0x30
+4CDF4CFC ld3 {v28.2d, v29.2d, v30.2d}, [x7], #0x30
+4CDF40EB ld3 {v11.16b, v12.16b, v13.16b}, [x7], #0x30
+4CDF4432 ld3 {v18.8h, v19.8h, v20.8h}, [x1], #0x30
+4CDF45FC ld3 {v28.8h, v29.8h, v30.8h}, [x15], #0x30
+4CDF4214 ld3 {v20.16b, v21.16b, v22.16b}, [x16], #0x30
+0CDF46E8 ld3 {v8.4h, v9.4h, v10.4h}, [x23], #0x18
+0CDF469C ld3 {v28.4h, v29.4h, v30.4h}, [x20], #0x18
+4CDF4987 ld3 {v7.4s, v8.4s, v9.4s}, [x12], #0x30
+0CDF40A1 ld3 {v1.8b, v2.8b, v3.8b}, [x5], #0x18
+4CDF4633 ld3 {v19.8h, v20.8h, v21.8h}, [x17], #0x30
+4CDF441F ld3 {v31.8h, v0.8h, v1.8h}, [x0], #0x30
+4CDF47E5 ld3 {v5.8h, v6.8h, v7.8h}, [sp], #0x30
+0CDF4FA5 UNDEFINED
+4CDF47BD ld3 {v29.8h, v30.8h, v31.8h}, [fp], #0x30
+
+// LD3_asisdlsep_R3_r 0|Q=x|0011001|L=1|0|Rm=xxxxx|opcode=0100|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld3AsisdlsepR3R: LD3  { <Vt>.<T>, <Vt2>.<T>, <Vt3>.<T> }, [<Xn|SP>], <Xm>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rt
+4CDD481A ld3 {v26.4s, v27.4s, v28.4s}, [x0], fp
+4CCD440D ld3 {v13.8h, v14.8h, v15.8h}, [x0], x13
+4CD24999 ld3 {v25.4s, v26.4s, v27.4s}, [x12], x18
+4CCF4C0F ld3 {v15.2d, v16.2d, v17.2d}, [x0], x15
+4CD949F1 ld3 {v17.4s, v18.4s, v19.4s}, [x15], x25
+4CC74ED3 ld3 {v19.2d, v20.2d, v21.2d}, [x22], x7
+4CDA418D ld3 {v13.16b, v14.16b, v15.16b}, [x12], x26
+4CDD4F53 ld3 {v19.2d, v20.2d, v21.2d}, [x26], fp
+0CCB46CB ld3 {v11.4h, v12.4h, v13.4h}, [x22], x11
+4CC7414B ld3 {v11.16b, v12.16b, v13.16b}, [x10], x7
+4CCC4445 ld3 {v5.8h, v6.8h, v7.8h}, [x2], x12
+0CCD4B2F ld3 {v15.2s, v16.2s, v17.2s}, [x25], x13
+4CD24538 ld3 {v24.8h, v25.8h, v26.8h}, [x9], x18
+0CCA4185 ld3 {v5.8b, v6.8b, v7.8b}, [x12], x10
+0CD64B4E ld3 {v14.2s, v15.2s, v16.2s}, [x26], x22
+0CD84842 ld3 {v2.2s, v3.2s, v4.2s}, [x2], x24
+4CC04BE0 ld3 {v0.4s, v1.4s, v2.4s}, [sp], x0
+4CDD481F ld3 {v31.4s, v0.4s, v1.4s}, [x0], fp
+0CDD4C1A UNDEFINED
+4CDD4BBA ld3 {v26.4s, v27.4s, v28.4s}, [fp], fp

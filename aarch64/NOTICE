@@ -1,0 +1,15 @@
+exarmo-aarch64
+Copyright 2026 Vector 35 Inc.
+
+The intrinsic table in src/generated/ is derived from the Advanced SIMD
+intrinsic database of the Arm C Language Extensions,
+tools/intrinsic_db/advsimd.csv in https://github.com/ARM-software/acle, at
+the commit src/generated/provenance.rs records. That database carries these
+notices:
+
+    SPDX-FileCopyrightText: Copyright 2014-2026 Arm Limited <open-source-office@arm.com>
+    SPDX-FileCopyrightText: Copyright 2021 Matt P. Dziubinski <matdzb@gmail.com>
+    SPDX-License-Identifier: Apache-2.0
+
+It is licensed under the Apache License, Version 2.0, a copy of which is in
+LICENSE.

@@ -1,0 +1,17 @@
+// SB_T1 111|10|0|1110|11|(1)(1)(1)(1)|1|0(0)0|(1)|(1)(1)(1)|opc=0111|option=(0)(0)(0)(0)
+// SbT1: SB{<q>}
+f3b9ab7a sb (unpredictable)
+f3b58b7b sb (unpredictable)
+f3b6a07c sb (unpredictable)
+f3b4aa7e sb (unpredictable)
+f3b7ab73 sb (unpredictable)
+f3b38979 sb (unpredictable)
+f3b9a879 sb (unpredictable)
+f3b8897c sb (unpredictable)
+F3B0AC70 sb (unpredictable)
+F3BFAD7F sb (unpredictable)
+F3B2AE78 sb (unpredictable)
+F3B1AF74 sb (unpredictable)
+F3B9AB72 sb (unpredictable)
+F3B9AB71 sb (unpredictable)
+F3BF8F70 sb

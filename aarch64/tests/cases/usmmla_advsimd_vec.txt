@@ -1,0 +1,8 @@
+// USMMLA_asimdsame2_G 0|Q=1|U=0|0|111|0|size=10|0|Rm=xxxxx|1|010|B=1|1|Rn=xxxxx|Rd=xxxxx
+// UsmmlaAsimdsame2G: USMMLA  <Vd>.4S, <Vn>.16B, <Vm>.16B
+// register fields: Rm, Rn, Rd
+4E80AC00 usmmla v0.4s, v0.16b, v0.16b
+4E80AC07 usmmla v7.4s, v0.16b, v0.16b
+4E80AC0E usmmla v14.4s, v0.16b, v0.16b
+4E9FAFFF usmmla v31.4s, v31.16b, v31.16b
+4E81AC43 usmmla v3.4s, v2.16b, v1.16b

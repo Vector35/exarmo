@@ -1,0 +1,48 @@
+// VEOR_T1_D 111|U=1|11110|D=x|size=00|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VeorT1D: VEOR{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff4f2139 veor d18, d15, d25
+ff4d5199 veor d21, d29, d9
+ff40c114 veor d28, d0, d4
+ff0a1195 veor d1, d26, d5
+ff4a51b9 veor d21, d26, d25
+ff45e199 veor d30, d21, d9
+ff45b199 veor d27, d21, d9
+ff0eb19d veor d11, d30, d13
+FF480130 veor d16, d8, d16
+FF44F13F veor d31, d4, d31
+FF428138 veor d24, d2, d24
+FF414132 veor d20, d1, d18
+FF0001B1 veor d0, d16, d17
+FF0FF190 veor d15, d31, d0
+FF4F011F veor d16, d15, d15
+FF4FF130 veor d31, d15, d16
+FF4F213F veor d18, d15, d31
+FF4F2139 [ne] veorne d18, d15, d25
+
+// VEOR_T1_Q 111|U=1|11110|D=x|size=00|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VeorT1Q: VEOR{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff0a21d2 veor q1, q13, q1
+ff0aa176 veor q5, q5, q11
+ff02a17c veor q5, q1, q14
+ff4c61d6 veor q11, q14, q3
+ff42e174 veor q15, q1, q10
+ff0aa156 veor q5, q5, q3
+ff08e17a veor q7, q4, q13
+ff06815e veor q4, q3, q7
+FF0001D0 veor q0, q8, q0
+FF0FF1DF UNDEFINED
+FF0441D8 veor q2, q10, q4
+FF0111D1 UNDEFINED
+FF000150 veor q0, q0, q0
+FF0FF15F UNDEFINED
+FF4001F0 veor q8, q8, q8
+FF4FF1FF UNDEFINED
+FF0A21D2 [ne] veorne q1, q13, q1

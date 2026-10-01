@@ -1,0 +1,91 @@
+// STZG_64Soffset_ldsttags 1101|1|0|0|1|opc=01|1|imm9=xxxxxxxxx|op2=10|Rn=xxxxx|Rt=xxxxx
+// Stzg64soffsetLdsttags: STZG  <Xt|SP>, [<Xn|SP>{, #<simm>}]
+// register fields: Rn, Rt
+D974691C stzg x28, [x8, #-0xba0]
+D97F2B0B stzg x11, [x24, #-0xe0]
+D9730AB7 stzg x23, [x21, #-0xd00]
+D9722A2C stzg x12, [x17, #-0xde0]
+D971FB4B stzg x11, [x26, #-0xe10]
+D969D827 stzg x7, [x1, #0x9d0]
+D97C1ABF stzg sp, [x21, #-0x3f0]
+D974AB63 stzg x3, [x27, #-0xb60]
+D97C4903 stzg x3, [x8, #-0x3c0]
+D970988E stzg x14, [x4, #-0xf70]
+D97D784A stzg x10, [x2, #-0x290]
+D9735B10 stzg x16, [x24, #-0xcb0]
+D96819E1 stzg x1, [x15, #0x810]
+D96CEAC5 stzg x5, [x22, #0xce0]
+D9742B2E stzg x14, [x25, #-0xbe0]
+D968AA7E stzg lr, [x19, #0x8a0]
+D9600800 stzg x0, [x0]
+D97FFBFC stzg x28, [sp, #-0x10]
+D970091C stzg x28, [x8, #-0x1000]
+D968091C stzg x28, [x8, #0x800]
+D964091C stzg x28, [x8, #0x400]
+D962091C stzg x28, [x8, #0x200]
+D961091C stzg x28, [x8, #0x100]
+D960891C stzg x28, [x8, #0x80]
+D960491C stzg x28, [x8, #0x40]
+D960291C stzg x28, [x8, #0x20]
+D960191C stzg x28, [x8, #0x10]
+
+// STZG_64Spost_ldsttags 1101|1|0|0|1|opc=01|1|imm9=xxxxxxxxx|op2=01|Rn=xxxxx|Rt=xxxxx
+// Stzg64spostLdsttags: STZG  <Xt|SP>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+D97825B5 stzg x21, [x13], #-0x7e0
+D97F67EF stzg x15, [sp], #-0xa0
+D970971F stzg sp, [x24], #-0xf70
+D97B2506 stzg x6, [x8], #-0x4e0
+D96526A8 stzg x8, [x21], #0x520
+D96F67C5 stzg x5, [lr], #0xf60
+D97115B1 stzg x17, [x13], #-0xef0
+D96A07C1 stzg x1, [lr], #0xa00
+D96FA62D stzg x13, [x17], #0xfa0
+D97C469D stzg fp, [x20], #-0x3c0
+D96E2549 stzg x9, [x10], #0xe20
+D96FE5EA stzg x10, [x15], #0xfe0
+D979F739 stzg x25, [x25], #-0x610
+D97A7484 stzg x4, [x4], #-0x590
+D9698751 stzg x17, [x26], #0x980
+D97E1690 stzg x16, [x20], #-0x1f0
+D9600400 stzg x0, [x0], #0x0
+D97FF5B5 stzg x21, [x13], #-0x10
+D97005B5 stzg x21, [x13], #-0x1000
+D96805B5 stzg x21, [x13], #0x800
+D96405B5 stzg x21, [x13], #0x400
+D96205B5 stzg x21, [x13], #0x200
+D96105B5 stzg x21, [x13], #0x100
+D96085B5 stzg x21, [x13], #0x80
+D96045B5 stzg x21, [x13], #0x40
+D96025B5 stzg x21, [x13], #0x20
+D96015B5 stzg x21, [x13], #0x10
+
+// STZG_64Spre_ldsttags 1101|1|0|0|1|opc=01|1|imm9=xxxxxxxxx|op2=11|Rn=xxxxx|Rt=xxxxx
+// Stzg64spreLdsttags: STZG  <Xt|SP>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+D96D3E90 stzg x16, [x20, #0xd30]!
+D97ECC6E stzg x14, [x3, #-0x140]!
+D97D3DBC stzg x28, [x13, #-0x2d0]!
+D971EC44 stzg x4, [x2, #-0xe20]!
+D967AEB6 stzg x22, [x21, #0x7a0]!
+D96E0D2D stzg x13, [x9, #0xe00]!
+D967EC66 stzg x6, [x3, #0x7e0]!
+D9604F46 stzg x6, [x26, #0x40]!
+D96DAD06 stzg x6, [x8, #0xda0]!
+D96D2C6C stzg x12, [x3, #0xd20]!
+D9724F58 stzg x24, [x26, #-0xdc0]!
+D9758F5C stzg x28, [x26, #-0xa80]!
+D9612EFB stzg x27, [x23, #0x120]!
+D97F4F34 stzg x20, [x25, #-0xc0]!
+D97D3D47 stzg x7, [x10, #-0x2d0]!
+D96ECFC7 stzg x7, [lr, #0xec0]!
+D9600C00 stzg x0, [x0, #0x0]!
+D97FFFFF stzg sp, [sp, #-0x10]!
+D9700E90 stzg x16, [x20, #-0x1000]!
+D9680E90 stzg x16, [x20, #0x800]!
+D9640E90 stzg x16, [x20, #0x400]!
+D9620E90 stzg x16, [x20, #0x200]!
+D9610E90 stzg x16, [x20, #0x100]!
+D9608E90 stzg x16, [x20, #0x80]!
+D9602E90 stzg x16, [x20, #0x20]!
+D9601E90 stzg x16, [x20, #0x10]!

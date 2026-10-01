@@ -1,0 +1,17 @@
+// UQADD8_T1 111|11010|1|op1=000|Rn=xxxx|1111|Rd=xxxx|0|U=1|H=0|S=1|Rm=xxxx
+// Uqadd8T1: UQADD8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa88f055 uqadd8 r0, r8, r5
+fa8ffd59 uqadd8 sp, pc, r9 (unpredictable)
+fa81f65b uqadd8 r6, r1, r11
+fa8ff250 uqadd8 r2, pc, r0 (unpredictable)
+fa82f955 uqadd8 r9, r2, r5
+fa84ff52 uqadd8 pc, r4, r2 (unpredictable)
+fa83ff57 uqadd8 pc, r3, r7 (unpredictable)
+fa8ff859 uqadd8 r8, pc, r9 (unpredictable)
+FA80F05F uqadd8 r0, r0, pc (unpredictable)
+FA88F855 uqadd8 r8, r8, r5
+FA88F058 uqadd8 r0, r8, r8
+FA88F050 uqadd8 r0, r8, r0
+FA88F055 [ne] uqadd8ne r0, r8, r5

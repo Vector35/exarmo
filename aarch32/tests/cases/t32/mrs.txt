@@ -1,0 +1,13 @@
+// MRS_T1_AS 111|10|0|1111|1|R=x|(1)(1)(1)(1)|1|0(0)0|Rd=xxxx|(0)(0)|0|(0)(0)(0)(0)(0)
+// MrsT1As: MRS{<c>}{<q>}  <Rd>, <spec_reg>
+// register fields: Rd
+// IT state read: condition
+// Binary Ninja's tests
+f3ef8000 mrs r0, apsr
+F3F0AF5F mrs pc, spsr (unpredictable)
+F3E88090 mrs r0, apsr (unpredictable)
+F3E480C8 mrs r0, apsr (unpredictable)
+F3E28004 mrs r0, apsr (unpredictable)
+F3E18002 mrs r0, apsr (unpredictable)
+F3EF8001 mrs r0, apsr (unpredictable)
+F3EF8000 [ne] mrsne r0, apsr

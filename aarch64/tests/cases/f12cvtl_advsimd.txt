@@ -1,0 +1,25 @@
+// F1CVTL_asimdmisc_V 0|Q=x|U=1|01110|size=00|10000|opcode=10111|10|Rn=xxxxx|Rd=xxxxx
+// F1cvtlAsimdmiscV: F1CVTL  <Vd>.8H, <Vn>.<Ta>
+// F1cvtlAsimdmiscV2: F1CVTL2  <Vd>.8H, <Vn>.<Ta>
+// register fields: Rn, Rd
+// form chosen on: Q
+2E217803 f1cvtl v3.8h, v0.8b
+2E21780A f1cvtl v10.8h, v0.8b
+2E217811 f1cvtl v17.8h, v0.8b
+6E217BE0 f1cvtl2 v0.8h, v31.16b
+2E21781F f1cvtl v31.8h, v0.8b
+2E217800 f1cvtl v0.8h, v0.8b
+6E217800 f1cvtl2 v0.8h, v0.16b
+
+// F2CVTL_asimdmisc_V 0|Q=x|U=1|01110|size=01|10000|opcode=10111|10|Rn=xxxxx|Rd=xxxxx
+// F2cvtlAsimdmiscV: F2CVTL  <Vd>.8H, <Vn>.<Ta>
+// F2cvtlAsimdmiscV2: F2CVTL2  <Vd>.8H, <Vn>.<Ta>
+// register fields: Rn, Rd
+// form chosen on: Q
+2E617801 f2cvtl v1.8h, v0.8b
+2E617808 f2cvtl v8.8h, v0.8b
+2E61780F f2cvtl v15.8h, v0.8b
+6E617BE0 f2cvtl2 v0.8h, v31.16b
+2E61781F f2cvtl v31.8h, v0.8b
+2E617800 f2cvtl v0.8h, v0.8b
+6E617800 f2cvtl2 v0.8h, v0.16b

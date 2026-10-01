@@ -1,0 +1,14 @@
+// uqcvtn_z_mz4_ 1|10|0000|1|sz=x|op=0|1|100|11|111000|Zn=xxx|N=1|U=1|Zd=xxxxx
+// UqcvtnZMz4: UQCVTN  <Zd>.<T>, { <Zn1>.<Tb>-<Zn4>.<Tb> }
+// register fields: Zn, Zd
+C133E061 uqcvtn z1.b, {z0.s-z3.s}
+C133E068 uqcvtn z8.b, {z0.s-z3.s}
+C133E06F uqcvtn z15.b, {z0.s-z3.s}
+C1B3E0E0 uqcvtn z0.h, {z4.d-z7.d}
+C133E17F uqcvtn z31.b, {z8.s-z11.s}
+C133E1E1 uqcvtn z1.b, {z12.s-z15.s}
+C133E261 uqcvtn z1.b, {z16.s-z19.s}
+C133E2E1 uqcvtn z1.b, {z20.s-z23.s}
+C133E361 uqcvtn z1.b, {z24.s-z27.s}
+C133E3E1 uqcvtn z1.b, {z28.s-z31.s}
+C133E060 uqcvtn z0.b, {z0.s-z3.s}

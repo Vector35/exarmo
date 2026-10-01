@@ -1,0 +1,37 @@
+// REVSH_T1 1011|1010|op=11|Rm=xxx|Rd=xxx
+// RevshT1: REVSH{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rm, Rd
+// IT state read: condition
+bac0 revsh r0, r0
+bac1 revsh r1, r0
+bac2 revsh r2, r0
+bac3 revsh r3, r0
+bac4 revsh r4, r0
+bac5 revsh r5, r0
+bac6 revsh r6, r0
+bac7 revsh r7, r0
+BAC8 revsh r0, r1
+BAD0 revsh r0, r2
+BAD8 revsh r0, r3
+BAE0 revsh r0, r4
+BAE8 revsh r0, r5
+BAF0 revsh r0, r6
+BAF8 revsh r0, r7
+BAC0 [ne] revshne r0, r0
+
+// REVSH_T2 111|11010|1|op1=001|Rn=xxxx|1111|Rd=xxxx|10|op2=11|Rm=xxxx
+// RevshT2: REVSH{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rd, Rm
+// IT state read: condition
+fa90f0b8 revsh r0, r8 (unpredictable)
+fa9af0b3 revsh r0, r3 (unpredictable)
+fa99f5b9 revsh r5, r9
+fa9cf4b9 revsh r4, r9 (unpredictable)
+fa92feb5 revsh lr, r5 (unpredictable)
+fa97f4b2 revsh r4, r2 (unpredictable)
+fa9df4b6 revsh r4, r6 (unpredictable)
+fa91fab9 revsh r10, r9 (unpredictable)
+FA9FFFB0 revsh pc, r0 (unpredictable)
+FA98F0BF revsh r0, pc (unpredictable)
+FA94F0B0 revsh r0, r0 (unpredictable)
+FA90F0B8 [ne] revshne r0, r8 (unpredictable)

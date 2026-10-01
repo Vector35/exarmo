@@ -1,0 +1,21 @@
+// MSR_r_A1_AS cond=xxxx|00|010|R=x|1|0|mask=xxxx|Rd=(1)(1)(1)(1)|(0)(0)|B=0|m=(0)|0|000|Rn=xxxx
+// MsrRA1As: MSR{<c>}{<q>}  <spec_reg>, <Rn>
+// read together by <spec_reg>: R, mask
+// register fields: Rn
+// Binary Ninja's tests
+e121f000 msr cpsr_c, r0
+e122f000 msr cpsr_x, r0
+e124f000 msr apsr_g, r0
+e128f000 msr apsr_nzcvq, r0
+e129f000 msr cpsr_fc, r0
+e12cf000 msr apsr_nzcvqg, r0
+e12ef000 msr cpsr_fsx, r0
+e12ff000 msr cpsr_fsxc, r0
+e169f000 msr spsr_fc, r0
+e16ff000 msr spsr_fsxc, r0
+0120050F msreq #0x0, pc (unpredictable)
+F121F000 UNALLOCATED
+81208800 msrhi #0x0, r0 (unpredictable)
+41604C00 msrmi #0x10, r0 (unpredictable)
+21212000 msrcs cpsr_c, r0 (unpredictable)
+11211000 msrne cpsr_c, r0 (unpredictable)

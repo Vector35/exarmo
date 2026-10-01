@@ -1,0 +1,15 @@
+// uqadd_z_p_zz_ 010|0010|0|size=xx|0|11|op=0|S=0|U=1|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UqaddZPZz: UQADD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+44598BFD uqadd z29.h, p2/m, z29.h, z31.h
+44198630 uqadd z16.b, p1/m, z16.b, z17.b
+44199C7C uqadd z28.b, p7/m, z28.b, z3.b
+44599EAE uqadd z14.h, p7/m, z14.h, z21.h
+4499832F uqadd z15.s, p0/m, z15.s, z25.s
+44D98E6A uqadd z10.d, p3/m, z10.d, z19.d
+4419878E uqadd z14.b, p1/m, z14.b, z28.b
+44598C7C uqadd z28.h, p3/m, z28.h, z3.h
+44599000 uqadd z0.h, p4/m, z0.h, z0.h
+445997FF uqadd z31.h, p5/m, z31.h, z31.h
+44599BFD uqadd z29.h, p6/m, z29.h, z31.h
+44598BE2 uqadd z2.h, p2/m, z2.h, z31.h

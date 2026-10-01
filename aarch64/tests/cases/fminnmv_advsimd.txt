@@ -1,0 +1,42 @@
+// FMINNMV_asimdall_only_H 0|Q=x|U=0|0|111|0|o1=1|0|11000|opcode=01100|10|Rn=xxxxx|Rd=xxxxx
+// FminnmvAsimdallOnlyH: FMINNMV  <d>, <Vn>.<T>
+// register fields: Rn, Rd
+4EB0CB4D fminnmv h13, v26.8h
+0EB0CB11 fminnmv h17, v24.4h
+4EB0CB27 fminnmv h7, v25.8h
+0EB0CAFD fminnmv h29, v23.4h
+4EB0CB17 fminnmv h23, v24.8h
+0EB0C831 fminnmv h17, v1.4h
+4EB0C8D5 fminnmv h21, v6.8h
+4EB0C921 fminnmv h1, v9.8h
+0EB0C871 fminnmv h17, v3.4h
+4EB0C839 fminnmv h25, v1.8h
+4EB0CA2E fminnmv h14, v17.8h
+0EB0C85F fminnmv h31, v2.4h
+4EB0CBEB fminnmv h11, v31.8h
+4EB0C9EB fminnmv h11, v15.8h
+4EB0C8BA fminnmv h26, v5.8h
+4EB0C949 fminnmv h9, v10.8h
+4EB0C800 fminnmv h0, v0.8h
+
+// FMINNMV_asimdall_only_SD 0|Q=1|U=1|0|111|0|o1=1|sz=0|11000|opcode=01100|10|Rn=xxxxx|Rd=xxxxx
+// FminnmvAsimdallOnlySd: FMINNMV  <d>, <Vn>.4S
+// register fields: Rn, Rd
+6EB0C87B fminnmv s27, v3.4s
+6EB0CBDC fminnmv s28, v30.4s
+6EB0C89A fminnmv s26, v4.4s
+6EB0CA86 fminnmv s6, v20.4s
+6EB0C988 fminnmv s8, v12.4s
+6EB0CB83 fminnmv s3, v28.4s
+6EB0CAFA fminnmv s26, v23.4s
+6EB0C8EF fminnmv s15, v7.4s
+6EB0C93A fminnmv s26, v9.4s
+6EB0CAFB fminnmv s27, v23.4s
+6EB0C8C3 fminnmv s3, v6.4s
+6EB0CB65 fminnmv s5, v27.4s
+6EB0CA93 fminnmv s19, v20.4s
+6EB0C84F fminnmv s15, v2.4s
+6EB0CBC4 fminnmv s4, v30.4s
+6EB0C9E5 fminnmv s5, v15.4s
+6EB0C800 fminnmv s0, v0.4s
+6EB0CBFF fminnmv s31, v31.4s

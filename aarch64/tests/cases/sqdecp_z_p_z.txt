@@ -1,0 +1,22 @@
+// sqdecp_z_p_z_ 001|0010|1|size=xx|101|0|D=1|U=0|1000|0|opc=00|Pm=xxxx|Zdn=xxxxx
+// SqdecpZPZ: SQDECP  <Zdn>.<T>, <Pm>.<T>
+// register fields: Pm, Zdn
+25EA807F sqdecp z31.d, p3.d
+25EA81F7 sqdecp z23.d, p15.d
+25AA804E sqdecp z14.s, p2.s
+256A81DB sqdecp z27.h, p14.h
+25EA814D sqdecp z13.d, p10.d
+25AA81D0 sqdecp z16.s, p14.s
+256A812D sqdecp z13.h, p9.h
+256A81BE sqdecp z30.h, p13.h
+256A815E sqdecp z30.h, p10.h
+25EA803B sqdecp z27.d, p1.d
+25EA8032 sqdecp z18.d, p1.d
+25AA8046 sqdecp z6.s, p2.s
+25EA809F sqdecp z31.d, p4.d
+25AA8007 sqdecp z7.s, p0.s
+25AA8170 sqdecp z16.s, p11.s
+25EA812E sqdecp z14.d, p9.d
+25EA8060 sqdecp z0.d, p3.d
+252A807F UNDEFINED
+25EA8063 sqdecp z3.d, p3.d

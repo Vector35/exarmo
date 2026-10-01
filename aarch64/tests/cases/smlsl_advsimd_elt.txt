@@ -1,0 +1,63 @@
+// SMLSL_asimdelem_L 0|Q=x|U=0|0|111|1|size=xx|L=x|M=x|Rm=xxxx|0|o2=1|10|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SmlslAsimdelemL: SMLSL  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// SmlslAsimdelemL2: SMLSL2  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// read together by <Tb>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+// form chosen on: Q
+4FAD6180 smlsl2 v0.2d, v12.4s, v13.s[1]
+0FBA6B77 smlsl v23.2d, v27.2s, v26.s[3]
+0F936898 smlsl v24.2d, v4.2s, v19.s[2]
+4F916306 smlsl2 v6.2d, v24.4s, v17.s[0]
+4F7C689C smlsl2 v28.4s, v4.8h, v12.h[7]
+0FA268C4 smlsl v4.2d, v6.2s, v2.s[3]
+4F556861 smlsl2 v1.4s, v3.8h, v5.h[5]
+4F8C684C smlsl2 v12.2d, v2.4s, v12.s[2]
+0F65622A smlsl v10.4s, v17.4h, v5.h[2]
+4FBB61B1 smlsl2 v17.2d, v13.4s, v27.s[1]
+4F8063EF smlsl2 v15.2d, v31.4s, v0.s[0]
+4F89638B smlsl2 v11.2d, v28.4s, v9.s[0]
+0F9562F0 smlsl v16.2d, v23.2s, v21.s[0]
+0F61622B smlsl v11.4s, v17.4h, v1.h[2]
+0F916A4B smlsl v11.2d, v18.2s, v17.s[2]
+0F486885 smlsl v5.4s, v4.4h, v8.h[4]
+4FAF601F smlsl2 v31.2d, v0.4s, v15.s[1]
+4F2D6180 UNDEFINED
+4FED6180 UNDEFINED
+4F0D6180 UNDEFINED
+4F0D6980 UNDEFINED
+4F1D6180 UNDEFINED
+4F1D6980 UNDEFINED
+4F2D6980 UNDEFINED
+4F3D6180 UNDEFINED
+4F3D6980 UNDEFINED
+4F4D618C smlsl2 v12.4s, v12.8h, v13.h[0]
+4F5D6180 smlsl2 v0.4s, v12.8h, v13.h[1]
+4F6D6980 smlsl2 v0.4s, v12.8h, v13.h[6]
+4F7D6180 smlsl2 v0.4s, v12.8h, v13.h[3]
+4FCD6180 UNDEFINED
+4FCD6980 UNDEFINED
+4FDD6180 UNDEFINED
+4FDD6980 UNDEFINED
+4FED6980 UNDEFINED
+4FFD6180 UNDEFINED
+4FFD6980 UNDEFINED
+4F206180 UNDEFINED
+4F2F6180 UNDEFINED
+4F306180 UNDEFINED
+4F3F6180 UNDEFINED
+4F606180 smlsl2 v0.4s, v12.8h, v0.h[2]
+4F6F6180 smlsl2 v0.4s, v12.8h, v15.h[2]
+4F706180 smlsl2 v0.4s, v12.8h, v0.h[3]
+4F7F6180 smlsl2 v0.4s, v12.8h, v15.h[3]
+4FB06180 smlsl2 v0.2d, v12.4s, v16.s[1]
+4FBF6180 smlsl2 v0.2d, v12.4s, v31.s[1]
+4FE06180 UNDEFINED
+4FEF6180 UNDEFINED
+4FF06180 UNDEFINED
+4FFF6180 UNDEFINED
+0F2D6180 UNDEFINED
+0FED6180 UNDEFINED
+4FA46180 smlsl2 v0.2d, v12.4s, v4.s[1]
+4F486885 smlsl2 v5.4s, v4.8h, v8.h[4]

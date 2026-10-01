@@ -1,0 +1,16 @@
+// bfmops_za_pp_zz_16 1|00|0000|1|10|1|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|10|0|ZAda=x
+// BfmopsZaPpZz16: BFMOPS  <ZAda>.H, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+81A00099 bfmops za1.h, p0/m, p0/m, z4.h, z0.h
+81A000D8 bfmops za0.h, p0/m, p0/m, z6.h, z0.h
+81A00179 bfmops za1.h, p0/m, p0/m, z11.h, z0.h
+81BF2419 bfmops za1.h, p1/m, p1/m, z0.h, z31.h
+81A04BF9 bfmops za1.h, p2/m, p2/m, z31.h, z0.h
+81A06C99 bfmops za1.h, p3/m, p3/m, z4.h, z0.h
+81A09099 bfmops za1.h, p4/m, p4/m, z4.h, z0.h
+81A0B499 bfmops za1.h, p5/m, p5/m, z4.h, z0.h
+81A0D899 bfmops za1.h, p6/m, p6/m, z4.h, z0.h
+81A0FC99 bfmops za1.h, p7/m, p7/m, z4.h, z0.h
+81A00019 bfmops za1.h, p0/m, p0/m, z0.h, z0.h
+81A00039 bfmops za1.h, p0/m, p0/m, z1.h, z0.h
+81A58C59 bfmops za1.h, p3/m, p4/m, z2.h, z5.h

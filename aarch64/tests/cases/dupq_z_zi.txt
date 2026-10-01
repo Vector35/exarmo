@@ -1,0 +1,15 @@
+// dupq_z_zi_ 000|0010|1|00|1|i1=x|tsz=xxxx|001001|Zn=xxxxx|Zd=xxxxx
+// DupqZZi: DUPQ  <Zd>.<T>, <Zn>.<T>[<imm>]
+// read together by <imm>: i1, tsz
+// register fields: Zn, Zd
+05212402 dupq z2.b, z0.b[0]
+05212409 dupq z9.b, z0.b[0]
+05212410 dupq z16.b, z0.b[0]
+053F27E0 dupq z0.b, z31.b[15]
+0521241F dupq z31.b, z0.b[0]
+05202402 UNDEFINED
+052F2400 dupq z0.b, z0.b[7]
+05302402 UNDEFINED
+05282402 dupq z2.d, z0.d[0]
+05242402 dupq z2.s, z0.s[0]
+05222402 dupq z2.h, z0.h[0]

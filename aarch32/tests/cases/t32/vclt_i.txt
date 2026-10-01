@@ -1,0 +1,48 @@
+// VCLT_i_T1_D 111111111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|100|Q=0|M=x|0|Vm=xxxx
+// VcltIT1D: VCLT{<c>}{<q>}.<dt>  {<Dd>, }<Dm>, #0
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffb50202 vclt.s16 d0, d2, #0
+fff5c229 vclt.s16 d28, d25, #0
+fff17223 vclt.s8 d23, d19, #0
+ffb1920f vclt.s8 d9, d15, #0
+ffb1d22a vclt.s8 d13, d26, #0
+fff5962c vclt.f16 d25, d28, #0
+fff9c60c vclt.f32 d28, d12, #0
+fff14226 vclt.s8 d20, d22, #0
+FFBD0202 UNDEFINED
+FFB9F200 vclt.s32 d15, d0, #0x0
+FFB58208 vclt.s16 d8, d8, #0x0
+FFB52204 vclt.s16 d2, d4, #0x0
+FFB51201 vclt.s16 d1, d1, #0x0
+FFB10602 UNDEFINED
+FFBD0602 UNDEFINED
+FFB5F200 vclt.s16 d15, d0, #0x0
+FFF50220 vclt.s16 d16, d16, #0x0
+FFF5F22F vclt.s16 d31, d31, #0x0
+FFB50202 [ne] vcltne.s16 d0, d2, #0x0
+
+// VCLT_i_T1_Q 111111111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|100|Q=1|M=x|0|Vm=xxxx
+// VcltIT1Q: VCLT{<c>}{<q>}.<dt>  {<Qd>, }<Qm>, #0
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb56260 vclt.s16 q3, q8, #0
+ffb9e26c vclt.s32 q7, q14, #0
+fff5a66c vclt.f16 q13, q14, #0
+fff12248 vclt.s8 q9, q4, #0
+ffb1226a vclt.s8 q1, q13, #0
+ffb54260 vclt.s16 q2, q8, #0
+fff9424e vclt.s32 q10, q7, #0
+ffb9864c vclt.f32 q4, q6, #0
+FFBDF26F UNDEFINED
+FFB50264 vclt.s16 q0, q10, #0x0
+FFB11661 UNDEFINED
+FFB50262 vclt.s16 q0, q9, #0x0
+FFBDF24F UNDEFINED
+FFFDF66F UNDEFINED
+FFF50240 vclt.s16 q8, q0, #0x0
+FFB56260 [ne] vcltne.s16 q3, q8, #0x0

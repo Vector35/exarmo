@@ -1,0 +1,15 @@
+// STREXH_A1 cond=xxxx|00|01|1|size=11|L=0|Rn=xxxx|Rd=xxxx|(1)(1)|ex=1|ord=1|1|00|1|Rt=xxxx
+// StrexhA1: STREXH{<c>}{<q>}  <Rd>, <Rt>, [<Rn>]
+// register fields: Rn, Rd, Rt
+71e47f94 strexhvc r7, r4, [r4]
+a1e0cf96 strexhge r12, r6, [r0]
+c1eb9f9b strexhgt r9, r11, [r11]
+51ebcf97 strexhpl r12, r7, [r11]
+// Binary Ninja's tests
+e1e54f92 strexh r4, r2, [r5]
+01EF0390 strexheq r0, r0, [pc] (unpredictable)
+F1E47F94 UNALLOCATED
+81E4F79F strexhhi pc, pc, [r4] (unpredictable)
+41E44B94 strexhmi r4, r4, [r4] (unpredictable)
+21E47F97 strexhcs r7, r7, [r4] (unpredictable)
+11E47F94 strexhne r7, r4, [r4]

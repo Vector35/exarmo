@@ -1,0 +1,14 @@
+// smlslb_z_zzz_ 010|0010|0|size=xx|0|Zm=xxxxx|0|10|S=1|U=0|T=0|Zn=xxxxx|Zda=xxxxx
+// SmlslbZZzz: SMLSLB  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+44D35116 smlslb z22.d, z8.s, z19.s
+44935079 smlslb z25.s, z3.h, z19.h
+44945256 smlslb z22.s, z18.h, z20.h
+44D35206 smlslb z6.d, z16.s, z19.s
+44C752E5 smlslb z5.d, z23.s, z7.s
+44865382 smlslb z2.s, z28.h, z6.h
+44D25277 smlslb z23.d, z19.s, z18.s
+44CD5206 smlslb z6.d, z16.s, z13.s
+44405000 smlslb z0.h, z0.b, z0.b
+44DF53FF smlslb z31.d, z31.s, z31.s
+44135116 UNDEFINED

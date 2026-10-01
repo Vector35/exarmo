@@ -1,0 +1,23 @@
+// smax_mz_zzv_2x1 1|10|0000|1|size=xx|10|Zm=xxxx|10100|0|00|00|op=0|Zdn=xxxx|U=0
+// SmaxMzZzv2x1: SMAX  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, <Zm>.<T>
+// register fields: Zm, Zdn
+C120A006 smax {z6.b-z7.b}, {z6.b-z7.b}, z0.b
+C120A014 smax {z20.b-z21.b}, {z20.b-z21.b}, z0.b
+C121A004 smax {z4.b-z5.b}, {z4.b-z5.b}, z1.b
+C16FA000 smax {z0.h-z1.h}, {z0.h-z1.h}, z15.h
+C1A0A01E smax {z30.s-z31.s}, {z30.s-z31.s}, z0.s
+C1E0A006 smax {z6.d-z7.d}, {z6.d-z7.d}, z0.d
+C120A000 smax {z0.b-z1.b}, {z0.b-z1.b}, z0.b
+
+// smax_mz_zzv_4x1 1|10|0000|1|size=xx|10|Zm=xxxx|10101|0|00|00|op=0|Zdn=xxx|0|U=0
+// SmaxMzZzv4x1: SMAX  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, <Zm>.<T>
+// register fields: Zm, Zdn
+C120A810 smax {z16.b-z19.b}, {z16.b-z19.b}, z0.b
+C121A800 smax {z0.b-z3.b}, {z0.b-z3.b}, z1.b
+C121A81C smax {z28.b-z31.b}, {z28.b-z31.b}, z1.b
+C16FA804 smax {z4.h-z7.h}, {z4.h-z7.h}, z15.h
+C1A0A808 smax {z8.s-z11.s}, {z8.s-z11.s}, z0.s
+C1E0A80C smax {z12.d-z15.d}, {z12.d-z15.d}, z0.d
+C120A814 smax {z20.b-z23.b}, {z20.b-z23.b}, z0.b
+C120A818 smax {z24.b-z27.b}, {z24.b-z27.b}, z0.b
+C120A800 smax {z0.b-z3.b}, {z0.b-z3.b}, z0.b

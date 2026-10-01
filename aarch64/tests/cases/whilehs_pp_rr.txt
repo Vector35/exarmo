@@ -1,0 +1,11 @@
+// whilehs_pp_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|01|U=1|lt=0|Rn=xxxxx|1|Pd=xxx|eq=0
+// WhilehsPpRr: WHILEHS  { <Pd1>.<T>, <Pd2>.<T> }, <Xn>, <Xm>
+// register fields: Rm, Rn, Pd
+25205810 whilehs {p0.b, p1.b}, x0, x0
+2520581E whilehs {p14.b, p15.b}, x0, x0
+2520583A whilehs {p10.b, p11.b}, x1, x0
+257F5BF2 whilehs {p2.h, p3.h}, xzr, xzr
+25A05814 whilehs {p4.s, p5.s}, x0, x0
+25E05816 whilehs {p6.d, p7.d}, x0, x0
+25205818 whilehs {p8.b, p9.b}, x0, x0
+2520581C whilehs {p12.b, p13.b}, x0, x0

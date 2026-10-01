@@ -1,0 +1,29 @@
+// SDOT_asimdelem_D 0|Q=x|U=0|0|111|1|size=xx|L=x|M=x|Rm=xxxx|opcode=1110|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SdotAsimdelemD: SDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.4B[<index>]
+// read together by <Vm>: M, Rm
+// read together by <index>: L, H
+// register fields: Rn, Rd
+0F9BE85D sdot v29.2s, v2.8b, v27.4b[2]
+0FB9EAA5 sdot v5.2s, v21.8b, v25.4b[3]
+0F94E197 sdot v23.2s, v12.8b, v20.4b[0]
+0FA9E01D sdot v29.2s, v0.8b, v9.4b[1]
+4FB3E310 sdot v16.4s, v24.16b, v19.4b[1]
+4F89EAFE sdot v30.4s, v23.16b, v9.4b[2]
+4F86E0D3 sdot v19.4s, v6.16b, v6.4b[0]
+0FB3E37E sdot v30.2s, v27.8b, v19.4b[1]
+4F81EB7D sdot v29.4s, v27.16b, v1.4b[2]
+0F86E1A0 sdot v0.2s, v13.8b, v6.4b[0]
+4FACEB21 sdot v1.4s, v25.16b, v12.4b[3]
+0FB0E225 sdot v5.2s, v17.8b, v16.4b[1]
+4F94E28F sdot v15.4s, v20.16b, v20.4b[0]
+4FB0E2E2 sdot v2.4s, v23.16b, v16.4b[1]
+0F8DE169 sdot v9.2s, v11.8b, v13.4b[0]
+4FBEEA78 sdot v24.4s, v19.16b, v30.4b[3]
+0F9FEBFF sdot v31.2s, v31.8b, v31.4b[2]
+0F1BE85D UNDEFINED
+0F5BE85D UNDEFINED
+0FDBE85D UNDEFINED
+0F80E85D sdot v29.2s, v2.8b, v0.4b[2]
+0F8FE85D sdot v29.2s, v2.8b, v15.4b[2]
+0F98E85D sdot v29.2s, v2.8b, v24.4b[2]
+0F92E85D sdot v29.2s, v2.8b, v18.4b[2]

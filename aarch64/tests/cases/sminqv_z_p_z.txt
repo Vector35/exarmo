@@ -1,0 +1,14 @@
+// sminqv_z_p_z_ 000|0010|0|size=xx|0|011|op=1|U=0|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// SminqvZPZ: SMINQV  <Vd>.<T>, <Pg>, <Zn>.<Tb>
+// register fields: Pg, Zn, Vd
+040E2001 sminqv v1.16b, p0, z0.b
+040E2008 sminqv v8.16b, p0, z0.b
+040E200F sminqv v15.16b, p0, z0.b
+044E27E0 sminqv v0.8h, p1, z31.h
+048E281F sminqv v31.4s, p2, z0.s
+04CE2C01 sminqv v1.2d, p3, z0.d
+040E3001 sminqv v1.16b, p4, z0.b
+040E3401 sminqv v1.16b, p5, z0.b
+040E3801 sminqv v1.16b, p6, z0.b
+040E3C01 sminqv v1.16b, p7, z0.b
+040E2000 sminqv v0.16b, p0, z0.b

@@ -1,0 +1,110 @@
+// VCMPE_T1_D 111011101|D=x|11|o1=0|opc2=100|Vd=xxxx|10|size=11|E=1|1|M=x|0|Vm=xxxx
+// VcmpeT1D: VCMPE{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eeb48bec vcmpe.f64 d8, d28
+eef41bc0 vcmpe.f64 d17, d0
+eeb4abe0 vcmpe.f64 d10, d16
+eeb4abc4 vcmpe.f64 d10, d4
+eeb49bcd vcmpe.f64 d9, d13
+eeb47be4 vcmpe.f64 d7, d20
+eeb4fbe0 vcmpe.f64 d15, d16
+eef4abed vcmpe.f64 d26, d29
+EEB40BEF vcmpe.f64 d0, d31
+EEB44BE8 vcmpe.f64 d4, d24
+EEB42BE2 vcmpe.f64 d2, d18
+EEF40BCF vcmpe.f64 d16, d15
+EEF4FBEF vcmpe.f64 d31, d31
+EEB48BE1 vcmpe.f64 d8, d17
+EEB48BEC [ne] vcmpene.f64 d8, d28
+
+// VCMPE_T1_H 111011101|D=x|11|o1=0|opc2=100|Vd=xxxx|10|size=01|E=1|1|M=x|0|Vm=xxxx
+// VcmpeT1H: VCMPE{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeb4e9e2 vcmpe.f16 s28, s5
+eef4c9cd vcmpe.f16 s25, s26
+eef409c9 vcmpe.f16 s1, s18
+eeb4b9c9 vcmpe.f16 s22, s18
+eeb429e4 vcmpe.f16 s4, s9
+eef469ec vcmpe.f16 s13, s25
+eef4b9e7 vcmpe.f16 s23, s15
+eef4b9c0 vcmpe.f16 s23, s0
+EEB4F9EF vcmpe.f16 s30, s31
+EEB489E8 vcmpe.f16 s16, s17
+EEB449E1 vcmpe.f16 s8, s3
+EEB419CF vcmpe.f16 s2, s30
+EEB409E0 vcmpe.f16 s0, s1
+EEF4F9E2 vcmpe.f16 s31, s5
+EEB4E9E2 [ne] vcmpene.f16 s28, s5 (unpredictable)
+
+// VCMPE_T1_S 111011101|D=x|11|o1=0|opc2=100|Vd=xxxx|10|size=10|E=1|1|M=x|0|Vm=xxxx
+// VcmpeT1S: VCMPE{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef42ac2 vcmpe.f32 s5, s4
+eef41ac2 vcmpe.f32 s3, s4
+eeb40ae5 vcmpe.f32 s0, s11
+eef44ac9 vcmpe.f32 s9, s18
+eef48ac9 vcmpe.f32 s17, s18
+eeb43acc vcmpe.f32 s6, s24
+eeb4daeb vcmpe.f32 s26, s23
+eeb4caed vcmpe.f32 s24, s27
+EEF4FAC0 vcmpe.f32 s31, s0
+EEB4FACF vcmpe.f32 s30, s30
+EEF40AC8 vcmpe.f32 s1, s16
+EEF4FAC4 vcmpe.f32 s31, s8
+EEF42AC1 vcmpe.f32 s5, s2
+EEF42AC0 vcmpe.f32 s5, s0
+EEF42ACF vcmpe.f32 s5, s30
+EEF42AE0 vcmpe.f32 s5, s1
+EEF42AEF vcmpe.f32 s5, s31
+EEF42AC2 [ne] vcmpene.f32 s5, s4
+
+// VCMPE_T2_D 111011101|D=x|11|o1=0|opc2=101|Vd=xxxx|10|size=11|E=1|1|M=(0)|0|Vm=(0)(0)(0)(0)
+// VcmpeT2D: VCMPE{<c>}{<q>}.F64  <Dd>, #0.0
+// read together by <Dd>: D, Vd
+// IT state read: condition
+EEF5FBEF vcmpe.f64 d31, #0.0 (unpredictable)
+EEB58BC8 vcmpe.f64 d8, #0.0 (unpredictable)
+EEB54BC4 vcmpe.f64 d4, #0.0 (unpredictable)
+EEB52BC2 vcmpe.f64 d2, #0.0 (unpredictable)
+EEB51BC1 vcmpe.f64 d1, #0.0 (unpredictable)
+EEF50BC0 vcmpe.f64 d16, #0.0
+EEB50BEF vcmpe.f64 d0, #0.0 (unpredictable)
+EEB5FBEF vcmpe.f64 d15, #0.0 (unpredictable)
+EEF5FBEF [ne] vcmpene.f64 d31, #0.0 (unpredictable)
+
+// VCMPE_T2_H 111011101|D=x|11|o1=0|opc2=101|Vd=xxxx|10|size=01|E=1|1|M=(0)|0|Vm=(0)(0)(0)(0)
+// VcmpeT2H: VCMPE{<c>}{<q>}.F16  <Sd>, #0.0
+// read together by <Sd>: D, Vd
+// IT state read: condition
+eeb599c0 vcmpe.f16 s18, #0
+EEF509EF vcmpe.f16 s1, #0.0 (unpredictable)
+EEB5F9C8 vcmpe.f16 s30, #0.0 (unpredictable)
+EEB589C4 vcmpe.f16 s16, #0.0 (unpredictable)
+EEB549C2 vcmpe.f16 s8, #0.0 (unpredictable)
+EEB529C1 vcmpe.f16 s4, #0.0 (unpredictable)
+EEB519C0 vcmpe.f16 s2, #0.0
+EEB509C0 vcmpe.f16 s0, #0.0
+EEB5F9C0 vcmpe.f16 s30, #0.0
+EEF509C0 vcmpe.f16 s1, #0.0
+EEF5F9C0 vcmpe.f16 s31, #0.0
+EEB599C0 [ne] vcmpene.f16 s18, #0.0 (unpredictable)
+
+// VCMPE_T2_S 111011101|D=x|11|o1=0|opc2=101|Vd=xxxx|10|size=10|E=1|1|M=(0)|0|Vm=(0)(0)(0)(0)
+// VcmpeT2S: VCMPE{<c>}{<q>}.F32  <Sd>, #0.0
+// read together by <Sd>: D, Vd
+// IT state read: condition
+EEB50AC0 vcmpe.f32 s0, #0.0
+EEF5FAEF vcmpe.f32 s31, #0.0 (unpredictable)
+EEB58AC8 vcmpe.f32 s16, #0.0 (unpredictable)
+EEB54AC4 vcmpe.f32 s8, #0.0 (unpredictable)
+EEB52AC2 vcmpe.f32 s4, #0.0 (unpredictable)
+EEB51AC1 vcmpe.f32 s2, #0.0 (unpredictable)
+EEB5FAC0 vcmpe.f32 s30, #0.0
+EEF50AC0 vcmpe.f32 s1, #0.0
+EEB50AC0 [ne] vcmpene.f32 s0, #0.0

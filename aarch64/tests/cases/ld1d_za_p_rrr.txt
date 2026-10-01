@@ -1,0 +1,16 @@
+// ld1d_za_p_rrr_ 1|11|0000|0|msz=11|0|Rm=xxxxx|V=x|Rs=xx|Pg=xxx|Rn=xxxxx|0|ZAt=xxx|o1=x
+// Ld1dZaPRrr: LD1D  { <ZAt><HV>.D[<Ws>, <offs>] }, <Pg>/Z, [<Xn|SP>{, <Xm>, LSL #3}]
+// register fields: Rm, Rs, Pg, Rn, ZAt
+E0D76421 ld1d {za0h.d[w15, 1]}, p1/z, [x1, x23, lsl #0x3]
+E0C1F1E9 ld1d {za4v.d[w15, 1]}, p4/z, [x15, x1, lsl #0x3]
+E0C2EC0C ld1d {za6v.d[w15, 0]}, p3/z, [x0, x2, lsl #0x3]
+E0C8DEC2 ld1d {za1v.d[w14, 0]}, p7/z, [x22, x8, lsl #0x3]
+E0DD7AE4 ld1d {za2h.d[w15, 0]}, p6/z, [x23, fp, lsl #0x3]
+E0C1F621 ld1d {za0v.d[w15, 1]}, p5/z, [x17, x1, lsl #0x3]
+E0D1D407 ld1d {za3v.d[w14, 1]}, p5/z, [x0, x17, lsl #0x3]
+E0DD32AC ld1d {za6h.d[w13, 0]}, p4/z, [x21, fp, lsl #0x3]
+E0C003EB ld1d {za5h.d[w12, 1]}, p0/z, [sp, x0, lsl #0x3]
+E0DF682F ld1d {za7h.d[w15, 1]}, p2/z, [x1]
+E0D766E7 ld1d {za3h.d[w15, 1]}, p1/z, [x23, x23, lsl #0x3]
+E0C06461 ld1d {za0h.d[w15, 1]}, p1/z, [x3, x0, lsl #0x3]
+E0D76423 ld1d {za1h.d[w15, 1]}, p1/z, [x1, x23, lsl #0x3]

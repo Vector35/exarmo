@@ -1,0 +1,21 @@
+// pfirst_p_p_p_ 001|0010|1|op=0|S=1|01|1000|11|000|00|Pg=xxxx|0|Pdn=xxxx
+// PfirstPPP: PFIRST  <Pdn>.B, <Pg>, <Pdn>.B
+// register fields: Pg, Pdn
+2558C0E8 pfirst p8.b, p7, p8.b
+2558C04F pfirst p15.b, p2, p15.b
+2558C16A pfirst p10.b, p11, p10.b
+2558C041 pfirst p1.b, p2, p1.b
+2558C165 pfirst p5.b, p11, p5.b
+2558C107 pfirst p7.b, p8, p7.b
+2558C1E7 pfirst p7.b, p15, p7.b
+2558C089 pfirst p9.b, p4, p9.b
+2558C0E5 pfirst p5.b, p7, p5.b
+2558C001 pfirst p1.b, p0, p1.b
+2558C187 pfirst p7.b, p12, p7.b
+2558C128 pfirst p8.b, p9, p8.b
+2558C143 pfirst p3.b, p10, p3.b
+2558C12A pfirst p10.b, p9, p10.b
+2558C18E pfirst p14.b, p12, p14.b
+2558C16F pfirst p15.b, p11, p15.b
+2558C0E0 pfirst p0.b, p7, p0.b
+2558C0E7 pfirst p7.b, p7, p7.b

@@ -1,0 +1,53 @@
+// VLD4_m_A1_nowb 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=1111
+// Vld4MA1Nowb: VLD4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f468c0bf vld4.32 {d28, d29, d30, d31}, [r8:256]
+f461d10f UNPREDICTABLE
+f425d0af vld4.32 {d13, d14, d15, d16}, [r5:128]
+f42c415f vld4.16 {d4, d6, d8, d10}, [r12:64]
+f42b707f vld4.16 {d7, d8, d9, d10}, [r11:256]
+f46b718f vld4.32 {d23, d25, d27, d29}, [r11]
+f422810f vld4.8 {d8, d10, d12, d14}, [r2]
+f422614f vld4.16 {d6, d8, d10, d12}, [r2]
+F46000BF vld4.32 {d16, d17, d18, d19}, [r0:256]
+F46FF0BF UNPREDICTABLE
+F46820BF vld4.32 {d18, d19, d20, d21}, [r8:256]
+F46810BF vld4.32 {d17, d18, d19, d20}, [r8:256]
+F468C0FF UNDEFINED
+F46FC0BF vld4.32 {d28, d29, d30, d31}, [pc:256] (unpredictable)
+F425F0AF vld4.32 {d15, d16, d17, d18}, [r5:128]
+
+// VLD4_m_A1_posti 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=1101
+// Vld4MA1Posti: VLD4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f424c08d vld4.32 {d12, d13, d14, d15}, [r4]!
+f42c614d vld4.16 {d6, d8, d10, d12}, [r12]!
+f422410d vld4.8 {d4, d6, d8, d10}, [r2]!
+f42391bd vld4.32 {d9, d11, d13, d15}, [r3:256]!
+f427d13d vld4.8 {d13, d15, d17, d19}, [r7:256]!
+f46a20ad vld4.32 {d18, d19, d20, d21}, [r10:128]!
+f427103d vld4.8 {d1, d2, d3, d4}, [r7:256]!
+f466d13d UNPREDICTABLE
+F420009D vld4.32 {d0, d1, d2, d3}, [r0:64]!
+F42FF08D vld4.32 {d15, d16, d17, d18}, [pc]! (unpredictable)
+F424808D vld4.32 {d8, d9, d10, d11}, [r4]!
+F424C0CD UNDEFINED
+
+// VLD4_m_A1_postr 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=xxxx
+// Vld4MA1Postr: VLD4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f4646144 vld4.16 {d22, d24, d26, d28}, [r4], r4
+f42c5091 vld4.32 {d5, d6, d7, d8}, [r12:64], r1
+f42b21a0 vld4.32 {d2, d4, d6, d8}, [r11:128], r0
+f461a125 UNPREDICTABLE
+f426c04b vld4.16 {d12, d13, d14, d15}, [r6], r11
+f467c072 vld4.16 {d28, d29, d30, d31}, [r7:256], r2
+f42c0012 vld4.8 {d0, d1, d2, d3}, [r12:64], r2
+f4615180 vld4.32 {d21, d23, d25, d27}, [r1], r0
+F460F144 UNPREDICTABLE
+F46F8144 vld4.16 {d24, d26, d28, d30}, [pc], r4 (unpredictable)
+F4644144 vld4.16 {d20, d22, d24, d26}, [r4], r4
+F4641144 vld4.16 {d17, d19, d21, d23}, [r4], r4
+F46461CF UNDEFINED
+F4606144 vld4.16 {d22, d24, d26, d28}, [r0], r4
+F42CF091 vld4.32 {d15, d16, d17, d18}, [r12:64], r1

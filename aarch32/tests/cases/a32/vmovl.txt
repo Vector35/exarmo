@@ -1,0 +1,21 @@
+// VMOVL_A1 1111|0|01|U=x|1|D=x|imm3H=xxx|imm3L=000|Vd=xxxx|opc=1010|L=0|Q=0|M=x|1|Vm=xxxx
+// VmovlA1: VMOVL{<c>}{<q>}.<dt>  <Qd>, <Dm>
+// read together by <dt>: U, imm3H
+// read together by <Qd>: D, Vd
+// read together by <Dm>: M, Vm
+f2902a18 vmovl.s16 q1, d8
+f3d02a12 vmovl.u16 q9, d2
+f290ea3d vmovl.s16 q7, d29
+f2900a3a vmovl.s16 q0, d26
+f3d02a18 vmovl.u16 q9, d8
+f3c84a30 vmovl.u8 q10, d16
+F2A08A1F vmovl.s32 q4, d15
+F298FA18 UNDEFINED
+F2A81A18 UNDEFINED
+F2C80A14 vmovl.s8 q8, d4
+F2A02A11 vmovl.s32 q1, d1
+F3A02A10 vmovl.u32 q1, d0
+F290FA18 UNDEFINED
+F2D0FA18 UNDEFINED
+F2902A1F vmovl.s16 q1, d15
+F2902A3F vmovl.s16 q1, d31

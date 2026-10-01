@@ -1,0 +1,29 @@
+// VABAL_T1 111|U=x|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0101|N=x|0|M=x|0|Vm=xxxx
+// VabalT1: VABAL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef9645a9 vabal.s16 q2, d22, d25
+efc2e52a vabal.s8 q15, d2, d26
+ffedc52f vabal.u32 q14, d13, d31
+efcea50b vabal.s8 q13, d14, d11
+ef87650c vabal.s8 q3, d7, d12
+efc62508 vabal.s8 q9, d6, d8
+ef99c50c vabal.s16 q6, d9, d12
+ffc98500 vabal.u8 q12, d9, d0
+FFFDF52F UNDEFINED
+EFA005A4 vabal.s32 q0, d16, d20
+FF9F05A2 vabal.u16 q0, d31, d18
+EFD805A1 vabal.s16 q8, d24, d17
+EF94458F vabal.s16 q2, d20, d15
+EF9145A0 vabal.s16 q2, d17, d16
+EF9615A9 UNDEFINED
+FFB2F52A UNDEFINED
+EFD6F5A9 UNDEFINED
+EF904529 vabal.s16 q2, d0, d25
+EF9045A9 vabal.s16 q2, d16, d25
+EF9F4529 vabal.s16 q2, d15, d25
+EF9F45A9 vabal.s16 q2, d31, d25
+EF9645A9 [ne] vabalne.s16 q2, d22, d25

@@ -1,0 +1,21 @@
+// fmlslt_z_zzz_ 011|0010|0|1|o2=0|1|Zm=xxxxx|10|op=1|00|T=1|Zn=xxxxx|Zda=xxxxx
+// FmlsltZZzz: FMLSLT  <Zda>.S, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zda
+64A5A64F fmlslt z15.s, z18.h, z5.h
+64B9A72A fmlslt z10.s, z25.h, z25.h
+64AFA4E5 fmlslt z5.s, z7.h, z15.h
+64A7A710 fmlslt z16.s, z24.h, z7.h
+64A7A612 fmlslt z18.s, z16.h, z7.h
+64AEA7F4 fmlslt z20.s, z31.h, z14.h
+64B0A719 fmlslt z25.s, z24.h, z16.h
+64A3A5D2 fmlslt z18.s, z14.h, z3.h
+64A5A64F fmlslt z15.s, z18.h, z5.h
+64B9A72A fmlslt z10.s, z25.h, z25.h
+64AFA4E5 fmlslt z5.s, z7.h, z15.h
+64A7A710 fmlslt z16.s, z24.h, z7.h
+64A7A612 fmlslt z18.s, z16.h, z7.h
+64AEA7F4 fmlslt z20.s, z31.h, z14.h
+64B0A719 fmlslt z25.s, z24.h, z16.h
+64A3A5D2 fmlslt z18.s, z14.h, z3.h
+64A0A400 fmlslt z0.s, z0.h, z0.h
+64BFA65F fmlslt z31.s, z18.h, z31.h

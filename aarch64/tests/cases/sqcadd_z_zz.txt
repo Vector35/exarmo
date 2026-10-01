@@ -1,0 +1,13 @@
+// sqcadd_z_zz_ 010|0010|1|size=xx|0|0000|op=1|11|011|rot=x|Zm=xxxxx|Zdn=xxxxx
+// SqcaddZZz: SQCADD  <Zdn>.<T>, <Zdn>.<T>, <Zm>.<T>, <const>
+// register fields: Zm, Zdn
+4581DE08 sqcadd z8.s, z8.s, z16.s, #0x10e
+4581D992 sqcadd z18.s, z18.s, z12.s, #0x5a
+45C1D9AC sqcadd z12.d, z12.d, z13.d, #0x5a
+4541DA5F sqcadd z31.h, z31.h, z18.h, #0x5a
+4501D964 sqcadd z4.b, z4.b, z11.b, #0x5a
+45C1DEEA sqcadd z10.d, z10.d, z23.d, #0x10e
+45C1DD94 sqcadd z20.d, z20.d, z12.d, #0x10e
+4501DCDB sqcadd z27.b, z27.b, z6.b, #0x10e
+4581DC00 sqcadd z0.s, z0.s, z0.s, #0x10e
+4581DFE8 sqcadd z8.s, z8.s, z31.s, #0x10e

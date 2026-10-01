@@ -1,0 +1,23 @@
+// HLT_A1 cond=xxxx|00|010|opc=00|0|imm12=xxxxxxxxxxxx|0|111|imm4=xxxx
+// HltA1: HLT{<q>}  {#}<imm>
+// read together by <imm>: imm12, imm4
+01000070 hlt #0x0 (unpredictable)
+// The always condition, which is the one HLT is written with
+E10FFF7F hlt #0xffff
+F1000070 UNALLOCATED
+810FFF7F hlt #0xffff (unpredictable)
+41080078 hlt #0x8008 (unpredictable)
+21040074 hlt #0x4004 (unpredictable)
+11020072 hlt #0x2002 (unpredictable)
+01010071 hlt #0x1001 (unpredictable)
+01008070 hlt #0x800 (unpredictable)
+01004070 hlt #0x400 (unpredictable)
+01002070 hlt #0x200 (unpredictable)
+01001070 hlt #0x100 (unpredictable)
+01000870 hlt #0x80 (unpredictable)
+01000470 hlt #0x40 (unpredictable)
+01000270 hlt #0x20 (unpredictable)
+01000170 hlt #0x10 (unpredictable)
+0100007F hlt #0xf (unpredictable)
+010FFF70 hlt #0xfff0 (unpredictable)
+010FFF7F hlt #0xffff (unpredictable)

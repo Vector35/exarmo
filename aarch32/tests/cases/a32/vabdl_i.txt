@@ -1,0 +1,24 @@
+// VABDL_i_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0111|N=x|0|M=x|0|Vm=xxxx
+// VabdlIA1: VABDL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f2ac4781 vabdl.s32 q2, d28, d1
+f2a5e722 vabdl.s32 q7, d5, d18
+f2e9e7a5 vabdl.s32 q15, d25, d21
+f3df278f vabdl.u16 q9, d31, d15
+f2a087a5 vabdl.s32 q4, d16, d21
+f29127a9 vabdl.s16 q1, d17, d25
+f38d67a9 vabdl.u8 q3, d29, d25
+f2a7a789 vabdl.s32 q5, d23, d9
+F3FFF78F UNDEFINED
+F2880780 vabdl.s8 q0, d24, d0
+F3A40788 vabdl.u32 q0, d20, d8
+F2E20784 vabdl.s32 q8, d18, d4
+F3BC1781 UNDEFINED
+F2ACF781 UNDEFINED
+F2ECF781 UNDEFINED
+F2A04700 vabdl.s32 q2, d0, d0
+F2AF4720 vabdl.s32 q2, d15, d16
+F2AC47AF vabdl.s32 q2, d28, d31

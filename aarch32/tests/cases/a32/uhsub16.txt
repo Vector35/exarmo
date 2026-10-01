@@ -1,0 +1,19 @@
+// UHSUB16_A1 cond=xxxx|011|00|op1=111|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=11|1|Rm=xxxx
+// Uhsub16A1: UHSUB16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+c67ddf74 uhsub16gt sp, sp, r4
+a6711d79 uhsub16ge r1, r1, r9 (unpredictable)
+6671327b uhsub16vs r3, r1, r11 (unpredictable)
+567de670 uhsub16pl lr, sp, r0 (unpredictable)
+e67d2c7d uhsub16 r2, sp, sp (unpredictable)
+267c8e71 uhsub16hs r8, r12, r1 (unpredictable)
+36756878 uhsub16lo r6, r5, r8 (unpredictable)
+c67c1074 uhsub16gt r1, r12, r4 (unpredictable)
+// Binary Ninja's tests
+c6784f72 uhsub16gt r4, r8, r2
+e6784f72 uhsub16 r4, r8, r2
+0670047F uhsub16eq r0, r0, pc (unpredictable)
+F67DDF74 UNALLOCATED
+867FF174 uhsub16hi pc, pc, r4 (unpredictable)
+467DDF7D uhsub16mi sp, sp, sp
+167DDF74 uhsub16ne sp, sp, r4

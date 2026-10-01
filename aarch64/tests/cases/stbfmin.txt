@@ -1,0 +1,17 @@
+// STBFMIN_16 size=00|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=101|00|Rn=xxxxx|Rt=11111
+// Stbfmin16: STBFMIN  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+3C20D01F stbfmin h0, [x0]
+3C20D0FF stbfmin h0, [x7]
+3C20D1DF stbfmin h0, [x14]
+3C3FD3FF stbfmin h31, [sp]
+
+// STBFMINL_16 size=00|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=101|00|Rn=xxxxx|Rt=11111
+// Stbfminl16: STBFMINL  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+3C60D07F stbfminl h0, [x3]
+3C60D15F stbfminl h0, [x10]
+3C60D23F stbfminl h0, [x17]
+3C7FD01F stbfminl h31, [x0]
+3C60D3FF stbfminl h0, [sp]
+3C60D01F stbfminl h0, [x0]

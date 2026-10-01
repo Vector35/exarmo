@@ -1,0 +1,107 @@
+// MVN_i_T1 11110|i=x|0|op1=0011|S=0|Rn=1111|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// MvnIT1: MVN{<c>}{<q>}  <Rd>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f46f7158 mvn r1, #864
+f06f69a1 mvn r9, #84410368
+f06f5f77 mvn pc, #1035993088 (unpredictable)
+f06f1448 mvn r4, #4718664
+f46f0fa6 mvn pc, #5439488 (unpredictable)
+f46f06f9 mvn r6, #8159232
+F46F2000 mvn r0, #0x80000
+F46F31FF mvn r1, #0x1fe00
+F46F4180 mvn r1, #0x4000
+F46F7140 mvn r1, #0x300
+F46F7120 mvn r1, #0x280
+F46F7110 mvn r1, #0x240
+F46F7108 mvn r1, #0x220
+F46F7104 mvn r1, #0x210
+F46F7102 mvn r1, #0x208
+F46F7101 mvn r1, #0x204
+F06F0100 mvn r1, #0x0
+F06F01FF mvn r1, #0xff
+F06F1100 mvn r1, #0x0
+F06F11FF mvn r1, #0xff00ff
+F06F2100 mvn r1, #0x0
+F06F21FF mvn r1, #0xff00ff00
+F06F3100 mvn r1, #0x0
+F06F31FF mvn r1, #0xffffffff
+F06F4100 mvn r1, #0x80000000
+F06F41FF mvn r1, #0x7f800000
+F06F5100 mvn r1, #0x20000000
+F06F51FF mvn r1, #0x1fe00000
+F06F6100 mvn r1, #0x8000000
+F06F61FF mvn r1, #0x7f80000
+F06F7100 mvn r1, #0x2000000
+F06F71FF mvn r1, #0x1fe0000
+F46F0100 mvn r1, #0x800000
+F46F01FF mvn r1, #0x7f8000
+F46F1100 mvn r1, #0x200000
+F46F11FF mvn r1, #0x1fe000
+F46F2100 mvn r1, #0x80000
+F46F21FF mvn r1, #0x7f800
+F46F3100 mvn r1, #0x20000
+F46F4100 mvn r1, #0x8000
+F46F41FF mvn r1, #0x7f80
+F46F5100 mvn r1, #0x2000
+F46F51FF mvn r1, #0x1fe0
+F46F6100 mvn r1, #0x800
+F46F61FF mvn r1, #0x7f8
+F46F7100 mvn r1, #0x200
+F46F71FF mvn r1, #0x1fe
+F46F7158 [ne] mvnne r1, #0x360
+
+// MVNS_i_T1 11110|i=x|0|op1=0011|S=1|Rn=1111|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// MvnsIT1: MVNS{<c>}{<q>}  <Rd>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rd
+// IT state read: condition
+f07f70aa mvns r0, #22282240
+f07f62e8 mvns r2, #121634816
+f47f3cca mvns r12, #103424
+f47f25c0 mvns r5, #393216
+f47f18c2 mvns r8, #1589248
+f07f53c1 mvns r3, #404750336
+F07F0F00 mvns pc, #0x0 (unpredictable)
+F07F40FF mvns r0, #0x7f800000
+F07F7080 mvns r0, #0x1000000
+F07F7040 mvns r0, #0x3000000
+F07F7020 mvns r0, #0x2800000
+F07F7010 mvns r0, #0x2400000
+F07F7008 mvns r0, #0x2200000
+F07F7004 mvns r0, #0x2100000
+F07F7002 mvns r0, #0x2080000
+F07F7001 mvns r0, #0x2040000
+F07F0000 mvns r0, #0x0
+F07F00FF mvns r0, #0xff
+F07F1000 mvns r0, #0x0
+F07F10FF mvns r0, #0xff00ff
+F07F2000 mvns r0, #0x0
+F07F20FF mvns r0, #0xff00ff00
+F07F3000 mvns r0, #0x0
+F07F30FF mvns r0, #0xffffffff
+F07F4000 mvns r0, #0x80000000
+F07F5000 mvns r0, #0x20000000
+F07F50FF mvns r0, #0x1fe00000
+F07F6000 mvns r0, #0x8000000
+F07F60FF mvns r0, #0x7f80000
+F07F7000 mvns r0, #0x2000000
+F07F70FF mvns r0, #0x1fe0000
+F47F0000 mvns r0, #0x800000
+F47F00FF mvns r0, #0x7f8000
+F47F1000 mvns r0, #0x200000
+F47F10FF mvns r0, #0x1fe000
+F47F2000 mvns r0, #0x80000
+F47F20FF mvns r0, #0x7f800
+F47F3000 mvns r0, #0x20000
+F47F30FF mvns r0, #0x1fe00
+F47F4000 mvns r0, #0x8000
+F47F40FF mvns r0, #0x7f80
+F47F5000 mvns r0, #0x2000
+F47F50FF mvns r0, #0x1fe0
+F47F6000 mvns r0, #0x800
+F47F60FF mvns r0, #0x7f8
+F47F7000 mvns r0, #0x200
+F47F70FF mvns r0, #0x1fe
+F07F70AA [ne] mvnsne r0, #0x1540000

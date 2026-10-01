@@ -1,0 +1,57 @@
+// STFMAX_16 size=01|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=100|00|Rn=xxxxx|Rt=11111
+// Stfmax16: STFMAX  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+7C20C01F stfmax h0, [x0]
+7C20C0FF stfmax h0, [x7]
+7C20C1DF stfmax h0, [x14]
+7C3FC3FF stfmax h31, [sp]
+
+// STFMAX_32 size=10|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=100|00|Rn=xxxxx|Rt=11111
+// Stfmax32: STFMAX  <Ss>, [<Xn|SP>]
+// register fields: Rs, Rn
+BC20C0BF stfmax s0, [x5]
+BC20C19F stfmax s0, [x12]
+BC20C27F stfmax s0, [x19]
+BC3FC01F stfmax s31, [x0]
+BC20C3FF stfmax s0, [sp]
+BC20C01F stfmax s0, [x0]
+
+// STFMAX_64 size=11|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=100|00|Rn=xxxxx|Rt=11111
+// Stfmax64: STFMAX  <Ds>, [<Xn|SP>]
+// register fields: Rs, Rn
+FC20C07F stfmax d0, [x3]
+FC20C15F stfmax d0, [x10]
+FC20C23F stfmax d0, [x17]
+FC3FC01F stfmax d31, [x0]
+FC20C3FF stfmax d0, [sp]
+FC20C01F stfmax d0, [x0]
+
+// STFMAXL_16 size=01|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=100|00|Rn=xxxxx|Rt=11111
+// Stfmaxl16: STFMAXL  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+7C60C07F stfmaxl h0, [x3]
+7C60C15F stfmaxl h0, [x10]
+7C60C23F stfmaxl h0, [x17]
+7C7FC01F stfmaxl h31, [x0]
+7C60C3FF stfmaxl h0, [sp]
+7C60C01F stfmaxl h0, [x0]
+
+// STFMAXL_32 size=10|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=100|00|Rn=xxxxx|Rt=11111
+// Stfmaxl32: STFMAXL  <Ss>, [<Xn|SP>]
+// register fields: Rs, Rn
+BC60C03F stfmaxl s0, [x1]
+BC60C11F stfmaxl s0, [x8]
+BC60C1FF stfmaxl s0, [x15]
+BC7FC01F stfmaxl s31, [x0]
+BC60C3FF stfmaxl s0, [sp]
+BC60C01F stfmaxl s0, [x0]
+
+// STFMAXL_64 size=11|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=100|00|Rn=xxxxx|Rt=11111
+// Stfmaxl64: STFMAXL  <Ds>, [<Xn|SP>]
+// register fields: Rs, Rn
+FC60C0DF stfmaxl d0, [x6]
+FC60C1BF stfmaxl d0, [x13]
+FC60C29F stfmaxl d0, [x20]
+FC7FC01F stfmaxl d31, [x0]
+FC60C3FF stfmaxl d0, [sp]
+FC60C01F stfmaxl d0, [x0]

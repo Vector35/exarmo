@@ -1,0 +1,15 @@
+// SXTAH_T1 111|11010|0|op1=00|U=0|Rn=xxxx|1111|Rd=xxxx|1(0)|rotate=xx|Rm=xxxx
+// SxtahT1: SXTAH{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, ROR #<amount>}
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa07fee3 sxtah lr, r7, r3, ror #16 (unpredictable)
+fa05fded sxtah sp, r5, sp, ror #16 (unpredictable)
+fa0efabc sxtah r10, lr, r12, ror #24
+fa04ffb3 sxtah pc, r4, r3, ror #24 (unpredictable)
+fa09f9fe sxtah r9, r9, lr, ror #24 (unpredictable)
+fa06f4e6 sxtah r4, r6, r6, ror #16 (unpredictable)
+fa0cf3a7 sxtah r3, r12, r7, ror #16
+fa08f29c sxtah r2, r8, r12, ror #8
+FA00F0C0 sxtah r0, r0, r0 (unpredictable)
+FA07FEEF sxtah lr, r7, pc, ror #0x10 (unpredictable)
+FA07FEE3 [ne] sxtahne lr, r7, r3, ror #0x10 (unpredictable)

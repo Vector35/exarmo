@@ -1,0 +1,19 @@
+// VJCVT_T1 111|0|11|10|1|D=x|11|o1=1|opc2=001|Vd=xxxx|10|size=11|o3=1|1|M=x|0|Vm=xxxx
+// VjcvtT1: VJCVT{<q>}.S32.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+eef9ebed vjcvt.s32.f64 s29, d29
+eeb94bc1 vjcvt.s32.f64 s8, d1
+eef9abc6 vjcvt.s32.f64 s21, d6
+eef9abe0 vjcvt.s32.f64 s21, d16
+eeb91bcb vjcvt.s32.f64 s2, d11
+eeb92bcb vjcvt.s32.f64 s4, d11
+eef96bcc vjcvt.s32.f64 s13, d12
+eef93bc1 vjcvt.s32.f64 s7, d1
+EEF90BEF vjcvt.s32.f64 s1, d31
+EEF9FBE8 vjcvt.s32.f64 s31, d24
+EEF98BE4 vjcvt.s32.f64 s17, d20
+EEB90BE2 vjcvt.s32.f64 s0, d18
+EEB9FBC0 vjcvt.s32.f64 s30, d0
+EEF90BCF vjcvt.s32.f64 s1, d15
+EEF9FBEF vjcvt.s32.f64 s31, d31

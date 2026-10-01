@@ -1,0 +1,27 @@
+// uminv_r_p_z_ 000|0010|0|size=xx|0|010|op=1|U=1|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// UminvRPZ: UMINV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+04CB3ABB uminv d27, p6, z21.d
+040B3DE3 uminv b3, p7, z15.b
+048B36D6 uminv s22, p5, z22.s
+048B2A25 uminv s5, p2, z17.s
+04CB3A18 uminv d24, p6, z16.d
+044B2C34 uminv h20, p3, z1.h
+044B3380 uminv h0, p4, z28.h
+044B3A55 uminv h21, p6, z18.h
+04CB22FE uminv d30, p0, z23.d
+044B3FEB uminv h11, p7, z31.h
+048B3FC5 uminv s5, p7, z30.s
+044B3287 uminv h7, p4, z20.h
+044B2263 uminv h3, p0, z19.h
+048B2B56 uminv s22, p2, z26.s
+048B3320 uminv s0, p4, z25.s
+044B2BC7 uminv h7, p2, z30.h
+04CB241F uminv d31, p1, z0.d
+040B38C0 uminv b0, p6, z6.b
+040B3ABF uminv b31, p6, z21.b
+044B3ABF uminv h31, p6, z21.h
+048B3ABF uminv s31, p6, z21.s
+04CB3AA0 uminv d0, p6, z21.d
+04CB3AA6 uminv d6, p6, z21.d

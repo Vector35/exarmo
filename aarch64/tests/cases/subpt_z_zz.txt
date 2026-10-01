@@ -1,0 +1,10 @@
+// subpt_z_zz_ 000|0010|0|size=11|1|Zm=xxxxx|000|opc=011|Zn=xxxxx|Zd=xxxxx
+// SubptZZz: SUBPT  <Zd>.D, <Zn>.D, <Zm>.D
+// register fields: Zm, Zn, Zd
+04E00C04 subpt z4.d, z0.d, z0.d
+04E00C0B subpt z11.d, z0.d, z0.d
+04E00C12 subpt z18.d, z0.d, z0.d
+04FF0FE0 subpt z0.d, z31.d, z31.d
+04E00C1F subpt z31.d, z0.d, z0.d
+04E00C00 subpt z0.d, z0.d, z0.d
+04E10C43 subpt z3.d, z2.d, z1.d

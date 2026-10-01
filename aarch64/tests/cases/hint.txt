@@ -1,0 +1,16 @@
+// HINT_HM_hints 110|101|01000000110010|CRm=xxxx|op2=xxx|11111
+// HintHmHints: HINT  #<imm>
+// read together by <imm>: CRm, op2
+// https://github.com/Vector35/arch-arm64/issues/78
+D5032FFF hint #0x7f
+D5032F1F hint #0x78
+D5032F3F hint #0x79
+D5032F5F hint #0x7a
+D5032F7F hint #0x7b
+D5032F9F hint #0x7c
+D5032FBF hint #0x7d
+D5032FDF hint #0x7e
+D50328FF hint #0x47
+D503243F hint #0x21
+D50322FF hint #0x17
+D50321FF hint #0xf

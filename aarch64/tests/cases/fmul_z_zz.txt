@@ -1,0 +1,21 @@
+// fmul_z_zz_ 011|0010|1|size=xx|0|Zm=xxxxx|000|opc=010|Zn=xxxxx|Zd=xxxxx
+// FmulZZz: FMUL  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+65CE09F5 fmul z21.d, z15.d, z14.d
+658E0A67 fmul z7.s, z19.s, z14.s
+65990976 fmul z22.s, z11.s, z25.s
+65D60B6D fmul z13.d, z27.d, z22.d
+65CB0B2B fmul z11.d, z25.d, z11.d
+65DC0993 fmul z19.d, z12.d, z28.d
+659D0969 fmul z9.s, z11.s, z29.s
+654809F2 fmul z18.h, z15.h, z8.h
+658709E6 fmul z6.s, z15.s, z7.s
+659508B4 fmul z20.s, z5.s, z21.s
+65DD08C3 fmul z3.d, z6.d, z29.d
+65870B6B fmul z11.s, z27.s, z7.s
+65C90B32 fmul z18.d, z25.d, z9.d
+655108AB fmul z11.h, z5.h, z17.h
+65D609DB fmul z27.d, z14.d, z22.d
+654E082C fmul z12.h, z1.h, z14.h
+65C00800 fmul z0.d, z0.d, z0.d
+65DF0BFF fmul z31.d, z31.d, z31.d

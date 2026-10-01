@@ -1,0 +1,95 @@
+// STRH_32_ldst_immpost size=01|11|1|VR=0|0|0|opc=00|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Strh32LdstImmpost: STRH  <Wt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+781955F1 strh w17, [x15], #-0x6b
+781A95B9 strh w25, [x13], #-0x57
+7805962E strh w14, [x17], #0x59
+781CB615 strh w21, [x16], #-0x35
+781F95BB strh w27, [x13], #-0x7
+781CC593 strh w19, [x12], #-0x34
+7816B728 strh w8, [x25], #-0x95
+7810543F strh wzr, [x1], #-0xfb
+780AE6E1 strh w1, [x23], #0xae
+78033642 strh w2, [x18], #0x33
+781F0720 strh w0, [x25], #-0x10
+781F251B strh w27, [x8], #-0xe
+780934C6 strh w6, [x6], #0x93 (unpredictable)
+7807C7CA strh w10, [lr], #0x7c
+781FF431 strh w17, [x1], #-0x1
+7802F575 strh w21, [x11], #0x2f
+78000411 strh w17, [x0], #0x0
+781957F1 strh w17, [sp], #-0x6b
+781005F1 strh w17, [x15], #-0x100
+780805F1 strh w17, [x15], #0x80
+780405F1 strh w17, [x15], #0x40
+780205F1 strh w17, [x15], #0x20
+780105F1 strh w17, [x15], #0x10
+780085F1 strh w17, [x15], #0x8
+780045F1 strh w17, [x15], #0x4
+780025F1 strh w17, [x15], #0x2
+780015F1 strh w17, [x15], #0x1
+
+// STRH_32_ldst_immpre size=01|11|1|VR=0|0|0|opc=00|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Strh32LdstImmpre: STRH  <Wt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+780B6EEE strh w14, [x23, #0xb6]!
+78007EAB strh w11, [x21, #0x7]!
+7809CD53 strh w19, [x10, #0x9c]!
+781B3D8C strh w12, [x12, #-0x4d]! (unpredictable)
+781CDC89 strh w9, [x4, #-0x33]!
+781A2D48 strh w8, [x10, #-0x5e]!
+7813CF15 strh w21, [x24, #-0xc4]!
+780FDF90 strh w16, [x28, #0xfd]!
+78032C38 strh w24, [x1, #0x32]!
+78018CDD strh w29, [x6, #0x18]!
+78051F8C strh w12, [x28, #0x51]!
+781F5E6F strh w15, [x19, #-0xb]!
+781D2D66 strh w6, [x11, #-0x2e]!
+78172C77 strh w23, [x3, #-0x8e]!
+78038CDC strh w28, [x6, #0x38]!
+78074F18 strh w24, [x24, #0x74]! (unpredictable)
+78000C00 strh w0, [x0, #0x0]! (unpredictable)
+781FFFFF strh wzr, [sp, #-0x1]!
+78100EEE strh w14, [x23, #-0x100]!
+78080EEE strh w14, [x23, #0x80]!
+78040EEE strh w14, [x23, #0x40]!
+78020EEE strh w14, [x23, #0x20]!
+78010EEE strh w14, [x23, #0x10]!
+78008EEE strh w14, [x23, #0x8]!
+78004EEE strh w14, [x23, #0x4]!
+78002EEE strh w14, [x23, #0x2]!
+78001EEE strh w14, [x23, #0x1]!
+
+// STRH_32_ldst_pos size=01|11|1|VR=0|0|1|opc=00|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Strh32LdstPos: STRH  <Wt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+793A8CDB strh w27, [x6, #0x1d46]
+79253D7D strh w29, [x11, #0x129e]
+79087908 strh w8, [x8, #0x43c]
+793AFF5C strh w28, [x26, #0x1d7e]
+792CBD96 strh w22, [x12, #0x165e]
+7939858D strh w13, [x12, #0x1cc2]
+792CB060 strh w0, [x3, #0x1658]
+790B0DD5 strh w21, [x14, #0x586]
+792C5321 strh w1, [x25, #0x1628]
+793BACCF strh w15, [x6, #0x1dd6]
+7931F083 strh w3, [x4, #0x18f8]
+7917FF64 strh w4, [x27, #0xbfe]
+7907D6CA strh w10, [x22, #0x3ea]
+792887E7 strh w7, [sp, #0x1442]
+793C6A27 strh w7, [x17, #0x1e34]
+791FCD78 strh w24, [x11, #0xfe6]
+7900001F strh wzr, [x0]
+793FFCDB strh w27, [x6, #0x1ffe]
+792000DB strh w27, [x6, #0x1000]
+791000DB strh w27, [x6, #0x800]
+790800DB strh w27, [x6, #0x400]
+790400DB strh w27, [x6, #0x200]
+790200DB strh w27, [x6, #0x100]
+790100DB strh w27, [x6, #0x80]
+790080DB strh w27, [x6, #0x40]
+790040DB strh w27, [x6, #0x20]
+790020DB strh w27, [x6, #0x10]
+790010DB strh w27, [x6, #0x8]
+790008DB strh w27, [x6, #0x4]
+790004DB strh w27, [x6, #0x2]

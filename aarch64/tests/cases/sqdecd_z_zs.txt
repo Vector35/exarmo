@@ -1,0 +1,22 @@
+// sqdecd_z_zs_ 000|0010|0|size=11|1|0|imm4=xxxx|11|00|D=1|U=0|pattern=xxxxx|Zdn=xxxxx
+// SqdecdZZs: SQDECD  <Zdn>.D{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04EECB40 sqdecd z0.d, #0x1a, mul #0xf
+04E4C96B sqdecd z11.d, vl64, mul #0x5
+04E8C81E sqdecd z30.d, pow2, mul #0x9
+04EEC899 sqdecd z25.d, vl4, mul #0xf
+04E5C993 sqdecd z19.d, vl128, mul #0x6
+04ECCA9E sqdecd z30.d, #0x14, mul #0xd
+04EFCA9B sqdecd z27.d, #0x14, mul #0x10
+04E4CAA1 sqdecd z1.d, #0x15, mul #0x5
+04E0CA15 sqdecd z21.d, #0x10
+04E4CBC5 sqdecd z5.d, mul3, mul #0x5
+04E3CA9A sqdecd z26.d, #0x14, mul #0x4
+04EFC96E sqdecd z14.d, vl64, mul #0x10
+04EDC961 sqdecd z1.d, vl64, mul #0xe
+04E2C916 sqdecd z22.d, vl8, mul #0x3
+04E6C94E sqdecd z14.d, vl32, mul #0x7
+04EAC8F3 sqdecd z19.d, vl7, mul #0xb
+04EECBFF sqdecd z31.d, all, mul #0xf
+04E1C840 sqdecd z0.d, vl2, mul #0x2
+04EEC820 sqdecd z0.d, vl1, mul #0xf

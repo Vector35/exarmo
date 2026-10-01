@@ -1,0 +1,41 @@
+// TBNZ_only_testbranch b5=x|01|101|1|op=1|b40=xxxxx|imm14=xxxxxxxxxxxxxx|Rt=xxxxx
+// TbnzOnlyTestbranch: TBNZ  <t>, #<imm>, <label>
+// read together by <t>: b5, Rt
+// read together by <imm>: b5, b40
+// register fields: Rt
+3782E67B tbnz w27, #0x10, 0x8000000000005cd0
+377BA894 tbnz w20, #0xf, 0x8000000000007514
+B72DA58C tbnz x12, #0x25, 0x7fffffffffffb4b4
+37879149 tbnz w9, #0x10, 0x7ffffffffffff22c
+B7D9C987 tbnz x7, #0x3b, 0x8000000000003934
+378DAAE8 tbnz w8, #0x11, 0x7fffffffffffb560
+B7D0E7DA tbnz x26, #0x3a, 0x8000000000001cfc
+3734336C tbnz w12, #0x6, 0x7fffffffffff8670
+B7D6B88F tbnz x15, #0x3a, 0x7fffffffffffd714
+B795D307 tbnz x7, #0x32, 0x7fffffffffffba64
+B774E7C4 tbnz x4, #0x2e, 0x7fffffffffff9cfc
+B736FF83 tbnz x3, #0x26, 0x7fffffffffffdff4
+37941A34 tbnz w20, #0x12, 0x7fffffffffff8348
+B72E12D7 tbnz x23, #0x25, 0x7fffffffffffc25c
+B78F46F7 tbnz x23, #0x31, 0x7fffffffffffe8e0
+B7372300 tbnz x0, #0x26, 0x7fffffffffffe464
+3700001F tbnz wzr, #0x0, 0x8000000000000004
+37FFFFFB tbnz w27, #0x1f, 0x8000000000000000
+3782E660 tbnz w0, #0x10, 0x8000000000005cd0
+B782E67F tbnz xzr, #0x30, 0x8000000000005cd0
+B702E67B tbnz x27, #0x20, 0x8000000000005cd0
+B7FAE67B tbnz x27, #0x3f, 0x8000000000005cd0
+3744001B tbnz w27, #0x8, 0x7fffffffffff8004
+3722001B tbnz w27, #0x4, 0x8000000000004004
+3711001B tbnz w27, #0x2, 0x8000000000002004
+3708801B tbnz w27, #0x1, 0x8000000000001004
+3780401B tbnz w27, #0x10, 0x8000000000000804
+3780201B tbnz w27, #0x10, 0x8000000000000404
+3780101B tbnz w27, #0x10, 0x8000000000000204
+3780081B tbnz w27, #0x10, 0x8000000000000104
+3780041B tbnz w27, #0x10, 0x8000000000000084
+3780021B tbnz w27, #0x10, 0x8000000000000044
+3780011B tbnz w27, #0x10, 0x8000000000000024
+3780009B tbnz w27, #0x10, 0x8000000000000014
+3780005B tbnz w27, #0x10, 0x800000000000000c
+3780003B tbnz w27, #0x10, 0x8000000000000008

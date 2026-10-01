@@ -1,0 +1,15 @@
+// ld1q_z_p_ar_d_64_unscaled 110|0010|00|00|Rm=xxxxx|101|Pg=xxx|Zn=xxxxx|Zt=xxxxx
+// Ld1qZPArD64Unscaled: LD1Q  { <Zt>.Q }, <Pg>/Z, [<Zn>.D{, <Xm>}]
+// register fields: Rm, Pg, Zn, Zt
+C400A004 ld1q {z4.q}, p0/z, [z0.d, x0]
+C400A00B ld1q {z11.q}, p0/z, [z0.d, x0]
+C400A012 ld1q {z18.q}, p0/z, [z0.d, x0]
+C41FA7E0 ld1q {z0.q}, p1/z, [z31.d]
+C400A81F ld1q {z31.q}, p2/z, [z0.d, x0]
+C400AC04 ld1q {z4.q}, p3/z, [z0.d, x0]
+C400B004 ld1q {z4.q}, p4/z, [z0.d, x0]
+C400B404 ld1q {z4.q}, p5/z, [z0.d, x0]
+C400B804 ld1q {z4.q}, p6/z, [z0.d, x0]
+C400BC04 ld1q {z4.q}, p7/z, [z0.d, x0]
+C400A000 ld1q {z0.q}, p0/z, [z0.d, x0]
+C401A864 ld1q {z4.q}, p2/z, [z3.d, x1]

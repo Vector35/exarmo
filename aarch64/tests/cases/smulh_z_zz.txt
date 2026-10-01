@@ -1,0 +1,15 @@
+// smulh_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|011|0|1|U=0|Zn=xxxxx|Zd=xxxxx
+// SmulhZZz: SMULH  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+04F46BBF smulh z31.d, z29.d, z20.d
+04E06B94 smulh z20.d, z28.d, z0.d
+04616ADE smulh z30.h, z22.h, z1.h
+0435688B smulh z11.b, z4.b, z21.b
+04FB6B2A smulh z10.d, z25.d, z27.d
+04A66A92 smulh z18.s, z20.s, z6.s
+04F068EC smulh z12.d, z7.d, z16.d
+04226A14 smulh z20.b, z16.b, z2.b
+04FF6800 smulh z0.d, z0.d, z31.d
+04F46BFF smulh z31.d, z31.d, z20.d
+04F46A9F smulh z31.d, z20.d, z20.d
+04F46BB4 smulh z20.d, z29.d, z20.d

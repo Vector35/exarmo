@@ -1,0 +1,113 @@
+// LDRH_i_T1 1000|L=1|imm5=xxxxx|Rn=xxx|Rt=xxx
+// LdrhIT1: LDRH{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+8800 ldrh r0, [r0]
+8801 ldrh r1, [r0]
+8802 ldrh r2, [r0]
+8803 ldrh r3, [r0]
+8804 ldrh r4, [r0]
+8805 ldrh r5, [r0]
+8806 ldrh r6, [r0]
+8807 ldrh r7, [r0]
+8FC8 ldrh r0, [r1, #0x3e]
+8C10 ldrh r0, [r2, #0x20]
+8A18 ldrh r0, [r3, #0x10]
+8920 ldrh r0, [r4, #0x8]
+88A8 ldrh r0, [r5, #0x4]
+8870 ldrh r0, [r6, #0x2]
+8838 ldrh r0, [r7]
+8800 [ne] ldrhne r0, [r0]
+
+// LDRH_i_T2 111|1100|01|size=01|L=1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrhIT2: LDRH{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+F8B00000 ldrh r0, [r0]
+F8B00FFF ldrh r0, [r0, #0xfff]
+F8B00800 ldrh r0, [r0, #0x800]
+F8B00400 ldrh r0, [r0, #0x400]
+F8B00200 ldrh r0, [r0, #0x200]
+F8B00100 ldrh r0, [r0, #0x100]
+F8B00080 ldrh r0, [r0, #0x80]
+F8B00040 ldrh r0, [r0, #0x40]
+F8B00020 ldrh r0, [r0, #0x20]
+F8B00010 ldrh r0, [r0, #0x10]
+F8B00008 ldrh r0, [r0, #0x8]
+F8B00004 ldrh r0, [r0, #0x4]
+F8B00002 ldrh r0, [r0, #0x2]
+F8B00001 ldrh r0, [r0, #0x1]
+F8B00000 [ne] ldrhne r0, [r0]
+F8B12000 ldrh r2, [r1]
+
+// LDRH_i_T3_off 111110000|size=01|L=1|Rn=xxxx|Rt=xxxx|1|P=1|U=0|W=0|imm8=xxxxxxxx
+// LdrhIT3Off: LDRH{<c>}{<q>}  <Rt>, [<Rn> {, #-<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f838bcd0 ldrh r11, [r8, #-208]
+f8309c5e ldrh r9, [r0, #-94]
+f8303c3a ldrh r3, [r0, #-58]
+f83bdcc3 ldrh sp, [r11, #-195]
+f83b7c09 ldrh r7, [r11, #-9]
+f83c1c3c ldrh r1, [r12, #-60]
+f8336cef ldrh r6, [r3, #-239]
+f8360c78 ldrh r0, [r6, #-120]
+F8388C00 ldrh r8, [r8, #-0x0]
+F838BCFF ldrh r11, [r8, #-0xff]
+F838BC80 ldrh r11, [r8, #-0x80]
+F838BC40 ldrh r11, [r8, #-0x40]
+F838BC20 ldrh r11, [r8, #-0x20]
+F838BC10 ldrh r11, [r8, #-0x10]
+F838BC08 ldrh r11, [r8, #-0x8]
+F838BC04 ldrh r11, [r8, #-0x4]
+F838BC02 ldrh r11, [r8, #-0x2]
+F838BC01 ldrh r11, [r8, #-0x1]
+F838BCD0 [ne] ldrhne r11, [r8, #-0xd0]
+
+// LDRH_i_T3_post 111110000|size=01|L=1|Rn=xxxx|Rt=xxxx|1|P=0|U=x|W=1|imm8=xxxxxxxx
+// LdrhIT3Post: LDRH{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// register fields: Rn, Rt
+// IT state read: condition
+f8316911 ldrh r6, [r1], #-17
+f83569b2 ldrh r6, [r5], #-178
+f836fb9f ldrh pc, [r6], #159 (unpredictable)
+f8393bf3 ldrh r3, [r9], #243
+f838fbee ldrh pc, [r8], #238 (unpredictable)
+f8380b14 ldrh r0, [r8], #20
+f838993a ldrh r9, [r8], #-58
+f834a909 ldrh r10, [r4], #-9
+F8306900 ldrh r6, [r0], #-0x0
+F83119FF ldrh r1, [r1], #-0xff (unpredictable)
+F8316980 ldrh r6, [r1], #-0x80
+F8316940 ldrh r6, [r1], #-0x40
+F8316920 ldrh r6, [r1], #-0x20
+F8316910 ldrh r6, [r1], #-0x10
+F8316908 ldrh r6, [r1], #-0x8
+F8316904 ldrh r6, [r1], #-0x4
+F8316902 ldrh r6, [r1], #-0x2
+F8316901 ldrh r6, [r1], #-0x1
+F8316911 [ne] ldrhne r6, [r1], #-0x11
+
+// LDRH_i_T3_pre 111110000|size=01|L=1|Rn=xxxx|Rt=xxxx|1|P=1|U=x|W=1|imm8=xxxxxxxx
+// LdrhIT3Pre: LDRH{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn, Rt
+// IT state read: condition
+f83e2d27 ldrh r2, [lr, #-39]!
+f83d6d97 ldrh r6, [sp, #-151]!
+f838bd44 ldrh r11, [r8, #-68]!
+f83a5d98 ldrh r5, [r10, #-152]!
+f836bdf6 ldrh r11, [r6, #-246]!
+f8352f5e ldrh r2, [r5, #94]!
+f8347d87 ldrh r7, [r4, #-135]!
+f8322f24 ldrh r2, [r2, #36]! (unpredictable)
+F8300D00 ldrh r0, [r0, #-0x0]! (unpredictable)
+F83EFDFF ldrh pc, [lr, #-0xff]! (unpredictable)
+F83E2D80 ldrh r2, [lr, #-0x80]!
+F83E2D40 ldrh r2, [lr, #-0x40]!
+F83E2D20 ldrh r2, [lr, #-0x20]!
+F83E2D10 ldrh r2, [lr, #-0x10]!
+F83E2D08 ldrh r2, [lr, #-0x8]!
+F83E2D04 ldrh r2, [lr, #-0x4]!
+F83E2D02 ldrh r2, [lr, #-0x2]!
+F83E2D01 ldrh r2, [lr, #-0x1]!
+F83E2D27 [ne] ldrhne r2, [lr, #-0x27]!

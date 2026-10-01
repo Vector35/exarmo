@@ -1,0 +1,23 @@
+// SHA256H_QQV_cryptosha3 0101|111|0|size=00|0|Rm=xxxxx|0|10|P=0|00|Rn=xxxxx|Rd=xxxxx
+// Sha256hQqvCryptosha3: SHA256H  <Qd>, <Qn>, <Vm>.4S
+// register fields: Rm, Rn, Rd
+5E1E4007 sha256h q7, q0, v30.4s
+5E044170 sha256h q16, q11, v4.4s
+5E1C4237 sha256h q23, q17, v28.4s
+5E1A412B sha256h q11, q9, v26.4s
+5E1F4359 sha256h q25, q26, v31.4s
+5E1440EE sha256h q14, q7, v20.4s
+5E1F4348 sha256h q8, q26, v31.4s
+5E1441C7 sha256h q7, q14, v20.4s
+5E1B40EE sha256h q14, q7, v27.4s
+5E08438D sha256h q13, q28, v8.4s
+5E1B4037 sha256h q23, q1, v27.4s
+5E114287 sha256h q7, q20, v17.4s
+5E00417C sha256h q28, q11, v0.4s
+5E13412D sha256h q13, q9, v19.4s
+5E0F4084 sha256h q4, q4, v15.4s
+5E034333 sha256h q19, q25, v3.4s
+5E1E43E0 sha256h q0, q31, v30.4s
+5E1E401F sha256h q31, q0, v30.4s
+5E1E43C7 sha256h q7, q30, v30.4s
+5E1E401E sha256h q30, q0, v30.4s

@@ -1,0 +1,47 @@
+// LSRV_32_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|0010|op2=01|Rn=xxxxx|Rd=xxxxx
+// Lsrv32Dp2src: LSRV  <Wd>, <Wn>, <Wm>
+// LsrLsrv32Dp2src: LSR  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AD22518 lsr w24, w8, w18
+1AC02713 lsr w19, w24, w0
+1ACE27E3 lsr w3, wzr, w14
+1AC0255C lsr w28, w10, w0
+1ADD256F lsr w15, w11, w29
+1AC62596 lsr w22, w12, w6
+1AC52538 lsr w24, w9, w5
+1AD926B4 lsr w20, w21, w25
+1AC32766 lsr w6, w27, w3
+1ACA244F lsr w15, w2, w10
+1ACD2713 lsr w19, w24, w13
+1AD626D2 lsr w18, w22, w22
+1ACA2776 lsr w22, w27, w10
+1AC82611 lsr w17, w16, w8
+1ADF2450 lsr w16, w2, wzr
+1AD4274E lsr w14, w26, w20
+1AD22400 lsr w0, w0, w18
+1AD2251F lsr wzr, w8, w18
+1AD22512 lsr w18, w8, w18
+
+// LSRV_64_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|0010|op2=01|Rn=xxxxx|Rd=xxxxx
+// Lsrv64Dp2src: LSRV  <Xd>, <Xn>, <Xm>
+// LsrLsrv64Dp2src: LSR  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9ACE2509 lsr x9, x8, x14
+9AC02700 lsr x0, x24, x0
+9AD2259B lsr x27, x12, x18
+9ADD27F5 lsr x21, xzr, fp
+9AC225D1 lsr x17, x14, x2
+9AD3243B lsr x27, x1, x19
+9ACC2559 lsr x25, x10, x12
+9AC0275E lsr lr, x26, x0
+9ACC2712 lsr x18, x24, x12
+9ADF25C7 lsr x7, x14, xzr
+9AC026E4 lsr x4, x23, x0
+9AD22771 lsr x17, x27, x18
+9AC82454 lsr x20, x2, x8
+9AD0277E lsr lr, x27, x16
+9ADA2620 lsr x0, x17, x26
+9ACF276C lsr x12, x27, x15
+9ACE241F lsr xzr, x0, x14
+9ACE25C9 lsr x9, x14, x14
+9ACE2508 lsr x8, x8, x14

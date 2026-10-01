@@ -1,0 +1,71 @@
+// VLDR_l_A1_D cond=xxxx|110|P=1|U=x|D=x|W=0|L=1|Rn=1111|Vd=xxxx|10|size=11|imm8=xxxxxxxx
+// VldrLA1D: VLDR{<c>}{<q>}{<.64>}  <Dd>, <label>
+// read together by <Dd>: D, Vd
+6d1f2b4f vldrvs d2, 0xfecc
+9ddf1b80 vldrls d17, 0x10208
+5d9f4bae vldrpl d4, 0x102c0
+7d5f2bd3 vldrvc d18, 0xfcbc
+6ddf1b5f vldrvs d17, 0x10184
+9d5f1b86 vldrls d17, 0xfdf0
+bd1f5bb2 vldrlt d5, 0xfd40
+9d9f3b2d vldrls d3, 0x100bc
+// Binary Ninja's tests
+ed1f3b00 vldr d3, 0x10008
+ed9f3b00 vldr d3, 0x10008
+0D1F0BFF vldreq d0, 0xfc0c
+FD1F2B4F UNALLOCATED
+8D1FFB40 vldrhi d15, 0xff08
+4D1F8B20 vldrmi d8, 0xff88
+2D1F0B10 vldrcs d0, 0xffc8
+1D1FFB08 vldrne d15, 0xffe8
+6D5F0B04 vldrvs d16, 0xfff8
+6D5FFB02 vldrvs d31, 0x10000
+6D1F2B01 vldrvs d2, 0x10004
+
+// VLDR_l_A1_H cond=xxxx|110|P=1|U=x|D=x|W=0|L=1|Rn=1111|Vd=xxxx|10|size=01|imm8=xxxxxxxx
+// VldrLA1H: VLDR{<c>}{<q>}.16  <Sd>, <label>
+// read together by <Sd>: D, Vd
+2d5f3903 vldrhs.16 s7, 0x10002 (unpredictable)
+dd5f6961 vldrle.16 s13, 0xff46 (unpredictable)
+bddfe9ac vldrlt.16 s29, 0x10160 (unpredictable)
+4d9f695f vldrmi.16 s12, 0x100c6 (unpredictable)
+ad9f793b vldrge.16 s14, 0x1007e (unpredictable)
+7d1fb94f vldrvc.16 s22, 0xff6a (unpredictable)
+ad1f890d vldrge.16 s16, 0xffee (unpredictable)
+bd1fd9fa vldrlt.16 s26, 0xfe14 (unpredictable)
+0D5F0900 vldreq.16 s1, 0x10008 (unpredictable)
+FD5F3903 UNALLOCATED
+8D5FF9FF vldrhi.16 s31, 0xfe0a (unpredictable)
+1D5F4980 vldrne.16 s9, 0xff08 (unpredictable)
+2D5F2940 vldrcs.16 s5, 0xff88 (unpredictable)
+2D5F1920 vldrcs.16 s3, 0xffc8 (unpredictable)
+2D1F0910 vldrcs.16 s0, 0xffe8 (unpredictable)
+2D1FF908 vldrcs.16 s30, 0xfff8 (unpredictable)
+2D5F0904 vldrcs.16 s1, 0x10000 (unpredictable)
+2D5FF902 vldrcs.16 s31, 0x10004 (unpredictable)
+2D5F3901 vldrcs.16 s7, 0x10006 (unpredictable)
+
+// VLDR_l_A1_S cond=xxxx|110|P=1|U=x|D=x|W=0|L=1|Rn=1111|Vd=xxxx|10|size=10|imm8=xxxxxxxx
+// VldrLA1S: VLDR{<c>}{<q>}{<.32>}  <Sd>, <label>
+// read together by <Sd>: D, Vd
+ad5fba4f vldrge s23, 0xfecc
+6ddf8a56 vldrvs s17, 0x10160
+bd1ffae0 vldrlt s30, 0xfc88
+ad9f8a3f vldrge s16, 0x10104
+5d9fbaf1 vldrpl s22, 0x103cc
+6d5f9a1d vldrvs s19, 0xff94
+eddf4a33 vldr s9, 0x100d4
+7d9fbafd vldrvc s22, 0x103fc
+// Binary Ninja's tests
+ed5f2a00 vldr s5, 0x10008
+eddf2a00 vldr s5, 0x10008
+0D5F0AFF vldreq s1, 0xfc0c
+FD5FBA4F UNALLOCATED
+8D5F1A80 vldrhi s3, 0xfe08
+4D1F0A40 vldrmi s0, 0xff08
+2D5F0A20 vldrcs s1, 0xff88
+1D5FFA10 vldrne s31, 0xffc8
+AD5FBA08 vldrge s23, 0xffe8
+AD5FBA04 vldrge s23, 0xfff8
+AD5FBA02 vldrge s23, 0x10000
+AD5FBA01 vldrge s23, 0x10004

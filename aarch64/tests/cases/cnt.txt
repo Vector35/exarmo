@@ -1,0 +1,17 @@
+// CNT_32_dp_1src sf=0|1|S=0|11010110|opcode2=00000|opcode=000111|Rn=xxxxx|Rd=xxxxx
+// Cnt32Dp1src: CNT  <Wd>, <Wn>
+// register fields: Rn, Rd
+5AC01C02 cnt w2, w0
+5AC01C09 cnt w9, w0
+5AC01C10 cnt w16, w0
+5AC01FE0 cnt w0, wzr
+5AC01C1F cnt wzr, w0
+5AC01C00 cnt w0, w0
+
+// CNT_64_dp_1src sf=1|1|S=0|11010110|opcode2=00000|opcode=000111|Rn=xxxxx|Rd=xxxxx
+// Cnt64Dp1src: CNT  <Xd>, <Xn>
+// register fields: Rn, Rd
+DAC01C00 cnt x0, x0
+DAC01C07 cnt x7, x0
+DAC01C0E cnt x14, x0
+DAC01FFF cnt xzr, xzr

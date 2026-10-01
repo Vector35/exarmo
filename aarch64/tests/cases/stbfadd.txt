@@ -1,0 +1,19 @@
+// STBFADD_16 size=00|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=11111
+// Stbfadd16: STBFADD  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+3C20807F stbfadd h0, [x3]
+3C20815F stbfadd h0, [x10]
+3C20823F stbfadd h0, [x17]
+3C3F801F stbfadd h31, [x0]
+3C2083FF stbfadd h0, [sp]
+3C20801F stbfadd h0, [x0]
+
+// STBFADDL_16 size=00|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=000|00|Rn=xxxxx|Rt=11111
+// Stbfaddl16: STBFADDL  <Hs>, [<Xn|SP>]
+// register fields: Rs, Rn
+3C6080DF stbfaddl h0, [x6]
+3C6081BF stbfaddl h0, [x13]
+3C60829F stbfaddl h0, [x20]
+3C7F801F stbfaddl h31, [x0]
+3C6083FF stbfaddl h0, [sp]
+3C60801F stbfaddl h0, [x0]

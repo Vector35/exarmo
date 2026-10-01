@@ -1,0 +1,38 @@
+// SMULL_A1 cond=xxxx|0000|opc=110|S=0|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|1001|Rn=xxxx
+// SmullA1: SMULL{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+00c66798 smulleq r6, r6, r8, r7 (unpredictable)
+10c03d9e smullne r3, r0, lr, sp
+d0c15d9d smullle r5, r1, sp, sp
+80cbe597 smullhi lr, r11, r7, r5
+40cc389c smullmi r3, r12, r12, r8
+60cebc92 smullvs r11, lr, r2, r12
+00c54490 smulleq r4, r5, r0, r4
+80ce7996 smullhi r7, lr, r6, r9
+// Binary Ninja's tests
+00c38594 smulleq r8, r3, r4, r5
+e0c93190 smull r3, r9, r0, r1
+F0C66798 UNALLOCATED
+20CF009F smullcs r0, pc, pc, r0 (unpredictable)
+00C6FF98 smulleq pc, r6, r8, pc (unpredictable)
+00C66696 smulleq r6, r6, r6, r6 (unpredictable)
+
+// SMULLS_A1 cond=xxxx|0000|opc=110|S=1|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|1001|Rn=xxxx
+// SmullsA1: SMULLS{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+50d51696 smullspl r1, r5, r6, r6
+00d7b894 smullseq r11, r7, r4, r8
+40d8e792 smullsmi lr, r8, r2, r7
+c0d4bb9d smullsgt r11, r4, sp, r11
+10db5f93 smullsne r5, r11, r3, pc (unpredictable)
+e0db2899 smulls r2, r11, r9, r8
+30d1b095 smullslo r11, r1, r5, r0
+30dfa293 smullslo r10, pc, r3, r2 (unpredictable)
+// Binary Ninja's tests
+00d38394 smullseq r8, r3, r4, r3
+e0d93290 smulls r3, r9, r0, r2
+F0D51696 UNALLOCATED
+80D0069F smullshi r0, r0, pc, r6 (unpredictable)
+20D5F695 smullscs pc, r5, r5, r6 (unpredictable)
+50D55696 smullspl r5, r5, r6, r6 (unpredictable)
+50D51691 smullspl r1, r5, r1, r6

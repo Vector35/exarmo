@@ -1,0 +1,37 @@
+// TEQ_r_A1 cond=xxxx|00010|opc=01|1|Rn=xxxx|(0)(0)(0)(0)|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// TeqRA1: TEQ{<c>}{<q>}  <Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rm
+a1344f8b teqge r4, r11, lsl #31 (unpredictable)
+813a6087 teqhi r10, r7, lsl #1 (unpredictable)
+61345b26 teqvs r4, r6, lsr #22 (unpredictable)
+e131860c teq r1, r12, lsl #12 (unpredictable)
+c13cd6ad teqgt r12, sp, lsr #13 (unpredictable)
+6139f4e1 teqvs r9, r1, ror #9 (unpredictable)
+c1387b64 teqgt r8, r4, ror #22 (unpredictable)
+913c1029 teqls r12, r9, lsr #32 (unpredictable)
+// Binary Ninja's tests
+e1340005 teq r4, r5
+e1340285 teq r4, r5, lsl #5
+e13402a5 teq r4, r5, lsr #5
+e13402c5 teq r4, r5, asr #5
+e13402e5 teq r4, r5, ror #5
+01302800 teqeq r0, r0, lsl #0x10 (unpredictable)
+F1344F8B UNALLOCATED
+413F440F teqmi pc, pc, lsl #0x8 (unpredictable)
+21344204 teqcs r4, r4, lsl #0x4 (unpredictable)
+1134410B teqne r4, r11, lsl #0x2 (unpredictable)
+
+// TEQ_r_A1_RRX cond=xxxx|00010|opc=01|1|Rn=xxxx|(0)(0)(0)(0)|imm5=00000|stype=11|0|Rm=xxxx
+// TeqRA1Rrx: TEQ{<c>}{<q>}  <Rn>, <Rm>, RRX
+// register fields: Rn, Rm
+b13d106e teqlt sp, lr, rrx (unpredictable)
+51393069 teqpl r9, r9, rrx (unpredictable)
+41378069 teqmi r7, r9, rrx (unpredictable)
+01392061 teqeq r9, r1, rrx (unpredictable)
+71340067 teqvc r4, r7, rrx
+113c0060 teqne r12, r0, rrx
+1137b06a teqne r7, r10, rrx (unpredictable)
+413fc06b teqmi pc, r11, rrx (unpredictable)
+F13D106E UNALLOCATED
+8130F06F teqhi r0, pc, rrx (unpredictable)
+213D406E teqcs sp, lr, rrx (unpredictable)

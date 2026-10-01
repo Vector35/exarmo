@@ -1,0 +1,25 @@
+// FCVTL_asimdmisc_L 0|Q=x|U=0|0|111|0|0|sz=x|10000|opcode=10111|10|Rn=xxxxx|Rd=xxxxx
+// FcvtlAsimdmiscL: FCVTL  <Vd>.<Ta>, <Vn>.<Tb>
+// FcvtlAsimdmiscL2: FCVTL2  <Vd>.<Ta>, <Vn>.<Tb>
+// read together by <Tb>: Q, sz
+// register fields: Rn, Rd
+// form chosen on: Q
+0E21781E fcvtl v30.4s, v0.4h
+4E217B19 fcvtl2 v25.4s, v24.8h
+4E217B37 fcvtl2 v23.4s, v25.8h
+4E617AC1 fcvtl2 v1.2d, v22.4s
+0E217AC2 fcvtl v2.4s, v22.4h
+4E217B55 fcvtl2 v21.4s, v26.8h
+4E617957 fcvtl2 v23.2d, v10.4s
+0E6179D6 fcvtl v22.2d, v14.2s
+4E617A63 fcvtl2 v3.2d, v19.4s
+0E617A8E fcvtl v14.2d, v20.2s
+0E617BED fcvtl v13.2d, v31.2s
+0E6179DB fcvtl v27.2d, v14.2s
+4E61787A fcvtl2 v26.2d, v3.4s
+0E217A0D fcvtl v13.4s, v16.4h
+4E217B1A fcvtl2 v26.4s, v24.8h
+0E2179D6 fcvtl v22.4s, v14.4h
+0E217800 fcvtl v0.4s, v0.4h
+0E21781F fcvtl v31.4s, v0.4h
+4E217800 fcvtl2 v0.4s, v0.8h

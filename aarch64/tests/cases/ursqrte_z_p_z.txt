@@ -1,0 +1,35 @@
+// ursqrte_z_p_z_m 010|0010|0|size=xx|0|0|Q=0|0|Z=0|op=1|10|1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UrsqrteZPZM: URSQRTE  <Zd>.S, <Pg>/M, <Zn>.S
+// register fields: Pg, Zn, Zd
+4481B4D1 ursqrte z17.s, p5/m, z6.s
+4481B8CA ursqrte z10.s, p6/m, z6.s
+4481BD85 ursqrte z5.s, p7/m, z12.s
+4481A602 ursqrte z2.s, p1/m, z16.s
+4481BA89 ursqrte z9.s, p6/m, z20.s
+4481BF12 ursqrte z18.s, p7/m, z24.s
+4481A8BC ursqrte z28.s, p2/m, z5.s
+4481AAB1 ursqrte z17.s, p2/m, z21.s
+4481A000 ursqrte z0.s, p0/m, z0.s
+4481AFFF ursqrte z31.s, p3/m, z31.s
+4481B0D1 ursqrte z17.s, p4/m, z6.s
+4401B4D1 UNDEFINED
+4441B4D1 UNDEFINED
+44C1B4D1 UNDEFINED
+
+// ursqrte_z_p_z_z 010|0010|0|size=xx|0|0|Q=0|0|Z=1|op=1|10|1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// UrsqrteZPZZ: URSQRTE  <Zd>.S, <Pg>/Z, <Zn>.S
+// register fields: Pg, Zn, Zd
+4483A003 ursqrte z3.s, p0/z, z0.s
+4483A00A ursqrte z10.s, p0/z, z0.s
+4483A011 ursqrte z17.s, p0/z, z0.s
+4483A7E0 ursqrte z0.s, p1/z, z31.s
+4483A81F ursqrte z31.s, p2/z, z0.s
+4483AC03 ursqrte z3.s, p3/z, z0.s
+4483B003 ursqrte z3.s, p4/z, z0.s
+4483B403 ursqrte z3.s, p5/z, z0.s
+4483B803 ursqrte z3.s, p6/z, z0.s
+4483BC03 ursqrte z3.s, p7/z, z0.s
+4403A003 UNDEFINED
+4443A003 UNDEFINED
+44C3A003 UNDEFINED
+4483A000 ursqrte z0.s, p0/z, z0.s

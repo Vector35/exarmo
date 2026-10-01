@@ -1,0 +1,20 @@
+// SHA256SU0_VV_cryptosha2 0101|111|0|size=00|10100|opcode=00010|10|Rn=xxxxx|Rd=xxxxx
+// Sha256su0VvCryptosha2: SHA256SU0  <Vd>.4S, <Vn>.4S
+// register fields: Rn, Rd
+5E282969 sha256su0 v9.4s, v11.4s
+5E282B58 sha256su0 v24.4s, v26.4s
+5E282B73 sha256su0 v19.4s, v27.4s
+5E282A72 sha256su0 v18.4s, v19.4s
+5E282BE3 sha256su0 v3.4s, v31.4s
+5E28295F sha256su0 v31.4s, v10.4s
+5E282982 sha256su0 v2.4s, v12.4s
+5E282881 sha256su0 v1.4s, v4.4s
+5E282B7B sha256su0 v27.4s, v27.4s
+5E28288A sha256su0 v10.4s, v4.4s
+5E2829BF sha256su0 v31.4s, v13.4s
+5E282ACE sha256su0 v14.4s, v22.4s
+5E2828E2 sha256su0 v2.4s, v7.4s
+5E282871 sha256su0 v17.4s, v3.4s
+5E282B40 sha256su0 v0.4s, v26.4s
+5E282AC3 sha256su0 v3.4s, v22.4s
+5E282809 sha256su0 v9.4s, v0.4s

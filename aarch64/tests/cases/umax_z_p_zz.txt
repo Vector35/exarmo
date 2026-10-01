@@ -1,0 +1,21 @@
+// umax_z_p_zz_ 000|0010|0|size=xx|0|01|opc=00|U=1|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UmaxZPZz: UMAX  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04C90F51 umax z17.d, p3/m, z17.d, z26.d
+04091882 umax z2.b, p6/m, z2.b, z4.b
+04491AEF umax z15.h, p6/m, z15.h, z23.h
+04C91A65 umax z5.d, p6/m, z5.d, z19.d
+04890AF7 umax z23.s, p2/m, z23.s, z23.s
+04C9052A umax z10.d, p1/m, z10.d, z9.d
+0409059B umax z27.b, p1/m, z27.b, z12.b
+04490CF5 umax z21.h, p3/m, z21.h, z7.h
+04C91581 umax z1.d, p5/m, z1.d, z12.d
+04490802 umax z2.h, p2/m, z2.h, z0.h
+048914B3 umax z19.s, p5/m, z19.s, z5.s
+044904FA umax z26.h, p1/m, z26.h, z7.h
+040909D9 umax z25.b, p2/m, z25.b, z14.b
+04491954 umax z20.h, p6/m, z20.h, z10.h
+04091A04 umax z4.b, p6/m, z4.b, z16.b
+04891C36 umax z22.s, p7/m, z22.s, z1.s
+04C903E0 umax z0.d, p0/m, z0.d, z31.d
+04C9135F umax z31.d, p4/m, z31.d, z26.d

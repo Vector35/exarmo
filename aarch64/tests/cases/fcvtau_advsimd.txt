@@ -1,0 +1,93 @@
+// FCVTAU_asimdmisc_R 0|Q=x|U=1|0|111|0|0|sz=x|10000|opcode=11100|10|Rn=xxxxx|Rd=xxxxx
+// FcvtauAsimdmiscR: FCVTAU  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+2E21CA1A fcvtau v26.2s, v16.2s
+6E21CBE8 fcvtau v8.4s, v31.4s
+6E61CBDB fcvtau v27.2d, v30.2d
+2E21C950 fcvtau v16.2s, v10.2s
+6E61C93E fcvtau v30.2d, v9.2d
+2E21C8A2 fcvtau v2.2s, v5.2s
+6E61C9E6 fcvtau v6.2d, v15.2d
+6E61C990 fcvtau v16.2d, v12.2d
+6E21CA86 fcvtau v6.4s, v20.4s
+6E21CB1F fcvtau v31.4s, v24.4s
+2E21CAC0 fcvtau v0.2s, v22.2s
+6E21CA4E fcvtau v14.4s, v18.4s
+6E61CBFE fcvtau v30.2d, v31.2d
+6E61CADB fcvtau v27.2d, v22.2d
+6E21CAE3 fcvtau v3.4s, v23.4s
+6E21C8C2 fcvtau v2.4s, v6.4s
+2E21C81A fcvtau v26.2s, v0.2s
+2E61CA1A UNDEFINED
+2E21CA10 fcvtau v16.2s, v16.2s
+
+// FCVTAU_asimdmiscfp16_R 0|Q=x|U=1|0|111|0|a=0|1111|00|opcode=11100|10|Rn=xxxxx|Rd=xxxxx
+// FcvtauAsimdmiscfp16R: FCVTAU  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+6E79C894 fcvtau v20.8h, v4.8h
+6E79C95E fcvtau v30.8h, v10.8h
+2E79C982 fcvtau v2.4h, v12.4h
+2E79C968 fcvtau v8.4h, v11.4h
+2E79C97E fcvtau v30.4h, v11.4h
+6E79CA84 fcvtau v4.8h, v20.8h
+2E79CB1A fcvtau v26.4h, v24.4h
+6E79CBF7 fcvtau v23.8h, v31.8h
+2E79CA96 fcvtau v22.4h, v20.4h
+6E79CAA8 fcvtau v8.8h, v21.8h
+2E79C82D fcvtau v13.4h, v1.4h
+6E79C954 fcvtau v20.8h, v10.8h
+2E79CAB0 fcvtau v16.4h, v21.4h
+6E79C869 fcvtau v9.8h, v3.8h
+6E79C992 fcvtau v18.8h, v12.8h
+6E79CA6B fcvtau v11.8h, v19.8h
+6E79C800 fcvtau v0.8h, v0.8h
+6E79C89F fcvtau v31.8h, v4.8h
+
+// FCVTAU_asisdmisc_R 01|U=1|1|111|0|0|sz=x|10000|opcode=11100|10|Rn=xxxxx|Rd=xxxxx
+// FcvtauAsisdmiscR: FCVTAU  <V><d>, <V><n>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+7E61CBDD fcvtau d29, d30
+7E21C880 fcvtau s0, s4
+7E61CAAF fcvtau d15, d21
+7E21C9B7 fcvtau s23, s13
+7E61CA56 fcvtau d22, d18
+7E21CBF4 fcvtau s20, s31
+7E21CAAA fcvtau s10, s21
+7E61CA48 fcvtau d8, d18
+7E21C8E3 fcvtau s3, s7
+7E21C8D5 fcvtau s21, s6
+7E21C91B fcvtau s27, s8
+7E21C875 fcvtau s21, s3
+7E61CB1E fcvtau d30, d24
+7E21C9EE fcvtau s14, s15
+7E61CA20 fcvtau d0, d17
+7E61C956 fcvtau d22, d10
+7E61C81F fcvtau d31, d0
+7E21CBDF fcvtau s31, s30
+7E21C81D fcvtau s29, s0
+7E61CBFD fcvtau d29, d31
+7E61CBDE fcvtau d30, d30
+
+// FCVTAU_asisdmiscfp16_R 01|U=1|1|111|0|a=0|1111|00|opcode=11100|10|Rn=xxxxx|Rd=xxxxx
+// FcvtauAsisdmiscfp16R: FCVTAU  <Hd>, <Hn>
+// register fields: Rn, Rd
+7E79CA79 fcvtau h25, h19
+7E79C965 fcvtau h5, h11
+7E79CAD7 fcvtau h23, h22
+7E79C8A8 fcvtau h8, h5
+7E79CA48 fcvtau h8, h18
+7E79CBB0 fcvtau h16, h29
+7E79C812 fcvtau h18, h0
+7E79C83C fcvtau h28, h1
+7E79CB35 fcvtau h21, h25
+7E79C8E0 fcvtau h0, h7
+7E79C9FC fcvtau h28, h15
+7E79CBDD fcvtau h29, h30
+7E79C99D fcvtau h29, h12
+7E79CBDC fcvtau h28, h30
+7E79CBC0 fcvtau h0, h30
+7E79CAA3 fcvtau h3, h21
+7E79CBFF fcvtau h31, h31

@@ -1,0 +1,42 @@
+// sel_p_p_pp_ 001|0010|1|op=0|S=0|00|Pm=xxxx|01|Pg=xxxx|o2=1|Pn=xxxx|o3=1|Pd=xxxx
+// SelPPPp: SEL  <Pd>.B, <Pg>, <Pn>.B, <Pm>.B
+// MovmPPPSelPPPp: MOV  <Pd>.B, <Pg>/M, <Pn>.B
+// read together by the MOV alias: Pm, Pd
+// register fields: Pm, Pg, Pn, Pd
+// form chosen on: Pm, Pd
+250863B8 mov p8.b, p8/m, p13.b
+250B7BBB mov p11.b, p14/m, p13.b
+250677D6 mov p6.b, p13/m, p14.b
+250457D4 mov p4.b, p5/m, p14.b
+250D7E5D mov p13.b, p15/m, p2.b
+25085FB8 mov p8.b, p7/m, p13.b
+250163F1 mov p1.b, p8/m, p15.b
+25034213 mov p3.b, p0/m, p0.b
+250B635B mov p11.b, p8/m, p10.b
+25056E15 mov p5.b, p11/m, p0.b
+250C629C mov p12.b, p8/m, p4.b
+25005F10 mov p0.b, p7/m, p8.b
+25016371 mov p1.b, p8/m, p11.b
+250A5EBA mov p10.b, p7/m, p5.b
+25015E71 mov p1.b, p7/m, p3.b
+25094FB9 mov p9.b, p3/m, p13.b
+25025FD9 sel p9.b, p7, p14.b, p2.b
+250E6ED8 sel p8.b, p11, p6.b, p14.b
+250B623E sel p14.b, p8, p1.b, p11.b
+250D4F52 sel p2.b, p3, p10.b, p13.b
+250B5A72 sel p2.b, p6, p3.b, p11.b
+250E425C sel p12.b, p0, p2.b, p14.b
+250A66B4 sel p4.b, p9, p5.b, p10.b
+250A4AF1 sel p1.b, p2, p7.b, p10.b
+250656D0 sel p0.b, p5, p6.b, p6.b
+25077BBD sel p13.b, p14, p13.b, p7.b
+250B5678 sel p8.b, p5, p3.b, p11.b
+25006F51 sel p1.b, p11, p10.b, p0.b
+25077E7D sel p13.b, p15, p3.b, p7.b
+250A433B sel p11.b, p0, p9.b, p10.b
+25096FB1 sel p1.b, p11, p13.b, p9.b
+25036614 sel p4.b, p9, p0.b, p3.b
+250F63BF mov p15.b, p8/m, p13.b
+250063BF sel p15.b, p8, p13.b, p0.b
+250F63B0 sel p0.b, p8, p13.b, p15.b
+25015F10 sel p0.b, p7, p8.b, p1.b

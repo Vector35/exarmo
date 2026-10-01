@@ -1,0 +1,132 @@
+// sqshlu_z_p_zi_ 000|0010|0|tszh=xx|0|0|opc=11|L=1|U=1|100|Pg=xxx|tszl=xx|imm3=xxx|Zdn=xxxxx
+// SqshluZPZi: SQSHLU  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Pg, Zdn
+048F9610 sqshlu z16.d, p5/m, z16.d, #0x10
+048F94CD sqshlu z13.d, p5/m, z13.d, #0x6
+040F87BD sqshlu z29.h, p1/m, z29.h, #0xd
+04CF8FD9 sqshlu z25.d, p3/m, z25.d, #0x3e
+044F9F80 sqshlu z0.s, p7/m, z0.s, #0x1c
+048F9FCB sqshlu z11.d, p7/m, z11.d, #0x1e
+044F8C15 sqshlu z21.s, p3/m, z21.s, #0x0
+04CF8E97 sqshlu z23.d, p3/m, z23.d, #0x34
+048F813F sqshlu z31.d, p0/m, z31.d, #0x9
+048F8A50 sqshlu z16.d, p2/m, z16.d, #0x12
+048F9270 sqshlu z16.d, p4/m, z16.d, #0x13
+048F9AF0 sqshlu z16.d, p6/m, z16.d, #0x17
+040F9410 UNDEFINED
+040F9430 UNDEFINED
+040F9450 UNDEFINED
+040F9470 UNDEFINED
+040F9490 UNDEFINED
+040F94B0 UNDEFINED
+040F94D0 UNDEFINED
+040F94F0 UNDEFINED
+040F9505 sqshlu z5.b, p5/m, z5.b, #0x0
+040F9530 sqshlu z16.b, p5/m, z16.b, #0x1
+040F9550 sqshlu z16.b, p5/m, z16.b, #0x2
+040F9570 sqshlu z16.b, p5/m, z16.b, #0x3
+040F9590 sqshlu z16.b, p5/m, z16.b, #0x4
+040F95B0 sqshlu z16.b, p5/m, z16.b, #0x5
+040F95D0 sqshlu z16.b, p5/m, z16.b, #0x6
+040F95F0 sqshlu z16.b, p5/m, z16.b, #0x7
+040F9610 sqshlu z16.h, p5/m, z16.h, #0x0
+040F9630 sqshlu z16.h, p5/m, z16.h, #0x1
+040F9650 sqshlu z16.h, p5/m, z16.h, #0x2
+040F9670 sqshlu z16.h, p5/m, z16.h, #0x3
+040F9690 sqshlu z16.h, p5/m, z16.h, #0x4
+040F96B0 sqshlu z16.h, p5/m, z16.h, #0x5
+040F96D0 sqshlu z16.h, p5/m, z16.h, #0x6
+040F96F0 sqshlu z16.h, p5/m, z16.h, #0x7
+040F9710 sqshlu z16.h, p5/m, z16.h, #0x8
+040F9730 sqshlu z16.h, p5/m, z16.h, #0x9
+040F9750 sqshlu z16.h, p5/m, z16.h, #0xa
+040F9770 sqshlu z16.h, p5/m, z16.h, #0xb
+040F9790 sqshlu z16.h, p5/m, z16.h, #0xc
+040F97D0 sqshlu z16.h, p5/m, z16.h, #0xe
+040F97F0 sqshlu z16.h, p5/m, z16.h, #0xf
+044F9430 sqshlu z16.s, p5/m, z16.s, #0x1
+044F9450 sqshlu z16.s, p5/m, z16.s, #0x2
+044F9470 sqshlu z16.s, p5/m, z16.s, #0x3
+044F9490 sqshlu z16.s, p5/m, z16.s, #0x4
+044F94B0 sqshlu z16.s, p5/m, z16.s, #0x5
+044F94D0 sqshlu z16.s, p5/m, z16.s, #0x6
+044F94F0 sqshlu z16.s, p5/m, z16.s, #0x7
+044F9510 sqshlu z16.s, p5/m, z16.s, #0x8
+044F9530 sqshlu z16.s, p5/m, z16.s, #0x9
+044F9550 sqshlu z16.s, p5/m, z16.s, #0xa
+044F9570 sqshlu z16.s, p5/m, z16.s, #0xb
+044F9590 sqshlu z16.s, p5/m, z16.s, #0xc
+044F95B0 sqshlu z16.s, p5/m, z16.s, #0xd
+044F95D0 sqshlu z16.s, p5/m, z16.s, #0xe
+044F95F0 sqshlu z16.s, p5/m, z16.s, #0xf
+044F9610 sqshlu z16.s, p5/m, z16.s, #0x10
+044F9630 sqshlu z16.s, p5/m, z16.s, #0x11
+044F9650 sqshlu z16.s, p5/m, z16.s, #0x12
+044F9670 sqshlu z16.s, p5/m, z16.s, #0x13
+044F9690 sqshlu z16.s, p5/m, z16.s, #0x14
+044F96B0 sqshlu z16.s, p5/m, z16.s, #0x15
+044F96D0 sqshlu z16.s, p5/m, z16.s, #0x16
+044F96F0 sqshlu z16.s, p5/m, z16.s, #0x17
+044F9710 sqshlu z16.s, p5/m, z16.s, #0x18
+044F9730 sqshlu z16.s, p5/m, z16.s, #0x19
+044F9750 sqshlu z16.s, p5/m, z16.s, #0x1a
+044F9770 sqshlu z16.s, p5/m, z16.s, #0x1b
+044F97B0 sqshlu z16.s, p5/m, z16.s, #0x1d
+044F97D0 sqshlu z16.s, p5/m, z16.s, #0x1e
+044F97F0 sqshlu z16.s, p5/m, z16.s, #0x1f
+048F9410 sqshlu z16.d, p5/m, z16.d, #0x0
+048F9430 sqshlu z16.d, p5/m, z16.d, #0x1
+048F9450 sqshlu z16.d, p5/m, z16.d, #0x2
+048F9470 sqshlu z16.d, p5/m, z16.d, #0x3
+048F9490 sqshlu z16.d, p5/m, z16.d, #0x4
+048F94B0 sqshlu z16.d, p5/m, z16.d, #0x5
+048F94F0 sqshlu z16.d, p5/m, z16.d, #0x7
+048F9510 sqshlu z16.d, p5/m, z16.d, #0x8
+048F9550 sqshlu z16.d, p5/m, z16.d, #0xa
+048F9570 sqshlu z16.d, p5/m, z16.d, #0xb
+048F9590 sqshlu z16.d, p5/m, z16.d, #0xc
+048F95B0 sqshlu z16.d, p5/m, z16.d, #0xd
+048F95D0 sqshlu z16.d, p5/m, z16.d, #0xe
+048F95F0 sqshlu z16.d, p5/m, z16.d, #0xf
+048F9630 sqshlu z16.d, p5/m, z16.d, #0x11
+048F9690 sqshlu z16.d, p5/m, z16.d, #0x14
+048F96B0 sqshlu z16.d, p5/m, z16.d, #0x15
+048F96D0 sqshlu z16.d, p5/m, z16.d, #0x16
+048F9710 sqshlu z16.d, p5/m, z16.d, #0x18
+048F9730 sqshlu z16.d, p5/m, z16.d, #0x19
+048F9750 sqshlu z16.d, p5/m, z16.d, #0x1a
+048F9770 sqshlu z16.d, p5/m, z16.d, #0x1b
+048F9790 sqshlu z16.d, p5/m, z16.d, #0x1c
+048F97B0 sqshlu z16.d, p5/m, z16.d, #0x1d
+048F97F0 sqshlu z16.d, p5/m, z16.d, #0x1f
+04CF9410 sqshlu z16.d, p5/m, z16.d, #0x20
+04CF9430 sqshlu z16.d, p5/m, z16.d, #0x21
+04CF9450 sqshlu z16.d, p5/m, z16.d, #0x22
+04CF9470 sqshlu z16.d, p5/m, z16.d, #0x23
+04CF9490 sqshlu z16.d, p5/m, z16.d, #0x24
+04CF94B0 sqshlu z16.d, p5/m, z16.d, #0x25
+04CF94D0 sqshlu z16.d, p5/m, z16.d, #0x26
+04CF94F0 sqshlu z16.d, p5/m, z16.d, #0x27
+04CF9510 sqshlu z16.d, p5/m, z16.d, #0x28
+04CF9530 sqshlu z16.d, p5/m, z16.d, #0x29
+04CF9550 sqshlu z16.d, p5/m, z16.d, #0x2a
+04CF9570 sqshlu z16.d, p5/m, z16.d, #0x2b
+04CF9590 sqshlu z16.d, p5/m, z16.d, #0x2c
+04CF95B0 sqshlu z16.d, p5/m, z16.d, #0x2d
+04CF95D0 sqshlu z16.d, p5/m, z16.d, #0x2e
+04CF95F0 sqshlu z16.d, p5/m, z16.d, #0x2f
+04CF9610 sqshlu z16.d, p5/m, z16.d, #0x30
+04CF9630 sqshlu z16.d, p5/m, z16.d, #0x31
+04CF9650 sqshlu z16.d, p5/m, z16.d, #0x32
+04CF9670 sqshlu z16.d, p5/m, z16.d, #0x33
+04CF96B0 sqshlu z16.d, p5/m, z16.d, #0x35
+04CF96D0 sqshlu z16.d, p5/m, z16.d, #0x36
+04CF96F0 sqshlu z16.d, p5/m, z16.d, #0x37
+04CF9710 sqshlu z16.d, p5/m, z16.d, #0x38
+04CF9730 sqshlu z16.d, p5/m, z16.d, #0x39
+04CF9750 sqshlu z16.d, p5/m, z16.d, #0x3a
+04CF9770 sqshlu z16.d, p5/m, z16.d, #0x3b
+04CF9790 sqshlu z16.d, p5/m, z16.d, #0x3c
+04CF97B0 sqshlu z16.d, p5/m, z16.d, #0x3d
+04CF97F0 sqshlu z16.d, p5/m, z16.d, #0x3f

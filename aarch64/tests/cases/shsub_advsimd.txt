@@ -1,0 +1,24 @@
+// SHSUB_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=00100|1|Rn=xxxxx|Rd=xxxxx
+// ShsubAsimdsameOnly: SHSUB  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4EA727F4 shsub v20.4s, v31.4s, v7.4s
+4E6A26C5 shsub v5.8h, v22.8h, v10.8h
+4EB12747 shsub v7.4s, v26.4s, v17.4s
+4E7424B1 shsub v17.8h, v5.8h, v20.8h
+4E7B24CA shsub v10.8h, v6.8h, v27.8h
+4E7227AC shsub v12.8h, v29.8h, v18.8h
+0E7927CC shsub v12.4h, v30.4h, v25.4h
+4E6E2481 shsub v1.8h, v4.8h, v14.8h
+0E6C25F9 shsub v25.4h, v15.4h, v12.4h
+0E2E275F shsub v31.8b, v26.8b, v14.8b
+4E2D25AE shsub v14.16b, v13.16b, v13.16b
+0EB926C7 shsub v7.2s, v22.2s, v25.2s
+0E7324CA shsub v10.4h, v6.4h, v19.4h
+4EAD261C shsub v28.4s, v16.4s, v13.4s
+4E2125AD shsub v13.16b, v13.16b, v1.16b
+0E6525D9 shsub v25.4h, v14.4h, v5.4h
+4EA02400 shsub v0.4s, v0.4s, v0.4s
+4EBF27F4 shsub v20.4s, v31.4s, v31.4s
+4EE727F4 UNDEFINED
+0EE727F4 UNDEFINED

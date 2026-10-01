@@ -1,0 +1,13 @@
+// aesimc_z_z_ 010|0010|1|size=00|1|000|00|111|00|op=1|00000|Zdn=xxxxx
+// AesimcZZ: AESIMC  <Zdn>.B, <Zdn>.B
+// register fields: Zdn
+4520E410 aesimc z16.b, z16.b
+4520E406 aesimc z6.b, z6.b
+4520E40A aesimc z10.b, z10.b
+4520E414 aesimc z20.b, z20.b
+4520E411 aesimc z17.b, z17.b
+4520E408 aesimc z8.b, z8.b
+4520E41D aesimc z29.b, z29.b
+4520E405 aesimc z5.b, z5.b
+4520E400 aesimc z0.b, z0.b
+4520E41F aesimc z31.b, z31.b

@@ -1,0 +1,60 @@
+// BIC_i_A1 cond=xxxx|00111|opc=10|S=0|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// BicIA1: BIC{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+33c9b6ae biclo r11, r9, #182452224
+23c282e2 bichs r8, r2, #536870926
+e3c89673 bic r9, r8, #120586240
+a3c801a5 bicge r0, r8, #1073741865
+c3cdeb89 bicgt lr, sp, #140288
+03c64f75 biceq r4, r6, #468
+93cfa242 bicls r10, pc, #536870916
+03c1c635 biceq r12, r1, #55574528
+// Binary Ninja's tests
+e3c1100f bic r1, r1, #15
+e3c1a00f bic r10, r1, #15
+e3c22006 bic r2, r2, #6
+e3c32102 bic r2, r3, #2147483648
+F3C9B6AE UNDEFINED
+83C0F000 bichi pc, r0, #0x0
+43C9BFFF bicmi r11, r9, #0x3fc
+13C9B800 bicne r11, r9, #0x0
+33C9B400 biccc r11, r9, #0x0
+33C9B200 biccc r11, r9, #0x0
+33C9B100 biccc r11, r9, #0x0
+33C9B080 biccc r11, r9, #0x80
+33C9B040 biccc r11, r9, #0x40
+33C9B020 biccc r11, r9, #0x20
+33C9B010 biccc r11, r9, #0x10
+33C9B008 biccc r11, r9, #0x8
+33C9B004 biccc r11, r9, #0x4
+33C9B002 biccc r11, r9, #0x2
+33C9B001 biccc r11, r9, #0x1
+
+// BICS_i_A1 cond=xxxx|00111|opc=10|S=1|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// BicsIA1: BICS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+03d8987f bicseq r9, r8, #8323072
+53d98a36 bicspl r8, r9, #221184
+83d671cc bicshi r7, r6, #51
+43d619e2 bicsmi r1, r6, #3702784
+93d53a78 bicsls r3, r5, #491520
+83d772eb bicshi r7, r7, #2952790030
+83d9c1c5 bicshi r12, r9, #1073741873
+53de103b bicspl r1, lr, #59
+// Binary Ninja's tests
+03d22006 bicseq r2, r2, #6
+F3D8987F UNDEFINED
+23D00000 bicscs r0, r0, #0x0
+13DFFFFF bicsne pc, pc, #0x3fc
+03D89800 bicseq r9, r8, #0x0
+03D89400 bicseq r9, r8, #0x0
+03D89200 bicseq r9, r8, #0x0
+03D89100 bicseq r9, r8, #0x0
+03D89080 bicseq r9, r8, #0x80
+03D89040 bicseq r9, r8, #0x40
+03D89020 bicseq r9, r8, #0x20
+03D89010 bicseq r9, r8, #0x10
+03D89008 bicseq r9, r8, #0x8
+03D89004 bicseq r9, r8, #0x4
+03D89002 bicseq r9, r8, #0x2
+03D89001 bicseq r9, r8, #0x1

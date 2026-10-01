@@ -1,0 +1,11 @@
+// SSBB_T1 111|10|0|1110|11|(1)(1)(1)(1)|1|0(0)0|(1)|(1)(1)(1)|opc=0100|option=0000
+// SsbbT1: SSBB{<q>}
+F3B08040 ssbb (unpredictable)
+F3BFA940 ssbb (unpredictable)
+F3B88240 ssbb (unpredictable)
+F3B48340 ssbb (unpredictable)
+F3B28440 ssbb (unpredictable)
+F3B18540 ssbb (unpredictable)
+F3B08640 ssbb (unpredictable)
+F3B08740 ssbb (unpredictable)
+F3BF8F40 ssbb

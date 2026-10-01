@@ -1,0 +1,17 @@
+// ABS_32_dp_1src sf=0|1|S=0|11010110|opcode2=00000|opcode=001000|Rn=xxxxx|Rd=xxxxx
+// Abs32Dp1src: ABS  <Wd>, <Wn>
+// register fields: Rn, Rd
+5AC02000 abs w0, w0
+5AC02007 abs w7, w0
+5AC0200E abs w14, w0
+5AC023FF abs wzr, wzr
+
+// ABS_64_dp_1src sf=1|1|S=0|11010110|opcode2=00000|opcode=001000|Rn=xxxxx|Rd=xxxxx
+// Abs64Dp1src: ABS  <Xd>, <Xn>
+// register fields: Rn, Rd
+DAC02005 abs x5, x0
+DAC0200C abs x12, x0
+DAC02013 abs x19, x0
+DAC023E0 abs x0, xzr
+DAC0201F abs xzr, x0
+DAC02000 abs x0, x0

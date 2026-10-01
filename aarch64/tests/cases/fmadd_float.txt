@@ -1,0 +1,70 @@
+// FMADD_D_floatdp3 M=0|0|S=0|11111|ftype=01|o1=0|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FmaddDFloatdp3: FMADD  <Dd>, <Dn>, <Dm>, <Da>
+// register fields: Rm, Ra, Rn, Rd
+1F4E3209 fmadd d9, d16, d14, d12
+1F4820AB fmadd d11, d5, d8, d8
+1F437611 fmadd d17, d16, d3, d29
+1F540BD0 fmadd d16, d30, d20, d2
+1F493E43 fmadd d3, d18, d9, d15
+1F4E3355 fmadd d21, d26, d14, d12
+1F4D7958 fmadd d24, d10, d13, d30
+1F503F90 fmadd d16, d28, d16, d15
+1F4E5B4F fmadd d15, d26, d14, d22
+1F59009E fmadd d30, d4, d25, d0
+1F55268F fmadd d15, d20, d21, d9
+1F441F93 fmadd d19, d28, d4, d7
+1F5D6A2D fmadd d13, d17, d29, d26
+1F4F677C fmadd d28, d27, d15, d25
+1F5D60A4 fmadd d4, d5, d29, d24
+1F486D02 fmadd d2, d8, d8, d27
+1F407C00 fmadd d0, d0, d0, d31
+1F5F33FF fmadd d31, d31, d31, d12
+1F4E3189 fmadd d9, d12, d14, d12
+1F4E320C fmadd d12, d16, d14, d12
+
+// FMADD_H_floatdp3 M=0|0|S=0|11111|ftype=11|o1=0|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FmaddHFloatdp3: FMADD  <Hd>, <Hn>, <Hm>, <Ha>
+// register fields: Rm, Ra, Rn, Rd
+1FDF4E9D fmadd h29, h20, h31, h19
+1FC11AF7 fmadd h23, h23, h1, h6
+1FC6158A fmadd h10, h12, h6, h5
+1FD72833 fmadd h19, h1, h23, h10
+1FD535E9 fmadd h9, h15, h21, h13
+1FDD7E15 fmadd h21, h16, h29, h31
+1FD56520 fmadd h0, h9, h21, h25
+1FCD2467 fmadd h7, h3, h13, h9
+1FCE7C91 fmadd h17, h4, h14, h31
+1FD85F57 fmadd h23, h26, h24, h23
+1FD77DF5 fmadd h21, h15, h23, h31
+1FC77B2F fmadd h15, h25, h7, h30
+1FC969AE fmadd h14, h13, h9, h26
+1FC05C7B fmadd h27, h3, h0, h23
+1FCA08F5 fmadd h21, h7, h10, h2
+1FCE45BE fmadd h30, h13, h14, h17
+1FDF001F fmadd h31, h0, h31, h0
+1FDF4FFD fmadd h29, h31, h31, h19
+1FDF7E9D fmadd h29, h20, h31, h31
+
+// FMADD_S_floatdp3 M=0|0|S=0|11111|ftype=00|o1=0|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FmaddSFloatdp3: FMADD  <Sd>, <Sn>, <Sm>, <Sa>
+// register fields: Rm, Ra, Rn, Rd
+1F0341FF fmadd s31, s15, s3, s16
+1F1B4AFF fmadd s31, s23, s27, s18
+1F030091 fmadd s17, s4, s3, s0
+1F095CEF fmadd s15, s7, s9, s23
+1F0857D6 fmadd s22, s30, s8, s21
+1F0B1B55 fmadd s21, s26, s11, s6
+1F0355AA fmadd s10, s13, s3, s21
+1F0F38B0 fmadd s16, s5, s15, s14
+1F173A07 fmadd s7, s16, s23, s14
+1F165FAF fmadd s15, s29, s22, s23
+1F1C1C73 fmadd s19, s3, s28, s7
+1F0124A1 fmadd s1, s5, s1, s9
+1F067957 fmadd s23, s10, s6, s30
+1F0C0401 fmadd s1, s0, s12, s1
+1F1A4E29 fmadd s9, s17, s26, s19
+1F165B50 fmadd s16, s26, s22, s22
+1F007FE0 fmadd s0, s31, s0, s31
+1F1F41FF fmadd s31, s15, s31, s16
+1F03407F fmadd s31, s3, s3, s16
+1F0341EF fmadd s15, s15, s3, s16

@@ -1,0 +1,52 @@
+// VLD3_m_A1_nowb 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=1111
+// Vld3MA1Nowb: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f462351f vld3.8 {d19, d21, d23}, [r2:64]
+f46ff55f UNPREDICTABLE
+f423748f vld3.32 {d7, d8, d9}, [r3]
+f428345f vld3.16 {d3, d4, d5}, [r8:64]
+f425b50f vld3.8 {d11, d13, d15}, [r5]
+f42b551f vld3.8 {d5, d7, d9}, [r11:64]
+f46a051f vld3.8 {d16, d18, d20}, [r10:64]
+F460851F vld3.8 {d24, d26, d28}, [r0:64]
+F462451F vld3.8 {d20, d22, d24}, [r2:64]
+F462251F vld3.8 {d18, d20, d22}, [r2:64]
+F462151F vld3.8 {d17, d19, d21}, [r2:64]
+F46235EF UNDEFINED
+F462353F UNDEFINED
+F46F351F vld3.8 {d19, d21, d23}, [pc:64] (unpredictable)
+F423F48F vld3.32 {d15, d16, d17}, [r3]
+
+// VLD3_m_A1_posti 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=1101
+// Vld3MA1Posti: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f42a858d vld3.32 {d8, d10, d12}, [r10]!
+f461c55d UNPREDICTABLE
+f423159d vld3.32 {d1, d3, d5}, [r3:64]!
+f42b658d vld3.32 {d6, d8, d10}, [r11]!
+f466349d vld3.32 {d19, d20, d21}, [r6:64]!
+f46b555d vld3.16 {d21, d23, d25}, [r11:64]!
+f468b40d vld3.8 {d27, d28, d29}, [r8]!
+f42ab49d vld3.32 {d11, d12, d13}, [r10:64]!
+F420058D vld3.32 {d0, d2, d4}, [r0]!
+F42FF58D vld3.32 {d15, d17, d19}, [pc]! (unpredictable)
+F42A458D vld3.32 {d4, d6, d8}, [r10]!
+F42A258D vld3.32 {d2, d4, d6}, [r10]!
+F42A85ED UNDEFINED
+F42A85BD UNDEFINED
+
+// VLD3_m_A1_postr 111101000|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=xxxx
+// Vld3MA1Postr: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f4214446 vld3.16 {d4, d5, d6}, [r1], r6
+f4255443 vld3.16 {d5, d6, d7}, [r5], r3
+f424f556 vld3.16 {d15, d17, d19}, [r4:64], r6
+f429851b vld3.8 {d8, d10, d12}, [r9:64], r11
+f46d051b vld3.8 {d16, d18, d20}, [sp:64], r11
+f42ad497 vld3.32 {d13, d14, d15}, [r10:64], r7
+f42c3488 vld3.32 {d3, d4, d5}, [r12], r8
+f46fc407 vld3.8 {d28, d29, d30}, [pc], r7 (unpredictable)
+F4202440 vld3.16 {d2, d3, d4}, [r0], r0
+F4211441 vld3.16 {d1, d2, d3}, [r1], r1
+F42144EF UNDEFINED
+F4214476 UNDEFINED

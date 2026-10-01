@@ -1,0 +1,13 @@
+// zero_za_i_ 1|10|0000|0000010|0000000000|imm8=xxxxxxxx
+// ZeroZaI: ZERO  { {<mask>} }
+C0080002 zero {za1.d}
+C0080009 zero {za0.d, za3.d}
+C0080010 zero {za4.d}
+C0080000 zero {}
+C00800FF zero {za}
+C0080080 zero {za7.d}
+C0080040 zero {za6.d}
+C0080020 zero {za5.d}
+C0080008 zero {za3.d}
+C0080004 zero {za2.d}
+C0080001 zero {za0.d}

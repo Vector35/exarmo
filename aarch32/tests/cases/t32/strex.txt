@@ -1,0 +1,16 @@
+// STREX_T1 111|0100|op0=0010|L=0|Rn=xxxx|Rt=xxxx|Rd=xxxx|imm8=xxxxxxxx
+// StrexT1: STREX{<c>}{<q>}  <Rd>, <Rt>, [<Rn> {, #<imm>}]
+// register fields: Rn, Rt, Rd
+// IT state read: condition
+E8400000 strex r0, r0, [r0] (unpredictable)
+E84FFFFF strex pc, pc, [pc, #0x3fc] (unpredictable)
+E8400080 strex r0, r0, [r0, #0x200] (unpredictable)
+E8400040 strex r0, r0, [r0, #0x100] (unpredictable)
+E8400020 strex r0, r0, [r0, #0x80] (unpredictable)
+E8400010 strex r0, r0, [r0, #0x40] (unpredictable)
+E8400008 strex r0, r0, [r0, #0x20] (unpredictable)
+E8400004 strex r0, r0, [r0, #0x10] (unpredictable)
+E8400002 strex r0, r0, [r0, #0x8] (unpredictable)
+E8400001 strex r0, r0, [r0, #0x4] (unpredictable)
+E8400000 [ne] strexne r0, r0, [r0] (unpredictable)
+E8412300 strex r3, r2, [r1]

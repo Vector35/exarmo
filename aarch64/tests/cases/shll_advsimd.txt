@@ -1,0 +1,27 @@
+// SHLL_asimdmisc_S 0|Q=x|U=1|0|111|0|size=xx|10000|opcode=10011|10|Rn=xxxxx|Rd=xxxxx
+// ShllAsimdmiscS: SHLL  <Vd>.<Ta>, <Vn>.<Tb>, #<shift>
+// ShllAsimdmiscS2: SHLL2  <Vd>.<Ta>, <Vn>.<Tb>, #<shift>
+// read together by <Tb>: Q, size
+// register fields: Rn, Rd
+// form chosen on: Q
+2E213961 shll v1.8h, v11.8b, #0x8
+2EA13A8E shll v14.2d, v20.2s, #0x20
+2EA13AF6 shll v22.2d, v23.2s, #0x20
+2E213A45 shll v5.8h, v18.8b, #0x8
+2EA13867 shll v7.2d, v3.2s, #0x20
+2EA13A83 shll v3.2d, v20.2s, #0x20
+6EA1389B shll2 v27.2d, v4.4s, #0x20
+6E213B5A shll2 v26.8h, v26.16b, #0x8
+6E213B29 shll2 v9.8h, v25.16b, #0x8
+6EA1384A shll2 v10.2d, v2.4s, #0x20
+2E613A75 shll v21.4s, v19.4h, #0x10
+6E213B6C shll2 v12.8h, v27.16b, #0x8
+2EA13A4D shll v13.2d, v18.2s, #0x20
+2E6138B2 shll v18.4s, v5.4h, #0x10
+2EA13837 shll v23.2d, v1.2s, #0x20
+6E613A52 shll2 v18.4s, v18.8h, #0x10
+2E213800 shll v0.8h, v0.8b, #0x8
+2E213BFF shll v31.8h, v31.8b, #0x8
+2EE13961 UNDEFINED
+6EE13961 UNDEFINED
+6E213800 shll2 v0.8h, v0.16b, #0x8

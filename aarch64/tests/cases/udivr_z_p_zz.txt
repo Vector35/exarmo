@@ -1,0 +1,24 @@
+// udivr_z_p_zz_ 000|0010|0|size=xx|0|101|R=1|U=1|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UdivrZPZz: UDIVR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04D714EA udivr z10.d, p5/m, z10.d, z7.d
+04971700 udivr z0.s, p5/m, z0.s, z24.s
+0497110B udivr z11.s, p4/m, z11.s, z8.s
+04D7182E udivr z14.d, p6/m, z14.d, z1.d
+04970E80 udivr z0.s, p3/m, z0.s, z20.s
+04971ED7 udivr z23.s, p7/m, z23.s, z22.s
+04970D0F udivr z15.s, p3/m, z15.s, z8.s
+04D71905 udivr z5.d, p6/m, z5.d, z8.d
+04D70349 udivr z9.d, p0/m, z9.d, z26.d
+049708EC udivr z12.s, p2/m, z12.s, z7.s
+04970137 udivr z23.s, p0/m, z23.s, z9.s
+049711C6 udivr z6.s, p4/m, z6.s, z14.s
+04970E98 udivr z24.s, p3/m, z24.s, z20.s
+04971F46 udivr z6.s, p7/m, z6.s, z26.s
+04970D8D udivr z13.s, p3/m, z13.s, z12.s
+0497101E udivr z30.s, p4/m, z30.s, z0.s
+04D707FF udivr z31.d, p1/m, z31.d, z31.d
+041714EA UNDEFINED
+045714EA UNDEFINED
+04D714AA udivr z10.d, p5/m, z10.d, z5.d
+04D714E5 udivr z5.d, p5/m, z5.d, z7.d

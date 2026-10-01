@@ -1,0 +1,41 @@
+// LDRH_32_ldst_regoff size=01|11|1|VR=0|0|0|opc=01|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// Ldrh32LdstRegoff: LDRH  <Wt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+7861CA2A ldrh w10, [x17, w1, sxtw]
+787D4961 ldrh w1, [x11, w29, uxtw]
+786EE87B ldrh w27, [x3, x14, sxtx]
+7861E8B0 ldrh w16, [x5, x1, sxtx]
+787CC90D ldrh w13, [x8, w28, sxtw]
+7870E876 ldrh w22, [x3, x16, sxtx]
+7867D85C ldrh w28, [x2, w7, sxtw #0x1]
+7860EB78 ldrh w24, [x27, x0, sxtx]
+787F79BA ldrh w26, [x13, xzr, lsl #0x1]
+7872E937 ldrh w23, [x9, x18, sxtx]
+7878F908 ldrh w8, [x8, x24, sxtx #0x1]
+787B6A18 ldrh w24, [x16, x27]
+7873F8E5 ldrh w5, [x7, x19, sxtx #0x1]
+786AFAF9 ldrh w25, [x23, x10, sxtx #0x1]
+786759C7 ldrh w7, [x14, w7, uxtw #0x1]
+786A4BE7 ldrh w7, [sp, w10, uxtw]
+7861C800 ldrh w0, [x0, w1, sxtw]
+7861CA3F ldrh wzr, [x17, w1, sxtw]
+78610A2A UNDEFINED
+78612A2A UNDEFINED
+78618A2A UNDEFINED
+7861AA2A UNDEFINED
+78600A2A UNDEFINED
+78602A2A UNDEFINED
+78604A2A ldrh w10, [x17, w0, uxtw]
+78606A2A ldrh w10, [x17, x0]
+78608A2A UNDEFINED
+7860AA2A UNDEFINED
+7860CA2A ldrh w10, [x17, w0, sxtw]
+787F0A2A UNDEFINED
+787F2A2A UNDEFINED
+787F4A2A ldrh w10, [x17, wzr, uxtw]
+787F8A2A UNDEFINED
+787FAA2A UNDEFINED
+787FCA2A ldrh w10, [x17, wzr, sxtw]
+787FEA2A ldrh w10, [x17, xzr, sxtx]
+7861C82A ldrh w10, [x1, w1, sxtw]

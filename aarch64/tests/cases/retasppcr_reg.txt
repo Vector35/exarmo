@@ -1,0 +1,14 @@
+// RETAASPPCR_64M_branch_reg 1101011|opc=0010|op2=11111|00001|M=0|Rn=11111|Rm=xxxxx
+// Retaasppcr64mBranchReg: RETAASPPCR  <Xm>
+// register fields: Rm
+D65F0BE0 retaasppcr x0
+D65F0BE7 retaasppcr x7
+D65F0BEE retaasppcr x14
+
+// RETABSPPCR_64M_branch_reg 1101011|opc=0010|op2=11111|00001|M=1|Rn=11111|Rm=xxxxx
+// Retabsppcr64mBranchReg: RETABSPPCR  <Xm>
+// register fields: Rm
+D65F0FE5 retabsppcr x5
+D65F0FEC retabsppcr x12
+D65F0FF3 retabsppcr x19
+D65F0FE0 retabsppcr x0

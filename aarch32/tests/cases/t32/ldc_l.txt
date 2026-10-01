@@ -1,0 +1,22 @@
+// LDC_l_T1 111|0|11|0|P=x|U=x|D=0|W=x|L=1|Rn=1111|CRd=0101|1|11|cp15=0|imm8=xxxxxxxx
+// LdcLT1: LDC{<c>}{<q>}  p14, c5, <label>
+// IT state read: condition
+ec9f5e54 ldc p14, c5, 0x10154 (unpredictable)
+edbf5ef0 ldc p14, c5, 0x103c4 (unpredictable)
+ecbf5e53 ldc p14, c5, 0x10150 (unpredictable)
+edbf5ef5 ldc p14, c5, 0x103d8 (unpredictable)
+ec9f5ee5 ldc p14, c5, 0x10398 (unpredictable)
+ed9f5ecc ldc p14, c5, 0x10334
+ed1f5ef8 ldc p14, c5, 0xfc24
+ed3f5e1a ldc p14, c5, 0xff9c (unpredictable)
+EC9F5E00 ldc p14, c5, 0x10004 (unpredictable)
+EC9F5EFF ldc p14, c5, 0x10400 (unpredictable)
+EC9F5E80 ldc p14, c5, 0x10204 (unpredictable)
+EC9F5E40 ldc p14, c5, 0x10104 (unpredictable)
+EC9F5E20 ldc p14, c5, 0x10084 (unpredictable)
+EC9F5E10 ldc p14, c5, 0x10044 (unpredictable)
+EC9F5E08 ldc p14, c5, 0x10024 (unpredictable)
+EC9F5E04 ldc p14, c5, 0x10014 (unpredictable)
+EC9F5E02 ldc p14, c5, 0x1000c (unpredictable)
+EC9F5E01 ldc p14, c5, 0x10008 (unpredictable)
+EC9F5E54 [ne] ldcne p14, c5, 0x10154 (unpredictable)

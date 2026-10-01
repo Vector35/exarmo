@@ -1,0 +1,9 @@
+// GCSSTTR_64_ldst_gcs 1101|1|0|0|1000111110|opc=001|11|Rn=xxxxx|Rt=xxxxx
+// Gcssttr64LdstGcs: GCSSTTR  <Xt>, [<Xn|SP>]
+// register fields: Rn, Rt
+D91F1C01 gcssttr x1, [x0]
+D91F1C08 gcssttr x8, [x0]
+D91F1C0F gcssttr x15, [x0]
+D91F1FE0 gcssttr x0, [sp]
+D91F1C1F gcssttr xzr, [x0]
+D91F1C00 gcssttr x0, [x0]

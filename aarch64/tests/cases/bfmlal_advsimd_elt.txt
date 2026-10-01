@@ -1,0 +1,15 @@
+// BFMLAL_asimdelem_F 0|Q=x|U=0|0|111|1|size=11|L=x|M=x|Rm=xxxx|opcode=1111|H=x|0|Rn=xxxxx|Rd=xxxxx
+// BfmlalAsimdelemF: BFMLAL<bt>  <Vd>.4S, <Vn>.8H, <Vm>.H[<index>]
+// read together by <index>: L, M, H
+// register fields: Rm, Rn, Rd
+0FC0F006 bfmlalb v6.4s, v0.8h, v0.h[0]
+0FC0F00D bfmlalb v13.4s, v0.8h, v0.h[0]
+0FC0F014 bfmlalb v20.4s, v0.8h, v0.h[0]
+4FFFFBE0 bfmlalt v0.4s, v31.8h, v15.h[7]
+0FC0F01F bfmlalb v31.4s, v0.8h, v0.h[0]
+0FC0F800 bfmlalb v0.4s, v0.8h, v0.h[4]
+0FD0F000 bfmlalb v0.4s, v0.8h, v0.h[1]
+0FD0F806 bfmlalb v6.4s, v0.8h, v0.h[5]
+0FE0F006 bfmlalb v6.4s, v0.8h, v0.h[2]
+0FE0F806 bfmlalb v6.4s, v0.8h, v0.h[6]
+0FF0F006 bfmlalb v6.4s, v0.8h, v0.h[3]

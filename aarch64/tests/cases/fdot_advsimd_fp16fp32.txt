@@ -1,0 +1,10 @@
+// FDOT_asimdsame2_FP16FP32 0|Q=x|U=0|0|111|0|size=10|0|Rm=xxxxx|1|opcode=1111|1|Rn=xxxxx|Rd=xxxxx
+// FdotAsimdsame2Fp16fp32: FDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// register fields: Rm, Rn, Rd
+0E80FC03 fdot v3.2s, v0.4h, v0.4h
+0E80FC0A fdot v10.2s, v0.4h, v0.4h
+0E80FC11 fdot v17.2s, v0.4h, v0.4h
+4E9FFFE0 fdot v0.4s, v31.8h, v31.8h
+0E80FC1F fdot v31.2s, v0.4h, v0.4h
+0E80FC00 fdot v0.2s, v0.4h, v0.4h
+0E81FC43 fdot v3.2s, v2.4h, v1.4h

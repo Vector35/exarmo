@@ -1,0 +1,13 @@
+// movt_r_zt_ 1|10|0000|0010011|0|00|off3=xxx|opc=0011111|Rt=xxxxx
+// MovtRZt: MOVT  <Xt>, ZT0[<offs>]
+// register fields: Rt
+C04C03E1 movt x1, zt0[0]
+C04C03E8 movt x8, zt0[0]
+C04C03EF movt x15, zt0[0]
+C04C13E0 movt x0, zt0[8]
+C04C23FF movt xzr, zt0[16]
+C04C33E1 movt x1, zt0[24]
+C04C43E1 movt x1, zt0[32]
+C04C53E1 movt x1, zt0[40]
+C04C63E1 movt x1, zt0[48]
+C04C73E1 movt x1, zt0[56]

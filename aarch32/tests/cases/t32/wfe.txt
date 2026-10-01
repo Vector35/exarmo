@@ -1,0 +1,17 @@
+// WFE_T1 1011|1111|hint=0010|0000
+// WfeT1: WFE{<c>}{<q>}
+// IT state read: condition
+bf20 wfe
+BF20 [ne] wfene
+
+// WFE_T2 111|10|0|1110|10|(1)(1)(1)(1)|1|0(0)0|(0)|000|hint=0000|option=0010
+// WfeT2: WFE{<c>}.W
+// IT state read: condition
+F3A08002 wfe (unpredictable)
+F3AFA802 wfe (unpredictable)
+F3A88002 wfe (unpredictable)
+F3A48002 wfe (unpredictable)
+F3A28002 wfe (unpredictable)
+F3A18002 wfe (unpredictable)
+F3A08002 [ne] wfene (unpredictable)
+F3AF8002 wfe

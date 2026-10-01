@@ -1,0 +1,10 @@
+// STLP_64_ldiappstilp size=11|01|1|0|0|10|L=0|0|Rt2=xxxxx|opc2=0101|10|Rn=xxxxx|Rt=xxxxx
+// Stlp64Ldiappstilp: STLP  <Xt1>, <Xt2>, [<Xn|SP>{, #0}]
+// register fields: Rt2, Rn, Rt
+D9005805 stlp x5, x0, [x0]
+D900580C stlp x12, x0, [x0]
+D9005813 stlp x19, x0, [x0]
+D91F5BE0 stlp x0, xzr, [sp]
+D900581F stlp xzr, x0, [x0]
+D9005800 stlp x0, x0, [x0]
+D9015843 stlp x3, x1, [x2]

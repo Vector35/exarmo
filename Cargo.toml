@@ -1,0 +1,22 @@
+[workspace]
+members = ["aarch32", "aarch32-capi", "aarch64", "aarch64-capi", "cli", "core", "testing"]
+resolver = "2"
+
+[workspace.package]
+version = "0.2.1"
+edition = "2024"
+rust-version = "1.91.1"
+license = "Apache-2.0"
+repository = "https://github.com/Vector35/exarmo"
+
+[workspace.dependencies]
+exarmo-aarch32 = { path = "aarch32", version = "0.2.1" }
+exarmo-aarch64 = { path = "aarch64", version = "0.2.1" }
+exarmo-core = { path = "core", version = "0.2.1" }
+clap = { version = "4.6", features = ["derive"] }
+insta = { version = "1.48", features = ["glob"] }
+
+[profile.release]
+opt-level = 2
+debug = true
+

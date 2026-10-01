@@ -1,0 +1,42 @@
+// orr_z_zz_ 000|0010|0|opc=01|1|Zm=xxxxx|001|100|Zn=xxxxx|Zd=xxxxx
+// OrrZZz: ORR  <Zd>.D, <Zn>.D, <Zm>.D
+// MovZZOrrZZz: MOV  <Zd>.D, <Zn>.D
+// read together by the MOV alias: Zm, Zn
+// register fields: Zm, Zn, Zd
+// form chosen on: Zm, Zn
+047532B7 mov z23.d, z21.d
+04603004 mov z4.d, z0.d
+046D31B4 mov z20.d, z13.d
+046730E5 mov z5.d, z7.d
+0468311F mov z31.d, z8.d
+046530BC mov z28.d, z5.d
+047F33E4 mov z4.d, z31.d
+04643096 mov z22.d, z4.d
+046630DE mov z30.d, z6.d
+047F33EF mov z15.d, z31.d
+046B316A mov z10.d, z11.d
+0473327C mov z28.d, z19.d
+047C339D mov z29.d, z28.d
+0473326D mov z13.d, z19.d
+04743297 mov z23.d, z20.d
+04733278 mov z24.d, z19.d
+04743355 orr z21.d, z26.d, z20.d
+046A31DC orr z28.d, z14.d, z10.d
+0461309B orr z27.d, z4.d, z1.d
+046A30CE orr z14.d, z6.d, z10.d
+0468334B orr z11.d, z26.d, z8.d
+047030DF orr z31.d, z6.d, z16.d
+047C31C3 orr z3.d, z14.d, z28.d
+04703117 orr z23.d, z8.d, z16.d
+047B3158 orr z24.d, z10.d, z27.d
+0475300F orr z15.d, z0.d, z21.d
+04793168 orr z8.d, z11.d, z25.d
+047633A6 orr z6.d, z29.d, z22.d
+046432DC orr z28.d, z22.d, z4.d
+04723280 orr z0.d, z20.d, z18.d
+047431FE orr z30.d, z15.d, z20.d
+047A326C orr z12.d, z19.d, z26.d
+046033F7 orr z23.d, z31.d, z0.d
+047F3017 orr z23.d, z0.d, z31.d
+047532B5 mov z21.d, z21.d
+04613004 orr z4.d, z0.d, z1.d

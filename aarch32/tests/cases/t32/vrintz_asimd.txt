@@ -1,0 +1,40 @@
+// VRINTZ_asimd_T1_D 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=1011|Q=0|M=x|0|Vm=xxxx
+// VrintzAsimdT1D: VRINTZ{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+ffbaf587 vrintz.f32 d15, d7
+ffba758b vrintz.f32 d7, d11
+fffae584 vrintz.f32 d30, d4
+fffa65ab vrintz.f32 d22, d27
+ffba35a1 vrintz.f32 d3, d17
+fffa05a2 vrintz.f32 d16, d18
+fff695a5 vrintz.f16 d25, d21
+ffba0583 vrintz.f32 d0, d3
+FFB2F587 UNDEFINED
+FFBEF587 UNDEFINED
+FFBA8580 vrintz.f32 d8, d0
+FFBA458F vrintz.f32 d4, d15
+FFBA2588 vrintz.f32 d2, d8
+FFBA1580 vrintz.f32 d1, d0
+FFFAF58F vrintz.f32 d31, d15
+FFBAF5A0 vrintz.f32 d15, d16
+FFBAF5AF vrintz.f32 d15, d31
+
+// VRINTZ_asimd_T1_Q 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=1011|Q=1|M=x|0|Vm=xxxx
+// VrintzAsimdT1Q: VRINTZ{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+ffb6a5ee vrintz.f16 q5, q15
+fff605e8 vrintz.f16 q8, q12
+fff645c4 vrintz.f16 q10, q2
+fff6a5e6 vrintz.f16 q13, q11
+fff625c2 vrintz.f16 q9, q1
+ffb625c2 vrintz.f16 q1, q1
+ffba85c8 vrintz.f32 q4, q4
+FFB2F5EF UNDEFINED
+FFBE15E1 UNDEFINED
+FFB605E0 vrintz.f16 q0, q8
+FFB6F5CF UNDEFINED
+FFF6F5EF UNDEFINED
+FFB6A5C0 vrintz.f16 q5, q0
+FFB6A5E0 vrintz.f16 q5, q8

@@ -1,0 +1,27 @@
+// SMLSD_T1 111110110|op1=100|Rn=xxxx|Ra=xxxx|Rd=xxxx|000|M=0|Rm=xxxx
+// SmlsdT1: SMLSD{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+FB400000 smlsd r0, r0, r0, r0
+FB4F0F0F smlsd pc, pc, pc, r0 (unpredictable)
+FB400000 [ne] smlsdne r0, r0, r0, r0
+FB412304 smlsd r3, r1, r4, r2
+
+// SMLSDX_T1 111110110|op1=100|Rn=xxxx|Ra=xxxx|Rd=xxxx|000|M=1|Rm=xxxx
+// SmlsdxT1: SMLSDX{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+fb49c017 smlsdx r0, r9, r7, r12
+fb44e019 smlsdx r0, r4, r9, lr
+fb418a1c smlsdx r10, r1, r12, r8
+fb4c901e smlsdx r0, r12, lr, r9
+fb435a1b smlsdx r10, r3, r11, r5
+fb4aaf12 smlsdx pc, r10, r2, r10 (unpredictable)
+fb460c13 smlsdx r12, r6, r3, r0
+fb450c14 smlsdx r12, r5, r4, r0
+FB40CC10 smlsdx r12, r0, r0, r12
+FB4FC01F smlsdx r0, pc, pc, r12 (unpredictable)
+FB49C91C smlsdx r9, r9, r12, r12
+FB49C019 smlsdx r0, r9, r9, r12
+FB49C010 smlsdx r0, r9, r0, r12
+FB49C017 [ne] smlsdxne r0, r9, r7, r12

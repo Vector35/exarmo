@@ -1,0 +1,138 @@
+// VCVT_toxv_T1_D 111011101|D=x|11|o1=1|op=0|1|U=x|Vd=xxxx|10|sf=11|sx=x|1|i=x|0|imm4=xxxx
+// VcvtToxvT1D: VCVT{<c>}{<q>}.F64.<dt>  <Ddm>, <Ddm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Ddm>: D, Vd
+// read together by <fbits>: i, imm4
+// IT state read: condition
+eeba2bcf vcvt.f64.s32 d2, d2, #2
+eefabb66 vcvt.f64.s16 d27, d27, #3
+eefaabc9 vcvt.f64.s32 d26, d26, #14
+eebbfbc6 vcvt.f64.u32 d15, d15, #20
+eebb2b47 vcvt.f64.u16 d2, d2, #2
+eebbabec vcvt.f64.u32 d10, d10, #7
+eefa4bef vcvt.f64.s32 d20, d20, #1
+eefa7bc1 vcvt.f64.s32 d23, d23, #30
+EEBA0BC0 vcvt.f64.s32 d0, d0, #0x20
+EEBA8BC8 vcvt.f64.s32 d8, d8, #0x10
+EEBA1BC4 vcvt.f64.s32 d1, d1, #0x18
+EEBA0BC2 vcvt.f64.s32 d0, d0, #0x1c
+EEFA0BC0 vcvt.f64.s32 d16, d16, #0x20
+EEFAFBE0 vcvt.f64.s32 d31, d31, #0x1f
+EEBA2BCF [ne] vcvtne.f64.s32 d2, d2, #0x2
+
+// VCVT_toxv_T1_H 111011101|D=x|11|o1=1|op=0|1|U=x|Vd=xxxx|10|sf=01|sx=x|1|i=x|0|imm4=xxxx
+// VcvtToxvT1H: VCVT{<c>}{<q>}.F16.<dt>  <Sdm>, <Sdm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Sdm>: D, Vd
+// read together by <fbits>: i, imm4
+// IT state read: condition
+eebb8966 vcvt.f16.u16 s16, s16, #3
+eefb7965 vcvt.f16.u16 s15, s15, #5
+eebb29ed vcvt.f16.u32 s4, s4, #5
+eefa096a vcvt.f16.s16 s1, s1, #-5 (unpredictable)
+eebb69e0 vcvt.f16.u32 s12, s12, #31
+eebad9ec vcvt.f16.s32 s26, s26, #7
+eebb99e6 vcvt.f16.u32 s18, s18, #19
+eefb99ed vcvt.f16.u32 s19, s19, #5
+EEBBF94F vcvt.f16.u16 s30, s30, #-0xe (unpredictable)
+EEBB4968 vcvt.f16.u16 s8, s8, #-0x1 (unpredictable)
+EEBB1964 vcvt.f16.u16 s2, s2, #0x7
+EEBB0962 vcvt.f16.u16 s0, s0, #0xb
+EEBBF961 vcvt.f16.u16 s30, s30, #0xd
+EEFBF940 vcvt.f16.u16 s31, s31, #0x10
+EEBB894F vcvt.f16.u16 s16, s16, #-0xe (unpredictable)
+EEBB896F vcvt.f16.u16 s16, s16, #-0xf (unpredictable)
+EEBB8966 [ne] vcvtne.f16.u16 s16, s16, #0x3 (unpredictable)
+
+// VCVT_toxv_T1_S 111011101|D=x|11|o1=1|op=0|1|U=x|Vd=xxxx|10|sf=10|sx=x|1|i=x|0|imm4=xxxx
+// VcvtToxvT1S: VCVT{<c>}{<q>}.F32.<dt>  <Sdm>, <Sdm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Sdm>: D, Vd
+// read together by <fbits>: i, imm4
+// IT state read: condition
+eebb8ae9 vcvt.f32.u32 s16, s16, #13
+eefacae6 vcvt.f32.s32 s25, s25, #19
+eefb3ac1 vcvt.f32.u32 s7, s7, #30
+eefb1a4f vcvt.f32.u16 s3, s3, #-14 (unpredictable)
+eefa0a64 vcvt.f32.s16 s1, s1, #7
+eefa8ac3 vcvt.f32.s32 s17, s17, #26
+eebadae7 vcvt.f32.s32 s26, s26, #17
+eeba5a69 vcvt.f32.s16 s10, s10, #-3 (unpredictable)
+EEBBFAE0 vcvt.f32.u32 s30, s30, #0x1f
+EEBB4AE8 vcvt.f32.u32 s8, s8, #0xf
+EEBB2AE2 vcvt.f32.u32 s4, s4, #0x1b
+EEBB0AC0 vcvt.f32.u32 s0, s0, #0x20
+EEFBFAEF vcvt.f32.u32 s31, s31, #0x1
+EEBB8AE9 [ne] vcvtne.f32.u32 s16, s16, #0xd
+
+// VCVT_xv_T1_D 111011101|D=x|11|o1=1|op=1|1|U=x|Vd=xxxx|10|sf=11|sx=x|1|i=x|0|imm4=xxxx
+// VcvtXvT1D: VCVT{<c>}{<q>}.<dt>.F64  <Ddm>, <Ddm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Ddm>: D, Vd
+// read together by <fbits>: i, imm4
+// IT state read: condition
+eebfcbea vcvt.u32.f64 d12, d12, #11
+eeffbb48 vcvt.u16.f64 d27, d27, #0
+eefe6b62 vcvt.s16.f64 d22, d22, #11
+eeff6b67 vcvt.u16.f64 d22, d22, #1
+eebebb43 vcvt.s16.f64 d11, d11, #10
+eebffb44 vcvt.u16.f64 d15, d15, #8
+eeff2b65 vcvt.u16.f64 d18, d18, #5
+eeffabeb vcvt.u32.f64 d26, d26, #9
+EEBE0BE0 vcvt.s32.f64 d0, d0, #0x1f
+EEBF8BEF vcvt.u32.f64 d8, d8, #0x1
+EEBF4BE1 vcvt.u32.f64 d4, d4, #0x1d
+EEBF1BC0 vcvt.u32.f64 d1, d1, #0x20
+EEBF0BCF vcvt.u32.f64 d0, d0, #0x2
+EEFF0BE0 vcvt.u32.f64 d16, d16, #0x1f
+EEFFFBEF vcvt.u32.f64 d31, d31, #0x1
+EEBFCBEA [ne] vcvtne.u32.f64 d12, d12, #0xb
+
+// VCVT_xv_T1_H 111011101|D=x|11|o1=1|op=1|1|U=x|Vd=xxxx|10|sf=01|sx=x|1|i=x|0|imm4=xxxx
+// VcvtXvT1H: VCVT{<c>}{<q>}.<dt>.F16  <Sdm>, <Sdm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Sdm>: D, Vd
+// read together by <fbits>: i, imm4
+// IT state read: condition
+eefe2949 vcvt.s16.f16 s5, s5, #-2 (unpredictable)
+eebe29e5 vcvt.s32.f16 s4, s4, #21
+eebfe96a vcvt.u16.f16 s28, s28, #-5 (unpredictable)
+eefed9c5 vcvt.s32.f16 s27, s27, #22
+eebe99ce vcvt.s32.f16 s18, s18, #4
+eeff9962 vcvt.u16.f16 s19, s19, #11
+eebfa949 vcvt.u16.f16 s20, s20, #-2 (unpredictable)
+eefe59ca vcvt.s32.f16 s11, s11, #12
+EEFF09C0 vcvt.u32.f16 s1, s1, #0x20
+EEFEF94F vcvt.s16.f16 s31, s31, #-0xe (unpredictable)
+EEFE8948 vcvt.s16.f16 s17, s17, #0x0
+EEFE4944 vcvt.s16.f16 s9, s9, #0x8
+EEFE1941 vcvt.s16.f16 s3, s3, #0xe
+EEBE0940 vcvt.s16.f16 s0, s0, #0x10
+EEBEF94F vcvt.s16.f16 s30, s30, #-0xe (unpredictable)
+EEFE0960 vcvt.s16.f16 s1, s1, #0xf
+EEFEF96F vcvt.s16.f16 s31, s31, #-0xf (unpredictable)
+EEFE2949 [ne] vcvtne.s16.f16 s5, s5, #-0x2 (unpredictable)
+
+// VCVT_xv_T1_S 111011101|D=x|11|o1=1|op=1|1|U=x|Vd=xxxx|10|sf=10|sx=x|1|i=x|0|imm4=xxxx
+// VcvtXvT1S: VCVT{<c>}{<q>}.<dt>.F32  <Sdm>, <Sdm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Sdm>: D, Vd
+// read together by <fbits>: i, imm4
+// IT state read: condition
+eefeea4f vcvt.s16.f32 s29, s29, #-14 (unpredictable)
+eebf6acd vcvt.u32.f32 s12, s12, #6
+eeff6ac9 vcvt.u32.f32 s13, s13, #14
+eefe7ac5 vcvt.s32.f32 s15, s15, #22
+eebe0ae3 vcvt.s32.f32 s0, s0, #25
+eebffa65 vcvt.u16.f32 s30, s30, #5
+eebf9ace vcvt.u32.f32 s18, s18, #4
+eefecacd vcvt.s32.f32 s25, s25, #6
+EEFE8A40 vcvt.s16.f32 s17, s17, #0x10
+EEFE4A48 vcvt.s16.f32 s9, s9, #0x0
+EEFE2A44 vcvt.s16.f32 s5, s5, #0x8
+EEFE1A42 vcvt.s16.f32 s3, s3, #0xc
+EEFE0A41 vcvt.s16.f32 s1, s1, #0xe
+EEFEFA40 vcvt.s16.f32 s31, s31, #0x10
+EEFEEA60 vcvt.s16.f32 s29, s29, #0xf
+EEFEEA6F vcvt.s16.f32 s29, s29, #-0xf (unpredictable)
+EEFEEA4F [ne] vcvtne.s16.f32 s29, s29, #-0xe (unpredictable)

@@ -1,0 +1,39 @@
+// fabs_z_p_z_m 000|0010|0|size=xx|0|M=1|1|opc=100|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FabsZPZM: FABS  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+045CBAF7 fabs z23.h, p6/m, z23.h
+045CABDC fabs z28.h, p2/m, z30.h
+049CAD41 fabs z1.s, p3/m, z10.s
+049CBBE1 fabs z1.s, p6/m, z31.s
+049CA8A6 fabs z6.s, p2/m, z5.s
+045CAE6E fabs z14.h, p3/m, z19.h
+04DCAE75 fabs z21.d, p3/m, z19.d
+045CA508 fabs z8.h, p1/m, z8.h
+049CAAEE fabs z14.s, p2/m, z23.s
+049CBAD4 fabs z20.s, p6/m, z22.s
+04DCA72B fabs z11.d, p1/m, z25.d
+045CBD59 fabs z25.h, p7/m, z10.h
+049CBC44 fabs z4.s, p7/m, z2.s
+04DCBB7C fabs z28.d, p6/m, z27.d
+04DCB84F fabs z15.d, p6/m, z2.d
+045CAF8B fabs z11.h, p3/m, z28.h
+045CA000 fabs z0.h, p0/m, z0.h
+045CB2FF fabs z31.h, p4/m, z23.h
+045CB6F7 fabs z23.h, p5/m, z23.h
+041CBAF7 UNDEFINED
+
+// fabs_z_p_z_z 000|0010|0|size=xx|0|M=0|1|opc=100|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// FabsZPZZ: FABS  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+044CA002 fabs z2.h, p0/z, z0.h
+044CA009 fabs z9.h, p0/z, z0.h
+044CA010 fabs z16.h, p0/z, z0.h
+048CA7E0 fabs z0.s, p1/z, z31.s
+04CCA81F fabs z31.d, p2/z, z0.d
+044CAC02 fabs z2.h, p3/z, z0.h
+044CB002 fabs z2.h, p4/z, z0.h
+044CB402 fabs z2.h, p5/z, z0.h
+044CB802 fabs z2.h, p6/z, z0.h
+044CBC02 fabs z2.h, p7/z, z0.h
+040CA002 UNDEFINED
+044CA000 fabs z0.h, p0/z, z0.h

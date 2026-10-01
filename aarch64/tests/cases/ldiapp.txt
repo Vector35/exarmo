@@ -1,0 +1,47 @@
+// LDIAPP_32L_ldiappstilp size=10|0110010|L=1|0|Rt2=xxxxx|opc2=0001|10|Rn=xxxxx|Rt=xxxxx
+// Ldiapp32lLdiappstilp: LDIAPP  <Wt1>, <Wt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+99401801 ldiapp w1, w0, [x0]
+99401808 ldiapp w8, w0, [x0]
+9940180F ldiapp w15, w0, [x0]
+995F1BE0 ldiapp w0, wzr, [sp]
+9940181F ldiapp wzr, w0, [x0]
+99401800 ldiapp w0, w0, [x0] (unpredictable)
+99401821 ldiapp w1, w0, [x1]
+99411843 ldiapp w3, w1, [x2]
+
+// LDIAPP_32LE_ldiappstilp size=10|0110010|L=1|0|Rt2=xxxxx|opc2=0000|10|Rn=xxxxx|Rt=xxxxx
+// Ldiapp32leLdiappstilp: LDIAPP  <Wt1>, <Wt2>, [<Xn|SP>], #8
+// register fields: Rt2, Rn, Rt
+99400802 ldiapp w2, w0, [x0], #0x8 (unpredictable)
+99400809 ldiapp w9, w0, [x0], #0x8 (unpredictable)
+99400810 ldiapp w16, w0, [x0], #0x8 (unpredictable)
+995F0BE0 ldiapp w0, wzr, [sp], #0x8
+9940081F ldiapp wzr, w0, [x0], #0x8 (unpredictable)
+99400800 ldiapp w0, w0, [x0], #0x8 (unpredictable)
+99400842 ldiapp w2, w0, [x2], #0x8 (unpredictable)
+99410843 ldiapp w3, w1, [x2], #0x8
+
+// LDIAPP_64L_ldiappstilp size=11|0110010|L=1|0|Rt2=xxxxx|opc2=0001|10|Rn=xxxxx|Rt=xxxxx
+// Ldiapp64lLdiappstilp: LDIAPP  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+D9401800 ldiapp x0, x0, [x0] (unpredictable)
+D9401807 ldiapp x7, x0, [x0]
+D940180E ldiapp x14, x0, [x0]
+D95F1BFF ldiapp xzr, xzr, [sp] (unpredictable)
+D95F1BE0 ldiapp x0, xzr, [sp]
+D940181F ldiapp xzr, x0, [x0]
+D94018E7 ldiapp x7, x0, [x7]
+D9411843 ldiapp x3, x1, [x2]
+
+// LDIAPP_64LS_ldiappstilp size=11|0110010|L=1|0|Rt2=xxxxx|opc2=0000|10|Rn=xxxxx|Rt=xxxxx
+// Ldiapp64lsLdiappstilp: LDIAPP  <Xt1>, <Xt2>, [<Xn|SP>], #16
+// register fields: Rt2, Rn, Rt
+D9400801 ldiapp x1, x0, [x0], #0x10 (unpredictable)
+D9400808 ldiapp x8, x0, [x0], #0x10 (unpredictable)
+D940080F ldiapp x15, x0, [x0], #0x10 (unpredictable)
+D95F0BE0 ldiapp x0, xzr, [sp], #0x10
+D940081F ldiapp xzr, x0, [x0], #0x10 (unpredictable)
+D9400800 ldiapp x0, x0, [x0], #0x10 (unpredictable)
+D9400821 ldiapp x1, x0, [x1], #0x10 (unpredictable)
+D9410843 ldiapp x3, x1, [x2], #0x10

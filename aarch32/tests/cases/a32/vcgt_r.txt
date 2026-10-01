@@ -1,0 +1,91 @@
+// VCGT_r_A1_D 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0011|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VcgtRA1D: VCGT{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f31c8326 vcgt.u16 d8, d12, d22
+f319032c vcgt.u16 d0, d9, d28
+f212638e vcgt.s16 d6, d18, d14
+f3465327 vcgt.u8 d21, d6, d23
+f25ba325 vcgt.s16 d26, d11, d21
+f325738e vcgt.u32 d7, d21, d14
+f30bc30c vcgt.u8 d12, d11, d12
+f26f130b vcgt.s32 d17, d15, d11
+F33C8326 UNDEFINED
+F200F320 vcgt.s8 d15, d0, d16
+F318432F vcgt.u16 d4, d8, d31
+F3142328 vcgt.u16 d2, d4, d24
+F311F324 vcgt.u16 d15, d1, d20
+F3500322 vcgt.u16 d16, d0, d18
+F350F3A1 vcgt.u16 d31, d16, d17
+F23C8326 UNDEFINED
+F31F8380 vcgt.u16 d8, d31, d0
+F31C830F vcgt.u16 d8, d12, d15
+F31C8320 vcgt.u16 d8, d12, d16
+F31C832F vcgt.u16 d8, d12, d31
+
+// VCGT_r_A1_Q 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0011|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VcgtRA1Q: VCGT{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f20063c8 vcgt.s8 q3, q8, q4
+f204a3cc vcgt.s8 q5, q10, q6
+f2622344 vcgt.s32 q9, q1, q2
+f2464364 vcgt.s8 q10, q3, q10
+f22c0348 vcgt.s32 q0, q6, q4
+f34ca368 vcgt.u8 q13, q6, q12
+f22ae3c8 vcgt.s32 q7, q13, q4
+f32e43c0 vcgt.u32 q2, q15, q0
+F21883C2 vcgt.s16 q4, q12, q1
+F23FF3CF UNDEFINED
+F23113C1 UNDEFINED
+F2500360 vcgt.s16 q8, q0, q8
+F31063C8 vcgt.u16 q3, q8, q4
+F33FF34F UNDEFINED
+F24FF3EF UNDEFINED
+
+// VCGT_r_A2_D 1111001|U=1|0|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1110|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VcgtRA2D: VCGT{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f3634e01 vcgt.f32 d20, d3, d1
+f33d3e20 vcgt.f16 d3, d13, d16
+f37e3e2f vcgt.f16 d19, d14, d31
+f37e3eaf vcgt.f16 d19, d30, d31
+f36e9e0c vcgt.f32 d25, d14, d12
+f3220e09 vcgt.f32 d0, d2, d9
+f3622eab vcgt.f32 d18, d18, d27
+f3707e0e vcgt.f16 d23, d0, d14
+F36FFE08 vcgt.f32 d31, d15, d8
+F3688E04 vcgt.f32 d24, d8, d4
+F3641E02 vcgt.f32 d17, d4, d2
+F321FE00 vcgt.f32 d15, d1, d0
+F3600E8F vcgt.f32 d16, d16, d15
+F36FFE01 vcgt.f32 d31, d15, d1
+F36F4E81 vcgt.f32 d20, d31, d1
+
+// VCGT_r_A2_Q 1111001|U=1|0|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1110|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VcgtRA2Q: VCGT{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f33a8ec0 vcgt.f16 q4, q13, q0
+f378ee66 vcgt.f16 q15, q4, q11
+f374ce66 vcgt.f16 q14, q2, q11
+f36e8eee vcgt.f32 q12, q15, q15
+f37a8e60 vcgt.f16 q12, q5, q8
+f37a2e66 vcgt.f16 q9, q5, q11
+f3282e40 vcgt.f32 q1, q4, q0
+f3388ec6 vcgt.f16 q4, q12, q3
+F3300EC8 vcgt.f16 q0, q8, q4
+F33FFECF UNDEFINED
+F3324EC4 vcgt.f16 q2, q9, q2
+F3311EC1 UNDEFINED
+F3300E42 vcgt.f16 q0, q0, q1
+F33FFE4F UNDEFINED
+F3700EC0 vcgt.f16 q8, q8, q0
+F37FFEEF UNDEFINED

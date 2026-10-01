@@ -1,0 +1,23 @@
+// ptrues_p_s_ 001|0010|1|size=xx|01|100|S=1|11|100|0|pattern=xxxxx|0|Pd=xxxx
+// PtruesPS: PTRUES  <Pd>.<T>{, <pattern>}
+// register fields: Pd
+2519E021 ptrues p1.b, vl1
+2519E3CE ptrues p14.b, mul3
+2519E0CC ptrues p12.b, vl6
+2559E36A ptrues p10.h, #0x1b
+2559E36B ptrues p11.h, #0x1b
+2519E06A ptrues p10.b, vl3
+2599E3E9 ptrues p9.s
+2519E2E7 ptrues p7.b, #0x17
+2599E10E ptrues p14.s, vl8
+25D9E166 ptrues p6.d, vl64
+2519E1A6 ptrues p6.b, vl256
+2599E188 ptrues p8.s, vl128
+2519E3E9 ptrues p9.b
+2599E24D ptrues p13.s, #0x12
+2559E2C0 ptrues p0.h, #0x16
+25D9E323 ptrues p3.d, #0x19
+2519E00F ptrues p15.b, pow2
+2519E201 ptrues p1.b, #0x10
+2519E081 ptrues p1.b, vl4
+2519E041 ptrues p1.b, vl2

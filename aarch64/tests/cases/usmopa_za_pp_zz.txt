@@ -1,0 +1,37 @@
+// usmopa_za_pp_zz_32 1|01|0000|u0=1|10|u1=0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=0|0|0|ZAda=xx
+// UsmopaZaPpZz32: USMOPA  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.B, <Zm>.B
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A19670C1 usmopa za1.s, p4/m, p3/m, z6.b, z22.b
+A19742A0 usmopa za0.s, p0/m, p2/m, z21.b, z23.b
+A18F36E1 usmopa za1.s, p5/m, p1/m, z23.b, z15.b
+A19173A0 usmopa za0.s, p4/m, p3/m, z29.b, z17.b
+A19FA100 usmopa za0.s, p0/m, p5/m, z8.b, z31.b
+A19962E0 usmopa za0.s, p0/m, p3/m, z23.b, z25.b
+A191D962 usmopa za2.s, p6/m, p6/m, z11.b, z17.b
+A1900820 usmopa za0.s, p2/m, p0/m, z1.b, z16.b
+A1808403 usmopa za3.s, p1/m, p4/m, z0.b, z0.b
+A196EFE1 usmopa za1.s, p3/m, p7/m, z31.b, z22.b
+A1967CC1 usmopa za1.s, p7/m, p3/m, z6.b, z22.b
+A1837081 usmopa za1.s, p4/m, p3/m, z4.b, z3.b
+A1847061 usmopa za1.s, p4/m, p3/m, z3.b, z4.b
+A18170C1 usmopa za1.s, p4/m, p3/m, z6.b, z1.b
+A1967021 usmopa za1.s, p4/m, p3/m, z1.b, z22.b
+
+// usmopa_za_pp_zz_64 1|0|1|0000|u0=1|11|u1=0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=0|0|ZAda=xxx
+// UsmopaZaPpZz64: USMOPA  <ZAda>.D, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A1CDDA03 usmopa za3.d, p6/m, p6/m, z16.h, z13.h
+A1C95143 usmopa za3.d, p4/m, p2/m, z10.h, z9.h
+A1C06906 usmopa za6.d, p2/m, p3/m, z8.h, z0.h
+A1C532C4 usmopa za4.d, p4/m, p1/m, z22.h, z5.h
+A1CA9A81 usmopa za1.d, p6/m, p4/m, z20.h, z10.h
+A1C3A646 usmopa za6.d, p1/m, p5/m, z18.h, z3.h
+A1DA2FA4 usmopa za4.d, p3/m, p1/m, z29.h, z26.h
+A1C1BFA0 usmopa za0.d, p7/m, p5/m, z29.h, z1.h
+A1DF0002 usmopa za2.d, p0/m, p0/m, z0.h, z31.h
+A1CDF7E5 usmopa za5.d, p5/m, p7/m, z31.h, z13.h
+A1CDDA07 usmopa za7.d, p6/m, p6/m, z16.h, z13.h
+A1C6D863 usmopa za3.d, p6/m, p6/m, z3.h, z6.h
+A1C6DA06 usmopa za6.d, p6/m, p6/m, z16.h, z6.h
+A1CDD9A3 usmopa za3.d, p6/m, p6/m, z13.h, z13.h
+A1C3DA03 usmopa za3.d, p6/m, p6/m, z16.h, z3.h

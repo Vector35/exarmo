@@ -1,0 +1,21 @@
+// incp_r_p_r_ 001|0010|1|size=xx|101|1|op=0|D=0|1000|1|opc2=00|Pm=xxxx|Rdn=xxxxx
+// IncpRPR: INCP  <Xdn>, <Pm>.<T>
+// register fields: Pm, Rdn
+25AC8957 incp x23, p10.s
+256C88DA incp x26, p6.h
+256C8893 incp x19, p4.h
+25AC887A incp x26, p3.s
+252C881F incp xzr, p0.b
+252C88EE incp x14, p7.b
+252C88AD incp x13, p5.b
+25AC8977 incp x23, p11.s
+256C8831 incp x17, p1.h
+25EC89BE incp lr, p13.d
+252C8845 incp x5, p2.b
+25AC8986 incp x6, p12.s
+256C8934 incp x20, p9.h
+256C88AE incp x14, p5.h
+25EC8840 incp x0, p2.d
+25EC89CD incp x13, p14.d
+25AC89F7 incp x23, p15.s
+25AC894A incp x10, p10.s

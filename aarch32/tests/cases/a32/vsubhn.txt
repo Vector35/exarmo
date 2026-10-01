@@ -1,0 +1,23 @@
+// VSUBHN_A1 1111|0|01|U=0|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0110|N=x|0|M=x|0|Vm=xxxx
+// VsubhnA1: VSUBHN{<c>}{<q>}.<dt>  <Dd>, <Qn>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f2a666a0 vsubhn.i64 d6, q11, q8
+f29096ac vsubhn.i32 d9, q8, q14
+f2c416a6 vsubhn.i16 d17, q10, q11
+f290168c vsubhn.i32 d1, q8, q6
+f2dec602 vsubhn.i32 d28, q7, q1
+f2dc7686 vsubhn.i32 d23, q14, q3
+f2a8c688 vsubhn.i64 d12, q12, q4
+f29e0608 vsubhn.i32 d0, q7, q4
+F2AF66AF UNDEFINED
+F2A2F6A4 vsubhn.i64 d15, q9, q10
+F2A166A1 UNDEFINED
+F2A08600 vsubhn.i64 d8, q0, q0
+F2A646A0 vsubhn.i64 d4, q11, q8
+F2A626A0 vsubhn.i64 d2, q11, q8
+F2A6F6A0 vsubhn.i64 d15, q11, q8
+F2E606A0 vsubhn.i64 d16, q11, q8
+F2E6F6A0 vsubhn.i64 d31, q11, q8
+F2AF660F UNDEFINED

@@ -1,0 +1,22 @@
+// and_z_p_zz_ 000|0010|0|size=xx|0|11|opc=010|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// AndZPZz: AND  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+041A0577 and z23.b, p1/m, z23.b, z11.b
+041A05AD and z13.b, p1/m, z13.b, z13.b
+041A085C and z28.b, p2/m, z28.b, z2.b
+04DA1359 and z25.d, p4/m, z25.d, z26.d
+045A1FD0 and z16.h, p7/m, z16.h, z30.h
+045A0639 and z25.h, p1/m, z25.h, z17.h
+045A19DB and z27.h, p6/m, z27.h, z14.h
+04DA136C and z12.d, p4/m, z12.d, z27.d
+045A1E75 and z21.h, p7/m, z21.h, z19.h
+04DA1DF8 and z24.d, p7/m, z24.d, z15.d
+049A0BC1 and z1.s, p2/m, z1.s, z30.s
+049A13FE and z30.s, p4/m, z30.s, z31.s
+045A0061 and z1.h, p0/m, z1.h, z3.h
+049A18E3 and z3.s, p6/m, z3.s, z7.s
+045A06A7 and z7.h, p1/m, z7.h, z21.h
+049A1102 and z2.s, p4/m, z2.s, z8.s
+041A0C00 and z0.b, p3/m, z0.b, z0.b
+041A157F and z31.b, p5/m, z31.b, z11.b
+041A0561 and z1.b, p1/m, z1.b, z11.b

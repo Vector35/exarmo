@@ -1,0 +1,15 @@
+// UHSAX_A1 cond=xxxx|011|00|op1=111|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=10|1|Rm=xxxx
+// UhsaxA1: UHSAX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+d67edf5f uhsaxle sp, lr, pc (unpredictable)
+867ff65d uhsaxhi pc, pc, sp (unpredictable)
+467e2e5a uhsaxmi r2, lr, r10 (unpredictable)
+2671645e uhsaxhs r6, r1, lr (unpredictable)
+e67d7852 uhsax r7, sp, r2 (unpredictable)
+167f3657 uhsaxne r3, pc, r7 (unpredictable)
+b67b1b5f uhsaxlt r1, r11, pc (unpredictable)
+06777e59 uhsaxeq r7, r7, r9 (unpredictable)
+F67EDF5F UNALLOCATED
+D6700050 uhsaxle r0, r0, r0 (unpredictable)
+D67ED25E uhsaxle sp, lr, lr (unpredictable)
+D67ED15D uhsaxle sp, lr, sp (unpredictable)

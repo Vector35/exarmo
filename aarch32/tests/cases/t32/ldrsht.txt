@@ -1,0 +1,24 @@
+// LDRSHT_T1 111|1100|10|size=01|1|Rn=xxxx|Rt=xxxx|1110|imm8=xxxxxxxx
+// LdrshtT1: LDRSHT{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f93c1eef ldrsht r1, [r12, #239]
+f93c7eb6 ldrsht r7, [r12, #182]
+f930ae56 ldrsht r10, [r0, #86]
+f93c1e54 ldrsht r1, [r12, #84]
+f937aea7 ldrsht r10, [r7, #167]
+f93ace3c ldrsht r12, [r10, #60]
+f93d2ead ldrsht r2, [sp, #173]
+f93b1e0c ldrsht r1, [r11, #12]
+F93C0E00 ldrsht r0, [r12]
+F93CFEFF ldrsht pc, [r12, #0xff] (unpredictable)
+F93CCE80 ldrsht r12, [r12, #0x80]
+F93C1E40 ldrsht r1, [r12, #0x40]
+F93C1E20 ldrsht r1, [r12, #0x20]
+F93C1E10 ldrsht r1, [r12, #0x10]
+F93C1E08 ldrsht r1, [r12, #0x8]
+F93C1E04 ldrsht r1, [r12, #0x4]
+F93C1E02 ldrsht r1, [r12, #0x2]
+F93C1E01 ldrsht r1, [r12, #0x1]
+F93FFEFF reserved hint
+F93C1EEF [ne] ldrshtne r1, [r12, #0xef]

@@ -1,0 +1,33 @@
+// LDARH_LR32_ldstord size=01|00|1|0|0|01|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdarhLr32Ldstord: LDARH  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+48DFFD2F ldarh w15, [x9]
+48DFFF03 ldarh w3, [x24]
+48DFFEEC ldarh w12, [x23]
+48DFFF38 ldarh w24, [x25]
+48DFFF21 ldarh w1, [x25]
+48DFFECD ldarh w13, [x22]
+48DFFEA7 ldarh w7, [x21]
+48DFFEF6 ldarh w22, [x23]
+48DFFFCA ldarh w10, [lr]
+48CFFEA0 ldarh w0, [x21] (unpredictable)
+48DFFD29 ldarh w9, [x9]
+48CFFDC6 ldarh w6, [x14] (unpredictable)
+48CFFF7F ldarh wzr, [x27] (unpredictable)
+48CFFD08 ldarh w8, [x8] (unpredictable)
+48DFFEE1 ldarh w1, [x23]
+48CFFC0A ldarh w10, [x0] (unpredictable)
+48CFFFF2 ldarh w18, [sp] (unpredictable)
+48CFFEEA ldarh w10, [x23] (unpredictable)
+48CFFDEB ldarh w11, [x15] (unpredictable)
+48DFFC08 ldarh w8, [x0]
+48DFFEA9 ldarh w9, [x21]
+48DFFF91 ldarh w17, [x28]
+48CFFF2C ldarh w12, [x25] (unpredictable)
+48CFFDFD ldarh w29, [x15] (unpredictable)
+48C0812F ldarh w15, [x9] (unpredictable)
+48D0C12F ldarh w15, [x9] (unpredictable)
+48C8A12F ldarh w15, [x9] (unpredictable)
+48C4912F ldarh w15, [x9] (unpredictable)
+48C2892F ldarh w15, [x9] (unpredictable)
+48C1852F ldarh w15, [x9] (unpredictable)

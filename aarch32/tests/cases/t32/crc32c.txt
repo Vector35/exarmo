@@ -1,0 +1,46 @@
+// CRC32CB_T1 11111010110|C=1|Rn=xxxx|1111|Rd=xxxx|10|sz=00|Rm=xxxx
+// Crc32cbT1: CRC32CB{<q>}  <Rd>, <Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+fad6fb8e crc32cb r11, r6, lr
+fad6fc8a crc32cb r12, r6, r10
+fad4f08f crc32cb r0, r4, pc (unpredictable)
+fad1ff82 crc32cb pc, r1, r2 (unpredictable)
+fad6f187 crc32cb r1, r6, r7
+fad3ff81 crc32cb pc, r3, r1 (unpredictable)
+fad4fd8b crc32cb sp, r4, r11
+faddf08a crc32cb r0, sp, r10
+FAD0FB80 crc32cb r11, r0, r0
+FADFFB8B crc32cb r11, pc, r11 (unpredictable)
+FAD6F68E crc32cb r6, r6, lr
+FAD6FB86 crc32cb r11, r6, r6
+
+// CRC32CH_T1 11111010110|C=1|Rn=xxxx|1111|Rd=xxxx|10|sz=01|Rm=xxxx
+// Crc32chT1: CRC32CH{<q>}  <Rd>, <Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+fad8f59c crc32ch r5, r8, r12
+fad7f095 crc32ch r0, r7, r5
+fad1f990 crc32ch r9, r1, r0
+faddfb9f crc32ch r11, sp, pc (unpredictable)
+fad6fd99 crc32ch sp, r6, r9
+fad8f59a crc32ch r5, r8, r10
+fad5f691 crc32ch r6, r5, r1
+fadbfb99 crc32ch r11, r11, r9
+FAD0FF9C crc32ch pc, r0, r12 (unpredictable)
+FADFF595 crc32ch r5, pc, r5 (unpredictable)
+FAD8F598 crc32ch r5, r8, r8
+
+// CRC32CW_T1 11111010110|C=1|Rn=xxxx|1111|Rd=xxxx|10|sz=10|Rm=xxxx
+// Crc32cwT1: CRC32CW{<q>}  <Rd>, <Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+fadaf7ae crc32cw r7, r10, lr
+fad7fda9 crc32cw sp, r7, r9
+fad1f9ab crc32cw r9, r1, r11
+faddfbaf crc32cw r11, sp, pc (unpredictable)
+fad3f5a4 crc32cw r5, r3, r4
+fad2fba6 crc32cw r11, r2, r6
+fadbfba6 crc32cw r11, r11, r6
+fad9f5a7 crc32cw r5, r9, r7
+FAD0F0A0 crc32cw r0, r0, r0
+FADFFFAE crc32cw pc, pc, lr (unpredictable)
+FADAF7AA crc32cw r7, r10, r10
+FADAF7A7 crc32cw r7, r10, r7

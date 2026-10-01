@@ -1,0 +1,11 @@
+// DBG_T1 111|10|0|1110|10|(1)(1)(1)(1)|1|0(0)0|(0)|000|hint=1111|option=xxxx
+// DbgT1: DBG{<c>}{<q>}  #<option>
+// IT state read: condition
+f3af80fd dbg #13
+F3A0A8F0 dbg #0x0 (unpredictable)
+F3A880FF dbg #0xf (unpredictable)
+F3A480F8 dbg #0x8 (unpredictable)
+F3A280F4 dbg #0x4 (unpredictable)
+F3A180F2 dbg #0x2 (unpredictable)
+F3AF80F1 dbg #0x1
+F3AF80FD [ne] dbgne #0xd

@@ -1,0 +1,32 @@
+// STLLRH_SL32_ldstord size=01|00|1|0|0|01|L=0|0|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// StllrhSl32Ldstord: STLLRH  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+489F7C85 stllrh w5, [x4]
+489F7C32 stllrh w18, [x1]
+489F7ED2 stllrh w18, [x22]
+489F7F47 stllrh w7, [x26]
+489F7D88 stllrh w8, [x12]
+489F7D8E stllrh w14, [x12]
+489F7FB8 stllrh w24, [fp]
+489F7E3B stllrh w27, [x17]
+489008A3 stllrh w3, [x5] (unpredictable)
+489A2210 stllrh w16, [x16] (unpredictable)
+48820ACA stllrh w10, [x22] (unpredictable)
+489F3436 stllrh w22, [x1] (unpredictable)
+489941C6 stllrh w6, [x14] (unpredictable)
+48990FEB stllrh w11, [sp] (unpredictable)
+488B108A stllrh w10, [x4] (unpredictable)
+489846B2 stllrh w18, [x21] (unpredictable)
+489C3898 stllrh w24, [x4] (unpredictable)
+489B3BA9 stllrh w9, [fp] (unpredictable)
+489D5798 stllrh w24, [x28] (unpredictable)
+488010F2 stllrh w18, [x7] (unpredictable)
+489C3839 stllrh w25, [x1] (unpredictable)
+48853F0F stllrh w15, [x24] (unpredictable)
+489D3113 stllrh w19, [x8] (unpredictable)
+489E6DCF stllrh w15, [x14] (unpredictable)
+489F0000 stllrh w0, [x0] (unpredictable)
+489F7C9F stllrh wzr, [x4]
+48880485 stllrh w5, [x4] (unpredictable)
+48847C85 stllrh w5, [x4] (unpredictable)
+48817C85 stllrh w5, [x4] (unpredictable)

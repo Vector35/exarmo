@@ -1,0 +1,26 @@
+// SMMLS_T1 111110110|op1=110|Rn=xxxx|Ra=xxxx|Rd=xxxx|000|R=0|Rm=xxxx
+// SmmlsT1: SMMLS{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+FB600000 smmls r0, r0, r0, r0
+FB6FFF0F smmls pc, pc, pc, pc (unpredictable)
+FB600000 [ne] smmlsne r0, r0, r0, r0
+FB612304 smmls r3, r1, r4, r2
+
+// SMMLSR_T1 111110110|op1=110|Rn=xxxx|Ra=xxxx|Rd=xxxx|000|R=1|Rm=xxxx
+// SmmlsrT1: SMMLSR{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+fb68ed1c smmlsr sp, r8, r12, lr
+fb65fc18 smmlsr r12, r5, r8, pc (unpredictable)
+fb6cef12 smmlsr pc, r12, r2, lr (unpredictable)
+fb6a3213 smmlsr r2, r10, r3, r3
+fb67d510 smmlsr r5, r7, r0, sp
+fb67e21f smmlsr r2, r7, pc, lr (unpredictable)
+fb6ba31e smmlsr r3, r11, lr, r10
+fb6f9210 smmlsr r2, pc, r0, r9 (unpredictable)
+FB60001C smmlsr r0, r0, r12, r0
+FB688D1D smmlsr sp, r8, sp, r8
+FB68E81C smmlsr r8, r8, r12, lr
+FB68EE18 smmlsr lr, r8, r8, lr
+FB68ED1C [ne] smmlsrne sp, r8, r12, lr

@@ -1,0 +1,29 @@
+// CPYFET_CPY_memcms sz=xx|011|o0=0|01|op1=10|0|Rs=xxxxx|op2=0011|01|Rn=xxxxx|Rd=xxxxx
+// CpyfetCpyMemcms: CPYFET  [<Xd>]!, [<Xs>]!, <Xn>!
+// register fields: Rs, Rn, Rd
+19803400 cpyfet [x0]!, [x0]!, x0!
+199F37FF cpyfet [xzr]!, [xzr]!, xzr!
+59803400 UNDEFINED
+99803400 UNDEFINED
+D9803400 UNDEFINED
+19813443 cpyfet [x3]!, [x1]!, x2!
+
+// CPYFMT_CPY_memcms sz=xx|011|o0=0|01|op1=01|0|Rs=xxxxx|op2=0011|01|Rn=xxxxx|Rd=xxxxx
+// CpyfmtCpyMemcms: CPYFMT  [<Xd>]!, [<Xs>]!, <Xn>!
+// register fields: Rs, Rn, Rd
+19403400 cpyfmt [x0]!, [x0]!, x0!
+195F37FF cpyfmt [xzr]!, [xzr]!, xzr!
+59403400 UNDEFINED
+99403400 UNDEFINED
+D9403400 UNDEFINED
+19413443 cpyfmt [x3]!, [x1]!, x2!
+
+// CPYFPT_CPY_memcms sz=xx|011|o0=0|01|op1=00|0|Rs=xxxxx|op2=0011|01|Rn=xxxxx|Rd=xxxxx
+// CpyfptCpyMemcms: CPYFPT  [<Xd>]!, [<Xs>]!, <Xn>!
+// register fields: Rs, Rn, Rd
+19003400 cpyfpt [x0]!, [x0]!, x0!
+191F37FF cpyfpt [xzr]!, [xzr]!, xzr!
+59003400 UNDEFINED
+99003400 UNDEFINED
+D9003400 UNDEFINED
+19013443 cpyfpt [x3]!, [x1]!, x2!

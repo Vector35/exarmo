@@ -1,0 +1,45 @@
+// sunpkhi_z_z_ 000|0010|1|size=xx|1|10|0|U=0|H=1|001110|Zn=xxxxx|Zd=xxxxx
+// SunpkhiZZ: SUNPKHI  <Zd>.<T>, <Zn>.<Tb>
+// register fields: Zn, Zd
+05B13A5F sunpkhi z31.s, z18.h
+057139D0 sunpkhi z16.h, z14.b
+05713B33 sunpkhi z19.h, z25.b
+05713BF3 sunpkhi z19.h, z31.b
+05B13840 sunpkhi z0.s, z2.h
+057138BF sunpkhi z31.h, z5.b
+05B13AAB sunpkhi z11.s, z21.h
+0571395F sunpkhi z31.h, z10.b
+05B139B4 sunpkhi z20.s, z13.h
+05F13BE4 sunpkhi z4.d, z31.s
+05B13A29 sunpkhi z9.s, z17.h
+05713BDA sunpkhi z26.h, z30.b
+05F138A9 sunpkhi z9.d, z5.s
+05713983 sunpkhi z3.h, z12.b
+05F139E3 sunpkhi z3.d, z15.s
+05F13A03 sunpkhi z3.d, z16.s
+05B1381F sunpkhi z31.s, z0.h
+05313A5F UNDEFINED
+05B13A52 sunpkhi z18.s, z18.h
+
+// sunpklo_z_z_ 000|0010|1|size=xx|1|10|0|U=0|H=0|001110|Zn=xxxxx|Zd=xxxxx
+// SunpkloZZ: SUNPKLO  <Zd>.<T>, <Zn>.<Tb>
+// register fields: Zn, Zd
+057039B7 sunpklo z23.h, z13.b
+05703BCD sunpklo z13.h, z30.b
+05703B9C sunpklo z28.h, z28.b
+05F03A19 sunpklo z25.d, z16.s
+05F03833 sunpklo z19.d, z1.s
+05B03A6D sunpklo z13.s, z19.h
+05B03B13 sunpklo z19.s, z24.h
+05B03A94 sunpklo z20.s, z20.h
+0570385E sunpklo z30.h, z2.b
+05B03BAB sunpklo z11.s, z29.h
+057038A0 sunpklo z0.h, z5.b
+05B038B2 sunpklo z18.s, z5.h
+05B0395D sunpklo z29.s, z10.h
+05F03AA9 sunpklo z9.d, z21.s
+05703B6B sunpklo z11.h, z27.b
+05703B38 sunpklo z24.h, z25.b
+0570381F sunpklo z31.h, z0.b
+05703BF7 sunpklo z23.h, z31.b
+053039B7 UNDEFINED

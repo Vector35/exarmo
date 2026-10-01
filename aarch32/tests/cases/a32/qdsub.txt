@@ -1,0 +1,18 @@
+// QDSUB_A1 cond=xxxx|00|010|opc=11|0|Rn=xxxx|Rd=xxxx|(0)(0)(0)(0)|0|101|Rm=xxxx
+// QdsubA1: QDSUB{<c>}{<q>}  {<Rd>, }<Rm>, <Rn>
+// register fields: Rn, Rd, Rm
+e1634853 qdsub r4, r3, r3 (unpredictable)
+716ef650 qdsubvc pc, r0, lr (unpredictable)
+016e005f qdsubeq r0, pc, lr (unpredictable)
+21675c51 qdsubhs r5, r1, r7 (unpredictable)
+91641453 qdsubls r1, r3, r4 (unpredictable)
+4163a059 qdsubmi r10, r9, r3
+1160be5f qdsubne r11, pc, r0 (unpredictable)
+d1674054 qdsuble r4, r4, r7
+// Binary Ninja's tests
+81686057 qdsubhi r6, r7, r8
+e1686057 qdsub r6, r7, r8
+F1634853 UNALLOCATED
+E16F4F53 qdsub r4, r3, pc (unpredictable)
+E1633253 qdsub r3, r3, r3 (unpredictable)
+E1634153 qdsub r4, r3, r3 (unpredictable)

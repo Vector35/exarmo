@@ -1,0 +1,20 @@
+// MSR_br_T1_AS 111|10|0|1110|0|R=x|Rn=xxxx|1|0(0)0|M1=xxxx|(0)(0)|1|M=x|(0)(0)(0)(0)
+// MsrBrT1As: MSR{<c>}{<q>}  <banked_reg>, <Rn>
+// read together by <banked_reg>: R, M1, M
+// register fields: Rn
+// IT state read: condition
+F3808020 msr r8_usr, r0
+F39FAF7F UNPREDICTABLE
+F38088A8 msr r8_fiq, r0 (unpredictable)
+F38084E4 msr r12_usr, r0 (unpredictable)
+F3808222 msr r10_usr, r0 (unpredictable)
+F3808121 msr r9_usr, r0 (unpredictable)
+F3808030 msr lr_irq, r0
+F3808F20 UNPREDICTABLE
+F3808F30 msr sp_hyp, r0
+F3908020 UNPREDICTABLE
+F3908030 msr spsr_irq, r0
+F3908F20 UNPREDICTABLE
+F3908F30 UNPREDICTABLE
+F3808020 [ne] msrne r8_usr, r0
+F38FA06F msr r8_usr, pc (unpredictable)

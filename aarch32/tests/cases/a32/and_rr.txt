@@ -1,0 +1,42 @@
+// AND_rr_A1 cond=xxxx|0000|opc=000|S=0|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// AndRrA1: AND{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+900b4f50 andls r4, r11, r0, asr pc (unpredictable)
+60063157 andvs r3, r6, r7, asr r1
+500a6c75 andpl r6, r10, r5, ror r12
+60031252 andvs r1, r3, r2, asr r2
+500cf311 andpl pc, r12, r1, lsl r3 (unpredictable)
+d0052177 andle r2, r5, r7, ror r1
+500a841e andpl r8, r10, lr, lsl r4
+b00cb713 andlt r11, r12, r3, lsl r7
+// Binary Ninja's tests
+e0066217 and r6, r6, r7, lsl r2
+e0066237 and r6, r6, r7, lsr r2
+e0066257 and r6, r6, r7, asr r2
+e0066277 and r6, r6, r7, ror r2
+e0076218 and r6, r7, r8, lsl r2
+e0076238 and r6, r7, r8, lsr r2
+e0076258 and r6, r7, r8, asr r2
+e0076278 and r6, r7, r8, ror r2
+0000005F andeq r0, r0, pc, asr r0 (unpredictable)
+F00B4F50 UNALLOCATED
+800F4450 andhi r4, pc, r0, asr r4 (unpredictable)
+400B4B54 andmi r4, r11, r4, asr r11
+200B4F5B andcs r4, r11, r11, asr pc (unpredictable)
+100B4F50 andne r4, r11, r0, asr pc (unpredictable)
+
+// ANDS_rr_A1 cond=xxxx|0000|opc=000|S=1|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// AndsRrA1: ANDS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+40107355 andsmi r7, r0, r5, asr r3
+50129774 andspl r9, r2, r4, ror r7
+e01eea35 ands lr, lr, r5, lsr r10
+a012e319 andsge lr, r2, r9, lsl r3
+20149f37 andshs r9, r4, r7, lsr pc (unpredictable)
+90149611 andsls r9, r4, r1, lsl r6
+20168171 andshs r8, r6, r1, ror r1
+601b2552 andsvs r2, r11, r2, asr r5
+001F0050 andseq r0, pc, r0, asr r0 (unpredictable)
+F0107355 UNALLOCATED
+8010F05F andshi pc, r0, pc, asr r0 (unpredictable)
+10107750 andsne r7, r0, r0, asr r7

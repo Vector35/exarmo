@@ -1,0 +1,39 @@
+// FCVTNS_sisd_32D sf=0|0|S=0|11110|ftype=01|1|rmode=01|opcode=010|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtnsSisd32d: FCVTNS  <Sd>, <Dn>
+// register fields: Rn, Rd
+1E6A0003 fcvtns s3, d0
+1E6A000A fcvtns s10, d0
+1E6A0011 fcvtns s17, d0
+1E6A03E0 fcvtns s0, d31
+1E6A001F fcvtns s31, d0
+1E6A0000 fcvtns s0, d0
+
+// FCVTNS_sisd_32H sf=0|0|S=0|11110|ftype=11|1|rmode=01|opcode=010|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtnsSisd32h: FCVTNS  <Sd>, <Hn>
+// register fields: Rn, Rd
+1EEA0006 fcvtns s6, h0
+1EEA000D fcvtns s13, h0
+1EEA0014 fcvtns s20, h0
+1EEA03E0 fcvtns s0, h31
+1EEA001F fcvtns s31, h0
+1EEA0000 fcvtns s0, h0
+
+// FCVTNS_sisd_64H sf=1|0|S=0|11110|ftype=11|1|rmode=01|opcode=010|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtnsSisd64h: FCVTNS  <Dd>, <Hn>
+// register fields: Rn, Rd
+9EEA0004 fcvtns d4, h0
+9EEA000B fcvtns d11, h0
+9EEA0012 fcvtns d18, h0
+9EEA03E0 fcvtns d0, h31
+9EEA001F fcvtns d31, h0
+9EEA0000 fcvtns d0, h0
+
+// FCVTNS_sisd_64S sf=1|0|S=0|11110|ftype=00|1|rmode=01|opcode=010|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtnsSisd64s: FCVTNS  <Dd>, <Sn>
+// register fields: Rn, Rd
+9E2A0003 fcvtns d3, s0
+9E2A000A fcvtns d10, s0
+9E2A0011 fcvtns d17, s0
+9E2A03E0 fcvtns d0, s31
+9E2A001F fcvtns d31, s0
+9E2A0000 fcvtns d0, s0

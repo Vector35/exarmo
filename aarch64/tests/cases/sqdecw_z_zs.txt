@@ -1,0 +1,24 @@
+// sqdecw_z_zs_ 000|0010|0|size=10|1|0|imm4=xxxx|11|00|D=1|U=0|pattern=xxxxx|Zdn=xxxxx
+// SqdecwZZs: SQDECW  <Zdn>.S{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04AEC8D8 sqdecw z24.s, vl6, mul #0xf
+04A2C937 sqdecw z23.s, vl16, mul #0x3
+04A5CB31 sqdecw z17.s, #0x19, mul #0x6
+04AFC8A9 sqdecw z9.s, vl5, mul #0x10
+04A9C8C9 sqdecw z9.s, vl6, mul #0xa
+04A6CB04 sqdecw z4.s, #0x18, mul #0x7
+04A3CABC sqdecw z28.s, #0x15, mul #0x4
+04A6C848 sqdecw z8.s, vl2, mul #0x7
+04A7C959 sqdecw z25.s, vl32, mul #0x8
+04A1C9D5 sqdecw z21.s, #0xe, mul #0x2
+04AFCA4B sqdecw z11.s, #0x12, mul #0x10
+04A0C809 sqdecw z9.s, pow2
+04ACCB7B sqdecw z27.s, #0x1b, mul #0xd
+04A4CAE7 sqdecw z7.s, #0x17, mul #0x5
+04A3C826 sqdecw z6.s, vl1, mul #0x4
+04ACC93B sqdecw z27.s, vl16, mul #0xd
+04AECBE0 sqdecw z0.s, all, mul #0xf
+04AEC8DF sqdecw z31.s, vl6, mul #0xf
+04A8CA18 sqdecw z24.s, #0x10, mul #0x9
+04AEC918 sqdecw z24.s, vl8, mul #0xf
+04AEC898 sqdecw z24.s, vl4, mul #0xf

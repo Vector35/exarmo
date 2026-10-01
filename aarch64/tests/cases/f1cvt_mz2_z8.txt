@@ -1,0 +1,16 @@
+// f1cvt_mz2_z8_ 1|10|0000|1|opc=00|1|001|10|111000|Zn=xxxxx|Zd=xxxx|L=0
+// F1cvtMz2Z8: F1CVT  { <Zd1>.H-<Zd2>.H }, <Zn>.B
+// register fields: Zn, Zd
+C126E004 f1cvt {z4.h-z5.h}, z0.b
+C126E012 f1cvt {z18.h-z19.h}, z0.b
+C126E020 f1cvt {z0.h-z1.h}, z1.b
+C126E3FE f1cvt {z30.h-z31.h}, z31.b
+C126E000 f1cvt {z0.h-z1.h}, z0.b
+
+// f2cvt_mz2_z8_ 1|10|0000|1|opc=10|1|001|10|111000|Zn=xxxxx|Zd=xxxx|L=0
+// F2cvtMz2Z8: F2CVT  { <Zd1>.H-<Zd2>.H }, <Zn>.B
+// register fields: Zn, Zd
+C1A6E000 f2cvt {z0.h-z1.h}, z0.b
+C1A6E00E f2cvt {z14.h-z15.h}, z0.b
+C1A6E01C f2cvt {z28.h-z29.h}, z0.b
+C1A6E3FE f2cvt {z30.h-z31.h}, z31.b

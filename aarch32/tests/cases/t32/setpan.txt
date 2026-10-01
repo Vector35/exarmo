@@ -1,0 +1,11 @@
+// SETPAN_T1 1011|0110|00|0|(1)|imm1=x|(0)(0)(0)
+// SetpanT1: SETPAN{<q>}  #<imm>
+b600 setpan #0 (unpredictable)
+b601 setpan #0 (unpredictable)
+b602 setpan #0 (unpredictable)
+b603 setpan #0 (unpredictable)
+b604 setpan #0 (unpredictable)
+b605 setpan #0 (unpredictable)
+b606 setpan #0 (unpredictable)
+b607 setpan #0 (unpredictable)
+B618 setpan #0x1

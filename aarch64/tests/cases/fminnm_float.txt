@@ -1,0 +1,69 @@
+// FMINNM_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|01|op=11|10|Rn=xxxxx|Rd=xxxxx
+// FminnmDFloatdp2: FMINNM  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E737BBE fminnm d30, d29, d19
+1E7979CC fminnm d12, d14, d25
+1E7A7A0C fminnm d12, d16, d26
+1E7E7AFA fminnm d26, d23, d30
+1E7D791E fminnm d30, d8, d29
+1E617A12 fminnm d18, d16, d1
+1E7C7A5D fminnm d29, d18, d28
+1E64794F fminnm d15, d10, d4
+1E667853 fminnm d19, d2, d6
+1E777897 fminnm d23, d4, d23
+1E6B7A51 fminnm d17, d18, d11
+1E6E7A42 fminnm d2, d18, d14
+1E7F7AD8 fminnm d24, d22, d31
+1E70782B fminnm d11, d1, d16
+1E7F78FE fminnm d30, d7, d31
+1E6C7809 fminnm d9, d0, d12
+1E607BE0 fminnm d0, d31, d0
+1E737BBF fminnm d31, d29, d19
+1E737A7E fminnm d30, d19, d19
+1E737BBD fminnm d29, d29, d19
+
+// FMINNM_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|01|op=11|10|Rn=xxxxx|Rd=xxxxx
+// FminnmHFloatdp2: FMINNM  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EF37BA1 fminnm h1, h29, h19
+1EF37864 fminnm h4, h3, h19
+1EF37A36 fminnm h22, h17, h19
+1EF97915 fminnm h21, h8, h25
+1EE97809 fminnm h9, h0, h9
+1EEA7BCC fminnm h12, h30, h10
+1EED79B3 fminnm h19, h13, h13
+1EE77A69 fminnm h9, h19, h7
+1EE37926 fminnm h6, h9, h3
+1EEB79FC fminnm h28, h15, h11
+1EF67857 fminnm h23, h2, h22
+1EE27B8F fminnm h15, h28, h2
+1EFB7830 fminnm h16, h1, h27
+1EF179D2 fminnm h18, h14, h17
+1EE37B60 fminnm h0, h27, h3
+1EED7891 fminnm h17, h4, h13
+1EE07BFF fminnm h31, h31, h0
+1EFF7BA1 fminnm h1, h29, h31
+
+// FMINNM_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|01|op=11|10|Rn=xxxxx|Rd=xxxxx
+// FminnmSFloatdp2: FMINNM  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E287B6E fminnm s14, s27, s8
+1E377A19 fminnm s25, s16, s23
+1E32797F fminnm s31, s11, s18
+1E3C79B6 fminnm s22, s13, s28
+1E2E7B4B fminnm s11, s26, s14
+1E2778AD fminnm s13, s5, s7
+1E2A7AA4 fminnm s4, s21, s10
+1E2678B0 fminnm s16, s5, s6
+1E2678C0 fminnm s0, s6, s6
+1E207902 fminnm s2, s8, s0
+1E2D79CF fminnm s15, s14, s13
+1E2179D4 fminnm s20, s14, s1
+1E3A7866 fminnm s6, s3, s26
+1E307BC4 fminnm s4, s30, s16
+1E2678AC fminnm s12, s5, s6
+1E2978FF fminnm s31, s7, s9
+1E3F780E fminnm s14, s0, s31
+1E287BEE fminnm s14, s31, s8
+1E287B68 fminnm s8, s27, s8
+1E287B7B fminnm s27, s27, s8

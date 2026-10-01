@@ -1,0 +1,42 @@
+// AUTDA_64P_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=0|110|Rn=xxxxx|Rd=xxxxx
+// Autda64pDp1src: AUTDA  <Xd>, <Xn|SP>
+// register fields: Rn, Rd
+DAC11A42 autda x2, x18
+DAC118FD autda fp, x7
+DAC1185C autda x28, x2
+DAC11A2D autda x13, x17
+DAC11A63 autda x3, x19
+DAC1193B autda x27, x9
+DAC11A09 autda x9, x16
+DAC1190B autda x11, x8
+DAC11AB3 autda x19, x21
+DAC11943 autda x3, x10
+DAC11B4E autda x14, x26
+DAC11959 autda x25, x10
+DAC11BDF autda xzr, lr
+DAC118F5 autda x21, x7
+DAC11A5A autda x26, x18
+DAC11967 autda x7, x11
+DAC11800 autda x0, x0
+DAC11BE2 autda x2, sp
+
+// AUTDZA_64Z_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=1|110|Rn=11111|Rd=xxxxx
+// Autdza64zDp1src: AUTDZA  <Xd>
+// register fields: Rd
+DAC13BED autdza x13
+DAC13BEF autdza x15
+DAC13BE3 autdza x3
+DAC13BE6 autdza x6
+DAC13BF1 autdza x17
+DAC13BFA autdza x26
+DAC13BE8 autdza x8
+DAC13BEB autdza x11
+DAC13BFF autdza xzr
+DAC13BF8 autdza x24
+DAC13BEE autdza x14
+DAC13BF6 autdza x22
+DAC13BF7 autdza x23
+DAC13BF0 autdza x16
+DAC13BF3 autdza x19
+DAC13BE4 autdza x4
+DAC13BE0 autdza x0

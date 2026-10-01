@@ -1,0 +1,95 @@
+// FCMLT_asimdmisc_FZ 0|Q=x|U=0|0|111|0|1|sz=x|10000|opcode=01110|10|Rn=xxxxx|Rd=xxxxx
+// FcmltAsimdmiscFz: FCMLT  <Vd>.<T>, <Vn>.<T>, #0.0
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+4EE0E95C fcmlt v28.2d, v10.2d, #0.0
+4EA0EBE1 fcmlt v1.4s, v31.4s, #0.0
+0EA0EB63 fcmlt v3.2s, v27.2s, #0.0
+4EE0EB25 fcmlt v5.2d, v25.2d, #0.0
+4EE0EB85 fcmlt v5.2d, v28.2d, #0.0
+4EA0E9F7 fcmlt v23.4s, v15.4s, #0.0
+4EA0E972 fcmlt v18.4s, v11.4s, #0.0
+0EA0EB48 fcmlt v8.2s, v26.2s, #0.0
+4EA0E8AF fcmlt v15.4s, v5.4s, #0.0
+0EA0E816 fcmlt v22.2s, v0.2s, #0.0
+0EA0EB83 fcmlt v3.2s, v28.2s, #0.0
+4EE0E85F fcmlt v31.2d, v2.2d, #0.0
+4EA0E98C fcmlt v12.4s, v12.4s, #0.0
+0EA0E835 fcmlt v21.2s, v1.2s, #0.0
+0EA0E927 fcmlt v7.2s, v9.2s, #0.0
+0EA0EA86 fcmlt v6.2s, v20.2s, #0.0
+4EE0E940 fcmlt v0.2d, v10.2d, #0.0
+0EE0E95C UNDEFINED
+
+// FCMLT_asimdmiscfp16_FZ 0|Q=x|U=0|0|111|0|a=1|1111|00|opcode=01110|10|Rn=xxxxx|Rd=xxxxx
+// FcmltAsimdmiscfp16Fz: FCMLT  <Vd>.<T>, <Vn>.<T>, #0.0
+// register fields: Rn, Rd
+0EF8EA04 fcmlt v4.4h, v16.4h, #0.0
+0EF8EBC0 fcmlt v0.4h, v30.4h, #0.0
+4EF8EA84 fcmlt v4.8h, v20.8h, #0.0
+0EF8E8CD fcmlt v13.4h, v6.4h, #0.0
+0EF8E9E1 fcmlt v1.4h, v15.4h, #0.0
+0EF8E88F fcmlt v15.4h, v4.4h, #0.0
+4EF8EB02 fcmlt v2.8h, v24.8h, #0.0
+4EF8E9B3 fcmlt v19.8h, v13.8h, #0.0
+4EF8EB67 fcmlt v7.8h, v27.8h, #0.0
+4EF8EB05 fcmlt v5.8h, v24.8h, #0.0
+0EF8EB91 fcmlt v17.4h, v28.4h, #0.0
+0EF8EB78 fcmlt v24.4h, v27.4h, #0.0
+4EF8EB26 fcmlt v6.8h, v25.8h, #0.0
+0EF8EBDF fcmlt v31.4h, v30.4h, #0.0
+4EF8EB06 fcmlt v6.8h, v24.8h, #0.0
+0EF8E84F fcmlt v15.4h, v2.4h, #0.0
+0EF8E804 fcmlt v4.4h, v0.4h, #0.0
+0EF8EBE4 fcmlt v4.4h, v31.4h, #0.0
+0EF8EA10 fcmlt v16.4h, v16.4h, #0.0
+
+// FCMLT_asisdmisc_FZ 01|U=0|1|111|0|1|sz=x|10000|opcode=01110|10|Rn=xxxxx|Rd=xxxxx
+// FcmltAsisdmiscFz: FCMLT  <V><d>, <V><n>, #0.0
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+5EA0E90C fcmlt s12, s8, #0.0
+5EE0EA6B fcmlt d11, d19, #0.0
+5EA0EA0F fcmlt s15, s16, #0.0
+5EA0EB56 fcmlt s22, s26, #0.0
+5EE0EB2F fcmlt d15, d25, #0.0
+5EA0EB9B fcmlt s27, s28, #0.0
+5EA0EADC fcmlt s28, s22, #0.0
+5EE0E849 fcmlt d9, d2, #0.0
+5EE0E963 fcmlt d3, d11, #0.0
+5EE0EAD2 fcmlt d18, d22, #0.0
+5EA0EB26 fcmlt s6, s25, #0.0
+5EE0E8F7 fcmlt d23, d7, #0.0
+5EA0E948 fcmlt s8, s10, #0.0
+5EA0E8D4 fcmlt s20, s6, #0.0
+5EE0EA38 fcmlt d24, d17, #0.0
+5EE0EBF1 fcmlt d17, d31, #0.0
+5EA0E800 fcmlt s0, s0, #0.0
+5EA0E91F fcmlt s31, s8, #0.0
+5EE0E900 fcmlt d0, d8, #0.0
+5EE0E91F fcmlt d31, d8, #0.0
+5EA0EBEC fcmlt s12, s31, #0.0
+5EE0E80C fcmlt d12, d0, #0.0
+
+// FCMLT_asisdmiscfp16_FZ 01|U=0|1|111|0|a=1|1111|00|opcode=01110|10|Rn=xxxxx|Rd=xxxxx
+// FcmltAsisdmiscfp16Fz: FCMLT  <Hd>, <Hn>, #0.0
+// register fields: Rn, Rd
+5EF8EA48 fcmlt h8, h18, #0.0
+5EF8E849 fcmlt h9, h2, #0.0
+5EF8E80C fcmlt h12, h0, #0.0
+5EF8E8DF fcmlt h31, h6, #0.0
+5EF8EA6E fcmlt h14, h19, #0.0
+5EF8E981 fcmlt h1, h12, #0.0
+5EF8E966 fcmlt h6, h11, #0.0
+5EF8EAFE fcmlt h30, h23, #0.0
+5EF8E8F0 fcmlt h16, h7, #0.0
+5EF8E84C fcmlt h12, h2, #0.0
+5EF8EBE6 fcmlt h6, h31, #0.0
+5EF8EB3C fcmlt h28, h25, #0.0
+5EF8E85B fcmlt h27, h2, #0.0
+5EF8EAEA fcmlt h10, h23, #0.0
+5EF8E94F fcmlt h15, h10, #0.0
+5EF8E968 fcmlt h8, h11, #0.0
+5EF8EA40 fcmlt h0, h18, #0.0
+5EF8EA52 fcmlt h18, h18, #0.0

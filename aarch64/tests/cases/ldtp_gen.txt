@@ -1,0 +1,61 @@
+// LDTP_64_ldstpair_off opc=11|10|1|VR=0|0|10|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldtp64LdstpairOff: LDTP  <Xt1>, <Xt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+E9400003 ldtp x3, x0, [x0]
+E940000A ldtp x10, x0, [x0]
+E9400011 ldtp x17, x0, [x0]
+E97FFFE0 ldtp x0, xzr, [sp, #-0x8]
+E940001F ldtp xzr, x0, [x0]
+E9400000 ldtp x0, x0, [x0] (unpredictable)
+E9600003 ldtp x3, x0, [x0, #-0x200]
+E9500003 ldtp x3, x0, [x0, #0x100]
+E9480003 ldtp x3, x0, [x0, #0x80]
+E9440003 ldtp x3, x0, [x0, #0x40]
+E9420003 ldtp x3, x0, [x0, #0x20]
+E9410003 ldtp x3, x0, [x0, #0x10]
+E9408003 ldtp x3, x0, [x0, #0x8]
+E9400063 ldtp x3, x0, [x3]
+E9400443 ldtp x3, x1, [x2]
+
+// LDTP_64_ldstpair_post opc=11|10|1|VR=0|0|01|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldtp64LdstpairPost: LDTP  <Xt1>, <Xt2>, [<Xn|SP>], #<imm>
+// register fields: Rt2, Rn, Rt
+E8C00000 ldtp x0, x0, [x0], #0x0 (unpredictable)
+E8C00007 ldtp x7, x0, [x0], #0x0 (unpredictable)
+E8C0000E ldtp x14, x0, [x0], #0x0 (unpredictable)
+E8FFFFFF ldtp xzr, xzr, [sp], #-0x8 (unpredictable)
+E8E00000 ldtp x0, x0, [x0], #-0x200 (unpredictable)
+E8D00000 ldtp x0, x0, [x0], #0x100 (unpredictable)
+E8C80000 ldtp x0, x0, [x0], #0x80 (unpredictable)
+E8C40000 ldtp x0, x0, [x0], #0x40 (unpredictable)
+E8C20000 ldtp x0, x0, [x0], #0x20 (unpredictable)
+E8C10000 ldtp x0, x0, [x0], #0x10 (unpredictable)
+E8C08000 ldtp x0, x0, [x0], #0x8 (unpredictable)
+E8FFFFE0 ldtp x0, xzr, [sp], #-0x8
+E8E0001F ldtp xzr, x0, [x0], #-0x200 (unpredictable)
+E8D000E7 ldtp x7, x0, [x7], #0x100 (unpredictable)
+E8C80007 ldtp x7, x0, [x0], #0x80 (unpredictable)
+E8C40007 ldtp x7, x0, [x0], #0x40 (unpredictable)
+E8C20007 ldtp x7, x0, [x0], #0x20 (unpredictable)
+E8C10007 ldtp x7, x0, [x0], #0x10 (unpredictable)
+E8C08007 ldtp x7, x0, [x0], #0x8 (unpredictable)
+E8C00443 ldtp x3, x1, [x2], #0x0
+
+// LDTP_64_ldstpair_pre opc=11|10|1|VR=0|0|11|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldtp64LdstpairPre: LDTP  <Xt1>, <Xt2>, [<Xn|SP>, #<imm>]!
+// register fields: Rt2, Rn, Rt
+E9C00006 ldtp x6, x0, [x0, #0x0]! (unpredictable)
+E9C0000D ldtp x13, x0, [x0, #0x0]! (unpredictable)
+E9C00014 ldtp x20, x0, [x0, #0x0]! (unpredictable)
+E9FFFFE0 ldtp x0, xzr, [sp, #-0x8]!
+E9C0001F ldtp xzr, x0, [x0, #0x0]! (unpredictable)
+E9C00000 ldtp x0, x0, [x0, #0x0]! (unpredictable)
+E9E00006 ldtp x6, x0, [x0, #-0x200]! (unpredictable)
+E9D00006 ldtp x6, x0, [x0, #0x100]! (unpredictable)
+E9C80006 ldtp x6, x0, [x0, #0x80]! (unpredictable)
+E9C40006 ldtp x6, x0, [x0, #0x40]! (unpredictable)
+E9C20006 ldtp x6, x0, [x0, #0x20]! (unpredictable)
+E9C10006 ldtp x6, x0, [x0, #0x10]! (unpredictable)
+E9C08006 ldtp x6, x0, [x0, #0x8]! (unpredictable)
+E9C000C6 ldtp x6, x0, [x6, #0x0]! (unpredictable)
+E9C00443 ldtp x3, x1, [x2, #0x0]!

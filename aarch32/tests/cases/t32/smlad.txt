@@ -1,0 +1,25 @@
+// SMLAD_T1 111110110|op1=010|Rn=xxxx|Ra=xxxx|Rd=xxxx|000|M=0|Rm=xxxx
+// SmladT1: SMLAD{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+FB200000 smlad r0, r0, r0, r0
+FB2F0F0F smlad pc, pc, pc, r0 (unpredictable)
+FB200000 [ne] smladne r0, r0, r0, r0
+FB212304 smlad r3, r1, r4, r2
+
+// SMLADX_T1 111110110|op1=010|Rn=xxxx|Ra=xxxx|Rd=xxxx|000|M=1|Rm=xxxx
+// SmladxT1: SMLADX{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+fb269812 smladx r8, r6, r2, r9
+fb218010 smladx r0, r1, r0, r8
+fb2a7b13 smladx r11, r10, r3, r7
+fb283710 smladx r7, r8, r0, r3
+fb2ce114 smladx r1, r12, r4, lr
+fb27d711 smladx r7, r7, r1, sp
+fb2f3f13 smladx pc, pc, r3, r3 (unpredictable)
+fb2d2d1f smladx sp, sp, pc, r2 (unpredictable)
+FB200812 smladx r8, r0, r2, r0
+FB266812 smladx r8, r6, r2, r6
+FB269916 smladx r9, r6, r6, r9
+FB269812 [ne] smladxne r8, r6, r2, r9

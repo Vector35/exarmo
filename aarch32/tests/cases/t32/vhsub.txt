@@ -1,0 +1,50 @@
+// VHSUB_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|00|op=1|0|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VhsubT1D: VHSUB{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef6d82a8 vhsub.s32 d24, d29, d24
+ff6f02ab vhsub.u32 d16, d31, d27
+ef5f6289 vhsub.s16 d22, d31, d9
+ef5b428e vhsub.s16 d20, d27, d14
+ef240202 vhsub.s32 d0, d4, d2
+ef1c1226 vhsub.s16 d1, d12, d22
+ef028220 vhsub.s8 d8, d2, d16
+ef1552af vhsub.s16 d5, d21, d31
+EF7D82A8 UNDEFINED
+FF40F2A4 vhsub.u8 d31, d16, d20
+FF5822A1 vhsub.u16 d18, d24, d17
+EF21F280 vhsub.s32 d15, d17, d0
+FF7D82A8 UNDEFINED
+EF60F20F vhsub.s32 d31, d0, d15
+EF6082A8 vhsub.s32 d24, d16, d24
+EF6F8228 vhsub.s32 d24, d15, d24
+EF6D82A8 [ne] vhsubne.s32 d24, d29, d24
+
+// VHSUB_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|00|op=1|0|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VhsubT1Q: VHSUB{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef2cc2e8 vhsub.s32 q6, q14, q12
+ff1862ea vhsub.u16 q3, q12, q13
+ef5c82c4 vhsub.s16 q12, q14, q2
+ff1462e6 vhsub.u16 q3, q10, q11
+ef4262e2 vhsub.s8 q11, q9, q9
+ef166244 vhsub.s16 q3, q3, q2
+ff5e8240 vhsub.u16 q12, q7, q0
+ff208268 vhsub.u32 q4, q0, q12
+EF3FF2EF UNDEFINED
+EF3112E1 UNDEFINED
+FF0002E0 vhsub.u8 q0, q8, q8
+EF2C42E8 vhsub.s32 q2, q14, q12
+EF2C22E8 vhsub.s32 q1, q14, q12
+FF3FF24F UNDEFINED
+EF2C02E8 vhsub.s32 q0, q14, q12
+EF6C02E8 vhsub.s32 q8, q14, q12
+EF6FF2EF UNDEFINED
+EF2CC2E8 [ne] vhsubne.s32 q6, q14, q12

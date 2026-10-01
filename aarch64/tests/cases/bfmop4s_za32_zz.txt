@@ -1,0 +1,57 @@
+// bfmop4s_za32_zz_h1x1 1|00|0000|1|00|0|M=0|Zm=xxx|0|0|00000|N=0|Zn=xxx|0|S=1|0|0|ZAda=xx
+// Bfmop4sZa32ZzH1x1: BFMOP4S  <ZAda>.S, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, ZAda
+81000012 bfmop4s za2.s, z0.h, z16.h
+81000051 bfmop4s za1.s, z2.h, z16.h
+81000090 bfmop4s za0.s, z4.h, z16.h
+810200D3 bfmop4s za3.s, z6.h, z18.h
+81040112 bfmop4s za2.s, z8.h, z20.h
+81060152 bfmop4s za2.s, z10.h, z22.h
+81080192 bfmop4s za2.s, z12.h, z24.h
+810A01D2 bfmop4s za2.s, z14.h, z26.h
+810C0012 bfmop4s za2.s, z0.h, z28.h
+810E0012 bfmop4s za2.s, z0.h, z30.h
+
+// bfmop4s_za32_zz_h1x2 1|00|0000|1|00|0|M=1|Zm=xxx|0|0|00000|N=0|Zn=xxx|0|S=1|0|0|ZAda=xx
+// Bfmop4sZa32ZzH1x2: BFMOP4S  <ZAda>.S, <Zn>.H, { <Zm1>.H-<Zm2>.H }
+// register fields: Zm, Zn, ZAda
+81100093 bfmop4s za3.s, z4.h, {z16.h-z17.h}
+811000D2 bfmop4s za2.s, z6.h, {z16.h-z17.h}
+81100111 bfmop4s za1.s, z8.h, {z16.h-z17.h}
+81120010 bfmop4s za0.s, z0.h, {z18.h-z19.h}
+81140053 bfmop4s za3.s, z2.h, {z20.h-z21.h}
+81160153 bfmop4s za3.s, z10.h, {z22.h-z23.h}
+81180193 bfmop4s za3.s, z12.h, {z24.h-z25.h}
+811A01D3 bfmop4s za3.s, z14.h, {z26.h-z27.h}
+811C0093 bfmop4s za3.s, z4.h, {z28.h-z29.h}
+811E0093 bfmop4s za3.s, z4.h, {z30.h-z31.h}
+81100013 bfmop4s za3.s, z0.h, {z16.h-z17.h}
+
+// bfmop4s_za32_zz_h2x1 1|00|0000|1|00|0|M=0|Zm=xxx|0|0|00000|N=1|Zn=xxx|0|S=1|0|0|ZAda=xx
+// Bfmop4sZa32ZzH2x1: BFMOP4S  <ZAda>.S, { <Zn1>.H-<Zn2>.H }, <Zm>.H
+// register fields: Zm, Zn, ZAda
+81000211 bfmop4s za1.s, {z0.h-z1.h}, z16.h
+81000250 bfmop4s za0.s, {z2.h-z3.h}, z16.h
+81000353 bfmop4s za3.s, {z10.h-z11.h}, z16.h
+81020292 bfmop4s za2.s, {z4.h-z5.h}, z18.h
+810402D1 bfmop4s za1.s, {z6.h-z7.h}, z20.h
+81060311 bfmop4s za1.s, {z8.h-z9.h}, z22.h
+81080391 bfmop4s za1.s, {z12.h-z13.h}, z24.h
+810A03D1 bfmop4s za1.s, {z14.h-z15.h}, z26.h
+810C0211 bfmop4s za1.s, {z0.h-z1.h}, z28.h
+810E0211 bfmop4s za1.s, {z0.h-z1.h}, z30.h
+
+// bfmop4s_za32_zz_h2x2 1|00|0000|1|00|0|M=1|Zm=xxx|0|0|00000|N=1|Zn=xxx|0|S=1|0|0|ZAda=xx
+// Bfmop4sZa32ZzH2x2: BFMOP4S  <ZAda>.S, { <Zn1>.H-<Zn2>.H }, { <Zm1>.H-<Zm2>.H }
+// register fields: Zm, Zn, ZAda
+81100253 bfmop4s za3.s, {z2.h-z3.h}, {z16.h-z17.h}
+81100292 bfmop4s za2.s, {z4.h-z5.h}, {z16.h-z17.h}
+811002D1 bfmop4s za1.s, {z6.h-z7.h}, {z16.h-z17.h}
+81120210 bfmop4s za0.s, {z0.h-z1.h}, {z18.h-z19.h}
+81140313 bfmop4s za3.s, {z8.h-z9.h}, {z20.h-z21.h}
+81160353 bfmop4s za3.s, {z10.h-z11.h}, {z22.h-z23.h}
+81180393 bfmop4s za3.s, {z12.h-z13.h}, {z24.h-z25.h}
+811A03D3 bfmop4s za3.s, {z14.h-z15.h}, {z26.h-z27.h}
+811C0253 bfmop4s za3.s, {z2.h-z3.h}, {z28.h-z29.h}
+811E0253 bfmop4s za3.s, {z2.h-z3.h}, {z30.h-z31.h}
+81100213 bfmop4s za3.s, {z0.h-z1.h}, {z16.h-z17.h}

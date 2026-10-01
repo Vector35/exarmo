@@ -1,0 +1,18 @@
+// CFINV_M_pstate 110|101|0100000|op1=000|0100|CRm=(0)(0)(0)(0)|op2=000|Rt=11111
+// CfinvMPstate: CFINV
+D500401F cfinv
+D500451F cfinv (unpredictable)
+D5004D1F cfinv (unpredictable)
+D500431F cfinv (unpredictable)
+D500421F cfinv (unpredictable)
+D500491F cfinv (unpredictable)
+D500461F cfinv (unpredictable)
+D500471F cfinv (unpredictable)
+D500481F cfinv (unpredictable)
+D500411F cfinv (unpredictable)
+D5004A1F cfinv (unpredictable)
+D5004C1F cfinv (unpredictable)
+D5004B1F cfinv (unpredictable)
+D5004F1F cfinv (unpredictable)
+D500441F cfinv (unpredictable)
+D5004E1F cfinv (unpredictable)

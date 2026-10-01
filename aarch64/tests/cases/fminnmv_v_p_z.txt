@@ -1,0 +1,30 @@
+// fminnmv_v_p_z_ 011|0010|1|size=xx|000|opc=101|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// FminnmvVPZ: FMINNMV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+65C52454 fminnmv d20, p1, z2.d
+65C52B1C fminnmv d28, p2, z24.d
+6545354E fminnmv h14, p5, z10.h
+65C5225C fminnmv d28, p0, z18.d
+654539B2 fminnmv h18, p6, z13.h
+65C52F25 fminnmv d5, p3, z25.d
+65C52EE5 fminnmv d5, p3, z23.d
+658520AD fminnmv s13, p0, z5.s
+65C537B0 fminnmv d16, p5, z29.d
+654523B0 fminnmv h16, p0, z29.h
+658534FA fminnmv s26, p5, z7.s
+65C52324 fminnmv d4, p0, z25.d
+65452F07 fminnmv h7, p3, z24.h
+65853F14 fminnmv s20, p7, z24.s
+65852E99 fminnmv s25, p3, z20.s
+658537F9 fminnmv s25, p5, z31.s
+65C53000 fminnmv d0, p4, z0.d
+65C5245F fminnmv d31, p1, z2.d
+65052454 UNDEFINED
+65052440 UNDEFINED
+6505245F UNDEFINED
+65452420 fminnmv h0, p1, z1.h
+6545245F fminnmv h31, p1, z2.h
+65852440 fminnmv s0, p1, z2.s
+6585245F fminnmv s31, p1, z2.s
+65C52441 fminnmv d1, p1, z2.d

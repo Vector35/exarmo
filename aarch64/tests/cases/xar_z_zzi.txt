@@ -1,0 +1,132 @@
+// xar_z_zzi_ 000|0010|0|tszh=xx|1|tszl=xx|imm3=xxx|001|101|Zm=xxxxx|Zdn=xxxxx
+// XarZZzi: XAR  <Zdn>.<T>, <Zdn>.<T>, <Zm>.<T>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zm, Zdn
+04EE3424 xar z4.d, z4.d, z1.d, #0x12
+043D3604 xar z4.h, z4.h, z16.h, #0x3
+04F5379B xar z27.d, z27.d, z28.d, #0xb
+04AB376B xar z11.d, z11.d, z27.d, #0x35
+0433342E xar z14.h, z14.h, z1.h, #0xd
+04AD36B2 xar z18.d, z18.d, z21.d, #0x33
+04393594 xar z20.h, z20.h, z12.h, #0x7
+043B343C xar z28.h, z28.h, z1.h, #0x5
+04603400 xar z0.s, z0.s, z0.s, #0x20
+04EA37FF xar z31.d, z31.d, z31.d, #0x16
+04EC3424 xar z4.d, z4.d, z1.d, #0x14
+04EF3424 xar z4.d, z4.d, z1.d, #0x11
+04203424 UNDEFINED
+04213424 UNDEFINED
+04223424 UNDEFINED
+04233424 UNDEFINED
+04243424 UNDEFINED
+04253424 UNDEFINED
+04263424 UNDEFINED
+04273424 UNDEFINED
+04283424 xar z4.b, z4.b, z1.b, #0x8
+04293424 xar z4.b, z4.b, z1.b, #0x7
+042A3424 xar z4.b, z4.b, z1.b, #0x6
+042B3424 xar z4.b, z4.b, z1.b, #0x5
+042C3424 xar z4.b, z4.b, z1.b, #0x4
+042D3424 xar z4.b, z4.b, z1.b, #0x3
+042E3424 xar z4.b, z4.b, z1.b, #0x2
+042F3424 xar z4.b, z4.b, z1.b, #0x1
+04303424 xar z4.h, z4.h, z1.h, #0x10
+04313424 xar z4.h, z4.h, z1.h, #0xf
+04323424 xar z4.h, z4.h, z1.h, #0xe
+04343424 xar z4.h, z4.h, z1.h, #0xc
+04353424 xar z4.h, z4.h, z1.h, #0xb
+04363424 xar z4.h, z4.h, z1.h, #0xa
+04373424 xar z4.h, z4.h, z1.h, #0x9
+04383424 xar z4.h, z4.h, z1.h, #0x8
+043A3424 xar z4.h, z4.h, z1.h, #0x6
+043C3424 xar z4.h, z4.h, z1.h, #0x4
+043E3424 xar z4.h, z4.h, z1.h, #0x2
+043F3424 xar z4.h, z4.h, z1.h, #0x1
+04613424 xar z4.s, z4.s, z1.s, #0x1f
+04623424 xar z4.s, z4.s, z1.s, #0x1e
+04633424 xar z4.s, z4.s, z1.s, #0x1d
+04643424 xar z4.s, z4.s, z1.s, #0x1c
+04653424 xar z4.s, z4.s, z1.s, #0x1b
+04663424 xar z4.s, z4.s, z1.s, #0x1a
+04673424 xar z4.s, z4.s, z1.s, #0x19
+04683424 xar z4.s, z4.s, z1.s, #0x18
+04693424 xar z4.s, z4.s, z1.s, #0x17
+046A3424 xar z4.s, z4.s, z1.s, #0x16
+046B3424 xar z4.s, z4.s, z1.s, #0x15
+046C3424 xar z4.s, z4.s, z1.s, #0x14
+046D3424 xar z4.s, z4.s, z1.s, #0x13
+046E3424 xar z4.s, z4.s, z1.s, #0x12
+046F3424 xar z4.s, z4.s, z1.s, #0x11
+04703424 xar z4.s, z4.s, z1.s, #0x10
+04713424 xar z4.s, z4.s, z1.s, #0xf
+04723424 xar z4.s, z4.s, z1.s, #0xe
+04733424 xar z4.s, z4.s, z1.s, #0xd
+04743424 xar z4.s, z4.s, z1.s, #0xc
+04753424 xar z4.s, z4.s, z1.s, #0xb
+04763424 xar z4.s, z4.s, z1.s, #0xa
+04773424 xar z4.s, z4.s, z1.s, #0x9
+04783424 xar z4.s, z4.s, z1.s, #0x8
+04793424 xar z4.s, z4.s, z1.s, #0x7
+047A3424 xar z4.s, z4.s, z1.s, #0x6
+047B3424 xar z4.s, z4.s, z1.s, #0x5
+047C3424 xar z4.s, z4.s, z1.s, #0x4
+047D3424 xar z4.s, z4.s, z1.s, #0x3
+047E3424 xar z4.s, z4.s, z1.s, #0x2
+047F3424 xar z4.s, z4.s, z1.s, #0x1
+04A03424 xar z4.d, z4.d, z1.d, #0x40
+04A13424 xar z4.d, z4.d, z1.d, #0x3f
+04A23424 xar z4.d, z4.d, z1.d, #0x3e
+04A33424 xar z4.d, z4.d, z1.d, #0x3d
+04A43424 xar z4.d, z4.d, z1.d, #0x3c
+04A53424 xar z4.d, z4.d, z1.d, #0x3b
+04A63424 xar z4.d, z4.d, z1.d, #0x3a
+04A73424 xar z4.d, z4.d, z1.d, #0x39
+04A83424 xar z4.d, z4.d, z1.d, #0x38
+04A93424 xar z4.d, z4.d, z1.d, #0x37
+04AA3424 xar z4.d, z4.d, z1.d, #0x36
+04AC3424 xar z4.d, z4.d, z1.d, #0x34
+04AE3424 xar z4.d, z4.d, z1.d, #0x32
+04AF3424 xar z4.d, z4.d, z1.d, #0x31
+04B03424 xar z4.d, z4.d, z1.d, #0x30
+04B13424 xar z4.d, z4.d, z1.d, #0x2f
+04B23424 xar z4.d, z4.d, z1.d, #0x2e
+04B33424 xar z4.d, z4.d, z1.d, #0x2d
+04B43424 xar z4.d, z4.d, z1.d, #0x2c
+04B53424 xar z4.d, z4.d, z1.d, #0x2b
+04B63424 xar z4.d, z4.d, z1.d, #0x2a
+04B73424 xar z4.d, z4.d, z1.d, #0x29
+04B83424 xar z4.d, z4.d, z1.d, #0x28
+04B93424 xar z4.d, z4.d, z1.d, #0x27
+04BA3424 xar z4.d, z4.d, z1.d, #0x26
+04BB3424 xar z4.d, z4.d, z1.d, #0x25
+04BC3424 xar z4.d, z4.d, z1.d, #0x24
+04BD3424 xar z4.d, z4.d, z1.d, #0x23
+04BE3424 xar z4.d, z4.d, z1.d, #0x22
+04BF3424 xar z4.d, z4.d, z1.d, #0x21
+04E03424 xar z4.d, z4.d, z1.d, #0x20
+04E13424 xar z4.d, z4.d, z1.d, #0x1f
+04E23424 xar z4.d, z4.d, z1.d, #0x1e
+04E33424 xar z4.d, z4.d, z1.d, #0x1d
+04E43424 xar z4.d, z4.d, z1.d, #0x1c
+04E53424 xar z4.d, z4.d, z1.d, #0x1b
+04E63424 xar z4.d, z4.d, z1.d, #0x1a
+04E73424 xar z4.d, z4.d, z1.d, #0x19
+04E83424 xar z4.d, z4.d, z1.d, #0x18
+04E93424 xar z4.d, z4.d, z1.d, #0x17
+04EB3424 xar z4.d, z4.d, z1.d, #0x15
+04ED3424 xar z4.d, z4.d, z1.d, #0x13
+04F03424 xar z4.d, z4.d, z1.d, #0x10
+04F13424 xar z4.d, z4.d, z1.d, #0xf
+04F23424 xar z4.d, z4.d, z1.d, #0xe
+04F33424 xar z4.d, z4.d, z1.d, #0xd
+04F43424 xar z4.d, z4.d, z1.d, #0xc
+04F63424 xar z4.d, z4.d, z1.d, #0xa
+04F73424 xar z4.d, z4.d, z1.d, #0x9
+04F83424 xar z4.d, z4.d, z1.d, #0x8
+04F93424 xar z4.d, z4.d, z1.d, #0x7
+04FA3424 xar z4.d, z4.d, z1.d, #0x6
+04FB3424 xar z4.d, z4.d, z1.d, #0x5
+04FC3424 xar z4.d, z4.d, z1.d, #0x4
+04FD3424 xar z4.d, z4.d, z1.d, #0x3
+04FE3424 xar z4.d, z4.d, z1.d, #0x2
+04FF3424 xar z4.d, z4.d, z1.d, #0x1

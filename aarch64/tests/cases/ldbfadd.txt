@@ -1,0 +1,41 @@
+// LDBFADD_16 size=00|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfadd16: LDBFADD  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3C200002 ldbfadd h0, h2, [x0]
+3C200009 ldbfadd h0, h9, [x0]
+3C200010 ldbfadd h0, h16, [x0]
+3C3F03E0 ldbfadd h31, h0, [sp]
+3C20001F ldbfadd h0, h31, [x0]
+3C200000 ldbfadd h0, h0, [x0]
+3C210043 ldbfadd h1, h3, [x2]
+
+// LDBFADDA_16 size=00|111|VR=1|00|A=1|R=0|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfadda16: LDBFADDA  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3CA00005 ldbfadda h0, h5, [x0]
+3CA0000C ldbfadda h0, h12, [x0]
+3CA00013 ldbfadda h0, h19, [x0]
+3CBF03E0 ldbfadda h31, h0, [sp]
+3CA0001F ldbfadda h0, h31, [x0]
+3CA00000 ldbfadda h0, h0, [x0]
+3CA10043 ldbfadda h1, h3, [x2]
+
+// LDBFADDAL_16 size=00|111|VR=1|00|A=1|R=1|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfaddal16: LDBFADDAL  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3CE00003 ldbfaddal h0, h3, [x0]
+3CE0000A ldbfaddal h0, h10, [x0]
+3CE00011 ldbfaddal h0, h17, [x0]
+3CFF03E0 ldbfaddal h31, h0, [sp]
+3CE0001F ldbfaddal h0, h31, [x0]
+3CE00000 ldbfaddal h0, h0, [x0]
+3CE10043 ldbfaddal h1, h3, [x2]
+
+// LDBFADDL_16 size=00|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=0|opc=000|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfaddl16: LDBFADDL  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3C600000 ldbfaddl h0, h0, [x0]
+3C600007 ldbfaddl h0, h7, [x0]
+3C60000E ldbfaddl h0, h14, [x0]
+3C7F03FF ldbfaddl h31, h31, [sp]
+3C610043 ldbfaddl h1, h3, [x2]

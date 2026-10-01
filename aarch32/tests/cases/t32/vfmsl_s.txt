@@ -1,0 +1,46 @@
+// VFMSL_s_T1_D 11111110|op1=0|D=x|0|S=1|Vn=xxxx|Vd=xxxx|1000|N=x|Q=0|M=x|U=1|Vm=xxxx
+// VfmslST1D: VFMSL{<q>}.F16  <Dd>, <Sn>, <Sm>[<index>]
+// read together by <Dd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe595834 vfmsl.f16 d21, s18, s9[0]
+fe5e583e vfmsl.f16 d21, s28, s13[1]
+fe562817 vfmsl.f16 d18, s12, s14[0]
+fe5a98b0 vfmsl.f16 d25, s21, s1[0]
+fe5a783d vfmsl.f16 d23, s20, s11[1]
+fe11981c vfmsl.f16 d9, s2, s8[1]
+fe5fa894 vfmsl.f16 d26, s31, s8[0]
+fe158815 vfmsl.f16 d8, s10, s10[0]
+FE50083F vfmsl.f16 d16, s0, s15[1]
+FE58F838 vfmsl.f16 d31, s16, s1[1]
+FE544832 vfmsl.f16 d20, s8, s5[0]
+FE521831 vfmsl.f16 d17, s4, s3[0]
+FE100810 vfmsl.f16 d0, s0, s0[0]
+FE10F89F vfmsl.f16 d15, s1, s14[1]
+FE5F083F vfmsl.f16 d16, s30, s15[1]
+FE59F834 vfmsl.f16 d31, s18, s9[0]
+
+// VFMSL_s_T1_Q 11111110|op1=0|D=x|0|S=1|Vn=xxxx|Vd=xxxx|1000|N=x|Q=1|M=x|U=1|Vm=xxxx
+// VfmslST1Q: VFMSL{<q>}.F16  <Qd>, <Dn>, <Dm>[<index>]
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <index>: M, Vm
+fe55a8f1 vfmsl.f16 q13, d21, d1[2]
+fe5d285d vfmsl.f16 q9, d13, d5[1]
+fe5fa874 vfmsl.f16 q13, d15, d4[2]
+fe5b885b vfmsl.f16 q12, d11, d3[1]
+fe5f68f3 vfmsl.f16 q11, d31, d3[2]
+fe582873 vfmsl.f16 q9, d8, d3[2]
+fe5e8854 vfmsl.f16 q12, d14, d4[0]
+fe5a6851 vfmsl.f16 q11, d10, d1[0]
+FE1008F0 vfmsl.f16 q0, d16, d0[2]
+FE5448FF vfmsl.f16 q10, d20, d7[3]
+FE1208F8 vfmsl.f16 q0, d18, d0[3]
+FE5108F2 vfmsl.f16 q8, d17, d2[2]
+FE55F8F1 UNDEFINED
+FE5518F1 UNDEFINED
+FE15F8F1 UNDEFINED
+FE50A850 vfmsl.f16 q13, d0, d0[0]
+FE50A8DF vfmsl.f16 q13, d16, d7[1]
+FE55A8F0 vfmsl.f16 q13, d21, d0[2]
+FE55A8FF vfmsl.f16 q13, d21, d7[3]

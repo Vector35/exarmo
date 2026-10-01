@@ -1,0 +1,14 @@
+// ssubwt_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|10|S=1|U=0|T=1|Zn=xxxxx|Zd=xxxxx
+// SsubwtZZz: SSUBWT  <Zd>.<T>, <Zn>.<T>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45D5563F ssubwt z31.d, z17.d, z21.s
+45495639 ssubwt z25.h, z17.h, z9.b
+459456C3 ssubwt z3.s, z22.s, z20.h
+459F5602 ssubwt z2.s, z16.s, z31.h
+45D15522 ssubwt z2.d, z9.d, z17.s
+45CC5784 ssubwt z4.d, z28.d, z12.s
+458857FF ssubwt z31.s, z31.s, z8.h
+45525402 ssubwt z2.h, z0.h, z18.b
+45C05620 ssubwt z0.d, z17.d, z0.s
+4515563F UNDEFINED
+45D556BF ssubwt z31.d, z21.d, z21.s

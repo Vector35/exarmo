@@ -1,0 +1,28 @@
+// uqadd_z_zi_ 001|0010|1|size=xx|1|00|10|U=1|11|sh=x|imm8=xxxxxxxx|Zdn=xxxxx
+// UqaddZZi: UQADD  <Zdn>.<T>, <Zdn>.<T>, #<imm>{, <shift>}
+// register fields: Zdn
+2525D254 uqadd z20.b, z20.b, #0x92
+25E5E002 uqadd z2.d, z2.d, #0x0, lsl #0x8
+2565D2F1 uqadd z17.h, z17.h, #0x97
+2565D8B2 uqadd z18.h, z18.h, #0xc5
+25E5ECD6 uqadd z22.d, z22.d, #0x66, lsl #0x8
+25E5ECD6 uqadd z22.d, z22.d, #0x66, lsl #0x8
+2525C8D4 uqadd z20.b, z20.b, #0x46
+25E5C26D uqadd z13.d, z13.d, #0x13
+25E5FDD2 uqadd z18.d, z18.d, #0xee, lsl #0x8
+25E5C1E8 uqadd z8.d, z8.d, #0xf
+25A5D458 uqadd z24.s, z24.s, #0xa2
+2565FAD0 uqadd z16.h, z16.h, #0xd6, lsl #0x8
+25A5E9A8 uqadd z8.s, z8.s, #0x4d, lsl #0x8
+2565E3C2 uqadd z2.h, z2.h, #0x1e, lsl #0x8
+25A5C40C uqadd z12.s, z12.s, #0x20
+25E5D0B6 uqadd z22.d, z22.d, #0x85
+2525D99F uqadd z31.b, z31.b, #0xcc
+2525DFE0 uqadd z0.b, z0.b, #0xff
+2525D014 uqadd z20.b, z20.b, #0x80
+2525C814 uqadd z20.b, z20.b, #0x40
+2525C214 uqadd z20.b, z20.b, #0x10
+2525C114 uqadd z20.b, z20.b, #0x8
+2525C094 uqadd z20.b, z20.b, #0x4
+2525C054 uqadd z20.b, z20.b, #0x2
+2525C034 uqadd z20.b, z20.b, #0x1

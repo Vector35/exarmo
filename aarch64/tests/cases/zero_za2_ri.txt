@@ -1,0 +1,27 @@
+// zero_za2_ri_1 1|10|0000|0000011|opc=001|Rv=xx|0000000000|off3=xxx
+// ZeroZa2Ri1: ZERO  ZA.D[<Wv>, <offs1>:<offs2>]
+// register fields: Rv
+C00C8000 zero za.d[w8, 0:1]
+C00C8007 zero za.d[w8, 14:15]
+C00CA005 zero za.d[w9, 10:11]
+C00CC001 zero za.d[w10, 2:3]
+C00CE002 zero za.d[w11, 4:5]
+C00C8003 zero za.d[w8, 6:7]
+C00C8004 zero za.d[w8, 8:9]
+C00C8006 zero za.d[w8, 12:13]
+
+// zero_za2_ri_2 1|10|0000|0000011|opc=010|Rv=xx|0000000000|0|off2=xx
+// ZeroZa2Ri2: ZERO  ZA.D[<Wv>, <offs1>:<offs2>, VGx2]
+// register fields: Rv
+C00D4002 zero za.d[w10, 4:5, vgx2]
+C00D6000 zero za.d[w11, 0:1, vgx2]
+C00D0001 zero za.d[w8, 2:3, vgx2]
+C00D2003 zero za.d[w9, 6:7, vgx2]
+
+// zero_za2_ri_4 1|10|0000|0000011|opc=011|Rv=xx|0000000000|0|off2=xx
+// ZeroZa2Ri4: ZERO  ZA.D[<Wv>, <offs1>:<offs2>, VGx4]
+// register fields: Rv
+C00DA003 zero za.d[w9, 6:7, vgx4]
+C00DC001 zero za.d[w10, 2:3, vgx4]
+C00D8000 zero za.d[w8, 0:1, vgx4]
+C00DE002 zero za.d[w11, 4:5, vgx4]

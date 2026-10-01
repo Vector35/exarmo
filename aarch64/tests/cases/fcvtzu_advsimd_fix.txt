@@ -1,0 +1,86 @@
+// FCVTZU_asimdshf_C 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|opcode=11111|1|Rn=xxxxx|Rd=xxxxx
+// FcvtzuAsimdshfC: FCVTZU  <Vd>.<T>, <Vn>.<T>, #<fbits>
+// read together by <T>: Q, immh
+// read together by <fbits>: immh, immb
+// register fields: Rn, Rd
+6F51FF23 fcvtzu v3.2d, v25.2d, #0x2f
+2F19FF4A fcvtzu v10.4h, v26.4h, #0x7
+6F6CFE8E fcvtzu v14.2d, v20.2d, #0x14
+2F1EFE8B fcvtzu v11.4h, v20.4h, #0x2
+2F35FC8B fcvtzu v11.2s, v4.2s, #0xb
+6F2BFDD0 fcvtzu v16.4s, v14.4s, #0x15
+2F21FC67 fcvtzu v7.2s, v3.2s, #0x1f
+6F2FFCB4 fcvtzu v20.4s, v5.4s, #0x11
+6F46FFA4 fcvtzu v4.2d, v29.2d, #0x3a
+2F1FFE04 fcvtzu v4.4h, v16.4h, #0x1
+6F30FC6A fcvtzu v10.4s, v3.4s, #0x10
+6F15FC8B fcvtzu v11.8h, v4.8h, #0xb
+6F29FFF9 fcvtzu v25.4s, v31.4s, #0x17
+6F6DFF04 fcvtzu v4.2d, v24.2d, #0x13
+2F38FE1E fcvtzu v30.2s, v16.2s, #0x8
+6F50FDDB fcvtzu v27.2d, v14.2d, #0x30
+6F7AFC00 fcvtzu v0.2d, v0.2d, #0x6
+6F51FF3F fcvtzu v31.2d, v25.2d, #0x2f
+6F01FF23 UNALLOCATED
+2F01FF23 UNALLOCATED
+2F79FF23 UNDEFINED
+6F00FF23 UNALLOCATED
+6F02FF23 UNALLOCATED
+6F03FF23 UNALLOCATED
+6F04FF23 UNALLOCATED
+6F05FF23 UNALLOCATED
+6F06FF23 UNALLOCATED
+6F07FF23 UNALLOCATED
+6F78FF23 fcvtzu v3.2d, v25.2d, #0x8
+6F79FF23 fcvtzu v3.2d, v25.2d, #0x7
+6F7BFF23 fcvtzu v3.2d, v25.2d, #0x5
+6F7CFF23 fcvtzu v3.2d, v25.2d, #0x4
+6F7DFF23 fcvtzu v3.2d, v25.2d, #0x3
+6F7EFF23 fcvtzu v3.2d, v25.2d, #0x2
+6F7FFF23 fcvtzu v3.2d, v25.2d, #0x1
+6F09FF23 UNDEFINED
+
+// FCVTZU_asisdshf_C 01|U=1|1|111|10|immh=xxxx|immb=xxx|opcode=11111|1|Rn=xxxxx|Rd=xxxxx
+// FcvtzuAsisdshfC: FCVTZU  <V><d>, <V><n>, #<fbits>
+// read together by <d>: immh, Rd
+// read together by <n>: immh, Rn
+// read together by <fbits>: immh, immb
+// register fields: Rn, Rd
+7F7DFDF7 fcvtzu d23, d15, #0x3
+7F39FC4F fcvtzu s15, s2, #0x7
+7F5BFD45 fcvtzu d5, d10, #0x25
+7F7AFF69 fcvtzu d9, d27, #0x6
+7F3BFF9D fcvtzu s29, s28, #0x5
+7F37FF95 fcvtzu s21, s28, #0x9
+7F46FE3A fcvtzu d26, d17, #0x3a
+7F5CFF10 fcvtzu d16, d24, #0x24
+7F5BFFB8 fcvtzu d24, d29, #0x25
+7F6CFC31 fcvtzu d17, d1, #0x14
+7F75FF90 fcvtzu d16, d28, #0xb
+7F54FD8B fcvtzu d11, d12, #0x2c
+7F6EFCB4 fcvtzu d20, d5, #0x12
+7F6AFCC8 fcvtzu d8, d6, #0x16
+7F3FFDD2 fcvtzu s18, s14, #0x1
+7F5BFDEB fcvtzu d11, d15, #0x25
+7F78FC00 fcvtzu d0, d0, #0x8
+7F7DFFFF fcvtzu d31, d31, #0x3
+7F05FDF7 UNALLOCATED
+7F05FDE0 UNALLOCATED
+7F05FDFF UNALLOCATED
+7F05FC17 UNALLOCATED
+7F05FFF7 UNALLOCATED
+7F00FDF7 UNALLOCATED
+7F01FDF7 UNALLOCATED
+7F02FDF7 UNALLOCATED
+7F03FDF7 UNALLOCATED
+7F04FDF7 UNALLOCATED
+7F06FDF7 UNALLOCATED
+7F07FDF7 UNALLOCATED
+7F79FDF7 fcvtzu d23, d15, #0x7
+7F7BFDF7 fcvtzu d23, d15, #0x5
+7F7CFDF7 fcvtzu d23, d15, #0x4
+7F7EFDF7 fcvtzu d23, d15, #0x2
+7F7FFDF7 fcvtzu d23, d15, #0x1
+7F25FDF7 fcvtzu s23, s15, #0x1b
+7F15FDF7 fcvtzu h23, h15, #0xb
+7F0DFDF7 UNDEFINED

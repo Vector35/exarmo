@@ -1,0 +1,139 @@
+// BFM_32M_bitfield sf=0|opc=01|100110|N=0|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Bfm32mBitfield: BFM  <Wd>, <Wn>, #<immr>, #<imms>
+// BfcBfm32mBitfield: BFC  <Wd>, #<lsb>, #<width>
+// BfiBfm32mBitfield: BFI  <Wd>, <Wn>, #<lsb>, #<width>
+// BfxilBfm32mBitfield: BFXIL  <Wd>, <Wn>, #<lsb>, #<width>
+// read together by the BFC alias and the BFI alias: immr, imms, Rn
+// register fields: Rn, Rd
+// form chosen on: immr, imms, Rn
+330D0FEB bfc w11, #0x13, #0x4
+33131BEB bfc w11, #0xd, #0x7
+331C53FD bfc w29, #0x4, #0x15
+330C2BE3 bfc w3, #0x14, #0xb
+33193FE1 bfc w1, #0x7, #0x10
+330C03E3 bfc w3, #0x14, #0x1
+331E0BEF bfc w15, #0x2, #0x3
+33131FE9 bfc w9, #0xd, #0x8
+331247F1 bfc w17, #0xe, #0x12
+330817F6 bfc w22, #0x18, #0x6
+331433E9 bfc w9, #0xc, #0xd
+33030BE0 bfc w0, #0x1d, #0x3
+330F33FD bfc w29, #0x11, #0xd
+331E3BE9 bfc w9, #0x2, #0xf
+33162FFE bfc w30, #0xa, #0xc
+331123ED bfc w13, #0xf, #0x9
+330D1687 bfi w7, w20, #0x13, #0x6
+33183DB8 bfi w24, w13, #0x8, #0x10
+330D1443 bfi w3, w2, #0x13, #0x6
+330E04FF bfi wzr, w7, #0x12, #0x2
+331B2C0F bfi w15, w0, #0x5, #0xc
+33142B61 bfi w1, w27, #0xc, #0xb
+331C5F9F bfi wzr, w28, #0x4, #0x18
+330B0BBA bfi w26, w29, #0x15, #0x3
+330C1648 bfi w8, w18, #0x14, #0x6
+331D418B bfi w11, w12, #0x3, #0x11
+331F5ECB bfi w11, w22, #0x1, #0x18
+33122D22 bfi w2, w9, #0xe, #0xc
+33110256 bfi w22, w18, #0xf, #0x1
+330F1910 bfi w16, w8, #0x11, #0x7
+33134903 bfi w3, w8, #0xd, #0x13
+33160C0C bfi w12, w0, #0xa, #0x4
+33094C7D bfxil w29, w3, #0x9, #0xb
+331C71C6 bfxil w6, w14, #0x1c, #0x1
+3304792B bfxil w11, w9, #0x4, #0x1b
+330C5E4C bfxil w12, w18, #0xc, #0xc
+33116773 bfxil w19, w27, #0x11, #0x9
+330E4136 bfxil w22, w9, #0xe, #0x3
+330465F1 bfxil w17, w15, #0x4, #0x16
+33104836 bfxil w22, w1, #0x10, #0x3
+330C5F38 bfxil w24, w25, #0xc, #0xc
+331075CA bfxil w10, w14, #0x10, #0xe
+33115E6F bfxil w15, w19, #0x11, #0x7
+331D7A73 bfxil w19, w19, #0x1d, #0x2
+330C520E bfxil w14, w16, #0xc, #0x9
+330B52CF bfxil w15, w22, #0xb, #0xa
+33061EB3 bfxil w19, w21, #0x6, #0x2
+33003C42 bfxil w2, w2, #0x0, #0x10
+333FFFEB UNDEFINED
+3300000B bfxil w11, w0, #0x0, #0x1
+330003EB bfxil w11, wzr, #0x0, #0x1
+3300FC0B UNDEFINED
+3300FFEB UNDEFINED
+333F000B UNDEFINED
+333F03EB UNDEFINED
+333FFC0B UNDEFINED
+332083EB UNDEFINED
+330213EB bfxil w11, wzr, #0x2, #0x3
+33010FEB bfxil w11, wzr, #0x1, #0x3
+330103EB bfc w11, #0x1f, #0x1
+3301000B bfi w11, w0, #0x1f, #0x1
+
+// BFM_64M_bitfield sf=1|opc=01|100110|N=1|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Bfm64mBitfield: BFM  <Xd>, <Xn>, #<immr>, #<imms>
+// BfcBfm64mBitfield: BFC  <Xd>, #<lsb>, #<width>
+// BfiBfm64mBitfield: BFI  <Xd>, <Xn>, #<lsb>, #<width>
+// BfxilBfm64mBitfield: BFXIL  <Xd>, <Xn>, #<lsb>, #<width>
+// read together by the BFC alias and the BFI alias: immr, imms, Rn
+// register fields: Rn, Rd
+// form chosen on: immr, imms, Rn
+B35D73E5 bfc x5, #0x23, #0x1d
+B36363F9 bfc x25, #0x1d, #0x19
+B3647BE1 bfc x1, #0x1c, #0x1f
+B3606BE2 bfc x2, #0x20, #0x1b
+B3774BED bfc x13, #0x9, #0x13
+B35F37F6 bfc x22, #0x21, #0xe
+B37F83E6 bfc x6, #0x1, #0x21
+B36C93EC bfc x12, #0x14, #0x25
+B3511FE7 bfc x7, #0x2f, #0x8
+B36277E9 bfc x9, #0x1e, #0x1e
+B36D9FE1 bfc x1, #0x13, #0x28
+B37727E6 bfc x6, #0x9, #0xa
+B35F1BE2 bfc x2, #0x21, #0x7
+B35943ED bfc x13, #0x27, #0x11
+B3647FE4 bfc x4, #0x1c, #0x20
+B3680BF8 bfc x24, #0x18, #0x3
+B3620032 bfi x18, x1, #0x1e, #0x1
+B37730BA bfi x26, x5, #0x9, #0xd
+B37F0646 bfi x6, x18, #0x1, #0x2
+B371158C bfi x12, x12, #0xf, #0x6
+B37B35E3 bfi x3, x15, #0x5, #0xe
+B36B3A4B bfi x11, x18, #0x15, #0xf
+B3743C42 bfi x2, x2, #0xc, #0x10
+B35B0B46 bfi x6, x26, #0x25, #0x3
+B3677CFA bfi x26, x7, #0x19, #0x20
+B36F77A7 bfi x7, fp, #0x11, #0x1e
+B3571CD0 bfi x16, x6, #0x29, #0x8
+B3682DC6 bfi x6, x14, #0x18, #0xc
+B37391B6 bfi x22, x13, #0xd, #0x25
+B356549E bfi lr, x4, #0x2a, #0x16
+B3582C54 bfi x20, x2, #0x28, #0xc
+B3731E97 bfi x23, x20, #0xd, #0x8
+B35564CB bfxil x11, x6, #0x15, #0x5
+B3539B81 bfxil x1, x28, #0x13, #0x14
+B35AF8EB bfxil x11, x7, #0x1a, #0x25
+B3638F4E bfxil x14, x26, #0x23, #0x1
+B346C190 bfxil x16, x12, #0x6, #0x2b
+B34131C3 bfxil x3, x14, #0x1, #0xc
+B343C7B3 bfxil x19, fp, #0x3, #0x2f
+B3598B0C bfxil x12, x24, #0x19, #0xa
+B344C6F3 bfxil x19, x23, #0x4, #0x2e
+B343880B bfxil x11, x0, #0x3, #0x20
+B35AA910 bfxil x16, x8, #0x1a, #0x11
+B376E96B bfxil x11, x11, #0x36, #0x5
+B348ADBE bfxil lr, x13, #0x8, #0x24
+B368EF5E bfxil lr, x26, #0x28, #0x14
+B34BDC7E bfxil lr, x3, #0xb, #0x2d
+B368E704 bfxil x4, x24, #0x28, #0x12
+B340FFE0 bfxil x0, xzr, #0x0, #0x40
+B35D73FF bfc xzr, #0x23, #0x1d
+B3400005 bfxil x5, x0, #0x0, #0x1
+B34003E5 bfxil x5, xzr, #0x0, #0x1
+B340FC05 bfxil x5, x0, #0x0, #0x40
+B37F0005 bfi x5, x0, #0x1, #0x1
+B37F03E5 bfc x5, #0x1, #0x1
+B37FFC05 bfxil x5, x0, #0x3f, #0x1
+B37FFFE5 bfxil x5, xzr, #0x3f, #0x1
+B35023E5 bfc x5, #0x30, #0x9
+B34213E5 bfxil x5, xzr, #0x2, #0x3
+B34103E5 bfc x5, #0x3f, #0x1
+B3410005 bfi x5, x0, #0x3f, #0x1

@@ -1,0 +1,17 @@
+// STTNP_Q_ldstnapair_offs opc=11|10|1|VR=1|0|00|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// SttnpQLdstnapairOffs: STTNP  <Qt1>, <Qt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+EC000002 sttnp q2, q0, [x0]
+EC000009 sttnp q9, q0, [x0]
+EC000010 sttnp q16, q0, [x0]
+EC3FFFE0 sttnp q0, q31, [sp, #-0x10]
+EC00001F sttnp q31, q0, [x0]
+EC000000 sttnp q0, q0, [x0]
+EC200002 sttnp q2, q0, [x0, #-0x400]
+EC100002 sttnp q2, q0, [x0, #0x200]
+EC080002 sttnp q2, q0, [x0, #0x100]
+EC040002 sttnp q2, q0, [x0, #0x80]
+EC020002 sttnp q2, q0, [x0, #0x40]
+EC010002 sttnp q2, q0, [x0, #0x20]
+EC008002 sttnp q2, q0, [x0, #0x10]
+EC000443 sttnp q3, q1, [x2]

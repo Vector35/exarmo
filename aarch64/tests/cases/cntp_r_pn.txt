@@ -1,0 +1,8 @@
+// cntp_r_pn_ 001|0010|1|size=xx|100|opc=000|10|000|vl=x|1|PNn=xxxx|Rd=xxxxx
+// CntpRPn: CNTP  <Xd>, <PNn>.<T>, <vl>
+// register fields: PNn, Rd
+// CNTP (predicate as counter) - PN0-PN15
+25208200 cntp x0, pn0.b, vlx2
+25e08745 cntp x5, pn10.d, vlx4
+25a083ef cntp x15, pn15.s, vlx2
+2560821F cntp xzr, pn0.h, vlx2

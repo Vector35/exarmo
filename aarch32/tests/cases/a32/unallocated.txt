@@ -1,0 +1,7 @@
+// Words the architecture allocates to no encoding, and the hint space's
+// words no hint is allocated
+2d026e38 UNALLOCATED
+2d126e38 UNALLOCATED
+c320f0ef reserved hint
+ed026e38 UNALLOCATED
+ed126e38 UNALLOCATED

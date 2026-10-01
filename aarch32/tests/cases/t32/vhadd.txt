@@ -1,0 +1,43 @@
+// VHADD_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|00|op=0|0|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VhaddT1D: VHADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+EF000000 vhadd.s8 d0, d0, d0
+FF5FF0AF vhadd.u16 d31, d31, d31
+EF288008 vhadd.s32 d8, d8, d8
+EF300000 UNDEFINED
+EF044004 vhadd.s8 d4, d4, d4
+EF122002 vhadd.s16 d2, d2, d2
+EF211001 vhadd.s32 d1, d1, d1
+FF000000 vhadd.u8 d0, d0, d0
+FF10F08F vhadd.u16 d15, d16, d15
+FF6F0020 vhadd.u32 d16, d15, d16
+FF300000 UNDEFINED
+EF4FF0AF vhadd.s8 d31, d31, d31
+EF000000 [ne] vhaddne.s8 d0, d0, d0
+
+// VHADD_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|00|op=0|0|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VhaddT1Q: VHADD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef42a0cc vhadd.s8 q13, q9, q6
+ff2e20e4 vhadd.u32 q1, q15, q10
+ff4c60c0 vhadd.u8 q11, q14, q0
+ff6800ca vhadd.u32 q8, q12, q5
+ef108044 vhadd.s16 q4, q0, q2
+ef44c0ec vhadd.s8 q14, q10, q14
+ff2ca06c vhadd.u32 q5, q6, q14
+ef526042 vhadd.s16 q11, q1, q1
+EF7FF0CF UNDEFINED
+EF7110C1 UNDEFINED
+EF6040C8 vhadd.s32 q10, q8, q4
+FF1200E0 vhadd.u16 q0, q9, q8
+FF3FF04F UNDEFINED
+EF4FF0EF UNDEFINED
+EF42A0CC [ne] vhaddne.s8 q13, q9, q6

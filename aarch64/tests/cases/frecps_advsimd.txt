@@ -1,0 +1,98 @@
+// FRECPS_asimdsame_only 0|Q=x|U=0|0|111|0|0|sz=x|1|Rm=xxxxx|opcode=11111|1|Rn=xxxxx|Rd=xxxxx
+// FrecpsAsimdsameOnly: FRECPS  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+0E2BFC7D frecps v29.2s, v3.2s, v11.2s
+0E2AFD0A frecps v10.2s, v8.2s, v10.2s
+4E7BFEFC frecps v28.2d, v23.2d, v27.2d
+4E6EFE4F frecps v15.2d, v18.2d, v14.2d
+4E27FCA9 frecps v9.4s, v5.4s, v7.4s
+4E6EFE98 frecps v24.2d, v20.2d, v14.2d
+4E26FEBC frecps v28.4s, v21.4s, v6.4s
+0E3EFE80 frecps v0.2s, v20.2s, v30.2s
+0E27FC5A frecps v26.2s, v2.2s, v7.2s
+4E76FD77 frecps v23.2d, v11.2d, v22.2d
+4E77FC77 frecps v23.2d, v3.2d, v23.2d
+4E27FFF2 frecps v18.4s, v31.4s, v7.4s
+0E2AFFBD frecps v29.2s, v29.2s, v10.2s
+4E39FC26 frecps v6.4s, v1.4s, v25.4s
+4E70FCB9 frecps v25.2d, v5.2d, v16.2d
+4E7BFDF2 frecps v18.2d, v15.2d, v27.2d
+0E20FC1F frecps v31.2s, v0.2s, v0.2s
+0E3FFC7D frecps v29.2s, v3.2s, v31.2s
+0E6BFC7D UNDEFINED
+
+// FRECPS_asimdsamefp16_only 0|Q=x|U=0|0|111|0|a=0|10|Rm=xxxxx|00|opcode=111|1|Rn=xxxxx|Rd=xxxxx
+// FrecpsAsimdsamefp16Only: FRECPS  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+0E4D3C08 frecps v8.4h, v0.4h, v13.4h
+4E543FC1 frecps v1.8h, v30.8h, v20.8h
+0E5C3EF5 frecps v21.4h, v23.4h, v28.4h
+4E523F5C frecps v28.8h, v26.8h, v18.8h
+4E5E3C30 frecps v16.8h, v1.8h, v30.8h
+4E413CF6 frecps v22.8h, v7.8h, v1.8h
+0E433ED7 frecps v23.4h, v22.4h, v3.4h
+4E463F82 frecps v2.8h, v28.8h, v6.8h
+4E533F46 frecps v6.8h, v26.8h, v19.8h
+4E593E79 frecps v25.8h, v19.8h, v25.8h
+0E5D3F09 frecps v9.4h, v24.4h, v29.4h
+4E4A3EF9 frecps v25.8h, v23.8h, v10.8h
+0E523CD5 frecps v21.4h, v6.4h, v18.4h
+4E573FBB frecps v27.8h, v29.8h, v23.8h
+0E423FD2 frecps v18.4h, v30.4h, v2.4h
+0E463DD5 frecps v21.4h, v14.4h, v6.4h
+0E403FE0 frecps v0.4h, v31.4h, v0.4h
+0E5F3C1F frecps v31.4h, v0.4h, v31.4h
+0E4D3DA8 frecps v8.4h, v13.4h, v13.4h
+0E4D3C00 frecps v0.4h, v0.4h, v13.4h
+
+// FRECPS_asisdsame_only 01|U=0|1|111|0|0|sz=x|1|Rm=xxxxx|opcode=11111|1|Rn=xxxxx|Rd=xxxxx
+// FrecpsAsisdsameOnly: FRECPS  <V><d>, <V><n>, <V><m>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// read together by <m>: sz, Rm
+// register fields: Rm, Rn, Rd
+5E39FE0A frecps s10, s16, s25
+5E68FD73 frecps d19, d11, d8
+5E21FE2E frecps s14, s17, s1
+5E68FFEA frecps d10, d31, d8
+5E2BFFF8 frecps s24, s31, s11
+5E76FD38 frecps d24, d9, d22
+5E3BFCB0 frecps s16, s5, s27
+5E32FEF3 frecps s19, s23, s18
+5E6BFEAD frecps d13, d21, d11
+5E79FD1F frecps d31, d8, d25
+5E7EFFA6 frecps d6, d29, d30
+5E3FFCB2 frecps s18, s5, s31
+5E3AFF49 frecps s9, s26, s26
+5E3EFECD frecps s13, s22, s30
+5E35FF4D frecps s13, s26, s21
+5E3EFE5B frecps s27, s18, s30
+5E20FC00 frecps s0, s0, s0
+5E39FE1F frecps s31, s16, s25
+5E79FE00 frecps d0, d16, d25
+5E60FE0A frecps d10, d16, d0
+5E7FFE0A frecps d10, d16, d31
+5E79FC0A frecps d10, d0, d25
+
+// FRECPS_asisdsamefp16_only 01|U=0|1|111|0|a=0|10|Rm=xxxxx|00|opcode=111|1|Rn=xxxxx|Rd=xxxxx
+// FrecpsAsisdsamefp16Only: FRECPS  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+5E443E0E frecps h14, h16, h4
+5E543DF6 frecps h22, h15, h20
+5E563E33 frecps h19, h17, h22
+5E423C6E frecps h14, h3, h2
+5E493EA8 frecps h8, h21, h9
+5E593DDF frecps h31, h14, h25
+5E463FF4 frecps h20, h31, h6
+5E4B3CFD frecps h29, h7, h11
+5E473E35 frecps h21, h17, h7
+5E493D74 frecps h20, h11, h9
+5E573D3F frecps h31, h9, h23
+5E573FD7 frecps h23, h30, h23
+5E523E1D frecps h29, h16, h18
+5E453D17 frecps h23, h8, h5
+5E5C3C71 frecps h17, h3, h28
+5E5D3CC4 frecps h4, h6, h29
+5E403C00 frecps h0, h0, h0
+5E5F3E0E frecps h14, h16, h31

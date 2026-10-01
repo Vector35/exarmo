@@ -1,0 +1,9 @@
+// sqcvtu_z_mz2_ 1|10|0000|1|0|op=1|1|000|11|111000|Zn=xxxx|U=0|Zd=xxxxx
+// SqcvtuZMz2: SQCVTU  <Zd>.H, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+C163E001 sqcvtu z1.h, {z0.s-z1.s}
+C163E008 sqcvtu z8.h, {z0.s-z1.s}
+C163E00F sqcvtu z15.h, {z0.s-z1.s}
+C163E3C0 sqcvtu z0.h, {z30.s-z31.s}
+C163E01F sqcvtu z31.h, {z0.s-z1.s}
+C163E000 sqcvtu z0.h, {z0.s-z1.s}

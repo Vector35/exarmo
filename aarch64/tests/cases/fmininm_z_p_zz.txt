@@ -1,0 +1,15 @@
+// fmininm_z_p_zz_ 011|0010|0|size=xx|00|op=0|0|opc=01|111|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FmininmZPZz: FMININM  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+6401FFFF UNDEFINED
+6441E000 fmininm z0.h, p0/m, z0.h, z0.h
+6481E7FF fmininm z31.s, p1/m, z31.s, z31.s
+64C1EBFF fmininm z31.d, p2/m, z31.d, z31.d
+64C1EFFF fmininm z31.d, p3/m, z31.d, z31.d
+64C1F3FF fmininm z31.d, p4/m, z31.d, z31.d
+64C1F7FF fmininm z31.d, p5/m, z31.d, z31.d
+64C1FBFF fmininm z31.d, p6/m, z31.d, z31.d
+64C1FFFF fmininm z31.d, p7/m, z31.d, z31.d
+64C1FCFF fmininm z31.d, p7/m, z31.d, z7.d
+64C1FFE7 fmininm z7.d, p7/m, z7.d, z31.d
+6441E443 fmininm z3.h, p1/m, z3.h, z2.h

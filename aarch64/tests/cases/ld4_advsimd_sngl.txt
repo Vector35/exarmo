@@ -1,0 +1,290 @@
+// LD4_asisdlso_B4_4b 0|Q=x|0011010|L=1|R=1|0000|o2=0|opcode=001|S=x|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsoB44b: LD4  { <Vt>.B, <Vt2>.B, <Vt3>.B, <Vt4>.B }[<index>], [<Xn|SP>]
+// read together by <index>: Q, S, size
+// register fields: Rn, Rt
+0D602FEA ld4 {v10.b, v11.b, v12.b, v13.b}[3], [sp]
+4D603320 ld4 {v0.b, v1.b, v2.b, v3.b}[12], [x25]
+4D60377B ld4 {v27.b, v28.b, v29.b, v30.b}[13], [x27]
+0D6026C0 ld4 {v0.b, v1.b, v2.b, v3.b}[1], [x22]
+4D602B68 ld4 {v8.b, v9.b, v10.b, v11.b}[10], [x27]
+4D60331A ld4 {v26.b, v27.b, v28.b, v29.b}[12], [x24]
+4D6025AF ld4 {v15.b, v16.b, v17.b, v18.b}[9], [x13]
+4D602EDF ld4 {v31.b, v0.b, v1.b, v2.b}[11], [x22]
+0D6023BE ld4 {v30.b, v31.b, v0.b, v1.b}[0], [fp]
+0D603797 ld4 {v23.b, v24.b, v25.b, v26.b}[5], [x28]
+0D602D26 ld4 {v6.b, v7.b, v8.b, v9.b}[3], [x9]
+0D602505 ld4 {v5.b, v6.b, v7.b, v8.b}[1], [x8]
+4D602CDA ld4 {v26.b, v27.b, v28.b, v29.b}[11], [x6]
+0D602326 ld4 {v6.b, v7.b, v8.b, v9.b}[0], [x25]
+0D603DA2 ld4 {v2.b, v3.b, v4.b, v5.b}[7], [x13]
+0D603F3C ld4 {v28.b, v29.b, v30.b, v31.b}[7], [x25]
+0D602C0A ld4 {v10.b, v11.b, v12.b, v13.b}[3], [x0]
+0D602BEA ld4 {v10.b, v11.b, v12.b, v13.b}[2], [sp]
+0D6033EA ld4 {v10.b, v11.b, v12.b, v13.b}[4], [sp]
+0D603BEA ld4 {v10.b, v11.b, v12.b, v13.b}[6], [sp]
+4D6023EA ld4 {v10.b, v11.b, v12.b, v13.b}[8], [sp]
+4D603BEA ld4 {v10.b, v11.b, v12.b, v13.b}[14], [sp]
+4D603FEA ld4 {v10.b, v11.b, v12.b, v13.b}[15], [sp]
+
+// LD4_asisdlso_D4_4d 0|Q=x|0011010|L=1|R=1|0000|o2=0|opcode=101|S=0|size=01|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsoD44d: LD4  { <Vt>.D, <Vt2>.D, <Vt3>.D, <Vt4>.D }[<index>], [<Xn|SP>]
+// register fields: Rn, Rt
+0D60A7AE ld4 {v14.d, v15.d, v16.d, v17.d}[0], [fp]
+4D60A602 ld4 {v2.d, v3.d, v4.d, v5.d}[1], [x16]
+0D60A6B9 ld4 {v25.d, v26.d, v27.d, v28.d}[0], [x21]
+4D60A434 ld4 {v20.d, v21.d, v22.d, v23.d}[1], [x1]
+0D60A522 ld4 {v2.d, v3.d, v4.d, v5.d}[0], [x9]
+0D60A46E ld4 {v14.d, v15.d, v16.d, v17.d}[0], [x3]
+0D60A6D2 ld4 {v18.d, v19.d, v20.d, v21.d}[0], [x22]
+4D60A442 ld4 {v2.d, v3.d, v4.d, v5.d}[1], [x2]
+0D60A740 ld4 {v0.d, v1.d, v2.d, v3.d}[0], [x26]
+4D60A6EE ld4 {v14.d, v15.d, v16.d, v17.d}[1], [x23]
+0D60A7DC ld4 {v28.d, v29.d, v30.d, v31.d}[0], [lr]
+4D60A455 ld4 {v21.d, v22.d, v23.d, v24.d}[1], [x2]
+0D60A5CF ld4 {v15.d, v16.d, v17.d, v18.d}[0], [x14]
+0D60A5B0 ld4 {v16.d, v17.d, v18.d, v19.d}[0], [x13]
+4D60A7FA ld4 {v26.d, v27.d, v28.d, v29.d}[1], [sp]
+4D60A7D8 ld4 {v24.d, v25.d, v26.d, v27.d}[1], [lr]
+0D60A41F ld4 {v31.d, v0.d, v1.d, v2.d}[0], [x0]
+
+// LD4_asisdlso_H4_4h 0|Q=x|0011010|L=1|R=1|0000|o2=0|opcode=011|S=x|size=x0|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsoH44h: LD4  { <Vt>.H, <Vt2>.H, <Vt3>.H, <Vt4>.H }[<index>], [<Xn|SP>]
+// read together by <index>: Q, S, size
+// register fields: Rn, Rt
+4D6061B7 ld4 {v23.h, v24.h, v25.h, v26.h}[4], [x13]
+4D606B40 ld4 {v0.h, v1.h, v2.h, v3.h}[5], [x26]
+0D607397 ld4 {v23.h, v24.h, v25.h, v26.h}[2], [x28]
+0D6078CB ld4 {v11.h, v12.h, v13.h, v14.h}[3], [x6]
+0D6069EB ld4 {v11.h, v12.h, v13.h, v14.h}[1], [x15]
+4D607324 ld4 {v4.h, v5.h, v6.h, v7.h}[6], [x25]
+0D6062B5 ld4 {v21.h, v22.h, v23.h, v24.h}[0], [x21]
+4D607028 ld4 {v8.h, v9.h, v10.h, v11.h}[6], [x1]
+4D607B2F ld4 {v15.h, v16.h, v17.h, v18.h}[7], [x25]
+0D6060F2 ld4 {v18.h, v19.h, v20.h, v21.h}[0], [x7]
+4D60606C ld4 {v12.h, v13.h, v14.h, v15.h}[4], [x3]
+0D60718B ld4 {v11.h, v12.h, v13.h, v14.h}[2], [x12]
+4D60602A ld4 {v10.h, v11.h, v12.h, v13.h}[4], [x1]
+0D6070F9 ld4 {v25.h, v26.h, v27.h, v28.h}[2], [x7]
+4D607B00 ld4 {v0.h, v1.h, v2.h, v3.h}[7], [x24]
+4D607145 ld4 {v5.h, v6.h, v7.h, v8.h}[6], [x10]
+4D60601F ld4 {v31.h, v0.h, v1.h, v2.h}[4], [x0]
+4D6063F7 ld4 {v23.h, v24.h, v25.h, v26.h}[4], [sp]
+
+// LD4_asisdlso_S4_4s 0|Q=x|0011010|L=1|R=1|0000|o2=0|opcode=101|S=x|size=00|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsoS44s: LD4  { <Vt>.S, <Vt2>.S, <Vt3>.S, <Vt4>.S }[<index>], [<Xn|SP>]
+// read together by <index>: Q, S
+// register fields: Rn, Rt
+4D60B27D ld4 {v29.s, v30.s, v31.s, v0.s}[3], [x19]
+0D60A259 ld4 {v25.s, v26.s, v27.s, v28.s}[0], [x18]
+0D60B309 ld4 {v9.s, v10.s, v11.s, v12.s}[1], [x24]
+0D60B395 ld4 {v21.s, v22.s, v23.s, v24.s}[1], [x28]
+0D60B2C5 ld4 {v5.s, v6.s, v7.s, v8.s}[1], [x22]
+0D60B1B9 ld4 {v25.s, v26.s, v27.s, v28.s}[1], [x13]
+0D60B2C8 ld4 {v8.s, v9.s, v10.s, v11.s}[1], [x22]
+0D60B240 ld4 {v0.s, v1.s, v2.s, v3.s}[1], [x18]
+4D60B11D ld4 {v29.s, v30.s, v31.s, v0.s}[3], [x8]
+4D60B05D ld4 {v29.s, v30.s, v31.s, v0.s}[3], [x2]
+4D60B36D ld4 {v13.s, v14.s, v15.s, v16.s}[3], [x27]
+4D60B3BC ld4 {v28.s, v29.s, v30.s, v31.s}[3], [fp]
+4D60A0EF ld4 {v15.s, v16.s, v17.s, v18.s}[2], [x7]
+4D60B16D ld4 {v13.s, v14.s, v15.s, v16.s}[3], [x11]
+0D60A2D9 ld4 {v25.s, v26.s, v27.s, v28.s}[0], [x22]
+4D60B39F ld4 {v31.s, v0.s, v1.s, v2.s}[3], [x28]
+4D60B01D ld4 {v29.s, v30.s, v31.s, v0.s}[3], [x0]
+4D60B3FD ld4 {v29.s, v30.s, v31.s, v0.s}[3], [sp]
+4D60B273 ld4 {v19.s, v20.s, v21.s, v22.s}[3], [x19]
+
+// LD4_asisdlsop_B4_i4b 0|Q=x|0011011|L=1|R=1|Rm=11111|opcode=001|S=x|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsopB4I4b: LD4  { <Vt>.B, <Vt2>.B, <Vt3>.B, <Vt4>.B }[<index>], [<Xn|SP>], #4
+// read together by <index>: Q, S, size
+// register fields: Rn, Rt
+4DFF26E4 ld4 {v4.b, v5.b, v6.b, v7.b}[9], [x23], #0x4
+4DFF34C0 ld4 {v0.b, v1.b, v2.b, v3.b}[13], [x6], #0x4
+4DFF382C ld4 {v12.b, v13.b, v14.b, v15.b}[14], [x1], #0x4
+0DFF2523 ld4 {v3.b, v4.b, v5.b, v6.b}[1], [x9], #0x4
+0DFF38EC ld4 {v12.b, v13.b, v14.b, v15.b}[6], [x7], #0x4
+0DFF23A6 ld4 {v6.b, v7.b, v8.b, v9.b}[0], [fp], #0x4
+4DFF3E77 ld4 {v23.b, v24.b, v25.b, v26.b}[15], [x19], #0x4
+0DFF2F76 ld4 {v22.b, v23.b, v24.b, v25.b}[3], [x27], #0x4
+0DFF3B0F ld4 {v15.b, v16.b, v17.b, v18.b}[6], [x24], #0x4
+0DFF2307 ld4 {v7.b, v8.b, v9.b, v10.b}[0], [x24], #0x4
+0DFF35C0 ld4 {v0.b, v1.b, v2.b, v3.b}[5], [x14], #0x4
+4DFF2088 ld4 {v8.b, v9.b, v10.b, v11.b}[8], [x4], #0x4
+4DFF2B8C ld4 {v12.b, v13.b, v14.b, v15.b}[10], [x28], #0x4
+0DFF31C1 ld4 {v1.b, v2.b, v3.b, v4.b}[4], [x14], #0x4
+4DFF39B0 ld4 {v16.b, v17.b, v18.b, v19.b}[14], [x13], #0x4
+4DFF3171 ld4 {v17.b, v18.b, v19.b, v20.b}[12], [x11], #0x4
+4DFF241F ld4 {v31.b, v0.b, v1.b, v2.b}[9], [x0], #0x4
+4DFF27E4 ld4 {v4.b, v5.b, v6.b, v7.b}[9], [sp], #0x4
+0DFF2AF7 ld4 {v23.b, v24.b, v25.b, v26.b}[2], [x23], #0x4
+0DFF3EE4 ld4 {v4.b, v5.b, v6.b, v7.b}[7], [x23], #0x4
+4DFF2EE4 ld4 {v4.b, v5.b, v6.b, v7.b}[11], [x23], #0x4
+
+// LD4_asisdlsop_BX4_r4b 0|Q=x|0011011|L=1|R=1|Rm=xxxxx|opcode=001|S=x|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsopBx4R4b: LD4  { <Vt>.B, <Vt2>.B, <Vt3>.B, <Vt4>.B }[<index>], [<Xn|SP>], <Xm>
+// read together by <index>: Q, S, size
+// register fields: Rm, Rn, Rt
+4DF03B65 ld4 {v5.b, v6.b, v7.b, v8.b}[14], [x27], x16
+4DF12040 ld4 {v0.b, v1.b, v2.b, v3.b}[8], [x2], x17
+4DFC2FCE ld4 {v14.b, v15.b, v16.b, v17.b}[11], [lr], x28
+4DF32872 ld4 {v18.b, v19.b, v20.b, v21.b}[10], [x3], x19
+0DFB3470 ld4 {v16.b, v17.b, v18.b, v19.b}[5], [x3], x27
+4DEA2FA8 ld4 {v8.b, v9.b, v10.b, v11.b}[11], [fp], x10
+0DF929FF ld4 {v31.b, v0.b, v1.b, v2.b}[2], [x15], x25
+4DF425A6 ld4 {v6.b, v7.b, v8.b, v9.b}[9], [x13], x20
+0DED3EB4 ld4 {v20.b, v21.b, v22.b, v23.b}[7], [x21], x13
+4DE73114 ld4 {v20.b, v21.b, v22.b, v23.b}[12], [x8], x7
+4DFB319B ld4 {v27.b, v28.b, v29.b, v30.b}[12], [x12], x27
+0DF027DC ld4 {v28.b, v29.b, v30.b, v31.b}[1], [lr], x16
+0DE13758 ld4 {v24.b, v25.b, v26.b, v27.b}[5], [x26], x1
+4DE230F8 ld4 {v24.b, v25.b, v26.b, v27.b}[12], [x7], x2
+0DF63278 ld4 {v24.b, v25.b, v26.b, v27.b}[4], [x19], x22
+4DFB272F ld4 {v15.b, v16.b, v17.b, v18.b}[9], [x25], x27
+4DE03805 ld4 {v5.b, v6.b, v7.b, v8.b}[14], [x0], x0
+4DF03BE5 ld4 {v5.b, v6.b, v7.b, v8.b}[14], [sp], x16
+0DF0237B ld4 {v27.b, v28.b, v29.b, v30.b}[0], [x27], x16
+0DF02F65 ld4 {v5.b, v6.b, v7.b, v8.b}[3], [x27], x16
+0DF03B65 ld4 {v5.b, v6.b, v7.b, v8.b}[6], [x27], x16
+4DF03765 ld4 {v5.b, v6.b, v7.b, v8.b}[13], [x27], x16
+4DF03F65 ld4 {v5.b, v6.b, v7.b, v8.b}[15], [x27], x16
+
+// LD4_asisdlsop_D4_i4d 0|Q=x|0011011|L=1|R=1|Rm=11111|opcode=101|S=0|size=01|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsopD4I4d: LD4  { <Vt>.D, <Vt2>.D, <Vt3>.D, <Vt4>.D }[<index>], [<Xn|SP>], #32
+// register fields: Rn, Rt
+0DFFA6E5 ld4 {v5.d, v6.d, v7.d, v8.d}[0], [x23], #0x20
+0DFFA499 ld4 {v25.d, v26.d, v27.d, v28.d}[0], [x4], #0x20
+4DFFA75B ld4 {v27.d, v28.d, v29.d, v30.d}[1], [x26], #0x20
+4DFFA7F8 ld4 {v24.d, v25.d, v26.d, v27.d}[1], [sp], #0x20
+4DFFA73D ld4 {v29.d, v30.d, v31.d, v0.d}[1], [x25], #0x20
+0DFFA48A ld4 {v10.d, v11.d, v12.d, v13.d}[0], [x4], #0x20
+4DFFA56C ld4 {v12.d, v13.d, v14.d, v15.d}[1], [x11], #0x20
+0DFFA7CB ld4 {v11.d, v12.d, v13.d, v14.d}[0], [lr], #0x20
+4DFFA788 ld4 {v8.d, v9.d, v10.d, v11.d}[1], [x28], #0x20
+4DFFA5C4 ld4 {v4.d, v5.d, v6.d, v7.d}[1], [x14], #0x20
+4DFFA448 ld4 {v8.d, v9.d, v10.d, v11.d}[1], [x2], #0x20
+4DFFA409 ld4 {v9.d, v10.d, v11.d, v12.d}[1], [x0], #0x20
+4DFFA444 ld4 {v4.d, v5.d, v6.d, v7.d}[1], [x2], #0x20
+0DFFA720 ld4 {v0.d, v1.d, v2.d, v3.d}[0], [x25], #0x20
+4DFFA5F5 ld4 {v21.d, v22.d, v23.d, v24.d}[1], [x15], #0x20
+4DFFA588 ld4 {v8.d, v9.d, v10.d, v11.d}[1], [x12], #0x20
+0DFFA6FF ld4 {v31.d, v0.d, v1.d, v2.d}[0], [x23], #0x20
+0DFFA6F7 ld4 {v23.d, v24.d, v25.d, v26.d}[0], [x23], #0x20
+
+// LD4_asisdlsop_DX4_r4d 0|Q=x|0011011|L=1|R=1|Rm=xxxxx|opcode=101|S=0|size=01|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsopDx4R4d: LD4  { <Vt>.D, <Vt2>.D, <Vt3>.D, <Vt4>.D }[<index>], [<Xn|SP>], <Xm>
+// register fields: Rm, Rn, Rt
+0DEDA4A1 ld4 {v1.d, v2.d, v3.d, v4.d}[0], [x5], x13
+4DF9A481 ld4 {v1.d, v2.d, v3.d, v4.d}[1], [x4], x25
+4DE8A5D5 ld4 {v21.d, v22.d, v23.d, v24.d}[1], [x14], x8
+4DF2A7BB ld4 {v27.d, v28.d, v29.d, v30.d}[1], [fp], x18
+0DF9A78E ld4 {v14.d, v15.d, v16.d, v17.d}[0], [x28], x25
+0DE0A66E ld4 {v14.d, v15.d, v16.d, v17.d}[0], [x19], x0
+0DFAA7C5 ld4 {v5.d, v6.d, v7.d, v8.d}[0], [lr], x26
+4DE0A40B ld4 {v11.d, v12.d, v13.d, v14.d}[1], [x0], x0
+4DE0A64D ld4 {v13.d, v14.d, v15.d, v16.d}[1], [x18], x0
+0DF3A7CE ld4 {v14.d, v15.d, v16.d, v17.d}[0], [lr], x19
+0DF8A57B ld4 {v27.d, v28.d, v29.d, v30.d}[0], [x11], x24
+4DE2A4F5 ld4 {v21.d, v22.d, v23.d, v24.d}[1], [x7], x2
+0DE1A6C8 ld4 {v8.d, v9.d, v10.d, v11.d}[0], [x22], x1
+4DF8A783 ld4 {v3.d, v4.d, v5.d, v6.d}[1], [x28], x24
+4DE7A5A9 ld4 {v9.d, v10.d, v11.d, v12.d}[1], [x13], x7
+4DFDA525 ld4 {v5.d, v6.d, v7.d, v8.d}[1], [x9], fp
+0DEDA7E0 ld4 {v0.d, v1.d, v2.d, v3.d}[0], [sp], x13
+0DEDA4BF ld4 {v31.d, v0.d, v1.d, v2.d}[0], [x5], x13
+0DEDA4AD ld4 {v13.d, v14.d, v15.d, v16.d}[0], [x5], x13
+0DEDA4A5 ld4 {v5.d, v6.d, v7.d, v8.d}[0], [x5], x13
+
+// LD4_asisdlsop_H4_i4h 0|Q=x|0011011|L=1|R=1|Rm=11111|opcode=011|S=x|size=x0|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsopH4I4h: LD4  { <Vt>.H, <Vt2>.H, <Vt3>.H, <Vt4>.H }[<index>], [<Xn|SP>], #8
+// read together by <index>: Q, S, size
+// register fields: Rn, Rt
+4DFF73DD ld4 {v29.h, v30.h, v31.h, v0.h}[6], [lr], #0x8
+4DFF7BE2 ld4 {v2.h, v3.h, v4.h, v5.h}[7], [sp], #0x8
+4DFF61E7 ld4 {v7.h, v8.h, v9.h, v10.h}[4], [x15], #0x8
+4DFF6B0C ld4 {v12.h, v13.h, v14.h, v15.h}[5], [x24], #0x8
+0DFF729E ld4 {v30.h, v31.h, v0.h, v1.h}[2], [x20], #0x8
+0DFF6918 ld4 {v24.h, v25.h, v26.h, v27.h}[1], [x8], #0x8
+0DFF7350 ld4 {v16.h, v17.h, v18.h, v19.h}[2], [x26], #0x8
+0DFF7116 ld4 {v22.h, v23.h, v24.h, v25.h}[2], [x8], #0x8
+4DFF6803 ld4 {v3.h, v4.h, v5.h, v6.h}[5], [x0], #0x8
+4DFF6A01 ld4 {v1.h, v2.h, v3.h, v4.h}[5], [x16], #0x8
+0DFF63BC ld4 {v28.h, v29.h, v30.h, v31.h}[0], [fp], #0x8
+4DFF6242 ld4 {v2.h, v3.h, v4.h, v5.h}[4], [x18], #0x8
+0DFF79A1 ld4 {v1.h, v2.h, v3.h, v4.h}[3], [x13], #0x8
+0DFF7B48 ld4 {v8.h, v9.h, v10.h, v11.h}[3], [x26], #0x8
+4DFF6BDB ld4 {v27.h, v28.h, v29.h, v30.h}[5], [lr], #0x8
+4DFF7246 ld4 {v6.h, v7.h, v8.h, v9.h}[6], [x18], #0x8
+4DFF73C0 ld4 {v0.h, v1.h, v2.h, v3.h}[6], [lr], #0x8
+4DFF73DF ld4 {v31.h, v0.h, v1.h, v2.h}[6], [lr], #0x8
+4DFF73DE ld4 {v30.h, v31.h, v0.h, v1.h}[6], [lr], #0x8
+
+// LD4_asisdlsop_HX4_r4h 0|Q=x|0011011|L=1|R=1|Rm=xxxxx|opcode=011|S=x|size=x0|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsopHx4R4h: LD4  { <Vt>.H, <Vt2>.H, <Vt3>.H, <Vt4>.H }[<index>], [<Xn|SP>], <Xm>
+// read together by <index>: Q, S, size
+// register fields: Rm, Rn, Rt
+0DF3793B ld4 {v27.h, v28.h, v29.h, v30.h}[3], [x9], x19
+0DEE7B0B ld4 {v11.h, v12.h, v13.h, v14.h}[3], [x24], x14
+4DE46AC3 ld4 {v3.h, v4.h, v5.h, v6.h}[5], [x22], x4
+0DF76940 ld4 {v0.h, v1.h, v2.h, v3.h}[1], [x10], x23
+0DF47258 ld4 {v24.h, v25.h, v26.h, v27.h}[2], [x18], x20
+4DFE6090 ld4 {v16.h, v17.h, v18.h, v19.h}[4], [x4], lr
+4DFB7873 ld4 {v19.h, v20.h, v21.h, v22.h}[7], [x3], x27
+4DFB70F0 ld4 {v16.h, v17.h, v18.h, v19.h}[6], [x7], x27
+0DFB6A50 ld4 {v16.h, v17.h, v18.h, v19.h}[1], [x18], x27
+4DE869EE ld4 {v14.h, v15.h, v16.h, v17.h}[5], [x15], x8
+0DFE7960 ld4 {v0.h, v1.h, v2.h, v3.h}[3], [x11], lr
+0DEE6BAF ld4 {v15.h, v16.h, v17.h, v18.h}[1], [fp], x14
+4DED618A ld4 {v10.h, v11.h, v12.h, v13.h}[4], [x12], x13
+4DFA7831 ld4 {v17.h, v18.h, v19.h, v20.h}[7], [x1], x26
+4DE3785F ld4 {v31.h, v0.h, v1.h, v2.h}[7], [x2], x3
+4DFC6B55 ld4 {v21.h, v22.h, v23.h, v24.h}[5], [x26], x28
+0DE0781B ld4 {v27.h, v28.h, v29.h, v30.h}[3], [x0], x0
+0DF37BFB ld4 {v27.h, v28.h, v29.h, v30.h}[3], [sp], x19
+0DF36133 ld4 {v19.h, v20.h, v21.h, v22.h}[0], [x9], x19
+0DF37929 ld4 {v9.h, v10.h, v11.h, v12.h}[3], [x9], x19
+
+// LD4_asisdlsop_S4_i4s 0|Q=x|0011011|L=1|R=1|Rm=11111|opcode=101|S=x|size=00|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsopS4I4s: LD4  { <Vt>.S, <Vt2>.S, <Vt3>.S, <Vt4>.S }[<index>], [<Xn|SP>], #16
+// read together by <index>: Q, S
+// register fields: Rn, Rt
+4DFFA10D ld4 {v13.s, v14.s, v15.s, v16.s}[2], [x8], #0x10
+4DFFB0F7 ld4 {v23.s, v24.s, v25.s, v26.s}[3], [x7], #0x10
+4DFFA2EC ld4 {v12.s, v13.s, v14.s, v15.s}[2], [x23], #0x10
+0DFFA29A ld4 {v26.s, v27.s, v28.s, v29.s}[0], [x20], #0x10
+4DFFA222 ld4 {v2.s, v3.s, v4.s, v5.s}[2], [x17], #0x10
+4DFFB334 ld4 {v20.s, v21.s, v22.s, v23.s}[3], [x25], #0x10
+0DFFB18E ld4 {v14.s, v15.s, v16.s, v17.s}[1], [x12], #0x10
+4DFFB32B ld4 {v11.s, v12.s, v13.s, v14.s}[3], [x25], #0x10
+0DFFB378 ld4 {v24.s, v25.s, v26.s, v27.s}[1], [x27], #0x10
+4DFFA3AE ld4 {v14.s, v15.s, v16.s, v17.s}[2], [fp], #0x10
+0DFFB33C ld4 {v28.s, v29.s, v30.s, v31.s}[1], [x25], #0x10
+0DFFB148 ld4 {v8.s, v9.s, v10.s, v11.s}[1], [x10], #0x10
+4DFFB349 ld4 {v9.s, v10.s, v11.s, v12.s}[3], [x26], #0x10
+4DFFB2EC ld4 {v12.s, v13.s, v14.s, v15.s}[3], [x23], #0x10
+0DFFA0AA ld4 {v10.s, v11.s, v12.s, v13.s}[0], [x5], #0x10
+0DFFA225 ld4 {v5.s, v6.s, v7.s, v8.s}[0], [x17], #0x10
+4DFFA000 ld4 {v0.s, v1.s, v2.s, v3.s}[2], [x0], #0x10
+4DFFA3FF ld4 {v31.s, v0.s, v1.s, v2.s}[2], [sp], #0x10
+
+// LD4_asisdlsop_SX4_r4s 0|Q=x|0011011|L=1|R=1|Rm=xxxxx|opcode=101|S=x|size=00|Rn=xxxxx|Rt=xxxxx
+// Ld4AsisdlsopSx4R4s: LD4  { <Vt>.S, <Vt2>.S, <Vt3>.S, <Vt4>.S }[<index>], [<Xn|SP>], <Xm>
+// read together by <index>: Q, S
+// register fields: Rm, Rn, Rt
+0DEEA179 ld4 {v25.s, v26.s, v27.s, v28.s}[0], [x11], x14
+4DE5B3CC ld4 {v12.s, v13.s, v14.s, v15.s}[3], [lr], x5
+4DF1A042 ld4 {v2.s, v3.s, v4.s, v5.s}[2], [x2], x17
+4DFCA0FD ld4 {v29.s, v30.s, v31.s, v0.s}[2], [x7], x28
+0DFCA083 ld4 {v3.s, v4.s, v5.s, v6.s}[0], [x4], x28
+0DE1B0F4 ld4 {v20.s, v21.s, v22.s, v23.s}[1], [x7], x1
+0DF5A033 ld4 {v19.s, v20.s, v21.s, v22.s}[0], [x1], x21
+4DFCB145 ld4 {v5.s, v6.s, v7.s, v8.s}[3], [x10], x28
+4DE2B277 ld4 {v23.s, v24.s, v25.s, v26.s}[3], [x19], x2
+4DF2B087 ld4 {v7.s, v8.s, v9.s, v10.s}[3], [x4], x18
+0DEAB3B2 ld4 {v18.s, v19.s, v20.s, v21.s}[1], [fp], x10
+0DF1B14F ld4 {v15.s, v16.s, v17.s, v18.s}[1], [x10], x17
+4DF9A0AA ld4 {v10.s, v11.s, v12.s, v13.s}[2], [x5], x25
+4DE3A083 ld4 {v3.s, v4.s, v5.s, v6.s}[2], [x4], x3
+0DF2A2D6 ld4 {v22.s, v23.s, v24.s, v25.s}[0], [x22], x18
+0DFDB112 ld4 {v18.s, v19.s, v20.s, v21.s}[1], [x8], fp
+0DE0A000 ld4 {v0.s, v1.s, v2.s, v3.s}[0], [x0], x0
+0DEEA3FF ld4 {v31.s, v0.s, v1.s, v2.s}[0], [sp], x14

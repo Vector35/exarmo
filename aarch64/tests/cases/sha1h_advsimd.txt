@@ -1,0 +1,21 @@
+// SHA1H_SS_cryptosha2 0101|111|0|size=00|10100|opcode=00000|10|Rn=xxxxx|Rd=xxxxx
+// Sha1hSsCryptosha2: SHA1H  <Sd>, <Sn>
+// register fields: Rn, Rd
+5E280ABB sha1h s27, s21
+5E280927 sha1h s7, s9
+5E280BEF sha1h s15, s31
+5E28090F sha1h s15, s8
+5E280A5F sha1h s31, s18
+5E280982 sha1h s2, s12
+5E280AF3 sha1h s19, s23
+5E280B4C sha1h s12, s26
+5E28083E sha1h s30, s1
+5E280A9A sha1h s26, s20
+5E280A7D sha1h s29, s19
+5E280B67 sha1h s7, s27
+5E280A8A sha1h s10, s20
+5E2809A0 sha1h s0, s13
+5E280972 sha1h s18, s11
+5E280947 sha1h s7, s10
+5E28081B sha1h s27, s0
+5E280AB5 sha1h s21, s21

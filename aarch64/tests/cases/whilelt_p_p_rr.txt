@@ -1,0 +1,27 @@
+// whilelt_p_p_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|00|0|sf=x|U=0|lt=1|Rn=xxxxx|eq=0|Pd=xxxx
+// WhileltPPRr: WHILELT  <Pd>.<T>, <n>, <m>
+// read together by <n>: sf, Rn
+// read together by <m>: Rm, sf
+// register fields: Rm, Rn, Pd
+256D042D whilelt p13.h, w1, w13
+25BE0501 whilelt p1.s, w8, w30
+25221521 whilelt p1.b, x9, x2
+25FE0761 whilelt p1.d, w27, w30
+25260548 whilelt p8.b, w10, w6
+256416A1 whilelt p1.h, x21, x4
+257407A2 whilelt p2.h, w29, w20
+25E6144D whilelt p13.d, x2, x6
+25BF05C2 whilelt p2.s, w14, wzr
+25AC15AC whilelt p12.s, x13, x12
+25EE05CC whilelt p12.d, w14, w14
+256E1747 whilelt p7.h, x26, x14
+25BA0489 whilelt p9.s, w4, w26
+25E40749 whilelt p9.d, w26, w4
+25F017CD whilelt p13.d, lr, x16
+25300504 whilelt p4.b, w8, w16
+25600400 whilelt p0.h, w0, w0
+256D07EF whilelt p15.h, wzr, w13
+2560142D whilelt p13.h, x1, x0
+257F142D whilelt p13.h, x1, xzr
+256D140D whilelt p13.h, x0, x13
+256D17ED whilelt p13.h, xzr, x13

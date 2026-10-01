@@ -1,0 +1,22 @@
+// AUTIASPPC_only_dp_1src_imm sf=1|11|100|111|opc=00|imm16=xxxxxxxxxxxxxxxx|Rd=11111
+// AutiasppcOnlyDp1srcImm: AUTIASPPC  <label>
+F380009F autiasppc 0x7ffffffffffffff4
+F380017F autiasppc 0x7fffffffffffffd8
+F380025F autiasppc 0x7fffffffffffffbc
+F380001F autiasppc 0x8000000000000004
+F39FFFFF autiasppc 0x7ffffffffffc0008
+F390001F autiasppc 0x7ffffffffffe0004
+F388001F autiasppc 0x7fffffffffff0004
+F384001F autiasppc 0x7fffffffffff8004
+F382001F autiasppc 0x7fffffffffffc004
+F381001F autiasppc 0x7fffffffffffe004
+F380801F autiasppc 0x7ffffffffffff004
+F380401F autiasppc 0x7ffffffffffff804
+F380201F autiasppc 0x7ffffffffffffc04
+F380101F autiasppc 0x7ffffffffffffe04
+F380081F autiasppc 0x7fffffffffffff04
+F380041F autiasppc 0x7fffffffffffff84
+F380021F autiasppc 0x7fffffffffffffc4
+F380011F autiasppc 0x7fffffffffffffe4
+F380005F autiasppc 0x7ffffffffffffffc
+F380003F autiasppc 0x8000000000000000

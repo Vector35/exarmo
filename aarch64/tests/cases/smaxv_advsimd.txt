@@ -1,0 +1,32 @@
+// SMAXV_asimdall_only 0|Q=x|U=0|0|111|0|size=xx|11000|op=0|1010|10|Rn=xxxxx|Rd=xxxxx
+// SmaxvAsimdallOnly: SMAXV  <V><d>, <Vn>.<T>
+// read together by <d>: size, Rd
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+0E70AB8C smaxv h12, v28.4h
+0E30AB87 smaxv b7, v28.8b
+4EB0AB7A smaxv s26, v27.4s
+0E30ABF9 smaxv b25, v31.8b
+0E30AB8C smaxv b12, v28.8b
+0E30ABAE smaxv b14, v29.8b
+4EB0A8AD smaxv s13, v5.4s
+4E70AA8D smaxv h13, v20.8h
+4E70A95E smaxv h30, v10.8h
+4E30AB97 smaxv b23, v28.16b
+0E30AA7A smaxv b26, v19.8b
+0E70A848 smaxv h8, v2.4h
+0E70A928 smaxv h8, v9.4h
+4EB0AAF3 smaxv s19, v23.4s
+4E30AA62 smaxv b2, v19.16b
+4EB0A913 smaxv s19, v8.4s
+0E70A800 smaxv h0, v0.4h
+0E70AB9F smaxv h31, v28.4h
+0EF0AB8C UNDEFINED
+0EB0AB8C UNDEFINED
+4EF0AB8C UNDEFINED
+0E30AB80 smaxv b0, v28.8b
+0E30AB9F smaxv b31, v28.8b
+4EB0AB60 smaxv s0, v27.4s
+4EB0AB7F smaxv s31, v27.4s
+0EF0AB80 UNDEFINED
+0EF0AB9F UNDEFINED

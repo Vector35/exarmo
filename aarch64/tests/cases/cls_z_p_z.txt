@@ -1,0 +1,38 @@
+// cls_z_p_z_m 000|0010|0|size=xx|0|M=1|1|opc=000|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ClsZPZM: CLS  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+0458B018 cls z24.h, p4/m, z0.h
+0498B032 cls z18.s, p4/m, z1.s
+0498BC09 cls z9.s, p7/m, z0.s
+0498A495 cls z21.s, p1/m, z4.s
+0498AA70 cls z16.s, p2/m, z19.s
+0498BA3E cls z30.s, p6/m, z17.s
+0458AC7B cls z27.h, p3/m, z3.h
+0418AAF8 cls z24.b, p2/m, z23.b
+0418B603 cls z3.b, p5/m, z16.b
+04D8B94B cls z11.d, p6/m, z10.d
+0498B4C2 cls z2.s, p5/m, z6.s
+0498A43E cls z30.s, p1/m, z1.s
+04D8BAF0 cls z16.d, p6/m, z23.d
+0498A4F4 cls z20.s, p1/m, z7.s
+0498B7D9 cls z25.s, p5/m, z30.s
+0498A2E4 cls z4.s, p0/m, z23.s
+0458B3E0 cls z0.h, p4/m, z31.h
+0458B01F cls z31.h, p4/m, z0.h
+0458B004 cls z4.h, p4/m, z0.h
+0458B000 cls z0.h, p4/m, z0.h
+
+// cls_z_p_z_z 000|0010|0|size=xx|0|M=0|1|opc=000|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ClsZPZZ: CLS  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+0408A005 cls z5.b, p0/z, z0.b
+0408A00C cls z12.b, p0/z, z0.b
+0408A013 cls z19.b, p0/z, z0.b
+0448A7E0 cls z0.h, p1/z, z31.h
+0488A81F cls z31.s, p2/z, z0.s
+04C8AC05 cls z5.d, p3/z, z0.d
+0408B005 cls z5.b, p4/z, z0.b
+0408B405 cls z5.b, p5/z, z0.b
+0408B805 cls z5.b, p6/z, z0.b
+0408BC05 cls z5.b, p7/z, z0.b
+0408A000 cls z0.b, p0/z, z0.b

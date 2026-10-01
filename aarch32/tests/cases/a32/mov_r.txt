@@ -1,0 +1,98 @@
+// MOV_r_A1 cond=xxxx|00011|opc=01|S=0|Rn=(0)(0)(0)(0)|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// AsrMovRA1: ASR{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// LslMovRA1: LSL{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// LsrMovRA1: LSR{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// RorMovRA1: ROR{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// MovRA1: MOV{<c>}{<q>}  <Rd>, <Rm> {, <shift> #<amount>}
+// read together by the LSL alias and the ROR alias: imm5, stype
+// register fields: Rd, Rm
+// form chosen on: imm5, stype
+71a0f3af lsrvc pc, pc, #7
+// Binary Ninja's tests
+01a02003 moveq r2, r3
+e1a01002 mov r1, r2
+e1a01006 mov r1, r6
+e1a02003 mov r2, r3
+e1a02004 mov r2, r4
+e1a02024 lsr r2, r4, #32
+e1a02044 asr r2, r4, #32
+e1a02084 lsl r2, r4, #1
+e1a020e4 ror r2, r4, #1
+e1a02124 lsr r2, r4, #2
+e1a02144 asr r2, r4, #2
+e1a02f84 lsl r2, r4, #31
+e1a02fe4 ror r2, r4, #31
+e1a04084 lsl r4, r4, #1
+e1a040e4 ror r4, r4, #1
+e1a04124 lsr r4, r4, #2
+e1a04144 asr r4, r4, #2
+e1a0b005 mov r11, r5
+e1a0c008 mov r12, r8
+F1A0F06F UNALLOCATED
+81AF0820 lsrhi r0, r0, #0x10 (unpredictable)
+41A8F42F lsrmi pc, pc, #0x8 (unpredictable)
+21A4F22F lsrcs pc, pc, #0x4 (unpredictable)
+11A2FFAF lsrne pc, pc, #0x1f (unpredictable)
+71A1FFCF asrvc pc, pc, #0x1f (unpredictable)
+11A2FFEF rorne pc, pc, #0x1f (unpredictable)
+
+// MOV_r_A1_RRX cond=xxxx|00011|opc=01|S=0|Rn=(0)(0)(0)(0)|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// RrxMovRA1Rrx: RRX{<c>}{<q>}  {<Rd>, }<Rm>
+// MovRA1Rrx: MOV{<c>}{<q>}  <Rd>, <Rm>, RRX
+// register fields: Rd, Rm
+// Binary Ninja's tests
+e1a00061 rrx r0, r1
+e1a0d06f rrx sp, pc
+e1a0e06d rrx lr, sp
+e1a0f06e rrx pc, lr
+01AF0060 rrxeq r0, r0 (unpredictable)
+F1A00061 UNALLOCATED
+81A80060 rrxhi r0, r0 (unpredictable)
+41A40061 rrxmi r0, r1 (unpredictable)
+21A20061 rrxcs r0, r1 (unpredictable)
+11A10061 rrxne r0, r1 (unpredictable)
+
+// MOVS_r_A1 cond=xxxx|00011|opc=01|S=1|Rn=(0)(0)(0)(0)|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// AsrsMovsRA1: ASRS{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// LslsMovsRA1: LSLS{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// LsrsMovsRA1: LSRS{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// RorsMovsRA1: RORS{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// MovsRA1: MOVS{<c>}{<q>}  <Rd>, <Rm> {, <shift> #<amount>}
+// read together by the LSLS alias and the RORS alias: imm5, stype
+// register fields: Rd, Rm
+// form chosen on: imm5, stype
+41b04389 lslsmi r4, r9, #7
+c1b030ee rorsgt r3, lr, #1
+// Binary Ninja's tests
+01b02003 movseq r2, r3
+e1b02003 movs r2, r3
+F1B04069 UNALLOCATED
+81BF0FA0 lsrshi r0, r0, #0x1f (unpredictable)
+21B8F84F asrscs pc, pc, #0x10 (unpredictable)
+11B44404 lslsne r4, r4, #0x8 (unpredictable)
+41B24209 lslsmi r4, r9, #0x4 (unpredictable)
+41B14109 lslsmi r4, r9, #0x2 (unpredictable)
+41B04029 lsrsmi r4, r9, #0x20
+41B04049 asrsmi r4, r9, #0x20
+41B04F89 lslsmi r4, r9, #0x1f
+41B04FA9 lsrsmi r4, r9, #0x1f
+41B04FC9 asrsmi r4, r9, #0x1f
+41B04FE9 rorsmi r4, r9, #0x1f
+01B02083 lslseq r2, r3, #0x1
+
+// MOVS_r_A1_RRX cond=xxxx|00011|opc=01|S=1|Rn=(0)(0)(0)(0)|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// RrxsMovsRA1Rrx: RRXS{<c>}{<q>}  {<Rd>, }<Rm>
+// MovsRA1Rrx: MOVS{<c>}{<q>}  <Rd>, <Rm>, RRX
+// register fields: Rd, Rm
+21b05067 rrxshs r5, r7
+// Binary Ninja's tests
+e1b00061 rrxs r0, r1
+e1b0d06f rrxs sp, pc
+e1b0e06d rrxs lr, sp
+e1b0f06e rrxs pc, lr
+01BF5060 rrxseq r5, r0 (unpredictable)
+F1B05067 UNALLOCATED
+81B85065 rrxshi r5, r5 (unpredictable)
+41B45067 rrxsmi r5, r7 (unpredictable)
+11B25067 rrxsne r5, r7 (unpredictable)
+21B15067 rrxscs r5, r7 (unpredictable)

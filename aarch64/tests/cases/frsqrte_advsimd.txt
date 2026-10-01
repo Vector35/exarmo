@@ -1,0 +1,94 @@
+// FRSQRTE_asimdmisc_R 0|Q=x|U=1|0|111|0|1|sz=x|10000|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// FrsqrteAsimdmiscR: FRSQRTE  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+6EE1DB3E frsqrte v30.2d, v25.2d
+6EA1DA1C frsqrte v28.4s, v16.4s
+2EA1D887 frsqrte v7.2s, v4.2s
+6EE1D811 frsqrte v17.2d, v0.2d
+6EE1DAAD frsqrte v13.2d, v21.2d
+6EA1D917 frsqrte v23.4s, v8.4s
+2EA1D9E6 frsqrte v6.2s, v15.2s
+6EE1DBA5 frsqrte v5.2d, v29.2d
+6EA1D801 frsqrte v1.4s, v0.4s
+6EE1DB00 frsqrte v0.2d, v24.2d
+6EA1D9F6 frsqrte v22.4s, v15.4s
+2EA1DAFC frsqrte v28.2s, v23.2s
+6EE1D88B frsqrte v11.2d, v4.2d
+6EA1D9BF frsqrte v31.4s, v13.4s
+6EA1DAC0 frsqrte v0.4s, v22.4s
+2EA1DB64 frsqrte v4.2s, v27.2s
+6EE1DBFE frsqrte v30.2d, v31.2d
+2EE1DB3E UNDEFINED
+6EE1DB39 frsqrte v25.2d, v25.2d
+
+// FRSQRTE_asimdmiscfp16_R 0|Q=x|U=1|0|111|0|a=1|1111|00|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// FrsqrteAsimdmiscfp16R: FRSQRTE  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+6EF9D9E4 frsqrte v4.8h, v15.8h
+6EF9D91E frsqrte v30.8h, v8.8h
+2EF9D859 frsqrte v25.4h, v2.4h
+2EF9DB7E frsqrte v30.4h, v27.4h
+2EF9D97E frsqrte v30.4h, v11.4h
+6EF9DB78 frsqrte v24.8h, v27.8h
+2EF9DACC frsqrte v12.4h, v22.4h
+2EF9DB74 frsqrte v20.4h, v27.4h
+6EF9D941 frsqrte v1.8h, v10.8h
+2EF9DAF3 frsqrte v19.4h, v23.4h
+2EF9D9F0 frsqrte v16.4h, v15.4h
+6EF9DB34 frsqrte v20.8h, v25.8h
+2EF9D9E2 frsqrte v2.4h, v15.4h
+2EF9DA15 frsqrte v21.4h, v16.4h
+2EF9D984 frsqrte v4.4h, v12.4h
+6EF9DA27 frsqrte v7.8h, v17.8h
+6EF9D800 frsqrte v0.8h, v0.8h
+6EF9DBFF frsqrte v31.8h, v31.8h
+
+// FRSQRTE_asisdmisc_R 01|U=1|1|111|0|1|sz=x|10000|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// FrsqrteAsisdmiscR: FRSQRTE  <V><d>, <V><n>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+7EE1D874 frsqrte d20, d3
+7EE1D821 frsqrte d1, d1
+7EA1DABD frsqrte s29, s21
+7EA1DAB4 frsqrte s20, s21
+7EE1D83C frsqrte d28, d1
+7EA1D93A frsqrte s26, s9
+7EE1D8A9 frsqrte d9, d5
+7EE1D95F frsqrte d31, d10
+7EA1D970 frsqrte s16, s11
+7EA1D8F5 frsqrte s21, s7
+7EA1DB40 frsqrte s0, s26
+7EA1DA2B frsqrte s11, s17
+7EE1D82C frsqrte d12, d1
+7EA1D8AD frsqrte s13, s5
+7EA1D9AE frsqrte s14, s13
+7EA1D8F0 frsqrte s16, s7
+7EE1D814 frsqrte d20, d0
+7EE1DBF4 frsqrte d20, d31
+7EA1D87F frsqrte s31, s3
+7EE1D860 frsqrte d0, d3
+7EA1D814 frsqrte s20, s0
+7EA1DBF4 frsqrte s20, s31
+
+// FRSQRTE_asisdmiscfp16_R 01|U=1|1|111|0|a=1|1111|00|opcode=11101|10|Rn=xxxxx|Rd=xxxxx
+// FrsqrteAsisdmiscfp16R: FRSQRTE  <Hd>, <Hn>
+// register fields: Rn, Rd
+7EF9DB45 frsqrte h5, h26
+7EF9D868 frsqrte h8, h3
+7EF9DBC0 frsqrte h0, h30
+7EF9D847 frsqrte h7, h2
+7EF9D81C frsqrte h28, h0
+7EF9DB44 frsqrte h4, h26
+7EF9DA92 frsqrte h18, h20
+7EF9DB26 frsqrte h6, h25
+7EF9DA9C frsqrte h28, h20
+7EF9DB9C frsqrte h28, h28
+7EF9D9E3 frsqrte h3, h15
+7EF9DBE4 frsqrte h4, h31
+7EF9DA10 frsqrte h16, h16
+7EF9DA60 frsqrte h0, h19
+7EF9DB41 frsqrte h1, h26
+7EF9D86D frsqrte h13, h3
+7EF9DB5F frsqrte h31, h26

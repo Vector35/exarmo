@@ -1,0 +1,46 @@
+// FMAXP_asisdpair_only_H 01|U=0|1|111|0|o1=0|sz=0|11000|opcode=01111|10|Rn=xxxxx|Rd=xxxxx
+// FmaxpAsisdpairOnlyH: FMAXP  <d>, <Vn>.2H
+// register fields: Rn, Rd
+5E30F943 fmaxp h3, v10.2h
+5E30F8B7 fmaxp h23, v5.2h
+5E30FBE6 fmaxp h6, v31.2h
+5E30F8B8 fmaxp h24, v5.2h
+5E30F94B fmaxp h11, v10.2h
+5E30FBAE fmaxp h14, v29.2h
+5E30F8E5 fmaxp h5, v7.2h
+5E30F8CB fmaxp h11, v6.2h
+5E30F8EF fmaxp h15, v7.2h
+5E30FB20 fmaxp h0, v25.2h
+5E30F9A7 fmaxp h7, v13.2h
+5E30F839 fmaxp h25, v1.2h
+5E30FA3A fmaxp h26, v17.2h
+5E30F8A2 fmaxp h2, v5.2h
+5E30F8CA fmaxp h10, v6.2h
+5E30FAAD fmaxp h13, v21.2h
+5E30F81F fmaxp h31, v0.2h
+5E30F94A fmaxp h10, v10.2h
+
+// FMAXP_asisdpair_only_SD 01|U=1|1|111|0|o1=0|sz=x|11000|opcode=01111|10|Rn=xxxxx|Rd=xxxxx
+// FmaxpAsisdpairOnlySd: FMAXP  <V><d>, <Vn>.<T>
+// read together by <d>: sz, Rd
+// register fields: Rn, Rd
+7E70F9F3 fmaxp d19, v15.2d
+7E70F8CE fmaxp d14, v6.2d
+7E70F881 fmaxp d1, v4.2d
+7E30F85D fmaxp s29, v2.2s
+7E30F9B8 fmaxp s24, v13.2s
+7E30F86F fmaxp s15, v3.2s
+7E30F8EC fmaxp s12, v7.2s
+7E30F862 fmaxp s2, v3.2s
+7E70F820 fmaxp d0, v1.2d
+7E30F95E fmaxp s30, v10.2s
+7E30F94B fmaxp s11, v10.2s
+7E70FB42 fmaxp d2, v26.2d
+7E70FACE fmaxp d14, v22.2d
+7E70F9C4 fmaxp d4, v14.2d
+7E70FA62 fmaxp d2, v19.2d
+7E30FBE7 fmaxp s7, v31.2s
+7E70F81F fmaxp d31, v0.2d
+7E30F9E0 fmaxp s0, v15.2s
+7E30F9FF fmaxp s31, v15.2s
+7E70F9EF fmaxp d15, v15.2d

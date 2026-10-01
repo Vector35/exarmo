@@ -1,0 +1,89 @@
+// VQRDMLSH_T1_D 111|U=1|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VqrdmlshT1D: VQRDMLSH{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+ff2c6cb3 vqrdmlsh.s32 d6, d28, d19
+ff578c95 vqrdmlsh.s16 d24, d23, d5
+ff2dfc93 vqrdmlsh.s32 d15, d29, d3
+ff5b5c15 vqrdmlsh.s16 d21, d11, d5
+ff5d8c9e vqrdmlsh.s16 d24, d29, d14
+ff6a8c95 vqrdmlsh.s32 d24, d26, d5
+ff6b0c9b vqrdmlsh.s32 d16, d27, d11
+ff5a1c30 vqrdmlsh.s16 d17, d10, d16
+FF0C6CB3 UNDEFINED
+FF3C6CB3 UNDEFINED
+FF204CBF vqrdmlsh.s32 d4, d16, d31
+FF2F2CB8 vqrdmlsh.s32 d2, d31, d24
+FF280CB4 vqrdmlsh.s32 d0, d24, d20
+FF64FCB2 vqrdmlsh.s32 d31, d20, d18
+FF226CB1 vqrdmlsh.s32 d6, d18, d17
+FF216C90 vqrdmlsh.s32 d6, d17, d0
+FF206C1F vqrdmlsh.s32 d6, d0, d15
+FF206CBF vqrdmlsh.s32 d6, d16, d31
+FF2F6C33 vqrdmlsh.s32 d6, d15, d19
+FF2F6CB3 vqrdmlsh.s32 d6, d31, d19
+
+// VQRDMLSH_T1_Q 111|U=1|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VqrdmlshT1Q: VQRDMLSH{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+ff10cc74 vqrdmlsh.s16 q6, q0, q10
+ff5c4c74 vqrdmlsh.s16 q10, q6, q10
+ff122cdc vqrdmlsh.s16 q1, q9, q6
+ff1a6cfa vqrdmlsh.s16 q3, q13, q13
+ff60cc50 vqrdmlsh.s32 q14, q0, q0
+ff6a2c52 vqrdmlsh.s32 q9, q5, q1
+ff626c7e vqrdmlsh.s32 q11, q1, q15
+ff2a8c58 vqrdmlsh.s32 q4, q5, q4
+FF0FFC7F UNDEFINED
+FF311C71 UNDEFINED
+FF180C70 vqrdmlsh.s16 q0, q4, q8
+FF140C74 vqrdmlsh.s16 q0, q2, q10
+FF1FFC5F UNDEFINED
+FF500CF4 vqrdmlsh.s16 q8, q8, q10
+FF5FFCFF UNDEFINED
+
+// VQRDMLSH_T2_D 111|Q=0|11111|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1111|N=x|1|M=x|0|Vm=xxxx
+// VqrdmlshT2D: VQRDMLSH{<q>}.<dt>  <Dd>, <Dn>, <Dm[x]>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+efd2cfc0 vqrdmlsh.s16 d28, d18, d0[0]
+ef9bcf68 vqrdmlsh.s16 d12, d11, d0[3]
+efe93fc3 vqrdmlsh.s32 d19, d25, d3[0]
+ef94dfe4 vqrdmlsh.s16 d13, d20, d4[2]
+efe61fe7 vqrdmlsh.s32 d17, d22, d7[1]
+efa1cf61 vqrdmlsh.s32 d12, d1, d1[1]
+efe1afc0 vqrdmlsh.s32 d26, d17, d0[0]
+efefff6c vqrdmlsh.s32 d31, d15, d12[1]
+EFC2CFC0 UNDEFINED
+EFBBCF68 UNDEFINED
+EFD00FCF vqrdmlsh.s16 d16, d16, d7[1]
+EFD88FC2 vqrdmlsh.s16 d24, d24, d2[0]
+EFD04F40 vqrdmlsh.s16 d20, d0, d0[0]
+EFD02FC0 vqrdmlsh.s16 d18, d16, d0[0]
+EF9F0FC0 vqrdmlsh.s16 d0, d31, d0[0]
+EF92FFC0 vqrdmlsh.s16 d15, d18, d0[0]
+EFD20FC0 vqrdmlsh.s16 d16, d18, d0[0]
+
+// VQRDMLSH_T2_Q 111|Q=1|11111|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1111|N=x|1|M=x|0|Vm=xxxx
+// VqrdmlshT2Q: VQRDMLSH{<q>}.<dt>  <Qd>, <Qn>, <Dm[x]>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+ffe8af44 vqrdmlsh.s32 q13, q4, d4[0]
+ff968f6d vqrdmlsh.s16 q4, q3, d5[3]
+ffd48fe4 vqrdmlsh.s16 q12, q10, d4[2]
+ff9c4fe4 vqrdmlsh.s16 q2, q14, d4[2]
+ffee4fc7 vqrdmlsh.s32 q10, q15, d7[0]
+ffa6afc5 vqrdmlsh.s32 q5, q11, d5[0]
+ffd20fc8 vqrdmlsh.s16 q8, q9, d0[1]
+ffd82f64 vqrdmlsh.s16 q9, q4, d4[2]
+FFCFFF44 UNDEFINED
+FFF11F44 UNALLOCATED
+FFA00F40 vqrdmlsh.s32 q0, q0, d0[0]
+FFE0AF4F vqrdmlsh.s32 q13, q0, d15[0]
+FFE0AFC2 vqrdmlsh.s32 q13, q8, d2[0]
+FFE8AF41 vqrdmlsh.s32 q13, q4, d1[0]
+FFAFFF44 UNDEFINED
+FFEFFFC4 UNDEFINED

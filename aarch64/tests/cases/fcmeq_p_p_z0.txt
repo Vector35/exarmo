@@ -1,0 +1,141 @@
+// fcmeq_p_p_z0_ 011|0010|1|size=xx|010|0|eq=1|lt=0|001|Pg=xxx|Zn=xxxxx|ne=0|Pd=xxxx
+// FcmeqPPZ0: FCMEQ  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #0.0
+// register fields: Pg, Zn, Pd
+65D23DC8 fcmeq p8.d, p7/z, z14.d, #0.0
+65522F04 fcmeq p4.h, p3/z, z24.h, #0.0
+6552332D fcmeq p13.h, p4/z, z25.h, #0.0
+65922667 fcmeq p7.s, p1/z, z19.s, #0.0
+65922B68 fcmeq p8.s, p2/z, z27.s, #0.0
+65D22520 fcmeq p0.d, p1/z, z9.d, #0.0
+655223C0 fcmeq p0.h, p0/z, z30.h, #0.0
+65D23187 fcmeq p7.d, p4/z, z12.d, #0.0
+65922181 fcmeq p1.s, p0/z, z12.s, #0.0
+65923C2F fcmeq p15.s, p7/z, z1.s, #0.0
+65522B8E fcmeq p14.h, p2/z, z28.h, #0.0
+65523AA8 fcmeq p8.h, p6/z, z21.h, #0.0
+65D23349 fcmeq p9.d, p4/z, z26.d, #0.0
+65523C6C fcmeq p12.h, p7/z, z3.h, #0.0
+659236A9 fcmeq p9.s, p5/z, z21.s, #0.0
+65D23065 fcmeq p5.d, p4/z, z3.d, #0.0
+65D23C08 fcmeq p8.d, p7/z, z0.d, #0.0
+65D23FE8 fcmeq p8.d, p7/z, z31.d, #0.0
+65123DC8 UNDEFINED
+65D23CE8 fcmeq p8.d, p7/z, z7.d, #0.0
+65D23DCE fcmeq p14.d, p7/z, z14.d, #0.0
+
+// fcmge_p_p_z0_ 011|0010|1|size=xx|010|0|eq=0|lt=0|001|Pg=xxx|Zn=xxxxx|ne=0|Pd=xxxx
+// FcmgePPZ0: FCMGE  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #0.0
+// register fields: Pg, Zn, Pd
+65502008 fcmge p8.h, p0/z, z0.h, #0.0
+65503445 fcmge p5.h, p5/z, z2.h, #0.0
+65D02DE1 fcmge p1.d, p3/z, z15.d, #0.0
+65D03C2E fcmge p14.d, p7/z, z1.d, #0.0
+65503387 fcmge p7.h, p4/z, z28.h, #0.0
+65903C29 fcmge p9.s, p7/z, z1.s, #0.0
+65502F42 fcmge p2.h, p3/z, z26.h, #0.0
+65902E08 fcmge p8.s, p3/z, z16.s, #0.0
+65D03524 fcmge p4.d, p5/z, z9.d, #0.0
+65D0382B fcmge p11.d, p6/z, z1.d, #0.0
+655036A7 fcmge p7.h, p5/z, z21.h, #0.0
+65903727 fcmge p7.s, p5/z, z25.s, #0.0
+65902226 fcmge p6.s, p0/z, z17.s, #0.0
+65502BCA fcmge p10.h, p2/z, z30.h, #0.0
+65902145 fcmge p5.s, p0/z, z10.s, #0.0
+65502085 fcmge p5.h, p0/z, z4.h, #0.0
+655027E0 fcmge p0.h, p1/z, z31.h, #0.0
+6550200F fcmge p15.h, p0/z, z0.h, #0.0
+65102008 UNDEFINED
+65502000 fcmge p0.h, p0/z, z0.h, #0.0
+
+// fcmgt_p_p_z0_ 011|0010|1|size=xx|010|0|eq=0|lt=0|001|Pg=xxx|Zn=xxxxx|ne=1|Pd=xxxx
+// FcmgtPPZ0: FCMGT  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #0.0
+// register fields: Pg, Zn, Pd
+65D02914 fcmgt p4.d, p2/z, z8.d, #0.0
+659029DE fcmgt p14.s, p2/z, z14.s, #0.0
+655020BB fcmgt p11.h, p0/z, z5.h, #0.0
+65902434 fcmgt p4.s, p1/z, z1.s, #0.0
+655038D0 fcmgt p0.h, p6/z, z6.h, #0.0
+655025DB fcmgt p11.h, p1/z, z14.h, #0.0
+6550349A fcmgt p10.h, p5/z, z4.h, #0.0
+65903C19 fcmgt p9.s, p7/z, z0.s, #0.0
+65503553 fcmgt p3.h, p5/z, z10.h, #0.0
+65502A56 fcmgt p6.h, p2/z, z18.h, #0.0
+65903B9B fcmgt p11.s, p6/z, z28.s, #0.0
+65502813 fcmgt p3.h, p2/z, z0.h, #0.0
+65D033F3 fcmgt p3.d, p4/z, z31.d, #0.0
+65503B78 fcmgt p8.h, p6/z, z27.h, #0.0
+65D02AD0 fcmgt p0.d, p2/z, z22.d, #0.0
+6550297C fcmgt p12.h, p2/z, z11.h, #0.0
+65D02D1F fcmgt p15.d, p3/z, z8.d, #0.0
+65102914 UNDEFINED
+65D02912 fcmgt p2.d, p2/z, z8.d, #0.0
+
+// fcmle_p_p_z0_ 011|0010|1|size=xx|010|0|eq=0|lt=1|001|Pg=xxx|Zn=xxxxx|ne=1|Pd=xxxx
+// FcmlePPZ0: FCMLE  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #0.0
+// register fields: Pg, Zn, Pd
+65D133D7 fcmle p7.d, p4/z, z30.d, #0.0
+65D139B8 fcmle p8.d, p6/z, z13.d, #0.0
+655139FB fcmle p11.h, p6/z, z15.h, #0.0
+65512FDD fcmle p13.h, p3/z, z30.h, #0.0
+65913A18 fcmle p8.s, p6/z, z16.s, #0.0
+65912493 fcmle p3.s, p1/z, z4.s, #0.0
+65D1299C fcmle p12.d, p2/z, z12.d, #0.0
+65D13FB3 fcmle p3.d, p7/z, z29.d, #0.0
+65D12F1D fcmle p13.d, p3/z, z24.d, #0.0
+65D135DC fcmle p12.d, p5/z, z14.d, #0.0
+6551305F fcmle p15.h, p4/z, z2.h, #0.0
+65912F35 fcmle p5.s, p3/z, z25.s, #0.0
+65513B33 fcmle p3.h, p6/z, z25.h, #0.0
+65512593 fcmle p3.h, p1/z, z12.h, #0.0
+65512F16 fcmle p6.h, p3/z, z24.h, #0.0
+6591385C fcmle p12.s, p6/z, z2.s, #0.0
+65D12010 fcmle p0.d, p0/z, z0.d, #0.0
+65D133F7 fcmle p7.d, p4/z, z31.d, #0.0
+651133D7 UNDEFINED
+
+// fcmlt_p_p_z0_ 011|0010|1|size=xx|010|0|eq=0|lt=1|001|Pg=xxx|Zn=xxxxx|ne=0|Pd=xxxx
+// FcmltPPZ0: FCMLT  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #0.0
+// register fields: Pg, Zn, Pd
+65D13CED fcmlt p13.d, p7/z, z7.d, #0.0
+655125A7 fcmlt p7.h, p1/z, z13.h, #0.0
+65D12888 fcmlt p8.d, p2/z, z4.d, #0.0
+65912D09 fcmlt p9.s, p3/z, z8.s, #0.0
+65D12183 fcmlt p3.d, p0/z, z12.d, #0.0
+65D1220C fcmlt p12.d, p0/z, z16.d, #0.0
+65513023 fcmlt p3.h, p4/z, z1.h, #0.0
+65513563 fcmlt p3.h, p5/z, z11.h, #0.0
+65513201 fcmlt p1.h, p4/z, z16.h, #0.0
+65512B41 fcmlt p1.h, p2/z, z26.h, #0.0
+65513381 fcmlt p1.h, p4/z, z28.h, #0.0
+65D134EF fcmlt p15.d, p5/z, z7.d, #0.0
+65D1388D fcmlt p13.d, p6/z, z4.d, #0.0
+65512CAA fcmlt p10.h, p3/z, z5.h, #0.0
+65513C0E fcmlt p14.h, p7/z, z0.h, #0.0
+65913062 fcmlt p2.s, p4/z, z3.s, #0.0
+65D13FE0 fcmlt p0.d, p7/z, z31.d, #0.0
+65113CED UNDEFINED
+65D13CE7 fcmlt p7.d, p7/z, z7.d, #0.0
+
+// fcmne_p_p_z0_ 011|0010|1|size=xx|010|0|eq=1|lt=1|001|Pg=xxx|Zn=xxxxx|ne=0|Pd=xxxx
+// FcmnePPZ0: FCMNE  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #0.0
+// register fields: Pg, Zn, Pd
+65532D0E fcmne p14.h, p3/z, z8.h, #0.0
+65D33EED fcmne p13.d, p7/z, z23.d, #0.0
+65933383 fcmne p3.s, p4/z, z28.s, #0.0
+65533CCB fcmne p11.h, p7/z, z6.h, #0.0
+65533E63 fcmne p3.h, p7/z, z19.h, #0.0
+65933E25 fcmne p5.s, p7/z, z17.s, #0.0
+65D328A9 fcmne p9.d, p2/z, z5.d, #0.0
+6593226F fcmne p15.s, p0/z, z19.s, #0.0
+65533CE9 fcmne p9.h, p7/z, z7.h, #0.0
+65932CE3 fcmne p3.s, p3/z, z7.s, #0.0
+65532143 fcmne p3.h, p0/z, z10.h, #0.0
+65932020 fcmne p0.s, p0/z, z1.s, #0.0
+6593384A fcmne p10.s, p6/z, z2.s, #0.0
+65932C2C fcmne p12.s, p3/z, z1.s, #0.0
+65532343 fcmne p3.h, p0/z, z26.h, #0.0
+65D32987 fcmne p7.d, p2/z, z12.d, #0.0
+6553240E fcmne p14.h, p1/z, z0.h, #0.0
+655337EE fcmne p14.h, p5/z, z31.h, #0.0
+65132D0E UNDEFINED
+65532D08 fcmne p8.h, p3/z, z8.h, #0.0

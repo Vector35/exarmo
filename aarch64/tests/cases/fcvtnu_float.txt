@@ -1,0 +1,132 @@
+// FCVTNU_32D_float2int sf=0|0|S=0|11110|ftype=01|1|rmode=00|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtnu32dFloat2int: FCVTNU  <Wd>, <Dn>
+// register fields: Rn, Rd
+1E610251 fcvtnu w17, d18
+1E61021E fcvtnu w30, d16
+1E610384 fcvtnu w4, d28
+1E61004F fcvtnu w15, d2
+1E610307 fcvtnu w7, d24
+1E61005A fcvtnu w26, d2
+1E610304 fcvtnu w4, d24
+1E61006F fcvtnu w15, d3
+1E610055 fcvtnu w21, d2
+1E610078 fcvtnu w24, d3
+1E610142 fcvtnu w2, d10
+1E6100C7 fcvtnu w7, d6
+1E610212 fcvtnu w18, d16
+1E610392 fcvtnu w18, d28
+1E61037B fcvtnu w27, d27
+1E6102DE fcvtnu w30, d22
+1E610000 fcvtnu w0, d0
+1E6103FF fcvtnu wzr, d31
+
+// FCVTNU_32H_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=00|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtnu32hFloat2int: FCVTNU  <Wd>, <Hn>
+// register fields: Rn, Rd
+1EE103D2 fcvtnu w18, h30
+1EE103CA fcvtnu w10, h30
+1EE1007A fcvtnu w26, h3
+1EE10320 fcvtnu w0, h25
+1EE10165 fcvtnu w5, h11
+1EE1035A fcvtnu w26, h26
+1EE1034C fcvtnu w12, h26
+1EE10399 fcvtnu w25, h28
+1EE10354 fcvtnu w20, h26
+1EE102E1 fcvtnu w1, h23
+1EE1012A fcvtnu w10, h9
+1EE10138 fcvtnu w24, h9
+1EE10073 fcvtnu w19, h3
+1EE10287 fcvtnu w7, h20
+1EE10175 fcvtnu w21, h11
+1EE102AF fcvtnu w15, h21
+1EE1001F fcvtnu wzr, h0
+1EE103F2 fcvtnu w18, h31
+
+// FCVTNU_32S_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=00|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtnu32sFloat2int: FCVTNU  <Wd>, <Sn>
+// register fields: Rn, Rd
+1E2100DB fcvtnu w27, s6
+1E2101C4 fcvtnu w4, s14
+1E21037C fcvtnu w28, s27
+1E2101AC fcvtnu w12, s13
+1E21034C fcvtnu w12, s26
+1E210072 fcvtnu w18, s3
+1E2100AF fcvtnu w15, s5
+1E21037E fcvtnu w30, s27
+1E2101D6 fcvtnu w22, s14
+1E210354 fcvtnu w20, s26
+1E2100D7 fcvtnu w23, s6
+1E2102F9 fcvtnu w25, s23
+1E2103C0 fcvtnu w0, s30
+1E210282 fcvtnu w2, s20
+1E21031B fcvtnu w27, s24
+1E2103A8 fcvtnu w8, s29
+1E21001F fcvtnu wzr, s0
+1E2103FB fcvtnu w27, s31
+1E2100C6 fcvtnu w6, s6
+
+// FCVTNU_64D_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=00|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtnu64dFloat2int: FCVTNU  <Xd>, <Dn>
+// register fields: Rn, Rd
+9E61016A fcvtnu x10, d11
+9E610362 fcvtnu x2, d27
+9E61033B fcvtnu x27, d25
+9E6103FB fcvtnu x27, d31
+9E610255 fcvtnu x21, d18
+9E610348 fcvtnu x8, d26
+9E61004E fcvtnu x14, d2
+9E61010B fcvtnu x11, d8
+9E6101EA fcvtnu x10, d15
+9E6100BA fcvtnu x26, d5
+9E6100AF fcvtnu x15, d5
+9E610099 fcvtnu x25, d4
+9E610220 fcvtnu x0, d17
+9E610079 fcvtnu x25, d3
+9E61012B fcvtnu x11, d9
+9E610308 fcvtnu x8, d24
+9E61001F fcvtnu xzr, d0
+9E61016B fcvtnu x11, d11
+
+// FCVTNU_64H_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=00|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtnu64hFloat2int: FCVTNU  <Xd>, <Hn>
+// register fields: Rn, Rd
+9EE103A4 fcvtnu x4, h29
+9EE10149 fcvtnu x9, h10
+9EE100EA fcvtnu x10, h7
+9EE10349 fcvtnu x9, h26
+9EE1012B fcvtnu x11, h9
+9EE102FA fcvtnu x26, h23
+9EE101C9 fcvtnu x9, h14
+9EE10130 fcvtnu x16, h9
+9EE1008A fcvtnu x10, h4
+9EE10044 fcvtnu x4, h2
+9EE102D5 fcvtnu x21, h22
+9EE1014C fcvtnu x12, h10
+9EE100ED fcvtnu x13, h7
+9EE1029F fcvtnu xzr, h20
+9EE1029C fcvtnu x28, h20
+9EE1022B fcvtnu x11, h17
+9EE10000 fcvtnu x0, h0
+9EE103E4 fcvtnu x4, h31
+
+// FCVTNU_64S_float2int sf=1|0|S=0|11110|ftype=00|1|rmode=00|opcode=001|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtnu64sFloat2int: FCVTNU  <Xd>, <Sn>
+// register fields: Rn, Rd
+9E210071 fcvtnu x17, s3
+9E21025E fcvtnu lr, s18
+9E2102B4 fcvtnu x20, s21
+9E21033C fcvtnu x28, s25
+9E2102EB fcvtnu x11, s23
+9E21034E fcvtnu x14, s26
+9E2102C9 fcvtnu x9, s22
+9E2102FE fcvtnu lr, s23
+9E2103EB fcvtnu x11, s31
+9E2100DB fcvtnu x27, s6
+9E21035B fcvtnu x27, s26
+9E210246 fcvtnu x6, s18
+9E21006A fcvtnu x10, s3
+9E2101F8 fcvtnu x24, s15
+9E2101BD fcvtnu fp, s13
+9E210227 fcvtnu x7, s17
+9E210000 fcvtnu x0, s0
+9E21007F fcvtnu xzr, s3

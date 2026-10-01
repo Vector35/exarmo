@@ -1,0 +1,35 @@
+// FCVTZS_sisd_32D sf=0|0|S=0|11110|ftype=01|1|rmode=10|opcode=110|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtzsSisd32d: FCVTZS  <Sd>, <Dn>
+// register fields: Rn, Rd
+1E760000 fcvtzs s0, d0
+1E760007 fcvtzs s7, d0
+1E76000E fcvtzs s14, d0
+1E7603FF fcvtzs s31, d31
+
+// FCVTZS_sisd_32H sf=0|0|S=0|11110|ftype=11|1|rmode=10|opcode=110|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtzsSisd32h: FCVTZS  <Sd>, <Hn>
+// register fields: Rn, Rd
+1EF60003 fcvtzs s3, h0
+1EF6000A fcvtzs s10, h0
+1EF60011 fcvtzs s17, h0
+1EF603E0 fcvtzs s0, h31
+1EF6001F fcvtzs s31, h0
+1EF60000 fcvtzs s0, h0
+
+// FCVTZS_sisd_64H sf=1|0|S=0|11110|ftype=11|1|rmode=10|opcode=110|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtzsSisd64h: FCVTZS  <Dd>, <Hn>
+// register fields: Rn, Rd
+9EF60001 fcvtzs d1, h0
+9EF60008 fcvtzs d8, h0
+9EF6000F fcvtzs d15, h0
+9EF603E0 fcvtzs d0, h31
+9EF6001F fcvtzs d31, h0
+9EF60000 fcvtzs d0, h0
+
+// FCVTZS_sisd_64S sf=1|0|S=0|11110|ftype=00|1|rmode=10|opcode=110|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtzsSisd64s: FCVTZS  <Dd>, <Sn>
+// register fields: Rn, Rd
+9E360000 fcvtzs d0, s0
+9E360007 fcvtzs d7, s0
+9E36000E fcvtzs d14, s0
+9E3603FF fcvtzs d31, s31

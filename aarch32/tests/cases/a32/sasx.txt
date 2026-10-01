@@ -1,0 +1,19 @@
+// SASX_A1 cond=xxxx|011|00|op1=001|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=01|1|Rm=xxxx
+// SasxA1: SASX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+d6178935 sasxle r8, r7, r5 (unpredictable)
+5617013a sasxpl r0, r7, r10 (unpredictable)
+0615143e sasxeq r1, r5, lr (unpredictable)
+06183933 sasxeq r3, r8, r3 (unpredictable)
+06143331 sasxeq r3, r4, r1 (unpredictable)
+a61ca03f sasxge r10, r12, pc (unpredictable)
+2616bd37 sasxhs r11, r6, r7 (unpredictable)
+c6192a3e sasxgt r2, r9, lr (unpredictable)
+// Binary Ninja's tests
+061c9f30 sasxeq r9, r12, r0
+e61c9f30 sasx r9, r12, r0
+F6178935 UNALLOCATED
+8610F835 sasxhi pc, r0, r5 (unpredictable)
+461F8235 sasxmi r8, pc, r5 (unpredictable)
+16177935 sasxne r7, r7, r5 (unpredictable)
+D6178937 sasxle r8, r7, r7 (unpredictable)

@@ -1,0 +1,27 @@
+// LDAPRH_32L_memop size=01|11|1|VR=0|0|0|A=1|R=0|1|Rs=(1)(1)(1)(1)(1)|o3=1|opc=100|00|Rn=xxxxx|Rt=xxxxx
+// Ldaprh32lMemop: LDAPRH  <Wt>, [<Xn|SP> {, #0}]
+// register fields: Rn, Rt
+78BFC253 ldaprh w19, [x18]
+78BFC230 ldaprh w16, [x17]
+78BFC1C1 ldaprh w1, [x14]
+78BFC182 ldaprh w2, [x12]
+78BFC3C0 ldaprh w0, [lr]
+78BFC0D4 ldaprh w20, [x6]
+78BFC228 ldaprh w8, [x17]
+78BFC047 ldaprh w7, [x2]
+78BFC0CE ldaprh w14, [x6]
+78BFC2A4 ldaprh w4, [x21]
+78BFC08D ldaprh w13, [x4]
+78BFC1F1 ldaprh w17, [x15]
+78BFC07E ldaprh w30, [x3]
+78BFC38A ldaprh w10, [x28]
+78BFC2D4 ldaprh w20, [x22]
+78BFC170 ldaprh w16, [x11]
+78A0C01F ldaprh wzr, [x0] (unpredictable)
+78BFC3F3 ldaprh w19, [sp]
+78BFC252 ldaprh w18, [x18]
+78B0C253 ldaprh w19, [x18] (unpredictable)
+78A8C253 ldaprh w19, [x18] (unpredictable)
+78A4C253 ldaprh w19, [x18] (unpredictable)
+78A2C253 ldaprh w19, [x18] (unpredictable)
+78A1C253 ldaprh w19, [x18] (unpredictable)

@@ -1,0 +1,13 @@
+// sqcvtun_z_mz4_ 1|10|0000|1|sz=x|op=1|1|100|11|111000|Zn=xxx|N=1|U=0|Zd=xxxxx
+// SqcvtunZMz4: SQCVTUN  <Zd>.<T>, { <Zn1>.<Tb>-<Zn4>.<Tb> }
+// register fields: Zn, Zd
+C173E043 sqcvtun z3.b, {z0.s-z3.s}
+C173E04A sqcvtun z10.b, {z0.s-z3.s}
+C173E051 sqcvtun z17.b, {z0.s-z3.s}
+C1F3E0C0 sqcvtun z0.h, {z4.d-z7.d}
+C173E15F sqcvtun z31.b, {z8.s-z11.s}
+C173E1C3 sqcvtun z3.b, {z12.s-z15.s}
+C173E243 sqcvtun z3.b, {z16.s-z19.s}
+C173E2C3 sqcvtun z3.b, {z20.s-z23.s}
+C173E343 sqcvtun z3.b, {z24.s-z27.s}
+C173E3C3 sqcvtun z3.b, {z28.s-z31.s}

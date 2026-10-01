@@ -1,0 +1,84 @@
+// LDRB_i_A1_off cond=xxxx|010|P=1|U=x|op2=1|W=0|op1=1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrbIA1Off: LDRB{<c>}{<q>}  <Rt>, [<Rn> {, #{<+/->}<imm>}]
+// register fields: Rn, Rt
+d5557c9f ldrble r7, [r5, #-3231]
+e5568ba0 ldrb r8, [r6, #-2976]
+2557bcc2 ldrbhs r11, [r7, #-3266]
+e5da957e ldrb r9, [r10, #1406]
+455d466f ldrbmi r4, [sp, #-1647]
+e55525fc ldrb r2, [r5, #-1532]
+155b862b ldrbne r8, [r11, #-1579]
+b554ef3f ldrblt lr, [r4, #-3903]
+// Binary Ninja's tests
+e5d83000 ldrb r3, [r8]
+e5dd103f ldrb r1, [sp, #63]
+05500FFF ldrbeq r0, [r0, #-0xfff]
+8555F800 ldrbhi pc, [r5, #-0x800] (unpredictable)
+D5555400 ldrble r5, [r5, #-0x400]
+D5557200 ldrble r7, [r5, #-0x200]
+D5557100 ldrble r7, [r5, #-0x100]
+D5557080 ldrble r7, [r5, #-0x80]
+D5557040 ldrble r7, [r5, #-0x40]
+D5557020 ldrble r7, [r5, #-0x20]
+D5557010 ldrble r7, [r5, #-0x10]
+D5557008 ldrble r7, [r5, #-0x8]
+D5557004 ldrble r7, [r5, #-0x4]
+D5557002 ldrble r7, [r5, #-0x2]
+D5557001 ldrble r7, [r5, #-0x1]
+
+// LDRB_i_A1_post cond=xxxx|010|P=0|U=x|op2=1|W=0|op1=1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrbIA1Post: LDRB{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// register fields: Rn, Rt
+74db9e5c ldrbvc r9, [r11], #3676
+8458f7fb ldrbhi pc, [r8], #-2043 (unpredictable)
+e4578a79 ldrb r8, [r7], #-2681
+24d21451 ldrbhs r1, [r2], #1105
+9453aad2 ldrbls r10, [r3], #-2770
+04d4f132 ldrbeq pc, [r4], #306 (unpredictable)
+b4dbf717 ldrblt pc, [r11], #1815 (unpredictable)
+84d2044e ldrbhi r0, [r2], #1102
+// Binary Ninja's tests
+e4572013 ldrb r2, [r7], #-19
+e4d18016 ldrb r8, [r1], #22
+44D09000 ldrbmi r9, [r0], #0x0
+14DBBFFF ldrbne r11, [r11], #0xfff (unpredictable)
+74DB9800 ldrbvc r9, [r11], #0x800
+74DB9400 ldrbvc r9, [r11], #0x400
+74DB9200 ldrbvc r9, [r11], #0x200
+74DB9100 ldrbvc r9, [r11], #0x100
+74DB9080 ldrbvc r9, [r11], #0x80
+74DB9040 ldrbvc r9, [r11], #0x40
+74DB9020 ldrbvc r9, [r11], #0x20
+74DB9010 ldrbvc r9, [r11], #0x10
+74DB9008 ldrbvc r9, [r11], #0x8
+74DB9004 ldrbvc r9, [r11], #0x4
+74DB9002 ldrbvc r9, [r11], #0x2
+74DB9001 ldrbvc r9, [r11], #0x1
+
+// LDRB_i_A1_pre cond=xxxx|010|P=1|U=x|op2=1|W=1|op1=1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrbIA1Pre: LDRB{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn, Rt
+a572c6b5 ldrbge r12, [r2, #-1717]!
+957ab844 ldrbls r11, [r10, #-2116]!
+25fcc84e ldrbhs r12, [r12, #2126]! (unpredictable)
+a57e6f8c ldrbge r6, [lr, #-3980]!
+557b6290 ldrbpl r6, [r11, #-656]!
+a57e4ada ldrbge r4, [lr, #-2778]!
+0577009e ldrbeq r0, [r7, #-158]!
+25736a98 ldrbhs r6, [r3, #-2712]!
+// Binary Ninja's tests
+e5f39fff ldrb r9, [r3, #4095]!
+F57FC6B5 UNALLOCATED
+8570F000 ldrbhi pc, [r0, #-0x0]! (unpredictable)
+4572C800 ldrbmi r12, [r2, #-0x800]!
+1572C400 ldrbne r12, [r2, #-0x400]!
+A572C200 ldrbge r12, [r2, #-0x200]!
+A572C100 ldrbge r12, [r2, #-0x100]!
+A572C080 ldrbge r12, [r2, #-0x80]!
+A572C040 ldrbge r12, [r2, #-0x40]!
+A572C020 ldrbge r12, [r2, #-0x20]!
+A572C010 ldrbge r12, [r2, #-0x10]!
+A572C008 ldrbge r12, [r2, #-0x8]!
+A572C004 ldrbge r12, [r2, #-0x4]!
+A572C002 ldrbge r12, [r2, #-0x2]!
+A572C001 ldrbge r12, [r2, #-0x1]!

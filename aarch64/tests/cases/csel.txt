@@ -1,0 +1,48 @@
+// CSEL_32_condsel sf=0|op=0|S=0|11010100|Rm=xxxxx|cond=xxxx|0|o2=0|Rn=xxxxx|Rd=xxxxx
+// Csel32Condsel: CSEL  <Wd>, <Wn>, <Wm>, <cond>
+// register fields: Rm, Rn, Rd
+1A876370 csel w16, w27, w7, vs
+1A8E2057 csel w23, w2, w14, cs
+1A9BA330 csel w16, w25, w27, ge
+1A8691DE csel w30, w14, w6, ls
+1A9E03D6 csel w22, w30, w30, eq
+1A94A315 csel w21, w24, w20, ge
+1A8F4269 csel w9, w19, w15, mi
+1A9690CE csel w14, w6, w22, ls
+1A85F18B csel w11, w12, w5, nv
+1A97E323 csel w3, w25, w23, al
+1A86331F csel wzr, w24, w6, cc
+1A9950A2 csel w2, w5, w25, pl
+1A8CD039 csel w25, w1, w12, le
+1A95F1C3 csel w3, w14, w21, nv
+1A91B090 csel w16, w4, w17, lt
+1A960139 csel w25, w9, w22, eq
+1A806000 csel w0, w0, w0, vs
+1A9F63F0 csel w16, wzr, wzr, vs
+1A878370 csel w16, w27, w7, hi
+1A871370 csel w16, w27, w7, ne
+
+// CSEL_64_condsel sf=1|op=0|S=0|11010100|Rm=xxxxx|cond=xxxx|0|o2=0|Rn=xxxxx|Rd=xxxxx
+// Csel64Condsel: CSEL  <Xd>, <Xn>, <Xm>, <cond>
+// register fields: Rm, Rn, Rd
+9A95C0C0 csel x0, x6, x21, gt
+9A8793D3 csel x19, lr, x7, ls
+9A80524B csel x11, x18, x0, pl
+9A805389 csel x9, x28, x0, pl
+9A8142BB csel x27, x21, x1, mi
+9A8100E1 csel x1, x7, x1, eq
+9A9DE0DF csel xzr, x6, fp, al
+9A854044 csel x4, x2, x5, mi
+9A906130 csel x16, x9, x16, vs
+9A937128 csel x8, x9, x19, vc
+9A8A41AF csel x15, x13, x10, mi
+9A9F90FA csel x26, x7, xzr, ls
+9A89C075 csel x21, x3, x9, gt
+9A9A0265 csel x5, x19, x26, eq
+9A8783C5 csel x5, lr, x7, hi
+9A878183 csel x3, x12, x7, hi
+9A95F000 csel x0, x0, x21, nv
+9A95C3E0 csel x0, xzr, x21, gt
+9A95C2A0 csel x0, x21, x21, gt
+9A9520C0 csel x0, x6, x21, cs
+9A9510C0 csel x0, x6, x21, ne

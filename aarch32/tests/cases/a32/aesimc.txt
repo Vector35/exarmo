@@ -1,0 +1,15 @@
+// AESIMC_A1 1111|0|01|1|1|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=0111|Q=1|M=x|0|Vm=xxxx
+// AesimcA1: AESIMC.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f0e3c0 aesimc.8 q15, q0
+F3B003E8 aesimc.8 q0, q12
+F3F4F3CF UNDEFINED
+F3F813C1 UNDEFINED
+F3BCF3CF UNDEFINED
+F3F083C4 aesimc.8 q12, q2
+F3F043C2 aesimc.8 q10, q1
+F3F023E0 aesimc.8 q9, q8
+F3B003C0 aesimc.8 q0, q0
+F3F003C0 aesimc.8 q8, q0
+F3F0F3EF UNDEFINED

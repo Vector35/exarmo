@@ -1,0 +1,173 @@
+// VLD3_1_T1_nowb 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=00|N=10|index_align=xxxx|Rm=1111
+// Vld31T1Nowb: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>]
+// register fields: Rn
+// IT state read: condition
+f9afd22f vld3.8 {d13[1], d14[1], d15[1]}, [pc] (unpredictable)
+f9e532cf vld3.8 {d19[6], d20[6], d21[6]}, [r5]
+f9e3b2cf vld3.8 {d27[6], d28[6], d29[6]}, [r3]
+f9e4c28f vld3.8 {d28[4], d29[4], d30[4]}, [r4]
+f9af526f vld3.8 {d5[3], d6[3], d7[3]}, [pc] (unpredictable)
+f9ee722f vld3.8 {d23[1], d24[1], d25[1]}, [lr]
+f9ef626f vld3.8 {d22[3], d23[3], d24[3]}, [pc] (unpredictable)
+F9A0020F vld3.8 {d0[0], d1[0], d2[0]}, [r0]
+F9AFF24F vld3.8 {d15[2], d16[2], d17[2]}, [pc] (unpredictable)
+F9AF822F vld3.8 {d8[1], d9[1], d10[1]}, [pc] (unpredictable)
+F9AF422F vld3.8 {d4[1], d5[1], d6[1]}, [pc] (unpredictable)
+F9AF222F vld3.8 {d2[1], d3[1], d4[1]}, [pc] (unpredictable)
+F9AF122F vld3.8 {d1[1], d2[1], d3[1]}, [pc] (unpredictable)
+F9AFD2FF UNDEFINED
+F9AFD21F UNDEFINED
+F9AFD22F [ne] vld3ne.8 {d13[1], d14[1], d15[1]}, [pc] (unpredictable)
+
+// VLD3_1_T1_posti 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=00|N=10|index_align=xxxx|Rm=1101
+// Vld31T1Posti: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>]!
+// register fields: Rn
+// IT state read: condition
+f9a2a24d vld3.8 {d10[2], d11[2], d12[2]}, [r2]!
+f9a812ed vld3.8 {d1[7], d2[7], d3[7]}, [r8]!
+f9ed122d vld3.8 {d17[1], d18[1], d19[1]}, [sp]!
+f9e812cd vld3.8 {d17[6], d18[6], d19[6]}, [r8]!
+f9a0624d vld3.8 {d6[2], d7[2], d8[2]}, [r0]!
+f9a1c2cd vld3.8 {d12[6], d13[6], d14[6]}, [r1]!
+F9AF020D vld3.8 {d0[0], d1[0], d2[0]}, [pc]! (unpredictable)
+F9A2F28D vld3.8 {d15[4], d16[4], d17[4]}, [r2]!
+F9A2824D vld3.8 {d8[2], d9[2], d10[2]}, [r2]!
+F9A2424D vld3.8 {d4[2], d5[2], d6[2]}, [r2]!
+F9A2224D vld3.8 {d2[2], d3[2], d4[2]}, [r2]!
+F9A2A2FD UNDEFINED
+F9A2A21D UNDEFINED
+F9A2A24D [ne] vld3ne.8 {d10[2], d11[2], d12[2]}, [r2]!
+
+// VLD3_1_T1_postr 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=00|N=10|index_align=xxxx|Rm=xxxx
+// Vld31T1Postr: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f9a5f207 vld3.8 {d15[0], d16[0], d17[0]}, [r5], r7
+f9ee628a vld3.8 {d22[4], d23[4], d24[4]}, [lr], r10
+f9ec4247 vld3.8 {d20[2], d21[2], d22[2]}, [r12], r7
+f9a4c2ee vld3.8 {d12[7], d13[7], d14[7]}, [r4], lr
+f9e232c9 vld3.8 {d19[6], d20[6], d21[6]}, [r2], r9
+f9e542a4 vld3.8 {d20[5], d21[5], d22[5]}, [r5], r4
+f9aa5244 vld3.8 {d5[2], d6[2], d7[2]}, [r10], r4
+F9A00220 vld3.8 {d0[1], d1[1], d2[1]}, [r0], r0
+F9AF8207 vld3.8 {d8[0], d9[0], d10[0]}, [pc], r7 (unpredictable)
+F9A52205 vld3.8 {d2[0], d3[0], d4[0]}, [r5], r5
+F9A51207 vld3.8 {d1[0], d2[0], d3[0]}, [r5], r7
+F9A5F2FF UNDEFINED
+F9A5F217 UNDEFINED
+F9A5F207 [ne] vld3ne.8 {d15[0], d16[0], d17[0]}, [r5], r7
+
+// VLD3_1_T2_nowb 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=01|N=10|index_align=xxxx|Rm=1111
+// Vld31T2Nowb: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>]
+// register fields: Rn
+// IT state read: condition
+f9ace68f vld3.16 {d14[2], d15[2], d16[2]}, [r12]
+f9e226cf vld3.16 {d18[3], d19[3], d20[3]}, [r2]
+f9ed466f vld3.16 {d20[1], d22[1], d24[1]}, [sp]
+f9e256ef vld3.16 {d21[3], d23[3], d25[3]}, [r2]
+f9eb36ef vld3.16 {d19[3], d21[3], d23[3]}, [r11]
+f9e606ef vld3.16 {d16[3], d18[3], d20[3]}, [r6]
+f9a9c64f vld3.16 {d12[1], d13[1], d14[1]}, [r9]
+F9A0F60F vld3.16 {d15[0], d16[0], d17[0]}, [r0]
+F9AF862F vld3.16 {d8[0], d10[0], d12[0]}, [pc] (unpredictable)
+F9AC168F vld3.16 {d1[2], d2[2], d3[2]}, [r12]
+F9ACE6FF UNDEFINED
+F9ACE61F UNDEFINED
+F9ACE68F [ne] vld3ne.16 {d14[2], d15[2], d16[2]}, [r12]
+
+// VLD3_1_T2_posti 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=01|N=10|index_align=xxxx|Rm=1101
+// Vld31T2Posti: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>]!
+// register fields: Rn
+// IT state read: condition
+f9e8360d vld3.16 {d19[0], d20[0], d21[0]}, [r8]!
+f9eb068d vld3.16 {d16[2], d17[2], d18[2]}, [r11]!
+f9e236ed vld3.16 {d19[3], d21[3], d23[3]}, [r2]!
+f9eeb60d vld3.16 {d27[0], d28[0], d29[0]}, [lr]!
+f9e6a62d vld3.16 {d26[0], d28[0], d30[0]}, [r6]!
+f9a8564d vld3.16 {d5[1], d6[1], d7[1]}, [r8]!
+f9a146ed vld3.16 {d4[3], d6[3], d8[3]}, [r1]!
+f9e626cd vld3.16 {d18[3], d19[3], d20[3]}, [r6]!
+F9E0F60D UNPREDICTABLE
+F9EF860D vld3.16 {d24[0], d25[0], d26[0]}, [pc]! (unpredictable)
+F9E8160D vld3.16 {d17[0], d18[0], d19[0]}, [r8]!
+F9E836FD UNDEFINED
+F9E8361D UNDEFINED
+F9E8360D [ne] vld3ne.16 {d19[0], d20[0], d21[0]}, [r8]!
+F9E0360D vld3.16 {d19[0], d20[0], d21[0]}, [r0]!
+F9A8F64D vld3.16 {d15[1], d16[1], d17[1]}, [r8]!
+
+// VLD3_1_T2_postr 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=01|N=10|index_align=xxxx|Rm=xxxx
+// Vld31T2Postr: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f9a24666 vld3.16 {d4[1], d6[1], d8[1]}, [r2], r6
+f9ac9609 vld3.16 {d9[0], d10[0], d11[0]}, [r12], r9
+f9a7e649 vld3.16 {d14[1], d15[1], d16[1]}, [r7], r9
+f9a28680 vld3.16 {d8[2], d9[2], d10[2]}, [r2], r0
+f9e0a60b vld3.16 {d26[0], d27[0], d28[0]}, [r0], r11
+f9ef666a vld3.16 {d22[1], d24[1], d26[1]}, [pc], r10 (unpredictable)
+f9e5266a vld3.16 {d18[1], d20[1], d22[1]}, [r5], r10
+F9A20622 vld3.16 {d0[0], d2[0], d4[0]}, [r2], r2
+F9A2F666 vld3.16 {d15[1], d17[1], d19[1]}, [r2], r6
+F9A21666 vld3.16 {d1[1], d3[1], d5[1]}, [r2], r6
+F9A246FF UNDEFINED
+F9A24616 UNDEFINED
+F9A24666 [ne] vld3ne.16 {d4[1], d6[1], d8[1]}, [r2], r6
+
+// VLD3_1_T3_nowb 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=10|N=10|index_align=xxxx|Rm=1111
+// Vld31T3Nowb: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>]
+// register fields: Rn
+// IT state read: condition
+f9a68a4f vld3.32 {d8[0], d10[0], d12[0]}, [r6]
+f9a6fa8f vld3.32 {d15[1], d16[1], d17[1]}, [r6]
+f9a49a4f vld3.32 {d9[0], d11[0], d13[0]}, [r4]
+f9e45a8f vld3.32 {d21[1], d22[1], d23[1]}, [r4]
+f9a24a8f vld3.32 {d4[1], d5[1], d6[1]}, [r2]
+f9a67acf vld3.32 {d7[1], d9[1], d11[1]}, [r6]
+F9A00A0F vld3.32 {d0[0], d1[0], d2[0]}, [r0]
+F9AF2A4F vld3.32 {d2[0], d4[0], d6[0]}, [pc] (unpredictable)
+F9A61A4F vld3.32 {d1[0], d3[0], d5[0]}, [r6]
+F9A68AFF UNDEFINED
+F9A68A2F UNDEFINED
+F9A68A1F UNDEFINED
+F9A68A4F [ne] vld3ne.32 {d8[0], d10[0], d12[0]}, [r6]
+
+// VLD3_1_T3_posti 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=10|N=10|index_align=xxxx|Rm=1101
+// Vld31T3Posti: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>]!
+// register fields: Rn
+// IT state read: condition
+f9ab6a8d vld3.32 {d6[1], d7[1], d8[1]}, [r11]!
+f9ad8a4d vld3.32 {d8[0], d10[0], d12[0]}, [sp]!
+f9e08a0d vld3.32 {d24[0], d25[0], d26[0]}, [r0]!
+f9a8ba4d vld3.32 {d11[0], d13[0], d15[0]}, [r8]!
+f9e8ba8d vld3.32 {d27[1], d28[1], d29[1]}, [r8]!
+f9ad5a8d vld3.32 {d5[1], d6[1], d7[1]}, [sp]!
+f9a2ea8d vld3.32 {d14[1], d15[1], d16[1]}, [r2]!
+f9aefacd vld3.32 {d15[1], d17[1], d19[1]}, [lr]!
+F9AF0A8D vld3.32 {d0[1], d1[1], d2[1]}, [pc]! (unpredictable)
+F9AB4A8D vld3.32 {d4[1], d5[1], d6[1]}, [r11]!
+F9AB2A8D vld3.32 {d2[1], d3[1], d4[1]}, [r11]!
+F9AB1A8D vld3.32 {d1[1], d2[1], d3[1]}, [r11]!
+F9AB6AFD UNDEFINED
+F9AB6A2D UNDEFINED
+F9AB6A1D UNDEFINED
+F9AB6A8D [ne] vld3ne.32 {d6[1], d7[1], d8[1]}, [r11]!
+
+// VLD3_1_T3_postr 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=10|N=10|index_align=xxxx|Rm=xxxx
+// Vld31T3Postr: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f9a2da0e vld3.32 {d13[0], d14[0], d15[0]}, [r2], lr
+f9ac4a88 vld3.32 {d4[1], d5[1], d6[1]}, [r12], r8
+f9e98a07 vld3.32 {d24[0], d25[0], d26[0]}, [r9], r7
+f9ac6a4a vld3.32 {d6[0], d8[0], d10[0]}, [r12], r10
+f9abda84 vld3.32 {d13[1], d14[1], d15[1]}, [r11], r4
+f9e2aac9 vld3.32 {d26[1], d28[1], d30[1]}, [r2], r9
+f9a61a04 vld3.32 {d1[0], d2[0], d3[0]}, [r6], r4
+F9A00A00 vld3.32 {d0[0], d1[0], d2[0]}, [r0], r0
+F9AFFA0E vld3.32 {d15[0], d16[0], d17[0]}, [pc], lr (unpredictable)
+F9A22A02 vld3.32 {d2[0], d3[0], d4[0]}, [r2], r2
+F9A2DAFF UNDEFINED
+F9A2DA2E UNDEFINED
+F9A2DA1E UNDEFINED
+F9A2DA0E [ne] vld3ne.32 {d13[0], d14[0], d15[0]}, [r2], lr

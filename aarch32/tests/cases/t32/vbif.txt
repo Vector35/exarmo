@@ -1,0 +1,47 @@
+// VBIF_T1_D 111|U=1|11110|D=x|op=11|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VbifT1D: VBIF{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff3d6139 vbif d6, d13, d25
+ff7dc1b5 vbif d28, d29, d21
+ff7b51b0 vbif d21, d27, d16
+ff7fa137 vbif d26, d15, d23
+ff32c198 vbif d12, d18, d8
+ff7631bb vbif d19, d22, d27
+ff745196 vbif d21, d20, d6
+ff7b51b3 vbif d21, d27, d19
+FF30013F vbif d0, d0, d31
+FF38F134 vbif d15, d8, d20
+FF318132 vbif d8, d1, d18
+FF304131 vbif d4, d0, d17
+FF302190 vbif d2, d16, d0
+FF3F119F vbif d1, d31, d15
+FF3D013F vbif d0, d13, d31
+FF3DF139 vbif d15, d13, d25
+FF7D0139 vbif d16, d13, d25
+FF7DF139 vbif d31, d13, d25
+FF3D6139 [ne] vbifne d6, d13, d25
+
+// VBIF_T1_Q 111|U=1|11110|D=x|op=11|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VbifT1Q: VBIF{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff7641fc vbif q10, q11, q14
+ff3ec1fc vbif q6, q15, q14
+ff38e1f0 vbif q7, q12, q8
+ff7aa17e vbif q13, q5, q15
+ff7001f6 vbif q8, q8, q11
+ff7ec15c vbif q14, q7, q6
+ff3861d2 vbif q3, q12, q1
+ff3c0170 vbif q0, q6, q8
+FF7FF1FF UNDEFINED
+FF7481F8 vbif q12, q10, q12
+FF7221F4 vbif q9, q9, q10
+FF7111F1 UNDEFINED
+FF3FF15F UNDEFINED
+FF704150 vbif q10, q0, q0
+FF7641FC [ne] vbifne q10, q11, q14

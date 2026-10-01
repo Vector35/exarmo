@@ -1,0 +1,43 @@
+// PACDB_64P_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=0|011|Rn=xxxxx|Rd=xxxxx
+// Pacdb64pDp1src: PACDB  <Xd>, <Xn|SP>
+// register fields: Rn, Rd
+DAC10F47 pacdb x7, x26
+DAC10E90 pacdb x16, x20
+DAC10E5D pacdb fp, x18
+DAC10D13 pacdb x19, x8
+DAC10CD3 pacdb x19, x6
+DAC10F6B pacdb x11, x27
+DAC10F4B pacdb x11, x26
+DAC10C15 pacdb x21, x0
+DAC10CC5 pacdb x5, x6
+DAC10D18 pacdb x24, x8
+DAC10FDD pacdb fp, lr
+DAC10F23 pacdb x3, x25
+DAC10FC2 pacdb x2, lr
+DAC10D8C pacdb x12, x12
+DAC10DDE pacdb lr, x14
+DAC10E34 pacdb x20, x17
+DAC10FE0 pacdb x0, sp
+DAC10F5F pacdb xzr, x26
+
+// PACDZB_64Z_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=1|011|Rn=11111|Rd=xxxxx
+// Pacdzb64zDp1src: PACDZB  <Xd>
+// register fields: Rd
+DAC12FEE pacdzb x14
+DAC12FED pacdzb x13
+DAC12FF0 pacdzb x16
+DAC12FE4 pacdzb x4
+DAC12FE3 pacdzb x3
+DAC12FF3 pacdzb x19
+DAC12FE6 pacdzb x6
+DAC12FFC pacdzb x28
+DAC12FE5 pacdzb x5
+DAC12FEB pacdzb x11
+DAC12FEC pacdzb x12
+DAC12FE7 pacdzb x7
+DAC12FF5 pacdzb x21
+DAC12FFB pacdzb x27
+DAC12FEA pacdzb x10
+DAC12FEF pacdzb x15
+DAC12FE0 pacdzb x0
+DAC12FFF pacdzb xzr

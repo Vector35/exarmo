@@ -1,0 +1,41 @@
+// ADC_rr_A1 cond=xxxx|0000|opc=101|S=0|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// AdcRrA1: ADC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+10abdd3a adcne sp, r11, r10, lsr sp
+b0ab2251 adclt r2, r11, r1, asr r2
+a0a0ed54 adcge lr, r0, r4, asr sp
+80a0a070 adchi r10, r0, r0, ror r0
+60a73252 adcvs r3, r7, r2, asr r2
+c0a9025f adcgt r0, r9, pc, asr r2 (unpredictable)
+20a50d3f adchs r0, r5, pc, lsr sp (unpredictable)
+b0aa8d1c adclt r8, r10, r12, lsl sp
+// Binary Ninja's tests
+e0a66917 adc r6, r6, r7, lsl r9
+e0a66937 adc r6, r6, r7, lsr r9
+e0a66957 adc r6, r6, r7, asr r9
+e0a66977 adc r6, r6, r7, ror r9
+e0a76918 adc r6, r7, r8, lsl r9
+e0a76938 adc r6, r7, r8, lsr r9
+e0a76958 adc r6, r7, r8, asr r9
+e0a76978 adc r6, r7, r8, ror r9
+00AFFF3A adceq pc, pc, r10, lsr pc (unpredictable)
+F0ABDD3A UNALLOCATED
+40ABDD3D adcmi sp, r11, sp, lsr sp
+
+// ADCS_rr_A1 cond=xxxx|0000|opc=101|S=1|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// AdcsRrA1: ADCS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+a0b7ed7b adcsge lr, r7, r11, ror sp
+10b1d159 adcsne sp, r1, r9, asr r1
+40bad617 adcsmi sp, r10, r7, lsl r6
+d0bf067e adcsle r0, pc, lr, ror r6 (unpredictable)
+40b00312 adcsmi r0, r0, r2, lsl r3
+a0b2917a adcsge r9, r2, r10, ror r1
+00b59e3b adcseq r9, r5, r11, lsr lr
+30bc9b3e adcslo r9, r12, lr, lsr r11
+F0B7ED7B UNALLOCATED
+80B7F070 adcshi pc, r7, r0, ror r0 (unpredictable)
+20B7EF7F adcscs lr, r7, pc, ror pc (unpredictable)
+A0B7EE77 adcsge lr, r7, r7, ror lr
+A0B7ED7E adcsge lr, r7, lr, ror sp
+A0B7ED7D adcsge lr, r7, sp, ror sp

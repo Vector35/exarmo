@@ -1,0 +1,21 @@
+// PLI_r_A1 1111011|D=0|U=x|o2=1|01|Rn=xxxx|(1)(1)(1)(1)|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// PliRA1: PLI{<c>}{<q>}  [<Rn>, {<+/->}<Rm> {, <shift> #<amount>}]
+// register fields: Rn, Rm
+F6500000 pli [r0, -r0] (unpredictable)
+F6DFFFAF pli [pc, pc, lsr #0x1f] (unpredictable)
+F6508840 pli [r0, -r0, asr #0x10] (unpredictable)
+F6504460 pli [r0, -r0, ror #0x8] (unpredictable)
+F6502200 pli [r0, -r0, lsl #0x4] (unpredictable)
+F6501100 pli [r0, -r0, lsl #0x2] (unpredictable)
+F6500080 pli [r0, -r0, lsl #0x1] (unpredictable)
+F651F002 pli [r1, -r2]
+
+// PLI_r_A1_RRX 1111011|D=0|U=x|o2=1|01|Rn=xxxx|(1)(1)(1)(1)|imm5=00000|stype=11|0|Rm=xxxx
+// PliRA1Rrx: PLI{<c>}{<q>}  [<Rn>, {<+/->}<Rm> , RRX]
+// register fields: Rn, Rm
+f65ef065 pli [lr, -r5, rrx]
+F6D00060 pli [r0, r0, rrx] (unpredictable)
+F65F806F pli [pc, -pc, rrx] (unpredictable)
+F65E406E pli [lr, -lr, rrx] (unpredictable)
+F65E2065 pli [lr, -r5, rrx] (unpredictable)
+F65E1065 pli [lr, -r5, rrx] (unpredictable)

@@ -1,0 +1,35 @@
+// SMAX_32_minmax_imm sf=0|op=0|S=0|1000111|opc=0000|imm8=xxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Smax32MinmaxImm: SMAX  <Wd>, <Wn>, #<simm>
+// register fields: Rn, Rd
+11C00005 smax w5, w0, #0x0
+11C0000C smax w12, w0, #0x0
+11C00013 smax w19, w0, #0x0
+11C3FFE0 smax w0, wzr, #-0x1
+11C0001F smax wzr, w0, #0x0
+11C00000 smax w0, w0, #0x0
+11C20005 smax w5, w0, #-0x80
+11C10005 smax w5, w0, #0x40
+11C08005 smax w5, w0, #0x20
+11C04005 smax w5, w0, #0x10
+11C02005 smax w5, w0, #0x8
+11C01005 smax w5, w0, #0x4
+11C00805 smax w5, w0, #0x2
+11C00405 smax w5, w0, #0x1
+
+// SMAX_64_minmax_imm sf=1|op=0|S=0|1000111|opc=0000|imm8=xxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Smax64MinmaxImm: SMAX  <Xd>, <Xn>, #<simm>
+// register fields: Rn, Rd
+91C00003 smax x3, x0, #0x0
+91C0000A smax x10, x0, #0x0
+91C00011 smax x17, x0, #0x0
+91C3FFE0 smax x0, xzr, #-0x1
+91C0001F smax xzr, x0, #0x0
+91C00000 smax x0, x0, #0x0
+91C20003 smax x3, x0, #-0x80
+91C10003 smax x3, x0, #0x40
+91C08003 smax x3, x0, #0x20
+91C04003 smax x3, x0, #0x10
+91C02003 smax x3, x0, #0x8
+91C01003 smax x3, x0, #0x4
+91C00803 smax x3, x0, #0x2
+91C00403 smax x3, x0, #0x1

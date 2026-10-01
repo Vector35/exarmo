@@ -1,0 +1,56 @@
+// fcpy_z_p_i_ 000|0010|1|size=xx|01|Pg=xxxx|110|imm8=xxxxxxxx|Zd=xxxxx
+// FcpyZPI: FCPY  <Zd>.<T>, <Pg>/M, #<const>
+// FmovZPIFcpyZPI: FMOV  <Zd>.<T>, <Pg>/M, #<const>
+// register fields: Pg, Zd
+// floating-point immediate <const>: imm8
+05D0CDDB fmov z27.d, p0/m, #0.9375
+0594DA2F fmov z15.s, p4/m, #-0.265625
+05D2C535 fmov z21.d, p2/m, #12.5
+0599C0CF fmov z15.s, p9/m, #2.75
+0598C462 fmov z2.s, p8/m, #9.5
+0597D2FE fmov z30.s, p7/m, #-5.75
+0557D486 fmov z6.h, p7/m, #-10.0
+0558D05D fmov z29.h, p8/m, #-2.25
+05D5CD6D fmov z13.d, p5/m, #0.84375
+0595C2A8 fmov z8.s, p5/m, #5.25
+05DCCE0E fmov z14.d, p12/m, #1.0
+05D3C6A8 fmov z8.d, p3/m, #21.0
+055FD5FA fmov z26.h, p15/m, #-15.5
+05D3DCB3 fmov z19.d, p3/m, #-0.65625
+0596D46B fmov z11.s, p6/m, #-9.5
+05D7CE7A fmov z26.d, p7/m, #1.1875
+05D0C000 fmov z0.d, p0/m, #2.0
+05D0DFFF fmov z31.d, p0/m, #-1.9375
+0510CDDB UNDEFINED
+05D0D01B fmov z27.d, p0/m, #-2.0
+05D0C81B fmov z27.d, p0/m, #0.125
+05D0C41B fmov z27.d, p0/m, #8.0
+05D0C21B fmov z27.d, p0/m, #4.0
+05D0C11B fmov z27.d, p0/m, #3.0
+05D0C09B fmov z27.d, p0/m, #2.5
+05D0C05B fmov z27.d, p0/m, #2.25
+05D0C03B fmov z27.d, p0/m, #2.125
+05D0C1FB fmov z27.d, p0/m, #3.875
+05D0C3FB fmov z27.d, p0/m, #7.75
+05D0C5FB fmov z27.d, p0/m, #15.5
+05D0C61B fmov z27.d, p0/m, #16.0
+05D0C7FB fmov z27.d, p0/m, #31.0
+05D0C9FB fmov z27.d, p0/m, #0.2421875
+05D0CA1B fmov z27.d, p0/m, #0.25
+05D0CBFB fmov z27.d, p0/m, #0.484375
+05D0CC1B fmov z27.d, p0/m, #0.5
+05D0CDFB fmov z27.d, p0/m, #0.96875
+05D0CFFB fmov z27.d, p0/m, #1.9375
+05D0D1FB fmov z27.d, p0/m, #-3.875
+05D0D21B fmov z27.d, p0/m, #-4.0
+05D0D3FB fmov z27.d, p0/m, #-7.75
+05D0D41B fmov z27.d, p0/m, #-8.0
+05D0D61B fmov z27.d, p0/m, #-16.0
+05D0D7FB fmov z27.d, p0/m, #-31.0
+05D0D81B fmov z27.d, p0/m, #-0.125
+05D0D9FB fmov z27.d, p0/m, #-0.2421875
+05D0DA1B fmov z27.d, p0/m, #-0.25
+05D0DBFB fmov z27.d, p0/m, #-0.484375
+05D0DC1B fmov z27.d, p0/m, #-0.5
+05D0DDFB fmov z27.d, p0/m, #-0.96875
+05D0DE1B fmov z27.d, p0/m, #-1.0

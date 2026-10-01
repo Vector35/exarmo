@@ -1,0 +1,43 @@
+// sqdecp_r_p_r_sx 001|0010|1|size=xx|101|0|D=1|U=0|1000|1|sf=0|op=0|Pm=xxxx|Rdn=xxxxx
+// SqdecpRPRSx: SQDECP  <Xdn>, <Pm>.<T>, <Wdn>
+// register fields: Pm, Rdn
+256A88D5 sqdecp x21, p6.h, w21
+25EA888B sqdecp x11, p4.d, w11
+25AA8954 sqdecp x20, p10.s, w20
+25EA8839 sqdecp x25, p1.d, w25
+252A89B0 sqdecp x16, p13.b, w16
+25AA895D sqdecp fp, p10.s, w29
+25AA883A sqdecp x26, p1.s, w26
+25AA8909 sqdecp x9, p8.s, w9
+25AA89BE sqdecp lr, p13.s, w30
+25AA89DD sqdecp fp, p14.s, w29
+256A8849 sqdecp x9, p2.h, w9
+25AA88C1 sqdecp x1, p6.s, w1
+25AA887A sqdecp x26, p3.s, w26
+252A8917 sqdecp x23, p8.b, w23
+256A8944 sqdecp x4, p10.h, w4
+25AA8892 sqdecp x18, p4.s, w18
+256A8800 sqdecp x0, p0.h, w0
+256A89FF sqdecp xzr, p15.h, wzr
+
+// sqdecp_r_p_r_x 001|0010|1|size=xx|101|0|D=1|U=0|1000|1|sf=1|op=0|Pm=xxxx|Rdn=xxxxx
+// SqdecpRPRX: SQDECP  <Xdn>, <Pm>.<T>
+// register fields: Pm, Rdn
+25AA8D57 sqdecp x23, p10.s
+25AA8D10 sqdecp x16, p8.s
+25AA8DA8 sqdecp x8, p13.s
+256A8D69 sqdecp x9, p11.h
+25EA8DFD sqdecp fp, p15.d
+252A8D1D sqdecp fp, p8.b
+256A8DAE sqdecp x14, p13.h
+256A8D6E sqdecp x14, p11.h
+25AA8D31 sqdecp x17, p9.s
+25EA8C6F sqdecp x15, p3.d
+25AA8C2F sqdecp x15, p1.s
+25EA8DE0 sqdecp x0, p15.d
+256A8C04 sqdecp x4, p0.h
+25AA8C25 sqdecp x5, p1.s
+252A8DAB sqdecp x11, p13.b
+25EA8C43 sqdecp x3, p2.d
+25AA8D5F sqdecp xzr, p10.s
+25AA8D4A sqdecp x10, p10.s

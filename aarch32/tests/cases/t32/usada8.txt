@@ -1,0 +1,8 @@
+// USADA8_T1 111|110110|op1=111|Rn=xxxx|Ra=xxxx|Rd=xxxx|00|op2=00|Rm=xxxx
+// Usada8T1: USADA8{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+FB700000 usada8 r0, r0, r0, r0
+FB7F0F0F usada8 pc, pc, pc, r0 (unpredictable)
+FB700000 [ne] usada8ne r0, r0, r0, r0
+FB712304 usada8 r3, r1, r4, r2

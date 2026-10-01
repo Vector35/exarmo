@@ -1,0 +1,23 @@
+// uqadd_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|000|10|U=1|Zn=xxxxx|Zd=xxxxx
+// UqaddZZz: UQADD  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+04F41611 uqadd z17.d, z16.d, z20.d
+0430146A uqadd z10.b, z3.b, z16.b
+04B81746 uqadd z6.s, z26.s, z24.s
+0478145A uqadd z26.h, z2.h, z24.h
+04AA1785 uqadd z5.s, z28.s, z10.s
+04F417A4 uqadd z4.d, z29.d, z20.d
+0434149D uqadd z29.b, z4.b, z20.b
+046D15D6 uqadd z22.h, z14.h, z13.h
+046F170A uqadd z10.h, z24.h, z15.h
+046F1429 uqadd z9.h, z1.h, z15.h
+04BF1509 uqadd z9.s, z8.s, z31.s
+04B416CD uqadd z13.s, z22.s, z20.s
+042716EB uqadd z11.b, z23.b, z7.b
+04611435 uqadd z21.h, z1.h, z1.h
+04BB1433 uqadd z19.s, z1.s, z27.s
+042C1480 uqadd z0.b, z4.b, z12.b
+04E0141F uqadd z31.d, z0.d, z0.d
+04F417F1 uqadd z17.d, z31.d, z20.d
+04F41614 uqadd z20.d, z16.d, z20.d
+04F41610 uqadd z16.d, z16.d, z20.d

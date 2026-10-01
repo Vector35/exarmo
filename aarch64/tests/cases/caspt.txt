@@ -1,0 +1,39 @@
+// CASPALT_CP64_comswappr_unpriv 0|sz=1|0010011|A=1|0|Rs=xxxxx|R=1|Rt2=11111|Rn=xxxxx|Rt=xxxxx
+// CaspaltCp64ComswapprUnpriv: CASPALT  <Xs>, <X(s+1)>, <Xt>, <X(t+1)>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+49C0FC0C caspalt x0, x1, x12, x13, [x0]
+49C0FC1A caspalt x0, x1, x26, x27, [x0]
+49C0FC28 caspalt x0, x1, x8, x9, [x1]
+49C0FFE0 caspalt x0, x1, x0, x1, [sp]
+49DFFC1F UNDEFINED
+49C0FC00 caspalt x0, x1, x0, x1, [x0]
+
+// CASPAT_CP64_comswappr_unpriv 0|sz=1|0010011|A=1|0|Rs=xxxxx|R=0|Rt2=11111|Rn=xxxxx|Rt=xxxxx
+// CaspatCp64ComswapprUnpriv: CASPAT  <Xs>, <X(s+1)>, <Xt>, <X(t+1)>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+49C07C06 caspat x0, x1, x6, x7, [x0]
+49C07C14 caspat x0, x1, x20, x21, [x0]
+49C07C22 caspat x0, x1, x2, x3, [x1]
+49C07FE0 caspat x0, x1, x0, x1, [sp]
+49DF7C1F UNDEFINED
+49C07C00 caspat x0, x1, x0, x1, [x0]
+
+// CASPLT_CP64_comswappr_unpriv 0|sz=1|0010011|A=0|0|Rs=xxxxx|R=1|Rt2=11111|Rn=xxxxx|Rt=xxxxx
+// CaspltCp64ComswapprUnpriv: CASPLT  <Xs>, <X(s+1)>, <Xt>, <X(t+1)>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+4980FC00 casplt x0, x1, x0, x1, [x0]
+4980FC0E casplt x0, x1, x14, x15, [x0]
+4980FC1C casplt x0, x1, x28, fp, [x0]
+4980FFE0 casplt x0, x1, x0, x1, [sp]
+499FFC1F UNDEFINED
+4982FC64 casplt x2, x3, x4, x5, [x3]
+
+// CASPT_CP64_comswappr_unpriv 0|sz=1|0010011|A=0|0|Rs=xxxxx|R=0|Rt2=11111|Rn=xxxxx|Rt=xxxxx
+// CasptCp64ComswapprUnpriv: CASPT  <Xs>, <X(s+1)>, <Xt>, <X(t+1)>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rn, Rt
+49807C08 caspt x0, x1, x8, x9, [x0]
+49807C16 caspt x0, x1, x22, x23, [x0]
+49807C24 caspt x0, x1, x4, x5, [x1]
+49807FE0 caspt x0, x1, x0, x1, [sp]
+499F7C1F UNDEFINED
+49807C00 caspt x0, x1, x0, x1, [x0]

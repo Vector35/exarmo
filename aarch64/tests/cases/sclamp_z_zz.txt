@@ -1,0 +1,15 @@
+// sclamp_z_zz_ 010|0010|0|size=xx|0|Zm=xxxxx|11000|U=0|Zn=xxxxx|Zd=xxxxx
+// SclampZZz: SCLAMP  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+44CFC2B9 sclamp z25.d, z21.d, z15.d
+449BC180 sclamp z0.s, z12.s, z27.s
+440CC1FA sclamp z26.b, z15.b, z12.b
+4412C03A sclamp z26.b, z1.b, z18.b
+445EC0A3 sclamp z3.h, z5.h, z30.h
+44D6C19B sclamp z27.d, z12.d, z22.d
+44C1C319 sclamp z25.d, z24.d, z1.d
+44C3C2D9 sclamp z25.d, z22.d, z3.d
+44C0C01F sclamp z31.d, z0.d, z0.d
+44DFC3F9 sclamp z25.d, z31.d, z31.d
+44CFC2AF sclamp z15.d, z21.d, z15.d
+44CFC2B5 sclamp z21.d, z21.d, z15.d

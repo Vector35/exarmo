@@ -1,0 +1,75 @@
+// CMP_i_T1 00|1|op=01|Rn=xxx|imm8=xxxxxxxx
+// CmpIT1: CMP{<c>}{<q>}  <Rn>, #<imm8>
+// register fields: Rn
+// IT state read: condition
+2800 cmp r0, #0
+2801 cmp r0, #1
+2802 cmp r0, #2
+2803 cmp r0, #3
+2804 cmp r0, #4
+2805 cmp r0, #5
+2806 cmp r0, #6
+2807 cmp r0, #7
+29FF cmp r1, #0xff
+2A80 cmp r2, #0x80
+2B40 cmp r3, #0x40
+2C20 cmp r4, #0x20
+2D10 cmp r5, #0x10
+2E08 cmp r6, #0x8
+2F00 cmp r7, #0x0
+2800 [ne] cmpne r0, #0x0
+
+// CMP_i_T2 111|10|i=x|0|op1=1101|S=1|Rn=xxxx|0|imm3=xxx|Rd=1111|imm8=xxxxxxxx
+// CmpIT2: CMP{<c>}{<q>}  <Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn
+// IT state read: condition
+f1b36fd1 cmp r3, #109576192
+f1bf2f3c cmp pc, #1006648320 (unpredictable)
+f5b37f2d cmp r3, #692
+f5b47f41 cmp r4, #772
+f5bf5f6c cmp pc, #15104 (unpredictable)
+f5b35f7a cmp r3, #16000
+f5b83f80 cmp r8, #65536
+f1b81f05 cmp r8, #327685
+F1B00F00 cmp r0, #0x0
+F1B34FFF cmp r3, #0x7f800000
+F1B36F40 cmp r3, #0xc000000
+F1B36F20 cmp r3, #0xa000000
+F1B36F10 cmp r3, #0x9000000
+F1B36F08 cmp r3, #0x8800000
+F1B36F04 cmp r3, #0x8400000
+F1B36F02 cmp r3, #0x8200000
+F1B36F01 cmp r3, #0x8100000
+F1B30F00 cmp r3, #0x0
+F1B30FFF cmp r3, #0xff
+F1B31F00 cmp r3, #0x0
+F1B31FFF cmp r3, #0xff00ff
+F1B32F00 cmp r3, #0x0
+F1B32FFF cmp r3, #0xff00ff00
+F1B33F00 cmp r3, #0x0
+F1B33FFF cmp r3, #0xffffffff
+F1B34F00 cmp r3, #0x80000000
+F1B35F00 cmp r3, #0x20000000
+F1B35FFF cmp r3, #0x1fe00000
+F1B36F00 cmp r3, #0x8000000
+F1B36FFF cmp r3, #0x7f80000
+F1B37F00 cmp r3, #0x2000000
+F1B37FFF cmp r3, #0x1fe0000
+F5B30F00 cmp r3, #0x800000
+F5B30FFF cmp r3, #0x7f8000
+F5B31F00 cmp r3, #0x200000
+F5B31FFF cmp r3, #0x1fe000
+F5B32F00 cmp r3, #0x80000
+F5B32FFF cmp r3, #0x7f800
+F5B33F00 cmp r3, #0x20000
+F5B33FFF cmp r3, #0x1fe00
+F5B34F00 cmp r3, #0x8000
+F5B34FFF cmp r3, #0x7f80
+F5B35F00 cmp r3, #0x2000
+F5B35FFF cmp r3, #0x1fe0
+F5B36F00 cmp r3, #0x800
+F5B36FFF cmp r3, #0x7f8
+F5B37F00 cmp r3, #0x200
+F5B37FFF cmp r3, #0x1fe
+F1B36FD1 [ne] cmpne r3, #0x6880000

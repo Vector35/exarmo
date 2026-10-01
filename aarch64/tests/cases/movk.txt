@@ -1,0 +1,75 @@
+// MOVK_32_movewide sf=0|opc=11|100101|hw=0x|imm16=xxxxxxxxxxxxxxxx|Rd=xxxxx
+// Movk32Movewide: MOVK  <Wd>, #<imm>{, LSL #<shift>}
+// register fields: Rd
+72996C12 movk w18, #0xcb60
+72B08AC8 movk w8, #0x8456, lsl #0x10
+72841D02 movk w2, #0x20e8
+72AEED15 movk w21, #0x7768, lsl #0x10
+72A64453 movk w19, #0x3222, lsl #0x10
+72A7D501 movk w1, #0x3ea8, lsl #0x10
+72990787 movk w7, #0xc83c
+72AACA2C movk w12, #0x5651, lsl #0x10
+72ACF3BD movk w29, #0x679d, lsl #0x10
+72BCADAD movk w13, #0xe56d, lsl #0x10
+72ABDCDA movk w26, #0x5ee6, lsl #0x10
+729988B2 movk w18, #0xcc45
+72B2E457 movk w23, #0x9722, lsl #0x10
+728ADCC6 movk w6, #0x56e6
+72A08479 movk w25, #0x423, lsl #0x10
+72A04155 movk w21, #0x20a, lsl #0x10
+72800000 movk w0, #0x0
+729FFFFF movk wzr, #0xffff
+72900012 movk w18, #0x8000
+72880012 movk w18, #0x4000
+72840012 movk w18, #0x2000
+72820012 movk w18, #0x1000
+72810012 movk w18, #0x800
+72808012 movk w18, #0x400
+72804012 movk w18, #0x200
+72802012 movk w18, #0x100
+72801012 movk w18, #0x80
+72800812 movk w18, #0x40
+72800412 movk w18, #0x20
+72800212 movk w18, #0x10
+72800112 movk w18, #0x8
+72800092 movk w18, #0x4
+72800052 movk w18, #0x2
+72800032 movk w18, #0x1
+
+// MOVK_64_movewide sf=1|opc=11|100101|hw=xx|imm16=xxxxxxxxxxxxxxxx|Rd=xxxxx
+// Movk64Movewide: MOVK  <Xd>, #<imm>{, LSL #<shift>}
+// register fields: Rd
+F29502E3 movk x3, #0xa817
+F2910BB8 movk x24, #0x885d
+F2C574F7 movk x23, #0x2ba7, lsl #0x20
+F2CD00A6 movk x6, #0x6805, lsl #0x20
+F29D4659 movk x25, #0xea32
+F2D4CC71 movk x17, #0xa663, lsl #0x20
+F2E844E2 movk x2, #0x4227, lsl #0x30
+F2AD2922 movk x2, #0x6949, lsl #0x10
+F2E0E21A movk x26, #0x710, lsl #0x30
+F2CEBFA4 movk x4, #0x75fd, lsl #0x20
+F2B6EB55 movk x21, #0xb75a, lsl #0x10
+F2D60B88 movk x8, #0xb05c, lsl #0x20
+F2FA6FE2 movk x2, #0xd37f, lsl #0x30
+F2A61607 movk x7, #0x30b0, lsl #0x10
+F2A0F7FA movk x26, #0x7bf, lsl #0x10
+F2A1775B movk x27, #0xbba, lsl #0x10
+F2800000 movk x0, #0x0
+F29FFFFF movk xzr, #0xffff
+F2900003 movk x3, #0x8000
+F2880003 movk x3, #0x4000
+F2840003 movk x3, #0x2000
+F2820003 movk x3, #0x1000
+F2810003 movk x3, #0x800
+F2808003 movk x3, #0x400
+F2804003 movk x3, #0x200
+F2802003 movk x3, #0x100
+F2801003 movk x3, #0x80
+F2800803 movk x3, #0x40
+F2800403 movk x3, #0x20
+F2800203 movk x3, #0x10
+F2800103 movk x3, #0x8
+F2800083 movk x3, #0x4
+F2800043 movk x3, #0x2
+F2800023 movk x3, #0x1

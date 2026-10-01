@@ -1,0 +1,47 @@
+// fmla_za_zzv_2x1 1|10|0000|10|sz=x|10|Zm=xxxx|0|Rv=xx|110|Zn=xxxxx|0|S=0|off3=xxx
+// FmlaZaZzv2x1: FMLA  ZA.<T>[<Wv>, <offs>{, VGx2}], { <Zn1>.<T>-<Zn2>.<T> }, <Zm>.<T>
+// register fields: Zm, Rv, Zn
+C1201804 fmla za.s[w8, 4, vgx2], {z0.s-z1.s}, z0.s
+C1201820 fmla za.s[w8, 0, vgx2], {z1.s-z2.s}, z0.s
+C1201827 fmla za.s[w8, 7, vgx2], {z1.s-z2.s}, z0.s
+C16F3BE1 fmla za.d[w9, 1, vgx2], {z31.d-z0.d}, z15.d
+C1205802 fmla za.s[w10, 2, vgx2], {z0.s-z1.s}, z0.s
+C1207803 fmla za.s[w11, 3, vgx2], {z0.s-z1.s}, z0.s
+C1201805 fmla za.s[w8, 5, vgx2], {z0.s-z1.s}, z0.s
+C1201806 fmla za.s[w8, 6, vgx2], {z0.s-z1.s}, z0.s
+
+// fmla_za_zzv_2x1_16 1|10|0000|10|sz=0|10|Zm=xxxx|0|Rv=xx|111|Zn=xxxxx|0|S=0|off3=xxx
+// FmlaZaZzv2x116: FMLA  ZA.H[<Wv>, <offs>{, VGx2}], { <Zn1>.H-<Zn2>.H }, <Zm>.H
+// register fields: Zm, Rv, Zn
+C1201C02 fmla za.h[w8, 2, vgx2], {z0.h-z1.h}, z0.h
+C1201C25 fmla za.h[w8, 5, vgx2], {z1.h-z2.h}, z0.h
+C1201C41 fmla za.h[w8, 1, vgx2], {z2.h-z3.h}, z0.h
+C12F3FE0 fmla za.h[w9, 0, vgx2], {z31.h-z0.h}, z15.h
+C1205C03 fmla za.h[w10, 3, vgx2], {z0.h-z1.h}, z0.h
+C1207C04 fmla za.h[w11, 4, vgx2], {z0.h-z1.h}, z0.h
+C1201C06 fmla za.h[w8, 6, vgx2], {z0.h-z1.h}, z0.h
+C1201C07 fmla za.h[w8, 7, vgx2], {z0.h-z1.h}, z0.h
+
+// fmla_za_zzv_4x1 1|10|0000|10|sz=x|11|Zm=xxxx|0|Rv=xx|110|Zn=xxxxx|0|S=0|off3=xxx
+// FmlaZaZzv4x1: FMLA  ZA.<T>[<Wv>, <offs>{, VGx4}], { <Zn1>.<T>-<Zn4>.<T> }, <Zm>.<T>
+// register fields: Zm, Rv, Zn
+C1301800 fmla za.s[w8, 0, vgx4], {z0.s-z3.s}, z0.s
+C1301807 fmla za.s[w8, 7, vgx4], {z0.s-z3.s}, z0.s
+C1301823 fmla za.s[w8, 3, vgx4], {z1.s-z4.s}, z0.s
+C17F3BE1 fmla za.d[w9, 1, vgx4], {z31.d-z2.d}, z15.d
+C1305802 fmla za.s[w10, 2, vgx4], {z0.s-z3.s}, z0.s
+C1307804 fmla za.s[w11, 4, vgx4], {z0.s-z3.s}, z0.s
+C1301805 fmla za.s[w8, 5, vgx4], {z0.s-z3.s}, z0.s
+C1301806 fmla za.s[w8, 6, vgx4], {z0.s-z3.s}, z0.s
+
+// fmla_za_zzv_4x1_16 1|10|0000|10|sz=0|11|Zm=xxxx|0|Rv=xx|111|Zn=xxxxx|0|S=0|off3=xxx
+// FmlaZaZzv4x116: FMLA  ZA.H[<Wv>, <offs>{, VGx4}], { <Zn1>.H-<Zn4>.H }, <Zm>.H
+// register fields: Zm, Rv, Zn
+C1301C05 fmla za.h[w8, 5, vgx4], {z0.h-z3.h}, z0.h
+C1301C21 fmla za.h[w8, 1, vgx4], {z1.h-z4.h}, z0.h
+C1301C44 fmla za.h[w8, 4, vgx4], {z2.h-z5.h}, z0.h
+C13F3FE0 fmla za.h[w9, 0, vgx4], {z31.h-z2.h}, z15.h
+C1305C02 fmla za.h[w10, 2, vgx4], {z0.h-z3.h}, z0.h
+C1307C03 fmla za.h[w11, 3, vgx4], {z0.h-z3.h}, z0.h
+C1301C06 fmla za.h[w8, 6, vgx4], {z0.h-z3.h}, z0.h
+C1301C07 fmla za.h[w8, 7, vgx4], {z0.h-z3.h}, z0.h

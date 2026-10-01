@@ -1,0 +1,45 @@
+// ADCS_32_addsub_carry sf=0|op=0|S=1|11010000|Rm=xxxxx|000000|Rn=xxxxx|Rd=xxxxx
+// Adcs32AddsubCarry: ADCS  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+3A1F028F adcs w15, w20, wzr
+3A020302 adcs w2, w24, w2
+3A0402D9 adcs w25, w22, w4
+3A0701F1 adcs w17, w15, w7
+3A0001B5 adcs w21, w13, w0
+3A05009D adcs w29, w4, w5
+3A0E0197 adcs w23, w12, w14
+3A0D026D adcs w13, w19, w13
+3A0C0054 adcs w20, w2, w12
+3A1E0325 adcs w5, w25, w30
+3A010258 adcs w24, w18, w1
+3A0D00B2 adcs w18, w5, w13
+3A050334 adcs w20, w25, w5
+3A030238 adcs w24, w17, w3
+3A1803EB adcs w11, wzr, w24
+3A010355 adcs w21, w26, w1
+3A1F0000 adcs w0, w0, wzr
+3A1F029F adcs wzr, w20, wzr
+3A1F03EF adcs w15, wzr, wzr
+
+// ADCS_64_addsub_carry sf=1|op=0|S=1|11010000|Rm=xxxxx|000000|Rn=xxxxx|Rd=xxxxx
+// Adcs64AddsubCarry: ADCS  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+BA02010D adcs x13, x8, x2
+BA010199 adcs x25, x12, x1
+BA150018 adcs x24, x0, x21
+BA1F03FB adcs x27, xzr, xzr
+BA12003B adcs x27, x1, x18
+BA0D034B adcs x11, x26, x13
+BA15015C adcs x28, x10, x21
+BA0B00FE adcs lr, x7, x11
+BA1A0349 adcs x9, x26, x26
+BA1002F2 adcs x18, x23, x16
+BA1C02C6 adcs x6, x22, x28
+BA1802D2 adcs x18, x22, x24
+BA180282 adcs x2, x20, x24
+BA100357 adcs x23, x26, x16
+BA0F0173 adcs x19, x11, x15
+BA020036 adcs x22, x1, x2
+BA000100 adcs x0, x8, x0
+BA02011F adcs xzr, x8, x2
+BA020108 adcs x8, x8, x2

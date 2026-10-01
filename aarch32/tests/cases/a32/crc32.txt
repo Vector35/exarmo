@@ -1,0 +1,38 @@
+// CRC32B_A1 cond=xxxx|00010|sz=00|0|Rn=xxxx|Rd=xxxx|(0)(0)|C=0|(0)0100|Rm=xxxx
+// Crc32bA1: CRC32B{<q>}  <Rd>, <Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// Binary Ninja's tests
+e1010042 crc32b r0, r1, r2
+0100F540 crc32b pc, r0, r0 (unpredictable)
+F1010042 UNALLOCATED
+810F084F crc32b r0, pc, pc (unpredictable)
+41011C42 crc32b r1, r1, r2 (unpredictable)
+21010041 crc32b r0, r1, r1 (unpredictable)
+11010040 crc32b r0, r1, r0 (unpredictable)
+
+// CRC32H_A1 cond=xxxx|00010|sz=01|0|Rn=xxxx|Rd=xxxx|(0)(0)|C=0|(0)0100|Rm=xxxx
+// Crc32hA1: CRC32H{<q>}  <Rd>, <Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+e1294440 crc32h r4, r9, r0 (unpredictable)
+e12f8140 crc32h r8, pc, r0 (unpredictable)
+// Binary Ninja's tests
+e1210042 crc32h r0, r1, r2
+0120F84F crc32h pc, r0, pc (unpredictable)
+F1294440 UNALLOCATED
+81299C40 crc32h r9, r9, r0 (unpredictable)
+41294449 crc32h r4, r9, r9 (unpredictable)
+21294444 crc32h r4, r9, r4 (unpredictable)
+11294440 crc32h r4, r9, r0 (unpredictable)
+
+// CRC32W_A1 cond=xxxx|00010|sz=10|0|Rn=xxxx|Rd=xxxx|(0)(0)|C=0|(0)0100|Rm=xxxx
+// Crc32wA1: CRC32W{<q>}  <Rd>, <Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+e1464c4a crc32w r4, r6, r10 (unpredictable)
+// Binary Ninja's tests
+e1410042 crc32w r0, r1, r2
+0140F540 crc32w pc, r0, r0 (unpredictable)
+F1464C4A UNALLOCATED
+814F484F crc32w r4, pc, pc (unpredictable)
+41466C4A crc32w r6, r6, r10 (unpredictable)
+21464C46 crc32w r4, r6, r6 (unpredictable)
+11464C44 crc32w r4, r6, r4 (unpredictable)

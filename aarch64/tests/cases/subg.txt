@@ -1,0 +1,27 @@
+// SUBG_64_addsub_immtags sf=1|op=1|S=0|100|0110|imm6=xxxxxx|op3=(0)(0)|imm4=xxxx|Rn=xxxxx|Rd=xxxxx
+// Subg64AddsubImmtags: SUBG  <Xd|SP>, <Xn|SP>, #<uimm6>, #<uimm4>
+// register fields: Rn, Rd
+D1B51BCA subg x10, lr, #0x350, #0x6
+D1A119EF subg x15, x15, #0x210, #0x6
+D1B027B0 subg x16, fp, #0x300, #0x9
+D1B53628 subg x8, x17, #0x350, #0xd
+D1AD075B subg x27, x26, #0x2d0, #0x1
+D1BD0186 subg x6, x12, #0x3d0, #0x0
+D1B41AA1 subg x1, x21, #0x340, #0x6
+D1B40690 subg x16, x20, #0x340, #0x1
+D1B227C2 subg x2, lr, #0x320, #0x9
+D18C3CB6 subg x22, x5, #0xc0, #0xf
+D18A3EB3 subg x19, x21, #0xa0, #0xf
+D1A11149 subg x9, x10, #0x210, #0x4
+D1852D5E subg lr, x10, #0x50, #0xb
+D1A31785 subg x5, x28, #0x230, #0x5
+D19B2C0F subg x15, x0, #0x1b0, #0xb
+D181221F subg sp, x16, #0x10, #0x8
+D1805BE0 subg x0, sp, #0x0, #0x6 (unpredictable)
+D1BF9BCA subg x10, lr, #0x3f0, #0x6 (unpredictable)
+D1B5DBCA subg x10, lr, #0x350, #0x6 (unpredictable)
+D1A00BCA subg x10, lr, #0x200, #0x2
+D1901BCA subg x10, lr, #0x100, #0x6
+D1881BCA subg x10, lr, #0x80, #0x6
+D1841BCA subg x10, lr, #0x40, #0x6
+D1821BCA subg x10, lr, #0x20, #0x6

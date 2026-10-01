@@ -1,0 +1,117 @@
+// MOVZ_32_movewide sf=0|opc=10|100101|hw=0x|imm16=xxxxxxxxxxxxxxxx|Rd=xxxxx
+// Movz32Movewide: MOVZ  <Wd>, #<imm>{, LSL #<shift>}
+// MovMovz32Movewide: MOV  <Wd>, #<imm>
+// read together by the MOV alias: hw, imm16
+// register fields: Rd
+// form chosen on: hw, imm16
+52A00004 movz w4, #0x0, lsl #0x10
+52A0001E movz w30, #0x0, lsl #0x10
+52A00008 movz w8, #0x0, lsl #0x10
+52A00003 movz w3, #0x0, lsl #0x10
+52A0001D movz w29, #0x0, lsl #0x10
+52A0000E movz w14, #0x0, lsl #0x10
+52A0000A movz w10, #0x0, lsl #0x10
+52A0001C movz w28, #0x0, lsl #0x10
+52A0001F movz wzr, #0x0, lsl #0x10
+52A00011 movz w17, #0x0, lsl #0x10
+52A00015 movz w21, #0x0, lsl #0x10
+52A00014 movz w20, #0x0, lsl #0x10
+52A00018 movz w24, #0x0, lsl #0x10
+52A0001A movz w26, #0x0, lsl #0x10
+52A0000B movz w11, #0x0, lsl #0x10
+52A00000 movz w0, #0x0, lsl #0x10
+52A1CF72 mov w18, #0xe7b0000
+52A48306 mov w6, #0x24180000
+52BFBDB5 mov w21, #0xfded0000
+5290DE60 mov w0, #0x86f3
+52B8D9BA mov w26, #0xc6cd0000
+52BE100A mov w10, #0xf0800000
+52BB4DB0 mov w16, #0xda6d0000
+5297643C mov w28, #0xbb21
+52818CC4 mov w4, #0xc66
+52976B26 mov w6, #0xbb59
+5299F361 mov w1, #0xcf9b
+52AE367B mov w27, #0x71b30000
+52A20270 mov w16, #0x10130000
+52827151 mov w17, #0x138a
+52A4CB13 mov w19, #0x26580000
+52897160 mov w0, #0x4b8b
+52BFFFE4 mov w4, #0xffff0000
+52800004 mov w4, #0x0
+529FFFE4 mov w4, #0xffff
+52B00004 mov w4, #0x80000000
+52A80004 mov w4, #0x40000000
+52A40004 mov w4, #0x20000000
+52A20004 mov w4, #0x10000000
+52A10004 mov w4, #0x8000000
+52A08004 mov w4, #0x4000000
+52A04004 mov w4, #0x2000000
+52A02004 mov w4, #0x1000000
+52A01004 mov w4, #0x800000
+52A00804 mov w4, #0x400000
+52A00404 mov w4, #0x200000
+52A00204 mov w4, #0x100000
+52A00104 mov w4, #0x80000
+52A00084 mov w4, #0x40000
+52A00044 mov w4, #0x20000
+52A00024 mov w4, #0x10000
+
+// MOVZ_64_movewide sf=1|opc=10|100101|hw=xx|imm16=xxxxxxxxxxxxxxxx|Rd=xxxxx
+// Movz64Movewide: MOVZ  <Xd>, #<imm>{, LSL #<shift>}
+// MovMovz64Movewide: MOV  <Xd>, #<imm>
+// read together by the MOV alias: hw, imm16
+// register fields: Rd
+// form chosen on: hw, imm16
+D2E0000C movz x12, #0x0, lsl #0x30
+D2A0000A movz x10, #0x0, lsl #0x10
+D2E00013 movz x19, #0x0, lsl #0x30
+D2E00002 movz x2, #0x0, lsl #0x30
+D2E0000D movz x13, #0x0, lsl #0x30
+D2E00005 movz x5, #0x0, lsl #0x30
+D2C0001D movz fp, #0x0, lsl #0x20
+D2A0000C movz x12, #0x0, lsl #0x10
+D2E00007 movz x7, #0x0, lsl #0x30
+D2A00015 movz x21, #0x0, lsl #0x10
+D2C0000B movz x11, #0x0, lsl #0x20
+D2C0000D movz x13, #0x0, lsl #0x20
+D2C00016 movz x22, #0x0, lsl #0x20
+D2A00002 movz x2, #0x0, lsl #0x10
+D2A00004 movz x4, #0x0, lsl #0x10
+D2A00008 movz x8, #0x0, lsl #0x10
+D2FFAEC8 mov x8, #0xfd76000000000000
+D2CFDB7B mov x27, #0x7edb00000000
+D2D25852 mov x18, #0x92c200000000
+D2AA1328 mov x8, #0x50990000
+D2E8BAE5 mov x5, #0x45d7000000000000
+D2FA896F mov x15, #0xd44b000000000000
+D2F8515D mov fp, #0xc28a000000000000
+D29FFC2C mov x12, #0xffe1
+D2A9D59F mov xzr, #0x4eac0000
+D2CE9851 mov x17, #0x74c200000000
+D2A76DEF mov x15, #0x3b6f0000
+D2DDB1CD mov x13, #0xed8e00000000
+D2FD5F74 mov x20, #0xeafb000000000000
+D2A0CFFF mov xzr, #0x67f0000
+D28D4647 mov x7, #0x6a32
+D2C5A634 mov x20, #0x2d3100000000
+D2FFFFE0 mov x0, #0xffff000000000000
+D280000C mov x12, #0x0
+D29FFFEC mov x12, #0xffff
+D2BFFFEC mov x12, #0xffff0000
+D2DFFFEC mov x12, #0xffff00000000
+D2F0000C mov x12, #0x8000000000000000
+D2E8000C mov x12, #0x4000000000000000
+D2E4000C mov x12, #0x2000000000000000
+D2E2000C mov x12, #0x1000000000000000
+D2E1000C mov x12, #0x800000000000000
+D2E0800C mov x12, #0x400000000000000
+D2E0400C mov x12, #0x200000000000000
+D2E0200C mov x12, #0x100000000000000
+D2E0100C mov x12, #0x80000000000000
+D2E0080C mov x12, #0x40000000000000
+D2E0040C mov x12, #0x20000000000000
+D2E0020C mov x12, #0x10000000000000
+D2E0010C mov x12, #0x8000000000000
+D2E0008C mov x12, #0x4000000000000
+D2E0004C mov x12, #0x2000000000000
+D2E0002C mov x12, #0x1000000000000

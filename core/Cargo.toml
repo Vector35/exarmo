@@ -1,0 +1,11 @@
+[package]
+name = "exarmo-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Runtime support shared by the exarmo-aarch64 and exarmo-aarch32 disassemblers"
+license.workspace = true
+repository.workspace = true
+keywords = ["arm", "aarch64", "aarch32", "disassembler"]
+categories = ["development-tools"]
+documentation = "https://docs.rs/exarmo-core"

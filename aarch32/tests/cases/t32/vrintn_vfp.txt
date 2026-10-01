@@ -1,0 +1,59 @@
+// VRINTN_vfp_T1_D 111111101|D=x|111|op1=0|RM=01|Vd=xxxx|10|size=11|op=0|1|M=x|0|Vm=xxxx
+// VrintnVfpT1D: VRINTN{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+feb9eb44 vrintn.f64 d14, d4
+fef98b42 vrintn.f64 d24, d2
+fef9bb65 vrintn.f64 d27, d21
+feb9fb63 vrintn.f64 d15, d19
+feb9ab4f vrintn.f64 d10, d15
+fef91b67 vrintn.f64 d17, d23
+fef97b49 vrintn.f64 d23, d9
+feb98b4d vrintn.f64 d8, d13
+FEB90B40 vrintn.f64 d0, d0
+FEB94B48 vrintn.f64 d4, d8
+FEF9FB6F vrintn.f64 d31, d31
+FEB92B41 vrintn.f64 d2, d1
+FEF90B60 vrintn.f64 d16, d16
+
+// VRINTN_vfp_T1_H 111111101|D=x|111|op1=0|RM=01|Vd=xxxx|10|size=01|op=0|1|M=x|0|Vm=xxxx
+// VrintnVfpT1H: VRINTN{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+feb98963 vrintn.f16 s16, s7
+feb9a948 vrintn.f16 s20, s16
+feb93943 vrintn.f16 s6, s6
+fef9b949 vrintn.f16 s23, s18
+feb92968 vrintn.f16 s4, s17
+fef9596d vrintn.f16 s11, s27
+fef97941 vrintn.f16 s15, s2
+feb9996c vrintn.f16 s18, s25
+FEB9F96F vrintn.f16 s30, s31
+FEB94964 vrintn.f16 s8, s9
+FEB91962 vrintn.f16 s2, s5
+FEB90960 vrintn.f16 s0, s1
+FEB90940 vrintn.f16 s0, s0
+FEF9094F vrintn.f16 s1, s30
+FEF9F960 vrintn.f16 s31, s1
+
+// VRINTN_vfp_T1_S 111111101|D=x|111|op1=0|RM=01|Vd=xxxx|10|size=10|op=0|1|M=x|0|Vm=xxxx
+// VrintnVfpT1S: VRINTN{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fef9fa69 vrintn.f32 s31, s19
+fef93a6b vrintn.f32 s7, s23
+fef99a62 vrintn.f32 s19, s5
+fef9aa6d vrintn.f32 s21, s27
+fef9ea4c vrintn.f32 s29, s24
+fef99a67 vrintn.f32 s19, s15
+fef95a4d vrintn.f32 s11, s26
+feb98a69 vrintn.f32 s16, s19
+FEF90A60 vrintn.f32 s1, s1
+FEF94A6F vrintn.f32 s9, s31
+FEF92A68 vrintn.f32 s5, s17
+FEF91A64 vrintn.f32 s3, s9
+FEB90A61 vrintn.f32 s0, s3
+FEB9FA40 vrintn.f32 s30, s0
+FEF9FA60 vrintn.f32 s31, s1
+FEF9FA6F vrintn.f32 s31, s31
+FEF9FA4F vrintn.f32 s31, s30

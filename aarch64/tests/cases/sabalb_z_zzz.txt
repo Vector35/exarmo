@@ -1,0 +1,14 @@
+// sabalb_z_zzz_ 010|0010|1|size=xx|0|Zm=xxxxx|11|00|U=0|T=0|Zn=xxxxx|Zda=xxxxx
+// SabalbZZzz: SABALB  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+4593C3F2 sabalb z18.s, z31.h, z19.h
+454FC170 sabalb z16.h, z11.b, z15.b
+4581C1A5 sabalb z5.s, z13.h, z1.h
+45CAC183 sabalb z3.d, z12.s, z10.s
+4558C19F sabalb z31.h, z12.b, z24.b
+458CC335 sabalb z21.s, z25.h, z12.h
+459EC02D sabalb z13.s, z1.h, z30.h
+4556C3CD sabalb z13.h, z30.b, z22.b
+4580C000 sabalb z0.s, z0.h, z0.h
+459FC3F2 sabalb z18.s, z31.h, z31.h
+4513C3F2 UNDEFINED

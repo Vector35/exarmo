@@ -1,0 +1,87 @@
+// EOR_r_A1 cond=xxxx|0000|opc=001|S=0|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// EorRA1: EOR{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+202e67e7 eorhs r6, lr, r7, ror #15
+60229e06 eorvs r9, r2, r6, lsl #28
+d02c74ca eorle r7, r12, r10, asr #9
+6024ef8c eorvs lr, r4, r12, lsl #31
+a02bba63 eorge r11, r11, r3, ror #20
+d0244387 eorle r4, r4, r7, lsl #7
+b02f8666 eorlt r8, pc, r6, ror #12
+b0253aab eorlt r3, r5, r11, lsr #21
+// Binary Ninja's tests
+e0213022 eor r3, r1, r2, lsr #32
+e0213042 eor r3, r1, r2, asr #32
+e0221003 eor r1, r2, r3
+e0222003 eor r2, r2, r3
+e0244005 eor r4, r4, r5
+e0244285 eor r4, r4, r5, lsl #5
+e02442a5 eor r4, r4, r5, lsr #5
+e02442c5 eor r4, r4, r5, asr #5
+e02442e5 eor r4, r4, r5, ror #5
+e0254006 eor r4, r5, r6
+e0254286 eor r4, r5, r6, lsl #5
+e02542a6 eor r4, r5, r6, lsr #5
+e02542c6 eor r4, r5, r6, asr #5
+e02542e6 eor r4, r5, r6, ror #5
+00200860 eoreq r0, r0, r0, ror #0x10
+F02E67E7 UNALLOCATED
+802EF46F eorhi pc, lr, pc, ror #0x8
+402E626E eormi r6, lr, lr, ror #0x4
+102E6166 eorne r6, lr, r6, ror #0x2
+202E60E7 eorcs r6, lr, r7, ror #0x1
+
+// EOR_r_A1_RRX cond=xxxx|0000|opc=001|S=0|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// EorRA1Rrx: EOR{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+802be06e eorhi lr, r11, lr, rrx
+002b806c eoreq r8, r11, r12, rrx
+3028606d eorlo r6, r8, sp, rrx
+0025006c eoreq r0, r5, r12, rrx
+10281069 eorne r1, r8, r9, rrx
+4028f068 eormi pc, r8, r8, rrx
+c0238062 eorgt r8, r3, r2, rrx
+50248063 eorpl r8, r4, r3, rrx
+// Binary Ninja's tests
+e0244065 eor r4, r4, r5, rrx
+e0254066 eor r4, r5, r6, rrx
+F02BE06E UNALLOCATED
+2020E060 eorcs lr, r0, r0, rrx
+802FE06F eorhi lr, pc, pc, rrx
+
+// EORS_r_A1 cond=xxxx|0000|opc=001|S=1|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// EorsRA1: EORS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+80343687 eorshi r3, r4, r7, lsl #13
+c036d004 eorsgt sp, r6, r4
+803536e8 eorshi r3, r5, r8, ror #13
+d030404a eorsle r4, r0, r10, asr #32
+303f2f85 eorslo r2, pc, r5, lsl #31
+d030a108 eorsle r10, r0, r8, lsl #2
+a03972c2 eorsge r7, r9, r2, asr #5
+2031c84b eorshs r12, r1, r11, asr #16
+// Binary Ninja's tests
+00322003 eorseq r2, r2, r3
+e0321003 eors r1, r2, r3
+F0343687 UNALLOCATED
+40340420 eorsmi r0, r4, r0, lsr #0x8
+1034F20F eorsne pc, r4, pc, lsl #0x4
+80343084 eorshi r3, r4, r4, lsl #0x1
+80343683 eorshi r3, r4, r3, lsl #0xd
+
+// EORS_r_A1_RRX cond=xxxx|0000|opc=001|S=1|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// EorsRA1Rrx: EORS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+503e906b eorspl r9, lr, r11, rrx
+903d906a eorsls r9, sp, r10, rrx
+5038e062 eorspl lr, r8, r2, rrx
+50334063 eorspl r4, r3, r3, rrx
+003ae06c eorseq lr, r10, r12, rrx
+a034b06d eorsge r11, r4, sp, rrx
+903f4064 eorsls r4, pc, r4, rrx
+00366069 eorseq r6, r6, r9, rrx
+F03E906B UNALLOCATED
+80300060 eorshi r0, r0, r0, rrx
+403EF06F eorsmi pc, lr, pc, rrx
+203E906B eorscs r9, lr, r11, rrx
+103E906B eorsne r9, lr, r11, rrx

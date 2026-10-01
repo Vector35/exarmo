@@ -1,0 +1,16 @@
+// USDOT_asimdelem_D 0|Q=x|U=0|0|111|1|US=1|0|L=x|M=x|Rm=xxxx|opcode=1111|H=x|0|Rn=xxxxx|Rd=xxxxx
+// UsdotAsimdelemD: USDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.4B[<index>]
+// read together by <Vm>: M, Rm
+// read together by <index>: L, H
+// register fields: Rn, Rd
+0F80F001 usdot v1.2s, v0.8b, v0.4b[0]
+0F80F008 usdot v8.2s, v0.8b, v0.4b[0]
+0F80F00F usdot v15.2s, v0.8b, v0.4b[0]
+4FBFFBE0 usdot v0.4s, v31.16b, v31.4b[3]
+0F80F01F usdot v31.2s, v0.8b, v0.4b[0]
+0F8FF800 usdot v0.2s, v0.8b, v15.4b[2]
+0FB0F001 usdot v1.2s, v0.8b, v16.4b[1]
+0F88F001 usdot v1.2s, v0.8b, v8.4b[0]
+0F84F001 usdot v1.2s, v0.8b, v4.4b[0]
+0F82F001 usdot v1.2s, v0.8b, v2.4b[0]
+0F81F001 usdot v1.2s, v0.8b, v1.4b[0]

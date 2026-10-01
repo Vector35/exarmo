@@ -1,0 +1,24 @@
+// sqrshru_z_mz4_ 1|10|0000|1|tsize=xx|1|imm5=xxxxx|110|11|N=0|Zn=xxx|op=1|U=0|Zd=xxxxx
+// SqrshruZMz4: SQRSHRU  <Zd>.<T>, { <Zn1>.<Tb>-<Zn4>.<Tb> }, #<const>
+// read together by <const>: tsize, imm5
+// register fields: Zn, Zd
+C160D843 sqrshru z3.b, {z0.s-z3.s}, #0x20
+C160D84A sqrshru z10.b, {z0.s-z3.s}, #0x20
+C160D851 sqrshru z17.b, {z0.s-z3.s}, #0x20
+C1BFD8C0 sqrshru z0.h, {z4.d-z7.d}, #0x21
+C1E0D95F sqrshru z31.h, {z8.d-z11.d}, #0x20
+C160D9C3 sqrshru z3.b, {z12.s-z15.s}, #0x20
+C160DA43 sqrshru z3.b, {z16.s-z19.s}, #0x20
+C160DAC3 sqrshru z3.b, {z20.s-z23.s}, #0x20
+C160DB43 sqrshru z3.b, {z24.s-z27.s}, #0x20
+C160DBC3 sqrshru z3.b, {z28.s-z31.s}, #0x20
+C120D843 UNDEFINED
+C13FD843 UNDEFINED
+C17FD843 sqrshru z3.b, {z0.s-z3.s}, #0x1
+C1A0D843 sqrshru z3.h, {z0.d-z3.d}, #0x40
+C1FFD843 sqrshru z3.h, {z0.d-z3.d}, #0x1
+C170D843 sqrshru z3.b, {z0.s-z3.s}, #0x10
+C168D843 sqrshru z3.b, {z0.s-z3.s}, #0x18
+C164D843 sqrshru z3.b, {z0.s-z3.s}, #0x1c
+C162D843 sqrshru z3.b, {z0.s-z3.s}, #0x1e
+C161D843 sqrshru z3.b, {z0.s-z3.s}, #0x1f

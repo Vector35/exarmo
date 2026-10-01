@@ -1,0 +1,10 @@
+// LDAB_A1 cond=xxxx|00|01|1|size=10|L=1|Rn=xxxx|Rt=xxxx|(1)(1)|ex=0|ord=0|1|00|1|xRt=(1)(1)(1)(1)
+// LdabA1: LDAB{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+a1dd0c9f ldabge r0, [sp]
+01D0F090 ldabeq pc, [r0] (unpredictable)
+F1DD0C9F UNALLOCATED
+81DF0498 ldabhi r0, [pc] (unpredictable)
+41DDD894 ldabmi sp, [sp] (unpredictable)
+21DD0C92 ldabcs r0, [sp] (unpredictable)
+11DD0C91 ldabne r0, [sp] (unpredictable)

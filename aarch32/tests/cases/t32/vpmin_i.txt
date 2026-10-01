@@ -1,0 +1,28 @@
+// VPMIN_i_T1 111|U=x|11|11|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1010|N=x|Q=0|M=x|op=1|Vm=xxxx
+// VpminIT1: VPMIN{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef2eaa1f vpmin.s32 d10, d14, d15
+ef274a1e vpmin.s32 d4, d7, d14
+ef151a99 vpmin.s16 d1, d21, d9
+ef5d1abb vpmin.s16 d17, d29, d27
+ef4baa1f vpmin.s8 d26, d11, d15
+ff4b2a11 vpmin.u8 d18, d11, d1
+ef47ea96 vpmin.s8 d30, d23, d6
+ef1c2a90 vpmin.s16 d2, d28, d0
+EF3EAA1F UNDEFINED
+FF100A18 vpmin.u16 d0, d0, d8
+FF2FFA14 vpmin.u32 d15, d15, d4
+EF288A12 vpmin.s32 d8, d8, d2
+EF240A30 vpmin.s32 d0, d4, d16
+EF22FA3F vpmin.s32 d15, d2, d31
+EF610A1F vpmin.s32 d16, d1, d15
+FF3EAA1F UNDEFINED
+EF60FA1F vpmin.s32 d31, d0, d15
+EF20AA9F vpmin.s32 d10, d16, d15
+EF2FAA1F vpmin.s32 d10, d15, d15
+EF2FAA9F vpmin.s32 d10, d31, d15
+EF2EAA1F [ne] vpminne.s32 d10, d14, d15

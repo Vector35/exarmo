@@ -1,0 +1,112 @@
+// VMINNM_A1_D 1111001|U=1|0|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VminnmA1D: VMINNM{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f3707f1b vminnm.f16 d23, d0, d11
+f37c5f39 vminnm.f16 d21, d12, d25
+f3363f3a vminnm.f16 d3, d6, d26
+f370efbe vminnm.f16 d30, d16, d30
+f372bfbf vminnm.f16 d27, d18, d31
+f3764f94 vminnm.f16 d20, d22, d4
+f3328f37 vminnm.f16 d8, d2, d23
+f3233f3b vminnm.f32 d3, d3, d27
+F37F0F10 vminnm.f16 d16, d15, d0
+F378FF18 vminnm.f16 d31, d8, d8
+F3742F12 vminnm.f16 d18, d4, d2
+F3711F11 vminnm.f16 d17, d1, d1
+F33F0F10 vminnm.f16 d0, d15, d0
+F33FFF9F vminnm.f16 d15, d31, d15
+F3700F30 vminnm.f16 d16, d0, d16
+F370FF1B vminnm.f16 d31, d0, d11
+
+// VMINNM_A1_Q 1111001|U=1|0|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VminnmA1Q: VMINNM{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f37aef7e vminnm.f16 q15, q5, q15
+f36ceffe vminnm.f32 q15, q14, q15
+f3722fd2 vminnm.f16 q9, q9, q1
+f362af5e vminnm.f32 q13, q1, q7
+f3380f56 vminnm.f16 q0, q4, q3
+f376efdc vminnm.f16 q15, q11, q6
+f33e8f54 vminnm.f16 q4, q7, q2
+f3366f50 vminnm.f16 q3, q3, q0
+F3704F78 vminnm.f16 q10, q0, q12
+F37FFF7F UNDEFINED
+F3740F70 vminnm.f16 q8, q2, q8
+F3711F71 UNDEFINED
+F33FFF5F UNDEFINED
+F37FFFFF UNDEFINED
+F370EF7E vminnm.f16 q15, q0, q15
+F370EFFE vminnm.f16 q15, q8, q15
+
+// VMINNM_A2_D 111111101|D=x|00|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=1|M=x|0|Vm=xxxx
+// VminnmA2D: VMINNM{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fe813b60 vminnm.f64 d3, d1, d16
+fe821b69 vminnm.f64 d1, d2, d25
+fec3cb63 vminnm.f64 d28, d3, d19
+fec1fb6f vminnm.f64 d31, d1, d31
+fe8c7b4a vminnm.f64 d7, d12, d10
+fe888bc0 vminnm.f64 d8, d24, d0
+fe817be1 vminnm.f64 d7, d17, d17
+fe8e2beb vminnm.f64 d2, d30, d27
+// Binary Ninja's tests
+fe864b49 vminnm.f64 d4, d6, d9
+FE800B68 vminnm.f64 d0, d0, d24
+FE8F0B64 vminnm.f64 d0, d15, d20
+FE84FB62 vminnm.f64 d15, d4, d18
+FEC00B4F vminnm.f64 d16, d0, d15
+FE803BE0 vminnm.f64 d3, d16, d16
+FE8F3B60 vminnm.f64 d3, d15, d16
+FE8F3BE0 vminnm.f64 d3, d31, d16
+
+// VMINNM_A2_H 111111101|D=x|00|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=1|M=x|0|Vm=xxxx
+// VminnmA2H: VMINNM{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe8a99c9 vminnm.f16 s18, s21, s18
+fe80b9eb vminnm.f16 s22, s1, s23
+fec679ec vminnm.f16 s15, s13, s25
+fe856966 vminnm.f16 s12, s10, s13
+fe84e963 vminnm.f16 s28, s8, s7
+fe8519c3 vminnm.f16 s2, s11, s6
+fe8d39c7 vminnm.f16 s6, s27, s14
+fe8ee9e5 vminnm.f16 s28, s29, s11
+FE8F09C0 vminnm.f16 s0, s31, s0
+FE88F9CF vminnm.f16 s30, s17, s30
+FE8289C8 vminnm.f16 s16, s5, s16
+FE8149C4 vminnm.f16 s8, s3, s8
+FE802942 vminnm.f16 s4, s0, s4
+FE8F0941 vminnm.f16 s0, s30, s2
+FE8FF9C0 vminnm.f16 s30, s31, s0
+FECA09CF vminnm.f16 s1, s21, s30
+FECAF9E0 vminnm.f16 s31, s21, s1
+FE8A99EF vminnm.f16 s18, s21, s31
+
+// VMINNM_A2_S 111111101|D=x|00|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=1|M=x|0|Vm=xxxx
+// VminnmA2S: VMINNM{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe8e4ae5 vminnm.f32 s8, s29, s11
+fece9a4c vminnm.f32 s19, s28, s24
+fece8a68 vminnm.f32 s17, s28, s17
+fe840aed vminnm.f32 s0, s9, s27
+fec79ae0 vminnm.f32 s19, s15, s1
+fe82caed vminnm.f32 s24, s5, s27
+fe8f3ae2 vminnm.f32 s6, s31, s5
+fe88ea62 vminnm.f32 s28, s16, s5
+// Binary Ninja's tests
+fe800a46 vminnm.f32 s0, s0, s12
+FE81FAEF vminnm.f32 s30, s3, s31
+FE802AE4 vminnm.f32 s4, s1, s9
+FE8F1A61 vminnm.f32 s2, s30, s3
+FE8EFAC0 vminnm.f32 s30, s29, s0
+FECE0ACF vminnm.f32 s1, s29, s30
+FECEFAEF vminnm.f32 s31, s29, s31

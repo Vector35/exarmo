@@ -1,0 +1,13 @@
+// extq_z_zi_des 000|0010|1|01|1|0|imm4=xxxx|001001|Zm=xxxxx|Zdn=xxxxx
+// ExtqZZiDes: EXTQ  <Zdn>.B, <Zdn>.B, <Zm>.B, #<imm>
+// register fields: Zm, Zdn
+05602402 extq z2.b, z2.b, z0.b, #0x0
+05602409 extq z9.b, z9.b, z0.b, #0x0
+05602410 extq z16.b, z16.b, z0.b, #0x0
+056F27E0 extq z0.b, z0.b, z31.b, #0xf
+0560241F extq z31.b, z31.b, z0.b, #0x0
+05602400 extq z0.b, z0.b, z0.b, #0x0
+05682402 extq z2.b, z2.b, z0.b, #0x8
+05642402 extq z2.b, z2.b, z0.b, #0x4
+05622402 extq z2.b, z2.b, z0.b, #0x2
+05612402 extq z2.b, z2.b, z0.b, #0x1

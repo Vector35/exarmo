@@ -1,0 +1,14 @@
+// sutmopa_za_zzzi_b2x1 1|00|0000|u0=0|01|u1=1|Zm=xxxxx|1|0|0|K=x|Zk=xx|Zn=xxxx|i2=xx|0|0|ZAda=xx
+// SutmopaZaZzziB2x1: SUTMOPA  <ZAda>.S, { <Zn1>.B-<Zn2>.B }, <Zm>.B, <Zk>[<index>]
+// read together by <Zk>: K, Zk
+// register fields: Zm, Zn, ZAda
+80608001 sutmopa za1.s, {z0.b-z1.b}, z0.b, z20[0]
+80608032 sutmopa za2.s, {z0.b-z1.b}, z0.b, z20[3]
+80608040 sutmopa za0.s, {z2.b-z3.b}, z0.b, z20[0]
+807F97D3 sutmopa za3.s, {z30.b-z31.b}, z31.b, z29[1]
+80608821 sutmopa za1.s, {z0.b-z1.b}, z0.b, z22[2]
+80608C01 sutmopa za1.s, {z0.b-z1.b}, z0.b, z23[0]
+80608400 sutmopa za0.s, {z0.b-z1.b}, z0.b, z21[0]
+80609001 sutmopa za1.s, {z0.b-z1.b}, z0.b, z28[0]
+80609801 sutmopa za1.s, {z0.b-z1.b}, z0.b, z30[0]
+80609C01 sutmopa za1.s, {z0.b-z1.b}, z0.b, z31[0]

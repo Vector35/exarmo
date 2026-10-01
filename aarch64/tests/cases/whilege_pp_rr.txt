@@ -1,0 +1,12 @@
+// whilege_pp_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|01|U=0|lt=0|Rn=xxxxx|1|Pd=xxx|eq=0
+// WhilegePpRr: WHILEGE  { <Pd1>.<T>, <Pd2>.<T> }, <Xn>, <Xm>
+// register fields: Rm, Rn, Pd
+25205014 whilege {p4.b, p5.b}, x0, x0
+25205030 whilege {p0.b, p1.b}, x1, x0
+2520503E whilege {p14.b, p15.b}, x1, x0
+257F53F2 whilege {p2.h, p3.h}, xzr, xzr
+25A05016 whilege {p6.s, p7.s}, x0, x0
+25E05018 whilege {p8.d, p9.d}, x0, x0
+2520501A whilege {p10.b, p11.b}, x0, x0
+2520501C whilege {p12.b, p13.b}, x0, x0
+25205010 whilege {p0.b, p1.b}, x0, x0

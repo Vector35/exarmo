@@ -1,0 +1,41 @@
+// LDBFMINNM_16 size=00|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=0|opc=111|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfminnm16: LDBFMINNM  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3C207002 ldbfminnm h0, h2, [x0]
+3C207009 ldbfminnm h0, h9, [x0]
+3C207010 ldbfminnm h0, h16, [x0]
+3C3F73E0 ldbfminnm h31, h0, [sp]
+3C20701F ldbfminnm h0, h31, [x0]
+3C207000 ldbfminnm h0, h0, [x0]
+3C217043 ldbfminnm h1, h3, [x2]
+
+// LDBFMINNMA_16 size=00|111|VR=1|00|A=1|R=0|1|Rs=xxxxx|o3=0|opc=111|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfminnma16: LDBFMINNMA  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3CA07005 ldbfminnma h0, h5, [x0]
+3CA0700C ldbfminnma h0, h12, [x0]
+3CA07013 ldbfminnma h0, h19, [x0]
+3CBF73E0 ldbfminnma h31, h0, [sp]
+3CA0701F ldbfminnma h0, h31, [x0]
+3CA07000 ldbfminnma h0, h0, [x0]
+3CA17043 ldbfminnma h1, h3, [x2]
+
+// LDBFMINNMAL_16 size=00|111|VR=1|00|A=1|R=1|1|Rs=xxxxx|o3=0|opc=111|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfminnmal16: LDBFMINNMAL  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3CE07003 ldbfminnmal h0, h3, [x0]
+3CE0700A ldbfminnmal h0, h10, [x0]
+3CE07011 ldbfminnmal h0, h17, [x0]
+3CFF73E0 ldbfminnmal h31, h0, [sp]
+3CE0701F ldbfminnmal h0, h31, [x0]
+3CE07000 ldbfminnmal h0, h0, [x0]
+3CE17043 ldbfminnmal h1, h3, [x2]
+
+// LDBFMINNML_16 size=00|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=0|opc=111|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfminnml16: LDBFMINNML  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3C607000 ldbfminnml h0, h0, [x0]
+3C607007 ldbfminnml h0, h7, [x0]
+3C60700E ldbfminnml h0, h14, [x0]
+3C7F73FF ldbfminnml h31, h31, [sp]
+3C617043 ldbfminnml h1, h3, [x2]

@@ -1,0 +1,19 @@
+// QADD_A1 cond=xxxx|00|010|opc=00|0|Rn=xxxx|Rd=xxxx|(0)(0)(0)(0)|0|101|Rm=xxxx
+// QaddA1: QADD{<c>}{<q>}  {<Rd>, }<Rm>, <Rn>
+// register fields: Rn, Rd, Rm
+010f4a57 qaddeq r4, r7, pc (unpredictable)
+310c6457 qaddlo r6, r7, r12 (unpredictable)
+310bda50 qaddlo sp, r0, r11 (unpredictable)
+9104bd5c qaddls r11, r12, r4 (unpredictable)
+61002d5a qaddvs r2, r10, r0 (unpredictable)
+210fb25d qaddhs r11, sp, pc (unpredictable)
+d1025559 qaddle r5, r9, r2 (unpredictable)
+71089e55 qaddvc r9, r5, r8 (unpredictable)
+// Binary Ninja's tests
+11031052 qaddne r1, r2, r3
+e1031052 qadd r1, r2, r3
+F10F4A57 UNALLOCATED
+810F0F5F qaddhi r0, pc, pc (unpredictable)
+410FF85F qaddmi pc, pc, pc (unpredictable)
+010FF157 qaddeq pc, r7, pc (unpredictable)
+010F4A54 qaddeq r4, r4, pc (unpredictable)

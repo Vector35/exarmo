@@ -1,0 +1,98 @@
+// CSNEG_32_condsel sf=0|op=1|S=0|11010100|Rm=xxxxx|cond=xxxx|0|o2=1|Rn=xxxxx|Rd=xxxxx
+// Csneg32Condsel: CSNEG  <Wd>, <Wn>, <Wm>, <cond>
+// CnegCsneg32Condsel: CNEG  <Wd>, <Wn>, <invcond>
+// read together by the CNEG alias: Rm, cond, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: Rm, cond, Rn
+5A9C2788 cneg w8, w28, cc
+5A9566B5 cneg w21, w21, vc
+5A8674CB cneg w11, w6, vs
+5A9C6789 cneg w9, w28, vc
+5A917632 cneg w18, w17, vs
+5A808409 cneg w9, w0, ls
+5A91B63F cneg wzr, w17, ge
+5A99D720 cneg w0, w25, gt
+5A8744F5 cneg w21, w7, pl
+5A8564A9 cneg w9, w5, vc
+5A8D35B5 cneg w21, w13, cs
+5A9DB7A5 cneg w5, w29, ge
+5A8694D8 cneg w24, w6, hi
+5A93667E cneg w30, w19, vc
+5A88B505 cneg w5, w8, ge
+5A9C178E cneg w14, w28, eq
+5A8964F3 csneg w19, w7, w9, vs
+5A8BD707 csneg w7, w24, w11, le
+5A88C79D csneg w29, w28, w8, gt
+5A8F651C csneg w28, w8, w15, vs
+5A8B147E csneg w30, w3, w11, ne
+5A9915BA csneg w26, w13, w25, ne
+5A9E6419 csneg w25, w0, w30, vs
+5A94949D csneg w29, w4, w20, ls
+5A9CB412 csneg w18, w0, w28, lt
+5A9F767A csneg w26, w19, wzr, vc
+5A8D07C5 csneg w5, w30, w13, eq
+5A9B9792 csneg w18, w28, w27, ls
+5A94E4D6 csneg w22, w6, w20, al
+5A8E4759 csneg w25, w26, w14, mi
+5A8AB456 csneg w22, w2, w10, lt
+5A9D877C csneg w28, w27, w29, hi
+5A9CF7E8 csneg w8, wzr, w28, nv
+5A800408 cneg w8, w0, ne
+5A8007E8 csneg w8, wzr, w0, eq
+5A80F408 csneg w8, w0, w0, nv
+5A80F7E8 csneg w8, wzr, w0, nv
+5A9F0408 csneg w8, w0, wzr, eq
+5A9F07E8 cneg w8, wzr, ne
+5A9FF408 csneg w8, w0, wzr, nv
+5A9FF7E8 csneg w8, wzr, wzr, nv
+5A810408 csneg w8, w0, w1, eq
+
+// CSNEG_64_condsel sf=1|op=1|S=0|11010100|Rm=xxxxx|cond=xxxx|0|o2=1|Rn=xxxxx|Rd=xxxxx
+// Csneg64Condsel: CSNEG  <Xd>, <Xn>, <Xm>, <cond>
+// CnegCsneg64Condsel: CNEG  <Xd>, <Xn>, <invcond>
+// read together by the CNEG alias: Rm, cond, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: Rm, cond, Rn
+DA9E97D1 cneg x17, lr, hi
+DA85A4BA cneg x26, x5, lt
+DA99C735 cneg x21, x25, le
+DA818423 cneg x3, x1, ls
+DA885506 cneg x6, x8, mi
+DA92D65B cneg x27, x18, gt
+DA997735 cneg x21, x25, vs
+DA814431 cneg x17, x1, pl
+DA9E97C6 cneg x6, lr, hi
+DA89352C cneg x12, x9, cs
+DA833475 cneg x21, x3, cs
+DA8614D2 cneg x18, x6, eq
+DA8754E2 cneg x2, x7, mi
+DA9B8771 cneg x17, x27, ls
+DA8E25CE cneg x14, x14, cc
+DA9F37F4 cneg x20, xzr, cs
+DA8015C4 csneg x4, x14, x0, ne
+DA99D791 csneg x17, x28, x25, le
+DA8677E5 csneg x5, xzr, x6, vc
+DA9984AD csneg x13, x5, x25, hi
+DA9C9590 csneg x16, x12, x28, ls
+DA8CD543 csneg x3, x10, x12, le
+DA83C6A5 csneg x5, x21, x3, gt
+DA818460 csneg x0, x3, x1, hi
+DA80E748 csneg x8, x26, x0, al
+DA9A255C csneg x28, x10, x26, cs
+DA8D166A csneg x10, x19, x13, ne
+DA987745 csneg x5, x26, x24, vc
+DA897514 csneg x20, x8, x9, vc
+DA8366CB csneg x11, x22, x3, vs
+DA87E6A0 csneg x0, x21, x7, al
+DA8A95E3 csneg x3, x15, x10, ls
+DA9E041F csneg xzr, x0, lr, eq
+DA9EF7D1 csneg x17, lr, lr, nv
+DA800411 cneg x17, x0, ne
+DA8007F1 csneg x17, xzr, x0, eq
+DA80F411 csneg x17, x0, x0, nv
+DA80F7F1 csneg x17, xzr, x0, nv
+DA9F0411 csneg x17, x0, xzr, eq
+DA9F07F1 cneg x17, xzr, ne
+DA9FF411 csneg x17, x0, xzr, nv
+DA9FF7F1 csneg x17, xzr, xzr, nv
+DA810411 csneg x17, x0, x1, eq

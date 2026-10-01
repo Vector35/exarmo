@@ -1,0 +1,276 @@
+// cmpeq_p_p_zi_ 001|0010|1|size=xx|0|imm5=xxxxx|op=1|0|o2=0|Pg=xxx|Zn=xxxxx|ne=0|Pd=xxxx
+// CmpeqPPZi: CMPEQ  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #<imm>
+// register fields: Pg, Zn, Pd
+251E8E29 cmpeq p9.b, p3/z, z17.b, #-2
+25569C21 cmpeq p1.h, p7/z, z1.h, #-10
+2598884E cmpeq p14.s, p2/z, z2.s, #-8
+254589CB cmpeq p11.h, p2/z, z14.h, #0x5
+258E8FCE cmpeq p14.s, p3/z, z30.s, #0xe
+25C186C6 cmpeq p6.d, p1/z, z22.d, #0x1
+259197CF cmpeq p15.s, p5/z, z30.s, #-15
+251A8C8B cmpeq p11.b, p3/z, z4.b, #-6
+25879B49 cmpeq p9.s, p6/z, z26.s, #0x7
+25CF81AA cmpeq p10.d, p0/z, z13.d, #0xf
+251399A0 cmpeq p0.b, p6/z, z13.b, #-13
+25D083EA cmpeq p10.d, p0/z, z31.d, #-16
+250A81E0 cmpeq p0.b, p0/z, z15.b, #0xa
+25D18145 cmpeq p5.d, p0/z, z10.d, #-15
+258C962E cmpeq p14.s, p5/z, z17.s, #0xc
+259F9185 cmpeq p5.s, p4/z, z12.s, #-1
+25008C09 cmpeq p9.b, p3/z, z0.b, #0x0
+25088E29 cmpeq p9.b, p3/z, z17.b, #0x8
+25048E29 cmpeq p9.b, p3/z, z17.b, #0x4
+25028E29 cmpeq p9.b, p3/z, z17.b, #0x2
+
+// cmpge_p_p_zi_ 001|0010|1|size=xx|0|imm5=xxxxx|op=0|0|lt=0|Pg=xxx|Zn=xxxxx|ne=0|Pd=xxxx
+// CmpgePPZi: CMPGE  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #<imm>
+// register fields: Pg, Zn, Pd
+25DB0C4C cmpge p12.d, p3/z, z2.d, #-5
+258614E4 cmpge p4.s, p5/z, z7.s, #0x6
+25D91208 cmpge p8.d, p4/z, z16.d, #-7
+25551D69 cmpge p9.h, p7/z, z11.h, #-11
+2556066C cmpge p12.h, p1/z, z19.h, #-10
+259B1C27 cmpge p7.s, p7/z, z1.s, #-5
+25DC1360 cmpge p0.d, p4/z, z27.d, #-4
+2502040B cmpge p11.b, p1/z, z0.b, #0x2
+25D5134E cmpge p14.d, p4/z, z26.d, #-11
+25D31EE5 cmpge p5.d, p7/z, z23.d, #-13
+25C31B69 cmpge p9.d, p6/z, z27.d, #0x3
+258818A0 cmpge p0.s, p6/z, z5.s, #0x8
+2511072F cmpge p15.b, p1/z, z25.b, #-15
+250C03E9 cmpge p9.b, p0/z, z31.b, #0xc
+25DB11A9 cmpge p9.d, p4/z, z13.d, #-5
+258C07A6 cmpge p6.s, p1/z, z29.s, #0xc
+25C0084C cmpge p12.d, p2/z, z2.d, #0x0
+25DF0C4C cmpge p12.d, p3/z, z2.d, #-0x1
+25DB0C42 cmpge p2.d, p3/z, z2.d, #-0x5
+25D00C4C cmpge p12.d, p3/z, z2.d, #-0x10
+25C40C4C cmpge p12.d, p3/z, z2.d, #0x4
+25C10C4C cmpge p12.d, p3/z, z2.d, #0x1
+
+// cmpgt_p_p_zi_ 001|0010|1|size=xx|0|imm5=xxxxx|op=0|0|lt=0|Pg=xxx|Zn=xxxxx|ne=1|Pd=xxxx
+// CmpgtPPZi: CMPGT  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #<imm>
+// register fields: Pg, Zn, Pd
+25160FF0 cmpgt p0.b, p3/z, z31.b, #-10
+25091135 cmpgt p5.b, p4/z, z9.b, #0x9
+25171D1A cmpgt p10.b, p7/z, z8.b, #-9
+258E0796 cmpgt p6.s, p1/z, z28.s, #0xe
+25500A9A cmpgt p10.h, p2/z, z20.h, #-16
+258B0D58 cmpgt p8.s, p3/z, z10.s, #0xb
+259519F2 cmpgt p2.s, p6/z, z15.s, #-11
+25CC049B cmpgt p11.d, p1/z, z4.d, #0xc
+258313B5 cmpgt p5.s, p4/z, z29.s, #0x3
+259B057D cmpgt p13.s, p1/z, z11.s, #-5
+25021BDF cmpgt p15.b, p6/z, z30.b, #0x2
+258E193C cmpgt p12.s, p6/z, z9.s, #0xe
+25070AD2 cmpgt p2.b, p2/z, z22.b, #0x7
+25D70337 cmpgt p7.d, p0/z, z25.d, #-9
+259217D3 cmpgt p3.s, p5/z, z30.s, #-14
+25C70453 cmpgt p3.d, p1/z, z2.d, #0x7
+25000C10 cmpgt p0.b, p3/z, z0.b, #0x0
+251F0FF0 cmpgt p0.b, p3/z, z31.b, #-0x1
+25160C70 cmpgt p0.b, p3/z, z3.b, #-0xa
+25080FF0 cmpgt p0.b, p3/z, z31.b, #0x8
+25040FF0 cmpgt p0.b, p3/z, z31.b, #0x4
+25010FF0 cmpgt p0.b, p3/z, z31.b, #0x1
+
+// cmphi_p_p_zi_ 001|0010|0|size=xx|1|imm7=xxxxxxx|lt=0|Pg=xxx|Zn=xxxxx|ne=1|Pd=xxxx
+// CmphiPPZi: CMPHI  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #<imm>
+// register fields: Pg, Zn, Pd
+242E1373 cmphi p3.b, p4/z, z27.b, #0x38
+2474011D cmphi p13.h, p0/z, z8.h, #0x50
+24FADB3F cmphi p15.d, p6/z, z25.d, #0x6b
+243E08F0 cmphi p0.b, p2/z, z7.b, #0x78
+2429CDF7 cmphi p7.b, p3/z, z15.b, #0x27
+24355874 cmphi p4.b, p6/z, z3.b, #0x55
+247C4F70 cmphi p0.h, p3/z, z27.h, #0x71
+243159DF cmphi p15.b, p6/z, z14.b, #0x45
+24BCCB7C cmphi p12.s, p2/z, z27.s, #0x73
+2439DA5A cmphi p10.b, p6/z, z18.b, #0x67
+24FD5C50 cmphi p0.d, p7/z, z2.d, #0x75
+24771FF9 cmphi p9.h, p7/z, z31.h, #0x5c
+24765A5F cmphi p15.h, p6/z, z18.h, #0x59
+24A10671 cmphi p1.s, p1/z, z19.s, #0x4
+24AEC71B cmphi p11.s, p1/z, z24.s, #0x3b
+243F1353 cmphi p3.b, p4/z, z26.b, #0x7c
+24201413 cmphi p3.b, p5/z, z0.b, #0x0
+243FD373 cmphi p3.b, p4/z, z27.b, #0x7f
+242E1093 cmphi p3.b, p4/z, z4.b, #0x38
+242E1073 cmphi p3.b, p4/z, z3.b, #0x38
+24301373 cmphi p3.b, p4/z, z27.b, #0x40
+24281373 cmphi p3.b, p4/z, z27.b, #0x20
+24241373 cmphi p3.b, p4/z, z27.b, #0x10
+24221373 cmphi p3.b, p4/z, z27.b, #0x8
+24209373 cmphi p3.b, p4/z, z27.b, #0x2
+24205373 cmphi p3.b, p4/z, z27.b, #0x1
+
+// cmphs_p_p_zi_ 001|0010|0|size=xx|1|imm7=xxxxxxx|lt=0|Pg=xxx|Zn=xxxxx|ne=0|Pd=xxxx
+// CmphsPPZi: CMPHS  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #<imm>
+// register fields: Pg, Zn, Pd
+24BB454A cmphs p10.s, p1/z, z10.s, #0x6d
+24380683 cmphs p3.b, p1/z, z20.b, #0x60
+242E1BAF cmphs p15.b, p6/z, z29.b, #0x38
+243C4302 cmphs p2.b, p0/z, z24.b, #0x71
+24EF9E2B cmphs p11.d, p7/z, z17.d, #0x3e
+24EB88E7 cmphs p7.d, p2/z, z7.d, #0x2e
+24224586 cmphs p6.b, p1/z, z12.b, #0x9
+242691E7 cmphs p7.b, p4/z, z15.b, #0x1a
+2474CFCE cmphs p14.h, p3/z, z30.h, #0x53
+247000AE cmphs p14.h, p0/z, z5.h, #0x40
+24F1946B cmphs p11.d, p5/z, z3.d, #0x46
+24A15EC1 cmphs p1.s, p7/z, z22.s, #0x5
+24E180E8 cmphs p8.d, p0/z, z7.d, #0x6
+246F11E9 cmphs p9.h, p4/z, z15.h, #0x3c
+24FB91C0 cmphs p0.d, p4/z, z14.d, #0x6e
+246A9C69 cmphs p9.h, p7/z, z3.h, #0x2a
+24A0040A cmphs p10.s, p1/z, z0.s, #0x0
+24BFC7EA cmphs p10.s, p1/z, z31.s, #0x7f
+24BB442A cmphs p10.s, p1/z, z1.s, #0x6d
+24BB4541 cmphs p1.s, p1/z, z10.s, #0x6d
+24A8054A cmphs p10.s, p1/z, z10.s, #0x20
+24A4054A cmphs p10.s, p1/z, z10.s, #0x10
+24A2054A cmphs p10.s, p1/z, z10.s, #0x8
+24A1054A cmphs p10.s, p1/z, z10.s, #0x4
+24A0854A cmphs p10.s, p1/z, z10.s, #0x2
+24A0454A cmphs p10.s, p1/z, z10.s, #0x1
+
+// cmple_p_p_zi_ 001|0010|1|size=xx|0|imm5=xxxxx|op=0|0|lt=1|Pg=xxx|Zn=xxxxx|ne=1|Pd=xxxx
+// CmplePPZi: CMPLE  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #<imm>
+// register fields: Pg, Zn, Pd
+25D525F1 cmple p1.d, p1/z, z15.d, #-11
+25543219 cmple p9.h, p4/z, z16.h, #-12
+250C2ABF cmple p15.b, p2/z, z21.b, #0xc
+258E3A5C cmple p12.s, p6/z, z18.s, #0xe
+251628D8 cmple p8.b, p2/z, z6.b, #-10
+25123414 cmple p4.b, p5/z, z0.b, #-14
+251F3E38 cmple p8.b, p7/z, z17.b, #-1
+258534DE cmple p14.s, p5/z, z6.s, #0x5
+25D7251F cmple p15.d, p1/z, z8.d, #-9
+25912597 cmple p7.s, p1/z, z12.s, #-15
+2557327B cmple p11.h, p4/z, z19.h, #-9
+25CF3AB2 cmple p2.d, p6/z, z21.d, #0xf
+254A3B18 cmple p8.h, p6/z, z24.h, #0xa
+250B2A74 cmple p4.b, p2/z, z19.b, #0xb
+25D52F7C cmple p12.d, p3/z, z27.d, #-11
+25933F71 cmple p1.s, p7/z, z27.s, #-13
+25C023F0 cmple p0.d, p0/z, z31.d, #0x0
+25D52431 cmple p1.d, p1/z, z1.d, #-0xb
+25D525FF cmple p15.d, p1/z, z15.d, #-0xb
+25D025F1 cmple p1.d, p1/z, z15.d, #-0x10
+25C825F1 cmple p1.d, p1/z, z15.d, #0x8
+25C425F1 cmple p1.d, p1/z, z15.d, #0x4
+25C225F1 cmple p1.d, p1/z, z15.d, #0x2
+25C125F1 cmple p1.d, p1/z, z15.d, #0x1
+
+// cmplo_p_p_zi_ 001|0010|0|size=xx|1|imm7=xxxxxxx|lt=1|Pg=xxx|Zn=xxxxx|ne=0|Pd=xxxx
+// CmploPPZi: CMPLO  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #<imm>
+// register fields: Pg, Zn, Pd
+2436B8A7 cmplo p7.b, p6/z, z5.b, #0x5a
+24BFAC0B cmplo p11.s, p3/z, z0.s, #0x7e
+24A7A5ED cmplo p13.s, p1/z, z15.s, #0x1e
+246B28A3 cmplo p3.h, p2/z, z5.h, #0x2c
+24F7B2C5 cmplo p5.d, p4/z, z22.d, #0x5e
+24AE3F62 cmplo p2.s, p7/z, z27.s, #0x38
+243CBC8B cmplo p11.b, p7/z, z4.b, #0x72
+24FD7E80 cmplo p0.d, p7/z, z20.d, #0x75
+2424EE0C cmplo p12.b, p3/z, z16.b, #0x13
+247FAB82 cmplo p2.h, p2/z, z28.h, #0x7e
+2461FBC9 cmplo p9.h, p6/z, z30.h, #0x7
+2471E2C2 cmplo p2.h, p0/z, z22.h, #0x47
+2427F88C cmplo p12.b, p6/z, z4.b, #0x1f
+2479AA86 cmplo p6.h, p2/z, z20.h, #0x66
+24E33A84 cmplo p4.d, p6/z, z20.d, #0xc
+2423EB28 cmplo p8.b, p2/z, z25.b, #0xf
+242037EF cmplo p15.b, p5/z, z31.b, #0x0
+243FF8A7 cmplo p7.b, p6/z, z5.b, #0x7f
+2436B8C7 cmplo p7.b, p6/z, z6.b, #0x5a
+2436B8A5 cmplo p5.b, p6/z, z5.b, #0x5a
+243038A7 cmplo p7.b, p6/z, z5.b, #0x40
+242838A7 cmplo p7.b, p6/z, z5.b, #0x20
+242438A7 cmplo p7.b, p6/z, z5.b, #0x10
+242238A7 cmplo p7.b, p6/z, z5.b, #0x8
+242138A7 cmplo p7.b, p6/z, z5.b, #0x4
+2420B8A7 cmplo p7.b, p6/z, z5.b, #0x2
+242078A7 cmplo p7.b, p6/z, z5.b, #0x1
+
+// cmpls_p_p_zi_ 001|0010|0|size=xx|1|imm7=xxxxxxx|lt=1|Pg=xxx|Zn=xxxxx|ne=1|Pd=xxxx
+// CmplsPPZi: CMPLS  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #<imm>
+// register fields: Pg, Zn, Pd
+2424A5DC cmpls p12.b, p1/z, z14.b, #0x12
+24E2FAB5 cmpls p5.d, p6/z, z21.d, #0xb
+24653552 cmpls p2.h, p5/z, z10.h, #0x14
+242767BF cmpls p15.b, p1/z, z29.b, #0x1d
+24E4A93D cmpls p13.d, p2/z, z9.d, #0x12
+24286076 cmpls p6.b, p0/z, z3.b, #0x21
+243F6B58 cmpls p8.b, p2/z, z26.b, #0x7d
+2436F3D0 cmpls p0.b, p4/z, z30.b, #0x5b
+2467E9D9 cmpls p9.h, p2/z, z14.h, #0x1f
+24AF7E35 cmpls p5.s, p7/z, z17.s, #0x3d
+242EB4DA cmpls p10.b, p5/z, z6.b, #0x3a
+246EB6DC cmpls p12.h, p5/z, z22.h, #0x3a
+24793F74 cmpls p4.h, p7/z, z27.h, #0x64
+2468EED9 cmpls p9.h, p3/z, z22.h, #0x23
+24F27693 cmpls p3.d, p5/z, z20.d, #0x49
+24E4BB33 cmpls p3.d, p6/z, z25.d, #0x12
+2420241C cmpls p12.b, p1/z, z0.b, #0x0
+243FE7FC cmpls p12.b, p1/z, z31.b, #0x7f
+2424A43C cmpls p12.b, p1/z, z1.b, #0x12
+2424A5D1 cmpls p1.b, p1/z, z14.b, #0x12
+2424A5DE cmpls p14.b, p1/z, z14.b, #0x12
+243025DC cmpls p12.b, p1/z, z14.b, #0x40
+242825DC cmpls p12.b, p1/z, z14.b, #0x20
+242425DC cmpls p12.b, p1/z, z14.b, #0x10
+242225DC cmpls p12.b, p1/z, z14.b, #0x8
+242125DC cmpls p12.b, p1/z, z14.b, #0x4
+2420A5DC cmpls p12.b, p1/z, z14.b, #0x2
+242065DC cmpls p12.b, p1/z, z14.b, #0x1
+
+// cmplt_p_p_zi_ 001|0010|1|size=xx|0|imm5=xxxxx|op=0|0|lt=1|Pg=xxx|Zn=xxxxx|ne=0|Pd=xxxx
+// CmpltPPZi: CMPLT  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #<imm>
+// register fields: Pg, Zn, Pd
+25143483 cmplt p3.b, p5/z, z4.b, #-12
+25DA2063 cmplt p3.d, p0/z, z3.d, #-6
+254C3F23 cmplt p3.h, p7/z, z25.h, #0xc
+258138C3 cmplt p3.s, p6/z, z6.s, #0x1
+255B28A7 cmplt p7.h, p2/z, z5.h, #-5
+251A2C4E cmplt p14.b, p3/z, z2.b, #-6
+25432EE6 cmplt p6.h, p3/z, z23.h, #0x3
+25103E63 cmplt p3.b, p7/z, z19.b, #-16
+25C82EC8 cmplt p8.d, p3/z, z22.d, #0x8
+255431AE cmplt p14.h, p4/z, z13.h, #-12
+255B3A29 cmplt p9.h, p6/z, z17.h, #-5
+25CA206C cmplt p12.d, p0/z, z3.d, #0xa
+255F36AD cmplt p13.h, p5/z, z21.h, #-1
+250D38E6 cmplt p6.b, p6/z, z7.b, #0xd
+255831E4 cmplt p4.h, p4/z, z15.h, #-8
+258E204D cmplt p13.s, p0/z, z2.s, #0xe
+25002400 cmplt p0.b, p1/z, z0.b, #0x0
+251437EF cmplt p15.b, p5/z, z31.b, #-0xc
+25043483 cmplt p3.b, p5/z, z4.b, #0x4
+25023483 cmplt p3.b, p5/z, z4.b, #0x2
+
+// cmpne_p_p_zi_ 001|0010|1|size=xx|0|imm5=xxxxx|op=1|0|o2=0|Pg=xxx|Zn=xxxxx|ne=1|Pd=xxxx
+// CmpnePPZi: CMPNE  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, #<imm>
+// register fields: Pg, Zn, Pd
+25C29798 cmpne p8.d, p5/z, z28.d, #0x2
+258E86B4 cmpne p4.s, p1/z, z21.s, #0xe
+25CC9CFA cmpne p10.d, p7/z, z7.d, #0xc
+25979030 cmpne p0.s, p4/z, z1.s, #-9
+251B9AF8 cmpne p8.b, p6/z, z23.b, #-5
+25488138 cmpne p8.h, p0/z, z9.h, #0x8
+25988CDB cmpne p11.s, p3/z, z6.s, #-8
+255D9A1F cmpne p15.h, p6/z, z16.h, #-3
+250C9F5A cmpne p10.b, p7/z, z26.b, #0xc
+25D08938 cmpne p8.d, p2/z, z9.d, #-16
+2512843B cmpne p11.b, p1/z, z1.b, #-14
+251E8C30 cmpne p0.b, p3/z, z1.b, #-2
+2583867E cmpne p14.s, p1/z, z19.s, #0x3
+25D59ED9 cmpne p9.d, p7/z, z22.d, #-11
+258C85B8 cmpne p8.s, p1/z, z13.s, #0xc
+255392D0 cmpne p0.h, p4/z, z22.h, #-13
+25C09418 cmpne p8.d, p5/z, z0.d, #0x0
+25DF97F8 cmpne p8.d, p5/z, z31.d, #-0x1
+25C29795 cmpne p5.d, p5/z, z28.d, #0x2
+25C29518 cmpne p8.d, p5/z, z8.d, #0x2
+25C49798 cmpne p8.d, p5/z, z28.d, #0x4
+25C19798 cmpne p8.d, p5/z, z28.d, #0x1

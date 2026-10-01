@@ -1,0 +1,53 @@
+// VSHL_i_A1_D 1111001|U=0|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=0101|L=x|Q=0|M=x|1|Vm=xxxx
+// VshlIA1D: VSHL{<c>}{<q>}.I<size>  {<Dd>, }<Dm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f2ede53e vshl.i32 d30, d30, #13
+f2e535b5 vshl.i64 d19, d21, #37
+f29ce51b vshl.i16 d14, d11, #12
+f2d735bf vshl.i64 d19, d31, #23
+f2d6f511 vshl.i16 d31, d1, #6
+f2be95b1 vshl.i64 d9, d17, #62
+f2bd8512 vshl.i32 d8, d2, #29
+f2cf653e vshl.i8 d22, d30, #7
+F2C005B0 vshl.i64 d16, d16, #0x0
+F2FF4538 vshl.i32 d20, d24, #0x1f
+F2E02534 vshl.i32 d18, d20, #0x0
+F2D01510 vshl.i16 d17, d0, #0x0
+F288051F vshl.i8 d0, d15, #0x0
+F284F5B0 vshl.i64 d15, d16, #0x4
+F2C205B5 vshl.i64 d16, d21, #0x2
+F2C135B5 vshl.i64 d19, d21, #0x1
+F2C0E5BE vshl.i64 d30, d30, #0x0
+F2FFE53E vshl.i32 d30, d30, #0x1f
+F2FFE5BE vshl.i64 d30, d30, #0x3f
+
+// VSHL_i_A1_Q 1111001|U=0|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=0101|L=x|Q=1|M=x|1|Vm=xxxx
+// VshlIA1Q: VSHL{<c>}{<q>}.I<size>  {<Qd>, }<Qm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f2f76574 vshl.i32 q11, q10, #23
+f2f405f2 vshl.i64 q8, q9, #52
+f2d1057a vshl.i16 q8, q13, #1
+f2dd2570 vshl.i16 q9, q8, #13
+f29e457c vshl.i16 q2, q14, #14
+f2ada556 vshl.i32 q5, q3, #13
+f29965fc vshl.i64 q3, q14, #25
+f29f65dc vshl.i64 q3, q6, #31
+F2C085F8 vshl.i64 q12, q12, #0x0
+F2BF0550 vshl.i32 q0, q0, #0x1f
+F2E06574 vshl.i32 q11, q10, #0x0
+F2D06574 vshl.i16 q11, q10, #0x0
+F2C86574 vshl.i8 q11, q10, #0x0
+F2C405F2 vshl.i64 q8, q9, #0x4
+F2C205F2 vshl.i64 q8, q9, #0x2
+F2C105F2 vshl.i64 q8, q9, #0x1
+F2C0F57F UNDEFINED
+F2F71571 UNDEFINED
+F2C065F4 vshl.i64 q11, q10, #0x0
+F2FF6574 vshl.i32 q11, q10, #0x1f
+F2FF65F4 vshl.i64 q11, q10, #0x3f
+F2B7F55F UNDEFINED
+F2F7F57F UNDEFINED

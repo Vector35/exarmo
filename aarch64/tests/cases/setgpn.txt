@@ -1,0 +1,29 @@
+// SETGEN_SET_memcms sz=xx|011|o0=1|01|op1=11|0|Rs=xxxxx|op2=1010|01|Rn=xxxxx|Rd=xxxxx
+// SetgenSetMemcms: SETGEN  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+1DC0A400 setgen [x0]!, x0!, x0
+1DDFA7FF setgen [xzr]!, xzr!, xzr
+5DC0A400 UNDEFINED
+9DC0A400 UNDEFINED
+DDC0A400 UNDEFINED
+1DC1A443 setgen [x3]!, x2!, x1
+
+// SETGMN_SET_memcms sz=xx|011|o0=1|01|op1=11|0|Rs=xxxxx|op2=0110|01|Rn=xxxxx|Rd=xxxxx
+// SetgmnSetMemcms: SETGMN  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+1DC06400 setgmn [x0]!, x0!, x0
+1DDF67FF setgmn [xzr]!, xzr!, xzr
+5DC06400 UNDEFINED
+9DC06400 UNDEFINED
+DDC06400 UNDEFINED
+1DC16443 setgmn [x3]!, x2!, x1
+
+// SETGPN_SET_memcms sz=xx|011|o0=1|01|op1=11|0|Rs=xxxxx|op2=0010|01|Rn=xxxxx|Rd=xxxxx
+// SetgpnSetMemcms: SETGPN  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+1DC02400 setgpn [x0]!, x0!, x0
+1DDF27FF setgpn [xzr]!, xzr!, xzr
+5DC02400 UNDEFINED
+9DC02400 UNDEFINED
+DDC02400 UNDEFINED
+1DC12443 setgpn [x3]!, x2!, x1

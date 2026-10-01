@@ -1,0 +1,11 @@
+// SDIV_T1 111|1101|11|op1=001|Rn=xxxx|(1)(1)(1)(1)|Rd=xxxx|op2=1111|Rm=xxxx
+// SdivT1: SDIV{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb96f3f4 sdiv r3, r6, r4
+FB9000F0 sdiv r0, r0, r0 (unpredictable)
+FB9F8FFF sdiv pc, pc, pc (unpredictable)
+FB9646F4 sdiv r6, r6, r4 (unpredictable)
+FB9623F6 sdiv r3, r6, r6 (unpredictable)
+FB9613F3 sdiv r3, r6, r3 (unpredictable)
+FB96F3F4 [ne] sdivne r3, r6, r4

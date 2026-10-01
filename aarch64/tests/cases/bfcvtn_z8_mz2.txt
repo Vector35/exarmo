@@ -1,0 +1,9 @@
+// bfcvtn_z8_mz2_bf2b 011|0010|1|00|001|010|0011|opc=10|Zn=xxxx|0|Zd=xxxxx
+// BfcvtnZ8Mz2Bf2b: BFCVTN  <Zd>.B, { <Zn1>.H-<Zn2>.H }
+// register fields: Zn, Zd
+650A3805 bfcvtn z5.b, {z0.h-z1.h}
+650A380C bfcvtn z12.b, {z0.h-z1.h}
+650A3813 bfcvtn z19.b, {z0.h-z1.h}
+650A3BC0 bfcvtn z0.b, {z30.h-z31.h}
+650A381F bfcvtn z31.b, {z0.h-z1.h}
+650A3800 bfcvtn z0.b, {z0.h-z1.h}

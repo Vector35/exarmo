@@ -1,0 +1,19 @@
+// SHSUB8_A1 cond=xxxx|011|00|op1=011|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=1|op2=11|1|Rm=xxxx
+// Shsub8A1: SHSUB8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+c63dfaff shsub8gt pc, sp, pc (unpredictable)
+863bfbf1 shsub8hi pc, r11, r1 (unpredictable)
+463975f2 shsub8mi r7, r9, r2 (unpredictable)
+663863f4 shsub8vs r6, r8, r4 (unpredictable)
+d63166f4 shsub8le r6, r1, r4 (unpredictable)
+863b42fe shsub8hi r4, r11, lr (unpredictable)
+963217f2 shsub8ls r1, r2, r2 (unpredictable)
+163febf3 shsub8ne lr, pc, r3 (unpredictable)
+// Binary Ninja's tests
+c6384ff2 shsub8gt r4, r8, r2
+e6384ff2 shsub8 r4, r8, r2
+063000F0 shsub8eq r0, r0, r0 (unpredictable)
+F63DFAFF UNALLOCATED
+263DD8FF shsub8cs sp, sp, pc (unpredictable)
+C63DF4FF shsub8gt pc, sp, pc (unpredictable)
+C63DF1FF shsub8gt pc, sp, pc (unpredictable)

@@ -1,0 +1,28 @@
+// lasta_r_p_z_ 000|0010|1|size=xx|1|0|000|B=0|10|1|Pg=xxx|Zn=xxxxx|Rd=xxxxx
+// LastaRPZ: LASTA  <d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Rd
+// register fields: Pg, Zn, Rd
+05E0BA9F lasta xzr, p6, z20.d
+05A0B8E1 lasta w1, p6, z7.s
+0520A196 lasta w22, p0, z12.b
+05A0AAAC lasta w12, p2, z21.s
+05E0B256 lasta x22, p4, z18.d
+0560B115 lasta w21, p4, z8.h
+0520BAC9 lasta w9, p6, z22.b
+0560A761 lasta w1, p1, z27.h
+0560BD4B lasta w11, p7, z10.h
+0520BDF6 lasta w22, p7, z15.b
+05E0A384 lasta x4, p0, z28.d
+05A0B094 lasta w20, p4, z4.s
+05A0A7B8 lasta w24, p1, z29.s
+0560BD75 lasta w21, p7, z11.h
+0520B5A4 lasta w4, p5, z13.b
+0520BE64 lasta w4, p7, z19.b
+05E0AC00 lasta x0, p3, z0.d
+05E0BBFF lasta xzr, p6, z31.d
+0520BA80 lasta w0, p6, z20.b
+0520BA9F lasta wzr, p6, z20.b
+0560BA80 lasta w0, p6, z20.h
+0560BA9F lasta wzr, p6, z20.h
+05A0BA80 lasta w0, p6, z20.s
+05A0BA9F lasta wzr, p6, z20.s

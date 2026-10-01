@@ -1,0 +1,29 @@
+// USUBL_asimddiff_L 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|00|o1=1|0|00|Rn=xxxxx|Rd=xxxxx
+// UsublAsimddiffL: USUBL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// UsublAsimddiffL2: USUBL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+6E7522C4 usubl2 v4.4s, v22.8h, v21.8h
+6E72200E usubl2 v14.4s, v0.8h, v18.8h
+2E3B215C usubl v28.8h, v10.8b, v27.8b
+2EB62166 usubl v6.2d, v11.2s, v22.2s
+2E32209C usubl v28.8h, v4.8b, v18.8b
+6E3F2096 usubl2 v22.8h, v4.16b, v31.16b
+6E2E2072 usubl2 v18.8h, v3.16b, v14.16b
+6E30226A usubl2 v10.8h, v19.16b, v16.16b
+2EBA2147 usubl v7.2d, v10.2s, v26.2s
+2EB423CA usubl v10.2d, v30.2s, v20.2s
+2E3521FD usubl v29.8h, v15.8b, v21.8b
+6E61238D usubl2 v13.4s, v28.8h, v1.8h
+2EA42010 usubl v16.2d, v0.2s, v4.2s
+2E2B2202 usubl v2.8h, v16.8b, v11.8b
+2EAC2287 usubl v7.2d, v20.2s, v12.2s
+2EBF2334 usubl v20.2d, v25.2s, v31.2s
+6E6023E0 usubl2 v0.4s, v31.8h, v0.8h
+6E7522DF usubl2 v31.4s, v22.8h, v21.8h
+6EF522C4 UNDEFINED
+2E7522A4 usubl v4.4s, v21.4h, v21.4h
+2EF522C4 UNDEFINED
+6EB522D6 usubl2 v22.2d, v22.4s, v21.4s
+6E2B2202 usubl2 v2.8h, v16.16b, v11.16b

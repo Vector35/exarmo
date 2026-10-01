@@ -1,0 +1,272 @@
+// VSELEQ_A1_D 111111100|D=x|cc=00|Vn=xxxx|Vd=xxxx|10|size=11|N=x|0|M=x|0|Vm=xxxx
+// VseleqA1D: VSELEQ.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fe0e7b20 vseleq.f64 d7, d14, d16
+fe4d4b81 vseleq.f64 d20, d29, d1
+fe0abba4 vseleq.f64 d11, d26, d20
+fe481b04 vseleq.f64 d17, d8, d4
+fe009b09 vseleq.f64 d9, d0, d9
+fe0d7b8c vseleq.f64 d7, d29, d12
+fe0fdb2c vseleq.f64 d13, d15, d28
+fe4f9b2c vseleq.f64 d25, d15, d28
+// Binary Ninja's tests
+fe042b08 vseleq.f64 d2, d4, d8
+FE020B2F vseleq.f64 d0, d2, d31
+FE01FB22 vseleq.f64 d15, d1, d18
+FE008B80 vseleq.f64 d8, d16, d0
+FE0F0B8F vseleq.f64 d0, d31, d15
+FE0EFB2F vseleq.f64 d15, d14, d31
+FE4E0B20 vseleq.f64 d16, d14, d16
+FE4EFB20 vseleq.f64 d31, d14, d16
+
+// VSELEQ_A1_H 111111100|D=x|cc=00|Vn=xxxx|Vd=xxxx|10|size=01|N=x|0|M=x|0|Vm=xxxx
+// VseleqA1H: VSELEQ.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe0f790c vseleq.f16 s14, s30, s24
+fe4ba92d vseleq.f16 s21, s22, s27
+fe48892b vseleq.f16 s17, s16, s23
+fe457902 vseleq.f16 s15, s10, s4
+fe0d590d vseleq.f16 s10, s26, s26
+fe45d921 vseleq.f16 s27, s10, s3
+fe4309ae vseleq.f16 s1, s7, s29
+fe0f7927 vseleq.f16 s14, s30, s15
+FE00F900 vseleq.f16 s30, s0, s0
+FE04490F vseleq.f16 s8, s8, s30
+FE022908 vseleq.f16 s4, s4, s16
+FE011904 vseleq.f16 s2, s2, s8
+FE000900 vseleq.f16 s0, s0, s0
+FE00F98F vseleq.f16 s30, s1, s30
+FE4FF9A0 vseleq.f16 s31, s31, s1
+FE0F792F vseleq.f16 s14, s30, s31
+
+// VSELEQ_A1_S 111111100|D=x|cc=00|Vn=xxxx|Vd=xxxx|10|size=10|N=x|0|M=x|0|Vm=xxxx
+// VseleqA1S: VSELEQ.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe484a26 vseleq.f32 s9, s16, s13
+fe4cbaab vseleq.f32 s23, s25, s23
+fe44da21 vseleq.f32 s27, s8, s3
+fe02ca25 vseleq.f32 s24, s4, s11
+fe088a2f vseleq.f32 s16, s16, s31
+fe485a2f vseleq.f32 s11, s16, s31
+fe4a7aaf vseleq.f32 s15, s21, s31
+fe4fba8f vseleq.f32 s23, s31, s30
+// Binary Ninja's tests
+fe0efa2b vseleq.f32 s30, s28, s23
+FE400A20 vseleq.f32 s1, s0, s1
+FE412A28 vseleq.f32 s5, s2, s17
+FE401A24 vseleq.f32 s3, s0, s9
+FE000AA2 vseleq.f32 s0, s1, s5
+FE4F0A00 vseleq.f32 s1, s30, s0
+FE48FA20 vseleq.f32 s31, s16, s1
+
+// VSELGE_A1_D 111111100|D=x|cc=10|Vn=xxxx|Vd=xxxx|10|size=11|N=x|0|M=x|0|Vm=xxxx
+// VselgeA1D: VSELGE.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fe29fb22 vselge.f64 d15, d9, d18
+fe685b87 vselge.f64 d21, d24, d7
+fe64fb0d vselge.f64 d31, d4, d13
+fe6dbba5 vselge.f64 d27, d29, d21
+fe207b88 vselge.f64 d7, d16, d8
+fe2f9ba3 vselge.f64 d9, d31, d19
+fe294b2d vselge.f64 d4, d9, d29
+fe6aeb21 vselge.f64 d30, d10, d17
+// Binary Ninja's tests
+fe6feba7 vselge.f64 d30, d31, d23
+FE220B20 vselge.f64 d0, d2, d16
+FE218B2F vselge.f64 d8, d1, d31
+FE202B24 vselge.f64 d2, d0, d20
+FE2F1B00 vselge.f64 d1, d15, d0
+FE290B0F vselge.f64 d0, d9, d15
+FE690B20 vselge.f64 d16, d9, d16
+FE29FB2F vselge.f64 d15, d9, d31
+
+// VSELGE_A1_H 111111100|D=x|cc=10|Vn=xxxx|Vd=xxxx|10|size=01|N=x|0|M=x|0|Vm=xxxx
+// VselgeA1H: VSELGE.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe6f1986 vselge.f16 s3, s31, s12
+fe623925 vselge.f16 s7, s4, s11
+fe2369af vselge.f16 s12, s7, s31
+fe204906 vselge.f16 s8, s0, s12
+fe205987 vselge.f16 s10, s1, s14
+fe2b5927 vselge.f16 s10, s22, s15
+fe6f9928 vselge.f16 s19, s30, s17
+fe213928 vselge.f16 s6, s2, s17
+FE680980 vselge.f16 s1, s17, s0
+FE64F984 vselge.f16 s31, s9, s8
+FE6F8982 vselge.f16 s17, s31, s4
+FE6F2981 vselge.f16 s5, s31, s2
+FE2F0980 vselge.f16 s0, s31, s0
+FE2FF98F vselge.f16 s30, s31, s30
+FE6F09A0 vselge.f16 s1, s31, s1
+FE6FF986 vselge.f16 s31, s31, s12
+
+// VSELGE_A1_S 111111100|D=x|cc=10|Vn=xxxx|Vd=xxxx|10|size=10|N=x|0|M=x|0|Vm=xxxx
+// VselgeA1S: VSELGE.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe205a0e vselge.f32 s10, s0, s28
+fe235a20 vselge.f32 s10, s6, s1
+fe26aa2f vselge.f32 s20, s12, s31
+fe61eaa3 vselge.f32 s29, s3, s7
+fe65da2e vselge.f32 s27, s10, s29
+fe2bda08 vselge.f32 s26, s22, s16
+fe2c8aa6 vselge.f32 s16, s25, s13
+fe277aa6 vselge.f32 s14, s15, s13
+// Binary Ninja's tests
+fe202aab vselge.f32 s4, s1, s23
+FE2F0A04 vselge.f32 s0, s30, s8
+FE28FA02 vselge.f32 s30, s16, s4
+FE244A01 vselge.f32 s8, s8, s2
+FE221A00 vselge.f32 s2, s4, s0
+FE2F0A0F vselge.f32 s0, s30, s30
+FE2FFA8E vselge.f32 s30, s31, s28
+FE600A0E vselge.f32 s1, s0, s28
+FE60FA0E vselge.f32 s31, s0, s28
+
+// VSELGT_A1_D 111111100|D=x|cc=11|Vn=xxxx|Vd=xxxx|10|size=11|N=x|0|M=x|0|Vm=xxxx
+// VselgtA1D: VSELGT.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fe705b8f vselgt.f64 d21, d16, d15
+fe392b06 vselgt.f64 d2, d9, d6
+fe3d5b26 vselgt.f64 d5, d13, d22
+fe31bb8d vselgt.f64 d11, d17, d13
+fe358b00 vselgt.f64 d8, d5, d0
+fe7a7ba0 vselgt.f64 d23, d26, d16
+fe70ab89 vselgt.f64 d26, d16, d9
+fe391b0a vselgt.f64 d1, d9, d10
+// Binary Ninja's tests
+fe3a5b24 vselgt.f64 d5, d10, d20
+FE7F0B88 vselgt.f64 d16, d31, d8
+FE78FB82 vselgt.f64 d31, d24, d2
+FE744B81 vselgt.f64 d20, d20, d1
+FE320BAF vselgt.f64 d0, d18, d31
+FE30FB0F vselgt.f64 d15, d0, d15
+FE7F0B0F vselgt.f64 d16, d15, d15
+FE7FFB8F vselgt.f64 d31, d31, d15
+
+// VSELGT_A1_H 111111100|D=x|cc=11|Vn=xxxx|Vd=xxxx|10|size=01|N=x|0|M=x|0|Vm=xxxx
+// VselgtA1H: VSELGT.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe3999af vselgt.f16 s18, s19, s31
+fe7d698b vselgt.f16 s13, s27, s22
+fe31b92b vselgt.f16 s22, s2, s23
+fe739984 vselgt.f16 s19, s7, s8
+fe375903 vselgt.f16 s10, s14, s6
+fe3c19a3 vselgt.f16 s2, s25, s7
+fe71390d vselgt.f16 s7, s2, s26
+fe7fe92a vselgt.f16 s29, s30, s21
+FE3009A0 vselgt.f16 s0, s1, s1
+FE38F9A8 vselgt.f16 s30, s17, s17
+FE3489A2 vselgt.f16 s16, s9, s5
+FE3249A1 vselgt.f16 s8, s5, s3
+FE302900 vselgt.f16 s4, s0, s0
+FE30098F vselgt.f16 s0, s1, s30
+FE3FF9A0 vselgt.f16 s30, s31, s1
+FE7909AF vselgt.f16 s1, s19, s31
+FE79F9AF vselgt.f16 s31, s19, s31
+
+// VSELGT_A1_S 111111100|D=x|cc=11|Vn=xxxx|Vd=xxxx|10|size=10|N=x|0|M=x|0|Vm=xxxx
+// VselgtA1S: VSELGT.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe3dca03 vselgt.f32 s24, s26, s6
+fe71ea81 vselgt.f32 s29, s3, s2
+fe3fca0f vselgt.f32 s24, s30, s30
+fe7eca83 vselgt.f32 s25, s29, s6
+fe370a27 vselgt.f32 s0, s14, s15
+fe7a1aaa vselgt.f32 s3, s21, s21
+fe771a23 vselgt.f32 s3, s14, s7
+fe396a09 vselgt.f32 s12, s18, s18
+// Binary Ninja's tests
+fe300a80 vselgt.f32 s0, s1, s0
+FE38FA08 vselgt.f32 s30, s16, s16
+FE348A04 vselgt.f32 s16, s8, s8
+FE324A02 vselgt.f32 s8, s4, s4
+FE302A20 vselgt.f32 s4, s0, s1
+FE3FFAAF vselgt.f32 s30, s31, s31
+FE7D0A03 vselgt.f32 s1, s26, s6
+FE7DFA03 vselgt.f32 s31, s26, s6
+
+// VSELVS_A1_D 111111100|D=x|cc=01|Vn=xxxx|Vd=xxxx|10|size=11|N=x|0|M=x|0|Vm=xxxx
+// VselvsA1D: VSELVS.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fe5ebb2b vselvs.f64 d27, d14, d27
+fe52fb0a vselvs.f64 d31, d2, d10
+fe574ba2 vselvs.f64 d20, d23, d18
+fe5aeb24 vselvs.f64 d30, d10, d20
+fe5cdb82 vselvs.f64 d29, d28, d2
+fe103b0a vselvs.f64 d3, d0, d10
+fe172b28 vselvs.f64 d2, d7, d24
+fe111ba1 vselvs.f64 d1, d17, d17
+// Binary Ninja's tests
+fe110b2f vselvs.f64 d0, d1, d31
+FE5F8B20 vselvs.f64 d24, d15, d16
+FE18FB00 vselvs.f64 d15, d8, d0
+FE540B0F vselvs.f64 d16, d4, d15
+FE50BBA0 vselvs.f64 d27, d16, d16
+FE5FBB2B vselvs.f64 d27, d15, d27
+FE5FBBAB vselvs.f64 d27, d31, d27
+
+// VSELVS_A1_H 111111100|D=x|cc=01|Vn=xxxx|Vd=xxxx|10|size=01|N=x|0|M=x|0|Vm=xxxx
+// VselvsA1H: VSELVS.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe5cd90d vselvs.f16 s27, s24, s26
+fe168985 vselvs.f16 s16, s13, s10
+fe5b6905 vselvs.f16 s13, s22, s10
+fe15b908 vselvs.f16 s22, s10, s16
+fe5db905 vselvs.f16 s23, s26, s10
+fe541907 vselvs.f16 s3, s8, s14
+fe17c90b vselvs.f16 s24, s14, s22
+fe548985 vselvs.f16 s17, s9, s10
+FE500920 vselvs.f16 s1, s0, s1
+FE5FF90F vselvs.f16 s31, s30, s30
+FE584904 vselvs.f16 s9, s16, s8
+FE522902 vselvs.f16 s5, s4, s4
+FE110901 vselvs.f16 s0, s2, s2
+FE10F900 vselvs.f16 s30, s0, s0
+FE50098F vselvs.f16 s1, s1, s30
+FE5FF920 vselvs.f16 s31, s30, s1
+FE5FD9AF vselvs.f16 s27, s31, s31
+
+// VSELVS_A1_S 111111100|D=x|cc=01|Vn=xxxx|Vd=xxxx|10|size=10|N=x|0|M=x|0|Vm=xxxx
+// VselvsA1S: VSELVS.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe5d9aa9 vselvs.f32 s19, s27, s19
+fe526a00 vselvs.f32 s13, s4, s0
+fe1d8a06 vselvs.f32 s16, s26, s12
+fe1f1a83 vselvs.f32 s2, s31, s6
+fe538a27 vselvs.f32 s17, s6, s15
+fe530a04 vselvs.f32 s1, s6, s8
+fe1e5a8a vselvs.f32 s10, s29, s20
+fe1e6a27 vselvs.f32 s12, s28, s15
+// Binary Ninja's tests
+fe58aa07 vselvs.f32 s21, s16, s14
+FE50FAAF vselvs.f32 s31, s1, s31
+FE544AA8 vselvs.f32 s9, s9, s17
+FE512AA2 vselvs.f32 s5, s3, s5
+FE100A21 vselvs.f32 s0, s0, s3
+FE10FA8F vselvs.f32 s30, s1, s30
+FE5FFA20 vselvs.f32 s31, s30, s1
+FE5D9AAF vselvs.f32 s19, s27, s31

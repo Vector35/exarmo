@@ -1,0 +1,29 @@
+// smax_z_zi_ 001|0010|1|size=xx|1|01|00|U=0|11|o2=0|imm8=xxxxxxxx|Zdn=xxxxx
+// SmaxZZi: SMAX  <Zdn>.<T>, <Zdn>.<T>, #<imm>
+// register fields: Zdn
+25E8C4F6 smax z22.d, z22.d, #0x27
+25E8C99A smax z26.d, z26.d, #0x4c
+25A8D79C smax z28.s, z28.s, #-68
+25E8DFC7 smax z7.d, z7.d, #-2
+25A8CABC smax z28.s, z28.s, #0x55
+25A8C841 smax z1.s, z1.s, #0x42
+2568DF13 smax z19.h, z19.h, #-8
+25A8D4AB smax z11.s, z11.s, #-91
+2568CEBB smax z27.h, z27.h, #0x75
+25A8C2C6 smax z6.s, z6.s, #0x16
+25A8D358 smax z24.s, z24.s, #-102
+25A8D250 smax z16.s, z16.s, #-110
+2528C4FE smax z30.b, z30.b, #0x27
+2528D9AB smax z11.b, z11.b, #-51
+25A8DBC7 smax z7.s, z7.s, #-34
+25E8CC6D smax z13.d, z13.d, #0x63
+25E8C000 smax z0.d, z0.d, #0x0
+25E8DFFF smax z31.d, z31.d, #-0x1
+25E8D016 smax z22.d, z22.d, #-0x80
+25E8C816 smax z22.d, z22.d, #0x40
+25E8C416 smax z22.d, z22.d, #0x20
+25E8C216 smax z22.d, z22.d, #0x10
+25E8C116 smax z22.d, z22.d, #0x8
+25E8C096 smax z22.d, z22.d, #0x4
+25E8C056 smax z22.d, z22.d, #0x2
+25E8C036 smax z22.d, z22.d, #0x1

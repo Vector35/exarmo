@@ -1,0 +1,48 @@
+// fsub_za_zw_2x2 1|10|0000|11|sz=x|1|00|00|00|Rv=xx|111|Zm=xxxx|0|0|S=1|off3=xxx
+// FsubZaZw2x2: FSUB  ZA.<T>[<Wv>, <offs>{, VGx2}], { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Rv, Zm
+C1A01C0C fsub za.s[w8, 4, vgx2], {z0.s-z1.s}
+C1A01C4B fsub za.s[w8, 3, vgx2], {z2.s-z3.s}
+C1A01C8A fsub za.s[w8, 2, vgx2], {z4.s-z5.s}
+C1E03FC8 fsub za.d[w9, 0, vgx2], {z30.d-z31.d}
+C1A05C09 fsub za.s[w10, 1, vgx2], {z0.s-z1.s}
+C1A07C0D fsub za.s[w11, 5, vgx2], {z0.s-z1.s}
+C1A01C0E fsub za.s[w8, 6, vgx2], {z0.s-z1.s}
+C1A01C0F fsub za.s[w8, 7, vgx2], {z0.s-z1.s}
+
+// fsub_za_zw_2x2_16 1|10|0000|11|sz=0|1|00|10|00|Rv=xx|111|Zm=xxxx|0|0|S=1|off3=xxx
+// FsubZaZw2x216: FSUB  ZA.H[<Wv>, <offs>{, VGx2}], { <Zm1>.H-<Zm2>.H }
+// register fields: Rv, Zm
+C1A41C0B fsub za.h[w8, 3, vgx2], {z0.h-z1.h}
+C1A41C4A fsub za.h[w8, 2, vgx2], {z2.h-z3.h}
+C1A41C89 fsub za.h[w8, 1, vgx2], {z4.h-z5.h}
+C1A43FC8 fsub za.h[w9, 0, vgx2], {z30.h-z31.h}
+C1A45C0C fsub za.h[w10, 4, vgx2], {z0.h-z1.h}
+C1A47C0D fsub za.h[w11, 5, vgx2], {z0.h-z1.h}
+C1A41C0E fsub za.h[w8, 6, vgx2], {z0.h-z1.h}
+C1A41C0F fsub za.h[w8, 7, vgx2], {z0.h-z1.h}
+
+// fsub_za_zw_4x4 1|10|0000|11|sz=x|1|00|00|10|Rv=xx|111|Zm=xxx|00|0|S=1|off3=xxx
+// FsubZaZw4x4: FSUB  ZA.<T>[<Wv>, <offs>{, VGx4}], { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Rv, Zm
+C1A11C0A fsub za.s[w8, 2, vgx4], {z0.s-z3.s}
+C1A11C88 fsub za.s[w8, 0, vgx4], {z4.s-z7.s}
+C1A11C8F fsub za.s[w8, 7, vgx4], {z4.s-z7.s}
+C1E13D09 fsub za.d[w9, 1, vgx4], {z8.d-z11.d}
+C1A15D8B fsub za.s[w10, 3, vgx4], {z12.s-z15.s}
+C1A17E0C fsub za.s[w11, 4, vgx4], {z16.s-z19.s}
+C1A11E8D fsub za.s[w8, 5, vgx4], {z20.s-z23.s}
+C1A11F0E fsub za.s[w8, 6, vgx4], {z24.s-z27.s}
+C1A11F8A fsub za.s[w8, 2, vgx4], {z28.s-z31.s}
+
+// fsub_za_zw_4x4_16 1|10|0000|11|sz=0|1|00|10|10|Rv=xx|111|Zm=xxx|00|0|S=1|off3=xxx
+// FsubZaZw4x416: FSUB  ZA.H[<Wv>, <offs>{, VGx4}], { <Zm1>.H-<Zm4>.H }
+// register fields: Rv, Zm
+C1A51C09 fsub za.h[w8, 1, vgx4], {z0.h-z3.h}
+C1A51C8E fsub za.h[w8, 6, vgx4], {z4.h-z7.h}
+C1A51D0C fsub za.h[w8, 4, vgx4], {z8.h-z11.h}
+C1A53D88 fsub za.h[w9, 0, vgx4], {z12.h-z15.h}
+C1A55E0A fsub za.h[w10, 2, vgx4], {z16.h-z19.h}
+C1A57E8B fsub za.h[w11, 3, vgx4], {z20.h-z23.h}
+C1A51F0D fsub za.h[w8, 5, vgx4], {z24.h-z27.h}
+C1A51F8F fsub za.h[w8, 7, vgx4], {z28.h-z31.h}

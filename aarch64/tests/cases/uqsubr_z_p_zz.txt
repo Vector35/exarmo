@@ -1,0 +1,15 @@
+// uqsubr_z_p_zz_ 010|0010|0|size=xx|0|11|op=1|S=1|U=1|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UqsubrZPZz: UQSUBR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+44DF91FB uqsubr z27.d, p4/m, z27.d, z15.d
+441F9188 uqsubr z8.b, p4/m, z8.b, z12.b
+449F9588 uqsubr z8.s, p5/m, z8.s, z12.s
+44DF868E uqsubr z14.d, p1/m, z14.d, z20.d
+44DF9AC8 uqsubr z8.d, p6/m, z8.d, z22.d
+449F82AB uqsubr z11.s, p0/m, z11.s, z21.s
+445F850B uqsubr z11.h, p1/m, z11.h, z8.h
+445F9D5A uqsubr z26.h, p7/m, z26.h, z10.h
+44DF8800 uqsubr z0.d, p2/m, z0.d, z0.d
+44DF8FFF uqsubr z31.d, p3/m, z31.d, z31.d
+44DF909B uqsubr z27.d, p4/m, z27.d, z4.d
+44DF91E4 uqsubr z4.d, p4/m, z4.d, z15.d

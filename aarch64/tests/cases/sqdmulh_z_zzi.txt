@@ -1,0 +1,50 @@
+// sqdmulh_z_zzi_d 010|0010|0|size=11|1|i1=x|Zm=xxxx|11110|R=0|Zn=xxxxx|Zd=xxxxx
+// SqdmulhZZziD: SQDMULH  <Zd>.D, <Zn>.D, <Zm>.D[<imm>]
+// register fields: Zm, Zn, Zd
+44FEF1AD sqdmulh z13.d, z13.d, z14.d[1]
+44E9F3D6 sqdmulh z22.d, z30.d, z9.d[0]
+44F4F35A sqdmulh z26.d, z26.d, z4.d[1]
+44FDF163 sqdmulh z3.d, z11.d, z13.d[1]
+44E4F052 sqdmulh z18.d, z2.d, z4.d[0]
+44E0F346 sqdmulh z6.d, z26.d, z0.d[0]
+44E7F252 sqdmulh z18.d, z18.d, z7.d[0]
+44EBF2B8 sqdmulh z24.d, z21.d, z11.d[0]
+44FFF000 sqdmulh z0.d, z0.d, z15.d[1]
+44FEF3FF sqdmulh z31.d, z31.d, z14.d[1]
+44FEF1CD sqdmulh z13.d, z14.d, z14.d[1]
+44FEF1AE sqdmulh z14.d, z13.d, z14.d[1]
+
+// sqdmulh_z_zzi_h 010|0010|0|0|i3h=x|1|i3l=xx|Zm=xxx|11110|R=0|Zn=xxxxx|Zd=xxxxx
+// SqdmulhZZziH: SQDMULH  <Zd>.H, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zd
+446FF3DF sqdmulh z31.h, z30.h, z7.h[5]
+4429F001 sqdmulh z1.h, z0.h, z1.h[1]
+447DF0F8 sqdmulh z24.h, z7.h, z5.h[7]
+446BF0F0 sqdmulh z16.h, z7.h, z3.h[5]
+4476F2AE sqdmulh z14.h, z21.h, z6.h[6]
+443BF3F1 sqdmulh z17.h, z31.h, z3.h[3]
+4436F348 sqdmulh z8.h, z26.h, z6.h[2]
+443CF277 sqdmulh z23.h, z19.h, z4.h[3]
+4460F3C0 sqdmulh z0.h, z30.h, z0.h[4]
+446AF3DF sqdmulh z31.h, z30.h, z2.h[5]
+4427F0FF sqdmulh z31.h, z7.h, z7.h[0]
+446FF3DE sqdmulh z30.h, z30.h, z7.h[5]
+
+// sqdmulh_z_zzi_s 010|0010|0|size=10|1|i2=xx|Zm=xxx|11110|R=0|Zn=xxxxx|Zd=xxxxx
+// SqdmulhZZziS: SQDMULH  <Zd>.S, <Zn>.S, <Zm>.S[<imm>]
+// register fields: Zm, Zn, Zd
+44A8F3DB sqdmulh z27.s, z30.s, z0.s[1]
+44AEF2F0 sqdmulh z16.s, z23.s, z6.s[1]
+44B5F2E2 sqdmulh z2.s, z23.s, z5.s[2]
+44A6F14B sqdmulh z11.s, z10.s, z6.s[0]
+44AEF38E sqdmulh z14.s, z28.s, z6.s[1]
+44B6F1E3 sqdmulh z3.s, z15.s, z6.s[2]
+44B2F03E sqdmulh z30.s, z1.s, z2.s[2]
+44B5F1EC sqdmulh z12.s, z15.s, z5.s[2]
+44B9F000 sqdmulh z0.s, z0.s, z1.s[3]
+44ABF3FF sqdmulh z31.s, z31.s, z3.s[1]
+44ACF3DB sqdmulh z27.s, z30.s, z4.s[1]
+44AFF3DB sqdmulh z27.s, z30.s, z7.s[1]
+44A8F01B sqdmulh z27.s, z0.s, z0.s[1]
+44A8F3C0 sqdmulh z0.s, z30.s, z0.s[1]

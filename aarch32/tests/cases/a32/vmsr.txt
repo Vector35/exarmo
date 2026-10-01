@@ -1,0 +1,24 @@
+// VMSR_A1_AS cond=xxxx|11|10|111|L=0|reg=xxxx|Rt=xxxx|1|010|(0)(0)(0)|1|(0)(0)(0)(0)
+// VmsrA1As: VMSR{<c>}{<q>}  <spec_reg>, <Rt>
+// register fields: Rt
+3ee8ba56 vmsrlo fpexc, r11 (unpredictable)
+eee04ab0 vmsr fpsid, r4 (unpredictable)
+8ee83ade vmsrhi fpexc, r3 (unpredictable)
+dee88af4 vmsrle fpexc, r8 (unpredictable)
+aee00af4 vmsrge fpsid, r0 (unpredictable)
+4ee84a9c vmsrmi fpexc, r4 (unpredictable)
+5ee17ade vmsrpl fpscr, r7 (unpredictable)
+7ee19a5d vmsrvc fpscr, r9 (unpredictable)
+// Binary Ninja's tests
+eee00a10 vmsr fpsid, r0
+eee10a10 vmsr fpscr, r0
+eee80a10 vmsr fpexc, r0
+eee93a10 UNDEFINED
+eeea4a10 UNDEFINED
+0EE8FA3F vmsreq fpexc, pc (unpredictable)
+FEEFBA56 UNALLOCATED
+2EE8BA78 vmsrcs fpexc, r11 (unpredictable)
+1EE8BA52 vmsrne fpexc, r11 (unpredictable)
+3EE4BA56 UNDEFINED
+3EE2BA56 UNDEFINED
+3EE8BA51 vmsrcc fpexc, r11 (unpredictable)

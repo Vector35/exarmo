@@ -1,0 +1,12 @@
+// LDAEX_T1 111|0100|op0=0110|L=1|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=1|sz=10|Rd=(1)(1)(1)(1)
+// LdaexT1: LDAEX{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// IT state read: condition
+E8D000E0 ldaex r0, [r0] (unpredictable)
+E8DFFFEF ldaex pc, [pc] (unpredictable)
+E8D008E8 ldaex r0, [r0] (unpredictable)
+E8D004E4 ldaex r0, [r0] (unpredictable)
+E8D002E2 ldaex r0, [r0] (unpredictable)
+E8D001E1 ldaex r0, [r0] (unpredictable)
+E8D000E0 [ne] ldaexne r0, [r0] (unpredictable)
+E8D12FEF ldaex r2, [r1]

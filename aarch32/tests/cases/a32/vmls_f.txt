@@ -1,0 +1,114 @@
+// VMLS_f_A1_D 1111001|U=0|0|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VmlsFA1D: VMLS{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f220dd3b vmls.f32 d13, d0, d27
+f2792db1 vmls.f16 d18, d25, d17
+f2307d16 vmls.f16 d7, d0, d6
+f23ccd19 vmls.f16 d12, d12, d9
+f23c3d9e vmls.f16 d3, d28, d14
+f279ed9b vmls.f16 d30, d25, d11
+f223bd9a vmls.f32 d11, d19, d10
+f22a3d14 vmls.f32 d3, d10, d4
+F22F0D30 vmls.f32 d0, d15, d16
+F228FD3F vmls.f32 d15, d8, d31
+F2248D38 vmls.f32 d8, d4, d24
+F2224D32 vmls.f32 d4, d2, d18
+F2211D10 vmls.f32 d1, d1, d0
+F2200D9F vmls.f32 d0, d16, d15
+F22FFD30 vmls.f32 d15, d15, d16
+F26F0DBF vmls.f32 d16, d31, d31
+F260FD3B vmls.f32 d31, d0, d27
+
+// VMLS_f_A1_Q 1111001|U=0|0|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VmlsFA1Q: VMLS{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f23e4d76 vmls.f16 q2, q7, q11
+f2746df0 vmls.f16 q11, q10, q8
+f236adf2 vmls.f16 q5, q11, q9
+f268ed72 vmls.f32 q15, q4, q9
+f22c6df6 vmls.f32 q3, q14, q11
+f2700d52 vmls.f16 q8, q0, q1
+f2686dd0 vmls.f32 q11, q12, q0
+f22a8dde vmls.f32 q4, q13, q7
+F23FFD7F UNDEFINED
+F2322D78 vmls.f16 q1, q1, q12
+F2311D71 UNDEFINED
+F2300DF4 vmls.f16 q0, q8, q10
+F23FFD5F UNDEFINED
+F27FFDFF UNDEFINED
+
+// VMLS_f_A2_D cond=xxxx|1110|o0=0|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=1|M=x|0|Vm=xxxx
+// VmlsFA2D: VMLS{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+ce097b60 vmlsgt.f64 d7, d9, d16
+5e48eb6c vmlspl.f64 d30, d8, d28
+1e451b4a vmlsne.f64 d17, d5, d10
+ae473bed vmlsge.f64 d19, d23, d29
+2e41abe6 vmlshs.f64 d26, d17, d22
+ae47fb69 vmlsge.f64 d31, d7, d25
+ee0cabcc vmls.f64 d10, d28, d12
+9e048b65 vmlsls.f64 d8, d4, d21
+// Binary Ninja's tests
+ee420be1 vmls.f64 d16, d18, d17
+0E004B6F vmlseq.f64 d4, d0, d31
+FE097B60 UNALLOCATED
+8E0F2B68 vmlshi.f64 d2, d15, d24
+4E000B64 vmlsmi.f64 d0, d0, d20
+CE00FBE2 vmlsgt.f64 d15, d16, d18
+CE0F7B40 vmlsgt.f64 d7, d15, d0
+CE0F7BCF vmlsgt.f64 d7, d31, d15
+CE097B6F vmlsgt.f64 d7, d9, d31
+
+// VMLS_f_A2_H cond=xxxx|1110|o0=0|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=1|M=x|0|Vm=xxxx
+// VmlsFA2H: VMLS{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+ee4ee9ca vmls.f16 s29, s29, s20
+3e0719cb vmlslo.f16 s2, s15, s22 (unpredictable)
+8e44b969 vmlshi.f16 s23, s8, s19 (unpredictable)
+ae49a948 vmlsge.f16 s21, s18, s16 (unpredictable)
+6e4cf9cf vmlsvs.f16 s31, s25, s30 (unpredictable)
+6e0b796f vmlsvs.f16 s14, s22, s31 (unpredictable)
+4e04d96e vmlsmi.f16 s26, s8, s29 (unpredictable)
+3e46e960 vmlslo.f16 s29, s12, s1 (unpredictable)
+0E4009C4 vmlseq.f16 s1, s1, s8 (unpredictable)
+FE4EE9CA UNALLOCATED
+2E4F89C2 vmlscs.f16 s17, s31, s4 (unpredictable)
+1E4849C1 vmlsne.f16 s9, s17, s2 (unpredictable)
+EE4229C0 vmls.f16 s5, s5, s0
+EE0109CA vmls.f16 s0, s3, s20
+EE00F94A vmls.f16 s30, s0, s20
+EE4009CA vmls.f16 s1, s1, s20
+EE4FE94A vmls.f16 s29, s30, s20
+EE4FE9CA vmls.f16 s29, s31, s20
+
+// VMLS_f_A2_S cond=xxxx|1110|o0=0|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=1|M=x|0|Vm=xxxx
+// VmlsFA2S: VMLS{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+3e0b8ac8 vmlslo.f32 s16, s23, s16
+ae07eac3 vmlsge.f32 s28, s15, s6
+5e45cac8 vmlspl.f32 s25, s11, s16
+5e02fa4a vmlspl.f32 s30, s4, s20
+ee094ae5 vmls.f32 s8, s19, s11
+9e456ae6 vmlsls.f32 s13, s11, s13
+ee4b8a47 vmls.f32 s17, s22, s14
+5e44cae4 vmlspl.f32 s25, s9, s9
+// Binary Ninja's tests
+ee410a40 vmls.f32 s1, s2, s0
+0E002ACF vmlseq.f32 s4, s1, s30
+FE0B8AC8 UNALLOCATED
+8E0F1AC2 vmlshi.f32 s2, s31, s4
+4E080AC1 vmlsmi.f32 s0, s17, s2
+2E40FA4F vmlscs.f32 s31, s0, s30
+1E008AE0 vmlsne.f32 s16, s1, s1
+3E0F8A6F vmlscc.f32 s16, s30, s31
+3E0F8AC8 vmlscc.f32 s16, s31, s16

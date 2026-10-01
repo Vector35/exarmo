@@ -1,0 +1,47 @@
+// LDCLRP_128_memop_128 0|S=0|011001|A=0|R=0|1|Rt2=xxxxx|o3=0|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Ldclrp128Memop128: LDCLRP  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19201001 ldclrp x1, x0, [x0]
+19201008 ldclrp x8, x0, [x0]
+1920100F ldclrp x15, x0, [x0]
+192013E0 ldclrp x0, x0, [sp] (unpredictable)
+193F101F UNDEFINED
+19201000 ldclrp x0, x0, [x0] (unpredictable)
+192013E1 ldclrp x1, x0, [sp]
+19201021 ldclrp x1, x0, [x1]
+
+// LDCLRPA_128_memop_128 0|S=0|011001|A=1|R=0|1|Rt2=xxxxx|o3=0|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Ldclrpa128Memop128: LDCLRPA  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19A01004 ldclrpa x4, x0, [x0]
+19A0100B ldclrpa x11, x0, [x0]
+19A01012 ldclrpa x18, x0, [x0]
+19A013E0 ldclrpa x0, x0, [sp] (unpredictable)
+19BF101F UNDEFINED
+19A01000 ldclrpa x0, x0, [x0] (unpredictable)
+19A013E4 ldclrpa x4, x0, [sp]
+19A01084 ldclrpa x4, x0, [x4]
+
+// LDCLRPAL_128_memop_128 0|S=0|011001|A=1|R=1|1|Rt2=xxxxx|o3=0|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Ldclrpal128Memop128: LDCLRPAL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19E01002 ldclrpal x2, x0, [x0]
+19E01009 ldclrpal x9, x0, [x0]
+19E01010 ldclrpal x16, x0, [x0]
+19E013E0 ldclrpal x0, x0, [sp] (unpredictable)
+19FF101F UNDEFINED
+19E01000 ldclrpal x0, x0, [x0] (unpredictable)
+19E013E2 ldclrpal x2, x0, [sp]
+19E01042 ldclrpal x2, x0, [x2]
+
+// LDCLRPL_128_memop_128 0|S=0|011001|A=0|R=1|1|Rt2=xxxxx|o3=0|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Ldclrpl128Memop128: LDCLRPL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19601006 ldclrpl x6, x0, [x0]
+1960100D ldclrpl x13, x0, [x0]
+19601014 ldclrpl x20, x0, [x0]
+196013E0 ldclrpl x0, x0, [sp] (unpredictable)
+197F101F UNDEFINED
+19601000 ldclrpl x0, x0, [x0] (unpredictable)
+196013E6 ldclrpl x6, x0, [sp]
+196010C6 ldclrpl x6, x0, [x6]

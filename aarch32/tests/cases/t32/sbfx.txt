@@ -1,0 +1,46 @@
+// SBFX_T1 111|10|(0)|1|1|op1=010|0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm2=xx|(0)|widthm1=xxxxx
+// SbfxT1: SBFX{<c>}{<q>}  <Rd>, <Rn>, #<lsb>, #<width>
+// read together by <lsb>: imm3, imm2
+// register fields: Rn, Rd
+// IT state read: condition
+F3400000 sbfx r0, r0, #0x0, #0x1
+F74F1F7F UNPREDICTABLE
+F3402090 sbfx r0, r0, #0xa, #0x11
+F34030C8 sbfx r0, r0, #0xf, #0x9
+F3404004 sbfx r0, r0, #0x10, #0x5
+F3405002 sbfx r0, r0, #0x14, #0x3
+F3406001 sbfx r0, r0, #0x18, #0x2
+F3407000 sbfx r0, r0, #0x1c, #0x1
+F3400040 sbfx r0, r0, #0x1, #0x1
+F3400080 sbfx r0, r0, #0x2, #0x1
+F34000C0 sbfx r0, r0, #0x3, #0x1
+F3401000 sbfx r0, r0, #0x4, #0x1
+F3401040 sbfx r0, r0, #0x5, #0x1
+F3401080 sbfx r0, r0, #0x6, #0x1
+F34010C0 sbfx r0, r0, #0x7, #0x1
+F3402000 sbfx r0, r0, #0x8, #0x1
+F3402040 sbfx r0, r0, #0x9, #0x1
+F3402080 sbfx r0, r0, #0xa, #0x1
+F34020C0 sbfx r0, r0, #0xb, #0x1
+F3403000 sbfx r0, r0, #0xc, #0x1
+F3403040 sbfx r0, r0, #0xd, #0x1
+F3403080 sbfx r0, r0, #0xe, #0x1
+F34030C0 sbfx r0, r0, #0xf, #0x1
+F3404000 sbfx r0, r0, #0x10, #0x1
+F3404040 sbfx r0, r0, #0x11, #0x1
+F3404080 sbfx r0, r0, #0x12, #0x1
+F34040C0 sbfx r0, r0, #0x13, #0x1
+F3405000 sbfx r0, r0, #0x14, #0x1
+F3405040 sbfx r0, r0, #0x15, #0x1
+F3405080 sbfx r0, r0, #0x16, #0x1
+F34050C0 sbfx r0, r0, #0x17, #0x1
+F3406000 sbfx r0, r0, #0x18, #0x1
+F3406040 sbfx r0, r0, #0x19, #0x1
+F3406080 sbfx r0, r0, #0x1a, #0x1
+F34060C0 sbfx r0, r0, #0x1b, #0x1
+F3407040 sbfx r0, r0, #0x1d, #0x1
+F3407080 sbfx r0, r0, #0x1e, #0x1
+F34070C0 sbfx r0, r0, #0x1f, #0x1
+F3400000 [ne] sbfxne r0, r0, #0x0, #0x1
+F74F0F3F sbfx pc, pc, #0x0, #0x20 (unpredictable)
+F3410200 sbfx r2, r1, #0x0, #0x1

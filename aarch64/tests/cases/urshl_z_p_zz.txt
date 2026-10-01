@@ -1,0 +1,14 @@
+// urshl_z_p_zz_ 010|0010|0|size=xx|0|0|Q=0|R=0|N=1|U=1|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UrshlZPZz: URSHL  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+440386C5 urshl z5.b, p1/m, z5.b, z22.b
+440397E5 urshl z5.b, p5/m, z5.b, z31.b
+44039374 urshl z20.b, p4/m, z20.b, z27.b
+44C39F54 urshl z20.d, p7/m, z20.d, z26.d
+44839D6B urshl z11.s, p7/m, z11.s, z11.s
+44C38618 urshl z24.d, p1/m, z24.d, z16.d
+448383C7 urshl z7.s, p0/m, z7.s, z30.s
+44C38F7E urshl z30.d, p3/m, z30.d, z27.d
+44438800 urshl z0.h, p2/m, z0.h, z0.h
+44039ADF urshl z31.b, p6/m, z31.b, z22.b
+44038425 urshl z5.b, p1/m, z5.b, z1.b

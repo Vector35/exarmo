@@ -1,0 +1,19 @@
+// FMLALB_asimdsame2_J 0|Q=0|U=0|01110|size=11|0|Rm=xxxxx|1|opcode=1111|1|Rn=xxxxx|Rd=xxxxx
+// FmlalbAsimdsame2J: FMLALB  <Vd>.8H, <Vn>.16B, <Vm>.16B
+// register fields: Rm, Rn, Rd
+0EC0FC01 fmlalb v1.8h, v0.16b, v0.16b
+0EC0FC08 fmlalb v8.8h, v0.16b, v0.16b
+0EC0FC0F fmlalb v15.8h, v0.16b, v0.16b
+0EDFFFE0 fmlalb v0.8h, v31.16b, v31.16b
+0EC0FC1F fmlalb v31.8h, v0.16b, v0.16b
+0EC0FC00 fmlalb v0.8h, v0.16b, v0.16b
+0EC1FC43 fmlalb v3.8h, v2.16b, v1.16b
+
+// FMLALT_asimdsame2_J 0|Q=1|U=0|01110|size=11|0|Rm=xxxxx|1|opcode=1111|1|Rn=xxxxx|Rd=xxxxx
+// FmlaltAsimdsame2J: FMLALT  <Vd>.8H, <Vn>.16B, <Vm>.16B
+// register fields: Rm, Rn, Rd
+4EC0FC00 fmlalt v0.8h, v0.16b, v0.16b
+4EC0FC07 fmlalt v7.8h, v0.16b, v0.16b
+4EC0FC0E fmlalt v14.8h, v0.16b, v0.16b
+4EDFFFFF fmlalt v31.8h, v31.16b, v31.16b
+4EC1FC43 fmlalt v3.8h, v2.16b, v1.16b

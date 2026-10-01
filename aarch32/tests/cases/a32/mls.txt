@@ -1,0 +1,20 @@
+// MLS_A1 cond=xxxx|00|0|0|opc=011|S=0|Rd=xxxx|Ra=xxxx|Rm=xxxx|1|00|1|Rn=xxxx
+// MlsA1: MLS{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+a06ea898 mlsge lr, r8, r8, r10
+d069b191 mlsle r9, r1, r1, r11
+20660e91 mlshs r6, r1, lr, r0
+106d1492 mlsne sp, r2, r4, r1
+20681c96 mlshs r8, r6, r12, r1
+90630294 mlsls r3, r4, r2, r0
+2067c49e mlshs r7, lr, r4, r12
+40670e9b mlsmi r7, r11, lr, r0
+// Binary Ninja's tests
+10623695 mlsne r2, r5, r6, r3
+e0623695 mls r2, r5, r6, r3
+0060F090 mlseq r0, r0, r0, pc (unpredictable)
+F06EA898 UNALLOCATED
+806FAF9F mlshi pc, pc, pc, r10 (unpredictable)
+A06EE898 mlsge lr, r8, r8, lr
+A06EAE9A mlsge lr, r10, lr, r10
+A06EAA9E mlsge lr, lr, r10, r10

@@ -1,0 +1,10 @@
+// fclamp_z_zz_ 011|0010|0|size=xx|1|Zm=xxxxx|001001|Zn=xxxxx|Zd=xxxxx
+// FclampZZz: FCLAMP  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+64602405 fclamp z5.h, z0.h, z0.h
+6460240C fclamp z12.h, z0.h, z0.h
+64602413 fclamp z19.h, z0.h, z0.h
+64BF27E0 fclamp z0.s, z31.s, z31.s
+64E0241F fclamp z31.d, z0.d, z0.d
+64602400 fclamp z0.h, z0.h, z0.h
+64612443 fclamp z3.h, z2.h, z1.h

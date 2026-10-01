@@ -1,0 +1,27 @@
+// CNT_asimdmisc_R 0|Q=x|U=0|0|111|0|size=xx|10000|opcode=00101|10|Rn=xxxxx|Rd=xxxxx
+// CntAsimdmiscR: CNT  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+4E205973 cnt v19.16b, v11.16b
+0E2058D6 cnt v22.8b, v6.8b
+0E205BC5 cnt v5.8b, v30.8b
+4E205835 cnt v21.16b, v1.16b
+0E20599F cnt v31.8b, v12.8b
+4E205A22 cnt v2.16b, v17.16b
+4E205B19 cnt v25.16b, v24.16b
+0E205AF3 cnt v19.8b, v23.8b
+0E205917 cnt v23.8b, v8.8b
+0E2058F4 cnt v20.8b, v7.8b
+4E205A4A cnt v10.16b, v18.16b
+4E2059D9 cnt v25.16b, v14.16b
+0E205A31 cnt v17.8b, v17.8b
+0E2059AE cnt v14.8b, v13.8b
+4E2058E1 cnt v1.16b, v7.16b
+0E205804 cnt v4.8b, v0.8b
+4E205BE0 cnt v0.16b, v31.16b
+4E605973 UNDEFINED
+4EA05973 UNDEFINED
+4EE05973 UNDEFINED
+0E605973 UNDEFINED
+0EA05973 UNDEFINED
+0EE05973 UNDEFINED

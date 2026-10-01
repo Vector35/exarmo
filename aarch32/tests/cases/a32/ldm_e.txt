@@ -1,0 +1,32 @@
+// LDM_e_A1_AS cond=xxxx|10|0|P=x|U=x|op=1|W=x|L=1|Rn=xxxx|1|register_list=xxxxxxxxxxxxxxx
+// LdmEA1As: LDM{<amode>}{<c>}{<q>}  <Rn>{<!>}, <registers_with_pc>^
+// read together by <amode>: P, U
+// register fields: Rn
+7956b915 ldmdbvc r6, {r0, r2, r4, r8, r11, r12, sp, pc}^
+49d1dcfb ldmibmi r1, {r0, r1, r3, r4, r5, r6, r7, r10, r11, r12, lr, pc}^
+58f3fce7 ldmpl r3!, {r0, r1, r2, r5, r6, r7, r10, r11, r12, sp, lr, pc}^
+d9589d6b ldmdble r8, {r0, r1, r3, r5, r6, r8, r10, r11, r12, pc}^
+28739c33 ldmdacs r3!, {r0, r1, r4, r5, r10, r11, r12, pc}^
+a9fad798 ldmibge r10!, {r3, r4, r7, r8, r9, r10, r12, lr, pc}^ (unpredictable)
+585bb3fd ldmdapl r11, {r0, r2, r3, r4, r5, r6, r7, r8, r9, r12, sp, pc}^
+19f6c1b2 ldmibne r6!, {r1, r4, r5, r7, r8, lr, pc}^
+// Binary Ninja's tests
+e8fd800f ldm sp!, {r0, r1, r2, r3, pc}^
+09508000 ldmdbeq r0, {pc}^
+F956B915 UNALLOCATED
+895FFFFF ldmdbhi pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc}^ (unpredictable)
+7956C000 ldmdbvc r6, {lr, pc}^
+7956A000 ldmdbvc r6, {sp, pc}^
+79569000 ldmdbvc r6, {r12, pc}^
+79568800 ldmdbvc r6, {r11, pc}^
+79568400 ldmdbvc r6, {r10, pc}^
+79568200 ldmdbvc r6, {r9, pc}^
+79568100 ldmdbvc r6, {r8, pc}^
+79568080 ldmdbvc r6, {r7, pc}^
+79568040 ldmdbvc r6, {r6, pc}^
+79568020 ldmdbvc r6, {r5, pc}^
+79568010 ldmdbvc r6, {r4, pc}^
+79568008 ldmdbvc r6, {r3, pc}^
+79568004 ldmdbvc r6, {r2, pc}^
+79568002 ldmdbvc r6, {r1, pc}^
+79568001 ldmdbvc r6, {r0, pc}^

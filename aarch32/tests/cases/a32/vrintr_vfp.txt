@@ -1,0 +1,66 @@
+// VRINTR_vfp_A1_D cond=xxxx|11101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=11|op=0|1|M=x|0|Vm=xxxx
+// VrintrVfpA1D: VRINTR{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+def6db42 vrintrle.f64 d29, d2
+4eb6db4d vrintrmi.f64 d13, d13
+0eb63b69 vrintreq.f64 d3, d25
+8ef6bb62 vrintrhi.f64 d27, d18
+6eb65b45 vrintrvs.f64 d5, d5
+2eb66b48 vrintrhs.f64 d6, d8
+ceb67b67 vrintrgt.f64 d7, d23
+3ef64b4b vrintrlo.f64 d20, d11
+// Binary Ninja's tests
+beb65b40 vrintrlt.f64 d5, d0
+FEF6DB42 UNALLOCATED
+1EF60B4F vrintrne.f64 d16, d15
+DEF6FB44 vrintrle.f64 d31, d4
+DEF68B41 vrintrle.f64 d24, d1
+DEF62B4F vrintrle.f64 d18, d15
+DEF61B60 vrintrle.f64 d17, d16
+DEB60B6F vrintrle.f64 d0, d31
+DEB6FB42 vrintrle.f64 d15, d2
+DEF60B42 vrintrle.f64 d16, d2
+DEF6FB42 vrintrle.f64 d31, d2
+
+// VRINTR_vfp_A1_H cond=xxxx|11101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=01|op=0|1|M=x|0|Vm=xxxx
+// VrintrVfpA1H: VRINTR{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+aeb61960 vrintrge.f16 s2, s1 (unpredictable)
+1eb6b96b vrintrne.f16 s22, s23 (unpredictable)
+6ef61941 vrintrvs.f16 s3, s2 (unpredictable)
+7ef66962 vrintrvc.f16 s13, s5 (unpredictable)
+1ef6f96b vrintrne.f16 s31, s23 (unpredictable)
+2eb6a961 vrintrhs.f16 s20, s3 (unpredictable)
+1ef6196c vrintrne.f16 s3, s25 (unpredictable)
+2eb64960 vrintrhs.f16 s8, s1 (unpredictable)
+0EB6096F vrintreq.f16 s0, s31 (unpredictable)
+FEB61960 UNALLOCATED
+8EB68968 vrintrhi.f16 s16, s17 (unpredictable)
+4EB62964 vrintrmi.f16 s4, s9 (unpredictable)
+AEB60940 vrintrge.f16 s0, s0 (unpredictable)
+AEB6F94F vrintrge.f16 s30, s30 (unpredictable)
+AEF6096F vrintrge.f16 s1, s31 (unpredictable)
+
+// VRINTR_vfp_A1_S cond=xxxx|11101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=10|op=0|1|M=x|0|Vm=xxxx
+// VrintrVfpA1S: VRINTR{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+3ef65a45 vrintrlo.f32 s11, s10
+cef6ba41 vrintrgt.f32 s23, s2
+def67a4d vrintrle.f32 s15, s26
+bef64a64 vrintrlt.f32 s9, s9
+def60a46 vrintrle.f32 s1, s12
+0ef6ea6f vrintreq.f32 s29, s31
+bef6da4a vrintrlt.f32 s27, s20
+4ef64a6c vrintrmi.f32 s9, s25
+// Binary Ninja's tests
+eeb60a64 vrintr.f32 s0, s9
+FEF65A45 UNALLOCATED
+8EF6FA40 vrintrhi.f32 s31, s0
+2EF68A48 vrintrcs.f32 s17, s16
+1EF62A42 vrintrne.f32 s5, s4
+3EF61A40 vrintrcc.f32 s3, s0
+3EB6FA4F vrintrcc.f32 s30, s30
+3EF6FA60 vrintrcc.f32 s31, s1

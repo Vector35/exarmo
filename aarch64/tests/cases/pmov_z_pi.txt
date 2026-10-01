@@ -1,0 +1,45 @@
+// pmov_z_pi_b 000|0010|1|opc=00|1|01|opc2=01|1|001110|0|Pn=xxxx|Zd=xxxxx
+// PmovZPiB: PMOV  <Zd>, <Pn>.B
+// register fields: Pn, Zd
+052B3800 pmov z0, p0.b
+052B3807 pmov z7, p0.b
+052B380E pmov z14, p0.b
+052B39FF pmov z31, p15.b
+
+// pmov_z_pi_d 000|0010|1|1|i3h=x|1|01|i3l=xx|1|001110|0|Pn=xxxx|Zd=xxxxx
+// PmovZPiD: PMOV  <Zd>{[<imm>]}, <Pn>.D
+// read together by <imm>: i3h, i3l
+// register fields: Pn, Zd
+05A93800 pmov z0, p0.d
+05A93807 pmov z7, p0.d
+05A9380E pmov z14, p0.d
+05AF3800 pmov z0[3], p0.d
+05ED3800 pmov z0[6], p0.d
+05AB39FF pmov z31[1], p15.d
+05AD3800 pmov z0[2], p0.d
+05E93800 pmov z0[4], p0.d
+05EB3800 pmov z0[5], p0.d
+05EF3800 pmov z0[7], p0.d
+
+// pmov_z_pi_h 000|0010|1|opc=00|1|01|1|i1=x|1|001110|0|Pn=xxxx|Zd=xxxxx
+// PmovZPiH: PMOV  <Zd>{[<imm>]}, <Pn>.H
+// register fields: Pn, Zd
+052D3803 pmov z3, p0.h
+052D380A pmov z10, p0.h
+052D3811 pmov z17, p0.h
+052F3803 pmov z3[1], p0.h
+052D39E0 pmov z0, p15.h
+052D381F pmov z31, p0.h
+052D3800 pmov z0, p0.h
+
+// pmov_z_pi_s 000|0010|1|opc=01|1|01|i2=xx|1|001110|0|Pn=xxxx|Zd=xxxxx
+// PmovZPiS: PMOV  <Zd>{[<imm>]}, <Pn>.S
+// register fields: Pn, Zd
+05693802 pmov z2, p0.s
+05693809 pmov z9, p0.s
+05693810 pmov z16, p0.s
+056D3802 pmov z2[2], p0.s
+056F3802 pmov z2[3], p0.s
+056B39E0 pmov z0[1], p15.s
+0569381F pmov z31, p0.s
+05693800 pmov z0, p0.s

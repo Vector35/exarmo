@@ -1,0 +1,113 @@
+// FMLS_asimdelem_R_SD 0|Q=x|U=0|0|111|1|1|sz=x|L=x|M=x|Rm=xxxx|0|o2=1|01|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmlsAsimdelemRSd: FMLS  <Vd>.<T>, <Vn>.<T>, <Vm>.<Ts>[<index>]
+// read together by <T>: Q, sz
+// read together by <Vm>: M, Rm
+// read together by <index>: sz, L, H
+// register fields: Rn, Rd
+4FB85BFA fmls v26.4s, v31.4s, v24.s[3]
+0FA45A5E fmls v30.2s, v18.2s, v4.s[3]
+0F9D581B fmls v27.2s, v0.2s, v29.s[2]
+4F8052C8 fmls v8.4s, v22.4s, v0.s[0]
+0FB459C9 fmls v9.2s, v14.2s, v20.s[3]
+0F8950E1 fmls v1.2s, v7.2s, v9.s[0]
+4FB152F4 fmls v20.4s, v23.4s, v17.s[1]
+4F845A28 fmls v8.4s, v17.4s, v4.s[2]
+0F8A534D fmls v13.2s, v26.2s, v10.s[0]
+0F8959EB fmls v11.2s, v15.2s, v9.s[2]
+4FA652ED fmls v13.4s, v23.4s, v6.s[1]
+0FB5516E fmls v14.2s, v11.2s, v21.s[1]
+0F965094 fmls v20.2s, v4.2s, v22.s[0]
+0F9C530E fmls v14.2s, v24.2s, v28.s[0]
+4FC25A82 fmls v2.2d, v20.2d, v2.d[1]
+4FC958CA fmls v10.2d, v6.2d, v9.d[1]
+4FBF5BE0 fmls v0.4s, v31.4s, v31.s[3]
+4FB85BFF fmls v31.4s, v31.4s, v24.s[3]
+4FCF53FA fmls v26.2d, v31.2d, v15.d[0]
+4FF853FA UNDEFINED
+4FF85BFA UNDEFINED
+4FB05BFA fmls v26.4s, v31.4s, v16.s[3]
+0FF85BFA UNDEFINED
+
+// FMLS_asimdelem_RH_H 0|Q=x|U=0|0|111|1|size=00|L=x|M=x|Rm=xxxx|0|o2=1|01|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmlsAsimdelemRhH: FMLS  <Vd>.<T>, <Vn>.<T>, <Vm>.H[<index>]
+// read together by <index>: L, M, H
+// register fields: Rm, Rn, Rd
+4F015910 fmls v16.8h, v8.8h, v1.h[4]
+0F185236 fmls v22.4h, v17.4h, v8.h[1]
+0F1653FB fmls v27.4h, v31.4h, v6.h[1]
+4F265B86 fmls v6.8h, v28.8h, v6.h[6]
+4F3A50F5 fmls v21.8h, v7.8h, v10.h[3]
+0F1259CA fmls v10.4h, v14.4h, v2.h[5]
+4F0158D9 fmls v25.8h, v6.8h, v1.h[4]
+0F075AE7 fmls v7.4h, v23.4h, v7.h[4]
+4F185A68 fmls v8.8h, v19.8h, v8.h[5]
+4F0452BE fmls v30.8h, v21.8h, v4.h[0]
+0F0C5044 fmls v4.4h, v2.4h, v12.h[0]
+4F0A5A81 fmls v1.8h, v20.8h, v10.h[4]
+4F2452C6 fmls v6.8h, v22.8h, v4.h[2]
+0F2A5272 fmls v18.4h, v19.4h, v10.h[2]
+4F0B5109 fmls v9.8h, v8.8h, v11.h[0]
+4F0B5011 fmls v17.8h, v0.8h, v11.h[0]
+4F005900 fmls v0.8h, v8.8h, v0.h[4]
+4F0F591F fmls v31.8h, v8.8h, v15.h[4]
+4F315830 fmls v16.8h, v1.8h, v1.h[7]
+4F015908 fmls v8.8h, v8.8h, v1.h[4]
+
+// FMLS_asisdelem_R_SD 01|U=0|1|111|1|1|sz=x|L=x|M=x|Rm=xxxx|0|o2=1|01|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmlsAsisdelemRSd: FMLS  <V><d>, <V><n>, <Vm>.<Ts>[<index>]
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// read together by <Vm>: M, Rm
+// read together by <index>: sz, L, H
+// register fields: Rn, Rd
+5FD85AB9 fmls d25, d21, v24.d[1]
+5F8553E6 fmls s6, s31, v5.s[0]
+5F875883 fmls s3, s4, v7.s[2]
+5FB75B3B fmls s27, s25, v23.s[3]
+5F9D529F fmls s31, s20, v29.s[0]
+5FA75119 fmls s25, s8, v7.s[1]
+5FB65A0A fmls s10, s16, v22.s[3]
+5FB250EB fmls s11, s7, v18.s[1]
+5FCB5B61 fmls d1, d27, v11.d[1]
+5F885B74 fmls s20, s27, v8.s[2]
+5FB85321 fmls s1, s25, v24.s[1]
+5F9252BB fmls s27, s21, v18.s[0]
+5F8E5383 fmls s3, s28, v14.s[0]
+5FC55B81 fmls d1, d28, v5.d[1]
+5FBA51D4 fmls s20, s14, v26.s[1]
+5FB85130 fmls s16, s9, v24.s[1]
+5FD05800 fmls d0, d0, v16.d[1]
+5FDF5AB9 fmls d25, d21, v31.d[1]
+5FC052B9 fmls d25, d21, v0.d[0]
+5FF852B9 UNDEFINED
+5FF85AB9 UNDEFINED
+5F8F5AA0 fmls s0, s21, v15.s[2]
+5FD85ABF fmls d31, d21, v24.d[1]
+5F985819 fmls s25, s0, v24.s[2]
+5FD85BF9 fmls d25, d31, v24.d[1]
+5FD45AB9 fmls d25, d21, v20.d[1]
+5FD15AB9 fmls d25, d21, v17.d[1]
+
+// FMLS_asisdelem_RH_H 01|U=0|1|111|1|size=00|L=x|M=x|Rm=xxxx|0|o2=1|01|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmlsAsisdelemRhH: FMLS  <Hd>, <Hn>, <Vm>.H[<index>]
+// read together by <index>: L, M, H
+// register fields: Rm, Rn, Rd
+5F0258D0 fmls h16, h6, v2.h[4]
+5F335955 fmls h21, h10, v3.h[7]
+5F345345 fmls h5, h26, v4.h[3]
+5F2359D2 fmls h18, h14, v3.h[6]
+5F2551D8 fmls h24, h14, v5.h[2]
+5F255A5B fmls h27, h18, v5.h[6]
+5F235AB0 fmls h16, h21, v3.h[6]
+5F3259F2 fmls h18, h15, v2.h[7]
+5F215197 fmls h23, h12, v1.h[2]
+5F1750E5 fmls h5, h7, v7.h[1]
+5F335049 fmls h9, h2, v3.h[3]
+5F38504B fmls h11, h2, v8.h[3]
+5F035841 fmls h1, h2, v3.h[4]
+5F085065 fmls h5, h3, v8.h[0]
+5F2B5BCD fmls h13, h30, v11.h[6]
+5F085113 fmls h19, h8, v8.h[0]
+5F005800 fmls h0, h0, v0.h[4]
+5F0F5BFF fmls h31, h31, v15.h[4]
+5F1258D0 fmls h16, h6, v2.h[5]

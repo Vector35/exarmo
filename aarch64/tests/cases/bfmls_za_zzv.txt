@@ -1,0 +1,23 @@
+// bfmls_za_zzv_2x1_16 1|10|0000|10|sz=1|10|Zm=xxxx|0|Rv=xx|111|Zn=xxxxx|0|S=1|off3=xxx
+// BfmlsZaZzv2x116: BFMLS  ZA.H[<Wv>, <offs>{, VGx2}], { <Zn1>.H-<Zn2>.H }, <Zm>.H
+// register fields: Zm, Rv, Zn
+C1601C0E bfmls za.h[w8, 6, vgx2], {z0.h-z1.h}, z0.h
+C1601C2A bfmls za.h[w8, 2, vgx2], {z1.h-z2.h}, z0.h
+C1601C4D bfmls za.h[w8, 5, vgx2], {z2.h-z3.h}, z0.h
+C16F3FE8 bfmls za.h[w9, 0, vgx2], {z31.h-z0.h}, z15.h
+C1605C09 bfmls za.h[w10, 1, vgx2], {z0.h-z1.h}, z0.h
+C1607C0B bfmls za.h[w11, 3, vgx2], {z0.h-z1.h}, z0.h
+C1601C0C bfmls za.h[w8, 4, vgx2], {z0.h-z1.h}, z0.h
+C1601C0F bfmls za.h[w8, 7, vgx2], {z0.h-z1.h}, z0.h
+
+// bfmls_za_zzv_4x1_16 1|10|0000|10|sz=1|11|Zm=xxxx|0|Rv=xx|111|Zn=xxxxx|0|S=1|off3=xxx
+// BfmlsZaZzv4x116: BFMLS  ZA.H[<Wv>, <offs>{, VGx4}], { <Zn1>.H-<Zn4>.H }, <Zm>.H
+// register fields: Zm, Rv, Zn
+C1701C0A bfmls za.h[w8, 2, vgx4], {z0.h-z3.h}, z0.h
+C1701C2D bfmls za.h[w8, 5, vgx4], {z1.h-z4.h}, z0.h
+C1701C49 bfmls za.h[w8, 1, vgx4], {z2.h-z5.h}, z0.h
+C17F3FE8 bfmls za.h[w9, 0, vgx4], {z31.h-z2.h}, z15.h
+C1705C0B bfmls za.h[w10, 3, vgx4], {z0.h-z3.h}, z0.h
+C1707C0C bfmls za.h[w11, 4, vgx4], {z0.h-z3.h}, z0.h
+C1701C0E bfmls za.h[w8, 6, vgx4], {z0.h-z3.h}, z0.h
+C1701C0F bfmls za.h[w8, 7, vgx4], {z0.h-z3.h}, z0.h

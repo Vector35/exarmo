@@ -1,0 +1,13 @@
+// uclamp_z_zz_ 010|0010|0|size=xx|0|Zm=xxxxx|11000|U=1|Zn=xxxxx|Zd=xxxxx
+// UclampZZz: UCLAMP  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+440CC50B uclamp z11.b, z8.b, z12.b
+44C4C559 uclamp z25.d, z10.d, z4.d
+440AC605 uclamp z5.b, z16.b, z10.b
+44C4C42F uclamp z15.d, z1.d, z4.d
+44CAC541 uclamp z1.d, z10.d, z10.d
+4407C512 uclamp z18.b, z8.b, z7.b
+4411C67A uclamp z26.b, z19.b, z17.b
+448FC713 uclamp z19.s, z24.s, z15.s
+4440C400 uclamp z0.h, z0.h, z0.h
+441FC7FF uclamp z31.b, z31.b, z31.b

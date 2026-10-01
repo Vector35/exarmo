@@ -1,0 +1,23 @@
+// bfmul_mz_zzw_2x2 1|10|0000|1|size=00|1|Zm=xxxx|0|111001|Zn=xxxx|0|Zd=xxxx|0
+// BfmulMzZzw2x2: BFMUL  { <Zd1>.H-<Zd2>.H }, { <Zn1>.H-<Zn2>.H }, { <Zm1>.H-<Zm2>.H }
+// register fields: Zm, Zn, Zd
+C120E400 bfmul {z0.h-z1.h}, {z0.h-z1.h}, {z0.h-z1.h}
+C120E40E bfmul {z14.h-z15.h}, {z0.h-z1.h}, {z0.h-z1.h}
+C120E41C bfmul {z28.h-z29.h}, {z0.h-z1.h}, {z0.h-z1.h}
+C13EE7DE bfmul {z30.h-z31.h}, {z30.h-z31.h}, {z30.h-z31.h}
+C122E486 bfmul {z6.h-z7.h}, {z4.h-z5.h}, {z2.h-z3.h}
+
+// bfmul_mz_zzw_4x4 1|10|0000|1|size=00|1|Zm=xxx|01|111001|Zn=xxx|0|0|Zd=xxx|0|0
+// BfmulMzZzw4x4: BFMUL  { <Zd1>.H-<Zd4>.H }, { <Zn1>.H-<Zn4>.H }, { <Zm1>.H-<Zm4>.H }
+// register fields: Zm, Zn, Zd
+C121E40C bfmul {z12.h-z15.h}, {z0.h-z3.h}, {z0.h-z3.h}
+C121E498 bfmul {z24.h-z27.h}, {z4.h-z7.h}, {z0.h-z3.h}
+C121E508 bfmul {z8.h-z11.h}, {z8.h-z11.h}, {z0.h-z3.h}
+C125E580 bfmul {z0.h-z3.h}, {z12.h-z15.h}, {z4.h-z7.h}
+C129E604 bfmul {z4.h-z7.h}, {z16.h-z19.h}, {z8.h-z11.h}
+C12DE690 bfmul {z16.h-z19.h}, {z20.h-z23.h}, {z12.h-z15.h}
+C131E714 bfmul {z20.h-z23.h}, {z24.h-z27.h}, {z16.h-z19.h}
+C135E79C bfmul {z28.h-z31.h}, {z28.h-z31.h}, {z20.h-z23.h}
+C139E40C bfmul {z12.h-z15.h}, {z0.h-z3.h}, {z24.h-z27.h}
+C13DE40C bfmul {z12.h-z15.h}, {z0.h-z3.h}, {z28.h-z31.h}
+C121E400 bfmul {z0.h-z3.h}, {z0.h-z3.h}, {z0.h-z3.h}

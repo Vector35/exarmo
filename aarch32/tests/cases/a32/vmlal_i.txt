@@ -1,0 +1,26 @@
+// VMLAL_i_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|10|op=0|0|N=x|0|M=x|0|Vm=xxxx
+// VmlalIA1: VMLAL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f38fa881 vmlal.u8 q5, d31, d1
+f387e809 vmlal.u8 q7, d7, d9
+f3c94821 vmlal.u8 q10, d9, d17
+f2c3c886 vmlal.s8 q14, d19, d6
+f2c3c825 vmlal.s8 q14, d3, d21
+f3cc28ac vmlal.u8 q9, d28, d28
+f2ec680f vmlal.s32 q11, d12, d15
+f2c6e804 vmlal.s8 q15, d6, d4
+F3900880 vmlal.u16 q0, d16, d0
+F2F3F886 UNDEFINED
+F2988888 vmlal.s16 q4, d24, d8
+F3940882 vmlal.u16 q0, d20, d2
+F3E20880 vmlal.u32 q8, d18, d0
+F381A8A0 vmlal.u8 q5, d17, d16
+F2BF1881 UNDEFINED
+F38FF881 UNDEFINED
+F3CFF881 UNDEFINED
+F380A82F vmlal.u8 q5, d0, d31
+F380A881 vmlal.u8 q5, d16, d1
+F38FA801 vmlal.u8 q5, d15, d1

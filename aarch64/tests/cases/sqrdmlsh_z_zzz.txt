@@ -1,0 +1,15 @@
+// sqrdmlsh_z_zzz_ 010|0010|0|size=xx|0|Zm=xxxxx|0|1110|S=1|Zn=xxxxx|Zda=xxxxx
+// SqrdmlshZZzz: SQRDMLSH  <Zda>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zda
+4402742A sqrdmlsh z10.b, z1.b, z2.b
+444E74F3 sqrdmlsh z19.h, z7.h, z14.h
+444B743A sqrdmlsh z26.h, z1.h, z11.h
+44897555 sqrdmlsh z21.s, z10.s, z9.s
+44C374F6 sqrdmlsh z22.d, z7.d, z3.d
+44497607 sqrdmlsh z7.h, z16.h, z9.h
+448475A7 sqrdmlsh z7.s, z13.s, z4.s
+4400758B sqrdmlsh z11.b, z12.b, z0.b
+441F7400 sqrdmlsh z0.b, z0.b, z31.b
+440277FF sqrdmlsh z31.b, z31.b, z2.b
+4402744A sqrdmlsh z10.b, z2.b, z2.b
+44027422 sqrdmlsh z2.b, z1.b, z2.b

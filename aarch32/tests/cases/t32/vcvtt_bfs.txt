@@ -1,0 +1,21 @@
+// VCVTT_T1_bfs 111|0|11|10|1|D=x|11|o1=0|opc2=011|Vd=xxxx|10|size=01|o3=1|1|M=x|0|Vm=xxxx
+// VcvttT1Bfs: VCVTT{<c>}{<q>}.BF16.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef369c0 vcvtt.bf16.f32 s13, s0
+eeb3a9e4 vcvtt.bf16.f32 s20, s9
+eeb379cf vcvtt.bf16.f32 s14, s30
+eef3e9c3 vcvtt.bf16.f32 s29, s6
+eeb309c0 vcvtt.bf16.f32 s0, s0
+eef339ce vcvtt.bf16.f32 s7, s28
+eef349c9 vcvtt.bf16.f32 s9, s18
+eeb3e9c5 vcvtt.bf16.f32 s28, s10
+EEF3F9C8 vcvtt.bf16.f32 s31, s16
+EEF389C2 vcvtt.bf16.f32 s17, s4
+EEF329C1 vcvtt.bf16.f32 s5, s2
+EEF319E0 vcvtt.bf16.f32 s3, s1
+EEB3F9EF vcvtt.bf16.f32 s30, s31
+EEF309C0 vcvtt.bf16.f32 s1, s0
+EEF3F9C0 vcvtt.bf16.f32 s31, s0
+EEF369C0 [ne] vcvttne.bf16.f32 s13, s0

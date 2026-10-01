@@ -1,0 +1,115 @@
+// VNEG_T1_D 111111111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|111|Q=0|M=x|0|Vm=xxxx
+// VnegT1D: VNEG{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffb13387 vneg.s8 d3, d7
+fff59384 vneg.s16 d25, d4
+ffb9a380 vneg.s32 d10, d0
+ffb133a6 vneg.s8 d3, d22
+fff58783 vneg.f16 d24, d3
+fff11387 vneg.s8 d17, d7
+fff9d385 vneg.s32 d29, d5
+ffb573ab vneg.s16 d7, d27
+FFBD3387 UNDEFINED
+FFB9078F vneg.f32 d0, d15
+FFB1F388 vneg.s8 d15, d8
+FFB14382 vneg.s8 d4, d2
+FFB12381 vneg.s8 d2, d1
+FFB13787 UNDEFINED
+FFBD3787 UNDEFINED
+FFB1038F vneg.s8 d0, d15
+FFB1F3A0 vneg.s8 d15, d16
+FFF103AF vneg.s8 d16, d31
+FFF1F387 vneg.s8 d31, d7
+FFB13387 [ne] vnegne.s8 d3, d7
+
+// VNEG_T1_Q 111111111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|111|Q=1|M=x|0|Vm=xxxx
+// VnegT1Q: VNEG{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb5a3ec vneg.s16 q5, q14
+ffb583e2 vneg.s16 q4, q9
+ffb583c6 vneg.s16 q4, q3
+ffb9a3ec vneg.s32 q5, q14
+ffb907c2 vneg.f32 q0, q1
+ffb563ea vneg.s16 q3, q13
+ffb907c0 vneg.f32 q0, q0
+ffb5e3e8 vneg.s16 q7, q12
+FFF143E4 vneg.s8 q10, q10
+FFBDF3EF UNDEFINED
+FFB123E0 vneg.s8 q1, q8
+FFB117E1 UNDEFINED
+FFF507EC vneg.f16 q8, q14
+FFBDF3CF UNDEFINED
+FFFDF7EF UNDEFINED
+FFB5A3EC [ne] vnegne.s16 q5, q14
+
+// VNEG_T2_D 111011101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=11|o3=0|1|M=x|0|Vm=xxxx
+// VnegT2D: VNEG{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eef17b4b vneg.f64 d23, d11
+eeb1eb40 vneg.f64 d14, d0
+eef14b46 vneg.f64 d20, d6
+eeb10b65 vneg.f64 d0, d21
+eeb19b6d vneg.f64 d9, d29
+eef11b68 vneg.f64 d17, d24
+eeb1ab68 vneg.f64 d10, d24
+eef10b63 vneg.f64 d16, d19
+EEF1FB4F vneg.f64 d31, d15
+EEF18B44 vneg.f64 d24, d4
+EEF12B42 vneg.f64 d18, d2
+EEB1FB41 vneg.f64 d15, d1
+EEF17B60 vneg.f64 d23, d16
+EEF17B6F vneg.f64 d23, d31
+EEF17B4B [ne] vnegne.f64 d23, d11
+
+// VNEG_T2_H 111011101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=01|o3=0|1|M=x|0|Vm=xxxx
+// VnegT2H: VNEG{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef1b965 vneg.f16 s23, s11
+eef1e963 vneg.f16 s29, s7
+eeb1e94f vneg.f16 s28, s30
+eeb1094f vneg.f16 s0, s30
+eeb1094d vneg.f16 s0, s26
+eef1096d vneg.f16 s1, s27
+eef1d96a vneg.f16 s27, s21
+eef1a96a vneg.f16 s21, s21
+EEF1F960 vneg.f16 s31, s1
+EEF18968 vneg.f16 s17, s17
+EEF14964 vneg.f16 s9, s9
+EEF12962 vneg.f16 s5, s5
+EEF11961 vneg.f16 s3, s3
+EEB1F940 vneg.f16 s30, s0
+EEF1B96F vneg.f16 s23, s31
+EEF1B965 [ne] vnegne.f16 s23, s11 (unpredictable)
+
+// VNEG_T2_S 111011101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=10|o3=0|1|M=x|0|Vm=xxxx
+// VnegT2S: VNEG{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeb1fa61 vneg.f32 s30, s3
+eef15a63 vneg.f32 s11, s7
+eef1ca6f vneg.f32 s25, s31
+eef13a68 vneg.f32 s7, s17
+eef1ba4d vneg.f32 s23, s26
+eef17a6a vneg.f32 s15, s21
+eef1da4d vneg.f32 s27, s26
+eef16a40 vneg.f32 s13, s0
+EEB10A64 vneg.f32 s0, s9
+EEB18A62 vneg.f32 s16, s5
+EEB14A4F vneg.f32 s8, s30
+EEB12A60 vneg.f32 s4, s1
+EEB11A61 vneg.f32 s2, s3
+EEB10A61 vneg.f32 s0, s3
+EEF10A61 vneg.f32 s1, s3
+EEF1FA61 vneg.f32 s31, s3
+EEB1FA61 [ne] vnegne.f32 s30, s3

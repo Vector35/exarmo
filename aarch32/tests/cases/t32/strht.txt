@@ -1,0 +1,24 @@
+// STRHT_T1 111|1100|00|size=01|L=0|Rn=xxxx|Rt=xxxx|1110|imm8=xxxxxxxx
+// StrhtT1: STRHT{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f8287e2a strht r7, [r8, #42]
+f8217e32 strht r7, [r1, #50]
+f82c6e89 strht r6, [r12, #137]
+f82b0ef0 strht r0, [r11, #240]
+f8263e65 strht r3, [r6, #101]
+f82a9ea7 strht r9, [r10, #167]
+f82e9e36 strht r9, [lr, #54]
+f8254e71 strht r4, [r5, #113]
+F820FE00 strht pc, [r0] (unpredictable)
+F82F7E2A UNALLOCATED
+F8288EFF strht r8, [r8, #0xff]
+F8287E80 strht r7, [r8, #0x80]
+F8287E40 strht r7, [r8, #0x40]
+F8287E20 strht r7, [r8, #0x20]
+F8287E10 strht r7, [r8, #0x10]
+F8287E08 strht r7, [r8, #0x8]
+F8287E04 strht r7, [r8, #0x4]
+F8287E02 strht r7, [r8, #0x2]
+F8287E01 strht r7, [r8, #0x1]
+F8287E2A [ne] strhtne r7, [r8, #0x2a]

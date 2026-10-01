@@ -1,0 +1,28 @@
+// whilelo_p_p_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|00|0|sf=x|U=1|lt=1|Rn=xxxxx|eq=0|Pd=xxxx
+// WhileloPPRr: WHILELO  <Pd>.<T>, <n>, <m>
+// read together by <n>: sf, Rn
+// read together by <m>: Rm, sf
+// register fields: Rm, Rn, Pd
+25E91E0C whilelo p12.d, x16, x9
+25AA0FE9 whilelo p9.s, wzr, w10
+252C1ECA whilelo p10.b, x22, x12
+252D0CE2 whilelo p2.b, w7, w13
+25B31E8C whilelo p12.s, x20, x19
+25771C01 whilelo p1.h, x0, x23
+25710D49 whilelo p9.h, w10, w17
+25270FC9 whilelo p9.b, w30, w7
+25F81EE3 whilelo p3.d, x23, x24
+25BE0D85 whilelo p5.s, w12, w30
+25740C6F whilelo p15.h, w3, w20
+25B70E88 whilelo p8.s, w20, w23
+25B20FA4 whilelo p4.s, w29, w18
+25780C21 whilelo p1.h, w1, w24
+25F60F49 whilelo p9.d, w26, w22
+25AD0DEF whilelo p15.s, w15, w13
+25E01E00 whilelo p0.d, x16, x0
+25FF1E0C whilelo p12.d, x16, xzr
+25E00E0C whilelo p12.d, w16, w0
+25FF0E0C whilelo p12.d, w16, wzr
+25E90C0C whilelo p12.d, w0, w9
+25E91FEC whilelo p12.d, xzr, x9
+25E91D2C whilelo p12.d, x9, x9

@@ -1,0 +1,31 @@
+// smlsll_za_zzv_1 1|10|0000|10|sz=x|10|Zm=xxxx|0|Rv=xx|001|Zn=xxxxx|U=0|S=1|op=0|off2=xx
+// SmlsllZaZzv1: SMLSLL  ZA.<T>[<Wv>, <offs1>:<offs4>], <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Rv, Zn
+C120042A smlsll za.s[w8, 8:11], z1.b, z0.b
+C1200469 smlsll za.s[w8, 4:7], z3.b, z0.b
+C12004A8 smlsll za.s[w8, 0:3], z5.b, z0.b
+C16F240B smlsll za.d[w9, 12:15], z0.h, z15.h
+C12047EA smlsll za.s[w10, 8:11], z31.b, z0.b
+C120642A smlsll za.s[w11, 8:11], z1.b, z0.b
+C120040A smlsll za.s[w8, 8:11], z0.b, z0.b
+
+// smlsll_za_zzv_2x1 1|10|0000|10|sz=x|10|Zm=xxxx|0|Rv=xx|000|Zn=xxxxx|U=0|S=1|op=0|0|o1=x
+// SmlsllZaZzv2x1: SMLSLL  ZA.<T>[<Wv>, <offs1>:<offs4>{, VGx2}], { <Zn1>.<Tb>-<Zn2>.<Tb> }, <Zm>.<Tb>
+// register fields: Zm, Rv, Zn
+C1200009 smlsll za.s[w8, 4:7, vgx2], {z0.b-z1.b}, z0.b
+C1200048 smlsll za.s[w8, 0:3, vgx2], {z2.b-z3.b}, z0.b
+C12000E9 smlsll za.s[w8, 4:7, vgx2], {z7.b-z8.b}, z0.b
+C16F23E9 smlsll za.d[w9, 4:7, vgx2], {z31.h-z0.h}, z15.h
+C1204009 smlsll za.s[w10, 4:7, vgx2], {z0.b-z1.b}, z0.b
+C1206009 smlsll za.s[w11, 4:7, vgx2], {z0.b-z1.b}, z0.b
+
+// smlsll_za_zzv_4x1 1|10|0000|10|sz=x|11|Zm=xxxx|0|Rv=xx|000|Zn=xxxxx|U=0|S=1|op=0|0|o1=x
+// SmlsllZaZzv4x1: SMLSLL  ZA.<T>[<Wv>, <offs1>:<offs4>{, VGx4}], { <Zn1>.<Tb>-<Zn4>.<Tb> }, <Zm>.<Tb>
+// register fields: Zm, Rv, Zn
+C1300028 smlsll za.s[w8, 0:3, vgx4], {z1.b-z4.b}, z0.b
+C13000C9 smlsll za.s[w8, 4:7, vgx4], {z6.b-z9.b}, z0.b
+C1300108 smlsll za.s[w8, 0:3, vgx4], {z8.b-z11.b}, z0.b
+C17F2008 smlsll za.d[w9, 0:3, vgx4], {z0.h-z3.h}, z15.h
+C13043E8 smlsll za.s[w10, 0:3, vgx4], {z31.b-z2.b}, z0.b
+C1306028 smlsll za.s[w11, 0:3, vgx4], {z1.b-z4.b}, z0.b
+C1300008 smlsll za.s[w8, 0:3, vgx4], {z0.b-z3.b}, z0.b

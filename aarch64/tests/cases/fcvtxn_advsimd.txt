@@ -1,0 +1,46 @@
+// FCVTXN_asimdmisc_N 0|Q=x|U=1|0|111|0|size=01|10000|opcode=10110|10|Rn=xxxxx|Rd=xxxxx
+// FcvtxnAsimdmiscN: FCVTXN  <Vd>.<Tb>, <Vn>.2D
+// FcvtxnAsimdmiscN2: FCVTXN2  <Vd>.<Tb>, <Vn>.2D
+// register fields: Rn, Rd
+// form chosen on: Q
+6E616B1B fcvtxn2 v27.4s, v24.2d
+2E616964 fcvtxn v4.2s, v11.2d
+6E61685C fcvtxn2 v28.4s, v2.2d
+6E616A02 fcvtxn2 v2.4s, v16.2d
+2E616BC0 fcvtxn v0.2s, v30.2d
+6E616916 fcvtxn2 v22.4s, v8.2d
+2E616811 fcvtxn v17.2s, v0.2d
+2E6168A2 fcvtxn v2.2s, v5.2d
+6E616972 fcvtxn2 v18.4s, v11.2d
+6E616A55 fcvtxn2 v21.4s, v18.2d
+2E61696E fcvtxn v14.2s, v11.2d
+6E61691F fcvtxn2 v31.4s, v8.2d
+6E6168B0 fcvtxn2 v16.4s, v5.2d
+6E616B90 fcvtxn2 v16.4s, v28.2d
+2E616930 fcvtxn v16.2s, v9.2d
+2E616A99 fcvtxn v25.2s, v20.2d
+6E616BFB fcvtxn2 v27.4s, v31.2d
+6E616B18 fcvtxn2 v24.4s, v24.2d
+6E616811 fcvtxn2 v17.4s, v0.2d
+
+// FCVTXN_asisdmisc_N 01|U=1|1|111|0|size=01|10000|opcode=10110|10|Rn=xxxxx|Rd=xxxxx
+// FcvtxnAsisdmiscN: FCVTXN  <d>, <n>
+// register fields: Rn, Rd
+7E6168A4 fcvtxn s4, d5
+7E616936 fcvtxn s22, d9
+7E6169DB fcvtxn s27, d14
+7E616984 fcvtxn s4, d12
+7E616A45 fcvtxn s5, d18
+7E6168AB fcvtxn s11, d5
+7E616AB1 fcvtxn s17, d21
+7E616B11 fcvtxn s17, d24
+7E616A71 fcvtxn s17, d19
+7E616BB1 fcvtxn s17, d29
+7E616A1A fcvtxn s26, d16
+7E616928 fcvtxn s8, d9
+7E616B84 fcvtxn s4, d28
+7E616973 fcvtxn s19, d11
+7E616A86 fcvtxn s6, d20
+7E616AF0 fcvtxn s16, d23
+7E616800 fcvtxn s0, d0
+7E616BFF fcvtxn s31, d31

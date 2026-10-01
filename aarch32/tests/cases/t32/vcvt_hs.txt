@@ -1,0 +1,51 @@
+// VCVT_hs_T1 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|011|op=0|0|Q=0|M=x|0|Vm=xxxx
+// VcvtHsT1: VCVT{<c>}{<q>}.F16.F32  <Dd>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb6b602 vcvt.f16.f32 d11, q1
+fff6b604 vcvt.f16.f32 d27, q2
+ffb6a604 vcvt.f16.f32 d10, q2
+ffb6960a vcvt.f16.f32 d9, q5
+fff6e622 vcvt.f16.f32 d30, q9
+fff6d624 vcvt.f16.f32 d29, q10
+ffb6e600 vcvt.f16.f32 d14, q0
+fff6862c vcvt.f16.f32 d24, q14
+FFB2B60F UNDEFINED
+FFBAB601 UNDEFINED
+FFBEB60F UNDEFINED
+FFB60608 vcvt.f16.f32 d0, q4
+FFB6F620 vcvt.f16.f32 d15, q8
+FFB64602 vcvt.f16.f32 d4, q1
+FFB62602 vcvt.f16.f32 d2, q1
+FFB61602 vcvt.f16.f32 d1, q1
+FFB60602 vcvt.f16.f32 d0, q1
+FFB6F602 vcvt.f16.f32 d15, q1
+FFF60602 vcvt.f16.f32 d16, q1
+FFF6F602 vcvt.f16.f32 d31, q1
+FFB6B62F UNDEFINED
+FFB6B602 [ne] vcvtne.f16.f32 d11, q1
+
+// VCVT_sh_T1 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|011|op=1|0|Q=0|M=x|0|Vm=xxxx
+// VcvtShT1: VCVT{<c>}{<q>}.F32.F16  <Qd>, <Dm>
+// read together by <Qd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fff68703 vcvt.f32.f16 q12, d3
+ffb6e706 vcvt.f32.f16 q7, d6
+ffb6a725 vcvt.f32.f16 q5, d21
+fff64720 vcvt.f32.f16 q10, d16
+fff6472b vcvt.f32.f16 q10, d27
+fff68724 vcvt.f32.f16 q12, d20
+FFF2F703 UNDEFINED
+FFFA1703 UNDEFINED
+FFBEF703 UNDEFINED
+FFF6070F vcvt.f32.f16 q8, d15
+FFF62708 vcvt.f32.f16 q9, d8
+FFB60702 vcvt.f32.f16 q0, d2
+FFF60701 vcvt.f32.f16 q8, d1
+FFF6F703 UNDEFINED
+FFF68700 vcvt.f32.f16 q12, d0
+FFF6870F vcvt.f32.f16 q12, d15
+FFF6872F vcvt.f32.f16 q12, d31
+FFF68703 [ne] vcvtne.f32.f16 q12, d3

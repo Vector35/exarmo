@@ -1,0 +1,48 @@
+// VQDMULL_T1 111|U=0|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1101|N=x|0|M=x|0|Vm=xxxx
+// VqdmullT1: VQDMULL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef9a8da8 vqdmull.s16 q4, d26, d24
+efae0d21 vqdmull.s32 q0, d14, d17
+efd06daa vqdmull.s16 q11, d16, d26
+efd1edaf vqdmull.s16 q15, d17, d31
+ef96adae vqdmull.s16 q5, d22, d30
+ef9dcd0f vqdmull.s16 q6, d13, d15
+efef4d86 vqdmull.s32 q10, d31, d6
+efd3ed82 vqdmull.s16 q15, d19, d2
+EF8AFDA8 UNDEFINED
+EFBA1DA8 UNDEFINED
+EF982DA0 vqdmull.s16 q1, d24, d16
+EFD40DA4 vqdmull.s16 q8, d20, d20
+EF928D80 vqdmull.s16 q4, d18, d0
+EF9AFDA8 UNDEFINED
+EFDAFDA8 UNDEFINED
+EF908D20 vqdmull.s16 q4, d0, d16
+EF9F8D28 vqdmull.s16 q4, d15, d24
+EF9A8DA8 [ne] vqdmullne.s16 q4, d26, d24
+
+// VQDMULL_T2 111|Q=0|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1011|N=x|1|M=x|0|Vm=xxxx
+// VqdmullT2: VQDMULL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm[x]>
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// IT state read: condition
+ef904be8 vqdmull.s16 q2, d16, d0[3]
+efaf2b6a vqdmull.s32 q1, d15, d10[1]
+efaeabe0 vqdmull.s32 q5, d30, d0[1]
+efe48bec vqdmull.s32 q12, d20, d12[1]
+efd90b47 vqdmull.s16 q8, d9, d7[0]
+efd7eb67 vqdmull.s16 q15, d7, d7[2]
+efea0beb vqdmull.s32 q8, d26, d11[1]
+efa6cb45 vqdmull.s32 q6, d6, d5[0]
+EF80FBE8 UNDEFINED
+EFBF1B6A UNDEFINED
+EF980BEF vqdmull.s16 q0, d24, d7[3]
+EF924BE4 vqdmull.s16 q2, d18, d4[2]
+EF914BE2 vqdmull.s16 q2, d17, d2[2]
+EF904B61 vqdmull.s16 q2, d0, d1[2]
+EF90FBE8 UNDEFINED
+EFD0FBE8 UNDEFINED
+EF9F4BE8 vqdmull.s16 q2, d31, d0[3]
+EF904BE8 [ne] vqdmullne.s16 q2, d16, d0[3]

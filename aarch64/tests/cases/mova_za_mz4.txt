@@ -1,0 +1,12 @@
+// mova_za_mz4_1 1|10|0000|0|00|000|1|0|00|Rv=xx|011|Zn=xxx|00|0|0|off3=xxx
+// MovaZaMz41: MOVA  ZA.D[<Wv>, <offs>{, VGx4}], { <Zn1>.D-<Zn4>.D }
+// MovZaMz41MovaZaMz41: MOV  ZA.D[<Wv>, <offs>{, VGx4}], { <Zn1>.D-<Zn4>.D }
+// register fields: Rv, Zn
+C0040C04 mov za.d[w8, 4, vgx4], {z0.d-z3.d}
+C0040C82 mov za.d[w8, 2, vgx4], {z4.d-z7.d}
+C0040D00 mov za.d[w8, 0, vgx4], {z8.d-z11.d}
+C0042D81 mov za.d[w9, 1, vgx4], {z12.d-z15.d}
+C0044E03 mov za.d[w10, 3, vgx4], {z16.d-z19.d}
+C0046E85 mov za.d[w11, 5, vgx4], {z20.d-z23.d}
+C0040F06 mov za.d[w8, 6, vgx4], {z24.d-z27.d}
+C0040F87 mov za.d[w8, 7, vgx4], {z28.d-z31.d}

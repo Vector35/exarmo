@@ -1,0 +1,46 @@
+// XPACD_64Z_dp_1src sf=1|1|S=0|11010110|opcode2=00001|01000|D=1|Rn=11111|Rd=xxxxx
+// Xpacd64zDp1src: XPACD  <Xd>
+// register fields: Rd
+DAC147E0 xpacd x0
+DAC147F0 xpacd x16
+DAC147EE xpacd x14
+DAC147F4 xpacd x20
+DAC147F8 xpacd x24
+DAC147F9 xpacd x25
+DAC147F2 xpacd x18
+DAC147E6 xpacd x6
+DAC147F5 xpacd x21
+DAC147F3 xpacd x19
+DAC147FA xpacd x26
+DAC147F7 xpacd x23
+DAC147EC xpacd x12
+DAC147FE xpacd lr
+DAC147FB xpacd x27
+DAC147F1 xpacd x17
+DAC147FF xpacd xzr
+
+// XPACI_64Z_dp_1src sf=1|1|S=0|11010110|opcode2=00001|01000|D=0|Rn=11111|Rd=xxxxx
+// Xpaci64zDp1src: XPACI  <Xd>
+// register fields: Rd
+DAC143F2 xpaci x18
+DAC143F0 xpaci x16
+DAC143F8 xpaci x24
+DAC143E1 xpaci x1
+DAC143F9 xpaci x25
+DAC143FD xpaci fp
+DAC143E4 xpaci x4
+DAC143E8 xpaci x8
+DAC143E5 xpaci x5
+DAC143F7 xpaci x23
+DAC143EC xpaci x12
+DAC143FE xpaci lr
+DAC143FC xpaci x28
+DAC143E6 xpaci x6
+DAC143F3 xpaci x19
+DAC143F6 xpaci x22
+DAC143E0 xpaci x0
+DAC143FF xpaci xzr
+
+// XPACLRI_HI_hints 110|101|01000000110010|CRm=0000|op2=111|11111
+// XpaclriHiHints: XPACLRI
+D50320FF xpaclri

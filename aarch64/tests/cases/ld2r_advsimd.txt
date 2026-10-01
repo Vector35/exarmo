@@ -1,0 +1,71 @@
+// LD2R_asisdlso_R2 0|Q=x|00|1|1|0|10|L=1|R=1|0000|o2=0|opcode=110|S=0|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld2rAsisdlsoR2: LD2R  { <Vt>.<T>, <Vt2>.<T> }, [<Xn|SP>]
+// read together by <T>: Q, size
+// register fields: Rn, Rt
+0D60C40A ld2r {v10.4h, v11.4h}, [x0]
+0D60C79C ld2r {v28.4h, v29.4h}, [x28]
+4D60C419 ld2r {v25.8h, v26.8h}, [x0]
+0D60C329 ld2r {v9.8b, v10.8b}, [x25]
+0D60CDF5 ld2r {v21.1d, v22.1d}, [x15]
+4D60CF7C ld2r {v28.2d, v29.2d}, [x27]
+0D60C7A7 ld2r {v7.4h, v8.4h}, [fp]
+4D60C5FE ld2r {v30.8h, v31.8h}, [x15]
+0D60C707 ld2r {v7.4h, v8.4h}, [x24]
+0D60C68C ld2r {v12.4h, v13.4h}, [x20]
+4D60CD4A ld2r {v10.2d, v11.2d}, [x10]
+0D60CFCE ld2r {v14.1d, v15.1d}, [lr]
+0D60CFB7 ld2r {v23.1d, v24.1d}, [fp]
+0D60C998 ld2r {v24.2s, v25.2s}, [x12]
+4D60CE80 ld2r {v0.2d, v1.2d}, [x20]
+4D60C0B4 ld2r {v20.16b, v21.16b}, [x5]
+0D60C7FF ld2r {v31.4h, v0.4h}, [sp]
+4D60C80A ld2r {v10.4s, v11.4s}, [x0]
+
+// LD2R_asisdlsop_R2_i 0|Q=x|0011011|L=1|R=1|Rm=11111|opcode=110|S=0|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld2rAsisdlsopR2I: LD2R  { <Vt>.<T>, <Vt2>.<T> }, [<Xn|SP>], <imm>
+// read together by <T>: Q, size
+// register fields: Rn, Rt
+4DFFC620 ld2r {v0.8h, v1.8h}, [x17], #0x4
+4DFFCFE2 ld2r {v2.2d, v3.2d}, [sp], #0x10
+0DFFC50C ld2r {v12.4h, v13.4h}, [x8], #0x4
+0DFFC538 ld2r {v24.4h, v25.4h}, [x9], #0x4
+4DFFC70E ld2r {v14.8h, v15.8h}, [x24], #0x4
+4DFFCCF4 ld2r {v20.2d, v21.2d}, [x7], #0x10
+0DFFCBDF ld2r {v31.2s, v0.2s}, [lr], #0x8
+0DFFC917 ld2r {v23.2s, v24.2s}, [x8], #0x8
+4DFFC4A0 ld2r {v0.8h, v1.8h}, [x5], #0x4
+0DFFC555 ld2r {v21.4h, v22.4h}, [x10], #0x4
+4DFFCF66 ld2r {v6.2d, v7.2d}, [x27], #0x10
+4DFFCD58 ld2r {v24.2d, v25.2d}, [x10], #0x10
+0DFFCEEC ld2r {v12.1d, v13.1d}, [x23], #0x10
+0DFFCEB3 ld2r {v19.1d, v20.1d}, [x21], #0x10
+0DFFC5F2 ld2r {v18.4h, v19.4h}, [x15], #0x4
+4DFFC5A7 ld2r {v7.8h, v8.8h}, [x13], #0x4
+4DFFC000 ld2r {v0.16b, v1.16b}, [x0], #0x2
+0DFFC220 ld2r {v0.8b, v1.8b}, [x17], #0x2
+4DFFCA20 ld2r {v0.4s, v1.4s}, [x17], #0x8
+
+// LD2R_asisdlsop_RX2_r 0|Q=x|0011011|L=1|R=1|Rm=xxxxx|opcode=110|S=0|size=xx|Rn=xxxxx|Rt=xxxxx
+// Ld2rAsisdlsopRx2R: LD2R  { <Vt>.<T>, <Vt2>.<T> }, [<Xn|SP>], <Xm>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rt
+0DF6C6F3 ld2r {v19.4h, v20.4h}, [x23], x22
+0DF1CC52 ld2r {v18.1d, v19.1d}, [x2], x17
+0DECC979 ld2r {v25.2s, v26.2s}, [x11], x12
+0DF3C76A ld2r {v10.4h, v11.4h}, [x27], x19
+0DECC776 ld2r {v22.4h, v23.4h}, [x27], x12
+4DE9C33D ld2r {v29.16b, v30.16b}, [x25], x9
+4DFAC39D ld2r {v29.16b, v30.16b}, [x28], x26
+0DF9CCEA ld2r {v10.1d, v11.1d}, [x7], x25
+0DFDCEF9 ld2r {v25.1d, v26.1d}, [x23], fp
+0DEBC158 ld2r {v24.8b, v25.8b}, [x10], x11
+4DE5C1D0 ld2r {v16.16b, v17.16b}, [x14], x5
+0DE7C96B ld2r {v11.2s, v12.2s}, [x11], x7
+0DF0C1AB ld2r {v11.8b, v12.8b}, [x13], x16
+4DE5C5A2 ld2r {v2.8h, v3.8h}, [x13], x5
+4DFEC7C7 ld2r {v7.8h, v8.8h}, [lr], lr
+0DFAC7AD ld2r {v13.4h, v14.4h}, [fp], x26
+0DE0C400 ld2r {v0.4h, v1.4h}, [x0], x0
+0DF6C7FF ld2r {v31.4h, v0.4h}, [sp], x22
+4DF6CAF3 ld2r {v19.4s, v20.4s}, [x23], x22
+4DF6CEF3 ld2r {v19.2d, v20.2d}, [x23], x22

@@ -1,0 +1,104 @@
+// MOVN_32_movewide sf=0|opc=00|100101|hw=0x|imm16=xxxxxxxxxxxxxxxx|Rd=xxxxx
+// Movn32Movewide: MOVN  <Wd>, #<imm>{, LSL #<shift>}
+// MovMovn32Movewide: MOV  <Wd>, #<imm>
+// read together by the MOV alias: hw, imm16
+// register fields: Rd
+// form chosen on: hw, imm16
+129FFFE6 movn w6, #0xffff
+12BFFFFC movn w28, #0xffff, lsl #0x10
+129FFFE9 movn w9, #0xffff
+1289FFE0 mov w0, #0xffffb000
+12B16086 mov w6, #0x74fbffff
+129E2BE1 mov w1, #0xffff0ea0
+12B8B4D9 mov w25, #0x3a59ffff
+12A853FB mov w27, #0xbd60ffff
+128AC046 mov w6, #0xffffa9fd
+12A89873 mov w19, #0xbb3cffff
+12A1BF55 mov w21, #0xf205ffff
+12A66F82 mov w2, #0xcc83ffff
+128FAB74 mov w20, #0xffff82a4
+12908C89 mov w9, #0xffff7b9b
+1292D658 mov w24, #0xffff694d
+12A035E9 mov w9, #0xfe50ffff
+128371A9 mov w9, #0xffffe472
+12ADAFBA mov w26, #0x9282ffff
+129ED565 mov w5, #0xffff0954
+1280001F mov wzr, #0xffffffff
+12A00006 movn w6, #0x0, lsl #0x10
+12900006 mov w6, #0xffff7fff
+12880006 mov w6, #0xffffbfff
+12840006 mov w6, #0xffffdfff
+12820006 mov w6, #0xffffefff
+12810006 mov w6, #0xfffff7ff
+12808006 mov w6, #0xfffffbff
+12804006 mov w6, #0xfffffdff
+12802006 mov w6, #0xfffffeff
+12801006 mov w6, #0xffffff7f
+12800806 mov w6, #0xffffffbf
+12800406 mov w6, #0xffffffdf
+12800206 mov w6, #0xffffffef
+12800106 mov w6, #0xfffffff7
+12800086 mov w6, #0xfffffffb
+12800046 mov w6, #0xfffffffd
+12800026 mov w6, #0xfffffffe
+12A0001F movn wzr, #0x0, lsl #0x10
+
+// MOVN_64_movewide sf=1|opc=00|100101|hw=xx|imm16=xxxxxxxxxxxxxxxx|Rd=xxxxx
+// Movn64Movewide: MOVN  <Xd>, #<imm>{, LSL #<shift>}
+// MovMovn64Movewide: MOV  <Xd>, #<imm>
+// read together by the MOV alias: hw, imm16
+// register fields: Rd
+// form chosen on: hw, imm16
+92E0000D movn x13, #0x0, lsl #0x30
+92A00019 movn x25, #0x0, lsl #0x10
+92E00011 movn x17, #0x0, lsl #0x30
+92C00014 movn x20, #0x0, lsl #0x20
+92C00008 movn x8, #0x0, lsl #0x20
+92A00012 movn x18, #0x0, lsl #0x10
+92C0001B movn x27, #0x0, lsl #0x20
+92E00001 movn x1, #0x0, lsl #0x30
+92E00009 movn x9, #0x0, lsl #0x30
+92E00002 movn x2, #0x0, lsl #0x30
+92A00001 movn x1, #0x0, lsl #0x10
+92C00012 movn x18, #0x0, lsl #0x20
+92C00005 movn x5, #0x0, lsl #0x20
+92A00015 movn x21, #0x0, lsl #0x10
+92E0000E movn x14, #0x0, lsl #0x30
+92E00004 movn x4, #0x0, lsl #0x30
+92F2A512 mov x18, #0x6ad7ffffffffffff
+92A2C62B mov x11, #0xffffffffe9ceffff
+92C77C29 mov x9, #0xffffc41effffffff
+92F430BE mov lr, #0x5e7affffffffffff
+928E6FA2 mov x2, #0xffffffffffff8c82
+929F7A9C mov x28, #0xffffffffffff042b
+92C22392 mov x18, #0xffffeee3ffffffff
+92DB8660 mov x0, #0xffff23ccffffffff
+928B87FA mov x26, #0xffffffffffffa3c0
+92956536 mov x22, #0xffffffffffff54d6
+9298B3D3 mov x19, #0xffffffffffff3a61
+92AB5E7F mov xzr, #0xffffffffa50cffff
+92D24CBA mov x26, #0xffff6d9affffffff
+929EAE9E mov lr, #0xffffffffffff0a8b
+92AC3011 mov x17, #0xffffffff9e7fffff
+92A460C9 mov x9, #0xffffffffdcf9ffff
+92FFFFED mov x13, #0xffffffffffff
+9280000D mov x13, #0xffffffffffffffff
+929FFFED mov x13, #0xffffffffffff0000
+92BFFFED mov x13, #0xffffffff0000ffff
+92DFFFED mov x13, #0xffff0000ffffffff
+92F0000D mov x13, #0x7fffffffffffffff
+92E8000D mov x13, #0xbfffffffffffffff
+92E4000D mov x13, #0xdfffffffffffffff
+92E2000D mov x13, #0xefffffffffffffff
+92E1000D mov x13, #0xf7ffffffffffffff
+92E0800D mov x13, #0xfbffffffffffffff
+92E0400D mov x13, #0xfdffffffffffffff
+92E0200D mov x13, #0xfeffffffffffffff
+92E0100D mov x13, #0xff7fffffffffffff
+92E0080D mov x13, #0xffbfffffffffffff
+92E0040D mov x13, #0xffdfffffffffffff
+92E0020D mov x13, #0xffefffffffffffff
+92E0010D mov x13, #0xfff7ffffffffffff
+92E0008D mov x13, #0xfffbffffffffffff
+92E0004D mov x13, #0xfffdffffffffffff
+92E0002D mov x13, #0xfffeffffffffffff

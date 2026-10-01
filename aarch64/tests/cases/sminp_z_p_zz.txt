@@ -1,0 +1,15 @@
+// sminp_z_p_zz_ 010|0010|0|size=xx|0|10|opc=11|U=0|10|1|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SminpZPZz: SMINP  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+4456A6E1 sminp z1.h, p1/m, z1.h, z23.h
+44D6B99A sminp z26.d, p6/m, z26.d, z12.d
+4456B870 sminp z16.h, p6/m, z16.h, z3.h
+4416BE08 sminp z8.b, p7/m, z8.b, z16.b
+4416BDE8 sminp z8.b, p7/m, z8.b, z15.b
+4416BE91 sminp z17.b, p7/m, z17.b, z20.b
+4496B7B5 sminp z21.s, p5/m, z21.s, z29.s
+4456B71E sminp z30.h, p5/m, z30.h, z24.h
+4456A000 sminp z0.h, p0/m, z0.h, z0.h
+4456ABFF sminp z31.h, p2/m, z31.h, z31.h
+4456AEE1 sminp z1.h, p3/m, z1.h, z23.h
+4456B2E1 sminp z1.h, p4/m, z1.h, z23.h

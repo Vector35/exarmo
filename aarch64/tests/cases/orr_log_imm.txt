@@ -1,0 +1,195 @@
+// ORR_32_log_imm sf=0|opc=01|100100|N=0|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Orr32LogImm: ORR  <Wd|WSP>, <Wn>, #<imm>
+// MovOrr32LogImm: MOV  <Wd|WSP>, #<imm>
+// read together by the MOV alias: immr, imms, Rn
+// register fields: Rn, Rd
+// bitmask immediate <imm>: N:immr:imms
+// form chosen on: immr, imms, Rn
+323083E1 mov w1, #0x10001
+3232ABE6 mov w6, #0xc1ffc1ff
+3232C7F6 mov w22, #0xc0c0c0c0
+322DA7F3 mov w19, #0x1ff81ff8
+3221C7E4 mov w4, #0x81818181
+323D6BE4 mov w4, #0x3ffffff8
+320FB3E2 mov w2, #0x3ffe3ffe
+32321BFE mov w30, #0x1fc000
+320A53FC mov w28, #0xffc007ff
+3206B7F6 mov w22, #0xfcfffcff
+32053BEE mov w14, #0xf80003ff
+321237E2 mov w2, #0xfffc000
+32011FEA mov w10, #0x8000007f
+322C63F8 mov w24, #0xfff01fff
+322CD3E1 mov w1, #0xf1f1f1f1
+323F63F2 mov w18, #0x3fffffe
+32240189 orr w9, w12, #0x10000000
+3237C13A orr w26, w9, #0x2020202
+3212B4BE orr w30, w5, #0xcfffcfff
+323836BB orr w27, w21, #0x3fff00
+32090EC7 orr w7, w22, #0x7800000
+320759A1 orr w1, w13, #0xfe00ffff
+3227C179 orr w25, w11, #0x2020202
+322720D0 orr w16, w6, #0xfe000003
+323828E2 orr w2, w7, #0x7ff00
+323F7881 orr w1, w4, #0xfffffffe
+3207741C orr w28, w0, #0xfe7fffff
+320E146A orr w10, w3, #0xfc0000
+322733DC orr w28, w30, #0xfe00003f
+320CD055 orr w21, w2, #0xf1f1f1f1
+323434F8 orr w24, w7, #0x3fff000
+323E610B orr w11, w8, #0x7fffffc
+320083E0 mov w0, #0x10001
+323083FF mov wsp, #0x10001
+3230FFE1 UNDEFINED
+32000001 orr w1, w0, #0x1
+320003E1 orr w1, wzr, #0x1
+3200FC01 UNDEFINED
+3200FFE1 UNDEFINED
+323F0001 orr w1, w0, #0x2
+323F03E1 orr w1, wzr, #0x2
+323FFC01 UNDEFINED
+323FFFE1 UNDEFINED
+322043E1 orr w1, wzr, #0x1ffff
+321013E1 orr w1, wzr, #0x1f0000
+32080BE1 orr w1, wzr, #0x7000000
+320407E1 orr w1, wzr, #0x30000000
+320283E1 mov w1, #0x40004000
+3200F3E1 mov w1, #0x55555555
+3201F3E1 mov w1, #0xaaaaaaaa
+323FF3E1 mov w1, #0xaaaaaaaa
+3200F7E1 UNDEFINED
+3201F7E1 UNDEFINED
+323FF7E1 UNDEFINED
+3200E3E1 mov w1, #0x11111111
+3203E3E1 mov w1, #0x22222222
+323FE3E1 mov w1, #0x22222222
+3200EBE1 mov w1, #0x77777777
+3203EBE1 mov w1, #0xeeeeeeee
+323FEBE1 mov w1, #0xeeeeeeee
+3200EFE1 UNDEFINED
+3203EFE1 UNDEFINED
+323FEFE1 UNDEFINED
+3200C3E1 mov w1, #0x1010101
+3207C3E1 mov w1, #0x2020202
+323FC3E1 mov w1, #0x2020202
+3200DBE1 mov w1, #0x7f7f7f7f
+3207DBE1 mov w1, #0xfefefefe
+323FDBE1 mov w1, #0xfefefefe
+3200DFE1 UNDEFINED
+3207DFE1 UNDEFINED
+323FDFE1 UNDEFINED
+320F83E1 mov w1, #0x20002
+323F83E1 mov w1, #0x20002
+3200BBE1 mov w1, #0x7fff7fff
+320FBBE1 mov w1, #0xfffefffe
+323FBBE1 mov w1, #0xfffefffe
+3200BFE1 UNDEFINED
+320FBFE1 UNDEFINED
+323FBFE1 UNDEFINED
+321F03E1 orr w1, wzr, #0x2
+32007BE1 orr w1, wzr, #0x7fffffff
+321F7BE1 orr w1, wzr, #0xfffffffe
+32007FE1 UNDEFINED
+321F7FE1 UNDEFINED
+323F7FE1 UNDEFINED
+
+// ORR_64_log_imm sf=1|opc=01|100100|N=x|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Orr64LogImm: ORR  <Xd|SP>, <Xn>, #<imm>
+// MovOrr64LogImm: MOV  <Xd|SP>, #<imm>
+// read together by the MOV alias: N, immr, imms, Rn
+// register fields: Rn, Rd
+// bitmask immediate <imm>: N:immr:imms
+// form chosen on: N, immr, imms, Rn
+B25B83E9 mov x9, #0xffffffe00000003f
+B241A7FC mov x28, #0x800001ffffffffff
+B20C3FEF mov x15, #0xfff0000ffff0000f
+B24F7FED mov x13, #0xfffe00000001ffff
+B24A43F5 mov x21, #0xffc000000000007f
+B2605FE5 mov x5, #0xffffff00000000
+B2483FFE mov lr, #0xff000000000000ff
+B27FE7E9 mov x9, #0x7fffffffffffffe
+B235AFFD mov fp, #0xf87ff87ff87ff87f
+B213AFE3 mov x3, #0xe1ffe1ffe1ffe1ff
+B2233FE8 mov x8, #0xe0001fffe0001fff
+B23A5FE5 mov x5, #0x3fffffc03fffffc0
+B2121FEB mov x11, #0x3fc000003fc000
+B22C63FB mov x27, #0xfff01ffffff01fff
+B212BBFC mov x28, #0xdfffdfffdfffdfff
+B27B3BE9 mov x9, #0xfffe0
+B23F9E0F orr x15, x16, #0x1fe01fe01fe01fe
+B279F382 orr x2, x28, #0xffffffffffffff8f
+B2061DFC orr x28, x15, #0xfc000003fc000003
+B215724A orr x10, x18, #0xfffff8fffffff8ff
+B2450C9A orr x26, x4, #0x7800000000000000
+B20409A6 orr x6, x13, #0x7000000070000000
+B2715896 orr x22, x4, #0x3fffff8000
+B26D2053 orr x19, x2, #0xff80000
+B239BB1E orr lr, x24, #0xffbfffbfffbfffbf
+B22D7679 orr x25, x19, #0xfff9fffffff9ffff
+B2085ABA orr x26, x21, #0xff007fffff007fff
+B25C758B orr x11, x12, #0xfffffff000000003
+B273AEE1 orr x1, x23, #0x1ffffffffffe000
+B26EF80F orr x15, x0, #0xfffffffffffdffff
+B25C92E9 orr x9, x23, #0xfffffff0000001ff
+B26AFB8B orr x11, x28, #0xffffffffffdfffff
+B24003E0 orr x0, xzr, #0x1
+B25B83FF mov sp, #0xffffffe00000003f
+B25BFFE9 UNDEFINED
+B2000009 orr x9, x0, #0x100000001
+B20003E9 mov x9, #0x100000001
+B200FC09 UNDEFINED
+B200FFE9 UNDEFINED
+B23F0009 orr x9, x0, #0x200000002
+B23F03E9 mov x9, #0x200000002
+B23FFC09 UNDEFINED
+B23FFFE9 UNDEFINED
+B2400009 orr x9, x0, #0x1
+B240FC09 UNDEFINED
+B240FFE9 UNDEFINED
+B27F0009 orr x9, x0, #0x2
+B27F03E9 orr x9, xzr, #0x2
+B27FFC09 UNDEFINED
+B27FFFE9 UNDEFINED
+B25013E9 orr x9, xzr, #0x1f000000000000
+B24207E9 orr x9, xzr, #0xc000000000000000
+B200F3E9 mov x9, #0x5555555555555555
+B201F3E9 mov x9, #0xaaaaaaaaaaaaaaaa
+B23FF3E9 mov x9, #0xaaaaaaaaaaaaaaaa
+B200F7E9 UNDEFINED
+B201F7E9 UNDEFINED
+B23FF7E9 UNDEFINED
+B200E3E9 mov x9, #0x1111111111111111
+B203E3E9 mov x9, #0x2222222222222222
+B23FE3E9 mov x9, #0x2222222222222222
+B200EBE9 mov x9, #0x7777777777777777
+B203EBE9 mov x9, #0xeeeeeeeeeeeeeeee
+B23FEBE9 mov x9, #0xeeeeeeeeeeeeeeee
+B200EFE9 UNDEFINED
+B203EFE9 UNDEFINED
+B23FEFE9 UNDEFINED
+B200C3E9 mov x9, #0x101010101010101
+B207C3E9 mov x9, #0x202020202020202
+B23FC3E9 mov x9, #0x202020202020202
+B200DBE9 mov x9, #0x7f7f7f7f7f7f7f7f
+B207DBE9 mov x9, #0xfefefefefefefefe
+B23FDBE9 mov x9, #0xfefefefefefefefe
+B200DFE9 UNDEFINED
+B207DFE9 UNDEFINED
+B23FDFE9 UNDEFINED
+B20083E9 mov x9, #0x1000100010001
+B20F83E9 mov x9, #0x2000200020002
+B23F83E9 mov x9, #0x2000200020002
+B200BBE9 mov x9, #0x7fff7fff7fff7fff
+B20FBBE9 mov x9, #0xfffefffefffefffe
+B23FBBE9 mov x9, #0xfffefffefffefffe
+B200BFE9 UNDEFINED
+B20FBFE9 UNDEFINED
+B23FBFE9 UNDEFINED
+B21F03E9 mov x9, #0x200000002
+B2007BE9 mov x9, #0x7fffffff7fffffff
+B21F7BE9 mov x9, #0xfffffffefffffffe
+B23F7BE9 mov x9, #0xfffffffefffffffe
+B2007FE9 UNDEFINED
+B21F7FE9 UNDEFINED
+B23F7FE9 UNDEFINED
+B240FBE9 orr x9, xzr, #0x7fffffffffffffff
+B27FFBE9 orr x9, xzr, #0xfffffffffffffffe

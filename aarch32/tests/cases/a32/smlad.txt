@@ -1,0 +1,39 @@
+// SMLAD_A1 cond=xxxx|01110|op1=000|Rd=xxxx|Ra=xxxx|Rm=xxxx|00|M=0|1|Rn=xxxx
+// SmladA1: SMLAD{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+770b3714 smladvc r11, r4, r7, r3
+57068e11 smladpl r6, r1, lr, r8
+67001e15 smladvs r0, r5, lr, r1
+e7051017 smlad r5, r7, r0, r1
+770aa218 smladvc r10, r8, r2, r10
+b703ce17 smladlt r3, r7, lr, r12
+270ac117 smladhs r10, r7, r1, r12
+370f961c smladlo pc, r12, r6, r9 (unpredictable)
+// Binary Ninja's tests
+07028513 smladeq r2, r3, r5, r8
+e7028513 smlad r2, r3, r5, r8
+F70BF714 UNALLOCATED
+870B0F10 smladhi r11, r0, pc, r0 (unpredictable)
+470B3B1F smladmi r11, pc, r11, r3 (unpredictable)
+170B331B smladne r11, r11, r3, r3
+770B3713 smladvc r11, r3, r7, r3
+770B3717 smladvc r11, r7, r7, r3
+
+// SMLADX_A1 cond=xxxx|01110|op1=000|Rd=xxxx|Ra=xxxx|Rm=xxxx|00|M=1|1|Rn=xxxx
+// SmladxA1: SMLADX{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rd, Ra, Rm, Rn
+b7023a3a smladxlt r2, r10, r10, r3
+07002637 smladxeq r0, r7, r6, r2
+b709833c smladxlt r9, r12, r3, r8
+c706b536 smladxgt r6, r6, r5, r11
+770dc034 smladxvc sp, r4, r0, r12
+970d1436 smladxls sp, r6, r4, r1
+5709663f smladxpl r9, pc, r6, r6 (unpredictable)
+17052434 smladxne r5, r4, r4, r2
+// Binary Ninja's tests
+87028533 smladxhi r2, r3, r5, r8
+e7028533 smladx r2, r3, r5, r8
+F702FA3A UNALLOCATED
+470F0F30 smladxmi pc, r0, pc, r0 (unpredictable)
+27022A3A smladxcs r2, r10, r10, r2
+B7023233 smladxlt r2, r3, r2, r3

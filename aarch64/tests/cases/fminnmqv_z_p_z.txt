@@ -1,0 +1,15 @@
+// fminnmqv_z_p_z_ 011|0010|0|size=xx|010|opc=101|101|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// FminnmqvZPZ: FMINNMQV  <Vd>.<T>, <Pg>, <Zn>.<Tb>
+// register fields: Pg, Zn, Vd
+6455A000 fminnmqv v0.8h, p0, z0.h
+6455A007 fminnmqv v7.8h, p0, z0.h
+6455A00E fminnmqv v14.8h, p0, z0.h
+6495A7FF fminnmqv v31.4s, p1, z31.s
+64D5A800 fminnmqv v0.2d, p2, z0.d
+6455AC00 fminnmqv v0.8h, p3, z0.h
+6455B000 fminnmqv v0.8h, p4, z0.h
+6455B400 fminnmqv v0.8h, p5, z0.h
+6455B800 fminnmqv v0.8h, p6, z0.h
+6455BC00 fminnmqv v0.8h, p7, z0.h
+6415A000 UNDEFINED
+6455A443 fminnmqv v3.8h, p1, z2.h

@@ -1,0 +1,3 @@
+// GCSB_HD_hints 110|101|01000000110010|CRm=0010|op2=011|11111
+// GcsbHdHints: GCSB  DSYNC
+D503227F gcsb dsync

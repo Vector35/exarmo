@@ -1,0 +1,17 @@
+// uadalp_z_p_z_ 010|0010|0|size=xx|0|0010|U=1|10|1|Pg=xxx|Zn=xxxxx|Zda=xxxxx
+// UadalpZPZ: UADALP  <Zda>.<T>, <Pg>/M, <Zn>.<Tb>
+// register fields: Pg, Zn, Zda
+4445BD62 uadalp z2.h, p7/m, z11.b
+4445A8E0 uadalp z0.h, p2/m, z7.b
+44C5B786 uadalp z6.d, p5/m, z28.s
+4485A0F5 uadalp z21.s, p0/m, z7.h
+44C5B4F6 uadalp z22.d, p5/m, z7.s
+4445AAB0 uadalp z16.h, p2/m, z21.b
+4445AF9C uadalp z28.h, p3/m, z28.b
+4445A393 uadalp z19.h, p0/m, z28.b
+4445A41F uadalp z31.h, p1/m, z0.b
+4445B3E2 uadalp z2.h, p4/m, z31.b
+4445B962 uadalp z2.h, p6/m, z11.b
+4405BD62 UNDEFINED
+4445BCE2 uadalp z2.h, p7/m, z7.b
+4445BD67 uadalp z7.h, p7/m, z11.b

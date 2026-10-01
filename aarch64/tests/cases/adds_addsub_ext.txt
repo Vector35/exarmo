@@ -1,0 +1,114 @@
+// ADDS_32S_addsub_ext sf=0|op=0|S=1|01011|opt=00|1|Rm=xxxxx|option=xxx|imm3=xxx|Rn=xxxxx|Rd=xxxxx
+// Adds32sAddsubExt: ADDS  <Wd>, <Wn|WSP>, <Wm>{, <extend> {#<amount>}}
+// CmnAdds32sAddsubExt: CMN  <Wn|WSP>, <Wm>{, <extend> {#<amount>}}
+// register fields: Rm, Rn, Rd
+// form chosen on: Rd
+2B2143E3 adds w3, wsp, w1
+2B214BE3 adds w3, wsp, w1, lsl #0x2
+2B2140A3 adds w3, w5, w1, uxtw
+2B20B351 adds w17, w26, w0, sxth #0x4
+2B3C0664 adds w4, w19, w28, uxtb #0x1
+2B2E4B5C adds w28, w26, w14, uxtw #0x2
+2B39EFAA adds w10, w29, w25, sxtx #0x3
+2B2B80DE adds w30, w6, w11, sxtb
+2B2703A3 adds w3, w29, w7, uxtb
+2B231396 adds w22, w28, w3, uxtb #0x4
+2B2392B4 adds w20, w21, w3, sxtb #0x4
+2B3EAD1B adds w27, w8, w30, sxth #0x3
+2B218C4F adds w15, w2, w1, sxtb #0x3
+2B242821 adds w1, w1, w4, uxth #0x2
+2B2A6573 adds w19, w11, w10, uxtx #0x1
+2B232304 adds w4, w24, w3, uxth
+2B2822BD adds w29, w21, w8, uxth
+2B2203E9 adds w9, wsp, w2, uxtb
+2B2DEA06 adds w6, w16, w13, sxtx #0x2
+2B2143FF cmn wsp, w1
+2B214BFF cmn wsp, w1, lsl #0x2
+2B2140BF cmn w5, w1, uxtw
+2B3FD07F cmn w3, wzr, sxtw #0x4
+2B2D4E7F cmn w19, w13, uxtw #0x3
+2B2F077F cmn w27, w15, uxtb #0x1
+2B37671F cmn w24, w23, uxtx #0x1
+2B370E7F cmn w19, w23, uxtb #0x3
+2B242D1F cmn w8, w4, uxth #0x3
+2B3352FF cmn w23, w19, uxtw #0x4
+2B3509DF cmn w14, w21, uxtb #0x2
+2B2F64BF cmn w5, w15, uxtx #0x1
+2B2F913F cmn w9, w15, sxtb #0x4
+2B30709F cmn w4, w16, uxtx #0x4
+2B35A45F cmn w2, w21, sxth #0x1
+2B3E20FF cmn w7, w30, uxth
+2B29459F cmn w12, w9, uxtw #0x1
+2B368D7F cmn w11, w22, sxtb #0x3
+2B3664FF cmn w7, w22, uxtx #0x1
+2B214000 adds w0, w0, w1, uxtw
+2B2157E3 UNDEFINED
+2B215BE3 UNDEFINED
+2B215FE3 UNDEFINED
+2B214023 adds w3, w1, w1, uxtw
+2B2140AF adds w15, w5, w1, uxtw
+
+// ADDS_64S_addsub_ext sf=1|op=0|S=1|01011|opt=00|1|Rm=xxxxx|option=xxx|imm3=xxx|Rn=xxxxx|Rd=xxxxx
+// Adds64sAddsubExt: ADDS  <Xd>, <Xn|SP>, <m>{, <extend> {#<amount>}}
+// CmnAdds64sAddsubExt: CMN  <Xn|SP>, <m>{, <extend> {#<amount>}}
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rd
+// form chosen on: Rd
+AB2163E3 adds x3, sp, x1
+AB216BE3 adds x3, sp, x1, lsl #0x2
+AB2160A3 adds x3, x5, x1, uxtx
+AB226546 adds x6, x10, x2, uxtx #0x1
+AB202F0C adds x12, x24, w0, uxth #0x3
+AB311132 adds x18, x9, w17, uxtb #0x4
+AB3DCD7C adds x28, x11, w29, sxtw #0x3
+AB36C8A4 adds x4, x5, w22, sxtw #0x2
+AB380542 adds x2, x10, w24, uxtb #0x1
+AB2A82BC adds x28, x21, w10, sxtb
+AB3C9085 adds x5, x4, w28, sxtb #0x4
+AB3C50B0 adds x16, x5, w28, uxtw #0x4
+AB29D34E adds x14, x26, w9, sxtw #0x4
+AB337361 adds x1, x27, x19, uxtx #0x4
+AB354B8C adds x12, x28, w21, uxtw #0x2
+AB2C2137 adds x23, x9, w12, uxth
+AB350084 adds x4, x4, w21, uxtb
+AB39E041 adds x1, x2, x25, sxtx
+AB2B30B4 adds x20, x5, w11, uxth #0x4
+AB2163FF cmn sp, x1
+AB216BFF cmn sp, x1, lsl #0x2
+AB2160BF cmn x5, x1, uxtx
+AB25E81F cmn x0, x5, sxtx #0x2
+AB23EF7F cmn x27, x3, sxtx #0x3
+AB38305F cmn x2, w24, uxth #0x4
+AB2B93DF cmn lr, w11, sxtb #0x4
+AB2D115F cmn x10, w13, uxtb #0x4
+AB37C29F cmn x20, w23, sxtw
+AB2CEE9F cmn x20, x12, sxtx #0x3
+AB2C133F cmn x25, w12, uxtb #0x4
+AB33E59F cmn x12, x19, sxtx #0x1
+AB3B2C3F cmn x1, w27, uxth #0x3
+AB2744DF cmn x6, w7, uxtw #0x1
+AB3AA1BF cmn x13, w26, sxth
+AB3F83DF cmn lr, wzr, sxtb
+AB25249F cmn x4, w5, uxth #0x1
+AB31613F cmn x9, x17, uxtx
+AB2F6E1F cmn x16, x15, uxtx #0x3
+AB2163E0 adds x0, sp, x1
+AB2177E3 UNDEFINED
+AB217BE3 UNDEFINED
+AB217FE3 UNDEFINED
+AB2003E3 adds x3, sp, w0, uxtb
+AB2043E3 adds x3, sp, w0, uxtw
+AB2063E3 adds x3, sp, x0
+AB2083E3 adds x3, sp, w0, sxtb
+AB20A3E3 adds x3, sp, w0, sxth
+AB20C3E3 adds x3, sp, w0, sxtw
+AB20E3E3 adds x3, sp, x0, sxtx
+AB3F03E3 adds x3, sp, wzr, uxtb
+AB3F23E3 adds x3, sp, wzr, uxth
+AB3F43E3 adds x3, sp, wzr, uxtw
+AB3F63E3 adds x3, sp, xzr
+AB3FA3E3 adds x3, sp, wzr, sxth
+AB3FC3E3 adds x3, sp, wzr, sxtw
+AB3FE3E3 adds x3, sp, xzr, sxtx
+AB216023 adds x3, x1, x1, uxtx
+AB2160AF adds x15, x5, x1, uxtx

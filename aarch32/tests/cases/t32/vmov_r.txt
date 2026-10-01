@@ -1,0 +1,44 @@
+// VMOV_r_T2_D 111011101|D=x|11|o1=0|opc2=000|Vd=xxxx|10|size=11|o3=0|1|M=x|0|Vm=xxxx
+// VmovRT2D: VMOV{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eeb03b45 vmov.f64 d3, d5
+eeb0cb48 vmov.f64 d12, d8
+eeb03b60 vmov.f64 d3, d16
+eef0bb4a vmov.f64 d27, d10
+eeb07b6e vmov.f64 d7, d30
+eef09b46 vmov.f64 d25, d6
+eef0ab6e vmov.f64 d26, d30
+eef0cb4c vmov.f64 d28, d12
+EEB00B4F vmov.f64 d0, d15
+EEB0FB44 vmov.f64 d15, d4
+EEB08B42 vmov.f64 d8, d2
+EEB04B41 vmov.f64 d4, d1
+EEB02B40 vmov.f64 d2, d0
+EEB01B4F vmov.f64 d1, d15
+EEB00B6F vmov.f64 d0, d31
+EEB0FB45 vmov.f64 d15, d5
+EEF00B45 vmov.f64 d16, d5
+EEF0FB45 vmov.f64 d31, d5
+EEB03B45 [ne] vmovne.f64 d3, d5
+
+// VMOV_r_T2_S 111011101|D=x|11|o1=0|opc2=000|Vd=xxxx|10|size=10|o3=0|1|M=x|0|Vm=xxxx
+// VmovRT2S: VMOV{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef0ca65 vmov.f32 s25, s11
+eeb04a47 vmov.f32 s8, s14
+eeb03a64 vmov.f32 s6, s9
+eef0ea47 vmov.f32 s29, s14
+eeb09a4d vmov.f32 s18, s26
+eef02a60 vmov.f32 s5, s1
+eef00a48 vmov.f32 s1, s16
+eeb05a68 vmov.f32 s10, s17
+EEF0FA6F vmov.f32 s31, s31
+EEF08A62 vmov.f32 s17, s5
+EEF01A61 vmov.f32 s3, s3
+EEB00A40 vmov.f32 s0, s0
+EEB0FA4F vmov.f32 s30, s30
+EEF0CA65 [ne] vmovne.f32 s25, s11

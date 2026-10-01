@@ -1,0 +1,53 @@
+// STTP_64_ldstpair_off opc=11|10|1|VR=0|0|10|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Sttp64LdstpairOff: STTP  <Xt1>, <Xt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+E9000005 sttp x5, x0, [x0]
+E900000C sttp x12, x0, [x0]
+E9000013 sttp x19, x0, [x0]
+E93FFFE0 sttp x0, xzr, [sp, #-0x8]
+E900001F sttp xzr, x0, [x0]
+E9000000 sttp x0, x0, [x0]
+E9200005 sttp x5, x0, [x0, #-0x200]
+E9100005 sttp x5, x0, [x0, #0x100]
+E9080005 sttp x5, x0, [x0, #0x80]
+E9040005 sttp x5, x0, [x0, #0x40]
+E9020005 sttp x5, x0, [x0, #0x20]
+E9010005 sttp x5, x0, [x0, #0x10]
+E9008005 sttp x5, x0, [x0, #0x8]
+E9000443 sttp x3, x1, [x2]
+
+// STTP_64_ldstpair_post opc=11|10|1|VR=0|0|01|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Sttp64LdstpairPost: STTP  <Xt1>, <Xt2>, [<Xn|SP>], #<imm>
+// register fields: Rt2, Rn, Rt
+E8800002 sttp x2, x0, [x0], #0x0 (unpredictable)
+E8800009 sttp x9, x0, [x0], #0x0 (unpredictable)
+E8800010 sttp x16, x0, [x0], #0x0 (unpredictable)
+E8BFFFE0 sttp x0, xzr, [sp], #-0x8
+E880001F sttp xzr, x0, [x0], #0x0 (unpredictable)
+E8800000 sttp x0, x0, [x0], #0x0 (unpredictable)
+E8A00002 sttp x2, x0, [x0], #-0x200 (unpredictable)
+E8900002 sttp x2, x0, [x0], #0x100 (unpredictable)
+E8880002 sttp x2, x0, [x0], #0x80 (unpredictable)
+E8840002 sttp x2, x0, [x0], #0x40 (unpredictable)
+E8820002 sttp x2, x0, [x0], #0x20 (unpredictable)
+E8810002 sttp x2, x0, [x0], #0x10 (unpredictable)
+E8808002 sttp x2, x0, [x0], #0x8 (unpredictable)
+E8800443 sttp x3, x1, [x2], #0x0
+
+// STTP_64_ldstpair_pre opc=11|10|1|VR=0|0|11|L=0|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Sttp64LdstpairPre: STTP  <Xt1>, <Xt2>, [<Xn|SP>, #<imm>]!
+// register fields: Rt2, Rn, Rt
+E9800001 sttp x1, x0, [x0, #0x0]! (unpredictable)
+E9800008 sttp x8, x0, [x0, #0x0]! (unpredictable)
+E980000F sttp x15, x0, [x0, #0x0]! (unpredictable)
+E9BFFFE0 sttp x0, xzr, [sp, #-0x8]!
+E980001F sttp xzr, x0, [x0, #0x0]! (unpredictable)
+E9800000 sttp x0, x0, [x0, #0x0]! (unpredictable)
+E9A00001 sttp x1, x0, [x0, #-0x200]! (unpredictable)
+E9900001 sttp x1, x0, [x0, #0x100]! (unpredictable)
+E9880001 sttp x1, x0, [x0, #0x80]! (unpredictable)
+E9840001 sttp x1, x0, [x0, #0x40]! (unpredictable)
+E9820001 sttp x1, x0, [x0, #0x20]! (unpredictable)
+E9810001 sttp x1, x0, [x0, #0x10]! (unpredictable)
+E9808001 sttp x1, x0, [x0, #0x8]! (unpredictable)
+E9800443 sttp x3, x1, [x2, #0x0]!

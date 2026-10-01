@@ -1,0 +1,91 @@
+// VCGT_r_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0011|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VcgtRT1D: VCGT{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff210302 vcgt.u32 d0, d1, d2
+ff26b382 vcgt.u32 d11, d22, d2
+ef024307 vcgt.s8 d4, d2, d7
+ef47f32c vcgt.s8 d31, d7, d28
+ef00f380 vcgt.s8 d15, d16, d0
+ef08632a vcgt.s8 d6, d8, d26
+ef5e330f vcgt.s16 d19, d14, d15
+ff5bd32e vcgt.u16 d29, d11, d30
+FF310302 UNDEFINED
+EF2F8308 vcgt.s32 d8, d15, d8
+FF042304 vcgt.u8 d2, d4, d4
+FF201301 vcgt.u32 d1, d0, d1
+EF310302 UNDEFINED
+FF6F0320 vcgt.u32 d16, d15, d16
+FF2F03AF vcgt.u32 d0, d31, d31
+FF210302 [ne] vcgtne.u32 d0, d1, d2
+
+// VCGT_r_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0011|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VcgtRT1Q: VCGT{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff0e834a vcgt.u8 q4, q7, q5
+ef028360 vcgt.s8 q4, q1, q8
+ef1a036e vcgt.s16 q0, q5, q15
+ff14434a vcgt.u16 q2, q2, q5
+ff6ec368 vcgt.u32 q14, q7, q12
+ff2a2360 vcgt.u32 q1, q5, q8
+ff2ea3e8 vcgt.u32 q5, q15, q12
+ff4e83cc vcgt.u8 q12, q15, q6
+FF3FF34F UNDEFINED
+EF600344 vcgt.s32 q8, q0, q2
+FF088342 vcgt.u8 q4, q4, q1
+EF311341 UNDEFINED
+FF4FF3EF UNDEFINED
+FF008340 vcgt.u8 q4, q0, q0
+FF0083CA vcgt.u8 q4, q8, q5
+FF0E834A [ne] vcgtne.u8 q4, q7, q5
+
+// VCGT_r_T2_D 111|U=1|11110|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1110|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VcgtRT2D: VCGT{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff337ea1 vcgt.f16 d7, d19, d17
+ff69fe21 vcgt.f32 d31, d9, d17
+ff28ce84 vcgt.f32 d12, d24, d4
+ff30ee02 vcgt.f16 d14, d0, d2
+ff21ce25 vcgt.f32 d12, d1, d21
+ff689e03 vcgt.f32 d25, d8, d3
+ff6d4e88 vcgt.f32 d20, d29, d8
+ff6a2e06 vcgt.f32 d18, d10, d6
+FF3F0EA0 vcgt.f16 d0, d31, d16
+FF348EAF vcgt.f16 d8, d20, d31
+FF321E80 vcgt.f16 d1, d18, d0
+FF300E8F vcgt.f16 d0, d16, d15
+FF3FFE20 vcgt.f16 d15, d15, d16
+FF7F0EAF vcgt.f16 d16, d31, d31
+FF337EA1 [ne] vcgtne.f16 d7, d19, d17 (unpredictable)
+
+// VCGT_r_T2_Q 111|U=1|11110|D=x|1|sz=x|Vn=xxxx|Vd=xxxx|opc=1110|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VcgtRT2Q: VCGT{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff64ee4e vcgt.f32 q15, q2, q7
+ff3a8ee8 vcgt.f16 q4, q13, q12
+ff728e6e vcgt.f16 q12, q1, q15
+ff600eee vcgt.f32 q8, q8, q15
+ff3e2eee vcgt.f16 q1, q15, q15
+ff664e40 vcgt.f32 q10, q3, q0
+ff34aece vcgt.f16 q5, q10, q7
+ff222ee4 vcgt.f32 q1, q9, q10
+FF6FFE4F UNDEFINED
+FF280E42 vcgt.f32 q0, q4, q1
+FF611E41 UNDEFINED
+FF2FFE4F UNDEFINED
+FF6FFEEF UNDEFINED
+FF60EE60 vcgt.f32 q15, q0, q8
+FF64EE4E [ne] vcgtne.f32 q15, q2, q7

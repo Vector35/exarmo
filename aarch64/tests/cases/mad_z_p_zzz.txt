@@ -1,0 +1,23 @@
+// mad_z_p_zzz_ 000|0010|0|size=xx|0|Zm=xxxxx|1|1|op=0|Pg=xxx|Za=xxxxx|Zdn=xxxxx
+// MadZPZzz: MAD  <Zdn>.<T>, <Pg>/M, <Zm>.<T>, <Za>.<T>
+// register fields: Zm, Pg, Za, Zdn
+044CD5EB mad z11.h, p5/m, z12.h, z15.h
+0407DEB9 mad z25.b, p7/m, z7.b, z21.b
+04DDC089 mad z9.d, p0/m, z29.d, z4.d
+04D2DB42 mad z2.d, p6/m, z18.d, z26.d
+0444C484 mad z4.h, p1/m, z4.h, z4.h
+0444CA2C mad z12.h, p2/m, z4.h, z17.h
+044ECE2E mad z14.h, p3/m, z14.h, z17.h
+04D1D894 mad z20.d, p6/m, z17.d, z4.d
+0403C063 mad z3.b, p0/m, z3.b, z3.b
+04C7C311 mad z17.d, p0/m, z7.d, z24.d
+045BD518 mad z24.h, p5/m, z27.h, z8.h
+048DDD0F mad z15.s, p7/m, z13.s, z8.s
+04CFD4D1 mad z17.d, p5/m, z15.d, z6.d
+0416CF75 mad z21.b, p3/m, z22.b, z27.b
+048DC8DB mad z27.s, p2/m, z13.s, z6.s
+0482DB08 mad z8.s, p6/m, z2.s, z24.s
+0440D000 mad z0.h, p4/m, z0.h, z0.h
+045FD7FF mad z31.h, p5/m, z31.h, z31.h
+044CD4AB mad z11.h, p5/m, z12.h, z5.h
+044CD5E5 mad z5.h, p5/m, z12.h, z15.h

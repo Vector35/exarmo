@@ -1,0 +1,61 @@
+// SQABS_asimdmisc_R 0|Q=x|U=0|0|111|0|size=xx|10000|opcode=00111|10|Rn=xxxxx|Rd=xxxxx
+// SqabsAsimdmiscR: SQABS  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+0EA07B12 sqabs v18.2s, v24.2s
+0EA07BCE sqabs v14.2s, v30.2s
+0EA07830 sqabs v16.2s, v1.2s
+0E607B6D sqabs v13.4h, v27.4h
+4EE07AFC sqabs v28.2d, v23.2d
+4E60781A sqabs v26.8h, v0.8h
+0E607A95 sqabs v21.4h, v20.4h
+4EE07A7A sqabs v26.2d, v19.2d
+0EA0788F sqabs v15.2s, v4.2s
+4EE07BA3 sqabs v3.2d, v29.2d
+4E607AC9 sqabs v9.8h, v22.8h
+0E207824 sqabs v4.8b, v1.8b
+4E60788D sqabs v13.8h, v4.8h
+4EE0785B sqabs v27.2d, v2.2d
+4E207A94 sqabs v20.16b, v20.16b
+0E607AA6 sqabs v6.4h, v21.4h
+0EA07BE0 sqabs v0.2s, v31.2s
+0EA07B1F sqabs v31.2s, v24.2s
+0EE07B12 UNDEFINED
+4EA07B12 sqabs v18.4s, v24.4s
+
+// SQABS_asisdmisc_R 01|U=0|1|111|0|size=xx|10000|opcode=00111|10|Rn=xxxxx|Rd=xxxxx
+// SqabsAsisdmiscR: SQABS  <V><d>, <V><n>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// register fields: Rn, Rd
+5E607872 sqabs h18, h3
+5E2079BD sqabs b29, b13
+5EE07B6E sqabs d14, d27
+5E607892 sqabs h18, h4
+5EE07B55 sqabs d21, d26
+5EA079C6 sqabs s6, s14
+5E607BF6 sqabs h22, h31
+5EE07B7D sqabs d29, d27
+5EE078D6 sqabs d22, d6
+5E207810 sqabs b16, b0
+5EA0797E sqabs s30, s11
+5EE07994 sqabs d20, d12
+5EA07AF4 sqabs s20, s23
+5E607B88 sqabs h8, h28
+5EE07927 sqabs d7, d9
+5EE07B34 sqabs d20, d25
+5E607860 sqabs h0, h3
+5E60787F sqabs h31, h3
+5E207860 sqabs b0, b3
+5E20787F sqabs b31, b3
+5EA07860 sqabs s0, s3
+5EA0787F sqabs s31, s3
+5EE07860 sqabs d0, d3
+5EE0787F sqabs d31, d3
+5E207BF2 sqabs b18, b31
+5E607812 sqabs h18, h0
+5EA07812 sqabs s18, s0
+5EA07BF2 sqabs s18, s31
+5EE07812 sqabs d18, d0
+5EE07BF2 sqabs d18, d31
+5E607863 sqabs h3, h3

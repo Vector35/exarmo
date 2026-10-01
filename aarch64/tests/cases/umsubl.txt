@@ -1,0 +1,42 @@
+// UMSUBL_64WA_dp_3src sf=1|op54=00|1|101|1|U=1|01|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Umsubl64waDp3src: UMSUBL  <Xd>, <Wn>, <Wm>, <Xa>
+// UmneglUmsubl64waDp3src: UMNEGL  <Xd>, <Wn>, <Wm>
+// register fields: Rm, Ra, Rn, Rd
+// form chosen on: Ra
+9BB5FE5F umnegl xzr, w18, w21
+9BB8FE9C umnegl x28, w20, w24
+9BB7FF74 umnegl x20, w27, w23
+9BB1FDAF umnegl x15, w13, w17
+9BBCFF7F umnegl xzr, w27, w28
+9BAEFD71 umnegl x17, w11, w14
+9BABFDE0 umnegl x0, w15, w11
+9BB2FE9F umnegl xzr, w20, w18
+9BA0FDE3 umnegl x3, w15, w0
+9BB7FC7A umnegl x26, w3, w23
+9BB5FD39 umnegl x25, w9, w21
+9BAFFE61 umnegl x1, w19, w15
+9BA6FD11 umnegl x17, w8, w6
+9BA3FCE9 umnegl x9, w7, w3
+9BA2FDE3 umnegl x3, w15, w2
+9BBDFF7E umnegl lr, w27, w29
+9BBEAE7E umsubl lr, w19, w30, x11
+9BA5E2FC umsubl x28, w23, w5, x24
+9BB3D5F4 umsubl x20, w15, w19, x21
+9BB5F910 umsubl x16, w8, w21, lr
+9BA5E9B0 umsubl x16, w13, w5, x26
+9BA88EF0 umsubl x16, w23, w8, x3
+9BBD99A0 umsubl x0, w13, w29, x6
+9BBCE0C1 umsubl x1, w6, w28, x24
+9BB2F91A umsubl x26, w8, w18, lr
+9BAFC9B4 umsubl x20, w13, w15, x18
+9BABDE99 umsubl x25, w20, w11, x23
+9BAFA8C9 umsubl x9, w6, w15, x10
+9BAE8BD9 umsubl x25, w30, w14, x2
+9BB1DC74 umsubl x20, w3, w17, x23
+9BADF62F umsubl x15, w17, w13, fp
+9BA9AFB7 umsubl x23, w29, w9, x11
+9BBF801F umsubl xzr, w0, wzr, x0
+9BB5FFFF umnegl xzr, wzr, w21
+9BB5D65F umsubl xzr, w18, w21, x21
+9BB5FEBF umnegl xzr, w21, w21
+9BA0BDE3 umsubl x3, w15, w0, x15

@@ -1,0 +1,33 @@
+// SMULWB_T1 111110110|op1=011|Rn=xxxx|Ra=1111|Rd=xxxx|000|M=0|Rm=xxxx
+// SmulwbT1: SMULWB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb38fa0d smulwb r10, r8, sp
+fb33f60f smulwb r6, r3, pc (unpredictable)
+fb3afe07 smulwb lr, r10, r7
+fb31fb09 smulwb r11, r1, r9
+fb32fd05 smulwb sp, r2, r5
+fb30fb0e smulwb r11, r0, lr
+fb38f80d smulwb r8, r8, sp
+fb3ef80a smulwb r8, lr, r10
+FB3FF000 smulwb r0, pc, r0 (unpredictable)
+FB38FF08 smulwb pc, r8, r8 (unpredictable)
+FB38FA0A smulwb r10, r8, r10
+FB38FA0D [ne] smulwbne r10, r8, sp
+
+// SMULWT_T1 111110110|op1=011|Rn=xxxx|Ra=1111|Rd=xxxx|000|M=1|Rm=xxxx
+// SmulwtT1: SMULWT{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb3af11a smulwt r1, r10, r10
+fb3ff416 smulwt r4, pc, r6 (unpredictable)
+fb3afd12 smulwt sp, r10, r2
+fb3bf114 smulwt r1, r11, r4
+fb3af315 smulwt r3, r10, r5
+fb3df01b smulwt r0, sp, r11
+fb37fb13 smulwt r11, r7, r3
+fb35f51b smulwt r5, r5, r11
+FB30FF10 smulwt pc, r0, r0 (unpredictable)
+FB3AF11F smulwt r1, r10, pc (unpredictable)
+FB3AF111 smulwt r1, r10, r1
+FB3AF11A [ne] smulwtne r1, r10, r10

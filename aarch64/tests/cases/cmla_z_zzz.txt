@@ -1,0 +1,13 @@
+// cmla_z_zzz_ 010|0010|0|size=xx|0|Zm=xxxxx|0|01|op=0|rot=xx|Zn=xxxxx|Zda=xxxxx
+// CmlaZZzz: CMLA  <Zda>.<T>, <Zn>.<T>, <Zm>.<T>, <const>
+// register fields: Zm, Zn, Zda
+441C2661 cmla z1.b, z19.b, z28.b, #0x5a
+441A213D cmla z29.b, z9.b, z26.b, #0x0
+44D32467 cmla z7.d, z3.d, z19.d, #0x5a
+440C295E cmla z30.b, z10.b, z12.b, #0xb4
+44CE263F cmla z31.d, z17.d, z14.d, #0x5a
+44CD2946 cmla z6.d, z10.d, z13.d, #0xb4
+441825E4 cmla z4.b, z15.b, z24.b, #0x5a
+44192899 cmla z25.b, z4.b, z25.b, #0xb4
+44402C00 cmla z0.h, z0.h, z0.h, #0x10e
+449F27E1 cmla z1.s, z31.s, z31.s, #0x5a

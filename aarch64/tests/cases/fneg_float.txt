@@ -1,0 +1,65 @@
+// FNEG_D_floatdp1 M=0|0|S=0|11110|ftype=01|10000|opc=10|10000|Rn=xxxxx|Rd=xxxxx
+// FnegDFloatdp1: FNEG  <Dd>, <Dn>
+// register fields: Rn, Rd
+1E6140F9 fneg d25, d7
+1E61423C fneg d28, d17
+1E614205 fneg d5, d16
+1E614017 fneg d23, d0
+1E614183 fneg d3, d12
+1E614141 fneg d1, d10
+1E6140C9 fneg d9, d6
+1E61432B fneg d11, d25
+1E614354 fneg d20, d26
+1E6141F7 fneg d23, d15
+1E614006 fneg d6, d0
+1E614088 fneg d8, d4
+1E614218 fneg d24, d16
+1E61430D fneg d13, d24
+1E61406D fneg d13, d3
+1E6142DD fneg d29, d22
+1E6143E0 fneg d0, d31
+1E6140FF fneg d31, d7
+1E6140E7 fneg d7, d7
+
+// FNEG_H_floatdp1 M=0|0|S=0|11110|ftype=11|10000|opc=10|10000|Rn=xxxxx|Rd=xxxxx
+// FnegHFloatdp1: FNEG  <Hd>, <Hn>
+// register fields: Rn, Rd
+1EE142D0 fneg h16, h22
+1EE14174 fneg h20, h11
+1EE14037 fneg h23, h1
+1EE14035 fneg h21, h1
+1EE1421D fneg h29, h16
+1EE14335 fneg h21, h25
+1EE1408F fneg h15, h4
+1EE14097 fneg h23, h4
+1EE1432C fneg h12, h25
+1EE1438F fneg h15, h28
+1EE142A7 fneg h7, h21
+1EE14153 fneg h19, h10
+1EE1403D fneg h29, h1
+1EE142D1 fneg h17, h22
+1EE14209 fneg h9, h16
+1EE140AE fneg h14, h5
+1EE14000 fneg h0, h0
+1EE143FF fneg h31, h31
+
+// FNEG_S_floatdp1 M=0|0|S=0|11110|ftype=00|10000|opc=10|10000|Rn=xxxxx|Rd=xxxxx
+// FnegSFloatdp1: FNEG  <Sd>, <Sn>
+// register fields: Rn, Rd
+1E2142D5 fneg s21, s22
+1E2143CA fneg s10, s30
+1E2143A6 fneg s6, s29
+1E2143A0 fneg s0, s29
+1E2142DD fneg s29, s22
+1E2143CB fneg s11, s30
+1E2143A4 fneg s4, s29
+1E214132 fneg s18, s9
+1E21421B fneg s27, s16
+1E214310 fneg s16, s24
+1E214013 fneg s19, s0
+1E21437A fneg s26, s27
+1E214212 fneg s18, s16
+1E2142D9 fneg s25, s22
+1E21421C fneg s28, s16
+1E21406D fneg s13, s3
+1E2143FF fneg s31, s31

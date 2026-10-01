@@ -1,0 +1,25 @@
+// sdivr_z_p_zz_ 000|0010|0|size=xx|0|101|R=1|U=0|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SdivrZPZz: SDIVR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04960B53 sdivr z19.s, p2/m, z19.s, z26.s
+04D6167B sdivr z27.d, p5/m, z27.d, z19.d
+04960331 sdivr z17.s, p0/m, z17.s, z25.s
+04D61FF6 sdivr z22.d, p7/m, z22.d, z31.d
+04D61D97 sdivr z23.d, p7/m, z23.d, z12.d
+04D602A5 sdivr z5.d, p0/m, z5.d, z21.d
+04D600B2 sdivr z18.d, p0/m, z18.d, z5.d
+04D61A40 sdivr z0.d, p6/m, z0.d, z18.d
+04D60138 sdivr z24.d, p0/m, z24.d, z9.d
+04D60712 sdivr z18.d, p1/m, z18.d, z24.d
+04961D3B sdivr z27.s, p7/m, z27.s, z9.s
+04D60BA0 sdivr z0.d, p2/m, z0.d, z29.d
+0496111A sdivr z26.s, p4/m, z26.s, z8.s
+04961FCE sdivr z14.s, p7/m, z14.s, z30.s
+04D604E2 sdivr z2.d, p1/m, z2.d, z7.d
+04961870 sdivr z16.s, p6/m, z16.s, z3.s
+04960C1F sdivr z31.s, p3/m, z31.s, z0.s
+04160B53 UNDEFINED
+04560B53 UNDEFINED
+04960853 sdivr z19.s, p2/m, z19.s, z2.s
+04960B42 sdivr z2.s, p2/m, z2.s, z26.s
+04960B5A sdivr z26.s, p2/m, z26.s, z26.s

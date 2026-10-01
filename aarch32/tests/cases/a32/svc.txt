@@ -1,0 +1,39 @@
+// SVC_A1 cond=xxxx|11|11|imm24=xxxxxxxxxxxxxxxxxxxxxxxx
+// SvcA1: SVC{<c>}{<q>}  {#}<imm>
+9f7bc7db svcls #8112091
+2f8b786e svchs #9140334
+8f90bc11 svchi #9485329
+df299a63 svcle #2726499
+0f7a4199 svceq #8012185
+0f3d9de5 svceq #4038117
+8f253558 svchi #2438488
+4f7a4d14 svcmi #8015124
+// Binary Ninja's tests
+ef000000 svc #0
+ef000001 svc #1
+ef000002 svc #2
+ef000010 svc #16
+ef123456 svc #1193046
+efffffff svc #16777215
+FF7BC7DB UNALLOCATED
+1F800000 svcne #0x800000
+9F400000 svcls #0x400000
+9F200000 svcls #0x200000
+9F100000 svcls #0x100000
+9F080000 svcls #0x80000
+9F040000 svcls #0x40000
+9F020000 svcls #0x20000
+9F010000 svcls #0x10000
+9F008000 svcls #0x8000
+9F004000 svcls #0x4000
+9F002000 svcls #0x2000
+9F001000 svcls #0x1000
+9F000800 svcls #0x800
+9F000400 svcls #0x400
+9F000200 svcls #0x200
+9F000100 svcls #0x100
+9F000080 svcls #0x80
+9F000040 svcls #0x40
+9F000020 svcls #0x20
+9F000008 svcls #0x8
+9F000004 svcls #0x4

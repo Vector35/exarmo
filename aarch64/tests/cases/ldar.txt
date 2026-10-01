@@ -1,0 +1,67 @@
+// LDAR_LR32_ldstord size=10|0010001|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdarLr32Ldstord: LDAR  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+88DFFC99 ldar w25, [x4]
+88DFFC3C ldar w28, [x1]
+88DFFF37 ldar w23, [x25]
+88DFFFA1 ldar w1, [fp]
+88DFFD43 ldar w3, [x10]
+88DFFF28 ldar w8, [x25]
+88DFFD49 ldar w9, [x10]
+88DFFF9E ldar w30, [x28]
+88CFFD5B ldar w27, [x10] (unpredictable)
+88CFFEEB ldar w11, [x23] (unpredictable)
+88CFFEE9 ldar w9, [x23] (unpredictable)
+88CFFEC5 ldar w5, [x22] (unpredictable)
+88CFFDA9 ldar w9, [x13] (unpredictable)
+88CFFEC6 ldar w6, [x22] (unpredictable)
+88CFFC3C ldar w28, [x1] (unpredictable)
+88DFFD4A ldar w10, [x10]
+88DFFD2C ldar w12, [x9]
+88DFFD3A ldar w26, [x9]
+88DFFC60 ldar w0, [x3]
+88CFFC48 ldar w8, [x2] (unpredictable)
+88CFFC9A ldar w26, [x4] (unpredictable)
+88DFFF1E ldar w30, [x24]
+88CFFFE6 ldar w6, [sp] (unpredictable)
+88DFFD7B ldar w27, [x11]
+88C0801F ldar wzr, [x0] (unpredictable)
+88D0C099 ldar w25, [x4] (unpredictable)
+88C8A099 ldar w25, [x4] (unpredictable)
+88C49099 ldar w25, [x4] (unpredictable)
+88C28899 ldar w25, [x4] (unpredictable)
+88C18499 ldar w25, [x4] (unpredictable)
+
+// LDAR_LR64_ldstord size=11|0010001|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdarLr64Ldstord: LDAR  <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+C8DFFEF5 ldar x21, [x23]
+C8DFFF98 ldar x24, [x28]
+C8DFFC03 ldar x3, [x0]
+C8DFFDF9 ldar x25, [x15]
+C8DFFE8A ldar x10, [x20]
+C8DFFFEE ldar x14, [sp]
+C8DFFC6B ldar x11, [x3]
+C8DFFF8C ldar x12, [x28]
+C8DFFD72 ldar x18, [x11]
+C8CFFE03 ldar x3, [x16] (unpredictable)
+C8CFFE02 ldar x2, [x16] (unpredictable)
+C8CFFE31 ldar x17, [x17] (unpredictable)
+C8DFFE8B ldar x11, [x20]
+C8CFFEB2 ldar x18, [x21] (unpredictable)
+C8DFFC2A ldar x10, [x1]
+C8CFFD96 ldar x22, [x12] (unpredictable)
+C8DFFD79 ldar x25, [x11]
+C8CFFCB7 ldar x23, [x5] (unpredictable)
+C8CFFE57 ldar x23, [x18] (unpredictable)
+C8CFFE4B ldar x11, [x18] (unpredictable)
+C8DFFDDD ldar fp, [x14]
+C8DFFCF7 ldar x23, [x7]
+C8CFFF64 ldar x4, [x27] (unpredictable)
+C8CFFCBF ldar xzr, [x5] (unpredictable)
+C8C082E0 ldar x0, [x23] (unpredictable)
+C8D0C2F5 ldar x21, [x23] (unpredictable)
+C8C8A2F5 ldar x21, [x23] (unpredictable)
+C8C492F5 ldar x21, [x23] (unpredictable)
+C8C28AF5 ldar x21, [x23] (unpredictable)
+C8C186F5 ldar x21, [x23] (unpredictable)

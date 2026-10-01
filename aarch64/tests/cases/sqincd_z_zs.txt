@@ -1,0 +1,25 @@
+// sqincd_z_zs_ 000|0010|0|size=11|1|0|imm4=xxxx|11|00|D=0|U=0|pattern=xxxxx|Zdn=xxxxx
+// SqincdZZs: SQINCD  <Zdn>.D{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+04E2C1CB sqincd z11.d, #0xe, mul #0x3
+04E2C1B7 sqincd z23.d, vl256, mul #0x3
+04E2C354 sqincd z20.d, #0x1a, mul #0x3
+04EEC0EF sqincd z15.d, vl7, mul #0xf
+04E2C1EC sqincd z12.d, #0xf, mul #0x3
+04E1C120 sqincd z0.d, vl16, mul #0x2
+04E4C0B2 sqincd z18.d, vl5, mul #0x5
+04E3C3D3 sqincd z19.d, mul3, mul #0x4
+04EDC1CE sqincd z14.d, #0xe, mul #0xe
+04EEC30B sqincd z11.d, #0x18, mul #0xf
+04EDC13D sqincd z29.d, vl16, mul #0xe
+04EEC201 sqincd z1.d, #0x10, mul #0xf
+04E5C332 sqincd z18.d, #0x19, mul #0x6
+04E1C252 sqincd z18.d, #0x12, mul #0x2
+04EEC3ED sqincd z13.d, all, mul #0xf
+04EAC334 sqincd z20.d, #0x19, mul #0xb
+04E0C01F sqincd z31.d, pow2
+04EFC1CB sqincd z11.d, #0xe, mul #0x10
+04E8C10B sqincd z11.d, vl8, mul #0x9
+04E2C08B sqincd z11.d, vl4, mul #0x3
+04E2C04B sqincd z11.d, vl2, mul #0x3
+04E2C02B sqincd z11.d, vl1, mul #0x3

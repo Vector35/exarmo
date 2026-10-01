@@ -1,0 +1,79 @@
+// UQSHL_asimdshf_R 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|011|op=1|0|1|Rn=xxxxx|Rd=xxxxx
+// UqshlAsimdshfR: UQSHL  <Vd>.<T>, <Vn>.<T>, #<shift>
+// read together by <T>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+6F1F75F4 uqshl v20.8h, v15.8h, #0xf
+6F7B7666 uqshl v6.2d, v19.2d, #0x3b
+6F0D74E6 uqshl v6.16b, v7.16b, #0x5
+6F327713 uqshl v19.4s, v24.4s, #0x12
+6F3A769B uqshl v27.4s, v20.4s, #0x1a
+6F7D74D6 uqshl v22.2d, v6.2d, #0x3d
+2F1877CB uqshl v11.4h, v30.4h, #0x8
+6F7C75A0 uqshl v0.2d, v13.2d, #0x3c
+6F56755A uqshl v26.2d, v10.2d, #0x16
+6F3E77F3 uqshl v19.4s, v31.4s, #0x1e
+6F1B7583 uqshl v3.8h, v12.8h, #0xb
+2F0874B9 uqshl v25.8b, v5.8b, #0x0
+6F3C7621 uqshl v1.4s, v17.4s, #0x1c
+2F3674BE uqshl v30.2s, v5.2s, #0x16
+2F3175F4 uqshl v20.2s, v15.2s, #0x11
+6F3B75F7 uqshl v23.4s, v15.4s, #0x1b
+6F1F741F uqshl v31.8h, v0.8h, #0xf
+2F7F75F4 UNDEFINED
+6F7875EF uqshl v15.2d, v15.2d, #0x38
+6F7975F4 uqshl v20.2d, v15.2d, #0x39
+6F7A75F4 uqshl v20.2d, v15.2d, #0x3a
+6F7E75F4 uqshl v20.2d, v15.2d, #0x3e
+6F7F75F4 uqshl v20.2d, v15.2d, #0x3f
+6F4775F4 uqshl v20.2d, v15.2d, #0x7
+6F2775F4 uqshl v20.4s, v15.4s, #0x7
+6F1775F4 uqshl v20.8h, v15.8h, #0x7
+
+// UQSHL_asisdshf_R 01|U=1|1|111|10|immh=xxxx|immb=xxx|011|op=1|0|1|Rn=xxxxx|Rd=xxxxx
+// UqshlAsisdshfR: UQSHL  <V><d>, <V><n>, #<shift>
+// read together by <d>: immh, Rd
+// read together by <n>: immh, Rn
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+7F0A76D0 uqshl b16, b22, #0x2
+7F1976B8 uqshl h24, h21, #0x9
+7F1C74D3 uqshl h19, h6, #0xc
+7F51766D uqshl d13, d19, #0x11
+7F7F76AB uqshl d11, d21, #0x3f
+7F17775E uqshl h30, h26, #0x7
+7F767484 uqshl d4, d4, #0x36
+7F3976C5 uqshl s5, s22, #0x19
+7F59757F uqshl d31, d11, #0x19
+7F6B7661 uqshl d1, d19, #0x2b
+7F717605 uqshl d5, d16, #0x31
+7F117626 uqshl h6, h17, #0x1
+7F7D7611 uqshl d17, d16, #0x3d
+7F4376A5 uqshl d5, d21, #0x3
+7F347425 uqshl s5, s1, #0x14
+7F4C74D4 uqshl d20, d6, #0xc
+7F087400 uqshl b0, b0, #0x0
+7F0A77F0 uqshl b16, b31, #0x2
+7F0276D0 UNALLOCATED
+7F0276C0 UNALLOCATED
+7F0276DF UNALLOCATED
+7F7A76C0 uqshl d0, d22, #0x3a
+7F7A76DF uqshl d31, d22, #0x3a
+7F027410 UNALLOCATED
+7F0277F0 UNALLOCATED
+7F7A7410 uqshl d16, d0, #0x3a
+7F7A77F0 uqshl d16, d31, #0x3a
+7F0076D0 UNALLOCATED
+7F0176D0 UNALLOCATED
+7F0376D0 UNALLOCATED
+7F0476D0 UNALLOCATED
+7F0576D0 UNALLOCATED
+7F0676D0 UNALLOCATED
+7F0776D0 UNALLOCATED
+7F7876D0 uqshl d16, d22, #0x38
+7F7976D0 uqshl d16, d22, #0x39
+7F7A76D0 uqshl d16, d22, #0x3a
+7F7B76D0 uqshl d16, d22, #0x3b
+7F7C76D0 uqshl d16, d22, #0x3c
+7F7E76D0 uqshl d16, d22, #0x3e
+7F2276D0 uqshl s16, s22, #0x2

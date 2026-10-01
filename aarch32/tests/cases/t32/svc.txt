@@ -1,0 +1,18 @@
+// SVC_T1 1101|111|S=1|imm8=xxxxxxxx
+// SvcT1: SVC{<c>}{<q>}  {#}<imm>
+// IT state read: condition
+df00 svc #0
+df01 svc #1
+df02 svc #2
+df03 svc #3
+df04 svc #4
+df05 svc #5
+df06 svc #6
+df07 svc #7
+DFFF svc #0xff
+DF80 svc #0x80
+DF40 svc #0x40
+DF20 svc #0x20
+DF10 svc #0x10
+DF08 svc #0x8
+DF00 [ne] svcne #0x0

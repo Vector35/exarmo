@@ -1,0 +1,17 @@
+// WFI_T1 1011|1111|hint=0011|0000
+// WfiT1: WFI{<c>}{<q>}
+// IT state read: condition
+bf30 wfi
+BF30 [ne] wfine
+
+// WFI_T2 111|10|0|1110|10|(1)(1)(1)(1)|1|0(0)0|(0)|000|hint=0000|option=0011
+// WfiT2: WFI{<c>}.W
+// IT state read: condition
+F3A08003 wfi (unpredictable)
+F3AFA803 wfi (unpredictable)
+F3A88003 wfi (unpredictable)
+F3A48003 wfi (unpredictable)
+F3A28003 wfi (unpredictable)
+F3A18003 wfi (unpredictable)
+F3A08003 [ne] wfine (unpredictable)
+F3AF8003 wfi

@@ -1,0 +1,14 @@
+// addhnt_z_zz_ 010|0010|1|size=xx|1|Zm=xxxxx|0|11|S=0|R=0|T=1|Zn=xxxxx|Zd=xxxxx
+// AddhntZZz: ADDHNT  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45F866A7 addhnt z7.s, z21.d, z24.d
+45A965B5 addhnt z21.h, z13.s, z9.s
+45B36651 addhnt z17.h, z18.s, z19.s
+45E6679D addhnt z29.s, z28.d, z6.d
+45716658 addhnt z24.b, z18.h, z17.h
+45BD6438 addhnt z24.h, z1.s, z29.s
+45F36449 addhnt z9.s, z2.d, z19.d
+4578668E addhnt z14.b, z20.h, z24.h
+45E06400 addhnt z0.s, z0.d, z0.d
+45FF67FF addhnt z31.s, z31.d, z31.d
+453866A7 UNDEFINED

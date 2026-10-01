@@ -1,0 +1,38 @@
+// usmops_za_pp_zz_32 1|01|0000|u0=1|10|u1=0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|0|0|ZAda=xx
+// UsmopsZaPpZz32: USMOPS  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.B, <Zm>.B
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A196CAB0 usmops za0.s, p2/m, p6/m, z21.b, z22.b
+A1924DD3 usmops za3.s, p3/m, p2/m, z14.b, z18.b
+A1984CF3 usmops za3.s, p3/m, p2/m, z7.b, z24.b
+A199E710 usmops za0.s, p1/m, p7/m, z24.b, z25.b
+A18B5113 usmops za3.s, p4/m, p2/m, z8.b, z11.b
+A184A1F1 usmops za1.s, p0/m, p5/m, z15.b, z4.b
+A1858DB0 usmops za0.s, p3/m, p4/m, z13.b, z5.b
+A198D313 usmops za3.s, p4/m, p6/m, z24.b, z24.b
+A1801412 usmops za2.s, p5/m, p0/m, z0.b, z0.b
+A19F3BF0 usmops za0.s, p6/m, p1/m, z31.b, z31.b
+A1967EB0 usmops za0.s, p7/m, p3/m, z21.b, z22.b
+A1820AB0 usmops za0.s, p2/m, p0/m, z21.b, z2.b
+A180DAB0 usmops za0.s, p6/m, p6/m, z21.b, z0.b
+A196C850 usmops za0.s, p2/m, p6/m, z2.b, z22.b
+A196C810 usmops za0.s, p2/m, p6/m, z0.b, z22.b
+
+// usmops_za_pp_zz_64 1|0|1|0000|u0=1|11|u1=0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=1|0|ZAda=xxx
+// UsmopsZaPpZz64: USMOPS  <ZAda>.D, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A1C0BF92 usmops za2.d, p7/m, p5/m, z28.h, z0.h
+A1D1ECB1 usmops za1.d, p3/m, p7/m, z5.h, z17.h
+A1C655F0 usmops za0.d, p5/m, p2/m, z15.h, z6.h
+A1D9D2B1 usmops za1.d, p4/m, p6/m, z21.h, z25.h
+A1D1A4B0 usmops za0.d, p1/m, p5/m, z5.h, z17.h
+A1CE4F30 usmops za0.d, p3/m, p2/m, z25.h, z14.h
+A1D49630 usmops za0.d, p5/m, p4/m, z17.h, z20.h
+A1D02F53 usmops za3.d, p3/m, p1/m, z26.h, z16.h
+A1DF0014 usmops za4.d, p0/m, p0/m, z0.h, z31.h
+A1C06BF5 usmops za5.d, p2/m, p3/m, z31.h, z0.h
+A1C0BB96 usmops za6.d, p6/m, p5/m, z28.h, z0.h
+A1C0BF97 usmops za7.d, p7/m, p5/m, z28.h, z0.h
+A1C01C52 usmops za2.d, p7/m, p0/m, z2.h, z0.h
+A1C0A395 usmops za5.d, p0/m, p5/m, z28.h, z0.h
+A1C0BC12 usmops za2.d, p7/m, p5/m, z0.h, z0.h
+A1C0BF90 usmops za0.d, p7/m, p5/m, z28.h, z0.h

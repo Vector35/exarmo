@@ -1,0 +1,45 @@
+// VQSUB_A1_D 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0010|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VqsubA1D: VQSUB{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f315b29e vqsub.u16 d11, d21, d14
+f23e7238 vqsub.s64 d7, d14, d24
+f2264237 vqsub.s32 d4, d6, d23
+f34ac23e vqsub.u8 d28, d10, d30
+f32c6212 vqsub.u32 d6, d12, d2
+f2124236 vqsub.s16 d4, d2, d22
+f333329e vqsub.u64 d3, d19, d14
+f277f233 vqsub.s64 d31, d7, d19
+F2000290 vqsub.s8 d0, d16, d0
+F31F829F vqsub.u16 d8, d31, d15
+F3182294 vqsub.u16 d2, d24, d4
+F3141291 vqsub.u16 d1, d20, d1
+F3110290 vqsub.u16 d0, d17, d0
+F310F21F vqsub.u16 d15, d0, d15
+F35002B0 vqsub.u16 d16, d16, d16
+F31FB23F vqsub.u16 d11, d15, d31
+F31FB29E vqsub.u16 d11, d31, d14
+
+// VQSUB_A1_Q 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0010|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VqsubA1Q: VQSUB{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f22ee256 vqsub.s32 q7, q7, q3
+f36ce27c vqsub.u32 q15, q6, q14
+f318627c vqsub.u16 q3, q4, q14
+f34c625a vqsub.u8 q11, q6, q5
+f35602fa vqsub.u16 q8, q11, q13
+f302c2f6 vqsub.u8 q6, q9, q11
+f22ce2f8 vqsub.s32 q7, q14, q12
+f27442f2 vqsub.s64 q10, q10, q9
+F2008250 vqsub.s8 q4, q0, q0
+F22FF25F UNDEFINED
+F2211251 UNDEFINED
+F2102254 vqsub.s16 q1, q0, q2
+F33002D0 vqsub.u64 q0, q8, q0
+F26FF2FF UNDEFINED
+F22EE270 vqsub.s32 q7, q7, q8

@@ -1,0 +1,51 @@
+// uqdecd_r_rs_uw 000|0010|0|size=11|1|sf=0|imm4=xxxx|11|11|D=1|U=1|pattern=xxxxx|Rdn=xxxxx
+// UqdecdRRsUw: UQDECD  <Wdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04E5FE53 uqdecd w19, #0x12, mul #0x6
+04E7FC7F uqdecd wzr, vl3, mul #0x8
+04EFFDB8 uqdecd w24, vl256, mul #0x10
+04E2FEDB uqdecd w27, #0x16, mul #0x3
+04EBFDF7 uqdecd w23, #0xf, mul #0xc
+04EBFF42 uqdecd w2, #0x1a, mul #0xc
+04ECFEC9 uqdecd w9, #0x16, mul #0xd
+04E5FEB8 uqdecd w24, #0x15, mul #0x6
+04EDFD23 uqdecd w3, vl16, mul #0xe
+04EFFE94 uqdecd w20, #0x14, mul #0x10
+04E7FF7D uqdecd w29, #0x1b, mul #0x8
+04EEFEE2 uqdecd w2, #0x17, mul #0xf
+04EDFE6B uqdecd w11, #0x13, mul #0xe
+04E8FF62 uqdecd w2, #0x1b, mul #0x9
+04E7FDFE uqdecd w30, #0xf, mul #0x8
+04E3FF88 uqdecd w8, #0x1c, mul #0x4
+04E0FC00 uqdecd w0, pow2
+04E5FFF3 uqdecd w19, all, mul #0x6
+04E4FE13 uqdecd w19, #0x10, mul #0x5
+04E1FD13 uqdecd w19, vl8, mul #0x2
+04E5FC93 uqdecd w19, vl4, mul #0x6
+04E5FC53 uqdecd w19, vl2, mul #0x6
+04E5FC33 uqdecd w19, vl1, mul #0x6
+
+// uqdecd_r_rs_x 000|0010|0|size=11|1|sf=1|imm4=xxxx|11|11|D=1|U=1|pattern=xxxxx|Rdn=xxxxx
+// UqdecdRRsX: UQDECD  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04FDFDD6 uqdecd x22, #0xe, mul #0xe
+04FEFD3B uqdecd x27, vl16, mul #0xf
+04F4FF37 uqdecd x23, #0x19, mul #0x5
+04F8FE8F uqdecd x15, #0x14, mul #0x9
+04F6FFF9 uqdecd x25, all, mul #0x7
+04F8FD81 uqdecd x1, vl128, mul #0x9
+04F3FC17 uqdecd x23, pow2, mul #0x4
+04FAFD0A uqdecd x10, vl8, mul #0xb
+04FDFCFC uqdecd x28, vl7, mul #0xe
+04F9FE10 uqdecd x16, #0x10, mul #0xa
+04F2FD4F uqdecd x15, vl32, mul #0x3
+04F0FE37 uqdecd x23, #0x11
+04F4FE79 uqdecd x25, #0x13, mul #0x5
+04FBFC6A uqdecd x10, vl3, mul #0xc
+04F5FE12 uqdecd x18, #0x10, mul #0x6
+04F7FD63 uqdecd x3, vl64, mul #0x8
+04FFFDC0 uqdecd x0, #0xe, mul #0x10
+04FDFDDF uqdecd xzr, #0xe, mul #0xe
+04F1FC96 uqdecd x22, vl4, mul #0x2
+04FDFC56 uqdecd x22, vl2, mul #0xe
+04FDFC36 uqdecd x22, vl1, mul #0xe

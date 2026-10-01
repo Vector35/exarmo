@@ -1,0 +1,21 @@
+// rev_p_p_ 000|0010|1|size=xx|1|10100|010|0000|Pn=xxxx|0|Pd=xxxx
+// RevPP: REV  <Pd>.<T>, <Pn>.<T>
+// register fields: Pn, Pd
+05B44101 rev p1.s, p8.s
+05F4416F rev p15.d, p11.d
+05B441CC rev p12.s, p14.s
+05F44085 rev p5.d, p4.d
+05B4400A rev p10.s, p0.s
+05B44149 rev p9.s, p10.s
+05344104 rev p4.b, p8.b
+05744022 rev p2.h, p1.h
+05344105 rev p5.b, p8.b
+05B440AD rev p13.s, p5.s
+05344041 rev p1.b, p2.b
+05744143 rev p3.h, p10.h
+05344142 rev p2.b, p10.b
+0574410B rev p11.h, p8.h
+05344049 rev p9.b, p2.b
+05F44041 rev p1.d, p2.d
+05B441E0 rev p0.s, p15.s
+05B44108 rev p8.s, p8.s

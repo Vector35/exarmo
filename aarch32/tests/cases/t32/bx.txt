@@ -1,0 +1,15 @@
+// BX_T1 010001|11|L=0|Rm=xxxx|(0)(0)(0)
+// BxT1: BX{<c>}{<q>}  <Rm>
+// register fields: Rm
+// IT state read: condition, last in block
+4700 bx r0
+4701 bx r0 (unpredictable)
+4702 bx r0 (unpredictable)
+4703 bx r0 (unpredictable)
+4704 bx r0 (unpredictable)
+4705 bx r0 (unpredictable)
+4706 bx r0 (unpredictable)
+4707 bx r0 (unpredictable)
+4778 bx pc
+4700 [ne] bxne r0 (unpredictable)
+4700 [ne last] bxne r0

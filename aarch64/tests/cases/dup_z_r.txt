@@ -1,0 +1,34 @@
+// dup_z_r_bhs_ 00000101|size=xx|100000001110|Rn=xxxxx|Zd=xxxxx
+// DupZRBhs: DUP  <Zd>.<T>, <Wn|WSP>
+// MovZRBhsDupZRBhs: MOV  <Zd>.<T>, <Wn|WSP>
+// register fields: Rn, Zd
+05603A7F mov z31.h, w19
+0520395C mov z28.b, w10
+05203BE0 mov z0.b, wsp
+05A03BEC mov z12.s, wsp
+05A038D7 mov z23.s, w6
+05A03A60 mov z0.s, w19
+056038FE mov z30.h, w7
+05203A26 mov z6.b, w17
+056038EF mov z15.h, w7
+052038C1 mov z1.b, w6
+05603A25 mov z5.h, w17
+05A039C7 mov z7.s, w14
+05203806 mov z6.b, w0
+05603806 mov z6.h, w0
+05603BE6 mov z6.h, wsp
+05A03806 mov z6.s, w0
+05603A73 mov z19.h, w19
+
+// dup_z_r_d_ 00000101|size=11|100000001110|Rn=xxxxx|Zd=xxxxx
+// DupZRD: DUP  <Zd>.D, <Xn|SP>
+// MovZRDDupZRD: MOV  <Zd>.D, <Xn|SP>
+// register fields: Rn, Zd
+05E03A66 mov z6.d, x19
+05E03BF3 mov z19.d, sp
+05E039E7 mov z7.d, x15
+05E03923 mov z3.d, x9
+05E03806 mov z6.d, x0
+05E03A73 mov z19.d, x19
+05E03A60 mov z0.d, x19
+05E03A7F mov z31.d, x19

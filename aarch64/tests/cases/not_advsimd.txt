@@ -1,0 +1,22 @@
+// NOT_asimdmisc_R 0|Q=x|U=1|0|111|0|size=00|10000|opcode=00101|10|Rn=xxxxx|Rd=xxxxx
+// NotAsimdmiscR: NOT  <Vd>.<T>, <Vn>.<T>
+// MvnNotAsimdmiscR: MVN  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+6E205A52 mvn v18.16b, v18.16b
+6E205834 mvn v20.16b, v1.16b
+2E2059E4 mvn v4.8b, v15.8b
+2E205AB2 mvn v18.8b, v21.8b
+6E205B6A mvn v10.16b, v27.16b
+6E205B2D mvn v13.16b, v25.16b
+6E2059B3 mvn v19.16b, v13.16b
+2E205A89 mvn v9.8b, v20.8b
+6E205B95 mvn v21.16b, v28.16b
+2E205B88 mvn v8.8b, v28.8b
+6E205828 mvn v8.16b, v1.16b
+6E20587A mvn v26.16b, v3.16b
+6E205B0F mvn v15.16b, v24.16b
+6E205A23 mvn v3.16b, v17.16b
+6E205A0F mvn v15.16b, v16.16b
+2E2058BB mvn v27.8b, v5.8b
+6E205800 mvn v0.16b, v0.16b
+6E205BFF mvn v31.16b, v31.16b

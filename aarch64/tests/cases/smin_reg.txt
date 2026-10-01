@@ -1,0 +1,19 @@
+// SMIN_32_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|opcode=011010|Rn=xxxxx|Rd=xxxxx
+// Smin32Dp2src: SMIN  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AC06800 smin w0, w0, w0
+1AC06807 smin w7, w0, w0
+1AC0680E smin w14, w0, w0
+1ADF6BFF smin wzr, wzr, wzr
+1AC16843 smin w3, w2, w1
+
+// SMIN_64_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|opcode=011010|Rn=xxxxx|Rd=xxxxx
+// Smin64Dp2src: SMIN  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9AC06805 smin x5, x0, x0
+9AC0680C smin x12, x0, x0
+9AC06813 smin x19, x0, x0
+9ADF6BE0 smin x0, xzr, xzr
+9AC0681F smin xzr, x0, x0
+9AC06800 smin x0, x0, x0
+9AC16843 smin x3, x2, x1

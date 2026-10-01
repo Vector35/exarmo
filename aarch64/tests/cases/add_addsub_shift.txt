@@ -1,0 +1,56 @@
+// ADD_32_addsub_shift sf=0|op=0|S=0|01011|shift=xx|0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Add32AddsubShift: ADD  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+0B85559D add w29, w12, w5, asr #0x15
+0B1A49EA add w10, w15, w26, lsl #0x12
+0B86539C add w28, w28, w6, asr #0x14
+0B4C4007 add w7, w0, w12, lsr #0x10
+0B0046DD add w29, w22, w0, lsl #0x11
+0B0A08AE add w14, w5, w10, lsl #0x2
+0B8467A1 add w1, w29, w4, asr #0x19
+0B4824C4 add w4, w6, w8, lsr #0x9
+0B4E3E56 add w22, w18, w14, lsr #0xf
+0B8F27E2 add w2, wzr, w15, asr #0x9
+0B0037D5 add w21, w30, w0, lsl #0xd
+0B1C4268 add w8, w19, w28, lsl #0x10
+0B0F79A7 add w7, w13, w15, lsl #0x1e
+0B9F0313 add w19, w24, wzr, asr #0x0
+0B5932A4 add w4, w21, w25, lsr #0xc
+0B897D61 add w1, w11, w9, asr #0x1f
+0B855580 add w0, w12, w5, asr #0x15
+0B85559F add wzr, w12, w5, asr #0x15
+0BC5FD9D UNDEFINED
+0B8554BD add w29, w5, w5, asr #0x15
+0B855585 add w5, w12, w5, asr #0x15
+0B85819D UNDEFINED
+0B85219D add w29, w12, w5, asr #0x8
+0B85119D add w29, w12, w5, asr #0x4
+0B85059D add w29, w12, w5, asr #0x1
+
+// ADD_64_addsub_shift sf=1|op=0|S=0|01011|shift=xx|0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Add64AddsubShift: ADD  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+8B4BB429 add x9, x1, x11, lsr #0x2d
+8B5EF182 add x2, x12, lr, lsr #0x3c
+8B1365D3 add x19, x14, x19, lsl #0x19
+8B5B7BBB add x27, fp, x27, lsr #0x1e
+8B561A04 add x4, x16, x22, lsr #0x6
+8B4F5DA1 add x1, x13, x15, lsr #0x17
+8B861023 add x3, x1, x6, asr #0x4
+8B10E3F7 add x23, xzr, x16, lsl #0x38
+8B82ACCE add x14, x6, x2, asr #0x2b
+8B484F3E add lr, x25, x8, lsr #0x13
+8B0EB1A4 add x4, x13, x14, lsl #0x2c
+8B4A8E44 add x4, x18, x10, lsr #0x23
+8B9ED75E add lr, x26, lr, asr #0x35
+8B11556C add x12, x11, x17, lsl #0x15
+8B976550 add x16, x10, x23, asr #0x19
+8B521FD4 add x20, lr, x18, lsr #0x7
+8B400000 add x0, x0, x0, lsr #0x0
+8B5FFC3F add xzr, x1, xzr, lsr #0x3f
+8BCBB429 UNDEFINED
+8B4B8029 add x9, x1, x11, lsr #0x20
+8B4B4029 add x9, x1, x11, lsr #0x10
+8B4B2029 add x9, x1, x11, lsr #0x8
+8B4B0829 add x9, x1, x11, lsr #0x2
+8B4B0429 add x9, x1, x11, lsr #0x1

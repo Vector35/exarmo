@@ -1,0 +1,24 @@
+// SRHADD_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=00010|1|Rn=xxxxx|Rd=xxxxx
+// SrhaddAsimdsameOnly: SRHADD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4EB3174D srhadd v13.4s, v26.4s, v19.4s
+0E3514D4 srhadd v20.8b, v6.8b, v21.8b
+4E251465 srhadd v5.16b, v3.16b, v5.16b
+4E6817B6 srhadd v22.8h, v29.8h, v8.8h
+0E6214EE srhadd v14.4h, v7.4h, v2.4h
+0EBC1640 srhadd v0.2s, v18.2s, v28.2s
+4E6A1669 srhadd v9.8h, v19.8h, v10.8h
+0E62146F srhadd v15.4h, v3.4h, v2.4h
+0EB517BD srhadd v29.2s, v29.2s, v21.2s
+0E2F1477 srhadd v23.8b, v3.8b, v15.8b
+0E7614AC srhadd v12.4h, v5.4h, v22.4h
+4E6D153E srhadd v30.8h, v9.8h, v13.8h
+0E2417F3 srhadd v19.8b, v31.8b, v4.8b
+0E2C16AE srhadd v14.8b, v21.8b, v12.8b
+0E7517E1 srhadd v1.4h, v31.4h, v21.4h
+4E7E1685 srhadd v5.8h, v20.8h, v30.8h
+4EA0141F srhadd v31.4s, v0.4s, v0.4s
+4EBF174D srhadd v13.4s, v26.4s, v31.4s
+4EF3174D UNDEFINED
+0EF3174D UNDEFINED

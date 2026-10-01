@@ -1,0 +1,23 @@
+// SHA512H2_QQV_cryptosha512_3 1100|111|00|11|Rm=xxxxx|1|O=0|00|opcode=01|Rn=xxxxx|Rd=xxxxx
+// Sha512h2QqvCryptosha5123: SHA512H2  <Qd>, <Qn>, <Vm>.2D
+// register fields: Rm, Rn, Rd
+CE6F841E sha512h2 q30, q0, v15.2d
+CE60846D sha512h2 q13, q3, v0.2d
+CE708708 sha512h2 q8, q24, v16.2d
+CE6384FE sha512h2 q30, q7, v3.2d
+CE768708 sha512h2 q8, q24, v22.2d
+CE788483 sha512h2 q3, q4, v24.2d
+CE7E8460 sha512h2 q0, q3, v30.2d
+CE6A8524 sha512h2 q4, q9, v10.2d
+CE7D8637 sha512h2 q23, q17, v29.2d
+CE7C8487 sha512h2 q7, q4, v28.2d
+CE7187E2 sha512h2 q2, q31, v17.2d
+CE698762 sha512h2 q2, q27, v9.2d
+CE6184C2 sha512h2 q2, q6, v1.2d
+CE6487A1 sha512h2 q1, q29, v4.2d
+CE7987E4 sha512h2 q4, q31, v25.2d
+CE7784FF sha512h2 q31, q7, v23.2d
+CE7F841E sha512h2 q30, q0, v31.2d
+CE6F85FE sha512h2 q30, q15, v15.2d
+CE6F840F sha512h2 q15, q0, v15.2d
+CE6F8400 sha512h2 q0, q0, v15.2d

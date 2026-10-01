@@ -1,0 +1,19 @@
+// SSUB16_A1 cond=xxxx|011|00|op1=001|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=11|1|Rm=xxxx
+// Ssub16A1: SSUB16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+d6115473 ssub16le r5, r1, r3 (unpredictable)
+c6102878 ssub16gt r2, r0, r8 (unpredictable)
+d619e774 ssub16le lr, r9, r4 (unpredictable)
+561dc470 ssub16pl r12, sp, r0 (unpredictable)
+06189f7f ssub16eq r9, r8, pc (unpredictable)
+b6114073 ssub16lt r4, r1, r3 (unpredictable)
+261f8b7d ssub16hs r8, pc, sp (unpredictable)
+9613587a ssub16ls r5, r3, r10 (unpredictable)
+// Binary Ninja's tests
+16135f72 ssub16ne r5, r3, r2
+e6101f76 ssub16 r1, r0, r6
+F6115473 UNALLOCATED
+86110271 ssub16hi r0, r1, r1 (unpredictable)
+4611F173 ssub16mi pc, r1, r3 (unpredictable)
+D6111473 ssub16le r1, r1, r3 (unpredictable)
+D6115475 ssub16le r5, r1, r5 (unpredictable)

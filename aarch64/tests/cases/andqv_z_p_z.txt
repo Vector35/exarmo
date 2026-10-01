@@ -1,0 +1,14 @@
+// andqv_z_p_z_ 000|0010|0|size=xx|0|111|opc=10|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// AndqvZPZ: ANDQV  <Vd>.<T>, <Pg>, <Zn>.<Tb>
+// register fields: Pg, Zn, Vd
+041E2004 andqv v4.16b, p0, z0.b
+041E200B andqv v11.16b, p0, z0.b
+041E2012 andqv v18.16b, p0, z0.b
+045E27E0 andqv v0.8h, p1, z31.h
+049E281F andqv v31.4s, p2, z0.s
+04DE2C04 andqv v4.2d, p3, z0.d
+041E3004 andqv v4.16b, p4, z0.b
+041E3404 andqv v4.16b, p5, z0.b
+041E3804 andqv v4.16b, p6, z0.b
+041E3C04 andqv v4.16b, p7, z0.b
+041E2000 andqv v0.16b, p0, z0.b

@@ -1,0 +1,24 @@
+// SMAX_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|0110|o1=0|1|Rn=xxxxx|Rd=xxxxx
+// SmaxAsimdsameOnly: SMAX  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4EBF666C smax v12.4s, v19.4s, v31.4s
+4E7767D3 smax v19.8h, v30.8h, v23.8h
+0EAD67BB smax v27.2s, v29.2s, v13.2s
+0E39644F smax v15.8b, v2.8b, v25.8b
+4E2066CC smax v12.16b, v22.16b, v0.16b
+4E376744 smax v4.16b, v26.16b, v23.16b
+4E276731 smax v17.16b, v25.16b, v7.16b
+4EA36731 smax v17.4s, v25.4s, v3.4s
+0EB06683 smax v3.2s, v20.2s, v16.2s
+4E626589 smax v9.8h, v12.8h, v2.8h
+4EB465A6 smax v6.4s, v13.4s, v20.4s
+4E2967C7 smax v7.16b, v30.16b, v9.16b
+0E7B66CD smax v13.4h, v22.4h, v27.4h
+0EA865EB smax v11.2s, v15.2s, v8.2s
+0E3B6421 smax v1.8b, v1.8b, v27.8b
+4EBC64CA smax v10.4s, v6.4s, v28.4s
+4EBF6400 smax v0.4s, v0.4s, v31.4s
+4EBF67FF smax v31.4s, v31.4s, v31.4s
+4EFF666C UNDEFINED
+0EFF666C UNDEFINED

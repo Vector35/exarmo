@@ -1,0 +1,16 @@
+// SHADD8_T1 111|11010|1|op1=000|Rn=xxxx|1111|Rd=xxxx|0|U=0|H=1|S=0|Rm=xxxx
+// Shadd8T1: SHADD8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa8cf923 shadd8 r9, r12, r3
+fa8bf520 shadd8 r5, r11, r0
+fa87f722 shadd8 r7, r7, r2
+fa8ff521 shadd8 r5, pc, r1 (unpredictable)
+fa85f128 shadd8 r1, r5, r8
+fa8ffd21 shadd8 sp, pc, r1 (unpredictable)
+fa80f825 shadd8 r8, r0, r5
+fa83f422 shadd8 r4, r3, r2
+FA8CF02F shadd8 r0, r12, pc (unpredictable)
+FA8CFF2C shadd8 pc, r12, r12 (unpredictable)
+FA8CF929 shadd8 r9, r12, r9
+FA8CF923 [ne] shadd8ne r9, r12, r3

@@ -1,0 +1,23 @@
+// VADDL_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|000|op=0|N=x|0|M=x|0|Vm=xxxx
+// VaddlA1: VADDL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f2af60a0 vaddl.s32 q3, d31, d16
+f28a800b vaddl.s8 q4, d10, d11
+f2dda0a5 vaddl.s16 q13, d29, d21
+f2e6808e vaddl.s32 q12, d22, d14
+f292e024 vaddl.s16 q7, d2, d20
+f2c0600f vaddl.s8 q11, d0, d15
+f2a0802b vaddl.s32 q4, d0, d27
+f3c9200a vaddl.u8 q9, d9, d10
+F39800A8 vaddl.u16 q0, d24, d24
+F3A440A2 vaddl.u32 q2, d20, d18
+F2A100A1 vaddl.s32 q0, d17, d17
+F3BFF0A0 UNDEFINED
+F2AF10A0 UNDEFINED
+F2AFF0A0 UNDEFINED
+F2E00080 vaddl.s32 q8, d16, d0
+F2EFF0A0 UNDEFINED
+F2AF602F vaddl.s32 q3, d15, d31

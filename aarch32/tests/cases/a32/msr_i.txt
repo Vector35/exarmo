@@ -1,0 +1,47 @@
+// MSR_i_A1_AS cond=xxxx|00|1|10|R=x|10|mask=xxxx|(1)(1)(1)(1)|imm12=xxxxxxxxxxxx
+// MsrIA1As: MSR{<c>}{<q>}  <spec_reg>, #<imm>
+// read together by <spec_reg>: R, mask
+// modified immediate <imm>: imm12
+8329f4d8 msrhi cpsr_fc, #3623878656
+// Binary Ninja's tests
+e321f005 msr cpsr_c, #5
+e322f005 msr cpsr_x, #5
+e324f005 msr apsr_g, #5
+e328f005 msr apsr_nzcvq, #5
+e329f005 msr cpsr_fc, #5
+e32cf005 msr apsr_nzcvqg, #5
+e32ef005 msr cpsr_fsx, #5
+e32ff005 msr cpsr_fsxc, #5
+e369f005 msr spsr_fc, #5
+e36ff005 msr spsr_fsxc, #5
+03600000 msreq #0x10, #0x0 (unpredictable)
+F320F4D8 UNDEFINED
+43298FFF msrmi cpsr_fc, #0x3fc (unpredictable)
+23294800 msrcs cpsr_fc, #0x0 (unpredictable)
+13292400 msrne cpsr_fc, #0x0 (unpredictable)
+E3601200 msr #0x10, #0x0 (unpredictable)
+8329F100 msrhi cpsr_fc, #0x0
+8329F080 msrhi cpsr_fc, #0x80
+8329F040 msrhi cpsr_fc, #0x40
+8329F020 msrhi cpsr_fc, #0x20
+8329F010 msrhi cpsr_fc, #0x10
+8329F008 msrhi cpsr_fc, #0x8
+8329F004 msrhi cpsr_fc, #0x4
+8329F002 msrhi cpsr_fc, #0x2
+8329F001 msrhi cpsr_fc, #0x1
+8329F081 msrhi cpsr_fc, #0x81
+8329F181 msrhi cpsr_fc, #0x40000020
+8329F281 msrhi cpsr_fc, #0x10000008
+8329F381 msrhi cpsr_fc, #0x4000002
+8329F481 msrhi cpsr_fc, #0x81000000
+8329F581 msrhi cpsr_fc, #0x20400000
+8329F681 msrhi cpsr_fc, #0x8100000
+8329F781 msrhi cpsr_fc, #0x2040000
+8329F881 msrhi cpsr_fc, #0x810000
+8329F981 msrhi cpsr_fc, #0x204000
+8329FA81 msrhi cpsr_fc, #0x81000
+8329FB81 msrhi cpsr_fc, #0x20400
+8329FC81 msrhi cpsr_fc, #0x8100
+8329FD81 msrhi cpsr_fc, #0x2040
+8329FE81 msrhi cpsr_fc, #0x810
+8329FF81 msrhi cpsr_fc, #0x204

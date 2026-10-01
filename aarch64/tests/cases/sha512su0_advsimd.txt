@@ -1,0 +1,20 @@
+// SHA512SU0_VV2_cryptosha512_2 1100|111|01|1000|0001000|opcode=00|Rn=xxxxx|Rd=xxxxx
+// Sha512su0Vv2Cryptosha5122: SHA512SU0  <Vd>.2D, <Vn>.2D
+// register fields: Rn, Rd
+CEC080CA sha512su0 v10.2d, v6.2d
+CEC0812D sha512su0 v13.2d, v9.2d
+CEC0834F sha512su0 v15.2d, v26.2d
+CEC0806E sha512su0 v14.2d, v3.2d
+CEC0825D sha512su0 v29.2d, v18.2d
+CEC08280 sha512su0 v0.2d, v20.2d
+CEC08001 sha512su0 v1.2d, v0.2d
+CEC083CC sha512su0 v12.2d, v30.2d
+CEC08385 sha512su0 v5.2d, v28.2d
+CEC08294 sha512su0 v20.2d, v20.2d
+CEC0822C sha512su0 v12.2d, v17.2d
+CEC08245 sha512su0 v5.2d, v18.2d
+CEC080DA sha512su0 v26.2d, v6.2d
+CEC08351 sha512su0 v17.2d, v26.2d
+CEC082E8 sha512su0 v8.2d, v23.2d
+CEC083E0 sha512su0 v0.2d, v31.2d
+CEC080DF sha512su0 v31.2d, v6.2d

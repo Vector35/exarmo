@@ -1,0 +1,42 @@
+// sqincp_r_p_r_sx 001|0010|1|size=xx|101|0|D=0|U=0|1000|1|sf=0|op=0|Pm=xxxx|Rdn=xxxxx
+// SqincpRPRSx: SQINCP  <Xdn>, <Pm>.<T>, <Wdn>
+// register fields: Pm, Rdn
+25E8893D sqincp fp, p9.d, w29
+25288896 sqincp x22, p4.b, w22
+25688865 sqincp x5, p3.h, w5
+2528885B sqincp x27, p2.b, w27
+252888AB sqincp x11, p5.b, w11
+25688882 sqincp x2, p4.h, w2
+252888FF sqincp xzr, p7.b, wzr
+25A88890 sqincp x16, p4.s, w16
+2568895C sqincp x28, p10.h, w28
+25688836 sqincp x22, p1.h, w22
+2528888E sqincp x14, p4.b, w14
+25E889AC sqincp x12, p13.d, w12
+25E888B7 sqincp x23, p5.d, w23
+25688921 sqincp x1, p9.h, w1
+25A889FD sqincp fp, p15.s, w29
+25A88856 sqincp x22, p2.s, w22
+25E88800 sqincp x0, p0.d, w0
+
+// sqincp_r_p_r_x 001|0010|1|size=xx|101|0|D=0|U=0|1000|1|sf=1|op=0|Pm=xxxx|Rdn=xxxxx
+// SqincpRPRX: SQINCP  <Xdn>, <Pm>.<T>
+// register fields: Pm, Rdn
+25A88D5D sqincp fp, p10.s
+25688C33 sqincp x19, p1.h
+25A88C1C sqincp x28, p0.s
+25288D82 sqincp x2, p12.b
+25A88D01 sqincp x1, p8.s
+25E88C76 sqincp x22, p3.d
+25288D9F sqincp xzr, p12.b
+25288C06 sqincp x6, p0.b
+25688CDF sqincp xzr, p6.h
+25688C53 sqincp x19, p2.h
+25288C89 sqincp x9, p4.b
+25E88C05 sqincp x5, p0.d
+25688C59 sqincp x25, p2.h
+25288D11 sqincp x17, p8.b
+25688CCE sqincp x14, p6.h
+25A88DA0 sqincp x0, p13.s
+25A88DFD sqincp fp, p15.s
+25A88D4A sqincp x10, p10.s

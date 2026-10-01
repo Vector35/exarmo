@@ -1,0 +1,21 @@
+// SM4E_VV4_cryptosha512_2 1100|111|01|1000|0001000|opcode=01|Rn=xxxxx|Rd=xxxxx
+// Sm4eVv4Cryptosha5122: SM4E  <Vd>.4S, <Vn>.4S
+// register fields: Rn, Rd
+CEC084D8 sm4e v24.4s, v6.4s
+CEC08595 sm4e v21.4s, v12.4s
+CEC08708 sm4e v8.4s, v24.4s
+CEC08673 sm4e v19.4s, v19.4s
+CEC085C1 sm4e v1.4s, v14.4s
+CEC087BA sm4e v26.4s, v29.4s
+CEC0869C sm4e v28.4s, v20.4s
+CEC0855A sm4e v26.4s, v10.4s
+CEC08578 sm4e v24.4s, v11.4s
+CEC087A5 sm4e v5.4s, v29.4s
+CEC08452 sm4e v18.4s, v2.4s
+CEC086B0 sm4e v16.4s, v21.4s
+CEC085F1 sm4e v17.4s, v15.4s
+CEC085D4 sm4e v20.4s, v14.4s
+CEC085EC sm4e v12.4s, v15.4s
+CEC0878E sm4e v14.4s, v28.4s
+CEC08400 sm4e v0.4s, v0.4s
+CEC087FF sm4e v31.4s, v31.4s

@@ -1,0 +1,29 @@
+// subr_z_zi_ 001|0010|1|size=xx|1|00|opc=011|11|sh=x|imm8=xxxxxxxx|Zdn=xxxxx
+// SubrZZi: SUBR  <Zdn>.<T>, <Zdn>.<T>, #<imm>{, <shift>}
+// register fields: Zdn
+2523DFB4 subr z20.b, z20.b, #0xfd
+25E3F6EF subr z15.d, z15.d, #0xb7, lsl #0x8
+2523DE41 subr z1.b, z1.b, #0xf2
+2563DA21 subr z1.h, z1.h, #0xd1
+2563ED2A subr z10.h, z10.h, #0x69, lsl #0x8
+2563C1D3 subr z19.h, z19.h, #0xe
+25A3DDA9 subr z9.s, z9.s, #0xed
+25A3C0E6 subr z6.s, z6.s, #0x7
+2563EBF9 subr z25.h, z25.h, #0x5f, lsl #0x8
+2523CFFB subr z27.b, z27.b, #0x7f
+25A3CD40 subr z0.s, z0.s, #0x6a
+2523CA03 subr z3.b, z3.b, #0x50
+2563F0DF subr z31.h, z31.h, #0x86, lsl #0x8
+25E3CB93 subr z19.d, z19.d, #0x5c
+2563D6CA subr z10.h, z10.h, #0xb6
+2563E131 subr z17.h, z17.h, #0x9, lsl #0x8
+2523C014 subr z20.b, z20.b, #0x0
+2523DFF4 subr z20.b, z20.b, #0xff
+2523D014 subr z20.b, z20.b, #0x80
+2523C814 subr z20.b, z20.b, #0x40
+2523C414 subr z20.b, z20.b, #0x20
+2523C214 subr z20.b, z20.b, #0x10
+2523C114 subr z20.b, z20.b, #0x8
+2523C094 subr z20.b, z20.b, #0x4
+2523C054 subr z20.b, z20.b, #0x2
+2523C034 subr z20.b, z20.b, #0x1

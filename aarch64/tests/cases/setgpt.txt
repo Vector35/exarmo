@@ -1,0 +1,29 @@
+// SETGET_SET_memcms sz=xx|011|o0=1|01|op1=11|0|Rs=xxxxx|op2=1001|01|Rn=xxxxx|Rd=xxxxx
+// SetgetSetMemcms: SETGET  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+1DC09400 setget [x0]!, x0!, x0
+1DDF97FF setget [xzr]!, xzr!, xzr
+5DC09400 UNDEFINED
+9DC09400 UNDEFINED
+DDC09400 UNDEFINED
+1DC19443 setget [x3]!, x2!, x1
+
+// SETGMT_SET_memcms sz=xx|011|o0=1|01|op1=11|0|Rs=xxxxx|op2=0101|01|Rn=xxxxx|Rd=xxxxx
+// SetgmtSetMemcms: SETGMT  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+1DC05400 setgmt [x0]!, x0!, x0
+1DDF57FF setgmt [xzr]!, xzr!, xzr
+5DC05400 UNDEFINED
+9DC05400 UNDEFINED
+DDC05400 UNDEFINED
+1DC15443 setgmt [x3]!, x2!, x1
+
+// SETGPT_SET_memcms sz=xx|011|o0=1|01|op1=11|0|Rs=xxxxx|op2=0001|01|Rn=xxxxx|Rd=xxxxx
+// SetgptSetMemcms: SETGPT  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+1DC01400 setgpt [x0]!, x0!, x0
+1DDF17FF setgpt [xzr]!, xzr!, xzr
+5DC01400 UNDEFINED
+9DC01400 UNDEFINED
+DDC01400 UNDEFINED
+1DC11443 setgpt [x3]!, x2!, x1

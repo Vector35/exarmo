@@ -1,0 +1,21 @@
+// BIT_asimdsame_only 0|Q=x|U=1|0|111|0|opc2=10|1|Rm=xxxxx|opcode=00011|1|Rn=xxxxx|Rd=xxxxx
+// BitAsimdsameOnly: BIT  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+6EAC1CF1 bit v17.16b, v7.16b, v12.16b
+2EA61DEB bit v11.8b, v15.8b, v6.8b
+6EA91EAF bit v15.16b, v21.16b, v9.16b
+2EB31E05 bit v5.8b, v16.8b, v19.8b
+6EB21F25 bit v5.16b, v25.16b, v18.16b
+6EB51D13 bit v19.16b, v8.16b, v21.16b
+2EAF1F99 bit v25.8b, v28.8b, v15.8b
+2EAC1E3B bit v27.8b, v17.8b, v12.8b
+6EAD1EF7 bit v23.16b, v23.16b, v13.16b
+2EB31E2E bit v14.8b, v17.8b, v19.8b
+6EB41C2D bit v13.16b, v1.16b, v20.16b
+2EBA1F4A bit v10.8b, v26.8b, v26.8b
+6EB31F70 bit v16.16b, v27.16b, v19.16b
+2EB41CBD bit v29.8b, v5.8b, v20.8b
+2EB91F52 bit v18.8b, v26.8b, v25.8b
+6EA81DCF bit v15.16b, v14.16b, v8.16b
+6EA01C00 bit v0.16b, v0.16b, v0.16b
+6EBF1FFF bit v31.16b, v31.16b, v31.16b

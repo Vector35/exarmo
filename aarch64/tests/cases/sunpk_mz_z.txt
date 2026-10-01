@@ -1,0 +1,23 @@
+// sunpk_mz_z_2 1|10|0000|1|size=xx|1|001|01|111000|Zn=xxxxx|Zd=xxxx|U=0
+// SunpkMzZ2: SUNPK  { <Zd1>.<T>-<Zd2>.<T> }, <Zn>.<Tb>
+// register fields: Zn, Zd
+C165E004 sunpk {z4.h-z5.h}, z0.b
+C165E012 sunpk {z18.h-z19.h}, z0.b
+C165E020 sunpk {z0.h-z1.h}, z1.b
+C1A5E3FE sunpk {z30.s-z31.s}, z31.h
+C1E5E004 sunpk {z4.d-z5.d}, z0.s
+C125E004 UNDEFINED
+C165E000 sunpk {z0.h-z1.h}, z0.b
+
+// sunpk_mz_z_4 1|10|0000|1|size=xx|1|101|01|111000|Zn=xxxx|0|Zd=xxx|0|U=0
+// SunpkMzZ4: SUNPK  { <Zd1>.<T>-<Zd4>.<T> }, { <Zn1>.<Tb>-<Zn2>.<Tb> }
+// register fields: Zn, Zd
+C175E000 sunpk {z0.h-z3.h}, {z0.b-z1.b}
+C175E01C sunpk {z28.h-z31.h}, {z0.b-z1.b}
+C175E054 sunpk {z20.h-z23.h}, {z2.b-z3.b}
+C1B5E3C4 sunpk {z4.s-z7.s}, {z30.h-z31.h}
+C1F5E008 sunpk {z8.d-z11.d}, {z0.s-z1.s}
+C175E00C sunpk {z12.h-z15.h}, {z0.b-z1.b}
+C175E010 sunpk {z16.h-z19.h}, {z0.b-z1.b}
+C175E018 sunpk {z24.h-z27.h}, {z0.b-z1.b}
+C135E000 UNDEFINED

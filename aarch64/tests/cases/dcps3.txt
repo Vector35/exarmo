@@ -1,0 +1,36 @@
+// DCPS3_DC_exception 110|101|00|opc=101|imm16=xxxxxxxxxxxxxxxx|op2=000|LL=11
+// Dcps3DcException: DCPS3  {#<imm>}
+D4A4FDA3 dcps3 #0x27ed
+D4AE57E3 dcps3 #0x72bf
+D4A378E3 dcps3 #0x1bc7
+D4B64B43 dcps3 #0xb25a
+D4A9B943 dcps3 #0x4dca
+D4ACFC03 dcps3 #0x67e0
+D4A07D03 dcps3 #0x3e8
+D4B92643 dcps3 #0xc932
+D4B5E283 dcps3 #0xaf14
+D4BDE6C3 dcps3 #0xef36
+D4AE4343 dcps3 #0x721a
+D4BD9383 dcps3 #0xec9c
+D4A8E423 dcps3 #0x4721
+D4BA1CC3 dcps3 #0xd0e6
+D4B8ED43 dcps3 #0xc76a
+D4AF88E3 dcps3 #0x7c47
+D4A00003 dcps3
+D4BFFFE3 dcps3 #0xffff
+D4B00003 dcps3 #0x8000
+D4A80003 dcps3 #0x4000
+D4A40003 dcps3 #0x2000
+D4A20003 dcps3 #0x1000
+D4A10003 dcps3 #0x800
+D4A08003 dcps3 #0x400
+D4A04003 dcps3 #0x200
+D4A02003 dcps3 #0x100
+D4A01003 dcps3 #0x80
+D4A00803 dcps3 #0x40
+D4A00403 dcps3 #0x20
+D4A00203 dcps3 #0x10
+D4A00103 dcps3 #0x8
+D4A00083 dcps3 #0x4
+D4A00043 dcps3 #0x2
+D4A00023 dcps3 #0x1

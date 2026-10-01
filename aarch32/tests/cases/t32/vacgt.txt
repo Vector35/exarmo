@@ -1,0 +1,46 @@
+// VACGT_T1_D 111|U=1|11110|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1110|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VacgtT1D: VACGT{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff2e7e19 vacgt.f32 d7, d14, d9
+ff797e31 vacgt.f16 d23, d9, d17
+ff66ceb9 vacgt.f32 d28, d22, d25
+ff7c1e93 vacgt.f16 d17, d28, d3
+ff30fe15 vacgt.f16 d15, d0, d5
+ff358e93 vacgt.f16 d8, d21, d3
+ff7a0e9d vacgt.f16 d16, d26, d13
+ff7a3eb5 vacgt.f16 d19, d26, d21
+FF2F4E10 vacgt.f32 d4, d15, d0
+FF282E1F vacgt.f32 d2, d8, d15
+FF240E18 vacgt.f32 d0, d4, d8
+FF62FE14 vacgt.f32 d31, d2, d4
+FF217E12 vacgt.f32 d7, d1, d2
+FF207E90 vacgt.f32 d7, d16, d0
+FF2F7E1F vacgt.f32 d7, d15, d15
+FF2F7EB0 vacgt.f32 d7, d31, d16
+FF2E7E3F vacgt.f32 d7, d14, d31
+FF2E7E19 [ne] vacgtne.f32 d7, d14, d9
+
+// VACGT_T1_Q 111|U=1|11110|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1110|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VacgtT1Q: VACGT{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff68ee54 vacgt.f32 q15, q4, q2
+ff6ace5a vacgt.f32 q14, q5, q5
+ff302e7e vacgt.f16 q1, q0, q15
+ff340efe vacgt.f16 q0, q10, q15
+ff6a2e50 vacgt.f32 q9, q5, q0
+ff288efe vacgt.f32 q4, q12, q15
+ff7c2ed6 vacgt.f16 q9, q14, q3
+ff34aef2 vacgt.f16 q5, q10, q9
+FF6FFE5F UNDEFINED
+FF624E58 vacgt.f32 q10, q1, q4
+FF611E51 UNDEFINED
+FF2FFE5F UNDEFINED
+FF600EF0 vacgt.f32 q8, q8, q8
+FF6FFEFF UNDEFINED
+FF68EE54 [ne] vacgtne.f32 q15, q4, q2

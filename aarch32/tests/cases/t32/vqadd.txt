@@ -1,0 +1,50 @@
+// VQADD_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0000|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VqaddT1D: VQADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff353014 vqadd.u64 d3, d5, d4
+ef753095 vqadd.s64 d19, d21, d5
+ef378017 vqadd.s64 d8, d7, d7
+ef3bf0b9 vqadd.s64 d15, d27, d25
+ef60c09d vqadd.s32 d28, d16, d13
+ef38c016 vqadd.s64 d12, d8, d6
+ef56f01a vqadd.s16 d31, d6, d10
+ff79601e vqadd.u64 d22, d9, d14
+FF0F0010 vqadd.u8 d0, d15, d0
+EF04401F vqadd.s8 d4, d4, d15
+FF022018 vqadd.u8 d2, d2, d8
+FF111012 vqadd.u16 d1, d1, d2
+FF200011 vqadd.u32 d0, d0, d1
+FF7F0010 vqadd.u64 d16, d15, d0
+FF3F309F vqadd.u64 d3, d31, d15
+FF353030 vqadd.u64 d3, d5, d16
+FF35303F vqadd.u64 d3, d5, d31
+FF353014 [ne] vqaddne.u64 d3, d5, d4
+
+// VQADD_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0000|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VqaddT1Q: VQADD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef6e00d2 vqadd.s32 q8, q15, q1
+ef28c0f8 vqadd.s32 q6, q12, q12
+ef38c0da vqadd.s64 q6, q12, q5
+ff40c0de vqadd.u8 q14, q8, q7
+ef58405e vqadd.s16 q10, q4, q7
+ef28e07e vqadd.s32 q7, q4, q15
+ef24e0f6 vqadd.s32 q7, q10, q11
+ef58607a vqadd.s16 q11, q4, q13
+EF6FF0DF UNDEFINED
+EF4280D0 vqadd.s8 q12, q9, q0
+EF6110D1 UNDEFINED
+FF502054 vqadd.u16 q9, q0, q2
+FF2E00D0 vqadd.u32 q0, q15, q0
+FF7E00F0 vqadd.u64 q8, q15, q8
+EF2FF05F UNDEFINED
+EF6FF0FF UNDEFINED
+EF6E00D2 [ne] vqaddne.s32 q8, q15, q1

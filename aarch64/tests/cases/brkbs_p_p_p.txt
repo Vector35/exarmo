@@ -1,0 +1,22 @@
+// brkbs_p_p_p_z 001|0010|1|B=1|S=1|01|0000|01|Pg=xxxx|0|Pn=xxxx|M=0|Pd=xxxx
+// BrkbsPPPZ: BRKBS  <Pd>.B, <Pg>/Z, <Pn>.B
+// register fields: Pg, Pn, Pd
+25D070E6 brkbs p6.b, p12/z, p7.b
+25D05CAD brkbs p13.b, p7/z, p5.b
+25D04CE5 brkbs p5.b, p3/z, p7.b
+25D049A4 brkbs p4.b, p2/z, p13.b
+25D0682A brkbs p10.b, p10/z, p1.b
+25D07D44 brkbs p4.b, p15/z, p10.b
+25D0716A brkbs p10.b, p12/z, p11.b
+25D07526 brkbs p6.b, p13/z, p9.b
+25D0416C brkbs p12.b, p0/z, p11.b
+25D06581 brkbs p1.b, p9/z, p12.b
+25D04183 brkbs p3.b, p0/z, p12.b
+25D0588C brkbs p12.b, p6/z, p4.b
+25D06C8E brkbs p14.b, p11/z, p4.b
+25D04C2F brkbs p15.b, p3/z, p1.b
+25D045C8 brkbs p8.b, p1/z, p14.b
+25D07882 brkbs p2.b, p14/z, p4.b
+25D07000 brkbs p0.b, p12/z, p0.b
+25D071E6 brkbs p6.b, p12/z, p15.b
+25D07186 brkbs p6.b, p12/z, p12.b

@@ -1,0 +1,24 @@
+// addvl_r_ri_ 000|0010|0|0|op=0|1|Rn=xxxxx|0101|0|imm6=xxxxxx|Rd=xxxxx
+// AddvlRRi: ADDVL  <Xd|SP>, <Xn|SP>, #<imm>
+// register fields: Rn, Rd
+042D508F addvl x15, x13, #0x4
+04335269 addvl x9, x19, #0x13
+042756A8 addvl x8, x7, #-11
+042054C3 addvl x3, x0, #-26
+043055FF addvl sp, x16, #-17
+042C5475 addvl x21, x12, #-29
+043A51C3 addvl x3, x26, #0xe
+043C5035 addvl x21, x28, #0x1
+043F564E addvl x14, sp, #-14
+0420561B addvl x27, x0, #-16
+04385768 addvl x8, x24, #-5
+04325514 addvl x20, x18, #-24
+042053F6 addvl x22, x0, #0x1f
+043B504E addvl x14, x27, #0x2
+042857CD addvl x13, x8, #-2
+042A5214 addvl x20, x10, #0x10
+042D5000 addvl x0, x13, #0x0
+042D57EF addvl x15, x13, #-0x1
+042D508D addvl x13, x13, #0x4
+042D540F addvl x15, x13, #-0x20
+042D510F addvl x15, x13, #0x8

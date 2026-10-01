@@ -1,0 +1,57 @@
+// VRSRA_T1_D 111|U=x|11111|D=x|imm6=xxxxxx|Vd=xxxx|opc=0011|L=x|Q=0|M=x|1|Vm=xxxx
+// VrsraT1D: VRSRA{<c>}{<q>}.<type><size>  {<Dd>, }<Dm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+efefb337 vrsra.s32 d27, d23, #17
+efd8c395 vrsra.s64 d28, d5, #40
+fff7c337 vrsra.u32 d28, d23, #9
+efee8318 vrsra.s32 d24, d8, #18
+ffa5031b vrsra.u32 d0, d11, #27
+efb83399 vrsra.s64 d3, d9, #8
+ef8dc3b4 vrsra.s64 d12, d20, #51
+ffba7337 vrsra.u32 d7, d23, #6
+EFC0F390 vrsra.s64 d31, d0, #0x40
+EFFF433F vrsra.s32 d20, d31, #0x1
+EFE02332 vrsra.s32 d18, d18, #0x20
+EFD01331 vrsra.s16 d17, d17, #0x10
+EF88F310 vrsra.s8 d15, d0, #0x8
+EFC4039F vrsra.s64 d16, d15, #0x3c
+EFC2F3B0 vrsra.s64 d31, d16, #0x3e
+EFC1C3BF vrsra.s64 d28, d31, #0x3f
+EFC0B3B7 vrsra.s64 d27, d23, #0x40
+EFFFB337 vrsra.s32 d27, d23, #0x1
+EFFFB3B7 vrsra.s64 d27, d23, #0x1
+EFEFB337 [ne] vrsrane.s32 d27, d23, #0x11
+
+// VRSRA_T1_Q 111|U=x|11111|D=x|imm6=xxxxxx|Vd=xxxx|opc=0011|L=x|Q=1|M=x|1|Vm=xxxx
+// VrsraT1Q: VRSRA{<c>}{<q>}.<type><size>  {<Qd>, }<Qm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+efd6e3d2 vrsra.s64 q15, q1, #42
+ffcec37e vrsra.u8 q14, q15, #2
+ef8de37e vrsra.s8 q7, q15, #3
+efb5837c vrsra.s32 q4, q14, #11
+ff9a63f0 vrsra.u64 q3, q8, #38
+efb123d0 vrsra.s64 q1, q0, #15
+ff8b63d0 vrsra.u64 q3, q0, #53
+efdbc3fc vrsra.s64 q14, q14, #37
+EFC003D8 vrsra.s64 q8, q4, #0x40
+EFFF43D4 vrsra.s64 q10, q2, #0x1
+EFA003D2 vrsra.s64 q0, q1, #0x20
+EFD003D2 vrsra.s64 q8, q1, #0x30
+EFC8E3D2 vrsra.s64 q15, q1, #0x38
+EFC4E3D2 vrsra.s64 q15, q1, #0x3c
+EFC2E3D2 vrsra.s64 q15, q1, #0x3e
+EFC1E3D2 vrsra.s64 q15, q1, #0x3f
+EFC0F35F UNDEFINED
+EFD613D1 UNDEFINED
+EFC0E3D2 vrsra.s64 q15, q1, #0x40
+EFFFE352 vrsra.s32 q15, q1, #0x1
+EFFFE3D2 vrsra.s64 q15, q1, #0x1
+EF96F3DF UNDEFINED
+EFD6F3FF UNDEFINED
+EFD6E3D2 [ne] vrsrane.s64 q15, q1, #0x2a

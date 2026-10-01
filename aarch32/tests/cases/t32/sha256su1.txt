@@ -1,0 +1,19 @@
+// SHA256SU1_T1 111|U=1|11|11|0|D=x|size=10|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=x|M=x|o1=0|Vm=xxxx
+// Sha256su1T1: SHA256SU1.32  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+ff288c6a sha256su1.32 q4, q4, q13
+ff266c60 sha256su1.32 q3, q3, q8
+ff202ce4 sha256su1.32 q1, q8, q10
+ff620cce sha256su1.32 q8, q9, q7
+ff280c66 sha256su1.32 q0, q4, q11
+ff224ce8 sha256su1.32 q2, q9, q12
+ff2eacc2 sha256su1.32 q5, q15, q1
+ff668ce2 sha256su1.32 q12, q11, q9
+FF2FFC2F UNDEFINED
+FF248C40 sha256su1.32 q4, q2, q0
+FF211C61 UNDEFINED
+FF2FFC4F UNDEFINED
+FF6FFCEF UNDEFINED
+FF208C6A sha256su1.32 q4, q0, q13

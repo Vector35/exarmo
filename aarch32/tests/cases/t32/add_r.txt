@@ -1,0 +1,165 @@
+// ADD_r_T1 00|0|11|0|S=0|Rm=xxx|Rn=xxx|Rd=xxx
+// AddRT1: ADD<c>{<q>}  <Rd>, <Rn>, <Rm>
+// T1bAddRT1: ADDS{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rm, Rn, Rd
+// IT state read: condition, in block
+1800 adds r0, r0, r0
+1801 adds r1, r0, r0
+1802 adds r2, r0, r0
+1803 adds r3, r0, r0
+1804 adds r4, r0, r0
+1805 adds r5, r0, r0
+1806 adds r6, r0, r0
+1807 adds r7, r0, r0
+1848 adds r0, r1, r1
+1890 adds r0, r2, r2
+18D8 adds r0, r3, r3
+1920 adds r0, r4, r4
+1968 adds r0, r5, r5
+19B0 adds r0, r6, r6
+19F8 adds r0, r7, r7
+1800 [ne] addne r0, r0, r0
+1853 adds r3, r2, r1
+
+// ADD_r_T2 010001|op=00|DN=x|Rm=xxxx|Rdn=xxx
+// AddRT2: ADD{<c>}{<q>}  {<Rdn>, }<Rdn>, <Rm>
+// read together by <Rdn>: DN, Rdn
+// register fields: Rm
+// IT state read: condition, last in block
+4400 add r0, r0
+4401 add r1, r0
+4402 add r2, r0
+4403 add r3, r0
+4404 add r4, r0
+4405 add r5, r0
+4406 add r6, r0
+4407 add r7, r0
+44F8 add r8, pc
+4480 add r8, r0
+4481 add r9, r0
+4482 add r10, r0
+4483 add r11, r0
+4484 add r12, r0
+4486 add lr, r0
+4487 add pc, r0
+4400 [ne] addne r0, r0
+4400 [ne last] addne r0, r0
+
+// ADD_r_T3 1110101|op1=1000|S=0|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// AddRT3: ADD{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EB000000 add r0, r0, r0
+EB0F9F5F add pc, pc, pc, lsr #0x5 (unpredictable)
+EB0020A0 add r0, r0, r0, asr #0xa
+EB0030F0 add r0, r0, r0, ror #0xf
+EB004000 add r0, r0, r0, lsl #0x10
+EB005000 add r0, r0, r0, lsl #0x14
+EB006000 add r0, r0, r0, lsl #0x18
+EB007000 add r0, r0, r0, lsl #0x1c
+EB000040 add r0, r0, r0, lsl #0x1
+EB000080 add r0, r0, r0, lsl #0x2
+EB0000C0 add r0, r0, r0, lsl #0x3
+EB001000 add r0, r0, r0, lsl #0x4
+EB001040 add r0, r0, r0, lsl #0x5
+EB001080 add r0, r0, r0, lsl #0x6
+EB0010C0 add r0, r0, r0, lsl #0x7
+EB002000 add r0, r0, r0, lsl #0x8
+EB002040 add r0, r0, r0, lsl #0x9
+EB002080 add r0, r0, r0, lsl #0xa
+EB0020C0 add r0, r0, r0, lsl #0xb
+EB003000 add r0, r0, r0, lsl #0xc
+EB003040 add r0, r0, r0, lsl #0xd
+EB003080 add r0, r0, r0, lsl #0xe
+EB0030C0 add r0, r0, r0, lsl #0xf
+EB004040 add r0, r0, r0, lsl #0x11
+EB004080 add r0, r0, r0, lsl #0x12
+EB0040C0 add r0, r0, r0, lsl #0x13
+EB005040 add r0, r0, r0, lsl #0x15
+EB005080 add r0, r0, r0, lsl #0x16
+EB0050C0 add r0, r0, r0, lsl #0x17
+EB006040 add r0, r0, r0, lsl #0x19
+EB006080 add r0, r0, r0, lsl #0x1a
+EB0060C0 add r0, r0, r0, lsl #0x1b
+EB007040 add r0, r0, r0, lsl #0x1d
+EB007080 add r0, r0, r0, lsl #0x1e
+EB0070C0 add r0, r0, r0, lsl #0x1f
+EB000000 [ne] addne r0, r0, r0
+EB010203 add r2, r1, r3
+
+// ADD_r_T3_RRX 1110101|op1=1000|S=0|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// AddRT3Rrx: ADD{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+eb098f34 add pc, r9, r4, rrx (unpredictable)
+eb0e0331 add r3, lr, r1, rrx
+eb020832 add r8, r2, r2, rrx
+eb0a0f3d add pc, r10, sp, rrx (unpredictable)
+eb0e8b39 add r11, lr, r9, rrx (unpredictable)
+eb02073b add r7, r2, r11, rrx
+eb090f3f add pc, r9, pc, rrx (unpredictable)
+eb070130 add r1, r7, r0, rrx
+EB008034 add r0, r0, r4, rrx (unpredictable)
+EB0F8F34 add pc, pc, r4, rrx (unpredictable)
+EB098934 add r9, r9, r4, rrx (unpredictable)
+EB098F34 [ne] addne pc, r9, r4, rrx (unpredictable)
+
+// ADDS_r_T3 1110101|op1=1000|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// AddsRT3: ADDS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EB100000 adds r0, r0, r0
+EB1F905F adds r0, pc, pc, lsr #0x5 (unpredictable)
+EB1020A0 adds r0, r0, r0, asr #0xa
+EB1030F0 adds r0, r0, r0, ror #0xf
+EB104000 adds r0, r0, r0, lsl #0x10
+EB105000 adds r0, r0, r0, lsl #0x14
+EB106000 adds r0, r0, r0, lsl #0x18
+EB107000 adds r0, r0, r0, lsl #0x1c
+EB100040 adds r0, r0, r0, lsl #0x1
+EB100080 adds r0, r0, r0, lsl #0x2
+EB1000C0 adds r0, r0, r0, lsl #0x3
+EB101000 adds r0, r0, r0, lsl #0x4
+EB101040 adds r0, r0, r0, lsl #0x5
+EB101080 adds r0, r0, r0, lsl #0x6
+EB1010C0 adds r0, r0, r0, lsl #0x7
+EB102000 adds r0, r0, r0, lsl #0x8
+EB102040 adds r0, r0, r0, lsl #0x9
+EB102080 adds r0, r0, r0, lsl #0xa
+EB1020C0 adds r0, r0, r0, lsl #0xb
+EB103000 adds r0, r0, r0, lsl #0xc
+EB103040 adds r0, r0, r0, lsl #0xd
+EB103080 adds r0, r0, r0, lsl #0xe
+EB1030C0 adds r0, r0, r0, lsl #0xf
+EB104040 adds r0, r0, r0, lsl #0x11
+EB104080 adds r0, r0, r0, lsl #0x12
+EB1040C0 adds r0, r0, r0, lsl #0x13
+EB105040 adds r0, r0, r0, lsl #0x15
+EB105080 adds r0, r0, r0, lsl #0x16
+EB1050C0 adds r0, r0, r0, lsl #0x17
+EB106040 adds r0, r0, r0, lsl #0x19
+EB106080 adds r0, r0, r0, lsl #0x1a
+EB1060C0 adds r0, r0, r0, lsl #0x1b
+EB107040 adds r0, r0, r0, lsl #0x1d
+EB107080 adds r0, r0, r0, lsl #0x1e
+EB1070C0 adds r0, r0, r0, lsl #0x1f
+EB100000 [ne] addsne r0, r0, r0
+EB110203 adds r2, r1, r3
+
+// ADDS_r_T3_RRX 1110101|op1=1000|S=1|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// AddsRT3Rrx: ADDS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+eb138634 adds r6, r3, r4, rrx (unpredictable)
+eb1b8330 adds r3, r11, r0, rrx (unpredictable)
+eb180931 adds r9, r8, r1, rrx
+eb148b34 adds r11, r4, r4, rrx (unpredictable)
+eb14063a adds r6, r4, r10, rrx
+eb190731 adds r7, r9, r1, rrx
+eb1f003f adds r0, pc, pc, rrx (unpredictable)
+eb128c35 adds r12, r2, r5, rrx (unpredictable)
+EB108636 adds r6, r0, r6, rrx (unpredictable)
+EB138334 adds r3, r3, r4, rrx (unpredictable)
+EB138634 [ne] addsne r6, r3, r4, rrx (unpredictable)

@@ -1,0 +1,115 @@
+// STRH_i_T1 1000|L=0|imm5=xxxxx|Rn=xxx|Rt=xxx
+// StrhIT1: STRH{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+8000 strh r0, [r0]
+8001 strh r1, [r0]
+8002 strh r2, [r0]
+8003 strh r3, [r0]
+8004 strh r4, [r0]
+8005 strh r5, [r0]
+8006 strh r6, [r0]
+8007 strh r7, [r0]
+87C8 strh r0, [r1, #0x3e]
+8410 strh r0, [r2, #0x20]
+8218 strh r0, [r3, #0x10]
+8120 strh r0, [r4, #0x8]
+80A8 strh r0, [r5, #0x4]
+8070 strh r0, [r6, #0x2]
+8038 strh r0, [r7]
+8000 [ne] strhne r0, [r0]
+
+// STRH_i_T2 111|1100|01|size=01|L=0|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// StrhIT2: STRH{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+F8A00000 strh r0, [r0]
+F8AF0000 UNALLOCATED
+F8A0FFFF strh pc, [r0, #0xfff] (unpredictable)
+F8A00800 strh r0, [r0, #0x800]
+F8A00400 strh r0, [r0, #0x400]
+F8A00200 strh r0, [r0, #0x200]
+F8A00100 strh r0, [r0, #0x100]
+F8A00080 strh r0, [r0, #0x80]
+F8A00040 strh r0, [r0, #0x40]
+F8A00020 strh r0, [r0, #0x20]
+F8A00010 strh r0, [r0, #0x10]
+F8A00008 strh r0, [r0, #0x8]
+F8A00004 strh r0, [r0, #0x4]
+F8A00002 strh r0, [r0, #0x2]
+F8A00001 strh r0, [r0, #0x1]
+F8A00000 [ne] strhne r0, [r0]
+
+// STRH_i_T3_offn 111110000|size=01|L=0|Rn=xxxx|Rt=xxxx|1|P=1|U=0|W=0|imm8=xxxxxxxx
+// StrhIT3Offn: STRH{<c>}{<q>}  <Rt>, [<Rn> {, #-<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f8230c79 strh r0, [r3, #-121]
+f82d8cd6 strh r8, [sp, #-214]
+f8263c2d strh r3, [r6, #-45]
+f82d2c6e strh r2, [sp, #-110]
+f8249c0d strh r9, [r4, #-13]
+f82dbca1 strh r11, [sp, #-161]
+f82c7cec strh r7, [r12, #-236]
+f823acfa strh r10, [r3, #-250]
+F820FC00 strh pc, [r0, #-0x0] (unpredictable)
+F82F0C79 UNALLOCATED
+F8233CFF strh r3, [r3, #-0xff]
+F8230C80 strh r0, [r3, #-0x80]
+F8230C40 strh r0, [r3, #-0x40]
+F8230C20 strh r0, [r3, #-0x20]
+F8230C10 strh r0, [r3, #-0x10]
+F8230C08 strh r0, [r3, #-0x8]
+F8230C04 strh r0, [r3, #-0x4]
+F8230C02 strh r0, [r3, #-0x2]
+F8230C01 strh r0, [r3, #-0x1]
+F8230C79 [ne] strhne r0, [r3, #-0x79]
+
+// STRH_i_T3_post 111110000|size=01|L=0|Rn=xxxx|Rt=xxxx|1|P=0|U=x|W=1|imm8=xxxxxxxx
+// StrhIT3Post: STRH{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// register fields: Rn, Rt
+// IT state read: condition
+f82b5b78 strh r5, [r11], #120
+f82d8b10 strh r8, [sp], #16
+f82639fd strh r3, [r6], #-253
+f826d968 strh sp, [r6], #-104
+f820e96e strh lr, [r0], #-110
+f82b39ae strh r3, [r11], #-174
+f827c968 strh r12, [r7], #-104
+f823f997 strh pc, [r3], #-151 (unpredictable)
+F82F5B78 UNALLOCATED
+F82B0B00 strh r0, [r11], #0x0
+F82BBBFF strh r11, [r11], #0xff (unpredictable)
+F82B5B80 strh r5, [r11], #0x80
+F82B5B40 strh r5, [r11], #0x40
+F82B5B20 strh r5, [r11], #0x20
+F82B5B08 strh r5, [r11], #0x8
+F82B5B04 strh r5, [r11], #0x4
+F82B5B02 strh r5, [r11], #0x2
+F82B5B01 strh r5, [r11], #0x1
+F82B5B78 [ne] strhne r5, [r11], #0x78
+
+// STRH_i_T3_pre 111110000|size=01|L=0|Rn=xxxx|Rt=xxxx|1|P=1|U=x|W=1|imm8=xxxxxxxx
+// StrhIT3Pre: STRH{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn, Rt
+// IT state read: condition
+f8289f4f strh r9, [r8, #79]!
+f8280da3 strh r0, [r8, #-163]!
+f82a1f6f strh r1, [r10, #111]!
+f823bf8c strh r11, [r3, #140]!
+f8233d34 strh r3, [r3, #-52]! (unpredictable)
+f82daff3 strh r10, [sp, #243]!
+f82b8f09 strh r8, [r11, #9]!
+f826ef54 strh lr, [r6, #84]!
+F820FF00 strh pc, [r0, #0x0]! (unpredictable)
+F82F9F4F UNALLOCATED
+F8289FFF strh r9, [r8, #0xff]!
+F8289F80 strh r9, [r8, #0x80]!
+F8289F40 strh r9, [r8, #0x40]!
+F8289F20 strh r9, [r8, #0x20]!
+F8289F10 strh r9, [r8, #0x10]!
+F8289F08 strh r9, [r8, #0x8]!
+F8289F04 strh r9, [r8, #0x4]!
+F8289F02 strh r9, [r8, #0x2]!
+F8289F01 strh r9, [r8, #0x1]!
+F8289F4F [ne] strhne r9, [r8, #0x4f]!

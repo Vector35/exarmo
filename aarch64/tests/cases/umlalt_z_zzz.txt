@@ -1,0 +1,16 @@
+// umlalt_z_zzz_ 010|0010|0|size=xx|0|Zm=xxxxx|0|10|S=0|U=1|T=1|Zn=xxxxx|Zda=xxxxx
+// UmlaltZZzz: UMLALT  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+444D4EB3 umlalt z19.h, z21.b, z13.b
+44814FCD umlalt z13.s, z30.h, z1.h
+445A4D1E umlalt z30.h, z8.b, z26.b
+44514F20 umlalt z0.h, z25.b, z17.b
+44984EED umlalt z13.s, z23.h, z24.h
+44504E35 umlalt z21.h, z17.b, z16.b
+44474E85 umlalt z5.h, z20.b, z7.b
+44CF4DA0 umlalt z0.d, z13.s, z15.s
+44404C1F umlalt z31.h, z0.b, z0.b
+445F4FF3 umlalt z19.h, z31.b, z31.b
+440D4EB3 UNDEFINED
+444D4EAD umlalt z13.h, z21.b, z13.b
+444D4EB5 umlalt z21.h, z21.b, z13.b

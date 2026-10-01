@@ -1,0 +1,23 @@
+// LDRBT_T1 111|1100|00|size=00|L=1|Rn=xxxx|Rt=xxxx|1110|imm8=xxxxxxxx
+// LdrbtT1: LDRBT{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f8177e3f ldrbt r7, [r7, #63]
+f8190e18 ldrbt r0, [r9, #24]
+f814fea2 ldrbt pc, [r4, #162] (unpredictable)
+f810be64 ldrbt r11, [r0, #100]
+f8125e16 ldrbt r5, [r2, #22]
+f817cef9 ldrbt r12, [r7, #249]
+f8109e51 ldrbt r9, [r0, #81]
+f81b8e2d ldrbt r8, [r11, #45]
+F8177E00 ldrbt r7, [r7]
+F8177EFF ldrbt r7, [r7, #0xff]
+F8177E80 ldrbt r7, [r7, #0x80]
+F8177E40 ldrbt r7, [r7, #0x40]
+F8177E20 ldrbt r7, [r7, #0x20]
+F8177E10 ldrbt r7, [r7, #0x10]
+F8177E08 ldrbt r7, [r7, #0x8]
+F8177E04 ldrbt r7, [r7, #0x4]
+F8177E02 ldrbt r7, [r7, #0x2]
+F8177E01 ldrbt r7, [r7, #0x1]
+F8177E3F [ne] ldrbtne r7, [r7, #0x3f]

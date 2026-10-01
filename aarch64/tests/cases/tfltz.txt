@@ -1,0 +1,15 @@
+// TFLTZ b5=x|11|101|10|b40=xxxxx|0000000|imm2=xx|1001|op=0|Rt=xxxxx
+// Tfltz: TFLTZ  #<reason>, <t>, #<imm>
+// read together by <t>: b5, Rt
+// read together by <imm>: b5, b40
+// register fields: Rt
+76000240 tfltz #0x0, w0, #0x0
+F6F8065F tfltz #0x1, xzr, #0x3f
+76800A40 tfltz #0x2, w0, #0x10
+76400E5F tfltz #0x3, wzr, #0x8
+F6200240 tfltz #0x0, x0, #0x24
+F610025F tfltz #0x0, xzr, #0x22
+76080240 tfltz #0x0, w0, #0x1
+76F80240 tfltz #0x0, w0, #0x1f
+F6000240 tfltz #0x0, x0, #0x20
+F6F80240 tfltz #0x0, x0, #0x3f

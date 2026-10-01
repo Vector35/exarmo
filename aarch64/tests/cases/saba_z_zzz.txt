@@ -1,0 +1,15 @@
+// saba_z_zzz_ 010|0010|1|size=xx|0|Zm=xxxxx|11|111|U=0|Zn=xxxxx|Zda=xxxxx
+// SabaZZzz: SABA  <Zda>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zda
+4595FBBA saba z26.s, z29.s, z21.s
+4541FB1B saba z27.h, z24.h, z1.h
+4599FBC6 saba z6.s, z30.s, z25.s
+455FF894 saba z20.h, z4.h, z31.h
+450DFB40 saba z0.b, z26.b, z13.b
+459EF84C saba z12.s, z2.s, z30.s
+4596FB31 saba z17.s, z25.s, z22.s
+45C8F8B7 saba z23.d, z5.d, z8.d
+4580F81F saba z31.s, z0.s, z0.s
+4595FBFA saba z26.s, z31.s, z21.s
+4595FBB5 saba z21.s, z29.s, z21.s
+4595FBBD saba z29.s, z29.s, z21.s

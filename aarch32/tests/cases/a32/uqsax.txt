@@ -1,0 +1,19 @@
+// UQSAX_A1 cond=xxxx|011|00|op1=110|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=10|1|Rm=xxxx
+// UqsaxA1: UQSAX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+a66da555 uqsaxge r10, sp, r5 (unpredictable)
+8662ed5d uqsaxhi lr, r2, sp (unpredictable)
+7668d85e uqsaxvc sp, r8, lr (unpredictable)
+a66e5f57 uqsaxge r5, lr, r7
+96674f52 uqsaxls r4, r7, r2
+16697a58 uqsaxne r7, r9, r8 (unpredictable)
+966fce53 uqsaxls r12, pc, r3 (unpredictable)
+56652b5f uqsaxpl r2, r5, pc (unpredictable)
+// Binary Ninja's tests
+e6631f57 uqsax r1, r3, r7
+e6663f52 uqsax r3, r6, r2
+06600050 uqsaxeq r0, r0, r0 (unpredictable)
+F66DA555 UNALLOCATED
+466DF45D uqsaxmi pc, sp, sp (unpredictable)
+266DD255 uqsaxcs sp, sp, r5 (unpredictable)
+A66DA15A uqsaxge r10, sp, r10 (unpredictable)

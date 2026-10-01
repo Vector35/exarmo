@@ -1,0 +1,21 @@
+// frsqrte_z_z_ 011|0010|1|size=xx|001|11|op=1|0011|00|Zn=xxxxx|Zd=xxxxx
+// FrsqrteZZ: FRSQRTE  <Zd>.<T>, <Zn>.<T>
+// register fields: Zn, Zd
+658F3004 frsqrte z4.s, z0.s
+654F31F8 frsqrte z24.h, z15.h
+654F324D frsqrte z13.h, z18.h
+65CF318A frsqrte z10.d, z12.d
+658F315F frsqrte z31.s, z10.s
+654F3301 frsqrte z1.h, z24.h
+658F32B4 frsqrte z20.s, z21.s
+658F308D frsqrte z13.s, z4.s
+658F33F9 frsqrte z25.s, z31.s
+658F338C frsqrte z12.s, z28.s
+654F32CB frsqrte z11.h, z22.h
+654F3120 frsqrte z0.h, z9.h
+654F3257 frsqrte z23.h, z18.h
+658F3036 frsqrte z22.s, z1.s
+65CF31E4 frsqrte z4.d, z15.d
+658F304E frsqrte z14.s, z2.s
+650F3004 UNDEFINED
+658F3000 frsqrte z0.s, z0.s

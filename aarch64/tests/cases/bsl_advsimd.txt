@@ -1,0 +1,22 @@
+// BSL_asimdsame_only 0|Q=x|U=1|0|111|0|opc2=01|1|Rm=xxxxx|opcode=00011|1|Rn=xxxxx|Rd=xxxxx
+// BslAsimdsameOnly: BSL  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+2E681D2E bsl v14.8b, v9.8b, v8.8b
+6E691ECA bsl v10.16b, v22.16b, v9.16b
+6E7B1E2C bsl v12.16b, v17.16b, v27.16b
+6E621C54 bsl v20.16b, v2.16b, v2.16b
+2E6F1FAF bsl v15.8b, v29.8b, v15.8b
+6E631D70 bsl v16.16b, v11.16b, v3.16b
+2E771E43 bsl v3.8b, v18.8b, v23.8b
+6E741E95 bsl v21.16b, v20.16b, v20.16b
+2E791EA1 bsl v1.8b, v21.8b, v25.8b
+2E751DCD bsl v13.8b, v14.8b, v21.8b
+6E721EB4 bsl v20.16b, v21.16b, v18.16b
+6E7F1FA5 bsl v5.16b, v29.16b, v31.16b
+6E7F1C01 bsl v1.16b, v0.16b, v31.16b
+2E7E1EF3 bsl v19.8b, v23.8b, v30.8b
+6E6F1F82 bsl v2.16b, v28.16b, v15.16b
+6E601D37 bsl v23.16b, v9.16b, v0.16b
+2E681FE0 bsl v0.8b, v31.8b, v8.8b
+2E681D3F bsl v31.8b, v9.8b, v8.8b
+2E681D29 bsl v9.8b, v9.8b, v8.8b

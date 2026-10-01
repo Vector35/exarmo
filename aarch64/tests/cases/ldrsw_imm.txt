@@ -1,0 +1,96 @@
+// LDRSW_64_ldst_immpost size=10|11|1|VR=0|0|0|opc=10|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Ldrsw64LdstImmpost: LDRSW  <Xt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+B88FA7A8 ldrsw x8, [fp], #0xfa
+B88D17DF ldrsw xzr, [lr], #0xd1
+B8891798 ldrsw x24, [x28], #0x91
+B89A4684 ldrsw x4, [x20], #-0x5c
+B88F26E3 ldrsw x3, [x23], #0xf2
+B89B9693 ldrsw x19, [x20], #-0x47
+B8890518 ldrsw x24, [x8], #0x90
+B89105B0 ldrsw x16, [x13], #-0xf0
+B88D8573 ldrsw x19, [x11], #0xd8
+B88D951F ldrsw xzr, [x8], #0xd9
+B88C07AC ldrsw x12, [fp], #0xc0
+B899E57A ldrsw x26, [x11], #-0x62
+B89EE549 ldrsw x9, [x10], #-0x12
+B883C446 ldrsw x6, [x2], #0x3c
+B89A059D ldrsw fp, [x12], #-0x60
+B89B67AC ldrsw x12, [fp], #-0x4a
+B8800400 ldrsw x0, [x0], #0x0 (unpredictable)
+B89FF7E8 ldrsw x8, [sp], #-0x1
+B89007A8 ldrsw x8, [fp], #-0x100
+B88807A8 ldrsw x8, [fp], #0x80
+B88407A8 ldrsw x8, [fp], #0x40
+B88207A8 ldrsw x8, [fp], #0x20
+B88107A8 ldrsw x8, [fp], #0x10
+B88087A8 ldrsw x8, [fp], #0x8
+B88047A8 ldrsw x8, [fp], #0x4
+B88027A8 ldrsw x8, [fp], #0x2
+B88017A8 ldrsw x8, [fp], #0x1
+
+// LDRSW_64_ldst_immpre size=10|11|1|VR=0|0|0|opc=10|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Ldrsw64LdstImmpre: LDRSW  <Xt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+B8984D99 ldrsw x25, [x12, #-0x7c]!
+B898EE7E ldrsw lr, [x19, #-0x72]!
+B8809F4B ldrsw x11, [x26, #0x9]!
+B8819FC5 ldrsw x5, [lr, #0x19]!
+B89A8D8B ldrsw x11, [x12, #-0x58]!
+B89B9C51 ldrsw x17, [x2, #-0x47]!
+B8865FD1 ldrsw x17, [lr, #0x65]!
+B89D1E6B ldrsw x11, [x19, #-0x2f]!
+B8837CCA ldrsw x10, [x6, #0x37]!
+B892EF2E ldrsw x14, [x25, #-0xd2]!
+B893DEA3 ldrsw x3, [x21, #-0xc3]!
+B8859DB2 ldrsw x18, [x13, #0x59]!
+B8931DC9 ldrsw x9, [x14, #-0xcf]!
+B8874D64 ldrsw x4, [x11, #0x74]!
+B89F6DD5 ldrsw x21, [x14, #-0xa]!
+B8906C85 ldrsw x5, [x4, #-0xfa]!
+B8800C00 ldrsw x0, [x0, #0x0]! (unpredictable)
+B89FFFFF ldrsw xzr, [sp, #-0x1]!
+B8900D99 ldrsw x25, [x12, #-0x100]!
+B8880D99 ldrsw x25, [x12, #0x80]!
+B8840D99 ldrsw x25, [x12, #0x40]!
+B8820D99 ldrsw x25, [x12, #0x20]!
+B8810D99 ldrsw x25, [x12, #0x10]!
+B8808D99 ldrsw x25, [x12, #0x8]!
+B8804D99 ldrsw x25, [x12, #0x4]!
+B8802D99 ldrsw x25, [x12, #0x2]!
+B8801D99 ldrsw x25, [x12, #0x1]!
+
+// LDRSW_64_ldst_pos size=10|11|1|VR=0|0|1|opc=10|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldrsw64LdstPos: LDRSW  <Xt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+B9934DB2 ldrsw x18, [x13, #0x134c]
+B9883CE2 ldrsw x2, [x7, #0x83c]
+B9AC18BC ldrsw x28, [x5, #0x2c18]
+B9BC42D7 ldrsw x23, [x22, #0x3c40]
+B9AF7A1D ldrsw fp, [x16, #0x2f78]
+B983B846 ldrsw x6, [x2, #0x3b8]
+B9B1317F ldrsw xzr, [x11, #0x3130]
+B9A37A87 ldrsw x7, [x20, #0x2378]
+B9A79CA2 ldrsw x2, [x5, #0x279c]
+B981F50A ldrsw x10, [x8, #0x1f4]
+B9BC53DD ldrsw fp, [lr, #0x3c50]
+B9A04395 ldrsw x21, [x28, #0x2040]
+B980BFB0 ldrsw x16, [fp, #0xbc]
+B9B2EDA9 ldrsw x9, [x13, #0x32ec]
+B9B6F2C7 ldrsw x7, [x22, #0x36f0]
+B9A20F80 ldrsw x0, [x28, #0x220c]
+B9800012 ldrsw x18, [x0]
+B9BFFFF2 ldrsw x18, [sp, #0x3ffc]
+B9934DAD ldrsw x13, [x13, #0x134c]
+B9A001B2 ldrsw x18, [x13, #0x2000]
+B99001B2 ldrsw x18, [x13, #0x1000]
+B98801B2 ldrsw x18, [x13, #0x800]
+B98401B2 ldrsw x18, [x13, #0x400]
+B98201B2 ldrsw x18, [x13, #0x200]
+B98101B2 ldrsw x18, [x13, #0x100]
+B98081B2 ldrsw x18, [x13, #0x80]
+B98041B2 ldrsw x18, [x13, #0x40]
+B98021B2 ldrsw x18, [x13, #0x20]
+B98011B2 ldrsw x18, [x13, #0x10]
+B98009B2 ldrsw x18, [x13, #0x8]
+B98005B2 ldrsw x18, [x13, #0x4]

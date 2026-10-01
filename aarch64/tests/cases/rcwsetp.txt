@@ -1,0 +1,47 @@
+// RCWSETP_128_memop_128 0|S=0|011001|A=0|R=0|1|Rt2=xxxxx|o3=1|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsetp128Memop128: RCWSETP  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+1920B005 rcwsetp x5, x0, [x0]
+1920B00C rcwsetp x12, x0, [x0]
+1920B013 rcwsetp x19, x0, [x0]
+1920B3E0 rcwsetp x0, x0, [sp] (unpredictable)
+193FB01F UNDEFINED
+1920B000 rcwsetp x0, x0, [x0] (unpredictable)
+1920B3E5 rcwsetp x5, x0, [sp]
+1920B0A5 rcwsetp x5, x0, [x5]
+
+// RCWSETPA_128_memop_128 0|S=0|011001|A=1|R=0|1|Rt2=xxxxx|o3=1|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsetpa128Memop128: RCWSETPA  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19A0B001 rcwsetpa x1, x0, [x0]
+19A0B008 rcwsetpa x8, x0, [x0]
+19A0B00F rcwsetpa x15, x0, [x0]
+19A0B3E0 rcwsetpa x0, x0, [sp] (unpredictable)
+19BFB01F UNDEFINED
+19A0B000 rcwsetpa x0, x0, [x0] (unpredictable)
+19A0B3E1 rcwsetpa x1, x0, [sp]
+19A0B021 rcwsetpa x1, x0, [x1]
+
+// RCWSETPAL_128_memop_128 0|S=0|011001|A=1|R=1|1|Rt2=xxxxx|o3=1|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsetpal128Memop128: RCWSETPAL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19E0B006 rcwsetpal x6, x0, [x0]
+19E0B00D rcwsetpal x13, x0, [x0]
+19E0B014 rcwsetpal x20, x0, [x0]
+19E0B3E0 rcwsetpal x0, x0, [sp] (unpredictable)
+19FFB01F UNDEFINED
+19E0B000 rcwsetpal x0, x0, [x0] (unpredictable)
+19E0B3E6 rcwsetpal x6, x0, [sp]
+19E0B0C6 rcwsetpal x6, x0, [x6]
+
+// RCWSETPL_128_memop_128 0|S=0|011001|A=0|R=1|1|Rt2=xxxxx|o3=1|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsetpl128Memop128: RCWSETPL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+1960B003 rcwsetpl x3, x0, [x0]
+1960B00A rcwsetpl x10, x0, [x0]
+1960B011 rcwsetpl x17, x0, [x0]
+1960B3E0 rcwsetpl x0, x0, [sp] (unpredictable)
+197FB01F UNDEFINED
+1960B000 rcwsetpl x0, x0, [x0] (unpredictable)
+1960B3E3 rcwsetpl x3, x0, [sp]
+1960B063 rcwsetpl x3, x0, [x3]

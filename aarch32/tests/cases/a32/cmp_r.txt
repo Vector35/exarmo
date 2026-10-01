@@ -1,0 +1,50 @@
+// CMP_r_A1 cond=xxxx|00010|opc=10|1|Rn=xxxx|(0)(0)(0)(0)|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// CmpRA1: CMP{<c>}{<q>}  <Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rm
+c1560fa6 cmpgt r6, r6, lsr #31
+5159cf02 cmppl r9, r2, lsl #30 (unpredictable)
+7150b4e9 cmpvc r0, r9, ror #9 (unpredictable)
+0155554e cmpeq r5, lr, asr #10 (unpredictable)
+515bef8e cmppl r11, lr, lsl #31 (unpredictable)
+615ddc6b cmpvs sp, r11, ror #24 (unpredictable)
+115f80a1 cmpne pc, r1, lsr #1 (unpredictable)
+715f2a68 cmpvc pc, r8, ror #20 (unpredictable)
+// Binary Ninja's tests
+e1510006 cmp r1, r6
+e1510028 cmp r1, r8, lsr #32
+e1510506 cmp r1, r6, lsl #10
+e1510526 cmp r1, r6, lsr #10
+e1510546 cmp r1, r6, asr #10
+e1510566 cmp r1, r6, ror #10
+e1520827 cmp r2, r7, lsr #16
+e1530006 cmp r3, r6
+e1540805 cmp r4, r5, lsl #16
+e1550044 cmp r5, r4, asr #32
+e1560843 cmp r6, r3, asr #16
+e1580861 cmp r8, r1, ror #16
+e15d000e cmp sp, lr
+e15d0526 cmp sp, r6, lsr #10
+F1560FA6 UNALLOCATED
+8156F420 cmphi r6, r0, lsr #0x8 (unpredictable)
+4156422F cmpmi r6, pc, lsr #0x4 (unpredictable)
+21561126 cmpcs r6, r6, lsr #0x2 (unpredictable)
+
+// CMP_r_A1_RRX cond=xxxx|00010|opc=10|1|Rn=xxxx|(0)(0)(0)(0)|imm5=00000|stype=11|0|Rm=xxxx
+// CmpRA1Rrx: CMP{<c>}{<q>}  <Rn>, <Rm>, RRX
+// register fields: Rn, Rm
+a1541068 cmpge r4, r8, rrx (unpredictable)
+a154406f cmpge r4, pc, rrx (unpredictable)
+c1532069 cmpgt r3, r9, rrx (unpredictable)
+315a406b cmplo r10, r11, rrx (unpredictable)
+d153106e cmple r3, lr, rrx (unpredictable)
+d158f06a cmple r8, r10, rrx (unpredictable)
+e156b06a cmp r6, r10, rrx (unpredictable)
+115cf06f cmpne r12, pc, rrx (unpredictable)
+// Binary Ninja's tests
+e1510066 cmp r1, r6, rrx
+e1570062 cmp r7, r2, rrx
+01508060 cmpeq r0, r0, rrx (unpredictable)
+F1541068 UNALLOCATED
+815F1068 cmphi pc, r8, rrx (unpredictable)
+41541064 cmpmi r4, r4, rrx (unpredictable)
+21541068 cmpcs r4, r8, rrx (unpredictable)

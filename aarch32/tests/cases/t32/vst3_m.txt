@@ -1,0 +1,60 @@
+// VST3_m_T1_nowb 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=1111
+// Vst3MT1Nowb: VST3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f901159f vst3.32 {d1, d3, d5}, [r1:64]
+f90ef51f vst3.8 {d15, d17, d19}, [lr:64]
+f944b54f vst3.16 {d27, d29, d31}, [r4]
+f90b858f vst3.32 {d8, d10, d12}, [r11]
+f94ff44f UNPREDICTABLE
+f90f845f vst3.16 {d8, d9, d10}, [pc:64] (unpredictable)
+f949a40f vst3.8 {d26, d27, d28}, [r9]
+f949b58f vst3.32 {d27, d29, d31}, [r9]
+F900059F vst3.32 {d0, d2, d4}, [r0:64]
+F901459F vst3.32 {d4, d6, d8}, [r1:64]
+F901259F vst3.32 {d2, d4, d6}, [r1:64]
+F90115EF UNDEFINED
+F90115BF UNDEFINED
+F901159F [ne] vst3ne.32 {d1, d3, d5}, [r1:64]
+
+// VST3_m_T1_posti 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=1101
+// Vst3MT1Posti: VST3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f907744d vst3.16 {d7, d8, d9}, [r7]!
+f949259d vst3.32 {d18, d20, d22}, [r9:64]!
+f944a54d vst3.16 {d26, d28, d30}, [r4]!
+f942259d vst3.32 {d18, d20, d22}, [r2:64]!
+f90a659d vst3.32 {d6, d8, d10}, [r10:64]!
+f900359d vst3.32 {d3, d5, d7}, [r0:64]!
+f94b944d vst3.16 {d25, d26, d27}, [r11]!
+f94fc45d vst3.16 {d28, d29, d30}, [pc:64]! (unpredictable)
+F907040D vst3.8 {d0, d1, d2}, [r7]!
+F907F44D vst3.16 {d15, d16, d17}, [r7]!
+F907844D vst3.16 {d8, d9, d10}, [r7]!
+F907444D vst3.16 {d4, d5, d6}, [r7]!
+F907144D vst3.16 {d1, d2, d3}, [r7]!
+F90774ED UNDEFINED
+F907747D UNDEFINED
+F907744D [ne] vst3ne.16 {d7, d8, d9}, [r7]!
+
+// VST3_m_T1_postr 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=xxxx
+// Vst3MT1Postr: VST3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f9097558 vst3.16 {d7, d9, d11}, [r9:64], r8
+f948659c vst3.32 {d22, d24, d26}, [r8:64], r12
+f94f2598 vst3.32 {d18, d20, d22}, [pc:64], r8 (unpredictable)
+f94dd54c UNPREDICTABLE
+f904d40c vst3.8 {d13, d14, d15}, [r4], r12
+f94cd442 vst3.16 {d29, d30, d31}, [r12], r2
+f9005517 vst3.8 {d5, d7, d9}, [r0:64], r7
+f905e55e vst3.16 {d14, d16, d18}, [r5:64], lr
+F9090550 vst3.16 {d0, d2, d4}, [r9:64], r0
+F909F559 vst3.16 {d15, d17, d19}, [r9:64], r9
+F9098558 vst3.16 {d8, d10, d12}, [r9:64], r8
+F9094558 vst3.16 {d4, d6, d8}, [r9:64], r8
+F9091558 vst3.16 {d1, d3, d5}, [r9:64], r8
+F90975EF UNDEFINED
+F9097578 UNDEFINED
+F9097558 [ne] vst3ne.16 {d7, d9, d11}, [r9:64], r8

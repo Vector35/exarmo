@@ -1,0 +1,43 @@
+// REV16_32_dp_1src sf=0|1|S=0|11010110|opcode2=00000|0000|opc=01|Rn=xxxxx|Rd=xxxxx
+// Rev1632Dp1src: REV16  <Wd>, <Wn>
+// register fields: Rn, Rd
+5AC00459 rev16 w25, w2
+5AC004D9 rev16 w25, w6
+5AC004C0 rev16 w0, w6
+5AC00774 rev16 w20, w27
+5AC00463 rev16 w3, w3
+5AC00530 rev16 w16, w9
+5AC00507 rev16 w7, w8
+5AC0055E rev16 w30, w10
+5AC00589 rev16 w9, w12
+5AC00590 rev16 w16, w12
+5AC006C5 rev16 w5, w22
+5AC00584 rev16 w4, w12
+5AC004B8 rev16 w24, w5
+5AC00504 rev16 w4, w8
+5AC00518 rev16 w24, w8
+5AC00664 rev16 w4, w19
+5AC0041F rev16 wzr, w0
+5AC007F9 rev16 w25, wzr
+
+// REV16_64_dp_1src sf=1|1|S=0|11010110|opcode2=00000|0000|opc=01|Rn=xxxxx|Rd=xxxxx
+// Rev1664Dp1src: REV16  <Xd>, <Xn>
+// register fields: Rn, Rd
+DAC00477 rev16 x23, x3
+DAC0062E rev16 x14, x17
+DAC0046E rev16 x14, x3
+DAC00578 rev16 x24, x11
+DAC005D2 rev16 x18, x14
+DAC00507 rev16 x7, x8
+DAC0070C rev16 x12, x24
+DAC004D1 rev16 x17, x6
+DAC007C6 rev16 x6, lr
+DAC00515 rev16 x21, x8
+DAC00502 rev16 x2, x8
+DAC0078A rev16 x10, x28
+DAC00490 rev16 x16, x4
+DAC0048C rev16 x12, x4
+DAC00485 rev16 x5, x4
+DAC005AA rev16 x10, x13
+DAC00400 rev16 x0, x0
+DAC007FF rev16 xzr, xzr

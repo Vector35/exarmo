@@ -1,0 +1,18 @@
+// AXFLAG_M_pstate 110|101|0100000|op1=000|0100|CRm=(0)(0)(0)(0)|op2=010|Rt=11111
+// AxflagMPstate: AXFLAG
+D5004D5F axflag (unpredictable)
+D500485F axflag (unpredictable)
+D500445F axflag (unpredictable)
+D500435F axflag (unpredictable)
+D5004B5F axflag (unpredictable)
+D5004E5F axflag (unpredictable)
+D5004A5F axflag (unpredictable)
+D500465F axflag (unpredictable)
+D5004C5F axflag (unpredictable)
+D5004F5F axflag (unpredictable)
+D500415F axflag (unpredictable)
+D500495F axflag (unpredictable)
+D500475F axflag (unpredictable)
+D500405F axflag
+D500455F axflag (unpredictable)
+D500425F axflag (unpredictable)

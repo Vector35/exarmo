@@ -1,0 +1,142 @@
+// EOR_r_T1 010000|op=0001|Rm=xxx|Rdn=xxx
+// EorRT1: EOR<c>{<q>}  {<Rdn>, }<Rdn>, <Rm>
+// T1bEorRT1: EORS{<q>}  {<Rdn>, }<Rdn>, <Rm>
+// register fields: Rm, Rdn
+// IT state read: condition, in block
+4040 eors r0, r0
+4041 eors r1, r0
+4042 eors r2, r0
+4043 eors r3, r0
+4044 eors r4, r0
+4045 eors r5, r0
+4046 eors r6, r0
+4047 eors r7, r0
+4048 eors r0, r1
+4050 eors r0, r2
+4058 eors r0, r3
+4060 eors r0, r4
+4068 eors r0, r5
+4070 eors r0, r6
+4078 eors r0, r7
+4040 [ne] eorne r0, r0
+
+// EOR_r_T2 1110101|op1=0100|S=0|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// EorRT2: EOR{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EA800000 eor r0, r0, r0
+EA8F9F5F eor pc, pc, pc, lsr #0x5 (unpredictable)
+EA8020A0 eor r0, r0, r0, asr #0xa
+EA8030F0 eor r0, r0, r0, ror #0xf
+EA804000 eor r0, r0, r0, lsl #0x10
+EA805000 eor r0, r0, r0, lsl #0x14
+EA806000 eor r0, r0, r0, lsl #0x18
+EA807000 eor r0, r0, r0, lsl #0x1c
+EA800040 eor r0, r0, r0, lsl #0x1
+EA800080 eor r0, r0, r0, lsl #0x2
+EA8000C0 eor r0, r0, r0, lsl #0x3
+EA801000 eor r0, r0, r0, lsl #0x4
+EA801040 eor r0, r0, r0, lsl #0x5
+EA801080 eor r0, r0, r0, lsl #0x6
+EA8010C0 eor r0, r0, r0, lsl #0x7
+EA802000 eor r0, r0, r0, lsl #0x8
+EA802040 eor r0, r0, r0, lsl #0x9
+EA802080 eor r0, r0, r0, lsl #0xa
+EA8020C0 eor r0, r0, r0, lsl #0xb
+EA803000 eor r0, r0, r0, lsl #0xc
+EA803040 eor r0, r0, r0, lsl #0xd
+EA803080 eor r0, r0, r0, lsl #0xe
+EA8030C0 eor r0, r0, r0, lsl #0xf
+EA804040 eor r0, r0, r0, lsl #0x11
+EA804080 eor r0, r0, r0, lsl #0x12
+EA8040C0 eor r0, r0, r0, lsl #0x13
+EA805040 eor r0, r0, r0, lsl #0x15
+EA805080 eor r0, r0, r0, lsl #0x16
+EA8050C0 eor r0, r0, r0, lsl #0x17
+EA806040 eor r0, r0, r0, lsl #0x19
+EA806080 eor r0, r0, r0, lsl #0x1a
+EA8060C0 eor r0, r0, r0, lsl #0x1b
+EA807040 eor r0, r0, r0, lsl #0x1d
+EA807080 eor r0, r0, r0, lsl #0x1e
+EA8070C0 eor r0, r0, r0, lsl #0x1f
+EA800000 [ne] eorne r0, r0, r0
+EA810203 eor r2, r1, r3
+
+// EOR_r_T2_RRX 1110101|op1=0100|S=0|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// EorRT2Rrx: EOR{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+ea870533 eor r5, r7, r3, rrx
+ea86073a eor r7, r6, r10, rrx
+ea8f8f35 eor pc, pc, r5, rrx (unpredictable)
+ea880c3a eor r12, r8, r10, rrx
+ea810539 eor r5, r1, r9, rrx
+ea8d0236 eor r2, sp, r6, rrx
+ea85893f eor r9, r5, pc, rrx (unpredictable)
+ea8c0c31 eor r12, r12, r1, rrx
+EA800030 eor r0, r0, r0, rrx
+EA870537 eor r5, r7, r7, rrx
+EA870535 eor r5, r7, r5, rrx
+EA870533 [ne] eorne r5, r7, r3, rrx
+
+// EORS_r_T2 1110101|op1=0100|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// EorsRT2: EORS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EA900000 eors r0, r0, r0
+EA9F905F eors r0, pc, pc, lsr #0x5 (unpredictable)
+EA9020A0 eors r0, r0, r0, asr #0xa
+EA9030F0 eors r0, r0, r0, ror #0xf
+EA904000 eors r0, r0, r0, lsl #0x10
+EA905000 eors r0, r0, r0, lsl #0x14
+EA906000 eors r0, r0, r0, lsl #0x18
+EA907000 eors r0, r0, r0, lsl #0x1c
+EA900040 eors r0, r0, r0, lsl #0x1
+EA900080 eors r0, r0, r0, lsl #0x2
+EA9000C0 eors r0, r0, r0, lsl #0x3
+EA901000 eors r0, r0, r0, lsl #0x4
+EA901040 eors r0, r0, r0, lsl #0x5
+EA901080 eors r0, r0, r0, lsl #0x6
+EA9010C0 eors r0, r0, r0, lsl #0x7
+EA902000 eors r0, r0, r0, lsl #0x8
+EA902040 eors r0, r0, r0, lsl #0x9
+EA902080 eors r0, r0, r0, lsl #0xa
+EA9020C0 eors r0, r0, r0, lsl #0xb
+EA903000 eors r0, r0, r0, lsl #0xc
+EA903040 eors r0, r0, r0, lsl #0xd
+EA903080 eors r0, r0, r0, lsl #0xe
+EA9030C0 eors r0, r0, r0, lsl #0xf
+EA904040 eors r0, r0, r0, lsl #0x11
+EA904080 eors r0, r0, r0, lsl #0x12
+EA9040C0 eors r0, r0, r0, lsl #0x13
+EA905040 eors r0, r0, r0, lsl #0x15
+EA905080 eors r0, r0, r0, lsl #0x16
+EA9050C0 eors r0, r0, r0, lsl #0x17
+EA906040 eors r0, r0, r0, lsl #0x19
+EA906080 eors r0, r0, r0, lsl #0x1a
+EA9060C0 eors r0, r0, r0, lsl #0x1b
+EA907040 eors r0, r0, r0, lsl #0x1d
+EA907080 eors r0, r0, r0, lsl #0x1e
+EA9070C0 eors r0, r0, r0, lsl #0x1f
+EA900000 [ne] eorsne r0, r0, r0
+EA910203 eors r2, r1, r3
+
+// EORS_r_T2_RRX 1110101|op1=0100|S=1|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// EorsRT2Rrx: EORS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+ea998d37 eors sp, r9, r7, rrx (unpredictable)
+ea990835 eors r8, r9, r5, rrx
+ea9e8c37 eors r12, lr, r7, rrx (unpredictable)
+ea920836 eors r8, r2, r6, rrx
+ea9b093d eors r9, r11, sp, rrx
+ea9e893c eors r9, lr, r12, rrx (unpredictable)
+ea920630 eors r6, r2, r0, rrx
+ea9e0137 eors r1, lr, r7, rrx
+EA90803F eors r0, r0, pc, rrx (unpredictable)
+EA9F8D3D eors sp, pc, sp, rrx (unpredictable)
+EA998937 eors r9, r9, r7, rrx (unpredictable)
+EA998D39 eors sp, r9, r9, rrx (unpredictable)
+EA998D37 [ne] eorsne sp, r9, r7, rrx (unpredictable)

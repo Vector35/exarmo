@@ -1,0 +1,97 @@
+// BIC_i_T1 11110|i=x|0|op1=0001|S=0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// BicIT1: BIC{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F0200000 bic r0, r0, #0x0
+F42F1FFF bic pc, pc, #0x1fe000 (unpredictable)
+F0202080 bic r0, r0, #0x80008000
+F0203040 bic r0, r0, #0x40404040
+F0204020 bic r0, r0, #0xa0000000
+F0205010 bic r0, r0, #0x24000000
+F0206008 bic r0, r0, #0x8800000
+F0207004 bic r0, r0, #0x2100000
+F0200002 bic r0, r0, #0x2
+F0200001 bic r0, r0, #0x1
+F02000FF bic r0, r0, #0xff
+F0201000 bic r0, r0, #0x0
+F02010FF bic r0, r0, #0xff00ff
+F0202000 bic r0, r0, #0x0
+F02020FF bic r0, r0, #0xff00ff00
+F0203000 bic r0, r0, #0x0
+F02030FF bic r0, r0, #0xffffffff
+F0204000 bic r0, r0, #0x80000000
+F02040FF bic r0, r0, #0x7f800000
+F0205000 bic r0, r0, #0x20000000
+F02050FF bic r0, r0, #0x1fe00000
+F0206000 bic r0, r0, #0x8000000
+F02060FF bic r0, r0, #0x7f80000
+F0207000 bic r0, r0, #0x2000000
+F02070FF bic r0, r0, #0x1fe0000
+F4200000 bic r0, r0, #0x800000
+F42000FF bic r0, r0, #0x7f8000
+F4201000 bic r0, r0, #0x200000
+F42010FF bic r0, r0, #0x1fe000
+F4202000 bic r0, r0, #0x80000
+F42020FF bic r0, r0, #0x7f800
+F4203000 bic r0, r0, #0x20000
+F42030FF bic r0, r0, #0x1fe00
+F4204000 bic r0, r0, #0x8000
+F42040FF bic r0, r0, #0x7f80
+F4205000 bic r0, r0, #0x2000
+F42050FF bic r0, r0, #0x1fe0
+F4206000 bic r0, r0, #0x800
+F42060FF bic r0, r0, #0x7f8
+F4207000 bic r0, r0, #0x200
+F42070FF bic r0, r0, #0x1fe
+F0200000 [ne] bicne r0, r0, #0x0
+F0210200 bic r2, r1, #0x0
+
+// BICS_i_T1 11110|i=x|0|op1=0001|S=1|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// BicsIT1: BICS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F0300000 bics r0, r0, #0x0
+F43F1FFF bics pc, pc, #0x1fe000 (unpredictable)
+F0302080 bics r0, r0, #0x80008000
+F0303040 bics r0, r0, #0x40404040
+F0304020 bics r0, r0, #0xa0000000
+F0305010 bics r0, r0, #0x24000000
+F0306008 bics r0, r0, #0x8800000
+F0307004 bics r0, r0, #0x2100000
+F0300002 bics r0, r0, #0x2
+F0300001 bics r0, r0, #0x1
+F03000FF bics r0, r0, #0xff
+F0301000 bics r0, r0, #0x0
+F03010FF bics r0, r0, #0xff00ff
+F0302000 bics r0, r0, #0x0
+F03020FF bics r0, r0, #0xff00ff00
+F0303000 bics r0, r0, #0x0
+F03030FF bics r0, r0, #0xffffffff
+F0304000 bics r0, r0, #0x80000000
+F03040FF bics r0, r0, #0x7f800000
+F0305000 bics r0, r0, #0x20000000
+F03050FF bics r0, r0, #0x1fe00000
+F0306000 bics r0, r0, #0x8000000
+F03060FF bics r0, r0, #0x7f80000
+F0307000 bics r0, r0, #0x2000000
+F03070FF bics r0, r0, #0x1fe0000
+F4300000 bics r0, r0, #0x800000
+F43000FF bics r0, r0, #0x7f8000
+F4301000 bics r0, r0, #0x200000
+F43010FF bics r0, r0, #0x1fe000
+F4302000 bics r0, r0, #0x80000
+F43020FF bics r0, r0, #0x7f800
+F4303000 bics r0, r0, #0x20000
+F43030FF bics r0, r0, #0x1fe00
+F4304000 bics r0, r0, #0x8000
+F43040FF bics r0, r0, #0x7f80
+F4305000 bics r0, r0, #0x2000
+F43050FF bics r0, r0, #0x1fe0
+F4306000 bics r0, r0, #0x800
+F43060FF bics r0, r0, #0x7f8
+F4307000 bics r0, r0, #0x200
+F43070FF bics r0, r0, #0x1fe
+F0300000 [ne] bicsne r0, r0, #0x0
+F0310200 bics r2, r1, #0x0

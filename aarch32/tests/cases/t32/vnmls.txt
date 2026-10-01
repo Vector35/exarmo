@@ -1,0 +1,73 @@
+// VNMLS_T1_D 11101110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=0|M=x|0|Vm=xxxx
+// VnmlsT1D: VNMLS{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ee573bab vnmls.f64 d19, d23, d27
+ee564b21 vnmls.f64 d20, d6, d17
+ee57db20 vnmls.f64 d29, d7, d16
+ee1bbba9 vnmls.f64 d11, d27, d25
+ee57cb0a vnmls.f64 d28, d7, d10
+ee136b07 vnmls.f64 d6, d3, d7
+ee512baa vnmls.f64 d18, d17, d26
+ee1d3b84 vnmls.f64 d3, d29, d4
+EE500BAF vnmls.f64 d16, d16, d31
+EE5FFBA8 vnmls.f64 d31, d31, d24
+EE588BA2 vnmls.f64 d24, d24, d18
+EE541B80 vnmls.f64 d17, d20, d0
+EE120B8F vnmls.f64 d0, d18, d15
+EE10FB2F vnmls.f64 d15, d0, d31
+EE500BAB vnmls.f64 d16, d16, d27
+EE5FFB2B vnmls.f64 d31, d15, d27
+EE5F3BAB vnmls.f64 d19, d31, d27
+EE573BAB [ne] vnmlsne.f64 d19, d23, d27
+
+// VNMLS_T1_H 11101110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=0|M=x|0|Vm=xxxx
+// VnmlsT1H: VNMLS{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee503987 vnmls.f16 s7, s1, s14
+ee13c925 vnmls.f16 s24, s6, s11
+ee19192a vnmls.f16 s2, s18, s21
+ee5bc986 vnmls.f16 s25, s23, s12
+ee54198b vnmls.f16 s3, s9, s22
+ee1569ad vnmls.f16 s12, s11, s27
+ee10a98c vnmls.f16 s20, s1, s24
+ee5099a1 vnmls.f16 s19, s1, s3
+EE5F0980 vnmls.f16 s1, s31, s0
+EE58F98F vnmls.f16 s31, s17, s30
+EE528988 vnmls.f16 s17, s5, s16
+EE514984 vnmls.f16 s9, s3, s8
+EE502902 vnmls.f16 s5, s0, s4
+EE1F0900 vnmls.f16 s0, s30, s0
+EE1FF98F vnmls.f16 s30, s31, s30
+EE5009A0 vnmls.f16 s1, s1, s1
+EE50F9AF vnmls.f16 s31, s1, s31
+EE503987 [ne] vnmlsne.f16 s7, s1, s14 (unpredictable)
+
+// VNMLS_T1_S 11101110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=0|M=x|0|Vm=xxxx
+// VnmlsT1S: VNMLS{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee17daa1 vnmls.f32 s26, s15, s3
+ee198a2d vnmls.f32 s16, s18, s27
+ee148aa1 vnmls.f32 s16, s9, s3
+ee111a0c vnmls.f32 s2, s2, s24
+ee524a82 vnmls.f32 s9, s5, s4
+ee5a6a03 vnmls.f32 s13, s20, s6
+ee523a87 vnmls.f32 s7, s5, s14
+ee175aad vnmls.f32 s10, s15, s27
+EE100AA0 vnmls.f32 s0, s1, s1
+EE1FFAAF vnmls.f32 s30, s31, s31
+EE182AA8 vnmls.f32 s4, s17, s17
+EE100A24 vnmls.f32 s0, s0, s9
+EE10FA80 vnmls.f32 s30, s1, s0
+EE5F0A0F vnmls.f32 s1, s30, s30
+EE5FFAA0 vnmls.f32 s31, s31, s1
+EE17DAAF vnmls.f32 s26, s15, s31
+EE17DAA1 [ne] vnmlsne.f32 s26, s15, s3

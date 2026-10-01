@@ -1,0 +1,16 @@
+// UMAAL_T1 111|1101|11|op1=110|Rn=xxxx|RdLo=xxxx|RdHi=xxxx|op2=0110|Rm=xxxx
+// UmaalT1: UMAAL{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: Rn, RdLo, RdHi, Rm
+// IT state read: condition
+fbe3ee64 umaal lr, lr, r3, r4 (unpredictable)
+fbe69060 umaal r9, r0, r6, r0
+fbe55964 umaal r5, r9, r5, r4
+fbef126e umaal r1, r2, pc, lr (unpredictable)
+fbee3368 umaal r3, r3, lr, r8 (unpredictable)
+fbeab863 umaal r11, r8, r10, r3
+fbe3de60 umaal sp, lr, r3, r0
+fbe40d60 umaal r0, sp, r4, r0
+FBE0FF6F umaal pc, pc, r0, pc (unpredictable)
+FBE3E364 umaal lr, r3, r3, r4
+FBE3EE63 umaal lr, lr, r3, r3 (unpredictable)
+FBE3EE64 [ne] umaalne lr, lr, r3, r4 (unpredictable)

@@ -1,0 +1,102 @@
+// CMP_r_T1 010000|op=1010|Rm=xxx|Rn=xxx
+// CmpRT1: CMP{<c>}{<q>}  <Rn>, <Rm>
+// register fields: Rm, Rn
+// IT state read: condition
+4280 cmp r0, r0
+4281 cmp r1, r0
+4282 cmp r2, r0
+4283 cmp r3, r0
+4284 cmp r4, r0
+4285 cmp r5, r0
+4286 cmp r6, r0
+4287 cmp r7, r0
+4288 cmp r0, r1
+4290 cmp r0, r2
+4298 cmp r0, r3
+42A0 cmp r0, r4
+42A8 cmp r0, r5
+42B0 cmp r0, r6
+42B8 cmp r0, r7
+4280 [ne] cmpne r0, r0
+
+// CMP_r_T2 010001|op=01|N=x|Rm=xxxx|Rn=xxx
+// CmpRT2: CMP{<c>}{<q>}  <Rn>, <Rm>
+// read together by <Rn>: N, Rn
+// register fields: Rm
+// IT state read: condition
+4500 cmp r0, r0 (unpredictable)
+4501 cmp r1, r0 (unpredictable)
+4502 cmp r2, r0 (unpredictable)
+4503 cmp r3, r0 (unpredictable)
+4504 cmp r4, r0 (unpredictable)
+4505 cmp r5, r0 (unpredictable)
+4506 cmp r6, r0 (unpredictable)
+4507 cmp r7, r0 (unpredictable)
+45F8 cmp r8, pc (unpredictable)
+4580 cmp r8, r0
+4581 cmp r9, r0
+4582 cmp r10, r0
+4583 cmp r11, r0
+4584 cmp r12, r0
+4585 cmp sp, r0
+4586 cmp lr, r0
+4587 cmp pc, r0 (unpredictable)
+4500 [ne] cmpne r0, r0 (unpredictable)
+
+// CMP_r_T3 1110101|op1=1101|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=1111|imm2=xx|stype=xx|Rm=xxxx
+// CmpRT3: CMP{<c>}{<q>}  <Rn>, <Rm>, <shift> #<amount>
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rm
+// IT state read: condition
+ebb19f63 cmp r1, r3, asr #5 (unpredictable)
+ebb2ef83 cmp r2, r3, lsl #26 (unpredictable)
+ebbb8f59 cmp r11, r9, lsr #1 (unpredictable)
+ebb85fe6 cmp r8, r6, asr #23
+ebb9ffef cmp r9, pc, asr #31 (unpredictable)
+ebbb3f39 cmp r11, r9, ror #12
+ebbd6fb8 cmp sp, r8, ror #26
+ebb96f1f cmp r9, pc, lsr #24 (unpredictable)
+EBB0AF60 cmp r0, r0, asr #0x9 (unpredictable)
+EBBFCF63 cmp pc, r3, asr #0x11 (unpredictable)
+EBB18F21 cmp r1, r1, asr #0x20 (unpredictable)
+EBB18FA3 cmp r1, r3, asr #0x2 (unpredictable)
+EBB18FE3 cmp r1, r3, asr #0x3 (unpredictable)
+EBB19F23 cmp r1, r3, asr #0x4 (unpredictable)
+EBB19FA3 cmp r1, r3, asr #0x6 (unpredictable)
+EBB19FE3 cmp r1, r3, asr #0x7 (unpredictable)
+EBB1AF23 cmp r1, r3, asr #0x8 (unpredictable)
+EBB1AF63 cmp r1, r3, asr #0x9 (unpredictable)
+EBB1AFA3 cmp r1, r3, asr #0xa (unpredictable)
+EBB1AFE3 cmp r1, r3, asr #0xb (unpredictable)
+EBB1BF63 cmp r1, r3, asr #0xd (unpredictable)
+EBB1BFA3 cmp r1, r3, asr #0xe (unpredictable)
+EBB1BFE3 cmp r1, r3, asr #0xf (unpredictable)
+EBB1CF23 cmp r1, r3, asr #0x10 (unpredictable)
+EBB1CF63 cmp r1, r3, asr #0x11 (unpredictable)
+EBB1CFA3 cmp r1, r3, asr #0x12 (unpredictable)
+EBB1CFE3 cmp r1, r3, asr #0x13 (unpredictable)
+EBB1DF23 cmp r1, r3, asr #0x14 (unpredictable)
+EBB1DF63 cmp r1, r3, asr #0x15 (unpredictable)
+EBB1DFA3 cmp r1, r3, asr #0x16 (unpredictable)
+EBB1EF63 cmp r1, r3, asr #0x19 (unpredictable)
+EBB1EFE3 cmp r1, r3, asr #0x1b (unpredictable)
+EBB1FF23 cmp r1, r3, asr #0x1c (unpredictable)
+EBB1FF63 cmp r1, r3, asr #0x1d (unpredictable)
+EBB1FFA3 cmp r1, r3, asr #0x1e (unpredictable)
+EBB19F63 [ne] cmpne r1, r3, asr #0x5 (unpredictable)
+
+// CMP_r_T3_RRX 1110101|op1=1101|S=1|Rn=xxxx|(0)|imm3=000|Rd=1111|imm2=00|stype=11|Rm=xxxx
+// CmpRT3Rrx: CMP{<c>}{<q>}  <Rn>, <Rm>, RRX
+// register fields: Rn, Rm
+// IT state read: condition
+ebba8f30 cmp r10, r0, rrx (unpredictable)
+ebbb8f30 cmp r11, r0, rrx (unpredictable)
+ebb20f3b cmp r2, r11, rrx
+ebb30f33 cmp r3, r3, rrx
+ebb60f33 cmp r6, r3, rrx
+ebb60f39 cmp r6, r9, rrx
+ebb80f34 cmp r8, r4, rrx
+ebbd8f36 cmp sp, r6, rrx (unpredictable)
+EBB08F3F cmp r0, pc, rrx (unpredictable)
+EBBF8F30 cmp pc, r0, rrx (unpredictable)
+EBBA8F30 [ne] cmpne r10, r0, rrx (unpredictable)

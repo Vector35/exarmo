@@ -1,0 +1,127 @@
+// revb_z_z_m 000|0010|1|size=xx|1|0|01|opc=00|10|Z=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// RevbZZM: REVB  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+05E49E31 revb z17.d, p7/m, z17.d
+05E49F7C revb z28.d, p7/m, z27.d
+05649E45 revb z5.h, p7/m, z18.h
+05E48C61 revb z1.d, p3/m, z3.d
+05E48F34 revb z20.d, p3/m, z25.d
+05E48835 revb z21.d, p2/m, z1.d
+05E48205 revb z5.d, p0/m, z16.d
+05E4879E revb z30.d, p1/m, z28.d
+056497DB revb z27.h, p5/m, z30.h
+05648653 revb z19.h, p1/m, z18.h
+05E49974 revb z20.d, p6/m, z11.d
+05E48B9F revb z31.d, p2/m, z28.d
+05E49F23 revb z3.d, p7/m, z25.d
+0564935E revb z30.h, p4/m, z26.h
+05E49DBD revb z29.d, p7/m, z13.d
+056498C0 revb z0.h, p6/m, z6.h
+05A49C11 revb z17.s, p7/m, z0.s
+05E49FF1 revb z17.d, p7/m, z31.d
+05249E31 UNDEFINED
+05E49E27 revb z7.d, p7/m, z17.d
+
+// revb_z_z_z 000|0010|1|size=xx|1|0|01|opc=00|10|Z=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// RevbZZZ: REVB  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+0564A002 revb z2.h, p0/z, z0.h
+0564A009 revb z9.h, p0/z, z0.h
+0564A010 revb z16.h, p0/z, z0.h
+05A4A7E0 revb z0.s, p1/z, z31.s
+05E4A81F revb z31.d, p2/z, z0.d
+0564AC02 revb z2.h, p3/z, z0.h
+0564B002 revb z2.h, p4/z, z0.h
+0564B402 revb z2.h, p5/z, z0.h
+0564B802 revb z2.h, p6/z, z0.h
+0564BC02 revb z2.h, p7/z, z0.h
+0524A002 UNDEFINED
+0564A000 revb z0.h, p0/z, z0.h
+
+// revh_z_z_m 000|0010|1|size=xx|1|0|01|opc=01|10|Z=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// RevhZZM: REVH  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+05A58CC7 revh z7.s, p3/m, z6.s
+05A58D8D revh z13.s, p3/m, z12.s
+05E59D8C revh z12.d, p7/m, z12.d
+05A58550 revh z16.s, p1/m, z10.s
+05A5983C revh z28.s, p6/m, z1.s
+05E583A8 revh z8.d, p0/m, z29.d
+05E59D9C revh z28.d, p7/m, z12.d
+05A58CF0 revh z16.s, p3/m, z7.s
+05A581BF revh z31.s, p0/m, z13.s
+05A59E43 revh z3.s, p7/m, z18.s
+05A5919C revh z28.s, p4/m, z12.s
+05A593AB revh z11.s, p4/m, z29.s
+05A58E2B revh z11.s, p3/m, z17.s
+05A58CDE revh z30.s, p3/m, z6.s
+05E5926C revh z12.d, p4/m, z19.d
+05E5901D revh z29.d, p4/m, z0.d
+05A58BE0 revh z0.s, p2/m, z31.s
+05A594C7 revh z7.s, p5/m, z6.s
+05258CC7 UNDEFINED
+05658CC7 UNDEFINED
+05A58C67 revh z7.s, p3/m, z3.s
+05A58CC3 revh z3.s, p3/m, z6.s
+
+// revh_z_z_z 000|0010|1|size=xx|1|0|01|opc=01|10|Z=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// RevhZZZ: REVH  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+05A5A005 revh z5.s, p0/z, z0.s
+05A5A00C revh z12.s, p0/z, z0.s
+05A5A013 revh z19.s, p0/z, z0.s
+05E5A7E0 revh z0.d, p1/z, z31.d
+05A5A81F revh z31.s, p2/z, z0.s
+05A5AC05 revh z5.s, p3/z, z0.s
+05A5B005 revh z5.s, p4/z, z0.s
+05A5B405 revh z5.s, p5/z, z0.s
+05A5B805 revh z5.s, p6/z, z0.s
+05A5BC05 revh z5.s, p7/z, z0.s
+0525A005 UNDEFINED
+0565A005 UNDEFINED
+05A5A000 revh z0.s, p0/z, z0.s
+
+// revw_z_z_m 000|0010|1|size=xx|1|0|01|opc=10|10|Z=0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// RevwZZM: REVW  <Zd>.D, <Pg>/M, <Zn>.D
+// register fields: Pg, Zn, Zd
+05E68723 revw z3.d, p1/m, z25.d
+05E69D9D revw z29.d, p7/m, z12.d
+05E69D7E revw z30.d, p7/m, z11.d
+05E695A2 revw z2.d, p5/m, z13.d
+05E68B7D revw z29.d, p2/m, z27.d
+05E68065 revw z5.d, p0/m, z3.d
+05E695FF revw z31.d, p5/m, z15.d
+05E681C5 revw z5.d, p0/m, z14.d
+05E6937A revw z26.d, p4/m, z27.d
+05E6807C revw z28.d, p0/m, z3.d
+05E68EC4 revw z4.d, p3/m, z22.d
+05E6992E revw z14.d, p6/m, z9.d
+05E6931F revw z31.d, p4/m, z24.d
+05E69DA9 revw z9.d, p7/m, z13.d
+05E698F0 revw z16.d, p6/m, z7.d
+05E68B49 revw z9.d, p2/m, z26.d
+05E68400 revw z0.d, p1/m, z0.d
+05E687E3 revw z3.d, p1/m, z31.d
+05268723 UNDEFINED
+05668723 UNDEFINED
+05A68723 UNDEFINED
+05E68423 revw z3.d, p1/m, z1.d
+05E68721 revw z1.d, p1/m, z25.d
+
+// revw_z_z_z 000|0010|1|size=xx|1|0|01|opc=10|10|Z=1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// RevwZZZ: REVW  <Zd>.D, <Pg>/Z, <Zn>.D
+// register fields: Pg, Zn, Zd
+05E6A001 revw z1.d, p0/z, z0.d
+05E6A008 revw z8.d, p0/z, z0.d
+05E6A00F revw z15.d, p0/z, z0.d
+05E6A7E0 revw z0.d, p1/z, z31.d
+05E6A81F revw z31.d, p2/z, z0.d
+05E6AC01 revw z1.d, p3/z, z0.d
+05E6B001 revw z1.d, p4/z, z0.d
+05E6B401 revw z1.d, p5/z, z0.d
+05E6B801 revw z1.d, p6/z, z0.d
+05E6BC01 revw z1.d, p7/z, z0.d
+0526A001 UNDEFINED
+0566A001 UNDEFINED
+05A6A001 UNDEFINED
+05E6A000 revw z0.d, p0/z, z0.d

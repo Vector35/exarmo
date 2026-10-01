@@ -1,0 +1,42 @@
+// VSDOT_A1_D 1111110|op1=00|D=x|op2=10|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=1|N=x|Q=0|M=x|U=0|Vm=xxxx
+// VsdotA1D: VSDOT{<q>}.S8  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fc291d8f vsdot.s8 d1, d25, d15
+fc2c7daf vsdot.s8 d7, d28, d31
+fc2abda8 vsdot.s8 d11, d26, d24
+fc281d85 vsdot.s8 d1, d24, d5
+fc229d00 vsdot.s8 d9, d2, d0
+fc641d08 vsdot.s8 d17, d4, d8
+fc619d86 vsdot.s8 d25, d17, d6
+fc206da7 vsdot.s8 d6, d16, d23
+FC2F0D84 vsdot.s8 d0, d31, d4
+FC20FD02 vsdot.s8 d15, d0, d2
+FC2F8D01 vsdot.s8 d8, d15, d1
+FC2F4DA0 vsdot.s8 d4, d31, d16
+FC292D8F vsdot.s8 d2, d25, d15
+FC290D8F vsdot.s8 d0, d25, d15
+FC29FD8F vsdot.s8 d15, d25, d15
+FC690D8F vsdot.s8 d16, d25, d15
+FC69FD8F vsdot.s8 d31, d25, d15
+
+// VSDOT_A1_Q 1111110|op1=00|D=x|op2=10|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=1|N=x|Q=1|M=x|U=0|Vm=xxxx
+// VsdotA1Q: VSDOT{<q>}.S8  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+fc6a6dca vsdot.s8 q11, q13, q5
+fc206dc0 vsdot.s8 q3, q8, q0
+fc688d6c vsdot.s8 q12, q4, q14
+fc2e2d4e vsdot.s8 q1, q7, q7
+fc2ccde0 vsdot.s8 q6, q14, q8
+fc6cad48 vsdot.s8 q13, q6, q4
+FC6FFDCF UNDEFINED
+FC640DC4 vsdot.s8 q8, q10, q2
+FC624DC2 vsdot.s8 q10, q9, q1
+FC611DC1 UNDEFINED
+FC200D4A vsdot.s8 q0, q0, q5
+FC2FFD4F UNDEFINED
+FC6A0DCA vsdot.s8 q8, q13, q5
+FC6FFDEF UNDEFINED

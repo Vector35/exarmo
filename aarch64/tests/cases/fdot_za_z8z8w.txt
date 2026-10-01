@@ -1,0 +1,26 @@
+// fdot_za_z8z8w_2x2 1|10|0000|11|0|1|Zm=xxxx|00|Rv=xx|100|Zn=xxxx|opc=10|0|off3=xxx
+// FdotZaZ8z8w2x2: FDOT  ZA.H[<Wv>, <offs>{, VGx2}], { <Zn1>.B-<Zn2>.B }, { <Zm1>.B-<Zm2>.B }
+// register fields: Zm, Rv, Zn
+C1A01020 fdot za.h[w8, 0, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A01027 fdot za.h[w8, 7, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A01066 fdot za.h[w8, 6, vgx2], {z2.b-z3.b}, {z0.b-z1.b}
+C1BE33E1 fdot za.h[w9, 1, vgx2], {z30.b-z31.b}, {z30.b-z31.b}
+C1A05022 fdot za.h[w10, 2, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A07023 fdot za.h[w11, 3, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A01024 fdot za.h[w8, 4, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A01025 fdot za.h[w8, 5, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+C1A250E0 fdot za.h[w10, 0, vgx2], {z6.b-z7.b}, {z2.b-z3.b}
+
+// fdot_za_z8z8w_4x4 1|10|0000|11|0|1|Zm=xxx|0|10|Rv=xx|100|Zn=xxx|0|opc=10|0|off3=xxx
+// FdotZaZ8z8w4x4: FDOT  ZA.H[<Wv>, <offs>{, VGx4}], { <Zn1>.B-<Zn4>.B }, { <Zm1>.B-<Zm4>.B }
+// register fields: Zm, Rv, Zn
+C1A11025 fdot za.h[w8, 5, vgx4], {z0.b-z3.b}, {z0.b-z3.b}
+C1A110A3 fdot za.h[w8, 3, vgx4], {z4.b-z7.b}, {z0.b-z3.b}
+C1A11121 fdot za.h[w8, 1, vgx4], {z8.b-z11.b}, {z0.b-z3.b}
+C1A531A0 fdot za.h[w9, 0, vgx4], {z12.b-z15.b}, {z4.b-z7.b}
+C1A95222 fdot za.h[w10, 2, vgx4], {z16.b-z19.b}, {z8.b-z11.b}
+C1AD72A4 fdot za.h[w11, 4, vgx4], {z20.b-z23.b}, {z12.b-z15.b}
+C1B11326 fdot za.h[w8, 6, vgx4], {z24.b-z27.b}, {z16.b-z19.b}
+C1B513A7 fdot za.h[w8, 7, vgx4], {z28.b-z31.b}, {z20.b-z23.b}
+C1B91025 fdot za.h[w8, 5, vgx4], {z0.b-z3.b}, {z24.b-z27.b}
+C1BD1025 fdot za.h[w8, 5, vgx4], {z0.b-z3.b}, {z28.b-z31.b}

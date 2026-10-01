@@ -1,0 +1,13 @@
+// pmul_z_zz_ 000|0010|0|size=00|1|Zm=xxxxx|011|0|opc=01|Zn=xxxxx|Zd=xxxxx
+// PmulZZz: PMUL  <Zd>.B, <Zn>.B, <Zm>.B
+// register fields: Zm, Zn, Zd
+043F661E pmul z30.b, z16.b, z31.b
+0437677B pmul z27.b, z27.b, z23.b
+04256642 pmul z2.b, z18.b, z5.b
+04226546 pmul z6.b, z10.b, z2.b
+04236439 pmul z25.b, z1.b, z3.b
+043F6522 pmul z2.b, z9.b, z31.b
+043A64F2 pmul z18.b, z7.b, z26.b
+04236742 pmul z2.b, z26.b, z3.b
+04206400 pmul z0.b, z0.b, z0.b
+043F67FF pmul z31.b, z31.b, z31.b

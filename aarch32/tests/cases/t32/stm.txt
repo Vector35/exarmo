@@ -1,0 +1,41 @@
+// STM_T1 1100|L=0|Rn=xxx|register_list=xxxxxxxx
+// StmT1: STM{<IA>}{<c>}{<q>}  <Rn>!, <registers>
+// register fields: Rn
+// IT state read: condition
+c001 stm r0!, {r0}
+c002 stm r0!, {r1}
+c003 stm r0!, {r0, r1}
+c004 stm r0!, {r2}
+c005 stm r0!, {r0, r2}
+c006 stm r0!, {r1, r2}
+c007 stm r0!, {r0, r1, r2}
+C100 stm r1!, {} (unpredictable)
+C2FF stm r2!, {r0, r1, r2, r3, r4, r5, r6, r7}
+C380 stm r3!, {r7}
+C440 stm r4!, {r6}
+C520 stm r5!, {r5}
+C610 stm r6!, {r4}
+C708 stm r7!, {r3}
+C001 [ne] stmne r0!, {r0}
+
+// STM_T2 111|0100|opc=01|0|W=x|L=0|Rn=xxxx|P=(0)|M=x|register_list=xxxxxxxxxxxxxx
+// StmT2: STM{<IA>}{<c>}.W  <Rn>{<!>}, <registers>
+// register fields: Rn
+// IT state read: condition
+E8800000 stm r0, {} (unpredictable)
+E8AFFFFF stm pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+E8802000 stm r0, {sp} (unpredictable)
+E8801000 stm r0, {r12} (unpredictable)
+E8800800 stm r0, {r11} (unpredictable)
+E8800400 stm r0, {r10} (unpredictable)
+E8800200 stm r0, {r9} (unpredictable)
+E8800100 stm r0, {r8} (unpredictable)
+E8800080 stm r0, {r7} (unpredictable)
+E8800040 stm r0, {r6} (unpredictable)
+E8800020 stm r0, {r5} (unpredictable)
+E8800010 stm r0, {r4} (unpredictable)
+E8800008 stm r0, {r3} (unpredictable)
+E8800004 stm r0, {r2} (unpredictable)
+E8800002 stm r0, {r1} (unpredictable)
+E8800001 stm r0, {r0} (unpredictable)
+E8801000 [ne] stmne r0, {r12} (unpredictable)

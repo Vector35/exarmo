@@ -1,0 +1,14 @@
+// expand_z_p_z_ 000|0010|1|size=xx|1|1|000|1|10|0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// ExpandZPZ: EXPAND  <Zd>.<T>, <Pg>, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+05318001 expand z1.b, p0, z0.b
+05318008 expand z8.b, p0, z0.b
+0531800F expand z15.b, p0, z0.b
+057187E0 expand z0.h, p1, z31.h
+05B1881F expand z31.s, p2, z0.s
+05F18C01 expand z1.d, p3, z0.d
+05319001 expand z1.b, p4, z0.b
+05319401 expand z1.b, p5, z0.b
+05319801 expand z1.b, p6, z0.b
+05319C01 expand z1.b, p7, z0.b
+05318000 expand z0.b, p0, z0.b

@@ -1,0 +1,36 @@
+// compact_z_p_z_ 000|0010|1|1|sz=x|1|0|000|1|10|0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// CompactZPZ: COMPACT  <Zd>.<T>, <Pg>, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+05A182A5 compact z5.s, p0, z21.s
+05A18C23 compact z3.s, p3, z1.s
+05A18755 compact z21.s, p1, z26.s
+05A1961C compact z28.s, p5, z16.s
+05E19B26 compact z6.d, p6, z25.d
+05A18C7F compact z31.s, p3, z3.s
+05E18ACF compact z15.d, p2, z22.d
+05E18FD3 compact z19.d, p3, z30.d
+05A18470 compact z16.s, p1, z3.s
+05A19562 compact z2.s, p5, z11.s
+05E19CC9 compact z9.d, p7, z6.d
+05E180F7 compact z23.d, p0, z7.d
+05A19350 compact z16.s, p4, z26.s
+05A19FB4 compact z20.s, p7, z29.s
+05A18A11 compact z17.s, p2, z16.s
+05E18F90 compact z16.d, p3, z28.d
+05A18000 compact z0.s, p0, z0.s
+05A183E5 compact z5.s, p0, z31.s
+
+// compact_z_p_z_s 000|0010|1|0|sz=x|1|0|000|1|10|0|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// CompactZPZS: COMPACT  <Zd>.<T>, <Pg>, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+05218005 compact z5.b, p0, z0.b
+0521800C compact z12.b, p0, z0.b
+05218013 compact z19.b, p0, z0.b
+056187E0 compact z0.h, p1, z31.h
+0521881F compact z31.b, p2, z0.b
+05218C05 compact z5.b, p3, z0.b
+05219005 compact z5.b, p4, z0.b
+05219405 compact z5.b, p5, z0.b
+05219805 compact z5.b, p6, z0.b
+05219C05 compact z5.b, p7, z0.b
+05218000 compact z0.b, p0, z0.b

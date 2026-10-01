@@ -1,0 +1,14 @@
+// bfmul_z_p_zz_ 011|0010|1|size=00|0|0|opc=0010|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// BfmulZPZz: BFMUL  <Zdn>.H, <Pg>/M, <Zdn>.H, <Zm>.H
+// register fields: Pg, Zm, Zdn
+65028006 bfmul z6.h, p0/m, z6.h, z0.h
+6502800D bfmul z13.h, p0/m, z13.h, z0.h
+65028014 bfmul z20.h, p0/m, z20.h, z0.h
+650287E0 bfmul z0.h, p1/m, z0.h, z31.h
+6502881F bfmul z31.h, p2/m, z31.h, z0.h
+65028C06 bfmul z6.h, p3/m, z6.h, z0.h
+65029006 bfmul z6.h, p4/m, z6.h, z0.h
+65029406 bfmul z6.h, p5/m, z6.h, z0.h
+65029806 bfmul z6.h, p6/m, z6.h, z0.h
+65029C06 bfmul z6.h, p7/m, z6.h, z0.h
+65028000 bfmul z0.h, p0/m, z0.h, z0.h

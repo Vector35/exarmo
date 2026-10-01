@@ -1,0 +1,110 @@
+// VMINNM_T1_D 111|U=1|11110|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VminnmT1D: VMINNM{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+ff3f7f16 vminnm.f16 d7, d15, d6
+ff3def1e vminnm.f16 d14, d13, d14
+ff2dcf90 vminnm.f32 d12, d29, d0
+ff294fba vminnm.f32 d4, d25, d26
+ff254fbe vminnm.f32 d4, d21, d30
+ff6a0fbd vminnm.f32 d16, d26, d29
+ff63df10 vminnm.f32 d29, d3, d0
+ff676f3f vminnm.f32 d22, d7, d31
+FF30FF18 vminnm.f16 d15, d0, d8
+FF388F14 vminnm.f16 d8, d8, d4
+FF342F12 vminnm.f16 d2, d4, d2
+FF321F11 vminnm.f16 d1, d2, d1
+FF310F1F vminnm.f16 d0, d1, d15
+FF30FF30 vminnm.f16 d15, d0, d16
+FF70FF96 vminnm.f16 d31, d16, d6
+FF3F7F96 vminnm.f16 d7, d31, d6
+
+// VMINNM_T1_Q 111|U=1|11110|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VminnmT1Q: VMINNM{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+ff3c8f5c vminnm.f16 q4, q6, q6
+ff2ccf56 vminnm.f32 q6, q6, q3
+ff36affc vminnm.f16 q5, q11, q14
+ff74ef56 vminnm.f16 q15, q2, q3
+ff2a8ffe vminnm.f32 q4, q13, q15
+ff3c0fd0 vminnm.f16 q0, q14, q0
+ff72af7e vminnm.f16 q13, q1, q15
+ff2aaf72 vminnm.f32 q5, q5, q9
+FF304F58 vminnm.f16 q2, q0, q4
+FF3FFF5F UNDEFINED
+FF382F54 vminnm.f16 q1, q4, q2
+FF311F51 UNDEFINED
+FF700F70 vminnm.f16 q8, q0, q8
+FF7FFFFF UNDEFINED
+FF308FDC vminnm.f16 q4, q8, q6
+
+// VMINNM_T2_D 111111101|D=x|00|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=1|M=x|0|Vm=xxxx
+// VminnmT2D: VMINNM{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fe8b6bce vminnm.f64 d6, d27, d14
+fe813b60 vminnm.f64 d3, d1, d16
+fec61b60 vminnm.f64 d17, d6, d16
+fe8afbc4 vminnm.f64 d15, d26, d4
+fec18bc5 vminnm.f64 d24, d17, d5
+fecccbee vminnm.f64 d28, d28, d30
+fec3ab6d vminnm.f64 d26, d3, d29
+feca6b4b vminnm.f64 d22, d10, d11
+FE800BCF vminnm.f64 d0, d16, d15
+FE8F4BC8 vminnm.f64 d4, d31, d8
+FE882BC2 vminnm.f64 d2, d24, d2
+FE840BC1 vminnm.f64 d0, d20, d1
+FEC20BC0 vminnm.f64 d16, d18, d0
+FEC0FB4F vminnm.f64 d31, d0, d15
+FE806BEF vminnm.f64 d6, d16, d31
+FE8F6B4E vminnm.f64 d6, d15, d14
+FE8F6BCE vminnm.f64 d6, d31, d14
+
+// VMINNM_T2_H 111111101|D=x|00|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=1|M=x|0|Vm=xxxx
+// VminnmT2H: VMINNM{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fec57946 vminnm.f16 s15, s10, s12
+fe8e49c9 vminnm.f16 s8, s29, s18
+fe80494b vminnm.f16 s8, s0, s22
+fe8999ee vminnm.f16 s18, s19, s29
+fe8a99c9 vminnm.f16 s18, s21, s18
+fe80b9eb vminnm.f16 s22, s1, s23
+fecd79c2 vminnm.f16 s15, s27, s4
+fec679ec vminnm.f16 s15, s13, s25
+FECF0940 vminnm.f16 s1, s30, s0
+FEC8F94F vminnm.f16 s31, s16, s30
+FEC48948 vminnm.f16 s17, s8, s16
+FEC22944 vminnm.f16 s5, s4, s8
+FEC11941 vminnm.f16 s3, s2, s2
+FE8F0940 vminnm.f16 s0, s30, s0
+FE8FF9CF vminnm.f16 s30, s31, s30
+FEC50960 vminnm.f16 s1, s10, s1
+FEC5F96F vminnm.f16 s31, s10, s31
+
+// VMINNM_T2_S 111111101|D=x|00|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=1|M=x|0|Vm=xxxx
+// VminnmT2S: VMINNM{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe832aec vminnm.f32 s4, s7, s25
+fe8eaa66 vminnm.f32 s20, s28, s13
+fec16ae9 vminnm.f32 s13, s3, s19
+fec06a47 vminnm.f32 s13, s0, s14
+fe820a45 vminnm.f32 s0, s4, s10
+fe8bba4a vminnm.f32 s22, s22, s20
+fecd4aef vminnm.f32 s9, s27, s31
+fecaea6c vminnm.f32 s29, s20, s25
+FE8FFAE0 vminnm.f32 s30, s31, s1
+FE888AE8 vminnm.f32 s16, s17, s17
+FE841AE4 vminnm.f32 s2, s9, s9
+FE80FAE2 vminnm.f32 s30, s1, s5
+FECF0A61 vminnm.f32 s1, s30, s3
+FECFFAC0 vminnm.f32 s31, s31, s0
+FE832ACF vminnm.f32 s4, s7, s30
+FE832AE0 vminnm.f32 s4, s7, s1

@@ -1,0 +1,46 @@
+// VQADD_A1_D 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0000|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VqaddA1D: VQADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f26a201e vqadd.s32 d18, d10, d14
+f30fb09d vqadd.u8 d11, d31, d13
+f37fc095 vqadd.u64 d28, d31, d5
+f231c0b7 vqadd.s64 d12, d17, d23
+f35ff03b vqadd.u16 d31, d15, d27
+f332f0b4 vqadd.u64 d15, d18, d20
+f37a00b8 vqadd.u64 d16, d26, d24
+f376903c vqadd.u64 d25, d6, d28
+F2408010 vqadd.s8 d24, d0, d0
+F258401F vqadd.s16 d20, d8, d15
+F3641012 vqadd.u32 d17, d4, d2
+F2200011 vqadd.s32 d0, d0, d1
+F2602090 vqadd.s32 d18, d16, d0
+F26A201F vqadd.s32 d18, d10, d15
+F26A2030 vqadd.s32 d18, d10, d16
+F26A203F vqadd.s32 d18, d10, d31
+
+// VQADD_A1_Q 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0000|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VqaddA1Q: VQADD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f24c0054 vqadd.s8 q8, q6, q2
+f258807e vqadd.s16 q12, q4, q15
+f31a205a vqadd.u16 q1, q5, q5
+f368c0f0 vqadd.u32 q14, q12, q8
+f326c070 vqadd.u32 q6, q3, q8
+f318a07a vqadd.u16 q5, q4, q13
+f240a072 vqadd.s8 q13, q0, q9
+f32a2078 vqadd.u32 q1, q5, q12
+F2744050 vqadd.s64 q10, q2, q0
+F24FF05F UNDEFINED
+F2220054 vqadd.s32 q0, q1, q2
+F2411051 UNDEFINED
+F27000D4 vqadd.s64 q8, q8, q2
+F34C0054 vqadd.u8 q8, q6, q2
+F37C0054 vqadd.u64 q8, q6, q2
+F20FF05F UNDEFINED
+F24FF0FF UNDEFINED

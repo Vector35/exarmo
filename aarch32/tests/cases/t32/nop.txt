@@ -1,0 +1,17 @@
+// NOP_T1 1011|1111|hint=0000|0000
+// NopT1: NOP{<c>}{<q>}
+// IT state read: condition
+bf00 nop
+BF00 [ne] nopne
+
+// NOP_T2 111|10|0|1110|10|(1)(1)(1)(1)|1|0(0)0|(0)|000|hint=0000|option=0000
+// NopT2: NOP{<c>}.W
+// IT state read: condition
+F3A08000 nop (unpredictable)
+F3AFA800 nop (unpredictable)
+F3A88000 nop (unpredictable)
+F3A48000 nop (unpredictable)
+F3A28000 nop (unpredictable)
+F3A18000 nop (unpredictable)
+F3A08000 [ne] nopne (unpredictable)
+F3AF8000 nop

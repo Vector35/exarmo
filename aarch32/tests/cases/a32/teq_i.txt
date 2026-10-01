@@ -1,0 +1,28 @@
+// TEQ_i_A1 cond=xxxx|00|1|10|opc=01|1|Rn=xxxx|(0)(0)(0)(0)|imm12=xxxxxxxxxxxx
+// TeqIA1: TEQ{<c>}{<q>}  <Rn>, #<const>
+// register fields: Rn
+23301096 teqhs r0, #150 (unpredictable)
+d33bc557 teqle r11, #364904448 (unpredictable)
+73336bfa teqvc r3, #256000 (unpredictable)
+0331856a teqeq r1, #444596224 (unpredictable)
+d33c81a6 teqle r12, #2147483689 (unpredictable)
+c33184b8 teqgt r1, #3087007744 (unpredictable)
+533559d9 teqpl r5, #3555328 (unpredictable)
+833c9477 teqhi r12, #1996488704 (unpredictable)
+// Binary Ninja's tests
+e3350a0f teq r5, #61440
+F33BC557 UNDEFINED
+433FF000 teqmi pc, #0x0 (unpredictable)
+13304FFF teqne r0, #0x3fc (unpredictable)
+23302800 teqcs r0, #0x0 (unpredictable)
+23301400 teqcs r0, #0x0 (unpredictable)
+23301200 teqcs r0, #0x0 (unpredictable)
+23301100 teqcs r0, #0x0 (unpredictable)
+23301080 teqcs r0, #0x80 (unpredictable)
+23301040 teqcs r0, #0x40 (unpredictable)
+23301020 teqcs r0, #0x20 (unpredictable)
+23301010 teqcs r0, #0x10 (unpredictable)
+23301008 teqcs r0, #0x8 (unpredictable)
+23301004 teqcs r0, #0x4 (unpredictable)
+23301002 teqcs r0, #0x2 (unpredictable)
+23301001 teqcs r0, #0x1 (unpredictable)

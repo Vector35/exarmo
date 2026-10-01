@@ -1,0 +1,33 @@
+// LDRSH_r_T1 0101|L=1|B=1|H=1|Rm=xxx|Rn=xxx|Rt=xxx
+// LdrshRT1: LDRSH{<c>}{<q>}  <Rt>, [<Rn>, {<+>}<Rm>]
+// register fields: Rm, Rn, Rt
+// IT state read: condition
+5e00 ldrsh r0, [r0, r0]
+5e01 ldrsh r1, [r0, r0]
+5e02 ldrsh r2, [r0, r0]
+5e03 ldrsh r3, [r0, r0]
+5e04 ldrsh r4, [r0, r0]
+5e05 ldrsh r5, [r0, r0]
+5e06 ldrsh r6, [r0, r0]
+5e07 ldrsh r7, [r0, r0]
+5E48 ldrsh r0, [r1, r1]
+5E90 ldrsh r0, [r2, r2]
+5ED8 ldrsh r0, [r3, r3]
+5F20 ldrsh r0, [r4, r4]
+5F68 ldrsh r0, [r5, r5]
+5FB0 ldrsh r0, [r6, r6]
+5FF8 ldrsh r0, [r7, r7]
+5E00 [ne] ldrshne r0, [r0, r0]
+5E53 ldrsh r3, [r2, r1]
+
+// LDRSH_r_T2 111|1100|10|size=01|1|Rn=xxxx|Rt=xxxx|000000|imm2=xx|Rm=xxxx
+// LdrshRT2: LDRSH{<c>}{<q>}  <Rt>, [<Rn>, {<+>}<Rm>{, LSL #<imm>}]
+// register fields: Rn, Rt, Rm
+// IT state read: condition
+F9300000 ldrsh r0, [r0, r0]
+F930F000 reserved hint
+F930001F ldrsh r0, [r0, pc, lsl #0x1] (unpredictable)
+F9300020 ldrsh r0, [r0, r0, lsl #0x2]
+F9300030 ldrsh r0, [r0, r0, lsl #0x3]
+F9300000 [ne] ldrshne r0, [r0, r0]
+F9312003 ldrsh r2, [r1, r3]

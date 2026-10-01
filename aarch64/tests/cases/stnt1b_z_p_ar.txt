@@ -1,0 +1,33 @@
+// stnt1b_z_p_ar_d_64_unscaled 111|0010|msz=00|0|0|Rm=xxxxx|001|Pg=xxx|Zn=xxxxx|Zt=xxxxx
+// Stnt1bZPArD64Unscaled: STNT1B  { <Zt>.D }, <Pg>, [<Zn>.D{, <Xm>}]
+// register fields: Rm, Pg, Zn, Zt
+E4042F51 stnt1b {z17.d}, p3, [z26.d, x4]
+E41B27A8 stnt1b {z8.d}, p1, [z29.d, x27]
+E4052E72 stnt1b {z18.d}, p3, [z19.d, x5]
+E41A2963 stnt1b {z3.d}, p2, [z11.d, x26]
+E41C2B86 stnt1b {z6.d}, p2, [z28.d, x28]
+E4192A95 stnt1b {z21.d}, p2, [z20.d, x25]
+E4113892 stnt1b {z18.d}, p6, [z4.d, x17]
+E41A2D8A stnt1b {z10.d}, p3, [z12.d, x26]
+E4002000 stnt1b {z0.d}, p0, [z0.d, x0]
+E41F33FF stnt1b {z31.d}, p4, [z31.d]
+E4043751 stnt1b {z17.d}, p5, [z26.d, x4]
+E4043F51 stnt1b {z17.d}, p7, [z26.d, x4]
+
+// stnt1b_z_p_ar_s_x32_unscaled 111|0010|msz=00|1|0|Rm=xxxxx|001|Pg=xxx|Zn=xxxxx|Zt=xxxxx
+// Stnt1bZPArSX32Unscaled: STNT1B  { <Zt>.S }, <Pg>, [<Zn>.S{, <Xm>}]
+// register fields: Rm, Pg, Zn, Zt
+E44A2137 stnt1b {z23.s}, p0, [z9.s, x10]
+E45F2C46 stnt1b {z6.s}, p3, [z2.s]
+E4443ABD stnt1b {z29.s}, p6, [z21.s, x4]
+E4502707 stnt1b {z7.s}, p1, [z24.s, x16]
+E4423634 stnt1b {z20.s}, p5, [z17.s, x2]
+E4422E6F stnt1b {z15.s}, p3, [z19.s, x2]
+E45638B4 stnt1b {z20.s}, p6, [z5.s, x22]
+E45D24E6 stnt1b {z6.s}, p1, [z7.s, fp]
+E4402800 stnt1b {z0.s}, p2, [z0.s, x0]
+E44A33FF stnt1b {z31.s}, p4, [z31.s, x10]
+E44A3D37 stnt1b {z23.s}, p7, [z9.s, x10]
+E4402137 stnt1b {z23.s}, p0, [z9.s, x0]
+E44A2017 stnt1b {z23.s}, p0, [z0.s, x10]
+E44A2120 stnt1b {z0.s}, p0, [z9.s, x10]

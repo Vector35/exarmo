@@ -1,0 +1,98 @@
+// STR_i_A1_off cond=xxxx|010|P=1|U=x|op2=0|W=0|op1=0|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// StrIA1Off: STR{<c>}{<q>}  <Rt>, [<Rn> {, #{<+/->}<imm>}]
+// register fields: Rn, Rt
+25072963 strhs r2, [r7, #-2403]
+0581e3f1 streq lr, [r1, #1009]
+350b01c1 strlo r0, [r11, #-449]
+150c90da strne r9, [r12, #-218]
+c58df2f7 strgt pc, [sp, #759]
+658e4e79 strvs r4, [lr, #3705]
+d50bb8fc strle r11, [r11, #-2300]
+a58cdc4c strge sp, [r12, #3148]
+// Binary Ninja's tests
+e581700c str r7, [r1, #12]
+e58c8000 str r8, [r12]
+F5072963 UNALLOCATED
+85002FFF strhi r2, [r0, #-0xfff]
+450F2800 strmi r2, [pc, #-0x800]
+25072400 strcs r2, [r7, #-0x400]
+25072200 strcs r2, [r7, #-0x200]
+25072100 strcs r2, [r7, #-0x100]
+25072080 strcs r2, [r7, #-0x80]
+25072040 strcs r2, [r7, #-0x40]
+25072020 strcs r2, [r7, #-0x20]
+25072010 strcs r2, [r7, #-0x10]
+25072008 strcs r2, [r7, #-0x8]
+25072004 strcs r2, [r7, #-0x4]
+25072002 strcs r2, [r7, #-0x2]
+25072001 strcs r2, [r7, #-0x1]
+
+// STR_i_A1_post cond=xxxx|010|P=0|U=x|op2=0|W=0|op1=0|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// StrIA1Post: STR{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// register fields: Rn, Rt
+d4867309 strle r7, [r6], #777
+a40b9264 strge r9, [r11], #-612
+040dd5f4 streq sp, [sp], #-1524 (unpredictable)
+940991d1 strls r9, [r9], #-465 (unpredictable)
+740275e1 strvc r7, [r2], #-1505
+840105eb strhi r0, [r1], #-1515
+9483c44f strls r12, [r3], #1103
+e4871cf0 str r1, [r7], #3312
+// Binary Ninja's tests
+e4001000 str r1, [r0], #-0
+e4071080 str r1, [r7], #-128
+e48d9fff str r9, [sp], #4095
+F40DD5F4 UNDEFINED
+448FF800 strmi pc, [pc], #0x800 (unpredictable)
+24867400 strcs r7, [r6], #0x400
+14867200 strne r7, [r6], #0x200
+D4867100 strle r7, [r6], #0x100
+D4867040 strle r7, [r6], #0x40
+D4867020 strle r7, [r6], #0x20
+D4867010 strle r7, [r6], #0x10
+D4867008 strle r7, [r6], #0x8
+D4867004 strle r7, [r6], #0x4
+D4867002 strle r7, [r6], #0x2
+D4867001 strle r7, [r6], #0x1
+
+// STR_i_A1_pre cond=xxxx|010|P=1|U=x|op2=0|W=1|op1=0|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// PushStrIA1Pre: PUSH{<c>}{<q>}  <single_register_list>
+// StrIA1Pre: STR{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// read together by the PUSH alias: U, Rn, imm12
+// register fields: Rn, Rt
+// form chosen on: U, Rn, imm12
+e5215db4 str r5, [r1, #-3508]!
+d527a619 strle r10, [r7, #-1561]!
+15abe19d strne lr, [r11, #413]!
+652d32a2 strvs r3, [sp, #-674]!
+85a32b47 strhi r2, [r3, #2887]!
+a52881ba strge r8, [r8, #-442]! (unpredictable)
+85a44216 strhi r4, [r4, #534]! (unpredictable)
+952f939c strls r9, [pc, #-924]! (unpredictable)
+// Binary Ninja's tests
+552a3000 strpl r3, [r10, #-0]!
+55aa3000 strpl r3, [r10, #0]!
+e52d7004 push {r7}
+e5a53028 str r3, [r5, #40]!
+05200FFF streq r0, [r0, #-0xfff]! (unpredictable)
+F5215DB4 UNALLOCATED
+4521F800 strmi pc, [r1, #-0x800]!
+25215400 strcs r5, [r1, #-0x400]!
+E5215200 str r5, [r1, #-0x200]!
+E5215100 str r5, [r1, #-0x100]!
+E5215080 str r5, [r1, #-0x80]!
+E5215040 str r5, [r1, #-0x40]!
+E5215020 str r5, [r1, #-0x20]!
+E5215010 str r5, [r1, #-0x10]!
+E5215008 str r5, [r1, #-0x8]!
+E5215002 str r5, [r1, #-0x2]!
+E5215001 str r5, [r1, #-0x1]!
+E5205000 str r5, [r0, #-0x0]!
+E5205FFF str r5, [r0, #-0xfff]!
+E52F5000 str r5, [pc, #-0x0]! (unpredictable)
+E52F5FFF str r5, [pc, #-0xfff]! (unpredictable)
+E5A05000 str r5, [r0, #0x0]!
+E5A05FFF str r5, [r0, #0xfff]!
+E5AF5000 str r5, [pc, #0x0]! (unpredictable)
+E5AF5FFF str r5, [pc, #0xfff]! (unpredictable)
+E5AD7004 str r7, [sp, #0x4]!

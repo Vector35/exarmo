@@ -1,0 +1,18 @@
+// XAFLAG_M_pstate 110|101|0100000|op1=000|0100|CRm=(0)(0)(0)(0)|op2=001|Rt=11111
+// XaflagMPstate: XAFLAG
+D500473F xaflag (unpredictable)
+D5004F3F xaflag (unpredictable)
+D5004D3F xaflag (unpredictable)
+D5004A3F xaflag (unpredictable)
+D500453F xaflag (unpredictable)
+D500413F xaflag (unpredictable)
+D500433F xaflag (unpredictable)
+D500443F xaflag (unpredictable)
+D500423F xaflag (unpredictable)
+D500493F xaflag (unpredictable)
+D5004C3F xaflag (unpredictable)
+D500463F xaflag (unpredictable)
+D5004E3F xaflag (unpredictable)
+D500483F xaflag (unpredictable)
+D5004B3F xaflag (unpredictable)
+D500403F xaflag

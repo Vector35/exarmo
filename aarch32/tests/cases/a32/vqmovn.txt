@@ -1,0 +1,44 @@
+// VQMOVN_A1 111100111|D=x|11|size=xx|opc1=10|Vd=xxxx|0010|op=1x|M=x|0|Vm=xxxx
+// VqmovnA1: VQMOVN{<c>}{<q>}.<dt>  <Dd>, <Qm>
+// read together by <dt>: size, op
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f672ec vqmovn.u32 d23, q14
+f3fa42a0 vqmovn.s64 d20, q8
+f3f652e4 vqmovn.u32 d21, q10
+f3b2f28a vqmovn.s16 d15, q5
+f3f652c6 vqmovn.u32 d21, q3
+f3f242ca vqmovn.u16 d20, q5
+f3b6d2ee vqmovn.u32 d13, q15
+F3FE72EF UNDEFINED
+F3F602A8 vqmovn.s32 d16, q12
+F3FA82E2 vqmovn.u64 d24, q9
+F3F622C0 vqmovn.u32 d18, q0
+F3F612EC vqmovn.u32 d17, q14
+F3FE72A1 UNDEFINED
+F3FE72CF UNDEFINED
+F3B602EC vqmovn.u32 d0, q14
+F3F602EC vqmovn.u32 d16, q14
+F3F6F2EC vqmovn.u32 d31, q14
+F3F672EF UNDEFINED
+
+// VQMOVUN_A1 111100111|D=x|11|size=xx|opc1=10|Vd=xxxx|0010|op=01|M=x|0|Vm=xxxx
+// VqmovunA1: VQMOVUN{<c>}{<q>}.<dt>  <Dd>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+f3ba8262 vqmovun.s64 d8, q9
+f3baf244 vqmovun.s64 d15, q2
+f3ba6266 vqmovun.s64 d6, q11
+f3f2a24e vqmovun.s16 d26, q7
+f3f26246 vqmovun.s16 d22, q3
+F3B60260 vqmovun.s32 d0, q8
+F3BE826F UNDEFINED
+F3BA4268 vqmovun.s64 d4, q12
+F3BA2240 vqmovun.s64 d2, q0
+F3BA1260 vqmovun.s64 d1, q8
+F3BA8261 UNDEFINED
+F3BA0262 vqmovun.s64 d0, q9
+F3FA0262 vqmovun.s64 d16, q9
+F3FAF262 vqmovun.s64 d31, q9
+F3BA824F UNDEFINED
+F3BA826F UNDEFINED

@@ -1,0 +1,102 @@
+// RFEDA_A1_AS 1111100|P=0|U=0|S=0|W=x|L=1|Rn=xxxx|op=(0)(0)(0)(0)(1)(0)(1)(0)(0)(0)(0)|mode=(0)(0)(0)(0)(0)
+// RfedaA1As: RFEDA{<c>}{<q>}  <Rn>{<!>}
+// register fields: Rn
+f83738f2 rfeda r7! (unpredictable)
+f838993a rfeda r8! (unpredictable)
+// Binary Ninja's tests
+f8120a00 rfeda r2
+f8340a00 rfeda r4!
+F830001F rfeda r0! (unpredictable)
+F83FFFF0 rfeda pc! (unpredictable)
+F8378008 rfeda r7! (unpredictable)
+F8374004 rfeda r7! (unpredictable)
+F8372002 rfeda r7! (unpredictable)
+F8371001 rfeda r7! (unpredictable)
+F8370812 rfeda r7! (unpredictable)
+F8370412 rfeda r7! (unpredictable)
+F8370212 rfeda r7! (unpredictable)
+F8370112 rfeda r7! (unpredictable)
+F8370092 rfeda r7! (unpredictable)
+F8370052 rfeda r7! (unpredictable)
+F8370032 rfeda r7! (unpredictable)
+F837F5F2 rfeda r7! (unpredictable)
+
+// RFEDB_A1_AS 1111100|P=1|U=0|S=0|W=x|L=1|Rn=xxxx|op=(0)(0)(0)(0)(1)(0)(1)(0)(0)(0)(0)|mode=(0)(0)(0)(0)(0)
+// RfedbA1As: RFEDB{<c>}{<q>}  <Rn>{<!>}
+// register fields: Rn
+f9338575 rfedb r3! (unpredictable)
+f9312cef rfedb r1! (unpredictable)
+f930ea62 rfedb r0! (unpredictable)
+f937291a rfedb r7! (unpredictable)
+f937ba9b rfedb r7! (unpredictable)
+f93d1bbf rfedb sp! (unpredictable)
+// Binary Ninja's tests
+f9130a00 rfedb r3
+f9370a00 rfedb r7!
+F93F0010 rfedb pc! (unpredictable)
+F933FFE8 rfedb r3! (unpredictable)
+F9338004 rfedb r3! (unpredictable)
+F9334001 rfedb r3! (unpredictable)
+F9332015 rfedb r3! (unpredictable)
+F9331015 rfedb r3! (unpredictable)
+F9330815 rfedb r3! (unpredictable)
+F9330415 rfedb r3! (unpredictable)
+F9330215 rfedb r3! (unpredictable)
+F9330115 rfedb r3! (unpredictable)
+F9330095 rfedb r3! (unpredictable)
+F9330055 rfedb r3! (unpredictable)
+F9330035 rfedb r3! (unpredictable)
+F933F5F5 rfedb r3! (unpredictable)
+
+// RFEIA_A1_AS 1111100|P=0|U=1|S=0|W=x|L=1|Rn=xxxx|op=(0)(0)(0)(0)(1)(0)(1)(0)(0)(0)(0)|mode=(0)(0)(0)(0)(0)
+// RfeiaA1As: RFE{<IA>}{<c>}{<q>}  <Rn>{<!>}
+// register fields: Rn
+f8bc9889 rfe r12! (unpredictable)
+f8b14e76 rfe r1! (unpredictable)
+f8bbff4b rfe r11! (unpredictable)
+f8bc30f7 rfe r12! (unpredictable)
+// Binary Ninja's tests
+f8910a00 rfe r1
+f8950a00 rfe r5
+f8b10a00 rfe r1!
+f8b90a00 rfe r9!
+F8B0001F rfe r0! (unpredictable)
+F8BFFFF0 rfe pc! (unpredictable)
+F8BC8008 rfe r12! (unpredictable)
+F8BC4004 rfe r12! (unpredictable)
+F8BC2002 rfe r12! (unpredictable)
+F8BC1001 rfe r12! (unpredictable)
+F8BC0809 rfe r12! (unpredictable)
+F8BC0409 rfe r12! (unpredictable)
+F8BC0209 rfe r12! (unpredictable)
+F8BC0109 rfe r12! (unpredictable)
+F8BC0089 rfe r12! (unpredictable)
+F8BC0049 rfe r12! (unpredictable)
+F8BC0029 rfe r12! (unpredictable)
+F8BCF5E9 rfe r12! (unpredictable)
+
+// RFEIB_A1_AS 1111100|P=1|U=1|S=0|W=x|L=1|Rn=xxxx|op=(0)(0)(0)(0)(1)(0)(1)(0)(0)(0)(0)|mode=(0)(0)(0)(0)(0)
+// RfeibA1As: RFEIB{<c>}{<q>}  <Rn>{<!>}
+// register fields: Rn
+f9bb2c6a rfeib r11! (unpredictable)
+f9b4b001 rfeib r4! (unpredictable)
+f9bd3f48 rfeib sp! (unpredictable)
+f9b9f4b9 rfeib r9! (unpredictable)
+f9b7117f rfeib r7! (unpredictable)
+// Binary Ninja's tests
+f9960a00 rfeib r6
+f9b80a00 rfeib r8!
+F9B00010 rfeib r0! (unpredictable)
+F9BFFFE4 rfeib pc! (unpredictable)
+F9BB8002 rfeib r11! (unpredictable)
+F9BB400A rfeib r11! (unpredictable)
+F9BB200A rfeib r11! (unpredictable)
+F9BB100A rfeib r11! (unpredictable)
+F9BB080A rfeib r11! (unpredictable)
+F9BB040A rfeib r11! (unpredictable)
+F9BB020A rfeib r11! (unpredictable)
+F9BB010A rfeib r11! (unpredictable)
+F9BB008A rfeib r11! (unpredictable)
+F9BB004A rfeib r11! (unpredictable)
+F9BB002A rfeib r11! (unpredictable)
+F9BBF5EA rfeib r11! (unpredictable)

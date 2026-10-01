@@ -1,0 +1,19 @@
+[package]
+name = "exarmo-aarch32"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "AArch32 (A32 and T32) disassembler generated from Arm's machine-readable ISA specification"
+license.workspace = true
+repository.workspace = true
+keywords = ["arm", "aarch32", "thumb", "disassembler", "decoder"]
+categories = ["development-tools"]
+documentation = "https://docs.rs/exarmo-aarch32"
+# The tests read the corpus through exarmo-testing, which is not published.
+exclude = ["tests/"]
+
+[dependencies]
+exarmo-core.workspace = true
+
+[dev-dependencies]
+exarmo-testing = { path = "../testing" }

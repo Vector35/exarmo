@@ -1,0 +1,19 @@
+// SHA256H2_A1 1111|0|01|U=1|0|D=x|size=01|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=x|M=x|o1=0|Vm=xxxx
+// Sha256h2A1: SHA256H2.32  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f3500c4c sha256h2.32 q8, q0, q6
+f31e6cc6 sha256h2.32 q3, q15, q3
+f3182c62 sha256h2.32 q1, q4, q9
+f31c4c40 sha256h2.32 q2, q6, q0
+f3106cec sha256h2.32 q3, q8, q14
+f3182cc4 sha256h2.32 q1, q12, q2
+f3160cca sha256h2.32 q0, q11, q5
+f3582c44 sha256h2.32 q9, q4, q2
+F35FFC0F UNDEFINED
+F3548C48 sha256h2.32 q12, q2, q4
+F3520C60 sha256h2.32 q8, q1, q8
+F3511C41 UNDEFINED
+F31FFC4F UNDEFINED
+F35FFCEF UNDEFINED

@@ -1,0 +1,16 @@
+// USUB16_T1 111|11010|1|op1=101|Rn=xxxx|1111|Rd=xxxx|0|U=1|H=0|S=0|Rm=xxxx
+// Usub16T1: USUB16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+faddf746 usub16 r7, sp, r6
+fad0f244 usub16 r2, r0, r4
+fadcf44a usub16 r4, r12, r10
+fadff84c usub16 r8, pc, r12 (unpredictable)
+fad0f243 usub16 r2, r0, r3
+fad8f24e usub16 r2, r8, lr
+fad7f748 usub16 r7, r7, r8
+fadbf24b usub16 r2, r11, r11
+FADDF040 usub16 r0, sp, r0
+FADDFF4F usub16 pc, sp, pc (unpredictable)
+FADDF747 usub16 r7, sp, r7
+FADDF746 [ne] usub16ne r7, sp, r6

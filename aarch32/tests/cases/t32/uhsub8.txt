@@ -1,0 +1,17 @@
+// UHSUB8_T1 111|11010|1|op1=100|Rn=xxxx|1111|Rd=xxxx|0|U=1|H=1|S=0|Rm=xxxx
+// Uhsub8T1: UHSUB8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+facef466 uhsub8 r4, lr, r6
+fac5fe63 uhsub8 lr, r5, r3
+fac2f661 uhsub8 r6, r2, r1
+fac8f06c uhsub8 r0, r8, r12
+fac6f76c uhsub8 r7, r6, r12
+fac3f462 uhsub8 r4, r3, r2
+faccf96f uhsub8 r9, r12, pc (unpredictable)
+facff96a uhsub8 r9, pc, r10 (unpredictable)
+FAC0FF60 uhsub8 pc, r0, r0 (unpredictable)
+FACEFE66 uhsub8 lr, lr, r6
+FACEF46E uhsub8 r4, lr, lr
+FACEF464 uhsub8 r4, lr, r4
+FACEF466 [ne] uhsub8ne r4, lr, r6

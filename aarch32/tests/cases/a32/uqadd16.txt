@@ -1,0 +1,18 @@
+// UQADD16_A1 cond=xxxx|011|00|op1=110|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=00|1|Rm=xxxx
+// Uqadd16A1: UQADD16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+9666ed13 uqadd16ls lr, r6, r3 (unpredictable)
+766f981e uqadd16vc r9, pc, lr (unpredictable)
+2667441f uqadd16hs r4, r7, pc (unpredictable)
+7665ac1a uqadd16vc r10, r5, r10 (unpredictable)
+86697316 uqadd16hi r7, r9, r6 (unpredictable)
+266e3917 uqadd16hs r3, lr, r7 (unpredictable)
+4662ea17 uqadd16mi lr, r2, r7 (unpredictable)
+b6623b1b uqadd16lt r3, r2, r11 (unpredictable)
+// Binary Ninja's tests
+c6674f19 uqadd16gt r4, r7, r9
+e6621f13 uqadd16 r1, r2, r3
+06600010 uqadd16eq r0, r0, r0 (unpredictable)
+F666ED13 UNALLOCATED
+1666F216 uqadd16ne pc, r6, r6 (unpredictable)
+96666113 uqadd16ls r6, r6, r3 (unpredictable)

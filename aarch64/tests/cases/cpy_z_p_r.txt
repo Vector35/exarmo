@@ -1,0 +1,41 @@
+// cpy_z_p_r_bhs_ 00000101|size=xx|101000101|Pg=xxx|Rn=xxxxx|Zd=xxxxx
+// CpyZPRBhs: CPY  <Zd>.<T>, <Pg>/M, <Wn|WSP>
+// MovZPRBhsCpyZPRBhs: MOV  <Zd>.<T>, <Pg>/M, <Wn|WSP>
+// register fields: Pg, Rn, Zd
+0568B0C1 mov z1.h, p4/m, w6
+0528B60B mov z11.b, p5/m, w16
+05A8B413 mov z19.s, p5/m, w0
+0568AD11 mov z17.h, p3/m, w8
+0568B89C mov z28.h, p6/m, w4
+05A8BECE mov z14.s, p7/m, w22
+05A8A3E7 mov z7.s, p0/m, wsp
+0528B8AB mov z11.b, p6/m, w5
+05A8B78E mov z14.s, p5/m, w28
+0528BC90 mov z16.b, p7/m, w4
+0528BB62 mov z2.b, p6/m, w27
+0528B3ED mov z13.b, p4/m, wsp
+0568A8C0 mov z0.h, p2/m, w6
+0568B0DF mov z31.h, p4/m, w6
+0528B004 mov z4.b, p4/m, w0
+0568B001 mov z1.h, p4/m, w0
+0568B3E1 mov z1.h, p4/m, wsp
+0568B0C6 mov z6.h, p4/m, w6
+0568A4C1 mov z1.h, p1/m, w6
+0568B081 mov z1.h, p4/m, w4
+
+// cpy_z_p_r_d_ 00000101|size=11|101000101|Pg=xxx|Rn=xxxxx|Zd=xxxxx
+// CpyZPRD: CPY  <Zd>.D, <Pg>/M, <Xn|SP>
+// MovZPRDCpyZPRD: MOV  <Zd>.D, <Pg>/M, <Xn|SP>
+// register fields: Pg, Rn, Zd
+05E8A5C3 mov z3.d, p1/m, x14
+05E8AC7B mov z27.d, p3/m, x3
+05E8A759 mov z25.d, p1/m, x26
+05E8A545 mov z5.d, p1/m, x10
+05E8B001 mov z1.d, p4/m, x0
+05E8B3E1 mov z1.d, p4/m, sp
+05E8A1C0 mov z0.d, p0/m, x14
+05E8A9DF mov z31.d, p2/m, x14
+05E8B5CE mov z14.d, p5/m, x14
+05E8B9C3 mov z3.d, p6/m, x14
+05E8BDC3 mov z3.d, p7/m, x14
+05E8A5C1 mov z1.d, p1/m, x14

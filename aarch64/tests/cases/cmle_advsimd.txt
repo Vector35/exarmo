@@ -1,0 +1,45 @@
+// CMLE_asimdmisc_Z 0|Q=x|U=1|0|111|0|size=xx|10000|0100|op=1|10|Rn=xxxxx|Rd=xxxxx
+// CmleAsimdmiscZ: CMLE  <Vd>.<T>, <Vn>.<T>, #0
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+2E609A4F cmle v15.4h, v18.4h, #0x0
+6EE099B8 cmle v24.2d, v13.2d, #0x0
+6E209A16 cmle v22.16b, v16.16b, #0x0
+2E2098AE cmle v14.8b, v5.8b, #0x0
+6E209A67 cmle v7.16b, v19.16b, #0x0
+6EA0985D cmle v29.4s, v2.4s, #0x0
+6EA09948 cmle v8.4s, v10.4s, #0x0
+6EA09AED cmle v13.4s, v23.4s, #0x0
+2E609A3A cmle v26.4h, v17.4h, #0x0
+2E209A0F cmle v15.8b, v16.8b, #0x0
+2E20991C cmle v28.8b, v8.8b, #0x0
+6E209B18 cmle v24.16b, v24.16b, #0x0
+2E209B95 cmle v21.8b, v28.8b, #0x0
+2EA09A1C cmle v28.2s, v16.2s, #0x0
+6E2099CC cmle v12.16b, v14.16b, #0x0
+6E209ABF cmle v31.16b, v21.16b, #0x0
+2E609800 cmle v0.4h, v0.4h, #0x0
+2E609BEF cmle v15.4h, v31.4h, #0x0
+2EE09A4F UNDEFINED
+6E609A4F cmle v15.8h, v18.8h, #0x0
+
+// CMLE_asisdmisc_Z 01|U=1|1|111|0|size=11|10000|0100|op=1|10|Rn=xxxxx|Rd=xxxxx
+// CmleAsisdmiscZ: CMLE  <d>, <n>, #0
+// register fields: Rn, Rd
+7EE09B97 cmle d23, d28, #0x0
+7EE09AF1 cmle d17, d23, #0x0
+7EE099EC cmle d12, d15, #0x0
+7EE098A0 cmle d0, d5, #0x0
+7EE09BD8 cmle d24, d30, #0x0
+7EE09A8C cmle d12, d20, #0x0
+7EE09895 cmle d21, d4, #0x0
+7EE099EB cmle d11, d15, #0x0
+7EE099B3 cmle d19, d13, #0x0
+7EE099DB cmle d27, d14, #0x0
+7EE0984A cmle d10, d2, #0x0
+7EE09A95 cmle d21, d20, #0x0
+7EE09BCC cmle d12, d30, #0x0
+7EE099C9 cmle d9, d14, #0x0
+7EE09804 cmle d4, d0, #0x0
+7EE09875 cmle d21, d3, #0x0
+7EE09BFF cmle d31, d31, #0x0

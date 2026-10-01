@@ -1,0 +1,30 @@
+// fmaxnmv_v_p_z_ 011|0010|1|size=xx|000|opc=100|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// FmaxnmvVPZ: FMAXNMV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+654425AB fmaxnmv h11, p1, z13.h
+65443212 fmaxnmv h18, p4, z16.h
+65C42559 fmaxnmv d25, p1, z10.d
+6544288E fmaxnmv h14, p2, z4.h
+65842459 fmaxnmv s25, p1, z2.s
+654437D6 fmaxnmv h22, p5, z30.h
+6584204C fmaxnmv s12, p0, z2.s
+65C438A7 fmaxnmv d7, p6, z5.d
+6544220D fmaxnmv h13, p0, z16.h
+65843195 fmaxnmv s21, p4, z12.s
+65C42425 fmaxnmv d5, p1, z1.d
+65C43555 fmaxnmv d21, p5, z10.d
+658428E1 fmaxnmv s1, p2, z7.s
+6584366C fmaxnmv s12, p5, z19.s
+65C42D9D fmaxnmv d29, p3, z12.d
+65842DE8 fmaxnmv s8, p3, z15.s
+65443C00 fmaxnmv h0, p7, z0.h
+654427FF fmaxnmv h31, p1, z31.h
+650425AB UNDEFINED
+650425A0 UNDEFINED
+650425BF UNDEFINED
+658425A0 fmaxnmv s0, p1, z13.s
+658425BF fmaxnmv s31, p1, z13.s
+65C425A0 fmaxnmv d0, p1, z13.d
+65C425BF fmaxnmv d31, p1, z13.d
+654425A1 fmaxnmv h1, p1, z13.h

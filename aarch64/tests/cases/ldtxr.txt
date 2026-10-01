@@ -1,0 +1,28 @@
+// LDTXR_LR32_ldstexclr_unpriv 1|sz=0|0010010|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdtxrLr32LdstexclrUnpriv: LDTXR  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+89400001 ldtxr w1, [x0] (unpredictable)
+89400008 ldtxr w8, [x0] (unpredictable)
+8940000F ldtxr w15, [x0] (unpredictable)
+895F7FE0 ldtxr w0, [sp]
+8940001F ldtxr wzr, [x0] (unpredictable)
+89400000 ldtxr w0, [x0] (unpredictable)
+89504001 ldtxr w1, [x0] (unpredictable)
+89482001 ldtxr w1, [x0] (unpredictable)
+89441001 ldtxr w1, [x0] (unpredictable)
+89420801 ldtxr w1, [x0] (unpredictable)
+89410401 ldtxr w1, [x0] (unpredictable)
+
+// LDTXR_LR64_ldstexclr_unpriv 1|sz=1|0010010|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdtxrLr64LdstexclrUnpriv: LDTXR  <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+C9400000 ldtxr x0, [x0] (unpredictable)
+C9400007 ldtxr x7, [x0] (unpredictable)
+C940000E ldtxr x14, [x0] (unpredictable)
+C95F7FFF ldtxr xzr, [sp]
+C9504000 ldtxr x0, [x0] (unpredictable)
+C9482000 ldtxr x0, [x0] (unpredictable)
+C9441000 ldtxr x0, [x0] (unpredictable)
+C9420800 ldtxr x0, [x0] (unpredictable)
+C9410400 ldtxr x0, [x0] (unpredictable)
+C95F7C22 ldtxr x2, [x1]

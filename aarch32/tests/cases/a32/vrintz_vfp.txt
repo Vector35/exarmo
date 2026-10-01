@@ -1,0 +1,64 @@
+// VRINTZ_vfp_A1_D cond=xxxx|11101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=11|op=1|1|M=x|0|Vm=xxxx
+// VrintzVfpA1D: VRINTZ{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+0eb68bc6 vrintzeq.f64 d8, d6
+aeb6bbe8 vrintzge.f64 d11, d24
+9eb6cbce vrintzls.f64 d12, d14
+0ef62be6 vrintzeq.f64 d18, d22
+beb6bbcd vrintzlt.f64 d11, d13
+9ef63bca vrintzls.f64 d19, d10
+aeb60bef vrintzge.f64 d0, d31
+4eb68bec vrintzmi.f64 d8, d28
+// Binary Ninja's tests
+aeb63bcc vrintzge.f64 d3, d12
+FEB68BC6 UNALLOCATED
+8EB6FBC0 vrintzhi.f64 d15, d0
+2EB64BC4 vrintzcs.f64 d4, d4
+1EB61BC2 vrintzne.f64 d1, d2
+0EB6FBC1 vrintzeq.f64 d15, d1
+0EF60BC0 vrintzeq.f64 d16, d0
+0EF6FBCF vrintzeq.f64 d31, d15
+0EB68BE0 vrintzeq.f64 d8, d16
+
+// VRINTZ_vfp_A1_H cond=xxxx|11101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=01|op=1|1|M=x|0|Vm=xxxx
+// VrintzVfpA1H: VRINTZ{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+4ef629e0 vrintzmi.f16 s5, s1 (unpredictable)
+3ef679c0 vrintzlo.f16 s15, s0 (unpredictable)
+6eb639c6 vrintzvs.f16 s6, s12 (unpredictable)
+9eb6f9e5 vrintzls.f16 s30, s11 (unpredictable)
+5ef6b9ca vrintzpl.f16 s23, s20 (unpredictable)
+2ef6b9ed vrintzhs.f16 s23, s27 (unpredictable)
+deb689ef vrintzle.f16 s16, s31 (unpredictable)
+6eb689e1 vrintzvs.f16 s16, s3 (unpredictable)
+0EF609E8 vrintzeq.f16 s1, s17 (unpredictable)
+FEF629E0 UNALLOCATED
+8EF649E4 vrintzhi.f16 s9, s9 (unpredictable)
+1EF619E2 vrintzne.f16 s3, s5 (unpredictable)
+4EB609CF vrintzmi.f16 s0, s30 (unpredictable)
+4EF609E0 vrintzmi.f16 s1, s1 (unpredictable)
+4EF6F9E0 vrintzmi.f16 s31, s1 (unpredictable)
+
+// VRINTZ_vfp_A1_S cond=xxxx|11101|D=x|11|o1=0|opc2=110|Vd=xxxx|10|size=10|op=1|1|M=x|0|Vm=xxxx
+// VrintzVfpA1S: VRINTZ{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+cef68acf vrintzgt.f32 s17, s30
+5eb6fae6 vrintzpl.f32 s30, s13
+beb65acd vrintzlt.f32 s10, s26
+ceb65aed vrintzgt.f32 s10, s27
+aeb6cae4 vrintzge.f32 s24, s9
+2eb67ae1 vrintzhs.f32 s14, s3
+beb6fae1 vrintzlt.f32 s30, s3
+eeb6dae4 vrintz.f32 s26, s9
+// Binary Ninja's tests
+eef61acc vrintz.f32 s3, s24
+0EF60AC0 vrintzeq.f32 s1, s0
+FEF68ACF UNALLOCATED
+8EF64AC8 vrintzhi.f32 s9, s16
+4EF62AC2 vrintzmi.f32 s5, s4
+1EB60AC0 vrintzne.f32 s0, s0
+CEF60AE0 vrintzgt.f32 s1, s1
+CEF6FAEF vrintzgt.f32 s31, s31

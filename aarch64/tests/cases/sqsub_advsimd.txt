@@ -1,0 +1,68 @@
+// SQSUB_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=00101|1|Rn=xxxxx|Rd=xxxxx
+// SqsubAsimdsameOnly: SQSUB  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4EA52DF0 sqsub v16.4s, v15.4s, v5.4s
+0E252C82 sqsub v2.8b, v4.8b, v5.8b
+0EB22F1D sqsub v29.2s, v24.2s, v18.2s
+4E2F2C21 sqsub v1.16b, v1.16b, v15.16b
+4E332F4F sqsub v15.16b, v26.16b, v19.16b
+0E682FB2 sqsub v18.4h, v29.4h, v8.4h
+4EE02C43 sqsub v3.2d, v2.2d, v0.2d
+0E612F96 sqsub v22.4h, v28.4h, v1.4h
+4E7D2D7F sqsub v31.8h, v11.8h, v29.8h
+0E232E5D sqsub v29.8b, v18.8b, v3.8b
+4E322C27 sqsub v7.16b, v1.16b, v18.16b
+4E3C2C44 sqsub v4.16b, v2.16b, v28.16b
+0EA82F04 sqsub v4.2s, v24.2s, v8.2s
+0EBD2F16 sqsub v22.2s, v24.2s, v29.2s
+4E652FC0 sqsub v0.8h, v30.8h, v5.8h
+0E6C2F09 sqsub v9.4h, v24.4h, v12.4h
+4EBF2C10 sqsub v16.4s, v0.4s, v31.4s
+4EA52FF0 sqsub v16.4s, v31.4s, v5.4s
+0EE52DF0 UNDEFINED
+4EA52CB0 sqsub v16.4s, v5.4s, v5.4s
+4EA52DE5 sqsub v5.4s, v15.4s, v5.4s
+
+// SQSUB_asisdsame_only 01|U=0|1|111|0|size=xx|1|Rm=xxxxx|opcode=00101|1|Rn=xxxxx|Rd=xxxxx
+// SqsubAsisdsameOnly: SQSUB  <V><d>, <V><n>, <V><m>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, Rm
+// register fields: Rm, Rn, Rd
+5EBA2CE5 sqsub s5, s7, s26
+5EE12EDD sqsub d29, d22, d1
+5E7B2E8E sqsub h14, h20, h27
+5E322C60 sqsub b0, b3, b18
+5E2A2DC9 sqsub b9, b14, b10
+5EE32DFD sqsub d29, d15, d3
+5E672CFD sqsub h29, h7, h7
+5E362DB0 sqsub b16, b13, b22
+5EE12DB3 sqsub d19, d13, d1
+5E3C2D43 sqsub b3, b10, b28
+5E722DB0 sqsub h16, h13, h18
+5E322CA8 sqsub b8, b5, b18
+5E2B2C2A sqsub b10, b1, b11
+5EEF2FEB sqsub d11, d31, d15
+5EB72D46 sqsub s6, s10, s23
+5EB62E7D sqsub s29, s19, s22
+5EA02C1F sqsub s31, s0, s0
+5EBF2CE5 sqsub s5, s7, s31
+5E3A2CFF sqsub b31, b7, b26
+5E7A2CE0 sqsub h0, h7, h26
+5E7A2CFF sqsub h31, h7, h26
+5EBA2CE0 sqsub s0, s7, s26
+5EFA2CE0 sqsub d0, d7, d26
+5EFA2CFF sqsub d31, d7, d26
+5E202CE7 sqsub b7, b7, b0
+5E3F2CE5 sqsub b5, b7, b31
+5E602CE5 sqsub h5, h7, h0
+5E7F2CE5 sqsub h5, h7, h31
+5EE02CE5 sqsub d5, d7, d0
+5EFF2CE5 sqsub d5, d7, d31
+5E3A2C1A sqsub b26, b0, b26
+5E3A2FE5 sqsub b5, b31, b26
+5E7A2C05 sqsub h5, h0, h26
+5E7A2FE5 sqsub h5, h31, h26
+5EBA2FE5 sqsub s5, s31, s26
+5EFA2C05 sqsub d5, d0, d26

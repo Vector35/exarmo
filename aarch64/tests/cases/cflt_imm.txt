@@ -1,0 +1,179 @@
+// CFLTEQ_32_imm sf=0|1110110|cc=100|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cflteq32Imm: CFLTEQ  #<reason>, <Wt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+76800000 cflteq #0x0, w0, #0x0
+769F05FF cflteq #0x1, wzr, #-0x1
+76900900 cflteq #0x2, w0, #-0xf8
+76880C80 cflteq #0x3, w0, #0x84
+76840040 cflteq #0x0, w0, #0x42
+76820020 cflteq #0x0, w0, #0x21
+76810000 cflteq #0x0, w0, #0x10
+768001E0 cflteq #0x0, w0, #0xf
+769F0000 cflteq #0x0, w0, #-0x10
+769F01E0 cflteq #0x0, w0, #-0x1
+
+// CFLTEQ_64_imm sf=1|1110110|cc=100|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cflteq64Imm: CFLTEQ  #<reason>, <Xt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+F6800000 cflteq #0x0, x0, #0x0
+F69F05FF cflteq #0x1, xzr, #-0x1
+F6900900 cflteq #0x2, x0, #-0xf8
+F6880C80 cflteq #0x3, x0, #0x84
+F6840040 cflteq #0x0, x0, #0x42
+F6820020 cflteq #0x0, x0, #0x21
+F6810000 cflteq #0x0, x0, #0x10
+F68001E0 cflteq #0x0, x0, #0xf
+F69F0000 cflteq #0x0, x0, #-0x10
+F69F01E0 cflteq #0x0, x0, #-0x1
+
+// CFLTGT_32_imm sf=0|1110110|cc=000|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cfltgt32Imm: CFLTGT  #<reason>, <Wt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+76000000 cfltgt #0x0, w0, #0x0
+761F05FF cfltgt #0x1, wzr, #-0x1
+76100900 cfltgt #0x2, w0, #-0xf8
+76080C80 cfltgt #0x3, w0, #0x84
+76040040 cfltgt #0x0, w0, #0x42
+76020020 cfltgt #0x0, w0, #0x21
+76010000 cfltgt #0x0, w0, #0x10
+760001E0 cfltgt #0x0, w0, #0xf
+761F0000 cfltgt #0x0, w0, #-0x10
+761F01E0 cfltgt #0x0, w0, #-0x1
+
+// CFLTGT_64_imm sf=1|1110110|cc=000|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cfltgt64Imm: CFLTGT  #<reason>, <Xt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+F6000000 cfltgt #0x0, x0, #0x0
+F61F05FF cfltgt #0x1, xzr, #-0x1
+F6100900 cfltgt #0x2, x0, #-0xf8
+F6080C80 cfltgt #0x3, x0, #0x84
+F6040040 cfltgt #0x0, x0, #0x42
+F6020020 cfltgt #0x0, x0, #0x21
+F6010000 cfltgt #0x0, x0, #0x10
+F60001E0 cfltgt #0x0, x0, #0xf
+F61F0000 cfltgt #0x0, x0, #-0x10
+F61F01E0 cfltgt #0x0, x0, #-0x1
+
+// CFLTHI_32_imm sf=0|1110110|cc=010|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cflthi32Imm: CFLTHI  #<reason>, <Wt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+76400000 cflthi #0x0, w0, #0x0
+765F05FF cflthi #0x1, wzr, #0x1ff
+76500900 cflthi #0x2, w0, #0x108
+76480C80 cflthi #0x3, w0, #0x84
+76440040 cflthi #0x0, w0, #0x42
+76420020 cflthi #0x0, w0, #0x21
+76410000 cflthi #0x0, w0, #0x10
+764001E0 cflthi #0x0, w0, #0xf
+765F0000 cflthi #0x0, w0, #0x1f0
+765F01E0 cflthi #0x0, w0, #0x1ff
+
+// CFLTHI_64_imm sf=1|1110110|cc=010|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cflthi64Imm: CFLTHI  #<reason>, <Xt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+F6400000 cflthi #0x0, x0, #0x0
+F65F05FF cflthi #0x1, xzr, #0x1ff
+F6500900 cflthi #0x2, x0, #0x108
+F6480C80 cflthi #0x3, x0, #0x84
+F6440040 cflthi #0x0, x0, #0x42
+F6420020 cflthi #0x0, x0, #0x21
+F6410000 cflthi #0x0, x0, #0x10
+F64001E0 cflthi #0x0, x0, #0xf
+F65F0000 cflthi #0x0, x0, #0x1f0
+F65F01E0 cflthi #0x0, x0, #0x1ff
+
+// CFLTLO_32_imm sf=0|1110110|cc=011|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cfltlo32Imm: CFLTLO  #<reason>, <Wt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+76600000 cfltlo #0x0, w0, #0x0
+767F05FF cfltlo #0x1, wzr, #0x1ff
+76700900 cfltlo #0x2, w0, #0x108
+76680C80 cfltlo #0x3, w0, #0x84
+76640040 cfltlo #0x0, w0, #0x42
+76620020 cfltlo #0x0, w0, #0x21
+76610000 cfltlo #0x0, w0, #0x10
+766001E0 cfltlo #0x0, w0, #0xf
+767F0000 cfltlo #0x0, w0, #0x1f0
+767F01E0 cfltlo #0x0, w0, #0x1ff
+
+// CFLTLO_64_imm sf=1|1110110|cc=011|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cfltlo64Imm: CFLTLO  #<reason>, <Xt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+F6600000 cfltlo #0x0, x0, #0x0
+F67F05FF cfltlo #0x1, xzr, #0x1ff
+F6700900 cfltlo #0x2, x0, #0x108
+F6680C80 cfltlo #0x3, x0, #0x84
+F6640040 cfltlo #0x0, x0, #0x42
+F6620020 cfltlo #0x0, x0, #0x21
+F6610000 cfltlo #0x0, x0, #0x10
+F66001E0 cfltlo #0x0, x0, #0xf
+F67F0000 cfltlo #0x0, x0, #0x1f0
+F67F01E0 cfltlo #0x0, x0, #0x1ff
+
+// CFLTLT_32_imm sf=0|1110110|cc=001|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cfltlt32Imm: CFLTLT  #<reason>, <Wt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+76200000 cfltlt #0x0, w0, #0x0
+763F05FF cfltlt #0x1, wzr, #-0x1
+76300900 cfltlt #0x2, w0, #-0xf8
+76280C80 cfltlt #0x3, w0, #0x84
+76240040 cfltlt #0x0, w0, #0x42
+76220020 cfltlt #0x0, w0, #0x21
+76210000 cfltlt #0x0, w0, #0x10
+762001E0 cfltlt #0x0, w0, #0xf
+763F0000 cfltlt #0x0, w0, #-0x10
+763F01E0 cfltlt #0x0, w0, #-0x1
+
+// CFLTLT_64_imm sf=1|1110110|cc=001|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cfltlt64Imm: CFLTLT  #<reason>, <Xt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+F6200000 cfltlt #0x0, x0, #0x0
+F63F05FF cfltlt #0x1, xzr, #-0x1
+F6300900 cfltlt #0x2, x0, #-0xf8
+F6280C80 cfltlt #0x3, x0, #0x84
+F6240040 cfltlt #0x0, x0, #0x42
+F6220020 cfltlt #0x0, x0, #0x21
+F6210000 cfltlt #0x0, x0, #0x10
+F62001E0 cfltlt #0x0, x0, #0xf
+F63F0000 cfltlt #0x0, x0, #-0x10
+F63F01E0 cfltlt #0x0, x0, #-0x1
+
+// CFLTNE_32_imm sf=0|1110110|cc=101|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cfltne32Imm: CFLTNE  #<reason>, <Wt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+76A00000 cfltne #0x0, w0, #0x0
+76BF05FF cfltne #0x1, wzr, #-0x1
+76B00900 cfltne #0x2, w0, #-0xf8
+76A80C80 cfltne #0x3, w0, #0x84
+76A40040 cfltne #0x0, w0, #0x42
+76A20020 cfltne #0x0, w0, #0x21
+76A10000 cfltne #0x0, w0, #0x10
+76A001E0 cfltne #0x0, w0, #0xf
+76BF0000 cfltne #0x0, w0, #-0x10
+76BF01E0 cfltne #0x0, w0, #-0x1
+
+// CFLTNE_64_imm sf=1|1110110|cc=101|imm9h=xxxxx|0000|imm2=xx|0|imm9l=xxxx|Rt=xxxxx
+// Cfltne64Imm: CFLTNE  #<reason>, <Xt>, #<imm>
+// read together by <imm>: imm9h, imm9l
+// register fields: Rt
+F6A00000 cfltne #0x0, x0, #0x0
+F6BF05FF cfltne #0x1, xzr, #-0x1
+F6B00900 cfltne #0x2, x0, #-0xf8
+F6A80C80 cfltne #0x3, x0, #0x84
+F6A40040 cfltne #0x0, x0, #0x42
+F6A20020 cfltne #0x0, x0, #0x21
+F6A10000 cfltne #0x0, x0, #0x10
+F6A001E0 cfltne #0x0, x0, #0xf
+F6BF0000 cfltne #0x0, x0, #-0x10
+F6BF01E0 cfltne #0x0, x0, #-0x1

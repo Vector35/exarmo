@@ -1,0 +1,21 @@
+// subr_z_p_zz_ 000|0010|0|size=xx|0|00|opc=011|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SubrZPZz: SUBR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04430FA6 subr z6.h, p3/m, z6.h, z29.h
+04C31B12 subr z18.d, p6/m, z18.d, z24.d
+04C31363 subr z3.d, p4/m, z3.d, z27.d
+04430492 subr z18.h, p1/m, z18.h, z4.h
+04431CDC subr z28.h, p7/m, z28.h, z6.h
+04831AB8 subr z24.s, p6/m, z24.s, z21.s
+04430791 subr z17.h, p1/m, z17.h, z28.h
+04C306E9 subr z9.d, p1/m, z9.d, z23.d
+04030A35 subr z21.b, p2/m, z21.b, z17.b
+040304D3 subr z19.b, p1/m, z19.b, z6.b
+04030AEA subr z10.b, p2/m, z10.b, z23.b
+04C31F1F subr z31.d, p7/m, z31.d, z24.d
+04C30D67 subr z7.d, p3/m, z7.d, z11.d
+04430559 subr z25.h, p1/m, z25.h, z10.h
+04031CF5 subr z21.b, p7/m, z21.b, z7.b
+04031364 subr z4.b, p4/m, z4.b, z27.b
+04430000 subr z0.h, p0/m, z0.h, z0.h
+044317E6 subr z6.h, p5/m, z6.h, z31.h

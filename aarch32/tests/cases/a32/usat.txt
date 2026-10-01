@@ -1,0 +1,40 @@
+// USAT_A1_ASR cond=xxxx|01101|U=1|1|sat_imm=xxxxx|Rd=xxxx|imm5=xxxxx|sh=1|01|Rn=xxxx
+// UsatA1Asr: USAT{<c>}{<q>}  <Rd>, #<imm>, <Rn>, ASR #<amount>
+// register fields: Rd, Rn
+a6f2c750 usatge r12, #18, r0, asr #14
+36e95a50 usatlo r5, #9, r0, asr #20
+46e505d2 usatmi r0, #5, r2, asr #11
+e6e37252 usat r7, #3, r2, asr #4
+16efa1d9 usatne r10, #15, r9, asr #3
+e6e8c4d6 usat r12, #8, r6, asr #9
+a6f1a05f usatge r10, #17, pc, asr #32 (unpredictable)
+16ed845a usatne r8, #13, r10, asr #8
+// Binary Ninja's tests
+e6f080da usat r8, #16, r10, asr #1
+e6ff805a usat r8, #31, r10, asr #32
+06E0FFD0 usateq pc, #0x0, r0, asr #0x1f (unpredictable)
+F6F2C750 UNALLOCATED
+86E4C85C usathi r12, #0x4, r12, asr #0x10
+26E2C150 usatcs r12, #0x2, r0, asr #0x2
+A6E1C750 usatge r12, #0x1, r0, asr #0xe
+
+// USAT_A1_LSL cond=xxxx|01101|U=1|1|sat_imm=xxxxx|Rd=xxxx|imm5=xxxxx|sh=0|01|Rn=xxxx
+// UsatA1Lsl: USAT{<c>}{<q>}  <Rd>, #<imm>, <Rn> {, LSL #<amount>}
+// register fields: Rd, Rn
+b6fe1612 usatlt r1, #30, r2, lsl #12
+56ff9f94 usatpl r9, #31, r4, lsl #31
+76f3e49d usatvc lr, #19, sp, lsl #9
+36fe2f14 usatlo r2, #30, r4, lsl #30
+a6f81c9b usatge r1, #24, r11, lsl #25
+36f84519 usatlo r4, #24, r9, lsl #10
+16e1ca15 usatne r12, #1, r5, lsl #20
+a6fb5419 usatge r5, #27, r9, lsl #8
+// Binary Ninja's tests
+e6e1801a usat r8, #1, r10
+e6e4801a usat r8, #4, r10
+e6e58f9a usat r8, #5, r10, lsl #31
+06E00810 usateq r0, #0x0, r0, lsl #0x10
+F6FE1612 UNALLOCATED
+86F0F21F usathi pc, #0x10, pc, lsl #0x4 (unpredictable)
+46E81111 usatmi r1, #0x8, r1, lsl #0x2
+26E21092 usatcs r1, #0x2, r2, lsl #0x1

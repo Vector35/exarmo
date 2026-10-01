@@ -1,0 +1,29 @@
+// clasta_v_p_z_ 000|0010|1|size=xx|1|0|101|B=0|10|0|Pg=xxx|Zm=xxxxx|Vdn=xxxxx
+// ClastaVPZ: CLASTA  <V><dn>, <Pg>, <V><dn>, <Zm>.<T>
+// read together by <dn>: size, Vdn
+// register fields: Pg, Zm, Vdn
+05AA914E clasta s14, p4, s14, z10.s
+052A9B3E clasta b30, p6, b30, z25.b
+05AA9B4C clasta s12, p6, s12, z26.s
+05AA8BAE clasta s14, p2, s14, z29.s
+052A94E8 clasta b8, p5, b8, z7.b
+05EA9B12 clasta d18, p6, d18, z24.d
+05AA8328 clasta s8, p0, s8, z25.s
+056A8AAD clasta h13, p2, h13, z21.h
+052A9BE5 clasta b5, p6, b5, z31.b
+05EA8C2A clasta d10, p3, d10, z1.d
+05AA8C7A clasta s26, p3, s26, z3.s
+05EA8F81 clasta d1, p3, d1, z28.d
+052A8F4A clasta b10, p3, b10, z26.b
+052A849C clasta b28, p1, b28, z4.b
+05EA91B4 clasta d20, p4, d20, z13.d
+056A8550 clasta h16, p1, h16, z10.h
+05AA9C00 clasta s0, p7, s0, z0.s
+05AA915F clasta s31, p4, s31, z10.s
+052A9140 clasta b0, p4, b0, z10.b
+052A915F clasta b31, p4, b31, z10.b
+056A9140 clasta h0, p4, h0, z10.h
+056A915F clasta h31, p4, h31, z10.h
+05EA9140 clasta d0, p4, d0, z10.d
+05EA915F clasta d31, p4, d31, z10.d
+05AA9144 clasta s4, p4, s4, z10.s

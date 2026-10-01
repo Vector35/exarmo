@@ -1,0 +1,19 @@
+// VINS_T1 111|1|11|101|D=x|110000|Vd=xxxx|1|0|size=10|op=1|1|M=x|0|Vm=xxxx
+// VinsT1: VINS{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+fef09aea vins.f16 s19, s21
+feb09ac2 vins.f16 s18, s4
+fef0aaee vins.f16 s21, s29
+feb0cac8 vins.f16 s24, s16
+feb05aea vins.f16 s10, s21
+feb05ae5 vins.f16 s10, s11
+feb01ae6 vins.f16 s2, s13
+fef0fac7 vins.f16 s31, s14
+FEF00AE0 vins.f16 s1, s1
+FEF08AEF vins.f16 s17, s31
+FEF04AE4 vins.f16 s9, s9
+FEF02AE1 vins.f16 s5, s3
+FEB00AC0 vins.f16 s0, s0
+FEF09AEF vins.f16 s19, s31
+FEB0FACF vins.f16 s30, s30

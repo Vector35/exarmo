@@ -1,0 +1,67 @@
+// VNMLS_A1_D cond=xxxx|1110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=0|M=x|0|Vm=xxxx
+// VnmlsA1D: VNMLS{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+ae573bab vnmlsge.f64 d19, d23, d27
+9e52db86 vnmlsls.f64 d29, d18, d6
+ce57db20 vnmlsgt.f64 d29, d7, d16
+de51cba1 vnmlsle.f64 d28, d17, d17
+8e512baa vnmlshi.f64 d18, d17, d26
+1e577b03 vnmlsne.f64 d23, d7, d3
+ee1d3b84 vnmls.f64 d3, d29, d4
+2e1ceb2f vnmlshs.f64 d14, d12, d31
+// Binary Ninja's tests
+ee520ba1 vnmls.f64 d16, d18, d17
+0E50FBA8 vnmlseq.f64 d31, d16, d24
+4E5F8BA2 vnmlsmi.f64 d24, d31, d18
+AE584B80 vnmlsge.f64 d20, d24, d0
+AE541B8F vnmlsge.f64 d17, d20, d15
+AE100B2B vnmlsge.f64 d0, d0, d27
+AE10FBAB vnmlsge.f64 d15, d16, d27
+AE5FFB2B vnmlsge.f64 d31, d15, d27
+AE5F3BAB vnmlsge.f64 d19, d31, d27
+
+// VNMLS_A1_H cond=xxxx|1110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=0|M=x|0|Vm=xxxx
+// VnmlsA1H: VNMLS{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+2e503987 vnmlshs.f16 s7, s1, s14 (unpredictable)
+be1b790f vnmlslt.f16 s14, s22, s30 (unpredictable)
+1e52098c vnmlsne.f16 s1, s5, s24 (unpredictable)
+4e5bc986 vnmlsmi.f16 s25, s23, s12 (unpredictable)
+ee54198b vnmls.f16 s3, s9, s22
+4e10a98c vnmlsmi.f16 s20, s1, s24 (unpredictable)
+8e1cc98d vnmlshi.f16 s24, s25, s26 (unpredictable)
+7e521908 vnmlsvc.f16 s3, s4, s16 (unpredictable)
+0E5FF9A0 vnmlseq.f16 s31, s31, s1 (unpredictable)
+2E588984 vnmlscs.f16 s17, s17, s8 (unpredictable)
+2E514982 vnmlscs.f16 s9, s3, s4 (unpredictable)
+2E502901 vnmlscs.f16 s5, s0, s2 (unpredictable)
+2E1F0900 vnmlscs.f16 s0, s30, s0 (unpredictable)
+2E1FF9A0 vnmlscs.f16 s30, s31, s1 (unpredictable)
+2E50F9AF vnmlscs.f16 s31, s1, s31 (unpredictable)
+
+// VNMLS_A1_S cond=xxxx|1110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=0|M=x|0|Vm=xxxx
+// VnmlsA1S: VNMLS{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+7e548a04 vnmlsvc.f32 s17, s8, s8
+5e1d2a04 vnmlspl.f32 s4, s26, s8
+ce17daa1 vnmlsgt.f32 s26, s15, s3
+5e17caac vnmlspl.f32 s24, s15, s25
+1e540aac vnmlsne.f32 s1, s9, s25
+6e5a6a03 vnmlsvs.f32 s13, s20, s6
+6e523a87 vnmlsvs.f32 s7, s5, s14
+9e546a2d vnmlsls.f32 s13, s8, s27
+// Binary Ninja's tests
+ee510a00 vnmls.f32 s1, s2, s0
+0E50FA0F vnmlseq.f32 s31, s0, s30
+8E5F4A08 vnmlshi.f32 s9, s30, s16
+4E581A02 vnmlsmi.f32 s3, s16, s4
+2E100A0F vnmlscs.f32 s0, s0, s30
+7E10FAA0 vnmlsvc.f32 s30, s1, s1
+7E5FFA2F vnmlsvc.f32 s31, s30, s31
+7E5F8A84 vnmlsvc.f32 s17, s31, s8

@@ -1,0 +1,20 @@
+// SXTB16_A1 cond=xxxx|011|01|U=0|op=00|Rn=1111|Rd=xxxx|rotate=xx|(0)(0)|011|1|Rm=xxxx
+// Sxtb16A1: SXTB16{<c>}{<q>}  {<Rd>, }<Rm> {, ROR #<amount>}
+// register fields: Rd, Rm
+c68f207b sxtb16gt r2, r11
+668fc675 sxtb16vs r12, r5, ror #8 (unpredictable)
+868f8c70 sxtb16hi r8, r0, ror #24
+868fec74 sxtb16hi lr, r4, ror #24
+568f1675 sxtb16pl r1, r5, ror #8 (unpredictable)
+768f857f sxtb16vc r8, pc, ror #8 (unpredictable)
+868fc77c sxtb16hi r12, r12, ror #8 (unpredictable)
+168fe17d sxtb16ne lr, sp (unpredictable)
+// Binary Ninja's tests
+268f3475 sxtb16hs r3, r5, ror #8
+a68f2c73 sxtb16ge r2, r3, ror #24
+e68f1074 sxtb16 r1, r4
+e68f3871 sxtb16 r3, r1, ror #16
+e68f6077 sxtb16 r6, r7
+068F007B sxtb16eq r0, r11
+F68F207B UNALLOCATED
+468FF07B sxtb16mi pc, r11 (unpredictable)

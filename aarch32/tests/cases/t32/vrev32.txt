@@ -1,0 +1,44 @@
+// VREV32_T1_D 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|000|op=01|Q=0|M=x|0|Vm=xxxx
+// Vrev32T1D: VREV32{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fff420ac vrev32.16 d18, d28
+ffb0a0a5 vrev32.8 d10, d21
+fff4d0af vrev32.16 d29, d31
+fff00087 vrev32.8 d16, d7
+fff460ac vrev32.16 d22, d28
+ffb04080 vrev32.8 d4, d0
+fff4908b vrev32.16 d25, d11
+ffb470a3 vrev32.16 d7, d19
+FFF820AC UNDEFINED
+FFFC20AC UNDEFINED
+FFF4F0A8 vrev32.16 d31, d24
+FFF480A4 vrev32.16 d24, d20
+FFF410A2 vrev32.16 d17, d18
+FFB400A1 vrev32.16 d0, d17
+FFB4F08F vrev32.16 d15, d15
+FFF4F0A0 vrev32.16 d31, d16
+FFF420AC [ne] vrev32ne.16 d18, d28
+
+// VREV32_T1_Q 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|000|op=01|Q=1|M=x|0|Vm=xxxx
+// Vrev32T1Q: VREV32{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb4c0e8 vrev32.16 q6, q12
+fff4e0e8 vrev32.16 q15, q12
+fff0c0ce vrev32.8 q14, q7
+ffb060ec vrev32.8 q3, q14
+ffb420e0 vrev32.16 q1, q8
+ffb400ec vrev32.16 q0, q14
+ffb0e0c6 vrev32.8 q7, q3
+ffb0c0ea vrev32.8 q6, q13
+FFB8F0EF UNDEFINED
+FFBC10E1 UNDEFINED
+FFB480E4 vrev32.16 q4, q10
+FFB440E2 vrev32.16 q2, q9
+FFB4F0CF UNDEFINED
+FFF400C0 vrev32.16 q8, q0
+FFF4F0EF UNDEFINED
+FFB4C0E8 [ne] vrev32ne.16 q6, q12

@@ -1,0 +1,20 @@
+// fcvtzu_mz_z_2 1|10|0000|1|00|1|000|01|111000|Zn=xxxx|U=1|Zd=xxxx|0
+// FcvtzuMzZ2: FCVTZU  { <Zd1>.S-<Zd2>.S }, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+C121E02A fcvtzu {z10.s-z11.s}, {z0.s-z1.s}
+C121E038 fcvtzu {z24.s-z25.s}, {z0.s-z1.s}
+C121E062 fcvtzu {z2.s-z3.s}, {z2.s-z3.s}
+C121E3E0 fcvtzu {z0.s-z1.s}, {z30.s-z31.s}
+C121E03E fcvtzu {z30.s-z31.s}, {z0.s-z1.s}
+
+// fcvtzu_mz_z_4 1|10|0000|1|00|1|100|01|111000|Zn=xxx|0|U=1|Zd=xxx|00
+// FcvtzuMzZ4: FCVTZU  { <Zd1>.S-<Zd4>.S }, { <Zn1>.S-<Zn4>.S }
+// register fields: Zn, Zd
+C131E034 fcvtzu {z20.s-z23.s}, {z0.s-z3.s}
+C131E0A4 fcvtzu {z4.s-z7.s}, {z4.s-z7.s}
+C131E130 fcvtzu {z16.s-z19.s}, {z8.s-z11.s}
+C131E1A0 fcvtzu {z0.s-z3.s}, {z12.s-z15.s}
+C131E228 fcvtzu {z8.s-z11.s}, {z16.s-z19.s}
+C131E2AC fcvtzu {z12.s-z15.s}, {z20.s-z23.s}
+C131E338 fcvtzu {z24.s-z27.s}, {z24.s-z27.s}
+C131E3BC fcvtzu {z28.s-z31.s}, {z28.s-z31.s}

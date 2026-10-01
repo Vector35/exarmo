@@ -1,0 +1,39 @@
+// SMUAD_A1 cond=xxxx|01110|op1=000|Rd=xxxx|Ra=1111|Rm=xxxx|00|M=0|1|Rn=xxxx
+// SmuadA1: SMUAD{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+a70bf61e smuadge r11, lr, r6
+b70af513 smuadlt r10, r3, r5
+b709fe17 smuadlt r9, r7, lr
+870ef21c smuadhi lr, r12, r2
+070cf71d smuadeq r12, sp, r7
+3700f410 smuadlo r0, r0, r4
+2703f91c smuadhs r3, r12, r9
+a704f517 smuadge r4, r7, r5
+// Binary Ninja's tests
+b702f413 smuadlt r2, r3, r4
+e702f413 smuad r2, r3, r4
+F70BF61E UNALLOCATED
+470FF01F smuadmi pc, pc, r0 (unpredictable)
+170BFF1E smuadne r11, lr, pc (unpredictable)
+A70BFB1E smuadge r11, lr, r11
+A70BF616 smuadge r11, r6, r6
+
+// SMUADX_A1 cond=xxxx|01110|op1=000|Rd=xxxx|Ra=1111|Rm=xxxx|00|M=1|1|Rn=xxxx
+// SmuadxA1: SMUADX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+8702f833 smuadxhi r2, r3, r8
+3708f43d smuadxlo r8, sp, r4
+7702f03f smuadxvc r2, pc, r0 (unpredictable)
+e705fe3b smuadx r5, r11, lr
+770ff531 smuadxvc pc, r1, r5 (unpredictable)
+170bf235 smuadxne r11, r5, r2
+e705fe31 smuadx r5, r1, lr
+2700fb3d smuadxhs r0, sp, r11
+// Binary Ninja's tests
+a703f132 smuadxge r3, r2, r1
+e703f132 smuadx r3, r2, r1
+0702FF30 smuadxeq r2, r0, pc (unpredictable)
+F702F833 UNALLOCATED
+4702F233 smuadxmi r2, r3, r2
+8702F832 smuadxhi r2, r2, r8
+8702F838 smuadxhi r2, r8, r8

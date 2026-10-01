@@ -1,0 +1,65 @@
+// SQXTUN_asimdmisc_N 0|Q=x|U=1|0|111|0|size=xx|10000|opcode=10010|10|Rn=xxxxx|Rd=xxxxx
+// SqxtunAsimdmiscN: SQXTUN  <Vd>.<Tb>, <Vn>.<Ta>
+// SqxtunAsimdmiscN2: SQXTUN2  <Vd>.<Tb>, <Vn>.<Ta>
+// read together by <Tb>: Q, size
+// register fields: Rn, Rd
+// form chosen on: Q
+2E212B5F sqxtun v31.8b, v26.8h
+6EA128E0 sqxtun2 v0.4s, v7.2d
+6E21293A sqxtun2 v26.16b, v9.8h
+2E212AA7 sqxtun v7.8b, v21.8h
+2EA12A16 sqxtun v22.2s, v16.2d
+6EA12A3D sqxtun2 v29.4s, v17.2d
+6E612B4E sqxtun2 v14.8h, v26.4s
+2EA12914 sqxtun v20.2s, v8.2d
+6EA12AFE sqxtun2 v30.4s, v23.2d
+2E61289B sqxtun v27.4h, v4.4s
+2E212B1B sqxtun v27.8b, v24.8h
+6E212928 sqxtun2 v8.16b, v9.8h
+6E612AFD sqxtun2 v29.8h, v23.4s
+6E6128D7 sqxtun2 v23.8h, v6.4s
+6E61288C sqxtun2 v12.8h, v4.4s
+2E212857 sqxtun v23.8b, v2.8h
+2E21281F sqxtun v31.8b, v0.8h
+2E212BFF sqxtun v31.8b, v31.8h
+2EE12B5F UNDEFINED
+6EE12B5F UNDEFINED
+6E21281F sqxtun2 v31.16b, v0.8h
+
+// SQXTUN_asisdmisc_N 01|U=1|1|111|0|size=xx|10000|opcode=10010|10|Rn=xxxxx|Rd=xxxxx
+// SqxtunAsisdmiscN: SQXTUN  <Vb><d>, <Va><n>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// register fields: Rn, Rd
+7E612B02 sqxtun h2, s24
+7E212910 sqxtun b16, h8
+7E212A62 sqxtun b2, h19
+7E61290E sqxtun h14, s8
+7E212860 sqxtun b0, h3
+7E21292C sqxtun b12, h9
+7E212ABC sqxtun b28, h21
+7E212BB9 sqxtun b25, h29
+7E212859 sqxtun b25, h2
+7E6129E7 sqxtun h7, s15
+7E612A6D sqxtun h13, s19
+7E6128B2 sqxtun h18, s5
+7EA12B74 sqxtun s20, d27
+7EA128CA sqxtun s10, d6
+7E212ACF sqxtun b15, h22
+7E612A65 sqxtun h5, s19
+7E61281F sqxtun h31, s0
+7E612BE2 sqxtun h2, s31
+7EE12B02 UNDEFINED
+7E212B1F sqxtun b31, h24
+7E612B00 sqxtun h0, s24
+7EA12B00 sqxtun s0, d24
+7EA12B1F sqxtun s31, d24
+7EE12B00 UNDEFINED
+7EE12B1F UNDEFINED
+7E212802 sqxtun b2, h0
+7E212BE2 sqxtun b2, h31
+7EA12802 sqxtun s2, d0
+7EA12BE2 sqxtun s2, d31
+7EE12802 UNDEFINED
+7EE12BE2 UNDEFINED
+7E612B18 sqxtun h24, s24

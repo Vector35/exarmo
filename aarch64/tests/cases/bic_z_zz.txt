@@ -1,0 +1,23 @@
+// bic_z_zz_ 000|0010|0|opc=11|1|Zm=xxxxx|001|100|Zn=xxxxx|Zd=xxxxx
+// BicZZz: BIC  <Zd>.D, <Zn>.D, <Zm>.D
+// register fields: Zm, Zn, Zd
+04E932D8 bic z24.d, z22.d, z9.d
+04ED30E0 bic z0.d, z7.d, z13.d
+04F432E4 bic z4.d, z23.d, z20.d
+04E53353 bic z19.d, z26.d, z5.d
+04FD3385 bic z5.d, z28.d, z29.d
+04E53316 bic z22.d, z24.d, z5.d
+04EB3256 bic z22.d, z18.d, z11.d
+04F83087 bic z7.d, z4.d, z24.d
+04E632E9 bic z9.d, z23.d, z6.d
+04FC33A5 bic z5.d, z29.d, z28.d
+04F83183 bic z3.d, z12.d, z24.d
+04F13204 bic z4.d, z16.d, z17.d
+04EE31DD bic z29.d, z14.d, z14.d
+04F93154 bic z20.d, z10.d, z25.d
+04E43182 bic z2.d, z12.d, z4.d
+04E63381 bic z1.d, z28.d, z6.d
+04E0301F bic z31.d, z0.d, z0.d
+04FF33F8 bic z24.d, z31.d, z31.d
+04E932C9 bic z9.d, z22.d, z9.d
+04E932D6 bic z22.d, z22.d, z9.d

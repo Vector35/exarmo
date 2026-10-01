@@ -1,0 +1,47 @@
+// VRSHL_A1_D 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0101|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VrshlA1D: VRSHL{<c>}{<q>}.<dt>  {<Dd>, }<Dm>, <Dn>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// read together by <Dn>: Vn, N
+f35cb581 vrshl.u16 d27, d1, d28
+f32a652f vrshl.u32 d6, d31, d10
+f25a458d vrshl.s16 d20, d13, d26
+f33285ae vrshl.u64 d8, d30, d18
+f25c45a9 vrshl.s16 d20, d25, d28
+f363052d vrshl.u32 d16, d29, d3
+f311c501 vrshl.u16 d12, d1, d1
+f24c258d vrshl.s8 d18, d13, d28
+F260F580 vrshl.s32 d31, d0, d16
+F27F1588 vrshl.s64 d17, d8, d31
+F3080584 vrshl.u8 d0, d4, d24
+F314F582 vrshl.u16 d15, d2, d20
+F350F500 vrshl.u16 d31, d0, d0
+F350B58F vrshl.u16 d27, d15, d16
+F35FB520 vrshl.u16 d27, d16, d15
+F35FB581 vrshl.u16 d27, d1, d31
+
+// VRSHL_A1_Q 1111001|U=x|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0101|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VrshlA1Q: VRSHL{<c>}{<q>}.<dt>  {<Qd>, }<Qm>, <Qn>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// read together by <Qn>: Vn, N
+f250a56c vrshl.s16 q13, q14, q0
+f268a5c0 vrshl.s32 q13, q0, q12
+f21a05ca vrshl.s16 q0, q5, q13
+f266e5c4 vrshl.s32 q15, q2, q11
+f25405e4 vrshl.s16 q8, q10, q10
+f21485e8 vrshl.s16 q4, q12, q10
+f224a5c6 vrshl.s32 q5, q3, q10
+f24c6542 vrshl.s8 q11, q1, q6
+F3724560 vrshl.u64 q10, q8, q1
+F25FF56F UNDEFINED
+F2511561 UNDEFINED
+F27025EC vrshl.s64 q9, q14, q8
+F340A56C vrshl.u8 q13, q14, q0
+F350A56C vrshl.u16 q13, q14, q0
+F360A56C vrshl.u32 q13, q14, q0
+F370A56C vrshl.u64 q13, q14, q0
+F21FF54F UNDEFINED
+F25FF5EF UNDEFINED

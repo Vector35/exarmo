@@ -1,0 +1,12 @@
+// UDIV_T1 111|1101|11|op1=011|Rn=xxxx|(1)(1)(1)(1)|Rd=xxxx|op2=1111|Rm=xxxx
+// UdivT1: UDIV{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+FBB000F0 udiv r0, r0, r0 (unpredictable)
+FBBFFFFF udiv pc, pc, pc (unpredictable)
+FBB080F0 udiv r0, r0, r0 (unpredictable)
+FBB040F0 udiv r0, r0, r0 (unpredictable)
+FBB020F0 udiv r0, r0, r0 (unpredictable)
+FBB010F0 udiv r0, r0, r0 (unpredictable)
+FBB000F0 [ne] udivne r0, r0, r0 (unpredictable)
+FBB1F2F3 udiv r2, r1, r3

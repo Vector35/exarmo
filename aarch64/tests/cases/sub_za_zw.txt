@@ -1,0 +1,24 @@
+// sub_za_zw_2x2 1|10|0000|11|sz=x|1|00|00|00|Rv=xx|111|Zm=xxxx|0|1|S=1|off3=xxx
+// SubZaZw2x2: SUB  ZA.<T>[<Wv>, <offs>{, VGx2}], { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Rv, Zm
+C1A01C1A sub za.s[w8, 2, vgx2], {z0.s-z1.s}
+C1A01C59 sub za.s[w8, 1, vgx2], {z2.s-z3.s}
+C1A01C98 sub za.s[w8, 0, vgx2], {z4.s-z5.s}
+C1E03FDB sub za.d[w9, 3, vgx2], {z30.d-z31.d}
+C1A05C1C sub za.s[w10, 4, vgx2], {z0.s-z1.s}
+C1A07C1D sub za.s[w11, 5, vgx2], {z0.s-z1.s}
+C1A01C1E sub za.s[w8, 6, vgx2], {z0.s-z1.s}
+C1A01C1F sub za.s[w8, 7, vgx2], {z0.s-z1.s}
+
+// sub_za_zw_4x4 1|10|0000|11|sz=x|1|00|00|10|Rv=xx|111|Zm=xxx|00|1|S=1|off3=xxx
+// SubZaZw4x4: SUB  ZA.<T>[<Wv>, <offs>{, VGx4}], { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Rv, Zm
+C1A11C18 sub za.s[w8, 0, vgx4], {z0.s-z3.s}
+C1A11C1F sub za.s[w8, 7, vgx4], {z0.s-z3.s}
+C1A11C9D sub za.s[w8, 5, vgx4], {z4.s-z7.s}
+C1E13D19 sub za.d[w9, 1, vgx4], {z8.d-z11.d}
+C1A15D9A sub za.s[w10, 2, vgx4], {z12.s-z15.s}
+C1A17E1B sub za.s[w11, 3, vgx4], {z16.s-z19.s}
+C1A11E9C sub za.s[w8, 4, vgx4], {z20.s-z23.s}
+C1A11F1E sub za.s[w8, 6, vgx4], {z24.s-z27.s}
+C1A11F98 sub za.s[w8, 0, vgx4], {z28.s-z31.s}

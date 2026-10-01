@@ -1,0 +1,48 @@
+// VADD_i_T1_D 111|U=0|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1000|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VaddIT1D: VADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef36980b vadd.i64 d9, d6, d11
+ef25d88a vadd.i32 d13, d21, d10
+ef76a82e vadd.i64 d26, d6, d30
+ef1bd829 vadd.i16 d13, d11, d25
+ef10d808 vadd.i16 d13, d0, d8
+ef1be823 vadd.i16 d14, d11, d19
+ef2bc80f vadd.i32 d12, d11, d15
+ef598803 vadd.i16 d24, d9, d3
+EF0F0800 vadd.i8 d0, d15, d0
+EF38F804 vadd.i64 d15, d8, d4
+EF344802 vadd.i64 d4, d4, d2
+EF322801 vadd.i64 d2, d2, d1
+EF311800 vadd.i64 d1, d1, d0
+EF3008A0 vadd.i64 d0, d16, d16
+EF3FF82F vadd.i64 d15, d15, d31
+EF7F088B vadd.i64 d16, d31, d11
+EF76F80B vadd.i64 d31, d6, d11
+EF36980B [ne] vaddne.i64 d9, d6, d11
+
+// VADD_i_T1_Q 111|U=0|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1000|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VaddIT1Q: VADD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef3a88e4 vadd.i64 q4, q13, q10
+ef64886c vadd.i32 q12, q2, q14
+ef5ec864 vadd.i16 q14, q7, q10
+ef3868ea vadd.i64 q3, q12, q13
+ef76286e vadd.i64 q9, q3, q15
+ef22c84c vadd.i32 q6, q1, q6
+ef28a86a vadd.i32 q5, q4, q13
+ef50c842 vadd.i16 q14, q0, q1
+EF0008E0 vadd.i8 q0, q8, q8
+EF3FF8EF UNDEFINED
+EF3118E1 UNDEFINED
+EF3A48E8 vadd.i64 q2, q13, q12
+EF3A08C0 vadd.i64 q0, q13, q0
+EF3FF84F UNDEFINED
+EF7A08E0 vadd.i64 q8, q13, q8
+EF7FF8EF UNDEFINED
+EF3A88E4 [ne] vaddne.i64 q4, q13, q10

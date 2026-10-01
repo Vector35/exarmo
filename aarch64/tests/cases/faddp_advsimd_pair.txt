@@ -1,0 +1,46 @@
+// FADDP_asisdpair_only_H 01|U=0|1|111|0|0|sz=0|11000|opcode=01101|10|Rn=xxxxx|Rd=xxxxx
+// FaddpAsisdpairOnlyH: FADDP  <d>, <Vn>.2H
+// register fields: Rn, Rd
+5E30DBF5 faddp h21, v31.2h
+5E30DBE3 faddp h3, v31.2h
+5E30D8F7 faddp h23, v7.2h
+5E30DA25 faddp h5, v17.2h
+5E30D9AA faddp h10, v13.2h
+5E30DACA faddp h10, v22.2h
+5E30DA1A faddp h26, v16.2h
+5E30D829 faddp h9, v1.2h
+5E30DB0B faddp h11, v24.2h
+5E30D9B0 faddp h16, v13.2h
+5E30D823 faddp h3, v1.2h
+5E30DAE9 faddp h9, v23.2h
+5E30DA01 faddp h1, v16.2h
+5E30DB49 faddp h9, v26.2h
+5E30D8AB faddp h11, v5.2h
+5E30DA6D faddp h13, v19.2h
+5E30D800 faddp h0, v0.2h
+5E30DBFF faddp h31, v31.2h
+
+// FADDP_asisdpair_only_SD 01|U=1|1|111|0|0|sz=x|11000|opcode=01101|10|Rn=xxxxx|Rd=xxxxx
+// FaddpAsisdpairOnlySd: FADDP  <V><d>, <Vn>.<T>
+// read together by <d>: sz, Rd
+// register fields: Rn, Rd
+7E70DB3D faddp d29, v25.2d
+7E70DA06 faddp d6, v16.2d
+7E30D91A faddp s26, v8.2s
+7E70D8EF faddp d15, v7.2d
+7E70D8D6 faddp d22, v6.2d
+7E70D9BA faddp d26, v13.2d
+7E30D843 faddp s3, v2.2s
+7E30DA19 faddp s25, v16.2s
+7E70D807 faddp d7, v0.2d
+7E70DAC2 faddp d2, v22.2d
+7E30D809 faddp s9, v0.2s
+7E30D87F faddp s31, v3.2s
+7E70DB0F faddp d15, v24.2d
+7E70DB11 faddp d17, v24.2d
+7E30D9DE faddp s30, v14.2s
+7E70DBB3 faddp d19, v29.2d
+7E70DBE0 faddp d0, v31.2d
+7E30DB20 faddp s0, v25.2s
+7E70DB3F faddp d31, v25.2d
+7E70DB39 faddp d25, v25.2d

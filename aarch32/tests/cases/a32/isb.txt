@@ -1,0 +1,20 @@
+// ISB_A1 1111|0|1|01011|1|(1)(1)(1)(1)(1)(1)(1)(1)(0)(0)(0)(0)|opcode=0110|option=xxxx
+// IsbA1: ISB{<c>}{<q>}  {<option>}
+// Binary Ninja's tests
+f57ff061 isb #0x1
+f57ff06f isb sy
+F5700060 isb #0x0 (unpredictable)
+F57FFF68 isb #0x8 (unpredictable)
+F5780064 isb #0x4 (unpredictable)
+F5740062 isb #0x2 (unpredictable)
+F5720061 isb #0x1 (unpredictable)
+F5710061 isb #0x1 (unpredictable)
+F5708061 isb #0x1 (unpredictable)
+F5704061 isb #0x1 (unpredictable)
+F5702061 isb #0x1 (unpredictable)
+F5701061 isb #0x1 (unpredictable)
+F5700861 isb #0x1 (unpredictable)
+F5700461 isb #0x1 (unpredictable)
+F5700261 isb #0x1 (unpredictable)
+F5700161 isb #0x1 (unpredictable)
+F5700F61 isb #0x1 (unpredictable)

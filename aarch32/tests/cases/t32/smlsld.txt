@@ -1,0 +1,36 @@
+// SMLSLD_T1 111110111|op1=101|Rn=xxxx|RdLo=xxxx|RdHi=xxxx|110|M=0|Rm=xxxx
+// SmlsldT1: SMLSLD{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: Rn, RdLo, RdHi, Rm
+// IT state read: condition
+fbd040cb smlsld r4, r0, r0, r11
+fbd738c0 smlsld r3, r8, r7, r0
+fbd134c2 smlsld r3, r4, r1, r2
+fbded3c0 smlsld sp, r3, lr, r0
+fbdd25c3 smlsld r2, r5, sp, r3
+fbdf28ce smlsld r2, r8, pc, lr (unpredictable)
+fbdbe8cf smlsld lr, r8, r11, pc (unpredictable)
+fbda2dc5 smlsld r2, sp, r10, r5
+FBD00FC0 smlsld r0, pc, r0, r0 (unpredictable)
+FBD0F0C0 smlsld pc, r0, r0, r0 (unpredictable)
+FBD000CB smlsld r0, r0, r0, r11 (unpredictable)
+FBD044CB smlsld r4, r4, r0, r11 (unpredictable)
+FBD040C4 smlsld r4, r0, r0, r4
+FBD040CB [ne] smlsldne r4, r0, r0, r11
+
+// SMLSLDX_T1 111110111|op1=101|Rn=xxxx|RdLo=xxxx|RdHi=xxxx|110|M=1|Rm=xxxx
+// SmlsldxT1: SMLSLDX{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: Rn, RdLo, RdHi, Rm
+// IT state read: condition
+fbd208df smlsldx r0, r8, r2, pc (unpredictable)
+fbde74df smlsldx r7, r4, lr, pc (unpredictable)
+fbdfced2 smlsldx r12, lr, pc, r2 (unpredictable)
+fbd7aad0 smlsldx r10, r10, r7, r0 (unpredictable)
+fbd126da smlsldx r2, r6, r1, r10
+fbd11cd5 smlsldx r1, r12, r1, r5
+fbdf5cd7 smlsldx r5, r12, pc, r7 (unpredictable)
+fbd521de smlsldx r2, r1, r5, lr
+FBD0F0DF smlsldx pc, r0, r0, pc (unpredictable)
+FBD20FD2 smlsldx r0, pc, r2, r2 (unpredictable)
+FBD202D0 smlsldx r0, r2, r2, r0
+FBD208D8 smlsldx r0, r8, r2, r8
+FBD208DF [ne] smlsldxne r0, r8, r2, pc (unpredictable)

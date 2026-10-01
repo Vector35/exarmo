@@ -1,0 +1,34 @@
+// fdot_za_z8z8i_2xi 1|10|0000|1|11|01|Zm=xxxx|0|Rv=xx|op=0|i3h=xx|Zn=xxxx|1|0|i3l=x|off3=xxx
+// FdotZaZ8z8i2xi: FDOT  ZA.H[<Wv>, <offs>{, VGx2}], { <Zn1>.B-<Zn2>.B }, <Zm>.B[<index>]
+// read together by <index>: i3h, i3l
+// register fields: Zm, Rv, Zn
+C1D00023 fdot za.h[w8, 3, vgx2], {z0.b-z1.b}, z0.b[0]
+C1D0002A fdot za.h[w8, 2, vgx2], {z0.b-z1.b}, z0.b[1]
+C1D00062 fdot za.h[w8, 2, vgx2], {z2.b-z3.b}, z0.b[0]
+C1DF27E0 fdot za.h[w9, 0, vgx2], {z30.b-z31.b}, z15.b[2]
+C1D04821 fdot za.h[w10, 1, vgx2], {z0.b-z1.b}, z0.b[4]
+C1D06C24 fdot za.h[w11, 4, vgx2], {z0.b-z1.b}, z0.b[6]
+C1D00025 fdot za.h[w8, 5, vgx2], {z0.b-z1.b}, z0.b[0]
+C1D00026 fdot za.h[w8, 6, vgx2], {z0.b-z1.b}, z0.b[0]
+C1D00027 fdot za.h[w8, 7, vgx2], {z0.b-z1.b}, z0.b[0]
+C1D0042B fdot za.h[w8, 3, vgx2], {z0.b-z1.b}, z0.b[3]
+C1D0082B fdot za.h[w8, 3, vgx2], {z0.b-z1.b}, z0.b[5]
+C1D00C2B fdot za.h[w8, 3, vgx2], {z0.b-z1.b}, z0.b[7]
+C1D140E3 fdot za.h[w10, 3, vgx2], {z6.b-z7.b}, z1.b[0]
+
+// fdot_za_z8z8i_4xi 1|10|0000|1|00|01|Zm=xxxx|1|Rv=xx|1|i3h=xx|Zn=xxx|100|i3l=x|off3=xxx
+// FdotZaZ8z8i4xi: FDOT  ZA.H[<Wv>, <offs>{, VGx4}], { <Zn1>.B-<Zn4>.B }, <Zm>.B[<index>]
+// read together by <index>: i3h, i3l
+// register fields: Zm, Rv, Zn
+C1109043 fdot za.h[w8, 3, vgx4], {z0.b-z3.b}, z0.b[0]
+C110904A fdot za.h[w8, 2, vgx4], {z0.b-z3.b}, z0.b[1]
+C11090C1 fdot za.h[w8, 1, vgx4], {z4.b-z7.b}, z0.b[0]
+C11FB540 fdot za.h[w9, 0, vgx4], {z8.b-z11.b}, z15.b[2]
+C110D9C4 fdot za.h[w10, 4, vgx4], {z12.b-z15.b}, z0.b[4]
+C110FE45 fdot za.h[w11, 5, vgx4], {z16.b-z19.b}, z0.b[6]
+C11092C6 fdot za.h[w8, 6, vgx4], {z20.b-z23.b}, z0.b[0]
+C1109347 fdot za.h[w8, 7, vgx4], {z24.b-z27.b}, z0.b[0]
+C11093C3 fdot za.h[w8, 3, vgx4], {z28.b-z31.b}, z0.b[0]
+C110944B fdot za.h[w8, 3, vgx4], {z0.b-z3.b}, z0.b[3]
+C110984B fdot za.h[w8, 3, vgx4], {z0.b-z3.b}, z0.b[5]
+C1109C4B fdot za.h[w8, 3, vgx4], {z0.b-z3.b}, z0.b[7]

@@ -1,0 +1,21 @@
+// BR_64_branch_reg 110|101|1|Z=0|0|op=00|op2=11111|0000|A=0|M=0|Rn=xxxxx|Rm=00000
+// Br64BranchReg: BR  <Xn>
+// register fields: Rn
+D61F00E0 br x7
+D61F00C0 br x6
+D61F0300 br x24
+D61F0200 br x16
+D61F0120 br x9
+D61F02C0 br x22
+D61F03C0 br lr
+D61F01E0 br x15
+D61F01A0 br x13
+D61F0180 br x12
+D61F02E0 br x23
+D61F0280 br x20
+D61F01C0 br x14
+D61F0260 br x19
+D61F0080 br x4
+D61F0240 br x18
+D61F0000 br x0
+D61F03E0 br xzr

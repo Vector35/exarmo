@@ -1,0 +1,134 @@
+// CSINV_32_condsel sf=0|op=1|S=0|11010100|Rm=xxxxx|cond=xxxx|0|o2=0|Rn=xxxxx|Rd=xxxxx
+// Csinv32Condsel: CSINV  <Wd>, <Wn>, <Wm>, <cond>
+// CinvCsinv32Condsel: CINV  <Wd>, <Wn>, <invcond>
+// CsetmCsinv32Condsel: CSETM  <Wd>, <invcond>
+// read together by the CINV alias and the CSETM alias: Rm, cond, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: Rm, cond, Rn
+5A925245 cinv w5, w18, mi
+5A91D226 cinv w6, w17, gt
+5A96D2DD cinv w29, w22, gt
+5A9DA3AA cinv w10, w29, lt
+5A84A08C cinv w12, w4, lt
+5A905219 cinv w25, w16, mi
+5A940286 cinv w6, w20, ne
+5A99D336 cinv w22, w25, gt
+5A8CA184 cinv w4, w12, lt
+5A93927D cinv w29, w19, hi
+5A9642D7 cinv w23, w22, pl
+5A98C31B cinv w27, w24, le
+5A88A103 cinv w3, w8, lt
+5A92B256 cinv w22, w18, ge
+5A92D248 cinv w8, w18, gt
+5A82805B cinv w27, w2, ls
+5A9F53EE csetm w14, mi
+5A9F13FF csetm wzr, eq
+5A9F93E9 csetm w9, hi
+5A9F73F3 csetm w19, vs
+5A9F63E5 csetm w5, vc
+5A9F83EF csetm w15, ls
+5A9FD3EE csetm w14, gt
+5A9F73FC csetm w28, vs
+5A9F43E9 csetm w9, pl
+5A9FC3EB csetm w11, le
+5A9F43E0 csetm w0, pl
+5A9F23E4 csetm w4, cc
+5A9F13FB csetm w27, eq
+5A9FA3F0 csetm w16, lt
+5A9F83FC csetm w28, ls
+5A9F13EE csetm w14, eq
+5A8292BF csinv wzr, w21, w2, ls
+5A87B0A0 csinv w0, w5, w7, lt
+5A9ED37D csinv w29, w27, w30, le
+5A816207 csinv w7, w16, w1, vs
+5A87D108 csinv w8, w8, w7, le
+5A844148 csinv w8, w10, w4, mi
+5A8DE370 csinv w16, w27, w13, al
+5A8F83ED csinv w13, wzr, w15, hi
+5A8062EE csinv w14, w23, w0, vs
+5A85A2D9 csinv w25, w22, w5, ge
+5A822077 csinv w23, w3, w2, cs
+5A88C38E csinv w14, w28, w8, gt
+5A9890EC csinv w12, w7, w24, ls
+5A9F4363 csinv w3, w27, wzr, mi
+5A86E3EE csinv w14, wzr, w6, al
+5A80F278 csinv w24, w19, w0, nv
+5A925005 csinv w5, w0, w18, pl
+5A800005 cinv w5, w0, ne
+5A8003E5 csinv w5, wzr, w0, eq
+5A80F005 csinv w5, w0, w0, nv
+5A80F3E5 csinv w5, wzr, w0, nv
+5A9F0005 csinv w5, w0, wzr, eq
+5A9F03E5 csetm w5, ne
+5A9FF005 csinv w5, w0, wzr, nv
+5A9FF3E5 csinv w5, wzr, wzr, nv
+5A810005 csinv w5, w0, w1, eq
+5A9F83ED csetm w13, ls
+
+// CSINV_64_condsel sf=1|op=1|S=0|11010100|Rm=xxxxx|cond=xxxx|0|o2=0|Rn=xxxxx|Rd=xxxxx
+// Csinv64Condsel: CSINV  <Xd>, <Xn>, <Xm>, <cond>
+// CinvCsinv64Condsel: CINV  <Xd>, <Xn>, <invcond>
+// CsetmCsinv64Condsel: CSETM  <Xd>, <invcond>
+// read together by the CINV alias and the CSETM alias: Rm, cond, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: Rm, cond, Rn
+DA9B5367 cinv x7, x27, mi
+DA815027 cinv x7, x1, mi
+DA87B0F6 cinv x22, x7, ge
+DA85C0BE cinv lr, x5, le
+DA84A094 cinv x20, x4, lt
+DA839072 cinv x18, x3, hi
+DA890121 cinv x1, x9, ne
+DA907216 cinv x22, x16, vs
+DA80300D cinv x13, x0, cs
+DA89012A cinv x10, x9, ne
+DA911233 cinv x19, x17, eq
+DA8610D0 cinv x16, x6, eq
+DA8AD146 cinv x6, x10, gt
+DA985303 cinv x3, x24, mi
+DA984313 cinv x19, x24, pl
+DA807018 cinv x24, x0, vs
+DA9F53E5 csetm x5, mi
+DA9F43F0 csetm x16, pl
+DA9FD3E5 csetm x5, gt
+DA9F73F7 csetm x23, vs
+DA9FC3FA csetm x26, le
+DA9FD3EA csetm x10, gt
+DA9FD3FE csetm lr, gt
+DA9FD3F5 csetm x21, gt
+DA9FB3EC csetm x12, ge
+DA9F03E4 csetm x4, ne
+DA9F03E0 csetm x0, ne
+DA9F33EF csetm x15, cs
+DA9FA3F8 csetm x24, lt
+DA9F93F7 csetm x23, hi
+DA9F63E5 csetm x5, vc
+DA9F53FC csetm x28, mi
+DA9DC15B csinv x27, x10, fp, gt
+DA8EA3D9 csinv x25, lr, x14, ge
+DA831235 csinv x21, x17, x3, ne
+DA9291B9 csinv x25, x13, x18, ls
+DA82C1B1 csinv x17, x13, x2, gt
+DA93922A csinv x10, x17, x19, ls
+DA99D111 csinv x17, x8, x25, le
+DA945217 csinv x23, x16, x20, pl
+DA87F2DF csinv xzr, x22, x7, nv
+DA9253C7 csinv x7, lr, x18, pl
+DA85311A csinv x26, x8, x5, cc
+DA9C9016 csinv x22, x0, x28, ls
+DA96C2B5 csinv x21, x21, x22, gt
+DA8DE015 csinv x21, x0, x13, al
+DA8393D5 csinv x21, lr, x3, ls
+DA8B4295 csinv x21, x20, x11, mi
+DA800007 cinv x7, x0, ne
+DA8003E7 csinv x7, xzr, x0, eq
+DA80F007 csinv x7, x0, x0, nv
+DA80F3E7 csinv x7, xzr, x0, nv
+DA9F0007 csinv x7, x0, xzr, eq
+DA9FF007 csinv x7, x0, xzr, nv
+DA9FF3E7 csinv x7, xzr, xzr, nv
+DA9B537B cinv x27, x27, mi
+DA9B8367 cinv x7, x27, ls
+DA9B2367 cinv x7, x27, cc
+DA810007 csinv x7, x0, x1, eq
+DA8F03E0 csinv x0, xzr, x15, eq

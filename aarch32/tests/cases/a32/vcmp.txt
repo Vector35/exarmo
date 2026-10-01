@@ -1,0 +1,111 @@
+// VCMP_A1_D cond=xxxx|11101|D=x|11|o1=0|opc2=100|Vd=xxxx|10|size=11|E=0|1|M=x|0|Vm=xxxx
+// VcmpA1D: VCMP{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+8eb4bb49 vcmphi.f64 d11, d9
+4eb4fb6f vcmpmi.f64 d15, d31
+3eb45b42 vcmplo.f64 d5, d2
+6ef44b60 vcmpvs.f64 d20, d16
+5ef47b45 vcmppl.f64 d23, d5
+ceb46b49 vcmpgt.f64 d6, d9
+bef47b69 vcmplt.f64 d23, d25
+7eb42b49 vcmpvc.f64 d2, d9
+0EB40B48 vcmpeq.f64 d0, d8
+FEB4BB49 UNALLOCATED
+2EB48B44 vcmpcs.f64 d8, d4
+1EB41B41 vcmpne.f64 d1, d1
+8EB40B40 vcmphi.f64 d0, d0
+8EF40B4F vcmphi.f64 d16, d15
+8EF4FB49 vcmphi.f64 d31, d9
+
+// VCMP_A1_H cond=xxxx|11101|D=x|11|o1=0|opc2=100|Vd=xxxx|10|size=01|E=0|1|M=x|0|Vm=xxxx
+// VcmpA1H: VCMP{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+5eb4394e vcmppl.f16 s6, s28 (unpredictable)
+7ef4996a vcmpvc.f16 s19, s21 (unpredictable)
+5eb4994b vcmppl.f16 s18, s22 (unpredictable)
+7ef4096e vcmpvc.f16 s1, s29 (unpredictable)
+eef4494e vcmp.f16 s9, s28
+2ef4796a vcmphs.f16 s15, s21 (unpredictable)
+4eb45966 vcmpmi.f16 s10, s13 (unpredictable)
+8eb4496a vcmphi.f16 s8, s21 (unpredictable)
+0EB4F940 vcmpeq.f16 s30, s0 (unpredictable)
+FEB4394E UNALLOCATED
+1EB4894F vcmpne.f16 s16, s30 (unpredictable)
+5EB42948 vcmppl.f16 s4, s16 (unpredictable)
+5EB41944 vcmppl.f16 s2, s8 (unpredictable)
+5EB40942 vcmppl.f16 s0, s4 (unpredictable)
+5EB4F941 vcmppl.f16 s30, s2 (unpredictable)
+5EF4F940 vcmppl.f16 s31, s0 (unpredictable)
+5EB4394F vcmppl.f16 s6, s30 (unpredictable)
+5EB43960 vcmppl.f16 s6, s1 (unpredictable)
+5EB4396F vcmppl.f16 s6, s31 (unpredictable)
+
+// VCMP_A1_S cond=xxxx|11101|D=x|11|o1=0|opc2=100|Vd=xxxx|10|size=10|E=0|1|M=x|0|Vm=xxxx
+// VcmpA1S: VCMP{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+9eb4da6a vcmpls.f32 s26, s21
+6ef4ea67 vcmpvs.f32 s29, s15
+cef45a4d vcmpgt.f32 s11, s26
+4ef42a4c vcmpmi.f32 s5, s24
+9eb4ba47 vcmpls.f32 s22, s14
+cef46a67 vcmpgt.f32 s13, s15
+beb4ea42 vcmplt.f32 s28, s4
+6eb45a60 vcmpvs.f32 s10, s1
+0EB40A6F vcmpeq.f32 s0, s31
+FEB4DA6A UNALLOCATED
+8EB4FA68 vcmphi.f32 s30, s17
+2EB48A64 vcmpcs.f32 s16, s9
+1EB44A61 vcmpne.f32 s8, s3
+9EB41A40 vcmpls.f32 s2, s0
+9EB40A4F vcmpls.f32 s0, s30
+9EB4FA6F vcmpls.f32 s30, s31
+9EF40A6A vcmpls.f32 s1, s21
+9EF4FA6A vcmpls.f32 s31, s21
+
+// VCMP_A2_D cond=xxxx|11101|D=x|11|o1=0|opc2=101|Vd=xxxx|10|size=11|E=0|1|M=(0)|0|Vm=(0)(0)(0)(0)
+// VcmpA2D: VCMP{<c>}{<q>}.F64  <Dd>, #0.0
+// read together by <Dd>: D, Vd
+8ef51b40 vcmphi.f64 d17, #0
+0EB50B6F vcmpeq.f64 d0, #0.0 (unpredictable)
+FEF51B40 UNALLOCATED
+4EF5FB48 vcmpmi.f64 d31, #0.0 (unpredictable)
+2EF58B44 vcmpcs.f64 d24, #0.0 (unpredictable)
+1EF54B42 vcmpne.f64 d20, #0.0 (unpredictable)
+8EF52B41 vcmphi.f64 d18, #0.0 (unpredictable)
+8EB50B40 vcmphi.f64 d0, #0.0
+8EB5FB40 vcmphi.f64 d15, #0.0
+8EF50B40 vcmphi.f64 d16, #0.0
+8EF5FB40 vcmphi.f64 d31, #0.0
+
+// VCMP_A2_H cond=xxxx|11101|D=x|11|o1=0|opc2=101|Vd=xxxx|10|size=01|E=0|1|M=(0)|0|Vm=(0)(0)(0)(0)
+// VcmpA2H: VCMP{<c>}{<q>}.F16  <Sd>, #0.0
+// read together by <Sd>: D, Vd
+6eb51940 vcmpvs.f16 s2, #0 (unpredictable)
+0EF5096F vcmpeq.f16 s1, #0.0 (unpredictable)
+FEB51940 UNALLOCATED
+8EB5F948 vcmphi.f16 s30, #0.0 (unpredictable)
+4EB58944 vcmpmi.f16 s16, #0.0 (unpredictable)
+2EB54942 vcmpcs.f16 s8, #0.0 (unpredictable)
+1EB52941 vcmpne.f16 s4, #0.0 (unpredictable)
+6EB50940 vcmpvs.f16 s0, #0.0 (unpredictable)
+6EB5F940 vcmpvs.f16 s30, #0.0 (unpredictable)
+6EF50940 vcmpvs.f16 s1, #0.0 (unpredictable)
+6EF5F940 vcmpvs.f16 s31, #0.0 (unpredictable)
+
+// VCMP_A2_S cond=xxxx|11101|D=x|11|o1=0|opc2=101|Vd=xxxx|10|size=10|E=0|1|M=(0)|0|Vm=(0)(0)(0)(0)
+// VcmpA2S: VCMP{<c>}{<q>}.F32  <Sd>, #0.0
+// read together by <Sd>: D, Vd
+deb58a40 vcmple.f32 s16, #0
+0EF50A6F vcmpeq.f32 s1, #0.0 (unpredictable)
+FEB58A40 UNALLOCATED
+8EB5FA48 vcmphi.f32 s30, #0.0 (unpredictable)
+4EB54A44 vcmpmi.f32 s8, #0.0 (unpredictable)
+2EB52A42 vcmpcs.f32 s4, #0.0 (unpredictable)
+1EB51A41 vcmpne.f32 s2, #0.0 (unpredictable)
+DEB50A40 vcmple.f32 s0, #0.0
+DEB5FA40 vcmple.f32 s30, #0.0
+DEF50A40 vcmple.f32 s1, #0.0
+DEF5FA40 vcmple.f32 s31, #0.0

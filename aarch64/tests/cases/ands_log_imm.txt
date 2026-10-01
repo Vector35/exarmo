@@ -1,0 +1,188 @@
+// ANDS_32S_log_imm sf=0|opc=11|100100|N=0|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Ands32sLogImm: ANDS  <Wd>, <Wn>, #<imm>
+// TstAnds32sLogImm: TST  <Wn>, #<imm>
+// read together by <imm>: immr, imms
+// register fields: Rn, Rd
+// bitmask immediate <imm>: N:immr:imms
+// form chosen on: Rd
+723640FA ands w26, w7, #0x7fffc00
+720B20AC ands w12, w5, #0x3fe00000
+720969A4 ands w4, w13, #0xff83ffff
+723E9B50 ands w16, w26, #0x1fc01fc
+72034F45 ands w5, w26, #0xe001ffff
+72285E00 ands w0, w16, #0xff00ffff
+723E2523 ands w3, w9, #0xffc
+7227B56D ands w13, w11, #0xfe7ffe7f
+72349FBD ands w29, w29, #0xf00ff00f
+7235566C ands w12, w19, #0xfffff801
+72121BDE ands w30, w30, #0x1fc000
+723FB8C7 ands w7, w6, #0xfffefffe
+722C647D ands w29, w3, #0xfff03fff
+7205017A ands w26, w11, #0x8000000
+723DB915 ands w21, w8, #0xfffbfffb
+723CAA22 ands w2, w17, #0x7ff07ff0
+723C79BF tst w13, #0xfffffff7
+72242DFF tst w15, #0xf00000ff
+7214F1DF tst w14, #0x55555555
+722E209F tst w4, #0x7fc0000
+72081EDF tst w22, #0xff000000
+723DD75F tst w26, #0xf9f9f9f9
+721F939F tst w28, #0x3e003e
+72012EFF tst w23, #0x800007ff
+72071CBF tst w5, #0xfe000001
+722A6BBF tst w29, #0xffc1ffff
+7211A91F tst w8, #0x83ff83ff
+7203B5DF tst w14, #0xe7ffe7ff
+722B4E7F tst w19, #0xffe001ff
+72038D7F tst w11, #0xe001e001
+720E66DF tst w22, #0xfffc0fff
+7217063F tst w17, #0x600
+7200401A ands w26, w0, #0x1ffff
+723643FA ands w26, wzr, #0x7fffc00
+7236FCFA UNDEFINED
+720000FA ands w26, w7, #0x1
+7200FCFA UNDEFINED
+723F00FA ands w26, w7, #0x2
+723FFCFA UNDEFINED
+722080FA ands w26, w7, #0x10001
+721010FA ands w26, w7, #0x1f0000
+720408FA ands w26, w7, #0x70000000
+720240FA ands w26, w7, #0xc0007fff
+7200F0FA ands w26, w7, #0x55555555
+7201F0FA ands w26, w7, #0xaaaaaaaa
+723FF0FA ands w26, w7, #0xaaaaaaaa
+7200F4FA UNDEFINED
+7201F4FA UNDEFINED
+723FF4FA UNDEFINED
+7200E0FA ands w26, w7, #0x11111111
+7203E0FA ands w26, w7, #0x22222222
+723FE0FA ands w26, w7, #0x22222222
+7200E8FA ands w26, w7, #0x77777777
+7203E8FA ands w26, w7, #0xeeeeeeee
+723FE8FA ands w26, w7, #0xeeeeeeee
+7200ECFA UNDEFINED
+7203ECFA UNDEFINED
+723FECFA UNDEFINED
+7200C0FA ands w26, w7, #0x1010101
+7207C0FA ands w26, w7, #0x2020202
+723FC0FA ands w26, w7, #0x2020202
+7200D8FA ands w26, w7, #0x7f7f7f7f
+7207D8FA ands w26, w7, #0xfefefefe
+723FD8FA ands w26, w7, #0xfefefefe
+7200DCFA UNDEFINED
+7207DCFA UNDEFINED
+723FDCFA UNDEFINED
+720080FA ands w26, w7, #0x10001
+720F80FA ands w26, w7, #0x20002
+723F80FA ands w26, w7, #0x20002
+7200B8FA ands w26, w7, #0x7fff7fff
+720FB8FA ands w26, w7, #0xfffefffe
+7200BCFA UNDEFINED
+720FBCFA UNDEFINED
+723FBCFA UNDEFINED
+721F00FA ands w26, w7, #0x2
+720078FA ands w26, w7, #0x7fffffff
+721F78FA ands w26, w7, #0xfffffffe
+723F78FA ands w26, w7, #0xfffffffe
+72007CFA UNDEFINED
+721F7CFA UNDEFINED
+723F7CFA UNDEFINED
+72012EEF ands w15, w23, #0x800007ff
+
+// ANDS_64S_log_imm sf=1|opc=11|100100|N=x|immr=xxxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Ands64sLogImm: ANDS  <Xd>, <Xn>, #<imm>
+// TstAnds64sLogImm: TST  <Xn>, #<imm>
+// read together by <imm>: N, immr, imms
+// register fields: Rn, Rd
+// bitmask immediate <imm>: N:immr:imms
+// form chosen on: Rd
+F21050B3 ands x19, x5, #0xffff001fffff001f
+F21F7285 ands x5, x20, #0x3ffffffe3ffffffe
+F2008700 ands x0, x24, #0x3000300030003
+F2695F1E ands lr, x24, #0x7fffff800000
+F2619968 ands x8, x11, #0xffffffff8000003f
+F25171BC ands x28, x13, #0xffff800000000fff
+F22AC840 ands x0, x2, #0xc1c1c1c1c1c1c1c1
+F21B79A7 ands x7, x13, #0xffffffefffffffef
+F24789B9 ands x25, x13, #0xfe0000000fffffff
+F21BE9C7 ands x7, x14, #0xeeeeeeeeeeeeeeee
+F22BB8B5 ands x21, x5, #0xffefffefffefffef
+F2176FB7 ands x23, fp, #0xfffffe1ffffffe1f
+F20A3315 ands x21, x24, #0xffc00007ffc00007
+F25B8DB3 ands x19, x13, #0xffffffe0000001ff
+F2027798 ands x24, x28, #0xcfffffffcfffffff
+F227F1EF ands x15, x15, #0xaaaaaaaaaaaaaaaa
+F24A0E9F tst x20, #0x3c0000000000000
+F2643E3F tst x17, #0xffff0000000
+F274913F tst x9, #0x1fffffffff000
+F206441F tst x0, #0xfc000ffffc000fff
+F251271F tst x24, #0x1ff800000000000
+F2505BDF tst lr, #0xffff00000000007f
+F21D5E5F tst x18, #0x7fffff807fffff8
+F2669A5F tst x18, #0xfffffffffc000001
+F2133AFF tst x23, #0xfffe0000fffe000
+F2280C3F tst x1, #0xf0000000f000000
+F2313C1F tst x0, #0x7fff80007fff8000
+F254BCDF tst x6, #0xfffff0000fffffff
+F25E643F tst x1, #0xffffffc00000000
+F2198BDF tst lr, #0x380038003800380
+F214605F tst x2, #0xfffff01ffffff01f
+F2025D5F tst x10, #0xc03fffffc03fffff
+F23F03F3 ands x19, xzr, #0x200000002
+F210FCB3 UNDEFINED
+F20000B3 ands x19, x5, #0x100000001
+F200FCB3 UNDEFINED
+F23FFCB3 UNDEFINED
+F24000B3 ands x19, x5, #0x1
+F240FCB3 UNDEFINED
+F27F00B3 ands x19, x5, #0x2
+F27FFCB3 UNDEFINED
+F22080B3 ands x19, x5, #0x1000100010001
+F20840B3 ands x19, x5, #0xff0001ffff0001ff
+F20420B3 ands x19, x5, #0xf000001ff000001f
+F20110B3 ands x19, x5, #0x8000000f8000000f
+F21008B3 ands x19, x5, #0x7000000070000
+F21004B3 ands x19, x5, #0x3000000030000
+F200F0B3 ands x19, x5, #0x5555555555555555
+F201F0B3 ands x19, x5, #0xaaaaaaaaaaaaaaaa
+F23FF0B3 ands x19, x5, #0xaaaaaaaaaaaaaaaa
+F200F4B3 UNDEFINED
+F201F4B3 UNDEFINED
+F23FF4B3 UNDEFINED
+F200E0B3 ands x19, x5, #0x1111111111111111
+F203E0B3 ands x19, x5, #0x2222222222222222
+F23FE0B3 ands x19, x5, #0x2222222222222222
+F200E8B3 ands x19, x5, #0x7777777777777777
+F203E8B3 ands x19, x5, #0xeeeeeeeeeeeeeeee
+F23FE8B3 ands x19, x5, #0xeeeeeeeeeeeeeeee
+F200ECB3 UNDEFINED
+F203ECB3 UNDEFINED
+F23FECB3 UNDEFINED
+F200C0B3 ands x19, x5, #0x101010101010101
+F207C0B3 ands x19, x5, #0x202020202020202
+F23FC0B3 ands x19, x5, #0x202020202020202
+F200D8B3 ands x19, x5, #0x7f7f7f7f7f7f7f7f
+F207D8B3 ands x19, x5, #0xfefefefefefefefe
+F23FD8B3 ands x19, x5, #0xfefefefefefefefe
+F200DCB3 UNDEFINED
+F207DCB3 UNDEFINED
+F23FDCB3 UNDEFINED
+F20080B3 ands x19, x5, #0x1000100010001
+F20F80B3 ands x19, x5, #0x2000200020002
+F23F80B3 ands x19, x5, #0x2000200020002
+F200B8B3 ands x19, x5, #0x7fff7fff7fff7fff
+F20FB8B3 ands x19, x5, #0xfffefffefffefffe
+F23FB8B3 ands x19, x5, #0xfffefffefffefffe
+F200BCB3 UNDEFINED
+F20FBCB3 UNDEFINED
+F23FBCB3 UNDEFINED
+F21F00B3 ands x19, x5, #0x200000002
+F20078B3 ands x19, x5, #0x7fffffff7fffffff
+F21F78B3 ands x19, x5, #0xfffffffefffffffe
+F23F78B3 ands x19, x5, #0xfffffffefffffffe
+F2007CB3 UNDEFINED
+F21F7CB3 UNDEFINED
+F23F7CB3 UNDEFINED
+F240F8B3 ands x19, x5, #0x7fffffffffffffff
+F27FF8B3 ands x19, x5, #0xfffffffffffffffe
+F2025D4F ands x15, x10, #0xc03fffffc03fffff

@@ -1,0 +1,66 @@
+// VSQRT_T1_D 111011101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=11|o3=1|1|M=x|0|Vm=xxxx
+// VsqrtT1D: VSQRT{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eef1abe9 vsqrt.f64 d26, d25
+eef19be5 vsqrt.f64 d25, d21
+eeb11bed vsqrt.f64 d1, d29
+eef1abcf vsqrt.f64 d26, d15
+eef11bcf vsqrt.f64 d17, d15
+eeb1fbce vsqrt.f64 d15, d14
+eef14be2 vsqrt.f64 d20, d18
+eef1dbe6 vsqrt.f64 d29, d22
+EEF10BE0 vsqrt.f64 d16, d16
+EEF18BE8 vsqrt.f64 d24, d24
+EEF12BE4 vsqrt.f64 d18, d20
+EEB10BE1 vsqrt.f64 d0, d17
+EEF10BC0 vsqrt.f64 d16, d0
+EEF1FBE0 vsqrt.f64 d31, d16
+EEF1ABEF vsqrt.f64 d26, d31
+EEF1ABE9 [ne] vsqrtne.f64 d26, d25
+
+// VSQRT_T1_H 111011101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=01|o3=1|1|M=x|0|Vm=xxxx
+// VsqrtT1H: VSQRT{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef189cd vsqrt.f16 s17, s26
+eef199ea vsqrt.f16 s19, s21
+eef199c5 vsqrt.f16 s19, s10
+eeb179ef vsqrt.f16 s14, s31
+eef159c7 vsqrt.f16 s11, s14
+eef199e8 vsqrt.f16 s19, s17
+eef1e9ef vsqrt.f16 s29, s31
+eeb119e0 vsqrt.f16 s2, s1
+EEF109C4 vsqrt.f16 s1, s8
+EEF1F9C2 vsqrt.f16 s31, s4
+EEF149C1 vsqrt.f16 s9, s2
+EEF129C0 vsqrt.f16 s5, s0
+EEB109CF vsqrt.f16 s0, s30
+EEB1F9CD vsqrt.f16 s30, s26
+EEF109CD vsqrt.f16 s1, s26
+EEF1F9CD vsqrt.f16 s31, s26
+EEF189CD [ne] vsqrtne.f16 s17, s26 (unpredictable)
+
+// VSQRT_T1_S 111011101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=10|o3=1|1|M=x|0|Vm=xxxx
+// VsqrtT1S: VSQRT{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeb1aae3 vsqrt.f32 s20, s7
+eef10aec vsqrt.f32 s1, s25
+eef1bac1 vsqrt.f32 s23, s2
+eeb1aacb vsqrt.f32 s20, s22
+eef1faec vsqrt.f32 s31, s25
+eef15acf vsqrt.f32 s11, s30
+eeb12ac5 vsqrt.f32 s4, s10
+eeb13ac9 vsqrt.f32 s6, s18
+EEB18AE0 vsqrt.f32 s16, s1
+EEB14AE8 vsqrt.f32 s8, s17
+EEB11AE4 vsqrt.f32 s2, s9
+EEB10AE2 vsqrt.f32 s0, s5
+EEB1FAC0 vsqrt.f32 s30, s0
+EEB1AAE0 vsqrt.f32 s20, s1
+EEB1AAEF vsqrt.f32 s20, s31
+EEB1AAE3 [ne] vsqrtne.f32 s20, s7

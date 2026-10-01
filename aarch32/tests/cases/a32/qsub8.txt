@@ -1,0 +1,20 @@
+// QSUB8_A1 cond=xxxx|011|00|op1=010|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=1|op2=11|1|Rm=xxxx
+// Qsub8A1: QSUB8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+762214f7 qsub8vc r1, r2, r7 (unpredictable)
+c62a50fb qsub8gt r5, r10, r11 (unpredictable)
+5625ddf1 qsub8pl sp, r5, r1 (unpredictable)
+a6263cfb qsub8ge r3, r6, r11 (unpredictable)
+e62430fb qsub8 r3, r4, r11 (unpredictable)
+7625bbfe qsub8vc r11, r5, lr (unpredictable)
+b62da3fb qsub8lt r10, sp, r11 (unpredictable)
+362deffa qsub8lo lr, sp, r10
+// Binary Ninja's tests
+d6221ff3 qsub8le r1, r2, r3
+e6221ff3 qsub8 r1, r2, r3
+062008F0 qsub8eq r0, r0, r0 (unpredictable)
+F62214F7 UNALLOCATED
+862FF2FF qsub8hi pc, pc, pc (unpredictable)
+462221F7 qsub8mi r2, r2, r7 (unpredictable)
+262214F2 qsub8cs r1, r2, r2 (unpredictable)
+162214F1 qsub8ne r1, r2, r1 (unpredictable)

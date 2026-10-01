@@ -1,0 +1,51 @@
+// VMOV_s_A1 cond=xxxx|1110000|op=1|Vn=xxxx|Rt=xxxx|1010|N=x|(0)(0)1(0)(0)(0)(0)
+// VmovSA1: VMOV{<c>}{<q>}  <Rt>, <Sn>
+// read together by <Sn>: Vn, N
+// register fields: Rt
+// Binary Ninja's tests
+ee100a10 vmov r0, s0
+ee101a90 vmov r1, s1
+ee104a90 vmov r4, s1
+ee111a10 vmov r1, s2
+ee112a10 vmov r2, s2
+ee113a90 vmov r3, s3
+ee115a10 vmov r5, s2
+ee116a90 vmov r6, s3
+ee122a10 vmov r2, s4
+ee133a10 vmov r3, s6
+ee141a10 vmov r1, s8
+0E1FFA7F vmoveq pc, s30 (unpredictable)
+FE100A10 UNALLOCATED
+8E180A50 vmovhi r0, s16 (unpredictable)
+4E1F0A30 vmovmi r0, s30 (unpredictable)
+2E1F0A98 vmovcs r0, s31 (unpredictable)
+1E100A14 vmovne r0, s0 (unpredictable)
+EE100A12 vmov r0, s0 (unpredictable)
+EE100A11 vmov r0, s0 (unpredictable)
+
+// VMOV_tos_A1 cond=xxxx|1110000|op=0|Vn=xxxx|Rt=xxxx|1010|N=x|(0)(0)1(0)(0)(0)(0)
+// VmovTosA1: VMOV{<c>}{<q>}  <Sn>, <Rt>
+// read together by <Sn>: Vn, N
+// register fields: Rt
+// Binary Ninja's tests
+0e001a10 vmoveq s0, r1
+1e000a10 vmovne s0, r0
+ee000a10 vmov s0, r0
+ee001a90 vmov s1, r1
+ee008a90 vmov s1, r8
+ee012a10 vmov s2, r2
+ee013a90 vmov s3, r3
+ee014a10 vmov s2, r4
+ee016a90 vmov s3, r6
+ee021a10 vmov s4, r1
+ee022a90 vmov s5, r2
+ee023a10 vmov s4, r3
+ee033a10 vmov s6, r3
+FE001A10 UNALLOCATED
+8E0FFA7F vmovhi s30, pc (unpredictable)
+4E081A50 vmovmi s16, r1 (unpredictable)
+2E041A30 vmovcs s8, r1 (unpredictable)
+0E0F1A18 vmoveq s30, r1 (unpredictable)
+0E0F1A94 vmoveq s31, r1 (unpredictable)
+0E001A12 vmoveq s0, r1 (unpredictable)
+0E001A11 vmoveq s0, r1 (unpredictable)

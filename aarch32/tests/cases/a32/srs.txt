@@ -1,0 +1,87 @@
+// SRSDA_A1_AS 1111100|P=0|U=0|S=1|W=x|L=0|Rn=(1)(1)(0)(1)|op=(0)(0)(0)(0)(0)(1)(0)(1)(0)(0)(0)|mode=xxxxx
+// SrsdaA1As: SRSDA{<c>}{<q>}  SP{<!>}, #<mode>
+// Binary Ninja's tests
+f84d0505 srsda sp, #5
+f86d0505 srsda sp!, #5
+f86d051f srsda sp!, #31
+F8400000 srsda sp, #0x0 (unpredictable)
+F84FFFF0 srsda sp, #0x10 (unpredictable)
+F8488008 srsda sp, #0x8 (unpredictable)
+F8444004 srsda sp, #0x4 (unpredictable)
+F8422002 srsda sp, #0x2 (unpredictable)
+F8411001 srsda sp, #0x1 (unpredictable)
+F84D0805 srsda sp, #0x5 (unpredictable)
+F84D0405 srsda sp, #0x5 (unpredictable)
+F84D0205 srsda sp, #0x5 (unpredictable)
+F84D0105 srsda sp, #0x5 (unpredictable)
+F84D0085 srsda sp, #0x5 (unpredictable)
+F84D0045 srsda sp, #0x5 (unpredictable)
+F84D0025 srsda sp, #0x5 (unpredictable)
+F84DFAE5 srsda sp, #0x5 (unpredictable)
+
+// SRSDB_A1_AS 1111100|P=1|U=0|S=1|W=x|L=0|Rn=(1)(1)(0)(1)|op=(0)(0)(0)(0)(0)(1)(0)(1)(0)(0)(0)|mode=xxxxx
+// SrsdbA1As: SRSDB{<c>}{<q>}  SP{<!>}, #<mode>
+// Binary Ninja's tests
+f94d0501 srsdb sp, #1
+f94d0509 srsdb sp, #9
+f96d0505 srsdb sp!, #5
+f96d0513 srsdb sp!, #19
+F9400000 srsdb sp, #0x0 (unpredictable)
+F94FFFFF srsdb sp, #0x1f (unpredictable)
+F9488010 srsdb sp, #0x10 (unpredictable)
+F9444008 srsdb sp, #0x8 (unpredictable)
+F9422004 srsdb sp, #0x4 (unpredictable)
+F9411002 srsdb sp, #0x2 (unpredictable)
+F94D0801 srsdb sp, #0x1 (unpredictable)
+F94D0401 srsdb sp, #0x1 (unpredictable)
+F94D0201 srsdb sp, #0x1 (unpredictable)
+F94D0101 srsdb sp, #0x1 (unpredictable)
+F94D0081 srsdb sp, #0x1 (unpredictable)
+F94D0041 srsdb sp, #0x1 (unpredictable)
+F94D0021 srsdb sp, #0x1 (unpredictable)
+F94DFAE1 srsdb sp, #0x1 (unpredictable)
+
+// SRSIA_A1_AS 1111100|P=0|U=1|S=1|W=x|L=0|Rn=(1)(1)(0)(1)|op=(0)(0)(0)(0)(0)(1)(0)(1)(0)(0)(0)|mode=xxxxx
+// SrsiaA1As: SRS{<IA>}{<c>}{<q>}  SP{<!>}, #<mode>
+// Binary Ninja's tests
+f8cd0500 srs sp, #0
+f8cd0505 srs sp, #5
+f8cd050a srs sp, #10
+f8ed0502 srs sp!, #2
+f8ed0505 srs sp!, #5
+F8C0001F srs sp, #0x1f (unpredictable)
+F8CFFFF0 srs sp, #0x10 (unpredictable)
+F8C88008 srs sp, #0x8 (unpredictable)
+F8C44004 srs sp, #0x4 (unpredictable)
+F8C22001 srs sp, #0x1 (unpredictable)
+F8C11000 srs sp, #0x0 (unpredictable)
+F8CD0800 srs sp, #0x0 (unpredictable)
+F8CD0400 srs sp, #0x0 (unpredictable)
+F8CD0200 srs sp, #0x0 (unpredictable)
+F8CD0100 srs sp, #0x0 (unpredictable)
+F8CD0080 srs sp, #0x0 (unpredictable)
+F8CD0040 srs sp, #0x0 (unpredictable)
+F8CD0020 srs sp, #0x0 (unpredictable)
+F8CDFAE0 srs sp, #0x0 (unpredictable)
+
+// SRSIB_A1_AS 1111100|P=1|U=1|S=1|W=x|L=0|Rn=(1)(1)(0)(1)|op=(0)(0)(0)(0)(0)(1)(0)(1)(0)(0)(0)|mode=xxxxx
+// SrsibA1As: SRSIB{<c>}{<q>}  SP{<!>}, #<mode>
+// Binary Ninja's tests
+f9cd050b srsib sp, #11
+f9cd050f srsib sp, #15
+f9ed0505 srsib sp!, #5
+f9ed050e srsib sp!, #14
+F9C00000 srsib sp, #0x0 (unpredictable)
+F9CFFFFF srsib sp, #0x1f (unpredictable)
+F9C88010 srsib sp, #0x10 (unpredictable)
+F9C44008 srsib sp, #0x8 (unpredictable)
+F9C22004 srsib sp, #0x4 (unpredictable)
+F9C11002 srsib sp, #0x2 (unpredictable)
+F9CD0801 srsib sp, #0x1 (unpredictable)
+F9CD040B srsib sp, #0xb (unpredictable)
+F9CD020B srsib sp, #0xb (unpredictable)
+F9CD010B srsib sp, #0xb (unpredictable)
+F9CD008B srsib sp, #0xb (unpredictable)
+F9CD004B srsib sp, #0xb (unpredictable)
+F9CD002B srsib sp, #0xb (unpredictable)
+F9CDFAEB srsib sp, #0xb (unpredictable)

@@ -1,0 +1,20 @@
+// CMN_rr_A1 cond=xxxx|00|0|10|opc=11|1|Rn=xxxx|(0)(0)(0)(0)|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// CmnRrA1: CMN{<c>}{<q>}  <Rn>, <Rm>, <type> <Rs>
+// register fields: Rn, Rs, Rm
+e1778e73 cmn r7, r3, ror lr (unpredictable)
+71798610 cmnvc r9, r0, lsl r6 (unpredictable)
+e172f012 cmn r2, r2, lsl r0 (unpredictable)
+9177f45d cmnls r7, sp, asr r4 (unpredictable)
+0175bb1c cmneq r5, r12, lsl r11 (unpredictable)
+417faa73 cmnmi pc, r3, ror r10 (unpredictable)
+517cda3b cmnpl r12, r11, lsr r10 (unpredictable)
+d17c5e11 cmnle r12, r1, lsl lr (unpredictable)
+// Binary Ninja's tests
+e1770218 cmn r7, r8, lsl r2
+e1770258 cmn r7, r8, asr r2
+e1770278 cmn r7, r8, ror r2
+e17d0238 cmn sp, r8, lsr r2
+F1778E73 UNALLOCATED
+81704F7F cmnhi r0, pc, ror pc (unpredictable)
+21772773 cmncs r7, r3, ror r7 (unpredictable)
+11771E7E cmnne r7, lr, ror lr (unpredictable)

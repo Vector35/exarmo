@@ -1,0 +1,79 @@
+// BL_i_T1 111|10|S=x|imm10=xxxxxxxxxx|1|1|J1=x|1|J2=x|imm11=xxxxxxxxxxx
+// BlIT1: BL{<c>}{<q>}  <label>
+// read together by <label>: S, imm10, J1, J2, imm11
+// IT state read: condition, last in block
+f0d8d6e5 bl 0xce8dce
+f636f8e2 bl 0xffe461c8
+f3aefbb6 bl 0x3be770
+f7edf125 bl 0xffbfd24e
+f669f0d1 bl 0xffa791a6
+f0e4d4e7 bl 0xcf49d2
+f235f49c bl 0x64593c
+f6a4fb6d bl 0xffeb46de
+F000D000 bl 0xc10004
+F3FFD7FF bl 0x1010002
+F200D400 bl 0xe10804
+F100D200 bl 0xd10404
+F080D100 bl 0xc90204
+F040D080 bl 0xc50104
+F020D040 bl 0xc30084
+F010D020 bl 0xc20044
+F008D010 bl 0xc18024
+F004D008 bl 0xc14014
+F002D004 bl 0xc1200c
+F001D002 bl 0xc11008
+F0D8D001 bl 0xce8006
+F000D7FF bl 0xc11002
+F000D800 bl 0x810004
+F000DFFF bl 0x811002
+F000F000 bl 0x410004
+F000F7FF bl 0x411002
+F000F800 bl 0x10004
+F000FFFF bl 0x11002
+F3FFD000 bl 0x100f004
+F3FFD800 bl 0xc0f004
+F3FFDFFF bl 0xc10002
+F3FFF000 bl 0x80f004
+F3FFF7FF bl 0x810002
+F3FFF800 bl 0x40f004
+F3FFFFFF bl 0x410002
+F400D000 bl 0xff010004
+F400D7FF bl 0xff011002
+F400D800 bl 0xff410004
+F400DFFF bl 0xff411002
+F400F000 bl 0xff810004
+F400F7FF bl 0xff811002
+F400F800 bl 0xffc10004
+F400FFFF bl 0xffc11002
+F7FFD000 bl 0xff40f004
+F7FFD7FF bl 0xff410002
+F7FFD800 bl 0xff80f004
+F7FFDFFF bl 0xff810002
+F7FFF000 bl 0xffc0f004
+F7FFF7FF bl 0xffc10002
+F7FFF800 bl 0xf004
+F7FFFFFF bl 0x10002
+F0D8D6E5 [ne] blne 0xce8dce (unpredictable)
+F0D8D6E5 [ne last] blne 0xce8dce
+
+// BL_i_T2 111|10|S=x|imm10H=xxxxxxxxxx|1|1|J1=x|0|J2=x|imm10L=xxxxxxxxxx|H=x
+// BlIT2: BLX{<c>}{<q>}  <label>
+// read together by <label>: S, J1, J2
+// IT state read: condition, last in block
+f2a4cdf6 blx 0xab4bf0
+f755ccf4 blx 0xff7659ec
+F000E000 blx 0x410004
+F3FFC7FE blx 0x1010000
+F200E400 blx 0x610804
+F100EA00 blx 0x110404
+F480C100 blx 0xff090204
+F440E080 blx 0xff850104
+F420E840 blx 0xffc30084
+F010C820 blx 0x820044
+F008C810 blx 0x818024
+F004C808 blx 0x814014
+F002C804 blx 0x81200c
+F001C802 blx 0x811008
+F2A4CDF7 UNDEFINED
+F2A4CDF6 [ne] blxne 0xab4bf0 (unpredictable)
+F2A4CDF6 [ne last] blxne 0xab4bf0

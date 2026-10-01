@@ -1,0 +1,26 @@
+// addpl_r_ri_ 000|0010|0|0|op=1|1|Rn=xxxxx|0101|0|imm6=xxxxxx|Rd=xxxxx
+// AddplRRi: ADDPL  <Xd|SP>, <Xn|SP>, #<imm>
+// register fields: Rn, Rd
+04635315 addpl x21, x3, #0x18
+047257EB addpl x11, x18, #-1
+04605136 addpl x22, x0, #0x9
+046851F1 addpl x17, x8, #0xf
+0470544C addpl x12, x16, #-30
+0461531F addpl sp, x1, #0x18
+046055EF addpl x15, x0, #-17
+047857DB addpl x27, x24, #-2
+046852E1 addpl x1, x8, #0x17
+047653EC addpl x12, x22, #0x1f
+046B532F addpl x15, x11, #0x19
+046655B6 addpl x22, x6, #-19
+046156E0 addpl x0, x1, #-9
+046D56A6 addpl x6, x13, #-11
+047A5412 addpl x18, x26, #-32
+04795795 addpl x21, x25, #-4
+047F5015 addpl x21, sp, #0x0
+04635303 addpl x3, x3, #0x18
+04635215 addpl x21, x3, #0x10
+04635115 addpl x21, x3, #0x8
+04635095 addpl x21, x3, #0x4
+04635055 addpl x21, x3, #0x2
+04635035 addpl x21, x3, #0x1

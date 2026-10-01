@@ -1,0 +1,29 @@
+// sqsub_z_zi_ 001|0010|1|size=xx|1|00|11|U=0|11|sh=x|imm8=xxxxxxxx|Zdn=xxxxx
+// SqsubZZi: SQSUB  <Zdn>.<T>, <Zdn>.<T>, #<imm>{, <shift>}
+// register fields: Zdn
+25A6DCC9 sqsub z9.s, z9.s, #0xe6
+25A6C644 sqsub z4.s, z4.s, #0x32
+25A6EDAD sqsub z13.s, z13.s, #0x6d, lsl #0x8
+2566DBC2 sqsub z2.h, z2.h, #0xde
+25A6EEF5 sqsub z21.s, z21.s, #0x77, lsl #0x8
+25A6FF81 sqsub z1.s, z1.s, #0xfc, lsl #0x8
+25A6DE45 sqsub z5.s, z5.s, #0xf2
+25E6CCF1 sqsub z17.d, z17.d, #0x67
+25E6F722 sqsub z2.d, z2.d, #0xb9, lsl #0x8
+25A6EE22 sqsub z2.s, z2.s, #0x71, lsl #0x8
+2566D64C sqsub z12.h, z12.h, #0xb2
+25A6D849 sqsub z9.s, z9.s, #0xc2
+2526DA59 sqsub z25.b, z25.b, #0xd2
+25E6F5EA sqsub z10.d, z10.d, #0xaf, lsl #0x8
+2566D191 sqsub z17.h, z17.h, #0x8c
+2566F835 sqsub z21.h, z21.h, #0xc1, lsl #0x8
+25A6C000 sqsub z0.s, z0.s, #0x0
+25A6DFFF sqsub z31.s, z31.s, #0xff
+25A6D009 sqsub z9.s, z9.s, #0x80
+25A6C809 sqsub z9.s, z9.s, #0x40
+25A6C409 sqsub z9.s, z9.s, #0x20
+25A6C209 sqsub z9.s, z9.s, #0x10
+25A6C109 sqsub z9.s, z9.s, #0x8
+25A6C089 sqsub z9.s, z9.s, #0x4
+25A6C049 sqsub z9.s, z9.s, #0x2
+25A6C029 sqsub z9.s, z9.s, #0x1

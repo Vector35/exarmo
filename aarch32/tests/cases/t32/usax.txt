@@ -1,0 +1,16 @@
+// USAX_T1 111|11010|1|op1=110|Rn=xxxx|1111|Rd=xxxx|0|U=1|H=0|S=0|Rm=xxxx
+// UsaxT1: USAX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fae3fe43 usax lr, r3, r3
+fae0f64d usax r6, r0, sp
+fae4f640 usax r6, r4, r0
+faedfd49 usax sp, sp, r9
+faeaf74a usax r7, r10, r10
+fae1fa40 usax r10, r1, r0
+faeef342 usax r3, lr, r2
+faecf645 usax r6, r12, r5
+FAEFF04F usax r0, pc, pc (unpredictable)
+FAE3FF43 usax pc, r3, r3 (unpredictable)
+FAE3FE4E usax lr, r3, lr
+FAE3FE43 [ne] usaxne lr, r3, r3

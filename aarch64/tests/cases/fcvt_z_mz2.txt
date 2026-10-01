@@ -1,0 +1,9 @@
+// fcvt_z_mz2_ 1|10|0000|1|0|op=0|1|000|00|111000|Zn=xxxx|N=0|Zd=xxxxx
+// FcvtZMz2: FCVT  <Zd>.H, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+C120E002 fcvt z2.h, {z0.s-z1.s}
+C120E009 fcvt z9.h, {z0.s-z1.s}
+C120E010 fcvt z16.h, {z0.s-z1.s}
+C120E3C0 fcvt z0.h, {z30.s-z31.s}
+C120E01F fcvt z31.h, {z0.s-z1.s}
+C120E000 fcvt z0.h, {z0.s-z1.s}

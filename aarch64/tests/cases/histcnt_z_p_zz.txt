@@ -1,0 +1,19 @@
+// histcnt_z_p_zz_ 010|0010|1|size=xx|1|Zm=xxxxx|110|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// HistcntZPZz: HISTCNT  <Zd>.<T>, <Pg>/Z, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Pg, Zn, Zd
+45AFD686 histcnt z6.s, p5/z, z20.s, z15.s
+45F8DF28 histcnt z8.d, p7/z, z25.d, z24.d
+45EBD43E histcnt z30.d, p5/z, z1.d, z11.d
+45E1D585 histcnt z5.d, p5/z, z12.d, z1.d
+45FAC3E1 histcnt z1.d, p0/z, z31.d, z26.d
+45AECDFD histcnt z29.s, p3/z, z15.s, z14.s
+45E8CEB1 histcnt z17.d, p3/z, z21.d, z8.d
+45FCD67E histcnt z30.d, p5/z, z19.d, z28.d
+45A0C400 histcnt z0.s, p1/z, z0.s, z0.s
+45BFCA9F histcnt z31.s, p2/z, z20.s, z31.s
+45AFD286 histcnt z6.s, p4/z, z20.s, z15.s
+45AFDA86 histcnt z6.s, p6/z, z20.s, z15.s
+452FD686 UNDEFINED
+456FD686 UNDEFINED
+45A5D686 histcnt z6.s, p5/z, z20.s, z5.s
+45AFD4A6 histcnt z6.s, p5/z, z5.s, z15.s

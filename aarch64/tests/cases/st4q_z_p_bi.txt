@@ -1,0 +1,18 @@
+// st4q_z_p_bi_contiguous 111|0010|0|num=11|00|imm4=xxxx|0|0|0|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// St4qZPBiContiguous: ST4Q  { <Zt1>.Q, <Zt2>.Q, <Zt3>.Q, <Zt4>.Q }, <Pg>, [<Xn|SP>{, #<imm>, MUL VL}]
+// register fields: Pg, Rn, Zt
+E4C00004 st4q {z4.q, z5.q, z6.q, z7.q}, p0, [x0]
+E4C0000B st4q {z11.q, z12.q, z13.q, z14.q}, p0, [x0]
+E4C00012 st4q {z18.q, z19.q, z20.q, z21.q}, p0, [x0]
+E4CF07E0 st4q {z0.q, z1.q, z2.q, z3.q}, p1, [sp, #-0x4, mul vl]
+E4C0081F st4q {z31.q, z0.q, z1.q, z2.q}, p2, [x0]
+E4C00C04 st4q {z4.q, z5.q, z6.q, z7.q}, p3, [x0]
+E4C01004 st4q {z4.q, z5.q, z6.q, z7.q}, p4, [x0]
+E4C01404 st4q {z4.q, z5.q, z6.q, z7.q}, p5, [x0]
+E4C01804 st4q {z4.q, z5.q, z6.q, z7.q}, p6, [x0]
+E4C01C04 st4q {z4.q, z5.q, z6.q, z7.q}, p7, [x0]
+E4C00000 st4q {z0.q, z1.q, z2.q, z3.q}, p0, [x0]
+E4C80004 st4q {z4.q, z5.q, z6.q, z7.q}, p0, [x0, #-0x20, mul vl]
+E4C40004 st4q {z4.q, z5.q, z6.q, z7.q}, p0, [x0, #0x10, mul vl]
+E4C20004 st4q {z4.q, z5.q, z6.q, z7.q}, p0, [x0, #0x8, mul vl]
+E4C10004 st4q {z4.q, z5.q, z6.q, z7.q}, p0, [x0, #0x4, mul vl]

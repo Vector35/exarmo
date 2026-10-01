@@ -1,0 +1,10 @@
+// bfsub_z_zz_ 011|0010|1|size=00|0|Zm=xxxxx|000|opc=001|Zn=xxxxx|Zd=xxxxx
+// BfsubZZz: BFSUB  <Zd>.H, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zd
+65000402 bfsub z2.h, z0.h, z0.h
+65000409 bfsub z9.h, z0.h, z0.h
+65000410 bfsub z16.h, z0.h, z0.h
+651F07E0 bfsub z0.h, z31.h, z31.h
+6500041F bfsub z31.h, z0.h, z0.h
+65000400 bfsub z0.h, z0.h, z0.h
+65010443 bfsub z3.h, z2.h, z1.h

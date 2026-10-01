@@ -1,0 +1,119 @@
+// VMUL_f_T1_D 111|U=1|11110|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VmulFT1D: VMUL{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff1bcdbb vmul.f16 d12, d27, d27
+ff54ed31 vmul.f16 d30, d4, d17
+ff153d37 vmul.f16 d3, d5, d23
+ff026d1e vmul.f32 d6, d2, d14
+ff174d31 vmul.f16 d4, d7, d17
+ff55ad10 vmul.f16 d26, d5, d0
+ff58ad1c vmul.f16 d26, d8, d12
+ff594d92 vmul.f16 d20, d25, d2
+FF100DBF vmul.f16 d0, d16, d31
+FF1FFDB8 vmul.f16 d15, d31, d24
+FF118DB4 vmul.f16 d8, d17, d20
+FF102D1F vmul.f16 d2, d0, d15
+FF101DB0 vmul.f16 d1, d16, d16
+FF1F0D3F vmul.f16 d0, d15, d31
+FF1FFDBB vmul.f16 d15, d31, d27
+FF5B0DBB vmul.f16 d16, d27, d27
+FF5BFDBB vmul.f16 d31, d27, d27
+FF1BCDBB [ne] vmulne.f16 d12, d27, d27 (unpredictable)
+
+// VMUL_f_T1_Q 111|U=1|11110|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VmulFT1Q: VMUL{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff0acd7e vmul.f32 q6, q5, q15
+ff444d70 vmul.f32 q10, q2, q8
+ff144d7e vmul.f16 q2, q2, q15
+ff504df0 vmul.f16 q10, q8, q8
+ff08ad58 vmul.f32 q5, q4, q4
+ff58cdda vmul.f16 q14, q12, q5
+ff40cdd0 vmul.f32 q14, q8, q0
+ff464d7a vmul.f32 q10, q3, q13
+FF0FFD7F UNDEFINED
+FF020D74 vmul.f32 q0, q1, q10
+FF011D71 UNDEFINED
+FF008D72 vmul.f32 q4, q0, q9
+FF0A2D7E vmul.f32 q1, q5, q15
+FF0A0D7E vmul.f32 q0, q5, q15
+FF0FFD5F UNDEFINED
+FF4A0D7E vmul.f32 q8, q5, q15
+FF4FFDFF UNDEFINED
+FF0ACD7E [ne] vmulne.f32 q6, q5, q15
+
+// VMUL_f_T2_D 11101110|o0=0|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=11|N=x|o2=0|M=x|0|Vm=xxxx
+// VmulFT2D: VMUL{<c>}{<q>}.F64  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ee281b24 vmul.f64 d1, d8, d20
+ee2ccb85 vmul.f64 d12, d28, d5
+ee622b8a vmul.f64 d18, d18, d10
+ee220bab vmul.f64 d0, d18, d27
+ee20fb28 vmul.f64 d15, d0, d24
+ee6bcba6 vmul.f64 d28, d27, d22
+ee6b3b04 vmul.f64 d19, d11, d4
+ee2c8b01 vmul.f64 d8, d12, d1
+EE2F4B20 vmul.f64 d4, d15, d16
+EE640B2F vmul.f64 d16, d4, d31
+EE61FB22 vmul.f64 d31, d1, d18
+EE201B80 vmul.f64 d1, d16, d0
+EE2F1BA0 vmul.f64 d1, d31, d16
+EE281B2F vmul.f64 d1, d8, d31
+EE281B0F vmul.f64 d1, d8, d15
+EE281B24 [ne] vmulne.f64 d1, d8, d20
+
+// VMUL_f_T2_H 11101110|o0=0|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=01|N=x|o2=0|M=x|0|Vm=xxxx
+// VmulFT2H: VMUL{<c>}{<q>}.F16  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee2499ae vmul.f16 s18, s9, s29
+ee613984 vmul.f16 s7, s3, s8
+ee2c798a vmul.f16 s14, s25, s20
+ee628928 vmul.f16 s17, s4, s17
+ee62d9a8 vmul.f16 s27, s5, s17
+ee2e9986 vmul.f16 s18, s29, s12
+ee6df90a vmul.f16 s31, s26, s20
+ee6e692c vmul.f16 s13, s28, s25
+EE2009A0 vmul.f16 s0, s1, s1
+EE2F49AF vmul.f16 s8, s31, s31
+EE2829A2 vmul.f16 s4, s17, s5
+EE201921 vmul.f16 s2, s0, s3
+EE200980 vmul.f16 s0, s1, s0
+EE2FF90F vmul.f16 s30, s30, s30
+EE6F09A0 vmul.f16 s1, s31, s1
+EE2499AF vmul.f16 s18, s9, s31
+EE2499AE [ne] vmulne.f16 s18, s9, s29 (unpredictable)
+
+// VMUL_f_T2_S 11101110|o0=0|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=10|N=x|o2=0|M=x|0|Vm=xxxx
+// VmulFT2S: VMUL{<c>}{<q>}.F32  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee66aaa8 vmul.f32 s21, s13, s17
+ee65baa7 vmul.f32 s23, s11, s15
+ee21aaa5 vmul.f32 s20, s3, s11
+ee28ea06 vmul.f32 s28, s16, s12
+ee698aa9 vmul.f32 s17, s19, s19
+ee660a20 vmul.f32 s1, s12, s1
+ee6f8a01 vmul.f32 s17, s30, s2
+ee6eba8e vmul.f32 s23, s29, s28
+EE60FAAF vmul.f32 s31, s1, s31
+EE644AA4 vmul.f32 s9, s9, s9
+EE622AA2 vmul.f32 s5, s5, s5
+EE601A00 vmul.f32 s3, s0, s0
+EE200A8F vmul.f32 s0, s1, s30
+EE2FFAAF vmul.f32 s30, s31, s31
+EE66FAA8 vmul.f32 s31, s13, s17
+EE66AAA8 [ne] vmulne.f32 s21, s13, s17

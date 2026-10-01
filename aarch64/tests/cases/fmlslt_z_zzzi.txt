@@ -1,0 +1,17 @@
+// fmlslt_z_zzzi_s 011|0010|0|1|o2=0|1|i3h=xx|Zm=xxx|01|op=1|0|i3l=x|T=1|Zn=xxxxx|Zda=xxxxx
+// FmlsltZZzziS: FMLSLT  <Zda>.S, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+64AB6C46 fmlslt z6.s, z2.h, z3.h[3]
+64B16C54 fmlslt z20.s, z2.h, z1.h[5]
+64A46CB1 fmlslt z17.s, z5.h, z4.h[1]
+64B66CAF fmlslt z15.s, z5.h, z6.h[5]
+64BC6FE8 fmlslt z8.s, z31.h, z4.h[7]
+64AA6C7E fmlslt z30.s, z3.h, z2.h[3]
+64AF67E3 fmlslt z3.s, z31.h, z7.h[2]
+64B76C9A fmlslt z26.s, z4.h, z7.h[5]
+64A86C00 fmlslt z0.s, z0.h, z0.h[3]
+64AD6C5F fmlslt z31.s, z2.h, z5.h[3]
+64A36446 fmlslt z6.s, z2.h, z3.h[0]
+64B36446 fmlslt z6.s, z2.h, z3.h[4]
+64BB6446 fmlslt z6.s, z2.h, z3.h[6]

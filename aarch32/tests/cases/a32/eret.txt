@@ -1,0 +1,18 @@
+// ERET_A1 cond=xxxx|00|010|op0=11|0|(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)|0|110|(1)(1)(1)(0)
+// EretA1: ERET{<c>}{<q>}
+01600060 ereteq (unpredictable)
+F1600060 UNALLOCATED
+816FFF6F erethi (unpredictable)
+41680068 eretmi (unpredictable)
+21640064 eretcs (unpredictable)
+11620062 eretne (unpredictable)
+01610061 ereteq (unpredictable)
+01608060 ereteq (unpredictable)
+01604060 ereteq (unpredictable)
+01602060 ereteq (unpredictable)
+01601060 ereteq (unpredictable)
+01600860 ereteq (unpredictable)
+01600460 ereteq (unpredictable)
+01600260 ereteq (unpredictable)
+01600160 ereteq (unpredictable)
+0160006E ereteq

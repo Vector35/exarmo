@@ -1,0 +1,17 @@
+// fvdot_za16_zz8i_2xi 1|10|0000|0|op=1|110|Zm=xxxx|0|Rv=xx|K=x|Zk=xx|Zn=xxxx|0|i2=xx|off3=xxx
+// FvdotZa16Zz8i2xi: FVDOT  ZA.H[<Wv>, <offs>{, VGx2}], { <Zn1>.B-<Zn2>.B }, <Zm>.H[<index>], <Zk>.B
+// read together by <Zk>: K, Zk
+// register fields: Zm, Rv, Zn
+C0E00000 fvdot za.h[w8, 0, vgx2], {z0.b-z1.b}, z0.h[0], z20.b
+C0EF37C9 fvdot za.h[w9, 1, vgx2], {z30.b-z31.b}, z15.h[1], z29.b
+C0E04812 fvdot za.h[w10, 2, vgx2], {z0.b-z1.b}, z0.h[2], z22.b
+C0E06C1B fvdot za.h[w11, 3, vgx2], {z0.b-z1.b}, z0.h[3], z23.b
+C0E00004 fvdot za.h[w8, 4, vgx2], {z0.b-z1.b}, z0.h[0], z20.b
+C0E00405 fvdot za.h[w8, 5, vgx2], {z0.b-z1.b}, z0.h[0], z21.b
+C0E00806 fvdot za.h[w8, 6, vgx2], {z0.b-z1.b}, z0.h[0], z22.b
+C0E00C07 fvdot za.h[w8, 7, vgx2], {z0.b-z1.b}, z0.h[0], z23.b
+C0E01000 fvdot za.h[w8, 0, vgx2], {z0.b-z1.b}, z0.h[0], z28.b
+C0E01400 fvdot za.h[w8, 0, vgx2], {z0.b-z1.b}, z0.h[0], z29.b
+C0E01800 fvdot za.h[w8, 0, vgx2], {z0.b-z1.b}, z0.h[0], z30.b
+C0E01C00 fvdot za.h[w8, 0, vgx2], {z0.b-z1.b}, z0.h[0], z31.b
+C0E140C0 fvdot za.h[w10, 0, vgx2], {z6.b-z7.b}, z1.h[0], z20.b

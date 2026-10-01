@@ -1,0 +1,103 @@
+// URSHR_asimdshf_R 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|00|o1=1|o0=0|0|1|Rn=xxxxx|Rd=xxxxx
+// UrshrAsimdshfR: URSHR  <Vd>.<T>, <Vn>.<T>, #<shift>
+// read together by <T>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+6F6327FA urshr v26.2d, v31.2d, #0x1d
+2F3B25A7 urshr v7.2s, v13.2s, #0x5
+2F1A275F urshr v31.4h, v26.4h, #0x6
+2F3224B2 urshr v18.2s, v5.2s, #0xe
+2F1327B0 urshr v16.4h, v29.4h, #0xd
+6F4E26F8 urshr v24.2d, v23.2d, #0x32
+6F3827DB urshr v27.4s, v30.4s, #0x8
+2F1F26F6 urshr v22.4h, v23.4h, #0x1
+2F3D27F7 urshr v23.2s, v31.2s, #0x3
+6F512713 urshr v19.2d, v24.2d, #0x2f
+2F0C24AE urshr v14.8b, v5.8b, #0x4
+6F13242F urshr v15.8h, v1.8h, #0xd
+6F272676 urshr v22.4s, v19.4s, #0x19
+6F632481 urshr v1.2d, v4.2d, #0x1d
+2F2E27F2 urshr v18.2s, v31.2s, #0x12
+6F6B2564 urshr v4.2d, v11.2d, #0x15
+6F7B2400 urshr v0.2d, v0.2d, #0x5
+2F7B27FA UNDEFINED
+6F7827FA urshr v26.2d, v31.2d, #0x8
+6F7927FA urshr v26.2d, v31.2d, #0x7
+6F7A27FA urshr v26.2d, v31.2d, #0x6
+6F7C27FA urshr v26.2d, v31.2d, #0x4
+6F7D27FA urshr v26.2d, v31.2d, #0x3
+6F7E27FA urshr v26.2d, v31.2d, #0x2
+6F7F27FA urshr v26.2d, v31.2d, #0x1
+6F4327FA urshr v26.2d, v31.2d, #0x3d
+
+// URSHR_asisdshf_R 01|U=1|1|111|10|immh=1xxx|immb=xxx|00|o1=1|o0=0|0|1|Rn=xxxxx|Rd=xxxxx
+// UrshrAsisdshfR: URSHR  <d>, <n>, #<shift>
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+7F5A27B4 urshr d20, d29, #0x26
+7F4724F4 urshr d20, d7, #0x39
+7F7225DA urshr d26, d14, #0xe
+7F4A2573 urshr d19, d11, #0x36
+7F7F2594 urshr d20, d12, #0x1
+7F482484 urshr d4, d4, #0x38
+7F7127E8 urshr d8, d31, #0xf
+7F5527A3 urshr d3, d29, #0x2b
+7F4F24D8 urshr d24, d6, #0x31
+7F742602 urshr d2, d16, #0xc
+7F5926C6 urshr d6, d22, #0x27
+7F5D24EC urshr d12, d7, #0x23
+7F5A269A urshr d26, d20, #0x26
+7F5A260B urshr d11, d16, #0x26
+7F4827B9 urshr d25, d29, #0x38
+7F5025B8 urshr d24, d13, #0x30
+7F632400 urshr d0, d0, #0x1d
+7F6E27BF urshr d31, d29, #0x12
+7F4027B4 urshr d20, d29, #0x40
+7F4127B4 urshr d20, d29, #0x3f
+7F4227B4 urshr d20, d29, #0x3e
+7F4327B4 urshr d20, d29, #0x3d
+7F4427B4 urshr d20, d29, #0x3c
+7F4527B4 urshr d20, d29, #0x3b
+7F4627B4 urshr d20, d29, #0x3a
+7F4927B4 urshr d20, d29, #0x37
+7F4B27B4 urshr d20, d29, #0x35
+7F4C27B4 urshr d20, d29, #0x34
+7F4D27B4 urshr d20, d29, #0x33
+7F4E27B4 urshr d20, d29, #0x32
+7F5127B4 urshr d20, d29, #0x2f
+7F5227B4 urshr d20, d29, #0x2e
+7F5327B4 urshr d20, d29, #0x2d
+7F5427B4 urshr d20, d29, #0x2c
+7F5627B4 urshr d20, d29, #0x2a
+7F5727B4 urshr d20, d29, #0x29
+7F5827B4 urshr d20, d29, #0x28
+7F5B27B4 urshr d20, d29, #0x25
+7F5C27B4 urshr d20, d29, #0x24
+7F5E27B4 urshr d20, d29, #0x22
+7F5F27B4 urshr d20, d29, #0x21
+7F6027B4 urshr d20, d29, #0x20
+7F6127B4 urshr d20, d29, #0x1f
+7F6227B4 urshr d20, d29, #0x1e
+7F6427B4 urshr d20, d29, #0x1c
+7F6527B4 urshr d20, d29, #0x1b
+7F6627B4 urshr d20, d29, #0x1a
+7F6727B4 urshr d20, d29, #0x19
+7F6827B4 urshr d20, d29, #0x18
+7F6927B4 urshr d20, d29, #0x17
+7F6A27B4 urshr d20, d29, #0x16
+7F6B27B4 urshr d20, d29, #0x15
+7F6C27B4 urshr d20, d29, #0x14
+7F6D27B4 urshr d20, d29, #0x13
+7F6F27B4 urshr d20, d29, #0x11
+7F7027B4 urshr d20, d29, #0x10
+7F7327B4 urshr d20, d29, #0xd
+7F7527B4 urshr d20, d29, #0xb
+7F7627B4 urshr d20, d29, #0xa
+7F7727B4 urshr d20, d29, #0x9
+7F7827B4 urshr d20, d29, #0x8
+7F7927B4 urshr d20, d29, #0x7
+7F7A27B4 urshr d20, d29, #0x6
+7F7B27B4 urshr d20, d29, #0x5
+7F7C27B4 urshr d20, d29, #0x4
+7F7D27B4 urshr d20, d29, #0x3
+7F7E27B4 urshr d20, d29, #0x2

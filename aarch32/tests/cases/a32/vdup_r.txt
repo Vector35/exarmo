@@ -1,0 +1,32 @@
+// VDUP_r_A1_D cond=xxxx|11101|B=x|Q=0|L=0|Vd=xxxx|Rt=xxxx|1011|D=x|0|E=x|1(0)(0)(0)(0)
+// VdupRA1D: VDUP{<c>}{<q>}.<size>  <Dd>, <Rt>
+// read together by <size>: B, E
+// read together by <Dd>: Vd, D
+// register fields: Rt
+0E800B10 vdupeq.32 d0, r0
+FEC00B30 UNALLOCATED
+8ECFFB9F vduphi.8 d31, pc (unpredictable)
+4E880B38 vdupmi.16 d8, r0 (unpredictable)
+2E840B14 vdupcs.32 d4, r0 (unpredictable)
+1E820B32 vdupne.16 d2, r0 (unpredictable)
+0EC10B11 vdupeq.8 d1, r0 (unpredictable)
+0E800B90 vdupeq.32 d16, r0
+0E8F0B10 vdupeq.32 d15, r0
+0E8F0B90 vdupeq.32 d31, r0
+
+// VDUP_r_A1_Q cond=xxxx|11101|B=x|Q=1|L=0|Vd=xxxx|Rt=xxxx|1011|D=x|0|E=x|1(0)(0)(0)(0)
+// VdupRA1Q: VDUP{<c>}{<q>}.<size>  <Qd>, <Rt>
+// read together by <size>: B, E
+// read together by <Qd>: Vd, D
+// register fields: Rt
+5eea7b90 vduppl.8 q13, r7
+0EA00B3F vdupeq.16 q0, r0 (unpredictable)
+FEEF7BB0 UNALLOCATED
+8EA8FB98 vduphi.32 q12, pc (unpredictable)
+4EA47BB4 vdupmi.16 q10, r7 (unpredictable)
+2EE27B92 vdupcs.8 q9, r7 (unpredictable)
+1EE07B11 vdupne.8 q0, r7 (unpredictable)
+5EE17B90 UNDEFINED
+5EE07B90 vduppl.8 q8, r7
+5EEF7B10 UNDEFINED
+5EEF7B90 UNDEFINED

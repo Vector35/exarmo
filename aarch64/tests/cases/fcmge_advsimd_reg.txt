@@ -1,0 +1,97 @@
+// FCMGE_asimdsame_only 0|Q=x|U=1|0|111|0|E=0|sz=x|1|Rm=xxxxx|1110|ac=0|1|Rn=xxxxx|Rd=xxxxx
+// FcmgeAsimdsameOnly: FCMGE  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+2E3EE693 fcmge v19.2s, v20.2s, v30.2s
+6E3AE70E fcmge v14.4s, v24.4s, v26.4s
+6E29E590 fcmge v16.4s, v12.4s, v9.4s
+6E6AE539 fcmge v25.2d, v9.2d, v10.2d
+2E3CE5B8 fcmge v24.2s, v13.2s, v28.2s
+6E2BE58B fcmge v11.4s, v12.4s, v11.4s
+6E76E4C1 fcmge v1.2d, v6.2d, v22.2d
+2E28E544 fcmge v4.2s, v10.2s, v8.2s
+6E3FE7E3 fcmge v3.4s, v31.4s, v31.4s
+6E31E6CB fcmge v11.4s, v22.4s, v17.4s
+6E3DE620 fcmge v0.4s, v17.4s, v29.4s
+6E77E479 fcmge v25.2d, v3.2d, v23.2d
+6E27E502 fcmge v2.4s, v8.4s, v7.4s
+6E6CE4AC fcmge v12.2d, v5.2d, v12.2d
+2E23E625 fcmge v5.2s, v17.2s, v3.2s
+2E3AE639 fcmge v25.2s, v17.2s, v26.2s
+2E20E41F fcmge v31.2s, v0.2s, v0.2s
+2E7EE693 UNDEFINED
+2E3EE694 fcmge v20.2s, v20.2s, v30.2s
+
+// FCMGE_asimdsamefp16_only 0|Q=x|U=1|0|111|0|E=0|10|Rm=xxxxx|00|10|ac=0|1|Rn=xxxxx|Rd=xxxxx
+// FcmgeAsimdsamefp16Only: FCMGE  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+2E59251E fcmge v30.4h, v8.4h, v25.4h
+2E4D26A8 fcmge v8.4h, v21.4h, v13.4h
+2E5524C1 fcmge v1.4h, v6.4h, v21.4h
+6E562625 fcmge v5.8h, v17.8h, v22.8h
+2E5127CB fcmge v11.4h, v30.4h, v17.4h
+2E47275F fcmge v31.4h, v26.4h, v7.4h
+6E462446 fcmge v6.8h, v2.8h, v6.8h
+6E462465 fcmge v5.8h, v3.8h, v6.8h
+2E5E2649 fcmge v9.4h, v18.4h, v30.4h
+2E5E25B8 fcmge v24.4h, v13.4h, v30.4h
+2E4F240B fcmge v11.4h, v0.4h, v15.4h
+2E4F24A0 fcmge v0.4h, v5.4h, v15.4h
+2E4B2696 fcmge v22.4h, v20.4h, v11.4h
+2E5325D4 fcmge v20.4h, v14.4h, v19.4h
+6E5F2487 fcmge v7.8h, v4.8h, v31.8h
+2E402549 fcmge v9.4h, v10.4h, v0.4h
+2E5927FE fcmge v30.4h, v31.4h, v25.4h
+2E59273E fcmge v30.4h, v25.4h, v25.4h
+2E592508 fcmge v8.4h, v8.4h, v25.4h
+
+// FCMGE_asisdsame_only 01|U=1|1|111|0|E=0|sz=x|1|Rm=xxxxx|1110|ac=0|1|Rn=xxxxx|Rd=xxxxx
+// FcmgeAsisdsameOnly: FCMGE  <V><d>, <V><n>, <V><m>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// read together by <m>: sz, Rm
+// register fields: Rm, Rn, Rd
+7E7FE64E fcmge d14, d18, d31
+7E61E685 fcmge d5, d20, d1
+7E73E7E5 fcmge d5, d31, d19
+7E21E7B6 fcmge s22, s29, s1
+7E2CE7FF fcmge s31, s31, s12
+7E3CE647 fcmge s7, s18, s28
+7E2BE4AE fcmge s14, s5, s11
+7E76E673 fcmge d19, d19, d22
+7E3AE5C2 fcmge s2, s14, s26
+7E68E68E fcmge d14, d20, d8
+7E7BE524 fcmge d4, d9, d27
+7E64E5FE fcmge d30, d15, d4
+7E72E4CD fcmge d13, d6, d18
+7E24E4B0 fcmge s16, s5, s4
+7E78E5CD fcmge d13, d14, d24
+7E3BE4AA fcmge s10, s5, s27
+7E60E400 fcmge d0, d0, d0
+7E3FE640 fcmge s0, s18, s31
+7E7FE65F fcmge d31, d18, d31
+7E20E64E fcmge s14, s18, s0
+7E3FE64E fcmge s14, s18, s31
+7E3FE40E fcmge s14, s0, s31
+
+// FCMGE_asisdsamefp16_only 01|U=1|1|111|0|E=0|10|Rm=xxxxx|00|10|ac=0|1|Rn=xxxxx|Rd=xxxxx
+// FcmgeAsisdsamefp16Only: FCMGE  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+7E4027EE fcmge h14, h31, h0
+7E46254F fcmge h15, h10, h6
+7E4A26DE fcmge h30, h22, h10
+7E5D2502 fcmge h2, h8, h29
+7E552760 fcmge h0, h27, h21
+7E5F258F fcmge h15, h12, h31
+7E542609 fcmge h9, h16, h20
+7E4627C3 fcmge h3, h30, h6
+7E4F255E fcmge h30, h10, h15
+7E4B243D fcmge h29, h1, h11
+7E482753 fcmge h19, h26, h8
+7E432603 fcmge h3, h16, h3
+7E5927CD fcmge h13, h30, h25
+7E4C251A fcmge h26, h8, h12
+7E4D26EF fcmge h15, h23, h13
+7E552693 fcmge h19, h20, h21
+7E40241F fcmge h31, h0, h0
+7E4027FF fcmge h31, h31, h0

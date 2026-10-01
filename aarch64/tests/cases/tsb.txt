@@ -1,0 +1,3 @@
+// TSB_HC_hints 110|101|01000000110010|CRm=0010|op2=010|11111
+// TsbHcHints: TSB  CSYNC
+D503225F tsb csync

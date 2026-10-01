@@ -1,0 +1,103 @@
+// SRI_asimdshf_R 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|opcode=01000|1|Rn=xxxxx|Rd=xxxxx
+// SriAsimdshfR: SRI  <Vd>.<T>, <Vn>.<T>, #<shift>
+// read together by <T>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+2F1A469C sri v28.4h, v20.4h, #0x6
+6F6045F9 sri v25.2d, v15.2d, #0x20
+6F6147B4 sri v20.2d, v29.2d, #0x1f
+2F0B45D1 sri v17.8b, v14.8b, #0x5
+2F364530 sri v16.2s, v9.2s, #0xa
+6F524586 sri v6.2d, v12.2d, #0x2e
+6F534660 sri v0.2d, v19.2d, #0x2d
+6F4D458E sri v14.2d, v12.2d, #0x33
+6F5146EC sri v12.2d, v23.2d, #0x2f
+6F204606 sri v6.4s, v16.4s, #0x20
+6F604569 sri v9.2d, v11.2d, #0x20
+6F1445FF sri v31.8h, v15.8h, #0xc
+2F124542 sri v2.4h, v10.4h, #0xe
+6F2C473C sri v28.4s, v25.4s, #0x14
+2F3B444B sri v11.2s, v2.2s, #0x5
+2F0E4764 sri v4.8b, v27.8b, #0x2
+6F7F4419 sri v25.2d, v0.2d, #0x1
+2F1A47FC sri v28.4h, v31.4h, #0x6
+2F7A469C UNDEFINED
+6F7845EF sri v15.2d, v15.2d, #0x8
+6F7945F9 sri v25.2d, v15.2d, #0x7
+6F7A45F9 sri v25.2d, v15.2d, #0x6
+6F7B45F9 sri v25.2d, v15.2d, #0x5
+6F7C45F9 sri v25.2d, v15.2d, #0x4
+6F7D45F9 sri v25.2d, v15.2d, #0x3
+6F7E45F9 sri v25.2d, v15.2d, #0x2
+6F4045F9 sri v25.2d, v15.2d, #0x40
+
+// SRI_asisdshf_R 01|U=1|1|111|10|immh=1xxx|immb=xxx|opcode=01000|1|Rn=xxxxx|Rd=xxxxx
+// SriAsisdshfR: SRI  <d>, <n>, #<shift>
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+7F5746DD sri d29, d22, #0x29
+7F764615 sri d21, d16, #0xa
+7F554402 sri d2, d0, #0x2b
+7F4C4451 sri d17, d2, #0x34
+7F474526 sri d6, d9, #0x39
+7F504515 sri d21, d8, #0x30
+7F4545CF sri d15, d14, #0x3b
+7F7B46FE sri d30, d23, #0x5
+7F75479C sri d28, d28, #0xb
+7F754544 sri d4, d10, #0xb
+7F71456D sri d13, d11, #0xf
+7F7C4708 sri d8, d24, #0x4
+7F6A447E sri d30, d3, #0x16
+7F704448 sri d8, d2, #0x10
+7F5D4454 sri d20, d2, #0x23
+7F494487 sri d7, d4, #0x37
+7F6747E0 sri d0, d31, #0x19
+7F5746DF sri d31, d22, #0x29
+7F4046DD sri d29, d22, #0x40
+7F4146DD sri d29, d22, #0x3f
+7F4246DD sri d29, d22, #0x3e
+7F4346DD sri d29, d22, #0x3d
+7F4446DD sri d29, d22, #0x3c
+7F4646DD sri d29, d22, #0x3a
+7F4846DD sri d29, d22, #0x38
+7F4A46DD sri d29, d22, #0x36
+7F4B46DD sri d29, d22, #0x35
+7F4D46DD sri d29, d22, #0x33
+7F4E46DD sri d29, d22, #0x32
+7F4F46DD sri d29, d22, #0x31
+7F5146DD sri d29, d22, #0x2f
+7F5246DD sri d29, d22, #0x2e
+7F5346DD sri d29, d22, #0x2d
+7F5446DD sri d29, d22, #0x2c
+7F5646DD sri d29, d22, #0x2a
+7F5846DD sri d29, d22, #0x28
+7F5946DD sri d29, d22, #0x27
+7F5A46DD sri d29, d22, #0x26
+7F5B46DD sri d29, d22, #0x25
+7F5C46DD sri d29, d22, #0x24
+7F5E46DD sri d29, d22, #0x22
+7F5F46DD sri d29, d22, #0x21
+7F6046DD sri d29, d22, #0x20
+7F6146DD sri d29, d22, #0x1f
+7F6246DD sri d29, d22, #0x1e
+7F6346DD sri d29, d22, #0x1d
+7F6446DD sri d29, d22, #0x1c
+7F6546DD sri d29, d22, #0x1b
+7F6646DD sri d29, d22, #0x1a
+7F6846DD sri d29, d22, #0x18
+7F6946DD sri d29, d22, #0x17
+7F6B46DD sri d29, d22, #0x15
+7F6C46DD sri d29, d22, #0x14
+7F6D46DD sri d29, d22, #0x13
+7F6E46DD sri d29, d22, #0x12
+7F6F46DD sri d29, d22, #0x11
+7F7246DD sri d29, d22, #0xe
+7F7346DD sri d29, d22, #0xd
+7F7446DD sri d29, d22, #0xc
+7F7746DD sri d29, d22, #0x9
+7F7846DD sri d29, d22, #0x8
+7F7946DD sri d29, d22, #0x7
+7F7A46DD sri d29, d22, #0x6
+7F7D46DD sri d29, d22, #0x3
+7F7E46DD sri d29, d22, #0x2
+7F7F46DD sri d29, d22, #0x1

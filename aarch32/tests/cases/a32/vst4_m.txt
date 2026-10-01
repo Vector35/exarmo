@@ -1,0 +1,53 @@
+// VST4_m_A1_nowb 111101000|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=1111
+// Vst4MA1Nowb: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f44ad15f UNPREDICTABLE
+f44d010f vst4.8 {d16, d18, d20, d22}, [sp]
+f44c106f vst4.16 {d17, d18, d19, d20}, [r12:128]
+f445003f vst4.8 {d16, d17, d18, d19}, [r5:256]
+f448310f vst4.8 {d19, d21, d23, d25}, [r8]
+f40d913f vst4.8 {d9, d11, d13, d15}, [sp:256]
+f400917f vst4.16 {d9, d11, d13, d15}, [r0:256]
+f446c08f vst4.32 {d28, d29, d30, d31}, [r6]
+F44FF15F UNPREDICTABLE
+F44A815F vst4.16 {d24, d26, d28, d30}, [r10:64]
+F44A415F vst4.16 {d20, d22, d24, d26}, [r10:64]
+F44A215F vst4.16 {d18, d20, d22, d24}, [r10:64]
+F44AD1DF UNDEFINED
+F44F010F vst4.8 {d16, d18, d20, d22}, [pc] (unpredictable)
+F40DF13F vst4.8 {d15, d17, d19, d21}, [sp:256]
+
+// VST4_m_A1_posti 111101000|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=1101
+// Vst4MA1Posti: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f441711d vst4.8 {d23, d25, d27, d29}, [r1:64]!
+f44e303d vst4.8 {d19, d20, d21, d22}, [lr:256]!
+f441b13d UNPREDICTABLE
+f40f517d vst4.16 {d5, d7, d9, d11}, [pc:256]! (unpredictable)
+f441a06d vst4.16 {d26, d27, d28, d29}, [r1:128]!
+f448e08d UNPREDICTABLE
+f407411d vst4.8 {d4, d6, d8, d10}, [r7:64]!
+f44a211d vst4.8 {d18, d20, d22, d24}, [r10:64]!
+F440011D vst4.8 {d16, d18, d20, d22}, [r0:64]!
+F441F11D UNPREDICTABLE
+F441811D vst4.8 {d24, d26, d28, d30}, [r1:64]!
+F441111D vst4.8 {d17, d19, d21, d23}, [r1:64]!
+F44171DD UNDEFINED
+F40FF18D vst4.32 {d15, d17, d19, d21}, [pc]! (unpredictable)
+
+// VST4_m_A1_postr 111101000|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=xxxx
+// Vst4MA1Postr: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f40180ae vst4.32 {d8, d9, d10, d11}, [r1:128], lr
+f4451052 vst4.16 {d17, d18, d19, d20}, [r5:64], r2
+f44ae0ab UNPREDICTABLE
+f448b150 UNPREDICTABLE
+f40c7008 vst4.8 {d7, d8, d9, d10}, [r12], r8
+f4062116 vst4.8 {d2, d4, d6, d8}, [r6:64], r6
+f443116a vst4.16 {d17, d19, d21, d23}, [r3:128], r10
+f44b500e vst4.8 {d21, d22, d23, d24}, [r11], lr
+F40000BE vst4.32 {d0, d1, d2, d3}, [r0:256], lr
+F40FF0AE vst4.32 {d15, d16, d17, d18}, [pc:128], lr (unpredictable)
+F40140AE vst4.32 {d4, d5, d6, d7}, [r1:128], lr
+F40180EF UNDEFINED
+F40180A0 vst4.32 {d8, d9, d10, d11}, [r1:128], r0

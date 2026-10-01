@@ -1,0 +1,43 @@
+// RCWSCLR_64_memop 0|S=1|111|VR=0|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsclr64Memop: RCWSCLR  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+78209003 rcwsclr x0, x3, [x0]
+7820900A rcwsclr x0, x10, [x0]
+78209011 rcwsclr x0, x17, [x0]
+783F93E0 rcwsclr xzr, x0, [sp]
+7820901F rcwsclr x0, xzr, [x0]
+78209000 rcwsclr x0, x0, [x0]
+78219043 rcwsclr x1, x3, [x2]
+
+// RCWSCLRA_64_memop 0|S=1|111|VR=0|00|A=1|R=0|1|Rs=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsclra64Memop: RCWSCLRA  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+78A09006 rcwsclra x0, x6, [x0]
+78A0900D rcwsclra x0, x13, [x0]
+78A09014 rcwsclra x0, x20, [x0]
+78BF93E0 rcwsclra xzr, x0, [sp]
+78A0901F rcwsclra x0, xzr, [x0]
+78A09000 rcwsclra x0, x0, [x0]
+78A19043 rcwsclra x1, x3, [x2]
+
+// RCWSCLRAL_64_memop 0|S=1|111|VR=0|00|A=1|R=1|1|Rs=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsclral64Memop: RCWSCLRAL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+78E09004 rcwsclral x0, x4, [x0]
+78E0900B rcwsclral x0, x11, [x0]
+78E09012 rcwsclral x0, x18, [x0]
+78FF93E0 rcwsclral xzr, x0, [sp]
+78E0901F rcwsclral x0, xzr, [x0]
+78E09000 rcwsclral x0, x0, [x0]
+78E19043 rcwsclral x1, x3, [x2]
+
+// RCWSCLRL_64_memop 0|S=1|111|VR=0|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsclrl64Memop: RCWSCLRL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+78609001 rcwsclrl x0, x1, [x0]
+78609008 rcwsclrl x0, x8, [x0]
+7860900F rcwsclrl x0, x15, [x0]
+787F93E0 rcwsclrl xzr, x0, [sp]
+7860901F rcwsclrl x0, xzr, [x0]
+78609000 rcwsclrl x0, x0, [x0]
+78619043 rcwsclrl x1, x3, [x2]

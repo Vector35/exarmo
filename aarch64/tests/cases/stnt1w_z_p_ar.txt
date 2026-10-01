@@ -1,0 +1,31 @@
+// stnt1w_z_p_ar_d_64_unscaled 111|0010|msz=10|0|0|Rm=xxxxx|001|Pg=xxx|Zn=xxxxx|Zt=xxxxx
+// Stnt1wZPArD64Unscaled: STNT1W  { <Zt>.D }, <Pg>, [<Zn>.D{, <Xm>}]
+// register fields: Rm, Pg, Zn, Zt
+E514379D stnt1w {z29.d}, p5, [z28.d, x20]
+E51637C3 stnt1w {z3.d}, p5, [z30.d, x22]
+E51A2B0D stnt1w {z13.d}, p2, [z24.d, x26]
+E518309A stnt1w {z26.d}, p4, [z4.d, x24]
+E5172CF2 stnt1w {z18.d}, p3, [z7.d, x23]
+E5062197 stnt1w {z23.d}, p0, [z12.d, x6]
+E5022990 stnt1w {z16.d}, p2, [z12.d, x2]
+E5133C7B stnt1w {z27.d}, p7, [z3.d, x19]
+E5002400 stnt1w {z0.d}, p1, [z0.d, x0]
+E51F3BFF stnt1w {z31.d}, p6, [z31.d]
+E5143785 stnt1w {z5.d}, p5, [z28.d, x20]
+
+// stnt1w_z_p_ar_s_x32_unscaled 111|0010|msz=10|1|0|Rm=xxxxx|001|Pg=xxx|Zn=xxxxx|Zt=xxxxx
+// Stnt1wZPArSX32Unscaled: STNT1W  { <Zt>.S }, <Pg>, [<Zn>.S{, <Xm>}]
+// register fields: Rm, Pg, Zn, Zt
+E5503C00 stnt1w {z0.s}, p7, [z0.s, x16]
+E5462CD3 stnt1w {z19.s}, p3, [z6.s, x6]
+E54822E8 stnt1w {z8.s}, p0, [z23.s, x8]
+E5542B3E stnt1w {z30.s}, p2, [z25.s, x20]
+E5552652 stnt1w {z18.s}, p1, [z18.s, x21]
+E5572BCB stnt1w {z11.s}, p2, [z30.s, x23]
+E54C282D stnt1w {z13.s}, p2, [z1.s, x12]
+E5463490 stnt1w {z16.s}, p5, [z4.s, x6]
+E54033FF stnt1w {z31.s}, p4, [z31.s, x0]
+E55F3800 stnt1w {z0.s}, p6, [z0.s]
+E5473C00 stnt1w {z0.s}, p7, [z0.s, x7]
+E5503CE0 stnt1w {z0.s}, p7, [z7.s, x16]
+E5503C07 stnt1w {z7.s}, p7, [z0.s, x16]

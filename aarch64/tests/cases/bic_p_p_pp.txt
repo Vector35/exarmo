@@ -1,0 +1,22 @@
+// bic_p_p_pp_z 001|0010|1|op=0|S=0|00|Pm=xxxx|01|Pg=xxxx|o2=0|Pn=xxxx|o3=1|Pd=xxxx
+// BicPPPpZ: BIC  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// register fields: Pm, Pg, Pn, Pd
+25097471 bic p1.b, p13/z, p3.b, p9.b
+250F683B bic p11.b, p10/z, p1.b, p15.b
+25016DD0 bic p0.b, p11/z, p14.b, p1.b
+250D491F bic p15.b, p2/z, p8.b, p13.b
+25036052 bic p2.b, p8/z, p2.b, p3.b
+250A71F8 bic p8.b, p12/z, p15.b, p10.b
+250E4955 bic p5.b, p2/z, p10.b, p14.b
+25044CB4 bic p4.b, p3/z, p5.b, p4.b
+250B5150 bic p0.b, p4/z, p10.b, p11.b
+250C71B5 bic p5.b, p12/z, p13.b, p12.b
+250F7419 bic p9.b, p13/z, p0.b, p15.b
+250960DF bic p15.b, p8/z, p6.b, p9.b
+2503709F bic p15.b, p12/z, p4.b, p3.b
+250351FE bic p14.b, p4/z, p15.b, p3.b
+250B7D59 bic p9.b, p15/z, p10.b, p11.b
+2500657F bic p15.b, p9/z, p11.b, p0.b
+25094071 bic p1.b, p0/z, p3.b, p9.b
+2509753D bic p13.b, p13/z, p9.b, p9.b
+250975B1 bic p1.b, p13/z, p13.b, p9.b

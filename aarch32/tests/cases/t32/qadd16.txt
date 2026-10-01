@@ -1,0 +1,17 @@
+// QADD16_T1 111|11010|1|op1=001|Rn=xxxx|1111|Rd=xxxx|0|U=0|H=0|S=1|Rm=xxxx
+// Qadd16T1: QADD16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa92f11e qadd16 r1, r2, lr
+fa91f716 qadd16 r7, r1, r6
+fa98f71b qadd16 r7, r8, r11
+fa9cf018 qadd16 r0, r12, r8
+fa94fe1d qadd16 lr, r4, sp
+fa99f113 qadd16 r1, r9, r3
+fa9afb12 qadd16 r11, r10, r2
+fa90f914 qadd16 r9, r0, r4
+FA9FFF10 qadd16 pc, pc, r0 (unpredictable)
+FA92F21F qadd16 r2, r2, pc (unpredictable)
+FA92F112 qadd16 r1, r2, r2
+FA92F111 qadd16 r1, r2, r1
+FA92F11E [ne] qadd16ne r1, r2, lr

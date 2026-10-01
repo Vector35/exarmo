@@ -1,0 +1,10 @@
+// fmlallbt_z32_z8z8z8_ 011|0010|0|0|01|Zm=xxxxx|10|TT=01|10|Zn=xxxxx|Zda=xxxxx
+// FmlallbtZ32Z8z8z8: FMLALLBT  <Zda>.S, <Zn>.B, <Zm>.B
+// register fields: Zm, Zn, Zda
+64209805 fmlallbt z5.s, z0.b, z0.b
+6420980C fmlallbt z12.s, z0.b, z0.b
+64209813 fmlallbt z19.s, z0.b, z0.b
+643F9BE0 fmlallbt z0.s, z31.b, z31.b
+6420981F fmlallbt z31.s, z0.b, z0.b
+64209800 fmlallbt z0.s, z0.b, z0.b
+64219843 fmlallbt z3.s, z2.b, z1.b

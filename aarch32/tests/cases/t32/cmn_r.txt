@@ -1,0 +1,77 @@
+// CMN_r_T1 010000|op=1011|Rm=xxx|Rn=xxx
+// CmnRT1: CMN{<c>}{<q>}  <Rn>, <Rm>
+// register fields: Rm, Rn
+// IT state read: condition
+42c0 cmn r0, r0
+42c1 cmn r1, r0
+42c2 cmn r2, r0
+42c3 cmn r3, r0
+42c4 cmn r4, r0
+42c5 cmn r5, r0
+42c6 cmn r6, r0
+42c7 cmn r7, r0
+42C8 cmn r0, r1
+42D0 cmn r0, r2
+42D8 cmn r0, r3
+42E0 cmn r0, r4
+42E8 cmn r0, r5
+42F0 cmn r0, r6
+42F8 cmn r0, r7
+42C0 [ne] cmnne r0, r0
+
+// CMN_r_T2 1110101|op1=1000|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=1111|imm2=xx|stype=xx|Rm=xxxx
+// CmnRT2: CMN{<c>}{<q>}  <Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rm
+// IT state read: condition
+eb17cf92 cmn r7, r2, lsr #18 (unpredictable)
+eb1bbf0a cmn r11, r10, lsl #12 (unpredictable)
+eb1a7f32 cmn r10, r2, ror #28
+eb19cfbb cmn r9, r11, ror #18 (unpredictable)
+eb11dfa6 cmn r1, r6, asr #22 (unpredictable)
+eb1d0fd6 cmn sp, r6, lsr #3
+eb1daf62 cmn sp, r2, asr #9 (unpredictable)
+eb10cf50 cmn r0, r0, lsr #17 (unpredictable)
+EB1F9F9F cmn pc, pc, lsr #0x6 (unpredictable)
+EB17EF92 cmn r7, r2, lsr #0x1a (unpredictable)
+EB178F12 cmn r7, r2, lsr #0x20 (unpredictable)
+EB178F52 cmn r7, r2, lsr #0x1 (unpredictable)
+EB178F92 cmn r7, r2, lsr #0x2 (unpredictable)
+EB179F12 cmn r7, r2, lsr #0x4 (unpredictable)
+EB179F52 cmn r7, r2, lsr #0x5 (unpredictable)
+EB179F92 cmn r7, r2, lsr #0x6 (unpredictable)
+EB179FD2 cmn r7, r2, lsr #0x7 (unpredictable)
+EB17AF12 cmn r7, r2, lsr #0x8 (unpredictable)
+EB17AF92 cmn r7, r2, lsr #0xa (unpredictable)
+EB17AFD2 cmn r7, r2, lsr #0xb (unpredictable)
+EB17BF52 cmn r7, r2, lsr #0xd (unpredictable)
+EB17BF92 cmn r7, r2, lsr #0xe (unpredictable)
+EB17BFD2 cmn r7, r2, lsr #0xf (unpredictable)
+EB17CF12 cmn r7, r2, lsr #0x10 (unpredictable)
+EB17CFD2 cmn r7, r2, lsr #0x13 (unpredictable)
+EB17DF12 cmn r7, r2, lsr #0x14 (unpredictable)
+EB17DF52 cmn r7, r2, lsr #0x15 (unpredictable)
+EB17DFD2 cmn r7, r2, lsr #0x17 (unpredictable)
+EB17EF12 cmn r7, r2, lsr #0x18 (unpredictable)
+EB17EF52 cmn r7, r2, lsr #0x19 (unpredictable)
+EB17EFD2 cmn r7, r2, lsr #0x1b (unpredictable)
+EB17FF52 cmn r7, r2, lsr #0x1d (unpredictable)
+EB17FF92 cmn r7, r2, lsr #0x1e (unpredictable)
+EB17FFD2 cmn r7, r2, lsr #0x1f (unpredictable)
+EB17CF92 [ne] cmnne r7, r2, lsr #0x12 (unpredictable)
+
+// CMN_r_T2_RRX 1110101|op1=1000|S=1|Rn=xxxx|(0)|imm3=000|Rd=1111|imm2=00|stype=11|Rm=xxxx
+// CmnRT2Rrx: CMN{<c>}{<q>}  <Rn>, <Rm>, RRX
+// register fields: Rn, Rm
+// IT state read: condition
+eb1b0f34 cmn r11, r4, rrx
+eb140f34 cmn r4, r4, rrx
+eb160f37 cmn r6, r7, rrx
+eb1a0f3f cmn r10, pc, rrx (unpredictable)
+eb148f38 cmn r4, r8, rrx (unpredictable)
+eb110f3a cmn r1, r10, rrx
+eb1d8f3d cmn sp, sp, rrx (unpredictable)
+eb138f37 cmn r3, r7, rrx (unpredictable)
+EB100F30 cmn r0, r0, rrx
+EB1F0F34 cmn pc, r4, rrx (unpredictable)
+EB1B0F34 [ne] cmnne r11, r4, rrx

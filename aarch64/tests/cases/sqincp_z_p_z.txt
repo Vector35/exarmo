@@ -1,0 +1,22 @@
+// sqincp_z_p_z_ 001|0010|1|size=xx|101|0|D=0|U=0|1000|0|opc=00|Pm=xxxx|Zdn=xxxxx
+// SqincpZPZ: SQINCP  <Zdn>.<T>, <Pm>.<T>
+// register fields: Pm, Zdn
+256880D0 sqincp z16.h, p6.h
+25E88199 sqincp z25.d, p12.d
+25E88015 sqincp z21.d, p0.d
+25E88191 sqincp z17.d, p12.d
+25A8802B sqincp z11.s, p1.s
+25E880B6 sqincp z22.d, p5.d
+256881E0 sqincp z0.h, p15.h
+25688081 sqincp z1.h, p4.h
+2568819B sqincp z27.h, p12.h
+256880C9 sqincp z9.h, p6.h
+256880F1 sqincp z17.h, p7.h
+25A8809A sqincp z26.s, p4.s
+25E881ED sqincp z13.d, p15.d
+25A88117 sqincp z23.s, p8.s
+25A8804C sqincp z12.s, p2.s
+25A88024 sqincp z4.s, p1.s
+256880DF sqincp z31.h, p6.h
+252880D0 UNDEFINED
+256880C6 sqincp z6.h, p6.h

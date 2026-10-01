@@ -1,0 +1,116 @@
+// VABS_T1_D 111111111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|110|Q=0|M=x|0|Vm=xxxx
+// VabsT1D: VABS{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffb91300 vabs.s32 d1, d0
+fff52321 vabs.s16 d18, d17
+fff9a729 vabs.f32 d26, d25
+fff97326 vabs.s32 d23, d22
+fff9132e vabs.s32 d17, d30
+fff53304 vabs.s16 d19, d4
+ffb9d72d vabs.f32 d13, d29
+ffb1c328 vabs.s8 d12, d24
+FFBD1300 UNDEFINED
+FFB5070F vabs.f16 d0, d15
+FFB9F302 vabs.s32 d15, d2
+FFB9830F vabs.s32 d8, d15
+FFB94320 vabs.s32 d4, d16
+FFB11700 UNDEFINED
+FFBD1700 UNDEFINED
+FFB9032F vabs.s32 d0, d31
+FFB9F300 vabs.s32 d15, d0
+FFF90300 vabs.s32 d16, d0
+FFF9F300 vabs.s32 d31, d0
+FFB91300 [ne] vabsne.s32 d1, d0
+
+// VABS_T1_Q 111111111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|110|Q=1|M=x|0|Vm=xxxx
+// VabsT1Q: VABS{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb9e746 vabs.f32 q7, q3
+fff5074e vabs.f16 q8, q7
+fff5474e vabs.f16 q10, q7
+fff52742 vabs.f16 q9, q1
+fff5a768 vabs.f16 q13, q12
+fff9434c vabs.s32 q10, q6
+fff9676c vabs.f32 q11, q14
+fff5e74e vabs.f16 q15, q7
+FFF18340 vabs.s8 q12, q0
+FFBDF74F UNDEFINED
+FFB11741 UNDEFINED
+FFB10344 vabs.s8 q0, q2
+FFB5E340 vabs.s16 q7, q0
+FFBDF34F UNDEFINED
+FFFDF76F UNDEFINED
+FFB9E760 vabs.f32 q7, q8
+FFB9E746 [ne] vabsne.f32 q7, q3
+
+// VABS_T2_D 111011101|D=x|11|o1=0|opc2=000|Vd=xxxx|10|size=11|o3=1|1|M=x|0|Vm=xxxx
+// VabsT2D: VABS{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eeb06be5 vabs.f64 d6, d21
+eef0cbee vabs.f64 d28, d30
+eeb0dbe4 vabs.f64 d13, d20
+eeb04bc1 vabs.f64 d4, d1
+eeb0fbc0 vabs.f64 d15, d0
+eeb04be1 vabs.f64 d4, d17
+eef0ebe9 vabs.f64 d30, d25
+eef08bec vabs.f64 d24, d28
+EEB00BEF vabs.f64 d0, d31
+EEB02BE8 vabs.f64 d2, d24
+EEB01BE2 vabs.f64 d1, d18
+EEB00BCF vabs.f64 d0, d15
+EEF00BE0 vabs.f64 d16, d16
+EEF0FBEF vabs.f64 d31, d31
+EEB06BE5 [ne] vabsne.f64 d6, d21
+
+// VABS_T2_H 111011101|D=x|11|o1=0|opc2=000|Vd=xxxx|10|size=01|o3=1|1|M=x|0|Vm=xxxx
+// VabsT2H: VABS{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef099c9 vabs.f16 s19, s18
+eef099cf vabs.f16 s19, s30
+eeb0f9e6 vabs.f16 s30, s13
+eeb0c9ee vabs.f16 s24, s29
+eef069ea vabs.f16 s13, s21
+eef059cb vabs.f16 s11, s22
+eef099c7 vabs.f16 s19, s14
+eef009e4 vabs.f16 s1, s9
+EEF089C0 vabs.f16 s17, s0
+EEF049C8 vabs.f16 s9, s16
+EEF029C2 vabs.f16 s5, s4
+EEF019C1 vabs.f16 s3, s2
+EEB009C0 vabs.f16 s0, s0
+EEF0F9E0 vabs.f16 s31, s1
+EEF099EF vabs.f16 s19, s31
+EEF099C9 [ne] vabsne.f16 s19, s18 (unpredictable)
+
+// VABS_T2_S 111011101|D=x|11|o1=0|opc2=000|Vd=xxxx|10|size=10|o3=1|1|M=x|0|Vm=xxxx
+// VabsT2S: VABS{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef00ac9 vabs.f32 s1, s18
+eeb05aca vabs.f32 s10, s20
+eef09ac8 vabs.f32 s19, s16
+eeb02aee vabs.f32 s4, s29
+eeb07ae6 vabs.f32 s14, s13
+eef04ac3 vabs.f32 s9, s6
+eeb0aae9 vabs.f32 s20, s19
+eeb0aae3 vabs.f32 s20, s7
+EEF0FAC0 vabs.f32 s31, s0
+EEF08ACF vabs.f32 s17, s30
+EEF01AC4 vabs.f32 s3, s8
+EEB00AC2 vabs.f32 s0, s4
+EEB0FAC1 vabs.f32 s30, s2
+EEF00ACF vabs.f32 s1, s30
+EEF00AE0 vabs.f32 s1, s1
+EEF00AEF vabs.f32 s1, s31
+EEF00AC9 [ne] vabsne.f32 s1, s18

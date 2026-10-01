@@ -1,0 +1,13 @@
+// sm4ekey_z_zz_ 010|0010|1|size=00|1|Zm=xxxxx|111|10|op=0|Zn=xxxxx|Zd=xxxxx
+// Sm4ekeyZZz: SM4EKEY  <Zd>.S, <Zn>.S, <Zm>.S
+// register fields: Zm, Zn, Zd
+4533F313 sm4ekey z19.s, z24.s, z19.s
+4536F1BE sm4ekey z30.s, z13.s, z22.s
+4533F356 sm4ekey z22.s, z26.s, z19.s
+4530F118 sm4ekey z24.s, z8.s, z16.s
+4536F39C sm4ekey z28.s, z28.s, z22.s
+4529F086 sm4ekey z6.s, z4.s, z9.s
+4529F31A sm4ekey z26.s, z24.s, z9.s
+453CF1E6 sm4ekey z6.s, z15.s, z28.s
+4520F000 sm4ekey z0.s, z0.s, z0.s
+453FF3FF sm4ekey z31.s, z31.s, z31.s

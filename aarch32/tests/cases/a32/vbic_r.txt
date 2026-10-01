@@ -1,0 +1,43 @@
+// VBIC_r_A1_D 1111001|U=0|0|D=x|size=01|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VbicRA1D: VBIC{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f25b8137 vbic d24, d11, d23
+f217913e vbic d9, d7, d30
+f2580191 vbic d16, d24, d1
+f213d130 vbic d13, d3, d16
+f2531131 vbic d17, d3, d17
+f25ba195 vbic d26, d27, d5
+f2135114 vbic d5, d3, d4
+f21e51bf vbic d5, d30, d31
+F250F138 vbic d31, d0, d24
+F25F4132 vbic d20, d15, d18
+F2542110 vbic d18, d4, d0
+F212011F vbic d0, d2, d15
+F211F137 vbic d15, d1, d23
+F250F137 vbic d31, d0, d23
+F25081B7 vbic d24, d16, d23
+F25F8137 vbic d24, d15, d23
+F25F81B7 vbic d24, d31, d23
+
+// VBIC_r_A1_Q 1111001|U=0|0|D=x|size=01|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VbicRA1Q: VBIC{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f210a176 vbic q5, q0, q11
+f2144156 vbic q2, q2, q3
+f214e17c vbic q7, q2, q14
+f25aa1fe vbic q13, q13, q15
+f25c0170 vbic q8, q6, q8
+f25021fa vbic q9, q8, q13
+f2182152 vbic q1, q4, q1
+f25e0156 vbic q8, q7, q3
+F21FF17F UNDEFINED
+F2128178 vbic q4, q1, q12
+F2111171 UNDEFINED
+F2100174 vbic q0, q0, q10
+F21FF15F UNDEFINED
+F25FF1FF UNDEFINED
+F210A150 vbic q5, q0, q0

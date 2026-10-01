@@ -1,0 +1,16 @@
+// uabdlb_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|0|op=1|S=1|U=1|T=0|Zn=xxxxx|Zd=xxxxx
+// UabdlbZZz: UABDLB  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45483BC4 uabdlb z4.h, z30.b, z8.b
+45573B33 uabdlb z19.h, z25.b, z23.b
+45DD3811 uabdlb z17.d, z0.s, z29.s
+45D33B46 uabdlb z6.d, z26.s, z19.s
+45DD3A9C uabdlb z28.d, z20.s, z29.s
+45583A2C uabdlb z12.h, z17.b, z24.b
+45813B56 uabdlb z22.s, z26.h, z1.h
+455138E0 uabdlb z0.h, z7.b, z17.b
+45403BFF uabdlb z31.h, z31.b, z0.b
+455F3BC4 uabdlb z4.h, z30.b, z31.b
+45083BC4 UNDEFINED
+45483904 uabdlb z4.h, z8.b, z8.b
+45483BC8 uabdlb z8.h, z30.b, z8.b

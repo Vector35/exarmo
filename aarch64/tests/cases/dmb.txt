@@ -1,0 +1,18 @@
+// DMB_BO_barriers 110|101|01000000110011|CRm=xxxx|1|opc=01|Rt=11111
+// DmbBoBarriers: DMB  (<option>|#<imm>)
+D50335BF dmb nshld
+D5033FBF dmb sy
+D50336BF dmb nshst
+D50339BF dmb ishld
+D50333BF dmb osh
+D50330BF dmb #0x0
+D50332BF dmb oshst
+D5033EBF dmb st
+D50337BF dmb nsh
+D50334BF dmb #0x4
+D5033CBF dmb #0xc
+D50331BF dmb oshld
+D5033ABF dmb ishst
+D5033DBF dmb ld
+D5033BBF dmb ish
+D50338BF dmb #0x8

@@ -1,0 +1,29 @@
+// SSUBW_asimddiff_W 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|00|o1=1|1|00|Rn=xxxxx|Rd=xxxxx
+// SsubwAsimddiffW: SSUBW  <Vd>.<Ta>, <Vn>.<Ta>, <Vm>.<Tb>
+// SsubwAsimddiffW2: SSUBW2  <Vd>.<Ta>, <Vn>.<Ta>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+0E2033E1 ssubw v1.8h, v31.8h, v0.8b
+4E2F30C5 ssubw2 v5.8h, v6.8h, v15.16b
+0EBE323F ssubw v31.2d, v17.2d, v30.2s
+0E2130EE ssubw v14.8h, v7.8h, v1.8b
+0E2A317C ssubw v28.8h, v11.8h, v10.8b
+0EB53364 ssubw v4.2d, v27.2d, v21.2s
+4E333088 ssubw2 v8.8h, v4.8h, v19.16b
+4EB730A7 ssubw2 v7.2d, v5.2d, v23.4s
+0E2C32F3 ssubw v19.8h, v23.8h, v12.8b
+4EB231F7 ssubw2 v23.2d, v15.2d, v18.4s
+4EA032FE ssubw2 v30.2d, v23.2d, v0.4s
+0E3D315C ssubw v28.8h, v10.8h, v29.8b
+0E673301 ssubw v1.4s, v24.4s, v7.4h
+4EB13089 ssubw2 v9.2d, v4.2d, v17.4s
+0EAC3145 ssubw v5.2d, v10.2d, v12.2s
+0E2E31A0 ssubw v0.8h, v13.8h, v14.8b
+0E3F3001 ssubw v1.8h, v0.8h, v31.8b
+0EE033E1 UNDEFINED
+4E603001 ssubw2 v1.4s, v0.4s, v0.8h
+4EE033E1 UNDEFINED
+0E2033E0 ssubw v0.8h, v31.8h, v0.8b
+0E2033FF ssubw v31.8h, v31.8h, v0.8b
+4E2033E0 ssubw2 v0.8h, v31.8h, v0.16b

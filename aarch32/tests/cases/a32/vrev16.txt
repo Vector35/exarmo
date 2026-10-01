@@ -1,0 +1,32 @@
+// VREV16_A1_D 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|000|op=10|Q=0|M=x|0|Vm=xxxx
+// Vrev16A1D: VREV16{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f01125 vrev16.8 d17, d21
+f3f03124 vrev16.8 d19, d20
+f3b0a125 vrev16.8 d10, d21
+F3F41125 UNDEFINED
+F3F81125 UNDEFINED
+F3FC1125 UNDEFINED
+F3F00100 vrev16.8 d16, d0
+F3F0F12F vrev16.8 d31, d31
+F3F08128 vrev16.8 d24, d24
+F3F04122 vrev16.8 d20, d18
+F3F02121 vrev16.8 d18, d17
+F3B00100 vrev16.8 d0, d0
+F3B0F10F vrev16.8 d15, d15
+F3F00120 vrev16.8 d16, d16
+
+// VREV16_A1_Q 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|000|op=10|Q=1|M=x|0|Vm=xxxx
+// Vrev16A1Q: VREV16{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+F3B00140 vrev16.8 q0, q0
+F3F08168 vrev16.8 q12, q12
+F3B4F14F UNDEFINED
+F3B81141 UNDEFINED
+F3BCF14F UNDEFINED
+F3B04144 vrev16.8 q2, q2
+F3B02142 vrev16.8 q1, q1
+F3F00160 vrev16.8 q8, q8
+F3F0F16F UNDEFINED

@@ -1,0 +1,13 @@
+// WFIT_only_systeminstrswithreg 110|101|01000000110001|CRm=0000|op2=001|Rd=xxxxx
+// WfitOnlySysteminstrswithreg: WFIT  <Xt>
+// register fields: Rd
+D503103E wfit lr
+D5031036 wfit x22
+D503103C wfit x28
+D503103A wfit x26
+D5031027 wfit x7
+D503102F wfit x15
+D503102B wfit x11
+D5031030 wfit x16
+D5031020 wfit x0
+D503103F wfit xzr

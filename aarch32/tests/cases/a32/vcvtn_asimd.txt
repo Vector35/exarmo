@@ -1,0 +1,43 @@
+// VCVTN_asimd_A1_D 111100111|D=x|11|size=xx|opc1=11|Vd=xxxx|00|RM=01|op=x|Q=0|M=x|0|Vm=xxxx
+// VcvtnAsimdA1D: VCVTN{<q>}.<dt>.<dt2>  <Dd>, <Dm>
+// read together by <dt>: size, op
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3fb31a2 vcvtn.u32.f32 d19, d18
+f3fbd121 vcvtn.s32.f32 d29, d17
+f3b761a8 vcvtn.u16.f16 d6, d24
+f3b7a12b vcvtn.s16.f16 d10, d27
+f3fb112d vcvtn.s32.f32 d17, d29
+f3fba18d vcvtn.u32.f32 d26, d13
+f3fb11ac vcvtn.u32.f32 d17, d28
+F3F331A2 UNDEFINED
+F3FF31A2 UNDEFINED
+F3FB01A0 vcvtn.u32.f32 d16, d16
+F3FBF1AF vcvtn.u32.f32 d31, d31
+F3FB81A4 vcvtn.u32.f32 d24, d20
+F3FB4180 vcvtn.u32.f32 d20, d0
+F3FB218F vcvtn.u32.f32 d18, d15
+F3F33122 UNDEFINED
+F3FF3122 UNDEFINED
+F3BB01A0 vcvtn.u32.f32 d0, d16
+F3BBF1AF vcvtn.u32.f32 d15, d31
+F3FB01A2 vcvtn.u32.f32 d16, d18
+F3FBF1A2 vcvtn.u32.f32 d31, d18
+
+// VCVTN_asimd_A1_Q 111100111|D=x|11|size=xx|opc1=11|Vd=xxxx|00|RM=01|op=x|Q=1|M=x|0|Vm=xxxx
+// VcvtnAsimdA1Q: VCVTN{<q>}.<dt>.<dt2>  <Qd>, <Qm>
+// read together by <dt>: size, op
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f78160 vcvtn.s16.f16 q12, q8
+F3BB01C8 vcvtn.u32.f32 q0, q4
+F3F3F16F UNDEFINED
+F3FF1161 UNDEFINED
+F3F741E4 vcvtn.u16.f16 q10, q10
+F3FB2162 vcvtn.s32.f32 q9, q9
+F3B3F14F UNDEFINED
+F3F3F1EF UNDEFINED
+F3BB01C0 vcvtn.u32.f32 q0, q0
+F3FF8160 UNDEFINED
+F3FF81E0 UNDEFINED
+F3F70160 vcvtn.s16.f16 q8, q8

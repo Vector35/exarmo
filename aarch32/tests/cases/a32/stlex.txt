@@ -1,0 +1,14 @@
+// STLEX_A1 cond=xxxx|00|01|1|size=00|L=0|Rn=xxxx|Rd=xxxx|(1)(1)|ex=1|ord=0|1|00|1|Rt=xxxx
+// StlexA1: STLEX{<c>}{<q>}  <Rd>, <Rt>, [<Rn>]
+// register fields: Rn, Rd, Rt
+0180fe94 stlexeq pc, r4, [r0] (unpredictable)
+818bce9f stlexhi r12, pc, [r11] (unpredictable)
+// Binary Ninja's tests
+e1865e9f stlex r5, pc, [r6] (unpredictable)
+e1871e9f stlex r1, pc, [r7] (unpredictable)
+e1872e91 stlex r2, r1, [r7]
+F180FE94 UNALLOCATED
+418F0290 stlexmi r0, r0, [pc] (unpredictable)
+21800694 stlexcs r0, r4, [r0] (unpredictable)
+1180FA90 stlexne pc, r0, [r0] (unpredictable)
+0180FE9F stlexeq pc, pc, [r0] (unpredictable)

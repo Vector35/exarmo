@@ -1,0 +1,25 @@
+// ZIP1_asimdperm_only 0|Q=x|00|111|0|size=xx|0|Rm=xxxxx|0|op=0|11|10|Rn=xxxxx|Rd=xxxxx
+// Zip1AsimdpermOnly: ZIP1  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+0E4B3AF4 zip1 v20.4h, v23.4h, v11.4h
+0E863877 zip1 v23.2s, v3.2s, v6.2s
+4E433944 zip1 v4.8h, v10.8h, v3.8h
+4ED33AC9 zip1 v9.2d, v22.2d, v19.2d
+4E80387D zip1 v29.4s, v3.4s, v0.4s
+4E053AA8 zip1 v8.16b, v21.16b, v5.16b
+4E86389A zip1 v26.4s, v4.4s, v6.4s
+4ECF3A2F zip1 v15.2d, v17.2d, v15.2d
+0E123B77 zip1 v23.8b, v27.8b, v18.8b
+0E1A3BA8 zip1 v8.8b, v29.8b, v26.8b
+4E8C397A zip1 v26.4s, v11.4s, v12.4s
+4E8A38E1 zip1 v1.4s, v7.4s, v10.4s
+4E413B7E zip1 v30.8h, v27.8h, v1.8h
+4E5B3AA0 zip1 v0.8h, v21.8h, v27.8h
+4EC33AF3 zip1 v19.2d, v23.2d, v3.2d
+0E1A3A34 zip1 v20.8b, v17.8b, v26.8b
+0E5F381F zip1 v31.4h, v0.4h, v31.4h
+0E4B3BF4 zip1 v20.4h, v31.4h, v11.4h
+0ECB3AF4 UNDEFINED
+0E4B3974 zip1 v20.4h, v11.4h, v11.4h
+0E4B3AF7 zip1 v23.4h, v23.4h, v11.4h

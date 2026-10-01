@@ -1,0 +1,20 @@
+// frintn_mz_z_2 1|10|0000|1|size=10|1|01|opc=000|111000|Zn=xxxx|0|Zd=xxxx|0
+// FrintnMzZ2: FRINTN  { <Zd1>.S-<Zd2>.S }, { <Zn1>.S-<Zn2>.S }
+// register fields: Zn, Zd
+C1A8E00A frintn {z10.s-z11.s}, {z0.s-z1.s}
+C1A8E018 frintn {z24.s-z25.s}, {z0.s-z1.s}
+C1A8E042 frintn {z2.s-z3.s}, {z2.s-z3.s}
+C1A8E3C0 frintn {z0.s-z1.s}, {z30.s-z31.s}
+C1A8E01E frintn {z30.s-z31.s}, {z0.s-z1.s}
+
+// frintn_mz_z_4 1|10|0000|1|size=10|1|11|opc=000|111000|Zn=xxx|00|Zd=xxx|00
+// FrintnMzZ4: FRINTN  { <Zd1>.S-<Zd4>.S }, { <Zn1>.S-<Zn4>.S }
+// register fields: Zn, Zd
+C1B8E014 frintn {z20.s-z23.s}, {z0.s-z3.s}
+C1B8E084 frintn {z4.s-z7.s}, {z4.s-z7.s}
+C1B8E110 frintn {z16.s-z19.s}, {z8.s-z11.s}
+C1B8E180 frintn {z0.s-z3.s}, {z12.s-z15.s}
+C1B8E208 frintn {z8.s-z11.s}, {z16.s-z19.s}
+C1B8E28C frintn {z12.s-z15.s}, {z20.s-z23.s}
+C1B8E318 frintn {z24.s-z27.s}, {z24.s-z27.s}
+C1B8E39C frintn {z28.s-z31.s}, {z28.s-z31.s}

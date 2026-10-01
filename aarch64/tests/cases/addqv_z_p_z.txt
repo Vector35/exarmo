@@ -1,0 +1,14 @@
+// addqv_z_p_z_ 000|0010|0|size=xx|0|001|op=0|U=1|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// AddqvZPZ: ADDQV  <Vd>.<T>, <Pg>, <Zn>.<Tb>
+// register fields: Pg, Zn, Vd
+04052005 addqv v5.16b, p0, z0.b
+0405200C addqv v12.16b, p0, z0.b
+04052013 addqv v19.16b, p0, z0.b
+044527E0 addqv v0.8h, p1, z31.h
+0485281F addqv v31.4s, p2, z0.s
+04C52C05 addqv v5.2d, p3, z0.d
+04053005 addqv v5.16b, p4, z0.b
+04053405 addqv v5.16b, p5, z0.b
+04053805 addqv v5.16b, p6, z0.b
+04053C05 addqv v5.16b, p7, z0.b
+04052000 addqv v0.16b, p0, z0.b

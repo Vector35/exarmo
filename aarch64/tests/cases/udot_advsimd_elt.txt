@@ -1,0 +1,29 @@
+// UDOT_asimdelem_D 0|Q=x|U=1|0|111|1|size=xx|L=x|M=x|Rm=xxxx|opcode=1110|H=x|0|Rn=xxxxx|Rd=xxxxx
+// UdotAsimdelemD: UDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.4B[<index>]
+// read together by <Vm>: M, Rm
+// read together by <index>: L, H
+// register fields: Rn, Rd
+6FA7E0FA udot v26.4s, v7.16b, v7.4b[1]
+2FA2EB20 udot v0.2s, v25.8b, v2.4b[3]
+2F9EEAD4 udot v20.2s, v22.8b, v30.4b[2]
+2F8BE98B udot v11.2s, v12.8b, v11.4b[2]
+6FB9EADE udot v30.4s, v22.16b, v25.4b[3]
+6F97EA8A udot v10.4s, v20.16b, v23.4b[2]
+2FAAEAD1 udot v17.2s, v22.8b, v10.4b[3]
+2F86E1BA udot v26.2s, v13.8b, v6.4b[0]
+6F90E1D1 udot v17.4s, v14.16b, v16.4b[0]
+2F95EB3C udot v28.2s, v25.8b, v21.4b[2]
+6FA8E0EE udot v14.4s, v7.16b, v8.4b[1]
+2F95E8FE udot v30.2s, v7.8b, v21.4b[2]
+2FBCE814 udot v20.2s, v0.8b, v28.4b[3]
+2F86E00C udot v12.2s, v0.8b, v6.4b[0]
+6F92E38A udot v10.4s, v28.16b, v18.4b[0]
+6F9DE893 udot v19.4s, v4.16b, v29.4b[2]
+6FAFE3FF udot v31.4s, v31.16b, v15.4b[1]
+6F27E0FA UNDEFINED
+6F67E0FA UNDEFINED
+6FE7E0FA UNDEFINED
+6FA0E0FA udot v26.4s, v7.16b, v0.4b[1]
+6FBFE0FA udot v26.4s, v7.16b, v31.4b[1]
+6FA4E0FA udot v26.4s, v7.16b, v4.4b[1]
+6FA1E0FA udot v26.4s, v7.16b, v1.4b[1]

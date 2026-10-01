@@ -1,0 +1,22 @@
+// UXTB_A1 cond=xxxx|011|01|U=1|op=10|Rn=1111|Rd=xxxx|rotate=xx|(0)(0)|011|1|Rm=xxxx
+// UxtbA1: UXTB{<c>}{<q>}  {<Rd>, }<Rm> {, ROR #<amount>}
+// register fields: Rd, Rm
+c6efa273 uxtbgt r10, r3 (unpredictable)
+c6ef1272 uxtbgt r1, r2 (unpredictable)
+36efcc79 uxtblo r12, r9, ror #24
+e6ef4376 uxtb r4, r6 (unpredictable)
+46ef4176 uxtbmi r4, r6 (unpredictable)
+e6ef167a uxtb r1, r10, ror #8 (unpredictable)
+96ef1b7c uxtbls r1, r12, ror #16 (unpredictable)
+c6ef8d79 uxtbgt r8, r9, ror #24 (unpredictable)
+// Binary Ninja's tests
+36ef5871 uxtblo r5, r1, ror #16
+a6ef2074 uxtbge r2, r4
+e6ef5076 uxtb r5, r6
+e6ef6479 uxtb r6, r9, ror #8
+e6ef8c73 uxtb r8, r3, ror #24
+06EF0270 uxtbeq r0, r0 (unpredictable)
+F6EFA273 UNALLOCATED
+86EFF27F uxtbhi pc, pc (unpredictable)
+26EFA27A uxtbcs r10, r10 (unpredictable)
+16EFA273 uxtbne r10, r3 (unpredictable)

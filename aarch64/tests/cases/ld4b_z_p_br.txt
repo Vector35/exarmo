@@ -1,0 +1,21 @@
+// ld4b_z_p_br_contiguous 101|0010|msz=00|opc=11|Rm=xxxxx|110|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld4bZPBrContiguous: LD4B  { <Zt1>.B, <Zt2>.B, <Zt3>.B, <Zt4>.B }, <Pg>/Z, [<Xn|SP>, <Xm>]
+// register fields: Rm, Pg, Rn, Zt
+A47CCC36 ld4b {z22.b, z23.b, z24.b, z25.b}, p3/z, [x1, x28]
+A465DAB1 ld4b {z17.b, z18.b, z19.b, z20.b}, p6/z, [x21, x5]
+A47DD770 ld4b {z16.b, z17.b, z18.b, z19.b}, p5/z, [x27, fp]
+A47BCCDF ld4b {z31.b, z0.b, z1.b, z2.b}, p3/z, [x6, x27]
+A466D4C2 ld4b {z2.b, z3.b, z4.b, z5.b}, p5/z, [x6, x6]
+A46AD3D5 ld4b {z21.b, z22.b, z23.b, z24.b}, p4/z, [lr, x10]
+A465C173 ld4b {z19.b, z20.b, z21.b, z22.b}, p0/z, [x11, x5]
+A464DFA4 ld4b {z4.b, z5.b, z6.b, z7.b}, p7/z, [fp, x4]
+A461D565 ld4b {z5.b, z6.b, z7.b, z8.b}, p5/z, [x11, x1]
+A478DC8C ld4b {z12.b, z13.b, z14.b, z15.b}, p7/z, [x4, x24]
+A462CBFB ld4b {z27.b, z28.b, z29.b, z30.b}, p2/z, [sp, x2]
+A47CD2C8 ld4b {z8.b, z9.b, z10.b, z11.b}, p4/z, [x22, x28]
+A464DBAF ld4b {z15.b, z16.b, z17.b, z18.b}, p6/z, [fp, x4]
+A467CEA5 ld4b {z5.b, z6.b, z7.b, z8.b}, p3/z, [x21, x7]
+A473C00A ld4b {z10.b, z11.b, z12.b, z13.b}, p0/z, [x0, x19]
+A471D6D6 ld4b {z22.b, z23.b, z24.b, z25.b}, p5/z, [x22, x17]
+A460C420 ld4b {z0.b, z1.b, z2.b, z3.b}, p1/z, [x1, x0]
+A47FCC36 UNALLOCATED

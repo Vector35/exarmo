@@ -1,0 +1,29 @@
+// sqneg_z_p_z_m 010|0010|0|size=xx|0|0|Q=1|0|Z=0|op=1|10|1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// SqnegZPZM: SQNEG  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+4449A8C6 sqneg z6.h, p2/m, z6.h
+4449A987 sqneg z7.h, p2/m, z12.h
+44C9AC4C sqneg z12.d, p3/m, z2.d
+44C9BDEA sqneg z10.d, p7/m, z15.d
+4489A27E sqneg z30.s, p0/m, z19.s
+44C9A152 sqneg z18.d, p0/m, z10.d
+4449ADDE sqneg z30.h, p3/m, z14.h
+44C9B72C sqneg z12.d, p5/m, z25.d
+4409A400 sqneg z0.b, p1/m, z0.b
+4449B3FF sqneg z31.h, p4/m, z31.h
+4449B8C6 sqneg z6.h, p6/m, z6.h
+
+// sqneg_z_p_z_z 010|0010|0|size=xx|0|0|Q=1|0|Z=1|op=1|10|1|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// SqnegZPZZ: SQNEG  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+440BA005 sqneg z5.b, p0/z, z0.b
+440BA00C sqneg z12.b, p0/z, z0.b
+440BA013 sqneg z19.b, p0/z, z0.b
+444BA7E0 sqneg z0.h, p1/z, z31.h
+448BA81F sqneg z31.s, p2/z, z0.s
+44CBAC05 sqneg z5.d, p3/z, z0.d
+440BB005 sqneg z5.b, p4/z, z0.b
+440BB405 sqneg z5.b, p5/z, z0.b
+440BB805 sqneg z5.b, p6/z, z0.b
+440BBC05 sqneg z5.b, p7/z, z0.b
+440BA000 sqneg z0.b, p0/z, z0.b

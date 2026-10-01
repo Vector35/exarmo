@@ -1,0 +1,28 @@
+// cpy_z_p_i_ 000|0010|1|size=xx|01|Pg=xxxx|0|M=1|sh=x|imm8=xxxxxxxx|Zd=xxxxx
+// CpyZPI: CPY  <Zd>.<T>, <Pg>/M, #<imm>{, <shift>}
+// MovZPICpyZPI: MOV  <Zd>.<T>, <Pg>/M, #<imm>{, <shift>}
+// register fields: Pg, Zd
+05DE6902 mov z2.d, p14/m, #0x48, lsl #0x8
+055C635D mov z29.h, p12/m, #0x1a, lsl #0x8
+059868AA mov z10.s, p8/m, #0x45, lsl #0x8
+05DA6815 mov z21.d, p10/m, #0x40, lsl #0x8
+05D74D07 mov z7.d, p7/m, #0x68
+0556680F mov z15.h, p6/m, #0x40, lsl #0x8
+05D4485B mov z27.d, p4/m, #0x42
+05D47FA0 mov z0.d, p4/m, #-0x3, lsl #0x8
+05D67A36 mov z22.d, p6/m, #-0x2f, lsl #0x8
+05575A52 mov z18.h, p7/m, #-46
+05937001 mov z1.s, p3/m, #-0x80, lsl #0x8
+05D965FC mov z28.d, p9/m, #0x2f, lsl #0x8
+05926A59 mov z25.s, p2/m, #0x52, lsl #0x8
+059A65FA mov z26.s, p10/m, #0x2f, lsl #0x8
+05DD50BB mov z27.d, p13/m, #-123
+05544AB8 mov z24.h, p4/m, #0x55
+0510401F mov z31.b, p0/m, #0x0
+05DF7FE2 mov z2.d, p15/m, #-0x1, lsl #0x8
+05DE6402 mov z2.d, p14/m, #0x20, lsl #0x8
+05DE6202 mov z2.d, p14/m, #0x10, lsl #0x8
+05DE6102 mov z2.d, p14/m, #0x8, lsl #0x8
+05DE6082 mov z2.d, p14/m, #0x4, lsl #0x8
+05DE6042 mov z2.d, p14/m, #0x2, lsl #0x8
+05DE6022 mov z2.d, p14/m, #0x1, lsl #0x8

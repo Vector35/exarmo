@@ -1,0 +1,52 @@
+// VSLI_A1_D 1111001|U=1|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=0101|L=x|Q=0|M=x|1|Vm=xxxx
+// VsliA1D: VSLI{<c>}{<q>}.<size>  {<Dd>, }<Dm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f6653a vsli.32 d22, d26, #22
+f3e99595 vsli.64 d25, d5, #41
+f3b5d51f vsli.32 d13, d15, #21
+f3fba53f vsli.32 d26, d31, #27
+f3a79530 vsli.32 d9, d16, #7
+f3c99511 vsli.8 d25, d1, #1
+f3d8b596 vsli.64 d27, d6, #24
+f38d45bb vsli.64 d4, d27, #13
+F3C00598 vsli.64 d16, d8, #0x0
+F3FFF534 vsli.32 d31, d20, #0x1f
+F3E08532 vsli.32 d24, d18, #0x0
+F3D02510 vsli.16 d18, d0, #0x0
+F3C8153A vsli.8 d17, d26, #0x0
+F3840595 vsli.64 d0, d5, #0x4
+F382F595 vsli.64 d15, d5, #0x2
+F3C10595 vsli.64 d16, d5, #0x1
+F3C0F5BA vsli.64 d31, d26, #0x0
+F3FF653A vsli.32 d22, d26, #0x1f
+F3FF65BA vsli.64 d22, d26, #0x3f
+
+// VSLI_A1_Q 1111001|U=1|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=0101|L=x|Q=1|M=x|1|Vm=xxxx
+// VsliA1Q: VSLI{<c>}{<q>}.<size>  {<Qd>, }<Qm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f065f0 vsli.64 q11, q8, #48
+f389655a vsli.8 q3, q5, #1
+f3e065d4 vsli.64 q11, q2, #32
+f38ec5f2 vsli.64 q6, q9, #14
+f3e7e552 vsli.32 q15, q1, #7
+f3dea552 vsli.16 q13, q1, #14
+f3cb05d8 vsli.64 q8, q4, #11
+f3b4c5dc vsli.64 q6, q6, #52
+F3C085D0 vsli.64 q12, q0, #0x0
+F3FF45F0 vsli.64 q10, q8, #0x3f
+F3D025F0 vsli.64 q9, q8, #0x10
+F38805F0 vsli.64 q0, q8, #0x8
+F3C465F0 vsli.64 q11, q8, #0x4
+F3C265F0 vsli.64 q11, q8, #0x2
+F3C165F0 vsli.64 q11, q8, #0x1
+F3C0F57F UNDEFINED
+F3F015F1 UNDEFINED
+F3C065F0 vsli.64 q11, q8, #0x0
+F3FF6570 vsli.32 q11, q8, #0x1f
+F3FF65F0 vsli.64 q11, q8, #0x3f
+F3B0F5DF UNDEFINED
+F3F0F5FF UNDEFINED

@@ -1,0 +1,16 @@
+// cdot_z_zzz_ 010|0010|0|size=xx|0|Zm=xxxxx|0|001|rot=xx|Zn=xxxxx|Zda=xxxxx
+// CdotZZzz: CDOT  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>, <const>
+// register fields: Zm, Zn, Zda
+44DF17BD cdot z29.d, z29.h, z31.h, #0x5a
+44D311C3 cdot z3.d, z14.h, z19.h, #0x0
+44C410CF cdot z15.d, z6.h, z4.h, #0x0
+44C013FF cdot z31.d, z31.h, z0.h, #0x0
+44C01AB1 cdot z17.d, z21.h, z0.h, #0xb4
+44851E50 cdot z16.s, z18.b, z5.b, #0x10e
+44C61116 cdot z22.d, z8.h, z6.h, #0x0
+44C51E86 cdot z6.d, z20.h, z5.h, #0x10e
+44DF1400 cdot z0.d, z0.h, z31.h, #0x5a
+441F17BD UNDEFINED
+445F17BD UNDEFINED
+44DF17FD cdot z29.d, z31.h, z31.h, #0x5a
+44DF17BF cdot z31.d, z29.h, z31.h, #0x5a

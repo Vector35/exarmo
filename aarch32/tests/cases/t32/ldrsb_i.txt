@@ -1,0 +1,92 @@
+// LDRSB_i_T1 111|1100|11|size=00|1|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrsbIT1: LDRSB{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+F9900000 ldrsb r0, [r0]
+F9900FFF ldrsb r0, [r0, #0xfff]
+F9900800 ldrsb r0, [r0, #0x800]
+F9900400 ldrsb r0, [r0, #0x400]
+F9900200 ldrsb r0, [r0, #0x200]
+F9900100 ldrsb r0, [r0, #0x100]
+F9900080 ldrsb r0, [r0, #0x80]
+F9900040 ldrsb r0, [r0, #0x40]
+F9900020 ldrsb r0, [r0, #0x20]
+F9900010 ldrsb r0, [r0, #0x10]
+F9900008 ldrsb r0, [r0, #0x8]
+F9900004 ldrsb r0, [r0, #0x4]
+F9900002 ldrsb r0, [r0, #0x2]
+F9900001 ldrsb r0, [r0, #0x1]
+F9900000 [ne] ldrsbne r0, [r0]
+F9912000 ldrsb r2, [r1]
+
+// LDRSB_i_T2_off 111110010|size=00|1|Rn=xxxx|Rt=xxxx|1|P=1|U=0|W=0|imm8=xxxxxxxx
+// LdrsbIT2Off: LDRSB{<c>}{<q>}  <Rt>, [<Rn> {, #-<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f913eccd ldrsb lr, [r3, #-205]
+f91bbc82 ldrsb r11, [r11, #-130]
+f9144c5c ldrsb r4, [r4, #-92]
+f91e9c3d ldrsb r9, [lr, #-61]
+f9153c8e ldrsb r3, [r5, #-142]
+f918ec5c ldrsb lr, [r8, #-92]
+f910dc5b ldrsb sp, [r0, #-91]
+f91abcc6 ldrsb r11, [r10, #-198]
+F9130C00 ldrsb r0, [r3, #-0x0]
+F913ECFF ldrsb lr, [r3, #-0xff]
+F913EC80 ldrsb lr, [r3, #-0x80]
+F913EC40 ldrsb lr, [r3, #-0x40]
+F913EC20 ldrsb lr, [r3, #-0x20]
+F913EC10 ldrsb lr, [r3, #-0x10]
+F913EC08 ldrsb lr, [r3, #-0x8]
+F913EC04 ldrsb lr, [r3, #-0x4]
+F913EC02 ldrsb lr, [r3, #-0x2]
+F913EC01 ldrsb lr, [r3, #-0x1]
+F913ECCD [ne] ldrsbne lr, [r3, #-0xcd]
+
+// LDRSB_i_T2_post 111110010|size=00|1|Rn=xxxx|Rt=xxxx|1|P=0|U=x|W=1|imm8=xxxxxxxx
+// LdrsbIT2Post: LDRSB{<c>}{<q>}  <Rt>, [<Rn>], #{<+/->}<imm>
+// register fields: Rn, Rt
+// IT state read: condition
+f9105b1a ldrsb r5, [r0], #26
+f91019c1 ldrsb r1, [r0], #-193
+f91ae9e8 ldrsb lr, [r10], #-232
+f91bcb93 ldrsb r12, [r11], #147
+f9191b6e ldrsb r1, [r9], #110
+f91e594f ldrsb r5, [lr], #-79
+f91e7b8f ldrsb r7, [lr], #143
+f91ba93f ldrsb r10, [r11], #-63
+F9100B00 ldrsb r0, [r0], #0x0 (unpredictable)
+F910FBFF ldrsb pc, [r0], #0xff (unpredictable)
+F9100B80 ldrsb r0, [r0], #0x80 (unpredictable)
+F9105B40 ldrsb r5, [r0], #0x40
+F9105B20 ldrsb r5, [r0], #0x20
+F9105B10 ldrsb r5, [r0], #0x10
+F9105B08 ldrsb r5, [r0], #0x8
+F9105B04 ldrsb r5, [r0], #0x4
+F9105B02 ldrsb r5, [r0], #0x2
+F9105B01 ldrsb r5, [r0], #0x1
+F9105B1A [ne] ldrsbne r5, [r0], #0x1a
+
+// LDRSB_i_T2_pre 111110010|size=00|1|Rn=xxxx|Rt=xxxx|1|P=1|U=x|W=1|imm8=xxxxxxxx
+// LdrsbIT2Pre: LDRSB{<c>}{<q>}  <Rt>, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn, Rt
+// IT state read: condition
+f9145f75 ldrsb r5, [r4, #117]!
+f91bedc1 ldrsb lr, [r11, #-193]!
+f917bf3e ldrsb r11, [r7, #62]!
+f9120f1d ldrsb r0, [r2, #29]!
+f9156f6c ldrsb r6, [r5, #108]!
+f9172de9 ldrsb r2, [r7, #-233]!
+f917dff2 ldrsb sp, [r7, #242]!
+f915cf3a ldrsb r12, [r5, #58]!
+F910FF00 ldrsb pc, [r0, #0x0]! (unpredictable)
+F9144FFF ldrsb r4, [r4, #0xff]! (unpredictable)
+F9145F80 ldrsb r5, [r4, #0x80]!
+F9145F40 ldrsb r5, [r4, #0x40]!
+F9145F20 ldrsb r5, [r4, #0x20]!
+F9145F10 ldrsb r5, [r4, #0x10]!
+F9145F08 ldrsb r5, [r4, #0x8]!
+F9145F04 ldrsb r5, [r4, #0x4]!
+F9145F02 ldrsb r5, [r4, #0x2]!
+F9145F01 ldrsb r5, [r4, #0x1]!
+F9145F75 [ne] ldrsbne r5, [r4, #0x75]!

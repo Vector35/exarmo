@@ -1,0 +1,13 @@
+// DMB_T1 111|10|0|1110|11|(1)(1)(1)(1)|1|0(0)0|(1)|(1)(1)(1)|opc=0101|option=xxxx
+// DmbT1: DMB{<c>}{<q>}  {<option>}
+// IT state read: condition
+F3B08050 dmb #0x0 (unpredictable)
+F3BFA95F dmb sy (unpredictable)
+F3B88258 dmb #0x8 (unpredictable)
+F3B48354 dmb #0x4 (unpredictable)
+F3B28452 dmb oshst (unpredictable)
+F3B18551 dmb oshld (unpredictable)
+F3B08650 dmb #0x0 (unpredictable)
+F3B08750 dmb #0x0 (unpredictable)
+F3B08050 [ne] dmbne #0x0 (unpredictable)
+F3BF8F50 dmb #0x0

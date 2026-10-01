@@ -1,0 +1,14 @@
+// PLI_r_T1 111|1100|10|size=00|1|Rn=xxxx|Rt=1111|000000|imm2=xx|Rm=xxxx
+// PliRT1: PLI{<c>}{<q>}  [<Rn>, {<+>}<Rm> {, LSL #<amount>}]
+// register fields: Rn, Rm
+// IT state read: condition
+f91bf01c pli [r11, r12, lsl #1]
+f913f038 pli [r3, r8, lsl #3]
+f918f035 pli [r8, r5, lsl #3]
+f910f021 pli [r0, r1, lsl #2]
+f91af019 pli [r10, r9, lsl #1]
+f912f01f pli [r2, pc, lsl #1] (unpredictable)
+f91ef003 pli [lr, r3]
+F91BF010 pli [r11, r0, lsl #0x1]
+F91BF01B pli [r11, r11, lsl #0x1]
+F91BF01C [ne] pline [r11, r12, lsl #0x1]

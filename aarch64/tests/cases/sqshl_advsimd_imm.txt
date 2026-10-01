@@ -1,0 +1,76 @@
+// SQSHL_asimdshf_R 0|Q=x|U=0|0|111|10|immh=xxxx|immb=xxx|011|op=1|0|1|Rn=xxxxx|Rd=xxxxx
+// SqshlAsimdshfR: SQSHL  <Vd>.<T>, <Vn>.<T>, #<shift>
+// read together by <T>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+0F3A75B0 sqshl v16.2s, v13.2s, #0x1a
+4F0877DF sqshl v31.16b, v30.16b, #0x0
+0F2377D7 sqshl v23.2s, v30.2s, #0x3
+0F0F7495 sqshl v21.8b, v4.8b, #0x7
+4F5676CC sqshl v12.2d, v22.2d, #0x16
+0F0C7648 sqshl v8.8b, v18.8b, #0x4
+4F6F7657 sqshl v23.2d, v18.2d, #0x2f
+4F1377FA sqshl v26.8h, v31.8h, #0x3
+4F5876E9 sqshl v9.2d, v23.2d, #0x18
+4F517590 sqshl v16.2d, v12.2d, #0x11
+4F227422 sqshl v2.4s, v1.4s, #0x2
+4F3776CA sqshl v10.4s, v22.4s, #0x17
+4F76760B sqshl v11.2d, v16.2d, #0x36
+4F0E740B sqshl v11.16b, v0.16b, #0x6
+4F69773C sqshl v28.2d, v25.2d, #0x29
+4F1E7499 sqshl v25.8h, v4.8h, #0xe
+4F7D77C0 sqshl v0.2d, v30.2d, #0x3d
+0F7A75B0 UNDEFINED
+4F7877DE sqshl v30.2d, v30.2d, #0x38
+4F7977DF sqshl v31.2d, v30.2d, #0x39
+4F7A77DF sqshl v31.2d, v30.2d, #0x3a
+4F7B77DF sqshl v31.2d, v30.2d, #0x3b
+4F7C77DF sqshl v31.2d, v30.2d, #0x3c
+4F7E77DF sqshl v31.2d, v30.2d, #0x3e
+4F7F77DF sqshl v31.2d, v30.2d, #0x3f
+4F4077DF sqshl v31.2d, v30.2d, #0x0
+
+// SQSHL_asisdshf_R 01|U=0|1|111|10|immh=xxxx|immb=xxx|011|op=1|0|1|Rn=xxxxx|Rd=xxxxx
+// SqshlAsisdshfR: SQSHL  <V><d>, <V><n>, #<shift>
+// read together by <d>: immh, Rd
+// read together by <n>: immh, Rn
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+5F39765F sqshl s31, s18, #0x19
+5F6E763F sqshl d31, d17, #0x2e
+5F35777D sqshl s29, s27, #0x15
+5F147748 sqshl h8, h26, #0x4
+5F7477B0 sqshl d16, d29, #0x34
+5F117494 sqshl h20, h4, #0x1
+5F1F758B sqshl h11, h12, #0xf
+5F6E755C sqshl d28, d10, #0x2e
+5F5475F7 sqshl d23, d15, #0x14
+5F547588 sqshl d8, d12, #0x14
+5F4675A8 sqshl d8, d13, #0x6
+5F3E7637 sqshl s23, s17, #0x1e
+5F197649 sqshl h9, h18, #0x9
+5F0977BA sqshl b26, b29, #0x1
+5F3E74C7 sqshl s7, s6, #0x1e
+5F08742D sqshl b13, b1, #0x0
+5F7A7400 sqshl d0, d0, #0x3a
+5F3B77FF sqshl s31, s31, #0x1b
+5F01765F UNALLOCATED
+5F017640 UNALLOCATED
+5F79765F sqshl d31, d18, #0x39
+5F01741F UNALLOCATED
+5F0177FF UNALLOCATED
+5F7977FF sqshl d31, d31, #0x39
+5F00765F UNALLOCATED
+5F02765F UNALLOCATED
+5F03765F UNALLOCATED
+5F04765F UNALLOCATED
+5F05765F UNALLOCATED
+5F06765F UNALLOCATED
+5F07765F UNALLOCATED
+5F78765F sqshl d31, d18, #0x38
+5F7B765F sqshl d31, d18, #0x3b
+5F7C765F sqshl d31, d18, #0x3c
+5F7D765F sqshl d31, d18, #0x3d
+5F7E765F sqshl d31, d18, #0x3e
+5F7F765F sqshl d31, d18, #0x3f
+5F21765F sqshl s31, s18, #0x1

@@ -1,0 +1,23 @@
+// sabd_z_p_zz_ 000|0010|0|size=xx|0|01|opc=10|U=0|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SabdZPZz: SABD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04CC08BB sabd z27.d, p2/m, z27.d, z5.d
+044C134A sabd z10.h, p4/m, z10.h, z26.h
+040C0708 sabd z8.b, p1/m, z8.b, z24.b
+048C077A sabd z26.s, p1/m, z26.s, z27.s
+044C0739 sabd z25.h, p1/m, z25.h, z25.h
+044C15F5 sabd z21.h, p5/m, z21.h, z15.h
+044C188E sabd z14.h, p6/m, z14.h, z4.h
+048C182C sabd z12.s, p6/m, z12.s, z1.s
+040C15F7 sabd z23.b, p5/m, z23.b, z15.b
+044C14CF sabd z15.h, p5/m, z15.h, z6.h
+04CC17F3 sabd z19.d, p5/m, z19.d, z31.d
+04CC01BC sabd z28.d, p0/m, z28.d, z13.d
+04CC0550 sabd z16.d, p1/m, z16.d, z10.d
+040C064D sabd z13.b, p1/m, z13.b, z18.b
+048C1AB4 sabd z20.s, p6/m, z20.s, z21.s
+040C1C41 sabd z1.b, p7/m, z1.b, z2.b
+04CC0C00 sabd z0.d, p3/m, z0.d, z0.d
+04CC08BF sabd z31.d, p2/m, z31.d, z5.d
+04CC085B sabd z27.d, p2/m, z27.d, z2.d
+04CC08A2 sabd z2.d, p2/m, z2.d, z5.d

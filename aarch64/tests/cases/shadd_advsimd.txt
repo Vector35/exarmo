@@ -1,0 +1,25 @@
+// SHADD_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=00000|1|Rn=xxxxx|Rd=xxxxx
+// ShaddAsimdsameOnly: SHADD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+0E2306EA shadd v10.8b, v23.8b, v3.8b
+0E620538 shadd v24.4h, v9.4h, v2.4h
+0EA805EE shadd v14.2s, v15.2s, v8.2s
+0E66051E shadd v30.4h, v8.4h, v6.4h
+4EA2048F shadd v15.4s, v4.4s, v2.4s
+4E2E05F2 shadd v18.16b, v15.16b, v14.16b
+4E7F0678 shadd v24.8h, v19.8h, v31.8h
+0E650750 shadd v16.4h, v26.4h, v5.4h
+0E670793 shadd v19.4h, v28.4h, v7.4h
+0EA10780 shadd v0.2s, v28.2s, v1.2s
+0E680557 shadd v23.4h, v10.4h, v8.4h
+0E2C05B0 shadd v16.8b, v13.8b, v12.8b
+0EA607B6 shadd v22.2s, v29.2s, v6.2s
+4E2E044E shadd v14.16b, v2.16b, v14.16b
+0EBC06D3 shadd v19.2s, v22.2s, v28.2s
+4E3E0754 shadd v20.16b, v26.16b, v30.16b
+0E20041F shadd v31.8b, v0.8b, v0.8b
+0E2307EA shadd v10.8b, v31.8b, v3.8b
+0EE306EA UNDEFINED
+4EE306EA UNDEFINED
+0E2306F7 shadd v23.8b, v23.8b, v3.8b

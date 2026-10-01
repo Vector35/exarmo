@@ -1,0 +1,68 @@
+// LDAXP_LP32_ldstexclp 1|sz=0|0010000|L=1|1|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// LdaxpLp32Ldstexclp: LDAXP  <Wt1>, <Wt2>, [<Xn|SP>{, #0}]
+// register fields: Rt2, Rn, Rt
+887F9CEA ldaxp w10, w7, [x7]
+887FAA99 ldaxp w25, w10, [x20]
+887FA647 ldaxp w7, w9, [x18]
+887FAFF7 ldaxp w23, w11, [sp]
+887FFFAA ldaxp w10, wzr, [fp]
+887F9DBD ldaxp w29, w7, [x13]
+887F8949 ldaxp w9, w2, [x10]
+887FD28E ldaxp w14, w20, [x20]
+887CBF3B ldaxp w27, w15, [x25] (unpredictable)
+8869A6BC ldaxp w28, w9, [x21] (unpredictable)
+8863DFCB ldaxp w11, w23, [lr] (unpredictable)
+886F8404 ldaxp w4, w1, [x0] (unpredictable)
+8867D214 ldaxp w20, w20, [x16] (unpredictable)
+8866BED2 ldaxp w18, w15, [x22] (unpredictable)
+886CE6BB ldaxp w27, w25, [x21] (unpredictable)
+8860B1FA ldaxp w26, w12, [x15] (unpredictable)
+887283C9 ldaxp w9, w0, [lr] (unpredictable)
+8863BCA8 ldaxp w8, w15, [x5] (unpredictable)
+8864A0EB ldaxp w11, w8, [x7] (unpredictable)
+887A8002 ldaxp w2, w0, [x0] (unpredictable)
+8863AE19 ldaxp w25, w11, [x16] (unpredictable)
+88729F97 ldaxp w23, w7, [x28] (unpredictable)
+8867E5C0 ldaxp w0, w25, [x14] (unpredictable)
+886E8B13 ldaxp w19, w2, [x24] (unpredictable)
+887F9CFF ldaxp wzr, w7, [x7]
+887F9CE7 ldaxp w7, w7, [x7] (unpredictable)
+88709CEA ldaxp w10, w7, [x7] (unpredictable)
+88689CEA ldaxp w10, w7, [x7] (unpredictable)
+88629CEA ldaxp w10, w7, [x7] (unpredictable)
+88619CEA ldaxp w10, w7, [x7] (unpredictable)
+887F9D4A ldaxp w10, w7, [x10]
+
+// LDAXP_LP64_ldstexclp 1|sz=1|0010000|L=1|1|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// LdaxpLp64Ldstexclp: LDAXP  <Xt1>, <Xt2>, [<Xn|SP>{, #0}]
+// register fields: Rt2, Rn, Rt
+C87FE8D5 ldaxp x21, x26, [x6]
+C87FC02B ldaxp x11, x16, [x1]
+C87FBE51 ldaxp x17, x15, [x18]
+C87FB648 ldaxp x8, x13, [x18]
+C87FC6F7 ldaxp x23, x17, [x23]
+C87FF581 ldaxp x1, fp, [x12]
+C87FF6FA ldaxp x26, fp, [x23]
+C87FADDE ldaxp lr, x11, [x14]
+C869D17C ldaxp x28, x20, [x11] (unpredictable)
+C87DA311 ldaxp x17, x8, [x24] (unpredictable)
+C868BD56 ldaxp x22, x15, [x10] (unpredictable)
+C8719E06 ldaxp x6, x7, [x16] (unpredictable)
+C86FA8C8 ldaxp x8, x10, [x6] (unpredictable)
+C8728A94 ldaxp x20, x2, [x20] (unpredictable)
+C862D7CF ldaxp x15, x21, [lr] (unpredictable)
+C87090FB ldaxp x27, x4, [x7] (unpredictable)
+C879A07C ldaxp x28, x8, [x3] (unpredictable)
+C863AC1B ldaxp x27, x11, [x0] (unpredictable)
+C86FE1E6 ldaxp x6, x24, [x15] (unpredictable)
+C86DF738 ldaxp x24, fp, [x25] (unpredictable)
+C866BE21 ldaxp x1, x15, [x17] (unpredictable)
+C864B578 ldaxp x24, x13, [x11] (unpredictable)
+C86B9E39 ldaxp x25, x7, [x17] (unpredictable)
+C863E924 ldaxp x4, x26, [x9] (unpredictable)
+C86083E0 ldaxp x0, x0, [sp] (unpredictable)
+C87FFCDF ldaxp xzr, xzr, [x6] (unpredictable)
+C87FEB55 ldaxp x21, x26, [x26]
+C861E8D5 ldaxp x21, x26, [x6] (unpredictable)
+C86083FF ldaxp xzr, x0, [sp] (unpredictable)
+C87FFCC0 ldaxp x0, xzr, [x6]

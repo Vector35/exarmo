@@ -1,0 +1,57 @@
+// VLD3_a_T1_nowb 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=10|size=xx|T=x|a=0|Rm=1111
+// Vld3AT1Nowb: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>]
+// register fields: Rn
+// IT state read: condition
+f9a8fe8f vld3.32 {d15[], d16[], d17[]}, [r8]
+f9a66e4f vld3.16 {d6[], d7[], d8[]}, [r6]
+f9e11e2f vld3.8 {d17[], d19[], d21[]}, [r1]
+f9e58e4f vld3.16 {d24[], d25[], d26[]}, [r5]
+f9a25e6f vld3.16 {d5[], d7[], d9[]}, [r2]
+f9a59e8f vld3.32 {d9[], d10[], d11[]}, [r5]
+f9a49e2f vld3.8 {d9[], d11[], d13[]}, [r4]
+f9a63eaf vld3.32 {d3[], d5[], d7[]}, [r6]
+F9A00E8F vld3.32 {d0[], d1[], d2[]}, [r0]
+F9AF4E8F vld3.32 {d4[], d5[], d6[]}, [pc] (unpredictable)
+F9A82E8F vld3.32 {d2[], d3[], d4[]}, [r8]
+F9A8FECF UNDEFINED
+F9A8FE8F [ne] vld3ne.32 {d15[], d16[], d17[]}, [r8]
+
+// VLD3_a_T1_posti 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=10|size=xx|T=x|a=0|Rm=1101
+// Vld3AT1Posti: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>]!
+// register fields: Rn
+// IT state read: condition
+f9eb5e4d vld3.16 {d21[], d22[], d23[]}, [r11]!
+f9edbe2d vld3.8 {d27[], d29[], d31[]}, [sp]!
+f9a27e2d vld3.8 {d7[], d9[], d11[]}, [r2]!
+f9e64e8d vld3.32 {d20[], d21[], d22[]}, [r6]!
+f9a67e4d vld3.16 {d7[], d8[], d9[]}, [r6]!
+f9a3fe4d vld3.16 {d15[], d16[], d17[]}, [r3]!
+f9e4bead vld3.32 {d27[], d29[], d31[]}, [r4]!
+f9a7fe2d vld3.8 {d15[], d17[], d19[]}, [r7]!
+F9E00E4D vld3.16 {d16[], d17[], d18[]}, [r0]!
+F9EF8E4D vld3.16 {d24[], d25[], d26[]}, [pc]! (unpredictable)
+F9EB2E4D vld3.16 {d18[], d19[], d20[]}, [r11]!
+F9EB1E4D vld3.16 {d17[], d18[], d19[]}, [r11]!
+F9EB5ECD UNDEFINED
+F9EB5E4D [ne] vld3ne.16 {d21[], d22[], d23[]}, [r11]!
+
+// VLD3_a_T1_postr 111110011|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=10|size=xx|T=x|a=0|Rm=xxxx
+// Vld3AT1Postr: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f9abde88 vld3.32 {d13[], d14[], d15[]}, [r11], r8
+f9aade62 vld3.16 {d13[], d15[], d17[]}, [r10], r2
+f9ad5e29 vld3.8 {d5[], d7[], d9[]}, [sp], r9
+f9a59e6b vld3.16 {d9[], d11[], d13[]}, [r5], r11
+f9ad2e83 vld3.32 {d2[], d3[], d4[]}, [sp], r3
+f9e6ce6b UNPREDICTABLE
+f9e5fe08 UNPREDICTABLE
+f9af7e00 vld3.8 {d7[], d8[], d9[]}, [pc], r0 (unpredictable)
+F9A00E88 vld3.32 {d0[], d1[], d2[]}, [r0], r8
+F9AB8E8B vld3.32 {d8[], d9[], d10[]}, [r11], r11
+F9AB4E88 vld3.32 {d4[], d5[], d6[]}, [r11], r8
+F9AB1E88 vld3.32 {d1[], d2[], d3[]}, [r11], r8
+F9ABDECF UNDEFINED
+F9ABDE88 [ne] vld3ne.32 {d13[], d14[], d15[]}, [r11], r8
+F9EBDE88 vld3.32 {d29[], d30[], d31[]}, [r11], r8
+F9ABFE88 vld3.32 {d15[], d16[], d17[]}, [r11], r8

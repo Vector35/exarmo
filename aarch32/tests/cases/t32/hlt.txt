@@ -1,0 +1,10 @@
+// HLT_T1 1011|1010|10|imm6=xxxxxx
+// HltT1: HLT{<q>}  {#}<imm>
+BA80 hlt #0x0
+BABF hlt #0x3f
+BAA0 hlt #0x20
+BA90 hlt #0x10
+BA88 hlt #0x8
+BA84 hlt #0x4
+BA82 hlt #0x2
+BA81 hlt #0x1

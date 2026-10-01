@@ -1,0 +1,134 @@
+// urshr_z_p_zi_ 000|0010|0|tszh=xx|0|0|opc=11|L=0|U=1|100|Pg=xxx|tszl=xx|imm3=xxx|Zdn=xxxxx
+// UrshrZPZi: URSHR  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Pg, Zdn
+040D910F urshr z15.b, p4/m, z15.b, #0x8
+048D9DD5 urshr z21.d, p7/m, z21.d, #0x32
+048D9FA3 urshr z3.d, p7/m, z3.d, #0x23
+040D8B5B urshr z27.h, p2/m, z27.h, #0x6
+048D8AD3 urshr z19.d, p2/m, z19.d, #0x2a
+04CD9E5C urshr z28.d, p7/m, z28.d, #0xe
+044D8DE7 urshr z7.s, p3/m, z7.s, #0x11
+040D9165 urshr z5.b, p4/m, z5.b, #0x5
+040D8120 urshr z0.b, p0/m, z0.b, #0x7
+040D859F urshr z31.b, p1/m, z31.b, #0x4
+040D950F urshr z15.b, p5/m, z15.b, #0x8
+040D990F urshr z15.b, p6/m, z15.b, #0x8
+048D9CD5 urshr z21.d, p7/m, z21.d, #0x3a
+040D900F UNDEFINED
+040D902F UNDEFINED
+040D904F UNDEFINED
+040D906F UNDEFINED
+040D908F UNDEFINED
+040D90AF UNDEFINED
+040D90CF UNDEFINED
+040D90EF UNDEFINED
+040D914F urshr z15.b, p4/m, z15.b, #0x6
+040D91AF urshr z15.b, p4/m, z15.b, #0x3
+040D91CF urshr z15.b, p4/m, z15.b, #0x2
+040D91EF urshr z15.b, p4/m, z15.b, #0x1
+040D920F urshr z15.h, p4/m, z15.h, #0x10
+040D922F urshr z15.h, p4/m, z15.h, #0xf
+040D924F urshr z15.h, p4/m, z15.h, #0xe
+040D926F urshr z15.h, p4/m, z15.h, #0xd
+040D928F urshr z15.h, p4/m, z15.h, #0xc
+040D92AF urshr z15.h, p4/m, z15.h, #0xb
+040D92CF urshr z15.h, p4/m, z15.h, #0xa
+040D92EF urshr z15.h, p4/m, z15.h, #0x9
+040D930F urshr z15.h, p4/m, z15.h, #0x8
+040D932F urshr z15.h, p4/m, z15.h, #0x7
+040D936F urshr z15.h, p4/m, z15.h, #0x5
+040D938F urshr z15.h, p4/m, z15.h, #0x4
+040D93AF urshr z15.h, p4/m, z15.h, #0x3
+040D93CF urshr z15.h, p4/m, z15.h, #0x2
+040D93EF urshr z15.h, p4/m, z15.h, #0x1
+044D900F urshr z15.s, p4/m, z15.s, #0x20
+044D902F urshr z15.s, p4/m, z15.s, #0x1f
+044D904F urshr z15.s, p4/m, z15.s, #0x1e
+044D906F urshr z15.s, p4/m, z15.s, #0x1d
+044D908F urshr z15.s, p4/m, z15.s, #0x1c
+044D90AF urshr z15.s, p4/m, z15.s, #0x1b
+044D90CF urshr z15.s, p4/m, z15.s, #0x1a
+044D90EF urshr z15.s, p4/m, z15.s, #0x19
+044D910F urshr z15.s, p4/m, z15.s, #0x18
+044D912F urshr z15.s, p4/m, z15.s, #0x17
+044D914F urshr z15.s, p4/m, z15.s, #0x16
+044D916F urshr z15.s, p4/m, z15.s, #0x15
+044D918F urshr z15.s, p4/m, z15.s, #0x14
+044D91AF urshr z15.s, p4/m, z15.s, #0x13
+044D91CF urshr z15.s, p4/m, z15.s, #0x12
+044D920F urshr z15.s, p4/m, z15.s, #0x10
+044D922F urshr z15.s, p4/m, z15.s, #0xf
+044D924F urshr z15.s, p4/m, z15.s, #0xe
+044D926F urshr z15.s, p4/m, z15.s, #0xd
+044D928F urshr z15.s, p4/m, z15.s, #0xc
+044D92AF urshr z15.s, p4/m, z15.s, #0xb
+044D92CF urshr z15.s, p4/m, z15.s, #0xa
+044D92EF urshr z15.s, p4/m, z15.s, #0x9
+044D930F urshr z15.s, p4/m, z15.s, #0x8
+044D932F urshr z15.s, p4/m, z15.s, #0x7
+044D934F urshr z15.s, p4/m, z15.s, #0x6
+044D936F urshr z15.s, p4/m, z15.s, #0x5
+044D938F urshr z15.s, p4/m, z15.s, #0x4
+044D93AF urshr z15.s, p4/m, z15.s, #0x3
+044D93CF urshr z15.s, p4/m, z15.s, #0x2
+044D93EF urshr z15.s, p4/m, z15.s, #0x1
+048D900F urshr z15.d, p4/m, z15.d, #0x40
+048D902F urshr z15.d, p4/m, z15.d, #0x3f
+048D904F urshr z15.d, p4/m, z15.d, #0x3e
+048D906F urshr z15.d, p4/m, z15.d, #0x3d
+048D908F urshr z15.d, p4/m, z15.d, #0x3c
+048D90AF urshr z15.d, p4/m, z15.d, #0x3b
+048D90EF urshr z15.d, p4/m, z15.d, #0x39
+048D910F urshr z15.d, p4/m, z15.d, #0x38
+048D912F urshr z15.d, p4/m, z15.d, #0x37
+048D914F urshr z15.d, p4/m, z15.d, #0x36
+048D916F urshr z15.d, p4/m, z15.d, #0x35
+048D918F urshr z15.d, p4/m, z15.d, #0x34
+048D91AF urshr z15.d, p4/m, z15.d, #0x33
+048D91EF urshr z15.d, p4/m, z15.d, #0x31
+048D920F urshr z15.d, p4/m, z15.d, #0x30
+048D922F urshr z15.d, p4/m, z15.d, #0x2f
+048D924F urshr z15.d, p4/m, z15.d, #0x2e
+048D926F urshr z15.d, p4/m, z15.d, #0x2d
+048D928F urshr z15.d, p4/m, z15.d, #0x2c
+048D92AF urshr z15.d, p4/m, z15.d, #0x2b
+048D92EF urshr z15.d, p4/m, z15.d, #0x29
+048D930F urshr z15.d, p4/m, z15.d, #0x28
+048D932F urshr z15.d, p4/m, z15.d, #0x27
+048D934F urshr z15.d, p4/m, z15.d, #0x26
+048D936F urshr z15.d, p4/m, z15.d, #0x25
+048D938F urshr z15.d, p4/m, z15.d, #0x24
+048D93CF urshr z15.d, p4/m, z15.d, #0x22
+048D93EF urshr z15.d, p4/m, z15.d, #0x21
+04CD900F urshr z15.d, p4/m, z15.d, #0x20
+04CD902F urshr z15.d, p4/m, z15.d, #0x1f
+04CD904F urshr z15.d, p4/m, z15.d, #0x1e
+04CD906F urshr z15.d, p4/m, z15.d, #0x1d
+04CD908F urshr z15.d, p4/m, z15.d, #0x1c
+04CD90AF urshr z15.d, p4/m, z15.d, #0x1b
+04CD90CF urshr z15.d, p4/m, z15.d, #0x1a
+04CD90EF urshr z15.d, p4/m, z15.d, #0x19
+04CD910F urshr z15.d, p4/m, z15.d, #0x18
+04CD912F urshr z15.d, p4/m, z15.d, #0x17
+04CD914F urshr z15.d, p4/m, z15.d, #0x16
+04CD916F urshr z15.d, p4/m, z15.d, #0x15
+04CD918F urshr z15.d, p4/m, z15.d, #0x14
+04CD91AF urshr z15.d, p4/m, z15.d, #0x13
+04CD91CF urshr z15.d, p4/m, z15.d, #0x12
+04CD91EF urshr z15.d, p4/m, z15.d, #0x11
+04CD920F urshr z15.d, p4/m, z15.d, #0x10
+04CD922F urshr z15.d, p4/m, z15.d, #0xf
+04CD926F urshr z15.d, p4/m, z15.d, #0xd
+04CD928F urshr z15.d, p4/m, z15.d, #0xc
+04CD92AF urshr z15.d, p4/m, z15.d, #0xb
+04CD92CF urshr z15.d, p4/m, z15.d, #0xa
+04CD92EF urshr z15.d, p4/m, z15.d, #0x9
+04CD930F urshr z15.d, p4/m, z15.d, #0x8
+04CD932F urshr z15.d, p4/m, z15.d, #0x7
+04CD934F urshr z15.d, p4/m, z15.d, #0x6
+04CD936F urshr z15.d, p4/m, z15.d, #0x5
+04CD938F urshr z15.d, p4/m, z15.d, #0x4
+04CD93AF urshr z15.d, p4/m, z15.d, #0x3
+04CD93CF urshr z15.d, p4/m, z15.d, #0x2
+04CD93EF urshr z15.d, p4/m, z15.d, #0x1

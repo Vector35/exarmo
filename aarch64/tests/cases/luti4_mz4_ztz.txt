@@ -1,0 +1,30 @@
+// luti4_mz4_ztz_1 1|10|0000|01|0|001|01|i1=x|10|size=xx|opc2=00|Zn=xxxxx|Zd=xxx|00
+// Luti4Mz4Ztz1: LUTI4  { <Zd1>.<T>-<Zd4>.<T> }, ZT0, <Zn>[<index>]
+// register fields: Zn, Zd
+C08A9014 luti4 {z20.h-z23.h}, zt0, z0[0]
+C08A9030 luti4 {z16.h-z19.h}, zt0, z1[0]
+C08A904C luti4 {z12.h-z15.h}, zt0, z2[0]
+C08BA3E0 luti4 {z0.s-z3.s}, zt0, z31[1]
+C08A9004 luti4 {z4.h-z7.h}, zt0, z0[0]
+C08A9008 luti4 {z8.h-z11.h}, zt0, z0[0]
+C08A9018 luti4 {z24.h-z27.h}, zt0, z0[0]
+C08A901C luti4 {z28.h-z31.h}, zt0, z0[0]
+C08A8014 UNDEFINED
+C08AB014 UNDEFINED
+C08A9000 luti4 {z0.h-z3.h}, zt0, z0[0]
+
+// luti4_mz4_ztz_4 1|10|0000|010011|01|i1=x|10|size=xx|opc2=00|Zn=xxxxx|D=x|00|Zd=xx
+// Luti4Mz4Ztz4: LUTI4  { <Zd1>.H, <Zd2>.H, <Zd3>.H, <Zd4>.H }, ZT0, <Zn>[<index>]
+// read together by <Zd1> and <Zd2> and <Zd3> and <Zd4>: D, Zd
+// register fields: Zn
+C09A9002 luti4 {z2.h, z6.h, z10.h, z14.h}, zt0, z0[0]
+C09A9010 luti4 {z16.h, z20.h, z24.h, z28.h}, zt0, z0[0]
+C09A9033 luti4 {z19.h, z23.h, z27.h, z31.h}, zt0, z1[0]
+C09B93E1 luti4 {z1.h, z5.h, z9.h, z13.h}, zt0, z31[1]
+C09A8002 UNDEFINED
+C09AA002 UNDEFINED
+C09AB002 UNDEFINED
+C09A9000 luti4 {z0.h, z4.h, z8.h, z12.h}, zt0, z0[0]
+C09A9003 luti4 {z3.h, z7.h, z11.h, z15.h}, zt0, z0[0]
+C09A9011 luti4 {z17.h, z21.h, z25.h, z29.h}, zt0, z0[0]
+C09A9012 luti4 {z18.h, z22.h, z26.h, z30.h}, zt0, z0[0]

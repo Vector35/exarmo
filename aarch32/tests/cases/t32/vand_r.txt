@@ -1,0 +1,49 @@
+// VAND_r_T1_D 111|U=0|11110|D=x|size=00|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VandRT1D: VAND{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef4691b1 vand d25, d22, d17
+ef45a133 vand d26, d5, d19
+ef026192 vand d6, d18, d2
+ef03a197 vand d10, d19, d7
+ef0e91b0 vand d9, d30, d16
+ef0ac117 vand d12, d10, d7
+ef01c136 vand d12, d1, d22
+ef0991b1 vand d9, d25, d17
+EF4001BF vand d16, d16, d31
+EF4FF1B8 vand d31, d31, d24
+EF4881B4 vand d24, d24, d20
+EF444190 vand d20, d20, d0
+EF40211F vand d18, d0, d15
+EF4011BF vand d17, d16, d31
+EF0F0131 vand d0, d15, d17
+EF0FF1B1 vand d15, d31, d17
+EF4601B1 vand d16, d22, d17
+EF46F1B1 vand d31, d22, d17
+EF4691B1 [ne] vandne d25, d22, d17
+
+// VAND_r_T1_Q 111|U=0|11110|D=x|size=00|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VandRT1Q: VAND{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef448154 vand q12, q2, q2
+ef4ee17e vand q15, q7, q15
+ef0e2156 vand q1, q7, q3
+ef008172 vand q4, q0, q9
+ef4021de vand q9, q8, q7
+ef4021fc vand q9, q8, q14
+ef40215a vand q9, q0, q5
+ef4a017a vand q8, q5, q13
+EF4FF15F UNDEFINED
+EF484150 vand q10, q4, q0
+EF020158 vand q0, q1, q4
+EF411151 UNDEFINED
+EF0FF15F UNDEFINED
+EF4FF1FF UNDEFINED
+EF448150 vand q12, q2, q0
+EF448170 vand q12, q2, q8
+EF448154 [ne] vandne q12, q2, q2

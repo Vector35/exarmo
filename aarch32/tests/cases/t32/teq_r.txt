@@ -1,0 +1,56 @@
+// TEQ_r_T1 1110101|op1=0100|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=1111|imm2=xx|stype=xx|Rm=xxxx
+// TeqRT1: TEQ{<c>}{<q>}  <Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rm
+// IT state read: condition
+ea958f7a teq r5, r10, ror #1 (unpredictable)
+ea9befc8 teq r11, r8, lsl #27 (unpredictable)
+ea9a2f9d teq r10, sp, lsr #10
+ea95ef78 teq r5, r8, ror #25 (unpredictable)
+ea945fe4 teq r4, r4, asr #23
+ea9caf35 teq r12, r5, ror #8 (unpredictable)
+ea9c9ff3 teq r12, r3, ror #7 (unpredictable)
+ea98afea teq r8, r10, asr #11 (unpredictable)
+EA90BF70 teq r0, r0, ror #0xd (unpredictable)
+EA9FCF7F teq pc, pc, ror #0x11 (unpredictable)
+EA95FF7A teq r5, r10, ror #0x1d (unpredictable)
+EA9B8F08 teq r11, r8 (unpredictable)
+EA958FBA teq r5, r10, ror #0x2 (unpredictable)
+EA958FFA teq r5, r10, ror #0x3 (unpredictable)
+EA959F3A teq r5, r10, ror #0x4 (unpredictable)
+EA959F7A teq r5, r10, ror #0x5 (unpredictable)
+EA959FBA teq r5, r10, ror #0x6 (unpredictable)
+EA95AF7A teq r5, r10, ror #0x9 (unpredictable)
+EA95BF3A teq r5, r10, ror #0xc (unpredictable)
+EA95BF7A teq r5, r10, ror #0xd (unpredictable)
+EA95BFBA teq r5, r10, ror #0xe (unpredictable)
+EA95BFFA teq r5, r10, ror #0xf (unpredictable)
+EA95CF3A teq r5, r10, ror #0x10 (unpredictable)
+EA95CF7A teq r5, r10, ror #0x11 (unpredictable)
+EA95CFBA teq r5, r10, ror #0x12 (unpredictable)
+EA95CFFA teq r5, r10, ror #0x13 (unpredictable)
+EA95DF3A teq r5, r10, ror #0x14 (unpredictable)
+EA95DF7A teq r5, r10, ror #0x15 (unpredictable)
+EA95DFBA teq r5, r10, ror #0x16 (unpredictable)
+EA95EF3A teq r5, r10, ror #0x18 (unpredictable)
+EA95EFBA teq r5, r10, ror #0x1a (unpredictable)
+EA95FF3A teq r5, r10, ror #0x1c (unpredictable)
+EA95FFBA teq r5, r10, ror #0x1e (unpredictable)
+EA95FFFA teq r5, r10, ror #0x1f (unpredictable)
+EA958F7A [ne] teqne r5, r10, ror #0x1 (unpredictable)
+
+// TEQ_r_T1_RRX 1110101|op1=0100|S=1|Rn=xxxx|(0)|imm3=000|Rd=1111|imm2=00|stype=11|Rm=xxxx
+// TeqRT1Rrx: TEQ{<c>}{<q>}  <Rn>, <Rm>, RRX
+// register fields: Rn, Rm
+// IT state read: condition
+ea9b0f3c teq r11, r12, rrx
+ea950f3f teq r5, pc, rrx (unpredictable)
+ea938f39 teq r3, r9, rrx (unpredictable)
+ea920f3f teq r2, pc, rrx (unpredictable)
+ea9f0f39 teq pc, r9, rrx (unpredictable)
+ea958f3b teq r5, r11, rrx (unpredictable)
+ea940f3b teq r4, r11, rrx
+ea980f3b teq r8, r11, rrx
+EA900F30 teq r0, r0, rrx
+EA9B0F3B teq r11, r11, rrx
+EA9B0F3C [ne] teqne r11, r12, rrx

@@ -1,0 +1,39 @@
+// VRINTN_asimd_T1_D 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|01|op=000|Q=0|M=x|0|Vm=xxxx
+// VrintnAsimdT1D: VRINTN{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+fff65402 vrintn.f16 d21, d2
+ffba9428 vrintn.f32 d9, d24
+fff62407 vrintn.f16 d18, d7
+fff6240c vrintn.f16 d18, d12
+fffa1403 vrintn.f32 d17, d3
+ffb60427 vrintn.f16 d0, d23
+fffa4427 vrintn.f32 d20, d23
+fffac40d vrintn.f32 d28, d13
+FFF25402 UNDEFINED
+FFFE5402 UNDEFINED
+FFF6F400 vrintn.f16 d31, d0
+FFF6840F vrintn.f16 d24, d15
+FFB6F404 vrintn.f16 d15, d4
+FFF60401 vrintn.f16 d16, d1
+FFF6540F vrintn.f16 d21, d15
+FFF65420 vrintn.f16 d21, d16
+FFF6542F vrintn.f16 d21, d31
+
+// VRINTN_asimd_T1_Q 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|01|op=000|Q=1|M=x|0|Vm=xxxx
+// VrintnAsimdT1Q: VRINTN{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+fff6046c vrintn.f16 q8, q14
+fff6e44a vrintn.f16 q15, q5
+fff6844e vrintn.f16 q12, q7
+ffbaa444 vrintn.f32 q5, q2
+fffa6468 vrintn.f32 q11, q12
+FFF2F46F UNDEFINED
+FFFE1461 UNDEFINED
+FFF64460 vrintn.f16 q10, q8
+FFF62462 vrintn.f16 q9, q9
+FFB60440 vrintn.f16 q0, q0
+FFB6F44F UNDEFINED
+FFF6F46F UNDEFINED
+FFF60460 vrintn.f16 q8, q8

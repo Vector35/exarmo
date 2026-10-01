@@ -1,0 +1,14 @@
+// orqv_z_p_z_ 000|0010|0|size=xx|0|111|opc=00|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// OrqvZPZ: ORQV  <Vd>.<T>, <Pg>, <Zn>.<Tb>
+// register fields: Pg, Zn, Vd
+041C2001 orqv v1.16b, p0, z0.b
+041C2008 orqv v8.16b, p0, z0.b
+041C200F orqv v15.16b, p0, z0.b
+045C27E0 orqv v0.8h, p1, z31.h
+049C281F orqv v31.4s, p2, z0.s
+04DC2C01 orqv v1.2d, p3, z0.d
+041C3001 orqv v1.16b, p4, z0.b
+041C3401 orqv v1.16b, p5, z0.b
+041C3801 orqv v1.16b, p6, z0.b
+041C3C01 orqv v1.16b, p7, z0.b
+041C2000 orqv v0.16b, p0, z0.b

@@ -1,0 +1,14 @@
+// umaxqv_z_p_z_ 000|0010|0|size=xx|0|011|op=0|U=1|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// UmaxqvZPZ: UMAXQV  <Vd>.<T>, <Pg>, <Zn>.<Tb>
+// register fields: Pg, Zn, Vd
+040D2003 umaxqv v3.16b, p0, z0.b
+040D200A umaxqv v10.16b, p0, z0.b
+040D2011 umaxqv v17.16b, p0, z0.b
+044D27E0 umaxqv v0.8h, p1, z31.h
+048D281F umaxqv v31.4s, p2, z0.s
+04CD2C03 umaxqv v3.2d, p3, z0.d
+040D3003 umaxqv v3.16b, p4, z0.b
+040D3403 umaxqv v3.16b, p5, z0.b
+040D3803 umaxqv v3.16b, p6, z0.b
+040D3C03 umaxqv v3.16b, p7, z0.b
+040D2000 umaxqv v0.16b, p0, z0.b

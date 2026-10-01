@@ -1,0 +1,19 @@
+// POP_T1 1011|L=1|10|P=x|register_list=xxxxxxxx
+// PopT1: POP{<c>}{<q>}  <registers>
+// IT state read: condition, last in block
+bc01 pop {r0}
+bc02 pop {r1}
+bc03 pop {r0, r1}
+bc04 pop {r2}
+bc05 pop {r0, r2}
+bc06 pop {r1, r2}
+bc07 pop {r0, r1, r2}
+BD00 pop {pc}
+BCFF pop {r0, r1, r2, r3, r4, r5, r6, r7}
+BC80 pop {r7}
+BC40 pop {r6}
+BC20 pop {r5}
+BC10 pop {r4}
+BC08 pop {r3}
+BC01 [ne] popne {r0}
+BC01 [ne last] popne {r0}

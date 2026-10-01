@@ -1,0 +1,29 @@
+// ADDHN_asimddiff_N 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|01|o1=0|0|00|Rn=xxxxx|Rd=xxxxx
+// AddhnAsimddiffN: ADDHN  <Vd>.<Tb>, <Vn>.<Ta>, <Vm>.<Ta>
+// AddhnAsimddiffN2: ADDHN2  <Vd>.<Tb>, <Vn>.<Ta>, <Vm>.<Ta>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+0E2343B2 addhn v18.8b, v29.8h, v3.8h
+0EAB4361 addhn v1.2s, v27.2d, v11.2d
+4E224138 addhn2 v24.16b, v9.8h, v2.8h
+4E35416D addhn2 v13.16b, v11.8h, v21.8h
+4E2840F9 addhn2 v25.16b, v7.8h, v8.8h
+0E6841E0 addhn v0.4h, v15.4s, v8.4s
+0EB440C0 addhn v0.2s, v6.2d, v20.2d
+0E6E4229 addhn v9.4h, v17.4s, v14.4s
+4EAF40D8 addhn2 v24.4s, v6.2d, v15.2d
+0E2A42E6 addhn v6.8b, v23.8h, v10.8h
+4E364074 addhn2 v20.16b, v3.8h, v22.8h
+0E7D40AA addhn v10.4h, v5.4s, v29.4s
+0EB841ED addhn v13.2s, v15.2d, v24.2d
+0E744003 addhn v3.4h, v0.4s, v20.4s
+4E7942C9 addhn2 v9.8h, v22.4s, v25.4s
+4E644262 addhn2 v2.8h, v19.4s, v4.4s
+0E2043FF addhn v31.8b, v31.8h, v0.8h
+0E3F43B2 addhn v18.8b, v29.8h, v31.8h
+0EE343B2 UNDEFINED
+4EE343B2 UNDEFINED
+0E234072 addhn v18.8b, v3.8h, v3.8h
+0E2343A3 addhn v3.8b, v29.8h, v3.8h
+4E2043FF addhn2 v31.16b, v31.8h, v0.8h

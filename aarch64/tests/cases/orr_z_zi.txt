@@ -1,0 +1,78 @@
+// orr_z_zi_ 000|0010|1|opc=00|00|00|imm13=xxxxxxxxxxxxx|Zdn=xxxxx
+// OrrZZi: ORR  <Zdn>.<T>, <Zdn>.<T>, #<const>
+// register fields: Zdn
+// bitmask immediate <const>: imm13<12>:imm13<11:6>:imm13<5:0>
+05032477 orr z23.d, z23.d, #0xfffffffff0000000
+05019877 orr z23.s, z23.s, #0x1e000
+05020C00 orr z0.d, z0.d, #0x80000000ffffffff
+0501B9CE orr z14.s, z14.s, #0xfffe00
+05034466 orr z6.d, z6.d, #0xfffffffff000000
+05029FB6 orr z22.d, z22.d, #0xffffe7ffffffffff
+050341FD orr z29.d, z29.d, #0xffff000000
+0502AB76 orr z22.d, z22.d, #0xfffff8000000007f
+05010B1E orr z30.s, z30.s, #0x80ffffff
+05034279 orr z25.d, z25.d, #0xfffff000000
+05009BD5 orr z21.s, z21.s, #0xffffefff
+050005D9 orr z25.h, z25.h, #0x7fff
+0500975C orr z28.b, z28.b, #0xdd
+0502682A orr z10.d, z10.d, #0x18000000000000
+05002295 orr z21.s, z21.s, #0xf001ffff
+05032D46 orr z6.d, z6.d, #0xfffffffff800003f
+0500001F orr z31.s, z31.s, #0x1
+0503FFF7 UNDEFINED
+05020017 orr z23.d, z23.d, #0x1
+05010017 orr z23.s, z23.s, #0x1
+05008017 orr z23.s, z23.s, #0x10000
+05004017 orr z23.s, z23.s, #0x1000000
+05002017 orr z23.s, z23.s, #0x10000000
+05001017 orr z23.s, z23.s, #0x40000000
+05000817 orr z23.s, z23.s, #0x80000000
+05000417 orr z23.h, z23.h, #0x1
+05000217 orr z23.s, z23.s, #0x1ffff
+05000117 orr z23.s, z23.s, #0x1ff
+05000097 orr z23.s, z23.s, #0x1f
+05000057 orr z23.s, z23.s, #0x7
+05000037 orr z23.s, z23.s, #0x3
+05000797 orr z23.b, z23.b, #0x55
+05000F97 orr z23.b, z23.b, #0xaa
+0501FF97 orr z23.b, z23.b, #0xaa
+050007B7 UNDEFINED
+05000FB7 UNDEFINED
+0501FFB7 UNDEFINED
+05000717 orr z23.b, z23.b, #0x11
+05001F17 orr z23.b, z23.b, #0x22
+0501FF17 orr z23.b, z23.b, #0x22
+05000757 orr z23.b, z23.b, #0x77
+05001F57 orr z23.b, z23.b, #0xee
+0501FF57 orr z23.b, z23.b, #0xee
+05000777 UNDEFINED
+05001F77 UNDEFINED
+0501FF77 UNDEFINED
+05000617 orr z23.b, z23.b, #0x1
+05003E17 orr z23.b, z23.b, #0x2
+0501FE17 orr z23.b, z23.b, #0x2
+050006D7 orr z23.b, z23.b, #0x7f
+05003ED7 orr z23.b, z23.b, #0xfe
+0501FED7 orr z23.b, z23.b, #0xfe
+050006F7 UNDEFINED
+05003EF7 UNDEFINED
+0501FEF7 UNDEFINED
+05007C17 orr z23.h, z23.h, #0x2
+0501FC17 orr z23.h, z23.h, #0x2
+05007DD7 orr z23.h, z23.h, #0xfffe
+0501FDD7 orr z23.h, z23.h, #0xfffe
+050005F7 UNDEFINED
+05007DF7 UNDEFINED
+0501FDF7 UNDEFINED
+0500F817 orr z23.s, z23.s, #0x2
+0501F817 orr z23.s, z23.s, #0x2
+050003D7 orr z23.s, z23.s, #0x7fffffff
+0500FBD7 orr z23.s, z23.s, #0xfffffffe
+0501FBD7 orr z23.s, z23.s, #0xfffffffe
+050003F7 UNDEFINED
+0500FBF7 UNDEFINED
+0501FBF7 UNDEFINED
+0503F817 orr z23.d, z23.d, #0x2
+050207D7 orr z23.d, z23.d, #0x7fffffffffffffff
+0503FFD7 orr z23.d, z23.d, #0xfffffffffffffffe
+050207F7 UNDEFINED

@@ -1,0 +1,43 @@
+// FNEG_asimdmisc_R 0|Q=x|U=1|0|111|0|1|sz=x|10000|opcode=01111|10|Rn=xxxxx|Rd=xxxxx
+// FnegAsimdmiscR: FNEG  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+2EA0F9B4 fneg v20.2s, v13.2s
+6EA0F893 fneg v19.4s, v4.4s
+6EA0FB2A fneg v10.4s, v25.4s
+2EA0F9CB fneg v11.2s, v14.2s
+6EA0F9C3 fneg v3.4s, v14.4s
+6EE0FAF5 fneg v21.2d, v23.2d
+2EA0F867 fneg v7.2s, v3.2s
+6EA0F8D4 fneg v20.4s, v6.4s
+6EE0F8B3 fneg v19.2d, v5.2d
+6EE0F9EA fneg v10.2d, v15.2d
+6EE0FA07 fneg v7.2d, v16.2d
+6EE0F813 fneg v19.2d, v0.2d
+6EE0F803 fneg v3.2d, v0.2d
+2EA0FA10 fneg v16.2s, v16.2s
+6EE0F8E0 fneg v0.2d, v7.2d
+6EA0FA2F fneg v15.4s, v17.4s
+2EA0FBFF fneg v31.2s, v31.2s
+2EE0F9B4 UNDEFINED
+
+// FNEG_asimdmiscfp16_R 0|Q=x|U=1|0|111|0|a=1|1111|00|opcode=01111|10|Rn=xxxxx|Rd=xxxxx
+// FnegAsimdmiscfp16R: FNEG  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+2EF8FB0C fneg v12.4h, v24.4h
+6EF8FBA2 fneg v2.8h, v29.8h
+6EF8FA77 fneg v23.8h, v19.8h
+2EF8FBDB fneg v27.4h, v30.4h
+6EF8F960 fneg v0.8h, v11.8h
+6EF8FA2B fneg v11.8h, v17.8h
+2EF8FB9C fneg v28.4h, v28.4h
+6EF8F9D9 fneg v25.8h, v14.8h
+6EF8F9E2 fneg v2.8h, v15.8h
+6EF8F80A fneg v10.8h, v0.8h
+6EF8FA23 fneg v3.8h, v17.8h
+2EF8F80D fneg v13.4h, v0.4h
+6EF8FAAE fneg v14.8h, v21.8h
+6EF8FB22 fneg v2.8h, v25.8h
+2EF8FAF4 fneg v20.4h, v23.4h
+2EF8FB7E fneg v30.4h, v27.4h
+2EF8FBFF fneg v31.4h, v31.4h

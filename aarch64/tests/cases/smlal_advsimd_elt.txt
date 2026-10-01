@@ -1,0 +1,65 @@
+// SMLAL_asimdelem_L 0|Q=x|U=0|0|111|1|size=xx|L=x|M=x|Rm=xxxx|0|o2=0|10|H=x|0|Rn=xxxxx|Rd=xxxxx
+// SmlalAsimdelemL: SMLAL  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// SmlalAsimdelemL2: SMLAL2  <Vd>.<Ta>, <Vn>.<Tb>, <m>.<Ts>[<index>]
+// read together by <Tb>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+// form chosen on: Q
+4F6A2266 smlal2 v6.4s, v19.8h, v10.h[2]
+0F622B90 smlal v16.4s, v28.4h, v2.h[6]
+4F442977 smlal2 v23.4s, v11.8h, v4.h[4]
+0FAC200F smlal v15.2d, v0.2s, v12.s[1]
+4F632ADA smlal2 v26.4s, v22.8h, v3.h[6]
+0FA8236A smlal v10.2d, v27.2s, v8.s[1]
+0FA5223B smlal v27.2d, v17.2s, v5.s[1]
+0FA12975 smlal v21.2d, v11.2s, v1.s[3]
+4F662824 smlal2 v4.4s, v1.8h, v6.h[6]
+4F9B2863 smlal2 v3.2d, v3.4s, v27.s[2]
+4F7E23E5 smlal2 v5.4s, v31.8h, v14.h[3]
+0F8F2BDD smlal v29.2d, v30.2s, v15.s[2]
+0F742BD1 smlal v17.4s, v30.4h, v4.h[7]
+4F752A6B smlal2 v11.4s, v19.8h, v5.h[7]
+0FB1281B smlal v27.2d, v0.2s, v17.s[3]
+0FA72882 smlal v2.2d, v4.2s, v7.s[3]
+4F602260 smlal2 v0.4s, v19.8h, v0.h[2]
+4F6A227F smlal2 v31.4s, v19.8h, v10.h[2]
+4F2A2266 UNDEFINED
+4FEA2266 UNDEFINED
+4F0A2266 UNDEFINED
+4F0A2A66 UNDEFINED
+4F1A2266 UNDEFINED
+4F1A2A66 UNDEFINED
+4F2A2A66 UNDEFINED
+4F3A2266 UNDEFINED
+4F3A2A66 UNDEFINED
+4F4A2266 smlal2 v6.4s, v19.8h, v10.h[0]
+4F5A2266 smlal2 v6.4s, v19.8h, v10.h[1]
+4F5A2A66 smlal2 v6.4s, v19.8h, v10.h[5]
+4F8A2266 smlal2 v6.2d, v19.4s, v10.s[0]
+4F9A2266 smlal2 v6.2d, v19.4s, v26.s[0]
+4FBA2266 smlal2 v6.2d, v19.4s, v26.s[1]
+4FCA2266 UNDEFINED
+4FCA2A66 UNDEFINED
+4FDA2266 UNDEFINED
+4FDA2A66 UNDEFINED
+4FEA2A66 UNDEFINED
+4FFA2266 UNDEFINED
+4FFA2A66 UNDEFINED
+4F202266 UNDEFINED
+4F2F2266 UNDEFINED
+4F302266 UNDEFINED
+4F3F2266 UNDEFINED
+4F6F2266 smlal2 v6.4s, v19.8h, v15.h[2]
+4F702266 smlal2 v6.4s, v19.8h, v0.h[3]
+4F7F2266 smlal2 v6.4s, v19.8h, v15.h[3]
+4FA02266 smlal2 v6.2d, v19.4s, v0.s[1]
+4FB02266 smlal2 v6.2d, v19.4s, v16.s[1]
+4FBF2266 smlal2 v6.2d, v19.4s, v31.s[1]
+4FE02266 UNDEFINED
+4FEF2266 UNDEFINED
+4FF02266 UNDEFINED
+4FFF2266 UNDEFINED
+0F2A2266 UNDEFINED
+0FEA2266 UNDEFINED
+4F622B90 smlal2 v16.4s, v28.8h, v2.h[6]

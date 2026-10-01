@@ -1,0 +1,24 @@
+// smlall_za_zzw_2x2 1|10|0000|11|sz=x|1|Zm=xxxx|00|Rv=xx|000|Zn=xxxx|0|U=0|S=0|op=0|0|o1=x
+// SmlallZaZzw2x2: SMLALL  ZA.<T>[<Wv>, <offs1>:<offs4>{, VGx2}], { <Zn1>.<Tb>-<Zn2>.<Tb> }, { <Zm1>.<Tb>-<Zm2>.<Tb> }
+// register fields: Zm, Rv, Zn
+C1A00101 smlall za.s[w8, 4:7, vgx2], {z8.b-z9.b}, {z0.b-z1.b}
+C1A00140 smlall za.s[w8, 0:3, vgx2], {z10.b-z11.b}, {z0.b-z1.b}
+C1A002C1 smlall za.s[w8, 4:7, vgx2], {z22.b-z23.b}, {z0.b-z1.b}
+C1FE2001 smlall za.d[w9, 4:7, vgx2], {z0.h-z1.h}, {z30.h-z31.h}
+C1A043C1 smlall za.s[w10, 4:7, vgx2], {z30.b-z31.b}, {z0.b-z1.b}
+C1A06101 smlall za.s[w11, 4:7, vgx2], {z8.b-z9.b}, {z0.b-z1.b}
+C1A00001 smlall za.s[w8, 4:7, vgx2], {z0.b-z1.b}, {z0.b-z1.b}
+
+// smlall_za_zzw_4x4 1|10|0000|11|sz=x|1|Zm=xxx|0|10|Rv=xx|000|Zn=xxx|00|U=0|S=0|op=0|0|o1=x
+// SmlallZaZzw4x4: SMLALL  ZA.<T>[<Wv>, <offs1>:<offs4>{, VGx4}], { <Zn1>.<Tb>-<Zn4>.<Tb> }, { <Zm1>.<Tb>-<Zm4>.<Tb> }
+// register fields: Zm, Rv, Zn
+C1A10081 smlall za.s[w8, 4:7, vgx4], {z4.b-z7.b}, {z0.b-z3.b}
+C1A10280 smlall za.s[w8, 0:3, vgx4], {z20.b-z23.b}, {z0.b-z3.b}
+C1A12001 smlall za.s[w9, 4:7, vgx4], {z0.b-z3.b}, {z0.b-z3.b}
+C1E54101 smlall za.d[w10, 4:7, vgx4], {z8.h-z11.h}, {z4.h-z7.h}
+C1A96181 smlall za.s[w11, 4:7, vgx4], {z12.b-z15.b}, {z8.b-z11.b}
+C1AD0201 smlall za.s[w8, 4:7, vgx4], {z16.b-z19.b}, {z12.b-z15.b}
+C1B10301 smlall za.s[w8, 4:7, vgx4], {z24.b-z27.b}, {z16.b-z19.b}
+C1B50381 smlall za.s[w8, 4:7, vgx4], {z28.b-z31.b}, {z20.b-z23.b}
+C1B90081 smlall za.s[w8, 4:7, vgx4], {z4.b-z7.b}, {z24.b-z27.b}
+C1BD0081 smlall za.s[w8, 4:7, vgx4], {z4.b-z7.b}, {z28.b-z31.b}

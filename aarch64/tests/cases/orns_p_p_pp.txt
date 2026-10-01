@@ -1,0 +1,21 @@
+// orns_p_p_pp_z 001|0010|1|op=1|S=1|00|Pm=xxxx|01|Pg=xxxx|o2=0|Pn=xxxx|o3=1|Pd=xxxx
+// OrnsPPPpZ: ORNS  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// register fields: Pm, Pg, Pn, Pd
+25C840DB orns p11.b, p0/z, p6.b, p8.b
+25C640D5 orns p5.b, p0/z, p6.b, p6.b
+25C95C12 orns p2.b, p7/z, p0.b, p9.b
+25C66D17 orns p7.b, p11/z, p8.b, p6.b
+25CB7C39 orns p9.b, p15/z, p1.b, p11.b
+25C2741E orns p14.b, p13/z, p0.b, p2.b
+25C74812 orns p2.b, p2/z, p0.b, p7.b
+25C2413F orns p15.b, p0/z, p9.b, p2.b
+25CE5CB2 orns p2.b, p7/z, p5.b, p14.b
+25C37D3D orns p13.b, p15/z, p9.b, p3.b
+25C26C74 orns p4.b, p11/z, p3.b, p2.b
+25C0581F orns p15.b, p6/z, p0.b, p0.b
+25C475B8 orns p8.b, p13/z, p13.b, p4.b
+25CB69BD orns p13.b, p10/z, p13.b, p11.b
+25C85C55 orns p5.b, p7/z, p2.b, p8.b
+25C24835 orns p5.b, p2/z, p1.b, p2.b
+25CF41F0 orns p0.b, p0/z, p15.b, p15.b
+25C840D8 orns p8.b, p0/z, p6.b, p8.b

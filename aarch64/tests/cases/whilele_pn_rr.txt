@@ -1,0 +1,12 @@
+// whilele_pn_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|vl=x|0|U=0|lt=1|Rn=xxxxx|1|eq=1|PNd=xxx
+// WhilelePnRr: WHILELE  <PNd>.<T>, <Xn>, <Xm>, <vl>
+// register fields: Rm, Rn, PNd
+// WHILELE (predicate as counter) - PN8-PN15
+25e24439 whilele pn9.d, x1, x2, vlx2
+25206418 whilele pn8.b, x0, x0, vlx4
+257F47FA whilele pn10.h, xzr, xzr, vlx2
+25A2443B whilele pn11.s, x1, x2, vlx2
+25E2443C whilele pn12.d, x1, x2, vlx2
+25E2443D whilele pn13.d, x1, x2, vlx2
+25E2443E whilele pn14.d, x1, x2, vlx2
+25E2443F whilele pn15.d, x1, x2, vlx2

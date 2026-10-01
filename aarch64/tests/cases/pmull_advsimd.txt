@@ -1,0 +1,30 @@
+// PMULL_asimddiff_L 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=1110|00|Rn=xxxxx|Rd=xxxxx
+// PmullAsimddiffL: PMULL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// PmullAsimddiffL2: PMULL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+0EF0E2AA pmull v10.1q, v21.1d, v16.1d
+0EFBE08C pmull v12.1q, v4.1d, v27.1d
+0E3EE178 pmull v24.8h, v11.8b, v30.8b
+4EF0E0A4 pmull2 v4.1q, v5.2d, v16.2d
+4E25E028 pmull2 v8.8h, v1.16b, v5.16b
+4E23E16B pmull2 v11.8h, v11.16b, v3.16b
+4E38E345 pmull2 v5.8h, v26.16b, v24.16b
+0EE5E0DA pmull v26.1q, v6.1d, v5.1d
+0E3BE199 pmull v25.8h, v12.8b, v27.8b
+4E3EE1C0 pmull2 v0.8h, v14.16b, v30.16b
+4EE9E1A0 pmull2 v0.1q, v13.2d, v9.2d
+0EE5E070 pmull v16.1q, v3.1d, v5.1d
+4EF8E3EF pmull2 v15.1q, v31.2d, v24.2d
+0EF8E187 pmull v7.1q, v12.1d, v24.1d
+0EEBE054 pmull v20.1q, v2.1d, v11.1d
+0EEAE1F6 pmull v22.1q, v15.1d, v10.1d
+0EE0E01F pmull v31.1q, v0.1d, v0.1d
+0EFFE2AA pmull v10.1q, v21.1d, v31.1d
+0E70E2AA UNDEFINED
+0EB0E2AA UNDEFINED
+4E70E2AA UNDEFINED
+4EB0E2AA UNDEFINED
+0EF0E2B0 pmull v16.1q, v21.1d, v16.1d
+4E3BE199 pmull2 v25.8h, v12.16b, v27.16b

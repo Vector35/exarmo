@@ -1,0 +1,33 @@
+// index_z_ri_ 000|0010|0|size=xx|1|imm5=xxxxx|0100|01|Rn=xxxxx|Zd=xxxxx
+// IndexZRi: INDEX  <Zd>.<T>, <n>, #<imm>
+// read together by <n>: size, Rn
+// register fields: Rn, Zd
+042447B2 index z18.b, w29, #0x4
+046D44C3 index z3.h, w6, #0xd
+04FE47A1 index z1.d, fp, #-2
+04B94626 index z6.s, w17, #-7
+04ED4741 index z1.d, x26, #0xd
+047246FC index z28.h, w23, #-14
+04BD4689 index z9.s, w20, #-3
+0473465E index z30.h, w18, #-13
+04794561 index z1.h, w11, #-7
+04BC4682 index z2.s, w20, #-4
+04EB44AA index z10.d, x5, #0xb
+04BB46A0 index z0.s, w21, #-5
+046A4683 index z3.h, w20, #0xa
+04604678 index z24.h, w19, #0x0
+04A64479 index z25.s, w3, #0x6
+046D467B index z27.h, w19, #0xd
+043F441F index z31.b, w0, #-0x1
+042447F2 index z18.b, wzr, #0x4
+04644412 index z18.h, w0, #0x4
+046447F2 index z18.h, wzr, #0x4
+04A44412 index z18.s, w0, #0x4
+04A447F2 index z18.s, wzr, #0x4
+04E44412 index z18.d, x0, #0x4
+04E447F2 index z18.d, xzr, #0x4
+042447BD index z29.b, w29, #0x4
+043047B2 index z18.b, w29, #-0x10
+042847B2 index z18.b, w29, #0x8
+042247B2 index z18.b, w29, #0x2
+042147B2 index z18.b, w29, #0x1

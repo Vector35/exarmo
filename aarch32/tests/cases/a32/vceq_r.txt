@@ -1,0 +1,88 @@
+// VCEQ_r_A1_D 1111001|U=1|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1000|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VceqRA1D: VCEQ{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f31738b8 vceq.i16 d3, d23, d24
+f361b8b8 vceq.i32 d27, d17, d24
+f36c883c vceq.i32 d24, d12, d28
+f352c815 vceq.i16 d28, d2, d5
+f34a6893 vceq.i8 d22, d26, d3
+f3596832 vceq.i16 d22, d9, d18
+f3288899 vceq.i32 d8, d24, d9
+f363a81c vceq.i32 d26, d3, d12
+F33738B8 UNDEFINED
+F31008B0 vceq.i16 d0, d16, d16
+F31FF8BF vceq.i16 d15, d31, d31
+F31448B4 vceq.i16 d4, d20, d20
+F3102831 vceq.i16 d2, d0, d17
+F3101890 vceq.i16 d1, d16, d0
+F31F081F vceq.i16 d0, d15, d15
+F31FF8B0 vceq.i16 d15, d31, d16
+F35708BF vceq.i16 d16, d23, d31
+F357F8B8 vceq.i16 d31, d23, d24
+
+// VCEQ_r_A1_Q 1111001|U=1|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1000|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VceqRA1Q: VCEQ{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f3540852 vceq.i16 q8, q2, q1
+f362a85e vceq.i32 q13, q1, q7
+f32ca8f8 vceq.i32 q5, q14, q12
+f3568874 vceq.i16 q12, q3, q10
+f366c8d6 vceq.i32 q14, q11, q3
+f340a87a vceq.i8 q13, q0, q13
+f306c8f2 vceq.i8 q6, q11, q9
+f3128872 vceq.i16 q4, q1, q9
+F37FF85F UNDEFINED
+F3584850 vceq.i16 q10, q4, q0
+F3511851 UNDEFINED
+F35028D0 vceq.i16 q9, q8, q0
+F3140870 vceq.i16 q0, q2, q8
+F31FF85F UNDEFINED
+F35FF8FF UNDEFINED
+
+// VCEQ_r_A2_D 1111001|U=0|0|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1110|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VceqRA2D: VCEQ{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f24f5e8b vceq.f32 d21, d31, d11
+f2135e82 vceq.f16 d5, d19, d2
+f208fe20 vceq.f32 d15, d8, d16
+f219be0e vceq.f16 d11, d9, d14
+f2101e26 vceq.f16 d1, d0, d22
+f251fe85 vceq.f16 d31, d17, d5
+f24ace8c vceq.f32 d28, d26, d12
+f24afead vceq.f32 d31, d26, d29
+F2440E8F vceq.f32 d16, d20, d15
+F2428E88 vceq.f32 d24, d18, d8
+F2404E84 vceq.f32 d20, d16, d4
+F24F2E01 vceq.f32 d18, d15, d1
+F20F0E80 vceq.f32 d0, d31, d0
+F24F0E8F vceq.f32 d16, d31, d15
+F24F5EAF vceq.f32 d21, d31, d31
+
+// VCEQ_r_A2_Q 1111001|U=0|0|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1110|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VceqRA2Q: VCEQ{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f2164ec8 vceq.f16 q2, q11, q4
+f24e2ec2 vceq.f32 q9, q15, q1
+f25ecee4 vceq.f16 q14, q15, q10
+f2440e4e vceq.f32 q8, q2, q7
+f24c2e48 vceq.f32 q9, q6, q4
+f2540e44 vceq.f16 q8, q2, q2
+f25a6e6a vceq.f16 q11, q5, q13
+f25c4e4a vceq.f16 q10, q6, q5
+F2108EC0 vceq.f16 q4, q8, q0
+F21FFECF UNDEFINED
+F2180EC0 vceq.f16 q0, q12, q0
+F2124EE0 vceq.f16 q2, q9, q8
+F2111EC1 UNDEFINED
+F21FFE4F UNDEFINED
+F25FFEEF UNDEFINED
+F2104E48 vceq.f16 q2, q0, q4
+F2104EC8 vceq.f16 q2, q8, q4

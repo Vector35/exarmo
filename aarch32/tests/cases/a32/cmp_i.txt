@@ -1,0 +1,45 @@
+// CMP_i_A1 cond=xxxx|00|1|10|opc=10|1|Rn=xxxx|(0)(0)(0)(0)|imm12=xxxxxxxxxxxx
+// CmpIA1: CMP{<c>}{<q>}  <Rn>, #<const>
+// register fields: Rn
+// modified immediate <const>: imm12
+8357a5a1 cmphi r7, #675282944 (unpredictable)
+7350ddc1 cmpvc r0, #12352 (unpredictable)
+135bc1ba cmpne r11, #2147483694 (unpredictable)
+b359603c cmplt r9, #60 (unpredictable)
+33502e1f cmplo r0, #496 (unpredictable)
+3351a48f cmplo r1, #2399141888 (unpredictable)
+a3558512 cmpge r5, #75497472 (unpredictable)
+535e0715 cmppl lr, #5505024
+// Binary Ninja's tests
+e351000f cmp r1, #15
+e35e0000 cmp lr, #0
+035FFFFF cmpeq pc, #0x3fc (unpredictable)
+F350DDC1 UNDEFINED
+43574800 cmpmi r7, #0x0 (unpredictable)
+23571400 cmpcs r7, #0x0 (unpredictable)
+8357A200 cmphi r7, #0x0 (unpredictable)
+8357A100 cmphi r7, #0x0 (unpredictable)
+8357A080 cmphi r7, #0x80 (unpredictable)
+8357A040 cmphi r7, #0x40 (unpredictable)
+8357A020 cmphi r7, #0x20 (unpredictable)
+8357A010 cmphi r7, #0x10 (unpredictable)
+8357A008 cmphi r7, #0x8 (unpredictable)
+8357A004 cmphi r7, #0x4 (unpredictable)
+8357A002 cmphi r7, #0x2 (unpredictable)
+8357A001 cmphi r7, #0x1 (unpredictable)
+8357A081 cmphi r7, #0x81 (unpredictable)
+8357A181 cmphi r7, #0x40000020 (unpredictable)
+8357A281 cmphi r7, #0x10000008 (unpredictable)
+8357A381 cmphi r7, #0x4000002 (unpredictable)
+8357A481 cmphi r7, #0x81000000 (unpredictable)
+8357A581 cmphi r7, #0x20400000 (unpredictable)
+8357A681 cmphi r7, #0x8100000 (unpredictable)
+8357A781 cmphi r7, #0x2040000 (unpredictable)
+8357A881 cmphi r7, #0x810000 (unpredictable)
+8357A981 cmphi r7, #0x204000 (unpredictable)
+8357AA81 cmphi r7, #0x81000 (unpredictable)
+8357AB81 cmphi r7, #0x20400 (unpredictable)
+8357AC81 cmphi r7, #0x8100 (unpredictable)
+8357AD81 cmphi r7, #0x2040 (unpredictable)
+8357AE81 cmphi r7, #0x810 (unpredictable)
+8357AF81 cmphi r7, #0x204 (unpredictable)

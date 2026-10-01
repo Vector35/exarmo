@@ -1,0 +1,15 @@
+// usqadd_z_p_zz_ 010|0010|0|size=xx|0|11|op=1|S=0|U=1|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// UsqaddZPZz: USQADD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+449D81A4 usqadd z4.s, p0/m, z4.s, z13.s
+449D9E26 usqadd z6.s, p7/m, z6.s, z17.s
+445D8386 usqadd z6.h, p0/m, z6.h, z28.h
+441D98C1 usqadd z1.b, p6/m, z1.b, z6.b
+445D8353 usqadd z19.h, p0/m, z19.h, z26.h
+449D9D52 usqadd z18.s, p7/m, z18.s, z10.s
+445D998C usqadd z12.h, p6/m, z12.h, z12.h
+445D8F9F usqadd z31.h, p3/m, z31.h, z28.h
+44DD8400 usqadd z0.d, p1/m, z0.d, z0.d
+449D8BE4 usqadd z4.s, p2/m, z4.s, z31.s
+449D91A4 usqadd z4.s, p4/m, z4.s, z13.s
+449D95A4 usqadd z4.s, p5/m, z4.s, z13.s

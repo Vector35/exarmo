@@ -1,0 +1,15 @@
+// suqadd_z_p_zz_ 010|0010|0|size=xx|0|11|op=1|S=0|U=0|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SuqaddZPZz: SUQADD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+445C86D2 suqadd z18.h, p1/m, z18.h, z22.h
+449C975E suqadd z30.s, p5/m, z30.s, z26.s
+449C8D23 suqadd z3.s, p3/m, z3.s, z9.s
+44DC8D57 suqadd z23.d, p3/m, z23.d, z10.d
+441C989F suqadd z31.b, p6/m, z31.b, z4.b
+449C948D suqadd z13.s, p5/m, z13.s, z4.s
+445C85D4 suqadd z20.h, p1/m, z20.h, z14.h
+44DC9442 suqadd z2.d, p5/m, z2.d, z2.d
+445C8000 suqadd z0.h, p0/m, z0.h, z0.h
+445C8BF2 suqadd z18.h, p2/m, z18.h, z31.h
+445C92D2 suqadd z18.h, p4/m, z18.h, z22.h
+445C9ED2 suqadd z18.h, p7/m, z18.h, z22.h

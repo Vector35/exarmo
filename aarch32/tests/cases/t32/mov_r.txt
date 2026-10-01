@@ -1,0 +1,782 @@
+// MOV_r_T1 010001|op=10|D=x|Rm=xxxx|Rd=xxx
+// MovRT1: MOV{<c>}{<q>}  <Rd>, <Rm>
+// read together by <Rd>: D, Rd
+// register fields: Rm
+// IT state read: condition, last in block
+4600 mov r0, r0
+4601 mov r1, r0
+4602 mov r2, r0
+4603 mov r3, r0
+4604 mov r4, r0
+4605 mov r5, r0
+4606 mov r6, r0
+4607 mov r7, r0
+46F8 mov r8, pc
+4680 mov r8, r0
+4681 mov r9, r0
+4682 mov r10, r0
+4683 mov r11, r0
+4684 mov r12, r0
+4685 mov sp, r0
+4686 mov lr, r0
+4687 mov pc, r0
+4600 [ne] movne r0, r0
+4600 [ne last] movne r0, r0
+4687 [eq] moveq pc, r0 (unpredictable)
+4687 [eq last] moveq pc, r0
+
+// MOV_r_T2 00|0|op=xx|imm5=xxxxx|Rm=xxx|Rd=xxx
+// AsrsMovRT2: ASRS{<q>}  {<Rd>, }<Rm>, #<imm>
+// AsrMovRT2: ASR<c>{<q>}  {<Rd>, }<Rm>, #<imm>
+// LslsMovRT2: LSLS{<q>}  {<Rd>, }<Rm>, #<imm>
+// LslMovRT2: LSL<c>{<q>}  {<Rd>, }<Rm>, #<imm>
+// LsrsMovRT2: LSRS{<q>}  {<Rd>, }<Rm>, #<imm>
+// LsrMovRT2: LSR<c>{<q>}  {<Rd>, }<Rm>, #<imm>
+// MovRT2: MOV<c>{<q>}  <Rd>, <Rm> {, <shift> #<amount>}
+// T2bMovRT2: MOVS{<q>}  <Rd>, <Rm> {, <shift> #<amount>}
+// read together by the LSLS alias and the LSL alias: op, imm5
+// register fields: Rm, Rd
+// form chosen on: op, imm5
+// IT state read: condition, in block
+0000 movs r0, r0
+0001 movs r1, r0
+0002 movs r2, r0
+0003 movs r3, r0
+0004 movs r4, r0
+0005 movs r5, r0
+0006 movs r6, r0
+0007 movs r7, r0
+0FC8 lsrs r0, r1, #0x1f
+1410 asrs r0, r2, #0x10
+0218 lsls r0, r3, #0x8
+0120 lsls r0, r4, #0x4
+00A8 lsls r0, r5, #0x2
+0070 lsls r0, r6, #0x1
+07F8 lsls r0, r7, #0x1f
+0800 lsrs r0, r0, #0x20
+0FC0 lsrs r0, r0, #0x1f
+1000 asrs r0, r0, #0x20
+17C0 asrs r0, r0, #0x1f
+0040 lsls r0, r0, #0x1
+1410 [ne] asrne r0, r2, #0x10
+0218 [ne] lslne r0, r3, #0x8
+0FC8 [ne] lsrne r0, r1, #0x1f
+0000 [ne] movne r0, r0 (unpredictable)
+1000 [ne] asrne r0, r0, #0x20
+0040 [ne] lslne r0, r0, #0x1
+0840 [ne] lsrne r0, r0, #0x1
+
+// MOV_r_T3 1110101|op1=0010|S=0|Rn=1111|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// AsrMovRT3: ASR{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// LslMovRT3: LSL{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// LsrMovRT3: LSR{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// RorMovRT3: ROR{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// MovRT3: MOV{<c>}{<q>}  <Rd>, <Rm> {, <shift> #<amount>}
+// read together by the LSL alias and the ROR alias: imm3, imm2, stype
+// register fields: Rd, Rm
+// form chosen on: imm3, imm2, stype
+// IT state read: condition
+ea4f01b5 ror r1, r5, #2
+ea4f0dad asr sp, sp, #2
+ea4f79d1 lsr r9, r1, #31
+ea4f223f ror r2, pc, #8 (unpredictable)
+EA4F9040 lsl r0, r0, #0x5 (unpredictable)
+EA4F3FB5 ror pc, r5, #0xe (unpredictable)
+EA4F41B5 ror r1, r5, #0x12
+EA4F51B5 ror r1, r5, #0x16
+EA4F61B5 ror r1, r5, #0x1a
+EA4F0105 mov r1, r5
+EA4F0115 lsr r1, r5, #0x20
+EA4F0125 asr r1, r5, #0x20
+EA4F0145 lsl r1, r5, #0x1
+EA4F0155 lsr r1, r5, #0x1
+EA4F0165 asr r1, r5, #0x1
+EA4F0175 ror r1, r5, #0x1
+EA4F0185 lsl r1, r5, #0x2
+EA4F0195 lsr r1, r5, #0x2
+EA4F01C5 lsl r1, r5, #0x3
+EA4F01D5 lsr r1, r5, #0x3
+EA4F01E5 asr r1, r5, #0x3
+EA4F01F5 ror r1, r5, #0x3
+EA4F1105 lsl r1, r5, #0x4
+EA4F1115 lsr r1, r5, #0x4
+EA4F1125 asr r1, r5, #0x4
+EA4F1135 ror r1, r5, #0x4
+EA4F1145 lsl r1, r5, #0x5
+EA4F1155 lsr r1, r5, #0x5
+EA4F1165 asr r1, r5, #0x5
+EA4F1175 ror r1, r5, #0x5
+EA4F1185 lsl r1, r5, #0x6
+EA4F1195 lsr r1, r5, #0x6
+EA4F11A5 asr r1, r5, #0x6
+EA4F11B5 ror r1, r5, #0x6
+EA4F11C5 lsl r1, r5, #0x7
+EA4F11D5 lsr r1, r5, #0x7
+EA4F11E5 asr r1, r5, #0x7
+EA4F11F5 ror r1, r5, #0x7
+EA4F2105 lsl r1, r5, #0x8
+EA4F2115 lsr r1, r5, #0x8
+EA4F2125 asr r1, r5, #0x8
+EA4F2145 lsl r1, r5, #0x9
+EA4F2155 lsr r1, r5, #0x9
+EA4F2165 asr r1, r5, #0x9
+EA4F2175 ror r1, r5, #0x9
+EA4F2185 lsl r1, r5, #0xa
+EA4F2195 lsr r1, r5, #0xa
+EA4F21A5 asr r1, r5, #0xa
+EA4F21B5 ror r1, r5, #0xa
+EA4F21C5 lsl r1, r5, #0xb
+EA4F21D5 lsr r1, r5, #0xb
+EA4F21E5 asr r1, r5, #0xb
+EA4F21F5 ror r1, r5, #0xb
+EA4F3105 lsl r1, r5, #0xc
+EA4F3115 lsr r1, r5, #0xc
+EA4F3125 asr r1, r5, #0xc
+EA4F3135 ror r1, r5, #0xc
+EA4F3145 lsl r1, r5, #0xd
+EA4F3155 lsr r1, r5, #0xd
+EA4F3165 asr r1, r5, #0xd
+EA4F3175 ror r1, r5, #0xd
+EA4F3185 lsl r1, r5, #0xe
+EA4F3195 lsr r1, r5, #0xe
+EA4F31A5 asr r1, r5, #0xe
+EA4F31B5 ror r1, r5, #0xe
+EA4F31C5 lsl r1, r5, #0xf
+EA4F31D5 lsr r1, r5, #0xf
+EA4F31E5 asr r1, r5, #0xf
+EA4F31F5 ror r1, r5, #0xf
+EA4F4105 lsl r1, r5, #0x10
+EA4F4115 lsr r1, r5, #0x10
+EA4F4125 asr r1, r5, #0x10
+EA4F4135 ror r1, r5, #0x10
+EA4F4145 lsl r1, r5, #0x11
+EA4F4155 lsr r1, r5, #0x11
+EA4F4165 asr r1, r5, #0x11
+EA4F4175 ror r1, r5, #0x11
+EA4F4185 lsl r1, r5, #0x12
+EA4F4195 lsr r1, r5, #0x12
+EA4F41A5 asr r1, r5, #0x12
+EA4F41C5 lsl r1, r5, #0x13
+EA4F41D5 lsr r1, r5, #0x13
+EA4F41E5 asr r1, r5, #0x13
+EA4F41F5 ror r1, r5, #0x13
+EA4F5105 lsl r1, r5, #0x14
+EA4F5115 lsr r1, r5, #0x14
+EA4F5125 asr r1, r5, #0x14
+EA4F5135 ror r1, r5, #0x14
+EA4F5145 lsl r1, r5, #0x15
+EA4F5155 lsr r1, r5, #0x15
+EA4F5165 asr r1, r5, #0x15
+EA4F5175 ror r1, r5, #0x15
+EA4F5185 lsl r1, r5, #0x16
+EA4F5195 lsr r1, r5, #0x16
+EA4F51A5 asr r1, r5, #0x16
+EA4F51C5 lsl r1, r5, #0x17
+EA4F51D5 lsr r1, r5, #0x17
+EA4F51E5 asr r1, r5, #0x17
+EA4F51F5 ror r1, r5, #0x17
+EA4F6105 lsl r1, r5, #0x18
+EA4F6115 lsr r1, r5, #0x18
+EA4F6125 asr r1, r5, #0x18
+EA4F6135 ror r1, r5, #0x18
+EA4F6145 lsl r1, r5, #0x19
+EA4F6155 lsr r1, r5, #0x19
+EA4F6165 asr r1, r5, #0x19
+EA4F6175 ror r1, r5, #0x19
+EA4F6185 lsl r1, r5, #0x1a
+EA4F6195 lsr r1, r5, #0x1a
+EA4F61A5 asr r1, r5, #0x1a
+EA4F61C5 lsl r1, r5, #0x1b
+EA4F61D5 lsr r1, r5, #0x1b
+EA4F61E5 asr r1, r5, #0x1b
+EA4F61F5 ror r1, r5, #0x1b
+EA4F7105 lsl r1, r5, #0x1c
+EA4F7115 lsr r1, r5, #0x1c
+EA4F7125 asr r1, r5, #0x1c
+EA4F7135 ror r1, r5, #0x1c
+EA4F7145 lsl r1, r5, #0x1d
+EA4F7155 lsr r1, r5, #0x1d
+EA4F7165 asr r1, r5, #0x1d
+EA4F7175 ror r1, r5, #0x1d
+EA4F7185 lsl r1, r5, #0x1e
+EA4F7195 lsr r1, r5, #0x1e
+EA4F71A5 asr r1, r5, #0x1e
+EA4F71B5 ror r1, r5, #0x1e
+EA4F71C5 lsl r1, r5, #0x1f
+EA4F71E5 asr r1, r5, #0x1f
+EA4F71F5 ror r1, r5, #0x1f
+EA4F0DAD [ne] asrne sp, sp, #0x2
+EA4F9040 [ne] lslne r0, r0, #0x5 (unpredictable)
+EA4F79D1 [ne] lsrne r9, r1, #0x1f
+EA4F01B5 [ne] rorne r1, r5, #0x2
+EA4F0105 [ne] movne r1, r5
+
+// MOV_r_T3_RRX 1110101|op1=0010|S=0|Rn=1111|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// RrxMovRT3Rrx: RRX{<c>}{<q>}  {<Rd>, }<Rm>
+// MovRT3Rrx: MOV{<c>}{<q>}  <Rd>, <Rm>, RRX
+// register fields: Rd, Rm
+// IT state read: condition
+ea4f8d3a rrx sp, r10 (unpredictable)
+ea4f073a rrx r7, r10
+ea4f0a3b rrx r10, r11
+ea4f803e rrx r0, lr (unpredictable)
+ea4f0733 rrx r7, r3
+ea4f8e3f rrx lr, pc (unpredictable)
+ea4f0437 rrx r4, r7
+ea4f8536 rrx r5, r6 (unpredictable)
+EA4F8F30 rrx pc, r0 (unpredictable)
+EA4F8D3D rrx sp, sp (unpredictable)
+EA4F8D3A [ne] rrxne sp, r10 (unpredictable)
+
+// MOVS_r_T3 1110101|op1=0010|S=1|Rn=1111|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// T3bAsrsMovsRT3: ASRS.W  {<Rd>, }<Rm>, #<imm>
+// AsrsMovsRT3: ASRS{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// T3bLslsMovsRT3: LSLS.W  {<Rd>, }<Rm>, #<imm>
+// LslsMovsRT3: LSLS{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// T3bLsrsMovsRT3: LSRS.W  {<Rd>, }<Rm>, #<imm>
+// LsrsMovsRT3: LSRS{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// RorsMovsRT3: RORS{<c>}{<q>}  {<Rd>, }<Rm>, #<imm>
+// MovsRT3: MOVS{<c>}{<q>}  <Rd>, <Rm> {, <shift> #<amount>}
+// read together by the LSLS alias: imm3, Rd, imm2, stype, Rm
+// register fields: Rd, Rm
+// form chosen on: imm3, Rd, imm2, stype, Rm
+// IT state read: condition, in block
+ea5f7a6e asrs r10, lr, #29
+ea5f6ceb asrs r12, r11, #27
+ea5f0042 lsls r0, r2, #1
+ea5f4d43 lsls sp, r3, #17
+EA5F9F10 lsrs pc, r0, #0x4 (unpredictable)
+EA5F2ABF rors r10, pc, #0xa (unpredictable)
+EA5F3A6A asrs r10, r10, #0xd
+EA5F5A6E asrs r10, lr, #0x15
+EA5F0000 movs r0, r0
+EA5F000F movs r0, pc (unpredictable)
+EA5F0010 lsrs r0, r0, #0x20
+EA5F001F lsrs r0, pc, #0x20 (unpredictable)
+EA5F0020 asrs r0, r0, #0x20
+EA5F002F asrs r0, pc, #0x20 (unpredictable)
+EA5F0040 lsls r0, r0, #0x1
+EA5F004F lsls r0, pc, #0x1 (unpredictable)
+EA5F0050 lsrs r0, r0, #0x1
+EA5F005F lsrs r0, pc, #0x1 (unpredictable)
+EA5F0060 asrs r0, r0, #0x1
+EA5F006F asrs r0, pc, #0x1 (unpredictable)
+EA5F0070 rors r0, r0, #0x1
+EA5F007F rors r0, pc, #0x1 (unpredictable)
+EA5F0080 lsls r0, r0, #0x2
+EA5F008F lsls r0, pc, #0x2 (unpredictable)
+EA5F0090 lsrs r0, r0, #0x2
+EA5F009F lsrs r0, pc, #0x2 (unpredictable)
+EA5F00A0 asrs r0, r0, #0x2
+EA5F00AF asrs r0, pc, #0x2 (unpredictable)
+EA5F00B0 rors r0, r0, #0x2
+EA5F00BF rors r0, pc, #0x2 (unpredictable)
+EA5F00C0 lsls r0, r0, #0x3
+EA5F00CF lsls r0, pc, #0x3 (unpredictable)
+EA5F00D0 lsrs r0, r0, #0x3
+EA5F00DF lsrs r0, pc, #0x3 (unpredictable)
+EA5F00E0 asrs r0, r0, #0x3
+EA5F00EF asrs r0, pc, #0x3 (unpredictable)
+EA5F00F0 rors r0, r0, #0x3
+EA5F00FF rors r0, pc, #0x3 (unpredictable)
+EA5F0F00 movs pc, r0 (unpredictable)
+EA5F0F0F movs pc, pc (unpredictable)
+EA5F0F10 lsrs pc, r0, #0x20 (unpredictable)
+EA5F0F1F lsrs pc, pc, #0x20 (unpredictable)
+EA5F0F20 asrs pc, r0, #0x20 (unpredictable)
+EA5F0F2F asrs pc, pc, #0x20 (unpredictable)
+EA5F0F40 lsls pc, r0, #0x1 (unpredictable)
+EA5F0F4F lsls pc, pc, #0x1 (unpredictable)
+EA5F0F50 lsrs pc, r0, #0x1 (unpredictable)
+EA5F0F5F lsrs pc, pc, #0x1 (unpredictable)
+EA5F0F60 asrs pc, r0, #0x1 (unpredictable)
+EA5F0F6F asrs pc, pc, #0x1 (unpredictable)
+EA5F0F70 rors pc, r0, #0x1 (unpredictable)
+EA5F0F7F rors pc, pc, #0x1 (unpredictable)
+EA5F0F80 lsls pc, r0, #0x2 (unpredictable)
+EA5F0F8F lsls pc, pc, #0x2 (unpredictable)
+EA5F0F90 lsrs pc, r0, #0x2 (unpredictable)
+EA5F0F9F lsrs pc, pc, #0x2 (unpredictable)
+EA5F0FA0 asrs pc, r0, #0x2 (unpredictable)
+EA5F0FAF asrs pc, pc, #0x2 (unpredictable)
+EA5F0FB0 rors pc, r0, #0x2 (unpredictable)
+EA5F0FBF rors pc, pc, #0x2 (unpredictable)
+EA5F0FC0 lsls pc, r0, #0x3 (unpredictable)
+EA5F0FCF lsls pc, pc, #0x3 (unpredictable)
+EA5F0FD0 lsrs pc, r0, #0x3 (unpredictable)
+EA5F0FDF lsrs pc, pc, #0x3 (unpredictable)
+EA5F0FE0 asrs pc, r0, #0x3 (unpredictable)
+EA5F0FEF asrs pc, pc, #0x3 (unpredictable)
+EA5F0FF0 rors pc, r0, #0x3 (unpredictable)
+EA5F0FFF rors pc, pc, #0x3 (unpredictable)
+EA5F1000 lsls r0, r0, #0x4
+EA5F100F lsls r0, pc, #0x4 (unpredictable)
+EA5F1010 lsrs r0, r0, #0x4
+EA5F101F lsrs r0, pc, #0x4 (unpredictable)
+EA5F1020 asrs r0, r0, #0x4
+EA5F102F asrs r0, pc, #0x4 (unpredictable)
+EA5F1030 rors r0, r0, #0x4
+EA5F103F rors r0, pc, #0x4 (unpredictable)
+EA5F1040 lsls r0, r0, #0x5
+EA5F104F lsls r0, pc, #0x5 (unpredictable)
+EA5F1050 lsrs r0, r0, #0x5
+EA5F105F lsrs r0, pc, #0x5 (unpredictable)
+EA5F1060 asrs r0, r0, #0x5
+EA5F106F asrs r0, pc, #0x5 (unpredictable)
+EA5F1070 rors r0, r0, #0x5
+EA5F107F rors r0, pc, #0x5 (unpredictable)
+EA5F1080 lsls r0, r0, #0x6
+EA5F108F lsls r0, pc, #0x6 (unpredictable)
+EA5F1090 lsrs r0, r0, #0x6
+EA5F109F lsrs r0, pc, #0x6 (unpredictable)
+EA5F10A0 asrs r0, r0, #0x6
+EA5F10AF asrs r0, pc, #0x6 (unpredictable)
+EA5F10B0 rors r0, r0, #0x6
+EA5F10BF rors r0, pc, #0x6 (unpredictable)
+EA5F10C0 lsls r0, r0, #0x7
+EA5F10CF lsls r0, pc, #0x7 (unpredictable)
+EA5F10D0 lsrs r0, r0, #0x7
+EA5F10DF lsrs r0, pc, #0x7 (unpredictable)
+EA5F10E0 asrs r0, r0, #0x7
+EA5F10EF asrs r0, pc, #0x7 (unpredictable)
+EA5F10F0 rors r0, r0, #0x7
+EA5F10FF rors r0, pc, #0x7 (unpredictable)
+EA5F1F00 lsls pc, r0, #0x4 (unpredictable)
+EA5F1F0F lsls pc, pc, #0x4 (unpredictable)
+EA5F1F10 lsrs pc, r0, #0x4 (unpredictable)
+EA5F1F1F lsrs pc, pc, #0x4 (unpredictable)
+EA5F1F20 asrs pc, r0, #0x4 (unpredictable)
+EA5F1F2F asrs pc, pc, #0x4 (unpredictable)
+EA5F1F30 rors pc, r0, #0x4 (unpredictable)
+EA5F1F3F rors pc, pc, #0x4 (unpredictable)
+EA5F1F40 lsls pc, r0, #0x5 (unpredictable)
+EA5F1F4F lsls pc, pc, #0x5 (unpredictable)
+EA5F1F50 lsrs pc, r0, #0x5 (unpredictable)
+EA5F1F5F lsrs pc, pc, #0x5 (unpredictable)
+EA5F1F60 asrs pc, r0, #0x5 (unpredictable)
+EA5F1F6F asrs pc, pc, #0x5 (unpredictable)
+EA5F1F70 rors pc, r0, #0x5 (unpredictable)
+EA5F1F7F rors pc, pc, #0x5 (unpredictable)
+EA5F1F80 lsls pc, r0, #0x6 (unpredictable)
+EA5F1F8F lsls pc, pc, #0x6 (unpredictable)
+EA5F1F90 lsrs pc, r0, #0x6 (unpredictable)
+EA5F1F9F lsrs pc, pc, #0x6 (unpredictable)
+EA5F1FA0 asrs pc, r0, #0x6 (unpredictable)
+EA5F1FAF asrs pc, pc, #0x6 (unpredictable)
+EA5F1FB0 rors pc, r0, #0x6 (unpredictable)
+EA5F1FBF rors pc, pc, #0x6 (unpredictable)
+EA5F1FC0 lsls pc, r0, #0x7 (unpredictable)
+EA5F1FCF lsls pc, pc, #0x7 (unpredictable)
+EA5F1FD0 lsrs pc, r0, #0x7 (unpredictable)
+EA5F1FDF lsrs pc, pc, #0x7 (unpredictable)
+EA5F1FE0 asrs pc, r0, #0x7 (unpredictable)
+EA5F1FEF asrs pc, pc, #0x7 (unpredictable)
+EA5F1FF0 rors pc, r0, #0x7 (unpredictable)
+EA5F1FFF rors pc, pc, #0x7 (unpredictable)
+EA5F2000 lsls r0, r0, #0x8
+EA5F200F lsls r0, pc, #0x8 (unpredictable)
+EA5F2010 lsrs r0, r0, #0x8
+EA5F201F lsrs r0, pc, #0x8 (unpredictable)
+EA5F2020 asrs r0, r0, #0x8
+EA5F202F asrs r0, pc, #0x8 (unpredictable)
+EA5F2030 rors r0, r0, #0x8
+EA5F203F rors r0, pc, #0x8 (unpredictable)
+EA5F2040 lsls r0, r0, #0x9
+EA5F204F lsls r0, pc, #0x9 (unpredictable)
+EA5F2050 lsrs r0, r0, #0x9
+EA5F205F lsrs r0, pc, #0x9 (unpredictable)
+EA5F2060 asrs r0, r0, #0x9
+EA5F206F asrs r0, pc, #0x9 (unpredictable)
+EA5F2070 rors r0, r0, #0x9
+EA5F207F rors r0, pc, #0x9 (unpredictable)
+EA5F2080 lsls r0, r0, #0xa
+EA5F208F lsls r0, pc, #0xa (unpredictable)
+EA5F2090 lsrs r0, r0, #0xa
+EA5F209F lsrs r0, pc, #0xa (unpredictable)
+EA5F20A0 asrs r0, r0, #0xa
+EA5F20AF asrs r0, pc, #0xa (unpredictable)
+EA5F20B0 rors r0, r0, #0xa
+EA5F20BF rors r0, pc, #0xa (unpredictable)
+EA5F20C0 lsls r0, r0, #0xb
+EA5F20CF lsls r0, pc, #0xb (unpredictable)
+EA5F20D0 lsrs r0, r0, #0xb
+EA5F20DF lsrs r0, pc, #0xb (unpredictable)
+EA5F20E0 asrs r0, r0, #0xb
+EA5F20EF asrs r0, pc, #0xb (unpredictable)
+EA5F20F0 rors r0, r0, #0xb
+EA5F20FF rors r0, pc, #0xb (unpredictable)
+EA5F2F00 lsls pc, r0, #0x8 (unpredictable)
+EA5F2F0F lsls pc, pc, #0x8 (unpredictable)
+EA5F2F10 lsrs pc, r0, #0x8 (unpredictable)
+EA5F2F1F lsrs pc, pc, #0x8 (unpredictable)
+EA5F2F20 asrs pc, r0, #0x8 (unpredictable)
+EA5F2F2F asrs pc, pc, #0x8 (unpredictable)
+EA5F2F30 rors pc, r0, #0x8 (unpredictable)
+EA5F2F3F rors pc, pc, #0x8 (unpredictable)
+EA5F2F40 lsls pc, r0, #0x9 (unpredictable)
+EA5F2F4F lsls pc, pc, #0x9 (unpredictable)
+EA5F2F50 lsrs pc, r0, #0x9 (unpredictable)
+EA5F2F5F lsrs pc, pc, #0x9 (unpredictable)
+EA5F2F60 asrs pc, r0, #0x9 (unpredictable)
+EA5F2F6F asrs pc, pc, #0x9 (unpredictable)
+EA5F2F70 rors pc, r0, #0x9 (unpredictable)
+EA5F2F7F rors pc, pc, #0x9 (unpredictable)
+EA5F2F80 lsls pc, r0, #0xa (unpredictable)
+EA5F2F8F lsls pc, pc, #0xa (unpredictable)
+EA5F2F90 lsrs pc, r0, #0xa (unpredictable)
+EA5F2F9F lsrs pc, pc, #0xa (unpredictable)
+EA5F2FA0 asrs pc, r0, #0xa (unpredictable)
+EA5F2FAF asrs pc, pc, #0xa (unpredictable)
+EA5F2FB0 rors pc, r0, #0xa (unpredictable)
+EA5F2FBF rors pc, pc, #0xa (unpredictable)
+EA5F2FC0 lsls pc, r0, #0xb (unpredictable)
+EA5F2FCF lsls pc, pc, #0xb (unpredictable)
+EA5F2FD0 lsrs pc, r0, #0xb (unpredictable)
+EA5F2FDF lsrs pc, pc, #0xb (unpredictable)
+EA5F2FE0 asrs pc, r0, #0xb (unpredictable)
+EA5F2FEF asrs pc, pc, #0xb (unpredictable)
+EA5F2FF0 rors pc, r0, #0xb (unpredictable)
+EA5F2FFF rors pc, pc, #0xb (unpredictable)
+EA5F3000 lsls r0, r0, #0xc
+EA5F300F lsls r0, pc, #0xc (unpredictable)
+EA5F3010 lsrs r0, r0, #0xc
+EA5F301F lsrs r0, pc, #0xc (unpredictable)
+EA5F3020 asrs r0, r0, #0xc
+EA5F302F asrs r0, pc, #0xc (unpredictable)
+EA5F3030 rors r0, r0, #0xc
+EA5F303F rors r0, pc, #0xc (unpredictable)
+EA5F3040 lsls r0, r0, #0xd
+EA5F304F lsls r0, pc, #0xd (unpredictable)
+EA5F3050 lsrs r0, r0, #0xd
+EA5F305F lsrs r0, pc, #0xd (unpredictable)
+EA5F3060 asrs r0, r0, #0xd
+EA5F306F asrs r0, pc, #0xd (unpredictable)
+EA5F3070 rors r0, r0, #0xd
+EA5F307F rors r0, pc, #0xd (unpredictable)
+EA5F3080 lsls r0, r0, #0xe
+EA5F308F lsls r0, pc, #0xe (unpredictable)
+EA5F3090 lsrs r0, r0, #0xe
+EA5F309F lsrs r0, pc, #0xe (unpredictable)
+EA5F30A0 asrs r0, r0, #0xe
+EA5F30AF asrs r0, pc, #0xe (unpredictable)
+EA5F30B0 rors r0, r0, #0xe
+EA5F30BF rors r0, pc, #0xe (unpredictable)
+EA5F30C0 lsls r0, r0, #0xf
+EA5F30CF lsls r0, pc, #0xf (unpredictable)
+EA5F30D0 lsrs r0, r0, #0xf
+EA5F30DF lsrs r0, pc, #0xf (unpredictable)
+EA5F30E0 asrs r0, r0, #0xf
+EA5F30EF asrs r0, pc, #0xf (unpredictable)
+EA5F30F0 rors r0, r0, #0xf
+EA5F30FF rors r0, pc, #0xf (unpredictable)
+EA5F3F00 lsls pc, r0, #0xc (unpredictable)
+EA5F3F0F lsls pc, pc, #0xc (unpredictable)
+EA5F3F10 lsrs pc, r0, #0xc (unpredictable)
+EA5F3F1F lsrs pc, pc, #0xc (unpredictable)
+EA5F3F20 asrs pc, r0, #0xc (unpredictable)
+EA5F3F2F asrs pc, pc, #0xc (unpredictable)
+EA5F3F30 rors pc, r0, #0xc (unpredictable)
+EA5F3F3F rors pc, pc, #0xc (unpredictable)
+EA5F3F40 lsls pc, r0, #0xd (unpredictable)
+EA5F3F4F lsls pc, pc, #0xd (unpredictable)
+EA5F3F50 lsrs pc, r0, #0xd (unpredictable)
+EA5F3F5F lsrs pc, pc, #0xd (unpredictable)
+EA5F3F60 asrs pc, r0, #0xd (unpredictable)
+EA5F3F6F asrs pc, pc, #0xd (unpredictable)
+EA5F3F70 rors pc, r0, #0xd (unpredictable)
+EA5F3F7F rors pc, pc, #0xd (unpredictable)
+EA5F3F80 lsls pc, r0, #0xe (unpredictable)
+EA5F3F8F lsls pc, pc, #0xe (unpredictable)
+EA5F3F90 lsrs pc, r0, #0xe (unpredictable)
+EA5F3F9F lsrs pc, pc, #0xe (unpredictable)
+EA5F3FA0 asrs pc, r0, #0xe (unpredictable)
+EA5F3FAF asrs pc, pc, #0xe (unpredictable)
+EA5F3FB0 rors pc, r0, #0xe (unpredictable)
+EA5F3FBF rors pc, pc, #0xe (unpredictable)
+EA5F3FC0 lsls pc, r0, #0xf (unpredictable)
+EA5F3FCF lsls pc, pc, #0xf (unpredictable)
+EA5F3FD0 lsrs pc, r0, #0xf (unpredictable)
+EA5F3FDF lsrs pc, pc, #0xf (unpredictable)
+EA5F3FE0 asrs pc, r0, #0xf (unpredictable)
+EA5F3FEF asrs pc, pc, #0xf (unpredictable)
+EA5F3FF0 rors pc, r0, #0xf (unpredictable)
+EA5F3FFF rors pc, pc, #0xf (unpredictable)
+EA5F4000 lsls r0, r0, #0x10
+EA5F400F lsls r0, pc, #0x10 (unpredictable)
+EA5F4010 lsrs r0, r0, #0x10
+EA5F401F lsrs r0, pc, #0x10 (unpredictable)
+EA5F4020 asrs r0, r0, #0x10
+EA5F402F asrs r0, pc, #0x10 (unpredictable)
+EA5F4030 rors r0, r0, #0x10
+EA5F403F rors r0, pc, #0x10 (unpredictable)
+EA5F4040 lsls r0, r0, #0x11
+EA5F404F lsls r0, pc, #0x11 (unpredictable)
+EA5F4050 lsrs r0, r0, #0x11
+EA5F405F lsrs r0, pc, #0x11 (unpredictable)
+EA5F4060 asrs r0, r0, #0x11
+EA5F406F asrs r0, pc, #0x11 (unpredictable)
+EA5F4070 rors r0, r0, #0x11
+EA5F407F rors r0, pc, #0x11 (unpredictable)
+EA5F4080 lsls r0, r0, #0x12
+EA5F408F lsls r0, pc, #0x12 (unpredictable)
+EA5F4090 lsrs r0, r0, #0x12
+EA5F409F lsrs r0, pc, #0x12 (unpredictable)
+EA5F40A0 asrs r0, r0, #0x12
+EA5F40AF asrs r0, pc, #0x12 (unpredictable)
+EA5F40B0 rors r0, r0, #0x12
+EA5F40BF rors r0, pc, #0x12 (unpredictable)
+EA5F40C0 lsls r0, r0, #0x13
+EA5F40CF lsls r0, pc, #0x13 (unpredictable)
+EA5F40D0 lsrs r0, r0, #0x13
+EA5F40DF lsrs r0, pc, #0x13 (unpredictable)
+EA5F40E0 asrs r0, r0, #0x13
+EA5F40EF asrs r0, pc, #0x13 (unpredictable)
+EA5F40F0 rors r0, r0, #0x13
+EA5F40FF rors r0, pc, #0x13 (unpredictable)
+EA5F4F00 lsls pc, r0, #0x10 (unpredictable)
+EA5F4F0F lsls pc, pc, #0x10 (unpredictable)
+EA5F4F10 lsrs pc, r0, #0x10 (unpredictable)
+EA5F4F1F lsrs pc, pc, #0x10 (unpredictable)
+EA5F4F20 asrs pc, r0, #0x10 (unpredictable)
+EA5F4F2F asrs pc, pc, #0x10 (unpredictable)
+EA5F4F30 rors pc, r0, #0x10 (unpredictable)
+EA5F4F3F rors pc, pc, #0x10 (unpredictable)
+EA5F4F40 lsls pc, r0, #0x11 (unpredictable)
+EA5F4F4F lsls pc, pc, #0x11 (unpredictable)
+EA5F4F50 lsrs pc, r0, #0x11 (unpredictable)
+EA5F4F5F lsrs pc, pc, #0x11 (unpredictable)
+EA5F4F60 asrs pc, r0, #0x11 (unpredictable)
+EA5F4F6F asrs pc, pc, #0x11 (unpredictable)
+EA5F4F70 rors pc, r0, #0x11 (unpredictable)
+EA5F4F7F rors pc, pc, #0x11 (unpredictable)
+EA5F4F80 lsls pc, r0, #0x12 (unpredictable)
+EA5F4F8F lsls pc, pc, #0x12 (unpredictable)
+EA5F4F90 lsrs pc, r0, #0x12 (unpredictable)
+EA5F4F9F lsrs pc, pc, #0x12 (unpredictable)
+EA5F4FA0 asrs pc, r0, #0x12 (unpredictable)
+EA5F4FAF asrs pc, pc, #0x12 (unpredictable)
+EA5F4FB0 rors pc, r0, #0x12 (unpredictable)
+EA5F4FBF rors pc, pc, #0x12 (unpredictable)
+EA5F4FC0 lsls pc, r0, #0x13 (unpredictable)
+EA5F4FCF lsls pc, pc, #0x13 (unpredictable)
+EA5F4FD0 lsrs pc, r0, #0x13 (unpredictable)
+EA5F4FDF lsrs pc, pc, #0x13 (unpredictable)
+EA5F4FE0 asrs pc, r0, #0x13 (unpredictable)
+EA5F4FEF asrs pc, pc, #0x13 (unpredictable)
+EA5F4FF0 rors pc, r0, #0x13 (unpredictable)
+EA5F4FFF rors pc, pc, #0x13 (unpredictable)
+EA5F5000 lsls r0, r0, #0x14
+EA5F500F lsls r0, pc, #0x14 (unpredictable)
+EA5F5010 lsrs r0, r0, #0x14
+EA5F501F lsrs r0, pc, #0x14 (unpredictable)
+EA5F5020 asrs r0, r0, #0x14
+EA5F502F asrs r0, pc, #0x14 (unpredictable)
+EA5F5030 rors r0, r0, #0x14
+EA5F503F rors r0, pc, #0x14 (unpredictable)
+EA5F5040 lsls r0, r0, #0x15
+EA5F504F lsls r0, pc, #0x15 (unpredictable)
+EA5F5050 lsrs r0, r0, #0x15
+EA5F505F lsrs r0, pc, #0x15 (unpredictable)
+EA5F5060 asrs r0, r0, #0x15
+EA5F506F asrs r0, pc, #0x15 (unpredictable)
+EA5F5070 rors r0, r0, #0x15
+EA5F507F rors r0, pc, #0x15 (unpredictable)
+EA5F5080 lsls r0, r0, #0x16
+EA5F508F lsls r0, pc, #0x16 (unpredictable)
+EA5F5090 lsrs r0, r0, #0x16
+EA5F509F lsrs r0, pc, #0x16 (unpredictable)
+EA5F50A0 asrs r0, r0, #0x16
+EA5F50AF asrs r0, pc, #0x16 (unpredictable)
+EA5F50B0 rors r0, r0, #0x16
+EA5F50BF rors r0, pc, #0x16 (unpredictable)
+EA5F50C0 lsls r0, r0, #0x17
+EA5F50CF lsls r0, pc, #0x17 (unpredictable)
+EA5F50D0 lsrs r0, r0, #0x17
+EA5F50DF lsrs r0, pc, #0x17 (unpredictable)
+EA5F50E0 asrs r0, r0, #0x17
+EA5F50EF asrs r0, pc, #0x17 (unpredictable)
+EA5F50F0 rors r0, r0, #0x17
+EA5F50FF rors r0, pc, #0x17 (unpredictable)
+EA5F5F00 lsls pc, r0, #0x14 (unpredictable)
+EA5F5F0F lsls pc, pc, #0x14 (unpredictable)
+EA5F5F10 lsrs pc, r0, #0x14 (unpredictable)
+EA5F5F1F lsrs pc, pc, #0x14 (unpredictable)
+EA5F5F20 asrs pc, r0, #0x14 (unpredictable)
+EA5F5F2F asrs pc, pc, #0x14 (unpredictable)
+EA5F5F30 rors pc, r0, #0x14 (unpredictable)
+EA5F5F3F rors pc, pc, #0x14 (unpredictable)
+EA5F5F40 lsls pc, r0, #0x15 (unpredictable)
+EA5F5F4F lsls pc, pc, #0x15 (unpredictable)
+EA5F5F50 lsrs pc, r0, #0x15 (unpredictable)
+EA5F5F5F lsrs pc, pc, #0x15 (unpredictable)
+EA5F5F60 asrs pc, r0, #0x15 (unpredictable)
+EA5F5F6F asrs pc, pc, #0x15 (unpredictable)
+EA5F5F70 rors pc, r0, #0x15 (unpredictable)
+EA5F5F7F rors pc, pc, #0x15 (unpredictable)
+EA5F5F80 lsls pc, r0, #0x16 (unpredictable)
+EA5F5F8F lsls pc, pc, #0x16 (unpredictable)
+EA5F5F90 lsrs pc, r0, #0x16 (unpredictable)
+EA5F5F9F lsrs pc, pc, #0x16 (unpredictable)
+EA5F5FA0 asrs pc, r0, #0x16 (unpredictable)
+EA5F5FAF asrs pc, pc, #0x16 (unpredictable)
+EA5F5FB0 rors pc, r0, #0x16 (unpredictable)
+EA5F5FBF rors pc, pc, #0x16 (unpredictable)
+EA5F5FC0 lsls pc, r0, #0x17 (unpredictable)
+EA5F5FCF lsls pc, pc, #0x17 (unpredictable)
+EA5F5FD0 lsrs pc, r0, #0x17 (unpredictable)
+EA5F5FDF lsrs pc, pc, #0x17 (unpredictable)
+EA5F5FE0 asrs pc, r0, #0x17 (unpredictable)
+EA5F5FEF asrs pc, pc, #0x17 (unpredictable)
+EA5F5FF0 rors pc, r0, #0x17 (unpredictable)
+EA5F5FFF rors pc, pc, #0x17 (unpredictable)
+EA5F6000 lsls r0, r0, #0x18
+EA5F600F lsls r0, pc, #0x18 (unpredictable)
+EA5F6010 lsrs r0, r0, #0x18
+EA5F601F lsrs r0, pc, #0x18 (unpredictable)
+EA5F6020 asrs r0, r0, #0x18
+EA5F602F asrs r0, pc, #0x18 (unpredictable)
+EA5F6030 rors r0, r0, #0x18
+EA5F603F rors r0, pc, #0x18 (unpredictable)
+EA5F6040 lsls r0, r0, #0x19
+EA5F604F lsls r0, pc, #0x19 (unpredictable)
+EA5F6050 lsrs r0, r0, #0x19
+EA5F605F lsrs r0, pc, #0x19 (unpredictable)
+EA5F6060 asrs r0, r0, #0x19
+EA5F606F asrs r0, pc, #0x19 (unpredictable)
+EA5F6070 rors r0, r0, #0x19
+EA5F607F rors r0, pc, #0x19 (unpredictable)
+EA5F6080 lsls r0, r0, #0x1a
+EA5F608F lsls r0, pc, #0x1a (unpredictable)
+EA5F6090 lsrs r0, r0, #0x1a
+EA5F609F lsrs r0, pc, #0x1a (unpredictable)
+EA5F60A0 asrs r0, r0, #0x1a
+EA5F60AF asrs r0, pc, #0x1a (unpredictable)
+EA5F60B0 rors r0, r0, #0x1a
+EA5F60BF rors r0, pc, #0x1a (unpredictable)
+EA5F60C0 lsls r0, r0, #0x1b
+EA5F60CF lsls r0, pc, #0x1b (unpredictable)
+EA5F60D0 lsrs r0, r0, #0x1b
+EA5F60DF lsrs r0, pc, #0x1b (unpredictable)
+EA5F60E0 asrs r0, r0, #0x1b
+EA5F60EF asrs r0, pc, #0x1b (unpredictable)
+EA5F60F0 rors r0, r0, #0x1b
+EA5F60FF rors r0, pc, #0x1b (unpredictable)
+EA5F6F00 lsls pc, r0, #0x18 (unpredictable)
+EA5F6F0F lsls pc, pc, #0x18 (unpredictable)
+EA5F6F10 lsrs pc, r0, #0x18 (unpredictable)
+EA5F6F1F lsrs pc, pc, #0x18 (unpredictable)
+EA5F6F20 asrs pc, r0, #0x18 (unpredictable)
+EA5F6F2F asrs pc, pc, #0x18 (unpredictable)
+EA5F6F30 rors pc, r0, #0x18 (unpredictable)
+EA5F6F3F rors pc, pc, #0x18 (unpredictable)
+EA5F6F40 lsls pc, r0, #0x19 (unpredictable)
+EA5F6F4F lsls pc, pc, #0x19 (unpredictable)
+EA5F6F50 lsrs pc, r0, #0x19 (unpredictable)
+EA5F6F5F lsrs pc, pc, #0x19 (unpredictable)
+EA5F6F60 asrs pc, r0, #0x19 (unpredictable)
+EA5F6F6F asrs pc, pc, #0x19 (unpredictable)
+EA5F6F70 rors pc, r0, #0x19 (unpredictable)
+EA5F6F7F rors pc, pc, #0x19 (unpredictable)
+EA5F6F80 lsls pc, r0, #0x1a (unpredictable)
+EA5F6F8F lsls pc, pc, #0x1a (unpredictable)
+EA5F6F90 lsrs pc, r0, #0x1a (unpredictable)
+EA5F6F9F lsrs pc, pc, #0x1a (unpredictable)
+EA5F6FA0 asrs pc, r0, #0x1a (unpredictable)
+EA5F6FAF asrs pc, pc, #0x1a (unpredictable)
+EA5F6FB0 rors pc, r0, #0x1a (unpredictable)
+EA5F6FBF rors pc, pc, #0x1a (unpredictable)
+EA5F6FC0 lsls pc, r0, #0x1b (unpredictable)
+EA5F6FCF lsls pc, pc, #0x1b (unpredictable)
+EA5F6FD0 lsrs pc, r0, #0x1b (unpredictable)
+EA5F6FDF lsrs pc, pc, #0x1b (unpredictable)
+EA5F6FE0 asrs pc, r0, #0x1b (unpredictable)
+EA5F6FEF asrs pc, pc, #0x1b (unpredictable)
+EA5F6FF0 rors pc, r0, #0x1b (unpredictable)
+EA5F6FFF rors pc, pc, #0x1b (unpredictable)
+EA5F7000 lsls r0, r0, #0x1c
+EA5F700F lsls r0, pc, #0x1c (unpredictable)
+EA5F7010 lsrs r0, r0, #0x1c
+EA5F701F lsrs r0, pc, #0x1c (unpredictable)
+EA5F7020 asrs r0, r0, #0x1c
+EA5F702F asrs r0, pc, #0x1c (unpredictable)
+EA5F7030 rors r0, r0, #0x1c
+EA5F703F rors r0, pc, #0x1c (unpredictable)
+EA5F7040 lsls r0, r0, #0x1d
+EA5F704F lsls r0, pc, #0x1d (unpredictable)
+EA5F7050 lsrs r0, r0, #0x1d
+EA5F705F lsrs r0, pc, #0x1d (unpredictable)
+EA5F7060 asrs r0, r0, #0x1d
+EA5F706F asrs r0, pc, #0x1d (unpredictable)
+EA5F7070 rors r0, r0, #0x1d
+EA5F707F rors r0, pc, #0x1d (unpredictable)
+EA5F7080 lsls r0, r0, #0x1e
+EA5F708F lsls r0, pc, #0x1e (unpredictable)
+EA5F7090 lsrs r0, r0, #0x1e
+EA5F709F lsrs r0, pc, #0x1e (unpredictable)
+EA5F70A0 asrs r0, r0, #0x1e
+EA5F70AF asrs r0, pc, #0x1e (unpredictable)
+EA5F70B0 rors r0, r0, #0x1e
+EA5F70BF rors r0, pc, #0x1e (unpredictable)
+EA5F70C0 lsls r0, r0, #0x1f
+EA5F70CF lsls r0, pc, #0x1f (unpredictable)
+EA5F70D0 lsrs r0, r0, #0x1f
+EA5F70DF lsrs r0, pc, #0x1f (unpredictable)
+EA5F70E0 asrs r0, r0, #0x1f
+EA5F70EF asrs r0, pc, #0x1f (unpredictable)
+EA5F70F0 rors r0, r0, #0x1f
+EA5F70FF rors r0, pc, #0x1f (unpredictable)
+EA5F7F00 lsls pc, r0, #0x1c (unpredictable)
+EA5F7F0F lsls pc, pc, #0x1c (unpredictable)
+EA5F7F10 lsrs pc, r0, #0x1c (unpredictable)
+EA5F7F1F lsrs pc, pc, #0x1c (unpredictable)
+EA5F7F20 asrs pc, r0, #0x1c (unpredictable)
+EA5F7F2F asrs pc, pc, #0x1c (unpredictable)
+EA5F7F30 rors pc, r0, #0x1c (unpredictable)
+EA5F7F3F rors pc, pc, #0x1c (unpredictable)
+EA5F7F40 lsls pc, r0, #0x1d (unpredictable)
+EA5F7F4F lsls pc, pc, #0x1d (unpredictable)
+EA5F7F50 lsrs pc, r0, #0x1d (unpredictable)
+EA5F7F5F lsrs pc, pc, #0x1d (unpredictable)
+EA5F7F60 asrs pc, r0, #0x1d (unpredictable)
+EA5F7F6F asrs pc, pc, #0x1d (unpredictable)
+EA5F7F70 rors pc, r0, #0x1d (unpredictable)
+EA5F7F7F rors pc, pc, #0x1d (unpredictable)
+EA5F7F80 lsls pc, r0, #0x1e (unpredictable)
+EA5F7F8F lsls pc, pc, #0x1e (unpredictable)
+EA5F7F90 lsrs pc, r0, #0x1e (unpredictable)
+EA5F7F9F lsrs pc, pc, #0x1e (unpredictable)
+EA5F7FA0 asrs pc, r0, #0x1e (unpredictable)
+EA5F7FAF asrs pc, pc, #0x1e (unpredictable)
+EA5F7FB0 rors pc, r0, #0x1e (unpredictable)
+EA5F7FBF rors pc, pc, #0x1e (unpredictable)
+EA5F7FC0 lsls pc, r0, #0x1f (unpredictable)
+EA5F7FCF lsls pc, pc, #0x1f (unpredictable)
+EA5F7FD0 lsrs pc, r0, #0x1f (unpredictable)
+EA5F7FDF lsrs pc, pc, #0x1f (unpredictable)
+EA5F7FE0 asrs pc, r0, #0x1f (unpredictable)
+EA5F7FEF asrs pc, pc, #0x1f (unpredictable)
+EA5F7FF0 rors pc, r0, #0x1f (unpredictable)
+EA5F7FFF rors pc, pc, #0x1f (unpredictable)
+EA5F7A6E [ne] asrsne r10, lr, #0x1d
+EA5F0042 [ne] lslsne r0, r2, #0x1
+EA5F9F10 [ne] lsrsne pc, r0, #0x4 (unpredictable)
+EA5F2ABF [ne] rorsne r10, pc, #0xa (unpredictable)
+EA5F0000 [ne] movsne r0, r0
+
+// MOVS_r_T3_RRX 1110101|op1=0010|S=1|Rn=1111|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// RrxsMovsRT3Rrx: RRXS{<c>}{<q>}  {<Rd>, }<Rm>
+// MovsRT3Rrx: MOVS{<c>}{<q>}  <Rd>, <Rm>, RRX
+// register fields: Rd, Rm
+// IT state read: condition
+ea5f0039 rrxs r0, r9
+ea5f053d rrxs r5, sp
+ea5f0c3e rrxs r12, lr
+ea5f8e3b rrxs lr, r11 (unpredictable)
+ea5f8a32 rrxs r10, r2 (unpredictable)
+ea5f8531 rrxs r5, r1 (unpredictable)
+ea5f083c rrxs r8, r12
+ea5f8735 rrxs r7, r5 (unpredictable)
+EA5F0F30 rrxs pc, r0 (unpredictable)
+EA5F003F rrxs r0, pc (unpredictable)
+EA5F0030 rrxs r0, r0
+EA5F0039 [ne] rrxsne r0, r9

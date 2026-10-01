@@ -1,0 +1,93 @@
+// ADD_i_A1 cond=xxxx|0010|opc=100|S=0|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// AddIA1: ADD{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+e2896f17 add r6, r9, #92
+d28563aa addle r6, r5, #2818572290
+228ec2af addhs r12, lr, #4026531850
+c2853f10 addgt r3, r5, #64
+8289dca2 addhi sp, r9, #41472
+c286890e addgt r8, r6, #229376
+a2883b69 addge r3, r8, #107520
+4283072b addmi r0, r3, #11272192
+// Binary Ninja's tests
+e2822006 add r2, r2, #6
+e2854a0f add r4, r5, #61440
+e2855a0f add r5, r5, #61440
+0280F000 addeq pc, r0, #0x0
+F28F6F17 UNDEFINED
+12896FFF addne r6, r9, #0x3fc
+E2896800 add r6, r9, #0x0
+E2896400 add r6, r9, #0x0
+E2896200 add r6, r9, #0x0
+E2896100 add r6, r9, #0x0
+E2896080 add r6, r9, #0x80
+E2896040 add r6, r9, #0x40
+E2896020 add r6, r9, #0x20
+E2896010 add r6, r9, #0x10
+E2896008 add r6, r9, #0x8
+E2896004 add r6, r9, #0x4
+E2896002 add r6, r9, #0x2
+E2896001 add r6, r9, #0x1
+E2896081 add r6, r9, #0x81
+E2896181 add r6, r9, #0x40000020
+E2896281 add r6, r9, #0x10000008
+E2896381 add r6, r9, #0x4000002
+E2896481 add r6, r9, #0x81000000
+E2896581 add r6, r9, #0x20400000
+E2896681 add r6, r9, #0x8100000
+E2896781 add r6, r9, #0x2040000
+E2896881 add r6, r9, #0x810000
+E2896981 add r6, r9, #0x204000
+E2896A81 add r6, r9, #0x81000
+E2896B81 add r6, r9, #0x20400
+E2896C81 add r6, r9, #0x8100
+E2896D81 add r6, r9, #0x2040
+E2896E81 add r6, r9, #0x810
+E2896F81 add r6, r9, #0x204
+
+// ADDS_i_A1 cond=xxxx|0010|opc=100|S=1|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// AddsIA1: ADDS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+0296f327 addseq pc, r6, #2617245696
+329e343d addslo r3, lr, #1023410176
+829ea3f1 addshi r10, lr, #3288334339
+d297390e addsle r3, r7, #229376
+a29e2e0c addsge r2, lr, #192
+6297c6aa addsvs r12, r7, #178257920
+42917e66 addsmi r7, r1, #1632
+22962318 addshs r2, r6, #1610612736
+// Binary Ninja's tests
+02922006 addseq r2, r2, #6
+F296F327 UNDEFINED
+12900000 addsne r0, r0, #0x0
+029FFFFF addseq pc, pc, #0x3fc
+0296F800 addseq pc, r6, #0x0
+0296F400 addseq pc, r6, #0x0
+0296F200 addseq pc, r6, #0x0
+0296F100 addseq pc, r6, #0x0
+0296F080 addseq pc, r6, #0x80
+0296F040 addseq pc, r6, #0x40
+0296F020 addseq pc, r6, #0x20
+0296F010 addseq pc, r6, #0x10
+0296F008 addseq pc, r6, #0x8
+0296F004 addseq pc, r6, #0x4
+0296F002 addseq pc, r6, #0x2
+0296F001 addseq pc, r6, #0x1
+0296F081 addseq pc, r6, #0x81
+0296F181 addseq pc, r6, #0x40000020
+0296F281 addseq pc, r6, #0x10000008
+0296F381 addseq pc, r6, #0x4000002
+0296F481 addseq pc, r6, #0x81000000
+0296F581 addseq pc, r6, #0x20400000
+0296F681 addseq pc, r6, #0x8100000
+0296F781 addseq pc, r6, #0x2040000
+0296F881 addseq pc, r6, #0x810000
+0296F981 addseq pc, r6, #0x204000
+0296FA81 addseq pc, r6, #0x81000
+0296FB81 addseq pc, r6, #0x20400
+0296FC81 addseq pc, r6, #0x8100
+0296FD81 addseq pc, r6, #0x2040
+0296FE81 addseq pc, r6, #0x810
+0296FF81 addseq pc, r6, #0x204

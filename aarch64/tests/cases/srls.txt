@@ -1,0 +1,4 @@
+// SRLS_HI_hints 110|101|01000000110010|CRm=0110|op2=11x|11111
+// SrlsHiHints: SRLS  {<STSHSTRM>}
+D50326DF srls
+D50326FF srls stshstrm

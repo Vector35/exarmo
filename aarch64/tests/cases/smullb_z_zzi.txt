@@ -1,0 +1,31 @@
+// smullb_z_zzi_d 010|0010|0|size=11|1|i2h=x|Zm=xxxx|110|U=0|i2l=x|T=0|Zn=xxxxx|Zd=xxxxx
+// SmullbZZziD: SMULLB  <Zd>.D, <Zn>.S, <Zm>.S[<imm>]
+// read together by <imm>: i2h, i2l
+// register fields: Zm, Zn, Zd
+44E3C145 smullb z5.d, z10.s, z3.s[0]
+44E8C0F9 smullb z25.d, z7.s, z8.s[0]
+44E4CAE8 smullb z8.d, z23.s, z4.s[1]
+44F8C03D smullb z29.d, z1.s, z8.s[2]
+44E8CA78 smullb z24.d, z19.s, z8.s[1]
+44FACACC smullb z12.d, z22.s, z10.s[3]
+44E9CAF6 smullb z22.d, z23.s, z9.s[1]
+44FAC3DD smullb z29.d, z30.s, z10.s[2]
+44E0C000 smullb z0.d, z0.s, z0.s[0]
+44EFC3FF smullb z31.d, z31.s, z15.s[0]
+
+// smullb_z_zzi_s 010|0010|0|size=10|1|i3h=xx|Zm=xxx|110|U=0|i3l=x|T=0|Zn=xxxxx|Zd=xxxxx
+// SmullbZZziS: SMULLB  <Zd>.S, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zd
+44BDCBE6 smullb z6.s, z31.h, z5.h[7]
+44A7C913 smullb z19.s, z8.h, z7.h[1]
+44AEC887 smullb z7.s, z4.h, z6.h[3]
+44A1C1FA smullb z26.s, z15.h, z1.h[0]
+44A9C918 smullb z24.s, z8.h, z1.h[3]
+44AAC2D6 smullb z22.s, z22.h, z2.h[2]
+44AAC886 smullb z6.s, z4.h, z2.h[3]
+44B4C9EF smullb z15.s, z15.h, z4.h[5]
+44B8C800 smullb z0.s, z0.h, z0.h[7]
+44BBCBFF smullb z31.s, z31.h, z3.h[7]
+44B5C3E6 smullb z6.s, z31.h, z5.h[4]
+44BDC3E6 smullb z6.s, z31.h, z5.h[6]

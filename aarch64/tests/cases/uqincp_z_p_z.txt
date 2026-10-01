@@ -1,0 +1,22 @@
+// uqincp_z_p_z_ 001|0010|1|size=xx|101|0|D=0|U=1|1000|0|opc=00|Pm=xxxx|Zdn=xxxxx
+// UqincpZPZ: UQINCP  <Zdn>.<T>, <Pm>.<T>
+// register fields: Pm, Zdn
+25E981CA uqincp z10.d, p14.d
+25698049 uqincp z9.h, p2.h
+25698105 uqincp z5.h, p8.h
+25A98122 uqincp z2.s, p9.s
+25E9800F uqincp z15.d, p0.d
+25A98127 uqincp z7.s, p9.s
+25A980D7 uqincp z23.s, p6.s
+25A98166 uqincp z6.s, p11.s
+25E981FD uqincp z29.d, p15.d
+25E98191 uqincp z17.d, p12.d
+25698095 uqincp z21.h, p4.h
+25E9805D uqincp z29.d, p2.d
+2569810A uqincp z10.h, p8.h
+25698140 uqincp z0.h, p10.h
+25698081 uqincp z1.h, p4.h
+25E98115 uqincp z21.d, p8.d
+25E981DF uqincp z31.d, p14.d
+252981CA UNDEFINED
+25E981CE uqincp z14.d, p14.d

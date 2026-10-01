@@ -1,0 +1,60 @@
+// MLS_asimdelem_R 0|Q=x|U=1|0|111|1|size=xx|L=x|M=x|Rm=xxxx|0|o2=1|00|H=x|0|Rn=xxxxx|Rd=xxxxx
+// MlsAsimdelemR: MLS  <Vd>.<T>, <Vn>.<T>, <m>.<Ts>[<index>]
+// read together by <T>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+6F5640DF mls v31.8h, v6.8h, v6.h[1]
+6F424957 mls v23.8h, v10.8h, v2.h[4]
+6F5B4319 mls v25.8h, v24.8h, v11.h[1]
+2FAF4BC8 mls v8.2s, v30.2s, v15.s[3]
+6F924A85 mls v5.4s, v20.4s, v18.s[2]
+6F9C4121 mls v1.4s, v9.4s, v28.s[0]
+6F744269 mls v9.8h, v19.8h, v4.h[3]
+6FB143C9 mls v9.4s, v30.4s, v17.s[1]
+6F744BCF mls v15.8h, v30.8h, v4.h[7]
+2F944BF5 mls v21.2s, v31.2s, v20.s[2]
+6F714BDD mls v29.8h, v30.8h, v1.h[7]
+2F6A4193 mls v19.4h, v12.4h, v10.h[2]
+6F6E4A4A mls v10.8h, v18.8h, v14.h[6]
+2F7E48D0 mls v16.4h, v6.4h, v14.h[7]
+2F4F4340 mls v0.4h, v26.4h, v15.h[0]
+6F644945 mls v5.8h, v10.8h, v4.h[6]
+6F50401F mls v31.8h, v0.8h, v0.h[1]
+6F1640DF UNDEFINED
+6FD640DF UNDEFINED
+6F0640DF UNDEFINED
+6F0648DF UNDEFINED
+6F1648DF UNDEFINED
+6F2640DF UNDEFINED
+6F2648DF UNDEFINED
+6F3640DF UNDEFINED
+6F3648DF UNDEFINED
+6F5648C6 mls v6.8h, v6.8h, v6.h[5]
+6F8640DF mls v31.4s, v6.4s, v6.s[0]
+6F8648DF mls v31.4s, v6.4s, v6.s[2]
+6FA640DF mls v31.4s, v6.4s, v6.s[1]
+6FB648DF mls v31.4s, v6.4s, v22.s[3]
+6FC640DF UNDEFINED
+6FC648DF UNDEFINED
+6FD648DF UNDEFINED
+6FE640DF UNDEFINED
+6FE648DF UNDEFINED
+6FF640DF UNDEFINED
+6FF648DF UNDEFINED
+6F0040DF UNDEFINED
+6F0F40DF UNDEFINED
+6F1040DF UNDEFINED
+6F1F40DF UNDEFINED
+6F4040DF mls v31.8h, v6.8h, v0.h[0]
+6F5F40DF mls v31.8h, v6.8h, v15.h[1]
+6F8040DF mls v31.4s, v6.4s, v0.s[0]
+6F9040DF mls v31.4s, v6.4s, v16.s[0]
+6F9F40DF mls v31.4s, v6.4s, v31.s[0]
+6FC040DF UNDEFINED
+6FCF40DF UNDEFINED
+6FD040DF UNDEFINED
+6FDF40DF UNDEFINED
+2F1640DF UNDEFINED
+2FD640DF UNDEFINED
+6F5840DF mls v31.8h, v6.8h, v8.h[1]

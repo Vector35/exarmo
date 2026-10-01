@@ -1,0 +1,38 @@
+// MUL_T1 010000|op=1101|Rn=xxx|Rdm=xxx
+// MulT1: MUL<c>{<q>}  <Rdm>, <Rn>{, <Rdm>}
+// T1bMulT1: MULS{<q>}  <Rdm>, <Rn>{, <Rdm>}
+// register fields: Rn, Rdm
+// IT state read: condition, in block
+4340 muls r0, r0, r0
+4341 muls r1, r0, r1
+4342 muls r2, r0, r2
+4343 muls r3, r0, r3
+4344 muls r4, r0, r4
+4345 muls r5, r0, r5
+4346 muls r6, r0, r6
+4347 muls r7, r0, r7
+4348 muls r0, r1, r0
+4350 muls r0, r2, r0
+4358 muls r0, r3, r0
+4360 muls r0, r4, r0
+4368 muls r0, r5, r0
+4370 muls r0, r6, r0
+4378 muls r0, r7, r0
+4340 [ne] mulne r0, r0, r0
+
+// MUL_T2 111|110110|op1=000|Rn=xxxx|Ra=1111|Rd=xxxx|00|op2=00|Rm=xxxx
+// MulT2: MUL{<c>}{<q>}  <Rd>, <Rn>{, <Rm>}
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb01f803 mul r8, r1, r3
+fb0ff70a mul r7, pc, r10 (unpredictable)
+fb09f203 mul r2, r9, r3
+fb04f103 mul r1, r4, r3
+fb08f800 mul r8, r8, r0
+fb00f00e mul r0, r0, lr
+fb01f309 mul r3, r1, r9
+fb00f102 mul r1, r0, r2
+FB01FF0F mul pc, r1, pc (unpredictable)
+FB01F801 mul r8, r1, r1
+FB01F808 mul r8, r1, r8
+FB01F803 [ne] mulne r8, r1, r3

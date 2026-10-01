@@ -1,0 +1,52 @@
+// VABA_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0111|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VabaT1D: VABA{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef6f5711 vaba.s32 d21, d15, d1
+ef1fb73d vaba.s16 d11, d15, d29
+ef068794 vaba.s8 d8, d22, d4
+ef24c79c vaba.s32 d12, d20, d12
+ff1187b3 vaba.u16 d8, d17, d19
+ef4e879f vaba.s8 d24, d30, d15
+ef42d798 vaba.s8 d29, d18, d8
+ef52573b vaba.s16 d21, d2, d27
+EF7F5711 UNDEFINED
+FF400710 vaba.u8 d16, d0, d0
+FF68F712 vaba.u32 d31, d8, d2
+EF604710 vaba.s32 d20, d0, d0
+EF6027B0 vaba.s32 d18, d16, d16
+EF6F17BF vaba.s32 d17, d31, d31
+FF7F5711 UNDEFINED
+EF2F0711 vaba.s32 d0, d15, d1
+EF2FF711 vaba.s32 d15, d15, d1
+EF6F0711 vaba.s32 d16, d15, d1
+EF6FF711 vaba.s32 d31, d15, d1
+EF6F5711 [ne] vabane.s32 d21, d15, d1
+
+// VABA_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0111|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VabaT1Q: VABA{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff1027f2 vaba.u16 q1, q8, q9
+ef6e67d4 vaba.s32 q11, q15, q2
+ff46e7dc vaba.u8 q15, q11, q6
+ef5407f2 vaba.s16 q8, q10, q9
+ef1e87d6 vaba.s16 q4, q15, q3
+ff68275e vaba.u32 q9, q4, q7
+ff24a756 vaba.u32 q5, q2, q3
+ef566772 vaba.s16 q11, q3, q9
+FF3FF7FF UNDEFINED
+EF0247F0 vaba.s8 q2, q9, q8
+EF3117F1 UNDEFINED
+FF100778 vaba.u16 q0, q0, q12
+FF3FF75F UNDEFINED
+FF5FF7FF UNDEFINED
+FF1027D0 vaba.u16 q1, q8, q0
+FF1027F0 vaba.u16 q1, q8, q8
+FF1027F2 [ne] vabane.u16 q1, q8, q9

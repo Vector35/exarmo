@@ -1,0 +1,32 @@
+// LDRB_r_T1 0101|L=1|B=1|H=0|Rm=xxx|Rn=xxx|Rt=xxx
+// LdrbRT1: LDRB{<c>}{<q>}  <Rt>, [<Rn>, {<+>}<Rm>]
+// register fields: Rm, Rn, Rt
+// IT state read: condition
+5c00 ldrb r0, [r0, r0]
+5c01 ldrb r1, [r0, r0]
+5c02 ldrb r2, [r0, r0]
+5c03 ldrb r3, [r0, r0]
+5c04 ldrb r4, [r0, r0]
+5c05 ldrb r5, [r0, r0]
+5c06 ldrb r6, [r0, r0]
+5c07 ldrb r7, [r0, r0]
+5C48 ldrb r0, [r1, r1]
+5C90 ldrb r0, [r2, r2]
+5CD8 ldrb r0, [r3, r3]
+5D20 ldrb r0, [r4, r4]
+5D68 ldrb r0, [r5, r5]
+5DB0 ldrb r0, [r6, r6]
+5DF8 ldrb r0, [r7, r7]
+5C00 [ne] ldrbne r0, [r0, r0]
+5C53 ldrb r3, [r2, r1]
+
+// LDRB_r_T2 111|1100|00|size=00|L=1|Rn=xxxx|Rt=xxxx|000000|imm2=xx|Rm=xxxx
+// LdrbRT2: LDRB{<c>}{<q>}  <Rt>, [<Rn>, {<+>}<Rm>{, LSL #<imm>}]
+// register fields: Rn, Rt, Rm
+// IT state read: condition
+F8100000 ldrb r0, [r0, r0]
+F810001F ldrb r0, [r0, pc, lsl #0x1] (unpredictable)
+F8100020 ldrb r0, [r0, r0, lsl #0x2]
+F8100030 ldrb r0, [r0, r0, lsl #0x3]
+F8100000 [ne] ldrbne r0, [r0, r0]
+F8112003 ldrb r2, [r1, r3]

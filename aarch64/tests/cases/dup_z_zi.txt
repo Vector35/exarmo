@@ -1,0 +1,54 @@
+// dup_z_zi_ 000|0010|1|imm2=xx|1|tsz=xxxxx|001000|Zn=xxxxx|Zd=xxxxx
+// DupZZi: DUP  <Zd>.<T>, <Zn>.<T>[<imm>]
+// MovZVDupZZi: MOV  <Zd>.<T>, <V><n>
+// MovZZiDupZZi: MOV  <Zd>.<T>, <Zn>.<T>[<imm>]
+// read together by <imm> and the MOV alias: imm2, tsz
+// read together by <n>: tsz, Zn
+// register fields: Zn, Zd
+// form chosen on: imm2, tsz
+05242317 mov z23.s, s24
+0521213C mov z28.b, b9
+052420B9 mov z25.s, s5
+052422C7 mov z7.s, s22
+052121BD mov z29.b, b13
+05282141 mov z1.d, d10
+0521212C mov z12.b, b9
+05242371 mov z17.s, s27
+05282060 mov z0.d, d3
+0528232F mov z15.d, d25
+052821A6 mov z6.d, d13
+0524233E mov z30.s, s25
+052422A2 mov z2.s, s21
+053021A5 mov z5.q, q13
+052221E1 mov z1.h, h15
+05282382 mov z2.d, d28
+05342076 mov z22.s, z3.s[2]
+05232164 mov z4.b, z11.b[1]
+05622052 mov z18.h, z2.h[8]
+05F522B7 mov z23.b, z21.b[58]
+05F2208B mov z11.h, z4.h[28]
+057F230A mov z10.b, z24.b[31]
+0566233C mov z28.h, z25.h[9]
+05BD206D mov z13.b, z3.b[46]
+05E52329 mov z9.b, z25.b[50]
+05BB22A0 mov z0.b, z21.b[45]
+052B2058 mov z24.b, z2.b[5]
+05FD20D9 mov z25.b, z6.b[62]
+056A229B mov z27.h, z20.h[10]
+056C2203 mov z3.s, z16.s[5]
+05A721C1 mov z1.b, z14.b[35]
+05F422B8 mov z24.s, z21.s[14]
+0524201F mov z31.s, s0
+052423F7 mov z23.s, s31
+05202317 UNDEFINED
+05202017 UNDEFINED
+052023F7 UNDEFINED
+053F2017 mov z23.b, z0.b[15]
+053F23F7 mov z23.b, z31.b[15]
+053F2318 mov z24.b, z24.b[15]
+05602317 UNDEFINED
+05A02317 UNDEFINED
+05BF2317 mov z23.b, z24.b[47]
+05E02317 UNDEFINED
+05FF2317 mov z23.b, z24.b[63]
+0561212C mov z12.b, z9.b[16]

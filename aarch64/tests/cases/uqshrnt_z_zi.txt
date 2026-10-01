@@ -1,0 +1,68 @@
+// uqshrnt_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=1|U=1|R=0|T=1|Zn=xxxxx|Zd=xxxxx
+// UqshrntZZi: UQSHRNT  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+456437D3 uqshrnt z19.s, z30.d, #0x1c
+457D376A uqshrnt z10.s, z27.d, #0x3
+45313464 uqshrnt z4.h, z3.s, #0xf
+452A3476 uqshrnt z22.b, z3.h, #0x6
+457634A6 uqshrnt z6.s, z5.d, #0xa
+453A36F5 uqshrnt z21.h, z23.s, #0x6
+4572375F uqshrnt z31.s, z26.d, #0xe
+457137F8 uqshrnt z24.s, z31.d, #0xf
+45603400 uqshrnt z0.s, z0.d, #0x20
+456337D3 uqshrnt z19.s, z30.d, #0x1d
+456737D3 uqshrnt z19.s, z30.d, #0x19
+452037D3 UNDEFINED
+452137D3 UNDEFINED
+452237D3 UNDEFINED
+452337D3 UNDEFINED
+452437D3 UNDEFINED
+452537D3 UNDEFINED
+452637D3 UNDEFINED
+452737D3 UNDEFINED
+452837D3 uqshrnt z19.b, z30.h, #0x8
+452937D3 uqshrnt z19.b, z30.h, #0x7
+452B37D3 uqshrnt z19.b, z30.h, #0x5
+452C37D3 uqshrnt z19.b, z30.h, #0x4
+452D37D3 uqshrnt z19.b, z30.h, #0x3
+452E37D3 uqshrnt z19.b, z30.h, #0x2
+452F37D3 uqshrnt z19.b, z30.h, #0x1
+453037D3 uqshrnt z19.h, z30.s, #0x10
+453237D3 uqshrnt z19.h, z30.s, #0xe
+453337D3 uqshrnt z19.h, z30.s, #0xd
+453437D3 uqshrnt z19.h, z30.s, #0xc
+453537D3 uqshrnt z19.h, z30.s, #0xb
+453637D3 uqshrnt z19.h, z30.s, #0xa
+453737D3 uqshrnt z19.h, z30.s, #0x9
+453837D3 uqshrnt z19.h, z30.s, #0x8
+453937D3 uqshrnt z19.h, z30.s, #0x7
+453B37D3 uqshrnt z19.h, z30.s, #0x5
+453C37D3 uqshrnt z19.h, z30.s, #0x4
+453D37D3 uqshrnt z19.h, z30.s, #0x3
+453E37D3 uqshrnt z19.h, z30.s, #0x2
+453F37D3 uqshrnt z19.h, z30.s, #0x1
+456137D3 uqshrnt z19.s, z30.d, #0x1f
+456237D3 uqshrnt z19.s, z30.d, #0x1e
+456537D3 uqshrnt z19.s, z30.d, #0x1b
+456637D3 uqshrnt z19.s, z30.d, #0x1a
+456837D3 uqshrnt z19.s, z30.d, #0x18
+456937D3 uqshrnt z19.s, z30.d, #0x17
+456A37D3 uqshrnt z19.s, z30.d, #0x16
+456B37D3 uqshrnt z19.s, z30.d, #0x15
+456C37D3 uqshrnt z19.s, z30.d, #0x14
+456D37D3 uqshrnt z19.s, z30.d, #0x13
+456E37D3 uqshrnt z19.s, z30.d, #0x12
+456F37D3 uqshrnt z19.s, z30.d, #0x11
+457037D3 uqshrnt z19.s, z30.d, #0x10
+457337D3 uqshrnt z19.s, z30.d, #0xd
+457437D3 uqshrnt z19.s, z30.d, #0xc
+457537D3 uqshrnt z19.s, z30.d, #0xb
+457737D3 uqshrnt z19.s, z30.d, #0x9
+457837D3 uqshrnt z19.s, z30.d, #0x8
+457937D3 uqshrnt z19.s, z30.d, #0x7
+457A37D3 uqshrnt z19.s, z30.d, #0x6
+457B37D3 uqshrnt z19.s, z30.d, #0x5
+457C37D3 uqshrnt z19.s, z30.d, #0x4
+457E37D3 uqshrnt z19.s, z30.d, #0x2
+457F37D3 uqshrnt z19.s, z30.d, #0x1

@@ -1,0 +1,29 @@
+// sub_z_zi_ 001|0010|1|size=xx|1|00|opc=001|11|sh=x|imm8=xxxxxxxx|Zdn=xxxxx
+// SubZZi: SUB  <Zdn>.<T>, <Zdn>.<T>, #<imm>{, <shift>}
+// register fields: Zdn
+25E1F685 sub z5.d, z5.d, #0xb4, lsl #0x8
+25E1F556 sub z22.d, z22.d, #0xaa, lsl #0x8
+2561E4B8 sub z24.h, z24.h, #0x25, lsl #0x8
+25A1CCE0 sub z0.s, z0.s, #0x67
+2521CBB2 sub z18.b, z18.b, #0x5d
+25E1E678 sub z24.d, z24.d, #0x33, lsl #0x8
+25A1F90C sub z12.s, z12.s, #0xc8, lsl #0x8
+25A1C779 sub z25.s, z25.s, #0x3b
+25A1C6A7 sub z7.s, z7.s, #0x35
+2521D8B8 sub z24.b, z24.b, #0xc5
+2561E6FD sub z29.h, z29.h, #0x37, lsl #0x8
+2521D129 sub z9.b, z9.b, #0x89
+25A1D4F3 sub z19.s, z19.s, #0xa7
+2561E9FE sub z30.h, z30.h, #0x4f, lsl #0x8
+25E1E705 sub z5.d, z5.d, #0x38, lsl #0x8
+25E1D7B7 sub z23.d, z23.d, #0xbd
+25E1E01F sub z31.d, z31.d, #0x0, lsl #0x8
+25E1FFE5 sub z5.d, z5.d, #0xff, lsl #0x8
+25E1F005 sub z5.d, z5.d, #0x80, lsl #0x8
+25E1E805 sub z5.d, z5.d, #0x40, lsl #0x8
+25E1E405 sub z5.d, z5.d, #0x20, lsl #0x8
+25E1E205 sub z5.d, z5.d, #0x10, lsl #0x8
+25E1E105 sub z5.d, z5.d, #0x8, lsl #0x8
+25E1E085 sub z5.d, z5.d, #0x4, lsl #0x8
+25E1E045 sub z5.d, z5.d, #0x2, lsl #0x8
+25E1E025 sub z5.d, z5.d, #0x1, lsl #0x8

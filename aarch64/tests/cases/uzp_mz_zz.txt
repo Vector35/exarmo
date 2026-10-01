@@ -1,0 +1,18 @@
+// uzp_mz_zz_2 1|10|0000|1|size=xx|1|Zm=xxxxx|110|100|Zn=xxxxx|Zd=xxxx|op=1
+// UzpMzZz2: UZP  { <Zd1>.<T>-<Zd2>.<T> }, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+C120D003 uzp {z2.b-z3.b}, z0.b, z0.b
+C120D011 uzp {z16.b-z17.b}, z0.b, z0.b
+C120D01F uzp {z30.b-z31.b}, z0.b, z0.b
+C17FD3E1 uzp {z0.h-z1.h}, z31.h, z31.h
+C1A0D003 uzp {z2.s-z3.s}, z0.s, z0.s
+C1E0D003 uzp {z2.d-z3.d}, z0.d, z0.d
+C120D001 uzp {z0.b-z1.b}, z0.b, z0.b
+C121D047 uzp {z6.b-z7.b}, z2.b, z1.b
+
+// uzp_mz_zz_2q 1|10|0000|1|00|1|Zm=xxxxx|110|101|Zn=xxxxx|Zd=xxxx|op=1
+// UzpMzZz2q: UZP  { <Zd1>.Q-<Zd2>.Q }, <Zn>.Q, <Zm>.Q
+// register fields: Zm, Zn, Zd
+C120D401 uzp {z0.q-z1.q}, z0.q, z0.q
+C13FD7FF uzp {z30.q-z31.q}, z31.q, z31.q
+C121D447 uzp {z6.q-z7.q}, z2.q, z1.q

@@ -1,0 +1,6 @@
+// LDA64B_64L_memop size=11|11|1|VR=0|0|0|A=1|R=0|1|Rs=11111|o3=1|opc=101|00|Rn=xxxxx|Rt=xxxxx
+// Lda64b64lMemop: LDA64B  <Xt>, [<Xn|SP> {, #0}]
+// register fields: Rn, Rt
+F8BFD000 lda64b x0, [x0]
+F8BFD3E0 lda64b x0, [sp]
+F8BFD01F UNDEFINED

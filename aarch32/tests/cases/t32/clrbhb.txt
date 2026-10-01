@@ -1,0 +1,11 @@
+// CLRBHB_T1 111|10|0|1110|10|(1)(1)(1)(1)|1|0(0)0|(0)|000|hint=0001|option=0110
+// ClrbhbT1: CLRBHB{<c>}{<q>}
+// IT state read: condition
+F3A08016 clrbhb (unpredictable)
+F3AFA816 clrbhb (unpredictable)
+F3A88016 clrbhb (unpredictable)
+F3A48016 clrbhb (unpredictable)
+F3A28016 clrbhb (unpredictable)
+F3A18016 clrbhb (unpredictable)
+F3A08016 [ne] clrbhbne (unpredictable)
+F3AF8016 clrbhb

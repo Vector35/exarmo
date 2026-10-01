@@ -1,0 +1,46 @@
+// FRINTM_asimdmisc_R 0|Q=x|U=0|0|111|0|o2=0|sz=x|10000|1100|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FrintmAsimdmiscR: FRINTM  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+4E219BC6 frintm v6.4s, v30.4s
+0E219AAB frintm v11.2s, v21.2s
+4E619B65 frintm v5.2d, v27.2d
+0E219B20 frintm v0.2s, v25.2s
+4E219841 frintm v1.4s, v2.4s
+0E2199D7 frintm v23.2s, v14.2s
+4E219BB4 frintm v20.4s, v29.4s
+0E219873 frintm v19.2s, v3.2s
+4E219B1B frintm v27.4s, v24.4s
+0E219BCE frintm v14.2s, v30.2s
+0E219A6F frintm v15.2s, v19.2s
+4E619B0C frintm v12.2d, v24.2d
+0E219BD0 frintm v16.2s, v30.2s
+4E61987F frintm v31.2d, v3.2d
+4E619BBB frintm v27.2d, v29.2d
+4E21983C frintm v28.4s, v1.4s
+4E219806 frintm v6.4s, v0.4s
+4E219BE6 frintm v6.4s, v31.4s
+0E619BC6 UNDEFINED
+4E219BDE frintm v30.4s, v30.4s
+
+// FRINTM_asimdmiscfp16_R 0|Q=x|U=0|0|111|0|o2=0|1111|00|1100|o1=1|10|Rn=xxxxx|Rd=xxxxx
+// FrintmAsimdmiscfp16R: FRINTM  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+4E7998B5 frintm v21.8h, v5.8h
+0E799849 frintm v9.4h, v2.4h
+0E799838 frintm v24.4h, v1.4h
+0E799A94 frintm v20.4h, v20.4h
+4E799B79 frintm v25.8h, v27.8h
+4E799834 frintm v20.8h, v1.8h
+4E79989D frintm v29.8h, v4.8h
+4E799AF6 frintm v22.8h, v23.8h
+0E799B0D frintm v13.4h, v24.4h
+4E799B8A frintm v10.8h, v28.8h
+0E799A8D frintm v13.4h, v20.4h
+0E799876 frintm v22.4h, v3.4h
+0E799AB1 frintm v17.4h, v21.4h
+0E799AA4 frintm v4.4h, v21.4h
+4E799BB5 frintm v21.8h, v29.8h
+4E799804 frintm v4.8h, v0.8h
+4E799BE0 frintm v0.8h, v31.8h
+4E7998BF frintm v31.8h, v5.8h

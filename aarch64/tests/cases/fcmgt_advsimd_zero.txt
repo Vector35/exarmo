@@ -1,0 +1,94 @@
+// FCMGT_asimdmisc_FZ 0|Q=x|U=0|0|111|0|1|sz=x|10000|0110|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FcmgtAsimdmiscFz: FCMGT  <Vd>.<T>, <Vn>.<T>, #0.0
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+0EA0C8A6 fcmgt v6.2s, v5.2s, #0.0
+0EA0C831 fcmgt v17.2s, v1.2s, #0.0
+0EA0C8B4 fcmgt v20.2s, v5.2s, #0.0
+4EA0C9B5 fcmgt v21.4s, v13.4s, #0.0
+4EA0C9BF fcmgt v31.4s, v13.4s, #0.0
+4EA0CB66 fcmgt v6.4s, v27.4s, #0.0
+0EA0C852 fcmgt v18.2s, v2.2s, #0.0
+4EA0CBA5 fcmgt v5.4s, v29.4s, #0.0
+0EA0C854 fcmgt v20.2s, v2.2s, #0.0
+0EA0C857 fcmgt v23.2s, v2.2s, #0.0
+0EA0C8A5 fcmgt v5.2s, v5.2s, #0.0
+4EE0C900 fcmgt v0.2d, v8.2d, #0.0
+4EA0C9CC fcmgt v12.4s, v14.4s, #0.0
+0EA0C832 fcmgt v18.2s, v1.2s, #0.0
+4EA0C93D fcmgt v29.4s, v9.4s, #0.0
+4EE0C8A4 fcmgt v4.2d, v5.2d, #0.0
+0EA0C806 fcmgt v6.2s, v0.2s, #0.0
+0EA0CBE6 fcmgt v6.2s, v31.2s, #0.0
+0EE0C8A6 UNDEFINED
+
+// FCMGT_asimdmiscfp16_FZ 0|Q=x|U=0|0|111|0|a=1|1111|00|0110|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FcmgtAsimdmiscfp16Fz: FCMGT  <Vd>.<T>, <Vn>.<T>, #0.0
+// register fields: Rn, Rd
+4EF8C8C1 fcmgt v1.8h, v6.8h, #0.0
+4EF8C9C3 fcmgt v3.8h, v14.8h, #0.0
+4EF8C850 fcmgt v16.8h, v2.8h, #0.0
+0EF8C84E fcmgt v14.4h, v2.4h, #0.0
+0EF8CB0C fcmgt v12.4h, v24.4h, #0.0
+4EF8C9D0 fcmgt v16.8h, v14.8h, #0.0
+0EF8CAFF fcmgt v31.4h, v23.4h, #0.0
+4EF8CB31 fcmgt v17.8h, v25.8h, #0.0
+4EF8CBF5 fcmgt v21.8h, v31.8h, #0.0
+0EF8CB8F fcmgt v15.4h, v28.4h, #0.0
+0EF8CBFB fcmgt v27.4h, v31.4h, #0.0
+0EF8CBCE fcmgt v14.4h, v30.4h, #0.0
+0EF8C93C fcmgt v28.4h, v9.4h, #0.0
+0EF8C9E2 fcmgt v2.4h, v15.4h, #0.0
+4EF8C86B fcmgt v11.8h, v3.8h, #0.0
+0EF8C9FD fcmgt v29.4h, v15.4h, #0.0
+4EF8C800 fcmgt v0.8h, v0.8h, #0.0
+
+// FCMGT_asisdmisc_FZ 01|U=0|1|111|0|1|sz=x|10000|0110|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FcmgtAsisdmiscFz: FCMGT  <V><d>, <V><n>, #0.0
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+5EA0CA9F fcmgt s31, s20, #0.0
+5EA0CB06 fcmgt s6, s24, #0.0
+5EA0CA04 fcmgt s4, s16, #0.0
+5EE0CA87 fcmgt d7, d20, #0.0
+5EE0CA2A fcmgt d10, d17, #0.0
+5EE0CAA2 fcmgt d2, d21, #0.0
+5EA0C976 fcmgt s22, s11, #0.0
+5EA0CB5E fcmgt s30, s26, #0.0
+5EA0CA47 fcmgt s7, s18, #0.0
+5EA0CA28 fcmgt s8, s17, #0.0
+5EE0C943 fcmgt d3, d10, #0.0
+5EE0CA23 fcmgt d3, d17, #0.0
+5EE0C9FA fcmgt d26, d15, #0.0
+5EA0CA56 fcmgt s22, s18, #0.0
+5EA0C982 fcmgt s2, s12, #0.0
+5EA0CA27 fcmgt s7, s17, #0.0
+5EA0C800 fcmgt s0, s0, #0.0
+5EA0CBFF fcmgt s31, s31, #0.0
+5EE0CA80 fcmgt d0, d20, #0.0
+5EE0CA9F fcmgt d31, d20, #0.0
+5EE0C81F fcmgt d31, d0, #0.0
+5EE0CBFF fcmgt d31, d31, #0.0
+
+// FCMGT_asisdmiscfp16_FZ 01|U=0|1|111|0|a=1|1111|00|0110|op=0|10|Rn=xxxxx|Rd=xxxxx
+// FcmgtAsisdmiscfp16Fz: FCMGT  <Hd>, <Hn>, #0.0
+// register fields: Rn, Rd
+5EF8CBC6 fcmgt h6, h30, #0.0
+5EF8CB2E fcmgt h14, h25, #0.0
+5EF8C868 fcmgt h8, h3, #0.0
+5EF8CB33 fcmgt h19, h25, #0.0
+5EF8CA5B fcmgt h27, h18, #0.0
+5EF8C99E fcmgt h30, h12, #0.0
+5EF8C8CF fcmgt h15, h6, #0.0
+5EF8CB6D fcmgt h13, h27, #0.0
+5EF8C8DF fcmgt h31, h6, #0.0
+5EF8C9E9 fcmgt h9, h15, #0.0
+5EF8CA88 fcmgt h8, h20, #0.0
+5EF8C93F fcmgt h31, h9, #0.0
+5EF8C9FF fcmgt h31, h15, #0.0
+5EF8C8EB fcmgt h11, h7, #0.0
+5EF8C86B fcmgt h11, h3, #0.0
+5EF8C9C7 fcmgt h7, h14, #0.0
+5EF8C800 fcmgt h0, h0, #0.0
+5EF8CBE6 fcmgt h6, h31, #0.0

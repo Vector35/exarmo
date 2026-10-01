@@ -1,0 +1,12 @@
+// whilehi_pp_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|01|U=1|lt=0|Rn=xxxxx|1|Pd=xxx|eq=1
+// WhilehiPpRr: WHILEHI  { <Pd1>.<T>, <Pd2>.<T> }, <Xn>, <Xm>
+// register fields: Rm, Rn, Pd
+25205817 whilehi {p6.b, p7.b}, x0, x0
+25205833 whilehi {p2.b, p3.b}, x1, x0
+2520585D whilehi {p12.b, p13.b}, x2, x0
+257F5BF1 whilehi {p0.h, p1.h}, xzr, xzr
+25A05815 whilehi {p4.s, p5.s}, x0, x0
+25E05819 whilehi {p8.d, p9.d}, x0, x0
+2520581B whilehi {p10.b, p11.b}, x0, x0
+2520581F whilehi {p14.b, p15.b}, x0, x0
+25205811 whilehi {p0.b, p1.b}, x0, x0

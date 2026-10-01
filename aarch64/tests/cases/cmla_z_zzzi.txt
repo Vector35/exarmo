@@ -1,0 +1,29 @@
+// cmla_z_zzzi_h 010|0010|0|size=10|1|i2=xx|Zm=xxx|0110|rot=xx|Zn=xxxxx|Zda=xxxxx
+// CmlaZZzziH: CMLA  <Zda>.H, <Zn>.H, <Zm>.H[<imm>], <const>
+// register fields: Zm, Zn, Zda
+44B56F3D cmla z29.h, z25.h, z5.h[2], #0x10e
+44A3674C cmla z12.h, z26.h, z3.h[0], #0x5a
+44A56ADD cmla z29.h, z22.h, z5.h[0], #0xb4
+44AD6D4E cmla z14.h, z10.h, z5.h[1], #0x10e
+44B46FF8 cmla z24.h, z31.h, z4.h[2], #0x10e
+44BA6A05 cmla z5.h, z16.h, z2.h[3], #0xb4
+44A36AD1 cmla z17.h, z22.h, z3.h[0], #0xb4
+44BA6EE1 cmla z1.h, z23.h, z2.h[3], #0x10e
+44B06000 cmla z0.h, z0.h, z0.h[2], #0x0
+44B16F3F cmla z31.h, z25.h, z1.h[2], #0x10e
+44B66F3D cmla z29.h, z25.h, z6.h[2], #0x10e
+44B76F3D cmla z29.h, z25.h, z7.h[2], #0x10e
+
+// cmla_z_zzzi_s 010|0010|0|size=11|1|i1=x|Zm=xxxx|0110|rot=xx|Zn=xxxxx|Zda=xxxxx
+// CmlaZZzziS: CMLA  <Zda>.S, <Zn>.S, <Zm>.S[<imm>], <const>
+// register fields: Zm, Zn, Zda
+44F46E32 cmla z18.s, z17.s, z4.s[1], #0x10e
+44EA6A46 cmla z6.s, z18.s, z10.s[0], #0xb4
+44F2675C cmla z28.s, z26.s, z2.s[1], #0x5a
+44F86745 cmla z5.s, z26.s, z8.s[1], #0x5a
+44FE6F5C cmla z28.s, z26.s, z14.s[1], #0x10e
+44E468D8 cmla z24.s, z6.s, z4.s[0], #0xb4
+44F76899 cmla z25.s, z4.s, z7.s[1], #0xb4
+44E960AE cmla z14.s, z5.s, z9.s[0], #0x0
+44F06C00 cmla z0.s, z0.s, z0.s[1], #0x10e
+44FF6FFF cmla z31.s, z31.s, z15.s[1], #0x10e

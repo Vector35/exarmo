@@ -1,0 +1,23 @@
+// ld4d_z_p_br_contiguous 101|0010|msz=11|opc=11|Rm=xxxxx|110|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld4dZPBrContiguous: LD4D  { <Zt1>.D, <Zt2>.D, <Zt3>.D, <Zt4>.D }, <Pg>/Z, [<Xn|SP>, <Xm>, LSL #3]
+// register fields: Rm, Pg, Rn, Zt
+A5EDCFA0 ld4d {z0.d, z1.d, z2.d, z3.d}, p3/z, [fp, x13, lsl #0x3]
+A5E9C6DB ld4d {z27.d, z28.d, z29.d, z30.d}, p1/z, [x22, x9, lsl #0x3]
+A5FECF49 ld4d {z9.d, z10.d, z11.d, z12.d}, p3/z, [x26, lr, lsl #0x3]
+A5E1C0CD ld4d {z13.d, z14.d, z15.d, z16.d}, p0/z, [x6, x1, lsl #0x3]
+A5EFC60F ld4d {z15.d, z16.d, z17.d, z18.d}, p1/z, [x16, x15, lsl #0x3]
+A5FDC188 ld4d {z8.d, z9.d, z10.d, z11.d}, p0/z, [x12, fp, lsl #0x3]
+A5ECDAF4 ld4d {z20.d, z21.d, z22.d, z23.d}, p6/z, [x23, x12, lsl #0x3]
+A5EBC101 ld4d {z1.d, z2.d, z3.d, z4.d}, p0/z, [x8, x11, lsl #0x3]
+A5ECC448 ld4d {z8.d, z9.d, z10.d, z11.d}, p1/z, [x2, x12, lsl #0x3]
+A5E1D206 ld4d {z6.d, z7.d, z8.d, z9.d}, p4/z, [x16, x1, lsl #0x3]
+A5E1C9E2 ld4d {z2.d, z3.d, z4.d, z5.d}, p2/z, [x15, x1, lsl #0x3]
+A5F5D4BB ld4d {z27.d, z28.d, z29.d, z30.d}, p5/z, [x5, x21, lsl #0x3]
+A5F9D1FB ld4d {z27.d, z28.d, z29.d, z30.d}, p4/z, [x15, x25, lsl #0x3]
+A5F3C238 ld4d {z24.d, z25.d, z26.d, z27.d}, p0/z, [x17, x19, lsl #0x3]
+A5F1DC0C ld4d {z12.d, z13.d, z14.d, z15.d}, p7/z, [x0, x17, lsl #0x3]
+A5EAD823 ld4d {z3.d, z4.d, z5.d, z6.d}, p6/z, [x1, x10, lsl #0x3]
+A5E0CFFF ld4d {z31.d, z0.d, z1.d, z2.d}, p3/z, [sp, x0, lsl #0x3]
+A5FFCFA0 UNALLOCATED
+A5E3CFA0 ld4d {z0.d, z1.d, z2.d, z3.d}, p3/z, [fp, x3, lsl #0x3]
+A5EDCDA0 ld4d {z0.d, z1.d, z2.d, z3.d}, p3/z, [x13, x13, lsl #0x3]

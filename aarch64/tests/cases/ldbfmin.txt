@@ -1,0 +1,41 @@
+// LDBFMIN_16 size=00|111|VR=1|00|A=0|R=0|1|Rs=xxxxx|o3=0|opc=101|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfmin16: LDBFMIN  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3C205004 ldbfmin h0, h4, [x0]
+3C20500B ldbfmin h0, h11, [x0]
+3C205012 ldbfmin h0, h18, [x0]
+3C3F53E0 ldbfmin h31, h0, [sp]
+3C20501F ldbfmin h0, h31, [x0]
+3C205000 ldbfmin h0, h0, [x0]
+3C215043 ldbfmin h1, h3, [x2]
+
+// LDBFMINA_16 size=00|111|VR=1|00|A=1|R=0|1|Rs=xxxxx|o3=0|opc=101|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfmina16: LDBFMINA  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3CA05000 ldbfmina h0, h0, [x0]
+3CA05007 ldbfmina h0, h7, [x0]
+3CA0500E ldbfmina h0, h14, [x0]
+3CBF53FF ldbfmina h31, h31, [sp]
+3CA15043 ldbfmina h1, h3, [x2]
+
+// LDBFMINAL_16 size=00|111|VR=1|00|A=1|R=1|1|Rs=xxxxx|o3=0|opc=101|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfminal16: LDBFMINAL  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3CE05005 ldbfminal h0, h5, [x0]
+3CE0500C ldbfminal h0, h12, [x0]
+3CE05013 ldbfminal h0, h19, [x0]
+3CFF53E0 ldbfminal h31, h0, [sp]
+3CE0501F ldbfminal h0, h31, [x0]
+3CE05000 ldbfminal h0, h0, [x0]
+3CE15043 ldbfminal h1, h3, [x2]
+
+// LDBFMINL_16 size=00|111|VR=1|00|A=0|R=1|1|Rs=xxxxx|o3=0|opc=101|00|Rn=xxxxx|Rt=xxxxx
+// Ldbfminl16: LDBFMINL  <Hs>, <Ht>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+3C605002 ldbfminl h0, h2, [x0]
+3C605009 ldbfminl h0, h9, [x0]
+3C605010 ldbfminl h0, h16, [x0]
+3C7F53E0 ldbfminl h31, h0, [sp]
+3C60501F ldbfminl h0, h31, [x0]
+3C605000 ldbfminl h0, h0, [x0]
+3C615043 ldbfminl h1, h3, [x2]

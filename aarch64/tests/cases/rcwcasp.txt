@@ -1,0 +1,39 @@
+// RCWCASP_C64_rcwcomswappr 0|S=0|011001|A=0|R=0|1|Rs=xxxxx|000011|Rn=xxxxx|Rt=xxxxx
+// RcwcaspC64Rcwcomswappr: RCWCASP  <Xs>, <X(s+1)>, <Xt>, <X(t+1)>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19200C0A rcwcasp x0, x1, x10, x11, [x0]
+19200C18 rcwcasp x0, x1, x24, x25, [x0]
+19200C26 rcwcasp x0, x1, x6, x7, [x1]
+19200FE0 rcwcasp x0, x1, x0, x1, [sp]
+193F0C1F UNDEFINED
+19200C00 rcwcasp x0, x1, x0, x1, [x0]
+
+// RCWCASPA_C64_rcwcomswappr 0|S=0|011001|A=1|R=0|1|Rs=xxxxx|000011|Rn=xxxxx|Rt=xxxxx
+// RcwcaspaC64Rcwcomswappr: RCWCASPA  <Xs>, <X(s+1)>, <Xt>, <X(t+1)>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19A00C06 rcwcaspa x0, x1, x6, x7, [x0]
+19A00C14 rcwcaspa x0, x1, x20, x21, [x0]
+19A00C22 rcwcaspa x0, x1, x2, x3, [x1]
+19A00FE0 rcwcaspa x0, x1, x0, x1, [sp]
+19BF0C1F UNDEFINED
+19A00C00 rcwcaspa x0, x1, x0, x1, [x0]
+
+// RCWCASPAL_C64_rcwcomswappr 0|S=0|011001|A=1|R=1|1|Rs=xxxxx|000011|Rn=xxxxx|Rt=xxxxx
+// RcwcaspalC64Rcwcomswappr: RCWCASPAL  <Xs>, <X(s+1)>, <Xt>, <X(t+1)>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19E00C04 rcwcaspal x0, x1, x4, x5, [x0]
+19E00C12 rcwcaspal x0, x1, x18, x19, [x0]
+19E00C20 rcwcaspal x0, x1, x0, x1, [x1]
+19E00FE4 rcwcaspal x0, x1, x4, x5, [sp]
+19FF0C1F UNDEFINED
+19E00C00 rcwcaspal x0, x1, x0, x1, [x0]
+
+// RCWCASPL_C64_rcwcomswappr 0|S=0|011001|A=0|R=1|1|Rs=xxxxx|000011|Rn=xxxxx|Rt=xxxxx
+// RcwcasplC64Rcwcomswappr: RCWCASPL  <Xs>, <X(s+1)>, <Xt>, <X(t+1)>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19600C08 rcwcaspl x0, x1, x8, x9, [x0]
+19600C16 rcwcaspl x0, x1, x22, x23, [x0]
+19600C24 rcwcaspl x0, x1, x4, x5, [x1]
+19600FE0 rcwcaspl x0, x1, x0, x1, [sp]
+197F0C1F UNDEFINED
+19600C00 rcwcaspl x0, x1, x0, x1, [x0]

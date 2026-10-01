@@ -1,0 +1,7 @@
+// RETAA_64E_branch_reg 1101011|Z=0|0|op=10|op2=11111|0000|A=1|M=0|Rn=11111|Rm=11111
+// Retaa64eBranchReg: RETAA
+D65F0BFF retaa
+
+// RETAB_64E_branch_reg 1101011|Z=0|0|op=10|op2=11111|0000|A=1|M=1|Rn=11111|Rm=11111
+// Retab64eBranchReg: RETAB
+D65F0FFF retab

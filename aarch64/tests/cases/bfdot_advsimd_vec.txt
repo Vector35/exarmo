@@ -1,0 +1,10 @@
+// BFDOT_asimdsame2_D 0|Q=x|U=1|0|111|0|size=01|0|Rm=xxxxx|1|opcode=1111|1|Rn=xxxxx|Rd=xxxxx
+// BfdotAsimdsame2D: BFDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// register fields: Rm, Rn, Rd
+2E40FC01 bfdot v1.2s, v0.4h, v0.4h
+2E40FC08 bfdot v8.2s, v0.4h, v0.4h
+2E40FC0F bfdot v15.2s, v0.4h, v0.4h
+6E5FFFE0 bfdot v0.4s, v31.8h, v31.8h
+2E40FC1F bfdot v31.2s, v0.4h, v0.4h
+2E40FC00 bfdot v0.2s, v0.4h, v0.4h
+2E41FC43 bfdot v3.2s, v2.4h, v1.4h

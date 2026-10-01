@@ -1,0 +1,22 @@
+// uaddv_r_p_z_ 000|0010|0|size=xx|0|000|op=0|U=1|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// UaddvRPZ: UADDV  <Dd>, <Pg>, <Zn>.<T>
+// register fields: Pg, Zn, Vd
+04013079 uaddv d25, p4, z3.b
+04812646 uaddv d6, p1, z18.s
+04C1353E uaddv d30, p5, z9.d
+04412D06 uaddv d6, p3, z8.h
+0481259D uaddv d29, p1, z12.s
+04C12F79 uaddv d25, p3, z27.d
+04413A06 uaddv d6, p6, z16.h
+04812603 uaddv d3, p1, z16.s
+040127E0 uaddv d0, p1, z31.b
+04013460 uaddv d0, p5, z3.b
+0481256F uaddv d15, p1, z11.s
+04013991 uaddv d17, p6, z12.b
+04412106 uaddv d6, p0, z8.h
+048139AE uaddv d14, p6, z13.s
+04012AEF uaddv d15, p2, z23.b
+04013394 uaddv d20, p4, z28.b
+04013C1F uaddv d31, p7, z0.b
+04013099 uaddv d25, p4, z4.b
+04013063 uaddv d3, p4, z3.b

@@ -1,0 +1,15 @@
+// addspl_r_ri_ 000|0010|0|0|op=1|1|Rn=xxxxx|0101|1|imm6=xxxxxx|Rd=xxxxx
+// AddsplRRi: ADDSPL  <Xd|SP>, <Xn|SP>, #<imm>
+// register fields: Rn, Rd
+04605805 addspl x5, x0, #0x0
+0460580C addspl x12, x0, #0x0
+04605813 addspl x19, x0, #0x0
+047F5FE0 addspl x0, sp, #-0x1
+0460581F addspl sp, x0, #0x0
+04605800 addspl x0, x0, #0x0
+04605C05 addspl x5, x0, #-0x20
+04605A05 addspl x5, x0, #0x10
+04605905 addspl x5, x0, #0x8
+04605885 addspl x5, x0, #0x4
+04605845 addspl x5, x0, #0x2
+04605825 addspl x5, x0, #0x1

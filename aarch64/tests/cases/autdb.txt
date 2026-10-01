@@ -1,0 +1,43 @@
+// AUTDB_64P_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=0|111|Rn=xxxxx|Rd=xxxxx
+// Autdb64pDp1src: AUTDB  <Xd>, <Xn|SP>
+// register fields: Rn, Rd
+DAC11D51 autdb x17, x10
+DAC11FA7 autdb x7, fp
+DAC11D69 autdb x9, x11
+DAC11F7D autdb fp, x27
+DAC11DBE autdb lr, x13
+DAC11EA1 autdb x1, x21
+DAC11D8E autdb x14, x12
+DAC11EBA autdb x26, x21
+DAC11D9A autdb x26, x12
+DAC11CED autdb x13, x7
+DAC11C89 autdb x9, x4
+DAC11E34 autdb x20, x17
+DAC11E07 autdb x7, x16
+DAC11C0F autdb x15, x0
+DAC11E56 autdb x22, x18
+DAC11F54 autdb x20, x26
+DAC11FE0 autdb x0, sp
+DAC11D5F autdb xzr, x10
+DAC11D4A autdb x10, x10
+
+// AUTDZB_64Z_dp_1src sf=1|1|S=0|11010110|opcode2=00001|00|Z=1|111|Rn=11111|Rd=xxxxx
+// Autdzb64zDp1src: AUTDZB  <Xd>
+// register fields: Rd
+DAC13FE9 autdzb x9
+DAC13FF6 autdzb x22
+DAC13FE4 autdzb x4
+DAC13FFF autdzb xzr
+DAC13FFD autdzb fp
+DAC13FF8 autdzb x24
+DAC13FE1 autdzb x1
+DAC13FED autdzb x13
+DAC13FF1 autdzb x17
+DAC13FF3 autdzb x19
+DAC13FEE autdzb x14
+DAC13FE2 autdzb x2
+DAC13FFE autdzb lr
+DAC13FE5 autdzb x5
+DAC13FE8 autdzb x8
+DAC13FF4 autdzb x20
+DAC13FE0 autdzb x0

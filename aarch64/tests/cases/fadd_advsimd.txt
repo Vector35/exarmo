@@ -1,0 +1,46 @@
+// FADD_asimdsame_only 0|Q=x|U=0|0|111|0|0|sz=x|1|Rm=xxxxx|opcode=11010|1|Rn=xxxxx|Rd=xxxxx
+// FaddAsimdsameOnly: FADD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+0E3BD5F9 fadd v25.2s, v15.2s, v27.2s
+0E35D5FA fadd v26.2s, v15.2s, v21.2s
+4E63D541 fadd v1.2d, v10.2d, v3.2d
+4E30D49D fadd v29.4s, v4.4s, v16.4s
+4E70D651 fadd v17.2d, v18.2d, v16.2d
+0E27D7E0 fadd v0.2s, v31.2s, v7.2s
+4E75D64B fadd v11.2d, v18.2d, v21.2d
+4E77D4D6 fadd v22.2d, v6.2d, v23.2d
+4E3BD438 fadd v24.4s, v1.4s, v27.4s
+4E29D434 fadd v20.4s, v1.4s, v9.4s
+4E6CD795 fadd v21.2d, v28.2d, v12.2d
+4E3CD666 fadd v6.4s, v19.4s, v28.4s
+4E32D6AB fadd v11.4s, v21.4s, v18.4s
+4E70D59D fadd v29.2d, v12.2d, v16.2d
+0E30D79C fadd v28.2s, v28.2s, v16.2s
+4E20D4BE fadd v30.4s, v5.4s, v0.4s
+0E3FD41F fadd v31.2s, v0.2s, v31.2s
+0E7BD5F9 UNDEFINED
+0E3BD779 fadd v25.2s, v27.2s, v27.2s
+
+// FADD_asimdsamefp16_only 0|Q=x|U=0|0|111|0|a=0|10|Rm=xxxxx|00|opcode=010|1|Rn=xxxxx|Rd=xxxxx
+// FaddAsimdsamefp16Only: FADD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+4E501695 fadd v21.8h, v20.8h, v16.8h
+4E471556 fadd v22.8h, v10.8h, v7.8h
+0E521616 fadd v22.4h, v16.4h, v18.4h
+4E5B1640 fadd v0.8h, v18.8h, v27.8h
+4E5B141F fadd v31.8h, v0.8h, v27.8h
+4E521603 fadd v3.8h, v16.8h, v18.8h
+4E401486 fadd v6.8h, v4.8h, v0.8h
+4E5B1545 fadd v5.8h, v10.8h, v27.8h
+0E441443 fadd v3.4h, v2.4h, v4.4h
+4E4917E4 fadd v4.8h, v31.8h, v9.8h
+4E4B16E5 fadd v5.8h, v23.8h, v11.8h
+4E45179E fadd v30.8h, v28.8h, v5.8h
+4E4F167F fadd v31.8h, v19.8h, v15.8h
+0E551497 fadd v23.4h, v4.4h, v21.4h
+4E4016FE fadd v30.8h, v23.8h, v0.8h
+4E401403 fadd v3.8h, v0.8h, v0.8h
+4E5F1695 fadd v21.8h, v20.8h, v31.8h
+4E501690 fadd v16.8h, v20.8h, v16.8h
+4E501694 fadd v20.8h, v20.8h, v16.8h

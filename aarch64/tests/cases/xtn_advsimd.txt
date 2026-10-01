@@ -1,0 +1,27 @@
+// XTN_asimdmisc_N 0|Q=x|U=0|0|111|0|size=xx|10000|opcode=10010|10|Rn=xxxxx|Rd=xxxxx
+// XtnAsimdmiscN: XTN  <Vd>.<Tb>, <Vn>.<Ta>
+// XtnAsimdmiscN2: XTN2  <Vd>.<Tb>, <Vn>.<Ta>
+// read together by <Tb>: Q, size
+// register fields: Rn, Rd
+// form chosen on: Q
+0E612B11 xtn v17.4h, v24.4s
+0E612BCD xtn v13.4h, v30.4s
+0E612A9E xtn v30.4h, v20.4s
+4E612A7B xtn2 v27.8h, v19.4s
+4EA128FA xtn2 v26.4s, v7.2d
+4EA12AC3 xtn2 v3.4s, v22.2d
+0EA1294D xtn v13.2s, v10.2d
+0E612B91 xtn v17.4h, v28.4s
+0E612BE5 xtn v5.4h, v31.4s
+4E612AED xtn2 v13.8h, v23.4s
+4EA128D3 xtn2 v19.4s, v6.2d
+0E212B11 xtn v17.8b, v24.8h
+0E21293C xtn v28.8b, v9.8h
+0EA12B1A xtn v26.2s, v24.2d
+4E212A5E xtn2 v30.16b, v18.8h
+0E212A12 xtn v18.8b, v16.8h
+0E612800 xtn v0.4h, v0.4s
+0E612B1F xtn v31.4h, v24.4s
+0EE12B11 UNDEFINED
+4EE12B11 UNDEFINED
+4E21293C xtn2 v28.16b, v9.8h

@@ -1,0 +1,19 @@
+// USUB16_A1 cond=xxxx|011|00|op1=101|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=11|1|Rm=xxxx
+// Usub16A1: USUB16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+d65a817e usub16le r8, r10, lr (unpredictable)
+e651857f usub16 r8, r1, pc (unpredictable)
+b650a87c usub16lt r10, r0, r12 (unpredictable)
+865cf27a usub16hi pc, r12, r10 (unpredictable)
+c650a87b usub16gt r10, r0, r11 (unpredictable)
+c65dda7a usub16gt sp, sp, r10 (unpredictable)
+3655097d usub16lo r0, r5, sp (unpredictable)
+d65c6c7e usub16le r6, r12, lr (unpredictable)
+// Binary Ninja's tests
+86511f73 usub16hi r1, r1, r3
+e6524f77 usub16 r4, r2, r7
+065F8070 usub16eq r8, pc, r0 (unpredictable)
+F65A817E UNALLOCATED
+465A847A usub16mi r8, r10, r10 (unpredictable)
+265A8178 usub16cs r8, r10, r8 (unpredictable)
+165A817E usub16ne r8, r10, lr (unpredictable)

@@ -1,0 +1,6 @@
+// luti6_z_zzz_8 010|0010|1|0|0|1|Zm=xxxxx|101|011|Zn=xxxxx|Zd=xxxxx
+// Luti6ZZzz8: LUTI6  <Zd>.B, { <Zn1>.B, <Zn2>.B }, <Zm>
+// register fields: Zm, Zn, Zd
+4520AC00 luti6 z0.b, {z0.b, z1.b}, z0
+453FAFFF luti6 z31.b, {z31.b, z0.b}, z31
+4521AC43 luti6 z3.b, {z2.b, z3.b}, z1

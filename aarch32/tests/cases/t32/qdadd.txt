@@ -1,0 +1,15 @@
+// QDADD_T1 111|11010|1|op1=000|Rn=xxxx|1111|Rd=xxxx|10|op2=01|Rm=xxxx
+// QdaddT1: QDADD{<c>}{<q>}  {<Rd>, }<Rm>, <Rn>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa8df797 qdadd r7, r7, sp
+fa84f494 qdadd r4, r4, r4
+fa84f795 qdadd r7, r5, r4
+fa8df394 qdadd r3, r4, sp
+fa8af599 qdadd r5, r9, r10
+fa80f996 qdadd r9, r6, r0
+fa87fa96 qdadd r10, r6, r7
+fa8ffa99 qdadd r10, r9, pc (unpredictable)
+FA8DF090 qdadd r0, r0, sp
+FA8DFF9F qdadd pc, pc, sp (unpredictable)
+FA8DF797 [ne] qdaddne r7, r7, sp

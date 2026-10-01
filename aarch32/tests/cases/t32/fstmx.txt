@@ -1,0 +1,41 @@
+// FSTMDBX_T1 1110110|P=1|U=0|D=x|W=1|L=0|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx1
+// FstmdbxT1: FSTMDBX{<c>}{<q>}  <Rn>!, <dreglist>
+// register fields: Rn
+// IT state read: condition
+ed259b5d UNPREDICTABLE
+ed2bcb81 UNPREDICTABLE
+ED600B01 fstmdbx r0!, {} (unpredictable)
+ED2FFBFF UNPREDICTABLE
+ED258B41 UNPREDICTABLE
+ED254B21 fstmdbx r5!, {d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19} (unpredictable)
+ED252B11 fstmdbx r5!, {d2, d3, d4, d5, d6, d7, d8, d9}
+ED251B09 fstmdbx r5!, {d1, d2, d3, d4}
+ED259B05 fstmdbx r5!, {d9, d10}
+ED259B03 fstmdbx r5!, {d9}
+ED259B5D [ne] UNPREDICTABLE
+ED600B01 [ne] fstmdbxne r0!, {} (unpredictable)
+ED6FFB01 fstmdbx pc!, {} (unpredictable)
+ED608B01 fstmdbx r0!, {} (unpredictable)
+
+// FSTMIAX_T1 1110110|P=0|U=1|D=x|W=x|L=0|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx1
+// FstmiaxT1: FSTMIAX{<c>}{<q>}  <Rn>{<!>}, <dreglist>
+// register fields: Rn
+// IT state read: condition
+eca90b73 UNPREDICTABLE
+eca67b99 UNPREDICTABLE
+ec85ab25 fstmiax r5, {d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27} (unpredictable)
+ECE0FB01 fstmiax r0!, {} (unpredictable)
+ECAF8BFF UNPREDICTABLE
+ECA94B81 UNPREDICTABLE
+ECA92B41 UNPREDICTABLE
+ECA91B21 fstmiax r9!, {d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16} (unpredictable)
+ECA90B11 fstmiax r9!, {d0, d1, d2, d3, d4, d5, d6, d7}
+ECA90B09 fstmiax r9!, {d0, d1, d2, d3}
+ECA90B05 fstmiax r9!, {d0, d1}
+ECA90B03 fstmiax r9!, {d0}
+ECA90B73 [ne] UNPREDICTABLE
+EC85AB25 [ne] fstmiaxne r5, {d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27} (unpredictable)
+EC8F8B25 fstmiax pc, {d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25} (unpredictable)
+EC854B25 fstmiax r5, {d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21} (unpredictable)
+EC852B25 fstmiax r5, {d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19} (unpredictable)
+ECA90B41 fstmiax r9!, {d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30, d31} (unpredictable)

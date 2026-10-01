@@ -1,0 +1,45 @@
+// VQRSHRN_A1 1111001|U=x|1|D=x|imm6=xxxxxx|Vd=xxxx|100|op=1|L=0|Q=1|M=x|1|Vm=xxxx
+// VqrshrnA1: VQRSHRN{<c>}{<q>}.<type><size>  <Dd>, <Qm>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+f2f5b970 vqrshrn.s64 d27, q8, #11
+f3e5a95c vqrshrn.u64 d26, q6, #27
+f3a30958 vqrshrn.u64 d0, q4, #29
+f2891970 vqrshrn.s16 d1, q8, #7
+f3dd5970 vqrshrn.u32 d21, q8, #3
+f2ad9950 vqrshrn.s64 d9, q0, #19
+f3df295a vqrshrn.u32 d18, q5, #1
+f3d2997c vqrshrn.u32 d25, q14, #14
+F2C0B97F UNDEFINED
+F2FFF974 vqrshrn.s64 d31, q10, #0x1
+F2E08972 vqrshrn.s64 d24, q9, #0x20
+F2D04970 vqrshrn.s32 d20, q8, #0x10
+F288F970 vqrshrn.s16 d15, q8, #0x8
+F2C4B971 UNDEFINED
+F2C2B95F UNDEFINED
+F2C1B97F UNDEFINED
+F2F50970 vqrshrn.s64 d16, q8, #0xb
+F2F5F970 vqrshrn.s64 d31, q8, #0xb
+
+// VQRSHRUN_A1 1111001|U=1|1|D=x|imm6=xxxxxx|Vd=xxxx|100|op=0|L=0|Q=1|M=x|1|Vm=xxxx
+// VqrshrunA1: VQRSHRUN{<c>}{<q>}.<type><size>  <Dd>, <Qm>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+f3a3885e vqrshrun.s64 d8, q7, #29
+f3cba85c vqrshrun.s16 d26, q6, #5
+f3e0685c vqrshrun.s64 d22, q6, #32
+f3ad6870 vqrshrun.s64 d6, q8, #19
+f3e5287e vqrshrun.s64 d18, q15, #27
+f3aa5878 vqrshrun.s64 d5, q12, #22
+f399287e vqrshrun.s32 d2, q15, #7
+f3d6f872 vqrshrun.s32 d31, q9, #10
+F380587F UNDEFINED
+F3BF0854 vqrshrun.s64 d0, q2, #0x1
+F3904850 vqrshrun.s32 d4, q0, #0x10
+F388185E vqrshrun.s16 d1, q7, #0x8
+F3845871 UNDEFINED
+F382585F UNDEFINED
+F381587F UNDEFINED
+F3A3085E vqrshrun.s64 d0, q7, #0x1d
+F3A3F85E vqrshrun.s64 d15, q7, #0x1d
+F3E3085E vqrshrun.s64 d16, q7, #0x1d

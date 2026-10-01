@@ -1,0 +1,76 @@
+// SQSHLU_asimdshf_R 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|011|op=0|0|1|Rn=xxxxx|Rd=xxxxx
+// SqshluAsimdshfR: SQSHLU  <Vd>.<T>, <Vn>.<T>, #<shift>
+// read together by <T>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+6F2A64F1 sqshlu v17.4s, v7.4s, #0xa
+6F1B67F4 sqshlu v20.8h, v31.8h, #0xb
+6F0C64B6 sqshlu v22.16b, v5.16b, #0x4
+6F7B6591 sqshlu v17.2d, v12.2d, #0x3b
+6F5F67B5 sqshlu v21.2d, v29.2d, #0x1f
+2F3C6751 sqshlu v17.2s, v26.2s, #0x1c
+6F2466B1 sqshlu v17.4s, v21.4s, #0x4
+6F50679F sqshlu v31.2d, v28.2d, #0x10
+6F3E665D sqshlu v29.4s, v18.4s, #0x1e
+6F3E65B6 sqshlu v22.4s, v13.4s, #0x1e
+2F3A67BE sqshlu v30.2s, v29.2s, #0x1a
+6F0E6607 sqshlu v7.16b, v16.16b, #0x6
+2F226663 sqshlu v3.2s, v19.2s, #0x2
+2F3D6520 sqshlu v0.2s, v9.2s, #0x1d
+2F1664E8 sqshlu v8.4h, v7.4h, #0x6
+6F7D669D sqshlu v29.2d, v20.2d, #0x3d
+6F296411 sqshlu v17.4s, v0.4s, #0x9
+2F7A64F1 UNDEFINED
+6F7864E7 sqshlu v7.2d, v7.2d, #0x38
+6F7964F1 sqshlu v17.2d, v7.2d, #0x39
+6F7A64F1 sqshlu v17.2d, v7.2d, #0x3a
+6F7C64F1 sqshlu v17.2d, v7.2d, #0x3c
+6F7E64F1 sqshlu v17.2d, v7.2d, #0x3e
+6F7F64F1 sqshlu v17.2d, v7.2d, #0x3f
+6F4264F1 sqshlu v17.2d, v7.2d, #0x2
+
+// SQSHLU_asisdshf_R 01|U=1|1|111|10|immh=xxxx|immb=xxx|011|op=0|0|1|Rn=xxxxx|Rd=xxxxx
+// SqshluAsisdshfR: SQSHLU  <V><d>, <V><n>, #<shift>
+// read together by <d>: immh, Rd
+// read together by <n>: immh, Rn
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+7F7A656A sqshlu d10, d11, #0x3a
+7F766695 sqshlu d21, d20, #0x36
+7F696780 sqshlu d0, d28, #0x29
+7F2165FC sqshlu s28, s15, #0x1
+7F40653C sqshlu d28, d9, #0x0
+7F2167D3 sqshlu s19, s30, #0x1
+7F32664D sqshlu s13, s18, #0x12
+7F7467FF sqshlu d31, d31, #0x34
+7F2C6732 sqshlu s18, s25, #0xc
+7F766512 sqshlu d18, d8, #0x36
+7F5D651F sqshlu d31, d8, #0x1d
+7F3F66E4 sqshlu s4, s23, #0x1f
+7F7465F2 sqshlu d18, d15, #0x34
+7F7166FF sqshlu d31, d23, #0x31
+7F6864BD sqshlu d29, d5, #0x28
+7F796429 sqshlu d9, d1, #0x39
+7F7B640A sqshlu d10, d0, #0x3b
+7F02656A UNALLOCATED
+7F026560 UNALLOCATED
+7F02657F UNALLOCATED
+7F7A6560 sqshlu d0, d11, #0x3a
+7F7A657F sqshlu d31, d11, #0x3a
+7F02640A UNALLOCATED
+7F0267EA UNALLOCATED
+7F7A67EA sqshlu d10, d31, #0x3a
+7F00656A UNALLOCATED
+7F01656A UNALLOCATED
+7F03656A UNALLOCATED
+7F04656A UNALLOCATED
+7F05656A UNALLOCATED
+7F06656A UNALLOCATED
+7F07656A UNALLOCATED
+7F78656A sqshlu d10, d11, #0x38
+7F7C656A sqshlu d10, d11, #0x3c
+7F7D656A sqshlu d10, d11, #0x3d
+7F7E656A sqshlu d10, d11, #0x3e
+7F7F656A sqshlu d10, d11, #0x3f
+7F12656A sqshlu h10, h11, #0x2
+7F0A656A sqshlu b10, b11, #0x2

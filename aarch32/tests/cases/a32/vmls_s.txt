@@ -1,0 +1,51 @@
+// VMLS_s_A1_D 1111001|Q=0|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|0|op=1|0|F=x|N=x|1|M=x|0|Vm=xxxx
+// VmlsSA1D: VMLS{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm[x]>
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+f29795e9 vmls.f16 d9, d23, d1[3]
+f29eb447 vmls.i16 d11, d14, d7[0]
+f2d3d46e vmls.i16 d29, d3, d6[3]
+f2a20449 vmls.i32 d0, d2, d9[0]
+f2acc5cf vmls.f32 d12, d28, d15[0]
+f2e775e7 vmls.f32 d23, d23, d7[1]
+f2d2b44e vmls.i16 d27, d2, d6[1]
+f2d524ea vmls.i16 d18, d21, d2[3]
+F28795E9 UNDEFINED
+F2B795E9 UNDEFINED
+F290F5E0 vmls.f16 d15, d16, d0[2]
+F29F85E8 vmls.f16 d8, d31, d0[3]
+F29845E4 vmls.f16 d4, d24, d4[2]
+F29415E2 vmls.f16 d1, d20, d2[2]
+F291F5E1 vmls.f16 d15, d17, d1[2]
+F28794E9 UNDEFINED
+F2B794E9 UNDEFINED
+F2D00569 vmls.f16 d16, d0, d1[3]
+F2D0F5E9 vmls.f16 d31, d16, d1[3]
+F29F9569 vmls.f16 d9, d15, d1[3]
+F29F95E9 vmls.f16 d9, d31, d1[3]
+
+// VMLS_s_A1_Q 1111001|Q=1|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|0|op=1|0|F=x|N=x|1|M=x|0|Vm=xxxx
+// VmlsSA1Q: VMLS{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Dm[x]>
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+f3940446 vmls.i16 q0, q2, d6[0]
+f3d82466 vmls.i16 q9, q4, d6[2]
+f3a6654c vmls.f32 q3, q3, d12[0]
+f39004ea vmls.i16 q0, q8, d2[3]
+f3dca54d vmls.f16 q13, q6, d5[1]
+f392c4ee vmls.i16 q6, q9, d6[3]
+f39a05e6 vmls.f16 q0, q13, d6[2]
+f3a8044a vmls.i32 q0, q4, d10[0]
+F38FF446 UNDEFINED
+F3F1154D UNDEFINED
+F3908440 vmls.i16 q4, q0, d0[0]
+F394444F vmls.i16 q2, q2, d7[1]
+F3D40448 vmls.i16 q8, q2, d0[1]
+F3940444 vmls.i16 q0, q2, d4[0]
+F3940442 vmls.i16 q0, q2, d2[0]
+F3940441 vmls.i16 q0, q2, d1[0]
+F3CFF5C6 UNDEFINED
+F3FCA44D UNDEFINED
+F3B40546 UNDEFINED

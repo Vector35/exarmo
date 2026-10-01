@@ -1,0 +1,66 @@
+// STLLR_SL32_ldstord size=10|0010001|L=0|0|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// StllrSl32Ldstord: STLLR  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+889F7C49 stllr w9, [x2]
+889F7EA2 stllr w2, [x21]
+889F7F8C stllr w12, [x28]
+889F7CD2 stllr w18, [x6]
+889F7E6A stllr w10, [x19]
+889F7C32 stllr w18, [x1]
+889F7C98 stllr w24, [x4]
+889F7F05 stllr w5, [x24]
+88926A78 stllr w24, [x19] (unpredictable)
+888F5699 stllr w25, [x20] (unpredictable)
+889C4227 stllr w7, [x17] (unpredictable)
+889338CC stllr w12, [x6] (unpredictable)
+8890754F stllr w15, [x10] (unpredictable)
+88950A7C stllr w28, [x19] (unpredictable)
+8897729E stllr w30, [x20] (unpredictable)
+88975DB4 stllr w20, [x13] (unpredictable)
+88986524 stllr w4, [x9] (unpredictable)
+88826F6A stllr w10, [x27] (unpredictable)
+88985B8F stllr w15, [x28] (unpredictable)
+88837E20 stllr w0, [x17] (unpredictable)
+88960F41 stllr w1, [x26] (unpredictable)
+88921F9A stllr w26, [x28] (unpredictable)
+88854324 stllr w4, [x25] (unpredictable)
+888623A6 stllr w6, [fp] (unpredictable)
+8880001F stllr wzr, [x0] (unpredictable)
+889F7FE9 stllr w9, [sp]
+889F7C42 stllr w2, [x2]
+88881049 stllr w9, [x2] (unpredictable)
+88840449 stllr w9, [x2] (unpredictable)
+88817C49 stllr w9, [x2] (unpredictable)
+
+// STLLR_SL64_ldstord size=11|0010001|L=0|0|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// StllrSl64Ldstord: STLLR  <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+C89F7D79 stllr x25, [x11]
+C89F7DBC stllr x28, [x13]
+C89F7E0C stllr x12, [x16]
+C89F7DFE stllr lr, [x15]
+C89F7F1F stllr xzr, [x24]
+C89F7D6E stllr x14, [x11]
+C89F7F98 stllr x24, [x28]
+C89F7C18 stllr x24, [x0]
+C8874685 stllr x5, [x20] (unpredictable)
+C88F259D stllr fp, [x12] (unpredictable)
+C89A2C83 stllr x3, [x4] (unpredictable)
+C8897550 stllr x16, [x10] (unpredictable)
+C88153AD stllr x13, [fp] (unpredictable)
+C89B12DB stllr x27, [x22] (unpredictable)
+C8891D51 stllr x17, [x10] (unpredictable)
+C89861E3 stllr x3, [x15] (unpredictable)
+C882114F stllr x15, [x10] (unpredictable)
+C8926A1A stllr x26, [x16] (unpredictable)
+C89A74D6 stllr x22, [x6] (unpredictable)
+C8876FE1 stllr x1, [sp] (unpredictable)
+C8821415 stllr x21, [x0] (unpredictable)
+C89D24CC stllr x12, [x6] (unpredictable)
+C88F46D6 stllr x22, [x22] (unpredictable)
+C8831E76 stllr x22, [x19] (unpredictable)
+C8800160 stllr x0, [x11] (unpredictable)
+C8904179 stllr x25, [x11] (unpredictable)
+C8882179 stllr x25, [x11] (unpredictable)
+C8840979 stllr x25, [x11] (unpredictable)
+C89F0579 stllr x25, [x11] (unpredictable)

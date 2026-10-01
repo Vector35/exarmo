@@ -1,0 +1,38 @@
+// TST_r_A1 cond=xxxx|00010|opc=00|1|Rn=xxxx|(0)(0)(0)(0)|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// TstRA1: TST{<c>}{<q>}  <Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rm
+c11d3b09 tstgt sp, r9, lsl #22 (unpredictable)
+a11c55c4 tstge r12, r4, asr #11 (unpredictable)
+b115e204 tstlt r5, r4, lsl #4 (unpredictable)
+811484e5 tsthi r4, r5, ror #9 (unpredictable)
+11185582 tstne r8, r2, lsl #11 (unpredictable)
+a11d0cc9 tstge sp, r9, asr #25
+c116f083 tstgt r6, r3, lsl #1 (unpredictable)
+a113eba2 tstge r3, r2, lsr #23 (unpredictable)
+// Binary Ninja's tests
+e1140005 tst r4, r5
+e1140285 tst r4, r5, lsl #5
+e11402a5 tst r4, r5, lsr #5
+e11402c5 tst r4, r5, asr #5
+e11402e5 tst r4, r5, ror #5
+01104F80 tsteq r0, r0, lsl #0x1f (unpredictable)
+F11C55C4 UNALLOCATED
+411F280F tstmi pc, pc, lsl #0x10 (unpredictable)
+211D140D tstcs sp, sp, lsl #0x8 (unpredictable)
+C11D3109 tstgt sp, r9, lsl #0x2 (unpredictable)
+
+// TST_r_A1_RRX cond=xxxx|00010|opc=00|1|Rn=xxxx|(0)(0)(0)(0)|imm5=00000|stype=11|0|Rm=xxxx
+// TstRA1Rrx: TST{<c>}{<q>}  <Rn>, <Rm>, RRX
+// register fields: Rn, Rm
+d11f2062 tstle pc, r2, rrx (unpredictable)
+6116006f tstvs r6, pc, rrx
+111fc06b tstne pc, r11, rrx (unpredictable)
+911f3062 tstls pc, r2, rrx (unpredictable)
+8112d06e tsthi r2, lr, rrx (unpredictable)
+c113d06b tstgt r3, r11, rrx (unpredictable)
+71141061 tstvc r4, r1, rrx (unpredictable)
+b1131068 tstlt r3, r8, rrx (unpredictable)
+0110F060 tsteq r0, r0, rrx (unpredictable)
+F11F2062 UNALLOCATED
+411F806F tstmi pc, pc, rrx (unpredictable)
+211F4062 tstcs pc, r2, rrx (unpredictable)

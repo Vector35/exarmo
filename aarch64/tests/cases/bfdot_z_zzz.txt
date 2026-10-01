@@ -1,0 +1,14 @@
+// bfdot_z_zzz_ 011|0010|0|0|op=1|1|Zm=xxxxx|10|0|00|o2=0|Zn=xxxxx|Zda=xxxxx
+// BfdotZZzz: BFDOT  <Zda>.S, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zda
+64698385 bfdot z5.s, z28.h, z9.h
+64628006 bfdot z6.s, z0.h, z2.h
+647783C3 bfdot z3.s, z30.h, z23.h
+647C838F bfdot z15.s, z28.h, z28.h
+646A8395 bfdot z21.s, z28.h, z10.h
+646680EC bfdot z12.s, z7.h, z6.h
+64638197 bfdot z23.s, z12.h, z3.h
+646380D0 bfdot z16.s, z6.h, z3.h
+646083E0 bfdot z0.s, z31.h, z0.h
+647F839F bfdot z31.s, z28.h, z31.h
+6469839C bfdot z28.s, z28.h, z9.h

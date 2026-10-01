@@ -1,0 +1,3 @@
+// DRPS_64E_branch_reg 110|101|1|opc=0101|op2=11111|op3=000000|Rn=11111|op4=00000
+// Drps64eBranchReg: DRPS
+D6BF03E0 drps

@@ -1,0 +1,15 @@
+// uaba_z_zzz_ 010|0010|1|size=xx|0|Zm=xxxxx|11|111|U=1|Zn=xxxxx|Zda=xxxxx
+// UabaZZzz: UABA  <Zda>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zda
+45DDFD3C uaba z28.d, z9.d, z29.d
+45D1FE19 uaba z25.d, z16.d, z17.d
+459DFD6D uaba z13.s, z11.s, z29.s
+450DFF50 uaba z16.b, z26.b, z13.b
+450BFC0F uaba z15.b, z0.b, z11.b
+4543FE99 uaba z25.h, z20.h, z3.h
+4551FC1D uaba z29.h, z0.h, z17.h
+451FFE3E uaba z30.b, z17.b, z31.b
+45C0FFE0 uaba z0.d, z31.d, z0.d
+45DDFD3F uaba z31.d, z9.d, z29.d
+45DDFFBC uaba z28.d, z29.d, z29.d
+45DDFD29 uaba z9.d, z9.d, z29.d

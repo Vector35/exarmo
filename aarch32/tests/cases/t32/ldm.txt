@@ -1,0 +1,77 @@
+// LDM_T1 1100|L=1|Rn=xxx|register_list=xxxxxxxx
+// LdmT1: LDM{<IA>}{<c>}{<q>}  <Rn>{<!>}, <registers>
+// register fields: Rn
+// IT state read: condition
+c801 ldm r0, {r0}
+c802 ldm r0!, {r1}
+c803 ldm r0, {r0, r1}
+c804 ldm r0!, {r2}
+c805 ldm r0, {r0, r2}
+c806 ldm r0!, {r1, r2}
+c807 ldm r0, {r0, r1, r2}
+C900 ldm r1!, {} (unpredictable)
+CAFF ldm r2, {r0, r1, r2, r3, r4, r5, r6, r7}
+CB80 ldm r3!, {r7}
+CC40 ldm r4!, {r6}
+CD20 ldm r5, {r5}
+CE10 ldm r6!, {r4}
+CF08 ldm r7!, {r3}
+C801 [ne] ldmne r0, {r0}
+
+// LDM_T2 111|0100|opc=01|0|W=x|L=1|Rn=xxxx|P=x|M=x|register_list=xxxxxxxxxxxxxx
+// PopLdmT2: POP{<c>}{<q>}  <registers>
+// LdmT2: LDM{<IA>}{<c>}.W  <Rn>{<!>}, <registers>
+// read together by the POP alias: W, Rn, P, M, register_list
+// register fields: Rn
+// form chosen on: W, Rn, P, M, register_list
+// IT state read: condition, last in block
+E8900000 ldm r0, {} (unpredictable)
+E8BFFFFF ldm pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+E8902000 ldm r0, {sp} (unpredictable)
+E8901000 ldm r0, {r12} (unpredictable)
+E8900800 ldm r0, {r11} (unpredictable)
+E8900400 ldm r0, {r10} (unpredictable)
+E8900200 ldm r0, {r9} (unpredictable)
+E8900100 ldm r0, {r8} (unpredictable)
+E8900080 ldm r0, {r7} (unpredictable)
+E8900040 ldm r0, {r6} (unpredictable)
+E8900020 ldm r0, {r5} (unpredictable)
+E8900010 ldm r0, {r4} (unpredictable)
+E8900008 ldm r0, {r3} (unpredictable)
+E8900004 ldm r0, {r2} (unpredictable)
+E8900002 ldm r0, {r1} (unpredictable)
+E8900001 ldm r0, {r0} (unpredictable)
+E8903FFF ldm r0, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E8904000 ldm r0, {lr} (unpredictable)
+E8907FFF ldm r0, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr} (unpredictable)
+E8908000 ldm r0, {pc} (unpredictable)
+E890BFFF ldm r0, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, pc} (unpredictable)
+E890C000 ldm r0, {lr, pc} (unpredictable)
+E890FFFF ldm r0, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+E89F0000 ldm pc, {} (unpredictable)
+E89F3FFF ldm pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E89F4000 ldm pc, {lr} (unpredictable)
+E89F7FFF ldm pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr} (unpredictable)
+E89F8000 ldm pc, {pc} (unpredictable)
+E89FBFFF ldm pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, pc} (unpredictable)
+E89FC000 ldm pc, {lr, pc} (unpredictable)
+E89FFFFF ldm pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+E8B00000 ldm r0!, {} (unpredictable)
+E8B03FFF ldm r0!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E8B04000 ldm r0!, {lr} (unpredictable)
+E8B07FFF ldm r0!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr} (unpredictable)
+E8B08000 ldm r0!, {pc} (unpredictable)
+E8B0BFFF ldm r0!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, pc} (unpredictable)
+E8B0C000 ldm r0!, {lr, pc} (unpredictable)
+E8B0FFFF ldm r0!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+E8BF0000 ldm pc!, {} (unpredictable)
+E8BF3FFF ldm pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E8BF4000 ldm pc!, {lr} (unpredictable)
+E8BF7FFF ldm pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr} (unpredictable)
+E8BF8000 ldm pc!, {pc} (unpredictable)
+E8BFBFFF ldm pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, pc} (unpredictable)
+E8BFC000 ldm pc!, {lr, pc} (unpredictable)
+E8BD3FFF pop {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E8BD3FFF [ne] popne {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp} (unpredictable)
+E8901000 [ne] ldmne r0, {r12} (unpredictable)
+E8901000 [ne last] ldmne r0, {r12} (unpredictable)

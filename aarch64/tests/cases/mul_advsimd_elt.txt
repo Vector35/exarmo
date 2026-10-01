@@ -1,0 +1,64 @@
+// MUL_asimdelem_R 0|Q=x|U=0|0|111|1|size=xx|L=x|M=x|Rm=xxxx|opcode=1000|H=x|0|Rn=xxxxx|Rd=xxxxx
+// MulAsimdelemR: MUL  <Vd>.<T>, <Vn>.<T>, <m>.<Ts>[<index>]
+// read together by <T>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+4F63801F mul v31.8h, v0.8h, v3.h[2]
+4F598392 mul v18.8h, v28.8h, v9.h[1]
+0F66806F mul v15.4h, v3.4h, v6.h[2]
+4F5781B7 mul v23.8h, v13.8h, v7.h[1]
+4FB48A20 mul v0.4s, v17.4s, v20.s[3]
+0FB28236 mul v22.2s, v17.2s, v18.s[1]
+0F7C8A5A mul v26.4h, v18.4h, v12.h[7]
+4F508040 mul v0.8h, v2.8h, v0.h[1]
+4F898A04 mul v4.4s, v16.4s, v9.s[2]
+4F728BA1 mul v1.8h, v29.8h, v2.h[7]
+0F70833F mul v31.4h, v25.4h, v0.h[3]
+0F728959 mul v25.4h, v10.4h, v2.h[7]
+4F938B3C mul v28.4s, v25.4s, v19.s[2]
+4FB589F1 mul v17.4s, v15.4s, v21.s[3]
+4F9F80D9 mul v25.4s, v6.4s, v31.s[0]
+4FBB8284 mul v4.4s, v20.4s, v27.s[1]
+4F6383FF mul v31.8h, v31.8h, v3.h[2]
+4F23801F UNDEFINED
+4FE3801F UNDEFINED
+4F03801F UNDEFINED
+4F03881F UNDEFINED
+4F13801F UNDEFINED
+4F13881F UNDEFINED
+4F23881F UNDEFINED
+4F33801F UNDEFINED
+4F33881F UNDEFINED
+4F43801F mul v31.8h, v0.8h, v3.h[0]
+4F43881F mul v31.8h, v0.8h, v3.h[4]
+4F53881F mul v31.8h, v0.8h, v3.h[5]
+4F63881F mul v31.8h, v0.8h, v3.h[6]
+4F83801F mul v31.4s, v0.4s, v3.s[0]
+4FA3801F mul v31.4s, v0.4s, v3.s[1]
+4FA3881F mul v31.4s, v0.4s, v3.s[3]
+4FC3801F UNDEFINED
+4FC3881F UNDEFINED
+4FD3801F UNDEFINED
+4FD3881F UNDEFINED
+4FE3881F UNDEFINED
+4FF3801F UNDEFINED
+4FF3881F UNDEFINED
+4F20801F UNDEFINED
+4F2F801F UNDEFINED
+4F30801F UNDEFINED
+4F3F801F UNDEFINED
+4F60801F mul v31.8h, v0.8h, v0.h[2]
+4F6F801F mul v31.8h, v0.8h, v15.h[2]
+4F7F801F mul v31.8h, v0.8h, v15.h[3]
+4FA0801F mul v31.4s, v0.4s, v0.s[1]
+4FAF801F mul v31.4s, v0.4s, v15.s[1]
+4FB0801F mul v31.4s, v0.4s, v16.s[1]
+4FE0801F UNDEFINED
+4FEF801F UNDEFINED
+4FF0801F UNDEFINED
+4FFF801F UNDEFINED
+0F23801F UNDEFINED
+0FE3801F UNDEFINED
+4F68801F mul v31.8h, v0.8h, v8.h[2]
+4F61801F mul v31.8h, v0.8h, v1.h[2]

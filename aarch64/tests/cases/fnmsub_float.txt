@@ -1,0 +1,71 @@
+// FNMSUB_D_floatdp3 M=0|0|S=0|11111|ftype=01|o1=1|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FnmsubDFloatdp3: FNMSUB  <Dd>, <Dn>, <Dm>, <Da>
+// register fields: Rm, Ra, Rn, Rd
+1F75A799 fnmsub d25, d28, d21, d9
+1F71CF3D fnmsub d29, d25, d17, d19
+1F6397CC fnmsub d12, d30, d3, d5
+1F6CE64E fnmsub d14, d18, d12, d25
+1F6DE761 fnmsub d1, d27, d13, d25
+1F6B8D2B fnmsub d11, d9, d11, d3
+1F7CF98B fnmsub d11, d12, d28, d30
+1F67CDEB fnmsub d11, d15, d7, d19
+1F60C633 fnmsub d19, d17, d0, d17
+1F68B34E fnmsub d14, d26, d8, d12
+1F68B0B3 fnmsub d19, d5, d8, d12
+1F71D893 fnmsub d19, d4, d17, d22
+1F738DE7 fnmsub d7, d15, d19, d3
+1F61A050 fnmsub d16, d2, d1, d8
+1F66C2A5 fnmsub d5, d21, d6, d16
+1F6897E3 fnmsub d3, d31, d8, d5
+1F7F8000 fnmsub d0, d0, d31, d0
+1F75FF9F fnmsub d31, d28, d21, d31
+1F75D799 fnmsub d25, d28, d21, d21
+1F75A6B9 fnmsub d25, d21, d21, d9
+
+// FNMSUB_H_floatdp3 M=0|0|S=0|11111|ftype=11|o1=1|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FnmsubHFloatdp3: FNMSUB  <Hd>, <Hn>, <Hm>, <Ha>
+// register fields: Rm, Ra, Rn, Rd
+1FE0F11D fnmsub h29, h8, h0, h28
+1FF1D5DC fnmsub h28, h14, h17, h21
+1FE3F198 fnmsub h24, h12, h3, h28
+1FE1D269 fnmsub h9, h19, h1, h20
+1FE8A156 fnmsub h22, h10, h8, h8
+1FF3ACF5 fnmsub h21, h7, h19, h11
+1FF0E60C fnmsub h12, h16, h16, h25
+1FF79194 fnmsub h20, h12, h23, h4
+1FE8F09C fnmsub h28, h4, h8, h28
+1FE7D0DD fnmsub h29, h6, h7, h20
+1FE9D9AF fnmsub h15, h13, h9, h22
+1FF5C4CA fnmsub h10, h6, h21, h17
+1FF0B51B fnmsub h27, h8, h16, h13
+1FF5C758 fnmsub h24, h26, h21, h17
+1FFBA096 fnmsub h22, h4, h27, h8
+1FF9BB9C fnmsub h28, h28, h25, h14
+1FFF8000 fnmsub h0, h0, h31, h0
+1FE0FFFF fnmsub h31, h31, h0, h31
+1FE0F100 fnmsub h0, h8, h0, h28
+
+// FNMSUB_S_floatdp3 M=0|0|S=0|11111|ftype=00|o1=1|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FnmsubSFloatdp3: FNMSUB  <Sd>, <Sn>, <Sm>, <Sa>
+// register fields: Rm, Ra, Rn, Rd
+1F2D904C fnmsub s12, s2, s13, s4
+1F369B8A fnmsub s10, s28, s22, s6
+1F249A12 fnmsub s18, s16, s4, s6
+1F39EDF9 fnmsub s25, s15, s25, s27
+1F319168 fnmsub s8, s11, s17, s4
+1F268389 fnmsub s9, s28, s6, s0
+1F39C7FB fnmsub s27, s31, s25, s17
+1F37B40C fnmsub s12, s0, s23, s13
+1F25C6F2 fnmsub s18, s23, s5, s17
+1F23CE9A fnmsub s26, s20, s3, s19
+1F2F8DA4 fnmsub s4, s13, s15, s3
+1F3FFBB3 fnmsub s19, s29, s31, s30
+1F24B119 fnmsub s25, s8, s4, s12
+1F34B4F7 fnmsub s23, s7, s20, s13
+1F29CD9B fnmsub s27, s12, s9, s19
+1F3FFCCD fnmsub s13, s6, s31, s31
+1F209040 fnmsub s0, s2, s0, s4
+1F2D905F fnmsub s31, s2, s13, s4
+1F2D91A4 fnmsub s4, s13, s13, s4
+1F2D908C fnmsub s12, s4, s13, s4
+1F2D9042 fnmsub s2, s2, s13, s4

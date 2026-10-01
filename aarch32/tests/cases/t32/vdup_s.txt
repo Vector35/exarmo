@@ -1,0 +1,44 @@
+// VDUP_s_T1_D 111111111|D=x|11|imm4=xxxx|Vd=xxxx|11|opc=000|Q=0|M=x|0|Vm=xxxx
+// VdupST1D: VDUP{<c>}{<q>}.<size>  <Dd>, <Dm[x]>
+// read together by <Dd>: D, Vd
+// IT state read: condition
+ffb59c2a vdup.8 d9, d26[2]
+fff7bc24 vdup.8 d27, d20[3]
+fff2dc00 vdup.16 d29, d0[0]
+ffbedc00 vdup.16 d13, d0[3]
+ffb71c00 vdup.8 d1, d0[3]
+ffb4cc23 vdup.32 d12, d19[0]
+ffb77c2a vdup.8 d7, d26[3]
+fff22c24 vdup.16 d18, d20[0]
+FFB09C2A UNDEFINED
+FFBF0C2F vdup.8 d0, d31[7]
+FFB89C2A UNDEFINED
+FFB1FC28 vdup.8 d15, d24[0]
+FFB58C22 vdup.8 d8, d18[2]
+FFB54C21 vdup.8 d4, d17[2]
+FFB50C2A vdup.8 d0, d26[2]
+FFB5FC2A vdup.8 d15, d26[2]
+FFF50C2A vdup.8 d16, d26[2]
+FFF5FC2A vdup.8 d31, d26[2]
+FFB59C2A [ne] vdupne.8 d9, d26[2]
+
+// VDUP_s_T1_Q 111111111|D=x|11|imm4=xxxx|Vd=xxxx|11|opc=000|Q=1|M=x|0|Vm=xxxx
+// VdupST1Q: VDUP{<c>}{<q>}.<size>  <Qd>, <Dm[x]>
+// read together by <Qd>: D, Vd
+// IT state read: condition
+fffa0c63 vdup.16 q8, d19[2]
+ffb14c4b vdup.8 q2, d11[0]
+ffb62c61 vdup.16 q1, d17[1]
+fffe8c6b vdup.16 q12, d27[3]
+ffb54c4a vdup.8 q2, d10[2]
+ffff6c4f vdup.8 q11, d15[7]
+fffbec4b vdup.8 q15, d11[5]
+ffbaac44 vdup.16 q5, d4[2]
+FFF0FC63 UNDEFINED
+FFF81C63 UNDEFINED
+FFB40C60 vdup.32 q0, d16[0]
+FFF20C68 vdup.16 q8, d24[0]
+FFFA0C62 vdup.16 q8, d18[2]
+FFBAFC63 UNDEFINED
+FFFAFC63 UNDEFINED
+FFFA0C63 [ne] vdupne.16 q8, d19[2]

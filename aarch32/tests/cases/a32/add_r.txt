@@ -1,0 +1,89 @@
+// ADD_r_A1 cond=xxxx|0000|opc=100|S=0|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// AddRA1: ADD{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+e08608a1 add r0, r6, r1, lsr #17
+808e680b addhi r6, lr, r11, lsl #16
+908841e4 addls r4, r8, r4, ror #3
+5089dca2 addpl sp, r9, r2, lsr #25
+2087950c addhs r9, r7, r12, lsl #10
+e084fc46 add pc, r4, r6, asr #24
+c0863361 addgt r3, r6, r1, ror #6
+40804285 addmi r4, r0, r5, lsl #5
+// Binary Ninja's tests
+e0800001 add r0, r0, r1
+e0813022 add r3, r1, r2, lsr #32
+e0813042 add r3, r1, r2, asr #32
+e0821003 add r1, r2, r3
+e0822003 add r2, r2, r3
+e0844005 add r4, r4, r5
+e0844285 add r4, r4, r5, lsl #5
+e08442a5 add r4, r4, r5, lsr #5
+e08442c5 add r4, r4, r5, asr #5
+e08442e5 add r4, r4, r5, ror #5
+e0854006 add r4, r5, r6
+e0854286 add r4, r5, r6, lsl #5
+e08542a6 add r4, r5, r6, lsr #5
+e08542c6 add r4, r5, r6, asr #5
+e08542e6 add r4, r5, r6, ror #5
+008F0FA0 addeq r0, pc, r0, lsr #0x1f
+F08608A1 UNALLOCATED
+1086042F addne r0, r6, pc, lsr #0x8
+E0860226 add r0, r6, r6, lsr #0x4
+E0860121 add r0, r6, r1, lsr #0x2
+E08600A1 add r0, r6, r1, lsr #0x1
+
+// ADD_r_A1_RRX cond=xxxx|0000|opc=100|S=0|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// AddRA1Rrx: ADD{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+50834062 addpl r4, r3, r2, rrx
+308a9068 addlo r9, r10, r8, rrx
+8084806c addhi r8, r4, r12, rrx
+608be06a addvs lr, r11, r10, rrx
+9081c067 addls r12, r1, r7, rrx
+008e806d addeq r8, lr, sp, rrx
+708ee066 addvc lr, lr, r6, rrx
+7089f06e addvc pc, r9, lr, rrx
+// Binary Ninja's tests
+e0844065 add r4, r4, r5, rrx
+e0854066 add r4, r5, r6, rrx
+F0834062 UNALLOCATED
+40800060 addmi r0, r0, r0, rrx
+208F406F addcs r4, pc, pc, rrx
+10834063 addne r4, r3, r3, rrx
+50834064 addpl r4, r3, r4, rrx
+
+// ADDS_r_A1 cond=xxxx|0000|opc=100|S=1|Rn=xxxx|Rd=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// AddsRA1: ADDS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// register fields: Rn, Rd, Rm
+b09a06c9 addslt r0, r10, r9, asr #13
+1093146d addsne r1, r3, sp, ror #8
+2094f648 addshs pc, r4, r8, asr #12
+609f26a8 addsvs r2, pc, r8, lsr #13
+00978141 addseq r8, r7, r1, asr #2
+309ff22d addslo pc, pc, sp, lsr #4
+709074e4 addsvc r7, r0, r4, ror #9
+30920ae9 addslo r0, r2, r9, ror #21
+// Binary Ninja's tests
+00922003 addseq r2, r2, r3
+e0921003 adds r1, r2, r3
+F09A06C9 UNALLOCATED
+809A0FC0 addshi r0, r10, r0, asr #0x1f
+409A084F addsmi r0, r10, pc, asr #0x10
+B09A00CA addslt r0, r10, r10, asr #0x1
+B09A06C0 addslt r0, r10, r0, asr #0xd
+
+// ADDS_r_A1_RRX cond=xxxx|0000|opc=100|S=1|Rn=xxxx|Rd=xxxx|imm5=00000|stype=11|0|Rm=xxxx
+// AddsRA1Rrx: ADDS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+d096106d addsle r1, r6, sp, rrx
+709c1064 addsvc r1, r12, r4, rrx
+d0971067 addsle r1, r7, r7, rrx
+00948064 addseq r8, r4, r4, rrx
+d094706c addsle r7, r4, r12, rrx
+6090806b addsvs r8, r0, r11, rrx
+b095d06d addslt sp, r5, sp, rrx
+409e8067 addsmi r8, lr, r7, rrx
+F096106D UNALLOCATED
+809F0060 addshi r0, pc, r0, rrx
+2096F06F addscs pc, r6, pc, rrx
+1096606D addsne r6, r6, sp, rrx

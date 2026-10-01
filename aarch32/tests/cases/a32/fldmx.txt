@@ -1,0 +1,46 @@
+// FLDMDBX_A1 cond=xxxx|110|P=1|U=0|D=x|W=1|L=1|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx1
+// FldmdbxA1: FLDMDBX{<c>}{<q>}  <Rn>!, <dreglist>
+// register fields: Rn
+4d316b53 UNPREDICTABLE
+cd336be3 UNPREDICTABLE
+7d389b91 UNPREDICTABLE
+// Binary Ninja's tests
+1d354b07 fldmdbxne r5!, {d4, d5, d6}
+0D700B01 fldmdbxeq r0!, {} (unpredictable)
+FD316B53 UNALLOCATED
+8D3FFBFF UNPREDICTABLE
+2D318B81 UNPREDICTABLE
+4D312B41 UNPREDICTABLE
+4D311B21 fldmdbxmi r1!, {d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16} (unpredictable)
+4D316B11 fldmdbxmi r1!, {d6, d7, d8, d9, d10, d11, d12, d13}
+4D316B09 fldmdbxmi r1!, {d6, d7, d8, d9}
+4D316B05 fldmdbxmi r1!, {d6, d7}
+4D316B03 fldmdbxmi r1!, {d6}
+8D3FFB07 fldmdbxhi pc!, {d15, d16, d17} (unpredictable)
+2D358B07 fldmdbxcs r5!, {d8, d9, d10}
+1D352B07 fldmdbxne r5!, {d2, d3, d4}
+
+// FLDMIAX_A1 cond=xxxx|110|P=0|U=1|D=x|W=x|L=1|Rn=xxxx|Vd=xxxx|10|size=11|imm8=xxxxxxx1
+// FldmiaxA1: FLDMIAX{<c>}{<q>}  <Rn>{<!>}, <dreglist>
+// register fields: Rn
+4c917ba1 UNPREDICTABLE
+9cb6eb2d UNPREDICTABLE
+7cb6fb8d UNPREDICTABLE
+ac9acb79 UNPREDICTABLE
+1cb72b6b UNPREDICTABLE
+acb1db41 UNPREDICTABLE
+// Binary Ninja's tests
+0c904b05 fldmiaxeq r0, {d4, d5}
+ecb50b07 fldmiax r5!, {d0, d1, d2}
+FC917BA1 UNALLOCATED
+8CDF8B01 fldmiaxhi pc, {} (unpredictable)
+2C911BFF UNPREDICTABLE
+4C917B81 UNPREDICTABLE
+4C917B21 fldmiaxmi r1, {d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22} (unpredictable)
+4C917B11 fldmiaxmi r1, {d7, d8, d9, d10, d11, d12, d13, d14}
+4C917B09 fldmiaxmi r1, {d7, d8, d9, d10}
+4C917B03 fldmiaxmi r1, {d7}
+2C90FB05 fldmiaxcs r0, {d15, d16} (unpredictable)
+1C902B05 fldmiaxne r0, {d2, d3}
+0C901B05 fldmiaxeq r0, {d1, d2}
+ECB50B41 fldmiax r5!, {d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30, d31} (unpredictable)

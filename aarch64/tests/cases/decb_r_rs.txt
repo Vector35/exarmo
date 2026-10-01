@@ -1,0 +1,100 @@
+// decb_r_rs_ 000|0010|0|size=00|1|1|imm4=xxxx|11|100|D=1|pattern=xxxxx|Rdn=xxxxx
+// DecbRRs: DECB  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0434E489 decb x9, vl4, mul #0x5
+0430E63D decb fp, #0x11
+0430E639 decb x25, #0x11
+0437E761 decb x1, #0x1b, mul #0x8
+043BE620 decb x0, #0x11, mul #0xc
+0433E57D decb fp, vl64, mul #0x4
+0439E644 decb x4, #0x12, mul #0xa
+043DE522 decb x2, vl16, mul #0xe
+043AE6A3 decb x3, #0x15, mul #0xb
+0430E793 decb x19, #0x1c
+043CE725 decb x5, #0x19, mul #0xd
+0434E661 decb x1, #0x13, mul #0x5
+043EE51F decb xzr, vl8, mul #0xf
+0432E734 decb x20, #0x19, mul #0x3
+043FE524 decb x4, vl16, mul #0x10
+0430E5FA decb x26, #0xf
+0434E409 decb x9, pow2, mul #0x5
+0434E7E9 decb x9, all, mul #0x5
+0438E609 decb x9, #0x10, mul #0x9
+0431E449 decb x9, vl2, mul #0x2
+0434E429 decb x9, vl1, mul #0x5
+
+// decd_r_rs_ 000|0010|0|size=11|1|1|imm4=xxxx|11|100|D=1|pattern=xxxxx|Rdn=xxxxx
+// DecdRRs: DECD  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04F2E539 decd x25, vl16, mul #0x3
+04FBE521 decd x1, vl16, mul #0xc
+04F2E7B6 decd x22, mul4, mul #0x3
+04FEE72A decd x10, #0x19, mul #0xf
+04F3E4B8 decd x24, vl5, mul #0x4
+04F8E416 decd x22, pow2, mul #0x9
+04F9E62A decd x10, #0x11, mul #0xa
+04FDE655 decd x21, #0x12, mul #0xe
+04FBE60E decd x14, #0x10, mul #0xc
+04F7E46F decd x15, vl3, mul #0x8
+04F5E6E0 decd x0, #0x17, mul #0x6
+04F2E4DB decd x27, vl6, mul #0x3
+04F1E70A decd x10, #0x18, mul #0x2
+04F9E6E0 decd x0, #0x17, mul #0xa
+04F7E6C4 decd x4, #0x16, mul #0x8
+04F7E5B8 decd x24, vl256, mul #0x8
+04F0E7FF decd xzr
+04FFE539 decd x25, vl16, mul #0x10
+04F4E519 decd x25, vl8, mul #0x5
+04F2E499 decd x25, vl4, mul #0x3
+04F2E459 decd x25, vl2, mul #0x3
+04F2E439 decd x25, vl1, mul #0x3
+
+// dech_r_rs_ 000|0010|0|size=01|1|1|imm4=xxxx|11|100|D=1|pattern=xxxxx|Rdn=xxxxx
+// DechRRs: DECH  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+0472E49F dech xzr, vl4, mul #0x3
+047EE70D dech x13, #0x18, mul #0xf
+0474E703 dech x3, #0x18, mul #0x5
+0470E554 dech x20, vl32
+0471E604 dech x4, #0x10, mul #0x2
+047FE72D dech x13, #0x19, mul #0x10
+047DE52B dech x11, vl16, mul #0xe
+0470E46B dech x11, vl3
+0479E5F3 dech x19, #0xf, mul #0xa
+0471E563 dech x3, vl64, mul #0x2
+047BE79E dech lr, #0x1c, mul #0xc
+0472E761 dech x1, #0x1b, mul #0x3
+0471E5C0 dech x0, #0xe, mul #0x2
+0470E4E3 dech x3, vl7
+047AE701 dech x1, #0x18, mul #0xb
+0472E64D dech x13, #0x12, mul #0x3
+0472E41F dech xzr, pow2, mul #0x3
+0472E7FF dech xzr, all, mul #0x3
+0478E51F dech xzr, vl8, mul #0x9
+0472E45F dech xzr, vl2, mul #0x3
+0472E43F dech xzr, vl1, mul #0x3
+
+// decw_r_rs_ 000|0010|0|size=10|1|1|imm4=xxxx|11|100|D=1|pattern=xxxxx|Rdn=xxxxx
+// DecwRRs: DECW  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04B4E623 decw x3, #0x11, mul #0x5
+04BCE72D decw x13, #0x19, mul #0xd
+04B0E443 decw x3, vl2
+04B5E7F6 decw x22, all, mul #0x6
+04B2E4B2 decw x18, vl5, mul #0x3
+04B4E731 decw x17, #0x19, mul #0x5
+04B1E529 decw x9, vl16, mul #0x2
+04B9E608 decw x8, #0x10, mul #0xa
+04B2E7ED decw x13, all, mul #0x3
+04B2E455 decw x21, vl2, mul #0x3
+04BAE7A7 decw x7, mul4, mul #0xb
+04B7E729 decw x9, #0x19, mul #0x8
+04B0E5DE decw lr, #0xe
+04B0E40B decw x11, pow2
+04B6E7CA decw x10, mul3, mul #0x7
+04B3E4CC decw x12, vl6, mul #0x4
+04BFE620 decw x0, #0x11, mul #0x10
+04B4E63F decw xzr, #0x11, mul #0x5
+04B8E503 decw x3, vl8, mul #0x9
+04B4E483 decw x3, vl4, mul #0x5
+04B4E423 decw x3, vl1, mul #0x5

@@ -1,0 +1,12 @@
+// movaz_mz_za4_1 1|10|0000|0|00|000|1|1|00|Rv=xx|011|10|off3=xxx|Zd=xxx|00
+// MovazMzZa41: MOVAZ  { <Zd1>.D-<Zd4>.D }, ZA.D[<Wv>, <offs>{, VGx4}]
+// register fields: Rv, Zd
+C0060E14 movaz {z20.d-z23.d}, za.d[w8, 0, vgx4]
+C0060E30 movaz {z16.d-z19.d}, za.d[w8, 1, vgx4]
+C0060E4C movaz {z12.d-z15.d}, za.d[w8, 2, vgx4]
+C0062E60 movaz {z0.d-z3.d}, za.d[w9, 3, vgx4]
+C0064E84 movaz {z4.d-z7.d}, za.d[w10, 4, vgx4]
+C0066EA8 movaz {z8.d-z11.d}, za.d[w11, 5, vgx4]
+C0060ED8 movaz {z24.d-z27.d}, za.d[w8, 6, vgx4]
+C0060EFC movaz {z28.d-z31.d}, za.d[w8, 7, vgx4]
+C0060E00 movaz {z0.d-z3.d}, za.d[w8, 0, vgx4]

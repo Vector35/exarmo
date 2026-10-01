@@ -1,0 +1,48 @@
+// FMAXNMP_asisdpair_only_H 01|U=0|1|111|0|o1=0|sz=0|11000|opcode=01100|10|Rn=xxxxx|Rd=xxxxx
+// FmaxnmpAsisdpairOnlyH: FMAXNMP  <d>, <Vn>.2H
+// register fields: Rn, Rd
+5E30C82C fmaxnmp h12, v1.2h
+5E30C83C fmaxnmp h28, v1.2h
+5E30C907 fmaxnmp h7, v8.2h
+5E30CB2F fmaxnmp h15, v25.2h
+5E30CBD6 fmaxnmp h22, v30.2h
+5E30C973 fmaxnmp h19, v11.2h
+5E30C826 fmaxnmp h6, v1.2h
+5E30CB3F fmaxnmp h31, v25.2h
+5E30C97E fmaxnmp h30, v11.2h
+5E30CA50 fmaxnmp h16, v18.2h
+5E30C8CC fmaxnmp h12, v6.2h
+5E30CB54 fmaxnmp h20, v26.2h
+5E30CA99 fmaxnmp h25, v20.2h
+5E30C960 fmaxnmp h0, v11.2h
+5E30CA46 fmaxnmp h6, v18.2h
+5E30C99D fmaxnmp h29, v12.2h
+5E30C80C fmaxnmp h12, v0.2h
+5E30CBEC fmaxnmp h12, v31.2h
+5E30C821 fmaxnmp h1, v1.2h
+
+// FMAXNMP_asisdpair_only_SD 01|U=1|1|111|0|o1=0|sz=x|11000|opcode=01100|10|Rn=xxxxx|Rd=xxxxx
+// FmaxnmpAsisdpairOnlySd: FMAXNMP  <V><d>, <Vn>.<T>
+// read together by <d>: sz, Rd
+// register fields: Rn, Rd
+7E70CB15 fmaxnmp d21, v24.2d
+7E30C97B fmaxnmp s27, v11.2s
+7E30CBC4 fmaxnmp s4, v30.2s
+7E70CB6C fmaxnmp d12, v27.2d
+7E70CAB9 fmaxnmp d25, v21.2d
+7E30C99A fmaxnmp s26, v12.2s
+7E30C85C fmaxnmp s28, v2.2s
+7E30CB70 fmaxnmp s16, v27.2s
+7E30C9FE fmaxnmp s30, v15.2s
+7E70C8DB fmaxnmp d27, v6.2d
+7E70C802 fmaxnmp d2, v0.2d
+7E30C977 fmaxnmp s23, v11.2s
+7E30CAD4 fmaxnmp s20, v22.2s
+7E70CAD9 fmaxnmp d25, v22.2d
+7E70CB65 fmaxnmp d5, v27.2d
+7E70C964 fmaxnmp d4, v11.2d
+7E70CBE0 fmaxnmp d0, v31.2d
+7E70CB1F fmaxnmp d31, v24.2d
+7E30CB00 fmaxnmp s0, v24.2s
+7E30CB1F fmaxnmp s31, v24.2s
+7E70CB18 fmaxnmp d24, v24.2d

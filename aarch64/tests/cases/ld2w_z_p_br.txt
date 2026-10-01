@@ -1,0 +1,23 @@
+// ld2w_z_p_br_contiguous 101|0010|msz=10|opc=01|Rm=xxxxx|110|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld2wZPBrContiguous: LD2W  { <Zt1>.S, <Zt2>.S }, <Pg>/Z, [<Xn|SP>, <Xm>, LSL #2]
+// register fields: Rm, Pg, Rn, Zt
+A524D18F ld2w {z15.s, z16.s}, p4/z, [x12, x4, lsl #0x2]
+A520D4AC ld2w {z12.s, z13.s}, p5/z, [x5, x0, lsl #0x2]
+A53BC629 ld2w {z9.s, z10.s}, p1/z, [x17, x27, lsl #0x2]
+A53EDFFE ld2w {z30.s, z31.s}, p7/z, [sp, lr, lsl #0x2]
+A53EC8F8 ld2w {z24.s, z25.s}, p2/z, [x7, lr, lsl #0x2]
+A52DC959 ld2w {z25.s, z26.s}, p2/z, [x10, x13, lsl #0x2]
+A52FD5DC ld2w {z28.s, z29.s}, p5/z, [x14, x15, lsl #0x2]
+A53ED29F ld2w {z31.s, z0.s}, p4/z, [x20, lr, lsl #0x2]
+A53ED43E ld2w {z30.s, z31.s}, p5/z, [x1, lr, lsl #0x2]
+A530DAC4 ld2w {z4.s, z5.s}, p6/z, [x22, x16, lsl #0x2]
+A52CDE02 ld2w {z2.s, z3.s}, p7/z, [x16, x12, lsl #0x2]
+A53CCBCA ld2w {z10.s, z11.s}, p2/z, [lr, x28, lsl #0x2]
+A532C90B ld2w {z11.s, z12.s}, p2/z, [x8, x18, lsl #0x2]
+A539DC68 ld2w {z8.s, z9.s}, p7/z, [x3, x25, lsl #0x2]
+A524C7B1 ld2w {z17.s, z18.s}, p1/z, [fp, x4, lsl #0x2]
+A539CA51 ld2w {z17.s, z18.s}, p2/z, [x18, x25, lsl #0x2]
+A524C000 ld2w {z0.s, z1.s}, p0/z, [x0, x4, lsl #0x2]
+A524CD8F ld2w {z15.s, z16.s}, p3/z, [x12, x4, lsl #0x2]
+A53FD18F UNALLOCATED
+A524D08F ld2w {z15.s, z16.s}, p4/z, [x4, x4, lsl #0x2]

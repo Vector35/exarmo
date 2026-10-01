@@ -1,0 +1,194 @@
+// STR_32_ldst_immpost size=10|111|VR=0|00|opc=00|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Str32LdstImmpost: STR  <Wt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+B80C55C8 str w8, [x14], #0xc5
+B81F5785 str w5, [x28], #-0xb
+B813D55D str w29, [x10], #-0xc3
+B819F46F str w15, [x3], #-0x61
+B81094F8 str w24, [x7], #-0xf7
+B81DF4B1 str w17, [x5], #-0x21
+B80666C6 str w6, [x22], #0x66
+B8124563 str w3, [x11], #-0xdc
+B810B413 str w19, [x0], #-0xf5
+B80764EF str w15, [x7], #0x76
+B8170562 str w2, [x11], #-0x90
+B81695CA str w10, [x14], #-0x97
+B8162458 str w24, [x2], #-0x9e
+B804A5C5 str w5, [x14], #0x4a
+B81F4679 str w25, [x19], #-0xc
+B805A5CC str w12, [x14], #0x5a
+B80007E0 str w0, [sp], #0x0
+B81FF5DF str wzr, [x14], #-0x1
+B80C55CE str w14, [x14], #0xc5 (unpredictable)
+B81005C8 str w8, [x14], #-0x100
+B80805C8 str w8, [x14], #0x80
+B80405C8 str w8, [x14], #0x40
+B80205C8 str w8, [x14], #0x20
+B80105C8 str w8, [x14], #0x10
+B80085C8 str w8, [x14], #0x8
+B80045C8 str w8, [x14], #0x4
+B80025C8 str w8, [x14], #0x2
+B80015C8 str w8, [x14], #0x1
+
+// STR_32_ldst_immpre size=10|111|VR=0|00|opc=00|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Str32LdstImmpre: STR  <Wt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+B805EF45 str w5, [x26, #0x5e]!
+B80D7F1E str w30, [x24, #0xd7]!
+B8058EFE str w30, [x23, #0x58]!
+B807CE75 str w21, [x19, #0x7c]!
+B80C4E6B str w11, [x19, #0xc4]!
+B80A2EC0 str w0, [x22, #0xa2]!
+B81B3EB1 str w17, [x21, #-0x4d]!
+B818DE73 str w19, [x19, #-0x73]! (unpredictable)
+B802CCF1 str w17, [x7, #0x2c]!
+B817DF62 str w2, [x27, #-0x83]!
+B8119E99 str w25, [x20, #-0xe7]!
+B80FCFA6 str w6, [fp, #0xfc]!
+B81C1C11 str w17, [x0, #-0x3f]!
+B8055E17 str w23, [x16, #0x55]!
+B815AF33 str w19, [x25, #-0xa6]!
+B8030D09 str w9, [x8, #0x30]!
+B8000FFF str wzr, [sp, #0x0]!
+B81FFF45 str w5, [x26, #-0x1]!
+B8100F45 str w5, [x26, #-0x100]!
+B8080F45 str w5, [x26, #0x80]!
+B8040F45 str w5, [x26, #0x40]!
+B8020F45 str w5, [x26, #0x20]!
+B8010F45 str w5, [x26, #0x10]!
+B8008F45 str w5, [x26, #0x8]!
+B8004F45 str w5, [x26, #0x4]!
+B8002F45 str w5, [x26, #0x2]!
+B8001F45 str w5, [x26, #0x1]!
+
+// STR_32_ldst_pos size=10|111|VR=0|01|opc=00|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Str32LdstPos: STR  <Wt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+B9205D5A str w26, [x10, #0x205c]
+B9245C33 str w19, [x1, #0x245c]
+B9038AC5 str w5, [x22, #0x388]
+B91E348D str w13, [x4, #0x1e34]
+B91CA1AA str w10, [x13, #0x1ca0]
+B902542E str w14, [x1, #0x254]
+B91A9495 str w21, [x4, #0x1a94]
+B919EC56 str w22, [x2, #0x19ec]
+B93E319D str w29, [x12, #0x3e30]
+B92AEFEC str w12, [sp, #0x2aec]
+B92902B2 str w18, [x21, #0x2900]
+B931B8BB str w27, [x5, #0x31b8]
+B928A0CE str w14, [x6, #0x28a0]
+B911AA5E str w30, [x18, #0x11a8]
+B91D3293 str w19, [x20, #0x1d30]
+B91CA2BC str w28, [x21, #0x1ca0]
+B9000000 str w0, [x0]
+B93FFD5F str wzr, [x10, #0x3ffc]
+B920015A str w26, [x10, #0x2000]
+B910015A str w26, [x10, #0x1000]
+B908015A str w26, [x10, #0x800]
+B904015A str w26, [x10, #0x400]
+B902015A str w26, [x10, #0x200]
+B901015A str w26, [x10, #0x100]
+B900815A str w26, [x10, #0x80]
+B900415A str w26, [x10, #0x40]
+B900215A str w26, [x10, #0x20]
+B900115A str w26, [x10, #0x10]
+B900095A str w26, [x10, #0x8]
+B900055A str w26, [x10, #0x4]
+
+// STR_64_ldst_immpost size=11|111|VR=0|00|opc=00|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Str64LdstImmpost: STR  <Xt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+F80B5557 str x23, [x10], #0xb5
+F818F585 str x5, [x12], #-0x71
+F80AC4DD str fp, [x6], #0xac
+F8090608 str x8, [x16], #0x90
+F80926F5 str x21, [x23], #0x92
+F80395A0 str x0, [x13], #0x39
+F81C25CA str x10, [x14], #-0x3e
+F81AE6FA str x26, [x23], #-0x52
+F8130613 str x19, [x16], #-0xd0
+F80847BB str x27, [fp], #0x84
+F805B681 str x1, [x20], #0x5b
+F8152638 str x24, [x17], #-0xae
+F804942D str x13, [x1], #0x49
+F80EF675 str x21, [x19], #0xef
+F805E6EE str x14, [x23], #0x5e
+F8078460 str x0, [x3], #0x78
+F800041F str xzr, [x0], #0x0
+F81FF7F7 str x23, [sp], #-0x1
+F80B554A str x10, [x10], #0xb5 (unpredictable)
+F8100557 str x23, [x10], #-0x100
+F8080557 str x23, [x10], #0x80
+F8040557 str x23, [x10], #0x40
+F8020557 str x23, [x10], #0x20
+F8010557 str x23, [x10], #0x10
+F8008557 str x23, [x10], #0x8
+F8004557 str x23, [x10], #0x4
+F8002557 str x23, [x10], #0x2
+F8001557 str x23, [x10], #0x1
+
+// STR_64_ldst_immpre size=11|111|VR=0|00|opc=00|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Str64LdstImmpre: STR  <Xt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+F81DFF53 str x19, [x26, #-0x21]!
+F80CAD2E str x14, [x9, #0xca]!
+F816BF2A str x10, [x25, #-0x95]!
+F80F5D26 str x6, [x9, #0xf5]!
+F8030EE9 str x9, [x23, #0x30]!
+F8094C40 str x0, [x2, #0x94]!
+F8033E85 str x5, [x20, #0x33]!
+F80DEE2E str x14, [x17, #0xde]!
+F811DD56 str x22, [x10, #-0xe3]!
+F81FAF34 str x20, [x25, #-0x6]!
+F8129F6B str x11, [x27, #-0xd7]!
+F80E1C96 str x22, [x4, #0xe1]!
+F804BD1A str x26, [x8, #0x4b]!
+F8027FE0 str x0, [sp, #0x27]!
+F817BC08 str x8, [x0, #-0x85]!
+F81C1E71 str x17, [x19, #-0x3f]!
+F8000F5F str xzr, [x26, #0x0]!
+F81FFF53 str x19, [x26, #-0x1]!
+F81DFF5A str x26, [x26, #-0x21]! (unpredictable)
+F8100F53 str x19, [x26, #-0x100]!
+F8080F53 str x19, [x26, #0x80]!
+F8040F53 str x19, [x26, #0x40]!
+F8020F53 str x19, [x26, #0x20]!
+F8010F53 str x19, [x26, #0x10]!
+F8008F53 str x19, [x26, #0x8]!
+F8004F53 str x19, [x26, #0x4]!
+F8002F53 str x19, [x26, #0x2]!
+F8001F53 str x19, [x26, #0x1]!
+
+// STR_64_ldst_pos size=11|111|VR=0|01|opc=00|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Str64LdstPos: STR  <Xt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+F90DA69A str x26, [x20, #0x1b48]
+F91DAA6B str x11, [x19, #0x3b50]
+F90B6DBD str fp, [x13, #0x16d8]
+F938F615 str x21, [x16, #0x71e8]
+F908F40C str x12, [x0, #0x11e8]
+F916616B str x11, [x11, #0x2cc0]
+F933DCC2 str x2, [x6, #0x67b8]
+F921FCB4 str x20, [x5, #0x43f8]
+F904FBD3 str x19, [lr, #0x9f0]
+F928D2A5 str x5, [x21, #0x51a0]
+F933CAAE str x14, [x21, #0x6790]
+F920AC2F str x15, [x1, #0x4158]
+F93FF5AD str x13, [x13, #0x7fe8]
+F91A89F4 str x20, [x15, #0x3510]
+F935C84F str x15, [x2, #0x6b90]
+F934A74D str x13, [x26, #0x6948]
+F90003E0 str x0, [sp]
+F93FFE9F str xzr, [x20, #0x7ff8]
+F920029A str x26, [x20, #0x4000]
+F910029A str x26, [x20, #0x2000]
+F908029A str x26, [x20, #0x1000]
+F904029A str x26, [x20, #0x800]
+F902029A str x26, [x20, #0x400]
+F901029A str x26, [x20, #0x200]
+F900829A str x26, [x20, #0x100]
+F900429A str x26, [x20, #0x80]
+F900229A str x26, [x20, #0x40]
+F900129A str x26, [x20, #0x20]
+F9000A9A str x26, [x20, #0x10]
+F900069A str x26, [x20, #0x8]

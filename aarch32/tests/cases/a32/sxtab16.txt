@@ -1,0 +1,21 @@
+// SXTAB16_A1 cond=xxxx|011|01|U=0|op=00|Rn=xxxx|Rd=xxxx|rotate=xx|(0)(0)|011|1|Rm=xxxx
+// Sxtab16A1: SXTAB16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, ROR #<amount>}
+// register fields: Rn, Rd, Rm
+368bb671 sxtab16lo r11, r11, r1, ror #8 (unpredictable)
+66855f77 sxtab16vs r5, r5, r7, ror #24 (unpredictable)
+968a397a sxtab16ls r3, r10, r10, ror #16 (unpredictable)
+568ce47b sxtab16pl lr, r12, r11, ror #8
+868c357c sxtab16hi r3, r12, r12, ror #8 (unpredictable)
+068c5775 sxtab16eq r5, r12, r5, ror #8 (unpredictable)
+368ea079 sxtab16lo r10, lr, r9
+b6867979 sxtab16lt r7, r6, r9, ror #16 (unpredictable)
+// Binary Ninja's tests
+06821c73 sxtab16eq r1, r2, r3, ror #24
+a6810074 sxtab16ge r0, r1, r4
+e6823871 sxtab16 r3, r2, r1, ror #16
+e6826077 sxtab16 r6, r2, r7
+e6853478 sxtab16 r3, r5, r8, ror #8
+F68FB671 UNALLOCATED
+4680F670 sxtab16mi pc, r0, r0, ror #0x8 (unpredictable)
+268BB67F sxtab16cs r11, r11, pc, ror #0x8 (unpredictable)
+168BB671 sxtab16ne r11, r11, r1, ror #0x8 (unpredictable)

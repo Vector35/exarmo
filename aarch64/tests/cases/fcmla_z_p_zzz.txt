@@ -1,0 +1,24 @@
+// fcmla_z_p_zzz_ 011|0010|0|size=xx|0|Zm=xxxxx|0|rot=xx|Pg=xxx|Zn=xxxxx|Zda=xxxxx
+// FcmlaZPZzz: FCMLA  <Zda>.<T>, <Pg>/M, <Zn>.<T>, <Zm>.<T>, <const>
+// register fields: Zm, Pg, Zn, Zda
+6488233A fcmla z26.s, p0/m, z25.s, z8.s, #0x5a
+645B6091 fcmla z17.h, p0/m, z4.h, z27.h, #0x10e
+649F3C61 fcmla z1.s, p7/m, z3.s, z31.s, #0x5a
+648846EF fcmla z15.s, p1/m, z23.s, z8.s, #0xb4
+64C818A4 fcmla z4.d, p6/m, z5.d, z8.d, #0x0
+64C73559 fcmla z25.d, p5/m, z10.d, z7.d, #0x5a
+648830F8 fcmla z24.s, p4/m, z7.s, z8.s, #0x5a
+64565A49 fcmla z9.h, p6/m, z18.h, z22.h, #0xb4
+64D37AF5 fcmla z21.d, p6/m, z23.d, z19.d, #0x10e
+649C30AD fcmla z13.s, p4/m, z5.s, z28.s, #0x5a
+6490780A fcmla z10.s, p6/m, z0.s, z16.s, #0x10e
+64D45AD7 fcmla z23.d, p6/m, z22.d, z20.d, #0xb4
+64857CE0 fcmla z0.s, p7/m, z7.s, z5.s, #0x10e
+64DA6165 fcmla z5.d, p0/m, z11.d, z26.d, #0x10e
+64DD4DFE fcmla z30.d, p3/m, z15.d, z29.d, #0xb4
+64C9195A fcmla z26.d, p6/m, z10.d, z9.d, #0x0
+64802BFF fcmla z31.s, p2/m, z31.s, z0.s, #0x5a
+6408233A UNDEFINED
+6480233A fcmla z26.s, p0/m, z25.s, z0.s, #0x5a
+64882100 fcmla z0.s, p0/m, z8.s, z8.s, #0x5a
+64882328 fcmla z8.s, p0/m, z25.s, z8.s, #0x5a

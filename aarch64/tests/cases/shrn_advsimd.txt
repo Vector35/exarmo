@@ -1,0 +1,35 @@
+// SHRN_asimdshf_N 0|Q=x|U=0|0|111|10|immh=xxxx|immb=xxx|1000|op=0|1|Rn=xxxxx|Rd=xxxxx
+// ShrnAsimdshfN: SHRN  <Vd>.<Tb>, <Vn>.<Ta>, #<shift>
+// ShrnAsimdshfN2: SHRN2  <Vd>.<Tb>, <Vn>.<Ta>, #<shift>
+// read together by <Tb>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+// form chosen on: Q
+4F3E8559 shrn2 v25.4s, v10.2d, #0x2
+4F3B840F shrn2 v15.4s, v0.2d, #0x5
+4F2B8540 shrn2 v0.4s, v10.2d, #0x15
+0F1A8529 shrn v9.4h, v9.4s, #0x6
+0F1987FF shrn v31.4h, v31.4s, #0x7
+4F0E85BD shrn2 v29.16b, v13.8h, #0x2
+0F2A85FF shrn v31.2s, v15.2d, #0x16
+4F27871B shrn2 v27.4s, v24.2d, #0x19
+0F1B854C shrn v12.4h, v10.4s, #0x5
+0F1D86FC shrn v28.4h, v23.4s, #0x3
+0F1A85BB shrn v27.4h, v13.4s, #0x6
+0F1284AC shrn v12.4h, v5.4s, #0xe
+0F21855A shrn v26.2s, v10.2d, #0x1f
+0F268694 shrn v20.2s, v20.2d, #0x1a
+4F1D87B6 shrn2 v22.8h, v29.4s, #0x3
+0F2484BA shrn v26.2s, v5.2d, #0x1c
+4F388559 shrn2 v25.4s, v10.2d, #0x8
+4F7E8559 UNDEFINED
+0F7E8559 UNDEFINED
+4F788559 UNDEFINED
+4F798559 UNDEFINED
+4F7A8559 UNDEFINED
+4F7B8559 UNDEFINED
+4F7C8559 UNDEFINED
+4F7D8559 UNDEFINED
+4F7F8559 UNDEFINED
+4F468559 UNDEFINED
+4F1284AC shrn2 v12.8h, v5.4s, #0xe

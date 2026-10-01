@@ -1,0 +1,16 @@
+// FDOT_asimdelem_D 0|Q=x|U=0|0|111|1|size=00|L=x|M=x|Rm=xxxx|opcode=0000|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FdotAsimdelemD: FDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.4B[<index>]
+// read together by <Vm>: M, Rm
+// read together by <index>: L, H
+// register fields: Rn, Rd
+0F000006 fdot v6.2s, v0.8b, v0.4b[0]
+0F00000D fdot v13.2s, v0.8b, v0.4b[0]
+0F000014 fdot v20.2s, v0.8b, v0.4b[0]
+4F3F0BE0 fdot v0.4s, v31.16b, v31.4b[3]
+0F00001F fdot v31.2s, v0.8b, v0.4b[0]
+0F0F0800 fdot v0.2s, v0.8b, v15.4b[2]
+0F300006 fdot v6.2s, v0.8b, v16.4b[1]
+0F080006 fdot v6.2s, v0.8b, v8.4b[0]
+0F040006 fdot v6.2s, v0.8b, v4.4b[0]
+0F020006 fdot v6.2s, v0.8b, v2.4b[0]
+0F010006 fdot v6.2s, v0.8b, v1.4b[0]

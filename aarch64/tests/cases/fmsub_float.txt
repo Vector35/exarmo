@@ -1,0 +1,67 @@
+// FMSUB_D_floatdp3 M=0|0|S=0|11111|ftype=01|o1=0|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FmsubDFloatdp3: FMSUB  <Dd>, <Dn>, <Dm>, <Da>
+// register fields: Rm, Ra, Rn, Rd
+1F5994E5 fmsub d5, d7, d25, d5
+1F418389 fmsub d9, d28, d1, d0
+1F43E6D4 fmsub d20, d22, d3, d25
+1F5C8CCF fmsub d15, d6, d28, d3
+1F40E4BD fmsub d29, d5, d0, d25
+1F48EC25 fmsub d5, d1, d8, d27
+1F57A030 fmsub d16, d1, d23, d8
+1F5E8DDA fmsub d26, d14, d30, d3
+1F48D4DA fmsub d26, d6, d8, d21
+1F599279 fmsub d25, d19, d25, d4
+1F5E838F fmsub d15, d28, d30, d0
+1F44941B fmsub d27, d0, d4, d5
+1F4FDB74 fmsub d20, d27, d15, d22
+1F5BAB51 fmsub d17, d26, d27, d10
+1F5BE599 fmsub d25, d12, d27, d25
+1F528145 fmsub d5, d10, d18, d0
+1F5FFFE0 fmsub d0, d31, d31, d31
+1F5994FF fmsub d31, d7, d25, d5
+1F5994E7 fmsub d7, d7, d25, d5
+
+// FMSUB_H_floatdp3 M=0|0|S=0|11111|ftype=11|o1=0|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FmsubHFloatdp3: FMSUB  <Hd>, <Hn>, <Hm>, <Ha>
+// register fields: Rm, Ra, Rn, Rd
+1FDDDE0F fmsub h15, h16, h29, h23
+1FD9D2A4 fmsub h4, h21, h25, h20
+1FC0E00F fmsub h15, h0, h0, h24
+1FDAAA97 fmsub h23, h20, h26, h10
+1FD78B32 fmsub h18, h25, h23, h2
+1FD4C32F fmsub h15, h25, h20, h16
+1FD7E994 fmsub h20, h12, h23, h26
+1FC6DA4F fmsub h15, h18, h6, h22
+1FC8ACCF fmsub h15, h6, h8, h11
+1FC7916E fmsub h14, h11, h7, h4
+1FC4B021 fmsub h1, h1, h4, h12
+1FCCA001 fmsub h1, h0, h12, h8
+1FC6985B fmsub h27, h2, h6, h6
+1FCBF485 fmsub h5, h4, h11, h29
+1FD0B243 fmsub h3, h18, h16, h12
+1FD6DE53 fmsub h19, h18, h22, h23
+1FDF83E0 fmsub h0, h31, h31, h0
+1FDDFE1F fmsub h31, h16, h29, h31
+1FDDDEFD fmsub h29, h23, h29, h23
+
+// FMSUB_S_floatdp3 M=0|0|S=0|11111|ftype=00|o1=0|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// FmsubSFloatdp3: FMSUB  <Sd>, <Sn>, <Sm>, <Sa>
+// register fields: Rm, Ra, Rn, Rd
+1F1A813F fmsub s31, s9, s26, s0
+1F12FFF4 fmsub s20, s31, s18, s31
+1F10C872 fmsub s18, s3, s16, s18
+1F1DF4B6 fmsub s22, s5, s29, s29
+1F16D855 fmsub s21, s2, s22, s22
+1F039347 fmsub s7, s26, s3, s4
+1F1ECEBF fmsub s31, s21, s30, s19
+1F02DE1D fmsub s29, s16, s2, s23
+1F1AAEFA fmsub s26, s23, s26, s11
+1F129074 fmsub s20, s3, s18, s4
+1F15B281 fmsub s1, s20, s21, s12
+1F11E83C fmsub s28, s1, s17, s26
+1F0092C0 fmsub s0, s22, s0, s4
+1F1193C7 fmsub s7, s30, s17, s4
+1F1CB405 fmsub s5, s0, s28, s13
+1F1FCFDD fmsub s29, s30, s31, s19
+1F1A835F fmsub s31, s26, s26, s0
+1F1A8129 fmsub s9, s9, s26, s0

@@ -1,0 +1,111 @@
+// VMAXNM_A1_D 1111001|U=1|0|D=x|op=0|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VmaxnmA1D: VMAXNM{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f30baf3a vmaxnm.f32 d10, d11, d26
+f3529f3f vmaxnm.f16 d25, d2, d31
+f314cf34 vmaxnm.f16 d12, d4, d20
+f348af32 vmaxnm.f32 d26, d8, d18
+f3149f10 vmaxnm.f16 d9, d4, d0
+f3007f17 vmaxnm.f32 d7, d0, d7
+f3113f18 vmaxnm.f16 d3, d1, d8
+f35b0fb8 vmaxnm.f16 d16, d27, d24
+F30FFF31 vmaxnm.f32 d15, d15, d17
+F3008F9F vmaxnm.f32 d8, d16, d15
+F30F4F30 vmaxnm.f32 d4, d15, d16
+F30F2FBA vmaxnm.f32 d2, d31, d26
+F30B1F3A vmaxnm.f32 d1, d11, d26
+F30B0F3A vmaxnm.f32 d0, d11, d26
+F30BFF3A vmaxnm.f32 d15, d11, d26
+F34BFF3A vmaxnm.f32 d31, d11, d26
+
+// VMAXNM_A1_Q 1111001|U=1|0|D=x|op=0|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VmaxnmA1Q: VMAXNM{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f3520fd8 vmaxnm.f16 q8, q9, q4
+f3006f50 vmaxnm.f32 q3, q0, q0
+f31ccfd0 vmaxnm.f16 q6, q14, q0
+f3046f7c vmaxnm.f32 q3, q2, q14
+f34c6f7a vmaxnm.f32 q11, q6, q13
+f344ef5a vmaxnm.f32 q15, q2, q5
+f34ccff6 vmaxnm.f32 q14, q14, q11
+f3146fd0 vmaxnm.f16 q3, q10, q0
+F35FFFDF UNDEFINED
+F3588FD4 vmaxnm.f16 q12, q12, q2
+F3511FD1 UNDEFINED
+F3504FD2 vmaxnm.f16 q10, q8, q1
+F3522FF0 vmaxnm.f16 q9, q9, q8
+F3120FD8 vmaxnm.f16 q0, q9, q4
+F31FFF5F UNDEFINED
+F35FFFFF UNDEFINED
+
+// VMAXNM_A2_D 111111101|D=x|00|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=0|M=x|0|Vm=xxxx
+// VmaxnmA2D: VMAXNM{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fec49b0e vmaxnm.f64 d25, d4, d14
+fe810b2f vmaxnm.f64 d0, d1, d31
+fec7eba8 vmaxnm.f64 d30, d23, d24
+fe81eb2a vmaxnm.f64 d14, d1, d26
+fece2b8f vmaxnm.f64 d18, d30, d15
+fe85dbad vmaxnm.f64 d13, d21, d29
+fe88eb8e vmaxnm.f64 d14, d24, d14
+fec01b09 vmaxnm.f64 d17, d0, d9
+// Binary Ninja's tests
+fe865bae vmaxnm.f64 d5, d22, d30
+FECFFB00 vmaxnm.f64 d31, d15, d0
+FEC28B04 vmaxnm.f64 d24, d2, d4
+FEC04B82 vmaxnm.f64 d20, d16, d2
+FE8FFB01 vmaxnm.f64 d15, d15, d1
+FECF0B80 vmaxnm.f64 d16, d31, d0
+FEC4FB20 vmaxnm.f64 d31, d4, d16
+
+// VMAXNM_A2_H 111111101|D=x|00|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=0|M=x|0|Vm=xxxx
+// VmaxnmA2H: VMAXNM{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fec3d9a9 vmaxnm.f16 s27, s7, s19
+fecff92c vmaxnm.f16 s31, s30, s25
+fece0903 vmaxnm.f16 s1, s28, s6
+fec6a984 vmaxnm.f16 s21, s13, s8
+fe8b09ad vmaxnm.f16 s0, s23, s27
+fec3192b vmaxnm.f16 s3, s6, s23
+fe8fa9aa vmaxnm.f16 s20, s31, s21
+fec8c92e vmaxnm.f16 s25, s16, s29
+FEC089A0 vmaxnm.f16 s17, s1, s1
+FEC449AF vmaxnm.f16 s9, s9, s31
+FEC229A8 vmaxnm.f16 s5, s5, s17
+FE81F9A2 vmaxnm.f16 s30, s3, s5
+FEC0D921 vmaxnm.f16 s27, s0, s3
+FEC0D980 vmaxnm.f16 s27, s1, s0
+FEC3D98F vmaxnm.f16 s27, s7, s30
+FEC3D9A0 vmaxnm.f16 s27, s7, s1
+FEC3D9AF vmaxnm.f16 s27, s7, s31
+
+// VMAXNM_A2_S 111111101|D=x|00|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=0|M=x|0|Vm=xxxx
+// VmaxnmA2S: VMAXNM{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe8fca09 vmaxnm.f32 s24, s30, s18
+fece2aa0 vmaxnm.f32 s5, s29, s1
+fe803a00 vmaxnm.f32 s6, s0, s0
+feca7a8e vmaxnm.f32 s15, s21, s28
+fecfba2c vmaxnm.f32 s23, s30, s25
+fecafa85 vmaxnm.f32 s31, s21, s10
+fec73a8b vmaxnm.f32 s7, s15, s22
+fec9ba20 vmaxnm.f32 s23, s18, s1
+// Binary Ninja's tests
+fec62a00 vmaxnm.f32 s5, s12, s0
+FE880A0F vmaxnm.f32 s0, s16, s30
+FE848A08 vmaxnm.f32 s16, s8, s16
+FE824A04 vmaxnm.f32 s8, s4, s8
+FE811A02 vmaxnm.f32 s2, s2, s4
+FE800A81 vmaxnm.f32 s0, s1, s2
+FE8FFA8F vmaxnm.f32 s30, s31, s30
+FECF0A2F vmaxnm.f32 s1, s30, s31

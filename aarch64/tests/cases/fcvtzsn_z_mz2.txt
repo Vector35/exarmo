@@ -1,0 +1,10 @@
+// fcvtzsn_z_mz2_ 011|0010|1|size=xx|001|101|0011|0|U=0|Zn=xxxx|0|Zd=xxxxx
+// FcvtzsnZMz2: FCVTZSN  <Zd>.<T>, { <Zn1>.<Tb>-<Zn2>.<Tb> }
+// register fields: Zn, Zd
+654D3001 fcvtzsn z1.b, {z0.h-z1.h}
+654D3008 fcvtzsn z8.b, {z0.h-z1.h}
+654D300F fcvtzsn z15.b, {z0.h-z1.h}
+658D33C0 fcvtzsn z0.h, {z30.s-z31.s}
+65CD301F fcvtzsn z31.s, {z0.d-z1.d}
+650D3001 UNDEFINED
+654D3000 fcvtzsn z0.b, {z0.h-z1.h}

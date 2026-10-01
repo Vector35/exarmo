@@ -1,0 +1,44 @@
+// VMOV_ss_A1 cond=xxxx|11000|D=1|0|op=1|Rt2=xxxx|Rt=xxxx|10|size=10|opc2=00|M=x|o3=1|Vm=xxxx
+// VmovSsA1: VMOV{<c>}{<q>}  <Rt>, <Rt2>, <Sm>, <Sm1>
+// read together by <Sm> and <Sm1>: M, Vm
+// register fields: Rt2, Rt
+1c5bca30 vmovne r12, r11, s1, s2
+ec57ea12 vmov lr, r7, s4, s5
+cc56ca14 vmovgt r12, r6, s8, s9
+1c569a1f vmovne r9, r6, s30, s31
+3c575a1d vmovlo r5, r7, s26, s27
+1c55ba30 vmovne r11, r5, s1, s2
+ec5f1a3c vmov r1, pc, s25, s26 (unpredictable)
+bc5e5a18 vmovlt r5, lr, s16, s17
+// Binary Ninja's tests
+ec521a11 vmov r1, r2, s2, s3
+ec521a31 vmov r1, r2, s3, s4
+0C500A10 vmoveq r0, r0, s0, s1 (unpredictable)
+FC5BCA30 UNALLOCATED
+8C5BFA3F UNPREDICTABLE
+4C5BBA30 vmovmi r11, r11, s1, s2 (unpredictable)
+2C5BCA30 vmovcs r12, r11, s1, s2
+8C5BFA30 vmovhi pc, r11, s1, s2 (unpredictable)
+
+// VMOV_toss_A1 cond=xxxx|11000|D=1|0|op=0|Rt2=xxxx|Rt=xxxx|10|size=10|opc2=00|M=x|o3=1|Vm=xxxx
+// VmovTossA1: VMOV{<c>}{<q>}  <Sm>, <Sm1>, <Rt>, <Rt2>
+// read together by <Sm> and <Sm1>: M, Vm
+// register fields: Rt2, Rt
+3c4b2a1f vmovlo s30, s31, r2, r11
+cc4e1a14 vmovgt s8, s9, r1, lr
+bc4f8a1f vmovlt s30, s31, r8, pc (unpredictable)
+9c441a36 vmovls s13, s14, r1, r4
+5c45ba1e vmovpl s28, s29, r11, r5
+6c49fa33 vmovvs s7, s8, pc, r9 (unpredictable)
+9c427a18 vmovls s16, s17, r7, r2
+cc4aaa37 vmovgt s15, s16, r10, r10
+// Binary Ninja's tests
+ec421a11 vmov s2, s3, r1, r2
+ec421a31 vmov s3, s4, r1, r2
+0C400A10 vmoveq s0, s1, r0, r0
+FC4B2A1F UNALLOCATED
+8C4B2A12 vmovhi s4, s5, r2, r11
+4C4B2A10 vmovmi s0, s1, r2, r11
+2C4B2A30 vmovcs s1, s2, r2, r11
+1C4B2A3F UNPREDICTABLE
+1C4B2A1F vmovne s30, s31, r2, r11

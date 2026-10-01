@@ -1,0 +1,43 @@
+// eors_p_p_pp_z 001|0010|1|op=0|S=1|00|Pm=xxxx|01|Pg=xxxx|o2=1|Pn=xxxx|o3=0|Pd=xxxx
+// EorsPPPpZ: EORS  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// NotsPPPZEorsPPPpZ: NOTS  <Pd>.B, <Pg>/Z, <Pn>.B
+// read together by the NOTS alias: Pm, Pg
+// register fields: Pm, Pg, Pn, Pd
+// form chosen on: Pm, Pg
+25486284 nots p4.b, p8/z, p4.b
+25486226 nots p6.b, p8/z, p1.b
+254C7226 nots p6.b, p12/z, p1.b
+254043E3 nots p3.b, p0/z, p15.b
+254146A6 nots p6.b, p1/z, p5.b
+254E7B6C nots p12.b, p14/z, p11.b
+25424B86 nots p6.b, p2/z, p12.b
+254B6E4A nots p10.b, p11/z, p2.b
+25404341 nots p1.b, p0/z, p10.b
+254A6B66 nots p6.b, p10/z, p11.b
+25496682 nots p2.b, p9/z, p4.b
+25434F6F nots p15.b, p3/z, p11.b
+254D7722 nots p2.b, p13/z, p9.b
+254C7264 nots p4.b, p12/z, p3.b
+254D7685 nots p5.b, p13/z, p4.b
+25465BAC nots p12.b, p6/z, p13.b
+254A6F2D eors p13.b, p11/z, p9.b, p10.b
+254D524E eors p14.b, p4/z, p2.b, p13.b
+254D67C0 eors p0.b, p9/z, p14.b, p13.b
+25457328 eors p8.b, p12/z, p9.b, p5.b
+25455B45 eors p5.b, p6/z, p10.b, p5.b
+2543638D eors p13.b, p8/z, p12.b, p3.b
+254E73E6 eors p6.b, p12/z, p15.b, p14.b
+254963CA eors p10.b, p8/z, p14.b, p9.b
+25427E04 eors p4.b, p15/z, p0.b, p2.b
+254B6764 eors p4.b, p9/z, p11.b, p11.b
+25407225 eors p5.b, p12/z, p1.b, p0.b
+254F4641 eors p1.b, p1/z, p2.b, p15.b
+25484340 eors p0.b, p0/z, p10.b, p8.b
+254F628C eors p12.b, p8/z, p4.b, p15.b
+254E5F67 eors p7.b, p7/z, p11.b, p14.b
+25456A46 eors p6.b, p10/z, p2.b, p5.b
+25407E84 eors p4.b, p15/z, p4.b, p0.b
+254F4284 eors p4.b, p0/z, p4.b, p15.b
+254F7E84 nots p4.b, p15/z, p4.b
+25486304 nots p4.b, p8/z, p8.b
+25414341 eors p1.b, p0/z, p10.b, p1.b

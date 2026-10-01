@@ -1,0 +1,41 @@
+// VCEQ_i_A1_D 111100111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|010|Q=0|M=x|0|Vm=xxxx
+// VceqIA1D: VCEQ{<c>}{<q>}.<dt>  {<Dd>, }<Dm>, #0
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b5f502 vceq.f16 d15, d2, #0
+f3b5510c vceq.i16 d5, d12, #0
+f3b9b10a vceq.i32 d11, d10, #0
+f3b55529 vceq.f16 d5, d25, #0
+f3b5b121 vceq.i16 d11, d17, #0
+f3f1b12a vceq.i8 d27, d26, #0
+f3f5812d vceq.i16 d24, d29, #0
+f3f56122 vceq.i16 d22, d18, #0
+F3BDF502 UNDEFINED
+F3B90500 vceq.f32 d0, d0, #0x0
+F3B5450F vceq.f16 d4, d15, #0x0
+F3B52508 vceq.f16 d2, d8, #0x0
+F3B51504 vceq.f16 d1, d4, #0x0
+F3B1F502 UNDEFINED
+F3BDF102 UNDEFINED
+F3B50500 vceq.f16 d0, d0, #0x0
+F3F5050F vceq.f16 d16, d15, #0x0
+F3F5F520 vceq.f16 d31, d16, #0x0
+F3B5F52F vceq.f16 d15, d31, #0x0
+
+// VCEQ_i_A1_Q 111100111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|010|Q=1|M=x|0|Vm=xxxx
+// VceqIA1Q: VCEQ{<c>}{<q>}.<dt>  {<Qd>, }<Qm>, #0
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f9a166 vceq.i32 q13, q11, #0
+f3f98544 vceq.f32 q12, q2, #0
+F3B10160 vceq.i8 q0, q8, #0x0
+F3F54168 vceq.i16 q10, q12, #0x0
+F3FDF16F UNDEFINED
+F3F12162 vceq.i8 q9, q9, #0x0
+F3F11561 UNDEFINED
+F3B50140 vceq.i16 q0, q0, #0x0
+F3F50560 vceq.f16 q8, q8, #0x0
+F3BDF14F UNDEFINED
+F3FDF56F UNDEFINED

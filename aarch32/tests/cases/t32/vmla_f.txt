@@ -1,0 +1,122 @@
+// VMLA_f_T1_D 111|U=0|11110|D=x|op=0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VmlaFT1D: VMLA{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef1ccdb7 vmla.f16 d12, d28, d23
+ef5d7d17 vmla.f16 d23, d13, d7
+ef497d10 vmla.f32 d23, d9, d0
+ef07edbd vmla.f32 d14, d23, d29
+ef14ed36 vmla.f16 d14, d4, d22
+ef5cdd9c vmla.f16 d29, d28, d12
+ef43bd3e vmla.f32 d27, d3, d30
+ef456d39 vmla.f32 d22, d5, d25
+EF100DBF vmla.f16 d0, d16, d31
+EF1FFDB8 vmla.f16 d15, d31, d24
+EF188DB4 vmla.f16 d8, d24, d20
+EF124DB2 vmla.f16 d4, d18, d18
+EF112DB1 vmla.f16 d2, d17, d17
+EF101D1F vmla.f16 d1, d0, d15
+EF100DB0 vmla.f16 d0, d16, d16
+EF1FFD3F vmla.f16 d15, d15, d31
+EF5F0DB7 vmla.f16 d16, d31, d23
+EF5CFDB7 vmla.f16 d31, d28, d23
+EF1CCDB7 [ne] vmlane.f16 d12, d28, d23 (unpredictable)
+
+// VMLA_f_T1_Q 111|U=0|11110|D=x|op=0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VmlaFT1Q: VMLA{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef162d78 vmla.f16 q1, q3, q12
+ef0caddc vmla.f32 q5, q14, q6
+ef1c4d70 vmla.f16 q2, q6, q8
+ef482df6 vmla.f32 q9, q12, q11
+ef584d58 vmla.f16 q10, q4, q4
+ef4eedd2 vmla.f32 q15, q15, q1
+ef080d7e vmla.f32 q0, q4, q15
+ef144d5c vmla.f16 q2, q2, q6
+EF108D74 vmla.f16 q4, q0, q10
+EF1FFD7F UNDEFINED
+EF520D50 vmla.f16 q8, q1, q0
+EF111D71 UNDEFINED
+EF1FFD5F UNDEFINED
+EF5FFDFF UNDEFINED
+EF102D78 vmla.f16 q1, q0, q12
+EF102DF8 vmla.f16 q1, q8, q12
+EF162D78 [ne] vmlane.f16 q1, q3, q12 (unpredictable)
+
+// VMLA_f_T2_D 11101110|o0=0|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=0|M=x|0|Vm=xxxx
+// VmlaFT2D: VMLA{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ee0efb0c vmla.f64 d15, d14, d12
+ee0fcb2d vmla.f64 d12, d15, d29
+ee472b8d vmla.f64 d18, d23, d13
+ee419ba0 vmla.f64 d25, d17, d16
+ee093b29 vmla.f64 d3, d9, d25
+ee004bae vmla.f64 d4, d16, d30
+ee47bb89 vmla.f64 d27, d23, d9
+ee031ba8 vmla.f64 d1, d19, d24
+EE080B0F vmla.f64 d0, d8, d15
+EE048B04 vmla.f64 d8, d4, d4
+EE020B02 vmla.f64 d0, d2, d2
+EE400B01 vmla.f64 d16, d0, d1
+EE4FFB80 vmla.f64 d31, d31, d0
+EE0EFB0F vmla.f64 d15, d14, d15
+EE0EFB2F vmla.f64 d15, d14, d31
+EE0EFB0C [ne] vmlane.f64 d15, d14, d12
+
+// VMLA_f_T2_H 11101110|o0=0|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=0|M=x|0|Vm=xxxx
+// VmlaFT2H: VMLA{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee44e987 vmla.f16 s29, s9, s14
+ee4c4907 vmla.f16 s9, s24, s14
+ee4e3902 vmla.f16 s7, s28, s4
+ee0b6986 vmla.f16 s12, s23, s12
+ee49f92c vmla.f16 s31, s18, s25
+ee03c90b vmla.f16 s24, s6, s22
+ee0dc927 vmla.f16 s24, s26, s15
+ee41f925 vmla.f16 s31, s2, s11
+EE400980 vmla.f16 s1, s1, s0
+EE4F898F vmla.f16 s17, s31, s30
+EE482988 vmla.f16 s5, s17, s16
+EE421984 vmla.f16 s3, s5, s8
+EE000901 vmla.f16 s0, s0, s2
+EE00F980 vmla.f16 s30, s1, s0
+EE4F090F vmla.f16 s1, s30, s30
+EE4FE9A0 vmla.f16 s29, s31, s1
+EE44E9AF vmla.f16 s29, s9, s31
+EE44E987 [ne] vmlane.f16 s29, s9, s14 (unpredictable)
+
+// VMLA_f_T2_S 11101110|o0=0|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=0|M=x|0|Vm=xxxx
+// VmlaFT2S: VMLA{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee4c7a84 vmla.f32 s15, s25, s8
+ee0e6a2b vmla.f32 s12, s28, s23
+ee4d5a8d vmla.f32 s11, s27, s26
+ee4fba8e vmla.f32 s23, s31, s28
+ee03ca01 vmla.f32 s24, s6, s2
+ee4c1a2b vmla.f32 s3, s24, s23
+ee0c6a0a vmla.f32 s12, s24, s20
+ee0c7a24 vmla.f32 s14, s24, s9
+EE400A80 vmla.f32 s1, s1, s0
+EE48FA8F vmla.f32 s31, s17, s30
+EE448A88 vmla.f32 s17, s9, s16
+EE424A82 vmla.f32 s9, s5, s4
+EE412A80 vmla.f32 s5, s3, s0
+EE000A0F vmla.f32 s0, s0, s30
+EE00FAA0 vmla.f32 s30, s1, s1
+EE4F0A2F vmla.f32 s1, s30, s31
+EE4CFA84 vmla.f32 s31, s25, s8
+EE4C7A84 [ne] vmlane.f32 s15, s25, s8

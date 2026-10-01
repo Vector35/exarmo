@@ -1,0 +1,12 @@
+// STL_T1 111|0100|op0=0110|L=0|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=0|sz=10|Rd=(1)(1)(1)(1)
+// StlT1: STL{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// IT state read: condition
+E8C000A0 stl r0, [r0] (unpredictable)
+E8CFFFAF stl pc, [pc] (unpredictable)
+E8C008A8 stl r0, [r0] (unpredictable)
+E8C004A4 stl r0, [r0] (unpredictable)
+E8C002A2 stl r0, [r0] (unpredictable)
+E8C001A1 stl r0, [r0] (unpredictable)
+E8C000A0 [ne] stlne r0, [r0] (unpredictable)
+E8C12FAF stl r2, [r1]

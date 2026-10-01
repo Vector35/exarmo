@@ -1,0 +1,86 @@
+// SQSHRN_asimdshf_N 0|Q=x|U=0|0|111|10|immh=xxxx|immb=xxx|1001|op=0|1|Rn=xxxxx|Rd=xxxxx
+// SqshrnAsimdshfN: SQSHRN  <Vd>.<Tb>, <Vn>.<Ta>, #<shift>
+// SqshrnAsimdshfN2: SQSHRN2  <Vd>.<Tb>, <Vn>.<Ta>, #<shift>
+// read together by <Tb>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+// form chosen on: Q
+0F1897FC sqshrn v28.4h, v31.4s, #0x8
+4F2796A9 sqshrn2 v9.4s, v21.2d, #0x19
+0F2B94B5 sqshrn v21.2s, v5.2d, #0x15
+4F2D96F2 sqshrn2 v18.4s, v23.2d, #0x13
+4F0997AE sqshrn2 v14.16b, v29.8h, #0x7
+0F199471 sqshrn v17.4h, v3.4s, #0x7
+4F1A97D7 sqshrn2 v23.8h, v30.4s, #0x6
+4F3A96A9 sqshrn2 v9.4s, v21.2d, #0x6
+4F1396C9 sqshrn2 v9.8h, v22.4s, #0xd
+4F0D9617 sqshrn2 v23.16b, v16.8h, #0x3
+0F0B951B sqshrn v27.8b, v8.8h, #0x5
+4F31959F sqshrn2 v31.4s, v12.2d, #0xf
+0F3E964B sqshrn v11.2s, v18.2d, #0x2
+0F119659 sqshrn v25.4h, v18.4s, #0xf
+4F2B952A sqshrn2 v10.4s, v9.2d, #0x15
+0F3897FD sqshrn v29.2s, v31.2d, #0x8
+0F1C9400 sqshrn v0.4h, v0.4s, #0x4
+0F7897FC UNDEFINED
+4F7897FC UNDEFINED
+0F7997FC UNDEFINED
+0F7A97FC UNDEFINED
+0F7B97FC UNDEFINED
+0F7C97FC UNDEFINED
+0F7D97FC UNDEFINED
+0F7E97FC UNDEFINED
+0F7F97FC UNDEFINED
+0F4097FC UNDEFINED
+4F0B951B sqshrn2 v27.16b, v8.8h, #0x5
+
+// SQSHRN_asisdshf_N 01|U=0|1|111|10|immh=xxxx|immb=xxx|1001|op=0|1|Rn=xxxxx|Rd=xxxxx
+// SqshrnAsisdshfN: SQSHRN  <Vb><d>, <Va><n>, #<shift>
+// read together by <d>: immh, Rd
+// read together by <n>: immh, Rn
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+5F2197AC sqshrn s12, d29, #0x1f
+5F119431 sqshrn h17, s1, #0xf
+5F32960D sqshrn s13, d16, #0xe
+5F14952C sqshrn h12, s9, #0xc
+5F1594EA sqshrn h10, s7, #0xb
+5F3F941E sqshrn s30, d0, #0x1
+5F21947F sqshrn s31, d3, #0x1f
+5F1794B0 sqshrn h16, s5, #0x9
+5F3397A6 sqshrn s6, d29, #0xd
+5F1696F9 sqshrn h25, s23, #0xa
+5F379616 sqshrn s22, d16, #0x9
+5F3C9604 sqshrn s4, d16, #0x4
+5F1F96DC sqshrn h28, s22, #0x1
+5F33947F sqshrn s31, d3, #0xd
+5F299502 sqshrn s2, d8, #0x17
+5F30971B sqshrn s27, d24, #0x10
+5F2197E0 sqshrn s0, d31, #0x1f
+5F0197AC UNALLOCATED
+5F7997AC UNDEFINED
+5F0197A0 UNALLOCATED
+5F0197BF UNALLOCATED
+5F7997A0 UNDEFINED
+5F7997BF UNDEFINED
+5F01940C UNALLOCATED
+5F0197EC UNALLOCATED
+5F79940C UNDEFINED
+5F7997EC UNDEFINED
+5F0097AC UNALLOCATED
+5F0297AC UNALLOCATED
+5F0397AC UNALLOCATED
+5F0497AC UNALLOCATED
+5F0597AC UNALLOCATED
+5F0697AC UNALLOCATED
+5F0797AC UNALLOCATED
+5F7897AC UNDEFINED
+5F7A97AC UNDEFINED
+5F7B97AC UNDEFINED
+5F7C97AC UNDEFINED
+5F7D97AC UNDEFINED
+5F7E97AC UNDEFINED
+5F7F97AC UNDEFINED
+5F2197BD sqshrn s29, d29, #0x1f
+5F4197AC UNDEFINED
+5F0997AC sqshrn b12, h29, #0x7

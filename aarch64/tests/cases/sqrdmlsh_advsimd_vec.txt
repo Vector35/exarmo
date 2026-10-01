@@ -1,0 +1,72 @@
+// SQRDMLSH_asimdsame2_only 0|Q=x|U=1|0|111|0|size=xx|0|Rm=xxxxx|1|000|S=1|1|Rn=xxxxx|Rd=xxxxx
+// SqrdmlshAsimdsame2Only: SQRDMLSH  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E918DF9 sqrdmlsh v25.4s, v15.4s, v17.4s
+2E8B8C8E sqrdmlsh v14.2s, v4.2s, v11.2s
+6E888FE4 sqrdmlsh v4.4s, v31.4s, v8.4s
+6E838E85 sqrdmlsh v5.4s, v20.4s, v3.4s
+2E998F32 sqrdmlsh v18.2s, v25.2s, v25.2s
+2E528F19 sqrdmlsh v25.4h, v24.4h, v18.4h
+2E568EC9 sqrdmlsh v9.4h, v22.4h, v22.4h
+6E4C8C03 sqrdmlsh v3.8h, v0.8h, v12.8h
+2E928D05 sqrdmlsh v5.2s, v8.2s, v18.2s
+2E9F8C7A sqrdmlsh v26.2s, v3.2s, v31.2s
+6E908FD3 sqrdmlsh v19.4s, v30.4s, v16.4s
+6E4A8D2D sqrdmlsh v13.8h, v9.8h, v10.8h
+6E5C8EF7 sqrdmlsh v23.8h, v23.8h, v28.8h
+6E448D1C sqrdmlsh v28.8h, v8.8h, v4.8h
+6E4F8C76 sqrdmlsh v22.8h, v3.8h, v15.8h
+6E808EA8 sqrdmlsh v8.4s, v21.4s, v0.4s
+6E918DE0 sqrdmlsh v0.4s, v15.4s, v17.4s
+6E918DFF sqrdmlsh v31.4s, v15.4s, v17.4s
+6E118DF9 UNDEFINED
+6ED18DF9 UNDEFINED
+2E118DF9 UNDEFINED
+2ED18DF9 UNDEFINED
+6E918DF1 sqrdmlsh v17.4s, v15.4s, v17.4s
+
+// SQRDMLSH_asisdsame2_only 01|U=1|1|111|0|size=xx|0|Rm=xxxxx|1|000|S=1|1|Rn=xxxxx|Rd=xxxxx
+// SqrdmlshAsisdsame2Only: SQRDMLSH  <V><d>, <V><n>, <V><m>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, Rm
+// register fields: Rm, Rn, Rd
+7E998C70 sqrdmlsh s16, s3, s25
+7E5A8FC7 sqrdmlsh h7, h30, h26
+7E498DED sqrdmlsh h13, h15, h9
+7E938DF1 sqrdmlsh s17, s15, s19
+7E448C0A sqrdmlsh h10, h0, h4
+7E8B8C6F sqrdmlsh s15, s3, s11
+7E878D67 sqrdmlsh s7, s11, s7
+7E9D8CBB sqrdmlsh s27, s5, s29
+7E578DB4 sqrdmlsh h20, h13, h23
+7E928E35 sqrdmlsh s21, s17, s18
+7E938E12 sqrdmlsh s18, s16, s19
+7E488DEC sqrdmlsh h12, h15, h8
+7E8D8F6C sqrdmlsh s12, s27, s13
+7E408CEF sqrdmlsh h15, h7, h0
+7E4B8D7B sqrdmlsh h27, h11, h11
+7E8F8C66 sqrdmlsh s6, s3, s15
+7E9F8FE0 sqrdmlsh s0, s31, s31
+7E998C7F sqrdmlsh s31, s3, s25
+7E198C70 UNDEFINED
+7ED98C70 UNDEFINED
+7E198C60 UNDEFINED
+7E198C7F UNDEFINED
+7E598C60 sqrdmlsh h0, h3, h25
+7E598C7F sqrdmlsh h31, h3, h25
+7ED98C60 UNDEFINED
+7ED98C7F UNDEFINED
+7E008C70 UNDEFINED
+7E1F8C70 UNDEFINED
+7E5F8C63 sqrdmlsh h3, h3, h31
+7E808C70 sqrdmlsh s16, s3, s0
+7EC08C70 UNDEFINED
+7EDF8C70 UNDEFINED
+7E198C10 UNDEFINED
+7E198FF0 UNDEFINED
+7E598FF0 sqrdmlsh h16, h31, h25
+7E998C10 sqrdmlsh s16, s0, s25
+7ED98C10 UNDEFINED
+7ED98FF0 UNDEFINED

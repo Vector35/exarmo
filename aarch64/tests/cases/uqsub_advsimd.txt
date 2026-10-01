@@ -1,0 +1,67 @@
+// UQSUB_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|opcode=00101|1|Rn=xxxxx|Rd=xxxxx
+// UqsubAsimdsameOnly: UQSUB  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6EEE2C4E uqsub v14.2d, v2.2d, v14.2d
+2E6C2D0C uqsub v12.4h, v8.4h, v12.4h
+2E712ED1 uqsub v17.4h, v22.4h, v17.4h
+6EA82FB0 uqsub v16.4s, v29.4s, v8.4s
+6E612F1E uqsub v30.8h, v24.8h, v1.8h
+6E6E2FB8 uqsub v24.8h, v29.8h, v14.8h
+6EED2E2F uqsub v15.2d, v17.2d, v13.2d
+2EB62D22 uqsub v2.2s, v9.2s, v22.2s
+2E3A2E77 uqsub v23.8b, v19.8b, v26.8b
+6EEF2D00 uqsub v0.2d, v8.2d, v15.2d
+6E612F29 uqsub v9.8h, v25.8h, v1.8h
+6E3E2D3F uqsub v31.16b, v9.16b, v30.16b
+2E392EF8 uqsub v24.8b, v23.8b, v25.8b
+6E272EF9 uqsub v25.16b, v23.16b, v7.16b
+6EAC2CEB uqsub v11.4s, v7.4s, v12.4s
+2E222C49 uqsub v9.8b, v2.8b, v2.8b
+6EE02C0E uqsub v14.2d, v0.2d, v0.2d
+6EFF2FEE uqsub v14.2d, v31.2d, v31.2d
+2EEE2C4E UNDEFINED
+6EEE2C42 uqsub v2.2d, v2.2d, v14.2d
+
+// UQSUB_asisdsame_only 01|U=1|1|111|0|size=xx|1|Rm=xxxxx|opcode=00101|1|Rn=xxxxx|Rd=xxxxx
+// UqsubAsisdsameOnly: UQSUB  <V><d>, <V><n>, <V><m>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, Rm
+// register fields: Rm, Rn, Rd
+7EB82C58 uqsub s24, s2, s24
+7EF72D42 uqsub d2, d10, d23
+7EA32E62 uqsub s2, s19, s3
+7E782D7D uqsub h29, h11, h24
+7EE92E97 uqsub d23, d20, d9
+7E2D2D80 uqsub b0, b12, b13
+7E6E2C4A uqsub h10, h2, h14
+7E642EA3 uqsub h3, h21, h4
+7E722FB0 uqsub h16, h29, h18
+7E752D50 uqsub h16, h10, h21
+7EFA2CB1 uqsub d17, d5, d26
+7EFF2CEB uqsub d11, d7, d31
+7EA92D61 uqsub s1, s11, s9
+7EE12F8E uqsub d14, d28, d1
+7E792C6A uqsub h10, h3, h25
+7EA62CA5 uqsub s5, s5, s6
+7EA02C1F uqsub s31, s0, s0
+7EB82FF8 uqsub s24, s31, s24
+7E382C5F uqsub b31, b2, b24
+7E782C40 uqsub h0, h2, h24
+7E782C5F uqsub h31, h2, h24
+7EB82C40 uqsub s0, s2, s24
+7EF82C40 uqsub d0, d2, d24
+7EF82C5F uqsub d31, d2, d24
+7E202C58 uqsub b24, b2, b0
+7E3F2C58 uqsub b24, b2, b31
+7E602C58 uqsub h24, h2, h0
+7E7F2C58 uqsub h24, h2, h31
+7EBF2C58 uqsub s24, s2, s31
+7EE02C58 uqsub d24, d2, d0
+7E382C18 uqsub b24, b0, b24
+7E382FF8 uqsub b24, b31, b24
+7E782C18 uqsub h24, h0, h24
+7E782FF8 uqsub h24, h31, h24
+7EF82C18 uqsub d24, d0, d24
+7EF82FF8 uqsub d24, d31, d24

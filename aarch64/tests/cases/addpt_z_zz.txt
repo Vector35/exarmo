@@ -1,0 +1,10 @@
+// addpt_z_zz_ 000|0010|0|size=11|1|Zm=xxxxx|000|opc=010|Zn=xxxxx|Zd=xxxxx
+// AddptZZz: ADDPT  <Zd>.D, <Zn>.D, <Zm>.D
+// register fields: Zm, Zn, Zd
+04E00806 addpt z6.d, z0.d, z0.d
+04E0080D addpt z13.d, z0.d, z0.d
+04E00814 addpt z20.d, z0.d, z0.d
+04FF0BE0 addpt z0.d, z31.d, z31.d
+04E0081F addpt z31.d, z0.d, z0.d
+04E00800 addpt z0.d, z0.d, z0.d
+04E10843 addpt z3.d, z2.d, z1.d

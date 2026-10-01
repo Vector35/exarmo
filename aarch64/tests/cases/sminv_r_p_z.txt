@@ -1,0 +1,28 @@
+// sminv_r_p_z_ 000|0010|0|size=xx|0|010|op=1|U=0|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// SminvRPZ: SMINV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+040A2893 sminv b19, p2, z4.b
+04CA30DB sminv d27, p4, z6.d
+048A2C68 sminv s8, p3, z3.s
+048A3DBB sminv s27, p7, z13.s
+040A304B sminv b11, p4, z2.b
+044A2E76 sminv h22, p3, z19.h
+040A2604 sminv b4, p1, z16.b
+048A2EE2 sminv s2, p3, z23.s
+048A2A21 sminv s1, p2, z17.s
+044A3122 sminv h2, p4, z9.h
+040A3D39 sminv b25, p7, z9.b
+040A2447 sminv b7, p1, z2.b
+04CA38B5 sminv d21, p6, z5.d
+048A36C5 sminv s5, p5, z22.s
+048A299C sminv s28, p2, z12.s
+040A26E8 sminv b8, p1, z23.b
+040A2000 sminv b0, p0, z0.b
+040A2BFF sminv b31, p2, z31.b
+044A2880 sminv h0, p2, z4.h
+044A289F sminv h31, p2, z4.h
+048A2880 sminv s0, p2, z4.s
+048A289F sminv s31, p2, z4.s
+04CA2880 sminv d0, p2, z4.d
+04CA289F sminv d31, p2, z4.d

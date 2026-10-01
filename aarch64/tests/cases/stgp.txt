@@ -1,0 +1,89 @@
+// STGP_64_ldstpair_off opc=01|10|1|VR=0|0|10|L=0|simm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Stgp64LdstpairOff: STGP  <Xt1>, <Xt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+691FC8DC stgp x28, x18, [x6, #0x3f0]
+690A6BA6 stgp x6, x26, [fp, #0x140]
+69373F91 stgp x17, x15, [x28, #-0x120]
+691D26E7 stgp x7, x9, [x23, #0x3a0]
+690899E5 stgp x5, x6, [x15, #0x110]
+693314AD stgp x13, x5, [x5, #-0x1a0]
+690B0675 stgp x21, x1, [x19, #0x160]
+692ECBA2 stgp x2, x18, [fp, #-0x230]
+693782DD stgp fp, x0, [x22, #-0x110]
+69373AC5 stgp x5, x14, [x22, #-0x120]
+692CB499 stgp x25, x13, [x4, #-0x270]
+69225798 stgp x24, x21, [x28, #-0x3c0]
+6928BCE9 stgp x9, x15, [x7, #-0x2f0]
+692CE132 stgp x18, x24, [x9, #-0x270]
+692A2B5A stgp x26, x10, [x26, #-0x2c0]
+692738E1 stgp x1, x14, [x7, #-0x320]
+69007C00 stgp x0, xzr, [x0]
+693FCBFF stgp xzr, x18, [sp, #-0x10]
+691FC8D2 stgp x18, x18, [x6, #0x3f0]
+692048DC stgp x28, x18, [x6, #-0x400]
+691048DC stgp x28, x18, [x6, #0x200]
+690848DC stgp x28, x18, [x6, #0x100]
+690448DC stgp x28, x18, [x6, #0x80]
+690248DC stgp x28, x18, [x6, #0x40]
+690148DC stgp x28, x18, [x6, #0x20]
+6900C8DC stgp x28, x18, [x6, #0x10]
+
+// STGP_64_ldstpair_post opc=01|10|1|VR=0|0|01|L=0|simm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Stgp64LdstpairPost: STGP  <Xt1>, <Xt2>, [<Xn|SP>], #<imm>
+// register fields: Rt2, Rn, Rt
+68966124 stgp x4, x24, [x9], #0x2c0
+6884FEAA stgp x10, xzr, [x21], #0x90
+688AA466 stgp x6, x9, [x3], #0x150
+689E40D7 stgp x23, x16, [x6], #0x3c0
+688C9595 stgp x21, x5, [x12], #0x190
+688B92D1 stgp x17, x4, [x22], #0x170
+68AC64C3 stgp x3, x25, [x6], #-0x280
+68B3915C stgp x28, x4, [x10], #-0x190
+68BF50CA stgp x10, x20, [x6], #-0x20
+68AC0F3D stgp fp, x3, [x25], #-0x280
+6898DFED stgp x13, x23, [sp], #0x310
+68806EA1 stgp x1, x27, [x21], #0x0
+688E4F65 stgp x5, x19, [x27], #0x1c0
+68AFAC34 stgp x20, x11, [x1], #-0x210
+68964C94 stgp x20, x19, [x4], #0x2c0
+68B2E828 stgp x8, x26, [x1], #-0x1b0
+68BF8000 stgp x0, x0, [x0], #-0x10
+6896613F stgp xzr, x24, [x9], #0x2c0
+68A06124 stgp x4, x24, [x9], #-0x400
+68906124 stgp x4, x24, [x9], #0x200
+68886124 stgp x4, x24, [x9], #0x100
+68846124 stgp x4, x24, [x9], #0x80
+68826124 stgp x4, x24, [x9], #0x40
+68816124 stgp x4, x24, [x9], #0x20
+6880E124 stgp x4, x24, [x9], #0x10
+
+// STGP_64_ldstpair_pre opc=01|10|1|VR=0|0|11|L=0|simm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Stgp64LdstpairPre: STGP  <Xt1>, <Xt2>, [<Xn|SP>, #<imm>]!
+// register fields: Rt2, Rn, Rt
+69B13D20 stgp x0, x15, [x9, #-0x1e0]!
+69B74269 stgp x9, x16, [x19, #-0x120]!
+69895160 stgp x0, x20, [x11, #0x120]!
+69BA19EE stgp x14, x6, [x15, #-0xc0]!
+69893730 stgp x16, x13, [x25, #0x120]!
+69A991C1 stgp x1, x4, [x14, #-0x2d0]!
+69933CC7 stgp x7, x15, [x6, #0x260]!
+6998226A stgp x10, x8, [x19, #0x300]!
+6994F12F stgp x15, x28, [x9, #0x290]!
+69A8B753 stgp x19, x13, [x26, #-0x2f0]!
+698AC328 stgp x8, x16, [x25, #0x150]!
+69B8DB8A stgp x10, x22, [x28, #-0xf0]!
+69935467 stgp x7, x21, [x3, #0x260]!
+69A7C059 stgp x25, x16, [x2, #-0x310]!
+69A1C426 stgp x6, x17, [x1, #-0x3d0]!
+69A8C0D2 stgp x18, x16, [x6, #-0x2f0]!
+6980001F stgp xzr, x0, [x0, #0x0]!
+69BFFFE0 stgp x0, xzr, [sp, #-0x10]!
+69B13D2F stgp x15, x15, [x9, #-0x1e0]!
+69B13D29 stgp x9, x15, [x9, #-0x1e0]!
+69A03D20 stgp x0, x15, [x9, #-0x400]!
+69903D20 stgp x0, x15, [x9, #0x200]!
+69883D20 stgp x0, x15, [x9, #0x100]!
+69843D20 stgp x0, x15, [x9, #0x80]!
+69823D20 stgp x0, x15, [x9, #0x40]!
+69813D20 stgp x0, x15, [x9, #0x20]!
+6980BD20 stgp x0, x15, [x9, #0x10]!

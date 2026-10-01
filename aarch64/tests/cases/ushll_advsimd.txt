@@ -1,0 +1,63 @@
+// USHLL_asimdshf_L 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|opcode=10100|1|Rn=xxxxx|Rd=xxxxx
+// UshllAsimdshfL: USHLL  <Vd>.<Ta>, <Vn>.<Tb>, #<shift>
+// UxtlUshllAsimdshfL2: UXTL2  <Vd>.<Ta>, <Vn>.<Tb>
+// UxtlUshllAsimdshfL: UXTL  <Vd>.<Ta>, <Vn>.<Tb>
+// UshllAsimdshfL2: USHLL2  <Vd>.<Ta>, <Vn>.<Tb>, #<shift>
+// read together by the UXTL2 alias: Q, immh, immb
+// register fields: Rn, Rd
+// form chosen on: Q, immh, immb
+2F30A561 ushll v1.2d, v11.2s, #0x10
+2F22A6E1 ushll v1.2d, v23.2s, #0x2
+6F17A639 ushll2 v25.4s, v17.8h, #0x7
+6F22A42D ushll2 v13.2d, v1.4s, #0x2
+2F09A4CC ushll v12.8h, v6.8b, #0x1
+2F21A6DF ushll v31.2d, v22.2s, #0x1
+6F3EA502 ushll2 v2.2d, v8.4s, #0x1e
+2F30A46D ushll v13.2d, v3.2s, #0x10
+6F3CA73E ushll2 v30.2d, v25.4s, #0x1c
+6F32A607 ushll2 v7.2d, v16.4s, #0x12
+6F1BA5AF ushll2 v15.4s, v13.8h, #0xb
+6F0BA521 ushll2 v1.8h, v9.16b, #0x3
+6F14A576 ushll2 v22.4s, v11.8h, #0x4
+6F0DA61E ushll2 v30.8h, v16.16b, #0x5
+2F23A620 ushll v0.2d, v17.2s, #0x3
+2F23A4DB ushll v27.2d, v6.2s, #0x3
+6F20A693 uxtl2 v19.2d, v20.4s
+2F20A502 uxtl v2.2d, v8.2s
+6F20A64B uxtl2 v11.2d, v18.4s
+2F08A426 uxtl v6.8h, v1.8b
+2F08A7AB uxtl v11.8h, v29.8b
+6F08A54B uxtl2 v11.8h, v10.16b
+2F20A509 uxtl v9.2d, v8.2s
+6F10A5A0 uxtl2 v0.4s, v13.8h
+2F08A6A2 uxtl v2.8h, v21.8b
+6F08A7A8 uxtl2 v8.8h, v29.16b
+2F08A611 uxtl v17.8h, v16.8b
+6F08A688 uxtl2 v8.8h, v20.16b
+2F20A6EA uxtl v10.2d, v23.2s
+2F08A5A2 uxtl v2.8h, v13.8b
+6F10A4D7 uxtl2 v23.4s, v6.8h
+6F08A562 uxtl2 v2.8h, v11.16b
+2F30A401 ushll v1.2d, v0.2s, #0x10
+2F30A7E1 ushll v1.2d, v31.2s, #0x10
+2F78A561 UNDEFINED
+2F79A561 UNDEFINED
+2F7AA561 UNDEFINED
+2F7BA561 UNDEFINED
+2F7CA561 UNDEFINED
+2F7DA561 UNDEFINED
+2F7EA561 UNDEFINED
+2F7FA561 UNDEFINED
+6F78A561 UNDEFINED
+6F79A561 UNDEFINED
+6F7AA561 UNDEFINED
+6F7BA561 UNDEFINED
+6F7CA561 UNDEFINED
+6F7DA561 UNDEFINED
+6F7EA561 UNDEFINED
+6F7FA561 UNDEFINED
+2F30A56B ushll v11.2d, v11.2s, #0x10
+2F40A561 UNDEFINED
+2F18A426 ushll v6.4s, v1.4h, #0x8
+6F08A426 uxtl2 v6.8h, v1.16b
+6F09A4CC ushll2 v12.8h, v6.16b, #0x1

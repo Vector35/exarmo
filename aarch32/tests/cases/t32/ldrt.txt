@@ -1,0 +1,23 @@
+// LDRT_T1 111|1100|00|size=10|L=1|Rn=xxxx|Rt=xxxx|1110|imm8=xxxxxxxx
+// LdrtT1: LDRT{<c>}{<q>}  <Rt>, [<Rn> {, #{<+>}<imm>}]
+// register fields: Rn, Rt
+// IT state read: condition
+f85c6e59 ldrt r6, [r12, #89]
+f85e1e0e ldrt r1, [lr, #14]
+f853ee0b ldrt lr, [r3, #11]
+f8522eac ldrt r2, [r2, #172]
+f854be96 ldrt r11, [r4, #150]
+f8597ef8 ldrt r7, [r9, #248]
+f8534e90 ldrt r4, [r3, #144]
+f8574e8d ldrt r4, [r7, #141]
+F8500E00 ldrt r0, [r0]
+F85CFEFF ldrt pc, [r12, #0xff] (unpredictable)
+F85C6E80 ldrt r6, [r12, #0x80]
+F85C6E40 ldrt r6, [r12, #0x40]
+F85C6E20 ldrt r6, [r12, #0x20]
+F85C6E10 ldrt r6, [r12, #0x10]
+F85C6E08 ldrt r6, [r12, #0x8]
+F85C6E04 ldrt r6, [r12, #0x4]
+F85C6E02 ldrt r6, [r12, #0x2]
+F85C6E01 ldrt r6, [r12, #0x1]
+F85C6E59 [ne] ldrtne r6, [r12, #0x59]

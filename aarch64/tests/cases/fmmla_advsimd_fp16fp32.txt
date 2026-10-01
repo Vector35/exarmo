@@ -1,0 +1,10 @@
+// FMMLA_asimd_FP16FP32 0|Q=1|U=0|0|111|0|size=01|0|Rm=xxxxx|1|opcode=1101|1|Rn=xxxxx|Rd=xxxxx
+// FmmlaAsimdFp16fp32: FMMLA  <Vd>.4S, <Vn>.8H, <Vm>.8H
+// register fields: Rm, Rn, Rd
+4E40EC05 fmmla v5.4s, v0.8h, v0.8h
+4E40EC0C fmmla v12.4s, v0.8h, v0.8h
+4E40EC13 fmmla v19.4s, v0.8h, v0.8h
+4E5FEFE0 fmmla v0.4s, v31.8h, v31.8h
+4E40EC1F fmmla v31.4s, v0.8h, v0.8h
+4E40EC00 fmmla v0.4s, v0.8h, v0.8h
+4E41EC43 fmmla v3.4s, v2.8h, v1.8h

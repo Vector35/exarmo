@@ -1,0 +1,12 @@
+// STLH_T1 111|0100|op0=0110|L=0|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=0|sz=01|Rd=(1)(1)(1)(1)
+// StlhT1: STLH{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// IT state read: condition
+E8C00090 stlh r0, [r0] (unpredictable)
+E8CFFF9F stlh pc, [pc] (unpredictable)
+E8C00898 stlh r0, [r0] (unpredictable)
+E8C00494 stlh r0, [r0] (unpredictable)
+E8C00292 stlh r0, [r0] (unpredictable)
+E8C00191 stlh r0, [r0] (unpredictable)
+E8C00090 [ne] stlhne r0, [r0] (unpredictable)
+E8C12F9F stlh r2, [r1]

@@ -1,0 +1,51 @@
+// VABD_i_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0111|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VabdIT1D: VABD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef6aa783 vabd.s32 d26, d26, d3
+ff47f783 vabd.u8 d31, d23, d3
+ef1be72a vabd.s16 d14, d11, d26
+ef29c724 vabd.s32 d12, d9, d20
+ef63972d vabd.s32 d25, d3, d29
+ef1987af vabd.s16 d8, d25, d31
+ff4537a1 vabd.u8 d19, d21, d17
+ff0e1703 vabd.u8 d1, d14, d3
+EF7AA783 UNDEFINED
+EF400780 vabd.s8 d16, d16, d0
+FF5F4788 vabd.u16 d20, d31, d8
+FF682782 vabd.u32 d18, d24, d2
+EF240780 vabd.s32 d0, d20, d0
+EF22F78F vabd.s32 d15, d18, d15
+EF6107A0 vabd.s32 d16, d17, d16
+FF7AA783 UNDEFINED
+EF60A703 vabd.s32 d26, d0, d3
+EF60A783 vabd.s32 d26, d16, d3
+EF6FA703 vabd.s32 d26, d15, d3
+EF6FA783 vabd.s32 d26, d31, d3
+EF6AA783 [ne] vabdne.s32 d26, d26, d3
+
+// VABD_i_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0111|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VabdIT1Q: VABD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef1867c4 vabd.s16 q3, q12, q2
+ef228748 vabd.s32 q4, q1, q4
+ff000746 vabd.u8 q0, q0, q3
+ef44a760 vabd.s8 q13, q2, q8
+ff48c7ee vabd.u8 q14, q12, q15
+ff5c2762 vabd.u16 q9, q6, q9
+ef2ce742 vabd.s32 q7, q6, q1
+ef0087ee vabd.s8 q4, q8, q15
+EF3FF7CF UNDEFINED
+EF3117C1 UNDEFINED
+FF2847C0 vabd.u32 q2, q12, q0
+FF3FF74F UNDEFINED
+EF5807C4 vabd.s16 q8, q12, q2
+EF5FF7EF UNDEFINED
+EF1867C4 [ne] vabdne.s16 q3, q12, q2

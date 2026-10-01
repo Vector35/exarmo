@@ -1,0 +1,21 @@
+// SMAX_32_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|opcode=011000|Rn=xxxxx|Rd=xxxxx
+// Smax32Dp2src: SMAX  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AC06004 smax w4, w0, w0
+1AC0600B smax w11, w0, w0
+1AC06012 smax w18, w0, w0
+1ADF63E0 smax w0, wzr, wzr
+1AC0601F smax wzr, w0, w0
+1AC06000 smax w0, w0, w0
+1AC16043 smax w3, w2, w1
+
+// SMAX_64_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|opcode=011000|Rn=xxxxx|Rd=xxxxx
+// Smax64Dp2src: SMAX  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9AC06002 smax x2, x0, x0
+9AC06009 smax x9, x0, x0
+9AC06010 smax x16, x0, x0
+9ADF63E0 smax x0, xzr, xzr
+9AC0601F smax xzr, x0, x0
+9AC06000 smax x0, x0, x0
+9AC16043 smax x3, x2, x1

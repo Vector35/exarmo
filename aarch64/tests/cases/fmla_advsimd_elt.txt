@@ -1,0 +1,114 @@
+// FMLA_asimdelem_R_SD 0|Q=x|U=0|0|111|1|1|sz=x|L=x|M=x|Rm=xxxx|0|o2=0|01|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmlaAsimdelemRSd: FMLA  <Vd>.<T>, <Vn>.<T>, <Vm>.<Ts>[<index>]
+// read together by <T>: Q, sz
+// read together by <Vm>: M, Rm
+// read together by <index>: sz, L, H
+// register fields: Rn, Rd
+4F9710BC fmla v28.4s, v5.4s, v23.s[0]
+4FA71315 fmla v21.4s, v24.4s, v7.s[1]
+0F97107D fmla v29.2s, v3.2s, v23.s[0]
+0FA01284 fmla v4.2s, v20.2s, v0.s[1]
+4F8619D8 fmla v24.4s, v14.4s, v6.s[2]
+0F8E124E fmla v14.2s, v18.2s, v14.s[0]
+4FA71301 fmla v1.4s, v24.4s, v7.s[1]
+4FD8119E fmla v30.2d, v12.2d, v24.d[0]
+4F931117 fmla v23.4s, v8.4s, v19.s[0]
+0F96182E fmla v14.2s, v1.2s, v22.s[2]
+4FCC189C fmla v28.2d, v4.2d, v12.d[1]
+4FAC189B fmla v27.4s, v4.4s, v12.s[3]
+0FBE11E8 fmla v8.2s, v15.2s, v30.s[1]
+4FCD1889 fmla v9.2d, v4.2d, v13.d[1]
+4FAA101B fmla v27.4s, v0.4s, v10.s[1]
+4FBA19A5 fmla v5.4s, v13.4s, v26.s[3]
+4F9F13E0 fmla v0.4s, v31.4s, v31.s[0]
+4F9710BF fmla v31.4s, v5.4s, v23.s[0]
+4FF710BC UNDEFINED
+4FF718BC UNDEFINED
+4F8F10A5 fmla v5.4s, v5.4s, v15.s[0]
+4F9010BC fmla v28.4s, v5.4s, v16.s[0]
+0FD710BC UNDEFINED
+4F9410BC fmla v28.4s, v5.4s, v20.s[0]
+4F9210BC fmla v28.4s, v5.4s, v18.s[0]
+4F9110BC fmla v28.4s, v5.4s, v17.s[0]
+
+// FMLA_asimdelem_RH_H 0|Q=x|U=0|0|111|1|size=00|L=x|M=x|Rm=xxxx|0|o2=0|01|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmlaAsimdelemRhH: FMLA  <Vd>.<T>, <Vn>.<T>, <Vm>.H[<index>]
+// read together by <index>: L, M, H
+// register fields: Rm, Rn, Rd
+4F2913F6 fmla v22.8h, v31.8h, v9.h[2]
+4F291277 fmla v23.8h, v19.8h, v9.h[2]
+0F3B19BC fmla v28.4h, v13.4h, v11.h[7]
+0F261A73 fmla v19.4h, v19.4h, v6.h[6]
+0F381A56 fmla v22.4h, v18.4h, v8.h[7]
+0F281395 fmla v21.4h, v28.4h, v8.h[2]
+4F141A54 fmla v20.8h, v18.8h, v4.h[5]
+0F0B18FE fmla v30.4h, v7.4h, v11.h[4]
+0F2B1B10 fmla v16.4h, v24.4h, v11.h[6]
+0F2210F9 fmla v25.4h, v7.4h, v2.h[2]
+4F1E1B81 fmla v1.8h, v28.8h, v14.h[5]
+0F0A12CD fmla v13.4h, v22.4h, v10.h[0]
+4F3F1125 fmla v5.8h, v9.8h, v15.h[3]
+4F0B1A76 fmla v22.8h, v19.8h, v11.h[4]
+0F0B13AE fmla v14.4h, v29.4h, v11.h[0]
+4F271893 fmla v19.8h, v4.8h, v7.h[6]
+4F201000 fmla v0.8h, v0.8h, v0.h[2]
+4F2913FF fmla v31.8h, v31.8h, v9.h[2]
+4F1913F6 fmla v22.8h, v31.8h, v9.h[1]
+
+// FMLA_asisdelem_R_SD 01|U=0|1|111|1|1|sz=x|L=x|M=x|Rm=xxxx|0|o2=0|01|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmlaAsisdelemRSd: FMLA  <V><d>, <V><n>, <Vm>.<Ts>[<index>]
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// read together by <Vm>: M, Rm
+// read together by <index>: sz, L, H
+// register fields: Rn, Rd
+5F9218D0 fmla s16, s6, v18.s[2]
+5F931354 fmla s20, s26, v19.s[0]
+5F9F13F3 fmla s19, s31, v31.s[0]
+5F8E11B0 fmla s16, s13, v14.s[0]
+5F811A7C fmla s28, s19, v1.s[2]
+5FCD110E fmla d14, d8, v13.d[0]
+5F8A108E fmla s14, s4, v10.s[0]
+5FA11223 fmla s3, s17, v1.s[1]
+5FDB1017 fmla d23, d0, v27.d[0]
+5F8810AA fmla s10, s5, v8.s[0]
+5FA618DC fmla s28, s6, v6.s[3]
+5F8018F3 fmla s19, s7, v0.s[2]
+5FD11B78 fmla d24, d27, v17.d[1]
+5F9E1090 fmla s16, s4, v30.s[0]
+5FB81144 fmla s4, s10, v24.s[1]
+5FDF1894 fmla d20, d4, v31.d[1]
+5F9218C0 fmla s0, s6, v18.s[2]
+5F9218DF fmla s31, s6, v18.s[2]
+5FF210D0 UNDEFINED
+5FF218D0 UNDEFINED
+5FCF18C0 fmla d0, d6, v15.d[1]
+5FD018DF fmla d31, d6, v16.d[1]
+5F921810 fmla s16, s0, v18.s[2]
+5FD21BF0 fmla d16, d31, v18.d[1]
+5F9218C6 fmla s6, s6, v18.s[2]
+5F9418D0 fmla s16, s6, v20.s[2]
+
+// FMLA_asisdelem_RH_H 01|U=0|1|111|1|size=00|L=x|M=x|Rm=xxxx|0|o2=0|01|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmlaAsisdelemRhH: FMLA  <Hd>, <Hn>, <Vm>.H[<index>]
+// read together by <index>: L, M, H
+// register fields: Rm, Rn, Rd
+5F021AF1 fmla h17, h23, v2.h[4]
+5F1D1196 fmla h22, h12, v13.h[1]
+5F0913C3 fmla h3, h30, v9.h[0]
+5F3D11D3 fmla h19, h14, v13.h[3]
+5F3E117F fmla h31, h11, v14.h[3]
+5F2D1916 fmla h22, h8, v13.h[6]
+5F1C128B fmla h11, h20, v12.h[1]
+5F091977 fmla h23, h11, v9.h[4]
+5F1B193D fmla h29, h9, v11.h[5]
+5F381B0D fmla h13, h24, v8.h[7]
+5F0B10C4 fmla h4, h6, v11.h[0]
+5F091BBD fmla h29, h29, v9.h[4]
+5F38185E fmla h30, h2, v8.h[7]
+5F3B19CD fmla h13, h14, v11.h[7]
+5F2119C1 fmla h1, h14, v1.h[6]
+5F3313D2 fmla h18, h30, v3.h[3]
+5F001800 fmla h0, h0, v0.h[4]
+5F0F1BF1 fmla h17, h31, v15.h[4]
+5F2212F1 fmla h17, h23, v2.h[2]

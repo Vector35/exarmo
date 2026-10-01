@@ -1,0 +1,54 @@
+// fdup_z_i_ 001|0010|1|size=xx|1|11|opc=00|1|11|o2=0|imm8=xxxxxxxx|Zd=xxxxx
+// FdupZI: FDUP  <Zd>.<T>, #<const>
+// FmovZIFdupZI: FMOV  <Zd>.<T>, #<const>
+// register fields: Zd
+// floating-point immediate <const>: imm8
+25F9D7A8 fmov z8.d, #-29.0
+25F9D1D0 fmov z16.d, #-3.75
+2579C863 fmov z3.h, #0.1484375
+25B9DE8B fmov z11.s, #-1.25
+25F9C289 fmov z9.d, #5.0
+2579DE25 fmov z5.h, #-1.0625
+25B9CFED fmov z13.s, #1.9375
+2579D95B fmov z27.h, #-0.203125
+25F9D60C fmov z12.d, #-16.0
+25F9D308 fmov z8.d, #-6.0
+25B9CDF4 fmov z20.s, #0.96875
+25F9D23B fmov z27.d, #-4.25
+25F9C9F0 fmov z16.d, #0.2421875
+2579DB27 fmov z7.h, #-0.390625
+25F9D562 fmov z2.d, #-13.5
+25F9DF30 fmov z16.d, #-1.5625
+25F9C000 fmov z0.d, #2.0
+25F9DFFF fmov z31.d, #-1.9375
+2539D7A8 UNDEFINED
+25F9D008 fmov z8.d, #-2.0
+25F9C808 fmov z8.d, #0.125
+25F9C408 fmov z8.d, #8.0
+25F9C208 fmov z8.d, #4.0
+25F9C108 fmov z8.d, #3.0
+25F9C088 fmov z8.d, #2.5
+25F9C048 fmov z8.d, #2.25
+25F9C028 fmov z8.d, #2.125
+25F9C1E8 fmov z8.d, #3.875
+25F9C3E8 fmov z8.d, #7.75
+25F9C5E8 fmov z8.d, #15.5
+25F9C608 fmov z8.d, #16.0
+25F9C7E8 fmov z8.d, #31.0
+25F9CA08 fmov z8.d, #0.25
+25F9CBE8 fmov z8.d, #0.484375
+25F9CC08 fmov z8.d, #0.5
+25F9CE08 fmov z8.d, #1.0
+25F9D1E8 fmov z8.d, #-3.875
+25F9D208 fmov z8.d, #-4.0
+25F9D3E8 fmov z8.d, #-7.75
+25F9D408 fmov z8.d, #-8.0
+25F9D5E8 fmov z8.d, #-15.5
+25F9D7E8 fmov z8.d, #-31.0
+25F9D808 fmov z8.d, #-0.125
+25F9D9E8 fmov z8.d, #-0.2421875
+25F9DA08 fmov z8.d, #-0.25
+25F9DBE8 fmov z8.d, #-0.484375
+25F9DC08 fmov z8.d, #-0.5
+25F9DDE8 fmov z8.d, #-0.96875
+25F9DE08 fmov z8.d, #-1.0

@@ -1,0 +1,93 @@
+// ST2G_64Soffset_ldsttags 1101|1|0|0|1|opc=10|1|imm9=xxxxxxxxx|op2=10|Rn=xxxxx|Rt=xxxxx
+// St2g64soffsetLdsttags: ST2G  <Xt|SP>, [<Xn|SP>{, #<simm>}]
+// register fields: Rn, Rt
+D9A55BC6 st2g x6, [lr, #0x550]
+D9BDFB1C st2g x28, [x24, #-0x210]
+D9A45A85 st2g x5, [x20, #0x450]
+D9BC2A42 st2g x2, [x18, #-0x3e0]
+D9B50AA4 st2g x4, [x21, #-0xb00]
+D9AEFB52 st2g x18, [x26, #0xef0]
+D9A73B8E st2g x14, [x28, #0x730]
+D9A02985 st2g x5, [x12, #0x20]
+D9A9FB78 st2g x24, [x27, #0x9f0]
+D9B29BE5 st2g x5, [sp, #-0xd70]
+D9AB1B9F st2g sp, [x28, #0xb10]
+D9B89BEE st2g x14, [sp, #-0x770]
+D9B8F954 st2g x20, [x10, #-0x710]
+D9B53B52 st2g x18, [x26, #-0xad0]
+D9A6680B st2g x11, [x0, #0x660]
+D9A2C9D0 st2g x16, [x14, #0x2c0]
+D9A00BC0 st2g x0, [lr]
+D9BFFBC6 st2g x6, [lr, #-0x10]
+D9A55BDE st2g lr, [lr, #0x550]
+D9B00BC6 st2g x6, [lr, #-0x1000]
+D9A80BC6 st2g x6, [lr, #0x800]
+D9A40BC6 st2g x6, [lr, #0x400]
+D9A20BC6 st2g x6, [lr, #0x200]
+D9A10BC6 st2g x6, [lr, #0x100]
+D9A08BC6 st2g x6, [lr, #0x80]
+D9A04BC6 st2g x6, [lr, #0x40]
+D9A01BC6 st2g x6, [lr, #0x10]
+
+// ST2G_64Spost_ldsttags 1101|1|0|0|1|opc=10|1|imm9=xxxxxxxxx|op2=01|Rn=xxxxx|Rt=xxxxx
+// St2g64spostLdsttags: ST2G  <Xt|SP>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+D9A05615 st2g x21, [x16], #0x50
+D9A5B782 st2g x2, [x28], #0x5b0
+D9B975BB st2g x27, [x13], #-0x690
+D9AB1539 st2g x25, [x9], #0xb10
+D9BEC5C7 st2g x7, [x14], #-0x140
+D9BDE78B st2g x11, [x28], #-0x220
+D9AA87FE st2g lr, [sp], #0xa80
+D9A6D479 st2g x25, [x3], #0x6d0
+D9BE9668 st2g x8, [x19], #-0x170
+D9A48778 st2g x24, [x27], #0x480
+D9B76705 st2g x5, [x24], #-0x8a0
+D9A7A726 st2g x6, [x25], #0x7a0
+D9A525B1 st2g x17, [x13], #0x520
+D9A475FC st2g x28, [x15], #0x470
+D9B8B771 st2g x17, [x27], #-0x750
+D9B0F5BD st2g fp, [x13], #-0xf10
+D9A00400 st2g x0, [x0], #0x0
+D9BFF61F st2g sp, [x16], #-0x10
+D9B00615 st2g x21, [x16], #-0x1000
+D9A80615 st2g x21, [x16], #0x800
+D9A40615 st2g x21, [x16], #0x400
+D9A20615 st2g x21, [x16], #0x200
+D9A10615 st2g x21, [x16], #0x100
+D9A08615 st2g x21, [x16], #0x80
+D9A04615 st2g x21, [x16], #0x40
+D9A02615 st2g x21, [x16], #0x20
+D9A01615 st2g x21, [x16], #0x10
+
+// ST2G_64Spre_ldsttags 1101|1|0|0|1|opc=10|1|imm9=xxxxxxxxx|op2=11|Rn=xxxxx|Rt=xxxxx
+// St2g64spreLdsttags: ST2G  <Xt|SP>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+D9BC2FB0 st2g x16, [fp, #-0x3e0]!
+D9A28C0C st2g x12, [x0, #0x280]!
+D9B2DEAF st2g x15, [x21, #-0xd30]!
+D9BF1CB2 st2g x18, [x5, #-0xf0]!
+D9B66F7F st2g sp, [x27, #-0x9a0]!
+D9B2BFA8 st2g x8, [fp, #-0xd50]!
+D9B61D1B st2g x27, [x8, #-0x9f0]!
+D9B3BE88 st2g x8, [x20, #-0xc50]!
+D9BC8D84 st2g x4, [x12, #-0x380]!
+D9AE8FBB st2g x27, [fp, #0xe80]!
+D9B9CCCB st2g x11, [x6, #-0x640]!
+D9BD6F74 st2g x20, [x27, #-0x2a0]!
+D9BD2EB0 st2g x16, [x21, #-0x2e0]!
+D9AC9CFA st2g x26, [x7, #0xc90]!
+D9BE8D90 st2g x16, [x12, #-0x180]!
+D9B1BD87 st2g x7, [x12, #-0xe50]!
+D9A00FE0 st2g x0, [sp, #0x0]!
+D9BFFFB0 st2g x16, [fp, #-0x10]!
+D9BC2FBD st2g fp, [fp, #-0x3e0]!
+D9B00FB0 st2g x16, [fp, #-0x1000]!
+D9A80FB0 st2g x16, [fp, #0x800]!
+D9A40FB0 st2g x16, [fp, #0x400]!
+D9A20FB0 st2g x16, [fp, #0x200]!
+D9A10FB0 st2g x16, [fp, #0x100]!
+D9A08FB0 st2g x16, [fp, #0x80]!
+D9A04FB0 st2g x16, [fp, #0x40]!
+D9A02FB0 st2g x16, [fp, #0x20]!
+D9A01FB0 st2g x16, [fp, #0x10]!

@@ -1,0 +1,23 @@
+// SADDLP_asimdmisc_P 0|Q=x|U=0|0|111|0|size=xx|10000|00|op=0|10|10|Rn=xxxxx|Rd=xxxxx
+// SaddlpAsimdmiscP: SADDLP  <Vd>.<Ta>, <Vn>.<Tb>
+// read together by <Ta> and <Tb>: Q, size
+// register fields: Rn, Rd
+4E602AEC saddlp v12.4s, v23.8h
+4E602843 saddlp v3.4s, v2.8h
+4E202835 saddlp v21.8h, v1.16b
+0EA02AD5 saddlp v21.1d, v22.2s
+0EA02997 saddlp v23.1d, v12.2s
+0E6029F7 saddlp v23.2s, v15.4h
+0EA02902 saddlp v2.1d, v8.2s
+4E602B67 saddlp v7.4s, v27.8h
+0E202863 saddlp v3.4h, v3.8b
+4EA02BF0 saddlp v16.2d, v31.4s
+4EA02833 saddlp v19.2d, v1.4s
+0E602BE7 saddlp v7.2s, v31.4h
+0EA02A99 saddlp v25.1d, v20.2s
+0E60283A saddlp v26.2s, v1.4h
+0E602891 saddlp v17.2s, v4.4h
+0E6028C0 saddlp v0.2s, v6.4h
+4E60281F saddlp v31.4s, v0.8h
+4EE02AEC UNDEFINED
+0EE02AEC UNDEFINED

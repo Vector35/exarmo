@@ -1,0 +1,52 @@
+// VST4_m_T1_nowb 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=1111
+// Vst4MT1Nowb: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f900007f vst4.16 {d0, d1, d2, d3}, [r0:256]
+f90741af vst4.32 {d4, d6, d8, d10}, [r7:128]
+f94a61af vst4.32 {d22, d24, d26, d28}, [r10:128]
+f901c00f vst4.8 {d12, d13, d14, d15}, [r1]
+f907007f vst4.16 {d0, d1, d2, d3}, [r7:256]
+f94dc01f vst4.8 {d28, d29, d30, d31}, [sp:64]
+f941002f vst4.8 {d16, d17, d18, d19}, [r1:128]
+f902810f vst4.8 {d8, d10, d12, d14}, [r2]
+F90FF07F vst4.16 {d15, d16, d17, d18}, [pc:256] (unpredictable)
+F900207F vst4.16 {d2, d3, d4, d5}, [r0:256]
+F900107F vst4.16 {d1, d2, d3, d4}, [r0:256]
+F90000FF UNDEFINED
+F900007F [ne] vst4ne.16 {d0, d1, d2, d3}, [r0:256]
+
+// VST4_m_T1_posti 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=1101
+// Vst4MT1Posti: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f906d07d vst4.16 {d13, d14, d15, d16}, [r6:256]!
+f902e07d vst4.16 {d14, d15, d16, d17}, [r2:256]!
+f948512d vst4.8 {d21, d23, d25, d27}, [r8:128]!
+f909916d vst4.16 {d9, d11, d13, d15}, [r9:128]!
+f949814d vst4.16 {d24, d26, d28, d30}, [r9]!
+f906a01d vst4.8 {d10, d11, d12, d13}, [r6:64]!
+f94d810d vst4.8 {d24, d26, d28, d30}, [sp]!
+f94a510d vst4.8 {d21, d23, d25, d27}, [r10]!
+F90000BD vst4.32 {d0, d1, d2, d3}, [r0:256]!
+F90FF07D vst4.16 {d15, d16, d17, d18}, [pc:256]! (unpredictable)
+F906407D vst4.16 {d4, d5, d6, d7}, [r6:256]!
+F906207D vst4.16 {d2, d3, d4, d5}, [r6:256]!
+F906107D vst4.16 {d1, d2, d3, d4}, [r6:256]!
+F906D0FD UNDEFINED
+F906D07D [ne] vst4ne.16 {d13, d14, d15, d16}, [r6:256]!
+
+// VST4_m_T1_postr 111110010|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=000x|size=xx|align=xx|Rm=xxxx
+// Vst4MT1Postr: VST4{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+F9000000 vst4.8 {d0, d1, d2, d3}, [r0], r0
+F94FF150 UNPREDICTABLE
+F90080A0 vst4.32 {d8, d9, d10, d11}, [r0:128], r0
+F9004030 vst4.8 {d4, d5, d6, d7}, [r0:256], r0
+F9002000 vst4.8 {d2, d3, d4, d5}, [r0], r0
+F9001000 vst4.8 {d1, d2, d3, d4}, [r0], r0
+F90000CF UNDEFINED
+F9000000 [ne] vst4ne.8 {d0, d1, d2, d3}, [r0], r0
+F94F0150 vst4.16 {d16, d18, d20, d22}, [pc:64], r0 (unpredictable)
+F900F000 vst4.8 {d15, d16, d17, d18}, [r0], r0

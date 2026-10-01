@@ -1,0 +1,17 @@
+// SXTAB_T1 111|11010|0|op1=10|U=0|Rn=xxxx|1111|Rd=xxxx|1(0)|rotate=xx|Rm=xxxx
+// SxtabT1: SXTAB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, ROR #<amount>}
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa42f7ee sxtab r7, r2, lr, ror #16 (unpredictable)
+fa4bf8ad sxtab r8, r11, sp, ror #16
+fa46f48a sxtab r4, r6, r10
+fa45fdf9 sxtab sp, r5, r9, ror #24 (unpredictable)
+fa4efcd1 sxtab r12, lr, r1, ror #8 (unpredictable)
+fa43fce3 sxtab r12, r3, r3, ror #16 (unpredictable)
+fa47f8ca sxtab r8, r7, r10 (unpredictable)
+fa4cf2a9 sxtab r2, r12, r9, ror #16
+FA40F0E0 sxtab r0, r0, r0, ror #0x10 (unpredictable)
+FA42FFEF sxtab pc, r2, pc, ror #0x10 (unpredictable)
+FA42F2EE sxtab r2, r2, lr, ror #0x10 (unpredictable)
+FA42F7E7 sxtab r7, r2, r7, ror #0x10 (unpredictable)
+FA42F7EE [ne] sxtabne r7, r2, lr, ror #0x10 (unpredictable)

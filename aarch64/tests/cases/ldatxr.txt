@@ -1,0 +1,28 @@
+// LDATXR_LR32_ldstexclr_unpriv 1|sz=0|0010010|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdatxrLr32LdstexclrUnpriv: LDATXR  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+89408000 ldatxr w0, [x0] (unpredictable)
+89408007 ldatxr w7, [x0] (unpredictable)
+8940800E ldatxr w14, [x0] (unpredictable)
+895FFFFF ldatxr wzr, [sp]
+8950C000 ldatxr w0, [x0] (unpredictable)
+8948A000 ldatxr w0, [x0] (unpredictable)
+89449000 ldatxr w0, [x0] (unpredictable)
+89428800 ldatxr w0, [x0] (unpredictable)
+89418400 ldatxr w0, [x0] (unpredictable)
+895FFC22 ldatxr w2, [x1]
+
+// LDATXR_LR64_ldstexclr_unpriv 1|sz=1|0010010|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=1|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdatxrLr64LdstexclrUnpriv: LDATXR  <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+C9408006 ldatxr x6, [x0] (unpredictable)
+C940800D ldatxr x13, [x0] (unpredictable)
+C9408014 ldatxr x20, [x0] (unpredictable)
+C95FFFE0 ldatxr x0, [sp]
+C940801F ldatxr xzr, [x0] (unpredictable)
+C9408000 ldatxr x0, [x0] (unpredictable)
+C950C006 ldatxr x6, [x0] (unpredictable)
+C948A006 ldatxr x6, [x0] (unpredictable)
+C9449006 ldatxr x6, [x0] (unpredictable)
+C9428806 ldatxr x6, [x0] (unpredictable)
+C9418406 ldatxr x6, [x0] (unpredictable)

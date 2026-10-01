@@ -1,0 +1,59 @@
+// SQNEG_asimdmisc_R 0|Q=x|U=1|0|111|0|size=xx|10000|opcode=00111|10|Rn=xxxxx|Rd=xxxxx
+// SqnegAsimdmiscR: SQNEG  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+6E6079BE sqneg v30.8h, v13.8h
+6EA07AC7 sqneg v7.4s, v22.4s
+6EA07A6E sqneg v14.4s, v19.4s
+2E6079AF sqneg v15.4h, v13.4h
+6EE079FA sqneg v26.2d, v15.2d
+2E60790D sqneg v13.4h, v8.4h
+6E207AFA sqneg v26.16b, v23.16b
+6EA078DB sqneg v27.4s, v6.4s
+6EA07B47 sqneg v7.4s, v26.4s
+6EE07AAC sqneg v12.2d, v21.2d
+2EA07AC6 sqneg v6.2s, v22.2s
+6EA07A57 sqneg v23.4s, v18.4s
+2E207AA6 sqneg v6.8b, v21.8b
+2E2078F9 sqneg v25.8b, v7.8b
+6EA07AE2 sqneg v2.4s, v23.4s
+6E207A34 sqneg v20.16b, v17.16b
+6E607800 sqneg v0.8h, v0.8h
+6E607BFF sqneg v31.8h, v31.8h
+2EE079BE UNDEFINED
+
+// SQNEG_asisdmisc_R 01|U=1|1|111|0|size=xx|10000|opcode=00111|10|Rn=xxxxx|Rd=xxxxx
+// SqnegAsisdmiscR: SQNEG  <V><d>, <V><n>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// register fields: Rn, Rd
+7EE07963 sqneg d3, d11
+7E207A83 sqneg b3, b20
+7E60786F sqneg h15, h3
+7EA07ABE sqneg s30, s21
+7EE078E9 sqneg d9, d7
+7E6079E1 sqneg h1, h15
+7E207B58 sqneg b24, b26
+7E607BBA sqneg h26, h29
+7EA07848 sqneg s8, s2
+7EE07919 sqneg d25, d8
+7E207B79 sqneg b25, b27
+7EA07BF6 sqneg s22, s31
+7E207B8B sqneg b11, b28
+7EA07A4D sqneg s13, s18
+7EA0786F sqneg s15, s3
+7EA078A3 sqneg s3, s5
+7EE07800 sqneg d0, d0
+7EE0797F sqneg d31, d11
+7E207960 sqneg b0, b11
+7E20797F sqneg b31, b11
+7E607960 sqneg h0, h11
+7E60797F sqneg h31, h11
+7EA07960 sqneg s0, s11
+7EA0797F sqneg s31, s11
+7E207803 sqneg b3, b0
+7E207BE3 sqneg b3, b31
+7E607803 sqneg h3, h0
+7E607BE3 sqneg h3, h31
+7EA07803 sqneg s3, s0
+7EE07BE3 sqneg d3, d31

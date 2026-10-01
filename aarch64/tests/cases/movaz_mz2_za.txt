@@ -1,0 +1,49 @@
+// movaz_mz2_za_b1 1|10|0000|0|size=00|000|1|1|0|V=x|Rs=xx|000|10|off3=xxx|Zd=xxxx|0
+// MovazMz2ZaB1: MOVAZ  { <Zd1>.B-<Zd2>.B }, ZA0<HV>.B[<Ws>, <offs1>:<offs2>]
+// register fields: Rs, Zd
+C006020C movaz {z12.b-z13.b}, za0h.b[w12, 0:1]
+C006021A movaz {z26.b-z27.b}, za0h.b[w12, 0:1]
+C0060228 movaz {z8.b-z9.b}, za0h.b[w12, 2:3]
+C006A240 movaz {z0.b-z1.b}, za0v.b[w13, 4:5]
+C006427E movaz {z30.b-z31.b}, za0h.b[w14, 6:7]
+C006628C movaz {z12.b-z13.b}, za0h.b[w15, 8:9]
+C00602AC movaz {z12.b-z13.b}, za0h.b[w12, 10:11]
+C00602CC movaz {z12.b-z13.b}, za0h.b[w12, 12:13]
+C00602EC movaz {z12.b-z13.b}, za0h.b[w12, 14:15]
+C0060200 movaz {z0.b-z1.b}, za0h.b[w12, 0:1]
+
+// movaz_mz2_za_d1 1|10|0000|0|size=11|000|1|1|0|V=x|Rs=xx|000|10|ZAn=xxx|Zd=xxxx|0
+// MovazMz2ZaD1: MOVAZ  { <Zd1>.D-<Zd2>.D }, <ZAn><HV>.D[<Ws>, <offs1>:<offs2>]
+// register fields: Rs, ZAn, Zd
+C0C60206 movaz {z6.d-z7.d}, za0h.d[w12, 0:1]
+C0C60214 movaz {z20.d-z21.d}, za0h.d[w12, 0:1]
+C0C60222 movaz {z2.d-z3.d}, za1h.d[w12, 0:1]
+C0C6A240 movaz {z0.d-z1.d}, za2v.d[w13, 0:1]
+C0C6427E movaz {z30.d-z31.d}, za3h.d[w14, 0:1]
+C0C66286 movaz {z6.d-z7.d}, za4h.d[w15, 0:1]
+C0C602A6 movaz {z6.d-z7.d}, za5h.d[w12, 0:1]
+C0C602C6 movaz {z6.d-z7.d}, za6h.d[w12, 0:1]
+C0C602E6 movaz {z6.d-z7.d}, za7h.d[w12, 0:1]
+
+// movaz_mz2_za_h1 1|10|0000|0|size=01|000|1|1|0|V=x|Rs=xx|000|10|ZAn=x|off2=xx|Zd=xxxx|0
+// MovazMz2ZaH1: MOVAZ  { <Zd1>.H-<Zd2>.H }, <ZAn><HV>.H[<Ws>, <offs1>:<offs2>]
+// register fields: Rs, ZAn, Zd
+C046020A movaz {z10.h-z11.h}, za0h.h[w12, 0:1]
+C0460218 movaz {z24.h-z25.h}, za0h.h[w12, 0:1]
+C0460226 movaz {z6.h-z7.h}, za0h.h[w12, 2:3]
+C046A2C0 movaz {z0.h-z1.h}, za1v.h[w13, 4:5]
+C046427E movaz {z30.h-z31.h}, za0h.h[w14, 6:7]
+C046620A movaz {z10.h-z11.h}, za0h.h[w15, 0:1]
+C0460200 movaz {z0.h-z1.h}, za0h.h[w12, 0:1]
+
+// movaz_mz2_za_w1 1|10|0000|0|size=10|000|1|1|0|V=x|Rs=xx|000|10|ZAn=xx|o1=x|Zd=xxxx|0
+// MovazMz2ZaW1: MOVAZ  { <Zd1>.S-<Zd2>.S }, <ZAn><HV>.S[<Ws>, <offs1>:<offs2>]
+// register fields: Rs, ZAn, Zd
+C0860208 movaz {z8.s-z9.s}, za0h.s[w12, 0:1]
+C0860216 movaz {z22.s-z23.s}, za0h.s[w12, 0:1]
+C0860224 movaz {z4.s-z5.s}, za0h.s[w12, 2:3]
+C086A240 movaz {z0.s-z1.s}, za1v.s[w13, 0:1]
+C086429E movaz {z30.s-z31.s}, za2h.s[w14, 0:1]
+C08662C8 movaz {z8.s-z9.s}, za3h.s[w15, 0:1]
+C0860200 movaz {z0.s-z1.s}, za0h.s[w12, 0:1]
+C0862286 movaz {z6.s-z7.s}, za2h.s[w13, 0:1]

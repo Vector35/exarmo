@@ -1,0 +1,25 @@
+// SMLAWB_T1 111110110|op1=011|Rn=xxxx|Ra=xxxx|Rd=xxxx|000|M=0|Rm=xxxx
+// SmlawbT1: SMLAWB{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+FB300000 smlawb r0, r0, r0, r0
+FB3F0F0F smlawb pc, pc, pc, r0 (unpredictable)
+FB300000 [ne] smlawbne r0, r0, r0, r0
+FB312304 smlawb r3, r1, r4, r2
+
+// SMLAWT_T1 111110110|op1=011|Rn=xxxx|Ra=xxxx|Rd=xxxx|000|M=1|Rm=xxxx
+// SmlawtT1: SMLAWT{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+fb3f621d smlawt r2, pc, sp, r6 (unpredictable)
+fb31581f smlawt r8, r1, pc, r5 (unpredictable)
+fb3c1d1b smlawt sp, r12, r11, r1
+fb399419 smlawt r4, r9, r9, r9
+fb340919 smlawt r9, r4, r9, r0
+fb33ac13 smlawt r12, r3, r3, r10
+fb30a713 smlawt r7, r0, r3, r10
+fb36cd1a smlawt sp, r6, r10, r12
+FB3F6010 smlawt r0, pc, r0, r6 (unpredictable)
+FB3F6F1D smlawt pc, pc, sp, r6 (unpredictable)
+FB3F661D smlawt r6, pc, sp, r6 (unpredictable)
+FB3F621D [ne] smlawtne r2, pc, sp, r6 (unpredictable)

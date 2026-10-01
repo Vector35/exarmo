@@ -1,0 +1,90 @@
+// EXTR_32_extract sf=0|op21=00|100111|N=0|o0=0|Rm=xxxxx|imms=0xxxxx|Rn=xxxxx|Rd=xxxxx
+// Extr32Extract: EXTR  <Wd>, <Wn>, <Wm>, #<lsb>
+// RorExtr32Extract: ROR  <Wd>, <Ws>, #<shift>
+// read together by the ROR alias: Rm, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: Rm, Rn
+138A0BD2 extr w18, w30, w10, #0x2
+139817B5 extr w21, w29, w24, #0x5
+13875D5E extr w30, w10, w7, #0x17
+139E0CF2 extr w18, w7, w30, #0x3
+1383561E extr w30, w16, w3, #0x15
+13880ED2 extr w18, w22, w8, #0x3
+13882B47 extr w7, w26, w8, #0xa
+138D26F0 extr w16, w23, w13, #0x9
+138C6694 extr w20, w20, w12, #0x19
+13943E60 extr w0, w19, w20, #0xf
+139B218F extr w15, w12, w27, #0x8
+138F0738 extr w24, w25, w15, #0x1
+13817ECA extr w10, w22, w1, #0x1f
+13913C47 extr w7, w2, w17, #0xf
+1380520E extr w14, w16, w0, #0x14
+1395423D extr w29, w17, w21, #0x10
+138D59BD ror w29, w13, #0x16
+13957EA2 ror w2, w21, #0x1f
+13917236 ror w22, w17, #0x1c
+138E69D3 ror w19, w14, #0x1a
+138660CF ror w15, w6, #0x18
+13831468 ror w8, w3, #0x5
+13880D08 ror w8, w8, #0x3
+138600C9 ror w9, w6, #0x0
+13843C9F ror wzr, w4, #0xf
+139E07CF ror w15, w30, #0x1
+1380281D ror w29, w0, #0xa
+138768FF ror wzr, w7, #0x1a
+138C2D8D ror w13, w12, #0xb
+13813C3D ror w29, w1, #0xf
+1394528D ror w13, w20, #0x14
+139F33F9 ror w25, wzr, #0xc
+13800BF2 extr w18, wzr, w0, #0x2
+139F0812 extr w18, w0, wzr, #0x2
+138A13D2 extr w18, w30, w10, #0x4
+1381281D extr w29, w0, w1, #0xa
+
+// EXTR_64_extract sf=1|op21=00|100111|N=1|o0=0|Rm=xxxxx|imms=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Extr64Extract: EXTR  <Xd>, <Xn>, <Xm>, #<lsb>
+// RorExtr64Extract: ROR  <Xd>, <Xs>, #<shift>
+// read together by the ROR alias: Rm, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: Rm, Rn
+93DF0796 extr x22, x28, xzr, #0x1
+93D0FBD8 extr x24, lr, x16, #0x3e
+93DBA207 extr x7, x16, x27, #0x28
+93CC07FB extr x27, xzr, x12, #0x1
+93DF4D0C extr x12, x8, xzr, #0x13
+93D5ECD7 extr x23, x6, x21, #0x3b
+93C7FA56 extr x22, x18, x7, #0x3e
+93DF0AD7 extr x23, x22, xzr, #0x2
+93CEDCA5 extr x5, x5, x14, #0x37
+93C88F30 extr x16, x25, x8, #0x23
+93C85BE5 extr x5, xzr, x8, #0x16
+93D68E95 extr x21, x20, x22, #0x23
+93C40245 extr x5, x18, x4, #0x0
+93D6A830 extr x16, x1, x22, #0x2a
+93DA4D9D extr fp, x12, x26, #0x13
+93C53311 extr x17, x24, x5, #0xc
+93C7F4EA ror x10, x7, #0x3d
+93DA7F47 ror x7, x26, #0x1f
+93D0160A ror x10, x16, #0x5
+93D5EAA8 ror x8, x21, #0x3a
+93CA715F ror xzr, x10, #0x1c
+93D19629 ror x9, x17, #0x25
+93D64AC4 ror x4, x22, #0x12
+93D46A81 ror x1, x20, #0x1a
+93D33669 ror x9, x19, #0xd
+93D0A203 ror x3, x16, #0x28
+93DBC378 ror x24, x27, #0x30
+93CDC5B6 ror x22, x13, #0x31
+93CE45D1 ror x17, x14, #0x11
+93CFA9FC ror x28, x15, #0x2a
+93CFC9FC ror x28, x15, #0x32
+93D776E7 ror x7, x23, #0x1d
+93C0FC00 ror x0, x0, #0x3f
+93C007F6 extr x22, xzr, x0, #0x1
+93DF0416 extr x22, x0, xzr, #0x1
+93DF07F6 ror x22, xzr, #0x1
+93DF8396 extr x22, x28, xzr, #0x20
+93DF4396 extr x22, x28, xzr, #0x10
+93DF2396 extr x22, x28, xzr, #0x8
+93DF1396 extr x22, x28, xzr, #0x4
+93C1FC00 extr x0, x0, x1, #0x3f

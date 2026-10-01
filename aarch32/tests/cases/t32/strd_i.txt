@@ -1,0 +1,53 @@
+// STRD_i_T1_off 1110100|P=1|U=x|1|W=0|L=0|Rn=xxxx|Rt=xxxx|Rt2=xxxx|imm8=xxxxxxxx
+// StrdIT1Off: STRD{<c>}{<q>}  <Rt>, <Rt2>, [<Rn> {, #{<+/->}<imm>}]
+// register fields: Rn, Rt, Rt2
+// IT state read: condition
+E9400000 strd r0, r0, [r0, #-0x0]
+E9C0FFFF strd pc, pc, [r0, #0x3fc] (unpredictable)
+E94F0000 UNALLOCATED
+E9400080 strd r0, r0, [r0, #-0x200]
+E9400040 strd r0, r0, [r0, #-0x100]
+E9400020 strd r0, r0, [r0, #-0x80]
+E9400010 strd r0, r0, [r0, #-0x40]
+E9400008 strd r0, r0, [r0, #-0x20]
+E9400004 strd r0, r0, [r0, #-0x10]
+E9400002 strd r0, r0, [r0, #-0x8]
+E9400001 strd r0, r0, [r0, #-0x4]
+E9400000 [ne] strdne r0, r0, [r0, #-0x0]
+E9412300 strd r2, r3, [r1, #-0x0]
+
+// STRD_i_T1_post 1110100|P=0|U=x|1|W=1|L=0|Rn=xxxx|Rt=xxxx|Rt2=xxxx|imm8=xxxxxxxx
+// StrdIT1Post: STRD{<c>}{<q>}  <Rt>, <Rt2>, [<Rn>], #{<+/->}<imm>
+// register fields: Rn, Rt, Rt2
+// IT state read: condition
+E8600000 strd r0, r0, [r0], #-0x0 (unpredictable)
+E8E0FFFF strd pc, pc, [r0], #0x3fc (unpredictable)
+E86F0000 UNALLOCATED
+E8600080 strd r0, r0, [r0], #-0x200 (unpredictable)
+E8600040 strd r0, r0, [r0], #-0x100 (unpredictable)
+E8600020 strd r0, r0, [r0], #-0x80 (unpredictable)
+E8600010 strd r0, r0, [r0], #-0x40 (unpredictable)
+E8600008 strd r0, r0, [r0], #-0x20 (unpredictable)
+E8600004 strd r0, r0, [r0], #-0x10 (unpredictable)
+E8600002 strd r0, r0, [r0], #-0x8 (unpredictable)
+E8600001 strd r0, r0, [r0], #-0x4 (unpredictable)
+E8600000 [ne] strdne r0, r0, [r0], #-0x0 (unpredictable)
+E8612300 strd r2, r3, [r1], #-0x0
+
+// STRD_i_T1_pre 1110100|P=1|U=x|1|W=1|L=0|Rn=xxxx|Rt=xxxx|Rt2=xxxx|imm8=xxxxxxxx
+// StrdIT1Pre: STRD{<c>}{<q>}  <Rt>, <Rt2>, [<Rn>, #{<+/->}<imm>]!
+// register fields: Rn, Rt, Rt2
+// IT state read: condition
+E9600000 strd r0, r0, [r0, #-0x0]! (unpredictable)
+E9E0FFFF strd pc, pc, [r0, #0x3fc]! (unpredictable)
+E96F0000 UNALLOCATED
+E9600080 strd r0, r0, [r0, #-0x200]! (unpredictable)
+E9600040 strd r0, r0, [r0, #-0x100]! (unpredictable)
+E9600020 strd r0, r0, [r0, #-0x80]! (unpredictable)
+E9600010 strd r0, r0, [r0, #-0x40]! (unpredictable)
+E9600008 strd r0, r0, [r0, #-0x20]! (unpredictable)
+E9600004 strd r0, r0, [r0, #-0x10]! (unpredictable)
+E9600002 strd r0, r0, [r0, #-0x8]! (unpredictable)
+E9600001 strd r0, r0, [r0, #-0x4]! (unpredictable)
+E9600000 [ne] strdne r0, r0, [r0, #-0x0]! (unpredictable)
+E9612300 strd r2, r3, [r1, #-0x0]!

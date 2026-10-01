@@ -1,0 +1,22 @@
+// bfmin_mz_zzv_2x1 1|10|0000|1|size=00|10|Zm=xxxx|10100|0|01|00|op=0|Zdn=xxxx|o2=1
+// BfminMzZzv2x1: BFMIN  { <Zdn1>.H-<Zdn2>.H }, { <Zdn1>.H-<Zdn2>.H }, <Zm>.H
+// register fields: Zm, Zdn
+C120A109 bfmin {z8.h-z9.h}, {z8.h-z9.h}, z0.h
+C120A117 bfmin {z22.h-z23.h}, {z22.h-z23.h}, z0.h
+C121A107 bfmin {z6.h-z7.h}, {z6.h-z7.h}, z1.h
+C12FA101 bfmin {z0.h-z1.h}, {z0.h-z1.h}, z15.h
+C120A11F bfmin {z30.h-z31.h}, {z30.h-z31.h}, z0.h
+C120A101 bfmin {z0.h-z1.h}, {z0.h-z1.h}, z0.h
+
+// bfmin_mz_zzv_4x1 1|10|0000|1|size=00|10|Zm=xxxx|10101|0|01|00|op=0|Zdn=xxx|0|o2=1
+// BfminMzZzv4x1: BFMIN  { <Zdn1>.H-<Zdn4>.H }, { <Zdn1>.H-<Zdn4>.H }, <Zm>.H
+// register fields: Zm, Zdn
+C120A905 bfmin {z4.h-z7.h}, {z4.h-z7.h}, z0.h
+C121A911 bfmin {z16.h-z19.h}, {z16.h-z19.h}, z1.h
+C122A901 bfmin {z0.h-z3.h}, {z0.h-z3.h}, z2.h
+C12FA909 bfmin {z8.h-z11.h}, {z8.h-z11.h}, z15.h
+C120A90D bfmin {z12.h-z15.h}, {z12.h-z15.h}, z0.h
+C120A915 bfmin {z20.h-z23.h}, {z20.h-z23.h}, z0.h
+C120A919 bfmin {z24.h-z27.h}, {z24.h-z27.h}, z0.h
+C120A91D bfmin {z28.h-z31.h}, {z28.h-z31.h}, z0.h
+C120A901 bfmin {z0.h-z3.h}, {z0.h-z3.h}, z0.h

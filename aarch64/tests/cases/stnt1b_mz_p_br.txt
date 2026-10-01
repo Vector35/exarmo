@@ -1,0 +1,31 @@
+// stnt1b_mz_p_br_2 1|01|0000|00|01|Rm=xxxxx|0|msz=00|PNg=xxx|Rn=xxxxx|Zt=xxxx|N=1
+// Stnt1bMzPBr2: STNT1B  { <Zt1>.B-<Zt2>.B }, <PNg>, [<Xn|SP>, <Xm>]
+// register fields: Rm, PNg, Rn, Zt
+A0200007 stnt1b {z6.b-z7.b}, pn8, [x0, x0]
+A0200015 stnt1b {z20.b-z21.b}, pn8, [x0, x0]
+A0200023 stnt1b {z2.b-z3.b}, pn8, [x1, x0]
+A03F07E1 stnt1b {z0.b-z1.b}, pn9, [sp, xzr]
+A020081F stnt1b {z30.b-z31.b}, pn10, [x0, x0]
+A0200C07 stnt1b {z6.b-z7.b}, pn11, [x0, x0]
+A0201007 stnt1b {z6.b-z7.b}, pn12, [x0, x0]
+A0201407 stnt1b {z6.b-z7.b}, pn13, [x0, x0]
+A0201807 stnt1b {z6.b-z7.b}, pn14, [x0, x0]
+A0201C07 stnt1b {z6.b-z7.b}, pn15, [x0, x0]
+A0200001 stnt1b {z0.b-z1.b}, pn8, [x0, x0]
+A0210869 stnt1b {z8.b-z9.b}, pn10, [x3, x1]
+
+// stnt1b_mz_p_br_4 1|01|0000|00|01|Rm=xxxxx|1|msz=00|PNg=xxx|Rn=xxxxx|Zt=xxx|0|N=1
+// Stnt1bMzPBr4: STNT1B  { <Zt1>.B-<Zt4>.B }, <PNg>, [<Xn|SP>, <Xm>]
+// register fields: Rm, PNg, Rn, Zt
+A020800D stnt1b {z12.b-z15.b}, pn8, [x0, x0]
+A0208029 stnt1b {z8.b-z11.b}, pn8, [x1, x0]
+A0208045 stnt1b {z4.b-z7.b}, pn8, [x2, x0]
+A03F87E1 stnt1b {z0.b-z3.b}, pn9, [sp, xzr]
+A0208811 stnt1b {z16.b-z19.b}, pn10, [x0, x0]
+A0208C15 stnt1b {z20.b-z23.b}, pn11, [x0, x0]
+A0209019 stnt1b {z24.b-z27.b}, pn12, [x0, x0]
+A020941D stnt1b {z28.b-z31.b}, pn13, [x0, x0]
+A020980D stnt1b {z12.b-z15.b}, pn14, [x0, x0]
+A0209C0D stnt1b {z12.b-z15.b}, pn15, [x0, x0]
+A0208001 stnt1b {z0.b-z3.b}, pn8, [x0, x0]
+A0218871 stnt1b {z16.b-z19.b}, pn10, [x3, x1]

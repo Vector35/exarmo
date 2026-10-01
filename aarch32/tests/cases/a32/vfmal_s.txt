@@ -1,0 +1,43 @@
+// VFMAL_s_A1_D 11111110|op1=0|D=x|0|S=0|Vn=xxxx|Vd=xxxx|1000|N=x|Q=0|M=x|U=1|Vm=xxxx
+// VfmalSA1D: VFMAL{<q>}.F16  <Dd>, <Sn>, <Sm>[<index>]
+// read together by <Dd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+fe04589c vfmal.f16 d5, s9, s8[1]
+fe01d8b2 vfmal.f16 d13, s3, s5[0]
+fe0e5814 vfmal.f16 d5, s28, s8[0]
+fe4d0831 vfmal.f16 d16, s26, s3[0]
+fe0008b4 vfmal.f16 d0, s1, s9[0]
+fe01a836 vfmal.f16 d10, s2, s13[0]
+fe06f83f vfmal.f16 d15, s12, s15[1]
+fe4e5817 vfmal.f16 d21, s28, s14[0]
+FE0F8890 vfmal.f16 d8, s31, s0[0]
+FE084898 vfmal.f16 d4, s17, s0[1]
+FE022890 vfmal.f16 d2, s5, s0[0]
+FE00181F vfmal.f16 d1, s0, s14[1]
+FE4FF830 vfmal.f16 d31, s30, s1[0]
+FE0F589C vfmal.f16 d5, s31, s8[1]
+
+// VFMAL_s_A1_Q 11111110|op1=0|D=x|0|S=0|Vn=xxxx|Vd=xxxx|1000|N=x|Q=1|M=x|U=1|Vm=xxxx
+// VfmalSA1Q: VFMAL{<q>}.F16  <Qd>, <Dn>, <Dm>[<index>]
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <index>: M, Vm
+fe4b8870 vfmal.f16 q12, d11, d0[2]
+fe00e870 vfmal.f16 q7, d0, d0[2]
+fe4a4859 vfmal.f16 q10, d10, d1[1]
+fe08887e vfmal.f16 q4, d8, d6[3]
+fe4248de vfmal.f16 q10, d18, d6[1]
+fe01287c vfmal.f16 q1, d1, d4[3]
+fe43e8de vfmal.f16 q15, d19, d6[1]
+fe496850 vfmal.f16 q11, d9, d0[0]
+FE4F087F vfmal.f16 q8, d15, d7[3]
+FE040878 vfmal.f16 q0, d4, d0[3]
+FE4BF870 UNDEFINED
+FE4B1870 UNDEFINED
+FE4008F4 vfmal.f16 q8, d16, d4[2]
+FE4F8872 vfmal.f16 q12, d15, d2[2]
+FE4F88F1 vfmal.f16 q12, d31, d1[2]
+FE0BF870 UNDEFINED
+FE4B885F vfmal.f16 q12, d11, d7[1]
+FE4B887F vfmal.f16 q12, d11, d7[3]

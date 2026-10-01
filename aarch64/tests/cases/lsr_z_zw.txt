@@ -1,0 +1,23 @@
+// lsr_z_zw_ 000|0010|0|size=xx|1|Zm=xxxxx|100|0|0|U=1|Zn=xxxxx|Zd=xxxxx
+// LsrZZw: LSR  <Zd>.<T>, <Zn>.<T>, <Zm>.D
+// register fields: Zm, Zn, Zd
+0475868A lsr z10.h, z20.h, z21.d
+047D8446 lsr z6.h, z2.h, z29.d
+046C8601 lsr z1.h, z16.h, z12.d
+0422849E lsr z30.b, z4.b, z2.d
+04258761 lsr z1.b, z27.b, z5.d
+0467868D lsr z13.h, z20.h, z7.d
+04B986E8 lsr z8.s, z23.s, z25.d
+047486CE lsr z14.h, z22.h, z20.d
+04798619 lsr z25.h, z16.h, z25.d
+04B88739 lsr z25.s, z25.s, z24.d
+04608565 lsr z5.h, z11.h, z0.d
+04BB85E2 lsr z2.s, z15.s, z27.d
+04BA87E7 lsr z7.s, z31.s, z26.d
+04A884B6 lsr z22.s, z5.s, z8.d
+046085D3 lsr z19.h, z14.h, z0.d
+04B68456 lsr z22.s, z2.s, z22.d
+047F8400 lsr z0.h, z0.h, z31.d
+0475869F lsr z31.h, z20.h, z21.d
+04F5868A UNDEFINED
+047586AA lsr z10.h, z21.h, z21.d

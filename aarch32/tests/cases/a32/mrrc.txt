@@ -1,0 +1,16 @@
+// MRRC_A1 cond=xxxx|11|0|00|D=1|0|L=1|Rt2=xxxx|Rt=xxxx|1|11|cp15=x|opc1=xxxx|CRm=xxxx
+// MrrcA1: MRRC{<c>}{<q>}  <coproc>, {#}<opc1>, <Rt>, <Rt2>, <CRm>
+// register fields: Rt2, Rt
+3c5b0fae mrrclo p15, #10, r0, r11, c14
+6c587f08 mrrcvs p15, #0, r7, r8, c8
+6c5a8e7e mrrcvs p14, #7, r8, r10, c14
+ac5c7f8d mrrcge p15, #8, r7, r12, c13
+5c5acead mrrcpl p14, #10, r12, r10, c13
+bc5a9e84 mrrclt p14, #8, r9, r10, c4
+8c5fcfd1 mrrchi p15, #13, r12, pc, c1 (unpredictable)
+bc52fe3f mrrclt p14, #3, pc, r2, c15 (unpredictable)
+0C500FF0 mrrceq p15, #0xf, r0, r0, c0 (unpredictable)
+FC5B0FAE UNALLOCATED
+4C5BBF42 mrrcmi p15, #0x4, r11, r11, c2 (unpredictable)
+2C5B0F2E mrrccs p15, #0x2, r0, r11, c14
+1C5B0F1E mrrcne p15, #0x1, r0, r11, c14

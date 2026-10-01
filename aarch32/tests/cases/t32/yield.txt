@@ -1,0 +1,17 @@
+// YIELD_T1 1011|1111|hint=0001|0000
+// YieldT1: YIELD{<c>}{<q>}
+// IT state read: condition
+bf10 yield
+BF10 [ne] yieldne
+
+// YIELD_T2 111|10|0|1110|10|(1)(1)(1)(1)|1|0(0)0|(0)|000|hint=0000|option=0001
+// YieldT2: YIELD{<c>}.W
+// IT state read: condition
+F3A08001 yield (unpredictable)
+F3AFA801 yield (unpredictable)
+F3A88001 yield (unpredictable)
+F3A48001 yield (unpredictable)
+F3A28001 yield (unpredictable)
+F3A18001 yield (unpredictable)
+F3A08001 [ne] yieldne (unpredictable)
+F3AF8001 yield

@@ -1,0 +1,22 @@
+// clastb_z_p_zz_ 000|0010|1|size=xx|1|0|100|B=1|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// ClastbZPZz: CLASTB  <Zdn>.<T>, <Pg>, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+05E99F0A clastb z10.d, p7, z10.d, z24.d
+05298914 clastb z20.b, p2, z20.b, z8.b
+05E99E9C clastb z28.d, p7, z28.d, z20.d
+05A99066 clastb z6.s, p4, z6.s, z3.s
+05299C4D clastb z13.b, p7, z13.b, z2.b
+05699FD4 clastb z20.h, p7, z20.h, z30.h
+05299590 clastb z16.b, p5, z16.b, z12.b
+05A99E36 clastb z22.s, p7, z22.s, z17.s
+05698402 clastb z2.h, p1, z2.h, z0.h
+05298B02 clastb z2.b, p2, z2.b, z24.b
+05A98438 clastb z24.s, p1, z24.s, z1.s
+05299BC7 clastb z7.b, p6, z7.b, z30.b
+05298359 clastb z25.b, p0, z25.b, z26.b
+05A98BD2 clastb z18.s, p2, z18.s, z30.s
+05299CF3 clastb z19.b, p7, z19.b, z7.b
+05E9862F clastb z15.d, p1, z15.d, z17.d
+05E98FE0 clastb z0.d, p3, z0.d, z31.d
+05E99F1F clastb z31.d, p7, z31.d, z24.d
+05E99F18 clastb z24.d, p7, z24.d, z24.d

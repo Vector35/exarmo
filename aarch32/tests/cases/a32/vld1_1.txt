@@ -1,0 +1,148 @@
+// VLD1_1_A1_nowb 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=00|N=00|index_align=xxxx|Rm=1111
+// Vld11A1Nowb: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f4e780cf vld1.8 {d24[6]}, [r7]
+f4ed204f vld1.8 {d18[2]}, [sp]
+f4a5408f vld1.8 {d4[4]}, [r5]
+f4a8902f vld1.8 {d9[1]}, [r8]
+f4a8d0af vld1.8 {d13[5]}, [r8]
+f4a3e00f vld1.8 {d14[0]}, [r3]
+f4ac10cf vld1.8 {d1[6]}, [r12]
+F4E000CF vld1.8 {d16[6]}, [r0]
+F4EFF0CF vld1.8 {d31[6]}, [pc] (unpredictable)
+F4E780FF UNDEFINED
+F4E7801F UNDEFINED
+
+// VLD1_1_A1_posti 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=00|N=00|index_align=xxxx|Rm=1101
+// Vld11A1Posti: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f4e5c02d vld1.8 {d28[1]}, [r5]!
+f4e600ed vld1.8 {d16[7]}, [r6]!
+f4aa600d vld1.8 {d6[0]}, [r10]!
+f4e5a06d vld1.8 {d26[3]}, [r5]!
+f4ed30cd vld1.8 {d19[6]}, [sp]!
+f4a7b08d vld1.8 {d11[4]}, [r7]!
+F4E0F04D vld1.8 {d31[2]}, [r0]!
+F4EF802D vld1.8 {d24[1]}, [pc]! (unpredictable)
+F4E5402D vld1.8 {d20[1]}, [r5]!
+F4E5202D vld1.8 {d18[1]}, [r5]!
+F4E5102D vld1.8 {d17[1]}, [r5]!
+F4E5C0FD UNDEFINED
+F4E5C01D UNDEFINED
+
+// VLD1_1_A1_postr 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=00|N=00|index_align=xxxx|Rm=xxxx
+// Vld11A1Postr: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f4eae067 vld1.8 {d30[3]}, [r10], r7
+f4af4065 vld1.8 {d4[3]}, [pc], r5 (unpredictable)
+f4e95026 vld1.8 {d21[1]}, [r9], r6
+f4a79067 vld1.8 {d9[3]}, [r7], r7
+f4a9d0e8 vld1.8 {d13[7]}, [r9], r8
+f4e42065 vld1.8 {d18[3]}, [r4], r5
+f4e8004e vld1.8 {d16[2]}, [r8], lr
+f4e9f0a1 vld1.8 {d31[5]}, [r9], r1
+F4E08000 vld1.8 {d24[0]}, [r0], r0
+F4EA1087 vld1.8 {d17[4]}, [r10], r7
+F4EAE0FF UNDEFINED
+F4EAE017 UNDEFINED
+
+// VLD1_1_A2_nowb 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=01|N=00|index_align=xxxx|Rm=1111
+// Vld11A2Nowb: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f4a3544f vld1.16 {d5[1]}, [r3]
+f4eac44f vld1.16 {d28[1]}, [r10]
+f4e4344f vld1.16 {d19[1]}, [r4]
+F4A0040F vld1.16 {d0[0]}, [r0]
+F4AFF48F vld1.16 {d15[2]}, [pc] (unpredictable)
+F4A3841F vld1.16 {d8[0]}, [r3:16]
+F4A3444F vld1.16 {d4[1]}, [r3]
+F4A3244F vld1.16 {d2[1]}, [r3]
+F4A3144F vld1.16 {d1[1]}, [r3]
+F4A354FF UNDEFINED
+F4A3542F UNDEFINED
+
+// VLD1_1_A2_posti 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=01|N=00|index_align=xxxx|Rm=1101
+// Vld11A2Posti: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f4ab54cd vld1.16 {d5[3]}, [r11]!
+f4a7b44d vld1.16 {d11[1]}, [r7]!
+F4E0040D vld1.16 {d16[0]}, [r0]!
+F4AFF48D vld1.16 {d15[2]}, [pc]! (unpredictable)
+F4AB841D vld1.16 {d8[0]}, [r11:16]!
+F4AB44CD vld1.16 {d4[3]}, [r11]!
+F4AB24CD vld1.16 {d2[3]}, [r11]!
+F4AB14CD vld1.16 {d1[3]}, [r11]!
+F4AB54FD UNDEFINED
+F4AB542D UNDEFINED
+
+// VLD1_1_A2_postr 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=01|N=00|index_align=xxxx|Rm=xxxx
+// Vld11A2Postr: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f4a7b4c1 vld1.16 {d11[3]}, [r7], r1
+f4e944cb vld1.16 {d20[3]}, [r9], r11
+f4a054c1 vld1.16 {d5[3]}, [r0], r1
+f4acb4c7 vld1.16 {d11[3]}, [r12], r7
+f4a25493 vld1.16 {d5[2]}, [r2:16], r3
+f4e85411 vld1.16 {d21[0]}, [r8:16], r1
+f4ec34d0 vld1.16 {d19[3]}, [r12:16], r0
+f4a75498 vld1.16 {d5[2]}, [r7:16], r8
+F4AF0401 vld1.16 {d0[0]}, [pc], r1 (unpredictable)
+F4A7F487 vld1.16 {d15[2]}, [r7], r7
+F4A78441 vld1.16 {d8[1]}, [r7], r1
+F4A724C1 vld1.16 {d2[3]}, [r7], r1
+F4A714C1 vld1.16 {d1[3]}, [r7], r1
+F4A7B4FF UNDEFINED
+F4A7B421 UNDEFINED
+
+// VLD1_1_A3_nowb 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=10|N=00|index_align=xxxx|Rm=1111
+// Vld11A3Nowb: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f4e3883f vld1.32 {d24[0]}, [r3:32]
+f4ea280f vld1.32 {d18[0]}, [r10]
+f4a388bf vld1.32 {d8[1]}, [r3:32]
+f4e4a80f vld1.32 {d26[0]}, [r4]
+f4a2b88f vld1.32 {d11[1]}, [r2]
+f4eb88bf vld1.32 {d24[1]}, [r11:32]
+f4a2483f vld1.32 {d4[0]}, [r2:32]
+f4aa28bf vld1.32 {d2[1]}, [r10:32]
+F4E0083F vld1.32 {d16[0]}, [r0:32]
+F4EFF83F vld1.32 {d31[0]}, [pc:32] (unpredictable)
+F4E3183F vld1.32 {d17[0]}, [r3:32]
+F4E388FF UNDEFINED
+F4E3884F UNDEFINED
+F4E3882F UNDEFINED
+F4E3881F UNDEFINED
+
+// VLD1_1_A3_posti 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=10|N=00|index_align=xxxx|Rm=1101
+// Vld11A3Posti: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f4af980d vld1.32 {d9[0]}, [pc]! (unpredictable)
+F4E0088D vld1.32 {d16[1]}, [r0]!
+F4AFF80D vld1.32 {d15[0]}, [pc]! (unpredictable)
+F4AF880D vld1.32 {d8[0]}, [pc]! (unpredictable)
+F4AF480D vld1.32 {d4[0]}, [pc]! (unpredictable)
+F4AF280D vld1.32 {d2[0]}, [pc]! (unpredictable)
+F4AF180D vld1.32 {d1[0]}, [pc]! (unpredictable)
+F4AF98FD UNDEFINED
+F4AF984D UNDEFINED
+F4AF982D UNDEFINED
+F4AF981D UNDEFINED
+
+// VLD1_1_A3_postr 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|size=10|N=00|index_align=xxxx|Rm=xxxx
+// Vld11A3Postr: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f4e358b5 vld1.32 {d21[1]}, [r3:32], r5
+f4e2683a vld1.32 {d22[0]}, [r2:32], r10
+f4ee5804 vld1.32 {d21[0]}, [lr], r4
+f4e5280e vld1.32 {d18[0]}, [r5], lr
+f4e87882 vld1.32 {d23[1]}, [r8], r2
+f4a57801 vld1.32 {d7[0]}, [r5], r1
+f4a48802 vld1.32 {d8[0]}, [r4], r2
+f4a61803 vld1.32 {d1[0]}, [r6], r3
+F4E008B0 vld1.32 {d16[1]}, [r0:32], r0
+F4EFF8B5 vld1.32 {d31[1]}, [pc:32], r5 (unpredictable)
+F4E348B3 vld1.32 {d20[1]}, [r3:32], r3
+F4E358FF UNDEFINED
+F4E35845 UNDEFINED
+F4E35825 UNDEFINED
+F4E35815 UNDEFINED

@@ -1,0 +1,32 @@
+// UADDLV_asimdall_only 0|Q=x|U=1|0|111|0|size=xx|11000|opcode=00011|10|Rn=xxxxx|Rd=xxxxx
+// UaddlvAsimdallOnly: UADDLV  <V><d>, <Vn>.<T>
+// read together by <d>: size, Rd
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+2E303A55 uaddlv h21, v18.8b
+2E303892 uaddlv h18, v4.8b
+6E7038E0 uaddlv s0, v7.8h
+6E703A9F uaddlv s31, v20.8h
+6E7038DE uaddlv s30, v6.8h
+2E703A29 uaddlv s9, v17.4h
+2E303920 uaddlv h0, v9.8b
+6E303834 uaddlv h20, v1.16b
+2E303BA9 uaddlv h9, v29.8b
+2E303960 uaddlv h0, v11.8b
+2E703BC3 uaddlv s3, v30.4h
+6E3039AF uaddlv h15, v13.16b
+6E303905 uaddlv h5, v8.16b
+6E703AAB uaddlv s11, v21.8h
+6EB03AAF uaddlv d15, v21.4s
+2E303B9A uaddlv h26, v28.8b
+2E303815 uaddlv h21, v0.8b
+2E303BF5 uaddlv h21, v31.8b
+2EF03A55 UNDEFINED
+2EB03A55 UNDEFINED
+6EF03A55 UNDEFINED
+2E303A5F uaddlv h31, v18.8b
+6EB038E0 uaddlv d0, v7.4s
+6EB038FF uaddlv d31, v7.4s
+2EF03A40 UNDEFINED
+2EF03A5F UNDEFINED
+2E303A52 uaddlv h18, v18.8b

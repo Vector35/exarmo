@@ -1,0 +1,33 @@
+// STMDA_A1 cond=xxxx|10|0|P=0|U=0|op=0|W=x|L=0|Rn=xxxx|register_list=xxxxxxxxxxxxxxxx
+// StmdaA1: STMDA{<c>}{<q>}  <Rn>{<!>}, <registers>
+// register fields: Rn
+88048db0 stmdahi r4, {r4, r5, r7, r8, r10, r11, pc}
+28003359 stmdahs r0, {r0, r3, r4, r6, r8, r9, r12, sp}
+28210b62 stmdahs r1!, {r1, r5, r6, r8, r9, r11}
+580923e2 stmdapl r9, {r1, r5, r6, r7, r8, r9, sp}
+18078679 stmdane r7, {r0, r3, r4, r5, r6, r9, r10, pc}
+5804aa74 stmdapl r4, {r2, r4, r5, r6, r9, r11, sp, pc}
+d802aa42 stmdale r2, {r1, r6, r9, r11, sp, pc}
+182b5b78 stmdane r11!, {r3, r4, r5, r6, r8, r9, r11, r12, lr}
+// Binary Ninja's tests
+e805207a stmda r5, {r1, r3, r4, r5, r6, sp}
+e82d007a stmda sp!, {r1, r3, r4, r5, r6}
+080F0000 stmdaeq pc, {} (unpredictable)
+F8048DB0 UNALLOCATED
+4804FFFF stmdami r4, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc}
+88048000 stmdahi r4, {pc}
+88044000 stmdahi r4, {lr}
+88042000 stmdahi r4, {sp}
+88041000 stmdahi r4, {r12}
+88040800 stmdahi r4, {r11}
+88040400 stmdahi r4, {r10}
+88040200 stmdahi r4, {r9}
+88040100 stmdahi r4, {r8}
+88040080 stmdahi r4, {r7}
+88040040 stmdahi r4, {r6}
+88040020 stmdahi r4, {r5}
+88040010 stmdahi r4, {r4}
+88040008 stmdahi r4, {r3}
+88040004 stmdahi r4, {r2}
+88040002 stmdahi r4, {r1}
+88040001 stmdahi r4, {r0}

@@ -1,0 +1,39 @@
+// SMMUL_A1 cond=xxxx|01110|op1=101|Rd=xxxx|Ra=1111|Rm=xxxx|00|R=0|1|Rn=xxxx
+// SmmulA1: SMMUL{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+d75df513 smmulle sp, r3, r5
+a755f612 smmulge r5, r2, r6
+575ffe16 smmulpl pc, r6, lr (unpredictable)
+275bfa1c smmulhs r11, r12, r10
+d758fa14 smmulle r8, r4, r10
+575df21a smmulpl sp, r10, r2
+9751fc11 smmulls r1, r1, r12
+5759f015 smmulpl r9, r5, r0
+// Binary Ninja's tests
+3752f413 smmullo r2, r3, r4
+e752f413 smmul r2, r3, r4
+0750FF10 smmuleq r0, r0, pc (unpredictable)
+F75DF513 UNALLOCATED
+875DFD1F smmulhi sp, pc, sp (unpredictable)
+475DF515 smmulmi sp, r5, r5
+175DF513 smmulne sp, r3, r5
+
+// SMMULR_A1 cond=xxxx|01110|op1=101|Rd=xxxx|Ra=1111|Rm=xxxx|00|R=1|1|Rn=xxxx
+// SmmulrA1: SMMULR{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+875ffd35 smmulrhi pc, r5, sp (unpredictable)
+7754f13e smmulrvc r4, lr, r1
+375df138 smmulrlo sp, r8, r1
+8759f733 smmulrhi r9, r3, r7
+875cf13e smmulrhi r12, lr, r1
+075ef53b smmulreq lr, r11, r5
+9759fe34 smmulrls r9, r4, lr
+c755f131 smmulrgt r5, r1, r1
+// Binary Ninja's tests
+2753f132 smmulrhs r3, r2, r1
+e753f132 smmulr r3, r2, r1
+F75FFD35 UNALLOCATED
+4750F030 smmulrmi r0, r0, r0
+175FFF3F smmulrne pc, pc, pc (unpredictable)
+875FFF35 smmulrhi pc, r5, pc (unpredictable)
+875FFD3F smmulrhi pc, pc, sp (unpredictable)

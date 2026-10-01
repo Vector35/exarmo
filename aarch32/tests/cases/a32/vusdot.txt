@@ -1,0 +1,42 @@
+// VUSDOT_A1_D 1111110|op1=01|D=x|op2=10|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=1|N=x|Q=0|M=x|U=0|Vm=xxxx
+// VusdotA1D: VUSDOT{<q>}.S8  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fcedbda4 vusdot.s8 d27, d29, d20
+fcea6d2c vusdot.s8 d22, d10, d28
+fca78da5 vusdot.s8 d8, d23, d21
+fcac9d25 vusdot.s8 d9, d12, d21
+fca6fdaa vusdot.s8 d15, d22, d26
+fce24d27 vusdot.s8 d20, d2, d23
+fcec6d26 vusdot.s8 d22, d12, d22
+fca9cd02 vusdot.s8 d12, d9, d2
+FCE00DA0 vusdot.s8 d16, d16, d16
+FCEF2DAF vusdot.s8 d18, d31, d31
+FCE81DA8 vusdot.s8 d17, d24, d24
+FCA40DA1 vusdot.s8 d0, d20, d17
+FCE10D80 vusdot.s8 d16, d17, d0
+FCE0FD0F vusdot.s8 d31, d0, d15
+FCE0BDA0 vusdot.s8 d27, d16, d16
+FCEFBD2F vusdot.s8 d27, d15, d31
+FCEFBDA4 vusdot.s8 d27, d31, d20
+
+// VUSDOT_A1_Q 1111110|op1=01|D=x|op2=10|Vn=xxxx|Vd=xxxx|1|op3=1|0|op4=1|N=x|Q=1|M=x|U=0|Vm=xxxx
+// VusdotA1Q: VUSDOT{<q>}.S8  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+fca4edea vusdot.s8 q7, q10, q13
+fca8adce vusdot.s8 q5, q12, q7
+fca06d62 vusdot.s8 q3, q0, q9
+fce02d44 vusdot.s8 q9, q0, q2
+fcaa2de2 vusdot.s8 q1, q13, q9
+FCAFFDEF UNDEFINED
+FCA20DE0 vusdot.s8 q0, q9, q8
+FCA11DE1 UNDEFINED
+FCA08DE8 vusdot.s8 q4, q8, q12
+FCA44DC0 vusdot.s8 q2, q10, q0
+FCA40DE0 vusdot.s8 q0, q10, q8
+FCAFFD4F UNDEFINED
+FCE40DEA vusdot.s8 q8, q10, q13
+FCEFFDEF UNDEFINED

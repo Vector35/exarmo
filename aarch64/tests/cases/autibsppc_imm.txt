@@ -1,0 +1,21 @@
+// AUTIBSPPC_only_dp_1src_imm sf=1|11|100|111|opc=01|imm16=xxxxxxxxxxxxxxxx|Rd=11111
+// AutibsppcOnlyDp1srcImm: AUTIBSPPC  <label>
+F3A0005F autibsppc 0x7ffffffffffffffc
+F3A0013F autibsppc 0x7fffffffffffffe0
+F3A0021F autibsppc 0x7fffffffffffffc4
+F3A0001F autibsppc 0x8000000000000004
+F3BFFFFF autibsppc 0x7ffffffffffc0008
+F3B0001F autibsppc 0x7ffffffffffe0004
+F3A8001F autibsppc 0x7fffffffffff0004
+F3A4001F autibsppc 0x7fffffffffff8004
+F3A2001F autibsppc 0x7fffffffffffc004
+F3A1001F autibsppc 0x7fffffffffffe004
+F3A0801F autibsppc 0x7ffffffffffff004
+F3A0401F autibsppc 0x7ffffffffffff804
+F3A0201F autibsppc 0x7ffffffffffffc04
+F3A0101F autibsppc 0x7ffffffffffffe04
+F3A0081F autibsppc 0x7fffffffffffff04
+F3A0041F autibsppc 0x7fffffffffffff84
+F3A0011F autibsppc 0x7fffffffffffffe4
+F3A0009F autibsppc 0x7ffffffffffffff4
+F3A0003F autibsppc 0x8000000000000000

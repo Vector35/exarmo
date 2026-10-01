@@ -1,0 +1,66 @@
+// LDLAR_LR32_ldstord size=10|0010001|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdlarLr32Ldstord: LDLAR  <Wt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+88DF7C1F ldlar wzr, [x0]
+88DF7F85 ldlar w5, [x28]
+88DF7C60 ldlar w0, [x3]
+88DF7C2B ldlar w11, [x1]
+88DF7D24 ldlar w4, [x9]
+88DF7EC5 ldlar w5, [x22]
+88DF7D72 ldlar w18, [x11]
+88DF7E1B ldlar w27, [x16]
+88D125AE ldlar w14, [x13] (unpredictable)
+88C12642 ldlar w2, [x18] (unpredictable)
+88DD6287 ldlar w7, [x20] (unpredictable)
+88CD2EF7 ldlar w23, [x23] (unpredictable)
+88CD0C01 ldlar w1, [x0] (unpredictable)
+88DC158C ldlar w12, [x12] (unpredictable)
+88C05DE1 ldlar w1, [x15] (unpredictable)
+88D30899 ldlar w25, [x4] (unpredictable)
+88C1537B ldlar w27, [x27] (unpredictable)
+88D93890 ldlar w16, [x4] (unpredictable)
+88D14D1D ldlar w29, [x8] (unpredictable)
+88C60958 ldlar w24, [x10] (unpredictable)
+88CE5DCF ldlar w15, [x14] (unpredictable)
+88D85865 ldlar w5, [x3] (unpredictable)
+88C574D3 ldlar w19, [x6] (unpredictable)
+88DB3FE8 ldlar w8, [sp] (unpredictable)
+88DF001F ldlar wzr, [x0] (unpredictable)
+88D0401F ldlar wzr, [x0] (unpredictable)
+88C8201F ldlar wzr, [x0] (unpredictable)
+88C4101F ldlar wzr, [x0] (unpredictable)
+88C2041F ldlar wzr, [x0] (unpredictable)
+
+// LDLAR_LR64_ldstord size=11|0010001|L=1|0|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=(1)(1)(1)(1)(1)|Rn=xxxxx|Rt=xxxxx
+// LdlarLr64Ldstord: LDLAR  <Xt>, [<Xn|SP>{, #0}]
+// register fields: Rn, Rt
+C8DF7C2F ldlar x15, [x1]
+C8DF7D47 ldlar x7, [x10]
+C8DF7ED7 ldlar x23, [x22]
+C8DF7E9D ldlar fp, [x20]
+C8DF7EFC ldlar x28, [x23]
+C8DF7C71 ldlar x17, [x3]
+C8DF7E73 ldlar x19, [x19]
+C8DF7CE4 ldlar x4, [x7]
+C8C124B7 ldlar x23, [x5] (unpredictable)
+C8DD511D ldlar fp, [x8] (unpredictable)
+C8D85DCF ldlar x15, [x14] (unpredictable)
+C8CB068D ldlar x13, [x20] (unpredictable)
+C8CF7711 ldlar x17, [x24] (unpredictable)
+C8CC3AAD ldlar x13, [x21] (unpredictable)
+C8DF39DC ldlar x28, [x14] (unpredictable)
+C8C307C1 ldlar x1, [lr] (unpredictable)
+C8D21319 ldlar x25, [x24] (unpredictable)
+C8C36D54 ldlar x20, [x10] (unpredictable)
+C8C573C8 ldlar x8, [lr] (unpredictable)
+C8CE0BAA ldlar x10, [fp] (unpredictable)
+C8C07533 ldlar x19, [x9] (unpredictable)
+C8CB32CC ldlar x12, [x22] (unpredictable)
+C8C622E6 ldlar x6, [x23] (unpredictable)
+C8C14124 ldlar x4, [x9] (unpredictable)
+C8DF0000 ldlar x0, [x0] (unpredictable)
+C8DF7FFF ldlar xzr, [sp]
+C8D07C2F ldlar x15, [x1] (unpredictable)
+C8C87C2F ldlar x15, [x1] (unpredictable)
+C8C47C2F ldlar x15, [x1] (unpredictable)
+C8C27C2F ldlar x15, [x1] (unpredictable)

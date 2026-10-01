@@ -1,0 +1,24 @@
+// IRG_64I_dp_2src sf=1|0|S=0|1|101|0110|Rm=xxxxx|opcode=000100|Rn=xxxxx|Rd=xxxxx
+// Irg64iDp2src: IRG  <Xd|SP>, <Xn|SP>{, <Xm>}
+// register fields: Rm, Rn, Rd
+9AC112F1 irg x17, x23, x1
+9ADE1380 irg x0, x28, lr
+9AD012C9 irg x9, x22, x16
+9AC41363 irg x3, x27, x4
+9AD11200 irg x0, x16, x17
+9AC21330 irg x16, x25, x2
+9AC01375 irg x21, x27, x0
+9AC41150 irg x16, x10, x4
+9AC9125A irg x26, x18, x9
+9ADE11DA irg x26, x14, lr
+9AC3114F irg x15, x10, x3
+9AD71323 irg x3, x25, x23
+9AC3128F irg x15, x20, x3
+9AD913CE irg x14, lr, x25
+9ADC12F2 irg x18, x23, x28
+9ADF130C irg x12, x24
+9AC1101F irg sp, x0, x1
+9AC113F1 irg x17, sp, x1
+9AC11031 irg x17, x1, x1
+9AC112E1 irg x1, x23, x1
+9AC112F7 irg x23, x23, x1

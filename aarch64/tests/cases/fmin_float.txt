@@ -1,0 +1,65 @@
+// FMIN_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|01|op=01|10|Rn=xxxxx|Rd=xxxxx
+// FminDFloatdp2: FMIN  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E7B5B98 fmin d24, d28, d27
+1E72580F fmin d15, d0, d18
+1E755930 fmin d16, d9, d21
+1E715A4D fmin d13, d18, d17
+1E725A1F fmin d31, d16, d18
+1E605B82 fmin d2, d28, d0
+1E6B5842 fmin d2, d2, d11
+1E615A15 fmin d21, d16, d1
+1E645B84 fmin d4, d28, d4
+1E7658EF fmin d15, d7, d22
+1E795A7A fmin d26, d19, d25
+1E6358D7 fmin d23, d6, d3
+1E7D5866 fmin d6, d3, d29
+1E79586D fmin d13, d3, d25
+1E775AC8 fmin d8, d22, d23
+1E765AEB fmin d11, d23, d22
+1E7F5BE0 fmin d0, d31, d31
+
+// FMIN_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|01|op=01|10|Rn=xxxxx|Rd=xxxxx
+// FminHFloatdp2: FMIN  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EE75949 fmin h9, h10, h7
+1EF25A14 fmin h20, h16, h18
+1EE65B4F fmin h15, h26, h6
+1EEE589B fmin h27, h4, h14
+1EEE5B0F fmin h15, h24, h14
+1EEB5862 fmin h2, h3, h11
+1EE85876 fmin h22, h3, h8
+1EE558D1 fmin h17, h6, h5
+1EEB5B9B fmin h27, h28, h11
+1EF2589F fmin h31, h4, h18
+1EE35A58 fmin h24, h18, h3
+1EE45A3F fmin h31, h17, h4
+1EF25A67 fmin h7, h19, h18
+1EEF593D fmin h29, h9, h15
+1EE958D2 fmin h18, h6, h9
+1EF85B9C fmin h28, h28, h24
+1EE05800 fmin h0, h0, h0
+1EFF5BE9 fmin h9, h31, h31
+
+// FMIN_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|01|op=01|10|Rn=xxxxx|Rd=xxxxx
+// FminSFloatdp2: FMIN  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E3E58E6 fmin s6, s7, s30
+1E285B79 fmin s25, s27, s8
+1E305B29 fmin s9, s25, s16
+1E3C5AEC fmin s12, s23, s28
+1E325976 fmin s22, s11, s18
+1E265825 fmin s5, s1, s6
+1E335968 fmin s8, s11, s19
+1E2359B3 fmin s19, s13, s3
+1E2C59C7 fmin s7, s14, s12
+1E2C58C7 fmin s7, s6, s12
+1E3D5BA2 fmin s2, s29, s29
+1E2C5A8B fmin s11, s20, s12
+1E2F5904 fmin s4, s8, s15
+1E2E5996 fmin s22, s12, s14
+1E285A08 fmin s8, s16, s8
+1E3F580A fmin s10, s0, s31
+1E205BE0 fmin s0, s31, s0
+1E3E58FF fmin s31, s7, s30
+1E3E58E7 fmin s7, s7, s30

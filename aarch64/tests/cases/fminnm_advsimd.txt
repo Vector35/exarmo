@@ -1,0 +1,48 @@
+// FMINNM_asimdsame_only 0|Q=x|U=0|0|111|0|o1=1|sz=x|1|Rm=xxxxx|opcode=11000|1|Rn=xxxxx|Rd=xxxxx
+// FminnmAsimdsameOnly: FMINNM  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+0EB5C576 fminnm v22.2s, v11.2s, v21.2s
+0EA3C5A3 fminnm v3.2s, v13.2s, v3.2s
+0EAAC76B fminnm v11.2s, v27.2s, v10.2s
+0EAEC7AC fminnm v12.2s, v29.2s, v14.2s
+0EB5C4A2 fminnm v2.2s, v5.2s, v21.2s
+4EA5C5BB fminnm v27.4s, v13.4s, v5.4s
+4EFCC5A8 fminnm v8.2d, v13.2d, v28.2d
+0EA1C4B7 fminnm v23.2s, v5.2s, v1.2s
+4EB5C7EF fminnm v15.4s, v31.4s, v21.4s
+0EBFC586 fminnm v6.2s, v12.2s, v31.2s
+4EECC699 fminnm v25.2d, v20.2d, v12.2d
+0EB7C6C0 fminnm v0.2s, v22.2s, v23.2s
+4EEAC4F8 fminnm v24.2d, v7.2d, v10.2d
+4EABC7D9 fminnm v25.4s, v30.4s, v11.4s
+4EF8C66F fminnm v15.2d, v19.2d, v24.2d
+4EA0C53C fminnm v28.4s, v9.4s, v0.4s
+0EB5C41F fminnm v31.2s, v0.2s, v21.2s
+0EF5C576 UNDEFINED
+0EB5C6B6 fminnm v22.2s, v21.2s, v21.2s
+0EB5C56B fminnm v11.2s, v11.2s, v21.2s
+
+// FMINNM_asimdsamefp16_only 0|Q=x|U=0|0|111|0|a=1|10|Rm=xxxxx|00|opcode=000|1|Rn=xxxxx|Rd=xxxxx
+// FminnmAsimdsamefp16Only: FMINNM  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+0ED207CF fminnm v15.4h, v30.4h, v18.4h
+0EC90475 fminnm v21.4h, v3.4h, v9.4h
+4ECF044B fminnm v11.8h, v2.8h, v15.8h
+0EC6061F fminnm v31.4h, v16.4h, v6.4h
+0ED80439 fminnm v25.4h, v1.4h, v24.4h
+0ED604F3 fminnm v19.4h, v7.4h, v22.4h
+4EC405EA fminnm v10.8h, v15.8h, v4.8h
+0EC0055E fminnm v30.4h, v10.4h, v0.4h
+4ED8053B fminnm v27.8h, v9.8h, v24.8h
+0ECA0566 fminnm v6.4h, v11.4h, v10.4h
+4EDB0789 fminnm v9.8h, v28.8h, v27.8h
+0EC206D9 fminnm v25.4h, v22.4h, v2.4h
+4ECD0614 fminnm v20.8h, v16.8h, v13.8h
+0ED00569 fminnm v9.4h, v11.4h, v16.4h
+0ED2079E fminnm v30.4h, v28.4h, v18.4h
+4ECA0703 fminnm v3.8h, v24.8h, v10.8h
+0EDF0400 fminnm v0.4h, v0.4h, v31.4h
+0ED207EF fminnm v15.4h, v31.4h, v18.4h
+0ED2064F fminnm v15.4h, v18.4h, v18.4h
+0ED207D2 fminnm v18.4h, v30.4h, v18.4h

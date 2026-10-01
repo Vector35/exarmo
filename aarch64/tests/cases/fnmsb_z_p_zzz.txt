@@ -1,0 +1,25 @@
+// fnmsb_z_p_zzz_ 011|0010|1|size=xx|1|Za=xxxxx|1|N=1|op=1|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FnmsbZPZzz: FNMSB  <Zdn>.<T>, <Pg>/M, <Zm>.<T>, <Za>.<T>
+// register fields: Za, Pg, Zm, Zdn
+6573F235 fnmsb z21.h, p4/m, z17.h, z19.h
+65A6F6AC fnmsb z12.s, p5/m, z21.s, z6.s
+65A8F4E4 fnmsb z4.s, p5/m, z7.s, z8.s
+65E0E897 fnmsb z23.d, p2/m, z4.d, z0.d
+6569F44D fnmsb z13.h, p5/m, z2.h, z9.h
+65F3E63F fnmsb z31.d, p1/m, z17.d, z19.d
+65BBFD27 fnmsb z7.s, p7/m, z9.s, z27.s
+65E2F5D3 fnmsb z19.d, p5/m, z14.d, z2.d
+65E1F6DF fnmsb z31.d, p5/m, z22.d, z1.d
+656DED5E fnmsb z30.h, p3/m, z10.h, z13.h
+65E4F50E fnmsb z14.d, p5/m, z8.d, z4.d
+65EEF16E fnmsb z14.d, p4/m, z11.d, z14.d
+656DF86C fnmsb z12.h, p6/m, z3.h, z13.h
+65BAE0EE fnmsb z14.s, p0/m, z7.s, z26.s
+65AAFC6F fnmsb z15.s, p7/m, z3.s, z10.s
+65E9E8F2 fnmsb z18.d, p2/m, z7.d, z9.d
+657FF000 fnmsb z0.h, p4/m, z0.h, z31.h
+6573F3F5 fnmsb z21.h, p4/m, z31.h, z19.h
+6533F235 UNDEFINED
+6564F235 fnmsb z21.h, p4/m, z17.h, z4.h
+6573F275 fnmsb z21.h, p4/m, z19.h, z19.h
+6573F095 fnmsb z21.h, p4/m, z4.h, z19.h

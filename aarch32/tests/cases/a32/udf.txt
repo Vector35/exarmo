@@ -1,0 +1,26 @@
+// UDF_A1 cond=1110|011|11111|imm12=xxxxxxxxxxxx|111|1|imm4=xxxx
+// UdfA1: UDF{<c>}{<q>}  {#}<imm>
+// read together by <imm>: imm12, imm4
+e7ffa1fd udf #64029
+e7f8fff8 udf #36856
+e7f246f4 udf #9316
+e7f9f7fe udf #40830
+e7fc9bf2 udf #51634
+e7f040f2 udf #1026
+e7f754f9 udf #30025
+e7fcb3f1 udf #52017
+E7F000F0 udf #0x0
+E7FFFFFF udf #0xffff
+E7F800FD udf #0x800d
+E7F400FD udf #0x400d
+E7F200FD udf #0x200d
+E7F100FD udf #0x100d
+E7F080FD udf #0x80d
+E7F020FD udf #0x20d
+E7F010FD udf #0x10d
+E7F008FD udf #0x8d
+E7F004FD udf #0x4d
+E7F002FD udf #0x2d
+E7F001FD udf #0x1d
+E7F000FF udf #0xf
+E7FFFFF0 udf #0xfff0

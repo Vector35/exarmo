@@ -1,0 +1,45 @@
+// ADC_32_addsub_carry sf=0|op=0|S=0|11010000|Rm=xxxxx|000000|Rn=xxxxx|Rd=xxxxx
+// Adc32AddsubCarry: ADC  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1A1D00F0 adc w16, w7, w29
+1A0A0000 adc w0, w0, w10
+1A06005D adc w29, w2, w6
+1A170155 adc w21, w10, w23
+1A090075 adc w21, w3, w9
+1A1C0348 adc w8, w26, w28
+1A1F003A adc w26, w1, wzr
+1A0602AC adc w12, w21, w6
+1A180227 adc w7, w17, w24
+1A1002AC adc w12, w21, w16
+1A0A01BB adc w27, w13, w10
+1A1E028B adc w11, w20, w30
+1A1F011B adc w27, w8, wzr
+1A0B03A4 adc w4, w29, w11
+1A0E03DC adc w28, w30, w14
+1A0A023D adc w29, w17, w10
+1A0003FF adc wzr, wzr, w0
+1A1D03B0 adc w16, w29, w29
+1A1D00FD adc w29, w7, w29
+
+// ADC_64_addsub_carry sf=1|op=0|S=0|11010000|Rm=xxxxx|000000|Rn=xxxxx|Rd=xxxxx
+// Adc64AddsubCarry: ADC  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9A0E0358 adc x24, x26, x14
+9A1A0320 adc x0, x25, x26
+9A1103B7 adc x23, fp, x17
+9A0F03CB adc x11, lr, x15
+9A0901DA adc x26, x14, x9
+9A080318 adc x24, x24, x8
+9A110062 adc x2, x3, x17
+9A0D00B6 adc x22, x5, x13
+9A0F028A adc x10, x20, x15
+9A1D033E adc lr, x25, fp
+9A000360 adc x0, x27, x0
+9A180166 adc x6, x11, x24
+9A0302D9 adc x25, x22, x3
+9A00027C adc x28, x19, x0
+9A0F0378 adc x24, x27, x15
+9A1801CA adc x10, x14, x24
+9A1F001F adc xzr, x0, xzr
+9A0E03F8 adc x24, xzr, x14
+9A0E01D8 adc x24, x14, x14

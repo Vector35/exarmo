@@ -1,0 +1,54 @@
+// VSHR_T1_D 111|U=x|11111|D=x|imm6=xxxxxx|Vd=xxxx|opc=0000|L=x|Q=0|M=x|1|Vm=xxxx
+// VshrT1D: VSHR{<c>}{<q>}.<type><size>  {<Dd>, }<Dm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ff901093 vshr.u64 d1, d3, #48
+ef9dd032 vshr.s16 d13, d18, #3
+efaf001c vshr.s32 d0, d12, #17
+ffac7014 vshr.u32 d7, d4, #20
+ffa96010 vshr.u32 d6, d0, #23
+ef90a0be vshr.s64 d10, d30, #48
+efd550b6 vshr.s64 d21, d22, #43
+efa070b7 vshr.s64 d7, d23, #32
+FF80F09F vshr.u64 d15, d15, #0x40
+FFBF8098 vshr.u64 d8, d8, #0x1
+FF884091 vshr.u64 d4, d1, #0x38
+FF84209F vshr.u64 d2, d15, #0x3c
+FF82F0B0 vshr.u64 d15, d16, #0x3e
+FFC100BF vshr.u64 d16, d31, #0x3f
+FFC0F093 vshr.u64 d31, d3, #0x40
+FFBF1013 vshr.u32 d1, d3, #0x1
+FFBF1093 vshr.u64 d1, d3, #0x1
+FF901093 [ne] vshrne.u64 d1, d3, #0x30
+
+// VSHR_T1_Q 111|U=x|11111|D=x|imm6=xxxxxx|Vd=xxxx|opc=0000|L=x|Q=1|M=x|1|Vm=xxxx
+// VshrT1Q: VSHR{<c>}{<q>}.<type><size>  {<Qd>, }<Qm>, #<imm>
+// read together by <size>: imm6, L
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef93205e vshr.s16 q1, q7, #13
+efe440d4 vshr.s64 q10, q2, #28
+efeea078 vshr.s32 q13, q12, #18
+ffce40de vshr.u64 q10, q7, #50
+efd88052 vshr.s16 q12, q1, #8
+ef8660d0 vshr.s64 q3, q0, #58
+efd6c0da vshr.s64 q14, q5, #42
+ffa50052 vshr.u32 q0, q1, #27
+EFC000F0 vshr.s64 q8, q8, #0x40
+EFBF205E vshr.s32 q1, q7, #0x1
+EFA0205E vshr.s32 q1, q7, #0x20
+EF90205E vshr.s16 q1, q7, #0x10
+EF88205E vshr.s8 q1, q7, #0x8
+EFC440D4 vshr.s64 q10, q2, #0x3c
+EFC240D4 vshr.s64 q10, q2, #0x3e
+EFC140D4 vshr.s64 q10, q2, #0x3f
+EF80F05F UNDEFINED
+EF931051 UNDEFINED
+EF8020DE vshr.s64 q1, q7, #0x40
+EFBF20DE vshr.s64 q1, q7, #0x1
+EF93F05F UNDEFINED
+EFD3F07F UNDEFINED
+EF93205E [ne] vshrne.s16 q1, q7, #0xd

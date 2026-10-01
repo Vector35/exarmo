@@ -1,0 +1,480 @@
+// LDR_B_ldst_immpost size=00|111|VR=1|00|opc=01|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// LdrBLdstImmpost: LDR  <Bt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+3C587536 ldr b22, [x9], #-0x79
+3C5FF566 ldr b6, [x11], #-0x1
+3C5E9517 ldr b23, [x8], #-0x17
+3C5FA77B ldr b27, [x27], #-0x6
+3C5DC761 ldr b1, [x27], #-0x24
+3C4E067A ldr b26, [x19], #0xe0
+3C4BC458 ldr b24, [x2], #0xbc
+3C54272C ldr b12, [x25], #-0xbe
+3C578794 ldr b20, [x28], #-0x88
+3C55F589 ldr b9, [x12], #-0xa1
+3C4017FE ldr b30, [sp], #0x1
+3C5F160A ldr b10, [x16], #-0xf
+3C527595 ldr b21, [x12], #-0xd9
+3C4407A4 ldr b4, [fp], #0x40
+3C55B54D ldr b13, [x10], #-0xa5
+3C4CC610 ldr b16, [x16], #0xcc
+3C400400 ldr b0, [x0], #0x0
+3C58753F ldr b31, [x9], #-0x79
+3C500536 ldr b22, [x9], #-0x100
+3C480536 ldr b22, [x9], #0x80
+3C420536 ldr b22, [x9], #0x20
+3C410536 ldr b22, [x9], #0x10
+3C408536 ldr b22, [x9], #0x8
+3C404536 ldr b22, [x9], #0x4
+3C402536 ldr b22, [x9], #0x2
+
+// LDR_B_ldst_immpre size=00|111|VR=1|00|opc=01|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// LdrBLdstImmpre: LDR  <Bt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+3C574EE5 ldr b5, [x23, #-0x8c]!
+3C558C8A ldr b10, [x4, #-0xa8]!
+3C43AC18 ldr b24, [x0, #0x3a]!
+3C54EC6E ldr b14, [x3, #-0xb2]!
+3C521D2F ldr b15, [x9, #-0xdf]!
+3C54DE7B ldr b27, [x19, #-0xb3]!
+3C454F8B ldr b11, [x28, #0x54]!
+3C572FCB ldr b11, [lr, #-0x8e]!
+3C5CBDED ldr b13, [x15, #-0x35]!
+3C4BFD39 ldr b25, [x9, #0xbf]!
+3C5EAD06 ldr b6, [x8, #-0x16]!
+3C544ECD ldr b13, [x22, #-0xbc]!
+3C412D00 ldr b0, [x8, #0x12]!
+3C4FBDE2 ldr b2, [x15, #0xfb]!
+3C444F28 ldr b8, [x25, #0x44]!
+3C52FEE2 ldr b2, [x23, #-0xd1]!
+3C400FFF ldr b31, [sp, #0x0]!
+3C5FFEE5 ldr b5, [x23, #-0x1]!
+3C500EE5 ldr b5, [x23, #-0x100]!
+3C480EE5 ldr b5, [x23, #0x80]!
+3C440EE5 ldr b5, [x23, #0x40]!
+3C420EE5 ldr b5, [x23, #0x20]!
+3C410EE5 ldr b5, [x23, #0x10]!
+3C408EE5 ldr b5, [x23, #0x8]!
+3C404EE5 ldr b5, [x23, #0x4]!
+3C402EE5 ldr b5, [x23, #0x2]!
+3C401EE5 ldr b5, [x23, #0x1]!
+
+// LDR_B_ldst_pos size=00|111|VR=1|01|opc=01|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// LdrBLdstPos: LDR  <Bt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+3D4666EE ldr b14, [x23, #0x199]
+3D7BA833 ldr b19, [x1, #0xeea]
+3D6ECCFA ldr b26, [x7, #0xbb3]
+3D7C4C20 ldr b0, [x1, #0xf13]
+3D466E95 ldr b21, [x20, #0x19b]
+3D4DBE44 ldr b4, [x18, #0x36f]
+3D7557AF ldr b15, [fp, #0xd55]
+3D40FAE3 ldr b3, [x23, #0x3e]
+3D7D174E ldr b14, [x26, #0xf45]
+3D7967AF ldr b15, [fp, #0xe59]
+3D56E625 ldr b5, [x17, #0x5b9]
+3D7BE4B3 ldr b19, [x5, #0xef9]
+3D70167C ldr b28, [x19, #0xc05]
+3D4F9F9F ldr b31, [x28, #0x3e7]
+3D67A554 ldr b20, [x10, #0x9e9]
+3D59AFE0 ldr b0, [sp, #0x66b]
+3D40000E ldr b14, [x0]
+3D7FFEEE ldr b14, [x23, #0xfff]
+3D4666F7 ldr b23, [x23, #0x199]
+3D6002EE ldr b14, [x23, #0x800]
+3D5002EE ldr b14, [x23, #0x400]
+3D4802EE ldr b14, [x23, #0x200]
+3D4402EE ldr b14, [x23, #0x100]
+3D4202EE ldr b14, [x23, #0x80]
+3D4102EE ldr b14, [x23, #0x40]
+3D4082EE ldr b14, [x23, #0x20]
+3D4042EE ldr b14, [x23, #0x10]
+3D4022EE ldr b14, [x23, #0x8]
+3D4012EE ldr b14, [x23, #0x4]
+3D400AEE ldr b14, [x23, #0x2]
+3D4006EE ldr b14, [x23, #0x1]
+
+// LDR_D_ldst_immpost size=11|111|VR=1|00|opc=01|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// LdrDLdstImmpost: LDR  <Dt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+FC556733 ldr d19, [x25], #-0xaa
+FC54B522 ldr d2, [x9], #-0xb5
+FC41B625 ldr d5, [x17], #0x1b
+FC55B72D ldr d13, [x25], #-0xa5
+FC40354C ldr d12, [x10], #0x3
+FC43750D ldr d13, [x8], #0x37
+FC4A6669 ldr d9, [x19], #0xa6
+FC55D4B1 ldr d17, [x5], #-0xa3
+FC4C369E ldr d30, [x20], #0xc3
+FC4CB6D2 ldr d18, [x22], #0xcb
+FC5D0475 ldr d21, [x3], #-0x30
+FC40174E ldr d14, [x26], #0x1
+FC4B6504 ldr d4, [x8], #0xb6
+FC51350F ldr d15, [x8], #-0xed
+FC4CE63E ldr d30, [x17], #0xce
+FC426447 ldr d7, [x2], #0x26
+FC400400 ldr d0, [x0], #0x0
+FC5FF7FF ldr d31, [sp], #-0x1
+FC500733 ldr d19, [x25], #-0x100
+FC480733 ldr d19, [x25], #0x80
+FC440733 ldr d19, [x25], #0x40
+FC420733 ldr d19, [x25], #0x20
+FC410733 ldr d19, [x25], #0x10
+FC408733 ldr d19, [x25], #0x8
+FC404733 ldr d19, [x25], #0x4
+FC402733 ldr d19, [x25], #0x2
+
+// LDR_D_ldst_immpre size=11|111|VR=1|00|opc=01|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// LdrDLdstImmpre: LDR  <Dt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+FC576D13 ldr d19, [x8, #-0x8a]!
+FC41BDB5 ldr d21, [x13, #0x1b]!
+FC517C15 ldr d21, [x0, #-0xe9]!
+FC486EAB ldr d11, [x21, #0x86]!
+FC4E5D1D ldr d29, [x8, #0xe5]!
+FC5B0D54 ldr d20, [x10, #-0x50]!
+FC42AED2 ldr d18, [x22, #0x2a]!
+FC55BF9A ldr d26, [x28, #-0xa5]!
+FC407D61 ldr d1, [x11, #0x7]!
+FC4D2CCF ldr d15, [x6, #0xd2]!
+FC408D5E ldr d30, [x10, #0x8]!
+FC5F0E67 ldr d7, [x19, #-0x10]!
+FC4FFE1E ldr d30, [x16, #0xff]!
+FC5EBE9E ldr d30, [x20, #-0x15]!
+FC40FC66 ldr d6, [x3, #0xf]!
+FC53AF24 ldr d4, [x25, #-0xc6]!
+FC400FE0 ldr d0, [sp, #0x0]!
+FC5FFD1F ldr d31, [x8, #-0x1]!
+FC576D08 ldr d8, [x8, #-0x8a]!
+FC500D13 ldr d19, [x8, #-0x100]!
+FC480D13 ldr d19, [x8, #0x80]!
+FC440D13 ldr d19, [x8, #0x40]!
+FC420D13 ldr d19, [x8, #0x20]!
+FC410D13 ldr d19, [x8, #0x10]!
+FC404D13 ldr d19, [x8, #0x4]!
+FC402D13 ldr d19, [x8, #0x2]!
+FC401D13 ldr d19, [x8, #0x1]!
+
+// LDR_D_ldst_pos size=11|111|VR=1|01|opc=01|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// LdrDLdstPos: LDR  <Dt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+FD4989DE ldr d30, [x14, #0x1310]
+FD7430E2 ldr d2, [x7, #0x6860]
+FD6E6C11 ldr d17, [x0, #0x5cd8]
+FD7F44AC ldr d12, [x5, #0x7e88]
+FD6859AD ldr d13, [x13, #0x50b0]
+FD659F16 ldr d22, [x24, #0x4b38]
+FD76DD31 ldr d17, [x9, #0x6db8]
+FD4A3E76 ldr d22, [x19, #0x1478]
+FD6CDA98 ldr d24, [x20, #0x59b0]
+FD78A28D ldr d13, [x20, #0x7140]
+FD5621C9 ldr d9, [x14, #0x2c40]
+FD65765A ldr d26, [x18, #0x4ae8]
+FD6810EF ldr d15, [x7, #0x5020]
+FD4B3F94 ldr d20, [x28, #0x1678]
+FD73D487 ldr d7, [x4, #0x67a8]
+FD5820FA ldr d26, [x7, #0x3040]
+FD4003E0 ldr d0, [sp]
+FD7FFDDF ldr d31, [x14, #0x7ff8]
+FD6001DE ldr d30, [x14, #0x4000]
+FD5001DE ldr d30, [x14, #0x2000]
+FD4801DE ldr d30, [x14, #0x1000]
+FD4401DE ldr d30, [x14, #0x800]
+FD4201DE ldr d30, [x14, #0x400]
+FD4101DE ldr d30, [x14, #0x200]
+FD4081DE ldr d30, [x14, #0x100]
+FD4041DE ldr d30, [x14, #0x80]
+FD4021DE ldr d30, [x14, #0x40]
+FD4011DE ldr d30, [x14, #0x20]
+FD4009DE ldr d30, [x14, #0x10]
+FD4005DE ldr d30, [x14, #0x8]
+
+// LDR_H_ldst_immpost size=01|111|VR=1|00|opc=01|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// LdrHLdstImmpost: LDR  <Ht>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+7C59B53B ldr h27, [x9], #-0x65
+7C4E05D8 ldr h24, [x14], #0xe0
+7C41C7F6 ldr h22, [sp], #0x1c
+7C4E9713 ldr h19, [x24], #0xe9
+7C4325CD ldr h13, [x14], #0x32
+7C495624 ldr h4, [x17], #0x95
+7C4CA5AD ldr h13, [x13], #0xca
+7C4EB469 ldr h9, [x3], #0xeb
+7C51C6A9 ldr h9, [x21], #-0xe4
+7C5EA435 ldr h21, [x1], #-0x16
+7C532763 ldr h3, [x27], #-0xce
+7C46E7B2 ldr h18, [fp], #0x6e
+7C58774E ldr h14, [x26], #-0x79
+7C5535E8 ldr h8, [x15], #-0xad
+7C5AE649 ldr h9, [x18], #-0x52
+7C5704CA ldr h10, [x6], #-0x90
+7C400400 ldr h0, [x0], #0x0
+7C5FF53F ldr h31, [x9], #-0x1
+7C50053B ldr h27, [x9], #-0x100
+7C48053B ldr h27, [x9], #0x80
+7C44053B ldr h27, [x9], #0x40
+7C42053B ldr h27, [x9], #0x20
+7C41053B ldr h27, [x9], #0x10
+7C40853B ldr h27, [x9], #0x8
+7C40453B ldr h27, [x9], #0x4
+7C40253B ldr h27, [x9], #0x2
+7C40153B ldr h27, [x9], #0x1
+
+// LDR_H_ldst_immpre size=01|111|VR=1|00|opc=01|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// LdrHLdstImmpre: LDR  <Ht>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+7C5CCC14 ldr h20, [x0, #-0x34]!
+7C46BF31 ldr h17, [x25, #0x6b]!
+7C5CDFAB ldr h11, [fp, #-0x33]!
+7C40CFF5 ldr h21, [sp, #0xc]!
+7C40AE54 ldr h20, [x18, #0xa]!
+7C5C5C8C ldr h12, [x4, #-0x3b]!
+7C54FDC5 ldr h5, [x14, #-0xb1]!
+7C5BEC72 ldr h18, [x3, #-0x42]!
+7C532D29 ldr h9, [x9, #-0xce]!
+7C43DC2F ldr h15, [x1, #0x3d]!
+7C436F52 ldr h18, [x26, #0x36]!
+7C461D6D ldr h13, [x11, #0x61]!
+7C47BF46 ldr h6, [x26, #0x7b]!
+7C407E00 ldr h0, [x16, #0x7]!
+7C5B2C0C ldr h12, [x0, #-0x4e]!
+7C41DEF3 ldr h19, [x23, #0x1d]!
+7C400C1F ldr h31, [x0, #0x0]!
+7C5FFC14 ldr h20, [x0, #-0x1]!
+7C500C14 ldr h20, [x0, #-0x100]!
+7C480C14 ldr h20, [x0, #0x80]!
+7C440C14 ldr h20, [x0, #0x40]!
+7C420C14 ldr h20, [x0, #0x20]!
+7C410C14 ldr h20, [x0, #0x10]!
+7C408C14 ldr h20, [x0, #0x8]!
+7C404C14 ldr h20, [x0, #0x4]!
+7C402C14 ldr h20, [x0, #0x2]!
+7C401C14 ldr h20, [x0, #0x1]!
+
+// LDR_H_ldst_pos size=01|111|VR=1|01|opc=01|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// LdrHLdstPos: LDR  <Ht>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+7D7933BA ldr h26, [fp, #0x1c98]
+7D4551D7 ldr h23, [x14, #0x2a8]
+7D4A8410 ldr h16, [x0, #0x542]
+7D75314E ldr h14, [x10, #0x1a98]
+7D4D589A ldr h26, [x4, #0x6ac]
+7D4703CF ldr h15, [lr, #0x380]
+7D493FED ldr h13, [sp, #0x49e]
+7D5F8B60 ldr h0, [x27, #0xfc4]
+7D60CF5E ldr h30, [x26, #0x1066]
+7D4A24BD ldr h29, [x5, #0x512]
+7D563EE5 ldr h5, [x23, #0xb1e]
+7D436402 ldr h2, [x0, #0x1b2]
+7D62356E ldr h14, [x11, #0x111a]
+7D7DE394 ldr h20, [x28, #0x1ef0]
+7D634DD6 ldr h22, [x14, #0x11a6]
+7D7C01F0 ldr h16, [x15, #0x1e00]
+7D4003BF ldr h31, [fp]
+7D7FFFBA ldr h26, [fp, #0x1ffe]
+7D7933BD ldr h29, [fp, #0x1c98]
+7D6003BA ldr h26, [fp, #0x1000]
+7D5003BA ldr h26, [fp, #0x800]
+7D4803BA ldr h26, [fp, #0x400]
+7D4403BA ldr h26, [fp, #0x200]
+7D4203BA ldr h26, [fp, #0x100]
+7D4103BA ldr h26, [fp, #0x80]
+7D4083BA ldr h26, [fp, #0x40]
+7D4043BA ldr h26, [fp, #0x20]
+7D4023BA ldr h26, [fp, #0x10]
+7D4013BA ldr h26, [fp, #0x8]
+7D400BBA ldr h26, [fp, #0x4]
+7D4007BA ldr h26, [fp, #0x2]
+
+// LDR_Q_ldst_immpost size=00|111|VR=1|00|opc=11|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// LdrQLdstImmpost: LDR  <Qt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+3CDF2726 ldr q6, [x25], #-0xe
+3CDC9412 ldr q18, [x0], #-0x37
+3CD0F6D5 ldr q21, [x22], #-0xf1
+3CDF7794 ldr q20, [x28], #-0x9
+3CC504C6 ldr q6, [x6], #0x50
+3CD7B519 ldr q25, [x8], #-0x85
+3CCBF7A2 ldr q2, [fp], #0xbf
+3CC5F5C9 ldr q9, [x14], #0x5f
+3CDD15D7 ldr q23, [x14], #-0x2f
+3CCD25B0 ldr q16, [x13], #0xd2
+3CCC85D4 ldr q20, [x14], #0xc8
+3CDF6564 ldr q4, [x11], #-0xa
+3CD35534 ldr q20, [x9], #-0xcb
+3CDE05DC ldr q28, [x14], #-0x20
+3CC616EA ldr q10, [x23], #0x61
+3CD175C5 ldr q5, [x14], #-0xe9
+3CC007E0 ldr q0, [sp], #0x0
+3CDFF73F ldr q31, [x25], #-0x1
+3CD00726 ldr q6, [x25], #-0x100
+3CC80726 ldr q6, [x25], #0x80
+3CC40726 ldr q6, [x25], #0x40
+3CC20726 ldr q6, [x25], #0x20
+3CC10726 ldr q6, [x25], #0x10
+3CC08726 ldr q6, [x25], #0x8
+3CC04726 ldr q6, [x25], #0x4
+3CC02726 ldr q6, [x25], #0x2
+3CC01726 ldr q6, [x25], #0x1
+
+// LDR_Q_ldst_immpre size=00|111|VR=1|00|opc=11|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// LdrQLdstImmpre: LDR  <Qt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+3CCDBD63 ldr q3, [x11, #0xdb]!
+3CD15C9C ldr q28, [x4, #-0xeb]!
+3CD47D6C ldr q12, [x11, #-0xb9]!
+3CD9ED6F ldr q15, [x11, #-0x62]!
+3CCDCD9F ldr q31, [x12, #0xdc]!
+3CC63C93 ldr q19, [x4, #0x63]!
+3CD13DC4 ldr q4, [x14, #-0xed]!
+3CC7CDF5 ldr q21, [x15, #0x7c]!
+3CD66FF4 ldr q20, [sp, #-0x9a]!
+3CC69C4A ldr q10, [x2, #0x69]!
+3CCCAEA8 ldr q8, [x21, #0xca]!
+3CD30EEA ldr q10, [x23, #-0xd0]!
+3CC75C1B ldr q27, [x0, #0x75]!
+3CCEDFB1 ldr q17, [fp, #0xed]!
+3CD03FB5 ldr q21, [fp, #-0xfd]!
+3CCF8CD6 ldr q22, [x6, #0xf8]!
+3CC00D60 ldr q0, [x11, #0x0]!
+3CDFFD63 ldr q3, [x11, #-0x1]!
+3CCDBD6B ldr q11, [x11, #0xdb]!
+3CD00D63 ldr q3, [x11, #-0x100]!
+3CC80D63 ldr q3, [x11, #0x80]!
+3CC40D63 ldr q3, [x11, #0x40]!
+3CC20D63 ldr q3, [x11, #0x20]!
+3CC10D63 ldr q3, [x11, #0x10]!
+3CC08D63 ldr q3, [x11, #0x8]!
+3CC04D63 ldr q3, [x11, #0x4]!
+3CC02D63 ldr q3, [x11, #0x2]!
+3CC01D63 ldr q3, [x11, #0x1]!
+
+// LDR_Q_ldst_pos size=00|111|VR=1|01|opc=11|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// LdrQLdstPos: LDR  <Qt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+3DDEABF2 ldr q18, [sp, #0x7aa0]
+3DD2E801 ldr q1, [x0, #0x4ba0]
+3DFE8D36 ldr q22, [x9, #0xfa30]
+3DC93E0A ldr q10, [x16, #0x24f0]
+3DF6383E ldr q30, [x1, #0xd8e0]
+3DC07B34 ldr q20, [x25, #0x1e0]
+3DF38DFB ldr q27, [x15, #0xce30]
+3DDE3253 ldr q19, [x18, #0x78c0]
+3DCC42AE ldr q14, [x21, #0x3100]
+3DF3A169 ldr q9, [x11, #0xce80]
+3DC21193 ldr q19, [x12, #0x840]
+3DC3B5A1 ldr q1, [x13, #0xed0]
+3DD84DF5 ldr q21, [x15, #0x6130]
+3DF90DED ldr q13, [x15, #0xe430]
+3DC991F7 ldr q23, [x15, #0x2640]
+3DF9F0BC ldr q28, [x5, #0xe7c0]
+3DC003E0 ldr q0, [sp]
+3DFFFFFF ldr q31, [sp, #0xfff0]
+3DE003F2 ldr q18, [sp, #0x8000]
+3DD003F2 ldr q18, [sp, #0x4000]
+3DC803F2 ldr q18, [sp, #0x2000]
+3DC403F2 ldr q18, [sp, #0x1000]
+3DC203F2 ldr q18, [sp, #0x800]
+3DC103F2 ldr q18, [sp, #0x400]
+3DC083F2 ldr q18, [sp, #0x200]
+3DC043F2 ldr q18, [sp, #0x100]
+3DC023F2 ldr q18, [sp, #0x80]
+3DC013F2 ldr q18, [sp, #0x40]
+3DC00BF2 ldr q18, [sp, #0x20]
+3DC007F2 ldr q18, [sp, #0x10]
+
+// LDR_S_ldst_immpost size=10|111|VR=1|00|opc=01|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// LdrSLdstImmpost: LDR  <St>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+BC4CA47F ldr s31, [x3], #0xca
+BC4B3617 ldr s23, [x16], #0xb3
+BC44E68D ldr s13, [x20], #0x4e
+BC4D0713 ldr s19, [x24], #0xd0
+BC53B6BE ldr s30, [x21], #-0xc5
+BC58E5FA ldr s26, [x15], #-0x72
+BC45B7AA ldr s10, [fp], #0x5b
+BC44560B ldr s11, [x16], #0x45
+BC47A527 ldr s7, [x9], #0x7a
+BC44A79E ldr s30, [x28], #0x4a
+BC4DD4AC ldr s12, [x5], #0xdd
+BC5E9711 ldr s17, [x24], #-0x17
+BC579466 ldr s6, [x3], #-0x87
+BC428572 ldr s18, [x11], #0x28
+BC558761 ldr s1, [x27], #-0xa8
+BC4F567E ldr s30, [x19], #0xf5
+BC400400 ldr s0, [x0], #0x0
+BC5FF7FF ldr s31, [sp], #-0x1
+BC50047F ldr s31, [x3], #-0x100
+BC48047F ldr s31, [x3], #0x80
+BC44047F ldr s31, [x3], #0x40
+BC42047F ldr s31, [x3], #0x20
+BC41047F ldr s31, [x3], #0x10
+BC40847F ldr s31, [x3], #0x8
+BC40447F ldr s31, [x3], #0x4
+BC40247F ldr s31, [x3], #0x2
+BC40147F ldr s31, [x3], #0x1
+
+// LDR_S_ldst_immpre size=10|111|VR=1|00|opc=01|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// LdrSLdstImmpre: LDR  <St>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+BC4DAE89 ldr s9, [x20, #0xda]!
+BC416E99 ldr s25, [x20, #0x16]!
+BC40CFD1 ldr s17, [lr, #0xc]!
+BC411DAE ldr s14, [x13, #0x11]!
+BC4A1CCF ldr s15, [x6, #0xa1]!
+BC479E53 ldr s19, [x18, #0x79]!
+BC5ABF8E ldr s14, [x28, #-0x55]!
+BC59BE85 ldr s5, [x20, #-0x65]!
+BC43BD40 ldr s0, [x10, #0x3b]!
+BC43CE4A ldr s10, [x18, #0x3c]!
+BC5CBE3C ldr s28, [x17, #-0x35]!
+BC55BC68 ldr s8, [x3, #-0xa5]!
+BC4E0FAB ldr s11, [fp, #0xe0]!
+BC503CDD ldr s29, [x6, #-0xfd]!
+BC51AF73 ldr s19, [x27, #-0xe6]!
+BC5E3F6B ldr s11, [x27, #-0x1d]!
+BC400C1F ldr s31, [x0, #0x0]!
+BC5FFFE9 ldr s9, [sp, #-0x1]!
+BC4DAE94 ldr s20, [x20, #0xda]!
+BC500E89 ldr s9, [x20, #-0x100]!
+BC480E89 ldr s9, [x20, #0x80]!
+BC440E89 ldr s9, [x20, #0x40]!
+BC420E89 ldr s9, [x20, #0x20]!
+BC410E89 ldr s9, [x20, #0x10]!
+BC408E89 ldr s9, [x20, #0x8]!
+BC404E89 ldr s9, [x20, #0x4]!
+BC402E89 ldr s9, [x20, #0x2]!
+BC401E89 ldr s9, [x20, #0x1]!
+
+// LDR_S_ldst_pos size=10|111|VR=1|01|opc=01|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// LdrSLdstPos: LDR  <St>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+BD48A800 ldr s0, [x0, #0x8a8]
+BD49CF46 ldr s6, [x26, #0x9cc]
+BD70E38B ldr s11, [x28, #0x30e0]
+BD4F0265 ldr s5, [x19, #0xf00]
+BD433131 ldr s17, [x9, #0x330]
+BD5D6380 ldr s0, [x28, #0x1d60]
+BD52EC50 ldr s16, [x2, #0x12ec]
+BD405F6E ldr s14, [x27, #0x5c]
+BD759159 ldr s25, [x10, #0x3590]
+BD6A6190 ldr s16, [x12, #0x2a60]
+BD77DFA3 ldr s3, [fp, #0x37dc]
+BD51C642 ldr s2, [x18, #0x11c4]
+BD58768B ldr s11, [x20, #0x1874]
+BD76974B ldr s11, [x26, #0x3694]
+BD45A88A ldr s10, [x4, #0x5a8]
+BD7B852D ldr s13, [x9, #0x3b84]
+BD4003FF ldr s31, [sp]
+BD7FFC00 ldr s0, [x0, #0x3ffc]
+BD600000 ldr s0, [x0, #0x2000]
+BD500000 ldr s0, [x0, #0x1000]
+BD480000 ldr s0, [x0, #0x800]
+BD440000 ldr s0, [x0, #0x400]
+BD420000 ldr s0, [x0, #0x200]
+BD410000 ldr s0, [x0, #0x100]
+BD408000 ldr s0, [x0, #0x80]
+BD404000 ldr s0, [x0, #0x40]
+BD402000 ldr s0, [x0, #0x20]
+BD401000 ldr s0, [x0, #0x10]
+BD400800 ldr s0, [x0, #0x8]
+BD400400 ldr s0, [x0, #0x4]

@@ -1,0 +1,142 @@
+// SBC_r_T1 010000|op=0110|Rm=xxx|Rdn=xxx
+// SbcRT1: SBC<c>{<q>}  {<Rdn>, }<Rdn>, <Rm>
+// T1bSbcRT1: SBCS{<q>}  {<Rdn>, }<Rdn>, <Rm>
+// register fields: Rm, Rdn
+// IT state read: condition, in block
+4180 sbcs r0, r0
+4181 sbcs r1, r0
+4182 sbcs r2, r0
+4183 sbcs r3, r0
+4184 sbcs r4, r0
+4185 sbcs r5, r0
+4186 sbcs r6, r0
+4187 sbcs r7, r0
+4188 sbcs r0, r1
+4190 sbcs r0, r2
+4198 sbcs r0, r3
+41A0 sbcs r0, r4
+41A8 sbcs r0, r5
+41B0 sbcs r0, r6
+41B8 sbcs r0, r7
+4180 [ne] sbcne r0, r0
+
+// SBC_r_T2 1110101|op1=1011|S=0|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// SbcRT2: SBC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EB600000 sbc r0, r0, r0
+EB6F9F5F sbc pc, pc, pc, lsr #0x5 (unpredictable)
+EB6020A0 sbc r0, r0, r0, asr #0xa
+EB6030F0 sbc r0, r0, r0, ror #0xf
+EB604000 sbc r0, r0, r0, lsl #0x10
+EB605000 sbc r0, r0, r0, lsl #0x14
+EB606000 sbc r0, r0, r0, lsl #0x18
+EB607000 sbc r0, r0, r0, lsl #0x1c
+EB600040 sbc r0, r0, r0, lsl #0x1
+EB600080 sbc r0, r0, r0, lsl #0x2
+EB6000C0 sbc r0, r0, r0, lsl #0x3
+EB601000 sbc r0, r0, r0, lsl #0x4
+EB601040 sbc r0, r0, r0, lsl #0x5
+EB601080 sbc r0, r0, r0, lsl #0x6
+EB6010C0 sbc r0, r0, r0, lsl #0x7
+EB602000 sbc r0, r0, r0, lsl #0x8
+EB602040 sbc r0, r0, r0, lsl #0x9
+EB602080 sbc r0, r0, r0, lsl #0xa
+EB6020C0 sbc r0, r0, r0, lsl #0xb
+EB603000 sbc r0, r0, r0, lsl #0xc
+EB603040 sbc r0, r0, r0, lsl #0xd
+EB603080 sbc r0, r0, r0, lsl #0xe
+EB6030C0 sbc r0, r0, r0, lsl #0xf
+EB604040 sbc r0, r0, r0, lsl #0x11
+EB604080 sbc r0, r0, r0, lsl #0x12
+EB6040C0 sbc r0, r0, r0, lsl #0x13
+EB605040 sbc r0, r0, r0, lsl #0x15
+EB605080 sbc r0, r0, r0, lsl #0x16
+EB6050C0 sbc r0, r0, r0, lsl #0x17
+EB606040 sbc r0, r0, r0, lsl #0x19
+EB606080 sbc r0, r0, r0, lsl #0x1a
+EB6060C0 sbc r0, r0, r0, lsl #0x1b
+EB607040 sbc r0, r0, r0, lsl #0x1d
+EB607080 sbc r0, r0, r0, lsl #0x1e
+EB6070C0 sbc r0, r0, r0, lsl #0x1f
+EB600000 [ne] sbcne r0, r0, r0
+EB610203 sbc r2, r1, r3
+
+// SBC_r_T2_RRX 1110101|op1=1011|S=0|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// SbcRT2Rrx: SBC{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+eb6a8430 sbc r4, r10, r0, rrx (unpredictable)
+eb638b3d sbc r11, r3, sp, rrx (unpredictable)
+eb618435 sbc r4, r1, r5, rrx (unpredictable)
+eb6e883c sbc r8, lr, r12, rrx (unpredictable)
+eb6d8730 sbc r7, sp, r0, rrx (unpredictable)
+eb6b883a sbc r8, r11, r10, rrx (unpredictable)
+eb6b053b sbc r5, r11, r11, rrx
+eb6d0738 sbc r7, sp, r8, rrx
+EB60803F sbc r0, r0, pc, rrx (unpredictable)
+EB6F8F30 sbc pc, pc, r0, rrx (unpredictable)
+EB6A8A30 sbc r10, r10, r0, rrx (unpredictable)
+EB6A8434 sbc r4, r10, r4, rrx (unpredictable)
+EB6A8430 [ne] sbcne r4, r10, r0, rrx (unpredictable)
+
+// SBCS_r_T2 1110101|op1=1011|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// SbcsRT2: SBCS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EB700000 sbcs r0, r0, r0
+EB7F9F5F sbcs pc, pc, pc, lsr #0x5 (unpredictable)
+EB7020A0 sbcs r0, r0, r0, asr #0xa
+EB7030F0 sbcs r0, r0, r0, ror #0xf
+EB704000 sbcs r0, r0, r0, lsl #0x10
+EB705000 sbcs r0, r0, r0, lsl #0x14
+EB706000 sbcs r0, r0, r0, lsl #0x18
+EB707000 sbcs r0, r0, r0, lsl #0x1c
+EB700040 sbcs r0, r0, r0, lsl #0x1
+EB700080 sbcs r0, r0, r0, lsl #0x2
+EB7000C0 sbcs r0, r0, r0, lsl #0x3
+EB701000 sbcs r0, r0, r0, lsl #0x4
+EB701040 sbcs r0, r0, r0, lsl #0x5
+EB701080 sbcs r0, r0, r0, lsl #0x6
+EB7010C0 sbcs r0, r0, r0, lsl #0x7
+EB702000 sbcs r0, r0, r0, lsl #0x8
+EB702040 sbcs r0, r0, r0, lsl #0x9
+EB702080 sbcs r0, r0, r0, lsl #0xa
+EB7020C0 sbcs r0, r0, r0, lsl #0xb
+EB703000 sbcs r0, r0, r0, lsl #0xc
+EB703040 sbcs r0, r0, r0, lsl #0xd
+EB703080 sbcs r0, r0, r0, lsl #0xe
+EB7030C0 sbcs r0, r0, r0, lsl #0xf
+EB704040 sbcs r0, r0, r0, lsl #0x11
+EB704080 sbcs r0, r0, r0, lsl #0x12
+EB7040C0 sbcs r0, r0, r0, lsl #0x13
+EB705040 sbcs r0, r0, r0, lsl #0x15
+EB705080 sbcs r0, r0, r0, lsl #0x16
+EB7050C0 sbcs r0, r0, r0, lsl #0x17
+EB706040 sbcs r0, r0, r0, lsl #0x19
+EB706080 sbcs r0, r0, r0, lsl #0x1a
+EB7060C0 sbcs r0, r0, r0, lsl #0x1b
+EB707040 sbcs r0, r0, r0, lsl #0x1d
+EB707080 sbcs r0, r0, r0, lsl #0x1e
+EB7070C0 sbcs r0, r0, r0, lsl #0x1f
+EB700000 [ne] sbcsne r0, r0, r0
+EB710203 sbcs r2, r1, r3
+
+// SBCS_r_T2_RRX 1110101|op1=1011|S=1|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// SbcsRT2Rrx: SBCS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+eb748935 sbcs r9, r4, r5, rrx (unpredictable)
+eb7b0f30 sbcs pc, r11, r0, rrx (unpredictable)
+eb758030 sbcs r0, r5, r0, rrx (unpredictable)
+eb708133 sbcs r1, r0, r3, rrx (unpredictable)
+eb7b873d sbcs r7, r11, sp, rrx (unpredictable)
+eb718339 sbcs r3, r1, r9, rrx (unpredictable)
+eb7e8d33 sbcs sp, lr, r3, rrx (unpredictable)
+eb780d3a sbcs sp, r8, r10, rrx
+EB7F893F sbcs r9, pc, pc, rrx (unpredictable)
+EB748435 sbcs r4, r4, r5, rrx (unpredictable)
+EB748934 sbcs r9, r4, r4, rrx (unpredictable)
+EB748935 [ne] sbcsne r9, r4, r5, rrx (unpredictable)

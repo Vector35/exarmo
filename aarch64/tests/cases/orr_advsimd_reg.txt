@@ -1,0 +1,45 @@
+// ORR_asimdsame_only 0|Q=x|U=0|0|111|0|size=10|1|Rm=xxxxx|opcode=00011|1|Rn=xxxxx|Rd=xxxxx
+// OrrAsimdsameOnly: ORR  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// MovOrrAsimdsameOnly: MOV  <Vd>.<T>, <Vn>.<T>
+// read together by the MOV alias: Rm, Rn
+// register fields: Rm, Rn, Rd
+// form chosen on: Rm, Rn
+0EAB1D68 mov v8.8b, v11.8b
+0EB21E4C mov v12.8b, v18.8b
+4EAA1D52 mov v18.16b, v10.16b
+0EA61CDF mov v31.8b, v6.8b
+4EBB1F73 mov v19.16b, v27.16b
+0EA81D13 mov v19.8b, v8.8b
+4EAD1DA3 mov v3.16b, v13.16b
+0EA21C4B mov v11.8b, v2.8b
+4EA41C97 mov v23.16b, v4.16b
+0EB51EAE mov v14.8b, v21.8b
+0EAC1D82 mov v2.8b, v12.8b
+4EA81D11 mov v17.16b, v8.16b
+0EB01E09 mov v9.8b, v16.8b
+4EA41C9F mov v31.16b, v4.16b
+4EB71EF8 mov v24.16b, v23.16b
+4EB31E79 mov v25.16b, v19.16b
+4EAC1CC9 orr v9.16b, v6.16b, v12.16b
+0EB51C0C orr v12.8b, v0.8b, v21.8b
+0EBF1E0E orr v14.8b, v16.8b, v31.8b
+4EB01CB4 orr v20.16b, v5.16b, v16.16b
+0EA01D15 orr v21.8b, v8.8b, v0.8b
+0EAF1F67 orr v7.8b, v27.8b, v15.8b
+0EB31FF6 orr v22.8b, v31.8b, v19.8b
+4EB01F21 orr v1.16b, v25.16b, v16.16b
+0EBD1F4B orr v11.8b, v26.8b, v29.8b
+0EB21C99 orr v25.8b, v4.8b, v18.8b
+4EA41D52 orr v18.16b, v10.16b, v4.16b
+4EA41E1B orr v27.16b, v16.16b, v4.16b
+0EB21CB1 orr v17.8b, v5.8b, v18.8b
+0EA91F15 orr v21.8b, v24.8b, v9.8b
+4EBB1D68 orr v8.16b, v11.16b, v27.16b
+0EBC1EE3 orr v3.8b, v23.8b, v28.8b
+0EAB1D60 mov v0.8b, v11.8b
+0EA01C08 mov v8.8b, v0.8b
+0EA01FE8 orr v8.8b, v31.8b, v0.8b
+0EBF1C08 orr v8.8b, v0.8b, v31.8b
+0EBF1FE8 mov v8.8b, v31.8b
+0EAB1D6B mov v11.8b, v11.8b
+0EA11C08 orr v8.8b, v0.8b, v1.8b

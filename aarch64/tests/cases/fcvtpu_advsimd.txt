@@ -1,0 +1,94 @@
+// FCVTPU_asimdmisc_R 0|Q=x|U=1|0|111|0|o2=1|sz=x|10000|1101|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FcvtpuAsimdmiscR: FCVTPU  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+2EA1AA8C fcvtpu v12.2s, v20.2s
+2EA1A9F5 fcvtpu v21.2s, v15.2s
+2EA1AB17 fcvtpu v23.2s, v24.2s
+6EA1AA40 fcvtpu v0.4s, v18.4s
+2EA1A857 fcvtpu v23.2s, v2.2s
+6EA1ABAC fcvtpu v12.4s, v29.4s
+6EA1AB77 fcvtpu v23.4s, v27.4s
+6EA1AA50 fcvtpu v16.4s, v18.4s
+2EA1AB7B fcvtpu v27.2s, v27.2s
+2EA1AB81 fcvtpu v1.2s, v28.2s
+6EE1A885 fcvtpu v5.2d, v4.2d
+6EA1AB08 fcvtpu v8.4s, v24.4s
+2EA1A950 fcvtpu v16.2s, v10.2s
+2EA1A8B9 fcvtpu v25.2s, v5.2s
+6EA1AA15 fcvtpu v21.4s, v16.4s
+6EA1AB60 fcvtpu v0.4s, v27.4s
+2EA1A81F fcvtpu v31.2s, v0.2s
+2EA1ABEC fcvtpu v12.2s, v31.2s
+2EE1AA8C UNDEFINED
+
+// FCVTPU_asimdmiscfp16_R 0|Q=x|U=1|0|111|0|o2=1|1111|00|1101|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FcvtpuAsimdmiscfp16R: FCVTPU  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+2EF9A895 fcvtpu v21.4h, v4.4h
+6EF9AAED fcvtpu v13.8h, v23.8h
+2EF9A970 fcvtpu v16.4h, v11.4h
+2EF9A916 fcvtpu v22.4h, v8.4h
+6EF9A827 fcvtpu v7.8h, v1.8h
+6EF9AAB0 fcvtpu v16.8h, v21.8h
+2EF9AAA7 fcvtpu v7.4h, v21.4h
+2EF9A880 fcvtpu v0.4h, v4.4h
+2EF9AAF3 fcvtpu v19.4h, v23.4h
+2EF9AA81 fcvtpu v1.4h, v20.4h
+2EF9A869 fcvtpu v9.4h, v3.4h
+2EF9ABED fcvtpu v13.4h, v31.4h
+2EF9A93F fcvtpu v31.4h, v9.4h
+6EF9AA80 fcvtpu v0.8h, v20.8h
+6EF9AB6A fcvtpu v10.8h, v27.8h
+6EF9A8E9 fcvtpu v9.8h, v7.8h
+2EF9A815 fcvtpu v21.4h, v0.4h
+2EF9A884 fcvtpu v4.4h, v4.4h
+
+// FCVTPU_asisdmisc_R 01|U=1|1|111|0|o2=1|sz=x|10000|1101|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FcvtpuAsisdmiscR: FCVTPU  <V><d>, <V><n>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// register fields: Rn, Rd
+7EE1A960 fcvtpu d0, d11
+7EE1AAF5 fcvtpu d21, d23
+7EA1A9A2 fcvtpu s2, s13
+7EA1A82C fcvtpu s12, s1
+7EA1A935 fcvtpu s21, s9
+7EE1ABF2 fcvtpu d18, d31
+7EA1ABB6 fcvtpu s22, s29
+7EA1AB9F fcvtpu s31, s28
+7EA1A844 fcvtpu s4, s2
+7EE1A997 fcvtpu d23, d12
+7EE1AA02 fcvtpu d2, d16
+7EE1ABEB fcvtpu d11, d31
+7EA1A8BB fcvtpu s27, s5
+7EE1AAD1 fcvtpu d17, d22
+7EE1AA5A fcvtpu d26, d18
+7EA1A80B fcvtpu s11, s0
+7EA1A960 fcvtpu s0, s11
+7EE1A97F fcvtpu d31, d11
+7EA1ABE0 fcvtpu s0, s31
+7EE1A800 fcvtpu d0, d0
+7EE1A96B fcvtpu d11, d11
+
+// FCVTPU_asisdmiscfp16_R 01|U=1|1|111|0|o2=1|1111|00|1101|o1=0|10|Rn=xxxxx|Rd=xxxxx
+// FcvtpuAsisdmiscfp16R: FCVTPU  <Hd>, <Hn>
+// register fields: Rn, Rd
+7EF9ABD5 fcvtpu h21, h30
+7EF9AB7D fcvtpu h29, h27
+7EF9AA2F fcvtpu h15, h17
+7EF9AA69 fcvtpu h9, h19
+7EF9A865 fcvtpu h5, h3
+7EF9A821 fcvtpu h1, h1
+7EF9A894 fcvtpu h20, h4
+7EF9A8E4 fcvtpu h4, h7
+7EF9AA13 fcvtpu h19, h16
+7EF9A899 fcvtpu h25, h4
+7EF9A9EE fcvtpu h14, h15
+7EF9AA53 fcvtpu h19, h18
+7EF9AB3C fcvtpu h28, h25
+7EF9A908 fcvtpu h8, h8
+7EF9AB29 fcvtpu h9, h25
+7EF9ABC7 fcvtpu h7, h30
+7EF9A800 fcvtpu h0, h0
+7EF9ABFF fcvtpu h31, h31

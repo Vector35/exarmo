@@ -1,0 +1,83 @@
+// MADD_32A_dp_3src sf=0|op54=00|11011|op31=000|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Madd32aDp3src: MADD  <Wd>, <Wn>, <Wm>, <Wa>
+// MulMadd32aDp3src: MUL  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Ra, Rn, Rd
+// form chosen on: Ra
+1B1551C6 madd w6, w14, w21, w20
+1B003EAB madd w11, w21, w0, w15
+1B1F4A64 madd w4, w19, wzr, w18
+1B01763B madd w27, w17, w1, w29
+1B04659F madd wzr, w12, w4, w25
+1B1002F3 madd w19, w23, w16, w0
+1B001B02 madd w2, w24, w0, w6
+1B044779 madd w25, w27, w4, w17
+1B024C54 madd w20, w2, w2, w19
+1B1250A0 madd w0, w5, w18, w20
+1B031E36 madd w22, w17, w3, w7
+1B101D0B madd w11, w8, w16, w7
+1B1E4CA2 madd w2, w5, w30, w19
+1B096EE4 madd w4, w23, w9, w27
+1B047321 madd w1, w25, w4, w28
+1B187AFE madd w30, w23, w24, w30
+1B137D68 mul w8, w11, w19
+1B0C7E6F mul w15, w19, w12
+1B1B7ECC mul w12, w22, w27
+1B077DF7 mul w23, w15, w7
+1B137FA0 mul w0, w29, w19
+1B127C06 mul w6, w0, w18
+1B187EB0 mul w16, w21, w24
+1B067FC9 mul w9, w30, w6
+1B087E9A mul w26, w20, w8
+1B1D7E87 mul w7, w20, w29
+1B027DCA mul w10, w14, w2
+1B167DC6 mul w6, w14, w22
+1B1A7EF5 mul w21, w23, w26
+1B1F7C7A mul w26, w3, wzr
+1B097EFF mul wzr, w23, w9
+1B0F7C8D mul w13, w4, w15
+1B1553E6 madd w6, wzr, w21, w20
+1B155295 madd w21, w20, w21, w20
+1B1551CE madd w14, w14, w21, w20
+1B007EAB mul w11, w21, w0
+
+// MADD_64A_dp_3src sf=1|op54=00|11011|op31=000|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Madd64aDp3src: MADD  <Xd>, <Xn>, <Xm>, <Xa>
+// MulMadd64aDp3src: MUL  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Ra, Rn, Rd
+// form chosen on: Ra
+9B0D31FC madd x28, x15, x13, x12
+9B112393 madd x19, x28, x17, x8
+9B022D3F madd xzr, x9, x2, x11
+9B15698F madd x15, x12, x21, x26
+9B0E1F00 madd x0, x24, x14, x7
+9B001C53 madd x19, x2, x0, x7
+9B1D2052 madd x18, x2, fp, x8
+9B184C17 madd x23, x0, x24, x19
+9B1C5E6A madd x10, x19, x28, x23
+9B0352C9 madd x9, x22, x3, x20
+9B15308D madd x13, x4, x21, x12
+9B1E3F31 madd x17, x25, lr, x15
+9B055B43 madd x3, x26, x5, x22
+9B0A5BD2 madd x18, lr, x10, x22
+9B093DDA madd x26, x14, x9, x15
+9B040F6C madd x12, x27, x4, x3
+9B057C24 mul x4, x1, x5
+9B017E47 mul x7, x18, x1
+9B027E0E mul x14, x16, x2
+9B017F3E mul lr, x25, x1
+9B007E16 mul x22, x16, x0
+9B127E95 mul x21, x20, x18
+9B027D13 mul x19, x8, x2
+9B197D1B mul x27, x8, x25
+9B197E23 mul x3, x17, x25
+9B147CEF mul x15, x7, x20
+9B1C7F92 mul x18, x28, x28
+9B0B7C85 mul x5, x4, x11
+9B077F58 mul x24, x26, x7
+9B1C7E39 mul x25, x17, x28
+9B1D7D5F mul xzr, x10, fp
+9B077DB9 mul x25, x13, x7
+9B1F03FC madd x28, xzr, xzr, x0
+9B0D35EF madd x15, x15, x13, x13
+9B0D318D madd x13, x12, x13, x12
+9B003E16 madd x22, x16, x0, x15

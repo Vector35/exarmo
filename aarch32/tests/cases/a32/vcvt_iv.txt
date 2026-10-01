@@ -1,0 +1,125 @@
+// VCVT_siv_A1_D cond=xxxx|11101|D=x|11|o1=1|opc2=101|Vd=xxxx|10|size=11|op=1|1|M=x|0|Vm=xxxx
+// VcvtSivA1D: VCVT{<c>}{<q>}.S32.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+aebdabcb vcvtge.s32.f64 s20, d11
+eefd7bc7 vcvt.s32.f64 s15, d7
+6efd7bc8 vcvtvs.s32.f64 s15, d8
+cebd8bc0 vcvtgt.s32.f64 s16, d0
+4ebd2be8 vcvtmi.s32.f64 s4, d24
+defdfbec vcvtle.s32.f64 s31, d28
+9efdebc7 vcvtls.s32.f64 s29, d7
+eebd7bcb vcvt.s32.f64 s14, d11
+// Binary Ninja's tests
+eebd0be0 vcvt.s32.f64 s0, d16
+0EBD4BCF vcvteq.s32.f64 s8, d15
+8EBD1BC4 vcvthi.s32.f64 s2, d4
+2EBDFBC2 vcvtcs.s32.f64 s30, d2
+1EFD0BC1 vcvtne.s32.f64 s1, d1
+AEBDABCF vcvtge.s32.f64 s20, d15
+AEBDABEF vcvtge.s32.f64 s20, d31
+
+// VCVT_siv_A1_H cond=xxxx|11101|D=x|11|o1=1|opc2=101|Vd=xxxx|10|size=01|op=1|1|M=x|0|Vm=xxxx
+// VcvtSivA1H: VCVT{<c>}{<q>}.S32.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+4ebd49e1 vcvtmi.s32.f16 s8, s3 (unpredictable)
+3efd39e1 vcvtlo.s32.f16 s7, s3 (unpredictable)
+cebd89cc vcvtgt.s32.f16 s16, s24 (unpredictable)
+1efdd9c4 vcvtne.s32.f16 s27, s8 (unpredictable)
+debde9e9 vcvtle.s32.f16 s28, s19 (unpredictable)
+8ebde9ea vcvthi.s32.f16 s28, s21 (unpredictable)
+8ebdf9c2 vcvthi.s32.f16 s30, s4 (unpredictable)
+0ebde9e4 vcvteq.s32.f16 s28, s9 (unpredictable)
+2EBD09E0 vcvtcs.s32.f16 s0, s1 (unpredictable)
+4EBD29EF vcvtmi.s32.f16 s4, s31 (unpredictable)
+4EBD19E8 vcvtmi.s32.f16 s2, s17 (unpredictable)
+4EBD09C0 vcvtmi.s32.f16 s0, s0 (unpredictable)
+4EFD09CF vcvtmi.s32.f16 s1, s30 (unpredictable)
+4EFDF9E0 vcvtmi.s32.f16 s31, s1 (unpredictable)
+4EBD49EF vcvtmi.s32.f16 s8, s31 (unpredictable)
+
+// VCVT_siv_A1_S cond=xxxx|11101|D=x|11|o1=1|opc2=101|Vd=xxxx|10|size=10|op=1|1|M=x|0|Vm=xxxx
+// VcvtSivA1S: VCVT{<c>}{<q>}.S32.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+debd8aeb vcvtle.s32.f32 s16, s23
+bebd1ac4 vcvtlt.s32.f32 s2, s8
+aefdeac4 vcvtge.s32.f32 s29, s8
+bebdbaed vcvtlt.s32.f32 s22, s27
+eebd6ac1 vcvt.s32.f32 s12, s2
+5efd8aee vcvtpl.s32.f32 s17, s29
+9ebddac6 vcvtls.s32.f32 s26, s12
+4ebd7ace vcvtmi.s32.f32 s14, s28
+// Binary Ninja's tests
+eebd0ac0 vcvt.s32.f32 s0, s0
+0EBDFAEF vcvteq.s32.f32 s30, s31
+8EBD4AE8 vcvthi.s32.f32 s8, s17
+2EBD2AE2 vcvtcs.s32.f32 s4, s5
+1EBDFACF vcvtne.s32.f32 s30, s30
+DEFD0AE0 vcvtle.s32.f32 s1, s1
+DEFDFAEF vcvtle.s32.f32 s31, s31
+
+// VCVT_uiv_A1_D cond=xxxx|11101|D=x|11|o1=1|opc2=100|Vd=xxxx|10|size=11|op=1|1|M=x|0|Vm=xxxx
+// VcvtUivA1D: VCVT{<c>}{<q>}.U32.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+8ebcfbec vcvthi.u32.f64 s30, d28
+0efc5be5 vcvteq.u32.f64 s11, d21
+8efc5bc7 vcvthi.u32.f64 s11, d7
+cefc3be0 vcvtgt.u32.f64 s7, d16
+cefc9be3 vcvtgt.u32.f64 s19, d19
+3efc0bce vcvtlo.u32.f64 s1, d14
+2ebc1beb vcvths.u32.f64 s2, d27
+debccbe7 vcvtle.u32.f64 s24, d23
+// Binary Ninja's tests
+eebc0be0 vcvt.u32.f64 s0, d16
+4EBC8BEF vcvtmi.u32.f64 s16, d31
+1EBC4BE8 vcvtne.u32.f64 s8, d24
+8EBC2BE4 vcvthi.u32.f64 s4, d20
+8EFCFBE2 vcvthi.u32.f64 s31, d18
+8EBCFBE1 vcvthi.u32.f64 s30, d17
+8EBCFBC0 vcvthi.u32.f64 s30, d0
+8EBCFBCF vcvthi.u32.f64 s30, d15
+8EBCFBEF vcvthi.u32.f64 s30, d31
+
+// VCVT_uiv_A1_H cond=xxxx|11101|D=x|11|o1=1|opc2=100|Vd=xxxx|10|size=01|op=1|1|M=x|0|Vm=xxxx
+// VcvtUivA1H: VCVT{<c>}{<q>}.U32.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+0efc19cd vcvteq.u32.f16 s3, s26 (unpredictable)
+cefc29e0 vcvtgt.u32.f16 s5, s1 (unpredictable)
+4ebc79c0 vcvtmi.u32.f16 s14, s0 (unpredictable)
+6ebcd9ea vcvtvs.u32.f16 s26, s21 (unpredictable)
+6efce9cd vcvtvs.u32.f16 s29, s26 (unpredictable)
+7efcf9e0 vcvtvc.u32.f16 s31, s1 (unpredictable)
+befc29eb vcvtlt.u32.f16 s5, s23 (unpredictable)
+debcd9eb vcvtle.u32.f16 s26, s23 (unpredictable)
+8EFC09CF vcvthi.u32.f16 s1, s30 (unpredictable)
+2EFC89C8 vcvtcs.u32.f16 s17, s16 (unpredictable)
+1EFC49C4 vcvtne.u32.f16 s9, s8 (unpredictable)
+0EBC09C2 vcvteq.u32.f16 s0, s4 (unpredictable)
+0EBCF9C1 vcvteq.u32.f16 s30, s2 (unpredictable)
+0EFC09CF vcvteq.u32.f16 s1, s30 (unpredictable)
+0EFC19EF vcvteq.u32.f16 s3, s31 (unpredictable)
+
+// VCVT_uiv_A1_S cond=xxxx|11101|D=x|11|o1=1|opc2=100|Vd=xxxx|10|size=10|op=1|1|M=x|0|Vm=xxxx
+// VcvtUivA1S: VCVT{<c>}{<q>}.U32.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+defc6ae7 vcvtle.u32.f32 s13, s15
+0ebc7ace vcvteq.u32.f32 s14, s28
+9efc2ac8 vcvtls.u32.f32 s5, s16
+7ebc7ae9 vcvtvc.u32.f32 s14, s19
+7ebc3aec vcvtvc.u32.f32 s6, s25
+3ebccae6 vcvtlo.u32.f32 s24, s13
+aefc4ac0 vcvtge.u32.f32 s9, s0
+8ebc5ae2 vcvthi.u32.f32 s10, s5
+// Binary Ninja's tests
+eebc0ac0 vcvt.u32.f32 s0, s0
+4EFCFAEF vcvtmi.u32.f32 s31, s31
+2EFC8AE4 vcvtcs.u32.f32 s17, s9
+1EFC1AE1 vcvtne.u32.f32 s3, s3
+DEBCFACF vcvtle.u32.f32 s30, s30
+DEFC0AE0 vcvtle.u32.f32 s1, s1
+DEFCFAEF vcvtle.u32.f32 s31, s31

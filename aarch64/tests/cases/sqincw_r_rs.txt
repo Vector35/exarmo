@@ -1,0 +1,48 @@
+// sqincw_r_rs_sx 000|0010|0|size=10|1|sf=0|imm4=xxxx|11|11|D=0|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqincwRRsSx: SQINCW  <Xdn>, <Wdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04A5F056 sqincw x22, w22, vl2, mul #0x6
+04AAF15B sqincw x27, w27, vl32, mul #0xb
+04A0F218 sqincw x24, w24, #0x10
+04AAF310 sqincw x16, w16, #0x18, mul #0xb
+04A5F2D9 sqincw x25, w25, #0x16, mul #0x6
+04AAF339 sqincw x25, w25, #0x19, mul #0xb
+04AFF0A7 sqincw x7, w7, vl5, mul #0x10
+04A3F1EA sqincw x10, w10, #0xf, mul #0x4
+04A7F324 sqincw x4, w4, #0x19, mul #0x8
+04ABF07B sqincw x27, w27, vl3, mul #0xc
+04A1F075 sqincw x21, w21, vl3, mul #0x2
+04A4F348 sqincw x8, w8, #0x1a, mul #0x5
+04AFF20C sqincw x12, w12, #0x10, mul #0x10
+04A7F154 sqincw x20, w20, vl32, mul #0x8
+04A6F3BF sqincw xzr, wzr, mul4, mul #0x7
+04A9F2C0 sqincw x0, w0, #0x16, mul #0xa
+04A5F016 sqincw x22, w22, pow2, mul #0x6
+04A5F3F6 sqincw x22, w22, all, mul #0x6
+04A8F116 sqincw x22, w22, vl8, mul #0x9
+04A2F096 sqincw x22, w22, vl4, mul #0x3
+04A5F036 sqincw x22, w22, vl1, mul #0x6
+
+// sqincw_r_rs_x 000|0010|0|size=10|1|sf=1|imm4=xxxx|11|11|D=0|U=0|pattern=xxxxx|Rdn=xxxxx
+// SqincwRRsX: SQINCW  <Xdn>{, <pattern>{, MUL #<imm>}}
+// register fields: Rdn
+04B3F2E0 sqincw x0, #0x17, mul #0x4
+04B0F134 sqincw x20, vl16
+04BBF2DD sqincw fp, #0x16, mul #0xc
+04B5F3A2 sqincw x2, mul4, mul #0x6
+04BAF098 sqincw x24, vl4, mul #0xb
+04B5F3E3 sqincw x3, all, mul #0x6
+04BEF20B sqincw x11, #0x10, mul #0xf
+04B9F268 sqincw x8, #0x13, mul #0xa
+04B9F373 sqincw x19, #0x1b, mul #0xa
+04BFF1D5 sqincw x21, #0xe, mul #0x10
+04B3F14D sqincw x13, vl32, mul #0x4
+04B5F19F sqincw xzr, vl128, mul #0x6
+04B7F310 sqincw x16, #0x18, mul #0x8
+04B2F0AA sqincw x10, vl5, mul #0x3
+04B3F116 sqincw x22, vl8, mul #0x4
+04BBF293 sqincw x19, #0x14, mul #0xc
+04B3F000 sqincw x0, pow2, mul #0x4
+04B8F040 sqincw x0, vl2, mul #0x9
+04B4F020 sqincw x0, vl1, mul #0x5
+04B1F2E0 sqincw x0, #0x17, mul #0x2

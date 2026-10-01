@@ -1,0 +1,13 @@
+// TENTER_te_exception 110|101|00|opc=111|0|op1=00x|(0)(0)(0)(0)(0)|imm7=xxxxxxx|op2=000|LL=00
+// TenterTeException: TENTER  #<imm>{, <nb>}
+D4E00200 tenter #0x10
+D4E20E00 tenter #0x70, nb
+D4E00D00 tenter #0x68
+D4E1F000 tenter #0x0 (unpredictable)
+D4E00FE0 tenter #0x7f
+D4E10800 tenter #0x40 (unpredictable)
+D4E08400 tenter #0x20 (unpredictable)
+D4E04100 tenter #0x8 (unpredictable)
+D4E02080 tenter #0x4 (unpredictable)
+D4E01040 tenter #0x2 (unpredictable)
+D4E00020 tenter #0x1

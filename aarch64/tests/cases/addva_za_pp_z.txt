@@ -1,0 +1,33 @@
+// addva_za_pp_z_32 1|10|0000|0|1|op=0|010|00|V=1|Pm=xxx|Pn=xxx|Zn=xxxxx|0|0|0|ZAda=xx
+// AddvaZaPpZ32: ADDVA  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.S
+// register fields: Pm, Pn, Zn, ZAda
+C091BA23 addva za3.s, p6/m, p5/m, z17.s
+C091E800 addva za0.s, p2/m, p7/m, z0.s
+C0917FC0 addva za0.s, p7/m, p3/m, z30.s
+C091ADE1 addva za1.s, p3/m, p5/m, z15.s
+C0911F21 addva za1.s, p7/m, p0/m, z25.s
+C0910460 addva za0.s, p1/m, p0/m, z3.s
+C0919101 addva za1.s, p4/m, p4/m, z8.s
+C0915E21 addva za1.s, p7/m, p2/m, z17.s
+C09123E2 addva za2.s, p0/m, p1/m, z31.s
+C091D623 addva za3.s, p5/m, p6/m, z17.s
+C091ACA3 addva za3.s, p3/m, p5/m, z5.s
+C091B8C3 addva za3.s, p6/m, p5/m, z6.s
+
+// addva_za_pp_z_64 1|10|0000|0|1|op=1|010|00|V=1|Pm=xxx|Pn=xxx|Zn=xxxxx|0|0|ZAda=xxx
+// AddvaZaPpZ64: ADDVA  <ZAda>.D, <Pn>/M, <Pm>/M, <Zn>.D
+// register fields: Pm, Pn, Zn, ZAda
+C0D16EE5 addva za5.d, p3/m, p3/m, z23.d
+C0D1B1C5 addva za5.d, p4/m, p5/m, z14.d
+C0D19BA1 addva za1.d, p6/m, p4/m, z29.d
+C0D18F05 addva za5.d, p3/m, p4/m, z24.d
+C0D12386 addva za6.d, p0/m, p1/m, z28.d
+C0D1FF64 addva za4.d, p7/m, p7/m, z27.d
+C0D13004 addva za4.d, p4/m, p1/m, z0.d
+C0D15524 addva za4.d, p5/m, p2/m, z9.d
+C0D107E0 addva za0.d, p1/m, p0/m, z31.d
+C0D1CAE2 addva za2.d, p2/m, p6/m, z23.d
+C0D16EE3 addva za3.d, p3/m, p3/m, z23.d
+C0D16EE7 addva za7.d, p3/m, p3/m, z23.d
+C0D16C65 addva za5.d, p3/m, p3/m, z3.d
+C0D16CA5 addva za5.d, p3/m, p3/m, z5.d

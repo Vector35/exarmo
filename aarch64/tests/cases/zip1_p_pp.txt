@@ -1,0 +1,43 @@
+// zip1_p_pp_ 000|0010|1|size=xx|1|0|Pm=xxxx|010|opc=00|H=0|0|Pn=xxxx|0|Pd=xxxx
+// Zip1PPp: ZIP1  <Pd>.<T>, <Pn>.<T>, <Pm>.<T>
+// register fields: Pm, Pn, Pd
+056E4169 zip1 p9.h, p11.h, p14.h
+05264007 zip1 p7.b, p0.b, p6.b
+05284006 zip1 p6.b, p0.b, p8.b
+05AA418D zip1 p13.s, p12.s, p10.s
+05A941CA zip1 p10.s, p14.s, p9.s
+05E74128 zip1 p8.d, p9.d, p7.d
+052A40C8 zip1 p8.b, p6.b, p10.b
+05E5412A zip1 p10.d, p9.d, p5.d
+05624062 zip1 p2.h, p3.h, p2.h
+05EA4003 zip1 p3.d, p0.d, p10.d
+05E741AA zip1 p10.d, p13.d, p7.d
+05264188 zip1 p8.b, p12.b, p6.b
+05E9414D zip1 p13.d, p10.d, p9.d
+052240EF zip1 p15.b, p7.b, p2.b
+05EC4040 zip1 p0.d, p2.d, p12.d
+056D40AD zip1 p13.h, p5.h, p13.h
+056041E9 zip1 p9.h, p15.h, p0.h
+056F4169 zip1 p9.h, p11.h, p15.h
+056E41C9 zip1 p9.h, p14.h, p14.h
+056E416B zip1 p11.h, p11.h, p14.h
+
+// zip2_p_pp_ 000|0010|1|size=xx|1|0|Pm=xxxx|010|opc=00|H=1|0|Pn=xxxx|0|Pd=xxxx
+// Zip2PPp: ZIP2  <Pd>.<T>, <Pn>.<T>, <Pm>.<T>
+// register fields: Pm, Pn, Pd
+05674527 zip2 p7.h, p9.h, p7.h
+05284448 zip2 p8.b, p2.b, p8.b
+052F45A2 zip2 p2.b, p13.b, p15.b
+05A445E4 zip2 p4.s, p15.s, p4.s
+0564444B zip2 p11.h, p2.h, p4.h
+05244569 zip2 p9.b, p11.b, p4.b
+05A244E2 zip2 p2.s, p7.s, p2.s
+056B4567 zip2 p7.h, p11.h, p11.h
+056F450E zip2 p14.h, p8.h, p15.h
+056A456B zip2 p11.h, p11.h, p10.h
+05604400 zip2 p0.h, p0.h, p0.h
+05AF4427 zip2 p7.s, p1.s, p15.s
+052545A7 zip2 p7.b, p13.b, p5.b
+052D4540 zip2 p0.b, p10.b, p13.b
+05E94424 zip2 p4.d, p1.d, p9.d
+05A2450F zip2 p15.s, p8.s, p2.s

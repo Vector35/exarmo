@@ -1,0 +1,15 @@
+// bgrp_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|10|11|opc=10|Zn=xxxxx|Zd=xxxxx
+// BgrpZZz: BGRP  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+45C4BB2F bgrp z15.d, z25.d, z4.d
+458BB948 bgrp z8.s, z10.s, z11.s
+45C7BA7C bgrp z28.d, z19.d, z7.d
+45C9B8B4 bgrp z20.d, z5.d, z9.d
+45D9BB40 bgrp z0.d, z26.d, z25.d
+4593BB79 bgrp z25.s, z27.s, z19.s
+4504BAAB bgrp z11.b, z21.b, z4.b
+4513B91D bgrp z29.b, z8.b, z19.b
+4540B81F bgrp z31.h, z0.h, z0.h
+45DFBBEF bgrp z15.d, z31.d, z31.d
+45C4BB24 bgrp z4.d, z25.d, z4.d
+45C4BB39 bgrp z25.d, z25.d, z4.d

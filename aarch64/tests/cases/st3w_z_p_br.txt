@@ -1,0 +1,22 @@
+// st3w_z_p_br_contiguous 111|0010|msz=10|opc=10|Rm=xxxxx|011|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// St3wZPBrContiguous: ST3W  { <Zt1>.S, <Zt2>.S, <Zt3>.S }, <Pg>, [<Xn|SP>, <Xm>, LSL #2]
+// register fields: Rm, Pg, Rn, Zt
+E54E6E22 st3w {z2.s, z3.s, z4.s}, p3, [x17, x14, lsl #0x2]
+E5566B91 st3w {z17.s, z18.s, z19.s}, p2, [x28, x22, lsl #0x2]
+E5576A8A st3w {z10.s, z11.s, z12.s}, p2, [x20, x23, lsl #0x2]
+E55860A8 st3w {z8.s, z9.s, z10.s}, p0, [x5, x24, lsl #0x2]
+E5466F70 st3w {z16.s, z17.s, z18.s}, p3, [x27, x6, lsl #0x2]
+E55B63E8 st3w {z8.s, z9.s, z10.s}, p0, [sp, x27, lsl #0x2]
+E54160D9 st3w {z25.s, z26.s, z27.s}, p0, [x6, x1, lsl #0x2]
+E55170A6 st3w {z6.s, z7.s, z8.s}, p4, [x5, x17, lsl #0x2]
+E55E7D61 st3w {z1.s, z2.s, z3.s}, p7, [x11, lr, lsl #0x2]
+E5526F7C st3w {z28.s, z29.s, z30.s}, p3, [x27, x18, lsl #0x2]
+E5467A20 st3w {z0.s, z1.s, z2.s}, p6, [x17, x6, lsl #0x2]
+E55D6559 st3w {z25.s, z26.s, z27.s}, p1, [x10, fp, lsl #0x2]
+E54C7EEF st3w {z15.s, z16.s, z17.s}, p7, [x23, x12, lsl #0x2]
+E55B7091 st3w {z17.s, z18.s, z19.s}, p4, [x4, x27, lsl #0x2]
+E54D6739 st3w {z25.s, z26.s, z27.s}, p1, [x25, x13, lsl #0x2]
+E54C656C st3w {z12.s, z13.s, z14.s}, p1, [x11, x12, lsl #0x2]
+E540741F st3w {z31.s, z0.s, z1.s}, p5, [x0, x0, lsl #0x2]
+E55F6E22 UNALLOCATED
+E54E6E23 st3w {z3.s, z4.s, z5.s}, p3, [x17, x14, lsl #0x2]

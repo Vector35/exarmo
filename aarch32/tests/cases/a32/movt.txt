@@ -1,0 +1,33 @@
+// MOVT_A1 cond=xxxx|00|1|10|H=1|00|imm4=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// MovtA1: MOVT{<c>}{<q>}  <Rd>, #<imm16>
+// read together by <imm16>: imm4, imm12
+// register fields: Rd
+13404cd3 movtne r4, #3283
+834bc688 movthi r12, #46728
+33433c7c movtlo r3, #15484
+0345afd7 movteq r10, #24535
+434fabfb movtmi r10, #64507
+734537b6 movtvc r3, #22454
+d3410e59 movtle r0, #7769
+83417860 movthi r7, #6240
+// Binary Ninja's tests
+03404ff0 movteq r4, #4080
+e3403007 movt r3, #7
+e34f6fff movt r6, #65535
+F3404CD3 UNDEFINED
+2348F000 movtcs pc, #0x8000 (unpredictable)
+13444800 movtne r4, #0x4800
+13424400 movtne r4, #0x2400
+13404200 movtne r4, #0x200
+13404100 movtne r4, #0x100
+13404080 movtne r4, #0x80
+13404040 movtne r4, #0x40
+13404020 movtne r4, #0x20
+13404010 movtne r4, #0x10
+13404008 movtne r4, #0x8
+13404004 movtne r4, #0x4
+13404002 movtne r4, #0x2
+13404001 movtne r4, #0x1
+13404000 movtne r4, #0x0
+13404FFF movtne r4, #0xfff
+134F4000 movtne r4, #0xf000

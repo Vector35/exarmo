@@ -1,0 +1,185 @@
+// MOV_rr_T1_ASR 010000|op=0100|Rs=xxx|Rdm=xxx
+// AsrsMovRrT1Asr: ASRS{<q>}  {<Rdm>, }<Rdm>, <Rs>
+// AsrMovRrT1Asr: ASR<c>{<q>}  {<Rdm>, }<Rdm>, <Rs>
+// MovRrT1Asr: MOV<c>{<q>}  <Rdm>, <Rdm>, ASR <Rs>
+// T1bMovRrT1Asr: MOVS{<q>}  <Rdm>, <Rdm>, ASR <Rs>
+// register fields: Rs, Rdm
+// IT state read: condition, in block
+4100 asrs r0, r0
+4101 asrs r1, r0
+4102 asrs r2, r0
+4103 asrs r3, r0
+4104 asrs r4, r0
+4105 asrs r5, r0
+4106 asrs r6, r0
+4107 asrs r7, r0
+4108 asrs r0, r1
+4110 asrs r0, r2
+4118 asrs r0, r3
+4120 asrs r0, r4
+4128 asrs r0, r5
+4130 asrs r0, r6
+4138 asrs r0, r7
+4100 [ne] asrne r0, r0
+
+// MOV_rr_T1_LSL 010000|op=0010|Rs=xxx|Rdm=xxx
+// LslsMovRrT1Lsl: LSLS{<q>}  {<Rdm>, }<Rdm>, <Rs>
+// LslMovRrT1Lsl: LSL<c>{<q>}  {<Rdm>, }<Rdm>, <Rs>
+// MovRrT1Lsl: MOV<c>{<q>}  <Rdm>, <Rdm>, LSL <Rs>
+// T1bMovRrT1Lsl: MOVS{<q>}  <Rdm>, <Rdm>, LSL <Rs>
+// register fields: Rs, Rdm
+// IT state read: condition, in block
+4080 lsls r0, r0
+4081 lsls r1, r0
+4082 lsls r2, r0
+4083 lsls r3, r0
+4084 lsls r4, r0
+4085 lsls r5, r0
+4086 lsls r6, r0
+4087 lsls r7, r0
+4088 lsls r0, r1
+4090 lsls r0, r2
+4098 lsls r0, r3
+40A0 lsls r0, r4
+40A8 lsls r0, r5
+40B0 lsls r0, r6
+40B8 lsls r0, r7
+4080 [ne] lslne r0, r0
+
+// MOV_rr_T1_LSR 010000|op=0011|Rs=xxx|Rdm=xxx
+// LsrsMovRrT1Lsr: LSRS{<q>}  {<Rdm>, }<Rdm>, <Rs>
+// LsrMovRrT1Lsr: LSR<c>{<q>}  {<Rdm>, }<Rdm>, <Rs>
+// MovRrT1Lsr: MOV<c>{<q>}  <Rdm>, <Rdm>, LSR <Rs>
+// T1bMovRrT1Lsr: MOVS{<q>}  <Rdm>, <Rdm>, LSR <Rs>
+// register fields: Rs, Rdm
+// IT state read: condition, in block
+40c0 lsrs r0, r0
+40c1 lsrs r1, r0
+40c2 lsrs r2, r0
+40c3 lsrs r3, r0
+40c4 lsrs r4, r0
+40c5 lsrs r5, r0
+40c6 lsrs r6, r0
+40c7 lsrs r7, r0
+40C8 lsrs r0, r1
+40D0 lsrs r0, r2
+40D8 lsrs r0, r3
+40E0 lsrs r0, r4
+40E8 lsrs r0, r5
+40F0 lsrs r0, r6
+40F8 lsrs r0, r7
+40C0 [ne] lsrne r0, r0
+
+// MOV_rr_T1_ROR 010000|op=0111|Rs=xxx|Rdm=xxx
+// RorsMovRrT1Ror: RORS{<q>}  {<Rdm>, }<Rdm>, <Rs>
+// RorMovRrT1Ror: ROR<c>{<q>}  {<Rdm>, }<Rdm>, <Rs>
+// MovRrT1Ror: MOV<c>{<q>}  <Rdm>, <Rdm>, ROR <Rs>
+// T1bMovRrT1Ror: MOVS{<q>}  <Rdm>, <Rdm>, ROR <Rs>
+// register fields: Rs, Rdm
+// IT state read: condition, in block
+41c0 rors r0, r0
+41c1 rors r1, r0
+41c2 rors r2, r0
+41c3 rors r3, r0
+41c4 rors r4, r0
+41c5 rors r5, r0
+41c6 rors r6, r0
+41c7 rors r7, r0
+41C8 rors r0, r1
+41D0 rors r0, r2
+41D8 rors r0, r3
+41E0 rors r0, r4
+41E8 rors r0, r5
+41F0 rors r0, r6
+41F8 rors r0, r7
+41C0 [ne] rorne r0, r0
+
+// MOV_rr_T2 111110100|stype=xx|S=0|Rm=xxxx|1111|Rd=xxxx|0000|Rs=xxxx
+// AsrMovRrT2: ASR{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// LslMovRrT2: LSL{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// LsrMovRrT2: LSR{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// RorMovRrT2: ROR{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// MovRrT2: MOV{<c>}{<q>}  <Rd>, <Rm>, <shift> <Rs>
+// register fields: Rm, Rd, Rs
+// form chosen on: stype
+// IT state read: condition
+fa2dfb01 lsr r11, sp, r1
+fa46f205 asr r2, r6, r5
+fa45f20a asr r2, r5, r10
+fa4af101 asr r1, r10, r1
+fa2df10b lsr r1, sp, r11
+fa6cf100 ror r1, r12, r0
+fa4ef40c asr r4, lr, r12
+fa2afd0d lsr sp, r10, sp
+FA00F00F lsl r0, r0, pc (unpredictable)
+FA2FFF01 lsr pc, pc, r1 (unpredictable)
+FA2DFD01 lsr sp, sp, r1
+FA2DFB0D lsr r11, sp, sp
+FA40F00F asr r0, r0, pc (unpredictable)
+FA20F00F lsr r0, r0, pc (unpredictable)
+FA60F00F ror r0, r0, pc (unpredictable)
+FA46F205 [ne] asrne r2, r6, r5
+FA00F00F [ne] lslne r0, r0, pc (unpredictable)
+FA2DFB01 [ne] lsrne r11, sp, r1
+FA6CF100 [ne] rorne r1, r12, r0
+
+// MOVS_rr_T2 111110100|stype=xx|S=1|Rm=xxxx|1111|Rd=xxxx|0000|Rs=xxxx
+// T2bAsrsMovsRrT2: ASRS.W  {<Rd>, }<Rm>, <Rs>
+// AsrsMovsRrT2: ASRS{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// T2bLslsMovsRrT2: LSLS.W  {<Rd>, }<Rm>, <Rs>
+// LslsMovsRrT2: LSLS{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// T2bLsrsMovsRrT2: LSRS.W  {<Rd>, }<Rm>, <Rs>
+// LsrsMovsRrT2: LSRS{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// T2bRorsMovsRrT2: RORS.W  {<Rd>, }<Rm>, <Rs>
+// RorsMovsRrT2: RORS{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// MovsRrT2: MOVS{<c>}{<q>}  <Rd>, <Rm>, <shift> <Rs>
+// read together by the ASRS alias and the LSLS alias and the LSRS alias and the RORS alias: stype, Rm, Rd, Rs
+// register fields: Rm, Rd, Rs
+// form chosen on: stype, Rm, Rd, Rs
+// IT state read: condition, in block
+fa13fa03 lsls r10, r3, r3
+fa13fd03 lsls sp, r3, r3
+fa19f505 lsls r5, r9, r5
+fa33fc09 lsrs r12, r3, r9
+fa7ff40f rors r4, pc, pc (unpredictable)
+fa55fb02 asrs r11, r5, r2
+fa3ff20c lsrs r2, pc, r12 (unpredictable)
+fa73fc0a rors r12, r3, r10
+FA10F000 lsls r0, r0, r0
+FA13FF03 lsls pc, r3, r3 (unpredictable)
+FA10F00F lsls r0, r0, pc (unpredictable)
+FA10FF00 lsls pc, r0, r0 (unpredictable)
+FA10FF0F lsls pc, r0, pc (unpredictable)
+FA1FF000 lsls r0, pc, r0 (unpredictable)
+FA1FF00F lsls r0, pc, pc (unpredictable)
+FA1FFF00 lsls pc, pc, r0 (unpredictable)
+FA1FFF0F lsls pc, pc, pc (unpredictable)
+FA30F000 lsrs r0, r0, r0
+FA30F00F lsrs r0, r0, pc (unpredictable)
+FA30FF00 lsrs pc, r0, r0 (unpredictable)
+FA30FF0F lsrs pc, r0, pc (unpredictable)
+FA3FF000 lsrs r0, pc, r0 (unpredictable)
+FA3FF00F lsrs r0, pc, pc (unpredictable)
+FA3FFF00 lsrs pc, pc, r0 (unpredictable)
+FA3FFF0F lsrs pc, pc, pc (unpredictable)
+FA50F000 asrs r0, r0, r0
+FA50F00F asrs r0, r0, pc (unpredictable)
+FA50FF00 asrs pc, r0, r0 (unpredictable)
+FA50FF0F asrs pc, r0, pc (unpredictable)
+FA5FF000 asrs r0, pc, r0 (unpredictable)
+FA5FF00F asrs r0, pc, pc (unpredictable)
+FA5FFF00 asrs pc, pc, r0 (unpredictable)
+FA5FFF0F asrs pc, pc, pc (unpredictable)
+FA70F000 rors r0, r0, r0
+FA70F00F rors r0, r0, pc (unpredictable)
+FA70FF00 rors pc, r0, r0 (unpredictable)
+FA70FF0F rors pc, r0, pc (unpredictable)
+FA7FF000 rors r0, pc, r0 (unpredictable)
+FA7FF00F rors r0, pc, pc (unpredictable)
+FA7FFF00 rors pc, pc, r0 (unpredictable)
+FA7FFF0F rors pc, pc, pc (unpredictable)
+FA13F303 lsls r3, r3, r3
+FA55FB02 [ne] asrsne r11, r5, r2
+FA13FA03 [ne] lslsne r10, r3, r3
+FA33FC09 [ne] lsrsne r12, r3, r9
+FA7FF40F [ne] rorsne r4, pc, pc (unpredictable)

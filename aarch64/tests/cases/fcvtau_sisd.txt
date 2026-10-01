@@ -1,0 +1,37 @@
+// FCVTAU_sisd_32D sf=0|0|S=0|11110|ftype=01|1|rmode=11|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtauSisd32d: FCVTAU  <Sd>, <Dn>
+// register fields: Rn, Rd
+1E7B0004 fcvtau s4, d0
+1E7B000B fcvtau s11, d0
+1E7B0012 fcvtau s18, d0
+1E7B03E0 fcvtau s0, d31
+1E7B001F fcvtau s31, d0
+1E7B0000 fcvtau s0, d0
+
+// FCVTAU_sisd_32H sf=0|0|S=0|11110|ftype=11|1|rmode=11|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtauSisd32h: FCVTAU  <Sd>, <Hn>
+// register fields: Rn, Rd
+1EFB0000 fcvtau s0, h0
+1EFB0007 fcvtau s7, h0
+1EFB000E fcvtau s14, h0
+1EFB03FF fcvtau s31, h31
+
+// FCVTAU_sisd_64H sf=1|0|S=0|11110|ftype=11|1|rmode=11|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtauSisd64h: FCVTAU  <Dd>, <Hn>
+// register fields: Rn, Rd
+9EFB0005 fcvtau d5, h0
+9EFB000C fcvtau d12, h0
+9EFB0013 fcvtau d19, h0
+9EFB03E0 fcvtau d0, h31
+9EFB001F fcvtau d31, h0
+9EFB0000 fcvtau d0, h0
+
+// FCVTAU_sisd_64S sf=1|0|S=0|11110|ftype=00|1|rmode=11|opcode=011|000000|Rn=xxxxx|Rd=xxxxx
+// FcvtauSisd64s: FCVTAU  <Dd>, <Sn>
+// register fields: Rn, Rd
+9E3B0004 fcvtau d4, s0
+9E3B000B fcvtau d11, s0
+9E3B0012 fcvtau d18, s0
+9E3B03E0 fcvtau d0, s31
+9E3B001F fcvtau d31, s0
+9E3B0000 fcvtau d0, s0

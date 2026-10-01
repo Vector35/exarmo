@@ -1,0 +1,42 @@
+// VCMLA_T1_D 1111110|rot=xx|D=x|1|S=x|Vn=xxxx|Vd=xxxx|1|op3=0|0|op4=0|N=x|Q=0|M=x|U=0|Vm=xxxx
+// VcmlaT1D: VCMLA{<q>}.<dt>  <Dd>, <Dn>, <Dm>, #<rotate>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+fd7f0824 vcmla.f32 d16, d15, d20, #180
+fcf10803 vcmla.f32 d16, d1, d3, #90
+fcacd803 vcmla.f16 d13, d12, d3, #90
+fc3978a0 vcmla.f32 d7, d25, d16, #0
+fcfb882f vcmla.f32 d24, d11, d31, #90
+fc67d828 vcmla.f16 d29, d7, d24, #0
+fcb3380c vcmla.f32 d3, d3, d12, #90
+fc6cf823 vcmla.f16 d31, d12, d19, #0
+FDF04822 vcmla.f32 d20, d0, d18, #0x10e
+FD782821 vcmla.f32 d18, d8, d17, #0xb4
+FD741800 vcmla.f32 d17, d4, d0, #0xb4
+FD32080F vcmla.f32 d0, d2, d15, #0xb4
+FD30F824 vcmla.f32 d15, d0, d20, #0xb4
+FD7008A4 vcmla.f32 d16, d16, d20, #0xb4
+FD7F08A4 vcmla.f32 d16, d31, d20, #0xb4
+
+// VCMLA_T1_Q 1111110|rot=xx|D=x|1|S=x|Vn=xxxx|Vd=xxxx|1|op3=0|0|op4=0|N=x|Q=1|M=x|U=0|Vm=xxxx
+// VcmlaT1Q: VCMLA{<q>}.<dt>  <Qd>, <Qn>, <Qm>, #<rotate>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+fde82868 vcmla.f16 q9, q4, q12, #270
+fc3a08ec vcmla.f32 q0, q13, q14, #0
+fd2c08cc vcmla.f16 q0, q14, q6, #180
+fd38c84a vcmla.f32 q6, q4, q5, #180
+fdb82846 vcmla.f32 q1, q4, q3, #270
+fce848e2 vcmla.f16 q10, q12, q9, #90
+fdb208c6 vcmla.f32 q0, q9, q3, #270
+fc2a4868 vcmla.f16 q2, q5, q12, #0
+FDE08860 vcmla.f16 q12, q0, q8, #0x10e
+FDEFF86F UNDEFINED
+FDE40864 vcmla.f16 q8, q2, q10, #0x10e
+FDE11861 UNDEFINED
+FDAFF84F UNDEFINED
+FDEFF8EF UNDEFINED
+FDE02840 vcmla.f16 q9, q0, q0, #0x10e
+FDE028E0 vcmla.f16 q9, q8, q8, #0x10e

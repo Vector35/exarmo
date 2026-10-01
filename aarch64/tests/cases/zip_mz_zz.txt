@@ -1,0 +1,17 @@
+// zip_mz_zz_2 1|10|0000|1|size=xx|1|Zm=xxxxx|110|100|Zn=xxxxx|Zd=xxxx|op=0
+// ZipMzZz2: ZIP  { <Zd1>.<T>-<Zd2>.<T> }, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+C120D00A zip {z10.b-z11.b}, z0.b, z0.b
+C120D018 zip {z24.b-z25.b}, z0.b, z0.b
+C120D026 zip {z6.b-z7.b}, z1.b, z0.b
+C17FD3E0 zip {z0.h-z1.h}, z31.h, z31.h
+C1A0D01E zip {z30.s-z31.s}, z0.s, z0.s
+C1E0D00A zip {z10.d-z11.d}, z0.d, z0.d
+C120D000 zip {z0.b-z1.b}, z0.b, z0.b
+
+// zip_mz_zz_2q 1|10|0000|1|00|1|Zm=xxxxx|110|101|Zn=xxxxx|Zd=xxxx|op=0
+// ZipMzZz2q: ZIP  { <Zd1>.Q-<Zd2>.Q }, <Zn>.Q, <Zm>.Q
+// register fields: Zm, Zn, Zd
+C120D400 zip {z0.q-z1.q}, z0.q, z0.q
+C13FD7FE zip {z30.q-z31.q}, z31.q, z31.q
+C121D446 zip {z6.q-z7.q}, z2.q, z1.q

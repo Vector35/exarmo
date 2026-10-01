@@ -1,0 +1,117 @@
+// VFMA_T1_D 111|U=0|11110|D=x|op=0|sz=x|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VfmaT1D: VFMA{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef13dc3b vfma.f16 d13, d3, d27
+ef142c36 vfma.f16 d2, d4, d22
+ef1e0c3b vfma.f16 d0, d14, d27
+ef54ac38 vfma.f16 d26, d4, d24
+ef556c91 vfma.f16 d22, d21, d1
+ef423c11 vfma.f32 d19, d2, d1
+ef1d4cb1 vfma.f16 d4, d29, d17
+ef45ac32 vfma.f32 d26, d5, d18
+EF10FC30 vfma.f16 d15, d0, d16
+EF1F8C3F vfma.f16 d8, d15, d31
+EF181C34 vfma.f16 d1, d8, d20
+EF11FC10 vfma.f16 d15, d1, d0
+EF500C1F vfma.f16 d16, d0, d15
+EF50FCB0 vfma.f16 d31, d16, d16
+EF1FDC3F vfma.f16 d13, d15, d31
+EF1FDCBB vfma.f16 d13, d31, d27
+EF13DC3B [ne] vfmane.f16 d13, d3, d27 (unpredictable)
+
+// VFMA_T1_Q 111|U=0|11110|D=x|op=0|sz=x|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VfmaT1Q: VFMA{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef142cf4 vfma.f16 q1, q10, q10
+ef482cd4 vfma.f32 q9, q12, q2
+ef082cfc vfma.f32 q1, q12, q14
+ef04cc56 vfma.f32 q6, q2, q3
+ef028cf0 vfma.f32 q4, q9, q8
+ef1aacde vfma.f16 q5, q13, q7
+ef0aecf2 vfma.f32 q7, q13, q9
+ef0c8c76 vfma.f32 q4, q6, q11
+EF100CF8 vfma.f16 q0, q8, q12
+EF1FFCFF UNDEFINED
+EF111CF1 UNDEFINED
+EF104C50 vfma.f16 q2, q0, q0
+EF100CF4 vfma.f16 q0, q8, q10
+EF1FFC5F UNDEFINED
+EF540CF4 vfma.f16 q8, q10, q10
+EF5FFCFF UNDEFINED
+EF142CF4 [ne] vfmane.f16 q1, q10, q10 (unpredictable)
+
+// VFMA_T2_D 11101110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=0|M=x|0|Vm=xxxx
+// VfmaT2D: VFMA{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eeefcbad vfma.f64 d28, d31, d29
+eee97bae vfma.f64 d23, d25, d30
+eeee0b09 vfma.f64 d16, d14, d9
+eeef7b8e vfma.f64 d23, d31, d14
+eea99b28 vfma.f64 d9, d9, d24
+eee9cb2c vfma.f64 d28, d9, d28
+eeaecba9 vfma.f64 d12, d30, d25
+eeef2b27 vfma.f64 d18, d15, d23
+EEE0FBA0 vfma.f64 d31, d16, d16
+EEE88BAF vfma.f64 d24, d24, d31
+EEE44BA4 vfma.f64 d20, d20, d20
+EEE21BA2 vfma.f64 d17, d18, d18
+EEA10BA1 vfma.f64 d0, d17, d17
+EEA0FB00 vfma.f64 d15, d0, d0
+EEE0FB8F vfma.f64 d31, d16, d15
+EEEFCBA0 vfma.f64 d28, d31, d16
+EEEFCBAF vfma.f64 d28, d31, d31
+EEEFCBAD [ne] vfmane.f64 d28, d31, d29
+
+// VFMA_T2_H 11101110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=0|M=x|0|Vm=xxxx
+// VfmaT2H: VFMA{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eea7f92f vfma.f16 s30, s14, s31
+eea4c9a0 vfma.f16 s24, s9, s1
+eeab692b vfma.f16 s12, s22, s23
+eea979a9 vfma.f16 s14, s19, s19
+eeec898b vfma.f16 s17, s25, s22
+eea88986 vfma.f16 s16, s17, s12
+eeae490b vfma.f16 s8, s28, s22
+eea049ae vfma.f16 s8, s1, s29
+EEAF0928 vfma.f16 s0, s30, s17
+EEA22924 vfma.f16 s4, s4, s9
+EEA11922 vfma.f16 s2, s2, s5
+EEA00921 vfma.f16 s0, s0, s3
+EEEF0900 vfma.f16 s1, s30, s0
+EEEFF98F vfma.f16 s31, s31, s30
+EEA7F92F [ne] vfmane.f16 s30, s14, s31 (unpredictable)
+
+// VFMA_T2_S 11101110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=0|M=x|0|Vm=xxxx
+// VfmaT2S: VFMA{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeedea2e vfma.f32 s29, s26, s29
+eee08aa1 vfma.f32 s17, s1, s3
+eea2fa0d vfma.f32 s30, s4, s26
+eea6ba88 vfma.f32 s22, s13, s16
+eea07aac vfma.f32 s14, s1, s25
+eee2da23 vfma.f32 s27, s4, s7
+eea80a04 vfma.f32 s0, s16, s8
+eeaf9aa1 vfma.f32 s18, s31, s3
+EEE44A20 vfma.f32 s9, s8, s1
+EEE12A2F vfma.f32 s5, s2, s31
+EEE01A22 vfma.f32 s3, s0, s5
+EEEF0A00 vfma.f32 s1, s30, s0
+EEEDFA0F vfma.f32 s31, s26, s30
+EEEDEA20 vfma.f32 s29, s26, s1
+EEEDEA2F vfma.f32 s29, s26, s31
+EEEDEA2E [ne] vfmane.f32 s29, s26, s29

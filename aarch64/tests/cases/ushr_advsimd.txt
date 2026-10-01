@@ -1,0 +1,102 @@
+// USHR_asimdshf_R 0|Q=x|U=1|0|111|10|immh=xxxx|immb=xxx|00|o1=0|o0=0|0|1|Rn=xxxxx|Rd=xxxxx
+// UshrAsimdshfR: USHR  <Vd>.<T>, <Vn>.<T>, #<shift>
+// read together by <T>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+2F1C0579 ushr v25.4h, v11.4h, #0x4
+2F3807B7 ushr v23.2s, v29.2s, #0x8
+2F0905F5 ushr v21.8b, v15.8b, #0x7
+6F16074D ushr v13.8h, v26.8h, #0xa
+2F2B0670 ushr v16.2s, v19.2s, #0x15
+2F2C0750 ushr v16.2s, v26.2s, #0x14
+6F260503 ushr v3.4s, v8.4s, #0x1a
+2F3104D7 ushr v23.2s, v6.2s, #0xf
+6F3F042E ushr v14.4s, v1.4s, #0x1
+6F6A05C6 ushr v6.2d, v14.2d, #0x16
+6F2606C5 ushr v5.4s, v22.4s, #0x1a
+2F2D058C ushr v12.2s, v12.2s, #0x13
+6F7005FC ushr v28.2d, v15.2d, #0x10
+2F0E040F ushr v15.8b, v0.8b, #0x2
+6F4F0630 ushr v16.2d, v17.2d, #0x31
+6F4D06BD ushr v29.2d, v21.2d, #0x33
+6F7E07E0 ushr v0.2d, v31.2d, #0x2
+2F1C057F ushr v31.4h, v11.4h, #0x4
+2F7C0579 UNDEFINED
+6F78074D ushr v13.2d, v26.2d, #0x8
+6F79074D ushr v13.2d, v26.2d, #0x7
+6F7A074D ushr v13.2d, v26.2d, #0x6
+6F7B074D ushr v13.2d, v26.2d, #0x5
+6F7C074D ushr v13.2d, v26.2d, #0x4
+6F7D074D ushr v13.2d, v26.2d, #0x3
+6F7F074D ushr v13.2d, v26.2d, #0x1
+6F46074D ushr v13.2d, v26.2d, #0x3a
+
+// USHR_asisdshf_R 01|U=1|1|111|10|immh=1xxx|immb=xxx|00|o1=0|o0=0|0|1|Rn=xxxxx|Rd=xxxxx
+// UshrAsisdshfR: USHR  <d>, <n>, #<shift>
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+7F5A0722 ushr d2, d25, #0x26
+7F7805BF ushr d31, d13, #0x8
+7F7E055A ushr d26, d10, #0x2
+7F550781 ushr d1, d28, #0x2b
+7F7D0442 ushr d2, d2, #0x3
+7F6104EC ushr d12, d7, #0x1f
+7F6005C0 ushr d0, d14, #0x20
+7F4105CA ushr d10, d14, #0x3f
+7F580490 ushr d16, d4, #0x28
+7F640724 ushr d4, d25, #0x1c
+7F6A0661 ushr d1, d19, #0x16
+7F5E05F9 ushr d25, d15, #0x22
+7F7A07AE ushr d14, d29, #0x6
+7F4D0482 ushr d2, d4, #0x33
+7F6A0783 ushr d3, d28, #0x16
+7F560597 ushr d23, d12, #0x2a
+7F730402 ushr d2, d0, #0xd
+7F5F07E2 ushr d2, d31, #0x21
+7F400722 ushr d2, d25, #0x40
+7F420722 ushr d2, d25, #0x3e
+7F430722 ushr d2, d25, #0x3d
+7F440722 ushr d2, d25, #0x3c
+7F450722 ushr d2, d25, #0x3b
+7F460722 ushr d2, d25, #0x3a
+7F470722 ushr d2, d25, #0x39
+7F480722 ushr d2, d25, #0x38
+7F490722 ushr d2, d25, #0x37
+7F4A0722 ushr d2, d25, #0x36
+7F4B0722 ushr d2, d25, #0x35
+7F4C0722 ushr d2, d25, #0x34
+7F4E0722 ushr d2, d25, #0x32
+7F4F0722 ushr d2, d25, #0x31
+7F500722 ushr d2, d25, #0x30
+7F510722 ushr d2, d25, #0x2f
+7F520722 ushr d2, d25, #0x2e
+7F530722 ushr d2, d25, #0x2d
+7F540722 ushr d2, d25, #0x2c
+7F570722 ushr d2, d25, #0x29
+7F590722 ushr d2, d25, #0x27
+7F5B0722 ushr d2, d25, #0x25
+7F5C0722 ushr d2, d25, #0x24
+7F5D0722 ushr d2, d25, #0x23
+7F620722 ushr d2, d25, #0x1e
+7F630722 ushr d2, d25, #0x1d
+7F650722 ushr d2, d25, #0x1b
+7F660722 ushr d2, d25, #0x1a
+7F670722 ushr d2, d25, #0x19
+7F680722 ushr d2, d25, #0x18
+7F690722 ushr d2, d25, #0x17
+7F6B0722 ushr d2, d25, #0x15
+7F6C0722 ushr d2, d25, #0x14
+7F6D0722 ushr d2, d25, #0x13
+7F6E0722 ushr d2, d25, #0x12
+7F6F0722 ushr d2, d25, #0x11
+7F700722 ushr d2, d25, #0x10
+7F710722 ushr d2, d25, #0xf
+7F720722 ushr d2, d25, #0xe
+7F740722 ushr d2, d25, #0xc
+7F750722 ushr d2, d25, #0xb
+7F760722 ushr d2, d25, #0xa
+7F770722 ushr d2, d25, #0x9
+7F790722 ushr d2, d25, #0x7
+7F7B0722 ushr d2, d25, #0x5
+7F7C0722 ushr d2, d25, #0x4
+7F7F0722 ushr d2, d25, #0x1

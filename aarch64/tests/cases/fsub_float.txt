@@ -1,0 +1,69 @@
+// FSUB_D_floatdp2 M=0|0|S=0|11110|ftype=01|1|Rm=xxxxx|001|op=1|10|Rn=xxxxx|Rd=xxxxx
+// FsubDFloatdp2: FSUB  <Dd>, <Dn>, <Dm>
+// register fields: Rm, Rn, Rd
+1E6B38E9 fsub d9, d7, d11
+1E6739C1 fsub d1, d14, d7
+1E7C3AC1 fsub d1, d22, d28
+1E7B381A fsub d26, d0, d27
+1E6A38CB fsub d11, d6, d10
+1E763B11 fsub d17, d24, d22
+1E6D3A81 fsub d1, d20, d13
+1E693BFB fsub d27, d31, d9
+1E623ADB fsub d27, d22, d2
+1E693AD2 fsub d18, d22, d9
+1E753A5B fsub d27, d18, d21
+1E673A94 fsub d20, d20, d7
+1E793960 fsub d0, d11, d25
+1E793AEA fsub d10, d23, d25
+1E7F3805 fsub d5, d0, d31
+1E6B3BC1 fsub d1, d30, d11
+1E6038FF fsub d31, d7, d0
+1E6B3969 fsub d9, d11, d11
+1E6B38EB fsub d11, d7, d11
+
+// FSUB_H_floatdp2 M=0|0|S=0|11110|ftype=11|1|Rm=xxxxx|001|op=1|10|Rn=xxxxx|Rd=xxxxx
+// FsubHFloatdp2: FSUB  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+1EE93AA3 fsub h3, h21, h9
+1EE23ACA fsub h10, h22, h2
+1EE43B89 fsub h9, h28, h4
+1EF13A1F fsub h31, h16, h17
+1EF73A13 fsub h19, h16, h23
+1EFE38EC fsub h12, h7, h30
+1EE13940 fsub h0, h10, h1
+1EE33B82 fsub h2, h28, h3
+1EE03B3E fsub h30, h25, h0
+1EE73A7C fsub h28, h19, h7
+1EE83B64 fsub h4, h27, h8
+1EF93BAE fsub h14, h29, h25
+1EF638E0 fsub h0, h7, h22
+1EE53B1C fsub h28, h24, h5
+1EE739F8 fsub h24, h15, h7
+1EF8395A fsub h26, h10, h24
+1EFF3803 fsub h3, h0, h31
+1EE93BE3 fsub h3, h31, h9
+1EE93923 fsub h3, h9, h9
+1EE93AA9 fsub h9, h21, h9
+1EE93AB5 fsub h21, h21, h9
+
+// FSUB_S_floatdp2 M=0|0|S=0|11110|ftype=00|1|Rm=xxxxx|001|op=1|10|Rn=xxxxx|Rd=xxxxx
+// FsubSFloatdp2: FSUB  <Sd>, <Sn>, <Sm>
+// register fields: Rm, Rn, Rd
+1E3C3952 fsub s18, s10, s28
+1E37398B fsub s11, s12, s23
+1E273B9C fsub s28, s28, s7
+1E3539B6 fsub s22, s13, s21
+1E27390F fsub s15, s8, s7
+1E3439BF fsub s31, s13, s20
+1E213A7B fsub s27, s19, s1
+1E3B3827 fsub s7, s1, s27
+1E3538A3 fsub s3, s5, s21
+1E3A3B9E fsub s30, s28, s26
+1E2D3B55 fsub s21, s26, s13
+1E3E3971 fsub s17, s11, s30
+1E243834 fsub s20, s1, s4
+1E2F3964 fsub s4, s11, s15
+1E3C384F fsub s15, s2, s28
+1E393BDF fsub s31, s30, s25
+1E203800 fsub s0, s0, s0
+1E3F3BF2 fsub s18, s31, s31

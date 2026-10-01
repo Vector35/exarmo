@@ -1,0 +1,20 @@
+// FLT_EX_exception 110|101|00|opc=001|imm16=xxxxxxxxxxxxxxxx|1|cond=xxxx
+// FltExException: FLT.<cond>  #<imm>
+D4200010 flt.eq #0x0
+D43FFFFF flt.nv #0xffff
+D4300018 flt.hi #0x8000
+D4280014 flt.mi #0x4000
+D4240012 flt.cs #0x2000
+D4220011 flt.ne #0x1000
+D4210010 flt.eq #0x800
+D4208010 flt.eq #0x400
+D4204010 flt.eq #0x200
+D4202010 flt.eq #0x100
+D4201010 flt.eq #0x80
+D4200810 flt.eq #0x40
+D4200410 flt.eq #0x20
+D4200210 flt.eq #0x10
+D4200110 flt.eq #0x8
+D4200090 flt.eq #0x4
+D4200050 flt.eq #0x2
+D4200030 flt.eq #0x1

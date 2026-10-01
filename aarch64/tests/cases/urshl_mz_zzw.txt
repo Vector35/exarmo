@@ -1,0 +1,21 @@
+// urshl_mz_zzw_2x2 1|10|0000|1|size=xx|1|Zm=xxxx|0101100|10|opc=001|Zdn=xxxx|U=1
+// UrshlMzZzw2x2: URSHL  { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zdn1>.<T>-<Zdn2>.<T> }, { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Zm, Zdn
+C120B227 urshl {z6.b-z7.b}, {z6.b-z7.b}, {z0.b-z1.b}
+C120B235 urshl {z20.b-z21.b}, {z20.b-z21.b}, {z0.b-z1.b}
+C122B223 urshl {z2.b-z3.b}, {z2.b-z3.b}, {z2.b-z3.b}
+C17EB221 urshl {z0.h-z1.h}, {z0.h-z1.h}, {z30.h-z31.h}
+C1A0B23F urshl {z30.s-z31.s}, {z30.s-z31.s}, {z0.s-z1.s}
+C1E0B227 urshl {z6.d-z7.d}, {z6.d-z7.d}, {z0.d-z1.d}
+
+// urshl_mz_zzw_4x4 1|10|0000|1|size=xx|1|Zm=xxx|00101110|10|opc=001|Zdn=xxx|0|U=1
+// UrshlMzZzw4x4: URSHL  { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zdn1>.<T>-<Zdn4>.<T> }, { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Zm, Zdn
+C120BA31 urshl {z16.b-z19.b}, {z16.b-z19.b}, {z0.b-z3.b}
+C124BA29 urshl {z8.b-z11.b}, {z8.b-z11.b}, {z4.b-z7.b}
+C128BA21 urshl {z0.b-z3.b}, {z0.b-z3.b}, {z8.b-z11.b}
+C16CBA25 urshl {z4.h-z7.h}, {z4.h-z7.h}, {z12.h-z15.h}
+C1B0BA2D urshl {z12.s-z15.s}, {z12.s-z15.s}, {z16.s-z19.s}
+C1F4BA35 urshl {z20.d-z23.d}, {z20.d-z23.d}, {z20.d-z23.d}
+C138BA39 urshl {z24.b-z27.b}, {z24.b-z27.b}, {z24.b-z27.b}
+C13CBA3D urshl {z28.b-z31.b}, {z28.b-z31.b}, {z28.b-z31.b}

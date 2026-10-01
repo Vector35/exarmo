@@ -1,0 +1,25 @@
+// uzp_mz_z_4 1|10|0000|1|size=xx|1|101|10|111000|Zn=xxx|00|Zd=xxx|op=1|0
+// UzpMzZ4: UZP  { <Zd1>.<T>-<Zd4>.<T> }, { <Zn1>.<T>-<Zn4>.<T> }
+// register fields: Zn, Zd
+C136E00E uzp {z12.b-z15.b}, {z0.b-z3.b}
+C136E09A uzp {z24.b-z27.b}, {z4.b-z7.b}
+C136E10A uzp {z8.b-z11.b}, {z8.b-z11.b}
+C176E182 uzp {z0.h-z3.h}, {z12.h-z15.h}
+C1B6E206 uzp {z4.s-z7.s}, {z16.s-z19.s}
+C136E292 uzp {z16.b-z19.b}, {z20.b-z23.b}
+C136E316 uzp {z20.b-z23.b}, {z24.b-z27.b}
+C136E39E uzp {z28.b-z31.b}, {z28.b-z31.b}
+C1F6E00E uzp {z12.d-z15.d}, {z0.d-z3.d}
+
+// uzp_mz_z_4q 1|10|0000|1|00|1|101|11|111000|Zn=xxx|00|Zd=xxx|op=1|0
+// UzpMzZ4q: UZP  { <Zd1>.Q-<Zd4>.Q }, { <Zn1>.Q-<Zn4>.Q }
+// register fields: Zn, Zd
+C137E002 uzp {z0.q-z3.q}, {z0.q-z3.q}
+C137E086 uzp {z4.q-z7.q}, {z4.q-z7.q}
+C137E10A uzp {z8.q-z11.q}, {z8.q-z11.q}
+C137E18E uzp {z12.q-z15.q}, {z12.q-z15.q}
+C137E212 uzp {z16.q-z19.q}, {z16.q-z19.q}
+C137E296 uzp {z20.q-z23.q}, {z20.q-z23.q}
+C137E31A uzp {z24.q-z27.q}, {z24.q-z27.q}
+C137E39E uzp {z28.q-z31.q}, {z28.q-z31.q}
+C137E08A uzp {z8.q-z11.q}, {z4.q-z7.q}

@@ -1,0 +1,17 @@
+// MRRC_T1 111|0|11|0|00|D=1|0|L=1|Rt2=xxxx|Rt=xxxx|1|11|cp15=x|opc1=xxxx|CRm=xxxx
+// MrrcT1: MRRC{<c>}{<q>}  <coproc>, {#}<opc1>, <Rt>, <Rt2>, <CRm>
+// register fields: Rt2, Rt
+// IT state read: condition
+ec5f5f4b mrrc p15, #4, r5, pc, c11 (unpredictable)
+ec587f08 mrrc p15, #0, r7, r8, c8
+ec516e60 mrrc p14, #6, r6, r1, c0
+ec5a8e7e mrrc p14, #7, r8, r10, c14
+ec5c7f8d mrrc p15, #8, r7, r12, c13
+ec5b2fde mrrc p15, #13, r2, r11, c14
+ec5c4fbd mrrc p15, #11, r4, r12, c13
+ec53ff6d mrrc p15, #6, pc, r3, c13 (unpredictable)
+EC500FFF mrrc p15, #0xf, r0, r0, c15 (unpredictable)
+EC5FFF24 mrrc p15, #0x2, pc, pc, c4 (unpredictable)
+EC5F5F12 mrrc p15, #0x1, r5, pc, c2 (unpredictable)
+EC5F5F41 mrrc p15, #0x4, r5, pc, c1 (unpredictable)
+EC5F5F4B [ne] mrrcne p15, #0x4, r5, pc, c11 (unpredictable)

@@ -1,0 +1,9 @@
+// movt_zt_z_ 1|10|0000|0010011|1|10|0|off2=xx|opc=0011111|Zt=xxxxx
+// MovtZtZ: MOVT  ZT0{[<offs>, MUL VL]}, <Zt>
+// register fields: Zt
+C04F03E2 movt zt0, z2
+C04F03E9 movt zt0, z9
+C04F03F0 movt zt0, z16
+C04F13E0 movt zt0[1, mul vl], z0
+C04F23FF movt zt0[2, mul vl], z31
+C04F33E2 movt zt0[3, mul vl], z2

@@ -1,0 +1,22 @@
+// frsqrts_z_zz_ 011|0010|1|size=xx|0|Zm=xxxxx|000|opc=111|Zn=xxxxx|Zd=xxxxx
+// FrsqrtsZZz: FRSQRTS  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+65961D9D frsqrts z29.s, z12.s, z22.s
+654A1D84 frsqrts z4.h, z12.h, z10.h
+65CA1C71 frsqrts z17.d, z3.d, z10.d
+65DA1F10 frsqrts z16.d, z24.d, z26.d
+65581F29 frsqrts z9.h, z25.h, z24.h
+65811E80 frsqrts z0.s, z20.s, z1.s
+65891F6D frsqrts z13.s, z27.s, z9.s
+65D31F8D frsqrts z13.d, z28.d, z19.d
+65C21F62 frsqrts z2.d, z27.d, z2.d
+65941CF0 frsqrts z16.s, z7.s, z20.s
+65D71F03 frsqrts z3.d, z24.d, z23.d
+65D61F9B frsqrts z27.d, z28.d, z22.d
+65CA1CF1 frsqrts z17.d, z7.d, z10.d
+654C1F2B frsqrts z11.h, z25.h, z12.h
+65C61F5A frsqrts z26.d, z26.d, z6.d
+659C1F60 frsqrts z0.s, z27.s, z28.s
+65801C1F frsqrts z31.s, z0.s, z0.s
+659F1FFD frsqrts z29.s, z31.s, z31.s
+65161D9D UNDEFINED

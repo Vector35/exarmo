@@ -1,0 +1,12 @@
+// STLEX_T1 111|0100|op0=0110|L=0|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=1|sz=10|Rd=xxxx
+// StlexT1: STLEX{<c>}{<q>}  <Rd>, <Rt>, [<Rn>]
+// register fields: Rn, Rt, Rd
+// IT state read: condition
+e8c6afed stlex sp, r10, [r6]
+e8c0cfe9 stlex r9, r12, [r0]
+E8CF00E0 stlex r0, r0, [pc] (unpredictable)
+E8C6F8EF stlex pc, pc, [r6] (unpredictable)
+E8C664ED stlex sp, r6, [r6] (unpredictable)
+E8C6A2E6 stlex r6, r10, [r6] (unpredictable)
+E8C6A1EA stlex r10, r10, [r6] (unpredictable)
+E8C6AFED [ne] stlexne sp, r10, [r6]

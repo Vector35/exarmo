@@ -1,0 +1,17 @@
+// ld1roh_z_p_bi_u16 101|0010|msz=01|ssz=01|0|imm4=xxxx|001|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld1rohZPBiU16: LD1ROH  { <Zt>.H }, <Pg>/Z, [<Xn|SP>{, #<imm>}]
+// register fields: Pg, Rn, Zt
+A4AE2746 ld1roh {z6.h}, p1/z, [x26, #-0x40]
+A4A935F9 ld1roh {z25.h}, p5/z, [x15, #-0xe0]
+A4AD2AD3 ld1roh {z19.h}, p2/z, [x22, #-0x60]
+A4AC3F85 ld1roh {z5.h}, p7/z, [x28, #-0x80]
+A4A22517 ld1roh {z23.h}, p1/z, [x8, #0x40]
+A4A63AFC ld1roh {z28.h}, p6/z, [x23, #0xc0]
+A4A02C80 ld1roh {z0.h}, p3/z, [x4]
+A4AB301E ld1roh {z30.h}, p4/z, [x0, #-0xa0]
+A4AF23FF ld1roh {z31.h}, p0/z, [sp, #-0x20]
+A4AE2426 ld1roh {z6.h}, p1/z, [x1, #-0x40]
+A4AE2741 ld1roh {z1.h}, p1/z, [x26, #-0x40]
+A4A82746 ld1roh {z6.h}, p1/z, [x26, #-0x100]
+A4A42746 ld1roh {z6.h}, p1/z, [x26, #0x80]
+A4A12746 ld1roh {z6.h}, p1/z, [x26, #0x20]

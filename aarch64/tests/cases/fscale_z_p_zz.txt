@@ -1,0 +1,23 @@
+// fscale_z_p_zz_ 011|0010|1|size=xx|0|0|opc=1001|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FscaleZPZz: FSCALE  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+6549917A fscale z26.h, p4/m, z26.h, z11.h
+65498DC9 fscale z9.h, p3/m, z9.h, z14.h
+658990A2 fscale z2.s, p4/m, z2.s, z5.s
+654996A5 fscale z5.h, p5/m, z5.h, z21.h
+65C98B0C fscale z12.d, p2/m, z12.d, z24.d
+658989F6 fscale z22.s, p2/m, z22.s, z15.s
+65899A60 fscale z0.s, p6/m, z0.s, z19.s
+65498172 fscale z18.h, p0/m, z18.h, z11.h
+658997AC fscale z12.s, p5/m, z12.s, z29.s
+65899227 fscale z7.s, p4/m, z7.s, z17.s
+65499B51 fscale z17.h, p6/m, z17.h, z26.h
+658995CD fscale z13.s, p5/m, z13.s, z14.s
+65899E4A fscale z10.s, p7/m, z10.s, z18.s
+65499EF3 fscale z19.h, p7/m, z19.h, z23.h
+65C99352 fscale z18.d, p4/m, z18.d, z26.d
+654999F5 fscale z21.h, p6/m, z21.h, z15.h
+6549841F fscale z31.h, p1/m, z31.h, z0.h
+654993FA fscale z26.h, p4/m, z26.h, z31.h
+6549909A fscale z26.h, p4/m, z26.h, z4.h
+6549916B fscale z11.h, p4/m, z11.h, z11.h

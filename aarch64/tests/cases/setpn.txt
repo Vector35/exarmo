@@ -1,0 +1,29 @@
+// SETEN_SET_memcms sz=xx|011|o0=0|01|op1=11|0|Rs=xxxxx|op2=1010|01|Rn=xxxxx|Rd=xxxxx
+// SetenSetMemcms: SETEN  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+19C0A400 seten [x0]!, x0!, x0
+19DFA7FF seten [xzr]!, xzr!, xzr
+59C0A400 UNDEFINED
+99C0A400 UNDEFINED
+D9C0A400 UNDEFINED
+19C1A443 seten [x3]!, x2!, x1
+
+// SETMN_SET_memcms sz=xx|011|o0=0|01|op1=11|0|Rs=xxxxx|op2=0110|01|Rn=xxxxx|Rd=xxxxx
+// SetmnSetMemcms: SETMN  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+19C06400 setmn [x0]!, x0!, x0
+19DF67FF setmn [xzr]!, xzr!, xzr
+59C06400 UNDEFINED
+99C06400 UNDEFINED
+D9C06400 UNDEFINED
+19C16443 setmn [x3]!, x2!, x1
+
+// SETPN_SET_memcms sz=xx|011|o0=0|01|op1=11|0|Rs=xxxxx|op2=0010|01|Rn=xxxxx|Rd=xxxxx
+// SetpnSetMemcms: SETPN  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+19C02400 setpn [x0]!, x0!, x0
+19DF27FF setpn [xzr]!, xzr!, xzr
+59C02400 UNDEFINED
+99C02400 UNDEFINED
+D9C02400 UNDEFINED
+19C12443 setpn [x3]!, x2!, x1

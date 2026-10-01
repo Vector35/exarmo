@@ -1,0 +1,46 @@
+// fcmla_z_zzzi_h 011|0010|0|size=10|1|i2=xx|Zm=xxx|0001|rot=xx|Zn=xxxxx|Zda=xxxxx
+// FcmlaZZzziH: FCMLA  <Zda>.H, <Zn>.H, <Zm>.H[<imm>], <const>
+// register fields: Zm, Zn, Zda
+64A81101 fcmla z1.h, z8.h, z0.h[1], #0x0
+64BA15CF fcmla z15.h, z14.h, z2.h[3], #0x5a
+64B11A60 fcmla z0.h, z19.h, z1.h[2], #0xb4
+64B014B5 fcmla z21.h, z5.h, z0.h[2], #0x5a
+64B217CD fcmla z13.h, z30.h, z2.h[2], #0x5a
+64AC16AD fcmla z13.h, z21.h, z4.h[1], #0x5a
+64A81157 fcmla z23.h, z10.h, z0.h[1], #0x0
+64B71734 fcmla z20.h, z25.h, z7.h[2], #0x5a
+64BD1497 fcmla z23.h, z4.h, z5.h[3], #0x5a
+64AC1C32 fcmla z18.h, z1.h, z4.h[1], #0x10e
+64A41A32 fcmla z18.h, z17.h, z4.h[0], #0xb4
+64A9147D fcmla z29.h, z3.h, z1.h[1], #0x5a
+64A41C50 fcmla z16.h, z2.h, z4.h[0], #0x10e
+64B11492 fcmla z18.h, z4.h, z1.h[2], #0x5a
+64BA1A7E fcmla z30.h, z19.h, z2.h[3], #0xb4
+64AC1198 fcmla z24.h, z12.h, z4.h[1], #0x0
+64AB101F fcmla z31.h, z0.h, z3.h[1], #0x0
+64AE13E1 fcmla z1.h, z31.h, z6.h[1], #0x0
+64A81001 fcmla z1.h, z0.h, z0.h[1], #0x0
+64A81100 fcmla z0.h, z8.h, z0.h[1], #0x0
+64A81108 fcmla z8.h, z8.h, z0.h[1], #0x0
+
+// fcmla_z_zzzi_s 011|0010|0|size=11|1|i1=x|Zm=xxxx|0001|rot=xx|Zn=xxxxx|Zda=xxxxx
+// FcmlaZZzziS: FCMLA  <Zda>.S, <Zn>.S, <Zm>.S[<imm>], <const>
+// register fields: Zm, Zn, Zda
+64F01EAE fcmla z14.s, z21.s, z0.s[1], #0x10e
+64F91816 fcmla z22.s, z0.s, z9.s[1], #0xb4
+64E41352 fcmla z18.s, z26.s, z4.s[0], #0x0
+64F51547 fcmla z7.s, z10.s, z5.s[1], #0x5a
+64F91189 fcmla z9.s, z12.s, z9.s[1], #0x0
+64EE1E95 fcmla z21.s, z20.s, z14.s[0], #0x10e
+64F714A0 fcmla z0.s, z5.s, z7.s[1], #0x5a
+64FF1B18 fcmla z24.s, z24.s, z15.s[1], #0xb4
+64EB17B4 fcmla z20.s, z29.s, z11.s[0], #0x5a
+64F31113 fcmla z19.s, z8.s, z3.s[1], #0x0
+64FF10F8 fcmla z24.s, z7.s, z15.s[1], #0x0
+64FE1720 fcmla z0.s, z25.s, z14.s[1], #0x5a
+64F11097 fcmla z23.s, z4.s, z1.s[1], #0x0
+64EE1C6E fcmla z14.s, z3.s, z14.s[0], #0x10e
+64FC1F3A fcmla z26.s, z25.s, z12.s[1], #0x10e
+64E01C5B fcmla z27.s, z2.s, z0.s[0], #0x10e
+64F01FFF fcmla z31.s, z31.s, z0.s[1], #0x10e
+64F01C0E fcmla z14.s, z0.s, z0.s[1], #0x10e

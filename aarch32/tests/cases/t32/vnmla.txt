@@ -1,0 +1,69 @@
+// VNMLA_T1_D 11101110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=1|M=x|0|Vm=xxxx
+// VnmlaT1D: VNMLA{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ee195b64 vnmla.f64 d5, d9, d20
+ee561b47 vnmla.f64 d17, d6, d7
+ee56fb4a vnmla.f64 d31, d6, d10
+ee518b40 vnmla.f64 d24, d1, d0
+ee544b47 vnmla.f64 d20, d4, d7
+ee1d9be5 vnmla.f64 d9, d29, d21
+ee5d2b47 vnmla.f64 d18, d13, d7
+ee1dfbec vnmla.f64 d15, d29, d28
+EE100B6F vnmla.f64 d0, d0, d31
+EE1F0B68 vnmla.f64 d0, d15, d24
+EE580B62 vnmla.f64 d16, d8, d18
+EE125B61 vnmla.f64 d5, d2, d17
+EE105B4F vnmla.f64 d5, d0, d15
+EE105BE0 vnmla.f64 d5, d16, d16
+EE1F5B6F vnmla.f64 d5, d15, d31
+EE1F5BE4 vnmla.f64 d5, d31, d20
+EE195B64 [ne] vnmlane.f64 d5, d9, d20
+
+// VNMLA_T1_H 11101110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=1|M=x|0|Vm=xxxx
+// VnmlaT1H: VNMLA{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee5949ce vnmla.f16 s9, s19, s28
+ee1969c3 vnmla.f16 s12, s19, s6
+ee1eb963 vnmla.f16 s22, s28, s7
+ee1c29e0 vnmla.f16 s4, s25, s1
+ee1b09c1 vnmla.f16 s0, s23, s2
+ee10e9c1 vnmla.f16 s28, s1, s2
+ee5f396e vnmla.f16 s7, s30, s29
+ee1b3962 vnmla.f16 s6, s22, s5
+EE58F9CF vnmla.f16 s31, s17, s30
+EE5489C8 vnmla.f16 s17, s9, s16
+EE5219C4 vnmla.f16 s3, s5, s8
+EE11F9C0 vnmla.f16 s30, s3, s0
+EE50094F vnmla.f16 s1, s0, s30
+EE5FF9EF vnmla.f16 s31, s31, s31
+EE5949CE [ne] vnmlane.f16 s9, s19, s28 (unpredictable)
+
+// VNMLA_T1_S 11101110|o0=0|D=x|o1=01|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=1|M=x|0|Vm=xxxx
+// VnmlaT1S: VNMLA{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee1e3ace vnmla.f32 s6, s29, s28
+ee53ea69 vnmla.f32 s29, s6, s19
+ee507ae4 vnmla.f32 s15, s1, s9
+ee13aae4 vnmla.f32 s20, s7, s9
+ee1c1ae1 vnmla.f32 s2, s25, s3
+ee120a6b vnmla.f32 s0, s4, s23
+ee50aa6c vnmla.f32 s21, s0, s25
+ee1f5a6c vnmla.f32 s10, s30, s25
+EE18FAC0 vnmla.f32 s30, s17, s0
+EE148ACF vnmla.f32 s16, s9, s30
+EE114AC8 vnmla.f32 s8, s3, s16
+EE1F2AC2 vnmla.f32 s4, s31, s4
+EE1EFAC0 vnmla.f32 s30, s29, s0
+EE5E0ACF vnmla.f32 s1, s29, s30
+EE5EFAE0 vnmla.f32 s31, s29, s1
+EE1E3AEF vnmla.f32 s6, s29, s31
+EE1E3ACE [ne] vnmlane.f32 s6, s29, s28

@@ -1,0 +1,68 @@
+// uqshrnb_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=1|U=1|R=0|T=0|Zn=xxxxx|Zd=xxxxx
+// UqshrnbZZi: UQSHRNB  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+452C32B2 uqshrnb z18.b, z21.h, #0x4
+456A3120 uqshrnb z0.s, z9.d, #0x16
+457733BA uqshrnb z26.s, z29.d, #0x9
+453A300A uqshrnb z10.h, z0.s, #0x6
+456D32EC uqshrnb z12.s, z23.d, #0x13
+457033D4 uqshrnb z20.s, z30.d, #0x10
+45333070 uqshrnb z16.h, z3.s, #0xd
+453630C9 uqshrnb z9.h, z6.s, #0xa
+456133FF uqshrnb z31.s, z31.d, #0x1f
+452032B2 UNDEFINED
+452132B2 UNDEFINED
+452232B2 UNDEFINED
+452332B2 UNDEFINED
+452432B2 UNDEFINED
+452532B2 UNDEFINED
+452632B2 UNDEFINED
+452732B2 UNDEFINED
+452832B2 uqshrnb z18.b, z21.h, #0x8
+452932B2 uqshrnb z18.b, z21.h, #0x7
+452A32B2 uqshrnb z18.b, z21.h, #0x6
+452B32B2 uqshrnb z18.b, z21.h, #0x5
+452D32B2 uqshrnb z18.b, z21.h, #0x3
+452E32B2 uqshrnb z18.b, z21.h, #0x2
+452F32B2 uqshrnb z18.b, z21.h, #0x1
+453032B2 uqshrnb z18.h, z21.s, #0x10
+453132B2 uqshrnb z18.h, z21.s, #0xf
+453232B2 uqshrnb z18.h, z21.s, #0xe
+453432B2 uqshrnb z18.h, z21.s, #0xc
+453532B2 uqshrnb z18.h, z21.s, #0xb
+453732B2 uqshrnb z18.h, z21.s, #0x9
+453832B2 uqshrnb z18.h, z21.s, #0x8
+453932B2 uqshrnb z18.h, z21.s, #0x7
+453B32B2 uqshrnb z18.h, z21.s, #0x5
+453C32B2 uqshrnb z18.h, z21.s, #0x4
+453D32B2 uqshrnb z18.h, z21.s, #0x3
+453E32B2 uqshrnb z18.h, z21.s, #0x2
+453F32B2 uqshrnb z18.h, z21.s, #0x1
+456032B2 uqshrnb z18.s, z21.d, #0x20
+456232B2 uqshrnb z18.s, z21.d, #0x1e
+456332B2 uqshrnb z18.s, z21.d, #0x1d
+456432B2 uqshrnb z18.s, z21.d, #0x1c
+456532B2 uqshrnb z18.s, z21.d, #0x1b
+456632B2 uqshrnb z18.s, z21.d, #0x1a
+456732B2 uqshrnb z18.s, z21.d, #0x19
+456832B2 uqshrnb z18.s, z21.d, #0x18
+456932B2 uqshrnb z18.s, z21.d, #0x17
+456B32B2 uqshrnb z18.s, z21.d, #0x15
+456C32B2 uqshrnb z18.s, z21.d, #0x14
+456E32B2 uqshrnb z18.s, z21.d, #0x12
+456F32B2 uqshrnb z18.s, z21.d, #0x11
+457132B2 uqshrnb z18.s, z21.d, #0xf
+457232B2 uqshrnb z18.s, z21.d, #0xe
+457332B2 uqshrnb z18.s, z21.d, #0xd
+457432B2 uqshrnb z18.s, z21.d, #0xc
+457532B2 uqshrnb z18.s, z21.d, #0xb
+457632B2 uqshrnb z18.s, z21.d, #0xa
+457832B2 uqshrnb z18.s, z21.d, #0x8
+457932B2 uqshrnb z18.s, z21.d, #0x7
+457A32B2 uqshrnb z18.s, z21.d, #0x6
+457B32B2 uqshrnb z18.s, z21.d, #0x5
+457C32B2 uqshrnb z18.s, z21.d, #0x4
+457D32B2 uqshrnb z18.s, z21.d, #0x3
+457E32B2 uqshrnb z18.s, z21.d, #0x2
+457F32B2 uqshrnb z18.s, z21.d, #0x1

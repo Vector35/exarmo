@@ -1,0 +1,237 @@
+// VLD1_m_T1_nowb 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0111|size=xx|align=xx|Rm=1111
+// Vld1MT1Nowb: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f96e670f vld1.8 {d22}, [lr]
+f96917cf vld1.64 {d17}, [r9]
+f966d75f vld1.16 {d29}, [r6:64]
+f966274f vld1.16 {d18}, [r6]
+f929a75f vld1.16 {d10}, [r9:64]
+f968379f vld1.32 {d19}, [r8:64]
+f96f470f vld1.8 {d20}, [pc] (unpredictable)
+f92937df vld1.64 {d3}, [r9:64]
+F960070F vld1.8 {d16}, [r0]
+F96EF70F vld1.8 {d31}, [lr]
+F96E870F vld1.8 {d24}, [lr]
+F96E672F UNDEFINED
+F96E673F UNDEFINED
+F96E670F [ne] vld1ne.8 {d22}, [lr]
+
+// VLD1_m_T1_posti 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0111|size=xx|align=xx|Rm=1101
+// Vld1MT1Posti: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f923474d vld1.16 {d4}, [r3]!
+f92fb70d vld1.8 {d11}, [pc]! (unpredictable)
+f96b575d vld1.16 {d21}, [r11:64]!
+f96bb79d vld1.32 {d27}, [r11:64]!
+f96a07cd vld1.64 {d16}, [r10]!
+f96c571d vld1.8 {d21}, [r12:64]!
+f928770d vld1.8 {d7}, [r8]!
+f92ce79d vld1.32 {d14}, [r12:64]!
+F920F74D vld1.16 {d15}, [r0]!
+F923874D vld1.16 {d8}, [r3]!
+F923274D vld1.16 {d2}, [r3]!
+F923174D vld1.16 {d1}, [r3]!
+F923476D UNDEFINED
+F923477D UNDEFINED
+F923474D [ne] vld1ne.16 {d4}, [r3]!
+
+// VLD1_m_T1_postr 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0111|size=xx|align=xx|Rm=xxxx
+// Vld1MT1Postr: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f92427da vld1.64 {d2}, [r4:64], r10
+f96987c6 vld1.64 {d24}, [r9], r6
+f96b4719 vld1.8 {d20}, [r11:64], r9
+f962d7d5 vld1.64 {d29}, [r2:64], r5
+f96ad741 vld1.16 {d29}, [r10], r1
+f923d700 vld1.8 {d13}, [r3], r0
+f9657797 vld1.32 {d23}, [r5:64], r7
+f921d74e vld1.16 {d13}, [r1], lr
+F92007DA vld1.64 {d0}, [r0:64], r10
+F92FF7DA vld1.64 {d15}, [pc:64], r10 (unpredictable)
+F92417D4 vld1.64 {d1}, [r4:64], r4
+F92427EF UNDEFINED
+F92427FA UNDEFINED
+F92427DA [ne] vld1ne.64 {d2}, [r4:64], r10
+
+// VLD1_m_T2_nowb 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=1010|size=xx|align=xx|Rm=1111
+// Vld1MT2Nowb: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f9273a8f vld1.32 {d3, d4}, [r7]
+f92dba6f vld1.16 {d11, d12}, [sp:128]
+f927ea2f vld1.8 {d14, d15}, [r7:128]
+f96dea9f vld1.32 {d30, d31}, [sp:64]
+f920aa8f vld1.32 {d10, d11}, [r0]
+f9622acf vld1.64 {d18, d19}, [r2]
+f9262a1f vld1.8 {d2, d3}, [r6:64]
+f92f5a2f vld1.8 {d5, d6}, [pc:128] (unpredictable)
+F9270A8F vld1.32 {d0, d1}, [r7]
+F927FA8F vld1.32 {d15, d16}, [r7]
+F9278A8F vld1.32 {d8, d9}, [r7]
+F9274A8F vld1.32 {d4, d5}, [r7]
+F9271A8F vld1.32 {d1, d2}, [r7]
+F9273ABF UNDEFINED
+F9273A8F [ne] vld1ne.32 {d3, d4}, [r7]
+
+// VLD1_m_T2_posti 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=1010|size=xx|align=xx|Rm=1101
+// Vld1MT2Posti: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f9204aed vld1.64 {d4, d5}, [r0:128]!
+f9658a5d vld1.16 {d24, d25}, [r5:64]!
+f96e9add vld1.64 {d25, d26}, [lr:64]!
+f9689a1d vld1.8 {d25, d26}, [r8:64]!
+f961baed vld1.64 {d27, d28}, [r1:128]!
+f965da8d vld1.32 {d29, d30}, [r5]!
+f9685add vld1.64 {d21, d22}, [r8:64]!
+f968ba8d vld1.32 {d27, d28}, [r8]!
+F92F0AED vld1.64 {d0, d1}, [pc:128]! (unpredictable)
+F920FAED vld1.64 {d15, d16}, [r0:128]!
+F9202AED vld1.64 {d2, d3}, [r0:128]!
+F9201AED vld1.64 {d1, d2}, [r0:128]!
+F9204AFD UNDEFINED
+F9204AED [ne] vld1ne.64 {d4, d5}, [r0:128]!
+
+// VLD1_m_T2_postr 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=1010|size=xx|align=xx|Rm=xxxx
+// Vld1MT2Postr: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f92ada65 vld1.16 {d13, d14}, [r10:128], r5
+f92caaac vld1.32 {d10, d11}, [r12:128], r12
+f96fdac0 vld1.64 {d29, d30}, [pc], r0 (unpredictable)
+f96f4aae vld1.32 {d20, d21}, [pc:128], lr (unpredictable)
+f9611a92 vld1.32 {d17, d18}, [r1:64], r2
+f96c4a6e vld1.16 {d20, d21}, [r12:128], lr
+f968ead7 vld1.64 {d30, d31}, [r8:64], r7
+F9200A25 vld1.8 {d0, d1}, [r0:128], r5
+F92AFA65 vld1.16 {d15, d16}, [r10:128], r5
+F92A8A65 vld1.16 {d8, d9}, [r10:128], r5
+F92A2A65 vld1.16 {d2, d3}, [r10:128], r5
+F92ADA7F UNDEFINED
+F92ADA65 [ne] vld1ne.16 {d13, d14}, [r10:128], r5
+
+// VLD1_m_T3_nowb 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0110|size=xx|align=xx|Rm=1111
+// Vld1MT3Nowb: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f96c660f vld1.8 {d22, d23, d24}, [r12]
+f96be65f UNPREDICTABLE
+f92896df vld1.64 {d9, d10, d11}, [r8:64]
+f961668f vld1.32 {d22, d23, d24}, [r1]
+f960768f vld1.32 {d23, d24, d25}, [r0]
+f929361f vld1.8 {d3, d4, d5}, [r9:64]
+f964d64f vld1.16 {d29, d30, d31}, [r4]
+f926364f vld1.16 {d3, d4, d5}, [r6]
+F96F060F vld1.8 {d16, d17, d18}, [pc] (unpredictable)
+F96CF60F UNPREDICTABLE
+F96C860F vld1.8 {d24, d25, d26}, [r12]
+F96C460F vld1.8 {d20, d21, d22}, [r12]
+F96C260F vld1.8 {d18, d19, d20}, [r12]
+F96C160F vld1.8 {d17, d18, d19}, [r12]
+F96C662F UNDEFINED
+F96C663F UNDEFINED
+F96C660F [ne] vld1ne.8 {d22, d23, d24}, [r12]
+F928F6DF vld1.64 {d15, d16, d17}, [r8:64]
+
+// VLD1_m_T3_posti 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0110|size=xx|align=xx|Rm=1101
+// Vld1MT3Posti: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f928561d vld1.8 {d5, d6, d7}, [r8:64]!
+f96ce69d UNPREDICTABLE
+f927c60d vld1.8 {d12, d13, d14}, [r7]!
+f96076cd vld1.64 {d23, d24, d25}, [r0]!
+f96d86cd vld1.64 {d24, d25, d26}, [sp]!
+f96bd61d vld1.8 {d29, d30, d31}, [r11:64]!
+f92c06cd vld1.64 {d0, d1, d2}, [r12]!
+f965e64d UNPREDICTABLE
+F92FF61D vld1.8 {d15, d16, d17}, [pc:64]! (unpredictable)
+F928461D vld1.8 {d4, d5, d6}, [r8:64]!
+F928261D vld1.8 {d2, d3, d4}, [r8:64]!
+F928161D vld1.8 {d1, d2, d3}, [r8:64]!
+F928562D UNDEFINED
+F928563D UNDEFINED
+F928561D [ne] vld1ne.8 {d5, d6, d7}, [r8:64]!
+F928565D vld1.16 {d5, d6, d7}, [r8:64]!
+F928569D vld1.32 {d5, d6, d7}, [r8:64]!
+
+// VLD1_m_T3_postr 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0110|size=xx|align=xx|Rm=xxxx
+// Vld1MT3Postr: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f962a6d8 vld1.64 {d26, d27, d28}, [r2:64], r8
+f92a5659 vld1.16 {d5, d6, d7}, [r10:64], r9
+f963e603 UNPREDICTABLE
+f962c61a vld1.8 {d28, d29, d30}, [r2:64], r10
+f962a695 vld1.32 {d26, d27, d28}, [r2:64], r5
+f96c2687 vld1.32 {d18, d19, d20}, [r12], r7
+f92fc608 vld1.8 {d12, d13, d14}, [pc], r8 (unpredictable)
+f9672653 vld1.16 {d18, d19, d20}, [r7:64], r3
+F96006D0 vld1.64 {d16, d17, d18}, [r0:64], r0
+F962F6D8 UNPREDICTABLE
+F96286D8 vld1.64 {d24, d25, d26}, [r2:64], r8
+F96246D8 vld1.64 {d20, d21, d22}, [r2:64], r8
+F96216D8 vld1.64 {d17, d18, d19}, [r2:64], r8
+F962A6EF UNDEFINED
+F962A6F8 UNDEFINED
+F962A6D8 [ne] vld1ne.64 {d26, d27, d28}, [r2:64], r8
+F92AF659 vld1.16 {d15, d16, d17}, [r10:64], r9
+
+// VLD1_m_T4_nowb 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0010|size=xx|align=xx|Rm=1111
+// Vld1MT4Nowb: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f925122f vld1.8 {d1, d2, d3, d4}, [r5:128]
+f924c29f vld1.32 {d12, d13, d14, d15}, [r4:64]
+f96732ff vld1.64 {d19, d20, d21, d22}, [r7:256]
+f92c729f vld1.32 {d7, d8, d9, d10}, [r12:64]
+f960029f vld1.32 {d16, d17, d18, d19}, [r0:64]
+f96ff25f UNPREDICTABLE
+f96302ef vld1.64 {d16, d17, d18, d19}, [r3:128]
+f928822f vld1.8 {d8, d9, d10, d11}, [r8:128]
+F925420F vld1.8 {d4, d5, d6, d7}, [r5]
+F925222F vld1.8 {d2, d3, d4, d5}, [r5:128]
+F925122F [ne] vld1ne.8 {d1, d2, d3, d4}, [r5:128]
+F92FF26F vld1.16 {d15, d16, d17, d18}, [pc:128] (unpredictable)
+
+// VLD1_m_T4_posti 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0010|size=xx|align=xx|Rm=1101
+// Vld1MT4Posti: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f96ef27d UNPREDICTABLE
+f921c2ad vld1.32 {d12, d13, d14, d15}, [r1:128]!
+f920a22d vld1.8 {d10, d11, d12, d13}, [r0:128]!
+f920320d vld1.8 {d3, d4, d5, d6}, [r0]!
+f96142fd vld1.64 {d20, d21, d22, d23}, [r1:256]!
+f92eb27d vld1.16 {d11, d12, d13, d14}, [lr:256]!
+f96c423d vld1.8 {d20, d21, d22, d23}, [r12:256]!
+f969925d vld1.16 {d25, d26, d27, d28}, [r9:64]!
+F96F027D vld1.16 {d16, d17, d18, d19}, [pc:256]! (unpredictable)
+F96E827D vld1.16 {d24, d25, d26, d27}, [lr:256]!
+F96E227D vld1.16 {d18, d19, d20, d21}, [lr:256]!
+F96E127D vld1.16 {d17, d18, d19, d20}, [lr:256]!
+F96EF27D [ne] UNPREDICTABLE
+F921C2AD [ne] vld1ne.32 {d12, d13, d14, d15}, [r1:128]!
+F921F2AD vld1.32 {d15, d16, d17, d18}, [r1:128]!
+
+// VLD1_m_T4_postr 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=0010|size=xx|align=xx|Rm=xxxx
+// Vld1MT4Postr: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f96c5205 vld1.8 {d21, d22, d23, d24}, [r12], r5
+f927523c vld1.8 {d5, d6, d7, d8}, [r7:256], r12
+f92422c0 vld1.64 {d2, d3, d4, d5}, [r4], r0
+f96f1263 vld1.16 {d17, d18, d19, d20}, [pc:128], r3 (unpredictable)
+f96d327e vld1.16 {d19, d20, d21, d22}, [sp:256], lr
+f96d3296 vld1.32 {d19, d20, d21, d22}, [sp:64], r6
+f921b205 vld1.8 {d11, d12, d13, d14}, [r1], r5
+f920c2cc vld1.64 {d12, d13, d14, d15}, [r0], r12
+F96C020C vld1.8 {d16, d17, d18, d19}, [r12], r12
+F96CF205 UNPREDICTABLE
+F96C8205 vld1.8 {d24, d25, d26, d27}, [r12], r5
+F96C4205 vld1.8 {d20, d21, d22, d23}, [r12], r5
+F96C5205 [ne] vld1ne.8 {d21, d22, d23, d24}, [r12], r5
+F927F23C vld1.8 {d15, d16, d17, d18}, [r7:256], r12

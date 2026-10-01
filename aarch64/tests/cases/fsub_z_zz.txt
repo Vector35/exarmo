@@ -1,0 +1,21 @@
+// fsub_z_zz_ 011|0010|1|size=xx|0|Zm=xxxxx|000|opc=001|Zn=xxxxx|Zd=xxxxx
+// FsubZZz: FSUB  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+65DC07EC fsub z12.d, z31.d, z28.d
+65420700 fsub z0.h, z24.h, z2.h
+654407FF fsub z31.h, z31.h, z4.h
+659D06C3 fsub z3.s, z22.s, z29.s
+65570577 fsub z23.h, z11.h, z23.h
+65D405B0 fsub z16.d, z13.d, z20.d
+6551079B fsub z27.h, z28.h, z17.h
+6554048A fsub z10.h, z4.h, z20.h
+65D1043B fsub z27.d, z1.d, z17.d
+658504F5 fsub z21.s, z7.s, z5.s
+655A0593 fsub z19.h, z12.h, z26.h
+658B071A fsub z26.s, z24.s, z11.s
+65CB07B9 fsub z25.d, z29.d, z11.d
+658B0789 fsub z9.s, z28.s, z11.s
+65520716 fsub z22.h, z24.h, z18.h
+6540044F fsub z15.h, z2.h, z0.h
+65DF040C fsub z12.d, z0.d, z31.d
+65DC078C fsub z12.d, z28.d, z28.d

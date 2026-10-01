@@ -1,0 +1,49 @@
+// VMAX_i_T1_D 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0110|N=x|Q=0|M=x|op=0|Vm=xxxx
+// VmaxIT1D: VMAX{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef6d060d vmax.s32 d16, d13, d13
+ef07960b vmax.s8 d9, d7, d11
+ef2f3600 vmax.s32 d3, d15, d0
+ef543609 vmax.s16 d19, d4, d9
+ff00d624 vmax.u8 d13, d0, d20
+ff0d560d vmax.u8 d5, d13, d13
+ef2d7683 vmax.s32 d7, d29, d3
+ef46c6ab vmax.s8 d28, d22, d27
+EF7D060D UNDEFINED
+FF58F60F vmax.u16 d31, d8, d15
+FF628608 vmax.u32 d24, d2, d8
+EF614602 vmax.s32 d20, d1, d2
+EF602681 vmax.s32 d18, d16, d1
+EF6F168F vmax.s32 d17, d31, d15
+FF7D060D UNDEFINED
+EF2D0620 vmax.s32 d0, d13, d16
+EF2DF62F vmax.s32 d15, d13, d31
+EF6DF60D vmax.s32 d31, d13, d13
+EF6D060D [ne] vmaxne.s32 d16, d13, d13
+
+// VMAX_i_T1_Q 111|U=x|11110|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0110|N=x|Q=1|M=x|op=0|Vm=xxxx
+// VmaxIT1Q: VMAX{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef0626e8 vmax.s8 q1, q11, q12
+ff0c4668 vmax.u8 q2, q6, q12
+ff2e46ec vmax.u32 q2, q15, q14
+ef4e0640 vmax.s8 q8, q7, q0
+ff10a6e4 vmax.u16 q5, q8, q10
+ff2406cc vmax.u32 q0, q10, q6
+ef6a46c2 vmax.s32 q10, q13, q1
+ef08c6c0 vmax.s8 q6, q12, q0
+EF3FF6EF UNDEFINED
+EF1286E0 vmax.s16 q4, q9, q8
+EF3116E1 UNDEFINED
+FF3FF64F UNDEFINED
+EF4FF6EF UNDEFINED
+EF002668 vmax.s8 q1, q0, q12
+EF0626E8 [ne] vmaxne.s8 q1, q11, q12

@@ -1,0 +1,22 @@
+// sdot_z_zzz_ 010|0010|0|size=1x|0|Zm=xxxxx|0|0000|U=0|Zn=xxxxx|Zda=xxxxx
+// SdotZZzz: SDOT  <Zda>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zda
+44CB0330 sdot z16.d, z25.h, z11.h
+44D5014D sdot z13.d, z10.h, z21.h
+4492003B sdot z27.s, z1.b, z18.b
+44C70381 sdot z1.d, z28.h, z7.h
+44820358 sdot z24.s, z26.b, z2.b
+449C03F4 sdot z20.s, z31.b, z28.b
+44830178 sdot z24.s, z11.b, z3.b
+44CA0281 sdot z1.d, z20.h, z10.h
+44C10210 sdot z16.d, z16.h, z1.h
+448800BB sdot z27.s, z5.b, z8.b
+44920008 sdot z8.s, z0.b, z18.b
+44920397 sdot z23.s, z28.b, z18.b
+44870290 sdot z16.s, z20.b, z7.b
+449103D4 sdot z20.s, z30.b, z17.b
+448A01DE sdot z30.s, z14.b, z10.b
+449100EB sdot z11.s, z7.b, z17.b
+44C00320 sdot z0.d, z25.h, z0.h
+44DF033F sdot z31.d, z25.h, z31.h
+44CB0170 sdot z16.d, z11.h, z11.h

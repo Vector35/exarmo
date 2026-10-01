@@ -1,0 +1,34 @@
+// VREV32_A1_D 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|000|op=01|Q=0|M=x|0|Vm=xxxx
+// Vrev32A1D: VREV32{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b0a085 vrev32.8 d10, d5
+f3b49088 vrev32.16 d9, d8
+f3f490a7 vrev32.16 d25, d23
+f3f400ad vrev32.16 d16, d29
+f3b0d084 vrev32.8 d13, d4
+f3b4508d vrev32.16 d5, d13
+F3B8A085 UNDEFINED
+F3BCA085 UNDEFINED
+F3B0F080 vrev32.8 d15, d0
+F3B0808F vrev32.8 d8, d15
+F3B04082 vrev32.8 d4, d2
+F3B02081 vrev32.8 d2, d1
+F3B01080 vrev32.8 d1, d0
+F3B0008F vrev32.8 d0, d15
+F3B0F0A0 vrev32.8 d15, d16
+F3F0F0AF vrev32.8 d31, d31
+
+// VREV32_A1_Q 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|000|op=01|Q=1|M=x|0|Vm=xxxx
+// Vrev32A1Q: VREV32{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+F3B000C0 vrev32.8 q0, q0
+F3F480E8 vrev32.16 q12, q12
+F3B8F0CF UNDEFINED
+F3BC10C1 UNDEFINED
+F3B040C4 vrev32.8 q2, q2
+F3B020C2 vrev32.8 q1, q1
+F3B0F0CF UNDEFINED
+F3F000E0 vrev32.8 q8, q8
+F3F0F0EF UNDEFINED

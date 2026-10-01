@@ -1,0 +1,10 @@
+// NOP_A1 cond=xxxx|00|1|10|R=0|10|imm4=0000|(1)(1)(1)(1)|imm12=(0)(0)(0)(0)00000000
+// NopA1: NOP{<c>}{<q>}
+// Binary Ninja's tests
+c320f000 nopgt
+e320f000 nop
+03200F00 nopeq (unpredictable)
+83208800 nophi (unpredictable)
+43204400 nopmi (unpredictable)
+23202200 nopcs (unpredictable)
+13201100 nopne (unpredictable)

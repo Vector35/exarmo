@@ -1,0 +1,13 @@
+// REV16_A1 cond=xxxx|011|01|o1=0|11(1)(1)(1)(1)|Rd=xxxx|(1)(1)(1)(1)|o2=1|01|1|Rm=xxxx
+// Rev16A1: REV16{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rd, Rm
+36bfbfbd rev16lo r11, sp
+// Binary Ninja's tests
+16bfcfb4 rev16ne r12, r4
+e6bf8fb3 rev16 r8, r3
+06B000B0 rev16eq r0, r0 (unpredictable)
+F6BFBFBD UNALLOCATED
+86B8F8BF rev16hi pc, pc (unpredictable)
+46B4B4BB rev16mi r11, r11 (unpredictable)
+26B2B2BD rev16cs r11, sp (unpredictable)
+36B1B1BD rev16cc r11, sp (unpredictable)

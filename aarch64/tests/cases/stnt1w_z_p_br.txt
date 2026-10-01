@@ -1,0 +1,23 @@
+// stnt1w_z_p_br_contiguous 111|0010|msz=10|00|Rm=xxxxx|011|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Stnt1wZPBrContiguous: STNT1W  { <Zt>.S }, <Pg>, [<Xn|SP>, <Xm>, LSL #2]
+// register fields: Rm, Pg, Rn, Zt
+E51E69B7 stnt1w {z23.s}, p2, [x13, lr, lsl #0x2]
+E504647A stnt1w {z26.s}, p1, [x3, x4, lsl #0x2]
+E50A6107 stnt1w {z7.s}, p0, [x8, x10, lsl #0x2]
+E50A6532 stnt1w {z18.s}, p1, [x9, x10, lsl #0x2]
+E50D619A stnt1w {z26.s}, p0, [x12, x13, lsl #0x2]
+E50861CE stnt1w {z14.s}, p0, [x14, x8, lsl #0x2]
+E5077CA3 stnt1w {z3.s}, p7, [x5, x7, lsl #0x2]
+E5116CCA stnt1w {z10.s}, p3, [x6, x17, lsl #0x2]
+E51765CC stnt1w {z12.s}, p1, [x14, x23, lsl #0x2]
+E5167E11 stnt1w {z17.s}, p7, [x16, x22, lsl #0x2]
+E5036C36 stnt1w {z22.s}, p3, [x1, x3, lsl #0x2]
+E50D7A58 stnt1w {z24.s}, p6, [x18, x13, lsl #0x2]
+E502716C stnt1w {z12.s}, p4, [x11, x2, lsl #0x2]
+E50A7EE2 stnt1w {z2.s}, p7, [x23, x10, lsl #0x2]
+E5187082 stnt1w {z2.s}, p4, [x4, x24, lsl #0x2]
+E51A623B stnt1w {z27.s}, p0, [x17, x26, lsl #0x2]
+E5007400 stnt1w {z0.s}, p5, [x0, x0, lsl #0x2]
+E51E6BFF stnt1w {z31.s}, p2, [sp, lr, lsl #0x2]
+E51F69B7 UNALLOCATED
+E51E69A2 stnt1w {z2.s}, p2, [x13, lr, lsl #0x2]

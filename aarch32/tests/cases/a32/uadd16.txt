@@ -1,0 +1,18 @@
+// UADD16_A1 cond=xxxx|011|00|op1=101|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=00|1|Rm=xxxx
+// Uadd16A1: UADD16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+d65d1c12 uadd16le r1, sp, r2 (unpredictable)
+0656ad1e uadd16eq r10, r6, lr (unpredictable)
+e65e6c1e uadd16 r6, lr, lr (unpredictable)
+86535118 uadd16hi r5, r3, r8 (unpredictable)
+06533816 uadd16eq r3, r3, r6 (unpredictable)
+265bec14 uadd16hs lr, r11, r4 (unpredictable)
+2659071d uadd16hs r0, r9, sp (unpredictable)
+c6538413 uadd16gt r8, r3, r3 (unpredictable)
+// Binary Ninja's tests
+c6521f13 uadd16gt r1, r2, r3
+e6521f13 uadd16 r1, r2, r3
+F65D1C12 UNALLOCATED
+4650F010 uadd16mi pc, r0, r0 (unpredictable)
+165F121F uadd16ne r1, pc, pc (unpredictable)
+D65D1C11 uadd16le r1, sp, r1 (unpredictable)

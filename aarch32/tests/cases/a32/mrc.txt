@@ -1,0 +1,20 @@
+// MRC_A1 cond=xxxx|11|10|opc1=xxx|L=1|CRn=xxxx|Rt=xxxx|1|11|cp15=x|opc2=xxx|1|CRm=xxxx
+// MrcA1: MRC{<c>}{<q>}  <coproc>, {#}<opc1>, <Rt>, <CRn>, <CRm>{, {#}<opc2>}
+// register fields: Rt
+ee12efff mrc p15, #0, lr, c2, c15, #7
+be12af96 mrclt p15, #0, r10, c2, c6, #4
+2ede5f9e mrchs p15, #6, r5, c14, c14, #4
+eed32e59 mrc p14, #6, r2, c3, c9, #2
+0e51ef16 mrceq p15, #2, lr, c1, c6, #0
+2ed9ef99 mrchs p15, #6, lr, c9, c9, #4
+6e921e95 mrcvs p14, #4, r1, c2, c5, #4
+cef1bf5c mrcgt p15, #7, r11, c1, c12, #2
+// Binary Ninja's tests
+0effffd6 mrceq p15, #7, apsr_nzcv, c15, c6, #6
+ee111e92 mrc p14, #0, r1, c1, c2, #4
+eeffffd6 mrc p15, #7, apsr_nzcv, c15, c6, #6
+FE12EFFF UNALLOCATED
+8E300F30 mrchi p15, #0x1, r0, c0, c0, #0x1
+4E78EF78 mrcmi p15, #0x3, lr, c8, c8, #0x3
+1EB4EFB4 mrcne p15, #0x5, lr, c4, c4, #0x5
+EE12EFF1 mrc p15, #0x0, lr, c2, c1, #0x7

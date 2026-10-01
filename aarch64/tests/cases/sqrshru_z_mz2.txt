@@ -1,0 +1,13 @@
+// sqrshru_z_mz2_ 1|10|0000|1|11|1|op=1|imm4=xxxx|110|101|Zn=xxxx|U=0|Zd=xxxxx
+// SqrshruZMz2: SQRSHRU  <Zd>.H, { <Zn1>.S-<Zn2>.S }, #<const>
+// register fields: Zn, Zd
+C1F0D405 sqrshru z5.h, {z0.s-z1.s}, #0x10
+C1F0D40C sqrshru z12.h, {z0.s-z1.s}, #0x10
+C1F0D413 sqrshru z19.h, {z0.s-z1.s}, #0x10
+C1FFD7C0 sqrshru z0.h, {z30.s-z31.s}, #0x1
+C1F0D41F sqrshru z31.h, {z0.s-z1.s}, #0x10
+C1F0D400 sqrshru z0.h, {z0.s-z1.s}, #0x10
+C1F8D405 sqrshru z5.h, {z0.s-z1.s}, #0x8
+C1F4D405 sqrshru z5.h, {z0.s-z1.s}, #0xc
+C1F2D405 sqrshru z5.h, {z0.s-z1.s}, #0xe
+C1F1D405 sqrshru z5.h, {z0.s-z1.s}, #0xf

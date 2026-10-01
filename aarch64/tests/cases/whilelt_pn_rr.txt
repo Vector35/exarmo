@@ -1,0 +1,12 @@
+// whilelt_pn_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|vl=x|0|U=0|lt=1|Rn=xxxxx|1|eq=0|PNd=xxx
+// WhileltPnRr: WHILELT  <PNd>.<T>, <Xn>, <Xm>, <vl>
+// register fields: Rm, Rn, PNd
+// WHILELT (predicate as counter) - PN8-PN15
+25e24431 whilelt pn9.d, x1, x2, vlx2
+25206410 whilelt pn8.b, x0, x0, vlx4
+257F47F2 whilelt pn10.h, xzr, xzr, vlx2
+25A24433 whilelt pn11.s, x1, x2, vlx2
+25E24434 whilelt pn12.d, x1, x2, vlx2
+25E24435 whilelt pn13.d, x1, x2, vlx2
+25E24436 whilelt pn14.d, x1, x2, vlx2
+25E24437 whilelt pn15.d, x1, x2, vlx2

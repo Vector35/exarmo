@@ -1,0 +1,29 @@
+// lasta_v_p_z_ 000|0010|1|size=xx|1|0|001|B=0|10|0|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// LastaVPZ: LASTA  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+05E29C08 lasta d8, p7, z0.d
+0522922B lasta b11, p4, z17.b
+05A28625 lasta s5, p1, z17.s
+05628F7A lasta h26, p3, z27.h
+05E287B8 lasta d24, p1, z29.d
+05E29C53 lasta d19, p7, z2.d
+05628896 lasta h22, p2, z4.h
+05628935 lasta h21, p2, z9.h
+05629035 lasta h21, p4, z1.h
+05E287F7 lasta d23, p1, z31.d
+05229116 lasta b22, p4, z8.b
+052280F9 lasta b25, p0, z7.b
+056283E8 lasta h8, p0, z31.h
+05E297CD lasta d13, p5, z30.d
+05A293AD lasta s13, p4, z29.s
+05A28202 lasta s2, p0, z16.s
+05E29800 lasta d0, p6, z0.d
+05E29C1F lasta d31, p7, z0.d
+05229CE0 lasta b0, p7, z7.b
+05229C1F lasta b31, p7, z0.b
+05629C00 lasta h0, p7, z0.h
+05629C1F lasta h31, p7, z0.h
+05A29C00 lasta s0, p7, z0.s
+05A29C1F lasta s31, p7, z0.s
+05E29C07 lasta d7, p7, z0.d

@@ -1,0 +1,20 @@
+// RBIT_asimdmisc_R 0|Q=x|U=1|0|111|0|size=01|10000|opcode=00101|10|Rn=xxxxx|Rd=xxxxx
+// RbitAsimdmiscR: RBIT  <Vd>.<T>, <Vn>.<T>
+// register fields: Rn, Rd
+6E605938 rbit v24.16b, v9.16b
+2E605AB4 rbit v20.8b, v21.8b
+2E605AAC rbit v12.8b, v21.8b
+2E60593F rbit v31.8b, v9.8b
+2E605A63 rbit v3.8b, v19.8b
+6E605965 rbit v5.16b, v11.16b
+6E605BE3 rbit v3.16b, v31.16b
+2E605B18 rbit v24.8b, v24.8b
+2E6059D9 rbit v25.8b, v14.8b
+6E605A54 rbit v20.16b, v18.16b
+6E60594F rbit v15.16b, v10.16b
+6E605B8E rbit v14.16b, v28.16b
+2E605A40 rbit v0.8b, v18.8b
+6E605B77 rbit v23.16b, v27.16b
+6E60598F rbit v15.16b, v12.16b
+6E605892 rbit v18.16b, v4.16b
+6E605818 rbit v24.16b, v0.16b

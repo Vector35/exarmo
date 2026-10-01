@@ -1,0 +1,22 @@
+// clasta_z_p_zz_ 000|0010|1|size=xx|1|0|100|B=0|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// ClastaZPZz: CLASTA  <Zdn>.<T>, <Pg>, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+05E883C0 clasta z0.d, p0, z0.d, z30.d
+05689DCF clasta z15.h, p7, z15.h, z14.h
+05289867 clasta z7.b, p6, z7.b, z3.b
+052885F6 clasta z22.b, p1, z22.b, z15.b
+05A88C9B clasta z27.s, p3, z27.s, z4.s
+052888C4 clasta z4.b, p2, z4.b, z6.b
+0528810F clasta z15.b, p0, z15.b, z8.b
+05688195 clasta z21.h, p0, z21.h, z12.h
+05A88855 clasta z21.s, p2, z21.s, z2.s
+05289439 clasta z25.b, p5, z25.b, z1.b
+05E88D5D clasta z29.d, p3, z29.d, z10.d
+05E89DE9 clasta z9.d, p7, z9.d, z15.d
+05A88E01 clasta z1.s, p3, z1.s, z16.s
+05E89FD4 clasta z20.d, p7, z20.d, z30.d
+05289EEC clasta z12.b, p7, z12.b, z23.b
+05E8958F clasta z15.d, p5, z15.d, z12.d
+05E8901F clasta z31.d, p4, z31.d, z0.d
+05E883E0 clasta z0.d, p0, z0.d, z31.d
+05E883DE clasta z30.d, p0, z30.d, z30.d

@@ -1,0 +1,9 @@
+// CLRBHB_A1 cond=xxxx|00|1|10|R=0|10|imm4=0000|(1)(1)(1)(1)|imm12=(0)(0)(0)(0)00010110
+// ClrbhbA1: CLRBHB{<c>}{<q>}
+03200016 clrbhbeq (unpredictable)
+8320FF16 clrbhbhi (unpredictable)
+43208816 clrbhbmi (unpredictable)
+23204416 clrbhbcs (unpredictable)
+13202216 clrbhbne (unpredictable)
+03201116 clrbhbeq (unpredictable)
+0320F016 clrbhbeq

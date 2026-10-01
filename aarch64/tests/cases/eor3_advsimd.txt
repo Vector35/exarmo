@@ -1,0 +1,21 @@
+// EOR3_VVV16_crypto4 1100|111|00|Op0=00|Rm=xxxxx|0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Eor3Vvv16Crypto4: EOR3  <Vd>.16B, <Vn>.16B, <Vm>.16B, <Va>.16B
+// register fields: Rm, Ra, Rn, Rd
+CE0B75E2 eor3 v2.16b, v15.16b, v11.16b, v29.16b
+CE1923BA eor3 v26.16b, v29.16b, v25.16b, v8.16b
+CE150503 eor3 v3.16b, v8.16b, v21.16b, v1.16b
+CE0A2297 eor3 v23.16b, v20.16b, v10.16b, v8.16b
+CE094FE1 eor3 v1.16b, v31.16b, v9.16b, v19.16b
+CE021531 eor3 v17.16b, v9.16b, v2.16b, v5.16b
+CE1305FF eor3 v31.16b, v15.16b, v19.16b, v1.16b
+CE1E7306 eor3 v6.16b, v24.16b, v30.16b, v28.16b
+CE035463 eor3 v3.16b, v3.16b, v3.16b, v21.16b
+CE1E71FE eor3 v30.16b, v15.16b, v30.16b, v28.16b
+CE0A1EE1 eor3 v1.16b, v23.16b, v10.16b, v7.16b
+CE165594 eor3 v20.16b, v12.16b, v22.16b, v21.16b
+CE182E77 eor3 v23.16b, v19.16b, v24.16b, v11.16b
+CE1F1779 eor3 v25.16b, v27.16b, v31.16b, v5.16b
+CE0A1359 eor3 v25.16b, v26.16b, v10.16b, v4.16b
+CE08448D eor3 v13.16b, v4.16b, v8.16b, v17.16b
+CE000000 eor3 v0.16b, v0.16b, v0.16b, v0.16b
+CE0B7DE2 eor3 v2.16b, v15.16b, v11.16b, v31.16b

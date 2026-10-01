@@ -1,0 +1,55 @@
+// TST_i_T1 111|10|i=x|0|op1=0000|S=1|Rn=xxxx|0|imm3=xxx|Rd=1111|imm8=xxxxxxxx
+// TstIT1: TST{<c>}{<q>}  <Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn
+// IT state read: condition
+f41e7f49 tst lr, #804
+f41f6fe7 tst pc, #1848 (unpredictable)
+f41c0f44 tst r12, #12845056
+f4175fd9 tst r7, #6944
+f41e0f6e tst lr, #15597568
+f41d2f15 tst sp, #610304
+f4194f83 tst r9, #16768
+f4183fec tst r8, #120832
+F0101F00 tst r0, #0x0
+F41E7FFF tst lr, #0x1fe
+F41E7F80 tst lr, #0x100
+F41E7F40 tst lr, #0x300
+F41E7F20 tst lr, #0x280
+F41E7F10 tst lr, #0x240
+F41E7F08 tst lr, #0x220
+F41E7F04 tst lr, #0x210
+F41E7F02 tst lr, #0x208
+F41E7F01 tst lr, #0x204
+F01E0F00 tst lr, #0x0
+F01E0FFF tst lr, #0xff
+F01E1F00 tst lr, #0x0
+F01E1FFF tst lr, #0xff00ff
+F01E2F00 tst lr, #0x0
+F01E2FFF tst lr, #0xff00ff00
+F01E3F00 tst lr, #0x0
+F01E3FFF tst lr, #0xffffffff
+F01E4F00 tst lr, #0x80000000
+F01E4FFF tst lr, #0x7f800000
+F01E5F00 tst lr, #0x20000000
+F01E5FFF tst lr, #0x1fe00000
+F01E6F00 tst lr, #0x8000000
+F01E6FFF tst lr, #0x7f80000
+F01E7F00 tst lr, #0x2000000
+F01E7FFF tst lr, #0x1fe0000
+F41E0F00 tst lr, #0x800000
+F41E0FFF tst lr, #0x7f8000
+F41E1F00 tst lr, #0x200000
+F41E1FFF tst lr, #0x1fe000
+F41E2F00 tst lr, #0x80000
+F41E2FFF tst lr, #0x7f800
+F41E3F00 tst lr, #0x20000
+F41E3FFF tst lr, #0x1fe00
+F41E4F00 tst lr, #0x8000
+F41E4FFF tst lr, #0x7f80
+F41E5F00 tst lr, #0x2000
+F41E5FFF tst lr, #0x1fe0
+F41E6F00 tst lr, #0x800
+F41E6FFF tst lr, #0x7f8
+F41E7F00 tst lr, #0x200
+F41E7F49 [ne] tstne lr, #0x324

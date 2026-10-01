@@ -1,0 +1,47 @@
+// CCMP_32_condcmp_reg sf=0|op=1|S=1|11010010|Rm=xxxxx|cond=xxxx|0|o2=0|Rn=xxxxx|o3=0|nzcv=xxxx
+// Ccmp32CondcmpReg: CCMP  <Wn>, <Wm>, #<nzcv>, <cond>
+// register fields: Rm, Rn
+7A41E3AA ccmp w29, w1, #0xa, al
+7A5700C1 ccmp w6, w23, #0x1, eq
+7A51C0CA ccmp w6, w17, #0xa, gt
+7A5BD3E9 ccmp wzr, w27, #0x9, le
+7A5322C6 ccmp w22, w19, #0x6, cs
+7A53004C ccmp w2, w19, #0xc, eq
+7A52E2A0 ccmp w21, w18, #0x0, al
+7A455142 ccmp w10, w5, #0x2, pl
+7A402346 ccmp w26, w0, #0x6, cs
+7A48A041 ccmp w2, w8, #0x1, ge
+7A5CE1AC ccmp w13, w28, #0xc, al
+7A41B3E0 ccmp wzr, w1, #0x0, lt
+7A54F2C0 ccmp w22, w20, #0x0, nv
+7A56422F ccmp w17, w22, #0xf, mi
+7A5A220C ccmp w16, w26, #0xc, cs
+7A47920D ccmp w16, w7, #0xd, ls
+7A5FE00A ccmp w0, wzr, #0xa, al
+7A41E02A ccmp w1, w1, #0xa, al
+7A4183A8 ccmp w29, w1, #0x8, hi
+7A4113A4 ccmp w29, w1, #0x4, ne
+
+// CCMP_64_condcmp_reg sf=1|op=1|S=1|11010010|Rm=xxxxx|cond=xxxx|0|o2=0|Rn=xxxxx|o3=0|nzcv=xxxx
+// Ccmp64CondcmpReg: CCMP  <Xn>, <Xm>, #<nzcv>, <cond>
+// register fields: Rm, Rn
+FA439341 ccmp x26, x3, #0x1, ls
+FA5CD3AE ccmp fp, x28, #0xe, le
+FA5A5281 ccmp x20, x26, #0x1, pl
+FA5B3382 ccmp x28, x27, #0x2, cc
+FA5F5000 ccmp x0, xzr, #0x0, pl
+FA53E065 ccmp x3, x19, #0x5, al
+FA49F08A ccmp x4, x9, #0xa, nv
+FA5612EC ccmp x23, x22, #0xc, ne
+FA574285 ccmp x20, x23, #0x5, mi
+FA5D73EF ccmp xzr, fp, #0xf, vc
+FA45D2EB ccmp x23, x5, #0xb, le
+FA5D60C1 ccmp x6, fp, #0x1, vs
+FA5AA00E ccmp x0, x26, #0xe, ge
+FA5461AD ccmp x13, x20, #0xd, vs
+FA5D012A ccmp x9, fp, #0xa, eq
+FA52514E ccmp x10, x18, #0xe, pl
+FA409341 ccmp x26, x0, #0x1, ls
+FA439061 ccmp x3, x3, #0x1, ls
+FA438348 ccmp x26, x3, #0x8, hi
+FA432344 ccmp x26, x3, #0x4, cs

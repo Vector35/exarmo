@@ -1,0 +1,17 @@
+// QASX_A1 cond=xxxx|011|00|op1=010|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=01|1|Rm=xxxx
+// QasxA1: QASX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+b6294237 qasxlt r4, r9, r7 (unpredictable)
+06280533 qasxeq r0, r8, r3 (unpredictable)
+9625b430 qasxls r11, r5, r0 (unpredictable)
+8621e731 qasxhi lr, r1, r1 (unpredictable)
+e6211435 qasx r1, r1, r5 (unpredictable)
+b62b7739 qasxlt r7, r11, r9 (unpredictable)
+b6299732 qasxlt r9, r9, r2 (unpredictable)
+662a1e32 qasxvs r1, r10, r2 (unpredictable)
+F6294237 UNALLOCATED
+4620F03F qasxmi pc, r0, pc (unpredictable)
+262F4F34 qasxcs r4, pc, r4 (unpredictable)
+16294837 qasxne r4, r9, r7 (unpredictable)
+B6294137 qasxlt r4, r9, r7 (unpredictable)
+B6212F33 qasxlt r2, r1, r3

@@ -1,0 +1,14 @@
+// ftmopa_za16_z8z8zi_b2x1 1|00|0000|0|01|1|Zm=xxxxx|0|0|0|K=x|Zk=xx|Zn=xxxx|i2=xx|1|0|0|ZAda=x
+// FtmopaZa16Z8z8ziB2x1: FTMOPA  <ZAda>.H, { <Zn1>.B-<Zn2>.B }, <Zm>.B, <Zk>[<index>]
+// read together by <Zk>: K, Zk
+// register fields: Zm, Zn, ZAda
+80600009 ftmopa za1.h, {z0.b-z1.b}, z0.b, z20[0]
+80600048 ftmopa za0.h, {z2.b-z3.b}, z0.b, z20[0]
+80600079 ftmopa za1.h, {z2.b-z3.b}, z0.b, z20[3]
+807F17D9 ftmopa za1.h, {z30.b-z31.b}, z31.b, z29[1]
+80600829 ftmopa za1.h, {z0.b-z1.b}, z0.b, z22[2]
+80600C09 ftmopa za1.h, {z0.b-z1.b}, z0.b, z23[0]
+80600409 ftmopa za1.h, {z0.b-z1.b}, z0.b, z21[0]
+80601009 ftmopa za1.h, {z0.b-z1.b}, z0.b, z28[0]
+80601809 ftmopa za1.h, {z0.b-z1.b}, z0.b, z30[0]
+80601C09 ftmopa za1.h, {z0.b-z1.b}, z0.b, z31[0]

@@ -1,0 +1,38 @@
+// MOV_rr_A1 cond=xxxx|00011|opc=01|S=0|Rn=(0)(0)(0)(0)|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// AsrMovRrA1: ASR{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// LslMovRrA1: LSL{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// LsrMovRrA1: LSR{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// RorMovRrA1: ROR{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// MovRrA1: MOV{<c>}{<q>}  <Rd>, <Rm>, <shift> <Rs>
+// register fields: Rd, Rs, Rm
+// form chosen on: stype
+01A00010 lsleq r0, r0, r0
+F1A00010 UNALLOCATED
+81AFFF3F lsrhi pc, pc, pc (unpredictable)
+41A80050 asrmi r0, r0, r0 (unpredictable)
+21A40070 rorcs r0, r0, r0 (unpredictable)
+11A20010 lslne r0, r0, r0 (unpredictable)
+01A10010 lsleq r0, r0, r0 (unpredictable)
+01A00050 asreq r0, r0, r0
+01A00030 lsreq r0, r0, r0
+01A00070 roreq r0, r0, r0
+01A01213 lsleq r1, r3, r2
+
+// MOVS_rr_A1 cond=xxxx|00011|opc=01|S=1|Rn=(0)(0)(0)(0)|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// AsrsMovsRrA1: ASRS{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// LslsMovsRrA1: LSLS{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// LsrsMovsRrA1: LSRS{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// RorsMovsRrA1: RORS{<c>}{<q>}  {<Rd>, }<Rm>, <Rs>
+// MovsRrA1: MOVS{<c>}{<q>}  <Rd>, <Rm>, <shift> <Rs>
+// register fields: Rd, Rs, Rm
+// form chosen on: stype
+a1b04052 asrsge r4, r2, r0
+01BF0F10 lslseq r0, r0, pc (unpredictable)
+F1B04052 UNALLOCATED
+81B8F03F lsrshi pc, pc, r0 (unpredictable)
+41B44472 rorsmi r4, r2, r4 (unpredictable)
+21B24054 asrscs r4, r4, r0 (unpredictable)
+11B14050 asrsne r4, r0, r0 (unpredictable)
+01BF0F50 asrseq r0, r0, pc (unpredictable)
+01BF0F30 lsrseq r0, r0, pc (unpredictable)
+01BF0F70 rorseq r0, r0, pc (unpredictable)

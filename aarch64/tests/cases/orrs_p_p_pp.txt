@@ -1,0 +1,46 @@
+// orrs_p_p_pp_z 001|0010|1|op=1|S=1|00|Pm=xxxx|01|Pg=xxxx|o2=0|Pn=xxxx|o3=0|Pd=xxxx
+// OrrsPPPpZ: ORRS  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// MovsPPOrrsPPPpZ: MOVS  <Pd>.B, <Pn>.B
+// read together by the MOVS alias: Pm, Pg, Pn
+// register fields: Pm, Pg, Pn, Pd
+// form chosen on: Pm, Pg, Pn
+25CF7DEB movs p11.b, p15.b
+25C96520 movs p0.b, p9.b
+25CB6D6A movs p10.b, p11.b
+25CE79CD movs p13.b, p14.b
+25C4508E movs p14.b, p4.b
+25C1442A movs p10.b, p1.b
+25C34C6C movs p12.b, p3.b
+25CD75A9 movs p9.b, p13.b
+25C34C6B movs p11.b, p3.b
+25C658C4 movs p4.b, p6.b
+25C554AD movs p13.b, p5.b
+25C45085 movs p5.b, p4.b
+25C45081 movs p1.b, p4.b
+25C04004 movs p4.b, p0.b
+25CD75A4 movs p4.b, p13.b
+25C45083 movs p3.b, p4.b
+25C351E9 orrs p9.b, p4/z, p15.b, p3.b
+25CD59AF orrs p15.b, p6/z, p13.b, p13.b
+25C361EB orrs p11.b, p8/z, p15.b, p3.b
+25C450A0 orrs p0.b, p4/z, p5.b, p4.b
+25C859A0 orrs p0.b, p6/z, p13.b, p8.b
+25C451ED orrs p13.b, p4/z, p15.b, p4.b
+25C36D45 orrs p5.b, p11/z, p10.b, p3.b
+25C948A4 orrs p4.b, p2/z, p5.b, p9.b
+25CF44A3 orrs p3.b, p1/z, p5.b, p15.b
+25C04D87 orrs p7.b, p3/z, p12.b, p0.b
+25C55542 orrs p2.b, p5/z, p10.b, p5.b
+25C87D8C orrs p12.b, p15/z, p12.b, p8.b
+25CA60EC orrs p12.b, p8/z, p7.b, p10.b
+25CA6D4A orrs p10.b, p11/z, p10.b, p10.b
+25CD59EF orrs p15.b, p6/z, p15.b, p13.b
+25CC55E1 orrs p1.b, p5/z, p15.b, p12.b
+25C041EB orrs p11.b, p0/z, p15.b, p0.b
+25C07C0B orrs p11.b, p15/z, p0.b, p0.b
+25C07DEB orrs p11.b, p15/z, p15.b, p0.b
+25CF400B orrs p11.b, p0/z, p0.b, p15.b
+25CF41EB orrs p11.b, p0/z, p15.b, p15.b
+25CF7C0B orrs p11.b, p15/z, p0.b, p15.b
+25CF7DEF movs p15.b, p15.b
+25C14004 orrs p4.b, p0/z, p0.b, p1.b

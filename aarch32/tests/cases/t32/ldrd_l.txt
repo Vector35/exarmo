@@ -1,0 +1,16 @@
+// LDRD_l_T1 111|0100|P=x|U=x|1|W=x|L=1|1111|Rt=xxxx|Rt2=xxxx|imm8=xxxxxxxx
+// LdrdLT1: LDRD{<c>}{<q>}  <Rt>, <Rt2>, <label>
+// register fields: Rt, Rt2
+// IT state read: condition
+e87f1010 ldrd r1, r0, 0xffc4 (unpredictable)
+e87f72a8 ldrd r7, r2, 0xfd64 (unpredictable)
+E9DF0F00 ldrd r0, pc, 0x10004 (unpredictable)
+E87FF0FF ldrd pc, r0, 0xfc08 (unpredictable)
+E87F1180 ldrd r1, r1, 0xfe04 (unpredictable)
+E87F1040 ldrd r1, r0, 0xff04 (unpredictable)
+E87F1020 ldrd r1, r0, 0xff84 (unpredictable)
+E87F1008 ldrd r1, r0, 0xffe4 (unpredictable)
+E87F1004 ldrd r1, r0, 0xfff4 (unpredictable)
+E87F1002 ldrd r1, r0, 0xfffc (unpredictable)
+E87F1001 ldrd r1, r0, 0x10000 (unpredictable)
+E87F1010 [ne] ldrdne r1, r0, 0xffc4 (unpredictable)

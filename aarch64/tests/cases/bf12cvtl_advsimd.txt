@@ -1,0 +1,25 @@
+// BF1CVTL_asimdmisc_V 0|Q=x|U=1|01110|size=10|10000|opcode=10111|10|Rn=xxxxx|Rd=xxxxx
+// Bf1cvtlAsimdmiscV: BF1CVTL  <Vd>.8H, <Vn>.<Ta>
+// Bf1cvtlAsimdmiscV2: BF1CVTL2  <Vd>.8H, <Vn>.<Ta>
+// register fields: Rn, Rd
+// form chosen on: Q
+2EA17806 bf1cvtl v6.8h, v0.8b
+2EA1780D bf1cvtl v13.8h, v0.8b
+2EA17814 bf1cvtl v20.8h, v0.8b
+6EA17BE0 bf1cvtl2 v0.8h, v31.16b
+2EA1781F bf1cvtl v31.8h, v0.8b
+2EA17800 bf1cvtl v0.8h, v0.8b
+6EA17800 bf1cvtl2 v0.8h, v0.16b
+
+// BF2CVTL_asimdmisc_V 0|Q=x|U=1|01110|size=11|10000|opcode=10111|10|Rn=xxxxx|Rd=xxxxx
+// Bf2cvtlAsimdmiscV: BF2CVTL  <Vd>.8H, <Vn>.<Ta>
+// Bf2cvtlAsimdmiscV2: BF2CVTL2  <Vd>.8H, <Vn>.<Ta>
+// register fields: Rn, Rd
+// form chosen on: Q
+2EE17804 bf2cvtl v4.8h, v0.8b
+2EE1780B bf2cvtl v11.8h, v0.8b
+2EE17812 bf2cvtl v18.8h, v0.8b
+6EE17BE0 bf2cvtl2 v0.8h, v31.16b
+2EE1781F bf2cvtl v31.8h, v0.8b
+2EE17800 bf2cvtl v0.8h, v0.8b
+6EE17800 bf2cvtl2 v0.8h, v0.16b

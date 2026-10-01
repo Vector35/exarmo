@@ -1,0 +1,30 @@
+// faddv_v_p_z_ 011|0010|1|size=xx|000|opc=000|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// FaddvVPZ: FADDV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+65402324 faddv h4, p0, z25.h
+6580263F faddv s31, p1, z17.s
+658036F6 faddv s22, p5, z23.s
+65803494 faddv s20, p5, z4.s
+65C02F93 faddv d19, p3, z28.d
+65802F8C faddv s12, p3, z28.s
+65C02B3C faddv d28, p2, z25.d
+65C03651 faddv d17, p5, z18.d
+65403EC6 faddv h6, p7, z22.h
+65803C5C faddv s28, p7, z2.s
+65403AE5 faddv h5, p6, z23.h
+654021C4 faddv h4, p0, z14.h
+65402397 faddv h23, p0, z28.h
+658038CE faddv s14, p6, z6.s
+65402E66 faddv h6, p3, z19.h
+65C037B6 faddv d22, p5, z29.d
+65403000 faddv h0, p4, z0.h
+654023E4 faddv h4, p0, z31.h
+65002324 UNDEFINED
+65002320 UNDEFINED
+6500233F UNDEFINED
+6540233F faddv h31, p0, z25.h
+65802320 faddv s0, p0, z25.s
+65C02320 faddv d0, p0, z25.d
+65C0233F faddv d31, p0, z25.d
+65402320 faddv h0, p0, z25.h

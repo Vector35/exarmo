@@ -1,0 +1,82 @@
+// SBC_32_addsub_carry sf=0|op=1|S=0|11010000|Rm=xxxxx|000000|Rn=xxxxx|Rd=xxxxx
+// Sbc32AddsubCarry: SBC  <Wd>, <Wn>, <Wm>
+// NgcSbc32AddsubCarry: NGC  <Wd>, <Wm>
+// register fields: Rm, Rn, Rd
+// form chosen on: Rn
+5A1603E8 ngc w8, w22
+5A0003FE ngc w30, w0
+5A0F03E9 ngc w9, w15
+5A1503E9 ngc w9, w21
+5A1B03F7 ngc w23, w27
+5A0503F5 ngc w21, w5
+5A1303E7 ngc w7, w19
+5A1903E4 ngc w4, w25
+5A1203E8 ngc w8, w18
+5A0A03F8 ngc w24, w10
+5A0E03E3 ngc w3, w14
+5A0203E7 ngc w7, w2
+5A0203FA ngc w26, w2
+5A0803FC ngc w28, w8
+5A1603F4 ngc w20, w22
+5A0D03E6 ngc w6, w13
+5A1E038D sbc w13, w28, w30
+5A000107 sbc w7, w8, w0
+5A18011C sbc w28, w8, w24
+5A0A02CA sbc w10, w22, w10
+5A14022F sbc w15, w17, w20
+5A1A0048 sbc w8, w2, w26
+5A1C02BD sbc w29, w21, w28
+5A0700DF sbc wzr, w6, w7
+5A19014E sbc w14, w10, w25
+5A1C00D7 sbc w23, w6, w28
+5A100248 sbc w8, w18, w16
+5A160387 sbc w7, w28, w22
+5A0A0207 sbc w7, w16, w10
+5A17026F sbc w15, w19, w23
+5A07020E sbc w14, w16, w7
+5A14010F sbc w15, w8, w20
+5A1F0000 sbc w0, w0, wzr
+5A1602C8 sbc w8, w22, w22
+5A0001FE sbc w30, w15, w0
+
+// SBC_64_addsub_carry sf=1|op=1|S=0|11010000|Rm=xxxxx|000000|Rn=xxxxx|Rd=xxxxx
+// Sbc64AddsubCarry: SBC  <Xd>, <Xn>, <Xm>
+// NgcSbc64AddsubCarry: NGC  <Xd>, <Xm>
+// register fields: Rm, Rn, Rd
+// form chosen on: Rn
+DA1B03E2 ngc x2, x27
+DA1503F2 ngc x18, x21
+DA0C03ED ngc x13, x12
+DA1803E6 ngc x6, x24
+DA1C03F9 ngc x25, x28
+DA1803E1 ngc x1, x24
+DA0F03F6 ngc x22, x15
+DA1E03FA ngc x26, lr
+DA1303FC ngc x28, x19
+DA1003F6 ngc x22, x16
+DA1903EE ngc x14, x25
+DA1603E5 ngc x5, x22
+DA0003F2 ngc x18, x0
+DA0703EA ngc x10, x7
+DA1303F0 ngc x16, x19
+DA0203FD ngc fp, x2
+DA100293 sbc x19, x20, x16
+DA0C0170 sbc x16, x11, x12
+DA1D00F9 sbc x25, x7, fp
+DA120139 sbc x25, x9, x18
+DA0701E3 sbc x3, x15, x7
+DA0D00E5 sbc x5, x7, x13
+DA1E020B sbc x11, x16, lr
+DA0A022D sbc x13, x17, x10
+DA080296 sbc x22, x20, x8
+DA070168 sbc x8, x11, x7
+DA0B0341 sbc x1, x26, x11
+DA02037C sbc x28, x27, x2
+DA000124 sbc x4, x9, x0
+DA0203AD sbc x13, fp, x2
+DA1D01E2 sbc x2, x15, fp
+DA17038E sbc x14, x28, x23
+DA1F0000 sbc x0, x0, xzr
+DA1B03FF ngc xzr, x27
+DA1B0362 sbc x2, x27, x27
+DA1B03FB ngc x27, x27

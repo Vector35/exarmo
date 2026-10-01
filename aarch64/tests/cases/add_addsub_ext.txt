@@ -1,0 +1,74 @@
+// ADD_32_addsub_ext sf=0|op=0|S=0|01011|opt=00|1|Rm=xxxxx|option=xxx|imm3=xxx|Rn=xxxxx|Rd=xxxxx
+// Add32AddsubExt: ADD  <Wd|WSP>, <Wn|WSP>, <Wm>{, <extend> {#<amount>}}
+// register fields: Rm, Rn, Rd
+0B2143E3 add w3, wsp, w1
+0B214BE3 add w3, wsp, w1, lsl #0x2
+0B2140A3 add w3, w5, w1, uxtw
+0B2140BF add wsp, w5, w1
+0B3D0294 add w20, w20, w29, uxtb
+0B2AC817 add w23, w0, w10, sxtw #0x2
+0B3E4B7B add w27, w27, w30, uxtw #0x2
+0B2E0BD1 add w17, w30, w14, uxtb #0x2
+0B3DED12 add w18, w8, w29, sxtx #0x3
+0B28711C add w28, w8, w8, uxtx #0x4
+0B2FD123 add w3, w9, w15, sxtw #0x4
+0B2322DF add wsp, w22, w3, uxth
+0B3252B7 add w23, w21, w18, uxtw #0x4
+0B33604F add w15, w2, w19, uxtx
+0B2D4FC0 add w0, w30, w13, uxtw #0x3
+0B26A8A7 add w7, w5, w6, sxth #0x2
+0B3468CD add w13, w6, w20, uxtx #0x2
+0B2E700E add w14, w0, w14, uxtx #0x4
+0B2432A0 add w0, w21, w4, uxth #0x4
+0B344E3E add w30, w17, w20, uxtw #0x3
+0B2087E3 add w3, wsp, w0, sxtb #0x1
+0B3F43E3 add w3, wsp, wzr
+0B2157E3 UNDEFINED
+0B215BE3 UNDEFINED
+0B215FE3 UNDEFINED
+
+// ADD_64_addsub_ext sf=1|op=0|S=0|01011|opt=00|1|Rm=xxxxx|option=xxx|imm3=xxx|Rn=xxxxx|Rd=xxxxx
+// Add64AddsubExt: ADD  <Xd|SP>, <Xn|SP>, <m>{, <extend> {#<amount>}}
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rd
+8B2163E3 add x3, sp, x1
+8B216BE3 add x3, sp, x1, lsl #0x2
+8B2160A3 add x3, x5, x1, uxtx
+8B2160BF add sp, x5, x1
+8B3B6186 add x6, x12, x27, uxtx
+8B304F9F add sp, x28, w16, uxtw #0x3
+8B3D6CF9 add x25, x7, fp, uxtx #0x3
+8B2DB151 add x17, x10, w13, sxth #0x4
+8B224465 add x5, x3, w2, uxtw #0x1
+8B2900CF add x15, x6, w9, uxtb
+8B3D3352 add x18, x26, w29, uxth #0x4
+8B3C2B13 add x19, x24, w28, uxth #0x2
+8B37B12C add x12, x9, w23, sxth #0x4
+8B2E6113 add x19, x8, x14, uxtx
+8B307367 add x7, x27, x16, uxtx #0x4
+8B31A67B add x27, x19, w17, sxth #0x1
+8B204A09 add x9, x16, w0, uxtw #0x2
+8B22A584 add x4, x12, w2, sxth #0x1
+8B22B102 add x2, x8, w2, sxth #0x4
+8B212223 add x3, x17, w1, uxth
+8B3F8000 add x0, x0, wzr, sxtb
+8B21C3E3 add x3, sp, w1, sxtw
+8B21E3E3 add x3, sp, x1, sxtx
+8B2177E3 UNDEFINED
+8B217BE3 UNDEFINED
+8B217FE3 UNDEFINED
+8B2003E3 add x3, sp, w0, uxtb
+8B2023E3 add x3, sp, w0, uxth
+8B2063E3 add x3, sp, x0
+8B2083E3 add x3, sp, w0, sxtb
+8B20A3E3 add x3, sp, w0, sxth
+8B20C3E3 add x3, sp, w0, sxtw
+8B20E3E3 add x3, sp, x0, sxtx
+8B3F03E3 add x3, sp, wzr, uxtb
+8B3F23E3 add x3, sp, wzr, uxth
+8B3F43E3 add x3, sp, wzr, uxtw
+8B3F63E3 add x3, sp, xzr
+8B3FA3E3 add x3, sp, wzr, sxth
+8B3FC3E3 add x3, sp, wzr, sxtw
+8B3FE3E3 add x3, sp, xzr, sxtx
+8B216023 add x3, x1, x1, uxtx

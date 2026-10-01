@@ -1,0 +1,29 @@
+// SETGE_SET_memcms sz=xx|011|o0=1|01|op1=11|0|Rs=xxxxx|op2=1000|01|Rn=xxxxx|Rd=xxxxx
+// SetgeSetMemcms: SETGE  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+1DC08400 setge [x0]!, x0!, x0
+1DDF87FF setge [xzr]!, xzr!, xzr
+5DC08400 UNDEFINED
+9DC08400 UNDEFINED
+DDC08400 UNDEFINED
+1DC18443 setge [x3]!, x2!, x1
+
+// SETGM_SET_memcms sz=xx|011|o0=1|01|op1=11|0|Rs=xxxxx|op2=0100|01|Rn=xxxxx|Rd=xxxxx
+// SetgmSetMemcms: SETGM  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+1DC04400 setgm [x0]!, x0!, x0
+1DDF47FF setgm [xzr]!, xzr!, xzr
+5DC04400 UNDEFINED
+9DC04400 UNDEFINED
+DDC04400 UNDEFINED
+1DC14443 setgm [x3]!, x2!, x1
+
+// SETGP_SET_memcms sz=xx|011|o0=1|01|op1=11|0|Rs=xxxxx|op2=0000|01|Rn=xxxxx|Rd=xxxxx
+// SetgpSetMemcms: SETGP  [<Xd>]!, <Xn>!, <Xs>
+// register fields: Rs, Rn, Rd
+1DC00400 setgp [x0]!, x0!, x0
+1DDF07FF setgp [xzr]!, xzr!, xzr
+5DC00400 UNDEFINED
+9DC00400 UNDEFINED
+DDC00400 UNDEFINED
+1DC10443 setgp [x3]!, x2!, x1

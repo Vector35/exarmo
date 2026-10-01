@@ -1,0 +1,52 @@
+// SMOV_asimdins_W_w 0|Q=0|op=0|01110000|imm5=xxxxx|0|imm4=0101|1|Rn=xxxxx|Rd=xxxxx
+// SmovAsimdinsWW: SMOV  <Wd>, <Vn>.<Ts>[<index>]
+// register fields: Rn, Rd
+0E062EE2 smov w2, v23.h[1]
+0E1D2C09 smov w9, v0.b[14]
+0E1D2FFB smov w27, v31.b[14]
+0E0D2D29 smov w9, v9.b[6]
+0E0B2F24 smov w4, v25.b[5]
+0E0E2F9B smov w27, v28.h[3]
+0E162EF2 smov w18, v23.h[5]
+0E0B2FF7 smov w23, v31.b[5]
+0E132C91 smov w17, v4.b[9]
+0E1E2DD5 smov w21, v14.h[7]
+0E162D12 smov w18, v8.h[5]
+0E1E2E18 smov w24, v16.h[7]
+0E012C96 smov w22, v4.b[0]
+0E1E2E33 smov w19, v17.h[7]
+0E092E8F smov w15, v20.b[4]
+0E172C05 smov w5, v0.b[11]
+0E1F2EE0 smov w0, v23.b[15]
+0E062EFF smov wzr, v23.h[1]
+0E002EE2 UNDEFINED
+0E102EE2 UNDEFINED
+0E082EE2 UNDEFINED
+0E042EE2 UNDEFINED
+0E022EE2 smov w2, v23.h[0]
+
+// SMOV_asimdins_X_x 0|Q=1|op=0|01110000|imm5=xxxxx|0|imm4=0101|1|Rn=xxxxx|Rd=xxxxx
+// SmovAsimdinsXX: SMOV  <Xd>, <Vn>.<Ts>[<index>]
+// register fields: Rn, Rd
+4E1B2FD9 smov x25, v30.b[13]
+4E1C2C8B smov x11, v4.s[3]
+4E172E5B smov x27, v18.b[11]
+4E072CDF smov xzr, v6.b[3]
+4E1C2C69 smov x9, v3.s[3]
+4E0E2CB1 smov x17, v5.h[3]
+4E0B2F1A smov x26, v24.b[5]
+4E012CE3 smov x3, v7.b[0]
+4E012F3A smov x26, v25.b[0]
+4E1E2E96 smov x22, v20.h[7]
+4E172E78 smov x24, v19.b[11]
+4E0F2D33 smov x19, v9.b[7]
+4E192E49 smov x9, v18.b[12]
+4E162EDB smov x27, v22.h[5]
+4E022DD9 smov x25, v14.h[0]
+4E0B2D70 smov x16, v11.b[5]
+4E1F2C00 smov x0, v0.b[15]
+4E1B2FF9 smov x25, v31.b[13]
+4E002FD9 UNDEFINED
+4E102FD9 UNDEFINED
+4E082FD9 UNDEFINED
+4E042FD9 smov x25, v30.s[0]

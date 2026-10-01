@@ -1,0 +1,69 @@
+// LDXP_LP32_ldstexclp 1|sz=0|0010000|L=1|1|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// LdxpLp32Ldstexclp: LDXP  <Wt1>, <Wt2>, [<Xn|SP>{, #0}]
+// register fields: Rt2, Rn, Rt
+887F5DB1 ldxp w17, w23, [x13]
+887F7C29 ldxp w9, wzr, [x1]
+887F76D2 ldxp w18, w29, [x22]
+887F6ED7 ldxp w23, w27, [x22]
+887F2679 ldxp w25, w9, [x19]
+887F1103 ldxp w3, w4, [x8]
+887F41EA ldxp w10, w16, [x15]
+887F6145 ldxp w5, w24, [x10]
+88740E65 ldxp w5, w3, [x19] (unpredictable)
+8862234F ldxp w15, w8, [x26] (unpredictable)
+887B6C4B ldxp w11, w27, [x2] (unpredictable)
+88773ACD ldxp w13, w14, [x22] (unpredictable)
+88796985 ldxp w5, w26, [x12] (unpredictable)
+88756329 ldxp w9, w24, [x25] (unpredictable)
+88701798 ldxp w24, w5, [x28] (unpredictable)
+88771991 ldxp w17, w6, [x12] (unpredictable)
+88640E85 ldxp w5, w3, [x20] (unpredictable)
+887E48E1 ldxp w1, w18, [x7] (unpredictable)
+887E6D53 ldxp w19, w27, [x10] (unpredictable)
+886B2F78 ldxp w24, w11, [x27] (unpredictable)
+88776D67 ldxp w7, w27, [x11] (unpredictable)
+887472E0 ldxp w0, w28, [x23] (unpredictable)
+886E1D23 ldxp w3, w7, [x9] (unpredictable)
+88703E56 ldxp w22, w15, [x18] (unpredictable)
+8860001F ldxp wzr, w0, [x0] (unpredictable)
+887F5FF1 ldxp w17, w23, [sp]
+887F5DB7 ldxp w23, w23, [x13] (unpredictable)
+887F5DAD ldxp w13, w23, [x13]
+88685DB1 ldxp w17, w23, [x13] (unpredictable)
+88615DB1 ldxp w17, w23, [x13] (unpredictable)
+
+// LDXP_LP64_ldstexclp 1|sz=1|0010000|L=1|1|Rs=(1)(1)(1)(1)(1)|o0=0|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// LdxpLp64Ldstexclp: LDXP  <Xt1>, <Xt2>, [<Xn|SP>{, #0}]
+// register fields: Rt2, Rn, Rt
+C87F2712 ldxp x18, x9, [x24]
+C87F1749 ldxp x9, x5, [x26]
+C87F2D44 ldxp x4, x11, [x10]
+C87F6DD5 ldxp x21, x27, [x14]
+C87F0C47 ldxp x7, x3, [x2]
+C87F5807 ldxp x7, x22, [x0]
+C87F3FFF ldxp xzr, x15, [sp]
+C87F759F ldxp xzr, fp, [x12]
+C8677530 ldxp x16, fp, [x9] (unpredictable)
+C87B2750 ldxp x16, x9, [x26] (unpredictable)
+C86B5C79 ldxp x25, x23, [x3] (unpredictable)
+C8752DB7 ldxp x23, x11, [x13] (unpredictable)
+C8620B17 ldxp x23, x2, [x24] (unpredictable)
+C86B32D3 ldxp x19, x12, [x22] (unpredictable)
+C87B69CE ldxp x14, x26, [x14] (unpredictable)
+C86132C9 ldxp x9, x12, [x22] (unpredictable)
+C86D3ADA ldxp x26, x14, [x22] (unpredictable)
+C8797A2A ldxp x10, lr, [x17] (unpredictable)
+C8767A5A ldxp x26, lr, [x18] (unpredictable)
+C8621F11 ldxp x17, x7, [x24] (unpredictable)
+C8654ED7 ldxp x23, x19, [x22] (unpredictable)
+C8737BBE ldxp lr, lr, [fp] (unpredictable)
+C872474C ldxp x12, x17, [x26] (unpredictable)
+C877374F ldxp x15, x13, [x26] (unpredictable)
+C8600300 ldxp x0, x0, [x24] (unpredictable)
+C87F7F12 ldxp x18, xzr, [x24]
+C87F2532 ldxp x18, x9, [x9]
+C8702712 ldxp x18, x9, [x24] (unpredictable)
+C8682712 ldxp x18, x9, [x24] (unpredictable)
+C8642712 ldxp x18, x9, [x24] (unpredictable)
+C8600312 ldxp x18, x0, [x24] (unpredictable)
+C87F2700 ldxp x0, x9, [x24]

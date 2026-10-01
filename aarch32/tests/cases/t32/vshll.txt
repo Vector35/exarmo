@@ -1,0 +1,48 @@
+// VSHLL_T1 111|U=x|11|11|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=1010|L=0|Q=0|M=x|1|Vm=xxxx
+// VshllT1: VSHLL{<c>}{<q>}.<type><size>  <Qd>, <Dm>, #<imm>
+// read together by <Qd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+efb80a33 vshll.s32 q0, d19, #24
+ffb08a33 vshll.u32 q4, d19, #16
+efe4ea39 vshll.s32 q15, d25, #4
+ef990a16 vshll.s16 q0, d6, #9
+efe30a32 vshll.s32 q8, d18, #3
+efccea3e vshll.s8 q15, d30, #4
+efeeca1e vshll.s32 q14, d14, #14
+ffb50a3f vshll.u32 q0, d31, #21
+EFBF4A30 vshll.s32 q2, d16, #0x1f
+EFB8FA33 UNDEFINED
+EFB82A38 vshll.s32 q1, d24, #0x18
+EFB81A33 UNDEFINED
+EFB80A34 vshll.s32 q0, d20, #0x18
+EFB80A31 vshll.s32 q0, d17, #0x18
+EFF8FA33 UNDEFINED
+EFB80A10 vshll.s32 q0, d0, #0x18
+EFB80A1F vshll.s32 q0, d15, #0x18
+EFB80A30 vshll.s32 q0, d16, #0x18
+EFB80A33 [ne] vshllne.s32 q0, d19, #0x18
+
+// VSHLL_T2 111|1|11|11|1|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0110|Q=0|M=x|0|Vm=xxxx
+// VshllT2: VSHLL{<c>}{<q>}.<type><size>  <Qd>, <Dm>, #<imm>
+// read together by <Qd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fffae305 vshll.i32 q15, d5, #32
+ffb68320 vshll.i16 q4, d16, #16
+fffa430d vshll.i32 q10, d13, #32
+fff2e302 vshll.i8 q15, d2, #8
+ffb6c30f vshll.i16 q6, d15, #16
+fff20306 vshll.i8 q8, d6, #8
+ffba4306 vshll.i32 q2, d6, #32
+fffaa325 vshll.i32 q13, d21, #32
+FFFEF305 UNDEFINED
+FFFA2308 vshll.i32 q9, d8, #0x20
+FFFA1305 UNDEFINED
+FFBA0304 vshll.i32 q0, d4, #0x20
+FFFAE301 vshll.i32 q15, d1, #0x20
+FFBAF305 UNDEFINED
+FFFAF305 UNDEFINED
+FFFAE300 vshll.i32 q15, d0, #0x20
+FFFAE32F vshll.i32 q15, d31, #0x20
+FFFAE305 [ne] vshllne.i32 q15, d5, #0x20

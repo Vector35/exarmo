@@ -1,0 +1,18 @@
+// PUSH_T1 1011|L=0|10|M=x|register_list=xxxxxxxx
+// PushT1: PUSH{<c>}{<q>}  <registers>
+// IT state read: condition
+b401 push {r0}
+b402 push {r1}
+b403 push {r0, r1}
+b404 push {r2}
+b405 push {r0, r2}
+b406 push {r1, r2}
+b407 push {r0, r1, r2}
+B500 push {lr}
+B4FF push {r0, r1, r2, r3, r4, r5, r6, r7}
+B480 push {r7}
+B440 push {r6}
+B420 push {r5}
+B410 push {r4}
+B408 push {r3}
+B401 [ne] pushne {r0}

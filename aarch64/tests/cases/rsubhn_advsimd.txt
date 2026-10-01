@@ -1,0 +1,28 @@
+// RSUBHN_asimddiff_N 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|01|o1=1|0|00|Rn=xxxxx|Rd=xxxxx
+// RsubhnAsimddiffN: RSUBHN  <Vd>.<Tb>, <Vn>.<Ta>, <Vm>.<Ta>
+// RsubhnAsimddiffN2: RSUBHN2  <Vd>.<Tb>, <Vn>.<Ta>, <Vm>.<Ta>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+6EBB61DB rsubhn2 v27.4s, v14.2d, v27.2d
+2E206172 rsubhn v18.8b, v11.8h, v0.8h
+2E2A629A rsubhn v26.8b, v20.8h, v10.8h
+2E20611C rsubhn v28.8b, v8.8h, v0.8h
+2E6361CE rsubhn v14.4h, v14.4s, v3.4s
+6EBB60A5 rsubhn2 v5.4s, v5.2d, v27.2d
+6E2D6097 rsubhn2 v23.16b, v4.8h, v13.8h
+6E216324 rsubhn2 v4.16b, v25.8h, v1.8h
+2E686338 rsubhn v24.4h, v25.4s, v8.4s
+6E796170 rsubhn2 v16.8h, v11.4s, v25.4s
+6E3263DD rsubhn2 v29.16b, v30.8h, v18.8h
+6E7060CF rsubhn2 v15.8h, v6.4s, v16.4s
+2E3560C2 rsubhn v2.8b, v6.8h, v21.8h
+6E7A62D1 rsubhn2 v17.8h, v22.4s, v26.4s
+2EA9614A rsubhn v10.2s, v10.2d, v9.2d
+2E266112 rsubhn v18.8b, v8.8h, v6.8h
+6EBF6000 rsubhn2 v0.4s, v0.2d, v31.2d
+6EBB63FF rsubhn2 v31.4s, v31.2d, v27.2d
+6EFB61DB UNDEFINED
+2EFB61DB UNDEFINED
+6EBB637B rsubhn2 v27.4s, v27.2d, v27.2d
+6E20611C rsubhn2 v28.16b, v8.8h, v0.8h

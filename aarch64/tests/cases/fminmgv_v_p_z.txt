@@ -1,0 +1,16 @@
+// fminmgv_v_p_z_ 011|0010|0|size=xx|0101|opc=11|11|R=1|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// FminmgvVPZ: FMINMGV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+6417FFFF UNDEFINED
+6457E000 fminmgv h0, p0, z0.h
+6497E7FF fminmgv s31, p1, z31.s
+64D7EBFF fminmgv d31, p2, z31.d
+6457EFE0 fminmgv h0, p3, z31.h
+6457F3FF fminmgv h31, p4, z31.h
+6497F7E0 fminmgv s0, p5, z31.s
+6497FBFF fminmgv s31, p6, z31.s
+64D7FFE0 fminmgv d0, p7, z31.d
+6417FFE0 UNDEFINED
+64D7FCFF fminmgv d31, p7, z7.d
+64D7FFE7 fminmgv d7, p7, z31.d

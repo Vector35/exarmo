@@ -1,0 +1,13 @@
+// mul_z_zz_ 000|0010|0|size=xx|1|Zm=xxxxx|011|0|opc=00|Zn=xxxxx|Zd=xxxxx
+// MulZZz: MUL  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+04676060 mul z0.h, z3.h, z7.h
+04F76343 mul z3.d, z26.d, z23.d
+042A608A mul z10.b, z4.b, z10.b
+04226305 mul z5.b, z24.b, z2.b
+04F9639C mul z28.d, z28.d, z25.d
+04EB614E mul z14.d, z10.d, z11.d
+04EB6025 mul z5.d, z1.d, z11.d
+04E86253 mul z19.d, z18.d, z8.d
+04A0601F mul z31.s, z0.s, z0.s
+047F63E0 mul z0.h, z31.h, z31.h

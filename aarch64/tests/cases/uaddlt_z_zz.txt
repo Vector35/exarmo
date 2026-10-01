@@ -1,0 +1,15 @@
+// uaddlt_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|0|op=0|S=0|U=1|T=1|Zn=xxxxx|Zd=xxxxx
+// UaddltZZz: UADDLT  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+45D50CA2 uaddlt z2.d, z5.s, z21.s
+45D80C79 uaddlt z25.d, z3.s, z24.s
+45C30CDC uaddlt z28.d, z6.s, z3.s
+45400C6F uaddlt z15.h, z3.b, z0.b
+45820C62 uaddlt z2.s, z3.h, z2.h
+45DC0F06 uaddlt z6.d, z24.s, z28.s
+45870ECA uaddlt z10.s, z22.h, z7.h
+455C0DD6 uaddlt z22.h, z14.b, z28.b
+45DF0C00 uaddlt z0.d, z0.s, z31.s
+45D50FFF uaddlt z31.d, z31.s, z21.s
+45150CA2 UNDEFINED
+45D50EA2 uaddlt z2.d, z21.s, z21.s

@@ -1,0 +1,20 @@
+// LDC_l_A1 cond=xxxx|11|0|P=x|U=x|D=0|W=x|L=1|Rn=1111|CRd=0101|1|11|cp15=0|imm8=xxxxxxxx
+// LdcLA1: LDC{<c>}{<q>}  p14, c5, <label>
+3d3f5e3f ldccc p14, c5, 0xff0c (unpredictable)
+ccbf5e53 ldcgt p14, c5, 0x10154 (unpredictable)
+cdbf5ef5 ldcgt p14, c5, 0x103dc (unpredictable)
+2d9f5ecc ldccs p14, c5, 0x10338
+6d1f5ef8 ldcvs p14, c5, 0xfc28
+cd3f5e1a ldcgt p14, c5, 0xffa0 (unpredictable)
+ed1f5e10 ldc p14, c5, 0xffc8
+9dbf5e66 ldcls p14, c5, 0x101a0 (unpredictable)
+0D3F5E00 ldceq p14, c5, 0x10008 (unpredictable)
+FD3F5E3F UNALLOCATED
+8D3F5EFF ldchi p14, c5, 0xfc0c (unpredictable)
+4D3F5E80 ldcmi p14, c5, 0xfe08 (unpredictable)
+1D3F5E40 ldcne p14, c5, 0xff08 (unpredictable)
+3D3F5E20 ldccc p14, c5, 0xff88 (unpredictable)
+3D3F5E08 ldccc p14, c5, 0xffe8 (unpredictable)
+3D3F5E04 ldccc p14, c5, 0xfff8 (unpredictable)
+3D3F5E02 ldccc p14, c5, 0x10000 (unpredictable)
+3D3F5E01 ldccc p14, c5, 0x10004 (unpredictable)

@@ -1,0 +1,14 @@
+// STREXB_A1 cond=xxxx|00|01|1|size=10|L=0|Rn=xxxx|Rd=xxxx|(1)(1)|ex=1|ord=1|1|00|1|Rt=xxxx
+// StrexbA1: STREXB{<c>}{<q>}  <Rd>, <Rt>, [<Rn>]
+// register fields: Rn, Rd, Rt
+a1c6ef95 strexbge lr, r5, [r6]
+c1c95f95 strexbgt r5, r5, [r9] (unpredictable)
+c1c75f94 strexbgt r5, r4, [r7]
+// Binary Ninja's tests
+e1c41f93 strexb r1, r3, [r4]
+01C00390 strexbeq r0, r0, [r0] (unpredictable)
+F1C6EF95 UNALLOCATED
+81CFF79F strexbhi pc, pc, [pc] (unpredictable)
+41C66B95 strexbmi r6, r5, [r6] (unpredictable)
+21C6EF96 strexbcs lr, r6, [r6]
+11C6EF95 strexbne lr, r5, [r6]

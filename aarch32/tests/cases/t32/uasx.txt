@@ -1,0 +1,16 @@
+// UASX_T1 111|11010|1|op1=010|Rn=xxxx|1111|Rd=xxxx|0|U=1|H=0|S=0|Rm=xxxx
+// UasxT1: UASX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+faaaf046 uasx r0, r10, r6
+faaefd4e uasx sp, lr, lr
+faa9f140 uasx r1, r9, r0
+faa4fa4d uasx r10, r4, sp
+faa8f447 uasx r4, r8, r7
+faaafb44 uasx r11, r10, r4
+faa2fe4c uasx lr, r2, r12
+faa6f941 uasx r9, r6, r1
+FAA0FF4F uasx pc, r0, pc (unpredictable)
+FAAFF040 uasx r0, pc, r0 (unpredictable)
+FAAAFA46 uasx r10, r10, r6
+FAAAF046 [ne] uasxne r0, r10, r6

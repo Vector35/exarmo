@@ -1,0 +1,46 @@
+// RCWSCLRP_128_memop_128 0|S=1|011001|A=0|R=0|1|Rt2=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsclrp128Memop128: RCWSCLRP  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+59209006 rcwsclrp x6, x0, [x0]
+5920900D rcwsclrp x13, x0, [x0]
+59209014 rcwsclrp x20, x0, [x0]
+592093E0 rcwsclrp x0, x0, [sp] (unpredictable)
+593F901F UNDEFINED
+59209000 rcwsclrp x0, x0, [x0] (unpredictable)
+592093E6 rcwsclrp x6, x0, [sp]
+592090C6 rcwsclrp x6, x0, [x6]
+
+// RCWSCLRPA_128_memop_128 0|S=1|011001|A=1|R=0|1|Rt2=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsclrpa128Memop128: RCWSCLRPA  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+59A09002 rcwsclrpa x2, x0, [x0]
+59A09009 rcwsclrpa x9, x0, [x0]
+59A09010 rcwsclrpa x16, x0, [x0]
+59A093E0 rcwsclrpa x0, x0, [sp] (unpredictable)
+59BF901F UNDEFINED
+59A09000 rcwsclrpa x0, x0, [x0] (unpredictable)
+59A093E2 rcwsclrpa x2, x0, [sp]
+59A09042 rcwsclrpa x2, x0, [x2]
+
+// RCWSCLRPAL_128_memop_128 0|S=1|011001|A=1|R=1|1|Rt2=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsclrpal128Memop128: RCWSCLRPAL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+59E09000 rcwsclrpal x0, x0, [x0] (unpredictable)
+59E09007 rcwsclrpal x7, x0, [x0]
+59E0900E rcwsclrpal x14, x0, [x0]
+59E093E0 rcwsclrpal x0, x0, [sp] (unpredictable)
+59FF901F UNDEFINED
+59E093E7 rcwsclrpal x7, x0, [sp]
+59E090E7 rcwsclrpal x7, x0, [x7]
+
+// RCWSCLRPL_128_memop_128 0|S=1|011001|A=0|R=1|1|Rt2=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwsclrpl128Memop128: RCWSCLRPL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+59609004 rcwsclrpl x4, x0, [x0]
+5960900B rcwsclrpl x11, x0, [x0]
+59609012 rcwsclrpl x18, x0, [x0]
+596093E0 rcwsclrpl x0, x0, [sp] (unpredictable)
+597F901F UNDEFINED
+59609000 rcwsclrpl x0, x0, [x0] (unpredictable)
+596093E4 rcwsclrpl x4, x0, [sp]
+59609084 rcwsclrpl x4, x0, [x4]

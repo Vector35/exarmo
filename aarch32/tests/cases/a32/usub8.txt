@@ -1,0 +1,19 @@
+// USUB8_A1 cond=xxxx|011|00|op1=101|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=1|op2=11|1|Rm=xxxx
+// Usub8A1: USUB8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+06554df6 usub8eq r4, r5, r6 (unpredictable)
+b65b5dfe usub8lt r5, r11, lr (unpredictable)
+d6507cf5 usub8le r7, r0, r5 (unpredictable)
+a6508ef5 usub8ge r8, r0, r5 (unpredictable)
+065448f6 usub8eq r4, r4, r6 (unpredictable)
+865771fe usub8hi r7, r7, lr (unpredictable)
+365468fa usub8lo r6, r4, r10 (unpredictable)
+6657bbf4 usub8vs r11, r7, r4 (unpredictable)
+// Binary Ninja's tests
+d6529ff3 usub8le r9, r2, r3
+e6581ff5 usub8 r1, r8, r5
+F6554DF6 UNALLOCATED
+465F00F0 usub8mi r0, pc, r0 (unpredictable)
+2655F4FF usub8cs pc, r5, pc (unpredictable)
+165542F5 usub8ne r4, r5, r5 (unpredictable)
+06554DF4 usub8eq r4, r5, r4 (unpredictable)

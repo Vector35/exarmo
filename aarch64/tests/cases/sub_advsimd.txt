@@ -1,0 +1,47 @@
+// SUB_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|opcode=10000|1|Rn=xxxxx|Rd=xxxxx
+// SubAsimdsameOnly: SUB  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+2E3B870C sub v12.8b, v24.8b, v27.8b
+6E2F8530 sub v16.16b, v9.16b, v15.16b
+6EA18574 sub v20.4s, v11.4s, v1.4s
+2E67860C sub v12.4h, v16.4h, v7.4h
+2EAE866C sub v12.2s, v19.2s, v14.2s
+6EB08687 sub v7.4s, v20.4s, v16.4s
+6E2585B2 sub v18.16b, v13.16b, v5.16b
+6E798529 sub v9.8h, v9.8h, v25.8h
+2E3B8752 sub v18.8b, v26.8b, v27.8b
+6EBE8494 sub v20.4s, v4.4s, v30.4s
+6EA0878F sub v15.4s, v28.4s, v0.4s
+6EBE8407 sub v7.4s, v0.4s, v30.4s
+6EBD8703 sub v3.4s, v24.4s, v29.4s
+6EAD846D sub v13.4s, v3.4s, v13.4s
+2E698762 sub v2.4h, v27.4h, v9.4h
+2E308722 sub v2.8b, v25.8b, v16.8b
+6EFF87E0 sub v0.2d, v31.2d, v31.2d
+2E3B871F sub v31.8b, v24.8b, v27.8b
+2EFB870C UNDEFINED
+
+// SUB_asisdsame_only 01|U=1|1|111|0|size=11|1|Rm=xxxxx|opcode=10000|1|Rn=xxxxx|Rd=xxxxx
+// SubAsisdsameOnly: SUB  <d>, <n>, <m>
+// register fields: Rm, Rn, Rd
+7EED85F9 sub d25, d15, d13
+7EFF877D sub d29, d27, d31
+7EE386B6 sub d22, d21, d3
+7EFE86DA sub d26, d22, d30
+7EF085AC sub d12, d13, d16
+7EEB8767 sub d7, d27, d11
+7EF18553 sub d19, d10, d17
+7EEC8523 sub d3, d9, d12
+7EE487AC sub d12, d29, d4
+7EEC86E2 sub d2, d23, d12
+7EF68696 sub d22, d20, d22
+7EE08620 sub d0, d17, d0
+7EF98476 sub d22, d3, d25
+7EFC8661 sub d1, d19, d28
+7EFF8757 sub d23, d26, d31
+7EFD8604 sub d4, d16, d29
+7EED841F sub d31, d0, d13
+7EED87F9 sub d25, d31, d13
+7EED85B9 sub d25, d13, d13
+7EED85EF sub d15, d15, d13

@@ -1,0 +1,51 @@
+// VST3_m_A1_nowb 111101000|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=1111
+// Vst3MA1Nowb: VST3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+f446f49f UNPREDICTABLE
+f444a59f vst3.32 {d26, d28, d30}, [r4:64]
+f442d41f vst3.8 {d29, d30, d31}, [r2:64]
+f401c50f vst3.8 {d12, d14, d16}, [r1]
+f44eb49f vst3.32 {d27, d28, d29}, [lr:64]
+f441341f vst3.8 {d19, d20, d21}, [r1:64]
+f447159f vst3.32 {d17, d19, d21}, [r7:64]
+F440045F vst3.16 {d16, d17, d18}, [r0:64]
+F44F849F vst3.32 {d24, d25, d26}, [pc:64] (unpredictable)
+F446449F vst3.32 {d20, d21, d22}, [r6:64]
+F446249F vst3.32 {d18, d19, d20}, [r6:64]
+F446F4EF UNDEFINED
+F446F4BF UNDEFINED
+F401F50F vst3.8 {d15, d17, d19}, [r1]
+
+// VST3_m_A1_posti 111101000|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=1101
+// Vst3MA1Posti: VST3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+f405044d vst3.16 {d0, d1, d2}, [r5]!
+f40cc49d vst3.32 {d12, d13, d14}, [r12:64]!
+f442855d vst3.16 {d24, d26, d28}, [r2:64]!
+f407150d vst3.8 {d1, d3, d5}, [r7]!
+f44c049d vst3.32 {d16, d17, d18}, [r12:64]!
+f443d55d UNPREDICTABLE
+f40c545d vst3.16 {d5, d6, d7}, [r12:64]!
+f40b548d vst3.32 {d5, d6, d7}, [r11]!
+F400F44D vst3.16 {d15, d16, d17}, [r0]!
+F40F444D vst3.16 {d4, d5, d6}, [pc]! (unpredictable)
+F405244D vst3.16 {d2, d3, d4}, [r5]!
+F40504ED UNDEFINED
+F405047D UNDEFINED
+
+// VST3_m_A1_postr 111101000|D=x|L=0|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=xxxx
+// Vst3MA1Postr: VST3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+f44f0500 vst3.8 {d16, d18, d20}, [pc], r0 (unpredictable)
+f409251c vst3.8 {d2, d4, d6}, [r9:64], r12
+f400d591 vst3.32 {d13, d15, d17}, [r0:64], r1
+f4028557 vst3.16 {d8, d10, d12}, [r2:64], r7
+f44a055b vst3.16 {d16, d18, d20}, [r10:64], r11
+f401441a vst3.8 {d4, d5, d6}, [r1:64], r10
+f40dd413 vst3.8 {d13, d14, d15}, [sp:64], r3
+f4045549 vst3.16 {d5, d7, d9}, [r4], r9
+F440F500 UNPREDICTABLE
+F44F1500 vst3.8 {d17, d19, d21}, [pc], r0 (unpredictable)
+F44F05EF UNDEFINED
+F44F0530 UNDEFINED
+F409F519 vst3.8 {d15, d17, d19}, [r9:64], r9

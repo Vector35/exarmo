@@ -1,0 +1,15 @@
+// SHA1H_A1 1111|0|01|1|1|D=x|11|size=xx|opc1=01|Vd=xxxx|0|opc2=0101|Q=1|M=x|0|Vm=xxxx
+// Sha1hA1: SHA1H.32  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f9c2e8 sha1h.32 q14, q12
+F3B902C0 sha1h.32 q0, q0
+F3F1F2EF UNDEFINED
+F3F512E1 UNDEFINED
+F3BDF2CF UNDEFINED
+F3F982E4 sha1h.32 q12, q10
+F3F942E2 sha1h.32 q10, q9
+F3F922C0 sha1h.32 q9, q0
+F3B902E0 sha1h.32 q0, q8
+F3F902E8 sha1h.32 q8, q12
+F3F9F2EF UNDEFINED

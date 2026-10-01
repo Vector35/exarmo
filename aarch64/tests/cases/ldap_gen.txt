@@ -1,0 +1,11 @@
+// LDAP_64_ldiappstilp size=11|01|1|0|0|10|L=1|0|Rt2=xxxxx|opc2=0101|10|Rn=xxxxx|Rt=xxxxx
+// Ldap64Ldiappstilp: LDAP  <Xt1>, <Xt2>, [<Xn|SP>{, #0}]
+// register fields: Rt2, Rn, Rt
+D9405803 ldap x3, x0, [x0]
+D940580A ldap x10, x0, [x0]
+D9405811 ldap x17, x0, [x0]
+D95F5BE0 ldap x0, xzr, [sp]
+D940581F ldap xzr, x0, [x0]
+D9405800 ldap x0, x0, [x0] (unpredictable)
+D9405863 ldap x3, x0, [x3]
+D9415843 ldap x3, x1, [x2]

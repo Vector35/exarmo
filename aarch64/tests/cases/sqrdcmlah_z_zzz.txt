@@ -1,0 +1,13 @@
+// sqrdcmlah_z_zzz_ 010|0010|0|size=xx|0|Zm=xxxxx|0|01|op=1|rot=xx|Zn=xxxxx|Zda=xxxxx
+// SqrdcmlahZZzz: SQRDCMLAH  <Zda>.<T>, <Zn>.<T>, <Zm>.<T>, <const>
+// register fields: Zm, Zn, Zda
+4417393A sqrdcmlah z26.b, z9.b, z23.b, #0xb4
+44D03836 sqrdcmlah z22.d, z1.d, z16.d, #0xb4
+44CE384C sqrdcmlah z12.d, z2.d, z14.d, #0xb4
+44CD34AD sqrdcmlah z13.d, z5.d, z13.d, #0x5a
+44DA321E sqrdcmlah z30.d, z16.d, z26.d, #0x0
+44913192 sqrdcmlah z18.s, z12.s, z17.s, #0x0
+440E3109 sqrdcmlah z9.b, z8.b, z14.b, #0x0
+44D239D1 sqrdcmlah z17.d, z14.d, z18.d, #0xb4
+44403C00 sqrdcmlah z0.h, z0.h, z0.h, #0x10e
+441F3BFF sqrdcmlah z31.b, z31.b, z31.b, #0xb4

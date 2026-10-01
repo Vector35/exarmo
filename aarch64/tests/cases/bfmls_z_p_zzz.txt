@@ -1,0 +1,15 @@
+// bfmls_z_p_zzz_ 011|0010|1|size=00|1|Zm=xxxxx|0|0|op=1|Pg=xxx|Zn=xxxxx|Zda=xxxxx
+// BfmlsZPZzz: BFMLS  <Zda>.H, <Pg>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pg, Zn, Zda
+65202001 bfmls z1.h, p0/m, z0.h, z0.h
+65202008 bfmls z8.h, p0/m, z0.h, z0.h
+6520200F bfmls z15.h, p0/m, z0.h, z0.h
+653F27E0 bfmls z0.h, p1/m, z31.h, z31.h
+6520281F bfmls z31.h, p2/m, z0.h, z0.h
+65202C01 bfmls z1.h, p3/m, z0.h, z0.h
+65203001 bfmls z1.h, p4/m, z0.h, z0.h
+65203401 bfmls z1.h, p5/m, z0.h, z0.h
+65203801 bfmls z1.h, p6/m, z0.h, z0.h
+65203C01 bfmls z1.h, p7/m, z0.h, z0.h
+65202000 bfmls z0.h, p0/m, z0.h, z0.h
+65212864 bfmls z4.h, p2/m, z3.h, z1.h

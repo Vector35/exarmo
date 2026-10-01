@@ -1,0 +1,86 @@
+// ANDS_32_log_shift sf=0|opc=11|01010|shift=xx|N=0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Ands32LogShift: ANDS  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// TstAnds32LogShift: TST  <Wn>, <Wm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+// form chosen on: Rd
+6A140D5B ands w27, w10, w20, lsl #0x3
+6A847118 ands w24, w8, w4, asr #0x1c
+6A442DE6 ands w6, w15, w4, lsr #0xb
+6A5A40C4 ands w4, w6, w26, lsr #0x10
+6ACB42D6 ands w22, w22, w11, ror #0x10
+6AD97CC1 ands w1, w6, w25, ror #0x1f
+6AC837FC ands w28, wzr, w8, ror #0xd
+6A84462B ands w11, w17, w4, asr #0x11
+6AD05283 ands w3, w20, w16, ror #0x14
+6A8361E3 ands w3, w15, w3, asr #0x18
+6A8831D7 ands w23, w14, w8, asr #0xc
+6ACE71CF ands w15, w14, w14, ror #0x1c
+6A042DC5 ands w5, w14, w4, lsl #0xb
+6A1A1CDC ands w28, w6, w26, lsl #0x7
+6AC27F90 ands w16, w28, w2, ror #0x1f
+6ACF1A68 ands w8, w19, w15, ror #0x6
+6A400A5F tst w18, w0, lsr #0x2
+6A9106FF tst w23, w17, asr #0x1
+6A8550DF tst w6, w5, asr #0x14
+6A914AFF tst w23, w17, asr #0x12
+6ACC675F tst w26, w12, ror #0x19
+6A81565F tst w18, w1, asr #0x15
+6A457BFF tst wzr, w5, lsr #0x1e
+6A072DFF tst w15, w7, lsl #0xb
+6A411E1F tst w16, w1, lsr #0x7
+6A4D3B1F tst w24, w13, lsr #0xe
+6A0E39DF tst w14, w14, lsl #0xe
+6AC93E9F tst w20, w9, ror #0xf
+6A94091F tst w8, w20, asr #0x2
+6A591CBF tst w5, w25, lsr #0x7
+6A5F00BF tst w5, wzr, lsr #0x0
+6ACE64FF tst w7, w14, ror #0x19
+6A140C00 ands w0, w0, w20, lsl #0x3
+6A14FD5B UNDEFINED
+6A14815B UNDEFINED
+6A14215B ands w27, w10, w20, lsl #0x8
+6A14115B ands w27, w10, w20, lsl #0x4
+6A072DEF ands w15, w15, w7, lsl #0xb
+
+// ANDS_64_log_shift sf=1|opc=11|01010|shift=xx|N=0|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Ands64LogShift: ANDS  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// TstAnds64LogShift: TST  <Xn>, <Xm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+// form chosen on: Rd
+EAC2202C ands x12, x1, x2, ror #0x8
+EA8AD6F2 ands x18, x23, x10, asr #0x35
+EA1391BB ands x27, x13, x19, lsl #0x24
+EA0A03B9 ands x25, fp, x10
+EA4D8AE5 ands x5, x23, x13, lsr #0x22
+EA4D5462 ands x2, x3, x13, lsr #0x15
+EA51F60D ands x13, x16, x17, lsr #0x3d
+EA843D02 ands x2, x8, x4, asr #0xf
+EAD2F6DC ands x28, x22, x18, ror #0x3d
+EA95C97A ands x26, x11, x21, asr #0x32
+EA8165E9 ands x9, x15, x1, asr #0x19
+EA44DA50 ands x16, x18, x4, lsr #0x36
+EA819BAC ands x12, fp, x1, asr #0x26
+EAC2E477 ands x23, x3, x2, ror #0x39
+EAC4E017 ands x23, x0, x4, ror #0x38
+EA42106B ands x11, x3, x2, lsr #0x4
+EA863DFF tst x15, x6, asr #0xf
+EA101BBF tst fp, x16, lsl #0x6
+EA5C57DF tst lr, x28, lsr #0x15
+EA4874DF tst x6, x8, lsr #0x1d
+EA0D415F tst x10, x13, lsl #0x10
+EAD2C47F tst x3, x18, ror #0x31
+EA523D1F tst x8, x18, lsr #0xf
+EA1AD79F tst x28, x26, lsl #0x35
+EAD6899F tst x12, x22, ror #0x22
+EAC2081F tst x0, x2, ror #0x2
+EA12405F tst x2, x18, lsl #0x10
+EA9E6EBF tst x21, lr, asr #0x1b
+EA1E217F tst x11, lr, lsl #0x8
+EA83FDFF tst x15, x3, asr #0x3f
+EACEC5DF tst x14, x14, ror #0x31
+EA8881DF tst x14, x8, asr #0x20
+EAC023E0 ands x0, xzr, x0, ror #0x8
+EADF202C ands x12, x1, xzr, ror #0x8
+EAC22021 ands x1, x1, x2, ror #0x8
+EAC2042C ands x12, x1, x2, ror #0x1
+EA0D414F ands x15, x10, x13, lsl #0x10

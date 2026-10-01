@@ -1,0 +1,23 @@
+// VADDHN_A1 1111|0|01|U=0|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=0100|N=x|0|M=x|0|Vm=xxxx
+// VaddhnA1: VADDHN{<c>}{<q>}.<dt>  <Dd>, <Qn>, <Qm>
+// read together by <Dd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f2cc548c vaddhn.i16 d21, q14, q6
+f2907480 vaddhn.i32 d7, q8, q0
+f2da3408 vaddhn.i32 d19, q5, q4
+f2a4840a vaddhn.i64 d8, q2, q5
+f2a8042c vaddhn.i64 d0, q4, q14
+f2c6242a vaddhn.i16 d18, q3, q13
+f28234a0 vaddhn.i16 d3, q9, q8
+f2e09484 vaddhn.i64 d25, q8, q2
+F2CF548F UNDEFINED
+F2C15481 UNDEFINED
+F2C0F402 vaddhn.i16 d31, q0, q1
+F2CC448C vaddhn.i16 d20, q14, q6
+F2CC148C vaddhn.i16 d17, q14, q6
+F28CF48C vaddhn.i16 d15, q14, q6
+F2CC048C vaddhn.i16 d16, q14, q6
+F2CCF48C vaddhn.i16 d31, q14, q6
+F2CF540F UNDEFINED
+F2CF54AF UNDEFINED

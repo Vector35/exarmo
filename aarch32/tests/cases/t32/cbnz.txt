@@ -1,0 +1,41 @@
+// CBNZ_T1 1011|op=1|0|i=x|1|imm5=xxxxx|Rn=xxx
+// CbnzT1: CBNZ{<q>}  <Rn>, <label>
+// read together by <label>: i, imm5
+// register fields: Rn
+b900 cbnz r0, 0x10004
+b901 cbnz r1, 0x10004
+b902 cbnz r2, 0x10004
+b903 cbnz r3, 0x10004
+b904 cbnz r4, 0x10004
+b905 cbnz r5, 0x10004
+b906 cbnz r6, 0x10004
+b907 cbnz r7, 0x10004
+BBF8 cbnz r0, 0x10082
+B980 cbnz r0, 0x10024
+B940 cbnz r0, 0x10014
+B920 cbnz r0, 0x1000c
+B910 cbnz r0, 0x10008
+B908 cbnz r0, 0x10006
+B9F8 cbnz r0, 0x10042
+BB00 cbnz r0, 0x10044
+
+// CBZ_T1 1011|op=0|0|i=x|1|imm5=xxxxx|Rn=xxx
+// CbzT1: CBZ{<q>}  <Rn>, <label>
+// read together by <label>: i, imm5
+// register fields: Rn
+b100 cbz r0, 0x10004
+b101 cbz r1, 0x10004
+b102 cbz r2, 0x10004
+b103 cbz r3, 0x10004
+b104 cbz r4, 0x10004
+b105 cbz r5, 0x10004
+b106 cbz r6, 0x10004
+b107 cbz r7, 0x10004
+B3F8 cbz r0, 0x10082
+B180 cbz r0, 0x10024
+B140 cbz r0, 0x10014
+B120 cbz r0, 0x1000c
+B110 cbz r0, 0x10008
+B108 cbz r0, 0x10006
+B1F8 cbz r0, 0x10042
+B300 cbz r0, 0x10044

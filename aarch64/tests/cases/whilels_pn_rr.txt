@@ -1,0 +1,12 @@
+// whilels_pn_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|vl=x|0|U=1|lt=1|Rn=xxxxx|1|eq=1|PNd=xxx
+// WhilelsPnRr: WHILELS  <PNd>.<T>, <Xn>, <Xm>, <vl>
+// register fields: Rm, Rn, PNd
+// WHILELS (predicate as counter) - PN8-PN15
+25e24c39 whilels pn9.d, x1, x2, vlx2
+25206C18 whilels pn8.b, x0, x0, vlx4
+257F4FFA whilels pn10.h, xzr, xzr, vlx2
+25A24C3B whilels pn11.s, x1, x2, vlx2
+25E24C3C whilels pn12.d, x1, x2, vlx2
+25E24C3D whilels pn13.d, x1, x2, vlx2
+25E24C3E whilels pn14.d, x1, x2, vlx2
+25E24C3F whilels pn15.d, x1, x2, vlx2

@@ -1,0 +1,22 @@
+// orn_p_p_pp_z 001|0010|1|op=1|S=0|00|Pm=xxxx|01|Pg=xxxx|o2=0|Pn=xxxx|o3=1|Pd=xxxx
+// OrnPPPpZ: ORN  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// register fields: Pm, Pg, Pn, Pd
+25896D93 orn p3.b, p11/z, p12.b, p9.b
+25836053 orn p3.b, p8/z, p2.b, p3.b
+258F757D orn p13.b, p13/z, p11.b, p15.b
+25877954 orn p4.b, p14/z, p10.b, p7.b
+2584719D orn p13.b, p12/z, p12.b, p4.b
+25897894 orn p4.b, p14/z, p4.b, p9.b
+25825453 orn p3.b, p5/z, p2.b, p2.b
+258C78B7 orn p7.b, p14/z, p5.b, p12.b
+25846039 orn p9.b, p8/z, p1.b, p4.b
+258F4599 orn p9.b, p1/z, p12.b, p15.b
+258A4CF8 orn p8.b, p3/z, p7.b, p10.b
+25865D7F orn p15.b, p7/z, p11.b, p6.b
+258071BF orn p15.b, p12/z, p13.b, p0.b
+25824C96 orn p6.b, p3/z, p4.b, p2.b
+25884498 orn p8.b, p1/z, p4.b, p8.b
+2587509C orn p12.b, p4/z, p4.b, p7.b
+25894010 orn p0.b, p0/z, p0.b, p9.b
+25897DF3 orn p3.b, p15/z, p15.b, p9.b
+25896593 orn p3.b, p9/z, p12.b, p9.b

@@ -1,0 +1,46 @@
+// NEG_asimdmisc_R 0|Q=x|U=1|0|111|0|size=xx|10000|opcode=01011|10|Rn=xxxxx|Rd=xxxxx
+// NegAsimdmiscR: NEG  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+2E20BB96 neg v22.8b, v28.8b
+6E60B9F1 neg v17.8h, v15.8h
+6E20BA67 neg v7.16b, v19.16b
+6E20BBFA neg v26.16b, v31.16b
+6E60B829 neg v9.8h, v1.8h
+2E60BB9D neg v29.4h, v28.4h
+2E20B8F6 neg v22.8b, v7.8b
+6E20B9AF neg v15.16b, v13.16b
+6E20BA7D neg v29.16b, v19.16b
+6E20B96B neg v11.16b, v11.16b
+6E20BB54 neg v20.16b, v26.16b
+2E20B92C neg v12.8b, v9.8b
+2E20BBFC neg v28.8b, v31.8b
+2EA0B99D neg v29.2s, v12.2s
+6E60BA87 neg v7.8h, v20.8h
+2EA0BA7E neg v30.2s, v19.2s
+6EE0B800 neg v0.2d, v0.2d
+2E20BB9F neg v31.8b, v28.8b
+2EE0BB96 UNDEFINED
+6EA0BB96 neg v22.4s, v28.4s
+
+// NEG_asisdmisc_R 01|U=1|1|111|0|size=11|10000|opcode=01011|10|Rn=xxxxx|Rd=xxxxx
+// NegAsisdmiscR: NEG  <d>, <n>
+// register fields: Rn, Rd
+7EE0B8F0 neg d16, d7
+7EE0BA03 neg d3, d16
+7EE0BB2B neg d11, d25
+7EE0B94F neg d15, d10
+7EE0BB01 neg d1, d24
+7EE0BB21 neg d1, d25
+7EE0BA7E neg d30, d19
+7EE0B86B neg d11, d3
+7EE0BAE4 neg d4, d23
+7EE0BB06 neg d6, d24
+7EE0BB40 neg d0, d26
+7EE0B98A neg d10, d12
+7EE0B9AE neg d14, d13
+7EE0B95E neg d30, d10
+7EE0BA50 neg d16, d18
+7EE0BBF3 neg d19, d31
+7EE0B81F neg d31, d0
+7EE0B8E7 neg d7, d7

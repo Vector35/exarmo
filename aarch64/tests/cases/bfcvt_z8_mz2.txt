@@ -1,0 +1,9 @@
+// bfcvt_z8_mz2_ 1|10|0000|1|0|op=1|1|001|00|111000|Zn=xxxx|0|Zd=xxxxx
+// BfcvtZ8Mz2: BFCVT  <Zd>.B, { <Zn1>.H-<Zn2>.H }
+// register fields: Zn, Zd
+C164E006 bfcvt z6.b, {z0.h-z1.h}
+C164E00D bfcvt z13.b, {z0.h-z1.h}
+C164E014 bfcvt z20.b, {z0.h-z1.h}
+C164E3C0 bfcvt z0.b, {z30.h-z31.h}
+C164E01F bfcvt z31.b, {z0.h-z1.h}
+C164E000 bfcvt z0.b, {z0.h-z1.h}

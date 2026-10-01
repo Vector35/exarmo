@@ -1,0 +1,21 @@
+// RET_64R_branch_reg 110|101|1|Z=0|0|op=10|op2=11111|0000|A=0|M=0|Rn=xxxxx|Rm=00000
+// Ret64rBranchReg: RET  {<Xn>}
+// register fields: Rn
+D65F0220 ret x17
+D65F0120 ret x9
+D65F03A0 ret fp
+D65F01C0 ret x14
+D65F0180 ret x12
+D65F03C0 ret
+D65F02C0 ret x22
+D65F0080 ret x4
+D65F0200 ret x16
+D65F0040 ret x2
+D65F0160 ret x11
+D65F01E0 ret x15
+D65F0340 ret x26
+D65F0260 ret x19
+D65F0240 ret x18
+D65F00E0 ret x7
+D65F0000 ret x0
+D65F03E0 ret xzr

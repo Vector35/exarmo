@@ -1,0 +1,75 @@
+// uzp1_z_zz_ 000|0010|1|size=xx|1|Zm=xxxxx|011|01|H=0|Zn=xxxxx|Zd=xxxxx
+// Uzp1ZZz: UZP1  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+052A6BA5 uzp1 z5.b, z29.b, z10.b
+05B46882 uzp1 z2.s, z4.s, z20.s
+05306B3F uzp1 z31.b, z25.b, z16.b
+05776994 uzp1 z20.h, z12.h, z23.h
+05E868CA uzp1 z10.d, z6.d, z8.d
+05F06BAE uzp1 z14.d, z29.d, z16.d
+052C6829 uzp1 z9.b, z1.b, z12.b
+056C689F uzp1 z31.h, z4.h, z12.h
+05B76AA6 uzp1 z6.s, z21.s, z23.s
+05736BBB uzp1 z27.h, z29.h, z19.h
+05AD6B0F uzp1 z15.s, z24.s, z13.s
+05686A25 uzp1 z5.h, z17.h, z8.h
+05B16B3D uzp1 z29.s, z25.s, z17.s
+05256970 uzp1 z16.b, z11.b, z5.b
+05A96B7D uzp1 z29.s, z27.s, z9.s
+05F0689B uzp1 z27.d, z4.d, z16.d
+05206800 uzp1 z0.b, z0.b, z0.b
+053F6BE5 uzp1 z5.b, z31.b, z31.b
+
+// uzp1_z_zz_q 000|0010|11|0|1|Zm=xxxxx|000|opc=01|H=0|Zn=xxxxx|Zd=xxxxx
+// Uzp1ZZzQ: UZP1  <Zd>.Q, <Zn>.Q, <Zm>.Q
+// register fields: Zm, Zn, Zd
+05A40ABA uzp1 z26.q, z21.q, z4.q
+05B50A4B uzp1 z11.q, z18.q, z21.q
+05A60ADF uzp1 z31.q, z22.q, z6.q
+05AE082F uzp1 z15.q, z1.q, z14.q
+05A00A6F uzp1 z15.q, z19.q, z0.q
+05B80808 uzp1 z8.q, z0.q, z24.q
+05AF0B15 uzp1 z21.q, z24.q, z15.q
+05A10B84 uzp1 z4.q, z28.q, z1.q
+05BF0BE0 uzp1 z0.q, z31.q, z31.q
+05A40AA4 uzp1 z4.q, z21.q, z4.q
+05A40AB5 uzp1 z21.q, z21.q, z4.q
+
+// uzp2_z_zz_ 000|0010|1|size=xx|1|Zm=xxxxx|011|01|H=1|Zn=xxxxx|Zd=xxxxx
+// Uzp2ZZz: UZP2  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+05EF6C78 uzp2 z24.d, z3.d, z15.d
+05726E9C uzp2 z28.h, z20.h, z18.h
+05786FAA uzp2 z10.h, z29.h, z24.h
+05FF6D04 uzp2 z4.d, z8.d, z31.d
+057C6D57 uzp2 z23.h, z10.h, z28.h
+05F36C8D uzp2 z13.d, z4.d, z19.d
+05EF6F09 uzp2 z9.d, z24.d, z15.d
+05AE6C59 uzp2 z25.s, z2.s, z14.s
+05BF6EAC uzp2 z12.s, z21.s, z31.s
+05B36EDF uzp2 z31.s, z22.s, z19.s
+05BA6C16 uzp2 z22.s, z0.s, z26.s
+05246D57 uzp2 z23.b, z10.b, z4.b
+05B76DFB uzp2 z27.s, z15.s, z23.s
+05BC6C33 uzp2 z19.s, z1.s, z28.s
+05666C66 uzp2 z6.h, z3.h, z6.h
+05E06FE3 uzp2 z3.d, z31.d, z0.d
+05EF6C60 uzp2 z0.d, z3.d, z15.d
+05EF6DF8 uzp2 z24.d, z15.d, z15.d
+05EF6C63 uzp2 z3.d, z3.d, z15.d
+
+// uzp2_z_zz_q 000|0010|11|0|1|Zm=xxxxx|000|opc=01|H=1|Zn=xxxxx|Zd=xxxxx
+// Uzp2ZZzQ: UZP2  <Zd>.Q, <Zn>.Q, <Zm>.Q
+// register fields: Zm, Zn, Zd
+05A00C87 uzp2 z7.q, z4.q, z0.q
+05BB0F10 uzp2 z16.q, z24.q, z27.q
+05B50ECF uzp2 z15.q, z22.q, z21.q
+05AE0F5B uzp2 z27.q, z26.q, z14.q
+05BA0C6F uzp2 z15.q, z3.q, z26.q
+05B80C95 uzp2 z21.q, z4.q, z24.q
+05A40F9F uzp2 z31.q, z28.q, z4.q
+05A00E16 uzp2 z22.q, z16.q, z0.q
+05BF0C00 uzp2 z0.q, z0.q, z31.q
+05A00FE7 uzp2 z7.q, z31.q, z0.q
+05A00C07 uzp2 z7.q, z0.q, z0.q
+05A00C80 uzp2 z0.q, z4.q, z0.q

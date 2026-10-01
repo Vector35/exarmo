@@ -1,0 +1,47 @@
+// RFE_T1_AS 111|0100|opc=00|0|W=x|L=1|Rn=xxxx|P=(1)|M=(1)|register_list=(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)
+// RfeT1As: RFEDB{<c>}{<q>}  <Rn>{<!>}
+// register fields: Rn
+// IT state read: condition, last in block
+E8100000 rfedb r0 (unpredictable)
+E83FFFFF rfedb pc! (unpredictable)
+E8102000 rfedb r0 (unpredictable)
+E8101000 rfedb r0 (unpredictable)
+E8100800 rfedb r0 (unpredictable)
+E8100400 rfedb r0 (unpredictable)
+E8100200 rfedb r0 (unpredictable)
+E8100100 rfedb r0 (unpredictable)
+E8100080 rfedb r0 (unpredictable)
+E8100040 rfedb r0 (unpredictable)
+E8100020 rfedb r0 (unpredictable)
+E8100010 rfedb r0 (unpredictable)
+E8100008 rfedb r0 (unpredictable)
+E8100004 rfedb r0 (unpredictable)
+E8100002 rfedb r0 (unpredictable)
+E8100001 rfedb r0 (unpredictable)
+E8100000 [ne] rfedbne r0 (unpredictable)
+E8100000 [ne last] rfedbne r0 (unpredictable)
+E810C000 rfedb r0
+
+// RFE_T2_AS 111|0100|opc=11|0|W=x|L=1|Rn=xxxx|P=(1)|M=(1)|register_list=(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)
+// RfeT2As: RFE{<IA>}{<c>}{<q>}  <Rn>{<!>}
+// register fields: Rn
+// IT state read: condition, last in block
+E9900000 rfe r0 (unpredictable)
+E9BFFFFF rfe pc! (unpredictable)
+E9902000 rfe r0 (unpredictable)
+E9901000 rfe r0 (unpredictable)
+E9900800 rfe r0 (unpredictable)
+E9900400 rfe r0 (unpredictable)
+E9900200 rfe r0 (unpredictable)
+E9900100 rfe r0 (unpredictable)
+E9900080 rfe r0 (unpredictable)
+E9900040 rfe r0 (unpredictable)
+E9900020 rfe r0 (unpredictable)
+E9900010 rfe r0 (unpredictable)
+E9900008 rfe r0 (unpredictable)
+E9900004 rfe r0 (unpredictable)
+E9900002 rfe r0 (unpredictable)
+E9900001 rfe r0 (unpredictable)
+E9900000 [ne] rfene r0 (unpredictable)
+E9900000 [ne last] rfene r0 (unpredictable)
+E990C000 rfe r0

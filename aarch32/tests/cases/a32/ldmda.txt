@@ -1,0 +1,32 @@
+// LDMDA_A1 cond=xxxx|10|0|P=0|U=0|op=0|W=x|L=1|Rn=xxxx|register_list=xxxxxxxxxxxxxxxx
+// LdmdaA1: LDMDA{<c>}{<q>}  <Rn>{<!>}, <registers>
+// register fields: Rn
+58190ce2 ldmdapl r9, {r1, r5, r6, r7, r10, r11}
+38181065 ldmdalo r8, {r0, r2, r5, r6, r12}
+b8316911 ldmdalt r1!, {r0, r4, r8, r11, sp, lr}
+58123d1c ldmdapl r2, {r2, r3, r4, r8, r10, r11, r12, sp}
+78155aa6 ldmdavc r5, {r1, r2, r5, r7, r9, r11, r12, lr}
+68131a1a ldmdavs r3, {r1, r3, r4, r9, r11, r12}
+8833a91c ldmdahi r3!, {r2, r3, r4, r8, r11, sp, pc} (unpredictable)
+483aeab0 ldmdami r10!, {r4, r5, r7, r9, r11, sp, lr, pc}
+// Binary Ninja's tests
+e812207a ldmda r2, {r1, r3, r4, r5, r6, sp}
+e832207a ldmda r2!, {r1, r3, r4, r5, r6, sp}
+08100000 ldmdaeq r0, {} (unpredictable)
+281FFFFF ldmdacs pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+18198000 ldmdane r9, {pc}
+58194000 ldmdapl r9, {lr}
+58192000 ldmdapl r9, {sp}
+58191000 ldmdapl r9, {r12}
+58190800 ldmdapl r9, {r11}
+58190400 ldmdapl r9, {r10}
+58190200 ldmdapl r9, {r9}
+58190100 ldmdapl r9, {r8}
+58190080 ldmdapl r9, {r7}
+58190040 ldmdapl r9, {r6}
+58190020 ldmdapl r9, {r5}
+58190010 ldmdapl r9, {r4}
+58190008 ldmdapl r9, {r3}
+58190004 ldmdapl r9, {r2}
+58190002 ldmdapl r9, {r1}
+58190001 ldmdapl r9, {r0}

@@ -1,0 +1,48 @@
+// VQSHRN_T1 111|U=x|11111|D=x|imm6=xxxxxx|Vd=xxxx|100|op=1|L=0|Q=0|M=x|1|Vm=xxxx
+// VqshrnT1: VQSHRN{<c>}{<q>}.<type><size>  <Dd>, <Qm>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef9a691e vqshrn.s32 d6, q7, #6
+fff40934 vqshrn.u64 d16, q10, #12
+efb10938 vqshrn.s64 d0, q12, #15
+efbf9912 vqshrn.s64 d9, q1, #1
+efafb91a vqshrn.s64 d11, q5, #17
+efe3093e vqshrn.s64 d16, q15, #29
+ffb5e93c vqshrn.u64 d14, q14, #11
+efb6d91a vqshrn.s64 d13, q5, #10
+EFA0F910 vqshrn.s64 d15, q0, #0x20
+EF908910 vqshrn.s32 d8, q0, #0x10
+EF884930 vqshrn.s16 d4, q8, #0x8
+EF9A291E vqshrn.s32 d2, q7, #0x6
+EF9A191E vqshrn.s32 d1, q7, #0x6
+EF9A691F UNDEFINED
+EF9A6911 UNDEFINED
+EF9AF91E vqshrn.s32 d15, q7, #0x6
+EFDAF91E vqshrn.s32 d31, q7, #0x6
+EF9A693F UNDEFINED
+EF9A691E [ne] vqshrnne.s32 d6, q7, #0x6
+
+// VQSHRUN_T1 111|U=1|11111|D=x|imm6=xxxxxx|Vd=xxxx|100|op=0|L=0|Q=0|M=x|1|Vm=xxxx
+// VqshrunT1: VQSHRUN{<c>}{<q>}.<type><size>  <Dd>, <Qm>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ff89583c vqshrun.s16 d5, q14, #7
+ffbbc83e vqshrun.s64 d12, q15, #5
+ff9b5814 vqshrun.s32 d5, q2, #5
+ffe1583c vqshrun.s64 d21, q14, #31
+ff94f814 vqshrun.s32 d15, q2, #12
+ffe44832 vqshrun.s64 d20, q9, #28
+ffef481c vqshrun.s64 d20, q6, #17
+fffe881e vqshrun.s64 d24, q7, #2
+FFBF0830 vqshrun.s64 d0, q8, #0x1
+FFA02838 vqshrun.s64 d2, q12, #0x20
+FF901810 vqshrun.s32 d1, q0, #0x10
+FF880830 vqshrun.s16 d0, q8, #0x8
+FF89583F UNDEFINED
+FF895831 UNDEFINED
+FFC9083C vqshrun.s16 d16, q14, #0x7
+FFC9F83C vqshrun.s16 d31, q14, #0x7
+FF89581F UNDEFINED
+FF89583C [ne] vqshrunne.s16 d5, q14, #0x7

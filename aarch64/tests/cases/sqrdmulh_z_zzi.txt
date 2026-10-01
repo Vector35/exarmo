@@ -1,0 +1,53 @@
+// sqrdmulh_z_zzi_d 010|0010|0|size=11|1|i1=x|Zm=xxxx|11110|R=1|Zn=xxxxx|Zd=xxxxx
+// SqrdmulhZZziD: SQRDMULH  <Zd>.D, <Zn>.D, <Zm>.D[<imm>]
+// register fields: Zm, Zn, Zd
+44F4F59A sqrdmulh z26.d, z12.d, z4.d[1]
+44F9F75A sqrdmulh z26.d, z26.d, z9.d[1]
+44F4F418 sqrdmulh z24.d, z0.d, z4.d[1]
+44E1F6C8 sqrdmulh z8.d, z22.d, z1.d[0]
+44E3F5D4 sqrdmulh z20.d, z14.d, z3.d[0]
+44E6F4BE sqrdmulh z30.d, z5.d, z6.d[0]
+44FEF4D9 sqrdmulh z25.d, z6.d, z14.d[1]
+44E8F73D sqrdmulh z29.d, z25.d, z8.d[0]
+44F0F7E0 sqrdmulh z0.d, z31.d, z0.d[1]
+44FFF59F sqrdmulh z31.d, z12.d, z15.d[1]
+44F4F49A sqrdmulh z26.d, z4.d, z4.d[1]
+
+// sqrdmulh_z_zzi_h 010|0010|0|0|i3h=x|1|i3l=xx|Zm=xxx|11110|R=1|Zn=xxxxx|Zd=xxxxx
+// SqrdmulhZZziH: SQRDMULH  <Zd>.H, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zd
+446FF5DC sqrdmulh z28.h, z14.h, z7.h[5]
+447AF5DD sqrdmulh z29.h, z14.h, z2.h[7]
+4469F689 sqrdmulh z9.h, z20.h, z1.h[5]
+4471F5CD sqrdmulh z13.h, z14.h, z1.h[6]
+4472F71E sqrdmulh z30.h, z24.h, z2.h[6]
+4427F770 sqrdmulh z16.h, z27.h, z7.h[0]
+446EF7C8 sqrdmulh z8.h, z30.h, z6.h[5]
+4437F5CA sqrdmulh z10.h, z14.h, z7.h[2]
+4468F400 sqrdmulh z0.h, z0.h, z0.h[5]
+446BF7FF sqrdmulh z31.h, z31.h, z3.h[5]
+446CF5DC sqrdmulh z28.h, z14.h, z4.h[5]
+446DF5DC sqrdmulh z28.h, z14.h, z5.h[5]
+442FF5DC sqrdmulh z28.h, z14.h, z7.h[1]
+443FF5DC sqrdmulh z28.h, z14.h, z7.h[3]
+4467F5DC sqrdmulh z28.h, z14.h, z7.h[4]
+
+// sqrdmulh_z_zzi_s 010|0010|0|size=10|1|i2=xx|Zm=xxx|11110|R=1|Zn=xxxxx|Zd=xxxxx
+// SqrdmulhZZziS: SQRDMULH  <Zd>.S, <Zn>.S, <Zm>.S[<imm>]
+// register fields: Zm, Zn, Zd
+44A1F793 sqrdmulh z19.s, z28.s, z1.s[0]
+44B3F447 sqrdmulh z7.s, z2.s, z3.s[2]
+44BFF6AF sqrdmulh z15.s, z21.s, z7.s[3]
+44B3F466 sqrdmulh z6.s, z3.s, z3.s[2]
+44B9F76B sqrdmulh z11.s, z27.s, z1.s[3]
+44ABF792 sqrdmulh z18.s, z28.s, z3.s[1]
+44A1F4E0 sqrdmulh z0.s, z7.s, z1.s[0]
+44B1F736 sqrdmulh z22.s, z25.s, z1.s[2]
+44A0F41F sqrdmulh z31.s, z0.s, z0.s[0]
+44A2F7F3 sqrdmulh z19.s, z31.s, z2.s[0]
+44A4F793 sqrdmulh z19.s, z28.s, z4.s[0]
+44A5F793 sqrdmulh z19.s, z28.s, z5.s[0]
+44A6F793 sqrdmulh z19.s, z28.s, z6.s[0]
+44A1F781 sqrdmulh z1.s, z28.s, z1.s[0]
+44A1F79C sqrdmulh z28.s, z28.s, z1.s[0]

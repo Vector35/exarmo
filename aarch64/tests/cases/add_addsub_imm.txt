@@ -1,0 +1,134 @@
+// ADD_32_addsub_imm sf=0|op=0|S=0|100010|sh=x|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Add32AddsubImm: ADD  <Wd|WSP>, <Wn|WSP>, #<imm>{, <shift>}
+// MovAdd32AddsubImm: MOV  <Wd|WSP>, <Wn|WSP>
+// read together by the MOV alias: sh, imm12, Rn, Rd
+// register fields: Rn, Rd
+// form chosen on: sh, imm12, Rn, Rd
+11446F08 add w8, w24, #0x11b, lsl #0xc
+1154992F add w15, w9, #0x526, lsl #0xc
+1158091C add w28, w8, #0x602, lsl #0xc
+1177E925 add w5, w9, #0xdfa, lsl #0xc
+1168B721 add w1, w25, #0xa2d, lsl #0xc
+115DA368 add w8, w27, #0x768, lsl #0xc
+11214723 add w3, w25, #0x851
+116690F7 add w23, w7, #0x9a4, lsl #0xc
+1155A7C9 add w9, w30, #0x569, lsl #0xc
+1172188E add w14, w4, #0xc86, lsl #0xc
+11158788 add w8, w28, #0x561
+1166E833 add w19, w1, #0x9ba, lsl #0xc
+1111C4B5 add w21, w5, #0x471
+11726EBA add w26, w21, #0xc9b, lsl #0xc
+11284A84 add w4, w20, #0xa12
+1104A1F8 add w24, w15, #0x128
+110003EE mov w14, wsp
+1100039F mov wsp, w28
+110003FD mov w29, wsp
+1100027F mov wsp, w19
+1100023F mov wsp, w17
+110002FF mov wsp, w23
+110003DF mov wsp, w30
+110002BF mov wsp, w21
+1100015F mov wsp, w10
+110003FB mov w27, wsp
+110003E2 mov w2, wsp
+110000DF mov wsp, w6
+110003F7 mov w23, wsp
+110003F2 mov w18, wsp
+110003EC mov w12, wsp
+110003F9 mov w25, wsp
+117FFC00 add w0, w0, #0xfff, lsl #0xc
+11000000 add w0, w0, #0x0
+1100001F mov wsp, w0
+110003E0 mov w0, wsp
+110003FF mov wsp, wsp
+113FFC00 add w0, w0, #0xfff
+113FFC1F add wsp, w0, #0xfff
+113FFFE0 add w0, wsp, #0xfff
+113FFFFF add wsp, wsp, #0xfff
+11400000 add w0, w0, #0x0, lsl #0xc
+1140001F add wsp, w0, #0x0, lsl #0xc
+114003E0 add w0, wsp, #0x0, lsl #0xc
+114003FF add wsp, wsp, #0x0, lsl #0xc
+117FFC1F add wsp, w0, #0xfff, lsl #0xc
+117FFFE0 add w0, wsp, #0xfff, lsl #0xc
+117FFFFF add wsp, wsp, #0xfff, lsl #0xc
+11600308 add w8, w24, #0x800, lsl #0xc
+11500308 add w8, w24, #0x400, lsl #0xc
+11480308 add w8, w24, #0x200, lsl #0xc
+11440308 add w8, w24, #0x100, lsl #0xc
+11420308 add w8, w24, #0x80, lsl #0xc
+11410308 add w8, w24, #0x40, lsl #0xc
+11408308 add w8, w24, #0x20, lsl #0xc
+11404308 add w8, w24, #0x10, lsl #0xc
+11402308 add w8, w24, #0x8, lsl #0xc
+11401308 add w8, w24, #0x4, lsl #0xc
+11400B08 add w8, w24, #0x2, lsl #0xc
+11400708 add w8, w24, #0x1, lsl #0xc
+
+// ADD_64_addsub_imm sf=1|op=0|S=0|100010|sh=x|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rd=xxxxx
+// Add64AddsubImm: ADD  <Xd|SP>, <Xn|SP>, #<imm>{, <shift>}
+// MovAdd64AddsubImm: MOV  <Xd|SP>, <Xn|SP>
+// read together by the MOV alias: sh, imm12, Rn, Rd
+// register fields: Rn, Rd
+// form chosen on: sh, imm12, Rn, Rd
+915390FE add lr, x7, #0x4e4, lsl #0xc
+911864DE add lr, x6, #0x619
+915D0E39 add x25, x17, #0x743, lsl #0xc
+916F254C add x12, x10, #0xbc9, lsl #0xc
+912236C0 add x0, x22, #0x88d
+91631ED7 add x23, x22, #0x8c7, lsl #0xc
+91599938 add x24, x9, #0x666, lsl #0xc
+9162D985 add x5, x12, #0x8b6, lsl #0xc
+912642A9 add x9, x21, #0x990
+9145919E add lr, x12, #0x164, lsl #0xc
+9137BC9B add x27, x4, #0xdef
+9129E707 add x7, x24, #0xa79
+91450E2A add x10, x17, #0x143, lsl #0xc
+9157ED0A add x10, x8, #0x5fb, lsl #0xc
+911DE46D add x13, x3, #0x779
+9164793B add x27, x9, #0x91e, lsl #0xc
+910003ED mov x13, sp
+910003FD mov fp, sp
+910003F1 mov x17, sp
+910003E5 mov x5, sp
+910000DF mov sp, x6
+910003F4 mov x20, sp
+910002FF mov sp, x23
+910003F3 mov x19, sp
+910003E1 mov x1, sp
+910003F5 mov x21, sp
+910000BF mov sp, x5
+9100017F mov sp, x11
+910003BF mov sp, fp
+9100001F mov sp, x0
+910003F9 mov x25, sp
+9100005F mov sp, x2
+917FFCFE add lr, x7, #0xfff, lsl #0xc
+91000000 add x0, x0, #0x0
+910003E0 mov x0, sp
+910003FF mov sp, sp
+913FFC00 add x0, x0, #0xfff
+913FFC1F add sp, x0, #0xfff
+913FFFE0 add x0, sp, #0xfff
+913FFFFF add sp, sp, #0xfff
+91400000 add x0, x0, #0x0, lsl #0xc
+9140001F add sp, x0, #0x0, lsl #0xc
+914003E0 add x0, sp, #0x0, lsl #0xc
+914003FF add sp, sp, #0x0, lsl #0xc
+917FFC00 add x0, x0, #0xfff, lsl #0xc
+917FFC1F add sp, x0, #0xfff, lsl #0xc
+917FFFE0 add x0, sp, #0xfff, lsl #0xc
+917FFFFF add sp, sp, #0xfff, lsl #0xc
+915390E7 add x7, x7, #0x4e4, lsl #0xc
+916000FE add lr, x7, #0x800, lsl #0xc
+915000FE add lr, x7, #0x400, lsl #0xc
+914800FE add lr, x7, #0x200, lsl #0xc
+914400FE add lr, x7, #0x100, lsl #0xc
+914200FE add lr, x7, #0x80, lsl #0xc
+914100FE add lr, x7, #0x40, lsl #0xc
+914080FE add lr, x7, #0x20, lsl #0xc
+914040FE add lr, x7, #0x10, lsl #0xc
+914020FE add lr, x7, #0x8, lsl #0xc
+914010FE add lr, x7, #0x4, lsl #0xc
+914008FE add lr, x7, #0x2, lsl #0xc
+914004FE add lr, x7, #0x1, lsl #0xc

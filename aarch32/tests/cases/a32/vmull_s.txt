@@ -1,0 +1,27 @@
+// VMULL_s_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1010|N=x|1|M=x|0|Vm=xxxx
+// VmullSA1: VMULL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>[<index>]
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <index>: M, Vm
+f2de8ae2 vmull.s16 q12, d30, d2[2]
+f2d86a67 vmull.s16 q11, d8, d7[2]
+f2a74aec vmull.s32 q2, d23, d12[1]
+f394ea48 vmull.u16 q7, d4, d0[1]
+f3a6cae6 vmull.u32 q6, d22, d6[1]
+f3944a68 vmull.u16 q2, d4, d0[3]
+f3e0aae1 vmull.u32 q13, d16, d1[1]
+f2e08acd vmull.s32 q12, d16, d13[0]
+F2CEFAE2 UNDEFINED
+F2F81A67 UNDEFINED
+F2DF0AE0 vmull.s16 q8, d31, d0[2]
+F2D22AEF vmull.s16 q9, d18, d7[3]
+F2910AE4 vmull.s16 q0, d17, d4[2]
+F28EFAE2 UNDEFINED
+F2F8FA67 UNDEFINED
+F3CE8AE2 UNDEFINED
+F2D00A40 vmull.s16 q8, d0, d0[0]
+F2DF8A4F vmull.s16 q12, d15, d7[1]
+F2DF8AE0 vmull.s16 q12, d31, d0[2]
+F2DE8AEF vmull.s16 q12, d30, d7[3]
+F3FE8AE2 UNPREDICTABLE

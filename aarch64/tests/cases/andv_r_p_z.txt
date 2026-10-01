@@ -1,0 +1,28 @@
+// andv_r_p_z_ 000|0010|0|size=xx|0|110|opc=10|001|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// AndvRPZ: ANDV  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+041A23E7 andv b7, p0, z31.b
+04DA2C7A andv d26, p3, z3.d
+041A23F5 andv b21, p0, z31.b
+041A3195 andv b21, p4, z12.b
+049A26D5 andv s21, p1, z22.s
+045A2434 andv h20, p1, z1.h
+04DA2711 andv d17, p1, z24.d
+045A20D0 andv h16, p0, z6.h
+04DA3426 andv d6, p5, z1.d
+041A34B4 andv b20, p5, z5.b
+049A3EC8 andv s8, p7, z22.s
+045A3C50 andv h16, p7, z2.h
+041A2841 andv b1, p2, z2.b
+049A261E andv s30, p1, z16.s
+041A2235 andv b21, p0, z17.b
+04DA2EE3 andv d3, p3, z23.d
+041A3800 andv b0, p6, z0.b
+041A23FF andv b31, p0, z31.b
+045A23E0 andv h0, p0, z31.h
+045A23FF andv h31, p0, z31.h
+049A23E0 andv s0, p0, z31.s
+049A23FF andv s31, p0, z31.s
+04DA23E0 andv d0, p0, z31.d
+04DA23FF andv d31, p0, z31.d

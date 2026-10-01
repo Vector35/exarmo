@@ -1,0 +1,10 @@
+// YIELD_A1 cond=xxxx|00|1|10|R=0|10|imm4=0000|(1)(1)(1)(1)|imm12=(0)(0)(0)(0)00000001
+// YieldA1: YIELD{<c>}{<q>}
+// Binary Ninja's tests
+1320f001 yieldne
+e320f001 yield
+03200F01 yieldeq (unpredictable)
+83208801 yieldhi (unpredictable)
+43204401 yieldmi (unpredictable)
+23202201 yieldcs (unpredictable)
+13201101 yieldne (unpredictable)

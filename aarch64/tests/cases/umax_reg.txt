@@ -1,0 +1,19 @@
+// UMAX_32_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|opcode=011001|Rn=xxxxx|Rd=xxxxx
+// Umax32Dp2src: UMAX  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AC06402 umax w2, w0, w0
+1AC06409 umax w9, w0, w0
+1AC06410 umax w16, w0, w0
+1ADF67E0 umax w0, wzr, wzr
+1AC0641F umax wzr, w0, w0
+1AC06400 umax w0, w0, w0
+1AC16443 umax w3, w2, w1
+
+// UMAX_64_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|opcode=011001|Rn=xxxxx|Rd=xxxxx
+// Umax64Dp2src: UMAX  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9AC06400 umax x0, x0, x0
+9AC06407 umax x7, x0, x0
+9AC0640E umax x14, x0, x0
+9ADF67FF umax xzr, xzr, xzr
+9AC16443 umax x3, x2, x1

@@ -1,0 +1,18 @@
+// SADD16_A1 cond=xxxx|011|00|op1=001|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=00|1|Rm=xxxx
+// Sadd16A1: SADD16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+a6191611 sadd16ge r1, r9, r1 (unpredictable)
+961ea71c sadd16ls r10, lr, r12 (unpredictable)
+86122216 sadd16hi r2, r2, r6 (unpredictable)
+06107112 sadd16eq r7, r0, r2 (unpredictable)
+b618cc17 sadd16lt r12, r8, r7 (unpredictable)
+561f2c11 sadd16pl r2, pc, r1 (unpredictable)
+461b411f sadd16mi r4, r11, pc (unpredictable)
+2611521e sadd16hs r5, r1, lr (unpredictable)
+// Binary Ninja's tests
+c6121f13 sadd16gt r1, r2, r3
+e6121f13 sadd16 r1, r2, r3
+F6191611 UNALLOCATED
+16190010 sadd16ne r0, r9, r0 (unpredictable)
+A619F819 sadd16ge pc, r9, r9 (unpredictable)
+A6191411 sadd16ge r1, r9, r1 (unpredictable)

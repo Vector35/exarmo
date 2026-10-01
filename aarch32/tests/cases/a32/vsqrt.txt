@@ -1,0 +1,68 @@
+// VSQRT_A1_D cond=xxxx|11101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=11|o3=1|1|M=x|0|Vm=xxxx
+// VsqrtA1D: VSQRT{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+def1dbeb vsqrtle.f64 d29, d27
+beb1fbcd vsqrtlt.f64 d15, d13
+2ef1abe9 vsqrths.f64 d26, d25
+bef13beb vsqrtlt.f64 d19, d27
+beb1abe7 vsqrtlt.f64 d10, d23
+def18be6 vsqrtle.f64 d24, d22
+aeb1abe7 vsqrtge.f64 d10, d23
+deb18bca vsqrtle.f64 d8, d10
+// Binary Ninja's tests
+eef10be0 vsqrt.f64 d16, d16
+0EF14BEF vsqrteq.f64 d20, d31
+FEF1DBEB UNALLOCATED
+8EF12BE8 vsqrthi.f64 d18, d24
+4EF11BE4 vsqrtmi.f64 d17, d20
+1EB10BE2 vsqrtne.f64 d0, d18
+DEF1FBE1 vsqrtle.f64 d31, d17
+DEF1DBC0 vsqrtle.f64 d29, d0
+DEF1DBCF vsqrtle.f64 d29, d15
+DEF1DBEF vsqrtle.f64 d29, d31
+
+// VSQRT_A1_H cond=xxxx|11101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=01|o3=1|1|M=x|0|Vm=xxxx
+// VsqrtA1H: VSQRT{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+aef199ea vsqrtge.f16 s19, s21 (unpredictable)
+7eb139e2 vsqrtvc.f16 s6, s5 (unpredictable)
+5eb1d9ed vsqrtpl.f16 s26, s27 (unpredictable)
+3eb119e8 vsqrtlo.f16 s2, s17 (unpredictable)
+3ef139e6 vsqrtlo.f16 s7, s13 (unpredictable)
+deb1b9e2 vsqrtle.f16 s22, s5 (unpredictable)
+7ef199c9 vsqrtvc.f16 s19, s18 (unpredictable)
+3eb1c9cf vsqrtlo.f16 s24, s30 (unpredictable)
+0EF109E0 vsqrteq.f16 s1, s1 (unpredictable)
+FEF199EA UNALLOCATED
+8EF1F9E4 vsqrthi.f16 s31, s9 (unpredictable)
+4EF189E1 vsqrtmi.f16 s17, s3 (unpredictable)
+2EF149C0 vsqrtcs.f16 s9, s0 (unpredictable)
+1EF129E0 vsqrtne.f16 s5, s1 (unpredictable)
+AEB109EF vsqrtge.f16 s0, s31 (unpredictable)
+AEB1F9EA vsqrtge.f16 s30, s21 (unpredictable)
+AEF109EA vsqrtge.f16 s1, s21 (unpredictable)
+AEF1F9EA vsqrtge.f16 s31, s21 (unpredictable)
+
+// VSQRT_A1_S cond=xxxx|11101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=10|o3=1|1|M=x|0|Vm=xxxx
+// VsqrtA1S: VSQRT{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+2ef10aec vsqrths.f32 s1, s25
+8ef1bac1 vsqrthi.f32 s23, s2
+aeb1aacb vsqrtge.f32 s20, s22
+3eb18ac4 vsqrtlo.f32 s16, s8
+6eb12ac5 vsqrtvs.f32 s4, s10
+7ef1cacd vsqrtvc.f32 s25, s26
+ceb11ae6 vsqrtgt.f32 s2, s13
+eeb10ae4 vsqrt.f32 s0, s9
+// Binary Ninja's tests
+eeb10ac0 vsqrt.f32 s0, s0
+0EF1FAEF vsqrteq.f32 s31, s31
+FEF10AEC UNALLOCATED
+4EF14AE8 vsqrtmi.f32 s9, s17
+1EB1FAE2 vsqrtne.f32 s30, s5
+2EF1FACF vsqrtcs.f32 s31, s30
+2EF10AE0 vsqrtcs.f32 s1, s1
+2EF10AEF vsqrtcs.f32 s1, s31

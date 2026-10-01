@@ -1,0 +1,14 @@
+// subp_z_p_zz_ 010|0010|0|size=xx|0|10|opc=00|U=0|10|1|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SubpZPZz: SUBP  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+4410A002 subp z2.b, p0/m, z2.b, z0.b
+4410A009 subp z9.b, p0/m, z9.b, z0.b
+4410A010 subp z16.b, p0/m, z16.b, z0.b
+4450A7E0 subp z0.h, p1/m, z0.h, z31.h
+4490A81F subp z31.s, p2/m, z31.s, z0.s
+44D0AC02 subp z2.d, p3/m, z2.d, z0.d
+4410B002 subp z2.b, p4/m, z2.b, z0.b
+4410B402 subp z2.b, p5/m, z2.b, z0.b
+4410B802 subp z2.b, p6/m, z2.b, z0.b
+4410BC02 subp z2.b, p7/m, z2.b, z0.b
+4410A000 subp z0.b, p0/m, z0.b, z0.b

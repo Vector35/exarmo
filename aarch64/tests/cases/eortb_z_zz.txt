@@ -1,0 +1,13 @@
+// eortb_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|10|010|tb=1|Zn=xxxxx|Zd=xxxxx
+// EortbZZz: EORTB  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+45CE96EA eortb z10.d, z23.d, z14.d
+45DB96C7 eortb z7.d, z22.d, z27.d
+45429477 eortb z23.h, z3.h, z2.h
+450794D8 eortb z24.b, z6.b, z7.b
+45C1965C eortb z28.d, z18.d, z1.d
+458D9558 eortb z24.s, z10.s, z13.s
+45D196D8 eortb z24.d, z22.d, z17.d
+459C95F6 eortb z22.s, z15.s, z28.s
+45C09400 eortb z0.d, z0.d, z0.d
+45DF97FF eortb z31.d, z31.d, z31.d

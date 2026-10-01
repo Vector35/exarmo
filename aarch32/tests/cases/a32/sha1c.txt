@@ -1,0 +1,20 @@
+// SHA1C_A1 1111|0|01|U=0|0|D=x|size=00|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=x|M=x|o1=0|Vm=xxxx
+// Sha1cA1: SHA1C.32  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f204ac60 sha1c.32 q5, q2, q8
+f2404cc2 sha1c.32 q10, q8, q1
+f24c4c46 sha1c.32 q10, q6, q3
+f24c4cc4 sha1c.32 q10, q14, q2
+f244ac62 sha1c.32 q13, q2, q9
+f246cc64 sha1c.32 q14, q3, q10
+F20FFC2F UNDEFINED
+F2080C68 sha1c.32 q0, q4, q12
+F2028C40 sha1c.32 q4, q1, q0
+F2011C61 UNDEFINED
+F2002C60 sha1c.32 q1, q0, q8
+F2040C60 sha1c.32 q0, q2, q8
+F20FFC4F UNDEFINED
+F2440C60 sha1c.32 q8, q2, q8
+F24FFCEF UNDEFINED

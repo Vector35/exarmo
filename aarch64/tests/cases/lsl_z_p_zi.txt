@@ -1,0 +1,136 @@
+// lsl_z_p_zi_ 000|0010|0|tszh=xx|0|0|opc=00|L=1|U=1|100|Pg=xxx|tszl=xx|imm3=xxx|Zdn=xxxxx
+// LslZPZi: LSL  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Pg, Zdn
+04C389E3 lsl z3.d, p2/m, z3.d, #0x2f
+044395BF lsl z31.s, p5/m, z31.s, #0xd
+04C3923C lsl z28.d, p4/m, z28.d, #0x31
+044398CE lsl z14.s, p6/m, z14.s, #0x6
+040391DA lsl z26.b, p4/m, z26.b, #0x6
+0483896F lsl z15.d, p2/m, z15.d, #0xb
+04838B12 lsl z18.d, p2/m, z18.d, #0x18
+044399A1 lsl z1.s, p6/m, z1.s, #0xd
+04839865 lsl z5.d, p6/m, z5.d, #0x3
+04439DFB lsl z27.s, p7/m, z27.s, #0xf
+044391FF lsl z31.s, p4/m, z31.s, #0xf
+04C392D4 lsl z20.d, p4/m, z20.d, #0x36
+04039EE4 lsl z4.h, p7/m, z4.h, #0x7
+04439B9B lsl z27.s, p6/m, z27.s, #0x1c
+04038D4D lsl z13.b, p3/m, z13.b, #0x2
+04C39848 lsl z8.d, p6/m, z8.d, #0x22
+04C381E0 lsl z0.d, p0/m, z0.d, #0x2f
+04C385E3 lsl z3.d, p1/m, z3.d, #0x2f
+04038803 UNDEFINED
+04038823 UNDEFINED
+04038843 UNDEFINED
+04038863 UNDEFINED
+04038883 UNDEFINED
+040388A3 UNDEFINED
+040388C3 UNDEFINED
+040388E3 UNDEFINED
+04038903 lsl z3.b, p2/m, z3.b, #0x0
+04038923 lsl z3.b, p2/m, z3.b, #0x1
+04038963 lsl z3.b, p2/m, z3.b, #0x3
+04038983 lsl z3.b, p2/m, z3.b, #0x4
+040389A3 lsl z3.b, p2/m, z3.b, #0x5
+040389E3 lsl z3.b, p2/m, z3.b, #0x7
+04038A03 lsl z3.h, p2/m, z3.h, #0x0
+04038A23 lsl z3.h, p2/m, z3.h, #0x1
+04038A43 lsl z3.h, p2/m, z3.h, #0x2
+04038A63 lsl z3.h, p2/m, z3.h, #0x3
+04038A83 lsl z3.h, p2/m, z3.h, #0x4
+04038AA3 lsl z3.h, p2/m, z3.h, #0x5
+04038AC3 lsl z3.h, p2/m, z3.h, #0x6
+04038B03 lsl z3.h, p2/m, z3.h, #0x8
+04038B23 lsl z3.h, p2/m, z3.h, #0x9
+04038B43 lsl z3.h, p2/m, z3.h, #0xa
+04038B63 lsl z3.h, p2/m, z3.h, #0xb
+04038B83 lsl z3.h, p2/m, z3.h, #0xc
+04038BA3 lsl z3.h, p2/m, z3.h, #0xd
+04038BC3 lsl z3.h, p2/m, z3.h, #0xe
+04038BE3 lsl z3.h, p2/m, z3.h, #0xf
+04438803 lsl z3.s, p2/m, z3.s, #0x0
+04438823 lsl z3.s, p2/m, z3.s, #0x1
+04438843 lsl z3.s, p2/m, z3.s, #0x2
+04438863 lsl z3.s, p2/m, z3.s, #0x3
+04438883 lsl z3.s, p2/m, z3.s, #0x4
+044388A3 lsl z3.s, p2/m, z3.s, #0x5
+044388E3 lsl z3.s, p2/m, z3.s, #0x7
+04438903 lsl z3.s, p2/m, z3.s, #0x8
+04438923 lsl z3.s, p2/m, z3.s, #0x9
+04438943 lsl z3.s, p2/m, z3.s, #0xa
+04438963 lsl z3.s, p2/m, z3.s, #0xb
+04438983 lsl z3.s, p2/m, z3.s, #0xc
+044389C3 lsl z3.s, p2/m, z3.s, #0xe
+04438A03 lsl z3.s, p2/m, z3.s, #0x10
+04438A23 lsl z3.s, p2/m, z3.s, #0x11
+04438A43 lsl z3.s, p2/m, z3.s, #0x12
+04438A63 lsl z3.s, p2/m, z3.s, #0x13
+04438A83 lsl z3.s, p2/m, z3.s, #0x14
+04438AA3 lsl z3.s, p2/m, z3.s, #0x15
+04438AC3 lsl z3.s, p2/m, z3.s, #0x16
+04438AE3 lsl z3.s, p2/m, z3.s, #0x17
+04438B03 lsl z3.s, p2/m, z3.s, #0x18
+04438B23 lsl z3.s, p2/m, z3.s, #0x19
+04438B43 lsl z3.s, p2/m, z3.s, #0x1a
+04438B63 lsl z3.s, p2/m, z3.s, #0x1b
+04438BA3 lsl z3.s, p2/m, z3.s, #0x1d
+04438BC3 lsl z3.s, p2/m, z3.s, #0x1e
+04438BE3 lsl z3.s, p2/m, z3.s, #0x1f
+04838803 lsl z3.d, p2/m, z3.d, #0x0
+04838823 lsl z3.d, p2/m, z3.d, #0x1
+04838843 lsl z3.d, p2/m, z3.d, #0x2
+04838883 lsl z3.d, p2/m, z3.d, #0x4
+048388A3 lsl z3.d, p2/m, z3.d, #0x5
+048388C3 lsl z3.d, p2/m, z3.d, #0x6
+048388E3 lsl z3.d, p2/m, z3.d, #0x7
+04838903 lsl z3.d, p2/m, z3.d, #0x8
+04838923 lsl z3.d, p2/m, z3.d, #0x9
+04838943 lsl z3.d, p2/m, z3.d, #0xa
+04838983 lsl z3.d, p2/m, z3.d, #0xc
+048389A3 lsl z3.d, p2/m, z3.d, #0xd
+048389C3 lsl z3.d, p2/m, z3.d, #0xe
+048389E3 lsl z3.d, p2/m, z3.d, #0xf
+04838A03 lsl z3.d, p2/m, z3.d, #0x10
+04838A23 lsl z3.d, p2/m, z3.d, #0x11
+04838A43 lsl z3.d, p2/m, z3.d, #0x12
+04838A63 lsl z3.d, p2/m, z3.d, #0x13
+04838A83 lsl z3.d, p2/m, z3.d, #0x14
+04838AA3 lsl z3.d, p2/m, z3.d, #0x15
+04838AC3 lsl z3.d, p2/m, z3.d, #0x16
+04838AE3 lsl z3.d, p2/m, z3.d, #0x17
+04838B23 lsl z3.d, p2/m, z3.d, #0x19
+04838B43 lsl z3.d, p2/m, z3.d, #0x1a
+04838B63 lsl z3.d, p2/m, z3.d, #0x1b
+04838B83 lsl z3.d, p2/m, z3.d, #0x1c
+04838BA3 lsl z3.d, p2/m, z3.d, #0x1d
+04838BC3 lsl z3.d, p2/m, z3.d, #0x1e
+04838BE3 lsl z3.d, p2/m, z3.d, #0x1f
+04C38803 lsl z3.d, p2/m, z3.d, #0x20
+04C38823 lsl z3.d, p2/m, z3.d, #0x21
+04C38863 lsl z3.d, p2/m, z3.d, #0x23
+04C38883 lsl z3.d, p2/m, z3.d, #0x24
+04C388A3 lsl z3.d, p2/m, z3.d, #0x25
+04C388C3 lsl z3.d, p2/m, z3.d, #0x26
+04C388E3 lsl z3.d, p2/m, z3.d, #0x27
+04C38903 lsl z3.d, p2/m, z3.d, #0x28
+04C38923 lsl z3.d, p2/m, z3.d, #0x29
+04C38943 lsl z3.d, p2/m, z3.d, #0x2a
+04C38963 lsl z3.d, p2/m, z3.d, #0x2b
+04C38983 lsl z3.d, p2/m, z3.d, #0x2c
+04C389A3 lsl z3.d, p2/m, z3.d, #0x2d
+04C389C3 lsl z3.d, p2/m, z3.d, #0x2e
+04C38A03 lsl z3.d, p2/m, z3.d, #0x30
+04C38A43 lsl z3.d, p2/m, z3.d, #0x32
+04C38A63 lsl z3.d, p2/m, z3.d, #0x33
+04C38A83 lsl z3.d, p2/m, z3.d, #0x34
+04C38AA3 lsl z3.d, p2/m, z3.d, #0x35
+04C38AE3 lsl z3.d, p2/m, z3.d, #0x37
+04C38B03 lsl z3.d, p2/m, z3.d, #0x38
+04C38B23 lsl z3.d, p2/m, z3.d, #0x39
+04C38B43 lsl z3.d, p2/m, z3.d, #0x3a
+04C38B63 lsl z3.d, p2/m, z3.d, #0x3b
+04C38B83 lsl z3.d, p2/m, z3.d, #0x3c
+04C38BA3 lsl z3.d, p2/m, z3.d, #0x3d
+04C38BC3 lsl z3.d, p2/m, z3.d, #0x3e
+04C38BE3 lsl z3.d, p2/m, z3.d, #0x3f

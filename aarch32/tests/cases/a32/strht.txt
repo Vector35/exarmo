@@ -1,0 +1,39 @@
+// STRHT_A1 cond=xxxx|00|0|P=0|U=x|1|W=1|o1=0|Rn=xxxx|Rt=xxxx|imm4H=xxxx|1|op2=01|1|imm4L=xxxx
+// StrhtA1: STRHT{<c>}{<q>}  <Rt>, [<Rn>] {, #{<+/->}<imm>}
+// read together by <imm>: imm4H, imm4L
+// register fields: Rn, Rt
+d0621fb7 strhtle r1, [r2], #-247
+006ba6b4 strhteq r10, [r11], #-100
+106586b9 strhtne r8, [r5], #-105
+90644ab0 strhtls r4, [r4], #-160 (unpredictable)
+70ebd5bf strhtvc sp, [r11], #95
+00e3edb0 strhteq lr, [r3], #208
+a0ec08b4 strhtge r0, [r12], #132
+3069f0bc strhtlo pc, [r9], #-12 (unpredictable)
+// Binary Ninja's tests
+e06181b9 strht r8, [r1], #-25
+e0e010b4 strht r1, [r0], #4
+e0e524bc strht r2, [r5], #76
+F0621FB7 UNALLOCATED
+806F12B8 strhthi r1, [pc], #-0x28 (unpredictable)
+40621FB2 strhtmi r1, [r2], #-0xf2
+20621FB1 strhtcs r1, [r2], #-0xf1
+D06210B0 strhtle r1, [r2], #-0x0
+D06210BF strhtle r1, [r2], #-0xf
+D0621FB0 strhtle r1, [r2], #-0xf0
+D0621FBF strhtle r1, [r2], #-0xff
+
+// STRHT_A2 cond=xxxx|00|0|P=0|U=x|0|W=1|o1=0|Rn=xxxx|Rt=xxxx|(0)(0)(0)(0)|1|op2=01|1|Rm=xxxx
+// StrhtA2: STRHT{<c>}{<q>}  <Rt>, [<Rn>], {<+/->}<Rm>
+// register fields: Rn, Rt, Rm
+702f80bf strhtvc r8, [pc], -pc (unpredictable)
+// Binary Ninja's tests
+e02860b0 strht r6, [r8], -r0
+e0a010b2 strht r1, [r0], r2
+e0a350b4 strht r5, [r3], r4
+002F0FBF strhteq r0, [pc], -pc (unpredictable)
+F02F80BF UNALLOCATED
+802FF8BF strhthi pc, [pc], -pc (unpredictable)
+402FF4BF strhtmi pc, [pc], -pc (unpredictable)
+202F82B8 strhtcs r8, [pc], -r8 (unpredictable)
+102F81BF strhtne r8, [pc], -pc (unpredictable)

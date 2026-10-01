@@ -1,0 +1,15 @@
+// mova_mz_za2_1 1|10|0000|0|00|000|1|1|00|Rv=xx|010|00|off3=xxx|Zd=xxxx|0
+// MovaMzZa21: MOVA  { <Zd1>.D-<Zd2>.D }, ZA.D[<Wv>, <offs>{, VGx2}]
+// MovMzZa21MovaMzZa21: MOV  { <Zd1>.D-<Zd2>.D }, ZA.D[<Wv>, <offs>{, VGx2}]
+// register fields: Rv, Zd
+C0060802 mov {z2.d-z3.d}, za.d[w8, 0, vgx2]
+C0060810 mov {z16.d-z17.d}, za.d[w8, 0, vgx2]
+C006081E mov {z30.d-z31.d}, za.d[w8, 0, vgx2]
+C0062820 mov {z0.d-z1.d}, za.d[w9, 1, vgx2]
+C0064842 mov {z2.d-z3.d}, za.d[w10, 2, vgx2]
+C0066862 mov {z2.d-z3.d}, za.d[w11, 3, vgx2]
+C0060882 mov {z2.d-z3.d}, za.d[w8, 4, vgx2]
+C00608A2 mov {z2.d-z3.d}, za.d[w8, 5, vgx2]
+C00608C2 mov {z2.d-z3.d}, za.d[w8, 6, vgx2]
+C00608E2 mov {z2.d-z3.d}, za.d[w8, 7, vgx2]
+C0060800 mov {z0.d-z1.d}, za.d[w8, 0, vgx2]

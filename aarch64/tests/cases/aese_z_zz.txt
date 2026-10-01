@@ -1,0 +1,13 @@
+// aese_z_zz_ 010|0010|1|size=00|1|000|1|op=0|111|00|o2=0|Zm=xxxxx|Zdn=xxxxx
+// AeseZZz: AESE  <Zdn>.B, <Zdn>.B, <Zm>.B
+// register fields: Zm, Zdn
+4522E116 aese z22.b, z22.b, z8.b
+4522E271 aese z17.b, z17.b, z19.b
+4522E2EA aese z10.b, z10.b, z23.b
+4522E348 aese z8.b, z8.b, z26.b
+4522E38C aese z12.b, z12.b, z28.b
+4522E356 aese z22.b, z22.b, z26.b
+4522E32A aese z10.b, z10.b, z25.b
+4522E398 aese z24.b, z24.b, z28.b
+4522E000 aese z0.b, z0.b, z0.b
+4522E3FF aese z31.b, z31.b, z31.b

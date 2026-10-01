@@ -1,0 +1,45 @@
+// SRSHL_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|010|R=1|S=0|1|Rn=xxxxx|Rd=xxxxx
+// SrshlAsimdsameOnly: SRSHL  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+0E7B569D srshl v29.4h, v20.4h, v27.4h
+4EF35738 srshl v24.2d, v25.2d, v19.2d
+4E3C568D srshl v13.16b, v20.16b, v28.16b
+4EF15600 srshl v0.2d, v16.2d, v17.2d
+4E2C5653 srshl v19.16b, v18.16b, v12.16b
+0E315733 srshl v19.8b, v25.8b, v17.8b
+4E37568B srshl v11.16b, v20.16b, v23.16b
+4E3C56DB srshl v27.16b, v22.16b, v28.16b
+4E365644 srshl v4.16b, v18.16b, v22.16b
+4EF65417 srshl v23.2d, v0.2d, v22.2d
+4E3B54C8 srshl v8.16b, v6.16b, v27.16b
+0E735441 srshl v1.4h, v2.4h, v19.4h
+0E6F57B4 srshl v20.4h, v29.4h, v15.4h
+4E2055F5 srshl v21.16b, v15.16b, v0.16b
+0E325795 srshl v21.8b, v28.8b, v18.8b
+4E6F57C2 srshl v2.8h, v30.8h, v15.8h
+0EBF57FF srshl v31.2s, v31.2s, v31.2s
+0EFB569D UNDEFINED
+4EBB569D srshl v29.4s, v20.4s, v27.4s
+
+// SRSHL_asisdsame_only 01|U=0|1|111|0|size=11|1|Rm=xxxxx|010|R=1|S=0|1|Rn=xxxxx|Rd=xxxxx
+// SrshlAsisdsameOnly: SRSHL  <d>, <n>, <m>
+// register fields: Rm, Rn, Rd
+5EFE57E2 srshl d2, d31, d30
+5EE4549F srshl d31, d4, d4
+5EE457D0 srshl d16, d30, d4
+5EED5510 srshl d16, d8, d13
+5EE854F6 srshl d22, d7, d8
+5EE754F1 srshl d17, d7, d7
+5EF956D9 srshl d25, d22, d25
+5EF05515 srshl d21, d8, d16
+5EE95533 srshl d19, d9, d9
+5EE25763 srshl d3, d27, d2
+5EE257A3 srshl d3, d29, d2
+5EE25695 srshl d21, d20, d2
+5EF8555C srshl d28, d10, d24
+5EE65781 srshl d1, d28, d6
+5EF0557E srshl d30, d11, d16
+5EF15554 srshl d20, d10, d17
+5EE05400 srshl d0, d0, d0
+5EFF57E2 srshl d2, d31, d31

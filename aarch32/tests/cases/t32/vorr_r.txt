@@ -1,0 +1,75 @@
+// VORR_r_T1_D 111|U=0|11110|D=x|size=10|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VmovVorrRT1D: VMOV{<c>}{<q>}{.<dt>}  <Dd>, <Dm>
+// VorrRT1D: VORR{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by the VMOV alias: Vn, N, M, Vm
+// form chosen on: Vn, N, M, Vm
+// IT state read: condition
+ef6f8115 vorr d24, d15, d5
+ef25f1bd vorr d15, d21, d29
+ef2a8137 vorr d8, d10, d23
+ef60a1b9 vorr d26, d16, d25
+ef6ff138 vorr d31, d15, d24
+ef208191 vorr d8, d16, d1
+ef6c5134 vorr d21, d12, d20
+ef6b61b9 vorr d22, d27, d25
+EF680110 vorr d16, d8, d0
+EF64411F vorr d20, d4, d15
+EF622112 vmov d18, d2
+EF611115 vorr d17, d1, d5
+EF200110 vmov d0, d0
+EF60011F vorr d16, d0, d15
+EF608130 vorr d24, d0, d16
+EF60813F vorr d24, d0, d31
+EF608190 vorr d24, d16, d0
+EF60819F vorr d24, d16, d15
+EF6081B0 vmov d24, d16
+EF6081BF vorr d24, d16, d31
+EF6F8110 vorr d24, d15, d0
+EF6F811F vmov d24, d15
+EF6F8130 vorr d24, d15, d16
+EF6F813F vorr d24, d15, d31
+EF6F8190 vorr d24, d31, d0
+EF6F819F vorr d24, d31, d15
+EF6F81B0 vorr d24, d31, d16
+EF6F81BF vmov d24, d31
+EF622112 [ne] vmovne d18, d2
+EF6F8115 [ne] vorrne d24, d15, d5
+
+// VORR_r_T1_Q 111|U=0|11110|D=x|size=10|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VmovVorrRT1Q: VMOV{<c>}{<q>}{.<dt>}  <Qd>, <Qm>
+// VorrRT1Q: VORR{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by the VMOV alias: Vn, N, M, Vm
+// form chosen on: Vn, N, M, Vm
+// IT state read: condition
+ef6e81d6 vorr q12, q15, q3
+ef2c217a vorr q1, q6, q13
+ef2ce176 vorr q7, q6, q11
+ef64e1fe vorr q15, q10, q15
+ef6ce1d0 vorr q15, q14, q0
+ef6841d8 vorr q10, q12, q4
+ef62c1d0 vorr q14, q9, q0
+ef688158 vmov q12, q4
+EF6001D4 vorr q8, q8, q2
+EF6FF1DF UNDEFINED
+EF6111D1 UNDEFINED
+EF2E01D2 vorr q0, q15, q1
+EF20F15F UNDEFINED
+EF600150 vmov q8, q0
+EF60F17F UNDEFINED
+EF608170 vorr q12, q0, q8
+EF6081D0 vorr q12, q8, q0
+EF6081DF UNDEFINED
+EF6081F0 vmov q12, q8
+EF6081FF UNDEFINED
+EF6F8150 UNDEFINED
+EF6F815F UNDEFINED
+EF6F8170 UNDEFINED
+EF6F817F UNDEFINED
+EF6F81D0 UNDEFINED
+EF6F81DF UNDEFINED
+EF6F81F0 UNDEFINED
+EF6F81FF UNDEFINED
+EF688158 [ne] vmovne q12, q4
+EF6E81D6 [ne] vorrne q12, q15, q3

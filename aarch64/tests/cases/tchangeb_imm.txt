@@ -1,0 +1,14 @@
+// TCHANGEB_tc_imm 110|101|011001|op1=01x|op2=(0)(0)(0)(0)(0)|imm7=xxxxxxx|Rd=xxxxx
+// TchangebTcImm: TCHANGEB  <Xd>, #<imm>{, <nb>}
+// register fields: Rd
+D5940202 tchangeb x2, #0x10
+D5960E1E tchangeb lr, #0x70, nb
+D5940D0D tchangeb x13, #0x68
+D595F000 tchangeb x0, #0x0 (unpredictable)
+D5940FFF tchangeb xzr, #0x7f
+D5950802 tchangeb x2, #0x40 (unpredictable)
+D5948402 tchangeb x2, #0x20 (unpredictable)
+D5944102 tchangeb x2, #0x8 (unpredictable)
+D5942082 tchangeb x2, #0x4 (unpredictable)
+D5941042 tchangeb x2, #0x2 (unpredictable)
+D5940022 tchangeb x2, #0x1

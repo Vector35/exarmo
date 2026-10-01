@@ -1,0 +1,25 @@
+// TRN1_asimdperm_only 0|Q=x|00|111|0|size=xx|0|Rm=xxxxx|0|op=0|10|10|Rn=xxxxx|Rd=xxxxx
+// Trn1AsimdpermOnly: TRN1  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+0E132B06 trn1 v6.8b, v24.8b, v19.8b
+4EDB2913 trn1 v19.2d, v8.2d, v27.2d
+0E032893 trn1 v19.8b, v4.8b, v3.8b
+4E4829BD trn1 v29.8h, v13.8h, v8.8h
+0E162920 trn1 v0.8b, v9.8b, v22.8b
+0E4D2923 trn1 v3.4h, v9.4h, v13.4h
+4E0E2994 trn1 v20.16b, v12.16b, v14.16b
+0E072919 trn1 v25.8b, v8.8b, v7.8b
+0E5729F7 trn1 v23.4h, v15.4h, v23.4h
+4E932BF8 trn1 v24.4s, v31.4s, v19.4s
+4E5C2ADA trn1 v26.8h, v22.8h, v28.8h
+0E172BD1 trn1 v17.8b, v30.8b, v23.8b
+0E942818 trn1 v24.2s, v0.2s, v20.2s
+0E8428F8 trn1 v24.2s, v7.2s, v4.2s
+4E982980 trn1 v0.4s, v12.4s, v24.4s
+0E412B5D trn1 v29.4h, v26.4h, v1.4h
+0E002B1F trn1 v31.8b, v24.8b, v0.8b
+0E1F2B06 trn1 v6.8b, v24.8b, v31.8b
+0ED32B06 UNDEFINED
+0E132A66 trn1 v6.8b, v19.8b, v19.8b
+0E132B18 trn1 v24.8b, v24.8b, v19.8b

@@ -1,0 +1,10 @@
+// bfmmla_z_zzz_h 011|0010|01|op=1|1|Zm=xxxxx|111000|Zn=xxxxx|Zda=xxxxx
+// BfmmlaZZzzH: BFMMLA  <Zda>.H, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zda
+64E0E005 bfmmla z5.h, z0.h, z0.h
+64E0E00C bfmmla z12.h, z0.h, z0.h
+64E0E013 bfmmla z19.h, z0.h, z0.h
+64FFE3E0 bfmmla z0.h, z31.h, z31.h
+64E0E01F bfmmla z31.h, z0.h, z0.h
+64E0E000 bfmmla z0.h, z0.h, z0.h
+64E1E043 bfmmla z3.h, z2.h, z1.h

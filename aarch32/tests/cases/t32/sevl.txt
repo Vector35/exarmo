@@ -1,0 +1,17 @@
+// SEVL_T1 1011|1111|hint=0101|0000
+// SevlT1: SEVL{<c>}{<q>}
+// IT state read: condition
+bf50 sevl
+BF50 [ne] sevlne
+
+// SEVL_T2 111|10|0|1110|10|(1)(1)(1)(1)|1|0(0)0|(0)|000|hint=0000|option=0101
+// SevlT2: SEVL{<c>}.W
+// IT state read: condition
+F3A08005 sevl (unpredictable)
+F3AFA805 sevl (unpredictable)
+F3A88005 sevl (unpredictable)
+F3A48005 sevl (unpredictable)
+F3A28005 sevl (unpredictable)
+F3A18005 sevl (unpredictable)
+F3A08005 [ne] sevlne (unpredictable)
+F3AF8005 sevl

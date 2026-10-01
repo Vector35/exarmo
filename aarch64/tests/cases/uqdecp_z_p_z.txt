@@ -1,0 +1,22 @@
+// uqdecp_z_p_z_ 001|0010|1|size=xx|101|0|D=1|U=1|1000|0|opc=00|Pm=xxxx|Zdn=xxxxx
+// UqdecpZPZ: UQDECP  <Zdn>.<T>, <Pm>.<T>
+// register fields: Pm, Zdn
+256B8104 uqdecp z4.h, p8.h
+256B80E4 uqdecp z4.h, p7.h
+25EB8034 uqdecp z20.d, p1.d
+25EB80DC uqdecp z28.d, p6.d
+25AB81C3 uqdecp z3.s, p14.s
+25EB8097 uqdecp z23.d, p4.d
+25AB8079 uqdecp z25.s, p3.s
+25AB81FA uqdecp z26.s, p15.s
+25AB804E uqdecp z14.s, p2.s
+25EB810D uqdecp z13.d, p8.d
+25AB81B7 uqdecp z23.s, p13.s
+25AB8026 uqdecp z6.s, p1.s
+256B8132 uqdecp z18.h, p9.h
+25AB80D4 uqdecp z20.s, p6.s
+25EB8094 uqdecp z20.d, p4.d
+256B802C uqdecp z12.h, p1.h
+256B8000 uqdecp z0.h, p0.h
+256B811F uqdecp z31.h, p8.h
+252B8104 UNDEFINED

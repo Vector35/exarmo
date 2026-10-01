@@ -1,0 +1,48 @@
+// FMLS_asimdsame_only 0|Q=x|U=0|0|111|0|op=1|sz=x|1|Rm=xxxxx|opcode=11001|1|Rn=xxxxx|Rd=xxxxx
+// FmlsAsimdsameOnly: FMLS  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+4EA1CF9A fmls v26.4s, v28.4s, v1.4s
+0EA1CD00 fmls v0.2s, v8.2s, v1.2s
+4EF5CFB2 fmls v18.2d, v29.2d, v21.2d
+0EA3CCF7 fmls v23.2s, v7.2s, v3.2s
+4EB8CF8A fmls v10.4s, v28.4s, v24.4s
+0EA5CF5E fmls v30.2s, v26.2s, v5.2s
+4EACCE9D fmls v29.4s, v20.4s, v12.4s
+0EBECD2F fmls v15.2s, v9.2s, v30.2s
+0EA3CF28 fmls v8.2s, v25.2s, v3.2s
+4EE7CF75 fmls v21.2d, v27.2d, v7.2d
+4EE4CD25 fmls v5.2d, v9.2d, v4.2d
+4EEDCD83 fmls v3.2d, v12.2d, v13.2d
+0EB6CCFD fmls v29.2s, v7.2s, v22.2s
+4EEACC12 fmls v18.2d, v0.2d, v10.2d
+4EEACEE4 fmls v4.2d, v23.2d, v10.2d
+4EE2CCD4 fmls v20.2d, v6.2d, v2.2d
+4EA0CFFF fmls v31.4s, v31.4s, v0.4s
+4EBFCF9A fmls v26.4s, v28.4s, v31.4s
+0EE1CF9A UNDEFINED
+4EA1CC3A fmls v26.4s, v1.4s, v1.4s
+4EA1CF81 fmls v1.4s, v28.4s, v1.4s
+
+// FMLS_asimdsamefp16_only 0|Q=x|U=0|0|111|0|a=1|10|Rm=xxxxx|00|opcode=001|1|Rn=xxxxx|Rd=xxxxx
+// FmlsAsimdsamefp16Only: FMLS  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+0EC40F36 fmls v22.4h, v25.4h, v4.4h
+0ECC0DFA fmls v26.4h, v15.4h, v12.4h
+0ED50DB4 fmls v20.4h, v13.4h, v21.4h
+4ED60D43 fmls v3.8h, v10.8h, v22.8h
+0EC90C47 fmls v7.4h, v2.4h, v9.4h
+4EC40DAE fmls v14.8h, v13.8h, v4.8h
+4EC20C13 fmls v19.8h, v0.8h, v2.8h
+4ED60C99 fmls v25.8h, v4.8h, v22.8h
+0ECD0C72 fmls v18.4h, v3.4h, v13.4h
+0EDA0F61 fmls v1.4h, v27.4h, v26.4h
+4ECC0D81 fmls v1.8h, v12.8h, v12.8h
+4EC30D88 fmls v8.8h, v12.8h, v3.8h
+4ED10D10 fmls v16.8h, v8.8h, v17.8h
+4EDB0E4A fmls v10.8h, v18.8h, v27.8h
+0EC90CB5 fmls v21.4h, v5.4h, v9.4h
+0EC10C4B fmls v11.4h, v2.4h, v1.4h
+0EC00FE0 fmls v0.4h, v31.4h, v0.4h
+0EDF0F3F fmls v31.4h, v25.4h, v31.4h
+0EC40F39 fmls v25.4h, v25.4h, v4.4h

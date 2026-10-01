@@ -1,0 +1,14 @@
+// srshl_z_p_zz_ 010|0010|0|size=xx|0|0|Q=0|R=0|N=1|U=0|10|0|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SrshlZPZz: SRSHL  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+44829D8C srshl z12.s, p7/m, z12.s, z12.s
+448289E9 srshl z9.s, p2/m, z9.s, z15.s
+44829B5E srshl z30.s, p6/m, z30.s, z26.s
+44C28F90 srshl z16.d, p3/m, z16.d, z28.d
+44C295AD srshl z13.d, p5/m, z13.d, z13.d
+44028A85 srshl z5.b, p2/m, z5.b, z20.b
+4442884C srshl z12.h, p2/m, z12.h, z2.h
+448294C2 srshl z2.s, p5/m, z2.s, z6.s
+44828000 srshl z0.s, p0/m, z0.s, z0.s
+448287FF srshl z31.s, p1/m, z31.s, z31.s
+4482918C srshl z12.s, p4/m, z12.s, z12.s

@@ -1,0 +1,28 @@
+// SMLAL_asimddiff_L 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|10|o1=0|0|00|Rn=xxxxx|Rd=xxxxx
+// SmlalAsimddiffL: SMLAL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// SmlalAsimddiffL2: SMLAL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+4E6283C5 smlal2 v5.4s, v30.8h, v2.8h
+0E2D83DA smlal v26.8h, v30.8b, v13.8b
+4E79832D smlal2 v13.4s, v25.8h, v25.8h
+4EAF8023 smlal2 v3.2d, v1.4s, v15.4s
+4EBD811D smlal2 v29.2d, v8.4s, v29.4s
+0EBA82E5 smlal v5.2d, v23.2s, v26.2s
+0E3883B3 smlal v19.8h, v29.8b, v24.8b
+0E7880E5 smlal v5.4s, v7.4h, v24.4h
+4EA48303 smlal2 v3.2d, v24.4s, v4.4s
+0E768290 smlal v16.4s, v20.4h, v22.4h
+0E61801B smlal v27.4s, v0.4h, v1.4h
+4EA08142 smlal2 v2.2d, v10.4s, v0.4s
+0E6B81B3 smlal v19.4s, v13.4h, v11.4h
+4E678057 smlal2 v23.4s, v2.8h, v7.8h
+4E288242 smlal2 v2.8h, v18.16b, v8.16b
+4E368201 smlal2 v1.8h, v16.16b, v22.16b
+4E7F83E0 smlal2 v0.4s, v31.8h, v31.8h
+4E6283DF smlal2 v31.4s, v30.8h, v2.8h
+4EE283C5 UNDEFINED
+0EE283C5 UNDEFINED
+4E6283DE smlal2 v30.4s, v30.8h, v2.8h
+4E2D83DA smlal2 v26.8h, v30.16b, v13.16b

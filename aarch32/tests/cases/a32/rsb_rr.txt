@@ -1,0 +1,42 @@
+// RSB_rr_A1 cond=xxxx|0000|opc=011|S=0|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// RsbRrA1: RSB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+b0686531 rsblt r6, r8, r1, lsr r5
+00650575 rsbeq r0, r5, r5, ror r5
+b061225c rsblt r2, r1, r12, asr r2
+60640b76 rsbvs r0, r4, r6, ror r11
+8069dd18 rsbhi sp, r9, r8, lsl sp
+b06b2078 rsblt r2, r11, r8, ror r0
+e06b465e rsb r4, r11, lr, asr r6
+40689f11 rsbmi r9, r8, r1, lsl pc (unpredictable)
+// Binary Ninja's tests
+c0666917 rsbgt r6, r6, r7, lsl r9
+d0676978 rsble r6, r7, r8, ror r9
+e0666937 rsb r6, r6, r7, lsr r9
+e0666957 rsb r6, r6, r7, asr r9
+e0666977 rsb r6, r6, r7, ror r9
+e0676918 rsb r6, r7, r8, lsl r9
+e0676938 rsb r6, r7, r8, lsr r9
+e0676958 rsb r6, r7, r8, asr r9
+F0686531 UNALLOCATED
+2060F530 rsbcs pc, r0, r0, lsr r5 (unpredictable)
+106F653F rsbne r6, pc, pc, lsr r5 (unpredictable)
+B0686536 rsblt r6, r8, r6, lsr r5
+
+// RSBS_rr_A1 cond=xxxx|0000|opc=011|S=1|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// RsbsRrA1: RSBS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+a0726478 rsbsge r6, r2, r8, ror r4
+707b8b1a rsbsvc r8, r11, r10, lsl r11
+607fbd58 rsbsvs r11, pc, r8, asr sp (unpredictable)
+607e255e rsbsvs r2, lr, lr, asr r5
+b0746452 rsbslt r6, r4, r2, asr r4
+3070941f rsbslo r9, r0, pc, lsl r4 (unpredictable)
+a0725356 rsbsge r5, r2, r6, asr r3
+907c0e36 rsbsls r0, r12, r6, lsr lr
+0072F070 rsbseq pc, r2, r0, ror r0 (unpredictable)
+F0726478 UNALLOCATED
+80722F78 rsbshi r2, r2, r8, ror pc (unpredictable)
+40726678 rsbsmi r6, r2, r8, ror r6
+20726476 rsbscs r6, r2, r6, ror r4
+10726474 rsbsne r6, r2, r4, ror r4

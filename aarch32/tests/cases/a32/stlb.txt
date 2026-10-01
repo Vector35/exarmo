@@ -1,0 +1,11 @@
+// STLB_A1 cond=xxxx|00|01|1|size=10|L=0|Rn=xxxx|xRd=(1)(1)(1)(1)|(1)(1)|ex=0|ord=0|1|00|1|Rt=xxxx
+// StlbA1: STLB{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// Binary Ninja's tests
+e1c1fc92 stlb r2, [r1]
+01C00090 stlbeq r0, [r0] (unpredictable)
+F1C1FC92 UNALLOCATED
+81CF849F stlbhi pc, [pc] (unpredictable)
+41C14891 stlbmi r1, [r1] (unpredictable)
+21C12C92 stlbcs r2, [r1] (unpredictable)
+11C11C92 stlbne r2, [r1] (unpredictable)

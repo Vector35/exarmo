@@ -1,0 +1,15 @@
+// fmaxnmqv_z_p_z_ 011|0010|0|size=xx|010|opc=100|101|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// FmaxnmqvZPZ: FMAXNMQV  <Vd>.<T>, <Pg>, <Zn>.<Tb>
+// register fields: Pg, Zn, Vd
+6454A002 fmaxnmqv v2.8h, p0, z0.h
+6454A009 fmaxnmqv v9.8h, p0, z0.h
+6454A010 fmaxnmqv v16.8h, p0, z0.h
+6494A7E0 fmaxnmqv v0.4s, p1, z31.s
+64D4A81F fmaxnmqv v31.2d, p2, z0.d
+6454AC02 fmaxnmqv v2.8h, p3, z0.h
+6454B002 fmaxnmqv v2.8h, p4, z0.h
+6454B402 fmaxnmqv v2.8h, p5, z0.h
+6454B802 fmaxnmqv v2.8h, p6, z0.h
+6454BC02 fmaxnmqv v2.8h, p7, z0.h
+6414A002 UNDEFINED
+6454A000 fmaxnmqv v0.8h, p0, z0.h

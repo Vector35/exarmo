@@ -1,0 +1,43 @@
+// VCVT_ds_A1 cond=xxxx|11101|D=x|11|o1=0|opc2=111|Vd=xxxx|10|size=10|o3=1|1|M=x|0|Vm=xxxx
+// VcvtDsA1: VCVT{<c>}{<q>}.F64.F32  <Dd>, <Sm>
+// read together by <Dd>: D, Vd
+// read together by <Sm>: M, Vm
+5eb7cae1 vcvtpl.f64.f32 d12, s3
+2eb79acb vcvths.f64.f32 d9, s22
+1ef7dae1 vcvtne.f64.f32 d29, s3
+1ef7facc vcvtne.f64.f32 d31, s24
+9eb78ac0 vcvtls.f64.f32 d8, s0
+8eb77aca vcvthi.f64.f32 d7, s20
+3ef7fae0 vcvtlo.f64.f32 d31, s1
+9ef74ac4 vcvtls.f64.f32 d20, s8
+// Binary Ninja's tests
+eef70ac0 vcvt.f64.f32 d16, s0
+0EB72AEF vcvteq.f64.f32 d2, s31
+FEB7CAE1 UNALLOCATED
+4EB71AE8 vcvtmi.f64.f32 d1, s17
+5EB70AE2 vcvtpl.f64.f32 d0, s5
+5EB7FACF vcvtpl.f64.f32 d15, s30
+5EB7CAEF vcvtpl.f64.f32 d12, s31
+
+// VCVT_sd_A1 cond=xxxx|11101|D=x|11|o1=0|opc2=111|Vd=xxxx|10|size=11|o3=1|1|M=x|0|Vm=xxxx
+// VcvtSdA1: VCVT{<c>}{<q>}.F32.F64  <Sd>, <Dm>
+// read together by <Sd>: D, Vd
+// read together by <Dm>: M, Vm
+1ef79be3 vcvtne.f32.f64 s19, d19
+beb70bca vcvtlt.f32.f64 s0, d10
+cef7cbec vcvtgt.f32.f64 s25, d28
+4eb77be2 vcvtmi.f32.f64 s14, d18
+9ef78bed vcvtls.f32.f64 s17, d29
+6ef7ebc1 vcvtvs.f32.f64 s29, d1
+0eb79bce vcvteq.f32.f64 s18, d14
+0ef76bc9 vcvteq.f32.f64 s13, d9
+// Binary Ninja's tests
+eeb70be0 vcvt.f32.f64 s0, d16
+FEF79BE3 UNALLOCATED
+8EF7FBEF vcvthi.f32.f64 s31, d31
+2EF74BE8 vcvtcs.f32.f64 s9, d24
+1EF72BE4 vcvtne.f32.f64 s5, d20
+1EF71BC0 vcvtne.f32.f64 s3, d0
+1EB7FBCF vcvtne.f32.f64 s30, d15
+1EF70BEF vcvtne.f32.f64 s1, d31
+1EF7FBE3 vcvtne.f32.f64 s31, d19

@@ -1,0 +1,48 @@
+// STRT_A1 cond=xxxx|010|P=0|U=x|op2=0|W=1|op1=0|Rn=xxxx|Rt=xxxx|imm12=xxxxxxxxxxxx
+// StrtA1: STRT{<c>}{<q>}  <Rt>, [<Rn>] {, #{<+/->}<imm>}
+// register fields: Rn, Rt
+24a212ad strths r1, [r2], #685
+642c9f1c strtvs r9, [r12], #-3868
+442ec30a strtmi r12, [lr], #-778
+14af44f6 strtne r4, [pc], #1270 (unpredictable)
+a4a8aca7 strtge r10, [r8], #3239
+24a53ead strths r3, [r5], #3757
+d4a504fa strtle r0, [r5], #1274
+e4a74da3 strt r4, [r7], #3491
+// Binary Ninja's tests
+e4a01004 strt r1, [r0], #4
+04A2F000 strteq pc, [r2]
+F42C9F1C UNALLOCATED
+84A22FFF strthi r2, [r2], #0xfff (unpredictable)
+24A21800 strtcs r1, [r2], #0x800
+24A21400 strtcs r1, [r2], #0x400
+24A21200 strtcs r1, [r2], #0x200
+24A21100 strtcs r1, [r2], #0x100
+24A21080 strtcs r1, [r2], #0x80
+24A21040 strtcs r1, [r2], #0x40
+24A21020 strtcs r1, [r2], #0x20
+24A21010 strtcs r1, [r2], #0x10
+24A21008 strtcs r1, [r2], #0x8
+24A21002 strtcs r1, [r2], #0x2
+24A21001 strtcs r1, [r2], #0x1
+
+// STRT_A2 cond=xxxx|011|P=0|U=x|op2=0|W=1|op1=0|Rn=xxxx|Rt=xxxx|imm5=xxxxx|stype=xx|0|Rm=xxxx
+// StrtA2: STRT{<c>}{<q>}  <Rt>, [<Rn>], {<+/->}<Rm>{, <shift>}
+// register fields: Rn, Rt, Rm
+562ee585 strtpl lr, [lr], -r5, lsl #11 (unpredictable)
+56a4fb6d strtpl pc, [r4], sp, ror #22
+962434c1 strtls r3, [r4], -r1, asr #9
+76a278aa strtvc r7, [r2], r10, lsr #17
+96aa2e26 strtls r2, [r10], r6, lsr #28
+d6a746c8 strtle r4, [r7], r8, asr #13
+562e20ed strtpl r2, [lr], -sp, ror #1
+e62499ae strt r9, [r4], -lr, lsr #19
+// Binary Ninja's tests
+e6a01002 strt r1, [r0], r2
+e6a011a2 strt r1, [r0], r2, lsr #3
+062F0F80 strteq r0, [pc], -r0, lsl #0x1f (unpredictable)
+F62EE585 UNALLOCATED
+862EE80F strthi lr, [lr], -pc, lsl #0x10 (unpredictable)
+462EE40E strtmi lr, [lr], -lr, lsl #0x8 (unpredictable)
+262EE20E strtcs lr, [lr], -lr, lsl #0x4 (unpredictable)
+162EE105 strtne lr, [lr], -r5, lsl #0x2 (unpredictable)

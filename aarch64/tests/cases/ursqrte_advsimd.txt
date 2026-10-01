@@ -1,0 +1,24 @@
+// URSQRTE_asimdmisc_R 0|Q=x|U=1|0|111|0|1|sz=x|10000|opcode=11100|10|Rn=xxxxx|Rd=xxxxx
+// UrsqrteAsimdmiscR: URSQRTE  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, sz
+// register fields: Rn, Rd
+6EA1C8E3 ursqrte v3.4s, v7.4s
+2EA1C9CE ursqrte v14.2s, v14.2s
+2EA1CB8F ursqrte v15.2s, v28.2s
+2EA1C9CC ursqrte v12.2s, v14.2s
+2EA1C89B ursqrte v27.2s, v4.2s
+2EA1CA7E ursqrte v30.2s, v19.2s
+2EA1CAC0 ursqrte v0.2s, v22.2s
+2EA1CA0D ursqrte v13.2s, v16.2s
+2EA1C95A ursqrte v26.2s, v10.2s
+2EA1CA2B ursqrte v11.2s, v17.2s
+2EA1CABF ursqrte v31.2s, v21.2s
+2EA1CAB7 ursqrte v23.2s, v21.2s
+2EA1C8E8 ursqrte v8.2s, v7.2s
+2EA1CB03 ursqrte v3.2s, v24.2s
+2EA1C94E ursqrte v14.2s, v10.2s
+6EA1CB3D ursqrte v29.4s, v25.4s
+6EA1C803 ursqrte v3.4s, v0.4s
+6EA1CBE3 ursqrte v3.4s, v31.4s
+6EE1C8E3 UNDEFINED
+2EE1C8E3 UNDEFINED

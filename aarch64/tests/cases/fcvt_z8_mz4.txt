@@ -1,0 +1,13 @@
+// fcvt_z8_mz4_ 1|10|0000|1|00|1|101|00|111000|Zn=xxx|0|N=0|Zd=xxxxx
+// FcvtZ8Mz4: FCVT  <Zd>.B, { <Zn1>.S-<Zn4>.S }
+// register fields: Zn, Zd
+C134E004 fcvt z4.b, {z0.s-z3.s}
+C134E00B fcvt z11.b, {z0.s-z3.s}
+C134E012 fcvt z18.b, {z0.s-z3.s}
+C134E080 fcvt z0.b, {z4.s-z7.s}
+C134E11F fcvt z31.b, {z8.s-z11.s}
+C134E184 fcvt z4.b, {z12.s-z15.s}
+C134E204 fcvt z4.b, {z16.s-z19.s}
+C134E284 fcvt z4.b, {z20.s-z23.s}
+C134E304 fcvt z4.b, {z24.s-z27.s}
+C134E384 fcvt z4.b, {z28.s-z31.s}

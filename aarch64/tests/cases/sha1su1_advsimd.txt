@@ -1,0 +1,20 @@
+// SHA1SU1_VV_cryptosha2 0101|111|0|size=00|10100|opcode=00001|10|Rn=xxxxx|Rd=xxxxx
+// Sha1su1VvCryptosha2: SHA1SU1  <Vd>.4S, <Vn>.4S
+// register fields: Rn, Rd
+5E281A6D sha1su1 v13.4s, v19.4s
+5E28181D sha1su1 v29.4s, v0.4s
+5E281B22 sha1su1 v2.4s, v25.4s
+5E281AE0 sha1su1 v0.4s, v23.4s
+5E281924 sha1su1 v4.4s, v9.4s
+5E281AF8 sha1su1 v24.4s, v23.4s
+5E281BA4 sha1su1 v4.4s, v29.4s
+5E2819B5 sha1su1 v21.4s, v13.4s
+5E2818B2 sha1su1 v18.4s, v5.4s
+5E2819DE sha1su1 v30.4s, v14.4s
+5E2818E2 sha1su1 v2.4s, v7.4s
+5E281BC4 sha1su1 v4.4s, v30.4s
+5E281B7E sha1su1 v30.4s, v27.4s
+5E28188E sha1su1 v14.4s, v4.4s
+5E281887 sha1su1 v7.4s, v4.4s
+5E281910 sha1su1 v16.4s, v8.4s
+5E281BFF sha1su1 v31.4s, v31.4s

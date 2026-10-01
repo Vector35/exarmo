@@ -1,0 +1,12 @@
+// RBIT_A1 cond=xxxx|011|01|o1=1|11(1)(1)(1)(1)|Rd=xxxx|(1)(1)(1)(1)|o2=0|01|1|Rm=xxxx
+// RbitA1: RBIT{<c>}{<q>}  <Rd>, <Rm>
+// register fields: Rd, Rm
+// Binary Ninja's tests
+16ff1f32 rbitne r1, r2
+e6ff1f32 rbit r1, r2
+06F00030 rbiteq r0, r0 (unpredictable)
+F6FF1F32 UNALLOCATED
+86F8F83F rbithi pc, pc (unpredictable)
+46F41431 rbitmi r1, r1 (unpredictable)
+26F21232 rbitcs r1, r2 (unpredictable)
+16F11132 rbitne r1, r2 (unpredictable)

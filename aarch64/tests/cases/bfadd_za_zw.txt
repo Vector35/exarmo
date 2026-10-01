@@ -1,0 +1,24 @@
+// bfadd_za_zw_2x2_16 1|10|0000|11|sz=1|1|00|10|00|Rv=xx|111|Zm=xxxx|0|0|S=0|off3=xxx
+// BfaddZaZw2x216: BFADD  ZA.H[<Wv>, <offs>{, VGx2}], { <Zm1>.H-<Zm2>.H }
+// register fields: Rv, Zm
+C1E41C02 bfadd za.h[w8, 2, vgx2], {z0.h-z1.h}
+C1E41C41 bfadd za.h[w8, 1, vgx2], {z2.h-z3.h}
+C1E41C80 bfadd za.h[w8, 0, vgx2], {z4.h-z5.h}
+C1E43FC3 bfadd za.h[w9, 3, vgx2], {z30.h-z31.h}
+C1E45C04 bfadd za.h[w10, 4, vgx2], {z0.h-z1.h}
+C1E47C05 bfadd za.h[w11, 5, vgx2], {z0.h-z1.h}
+C1E41C06 bfadd za.h[w8, 6, vgx2], {z0.h-z1.h}
+C1E41C07 bfadd za.h[w8, 7, vgx2], {z0.h-z1.h}
+
+// bfadd_za_zw_4x4_16 1|10|0000|11|sz=1|1|00|10|10|Rv=xx|111|Zm=xxx|00|0|S=0|off3=xxx
+// BfaddZaZw4x416: BFADD  ZA.H[<Wv>, <offs>{, VGx4}], { <Zm1>.H-<Zm4>.H }
+// register fields: Rv, Zm
+C1E51C00 bfadd za.h[w8, 0, vgx4], {z0.h-z3.h}
+C1E51C07 bfadd za.h[w8, 7, vgx4], {z0.h-z3.h}
+C1E51C85 bfadd za.h[w8, 5, vgx4], {z4.h-z7.h}
+C1E53D01 bfadd za.h[w9, 1, vgx4], {z8.h-z11.h}
+C1E55D82 bfadd za.h[w10, 2, vgx4], {z12.h-z15.h}
+C1E57E03 bfadd za.h[w11, 3, vgx4], {z16.h-z19.h}
+C1E51E84 bfadd za.h[w8, 4, vgx4], {z20.h-z23.h}
+C1E51F06 bfadd za.h[w8, 6, vgx4], {z24.h-z27.h}
+C1E51F80 bfadd za.h[w8, 0, vgx4], {z28.h-z31.h}

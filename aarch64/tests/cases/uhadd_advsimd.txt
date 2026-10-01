@@ -1,0 +1,25 @@
+// UHADD_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|opcode=00000|1|Rn=xxxxx|Rd=xxxxx
+// UhaddAsimdsameOnly: UHADD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E6204DB uhadd v27.8h, v6.8h, v2.8h
+2E7B06C1 uhadd v1.4h, v22.4h, v27.4h
+2EA106D4 uhadd v20.2s, v22.2s, v1.2s
+6E270565 uhadd v5.16b, v11.16b, v7.16b
+2E750751 uhadd v17.4h, v26.4h, v21.4h
+6E7105C9 uhadd v9.8h, v14.8h, v17.8h
+6E65048C uhadd v12.8h, v4.8h, v5.8h
+2E730495 uhadd v21.4h, v4.4h, v19.4h
+2E7104A6 uhadd v6.4h, v5.4h, v17.4h
+2E3B0483 uhadd v3.8b, v4.8b, v27.8b
+6EB1040D uhadd v13.4s, v0.4s, v17.4s
+6E3505C9 uhadd v9.16b, v14.16b, v21.16b
+2E3D0631 uhadd v17.8b, v17.8b, v29.8b
+2E280719 uhadd v25.8b, v24.8b, v8.8b
+2EB60610 uhadd v16.2s, v16.2s, v22.2s
+2EB20572 uhadd v18.2s, v11.2s, v18.2s
+6E6007E0 uhadd v0.8h, v31.8h, v0.8h
+6E7F04DF uhadd v31.8h, v6.8h, v31.8h
+6EE204DB UNDEFINED
+2EE204DB UNDEFINED
+6E62045B uhadd v27.8h, v2.8h, v2.8h

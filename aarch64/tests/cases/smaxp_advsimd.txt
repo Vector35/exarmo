@@ -1,0 +1,24 @@
+// SMAXP_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|1010|o1=0|1|Rn=xxxxx|Rd=xxxxx
+// SmaxpAsimdsameOnly: SMAXP  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+0EB3A5E8 smaxp v8.2s, v15.2s, v19.2s
+4EB2A5F0 smaxp v16.4s, v15.4s, v18.4s
+0E34A7AF smaxp v15.8b, v29.8b, v20.8b
+4E34A77D smaxp v29.16b, v27.16b, v20.16b
+4EB3A6A4 smaxp v4.4s, v21.4s, v19.4s
+0EB6A47F smaxp v31.2s, v3.2s, v22.2s
+0E78A77B smaxp v27.4h, v27.4h, v24.4h
+4E3DA56B smaxp v11.16b, v11.16b, v29.16b
+0E76A7F6 smaxp v22.4h, v31.4h, v22.4h
+4EACA756 smaxp v22.4s, v26.4s, v12.4s
+4E7EA492 smaxp v18.8h, v4.8h, v30.8h
+0E3BA69F smaxp v31.8b, v20.8b, v27.8b
+0E7AA5E4 smaxp v4.4h, v15.4h, v26.4h
+0E66A44D smaxp v13.4h, v2.4h, v6.4h
+0EA0A6F7 smaxp v23.2s, v23.2s, v0.2s
+0E68A687 smaxp v7.4h, v20.4h, v8.4h
+0EBFA400 smaxp v0.2s, v0.2s, v31.2s
+0EF3A5E8 UNDEFINED
+4EF3A5E8 UNDEFINED
+0EB3A668 smaxp v8.2s, v19.2s, v19.2s

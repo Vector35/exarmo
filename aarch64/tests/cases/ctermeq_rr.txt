@@ -1,0 +1,55 @@
+// ctermeq_rr_ 001|0010|1|op=1|sz=x|1|Rm=xxxxx|00|10|00|Rn=xxxxx|ne=0|0000
+// CtermeqRr: CTERMEQ  <n>, <m>
+// read together by <n>: sz, Rn
+// read together by <m>: sz, Rm
+// register fields: Rm, Rn
+25E22300 ctermeq x24, x2
+25E12080 ctermeq x4, x1
+25FA20E0 ctermeq x7, x26
+25B721A0 ctermeq w13, w23
+25A42080 ctermeq w4, w4
+25A420C0 ctermeq w6, w4
+25E420C0 ctermeq x6, x4
+25E32240 ctermeq x18, x3
+25E52140 ctermeq x10, x5
+25E42060 ctermeq x3, x4
+25A02120 ctermeq w9, w0
+25A22380 ctermeq w28, w2
+25FD20E0 ctermeq x7, fp
+25F023E0 ctermeq xzr, x16
+25E92260 ctermeq x19, x9
+25A52140 ctermeq w10, w5
+25FF2000 ctermeq x0, xzr
+25BF2300 ctermeq w24, wzr
+25E02300 ctermeq x24, x0
+25A22000 ctermeq w0, w2
+25A223E0 ctermeq wzr, w2
+
+// ctermne_rr_ 001|0010|1|op=1|sz=x|1|Rm=xxxxx|00|10|00|Rn=xxxxx|ne=1|0000
+// CtermneRr: CTERMNE  <n>, <m>
+// read together by <n>: sz, Rn
+// read together by <m>: sz, Rm
+// register fields: Rm, Rn
+25E022D0 ctermne x22, x0
+25A22130 ctermne w9, w2
+25E522B0 ctermne x21, x5
+25EA2390 ctermne x28, x10
+25AE2330 ctermne w25, w14
+25E72250 ctermne x18, x7
+25E82210 ctermne x16, x8
+25F72070 ctermne x3, x23
+25F921B0 ctermne x13, x25
+25EC2070 ctermne x3, x12
+25B32190 ctermne w12, w19
+25B723D0 ctermne w30, w23
+25BA23D0 ctermne w30, w26
+25A523B0 ctermne w29, w5
+25EB2290 ctermne x20, x11
+25E72270 ctermne x19, x7
+25FF2010 ctermne x0, xzr
+25E023F0 ctermne xzr, x0
+25A022D0 ctermne w22, w0
+25BF22D0 ctermne w22, wzr
+25A02010 ctermne w0, w0
+25A023F0 ctermne wzr, w0
+25E02010 ctermne x0, x0

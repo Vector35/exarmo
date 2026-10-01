@@ -1,0 +1,18 @@
+// SB_only_barriers 110|101|01000000110011|CRm=(0)(0)(0)(0)|1|opc=11|Rt=11111
+// SbOnlyBarriers: SB
+D50333FF sb (unpredictable)
+D50334FF sb (unpredictable)
+D50338FF sb (unpredictable)
+D5033FFF sb (unpredictable)
+D50331FF sb (unpredictable)
+D50339FF sb (unpredictable)
+D5033DFF sb (unpredictable)
+D50337FF sb (unpredictable)
+D5033EFF sb (unpredictable)
+D5033CFF sb (unpredictable)
+D50330FF sb
+D50335FF sb (unpredictable)
+D5033AFF sb (unpredictable)
+D5033BFF sb (unpredictable)
+D50332FF sb (unpredictable)
+D50336FF sb (unpredictable)

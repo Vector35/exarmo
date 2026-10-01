@@ -1,0 +1,15 @@
+// saddlt_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|0|0|op=0|S=0|U=0|T=1|Zn=xxxxx|Zd=xxxxx
+// SaddltZZz: SADDLT  <Zd>.<T>, <Zn>.<Tb>, <Zm>.<Tb>
+// register fields: Zm, Zn, Zd
+459A077F saddlt z31.s, z27.h, z26.h
+459606FB saddlt z27.s, z23.h, z22.h
+454704DC saddlt z28.h, z6.b, z7.b
+4556041E saddlt z30.h, z0.b, z22.b
+45510434 saddlt z20.h, z1.b, z17.b
+454E0519 saddlt z25.h, z8.b, z14.b
+45DF06FC saddlt z28.d, z23.s, z31.s
+45C20751 saddlt z17.d, z26.s, z2.s
+458007E0 saddlt z0.s, z31.h, z0.h
+451A077F UNDEFINED
+459A075F saddlt z31.s, z26.h, z26.h
+459A077B saddlt z27.s, z27.h, z26.h

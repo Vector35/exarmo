@@ -1,0 +1,58 @@
+// LDRSH_r_A1_off cond=xxxx|000|P=1|U=x|0|W=0|o1=1|Rn=xxxx|Rt=xxxx|(0)(0)(0)(0)1|op2=11|1|Rm=xxxx
+// LdrshRA1Off: LDRSH{<c>}{<q>}  <Rt>, [<Rn>, {<+/->}<Rm>]
+// register fields: Rn, Rt, Rm
+b11c4cf0 ldrshlt r4, [r12, -r0] (unpredictable)
+919e05f0 ldrshls r0, [lr, r0] (unpredictable)
+319fe9f8 ldrshlo lr, [pc, r8] (unpredictable)
+b19f30ff ldrshlt r3, [pc, pc] (unpredictable)
+b11efeff ldrshlt pc, [lr, -pc] (unpredictable)
+e19f5ef4 ldrsh r5, [pc, r4] (unpredictable)
+d114fffa ldrshle pc, [r4, -r10] (unpredictable)
+c11570f6 ldrshgt r7, [r5, -r6]
+// Binary Ninja's tests
+e19130f5 ldrsh r3, [r1, r5]
+011048F0 ldrsheq r4, [r0, -r0] (unpredictable)
+F11C4CF0 UNALLOCATED
+811CC4F0 ldrshhi r12, [r12, -r0] (unpredictable)
+411C42F0 ldrshmi r4, [r12, -r0] (unpredictable)
+211C41F0 ldrshcs r4, [r12, -r0] (unpredictable)
+111C4CF0 ldrshne r4, [r12, -r0] (unpredictable)
+
+// LDRSH_r_A1_post cond=xxxx|000|P=0|U=x|0|W=0|o1=1|Rn=xxxx|Rt=xxxx|(0)(0)(0)(0)1|op2=11|1|Rm=xxxx
+// LdrshRA1Post: LDRSH{<c>}{<q>}  <Rt>, [<Rn>], {<+/->}<Rm>
+// register fields: Rn, Rt, Rm
+c01adbf2 ldrshgt sp, [r10], -r2 (unpredictable)
+001245f2 ldrsheq r4, [r2], -r2 (unpredictable)
+501d94fb ldrshpl r9, [sp], -r11 (unpredictable)
+909651fb ldrshls r5, [r6], r11 (unpredictable)
+009ae7f3 ldrsheq lr, [r10], r3 (unpredictable)
+d09206fd ldrshle r0, [r2], sp (unpredictable)
+50976bfb ldrshpl r6, [r7], r11 (unpredictable)
+4095cbff ldrshmi r12, [r5], pc (unpredictable)
+// Binary Ninja's tests
+e01870f3 ldrsh r7, [r8], -r3
+e09960f8 ldrsh r6, [r9], r8
+F01ADBF2 UNALLOCATED
+8010FFF0 ldrshhi pc, [r0], -r0 (unpredictable)
+201FD8FD ldrshcs sp, [pc], -sp (unpredictable)
+101AA2F2 ldrshne r10, [r10], -r2 (unpredictable)
+
+// LDRSH_r_A1_pre cond=xxxx|000|P=1|U=x|0|W=1|o1=1|Rn=xxxx|Rt=xxxx|(0)(0)(0)(0)1|op2=11|1|Rm=xxxx
+// LdrshRA1Pre: LDRSH{<c>}{<q>}  <Rt>, [<Rn>, {<+/->}<Rm>]!
+// register fields: Rn, Rt, Rm
+e1b683fc ldrsh r8, [r6, r12]! (unpredictable)
+d1b260fb ldrshle r6, [r2, r11]!
+413eb9f0 ldrshmi r11, [lr, -r0]! (unpredictable)
+51317ff5 ldrshpl r7, [r1, -r5]! (unpredictable)
+01b285fc ldrsheq r8, [r2, r12]! (unpredictable)
+413abff4 ldrshmi r11, [r10, -r4]! (unpredictable)
+1132b7f3 ldrshne r11, [r2, -r3]! (unpredictable)
+51b66ef2 ldrshpl r6, [r6, r2]! (unpredictable)
+// Binary Ninja's tests
+e13350f6 ldrsh r5, [r3, -r6]!
+e1b640f1 ldrsh r4, [r6, r1]!
+F1B683FC UNALLOCATED
+81B008FF ldrshhi r0, [r0, pc]! (unpredictable)
+21BFF4FC ldrshcs pc, [pc, r12]! (unpredictable)
+E1B682F6 ldrsh r8, [r6, r6]! (unpredictable)
+E1B681F8 ldrsh r8, [r6, r8]! (unpredictable)

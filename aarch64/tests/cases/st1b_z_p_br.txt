@@ -1,0 +1,23 @@
+// st1b_z_p_br_ 111|0010|00|size=xx|Rm=xxxxx|0|1|0|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// St1bZPBr: ST1B  { <Zt>.<T> }, <Pg>, [<Xn|SP>, <Xm>]
+// register fields: Rm, Pg, Rn, Zt
+E47847FB st1b {z27.d}, p1, [sp, x24]
+E4224A3F st1b {z31.h}, p2, [x17, x2]
+E4645BA1 st1b {z1.d}, p6, [fp, x4]
+E44447D1 st1b {z17.s}, p1, [lr, x4]
+E47E5275 st1b {z21.d}, p4, [x19, lr]
+E42B5628 st1b {z8.h}, p5, [x17, x11]
+E473517B st1b {z27.d}, p4, [x11, x19]
+E41C4AC4 st1b {z4.b}, p2, [x22, x28]
+E44C5C9A st1b {z26.s}, p7, [x4, x12]
+E46F53F0 st1b {z16.d}, p4, [sp, x15]
+E448561D st1b {z29.s}, p5, [x16, x8]
+E43A58B8 st1b {z24.h}, p6, [x5, x26]
+E433568E st1b {z14.h}, p5, [x20, x19]
+E4645038 st1b {z24.d}, p4, [x1, x4]
+E43140B4 st1b {z20.h}, p0, [x5, x17]
+E42543E5 st1b {z5.h}, p0, [sp, x5]
+E4604C00 st1b {z0.d}, p3, [x0, x0]
+E47F47FB UNALLOCATED
+E478443B st1b {z27.d}, p1, [x1, x24]
+E47847E1 st1b {z1.d}, p1, [sp, x24]

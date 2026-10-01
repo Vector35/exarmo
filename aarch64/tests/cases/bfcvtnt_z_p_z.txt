@@ -1,0 +1,30 @@
+// bfcvtnt_z_p_z_s2bf 011|0010|0|opc=10|0010|opc2=10|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// BfcvtntZPZS2bf: BFCVTNT  <Zd>.H, <Pg>/M, <Zn>.S
+// register fields: Pg, Zn, Zd
+648AABAB bfcvtnt z11.h, p2/m, z29.s
+648AACAB bfcvtnt z11.h, p3/m, z5.s
+648AB622 bfcvtnt z2.h, p5/m, z17.s
+648AA202 bfcvtnt z2.h, p0/m, z16.s
+648AA021 bfcvtnt z1.h, p0/m, z1.s
+648AAB67 bfcvtnt z7.h, p2/m, z27.s
+648AB0E0 bfcvtnt z0.h, p4/m, z7.s
+648AA72F bfcvtnt z15.h, p1/m, z25.s
+648AB81F bfcvtnt z31.h, p6/m, z0.s
+648ABFEB bfcvtnt z11.h, p7/m, z31.s
+648AA84B bfcvtnt z11.h, p2/m, z2.s
+648AABA2 bfcvtnt z2.h, p2/m, z29.s
+
+// bfcvtnt_z_p_z_s2bfz 011|0010|0|opc=10|0000|opc2=10|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// BfcvtntZPZS2bfz: BFCVTNT  <Zd>.H, <Pg>/Z, <Zn>.S
+// register fields: Pg, Zn, Zd
+6482A001 bfcvtnt z1.h, p0/z, z0.s
+6482A008 bfcvtnt z8.h, p0/z, z0.s
+6482A00F bfcvtnt z15.h, p0/z, z0.s
+6482A7E0 bfcvtnt z0.h, p1/z, z31.s
+6482A81F bfcvtnt z31.h, p2/z, z0.s
+6482AC01 bfcvtnt z1.h, p3/z, z0.s
+6482B001 bfcvtnt z1.h, p4/z, z0.s
+6482B401 bfcvtnt z1.h, p5/z, z0.s
+6482B801 bfcvtnt z1.h, p6/z, z0.s
+6482BC01 bfcvtnt z1.h, p7/z, z0.s
+6482A000 bfcvtnt z0.h, p0/z, z0.s

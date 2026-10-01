@@ -1,0 +1,23 @@
+// uclamp_mz_zz_2 1|10|0000|1|size=xx|1|Zm=xxxxx|110|001|Zn=xxxxx|Zd=xxxx|U=1
+// UclampMzZz2: UCLAMP  { <Zd1>.<T>-<Zd2>.<T> }, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+C120C409 uclamp {z8.b-z9.b}, z0.b, z0.b
+C120C417 uclamp {z22.b-z23.b}, z0.b, z0.b
+C120C425 uclamp {z4.b-z5.b}, z1.b, z0.b
+C17FC7E1 uclamp {z0.h-z1.h}, z31.h, z31.h
+C1A0C41F uclamp {z30.s-z31.s}, z0.s, z0.s
+C1E0C409 uclamp {z8.d-z9.d}, z0.d, z0.d
+C120C401 uclamp {z0.b-z1.b}, z0.b, z0.b
+
+// uclamp_mz_zz_4 1|10|0000|1|size=xx|1|Zm=xxxxx|110|011|Zn=xxxxx|Zd=xxx|0|U=1
+// UclampMzZz4: UCLAMP  { <Zd1>.<T>-<Zd4>.<T> }, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+C120CC05 uclamp {z4.b-z7.b}, z0.b, z0.b
+C120CC21 uclamp {z0.b-z3.b}, z1.b, z0.b
+C120CC3D uclamp {z28.b-z31.b}, z1.b, z0.b
+C17FCFE9 uclamp {z8.h-z11.h}, z31.h, z31.h
+C1A0CC0D uclamp {z12.s-z15.s}, z0.s, z0.s
+C1E0CC11 uclamp {z16.d-z19.d}, z0.d, z0.d
+C120CC15 uclamp {z20.b-z23.b}, z0.b, z0.b
+C120CC19 uclamp {z24.b-z27.b}, z0.b, z0.b
+C120CC01 uclamp {z0.b-z3.b}, z0.b, z0.b

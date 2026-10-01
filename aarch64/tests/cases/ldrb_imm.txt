@@ -1,0 +1,96 @@
+// LDRB_32_ldst_immpost size=00|11|1|VR=0|0|0|opc=01|0|imm9=xxxxxxxxx|01|Rn=xxxxx|Rt=xxxxx
+// Ldrb32LdstImmpost: LDRB  <Wt>, [<Xn|SP>], #<simm>
+// register fields: Rn, Rt
+384C27C8 ldrb w8, [lr], #0xc2
+3841F605 ldrb w5, [x16], #0x1f
+38494514 ldrb w20, [x8], #0x94
+3846547F ldrb wzr, [x3], #0x65
+384B44D4 ldrb w20, [x6], #0xb4
+385BD5EC ldrb w12, [x15], #-0x43
+38557590 ldrb w16, [x12], #-0xa9
+385E15F3 ldrb w19, [x15], #-0x1f
+3848C707 ldrb w7, [x24], #0x8c
+38548632 ldrb w18, [x17], #-0xb8
+385E56B4 ldrb w20, [x21], #-0x1b
+3857143E ldrb w30, [x1], #-0x8f
+3840D5BE ldrb w30, [x13], #0xd
+385BD70C ldrb w12, [x24], #-0x43
+384C95F9 ldrb w25, [x15], #0xc9
+384CD501 ldrb w1, [x8], #0xcd
+38400400 ldrb w0, [x0], #0x0 (unpredictable)
+385FF7E8 ldrb w8, [sp], #-0x1
+385007C8 ldrb w8, [lr], #-0x100
+384807C8 ldrb w8, [lr], #0x80
+384407C8 ldrb w8, [lr], #0x40
+384207C8 ldrb w8, [lr], #0x20
+384107C8 ldrb w8, [lr], #0x10
+384087C8 ldrb w8, [lr], #0x8
+384047C8 ldrb w8, [lr], #0x4
+384027C8 ldrb w8, [lr], #0x2
+384017C8 ldrb w8, [lr], #0x1
+
+// LDRB_32_ldst_immpre size=00|11|1|VR=0|0|0|opc=01|0|imm9=xxxxxxxxx|11|Rn=xxxxx|Rt=xxxxx
+// Ldrb32LdstImmpre: LDRB  <Wt>, [<Xn|SP>, #<simm>]!
+// register fields: Rn, Rt
+38485CB3 ldrb w19, [x5, #0x85]!
+3856DEDA ldrb w26, [x22, #-0x93]!
+384CEF2F ldrb w15, [x25, #0xce]!
+384BEECA ldrb w10, [x22, #0xbe]!
+38597CF2 ldrb w18, [x7, #-0x69]!
+3858FCEE ldrb w14, [x7, #-0x71]!
+384C6E9E ldrb w30, [x20, #0xc6]!
+3846CE70 ldrb w16, [x19, #0x6c]!
+385D7E2E ldrb w14, [x17, #-0x29]!
+3842BC3C ldrb w28, [x1, #0x2b]!
+384E0D26 ldrb w6, [x9, #0xe0]!
+38549D53 ldrb w19, [x10, #-0xb7]!
+38517FA9 ldrb w9, [fp, #-0xe9]!
+3841EC16 ldrb w22, [x0, #0x1e]!
+38405F16 ldrb w22, [x24, #0x5]!
+38468E62 ldrb w2, [x19, #0x68]!
+38400FE0 ldrb w0, [sp, #0x0]!
+385FFCBF ldrb wzr, [x5, #-0x1]!
+38485CA5 ldrb w5, [x5, #0x85]! (unpredictable)
+38500CB3 ldrb w19, [x5, #-0x100]!
+38480CB3 ldrb w19, [x5, #0x80]!
+38440CB3 ldrb w19, [x5, #0x40]!
+38420CB3 ldrb w19, [x5, #0x20]!
+38410CB3 ldrb w19, [x5, #0x10]!
+38408CB3 ldrb w19, [x5, #0x8]!
+38404CB3 ldrb w19, [x5, #0x4]!
+38402CB3 ldrb w19, [x5, #0x2]!
+38401CB3 ldrb w19, [x5, #0x1]!
+
+// LDRB_32_ldst_pos size=00|11|1|VR=0|0|1|opc=01|imm12=xxxxxxxxxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldrb32LdstPos: LDRB  <Wt>, [<Xn|SP>{, #<pimm>}]
+// register fields: Rn, Rt
+394FEDDF ldrb wzr, [x14, #0x3fb]
+3972C0D4 ldrb w20, [x6, #0xcb0]
+3955B626 ldrb w6, [x17, #0x56d]
+39787A8A ldrb w10, [x20, #0xe1e]
+39658350 ldrb w16, [x26, #0x960]
+397B1572 ldrb w18, [x11, #0xec5]
+39612FB3 ldrb w19, [fp, #0x84b]
+396D4032 ldrb w18, [x1, #0xb50]
+39711E3E ldrb w30, [x17, #0xc47]
+39790AAC ldrb w12, [x21, #0xe42]
+394D7481 ldrb w1, [x4, #0x35d]
+39433E84 ldrb w4, [x20, #0xcf]
+394CE4AB ldrb w11, [x5, #0x339]
+39411455 ldrb w21, [x2, #0x45]
+3945F65E ldrb w30, [x18, #0x17d]
+396A0CC6 ldrb w6, [x6, #0xa83]
+39400000 ldrb w0, [x0]
+397FFFFF ldrb wzr, [sp, #0xfff]
+396001DF ldrb wzr, [x14, #0x800]
+395001DF ldrb wzr, [x14, #0x400]
+394801DF ldrb wzr, [x14, #0x200]
+394401DF ldrb wzr, [x14, #0x100]
+394201DF ldrb wzr, [x14, #0x80]
+394101DF ldrb wzr, [x14, #0x40]
+394081DF ldrb wzr, [x14, #0x20]
+394041DF ldrb wzr, [x14, #0x10]
+394021DF ldrb wzr, [x14, #0x8]
+394011DF ldrb wzr, [x14, #0x4]
+394009DF ldrb wzr, [x14, #0x2]
+394005DF ldrb wzr, [x14, #0x1]

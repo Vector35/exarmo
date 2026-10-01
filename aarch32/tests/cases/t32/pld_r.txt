@@ -1,0 +1,29 @@
+// PLD_r_T1 1111100000|W=0|L=1|Rn=xxxx|Rt=1111|000000|imm2=xx|Rm=xxxx
+// PldRT1: PLD{<c>}{<q>}  [<Rn>, {<+>}<Rm> {, LSL #<amount>}]
+// register fields: Rn, Rm
+// IT state read: condition
+f81af03b pld [r10, r11, lsl #3]
+f81ef001 pld [lr, r1]
+f81cf006 pld [r12, r6]
+f819f006 pld [r9, r6]
+f81bf01b pld [r11, r11, lsl #1]
+f817f00f pld [r7, pc] (unpredictable)
+f81bf003 pld [r11, r3]
+f813f005 pld [r3, r5]
+F810F020 pld [r0, r0, lsl #0x2]
+F81AF03B [ne] pldne [r10, r11, lsl #0x3]
+
+// PLDW_r_T1 1111100000|W=1|L=1|Rn=xxxx|Rt=1111|000000|imm2=xx|Rm=xxxx
+// PldwRT1: PLDW{<c>}{<q>}  [<Rn>, {<+>}<Rm> {, LSL #<amount>}]
+// register fields: Rn, Rm
+// IT state read: condition
+f83ef000 pldw [lr, r0]
+f830f035 pldw [r0, r5, lsl #3]
+f835f022 pldw [r5, r2, lsl #2]
+f836f03a pldw [r6, r10, lsl #3]
+f831f001 pldw [r1, r1]
+f838f028 pldw [r8, r8, lsl #2]
+f83af02c pldw [r10, r12, lsl #2]
+f839f020 pldw [r9, r0, lsl #2]
+F83EF01F pldw [lr, pc, lsl #0x1] (unpredictable)
+F83EF000 [ne] pldwne [lr, r0]

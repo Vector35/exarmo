@@ -1,0 +1,45 @@
+// MVN_i_A1 cond=xxxx|00111|opc=11|S=0|Rn=(0)(0)(0)(0)|Rd=xxxx|imm12=xxxxxxxxxxxx
+// MvnIA1: MVN{<c>}{<q>}  <Rd>, #<const>
+// register fields: Rd
+// Binary Ninja's tests
+03e04eff mvneq r4, #4080
+e3e03007 mvn r3, #7
+e3e04eff mvn r4, #4080
+e3e058ff mvn r5, #16711680
+F3E04EFF UNALLOCATED
+83EF0000 mvnhi r0, #0x0 (unpredictable)
+43E8FFFF mvnmi pc, #0x3fc (unpredictable)
+23E44800 mvncs r4, #0x0 (unpredictable)
+13E24400 mvnne r4, #0x0 (unpredictable)
+03E14200 mvneq r4, #0x0 (unpredictable)
+03E04100 mvneq r4, #0x0
+03E04080 mvneq r4, #0x80
+03E04040 mvneq r4, #0x40
+03E04020 mvneq r4, #0x20
+03E04010 mvneq r4, #0x10
+03E04008 mvneq r4, #0x8
+03E04004 mvneq r4, #0x4
+03E04002 mvneq r4, #0x2
+03E04001 mvneq r4, #0x1
+
+// MVNS_i_A1 cond=xxxx|00111|opc=11|S=1|Rn=(0)(0)(0)(0)|Rd=xxxx|imm12=xxxxxxxxxxxx
+// MvnsIA1: MVNS{<c>}{<q>}  <Rd>, #<const>
+// register fields: Rd
+// Binary Ninja's tests
+03f058ff mvnseq r5, #16711680
+e3f03007 mvns r3, #7
+F3F058FF UNALLOCATED
+83FF0000 mvnshi r0, #0x0 (unpredictable)
+43F8FFFF mvnsmi pc, #0x3fc (unpredictable)
+23F45800 mvnscs r5, #0x0 (unpredictable)
+13F25400 mvnsne r5, #0x0 (unpredictable)
+03F15200 mvnseq r5, #0x0 (unpredictable)
+03F05100 mvnseq r5, #0x0
+03F05080 mvnseq r5, #0x80
+03F05040 mvnseq r5, #0x40
+03F05020 mvnseq r5, #0x20
+03F05010 mvnseq r5, #0x10
+03F05008 mvnseq r5, #0x8
+03F05004 mvnseq r5, #0x4
+03F05002 mvnseq r5, #0x2
+03F05001 mvnseq r5, #0x1

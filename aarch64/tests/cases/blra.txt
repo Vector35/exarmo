@@ -1,0 +1,84 @@
+// BLRAA_64P_branch_reg 1101011|Z=1|0|op=01|op2=11111|0000|A=1|M=0|Rn=xxxxx|Rm=xxxxx
+// Blraa64pBranchReg: BLRAA  <Xn>, <Xm|SP>
+// register fields: Rn, Rm
+D73F0A0B blraa x16, x11
+D73F0B35 blraa x25, x21
+D73F08F5 blraa x7, x21
+D73F0B59 blraa x26, x25
+D73F0894 blraa x4, x20
+D73F0B57 blraa x26, x23
+D73F08E0 blraa x7, x0
+D73F0841 blraa x2, x1
+D73F0803 blraa x0, x3
+D73F083B blraa x1, x27
+D73F080B blraa x0, x11
+D73F0946 blraa x10, x6
+D73F0949 blraa x10, x9
+D73F0A07 blraa x16, x7
+D73F0A28 blraa x17, x8
+D73F0801 blraa x0, x1
+D73F0BFF blraa xzr, sp
+
+// BLRAAZ_64_branch_reg 1101011|Z=0|0|op=01|op2=11111|0000|A=1|M=0|Rn=xxxxx|Rm=11111
+// Blraaz64BranchReg: BLRAAZ  <Xn>
+// register fields: Rn
+D63F0B3F blraaz x25
+D63F09FF blraaz x15
+D63F085F blraaz x2
+D63F08BF blraaz x5
+D63F09BF blraaz x13
+D63F08DF blraaz x6
+D63F0B9F blraaz x28
+D63F0B1F blraaz x24
+D63F099F blraaz x12
+D63F0BDF blraaz lr
+D63F097F blraaz x11
+D63F095F blraaz x10
+D63F0B5F blraaz x26
+D63F08FF blraaz x7
+D63F0A1F blraaz x16
+D63F093F blraaz x9
+D63F081F blraaz x0
+D63F0BFF blraaz xzr
+
+// BLRAB_64P_branch_reg 1101011|Z=1|0|op=01|op2=11111|0000|A=1|M=1|Rn=xxxxx|Rm=xxxxx
+// Blrab64pBranchReg: BLRAB  <Xn>, <Xm|SP>
+// register fields: Rn, Rm
+D73F0C6B blrab x3, x11
+D73F0EB5 blrab x21, x21
+D73F0C71 blrab x3, x17
+D73F0E84 blrab x20, x4
+D73F0DA5 blrab x13, x5
+D73F0DBC blrab x13, x28
+D73F0EF3 blrab x23, x19
+D73F0CE4 blrab x7, x4
+D73F0EFC blrab x23, x28
+D73F0F06 blrab x24, x6
+D73F0DC8 blrab x14, x8
+D73F0E2B blrab x17, x11
+D73F0F13 blrab x24, x19
+D73F0D76 blrab x11, x22
+D73F0F17 blrab x24, x23
+D73F0DE8 blrab x15, x8
+D73F0C00 blrab x0, x0
+D73F0FFF blrab xzr, sp
+
+// BLRABZ_64_branch_reg 1101011|Z=0|0|op=01|op2=11111|0000|A=1|M=1|Rn=xxxxx|Rm=11111
+// Blrabz64BranchReg: BLRABZ  <Xn>
+// register fields: Rn
+D63F0F3F blrabz x25
+D63F0EFF blrabz x23
+D63F0F5F blrabz x26
+D63F0DBF blrabz x13
+D63F0FFF blrabz xzr
+D63F0DFF blrabz x15
+D63F0E9F blrabz x20
+D63F0CBF blrabz x5
+D63F0C5F blrabz x2
+D63F0D9F blrabz x12
+D63F0E1F blrabz x16
+D63F0D5F blrabz x10
+D63F0C7F blrabz x3
+D63F0C9F blrabz x4
+D63F0C1F blrabz x0
+D63F0F9F blrabz x28

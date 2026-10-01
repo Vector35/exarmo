@@ -1,0 +1,68 @@
+// SQRDMLAH_asimdsame2_only 0|Q=x|U=1|0|111|0|size=xx|0|Rm=xxxxx|1|000|S=0|1|Rn=xxxxx|Rd=xxxxx
+// SqrdmlahAsimdsame2Only: SQRDMLAH  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E5E84CF sqrdmlah v15.8h, v6.8h, v30.8h
+2E4787CB sqrdmlah v11.4h, v30.4h, v7.4h
+2E9C86B0 sqrdmlah v16.2s, v21.2s, v28.2s
+2E9F87CD sqrdmlah v13.2s, v30.2s, v31.2s
+2E5A8492 sqrdmlah v18.4h, v4.4h, v26.4h
+6E898458 sqrdmlah v24.4s, v2.4s, v9.4s
+2E4B854C sqrdmlah v12.4h, v10.4h, v11.4h
+6E5A852A sqrdmlah v10.8h, v9.8h, v26.8h
+2E9F84FC sqrdmlah v28.2s, v7.2s, v31.2s
+2E4A86C3 sqrdmlah v3.4h, v22.4h, v10.4h
+2E548792 sqrdmlah v18.4h, v28.4h, v20.4h
+2E8A8492 sqrdmlah v18.2s, v4.2s, v10.2s
+6E9184B1 sqrdmlah v17.4s, v5.4s, v17.4s
+6E4D8523 sqrdmlah v3.8h, v9.8h, v13.8h
+2E5C868D sqrdmlah v13.4h, v20.4h, v28.4h
+6E4A87F8 sqrdmlah v24.8h, v31.8h, v10.8h
+6E408400 sqrdmlah v0.8h, v0.8h, v0.8h
+6E5E84DF sqrdmlah v31.8h, v6.8h, v30.8h
+6E1E84CF UNDEFINED
+6EDE84CF UNDEFINED
+2E1E84CF UNDEFINED
+2EDE84CF UNDEFINED
+
+// SQRDMLAH_asisdsame2_only 01|U=1|1|111|0|size=xx|0|Rm=xxxxx|1|000|S=0|1|Rn=xxxxx|Rd=xxxxx
+// SqrdmlahAsisdsame2Only: SQRDMLAH  <V><d>, <V><n>, <V><m>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, Rm
+// register fields: Rm, Rn, Rd
+7E5D853D sqrdmlah h29, h9, h29
+7E948741 sqrdmlah s1, s26, s20
+7E41846E sqrdmlah h14, h3, h1
+7E8F8686 sqrdmlah s6, s20, s15
+7E5F8675 sqrdmlah h21, h19, h31
+7E48859E sqrdmlah h30, h12, h8
+7E9985C0 sqrdmlah s0, s14, s25
+7E5A8580 sqrdmlah h0, h12, h26
+7E9087A1 sqrdmlah s1, s29, s16
+7E4887DD sqrdmlah h29, h30, h8
+7E448518 sqrdmlah h24, h8, h4
+7E8C842B sqrdmlah s11, s1, s12
+7E4C86E5 sqrdmlah h5, h23, h12
+7E58843D sqrdmlah h29, h1, h24
+7E9F87F4 sqrdmlah s20, s31, s31
+7E9A8759 sqrdmlah s25, s26, s26
+7E40841F sqrdmlah h31, h0, h0
+7E1D853D UNDEFINED
+7EDD853D UNDEFINED
+7E1D8520 UNDEFINED
+7E1D853F UNDEFINED
+7E9D853F sqrdmlah s31, s9, s29
+7EDD8520 UNDEFINED
+7EDD853F UNDEFINED
+7E00853D UNDEFINED
+7E1F853D UNDEFINED
+7E808529 sqrdmlah s9, s9, s0
+7EC0853D UNDEFINED
+7EDF853D UNDEFINED
+7E1D841D UNDEFINED
+7E1D87FD UNDEFINED
+7E5D87FD sqrdmlah h29, h31, h29
+7E9D841D sqrdmlah s29, s0, s29
+7EDD841D UNDEFINED
+7EDD87FD UNDEFINED

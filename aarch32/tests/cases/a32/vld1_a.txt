@@ -1,0 +1,68 @@
+// VLD1_a_A1_nowb 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=00|size=xx|T=x|a=x|Rm=1111
+// Vld1AA1Nowb: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// read together by <align>: size, a
+// register fields: Rn
+f4e2fc4f vld1.16 {d31[]}, [r2]
+f4e6dcaf vld1.32 {d29[], d30[]}, [r6]
+f4e67caf vld1.32 {d23[], d24[]}, [r6]
+f4e5ac7f vld1.16 {d26[], d27[]}, [r5:16]
+f4eefc9f vld1.32 {d31[]}, [lr:32]
+f4e12c7f vld1.16 {d18[], d19[]}, [r1:16]
+f4e3dc8f vld1.32 {d29[]}, [r3]
+f4a3dc7f vld1.16 {d13[], d14[]}, [r3:16]
+F4E00C0F vld1.8 {d16[]}, [r0]
+F4EF8C0F vld1.8 {d24[]}, [pc] (unpredictable)
+F4E24C4F vld1.16 {d20[]}, [r2]
+F4E21C4F vld1.16 {d17[]}, [r2]
+F4E2FCCF UNDEFINED
+F4E2FC1F UNDEFINED
+F4E2FCDF UNDEFINED
+
+// VLD1_a_A1_posti 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=00|size=xx|T=x|a=x|Rm=1101
+// Vld1AA1Posti: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// read together by <align>: size, a
+// register fields: Rn
+f4e93cbd vld1.32 {d19[], d20[]}, [r9:32]!
+f4ae6c6d vld1.16 {d6[], d7[]}, [lr]!
+f4ea3c9d vld1.32 {d19[]}, [r10:32]!
+f4a8bc5d vld1.16 {d11[]}, [r8:16]!
+f4e40c4d vld1.16 {d16[]}, [r4]!
+f4a0acad vld1.32 {d10[], d11[]}, [r0]!
+f4a47cbd vld1.32 {d7[], d8[]}, [r4:32]!
+f4ec6c9d vld1.32 {d22[]}, [r12:32]!
+F4EFFC2D UNPREDICTABLE
+F4E98CBD vld1.32 {d24[], d25[]}, [r9:32]!
+F4E94CBD vld1.32 {d20[], d21[]}, [r9:32]!
+F4E92CBD vld1.32 {d18[], d19[]}, [r9:32]!
+F4E91CBD vld1.32 {d17[], d18[]}, [r9:32]!
+F4AE6C2D vld1.8 {d6[], d7[]}, [lr]!
+F4E93CFD UNDEFINED
+F4E93C3D UNDEFINED
+F4E93CED UNDEFINED
+F4EF3CBD vld1.32 {d19[], d20[]}, [pc:32]! (unpredictable)
+F4AEFC6D vld1.16 {d15[], d16[]}, [lr]!
+
+// VLD1_a_A1_postr 111101001|D=x|L=1|0|Rn=xxxx|Vd=xxxx|11|N=00|size=xx|T=x|a=x|Rm=xxxx
+// Vld1AA1Postr: VLD1{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// read together by <align>: size, a
+// register fields: Rn, Rm
+f4e79c7c vld1.16 {d25[], d26[]}, [r7:16], r12
+f4ac8c6e vld1.16 {d8[], d9[]}, [r12], lr
+f4ebbc51 vld1.16 {d27[]}, [r11:16], r1
+f4a47ca5 vld1.32 {d7[], d8[]}, [r4], r5
+f4e28ca2 vld1.32 {d24[], d25[]}, [r2], r2
+f4ed6c87 vld1.32 {d22[]}, [sp], r7
+f4eddc84 vld1.32 {d29[]}, [sp], r4
+f4ea3c62 vld1.16 {d19[], d20[]}, [r10], r2
+F4E00C20 vld1.8 {d16[], d17[]}, [r0], r0
+F4EFFCBC UNPREDICTABLE
+F4E74C7C vld1.16 {d20[], d21[]}, [r7:16], r12
+F4E72C7C vld1.16 {d18[], d19[]}, [r7:16], r12
+F4E71C7C vld1.16 {d17[], d18[]}, [r7:16], r12
+F4AC8C2E vld1.8 {d8[], d9[]}, [r12], lr
+F4E79CFF UNDEFINED
+F4E79C3C UNDEFINED
+F4E79CEC UNDEFINED
+F4E79CFC UNDEFINED
+F4EF9CBC vld1.32 {d25[], d26[]}, [pc:32], r12 (unpredictable)
+F4ACFC6E vld1.16 {d15[], d16[]}, [r12], lr

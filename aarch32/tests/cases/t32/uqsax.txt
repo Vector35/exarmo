@@ -1,0 +1,17 @@
+// UQSAX_T1 111|11010|1|op1=110|Rn=xxxx|1111|Rd=xxxx|0|U=1|H=0|S=1|Rm=xxxx
+// UqsaxT1: UQSAX{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fae5f75a uqsax r7, r5, r10
+fae7f253 uqsax r2, r7, r3
+fae7fb51 uqsax r11, r7, r1
+fae2f156 uqsax r1, r2, r6
+fae1ff55 uqsax pc, r1, r5 (unpredictable)
+faecf050 uqsax r0, r12, r0
+fae6fc5a uqsax r12, r6, r10
+faeef553 uqsax r5, lr, r3
+FAE0F75F uqsax r7, r0, pc (unpredictable)
+FAEFF75A uqsax r7, pc, r10 (unpredictable)
+FAE5F55A uqsax r5, r5, r10
+FAE5F755 uqsax r7, r5, r5
+FAE5F75A [ne] uqsaxne r7, r5, r10

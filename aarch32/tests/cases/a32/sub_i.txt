@@ -1,0 +1,94 @@
+// SUB_i_A1 cond=xxxx|0010|opc=010|S=0|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// SubIA1: SUB{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+d24e5acb suble r5, lr, #831488
+024545c1 subeq r4, r5, #809500672
+8240604f subhi r6, r0, #79
+5247e5da subpl lr, r7, #914358272
+024ede0f subeq sp, lr, #240
+424b5275 submi r5, r11, #1342177287
+e2454f6e sub r4, r5, #440
+824748b1 subhi r4, r7, #11599872
+// Binary Ninja's tests
+e2400004 sub r0, r0, #4
+e2422006 sub r2, r2, #6
+e2454015 sub r4, r5, #21
+e2454a0f sub r4, r5, #61440
+e2455a0f sub r5, r5, #61440
+F24F5ACB UNALLOCATED
+224EF000 subcs pc, lr, #0x0
+124E5FFF subne r5, lr, #0x3fc
+D24E5800 suble r5, lr, #0x0
+D24E5400 suble r5, lr, #0x0
+D24E5200 suble r5, lr, #0x0
+D24E5100 suble r5, lr, #0x0
+D24E5080 suble r5, lr, #0x80
+D24E5040 suble r5, lr, #0x40
+D24E5020 suble r5, lr, #0x20
+D24E5010 suble r5, lr, #0x10
+D24E5008 suble r5, lr, #0x8
+D24E5002 suble r5, lr, #0x2
+D24E5001 suble r5, lr, #0x1
+D24E5081 suble r5, lr, #0x81
+D24E5181 suble r5, lr, #0x40000020
+D24E5281 suble r5, lr, #0x10000008
+D24E5381 suble r5, lr, #0x4000002
+D24E5481 suble r5, lr, #0x81000000
+D24E5581 suble r5, lr, #0x20400000
+D24E5681 suble r5, lr, #0x8100000
+D24E5781 suble r5, lr, #0x2040000
+D24E5881 suble r5, lr, #0x810000
+D24E5981 suble r5, lr, #0x204000
+D24E5A81 suble r5, lr, #0x81000
+D24E5B81 suble r5, lr, #0x20400
+D24E5C81 suble r5, lr, #0x8100
+D24E5D81 suble r5, lr, #0x2040
+D24E5E81 suble r5, lr, #0x810
+D24E5F81 suble r5, lr, #0x204
+
+// SUBS_i_A1 cond=xxxx|0010|opc=010|S=1|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// SubsIA1: SUBS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+// modified immediate <const>: imm12
+c255ae19 subsgt r10, r5, #400
+02587902 subseq r7, r8, #32768
+62589194 subsvs r9, r8, #37
+8255769f subshi r7, r5, #166723584
+225e0e9c subshs r0, lr, #2496
+925290d0 subsls r9, r2, #208
+a25bf85f subsge pc, r11, #6225920
+425f7a6e subsmi r7, pc, #450560
+// Binary Ninja's tests
+02522006 subseq r2, r2, #6
+F255AE19 UNALLOCATED
+1250A000 subsne r10, r0, #0x0
+C255AFFF subsgt r10, r5, #0x3fc
+C255A800 subsgt r10, r5, #0x0
+C255A400 subsgt r10, r5, #0x0
+C255A200 subsgt r10, r5, #0x0
+C255A100 subsgt r10, r5, #0x0
+C255A080 subsgt r10, r5, #0x80
+C255A040 subsgt r10, r5, #0x40
+C255A020 subsgt r10, r5, #0x20
+C255A010 subsgt r10, r5, #0x10
+C255A008 subsgt r10, r5, #0x8
+C255A004 subsgt r10, r5, #0x4
+C255A002 subsgt r10, r5, #0x2
+C255A001 subsgt r10, r5, #0x1
+C255A081 subsgt r10, r5, #0x81
+C255A181 subsgt r10, r5, #0x40000020
+C255A281 subsgt r10, r5, #0x10000008
+C255A381 subsgt r10, r5, #0x4000002
+C255A481 subsgt r10, r5, #0x81000000
+C255A581 subsgt r10, r5, #0x20400000
+C255A681 subsgt r10, r5, #0x8100000
+C255A781 subsgt r10, r5, #0x2040000
+C255A881 subsgt r10, r5, #0x810000
+C255A981 subsgt r10, r5, #0x204000
+C255AA81 subsgt r10, r5, #0x81000
+C255AB81 subsgt r10, r5, #0x20400
+C255AC81 subsgt r10, r5, #0x8100
+C255AD81 subsgt r10, r5, #0x2040
+C255AE81 subsgt r10, r5, #0x810
+C255AF81 subsgt r10, r5, #0x204

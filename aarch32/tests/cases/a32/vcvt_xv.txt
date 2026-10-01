@@ -1,0 +1,144 @@
+// VCVT_toxv_A1_D cond=xxxx|11101|D=x|11|o1=1|op=0|1|U=x|Vd=xxxx|10|sf=11|sx=x|1|i=x|0|imm4=xxxx
+// VcvtToxvA1D: VCVT{<c>}{<q>}.F64.<dt>  <Ddm>, <Ddm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Ddm>: D, Vd
+// read together by <fbits>: i, imm4
+0efabb66 vcvteq.f64.s16 d27, d27, #3
+1ebbdb63 vcvtne.f64.u16 d13, d13, #9
+eebbfbc6 vcvt.f64.u32 d15, d15, #20
+3ebabbc6 vcvtlo.f64.s32 d11, d11, #20
+defbcbc3 vcvtle.f64.u32 d28, d28, #26
+4ebb2b47 vcvtmi.f64.u16 d2, d2, #2
+0efa4bef vcvteq.f64.s32 d20, d20, #1
+9efbbbc7 vcvtls.f64.u32 d27, d27, #18
+// Binary Ninja's tests
+eeba0b40 vcvt.f64.s16 d0, d0, #16
+eeba0bc0 vcvt.f64.s32 d0, d0, #32
+eefb4bc0 vcvt.f64.u32 d20, d20, #32
+eefb7b40 vcvt.f64.u16 d23, d23, #16
+FEBBFBC6 UNALLOCATED
+8EFA8B68 vcvthi.f64.s16 d24, d24, #-0x1 (unpredictable)
+2EFA1B64 vcvtcs.f64.s16 d17, d17, #0x7
+0EFA0B62 vcvteq.f64.s16 d16, d16, #0xb
+0EFAFB61 vcvteq.f64.s16 d31, d31, #0xd
+0EFABB4F vcvteq.f64.s16 d27, d27, #-0xe (unpredictable)
+0EFABB60 vcvteq.f64.s16 d27, d27, #0xf
+
+// VCVT_toxv_A1_H cond=xxxx|11101|D=x|11|o1=1|op=0|1|U=x|Vd=xxxx|10|sf=01|sx=x|1|i=x|0|imm4=xxxx
+// VcvtToxvA1H: VCVT{<c>}{<q>}.F16.<dt>  <Sdm>, <Sdm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Sdm>: D, Vd
+// read together by <fbits>: i, imm4
+3efbf9c0 vcvtlo.f16.u32 s31, s31, #32 (unpredictable)
+deba8943 vcvtle.f16.s16 s16, s16, #10 (unpredictable)
+7efbb940 vcvtvc.f16.u16 s23, s23, #16 (unpredictable)
+2efa096a vcvths.f16.s16 s1, s1, #-5 (unpredictable)
+5ebb09ef vcvtpl.f16.u32 s0, s0, #1 (unpredictable)
+6ebb69e0 vcvtvs.f16.u32 s12, s12, #31 (unpredictable)
+aebb99e6 vcvtge.f16.u32 s18, s18, #19 (unpredictable)
+0ebbc9c1 vcvteq.f16.u32 s24, s24, #30 (unpredictable)
+FEFBF9C0 UNALLOCATED
+8EFA49C8 vcvthi.f16.s32 s9, s9, #0x10 (unpredictable)
+4EFB29C4 vcvtmi.f16.u32 s5, s5, #0x18 (unpredictable)
+1EFB19C2 vcvtne.f16.u32 s3, s3, #0x1c (unpredictable)
+3EBBF9CF vcvtcc.f16.u32 s30, s30, #0x2 (unpredictable)
+
+// VCVT_toxv_A1_S cond=xxxx|11101|D=x|11|o1=1|op=0|1|U=x|Vd=xxxx|10|sf=10|sx=x|1|i=x|0|imm4=xxxx
+// VcvtToxvA1S: VCVT{<c>}{<q>}.F32.<dt>  <Sdm>, <Sdm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Sdm>: D, Vd
+// read together by <fbits>: i, imm4
+7efa3a6c vcvtvc.f32.s16 s7, s7, #-9 (unpredictable)
+cefacae6 vcvtgt.f32.s32 s25, s25, #19
+6efb3ac1 vcvtvs.f32.u32 s7, s7, #30
+befb7ac6 vcvtlt.f32.u32 s15, s15, #20
+defbba48 vcvtle.f32.u16 s23, s23, #0
+4efa8ac3 vcvtmi.f32.s32 s17, s17, #26
+1ebb3a4e vcvtne.f32.u16 s6, s6, #-12 (unpredictable)
+8eba5a69 vcvthi.f32.s16 s10, s10, #-3 (unpredictable)
+// Binary Ninja's tests
+eebb0a67 vcvt.f32.u16 s0, s0, #1
+eebb0ac6 vcvt.f32.u32 s0, s0, #20
+eefa0ac6 vcvt.f32.s32 s1, s1, #20
+eefa8a67 vcvt.f32.s16 s17, s17, #1
+0EFAFA60 vcvteq.f32.s16 s31, s31, #0xf
+FEFACAE6 UNALLOCATED
+2EFA4A6F vcvtcs.f32.s16 s9, s9, #-0xf (unpredictable)
+7EFA2A64 vcvtvc.f32.s16 s5, s5, #0x7
+7EFA1A62 vcvtvc.f32.s16 s3, s3, #0xb
+7EBAFA40 vcvtvc.f32.s16 s30, s30, #0x10
+7EFAFA4F vcvtvc.f32.s16 s31, s31, #-0xe (unpredictable)
+7EFA3A60 vcvtvc.f32.s16 s7, s7, #0xf
+7EFA3A6F vcvtvc.f32.s16 s7, s7, #-0xf (unpredictable)
+
+// VCVT_xv_A1_D cond=xxxx|11101|D=x|11|o1=1|op=1|1|U=x|Vd=xxxx|10|sf=11|sx=x|1|i=x|0|imm4=xxxx
+// VcvtXvA1D: VCVT{<c>}{<q>}.<dt>.F64  <Ddm>, <Ddm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Ddm>: D, Vd
+// read together by <fbits>: i, imm4
+eebfcbea vcvt.u32.f64 d12, d12, #11
+9efedb60 vcvtls.s16.f64 d29, d29, #15
+3ebe1bc2 vcvtlo.s32.f64 d1, d1, #28
+4effbb48 vcvtmi.u16.f64 d27, d27, #0
+debf6be8 vcvtle.u32.f64 d6, d6, #15
+6efe6b62 vcvtvs.s16.f64 d22, d22, #11
+5ebecb4b vcvtpl.s16.f64 d12, d12, #-6 (unpredictable)
+befe5bc4 vcvtlt.s32.f64 d21, d21, #24
+// Binary Ninja's tests
+eebe2bc0 vcvt.s32.f64 d2, d2, #32
+eebefb40 vcvt.s16.f64 d15, d15, #16
+eeff4bc0 vcvt.u32.f64 d20, d20, #32
+eeff7b40 vcvt.u16.f64 d23, d23, #16
+0EBF0BEF vcvteq.u32.f64 d0, d0, #0x1
+8EBF8BE1 vcvthi.u32.f64 d8, d8, #0x1d
+2EBF0BCF vcvtcs.u32.f64 d0, d0, #0x2
+1EFF0BEF vcvtne.u32.f64 d16, d16, #0x1
+EEFFFBEA vcvt.u32.f64 d31, d31, #0xb
+
+// VCVT_xv_A1_H cond=xxxx|11101|D=x|11|o1=1|op=1|1|U=x|Vd=xxxx|10|sf=01|sx=x|1|i=x|0|imm4=xxxx
+// VcvtXvA1H: VCVT{<c>}{<q>}.<dt>.F16  <Sdm>, <Sdm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Sdm>: D, Vd
+// read together by <fbits>: i, imm4
+4ebfe96a vcvtmi.u16.f16 s28, s28, #-5 (unpredictable)
+debe09e6 vcvtle.s32.f16 s0, s0, #19 (unpredictable)
+befe694f vcvtlt.s16.f16 s13, s13, #-14 (unpredictable)
+cebfe96a vcvtgt.u16.f16 s28, s28, #-5 (unpredictable)
+7ebe2947 vcvtvc.s16.f16 s4, s4, #2 (unpredictable)
+4ebe99ce vcvtmi.s32.f16 s18, s18, #4 (unpredictable)
+3eff296c vcvtlo.u16.f16 s5, s5, #-9 (unpredictable)
+6efe59ca vcvtvs.s32.f16 s11, s11, #12 (unpredictable)
+0EBFF9E0 vcvteq.u32.f16 s30, s30, #0x1f (unpredictable)
+8EBF8968 vcvthi.u16.f16 s16, s16, #-0x1 (unpredictable)
+2EBF4964 vcvtcs.u16.f16 s8, s8, #0x7 (unpredictable)
+1EBF1962 vcvtne.u16.f16 s2, s2, #0xb (unpredictable)
+4EBFF961 vcvtmi.u16.f16 s30, s30, #0xd (unpredictable)
+4EFF0940 vcvtmi.u16.f16 s1, s1, #0x10 (unpredictable)
+4EFFF960 vcvtmi.u16.f16 s31, s31, #0xf (unpredictable)
+4EBFE96F vcvtmi.u16.f16 s28, s28, #-0xf (unpredictable)
+
+// VCVT_xv_A1_S cond=xxxx|11101|D=x|11|o1=1|op=1|1|U=x|Vd=xxxx|10|sf=10|sx=x|1|i=x|0|imm4=xxxx
+// VcvtXvA1S: VCVT{<c>}{<q>}.<dt>.F32  <Sdm>, <Sdm>, #<fbits>
+// read together by <dt>: U, sx
+// read together by <Sdm>: D, Vd
+// read together by <fbits>: i, imm4
+3ebe7ac8 vcvtlo.s32.f32 s14, s14, #16
+aefeea4f vcvtge.s16.f32 s29, s29, #-14 (unpredictable)
+3ebf3ac4 vcvtlo.u32.f32 s6, s6, #24
+ceff6ac9 vcvtgt.u32.f32 s13, s13, #14
+6efe7ac5 vcvtvs.s32.f32 s15, s15, #22
+1ebfba6e vcvtne.u16.f32 s22, s22, #-13 (unpredictable)
+eefecacd vcvt.s32.f32 s25, s25, #6
+7effbacf vcvtvc.u32.f32 s23, s23, #2
+// Binary Ninja's tests
+eebf6ac6 vcvt.u32.f32 s12, s12, #20
+eebfea67 vcvt.u16.f32 s28, s28, #1
+eefe0ac6 vcvt.s32.f32 s1, s1, #20
+eefe8a67 vcvt.s16.f32 s17, s17, #1
+0EBEFAC0 vcvteq.s32.f32 s30, s30, #0x20
+8EBE4AC2 vcvthi.s32.f32 s8, s8, #0x1c
+4EBE2AC1 vcvtmi.s32.f32 s4, s4, #0x1e
+2EBE1AC0 vcvtcs.s32.f32 s2, s2, #0x20
+3EBE0AE0 vcvtcc.s32.f32 s0, s0, #0x1f
+3EBEFAEF vcvtcc.s32.f32 s30, s30, #0x1
+3EFEFAC8 vcvtcc.s32.f32 s31, s31, #0x10

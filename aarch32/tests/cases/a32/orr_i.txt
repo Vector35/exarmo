@@ -1,0 +1,61 @@
+// ORR_i_A1 cond=xxxx|00111|opc=00|S=0|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// OrrIA1: ORR{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+d38a8cde orrle r8, r10, #56832
+b38e7c4a orrlt r7, lr, #18944
+9380177e orrls r1, r0, #33030144
+738f9311 orrvc r9, pc, #1140850688
+a38db61e orrge r11, sp, #31457280
+4385efe0 orrmi lr, r5, #896
+138464d1 orrne r6, r4, #3506438144
+d384e6f2 orrle lr, r4, #253755392
+// Binary Ninja's tests
+23855a0f orrhs r5, r5, #61440
+e3822006 orr r2, r2, #6
+e3854a0f orr r4, r5, #61440
+e3855a0f orr r5, r5, #61440
+038A0000 orreq r0, r10, #0x0
+F38A8CDE UNALLOCATED
+838AFFFF orrhi pc, r10, #0x3fc
+D38A8800 orrle r8, r10, #0x0
+D38A8400 orrle r8, r10, #0x0
+D38A8200 orrle r8, r10, #0x0
+D38A8100 orrle r8, r10, #0x0
+D38A8080 orrle r8, r10, #0x80
+D38A8040 orrle r8, r10, #0x40
+D38A8020 orrle r8, r10, #0x20
+D38A8010 orrle r8, r10, #0x10
+D38A8008 orrle r8, r10, #0x8
+D38A8004 orrle r8, r10, #0x4
+D38A8002 orrle r8, r10, #0x2
+D38A8001 orrle r8, r10, #0x1
+
+// ORRS_i_A1 cond=xxxx|00111|opc=00|S=1|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// OrrsIA1: ORRS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+3390a4a8 orrslo r10, r0, #2818572288
+039753bc orrseq r5, r7, #4026531842
+639c8c0a orrsvs r8, r12, #2560
+d3918aae orrsle r8, r1, #712704
+03922163 orrseq r2, r2, #3221225496
+b397363f orrslt r3, r7, #66060288
+e39c9d64 orrs r9, r12, #6400
+d3963979 orrsle r3, r6, #1982464
+// Binary Ninja's tests
+03922006 orrseq r2, r2, #6
+03954a0f orrseq r4, r5, #61440
+F39C9D64 UNDEFINED
+839F0000 orrshi r0, pc, #0x0
+4390FFFF orrsmi pc, r0, #0x3fc
+2390A800 orrscs r10, r0, #0x0
+1390A400 orrsne r10, r0, #0x0
+3390A200 orrscc r10, r0, #0x0
+3390A100 orrscc r10, r0, #0x0
+3390A080 orrscc r10, r0, #0x80
+3390A040 orrscc r10, r0, #0x40
+3390A020 orrscc r10, r0, #0x20
+3390A010 orrscc r10, r0, #0x10
+3390A008 orrscc r10, r0, #0x8
+3390A004 orrscc r10, r0, #0x4
+3390A002 orrscc r10, r0, #0x2
+3390A001 orrscc r10, r0, #0x1

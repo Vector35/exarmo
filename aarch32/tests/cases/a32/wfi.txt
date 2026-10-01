@@ -1,0 +1,10 @@
+// WFI_A1 cond=xxxx|00|1|10|R=0|10|imm4=0000|(1)(1)(1)(1)|imm12=(0)(0)(0)(0)00000011
+// WfiA1: WFI{<c>}{<q>}
+// Binary Ninja's tests
+b320f003 wfilt
+e320f003 wfi
+03200F03 wfieq (unpredictable)
+83208803 wfihi (unpredictable)
+43204403 wfimi (unpredictable)
+23202203 wfics (unpredictable)
+13201103 wfine (unpredictable)

@@ -1,0 +1,26 @@
+// add_za_zzw_2x2 1|10|0000|11|sz=x|1|Zm=xxxx|00|Rv=xx|110|Zn=xxxx|0|1|S=0|off3=xxx
+// AddZaZzw2x2: ADD  ZA.<T>[<Wv>, <offs>{, VGx2}], { <Zn1>.<T>-<Zn2>.<T> }, { <Zm1>.<T>-<Zm2>.<T> }
+// register fields: Zm, Rv, Zn
+C1A01815 add za.s[w8, 5, vgx2], {z0.s-z1.s}, {z0.s-z1.s}
+C1A01854 add za.s[w8, 4, vgx2], {z2.s-z3.s}, {z0.s-z1.s}
+C1A01893 add za.s[w8, 3, vgx2], {z4.s-z5.s}, {z0.s-z1.s}
+C1FE3BD0 add za.d[w9, 0, vgx2], {z30.d-z31.d}, {z30.d-z31.d}
+C1A05811 add za.s[w10, 1, vgx2], {z0.s-z1.s}, {z0.s-z1.s}
+C1A07812 add za.s[w11, 2, vgx2], {z0.s-z1.s}, {z0.s-z1.s}
+C1A01816 add za.s[w8, 6, vgx2], {z0.s-z1.s}, {z0.s-z1.s}
+C1A01817 add za.s[w8, 7, vgx2], {z0.s-z1.s}, {z0.s-z1.s}
+C1A258D5 add za.s[w10, 5, vgx2], {z6.s-z7.s}, {z2.s-z3.s}
+
+// add_za_zzw_4x4 1|10|0000|11|sz=x|1|Zm=xxx|0|10|Rv=xx|110|Zn=xxx|00|1|S=0|off3=xxx
+// AddZaZzw4x4: ADD  ZA.<T>[<Wv>, <offs>{, VGx4}], { <Zn1>.<T>-<Zn4>.<T> }, { <Zm1>.<T>-<Zm4>.<T> }
+// register fields: Zm, Rv, Zn
+C1A11813 add za.s[w8, 3, vgx4], {z0.s-z3.s}, {z0.s-z3.s}
+C1A11891 add za.s[w8, 1, vgx4], {z4.s-z7.s}, {z0.s-z3.s}
+C1A11916 add za.s[w8, 6, vgx4], {z8.s-z11.s}, {z0.s-z3.s}
+C1E53990 add za.d[w9, 0, vgx4], {z12.d-z15.d}, {z4.d-z7.d}
+C1A95A12 add za.s[w10, 2, vgx4], {z16.s-z19.s}, {z8.s-z11.s}
+C1AD7A94 add za.s[w11, 4, vgx4], {z20.s-z23.s}, {z12.s-z15.s}
+C1B11B15 add za.s[w8, 5, vgx4], {z24.s-z27.s}, {z16.s-z19.s}
+C1B51B97 add za.s[w8, 7, vgx4], {z28.s-z31.s}, {z20.s-z23.s}
+C1B91813 add za.s[w8, 3, vgx4], {z0.s-z3.s}, {z24.s-z27.s}
+C1BD1813 add za.s[w8, 3, vgx4], {z0.s-z3.s}, {z28.s-z31.s}

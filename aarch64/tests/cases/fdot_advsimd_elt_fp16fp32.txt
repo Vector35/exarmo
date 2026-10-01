@@ -1,0 +1,16 @@
+// FDOT_asimdelem_FP16FP32 0|Q=x|U=0|0|111|1|size=01|L=x|M=x|Rm=xxxx|opcode=1001|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FdotAsimdelemFp16fp32: FDOT  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.2H[<index>]
+// read together by <Vm>: M, Rm
+// read together by <index>: L, H
+// register fields: Rn, Rd
+0F409002 fdot v2.2s, v0.4h, v0.2h[0]
+0F409009 fdot v9.2s, v0.4h, v0.2h[0]
+0F409010 fdot v16.2s, v0.4h, v0.2h[0]
+4F7F9BE0 fdot v0.4s, v31.8h, v31.2h[3]
+0F40901F fdot v31.2s, v0.4h, v0.2h[0]
+0F4F9800 fdot v0.2s, v0.4h, v15.2h[2]
+0F709002 fdot v2.2s, v0.4h, v16.2h[1]
+0F489002 fdot v2.2s, v0.4h, v8.2h[0]
+0F449002 fdot v2.2s, v0.4h, v4.2h[0]
+0F429002 fdot v2.2s, v0.4h, v2.2h[0]
+0F419002 fdot v2.2s, v0.4h, v1.2h[0]

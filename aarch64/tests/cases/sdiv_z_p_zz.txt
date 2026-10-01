@@ -1,0 +1,23 @@
+// sdiv_z_p_zz_ 000|0010|0|size=xx|0|101|R=0|U=0|000|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// SdivZPZz: SDIV  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+04941FE8 sdiv z8.s, p7/m, z8.s, z31.s
+04D40380 sdiv z0.d, p0/m, z0.d, z28.d
+04941B75 sdiv z21.s, p6/m, z21.s, z27.s
+04D41AB3 sdiv z19.d, p6/m, z19.d, z21.d
+04D401E5 sdiv z5.d, p0/m, z5.d, z15.d
+04940B35 sdiv z21.s, p2/m, z21.s, z25.s
+04D40703 sdiv z3.d, p1/m, z3.d, z24.d
+04940A97 sdiv z23.s, p2/m, z23.s, z20.s
+0494054F sdiv z15.s, p1/m, z15.s, z10.s
+04D403ED sdiv z13.d, p0/m, z13.d, z31.d
+04D401C3 sdiv z3.d, p0/m, z3.d, z14.d
+04D40506 sdiv z6.d, p1/m, z6.d, z8.d
+049415C5 sdiv z5.s, p5/m, z5.s, z14.s
+04D41193 sdiv z19.d, p4/m, z19.d, z12.d
+04940821 sdiv z1.s, p2/m, z1.s, z1.s
+04D408BC sdiv z28.d, p2/m, z28.d, z5.d
+04940C1F sdiv z31.s, p3/m, z31.s, z0.s
+04141FE8 UNDEFINED
+04541FE8 UNDEFINED
+04941CE8 sdiv z8.s, p7/m, z8.s, z7.s

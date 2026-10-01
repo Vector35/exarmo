@@ -1,0 +1,54 @@
+// VCVT_xs_A1_D 1111001|U=x|1|D=x|imm6=xxxxxx|Vd=xxxx|11|op=xx|L=0|Q=0|M=x|1|Vm=xxxx
+// VcvtXsA1D: VCVT{<c>}{<q>}.<dt1>.<dt2>  <Dd>, <Dm>, #<fbits>
+// read together by <dt1> and <dt2>: U, op
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f2f70d1d vcvt.s16.f16 d16, d13, #9
+f2f9ee1e vcvt.f32.s32 d30, d14, #7
+f2f67c32 vcvt.f16.s16 d23, d18, #10
+f3ad4f1a vcvt.u32.f32 d4, d10, #19
+f3a29f16 vcvt.u32.f32 d9, d6, #30
+f3bfcf33 vcvt.u32.f32 d12, d19, #1
+f3b3ae17 vcvt.f32.u32 d10, d7, #13
+f3e8fe18 vcvt.f32.u32 d31, d8, #24
+F380CF33 UNALLOCATED
+F2E08F10 vcvt.s32.f32 d24, d0, #0x20
+F2D00D1D UNDEFINED
+F2C80D1D UNDEFINED
+F384CF33 UNALLOCATED
+F382CF33 UNALLOCATED
+F381CF33 UNALLOCATED
+F3F72C1F vcvt.f16.u16 d18, d15, #0x9
+F3F71D14 vcvt.u16.f16 d17, d4, #0x9
+F2B70D11 vcvt.s16.f16 d0, d1, #0x9
+F2B7FD10 vcvt.s16.f16 d15, d0, #0x9
+F2F70D1F vcvt.s16.f16 d16, d15, #0x9
+F2F70D30 vcvt.s16.f16 d16, d16, #0x9
+F2F70D3F vcvt.s16.f16 d16, d31, #0x9
+
+// VCVT_xs_A1_Q 1111001|U=x|1|D=x|imm6=xxxxxx|Vd=xxxx|11|op=xx|L=0|Q=1|M=x|1|Vm=xxxx
+// VcvtXsA1Q: VCVT{<c>}{<q>}.<dt1>.<dt2>  <Qd>, <Qm>, #<fbits>
+// read together by <dt1> and <dt2>: U, op
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f2afef52 vcvt.s32.f32 q7, q1, #17
+f2fc6f56 vcvt.s32.f32 q11, q3, #4
+f2e5ef56 vcvt.s32.f32 q15, q3, #27
+f3f9ef74 vcvt.u32.f32 q15, q10, #7
+f3bb0f5e vcvt.u32.f32 q0, q7, #5
+f2a06e5e vcvt.f32.s32 q3, q7, #32
+f2ffcf58 vcvt.s32.f32 q14, q4, #1
+f3b90c72 vcvt.f16.u16 q0, q9, #7
+F3C0FF7F UNALLOCATED
+F2901F51 UNDEFINED
+F288FF5F UNDEFINED
+F3C4FF7F UNALLOCATED
+F3C2EF74 UNALLOCATED
+F3C1EF74 UNALLOCATED
+F3AF8E50 vcvt.f32.u32 q4, q0, #0x11
+F2AF4F50 vcvt.s32.f32 q2, q0, #0x11
+F2AF2F70 vcvt.s32.f32 q1, q8, #0x11
+F2FC0D56 vcvt.s16.f16 q8, q3, #0x4
+F2FC6C56 vcvt.f16.s16 q11, q3, #0x4
+F2FC6D56 vcvt.s16.f16 q11, q3, #0x4
+F3FC6D56 vcvt.u16.f16 q11, q3, #0x4

@@ -1,0 +1,30 @@
+// INS_asimdins_IR_r 0|Q=1|op=0|0|111|00|00|imm5=xxxxx|0|imm4=0011|1|Rn=xxxxx|Rd=xxxxx
+// InsAsimdinsIrR: INS  <Vd>.<Ts>[<index>], <n>
+// MovInsAsimdinsIrR: MOV  <Vd>.<Ts>[<index>], <n>
+// read together by <n>: imm5, Rn
+// register fields: Rn, Rd
+4E1A1E38 mov v24.h[6], w17
+4E0E1FA5 mov v5.h[3], w29
+4E0E1D59 mov v25.h[3], w10
+4E1D1D83 mov v3.b[14], w12
+4E0B1D67 mov v7.b[5], w11
+4E151D31 mov v17.b[10], w9
+4E0E1E27 mov v7.h[3], w17
+4E141DF1 mov v17.s[2], w15
+4E021C53 mov v19.h[0], w2
+4E021DD7 mov v23.h[0], w14
+4E1C1E24 mov v4.s[3], w17
+4E091CBE mov v30.b[4], w5
+4E111E1F mov v31.b[8], w16
+4E1B1F02 mov v2.b[13], w24
+4E151E41 mov v1.b[10], w18
+4E041D61 mov v1.s[0], w11
+4E1F1C00 mov v0.b[15], w0
+4E1A1FF8 mov v24.h[6], wzr
+4E001E38 UNDEFINED
+4E001C18 UNDEFINED
+4E001FF8 UNDEFINED
+4E1F1FF8 mov v24.b[15], wzr
+4E101E38 UNDEFINED
+4E081E38 mov v24.d[0], x17
+4E011E38 mov v24.b[0], w17

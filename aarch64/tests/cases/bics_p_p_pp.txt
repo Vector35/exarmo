@@ -1,0 +1,21 @@
+// bics_p_p_pp_z 001|0010|1|op=0|S=1|00|Pm=xxxx|01|Pg=xxxx|o2=0|Pn=xxxx|o3=1|Pd=xxxx
+// BicsPPPpZ: BICS  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// register fields: Pm, Pg, Pn, Pd
+25417012 bics p2.b, p12/z, p0.b, p1.b
+2541587D bics p13.b, p6/z, p3.b, p1.b
+254E4D18 bics p8.b, p3/z, p8.b, p14.b
+25444D16 bics p6.b, p3/z, p8.b, p4.b
+25444D32 bics p2.b, p3/z, p9.b, p4.b
+25457CF7 bics p7.b, p15/z, p7.b, p5.b
+25454DFA bics p10.b, p3/z, p15.b, p5.b
+25485C50 bics p0.b, p7/z, p2.b, p8.b
+254470F5 bics p5.b, p12/z, p7.b, p4.b
+25486415 bics p5.b, p9/z, p0.b, p8.b
+254D6834 bics p4.b, p10/z, p1.b, p13.b
+25427915 bics p5.b, p14/z, p8.b, p2.b
+254A415E bics p14.b, p0/z, p10.b, p10.b
+2540785B bics p11.b, p14/z, p2.b, p0.b
+25444571 bics p1.b, p1/z, p11.b, p4.b
+25404858 bics p8.b, p2/z, p2.b, p0.b
+254F701F bics p15.b, p12/z, p0.b, p15.b
+25414412 bics p2.b, p1/z, p0.b, p1.b

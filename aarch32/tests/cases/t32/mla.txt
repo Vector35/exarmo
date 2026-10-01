@@ -1,0 +1,11 @@
+// MLA_T1 111|110110|op1=000|Rn=xxxx|Ra=xxxx|Rd=xxxx|00|op2=00|Rm=xxxx
+// MlaT1: MLA{<c>}{<q>}  <Rd>, <Rn>, <Rm>, <Ra>
+// register fields: Rn, Ra, Rd, Rm
+// IT state read: condition
+FB0F0F0F mla pc, pc, pc, r0 (unpredictable)
+FB000000 mla r0, r0, r0, r0
+FB000F0F mla pc, r0, pc, r0 (unpredictable)
+FB0F000F mla r0, pc, pc, r0 (unpredictable)
+FB0F0F00 mla pc, pc, r0, r0 (unpredictable)
+FB0F0F0F [ne] mlane pc, pc, pc, r0 (unpredictable)
+FB012304 mla r3, r1, r4, r2

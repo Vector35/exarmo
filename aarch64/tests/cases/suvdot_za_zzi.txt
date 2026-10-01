@@ -1,0 +1,11 @@
+// suvdot_za_zzi_s4xi 1|10|0000|1|01|01|Zm=xxxx|1|Rv=xx|op=0|i2=xx|Zn=xxx|0|1|U=1|1|off3=xxx
+// SuvdotZaZziS4xi: SUVDOT  ZA.S[<Wv>, <offs>{, VGx4}], { <Zn1>.B-<Zn4>.B }, <Zm>.B[<index>]
+// register fields: Zm, Rv, Zn
+C150803B suvdot za.s[w8, 3, vgx4], {z0.b-z3.b}, z0.b[0]
+C15080B9 suvdot za.s[w8, 1, vgx4], {z4.b-z7.b}, z0.b[0]
+C150813E suvdot za.s[w8, 6, vgx4], {z8.b-z11.b}, z0.b[0]
+C15FA5B8 suvdot za.s[w9, 0, vgx4], {z12.b-z15.b}, z15.b[1]
+C150CA3A suvdot za.s[w10, 2, vgx4], {z16.b-z19.b}, z0.b[2]
+C150EEBC suvdot za.s[w11, 4, vgx4], {z20.b-z23.b}, z0.b[3]
+C150833D suvdot za.s[w8, 5, vgx4], {z24.b-z27.b}, z0.b[0]
+C15083BF suvdot za.s[w8, 7, vgx4], {z28.b-z31.b}, z0.b[0]

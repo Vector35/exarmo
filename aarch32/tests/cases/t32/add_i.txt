@@ -1,0 +1,188 @@
+// ADD_i_T1 00|0|11|1|S=0|imm3=xxx|Rn=xxx|Rd=xxx
+// AddIT1: ADD<c>{<q>}  <Rd>, <Rn>, #<imm3>
+// T1bAddIT1: ADDS{<q>}  <Rd>, <Rn>, #<imm3>
+// register fields: Rn, Rd
+// IT state read: condition, in block
+1c00 adds r0, r0, #0
+1c01 adds r1, r0, #0
+1c02 adds r2, r0, #0
+1c03 adds r3, r0, #0
+1c04 adds r4, r0, #0
+1c05 adds r5, r0, #0
+1c06 adds r6, r0, #0
+1c07 adds r7, r0, #0
+1C48 adds r0, r1, #0x1
+1C90 adds r0, r2, #0x2
+1CD8 adds r0, r3, #0x3
+1D20 adds r0, r4, #0x4
+1D68 adds r0, r5, #0x5
+1DB0 adds r0, r6, #0x6
+1DF8 adds r0, r7, #0x7
+1C00 [ne] addne r0, r0, #0x0
+
+// ADD_i_T2 00|1|op=10|Rdn=xxx|imm8=xxxxxxxx
+// AddIT2: ADD<c>{<q>}  <Rdn>, #<imm8>
+// T2cAddIT2: ADDS{<q>}  <Rdn>, #<imm8>
+// register fields: Rdn
+// IT state read: condition, in block
+3000 adds r0, #0
+3001 adds r0, #1
+3002 adds r0, #2
+3003 adds r0, #3
+3004 adds r0, #4
+3005 adds r0, #5
+3006 adds r0, #6
+3007 adds r0, #7
+31FF adds r1, #0xff
+3280 adds r2, #0x80
+3340 adds r3, #0x40
+3420 adds r4, #0x20
+3510 adds r5, #0x10
+3608 adds r6, #0x8
+3700 adds r7, #0x0
+3000 [ne] addne r0, #0x0
+
+// ADD_i_T3 11110|i=x|0|op1=1000|S=0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// AddIT3: ADD{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F1000000 add r0, r0, #0x0
+F50F1FFF add pc, pc, #0x1fe000 (unpredictable)
+F1002080 add r0, r0, #0x80008000
+F1003040 add r0, r0, #0x40404040
+F1004020 add r0, r0, #0xa0000000
+F1005010 add r0, r0, #0x24000000
+F1006008 add r0, r0, #0x8800000
+F1007004 add r0, r0, #0x2100000
+F1000002 add r0, r0, #0x2
+F1000001 add r0, r0, #0x1
+F10000FF add r0, r0, #0xff
+F1001000 add r0, r0, #0x0
+F10010FF add r0, r0, #0xff00ff
+F1002000 add r0, r0, #0x0
+F10020FF add r0, r0, #0xff00ff00
+F1003000 add r0, r0, #0x0
+F10030FF add r0, r0, #0xffffffff
+F1004000 add r0, r0, #0x80000000
+F10040FF add r0, r0, #0x7f800000
+F1005000 add r0, r0, #0x20000000
+F10050FF add r0, r0, #0x1fe00000
+F1006000 add r0, r0, #0x8000000
+F10060FF add r0, r0, #0x7f80000
+F1007000 add r0, r0, #0x2000000
+F10070FF add r0, r0, #0x1fe0000
+F5000000 add r0, r0, #0x800000
+F50000FF add r0, r0, #0x7f8000
+F5001000 add r0, r0, #0x200000
+F50010FF add r0, r0, #0x1fe000
+F5002000 add r0, r0, #0x80000
+F50020FF add r0, r0, #0x7f800
+F5003000 add r0, r0, #0x20000
+F50030FF add r0, r0, #0x1fe00
+F5004000 add r0, r0, #0x8000
+F50040FF add r0, r0, #0x7f80
+F5005000 add r0, r0, #0x2000
+F50050FF add r0, r0, #0x1fe0
+F5006000 add r0, r0, #0x800
+F50060FF add r0, r0, #0x7f8
+F5007000 add r0, r0, #0x200
+F50070FF add r0, r0, #0x1fe
+F1000000 [ne] addne r0, r0, #0x0
+F1010200 add r2, r1, #0x0
+
+// ADD_i_T4 111|10|i=x|1|0|o1=0|0|o2=0|0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// T4bAddIT4: ADDW{<c>}{<q>}  {<Rd>, }<Rn>, #<imm12>
+// read together by <imm12>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F2000000 addw r0, r0, #0x0
+F6001FFF addw pc, r0, #0x9ff (unpredictable)
+F2002080 addw r0, r0, #0x280
+F2003040 addw r0, r0, #0x340
+F2004020 addw r0, r0, #0x420
+F2005010 addw r0, r0, #0x510
+F2006008 addw r0, r0, #0x608
+F2007004 addw r0, r0, #0x704
+F2000002 addw r0, r0, #0x2
+F2000001 addw r0, r0, #0x1
+F20000FF addw r0, r0, #0xff
+F2001000 addw r0, r0, #0x100
+F20010FF addw r0, r0, #0x1ff
+F2002000 addw r0, r0, #0x200
+F20020FF addw r0, r0, #0x2ff
+F2003000 addw r0, r0, #0x300
+F20030FF addw r0, r0, #0x3ff
+F2004000 addw r0, r0, #0x400
+F20040FF addw r0, r0, #0x4ff
+F2005000 addw r0, r0, #0x500
+F20050FF addw r0, r0, #0x5ff
+F2006000 addw r0, r0, #0x600
+F20060FF addw r0, r0, #0x6ff
+F2007000 addw r0, r0, #0x700
+F20070FF addw r0, r0, #0x7ff
+F6000000 addw r0, r0, #0x800
+F60000FF addw r0, r0, #0x8ff
+F6001000 addw r0, r0, #0x900
+F60010FF addw r0, r0, #0x9ff
+F6002000 addw r0, r0, #0xa00
+F60020FF addw r0, r0, #0xaff
+F6003000 addw r0, r0, #0xb00
+F60030FF addw r0, r0, #0xbff
+F6004000 addw r0, r0, #0xc00
+F60040FF addw r0, r0, #0xcff
+F6005000 addw r0, r0, #0xd00
+F60050FF addw r0, r0, #0xdff
+F6006000 addw r0, r0, #0xe00
+F60060FF addw r0, r0, #0xeff
+F6007000 addw r0, r0, #0xf00
+F60070FF addw r0, r0, #0xfff
+F2000000 [ne] addwne r0, r0, #0x0
+
+// ADDS_i_T3 11110|i=x|0|op1=1000|S=1|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// AddsIT3: ADDS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F1100000 adds r0, r0, #0x0
+F51F10FF adds r0, pc, #0x1fe000 (unpredictable)
+F1102080 adds r0, r0, #0x80008000
+F1103040 adds r0, r0, #0x40404040
+F1104020 adds r0, r0, #0xa0000000
+F1105010 adds r0, r0, #0x24000000
+F1106008 adds r0, r0, #0x8800000
+F1107004 adds r0, r0, #0x2100000
+F1100002 adds r0, r0, #0x2
+F1100001 adds r0, r0, #0x1
+F11000FF adds r0, r0, #0xff
+F1101000 adds r0, r0, #0x0
+F11010FF adds r0, r0, #0xff00ff
+F1102000 adds r0, r0, #0x0
+F11020FF adds r0, r0, #0xff00ff00
+F1103000 adds r0, r0, #0x0
+F11030FF adds r0, r0, #0xffffffff
+F1104000 adds r0, r0, #0x80000000
+F11040FF adds r0, r0, #0x7f800000
+F1105000 adds r0, r0, #0x20000000
+F11050FF adds r0, r0, #0x1fe00000
+F1106000 adds r0, r0, #0x8000000
+F11060FF adds r0, r0, #0x7f80000
+F1107000 adds r0, r0, #0x2000000
+F11070FF adds r0, r0, #0x1fe0000
+F51000FF adds r0, r0, #0x7f8000
+F5101000 adds r0, r0, #0x200000
+F51010FF adds r0, r0, #0x1fe000
+F5102000 adds r0, r0, #0x80000
+F51020FF adds r0, r0, #0x7f800
+F5103000 adds r0, r0, #0x20000
+F51030FF adds r0, r0, #0x1fe00
+F5104000 adds r0, r0, #0x8000
+F51040FF adds r0, r0, #0x7f80
+F5105000 adds r0, r0, #0x2000
+F51050FF adds r0, r0, #0x1fe0
+F5106000 adds r0, r0, #0x800
+F51060FF adds r0, r0, #0x7f8
+F5107000 adds r0, r0, #0x200
+F51070FF adds r0, r0, #0x1fe
+F5100000 adds r0, r0, #0x800000
+F1100000 [ne] addsne r0, r0, #0x0

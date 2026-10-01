@@ -1,0 +1,19 @@
+// SHADD16_A1 cond=xxxx|011|00|op1=011|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=00|1|Rm=xxxx
+// Shadd16A1: SHADD16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+06391215 shadd16eq r1, r9, r5 (unpredictable)
+c63c7013 shadd16gt r7, r12, r3 (unpredictable)
+3638131f shadd16lo r1, r8, pc (unpredictable)
+1635a410 shadd16ne r10, r5, r0 (unpredictable)
+2635f713 shadd16hs pc, r5, r3 (unpredictable)
+563b2918 shadd16pl r2, r11, r8 (unpredictable)
+c63cfc1a shadd16gt pc, r12, r10 (unpredictable)
+e6350612 shadd16 r0, r5, r2 (unpredictable)
+// Binary Ninja's tests
+c6384f12 shadd16gt r4, r8, r2
+e6384f12 shadd16 r4, r8, r2
+F6391215 UNALLOCATED
+86301811 shadd16hi r1, r0, r1 (unpredictable)
+463F1115 shadd16mi r1, pc, r5 (unpredictable)
+06399215 shadd16eq r9, r9, r5 (unpredictable)
+06391219 shadd16eq r1, r9, r9 (unpredictable)

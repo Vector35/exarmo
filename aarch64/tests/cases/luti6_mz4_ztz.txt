@@ -1,0 +1,28 @@
+// luti6_mz4_ztmz3_1 1|10|0000|01|0|001|01000|size=00|opc=00|Zn=xxx|0|0|Zd=xxx|00
+// Luti6Mz4Ztmz31: LUTI6  { <Zd1>.B-<Zd4>.B }, ZT0, { <Zn1>-<Zn3> }
+// register fields: Zn, Zd
+C08A0008 luti6 {z8.b-z11.b}, zt0, {z0-z2}
+C08A0094 luti6 {z20.b-z23.b}, zt0, {z1-z3}
+C08A0104 luti6 {z4.b-z7.b}, zt0, {z2-z4}
+C08A0180 luti6 {z0.b-z3.b}, zt0, {z3-z5}
+C08A020C luti6 {z12.b-z15.b}, zt0, {z4-z6}
+C08A0290 luti6 {z16.b-z19.b}, zt0, {z5-z7}
+C08A0318 luti6 {z24.b-z27.b}, zt0, {z6-z8}
+C08A039C luti6 {z28.b-z31.b}, zt0, {z7-z9}
+
+// luti6_mz4_ztmz3_4 1|10|0000|010011|010|00|size=00|opc=00|Zn=xxx|0|0|D=x|00|Zd=xx
+// Luti6Mz4Ztmz34: LUTI6  { <Zd1>.B, <Zd2>.B, <Zd3>.B, <Zd4>.B }, ZT0, { <Zn1>-<Zn3> }
+// read together by <Zd1> and <Zd2> and <Zd3> and <Zd4>: D, Zd
+// register fields: Zn
+C09A0012 luti6 {z18.b, z22.b, z26.b, z30.b}, zt0, {z0-z2}
+C09A0082 luti6 {z2.b, z6.b, z10.b, z14.b}, zt0, {z1-z3}
+C09A0090 luti6 {z16.b, z20.b, z24.b, z28.b}, zt0, {z1-z3}
+C09A0111 luti6 {z17.b, z21.b, z25.b, z29.b}, zt0, {z2-z4}
+C09A0193 luti6 {z19.b, z23.b, z27.b, z31.b}, zt0, {z3-z5}
+C09A0212 luti6 {z18.b, z22.b, z26.b, z30.b}, zt0, {z4-z6}
+C09A0292 luti6 {z18.b, z22.b, z26.b, z30.b}, zt0, {z5-z7}
+C09A0312 luti6 {z18.b, z22.b, z26.b, z30.b}, zt0, {z6-z8}
+C09A0392 luti6 {z18.b, z22.b, z26.b, z30.b}, zt0, {z7-z9}
+C09A0000 luti6 {z0.b, z4.b, z8.b, z12.b}, zt0, {z0-z2}
+C09A0001 luti6 {z1.b, z5.b, z9.b, z13.b}, zt0, {z0-z2}
+C09A0003 luti6 {z3.b, z7.b, z11.b, z15.b}, zt0, {z0-z2}

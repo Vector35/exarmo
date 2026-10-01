@@ -1,0 +1,11 @@
+// STLH_A1 cond=xxxx|00|01|1|size=11|L=0|Rn=xxxx|xRd=(1)(1)(1)(1)|(1)(1)|ex=0|ord=0|1|00|1|Rt=xxxx
+// StlhA1: STLH{<c>}{<q>}  <Rt>, [<Rn>]
+// register fields: Rn, Rt
+// Binary Ninja's tests
+e1e3fc92 stlh r2, [r3]
+01E00090 stlheq r0, [r0] (unpredictable)
+F1E3FC92 UNALLOCATED
+81EF849F stlhhi pc, [pc] (unpredictable)
+41E34893 stlhmi r3, [r3] (unpredictable)
+21E32C92 stlhcs r2, [r3] (unpredictable)
+11E31C92 stlhne r2, [r3] (unpredictable)

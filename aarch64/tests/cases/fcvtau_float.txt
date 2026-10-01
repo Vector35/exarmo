@@ -1,0 +1,128 @@
+// FCVTAU_32D_float2int sf=0|0|S=0|11110|ftype=01|1|rmode=00|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtau32dFloat2int: FCVTAU  <Wd>, <Dn>
+// register fields: Rn, Rd
+1E6500EE fcvtau w14, d7
+1E6500DA fcvtau w26, d6
+1E65008A fcvtau w10, d4
+1E650079 fcvtau w25, d3
+1E6503D5 fcvtau w21, d30
+1E65003E fcvtau w30, d1
+1E65018E fcvtau w14, d12
+1E65034C fcvtau w12, d26
+1E65037D fcvtau w29, d27
+1E6500E0 fcvtau w0, d7
+1E65023D fcvtau w29, d17
+1E65019F fcvtau wzr, d12
+1E6501CE fcvtau w14, d14
+1E6500A8 fcvtau w8, d5
+1E6501DA fcvtau w26, d14
+1E650039 fcvtau w25, d1
+1E65000E fcvtau w14, d0
+1E6503EE fcvtau w14, d31
+
+// FCVTAU_32H_float2int sf=0|0|S=0|11110|ftype=11|1|rmode=00|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtau32hFloat2int: FCVTAU  <Wd>, <Hn>
+// register fields: Rn, Rd
+1EE50193 fcvtau w19, h12
+1EE50218 fcvtau w24, h16
+1EE5029D fcvtau w29, h20
+1EE503A2 fcvtau w2, h29
+1EE50356 fcvtau w22, h26
+1EE50089 fcvtau w9, h4
+1EE502C1 fcvtau w1, h22
+1EE502B4 fcvtau w20, h21
+1EE502B7 fcvtau w23, h21
+1EE50112 fcvtau w18, h8
+1EE50044 fcvtau w4, h2
+1EE502B5 fcvtau w21, h21
+1EE501B9 fcvtau w25, h13
+1EE50162 fcvtau w2, h11
+1EE503FF fcvtau wzr, h31
+1EE50110 fcvtau w16, h8
+1EE50000 fcvtau w0, h0
+
+// FCVTAU_32S_float2int sf=0|0|S=0|11110|ftype=00|1|rmode=00|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtau32sFloat2int: FCVTAU  <Wd>, <Sn>
+// register fields: Rn, Rd
+1E25038F fcvtau w15, s28
+1E25000A fcvtau w10, s0
+1E25004E fcvtau w14, s2
+1E250118 fcvtau w24, s8
+1E250046 fcvtau w6, s2
+1E250035 fcvtau w21, s1
+1E250254 fcvtau w20, s18
+1E2501A0 fcvtau w0, s13
+1E25028E fcvtau w14, s20
+1E250115 fcvtau w21, s8
+1E2501D9 fcvtau w25, s14
+1E250000 fcvtau w0, s0
+1E2500BE fcvtau w30, s5
+1E250098 fcvtau w24, s4
+1E250277 fcvtau w23, s19
+1E2502B8 fcvtau w24, s21
+1E2503FF fcvtau wzr, s31
+
+// FCVTAU_64D_float2int sf=1|0|S=0|11110|ftype=01|1|rmode=00|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtau64dFloat2int: FCVTAU  <Xd>, <Dn>
+// register fields: Rn, Rd
+9E65038F fcvtau x15, d28
+9E650008 fcvtau x8, d0
+9E6502FD fcvtau fp, d23
+9E650208 fcvtau x8, d16
+9E6501F4 fcvtau x20, d15
+9E650182 fcvtau x2, d12
+9E650146 fcvtau x6, d10
+9E6502A5 fcvtau x5, d21
+9E650062 fcvtau x2, d3
+9E650140 fcvtau x0, d10
+9E650097 fcvtau x23, d4
+9E6502AF fcvtau x15, d21
+9E6502DC fcvtau x28, d22
+9E650047 fcvtau x7, d2
+9E65005B fcvtau x27, d2
+9E6500F7 fcvtau x23, d7
+9E6503FF fcvtau xzr, d31
+
+// FCVTAU_64H_float2int sf=1|0|S=0|11110|ftype=11|1|rmode=00|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtau64hFloat2int: FCVTAU  <Xd>, <Hn>
+// register fields: Rn, Rd
+9EE5029F fcvtau xzr, h20
+9EE50179 fcvtau x25, h11
+9EE501B7 fcvtau x23, h13
+9EE50111 fcvtau x17, h8
+9EE50292 fcvtau x18, h20
+9EE503B4 fcvtau x20, h29
+9EE50231 fcvtau x17, h17
+9EE502A3 fcvtau x3, h21
+9EE50328 fcvtau x8, h25
+9EE50215 fcvtau x21, h16
+9EE50057 fcvtau x23, h2
+9EE50299 fcvtau x25, h20
+9EE50083 fcvtau x3, h4
+9EE5035A fcvtau x26, h26
+9EE50049 fcvtau x9, h2
+9EE500E1 fcvtau x1, h7
+9EE50000 fcvtau x0, h0
+9EE503FF fcvtau xzr, h31
+
+// FCVTAU_64S_float2int sf=1|0|S=0|11110|ftype=00|1|rmode=00|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// Fcvtau64sFloat2int: FCVTAU  <Xd>, <Sn>
+// register fields: Rn, Rd
+9E250297 fcvtau x23, s20
+9E250098 fcvtau x24, s4
+9E2502E5 fcvtau x5, s23
+9E250378 fcvtau x24, s27
+9E250113 fcvtau x19, s8
+9E2503FA fcvtau x26, s31
+9E2503AE fcvtau x14, s29
+9E25008D fcvtau x13, s4
+9E2500A7 fcvtau x7, s5
+9E250393 fcvtau x19, s28
+9E25016A fcvtau x10, s11
+9E2502F4 fcvtau x20, s23
+9E2502DB fcvtau x27, s22
+9E2500E4 fcvtau x4, s7
+9E250356 fcvtau x22, s26
+9E250371 fcvtau x17, s27
+9E250000 fcvtau x0, s0
+9E25029F fcvtau xzr, s20

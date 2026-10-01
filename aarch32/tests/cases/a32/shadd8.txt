@@ -1,0 +1,19 @@
+// SHADD8_A1 cond=xxxx|011|00|op1=011|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=1|op2=00|1|Rm=xxxx
+// Shadd8A1: SHADD8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+b63e159e shadd8lt r1, lr, lr (unpredictable)
+563cd49a shadd8pl sp, r12, r10 (unpredictable)
+36349e90 shadd8lo r9, r4, r0 (unpredictable)
+16351a93 shadd8ne r1, r5, r3 (unpredictable)
+d639a990 shadd8le r10, r9, r0 (unpredictable)
+9635809c shadd8ls r8, r5, r12 (unpredictable)
+1637d89d shadd8ne sp, r7, sp (unpredictable)
+16375a99 shadd8ne r5, r7, r9 (unpredictable)
+// Binary Ninja's tests
+c6384f92 shadd8gt r4, r8, r2
+e6384f92 shadd8 r4, r8, r2
+0630029F shadd8eq r0, r0, pc (unpredictable)
+F63E159E UNALLOCATED
+863FF19E shadd8hi pc, pc, lr (unpredictable)
+463EE59E shadd8mi lr, lr, lr (unpredictable)
+263E159E shadd8cs r1, lr, lr (unpredictable)

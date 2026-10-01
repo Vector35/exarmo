@@ -1,0 +1,19 @@
+// UQSUB16_A1 cond=xxxx|011|00|op1=110|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=0|op2=11|1|Rm=xxxx
+// Uqsub16A1: UQSUB16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+36645f7e uqsub16lo r5, r4, lr
+66658276 uqsub16vs r8, r5, r6 (unpredictable)
+16639c7e uqsub16ne r9, r3, lr (unpredictable)
+6666547c uqsub16vs r5, r6, r12 (unpredictable)
+c66ee177 uqsub16gt lr, lr, r7 (unpredictable)
+466e2974 uqsub16mi r2, lr, r4 (unpredictable)
+e6675b79 uqsub16 r5, r7, r9 (unpredictable)
+766db275 uqsub16vc r11, sp, r5 (unpredictable)
+// Binary Ninja's tests
+c6623f75 uqsub16gt r3, r2, r5
+e6651f73 uqsub16 r1, r5, r3
+06600070 uqsub16eq r0, r0, r0 (unpredictable)
+F6645F7E UNALLOCATED
+866FF87F uqsub16hi pc, pc, pc (unpredictable)
+26645F74 uqsub16cs r5, r4, r4
+36645F75 uqsub16cc r5, r4, r5

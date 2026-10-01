@@ -1,0 +1,28 @@
+// uqrshrn_z_mz2_ 010|0010|1|1|op0=0|1|1|imm4=xxxx|0|0|op1=1|U=1|R=1|0|Zn=xxxx|0|Zd=xxxxx
+// UqrshrnZMz2: UQRSHRN  <Zd>.H, { <Zn1>.S-<Zn2>.S }, #<const>
+// register fields: Zn, Zd
+45B03806 uqrshrn z6.h, {z0.s-z1.s}, #0x10
+45B0380D uqrshrn z13.h, {z0.s-z1.s}, #0x10
+45B03814 uqrshrn z20.h, {z0.s-z1.s}, #0x10
+45BF3BC0 uqrshrn z0.h, {z30.s-z31.s}, #0x1
+45B0381F uqrshrn z31.h, {z0.s-z1.s}, #0x10
+45B03800 uqrshrn z0.h, {z0.s-z1.s}, #0x10
+45B83806 uqrshrn z6.h, {z0.s-z1.s}, #0x8
+45B43806 uqrshrn z6.h, {z0.s-z1.s}, #0xc
+45B23806 uqrshrn z6.h, {z0.s-z1.s}, #0xe
+45B13806 uqrshrn z6.h, {z0.s-z1.s}, #0xf
+
+// uqrshrn_z_mz2_b 010|0010|1|1|op0=0|1|01|imm3=xxx|0|0|op1=1|U=1|R=1|0|Zn=xxxx|0|Zd=xxxxx
+// UqrshrnZMz2B: UQRSHRN  <Zd>.B, { <Zn1>.H-<Zn2>.H }, #<const>
+// register fields: Zn, Zd
+45A83801 uqrshrn z1.b, {z0.h-z1.h}, #0x8
+45A83808 uqrshrn z8.b, {z0.h-z1.h}, #0x8
+45A8380F uqrshrn z15.b, {z0.h-z1.h}, #0x8
+45A93BC0 uqrshrn z0.b, {z30.h-z31.h}, #0x7
+45AA381F uqrshrn z31.b, {z0.h-z1.h}, #0x6
+45AB3801 uqrshrn z1.b, {z0.h-z1.h}, #0x5
+45AC3801 uqrshrn z1.b, {z0.h-z1.h}, #0x4
+45AD3801 uqrshrn z1.b, {z0.h-z1.h}, #0x3
+45AE3801 uqrshrn z1.b, {z0.h-z1.h}, #0x2
+45AF3801 uqrshrn z1.b, {z0.h-z1.h}, #0x1
+45A83800 uqrshrn z0.b, {z0.h-z1.h}, #0x8

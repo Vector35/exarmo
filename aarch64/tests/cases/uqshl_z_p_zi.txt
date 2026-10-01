@@ -1,0 +1,134 @@
+// uqshl_z_p_zi_ 000|0010|0|tszh=xx|0|0|opc=01|L=1|U=1|100|Pg=xxx|tszl=xx|imm3=xxx|Zdn=xxxxx
+// UqshlZPZi: UQSHL  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Pg, Zdn
+04079183 uqshl z3.b, p4/m, z3.b, #0x4
+04C79262 uqshl z2.d, p4/m, z2.d, #0x33
+04C78FC9 uqshl z9.d, p3/m, z9.d, #0x3e
+04879936 uqshl z22.d, p6/m, z22.d, #0x9
+04478213 uqshl z19.s, p0/m, z19.s, #0x10
+04C78D51 uqshl z17.d, p3/m, z17.d, #0x2a
+048791A1 uqshl z1.d, p4/m, z1.d, #0xd
+044796C4 uqshl z4.s, p5/m, z4.s, #0x16
+040785E0 uqshl z0.b, p1/m, z0.b, #0x7
+0407899F uqshl z31.b, p2/m, z31.b, #0x4
+04079D83 uqshl z3.b, p7/m, z3.b, #0x4
+04C79062 uqshl z2.d, p4/m, z2.d, #0x23
+04079003 UNDEFINED
+04079023 UNDEFINED
+04079043 UNDEFINED
+04079063 UNDEFINED
+04079083 UNDEFINED
+040790A3 UNDEFINED
+040790C3 UNDEFINED
+040790E3 UNDEFINED
+04079104 uqshl z4.b, p4/m, z4.b, #0x0
+04079123 uqshl z3.b, p4/m, z3.b, #0x1
+04079143 uqshl z3.b, p4/m, z3.b, #0x2
+04079163 uqshl z3.b, p4/m, z3.b, #0x3
+040791A3 uqshl z3.b, p4/m, z3.b, #0x5
+040791C3 uqshl z3.b, p4/m, z3.b, #0x6
+04079203 uqshl z3.h, p4/m, z3.h, #0x0
+04079223 uqshl z3.h, p4/m, z3.h, #0x1
+04079243 uqshl z3.h, p4/m, z3.h, #0x2
+04079263 uqshl z3.h, p4/m, z3.h, #0x3
+04079283 uqshl z3.h, p4/m, z3.h, #0x4
+040792A3 uqshl z3.h, p4/m, z3.h, #0x5
+040792C3 uqshl z3.h, p4/m, z3.h, #0x6
+040792E3 uqshl z3.h, p4/m, z3.h, #0x7
+04079303 uqshl z3.h, p4/m, z3.h, #0x8
+04079323 uqshl z3.h, p4/m, z3.h, #0x9
+04079343 uqshl z3.h, p4/m, z3.h, #0xa
+04079363 uqshl z3.h, p4/m, z3.h, #0xb
+04079383 uqshl z3.h, p4/m, z3.h, #0xc
+040793A3 uqshl z3.h, p4/m, z3.h, #0xd
+040793C3 uqshl z3.h, p4/m, z3.h, #0xe
+040793E3 uqshl z3.h, p4/m, z3.h, #0xf
+04479003 uqshl z3.s, p4/m, z3.s, #0x0
+04479023 uqshl z3.s, p4/m, z3.s, #0x1
+04479043 uqshl z3.s, p4/m, z3.s, #0x2
+04479063 uqshl z3.s, p4/m, z3.s, #0x3
+04479083 uqshl z3.s, p4/m, z3.s, #0x4
+044790A3 uqshl z3.s, p4/m, z3.s, #0x5
+044790C3 uqshl z3.s, p4/m, z3.s, #0x6
+044790E3 uqshl z3.s, p4/m, z3.s, #0x7
+04479103 uqshl z3.s, p4/m, z3.s, #0x8
+04479123 uqshl z3.s, p4/m, z3.s, #0x9
+04479143 uqshl z3.s, p4/m, z3.s, #0xa
+04479163 uqshl z3.s, p4/m, z3.s, #0xb
+04479183 uqshl z3.s, p4/m, z3.s, #0xc
+044791A3 uqshl z3.s, p4/m, z3.s, #0xd
+044791C3 uqshl z3.s, p4/m, z3.s, #0xe
+044791E3 uqshl z3.s, p4/m, z3.s, #0xf
+04479223 uqshl z3.s, p4/m, z3.s, #0x11
+04479243 uqshl z3.s, p4/m, z3.s, #0x12
+04479263 uqshl z3.s, p4/m, z3.s, #0x13
+04479283 uqshl z3.s, p4/m, z3.s, #0x14
+044792A3 uqshl z3.s, p4/m, z3.s, #0x15
+044792E3 uqshl z3.s, p4/m, z3.s, #0x17
+04479303 uqshl z3.s, p4/m, z3.s, #0x18
+04479323 uqshl z3.s, p4/m, z3.s, #0x19
+04479343 uqshl z3.s, p4/m, z3.s, #0x1a
+04479363 uqshl z3.s, p4/m, z3.s, #0x1b
+04479383 uqshl z3.s, p4/m, z3.s, #0x1c
+044793A3 uqshl z3.s, p4/m, z3.s, #0x1d
+044793C3 uqshl z3.s, p4/m, z3.s, #0x1e
+044793E3 uqshl z3.s, p4/m, z3.s, #0x1f
+04879003 uqshl z3.d, p4/m, z3.d, #0x0
+04879023 uqshl z3.d, p4/m, z3.d, #0x1
+04879043 uqshl z3.d, p4/m, z3.d, #0x2
+04879063 uqshl z3.d, p4/m, z3.d, #0x3
+04879083 uqshl z3.d, p4/m, z3.d, #0x4
+048790A3 uqshl z3.d, p4/m, z3.d, #0x5
+048790C3 uqshl z3.d, p4/m, z3.d, #0x6
+048790E3 uqshl z3.d, p4/m, z3.d, #0x7
+04879103 uqshl z3.d, p4/m, z3.d, #0x8
+04879143 uqshl z3.d, p4/m, z3.d, #0xa
+04879163 uqshl z3.d, p4/m, z3.d, #0xb
+04879183 uqshl z3.d, p4/m, z3.d, #0xc
+048791C3 uqshl z3.d, p4/m, z3.d, #0xe
+048791E3 uqshl z3.d, p4/m, z3.d, #0xf
+04879203 uqshl z3.d, p4/m, z3.d, #0x10
+04879223 uqshl z3.d, p4/m, z3.d, #0x11
+04879243 uqshl z3.d, p4/m, z3.d, #0x12
+04879263 uqshl z3.d, p4/m, z3.d, #0x13
+04879283 uqshl z3.d, p4/m, z3.d, #0x14
+048792A3 uqshl z3.d, p4/m, z3.d, #0x15
+048792C3 uqshl z3.d, p4/m, z3.d, #0x16
+048792E3 uqshl z3.d, p4/m, z3.d, #0x17
+04879303 uqshl z3.d, p4/m, z3.d, #0x18
+04879323 uqshl z3.d, p4/m, z3.d, #0x19
+04879343 uqshl z3.d, p4/m, z3.d, #0x1a
+04879363 uqshl z3.d, p4/m, z3.d, #0x1b
+04879383 uqshl z3.d, p4/m, z3.d, #0x1c
+048793A3 uqshl z3.d, p4/m, z3.d, #0x1d
+048793C3 uqshl z3.d, p4/m, z3.d, #0x1e
+048793E3 uqshl z3.d, p4/m, z3.d, #0x1f
+04C79003 uqshl z3.d, p4/m, z3.d, #0x20
+04C79023 uqshl z3.d, p4/m, z3.d, #0x21
+04C79043 uqshl z3.d, p4/m, z3.d, #0x22
+04C79083 uqshl z3.d, p4/m, z3.d, #0x24
+04C790A3 uqshl z3.d, p4/m, z3.d, #0x25
+04C790C3 uqshl z3.d, p4/m, z3.d, #0x26
+04C790E3 uqshl z3.d, p4/m, z3.d, #0x27
+04C79103 uqshl z3.d, p4/m, z3.d, #0x28
+04C79123 uqshl z3.d, p4/m, z3.d, #0x29
+04C79163 uqshl z3.d, p4/m, z3.d, #0x2b
+04C79183 uqshl z3.d, p4/m, z3.d, #0x2c
+04C791A3 uqshl z3.d, p4/m, z3.d, #0x2d
+04C791C3 uqshl z3.d, p4/m, z3.d, #0x2e
+04C791E3 uqshl z3.d, p4/m, z3.d, #0x2f
+04C79203 uqshl z3.d, p4/m, z3.d, #0x30
+04C79223 uqshl z3.d, p4/m, z3.d, #0x31
+04C79243 uqshl z3.d, p4/m, z3.d, #0x32
+04C79283 uqshl z3.d, p4/m, z3.d, #0x34
+04C792A3 uqshl z3.d, p4/m, z3.d, #0x35
+04C792C3 uqshl z3.d, p4/m, z3.d, #0x36
+04C792E3 uqshl z3.d, p4/m, z3.d, #0x37
+04C79303 uqshl z3.d, p4/m, z3.d, #0x38
+04C79323 uqshl z3.d, p4/m, z3.d, #0x39
+04C79343 uqshl z3.d, p4/m, z3.d, #0x3a
+04C79363 uqshl z3.d, p4/m, z3.d, #0x3b
+04C79383 uqshl z3.d, p4/m, z3.d, #0x3c
+04C793A3 uqshl z3.d, p4/m, z3.d, #0x3d
+04C793E3 uqshl z3.d, p4/m, z3.d, #0x3f

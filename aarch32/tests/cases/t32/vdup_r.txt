@@ -1,0 +1,35 @@
+// VDUP_r_T1_D 111011101|B=x|Q=0|L=0|Vd=xxxx|Rt=xxxx|1011|D=x|0|E=x|1(0)(0)(0)(0)
+// VdupRT1D: VDUP{<c>}{<q>}.<size>  <Dd>, <Rt>
+// read together by <size>: B, E
+// read together by <Dd>: Vd, D
+// register fields: Rt
+// IT state read: condition
+EE800B10 vdup.32 d0, r0
+EECFFB9F vdup.8 d31, pc (unpredictable)
+EE880B38 vdup.16 d8, r0 (unpredictable)
+EE840B14 vdup.32 d4, r0 (unpredictable)
+EE820B32 vdup.16 d2, r0 (unpredictable)
+EEC10B11 vdup.8 d1, r0 (unpredictable)
+EEC00B30 UNDEFINED
+EE800B90 vdup.32 d16, r0
+EE8F0B10 vdup.32 d15, r0
+EE8F0B90 vdup.32 d31, r0
+EE800B10 [ne] vdupne.32 d0, r0
+
+// VDUP_r_T1_Q 111011101|B=x|Q=1|L=0|Vd=xxxx|Rt=xxxx|1011|D=x|0|E=x|1(0)(0)(0)(0)
+// VdupRT1Q: VDUP{<c>}{<q>}.<size>  <Qd>, <Rt>
+// read together by <size>: B, E
+// read together by <Qd>: Vd, D
+// register fields: Rt
+// IT state read: condition
+EEA00B10 vdup.32 q0, r0
+EEE8FB9F vdup.8 q12, pc (unpredictable)
+EEEF0B30 UNDEFINED
+EEA40B38 vdup.16 q2, r0 (unpredictable)
+EEA20B14 vdup.32 q1, r0 (unpredictable)
+EEA10B10 UNDEFINED
+EEA00B32 vdup.16 q0, r0 (unpredictable)
+EEE00B91 vdup.8 q8, r0 (unpredictable)
+EEAF0B10 UNDEFINED
+EEAF0B90 UNDEFINED
+EEA00B10 [ne] vdupne.32 q0, r0

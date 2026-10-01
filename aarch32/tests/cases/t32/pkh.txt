@@ -1,0 +1,93 @@
+// PKHBT_T1 1110101|op1=0110|S=0|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|tb=0|T=0|Rm=xxxx
+// PkhbtT1: PKHBT{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, LSL #<imm>}
+// read together by <imm>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+eac11002 pkhbt r0, r1, r2, lsl #4
+eac17a42 pkhbt r10, r1, r2, lsl #29
+EAC08F80 pkhbt pc, r0, r0, lsl #0x2 (unpredictable)
+EACF20CF pkhbt r0, pc, pc, lsl #0xb (unpredictable)
+EAC13102 pkhbt r1, r1, r2, lsl #0xc
+EAC14001 pkhbt r0, r1, r1, lsl #0x10
+EAC15000 pkhbt r0, r1, r0, lsl #0x14
+EAC16002 pkhbt r0, r1, r2, lsl #0x18
+EAC10002 pkhbt r0, r1, r2
+EAC10042 pkhbt r0, r1, r2, lsl #0x1
+EAC10082 pkhbt r0, r1, r2, lsl #0x2
+EAC100C2 pkhbt r0, r1, r2, lsl #0x3
+EAC11042 pkhbt r0, r1, r2, lsl #0x5
+EAC11082 pkhbt r0, r1, r2, lsl #0x6
+EAC110C2 pkhbt r0, r1, r2, lsl #0x7
+EAC12002 pkhbt r0, r1, r2, lsl #0x8
+EAC12042 pkhbt r0, r1, r2, lsl #0x9
+EAC12082 pkhbt r0, r1, r2, lsl #0xa
+EAC120C2 pkhbt r0, r1, r2, lsl #0xb
+EAC13002 pkhbt r0, r1, r2, lsl #0xc
+EAC13042 pkhbt r0, r1, r2, lsl #0xd
+EAC13082 pkhbt r0, r1, r2, lsl #0xe
+EAC130C2 pkhbt r0, r1, r2, lsl #0xf
+EAC14002 pkhbt r0, r1, r2, lsl #0x10
+EAC14042 pkhbt r0, r1, r2, lsl #0x11
+EAC14082 pkhbt r0, r1, r2, lsl #0x12
+EAC140C2 pkhbt r0, r1, r2, lsl #0x13
+EAC15002 pkhbt r0, r1, r2, lsl #0x14
+EAC15042 pkhbt r0, r1, r2, lsl #0x15
+EAC15082 pkhbt r0, r1, r2, lsl #0x16
+EAC150C2 pkhbt r0, r1, r2, lsl #0x17
+EAC16042 pkhbt r0, r1, r2, lsl #0x19
+EAC16082 pkhbt r0, r1, r2, lsl #0x1a
+EAC160C2 pkhbt r0, r1, r2, lsl #0x1b
+EAC17002 pkhbt r0, r1, r2, lsl #0x1c
+EAC17082 pkhbt r0, r1, r2, lsl #0x1e
+EAC170C2 pkhbt r0, r1, r2, lsl #0x1f
+EAC11002 [ne] pkhbtne r0, r1, r2, lsl #0x4
+
+// PKHTB_T1 1110101|op1=0110|S=0|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|tb=1|T=0|Rm=xxxx
+// PkhtbT1: PKHTB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, ASR #<imm>}
+// read together by <imm>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+eac11022 pkhtb r0, r1, r2, asr #4
+eac17ae2 pkhtb r10, r1, r2, asr #31
+eac9822d pkhtb r2, r9, sp, asr #32 (unpredictable)
+eacf8221 pkhtb r2, pc, r1, asr #32 (unpredictable)
+eac88122 pkhtb r1, r8, r2, asr #32 (unpredictable)
+eac88e2f pkhtb lr, r8, pc, asr #32 (unpredictable)
+eac50c2a pkhtb r12, r5, r10, asr #32
+eaca8e2b pkhtb lr, r10, r11, asr #32 (unpredictable)
+eac3802b pkhtb r0, r3, r11, asr #32 (unpredictable)
+eacb002e pkhtb r0, r11, lr, asr #32
+EAC02F60 pkhtb pc, r0, r0, asr #0x9 (unpredictable)
+EAC131A2 pkhtb r1, r1, r2, asr #0xe
+EAC14021 pkhtb r0, r1, r1, asr #0x10
+EAC15020 pkhtb r0, r1, r0, asr #0x14
+EAC16022 pkhtb r0, r1, r2, asr #0x18
+EAC10062 pkhtb r0, r1, r2, asr #0x1
+EAC100A2 pkhtb r0, r1, r2, asr #0x2
+EAC100E2 pkhtb r0, r1, r2, asr #0x3
+EAC11062 pkhtb r0, r1, r2, asr #0x5
+EAC110A2 pkhtb r0, r1, r2, asr #0x6
+EAC110E2 pkhtb r0, r1, r2, asr #0x7
+EAC12022 pkhtb r0, r1, r2, asr #0x8
+EAC12062 pkhtb r0, r1, r2, asr #0x9
+EAC120A2 pkhtb r0, r1, r2, asr #0xa
+EAC120E2 pkhtb r0, r1, r2, asr #0xb
+EAC13022 pkhtb r0, r1, r2, asr #0xc
+EAC13062 pkhtb r0, r1, r2, asr #0xd
+EAC130A2 pkhtb r0, r1, r2, asr #0xe
+EAC130E2 pkhtb r0, r1, r2, asr #0xf
+EAC14022 pkhtb r0, r1, r2, asr #0x10
+EAC14062 pkhtb r0, r1, r2, asr #0x11
+EAC140A2 pkhtb r0, r1, r2, asr #0x12
+EAC140E2 pkhtb r0, r1, r2, asr #0x13
+EAC15022 pkhtb r0, r1, r2, asr #0x14
+EAC15062 pkhtb r0, r1, r2, asr #0x15
+EAC150A2 pkhtb r0, r1, r2, asr #0x16
+EAC150E2 pkhtb r0, r1, r2, asr #0x17
+EAC16062 pkhtb r0, r1, r2, asr #0x19
+EAC160A2 pkhtb r0, r1, r2, asr #0x1a
+EAC160E2 pkhtb r0, r1, r2, asr #0x1b
+EAC17022 pkhtb r0, r1, r2, asr #0x1c
+EAC17062 pkhtb r0, r1, r2, asr #0x1d
+EAC170A2 pkhtb r0, r1, r2, asr #0x1e
+EAC11022 [ne] pkhtbne r0, r1, r2, asr #0x4

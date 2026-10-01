@@ -1,0 +1,11 @@
+// STLEXB_T1 111|0100|op0=0110|L=0|Rn=xxxx|Rt=xxxx|Rt2=(1)(1)(1)(1)|1|op=1|sz=00|Rd=xxxx
+// StlexbT1: STLEXB{<c>}{<q>}  <Rd>, <Rt>, [<Rn>]
+// register fields: Rn, Rt, Rd
+// IT state read: condition
+e8c84fcf stlexb pc, r4, [r8] (unpredictable)
+E8C000C0 stlexb r0, r0, [r0] (unpredictable)
+E8CFF8CF stlexb pc, pc, [pc] (unpredictable)
+E8C884CF stlexb pc, r8, [r8] (unpredictable)
+E8C842C8 stlexb r8, r4, [r8] (unpredictable)
+E8C841C4 stlexb r4, r4, [r8] (unpredictable)
+E8C84FCF [ne] stlexbne pc, r4, [r8] (unpredictable)

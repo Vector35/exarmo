@@ -1,0 +1,11 @@
+// SDIV_A1 cond=xxxx|011|10|op1=001|Rd=xxxx|(1)(1)(1)(1)|Rm=xxxx|op2=000|1|Rn=xxxx
+// SdivA1: SDIV{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rd, Rm, Rn
+// Binary Ninja's tests
+e711f312 sdiv r1, r2, r3
+07100010 sdiveq r0, r0, r0 (unpredictable)
+F711F312 UNALLOCATED
+871F8F1F sdivhi pc, pc, pc (unpredictable)
+47114112 sdivmi r1, r2, r1 (unpredictable)
+27112311 sdivcs r1, r1, r3 (unpredictable)
+17111313 sdivne r1, r3, r3 (unpredictable)

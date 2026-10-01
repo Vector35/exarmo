@@ -1,0 +1,13 @@
+// SSAT16_A1 cond=xxxx|011|01|U=0|10|sat_imm=xxxx|Rd=xxxx|(1)(1)(1)(1)|001|1|Rn=xxxx
+// Ssat16A1: SSAT16{<c>}{<q>}  <Rd>, #<imm>, <Rn>
+// register fields: Rd, Rn
+// Binary Ninja's tests
+e6a02f37 ssat16 r2, #1, r7
+e6a60f30 ssat16 r0, #7, r0
+e6af3f35 ssat16 r3, #16, r5
+06A8F03F ssat16eq pc, #0x9, pc (unpredictable)
+F6A02F37 UNALLOCATED
+86A42837 ssat16hi r2, #0x5, r7 (unpredictable)
+46A22437 ssat16mi r2, #0x3, r7 (unpredictable)
+26A12237 ssat16cs r2, #0x2, r7 (unpredictable)
+16A02137 ssat16ne r2, #0x1, r7 (unpredictable)

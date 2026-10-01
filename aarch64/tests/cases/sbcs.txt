@@ -1,0 +1,83 @@
+// SBCS_32_addsub_carry sf=0|op=1|S=1|11010000|Rm=xxxxx|000000|Rn=xxxxx|Rd=xxxxx
+// Sbcs32AddsubCarry: SBCS  <Wd>, <Wn>, <Wm>
+// NgcsSbcs32AddsubCarry: NGCS  <Wd>, <Wm>
+// register fields: Rm, Rn, Rd
+// form chosen on: Rn
+7A1503F1 ngcs w17, w21
+7A1203E2 ngcs w2, w18
+7A1203FE ngcs w30, w18
+7A0103F4 ngcs w20, w1
+7A1703F5 ngcs w21, w23
+7A0403F2 ngcs w18, w4
+7A1503E2 ngcs w2, w21
+7A0603F8 ngcs w24, w6
+7A1603F6 ngcs w22, w22
+7A0C03EE ngcs w14, w12
+7A1D03FC ngcs w28, w29
+7A1703F9 ngcs w25, w23
+7A0D03FC ngcs w28, w13
+7A0003F5 ngcs w21, w0
+7A1603FA ngcs w26, w22
+7A0D03E8 ngcs w8, w13
+7A0E012D sbcs w13, w9, w14
+7A0A023C sbcs w28, w17, w10
+7A150272 sbcs w18, w19, w21
+7A0903B3 sbcs w19, w29, w9
+7A060368 sbcs w8, w27, w6
+7A13029A sbcs w26, w20, w19
+7A0803A4 sbcs w4, w29, w8
+7A1D01B1 sbcs w17, w13, w29
+7A1F004C sbcs w12, w2, wzr
+7A120165 sbcs w5, w11, w18
+7A0500F1 sbcs w17, w7, w5
+7A0403A9 sbcs w9, w29, w4
+7A030326 sbcs w6, w25, w3
+7A010090 sbcs w16, w4, w1
+7A14019A sbcs w26, w12, w20
+7A1E0117 sbcs w23, w8, w30
+7A150000 sbcs w0, w0, w21
+7A1503FF ngcs wzr, w21
+7A1502B1 sbcs w17, w21, w21
+7A0001F5 sbcs w21, w15, w0
+
+// SBCS_64_addsub_carry sf=1|op=1|S=1|11010000|Rm=xxxxx|000000|Rn=xxxxx|Rd=xxxxx
+// Sbcs64AddsubCarry: SBCS  <Xd>, <Xn>, <Xm>
+// NgcsSbcs64AddsubCarry: NGCS  <Xd>, <Xm>
+// register fields: Rm, Rn, Rd
+// form chosen on: Rn
+FA0703F1 ngcs x17, x7
+FA1803F3 ngcs x19, x24
+FA1D03E3 ngcs x3, fp
+FA0D03FF ngcs xzr, x13
+FA1003EA ngcs x10, x16
+FA1803E5 ngcs x5, x24
+FA0403EF ngcs x15, x4
+FA0803E3 ngcs x3, x8
+FA1403FE ngcs lr, x20
+FA0F03E6 ngcs x6, x15
+FA1903E2 ngcs x2, x25
+FA1603FB ngcs x27, x22
+FA1E03EF ngcs x15, lr
+FA0403FA ngcs x26, x4
+FA1003F3 ngcs x19, x16
+FA0903EA ngcs x10, x9
+FA1F0036 sbcs x22, x1, xzr
+FA16016F sbcs x15, x11, x22
+FA16032B sbcs x11, x25, x22
+FA1B0204 sbcs x4, x16, x27
+FA170240 sbcs x0, x18, x23
+FA02006D sbcs x13, x3, x2
+FA01012D sbcs x13, x9, x1
+FA0100D8 sbcs x24, x6, x1
+FA090334 sbcs x20, x25, x9
+FA0903C6 sbcs x6, lr, x9
+FA15007B sbcs x27, x3, x21
+FA15010C sbcs x12, x8, x21
+FA0D0235 sbcs x21, x17, x13
+FA11034D sbcs x13, x26, x17
+FA0001D1 sbcs x17, x14, x0
+FA0701F2 sbcs x18, x15, x7
+FA070011 sbcs x17, x0, x7
+FA0700F1 sbcs x17, x7, x7
+FA0703E7 ngcs x7, x7
+FA0401EF sbcs x15, x15, x4

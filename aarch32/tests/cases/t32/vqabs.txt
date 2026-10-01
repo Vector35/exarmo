@@ -1,0 +1,44 @@
+// VQABS_T1_D 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1110|Q=0|M=x|0|Vm=xxxx
+// VqabsT1D: VQABS{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fff8572d vqabs.s32 d21, d29
+ffb48726 vqabs.s16 d8, d22
+ffb45724 vqabs.s16 d5, d20
+fff05723 vqabs.s8 d21, d19
+fff8670b vqabs.s32 d22, d11
+fff81728 vqabs.s32 d17, d24
+ffb8f706 vqabs.s32 d15, d6
+ffb84722 vqabs.s32 d4, d18
+FFFC572D UNDEFINED
+FFF80720 vqabs.s32 d16, d16
+FFF8272F vqabs.s32 d18, d31
+FFB80721 vqabs.s32 d0, d17
+FFF80700 vqabs.s32 d16, d0
+FFF8F70F vqabs.s32 d31, d15
+FFF85720 vqabs.s32 d21, d16
+FFF8572F vqabs.s32 d21, d31
+FFF8572D [ne] vqabsne.s32 d21, d29
+
+// VQABS_T1_Q 111111111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1110|Q=1|M=x|0|Vm=xxxx
+// VqabsT1Q: VQABS{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb4e744 vqabs.s16 q7, q2
+fff42766 vqabs.s16 q9, q11
+ffb8476a vqabs.s32 q2, q13
+ffb0c740 vqabs.s8 q6, q0
+fff0e74e vqabs.s8 q15, q7
+fff8c764 vqabs.s32 q14, q10
+fff06766 vqabs.s8 q11, q11
+fff88764 vqabs.s32 q12, q10
+FFBCF74F UNDEFINED
+FFB40748 vqabs.s16 q0, q4
+FFB41741 UNDEFINED
+FFB40742 vqabs.s16 q0, q1
+FFB4F74F UNDEFINED
+FFF40760 vqabs.s16 q8, q8
+FFF4F76F UNDEFINED
+FFB4E744 [ne] vqabsne.s16 q7, q2

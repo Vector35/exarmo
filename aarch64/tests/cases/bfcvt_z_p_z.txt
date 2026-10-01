@@ -1,0 +1,31 @@
+// bfcvt_z_p_z_s2bf 011|0010|1|opc=10|0|010|opc2=10|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// BfcvtZPZS2bf: BFCVT  <Zd>.H, <Pg>/M, <Zn>.S
+// register fields: Pg, Zn, Zd
+// added in 2020-12 spec
+658AB9BB bfcvt z27.h, p6/m, z13.s
+658ABDD9 bfcvt z25.h, p7/m, z14.s
+658AB944 bfcvt z4.h, p6/m, z10.s
+658AA854 bfcvt z20.h, p2/m, z2.s
+658AB803 bfcvt z3.h, p6/m, z0.s
+658AAE76 bfcvt z22.h, p3/m, z19.s
+658AAB20 bfcvt z0.h, p2/m, z25.s
+658AA60D bfcvt z13.h, p1/m, z16.s
+658AA3FF bfcvt z31.h, p0/m, z31.s
+658AB1BB bfcvt z27.h, p4/m, z13.s
+658AB5BB bfcvt z27.h, p5/m, z13.s
+658AB9A6 bfcvt z6.h, p6/m, z13.s
+
+// bfcvt_z_p_z_s2bfz 011|0010|0|opc=10|011|010|1|opc2=10|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// BfcvtZPZS2bfz: BFCVT  <Zd>.H, <Pg>/Z, <Zn>.S
+// register fields: Pg, Zn, Zd
+649AC000 bfcvt z0.h, p0/z, z0.s
+649AC007 bfcvt z7.h, p0/z, z0.s
+649AC00E bfcvt z14.h, p0/z, z0.s
+649AC7FF bfcvt z31.h, p1/z, z31.s
+649AC800 bfcvt z0.h, p2/z, z0.s
+649ACC00 bfcvt z0.h, p3/z, z0.s
+649AD000 bfcvt z0.h, p4/z, z0.s
+649AD400 bfcvt z0.h, p5/z, z0.s
+649AD800 bfcvt z0.h, p6/z, z0.s
+649ADC00 bfcvt z0.h, p7/z, z0.s
+649AC443 bfcvt z3.h, p1/z, z2.s

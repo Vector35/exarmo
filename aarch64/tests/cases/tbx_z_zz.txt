@@ -1,0 +1,13 @@
+// tbx_z_zz_ 000|0010|1|size=xx|1|Zm=xxxxx|00101|op=1|Zn=xxxxx|Zd=xxxxx
+// TbxZZz: TBX  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+05F22E68 tbx z8.d, z19.d, z18.d
+05B82EAE tbx z14.s, z21.s, z24.s
+05642FC7 tbx z7.h, z30.h, z4.h
+05302D53 tbx z19.b, z10.b, z16.b
+05F72DC1 tbx z1.d, z14.d, z23.d
+05262E2D tbx z13.b, z17.b, z6.b
+057A2D92 tbx z18.h, z12.h, z26.h
+05AC2CB7 tbx z23.s, z5.s, z12.s
+05E02C00 tbx z0.d, z0.d, z0.d
+05FF2FFF tbx z31.d, z31.d, z31.d

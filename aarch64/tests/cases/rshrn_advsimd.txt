@@ -1,0 +1,46 @@
+// RSHRN_asimdshf_N 0|Q=x|U=0|0|111|10|immh=xxxx|immb=xxx|1000|op=1|1|Rn=xxxxx|Rd=xxxxx
+// RshrnAsimdshfN: RSHRN  <Vd>.<Tb>, <Vn>.<Ta>, #<shift>
+// RshrnAsimdshfN2: RSHRN2  <Vd>.<Tb>, <Vn>.<Ta>, #<shift>
+// read together by <Tb>: Q, immh
+// read together by <shift>: immh, immb
+// register fields: Rn, Rd
+// form chosen on: Q
+0F0B8D68 rshrn v8.8b, v11.8h, #0x5
+4F1A8F8A rshrn2 v10.8h, v28.4s, #0x6
+4F1E8D8D rshrn2 v13.8h, v12.4s, #0x2
+4F2E8FBB rshrn2 v27.4s, v29.2d, #0x12
+4F3D8F38 rshrn2 v24.4s, v25.2d, #0x3
+4F3A8D2D rshrn2 v13.4s, v9.2d, #0x6
+0F2D8EAC rshrn v12.2s, v21.2d, #0x13
+4F118F6E rshrn2 v14.8h, v27.4s, #0xf
+0F0A8E06 rshrn v6.8b, v16.8h, #0x6
+4F2A8CFF rshrn2 v31.4s, v7.2d, #0x16
+4F0B8F0B rshrn2 v11.16b, v24.8h, #0x5
+0F318EAD rshrn v13.2s, v21.2d, #0xf
+4F3F8C72 rshrn2 v18.4s, v3.2d, #0x1
+4F2E8E35 rshrn2 v21.4s, v17.2d, #0x12
+4F3E8EE2 rshrn2 v2.4s, v23.2d, #0x2
+4F398EF5 rshrn2 v21.4s, v23.2d, #0x7
+0F088C00 rshrn v0.8b, v0.8h, #0x8
+0F0C8FE8 rshrn v8.8b, v31.8h, #0x4
+0F038D68 UNALLOCATED
+0F7B8D68 UNDEFINED
+4F038D68 UNALLOCATED
+4F7B8D68 UNDEFINED
+0F008D68 UNALLOCATED
+0F018D68 UNALLOCATED
+0F028D68 UNALLOCATED
+0F048D68 UNALLOCATED
+0F058D68 UNALLOCATED
+0F068D68 UNALLOCATED
+0F078D68 UNALLOCATED
+0F788D68 UNDEFINED
+0F798D68 UNDEFINED
+0F7A8D68 UNDEFINED
+0F7C8D68 UNDEFINED
+0F7D8D68 UNDEFINED
+0F7E8D68 UNDEFINED
+0F7F8D68 UNDEFINED
+0F438D68 UNDEFINED
+0F238D68 rshrn v8.2s, v11.2d, #0x1d
+4F088C00 rshrn2 v0.16b, v0.8h, #0x8

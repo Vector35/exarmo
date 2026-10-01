@@ -1,0 +1,24 @@
+// VPADD_i_T1 111|U=0|11|11|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1011|N=x|Q=x|M=x|o1=1|Vm=xxxx
+// VpaddIT1: VPADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef107b11 vpadd.i16 d7, d0, d1
+ef077bbd vpadd.i8 d7, d23, d29
+ef561bb3 vpadd.i16 d17, d22, d19
+ef2efb9e vpadd.i32 d15, d30, d14
+ef2beb37 vpadd.i32 d14, d11, d23
+ef53bbb8 vpadd.i16 d27, d19, d24
+ef20bbb7 vpadd.i32 d11, d16, d23
+ef6f0b3c vpadd.i32 d16, d15, d28
+EF307B51 UNDEFINED
+EF188B10 vpadd.i16 d8, d8, d0
+EF144B1F vpadd.i16 d4, d4, d15
+EF122B14 vpadd.i16 d2, d2, d4
+EF110B12 vpadd.i16 d0, d1, d2
+EF5FFB90 vpadd.i16 d31, d31, d0
+EF107B1F vpadd.i16 d7, d0, d15
+EF107B30 vpadd.i16 d7, d0, d16
+EF107B3F vpadd.i16 d7, d0, d31
+EF107B11 [ne] vpaddne.i16 d7, d0, d1

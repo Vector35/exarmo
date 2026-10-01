@@ -1,0 +1,95 @@
+// ORN_i_T1 11110|i=x|0|op1=0011|S=0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// OrnIT1: ORN{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F0600000 orn r0, r0, #0x0
+F4601FFF orn pc, r0, #0x1fe000 (unpredictable)
+F0602080 orn r0, r0, #0x80008000
+F0603040 orn r0, r0, #0x40404040
+F0604020 orn r0, r0, #0xa0000000
+F0605010 orn r0, r0, #0x24000000
+F0606008 orn r0, r0, #0x8800000
+F0607004 orn r0, r0, #0x2100000
+F0600002 orn r0, r0, #0x2
+F0600001 orn r0, r0, #0x1
+F06000FF orn r0, r0, #0xff
+F0601000 orn r0, r0, #0x0
+F06010FF orn r0, r0, #0xff00ff
+F0602000 orn r0, r0, #0x0
+F06020FF orn r0, r0, #0xff00ff00
+F0603000 orn r0, r0, #0x0
+F06030FF orn r0, r0, #0xffffffff
+F0604000 orn r0, r0, #0x80000000
+F06040FF orn r0, r0, #0x7f800000
+F0605000 orn r0, r0, #0x20000000
+F06050FF orn r0, r0, #0x1fe00000
+F0606000 orn r0, r0, #0x8000000
+F06060FF orn r0, r0, #0x7f80000
+F0607000 orn r0, r0, #0x2000000
+F06070FF orn r0, r0, #0x1fe0000
+F4600000 orn r0, r0, #0x800000
+F46000FF orn r0, r0, #0x7f8000
+F4601000 orn r0, r0, #0x200000
+F46010FF orn r0, r0, #0x1fe000
+F4602000 orn r0, r0, #0x80000
+F46020FF orn r0, r0, #0x7f800
+F4603000 orn r0, r0, #0x20000
+F46030FF orn r0, r0, #0x1fe00
+F4604000 orn r0, r0, #0x8000
+F46040FF orn r0, r0, #0x7f80
+F4605000 orn r0, r0, #0x2000
+F46050FF orn r0, r0, #0x1fe0
+F4606000 orn r0, r0, #0x800
+F46060FF orn r0, r0, #0x7f8
+F4607000 orn r0, r0, #0x200
+F46070FF orn r0, r0, #0x1fe
+F0600000 [ne] ornne r0, r0, #0x0
+
+// ORNS_i_T1 11110|i=x|0|op1=0011|S=1|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// OrnsIT1: ORNS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F0700000 orns r0, r0, #0x0
+F4701FFF orns pc, r0, #0x1fe000 (unpredictable)
+F0702080 orns r0, r0, #0x80008000
+F0703040 orns r0, r0, #0x40404040
+F0704020 orns r0, r0, #0xa0000000
+F0705010 orns r0, r0, #0x24000000
+F0706008 orns r0, r0, #0x8800000
+F0707004 orns r0, r0, #0x2100000
+F0700002 orns r0, r0, #0x2
+F0700001 orns r0, r0, #0x1
+F07000FF orns r0, r0, #0xff
+F0701000 orns r0, r0, #0x0
+F07010FF orns r0, r0, #0xff00ff
+F0702000 orns r0, r0, #0x0
+F07020FF orns r0, r0, #0xff00ff00
+F0703000 orns r0, r0, #0x0
+F07030FF orns r0, r0, #0xffffffff
+F0704000 orns r0, r0, #0x80000000
+F07040FF orns r0, r0, #0x7f800000
+F0705000 orns r0, r0, #0x20000000
+F07050FF orns r0, r0, #0x1fe00000
+F0706000 orns r0, r0, #0x8000000
+F07060FF orns r0, r0, #0x7f80000
+F0707000 orns r0, r0, #0x2000000
+F07070FF orns r0, r0, #0x1fe0000
+F4700000 orns r0, r0, #0x800000
+F47000FF orns r0, r0, #0x7f8000
+F4701000 orns r0, r0, #0x200000
+F47010FF orns r0, r0, #0x1fe000
+F4702000 orns r0, r0, #0x80000
+F47020FF orns r0, r0, #0x7f800
+F4703000 orns r0, r0, #0x20000
+F47030FF orns r0, r0, #0x1fe00
+F4704000 orns r0, r0, #0x8000
+F47040FF orns r0, r0, #0x7f80
+F4705000 orns r0, r0, #0x2000
+F47050FF orns r0, r0, #0x1fe0
+F4706000 orns r0, r0, #0x800
+F47060FF orns r0, r0, #0x7f8
+F4707000 orns r0, r0, #0x200
+F47070FF orns r0, r0, #0x1fe
+F0700000 [ne] ornsne r0, r0, #0x0

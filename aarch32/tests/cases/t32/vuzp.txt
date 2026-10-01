@@ -1,0 +1,44 @@
+// VUZP_T1_D 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0010|Q=0|M=x|0|Vm=xxxx
+// VuzpT1D: VUZP{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+fff25125 vuzp.8 d21, d21
+ffb6f121 vuzp.16 d15, d17
+fff6c124 vuzp.16 d28, d20
+fff6c125 vuzp.16 d28, d21
+fff6e12d vuzp.16 d30, d29
+ffb22100 vuzp.8 d2, d0
+ffb6912e vuzp.16 d9, d30
+fff2c127 vuzp.8 d28, d23
+FFFA5125 UNDEFINED
+FFFE5125 UNDEFINED
+FFF2012F vuzp.8 d16, d31
+FFF28128 vuzp.8 d24, d24
+FFF24122 vuzp.8 d20, d18
+FFF2110F vuzp.8 d17, d15
+FFB20120 vuzp.8 d0, d16
+FFF2F125 vuzp.8 d31, d21
+FFF25125 [ne] vuzpne.8 d21, d21
+
+// VUZP_T1_Q 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0010|Q=1|M=x|0|Vm=xxxx
+// VuzpT1Q: VUZP{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ffb2216a vuzp.8 q1, q13
+ffba6148 vuzp.32 q3, q4
+ffb66168 vuzp.16 q3, q12
+fffac144 vuzp.32 q14, q2
+ffb6c14c vuzp.16 q6, q6
+ffb6216c vuzp.16 q1, q14
+ffbac162 vuzp.32 q6, q9
+ffba0162 vuzp.32 q0, q9
+FFBEF16F UNDEFINED
+FFB28160 vuzp.8 q4, q8
+FFB24140 vuzp.8 q2, q0
+FFB21161 UNDEFINED
+FFB2F14F UNDEFINED
+FFF20160 vuzp.8 q8, q8
+FFF2F16F UNDEFINED
+FFB2216A [ne] vuzpne.8 q1, q13

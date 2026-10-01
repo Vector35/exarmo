@@ -1,0 +1,113 @@
+// MOV_i_A1 cond=xxxx|00111|opc=01|S=0|Rn=(0)(0)(0)(0)|Rd=xxxx|imm12=xxxxxxxxxxxx
+// MovIA1: MOV{<c>}{<q>}  <Rd>, #<const>
+// register fields: Rd
+// modified immediate <const>: imm12
+23a0bd55 movhs r11, #5440
+// Binary Ninja's tests
+03a04eff moveq r4, #4080
+e3a03007 mov r3, #7
+e3a04eff mov r4, #4080
+e3a058ff mov r5, #16711680
+F3A0BD55 UNDEFINED
+83AF0000 movhi r0, #0x0 (unpredictable)
+43A8FFFF movmi pc, #0x3fc (unpredictable)
+13A4B800 movne r11, #0x0 (unpredictable)
+23A2B400 movcs r11, #0x0 (unpredictable)
+23A1B200 movcs r11, #0x0 (unpredictable)
+23A0B100 movcs r11, #0x0
+23A0B080 movcs r11, #0x80
+23A0B040 movcs r11, #0x40
+23A0B020 movcs r11, #0x20
+23A0B010 movcs r11, #0x10
+23A0B008 movcs r11, #0x8
+23A0B004 movcs r11, #0x4
+23A0B002 movcs r11, #0x2
+23A0B001 movcs r11, #0x1
+23A0B081 movcs r11, #0x81
+23A0B181 movcs r11, #0x40000020
+23A0B281 movcs r11, #0x10000008
+23A0B381 movcs r11, #0x4000002
+23A0B481 movcs r11, #0x81000000
+23A0B581 movcs r11, #0x20400000
+23A0B681 movcs r11, #0x8100000
+23A0B781 movcs r11, #0x2040000
+23A0B881 movcs r11, #0x810000
+23A0B981 movcs r11, #0x204000
+23A0BA81 movcs r11, #0x81000
+23A0BB81 movcs r11, #0x20400
+23A0BC81 movcs r11, #0x8100
+23A0BD81 movcs r11, #0x2040
+23A0BE81 movcs r11, #0x810
+23A0BF81 movcs r11, #0x204
+
+// MOV_i_A2 cond=xxxx|00|1|10|H=0|00|imm4=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// A2bMovIA2: MOVW{<c>}{<q>}  <Rd>, #<imm16>
+// read together by <imm16>: imm4, imm12
+// register fields: Rd
+1301453f movwne r4, #5439
+930a44fe movwls r4, #42238
+33081400 movwlo r1, #33792
+43065632 movwmi r5, #26162
+330360e5 movwlo r6, #12517
+030b4a4f movweq r4, #47695
+a309f8f3 movwge pc, #39155 (unpredictable)
+23046e13 movwhs r6, #19987
+// Binary Ninja's tests
+e30f6fff movw r6, #65535
+e30f9fff movw r9, #65535
+F30360E5 UNDEFINED
+83000000 movwhi r0, #0x0
+13024800 movwne r4, #0x2800
+13014200 movwne r4, #0x1200
+13014100 movwne r4, #0x1100
+13014080 movwne r4, #0x1080
+13014040 movwne r4, #0x1040
+13014020 movwne r4, #0x1020
+13014010 movwne r4, #0x1010
+13014008 movwne r4, #0x1008
+13014004 movwne r4, #0x1004
+13014002 movwne r4, #0x1002
+13014001 movwne r4, #0x1001
+13004000 movwne r4, #0x0
+13004FFF movwne r4, #0xfff
+130F4000 movwne r4, #0xf000
+
+// MOVS_i_A1 cond=xxxx|00111|opc=01|S=1|Rn=(0)(0)(0)(0)|Rd=xxxx|imm12=xxxxxxxxxxxx
+// MovsIA1: MOVS{<c>}{<q>}  <Rd>, #<const>
+// register fields: Rd
+// modified immediate <const>: imm12
+03b015a0 movseq r1, #671088640
+// Binary Ninja's tests
+03b058ff movseq r5, #16711680
+e3b03007 movs r3, #7
+F3B058FF UNALLOCATED
+83BF0000 movshi r0, #0x0 (unpredictable)
+43B8FFFF movsmi pc, #0x3fc (unpredictable)
+23B41800 movscs r1, #0x0 (unpredictable)
+13B21400 movsne r1, #0x0 (unpredictable)
+03B11200 movseq r1, #0x0 (unpredictable)
+03B01100 movseq r1, #0x0
+03B01080 movseq r1, #0x80
+03B01040 movseq r1, #0x40
+03B01020 movseq r1, #0x20
+03B01010 movseq r1, #0x10
+03B01008 movseq r1, #0x8
+03B01004 movseq r1, #0x4
+03B01002 movseq r1, #0x2
+03B01001 movseq r1, #0x1
+03B01081 movseq r1, #0x81
+03B01181 movseq r1, #0x40000020
+03B01281 movseq r1, #0x10000008
+03B01381 movseq r1, #0x4000002
+03B01481 movseq r1, #0x81000000
+03B01581 movseq r1, #0x20400000
+03B01681 movseq r1, #0x8100000
+03B01781 movseq r1, #0x2040000
+03B01881 movseq r1, #0x810000
+03B01981 movseq r1, #0x204000
+03B01A81 movseq r1, #0x81000
+03B01B81 movseq r1, #0x20400
+03B01C81 movseq r1, #0x8100
+03B01D81 movseq r1, #0x2040
+03B01E81 movseq r1, #0x810
+03B01F81 movseq r1, #0x204

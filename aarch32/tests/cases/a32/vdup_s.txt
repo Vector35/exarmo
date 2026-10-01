@@ -1,0 +1,36 @@
+// VDUP_s_A1_D 111100111|D=x|11|imm4=xxxx|Vd=xxxx|11|opc=000|Q=0|M=x|0|Vm=xxxx
+// VdupSA1D: VDUP{<c>}{<q>}.<size>  <Dd>, <Dm[x]>
+// read together by <Dd>: D, Vd
+f3bf0c26 vdup.8 d0, d22[7]
+f3fdcc08 vdup.8 d28, d8[6]
+f3bc8c0d vdup.32 d8, d13[1]
+f3be1c28 vdup.16 d1, d24[3]
+f3b20c2f vdup.16 d0, d31[0]
+f3fd1c24 vdup.8 d17, d20[6]
+f3ff5c0a vdup.8 d21, d10[7]
+f3f4fc0d vdup.32 d31, d13[0]
+F3B00C26 UNDEFINED
+F3B80C26 UNDEFINED
+F3B14C20 vdup.8 d4, d16[0]
+F3BF2C22 vdup.8 d2, d18[7]
+F3BFFC21 vdup.8 d15, d17[7]
+F3FF0C26 vdup.8 d16, d22[7]
+
+// VDUP_s_A1_Q 111100111|D=x|11|imm4=xxxx|Vd=xxxx|11|opc=000|Q=1|M=x|0|Vm=xxxx
+// VdupSA1Q: VDUP{<c>}{<q>}.<size>  <Qd>, <Dm[x]>
+// read together by <Qd>: D, Vd
+f3fc8c41 vdup.32 q12, d1[1]
+f3b56c6a vdup.8 q3, d26[2]
+f3ff4c6a vdup.8 q10, d26[7]
+f3b3cc42 vdup.8 q6, d2[1]
+f3f16c64 vdup.8 q11, d20[0]
+f3f12c67 vdup.8 q9, d23[0]
+f3b74c40 vdup.8 q2, d0[3]
+f3f4ec64 vdup.32 q15, d20[0]
+F3F0FC41 UNDEFINED
+F3F81C41 UNDEFINED
+F3F20C4F vdup.16 q8, d15[0]
+F3BC0C48 vdup.32 q0, d8[1]
+F3BCFC41 UNDEFINED
+F3FC0C41 vdup.32 q8, d1[1]
+F3FCFC41 UNDEFINED

@@ -1,0 +1,68 @@
+// sqrshrunt_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=0|U=0|R=1|T=1|Zn=xxxxx|Zd=xxxxx
+// SqrshruntZZi: SQRSHRUNT  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+45700E43 sqrshrunt z3.s, z18.d, #0x10
+45750F05 sqrshrunt z5.s, z24.d, #0xb
+456A0D9C sqrshrunt z28.s, z12.d, #0x16
+456E0D5C sqrshrunt z28.s, z10.d, #0x12
+453C0E2D sqrshrunt z13.h, z17.s, #0x4
+453E0C8B sqrshrunt z11.h, z4.s, #0x2
+457C0DC8 sqrshrunt z8.s, z14.d, #0x4
+45690C4B sqrshrunt z11.s, z2.d, #0x17
+45630C00 sqrshrunt z0.s, z0.d, #0x1d
+45770FFF sqrshrunt z31.s, z31.d, #0x9
+45200E43 UNDEFINED
+45210E43 UNDEFINED
+45220E43 UNDEFINED
+45230E43 UNDEFINED
+45240E43 UNDEFINED
+45250E43 UNDEFINED
+45260E43 UNDEFINED
+45270E43 UNDEFINED
+45280E43 sqrshrunt z3.b, z18.h, #0x8
+45290E43 sqrshrunt z3.b, z18.h, #0x7
+452A0E43 sqrshrunt z3.b, z18.h, #0x6
+452B0E43 sqrshrunt z3.b, z18.h, #0x5
+452C0E43 sqrshrunt z3.b, z18.h, #0x4
+452D0E43 sqrshrunt z3.b, z18.h, #0x3
+452E0E43 sqrshrunt z3.b, z18.h, #0x2
+452F0E43 sqrshrunt z3.b, z18.h, #0x1
+45300E43 sqrshrunt z3.h, z18.s, #0x10
+45310E43 sqrshrunt z3.h, z18.s, #0xf
+45320E43 sqrshrunt z3.h, z18.s, #0xe
+45330E43 sqrshrunt z3.h, z18.s, #0xd
+45340E43 sqrshrunt z3.h, z18.s, #0xc
+45350E43 sqrshrunt z3.h, z18.s, #0xb
+45360E43 sqrshrunt z3.h, z18.s, #0xa
+45370E43 sqrshrunt z3.h, z18.s, #0x9
+45380E43 sqrshrunt z3.h, z18.s, #0x8
+45390E43 sqrshrunt z3.h, z18.s, #0x7
+453A0E43 sqrshrunt z3.h, z18.s, #0x6
+453B0E43 sqrshrunt z3.h, z18.s, #0x5
+453D0E43 sqrshrunt z3.h, z18.s, #0x3
+453F0E43 sqrshrunt z3.h, z18.s, #0x1
+45600E43 sqrshrunt z3.s, z18.d, #0x20
+45610E43 sqrshrunt z3.s, z18.d, #0x1f
+45620E43 sqrshrunt z3.s, z18.d, #0x1e
+45640E43 sqrshrunt z3.s, z18.d, #0x1c
+45650E43 sqrshrunt z3.s, z18.d, #0x1b
+45660E43 sqrshrunt z3.s, z18.d, #0x1a
+45670E43 sqrshrunt z3.s, z18.d, #0x19
+45680E43 sqrshrunt z3.s, z18.d, #0x18
+456B0E43 sqrshrunt z3.s, z18.d, #0x15
+456C0E43 sqrshrunt z3.s, z18.d, #0x14
+456D0E43 sqrshrunt z3.s, z18.d, #0x13
+456F0E43 sqrshrunt z3.s, z18.d, #0x11
+45710E43 sqrshrunt z3.s, z18.d, #0xf
+45720E43 sqrshrunt z3.s, z18.d, #0xe
+45730E43 sqrshrunt z3.s, z18.d, #0xd
+45740E43 sqrshrunt z3.s, z18.d, #0xc
+45760E43 sqrshrunt z3.s, z18.d, #0xa
+45780E43 sqrshrunt z3.s, z18.d, #0x8
+45790E43 sqrshrunt z3.s, z18.d, #0x7
+457A0E43 sqrshrunt z3.s, z18.d, #0x6
+457B0E43 sqrshrunt z3.s, z18.d, #0x5
+457D0E43 sqrshrunt z3.s, z18.d, #0x3
+457E0E43 sqrshrunt z3.s, z18.d, #0x2
+457F0E43 sqrshrunt z3.s, z18.d, #0x1

@@ -1,0 +1,14 @@
+// nmatch_p_p_zz_ 010|0010|1|0|sz=x|1|Zm=xxxxx|100|Pg=xxx|Zn=xxxxx|op=1|Pd=xxxx
+// NmatchPPZz: NMATCH  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Pg, Zn, Pd
+45318658 nmatch p8.b, p1/z, z18.b, z17.b
+456797B7 nmatch p7.h, p5/z, z29.h, z7.h
+453490F5 nmatch p5.b, p4/z, z7.b, z20.b
+452D8CB9 nmatch p9.b, p3/z, z5.b, z13.b
+45348E73 nmatch p3.b, p3/z, z19.b, z20.b
+453F925B nmatch p11.b, p4/z, z18.b, z31.b
+457F9FFC nmatch p12.h, p7/z, z31.h, z31.h
+453A95DE nmatch p14.b, p5/z, z14.b, z26.b
+45208010 nmatch p0.b, p0/z, z0.b, z0.b
+45318A5F nmatch p15.b, p2/z, z18.b, z17.b
+45319A58 nmatch p8.b, p6/z, z18.b, z17.b

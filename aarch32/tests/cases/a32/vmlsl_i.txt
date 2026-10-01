@@ -1,0 +1,26 @@
+// VMLSL_i_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|10|op=1|0|N=x|0|M=x|0|Vm=xxxx
+// VmlslIA1: VMLSL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f3cc4aae vmlsl.u8 q10, d28, d30
+f29d8a89 vmlsl.s16 q4, d29, d9
+f29e4a08 vmlsl.s16 q2, d14, d8
+f3df2aa1 vmlsl.u16 q9, d31, d17
+f3d22aa5 vmlsl.u16 q9, d18, d21
+f3e46a0e vmlsl.u32 q11, d4, d14
+f3e60a01 vmlsl.u32 q8, d6, d1
+f2cf4a84 vmlsl.s8 q10, d31, d4
+F2BDFA89 UNDEFINED
+F2A00AA0 vmlsl.s32 q0, d16, d16
+F3C84AAF vmlsl.u8 q10, d24, d31
+F3C14AA2 vmlsl.u8 q10, d17, d18
+F2FC1AAE UNDEFINED
+F38CFAAE UNDEFINED
+F3CCFAAE UNDEFINED
+F3C04A00 vmlsl.u8 q10, d0, d0
+F3C04A8F vmlsl.u8 q10, d16, d15
+F3CF4A20 vmlsl.u8 q10, d15, d16
+F3CC4AAF vmlsl.u8 q10, d28, d31
+F3FF2AA1 UNPREDICTABLE

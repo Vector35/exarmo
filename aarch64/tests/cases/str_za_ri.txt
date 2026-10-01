@@ -1,0 +1,16 @@
+// str_za_ri_ 1|11|0000|100|op=1|00000|0|Rv=xx|000|Rn=xxxxx|0|off4=xxxx
+// StrZaRi: STR  ZA[<Wv>, <offs>], [<Xn|SP>{, #<offs>, MUL VL}]
+// register fields: Rv, Rn
+E1200106 str za[w12, 6], [x8, #0x6, mul vl]
+E1204106 str za[w14, 6], [x8, #0x6, mul vl]
+E12061A5 str za[w15, 5], [x13, #0x5, mul vl]
+E120204E str za[w13, 14], [x2, #0xe, mul vl]
+E1206221 str za[w15, 1], [x17, #0x1, mul vl]
+E12001EE str za[w12, 14], [x15, #0xe, mul vl]
+E12043CC str za[w14, 12], [lr, #0xc, mul vl]
+E1204160 str za[w14, 0], [x11]
+E120000F str za[w12, 15], [x0, #0xf, mul vl]
+E12003E6 str za[w12, 6], [sp, #0x6, mul vl]
+E1200108 str za[w12, 8], [x8, #0x8, mul vl]
+E1200104 str za[w12, 4], [x8, #0x4, mul vl]
+E1200102 str za[w12, 2], [x8, #0x2, mul vl]

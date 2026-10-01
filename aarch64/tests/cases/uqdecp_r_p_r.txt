@@ -1,0 +1,42 @@
+// uqdecp_r_p_r_uw 001|0010|1|size=xx|101|0|D=1|U=1|1000|1|sf=0|op=0|Pm=xxxx|Rdn=xxxxx
+// UqdecpRPRUw: UQDECP  <Wdn>, <Pm>.<T>
+// register fields: Pm, Rdn
+256B89E6 uqdecp w6, p15.h
+256B8902 uqdecp w2, p8.h
+25AB8896 uqdecp w22, p4.s
+25AB8912 uqdecp w18, p8.s
+25AB883F uqdecp wzr, p1.s
+256B8845 uqdecp w5, p2.h
+25EB8945 uqdecp w5, p10.d
+25EB89F4 uqdecp w20, p15.d
+256B889F uqdecp wzr, p4.h
+256B8909 uqdecp w9, p8.h
+25AB88F7 uqdecp w23, p7.s
+256B897D uqdecp w29, p11.h
+25EB894A uqdecp w10, p10.d
+25AB88B9 uqdecp w25, p5.s
+256B89E5 uqdecp w5, p15.h
+256B88F4 uqdecp w20, p7.h
+252B8800 uqdecp w0, p0.b
+
+// uqdecp_r_p_r_x 001|0010|1|size=xx|101|0|D=1|U=1|1000|1|sf=1|op=0|Pm=xxxx|Rdn=xxxxx
+// UqdecpRPRX: UQDECP  <Xdn>, <Pm>.<T>
+// register fields: Pm, Rdn
+256B8D5E uqdecp lr, p10.h
+25EB8D14 uqdecp x20, p8.d
+25EB8DF6 uqdecp x22, p15.d
+256B8DFD uqdecp fp, p15.h
+252B8C1B uqdecp x27, p0.b
+25AB8C88 uqdecp x8, p4.s
+252B8CE2 uqdecp x2, p7.b
+256B8D31 uqdecp x17, p9.h
+25EB8DFC uqdecp x28, p15.d
+256B8CDA uqdecp x26, p6.h
+25EB8C12 uqdecp x18, p0.d
+256B8D16 uqdecp x22, p8.h
+25EB8C4E uqdecp x14, p2.d
+252B8D00 uqdecp x0, p8.b
+25EB8CE0 uqdecp x0, p7.d
+25AB8D56 uqdecp x22, p10.s
+256B8D5F uqdecp xzr, p10.h
+256B8D4A uqdecp x10, p10.h

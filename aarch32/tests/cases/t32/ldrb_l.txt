@@ -1,0 +1,25 @@
+// LDRB_l_T1 111|1100|0|U=x|size=00|L=1|1111|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrbLT1: LDRB{<c>}{<q>}  <Rt>, <label>
+// register fields: Rt
+// IT state read: condition
+f81fb6f7 ldrb r11, 0xf90d
+f81fe254 ldrb lr, 0xfdb0
+f81fd34a ldrb sp, 0xfcba
+f81f0baa ldrb r0, 0xf45a
+f81fbe95 ldrb r11, 0xf16f
+f81f88b8 ldrb r8, 0xf74c
+F89FB000 ldrb r11, 0x10004
+F81FBFFF ldrb r11, 0xf005
+F81FB800 ldrb r11, 0xf804
+F81FB400 ldrb r11, 0xfc04
+F81FB200 ldrb r11, 0xfe04
+F81FB100 ldrb r11, 0xff04
+F81FB080 ldrb r11, 0xff84
+F81FB040 ldrb r11, 0xffc4
+F81FB020 ldrb r11, 0xffe4
+F81FB010 ldrb r11, 0xfff4
+F81FB008 ldrb r11, 0xfffc
+F81FB004 ldrb r11, 0x10000
+F81FB002 ldrb r11, 0x10002
+F81FB001 ldrb r11, 0x10003
+F81FB6F7 [ne] ldrbne r11, 0xf90d

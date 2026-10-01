@@ -1,0 +1,16 @@
+// UHADD8_T1 111|11010|1|op1=000|Rn=xxxx|1111|Rd=xxxx|0|U=1|H=1|S=0|Rm=xxxx
+// Uhadd8T1: UHADD8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa84f968 uhadd8 r9, r4, r8
+fa8cfc6e uhadd8 r12, r12, lr
+fa8df16f uhadd8 r1, sp, pc (unpredictable)
+fa8cf369 uhadd8 r3, r12, r9
+fa89f263 uhadd8 r2, r9, r3
+fa84f363 uhadd8 r3, r4, r3
+fa88f06e uhadd8 r0, r8, lr
+fa89f96c uhadd8 r9, r9, r12
+FA80FF60 uhadd8 pc, r0, r0 (unpredictable)
+FA8FF968 uhadd8 r9, pc, r8 (unpredictable)
+FA84F964 uhadd8 r9, r4, r4
+FA84F968 [ne] uhadd8ne r9, r4, r8

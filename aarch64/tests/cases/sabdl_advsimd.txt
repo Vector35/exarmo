@@ -1,0 +1,29 @@
+// SABDL_asimddiff_L 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|01|op=1|1|00|Rn=xxxxx|Rd=xxxxx
+// SabdlAsimddiffL: SABDL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// SabdlAsimddiffL2: SABDL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+0E787251 sabdl v17.4s, v18.4h, v24.4h
+4EAC72C1 sabdl2 v1.2d, v22.4s, v12.4s
+0E27727E sabdl v30.8h, v19.8b, v7.8b
+4E7B70A0 sabdl2 v0.4s, v5.8h, v27.8h
+4E697227 sabdl2 v7.4s, v17.8h, v9.8h
+0E3C7133 sabdl v19.8h, v9.8b, v28.8b
+4EBA7302 sabdl2 v2.2d, v24.4s, v26.4s
+0E3172EB sabdl v11.8h, v23.8b, v17.8b
+0E7E738E sabdl v14.4s, v28.4h, v30.4h
+4E2C71C7 sabdl2 v7.8h, v14.16b, v12.16b
+4EA673F3 sabdl2 v19.2d, v31.4s, v6.4s
+0E2E7093 sabdl v19.8h, v4.8b, v14.8b
+0E6170DD sabdl v29.4s, v6.4h, v1.4h
+4E73706E sabdl2 v14.4s, v3.8h, v19.8h
+0E717089 sabdl v9.4s, v4.4h, v17.4h
+0E3A7222 sabdl v2.8h, v17.8b, v26.8b
+0E60701F sabdl v31.4s, v0.4h, v0.4h
+0E7F7251 sabdl v17.4s, v18.4h, v31.4h
+0EF87251 UNDEFINED
+0EB87258 sabdl v24.2d, v18.2s, v24.2s
+4EF87251 UNDEFINED
+0E787252 sabdl v18.4s, v18.4h, v24.4h
+4E27727E sabdl2 v30.8h, v19.16b, v7.16b

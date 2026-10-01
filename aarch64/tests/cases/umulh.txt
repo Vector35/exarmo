@@ -1,0 +1,24 @@
+// UMULH_64_dp_3src sf=1|op54=00|1|101|1|U=1|10|Rm=xxxxx|o0=0|Ra=(1)(1)(1)(1)(1)|Rn=xxxxx|Rd=xxxxx
+// Umulh64Dp3src: UMULH  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9BDD5542 umulh x2, x10, fp (unpredictable)
+9BDB66E1 umulh x1, x23, x27 (unpredictable)
+9BC34983 umulh x3, x12, x3 (unpredictable)
+9BC16C00 umulh x0, x0, x1 (unpredictable)
+9BD10CA5 umulh x5, x5, x17 (unpredictable)
+9BCC4341 umulh x1, x26, x12 (unpredictable)
+9BDC4E05 umulh x5, x16, x28 (unpredictable)
+9BC53341 umulh x1, x26, x5 (unpredictable)
+9BD90791 umulh x17, x28, x25 (unpredictable)
+9BC3725A umulh x26, x18, x3 (unpredictable)
+9BCD69AA umulh x10, x13, x13 (unpredictable)
+9BD663E1 umulh x1, xzr, x22 (unpredictable)
+9BD33CB8 umulh x24, x5, x19 (unpredictable)
+9BD9495C umulh x28, x10, x25 (unpredictable)
+9BD4559C umulh x28, x12, x20 (unpredictable)
+9BC07B5B umulh x27, x26, x0 (unpredictable)
+9BDF015F umulh xzr, x10, xzr (unpredictable)
+9BDD7D42 umulh x2, x10, fp
+9BDD2142 umulh x2, x10, fp (unpredictable)
+9BDD1142 umulh x2, x10, fp (unpredictable)
+9BDD0942 umulh x2, x10, fp (unpredictable)

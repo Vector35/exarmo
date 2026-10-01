@@ -1,0 +1,8 @@
+// UMULL_T1 111|1101|11|op1=010|Rn=xxxx|RdLo=xxxx|RdHi=xxxx|op2=0000|Rm=xxxx
+// UmullT1: UMULL{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: Rn, RdLo, RdHi, Rm
+// IT state read: condition
+FBA00000 umull r0, r0, r0, r0 (unpredictable)
+FBAFFF0F umull pc, pc, pc, pc (unpredictable)
+FBA00000 [ne] umullne r0, r0, r0, r0 (unpredictable)
+FBA12304 umull r2, r3, r1, r4

@@ -1,0 +1,10 @@
+// MADDPT_64A_dp_3src sf=1|op54=00|1|101|1|op31=011|Rm=xxxxx|o0=0|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Maddpt64aDp3src: MADDPT  <Xd>, <Xn>, <Xm>, <Xa>
+// register fields: Rm, Ra, Rn, Rd
+9B600003 maddpt x3, x0, x0, x0
+9B60000A maddpt x10, x0, x0, x0
+9B600011 maddpt x17, x0, x0, x0
+9B7F7FE0 maddpt x0, xzr, xzr, xzr
+9B60001F maddpt xzr, x0, x0, x0
+9B600000 maddpt x0, x0, x0, x0
+9B610864 maddpt x4, x3, x1, x2

@@ -1,0 +1,76 @@
+// BFI_T1 111|10|(0)|1|1|op1=011|0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm2=xx|(0)|msb=xxxxx
+// BfiT1: BFI{<c>}{<q>}  <Rd>, <Rn>, #<lsb>, #<width>
+// read together by <lsb>: imm3, imm2
+// register fields: Rn, Rd
+// IT state read: condition
+F3600000 bfi r0, r0, #0x0, #0x1
+F7601F7F bfi pc, r0, #0x5, #0x1b (unpredictable)
+F3602090 bfi r0, r0, #0xa, #0x7
+F36030C8 UNPREDICTABLE
+F3604004 UNPREDICTABLE
+F3605002 UNPREDICTABLE
+F3606001 UNPREDICTABLE
+F3607000 UNPREDICTABLE
+F3600040 UNPREDICTABLE
+F3600080 UNPREDICTABLE
+F36000C0 UNPREDICTABLE
+F3601000 UNPREDICTABLE
+F3601040 UNPREDICTABLE
+F3601080 UNPREDICTABLE
+F36010C0 UNPREDICTABLE
+F3602000 UNPREDICTABLE
+F3602040 UNPREDICTABLE
+F3602080 UNPREDICTABLE
+F36020C0 UNPREDICTABLE
+F3603000 UNPREDICTABLE
+F3603040 UNPREDICTABLE
+F3603080 UNPREDICTABLE
+F36030C0 UNPREDICTABLE
+F3604000 UNPREDICTABLE
+F3604040 UNPREDICTABLE
+F3604080 UNPREDICTABLE
+F36040C0 UNPREDICTABLE
+F3605000 UNPREDICTABLE
+F3605040 UNPREDICTABLE
+F3605080 UNPREDICTABLE
+F36050C0 UNPREDICTABLE
+F3606000 UNPREDICTABLE
+F3606040 UNPREDICTABLE
+F3606080 UNPREDICTABLE
+F36060C0 UNPREDICTABLE
+F3607040 UNPREDICTABLE
+F3607080 UNPREDICTABLE
+F36070C0 UNPREDICTABLE
+F3600000 [ne] bfine r0, r0, #0x0, #0x1
+F7603FFF bfi pc, r0, #0xf, #0x11 (unpredictable)
+F7604F7F bfi pc, r0, #0x11, #0xf (unpredictable)
+F7605F7F bfi pc, r0, #0x15, #0xb (unpredictable)
+F7606F7F bfi pc, r0, #0x19, #0x7 (unpredictable)
+F7607F7F bfi pc, r0, #0x1d, #0x3 (unpredictable)
+F3600048 bfi r0, r0, #0x1, #0x8
+F3600084 bfi r0, r0, #0x2, #0x3
+F3600002 bfi r0, r0, #0x0, #0x3
+F3600001 bfi r0, r0, #0x0, #0x2
+F7600FFF bfi pc, r0, #0x3, #0x1d (unpredictable)
+F7601F3F bfi pc, r0, #0x4, #0x1c (unpredictable)
+F7601FBF bfi pc, r0, #0x6, #0x1a (unpredictable)
+F7601FFF bfi pc, r0, #0x7, #0x19 (unpredictable)
+F7602F3F bfi pc, r0, #0x8, #0x18 (unpredictable)
+F7602F7F bfi pc, r0, #0x9, #0x17 (unpredictable)
+F7602FFF bfi pc, r0, #0xb, #0x15 (unpredictable)
+F7603F3F bfi pc, r0, #0xc, #0x14 (unpredictable)
+F7603F7F bfi pc, r0, #0xd, #0x13 (unpredictable)
+F7603FBF bfi pc, r0, #0xe, #0x12 (unpredictable)
+F7604F3F bfi pc, r0, #0x10, #0x10 (unpredictable)
+F7604FBF bfi pc, r0, #0x12, #0xe (unpredictable)
+F7604FFF bfi pc, r0, #0x13, #0xd (unpredictable)
+F7605F3F bfi pc, r0, #0x14, #0xc (unpredictable)
+F7605FBF bfi pc, r0, #0x16, #0xa (unpredictable)
+F7605FFF bfi pc, r0, #0x17, #0x9 (unpredictable)
+F7606F3F bfi pc, r0, #0x18, #0x8 (unpredictable)
+F7606FBF bfi pc, r0, #0x1a, #0x6 (unpredictable)
+F7606FFF bfi pc, r0, #0x1b, #0x5 (unpredictable)
+F7607F3F bfi pc, r0, #0x1c, #0x4 (unpredictable)
+F7607FBF bfi pc, r0, #0x1e, #0x2 (unpredictable)
+F7607FFF bfi pc, r0, #0x1f, #0x1 (unpredictable)
+F3610200 bfi r2, r1, #0x0, #0x1

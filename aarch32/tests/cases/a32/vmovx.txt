@@ -1,0 +1,15 @@
+// VMOVX_A1 1111|11|101|D=x|110000|Vd=xxxx|1|0|size=10|op=0|1|M=x|0|Vm=xxxx
+// VmovxA1: VMOVX{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+feb07a66 vmovx.f16 s14, s13
+FEF00A40 vmovx.f16 s1, s0
+FEB0FA6F vmovx.f16 s30, s31
+FEB08A68 vmovx.f16 s16, s17
+FEB04A64 vmovx.f16 s8, s9
+FEB02A62 vmovx.f16 s4, s5
+FEB01A61 vmovx.f16 s2, s3
+FEB00A40 vmovx.f16 s0, s0
+FEB0FA4F vmovx.f16 s30, s30
+FEF00A60 vmovx.f16 s1, s1
+FEF0FA6F vmovx.f16 s31, s31

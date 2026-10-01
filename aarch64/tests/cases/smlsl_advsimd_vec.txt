@@ -1,0 +1,28 @@
+// SMLSL_asimddiff_L 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|10|o1=1|0|00|Rn=xxxxx|Rd=xxxxx
+// SmlslAsimddiffL: SMLSL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// SmlslAsimddiffL2: SMLSL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+0E3EA3AE smlsl v14.8h, v29.8b, v30.8b
+4E3CA013 smlsl2 v19.8h, v0.16b, v28.16b
+0EA6A222 smlsl v2.2d, v17.2s, v6.2s
+4E7DA2E1 smlsl2 v1.4s, v23.8h, v29.8h
+0E29A096 smlsl v22.8h, v4.8b, v9.8b
+0E6DA1A6 smlsl v6.4s, v13.4h, v13.4h
+0E65A29C smlsl v28.4s, v20.4h, v5.4h
+0EA8A059 smlsl v25.2d, v2.2s, v8.2s
+4EB4A2F8 smlsl2 v24.2d, v23.4s, v20.4s
+4E28A357 smlsl2 v23.8h, v26.16b, v8.16b
+4E72A32F smlsl2 v15.4s, v25.8h, v18.8h
+4E3AA343 smlsl2 v3.8h, v26.16b, v26.16b
+0E35A1F8 smlsl v24.8h, v15.8b, v21.8b
+0EACA0C1 smlsl v1.2d, v6.2s, v12.2s
+4EADA1FA smlsl2 v26.2d, v15.4s, v13.4s
+0EA4A32C smlsl v12.2d, v25.2s, v4.2s
+0E20A3E0 smlsl v0.8h, v31.8b, v0.8b
+0E3FA3BF smlsl v31.8h, v29.8b, v31.8b
+0EFEA3AE UNDEFINED
+4EFEA3AE UNDEFINED
+0E3EA3BD smlsl v29.8h, v29.8b, v30.8b
+4E20A3E0 smlsl2 v0.8h, v31.16b, v0.16b

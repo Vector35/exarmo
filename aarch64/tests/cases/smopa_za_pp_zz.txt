@@ -1,0 +1,34 @@
+// smopa_za_pp_zz_32 1|01|0000|u0=0|10|u1=0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=0|0|0|ZAda=xx
+// SmopaZaPpZz32: SMOPA  <ZAda>.S, <Pn>/M, <Pm>/M, <Zn>.B, <Zm>.B
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A0822DA1 smopa za1.s, p3/m, p1/m, z13.b, z2.b
+A0895B81 smopa za1.s, p6/m, p2/m, z28.b, z9.b
+A09B2FA2 smopa za2.s, p3/m, p1/m, z29.b, z27.b
+A08134A3 smopa za3.s, p5/m, p1/m, z5.b, z1.b
+A09DE961 smopa za1.s, p2/m, p7/m, z11.b, z29.b
+A097D2C1 smopa za1.s, p4/m, p6/m, z22.b, z23.b
+A08A2483 smopa za3.s, p1/m, p1/m, z4.b, z10.b
+A0972663 smopa za3.s, p1/m, p1/m, z19.b, z23.b
+A0800000 smopa za0.s, p0/m, p0/m, z0.b, z0.b
+A09F7FE1 smopa za1.s, p7/m, p3/m, z31.b, z31.b
+A0828DA1 smopa za1.s, p3/m, p4/m, z13.b, z2.b
+A082ADA1 smopa za1.s, p3/m, p5/m, z13.b, z2.b
+
+// smopa_za_pp_zz_64 1|0|1|0000|u0=0|11|u1=0|Zm=xxxxx|Pm=xxx|Pn=xxx|Zn=xxxxx|S=0|0|ZAda=xxx
+// SmopaZaPpZz64: SMOPA  <ZAda>.D, <Pn>/M, <Pm>/M, <Zn>.H, <Zm>.H
+// register fields: Zm, Pm, Pn, Zn, ZAda
+A0CFCB26 smopa za6.d, p2/m, p6/m, z25.h, z15.h
+A0C850A0 smopa za0.d, p4/m, p2/m, z5.h, z8.h
+A0CAA824 smopa za4.d, p2/m, p5/m, z1.h, z10.h
+A0DFC2C2 smopa za2.d, p0/m, p6/m, z22.h, z31.h
+A0C89182 smopa za2.d, p4/m, p4/m, z12.h, z8.h
+A0D85AC7 smopa za7.d, p6/m, p2/m, z22.h, z24.h
+A0CE0D07 smopa za7.d, p3/m, p0/m, z8.h, z14.h
+A0C4C247 smopa za7.d, p0/m, p6/m, z18.h, z4.h
+A0C02401 smopa za1.d, p1/m, p1/m, z0.h, z0.h
+A0CF77E3 smopa za3.d, p5/m, p3/m, z31.h, z15.h
+A0CFFF25 smopa za5.d, p7/m, p7/m, z25.h, z15.h
+A0C6C846 smopa za6.d, p2/m, p6/m, z2.h, z6.h
+A0C2C8C6 smopa za6.d, p2/m, p6/m, z6.h, z2.h
+A0C6CB26 smopa za6.d, p2/m, p6/m, z25.h, z6.h
+A0CFC8C6 smopa za6.d, p2/m, p6/m, z6.h, z15.h

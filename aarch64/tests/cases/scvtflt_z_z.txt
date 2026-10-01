@@ -1,0 +1,10 @@
+// scvtflt_z_z_ 011|0010|1|size=xx|001|100|0011|1|U=0|Zn=xxxxx|Zd=xxxxx
+// ScvtfltZZ: SCVTFLT  <Zd>.<T>, <Zn>.<Tb>
+// register fields: Zn, Zd
+654C3806 scvtflt z6.h, z0.b
+654C380D scvtflt z13.h, z0.b
+654C3814 scvtflt z20.h, z0.b
+658C3BE0 scvtflt z0.s, z31.h
+65CC381F scvtflt z31.d, z0.s
+650C3806 UNDEFINED
+654C3800 scvtflt z0.h, z0.b

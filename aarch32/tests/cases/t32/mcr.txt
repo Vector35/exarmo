@@ -1,0 +1,17 @@
+// MCR_T1 111|0|11|10|opc1=xxx|L=0|CRn=xxxx|Rt=xxxx|1|11|cp15=x|opc2=xxx|1|CRm=xxxx
+// McrT1: MCR{<c>}{<q>}  <coproc>, {#}<opc1>, <Rt>, <CRn>, <CRm>{, {#}<opc2>}
+// register fields: Rt
+// IT state read: condition
+ee0aee16 mcr p14, #0, lr, c10, c6, #0
+ee27fe57 mcr p14, #1, pc, c7, c7, #2 (unpredictable)
+ee6c1eda mcr p14, #3, r1, c12, c10, #6
+ee686ef1 mcr p14, #3, r6, c8, c1, #7
+ee076e19 mcr p14, #0, r6, c7, c9, #0
+eeaaff18 mcr p15, #5, pc, c10, c8, #0 (unpredictable)
+ee648e98 mcr p14, #3, r8, c4, c8, #4
+eecb0fb8 mcr p15, #6, r0, c11, c8, #5
+EE40EE30 mcr p14, #0x2, lr, c0, c0, #0x1
+EE8FEE7F mcr p14, #0x4, lr, c15, c15, #0x3
+EEE2EE14 mcr p14, #0x7, lr, c2, c4, #0x0
+EE01EE12 mcr p14, #0x0, lr, c1, c2, #0x0
+EE0AEE16 [ne] mcrne p14, #0x0, lr, c10, c6, #0x0

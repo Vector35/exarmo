@@ -1,0 +1,16 @@
+// MRC_T1 111|0|11|10|opc1=xxx|L=1|CRn=xxxx|Rt=xxxx|1|11|cp15=x|opc2=xxx|1|CRm=xxxx
+// MrcT1: MRC{<c>}{<q>}  <coproc>, {#}<opc1>, <Rt>, <CRn>, <CRm>{, {#}<opc2>}
+// register fields: Rt
+// IT state read: condition
+ee12efff mrc p15, #0, lr, c2, c15, #7
+ee7ddf74 mrc p15, #3, sp, c13, c4, #3
+eede5f9e mrc p15, #6, r5, c14, c14, #4
+eed32e59 mrc p14, #6, r2, c3, c9, #2
+ee51ef16 mrc p15, #2, lr, c1, c6, #0
+eef50f3b mrc p15, #7, r0, c5, c11, #1
+eed9ef99 mrc p15, #6, lr, c9, c9, #4
+ee149f50 mrc p15, #0, r9, c4, c0, #2
+EE30FFB8 mrc p15, #0x1, apsr_nzcv, c0, c8, #0x5
+EE9FEFD2 mrc p15, #0x4, lr, c15, c2, #0x6
+EEB8EFF1 mrc p15, #0x5, lr, c8, c1, #0x7
+EE12EFFF [ne] mrcne p15, #0x0, lr, c2, c15, #0x7

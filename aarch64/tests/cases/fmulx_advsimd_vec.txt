@@ -1,0 +1,100 @@
+// FMULX_asimdsame_only 0|Q=x|U=0|0|111|0|0|sz=x|1|Rm=xxxxx|opcode=11011|1|Rn=xxxxx|Rd=xxxxx
+// FmulxAsimdsameOnly: FMULX  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+4E78DEFC fmulx v28.2d, v23.2d, v24.2d
+4E38DC59 fmulx v25.4s, v2.4s, v24.4s
+0E35DED2 fmulx v18.2s, v22.2s, v21.2s
+0E3DDD79 fmulx v25.2s, v11.2s, v29.2s
+4E63DC9A fmulx v26.2d, v4.2d, v3.2d
+4E32DF7D fmulx v29.4s, v27.4s, v18.4s
+4E60DFD6 fmulx v22.2d, v30.2d, v0.2d
+4E2ADC67 fmulx v7.4s, v3.4s, v10.4s
+4E6ADCF3 fmulx v19.2d, v7.2d, v10.2d
+4E73DC07 fmulx v7.2d, v0.2d, v19.2d
+0E3DDF7C fmulx v28.2s, v27.2s, v29.2s
+4E66DDCF fmulx v15.2d, v14.2d, v6.2d
+0E21DD4E fmulx v14.2s, v10.2s, v1.2s
+0E2ADFB0 fmulx v16.2s, v29.2s, v10.2s
+4E2BDD6A fmulx v10.4s, v11.4s, v11.4s
+4E3BDDCB fmulx v11.4s, v14.4s, v27.4s
+4E7FDFE0 fmulx v0.2d, v31.2d, v31.2d
+4E78DEFF fmulx v31.2d, v23.2d, v24.2d
+0E78DEFC UNDEFINED
+4E78DEF8 fmulx v24.2d, v23.2d, v24.2d
+4E78DEF7 fmulx v23.2d, v23.2d, v24.2d
+
+// FMULX_asimdsamefp16_only 0|Q=x|U=0|0|111|0|a=0|10|Rm=xxxxx|00|opcode=011|1|Rn=xxxxx|Rd=xxxxx
+// FmulxAsimdsamefp16Only: FMULX  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+4E491C47 fmulx v7.8h, v2.8h, v9.8h
+4E461E83 fmulx v3.8h, v20.8h, v6.8h
+0E521EE7 fmulx v7.4h, v23.4h, v18.4h
+0E441EBD fmulx v29.4h, v21.4h, v4.4h
+0E521EC3 fmulx v3.4h, v22.4h, v18.4h
+4E501FEB fmulx v11.8h, v31.8h, v16.8h
+0E501C2F fmulx v15.4h, v1.4h, v16.4h
+0E451F8D fmulx v13.4h, v28.4h, v5.4h
+0E591E86 fmulx v6.4h, v20.4h, v25.4h
+0E491D19 fmulx v25.4h, v8.4h, v9.4h
+4E431D39 fmulx v25.8h, v9.8h, v3.8h
+4E521CEC fmulx v12.8h, v7.8h, v18.8h
+4E581E42 fmulx v2.8h, v18.8h, v24.8h
+4E521FA3 fmulx v3.8h, v29.8h, v18.8h
+4E5C1F96 fmulx v22.8h, v28.8h, v28.8h
+0E5C1D8D fmulx v13.4h, v12.4h, v28.4h
+4E401C00 fmulx v0.8h, v0.8h, v0.8h
+4E5F1C5F fmulx v31.8h, v2.8h, v31.8h
+
+// FMULX_asisdsame_only 01|U=0|1|111|0|0|sz=x|1|Rm=xxxxx|opcode=11011|1|Rn=xxxxx|Rd=xxxxx
+// FmulxAsisdsameOnly: FMULX  <V><d>, <V><n>, <V><m>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// read together by <m>: sz, Rm
+// register fields: Rm, Rn, Rd
+5E2BDC50 fmulx s16, s2, s11
+5E6ADE14 fmulx d20, d16, d10
+5E7CDC84 fmulx d4, d4, d28
+5E6BDF1F fmulx d31, d24, d11
+5E6BDD51 fmulx d17, d10, d11
+5E7CDEA4 fmulx d4, d21, d28
+5E78DFFA fmulx d26, d31, d24
+5E3CDE1A fmulx s26, s16, s28
+5E20DF96 fmulx s22, s28, s0
+5E23DC5C fmulx s28, s2, s3
+5E27DFA2 fmulx s2, s29, s7
+5E3FDF31 fmulx s17, s25, s31
+5E2BDE93 fmulx s19, s20, s11
+5E7EDF19 fmulx d25, d24, d30
+5E74DE77 fmulx d23, d19, d20
+5E72DC8B fmulx d11, d4, d18
+5E2BDC00 fmulx s0, s0, s11
+5E2BDD7F fmulx s31, s11, s11
+5E6BDC40 fmulx d0, d2, d11
+5E60DC50 fmulx d16, d2, d0
+5E7FDC50 fmulx d16, d2, d31
+5E2BDFEB fmulx s11, s31, s11
+5E6BDC10 fmulx d16, d0, d11
+
+// FMULX_asisdsamefp16_only 01|U=0|1|111|0|a=0|10|Rm=xxxxx|00|opcode=011|1|Rn=xxxxx|Rd=xxxxx
+// FmulxAsisdsamefp16Only: FMULX  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+5E411EA9 fmulx h9, h21, h1
+5E491C16 fmulx h22, h0, h9
+5E521DA4 fmulx h4, h13, h18
+5E411E93 fmulx h19, h20, h1
+5E491F02 fmulx h2, h24, h9
+5E5B1C67 fmulx h7, h3, h27
+5E5D1F32 fmulx h18, h25, h29
+5E541CF5 fmulx h21, h7, h20
+5E461F97 fmulx h23, h28, h6
+5E491D7D fmulx h29, h11, h9
+5E5A1D6A fmulx h10, h11, h26
+5E581E19 fmulx h25, h16, h24
+5E471C70 fmulx h16, h3, h7
+5E421C21 fmulx h1, h1, h2
+5E401C6F fmulx h15, h3, h0
+5E491D9D fmulx h29, h12, h9
+5E5F1FE0 fmulx h0, h31, h31
+5E411EBF fmulx h31, h21, h1
+5E411EA1 fmulx h1, h21, h1

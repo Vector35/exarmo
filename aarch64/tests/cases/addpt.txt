@@ -1,0 +1,15 @@
+// ADDPT_64_addsub_pt sf=1|op=0|S=0|1|101|0000|Rm=xxxxx|001|imm3=xxx|Rn=xxxxx|Rd=xxxxx
+// Addpt64AddsubPt: ADDPT  <Xd|SP>, <Xn|SP>, <Xm>{, LSL #<amount>}
+// register fields: Rm, Rn, Rd
+9A002005 addpt x5, x0, x0
+9A00200C addpt x12, x0, x0
+9A002013 addpt x19, x0, x0
+9A1F27E0 addpt x0, sp, xzr, lsl #0x1
+9A00281F addpt sp, x0, x0, lsl #0x2
+9A002C05 addpt x5, x0, x0, lsl #0x3
+9A003005 addpt x5, x0, x0, lsl #0x4
+9A003405 addpt x5, x0, x0, lsl #0x5
+9A003805 addpt x5, x0, x0, lsl #0x6
+9A003C05 addpt x5, x0, x0, lsl #0x7
+9A002000 addpt x0, x0, x0
+9A012043 addpt x3, x2, x1

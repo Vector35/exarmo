@@ -1,0 +1,65 @@
+// MLA_asimdelem_R 0|Q=x|U=1|0|111|1|size=xx|L=x|M=x|Rm=xxxx|0|o2=0|00|H=x|0|Rn=xxxxx|Rd=xxxxx
+// MlaAsimdelemR: MLA  <Vd>.<T>, <Vn>.<T>, <m>.<Ts>[<index>]
+// read together by <T>: Q, size
+// read together by <m>: size, M, Rm
+// read together by <index>: size, L, M, H
+// register fields: Rn, Rd
+6F66089B mla v27.8h, v4.8h, v6.h[6]
+6F9E0889 mla v9.4s, v4.4s, v30.s[2]
+6F880ABA mla v26.4s, v21.4s, v8.s[2]
+6F5F0137 mla v23.8h, v9.8h, v15.h[1]
+6FBB00BD mla v29.4s, v5.4s, v27.s[1]
+2FAC029A mla v26.2s, v20.2s, v12.s[1]
+6F670268 mla v8.8h, v19.8h, v7.h[2]
+6F54035C mla v28.8h, v26.8h, v4.h[1]
+2FBB039B mla v27.2s, v28.2s, v27.s[1]
+2F65086A mla v10.4h, v3.4h, v5.h[6]
+2FBC006B mla v11.2s, v3.2s, v28.s[1]
+6FA3007B mla v27.4s, v3.4s, v3.s[1]
+6F4800C8 mla v8.8h, v6.8h, v8.h[0]
+2F800AAB mla v11.2s, v21.2s, v0.s[2]
+6F640183 mla v3.8h, v12.8h, v4.h[2]
+2F5E08ED mla v13.4h, v7.4h, v14.h[5]
+6F660800 mla v0.8h, v0.8h, v6.h[6]
+6F660BFF mla v31.8h, v31.8h, v6.h[6]
+6F26089B UNDEFINED
+6FE6089B UNDEFINED
+6F06009B UNDEFINED
+6F06089B UNDEFINED
+6F16009B UNDEFINED
+6F16089B UNDEFINED
+6F26009B UNDEFINED
+6F36009B UNDEFINED
+6F36089B UNDEFINED
+6F46089B mla v27.8h, v4.8h, v6.h[4]
+6F76009B mla v27.8h, v4.8h, v6.h[3]
+6F76089B mla v27.8h, v4.8h, v6.h[7]
+6F86009B mla v27.4s, v4.4s, v6.s[0]
+6F96009B mla v27.4s, v4.4s, v22.s[0]
+6FA6089B mla v27.4s, v4.4s, v6.s[3]
+6FB6089B mla v27.4s, v4.4s, v22.s[3]
+6FC6009B UNDEFINED
+6FC6089B UNDEFINED
+6FD6009B UNDEFINED
+6FD6089B UNDEFINED
+6FE6009B UNDEFINED
+6FF6009B UNDEFINED
+6FF6089B UNDEFINED
+6F20089B UNDEFINED
+6F2F089B UNDEFINED
+6F30089B UNDEFINED
+6F3F089B UNDEFINED
+6F60089B mla v27.8h, v4.8h, v0.h[6]
+6F6F089B mla v27.8h, v4.8h, v15.h[6]
+6F70089B mla v27.8h, v4.8h, v0.h[7]
+6FAF089B mla v27.4s, v4.4s, v15.s[3]
+6FB0089B mla v27.4s, v4.4s, v16.s[3]
+6FBF089B mla v27.4s, v4.4s, v31.s[3]
+6FE0089B UNDEFINED
+6FEF089B UNDEFINED
+6FF0089B UNDEFINED
+6FFF089B UNDEFINED
+2F26089B UNDEFINED
+2FE6089B UNDEFINED
+6F62089B mla v27.8h, v4.8h, v2.h[6]
+6F61089B mla v27.8h, v4.8h, v1.h[6]

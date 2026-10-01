@@ -1,0 +1,9 @@
+// CSDB_A1 cond=xxxx|00|1|10|R=0|10|imm4=0000|(1)(1)(1)(1)|imm12=(0)(0)(0)(0)00010100
+// CsdbA1: CSDB{<c>}{<q>}
+03200014 csdbeq (unpredictable)
+8320FF14 csdbhi (unpredictable)
+43208814 csdbmi (unpredictable)
+23204414 csdbcs (unpredictable)
+13202214 csdbne (unpredictable)
+03201114 csdbeq (unpredictable)
+0320F014 csdbeq (unpredictable)

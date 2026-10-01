@@ -1,0 +1,228 @@
+// STR_B_ldst_regoff size=00|111|VR=1|00|opc=00|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// StrBLdstRegoff: STR  <Bt>, [<Xn|SP>, (<Wm>|<Xm>), <extend> {<amount>}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+3C354BDA str b26, [lr, w21, uxtw]
+3C265BB0 str b16, [fp, w6, uxtw #0x0]
+3C37FAF5 str b21, [x23, x23, sxtx #0x0]
+3C264B78 str b24, [x27, w6, uxtw]
+3C24DAE0 str b0, [x23, w4, sxtw #0x0]
+3C21CAB2 str b18, [x21, w1, sxtw]
+3C28EA40 str b0, [x18, x8, sxtx]
+3C2CDB8F str b15, [x28, w12, sxtw #0x0]
+3C3AFABA str b26, [x21, x26, sxtx #0x0]
+3C234932 str b18, [x9, w3, uxtw]
+3C325A1E str b30, [x16, w18, uxtw #0x0]
+3C285BC2 str b2, [lr, w8, uxtw #0x0]
+3C3B494E str b14, [x10, w27, uxtw]
+3C20DA45 str b5, [x18, w0, sxtw #0x0]
+3C30C93A str b26, [x9, w16, sxtw]
+3C3ACBF7 str b23, [sp, w26, sxtw]
+3C3F481F str b31, [x0, wzr, uxtw]
+3C350BDA UNDEFINED
+3C352BDA UNDEFINED
+3C358BDA UNDEFINED
+3C35ABDA UNDEFINED
+3C200BDA UNDEFINED
+3C202BDA UNDEFINED
+3C204BDE str b30, [lr, w0, uxtw]
+3C208BDA UNDEFINED
+3C20ABDA UNDEFINED
+3C20EBDA str b26, [lr, x0, sxtx]
+3C3F0BDA UNDEFINED
+3C3F2BDA UNDEFINED
+3C3F8BDA UNDEFINED
+3C3FABDA UNDEFINED
+3C3FCBDA str b26, [lr, wzr, sxtw]
+3C3FEBDA str b26, [lr, xzr, sxtx]
+
+// STR_BL_ldst_regoff size=00|111|VR=1|00|opc=00|1|Rm=xxxxx|option=011|S=x|10|Rn=xxxxx|Rt=xxxxx
+// StrBlLdstRegoff: STR  <Bt>, [<Xn|SP>, <Xm>{, LSL <amount>}]
+// register fields: Rm, Rn, Rt
+3C327978 str b24, [x11, x18, lsl #0x0]
+3C30691E str b30, [x8, x16]
+3C326934 str b20, [x9, x18]
+3C207A85 str b5, [x20, x0, lsl #0x0]
+3C267823 str b3, [x1, x6, lsl #0x0]
+3C3C6985 str b5, [x12, x28]
+3C207884 str b4, [x4, x0, lsl #0x0]
+3C257A18 str b24, [x16, x5, lsl #0x0]
+3C2F7856 str b22, [x2, x15, lsl #0x0]
+3C376ABC str b28, [x21, x23]
+3C376A7E str b30, [x19, x23]
+3C376A0C str b12, [x16, x23]
+3C3D7AAC str b12, [x21, fp, lsl #0x0]
+3C207B6B str b11, [x27, x0, lsl #0x0]
+3C206A65 str b5, [x19, x0]
+3C206BA7 str b7, [fp, x0]
+3C3F7800 str b0, [x0, xzr, lsl #0x0]
+3C327BFF str b31, [sp, x18, lsl #0x0]
+3C327A58 str b24, [x18, x18, lsl #0x0]
+3C327972 str b18, [x11, x18, lsl #0x0]
+
+// STR_D_ldst_regoff size=11|111|VR=1|00|opc=00|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// StrDLdstRegoff: STR  <Dt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+FC3EF913 str d19, [x8, lr, sxtx #0x3]
+FC3DC8B0 str d16, [x5, w29, sxtw]
+FC2EDABB str d27, [x21, w14, sxtw #0x3]
+FC216AB9 str d25, [x21, x1]
+FC25C850 str d16, [x2, w5, sxtw]
+FC2B7A2A str d10, [x17, x11, lsl #0x3]
+FC3679F5 str d21, [x15, x22, lsl #0x3]
+FC3BEA60 str d0, [x19, x27, sxtx]
+FC346BED str d13, [sp, x20]
+FC2E4874 str d20, [x3, w14, uxtw]
+FC274BFE str d30, [sp, w7, uxtw]
+FC32EA7A str d26, [x19, x18, sxtx]
+FC26C8FB str d27, [x7, w6, sxtw]
+FC36784B str d11, [x2, x22, lsl #0x3]
+FC2C5B4C str d12, [x26, w12, uxtw #0x3]
+FC255982 str d2, [x12, w5, uxtw #0x3]
+FC20F81F str d31, [x0, x0, sxtx #0x3]
+FC3FF913 str d19, [x8, xzr, sxtx #0x3]
+FC3E1913 UNDEFINED
+FC3E3913 UNDEFINED
+FC3E9913 UNDEFINED
+FC3EB913 UNDEFINED
+FC201913 UNDEFINED
+FC203913 UNDEFINED
+FC205908 str d8, [x8, w0, uxtw #0x3]
+FC207913 str d19, [x8, x0, lsl #0x3]
+FC209913 UNDEFINED
+FC20B913 UNDEFINED
+FC20D913 str d19, [x8, w0, sxtw #0x3]
+FC3F1913 UNDEFINED
+FC3F3913 UNDEFINED
+FC3F5913 str d19, [x8, wzr, uxtw #0x3]
+FC3F7913 str d19, [x8, xzr, lsl #0x3]
+FC3F9913 UNDEFINED
+FC3FB913 UNDEFINED
+FC3FD913 str d19, [x8, wzr, sxtw #0x3]
+
+// STR_H_ldst_regoff size=01|111|VR=1|00|opc=00|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// StrHLdstRegoff: STR  <Ht>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+7C2F5B24 str h4, [x25, w15, uxtw #0x1]
+7C394BE4 str h4, [sp, w25, uxtw]
+7C394A7F str h31, [x19, w25, uxtw]
+7C36CB07 str h7, [x24, w22, sxtw]
+7C3ADAFD str h29, [x23, w26, sxtw #0x1]
+7C257AAE str h14, [x21, x5, lsl #0x1]
+7C395855 str h21, [x2, w25, uxtw #0x1]
+7C2BD957 str h23, [x10, w11, sxtw #0x1]
+7C307BDB str h27, [lr, x16, lsl #0x1]
+7C376A06 str h6, [x16, x23]
+7C247BFC str h28, [sp, x4, lsl #0x1]
+7C2AEB98 str h24, [x28, x10, sxtx]
+7C2AEBFD str h29, [sp, x10, sxtx]
+7C2C5A40 str h0, [x18, w12, uxtw #0x1]
+7C2CFB62 str h2, [x27, x12, sxtx #0x1]
+7C33F855 str h21, [x2, x19, sxtx #0x1]
+7C205804 str h4, [x0, w0, uxtw #0x1]
+7C3F5B24 str h4, [x25, wzr, uxtw #0x1]
+7C2F1B24 UNDEFINED
+7C2F3B24 UNDEFINED
+7C2F9B24 UNDEFINED
+7C2FBB24 UNDEFINED
+7C201B24 UNDEFINED
+7C203B24 UNDEFINED
+7C207B39 str h25, [x25, x0, lsl #0x1]
+7C209B24 UNDEFINED
+7C20BB24 UNDEFINED
+7C20DB24 str h4, [x25, w0, sxtw #0x1]
+7C20FB24 str h4, [x25, x0, sxtx #0x1]
+7C3F1B24 UNDEFINED
+7C3F3B24 UNDEFINED
+7C3F7B24 str h4, [x25, xzr, lsl #0x1]
+7C3F9B24 UNDEFINED
+7C3FBB24 UNDEFINED
+7C3FDB24 str h4, [x25, wzr, sxtw #0x1]
+7C3FFB24 str h4, [x25, xzr, sxtx #0x1]
+7C2F5B2F str h15, [x25, w15, uxtw #0x1]
+
+// STR_Q_ldst_regoff size=00|111|VR=1|00|opc=10|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// StrQLdstRegoff: STR  <Qt>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+3CB6F8AF str q15, [x5, x22, sxtx #0x4]
+3CB05A11 str q17, [x16, w16, uxtw #0x4]
+3CB37A83 str q3, [x20, x19, lsl #0x4]
+3CB4D923 str q3, [x9, w20, sxtw #0x4]
+3CAA79C3 str q3, [x14, x10, lsl #0x4]
+3CBD4815 str q21, [x0, w29, uxtw]
+3CAC59F5 str q21, [x15, w12, uxtw #0x4]
+3CA05A8E str q14, [x20, w0, uxtw #0x4]
+3CB26BCA str q10, [lr, x18]
+3CB1DAB8 str q24, [x21, w17, sxtw #0x4]
+3CAE5906 str q6, [x8, w14, uxtw #0x4]
+3CA95BD3 str q19, [lr, w9, uxtw #0x4]
+3CA95BD6 str q22, [lr, w9, uxtw #0x4]
+3CADFBCB str q11, [lr, x13, sxtx #0x4]
+3CA3F86A str q10, [x3, x3, sxtx #0x4]
+3CB97896 str q22, [x4, x25, lsl #0x4]
+3CBFFBE0 str q0, [sp, xzr, sxtx #0x4]
+3CB6F8BF str q31, [x5, x22, sxtx #0x4]
+3CB618AF UNDEFINED
+3CB638AF UNDEFINED
+3CB698AF UNDEFINED
+3CB6B8AF UNDEFINED
+3CA018AF UNDEFINED
+3CA038AF UNDEFINED
+3CA078A5 str q5, [x5, x0, lsl #0x4]
+3CA098AF UNDEFINED
+3CA0B8AF UNDEFINED
+3CA0D8AF str q15, [x5, w0, sxtw #0x4]
+3CA0F8AF str q15, [x5, x0, sxtx #0x4]
+3CBF18AF UNDEFINED
+3CBF38AF UNDEFINED
+3CBF58AF str q15, [x5, wzr, uxtw #0x4]
+3CBF78AF str q15, [x5, xzr, lsl #0x4]
+3CBF98AF UNDEFINED
+3CBFB8AF UNDEFINED
+3CBFD8AF str q15, [x5, wzr, sxtw #0x4]
+3CB6F8B6 str q22, [x5, x22, sxtx #0x4]
+
+// STR_S_ldst_regoff size=10|111|VR=1|00|opc=00|1|Rm=xxxxx|option=xxx|S=x|10|Rn=xxxxx|Rt=xxxxx
+// StrSLdstRegoff: STR  <St>, [<Xn|SP>, (<Wm>|<Xm>){, <extend> {<amount>}}]
+// read together by <m>: Rm, option
+// register fields: Rm, Rn, Rt
+BC3E5BD5 str s21, [lr, w30, uxtw #0x2]
+BC31DAD4 str s20, [x22, w17, sxtw #0x2]
+BC2158AC str s12, [x5, w1, uxtw #0x2]
+BC3B7836 str s22, [x1, x27, lsl #0x2]
+BC364AFB str s27, [x23, w22, uxtw]
+BC30DA82 str s2, [x20, w16, sxtw #0x2]
+BC38DB66 str s6, [x27, w24, sxtw #0x2]
+BC2869A5 str s5, [x13, x8]
+BC2358D1 str s17, [x6, w3, uxtw #0x2]
+BC28C80B str s11, [x0, w8, sxtw]
+BC264A43 str s3, [x18, w6, uxtw]
+BC237900 str s0, [x8, x3, lsl #0x2]
+BC23F99B str s27, [x12, x3, sxtx #0x2]
+BC3579B4 str s20, [x13, x21, lsl #0x2]
+BC3EFB01 str s1, [x24, lr, sxtx #0x2]
+BC24C9A5 str s5, [x13, w4, sxtw]
+BC205BFF str s31, [sp, w0, uxtw #0x2]
+BC3F5BD5 str s21, [lr, wzr, uxtw #0x2]
+BC3E1BD5 UNDEFINED
+BC3E3BD5 UNDEFINED
+BC3E9BD5 UNDEFINED
+BC3EBBD5 UNDEFINED
+BC201BD5 UNDEFINED
+BC203BD5 UNDEFINED
+BC207BD5 str s21, [lr, x0, lsl #0x2]
+BC209BD5 UNDEFINED
+BC20BBD5 UNDEFINED
+BC20DBD5 str s21, [lr, w0, sxtw #0x2]
+BC20FBD5 str s21, [lr, x0, sxtx #0x2]
+BC3F1BD5 UNDEFINED
+BC3F3BD5 UNDEFINED
+BC3F7BD5 str s21, [lr, xzr, lsl #0x2]
+BC3F9BD5 UNDEFINED
+BC3FBBD5 UNDEFINED
+BC3FDBD5 str s21, [lr, wzr, sxtw #0x2]
+BC3FFBD5 str s21, [lr, xzr, sxtx #0x2]
+BC3E5BDE str s30, [lr, w30, uxtw #0x2]

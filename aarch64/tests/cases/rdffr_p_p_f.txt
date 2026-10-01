@@ -1,0 +1,20 @@
+// rdffr_p_p_f_ 001|0010|1|op=0|S=0|01|1000|11|110|00|Pg=xxxx|0|Pd=xxxx
+// RdffrPPF: RDFFR  <Pd>.B, <Pg>/Z
+// register fields: Pg, Pd
+2518F04A rdffr p10.b, p2/z
+2518F1C1 rdffr p1.b, p14/z
+2518F089 rdffr p9.b, p4/z
+2518F0CB rdffr p11.b, p6/z
+2518F0ED rdffr p13.b, p7/z
+2518F042 rdffr p2.b, p2/z
+2518F068 rdffr p8.b, p3/z
+2518F109 rdffr p9.b, p8/z
+2518F04E rdffr p14.b, p2/z
+2518F00A rdffr p10.b, p0/z
+2518F0E3 rdffr p3.b, p7/z
+2518F147 rdffr p7.b, p10/z
+2518F0EF rdffr p15.b, p7/z
+2518F167 rdffr p7.b, p11/z
+2518F063 rdffr p3.b, p3/z
+2518F14A rdffr p10.b, p10/z
+2518F1E0 rdffr p0.b, p15/z

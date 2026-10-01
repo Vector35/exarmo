@@ -1,0 +1,28 @@
+// smin_z_zi_ 001|0010|1|size=xx|1|01|01|U=0|11|o2=0|imm8=xxxxxxxx|Zdn=xxxxx
+// SminZZi: SMIN  <Zdn>.<T>, <Zdn>.<T>, #<imm>
+// register fields: Zdn
+25AAD504 smin z4.s, z4.s, #-88
+25EADD38 smin z24.d, z24.d, #-23
+256ADCE3 smin z3.h, z3.h, #-25
+252AD928 smin z8.b, z8.b, #-55
+25AACE49 smin z9.s, z9.s, #0x72
+256AD9B4 smin z20.h, z20.h, #-51
+25EAC5BF smin z31.d, z31.d, #0x2d
+25EACDF0 smin z16.d, z16.d, #0x6f
+256AD4BF smin z31.h, z31.h, #-91
+25AAC41C smin z28.s, z28.s, #0x20
+25EAD85A smin z26.d, z26.d, #-62
+256AD7B5 smin z21.h, z21.h, #-67
+25EAD11A smin z26.d, z26.d, #-120
+256ADB30 smin z16.h, z16.h, #-39
+25EAC58F smin z15.d, z15.d, #0x2c
+25EAC3B5 smin z21.d, z21.d, #0x1d
+25AAC000 smin z0.s, z0.s, #0x0
+25AADFE4 smin z4.s, z4.s, #-0x1
+25AAD004 smin z4.s, z4.s, #-0x80
+25AAC804 smin z4.s, z4.s, #0x40
+25AAC204 smin z4.s, z4.s, #0x10
+25AAC104 smin z4.s, z4.s, #0x8
+25AAC084 smin z4.s, z4.s, #0x4
+25AAC044 smin z4.s, z4.s, #0x2
+25AAC024 smin z4.s, z4.s, #0x1

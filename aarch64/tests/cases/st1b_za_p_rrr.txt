@@ -1,0 +1,18 @@
+// st1b_za_p_rrr_ 1|11|0000|0|msz=00|1|Rm=xxxxx|V=x|Rs=xx|Pg=xxx|Rn=xxxxx|0|off4=xxxx
+// St1bZaPRrr: ST1B  { ZA0<HV>.B[<Ws>, <offs>] }, <Pg>, [<Xn|SP>{, <Xm>}]
+// register fields: Rm, Rs, Pg, Rn
+E024806B st1b {za0v.b[w12, 11]}, p0, [x3, x4]
+E0257DCE st1b {za0h.b[w15, 14]}, p7, [x14, x5]
+E0306445 st1b {za0h.b[w15, 5]}, p1, [x2, x16]
+E025796A st1b {za0h.b[w15, 10]}, p6, [x11, x5]
+E02EF207 st1b {za0v.b[w15, 7]}, p4, [x16, x14]
+E033654A st1b {za0h.b[w15, 10]}, p1, [x10, x19]
+E03F9FE8 st1b {za0v.b[w12, 8]}, p7, [sp]
+E020AD87 st1b {za0v.b[w13, 7]}, p3, [x12, x0]
+E024C800 st1b {za0v.b[w14, 0]}, p2, [x0, x4]
+E024946F st1b {za0v.b[w12, 15]}, p5, [x3, x4]
+E020800B st1b {za0v.b[w12, 11]}, p0, [x0, x0]
+E024900B st1b {za0v.b[w12, 11]}, p4, [x0, x4]
+E0248064 st1b {za0v.b[w12, 4]}, p0, [x3, x4]
+E0248062 st1b {za0v.b[w12, 2]}, p0, [x3, x4]
+E0248061 st1b {za0v.b[w12, 1]}, p0, [x3, x4]

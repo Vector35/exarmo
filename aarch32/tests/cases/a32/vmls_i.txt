@@ -1,0 +1,45 @@
+// VMLS_i_A1_D 1111001|op=1|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1001|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VmlsIA1D: VMLS{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f302e9ad vmls.i8 d14, d18, d29
+f35e690b vmls.i16 d22, d14, d11
+f34ac929 vmls.i8 d28, d10, d25
+f317e981 vmls.i16 d14, d23, d1
+f30fd908 vmls.i8 d13, d15, d8
+f31cc900 vmls.i16 d12, d12, d0
+f363d9a4 vmls.i32 d29, d19, d20
+f3432920 vmls.i8 d18, d3, d16
+F332E9AD UNDEFINED
+F30009AF vmls.i8 d0, d16, d31
+F308F9A2 vmls.i8 d15, d24, d18
+F304898F vmls.i8 d8, d20, d15
+F30149AF vmls.i8 d4, d17, d31
+F300192D vmls.i8 d1, d0, d29
+F30009AD vmls.i8 d0, d16, d29
+F30FF9AD vmls.i8 d15, d31, d29
+F34209AD vmls.i8 d16, d18, d29
+F342F9AD vmls.i8 d31, d18, d29
+
+// VMLS_i_A1_Q 1111001|op=1|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1001|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VmlsIA1Q: VMLS{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f34c49c0 vmls.i8 q10, q14, q0
+f3024960 vmls.i8 q2, q1, q8
+f3168948 vmls.i16 q4, q3, q4
+f36cc948 vmls.i32 q14, q6, q4
+f36a894a vmls.i32 q12, q5, q5
+f302694e vmls.i8 q3, q1, q7
+f310c948 vmls.i16 q6, q0, q4
+f36649ec vmls.i32 q10, q11, q14
+F37FF9CF UNDEFINED
+F34809C4 vmls.i8 q8, q12, q2
+F34429C2 vmls.i8 q9, q10, q1
+F34119C1 UNDEFINED
+F30009C0 vmls.i8 q0, q8, q0
+F30FF94F UNDEFINED
+F34C09C0 vmls.i8 q8, q14, q0
+F34FF9EF UNDEFINED

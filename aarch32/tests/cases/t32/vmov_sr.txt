@@ -1,0 +1,41 @@
+// VMOV_sr_T1 111|0|11|10|U=x|opc1=xx|L=1|Vn=xxxx|Rt=xxxx|1|011|N=x|opc2=xx|1|(0)(0)(0)(0)
+// VmovSrT1: VMOV{<c>}{<q>}{.<dt>}  <Rt>, <Dn[x]>
+// read together by <dt>: U, opc1, opc2
+// register fields: Rt
+// IT state read: condition
+ee54ebd0 vmov.s8 lr, d20[2]
+EEF00B1F vmov.u8 r0, d0[4] (unpredictable)
+EE14EBD0 UNDEFINED
+EE34EBD0 UNDEFINED
+EE5FFBB8 vmov.s8 pc, d31[1] (unpredictable)
+EE58EBF4 vmov.s8 lr, d24[3] (unpredictable)
+EE12EB92 vmov.32 lr, d18[0] (unpredictable)
+EE11EBB1 vmov.s16 lr, d17[0] (unpredictable)
+EE14EBF0 vmov.s16 lr, d20[1]
+EE34EB90 vmov.32 lr, d20[1]
+EE34EBB0 vmov.s16 lr, d20[2]
+EE34EBF0 vmov.s16 lr, d20[3]
+EE54EB90 vmov.s8 lr, d20[0]
+EE54EBB0 vmov.s8 lr, d20[1]
+EE54EBF0 vmov.s8 lr, d20[3]
+EE74EB90 vmov.s8 lr, d20[4]
+EE74EBB0 vmov.s8 lr, d20[5]
+EE74EBD0 vmov.s8 lr, d20[6]
+EE74EBF0 vmov.s8 lr, d20[7]
+EE94EB90 UNDEFINED
+EE94EBB0 vmov.u16 lr, d20[0]
+EE94EBD0 UNDEFINED
+EE94EBF0 vmov.u16 lr, d20[1]
+EEB4EB90 UNDEFINED
+EEB4EBB0 vmov.u16 lr, d20[2]
+EEB4EBD0 UNDEFINED
+EEB4EBF0 vmov.u16 lr, d20[3]
+EED4EB90 vmov.u8 lr, d20[0]
+EED4EBB0 vmov.u8 lr, d20[1]
+EED4EBD0 vmov.u8 lr, d20[2]
+EED4EBF0 vmov.u8 lr, d20[3]
+EEF4EB90 vmov.u8 lr, d20[4]
+EEF4EBB0 vmov.u8 lr, d20[5]
+EEF4EBD0 vmov.u8 lr, d20[6]
+EEF4EBF0 vmov.u8 lr, d20[7]
+EE54EBD0 [ne] vmovne.s8 lr, d20[2]

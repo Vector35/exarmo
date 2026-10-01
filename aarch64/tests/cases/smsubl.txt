@@ -1,0 +1,41 @@
+// SMSUBL_64WA_dp_3src sf=1|op54=00|1|101|1|U=0|01|Rm=xxxxx|o0=1|Ra=xxxxx|Rn=xxxxx|Rd=xxxxx
+// Smsubl64waDp3src: SMSUBL  <Xd>, <Wn>, <Wm>, <Xa>
+// SmneglSmsubl64waDp3src: SMNEGL  <Xd>, <Wn>, <Wm>
+// register fields: Rm, Ra, Rn, Rd
+// form chosen on: Ra
+9B2CFC4D smnegl x13, w2, w12
+9B21FDB5 smnegl x21, w13, w1
+9B3EFD7A smnegl x26, w11, w30
+9B25FED6 smnegl x22, w22, w5
+9B3DFC8E smnegl x14, w4, w29
+9B3DFC26 smnegl x6, w1, w29
+9B22FC74 smnegl x20, w3, w2
+9B24FCE3 smnegl x3, w7, w4
+9B32FECA smnegl x10, w22, w18
+9B27FFD8 smnegl x24, w30, w7
+9B29FD1F smnegl xzr, w8, w9
+9B3EFECC smnegl x12, w22, w30
+9B2DFEBA smnegl x26, w21, w13
+9B20FE2B smnegl x11, w17, w0
+9B30FF8A smnegl x10, w28, w16
+9B25FFEA smnegl x10, wzr, w5
+9B30C8DD smsubl fp, w6, w16, x18
+9B308E5A smsubl x26, w18, w16, x3
+9B33BC51 smsubl x17, w2, w19, x15
+9B37A160 smsubl x0, w11, w23, x8
+9B3FC8A6 smsubl x6, w5, wzr, x18
+9B349754 smsubl x20, w26, w20, x5
+9B38CC10 smsubl x16, w0, w24, x19
+9B34F5CF smsubl x15, w14, w20, fp
+9B3FA28F smsubl x15, w20, wzr, x8
+9B2E9780 smsubl x0, w28, w14, x5
+9B31AFF3 smsubl x19, wzr, w17, x11
+9B2F930A smsubl x10, w24, w15, x4
+9B28F791 smsubl x17, w28, w8, fp
+9B35BCDC smsubl x28, w6, w21, x15
+9B24AC10 smsubl x16, w0, w4, x11
+9B3C9746 smsubl x6, w26, w28, x5
+9B2C804D smsubl x13, w2, w12, x0
+9B2CB04D smsubl x13, w2, w12, x12
+9B2CFD8D smnegl x13, w12, w12
+9B20BE2B smsubl x11, w17, w0, x15

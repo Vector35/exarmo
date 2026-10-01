@@ -1,0 +1,25 @@
+// VMLSL_s_A1 1111|0|01|U=x|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|0|op=1|10|N=x|1|M=x|0|Vm=xxxx
+// VmlslSA1: VMLSL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm[x]>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+f3a2e6ee vmlsl.u32 q7, d18, d14[1]
+f2e9666c vmlsl.s32 q11, d9, d12[1]
+f2dd06c4 vmlsl.s16 q8, d29, d4[0]
+f2d6c6c7 vmlsl.s16 q14, d22, d7[0]
+f3a5a6c3 vmlsl.u32 q5, d21, d3[0]
+f3902662 vmlsl.u16 q1, d0, d2[2]
+f2d1c6e6 vmlsl.s16 q14, d17, d6[2]
+f2d5866b vmlsl.s16 q12, d5, d3[3]
+F382F6EE UNDEFINED
+F3B216EE UNDEFINED
+F3AF46E0 vmlsl.u32 q2, d31, d0[1]
+F3A806EF vmlsl.u32 q0, d24, d15[1]
+F3A4E6E8 vmlsl.u32 q7, d20, d8[1]
+F3A0E6E1 vmlsl.u32 q7, d16, d1[1]
+F282F6EE UNDEFINED
+F2F9F66C UNDEFINED
+F382E6EE UNDEFINED
+F3B2E6EE UNDEFINED
+F3AFE66E vmlsl.u32 q7, d15, d14[1]
+F3AFE6EE vmlsl.u32 q7, d31, d14[1]

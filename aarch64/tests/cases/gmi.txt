@@ -1,0 +1,23 @@
+// GMI_64G_dp_2src sf=1|0|S=0|1|101|0110|Rm=xxxxx|opcode=000101|Rn=xxxxx|Rd=xxxxx
+// Gmi64gDp2src: GMI  <Xd>, <Xn|SP>, <Xm>
+// register fields: Rm, Rn, Rd
+9ADB14C8 gmi x8, x6, x27
+9AC21725 gmi x5, x25, x2
+9AC3151A gmi x26, x8, x3
+9AC8141A gmi x26, x0, x8
+9AD416B2 gmi x18, x21, x20
+9AD417E4 gmi x4, sp, x20
+9AC517C0 gmi x0, lr, x5
+9AC8144A gmi x10, x2, x8
+9ADF152A gmi x10, x9, xzr
+9ACA1584 gmi x4, x12, x10
+9AD51642 gmi x2, x18, x21
+9AD21433 gmi x19, x1, x18
+9ADF14DC gmi x28, x6, xzr
+9ACD170A gmi x10, x24, x13
+9ACE1700 gmi x0, x24, x14
+9AC9160F gmi x15, x16, x9
+9AC014DF gmi xzr, x6, x0
+9ADB1768 gmi x8, x27, x27
+9ADB14DB gmi x27, x6, x27
+9ADB14C6 gmi x6, x6, x27

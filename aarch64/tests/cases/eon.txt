@@ -1,0 +1,57 @@
+// EON_32_log_shift sf=0|opc=10|01010|shift=xx|N=1|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Eon32LogShift: EON  <Wd>, <Wn>, <Wm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+4A2753ED eon w13, wzr, w7, lsl #0x14
+4A6B69B7 eon w23, w13, w11, lsr #0x1a
+4AA1390F eon w15, w8, w1, asr #0xe
+4A277770 eon w16, w27, w7, lsl #0x1d
+4A6A4A6E eon w14, w19, w10, lsr #0x12
+4A6D7C35 eon w21, w1, w13, lsr #0x1f
+4A62441B eon w27, w0, w2, lsr #0x11
+4A2A5E1D eon w29, w16, w10, lsl #0x17
+4AFE6A05 eon w5, w16, w30, ror #0x1a
+4AEE1D88 eon w8, w12, w14, ror #0x7
+4A6469FD eon w29, w15, w4, lsr #0x1a
+4A6F1B02 eon w2, w24, w15, lsr #0x6
+4ABB4898 eon w24, w4, w27, asr #0x12
+4A3E5908 eon w8, w8, w30, lsl #0x16
+4A693DA5 eon w5, w13, w9, lsr #0xf
+4AB330A3 eon w3, w5, w19, asr #0xc
+4A2003E0 eon w0, wzr, w0
+4A3F53FF eon wzr, wzr, wzr, lsl #0x14
+4A27FFED UNDEFINED
+4A2783ED UNDEFINED
+4A2743ED eon w13, wzr, w7, lsl #0x10
+4A2723ED eon w13, wzr, w7, lsl #0x8
+4A2713ED eon w13, wzr, w7, lsl #0x4
+4A270BED eon w13, wzr, w7, lsl #0x2
+4A2707ED eon w13, wzr, w7, lsl #0x1
+
+// EON_64_log_shift sf=1|opc=10|01010|shift=xx|N=1|Rm=xxxxx|imm6=xxxxxx|Rn=xxxxx|Rd=xxxxx
+// Eon64LogShift: EON  <Xd>, <Xn>, <Xm>{, <shift> #<amount>}
+// register fields: Rm, Rn, Rd
+CA23A7A9 eon x9, fp, x3, lsl #0x29
+CA7CA1DE eon lr, x14, x28, lsr #0x28
+CA71A32C eon x12, x25, x17, lsr #0x28
+CA2439D2 eon x18, x14, x4, lsl #0xe
+CA724F8D eon x13, x28, x18, lsr #0x13
+CA270D33 eon x19, x9, x7, lsl #0x3
+CAE5D5FF eon xzr, x15, x5, ror #0x35
+CA2C706C eon x12, x3, x12, lsl #0x1c
+CA3EE004 eon x4, x0, lr, lsl #0x38
+CA6BEBC9 eon x9, lr, x11, lsr #0x3a
+CA7B4020 eon x0, x1, x27, lsr #0x10
+CAB35F4F eon x15, x26, x19, asr #0x17
+CA6563DB eon x27, lr, x5, lsr #0x18
+CA21CD44 eon x4, x10, x1, lsl #0x33
+CA3749DE eon lr, x14, x23, lsl #0x12
+CA66B84C eon x12, x2, x6, lsr #0x2e
+CA2003E9 eon x9, xzr, x0
+CA3FFFA9 eon x9, fp, xzr, lsl #0x3f
+CA23A469 eon x9, x3, x3, lsl #0x29
+CA23A7BD eon fp, fp, x3, lsl #0x29
+CA2383A9 eon x9, fp, x3, lsl #0x20
+CA2323A9 eon x9, fp, x3, lsl #0x8
+CA2313A9 eon x9, fp, x3, lsl #0x4
+CA230BA9 eon x9, fp, x3, lsl #0x2
+CA2307A9 eon x9, fp, x3, lsl #0x1

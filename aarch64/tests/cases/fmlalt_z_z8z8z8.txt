@@ -1,0 +1,10 @@
+// fmlalt_z_z8z8z8_ 011|0010|0|1|01|Zm=xxxxx|10|0|T=1|10|Zn=xxxxx|Zda=xxxxx
+// FmlaltZZ8z8z8: FMLALT  <Zda>.H, <Zn>.B, <Zm>.B
+// register fields: Zm, Zn, Zda
+64A09801 fmlalt z1.h, z0.b, z0.b
+64A09808 fmlalt z8.h, z0.b, z0.b
+64A0980F fmlalt z15.h, z0.b, z0.b
+64BF9BE0 fmlalt z0.h, z31.b, z31.b
+64A0981F fmlalt z31.h, z0.b, z0.b
+64A09800 fmlalt z0.h, z0.b, z0.b
+64A19843 fmlalt z3.h, z2.b, z1.b

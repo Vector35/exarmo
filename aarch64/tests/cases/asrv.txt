@@ -1,0 +1,45 @@
+// ASRV_32_dp_2src sf=0|0|S=0|11010110|Rm=xxxxx|0010|op2=10|Rn=xxxxx|Rd=xxxxx
+// Asrv32Dp2src: ASRV  <Wd>, <Wn>, <Wm>
+// AsrAsrv32Dp2src: ASR  <Wd>, <Wn>, <Wm>
+// register fields: Rm, Rn, Rd
+1AD028D2 asr w18, w6, w16
+1ADA2A76 asr w22, w19, w26
+1AC72B34 asr w20, w25, w7
+1AD82ABC asr w28, w21, w24
+1ADF2B1F asr wzr, w24, wzr
+1ADA2879 asr w25, w3, w26
+1AD02BEC asr w12, wzr, w16
+1AD92BFC asr w28, wzr, w25
+1AD72A5E asr w30, w18, w23
+1AC02AD7 asr w23, w22, w0
+1AD82B66 asr w6, w27, w24
+1AD72A52 asr w18, w18, w23
+1ACA2920 asr w0, w9, w10
+1AD42940 asr w0, w10, w20
+1AC629F2 asr w18, w15, w6
+1AD42830 asr w16, w1, w20
+1AD02812 asr w18, w0, w16
+1AD02A12 asr w18, w16, w16
+
+// ASRV_64_dp_2src sf=1|0|S=0|11010110|Rm=xxxxx|0010|op2=10|Rn=xxxxx|Rd=xxxxx
+// Asrv64Dp2src: ASRV  <Xd>, <Xn>, <Xm>
+// AsrAsrv64Dp2src: ASR  <Xd>, <Xn>, <Xm>
+// register fields: Rm, Rn, Rd
+9ADB2B14 asr x20, x24, x27
+9AC52A88 asr x8, x20, x5
+9AC1292E asr x14, x9, x1
+9AC92835 asr x21, x1, x9
+9ADD28CB asr x11, x6, fp
+9AC228BE asr lr, x5, x2
+9AD4287A asr x26, x3, x20
+9ADC2A50 asr x16, x18, x28
+9ADE2BEC asr x12, xzr, lr
+9ADD2B1A asr x26, x24, fp
+9AC42A78 asr x24, x19, x4
+9ADD294E asr x14, x10, fp
+9ADE2A5C asr x28, x18, lr
+9AC42862 asr x2, x3, x4
+9ACD29C8 asr x8, x14, x13
+9AC628FF asr xzr, x7, x6
+9AC02800 asr x0, x0, x0
+9ADF2B14 asr x20, x24, xzr

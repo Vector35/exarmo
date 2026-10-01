@@ -1,0 +1,63 @@
+// STXP_SP32_ldstexclp 1|sz=0|0010000|L=0|1|Rs=xxxxx|o0=0|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StxpSp32Ldstexclp: STXP  <Ws>, <Wt1>, <Wt2>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rt2, Rn, Rt
+882609AB stxp w6, w11, w2, [x13]
+88201069 stxp w0, w9, w4, [x3]
+882E4412 stxp w14, w18, w17, [x0]
+8820222D stxp w0, w13, w8, [x17]
+883E1B2D stxp w30, w13, w6, [x25]
+882F76AB stxp w15, w11, w29, [x21]
+882D3A1F stxp w13, wzr, w14, [x16]
+882224FB stxp w2, w27, w9, [x7]
+88391A79 stxp w25, w25, w6, [x19] (unpredictable)
+882379E1 stxp w3, w1, w30, [x15]
+8836648F stxp w22, w15, w25, [x4]
+883F4CCA stxp wzr, w10, w19, [x6]
+882A63FE stxp w10, w30, w24, [sp]
+88385BF9 stxp w24, w25, w22, [sp]
+882578E2 stxp w5, w2, w30, [x7]
+883E0811 stxp w30, w17, w2, [x0]
+882877A2 stxp w8, w2, w29, [fp]
+88313B66 stxp w17, w6, w14, [x27]
+883E3F3B stxp w30, w27, w15, [x25]
+88337294 stxp w19, w20, w28, [x20]
+883F747B stxp wzr, w27, w29, [x3]
+88296A72 stxp w9, w18, w26, [x19]
+88250709 stxp w5, w9, w1, [x24]
+883E2E0F stxp w30, w15, w11, [x16]
+882601A0 stxp w6, w0, w0, [x13]
+88267DAB stxp w6, w11, wzr, [x13]
+882619AB stxp w6, w11, w6, [x13] (unpredictable)
+882608CB stxp w6, w11, w2, [x6] (unpredictable)
+
+// STXP_SP64_ldstexclp 1|sz=1|0010000|L=0|1|Rs=xxxxx|o0=0|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// StxpSp64Ldstexclp: STXP  <Ws>, <Xt1>, <Xt2>, [<Xn|SP>{, #0}]
+// register fields: Rs, Rt2, Rn, Rt
+C8225AFE stxp w2, lr, x22, [x23]
+C8247A62 stxp w4, x2, lr, [x19]
+C825204E stxp w5, x14, x8, [x2]
+C83B3621 stxp w27, x1, x13, [x17]
+C82D59CC stxp w13, x12, x22, [x14]
+C8382B75 stxp w24, x21, x10, [x27]
+C83B0A08 stxp w27, x8, x2, [x16]
+C825616A stxp w5, x10, x24, [x11]
+C82E295F stxp w14, xzr, x10, [x10]
+C83E6317 stxp w30, x23, x24, [x24]
+C83C3FCE stxp w28, x14, x15, [lr]
+C82705F6 stxp w7, x22, x1, [x15]
+C82E4FE5 stxp w14, x5, x19, [sp]
+C8336D19 stxp w19, x25, x27, [x8]
+C82A5C1D stxp w10, fp, x23, [x0]
+C8275581 stxp w7, x1, x21, [x12]
+C82A6CAC stxp w10, x12, x27, [x5]
+C83744F0 stxp w23, x16, x17, [x7]
+C82634A1 stxp w6, x1, x13, [x5]
+C8350030 stxp w21, x16, x0, [x1]
+C8354457 stxp w21, x23, x17, [x2]
+C8284BC2 stxp w8, x2, x18, [lr]
+C83F367C stxp wzr, x28, x13, [x19]
+C8204823 stxp w0, x3, x18, [x1]
+C8227EE0 stxp w2, x0, xzr, [x23]
+C8220AF7 stxp w2, x23, x2, [x23] (unpredictable)
+C8225856 stxp w2, x22, x22, [x2] (unpredictable)
+C8225AE2 stxp w2, x2, x22, [x23] (unpredictable)

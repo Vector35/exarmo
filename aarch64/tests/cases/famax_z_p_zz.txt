@@ -1,0 +1,15 @@
+// famax_z_p_zz_ 011|0010|1|size=xx|0|0|opc=1110|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FamaxZPZz: FAMAX  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+654E8001 famax z1.h, p0/m, z1.h, z0.h
+654E8008 famax z8.h, p0/m, z8.h, z0.h
+654E800F famax z15.h, p0/m, z15.h, z0.h
+658E87E0 famax z0.s, p1/m, z0.s, z31.s
+65CE881F famax z31.d, p2/m, z31.d, z0.d
+654E8C01 famax z1.h, p3/m, z1.h, z0.h
+654E9001 famax z1.h, p4/m, z1.h, z0.h
+654E9401 famax z1.h, p5/m, z1.h, z0.h
+654E9801 famax z1.h, p6/m, z1.h, z0.h
+654E9C01 famax z1.h, p7/m, z1.h, z0.h
+650E8001 UNDEFINED
+654E8000 famax z0.h, p0/m, z0.h, z0.h

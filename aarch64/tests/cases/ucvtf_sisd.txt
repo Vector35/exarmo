@@ -1,0 +1,35 @@
+// UCVTF_sisd_32D sf=0|0|S=0|11110|ftype=01|1|rmode=11|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// UcvtfSisd32d: UCVTF  <Dd>, <Sn>
+// register fields: Rn, Rd
+1E7D0000 ucvtf d0, s0
+1E7D0007 ucvtf d7, s0
+1E7D000E ucvtf d14, s0
+1E7D03FF ucvtf d31, s31
+
+// UCVTF_sisd_32H sf=0|0|S=0|11110|ftype=11|1|rmode=11|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// UcvtfSisd32h: UCVTF  <Hd>, <Sn>
+// register fields: Rn, Rd
+1EFD0003 ucvtf h3, s0
+1EFD000A ucvtf h10, s0
+1EFD0011 ucvtf h17, s0
+1EFD03E0 ucvtf h0, s31
+1EFD001F ucvtf h31, s0
+1EFD0000 ucvtf h0, s0
+
+// UCVTF_sisd_64H sf=1|0|S=0|11110|ftype=11|1|rmode=11|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// UcvtfSisd64h: UCVTF  <Hd>, <Dn>
+// register fields: Rn, Rd
+9EFD0001 ucvtf h1, d0
+9EFD0008 ucvtf h8, d0
+9EFD000F ucvtf h15, d0
+9EFD03E0 ucvtf h0, d31
+9EFD001F ucvtf h31, d0
+9EFD0000 ucvtf h0, d0
+
+// UCVTF_sisd_64S sf=1|0|S=0|11110|ftype=00|1|rmode=11|opcode=101|000000|Rn=xxxxx|Rd=xxxxx
+// UcvtfSisd64s: UCVTF  <Sd>, <Dn>
+// register fields: Rn, Rd
+9E3D0000 ucvtf s0, d0
+9E3D0007 ucvtf s7, d0
+9E3D000E ucvtf s14, d0
+9E3D03FF ucvtf s31, d31

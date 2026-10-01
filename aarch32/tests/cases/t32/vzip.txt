@@ -1,0 +1,47 @@
+// VZIP_T1_D 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0011|Q=0|M=x|0|Vm=xxxx
+// VzipT1D: VZIP{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ffb2918d vzip.8 d9, d13
+fff6e18d vzip.16 d30, d13
+ffb2a18b vzip.8 d10, d11
+ffb2c1ad vzip.8 d12, d29
+fff2a18a vzip.8 d26, d10
+fff221a8 vzip.8 d18, d24
+fff6718b vzip.16 d23, d11
+fff641a0 vzip.16 d20, d16
+FFBA918D UNDEFINED
+FFBE918D UNDEFINED
+FFB2018F vzip.8 d0, d15
+FFB2F184 vzip.8 d15, d4
+FFB28182 vzip.8 d8, d2
+FFB21181 vzip.8 d1, d1
+FFB20180 vzip.8 d0, d0
+FFB2F18F vzip.8 d15, d15
+FFF201AF vzip.8 d16, d31
+FFF2F18D vzip.8 d31, d13
+FFB2918D [ne] vzipne.8 d9, d13
+
+// VZIP_T1_Q 111111111|D=x|11|size=xx|opc1=10|Vd=xxxx|0|opc2=0011|Q=1|M=x|0|Vm=xxxx
+// VzipT1Q: VZIP{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+fff2c1cc vzip.8 q14, q6
+ffb201ec vzip.8 q0, q14
+ffb2c1c4 vzip.8 q6, q2
+fffa41e4 vzip.32 q10, q10
+ffba01e8 vzip.32 q0, q12
+fff201ce vzip.8 q8, q7
+ffb201cc vzip.8 q0, q6
+fff261c8 vzip.8 q11, q4
+FFF681C0 vzip.16 q12, q0
+FFFEF1CF UNDEFINED
+FFF221C2 vzip.8 q9, q1
+FFF211C1 UNDEFINED
+FFB2F1CF UNDEFINED
+FFF2F1EF UNDEFINED
+FFF2C1C0 vzip.8 q14, q0
+FFF2C1E0 vzip.8 q14, q8
+FFF2C1CC [ne] vzipne.8 q14, q6

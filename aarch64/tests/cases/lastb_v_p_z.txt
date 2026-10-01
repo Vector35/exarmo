@@ -1,0 +1,29 @@
+// lastb_v_p_z_ 000|0010|1|size=xx|1|0|001|B=1|10|0|Pg=xxx|Zn=xxxxx|Vd=xxxxx
+// LastbVPZ: LASTB  <V><d>, <Pg>, <Zn>.<T>
+// read together by <d>: size, Vd
+// register fields: Pg, Zn, Vd
+05639578 lastb h24, p5, z11.h
+056384AC lastb h12, p1, z5.h
+05E39A7B lastb d27, p6, z19.d
+05A38E1F lastb s31, p3, z16.s
+0523936E lastb b14, p4, z27.b
+05E39EAF lastb d15, p7, z21.d
+05239DEB lastb b11, p7, z15.b
+05E38942 lastb d2, p2, z10.d
+05238E60 lastb b0, p3, z19.b
+05239767 lastb b7, p5, z27.b
+05638E50 lastb h16, p3, z18.h
+05238A20 lastb b0, p2, z17.b
+05E38C96 lastb d22, p3, z4.d
+05238238 lastb b24, p0, z17.b
+05E39651 lastb d17, p5, z18.d
+05239F7D lastb b29, p7, z27.b
+05639418 lastb h24, p5, z0.h
+056397F8 lastb h24, p5, z31.h
+052394BF lastb b31, p5, z5.b
+05639560 lastb h0, p5, z11.h
+0563957F lastb h31, p5, z11.h
+05A39560 lastb s0, p5, z11.s
+05E39560 lastb d0, p5, z11.d
+05E3957F lastb d31, p5, z11.d
+0563956B lastb h11, p5, z11.h

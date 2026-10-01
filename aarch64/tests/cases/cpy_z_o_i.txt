@@ -1,0 +1,29 @@
+// cpy_z_o_i_ 000|0010|1|size=xx|01|Pg=xxxx|0|M=0|sh=x|imm8=xxxxxxxx|Zd=xxxxx
+// CpyZOI: CPY  <Zd>.<T>, <Pg>/Z, #<imm>{, <shift>}
+// MovZOICpyZOI: MOV  <Zd>.<T>, <Pg>/Z, #<imm>{, <shift>}
+// register fields: Pg, Zd
+059F1FC2 mov z2.s, p15/z, #-2
+059A000A mov z10.s, p10/z, #0x0
+055C0283 mov z3.h, p12/z, #0x14
+05583ECE mov z14.h, p8/z, #-0xa, lsl #0x8
+059B17E7 mov z7.s, p11/z, #-65
+059E0C3D mov z29.s, p14/z, #0x61
+05DC3430 mov z16.d, p12/z, #-0x5f, lsl #0x8
+055605D7 mov z23.h, p6/z, #0x2e
+05D81277 mov z23.d, p8/z, #-109
+05922CB6 mov z22.s, p2/z, #0x65, lsl #0x8
+059739DD mov z29.s, p7/z, #-0x32, lsl #0x8
+05581B93 mov z19.h, p8/z, #-36
+051D1F5F mov z31.b, p13/z, #-6
+05503BAC mov z12.h, p0/z, #-0x23, lsl #0x8
+05921D1F mov z31.s, p2/z, #-24
+05D22D15 mov z21.d, p2/z, #0x68, lsl #0x8
+059F1FE0 mov z0.s, p15/z, #-0x1
+059F1002 mov z2.s, p15/z, #-0x80
+059F0802 mov z2.s, p15/z, #0x40
+059F0402 mov z2.s, p15/z, #0x20
+059F0202 mov z2.s, p15/z, #0x10
+059F0102 mov z2.s, p15/z, #0x8
+059F0082 mov z2.s, p15/z, #0x4
+059F0042 mov z2.s, p15/z, #0x2
+059F0022 mov z2.s, p15/z, #0x1

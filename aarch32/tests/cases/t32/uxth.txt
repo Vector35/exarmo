@@ -1,0 +1,35 @@
+// UXTH_T1 1011|0010|U=1|B=0|Rm=xxx|Rd=xxx
+// UxthT1: UXTH{<c>}{<q>}  {<Rd>, }<Rm>
+// register fields: Rm, Rd
+// IT state read: condition
+b280 uxth r0, r0
+b281 uxth r1, r0
+b282 uxth r2, r0
+b283 uxth r3, r0
+b284 uxth r4, r0
+b285 uxth r5, r0
+b286 uxth r6, r0
+b287 uxth r7, r0
+B288 uxth r0, r1
+B290 uxth r0, r2
+B298 uxth r0, r3
+B2A0 uxth r0, r4
+B2A8 uxth r0, r5
+B2B0 uxth r0, r6
+B2B8 uxth r0, r7
+B280 [ne] uxthne r0, r0
+
+// UXTH_T2 111|11010|0|op1=00|U=1|Rn=1111|1111|Rd=xxxx|1(0)|rotate=xx|Rm=xxxx
+// UxthT2: UXTH{<c>}{<q>}  {<Rd>, }<Rm> {, ROR #<amount>}
+// register fields: Rd, Rm
+// IT state read: condition
+fa1ff5c5 uxth r5, r5 (unpredictable)
+fa1ff0bc uxth r0, r12, ror #24
+fa1ff4ee uxth r4, lr, ror #16 (unpredictable)
+fa1ffdaa uxth sp, r10, ror #16
+fa1ff7d2 uxth r7, r2, ror #8 (unpredictable)
+fa1ff1ac uxth r1, r12, ror #16
+fa1ffaa1 uxth r10, r1, ror #16
+fa1fffb0 uxth pc, r0, ror #24 (unpredictable)
+FA1FF5CF uxth r5, pc (unpredictable)
+FA1FF5C5 [ne] uxthne r5, r5 (unpredictable)

@@ -1,0 +1,59 @@
+// EOR_i_A1 cond=xxxx|0010|opc=001|S=0|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// EorIA1: EOR{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+c22335df eorgt r3, r3, #935329792
+22257246 eorhs r7, r5, #1610612740
+1222f3fa eorne pc, r2, #3892314115
+22259746 eorhs r9, r5, #18350080
+722e364e eorvc r3, lr, #81788928
+2225c226 eorhs r12, r5, #1610612738
+d227cb9e eorle r12, r7, #161792
+62207953 eorvs r7, r0, #1359872
+// Binary Ninja's tests
+e2222006 eor r2, r2, #6
+e2254a0f eor r4, r5, #61440
+e2255a0f eor r5, r5, #61440
+022F0000 eoreq r0, pc, #0x0
+F22335DF UNDEFINED
+82233FFF eorhi r3, r3, #0x3fc
+42233800 eormi r3, r3, #0x0
+C2233400 eorgt r3, r3, #0x0
+C2233200 eorgt r3, r3, #0x0
+C2233100 eorgt r3, r3, #0x0
+C2233080 eorgt r3, r3, #0x80
+C2233040 eorgt r3, r3, #0x40
+C2233020 eorgt r3, r3, #0x20
+C2233010 eorgt r3, r3, #0x10
+C2233008 eorgt r3, r3, #0x8
+C2233004 eorgt r3, r3, #0x4
+C2233002 eorgt r3, r3, #0x2
+C2233001 eorgt r3, r3, #0x1
+
+// EORS_i_A1 cond=xxxx|0010|opc=001|S=1|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// EorsIA1: EORS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+723e0750 eorsvc r0, lr, #20971520
+7232011d eorsvc r0, r2, #1073741831
+523e8b96 eorspl r8, lr, #153600
+523c5726 eorspl r5, r12, #9961472
+523fcca8 eorspl r12, pc, #43008
+b23f5551 eorslt r5, pc, #339738624
+7235076c eorsvc r0, r5, #28311552
+8231bcfe eorshi r11, r1, #65024
+// Binary Ninja's tests
+02322006 eorseq r2, r2, #6
+F23E0750 UNDEFINED
+4230F000 eorsmi pc, r0, #0x0
+223E0FFF eorscs r0, lr, #0x3fc
+123E0800 eorsne r0, lr, #0x0
+723E0400 eorsvc r0, lr, #0x0
+723E0200 eorsvc r0, lr, #0x0
+723E0100 eorsvc r0, lr, #0x0
+723E0080 eorsvc r0, lr, #0x80
+723E0040 eorsvc r0, lr, #0x40
+723E0020 eorsvc r0, lr, #0x20
+723E0010 eorsvc r0, lr, #0x10
+723E0008 eorsvc r0, lr, #0x8
+723E0004 eorsvc r0, lr, #0x4
+723E0002 eorsvc r0, lr, #0x2
+723E0001 eorsvc r0, lr, #0x1

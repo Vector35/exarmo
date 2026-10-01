@@ -1,0 +1,32 @@
+// VMVN_r_A1_D 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1011|Q=0|M=x|0|Vm=xxxx
+// VmvnRA1D: VMVN{<c>}{<q>}{.<dt>}  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3b005a7 vmvn d0, d23
+F3F0F580 vmvn d31, d0
+F3B405A7 UNDEFINED
+F3B805A7 UNDEFINED
+F3BC05A7 UNDEFINED
+F3B085AF vmvn d8, d31
+F3B045A8 vmvn d4, d24
+F3B025A4 vmvn d2, d20
+F3B015A2 vmvn d1, d18
+F3B0F5A1 vmvn d15, d17
+F3F00580 vmvn d16, d0
+F3F0F58F vmvn d31, d15
+F3B005A0 vmvn d0, d16
+F3B005AF vmvn d0, d31
+
+// VMVN_r_A1_Q 111100111|D=x|11|size=xx|opc1=00|Vd=xxxx|0|opc2=1011|Q=1|M=x|0|Vm=xxxx
+// VmvnRA1Q: VMVN{<c>}{<q>}{.<dt>}  <Qd>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+F3B005C0 vmvn q0, q0
+F3F085E8 vmvn q12, q12
+F3B4F5CF UNDEFINED
+F3B815C1 UNDEFINED
+F3BCF5CF UNDEFINED
+F3B045C4 vmvn q2, q2
+F3B025C2 vmvn q1, q1
+F3F005E0 vmvn q8, q8
+F3F0F5EF UNDEFINED

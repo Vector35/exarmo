@@ -1,0 +1,14 @@
+// sadalp_z_p_z_ 010|0010|0|size=xx|0|0010|U=0|10|1|Pg=xxx|Zn=xxxxx|Zda=xxxxx
+// SadalpZPZ: SADALP  <Zda>.<T>, <Pg>/M, <Zn>.<Tb>
+// register fields: Pg, Zn, Zda
+4484A7E5 sadalp z5.s, p1/m, z31.h
+44C4B834 sadalp z20.d, p6/m, z1.s
+4444B068 sadalp z8.h, p4/m, z3.b
+44C4A51C sadalp z28.d, p1/m, z8.s
+4484B70B sadalp z11.s, p5/m, z24.h
+44C4B082 sadalp z2.d, p4/m, z4.s
+4444A9A8 sadalp z8.h, p2/m, z13.b
+44C4AF85 sadalp z5.d, p3/m, z28.s
+4484A000 sadalp z0.s, p0/m, z0.h
+4484BFFF sadalp z31.s, p7/m, z31.h
+4404A7E5 UNDEFINED

@@ -1,0 +1,16 @@
+// st4q_z_p_br_contiguous 111|0010|0|num=11|1|Rm=xxxxx|0|0|0|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// St4qZPBrContiguous: ST4Q  { <Zt1>.Q, <Zt2>.Q, <Zt3>.Q, <Zt4>.Q }, <Pg>, [<Xn|SP>, <Xm>, LSL #4]
+// register fields: Rm, Pg, Rn, Zt
+E4E00003 st4q {z3.q, z4.q, z5.q, z6.q}, p0, [x0, x0, lsl #4]
+E4E0000A st4q {z10.q, z11.q, z12.q, z13.q}, p0, [x0, x0, lsl #4]
+E4E00011 st4q {z17.q, z18.q, z19.q, z20.q}, p0, [x0, x0, lsl #4]
+E4E007E0 st4q {z0.q, z1.q, z2.q, z3.q}, p1, [sp, x0, lsl #0x4]
+E4E0081F st4q {z31.q, z0.q, z1.q, z2.q}, p2, [x0, x0, lsl #0x4]
+E4E00C03 st4q {z3.q, z4.q, z5.q, z6.q}, p3, [x0, x0, lsl #0x4]
+E4E01003 st4q {z3.q, z4.q, z5.q, z6.q}, p4, [x0, x0, lsl #0x4]
+E4E01403 st4q {z3.q, z4.q, z5.q, z6.q}, p5, [x0, x0, lsl #0x4]
+E4E01803 st4q {z3.q, z4.q, z5.q, z6.q}, p6, [x0, x0, lsl #0x4]
+E4E01C03 st4q {z3.q, z4.q, z5.q, z6.q}, p7, [x0, x0, lsl #0x4]
+E4FF0003 UNALLOCATED
+E4E00000 st4q {z0.q, z1.q, z2.q, z3.q}, p0, [x0, x0, lsl #0x4]
+E4E10864 st4q {z4.q, z5.q, z6.q, z7.q}, p2, [x3, x1, lsl #0x4]

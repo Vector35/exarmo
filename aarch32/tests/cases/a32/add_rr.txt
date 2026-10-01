@@ -1,0 +1,45 @@
+// ADD_rr_A1 cond=xxxx|0000|opc=100|S=0|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// AddRrA1: ADD{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+e0876c3a add r6, r7, r10, lsr r12
+c08e1054 addgt r1, lr, r4, asr r0
+108cd734 addne sp, r12, r4, lsr r7
+30897a75 addlo r7, r9, r5, ror r10
+8080fa19 addhi pc, r0, r9, lsl r10 (unpredictable)
+c0879f3a addgt r9, r7, r10, lsr pc (unpredictable)
+2084931f addhs r9, r4, pc, lsl r3 (unpredictable)
+408c2d7a addmi r2, r12, r10, ror sp
+// Binary Ninja's tests
+e0821413 add r1, r2, r3, lsl r4
+e0844913 add r4, r4, r3, lsl r9
+e0866917 add r6, r6, r7, lsl r9
+e0866937 add r6, r6, r7, lsr r9
+e0866957 add r6, r6, r7, asr r9
+e0866977 add r6, r6, r7, ror r9
+e0876918 add r6, r7, r8, lsl r9
+e0876938 add r6, r7, r8, lsr r9
+e0876958 add r6, r7, r8, asr r9
+e0876978 add r6, r7, r8, ror r9
+008F0C30 addeq r0, pc, r0, lsr r12 (unpredictable)
+F0876C3A UNALLOCATED
+E0876736 add r6, r7, r6, lsr r7
+E0876637 add r6, r7, r7, lsr r6
+E0876C3C add r6, r7, r12, lsr r12
+
+// ADDS_rr_A1 cond=xxxx|0000|opc=100|S=1|Rn=xxxx|Rd=xxxx|Rs=xxxx|0|stype=xx|1|Rm=xxxx
+// AddsRrA1: ADDS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, <shift> <Rs>
+// register fields: Rn, Rd, Rs, Rm
+00935950 addseq r5, r3, r0, asr r9
+109eaf35 addsne r10, lr, r5, lsr pc (unpredictable)
+1091c036 addsne r12, r1, r6, lsr r0
+9092101a addsls r1, r2, r10, lsl r0
+b09d945c addslt r9, sp, r12, asr r4
+00971216 addseq r1, r7, r6, lsl r2
+809e5e18 addshi r5, lr, r8, lsl lr
+b0963055 addslt r3, r6, r5, asr r0
+F0935950 UNALLOCATED
+4090097F addsmi r0, r0, pc, ror r9 (unpredictable)
+209FF959 addscs pc, pc, r9, asr r9 (unpredictable)
+00933950 addseq r3, r3, r0, asr r9
+00935553 addseq r5, r3, r3, asr r5
+00935955 addseq r5, r3, r5, asr r9

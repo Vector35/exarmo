@@ -1,0 +1,88 @@
+// VQRDMLAH_A1_D 1111001|U=1|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1011|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VqrdmlahA1D: VQRDMLAH{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f31aabbb vqrdmlah.s16 d10, d26, d27
+f326ebb2 vqrdmlah.s32 d14, d22, d18
+f366bb90 vqrdmlah.s32 d27, d22, d0
+f368fb32 vqrdmlah.s32 d31, d8, d18
+f359bb18 vqrdmlah.s16 d27, d9, d8
+f31e4b33 vqrdmlah.s16 d4, d14, d19
+f36b5b18 vqrdmlah.s32 d21, d11, d8
+f366ab91 vqrdmlah.s32 d26, d22, d1
+F30AABBB UNDEFINED
+F33AABBB UNDEFINED
+F3100BBF vqrdmlah.s16 d0, d16, d31
+F31F8BB4 vqrdmlah.s16 d8, d31, d20
+F3142B9F vqrdmlah.s16 d2, d20, d15
+F3121BB0 vqrdmlah.s16 d1, d18, d16
+F3110BBF vqrdmlah.s16 d0, d17, d31
+F310FB3B vqrdmlah.s16 d15, d0, d27
+F3500BBB vqrdmlah.s16 d16, d16, d27
+F31FAB3B vqrdmlah.s16 d10, d15, d27
+F31FABBB vqrdmlah.s16 d10, d31, d27
+
+// VQRDMLAH_A1_Q 1111001|U=1|0|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1011|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VqrdmlahA1Q: VQRDMLAH{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f31eab58 vqrdmlah.s16 q5, q7, q4
+f35c4bfc vqrdmlah.s16 q10, q14, q14
+f3242bfe vqrdmlah.s32 q1, q10, q15
+f3640b52 vqrdmlah.s32 q8, q2, q1
+f31aab58 vqrdmlah.s16 q5, q5, q4
+f31e8bde vqrdmlah.s16 q4, q15, q7
+f36c2b7c vqrdmlah.s32 q9, q6, q14
+f322cbd4 vqrdmlah.s32 q6, q9, q2
+F30FFB5F UNDEFINED
+F3311B51 UNDEFINED
+F3100B50 vqrdmlah.s16 q0, q0, q0
+F318AB50 vqrdmlah.s16 q5, q4, q0
+F31FFB5F UNDEFINED
+F35FFBFF UNDEFINED
+F310AB70 vqrdmlah.s16 q5, q0, q8
+F310ABD8 vqrdmlah.s16 q5, q8, q4
+
+// VQRDMLAH_A2_D 1111001|Q=0|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1110|N=x|1|M=x|0|Vm=xxxx
+// VqrdmlahA2D: VQRDMLAH{<q>}.<dt>  <Dd>, <Dn>, <Dm[x]>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+f2d09e60 vqrdmlah.s16 d25, d0, d0[2]
+f2a6dee6 vqrdmlah.s32 d13, d22, d6[1]
+f2938e48 vqrdmlah.s16 d8, d3, d0[1]
+f2eb0ece vqrdmlah.s32 d16, d27, d14[0]
+f2dfeeed vqrdmlah.s16 d30, d31, d5[3]
+f2d6fec5 vqrdmlah.s16 d31, d22, d5[0]
+f2a71ee6 vqrdmlah.s32 d1, d23, d6[1]
+f2aaee64 vqrdmlah.s32 d14, d10, d4[1]
+F2C09E60 UNDEFINED
+F2F09E60 UNDEFINED
+F2D84E6F vqrdmlah.s16 d20, d8, d7[3]
+F2D42E62 vqrdmlah.s16 d18, d4, d2[2]
+F2920E61 vqrdmlah.s16 d0, d2, d1[2]
+F291FE60 vqrdmlah.s16 d15, d1, d0[2]
+F2D09EE0 vqrdmlah.s16 d25, d16, d0[2]
+F2DF9E60 vqrdmlah.s16 d25, d15, d0[2]
+
+// VQRDMLAH_A2_Q 1111001|Q=1|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|opc=1110|N=x|1|M=x|0|Vm=xxxx
+// VqrdmlahA2Q: VQRDMLAH{<q>}.<dt>  <Qd>, <Qn>, <Dm[x]>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+f3960e4a vqrdmlah.s16 q0, q3, d2[1]
+f3e42ee8 vqrdmlah.s32 q9, q10, d8[1]
+f3980e42 vqrdmlah.s16 q0, q4, d2[0]
+f3deee4e vqrdmlah.s16 q15, q7, d6[1]
+f3d04e42 vqrdmlah.s16 q10, q0, d2[0]
+f3968eeb vqrdmlah.s16 q4, q11, d3[3]
+f3d0eee9 vqrdmlah.s16 q15, q8, d1[3]
+f3e2aeec vqrdmlah.s32 q13, q9, d12[1]
+F38FFE4A UNDEFINED
+F3B11E4A UNALLOCATED
+F3D60E40 vqrdmlah.s16 q8, q3, d0[0]
+F3960E4F vqrdmlah.s16 q0, q3, d7[1]
+F3960E44 vqrdmlah.s16 q0, q3, d4[0]
+F3960E41 vqrdmlah.s16 q0, q3, d1[0]
+F39FFE4A UNDEFINED
+F3DFFECA UNDEFINED

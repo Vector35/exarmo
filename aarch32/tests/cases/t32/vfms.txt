@@ -1,0 +1,117 @@
+// VFMS_T1_D 111|U=0|11110|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VfmsT1D: VFMS{<c>}{<q>}.<dt>  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef353c3f vfms.f16 d3, d5, d31
+ef731cb2 vfms.f16 d17, d19, d18
+ef6e6cb7 vfms.f32 d22, d30, d23
+ef341c1e vfms.f16 d1, d4, d14
+ef66ec16 vfms.f32 d30, d6, d6
+ef7b6cbe vfms.f16 d22, d27, d30
+ef31dc14 vfms.f16 d13, d1, d4
+ef7e9cb4 vfms.f16 d25, d30, d20
+EF300C30 vfms.f16 d0, d0, d16
+EF3FFC38 vfms.f16 d15, d15, d24
+EF388C31 vfms.f16 d8, d8, d17
+EF324C10 vfms.f16 d4, d2, d0
+EF302C1F vfms.f16 d2, d0, d15
+EF300CB0 vfms.f16 d0, d16, d16
+EF3FFC3F vfms.f16 d15, d15, d31
+EF7F0CBF vfms.f16 d16, d31, d31
+EF75FC3F vfms.f16 d31, d5, d31
+EF353C3F [ne] vfmsne.f16 d3, d5, d31 (unpredictable)
+
+// VFMS_T1_Q 111|U=0|11110|D=x|op=1|sz=x|Vn=xxxx|Vd=xxxx|opc=1100|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VfmsT1Q: VFMS{<c>}{<q>}.<dt>  <Qd>, <Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef366cda vfms.f16 q3, q11, q5
+ef6eccf2 vfms.f32 q14, q15, q9
+ef36cc58 vfms.f16 q6, q3, q4
+ef760c76 vfms.f16 q8, q3, q11
+ef36ac5a vfms.f16 q5, q3, q5
+ef20ecf2 vfms.f32 q7, q8, q9
+ef6e6cf6 vfms.f32 q11, q15, q11
+ef768c76 vfms.f16 q12, q3, q11
+EF3FFCDF UNDEFINED
+EF384CD0 vfms.f16 q2, q12, q0
+EF342CD4 vfms.f16 q1, q10, q2
+EF320CD0 vfms.f16 q0, q9, q0
+EF311CD1 UNDEFINED
+EF3FFC5F UNDEFINED
+EF7FFCFF UNDEFINED
+EF306C70 vfms.f16 q3, q0, q8
+EF366CDA [ne] vfmsne.f16 q3, q11, q5 (unpredictable)
+
+// VFMS_T2_D 11101110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=11|N=x|op=1|M=x|0|Vm=xxxx
+// VfmsT2D: VFMS{<c>}{<q>}.F64  <Dd>, <Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eea70b44 vfms.f64 d0, d7, d4
+eeaa9b43 vfms.f64 d9, d10, d3
+eeeb7b63 vfms.f64 d23, d11, d19
+eeefabe5 vfms.f64 d26, d31, d21
+eeeb8bc1 vfms.f64 d24, d27, d1
+eee82bcc vfms.f64 d18, d24, d12
+eea04bc1 vfms.f64 d4, d16, d1
+eee13bc1 vfms.f64 d19, d17, d1
+EEA4FB40 vfms.f64 d15, d4, d0
+EEA21B4F vfms.f64 d1, d2, d15
+EEA0FB48 vfms.f64 d15, d0, d8
+EEEF0B42 vfms.f64 d16, d15, d2
+EEE7FB40 vfms.f64 d31, d7, d0
+EEA70B4F vfms.f64 d0, d7, d15
+EEA70B60 vfms.f64 d0, d7, d16
+EEA70B6F vfms.f64 d0, d7, d31
+EEA70B44 [ne] vfmsne.f64 d0, d7, d4
+
+// VFMS_T2_H 11101110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=01|N=x|op=1|M=x|0|Vm=xxxx
+// VfmsT2H: VFMS{<c>}{<q>}.F16  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeae0945 vfms.f16 s0, s28, s10
+eeeaa961 vfms.f16 s21, s20, s3
+eeaf79e0 vfms.f16 s14, s31, s1
+eeeec966 vfms.f16 s25, s28, s13
+eeab8948 vfms.f16 s16, s22, s16
+eea0796a vfms.f16 s14, s0, s21
+eeea29e6 vfms.f16 s5, s21, s13
+eeea39c2 vfms.f16 s7, s21, s4
+EEA8F94F vfms.f16 s30, s16, s30
+EEA44944 vfms.f16 s8, s8, s8
+EEA21940 vfms.f16 s2, s4, s0
+EEA1F94F vfms.f16 s30, s2, s30
+EEE009EF vfms.f16 s1, s1, s31
+EEEFF945 vfms.f16 s31, s30, s10
+EEAE0945 [ne] vfmsne.f16 s0, s28, s10 (unpredictable)
+
+// VFMS_T2_S 11101110|o0=1|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=10|N=x|op=1|M=x|0|Vm=xxxx
+// VfmsT2S: VFMS{<c>}{<q>}.F32  <Sd>, <Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeeaba61 vfms.f32 s23, s20, s3
+eee27ae4 vfms.f32 s15, s5, s9
+eee0aacc vfms.f32 s21, s1, s24
+eee9fae1 vfms.f32 s31, s19, s3
+eeac9ae0 vfms.f32 s18, s25, s1
+eea4fa6e vfms.f32 s30, s8, s29
+eea7dac5 vfms.f32 s26, s15, s10
+eeed7a42 vfms.f32 s15, s26, s4
+EEEF0A6F vfms.f32 s1, s30, s31
+EEE88A68 vfms.f32 s17, s16, s17
+EEE14A40 vfms.f32 s9, s2, s0
+EEE02A4F vfms.f32 s5, s0, s30
+EEEF1A6F vfms.f32 s3, s30, s31
+EEAF0AE1 vfms.f32 s0, s31, s3
+EEEA0A61 vfms.f32 s1, s20, s3
+EEEABA61 [ne] vfmsne.f32 s23, s20, s3

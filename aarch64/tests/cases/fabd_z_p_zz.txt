@@ -1,0 +1,25 @@
+// fabd_z_p_zz_ 011|0010|1|size=xx|0|0|opc=1000|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FabdZPZz: FABD  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+65889F72 fabd z18.s, p7/m, z18.s, z27.s
+65889925 fabd z5.s, p6/m, z5.s, z9.s
+6548826E fabd z14.h, p0/m, z14.h, z19.h
+65C89F63 fabd z3.d, p7/m, z3.d, z27.d
+658890C1 fabd z1.s, p4/m, z1.s, z6.s
+65C884C0 fabd z0.d, p1/m, z0.d, z6.d
+65488AA9 fabd z9.h, p2/m, z9.h, z21.h
+654880AD fabd z13.h, p0/m, z13.h, z5.h
+65C88A84 fabd z4.d, p2/m, z4.d, z20.d
+65C88304 fabd z4.d, p0/m, z4.d, z24.d
+65889B48 fabd z8.s, p6/m, z8.s, z26.s
+65C89CD5 fabd z21.d, p7/m, z21.d, z6.d
+65C89C9B fabd z27.d, p7/m, z27.d, z4.d
+654898FA fabd z26.h, p6/m, z26.h, z7.h
+65888EF0 fabd z16.s, p3/m, z16.s, z23.s
+65889692 fabd z18.s, p5/m, z18.s, z20.s
+65889C1F fabd z31.s, p7/m, z31.s, z0.s
+65889FF2 fabd z18.s, p7/m, z18.s, z31.s
+65089F72 UNDEFINED
+65889CF2 fabd z18.s, p7/m, z18.s, z7.s
+65889F67 fabd z7.s, p7/m, z7.s, z27.s
+65889F7B fabd z27.s, p7/m, z27.s, z27.s

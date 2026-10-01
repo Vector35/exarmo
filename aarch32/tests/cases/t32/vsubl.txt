@@ -1,0 +1,27 @@
+// VSUBL_T1 111|U=x|11|11|1|D=x|size=xx|Vn=xxxx|Vd=xxxx|001|op=0|N=x|0|M=x|0|Vm=xxxx
+// VsublT1: VSUBL{<c>}{<q>}.<dt>  <Qd>, <Dn>, <Dm>
+// read together by <dt>: U, size
+// read together by <Qd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+efae2201 vsubl.s32 q1, d14, d1
+efd022a5 vsubl.s16 q9, d16, d21
+efef622d vsubl.s32 q11, d15, d29
+ffe462a5 vsubl.u32 q11, d20, d21
+ffaf822a vsubl.u32 q4, d15, d26
+ff872221 vsubl.u8 q1, d7, d17
+ffcc4222 vsubl.u8 q10, d12, d18
+efc88224 vsubl.s8 q12, d8, d20
+FFBFF22A UNDEFINED
+FF920200 vsubl.u16 q0, d2, d0
+EFA1020F vsubl.s32 q0, d1, d15
+FFBE1201 UNDEFINED
+EFE00208 vsubl.s32 q8, d0, d8
+EFAEF201 UNDEFINED
+EFEEF201 UNDEFINED
+EFAF2280 vsubl.s32 q1, d31, d0
+EFAE220F vsubl.s32 q1, d14, d15
+EFAE2220 vsubl.s32 q1, d14, d16
+EFAE222F vsubl.s32 q1, d14, d31
+EFAE2201 [ne] vsublne.s32 q1, d14, d1

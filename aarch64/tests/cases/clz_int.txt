@@ -1,0 +1,42 @@
+// CLZ_32_dp_1src sf=0|1|S=0|11010110|opcode2=00000|00010|op=0|Rn=xxxxx|Rd=xxxxx
+// Clz32Dp1src: CLZ  <Wd>, <Wn>
+// register fields: Rn, Rd
+5AC01059 clz w25, w2
+5AC01146 clz w6, w10
+5AC0120B clz w11, w16
+5AC01065 clz w5, w3
+5AC01348 clz w8, w26
+5AC01022 clz w2, w1
+5AC01365 clz w5, w27
+5AC012C2 clz w2, w22
+5AC01129 clz w9, w9
+5AC0139D clz w29, w28
+5AC011C7 clz w7, w14
+5AC012F2 clz w18, w23
+5AC01180 clz w0, w12
+5AC0138E clz w14, w28
+5AC01278 clz w24, w19
+5AC01265 clz w5, w19
+5AC0101F clz wzr, w0
+5AC013F9 clz w25, wzr
+
+// CLZ_64_dp_1src sf=1|1|S=0|11010110|opcode2=00000|00010|op=0|Rn=xxxxx|Rd=xxxxx
+// Clz64Dp1src: CLZ  <Xd>, <Xn>
+// register fields: Rn, Rd
+DAC01237 clz x23, x17
+DAC011CD clz x13, x14
+DAC01196 clz x22, x12
+DAC01070 clz x16, x3
+DAC012C0 clz x0, x22
+DAC011CA clz x10, x14
+DAC011E3 clz x3, x15
+DAC012E5 clz x5, x23
+DAC012B9 clz x25, x21
+DAC01119 clz x25, x8
+DAC0105C clz x28, x2
+DAC011F4 clz x20, x15
+DAC0135B clz x27, x26
+DAC01033 clz x19, x1
+DAC0118B clz x11, x12
+DAC01016 clz x22, x0
+DAC013FF clz xzr, xzr

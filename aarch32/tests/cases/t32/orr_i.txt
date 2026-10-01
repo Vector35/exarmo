@@ -1,0 +1,95 @@
+// ORR_i_T1 11110|i=x|0|op1=0010|S=0|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// OrrIT1: ORR{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F0400000 orr r0, r0, #0x0
+F4401FFF orr pc, r0, #0x1fe000 (unpredictable)
+F0402080 orr r0, r0, #0x80008000
+F0403040 orr r0, r0, #0x40404040
+F0404020 orr r0, r0, #0xa0000000
+F0405010 orr r0, r0, #0x24000000
+F0406008 orr r0, r0, #0x8800000
+F0407004 orr r0, r0, #0x2100000
+F0400002 orr r0, r0, #0x2
+F0400001 orr r0, r0, #0x1
+F04000FF orr r0, r0, #0xff
+F0401000 orr r0, r0, #0x0
+F04010FF orr r0, r0, #0xff00ff
+F0402000 orr r0, r0, #0x0
+F04020FF orr r0, r0, #0xff00ff00
+F0403000 orr r0, r0, #0x0
+F04030FF orr r0, r0, #0xffffffff
+F0404000 orr r0, r0, #0x80000000
+F04040FF orr r0, r0, #0x7f800000
+F0405000 orr r0, r0, #0x20000000
+F04050FF orr r0, r0, #0x1fe00000
+F0406000 orr r0, r0, #0x8000000
+F04060FF orr r0, r0, #0x7f80000
+F0407000 orr r0, r0, #0x2000000
+F04070FF orr r0, r0, #0x1fe0000
+F4400000 orr r0, r0, #0x800000
+F44000FF orr r0, r0, #0x7f8000
+F4401000 orr r0, r0, #0x200000
+F44010FF orr r0, r0, #0x1fe000
+F4402000 orr r0, r0, #0x80000
+F44020FF orr r0, r0, #0x7f800
+F4403000 orr r0, r0, #0x20000
+F44030FF orr r0, r0, #0x1fe00
+F4404000 orr r0, r0, #0x8000
+F44040FF orr r0, r0, #0x7f80
+F4405000 orr r0, r0, #0x2000
+F44050FF orr r0, r0, #0x1fe0
+F4406000 orr r0, r0, #0x800
+F44060FF orr r0, r0, #0x7f8
+F4407000 orr r0, r0, #0x200
+F44070FF orr r0, r0, #0x1fe
+F0400000 [ne] orrne r0, r0, #0x0
+
+// ORRS_i_T1 11110|i=x|0|op1=0010|S=1|Rn=xxxx|0|imm3=xxx|Rd=xxxx|imm8=xxxxxxxx
+// OrrsIT1: ORRS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// read together by <const>: i, imm3, imm8
+// register fields: Rn, Rd
+// IT state read: condition
+F0500000 orrs r0, r0, #0x0
+F4501FFF orrs pc, r0, #0x1fe000 (unpredictable)
+F0502080 orrs r0, r0, #0x80008000
+F0503040 orrs r0, r0, #0x40404040
+F0504020 orrs r0, r0, #0xa0000000
+F0505010 orrs r0, r0, #0x24000000
+F0506008 orrs r0, r0, #0x8800000
+F0507004 orrs r0, r0, #0x2100000
+F0500002 orrs r0, r0, #0x2
+F0500001 orrs r0, r0, #0x1
+F05000FF orrs r0, r0, #0xff
+F0501000 orrs r0, r0, #0x0
+F05010FF orrs r0, r0, #0xff00ff
+F0502000 orrs r0, r0, #0x0
+F05020FF orrs r0, r0, #0xff00ff00
+F0503000 orrs r0, r0, #0x0
+F05030FF orrs r0, r0, #0xffffffff
+F0504000 orrs r0, r0, #0x80000000
+F05040FF orrs r0, r0, #0x7f800000
+F0505000 orrs r0, r0, #0x20000000
+F05050FF orrs r0, r0, #0x1fe00000
+F0506000 orrs r0, r0, #0x8000000
+F05060FF orrs r0, r0, #0x7f80000
+F0507000 orrs r0, r0, #0x2000000
+F05070FF orrs r0, r0, #0x1fe0000
+F45000FF orrs r0, r0, #0x7f8000
+F4501000 orrs r0, r0, #0x200000
+F45010FF orrs r0, r0, #0x1fe000
+F4502000 orrs r0, r0, #0x80000
+F45020FF orrs r0, r0, #0x7f800
+F4503000 orrs r0, r0, #0x20000
+F45030FF orrs r0, r0, #0x1fe00
+F4504000 orrs r0, r0, #0x8000
+F45040FF orrs r0, r0, #0x7f80
+F4505000 orrs r0, r0, #0x2000
+F45050FF orrs r0, r0, #0x1fe0
+F4506000 orrs r0, r0, #0x800
+F45060FF orrs r0, r0, #0x7f8
+F4507000 orrs r0, r0, #0x200
+F45070FF orrs r0, r0, #0x1fe
+F4500000 orrs r0, r0, #0x800000
+F0500000 [ne] orrsne r0, r0, #0x0

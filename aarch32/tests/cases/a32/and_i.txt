@@ -1,0 +1,59 @@
+// AND_i_A1 cond=xxxx|0010|opc=000|S=0|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// AndIA1: AND{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+22028ab8 andhs r8, r2, #753664
+7207768a andvc r7, r7, #144703488
+d205e14c andle lr, r5, #19
+520cd54a andpl sp, r12, #310378496
+a2077d7c andge r7, r7, #7936
+72003ffb andvc r3, r0, #1004
+5206a5a2 andpl r10, r6, #679477248
+520eb509 andpl r11, lr, #37748736
+// Binary Ninja's tests
+e201100f and r1, r1, #15
+e201a00f and r10, r1, #15
+e2022006 and r2, r2, #6
+020F0000 andeq r0, pc, #0x0
+F205E14C UNDEFINED
+8202FFFF andhi pc, r2, #0x3fc
+42028800 andmi r8, r2, #0x0
+12028400 andne r8, r2, #0x0
+22028200 andcs r8, r2, #0x0
+22028100 andcs r8, r2, #0x0
+22028080 andcs r8, r2, #0x80
+22028040 andcs r8, r2, #0x40
+22028020 andcs r8, r2, #0x20
+22028010 andcs r8, r2, #0x10
+22028008 andcs r8, r2, #0x8
+22028004 andcs r8, r2, #0x4
+22028002 andcs r8, r2, #0x2
+22028001 andcs r8, r2, #0x1
+
+// ANDS_i_A1 cond=xxxx|0010|opc=000|S=1|Rn=xxxx|Rd=xxxx|imm12=xxxxxxxxxxxx
+// AndsIA1: ANDS{<c>}{<q>}  {<Rd>, }<Rn>, #<const>
+// register fields: Rn, Rd
+421636df andsmi r3, r6, #233832448
+e210f8e5 ands pc, r0, #15007744
+32164042 andslo r4, r6, #66
+321efd95 andslo pc, lr, #9536
+d2198966 andsle r8, r9, #1671168
+221eae44 andshs r10, lr, #1088
+e21b6417 ands r6, r11, #385875968
+b214245e andslt r2, r4, #1577058304
+// Binary Ninja's tests
+02122006 andseq r2, r2, #6
+F21636DF UNDEFINED
+821F0000 andshi r0, pc, #0x0
+12163FFF andsne r3, r6, #0x3fc
+42163800 andsmi r3, r6, #0x0
+42163400 andsmi r3, r6, #0x0
+42163200 andsmi r3, r6, #0x0
+42163100 andsmi r3, r6, #0x0
+42163080 andsmi r3, r6, #0x80
+42163040 andsmi r3, r6, #0x40
+42163020 andsmi r3, r6, #0x20
+42163010 andsmi r3, r6, #0x10
+42163008 andsmi r3, r6, #0x8
+42163004 andsmi r3, r6, #0x4
+42163002 andsmi r3, r6, #0x2
+42163001 andsmi r3, r6, #0x1

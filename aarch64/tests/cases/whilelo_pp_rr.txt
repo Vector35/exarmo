@@ -1,0 +1,12 @@
+// whilelo_pp_rr_ 001|0010|1|size=xx|1|Rm=xxxxx|01|01|U=1|lt=1|Rn=xxxxx|1|Pd=xxx|eq=0
+// WhileloPpRr: WHILELO  { <Pd1>.<T>, <Pd2>.<T> }, <Xn>, <Xm>
+// register fields: Rm, Rn, Pd
+25205C1C whilelo {p12.b, p13.b}, x0, x0
+25205C38 whilelo {p8.b, p9.b}, x1, x0
+25205C54 whilelo {p4.b, p5.b}, x2, x0
+257F5FF0 whilelo {p0.h, p1.h}, xzr, xzr
+25A05C12 whilelo {p2.s, p3.s}, x0, x0
+25E05C16 whilelo {p6.d, p7.d}, x0, x0
+25205C1A whilelo {p10.b, p11.b}, x0, x0
+25205C1E whilelo {p14.b, p15.b}, x0, x0
+25205C10 whilelo {p0.b, p1.b}, x0, x0

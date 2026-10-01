@@ -1,0 +1,111 @@
+// VCMPE_A1_D cond=xxxx|11101|D=x|11|o1=0|opc2=100|Vd=xxxx|10|size=11|E=1|1|M=x|0|Vm=xxxx
+// VcmpeA1D: VCMPE{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+eeb48bec vcmpe.f64 d8, d28
+1ef4dbc3 vcmpene.f64 d29, d3
+2eb4abe0 vcmpehs.f64 d10, d16
+1ef4cbef vcmpene.f64 d28, d31
+4eb4abc4 vcmpemi.f64 d10, d4
+5ef45bca vcmpepl.f64 d21, d10
+ceb4fbe0 vcmpegt.f64 d15, d16
+3ef44be5 vcmpelo.f64 d20, d21
+// Binary Ninja's tests
+eef41be0 vcmpe.f64 d17, d16
+0EB40BE8 vcmpeeq.f64 d0, d24
+FEB48BEC UNALLOCATED
+8EB42BE2 vcmpehi.f64 d2, d18
+EEB40BE1 vcmpe.f64 d0, d17
+EEF40BC0 vcmpe.f64 d16, d0
+EEF4FBCF vcmpe.f64 d31, d15
+
+// VCMPE_A1_H cond=xxxx|11101|D=x|11|o1=0|opc2=100|Vd=xxxx|10|size=01|E=1|1|M=x|0|Vm=xxxx
+// VcmpeA1H: VCMPE{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+6ef409c9 vcmpevs.f16 s1, s18 (unpredictable)
+ceb4b9c9 vcmpegt.f16 s22, s18 (unpredictable)
+6eb429e4 vcmpevs.f16 s4, s9 (unpredictable)
+4ef4b9e7 vcmpemi.f16 s23, s15 (unpredictable)
+9eb469c8 vcmpels.f16 s12, s16 (unpredictable)
+cef4b9c0 vcmpegt.f16 s23, s0 (unpredictable)
+8ef409e9 vcmpehi.f16 s1, s19 (unpredictable)
+4eb499ce vcmpemi.f16 s18, s28 (unpredictable)
+0EF4F9CF vcmpeeq.f16 s31, s30 (unpredictable)
+FEF409C9 UNALLOCATED
+2EF489C2 vcmpecs.f16 s17, s4 (unpredictable)
+1EF449C1 vcmpene.f16 s9, s2 (unpredictable)
+6EF419CF vcmpevs.f16 s3, s30 (unpredictable)
+6EB409E0 vcmpevs.f16 s0, s1 (unpredictable)
+6EB4F9EF vcmpevs.f16 s30, s31 (unpredictable)
+6EF4F9C9 vcmpevs.f16 s31, s18 (unpredictable)
+
+// VCMPE_A1_S cond=xxxx|11101|D=x|11|o1=0|opc2=100|Vd=xxxx|10|size=10|E=1|1|M=x|0|Vm=xxxx
+// VcmpeA1S: VCMPE{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+bef4aaec vcmpelt.f32 s21, s25
+def4aac5 vcmpele.f32 s21, s10
+1eb41ac0 vcmpene.f32 s2, s0
+cef48ac9 vcmpegt.f32 s17, s18
+bef49aea vcmpelt.f32 s19, s21
+deb49acb vcmpele.f32 s18, s22
+4eb45ac7 vcmpemi.f32 s10, s14
+eef41ae9 vcmpe.f32 s3, s19
+// Binary Ninja's tests
+eef40ac0 vcmpe.f32 s1, s0
+0EF4FAEF vcmpeeq.f32 s31, s31
+FEF4AAEC UNALLOCATED
+8EF44AE8 vcmpehi.f32 s9, s17
+2EF42AE4 vcmpecs.f32 s5, s9
+BEB40AE2 vcmpelt.f32 s0, s5
+BEB4FAE1 vcmpelt.f32 s30, s3
+BEF4FACF vcmpelt.f32 s31, s30
+BEF4AAE0 vcmpelt.f32 s21, s1
+BEF4AAEF vcmpelt.f32 s21, s31
+
+// VCMPE_A2_D cond=xxxx|11101|D=x|11|o1=0|opc2=101|Vd=xxxx|10|size=11|E=1|1|M=(0)|0|Vm=(0)(0)(0)(0)
+// VcmpeA2D: VCMPE{<c>}{<q>}.F64  <Dd>, #0.0
+// read together by <Dd>: D, Vd
+// Binary Ninja's tests
+eef50bc0 vcmpe.f64 d16, #0
+0EB5FBEF vcmpeeq.f64 d15, #0.0 (unpredictable)
+FEF50BC0 UNALLOCATED
+8EF58BC8 vcmpehi.f64 d24, #0.0 (unpredictable)
+4EF54BC4 vcmpemi.f64 d20, #0.0 (unpredictable)
+2EF52BC2 vcmpecs.f64 d18, #0.0 (unpredictable)
+1EF51BC1 vcmpene.f64 d17, #0.0 (unpredictable)
+EEB50BC0 vcmpe.f64 d0, #0.0
+EEB5FBC0 vcmpe.f64 d15, #0.0
+EEF5FBC0 vcmpe.f64 d31, #0.0
+
+// VCMPE_A2_H cond=xxxx|11101|D=x|11|o1=0|opc2=101|Vd=xxxx|10|size=01|E=1|1|M=(0)|0|Vm=(0)(0)(0)(0)
+// VcmpeA2H: VCMPE{<c>}{<q>}.F16  <Sd>, #0.0
+// read together by <Sd>: D, Vd
+aeb599c0 vcmpege.f16 s18, #0 (unpredictable)
+0EF509EF vcmpeeq.f16 s1, #0.0 (unpredictable)
+FEB599C0 UNALLOCATED
+8EB5F9C8 vcmpehi.f16 s30, #0.0 (unpredictable)
+4EB589C4 vcmpemi.f16 s16, #0.0 (unpredictable)
+2EB549C2 vcmpecs.f16 s8, #0.0 (unpredictable)
+1EB529C1 vcmpene.f16 s4, #0.0 (unpredictable)
+AEB519C0 vcmpege.f16 s2, #0.0 (unpredictable)
+AEB509C0 vcmpege.f16 s0, #0.0 (unpredictable)
+AEB5F9C0 vcmpege.f16 s30, #0.0 (unpredictable)
+AEF509C0 vcmpege.f16 s1, #0.0 (unpredictable)
+AEF5F9C0 vcmpege.f16 s31, #0.0 (unpredictable)
+
+// VCMPE_A2_S cond=xxxx|11101|D=x|11|o1=0|opc2=101|Vd=xxxx|10|size=10|E=1|1|M=(0)|0|Vm=(0)(0)(0)(0)
+// VcmpeA2S: VCMPE{<c>}{<q>}.F32  <Sd>, #0.0
+// read together by <Sd>: D, Vd
+// Binary Ninja's tests
+eeb50ac0 vcmpe.f32 s0, #0
+0EF5FAEF vcmpeeq.f32 s31, #0.0 (unpredictable)
+FEB50AC0 UNALLOCATED
+8EB58AC8 vcmpehi.f32 s16, #0.0 (unpredictable)
+4EB54AC4 vcmpemi.f32 s8, #0.0 (unpredictable)
+2EB52AC2 vcmpecs.f32 s4, #0.0 (unpredictable)
+1EB51AC1 vcmpene.f32 s2, #0.0 (unpredictable)
+EEB5FAC0 vcmpe.f32 s30, #0.0
+EEF50AC0 vcmpe.f32 s1, #0.0
+EEF5FAC0 vcmpe.f32 s31, #0.0

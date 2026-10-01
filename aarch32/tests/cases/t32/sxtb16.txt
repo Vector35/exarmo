@@ -1,0 +1,16 @@
+// SXTB16_T1 111|11010|0|op1=01|U=0|Rn=1111|1111|Rd=xxxx|1(0)|rotate=xx|Rm=xxxx
+// Sxtb16T1: SXTB16{<c>}{<q>}  {<Rd>, }<Rm> {, ROR #<amount>}
+// register fields: Rd, Rm
+// IT state read: condition
+fa2ffcf3 sxtb16 r12, r3, ror #24 (unpredictable)
+fa2ff48a sxtb16 r4, r10
+fa2ff598 sxtb16 r5, r8, ror #8
+fa2ff6d5 sxtb16 r6, r5, ror #8 (unpredictable)
+fa2ff694 sxtb16 r6, r4, ror #8
+fa2ff6e9 sxtb16 r6, r9, ror #16 (unpredictable)
+fa2ff6eb sxtb16 r6, r11, ror #16 (unpredictable)
+fa2ff5a9 sxtb16 r5, r9, ror #16
+FA2FF0F0 sxtb16 r0, r0, ror #0x18 (unpredictable)
+FA2FFFFF sxtb16 pc, pc, ror #0x18 (unpredictable)
+FA2FFCFC sxtb16 r12, r12, ror #0x18 (unpredictable)
+FA2FFCF3 [ne] sxtb16ne r12, r3, ror #0x18 (unpredictable)

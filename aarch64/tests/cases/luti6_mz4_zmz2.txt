@@ -1,0 +1,26 @@
+// luti6_mz4_zmz2_1 1|10|0000|10|i1=x|1|Zm=xxxxx|1111|01|Zn=xxxxx|Zd=xxx|00
+// Luti6Mz4Zmz21: LUTI6  { <Zd1>.H-<Zd4>.H }, { <Zn1>.H, <Zn2>.H }, { <Zm1>-<Zm2> }[<index>]
+// register fields: Zm, Zn, Zd
+C120F400 luti6 {z0.h-z3.h}, {z0.h, z1.h}, {z0-z1}[0]
+C17FF7E4 luti6 {z4.h-z7.h}, {z31.h, z0.h}, {z31-z0}[1]
+C120F408 luti6 {z8.h-z11.h}, {z0.h, z1.h}, {z0-z1}[0]
+C120F40C luti6 {z12.h-z15.h}, {z0.h, z1.h}, {z0-z1}[0]
+C120F410 luti6 {z16.h-z19.h}, {z0.h, z1.h}, {z0-z1}[0]
+C120F414 luti6 {z20.h-z23.h}, {z0.h, z1.h}, {z0-z1}[0]
+C120F418 luti6 {z24.h-z27.h}, {z0.h, z1.h}, {z0-z1}[0]
+C120F41C luti6 {z28.h-z31.h}, {z0.h, z1.h}, {z0-z1}[0]
+C121F44C luti6 {z12.h-z15.h}, {z2.h, z3.h}, {z1-z2}[0]
+
+// luti6_mz4_zmz2_4 1|10|0000|10|i1=x|1|Zm=xxxxx|1111|11|Zn=xxxxx|D=x|00|Zd=xx
+// Luti6Mz4Zmz24: LUTI6  { <Zd1>.H, <Zd2>.H, <Zd3>.H, <Zd4>.H }, { <Zn1>.H, <Zn2>.H }, { <Zm1>-<Zm2> }[<index>]
+// read together by <Zd1> and <Zd2> and <Zd3> and <Zd4>: D, Zd
+// register fields: Zm, Zn
+C120FC00 luti6 {z0.h, z4.h, z8.h, z12.h}, {z0.h, z1.h}, {z0-z1}[0]
+C17FFFF1 luti6 {z17.h, z21.h, z25.h, z29.h}, {z31.h, z0.h}, {z31-z0}[1]
+C120FC02 luti6 {z2.h, z6.h, z10.h, z14.h}, {z0.h, z1.h}, {z0-z1}[0]
+C120FC03 luti6 {z3.h, z7.h, z11.h, z15.h}, {z0.h, z1.h}, {z0-z1}[0]
+C120FC01 luti6 {z1.h, z5.h, z9.h, z13.h}, {z0.h, z1.h}, {z0-z1}[0]
+C120FC10 luti6 {z16.h, z20.h, z24.h, z28.h}, {z0.h, z1.h}, {z0-z1}[0]
+C120FC12 luti6 {z18.h, z22.h, z26.h, z30.h}, {z0.h, z1.h}, {z0-z1}[0]
+C120FC13 luti6 {z19.h, z23.h, z27.h, z31.h}, {z0.h, z1.h}, {z0-z1}[0]
+C121FC40 luti6 {z0.h, z4.h, z8.h, z12.h}, {z2.h, z3.h}, {z1-z2}[0]

@@ -1,0 +1,40 @@
+// VBIT_A1_D 1111001|U=1|0|D=x|op=10|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VbitA1D: VBIT{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f361f1bf vbit d31, d17, d31
+f32c7114 vbit d7, d12, d4
+f32271ba vbit d7, d18, d26
+f320a13d vbit d10, d0, d29
+f32b319a vbit d3, d27, d10
+f32241b7 vbit d4, d18, d23
+f32aa13d vbit d10, d10, d29
+f36f013d vbit d16, d15, d29
+F36881B0 vbit d24, d24, d16
+F36421B8 vbit d18, d20, d24
+F36011B2 vbit d17, d16, d18
+F32F01B1 vbit d0, d31, d17
+F321F190 vbit d15, d17, d0
+F361F19F vbit d31, d17, d15
+F361F1B0 vbit d31, d17, d16
+
+// VBIT_A1_Q 1111001|U=1|0|D=x|op=10|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VbitA1Q: VBIT{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f32621da vbit q1, q11, q5
+f36e6150 vbit q11, q7, q0
+f36041f8 vbit q10, q8, q12
+f364c172 vbit q14, q2, q9
+f32ac15e vbit q6, q5, q7
+f36c617c vbit q11, q6, q14
+f36ec1d2 vbit q14, q15, q1
+f32201fc vbit q0, q9, q14
+F32FF1DF UNDEFINED
+F32881D4 vbit q4, q12, q2
+F32111D1 UNDEFINED
+F32FF15F UNDEFINED
+F3600170 vbit q8, q0, q8
+F36FF1FF UNDEFINED

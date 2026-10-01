@@ -1,0 +1,15 @@
+// SUBPT_64_addsub_pt sf=1|op=1|S=0|1|101|0000|Rm=xxxxx|001|imm3=xxx|Rn=xxxxx|Rd=xxxxx
+// Subpt64AddsubPt: SUBPT  <Xd|SP>, <Xn|SP>, <Xm>{, LSL #<amount>}
+// register fields: Rm, Rn, Rd
+DA002004 subpt x4, x0, x0
+DA00200B subpt x11, x0, x0
+DA002012 subpt x18, x0, x0
+DA1F27E0 subpt x0, sp, xzr, lsl #0x1
+DA00281F subpt sp, x0, x0, lsl #0x2
+DA002C04 subpt x4, x0, x0, lsl #0x3
+DA003004 subpt x4, x0, x0, lsl #0x4
+DA003404 subpt x4, x0, x0, lsl #0x5
+DA003804 subpt x4, x0, x0, lsl #0x6
+DA003C04 subpt x4, x0, x0, lsl #0x7
+DA002000 subpt x0, x0, x0
+DA012043 subpt x3, x2, x1

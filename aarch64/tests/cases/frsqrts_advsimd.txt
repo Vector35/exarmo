@@ -1,0 +1,102 @@
+// FRSQRTS_asimdsame_only 0|Q=x|U=0|0|111|0|1|sz=x|1|Rm=xxxxx|opcode=11111|1|Rn=xxxxx|Rd=xxxxx
+// FrsqrtsAsimdsameOnly: FRSQRTS  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, sz
+// register fields: Rm, Rn, Rd
+4EA8FDD8 frsqrts v24.4s, v14.4s, v8.4s
+4EE5FD49 frsqrts v9.2d, v10.2d, v5.2d
+4EAFFD8C frsqrts v12.4s, v12.4s, v15.4s
+4EA0FCDE frsqrts v30.4s, v6.4s, v0.4s
+4EA3FC18 frsqrts v24.4s, v0.4s, v3.4s
+4EFFFF95 frsqrts v21.2d, v28.2d, v31.2d
+0EB9FD99 frsqrts v25.2s, v12.2s, v25.2s
+4EB6FC18 frsqrts v24.4s, v0.4s, v22.4s
+0EA1FFB5 frsqrts v21.2s, v29.2s, v1.2s
+4EADFD4B frsqrts v11.4s, v10.4s, v13.4s
+0EB7FF47 frsqrts v7.2s, v26.2s, v23.2s
+4EF0FF17 frsqrts v23.2d, v24.2d, v16.2d
+0EB0FFBA frsqrts v26.2s, v29.2s, v16.2s
+4EB8FE2A frsqrts v10.4s, v17.4s, v24.4s
+4EF0FFCB frsqrts v11.2d, v30.2d, v16.2d
+4EE8FE1C frsqrts v28.2d, v16.2d, v8.2d
+4EA8FFE0 frsqrts v0.4s, v31.4s, v8.4s
+4EA8FDDF frsqrts v31.4s, v14.4s, v8.4s
+0EE8FDD8 UNDEFINED
+4EA8FD18 frsqrts v24.4s, v8.4s, v8.4s
+
+// FRSQRTS_asimdsamefp16_only 0|Q=x|U=0|0|111|0|a=1|10|Rm=xxxxx|00|opcode=111|1|Rn=xxxxx|Rd=xxxxx
+// FrsqrtsAsimdsamefp16Only: FRSQRTS  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+0ED23EB6 frsqrts v22.4h, v21.4h, v18.4h
+0ECE3C0E frsqrts v14.4h, v0.4h, v14.4h
+4EC93C6C frsqrts v12.8h, v3.8h, v9.8h
+4EC63E75 frsqrts v21.8h, v19.8h, v6.8h
+0EC63E65 frsqrts v5.4h, v19.4h, v6.4h
+4EC73C36 frsqrts v22.8h, v1.8h, v7.8h
+0EC93F9A frsqrts v26.4h, v28.4h, v9.4h
+4ED63C83 frsqrts v3.8h, v4.8h, v22.8h
+0EC93C94 frsqrts v20.4h, v4.4h, v9.4h
+4ED33E96 frsqrts v22.8h, v20.8h, v19.8h
+4ED03FB5 frsqrts v21.8h, v29.8h, v16.8h
+0EC33F37 frsqrts v23.4h, v25.4h, v3.4h
+4EDD3C4F frsqrts v15.8h, v2.8h, v29.8h
+4EC43DC6 frsqrts v6.8h, v14.8h, v4.8h
+4ECA3F05 frsqrts v5.8h, v24.8h, v10.8h
+4EDB3C5F frsqrts v31.8h, v2.8h, v27.8h
+0EC03FE0 frsqrts v0.4h, v31.4h, v0.4h
+0EDF3EB6 frsqrts v22.4h, v21.4h, v31.4h
+0ED23E56 frsqrts v22.4h, v18.4h, v18.4h
+0ED23EB5 frsqrts v21.4h, v21.4h, v18.4h
+
+// FRSQRTS_asisdsame_only 01|U=0|1|111|0|1|sz=x|1|Rm=xxxxx|opcode=11111|1|Rn=xxxxx|Rd=xxxxx
+// FrsqrtsAsisdsameOnly: FRSQRTS  <V><d>, <V><n>, <V><m>
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// read together by <m>: sz, Rm
+// register fields: Rm, Rn, Rd
+5EFBFE1B frsqrts d27, d16, d27
+5EB5FE32 frsqrts s18, s17, s21
+5EF3FE50 frsqrts d16, d18, d19
+5EBAFDD2 frsqrts s18, s14, s26
+5EF9FDCF frsqrts d15, d14, d25
+5EF5FEAF frsqrts d15, d21, d21
+5EF6FF98 frsqrts d24, d28, d22
+5EEAFC83 frsqrts d3, d4, d10
+5EE2FCD8 frsqrts d24, d6, d2
+5EB3FDAF frsqrts s15, s13, s19
+5EB1FC26 frsqrts s6, s1, s17
+5EF8FF5F frsqrts d31, d26, d24
+5EE4FC87 frsqrts d7, d4, d4
+5EEDFD4C frsqrts d12, d10, d13
+5EE6FFA2 frsqrts d2, d29, d6
+5EE1FCF0 frsqrts d16, d7, d1
+5EE0FC00 frsqrts d0, d0, d0
+5EFFFFFB frsqrts d27, d31, d31
+5EBBFE00 frsqrts s0, s16, s27
+5EBBFE1F frsqrts s31, s16, s27
+5EA0FE1B frsqrts s27, s16, s0
+5EBFFE1B frsqrts s27, s16, s31
+5EBBFC1B frsqrts s27, s0, s27
+5EBBFFFB frsqrts s27, s31, s27
+
+// FRSQRTS_asisdsamefp16_only 01|U=0|1|111|0|a=1|10|Rm=xxxxx|00|opcode=111|1|Rn=xxxxx|Rd=xxxxx
+// FrsqrtsAsisdsamefp16Only: FRSQRTS  <Hd>, <Hn>, <Hm>
+// register fields: Rm, Rn, Rd
+5EC83E71 frsqrts h17, h19, h8
+5ED33FDC frsqrts h28, h30, h19
+5EC83FC7 frsqrts h7, h30, h8
+5ED43F4E frsqrts h14, h26, h20
+5EDC3F20 frsqrts h0, h25, h28
+5EC83E8F frsqrts h15, h20, h8
+5ED53EF9 frsqrts h25, h23, h21
+5ED33C02 frsqrts h2, h0, h19
+5ECC3FFF frsqrts h31, h31, h12
+5EC93D35 frsqrts h21, h9, h9
+5ED63FA8 frsqrts h8, h29, h22
+5ECE3F36 frsqrts h22, h25, h14
+5EC43DDC frsqrts h28, h14, h4
+5EDD3C13 frsqrts h19, h0, h29
+5EDE3E4D frsqrts h13, h18, h30
+5ED23D87 frsqrts h7, h12, h18
+5EC03E71 frsqrts h17, h19, h0
+5EDF3E71 frsqrts h17, h19, h31
+5EC83E68 frsqrts h8, h19, h8

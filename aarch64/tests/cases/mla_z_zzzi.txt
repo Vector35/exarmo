@@ -1,0 +1,47 @@
+// mla_z_zzzi_d 010|0010|0|size=11|1|i1=x|Zm=xxxx|00001|S=0|Zn=xxxxx|Zda=xxxxx
+// MlaZZzziD: MLA  <Zda>.D, <Zn>.D, <Zm>.D[<imm>]
+// register fields: Zm, Zn, Zda
+44E10ACC mla z12.d, z22.d, z1.d[0]
+44F10B25 mla z5.d, z25.d, z1.d[1]
+44F80BEF mla z15.d, z31.d, z8.d[1]
+44F70AC7 mla z7.d, z22.d, z7.d[1]
+44E108D6 mla z22.d, z6.d, z1.d[0]
+44FB0926 mla z6.d, z9.d, z11.d[1]
+44F309E8 mla z8.d, z15.d, z3.d[1]
+44E90A81 mla z1.d, z20.d, z9.d[0]
+44E00800 mla z0.d, z0.d, z0.d[0]
+44EF0ADF mla z31.d, z22.d, z15.d[0]
+
+// mla_z_zzzi_h 010|0010|0|0|i3h=x|1|i3l=xx|Zm=xxx|00001|S=0|Zn=xxxxx|Zda=xxxxx
+// MlaZZzziH: MLA  <Zda>.H, <Zn>.H, <Zm>.H[<imm>]
+// read together by <imm>: i3h, i3l
+// register fields: Zm, Zn, Zda
+443C0A47 mla z7.h, z18.h, z4.h[3]
+447C097F mla z31.h, z11.h, z4.h[7]
+443D090F mla z15.h, z8.h, z5.h[3]
+442D0A6F mla z15.h, z19.h, z5.h[1]
+44720A10 mla z16.h, z16.h, z2.h[6]
+446C0908 mla z8.h, z8.h, z4.h[5]
+44600AD4 mla z20.h, z22.h, z0.h[4]
+446709E6 mla z6.h, z15.h, z7.h[4]
+44390800 mla z0.h, z0.h, z1.h[3]
+443B0BE7 mla z7.h, z31.h, z3.h[3]
+443E0A47 mla z7.h, z18.h, z6.h[3]
+44240887 mla z7.h, z4.h, z4.h[0]
+44340A44 mla z4.h, z18.h, z4.h[2]
+
+// mla_z_zzzi_s 010|0010|0|size=10|1|i2=xx|Zm=xxx|00001|S=0|Zn=xxxxx|Zda=xxxxx
+// MlaZZzziS: MLA  <Zda>.S, <Zn>.S, <Zm>.S[<imm>]
+// register fields: Zm, Zn, Zda
+44B00995 mla z21.s, z12.s, z0.s[2]
+44A908BD mla z29.s, z5.s, z1.s[1]
+44BF0921 mla z1.s, z9.s, z7.s[3]
+44BA084C mla z12.s, z2.s, z2.s[3]
+44BA0956 mla z22.s, z10.s, z2.s[3]
+44A30B32 mla z18.s, z25.s, z3.s[0]
+44B30B24 mla z4.s, z25.s, z3.s[2]
+44AF0926 mla z6.s, z9.s, z7.s[1]
+44B40800 mla z0.s, z0.s, z4.s[2]
+44B50BFF mla z31.s, z31.s, z5.s[2]
+44B60995 mla z21.s, z12.s, z6.s[2]
+44B00980 mla z0.s, z12.s, z0.s[2]

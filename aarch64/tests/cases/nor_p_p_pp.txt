@@ -1,0 +1,23 @@
+// nor_p_p_pp_z 001|0010|1|op=1|S=0|00|Pm=xxxx|01|Pg=xxxx|o2=1|Pn=xxxx|o3=0|Pd=xxxx
+// NorPPPpZ: NOR  <Pd>.B, <Pg>/Z, <Pn>.B, <Pm>.B
+// register fields: Pm, Pg, Pn, Pd
+258C5F63 nor p3.b, p7/z, p11.b, p12.b
+2587434C nor p12.b, p0/z, p10.b, p7.b
+258D6F66 nor p6.b, p11/z, p11.b, p13.b
+258763C0 nor p0.b, p8/z, p14.b, p7.b
+258547AE nor p14.b, p1/z, p13.b, p5.b
+2587776E nor p14.b, p13/z, p11.b, p7.b
+258C7E6B nor p11.b, p15/z, p3.b, p12.b
+2589562D nor p13.b, p5/z, p1.b, p9.b
+25846FEB nor p11.b, p11/z, p15.b, p4.b
+258C7B83 nor p3.b, p14/z, p12.b, p12.b
+2588726D nor p13.b, p12/z, p3.b, p8.b
+25854B02 nor p2.b, p2/z, p8.b, p5.b
+258E4621 nor p1.b, p1/z, p1.b, p14.b
+258E6284 nor p4.b, p8/z, p4.b, p14.b
+2584622E nor p14.b, p8/z, p1.b, p4.b
+258176C2 nor p2.b, p13/z, p6.b, p1.b
+25805E0F nor p15.b, p7/z, p0.b, p0.b
+258F5F63 nor p3.b, p7/z, p11.b, p15.b
+258C7363 nor p3.b, p12/z, p11.b, p12.b
+258C5F6C nor p12.b, p7/z, p11.b, p12.b

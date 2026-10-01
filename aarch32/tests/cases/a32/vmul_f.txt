@@ -1,0 +1,107 @@
+// VMUL_f_A1_D 1111001|U=1|0|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VmulFA1D: VMUL{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f303ed1d vmul.f32 d14, d3, d13
+f30afd9a vmul.f32 d15, d26, d10
+f31b7db2 vmul.f16 d7, d27, d18
+f35fedb3 vmul.f16 d30, d31, d19
+f3507db9 vmul.f16 d23, d16, d25
+f3175d95 vmul.f16 d5, d23, d5
+f3563db0 vmul.f16 d19, d22, d16
+f3485dbc vmul.f32 d21, d24, d28
+F3040D1F vmul.f32 d0, d4, d15
+F3028D18 vmul.f32 d8, d2, d8
+F3014D14 vmul.f32 d4, d1, d4
+F3002D11 vmul.f32 d2, d0, d1
+F30F1D10 vmul.f32 d1, d15, d0
+F3030D1F vmul.f32 d0, d3, d15
+F3430D3F vmul.f32 d16, d3, d31
+F343FD1D vmul.f32 d31, d3, d13
+
+// VMUL_f_A1_Q 1111001|U=1|0|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VmulFA1Q: VMUL{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f34e0d50 vmul.f32 q8, q7, q0
+f31e4df8 vmul.f16 q2, q15, q12
+f3186dd0 vmul.f16 q3, q12, q0
+f3102df4 vmul.f16 q1, q8, q10
+f3004d70 vmul.f32 q2, q0, q8
+f31acdd8 vmul.f16 q6, q13, q4
+f3182d52 vmul.f16 q1, q4, q1
+f350ad78 vmul.f16 q13, q0, q12
+F34FFD5F UNDEFINED
+F3448D50 vmul.f32 q12, q2, q0
+F3020D50 vmul.f32 q0, q1, q0
+F3411D51 UNDEFINED
+F30FFD5F UNDEFINED
+F34FFDFF UNDEFINED
+
+// VMUL_f_A2_D cond=xxxx|1110|o0=0|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=11|N=x|o2=0|M=x|0|Vm=xxxx
+// VmulFA2D: VMUL{<c>}{<q>}.F64  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+ee281b24 vmul.f64 d1, d8, d20
+9e624ba2 vmulls.f64 d20, d18, d18
+ce622b8a vmulgt.f64 d18, d18, d10
+4e220bab vmulmi.f64 d0, d18, d27
+2e20fb28 vmulhs.f64 d15, d0, d24
+be2d2b8b vmullt.f64 d2, d29, d11
+8e6b3b04 vmulhi.f64 d19, d11, d4
+4e2c8b01 vmulmi.f64 d8, d12, d1
+// Binary Ninja's tests
+ee610ba0 vmul.f64 d16, d17, d16
+ee644ba1 vmul.f64 d20, d20, d17
+0E6FFB2F vmuleq.f64 d31, d15, d31
+1E201B80 vmulne.f64 d1, d16, d0
+EE2F1B0F vmul.f64 d1, d15, d15
+EE2F1BAF vmul.f64 d1, d31, d31
+
+// VMUL_f_A2_H cond=xxxx|1110|o0=0|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=01|N=x|o2=0|M=x|0|Vm=xxxx
+// VmulFA2H: VMUL{<c>}{<q>}.F16  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+8e613984 vmulhi.f16 s7, s3, s8 (unpredictable)
+ee2c798a vmul.f16 s14, s25, s20
+2e628928 vmulhs.f16 s17, s4, s17 (unpredictable)
+ce62d9a8 vmulgt.f16 s27, s5, s17 (unpredictable)
+5e23298c vmulpl.f16 s4, s7, s24 (unpredictable)
+4e6959a8 vmulmi.f16 s11, s19, s17 (unpredictable)
+ce2ac90a vmulgt.f16 s24, s20, s20 (unpredictable)
+0e2f4908 vmuleq.f16 s8, s30, s16 (unpredictable)
+1E600980 vmulne.f16 s1, s1, s0 (unpredictable)
+8E68F98F vmulhi.f16 s31, s17, s30 (unpredictable)
+8E641982 vmulhi.f16 s3, s9, s4 (unpredictable)
+8E200901 vmulhi.f16 s0, s0, s2 (unpredictable)
+8E20F980 vmulhi.f16 s30, s1, s0 (unpredictable)
+8E6F098F vmulhi.f16 s1, s31, s30 (unpredictable)
+8E61F9A0 vmulhi.f16 s31, s3, s1 (unpredictable)
+8E6139AF vmulhi.f16 s7, s3, s31 (unpredictable)
+
+// VMUL_f_A2_S cond=xxxx|1110|o0=0|D=x|o1=10|Vn=xxxx|Vd=xxxx|10|size=10|N=x|o2=0|M=x|0|Vm=xxxx
+// VmulFA2S: VMUL{<c>}{<q>}.F32  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+6e66aaa8 vmulvs.f32 s21, s13, s17
+de62faab vmulle.f32 s31, s5, s23
+2e65baa7 vmulhs.f32 s23, s11, s15
+1e270aaa vmulne.f32 s0, s15, s21
+3e6ada20 vmullo.f32 s27, s20, s1
+be2fea83 vmullt.f32 s28, s31, s6
+4e698aa9 vmulmi.f32 s17, s19, s19
+ae660a20 vmulge.f32 s1, s12, s1
+// Binary Ninja's tests
+ee200a80 vmul.f32 s0, s1, s0
+ee655aaa vmul.f32 s11, s11, s21
+0E684AAF vmuleq.f32 s9, s17, s31
+8E642AA4 vmulhi.f32 s5, s9, s9
+6E611AA2 vmulvs.f32 s3, s3, s5
+6E20FA21 vmulvs.f32 s30, s0, s3
+6E6FAA0F vmulvs.f32 s21, s30, s30
+6E66AAAF vmulvs.f32 s21, s13, s31

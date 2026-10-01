@@ -1,0 +1,59 @@
+// VLD3_m_T1_nowb 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=1111
+// Vld3MT1Nowb: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]
+// register fields: Rn
+// IT state read: condition
+f929954f vld3.16 {d9, d11, d13}, [r9]
+f966841f vld3.8 {d24, d25, d26}, [r6:64]
+f963758f vld3.32 {d23, d25, d27}, [r3]
+f962644f vld3.16 {d22, d23, d24}, [r2]
+f961845f vld3.16 {d24, d25, d26}, [r1:64]
+f924048f vld3.32 {d0, d1, d2}, [r4]
+f960c58f UNPREDICTABLE
+f966359f vld3.32 {d19, d21, d23}, [r6:64]
+F92FF54F vld3.16 {d15, d17, d19}, [pc] (unpredictable)
+F929454F vld3.16 {d4, d6, d8}, [r9]
+F929254F vld3.16 {d2, d4, d6}, [r9]
+F929154F vld3.16 {d1, d3, d5}, [r9]
+F92995EF UNDEFINED
+F929957F UNDEFINED
+F929954F [ne] vld3ne.16 {d9, d11, d13}, [r9]
+F920954F vld3.16 {d9, d11, d13}, [r0]
+
+// VLD3_m_T1_posti 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=1101
+// Vld3MT1Posti: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}]!
+// register fields: Rn
+// IT state read: condition
+f966844d vld3.16 {d24, d25, d26}, [r6]!
+f92cc59d vld3.32 {d12, d14, d16}, [r12:64]!
+f923f51d vld3.8 {d15, d17, d19}, [r3:64]!
+f928259d vld3.32 {d2, d4, d6}, [r8:64]!
+f962551d vld3.8 {d21, d23, d25}, [r2:64]!
+f965750d vld3.8 {d23, d25, d27}, [r5]!
+f922350d vld3.8 {d3, d5, d7}, [r2]!
+f96dd40d vld3.8 {d29, d30, d31}, [sp]!
+F960044D vld3.16 {d16, d17, d18}, [r0]!
+F96F444D vld3.16 {d20, d21, d22}, [pc]! (unpredictable)
+F966144D vld3.16 {d17, d18, d19}, [r6]!
+F96684ED UNDEFINED
+F966847D UNDEFINED
+F966844D [ne] vld3ne.16 {d24, d25, d26}, [r6]!
+
+// VLD3_m_T1_postr 111110010|D=x|L=1|0|Rn=xxxx|Vd=xxxx|itype=010x|size=xx|align=xx|Rm=xxxx
+// Vld3MT1Postr: VLD3{<c>}{<q>}.<size>  <list>, [<Rn>{:<align>}], <Rm>
+// register fields: Rn, Rm
+// IT state read: condition
+f9249514 vld3.8 {d9, d11, d13}, [r4:64], r4
+f96f8501 vld3.8 {d24, d26, d28}, [pc], r1 (unpredictable)
+f922d515 vld3.8 {d13, d15, d17}, [r2:64], r5
+f92e1482 vld3.32 {d1, d2, d3}, [lr], r2
+f964a504 vld3.8 {d26, d28, d30}, [r4], r4
+f9233449 vld3.16 {d3, d4, d5}, [r3], r9
+f964d55e UNPREDICTABLE
+f968545b vld3.16 {d21, d22, d23}, [r8:64], r11
+F9200510 vld3.8 {d0, d2, d4}, [r0:64], r0
+F924F514 vld3.8 {d15, d17, d19}, [r4:64], r4
+F9244514 vld3.8 {d4, d6, d8}, [r4:64], r4
+F9242514 vld3.8 {d2, d4, d6}, [r4:64], r4
+F92495EF UNDEFINED
+F9249534 UNDEFINED
+F9249514 [ne] vld3ne.8 {d9, d11, d13}, [r4:64], r4

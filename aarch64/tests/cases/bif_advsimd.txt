@@ -1,0 +1,22 @@
+// BIF_asimdsame_only 0|Q=x|U=1|0|111|0|opc2=11|1|Rm=xxxxx|opcode=00011|1|Rn=xxxxx|Rd=xxxxx
+// BifAsimdsameOnly: BIF  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// register fields: Rm, Rn, Rd
+2EE71E78 bif v24.8b, v19.8b, v7.8b
+2EEB1F54 bif v20.8b, v26.8b, v11.8b
+6EF31E4E bif v14.16b, v18.16b, v19.16b
+2EFC1F73 bif v19.8b, v27.8b, v28.8b
+2EF31FDE bif v30.8b, v30.8b, v19.8b
+6EFA1EC3 bif v3.16b, v22.16b, v26.16b
+6EF51D64 bif v4.16b, v11.16b, v21.16b
+6EFB1C67 bif v7.16b, v3.16b, v27.16b
+6EFF1C9C bif v28.16b, v4.16b, v31.16b
+6EEA1C71 bif v17.16b, v3.16b, v10.16b
+6EE61C01 bif v1.16b, v0.16b, v6.16b
+2EEA1FE7 bif v7.8b, v31.8b, v10.8b
+6EF51E8A bif v10.16b, v20.16b, v21.16b
+2EE61D32 bif v18.8b, v9.8b, v6.8b
+2EEF1E4E bif v14.8b, v18.8b, v15.8b
+2EEB1F2D bif v13.8b, v25.8b, v11.8b
+2EE01E60 bif v0.8b, v19.8b, v0.8b
+2EE71E7F bif v31.8b, v19.8b, v7.8b
+2EE71CF8 bif v24.8b, v7.8b, v7.8b

@@ -1,0 +1,16 @@
+// sudot_z_zzzi_s 010|0010|0|size=10|1|i2=xx|Zm=xxx|00011|U=1|Zn=xxxxx|Zda=xxxxx
+// SudotZZzziS: SUDOT  <Zda>.S, <Zn>.B, <Zm>.B[<imm>]
+// register fields: Zm, Zn, Zda
+44B41D0A sudot z10.s, z8.b, z4.b[2]
+44BF1EBE sudot z30.s, z21.b, z7.b[3]
+44A41CE3 sudot z3.s, z7.b, z4.b[0]
+44B91E9E sudot z30.s, z20.b, z1.b[3]
+44A91DB9 sudot z25.s, z13.b, z1.b[1]
+44B31D3D sudot z29.s, z9.b, z3.b[2]
+44B01C4D sudot z13.s, z2.b, z0.b[2]
+44A71C29 sudot z9.s, z1.b, z7.b[0]
+44B21C00 sudot z0.s, z0.b, z2.b[2]
+44B51FFF sudot z31.s, z31.b, z5.b[2]
+44B61D0A sudot z10.s, z8.b, z6.b[2]
+44B41C8A sudot z10.s, z4.b, z4.b[2]
+44B41D04 sudot z4.s, z8.b, z4.b[2]

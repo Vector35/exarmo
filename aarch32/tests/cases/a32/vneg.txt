@@ -1,0 +1,110 @@
+// VNEG_A1_D 111100111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|111|Q=0|M=x|0|Vm=xxxx
+// VnegA1D: VNEG{<c>}{<q>}.<dt>  <Dd>, <Dm>
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f587ae vneg.f16 d24, d30
+f3b93383 vneg.s32 d3, d3
+f3f583ad vneg.s16 d24, d29
+f3b5a7a1 vneg.f16 d10, d17
+f3f9d782 vneg.f32 d29, d2
+f3f1b386 vneg.s8 d27, d6
+f3b9e3a9 vneg.s32 d14, d25
+f3b5d38d vneg.s16 d13, d13
+F3FD87AE UNDEFINED
+F3F507A0 vneg.f16 d16, d16
+F3F5F7AF vneg.f16 d31, d31
+F3F547A8 vneg.f16 d20, d24
+F3F527A4 vneg.f16 d18, d20
+F3F51780 vneg.f16 d17, d0
+F3F187AE UNDEFINED
+F3FD83AE UNDEFINED
+F3B5078F vneg.f16 d0, d15
+F3B5F7A0 vneg.f16 d15, d16
+F3F507AF vneg.f16 d16, d31
+F3F5F7AE vneg.f16 d31, d30
+
+// VNEG_A1_Q 111100111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|111|Q=1|M=x|0|Vm=xxxx
+// VnegA1Q: VNEG{<c>}{<q>}.<dt>  <Qd>, <Qm>
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3f1c3e8 vneg.s8 q14, q12
+f3b9e7c4 vneg.f32 q7, q2
+F3F503E0 vneg.s16 q8, q8
+F3FDF3EF UNDEFINED
+F3F583E2 vneg.s16 q12, q9
+F3F547C0 vneg.f16 q10, q0
+F3F923E0 vneg.s32 q9, q8
+F3F117E1 UNDEFINED
+F3BDF3CF UNDEFINED
+F3FDF7EF UNDEFINED
+F3B103E8 vneg.s8 q0, q12
+F3F103E8 vneg.s8 q8, q12
+
+// VNEG_A2_D cond=xxxx|11101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=11|o3=0|1|M=x|0|Vm=xxxx
+// VnegA2D: VNEG{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+9eb14b66 vnegls.f64 d4, d22
+3ef1bb45 vneglo.f64 d27, d5
+7ef15b4e vnegvc.f64 d21, d14
+7ef1fb64 vnegvc.f64 d31, d20
+2ef17b4b vneghs.f64 d23, d11
+6eb10b65 vnegvs.f64 d0, d21
+0eb19b6d vnegeq.f64 d9, d29
+beb14b64 vneglt.f64 d4, d20
+// Binary Ninja's tests
+1ef10b60 vnegne.f64 d16, d16
+eef10b60 vneg.f64 d16, d16
+FEB14B66 UNALLOCATED
+8EB18B6F vneghi.f64 d8, d31
+4EB12B68 vnegmi.f64 d2, d24
+9EB11B62 vnegls.f64 d1, d18
+9EB1FB61 vnegls.f64 d15, d17
+9EB14B40 vnegls.f64 d4, d0
+9EB14B4F vnegls.f64 d4, d15
+9EB14B6F vnegls.f64 d4, d31
+
+// VNEG_A2_H cond=xxxx|11101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=01|o3=0|1|M=x|0|Vm=xxxx
+// VnegA2H: VNEG{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+3eb1594b vneglo.f16 s10, s22 (unpredictable)
+7eb1c945 vnegvc.f16 s24, s10 (unpredictable)
+beb1296e vneglt.f16 s4, s29 (unpredictable)
+1eb16962 vnegne.f16 s12, s5 (unpredictable)
+0eb1094f vnegeq.f16 s0, s30 (unpredictable)
+4ef1d96a vnegmi.f16 s27, s21 (unpredictable)
+7ef11962 vnegvc.f16 s3, s5 (unpredictable)
+1ef1a943 vnegne.f16 s21, s6 (unpredictable)
+FEB1594B UNALLOCATED
+8EB1F940 vneghi.f16 s30, s0 (unpredictable)
+2EB18948 vnegcs.f16 s16, s16 (unpredictable)
+3EB14944 vnegcc.f16 s8, s8 (unpredictable)
+3EB1F941 vnegcc.f16 s30, s2 (unpredictable)
+3EF10940 vnegcc.f16 s1, s0 (unpredictable)
+3EF1F960 vnegcc.f16 s31, s1 (unpredictable)
+3EB1596F vnegcc.f16 s10, s31 (unpredictable)
+
+// VNEG_A2_S cond=xxxx|11101|D=x|11|o1=0|opc2=001|Vd=xxxx|10|size=10|o3=0|1|M=x|0|Vm=xxxx
+// VnegA2S: VNEG{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+eef15a63 vneg.f32 s11, s7
+cef1ca6f vneggt.f32 s25, s31
+cef13a68 vneggt.f32 s7, s17
+1ef15a4e vnegne.f32 s11, s28
+4ef1ba4d vnegmi.f32 s23, s26
+0ef17a6a vnegeq.f32 s15, s21
+beb12a66 vneglt.f32 s4, s13
+4eb18a44 vnegmi.f32 s16, s8
+// Binary Ninja's tests
+eeb10a40 vneg.f32 s0, s0
+FEF15A63 UNALLOCATED
+8EF1FA62 vneghi.f32 s31, s5
+2EF14A61 vnegcs.f32 s9, s3
+EEF11A4F vneg.f32 s3, s30
+EEB1FA60 vneg.f32 s30, s1
+EEF10A63 vneg.f32 s1, s7
+EEF1FA63 vneg.f32 s31, s7

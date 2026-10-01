@@ -1,0 +1,22 @@
+// fmaxnm_z_p_zz_ 011|0010|1|size=xx|0|0|opc=0100|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// FmaxnmZPZz: FMAXNM  <Zdn>.<T>, <Pg>/M, <Zdn>.<T>, <Zm>.<T>
+// register fields: Pg, Zm, Zdn
+65449C5A fmaxnm z26.h, p7/m, z26.h, z2.h
+658493DA fmaxnm z26.s, p4/m, z26.s, z30.s
+65448B67 fmaxnm z7.h, p2/m, z7.h, z27.h
+65C4909C fmaxnm z28.d, p4/m, z28.d, z4.d
+658496E1 fmaxnm z1.s, p5/m, z1.s, z23.s
+65C48B8F fmaxnm z15.d, p2/m, z15.d, z28.d
+65449C89 fmaxnm z9.h, p7/m, z9.h, z4.h
+65449BED fmaxnm z13.h, p6/m, z13.h, z31.h
+65C48061 fmaxnm z1.d, p0/m, z1.d, z3.d
+65C48253 fmaxnm z19.d, p0/m, z19.d, z18.d
+65C4931F fmaxnm z31.d, p4/m, z31.d, z24.d
+65849B83 fmaxnm z3.s, p6/m, z3.s, z28.s
+65449AEC fmaxnm z12.h, p6/m, z12.h, z23.h
+65848C4F fmaxnm z15.s, p3/m, z15.s, z2.s
+65448026 fmaxnm z6.h, p0/m, z6.h, z1.h
+65449810 fmaxnm z16.h, p6/m, z16.h, z0.h
+65448440 fmaxnm z0.h, p1/m, z0.h, z2.h
+65449C47 fmaxnm z7.h, p7/m, z7.h, z2.h
+65449C42 fmaxnm z2.h, p7/m, z2.h, z2.h

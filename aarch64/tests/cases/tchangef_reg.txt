@@ -1,0 +1,9 @@
+// TCHANGEF_tc_reg 110|101|011000|op1=00x|00000|00|Rn=xxxxx|Rd=xxxxx
+// TchangefTcReg: TCHANGEF  <Xd>, <Xn>{, <nb>}
+// register fields: Rn, Rd
+D5800080 tchangef x0, x4
+D5820387 tchangef x7, x28, nb
+D5800343 tchangef x3, x26
+D580001F tchangef xzr, x0
+D58003E0 tchangef x0, xzr
+D5800084 tchangef x4, x4

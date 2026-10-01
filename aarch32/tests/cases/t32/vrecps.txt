@@ -1,0 +1,47 @@
+// VRECPS_T1_D 111|U=0|11110|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VrecpsT1D: VRECPS{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef46bf32 vrecps.f32 d27, d6, d18
+ef442f1d vrecps.f32 d18, d4, d13
+ef0c0fbe vrecps.f32 d0, d28, d30
+ef160f97 vrecps.f16 d0, d22, d7
+ef505f19 vrecps.f16 d21, d0, d9
+ef094f96 vrecps.f32 d4, d25, d6
+ef43dfb5 vrecps.f32 d29, d19, d21
+ef016f99 vrecps.f32 d6, d17, d9
+EF4FFF30 vrecps.f32 d31, d15, d16
+EF488F3F vrecps.f32 d24, d8, d31
+EF421F38 vrecps.f32 d17, d2, d24
+EF00FFB4 vrecps.f32 d15, d16, d20
+EF4F0F31 vrecps.f32 d16, d15, d17
+EF4FFF90 vrecps.f32 d31, d31, d0
+EF46BF1F vrecps.f32 d27, d6, d15
+EF46BF30 vrecps.f32 d27, d6, d16
+EF46BF3F vrecps.f32 d27, d6, d31
+EF46BF32 [ne] vrecpsne.f32 d27, d6, d18
+
+// VRECPS_T1_Q 111|U=0|11110|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1111|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VrecpsT1Q: VRECPS{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef44ef7e vrecps.f32 q15, q2, q15
+ef5c6fde vrecps.f16 q11, q14, q7
+ef4eef58 vrecps.f32 q15, q7, q4
+ef462f58 vrecps.f32 q9, q3, q4
+ef02cf74 vrecps.f32 q6, q1, q10
+ef0c0f74 vrecps.f32 q0, q6, q10
+ef48af5c vrecps.f32 q13, q4, q6
+ef4cafd2 vrecps.f32 q13, q14, q1
+EF408F70 vrecps.f32 q12, q0, q8
+EF4FFF7F UNDEFINED
+EF411F71 UNDEFINED
+EF404F50 vrecps.f32 q10, q0, q0
+EF0FFF5F UNDEFINED
+EF400FF0 vrecps.f32 q8, q8, q8
+EF4FFFFF UNDEFINED
+EF44EF7E [ne] vrecpsne.f32 q15, q2, q15

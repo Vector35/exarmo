@@ -1,0 +1,47 @@
+// ADD_asimdsame_only 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|opcode=10000|1|Rn=xxxxx|Rd=xxxxx
+// AddAsimdsameOnly: ADD  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+4EAE86AF add v15.4s, v21.4s, v14.4s
+4EB485A1 add v1.4s, v13.4s, v20.4s
+4EEE8445 add v5.2d, v2.2d, v14.2d
+0EAD87A9 add v9.2s, v29.2s, v13.2s
+4E388497 add v23.16b, v4.16b, v24.16b
+4EA185EA add v10.4s, v15.4s, v1.4s
+0E2B85DD add v29.8b, v14.8b, v11.8b
+4EEC86A6 add v6.2d, v21.2d, v12.2d
+0E3387DA add v26.8b, v30.8b, v19.8b
+4E7784B7 add v23.8h, v5.8h, v23.8h
+4E2F8650 add v16.16b, v18.16b, v15.16b
+4E7484F9 add v25.8h, v7.8h, v20.8h
+4E7C8532 add v18.8h, v9.8h, v28.8h
+4EEF85A4 add v4.2d, v13.2d, v15.2d
+4E2E8450 add v16.16b, v2.16b, v14.16b
+0EB387D4 add v20.2s, v30.2s, v19.2s
+4EA08400 add v0.4s, v0.4s, v0.4s
+4EBF87FF add v31.4s, v31.4s, v31.4s
+0E6E86AF add v15.4h, v21.4h, v14.4h
+0EEE86AF UNDEFINED
+
+// ADD_asisdsame_only 01|U=0|1|111|0|size=11|1|Rm=xxxxx|opcode=10000|1|Rn=xxxxx|Rd=xxxxx
+// AddAsisdsameOnly: ADD  <d>, <n>, <m>
+// register fields: Rm, Rn, Rd
+5EE687A0 add d0, d29, d6
+5EF18743 add d3, d26, d17
+5EE1871A add d26, d24, d1
+5EFD846D add d13, d3, d29
+5EF68488 add d8, d4, d22
+5EE787EA add d10, d31, d7
+5EE2851D add d29, d8, d2
+5EF687EC add d12, d31, d22
+5EE084DF add d31, d6, d0
+5EE986C7 add d7, d22, d9
+5EEC872E add d14, d25, d12
+5EEC84FF add d31, d7, d12
+5EF38431 add d17, d1, d19
+5EFC847D add d29, d3, d28
+5EF887C2 add d2, d30, d24
+5EF38470 add d16, d3, d19
+5EFF8400 add d0, d0, d31
+5EE684C0 add d0, d6, d6
+5EE687A6 add d6, d29, d6

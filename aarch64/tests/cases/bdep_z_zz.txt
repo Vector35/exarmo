@@ -1,0 +1,15 @@
+// bdep_z_zz_ 010|0010|1|size=xx|0|Zm=xxxxx|10|11|opc=01|Zn=xxxxx|Zd=xxxxx
+// BdepZZz: BDEP  <Zd>.<T>, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Zn, Zd
+4506B777 bdep z23.b, z27.b, z6.b
+4509B4D4 bdep z20.b, z6.b, z9.b
+4549B440 bdep z0.h, z2.h, z9.h
+45C1B6E7 bdep z7.d, z23.d, z1.d
+459BB4DE bdep z30.s, z6.s, z27.s
+4507B504 bdep z4.b, z8.b, z7.b
+45CDB4FE bdep z30.d, z7.d, z13.d
+4599B58A bdep z10.s, z12.s, z25.s
+4500B41F bdep z31.b, z0.b, z0.b
+451FB7F7 bdep z23.b, z31.b, z31.b
+4506B766 bdep z6.b, z27.b, z6.b
+4506B77B bdep z27.b, z27.b, z6.b

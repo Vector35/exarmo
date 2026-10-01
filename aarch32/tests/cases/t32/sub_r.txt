@@ -1,0 +1,141 @@
+// SUB_r_T1 00|0|11|0|S=1|Rm=xxx|Rn=xxx|Rd=xxx
+// SubRT1: SUB<c>{<q>}  <Rd>, <Rn>, <Rm>
+// T1bSubRT1: SUBS{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rm, Rn, Rd
+// IT state read: condition, in block
+1a00 subs r0, r0, r0
+1a01 subs r1, r0, r0
+1a02 subs r2, r0, r0
+1a03 subs r3, r0, r0
+1a04 subs r4, r0, r0
+1a05 subs r5, r0, r0
+1a06 subs r6, r0, r0
+1a07 subs r7, r0, r0
+1A48 subs r0, r1, r1
+1A90 subs r0, r2, r2
+1AD8 subs r0, r3, r3
+1B20 subs r0, r4, r4
+1B68 subs r0, r5, r5
+1BB0 subs r0, r6, r6
+1BF8 subs r0, r7, r7
+1A00 [ne] subne r0, r0, r0
+1A53 subs r3, r2, r1
+
+// SUB_r_T2 1110101|op1=1101|S=0|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// SubRT2: SUB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EBA00000 sub r0, r0, r0
+EBAF9F5F sub pc, pc, pc, lsr #0x5 (unpredictable)
+EBA020A0 sub r0, r0, r0, asr #0xa
+EBA030F0 sub r0, r0, r0, ror #0xf
+EBA04000 sub r0, r0, r0, lsl #0x10
+EBA05000 sub r0, r0, r0, lsl #0x14
+EBA06000 sub r0, r0, r0, lsl #0x18
+EBA07000 sub r0, r0, r0, lsl #0x1c
+EBA00040 sub r0, r0, r0, lsl #0x1
+EBA00080 sub r0, r0, r0, lsl #0x2
+EBA000C0 sub r0, r0, r0, lsl #0x3
+EBA01000 sub r0, r0, r0, lsl #0x4
+EBA01040 sub r0, r0, r0, lsl #0x5
+EBA01080 sub r0, r0, r0, lsl #0x6
+EBA010C0 sub r0, r0, r0, lsl #0x7
+EBA02000 sub r0, r0, r0, lsl #0x8
+EBA02040 sub r0, r0, r0, lsl #0x9
+EBA02080 sub r0, r0, r0, lsl #0xa
+EBA020C0 sub r0, r0, r0, lsl #0xb
+EBA03000 sub r0, r0, r0, lsl #0xc
+EBA03040 sub r0, r0, r0, lsl #0xd
+EBA03080 sub r0, r0, r0, lsl #0xe
+EBA030C0 sub r0, r0, r0, lsl #0xf
+EBA04040 sub r0, r0, r0, lsl #0x11
+EBA04080 sub r0, r0, r0, lsl #0x12
+EBA040C0 sub r0, r0, r0, lsl #0x13
+EBA05040 sub r0, r0, r0, lsl #0x15
+EBA05080 sub r0, r0, r0, lsl #0x16
+EBA050C0 sub r0, r0, r0, lsl #0x17
+EBA06040 sub r0, r0, r0, lsl #0x19
+EBA06080 sub r0, r0, r0, lsl #0x1a
+EBA060C0 sub r0, r0, r0, lsl #0x1b
+EBA07040 sub r0, r0, r0, lsl #0x1d
+EBA07080 sub r0, r0, r0, lsl #0x1e
+EBA070C0 sub r0, r0, r0, lsl #0x1f
+EBA00000 [ne] subne r0, r0, r0
+EBA10203 sub r2, r1, r3
+
+// SUB_r_T2_RRX 1110101|op1=1101|S=0|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// SubRT2Rrx: SUB{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+eba6063e sub r6, r6, lr, rrx
+eba88f37 sub pc, r8, r7, rrx (unpredictable)
+ebab0d37 sub sp, r11, r7, rrx
+ebaf863e sub r6, pc, lr, rrx (unpredictable)
+eba10a3f sub r10, r1, pc, rrx (unpredictable)
+eba20732 sub r7, r2, r2, rrx
+eba00331 sub r3, r0, r1, rrx
+eba30835 sub r8, r3, r5, rrx
+EBA60030 sub r0, r6, r0, rrx
+EBA60636 sub r6, r6, r6, rrx
+EBA6063E [ne] subne r6, r6, lr, rrx
+
+// SUBS_r_T2 1110101|op1=1101|S=1|Rn=xxxx|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// SubsRT2: SUBS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+EBB00000 subs r0, r0, r0
+EBBF905F subs r0, pc, pc, lsr #0x5 (unpredictable)
+EBB020A0 subs r0, r0, r0, asr #0xa
+EBB030F0 subs r0, r0, r0, ror #0xf
+EBB04000 subs r0, r0, r0, lsl #0x10
+EBB05000 subs r0, r0, r0, lsl #0x14
+EBB06000 subs r0, r0, r0, lsl #0x18
+EBB07000 subs r0, r0, r0, lsl #0x1c
+EBB00040 subs r0, r0, r0, lsl #0x1
+EBB00080 subs r0, r0, r0, lsl #0x2
+EBB000C0 subs r0, r0, r0, lsl #0x3
+EBB01000 subs r0, r0, r0, lsl #0x4
+EBB01040 subs r0, r0, r0, lsl #0x5
+EBB01080 subs r0, r0, r0, lsl #0x6
+EBB010C0 subs r0, r0, r0, lsl #0x7
+EBB02000 subs r0, r0, r0, lsl #0x8
+EBB02040 subs r0, r0, r0, lsl #0x9
+EBB02080 subs r0, r0, r0, lsl #0xa
+EBB020C0 subs r0, r0, r0, lsl #0xb
+EBB03000 subs r0, r0, r0, lsl #0xc
+EBB03040 subs r0, r0, r0, lsl #0xd
+EBB03080 subs r0, r0, r0, lsl #0xe
+EBB030C0 subs r0, r0, r0, lsl #0xf
+EBB04040 subs r0, r0, r0, lsl #0x11
+EBB04080 subs r0, r0, r0, lsl #0x12
+EBB040C0 subs r0, r0, r0, lsl #0x13
+EBB05040 subs r0, r0, r0, lsl #0x15
+EBB05080 subs r0, r0, r0, lsl #0x16
+EBB050C0 subs r0, r0, r0, lsl #0x17
+EBB06040 subs r0, r0, r0, lsl #0x19
+EBB06080 subs r0, r0, r0, lsl #0x1a
+EBB060C0 subs r0, r0, r0, lsl #0x1b
+EBB07040 subs r0, r0, r0, lsl #0x1d
+EBB07080 subs r0, r0, r0, lsl #0x1e
+EBB070C0 subs r0, r0, r0, lsl #0x1f
+EBB00000 [ne] subsne r0, r0, r0
+EBB10203 subs r2, r1, r3
+
+// SUBS_r_T2_RRX 1110101|op1=1101|S=1|Rn=xxxx|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// SubsRT2Rrx: SUBS{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>, RRX
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+ebbb8433 subs r4, r11, r3, rrx (unpredictable)
+ebb1043e subs r4, r1, lr, rrx
+ebbc0d3d subs sp, r12, sp, rrx
+ebb6043b subs r4, r6, r11, rrx
+ebba0d3c subs sp, r10, r12, rrx
+ebb0023a subs r2, r0, r10, rrx
+ebb28335 subs r3, r2, r5, rrx (unpredictable)
+ebb48836 subs r8, r4, r6, rrx (unpredictable)
+EBBF8030 subs r0, pc, r0, rrx (unpredictable)
+EBBB8B3F subs r11, r11, pc, rrx (unpredictable)
+EBBB843B subs r4, r11, r11, rrx (unpredictable)
+EBBB8433 [ne] subsne r4, r11, r3, rrx (unpredictable)

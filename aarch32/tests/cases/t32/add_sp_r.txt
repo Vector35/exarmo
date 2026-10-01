@@ -1,0 +1,149 @@
+// ADD_SP_r_T1 010001|op=00|DM=x|Rs=1101|Rdm=xxx
+// AddSpRT1: ADD{<c>}{<q>}  {<Rdm>, }SP, <Rdm>
+// register fields: Rdm
+// IT state read: condition, last in block
+4468 add r0, sp, r0
+4469 add r1, sp, r1
+446a add r2, sp, r2
+446b add r3, sp, r3
+446c add r4, sp, r4
+446d add r5, sp, r5
+446e add r6, sp, r6
+446f add r7, sp, r7
+44E8 add r8, sp, r8
+4468 [ne] addne r0, sp, r0
+4468 [ne last] addne r0, sp, r0
+
+// ADD_SP_r_T2 010001|op=00|D=1|Rm=xxxx|Rd=101
+// AddSpRT2: ADD{<c>}{<q>}  {<SP>, }<SP>, <Rm>
+// register fields: Rm
+// IT state read: condition
+4485 add sp, r0
+448d add sp, r1
+4495 add sp, r2
+449d add sp, r3
+44a5 add sp, r4
+44ad add sp, r5
+44b5 add sp, r6
+44bd add sp, r7
+44FD add sp, pc
+4485 [ne] addne sp, r0
+
+// ADD_SP_r_T3 1110101|op1=1000|S=0|Rn=1101|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// AddSpRT3: ADD{<c>}{<q>}  {<Rd>, }SP, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rd, Rm
+// IT state read: condition
+eb0d847b add r4, sp, r11, ror #1 (unpredictable)
+eb0df58d add r5, sp, sp, lsl #30 (unpredictable)
+eb0d9b15 add r11, sp, r5, lsr #4 (unpredictable)
+eb0deecd add lr, sp, sp, lsl #27 (unpredictable)
+eb0d6be5 add r11, sp, r5, asr #27
+eb0d5025 add r0, sp, r5, asr #20
+eb0df8ca add r8, sp, r10, lsl #31 (unpredictable)
+EB0DAF70 add pc, sp, r0, ror #0x9 (unpredictable)
+EB0DB47F add r4, sp, pc, ror #0xd (unpredictable)
+EB0DC474 add r4, sp, r4, ror #0x11 (unpredictable)
+EB0D850D add r5, sp, sp (unpredictable)
+EB0D84BB add r4, sp, r11, ror #0x2 (unpredictable)
+EB0D84FB add r4, sp, r11, ror #0x3 (unpredictable)
+EB0D947B add r4, sp, r11, ror #0x5 (unpredictable)
+EB0D94BB add r4, sp, r11, ror #0x6 (unpredictable)
+EB0D94FB add r4, sp, r11, ror #0x7 (unpredictable)
+EB0DA43B add r4, sp, r11, ror #0x8 (unpredictable)
+EB0DA47B add r4, sp, r11, ror #0x9 (unpredictable)
+EB0DA4BB add r4, sp, r11, ror #0xa (unpredictable)
+EB0DA4FB add r4, sp, r11, ror #0xb (unpredictable)
+EB0DB43B add r4, sp, r11, ror #0xc (unpredictable)
+EB0DB47B add r4, sp, r11, ror #0xd (unpredictable)
+EB0DB4BB add r4, sp, r11, ror #0xe (unpredictable)
+EB0DB4FB add r4, sp, r11, ror #0xf (unpredictable)
+EB0DC43B add r4, sp, r11, ror #0x10 (unpredictable)
+EB0DC47B add r4, sp, r11, ror #0x11 (unpredictable)
+EB0DC4BB add r4, sp, r11, ror #0x12 (unpredictable)
+EB0DC4FB add r4, sp, r11, ror #0x13 (unpredictable)
+EB0DD47B add r4, sp, r11, ror #0x15 (unpredictable)
+EB0DD4BB add r4, sp, r11, ror #0x16 (unpredictable)
+EB0DD4FB add r4, sp, r11, ror #0x17 (unpredictable)
+EB0DE43B add r4, sp, r11, ror #0x18 (unpredictable)
+EB0DE47B add r4, sp, r11, ror #0x19 (unpredictable)
+EB0DE4BB add r4, sp, r11, ror #0x1a (unpredictable)
+EB0DF43B add r4, sp, r11, ror #0x1c (unpredictable)
+EB0DF47B add r4, sp, r11, ror #0x1d (unpredictable)
+EB0D847B [ne] addne r4, sp, r11, ror #0x1 (unpredictable)
+
+// ADD_SP_r_T3_RRX 1110101|op1=1000|S=0|Rn=1101|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// AddSpRT3Rrx: ADD{<c>}{<q>}  {<Rd>, }SP, <Rm>, RRX
+// register fields: Rd, Rm
+// IT state read: condition
+eb0d0239 add r2, sp, r9, rrx
+eb0d8032 add r0, sp, r2, rrx (unpredictable)
+eb0d0336 add r3, sp, r6, rrx
+eb0d803f add r0, sp, pc, rrx (unpredictable)
+eb0d863c add r6, sp, r12, rrx (unpredictable)
+eb0d8b3d add r11, sp, sp, rrx (unpredictable)
+eb0d073e add r7, sp, lr, rrx
+eb0d8034 add r0, sp, r4, rrx (unpredictable)
+EB0D0F30 add pc, sp, r0, rrx (unpredictable)
+EB0D0232 add r2, sp, r2, rrx
+EB0D0239 [ne] addne r2, sp, r9, rrx
+
+// ADDS_SP_r_T3 1110101|op1=1000|S=1|Rn=1101|(0)|imm3=xxx|Rd=xxxx|imm2=xx|stype=xx|Rm=xxxx
+// AddsSpRT3: ADDS{<c>}{<q>}  {<Rd>, }SP, <Rm> {, <shift> #<amount>}
+// read together by <amount>: imm3, imm2
+// register fields: Rd, Rm
+// IT state read: condition
+eb1d23c4 adds r3, sp, r4, lsl #11
+eb1d175c adds r7, sp, r12, lsr #5
+eb1d3132 adds r1, sp, r2, ror #12
+eb1d9d7f adds sp, sp, pc, ror #5 (unpredictable)
+eb1d6286 adds r2, sp, r6, lsl #26
+eb1dc7de adds r7, sp, lr, lsr #19 (unpredictable)
+eb1dbd02 adds sp, sp, r2, lsl #12 (unpredictable)
+EB1D00E0 adds r0, sp, r0, asr #0x3
+EB1D53C3 adds r3, sp, r3, lsl #0x17
+EB1D73C4 adds r3, sp, r4, lsl #0x1f
+EB1D0304 adds r3, sp, r4
+EB1D0344 adds r3, sp, r4, lsl #0x1
+EB1D0384 adds r3, sp, r4, lsl #0x2
+EB1D03C4 adds r3, sp, r4, lsl #0x3
+EB1D1304 adds r3, sp, r4, lsl #0x4
+EB1D1384 adds r3, sp, r4, lsl #0x6
+EB1D13C4 adds r3, sp, r4, lsl #0x7
+EB1D2304 adds r3, sp, r4, lsl #0x8
+EB1D2344 adds r3, sp, r4, lsl #0x9
+EB1D2384 adds r3, sp, r4, lsl #0xa
+EB1D3344 adds r3, sp, r4, lsl #0xd
+EB1D3384 adds r3, sp, r4, lsl #0xe
+EB1D33C4 adds r3, sp, r4, lsl #0xf
+EB1D4304 adds r3, sp, r4, lsl #0x10
+EB1D4344 adds r3, sp, r4, lsl #0x11
+EB1D4384 adds r3, sp, r4, lsl #0x12
+EB1D5304 adds r3, sp, r4, lsl #0x14
+EB1D5344 adds r3, sp, r4, lsl #0x15
+EB1D5384 adds r3, sp, r4, lsl #0x16
+EB1D53C4 adds r3, sp, r4, lsl #0x17
+EB1D6304 adds r3, sp, r4, lsl #0x18
+EB1D6344 adds r3, sp, r4, lsl #0x19
+EB1D63C4 adds r3, sp, r4, lsl #0x1b
+EB1D7304 adds r3, sp, r4, lsl #0x1c
+EB1D7344 adds r3, sp, r4, lsl #0x1d
+EB1D7384 adds r3, sp, r4, lsl #0x1e
+EB1D23C4 [ne] addsne r3, sp, r4, lsl #0xb
+
+// ADDS_SP_r_T3_RRX 1110101|op1=1000|S=1|Rn=1101|(0)|imm3=000|Rd=xxxx|imm2=00|stype=11|Rm=xxxx
+// AddsSpRT3Rrx: ADDS{<c>}{<q>}  {<Rd>, }SP, <Rm>, RRX
+// register fields: Rd, Rm
+// IT state read: condition
+eb1d0d33 adds sp, sp, r3, rrx
+eb1d8531 adds r5, sp, r1, rrx (unpredictable)
+eb1d0037 adds r0, sp, r7, rrx
+eb1d0e33 adds lr, sp, r3, rrx
+eb1d0035 adds r0, sp, r5, rrx
+eb1d053a adds r5, sp, r10, rrx
+eb1d8539 adds r5, sp, r9, rrx (unpredictable)
+eb1d8337 adds r3, sp, r7, rrx (unpredictable)
+EB1D0D30 adds sp, sp, r0, rrx
+EB1D0D3F adds sp, sp, pc, rrx (unpredictable)
+EB1D0D3D adds sp, sp, sp, rrx
+EB1D0D33 [ne] addsne sp, sp, r3, rrx

@@ -1,0 +1,24 @@
+// uunpk_mz_z_2 1|10|0000|1|size=xx|1|001|01|111000|Zn=xxxxx|Zd=xxxx|U=1
+// UunpkMzZ2: UUNPK  { <Zd1>.<T>-<Zd2>.<T> }, <Zn>.<Tb>
+// register fields: Zn, Zd
+C165E00B uunpk {z10.h-z11.h}, z0.b
+C165E019 uunpk {z24.h-z25.h}, z0.b
+C165E027 uunpk {z6.h-z7.h}, z1.b
+C1A5E3E1 uunpk {z0.s-z1.s}, z31.h
+C1E5E01F uunpk {z30.d-z31.d}, z0.s
+C125E00B UNDEFINED
+C165E001 uunpk {z0.h-z1.h}, z0.b
+
+// uunpk_mz_z_4 1|10|0000|1|size=xx|1|101|01|111000|Zn=xxxx|0|Zd=xxx|0|U=1
+// UunpkMzZ4: UUNPK  { <Zd1>.<T>-<Zd4>.<T> }, { <Zn1>.<Tb>-<Zn2>.<Tb> }
+// register fields: Zn, Zd
+C175E015 uunpk {z20.h-z23.h}, {z0.b-z1.b}
+C175E04D uunpk {z12.h-z15.h}, {z2.b-z3.b}
+C175E085 uunpk {z4.h-z7.h}, {z4.b-z5.b}
+C1B5E3C1 uunpk {z0.s-z3.s}, {z30.h-z31.h}
+C1F5E009 uunpk {z8.d-z11.d}, {z0.s-z1.s}
+C175E011 uunpk {z16.h-z19.h}, {z0.b-z1.b}
+C175E019 uunpk {z24.h-z27.h}, {z0.b-z1.b}
+C175E01D uunpk {z28.h-z31.h}, {z0.b-z1.b}
+C135E015 UNDEFINED
+C175E001 uunpk {z0.h-z3.h}, {z0.b-z1.b}

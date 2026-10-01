@@ -1,0 +1,46 @@
+// LDSETP_128_memop_128 0|S=0|011001|A=0|R=0|1|Rt2=xxxxx|o3=0|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Ldsetp128Memop128: LDSETP  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19203006 ldsetp x6, x0, [x0]
+1920300D ldsetp x13, x0, [x0]
+19203014 ldsetp x20, x0, [x0]
+192033E0 ldsetp x0, x0, [sp] (unpredictable)
+193F301F UNDEFINED
+19203000 ldsetp x0, x0, [x0] (unpredictable)
+192033E6 ldsetp x6, x0, [sp]
+192030C6 ldsetp x6, x0, [x6]
+
+// LDSETPA_128_memop_128 0|S=0|011001|A=1|R=0|1|Rt2=xxxxx|o3=0|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Ldsetpa128Memop128: LDSETPA  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19A03002 ldsetpa x2, x0, [x0]
+19A03009 ldsetpa x9, x0, [x0]
+19A03010 ldsetpa x16, x0, [x0]
+19A033E0 ldsetpa x0, x0, [sp] (unpredictable)
+19BF301F UNDEFINED
+19A03000 ldsetpa x0, x0, [x0] (unpredictable)
+19A033E2 ldsetpa x2, x0, [sp]
+19A03042 ldsetpa x2, x0, [x2]
+
+// LDSETPAL_128_memop_128 0|S=0|011001|A=1|R=1|1|Rt2=xxxxx|o3=0|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Ldsetpal128Memop128: LDSETPAL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19E03000 ldsetpal x0, x0, [x0] (unpredictable)
+19E03007 ldsetpal x7, x0, [x0]
+19E0300E ldsetpal x14, x0, [x0]
+19E033E0 ldsetpal x0, x0, [sp] (unpredictable)
+19FF301F UNDEFINED
+19E033E7 ldsetpal x7, x0, [sp]
+19E030E7 ldsetpal x7, x0, [x7]
+
+// LDSETPL_128_memop_128 0|S=0|011001|A=0|R=1|1|Rt2=xxxxx|o3=0|opc=011|00|Rn=xxxxx|Rt=xxxxx
+// Ldsetpl128Memop128: LDSETPL  <Xt1>, <Xt2>, [<Xn|SP>]
+// register fields: Rt2, Rn, Rt
+19603004 ldsetpl x4, x0, [x0]
+1960300B ldsetpl x11, x0, [x0]
+19603012 ldsetpl x18, x0, [x0]
+196033E0 ldsetpl x0, x0, [sp] (unpredictable)
+197F301F UNDEFINED
+19603000 ldsetpl x0, x0, [x0] (unpredictable)
+196033E4 ldsetpl x4, x0, [sp]
+19603084 ldsetpl x4, x0, [x4]

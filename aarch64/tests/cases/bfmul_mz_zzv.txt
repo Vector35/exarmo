@@ -1,0 +1,22 @@
+// bfmul_mz_zzv_2x1 1|10|0000|1|size=00|1|Zm=xxxx|0|111010|Zn=xxxx|0|Zd=xxxx|0
+// BfmulMzZzv2x1: BFMUL  { <Zd1>.H-<Zd2>.H }, { <Zn1>.H-<Zn2>.H }, <Zm>.H
+// register fields: Zm, Zn, Zd
+C120E80C bfmul {z12.h-z13.h}, {z0.h-z1.h}, z0.h
+C120E81A bfmul {z26.h-z27.h}, {z0.h-z1.h}, z0.h
+C120E844 bfmul {z4.h-z5.h}, {z2.h-z3.h}, z0.h
+C13EEBC0 bfmul {z0.h-z1.h}, {z30.h-z31.h}, z15.h
+C120E81E bfmul {z30.h-z31.h}, {z0.h-z1.h}, z0.h
+C120E800 bfmul {z0.h-z1.h}, {z0.h-z1.h}, z0.h
+
+// bfmul_mz_zzv_4x1 1|10|0000|1|size=00|1|Zm=xxxx|1|111010|Zn=xxx|0|0|Zd=xxx|0|0
+// BfmulMzZzv4x1: BFMUL  { <Zd1>.H-<Zd4>.H }, { <Zn1>.H-<Zn4>.H }, <Zm>.H
+// register fields: Zm, Zn, Zd
+C121E818 bfmul {z24.h-z27.h}, {z0.h-z3.h}, z0.h
+C121E888 bfmul {z8.h-z11.h}, {z4.h-z7.h}, z0.h
+C121E914 bfmul {z20.h-z23.h}, {z8.h-z11.h}, z0.h
+C13FE980 bfmul {z0.h-z3.h}, {z12.h-z15.h}, z15.h
+C121EA04 bfmul {z4.h-z7.h}, {z16.h-z19.h}, z0.h
+C121EA8C bfmul {z12.h-z15.h}, {z20.h-z23.h}, z0.h
+C121EB10 bfmul {z16.h-z19.h}, {z24.h-z27.h}, z0.h
+C121EB9C bfmul {z28.h-z31.h}, {z28.h-z31.h}, z0.h
+C121E800 bfmul {z0.h-z3.h}, {z0.h-z3.h}, z0.h

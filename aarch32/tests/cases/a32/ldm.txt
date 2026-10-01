@@ -1,0 +1,44 @@
+// LDM_A1 cond=xxxx|10|0|P=0|U=1|op=0|W=x|L=1|Rn=xxxx|register_list=xxxxxxxxxxxxxxxx
+// PopLdmA1: POP{<c>}{<q>}  <registers>
+// LdmA1: LDM{<IA>}{<c>}{<q>}  <Rn>{<!>}, <registers>
+// read together by the POP alias: W, Rn, register_list
+// register fields: Rn
+// form chosen on: W, Rn, register_list
+789c99b9 ldmvc r12, {r0, r3, r4, r5, r7, r8, r11, r12, pc}
+c89e7716 ldmgt lr, {r1, r2, r4, r8, r9, r10, r12, sp, lr}
+889383e0 ldmhi r3, {r5, r6, r7, r8, r9, pc}
+289cac99 ldmhs r12, {r0, r3, r4, r7, r10, r11, sp, pc}
+c8b66b6d ldmgt r6!, {r0, r2, r3, r5, r6, r8, r9, r11, sp, lr} (unpredictable)
+18b79fa0 ldmne r7!, {r5, r7, r8, r9, r10, r11, r12, pc} (unpredictable)
+48be48da ldmmi lr!, {r1, r3, r4, r6, r7, r11, lr} (unpredictable)
+98944c0c ldmls r4, {r2, r3, r10, r11, lr}
+// Binary Ninja's tests
+e892207a ldm r2, {r1, r3, r4, r5, r6, sp}
+e8b2207a ldm r2!, {r1, r3, r4, r5, r6, sp}
+e8bd0780 pop {r7, r8, r9, r10}
+08900000 ldmeq r0, {} (unpredictable)
+789FFFFF ldmvc pc, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+789C8000 ldmvc r12, {pc}
+789C4000 ldmvc r12, {lr}
+789C2000 ldmvc r12, {sp}
+789C1000 ldmvc r12, {r12}
+789C0800 ldmvc r12, {r11}
+789C0400 ldmvc r12, {r10}
+789C0200 ldmvc r12, {r9}
+789C0100 ldmvc r12, {r8}
+789C0080 ldmvc r12, {r7}
+789C0040 ldmvc r12, {r6}
+789C0020 ldmvc r12, {r5}
+789C0010 ldmvc r12, {r4}
+789C0008 ldmvc r12, {r3}
+789C0004 ldmvc r12, {r2}
+789C0002 ldmvc r12, {r1}
+789C0001 ldmvc r12, {r0}
+78900000 ldmvc r0, {} (unpredictable)
+7890FFFF ldmvc r0, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc}
+789F0000 ldmvc pc, {} (unpredictable)
+78B00000 ldmvc r0!, {} (unpredictable)
+78B0FFFF ldmvc r0!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+78BF0000 ldmvc pc!, {} (unpredictable)
+78BFFFFF ldmvc pc!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc} (unpredictable)
+48BD48DA popmi {r1, r3, r4, r6, r7, r11, lr}

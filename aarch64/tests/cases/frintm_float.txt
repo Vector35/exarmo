@@ -1,0 +1,63 @@
+// FRINTM_D_floatdp1 M=0|0|S=0|11110|ftype=01|1001|rmode=010|10000|Rn=xxxxx|Rd=xxxxx
+// FrintmDFloatdp1: FRINTM  <Dd>, <Dn>
+// register fields: Rn, Rd
+1E6543E6 frintm d6, d31
+1E65409C frintm d28, d4
+1E6542D6 frintm d22, d22
+1E654025 frintm d5, d1
+1E6540AD frintm d13, d5
+1E65407A frintm d26, d3
+1E654335 frintm d21, d25
+1E6543C0 frintm d0, d30
+1E654242 frintm d2, d18
+1E6542A3 frintm d3, d21
+1E654225 frintm d5, d17
+1E6543BA frintm d26, d29
+1E6542BB frintm d27, d21
+1E6540DA frintm d26, d6
+1E65425A frintm d26, d18
+1E65413E frintm d30, d9
+1E65401F frintm d31, d0
+
+// FRINTM_H_floatdp1 M=0|0|S=0|11110|ftype=11|1001|rmode=010|10000|Rn=xxxxx|Rd=xxxxx
+// FrintmHFloatdp1: FRINTM  <Hd>, <Hn>
+// register fields: Rn, Rd
+1EE5415D frintm h29, h10
+1EE54264 frintm h4, h19
+1EE54069 frintm h9, h3
+1EE5411F frintm h31, h8
+1EE540A2 frintm h2, h5
+1EE54187 frintm h7, h12
+1EE542EA frintm h10, h23
+1EE542B8 frintm h24, h21
+1EE541FE frintm h30, h15
+1EE543E3 frintm h3, h31
+1EE543A5 frintm h5, h29
+1EE540C0 frintm h0, h6
+1EE54045 frintm h5, h2
+1EE540BF frintm h31, h5
+1EE543E2 frintm h2, h31
+1EE542CF frintm h15, h22
+1EE5401D frintm h29, h0
+1EE5414A frintm h10, h10
+
+// FRINTM_S_floatdp1 M=0|0|S=0|11110|ftype=00|1001|rmode=010|10000|Rn=xxxxx|Rd=xxxxx
+// FrintmSFloatdp1: FRINTM  <Sd>, <Sn>
+// register fields: Rn, Rd
+1E2542A8 frintm s8, s21
+1E2543F5 frintm s21, s31
+1E25422A frintm s10, s17
+1E25435D frintm s29, s26
+1E2540B2 frintm s18, s5
+1E2542F6 frintm s22, s23
+1E2540C7 frintm s7, s6
+1E254338 frintm s24, s25
+1E25429B frintm s27, s20
+1E25425F frintm s31, s18
+1E254085 frintm s5, s4
+1E25406C frintm s12, s3
+1E2543FD frintm s29, s31
+1E254321 frintm s1, s25
+1E25425D frintm s29, s18
+1E254117 frintm s23, s8
+1E254000 frintm s0, s0

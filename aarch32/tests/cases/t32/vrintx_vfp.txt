@@ -1,0 +1,70 @@
+// VRINTX_vfp_T1_D 111011101|D=x|11|o1=0|opc2=111|Vd=xxxx|10|size=11|o3=0|1|M=x|0|Vm=xxxx
+// VrintxVfpT1D: VRINTX{<c>}{<q>}.F64  <Dd>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+// IT state read: condition
+eeb72b66 vrintx.f64 d2, d22
+eef74b4d vrintx.f64 d20, d13
+eef7cb4d vrintx.f64 d28, d13
+eeb7cb60 vrintx.f64 d12, d16
+eeb7db48 vrintx.f64 d13, d8
+eef79b4c vrintx.f64 d25, d12
+eeb7eb6b vrintx.f64 d14, d27
+eeb72b60 vrintx.f64 d2, d16
+EEB70B6F vrintx.f64 d0, d31
+EEB7FB64 vrintx.f64 d15, d20
+EEB78B62 vrintx.f64 d8, d18
+EEB71B61 vrintx.f64 d1, d17
+EEB70B40 vrintx.f64 d0, d0
+EEB7FB4F vrintx.f64 d15, d15
+EEF70B6F vrintx.f64 d16, d31
+EEF7FB66 vrintx.f64 d31, d22
+EEB72B66 [ne] vrintxne.f64 d2, d22
+
+// VRINTX_vfp_T1_H 111011101|D=x|11|o1=0|opc2=111|Vd=xxxx|10|size=01|o3=0|1|M=x|0|Vm=xxxx
+// VrintxVfpT1H: VRINTX{<c>}{<q>}.F16  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eeb7c940 vrintx.f16 s24, s0
+eef7b961 vrintx.f16 s23, s3
+eef7a94c vrintx.f16 s21, s24
+eef7e969 vrintx.f16 s29, s19
+eeb7b94f vrintx.f16 s22, s30
+eef7b96a vrintx.f16 s23, s21
+eef7796a vrintx.f16 s15, s21
+eef7296f vrintx.f16 s5, s31
+EEB70948 vrintx.f16 s0, s16
+EEB7F944 vrintx.f16 s30, s8
+EEB78942 vrintx.f16 s16, s4
+EEB74960 vrintx.f16 s8, s1
+EEB71940 vrintx.f16 s2, s0
+EEB70940 vrintx.f16 s0, s0
+EEB7F940 vrintx.f16 s30, s0
+EEF70940 vrintx.f16 s1, s0
+EEF7F940 vrintx.f16 s31, s0
+EEB7C940 [ne] vrintxne.f16 s24, s0 (unpredictable)
+
+// VRINTX_vfp_T1_S 111011101|D=x|11|o1=0|opc2=111|Vd=xxxx|10|size=10|o3=0|1|M=x|0|Vm=xxxx
+// VrintxVfpT1S: VRINTX{<c>}{<q>}.F32  <Sd>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sm>: M, Vm
+// IT state read: condition
+eef77a41 vrintx.f32 s15, s2
+eef73a63 vrintx.f32 s7, s7
+eef79a60 vrintx.f32 s19, s1
+eeb7da67 vrintx.f32 s26, s15
+eef7da41 vrintx.f32 s27, s2
+eeb7da46 vrintx.f32 s26, s12
+eeb71a6a vrintx.f32 s2, s21
+eeb77a68 vrintx.f32 s14, s17
+EEF70A4F vrintx.f32 s1, s30
+EEF7FA44 vrintx.f32 s31, s8
+EEF78A42 vrintx.f32 s17, s4
+EEF74A40 vrintx.f32 s9, s0
+EEF72A4F vrintx.f32 s5, s30
+EEB70A6F vrintx.f32 s0, s31
+EEB7FA41 vrintx.f32 s30, s2
+EEF70A41 vrintx.f32 s1, s2
+EEF7FA41 vrintx.f32 s31, s2
+EEF77A41 [ne] vrintxne.f32 s15, s2

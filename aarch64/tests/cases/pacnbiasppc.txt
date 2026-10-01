@@ -1,0 +1,3 @@
+// PACNBIASPPC_64LR_dp_1src sf=1|1|S=0|1|101|0110|opcode2=00001|opcode=100000|Rn=11111|Rd=11110
+// Pacnbiasppc64lrDp1src: PACNBIASPPC
+DAC183FE pacnbiasppc

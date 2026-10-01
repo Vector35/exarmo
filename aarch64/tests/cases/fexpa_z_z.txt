@@ -1,0 +1,22 @@
+// fexpa_z_z_ 000|0010|0|size=xx|1|opc=00000|1011|10|Zn=xxxxx|Zd=xxxxx
+// FexpaZZ: FEXPA  <Zd>.<T>, <Zn>.<T>
+// register fields: Zn, Zd
+0460BAFF fexpa z31.h, z23.h
+04E0B8CB fexpa z11.d, z6.d
+0460B829 fexpa z9.h, z1.h
+0460BA76 fexpa z22.h, z19.h
+0460BA32 fexpa z18.h, z17.h
+0460B9A6 fexpa z6.h, z13.h
+0460B93A fexpa z26.h, z9.h
+0460BA2C fexpa z12.h, z17.h
+04E0B9F5 fexpa z21.d, z15.d
+04E0B949 fexpa z9.d, z10.d
+04A0B970 fexpa z16.s, z11.s
+0460B890 fexpa z16.h, z4.h
+04E0BB7B fexpa z27.d, z27.d
+0460BA21 fexpa z1.h, z17.h
+04E0B9E4 fexpa z4.d, z15.d
+04A0BB38 fexpa z24.s, z25.s
+0460B800 fexpa z0.h, z0.h
+0460BBFF fexpa z31.h, z31.h
+0420BAFF UNDEFINED

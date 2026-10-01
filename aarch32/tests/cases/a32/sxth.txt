@@ -1,0 +1,21 @@
+// SXTH_A1 cond=xxxx|011|01|U=0|op=11|Rn=1111|Rd=xxxx|rotate=xx|(0)(0)|011|1|Rm=xxxx
+// SxthA1: SXTH{<c>}{<q>}  {<Rd>, }<Rm> {, ROR #<amount>}
+// register fields: Rd, Rm
+76bfb971 sxthvc r11, r1, ror #16 (unpredictable)
+96bf147d sxthls r1, sp, ror #8
+66bfa17b sxthvs r10, r11 (unpredictable)
+56bf0d77 sxthpl r0, r7, ror #24 (unpredictable)
+96bfe473 sxthls lr, r3, ror #8
+06bf3670 sxtheq r3, r0, ror #8 (unpredictable)
+76bf9a7b sxthvc r9, r11, ror #16 (unpredictable)
+56bfe173 sxthpl lr, r3 (unpredictable)
+// Binary Ninja's tests
+16bf3079 sxthne r3, r9
+d6bf2872 sxthle r2, r2, ror #16
+e6bf1076 sxth r1, r6
+e6bf3478 sxth r3, r8, ror #8
+e6bf9c73 sxth r9, r3, ror #24
+F6BFB971 UNALLOCATED
+86BFFB7F sxthhi pc, pc, ror #0x10 (unpredictable)
+46BFB971 sxthmi r11, r1, ror #0x10 (unpredictable)
+26BFB971 sxthcs r11, r1, ror #0x10 (unpredictable)

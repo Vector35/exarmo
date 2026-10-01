@@ -1,0 +1,29 @@
+// sqadd_z_zi_ 001|0010|1|size=xx|1|00|10|U=0|11|sh=x|imm8=xxxxxxxx|Zdn=xxxxx
+// SqaddZZi: SQADD  <Zdn>.<T>, <Zdn>.<T>, #<imm>{, <shift>}
+// register fields: Zdn
+25A4F99F sqadd z31.s, z31.s, #0xcc, lsl #0x8
+25A4EE88 sqadd z8.s, z8.s, #0x74, lsl #0x8
+25A4C64C sqadd z12.s, z12.s, #0x32
+2564C3AA sqadd z10.h, z10.h, #0x1d
+25E4C3F8 sqadd z24.d, z24.d, #0x1f
+25A4FEBE sqadd z30.s, z30.s, #0xf5, lsl #0x8
+2564D7A9 sqadd z9.h, z9.h, #0xbd
+25E4ED70 sqadd z16.d, z16.d, #0x6b, lsl #0x8
+2564DD63 sqadd z3.h, z3.h, #0xeb
+2564F86C sqadd z12.h, z12.h, #0xc3, lsl #0x8
+2564FD90 sqadd z16.h, z16.h, #0xec, lsl #0x8
+25E4F710 sqadd z16.d, z16.d, #0xb8, lsl #0x8
+25E4C311 sqadd z17.d, z17.d, #0x18
+25E4D764 sqadd z4.d, z4.d, #0xbb
+25E4EB7A sqadd z26.d, z26.d, #0x5b, lsl #0x8
+25E4EA01 sqadd z1.d, z1.d, #0x50, lsl #0x8
+2524C000 sqadd z0.b, z0.b, #0x0
+25A4FFFF sqadd z31.s, z31.s, #0xff, lsl #0x8
+25A4F01F sqadd z31.s, z31.s, #0x80, lsl #0x8
+25A4E81F sqadd z31.s, z31.s, #0x40, lsl #0x8
+25A4E41F sqadd z31.s, z31.s, #0x20, lsl #0x8
+25A4E21F sqadd z31.s, z31.s, #0x10, lsl #0x8
+25A4E11F sqadd z31.s, z31.s, #0x8, lsl #0x8
+25A4E09F sqadd z31.s, z31.s, #0x4, lsl #0x8
+25A4E05F sqadd z31.s, z31.s, #0x2, lsl #0x8
+25A4E03F sqadd z31.s, z31.s, #0x1, lsl #0x8

@@ -1,0 +1,15 @@
+// match_p_p_zz_ 010|0010|1|0|sz=x|1|Zm=xxxxx|100|Pg=xxx|Zn=xxxxx|op=0|Pd=xxxx
+// MatchPPZz: MATCH  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Pg, Zn, Pd
+452E9E05 match p5.b, p7/z, z16.b, z14.b
+45749ACE match p14.h, p6/z, z22.h, z20.h
+452480C5 match p5.b, p0/z, z6.b, z4.b
+452D89AE match p14.b, p2/z, z13.b, z13.b
+4534898F match p15.b, p2/z, z12.b, z20.b
+456F930B match p11.h, p4/z, z24.h, z15.h
+456983E0 match p0.h, p0/z, z31.h, z9.h
+452895C7 match p7.b, p5/z, z14.b, z8.b
+45208405 match p5.b, p1/z, z0.b, z0.b
+453F8E05 match p5.b, p3/z, z16.b, z31.b
+45279CA5 match p5.b, p7/z, z5.b, z7.b
+452E9CEE match p14.b, p7/z, z7.b, z14.b

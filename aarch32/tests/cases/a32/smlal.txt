@@ -1,0 +1,40 @@
+// SMLAL_A1 cond=xxxx|0000|opc=111|S=0|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|1001|Rn=xxxx
+// SmlalA1: SMLAL{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+c0e7be9d smlalgt r11, r7, sp, lr
+e0e9c790 smlal r12, r9, r0, r7
+10e90396 smlalne r0, r9, r6, r3
+30e98398 smlallo r8, r9, r8, r3
+20e80f9b smlalhs r0, r8, r11, pc (unpredictable)
+b0e14b95 smlallt r4, r1, r5, r11
+e0e75b99 smlal r5, r7, r9, r11
+a0ed589e smlalge r5, sp, lr, r8
+// Binary Ninja's tests
+00e32895 smlaleq r2, r3, r5, r8
+e0e32895 smlal r2, r3, r5, r8
+F0E7BE9D UNALLOCATED
+80E0F09F smlalhi pc, r0, pc, r0 (unpredictable)
+40EFBB9D smlalmi r11, pc, sp, r11 (unpredictable)
+C0E77E9E smlalgt r7, r7, lr, lr (unpredictable)
+C0E7B79D smlalgt r11, r7, sp, r7
+C0E7BE97 smlalgt r11, r7, r7, lr
+
+// SMLALS_A1 cond=xxxx|0000|opc=111|S=1|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|1001|Rn=xxxx
+// SmlalsA1: SMLALS{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+00fd2e92 smlalseq r2, sp, r2, lr
+b0f13b91 smlalslt r3, r1, r1, r11
+d0fe9d9c smlalsle r9, lr, r12, sp
+c0f1f893 smlalsgt pc, r1, r3, r8 (unpredictable)
+00fd9595 smlalseq r9, sp, r5, r5
+10faf19e smlalsne pc, r10, lr, r1 (unpredictable)
+e0f9ce97 smlals r12, r9, r7, lr
+d0f25295 smlalsle r5, r2, r5, r2
+// Binary Ninja's tests
+80f32895 smlalshi r2, r3, r5, r8
+e0f32895 smlals r2, r3, r5, r8
+F0FD2E92 UNALLOCATED
+40F00090 smlalsmi r0, r0, r0, r0 (unpredictable)
+20FF2F9F smlalscs r2, pc, pc, pc (unpredictable)
+00FDDE92 smlalseq sp, sp, r2, lr (unpredictable)
+00FD2292 smlalseq r2, sp, r2, r2

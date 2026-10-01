@@ -1,0 +1,40 @@
+// SMLALD_A1 cond=xxxx|01110|op1=100|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|00|M=0|1|Rn=xxxx
+// SmlaldA1: SMLALD{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+c7497d10 smlaldgt r7, r9, r0, sp
+e74baa1f smlald r10, r11, pc, r10 (unpredictable)
+77426c18 smlaldvc r6, r2, r8, r12
+07442f1d smlaldeq r2, r4, sp, pc (unpredictable)
+e7440415 smlald r0, r4, r5, r4
+4746a312 smlaldmi r10, r6, r2, r3
+67423c11 smlaldvs r3, r2, r1, r12
+c7443e1a smlaldgt r3, r4, r10, lr
+// Binary Ninja's tests
+07432815 smlaldeq r2, r3, r5, r8
+e7432815 smlald r2, r3, r5, r8
+F7497D10 UNALLOCATED
+8740F010 smlaldhi pc, r0, r0, r0 (unpredictable)
+274F7D17 smlaldcs r7, pc, r7, sp (unpredictable)
+17499D1D smlaldne r9, r9, sp, sp (unpredictable)
+C7497D19 smlaldgt r7, r9, r9, sp
+
+// SMLALDX_A1 cond=xxxx|01110|op1=100|RdHi=xxxx|RdLo=xxxx|Rm=xxxx|00|M=1|1|Rn=xxxx
+// SmlaldxA1: SMLALDX{<c>}{<q>}  <RdLo>, <RdHi>, <Rn>, <Rm>
+// register fields: RdHi, RdLo, Rm, Rn
+7749b336 smlaldxvc r11, r9, r6, r3
+774ae13d smlaldxvc lr, r10, sp, r1
+8746bf32 smlaldxhi r11, r6, r2, pc (unpredictable)
+e7431435 smlaldx r1, r3, r5, r4
+e74b9038 smlaldx r9, r11, r8, r0
+17492c31 smlaldxne r2, r9, r1, r12
+574d3933 smlaldxpl r3, sp, r3, r9
+97440639 smlaldxls r0, r4, r9, r6
+// Binary Ninja's tests
+87432835 smlaldxhi r2, r3, r5, r8
+e7432835 smlaldx r2, r3, r5, r8
+0740F330 smlaldxeq pc, r0, r0, r3 (unpredictable)
+F749B336 UNALLOCATED
+474FBB3F smlaldxmi r11, pc, pc, r11 (unpredictable)
+27499333 smlaldxcs r9, r9, r3, r3 (unpredictable)
+7749B936 smlaldxvc r11, r9, r6, r9
+7749B339 smlaldxvc r11, r9, r9, r3

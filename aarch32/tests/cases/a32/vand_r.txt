@@ -1,0 +1,43 @@
+// VAND_r_A1_D 1111001|U=0|0|D=x|size=00|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=0|M=x|o1=1|Vm=xxxx
+// VandRA1D: VAND{<c>}{<q>}{.<dt>}  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+f2459119 vand d25, d5, d9
+f206d136 vand d13, d6, d22
+f24cd19c vand d29, d28, d12
+f206311d vand d3, d6, d13
+f24b9193 vand d25, d27, d3
+f24121b0 vand d18, d17, d16
+f20f1134 vand d1, d15, d20
+f24a2197 vand d18, d26, d7
+F240011F vand d16, d0, d15
+F248F118 vand d31, d8, d8
+F2448112 vand d24, d4, d2
+F2424111 vand d20, d2, d1
+F2000110 vand d0, d0, d0
+F200F19F vand d15, d16, d15
+F24F01BF vand d16, d31, d31
+F245F119 vand d31, d5, d9
+
+// VAND_r_A1_Q 1111001|U=0|0|D=x|size=00|Vn=xxxx|Vd=xxxx|opc=0001|N=x|Q=1|M=x|o1=1|Vm=xxxx
+// VandRA1Q: VAND{<c>}{<q>}{.<dt>}  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+f2088174 vand q4, q4, q10
+f20cc152 vand q6, q6, q1
+f24441d6 vand q10, q10, q3
+f24c017e vand q8, q6, q15
+f244e1f2 vand q15, q10, q9
+f24ac1da vand q14, q13, q5
+f24cc1d8 vand q14, q14, q4
+f20ec17a vand q6, q7, q13
+F2002170 vand q1, q0, q8
+F20FF17F UNDEFINED
+F2020150 vand q0, q1, q0
+F2011171 UNDEFINED
+F20FF15F UNDEFINED
+F24FF1FF UNDEFINED
+F2008170 vand q4, q0, q8
+F20081F4 vand q4, q8, q10

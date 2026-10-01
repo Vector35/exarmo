@@ -1,0 +1,69 @@
+// sshllt_z_zi_ 010|0010|1|0|tszh=x|0|tszl=xx|imm3=xxx|10|10|U=0|T=1|Zn=xxxxx|Zd=xxxxx
+// SshlltZZi: SSHLLT  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+4542A64D sshllt z13.d, z18.s, #0x2
+455DA587 sshllt z7.d, z12.s, #0x1d
+4549A73B sshllt z27.d, z25.s, #0x9
+4513A637 sshllt z23.s, z17.h, #0x3
+455DA679 sshllt z25.d, z19.s, #0x1d
+4547A454 sshllt z20.d, z2.s, #0x7
+454BA498 sshllt z24.d, z4.s, #0xb
+454FA6DF sshllt z31.d, z22.s, #0xf
+4540A400 sshllt z0.d, z0.s, #0x0
+4544A7ED sshllt z13.d, z31.s, #0x4
+4546A64D sshllt z13.d, z18.s, #0x6
+4500A64D UNDEFINED
+4501A64D UNDEFINED
+4502A64D UNDEFINED
+4503A64D UNDEFINED
+4504A64D UNDEFINED
+4505A64D UNDEFINED
+4506A64D UNDEFINED
+4507A64D UNDEFINED
+4508A64D sshllt z13.h, z18.b, #0x0
+4509A64D sshllt z13.h, z18.b, #0x1
+450AA64D sshllt z13.h, z18.b, #0x2
+450BA64D sshllt z13.h, z18.b, #0x3
+450CA64D sshllt z13.h, z18.b, #0x4
+450DA64D sshllt z13.h, z18.b, #0x5
+450EA64D sshllt z13.h, z18.b, #0x6
+450FA64D sshllt z13.h, z18.b, #0x7
+4510A64D sshllt z13.s, z18.h, #0x0
+4511A64D sshllt z13.s, z18.h, #0x1
+4512A64D sshllt z13.s, z18.h, #0x2
+4514A64D sshllt z13.s, z18.h, #0x4
+4515A64D sshllt z13.s, z18.h, #0x5
+4516A64D sshllt z13.s, z18.h, #0x6
+4517A64D sshllt z13.s, z18.h, #0x7
+4518A64D sshllt z13.s, z18.h, #0x8
+4519A64D sshllt z13.s, z18.h, #0x9
+451AA64D sshllt z13.s, z18.h, #0xa
+451BA64D sshllt z13.s, z18.h, #0xb
+451CA64D sshllt z13.s, z18.h, #0xc
+451DA64D sshllt z13.s, z18.h, #0xd
+451EA64D sshllt z13.s, z18.h, #0xe
+451FA64D sshllt z13.s, z18.h, #0xf
+4541A64D sshllt z13.d, z18.s, #0x1
+4543A64D sshllt z13.d, z18.s, #0x3
+4545A64D sshllt z13.d, z18.s, #0x5
+4548A64D sshllt z13.d, z18.s, #0x8
+454AA64D sshllt z13.d, z18.s, #0xa
+454CA64D sshllt z13.d, z18.s, #0xc
+454DA64D sshllt z13.d, z18.s, #0xd
+454EA64D sshllt z13.d, z18.s, #0xe
+4550A64D sshllt z13.d, z18.s, #0x10
+4551A64D sshllt z13.d, z18.s, #0x11
+4552A64D sshllt z13.d, z18.s, #0x12
+4553A64D sshllt z13.d, z18.s, #0x13
+4554A64D sshllt z13.d, z18.s, #0x14
+4555A64D sshllt z13.d, z18.s, #0x15
+4556A64D sshllt z13.d, z18.s, #0x16
+4557A64D sshllt z13.d, z18.s, #0x17
+4558A64D sshllt z13.d, z18.s, #0x18
+4559A64D sshllt z13.d, z18.s, #0x19
+455AA64D sshllt z13.d, z18.s, #0x1a
+455BA64D sshllt z13.d, z18.s, #0x1b
+455CA64D sshllt z13.d, z18.s, #0x1c
+455EA64D sshllt z13.d, z18.s, #0x1e
+455FA64D sshllt z13.d, z18.s, #0x1f

@@ -1,0 +1,41 @@
+// RCWCLR_64_memop 0|S=0|111|VR=0|00|A=0|R=0|1|Rs=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwclr64Memop: RCWCLR  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+38209004 rcwclr x0, x4, [x0]
+3820900B rcwclr x0, x11, [x0]
+38209012 rcwclr x0, x18, [x0]
+383F93E0 rcwclr xzr, x0, [sp]
+3820901F rcwclr x0, xzr, [x0]
+38209000 rcwclr x0, x0, [x0]
+38219043 rcwclr x1, x3, [x2]
+
+// RCWCLRA_64_memop 0|S=0|111|VR=0|00|A=1|R=0|1|Rs=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwclra64Memop: RCWCLRA  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+38A09000 rcwclra x0, x0, [x0]
+38A09007 rcwclra x0, x7, [x0]
+38A0900E rcwclra x0, x14, [x0]
+38BF93FF rcwclra xzr, xzr, [sp]
+38A19043 rcwclra x1, x3, [x2]
+
+// RCWCLRAL_64_memop 0|S=0|111|VR=0|00|A=1|R=1|1|Rs=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwclral64Memop: RCWCLRAL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+38E09005 rcwclral x0, x5, [x0]
+38E0900C rcwclral x0, x12, [x0]
+38E09013 rcwclral x0, x19, [x0]
+38FF93E0 rcwclral xzr, x0, [sp]
+38E0901F rcwclral x0, xzr, [x0]
+38E09000 rcwclral x0, x0, [x0]
+38E19043 rcwclral x1, x3, [x2]
+
+// RCWCLRL_64_memop 0|S=0|111|VR=0|00|A=0|R=1|1|Rs=xxxxx|o3=1|opc=001|00|Rn=xxxxx|Rt=xxxxx
+// Rcwclrl64Memop: RCWCLRL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+38609002 rcwclrl x0, x2, [x0]
+38609009 rcwclrl x0, x9, [x0]
+38609010 rcwclrl x0, x16, [x0]
+387F93E0 rcwclrl xzr, x0, [sp]
+3860901F rcwclrl x0, xzr, [x0]
+38609000 rcwclrl x0, x0, [x0]
+38619043 rcwclrl x1, x3, [x2]

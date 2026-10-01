@@ -1,0 +1,76 @@
+// SQDMLAL_asimddiff_L 0|Q=x|U=0|0|111|0|size=xx|1|Rm=xxxxx|10|o1=0|1|00|Rn=xxxxx|Rd=xxxxx
+// SqdmlalAsimddiffL: SQDMLAL  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// SqdmlalAsimddiffL2: SQDMLAL2  <Vd>.<Ta>, <Vn>.<Tb>, <Vm>.<Tb>
+// read together by <Tb>: Q, size
+// register fields: Rm, Rn, Rd
+// form chosen on: Q
+4E779159 sqdmlal2 v25.4s, v10.8h, v23.8h
+4E7D934D sqdmlal2 v13.4s, v26.8h, v29.8h
+4EB193FE sqdmlal2 v30.2d, v31.4s, v17.4s
+0EA59127 sqdmlal v7.2d, v9.2s, v5.2s
+0E729018 sqdmlal v24.4s, v0.4h, v18.4h
+0E679237 sqdmlal v23.4s, v17.4h, v7.4h
+4E759229 sqdmlal2 v9.4s, v17.8h, v21.8h
+0E7D907B sqdmlal v27.4s, v3.4h, v29.4h
+0EA1907D sqdmlal v29.2d, v3.2s, v1.2s
+4EBD9011 sqdmlal2 v17.2d, v0.4s, v29.4s
+0E7090FA sqdmlal v26.4s, v7.4h, v16.4h
+4EAE9380 sqdmlal2 v0.2d, v28.4s, v14.4s
+0E669035 sqdmlal v21.4s, v1.4h, v6.4h
+0E7E92A2 sqdmlal v2.4s, v21.4h, v30.4h
+4E7391EE sqdmlal2 v14.4s, v15.8h, v19.8h
+0E619073 sqdmlal v19.4s, v3.4h, v1.4h
+4E60915F sqdmlal2 v31.4s, v10.8h, v0.8h
+4E7F9159 sqdmlal2 v25.4s, v10.8h, v31.8h
+4E379159 UNDEFINED
+4EF79159 UNDEFINED
+0E379159 UNDEFINED
+0EF79159 UNDEFINED
+4E7792F9 sqdmlal2 v25.4s, v23.8h, v23.8h
+4E779157 sqdmlal2 v23.4s, v10.8h, v23.8h
+4E77914A sqdmlal2 v10.4s, v10.8h, v23.8h
+4E619073 sqdmlal2 v19.4s, v3.8h, v1.8h
+
+// SQDMLAL_asisddiff_only 01|U=0|1|111|0|size=xx|1|Rm=xxxxx|10|o1=0|1|00|Rn=xxxxx|Rd=xxxxx
+// SqdmlalAsisddiffOnly: SQDMLAL  <Va><d>, <Vb><n>, <Vb><m>
+// read together by <d>: size, Rd
+// read together by <n>: size, Rn
+// read together by <m>: size, Rm
+// register fields: Rm, Rn, Rd
+5EB99221 sqdmlal d1, s17, s25
+5E6D9398 sqdmlal s24, h28, h13
+5EB39065 sqdmlal d5, s3, s19
+5E7993A9 sqdmlal s9, h29, h25
+5E6B9194 sqdmlal s20, h12, h11
+5E6A9040 sqdmlal s0, h2, h10
+5E66937A sqdmlal s26, h27, h6
+5E6D92BD sqdmlal s29, h21, h13
+5EB49192 sqdmlal d18, s12, s20
+5EA292AB sqdmlal d11, s21, s2
+5EA190E0 sqdmlal d0, s7, s1
+5EAD90E1 sqdmlal d1, s7, s13
+5E659181 sqdmlal s1, h12, h5
+5E649263 sqdmlal s3, h19, h4
+5EBA9203 sqdmlal d3, s16, s26
+5E6B90AB sqdmlal s11, h5, h11
+5EA0901F sqdmlal d31, s0, s0
+5EBF93E1 sqdmlal d1, s31, s31
+5E399221 UNDEFINED
+5EF99221 UNDEFINED
+5E399220 UNDEFINED
+5E39923F UNDEFINED
+5E79923F sqdmlal s31, h17, h25
+5EF99220 UNDEFINED
+5EF9923F UNDEFINED
+5E209221 UNDEFINED
+5E3F9221 UNDEFINED
+5E609231 sqdmlal s17, h17, h0
+5E7F9221 sqdmlal s1, h17, h31
+5EE09221 UNDEFINED
+5EFF9221 UNDEFINED
+5E399001 UNDEFINED
+5E3993E1 UNDEFINED
+5E799001 sqdmlal s1, h0, h25
+5E7993E1 sqdmlal s1, h31, h25
+5EF99001 UNDEFINED
+5EF993E1 UNDEFINED

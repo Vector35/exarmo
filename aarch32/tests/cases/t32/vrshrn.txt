@@ -1,0 +1,23 @@
+// VRSHRN_T1 111|U=0|11|11|1|D=x|imm6=xxxxxx|Vd=xxxx|opc=1000|L=0|Q=1|M=x|1|Vm=xxxx
+// VrshrnT1: VRSHRN{<c>}{<q>}.I<size>  <Dd>, <Qm>, #<imm>
+// read together by <Dd>: D, Vd
+// read together by <Qm>: M, Vm
+// IT state read: condition
+efa4a87e vrshrn.i64 d10, q15, #28
+efd29852 vrshrn.i32 d25, q1, #14
+efb80858 vrshrn.i64 d0, q4, #8
+efebc858 vrshrn.i64 d28, q4, #21
+effb7854 vrshrn.i64 d23, q2, #5
+efaf2854 vrshrn.i64 d2, q2, #17
+efbbf876 vrshrn.i64 d15, q11, #5
+efee3854 vrshrn.i64 d19, q2, #18
+EFC0985F UNDEFINED
+EFBF8870 vrshrn.i64 d8, q8, #0x1
+EFA04850 vrshrn.i64 d4, q0, #0x20
+EF901870 vrshrn.i32 d1, q8, #0x10
+EFC8087E vrshrn.i16 d16, q15, #0x8
+EFC49851 UNDEFINED
+EFC2985F UNDEFINED
+EFC1987F UNDEFINED
+EFE4F87E vrshrn.i64 d31, q15, #0x1c
+EFA4A87E [ne] vrshrnne.i64 d10, q15, #0x1c

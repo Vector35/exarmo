@@ -1,0 +1,10 @@
+// bfadd_z_zz_ 011|0010|1|size=00|0|Zm=xxxxx|000|opc=000|Zn=xxxxx|Zd=xxxxx
+// BfaddZZz: BFADD  <Zd>.H, <Zn>.H, <Zm>.H
+// register fields: Zm, Zn, Zd
+65000004 bfadd z4.h, z0.h, z0.h
+6500000B bfadd z11.h, z0.h, z0.h
+65000012 bfadd z18.h, z0.h, z0.h
+651F03E0 bfadd z0.h, z31.h, z31.h
+6500001F bfadd z31.h, z0.h, z0.h
+65000000 bfadd z0.h, z0.h, z0.h
+65010043 bfadd z3.h, z2.h, z1.h

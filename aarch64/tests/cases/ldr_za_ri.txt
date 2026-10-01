@@ -1,0 +1,15 @@
+// ldr_za_ri_ 1|11|0000|100|op=0|00000|0|Rv=xx|000|Rn=xxxxx|0|off4=xxxx
+// LdrZaRi: LDR  ZA[<Wv>, <offs>], [<Xn|SP>{, #<offs>, MUL VL}]
+// register fields: Rv, Rn
+E100004D ldr za[w12, 13], [x2, #0xd, mul vl]
+E10041EE ldr za[w14, 14], [x15, #0xe, mul vl]
+E10043EB ldr za[w14, 11], [sp, #0xb, mul vl]
+E10063EB ldr za[w15, 11], [sp, #0xb, mul vl]
+E10062A0 ldr za[w15, 0], [x21]
+E100212F ldr za[w13, 15], [x9, #0xf, mul vl]
+E1002208 ldr za[w13, 8], [x16, #0x8, mul vl]
+E1002128 ldr za[w13, 8], [x9, #0x8, mul vl]
+E100000D ldr za[w12, 13], [x0, #0xd, mul vl]
+E1000044 ldr za[w12, 4], [x2, #0x4, mul vl]
+E1000042 ldr za[w12, 2], [x2, #0x2, mul vl]
+E1000041 ldr za[w12, 1], [x2, #0x1, mul vl]

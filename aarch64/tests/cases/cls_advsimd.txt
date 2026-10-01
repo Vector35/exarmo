@@ -1,0 +1,23 @@
+// CLS_asimdmisc_R 0|Q=x|U=0|0|111|0|size=xx|10000|opcode=00100|10|Rn=xxxxx|Rd=xxxxx
+// ClsAsimdmiscR: CLS  <Vd>.<T>, <Vn>.<T>
+// read together by <T>: Q, size
+// register fields: Rn, Rd
+4EA04AE8 cls v8.4s, v23.4s
+4EA04ABC cls v28.4s, v21.4s
+4E204970 cls v16.16b, v11.16b
+0E604902 cls v2.4h, v8.4h
+0E204AE4 cls v4.8b, v23.8b
+0E604BD8 cls v24.4h, v30.4h
+4EA04BED cls v13.4s, v31.4s
+4EA04A2C cls v12.4s, v17.4s
+4E604B38 cls v24.8h, v25.8h
+4E204A14 cls v20.16b, v16.16b
+4E204868 cls v8.16b, v3.16b
+4EA04A65 cls v5.4s, v19.4s
+4E204931 cls v17.16b, v9.16b
+0EA048D2 cls v18.2s, v6.2s
+4E604A02 cls v2.8h, v16.8h
+0E204B5F cls v31.8b, v26.8b
+4EA04800 cls v0.4s, v0.4s
+4EE04AE8 UNDEFINED
+0EE04AE8 UNDEFINED

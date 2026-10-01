@@ -1,0 +1,24 @@
+// index_z_ii_ 000|0010|0|size=xx|1|imm5b=xxxxx|0100|00|imm5=xxxxx|Zd=xxxxx
+// IndexZIi: INDEX  <Zd>.<T>, #<imm1>, #<imm2>
+// register fields: Zd
+04E6411D index z29.d, #0x8, #0x6
+04F4429B index z27.d, #-12, #-12
+042441DD index z29.b, #0xe, #0x4
+04A343D1 index z17.s, #-2, #0x3
+0463400D index z13.h, #0x0, #0x3
+04F842EE index z14.d, #-9, #-8
+04BC43D7 index z23.s, #-2, #-4
+043C418E index z14.b, #0xc, #-4
+047E4259 index z25.h, #-14, #-2
+04F243D2 index z18.d, #-2, #-14
+04BB4102 index z2.s, #0x8, #-5
+04A04097 index z23.s, #0x4, #0x0
+04F0425C index z28.d, #-14, #-16
+046843FC index z28.h, #-1, #0x8
+047041BE index z30.h, #0xd, #-16
+04ED4182 index z2.d, #0xc, #0xd
+04FF4100 index z0.d, #0x8, #-0x1
+04E6411F index z31.d, #0x8, #0x6
+04E2421D index z29.d, #-0x10, #0x2
+04E1405D index z29.d, #0x2, #0x1
+04E6403D index z29.d, #0x1, #0x6

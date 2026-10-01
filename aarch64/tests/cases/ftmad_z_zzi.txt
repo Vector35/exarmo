@@ -1,0 +1,23 @@
+// ftmad_z_zzi_ 011|0010|1|size=xx|0|10|imm3=xxx|100|000|Zm=xxxxx|Zdn=xxxxx
+// FtmadZZzi: FTMAD  <Zdn>.<T>, <Zdn>.<T>, <Zm>.<T>, #<imm>
+// register fields: Zm, Zdn
+659483CC ftmad z12.s, z12.s, z30.s, #0x4
+6597816D ftmad z13.s, z13.s, z11.s, #0x7
+655082E6 ftmad z6.h, z6.h, z23.h, #0x0
+65548177 ftmad z23.h, z23.h, z11.h, #0x4
+65548013 ftmad z19.h, z19.h, z0.h, #0x4
+65D7822C ftmad z12.d, z12.d, z17.d, #0x7
+65D68119 ftmad z25.d, z25.d, z8.d, #0x6
+65918370 ftmad z16.s, z16.s, z27.s, #0x1
+65528061 ftmad z1.h, z1.h, z3.h, #0x2
+65938015 ftmad z21.s, z21.s, z0.s, #0x3
+65968217 ftmad z23.s, z23.s, z16.s, #0x6
+659681A7 ftmad z7.s, z7.s, z13.s, #0x6
+655383D3 ftmad z19.h, z19.h, z30.h, #0x3
+65D48029 ftmad z9.d, z9.d, z1.d, #0x4
+65D083B0 ftmad z16.d, z16.d, z29.d, #0x0
+655283FC ftmad z28.h, z28.h, z31.h, #0x2
+659583C0 ftmad z0.s, z0.s, z30.s, #0x5
+659483DF ftmad z31.s, z31.s, z30.s, #0x4
+651483CC UNDEFINED
+659483DE ftmad z30.s, z30.s, z30.s, #0x4

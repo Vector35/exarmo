@@ -1,0 +1,10 @@
+// mlapt_z_zzz_ 010|0010|0|opc=11|0|Zm=xxxxx|1101|o2=0|0|Zn=xxxxx|Zda=xxxxx
+// MlaptZZzz: MLAPT  <Zda>.D, <Zn>.D, <Zm>.D
+// register fields: Zm, Zn, Zda
+44C0D004 mlapt z4.d, z0.d, z0.d
+44C0D00B mlapt z11.d, z0.d, z0.d
+44C0D012 mlapt z18.d, z0.d, z0.d
+44DFD3E0 mlapt z0.d, z31.d, z31.d
+44C0D01F mlapt z31.d, z0.d, z0.d
+44C0D000 mlapt z0.d, z0.d, z0.d
+44C1D043 mlapt z3.d, z2.d, z1.d

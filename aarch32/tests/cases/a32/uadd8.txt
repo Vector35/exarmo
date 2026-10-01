@@ -1,0 +1,19 @@
+// UADD8_A1 cond=xxxx|011|00|op1=101|Rn=xxxx|Rd=xxxx|(1)(1)(1)(1)|B=1|op2=00|1|Rm=xxxx
+// Uadd8A1: UADD8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+06529d90 uadd8eq r9, r2, r0 (unpredictable)
+065fcb90 uadd8eq r12, pc, r0 (unpredictable)
+c659779a uadd8gt r7, r9, r10 (unpredictable)
+c659c39a uadd8gt r12, r9, r10 (unpredictable)
+8655a491 uadd8hi r10, r5, r1 (unpredictable)
+9657ef93 uadd8ls lr, r7, r3
+e6553092 uadd8 r3, r5, r2 (unpredictable)
+965fd891 uadd8ls sp, pc, r1 (unpredictable)
+// Binary Ninja's tests
+d6521f93 uadd8le r1, r2, r3
+e6521f93 uadd8 r1, r2, r3
+F6529D90 UNALLOCATED
+4650029F uadd8mi r0, r0, pc (unpredictable)
+2652F192 uadd8cs pc, r2, r2 (unpredictable)
+16522D90 uadd8ne r2, r2, r0 (unpredictable)
+06529D99 uadd8eq r9, r2, r9 (unpredictable)

@@ -1,0 +1,33 @@
+// STMIB_A1 cond=xxxx|10|0|P=1|U=1|op=0|W=x|L=0|Rn=xxxx|register_list=xxxxxxxxxxxxxxxx
+// StmibA1: STMIB{<c>}{<q>}  <Rn>{<!>}, <registers>
+// register fields: Rn
+2983ceb8 stmibhs r3, {r3, r4, r5, r7, r9, r10, r11, lr, pc}
+09a35cb3 stmibeq r3!, {r0, r1, r4, r5, r7, r10, r11, r12, lr}
+e9a13dcd stmib r1!, {r0, r2, r3, r6, r7, r8, r10, r11, r12, sp}
+c9a07d27 stmibgt r0!, {r0, r1, r2, r5, r8, r10, r11, r12, sp, lr}
+09a994e0 stmibeq r9!, {r5, r6, r7, r10, r12, pc}
+e9a52b73 stmib r5!, {r0, r1, r4, r5, r6, r8, r9, r11, sp}
+19a04355 stmibne r0!, {r0, r2, r4, r6, r8, r9, lr}
+79af77af stmibvc pc!, {r0, r1, r2, r3, r5, r7, r8, r9, r10, r12, sp, lr} (unpredictable)
+// Binary Ninja's tests
+e984207a stmib r4, {r1, r3, r4, r5, r6, sp}
+e9a9207a stmib r9!, {r1, r3, r4, r5, r6, sp}
+F983CEB8 UNALLOCATED
+89830000 stmibhi r3, {} (unpredictable)
+4983FFFF stmibmi r3, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, sp, lr, pc}
+29838000 stmibcs r3, {pc}
+29834000 stmibcs r3, {lr}
+29832000 stmibcs r3, {sp}
+29831000 stmibcs r3, {r12}
+29830800 stmibcs r3, {r11}
+29830400 stmibcs r3, {r10}
+29830200 stmibcs r3, {r9}
+29830100 stmibcs r3, {r8}
+29830080 stmibcs r3, {r7}
+29830040 stmibcs r3, {r6}
+29830020 stmibcs r3, {r5}
+29830010 stmibcs r3, {r4}
+29830008 stmibcs r3, {r3}
+29830004 stmibcs r3, {r2}
+29830002 stmibcs r3, {r1}
+29830001 stmibcs r3, {r0}

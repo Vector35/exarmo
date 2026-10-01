@@ -1,0 +1,14 @@
+// fvdott_za32_z8z8i_2xi 1|10|0000|1|11|01|Zm=xxxx|0|Rv=xx|01|i2h=x|Zn=xxxx|0|T=1|i2l=x|off3=xxx
+// FvdottZa32Z8z8i2xi: FVDOTT  ZA.S[<Wv>, <offs>, VGx4], { <Zn1>.B-<Zn2>.B }, <Zm>.B[<index>]
+// read together by <index>: i2h, i2l
+// register fields: Zm, Rv, Zn
+C1D00811 fvdott za.s[w8, 1, vgx4], {z0.b-z1.b}, z0.b[0]
+C1D00818 fvdott za.s[w8, 0, vgx4], {z0.b-z1.b}, z0.b[1]
+C1D0081F fvdott za.s[w8, 7, vgx4], {z0.b-z1.b}, z0.b[1]
+C1DF2FD2 fvdott za.s[w9, 2, vgx4], {z30.b-z31.b}, z15.b[2]
+C1D04813 fvdott za.s[w10, 3, vgx4], {z0.b-z1.b}, z0.b[0]
+C1D06814 fvdott za.s[w11, 4, vgx4], {z0.b-z1.b}, z0.b[0]
+C1D00815 fvdott za.s[w8, 5, vgx4], {z0.b-z1.b}, z0.b[0]
+C1D00816 fvdott za.s[w8, 6, vgx4], {z0.b-z1.b}, z0.b[0]
+C1D00C19 fvdott za.s[w8, 1, vgx4], {z0.b-z1.b}, z0.b[3]
+C1D148D1 fvdott za.s[w10, 1, vgx4], {z6.b-z7.b}, z1.b[0]

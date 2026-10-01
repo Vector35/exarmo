@@ -1,0 +1,24 @@
+// uqinch_z_zs_ 000|0010|0|size=01|1|0|imm4=xxxx|11|00|D=0|U=1|pattern=xxxxx|Zdn=xxxxx
+// UqinchZZs: UQINCH  <Zdn>.H{, <pattern>{, MUL #<imm>}}
+// register fields: Zdn
+046AC7CA uqinch z10.h, mul3, mul #0xb
+046CC666 uqinch z6.h, #0x13, mul #0xd
+0462C548 uqinch z8.h, vl32, mul #0x3
+0465C76E uqinch z14.h, #0x1b, mul #0x6
+046CC505 uqinch z5.h, vl8, mul #0xd
+0469C5B0 uqinch z16.h, vl256, mul #0xa
+0465C66C uqinch z12.h, #0x13, mul #0x6
+0463C5A2 uqinch z2.h, vl256, mul #0x4
+0469C699 uqinch z25.h, #0x14, mul #0xa
+0463C45C uqinch z28.h, vl2, mul #0x4
+046FC512 uqinch z18.h, vl8, mul #0x10
+0464C662 uqinch z2.h, #0x13, mul #0x5
+0467C526 uqinch z6.h, vl16, mul #0x8
+046EC583 uqinch z3.h, vl128, mul #0xf
+0462C5E0 uqinch z0.h, #0xf, mul #0x3
+0468C6D1 uqinch z17.h, #0x16, mul #0x9
+0460C41F uqinch z31.h, pow2
+046AC7EA uqinch z10.h, all, mul #0xb
+0461C60A uqinch z10.h, #0x10, mul #0x2
+046AC48A uqinch z10.h, vl4, mul #0xb
+046AC42A uqinch z10.h, vl1, mul #0xb

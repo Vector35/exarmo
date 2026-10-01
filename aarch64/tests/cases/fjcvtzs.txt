@@ -1,0 +1,20 @@
+// FJCVTZS_32D_float2int sf=0|0|S=0|1|111|0|ftype=01|1|rmode=11|opcode=110|000000|Rn=xxxxx|Rd=xxxxx
+// Fjcvtzs32dFloat2int: FJCVTZS  <Wd>, <Dn>
+// register fields: Rn, Rd
+1E7E03CE fjcvtzs w14, d30
+1E7E02F2 fjcvtzs w18, d23
+1E7E03F7 fjcvtzs w23, d31
+1E7E003A fjcvtzs w26, d1
+1E7E014A fjcvtzs w10, d10
+1E7E0377 fjcvtzs w23, d27
+1E7E01E9 fjcvtzs w9, d15
+1E7E0020 fjcvtzs w0, d1
+1E7E0050 fjcvtzs w16, d2
+1E7E00A5 fjcvtzs w5, d5
+1E7E02F7 fjcvtzs w23, d23
+1E7E00A4 fjcvtzs w4, d5
+1E7E037B fjcvtzs w27, d27
+1E7E00F8 fjcvtzs w24, d7
+1E7E010E fjcvtzs w14, d8
+1E7E0031 fjcvtzs w17, d1
+1E7E001F fjcvtzs wzr, d0

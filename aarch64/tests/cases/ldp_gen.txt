@@ -1,0 +1,180 @@
+// LDP_32_ldstpair_off opc=00|101|VR=0|010|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldp32LdstpairOff: LDP  <Wt1>, <Wt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+2954DC57 ldp w23, w23, [x2, #0xa4] (unpredictable)
+2944FB15 ldp w21, w30, [x24, #0x24]
+29534DF4 ldp w20, w19, [x15, #0x98]
+29705E8E ldp w14, w23, [x20, #-0x80]
+29427BF1 ldp w17, w30, [sp, #0x10]
+294A4EB1 ldp w17, w19, [x21, #0x50]
+2942D06B ldp w11, w20, [x3, #0x14]
+296323EB ldp w11, w8, [sp, #-0xe8]
+297CE8F0 ldp w16, w26, [x7, #-0x1c]
+294EF5EA ldp w10, w29, [x15, #0x74]
+29463A00 ldp w0, w14, [x16, #0x30]
+29760618 ldp w24, w1, [x16, #-0x50]
+294F0AE5 ldp w5, w2, [x23, #0x78]
+2975E7E4 ldp w4, w25, [sp, #-0x54]
+2976F11D ldp w29, w28, [x8, #-0x4c]
+297C87B4 ldp w20, w1, [fp, #-0x1c]
+2940001F ldp wzr, w0, [x0]
+297FFC57 ldp w23, wzr, [x2, #-0x4]
+2954DC42 ldp w2, w23, [x2, #0xa4]
+29605C57 ldp w23, w23, [x2, #-0x100] (unpredictable)
+29505C57 ldp w23, w23, [x2, #0x80] (unpredictable)
+29485C57 ldp w23, w23, [x2, #0x40] (unpredictable)
+29445C57 ldp w23, w23, [x2, #0x20] (unpredictable)
+29415C57 ldp w23, w23, [x2, #0x8] (unpredictable)
+2940DC57 ldp w23, w23, [x2, #0x4] (unpredictable)
+29607B15 ldp w21, w30, [x24, #-0x100]
+29507B15 ldp w21, w30, [x24, #0x80]
+29487B15 ldp w21, w30, [x24, #0x40]
+29447B15 ldp w21, w30, [x24, #0x20]
+29417B15 ldp w21, w30, [x24, #0x8]
+2940FB15 ldp w21, w30, [x24, #0x4]
+
+// LDP_32_ldstpair_post opc=00|101|VR=0|001|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldp32LdstpairPost: LDP  <Wt1>, <Wt2>, [<Xn|SP>], #<imm>
+// register fields: Rt2, Rn, Rt
+28FB9692 ldp w18, w5, [x20], #-0x24
+28CF7BCE ldp w14, w30, [lr], #0x78 (unpredictable)
+28F5773F ldp wzr, w29, [x25], #-0x58
+28E02A92 ldp w18, w10, [x20], #-0x100
+28EC81CE ldp w14, w0, [x14], #-156 (unpredictable)
+28F02F4E ldp w14, w11, [x26], #-0x80
+28C44AB4 ldp w20, w18, [x21], #0x20
+28FAF828 ldp w8, w30, [x1], #-0x2c
+28E8CCF5 ldp w21, w19, [x7], #-0xbc
+28CC8674 ldp w20, w1, [x19], #0x64
+28D971C8 ldp w8, w28, [x14], #0xc8
+28F8D623 ldp w3, w21, [x17], #-0x3c
+28CCEC2E ldp w14, w27, [x1], #0x64
+28D3A6F6 ldp w22, w9, [x23], #0x9c
+28C05006 ldp w6, w20, [x0], #0x0
+28E325AC ldp w12, w9, [x13], #-0xe8
+28FFFFE0 ldp w0, wzr, [sp], #-0x4
+28FB9685 ldp w5, w5, [x20], #-0x24 (unpredictable)
+28D01692 ldp w18, w5, [x20], #0x80
+28C81692 ldp w18, w5, [x20], #0x40
+28C21692 ldp w18, w5, [x20], #0x10
+28C11692 ldp w18, w5, [x20], #0x8
+28C09692 ldp w18, w5, [x20], #0x4
+
+// LDP_32_ldstpair_pre opc=00|101|VR=0|011|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldp32LdstpairPre: LDP  <Wt1>, <Wt2>, [<Xn|SP>, #<imm>]!
+// register fields: Rt2, Rn, Rt
+29E7B96D ldp w13, w14, [x11, #-0xc4]!
+29C64897 ldp w23, w18, [x4, #0x30]!
+29E58521 ldp w1, w1, [x9, #-0xd4]! (unpredictable)
+29C63C74 ldp w20, w15, [x3, #0x30]!
+29EA30C0 ldp w0, w12, [x6, #-0xb0]!
+29E128E7 ldp w7, w10, [x7, #-248]! (unpredictable)
+29C9A96D ldp w13, w10, [x11, #0x4c]!
+29FDA2CF ldp w15, w8, [x22, #-0x14]!
+29EB4997 ldp w23, w18, [x12, #-0xa8]!
+29C35154 ldp w20, w20, [x10, #0x18]! (unpredictable)
+29EAFF74 ldp w20, wzr, [x27, #-0xac]!
+29E0A58A ldp w10, w9, [x12, #-0xfc]!
+29D22460 ldp w0, w9, [x3, #0x90]!
+29FF609A ldp w26, w24, [x4, #-0x8]!
+29EE5D2F ldp w15, w23, [x9, #-0x90]!
+29F4974F ldp w15, w5, [x26, #-0x5c]!
+29C0001F ldp wzr, w0, [x0, #0x0]! (unpredictable)
+29FFBBED ldp w13, w14, [sp, #-0x4]!
+29E0396D ldp w13, w14, [x11, #-0x100]!
+29D0396D ldp w13, w14, [x11, #0x80]!
+29C8396D ldp w13, w14, [x11, #0x40]!
+29C4396D ldp w13, w14, [x11, #0x20]!
+29C2396D ldp w13, w14, [x11, #0x10]!
+29C1396D ldp w13, w14, [x11, #0x8]!
+29C0B96D ldp w13, w14, [x11, #0x4]!
+
+// LDP_64_ldstpair_off opc=10|101|VR=0|010|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldp64LdstpairOff: LDP  <Xt1>, <Xt2>, [<Xn|SP>{, #<imm>}]
+// register fields: Rt2, Rn, Rt
+A943A9CC ldp x12, x10, [x14, #0x38]
+A943EDE7 ldp x7, x27, [x15, #0x38]
+A9606DCD ldp x13, x27, [x14, #-0x200]
+A96C7609 ldp x9, fp, [x16, #-0x140]
+A9415800 ldp x0, x22, [x0, #0x10]
+A9648443 ldp x3, x1, [x2, #-0x1b8]
+A9471C1E ldp lr, x7, [x0, #0x70]
+A96CDBE0 ldp x0, x22, [sp, #-0x138]
+A947A61B ldp x27, x9, [x16, #0x78]
+A94F9458 ldp x24, x5, [x2, #0xf8]
+A97160FD ldp fp, x24, [x7, #-0xf0]
+A94A103B ldp x27, x4, [x1, #0xa0]
+A9485553 ldp x19, x21, [x10, #0x80]
+A96044F8 ldp x24, x17, [x7, #-0x200]
+A9533B14 ldp x20, x14, [x24, #0x130]
+A943A3ED ldp x13, x8, [sp, #0x38]
+A94001DF ldp xzr, x0, [x14]
+A97FFDCC ldp x12, xzr, [x14, #-0x8]
+A943A94C ldp x12, x10, [x10, #0x38]
+A943A9CA ldp x10, x10, [x14, #0x38] (unpredictable)
+A95029CC ldp x12, x10, [x14, #0x100]
+A94429CC ldp x12, x10, [x14, #0x40]
+A94229CC ldp x12, x10, [x14, #0x20]
+A940A9CC ldp x12, x10, [x14, #0x8]
+
+// LDP_64_ldstpair_post opc=10|101|VR=0|001|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldp64LdstpairPost: LDP  <Xt1>, <Xt2>, [<Xn|SP>], #<imm>
+// register fields: Rt2, Rn, Rt
+A8EA2124 ldp x4, x8, [x9], #-0x160
+A8D2A344 ldp x4, x8, [x26], #0x128
+A8DE261B ldp x27, x9, [x16], #0x1e0
+A8DB8064 ldp x4, x0, [x3], #0x1b8
+A8C972B6 ldp x22, x28, [x21], #0x90
+A8F986D4 ldp x20, x1, [x22], #-0x68
+A8C7AA96 ldp x22, x10, [x20], #0x78
+A8F67145 ldp x5, x28, [x10], #-0xa0
+A8DE7B47 ldp x7, lr, [x26], #0x1e0
+A8DE9071 ldp x17, x4, [x3], #0x1e8
+A8CA3421 ldp x1, x13, [x1], #0xa0 (unpredictable)
+A8CBC636 ldp x22, x17, [x17], #0xb8 (unpredictable)
+A8D64E7B ldp x27, x19, [x19], #0x160 (unpredictable)
+A8C9F1EB ldp x11, x28, [x15], #0x98
+A8E378F0 ldp x16, lr, [x7], #-0x1d0
+A8D7B7AB ldp x11, x13, [fp], #0x178
+A8C07C00 ldp x0, xzr, [x0], #0x0 (unpredictable)
+A8FFA3FF ldp xzr, x8, [sp], #-0x8
+A8EA2128 ldp x8, x8, [x9], #-0x160 (unpredictable)
+A8E02124 ldp x4, x8, [x9], #-0x200
+A8D02124 ldp x4, x8, [x9], #0x100
+A8C82124 ldp x4, x8, [x9], #0x80
+A8C42124 ldp x4, x8, [x9], #0x40
+A8C22124 ldp x4, x8, [x9], #0x20
+A8C12124 ldp x4, x8, [x9], #0x10
+A8C0A124 ldp x4, x8, [x9], #0x8
+
+// LDP_64_ldstpair_pre opc=10|101|VR=0|011|L=1|imm7=xxxxxxx|Rt2=xxxxx|Rn=xxxxx|Rt=xxxxx
+// Ldp64LdstpairPre: LDP  <Xt1>, <Xt2>, [<Xn|SP>, #<imm>]!
+// register fields: Rt2, Rn, Rt
+A9EACE40 ldp x0, x19, [x18, #-0x158]!
+A9CA2EB7 ldp x23, x11, [x21, #0xa0]!
+A9E4690D ldp x13, x26, [x8, #-0x1c0]!
+A9E4DD96 ldp x22, x23, [x12, #-0x1b8]!
+A9EF1DC9 ldp x9, x7, [x14, #-0x110]!
+A9C28348 ldp x8, x0, [x26, #0x28]!
+A9C6C7CC ldp x12, x17, [lr, #0x68]!
+A9D5A102 ldp x2, x8, [x8, #0x158]! (unpredictable)
+A9DCD3C7 ldp x7, x20, [lr, #0x1c8]!
+A9FD08BB ldp x27, x2, [x5, #-0x30]!
+A9FE6E01 ldp x1, x27, [x16, #-0x20]!
+A9D8DDCF ldp x15, x23, [x14, #0x188]!
+A9CF8890 ldp x16, x2, [x4, #0xf8]!
+A9DE724C ldp x12, x28, [x18, #0x1e0]!
+A9F803EE ldp x14, x0, [sp, #-0x80]!
+A9CCEB06 ldp x6, x26, [x24, #0xc8]!
+A9C07C1F ldp xzr, xzr, [x0, #0x0]! (unpredictable)
+A9FFCE40 ldp x0, x19, [x18, #-0x8]!
+A9EACE52 ldp x18, x19, [x18, #-0x158]! (unpredictable)
+A9E04E40 ldp x0, x19, [x18, #-0x200]!
+A9D04E40 ldp x0, x19, [x18, #0x100]!
+A9C84E40 ldp x0, x19, [x18, #0x80]!
+A9C44E40 ldp x0, x19, [x18, #0x40]!
+A9C24E40 ldp x0, x19, [x18, #0x20]!
+A9C14E40 ldp x0, x19, [x18, #0x10]!
+A9C0CE40 ldp x0, x19, [x18, #0x8]!
+A9C07C00 ldp x0, xzr, [x0, #0x0]! (unpredictable)
+A9EACE5F ldp xzr, x19, [x18, #-0x158]!

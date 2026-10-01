@@ -1,0 +1,43 @@
+// ld1w_mzx_p_br_2x8 1|01|0000|10|00|Rm=xxxxx|0|msz=10|PNg=xxx|Rn=xxxxx|T=x|N=0|Zt=xxx
+// Ld1wMzxPBr2x8: LD1W  { <Zt1>.S, <Zt2>.S }, <PNg>/Z, [<Xn|SP>, <Xm>, LSL #2]
+// read together by <Zt1> and <Zt2>: T, Zt
+// register fields: Rm, PNg, Rn
+A1004003 ld1w {z3.s, z11.s}, pn8/z, [x0, x0, lsl #0x2]
+A1004011 ld1w {z17.s, z25.s}, pn8/z, [x0, x0, lsl #0x2]
+A1004026 ld1w {z6.s, z14.s}, pn8/z, [x1, x0, lsl #0x2]
+A11F47E0 ld1w {z0.s, z8.s}, pn9/z, [sp, xzr, lsl #0x2]
+A1004802 ld1w {z2.s, z10.s}, pn10/z, [x0, x0, lsl #0x2]
+A1004C04 ld1w {z4.s, z12.s}, pn11/z, [x0, x0, lsl #0x2]
+A1005005 ld1w {z5.s, z13.s}, pn12/z, [x0, x0, lsl #0x2]
+A1005407 ld1w {z7.s, z15.s}, pn13/z, [x0, x0, lsl #0x2]
+A1005803 ld1w {z3.s, z11.s}, pn14/z, [x0, x0, lsl #0x2]
+A1005C03 ld1w {z3.s, z11.s}, pn15/z, [x0, x0, lsl #0x2]
+A1004001 ld1w {z1.s, z9.s}, pn8/z, [x0, x0, lsl #0x2]
+A1004010 ld1w {z16.s, z24.s}, pn8/z, [x0, x0, lsl #0x2]
+A1004012 ld1w {z18.s, z26.s}, pn8/z, [x0, x0, lsl #0x2]
+A1004013 ld1w {z19.s, z27.s}, pn8/z, [x0, x0, lsl #0x2]
+A1004014 ld1w {z20.s, z28.s}, pn8/z, [x0, x0, lsl #0x2]
+A1004015 ld1w {z21.s, z29.s}, pn8/z, [x0, x0, lsl #0x2]
+A1004016 ld1w {z22.s, z30.s}, pn8/z, [x0, x0, lsl #0x2]
+A1004017 ld1w {z23.s, z31.s}, pn8/z, [x0, x0, lsl #0x2]
+A1014863 ld1w {z3.s, z11.s}, pn10/z, [x3, x1, lsl #0x2]
+
+// ld1w_mzx_p_br_4x4 1|01|0000|10|00|Rm=xxxxx|1|msz=10|PNg=xxx|Rn=xxxxx|T=x|N=0|0|Zt=xx
+// Ld1wMzxPBr4x4: LD1W  { <Zt1>.S, <Zt2>.S, <Zt3>.S, <Zt4>.S }, <PNg>/Z, [<Xn|SP>, <Xm>, LSL #2]
+// read together by <Zt1> and <Zt2> and <Zt3> and <Zt4>: T, Zt
+// register fields: Rm, PNg, Rn
+A100C002 ld1w {z2.s, z6.s, z10.s, z14.s}, pn8/z, [x0, x0, lsl #0x2]
+A100C010 ld1w {z16.s, z20.s, z24.s, z28.s}, pn8/z, [x0, x0, lsl #0x2]
+A100C033 ld1w {z19.s, z23.s, z27.s, z31.s}, pn8/z, [x1, x0, lsl #0x2]
+A11FC7E1 ld1w {z1.s, z5.s, z9.s, z13.s}, pn9/z, [sp, xzr, lsl #0x2]
+A100C802 ld1w {z2.s, z6.s, z10.s, z14.s}, pn10/z, [x0, x0, lsl #0x2]
+A100CC02 ld1w {z2.s, z6.s, z10.s, z14.s}, pn11/z, [x0, x0, lsl #0x2]
+A100D002 ld1w {z2.s, z6.s, z10.s, z14.s}, pn12/z, [x0, x0, lsl #0x2]
+A100D402 ld1w {z2.s, z6.s, z10.s, z14.s}, pn13/z, [x0, x0, lsl #0x2]
+A100D802 ld1w {z2.s, z6.s, z10.s, z14.s}, pn14/z, [x0, x0, lsl #0x2]
+A100DC02 ld1w {z2.s, z6.s, z10.s, z14.s}, pn15/z, [x0, x0, lsl #0x2]
+A100C000 ld1w {z0.s, z4.s, z8.s, z12.s}, pn8/z, [x0, x0, lsl #0x2]
+A100C003 ld1w {z3.s, z7.s, z11.s, z15.s}, pn8/z, [x0, x0, lsl #0x2]
+A100C011 ld1w {z17.s, z21.s, z25.s, z29.s}, pn8/z, [x0, x0, lsl #0x2]
+A100C012 ld1w {z18.s, z22.s, z26.s, z30.s}, pn8/z, [x0, x0, lsl #0x2]
+A101C862 ld1w {z2.s, z6.s, z10.s, z14.s}, pn10/z, [x3, x1, lsl #0x2]

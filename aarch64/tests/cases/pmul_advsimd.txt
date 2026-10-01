@@ -1,0 +1,29 @@
+// PMUL_asimdsame_only 0|Q=x|U=1|0|111|0|size=xx|1|Rm=xxxxx|opcode=10011|1|Rn=xxxxx|Rd=xxxxx
+// PmulAsimdsameOnly: PMUL  <Vd>.<T>, <Vn>.<T>, <Vm>.<T>
+// read together by <T>: Q, size
+// register fields: Rm, Rn, Rd
+6E259CF6 pmul v22.16b, v7.16b, v5.16b
+6E399E9C pmul v28.16b, v20.16b, v25.16b
+2E239C6D pmul v13.8b, v3.8b, v3.8b
+6E389C05 pmul v5.16b, v0.16b, v24.16b
+2E229D1F pmul v31.8b, v8.8b, v2.8b
+2E3A9F94 pmul v20.8b, v28.8b, v26.8b
+2E229E4E pmul v14.8b, v18.8b, v2.8b
+6E339CC8 pmul v8.16b, v6.16b, v19.16b
+2E319EAC pmul v12.8b, v21.8b, v17.8b
+6E369E2F pmul v15.16b, v17.16b, v22.16b
+2E399F1C pmul v28.8b, v24.8b, v25.8b
+2E319DD7 pmul v23.8b, v14.8b, v17.8b
+2E3D9F9F pmul v31.8b, v28.8b, v29.8b
+2E259C95 pmul v21.8b, v4.8b, v5.8b
+2E259D89 pmul v9.8b, v12.8b, v5.8b
+2E299F5D pmul v29.8b, v26.8b, v9.8b
+6E209FE0 pmul v0.16b, v31.16b, v0.16b
+6E3F9CF6 pmul v22.16b, v7.16b, v31.16b
+6E659CF6 UNDEFINED
+6EA59CF6 UNDEFINED
+6EE59CF6 UNDEFINED
+2E659CF6 UNDEFINED
+2EA59CF6 UNDEFINED
+2EE59CF6 UNDEFINED
+6E259CE7 pmul v7.16b, v7.16b, v5.16b

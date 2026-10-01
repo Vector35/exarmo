@@ -1,0 +1,12 @@
+// USAT16_T1 111|10|(0)|1|1|op1=101|0|Rn=xxxx|0|imm3=000|Rd=xxxx|imm2=00|(0)|(0)|sat_imm=xxxx
+// Usat16T1: USAT16{<c>}{<q>}  <Rd>, #<imm>, <Rn>
+// register fields: Rn, Rd
+// IT state read: condition
+F3A00000 usat16 r0, #0x0, r0
+F7AF0F3F usat16 pc, #0xf, pc (unpredictable)
+F3A00008 usat16 r0, #0x8, r0
+F3A00004 usat16 r0, #0x4, r0
+F3A00002 usat16 r0, #0x2, r0
+F3A00001 usat16 r0, #0x1, r0
+F3A00000 [ne] usat16ne r0, #0x0, r0
+F3A10200 usat16 r2, #0x0, r1

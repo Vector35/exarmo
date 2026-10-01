@@ -1,0 +1,18 @@
+// st1q_za_p_rrr_ 1|11|0000|1111|Rm=xxxxx|V=x|Rs=xx|Pg=xxx|Rn=xxxxx|0|ZAt=xxxx
+// St1qZaPRrr: ST1Q  { <ZAt><HV>.Q[<Ws>, <offs>] }, <Pg>, [<Xn|SP>{, <Xm>, LSL #4}]
+// register fields: Rm, Rs, Pg, Rn, ZAt
+E1F50B6D st1q {za13h.q[w12, 0]}, p2, [x27, x21, lsl #0x4]
+E1F2710C st1q {za12h.q[w15, 0]}, p4, [x8, x18, lsl #0x4]
+E1FAE567 st1q {za7v.q[w15, 0]}, p1, [x11, x26, lsl #0x4]
+E1E79303 st1q {za3v.q[w12, 0]}, p4, [x24, x7, lsl #0x4]
+E1F210CF st1q {za15h.q[w12, 0]}, p4, [x6, x18, lsl #0x4]
+E1F2842F st1q {za15v.q[w12, 0]}, p1, [x1, x18, lsl #0x4]
+E1F7066A st1q {za10h.q[w12, 0]}, p1, [x19, x23, lsl #0x4]
+E1EEED0C st1q {za12v.q[w15, 0]}, p3, [x8, x14, lsl #0x4]
+E1E02000 st1q {za0h.q[w13, 0]}, p0, [x0, x0, lsl #0x4]
+E1FF57ED st1q {za13h.q[w14, 0]}, p5, [sp]
+E1F51B6D st1q {za13h.q[w12, 0]}, p6, [x27, x21, lsl #0x4]
+E1F51F6D st1q {za13h.q[w12, 0]}, p7, [x27, x21, lsl #0x4]
+E1E00B6D st1q {za13h.q[w12, 0]}, p2, [x27, x0, lsl #0x4]
+E1F5080D st1q {za13h.q[w12, 0]}, p2, [x0, x21, lsl #0x4]
+E1F50B60 st1q {za0h.q[w12, 0]}, p2, [x27, x21, lsl #0x4]

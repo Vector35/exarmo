@@ -1,0 +1,109 @@
+// FMUL_asimdelem_R_SD 0|Q=x|U=0|0|111|1|1|sz=x|L=x|M=x|Rm=xxxx|opcode=1001|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmulAsimdelemRSd: FMUL  <Vd>.<T>, <Vn>.<T>, <Vm>.<Ts>[<index>]
+// read together by <T>: Q, sz
+// read together by <Vm>: M, Rm
+// read together by <index>: sz, L, H
+// register fields: Rn, Rd
+4FC39965 fmul v5.2d, v11.2d, v3.d[1]
+4FA39897 fmul v23.4s, v4.4s, v3.s[3]
+0FB591F0 fmul v16.2s, v15.2s, v21.s[1]
+0FA59258 fmul v24.2s, v18.2s, v5.s[1]
+4FC89178 fmul v24.2d, v11.2d, v8.d[0]
+0F8C9007 fmul v7.2s, v0.2s, v12.s[0]
+4F999929 fmul v9.4s, v9.4s, v25.s[2]
+4FAC9B63 fmul v3.4s, v27.4s, v12.s[3]
+4FBE9060 fmul v0.4s, v3.4s, v30.s[1]
+4FB39010 fmul v16.4s, v0.4s, v19.s[1]
+4F989389 fmul v9.4s, v28.4s, v24.s[0]
+4FDA99F3 fmul v19.2d, v15.2d, v26.d[1]
+4F8F90AC fmul v12.4s, v5.4s, v15.s[0]
+0FA793C2 fmul v2.2s, v30.2s, v7.s[1]
+4F9C90EC fmul v12.4s, v7.4s, v28.s[0]
+4F949ABA fmul v26.4s, v21.4s, v20.s[2]
+4FC09BFF fmul v31.2d, v31.2d, v0.d[1]
+4FE39165 UNDEFINED
+4FE39965 UNDEFINED
+4FD09965 fmul v5.2d, v11.2d, v16.d[1]
+4FDF9965 fmul v5.2d, v11.2d, v31.d[1]
+0FC39965 UNDEFINED
+4FC29965 fmul v5.2d, v11.2d, v2.d[1]
+4FC19965 fmul v5.2d, v11.2d, v1.d[1]
+
+// FMUL_asimdelem_RH_H 0|Q=x|U=0|0|111|1|size=00|L=x|M=x|Rm=xxxx|opcode=1001|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmulAsimdelemRhH: FMUL  <Vd>.<T>, <Vn>.<T>, <Vm>.H[<index>]
+// read together by <index>: L, M, H
+// register fields: Rm, Rn, Rd
+0F0F92E2 fmul v2.4h, v23.4h, v15.h[0]
+0F3B90F3 fmul v19.4h, v7.4h, v11.h[3]
+0F19911F fmul v31.4h, v8.4h, v9.h[1]
+4F099B6B fmul v11.8h, v27.8h, v9.h[4]
+0F3598A5 fmul v5.4h, v5.4h, v5.h[7]
+4F3C92C7 fmul v7.8h, v22.8h, v12.h[3]
+0F0592D1 fmul v17.4h, v22.4h, v5.h[0]
+4F1099D8 fmul v24.8h, v14.8h, v0.h[5]
+4F0A9203 fmul v3.8h, v16.8h, v10.h[0]
+4F26997E fmul v30.8h, v11.8h, v6.h[6]
+4F289B68 fmul v8.8h, v27.8h, v8.h[6]
+4F209090 fmul v16.8h, v4.8h, v0.h[2]
+4F2E923F fmul v31.8h, v17.8h, v14.h[2]
+0F37928D fmul v13.4h, v20.4h, v7.h[3]
+0F1F9A11 fmul v17.4h, v16.4h, v15.h[5]
+0F089B0A fmul v10.4h, v24.4h, v8.h[4]
+0F0F9000 fmul v0.4h, v0.4h, v15.h[0]
+0F0F93E2 fmul v2.4h, v31.4h, v15.h[0]
+
+// FMUL_asisdelem_R_SD 01|U=0|1|111|1|1|sz=x|L=x|M=x|Rm=xxxx|opcode=1001|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmulAsisdelemRSd: FMUL  <V><d>, <V><n>, <Vm>.<Ts>[<index>]
+// read together by <d>: sz, Rd
+// read together by <n>: sz, Rn
+// read together by <Vm>: M, Rm
+// read together by <index>: sz, L, H
+// register fields: Rn, Rd
+5FA59935 fmul s21, s9, v5.s[3]
+5FB0901D fmul s29, s0, v16.s[1]
+5FBE9119 fmul s25, s8, v30.s[1]
+5FC49362 fmul d2, d27, v4.d[0]
+5FDB987A fmul d26, d3, v27.d[1]
+5FAD9BDA fmul s26, s30, v13.s[3]
+5FA89B04 fmul s4, s24, v8.s[3]
+5F89917C fmul s28, s11, v9.s[0]
+5F94935B fmul s27, s26, v20.s[0]
+5FB199BC fmul s28, s13, v17.s[3]
+5FC6998E fmul d14, d12, v6.d[1]
+5FC498DF fmul d31, d6, v4.d[1]
+5FB9927F fmul s31, s19, v25.s[1]
+5F8499A7 fmul s7, s13, v4.s[2]
+5FB19B50 fmul s16, s26, v17.s[3]
+5F8D93EA fmul s10, s31, v13.s[0]
+5FAF9920 fmul s0, s9, v15.s[3]
+5FE59135 UNDEFINED
+5FE59935 UNDEFINED
+5FA09929 fmul s9, s9, v0.s[3]
+5FBF9935 fmul s21, s9, v31.s[3]
+5FC49360 fmul d0, d27, v4.d[0]
+5FC49002 fmul d2, d0, v4.d[0]
+5FC493E2 fmul d2, d31, v4.d[0]
+5FA29935 fmul s21, s9, v2.s[3]
+
+// FMUL_asisdelem_RH_H 01|U=0|1|111|1|size=00|L=x|M=x|Rm=xxxx|opcode=1001|H=x|0|Rn=xxxxx|Rd=xxxxx
+// FmulAsisdelemRhH: FMUL  <Hd>, <Hn>, <Vm>.H[<index>]
+// read together by <index>: L, M, H
+// register fields: Rm, Rn, Rd
+5F3490B3 fmul h19, h5, v4.h[3]
+5F3298A0 fmul h0, h5, v2.h[7]
+5F1B99D2 fmul h18, h14, v11.h[5]
+5F2298EA fmul h10, h7, v2.h[6]
+5F319B38 fmul h24, h25, v1.h[7]
+5F2299C2 fmul h2, h14, v2.h[6]
+5F069B91 fmul h17, h28, v6.h[4]
+5F39986F fmul h15, h3, v9.h[7]
+5F0198E2 fmul h2, h7, v1.h[4]
+5F28924A fmul h10, h18, v8.h[2]
+5F0C9814 fmul h20, h0, v12.h[4]
+5F1C902C fmul h12, h1, v12.h[1]
+5F0B9BB7 fmul h23, h29, v11.h[4]
+5F0798E8 fmul h8, h7, v7.h[4]
+5F309249 fmul h9, h18, v0.h[3]
+5F2292AC fmul h12, h21, v2.h[2]
+5F3F93FF fmul h31, h31, v15.h[3]
+5F0490B3 fmul h19, h5, v4.h[0]

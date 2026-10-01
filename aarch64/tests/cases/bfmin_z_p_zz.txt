@@ -1,0 +1,14 @@
+// bfmin_z_p_zz_ 011|0010|1|size=00|0|0|opc=0111|100|Pg=xxx|Zm=xxxxx|Zdn=xxxxx
+// BfminZPZz: BFMIN  <Zdn>.H, <Pg>/M, <Zdn>.H, <Zm>.H
+// register fields: Pg, Zm, Zdn
+65078003 bfmin z3.h, p0/m, z3.h, z0.h
+6507800A bfmin z10.h, p0/m, z10.h, z0.h
+65078011 bfmin z17.h, p0/m, z17.h, z0.h
+650787E0 bfmin z0.h, p1/m, z0.h, z31.h
+6507881F bfmin z31.h, p2/m, z31.h, z0.h
+65078C03 bfmin z3.h, p3/m, z3.h, z0.h
+65079003 bfmin z3.h, p4/m, z3.h, z0.h
+65079403 bfmin z3.h, p5/m, z3.h, z0.h
+65079803 bfmin z3.h, p6/m, z3.h, z0.h
+65079C03 bfmin z3.h, p7/m, z3.h, z0.h
+65078000 bfmin z0.h, p0/m, z0.h, z0.h

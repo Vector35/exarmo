@@ -1,0 +1,69 @@
+// VDIV_A1_D cond=xxxx|1110|o0=1|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=11|N=x|o2=0|M=x|0|Vm=xxxx
+// VdivA1D: VDIV{<c>}{<q>}.F64  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+6ecbeb28 vdivvs.f64 d30, d11, d24
+0e82db2b vdiveq.f64 d13, d2, d27
+7e850ba6 vdivvc.f64 d0, d21, d22
+aec31bae vdivge.f64 d17, d19, d30
+7ec1ab0e vdivvc.f64 d26, d1, d14
+8e806b84 vdivhi.f64 d6, d16, d4
+cec70b2d vdivgt.f64 d16, d7, d29
+ce8c3b0b vdivgt.f64 d3, d12, d11
+// Binary Ninja's tests
+ee855b07 vdiv.f64 d5, d5, d7
+eec10ba0 vdiv.f64 d16, d17, d16
+4ECFFB2F vdivmi.f64 d31, d15, d31
+2EC88B22 vdivcs.f64 d24, d8, d18
+1EC44B21 vdivne.f64 d20, d4, d17
+6EC02B00 vdivvs.f64 d18, d0, d0
+6E8FFB0F vdivvs.f64 d15, d15, d15
+6ECFFBAF vdivvs.f64 d31, d31, d31
+
+// VDIV_A1_H cond=xxxx|1110|o0=1|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=01|N=x|o2=0|M=x|0|Vm=xxxx
+// VdivA1H: VDIV{<c>}{<q>}.F16  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+4ecec9a2 vdivmi.f16 s25, s29, s5 (unpredictable)
+ae8f9987 vdivge.f16 s18, s31, s14 (unpredictable)
+1e8fd9a8 vdivne.f16 s26, s31, s17 (unpredictable)
+9e847985 vdivls.f16 s14, s9, s10 (unpredictable)
+8ec759a2 vdivhi.f16 s11, s15, s5 (unpredictable)
+7ec4c907 vdivvc.f16 s25, s8, s14 (unpredictable)
+bec22922 vdivlt.f16 s5, s4, s5 (unpredictable)
+2e8d498b vdivhs.f16 s8, s27, s22 (unpredictable)
+0EC009A0 vdiveq.f16 s1, s1, s1 (unpredictable)
+4EC8F9AF vdivmi.f16 s31, s17, s31 (unpredictable)
+4EC189A4 vdivmi.f16 s17, s3, s9 (unpredictable)
+4EC01921 vdivmi.f16 s3, s0, s3 (unpredictable)
+4E800980 vdivmi.f16 s0, s1, s0 (unpredictable)
+4E8FF90F vdivmi.f16 s30, s30, s30 (unpredictable)
+4ECE09A0 vdivmi.f16 s1, s29, s1 (unpredictable)
+4ECEF9AF vdivmi.f16 s31, s29, s31 (unpredictable)
+
+// VDIV_A1_S cond=xxxx|1110|o0=1|D=x|o1=00|Vn=xxxx|Vd=xxxx|10|size=10|N=x|o2=0|M=x|0|Vm=xxxx
+// VdivA1S: VDIV{<c>}{<q>}.F32  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+3eccdaae vdivlo.f32 s27, s25, s29
+5e834a89 vdivpl.f32 s8, s7, s18
+1ec74a23 vdivne.f32 s9, s14, s7
+7ecd0a86 vdivvc.f32 s1, s27, s12
+2ec57a27 vdivhs.f32 s15, s10, s15
+9e845aa6 vdivls.f32 s10, s9, s13
+de82ba0a vdivle.f32 s22, s4, s20
+5eccaaaa vdivpl.f32 s21, s25, s21
+// Binary Ninja's tests
+ee800a80 vdiv.f32 s0, s1, s0
+eec22aa3 vdiv.f32 s5, s5, s7
+0ECFFAAF vdiveq.f32 s31, s31, s31
+8EC88AA8 vdivhi.f32 s17, s17, s17
+4EC11AA4 vdivmi.f32 s3, s3, s9
+3E80FA22 vdivcc.f32 s30, s0, s5
+3ECFFA21 vdivcc.f32 s31, s30, s3
+3ECFDA8F vdivcc.f32 s27, s31, s30
+3ECCDAA0 vdivcc.f32 s27, s25, s1
+3ECCDAAF vdivcc.f32 s27, s25, s31

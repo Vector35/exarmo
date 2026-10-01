@@ -1,0 +1,15 @@
+// ld1roh_z_p_br_contiguous 101|0010|msz=01|ssz=01|Rm=xxxxx|000|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// Ld1rohZPBrContiguous: LD1ROH  { <Zt>.H }, <Pg>/Z, [<Xn|SP>, <Xm>, LSL #1]
+// register fields: Rm, Pg, Rn, Zt
+A4B709AC ld1roh {z12.h}, p2/z, [x13, x23, lsl #0x1]
+A4A811EE ld1roh {z14.h}, p4/z, [x15, x8, lsl #0x1]
+A4A31092 ld1roh {z18.h}, p4/z, [x4, x3, lsl #0x1]
+A4A7143E ld1roh {z30.h}, p5/z, [x1, x7, lsl #0x1]
+A4B30C8F ld1roh {z15.h}, p3/z, [x4, x19, lsl #0x1]
+A4A31B04 ld1roh {z4.h}, p6/z, [x24, x3, lsl #0x1]
+A4AE175D ld1roh {z29.h}, p5/z, [x26, x14, lsl #0x1]
+A4AC0CCC ld1roh {z12.h}, p3/z, [x6, x12, lsl #0x1]
+A4A00000 ld1roh {z0.h}, p0/z, [x0, x0, lsl #0x1]
+A4B707FF ld1roh {z31.h}, p1/z, [sp, x23, lsl #0x1]
+A4B71DAC ld1roh {z12.h}, p7/z, [x13, x23, lsl #0x1]
+A4BF09AC UNALLOCATED

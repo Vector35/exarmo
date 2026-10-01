@@ -1,0 +1,41 @@
+// VCGT_i_A1_D 111100111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|000|Q=0|M=x|0|Vm=xxxx
+// VcgtIA1D: VCGT{<c>}{<q>}.<dt>  {<Dd>, }<Dm>, #0
+// read together by <dt>: size, F
+// read together by <Dd>: D, Vd
+// read together by <Dm>: M, Vm
+f3f19009 vcgt.s8 d25, d9, #0
+f3f5f024 vcgt.s16 d31, d20, #0
+f3f53426 vcgt.f16 d19, d22, #0
+f3b96023 vcgt.s32 d6, d19, #0
+f3b9700f vcgt.s32 d7, d15, #0
+f3f59000 vcgt.s16 d25, d0, #0
+f3f5302d vcgt.s16 d19, d29, #0
+f3f1500e vcgt.s8 d21, d14, #0
+F3FD9009 UNDEFINED
+F3F90408 vcgt.f32 d16, d8, #0x0
+F3F18002 vcgt.s8 d24, d2, #0x0
+F3F14001 vcgt.s8 d20, d1, #0x0
+F3F12020 vcgt.s8 d18, d16, #0x0
+F3F1102F vcgt.s8 d17, d31, #0x0
+F3F19409 UNDEFINED
+F3FD9409 UNDEFINED
+F3B10009 vcgt.s8 d0, d9, #0x0
+F3B1F009 vcgt.s8 d15, d9, #0x0
+F3F10009 vcgt.s8 d16, d9, #0x0
+
+// VCGT_i_A1_Q 111100111|D=x|11|size=xx|opc1=01|Vd=xxxx|0|F=x|000|Q=1|M=x|0|Vm=xxxx
+// VcgtIA1Q: VCGT{<c>}{<q>}.<dt>  {<Qd>, }<Qm>, #0
+// read together by <dt>: size, F
+// read together by <Qd>: D, Vd
+// read together by <Qm>: M, Vm
+f3b1006e vcgt.s8 q0, q15, #0
+f3f58064 vcgt.s16 q12, q10, #0
+f3b9e060 vcgt.s32 q7, q8, #0
+f3b5444c vcgt.f16 q2, q6, #0
+F3BDF06F UNDEFINED
+F3B92468 vcgt.f32 q1, q12, #0x0
+F3B11461 UNDEFINED
+F3F10062 vcgt.s8 q8, q9, #0x0
+F3BDF04F UNDEFINED
+F3FDF46F UNDEFINED
+F3B10040 vcgt.s8 q0, q0, #0x0

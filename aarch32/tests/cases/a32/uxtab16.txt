@@ -1,0 +1,21 @@
+// UXTAB16_A1 cond=xxxx|011|01|U=1|op=00|Rn=xxxx|Rd=xxxx|rotate=xx|(0)(0)|011|1|Rm=xxxx
+// Uxtab16A1: UXTAB16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm> {, ROR #<amount>}
+// register fields: Rn, Rd, Rm
+e6c4167c uxtab16 r1, r4, r12, ror #8 (unpredictable)
+b6cef970 uxtab16lt pc, lr, r0, ror #16 (unpredictable)
+56c6077f uxtab16pl r0, r6, pc, ror #8 (unpredictable)
+26c61375 uxtab16hs r1, r6, r5 (unpredictable)
+36c00770 uxtab16lo r0, r0, r0, ror #8 (unpredictable)
+e6c94279 uxtab16 r4, r9, r9 (unpredictable)
+d6c01477 uxtab16le r1, r0, r7, ror #8
+b6c62371 uxtab16lt r2, r6, r1 (unpredictable)
+// Binary Ninja's tests
+06c21c73 uxtab16eq r1, r2, r3, ror #24
+a6c10074 uxtab16ge r0, r1, r4
+e6c23871 uxtab16 r3, r2, r1, ror #16
+e6c26077 uxtab16 r6, r2, r7
+e6c53478 uxtab16 r3, r5, r8, ror #8
+F6CF167C UNALLOCATED
+86C4167C uxtab16hi r1, r4, r12, ror #0x8 (unpredictable)
+46C4167C uxtab16mi r1, r4, r12, ror #0x8 (unpredictable)
+16C4167C uxtab16ne r1, r4, r12, ror #0x8 (unpredictable)

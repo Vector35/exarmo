@@ -1,0 +1,68 @@
+// sqshrnb_z_zi_ 010|0010|1|0|tszh=x|1|tszl=xx|imm3=xxx|0|0|op=1|U=0|R=0|T=0|Zn=xxxxx|Zd=xxxxx
+// SqshrnbZZi: SQSHRNB  <Zd>.<T>, <Zn>.<Tb>, #<const>
+// read together by <const>: tszh, tszl, imm3
+// register fields: Zn, Zd
+456720D2 sqshrnb z18.s, z6.d, #0x19
+456623CD sqshrnb z13.s, z30.d, #0x1a
+45722115 sqshrnb z21.s, z8.d, #0xe
+453F2217 sqshrnb z23.h, z16.s, #0x1
+45322218 sqshrnb z24.h, z16.s, #0xe
+4533200F sqshrnb z15.h, z0.s, #0xd
+45762204 sqshrnb z4.s, z16.d, #0xa
+45372214 sqshrnb z20.h, z16.s, #0x9
+456823E0 sqshrnb z0.s, z31.d, #0x18
+456120DF sqshrnb z31.s, z6.d, #0x1f
+456420D2 sqshrnb z18.s, z6.d, #0x1c
+456520D2 sqshrnb z18.s, z6.d, #0x1b
+452020D2 UNDEFINED
+452120D2 UNDEFINED
+452220D2 UNDEFINED
+452320D2 UNDEFINED
+452420D2 UNDEFINED
+452520D2 UNDEFINED
+452620D2 UNDEFINED
+452720D2 UNDEFINED
+452820C6 sqshrnb z6.b, z6.h, #0x8
+452920D2 sqshrnb z18.b, z6.h, #0x7
+452A20D2 sqshrnb z18.b, z6.h, #0x6
+452B20D2 sqshrnb z18.b, z6.h, #0x5
+452C20D2 sqshrnb z18.b, z6.h, #0x4
+452D20D2 sqshrnb z18.b, z6.h, #0x3
+452E20D2 sqshrnb z18.b, z6.h, #0x2
+452F20D2 sqshrnb z18.b, z6.h, #0x1
+453020D2 sqshrnb z18.h, z6.s, #0x10
+453120D2 sqshrnb z18.h, z6.s, #0xf
+453420D2 sqshrnb z18.h, z6.s, #0xc
+453520D2 sqshrnb z18.h, z6.s, #0xb
+453620D2 sqshrnb z18.h, z6.s, #0xa
+453820D2 sqshrnb z18.h, z6.s, #0x8
+453920D2 sqshrnb z18.h, z6.s, #0x7
+453A20D2 sqshrnb z18.h, z6.s, #0x6
+453B20D2 sqshrnb z18.h, z6.s, #0x5
+453C20D2 sqshrnb z18.h, z6.s, #0x4
+453D20D2 sqshrnb z18.h, z6.s, #0x3
+453E20D2 sqshrnb z18.h, z6.s, #0x2
+456020D2 sqshrnb z18.s, z6.d, #0x20
+456220D2 sqshrnb z18.s, z6.d, #0x1e
+456320D2 sqshrnb z18.s, z6.d, #0x1d
+456920D2 sqshrnb z18.s, z6.d, #0x17
+456A20D2 sqshrnb z18.s, z6.d, #0x16
+456B20D2 sqshrnb z18.s, z6.d, #0x15
+456C20D2 sqshrnb z18.s, z6.d, #0x14
+456D20D2 sqshrnb z18.s, z6.d, #0x13
+456E20D2 sqshrnb z18.s, z6.d, #0x12
+456F20D2 sqshrnb z18.s, z6.d, #0x11
+457020D2 sqshrnb z18.s, z6.d, #0x10
+457120D2 sqshrnb z18.s, z6.d, #0xf
+457320D2 sqshrnb z18.s, z6.d, #0xd
+457420D2 sqshrnb z18.s, z6.d, #0xc
+457520D2 sqshrnb z18.s, z6.d, #0xb
+457720D2 sqshrnb z18.s, z6.d, #0x9
+457820D2 sqshrnb z18.s, z6.d, #0x8
+457920D2 sqshrnb z18.s, z6.d, #0x7
+457A20D2 sqshrnb z18.s, z6.d, #0x6
+457B20D2 sqshrnb z18.s, z6.d, #0x5
+457C20D2 sqshrnb z18.s, z6.d, #0x4
+457D20D2 sqshrnb z18.s, z6.d, #0x3
+457E20D2 sqshrnb z18.s, z6.d, #0x2
+457F20D2 sqshrnb z18.s, z6.d, #0x1

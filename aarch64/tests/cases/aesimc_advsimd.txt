@@ -1,0 +1,21 @@
+// AESIMC_B_cryptoaes 0100|111|0|size=00|10100|0011|D=1|10|Rn=xxxxx|Rd=xxxxx
+// AesimcBCryptoaes: AESIMC  <Vd>.16B, <Vn>.16B
+// register fields: Rn, Rd
+4E287A67 aesimc v7.16b, v19.16b
+4E28797A aesimc v26.16b, v11.16b
+4E28787D aesimc v29.16b, v3.16b
+4E28793D aesimc v29.16b, v9.16b
+4E287B4E aesimc v14.16b, v26.16b
+4E2878E5 aesimc v5.16b, v7.16b
+4E287A0F aesimc v15.16b, v16.16b
+4E287A82 aesimc v2.16b, v20.16b
+4E287BA2 aesimc v2.16b, v29.16b
+4E287987 aesimc v7.16b, v12.16b
+4E287865 aesimc v5.16b, v3.16b
+4E28794C aesimc v12.16b, v10.16b
+4E287A90 aesimc v16.16b, v20.16b
+4E2879E2 aesimc v2.16b, v15.16b
+4E28795E aesimc v30.16b, v10.16b
+4E287B6C aesimc v12.16b, v27.16b
+4E287800 aesimc v0.16b, v0.16b
+4E287BFF aesimc v31.16b, v31.16b

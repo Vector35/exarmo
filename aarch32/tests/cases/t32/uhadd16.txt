@@ -1,0 +1,16 @@
+// UHADD16_T1 111|11010|1|op1=001|Rn=xxxx|1111|Rd=xxxx|0|U=1|H=1|S=0|Rm=xxxx
+// Uhadd16T1: UHADD16{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fa9ff66b uhadd16 r6, pc, r11 (unpredictable)
+fa98f26e uhadd16 r2, r8, lr
+fa9afc68 uhadd16 r12, r10, r8
+fa92f362 uhadd16 r3, r2, r2
+fa94f86f uhadd16 r8, r4, pc (unpredictable)
+fa9bfe64 uhadd16 lr, r11, r4
+fa98f766 uhadd16 r7, r8, r6
+fa95f763 uhadd16 r7, r5, r3
+FA90F060 uhadd16 r0, r0, r0
+FA9FFF6B uhadd16 pc, pc, r11 (unpredictable)
+FA9FF666 uhadd16 r6, pc, r6 (unpredictable)
+FA9FF66B [ne] uhadd16ne r6, pc, r11 (unpredictable)

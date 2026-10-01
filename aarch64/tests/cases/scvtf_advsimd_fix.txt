@@ -1,0 +1,81 @@
+// SCVTF_asimdshf_C 0|Q=x|U=0|0|111|10|immh=xxxx|immb=xxx|opcode=11100|1|Rn=xxxxx|Rd=xxxxx
+// ScvtfAsimdshfC: SCVTF  <Vd>.<T>, <Vn>.<T>, #<fbits>
+// read together by <T>: Q, immh
+// read together by <fbits>: immh, immb
+// register fields: Rn, Rd
+0F11E77E scvtf v30.4h, v27.4h, #0xf
+0F1FE46A scvtf v10.4h, v3.4h, #0x1
+0F29E6AE scvtf v14.2s, v21.2s, #0x17
+4F5BE710 scvtf v16.2d, v24.2d, #0x25
+4F77E698 scvtf v24.2d, v20.2d, #0x9
+4F59E5FA scvtf v26.2d, v15.2d, #0x27
+4F4AE5A7 scvtf v7.2d, v13.2d, #0x36
+0F1DE6DF scvtf v31.4h, v22.4h, #0x3
+4F49E768 scvtf v8.2d, v27.2d, #0x37
+0F3CE767 scvtf v7.2s, v27.2s, #0x4
+4F17E7C8 scvtf v8.8h, v30.8h, #0x9
+0F37E7C0 scvtf v0.2s, v30.2s, #0x9
+0F2DE483 scvtf v3.2s, v4.2s, #0x13
+0F11E6AA scvtf v10.4h, v21.4h, #0xf
+0F29E4B2 scvtf v18.2s, v5.2s, #0x17
+4F30E648 scvtf v8.4s, v18.4s, #0x10
+4F7EE410 scvtf v16.2d, v0.2d, #0x2
+0F11E7FE scvtf v30.4h, v31.4h, #0xf
+0F79E77E UNDEFINED
+4F78E718 scvtf v24.2d, v24.2d, #0x8
+4F79E710 scvtf v16.2d, v24.2d, #0x7
+4F7AE710 scvtf v16.2d, v24.2d, #0x6
+4F7BE710 scvtf v16.2d, v24.2d, #0x5
+4F7CE710 scvtf v16.2d, v24.2d, #0x4
+4F7DE710 scvtf v16.2d, v24.2d, #0x3
+4F7FE710 scvtf v16.2d, v24.2d, #0x1
+4F43E710 scvtf v16.2d, v24.2d, #0x3d
+0F21E77E scvtf v30.2s, v27.2s, #0x1f
+0F09E77E UNDEFINED
+
+// SCVTF_asisdshf_C 01|U=0|1|111|10|immh=xxxx|immb=xxx|opcode=11100|1|Rn=xxxxx|Rd=xxxxx
+// ScvtfAsisdshfC: SCVTF  <V><d>, <V><n>, #<fbits>
+// read together by <d>: immh, Rd
+// read together by <n>: immh, Rn
+// read together by <fbits>: immh, immb
+// register fields: Rn, Rd
+5F11E574 scvtf h20, h11, #0xf
+5F37E78A scvtf s10, s28, #0x9
+5F5CE780 scvtf d0, d28, #0x24
+5F12E573 scvtf h19, h11, #0xe
+5F48E493 scvtf d19, d4, #0x38
+5F34E4BD scvtf s29, s5, #0xc
+5F27E49B scvtf s27, s4, #0x19
+5F2BE634 scvtf s20, s17, #0x15
+5F5AE747 scvtf d7, d26, #0x26
+5F4EE477 scvtf d23, d3, #0x32
+5F76E475 scvtf d21, d3, #0xa
+5F2AE7CA scvtf s10, s30, #0x16
+5F37E5B9 scvtf s25, s13, #0x9
+5F1AE78A scvtf h10, h28, #0x6
+5F3CE5B1 scvtf s17, s13, #0x4
+5F44E4AC scvtf d12, d5, #0x3c
+5F7DE41F scvtf d31, d0, #0x3
+5F11E7F4 scvtf h20, h31, #0xf
+5F01E574 UNALLOCATED
+5F01E560 UNALLOCATED
+5F01E57F UNALLOCATED
+5F79E560 scvtf d0, d11, #0x7
+5F01E414 UNALLOCATED
+5F01E7F4 UNALLOCATED
+5F79E7F4 scvtf d20, d31, #0x7
+5F00E574 UNALLOCATED
+5F02E574 UNALLOCATED
+5F03E574 UNALLOCATED
+5F04E574 UNALLOCATED
+5F05E574 UNALLOCATED
+5F06E574 UNALLOCATED
+5F07E574 UNALLOCATED
+5F78E56B scvtf d11, d11, #0x8
+5F79E574 scvtf d20, d11, #0x7
+5F7AE574 scvtf d20, d11, #0x6
+5F7BE574 scvtf d20, d11, #0x5
+5F7CE574 scvtf d20, d11, #0x4
+5F7EE574 scvtf d20, d11, #0x2
+5F7FE574 scvtf d20, d11, #0x1
+5F09E574 UNDEFINED

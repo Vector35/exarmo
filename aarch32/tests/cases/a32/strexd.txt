@@ -1,0 +1,12 @@
+// STREXD_A1 cond=xxxx|00|01|1|size=01|L=0|Rn=xxxx|Rd=xxxx|(1)(1)|ex=1|ord=1|1|00|1|Rt=xxxx
+// StrexdA1: STREXD{<c>}{<q>}  <Rd>, <Rt>, <Rt2>, [<Rn>]
+// register fields: Rn, Rd, Rt
+// Binary Ninja's tests
+e1a86f92 strexd r6, r2, r3, [r8]
+01A00390 strexdeq r0, r0, r1, [r0] (unpredictable)
+F1A86F92 UNALLOCATED
+81AFF79F UNPREDICTABLE
+41A88B92 strexdmi r8, r2, r3, [r8] (unpredictable)
+21A86F98 strexdcs r6, r8, r9, [r8]
+11A86F96 strexdne r6, r6, r7, [r8] (unpredictable)
+81AFF792 strexdhi pc, r2, r3, [pc] (unpredictable)

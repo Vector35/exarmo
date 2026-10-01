@@ -1,0 +1,8 @@
+// madpt_z_zzz_ 010|0010|0|opc=11|0|Zm=xxxxx|1101|o2=1|0|Za=xxxxx|Zdn=xxxxx
+// MadptZZzz: MADPT  <Zdn>.D, <Zm>.D, <Za>.D
+// register fields: Zm, Za, Zdn
+44C0D800 madpt z0.d, z0.d, z0.d
+44C0D807 madpt z7.d, z0.d, z0.d
+44C0D80E madpt z14.d, z0.d, z0.d
+44DFDBFF madpt z31.d, z31.d, z31.d
+44C1D843 madpt z3.d, z1.d, z2.d

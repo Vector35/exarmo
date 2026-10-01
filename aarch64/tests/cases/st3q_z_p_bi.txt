@@ -1,0 +1,18 @@
+// st3q_z_p_bi_contiguous 111|0010|0|num=10|00|imm4=xxxx|0|0|0|Pg=xxx|Rn=xxxxx|Zt=xxxxx
+// St3qZPBiContiguous: ST3Q  { <Zt1>.Q, <Zt2>.Q, <Zt3>.Q }, <Pg>, [<Xn|SP>{, #<imm>, MUL VL}]
+// register fields: Pg, Rn, Zt
+E4800006 st3q {z6.q, z7.q, z8.q}, p0, [x0]
+E480000D st3q {z13.q, z14.q, z15.q}, p0, [x0]
+E4800014 st3q {z20.q, z21.q, z22.q}, p0, [x0]
+E48F07E0 st3q {z0.q, z1.q, z2.q}, p1, [sp, #-0x3, mul vl]
+E480081F st3q {z31.q, z0.q, z1.q}, p2, [x0]
+E4800C06 st3q {z6.q, z7.q, z8.q}, p3, [x0]
+E4801006 st3q {z6.q, z7.q, z8.q}, p4, [x0]
+E4801406 st3q {z6.q, z7.q, z8.q}, p5, [x0]
+E4801806 st3q {z6.q, z7.q, z8.q}, p6, [x0]
+E4801C06 st3q {z6.q, z7.q, z8.q}, p7, [x0]
+E4800000 st3q {z0.q, z1.q, z2.q}, p0, [x0]
+E4880006 st3q {z6.q, z7.q, z8.q}, p0, [x0, #-0x18, mul vl]
+E4840006 st3q {z6.q, z7.q, z8.q}, p0, [x0, #0xc, mul vl]
+E4820006 st3q {z6.q, z7.q, z8.q}, p0, [x0, #0x6, mul vl]
+E4810006 st3q {z6.q, z7.q, z8.q}, p0, [x0, #0x3, mul vl]

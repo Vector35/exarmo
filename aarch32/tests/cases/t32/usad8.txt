@@ -1,0 +1,14 @@
+// USAD8_T1 111|110110|op1=111|Rn=xxxx|Ra=1111|Rd=xxxx|00|op2=00|Rm=xxxx
+// Usad8T1: USAD8{<c>}{<q>}  {<Rd>, }<Rn>, <Rm>
+// register fields: Rn, Rd, Rm
+// IT state read: condition
+fb77ff0d usad8 pc, r7, sp (unpredictable)
+fb7ff80f usad8 r8, pc, pc (unpredictable)
+fb74fa04 usad8 r10, r4, r4
+fb7dfd0a usad8 sp, sp, r10
+fb7eff05 usad8 pc, lr, r5 (unpredictable)
+fb7ff202 usad8 r2, pc, r2 (unpredictable)
+fb72fb03 usad8 r11, r2, r3
+fb76fc05 usad8 r12, r6, r5
+FB70F000 usad8 r0, r0, r0
+FB77FF0D [ne] usad8ne pc, r7, sp (unpredictable)

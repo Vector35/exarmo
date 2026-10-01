@@ -1,0 +1,120 @@
+// VADD_f_T1_D 111|U=0|11110|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=0|M=x|o1=0|Vm=xxxx
+// VaddFT1D: VADD{<c>}{<q>}.<dt>  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ef16cdaf vadd.f16 d12, d22, d31
+ef567d0a vadd.f16 d23, d6, d10
+ef15bda2 vadd.f16 d11, d21, d18
+ef52cd85 vadd.f16 d28, d18, d5
+ef11ed8a vadd.f16 d14, d17, d10
+ef56ed20 vadd.f16 d30, d6, d16
+ef40dd82 vadd.f32 d29, d16, d2
+ef483d8d vadd.f32 d19, d24, d13
+EF1F0DA8 vadd.f16 d0, d31, d24
+EF14FDA4 vadd.f16 d15, d20, d20
+EF108D21 vadd.f16 d8, d0, d17
+EF1F4D00 vadd.f16 d4, d15, d0
+EF1F2D8F vadd.f16 d2, d31, d15
+EF161DAF vadd.f16 d1, d22, d31
+EF160DAF vadd.f16 d0, d22, d31
+EF16FDAF vadd.f16 d15, d22, d31
+EF560DAF vadd.f16 d16, d22, d31
+EF56FDAF vadd.f16 d31, d22, d31
+EF16CDAF [ne] vaddne.f16 d12, d22, d31 (unpredictable)
+
+// VADD_f_T1_Q 111|U=0|11110|D=x|0|sz=x|Vn=xxxx|Vd=xxxx|opc=1101|N=x|Q=1|M=x|o1=0|Vm=xxxx
+// VaddFT1Q: VADD{<c>}{<q>}.<dt>  {<Qd>, }<Qn>, <Qm>
+// read together by <Qd>: D, Vd
+// read together by <Qn>: Vn, N
+// read together by <Qm>: M, Vm
+// IT state read: condition
+ef484dc2 vadd.f32 q10, q12, q1
+ef566d6e vadd.f16 q11, q3, q15
+ef546dcc vadd.f16 q11, q10, q6
+ef4c8dec vadd.f32 q12, q14, q14
+ef1c0de8 vadd.f16 q0, q14, q12
+ef146d44 vadd.f16 q3, q2, q2
+ef464dc6 vadd.f32 q10, q11, q3
+ef046d66 vadd.f32 q3, q2, q11
+EF402DC0 vadd.f32 q9, q8, q0
+EF4FFDCF UNDEFINED
+EF420DC0 vadd.f32 q8, q9, q0
+EF411DC1 UNDEFINED
+EF0FFD4F UNDEFINED
+EF4FFDEF UNDEFINED
+EF404D60 vadd.f32 q10, q0, q8
+EF404DC2 vadd.f32 q10, q8, q1
+EF484DC2 [ne] vaddne.f32 q10, q12, q1
+
+// VADD_f_T2_D 11101110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=11|N=x|o2=0|M=x|0|Vm=xxxx
+// VaddFT2D: VADD{<c>}{<q>}.F64  {<Dd>, }<Dn>, <Dm>
+// read together by <Dd>: D, Vd
+// read together by <Dn>: Vn, N
+// read together by <Dm>: M, Vm
+// IT state read: condition
+ee3a9b82 vadd.f64 d9, d26, d2
+ee34fb29 vadd.f64 d15, d4, d25
+ee751b0e vadd.f64 d17, d5, d14
+ee3cdba2 vadd.f64 d13, d28, d18
+ee325ba4 vadd.f64 d5, d18, d20
+ee327b24 vadd.f64 d7, d2, d20
+ee39cb26 vadd.f64 d12, d9, d22
+ee33eb2a vadd.f64 d14, d3, d26
+EE300B80 vadd.f64 d0, d16, d0
+EE3F8B8F vadd.f64 d8, d31, d15
+EE384B88 vadd.f64 d4, d24, d8
+EE312B81 vadd.f64 d2, d17, d1
+EE300B00 vadd.f64 d0, d0, d0
+EE700B8F vadd.f64 d16, d16, d15
+EE7FFB20 vadd.f64 d31, d15, d16
+EE3F9BAF vadd.f64 d9, d31, d31
+EE3A9B82 [ne] vaddne.f64 d9, d26, d2
+
+// VADD_f_T2_H 11101110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=01|N=x|o2=0|M=x|0|Vm=xxxx
+// VaddFT2H: VADD{<c>}{<q>}.F16  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee70f900 vadd.f16 s31, s0, s0
+ee78598c vadd.f16 s11, s17, s24
+ee3b790e vadd.f16 s14, s22, s28
+ee3d098b vadd.f16 s0, s27, s22
+ee3ea982 vadd.f16 s20, s29, s4
+ee7d490e vadd.f16 s9, s26, s28
+ee3329a2 vadd.f16 s4, s7, s5
+ee3de925 vadd.f16 s28, s26, s11
+EE7F890F vadd.f16 s17, s30, s30
+EE741908 vadd.f16 s3, s8, s16
+EE32F904 vadd.f16 s30, s4, s8
+EE710901 vadd.f16 s1, s2, s2
+EE70F98F vadd.f16 s31, s1, s30
+EE7FF920 vadd.f16 s31, s30, s1
+EE7FF9AF vadd.f16 s31, s31, s31
+EE70F900 [ne] vaddne.f16 s31, s0, s0 (unpredictable)
+
+// VADD_f_T2_S 11101110|o0=0|D=x|o1=11|Vn=xxxx|Vd=xxxx|10|size=10|N=x|o2=0|M=x|0|Vm=xxxx
+// VaddFT2S: VADD{<c>}{<q>}.F32  {<Sd>, }<Sn>, <Sm>
+// read together by <Sd>: D, Vd
+// read together by <Sn>: Vn, N
+// read together by <Sm>: M, Vm
+// IT state read: condition
+ee33ea2e vadd.f32 s28, s6, s29
+ee3f7a80 vadd.f32 s14, s31, s0
+ee348a21 vadd.f32 s16, s8, s3
+ee705aaf vadd.f32 s11, s1, s31
+ee7f4a22 vadd.f32 s9, s30, s5
+ee3b9aa4 vadd.f32 s18, s23, s9
+ee735a2d vadd.f32 s11, s6, s27
+ee3d7a23 vadd.f32 s14, s26, s7
+EE380A28 vadd.f32 s0, s16, s17
+EE32FA0F vadd.f32 s30, s4, s30
+EE312A20 vadd.f32 s4, s2, s1
+EE301A2E vadd.f32 s2, s0, s29
+EE330A2E vadd.f32 s0, s6, s29
+EE33FA2E vadd.f32 s30, s6, s29
+EE730A2E vadd.f32 s1, s6, s29
+EE73FA2E vadd.f32 s31, s6, s29
+EE33EA2E [ne] vaddne.f32 s28, s6, s29

@@ -1,0 +1,49 @@
+// facge_p_p_zz_ 011|0010|1|size=xx|0|Zm=xxxxx|op=1|1|o2=0|Pg=xxx|Zn=xxxxx|o3=1|Pd=xxxx
+// FacgePPZz: FACGE  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Pg, Zn, Pd
+659DDCD7 facge p7.s, p7/z, z6.s, z29.s
+6585CB5D facge p13.s, p2/z, z26.s, z5.s
+65C2D63F facge p15.d, p5/z, z17.d, z2.d
+6545DF18 facge p8.h, p7/z, z24.h, z5.h
+6549CF5F facge p15.h, p3/z, z26.h, z9.h
+659ECDF5 facge p5.s, p3/z, z15.s, z30.s
+65CAD693 facge p3.d, p5/z, z20.d, z10.d
+65D2CC5F facge p15.d, p3/z, z2.d, z18.d
+6580D1D5 facge p5.s, p4/z, z14.s, z0.s
+65D3D3F9 facge p9.d, p4/z, z31.d, z19.d
+65C5DA7E facge p14.d, p6/z, z19.d, z5.d
+6596C575 facge p5.s, p1/z, z11.s, z22.s
+6587C178 facge p8.s, p0/z, z11.s, z7.s
+65CACE7C facge p12.d, p3/z, z19.d, z10.d
+65CCCE10 facge p0.d, p3/z, z16.d, z12.d
+6557CFD7 facge p7.h, p3/z, z30.h, z23.h
+659FDC17 facge p7.s, p7/z, z0.s, z31.s
+651DDCD7 UNDEFINED
+6587DCD6 facge p6.s, p7/z, z6.s, z7.s
+659DDFB7 facge p7.s, p7/z, z29.s, z29.s
+6587DCF7 facge p7.s, p7/z, z7.s, z7.s
+
+// facgt_p_p_zz_ 011|0010|1|size=xx|0|Zm=xxxxx|op=1|1|o2=1|Pg=xxx|Zn=xxxxx|o3=1|Pd=xxxx
+// FacgtPPZz: FACGT  <Pd>.<T>, <Pg>/Z, <Zn>.<T>, <Zm>.<T>
+// register fields: Zm, Pg, Zn, Pd
+659CE6B2 facgt p2.s, p1/z, z21.s, z28.s
+659EE35A facgt p10.s, p0/z, z26.s, z30.s
+6541E41F facgt p15.h, p1/z, z0.h, z1.h
+6596F794 facgt p4.s, p5/z, z28.s, z22.s
+658AFF18 facgt p8.s, p7/z, z24.s, z10.s
+658BF4DF facgt p15.s, p5/z, z6.s, z11.s
+65CDEB71 facgt p1.d, p2/z, z27.d, z13.d
+6541E157 facgt p7.h, p0/z, z10.h, z1.h
+659CE351 facgt p1.s, p0/z, z26.s, z28.s
+658AF9BC facgt p12.s, p6/z, z13.s, z10.s
+655AE2FE facgt p14.h, p0/z, z23.h, z26.h
+65D1EA53 facgt p3.d, p2/z, z18.d, z17.d
+65D2E7B7 facgt p7.d, p1/z, z29.d, z18.d
+6548F4B3 facgt p3.h, p5/z, z5.h, z8.h
+65CDF373 facgt p3.d, p4/z, z27.d, z13.d
+65CCEA72 facgt p2.d, p2/z, z19.d, z12.d
+6580EFF0 facgt p0.s, p3/z, z31.s, z0.s
+659FE6B2 facgt p2.s, p1/z, z21.s, z31.s
+651CE6B2 UNDEFINED
+659CE792 facgt p2.s, p1/z, z28.s, z28.s
+659CE452 facgt p2.s, p1/z, z2.s, z28.s

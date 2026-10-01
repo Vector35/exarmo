@@ -1,0 +1,25 @@
+// LDRSB_l_T1 111|1100|1|U=x|size=00|1|1111|Rt=xxxx|imm12=xxxxxxxxxxxx
+// LdrsbLT1: LDRSB{<c>}{<q>}  <Rt>, <label>
+// register fields: Rt
+// IT state read: condition
+f99f257e ldrsb r2, 0x10582
+f99fd973 ldrsb sp, 0x10977
+f91f4f3c ldrsb r4, 0xf0c8
+f99fd178 ldrsb sp, 0x1017c
+f91f9df7 ldrsb r9, 0xf20d
+f91f2543 ldrsb r2, 0xfac1
+F99F0000 ldrsb r0, 0x10004
+F99F2FFF ldrsb r2, 0x11003
+F99F2800 ldrsb r2, 0x10804
+F99F2400 ldrsb r2, 0x10404
+F99F2200 ldrsb r2, 0x10204
+F99F2100 ldrsb r2, 0x10104
+F99F2080 ldrsb r2, 0x10084
+F99F2040 ldrsb r2, 0x10044
+F99F2020 ldrsb r2, 0x10024
+F99F2010 ldrsb r2, 0x10014
+F99F2008 ldrsb r2, 0x1000c
+F99F2004 ldrsb r2, 0x10008
+F99F2002 ldrsb r2, 0x10006
+F99F2001 ldrsb r2, 0x10005
+F99F257E [ne] ldrsbne r2, 0x10582

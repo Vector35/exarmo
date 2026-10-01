@@ -1,0 +1,101 @@
+// LDTCLR_32_memop_unpriv 0|sz=0|011001|A=0|R=0|1|Rs=xxxxx|o3=0|opc=001|01|Rn=xxxxx|Rt=xxxxx
+// Ldtclr32MemopUnpriv: LDTCLR  <Ws>, <Wt>, [<Xn|SP>]
+// SttclrLdtclr32MemopUnpriv: STTCLR  <Ws>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+19201406 ldtclr w0, w6, [x0]
+1920140D ldtclr w0, w13, [x0]
+19201414 ldtclr w0, w20, [x0]
+192014DF sttclr w0, [x6]
+192015BF sttclr w0, [x13]
+1920169F sttclr w0, [x20]
+193F17E0 ldtclr wzr, w0, [sp]
+19201400 ldtclr w0, w0, [x0]
+192014CF ldtclr w0, w15, [x6]
+
+// LDTCLR_64_memop_unpriv 0|sz=1|011001|A=0|R=0|1|Rs=xxxxx|o3=0|opc=001|01|Rn=xxxxx|Rt=xxxxx
+// Ldtclr64MemopUnpriv: LDTCLR  <Xs>, <Xt>, [<Xn|SP>]
+// SttclrLdtclr64MemopUnpriv: STTCLR  <Xs>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+59201405 ldtclr x0, x5, [x0]
+5920140C ldtclr x0, x12, [x0]
+59201413 ldtclr x0, x19, [x0]
+5920149F sttclr x0, [x4]
+5920157F sttclr x0, [x11]
+5920165F sttclr x0, [x18]
+593F17E0 ldtclr xzr, x0, [sp]
+59201400 ldtclr x0, x0, [x0]
+5920148F ldtclr x0, x15, [x4]
+
+// LDTCLRA_32_memop_unpriv 0|sz=0|011001|A=1|R=0|1|Rs=xxxxx|o3=0|opc=001|01|Rn=xxxxx|Rt=xxxxx
+// Ldtclra32MemopUnpriv: LDTCLRA  <Ws>, <Wt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19A01402 ldtclra w0, w2, [x0]
+19A01409 ldtclra w0, w9, [x0]
+19A01410 ldtclra w0, w16, [x0]
+19BF17E0 ldtclra wzr, w0, [sp]
+19A0141F ldtclra w0, wzr, [x0]
+19A01400 ldtclra w0, w0, [x0]
+19A11443 ldtclra w1, w3, [x2]
+
+// LDTCLRA_64_memop_unpriv 0|sz=1|011001|A=1|R=0|1|Rs=xxxxx|o3=0|opc=001|01|Rn=xxxxx|Rt=xxxxx
+// Ldtclra64MemopUnpriv: LDTCLRA  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+59A01401 ldtclra x0, x1, [x0]
+59A01408 ldtclra x0, x8, [x0]
+59A0140F ldtclra x0, x15, [x0]
+59BF17E0 ldtclra xzr, x0, [sp]
+59A0141F ldtclra x0, xzr, [x0]
+59A01400 ldtclra x0, x0, [x0]
+59A11443 ldtclra x1, x3, [x2]
+
+// LDTCLRAL_32_memop_unpriv 0|sz=0|011001|A=1|R=1|1|Rs=xxxxx|o3=0|opc=001|01|Rn=xxxxx|Rt=xxxxx
+// Ldtclral32MemopUnpriv: LDTCLRAL  <Ws>, <Wt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+19E01400 ldtclral w0, w0, [x0]
+19E01407 ldtclral w0, w7, [x0]
+19E0140E ldtclral w0, w14, [x0]
+19FF17FF ldtclral wzr, wzr, [sp]
+19E11443 ldtclral w1, w3, [x2]
+
+// LDTCLRAL_64_memop_unpriv 0|sz=1|011001|A=1|R=1|1|Rs=xxxxx|o3=0|opc=001|01|Rn=xxxxx|Rt=xxxxx
+// Ldtclral64MemopUnpriv: LDTCLRAL  <Xs>, <Xt>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+59E01406 ldtclral x0, x6, [x0]
+59E0140D ldtclral x0, x13, [x0]
+59E01414 ldtclral x0, x20, [x0]
+59FF17E0 ldtclral xzr, x0, [sp]
+59E0141F ldtclral x0, xzr, [x0]
+59E01400 ldtclral x0, x0, [x0]
+59E11443 ldtclral x1, x3, [x2]
+
+// LDTCLRL_32_memop_unpriv 0|sz=0|011001|A=0|R=1|1|Rs=xxxxx|o3=0|opc=001|01|Rn=xxxxx|Rt=xxxxx
+// Ldtclrl32MemopUnpriv: LDTCLRL  <Ws>, <Wt>, [<Xn|SP>]
+// SttclrlLdtclrl32MemopUnpriv: STTCLRL  <Ws>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+19601404 ldtclrl w0, w4, [x0]
+1960140B ldtclrl w0, w11, [x0]
+19601412 ldtclrl w0, w18, [x0]
+1960145F sttclrl w0, [x2]
+1960153F sttclrl w0, [x9]
+1960161F sttclrl w0, [x16]
+197F17E0 ldtclrl wzr, w0, [sp]
+19601400 ldtclrl w0, w0, [x0]
+1960144F ldtclrl w0, w15, [x2]
+
+// LDTCLRL_64_memop_unpriv 0|sz=1|011001|A=0|R=1|1|Rs=xxxxx|o3=0|opc=001|01|Rn=xxxxx|Rt=xxxxx
+// Ldtclrl64MemopUnpriv: LDTCLRL  <Xs>, <Xt>, [<Xn|SP>]
+// SttclrlLdtclrl64MemopUnpriv: STTCLRL  <Xs>, [<Xn|SP>]
+// register fields: Rs, Rn, Rt
+// form chosen on: Rt
+59601403 ldtclrl x0, x3, [x0]
+5960140A ldtclrl x0, x10, [x0]
+59601411 ldtclrl x0, x17, [x0]
+5960141F sttclrl x0, [x0]
+596014FF sttclrl x0, [x7]
+596015DF sttclrl x0, [x14]
+597F17E0 ldtclrl xzr, x0, [sp]
+59601400 ldtclrl x0, x0, [x0]
+5960140F ldtclrl x0, x15, [x0]

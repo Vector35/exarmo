@@ -1,0 +1,20 @@
+// MSR_br_A1_AS cond=xxxx|00|010|R=x|1|0|M1=xxxx|Rd=(1)(1)(1)(1)|(0)(0)|B=1|M=x|0|000|Rn=xxxx
+// MsrBrA1As: MSR{<c>}{<q>}  <banked_reg>, <Rn>
+// read together by <banked_reg>: R, M1, M
+// register fields: Rn
+01200200 msreq r8_usr, r0 (unpredictable)
+F1200200 UNALLOCATED
+816FF70F UNPREDICTABLE
+41288A00 msrmi r8_fiq, r0 (unpredictable)
+21244E00 msrcs r12_usr, r0 (unpredictable)
+11222200 msrne r10_usr, r0 (unpredictable)
+01211200 msreq r9_usr, r0 (unpredictable)
+01200300 msreq lr_irq, r0 (unpredictable)
+012F0200 UNPREDICTABLE
+012F0300 msreq sp_hyp, r0 (unpredictable)
+01600200 UNPREDICTABLE
+01600300 msreq spsr_irq, r0 (unpredictable)
+016F0200 UNPREDICTABLE
+016F0300 UNPREDICTABLE
+8120F60F msrhi r8_usr, pc (unpredictable)
+0120F200 msreq r8_usr, r0

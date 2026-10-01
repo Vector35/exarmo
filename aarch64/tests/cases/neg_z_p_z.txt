@@ -1,0 +1,36 @@
+// neg_z_p_z_m 000|0010|0|size=xx|0|M=1|0|opc=111|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// NegZPZM: NEG  <Zd>.<T>, <Pg>/M, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+0457A14A neg z10.h, p0/m, z10.h
+04D7A618 neg z24.d, p1/m, z16.d
+04D7B312 neg z18.d, p4/m, z24.d
+04D7A0B4 neg z20.d, p0/m, z5.d
+0497A02C neg z12.s, p0/m, z1.s
+0417A8DF neg z31.b, p2/m, z6.b
+04D7AD2C neg z12.d, p3/m, z9.d
+0497B6E6 neg z6.s, p5/m, z23.s
+04D7BE76 neg z22.d, p7/m, z19.d
+04D7A571 neg z17.d, p1/m, z11.d
+0417B825 neg z5.b, p6/m, z1.b
+0417B7B1 neg z17.b, p5/m, z29.b
+0457ABD2 neg z18.h, p2/m, z30.h
+0457AE14 neg z20.h, p3/m, z16.h
+0417B32E neg z14.b, p4/m, z25.b
+0497AE4C neg z12.s, p3/m, z18.s
+0457A000 neg z0.h, p0/m, z0.h
+0457A3EA neg z10.h, p0/m, z31.h
+
+// neg_z_p_z_z 000|0010|0|size=xx|0|M=0|0|opc=111|101|Pg=xxx|Zn=xxxxx|Zd=xxxxx
+// NegZPZZ: NEG  <Zd>.<T>, <Pg>/Z, <Zn>.<T>
+// register fields: Pg, Zn, Zd
+0407A000 neg z0.b, p0/z, z0.b
+0407A007 neg z7.b, p0/z, z0.b
+0407A00E neg z14.b, p0/z, z0.b
+0447A7FF neg z31.h, p1/z, z31.h
+0487A800 neg z0.s, p2/z, z0.s
+04C7AC00 neg z0.d, p3/z, z0.d
+0407B000 neg z0.b, p4/z, z0.b
+0407B400 neg z0.b, p5/z, z0.b
+0407B800 neg z0.b, p6/z, z0.b
+0407BC00 neg z0.b, p7/z, z0.b
+0407A443 neg z3.b, p1/z, z2.b
