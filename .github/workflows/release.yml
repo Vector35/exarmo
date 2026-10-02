@@ -36,6 +36,19 @@ jobs:
     permissions:
       contents: write
     steps:
-      - run: gh release create "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --verify-tag --generate-notes
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      # Generate release notes from the commit messages since the previous
+      # tag. --generate-notes alone is not enough, as it only lists pull
+      # requests merged in this repository, and there are none. It still
+      # adds the compare link.
+      - run: |
+          prev=$(git describe --tags --abbrev=0 "$GITHUB_REF_NAME^" 2>/dev/null || true)
+          git log --no-merges \
+            --format="- %s ([%h](https://github.com/$GITHUB_REPOSITORY/commit/%H))" \
+            ${prev:+"$prev.."}"$GITHUB_REF_NAME" | sed '/^- Release v/d' > notes.md
+          gh release create "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --verify-tag \
+            --notes-file notes.md --generate-notes
         env:
           GH_TOKEN: ${{ github.token }}
