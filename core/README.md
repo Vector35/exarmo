@@ -10,3 +10,13 @@ the error a decode returns.
 Use `exarmo-aarch64` or `exarmo-aarch32`, which re-export what a consumer
 needs from here. A consumer handling both instruction sets can write against
 the `Decoded` trait both implement.
+
+## Crate features
+
+The crate is `#![no_std]`. Its default `std` feature can be turned off for use
+in an environment without the standard library. That removes `capi`, the
+support the C APIs are built on.
+
+The `alloc` feature, which `std` enables, can be turned off as well for use in
+an environment without an allocator. That removes `Token` and the `TokenSink`
+impls for `Vec<Token>` and `String`.

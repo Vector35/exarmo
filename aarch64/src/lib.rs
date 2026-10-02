@@ -1,6 +1,11 @@
 #![doc = include_str!("../README.md")]
+#![no_std]
+#![cfg_attr(docsrs, feature(doc_cfg))]
 #![deny(unsafe_code)]
 #![warn(missing_docs)]
+
+#[cfg(test)]
+extern crate alloc;
 
 /// The decoder, instruction model and tables generated from ARM's XML.
 pub mod generated;
@@ -27,9 +32,12 @@ pub use operands::{
     Mem, Modifier, Offset, Operand, Operands, PcRead, Reg, RegList, RegOperand, Symbol, Writeback,
     ZaArray, ZaSlice,
 };
-pub use tokens::{Decoded, Hex, Token, TokenKind, TokenSink};
+pub use tokens::{Decoded, Hex, TokenKind, TokenSink};
 pub use types::{
     Arrangement, BReg, DReg, DynRegSp, DynRegZr, DynScalarSimd, ElementWidth, GpReg, HReg, PNReg,
     PReg, QReg, SReg, SysReg, SysRegDef, VReg, WRegSp, WRegZr, XRegSp, XRegZr, ZATile, ZReg,
     ZaTileMask, ZaTileName,
 };
+
+#[cfg(feature = "alloc")]
+pub use tokens::Token;

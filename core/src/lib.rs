@@ -3,10 +3,19 @@
 //! Register, arrangement and data type names belong to each instruction set
 //! and stay out of this crate.
 
+#![no_std]
+#![cfg_attr(docsrs, feature(doc_cfg))]
 #![warn(missing_docs)]
+
+#[cfg(feature = "std")]
+extern crate std;
+
+#[cfg(any(test, feature = "alloc"))]
+extern crate alloc;
 
 pub mod address;
 pub mod branch;
+#[cfg(feature = "std")]
 pub mod capi;
 pub mod condition;
 pub mod decode;

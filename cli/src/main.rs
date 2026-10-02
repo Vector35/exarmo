@@ -16,7 +16,7 @@ use std::num;
 use clap::{Parser, Subcommand, ValueEnum};
 #[cfg(feature = "aarch32")]
 use exarmo_aarch32::{ItState, a32, t32};
-use exarmo_core::decode::Decoded;
+use exarmo_core::decode::{Decoded, UNPREDICTABLE_MARK};
 
 #[cfg(not(any(feature = "aarch64", feature = "aarch32")))]
 compile_error!("exarmo-cli needs at least one of the aarch64 and aarch32 features");
@@ -83,18 +83,26 @@ struct Show {
     intrinsics: bool,
 }
 
-/// What a decode comes to: its text, then the intrinsic and the fields where
-/// asked, or why it was not an instruction. The text of a word that is
-/// CONSTRAINED UNPREDICTABLE is marked as the corpus expects it. An
-/// instruction realising no intrinsic has `-` in that column, so the fields
-/// are in the same column on every line.
+fn marked_text(instruction: &dyn Decoded) -> Result<String, fmt::Error> {
+    let mut text = String::new();
+    instruction.write_tokens_at(0, &mut text)?;
+    if instruction.unpredictable() {
+        text.push_str(UNPREDICTABLE_MARK);
+    }
+    Ok(text)
+}
+
+/// The line printed for one word. For an instruction, it is the text followed
+/// by the intrinsic and the fields when they are asked for. Otherwise, it is
+/// the reason the word is not an instruction. An instruction with no intrinsic
+/// has `-` in that column, so the fields line up on every line.
 fn rendered<I: Decoded, E: fmt::Debug>(
     decoded: Result<I, E>,
     show: Show,
     intrinsic: impl FnOnce(&I) -> Option<&'static str>,
 ) -> String {
     match decoded {
-        Ok(instruction) => match instruction.marked_text_at(0) {
+        Ok(instruction) => match marked_text(&instruction) {
             // A rendering fails where the operands view does not hold what it
             // asks of a slot, which a sweep counts and skips rather than
             // comparing a half-written line.

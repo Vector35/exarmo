@@ -37,21 +37,9 @@ pub trait Decoded: fmt::Debug {
     /// Whether the word is CONSTRAINED UNPREDICTABLE, and still decodes as
     /// the instruction.
     fn unpredictable(&self) -> bool;
-
-    /// The instruction's text at this address, followed by
-    /// [`UNPREDICTABLE_MARK`] where its word is CONSTRAINED UNPREDICTABLE.
-    fn marked_text_at(&self, address: u64) -> Result<String, fmt::Error> {
-        let mut text = String::new();
-        self.write_tokens_at(address, &mut text)?;
-        if self.unpredictable() {
-            text.push_str(UNPREDICTABLE_MARK);
-        }
-        Ok(text)
-    }
 }
 
-/// What follows an instruction's text where its word is CONSTRAINED
-/// UNPREDICTABLE, as the command writes it and the corpus expects it.
+/// The suffix appended to the text of a CONSTRAINED UNPREDICTABLE instruction.
 pub const UNPREDICTABLE_MARK: &str = " (unpredictable)";
 
 /// Implements [`Decoded`] for a runtime's generated `Instruction`.
@@ -124,3 +112,5 @@ impl fmt::Display for DecodeError {
         }
     }
 }
+
+impl core::error::Error for DecodeError {}

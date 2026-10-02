@@ -9,6 +9,11 @@
 
 use core::fmt;
 
+#[cfg(feature = "alloc")]
+use alloc::string::{String, ToString};
+#[cfg(feature = "alloc")]
+use alloc::vec::Vec;
+
 /// What a token is.
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
 pub enum TokenKind {
@@ -85,6 +90,7 @@ impl TokenSink for fmt::Formatter<'_> {
 }
 
 /// A token as the `Vec<Token>` sink records it.
+#[cfg(feature = "alloc")]
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Token {
     /// The token's kind.
@@ -96,6 +102,7 @@ pub struct Token {
 }
 
 /// Records every token in order.
+#[cfg(feature = "alloc")]
 impl TokenSink for Vec<Token> {
     fn text(&mut self, kind: TokenKind, operand: OperandIndex, text: &str) -> fmt::Result {
         self.push(Token {
@@ -122,6 +129,7 @@ impl TokenSink for Vec<Token> {
 }
 
 /// Appends the text, dropping the kinds.
+#[cfg(feature = "alloc")]
 impl TokenSink for String {
     fn text(&mut self, _kind: TokenKind, _operand: OperandIndex, text: &str) -> fmt::Result {
         self.push_str(text);

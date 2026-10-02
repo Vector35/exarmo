@@ -141,6 +141,7 @@ impl<T: Copy + Default + fmt::Debug, const N: usize> fmt::Debug for Operands<T, 
 #[cfg(test)]
 mod tests {
     use super::Operands;
+    use alloc::format;
 
     #[test]
     fn it_holds_as_many_as_it_was_given() {

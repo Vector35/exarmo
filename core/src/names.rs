@@ -81,6 +81,7 @@ pub const fn name_at(text: &'static str, ends: &[u32], index: usize) -> &'static
 #[cfg(test)]
 mod tests {
     use super::*;
+    use alloc::vec::Vec;
 
     const NAMES: &[&str] = &["ab", "", "cde"];
     static PACKED: [u8; packed_len(NAMES)] = pack(NAMES);

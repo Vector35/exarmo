@@ -9,3 +9,12 @@ repository.workspace = true
 keywords = ["arm", "aarch64", "aarch32", "disassembler"]
 categories = ["development-tools"]
 documentation = "https://docs.rs/exarmo-core"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[features]
+default = ["std"]
+std = ["alloc"]
+alloc = []

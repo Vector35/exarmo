@@ -18,6 +18,8 @@ pub const fn always_holds(bits: u8) -> bool {
 #[cfg(test)]
 mod tests {
     use super::always_holds;
+    use alloc::vec;
+    use alloc::vec::Vec;
 
     #[test]
     fn the_last_two_conditions_hold_always() {

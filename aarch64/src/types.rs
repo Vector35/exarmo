@@ -186,6 +186,7 @@ impl fmt::Display for Arrangement {
 #[cfg(test)]
 mod arrangement_tests {
     use super::*;
+    use alloc::string::ToString;
 
     /// The fifteen symbols the ISA's arrangement tables are written in.
     #[test]
@@ -233,7 +234,7 @@ impl ZaTileMask {
     /// Every tile name with the bits it covers, widest first so that taking
     /// each one that fits leaves the shortest list.
     fn candidates() -> impl Iterator<Item = (ZaTileName, u8)> {
-        let whole = std::iter::once((ZaTileName { n: 0, size: None }, 0xff));
+        let whole = core::iter::once((ZaTileName { n: 0, size: None }, 0xff));
         let tiles = |size, count, covered: u8| {
             (0..count).map(move |n| {
                 (
@@ -300,6 +301,7 @@ impl fmt::Display for ZaTileMask {
 #[cfg(test)]
 mod za_tile_mask_tests {
     use super::ZaTileMask;
+    use alloc::string::ToString;
 
     /// The cases the architecture gives for ZERO's preferred disassembly.
     #[test]
@@ -690,9 +692,9 @@ mod tests {
 
     #[test]
     fn test_size_of_types() {
-        assert_eq!(std::mem::size_of::<WRegZr>(), 1);
-        assert_eq!(std::mem::size_of::<WRegSp>(), 1);
-        assert_eq!(std::mem::size_of::<XRegZr>(), 1);
-        assert_eq!(std::mem::size_of::<XRegSp>(), 1);
+        assert_eq!(core::mem::size_of::<WRegZr>(), 1);
+        assert_eq!(core::mem::size_of::<WRegSp>(), 1);
+        assert_eq!(core::mem::size_of::<XRegZr>(), 1);
+        assert_eq!(core::mem::size_of::<XRegSp>(), 1);
     }
 }

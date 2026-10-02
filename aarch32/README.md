@@ -6,6 +6,10 @@ in both the A32 and T32 instruction sets.
 
 This version is generated from Arm's 2026-09 release of the specification.
 
+```sh
+cargo add exarmo-aarch32
+```
+
 ```rust
 use exarmo_aarch32::{ItState, a32, t32};
 
@@ -38,3 +42,9 @@ a C API around this crate.
 [`exarmo-cli`](https://crates.io/crates/exarmo-cli) provides a command-line
 disassembler built on this crate and
 [`exarmo-aarch64`](https://crates.io/crates/exarmo-aarch64).
+
+## Crate features
+
+The crate is `#![no_std]`. Its default `alloc` feature can be turned off for use
+in an environment without an allocator. That removes `Token` and the
+`TokenSink` impls for `Vec<Token>` and `String`.

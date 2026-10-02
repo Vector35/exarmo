@@ -363,10 +363,9 @@ pub enum Outcome {
 }
 
 impl Outcome {
-    /// What a decode comes to, written as tokens at `address`, as the text or
-    /// the reason there is none. The text of a word that is CONSTRAINED
-    /// UNPREDICTABLE carries [`exarmo_core::decode::UNPREDICTABLE_MARK`], as
-    /// its case expects it.
+    /// The outcome of `decoded`, with an instruction written as tokens at
+    /// `address`. The text of a CONSTRAINED UNPREDICTABLE instruction ends
+    /// with [`exarmo_core::decode::UNPREDICTABLE_MARK`].
     pub fn of<I: exarmo_core::Decoded>(
         decoded: Result<I, exarmo_core::DecodeError>,
         address: u64,
@@ -374,8 +373,14 @@ impl Outcome {
         match decoded {
             Ok(inst) => {
                 let instruction = format!("{inst:?}");
-                match inst.marked_text_at(address) {
-                    Ok(text) => Outcome::Rendered { text, instruction },
+                let mut text = String::new();
+                match inst.write_tokens_at(address, &mut text) {
+                    Ok(()) => {
+                        if inst.unpredictable() {
+                            text.push_str(exarmo_core::decode::UNPREDICTABLE_MARK);
+                        }
+                        Outcome::Rendered { text, instruction }
+                    }
                     Err(_) => Outcome::Unrendered { instruction },
                 }
             }

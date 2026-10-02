@@ -5,8 +5,13 @@
 //! descriptions span both. No encoding is shared, so each entry point returns
 //! only its own instruction set's variants.
 
+#![no_std]
+#![cfg_attr(docsrs, feature(doc_cfg))]
 #![deny(unsafe_code)]
 #![warn(missing_docs)]
+
+#[cfg(test)]
+extern crate alloc;
 
 pub mod generated;
 pub mod operands;
@@ -26,5 +31,8 @@ pub use operands::{
     Lane, ListFile, Mem, Modifier, Offset, Operand, Operands, PcRead, Reg, RegList, RegOperand,
     Symbol, Writeback,
 };
-pub use tokens::{Decoded, Hex, Token, TokenKind, TokenSink};
+pub use tokens::{Decoded, Hex, TokenKind, TokenSink};
 pub use types::{DReg, GpReg, ItState, QReg, SReg, Scalar, SysReg, SysRegDef};
+
+#[cfg(feature = "alloc")]
+pub use tokens::Token;

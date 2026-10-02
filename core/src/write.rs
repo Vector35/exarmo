@@ -58,10 +58,10 @@ pub fn float_from_bits(bits: u64, width: u32) -> f64 {
             let exponent = (half >> 10) & 0x1f;
             let fraction = f64::from(half & 0x3ff);
             match exponent {
-                0 => sign * fraction * 2f64.powi(-24),
+                0 => sign * fraction * power_of_two(-24),
                 0x1f if fraction == 0.0 => sign * f64::INFINITY,
                 0x1f => f64::NAN,
-                _ => sign * (1.0 + fraction / 1024.0) * 2f64.powi(i32::from(exponent) - 15),
+                _ => sign * (1.0 + fraction / 1024.0) * power_of_two(i32::from(exponent) - 15),
             }
         }
         32 => f64::from(f32::from_bits(bits as u32)),
@@ -69,60 +69,36 @@ pub fn float_from_bits(bits: u64, width: u32) -> f64 {
     }
 }
 
+/// `2f64.powi(exponent)` without `std`. `exponent` must be in `-1022..=1023`.
+const fn power_of_two(exponent: i32) -> f64 {
+    debug_assert!(-1022 <= exponent && exponent <= 1023);
+    f64::from_bits(((exponent + 1023) as u64) << 52)
+}
+
 /// A floating-point number, written so that a whole one keeps its point.
 pub struct Float<T>(pub T);
 
 impl<T: fmt::Display> fmt::Display for Float<T> {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        // The text must be inspected to know whether it already has a point.
-        // A stack buffer avoids allocating on the formatting path, and text
-        // longer than the buffer falls back to the heap.
-        let mut held = Held::default();
-        if write!(held, "{}", self.0).is_ok() {
-            return put(f, held.written());
-        }
-        put(f, &format!("{}", self.0))
-    }
-}
-
-/// Writes a number, adding `.0` where its text has no point or exponent.
-fn put(f: &mut fmt::Formatter<'_>, written: &str) -> fmt::Result {
-    match written.contains(['.', 'e', 'E']) {
-        true => f.write_str(written),
-        false => write!(f, "{written}.0"),
-    }
-}
-
-/// A stack buffer large enough for any immediate the architecture encodes.
-struct Held {
-    bytes: [u8; 64],
-    len: usize,
-}
-
-impl Default for Held {
-    fn default() -> Self {
-        Held {
-            bytes: [0; 64],
-            len: 0,
+        let mut out = DetectDecimalPoint { f, found: false };
+        write!(out, "{}", self.0)?;
+        match out.found {
+            true => Ok(()),
+            false => f.write_str(".0"),
         }
     }
 }
 
-impl Held {
-    /// The text written so far, which is UTF-8 because only `write!` fills
-    /// the buffer.
-    fn written(&self) -> &str {
-        core::str::from_utf8(&self.bytes[..self.len]).unwrap_or("")
-    }
+/// Passes text through, noting whether it held a point or an exponent.
+struct DetectDecimalPoint<'a, 'b> {
+    f: &'a mut fmt::Formatter<'b>,
+    found: bool,
 }
 
-impl fmt::Write for Held {
+impl fmt::Write for DetectDecimalPoint<'_, '_> {
     fn write_str(&mut self, s: &str) -> fmt::Result {
-        let end = self.len.checked_add(s.len()).ok_or(fmt::Error)?;
-        let room = self.bytes.get_mut(self.len..end).ok_or(fmt::Error)?;
-        room.copy_from_slice(s.as_bytes());
-        self.len = end;
-        Ok(())
+        self.found |= s.contains(['.', 'e', 'E']);
+        self.f.write_str(s)
     }
 }
 
@@ -347,11 +323,14 @@ macro_rules! rendering_writer {
     };
 }
 
-#[cfg(test)]
+#[cfg(all(test, feature = "alloc"))]
 mod tests {
-    use super::{Form, Writer, float_from_bits};
+    use super::{Float, Form, Writer, float_from_bits};
     use crate::address::PcRead;
     use crate::tokens::{Token, TokenKind};
+    use alloc::string::{String, ToString};
+    use alloc::vec;
+    use alloc::vec::Vec;
     use core::fmt;
 
     /// What a writer wrote, as its tokens and as the text they come to.
@@ -430,6 +409,21 @@ mod tests {
                 (TokenKind::Bracket, Some(1)),
             ]
         );
+    }
+
+    #[test]
+    fn a_whole_number_keeps_its_point() {
+        assert_eq!(Float(2.0).to_string(), "2.0");
+        assert_eq!(Float(-0.125).to_string(), "-0.125");
+    }
+
+    /// `f64` writes no exponent, so 1e100 is 101 digits, longer than any
+    /// immediate the architecture encodes.
+    #[test]
+    fn a_long_number_is_written_whole() {
+        let written = Float(1e100).to_string();
+        assert_eq!(written.len(), 103);
+        assert!(written.starts_with('1') && written.ends_with("0.0"));
     }
 
     /// The smallest denormal at each width.

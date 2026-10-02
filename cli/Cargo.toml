@@ -23,6 +23,6 @@ aarch32 = ["dep:exarmo-aarch32"]
 
 [dependencies]
 clap.workspace = true
-exarmo-core.workspace = true
+exarmo-core = { workspace = true, features = ["std"] }
 exarmo-aarch32 = { workspace = true, optional = true }
 exarmo-aarch64 = { workspace = true, optional = true }

@@ -3,14 +3,19 @@
 //! The token stream itself is [`exarmo_core::tokens`], shared with AArch64.
 
 pub use exarmo_core::decode::Decoded;
-pub use exarmo_core::tokens::{Hex, Token, TokenKind, TokenSink};
+pub use exarmo_core::tokens::{Hex, TokenKind, TokenSink};
+
+#[cfg(feature = "alloc")]
+pub use exarmo_core::tokens::Token;
 
 exarmo_core::decoded!(crate::Instruction);
 
-#[cfg(test)]
+#[cfg(all(test, feature = "alloc"))]
 mod tests {
     use super::*;
     use crate::a32;
+    use alloc::string::{String, ToString};
+    use alloc::vec::Vec;
 
     fn tokens(bits: u32, address: u64) -> Vec<(TokenKind, String)> {
         let mut sink: Vec<Token> = Vec::new();

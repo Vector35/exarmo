@@ -76,3 +76,25 @@ jobs:
       # The command can be built with either instruction set left out.
       - run: cargo clippy -p exarmo-cli --all-targets --locked --no-default-features --features aarch64
       - run: cargo clippy -p exarmo-cli --all-targets --locked --no-default-features --features aarch32
+
+  no-std:
+    name: no_std (${{ matrix.features || 'core' }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # The runtimes with alloc and with neither.
+        features: ["", alloc]
+    steps:
+      - uses: actions/checkout@v7
+      - run: rustup toolchain install
+      - run: rustup target add aarch64-unknown-none
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: no-std-${{ matrix.features }}
+          cache-on-failure: true
+      # Check the runtime libraries only. Their tests require std, as does the rest of the workspace.
+      - run: >
+          cargo clippy --locked --no-default-features --features "${{ matrix.features }}"
+          --target aarch64-unknown-none
+          -p exarmo-core -p exarmo-aarch64 -p exarmo-aarch32

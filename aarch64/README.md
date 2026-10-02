@@ -7,6 +7,10 @@ Technologies extensions.
 
 This version is generated from Arm's 2026-09 release of the specification.
 
+```sh
+cargo add exarmo-aarch64
+```
+
 ```rust
 let instruction = exarmo_aarch64::decode(0xd503201f).unwrap();
 assert_eq!(instruction.at(0x1000).to_string(), "nop");
@@ -31,3 +35,9 @@ a C API around this crate.
 [`exarmo-cli`](https://crates.io/crates/exarmo-cli) provides a command-line
 disassembler built on this crate and
 [`exarmo-aarch32`](https://crates.io/crates/exarmo-aarch32).
+
+## Crate features
+
+The crate is `#![no_std]`. Its default `alloc` feature can be turned off for use
+in an environment without an allocator. That removes `Token` and the
+`TokenSink` impls for `Vec<Token>` and `String`.

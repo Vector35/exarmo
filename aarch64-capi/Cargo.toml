@@ -21,7 +21,7 @@ crate-type = ["staticlib", "rlib"]
 
 [dependencies]
 exarmo-aarch64.workspace = true
-exarmo-core.workspace = true
+exarmo-core = { workspace = true, features = ["std"] }
 
 [dev-dependencies]
 exarmo-testing = { path = "../testing" }

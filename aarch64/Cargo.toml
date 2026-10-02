@@ -12,6 +12,14 @@ documentation = "https://docs.rs/exarmo-aarch64"
 # The tests read the corpus through exarmo-testing, which is not published.
 exclude = ["tests/"]
 
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[features]
+default = ["alloc"]
+alloc = ["exarmo-core/alloc"]
+
 [dependencies]
 exarmo-core.workspace = true
 
