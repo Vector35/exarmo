@@ -13,9 +13,11 @@
 #[cfg(test)]
 extern crate alloc;
 
+pub mod a32;
 pub mod generated;
 pub mod operands;
 pub mod rendering;
+pub mod t32;
 pub mod tokens;
 mod types;
 
@@ -25,7 +27,7 @@ pub use exarmo_core::flags::{FlagEffect, Flags};
 pub use generated::enums::*;
 pub use generated::{
     Cond, Encoding, Instruction, InstructionAt, Mnemonic, ModifierKind, PROVENANCE, Provenance,
-    SysRegSpace, a32, t32,
+    SysRegSpace,
 };
 pub use operands::{
     Lane, ListFile, Mem, Modifier, Offset, Operand, Operands, PcRead, Reg, RegList, RegOperand,

@@ -19,7 +19,7 @@ mod tests {
 
     fn tokens(bits: u32, address: u64) -> Vec<(TokenKind, String)> {
         let mut sink: Vec<Token> = Vec::new();
-        a32::decode(bits)
+        a32::decode_word(bits)
             .unwrap()
             .at(address)
             .write_tokens(&mut sink)
@@ -44,7 +44,7 @@ mod tests {
         use crate::ModifierKind;
         use crate::operands::{Operand, Reg};
         // addeq r8, lr, sp, rrx
-        let inst = a32::decode(0x008e806d).unwrap();
+        let inst = a32::decode_word(0x008e806d).unwrap();
         let ops = inst.operands();
         assert_eq!(ops.len(), 4);
         match ops[3] {

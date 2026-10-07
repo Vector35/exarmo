@@ -8,21 +8,23 @@ and the generated `include/exarmo/aarch32_generated.h`.
 #include <exarmo/aarch32.h>
 
 exarmo_aarch32_instruction inst;
-if (exarmo_aarch32_decode_a32(0xe5901000, &inst) == EXARMO_AARCH32_STATUS_OK) {
+if (exarmo_aarch32_decode_a32_word(0xe5901000, &inst) == EXARMO_AARCH32_STATUS_OK) {
     char text[EXARMO_AARCH32_MAX_TEXT + 1];
     exarmo_aarch32_instruction_text(&inst, 0x1000, text, sizeof text);
     /* text is "ldr\tr1, [r0]" */
 }
 
-/* A T32 word holds its first halfword in the high half. */
+/* A 16-bit T32 nop */
+const uint8_t nop[] = {0x00, 0xbf};
 exarmo_aarch32_it_state outside = {EXARMO_AARCH32_IT_OUTSIDE, 0, 0};
-exarmo_aarch32_decode_t32(0xbf000000, outside, &inst);
+exarmo_aarch32_decode_t32_bytes(nop, sizeof nop, outside, &inst);
 ```
 
-A32 and T32 each have a decode function. A T32 decode takes the IT state,
-which `exarmo_aarch32_it_state_after` advances from one instruction to the
-next. `exarmo_aarch32_t32_length` says from the first halfword whether a
-T32 instruction is two bytes or four.
+A32 and T32 each decode from a 32-bit word or from a byte buffer. A T32 decode
+from bytes reads either two or four bytes, depending on the size encoded in the
+first 16 bits of the instruction, and `exarmo_aarch32_instruction_length`
+returns the size of the decoded instruction. A T32 decode takes the IT state,
+which `exarmo_aarch32_it_state_after` advances from one instruction to the next.
 
 An instruction is decoded once into storage the caller owns. Functions then
 read its encoding and mnemonic, operands, condition flags, effect on the flow

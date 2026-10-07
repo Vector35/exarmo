@@ -11,7 +11,7 @@ use std::collections::BTreeSet;
 
 mod corpus;
 
-use exarmo_aarch64::decode;
+use exarmo_aarch64::decode_word;
 
 #[test]
 fn intrinsics_snapshot() {
@@ -20,7 +20,9 @@ fn intrinsics_snapshot() {
     let mut with = 0usize;
     let mut names = BTreeSet::new();
     for bits in corpus::encodings(&text) {
-        let Ok(inst) = decode(bits) else { continue };
+        let Ok(inst) = decode_word(bits) else {
+            continue;
+        };
         let intrinsics = inst.intrinsics();
         if intrinsics.is_empty() {
             continue;

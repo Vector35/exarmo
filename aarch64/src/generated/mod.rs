@@ -15,7 +15,7 @@ mod pseudocode;
 pub mod sysops;
 pub mod sysreg_names;
 
-pub use decode::decode;
+pub use decode::decode_word;
 pub use encoding::{Encoding, Mnemonic};
 pub use enums::*;
 pub use instruction::{Instruction, InstructionAt};

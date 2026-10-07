@@ -129,9 +129,9 @@ fn measure(
 fn throughput() {
     let passes = exarmo_testing::perf::passes();
     measure("A32", &encodings("a32"), passes, |w, out| unsafe {
-        exarmo_aarch32_decode_a32(w, out)
+        exarmo_aarch32_decode_a32_word(w, out)
     });
     measure("T32", &encodings("t32"), passes, |w, out| unsafe {
-        exarmo_aarch32_decode_t32(w, OUTSIDE, out)
+        exarmo_aarch32_decode_t32_word(w, OUTSIDE, out)
     });
 }

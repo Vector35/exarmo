@@ -33,11 +33,10 @@ mod simd_dp;
 mod sme;
 mod sve;
 
-/// Decode a 32-bit AArch64 instruction.
+/// Decode the 32-bit AArch64 instruction word `bits`.
 ///
-/// An encoding allocated to no instruction is `Err(DecodeError::Unallocated)`;
-/// one the architecture defines as UNDEFINED or a NOP says so.
-pub fn decode(bits: u32) -> Result<Instruction, DecodeError> {
+/// If the word is not an instruction, returns a [`DecodeError`] that says why.
+pub fn decode_word(bits: u32) -> Result<Instruction, DecodeError> {
     let op0 = (bits >> 31) & 0x1;
     let op1 = (bits >> 25) & 0xf;
     match (op0, op1) {

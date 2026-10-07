@@ -4,7 +4,7 @@
 
 mod corpus;
 
-use exarmo_aarch64::decode;
+use exarmo_aarch64::decode_word;
 
 /// Every case breaking a bit its block's header writes `(0)` or `(1)` is
 /// CONSTRAINED UNPREDICTABLE, which holds the test the generator writes into
@@ -14,7 +14,7 @@ fn every_case_breaking_a_bit_is_unpredictable() {
     let (mut checked, mut failures) = (0, Vec::new());
     for block in exarmo_testing::blocks::blocks(&corpus::text(), exarmo_testing::word_of) {
         for held in block.words.iter().filter(|held| !held.fails) {
-            let Ok(inst) = decode(held.word) else {
+            let Ok(inst) = decode_word(held.word) else {
                 continue;
             };
             checked += 1;

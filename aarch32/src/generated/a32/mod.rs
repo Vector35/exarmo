@@ -29,11 +29,10 @@ mod dp;
 mod media;
 mod uncond_as;
 
-/// Decode an A32 instruction.
+/// Decode the 32-bit A32 instruction word `bits`.
 ///
-/// An encoding allocated to no instruction is `Err(DecodeError::Unallocated)`;
-/// one the architecture defines as UNDEFINED or a NOP says so.
-pub fn decode(bits: u32) -> Result<Instruction, DecodeError> {
+/// If the word is not an instruction, returns a [`DecodeError`] that says why.
+pub fn decode_word(bits: u32) -> Result<Instruction, DecodeError> {
     let cond = (bits >> 28) & 0xf;
     let op0 = (bits >> 25) & 0x7;
     let op1 = (bits >> 4) & 0x1;

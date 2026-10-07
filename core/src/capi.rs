@@ -30,6 +30,8 @@ pub enum Status {
     /// The encoding is a hint the architecture reserves, which behaves as
     /// a NOP.
     ReservedHint = 6,
+    /// The bytes ended before the instruction did.
+    Truncated = 7,
 }
 
 impl From<crate::DecodeError> for Status {
@@ -40,6 +42,7 @@ impl From<crate::DecodeError> for Status {
             crate::DecodeError::NOP => Status::Nop,
             crate::DecodeError::Unpredictable => Status::Unpredictable,
             crate::DecodeError::ReservedHint => Status::ReservedHint,
+            crate::DecodeError::Truncated => Status::Truncated,
         }
     }
 }
@@ -393,6 +396,20 @@ pub unsafe fn buffer<'a, T>(ptr: *mut T, capacity: usize) -> &'a mut [T] {
         &mut []
     } else {
         unsafe { std::slice::from_raw_parts_mut(ptr, capacity) }
+    }
+}
+
+/// The caller's `len` bytes at `ptr`, or nothing for a null pointer with a
+/// length.
+///
+/// # Safety
+///
+/// A non-null `ptr` must point to `len` readable bytes.
+pub unsafe fn bytes<'a>(ptr: *const u8, len: usize) -> Option<&'a [u8]> {
+    match (ptr.is_null(), len) {
+        (_, 0) => Some(&[]),
+        (true, _) => None,
+        (false, _) => Some(unsafe { std::slice::from_raw_parts(ptr, len) }),
     }
 }
 

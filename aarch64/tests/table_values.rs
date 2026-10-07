@@ -1,18 +1,22 @@
 //! A value from a table is a symbol when the table names it and a number
 //! when it does not, in the view and in the tokens alike.
 
-use exarmo_aarch64::{Operand, Token, TokenKind, decode};
+use exarmo_aarch64::{Operand, Token, TokenKind, decode_word};
 
 fn tokens(bits: u32) -> Vec<(TokenKind, String)> {
     let mut sink: Vec<Token> = Vec::new();
-    decode(bits).unwrap().at(0).write_tokens(&mut sink).unwrap();
+    decode_word(bits)
+        .unwrap()
+        .at(0)
+        .write_tokens(&mut sink)
+        .unwrap();
     sink.into_iter().map(|t| (t.kind, t.text)).collect()
 }
 
 #[test]
 fn a_barrier_option_is_a_name_where_the_table_has_one() {
     // DSB ISH
-    let inst = decode(0xD5033B9F).unwrap();
+    let inst = decode_word(0xD5033B9F).unwrap();
     assert_eq!(inst.at(0).to_string(), "dsb\tish");
     assert!(matches!(inst.operands()[0], Operand::Symbol(s) if s.name == "ish" && s.bits == 11));
     assert_eq!(
@@ -22,7 +26,7 @@ fn a_barrier_option_is_a_name_where_the_table_has_one() {
 
     // DSB #8. The table names nothing there, so the alternation's immediate
     // branch is what is written, and what the view holds
-    let inst = decode(0xD503389F).unwrap();
+    let inst = decode_word(0xD503389F).unwrap();
     assert_eq!(inst.at(0).to_string(), "dsb\t#0x8");
     assert!(matches!(inst.operands()[0], Operand::Imm { value: 8, .. }));
     assert_eq!(tokens(0xD503389F)[2], (TokenKind::Text, "#".to_string()));
@@ -48,7 +52,7 @@ fn an_element_index_from_a_table_is_an_integer() {
 /// field at all, so neither carries one.
 #[test]
 fn a_float_carries_the_pattern_the_encoding_holds() {
-    let float = |bits: u32| match decode(bits).unwrap().operands()[1] {
+    let float = |bits: u32| match decode_word(bits).unwrap().operands()[1] {
         Operand::FpImm { value, width, bits } => (value, width, bits),
         other => panic!("{other:?} is not a floating-point immediate"),
     };
@@ -106,7 +110,7 @@ fn a_condition_is_the_one_the_instruction_is_written_under() {
         (0x5A9F03E8u32, 1, Cond::Ne, 12, true),
         (0xDA8A1544u32, 2, Cond::Eq, 12, true),
     ] {
-        let inst = decode(word).unwrap();
+        let inst = decode_word(word).unwrap();
         let ops = inst.operands();
         assert_eq!(ops[at], Operand::Cond(cond), "{word:08X}");
         assert!(

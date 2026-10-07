@@ -8,7 +8,9 @@ use std::collections::{BTreeMap, HashSet};
 
 mod corpus;
 
-use exarmo_aarch64::{Arrangement, Modifier, Offset, Operand, Token, TokenKind, ZaArray, decode};
+use exarmo_aarch64::{
+    Arrangement, Modifier, Offset, Operand, Token, TokenKind, ZaArray, decode_word,
+};
 
 fn modifier_name(m: Option<Modifier>, out: &mut HashSet<String>) {
     if let Some(m) = m {
@@ -219,7 +221,9 @@ fn view_agrees_with_text() {
     let mut others: BTreeMap<String, usize> = BTreeMap::new();
     let mut failures: Vec<String> = Vec::new();
     for bits in corpus::encodings(&text) {
-        let Ok(inst) = decode(bits) else { continue };
+        let Ok(inst) = decode_word(bits) else {
+            continue;
+        };
         let at = inst.at(corpus::INSTR_ADDRESS);
         let mut tokens: Vec<Token> = Vec::new();
         at.write_tokens(&mut tokens).unwrap();
@@ -302,9 +306,9 @@ fn view_agrees_with_text() {
 #[test]
 fn a_fixed_shift_amount_is_the_amount_and_not_the_bit() {
     // ldrb w4, [x24, lr, lsl #0x0] has S set, so the shift is written.
-    let written = decode(0x387E_7B04).expect("LDRB (register), shifted");
+    let written = decode_word(0x387E_7B04).expect("LDRB (register), shifted");
     // ldrb w27, [x15, x16] has S clear, so it is not.
-    let omitted = decode(0x386A_6A20).expect("LDRB (register), unshifted");
+    let omitted = decode_word(0x386A_6A20).expect("LDRB (register), unshifted");
 
     for (bits, instruction, expected) in [
         (0x387E_7B04u32, written, Some(0u32)),
@@ -343,7 +347,9 @@ fn every_token_says_which_operand_it_is_part_of() {
     let mut marked = 0usize;
     let mut unmarked: HashSet<String> = HashSet::new();
     for bits in corpus::encodings(&text) {
-        let Ok(inst) = decode(bits) else { continue };
+        let Ok(inst) = decode_word(bits) else {
+            continue;
+        };
         let at = inst.at(corpus::INSTR_ADDRESS);
         let mut tokens: Vec<Token> = Vec::new();
         at.write_tokens(&mut tokens).unwrap();
@@ -426,7 +432,7 @@ fn every_token_says_which_operand_it_is_part_of() {
 #[test]
 fn a_memory_operands_brackets_are_its_own() {
     // ldr x0, [x1, #8], whose brackets are the memory operand's.
-    let ldr = decode(0xF9400420).unwrap();
+    let ldr = decode_word(0xF9400420).unwrap();
     let mut tokens: Vec<Token> = Vec::new();
     ldr.at(0).write_tokens(&mut tokens).unwrap();
     let brackets: Vec<Option<u8>> = tokens
@@ -439,7 +445,7 @@ fn a_memory_operands_brackets_are_its_own() {
 
     // mov v0.s[1], w0, whose brackets are the register's lane index. It has
     // no memory operand at all.
-    let mov = decode(0x4E0C1C00).unwrap();
+    let mov = decode_word(0x4E0C1C00).unwrap();
     let mut tokens: Vec<Token> = Vec::new();
     mov.at(0).write_tokens(&mut tokens).unwrap();
     let brackets: Vec<Option<u8>> = tokens
@@ -453,7 +459,7 @@ fn a_memory_operands_brackets_are_its_own() {
     // st1b {za0v.b[w12, 11]}, p0, [x3, x4]. An SME slice written in braces
     // is one operand, its own inner brackets included, and the memory
     // operand after it is another.
-    let st1b = decode(0xE024806B).unwrap();
+    let st1b = decode_word(0xE024806B).unwrap();
     let mut tokens: Vec<Token> = Vec::new();
     st1b.at(0).write_tokens(&mut tokens).unwrap();
     let brackets: Vec<Option<u8>> = tokens
@@ -474,7 +480,7 @@ fn a_memory_operands_brackets_are_its_own() {
 #[test]
 fn a_register_list_is_one_operand() {
     // ext z24.b, {z30.b, z31.b}, #0xb5
-    let ext = decode(0x057617D8).unwrap();
+    let ext = decode_word(0x057617D8).unwrap();
     let mut tokens: Vec<Token> = Vec::new();
     ext.at(0).write_tokens(&mut tokens).unwrap();
     let written: Vec<(Option<u8>, &str)> = tokens

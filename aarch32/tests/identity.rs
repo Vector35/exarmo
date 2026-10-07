@@ -4,7 +4,7 @@ use exarmo_aarch32::{Encoding, ItState, Mnemonic, a32, t32};
 
 #[test]
 fn an_instruction_names_its_encoding_and_mnemonic() {
-    let add = a32::decode(0xe0812003).unwrap();
+    let add = a32::decode_word(0xe0812003).unwrap();
     let encoding = add.encoding();
     assert_eq!(encoding.name(), "AddRA1");
     assert_eq!(add.mnemonic().name(), "add");
@@ -13,7 +13,7 @@ fn an_instruction_names_its_encoding_and_mnemonic() {
     assert_eq!(encoding.length(), 4);
 
     // The same instruction in T32 is an encoding of its own.
-    let add = t32::decode(0x4408_0000, ItState::Outside).unwrap();
+    let add = t32::decode_word(0x4408_0000, ItState::Outside).unwrap();
     assert_eq!(add.encoding().name(), "AddRT2");
     assert_eq!(add.mnemonic().name(), "add");
     assert_eq!(add.encoding().length(), 2);

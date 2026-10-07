@@ -17,7 +17,7 @@
 
 use exarmo_aarch32::{Cond, Encoding, Instruction, ItState, Mnemonic};
 pub use exarmo_core::capi::{Branch, FlagEffect, Status, Str, TextSize, Token};
-use exarmo_core::capi::{Storage, deliver, fill, guarded, with_held, write_tokens};
+use exarmo_core::capi::{Storage, bytes, deliver, fill, guarded, with_held, write_tokens};
 
 pub mod model;
 pub mod tables;
@@ -118,11 +118,44 @@ impl From<ItState> for CItState {
 ///
 /// A non-null `out` must point to writable storage for a `CInstruction`.
 #[unsafe(no_mangle)]
-pub unsafe extern "C" fn exarmo_aarch32_decode_a32(bits: u32, out: *mut CInstruction) -> Status {
+pub unsafe extern "C" fn exarmo_aarch32_decode_a32_word(
+    bits: u32,
+    out: *mut CInstruction,
+) -> Status {
     if out.is_null() {
         return Status::Failed;
     }
-    unsafe { deliver(|| exarmo_aarch32::a32::decode(bits), out) }
+    unsafe { deliver(|| exarmo_aarch32::a32::decode_word(bits), out) }
+}
+
+/// The former name of [`exarmo_aarch32_decode_a32_word`], which the header
+/// marks deprecated.
+///
+/// # Safety
+///
+/// See [`exarmo_aarch32_decode_a32_word`].
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn exarmo_aarch32_decode_a32(bits: u32, out: *mut CInstruction) -> Status {
+    unsafe { exarmo_aarch32_decode_a32_word(bits, out) }
+}
+
+/// Decode the A32 instruction at the start of the `len` bytes at `bytes` into
+/// `out`, which is written only on `Status::Ok`.
+///
+/// # Safety
+///
+/// A non-null `bytes` must point to `len` readable bytes, and a non-null
+/// `out` to writable storage for a `CInstruction`.
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn exarmo_aarch32_decode_a32_bytes(
+    bytes: *const u8,
+    len: usize,
+    out: *mut CInstruction,
+) -> Status {
+    match (unsafe { self::bytes(bytes, len) }, out.is_null()) {
+        (Some(code), false) => unsafe { deliver(|| exarmo_aarch32::a32::decode_bytes(code), out) },
+        _ => Status::Failed,
+    }
 }
 
 /// Decode the T32 word `bits`, its first halfword in the high half, under
@@ -132,7 +165,7 @@ pub unsafe extern "C" fn exarmo_aarch32_decode_a32(bits: u32, out: *mut CInstruc
 ///
 /// A non-null `out` must point to writable storage for a `CInstruction`.
 #[unsafe(no_mangle)]
-pub unsafe extern "C" fn exarmo_aarch32_decode_t32(
+pub unsafe extern "C" fn exarmo_aarch32_decode_t32_word(
     bits: u32,
     state: CItState,
     out: *mut CInstruction,
@@ -140,7 +173,48 @@ pub unsafe extern "C" fn exarmo_aarch32_decode_t32(
     if out.is_null() {
         return Status::Failed;
     }
-    unsafe { deliver(|| exarmo_aarch32::t32::decode(bits, state.into()), out) }
+    unsafe { deliver(|| exarmo_aarch32::t32::decode_word(bits, state.into()), out) }
+}
+
+/// The former name of [`exarmo_aarch32_decode_t32_word`], which the header
+/// marks deprecated.
+///
+/// # Safety
+///
+/// See [`exarmo_aarch32_decode_t32_word`].
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn exarmo_aarch32_decode_t32(
+    bits: u32,
+    state: CItState,
+    out: *mut CInstruction,
+) -> Status {
+    unsafe { exarmo_aarch32_decode_t32_word(bits, state, out) }
+}
+
+/// Decode the T32 instruction at the start of the `len` bytes at `bytes`,
+/// under the IT state `state`, into `out`, which is written only on
+/// `Status::Ok`.
+///
+/// # Safety
+///
+/// A non-null `bytes` must point to `len` readable bytes, and a non-null
+/// `out` to writable storage for a `CInstruction`.
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn exarmo_aarch32_decode_t32_bytes(
+    bytes: *const u8,
+    len: usize,
+    state: CItState,
+    out: *mut CInstruction,
+) -> Status {
+    match (unsafe { self::bytes(bytes, len) }, out.is_null()) {
+        (Some(code), false) => unsafe {
+            deliver(
+                || exarmo_aarch32::t32::decode_bytes(code, state.into()),
+                out,
+            )
+        },
+        _ => Status::Failed,
+    }
 }
 
 /// How many bytes the T32 instruction beginning with the halfword `hw1`
@@ -156,7 +230,8 @@ pub extern "C" fn exarmo_aarch32_t32_length(hw1: u16) -> u8 {
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch32_decode_t32`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch32_it_state_after(
     state: CItState,
@@ -170,7 +245,8 @@ pub unsafe extern "C" fn exarmo_aarch32_it_state_after(
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch32_decode_a32`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch32_instruction_length(inst: *const CInstruction) -> u8 {
     unsafe { with_held(inst, 0, |inst| inst.encoding().length()) }
@@ -182,7 +258,8 @@ pub unsafe extern "C" fn exarmo_aarch32_instruction_length(inst: *const CInstruc
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch32_decode_a32`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch32_instruction_unpredictable(
     inst: *const CInstruction,
@@ -195,7 +272,8 @@ pub unsafe extern "C" fn exarmo_aarch32_instruction_unpredictable(
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch32_decode_a32`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch32_instruction_encoding(inst: *const CInstruction) -> u32 {
     let none = Encoding::COUNT as u32;
@@ -207,7 +285,8 @@ pub unsafe extern "C" fn exarmo_aarch32_instruction_encoding(inst: *const CInstr
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch32_decode_a32`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch32_instruction_mnemonic(inst: *const CInstruction) -> u32 {
     let none = Mnemonic::COUNT as u32;
@@ -244,7 +323,8 @@ pub extern "C" fn exarmo_aarch32_mnemonic_name(mnemonic: u32) -> Str {
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch32_decode_a32`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch32_instruction_flags(inst: *const CInstruction) -> FlagEffect {
     let none = FlagEffect::from(exarmo_aarch32::FlagEffect::NONE);
@@ -256,7 +336,8 @@ pub unsafe extern "C" fn exarmo_aarch32_instruction_flags(inst: *const CInstruct
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch32_decode_a32`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch32_instruction_branch(
     inst: *const CInstruction,
@@ -271,8 +352,8 @@ pub unsafe extern "C" fn exarmo_aarch32_instruction_branch(
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch32_decode_a32`] for what `inst` must point to. A
-/// non-null `out` must point to a writable `exarmo_aarch32_sysreg`.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode. A non-null `out` must point to a writable `exarmo_aarch32_sysreg`.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch32_instruction_sysreg(
     inst: *const CInstruction,
@@ -301,8 +382,8 @@ pub extern "C" fn exarmo_aarch32_sysreg_name(space: u8, encoding: u32, write: bo
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch32_decode_a32`] for what `inst` must point to. A
-/// non-null `out` must point to `capacity` writable operands.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode. A non-null `out` must point to `capacity` writable operands.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch32_instruction_operands(
     inst: *const CInstruction,
@@ -324,8 +405,8 @@ pub unsafe extern "C" fn exarmo_aarch32_instruction_operands(
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch32_decode_a32`] for what `inst` must point to. A
-/// non-null `text` must point to `text_capacity` writable bytes and a
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode. A non-null `text` must point to `text_capacity` writable bytes and a
 /// non-null `tokens` to `token_capacity` writable tokens.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch32_instruction_tokens(

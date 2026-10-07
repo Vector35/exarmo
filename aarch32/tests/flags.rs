@@ -10,7 +10,7 @@ use corpus::Set;
 use exarmo_aarch32::{Cond, Encoding, FlagEffect, Flags, ItState, Mnemonic, Operand, a32, t32};
 
 fn a32_effect(bits: u32) -> FlagEffect {
-    a32::decode(bits).unwrap().flags()
+    a32::decode_word(bits).unwrap().flags()
 }
 
 #[test]
@@ -52,9 +52,11 @@ fn a_condition_reads_every_flag_unless_it_is_always() {
 /// the effect follows the form.
 #[test]
 fn a_halfword_sets_the_flags_only_outside_an_it_block() {
-    let adds = t32::decode(0x1840_0000, ItState::Outside).unwrap().flags();
+    let adds = t32::decode_word(0x1840_0000, ItState::Outside)
+        .unwrap()
+        .flags();
     assert_eq!(adds.writes, Flags::NZCV, "adds r0, r0, r1");
-    let add = t32::decode(
+    let add = t32::decode_word(
         0x1840_0000,
         ItState::Inside {
             cond: Cond::Eq,
@@ -83,9 +85,11 @@ fn a_floating_point_compare_writes_no_flag_this_reports() {
 /// whether or not it is inside an IT block, unlike its 16-bit sibling.
 #[test]
 fn a_wide_encoding_sets_the_flags_from_its_own_bit() {
-    let outside = t32::decode(0xf11d6707, ItState::Outside).unwrap().flags();
+    let outside = t32::decode_word(0xf11d6707, ItState::Outside)
+        .unwrap()
+        .flags();
     assert_eq!(outside.writes, Flags::NZCV, "adds.w r7, sp, #...");
-    let inside = t32::decode(
+    let inside = t32::decode_word(
         0xf11d6707,
         ItState::Inside {
             cond: Cond::Eq,
@@ -276,13 +280,13 @@ fn inside_an_it_block_the_condition_is_the_blocks() {
         if !seen.insert(case.encoding) {
             continue;
         }
-        let Ok(inst) = t32::decode(case.encoding, corpus::INSIDE) else {
+        let Ok(inst) = t32::decode_word(case.encoding, corpus::INSIDE) else {
             continue;
         };
         checked += 1;
         let reads = inst.flags().reads;
         let named = corpus::named(Set::T32, &case, &inst);
-        let Ok(outside) = t32::decode(case.encoding, ItState::Outside) else {
+        let Ok(outside) = t32::decode_word(case.encoding, ItState::Outside) else {
             failures.push(format!("{named}: decodes only inside a block"));
             continue;
         };

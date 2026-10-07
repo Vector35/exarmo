@@ -14,7 +14,7 @@
 // Each test takes in the whole module and uses the part it needs.
 #![allow(dead_code)]
 
-use exarmo_aarch64::decode;
+use exarmo_aarch64::decode_word;
 pub use exarmo_testing::{Case, Outcome, Verdict};
 
 /// The address every harness disassembles at, so a PC-relative operand in an
@@ -31,7 +31,7 @@ impl exarmo_testing::Corpus for Corpus {
     }
 
     fn render(self, word: u32) -> Outcome {
-        Outcome::of(decode(word), INSTR_ADDRESS)
+        Outcome::of(decode_word(word), INSTR_ADDRESS)
     }
 }
 
@@ -77,7 +77,7 @@ pub fn instructions() -> Vec<(Case, exarmo_aarch64::Instruction)> {
     cases()
         .into_iter()
         .filter(|case| seen.insert(case.encoding))
-        .filter_map(|case| decode(case.encoding).ok().map(|inst| (case, inst)))
+        .filter_map(|case| decode_word(case.encoding).ok().map(|inst| (case, inst)))
         .collect()
 }
 

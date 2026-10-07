@@ -9,13 +9,13 @@ use exarmo_aarch32::{Branch, BranchKind, Flags, ItState, Operand, Token, a32, t3
 
 /// The branch an A32 word takes, read as though it sat at 0x1000.
 fn a32(bits: u32) -> Branch {
-    a32::decode(bits).unwrap().at(0x1000).branch()
+    a32::decode_word(bits).unwrap().at(0x1000).branch()
 }
 
 /// The branch a T32 instruction takes outside any IT block, its first
 /// halfword in the high half of `bits`.
 fn t32(bits: u32) -> Branch {
-    t32::decode(bits, ItState::Outside)
+    t32::decode_word(bits, ItState::Outside)
         .unwrap()
         .at(0x1000)
         .branch()
@@ -224,7 +224,7 @@ fn inside_an_it_block_a_branch_is_conditional_where_it_reads_the_flags() {
         if !seen.insert(case.encoding) {
             continue;
         }
-        let Ok(inst) = t32::decode(case.encoding, corpus::INSIDE) else {
+        let Ok(inst) = t32::decode_word(case.encoding, corpus::INSIDE) else {
             continue;
         };
         checked += 1;

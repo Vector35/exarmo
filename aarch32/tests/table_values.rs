@@ -5,7 +5,7 @@ use exarmo_aarch32::{Operand, Token, TokenKind, a32};
 
 fn tokens(bits: u32) -> Vec<(TokenKind, String)> {
     let mut sink: Vec<Token> = Vec::new();
-    a32::decode(bits)
+    a32::decode_word(bits)
         .unwrap()
         .at(0)
         .write_tokens(&mut sink)
@@ -17,7 +17,7 @@ fn tokens(bits: u32) -> Vec<(TokenKind, String)> {
 /// answers come out of the same table on the same instruction.
 #[test]
 fn a_barrier_option_is_a_name_where_the_table_has_one() {
-    let inst = a32::decode(0xf57ff041).unwrap();
+    let inst = a32::decode_word(0xf57ff041).unwrap();
     assert_eq!(inst.at(0).to_string(), "dsb\toshld");
     assert!(matches!(inst.operands()[0], Operand::Symbol(s) if s.name == "oshld" && s.bits == 1));
     assert_eq!(
@@ -26,7 +26,7 @@ fn a_barrier_option_is_a_name_where_the_table_has_one() {
     );
 
     // The table names nothing at 0, so the number is what is written
-    let inst = a32::decode(0xf57ff050).unwrap();
+    let inst = a32::decode_word(0xf57ff050).unwrap();
     assert_eq!(inst.at(0).to_string(), "dmb\t#0x0");
     assert!(matches!(inst.operands()[0], Operand::Symbol(s) if s.name.is_empty()));
     let got = tokens(0xf57ff050);

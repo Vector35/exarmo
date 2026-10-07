@@ -9,7 +9,7 @@ use std::collections::HashSet;
 
 mod corpus;
 
-use exarmo_aarch64::{Mnemonic, Operand, SysOp, decode};
+use exarmo_aarch64::{Mnemonic, Operand, SysOp, decode_word};
 
 /// The table's entry for a name written by an instruction.
 fn entry(instruction: Mnemonic, name: &str) -> SysOp {
@@ -44,7 +44,7 @@ fn an_operation_is_the_encoding_its_word_holds() {
         // The page fixes every bit of CRm, so all of them name it.
         assert_eq!(op.crm_names, 0xF, "{instruction:?} {name}");
         // The decoded instruction's first operand names the row.
-        let inst = decode(bits).unwrap();
+        let inst = decode_word(bits).unwrap();
         assert_eq!(inst.mnemonic(), instruction);
         let Operand::SysOp(named) = inst.operands()[0] else {
             panic!("{instruction:?} {name} names a row of the table");
@@ -67,7 +67,9 @@ fn an_operand_names_the_row_its_word_encodes() {
         let Ok(word) = u32::from_str_radix(hex, 16) else {
             continue;
         };
-        let Ok(inst) = decode(word) else { continue };
+        let Ok(inst) = decode_word(word) else {
+            continue;
+        };
         for operand in inst.operands().iter() {
             let Operand::SysOp(named) = operand else {
                 continue;
@@ -110,7 +112,7 @@ fn a_pstate_field_takes_its_immediate_in_crm() {
     // fields.
     let mut rows = Vec::new();
     for (bits, imm) in [(0xD50343DFu32, 3), (0xD50345DFu32, 5)] {
-        let inst = decode(bits).unwrap();
+        let inst = decode_word(bits).unwrap();
         let operands = inst.operands();
         let Operand::SysOp(op) = operands[0] else {
             panic!("a PSTATE field names a row of the table");
@@ -297,7 +299,7 @@ fn every_operation_sys_reaches_is_written_as_its_alias() {
             | 31;
         // TLBIP shares its encodings with TLBI and is written by SYSP, so
         // what the word names is asked rather than which row it came from.
-        match decode(word) {
+        match decode_word(word) {
             Ok(inst) if inst.mnemonic() != Mnemonic::Sys => reached += 1,
             _ => bare.push(format!("{:?} {}", op.instruction, op.name)),
         }
@@ -332,7 +334,9 @@ fn every_instruction_naming_an_operation_carries_the_row() {
         let Ok(word) = u32::from_str_radix(hex, 16) else {
             continue;
         };
-        let Ok(inst) = decode(word) else { continue };
+        let Ok(inst) = decode_word(word) else {
+            continue;
+        };
         if !naming.contains(&inst.mnemonic()) {
             continue;
         }

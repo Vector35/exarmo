@@ -13,7 +13,7 @@ use exarmo_aarch32::{ItState, t32};
 #[test]
 fn the_halfword_after_a_16_bit_instruction_breaks_nothing() {
     assert!(
-        !t32::decode(0xb658_ffff, ItState::Outside)
+        !t32::decode_word(0xb658_ffff, ItState::Outside)
             .unwrap()
             .unpredictable()
     );

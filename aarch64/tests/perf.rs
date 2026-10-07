@@ -19,6 +19,6 @@ fn throughput() {
         &words,
         exarmo_testing::perf::passes(),
         corpus::INSTR_ADDRESS,
-        exarmo_aarch64::decode,
+        exarmo_aarch64::decode_word,
     );
 }

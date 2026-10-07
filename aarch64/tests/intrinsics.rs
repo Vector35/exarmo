@@ -8,7 +8,7 @@ use std::collections::BTreeSet;
 
 mod corpus;
 
-use exarmo_aarch64::{Instruction, Operand, Output, Source, TypeKind, decode};
+use exarmo_aarch64::{Instruction, Operand, Output, Source, TypeKind, decode_word};
 
 #[test]
 fn every_binding_names_an_operand_of_its_kind() {
@@ -17,7 +17,9 @@ fn every_binding_names_an_operand_of_its_kind() {
     let mut names = BTreeSet::new();
     let mut failures = Vec::new();
     for bits in corpus::encodings(&text) {
-        let Ok(inst) = decode(bits) else { continue };
+        let Ok(inst) = decode_word(bits) else {
+            continue;
+        };
         let intrinsics = inst.intrinsics();
         if intrinsics.is_empty() {
             continue;
@@ -99,7 +101,7 @@ fn at(i: u8, operands: &[Operand]) -> Option<&Operand> {
 #[test]
 fn a_lane_multiply_binds_its_lane() {
     // MLA v0.4h, v1.4h, v2.h[3]
-    let inst = decode(0x2F720020).unwrap();
+    let inst = decode_word(0x2F720020).unwrap();
     assert_eq!(inst.at(0).to_string(), "mla\tv0.4h, v1.4h, v2.h[3]");
     let names: Vec<&str> = inst.intrinsics().iter().map(|i| i.name()).collect();
     assert!(names.contains(&"vmla_lane_s16"), "{names:?}");
@@ -121,7 +123,7 @@ fn a_lane_multiply_binds_its_lane() {
     assert_eq!(vmla.result, Output::Operand(0));
 
     // add x0, x1, x2, which the table does not name, has none.
-    assert!(decode(0x8B020020).unwrap().intrinsics().is_empty());
+    assert!(decode_word(0x8B020020).unwrap().intrinsics().is_empty());
 }
 
 #[test]
@@ -208,7 +210,7 @@ fn every_binding_matches_its_definition() {
 #[test]
 fn a_scaled_argument_does_not_reach_between_its_steps() {
     let names = |bits: u32| -> BTreeSet<&'static str> {
-        decode(bits)
+        decode_word(bits)
             .expect("EXT")
             .intrinsics()
             .iter()
@@ -243,7 +245,7 @@ fn a_scaled_argument_does_not_reach_between_its_steps() {
 #[test]
 fn a_single_allowed_value_constrains_however_it_is_written() {
     let names = |bits: u32| -> BTreeSet<&'static str> {
-        decode(bits)
+        decode_word(bits)
             .expect("MOV (element, from general)")
             .intrinsics()
             .iter()
@@ -282,7 +284,7 @@ fn a_single_allowed_value_constrains_however_it_is_written() {
 #[test]
 fn a_widening_multiply_binds_each_multiplicand_to_its_own_register() {
     // fmlal v0.2s, v1.2h, v2.2h
-    let inst = decode(0x0E22EC20).unwrap();
+    let inst = decode_word(0x0E22EC20).unwrap();
     assert_eq!(inst.at(0).to_string(), "fmlal\tv0.2s, v1.2h, v2.2h");
     let low = inst
         .intrinsics()
@@ -298,7 +300,7 @@ fn a_widening_multiply_binds_each_multiplicand_to_its_own_register() {
 
     // fmlal2 v12.2s, v26.2h, v15.h[2]. The by-element form binds its lane
     // from the operand it multiplies by, not from the accumulator.
-    let lane = decode(0x2FAF834C).unwrap();
+    let lane = decode_word(0x2FAF834C).unwrap();
     assert_eq!(lane.at(0).to_string(), "fmlal2\tv12.2s, v26.2h, v15.h[2]");
     let high = lane
         .intrinsics()
@@ -319,10 +321,10 @@ fn a_widening_multiply_binds_each_multiplicand_to_its_own_register() {
     // table as written does not.
     let mut checked = 0;
     for intrinsic in [
-        decode(0x0E22EC20).unwrap(), // fmlal  v0.2s, v1.2h, v2.2h
-        decode(0x0EA2EC20).unwrap(), // fmlsl  v0.2s, v1.2h, v2.2h
-        decode(0x2E22CC20).unwrap(), // fmlal2 v0.2s, v1.2h, v2.2h
-        decode(0x2EA2CC20).unwrap(), // fmlsl2 v0.2s, v1.2h, v2.2h
+        decode_word(0x0E22EC20).unwrap(), // fmlal  v0.2s, v1.2h, v2.2h
+        decode_word(0x0EA2EC20).unwrap(), // fmlsl  v0.2s, v1.2h, v2.2h
+        decode_word(0x2E22CC20).unwrap(), // fmlal2 v0.2s, v1.2h, v2.2h
+        decode_word(0x2EA2CC20).unwrap(), // fmlsl2 v0.2s, v1.2h, v2.2h
     ]
     .iter()
     .flat_map(|inst| inst.intrinsics().to_vec())
@@ -351,7 +353,7 @@ fn a_bitwise_select_binds_its_mask_wherever_the_instruction_reads_it() {
         (0x6EA21C20, "bit\tv0.16b, v1.16b, v2.16b", [2, 1, 0]),
         (0x6EE21C20, "bif\tv0.16b, v1.16b, v2.16b", [2, 0, 1]),
     ] {
-        let inst = decode(bits).unwrap();
+        let inst = decode_word(bits).unwrap();
         assert_eq!(inst.at(0).to_string(), text);
         let intrinsics = inst.intrinsics();
         assert!(!intrinsics.is_empty(), "{text}");
@@ -378,7 +380,7 @@ fn a_bitwise_select_binds_its_mask_wherever_the_instruction_reads_it() {
 #[test]
 fn a_reduction_is_only_the_instruction_that_reads_one_vector() {
     let names = |bits: u32| -> Vec<&'static str> {
-        decode(bits)
+        decode_word(bits)
             .expect("ADDP")
             .intrinsics()
             .iter()
@@ -458,7 +460,7 @@ fn a_comparison_binds_each_side_to_the_operand_on_that_side() {
         // The scalar rows are written right, and stay so
         (0x5EE23C20, "cmge\td0, d1, d2", "vcge_s64", "vcle_s64"),
     ] {
-        let inst = decode(bits).unwrap();
+        let inst = decode_word(bits).unwrap();
         assert_eq!(inst.at(0).to_string(), text);
         for (name, arguments) in [(greater, [1, 2]), (less, [2, 1])] {
             let intrinsic = inst
@@ -480,7 +482,7 @@ fn a_comparison_binds_each_side_to_the_operand_on_that_side() {
 #[test]
 fn a_scalar_multiply_by_element_binds_its_lane_at_its_own_width() {
     // The highest lane, which only the 128-bit vector reaches
-    let inst = decode(0x5FA1C97D).unwrap();
+    let inst = decode_word(0x5FA1C97D).unwrap();
     assert_eq!(inst.at(0).to_string(), "sqdmulh\ts29, s11, v1.s[3]");
     let names: Vec<&str> = inst.intrinsics().iter().map(|i| i.name()).collect();
     assert_eq!(names, ["vqdmulhs_laneq_s32"]);
@@ -490,7 +492,7 @@ fn a_scalar_multiply_by_element_binds_its_lane_at_its_own_width() {
     );
 
     // Lane 0 is in the 64-bit vector too
-    let inst = decode(0x5F81C17D).unwrap();
+    let inst = decode_word(0x5F81C17D).unwrap();
     assert_eq!(inst.at(0).to_string(), "sqdmulh\ts29, s11, v1.s[0]");
     let names: BTreeSet<&str> = inst.intrinsics().iter().map(|i| i.name()).collect();
     assert_eq!(

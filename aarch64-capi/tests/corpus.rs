@@ -81,7 +81,7 @@ fn read(word: u32) -> Read {
         intrinsic_count: 0,
     };
     let mut storage = MaybeUninit::<CInstruction>::uninit();
-    read.status = unsafe { exarmo_aarch64_decode(word, storage.as_mut_ptr()) };
+    read.status = unsafe { exarmo_aarch64_decode_word(word, storage.as_mut_ptr()) };
     if read.status != Status::Ok {
         return read;
     }
@@ -125,7 +125,7 @@ fn cases() -> Vec<exarmo_testing::Case> {
             "../aarch64/tests/cases"
         }
         fn render(self, word: u32) -> exarmo_testing::Outcome {
-            exarmo_testing::Outcome::of(exarmo_aarch64::decode(word), ADDRESS)
+            exarmo_testing::Outcome::of(exarmo_aarch64::decode_word(word), ADDRESS)
         }
     }
     let mut seen = HashSet::new();
@@ -555,7 +555,7 @@ fn the_c_api_agrees_with_rust_over_the_corpus() {
     for case in cases() {
         checked += 1;
         let c = read(case.encoding);
-        let rust = exarmo_aarch64::decode(case.encoding);
+        let rust = exarmo_aarch64::decode_word(case.encoding);
         let place = format!("{}  {}", case.place, case.hex);
         let inst = match rust {
             Ok(inst) => inst,

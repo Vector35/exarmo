@@ -23,12 +23,12 @@ int main(void) {
     CHECK(exarmo_aarch32_instruction_size() == sizeof(exarmo_aarch32_instruction));
 
     exarmo_aarch32_instruction inst;
-    CHECK(exarmo_aarch32_decode_a32(0xf1200000, &inst) == EXARMO_AARCH32_STATUS_UNALLOCATED);
-    CHECK(exarmo_aarch32_decode_a32(0xf1200070, &inst) == EXARMO_AARCH32_STATUS_UNPREDICTABLE);
-    CHECK(exarmo_aarch32_decode_a32(0xe320f020, &inst) == EXARMO_AARCH32_STATUS_RESERVED_HINT);
+    CHECK(exarmo_aarch32_decode_a32_word(0xf1200000, &inst) == EXARMO_AARCH32_STATUS_UNALLOCATED);
+    CHECK(exarmo_aarch32_decode_a32_word(0xf1200070, &inst) == EXARMO_AARCH32_STATUS_UNPREDICTABLE);
+    CHECK(exarmo_aarch32_decode_a32_word(0xe320f020, &inst) == EXARMO_AARCH32_STATUS_RESERVED_HINT);
 
     /* ldr r1, [r0] */
-    CHECK(exarmo_aarch32_decode_a32(0xe5901000, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_a32_word(0xe5901000, &inst) == EXARMO_AARCH32_STATUS_OK);
     CHECK(exarmo_aarch32_instruction_encoding(&inst) == EXARMO_AARCH32_ENC_LdrIA1Off);
     CHECK(exarmo_aarch32_instruction_mnemonic(&inst) == EXARMO_AARCH32_LDR);
     CHECK(exarmo_aarch32_instruction_length(&inst) == 4);
@@ -69,19 +69,19 @@ int main(void) {
 
     /* add r0, r0, r1, lsl #3. The shift is folded onto the register it
      * applies to. */
-    CHECK(exarmo_aarch32_decode_a32(0xe0800181, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_a32_word(0xe0800181, &inst) == EXARMO_AARCH32_STATUS_OK);
     count = exarmo_aarch32_instruction_operands(&inst, ops, EXARMO_AARCH32_MAX_OPERANDS);
     CHECK(count == 4 && ops[3].kind == EXARMO_AARCH32_OPERAND_REG);
     CHECK(ops[3].reg.modifier.kind == EXARMO_AARCH32_MOD_LSL
           && ops[3].reg.modifier.amount == 3);
 
     /* adds r0, r0, #1 writes all four flags and reads none */
-    CHECK(exarmo_aarch32_decode_a32(0xe2900001, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_a32_word(0xe2900001, &inst) == EXARMO_AARCH32_STATUS_OK);
     exarmo_aarch32_flag_effect flags = exarmo_aarch32_instruction_flags(&inst);
     CHECK(flags.writes == EXARMO_AARCH32_FLAG_NZCV && flags.reads == 0);
 
     /* mrc p15, #0, r0, c1, c0, #0 reads SCTLR, which the table lists too */
-    CHECK(exarmo_aarch32_decode_a32(0xee110f10, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_a32_word(0xee110f10, &inst) == EXARMO_AARCH32_STATUS_OK);
     exarmo_aarch32_sysreg reg;
     CHECK(exarmo_aarch32_instruction_sysreg(&inst, &reg) && reg.encoding == 0x3C080);
     exarmo_aarch32_str sysreg = exarmo_aarch32_sysreg_name(reg.space, reg.encoding, reg.write);
@@ -94,19 +94,19 @@ int main(void) {
     CHECK(listed);
 
     /* bl at 0x1000 names its target, and ldr pc branches where ldr r0 does not */
-    CHECK(exarmo_aarch32_decode_a32(0xeb000000, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_a32_word(0xeb000000, &inst) == EXARMO_AARCH32_STATUS_OK);
     exarmo_aarch32_branch branch = exarmo_aarch32_instruction_branch(&inst, 0x1000);
     CHECK(branch.kind == EXARMO_AARCH32_BRANCH_DIRECT_CALL && !branch.conditional);
     CHECK(branch.has_target && branch.target == 0x1008);
-    CHECK(exarmo_aarch32_decode_a32(0xe591f000, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_a32_word(0xe591f000, &inst) == EXARMO_AARCH32_STATUS_OK);
     branch = exarmo_aarch32_instruction_branch(&inst, 0x1000);
     CHECK(branch.kind == EXARMO_AARCH32_BRANCH_INDIRECT && !branch.has_target);
-    CHECK(exarmo_aarch32_decode_a32(0xe5910000, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_a32_word(0xe5910000, &inst) == EXARMO_AARCH32_STATUS_OK);
     branch = exarmo_aarch32_instruction_branch(&inst, 0x1000);
     CHECK(branch.kind == EXARMO_AARCH32_BRANCH_NONE);
 
     /* beq at 0x1000 names its target, 8 ahead of the instruction */
-    CHECK(exarmo_aarch32_decode_a32(0x0a000000, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_a32_word(0x0a000000, &inst) == EXARMO_AARCH32_STATUS_OK);
     size = exarmo_aarch32_instruction_tokens(&inst, 0x1000, text, sizeof text, tokens, EXARMO_AARCH32_MAX_TOKENS);
     CHECK(tokens[size.tokens - 1].kind == EXARMO_AARCH32_TOKEN_ADDRESS);
     CHECK(tokens[size.tokens - 1].value == 0x1008);
@@ -121,20 +121,20 @@ int main(void) {
 
     /* adds r0, r0, r1 outside an IT block, addeq r0, r0, r1 inside one */
     exarmo_aarch32_it_state outside = {EXARMO_AARCH32_IT_OUTSIDE, 0, 0};
-    CHECK(exarmo_aarch32_decode_t32(0x18400000, outside, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_t32_word(0x18400000, outside, &inst) == EXARMO_AARCH32_STATUS_OK);
     CHECK(exarmo_aarch32_instruction_length(&inst) == 2);
     exarmo_aarch32_instruction_text(&inst, 0, text, sizeof text);
     CHECK(strcmp(text, "adds\tr0, r0, r1") == 0);
     exarmo_aarch32_it_state inside = {EXARMO_AARCH32_IT_INSIDE, 0, 0x8};
-    CHECK(exarmo_aarch32_decode_t32(0x18400000, inside, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_t32_word(0x18400000, inside, &inst) == EXARMO_AARCH32_STATUS_OK);
     exarmo_aarch32_instruction_text(&inst, 0, text, sizeof text);
     CHECK(strcmp(text, "addeq\tr0, r0, r1") == 0);
 
     /* itett eq begins a block of four, and the state walks through it */
-    CHECK(exarmo_aarch32_decode_t32(0xbf090000, outside, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_t32_word(0xbf090000, outside, &inst) == EXARMO_AARCH32_STATUS_OK);
     exarmo_aarch32_it_state state = exarmo_aarch32_it_state_after(outside, &inst);
     CHECK(state.kind == EXARMO_AARCH32_IT_INSIDE && state.cond == EXARMO_AARCH32_COND_EQ && state.mask == 0x9);
-    CHECK(exarmo_aarch32_decode_t32(0x18400000, state, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_decode_t32_word(0x18400000, state, &inst) == EXARMO_AARCH32_STATUS_OK);
     state = exarmo_aarch32_it_state_after(state, &inst);
     CHECK(state.kind == EXARMO_AARCH32_IT_INSIDE && state.cond == EXARMO_AARCH32_COND_NE && state.mask == 0x2);
     state = exarmo_aarch32_it_state_after(state, &inst);
@@ -142,5 +142,27 @@ int main(void) {
     CHECK(state.kind == EXARMO_AARCH32_IT_INSIDE && state.cond == EXARMO_AARCH32_COND_EQ && state.mask == 0x8);
     state = exarmo_aarch32_it_state_after(state, &inst);
     CHECK(state.kind == EXARMO_AARCH32_IT_OUTSIDE);
+
+    /* The bytes of adds r0, r0, r1, then the first 16 bits of bl, which is
+     * 32 bits long */
+    const uint8_t code[] = {0x40, 0x18, 0x00, 0xf0};
+    CHECK(exarmo_aarch32_decode_t32_bytes(code, sizeof code, outside, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_instruction_length(&inst) == 2);
+    exarmo_aarch32_instruction_text(&inst, 0, text, sizeof text);
+    CHECK(strcmp(text, "adds\tr0, r0, r1") == 0);
+    CHECK(exarmo_aarch32_decode_t32_bytes(code + 2, 2, outside, &inst) == EXARMO_AARCH32_STATUS_TRUNCATED);
+
+    /* The deprecated names still link and decode the same instructions */
+    exarmo_aarch32_instruction old;
+    CHECK(exarmo_aarch32_decode_a32(0xe5901000, &old) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_instruction_encoding(&old) == EXARMO_AARCH32_ENC_LdrIA1Off);
+    CHECK(exarmo_aarch32_decode_t32(0x18400000, outside, &old) == EXARMO_AARCH32_STATUS_OK);
+    exarmo_aarch32_instruction_text(&old, 0, text, sizeof text);
+    CHECK(strcmp(text, "adds\tr0, r0, r1") == 0);
+
+    /* The bytes of an A32 bx lr */
+    const uint8_t bx[] = {0x1e, 0xff, 0x2f, 0xe1};
+    CHECK(exarmo_aarch32_decode_a32_bytes(bx, sizeof bx, &inst) == EXARMO_AARCH32_STATUS_OK);
+    CHECK(exarmo_aarch32_instruction_encoding(&inst) == EXARMO_AARCH32_ENC_BxA1);
     return 0;
 }

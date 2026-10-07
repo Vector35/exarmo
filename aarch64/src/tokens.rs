@@ -13,13 +13,13 @@ exarmo_core::decoded!(crate::Instruction);
 #[cfg(all(test, feature = "alloc"))]
 mod tests {
     use super::*;
-    use crate::decode;
+    use crate::decode_word;
     use alloc::string::{String, ToString};
     use alloc::vec::Vec;
 
     fn tokens(bits: u32, address: u64) -> Vec<(TokenKind, String)> {
         let mut sink: Vec<Token> = Vec::new();
-        decode(bits)
+        decode_word(bits)
             .unwrap()
             .at(address)
             .write_tokens(&mut sink)

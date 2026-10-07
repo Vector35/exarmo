@@ -104,11 +104,12 @@ unwinding into C. That needs panics to unwind, which is Cargo's default, so a
 build with `panic = "abort"` kills the host process instead.
 
 The AArch32 interface differs in how an instruction is decoded. It has
-`exarmo_aarch32_decode_a32` for an A32 word and `exarmo_aarch32_decode_t32`
-for a T32 one. A T32 decode takes the IT state as an argument, and
-`exarmo_aarch32_it_state_after` gives the state for the next instruction.
-`exarmo_aarch32_t32_length` says from the first halfword whether a T32
-instruction is two bytes or four.
+`exarmo_aarch32_decode_a32_word` and `exarmo_aarch32_decode_a32_bytes` for A32,
+and `exarmo_aarch32_decode_t32_word` and `exarmo_aarch32_decode_t32_bytes` for
+T32. A T32 decode takes the IT state as an argument, and
+`exarmo_aarch32_it_state_after` gives the state for the next instruction. A T32
+decode from bytes reads either two or four bytes, depending on the size encoded
+in the first 16 bits of the instruction.
 
 ## License
 

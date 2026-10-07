@@ -1,7 +1,7 @@
 /* The C face of the exarmo-aarch32 disassembler.
  *
- * Decode an instruction once, with exarmo_aarch32_decode_a32 for an A32 word or
- * exarmo_aarch32_decode_t32 for a T32 one, then ask the decoded instruction what
+ * Decode an instruction once, with exarmo_aarch32_decode_a32_word for an A32 word or
+ * exarmo_aarch32_decode_t32_word for a T32 one, then ask the decoded instruction what
  * it is (its encoding and mnemonic), how long it is, what it does to the
  * condition flags, what its operands are, and how it is written. Nothing
  * here allocates. The caller owns every buffer, and a function that writes
@@ -26,6 +26,14 @@
 
 #ifdef __cplusplus
 extern "C" {
+#endif
+
+#if defined(__GNUC__) || defined(__clang__)
+#define EXARMO_AARCH32_DEPRECATED(message) __attribute__((deprecated(message)))
+#elif defined(_MSC_VER)
+#define EXARMO_AARCH32_DEPRECATED(message) __declspec(deprecated(message))
+#else
+#define EXARMO_AARCH32_DEPRECATED(message)
 #endif
 
 /* ------------------------------------------------------------------------
@@ -62,11 +70,27 @@ typedef enum exarmo_aarch32_status {
     /* The encoding is a hint the architecture reserves, which behaves as a
      * NOP and may be allocated by a later release. */
     EXARMO_AARCH32_STATUS_RESERVED_HINT = 6,
+    /* The bytes ended before the instruction did. Only
+     * exarmo_aarch32_decode_a32_bytes and exarmo_aarch32_decode_t32_bytes
+     * return this. */
+    EXARMO_AARCH32_STATUS_TRUNCATED = 7,
 } exarmo_aarch32_status;
 
 /* Decode the 32-bit A32 instruction word `bits` into `out`. `out` is
  * written only when the status is EXARMO_AARCH32_STATUS_OK. */
+exarmo_aarch32_status exarmo_aarch32_decode_a32_word(uint32_t bits, exarmo_aarch32_instruction *out);
+
+/* The former name of exarmo_aarch32_decode_a32_word. */
+EXARMO_AARCH32_DEPRECATED("renamed to exarmo_aarch32_decode_a32_word, or use exarmo_aarch32_decode_a32_bytes")
 exarmo_aarch32_status exarmo_aarch32_decode_a32(uint32_t bits, exarmo_aarch32_instruction *out);
+
+/* Decode the A32 instruction at the start of the `len` bytes at `bytes` into
+ * `out`. Returns EXARMO_AARCH32_STATUS_TRUNCATED if `len` is less than four,
+ * and EXARMO_AARCH32_STATUS_FAILED if `bytes` is null and `len` is not zero,
+ * or if `out` is null. `out` is written only when the status is
+ * EXARMO_AARCH32_STATUS_OK. */
+exarmo_aarch32_status exarmo_aarch32_decode_a32_bytes(const uint8_t *bytes, size_t len,
+                                                      exarmo_aarch32_instruction *out);
 
 /* Whether a T32 instruction is inside an IT block. A 16-bit T32 encoding
  * has no condition field. The condition it runs under comes from a
@@ -100,7 +124,25 @@ typedef struct exarmo_aarch32_it_state {
  * `bits` holds the first halfword in its high half and the second, for a
  * 32-bit instruction, in its low half. A 16-bit instruction's low half is
  * ignored. `out` is written only when the status is EXARMO_AARCH32_STATUS_OK. */
-exarmo_aarch32_status exarmo_aarch32_decode_t32(uint32_t bits, exarmo_aarch32_it_state state, exarmo_aarch32_instruction *out);
+exarmo_aarch32_status exarmo_aarch32_decode_t32_word(uint32_t bits, exarmo_aarch32_it_state state,
+                                                     exarmo_aarch32_instruction *out);
+
+/* The former name of exarmo_aarch32_decode_t32_word. */
+EXARMO_AARCH32_DEPRECATED("renamed to exarmo_aarch32_decode_t32_word, or use exarmo_aarch32_decode_t32_bytes")
+exarmo_aarch32_status exarmo_aarch32_decode_t32(uint32_t bits, exarmo_aarch32_it_state state,
+                                                exarmo_aarch32_instruction *out);
+
+/* Decode the T32 instruction at the start of the `len` bytes at `bytes`,
+ * under the IT state `state`, into `out`. Reads either two or four bytes,
+ * depending on the size encoded in the first 16 bits of the instruction, and
+ * returns EXARMO_AARCH32_STATUS_TRUNCATED if the bytes end partway through
+ * it. After a successful decode, exarmo_aarch32_instruction_length gives the
+ * instruction's size, and after a failed one, exarmo_aarch32_t32_length
+ * does. Returns EXARMO_AARCH32_STATUS_FAILED if `bytes` is null and `len` is
+ * not zero, or if `out` is null. `out` is written only when the status is
+ * EXARMO_AARCH32_STATUS_OK. */
+exarmo_aarch32_status exarmo_aarch32_decode_t32_bytes(const uint8_t *bytes, size_t len, exarmo_aarch32_it_state state,
+                                                      exarmo_aarch32_instruction *out);
 
 /* How many bytes the T32 instruction beginning with the halfword `hw1`
  * takes, 2 or 4. The first halfword alone decides it, so a caller holding

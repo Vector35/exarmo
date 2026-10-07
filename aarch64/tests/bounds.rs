@@ -8,13 +8,13 @@
 
 mod corpus;
 
-use exarmo_aarch64::{Instruction, SysReg, decode};
+use exarmo_aarch64::{Instruction, SysReg, decode_word};
 use exarmo_testing::bounds::{stepped, stride, widest};
 
 /// The most tokens and the most characters the corpus writes.
 fn measured() -> (usize, usize) {
     let text = corpus::text();
-    let widest = widest(corpus::encodings(&text), corpus::INSTR_ADDRESS, decode);
+    let widest = widest(corpus::encodings(&text), corpus::INSTR_ADDRESS, decode_word);
     (widest.tokens.0, widest.chars.0)
 }
 
@@ -74,7 +74,7 @@ fn nothing_is_written_wider_than_the_generator_was_told() {
 
     // ZERO's mask names the tiles it clears, which is the widest operand
     // written whole in the architecture.
-    let widest = widest((0u32..256).map(|mask| 0xC008_0000 | mask), 0, decode)
+    let widest = widest((0u32..256).map(|mask| 0xC008_0000 | mask), 0, decode_word)
         .token
         .0;
     assert!(
@@ -98,18 +98,18 @@ fn nothing_is_written_wider_than_the_generator_was_told() {
 #[test]
 #[ignore]
 fn sweep() {
-    let found = widest(stepped(0, u32::MAX, stride()), 0, decode);
+    let found = widest(stepped(0, u32::MAX, stride()), 0, decode_word);
     let (tokens, widest_tokens) = found.tokens;
     let (chars, widest_chars) = found.chars;
     println!(
         "most tokens {tokens} of {} at {widest_tokens:08X}: {}",
         Instruction::MAX_TOKENS,
-        decode(widest_tokens).unwrap().at(0)
+        decode_word(widest_tokens).unwrap().at(0)
     );
     println!(
         "most characters {chars} of {} at {widest_chars:08X}: {}",
         Instruction::MAX_TEXT,
-        decode(widest_chars).unwrap().at(0)
+        decode_word(widest_chars).unwrap().at(0)
     );
     assert!(tokens <= Instruction::MAX_TOKENS);
     assert!(chars <= Instruction::MAX_TEXT);

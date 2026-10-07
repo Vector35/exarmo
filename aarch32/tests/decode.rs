@@ -24,7 +24,7 @@ fn a32_words_decode_to_their_encoding() {
     ];
     for (word, encoding, disassembly) in cases {
         assert_eq!(
-            a32::decode(*word).map(|i| i.encoding()),
+            a32::decode_word(*word).map(|i| i.encoding()),
             Ok(*encoding),
             "{word:08x} is {disassembly}"
         );
@@ -48,7 +48,7 @@ fn halfword_t32_instructions_decode_to_their_encoding() {
     for (halfword, encoding, disassembly) in cases {
         let word = u32::from(*halfword) << 16;
         assert_eq!(
-            t32::decode(word, ItState::Unknown).map(|i| i.encoding()),
+            t32::decode_word(word, ItState::Unknown).map(|i| i.encoding()),
             Ok(*encoding),
             "{halfword:04x} is {disassembly}"
         );
@@ -66,7 +66,7 @@ fn wide_t32_instructions_decode_to_their_encoding() {
     ];
     for (word, encoding, disassembly) in cases {
         assert_eq!(
-            t32::decode(*word, ItState::Unknown).map(|i| i.encoding()),
+            t32::decode_word(*word, ItState::Unknown).map(|i| i.encoding()),
             Ok(*encoding),
             "{word:08x} is {disassembly}"
         );
@@ -76,21 +76,27 @@ fn wide_t32_instructions_decode_to_their_encoding() {
 #[test]
 fn an_unallocated_word_says_so() {
     // The unconditional miscellaneous space at op0 = 10010, op1 = 0000.
-    assert_eq!(a32::decode(0xf1200000), Err(DecodeError::Unallocated));
+    assert_eq!(a32::decode_word(0xf1200000), Err(DecodeError::Unallocated));
     // The A32 hint space, hint = 0x20, which llvm-mc writes as `hint #32`.
-    assert_eq!(a32::decode(0xe320f020), Err(DecodeError::ReservedHint));
+    assert_eq!(a32::decode_word(0xe320f020), Err(DecodeError::ReservedHint));
     // The signed literal loads at size 01 with Rt = 1111, beside PLI.
     assert_eq!(
-        t32::decode(0xf9bf_f000, ItState::Outside),
+        t32::decode_word(0xf9bf_f000, ItState::Outside),
         Err(DecodeError::ReservedHint)
     );
     // The same space at op1 = 0111, and the unconditional hints at op0 =
     // 1xxx1 with bit 4 clear, which the index marks UNPREDICTABLE.
-    assert_eq!(a32::decode(0xf1200070), Err(DecodeError::Unpredictable));
-    assert_eq!(a32::decode(0xf7f0a000), Err(DecodeError::Unpredictable));
+    assert_eq!(
+        a32::decode_word(0xf1200070),
+        Err(DecodeError::Unpredictable)
+    );
+    assert_eq!(
+        a32::decode_word(0xf7f0a000),
+        Err(DecodeError::Unpredictable)
+    );
     // A hint row the table does allocate is still the instruction.
     assert_eq!(
-        a32::decode(0xe320f010).map(|i| i.encoding()),
+        a32::decode_word(0xe320f010).map(|i| i.encoding()),
         Ok(Encoding::EsbA1)
     );
 }
@@ -100,7 +106,7 @@ fn an_encoding_carries_the_fields_the_model_reads() {
     // ADD (register) A1: ADD{<c>}{<q>} {<Rd>, }<Rn>, <Rm>{, <shift>}
     // e0812003 is `add r2, r1, r3`.
     assert_eq!(
-        a32::decode(0xe0812003),
+        a32::decode_word(0xe0812003),
         Ok(Instruction::AddRA1 {
             cond: Cond::Al,
             Rd: GpReg::new(2),
@@ -112,7 +118,7 @@ fn an_encoding_carries_the_fields_the_model_reads() {
     );
     // LDR (immediate) A1, offset form, `ldr r1, [r0]`
     assert_eq!(
-        a32::decode(0xe5901000),
+        a32::decode_word(0xe5901000),
         Ok(Instruction::LdrIA1Off {
             cond: Cond::Al,
             Rt: GpReg::new(1),
@@ -126,7 +132,7 @@ fn an_encoding_carries_the_fields_the_model_reads() {
 #[test]
 fn a32_carries_the_condition_its_field_holds() {
     // 0a000000 is `beq`, 2a000000 is `bcs`, ea000000 is `b`.
-    let cond = |word: u32| match a32::decode(word) {
+    let cond = |word: u32| match a32::decode_word(word) {
         Ok(Instruction::BA1 { cond, .. }) => cond,
         other => panic!("{word:08x} decoded to {other:?}"),
     };
@@ -147,7 +153,7 @@ fn a32_carries_the_condition_its_field_holds() {
 fn t32_takes_its_condition_from_the_it_state() {
     // 0x4408 is `add r0, r1`, whose T2 encoding has no condition field.
     let word = 0x4408_u32 << 16;
-    let cond = |state| match t32::decode(word, state) {
+    let cond = |state| match t32::decode_word(word, state) {
         Ok(Instruction::AddRT2 { cond, .. }) => cond,
         other => panic!("decoded to {other:?}"),
     };
@@ -187,9 +193,9 @@ fn the_it_state_answers_what_the_pseudocode_asks() {
 /// ends after them.
 #[test]
 fn the_it_state_advances_through_the_block_it_began() {
-    let it = t32::decode(0xbf09_0000, ItState::Outside).unwrap();
+    let it = t32::decode_word(0xbf09_0000, ItState::Outside).unwrap();
     assert_eq!(it.at(0).to_string(), "itett\teq");
-    let add = t32::decode(0x4408_0000, ItState::Outside).unwrap();
+    let add = t32::decode_word(0x4408_0000, ItState::Outside).unwrap();
     assert_eq!(add.it_state_set(), None);
     let block = [
         (Cond::Eq, 0b1001),
@@ -254,7 +260,7 @@ fn an_encoding_knows_how_long_it_is() {
 fn a_simd_register_is_gathered_from_the_bits_that_hold_it() {
     // vsub.f64 d16, d1, d0. Only the D bit puts the destination above d15.
     assert_eq!(
-        a32::decode(0xee710b40),
+        a32::decode_word(0xee710b40),
         Ok(Instruction::VsubFA2D {
             cond: Cond::Al,
             Dd: DReg::new(16),
@@ -265,7 +271,7 @@ fn a_simd_register_is_gathered_from_the_bits_that_hold_it() {
     // vadd.f32 s0, s1, s0, whose single-precision names are written `Vd:D`,
     // with the odd bit at the bottom rather than the top.
     assert_eq!(
-        a32::decode(0xee300a80),
+        a32::decode_word(0xee300a80),
         Ok(Instruction::VaddFA2S {
             cond: Cond::Al,
             Sd: SReg::new(0),
@@ -275,7 +281,7 @@ fn a_simd_register_is_gathered_from_the_bits_that_hold_it() {
     );
     // vadd.f32 q0, q0, q1. Advanced SIMD is in the unconditional space, so no
     // condition, and q1 is the field holding 2.
-    match a32::decode(0xf2000d42) {
+    match a32::decode_word(0xf2000d42) {
         Ok(Instruction::VaddFA1Q { dt, Qd, Qn, Qm }) => {
             assert_eq!(dt.to_string(), "f32");
             assert_eq!((Qd, Qn, Qm), (QReg::new(0), QReg::new(0), QReg::new(1)));
@@ -289,7 +295,7 @@ fn a_tabulated_operand_carries_the_symbol_it_spells() {
     // and r0, r0, r1, lsl #1. The shift type is a table of four names. The
     // amount beside it is a number and not one of these.
     assert_eq!(
-        a32::decode(0xe0000081),
+        a32::decode_word(0xe0000081),
         Ok(Instruction::AndRA1 {
             cond: Cond::Al,
             Rd: GpReg::new(0),
@@ -302,7 +308,7 @@ fn a_tabulated_operand_carries_the_symbol_it_spells() {
     assert_eq!(Shift_Lsl_Lsr_Asr_Ror::Lsl.to_string(), "lsl");
     assert_eq!(Shift_Lsl_Lsr_Asr_Ror::Ror.to_string(), "ror");
     // vqdmulh.s32 d0, d2, d2, whose datatype is one of its own table's.
-    match a32::decode(0xf2220b02) {
+    match a32::decode_word(0xf2220b02) {
         Ok(Instruction::VqdmulhA1D { dt, Dd, Dn, Dm }) => {
             assert_eq!(dt.to_string(), "s32");
             assert_eq!((Dd, Dn, Dm), (DReg::new(0), DReg::new(2), DReg::new(2)));
@@ -315,7 +321,7 @@ fn a_tabulated_operand_carries_the_symbol_it_spells() {
 /// spelling nothing says the operand is not written for that value.
 #[test]
 fn a_tabulated_number_is_the_number_not_the_bits() {
-    let rotation = |word: u32| match a32::decode(word) {
+    let rotation = |word: u32| match a32::decode_word(word) {
         Ok(Instruction::SxtbA1 { amount, .. }) => amount,
         other => panic!("{word:08x} decoded to {other:?}"),
     };
@@ -333,7 +339,7 @@ fn a_tabulated_number_is_the_number_not_the_bits() {
 /// name q16, which no register file has.
 #[test]
 fn a_quad_register_halves_the_whole_concatenation() {
-    let quad = |word: u32| match a32::decode(word) {
+    let quad = |word: u32| match a32::decode_word(word) {
         Ok(Instruction::VuzpA1Q { Qd, .. }) => Qd,
         other => panic!("{word:08x} decoded to {other:?}"),
     };
@@ -347,7 +353,7 @@ fn a_quad_register_halves_the_whole_concatenation() {
 /// around the list.
 #[test]
 fn an_alignment_comes_from_the_list_of_its_values() {
-    let alignment = |word: u32| match a32::decode(word) {
+    let alignment = |word: u32| match a32::decode_word(word) {
         Ok(Instruction::Vld1MA4Nowb { align, .. }) => align,
         other => panic!("{word:08x} decoded to {other:?}"),
     };
@@ -359,7 +365,7 @@ fn an_alignment_comes_from_the_list_of_its_values() {
 /// Every alignment the field spells, over the encoding that permits all four.
 #[test]
 fn every_alignment_a_field_spells_is_read() {
-    let alignment = |word: u32| match a32::decode(word) {
+    let alignment = |word: u32| match a32::decode_word(word) {
         Ok(Instruction::Vld4MA1Nowb { align, .. }) => align,
         other => panic!("{word:08x} decoded to {other:?}"),
     };
@@ -375,7 +381,7 @@ fn every_alignment_a_field_spells_is_read() {
 /// field, in the 32 bits the decode holds it rather than the 12 the field has.
 #[test]
 fn a_modified_immediate_is_what_the_decode_expands_it_to() {
-    let expanded = |word: u32| match a32::decode(word) {
+    let expanded = |word: u32| match a32::decode_word(word) {
         Ok(Instruction::AdcIA1 { const_, .. }) => const_,
         other => panic!("{word:08x} decoded to {other:?}"),
     };
@@ -394,7 +400,7 @@ fn a_modified_immediate_is_what_the_decode_expands_it_to() {
 fn an_alignment_another_operand_decides_is_read_per_size() {
     // The data size picks the encoding as well as the alignment, so each is its
     // own variant.
-    let aligned = |word: u32| match a32::decode(word) {
+    let aligned = |word: u32| match a32::decode_word(word) {
         Ok(Instruction::Vst21A1Nowb { size, align, .. })
         | Ok(Instruction::Vst21A2Nowb { size, align, .. })
         | Ok(Instruction::Vst21A3Nowb { size, align, .. }) => (size, align),
@@ -413,7 +419,7 @@ fn an_alignment_another_operand_decides_is_read_per_size() {
 /// beside the field.
 #[test]
 fn a_shift_amount_is_decoded_with_the_shift_type() {
-    let shifted = |word: u32| match a32::decode(word) {
+    let shifted = |word: u32| match a32::decode_word(word) {
         Ok(Instruction::AdcRA1 { shift, amount, .. }) => (shift, amount),
         other => panic!("{word:08x} decoded to {other:?}"),
     };
@@ -429,7 +435,7 @@ fn a_shift_amount_is_decoded_with_the_shift_type() {
 /// The `!` beside a register list is the writeback bit the prose names.
 #[test]
 fn writeback_is_the_bit_the_prose_names() {
-    let written_back = |word: u32| match t32::decode(word, ItState::Outside) {
+    let written_back = |word: u32| match t32::decode_word(word, ItState::Outside) {
         Ok(Instruction::LdmT2 { wback, .. }) => wback,
         other => panic!("{word:08x} decoded to {other:?}"),
     };
@@ -444,7 +450,7 @@ fn the_view_gives_the_operands_in_order() {
 
     // adc r0, r1, #0xff. The condition, which the template writes inside the
     // mnemonic, is the view's first operand.
-    let Ok(instruction) = a32::decode(0xe2a100ff) else {
+    let Ok(instruction) = a32::decode_word(0xe2a100ff) else {
         panic!("adc should decode");
     };
     let operands = instruction.operands();
@@ -467,7 +473,7 @@ fn the_view_gives_the_operands_in_order() {
 fn a_modified_immediate_is_expanded_where_only_execute_says_so() {
     let written = |word: u32| {
         let mut text = String::new();
-        a32::decode(word)
+        a32::decode_word(word)
             .expect("it should decode")
             .at(0)
             .write_tokens(&mut text)
@@ -485,7 +491,7 @@ fn a_modified_immediate_is_expanded_where_only_execute_says_so() {
 fn a_memory_operand_is_written_with_its_offset_and_writeback() {
     let written = |word: u32| {
         let mut text = String::new();
-        a32::decode(word)
+        a32::decode_word(word)
             .expect("it should decode")
             .at(0)
             .write_tokens(&mut text)
@@ -502,7 +508,7 @@ fn a_memory_operand_is_written_with_its_offset_and_writeback() {
 fn an_optional_shift_is_written_only_when_there_is_one() {
     let written = |word: u32| {
         let mut text = String::new();
-        a32::decode(word)
+        a32::decode_word(word)
             .expect("it should decode")
             .at(0)
             .write_tokens(&mut text)
@@ -519,20 +525,23 @@ fn an_optional_shift_is_written_only_when_there_is_one() {
 #[test]
 fn the_wide_immediate_forms_are_written_with_their_w() {
     assert_eq!(
-        t32::decode(0xf2000000, ItState::Outside)
+        t32::decode_word(0xf2000000, ItState::Outside)
             .unwrap()
             .mnemonic()
             .name(),
         "addw"
     );
     assert_eq!(
-        t32::decode(0xf2400000, ItState::Outside)
+        t32::decode_word(0xf2400000, ItState::Outside)
             .unwrap()
             .mnemonic()
             .name(),
         "movw"
     );
-    assert_eq!(a32::decode(0xe3000000).unwrap().mnemonic().name(), "movw");
+    assert_eq!(
+        a32::decode_word(0xe3000000).unwrap().mnemonic().name(),
+        "movw"
+    );
 }
 
 /// An alias is a form of the encoding it spells, written where the bundle
@@ -541,19 +550,28 @@ fn the_wide_immediate_forms_are_written_with_their_w() {
 fn an_alias_is_written_where_the_architecture_prefers_it() {
     // MOV (register) with a shift is written as the shift. e1a01102 is
     // `lsl r1, r2, #2`, e1b01102 `lsls`, and without a shift `mov r0, r0`.
-    let lsl = a32::decode(0xe1a01102).unwrap();
+    let lsl = a32::decode_word(0xe1a01102).unwrap();
     assert_eq!(lsl.encoding().name(), "LslMovRA1");
     assert_eq!(lsl.at(0).to_string(), "lsl\tr1, r2, #0x2");
-    assert_eq!(a32::decode(0xe1b01102).unwrap().mnemonic().name(), "lsls");
-    assert_eq!(a32::decode(0xe1a00000).unwrap().mnemonic().name(), "mov");
+    assert_eq!(
+        a32::decode_word(0xe1b01102).unwrap().mnemonic().name(),
+        "lsls"
+    );
+    assert_eq!(
+        a32::decode_word(0xe1a00000).unwrap().mnemonic().name(),
+        "mov"
+    );
     // The rotate through the carry, which is the alias of a MOV with a
     // rotate by zero.
     assert_eq!(
-        a32::decode(0xe1a01062).unwrap().at(0).to_string(),
+        a32::decode_word(0xe1a01062).unwrap().at(0).to_string(),
         "rrx\tr1, r2"
     );
     // VAND with an immediate is never preferred over VBIC, the bundle says.
-    assert_eq!(a32::decode(0xf2800130).unwrap().mnemonic().name(), "vbic");
+    assert_eq!(
+        a32::decode_word(0xf2800130).unwrap().mnemonic().name(),
+        "vbic"
+    );
 }
 
 /// A label is written as the address it names. That is the offset from the
@@ -564,28 +582,28 @@ fn a_label_is_the_address_it_names() {
     use exarmo_aarch32::{Operand, PcRead};
     // bl +0 at 0x1000 branches to 0x1008, and b.eq the same.
     assert_eq!(
-        a32::decode(0xeb000000).unwrap().at(0x1000).to_string(),
+        a32::decode_word(0xeb000000).unwrap().at(0x1000).to_string(),
         "bl\t0x1008"
     );
     assert_eq!(
-        a32::decode(0x0a000000).unwrap().at(0x1000).to_string(),
+        a32::decode_word(0x0a000000).unwrap().at(0x1000).to_string(),
         "beq\t0x1008"
     );
     // ldr r0, [pc, #4] loads from 0x1000 + 8 + 4, and the SUB form of ADR
     // subtracts.
     assert_eq!(
-        a32::decode(0xe59f0004).unwrap().at(0x1000).to_string(),
+        a32::decode_word(0xe59f0004).unwrap().at(0x1000).to_string(),
         "ldr\tr0, 0x100c"
     );
     assert_eq!(
-        a32::decode(0xe24f0004).unwrap().at(0x1000).to_string(),
+        a32::decode_word(0xe24f0004).unwrap().at(0x1000).to_string(),
         "adr\tr0, 0x1004"
     );
     // In T32 the PC is 4 ahead, and a halfword-aligned instruction's literal
     // load aligns it down first. From 0x1002 that is 0x1004, plus 4.
-    let b = t32::decode(0xe000_0000, ItState::Outside).unwrap();
+    let b = t32::decode_word(0xe000_0000, ItState::Outside).unwrap();
     assert_eq!(b.at(0x1000).to_string(), "b\t0x1004");
-    let ldr = t32::decode(0x4801_0000, ItState::Outside).unwrap();
+    let ldr = t32::decode_word(0x4801_0000, ItState::Outside).unwrap();
     assert_eq!(ldr.at(0x1002).to_string(), "ldr\tr0, 0x1008");
     // The label follows the condition and the register in the view.
     assert_eq!(
@@ -615,7 +633,7 @@ fn a_register_list_holds_what_the_explanation_says_is_in_it() {
             .expect("a list in the view")
     };
     // push is stmdb sp!, and its list is the mask the decode binds.
-    let push = a32::decode(0xe92d4010).unwrap();
+    let push = a32::decode_word(0xe92d4010).unwrap();
     assert_eq!(push.at(0).to_string(), "push\t{r4, lr}");
     assert_eq!(
         list(&push),
@@ -626,35 +644,35 @@ fn a_register_list_holds_what_the_explanation_says_is_in_it() {
         }
     );
     // The 16-bit encoding's list is eight bits wide.
-    let ldm = t32::decode(0xc803_0000, ItState::Outside).unwrap();
+    let ldm = t32::decode_word(0xc803_0000, ItState::Outside).unwrap();
     assert_eq!(list(&ldm).mask, 0b11);
     // A single register in braces, from the field naming it.
-    let pop = a32::decode(0xe49d0004).unwrap();
+    let pop = a32::decode_word(0xe49d0004).unwrap();
     assert_eq!(pop.at(0).to_string(), "pop\t{r0}");
     assert_eq!(list(&pop).mask, 1);
     // Consecutive from a first register and counted by a field, as in
     // vldmia r0, {s0, s1, s2}.
-    let vldm = a32::decode(0xec900a03).unwrap();
+    let vldm = a32::decode_word(0xec900a03).unwrap();
     assert_eq!(list(&vldm).file, ListFile::Single);
     assert_eq!(list(&vldm).mask, 0b111);
     // Shapes keyed by a field. VLD4's itype says double spacing, and VTBL's
     // len says how many.
-    let vld4 = a32::decode(0xf46b718f).unwrap();
+    let vld4 = a32::decode_word(0xf46b718f).unwrap();
     assert_eq!(
         vld4.at(0).to_string(),
         "vld4.32\t{d23, d25, d27, d29}, [r11]"
     );
     assert_eq!(list(&vld4).mask, 1 << 23 | 1 << 25 | 1 << 27 | 1 << 29);
-    let vtbl = a32::decode(0xf3b9ea26).unwrap();
+    let vtbl = a32::decode_word(0xf3b9ea26).unwrap();
     assert_eq!(vtbl.at(0).to_string(), "vtbl.8\td14, {d9, d10, d11}, d22");
     assert_eq!(list(&vtbl).file, ListFile::Double);
     // A quantity the rows place by the size. VLD2 to all lanes is double
     // spaced at a size of 16 by the T bit, with every lane written.
-    let vld2 = a32::decode(0xf4a2cd6f).unwrap();
+    let vld2 = a32::decode_word(0xf4a2cd6f).unwrap();
     assert_eq!(vld2.at(0).to_string(), "vld2.16\t{d12[], d14[]}, [r2]");
     assert_eq!(list(&vld2).lane, Lane::All);
     // The lane index the rows place by the size, index_align<3:1> at 8.
-    let vld1 = a32::decode(0xf4e780cf).unwrap();
+    let vld1 = a32::decode_word(0xf4e780cf).unwrap();
     assert_eq!(vld1.at(0).to_string(), "vld1.8\t{d24[6]}, [r7]");
     assert_eq!(list(&vld1).lane, Lane::Index(6));
     // Four from d30 runs two past d31.
@@ -685,7 +703,7 @@ fn a_scalar_is_the_register_and_lane_the_decode_binds() {
     };
     // vmla.i16 d0, d15, d0[3]. At 16 bits the register is Vm<2:0> and the
     // lane M:Vm<3>, so Vm = 1000 with M set is d0[3], not d8[1].
-    let vmla = a32::decode(0xf29f0068).unwrap();
+    let vmla = a32::decode_word(0xf29f0068).unwrap();
     assert_eq!(vmla.at(0).to_string(), "vmla.i16\td0, d15, d0[3]");
     assert_eq!(scalar(&vmla), (DReg::new(0), 3));
     match vmla {
@@ -699,17 +717,23 @@ fn a_scalar_is_the_register_and_lane_the_decode_binds() {
         other => panic!("{other:?}"),
     }
     // At 32 bits the register is all of Vm and the lane is M alone.
-    let vmul = a32::decode(0xf2982864).unwrap();
+    let vmul = a32::decode_word(0xf2982864).unwrap();
     assert_eq!(vmul.at(0).to_string(), "vmul.i16\td2, d8, d4[2]");
     // VDUP's lane is in imm4 above the size's low set bit, and VMOV's in
     // opc1:opc2, as in vdup.8 d0, d22[7], vmov.8 d0[1], r0 and
     // vmov.u16 r0, d0[2].
     assert_eq!(
-        scalar(&a32::decode(0xf3bf0c26).unwrap()),
+        scalar(&a32::decode_word(0xf3bf0c26).unwrap()),
         (DReg::new(22), 7)
     );
-    assert_eq!(scalar(&a32::decode(0xee400b30).unwrap()), (DReg::new(0), 1));
-    assert_eq!(scalar(&a32::decode(0xeeb00b30).unwrap()), (DReg::new(0), 2));
+    assert_eq!(
+        scalar(&a32::decode_word(0xee400b30).unwrap()),
+        (DReg::new(0), 1)
+    );
+    assert_eq!(
+        scalar(&a32::decode_word(0xeeb00b30).unwrap()),
+        (DReg::new(0), 2)
+    );
 }
 
 /// A table's reserved rows name nothing. A row of two spellings is written
@@ -718,7 +742,7 @@ fn a_scalar_is_the_register_and_lane_the_decode_binds() {
 /// the table those letters make.
 #[test]
 fn a_table_names_what_it_names_and_the_field_holds_the_rest() {
-    let text = |word: u32| a32::decode(word).unwrap().at(0).to_string();
+    let text = |word: u32| a32::decode_word(word).unwrap().at(0).to_string();
     // MRS's special register is `CPSR|APSR`, written as the second.
     assert_eq!(text(0xe10f8000), "mrs\tr8, apsr");
     // VMRS's rows reserve values as UNPREDICTABLE by patterns.
@@ -733,7 +757,7 @@ fn a_table_names_what_it_names_and_the_field_holds_the_rest() {
     // CPS's interrupt flags are the letters of its fields.
     assert_eq!(text(0xf10c53ce), "cpsid\taif");
     assert_eq!(
-        t32::decode(0xb671_0000, ItState::Outside)
+        t32::decode_word(0xb671_0000, ItState::Outside)
             .unwrap()
             .at(0)
             .to_string(),
@@ -747,7 +771,7 @@ fn a_table_names_what_it_names_and_the_field_holds_the_rest() {
     assert_eq!(text(0x5eea7b90), "vduppl.8\tq13, r7");
     // An Execute naming both expansions is read by the instruction set.
     assert_eq!(
-        t32::decode(0xf07f70aa, ItState::Outside)
+        t32::decode_word(0xf07f70aa, ItState::Outside)
             .unwrap()
             .at(0)
             .to_string(),
@@ -760,9 +784,9 @@ fn a_table_names_what_it_names_and_the_field_holds_the_rest() {
 /// template names outright, and a label that wraps at 32 bits.
 #[test]
 fn a_register_is_the_decodes_and_its_mark_is_its_own() {
-    let a32 = |word: u32| a32::decode(word).unwrap().at(0).to_string();
+    let a32 = |word: u32| a32::decode_word(word).unwrap().at(0).to_string();
     let t32 = |word: u32| {
-        t32::decode(word, ItState::Outside)
+        t32::decode_word(word, ItState::Outside)
             .unwrap()
             .at(0)
             .to_string()
@@ -799,7 +823,7 @@ fn a_register_is_the_decodes_and_its_mark_is_its_own() {
 #[test]
 fn a_constant_is_the_element_its_type_gives() {
     use exarmo_aarch32::Operand;
-    let text = |word: u32| a32::decode(word).unwrap().at(0).to_string();
+    let text = |word: u32| a32::decode_word(word).unwrap().at(0).to_string();
     // The type in the mnemonic, at 16, 8 and 64 bits of the replicated value.
     assert_eq!(text(0xf2827836), "vmvn.i16\td7, #0x26");
     assert_eq!(text(0xf3c21e17), "vmov.i8\td17, #0xa7");
@@ -811,7 +835,7 @@ fn a_constant_is_the_element_its_type_gives() {
     // consumer building a constant of that width reads it rather than
     // encoding the value back.
     assert_eq!(
-        a32::decode(0xf285cf5a).unwrap().operands()[2],
+        a32::decode_word(0xf285cf5a).unwrap().operands()[2],
         Operand::FpImm {
             value: 0.40625,
             width: 32,
@@ -834,11 +858,11 @@ fn a_constant_is_the_element_its_type_gives() {
 #[test]
 fn a_shift_by_a_register_and_the_offsets_after_the_brackets() {
     use exarmo_aarch32::{GpReg, Modifier, ModifierKind, Operand, Reg, RegOperand};
-    let text = |word: u32| a32::decode(word).unwrap().at(0).to_string();
+    let text = |word: u32| a32::decode_word(word).unwrap().at(0).to_string();
     assert_eq!(text(0xe0a01352), "adc\tr1, r0, r2, asr r3");
     // The shift is a slot of its own in the template, `<Rm>, <shift> <Rs>`,
     // and the view folds it onto the register it applies to.
-    let adc = a32::decode(0xe0a01352).unwrap();
+    let adc = a32::decode_word(0xe0a01352).unwrap();
     assert_eq!(
         adc.operands()[3],
         Operand::Reg(RegOperand {
@@ -857,7 +881,7 @@ fn a_shift_by_a_register_and_the_offsets_after_the_brackets() {
     assert_eq!(text(0xe6910002), "ldr\tr0, [r1], r2");
     assert_eq!(text(0xe1910f9f), "ldrex\tr0, [r1]");
     assert_eq!(
-        t32::decode(0xf360_0107, ItState::Outside)
+        t32::decode_word(0xf360_0107, ItState::Outside)
             .unwrap()
             .at(0)
             .to_string(),
@@ -869,9 +893,9 @@ fn a_shift_by_a_register_and_the_offsets_after_the_brackets() {
 /// an encoding is written as its name, and IT's letters come from the mask.
 #[test]
 fn a_table_stated_in_sentences_is_a_table() {
-    let a32 = |word: u32| a32::decode(word).unwrap().at(0).to_string();
+    let a32 = |word: u32| a32::decode_word(word).unwrap().at(0).to_string();
     let t32 = |word: u32| {
-        t32::decode(word, ItState::Outside)
+        t32::decode_word(word, ItState::Outside)
             .unwrap()
             .at(0)
             .to_string()

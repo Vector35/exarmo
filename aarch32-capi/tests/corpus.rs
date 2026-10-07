@@ -44,8 +44,8 @@ enum Entry {
 impl Entry {
     fn rust(self, word: u32) -> Result<Instruction, exarmo_aarch32::DecodeError> {
         match self {
-            Entry::A32 => exarmo_aarch32::a32::decode(word),
-            Entry::T32(state) => exarmo_aarch32::t32::decode(word, state),
+            Entry::A32 => exarmo_aarch32::a32::decode_word(word),
+            Entry::T32(state) => exarmo_aarch32::t32::decode_word(word, state),
         }
     }
 
@@ -134,12 +134,13 @@ fn read(entry: Entry, word: u32) -> Read {
     let mut storage = MaybeUninit::<CInstruction>::uninit();
     let state = match entry {
         Entry::A32 => {
-            read.status = unsafe { exarmo_aarch32_decode_a32(word, storage.as_mut_ptr()) };
+            read.status = unsafe { exarmo_aarch32_decode_a32_word(word, storage.as_mut_ptr()) };
             Entry::c_state(ItState::Outside)
         }
         Entry::T32(state) => {
             let state = Entry::c_state(state);
-            read.status = unsafe { exarmo_aarch32_decode_t32(word, state, storage.as_mut_ptr()) };
+            read.status =
+                unsafe { exarmo_aarch32_decode_t32_word(word, state, storage.as_mut_ptr()) };
             read.t32_length = exarmo_aarch32_t32_length((word >> 16) as u16);
             state
         }

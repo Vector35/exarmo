@@ -106,9 +106,16 @@ impl ItState {
     /// of a block is the caller's to see. An unknown state stays unknown
     /// until an IT instruction settles it.
     pub fn after(self, instruction: &Instruction) -> Self {
-        if let Some(block) = instruction.it_state_set() {
-            return block;
+        match instruction.it_state_set() {
+            Some(block) => block,
+            None => self.advanced(),
         }
+    }
+
+    /// The state after any instruction other than IT, advanced as
+    /// `ITAdvance` does. A word that decodes to no instruction still uses up
+    /// its place in a block, so `t32::disassemble` advances past it too.
+    pub(crate) fn advanced(self) -> Self {
         match self {
             ItState::Inside { .. } => {
                 let bits = self.bits();

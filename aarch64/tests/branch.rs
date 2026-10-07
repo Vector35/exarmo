@@ -4,11 +4,11 @@
 
 mod corpus;
 
-use exarmo_aarch64::{Branch, BranchKind, Flags, Operand, Token, decode};
+use exarmo_aarch64::{Branch, BranchKind, Flags, Operand, Token, decode_word};
 
 /// The branch a word takes, read as though the instruction sat at 0x1000.
 fn branch(bits: u32) -> Branch {
-    decode(bits).unwrap().at(0x1000).branch()
+    decode_word(bits).unwrap().at(0x1000).branch()
 }
 
 fn kind(bits: u32) -> BranchKind {

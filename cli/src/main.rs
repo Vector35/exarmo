@@ -128,15 +128,15 @@ fn rendered<I: Decoded, E: fmt::Debug>(
 fn decoded(set: Set, bits: u32, show: Show) -> String {
     match set {
         #[cfg(feature = "aarch64")]
-        Set::A64 => rendered(exarmo_aarch64::decode(bits), show, |instruction| {
+        Set::A64 => rendered(exarmo_aarch64::decode_word(bits), show, |instruction| {
             let intrinsics = instruction.intrinsics();
             intrinsics.first().map(|intrinsic| intrinsic.name())
         }),
         #[cfg(feature = "aarch32")]
-        Set::A32 => rendered(a32::decode(bits), show, |_| None),
+        Set::A32 => rendered(a32::decode_word(bits), show, |_| None),
         // Outside an IT block, which is what a word on its own is.
         #[cfg(feature = "aarch32")]
-        Set::T32 => rendered(t32::decode(bits, ItState::Outside), show, |_| None),
+        Set::T32 => rendered(t32::decode_word(bits, ItState::Outside), show, |_| None),
     }
 }
 

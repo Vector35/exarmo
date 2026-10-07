@@ -1,6 +1,6 @@
 /* The C face of the exarmo-aarch64 disassembler.
  *
- * Decode an instruction once with exarmo_aarch64_decode, then ask the decoded
+ * Decode an instruction once with exarmo_aarch64_decode_word, then ask the decoded
  * instruction what it is (its encoding and mnemonic), what it does to the
  * condition flags, what its operands are, and how it is written. Nothing
  * here allocates. The caller owns every buffer, and a function that writes
@@ -26,6 +26,14 @@
 
 #ifdef __cplusplus
 extern "C" {
+#endif
+
+#if defined(__GNUC__) || defined(__clang__)
+#define EXARMO_AARCH64_DEPRECATED(message) __attribute__((deprecated(message)))
+#elif defined(_MSC_VER)
+#define EXARMO_AARCH64_DEPRECATED(message) __declspec(deprecated(message))
+#else
+#define EXARMO_AARCH64_DEPRECATED(message)
 #endif
 
 /* ------------------------------------------------------------------------
@@ -63,11 +71,25 @@ typedef enum exarmo_aarch64_status {
      * NOP and may be allocated by a later release. Only the AArch32 index
      * marks a row so, and an AArch64 decode never returns this. */
     EXARMO_AARCH64_STATUS_RESERVED_HINT = 6,
+    /* The bytes ended before the instruction did. Only
+     * exarmo_aarch64_decode_bytes returns this. */
+    EXARMO_AARCH64_STATUS_TRUNCATED = 7,
 } exarmo_aarch64_status;
 
 /* Decode the 32-bit instruction word `bits` into `out`. `out` is written
  * only when the status is EXARMO_AARCH64_STATUS_OK. */
+exarmo_aarch64_status exarmo_aarch64_decode_word(uint32_t bits, exarmo_aarch64_instruction *out);
+
+/* The former name of exarmo_aarch64_decode_word. */
+EXARMO_AARCH64_DEPRECATED("renamed to exarmo_aarch64_decode_word, or use exarmo_aarch64_decode_bytes")
 exarmo_aarch64_status exarmo_aarch64_decode(uint32_t bits, exarmo_aarch64_instruction *out);
+
+/* Decode the instruction at the start of the `len` bytes at `bytes` into
+ * `out`. Returns EXARMO_AARCH64_STATUS_TRUNCATED if `len` is less than four,
+ * and EXARMO_AARCH64_STATUS_FAILED if `bytes` is null and `len` is not zero,
+ * or if `out` is null. `out` is written only when the status is
+ * EXARMO_AARCH64_STATUS_OK. */
+exarmo_aarch64_status exarmo_aarch64_decode_bytes(const uint8_t *bytes, size_t len, exarmo_aarch64_instruction *out);
 
 /* ------------------------------------------------------------------------
  * Identity

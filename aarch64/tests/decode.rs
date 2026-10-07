@@ -7,7 +7,9 @@
 // `Shift_Lsl0_Lsl12` is the left shift an ADD immediate takes. The
 // architecture names no value-table enum, so each is named after what it
 // holds.
-use exarmo_aarch64::{Arrangement, ElementWidth, Encoding, Instruction, Shift_Lsl0_Lsl12, decode};
+use exarmo_aarch64::{
+    Arrangement, ElementWidth, Encoding, Instruction, Shift_Lsl0_Lsl12, decode_word,
+};
 
 /// The encoding a word decodes to, for each shape of instruction.
 #[test]
@@ -34,7 +36,7 @@ fn a_word_decodes_to_its_encoding() {
     ];
     for (word, encoding, disassembly) in cases {
         assert_eq!(
-            decode(*word).map(|i| i.encoding()),
+            decode_word(*word).map(|i| i.encoding()),
             Ok(*encoding),
             "{word:08x} is {disassembly}"
         );
@@ -46,13 +48,13 @@ fn a_word_decodes_to_its_encoding() {
 #[test]
 fn an_alias_is_taken_only_where_its_condition_holds() {
     // orr x0, xzr, x2, which is mov x0, x2
-    let Ok(Instruction::MovOrr64LogShift { Xd, Xm }) = decode(0xAA0203E0) else {
+    let Ok(Instruction::MovOrr64LogShift { Xd, Xm }) = decode_word(0xAA0203E0) else {
         panic!("mov");
     };
     assert_eq!((Xd.num(), Xm.num()), (0, 2));
     // orr x0, x1, x2, whose first source is not ZR
     assert_eq!(
-        decode(0xAA020020).map(|i| i.encoding()),
+        decode_word(0xAA020020).map(|i| i.encoding()),
         Ok(Encoding::Orr64LogShift)
     );
 }
@@ -62,7 +64,7 @@ fn an_alias_is_taken_only_where_its_condition_holds() {
 #[test]
 fn a_signed_immediate_is_held_signed() {
     // stur x0, [x1, #-16]
-    let Ok(Instruction::Stur64LdstUnscaled { Xt, Xn, simm }) = decode(0xF81F0020) else {
+    let Ok(Instruction::Stur64LdstUnscaled { Xt, Xn, simm }) = decode_word(0xF81F0020) else {
         panic!("stur");
     };
     assert_eq!((Xt.num(), Xn.num(), simm), (0, 1, -16));
@@ -73,7 +75,7 @@ fn a_signed_immediate_is_held_signed() {
 #[test]
 fn a_bitmask_is_the_value_it_decodes_to() {
     // orr x0, x0, #3, whose N:immr:imms is 0:000000:000001
-    let Ok(Instruction::Orr64LogImm { imm, .. }) = decode(0xB2400400) else {
+    let Ok(Instruction::Orr64LogImm { imm, .. }) = decode_word(0xB2400400) else {
         panic!("orr");
     };
     assert_eq!(imm, 3);
@@ -83,12 +85,12 @@ fn a_bitmask_is_the_value_it_decodes_to() {
 /// address it names, given one.
 #[test]
 fn a_label_is_held_as_its_offset() {
-    let Ok(Instruction::BOnlyBranchImm { offset }) = decode(0x14000002) else {
+    let Ok(Instruction::BOnlyBranchImm { offset }) = decode_word(0x14000002) else {
         panic!("b");
     };
     assert_eq!(offset, 8);
     assert_eq!(
-        decode(0x14000002).unwrap().at(0x1000).to_string(),
+        decode_word(0x14000002).unwrap().at(0x1000).to_string(),
         "b\t0x1008"
     );
 }
@@ -103,7 +105,7 @@ fn a_lane_is_its_arrangement_and_its_index() {
         Vn,
         Ts,
         index,
-    }) = decode(0x4E0C0420)
+    }) = decode_word(0x4E0C0420)
     else {
         panic!("dup");
     };
@@ -116,7 +118,7 @@ fn a_lane_is_its_arrangement_and_its_index() {
 /// A system register is held as its encoding, which the name lookup reads.
 #[test]
 fn a_system_register_is_held_as_its_encoding() {
-    let Ok(Instruction::MrsRsSystemmove { Xt, systemreg, .. }) = decode(0xD5330000) else {
+    let Ok(Instruction::MrsRsSystemmove { Xt, systemreg, .. }) = decode_word(0xD5330000) else {
         panic!("mrs");
     };
     assert_eq!(Xt.num(), 0);
@@ -129,12 +131,12 @@ fn a_system_register_is_held_as_its_encoding() {
 /// chose, not as the bits that chose it.
 #[test]
 fn a_shift_is_held_as_what_it_selects() {
-    let Ok(Instruction::Add64AddsubImm { shift, imm, .. }) = decode(0x91000420) else {
+    let Ok(Instruction::Add64AddsubImm { shift, imm, .. }) = decode_word(0x91000420) else {
         panic!("add");
     };
     assert_eq!((shift, imm), (Shift_Lsl0_Lsl12::Lsl0, 1));
     // add x0, x1, #1, lsl #12
-    let Ok(Instruction::Add64AddsubImm { shift, .. }) = decode(0x91400420) else {
+    let Ok(Instruction::Add64AddsubImm { shift, .. }) = decode_word(0x91400420) else {
         panic!("add lsl 12");
     };
     assert_eq!(shift, Shift_Lsl0_Lsl12::Lsl12);
@@ -145,10 +147,10 @@ fn a_shift_is_held_as_what_it_selects() {
 #[test]
 fn the_register_width_is_in_the_type() {
     assert!(matches!(
-        decode(0x11000420),
+        decode_word(0x11000420),
         Ok(Instruction::Add32AddsubImm { .. })
     ));
-    let Ok(Instruction::Add32AddsubImm { Wn, .. }) = decode(0x11000420) else {
+    let Ok(Instruction::Add32AddsubImm { Wn, .. }) = decode_word(0x11000420) else {
         panic!("add w");
     };
     assert_eq!(Wn.num(), 1);
@@ -158,6 +160,6 @@ fn the_register_width_is_in_the_type() {
 /// decoding to something near it.
 #[test]
 fn an_unallocated_word_says_so() {
-    assert!(decode(0xC0200400).is_err());
-    assert!(decode(0x00010005).is_err());
+    assert!(decode_word(0xC0200400).is_err());
+    assert!(decode_word(0x00010005).is_err());
 }

@@ -4,14 +4,14 @@
 use exarmo_aarch32::{ItState, SysReg, SysRegSpace, a32, t32};
 
 fn register(bits: u32) -> Option<SysReg> {
-    a32::decode(bits).unwrap().system_register()
+    a32::decode_word(bits).unwrap().system_register()
 }
 
 /// An MRC names the register it reads, and an MCR the one it writes, while
 /// the text stays as the architecture writes it.
 #[test]
 fn a_coprocessor_access_names_its_register() {
-    let mrc = a32::decode(0xEE110F10).unwrap();
+    let mrc = a32::decode_word(0xEE110F10).unwrap();
     assert_eq!(
         mrc.at(0).to_string(),
         "mrc\tp15, #0x0, r0, c1, c0, #0x0",
@@ -27,7 +27,7 @@ fn a_coprocessor_access_names_its_register() {
     assert_eq!(mcr.name(), Some("sctlr"));
 
     // T32 writes the same instruction in the same fields
-    let t32 = t32::decode(0xEE110F10, ItState::Outside)
+    let t32 = t32::decode_word(0xEE110F10, ItState::Outside)
         .unwrap()
         .system_register()
         .unwrap();

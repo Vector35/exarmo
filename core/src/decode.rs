@@ -78,7 +78,7 @@ macro_rules! decoded {
     };
 }
 
-/// Why a word decoded to no instruction.
+/// Why a word decoded to no instruction, or why bytes held none.
 ///
 /// Only the AArch32 encoding index marks rows UNPREDICTABLE or as reserved
 /// hints. The A64 index does not, so such words decode as `Unallocated`.
@@ -99,6 +99,9 @@ pub enum DecodeError {
     /// The index marks the encoding a reserved hint, which behaves as a NOP
     /// and may be allocated later.
     ReservedHint,
+    /// The bytes ended before the instruction did. Only a decode from bytes
+    /// returns this.
+    Truncated,
 }
 
 impl fmt::Display for DecodeError {
@@ -109,6 +112,7 @@ impl fmt::Display for DecodeError {
             Self::Unallocated => f.write_str("UNALLOCATED"),
             Self::Unpredictable => f.write_str("UNPREDICTABLE"),
             Self::ReservedHint => f.write_str("reserved hint"),
+            Self::Truncated => f.write_str("truncated"),
         }
     }
 }

@@ -43,11 +43,10 @@ pub fn length(hw1: u16) -> u8 {
     4
 }
 
-/// Decode an T32 instruction.
+/// Decode the T32 instruction `bits`, its first 16 bits in the high half.
 ///
-/// An encoding allocated to no instruction is `Err(DecodeError::Unallocated)`;
-/// one the architecture defines as UNDEFINED or a NOP says so.
-pub fn decode(bits: u32, state: ItState) -> Result<Instruction, DecodeError> {
+/// If the word is not an instruction, returns a [`DecodeError`] that says why.
+pub fn decode_word(bits: u32, state: ItState) -> Result<Instruction, DecodeError> {
     let op0 = (bits >> 29) & 0x7;
     let op1 = (bits >> 27) & 0x3;
     match (op0, op1) {

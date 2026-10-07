@@ -8,12 +8,15 @@ disassembler. Its headers are `include/exarmo/aarch64.h` and the generated
 #include <exarmo/aarch64.h>
 
 exarmo_aarch64_instruction inst;
-if (exarmo_aarch64_decode(0xf9400420, &inst) == EXARMO_AARCH64_STATUS_OK) {
+if (exarmo_aarch64_decode_word(0xf9400420, &inst) == EXARMO_AARCH64_STATUS_OK) {
     char text[EXARMO_AARCH64_MAX_TEXT + 1];
     exarmo_aarch64_instruction_text(&inst, 0x1000, text, sizeof text);
     /* text is "ldr\tx0, [x1, #0x8]" */
 }
 ```
+
+`exarmo_aarch64_decode_bytes` decodes the same instruction from a byte
+buffer.
 
 An instruction is decoded once into storage the caller owns. Functions then
 read its encoding and mnemonic, operands, condition flags, effect on the flow

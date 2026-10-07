@@ -13,17 +13,19 @@ cargo add exarmo-aarch32
 ```rust
 use exarmo_aarch32::{ItState, a32, t32};
 
-let add = a32::decode(0xe0812003).unwrap();
+let add = a32::decode_word(0xe0812003).unwrap();
 assert_eq!(add.at(0x1000).to_string(), "add\tr2, r1, r3");
 
-// A T32 word holds its first halfword in the high half.
-let nop = t32::decode(0xbf000000, ItState::Outside).unwrap();
+// A 16-bit T32 nop
+let nop = t32::decode_bytes(&[0x00, 0xbf], ItState::Outside).unwrap();
 assert_eq!(nop.at(0x1000).to_string(), "nop");
 ```
 
-Both instruction sets decode to one `Instruction`. A T32 decode takes the IT
-state, since an instruction inside an IT block takes its condition from the
-block. `ItState::after` gives the state for the instruction that follows.
+Both instruction sets decode to one `Instruction`. Each decodes from a 32-bit
+word or a byte slice, and `disassemble` returns an iterator over the
+instructions in a byte buffer. A T32 decode takes the IT state, since an
+instruction inside an IT block takes its condition from the block.
+`ItState::after` gives the state for the instruction that follows.
 
 An instruction holds no address. `at` gives it one, for the text and for
 anything PC-relative. An instruction also gives:

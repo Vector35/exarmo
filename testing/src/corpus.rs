@@ -328,16 +328,23 @@ pub fn encodings<'a>(
 /// `DecodeError` writes it, such as `UNDEFINED` or `UNALLOCATED`.
 pub fn expected_outcome(text: &str) -> Option<exarmo_core::DecodeError> {
     use exarmo_core::DecodeError::{self, *};
-    [UNDEF, NOP, Unallocated, Unpredictable, ReservedHint]
-        .into_iter()
-        .find(|outcome: &DecodeError| {
-            // Every variant named, so that one added to the enum is added to
-            // the list above before this builds.
-            match outcome {
-                UNDEF | NOP | Unallocated | Unpredictable | ReservedHint => {}
-            }
-            outcome.to_string() == text
-        })
+    [
+        UNDEF,
+        NOP,
+        Unallocated,
+        Unpredictable,
+        ReservedHint,
+        Truncated,
+    ]
+    .into_iter()
+    .find(|outcome: &DecodeError| {
+        // Every variant named, so that one added to the enum is added to
+        // the list above before this builds.
+        match outcome {
+            UNDEF | NOP | Unallocated | Unpredictable | ReservedHint | Truncated => {}
+        }
+        outcome.to_string() == text
+    })
 }
 
 /// How a word came out of the decoder.

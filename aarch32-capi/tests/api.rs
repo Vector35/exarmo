@@ -14,14 +14,14 @@ const OUTSIDE: CItState = CItState {
 
 fn a32(bits: u32) -> CInstruction {
     let mut out = MaybeUninit::<CInstruction>::uninit();
-    let status = unsafe { exarmo_aarch32_decode_a32(bits, out.as_mut_ptr()) };
+    let status = unsafe { exarmo_aarch32_decode_a32_word(bits, out.as_mut_ptr()) };
     assert_eq!(status, Status::Ok, "{bits:08x}");
     unsafe { out.assume_init() }
 }
 
 fn t32(bits: u32, state: CItState) -> CInstruction {
     let mut out = MaybeUninit::<CInstruction>::uninit();
-    let status = unsafe { exarmo_aarch32_decode_t32(bits, state, out.as_mut_ptr()) };
+    let status = unsafe { exarmo_aarch32_decode_t32_word(bits, state, out.as_mut_ptr()) };
     assert_eq!(status, Status::Ok, "{bits:08x}");
     unsafe { out.assume_init() }
 }
@@ -56,16 +56,16 @@ fn operands_of(inst: &CInstruction) -> Vec<COperand> {
 #[test]
 fn a_decode_that_fails_says_how() {
     let mut out = MaybeUninit::<CInstruction>::uninit();
-    let mut a32 = |bits| unsafe { exarmo_aarch32_decode_a32(bits, out.as_mut_ptr()) };
+    let mut a32 = |bits| unsafe { exarmo_aarch32_decode_a32_word(bits, out.as_mut_ptr()) };
     assert_eq!(a32(0xf1200000), Status::Unallocated);
     assert_eq!(a32(0xf1200070), Status::Unpredictable);
     assert_eq!(a32(0xe320f020), Status::ReservedHint);
     assert_eq!(
-        unsafe { exarmo_aarch32_decode_a32(0xe2800001, std::ptr::null_mut()) },
+        unsafe { exarmo_aarch32_decode_a32_word(0xe2800001, std::ptr::null_mut()) },
         Status::Failed
     );
     assert_eq!(
-        unsafe { exarmo_aarch32_decode_t32(0xf9bf_f000, OUTSIDE, out.as_mut_ptr()) },
+        unsafe { exarmo_aarch32_decode_t32_word(0xf9bf_f000, OUTSIDE, out.as_mut_ptr()) },
         Status::ReservedHint
     );
 }
@@ -76,7 +76,7 @@ fn a_decode_that_fails_says_how() {
 #[test]
 fn every_outcome_the_decoder_reaches() {
     let mut out = MaybeUninit::<CInstruction>::uninit();
-    let mut a32 = |bits| unsafe { exarmo_aarch32_decode_a32(bits, out.as_mut_ptr()) };
+    let mut a32 = |bits| unsafe { exarmo_aarch32_decode_a32_word(bits, out.as_mut_ptr()) };
     assert_eq!(a32(0xe2800001), Status::Ok);
     assert_eq!(a32(0x002000d8), Status::Unallocated);
     // AESMC with a size it reserves, which is UNDEFINED by the word alone
@@ -84,11 +84,51 @@ fn every_outcome_the_decoder_reaches() {
     assert_eq!(a32(0xf1200076), Status::Unpredictable);
     assert_eq!(a32(0x0320001f), Status::ReservedHint);
 
-    let mut t32 = |bits| unsafe { exarmo_aarch32_decode_t32(bits, OUTSIDE, out.as_mut_ptr()) };
+    let mut t32 = |bits| unsafe { exarmo_aarch32_decode_t32_word(bits, OUTSIDE, out.as_mut_ptr()) };
     assert_eq!(t32(0x46080000), Status::Ok);
     assert_eq!(t32(0xb6200008), Status::Unallocated);
     assert_eq!(t32(0xffb4f3af), Status::Undefined);
     assert_eq!(t32(0xbf600002), Status::ReservedHint);
+}
+
+/// The bytes of an A32 `bx lr`.
+#[test]
+fn an_a32_decode_from_bytes_reads_them_as_memory_holds_them() {
+    let bx = [0x1e, 0xff, 0x2f, 0xe1];
+    let mut out = MaybeUninit::<CInstruction>::uninit();
+    let null = std::ptr::null();
+    unsafe {
+        let decode = |bytes, len, out| exarmo_aarch32_decode_a32_bytes(bytes, len, out);
+        assert_eq!(decode(bx.as_ptr(), bx.len(), out.as_mut_ptr()), Status::Ok);
+        assert_eq!(text(out.assume_init_ref(), 0), "bx\tlr");
+        assert_eq!(decode(bx.as_ptr(), 3, out.as_mut_ptr()), Status::Truncated);
+        assert_eq!(decode(null, 4, out.as_mut_ptr()), Status::Failed);
+        assert_eq!(decode(bx.as_ptr(), 4, std::ptr::null_mut()), Status::Failed);
+    }
+}
+
+/// `bx lr` is a 16-bit instruction and `bl` a 32-bit one, so the decode reads
+/// two bytes for the first and four for the second.
+#[test]
+fn a_t32_decode_from_bytes_reads_as_many_as_the_instruction_takes() {
+    let bx = [0x70, 0x47];
+    let bl = [0x00, 0xf0, 0x00, 0xf8];
+    let mut out = MaybeUninit::<CInstruction>::uninit();
+    unsafe {
+        let decode = |bytes: &[u8], len, out| {
+            exarmo_aarch32_decode_t32_bytes(bytes.as_ptr(), len, OUTSIDE, out)
+        };
+        assert_eq!(decode(&bx, bx.len(), out.as_mut_ptr()), Status::Ok);
+        assert_eq!(exarmo_aarch32_instruction_length(out.as_ptr()), 2);
+        assert_eq!(decode(&bl, bl.len(), out.as_mut_ptr()), Status::Ok);
+        assert_eq!(exarmo_aarch32_instruction_length(out.as_ptr()), 4);
+        assert_eq!(decode(&bl, 2, out.as_mut_ptr()), Status::Truncated);
+        assert_eq!(decode(&bl, 1, out.as_mut_ptr()), Status::Truncated);
+        assert_eq!(
+            exarmo_aarch32_decode_t32_bytes(std::ptr::null(), 2, OUTSIDE, out.as_mut_ptr()),
+            Status::Failed
+        );
+    }
 }
 
 #[test]

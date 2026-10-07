@@ -14,7 +14,9 @@ use std::fmt::Write;
 
 use exarmo_aarch64::{Encoding, Instruction, Mnemonic};
 pub use exarmo_core::capi::{Branch, FlagEffect, Status, Str, TextSize, Token};
-use exarmo_core::capi::{Spans, Storage, buffer, deliver, fill, guarded, with_held, write_tokens};
+use exarmo_core::capi::{
+    Spans, Storage, buffer, bytes, deliver, fill, guarded, with_held, write_tokens,
+};
 
 pub mod model;
 pub mod tables;
@@ -53,11 +55,41 @@ pub extern "C" fn exarmo_aarch64_instruction_size() -> usize {
 ///
 /// A non-null `out` must point to writable storage for a `CInstruction`.
 #[unsafe(no_mangle)]
-pub unsafe extern "C" fn exarmo_aarch64_decode(bits: u32, out: *mut CInstruction) -> Status {
+pub unsafe extern "C" fn exarmo_aarch64_decode_word(bits: u32, out: *mut CInstruction) -> Status {
     if out.is_null() {
         return Status::Failed;
     }
-    unsafe { deliver(|| exarmo_aarch64::decode(bits), out) }
+    unsafe { deliver(|| exarmo_aarch64::decode_word(bits), out) }
+}
+
+/// The former name of [`exarmo_aarch64_decode_word`], which the header marks
+/// deprecated.
+///
+/// # Safety
+///
+/// See [`exarmo_aarch64_decode_word`].
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn exarmo_aarch64_decode(bits: u32, out: *mut CInstruction) -> Status {
+    unsafe { exarmo_aarch64_decode_word(bits, out) }
+}
+
+/// Decode the instruction at the start of the `len` bytes at `bytes` into
+/// `out`, which is written only on `Status::Ok`.
+///
+/// # Safety
+///
+/// A non-null `bytes` must point to `len` readable bytes, and a non-null
+/// `out` to writable storage for a `CInstruction`.
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn exarmo_aarch64_decode_bytes(
+    bytes: *const u8,
+    len: usize,
+    out: *mut CInstruction,
+) -> Status {
+    match (unsafe { self::bytes(bytes, len) }, out.is_null()) {
+        (Some(code), false) => unsafe { deliver(|| exarmo_aarch64::decode_bytes(code), out) },
+        _ => Status::Failed,
+    }
 }
 
 /// Which encoding the instruction is. Returns `EXARMO_AARCH64_ENCODING_COUNT`
@@ -65,7 +97,8 @@ pub unsafe extern "C" fn exarmo_aarch64_decode(bits: u32, out: *mut CInstruction
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch64_decode`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch64_instruction_encoding(inst: *const CInstruction) -> u32 {
     let none = Encoding::COUNT as u32;
@@ -77,7 +110,8 @@ pub unsafe extern "C" fn exarmo_aarch64_instruction_encoding(inst: *const CInstr
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch64_decode`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch64_instruction_mnemonic(inst: *const CInstruction) -> u32 {
     let none = Mnemonic::COUNT as u32;
@@ -111,7 +145,8 @@ pub extern "C" fn exarmo_aarch64_encoding_length(encoding: u32) -> u8 {
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch64_decode`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch64_instruction_length(inst: *const CInstruction) -> u8 {
     unsafe { with_held(inst, 0, |inst| inst.encoding().length()) }
@@ -123,7 +158,8 @@ pub unsafe extern "C" fn exarmo_aarch64_instruction_length(inst: *const CInstruc
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch64_decode`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch64_instruction_unpredictable(
     inst: *const CInstruction,
@@ -142,7 +178,8 @@ pub extern "C" fn exarmo_aarch64_mnemonic_name(mnemonic: u32) -> Str {
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch64_decode`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch64_instruction_flags(inst: *const CInstruction) -> FlagEffect {
     let none = FlagEffect::from(exarmo_aarch64::FlagEffect::NONE);
@@ -154,7 +191,8 @@ pub unsafe extern "C" fn exarmo_aarch64_instruction_flags(inst: *const CInstruct
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch64_decode`] for what `inst` must point to.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch64_instruction_branch(
     inst: *const CInstruction,
@@ -168,8 +206,8 @@ pub unsafe extern "C" fn exarmo_aarch64_instruction_branch(
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch64_decode`] for what `inst` must point to. A non-null
-/// `out` must point to `capacity` writable operands.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode. A non-null `out` must point to `capacity` writable operands.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch64_instruction_operands(
     inst: *const CInstruction,
@@ -191,9 +229,9 @@ pub unsafe extern "C" fn exarmo_aarch64_instruction_operands(
 ///
 /// # Safety
 ///
-/// See [`exarmo_aarch64_decode`] for what `inst` must point to. A non-null
-/// `text` must point to `text_capacity` writable bytes and a non-null
-/// `tokens` to `token_capacity` writable tokens.
+/// A non-null `inst` must point to an instruction written by a successful
+/// decode. A non-null `text` must point to `text_capacity` writable bytes and a
+/// non-null `tokens` to `token_capacity` writable tokens.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch64_instruction_tokens(
     inst: *const CInstruction,
@@ -272,7 +310,7 @@ pub unsafe extern "C" fn exarmo_aarch64_sysreg_name(
 ///
 /// # Safety
 ///
-/// `inst` must be a pointer `exarmo_aarch64_decode` filled, and `out` must be
+/// `inst` must be a pointer `exarmo_aarch64_decode_word` filled, and `out` must be
 /// writable for `capacity` elements, or null when `capacity` is zero.
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn exarmo_aarch64_instruction_intrinsics(

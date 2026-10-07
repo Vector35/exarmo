@@ -23,10 +23,10 @@ int main(void) {
     CHECK(exarmo_aarch64_instruction_size() == sizeof(exarmo_aarch64_instruction));
 
     exarmo_aarch64_instruction inst;
-    CHECK(exarmo_aarch64_decode(0x00010000, &inst) == EXARMO_AARCH64_STATUS_UNALLOCATED);
+    CHECK(exarmo_aarch64_decode_word(0x00010000, &inst) == EXARMO_AARCH64_STATUS_UNALLOCATED);
 
     /* ldr x0, [x1, #8] */
-    CHECK(exarmo_aarch64_decode(0xF9400420, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0xF9400420, &inst) == EXARMO_AARCH64_STATUS_OK);
     CHECK(exarmo_aarch64_instruction_encoding(&inst) == EXARMO_AARCH64_ENC_Ldr64LdstPos);
     CHECK(exarmo_aarch64_instruction_mnemonic(&inst) == EXARMO_AARCH64_LDR);
     exarmo_aarch64_str name = exarmo_aarch64_mnemonic_name(EXARMO_AARCH64_LDR);
@@ -38,6 +38,17 @@ int main(void) {
     CHECK(exarmo_aarch64_encoding_mnemonic(EXARMO_AARCH64_ENC_Ldr64LdstPos) == EXARMO_AARCH64_LDR);
     CHECK(exarmo_aarch64_encoding_length(EXARMO_AARCH64_ENC_Ldr64LdstPos) == 4);
     CHECK(exarmo_aarch64_instruction_length(&inst) == 4);
+
+    /* The deprecated name still links and decodes the same instruction */
+    exarmo_aarch64_instruction old;
+    CHECK(exarmo_aarch64_decode(0xF9400420, &old) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_instruction_encoding(&old) == EXARMO_AARCH64_ENC_Ldr64LdstPos);
+
+    /* The same ldr as bytes, then cut short */
+    const uint8_t ldr[] = {0x20, 0x04, 0x40, 0xf9};
+    CHECK(exarmo_aarch64_decode_bytes(ldr, sizeof ldr, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_instruction_encoding(&inst) == EXARMO_AARCH64_ENC_Ldr64LdstPos);
+    CHECK(exarmo_aarch64_decode_bytes(ldr, 3, &inst) == EXARMO_AARCH64_STATUS_TRUNCATED);
     CHECK(!exarmo_aarch64_instruction_unpredictable(&inst));
 
     /* Sized as a caller should, so whatever this release decodes fits. */
@@ -69,19 +80,19 @@ int main(void) {
     CHECK(ops[1].mem.writeback == EXARMO_AARCH64_WRITEBACK_NONE);
 
     /* add x0, x1, x2, lsl #3, whose shift is a kind to switch on */
-    CHECK(exarmo_aarch64_decode(0x8B020C20, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0x8B020C20, &inst) == EXARMO_AARCH64_STATUS_OK);
     count = exarmo_aarch64_instruction_operands(&inst, ops, EXARMO_AARCH64_MAX_OPERANDS);
     CHECK(count == 3 && ops[2].reg.modifier.present);
     CHECK(ops[2].reg.modifier.kind == EXARMO_AARCH64_MOD_LSL && ops[2].reg.modifier.amount == 3);
 
     /* adds x0, x1, x2 writes all four flags */
-    CHECK(exarmo_aarch64_decode(0xAB020020, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0xAB020020, &inst) == EXARMO_AARCH64_STATUS_OK);
     exarmo_aarch64_flag_effect flags = exarmo_aarch64_instruction_flags(&inst);
     CHECK(flags.writes == EXARMO_AARCH64_FLAG_NZCV && flags.reads == 0);
 
     /* each token says which operand it is part of, so a memory operand's
      * brackets are told from a lane index's */
-    CHECK(exarmo_aarch64_decode(0xF9400420, &inst) == EXARMO_AARCH64_STATUS_OK); /* ldr x0, [x1, #8] */
+    CHECK(exarmo_aarch64_decode_word(0xF9400420, &inst) == EXARMO_AARCH64_STATUS_OK); /* ldr x0, [x1, #8] */
     size = exarmo_aarch64_instruction_tokens(&inst, 0, text, sizeof text, tokens, EXARMO_AARCH64_MAX_TOKENS);
     CHECK(size.tokens == 10);
     CHECK(tokens[0].operand == EXARMO_AARCH64_TOKEN_NO_OPERAND); /* the mnemonic */
@@ -136,16 +147,16 @@ int main(void) {
 
 
     /* the branch an instruction takes, and where it goes */
-    CHECK(exarmo_aarch64_decode(0x94000002, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0x94000002, &inst) == EXARMO_AARCH64_STATUS_OK);
     exarmo_aarch64_branch branch = exarmo_aarch64_instruction_branch(&inst, 0x1000);
     CHECK(branch.kind == EXARMO_AARCH64_BRANCH_DIRECT_CALL && !branch.conditional);
     CHECK(branch.has_target && branch.target == 0x1008); /* bl .+8 */
-    CHECK(exarmo_aarch64_decode(0xD65F03C0, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0xD65F03C0, &inst) == EXARMO_AARCH64_STATUS_OK);
     branch = exarmo_aarch64_instruction_branch(&inst, 0x1000);
     CHECK(branch.kind == EXARMO_AARCH64_BRANCH_RETURN && !branch.has_target);
 
     /* b.eq at 0x1000 names its target */
-    CHECK(exarmo_aarch64_decode(0x54000020, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0x54000020, &inst) == EXARMO_AARCH64_STATUS_OK);
     size = exarmo_aarch64_instruction_tokens(&inst, 0x1000, text, sizeof text, tokens, EXARMO_AARCH64_MAX_TOKENS);
     CHECK(tokens[size.tokens - 1].kind == EXARMO_AARCH64_TOKEN_ADDRESS);
     CHECK(tokens[size.tokens - 1].value == 0x1004);
@@ -158,7 +169,7 @@ int main(void) {
     CHECK(branch.target == 0x1004);
 
     /* adrp at 0x1000 names the page its target is in */
-    CHECK(exarmo_aarch64_decode(0xb0000000, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0xb0000000, &inst) == EXARMO_AARCH64_STATUS_OK);
     count = exarmo_aarch64_instruction_operands(&inst, ops, EXARMO_AARCH64_MAX_OPERANDS);
     CHECK(count == 2 && ops[1].kind == EXARMO_AARCH64_OPERAND_LABEL);
     CHECK(ops[1].label.pc_align == 4096);
@@ -166,19 +177,19 @@ int main(void) {
     /* A condition operand carries the condition the instruction is written
      * under. cset reads the condition field inverted, so `cset w8, ne` holds
      * a zero there where a plainly read field's zero spells EQ. */
-    CHECK(exarmo_aarch64_decode(0x1A9F07E8, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0x1A9F07E8, &inst) == EXARMO_AARCH64_STATUS_OK);
     count = exarmo_aarch64_instruction_operands(&inst, ops, EXARMO_AARCH64_MAX_OPERANDS);
     CHECK(count == 2 && ops[1].kind == EXARMO_AARCH64_OPERAND_COND);
     CHECK(ops[1].cond == EXARMO_AARCH64_COND_NE);
     /* ccmp w3, #0, #2, eq reads it plainly */
-    CHECK(exarmo_aarch64_decode(0x7A400862, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0x7A400862, &inst) == EXARMO_AARCH64_STATUS_OK);
     count = exarmo_aarch64_instruction_operands(&inst, ops, EXARMO_AARCH64_MAX_OPERANDS);
     CHECK(count == 4 && ops[3].kind == EXARMO_AARCH64_OPERAND_COND);
     CHECK(ops[3].cond == EXARMO_AARCH64_COND_EQ);
 
     /* An operand naming a system operation says which row of the table it
      * is, so nothing here looks a name up. `at s1e1wp, x10` */
-    CHECK(exarmo_aarch64_decode(0xD508792A, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0xD508792A, &inst) == EXARMO_AARCH64_STATUS_OK);
     count = exarmo_aarch64_instruction_operands(&inst, ops, EXARMO_AARCH64_MAX_OPERANDS);
     CHECK(count == 2 && ops[0].kind == EXARMO_AARCH64_OPERAND_SYSOP);
     CHECK(ops[0].sysop.index < EXARMO_AARCH64_SYSOP_COUNT);
@@ -202,7 +213,7 @@ int main(void) {
 
     /* add v0.16b, v1.16b, v0.16b is vaddq_s8 first, then vaddq_u8. The bytes
      * are the same signed or unsigned, and the signed spelling comes first. */
-    CHECK(exarmo_aarch64_decode(0x4E208420, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0x4E208420, &inst) == EXARMO_AARCH64_STATUS_OK);
     exarmo_aarch64_intrinsic intrinsics[8];
     count = exarmo_aarch64_instruction_intrinsics(&inst, intrinsics, 8);
     CHECK(count == 2);
@@ -220,7 +231,7 @@ int main(void) {
     CHECK(memcmp(def.name.data, "vaddq_u8", 8) == 0);
 
     /* bfdot v1.2s, v2.4h, v16.2h[0] takes its lane from an operand's index */
-    CHECK(exarmo_aarch64_decode(0x0F50F041, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0x0F50F041, &inst) == EXARMO_AARCH64_STATUS_OK);
     count = exarmo_aarch64_instruction_intrinsics(&inst, intrinsics, 8);
     CHECK(count >= 1 && intrinsics[0].argument_count == 4);
     CHECK(intrinsics[0].arguments[3].kind == EXARMO_AARCH64_INTRINSIC_SOURCE_INDEX);
@@ -236,7 +247,7 @@ int main(void) {
     CHECK(tdef.element_bits == 16 && tdef.lanes == 8 && !tdef.pointer);
 
     /* An instruction ACLE does not name has none, and a bad id is refused */
-    CHECK(exarmo_aarch64_decode(0xAB020020, &inst) == EXARMO_AARCH64_STATUS_OK);
+    CHECK(exarmo_aarch64_decode_word(0xAB020020, &inst) == EXARMO_AARCH64_STATUS_OK);
     CHECK(exarmo_aarch64_instruction_intrinsics(&inst, intrinsics, 8) == 0);
     CHECK(!exarmo_aarch64_intrinsic_at(EXARMO_AARCH64_INTRINSIC_COUNT, &def));
     CHECK(!exarmo_aarch64_intrinsic_type_at(EXARMO_AARCH64_INTRINSIC_TYPE_COUNT, &tdef));

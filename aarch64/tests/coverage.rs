@@ -29,12 +29,12 @@ use std::panic;
 
 mod corpus;
 
-use exarmo_aarch64::{Encoding, decode};
+use exarmo_aarch64::{Encoding, decode_word};
 
 /// The encoding a word decodes to, if it decodes at all, without letting a
 /// panic in the decoder end the sweep.
 fn encoding_of(bits: u32) -> Option<Encoding> {
-    panic::catch_unwind(|| decode(bits).ok().map(|inst| inst.encoding())).ok()?
+    panic::catch_unwind(|| decode_word(bits).ok().map(|inst| inst.encoding())).ok()?
 }
 
 /// Every encoding no line of the corpus reaches.

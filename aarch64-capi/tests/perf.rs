@@ -122,6 +122,6 @@ fn measure(words: &[u32], passes: usize, decode: impl Fn(u32, *mut CInstruction)
 fn throughput() {
     let passes = exarmo_testing::perf::passes();
     measure(&encodings(), passes, |w, out| unsafe {
-        exarmo_aarch64_decode(w, out)
+        exarmo_aarch64_decode_word(w, out)
     });
 }

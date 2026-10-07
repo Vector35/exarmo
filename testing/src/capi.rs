@@ -56,6 +56,8 @@ pub fn c_smoke(manifest: &str, crate_name: &str) {
         .arg("-Wall")
         .arg("-Wextra")
         .arg("-Werror")
+        // smoke.c calls the deprecated names to check they still link.
+        .arg("-Wno-error=deprecated-declarations")
         .arg("-I")
         .arg(manifest.join("include"))
         .arg(manifest.join("tests/c/smoke.c"))

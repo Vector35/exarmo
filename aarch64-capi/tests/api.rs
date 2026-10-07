@@ -11,7 +11,7 @@ use exarmo_aarch64_capi::*;
 
 fn decoded(bits: u32) -> CInstruction {
     let mut out = MaybeUninit::<CInstruction>::uninit();
-    let status = unsafe { exarmo_aarch64_decode(bits, out.as_mut_ptr()) };
+    let status = unsafe { exarmo_aarch64_decode_word(bits, out.as_mut_ptr()) };
     assert_eq!(status, Status::Ok, "{bits:08x}");
     unsafe { out.assume_init() }
 }
@@ -39,11 +39,11 @@ fn operands_of(inst: &CInstruction) -> Vec<COperand> {
 fn a_decode_that_fails_says_how() {
     let mut out = MaybeUninit::<CInstruction>::uninit();
     assert_eq!(
-        unsafe { exarmo_aarch64_decode(0x00010000, out.as_mut_ptr()) },
+        unsafe { exarmo_aarch64_decode_word(0x00010000, out.as_mut_ptr()) },
         Status::Unallocated
     );
     assert_eq!(
-        unsafe { exarmo_aarch64_decode(0xF9400420, std::ptr::null_mut()) },
+        unsafe { exarmo_aarch64_decode_word(0xF9400420, std::ptr::null_mut()) },
         Status::Failed
     );
 }
@@ -57,10 +57,36 @@ fn a_decode_that_fails_says_how() {
 #[test]
 fn every_outcome_the_decoder_reaches() {
     let mut out = MaybeUninit::<CInstruction>::uninit();
-    let mut decode = |bits| unsafe { exarmo_aarch64_decode(bits, out.as_mut_ptr()) };
+    let mut decode = |bits| unsafe { exarmo_aarch64_decode_word(bits, out.as_mut_ptr()) };
     assert_eq!(decode(0xF9400420), Status::Ok);
     assert_eq!(decode(0x00010005), Status::Unallocated);
     assert_eq!(decode(0x04008002), Status::Undefined);
+}
+
+/// The bytes of `ldr x0, [x1, #8]`.
+#[test]
+fn a_decode_from_bytes_reads_them_as_memory_holds_them() {
+    let ldr = [0x20, 0x04, 0x40, 0xf9];
+    let mut out = MaybeUninit::<CInstruction>::uninit();
+    let null = std::ptr::null();
+    unsafe {
+        let decode = |bytes, len, out| exarmo_aarch64_decode_bytes(bytes, len, out);
+        assert_eq!(
+            decode(ldr.as_ptr(), ldr.len(), out.as_mut_ptr()),
+            Status::Ok
+        );
+        assert_eq!(
+            exarmo_aarch64_instruction_encoding(out.as_ptr()),
+            exarmo_aarch64_instruction_encoding(&decoded(0xF9400420))
+        );
+        assert_eq!(decode(ldr.as_ptr(), 3, out.as_mut_ptr()), Status::Truncated);
+        assert_eq!(decode(null, 0, out.as_mut_ptr()), Status::Truncated);
+        assert_eq!(decode(null, 4, out.as_mut_ptr()), Status::Failed);
+        assert_eq!(
+            decode(ldr.as_ptr(), 4, std::ptr::null_mut()),
+            Status::Failed
+        );
+    }
 }
 
 #[test]

@@ -6,10 +6,10 @@ use std::collections::HashMap;
 
 mod corpus;
 
-use exarmo_aarch64::{Encoding, FlagEffect, Flags, Mnemonic, Operand, decode};
+use exarmo_aarch64::{Encoding, FlagEffect, Flags, Mnemonic, Operand, decode_word};
 
 fn effect(bits: u32) -> FlagEffect {
-    decode(bits).unwrap().flags()
+    decode_word(bits).unwrap().flags()
 }
 
 #[test]
@@ -170,7 +170,7 @@ fn a_flag_setting_sibling_sets_flags_the_other_does_not() {
             .map(|bit| 1u32 << bit)
             .chain((0..32).flat_map(|a| (a + 1..32).map(move |b| (1u32 << a) | (1 << b))));
         for flip in flips {
-            let Ok(other) = decode(case.encoding ^ flip) else {
+            let Ok(other) = decode_word(case.encoding ^ flip) else {
                 continue;
             };
             let theirs_written = other.at(corpus::INSTR_ADDRESS).to_string();

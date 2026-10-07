@@ -71,8 +71,8 @@ impl Set {
         tag: Option<&ItTag>,
     ) -> Result<exarmo_aarch32::Instruction, DecodeError> {
         match self {
-            Set::A32 => a32::decode(bits),
-            Set::T32 => t32::decode(bits, state(tag)),
+            Set::A32 => a32::decode_word(bits),
+            Set::T32 => t32::decode_word(bits, state(tag)),
         }
     }
 

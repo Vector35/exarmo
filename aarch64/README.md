@@ -12,13 +12,16 @@ cargo add exarmo-aarch64
 ```
 
 ```rust
-let instruction = exarmo_aarch64::decode(0xd503201f).unwrap();
+// nop
+let instruction = exarmo_aarch64::decode_bytes(&[0x1f, 0x20, 0x03, 0xd5]).unwrap();
 assert_eq!(instruction.at(0x1000).to_string(), "nop");
 ```
 
-`decode` takes the 32-bit instruction word and returns an `Instruction`,
-which holds no address. `at` gives it one, for the text and for anything
-PC-relative. An instruction also gives:
+`decode_bytes` decodes an instruction from a byte slice, and `decode_word` from
+a 32-bit instruction word. `disassemble` returns an iterator over the
+instructions in a byte buffer. Each instruction is an `Instruction`, which holds
+no address. `at` gives it one, for the text and for anything PC-relative. An
+instruction also gives:
 
 - its encoding and mnemonic, as fieldless enums to switch on
 - its operands, as a positional view a consumer can read without matching
