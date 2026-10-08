@@ -1,6 +1,45 @@
 //! An instruction rendered as tokens.
 //!
 //! The token stream itself is [`exarmo_core::tokens`], shared with AArch32.
+//!
+//! Implement [`TokenSink`] to render each kind of token your own way. This
+//! sink wraps every register in angle brackets:
+//!
+//! ```
+//! use core::fmt::{self, Write};
+//! use exarmo_aarch64::{TokenKind, TokenSink, decode_word};
+//!
+//! struct Marked(String);
+//!
+//! impl TokenSink for Marked {
+//!     fn text(&mut self, kind: TokenKind, operand: Option<u8>, text: &str) -> fmt::Result {
+//!         self.value(kind, operand, &text)
+//!     }
+//!
+//!     fn value(
+//!         &mut self,
+//!         kind: TokenKind,
+//!         _: Option<u8>,
+//!         value: &dyn fmt::Display,
+//!     ) -> fmt::Result {
+//!         match kind {
+//!             TokenKind::Register => write!(self.0, "<{value}>"),
+//!             _ => write!(self.0, "{value}"),
+//!         }
+//!     }
+//! }
+//!
+//! // ldr x0, [x1, #8]
+//! let mut marked = Marked(String::new());
+//! decode_word(0xf9400420).unwrap().at(0).write_tokens(&mut marked).unwrap();
+//! assert_eq!(marked.0, "ldr\t<x0>, [<x1>, #0x8]");
+//! ```
+//!
+//! Without an allocator, write the tokens into a buffer you own. No
+//! instruction writes more than
+//! [`Instruction::MAX_TOKENS`](crate::Instruction::MAX_TOKENS) tokens or
+//! [`Instruction::MAX_TEXT`](crate::Instruction::MAX_TEXT) bytes of text, so
+//! a buffer of that size is always big enough.
 
 pub use exarmo_core::decode::Decoded;
 pub use exarmo_core::tokens::{Hex, TokenKind, TokenSink};
