@@ -8,7 +8,7 @@ use std::collections::{BTreeMap, HashSet};
 mod corpus;
 
 use corpus::Set;
-use exarmo_aarch32::{Lane, ListFile, Modifier, Offset, Operand, Reg};
+use exarmo_aarch32::{Lane, Modifier, Offset, Operand, Reg};
 use exarmo_core::tokens::{Token, TokenKind};
 
 fn modifier(
@@ -71,17 +71,8 @@ fn held(operands: &[Operand]) -> (HashSet<String>, HashSet<String>, HashSet<i64>
                 }
             }
             Operand::List(list) => {
-                for number in 0..32u8 {
-                    if list.mask & (1 << number) != 0 {
-                        file(
-                            &mut registers,
-                            &match list.file {
-                                ListFile::Core => Reg::Core(exarmo_aarch32::GpReg::new(number)),
-                                ListFile::Single => Reg::Single(exarmo_aarch32::SReg::new(number)),
-                                ListFile::Double => Reg::Double(exarmo_aarch32::DReg::new(number)),
-                            },
-                        );
-                    }
+                for reg in list.regs() {
+                    file(&mut registers, &reg);
                 }
                 if let Lane::Index(index) = list.lane {
                     numbers.insert(i64::from(index));

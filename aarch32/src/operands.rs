@@ -134,6 +134,27 @@ impl RegList {
         }
         Some(RegList { mask, file, lane })
     }
+
+    /// The registers in the list, lowest first.
+    ///
+    /// ```
+    /// use exarmo_aarch32::{GpReg, Operand, Reg, a32};
+    ///
+    /// // push {r4, lr}
+    /// let push = a32::decode_word(0xe92d4010).unwrap();
+    /// let Operand::List(list) = push.operands()[1] else {
+    ///     unreachable!()
+    /// };
+    /// assert_eq!(
+    ///     list.regs().collect::<Vec<_>>(),
+    ///     [Reg::Core(GpReg::new(4)), Reg::Core(GpReg::new(14))]
+    /// );
+    /// ```
+    pub fn regs(self) -> impl Iterator<Item = Reg> {
+        (0..self.file.registers() as u8)
+            .filter(move |&number| self.mask & (1 << number) != 0)
+            .map(move |number| self.file.reg(number))
+    }
 }
 
 /// What a list writes on each of its registers.
@@ -159,6 +180,14 @@ pub enum ListFile {
 }
 
 impl ListFile {
+    const fn reg(self, number: u8) -> Reg {
+        match self {
+            ListFile::Core => Reg::Core(GpReg::new(number)),
+            ListFile::Single => Reg::Single(SReg::new(number)),
+            ListFile::Double => Reg::Double(DReg::new(number)),
+        }
+    }
+
     /// How many registers the file holds.
     pub const fn registers(self) -> u32 {
         match self {

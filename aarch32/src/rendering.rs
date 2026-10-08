@@ -327,22 +327,12 @@ impl<'a> Writer<'a> {
             return Err(fmt::Error);
         };
         self.out.bracket("{")?;
-        let mut written = 0;
-        for number in 0..32u8 {
-            if list.mask & (1 << number) == 0 {
-                continue;
-            }
+        for (written, reg) in list.regs().enumerate() {
             if written > 0 {
                 // Written inside the list's braces, so it is part of the
                 // list rather than between it and the next operand.
                 self.out.inner_separator()?;
             }
-            written += 1;
-            let reg = match list.file {
-                crate::operands::ListFile::Core => Reg::Core(crate::GpReg::new(number)),
-                crate::operands::ListFile::Single => Reg::Single(crate::SReg::new(number)),
-                crate::operands::ListFile::Double => Reg::Double(crate::DReg::new(number)),
-            };
             self.out.register(&reg)?;
             match list.lane {
                 Lane::Whole => {}
